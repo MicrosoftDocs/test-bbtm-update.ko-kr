@@ -1,0 +1,242 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6793ce57cf02d1342531f866aeb1073007ebd3a7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900720"
+Slug: setting-up-active-directory-for-a-disaster-recovery-environment-2
+Title: 재해 복구 환경에 대한 Active Directory 설정
+Summary: 이 게시물에서는 장애 조치(failover) 이벤트 이후에도 애플리케이션이 계속 제대로 작동하도록 다양한 시나리오에서 Active Directory를 설정하는 방법을 설명합니다.
+Content: >-
+  재해 복구 환경을 설정할 때 Active Directory를 설정하는 방법도 고려해야 합니다. 그것은 사후 고려로 오지 말아야합니다.
+
+
+  대부분의 애플리케이션은 제대로 작동하기 위해 AD 및 DNS 인프라에 의존합니다. 이 게시물에서는 장애 조치(failover) 이벤트 이후에도 애플리케이션이 계속 제대로 작동하도록 다양한 시나리오에서 Active Directory를 설정하는 방법을 설명합니다.
+
+
+  다음 요소는 도메인 컨트롤러를 복구 사이트에 복제하는 방법을 제어합니다. 이 섹션의 다음 표에서는 이러한 요소가 결정에 미치는 영향에 대해 설명합니다.
+
+  <ol>
+   <li><b>복구 사이트</b>: 온-프레미스 사이트 간 또는 Microsoft Azure 직접 보호 구성</li>
+   <li><b>장애 조치(Failover) 유형</b>: <i>테스트 장애 조치(failover</i>)를 수행하려는지 여부에 따라 <i>계획된 장애 조치(failover</i> ) 또는 <i>계획되지 않은 장애 조치(Failover)</i> 를 사용하여 도메인 컨트롤러를 복제하는 권장 방법 및 복구 단계가 변경될 수 있습니다.</li>
+   <li><b>장애 조치(failover) 단위</b>: 부분 사이트를 유연하게 장애 조치(failover)할 것인지 또는 관심 있는 유일한 시나리오가 전체 사이트 장애 조치(failover)인지 여부</li>
+   <li><b>포리스트의 도메인 컨트롤러 수</b>: 권장 복제 기술은 중소기업이거나 도메인 컨트롤러가 하나만 있거나 환경에 도메인 컨트롤러가 두 개 이상 있는 경우에 따라 달라집니다. 이미 두 개 이상의 사이트가 있는 경우 여러 도메인 컨트롤러가 있을 수 있습니다.</li>
+  </ol>
+
+  &nbsp;
+
+
+  다음 표에는 다양한 시나리오에서 도메인 컨트롤러를 복제하는 방법이 요약되어 있습니다.
+
+
+  &nbsp;
+
+  <table class="aligncenter" width="711" border="1" cellspacing="0" cellpadding="0"><colgroup><col width="105" /> <col width="127" /> <col width="87" /> <col width="182" /> <col width="210" /></colgroup>
+
+  <tbody>
+
+  <tr>
+
+  <th width="105" height="41">시나리오</th>
+
+  <th width="127">장애 조치 유형</th>
+
+  <th width="87">장애 조치(failover) 단위</th>
+
+  <th width="182">포리스트의 현재 도메인 컨트롤러 수</th>
+
+  <th width="210">권장 복제 기술</th>
+
+  </tr>
+
+  <tr>
+
+  <td width="105" height="81">온-프레미스에서 온-프레미스로</td>
+
+  <td width="127">테스트 장애 조치(failover)</td>
+
+  <td width="87">해당 없음</td>
+
+  <td width="182">하나</td>
+
+  <td width="210">Azure Site Recovery에서 지원하는 기술 중에서 선택한 복제 기술</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="105" height="121">온-프레미스에서 온-프레미스로</td>
+
+  <td width="127">테스트 장애 조치(Failover)</td>
+
+  <td width="87">해당 없음</td>
+
+  <td width="182">여러 접두사</td>
+
+  <td width="210">Azure Site Recovery 또는 복구 사이트의 도메인 컨트롤러 vhd 파일 스냅샷에서 지원하는 기술 중에서 선택한 복제 기술</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="105" height="81">온-프레미스에서 온-프레미스로</td>
+
+  <td width="127">계획/계획되지 않은 장애 조치(failover)</td>
+
+  <td width="87">전체 사이트</td>
+
+  <td width="182">하나</td>
+
+  <td width="210">Azure Site Recovery에서 지원하는 기술 중에서 선택한 복제 기술</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="105" height="41">온-프레미스에서 온-프레미스로</td>
+
+  <td width="127">계획/계획되지 않은 장애 조치(failover)</td>
+
+  <td width="87">전체 사이트</td>
+
+  <td width="182">여러 접두사</td>
+
+  <td width="210">AD 복제</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="105" height="41">온-프레미스에서 온-프레미스로</td>
+
+  <td width="127">계획/계획되지 않은 장애 조치(failover)</td>
+
+  <td width="87">부분 사이트</td>
+
+  <td width="182">해당 없음</td>
+
+  <td width="210">AD 복제</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="105" height="101">온-프레미스에서 Azure로</td>
+
+  <td width="127">테스트 장애 조치(Failover)</td>
+
+  <td width="87">해당 없음</td>
+
+  <td width="182">해당 없음</td>
+
+  <td width="210">Azure Site Recovery에서 지원하는 기술 중에서 선택한 복제 기술</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="105" height="81">온-프레미스에서 Azure로</td>
+
+  <td width="127">계획/계획되지 않은 장애 조치(failover)</td>
+
+  <td width="87">전체 사이트</td>
+
+  <td width="182">하나</td>
+
+  <td width="210">Azure Site Recovery에서 지원하는 기술 중에서 선택한 복제 기술</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="105" height="41">온-프레미스에서 Azure로</td>
+
+  <td width="127">계획/계획되지 않은 장애 조치(failover)</td>
+
+  <td width="87">전체 사이트</td>
+
+  <td width="182">여러 접두사</td>
+
+  <td width="210">AD 복제</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="105" height="41">온-프레미스에서 Azure로</td>
+
+  <td width="127">계획/계획되지 않은 장애 조치(failover)</td>
+
+  <td width="87">부분 사이트</td>
+
+  <td width="182">해당 없음</td>
+
+  <td width="210">AD 복제</td>
+
+  </tr>
+
+  </tbody>
+
+  </table>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/01/20/table.png"> </a>
+
+
+  &nbsp;
+
+
+  위의 권장 사항을 제공하는 이유는 다음과 같습니다.
+
+  <ol>
+   <li>사용자 환경에 이미 둘 이상의 도메인 컨트롤러가 있고 도메인 컨트롤러를 복제하기 위해 Hyper-V 복제본과 같은 복제 기술을 사용하는 경우 계획되지 않은 장애 조치(failover)(최대 15분의 데이터 손실로 장애 조치)의 경우 장애 조치(failover)된 도메인 컨트롤러는 이전 시점으로 돌아갑니다. 이러한 시나리오에서는 서로 다른 도메인 컨트롤러가 서로 일치하지 않을 수 있습니다.
+  <blockquote>따라서 사용자 환경에 도메인 컨트롤러가 둘 이상 있을 때마다 AD 복제를 사용하여 도메인 컨트롤러를 복구 사이트에 복제하는 것이 좋습니다.</blockquote>
+
+  </li>
+   <li>AD 복제를 사용하는 경우 복구 사이트에서도 가상 머신을 실행해야 합니다. 이미 두 사이트를 모두 적극적으로 사용하고 있는 경우 두 사이트에서 모두 도메인 컨트롤러를 실행 중일 가능성이 높습니다. 그러나 복구 사이트가 재해 복구 목적으로만 사용된 경우 항상 복구 사이트에서 가상 머신을 실행하면 비용이 추가됩니다.
+  <blockquote>따라서 하나의 활성 사이트와 하나의 도메인 컨트롤러만 있는 경우 AD 복제 이외의 복제 기술을 사용하여 도메인 컨트롤러를 복제할 수 있습니다.</blockquote>
+
+  </li>
+   <li>부분 사이트의 장애 조치(failover)를 수행하려는 경우 일부 애플리케이션이 기본 사이트에서 실행되고 장애 조치(failover)된 다른 애플리케이션이 복구 사이트에서 실행되는 경우가 있습니다. 이러한 시나리오에서는 두 사이트에 모두 활성 도메인 컨트롤러가 필요합니다.
+  <blockquote>따라서 부분 사이트의 장애 조치(failover)를 수행하려는 경우 AD 복제를 사용하고 두 사이트 모두에서 활성 도메인 컨트롤러를 유지하는 것이 좋습니다.</blockquote>
+
+  </li>
+   <li>테스트 장애 조치(failover)를 수행하려면 격리된 테스트 환경에서 도메인 컨트롤러의 인스턴스가 필요합니다. 이 인스턴스는 도메인 컨트롤러 가상 머신 중 하나에서 Azure Site Recovery에서 제공하는 테스트 장애 조치 제스처를 사용하여 만들 수 있습니다.
+  <blockquote>이렇게 하려면 Azure Site Recovery에서 지원하는 기술에서 선택한 복제 기술을 사용하여 도메인 컨트롤러 가상 머신을 복제해야 합니다.</blockquote>
+
+  </li>
+
+  </ol>
+
+  복구 사이트가 온-프레미스이고 복구 사이트에서 도메인 컨트롤러가 이미 실행 중인 경우 가상 머신의 스냅샷을 만들고 vhd를 사용하여 도메인 컨트롤러의 테스트 인스턴스를 만들어 테스트 도메인 컨트롤러를 만들 수도 있습니다.
+
+
+  애플리케이션이 Active Directory에 의존하는 경우 테스트 장애 조치(failover)를 수행하는 방법을 이해하기 <a href="https://aka.ms/ad_e2a_networking_blog">위해 재해 복구를 위한 네트워킹 설정</a> 에 대해 자세히 읽을 수 있습니다.
+
+
+  유의해야 할 몇 가지 사항이 더 있습니다.
+
+  <ol>
+   <li>엔터프라이즈에 여러 도메인이 있는 경우 각 도메인을 복구 사이트에 표시해야 합니다. 포리스트의 각 도메인에 대해 하나 이상의 도메인 컨트롤러가 복구 사이트에 있는지 확인해야 합니다.</li>
+   <li>또한 DNS 역할이 기본 사이트와 복구 사이트 모두에서 하나 이상의 도메인 컨트롤러에 설치되어 있는지 확인해야 합니다.</li>
+  </ol>
+
+  지금까지 다양한 시나리오에서 도메인 컨트롤러에 대한 복제를 설정하는 방법을 살펴보았습니다. 이제 문제는 모든 시나리오에서 일부 장애 조치(failover) 후 복구 단계가 필요한지 여부입니다.
+
+
+  이 질문에 대한 대답은 장애 조치(failover) 후에도 주 데이터베이스의 도메인 컨트롤러를 계속 사용할 수 있는지 여부에 따라 달라집니다. 기본 사이트가 완전히 종료되거나 기본 사이트를 더 이상 사용할 수 없는 계획되지 않은 장애 조치(failover)가 발생할 경우 복구 사이트의 도메인 컨트롤러에서 <a href="https://aka.ms/ad_seize_fsmo">FSMO Active Directory 역할을 점유하고</a> 누락된 도메인 컨트롤러에 대한 메타데이터 정리를 수행해야 할 수 있습니다.
+
+
+  이러한 애플리케이션이 특정 도메인 컨트롤러에 바인딩될 수 있으므로 FSMO 역할이 없는 경우 일부 레거시 애플리케이션이 작동하지 않을 수 있습니다. 이러한 경우 기본 사이트가 나중에 다시 표시되더라도 복구 사이트 도메인 컨트롤러에서 전체 수정이 있을 수 있습니다. 복구 사이트에서 이러한 수정을 수행해야 하는지 여부를 마무리하려면 아래 표시된 의사 결정 트리를 따릅니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/01/20/Ad-Fixup-Decision-Tree.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="광고 수정 의사 결정 트리" alt="Ad Fixup Decision Tree" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Ad-Fixup-Decision-Tree_thumb.jpg" width="684" height="772" border="0" /></a>
+
+
+  이 게시물에서는 다른 사이트로 재해 복구를 위해 사이트에서 하나 또는 애플리케이션을 설정할 때 Active Directory를 설정하는 방법을 검토했습니다. 다양한 시나리오에서 사용할 수 있는 다양한 복제 기술이 무엇인지 살펴보았습니다. 그런 다음 기본 사이트를 더 이상 사용할 수 없는 경우 수행해야 하는 사후 장애 조치(failover) 수정 업을 완료했습니다.
+
+
+  추가 질문이 있는 경우 <a href="https://aka.ms/ad_forum">MSDN의 Azure Site Recovery 포럼을</a> 방문하여 추가 정보를 확인하고 다른 고객과 소통하세요.
+
+
+  <a href="https://aka.ms/ad_productinfo">추가 제품 정보를 확인하고</a> <a href="https://aka.ms/ad_trial">무료 Azure 평가판에 등록하여 Azure</a> Site Recovery를 사용하여 Microsoft Azure 사용해 볼 수도 있습니다.

@@ -1,0 +1,135 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fb446a75abd3c2d2ead8d19b2372a27ff62fa6df
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899992"
+Slug: azure-hdinsight-integration-with-data-lake-storage-gen-2-preview-acl-and-security-update
+Title: Data Lake Storage Gen2 미리 보기와 Azure HDInsight 통합 - ACL 및 보안 업데이트
+Summary: 현재 Azure Data Lake Storage Gen 2와 Azure HDInsight 통합에 대한 업데이트를 공유하고 있습니다. 이러한 통합을 통해 HDInsight 고객은 Apache Spark, Hive, MapReduce, Kafka, Storm 및 HBase와 같은 인기 있는 오픈 소스 프레임워크를 사용하여 Azure Data Lake Storage Gen 2에 저장된 데이터에서 분석을 안전하게 수행할 수 있습니다.
+Content: >-
+  <p>현재 Azure Data Lake Storage Gen 2와 Azure HDInsight 통합에 대한 업데이트를 공유하고 있습니다. 이러한 통합을 통해 HDInsight 고객은 Apache Spark, Hive, MapReduce, Kafka, Storm 및 HBase와 같은 인기 있는 오픈 소스 프레임워크를 사용하여 Azure Data Lake Storage Gen 2에 저장된 데이터에서 분석을 안전하게 수행할 수 있습니다.</p>
+
+
+  <h2>Azure Data Lake Storage Gen2</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/storage/data-lake-storage/" target="_blank">Azure Data Lake Storage Gen2</a>는 기업이 클라우드에서 대규모 분석 워크로드를 실행하도록 특별히 설계된 유일한 데이터 레이크입니다. 이제 Azure Blob Storage 직접 통합된 Hadoop 호환 파일 시스템 엔드포인트를 사용하여 1세대 Azure Data Lake의 핵심 기능을 통합합니다. 이 향상된 기능은 개체 스토리지의 크기 조정 및 비용 혜택을 일반적으로 온-프레미스 파일 시스템에만 연결된 안정성 및 성능과 결합합니다. 이 새 파일 시스템에는 파일 및 폴더를 일류 시민으로 만들어 더 빠르고 신뢰할 수 있는 분석 작업 실행으로 변환하는 전체 계층 구조 네임스페이스가 포함되어 있습니다.</p>
+
+
+  <p>또한 Azure Data Lake Storage Gen2에는 가장 크고 복잡한 워크로드의 요구 사항을 충족할 수 있는 용량을 보장하는 무제한 스토리지가 포함되어 있습니다. 또한 Azure Data Lake Storage Gen2는 Azure Active Directory 네이티브 통합을 제공하고 POSIX 규격 ACL을 지원하여 파일 및 폴더에 대한 세분화된 권한 할당을 사용하도록 설정합니다.</p>
+
+
+  <h2>주요 이점</h2>
+
+
+  <h3>Hadoop 호환 액세스</h3>
+
+
+  <p>Azure Data Lake Storage Gen2를 사용하면 HDFS(Hadoop 분산 파일 시스템)에서와 마찬가지로 데이터를 관리하고 액세스할 수 있습니다. ABFS 드라이버는 모든 Apache Hadoop 환경 내에서 사용할 수 있습니다. 파일 시스템이 개발자와 사용자 모두에게 쉽게 이해됩니다. Azure Data Lake Storage Gen2에서 노출하는 파일 시스템 인터페이스가 크고 작은 컴퓨터에서 사용하는 것과 동일한 패러다임이므로 클라우드로 이동할 때 새 스토리지 패러다임을 배울 필요가 없습니다.</p>
+
+
+  <h3>역할 기반 액세스 제어</h3>
+
+
+  <p>Azure Data Lake Storage Gen2의 보안 모델은 ACL 및 POSIX 권한을 지원합니다.</p>
+
+
+  <p>Spark, Kafka, Hive 및 HBase와 같은 애플리케이션에 대한 HDInsight의 apache Ranger를 통한 세분화된 액세스 제어와 함께 이러한 스토리지 ACL 기능을 사용하면 적절한 보안 제어 및 감사를 통해 전체 조직에 대한 데이터 레이크를 매우 편리하게 열 수 있습니다.</p>
+
+
+  <h3>SSL 전용 액세스</h3>
+
+
+  <p>이 업데이트를 통해 ADLS Gen 2 계정은 HTTPS 프로토콜을 통해서만 액세스할 수 있으므로 HDInsight와 스토리지 간에 암호화된 통신만 가능합니다.</p>
+
+
+  <h3>전 세계 이용 가능 여부</h3>
+
+
+  <p>Azure Data Lake Storage Gen 2 및 HDInsight는 전 세계에서 사용할 수 있으며, 빅 데이터 애플리케이션을 전 세계 사용자에게 더 가깝게 만들고, 데이터 보존을 유지하고, 고객에게 포괄적인 규정 준수 및 복원력 옵션을 제공하는 데 필요한 규모를 제공합니다.</p>
+
+
+  <h3>원자성 디렉터리 조작</h3>
+
+
+  <p>개체에서 경로 세그먼트를 나타내기 위해 개체 이름에 슬래시(/)를 포함하는 규칙을 채택하여 대략적인 디렉터리 계층 구조를 저장합니다. 이 규칙은 개체 구성 시에 작동하지만 디렉터리 이동, 이름 바꾸기 또는 삭제 등의 작업에 대한 지원을 제공하지 않습니다. 실제 디렉터리가 없으면 애플리케이션은 디렉터리 수준 작업을 수행하기 위해 수백만 개의 개별 Blob을 처리해야 할 수 있습니다. 반면, <a href="https://docs.microsoft.com/en-us/azure/storage/data-lake-storage/namespace" target="_blank">계층 구조 네임스페이스는</a> 단일 항목(부모 디렉터리)을 업데이트하여 이러한 작업을 처리합니다.</p>
+
+
+  <p>많은 빅 데이터 분석 프레임워크의 경우, 이러한 극적인 최적화가 특히 중요합니다. Hive 및 Spark와 같은 도구는 종종 임시 위치에 출력을 쓴 다음 작업이 끝날 때 위치의 이름을 바꿉니다. 계층 구조 네임스페이스가 없으면 이 이름 바꾸기에는 분석 프로세스 자체보다 더 오랜 시간이 걸릴 수 있습니다. 작업 대기 시간이 단축되면 분석 워크로드의 TCO(총 소유 비용)가 낮아집니다.</p>
+
+
+  <h3>확장</h3>
+
+
+  <p>HDInsight 및 Azure Data Lake Storage Gen2는 빅 데이터 워크로드에 대한 새로운 수준의 규모를 제공합니다. 고객은 여러 스토리지 계정에 데이터를 분할할 필요 없이 100Gb&rsquo;/초에서 페타바이트 단위의 스토리지로 확장되는 워크로드를 실행할 수 있습니다.</p>
+
+
+  <h3>REST에서 암호화</h3>
+
+
+  <p>Azure Data Lake Storage Gen2의 암호화는 데이터를 보호하고, 엔터프라이즈 보안 정책을 구현하며, 규정 준수 요구 사항을 충족하는 데 도움이 됩니다. Azure Data Lake Storage Gen 2는 미사용 데이터와 전송 중인 데이터의 암호화를 지원합니다.</p>
+
+
+  <h3>네트워크 방화벽</h3>
+
+
+  <p>통합 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security" target="_blank">네트워크 방화벽 기능을</a> 사용하면 특정 VNET의 지정된 네트워크 또는 HDInsight 클러스터에서 시작된 요청에만 액세스를 제한하는 규칙을 정의할 수 있습니다.</p>
+
+
+  <h2>통합은 어떻게 작동하나요?</h2>
+
+
+  <p>HDInsight 및 Azure Data Lake Storage Gen2 통합은 <a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview" target="_blank">사용자 할당 관리 ID</a>를 기반으로 합니다. Azure Data Lake Storage Gen2 계정으로 HDInsight에 대한 적절한 액세스를 할당합니다. 구성되면 HDInsight 클러스터는 Azure Data Lake Storage Gen2를 스토리지로 사용할 수 있습니다.</p>
+
+
+  <p>1.Azure Storage 계정을 만들고 Data Lake Storage Gen 2 미리 보기를 사용하도록 설정합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f3b4ba24-ccf0-4fca-86e3-ec5aa62fa611.png"><img alt="Storage configuration in Data Lake Storage Gen 2" border="0" height="309" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/80d198fd-aedf-4640-8cde-3e62796e8473.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Data Lake Storage Gen 2의 Storage 구성" width="584"></a></p>
+
+
+  <p>2. 사용자 할당 관리 ID를 만듭니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1c131495-aaaa-4536-a7f2-9ce7aad51366.png"><img alt="Creating a user managed identity " border="0" height="313" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/abadaf17-101d-4a56-8f66-479332fd89ff.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="사용자 관리 ID 만들기 " width="306"></a></p>
+
+
+  <p>3.Azure Storage 만든 관리 ID에 Storage Blob 데이터 소유자 액세스 권한을 할당합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db940fff-3987-4566-93ed-1c4390181e42.png"><img alt="Assigning Storage Blob Data Owner access " border="0" height="601" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1e532398-e33f-4862-b582-b6d8adaf1ded.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Storage Blob 데이터 소유자 액세스 할당" width="2308"></a></p>
+
+
+  <p>4. 이제 HDInsight 클러스터 만들기를 진행할 수 있습니다. 스토리지 블레이드에서 스토리지 계정 및 연결된 관리되는 사용자 ID를 선택하고 클러스터 만들기 워크플로를 진행합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/25e1bf1a-c5f6-41ef-9826-5ac5147452c5.png"><img alt="Selecting the storage account and associated managed user identity" border="0" height="491" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/00d1be40-acab-49c1-9ffd-caed55998bb5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="스토리지 계정 및 연결된 관리되는 사용자 ID 선택" width="494"></a></p>
+
+
+  <h2>시작</h2>
+
+
+  <p><a href="https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-data-lake-storage-gen2" target="_blank">현재 Azure HDInsight에서 Azure Data Lake Storage Gen2</a> 사용을 시작합니다.</p>
+
+
+  <h2>피드백</h2>
+
+
+  <p>여러분의 의견과 피드백을 기대합니다. 기능 요청, 고객 요청 또는 제안이 있는 경우 다음으로 <a target="_blank">askhdinsight@microsoft.com</a>문의하세요.</p>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction?toc=%2fazure%2fstorage%2fblobs%2ftoc.json" target="_blank">Azure Data Lake Storage Gen2 소개</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-namespace?toc=%2fazure%2fstorage%2fblobs%2ftoc.json" target="_blank">계층 구조 네임스페이스 개념</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-connect-hdi-cluster?toc=%2fazure%2fstorage%2fblobs%2ftoc.json" target="_blank">ADLS Gen2를 사용하여 HDInsight 클러스터 만들기</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/" target="_blank">Azure HDInsight</a>에 대해 자세히 알아보세요.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-component-versioning#hadoop-components-available-with-different-hdinsight-versions" target="_blank">HDInsight의 오픈 소스 구성 요소 가이드를</a> 읽어보세요.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes" target="_blank">HDInsight 릴리스 정보를 검토합니다</a>.</li>
+   <li><a href="https://social.msdn.microsoft.com/forums/azure/en-us/home?forum=hdinsight" target="_blank">MSDN 포럼</a>에서 HDInsight에 질문합니다.</li>
+   <li><a href="https://stackoverflow.com/questions/tagged/hdinsight" target="_blank">StackOverflow</a>에 대해 HDInsight에 질문합니다.</li>
+  </ul>

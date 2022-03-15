@@ -1,0 +1,91 @@
+### YamlMime:Yaml
+ms.openlocfilehash: da5588fbfa589af03f7f04975a8b981d2a373ffd
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907153"
+Slug: introducing-azure-orbital-process-satellite-data-at-cloudscale
+Title: 'Azure Orbital 소개: 클라우드 규모에서 위성 데이터 처리'
+Summary: 지구를 관찰하기 위해 우주에서 수집된 데이터는 기후 변화와 과학적 발견 및 혁신의 발전과 같은 글로벌 과제를 해결하는 데 중요한 역할을 합니다.
+Content: >-
+  <p>지구를 관찰하기 위해 우주에서 수집된 데이터는 기후 변화와 과학적 발견 및 혁신의 발전과 같은 글로벌 과제를 해결하는 데 중요한 역할을 합니다. 클라우드는 원격 작업을 위한 최신 통신 시나리오와 공간에서 엄청난 양의 데이터를 수집, 처리 및 배포하는 데 핵심적인 요소입니다.</p>
+
+
+  <p>오늘 Azure&rsquo; <a href="https://aka.ms/orbital-service" target="_blank">Orbital</a>의 미리 보기를 발표했습니다. 새로운 지상국 서비스를 사용하면 위성 운영자가 위성과 통신하고 제어하고, 데이터를 처리하고, Microsoft Azure 직접 작업을 확장할 수 있습니다. Azure Orbital을 사용하면 지상 스테이션, 네트워크 및 프로시저를 포함한 지상 세그먼트가 이제 Azure에 통합되고 많은 파트너가 보완하는 디지털 플랫폼이 됩니다.</p>
+
+
+  <p><a href="https://www.amergint.com/" target="_blank">Amergint</a>, <a href="https://www.kratosdefense.com/" target="_blank">Kratos</a>, <a href="https://www.ksat.no/" target="_blank">KSAT</a>, <a href="https://www.kubos.com/" target="_blank">Kubos</a>, <a href="https://www.ses.com/">SES</a>,&nbsp; <a href="https://www.usei-teleport.com/" target="_blank">US Electrodynamics INC</a> 및&nbsp;<a href="https://www.viasat.com/" target="_blank">Viasathave</a>&nbsp;는 Azure Orbital 파트너의 에코시스템에 합류했으며, 각 파트너는 고객의 이점에 대한 고유한 가치와 전문 지식을 제공했습니다.</p>
+
+
+  <p>Microsoft는 지리 공간적 데이터의 수집, 전송 및 처리에 대한 고객의 요구를 지원할 수 있는 좋은 위치에 있습니다. 인텔리전트 클라우드 및 에지 전략은 현재 발표된 60개 이상의 클라우드 지역, 고급 분석 및 AI 기능과 함께 세계&mdash; 보안 및 혁신에서 가장 빠르고 복원력이 뛰어난 네트워크 중 하나로 확장되고 있습니다.<br>
+
+  <a data-widget="image" href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/01a6d654-e042-44d3-9d04-030f669151e7.png"><img alt="Overview of technologies and partner ecosystem for Azure Orbital" border="0" height="345" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c53722a4-6938-4dea-bb41-a2c639481af2.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="727"></a><img alt="" height="15" role="presentation" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/45458033-812e-4683-a7ef-d13cac217931.gif" title="클릭하고 끌어서 이동" width="15"></p>
+
+
+  <h2>Azure Orbital 시나리오</h2>
+
+
+  <h3>지구 관측 및 IoT</h3>
+
+
+  <p>위성 이미지는 많은 산업에서 사용됩니다. 기상학, 해양학, 농업, 지질학, 국방 및 지능과 같은 지역은 대부분 저지방 궤도(LEO) 또는 MEO(중지구 궤도)를 포함하여 비지정상 궤도(NGSO)에 있는 위성을 사용합니다. 위성이 궤도에 오를 때, 데이터를 지구로 다운링크하기 위해 특정 기간 내에 접촉을 설정하려면 상당한 양의 지상 기지가 필요합니다.</p>
+
+
+  <p>Azure Orbital을 사용하면 위성 운영자가 우주선과의 접촉을 예약하고 Azure의 VNet(가상 네트워크)에 데이터를 직접 다운링크할 수 있습니다. Azure Virtual Networks는 격리되고, 매우 안전하며, 애플리케이션 및 데이터 세트를 포함하는 Microsoft&#39;90개가 넘는 규정 준수 인증에 의해 관리됩니다.</p>
+
+
+  <p>Azure Orbital은 데이터를 Azure로 직접 진입시켜 시장을 선도하는 데이터 분석, 지리 공간적 도구, 기계 학습 및 Azure AI 서비스로 즉시 처리할 수 있습니다.</p>
+
+
+  <p>연락처 일정은 공유 높은 게인 안테나를 통해 X, S 및 UHF 대역 주파수에서 Microsoft 소유 및 운영 지상 스테이션에서 사용할 수 있습니다. 또한 Azure와의 직접 통합의 이점을 유지하면서 선호하는 Teleport 운영자와 쉽게 예약할 수 있도록 파트너&#39;지상국 네트워크와 <a href="https://azure.microsoft.com/en-us/global-infrastructure/global-network/#overview" target="_blank">글로벌 네트워크를</a> 직접 상호 연결합니다.</p>
+
+
+  <p>Microsoft 또는 파트너 지상국을 사용하든 간에 안테나에서 클라우드로의 디지털화된 RF(무선 주파수) 신호는 <a href="https://www.vita.com/resources/Documents/Articles/IEEE Micro 2013.pdf" target="_blank">VITA-49(VITA 무선 전송) 형식(VITA-49</a>)을 사용하여 전송한 다음, 플랫폼에서 제공하는 사용자 지정 모뎀 또는 클라우드 모뎀을 사용하여 강등될 수 있습니다.</p>
+
+
+  <p>&nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e5db3d78-91e3-4588-beaf-50a0a439c083.png"><img alt="Data flow diagram from a satellite to ground station and processing with Azure" border="0" height="194" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6d61a135-d4a1-4435-a577-43ac9f060bc8.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="727"></a><img alt="" height="15" role="presentation" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fd6f045d-a1b7-42c9-9d13-5a338cc00993.gif" title="클릭하고 끌어서 이동" width="15"></p>
+
+
+  <h2>글로벌 통신</h2>
+
+
+  <p>IFC(기내 연결), 해상, 연결된 크루즈, 이동성 및 비디오 방송은 우주 산업에서 다루는 통신 시나리오의 예입니다. 위성 운영자는 Azure Orbital을 활용하여 관리되는 서비스의 가속화된 빌드를 통해 네트워크 용량 판매를 넘어설 수 있습니다. Azure Orbital은 기존 지상 스테이션의 상호 연결과 네트워크 POP 또는 데이터 센터에 가까운 전용 안테나의 공동 배치를 제공합니다. Orbital을 사용하면 글로벌 네트워크 및 서비스 인프라를 최대한 활용하여 에지, 5G, SD-WAN 및 AI를 사용하여 새로운 제품 제품 및 서비스 체인을 구축하는 동시에 운영 및 공간을 지속적으로 최적화할 수 있습니다.</p>
+
+
+  <p><a data-widget="image" href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3db6f17-d89c-4cf0-a13c-e28b4253546a.png"><img alt="Technology diagram for communication scenarios with Azure Orbital" border="0" height="220" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/13f00bb0-029f-4e0a-8ab3-15e61db93318.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="624"></a><img alt="" height="15" role="presentation" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9300a60a-3bf9-4fb1-a1a2-cbcb556c81f6.gif" title="클릭하고 끌어서 이동" width="15"></p>
+
+
+  <p><a href="https://www.ses.com/" target="_blank">SES</a>는 차세대 <a href="https://o3bmpower.ses.com/" target="_blank">SES O3b mPOWER</a> 통신 시스템의 지상 스테이션(원격 분석, 추적 및 명령 시스템 포함)을 배치하는 Microsoft Azure 선택했습니다. SES는 클라우드 규모의 운영 환경을 설계했으며 Azure Orbital을 핵심 플랫폼으로 활용하여 관리되는 서비스를 확장 및 빌드하고 주문 및 서비스 배달 관리 프로세스를 간소화합니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&quot;지난 12~18개월 동안 클라우드 채택 계획을&#39; 고객을 가속화하는 데 중점을 두게 되었습니다. Microsoft는 새로운 Azure Orbital 시스템을 통해 Microsoft에서 이상적인 파트너를 찾게 되어 기쁘게 생각합니다. 이 파트너십은 위성 인프라에 대한 노하우</em>&mdash;<em>SES&#39;경험을&#39; 두 회사를 활용하며 Microsoft&#39;클라우드 전문 지식</em>&mdash;<em>은 미래를&quot; 위한 새롭고 혁신적인 솔루션을 개발하는 데 블록 </em>이 있다고 SES Networks의 JP Hemingway CEO는 말했습니다.<em>&quot; Microsoft&#39;데이터 센터와 함께 차세대 O3b mPOWER 게이트웨이를 공동 배치, 배포 및 운영하게 되어 매우 기쁩니다. 원격 사이트에서 클라우드에 대한 이러한 원홉 연결을 통해 MEO 고객은 클라우드 애플리케이션 성능을 향상시키고, 새로운 시장을 확장하는 데 필요한 유연성과 민첩성으로 비즈니스 운영을 최적화할 수 있습니다.&quot;</em></p>
+
+  </blockquote>
+
+
+  <p>지상 세그먼트는&#39;투자의 모든 위성 운영자의 중요한 부분입니다. 파트너의 에코시스템은 서비스 및 기술 통합을 선택하여 플랫폼을 보강하기 위해 <a href="https://docs.microsoft.com/en-us/azure/networking/networking-partners-msp#:~:text=The%20Azure%20Networking%20Managed%20Service%20Provider%20%28MSP%29%20Partner,around%20Azure%27s%20portfolio%20of%20networking%20products%20and%20services." target="_blank">MSP(관리 서비스 공급자) 프로그램에</a> 참여했습니다. Azure에 최적화된 클라우드 모뎀인 Mission Control Operations는 비즈니스에 필요할 때 주문형으로 프로비전된 타사 클라우드 네이티브 서비스의 예입니다.</p>
+
+
+  <p>Azure Orbital은 현재 미리 보기로 제공됩니다. 미리 보기에 참여할 질문, 피드백 및 관심은 문의 <a href="mailto:MsAzureOrbital@microsoft.com">MsAzureOrbital@microsoft.com</a>하세요. 자세한 내용을 알아보거나 피드백을 공유하거나 미리 보기 참여에 대한 관심을 나타내려면 <a href="https://aka.ms/OrbitalDocs" target="_blank">제품 설명서를</a> 방문하세요.</p>
+
+
+  <h2>Azure Orbital에 대해 자세히 알아보기</h2>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/services/orbital/" target="_blank">Azure Orbital 소개</a></li>
+      <li><a href="https://aka.ms/networking-ignite2020" target="_blank">Azure 네트워킹의 새로운 기능&rsquo;</a></li>
+  </ul>
+
+
+  <hr>
+
+  <p><i>Azure. 목적에 따라 발명.</i></p>
+
+
+  <ul>
+
+  </ul>

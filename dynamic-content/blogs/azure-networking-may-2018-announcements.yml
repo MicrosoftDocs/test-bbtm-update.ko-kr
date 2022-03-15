@@ -1,0 +1,153 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a073d098d34791972a55e356d64adf5f078c25b4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907305"
+Slug: azure-networking-may-2018-announcements
+Title: Azure 네트워킹 2018년 5월 공지
+Summary: 이번 주에는 재능있는 개발자를 위한 올해의 프리미어 이벤트인 Microsoft Build 2018이 있습니다. 기술에 대한 강한 욕구와 배우고 새로운 방법으로 자신을 몰입하고자하는 욕망으로 ...
+Content: >-
+  <p>이번 주에는 재능있는 개발자를 위한 올해의 프리미어 이벤트인 Microsoft Build 2018이 있습니다. 기술에 대한 강한 욕구와 클라우드 애플리케이션을 빌드하고 만드는 새로운 방법으로 배우고 몰입하려는 욕구로 수천 명의 소프트웨어 전문가와 코더가 이번 주 시애틀에 오고 있습니다. Wed&rsquo;는 이 기회를 통해 우리가 시작한 새로운 네트워킹 서비스와 개선 사항에 대해 알려드리고자 합니다.</p>
+
+
+  <p>모든 규모의 비즈니스가 중요 업무용 워크로드를 Azure로 이동함에 따라 모니터링을 통해 보안 및 관리에서 안정성 및 성능과 같은 주요 영역에 이르기까지 전체 네트워크 환경을 간소화할 수 있는 새로운 기회가 생깁니다. DDoS, Azure 서비스에 대한 VNet 액세스, 영역 인식 Application Gateway, 새로운 글로벌 규모 CDN 제품과 함께 새로운 초고속 Load Balancer와 같은 새로운 서비스를 시작하여 Azure의 네트워킹 기능을 지속적으로 개선하고 고객이 가장 까다로운 워크로드를 실행할 때 더 많은 작업을 실행하고 관리하고 달성할 수 있도록 새로운 서비스 및 기술을 개발하는 것이 더 중요합니다.</p>
+
+
+  <h2>Azure DDoS Protection</h2>
+
+
+  <p>지난 달에는 VNet(가상 네트워크)에 배포된 애플리케이션 및 리소스에 대해 향상된 DDoS 완화 기능을 제공하는 Azure DDoS Protection 표준 서비스의 GA( <a href="https://aka.ms/ddosblog" target="_blank">일반 공급</a> )를 발표했습니다. 애플리케이션 또는 리소스 변경 없이 DDoS Protection을 사용하도록 설정하면 서비스가 Microsoft를 보호하는 데 사용하는 것과 동일한 DDoS 기술을 활용할 수 있습니다. 애플리케이션&rsquo; 트래픽 프로필에 지속적으로 조정된 DDoS 보호 정책을 자동으로 구성하는 전용 모니터링 및 기계 학습을 사용하면 서비스가 완전히 보호됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7976ade1-1db1-437f-b04f-9dcc2130bfdd.png"><img alt="Azure DDoS" border="0" height="266" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/48e8e94a-ae92-4c68-a4b1-471ca962cf73.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure DDoS" width="987"></a></p>
+
+
+  <p><a href="https://youtu.be/qfDb_S5rc9Q" target="_blank">시작 비디오를</a> 시청하세요. 자세한 내용은 <a href="https://aka.ms/ddosprotectiondocs" target="_blank">Azure DDoS Protection 서비스 설명서에 있습니다</a>.</p>
+
+
+  <h2>VNet 서비스 엔드포인트</h2>
+
+
+  <p>VNet 서비스 엔드포인트는 VNet 개인 주소 공간을 Azure 서비스로 확장합니다. 이렇게 하면 비즈니스에 중요한 Azure 리소스에 대한 액세스를 VNet으로만 제한하여 인터넷 액세스를 완전히 제거할 수 있습니다. 서비스 엔드포인트를 통한 모든 트래픽은 Azure에 유지됩니다.</p>
+
+
+  <p>올해 초 Azure Storage 및 Azure SQL Database 대한 VNet 서비스 엔드포인트의 GA를 발표했습니다. 서비스 엔드포인트를 통해 액세스할 수 있는 서비스를 계속 확장하고 이제 Azure Cosmos DB 서비스 엔드포인트에 대한 &quot;GA를 발표합니다&quot;. Azure Cosmos DB는 고객이 여러 지역에 있는 서브넷에서 전역적으로 분산된 Azure Cosmos DB 계정에 대한 액세스를 제한할 수 있는 지역 간 액세스 제어 지원을 허용하는 첫 번째 서비스입니다. 자세한 내용은 <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview" target="_blank">VNet 서비스 엔드포인트 설명서를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2396d4aa-36c0-4faa-8ac7-35256a5d8733.png"><img alt="VNet Service Endpoints" border="0" height="236" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6285418a-7f24-436e-aaed-b666fdf20bdd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="VNet 서비스 엔드포인트" width="934"></a></p>
+
+
+  <p align="center"><em>VNet 서비스 엔드포인트는 Azure 서비스를 VNet에서만 액세스하도록 제한합니다.</em></p>
+
+
+  <h2>Azure DNS 개선 사항</h2>
+
+
+  <p>Azure DNS 프라이빗 영역은 이제 공개 미리 보기로 제공되며, 사용자 지정 DNS 서버 없이도 VNet에 대해 안전하고 신뢰할 수 있는 이름 확인을 제공합니다. VNet에 DNS 영역을 가져올 수 있습니다. 또한 회사&rsquo; 도메인 이름과 같은 사용자 지정 도메인 이름을 유연하게 사용할 수 있습니다. 프라이빗 영역은 VNet 내 및 VNet 간에 이름 확인을 제공합니다. 프라이빗 영역은 동일한 지역의 VNet과 지역 및 구독에 걸쳐 있을 수 있습니다.</p>
+
+
+  <p>프라이빗 및 공용 DNS 영역이 동일한 이름을 공유할 수 있도록 <a href="https://en.wikipedia.org/wiki/Split-horizon_DNS" target="_blank">분할 수평선 보기</a> 로 영역을 구성할 수 있습니다. 이는 프로덕션 환경에서 롤아웃하기 전에 로컬 테스트 환경에서 워크로드의 유효성을 검사하려는 일반적인 시나리오입니다. 이름 확인은 구성된 VNet으로 제한되므로 DNS 반출을 방지할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fefcb2d0-0d63-4a5d-92a7-ee15eff73603.png"><img alt="DNS" border="0" height="389" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53170444-530f-4025-be4b-f23b939625d2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="DNS" width="598"></a></p>
+
+
+  <p>VNet을 등록 VNet으로 지정하면 Azure는 이 VNet의 모든 VM(가상 머신)에 대한 프라이빗 영역에 DNS 및 레코드를 동적으로 등록합니다. 프라이빗 영역에 대한 자세한 내용은 이 <a href="https://docs.microsoft.com/en-us/azure/dns/private-dns-overview" target="_blank">개요</a> 와 <a href="https://aka.ms/privatednsscenarios" target="_blank">일반적인 시나리오를</a> 참조하세요.</p>
+
+
+  <p>이제 Azure DNS는 고객이 경고를 구성하고 받을 수 있도록 <a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/index" target="_blank">Azure Monitor</a> 를 통해 메트릭을 제공합니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/dns/dns-alerts-metrics" target="_blank">설명서를</a> 참조하세요.</p>
+
+
+  <h2>연결 모니터링</h2>
+
+
+  <p>이제 일반 공급되는 Network Watcher 연결 모니터를 사용하면 분 단위 단위로 VM에서 다른 VM, FQDN, URI 또는 IPv4 주소로의 연결 및 대기 시간을 쉽게 모니터링하고 경고할 수 있습니다. 이렇게 하면 연결 문제를 검색하는 시간이 줄어듭니다. 연결 문제가 플랫폼 또는 사용자 구성 문제로 인한 것인지에 대한 인사이트를 얻을 수 있으므로 문제를 신속하게 파악하고 수정할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a352dbb-bb18-4170-8b62-7392ba7f194e.png"><img alt="Connection Monitor" border="0" height="490" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/618448e6-f8ce-457a-b141-8b405dc312fb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="연결 모니터" width="898"></a></p>
+
+
+  <p>자세한 내용은 Network Watcher <a href="https://aka.ms/connectionmonitordoc" target="_blank">연결 모니터 설명서를</a> 참조하세요.</p>
+
+
+  <h2>트래픽 보기: 성능 향상</h2>
+
+
+  <p>3월에는 사용자 기반의 지리적 위치, 이러한 위치에서 발생한 대기 시간 및 트래픽 볼륨과 같은 정보를 제공하는 <a href="https://azure.microsoft.com/en-us/blog/global-performance-acceleration-with-azure-traffic-manager/preview/" target="_blank">Traffic View의 일반 공급</a> 이 발표되었습니다. Azure Portal 또는 Power BI 같은 분석 도구를 통해 제공되는 시각화를 통해 워크로드 배치를 최적화하고 사용자&rsquo; 네트워크 환경에 대해 알아볼 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-traffic-view-overview" target="_blank">트래픽 보기 설명서를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6cc8bd6f-5366-490a-9e0d-7a6256afbe5a.jpg"><img alt="traffic view" border="0" height="422" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c08923ff-c493-4db7-8d40-717c7c5b286a.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="트래픽 보기" width="640"></a></p>
+
+
+  <h2>전역 VNet 피어링</h2>
+
+
+  <p>Azure 지역 간에 VNet을 원활하게 연결하는 글로벌 VNet 피어링이 이제 <a href="https://azure.microsoft.com/updates/general-availability-global-vnet-peering" target="_blank">일반 공급됩니다</a>. 전 세계에서 VNet을 피어할 수 있습니다. 전역 VNet 피어링을 1 <a href="https://www.youtube.com/watch?v=gwqei4Rg30M&amp;feature=youtu.be" target="_blank">분 안에</a> 구성할 수 있습니다. 피어된 VNet은 연결 관점에서 하나의 글로벌 VNet으로 표시됩니다. 피어된 VNet 내의 리소스는 Microsofts&rsquo; 글로벌 네트워크를 통해 서로 직접 통신할 수 있습니다. 글로벌 VNet 피어링을 사용하면 재해 복구를 위해 한 위치에서 다른 위치로 데이터를 복사할 수 있도록 VNet 간에 데이터 복제를 사용할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview" target="_blank">VNet 피어링 설명서를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/241eff95-d02d-4716-ae68-768929ffb968.png"><img alt="Azure VNet" border="0" height="340" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c8cd3d5f-c305-4ed5-846c-10a015fe1a22.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure VNet" width="712"></a></p>
+
+
+  <h2>애플리케이션 보안 그룹</h2>
+
+
+  <p>이제 ASG(애플리케이션 보안 그룹)를 일반 공급합니다. ASG를 사용하면 정책 구성을 중앙 집중화하고 보안 관리를 간소화할 수 있습니다. ASG를 사용하면 가상 머신에 할당된 모니커를 사용하여 워크로드, 애플리케이션 또는 환경을 기반으로 세분화된 네트워크 보안 정책을 정의할 수 있습니다. 이렇게 하면 제로 트러스트 모델을 구현하여 명시적으로 허용되는 애플리케이션 흐름에 대한 액세스를 제한할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/security-overview#application-security-groups" target="_blank">Application Security Group 설명서를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/44d93ce0-0a21-4eaa-b56d-c52c5061a488.png"><img alt="Application security groups" border="0" height="587" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a931455-895b-4426-a562-5bf8108ccab4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="애플리케이션 보안 그룹" width="1375"></a></p>
+
+
+  <h2>Azure Application Gateway 및 WAF의 향상된 기능</h2>
+
+
+  <p>Application Gateway 및 WAF(웹 애플리케이션 방화벽)는 애플리케이션 배달 컨트롤러를 서비스로 제공합니다. 이제 HTTP/2 지원 및 향상된 메트릭을 사용할 수 있습니다. HTTP/2 인식 클라이언트는 연결 멀티플렉싱 및 관련 보안 및 성능 향상의 이점을 누릴 수 있습니다. Application Gateway에서 백 엔드로의 통신은 HTTP 1.1을 통해 유지됩니다.</p>
+
+
+  <p>향상된 메트릭에는 총 연결, 총 요청, 실패한 요청, 요약된 응답 상태 코드 배포, 정상/비정상 호스트 수 및 처리량과 같은 성능 카운터가 포함됩니다. 이러한 향상된 기능을 통해 고객은 대시보드를 빌드하고 경고를 설정하여 애플리케이션 워크로드를 더 잘 모니터링할 수 있습니다.</p>
+
+
+  <p>또한 영역 중복 Application Gateway 및 정적 VIP에 대한 관리되는 미리 보기를 발표합니다. 영역 중복 Application Gateway를 사용하면 Application Gateway 인스턴스가 배포되는 가용성 영역 또는 영역을 선택할 수 있습니다. 정적 VIP는 Application Gateway가 종료되거나 다시 시작되더라도 변경되지 않도록 보장됩니다. 또한 이 관리되는 미리 보기에는 인프라 개선으로 프로비저닝 시간 단축, 더 빠른 업데이트 및 코어당 초당 더 나은 SSL 연결이 포함됩니다. 미리 보기는 미국 동부 2에서 사용할 수 있으며 더 많은 지역이 곧 제공될 예정입니다. 업데이트에 대한 <a href="https://aka.ms/ZoneRedundantAppGWPreview" target="_blank">미리 보기 공지</a> 사항을 참조하세요. 고객은 미리 보기 설명서의 단계에 따라 이 미리 보기에 등록할 수 있습니다.</p>
+
+
+  <h2>Microsoft의 Azure CDN</h2>
+
+
+  <p>빌드 중에 microsoft의 공개 미리 보기를 Azure CDN 공급자로 발표합니다.&nbsp; 이제 모든 웹 연결 콘텐츠에 대해 Microsofts&rsquo; 자체 글로벌 CDN 네트워크의 콘텐츠를 사용하고 제공할 수 있습니다. Microsoft&#39;글로벌 네트워크의 가장자리에서 실행되는 이 새로운 기본 옵션은 Verizon 및 Akamai의 기존 공급자 옵션과 함께 추가되고 있으며 Bing 및 Office 365 사용하는 동일한 CDN 플랫폼에 액세스할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d3a9c124-59f3-457c-ba4d-af43d0fdf60a.png"><img alt="CDN" border="0" height="404" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a80f0fe-742e-45e8-afae-0f536ddf63ad.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CDN" width="784"></a></p>
+
+
+  <p align="center"><em>그림 X. Microsoft 글로벌 네트워크</em></p>
+
+
+  <p>Microsoft의 Azure CDN 빠르고 신뢰할 수 있는 애니캐스트 네트워크를 통해 33개국의 54개 글로벌 Edge POP와 네트워크 허브의 16개 지역 캐시 POP에 대한 액세스를 제공합니다. 이는 60여 개국의 사용자에서 CDN POP로 평균 RTT의 50ms로 변환됩니다.</p>
+
+
+  <h2>표준 Load Balancer</h2>
+
+
+  <p>이제 Azure 표준 Load Balancer는 확장, VNet의 모든 VM에 대한 액세스, 가용성 영역 지원 및 VNet 내의 개인 IP 부하 분산을 통해 일반적으로 사용할 수 있습니다. 표준 Load Balancer는 애플리케이션 트래픽을 백 엔드 풀의 최대 1,000개 VM에 분산할 수 있으며 기본 Load Balancer보다 10배 더 많이 배포할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3f3a093c-016d-4aa5-8283-6caba5f1468d.png"><img alt="Standard Load Balancer" border="0" height="256" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd90e3a4-0674-4506-b843-3c8124b9aa0d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="표준 Load Balancer" width="401"></a></p>
+
+
+  <p>이제 VNet의 모든 VM을 백 엔드 풀에 조인하도록 구성할 수 있습니다. 고객은 단일 백 엔드 풀에서 여러 확장 집합, 가용성 집합 및 개별 VM을 결합할 수 있습니다. 여러 프런트 엔드를 아웃바운드 흐름에 동시에 사용할 수 있으므로 가능한 동시 아웃바운드 연결 수가 증가합니다. 또한 여러 프런트 엔드가 있을 때 어떤 프런트 엔드가 선택되는지 제어합니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections" target="_blank">Load Balancer 및 아웃바운드 연결 설명서를</a> 참조하세요.</p>
+
+
+  <p>표준 Load Balancer는 가용성 영역에서 사용하도록 설계되었습니다. 고객은 단일 IP 주소로 공용 및 내부 Load Balancer에 대해 영역 중복 프런트 엔드를 사용하도록 설정하거나 특정 영역의 IP 주소에 프런트 엔드를 맞출 수 있습니다. 영역 간 부하 분산은 지역 내 어디서나 VM에 트래픽을 제공합니다. 영역 중복 프런트 엔드는 모든 영역에서 동시에 제공됩니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-availability-zones" target="_blank">표준 Load Balancer 및 가용성 영역 설명서</a>에서 확인할 수 있습니다.</p>
+
+
+  <p>내부 표준 Load Balancer에 대한 새로운 유형의 부하 분산 규칙은 개인 IP 주소의 모든 포트에서 흐름별 부하 분산을 제공합니다. 네트워크 가상 어플라이언스 및 많은 수의 포트에 트래픽을 분산해야 하는 기타 시나리오에 대한 n-활성 구성을 만들 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview" target="_blank">HA 포트 설명서</a>에서 확인할 수 있습니다.</p>
+
+
+  <p>표준 Load Balancer에는 트래픽 볼륨, 인바운드 연결 시도, 아웃바운드 연결 볼륨, 활성 대역 내 데이터 경로 측정 및 상태 프로브에 대한 인사이트를 제공하는 Azure Monitor에 완전히 통합된 새로운 원격 분석 및 경고가 있습니다. 이 모든 작업은 Azures&rsquo; Operations Management Suite 등에서 사용할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-diagnostics" target="_blank">표준 Load Balancer 진단 및 모니터링 설명서를</a> 참조하세요.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>기업이 클라우드에 더 많은 워크로드를 배포함에 따라 관리 효율성, 모니터링, 가용성 및 네트워크 보안이 향상되어야 합니다. 우리는 새롭고 사용하기 쉽고 보다 포괄적인 네트워킹 서비스를 계속 제공할 것입니다. 앞으로 몇 달 동안 더 많은 Azure 네트워킹 서비스를 계속 지켜보세요! 언제나처럼, 우리는 당신의 피드백에 매우 관심이 있습니다.&nbsp;</p>

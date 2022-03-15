@@ -1,0 +1,43 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 53f15ab2e63e07a4c1238d6cf3b4098c5730e0e0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900617"
+Slug: simplifying-your-environment-setup-while-meeting-compliance-needs-with-built-in-azure-blueprints
+Title: 기본 제공 Azure Blueprints를 사용하여 규정 준수 요구 사항을 충족하는 동안 환경 설정 간소화
+Summary: 규정 준수 표준을 위해 특별히 빌드된 첫 번째 Azure Blueprint, 가상 네트워크 및 정책과 같은 기본 Azure 인프라 집합을 특정 ISO 컨트롤에 매핑하는 ISO 27001 Shared Services Blueprint의 릴리스를 발표하게 되어 기쁩니다.
+Content: >-
+  <p>Im&rsquo;은 규정 준수 표준을 위해 특별히 빌드된 첫 번째 Azure Blueprint 릴리스,<strong> </strong> 가상 네트워크 및 정책과 같은 기본 Azure 인프라 집합을 특정 ISO 컨트롤에 매핑하는 <a href="https://aka.ms/ISOSharedServices" target="_blank"><strong>ISO 27001 Shared Services</strong></a><strong> </strong>청사진 샘플을 발표하게 되어 기쁩니다.</p>
+
+
+  <p>Microsoft Azure 90개가 넘는 규정 준수 제품으로 업계를 선도합니다. Azure는 GDPR(일반 데이터 보호 규정), ISO 27001, HIPAA, PCI, SOC 1 및 SOC 2와 같은 광범위한 국제 및 산업별 규정 준수 표준뿐만 아니라 FedRAMP 및 기타 NIST 800-53 파생 표준, 오스트레일리아 IRAP, 영국 G-클라우드 및 싱가포르 MTCS를 포함한 국가별 표준을 충족합니다. 많은 고객이 규정 준수 설정을 자동으로 매핑하는 서비스를 사용하여 환경에 대한 내부 규정 준수 사례를 활용하고 구축할 수 있는 것에 관심을 표명했습니다.</p>
+
+
+  <p>고객이 미국 및 국제 거버넌스 요구 사항을 성공적으로 해석하면서 Azure에서 환경 만들기를 간소화할 수 있도록 클라우드 채택 과정에서 활용할 수 있는 일련의 기본 제공 Blueprints 아키텍처를 발표합니다. <a href="https://aka.ms/getblueprints" target="_blank"><strong>Azure Blueprints</strong></a> 는 고객이 정책, 배포 템플릿 및 역할 기반 액세스 제어와 같은 구성 가능한 아티팩트에서 반복 가능한 방식으로 클라우드 환경을 배포하고 업데이트하는 데 도움이 되는 무료 서비스입니다. 이 서비스는 고객이 관리되는 Azure 환경을 설정할 수 있도록 빌드되었으며 대규모 마이그레이션을 위한 프로덕션 구현을 지원하도록 확장할 수 있습니다.</p>
+
+
+  <p>ISO 27001 Shared Services Blueprint는 이미 Azure 테넌트에서 사용할 수 있습니다. 청사진 페이지로 이동하여 청사진&rdquo; 만들기를 클릭한 &ldquo;다음 목록에서 ISO27001 Shared Services 청사진을 선택합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/147141f7-8d26-4dba-b0db-0eb0a84cb60f.png"><img alt="Creating a blueprint in Azure portal by selecting a template" border="0" height="1167" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0aaed223-c616-4bd2-9964-5ead479ff9a6.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Blueprints" width="2404"></a></p>
+
+
+  <p>ISO 27001 청사진은 <strong>한 번의 클릭</strong> 으로 프로덕션을 준비하고 안전한 엔드투엔드 솔루션을 배포할 수 있도록 설계되었으며 다음을 포함합니다.</p>
+
+
+  <ul>
+   <li><strong>강화된 인프라 리소스: </strong> Azure Resource Manager 템플릿은 설치 중에 구성 매개 변수를 지정하여 아키텍처의 구성 요소를 Azure에 자동으로 배포하는 데 사용됩니다. 인프라 구성 요소에는 Azure Firewall, Active Directory, Key Vault, Azure Monitor, Log Analytics, 서브넷이 있는 가상 네트워크, 네트워크 보안 그룹 및 역할 기반 액세스 제어 정의가 포함됩니다. 또한 이러한 리소스는 정의된 청사진 및 생성하도록 설계된 환경의 일관성을 보호하기 위한 보안 조치로 Blueprints에 의해 잠글 수 있습니다.</li>
+   <li><strong>정책 컨트롤:</strong> 실시간 적용, 규정 준수 평가 및 수정을 제공하는 데 도움이 되는 Azure 정책 집합입니다.</li>
+   <li><strong>검증된 가상 데이터 센터 아키텍처:</strong> 제공된 인프라 리소스는 규모, 성능, 보안 및 거버넌스를 고려한 Microsoft 승인 VDC(가상 데이터 센터) 아키텍처를 기반으로 합니다.</li>
+   <li><strong>보안 및 규정 준수 제어:</strong> Microsoft가 클라우드 공급자로 담당하는 모든 컨트롤의 혜택을 계속 누릴 수 있으며, 이제 이 청사진을 사용하면 ISO 27001 요구 사항을 충족하도록 나머지 컨트롤의 수를 구성할 수 있습니다.</li>
+   <li><strong>설명서:</strong> 공유 서비스 인프라 및 정책 제어 매핑 매트릭스를 설명하는 단계별 배포 가이드입니다.</li>
+   <li><strong>마이그레이션 활주로:</strong> <a href="https://azure.microsoft.com/en-us/migration/" target="_blank">Azure 마이그레이션 센터를</a> 통해 마이그레이션을 가속화하기 위해 Azure 권장 기반을 배포하기 위한 규범적인 지침 집합을 제공합니다.</li>
+  </ul>
+
+
+  <p>Microsoft는 고객이 안전하고 규정을 준수하는 방식으로 Azure를 활용할 수 있도록 최선을 다하고 있습니다. 앞으로 몇 개월 동안 HITRUST, PCI DSS, 영국 NHS(National 상태 관리 서비스) IG(Information Governance) Toolkit, FedRAMP 및 CIS(Center for Internet Security) 벤치마크용으로 릴리스된 새로운 기본 제공 청사진을 계속 볼 수 있습니다. 초기 미리 보기에 참여하려면 <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR1fUHl9R1JtPng3uyom9BmxUQjdNN1FDTlI4U0NERTlXQzJLSTA0SFhHUi4u" target="_blank">등록</a>하거나 규정 준수 청사진에 대한 제안이 있는 경우 <a href="https://feedback.azure.com/forums/915958-azure-governance" target="_blank">Azure 거버넌스 피드백 포럼</a>을 통해 공유하세요.</p>
+
+
+  <p><a href="https://aka.ms/ISOSharedServices" target="_blank">Azure ISO 27001 청사진</a>에 대해 자세히 알아봅니다.</p>

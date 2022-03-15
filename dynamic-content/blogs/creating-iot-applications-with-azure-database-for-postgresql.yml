@@ -1,0 +1,85 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 46b59b2527720ceb3e7c349ef55921243361d600
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907224"
+Slug: creating-iot-applications-with-azure-database-for-postgresql
+Title: Azure Database for PostgreSQL을 사용하여 IoT 애플리케이션 만들기
+Summary: 다양한 산업에서 다양한 IoT 사용 사례가 있습니다. IoT 사용 사례의 가장 일반적인 범주에는 예측 유지 관리, 연결된 차량, 변칙 검색, 자산 모니터링 등이 있습니다.
+Content: >-
+  <p><a href="https://www.azureiotsolutions.com/Accelerators#description/predictive-maintenance">예측 유지 관리</a>, <a href="https://download.microsoft.com/download/6/9/D/69D92EB1-F1EE-4893-ABE1-C005D7F9FF57/Microsoft_Connected_Vehicle_Platform_Whitepaper_EN_US.pdf">연결된 차량</a>, 변칙 검색, 자산 모니터링 등과 같은 일반적인 범주를 포함하는 다양한 산업에서 다양한 <a href="https://azure.microsoft.com/en-us/overview/iot/industry/">IoT 사용 사례가</a> 있습니다. 예를 들어 캘리포니아 주의 수처리 시설에서는 물 펌프에 IoT 장치를 설치하여 말력, 유량 및 물 펌프의 전기 사용량을 측정할 수 있습니다. 이러한 디바이스에서 내보낸 이벤트는 집계 및 처리를 위해 30초마다 IoT Hub로 전송됩니다. 수처리 시설 회사는 이벤트 데이터가 특정 임계값을 초과할 때 유지 관리 팀에 경고하기 위해 물 펌프를 모니터링하고 알림을 빌드하는 대시보드를 빌드할 수 있습니다. 그런 다음 유속이 위험하게 낮은 경우 유지 관리 팀에 물 펌프를 수리하도록 경고할 수 있습니다. 이는 매우 일반적인 자동 관리 IoT 사용 사례입니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/iot-fundamentals/iot-introduction">Azure IoT</a> IoT 솔루션의 전체 스택입니다. &rsquo;수십억 개의 IoT 자산을 연결, 모니터링 및 제어하는 Microsoft 관리형 클라우드 서비스의 컬렉션입니다. Azure IoT 핵심 하위 시스템의 일반적인 구성 요소 집합은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>이벤트를 스트리밍하는 <b>IoT 디바이스</b></li>
+   <li>Azure IoT 디바이스 및 에지 디바이스 간 통신을 사용하도록 설정하는 데 가장 자주 사용되는 <b>클라우드 게이트웨이 </b></li>
+   <li>디바이스에서 이벤트를 수집하고 분석 출력에 따라 작업을 트리거하는 <b>스트림 처리</b>입니다. 일반적인 워크플로는 스토리지를 위해 JSON으로 인코딩된 출력 원격 분석을 반환할 수 있는 Avro로 인코딩된 입력 원격 분석입니다.</li>
+   <li>Storage 일반적으로 보고 및 시각화를 위해 IoT 이벤트 데이터를 저장하는 데 사용되는 데이터베이스입니다.<b> </b>&rsquo;<b> </b></li>
+  </ul>
+
+
+  <p>&rsquo;엔드투엔드 Azure IoT 솔루션을 구현하고 <a href="https://docs.microsoft.com/en-us/azure/postgresql/">Azure Database for PostgreSQL</a>을 사용하여 IoT 이벤트 데이터를 JSONB 형식으로 저장하는 방법을 살펴보겠습니다. PostgreSQL을 NoSQL 데이터 저장소로 사용하는 것은 강력한 네이티브 JSON 처리, 인덱싱 기능 및 <a href="https://azure.microsoft.com/en-us/blog/run-your-lob-applications-with-postgresql-powered-by-the-plv8-extension/">plv8 확장</a>으로 고유한 장점을 가지며, JavaScript v8 엔진을 SQL 통합하여 더욱 향상시킵니다. 관리되는 서비스 기능과 저렴한 비용 외에도 Azure Database for PostgreSQL을 사용할 때의 주요 이점 중 하나는 개발자 생산성 향상을 통해 최신 애플리케이션을 지원하는 Azure 에코시스템과의 네이티브 통합입니다.</p>
+
+
+  <p>이 구현에서는 plv8 확장이 포함된 Azure Database for PostgreSQL을 스토리지, 분석 및 보고를 위한 IoT 원격 분석 스트림의 영구 계층으로 사용합니다. 고속 스트리밍 데이터는 먼저 영구 계층으로 PostgreSQL 데이터베이스(마스터 서버)에 로드됩니다. 마스터 서버는 고속 데이터 수집에 사용되며 <a href="https://docs.microsoft.com/en-us/azure/postgresql/concepts-read-replicas">읽기 복제본</a> 은 보고 및 다운스트림 데이터 처리에 활용되어 데이터 기반 작업을 수행합니다. Azure IoT Hub를 이벤트 처리 허브 및 Azure Function으로 활용하여 처리 단계를 트리거하고 내보낸 이벤트에서 필요한 항목을&rsquo; 추출하여 Azure Database for PostgreSQL에 저장할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d83daf7a-9ac9-4afe-b40d-7caf67f29038.png"><img alt="139 - Azure" border="0" height="199" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6dd84e2c-5f52-4709-b6f3-4c02b92789ac.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="139 - Azure" width="576"></a><br>
+
+  &nbsp;</p>
+
+
+  <p>이 게시물에서 시작&rsquo;하려면 상위 수준 구현을 안내합니다. <a href="https://github.com/Azure/azure-postgresql/tree/master/samples/IoT%20Demo">GitHub 리포지토리</a>에는 샘플 애플리케이션과 아래 솔루션을 구현하기 위한 단계별 지침이 포함된 자세한 빠른 시작 자습서가 있습니다. 빠른 시작에서는 Node.js 애플리케이션을 사용하여 원격 분석을 IoT Hub로 보냅니다.</p>
+
+
+  <h3>1단계: Azure IoT 허브 만들기 및 허브에 디바이스 등록</h3>
+
+
+  <p>이 구현에서 IoT 센서 시뮬레이터는 지속적으로 온도 및 습도 데이터를 다시 클라우드로 내보냅니다. 첫 번째 단계는 <a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal">이러한 지침을</a> 사용하여 Azure Portal에서 Azure IoT Hub를 만드는 것입니다. 다음으로,&rsquo; IoT Hub가 등록된 디바이스에서 원격 분석을 수신하고 처리할 수 있도록 디바이스 이름을 IoT Hub에 등록하려고 합니다.</p>
+
+
+  <p>GitHub CLI를 사용하여 디바이스를 등록하고 IoT Hub 서비스 연결 문자열을 내보내는 샘플 스크립트가 표시됩니다.</p>
+
+
+  <h3>2단계: Azure Database for PostgreSQL 서버 및 데이터베이스 IoT 데모를 만들어 원격 분석 데이터 스트림 저장</h3>
+
+
+  <p>적절한 크기로 Azure Database for PostgreSQL을 프로비전합니다. <a href="https://docs.microsoft.com/en-us/azure/postgresql/quickstart-create-server-database-portal">Azure Portal</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/postgresql/quickstart-create-server-database-azure-cli">Azure CLI</a>를 사용하여 Azure Database for PostgreSQL을 프로비전할 수 있습니다.</p>
+
+
+  <p>데이터베이스에서 plv8 확장을 사용하도록 설정하고 JSON 문서에서 온도 열을 추출하는 쿼리에 유용한 샘플 plv8 함수&rsquo;를 만듭니다. JSON 테이블을 사용하여 IoT 원격 분석 데이터를 저장할 수 있습니다. 스크립트를 찾아 데이터베이스와 테이블을 만들고 GitHub plv8 확장을 사용하도록 설정할 수 있습니다.</p>
+
+
+  <h3>3단계: Azure 함수 이벤트 허브 만들기 및 메시지 추출 및 PostgreSQL에 저장</h3>
+
+
+  <p>다음으로 1단계에서 만든 Azure IoT Hub에 대한 Event Hub 트리거 바인딩을 사용하여 JavaScript Azure Function을 만듭니다. JavaScript&nbsp;<a href="https://github.com/Azure/azure-postgresql/blob/master/samples/IoT%20Demo/azure%20function/index.js">index.js</a> 샘플을 사용하여 이 함수를 만듭니다. 함수는 IoT Hub에서 들어오는 각 메시지 스트림에 대해 트리거됩니다. JSON 메시지 스트림을 추출하고 2단계에서 만든 PostgreSQL 데이터베이스에 데이터를 삽입합니다.</p>
+
+
+  <h2>종단 간 IoT 솔루션을 실행하여 시작</h2>
+
+
+  <p><a href="https://github.com/Azure/azure-postgresql/tree/master/samples/IoT%20Demo">GitHub 리포지토리</a>의 샘플 애플리케이션을 사용하여 이 솔루션을 시도하고 구현하는 것이 좋습니다. GitHub 이벤트 데이터 생성을 시뮬레이션하기 위해 node.js 애플리케이션을 실행하고, 디바이스 등록을 사용하여 IoT Hub를 만들고, 이벤트 데이터를 IoT Hub로 보내고, Azure 함수를 배포하여 JSON 메시지에서 데이터를 추출하고, Azure Database for PostgreSQL에 삽입하는 단계를 찾을 수 있습니다.</p>
+
+
+  <p>GitHub 모든 단계를 구현하면 아래와 같이 실시간 대시보드를 빌드할 수 있는 Power BI 같은 보고 도구를 사용하여 데이터를 쿼리하고 분석할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0aa0cf61-6d04-4fcc-9738-7e617a5fdf71.png"><img alt="139 - Azure 2" border="0" height="326" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/deb6a49b-6364-4848-980b-6fc28866b267.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="139 - Azure 2" width="566"></a></p>
+
+
+  <p>Azure Database Service for PostgreSQL에서 사용할 수 있는 최신 기능과 기능을 사용할 수 있기를 바랍니다. <a href="https://feedback.azure.com/forums/597976-azure-database-for-postgresql">PostgreSQL용 User Voice</a>를 통해 피드백을 공유해야 합니다.</p>
+
+
+  <p>도움이 필요하거나 질문이 있는 경우 <a href="https://docs.microsoft.com/en-us/azure/postgresql/">Azure Database for PostgreSQL 설명서를</a> 확인하세요.</p>
+
+
+  <h3>감사의 말</h3>
+
+
+  <p>칭칭위안, 바수 렌카마스, 파리크시트 사브자니,&nbsp; 아니타 칸텔레, 레이첼 아게망&nbsp;포가 이 게시물에 기여한 것에 대해 특별한 감사를 표합니다.</p>

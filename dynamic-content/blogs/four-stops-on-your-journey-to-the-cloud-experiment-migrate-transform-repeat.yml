@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1bfcb92f6a0dd9bd9c362e4c3b7f11c2a3a47b74
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907207"
+Slug: four-stops-on-your-journey-to-the-cloud-experiment-migrate-transform-repeat
+Title: '클라우드로의 여정에서 4개의 정류장: 실험, 마이그레이션, 변환, 반복'
+Summary: 여행이 시작될 때 적절한 장소, 먹을 곳 및 할 일을 찾기 위해 의도 한 목적지를 연구 할 때 기대의 기간이 있습니다.
+Content: >-
+  <p>&rsquo;여행이 시작될 때 적절한 장소, 먹을 곳 및 할 일을 찾기 위해 의도 한 목적지를 연구 할 때&rsquo; 기대의 기간이 있습니다. 클라우드로 마이그레이션하는 조직의 경우 해당 단계는 업계에서 실험으로 알려져 있습니다.</p>
+
+
+  <p>클라우드 컴퓨팅은 많은 기업에서 알 수  없는 것이기 때문에 실험 단계는 중요합니다. 마지막 게시물에서 설명한 것처럼 엔터프라이즈 클라우드 전략을 개발하는 것은 단순히 IT를 관리하는 더 저렴한 방법을 찾는 것에 관한 것이 아닙니다&rsquo;. &rsquo;비즈니스의 많은 측면에서 더 많은 것을 얻을 수있는 방법을 찾는 것이 중요합니다. 실험은 클라우드로 가는 길에서 시작할 위치를 선택하고 궁극적인 목적지를 구상하는 데 유용합니다.</p>
+
+
+  <p>Microsoft가 클라우드로 전환할 때, 우리는 우리 자신의 타이어 킥&rdquo;을 조금&ldquo;했습니다. 우리는 자선 단체를 위해 기금을 마련하기 위해 한 달 동안 경매를 위해 매년 빌드한 클라우드 기반 버전의 앱을 회사에 &mdash; 필수적이지 않은 프로젝트를 선택했습니다. 경매가 끝나고 앱 사용량이 증가함에 따라 시간이 지남에 따라 애플리케이션의 확장성을 볼 수 있는 좋은 기회였습니다.</p>
+
+
+  <p>클라우드, 비즈니스 및 IT 부서에서 앱을 빌드, 테스트 및 배포하는 방법을 실험하는 엔지니어와 동시에, 회사가 더 광범위한 범위에서 민첩성을 만들고 기계 학습, 빅 데이터 및 스트리밍 분석과 같은 클라우드 서비스를 활용하는 서비스 또는 애플리케이션을 통해 도약하는 데 어떻게 도움이 되는지 구상해야 합니다. 이 연습은 클라우드로 이동하면 회사가 이동할 수 있는 위치를 구체화하는 데 도움이 됩니다. 또한 다음 단계인 마이그레이션을 정신적으로 준비하는 데 도움이 될 수 있습니다.</p>
+
+
+  <p>마이그레이션은 IT 포트폴리오의 대부분을 클라우드로 이동하는 경우입니다. &rsquo;또한 마이그레이션 중에 기술 직원, 운영, 경영진, 비즈니스 스폰서, 보안 전문가, 규정 준수 직원, 법률 및 HR이 모두 협력하고 협력해야 합니다.</p>
+
+
+  <p>마이그레이션과 거의 동시에 변환 프로세스가 시작됩니다. 일부 앱은 가상 머신으로 클라우드로 이동하여 그대로 유지합니다. 다른 경우에는 데이터 복제, 확장성 및 강력한 ID 관리를 제공하는 Microsoft Azure Active Directory 같은 클라우드 서비스와 같은 기능을 더 잘 활용하기 위해 처음부터 새 애플리케이션을 빌드하는 PaaS 배포 모델을 선택할 수 있습니다.</p>
+
+
+  <p><a href="https://info.microsoft.com/enterprise-cloud-strategy-ebook.html" style="font-weight: normal; font-style: normal; font-size: 13.008px; font-family: Tahoma, 'Helvetica Neue', Arial, Helvetica, sans-serif; text-decoration: underline; line-height: 20.0063px;"><img align="left" alt="Enterprise Cloud Strategy" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7bdb27a9-1691-474b-b389-32febe22a14a.jpg" style="margin-right: 15px; margin-left: 5px; font-size: 13.008px; float: left; display: inline; background-image: none;" title="Enterprise 클라우드 전략" width="196"></a></p>
+
+
+  <p>그것은 당신이&rsquo; 더 많은 것을 위해 다시 찢어 전에 오래되지 않습니다&rsquo;.</p>
+
+
+  <p>Microsofts&rsquo;에서 클라우드로의 마이그레이션 초기에 배운 한 가지는 지속적인 실험 문화권의 가치입니다. 클라우드 시대에 성공하려면 기업이 실험하고, 빠르게 실패하고, 빠르게 학습해야 합니다. 실패와 성공에서 얻은 교훈은 회사가 더 큰 가치를 얻고 파괴적인 혁신을 창출하는 데 도움이 될 것입니다.</p>
+
+
+  <p><a href="https://www.barrybriggs.com/index.html">Barry Briggs</a>와 공동으로 게시한 전자책인 <a href="https://info.microsoft.com/enterprise-cloud-strategy-ebook.html">Enterprise Cloud Strategy에서 클라우드</a>로 전환하고 비즈니스를 혁신하는 방법을 자세히 읽어보세요. 클라우드&rsquo;로의 마이그레이션에 성공하는 데 도움이 되는 Microsoft 및 일부 고객으로부터 풍부한 지식을 찾을 수 있습니다.</p>
+
+
+  <p>멋진 사진 없이 클라우드로의 여행을 위한 여행 가이드라고 생각해 보세요.</p>
+
+
+  <p><strong>5월 11일 수요일 오전 10:00 PST에서</strong> Enterprise 클라우드 전략 웨비나를 빌드하기 위한 로드맵에 <a href="https://info.microsoft.com/roadmap-to-build-your-enterprise-cloud-strategy.html?ls=Website">참여</a>하세요.</p>

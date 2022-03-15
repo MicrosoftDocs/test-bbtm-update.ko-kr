@@ -1,0 +1,249 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3da9f5bab9a89907db2af90190616ed09daccf2b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899853"
+Slug: controlling-costs-in-azure-data-explorer-using-down-sampling-and-aggregation
+Title: 다운 샘플링 및 집계를 사용하여 Azure Data Explorer에서 비용 제어
+Summary: ADX(Azure Data Explorer)는 클라우드 서비스 및 IoT 디바이스에서 고속 원격 분석 데이터의 연속 수집 및 스토리지를 위한 뛰어난 서비스입니다.
+Content: >-
+  <p>ADX(Azure Data Explorer)는 클라우드 서비스 및 IoT 디바이스에서 고속 원격 분석 데이터의 연속 수집 및 스토리지를 위한 뛰어난 서비스입니다. 수십억 개의 레코드를 쿼리하기 위한 첫 번째 속도 성능을 활용하여 원격 분석 데이터를 추가로 분석하여 서비스 상태 모니터링, 프로덕션 프로세스 및 사용 추세와 같은 다양한 인사이트를 얻을 수 있습니다. 데이터 속도 및 보존 정책에 따라 데이터 크기는 페타바이트 데이터로 빠르게 확장되고 데이터 스토리지와 관련된 비용을 증가시킬 수 있습니다. 오랜 시간 동안 큰 데이터 세트의 스토리지를 위한 일반적인 솔루션은 서로 다른 해상도로 데이터를 저장하는 것입니다. 가장 최근의 데이터는 최대 해상도로 저장되므로 모든 이벤트가 원시 형식으로 저장됩니다. 기록 데이터는 축소된 해상도로 저장되지만 필터링 및/또는 집계됩니다. 이 솔루션은 핫 스토리지 비용을 제어하기 위해 시계열 데이터베이스에 자주 사용됩니다.</p>
+
+
+  <p>이 블로그에서 Ill&rsquo;은 GitHub 이벤트 공용 데이터 세트를 플레이그라운드로 사용합니다. 자세한 내용은 블로그 &ldquo; 를 읽고 Azure Data Explorer를 사용하여 GitHub 이벤트를 <a href="https://medium.com/microsoftazure/exploring-github-events-with-azure-data-explorer-69f28eb705b9" target="_blank">탐색하여 GitHub 이벤트를</a> 사용자 고유의 ADX 클러스터로 스트리밍하는 방법에 대해 읽어보세요.&rdquo; Ill&rsquo;은 ADX 사용자가 저장된 함수, &ldquo;.set-or-append&rdquo; 명령 및 Microsoft Flow Azure Kusto 커넥터를 활용하는 방법을 설명합니다. 이렇게 하면 스토리지 비용을 제어하기 위해 필터링되고 다운 샘플링되고 집계된 데이터를 사용하여 테이블을 만들고 업데이트할 수 있습니다. 다음은 제가 수행한 단계입니다.</p>
+
+
+  <h2>다운 샘플링 및 집계를 위한 함수 만들기</h2>
+
+
+  <p>ADX demo11 클러스터에는 GitHub 데이터베이스가 포함되어 있습니다. 2016년부터 <a href="https://www.gharchive.org/" target="_blank">GHArchive</a> 의 모든 이벤트가 <strong>GitHubEvent </strong>테이블에 수집되어 현재 총 10억 개 이상의 레코드가 기록되었습니다. 각 GitHub 이벤트는 리포지토리, 작성자, 주석 등에 대한 이벤트 관련 정보가 포함된 단일 레코드로 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5d8bdba1-908b-4472-94d2-09fbbda9691d.png"><img alt="Screenshot of Azure Data Explorer demo11 and GitHub database" border="0" height="700" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/49ea1297-5fe8-4648-bf2d-d913f8ea507e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Data Explorer demo11 및 GitHub 데이터베이스 스크린샷" width="1851"></a></p>
+
+
+  <p>처음에 지정된 주에 대한 모든 리포지토리의 총 이벤트 수를 계산하는 저장된 함수 <strong>AggregateReposWeeklyActivity</strong> 를 만들었습니다.</p>
+
+
+  <pre>
+
+  .create-or-alter function with (folder = &quot;TimeSeries&quot;, docstring = &quot;Aggregate Weekly Repos Activity&rdquo;)
+
+  AggregateReposWeeklyActivity(StartTime:datetime)
+
+  {
+       let PeriodStart = startofweek(StartTime);
+       let Period = 7d;
+       GithubEvent
+       | where CreatedAt between(PeriodStart .. Period)
+       | summarize EventCount=count() by RepoName = tostring(Repo.name), StartDate=startofweek(CreatedAt)
+       | extend EndDate=endofweek(StartDate)
+       | project StartDate, EndDate, RepoName, EventCount
+  }</pre>
+
+
+  <p>이제 이 함수를 사용하여 주간 리포지토리 활동의 다운 샘플링된 데이터 세트를 생성할 수 있습니다. 예를 들어 2017년 첫 주에 <strong>AggregateReposWeeklyActivity</strong> 함수를 사용하면 867,115개의 레코드 데이터 세트가 생성됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2aff8f34-ce61-4f8c-b83f-a00ec4807aac.png"><img alt="Screenshot of AggregateReposWeeklyActivity function yielding dataset results" border="0" height="424" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ef99b73-b8f0-431e-bc3e-cfcaf4133ccc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="데이터 세트 결과를 산출하는 AggregateReposWeeklyActivity 함수의 스크린샷" width="1850"></a></p>
+
+
+  <h2>Kusto 쿼리를 사용하여 기록 데이터가 있는 테이블 만들기</h2>
+
+
+  <p>원래 데이터 세트가 2016년에 시작되었으므로 <strong>ReposWeeklyActivity</strong> 라는 테이블을 만들고 <strong>GitHubEvent</strong> 테이블에서 매주 집계된 데이터로 백필하는 프로그램을 작성했습니다. 쿼리는 .set-or-append&rdquo; 명령을 사용하여 &ldquo;매주 집계된 데이터 세트를 병렬로 수집하여 실행됩니다. 첫 번째 수집 작업은 집계된 데이터를 보유하는 테이블도 만듭니다.</p>
+
+
+  <pre>
+
+  .show table GithubEvent details
+
+  | project TableName, SizeOnDiskGB=TotalExtentSize/pow(1024,3), TotalRowCount
+
+
+  .show table ReposWeeklyActivity details
+
+  | project TableName, SizeOnDiskGB=TotalExtentSize/pow(1024,3), TotalRowCount
+
+
+  Code sample:
+
+  using Kusto.Data.Common;
+
+  using Kusto.Data.Net.Client;
+
+  using System;
+
+  using System.Collections.Generic;
+
+  using System.Linq;
+
+  using System.Text;
+
+  using System.Threading.Tasks;
+
+
+  namespace GitHubProcessing
+
+  {
+       class Program
+       {
+           static void Main(string[] args)
+           {
+               var clusterUrl = &quot;https://demo11.westus.kusto.windows.net:443;Initial Catalog=GitHub;Fed=True&quot;;
+               using (var queryProvider = KustoClientFactory.CreateCslAdminProvider(clusterUrl))
+               {
+                   Parallel.For(
+                       0,
+                       137,
+                       new ParallelOptions() { MaxDegreeOfParallelism = 8 },
+                       (i) =&gt;
+                       {
+                           var startDate = new DateTime(2016, 01, 03, 0, 0, 0, 0, DateTimeKind.Utc) + TimeSpan.FromDays(7 * i);
+                           var startDateAsCsl = CslDateTimeLiteral.AsCslString(startDate);
+                           var command = $@&quot;
+                           .set-or-append ReposWeeklyActivity &lt;|
+                           AggregateReposWeeklyActivity({startDateAsCsl})&quot;;
+                           queryProvider.ExecuteControlCommand(command);
+
+                          Console.WriteLine($&quot;Finished: start={startDate.ToUniversalTime()}&quot;);
+                       });
+               }
+           }
+       }
+  }</pre>
+
+
+  <p>백필이 완료되면 <strong>ReposWeeklyActivity </strong>테이블에 1억 5,300만 개의 레코드가 포함됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15fa586f-cdbf-484e-b47f-8621636c5c5d.png"><img alt="Screenshot of the ReposWeeklyActivity table yielding 153 million records" border="0" height="608" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0a2d5630-bebf-4077-a6e7-292d4c05375a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="1억 5,300만 개의 레코드를 산출하는 ReposWeeklyActivity 테이블의 스크린샷" width="1857"></a></p>
+
+
+  <h2>Microsoft Flow 및 Azure Kusto 커넥터를 사용하여 주간 집계 작업 구성</h2>
+
+
+  <p><strong>ReposWeeklyActivity</strong> 테이블이 만들어지고 기록 데이터로 채워지면 매주 추가된 새 데이터로 업데이트 상태를 유지하려고 합니다. 이를 위해 Azure Kusto 커넥터를 활용하여 매주 집계 데이터를 수집하는 Microsoft Flow 흐름을 만들었습니다. 흐름은 다음 두 가지 간단한 단계로 빌드됩니다.</p>
+
+
+  <ol>
+   <li>Microsoft Flow 주간 트리거입니다.</li>
+   <li>&ldquo;.set 또는-append&rdquo;를 사용하여 지난 주의 집계된 데이터를 수집합니다.</li>
+  </ol>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8bf9a895-fbf6-4b57-9636-5669657f805f.png"><img alt="image" border="0" height="389" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4d9f889f-c9fe-4ccf-9873-503127c6bbb6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="678"></a></p>
+
+
+  <p>Azure Data Explorer에서 Microsoft Flow 사용하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/kusto/tools/flow" target="_blank">Azure Kusto Flow 커넥터</a>를 참조하세요.</p>
+
+
+  <h2>저장 시작</h2>
+
+
+  <p>다운 샘플링의 비용 절감 가능성을 나타내기 위해 Ive&rsquo;는 .show table &lt;table name&gt; details&rdquo; 명령을 사용하여 &ldquo;원래 <strong>GitHubEvent </strong>테이블의 크기와 다운 샘플링된 테이블 <strong>ReposWeeklyActivity</strong>의 크기를 비교했습니다.</p>
+
+
+  <pre>
+
+  .show table GithubEvent details
+
+  | project TableName, SizeOnDiskGB=TotalExtentSize/pow(1024,3), TotalRowCount
+
+
+  .show table ReposWeeklyActivity details
+
+  | project TableName, SizeOnDiskGB=TotalExtentSize/pow(1024,3), TotalRowCount</pre>
+
+
+  <p>아래 표에 요약된 결과는 동일한 시간 프레임 동안 다운 샘플링된 데이터가 레코드 수에서 약 10배 더 작고 스토리지 크기가 약 180배 더 작다는 것을 보여 줍니다.</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top" width="284">
+     <p>&nbsp;</p>
+     </td>
+     <td valign="top" width="170">
+     <p><b>원래 데이터</b></p>
+     </td>
+     <td valign="top" width="223">
+     <p><b>다운 샘플링/집계된 데이터 </b></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="284">
+     <p><b>시간 범위</b></p>
+     </td>
+     <td valign="top" width="170">
+     <p>2016-01-01 &hellip; 2018-09-26</p>
+     </td>
+     <td valign="top" width="223">
+     <p>2016-01-01 &hellip; 2018-09-26</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="284">
+     <p><b>레코드 수</b></p>
+     </td>
+     <td valign="top" width="170">
+     <p>1,048,961,967</p>
+     </td>
+     <td valign="top" width="223">
+     <p>153,234,107</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="284">
+     <p><b>디스크의 총 크기(인덱싱 및 압축)</b></p>
+     </td>
+     <td valign="top" width="170">
+     <p>725.2GB</p>
+     </td>
+     <td valign="top" width="223">
+     <p>4.38GB</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>비용 절감 가능성을 실제 절감으로 변환하는 작업은 다양한 방법으로 수행할 수 있습니다. 다양한 방법의 조합은 일반적으로 비용을 제어하는 데 가장 효율적입니다.</p>
+
+
+  <ul>
+   <li><strong>클러스터 크기 및 핫 스토리지 비용 제어</strong>: 원래 데이터 테이블과 다운 샘플링된 테이블에 대해 다른 캐싱 정책을 설정합니다. 예를 들어 원래 데이터의 경우 30일 캐싱, 다운 샘플링된 테이블의 경우 2년입니다. 이 구성을 사용하면 원시 데이터의 대화형 탐색을 위한 ADX 일류 성능을 즐기고 수년간의 활동 추세를 분석할 수 있습니다. 클러스터 크기 및 핫 스토리지 비용을 제어하는 동안.</li>
+   <li><strong>콜드 스토리지 비용 제어</strong>: 원래 데이터 테이블과 다운 샘플링된 테이블에 대해 다른 보존 정책을 설정합니다. 예를 들어 원래 데이터의 보존 기간은 30일이고 다운 샘플링된 테이블의 경우 2년입니다. 이 구성을 사용하면 콜드 스토리지 비용을 제어하면서 원시 데이터를 탐색하고 수년간의 활동 추세를 분석할 수 있습니다. 다른 참고로, 원시 데이터에 사용자 식별 정보가 포함될 수 있고 집계된 데이터는 일반적으로 익명이므로 이 구성은 개인 정보 요구 사항을 충족하는 데 일반적입니다.</li>
+   <li><strong>분석을 위해 다운 샘플링된 테이블을 사용합니다</strong>. 시계열 추세 분석을 위해 다운 샘플링된 테이블에서 쿼리를 실행하면 CPU 및 메모리 리소스가 줄어듭니다. 아래 예제에서는 모든 리포지토리에서 총 주간 작업을 계산하는 일반적인 쿼리의 리소스 사용량을 비교합니다. 쿼리 통계에 따르면 다운 샘플링된 데이터 세트의 주간 활동 추세를 분석하는 것이 CPU 사용량의 약 17배, 메모리 사용량의 약 8배 더 효율적입니다.</li>
+  </ul>
+
+
+  <p>원래 <strong>GitHubEvent</strong> 테이블에서 이 쿼리를 실행하면 총 CPU 시간이 약 56초, 메모리가 176MB입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/08a80c51-bd6b-4bf3-b689-a9184c73f362.png"><img alt="Screenshot of a command comparing GitHubEvent and ReposWeeklyActivity table sizes" border="0" height="612" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bd1aff94-f23c-4208-a48d-0f80b9ebcc40.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="GitHubEvent 및 ReposWeeklyActivity 테이블 크기를 비교하는 명령의 스크린샷" width="1850"></a></p>
+
+
+  <p>집계된 <strong>ReposWeeklyActivity </strong>테이블에서 동일한 계산은 총 CPU 시간과 16MB 메모리의 약 3초만 사용합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3df5cf97-b5da-45ac-bb9e-79d37546ac5d.png"><img alt="Screenshot showing CPU time and MB of memory being used by demo11 query" border="0" height="612" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/df02271c-e8d3-4a46-baee-f44eb44f3246.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="demo11 쿼리에서 사용되는 CPU 시간 및 메모리 MB를 보여 주는 스크린샷" width="1871"></a></p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Azure Data Explorer는 클라우드 탄력성을 활용하여 페타바이트 크기의 데이터로 스케일 아웃하고, 뛰어난 성능을 표시하며, 높은 쿼리 워크로드를 처리합니다. 이 블로그에서 Ive&rsquo;는 다운 샘플링 및 집계를 구현하여 큰 데이터 세트와 관련된 비용을 제어하는 방법을 설명했습니다.</p>
+
+
+  <p>Azure Data Explorer에 대해 자세히 알아보려면 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>지금 미리 보기에서 <a href="https://azure.microsoft.com/services/data-explorer/" target="_blank">Azure Data Explorer를 사용해 보세요</a>.</li>
+   <li><a href="https://azure.microsoft.com/pricing/details/data-explorer" target="_blank">가격 정보</a>  찾기 Azure Data Explorer용입니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/data-explorer/" target="_blank">액세스 설명서</a>  Azure Data Explorer용입니다.</li>
+  </ul>

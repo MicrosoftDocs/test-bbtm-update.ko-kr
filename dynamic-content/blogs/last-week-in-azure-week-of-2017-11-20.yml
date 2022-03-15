@@ -1,0 +1,110 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ba03f470c0fc8c3f655d291576c880e8e7f1c18f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899690"
+Slug: last-week-in-azure-week-of-2017-11-20
+Title: '지난 주 Azure: VMWare 환경을 Azure로 마이그레이션 등'
+Summary: '2017년 11월 20일 주 Azure의 지난 주 주요 내용: Azure, Azure Advisor 업데이트 등을 사용하여 VMWare 환경 변환'
+Content: >-
+  <p>미국의 추수 감사절 휴일로 인해 지난 주에는 Azure에 대한 가벼운 뉴스 주간이 있었습니다. 그러나 그것은 새로운 것이 발표되지 않은 것을 의미하지는 않습니다&rsquo;. 화요일, 코리 샌더스는 VMWare 기반 환경을 Azure로 마이그레이션하는 것이 그 어느 때보다 쉬워질 새로운 서비스를 발표했습니다. 이 서비스의 핵심은 어제 광범위하게 사용 가능해진 무료 서비스인 Azure Migrate입니다. 이는 클라우드 여정을 진행하는 데 도움이 되는 Azures&rsquo; 포괄적인 하이브리드 기능에 대한 투자의 한 집합에 불과합니다. 휴가 전에 일어난 다른 일에 대한 요약은 아래를 참조하세요.</p>
+
+
+  <h2>&amp; 컴퓨팅 컨테이너</h2>
+
+
+  <p>Microsoft Azure &ndash; <strong><a href="https://azure.microsoft.com/en-us/blog/transforming-your-vmware-environment-with-microsoft-azure/">사용하여 VMware 환경 변환</a></strong> 위에서 언급한 Corey Sanders의 게시물은 VMWare 환경을 Azure로 마이그레이션하는 데 도움이 되는 새로운 서비스에 대해 자세히 설명합니다.</p>
+
+
+  <p><strong><a href="https://azure.microsoft.com/en-us/blog/jenkins-on-azure-update-aci-experiment-and-aks-support/">Azure 업데이트의 Jenkins - ACI 실험 및 AKS 지원</a></strong> &ndash; Azure Container Agent를 사용하여 주문형 용량을 추가하고 <a href="https://docs.microsoft.com/en-us/azure/container-instances/">ACI(Azure Container Instances)</a>를 사용하여 Spring PetClinic 샘플 응용 프로그램을 빌드하는 Azure의 Jenkins in the <a href="https://tutorials.visualstudio.com/jenkins-azure/intro">Cloud 자습서</a>&rsquo;를 사용하여 Azure에서 Jenkins 빌드 에이전트를 실행하는 방법을 알아봅니다.</p>
+
+
+  <h2>데이터</h2>
+
+
+  <p><strong><a href="https://azure.microsoft.com/en-us/blog/sql-dw-cost-savings-with-functions-part-1/">#탄력성 및 Azure Functions &ndash; 에 최적화된 AzureSQLDW 비용 절감 1</a></strong> &ndash; 부에서는 Azure Functions를 사용하여 최적화된 성능을 위해 Azure Analysis Services에 데이터를 빠르게 푸시하여 데이터 웨어하우스를 강화, 축소 또는 일시 중지하려는 시기를 제어하는 일정 기반 크기 조정을 만드는 방법을 알아봅니다. 이렇게 하면 컴퓨팅 수준이 쿼리 활동 패턴과 일치하도록 하여 비용을 제어할 수 있습니다.</p>
+
+
+  <p><strong><a href="https://azure.microsoft.com/en-us/blog/azure-sql-databases-disaster-recovery-101/">Azure SQL Databases 재해 복구 101</a></strong> &ndash; 지역 복원 및 지역 복제는 재해 복구에 대처하기 위한 두 가지 솔루션을 제공합니다. 이 게시물&rsquo;에서는 데이터 손실, 복구 시간 및 비용에 따라 이러한 솔루션이 어떻게 다른지 알아봅니다. 이러한 차이점을 이해하면 두 솔루션 중에서 선택하는 데 도움이 됩니다.</p>
+
+
+  <h2>관리</h2>
+
+
+  <p><strong><a href="https://azure.microsoft.com/en-us/blog/azure-advisor-got-better/">Azure Advisor - 개인 설정된 모범 사례 서비스가 향상</a></strong> &ndash; 되었습니다. Azure Advisor에는 여러 구독에서 권장 사항을 검토하는 데 도움이 되는 새 대시보드가 있습니다. .</p>
+
+
+  <p><strong><a href="https://azure.microsoft.com/en-us/blog/recap-on-new-azure-policy-features-in-ignite/">새 Azure Policy 기능</a></strong> &ndash; 의 공개 미리 보기 Ignite(Azure Compute 세션, Azure 거버넌스 세션 및 Azure Resource Manager 세션)에서 발표된 Azure Policy에 대한 몇 가지 새로운 기능은 이제 공개 미리 보기로 제공됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/time-to-migrate-off-access-control-service/"><strong>Access Control Service</strong></a> &ndash; 를 마이그레이션하는 시간 Access Control Service는 사용 중지되며 내년에는 2018년 11월 7일에 중단될 예정입니다. 사용 중지 일정, 이 서비스를 사용하는지 여부를&rsquo; 확인하는 방법 및 마이그레이션하는 방법에 대한 자세한 내용은 이 게시물을 참조하세요.</p>
+
+
+  <h2>추가 뉴스</h2>
+
+
+  <p><strong><a href="https://azure.microsoft.com/en-us/blog/azure-media-clipper/">Azure Media Clipper</a></strong> &ndash; 공개 미리 보기 발표 미디어 클립을 작성하고 렌더링된 비디오를 함께 연결하기 위한 AMS(Azure Media Services)의 새로운 기능에 대한 공개 미리 보기입니다. Azure Media Clipper 웹 개발자가 사용자에게 클립을 만들기 위한 인터페이스를 제공할 수 있는 무료 JavaScript 라이브러리입니다.</p>
+
+
+  <p><strong><a href="https://azure.microsoft.com/en-us/blog/r3-on-azure-strengthening-our-partnership/">Azure의 R3: 파트너 관계</a></strong> &ndash; 강화 Microsoft는 R3s 분산 원장 플랫폼인 Corda 및 R3Net&rsquo;과 Azure를 더욱 긴밀하게 통합하기 위해 R3와의 전략적 파트너십을 확장하고 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/microsoft-showcases-latest-industrial-iot-innovations-at-sps-2017/"><strong>Microsoft는 SPS 2017에서 최신 산업용 IoT 혁신을 소개합니다</strong></a>. &ndash; 지난 주 Nuremberg에서 <a href="https://www.mesago.de/en/SPS/For_visitors/Welcome/index.htm">SPS IPC Drives 2017 </a>에서 발표한 몇 가지 IoT 제품 발표에 대해 알아봅니다.</p>
+
+
+  <h2>콘텐츠, SDK 및 샘플</h2>
+
+
+  <p><strong><a href="https://azure.microsoft.com/en-us/campaigns/developer-guide/">&rsquo;Microsoft Azure 개발자 가이드 - 2차 버전</a></strong>이 Azure에 대한 원래 개발자&rsquo; 가이드의 주요 수정 버전 &ndash; 입니다. 이 무료 전자책은 제 동료 <a href="https://twitter.com/mbcrump">마이클 크럼프</a> 와 Pluralsight 저자 <a href="https://twitter.com/azurebarry">Barry Luijbregts</a>의 개발자를 위한 Azure의 포괄적인 기술 개요를 제공합니다.</p>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Using-Web-App-for-Containers-in-a-Multi-Tier-Application/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p>다중 계층 애플리케이션 &ndash; <strong><a href="https://azure.microsoft.com/en-us/resources/videos/azure-friday-using-web-app-for-containers-in-a-multi-tier-application/">에서 Web App for Containers 사용</a></strong> Ahmed Elnably는 Scott Hanselman과 함께 다중 계층 애플리케이션의 컨텍스트에서 Web App for Containers를 사용하는 방법을 보여주기 위해 만든 샘플 프로젝트인 개발자 Finder에 대해 논의합니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Analysis-Services-Desktop-PowerBI-to-the-Cloud/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://azure.microsoft.com/en-us/resources/videos/azure-friday-azure-analysis-services-desktop-powerbi-to-the-cloud/">Azure Analysis Services: 클라우드</a></strong> &ndash; 에 데스크톱 PowerBI Azure Analysis Service에 대한 새로운 웹 모델링 환경은 Power BI 위해 빌드한 모델을 중첩할 수 있습니다. 이 에피소드에서 Josh Caplan은 Power BI 데스크톱 내에서 빌드된 데이터 모델을 가져와서 Azure Analysis Services 모델로 쉽게 변환하는 방법을 보여 줍니다. 그런 다음 Azure Analysis Services의 모든 기능을 사용하여 모델을 수백 또는 수천 명의 사용자로 확장할 수 있습니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" valign="middle" width="300">
+              <p>
+              <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode205.mp3">HTML5 오디오가 지원되지 않음</audio>
+              </p>
+              </td>
+              <td>
+              <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-205-SQL-Vulnerability-Assessement">Azure 팟캐스트: 에피소드 205 - 취약성 평가</a></strong> &ndash; SQL SQL 팀의 선임 PM인 Ronit Reger와 SQL Azure 위해 내놓은 이 새로운 서비스에 대해 매우 유익한 논의를 통해 고객은 데이터베이스가 공격에 취약한지 쉽게 파악할 수 있습니다. Azure에서 SQL 사용하는 모든 사용자를 위한 필수 구성입니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/yjGNugqEHGQ?rel=0" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://www.youtube.com/watch?v=yjGNugqEHGQ">Cloud Tech 10 - 2017년 11월 27일 - Jenkins with ACI, SQL DW with Functions 등!</a></strong> &ndash;Microsoft UK의 클라우드 솔루션 설계자인 Mark Whitby는 매주 10분 이내에 Microsoft Azure 발생하는&#39;다룹니다. 이 에피소드에서는 다음을 수행합니다.</p>
+
+              <ul>
+                  <li>Jenkins용 빌드 에이전트로 Azure Container Instances 사용</li>
+                  <li>Azure Advisor의 향상된 기능</li>
+                  <li>Azure Functions를 사용하여 Azure SQL Data Warehouse 크기 조정</li>
+                  <li>Azure Policy의 공개 미리 보기</li>
+              </ul>
+              </td>
+          </tr>
+      </tbody>
+  </table>

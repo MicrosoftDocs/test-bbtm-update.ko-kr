@@ -1,0 +1,303 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 70ec2ecd5c439968fc2504fbeaa345acb5c375be
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899969"
+Slug: azure-marketplace-new-offers-volume-23
+Title: Azure Marketplace 새 제품 - 볼륨 23
+Summary: Azure Marketplace 에코시스템을 계속 확장하고 있습니다. 9월 16일부터 30일까지 33개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다.
+Content: >-
+  <p>Azure Marketplace 에코시스템을 계속 확장하고 있습니다. 2018년 9월 16일부터 9월 30일까지 33개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다. 아래의 새 제품에 대한 세부 정보를 참조하세요.</p>
+
+
+  <h2>가상 머신</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.1-click-secured-joomla-on-ubuntu-1804-lts" target="_blank"><img alt="1 Click secured Joomla on Ubuntu 18.04 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7d25904c-7890-45c4-a587-46236c7639ae.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="1 Ubuntu 18.04 LTS에서 보안된 Joomla 클릭" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.1-click-secured-joomla-on-ubuntu-1804-lts" target="_blank">1 Ubuntu 18.04 LTS에서 보안된 Joomla 클릭</a>: Joomla는 웹 콘텐츠를 게시하기 위한 오픈 소스 콘텐츠 관리 시스템입니다. CMS와 독립적으로 사용할 수 있는 model-view-controller 웹 애플리케이션 프레임워크를 기반으로 합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetware-srl.pytorch_cuda_notebook" target="_blank"><img alt="AISE PyTorch GPU Notebook" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/01171b03-bf6c-4ffd-960a-6f964e4d9905.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AISE PyTorch GPU Notebook" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetware-srl.pytorch_cuda_notebook" target="_blank">AISE PyTorch GPU Notebook</a>: Python용 오픈 소스 기계 학습 라이브러리인 PyTorch와 완전히 통합된 딥 러닝 소프트웨어 스택입니다. Python, 고급 프로그래밍 언어 및 Jupyter Notebook, 브라우저 기반 대화형 Notebook.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetware-srl.pytorch_cuda_production" target="_blank"><img alt="AISE PyTorch GPU Production" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d44864c8-9f85-4d65-8b20-8670c17ba76d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AISE PyTorch GPU 프로덕션" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetware-srl.pytorch_cuda_production" target="_blank">AISE PyTorch GPU 프로덕션</a>: NVidia GPU에 최적화된 완전히 통합된 딥 러닝 소프트웨어 스택입니다. 여기에는 Python용 오픈 소스 기계 학습 라이브러리인 PyTorch와 범용 프로그래밍을 위한 고급 프로그래밍 언어인 Python이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetware-srl.tensorflow_cuda_notebook" target="_blank"><img alt="AISE TensorFlow GPU Notebook" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/646fda72-5cbe-40e0-99ae-f9a3b6bc4da2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AISE TensorFlow GPU Notebook" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetware-srl.tensorflow_cuda_notebook" target="_blank">AISE TensorFlow GPU Notebook</a>: 이 딥 러닝 소프트웨어 스택은 NVidia GPU에 최적화되어 있습니다. 여기에는 기계 학습을 위한 오픈 소스 소프트웨어 라이브러리인 TensorFlow가 포함됩니다. Keras, 오픈 소스 신경망 라이브러리; Python, 프로그래밍 언어 및 Jupyter Notebook</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetware-srl.tensorflow_cuda_production" target="_blank"><img alt="AISE TensorFlow GPU Production" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/34e3c9fb-d2c2-4f2b-a5a3-422580925425.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AISE TensorFlow GPU 프로덕션" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetware-srl.tensorflow_cuda_production" target="_blank">AISE TensorFlow GPU 프로덕션</a>: NVidia GPU에 최적화된 완전히 통합된 딥 러닝 소프트웨어 스택입니다. 여기에는 기계 학습을 위한 오픈 소스 소프트웨어 라이브러리인 TensorFlow와 범용 프로그래밍을 위한 고급 프로그래밍 언어인 Python이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.centos-7-4" target="_blank"><img alt="CentOS 7.4 Hardened - Antivirus &amp; Auto Updates" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/09b99a27-cda1-422b-b415-82c1e3b8dc67.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CentOS 7.4 강화 - 바이러스 백신 &amp; 자동 업데이트" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.centos-7-4" target="_blank">CentOS 7.4 강화 - 바이러스 백신 &amp; 자동 업데이트</a>: CentOS 7.4(Community Enterprise 운영 체제)는 업스트림 원본과 기능적으로 호환되는 무료 엔터프라이즈급 커뮤니티 지원 컴퓨팅 플랫폼을 제공하는 것을 목표로 하는 Linux 배포판입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.centos-7-5" target="_blank"><img alt="CentOS 7.5 Hardened - Antivirus &amp; Auto Updates" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fd0fd219-920e-4a36-8e7b-862d529ee5f2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CentOS 7.5 강화 - 바이러스 백신 &amp; 자동 업데이트" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.centos-7-5" target="_blank">CentOS 7.5 강화 - 바이러스 백신 &amp; 자동 업데이트</a>: CentOS 7.5(Community Enterprise 운영 체제)는 업스트림 원본과 기능적으로 호환되는 무료 엔터프라이즈급 커뮤니티 지원 컴퓨팅 플랫폼을 제공하는 것을 목표로 하는 Linux 배포판입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/exact.exactglobe" target="_blank"><img alt="Exact Globe" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6019ca7b-f8f9-4776-9980-ccdb6ebde4b6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="정확한 지구" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/exact.exactglobe" target="_blank">정확한 글로브</a> : 정확한 글로브는 혁신적인 ERP 소프트웨어입니다. 새로운 고객은 다양한 업계 및 프로세스 지향 완전한 비즈니스 소프트웨어 솔루션 중에서 선택할 수 있습니다. 기존 고객은 추가 모듈, 사용자 및 관리를 통해 Globe를 확장할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/exivity.exivity-vm" target="_blank"><img alt="Exivity - Hybrid Cloud Billing Solution" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cdbf3fca-1cd8-4a38-aa22-fcb54016032b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Exivity - 하이브리드 클라우드 청구 솔루션" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/exivity.exivity-vm" target="_blank">Exivity - 하이브리드 클라우드 청구 솔루션</a>: Exivity는 거의 모든 IT 서비스 배달 모델을 포함하는 계량 및 청구 솔루션을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intersystems.intersystems-iris-single-node" target="_blank"><img alt="InterSystems IRIS Data Platform Single Node" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9229a98-773b-4fcd-b260-a4845fec7851.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="시스템 간 IRIS 데이터 플랫폼 단일 노드" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intersystems.intersystems-iris-single-node" target="_blank">시스템 간 IRIS 데이터 플랫폼 단일 노드</a>: SQL 및 NoSQL 데이터베이스 관리 시스템, 통합 및 분석을 위한 완전한 클라우드 기반 데이터 플랫폼입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/knime.knime-server-byol" target="_blank"><img alt="KNIME Server" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8f3c3fff-d94f-46ab-b5a4-8a850ece3e0a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="KNIME 서버" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/knime.knime-server-byol" target="_blank">KNIME&reg; 서버</a>: 고급 분석, 기계 학습, 비즈니스 인텔리전스 또는 ETL 작업에 KNIME&reg; 분석 플랫폼을 사용하는지 여부에 관계없이 KNIME 서버를 사용하여 팀에 분석을 확장할 수 있습니다. 데이터, 노드, 메타 노드 및 워크플로를 공유합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/containeraider.migrater_platform" target="_blank"><img alt="MigrateR Master Node" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/292106b2-3dc0-4c6a-bd53-0b7205cc80e9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="MigrateR 마스터 노드" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/containeraider.migrater_platform" target="_blank">MigrateR 마스터 노드</a>: MigrateR은 데이터 마이그레이션을 위한 플랫폼입니다. 준비 평가를 수행하고, 클라우드에서 온-프레미스 머신을 실행하는 월별 비용을 예측하고, 온-프레미스 머신의 종속성을 시각화하고, 클라우드 간에 데이터를 전송합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/balabit.sps" target="_blank"><img alt="One Identity Safeguard for Privileged Sessions" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db279ebd-dfca-4cf3-80b5-95077941b2c7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="권한 있는 세션에 대한 하나의 ID 보호" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/balabit.sps" target="_blank">권한 있는 세션에 대한 하나의 ID 보호</a>: 권한 있는 세션에 대한 보호는 프록시 역할을 하며 애플리케이션 수준에서 프로토콜 트래픽을 검사합니다. 프로토콜을 위반하는 트래픽을 거부하여 공격으로부터 효과적인 보호막이 될 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/panzura-file-system.panzura-freedom-filer-7140-13222" target="_blank"><img alt="Panzura Freedom CloudFS 7.1.4.0 13222" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/355e469b-3488-4e86-adae-9bedab5b03c5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Panzura Freedom CloudFS 7.1.4.0 13222" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/panzura-file-system.panzura-freedom-filer-7140-13222" target="_blank">Panzura Freedom CloudFS 7.1.4.0 13222</a>: Panzura CloudFS&trade; 는 프리덤 패밀리를 뒷받침하며 26개의 특허를 통해 지원되는 지능형 파일 서비스를 통합하여 클라우드를 위해 특별히 제작된 스케일 아웃 분산 파일 시스템입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/imperva.imperva-dam-v13" target="_blank"><img alt="SecureSphere Database Activity Monitor v13.2" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d3d2d2a8-4c49-47cb-a82f-a398de9ea337.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SecureSphere 데이터베이스 활동 모니터 v13.2" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/imperva.imperva-dam-v13" target="_blank">SecureSphere 데이터베이스 활동 모니터 v13.2</a>: SecureSphere 데이터베이스 활동 모니터는 Microsoft Azure 중요 비즈니스용 데이터베이스를 감사하고 보호합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/snapt-adc.snaptadc" target="_blank"><img alt="Snapt - Beta" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a8ab745c-b72a-4f0c-a081-42ebb5fa1966.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Snapt - 베타" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/snapt-adc.snaptadc" target="_blank">Snapt</a>: Snapt는 DevOps 위한 소프트웨어 전용 부하 분산 장치, 웹 가속기 및 애플리케이션 방화벽입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp1-ent-win2016-debug-utilities" target="_blank"><img alt="SQL Server 2016 SP1 Ent w VulnerabilityAssessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ac5be99-8cb5-4fcb-86ce-9c60fff3c5e9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2016 SP1 Ent w VulnerabilityAssessment" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp1-ent-win2016-debug-utilities" target="_blank">SQL Server 2016 SP1 Ent/VulnerabilityAssessment</a>: 이 이미지에는 많은 새로운 데이터베이스 엔진 기능과 성능 향상이 포함되어 있습니다. SQL Server Management Studio, VS Code 및 FTP 클라이언트를 통한 SQL 취약성 평가와 같은 유틸리티가 제공되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp1-std-win2016-debug-utilities" target="_blank"><img alt="SQL Server 2016 SP1 Std w VulnerabilityAssessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3e1c1e8f-b200-4b79-aed5-cc25dac14d39.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2016 SP1 Std w VulnerabilityAssessment" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp1-std-win2016-debug-utilities" target="_blank">SQL Server 2016 SP1 Std w/ VulnerabilityAssessment</a>: 이 이미지에는 많은 새로운 데이터베이스 엔진 기능과 성능 향상이 포함되어 있습니다. SQL Server Management Studio, VS Code 및 FTP 클라이언트를 통한 SQL 취약성 평가와 같은 유틸리티가 제공되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp1-web-win2016-debug-utilities" target="_blank"><img alt="SQL Server 2016 SP1 Web w VulnerabilityAssessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/995a0d2b-3662-4231-80ea-f9d756c0274b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2016 SP1 Web w VulnerabilityAssessment" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp1-web-win2016-debug-utilities" target="_blank">SQL Server 2016 SP1 Web w/ VulnerabilityAssessment</a>: 이 이미지에는 많은 데이터베이스 엔진 기능과 성능 향상이 포함되어 있습니다. SQL Server Management Studio, VS Code 및 FTP 클라이언트를 통한 SQL 취약성 평가와 같은 유틸리티가 제공되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp2-ent-win2016-debug-utilities" target="_blank"><img alt="SQL Server 2016 SP2 Ent w VulnerabilityAssessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/41754ae4-6093-4b44-a2e6-ebb492fc7a11.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2016 SP2 Ent w VulnerabilityAssessment" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp2-ent-win2016-debug-utilities" target="_blank">SQL Server 2016 SP2 Ent w/ VulnerabilityAssessment</a>: 이 이미지에는 많은 새로운 데이터베이스 엔진 기능과 성능 향상이 포함되어 있습니다. SQL Server Management Studio, VS Code 및 FTP 클라이언트를 통한 SQL 취약성 평가와 같은 유틸리티가 제공되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp2-std-win2016-debug-utilities" target="_blank"><img alt="SQL Server 2016 SP2 Std w VulnerabilityAssessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b266651c-08ff-4e6c-9ae2-2168adef2948.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2016 SP2 Std w VulnerabilityAssessment" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp2-std-win2016-debug-utilities" target="_blank">SQL Server 2016 SP2 Std w/ VulnerabilityAssessment</a>: 이 이미지에는 많은 새로운 데이터베이스 엔진 기능과 성능 향상이 포함되어 있습니다. SQL Server Management Studio, VS Code 및 FTP 클라이언트를 통한 SQL 취약성 평가와 같은 유틸리티가 제공되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2017-std-win2016-utils" target="_blank"><img alt="SQL Server 2017 Standard with Debug Utils" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a44307a2-337b-4a9a-b9e3-977c16d9f8b6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2017 Standard with Debug Utils" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2017-std-win2016-utils" target="_blank">SQL Server 2017 Standard with Debug Utils</a>: 이 이미지에는 많은 새로운 데이터베이스 엔진 기능과 성능 향상이 포함되어 있습니다. SQL Server Management Studio, VS Code 및 FTP 클라이언트를 통한 SQL 취약성 평가와 같은 유틸리티가 제공되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.suse15" target="_blank"><img alt="SUSE 15 Hardened" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8aa42b7a-97d6-43ef-af80-00e770f6d56e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SUSE 15 강화됨" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.suse15" target="_blank">SUSE 15 강화</a>: Suse 15는 업스트림 소스인 RhEL(Red Hat Enterprise Linux)과 기능적으로 호환되는 무료 엔터프라이즈급 커뮤니티 지원 컴퓨팅 플랫폼을 제공하는 것을 목표로 하는 Linux 배포판입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.ubuntu-18-04" target="_blank"><img alt="Ubuntu 18.04 Hardened - Auto Updates  Antivirus" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b9832e67-b815-4666-9758-15273f59c256.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 18.04 강화됨 - 바이러스 백신 자동 업데이트" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.ubuntu-18-04" target="_blank">Ubuntu 18.04 강화 - 자동 업데이트 + 바이러스 백신</a>: Ubuntu는 호스트된 환경에서 실행되는 인기 있는 운영 체제입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wallarm.wallarm-ng-waf-offer-1" target="_blank"><img alt="Wallarm - Next-Gen Web Application Firewall (WAF)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8d627db9-9aec-4c63-8207-7e5f880ad3ef.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Wallarm - WAF(차세대 웹 애플리케이션 방화벽)" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wallarm.wallarm-ng-waf-offer-1" target="_blank">Wallarm - WAF(차세대 웹 애플리케이션 방화벽)</a>: Wallarm은 웹 사이트, 마이크로 서비스 및 API에 대한 애플리케이션 보호 및 보안 테스트를 자동화합니다. 모든 유형의 위협으로부터 보호하며 모든 환경에서 안정적입니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>웹 애플리케이션</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rawcubes.cloudblazev2" target="_blank"><img alt="CloudBlaze" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c52182fa-c783-4837-a79e-f0ac98619277.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CloudBlaze" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rawcubes.cloudblazev2" target="_blank">CloudBlaze</a>: CloudBlaze는 Azure Data Factory의 데이터 피드 역할을 하는 자동화된 구성 기반 데이터 수집 솔루션입니다. CloudBlaze는 엔터프라이즈 데이터 자산의 현대화를 용이하게 하여 성능을 최대화하고 비용을 절감합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/starburst.starburst-presto-203" target="_blank"><img alt="Starburst Presto for Azure HDInsight" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dae3f8e9-805f-4c65-a017-b938d6202f39.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure HDInsight용 Starburst Presto" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/starburst.starburst-presto-203" target="_blank">Azure HDInsight용 Starburst Presto</a>: Presto는 빠르고 확장 가능한 분산 SQL 쿼리 엔진입니다. 스토리지와 컴퓨팅의 분리를 위해 설계된 Presto는 Azure Blob Storage, Azure Data Lake Storage 및 기타 여러 서비스에서 데이터를 쿼리하는 데 적합합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/stratis-group-ltd.stratis-csharp-fullnode" target="_blank"><img alt="Stratis C# Full Node" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/48cb240e-1010-4d39-aa41-7578a0cca841.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Stratis C# 전체 노드" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/stratis-group-ltd.stratis-csharp-fullnode" target="_blank">Stratis C# 전체 노드</a>: Stratis&#39; 엔터프라이즈급 개발 플랫폼은 네이티브 C# 및 .NET 블록체인 애플리케이션을 위한 엔드 투 엔드 블록체인 솔루션입니다.블록체인은 보안의 발전과 네트워크 속도, 확장성 및 사용자 지정의 혁신을 결합합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tibco-software.enterprise-message-service" target="_blank"><img alt="TIBCO Enterprise Message Service" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4dc1c1f9-1ca7-43bb-96c8-cffe98b855ab.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="TIBCO Enterprise 메시지 서비스" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tibco-software.enterprise-message-service" target="_blank">TIBCO Enterprise 메시지 서비스</a>: 이 템플릿은 내결함성 구성의 여러 Linux(Red Hat 또는 CentOS) 가상 머신에 TIBCO Enterprise 메시지 서비스를 배포합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veritas.veritas-resiliency-platform-gw-aa" target="_blank"><img alt="Veritas Resiliency Platform Gateway Install" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1c9d6019-ee7a-49c4-b0e6-93793a88831f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Veritas 복원력 플랫폼 게이트웨이 설치" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veritas.veritas-resiliency-platform-gw-aa" target="_blank">Veritas&trade; 복원력 플랫폼 게이트웨이 설치</a>: Veritas 복원력 플랫폼은 모든 원본 워크로드에 대해 한 번 클릭 재해 복구 및 Azure로의 마이그레이션을 제공합니다. 이 BYOL(Bring Your Own License) 버전은 추가 복제 게이트웨이를 설치하는 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veritas.veritas-resiliency-platform-rm-aa" target="_blank"><img alt="Veritas Resiliency Platform Resiliency Manager" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c44929e4-ba21-45a7-8ba5-d15bed65d2a1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Veritas 복원력 플랫폼 복원력 관리자" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veritas.veritas-resiliency-platform-rm-aa" target="_blank">Veritas 복원력 플랫폼 복원력 관리자</a>: Veritas 복원력 플랫폼은 모든 원본 워크로드에 대해 한 번의 클릭 재해 복구 및 Azure로의 마이그레이션을 제공합니다. 이 BYOL(Bring Your Own License) 버전은 추가 복원력 관리자를 설치하는 것입니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>컨테이너 솔루션</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mfe_azure.dbsec-mcafee" target="_blank"><img alt="McAfee Database Security" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/842c97cf-1f00-4513-a4cc-a9c0599c8ae9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="McAfee 데이터베이스 보안" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mfe_azure.dbsec-mcafee" target="_blank">McAfee 데이터베이스 보안</a>: McAfee&reg; 데이터베이스 보안은 데이터베이스 관리 시스템을 모니터링하고 내부 및 외부 위협, 심지어 데이터베이스 내 악용으로부터 보호하는 배포하기 쉽고 확장성이 뛰어난 소프트웨어 솔루션입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/neuvector.neuvector-security" target="_blank"><img alt="NeuVector Container Security Platform" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39a01efb-8702-4055-80d4-e860e2e9c529.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="NeuVector 컨테이너 보안 플랫폼" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/neuvector.neuvector-security" target="_blank">NeuVector Container Security Platform</a>: NeuVector는 Kubernetes 및 Red Hat OpenShift에 대해 고도로 통합된 자동화된 보안 플랫폼을 제공합니다. 동서 컨테이너 네트워크 트래픽을 모니터링하고 보호합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

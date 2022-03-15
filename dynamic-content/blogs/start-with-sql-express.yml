@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cbf42e6d8eeb95f06eecdec763af88ab75d9997c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900355"
+Slug: start-with-sql-express
+Title: SQL Express로 시작하시겠습니까?
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] 나는 우리가 SQL Express로 시작하고 SQL 응용 프로그램을 마이그레이션 말할 때 우리가 정확히 무엇을 의미하는지 묻는 사람들로부터 질문의 무리를 얻었다 ...'
+Content: '<p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p style="MARGIN: 0in 0in 10pt" class="MsoNormal"><font size="3"><font face="Calibri">SQL Express로 시작한 다음 앱을 SQL Azure 마이그레이션할 때 정확히 무엇을 의미하는지 묻는 사람들로부터 많은 질문을 받았습니다. 빠른 고객 예제로 요약하는 것이 가장 좋다고 생각합니다...<?xml:namespace prefix="o" ns="urn:schemas-microsoft-com:office:office"?><o:p></o:p></font></font></p>  <p style="MARGIN: 0in 0in 10pt" class="MsoNormal"><font size="3"><font face="Calibri">몇 주 전에 캠퍼스에 얼리 어답터 그룹이 있으므로 기존 애플리케이션을 가져와서 SQL Azure Azure로 이동하고 Azure를 Windows. 고객은 단순히 SQL Server Management Studio 열고 스크립트 생성 마법사를 사용하여 데이터베이스에 대한 DDL 및 DML을 만들었습니다. 그런 다음 SQL Azure Database에 연결하고 스크립트를 실행했습니다.<o:p></o:p></font></font></p>  <p style="MARGIN: 0in 0in 10pt" class="MsoNormal"><font size="3"><font face="Calibri">따라서 SQL Express로 시작한다고 하면 온-프레미스 버전의 SQL Server(SQL <a href="https://www.microsoft.com/express/sql/download/" target="_blank" mce_href="https://www.microsoft.com/express/sql/download/">Express는 무료 다운로드</a>)를 사용하여 로컬로 SQL Azure 애플리케이션을 개발한 다음 CTP가 8월에 시작될 때 쉽게 SQL Azure 이동할 수 있습니다. 따라서 :) 시작</font></font></p>  <p style="MARGIN: 0in 0in 10pt" class="MsoNormal"><font size="3"><font face="Calibri">질문이나 의견, 알려주세요...<o:p></o:p></font></font></p>  <p style="MARGIN: 0in 0in 10pt" class="MsoNormal"><font size="3"><font face="Calibri">-Dave<o:p></o:p></font></font></p>'

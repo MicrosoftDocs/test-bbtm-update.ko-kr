@@ -1,0 +1,52 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 19b170579262ff8e08a8c27362ed32d1eaab29cd
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906801"
+Slug: event-trigger-based-scheduling-in-azure-data-factory
+Title: Azure Data Factory와 이벤트 트리거 기반 데이터 통합
+Summary: EDA(이벤트 기반 아키텍처)는 프로덕션, 검색, 소비 및 이벤트에 대한 반응을 포함하는 일반적인 데이터 통합 패턴입니다. 오늘 ADF(Azure Data Factory) 파이프라인에서 이벤트 기반 트리거에 대한 지원을 발표합니다.
+Content: >-
+  <p>EDA(이벤트 기반 아키텍처)는 프로덕션, 검색, 소비 및 이벤트에 대한 반응을 포함하는 일반적인 데이터 통합 패턴입니다. 오늘 ADF( <a href="https://docs.microsoft.com/en-us/azure/data-factory/" target="_blank">Azure Data Factory</a> ) 파이프라인에서 이벤트 기반 트리거에 대한 지원을 발표합니다.</p>
+
+
+  <p align="center"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="364" src="https://www.youtube.com/embed/LTsvOPB4k9I?rel=0" width="610"></iframe></p>
+
+
+  <p>많은 데이터 통합 시나리오에서는 데이터 팩터리 고객이 이벤트를 기반으로 파이프라인을 트리거해야 합니다. 일반적인 이벤트는 Azure Storage에서 파일 방문 또는 삭제가 될 수 있습니다. 이제 데이터 팩터리 파이프라인에서 이벤트 기반 트리거를 만들 수 있습니다.</p>
+
+
+  <p><img alt="image" border="0" height="364" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ff1fe576-05c4-46d7-847e-ffeda788619a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="610"></p>
+
+
+  <p>파일이 스토리지 위치에 도착하고 해당 Blob이 만들어지는 즉시 데이터 팩터리 파이프라인을 트리거하고 실행합니다. 데이터 팩터리 파이프라인에서 Blob 만들기, Blob 삭제 또는 둘 다에 대한 이벤트 기반 트리거를 만들 수 있습니다.</p>
+
+
+  <p><img alt="image" border="0" height="363" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e67e56e6-4333-4daa-a56b-d3abd61113a2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="610"></p>
+
+
+  <p>Blob 경로가 &ldquo;<strong>시작&rdquo;</strong>되고 &ldquo;<strong>Blob 경로가 속성으로&rdquo; 끝나는</strong> 경우 이벤트를 수신하려는 컨테이너, 폴더 및 Blob 이름을 알려줄 수 있습니다. 또한 <strong>Blob 경로가 시작되고 Blob 경로가 속성으로&rdquo;</strong> <strong>끝나는&rdquo; 경우 다양한 패턴을 사용할 수 있습니다.&ldquo;</strong> &ldquo; 적어도 이러한 속성 중 하나가 필요합니다.</p>
+
+
+  <p><img alt="image" border="0" height="362" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/74ea48a0-d5a2-4f7f-8e47-a1033144cf54.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="610"></p>
+
+
+  <p>예:</p>
+
+
+  <ul>
+   <li><b>Blob 경로는 (</b>/containername/<b>)</b> &ndash; 로 시작합니다. 컨테이너의 모든 Blob에 대한 이벤트를 수신합니다.</li>
+   <li><b>Blob 경로는 (</b>/containername/blobs/foldername<b>)</b> &ndash; 으로 시작합니다. 컨테이너 이름 컨테이너 및 폴더 이름 폴더의 모든 Blob에 대한 이벤트를 수신합니다.</li>
+   <li><b>Blob 경로는 (</b>/containername/blobs/foldername/file.txt<b>)</b> &ndash; 로 시작합니다. 컨테이너 이름 컨테이너 아래의 폴더 이름 폴더에 file.txt blob에 대한 이벤트를 수신합니다.</li>
+   <li><b><b>Blob 경로는 (</b></b>file.txt<b>)</b> &ndash; 로 끝납니다. 모든 경로에서 file.txt Blob에 대한 이벤트를 수신합니다.</li>
+   <li><b>Blob 경로는 (</b>/containername/blobs/file.txt<b>)</b> &ndash; 로 끝납니다. 컨테이너 이름 아래에 file.txt Blob에 대한 이벤트를 수신합니다.</li>
+   <li><b><b>Blob 경로는 (</b></b>foldername/file.txt<b>)</b> &ndash; 로 끝납니다. 컨테이너 아래의 foldername 폴더에 file.txt Blob에 대한 이벤트를 받습니다.</li>
+  </ul>
+
+
+  <p>우리의 목표는 기능을 계속 추가하고 Data Factory 도구의 유용성을 개선하는 것입니다. <a href="https://go.microsoft.com/fwlink/?linkid=874554" target="_blank">데이터 팩터리의 이벤트 기반 트리거</a>에 대한 자세한 정보와 자세한 단계를 확인합니다.</p>
+
+
+  <p>Azure Data Factory<a href="https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-portal">를 사용하여 파이프라인 빌드</a>를 쉽고 빠르게 시작합니다. 기능 요청이 있거나 피드백을 제공하려는 경우 <a href="https://feedback.azure.com/forums/270578-azure-data-factory" target="_blank">Azure Data Factory 포럼</a>을 방문하세요.</p>

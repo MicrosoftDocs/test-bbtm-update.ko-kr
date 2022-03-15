@@ -1,0 +1,110 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f373b65afbb55f6683cf0d43d0bc5fb0c388e753
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906831"
+Slug: deploying-grafana-for-production-deployments-on-azure
+Title: Azure에서 프로덕션 배포를 위한 Grafana 배포
+Summary: Grafana는 시계열 메트릭을 시각화하기 위한 인기 있고 선도적인 오픈 소스 도구 중 하나입니다.
+Content: >-
+  <p><em>이 블로그는 Microsoft의 기술 고문인 Nick Lopez가 공동 저술했습니다.</em></p>
+
+
+  <p><a href="https://grafana.com/">Grafana</a> 는 시계열 메트릭을 시각화하기 위한 인기 있고 선도적인 오픈 소스 도구 중 하나입니다. Grafana는 서버 및 애플리케이션 메트릭을 모니터링하기 위해 개발자 및 운영 팀에서 선택하는 기본 시각화 도구가 되었습니다. Grafana 대시보드를 사용하면 운영 팀이 서비스의 성능, 가용성 및 전반적인 상태를 신속하게 모니터링하고 대응할 수 있습니다. 이제 Grafana Labs에서 빌드한 <a href="https://grafana.com/plugins/grafana-azure-monitor-datasource">Azure Monitor 데이터 원본 플러그 인</a>을 활용하여 Azure 서비스 및 애플리케이션을 모니터링하는 데 사용할 수도 있습니다. 이 플러그 인을 사용하면 Grafana 대시보드에 Azure Monitor 및 애플리케이션 Insights 모든 메트릭을 포함할 수 있습니다. Azure Monitor 및 애플리케이션 Insights 메트릭을 사용하여 Grafana를 신속하게 설정 및 테스트하려면 <a href="https://aka.ms/grafanawalkthrough">Azure Monitor 설명서를</a> 참조하는 것이 좋습니다<em>.</em></p>
+
+
+  <p><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac564f23-a32c-4613-b998-379692157d98.png"><img alt="Grafana dashboard using Azure Monitor as a data source to display metrics for Contoso dev environment." border="0" height="410" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a5713634-55bf-49be-9fd4-79d44a0288d2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="321-1" width="871"></a></em></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/grafana-labs.grafana_oss">Azure Marketplace의 Grafana 서버 이미지는</a> 뛰어난 빠른 시작 배포 환경을 제공합니다. 이미지는 미리 설치된 Grafana 대시보드 서버, SQLite 데이터베이스&nbsp; 및 Azure 플러그 인을 사용하여 VM(가상 머신)을 프로비전합니다. 단일 VM 배포를 사용하는 기본 설정은 개념 증명 연구 및 테스트에 적합합니다. 중요한 애플리케이션 및 서비스에&rsquo; 대한 모니터링 대시보드의 고가용성을 위해 Azure에서 Grafana 배포의 고가용성을 고려해야 합니다. 다음은 Azure에서 고가용성 및 보안을 위해 Grafana를 설정하는 제안되고 검증된 아키텍처입니다.</p>
+
+
+  <h2>프로덕션 배포를 위한 Grafana 설정</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b7050d02-de62-407c-b267-24521e77b31d.png"><img alt="Grafana high availability deployment architecture on Azure." border="0" height="404" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1191ae82-3c98-4787-85b9-433970769724.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="321 2" width="431"></a></p>
+
+
+  <p>Grafana Labs는 고가용 <a href="https://docs.grafana.org/tutorials/ha_setup/">성을 위해 Grafana</a>를 설정하기 위해 별도의 고가용성 공유 MySQL 서버를 설정하는 것이 좋습니다. Azure Database for MySQL 및 MariaDB는 MySQL 및 MariaDB 데이터베이스 엔진의 커뮤니티 버전을 기반으로 관리되는 관계형 데이터베이스 서비스입니다. 이 서비스는 추가 비용 없이 고가용성, 예측 가능한 성능, 탄력적 확장성, 자동화된 백업 및 SSL(보안 소켓 계층) 지원, 미사용 암호화, 고급 위협 방지 및 VNet 서비스 엔드포인트 지원을 통해 엔터프라이즈급 보안을 제공합니다. Azure Database for MySQL 또는 Azure Database for MariaDB 서비스를 사용하여 원격 구성 데이터베이스를 활용하면 엔터프라이즈 프로덕션 배포에 필요한 Grafana 인스턴스의 수평적 확장성과 고가용성을 사용할 수 있습니다.</p>
+
+
+  <h2>프로덕션 배포를 위해 Bitnami 다중 계층 Grafana 템플릿 활용</h2>
+
+
+  <p>Bitnami를 사용하면 몇 번의 클릭만으로 Azure Marketplace에서 다중 노드 프로덕션 준비 Grafana 솔루션을 배포할 수 있습니다. 이 솔루션은 미리 구성된 부하 분산 장치가 있는 여러 Grafana 노드와 데이터 스토리지용 Azure Database for MariaDB를 사용합니다. 요구 사항에 따라 배포 시 노드 수를 선택할 수 있습니다. 노드와 Azure Database for MariaDB 서비스 간의 통신도 보안을 보장하기 위해 SSL로 암호화됩니다.</p>
+
+
+  <p>Bitnami&#39;Grafana 솔루션의 주요 기능은 내결함성 배포를 제공하도록 미리 구성되어 있다는 것입니다. 요청은 부하 분산 장치에 의해 처리되며, 노드가 활성화되어 있는지 확인하기 위해 노드를 지속적으로 테스트하고 노드가 실패할 경우 자동으로 요청을 다시 라우팅합니다. 데이터(세션 데이터 포함)는 개별 노드가 아닌 Azure Database for MariaDB에 저장됩니다. 이 방법은 성능을 향상시키고 노드 오류로 인한 데이터 손실로부터 보호합니다.</p>
+
+
+  <p>새 배포의 경우 Azure Marketplace를 통해 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.multi-tier-manageddb-grafana?tab=Overview">Bitnami Grafana 다중 계층</a> 을 시작할 수 있습니다.</p>
+
+
+  <h2>Azure Database for MySQL 서비스를 사용하도록 Grafana의 기존 설치 구성</h2>
+
+
+  <p>고가용성을 위해 구성하려는 기존 Grafana 설치가 있는 경우 Azure Database for MySQL 서버를 백 엔드 구성 데이터베이스로 사용하도록 Grafana 인스턴스를 구성하는 방법을 보여 주는 다음 단계를 사용할 수 있습니다. 이 연습에서는 <a href="https://docs.grafana.org/installation/debian/">Grafana가 설치된 Ubuntu</a> 의 예를 사용하고 Azure Database for MySQL을 Grafana 설치용 원격 데이터베이스로 구성합니다.</p>
+
+
+  <ol>
+   <li>프로덕션 배포에 권장되는 범용 계층을 사용하여 Azure Database for MySQL 서버를 만듭니다. 데이터베이스 서버 만들기에 익숙하지 않은 경우 <a href="https://docs.microsoft.com/en-us/azure/mysql/quickstart-create-mysql-server-database-using-azure-portal">빠른 시작 자습서</a> 를 읽고 워크플로를 숙지할 수 있습니다. Azure CLI를 사용하는 경우 <a href="https://docs.microsoft.com/en-us/cli/azure/ext/db-up/mysql?view=azure-cli-latest#ext-db-up-az-mysql-up">az mysql up</a>을 사용하여 설정할 수 있습니다.</li>
+   <li>Ubuntu 서버에&rsquo; <a href="https://docs.grafana.org/installation/debian/">Grafana를 이미 설치한</a> 경우 azure Database for MySQL 매개 변수를 추가하려면 grafana.ini 파일을 편집해야 합니다. <a href="https://docs.grafana.org/installation/configuration/">데이터베이스 설정에 대한 Grafana 설명서에</a> 따라 설명서에 설명된 데이터베이스 매개 변수에 초점을 맞춥니다. <b>참고</b>: 사용자 이름은 Azure Database for MySQL의 서버 식별 방법으로 인해 형식 <em>user@server</em> 이어야 합니다. 다른 형식으로 인해 연결이 실패합니다.</li>
+   <li>Azure Database for MySQL은 SSL 연결을 지원합니다. 엔터프라이즈 프로덕션 배포의 경우 항상 SSL을 적용하는 것이 좋습니다. Azure Database for MySQL을 사용하여 SSL을 설정하는 방법에 대한 추가 정보는 <a href="https://docs.microsoft.com/en-us/azure/mysql/howto-configure-ssl">Azure Database for MySQL 설명서</a>에서 찾을 수 있습니다. 대부분의 최신 Ubuntu 설치에는 /etc/ssl/certs 위치에 필요한 Baltimore Cyber Trust CA 인증서가 이미 설치되어 있습니다. 필요한 경우 <a href="https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt.pem">이 위치에서</a> Azure Database for MySQL에 사용되는 SSL&nbsp; 인증서 CA를 다운로드할 수 있습니다. SSL 모드는 <i>skip-verify</i> 및 true의 두 가지 형태로 제공될 수 <i>있습니다</i>. <i>skip-verify</i>를 사용하면 제공된 인증서의 유효성을 검사하지 않지만 연결은 여전히 암호화됩니다. <i> true</i>를 사용하면 제공된 인증서가 Baltimore CA에서 유효성&nbsp;&nbsp;을 검사하는지 확인합니다. 이는 중간&rdquo; 공격에서 사람을 방지하는 데 &ldquo;유용합니다. 두 경우 모두 Grafana는 CA(인증 기관) 경로가 제공될 것으로 예상합니다.</li>
+   <li>다음으로 테이블 세션의 Azure DB for MySQL에 사용자의 세션을 저장하는 옵션이 있습니다. 세션 섹션의 동일한 grafana.ini 구성됩니다. 이는 Grafana에 액세스하는 사용자의 세션을 유지하기 위해 부하가 분산된 환경이 있는 경우에 유용합니다. provider_config 매개 변수에는 암호, 전체 서버 및 TLS/SSL 메서드를 포함 user@server해야 합니다. 이러한 방식으로 true이거나 ssl-verify일 수 있습니다. 더 많은 <a href="https://github.com/Go-SQL-Driver/mysql">설명서를 사용할 수</a> 있는 go-sql-driver/mysql 드라이버입니다.</li>
+   <li>이 모든 것이 설정되면 Grafana를 시작하고 아래 명령을 사용하여 상태를 확인할 수 있습니다.</li>
+  </ol>
+
+
+  <ul style="margin-left: 40px;">
+   <li>systemctl start grafana-server</li>
+   <li>systemctl status grafana-server</li>
+  </ul>
+
+
+  <p>오류 또는 문제가 표시되는 경우 로깅의 기본 경로는 /var/log/grafana/<i></i>입니다. 여기서 시작이 방해되는 항목을 확인할 수 있습니다. 다음은 사용자 이름이 제공된 것이 아니라 사용자로 user@server 제공된 샘플 오류입니다 <i>.</i></p>
+
+
+  <p>lvl=eror msg=&quot;Server shutdown&quot; logger=server reason=&quot;Service init 실패: 마이그레이션 실패 오류: 오류 9999: 내부 오류가 발생했습니다. 문제를 다시 시도하거나 보고하세요.</p>
+
+
+  <p>그렇지 않으면 서비스가 <em>확인</em> 상태로 표시되고 초기 시작 시 Azure DB for MySQL 데이터베이스에 필요한 모든 테이블이 빌드됩니다.</p>
+
+
+  <h3>핵심 내용</h3>
+
+
+  <ul>
+   <li>Grafana용 단일 VM 설정은 빠른 시작, 테스트 및 개념 증명 연구에 적합하지만 프로덕션 배포에는 적합하지 않을 수 있습니다.</li>
+   <li>Grafana의 엔터프라이즈 프로덕션 배포의 경우 구성 데이터베이스를 전용 서버로 분리하면 고가용성 및 확장성이 가능합니다.</li>
+   <li><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.multi-tier-manageddb-grafana?tab=Overview">Bitnami Grafana 다중 계층</a> 템플릿은 추가 비용 없이 몇 번의 클릭으로 Grafana를 프로비전하는 스케일 아웃 디자인 및 보안을 활용하는 프로덕션 준비 템플릿을 제공합니다.</li>
+   <li>프로덕션 배포에 Azure Database for MySQL과 같은 관리되는 데이터베이스 서비스를 사용하면 데이터베이스 리포지토리에 대한 기본 제공 고가용성, 확장성 및 엔터프라이즈 보안을 제공합니다.</li>
+  </ul>
+
+
+  <h3>추가 리소스</h3>
+
+
+  <p><a href="https://docs.bitnami.com/azure-templates/get-started/">Microsoft Azure Bitnami 다중 계층 솔루션 시작</a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/monitor-azure-services-and-applications-using-grafana/">Grafana를 사용하여 Azure 서비스 및 애플리케이션 모니터링</a></p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/grafana-plugin">Grafana에서 Azure 서비스 모니터링</a></p>
+
+
+  <p><a href="https://docs.grafana.org/tutorials/ha_setup/">고가용성을 위해 Grafana 설정</a></p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/mysql/">Azure Database for MySQL 설명서</a></p>
+
+
+  <h3>감사의 글</h3>
+
+
+  <p>블로그 게시물에 기여한 샤우 팡, 다이애나 푸트남, 아니타 칸텔레, 비트나미 팀에게 특별한 감사를 드립니다.</p>

@@ -1,0 +1,174 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 04cd9184c24ea608d585bc2a7673932288e11bd8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900586"
+Slug: snip-insights-cross-platform-open-source-ai-tool-for-intelligent-screen-capture
+Title: Snip Insights – 인텔리전트 화면 캡처를 위한 플랫폼 간 오픈 소스 AI 도구
+Summary: '우리가 사용하는 일상적인 도구는 상대적으로 변하지 않지만 장치와 기술은 빠른 속도로 진행되고 있습니다. 일상적인 도구에 AI를 주입하여 개발자가 Microsoft AI 플랫폼을 사용하여 더 많은 작업을 수행하도록 유도할 수 있다면 어떨까요? '
+Content: >-
+  <p>우리가 사용하는 일상적인 도구는 상대적으로 변하지 않지만 장치와 기술은 빠른 속도로 진행되고 있습니다. 일상적인 도구에 AI를 주입하여 개발자가 Microsoft AI 플랫폼을 사용하여 더 많은 작업을 수행하도록 유도할 수 있다면 어떨까요? 약간의 창의력을 발휘하고 Microsoft&#39;최신 AI 제품을 사용하면 AI 기능을 고객에게 더 가깝게 제공하고 모든 조직, 모든 개발자 및 이 지구상의 모든 사람에게 영감을 주는 애플리케이션을 만들 수 있습니다.</p>
+
+
+  <h2>Snip Insights 소개</h2>
+
+
+  <p>지능형 화면 캡처를 위한 오픈 소스 플랫폼 간 AI 도구입니다. Snip Insights 사용자가 화면 캡처에서 인사이트를 생성할 수 있는 방식에 혁명을 일으킵니다. Windows OS용으로 제작되고 5월에 Microsoft Build 2018에서 출시된 Snip Insights 초기 프로토타입은 BC 주 밴쿠버에 본사를 둔 <a href="https://www.microsoft.com/en-us/garage/profiles/snip-insights/">Microsoft Garage 인턴</a>에 의해 만들어졌습니다. Microsoft AI CTO 팀과 공동으로 Microsoft <a href="https://ailab.microsoft.com/experiments/32e85f94-3fdd-4a4b-b1ca-9f4cdf47feb6">AI Lab</a>의 팀은 도구에 새로운 직관적인 UX, 플랫폼 간 가용성(MacOS, Linux 및 Windows)을 제공하고 MSA 라이선스에 따라 무료 다운로드 및 사용량을 제공하여 Snip Insights 한 단계 더 발전했습니다. Snip Insights Microsoft Azure&#39;Cognitive Services API 활용하여 지능형 인사이트를 얻는 데 필요한 단계 수를 줄여 사용자&#39; 생산성을 높입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e67725bf-63ca-49e1-844a-febc01862bbb.gif"><img alt="SnipInsights_Homepage-Carousel_580x326_V2b" border="0" height="326" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/001cf4c3-3771-40b0-9f44-3da760d28581.gif" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SnipInsights_Homepage-Carousel_580x326_V2b" width="580"></a></p>
+
+
+  <h2>솔루션</h2>
+
+
+  <p>Snip Insights 플랫폼 간 사용자가 스니프 또는 스크린샷을 통해 지능형 인사이트를 검색할 수 있도록 하는 오픈 소스 데스크톱 유틸리티입니다. 스크린샷은 기본적으로 순간의 스냅샷입니다. Snip Insights 클라우드 AI 서비스를 활용하여 이미지를 번역된 텍스트로 변환하고, 이미지 콘텐츠를 자동으로 검색하고 태그를 지정하며, Azure Cognitive Services 잠재력을 보여주면서 워크플로를 개선하는 많은 스마트 이미지 제안을 제공합니다&rsquo;. 친숙한 도구를 Cognitive Services와 결합하여 모든 이미지 인사이트를 위한 원스톱 상점을 만들었습니다. Imagine 교과서 또는 작업 보고서를 스캔했음을 알 수 있습니다. 정보를 수동으로 입력하는 대신 OCR을 사용하여 한 번의 클릭으로 편집 가능한 텍스트를 반환합니다. &rsquo;또는 소셜 미디어 피드를 스크롤하여 멋진 신발을 신은 사람을 만날 수도 있습니다. Snip Insights 유명한 사람과 랜드마크를 식별하는 것을 포함하여 방금 잘라낸 내용을&rsquo; 기반으로 관련 정보를 표시할 수 있습니다. 스크린샷을 만들고, 그림을 저장하고, 이미지 검색 엔진을 역방향으로 업로드한 다음, 여기에서 결과를 그리는 프로세스를 간소화합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/818a1b8d-03c5-44a2-88a8-a601dc9e2f74.png"><img alt="image" border="0" height="471" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6a3f34e2-7ad2-4727-8330-99d2d33db45a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="802"></a></p>
+
+
+  <h2>Insights 하이라이트 스니핑</h2>
+
+
+  <p><strong>유명인 검색</strong> &ndash; 유명 인사의 이미지를 스니핑하고 도구는 유명 인사에 대한 모든 뉴스와 정보를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3af2241e-aafd-456f-bccc-acda7e0e85ee.png"><img alt="image" border="0" height="186" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3219a0ad-00db-435f-9e87-78d501f7d34f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="185"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ada569f8-88fb-4fbb-acb5-9cd96c7b5167.png"><img alt="image" border="0" height="199" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e282be66-b8dd-413e-aa21-2555b49f4984.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="450"></a></p>
+
+
+  <p><strong>개체 검색 및 Bing Visual Search</strong> &ndash; 당신은 당신의 친구가 그림에 입고있는 티셔츠 또는 신발 한 켤레를 좋아하고, 그것을 구입하는 곳을 알고 싶어요. snip 인사이트를 사용하면 권장 사항, 유사한 제품 이미지 및 몇 초 만에 구입할 수 있는 위치를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db89120a-6dc6-4d88-a1af-dbdf48dc77a0.png"><img alt="image" border="0" height="188" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9907fdfb-a15d-4ee5-a024-bab985174b5b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="389"></a></p>
+
+
+  <p><strong>OCR, 언어 번역 및 플랫폼 간 호환성</strong> &ndash; 특정 언어의 구를 좋아하고,&rsquo; 영어를 말하고, 프랑스어 또는 다른 언어로 변환하여 개인 설정하고 그 반대의 경우도 마찬가지입니다. Snip Insights 사용하여 이러한 인사이트를 얻을 수 있습니다. 이 도구는 무료이며 Windows, Linux&nbsp; 및 MacOS에서 작동합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fd1a791a-2602-46f2-9975-00c4204506ef.png"><img alt="image" border="0" height="255" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a15666c3-6f16-4d48-9505-64c27f3559b3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="491"></a><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/06b4094a-8c38-4a56-b851-bb6dc8643c5f.png"><img alt="image" border="0" height="257" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4699b1a8-47ec-4b56-8ff6-cbc0403744fd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="465"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6a11fa41-22ee-4392-bae6-ad29ec1f7df6.png"><img alt="image" border="0" height="187" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0a67d088-4309-4dee-b1f1-42bc04919161.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="369"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fa86f8f7-f222-48e5-a693-138dca483043.png"><img alt="image" border="0" height="188" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/79361934-a833-4dac-8261-9cf2801e4da5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="347"></a></p>
+
+
+  <h2>지원되는 플랫폼: Windows, Mac OS 및 Linux</h2>
+
+
+  <p>Snip Insights 앱은 다음 세 가지 플랫폼에서 사용할 수 있습니다.</p>
+
+
+  <ul>
+   <li>UWP(유니버설 Windows 플랫폼)</li>
+   <li>Mac OS</li>
+   <li>Linux</li>
+  </ul>
+
+
+  <h2>Xamarin.Forms GTK# App Mac OS 및 Linux for Snip Insights</h2>
+
+
+  <p>Xamarin.Forms를 사용하면 단일 공유 코드베이스에서 iOS, Android, macOS, Linux 및 Windows 위한 네이티브 IO를 빌드할 수 있습니다. <a href="https://university.xamarin.com/classes/track/self-guided">Xamarin University의 무료 자체 학습에 따라 Xamarin.Forms</a>를 사용하여 앱 개발에 대해 자세히 알아볼 수 있습니다.</p>
+
+
+  <p>Xamarin.Forms에는 GTK# 앱에 대한 미리 보기 지원이 있습니다. GTK#은 GTK+ 도구 키트와 다양한 GNOME 라이브러리를 연결하는 그래픽 사용자 인터페이스 도구 키트로, Mono 및 .NET을 사용하여 완전히 네이티브 GNONE 그래픽 앱을 개발할 수 있습니다. <a href="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/gtk?tabs=vswin">Xamarin.Forms GTK#</a>.</p>
+
+
+  <h2>설치</h2>
+
+
+  <h3>Windows</h3>
+
+
+  <ul>
+   <li><a href="https://github.com/Microsoft/ailab/releases/tag/1.0.0.0">zip을 다운로드합니다</a>.</li>
+   <li><a href="https://github.com/Microsoft/ailab/blob/master/Snip-Insights/docs/Windows_Install_Certificate.md">tInstall</a> 인증서 섹션에 자세히 설명된 지침에 따라 인증서(&quot;.cer&quot; 파일)를 설치합니다.</li>
+   <li>.appx 패키지 파일을 두 번 클릭하여 Snip Insights 설치합니다.</li>
+  </ul>
+
+
+  <h3>Linux</h3>
+
+
+  <ul>
+   <li><a href="https://www.mono-project.com/download/stable/#download-lin">Linux 배포에 따라 공식 단계에</a> 따라 Mono를 설치합니다.</li>
+   <li><a href="https://github.com/Microsoft/ailab/releases/tag/1.0.0.0">.deb 패키지를 설치합니다</a>.</li>
+   <li>애플리케이션 섹션에서 앱을 시작합니다.</li>
+  </ul>
+
+
+  <h3>Mac OS</h3>
+
+
+  <ul>
+   <li>Mono(안정적인 채널)를 <a href="https://www.mono-project.com/download/stable/">다운로드하여 설치</a>합니다.
+
+   <ul>
+    <li>여기에는 Xamarin.Forms가 이 프로젝트에 의존하는 UI 도구 키트인 GTK#이 포함됩니다.</li>
+   </ul>
+   </li>
+   <li><a href="https://github.com/Microsoft/ailab/releases/tag/1.0.0.0">.pckg를</a> 일반 macOS 애플리케이션으로 설치합니다.</li>
+   <li>snip Insights 앱은 macOS의 애플리케이션 섹션에서 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <h3>요구 사항</h3>
+
+
+  <p><a href="https://www.visualstudio.com/vs/">Visual Studio 2017 버전 15.8 또는 Mac용 Visual Studio 버전 7.6.3</a></p>
+
+
+  <h2>사용자 고유의 구독 사용</h2>
+
+
+  <p>Microsoft Garage Project Snip Insights 키를 추가하려면 애플리케이션을 시작합니다. 실행되면 도구 모음에서 <strong>설정</strong> 아이콘을 클릭/탭합니다. Cognitive Services를 찾을 때까지 아래로 스크롤하고, AI 지원 토글을 사용하도록 설정하고, <strong>켜 </strong>기 위치로 전환합니다. 이제 Insight Service 키 섹션이 표시됩니다.</p>
+
+
+  <ul>
+   <li>Entity Search - 새 Entity Search Cognitive Service를 만듭니다. 만든 후에는 키를 표시할 수 있습니다. 하나를 선택하고 설정 붙여넣습니다.</li>
+   <li>이미지 분석 - Azure에서 <strong>Computer Vision API</strong> Cognitive Service를 만들고 해당 키를 사용합니다.</li>
+   <li>이미지 검색 - Azure에서 <strong>Bing Search v7 API</strong> Cognitive Service를 만들고 해당 키를 사용합니다.</li>
+   <li>텍스트 인식 - 이미지 분석에 사용된 것과 동일한 키를 사용할 수 있습니다. 이미지 분석 및 텍스트 인식 모두 Computer Vision API를 사용합니다.</li>
+   <li>번역기 -<strong> 번역기 Text API</strong> Cognitive Service를 사용합니다.</li>
+   <li>Content Moderator - <strong>Content Moderator API</strong> Cognitive Service를 사용합니다.</li>
+  </ul>
+
+
+  <p>LUIS 앱 ID 및 키의 경우 <a href="https://www.luis.ai">Language Understanding 포털에서 Language Understanding 애플리케이션을 만들어야</a> 합니다. 다음 단계를 사용하여 LUIS 앱을 만들고 앱 ID를 검색합니다.</p>
+
+
+  <ul>
+   <li><strong> 새 앱 만들기</strong> 단추를 클릭합니다.</li>
+   <li>앱 이름을 입력합니다. 문화권(영어) 및 설명을 기본값으로 둡니다.</li>
+   <li><strong>완료</strong>를 클릭합니다.</li>
+   <li>왼쪽 탐색 창에서 <strong>엔터티</strong>를 클릭합니다.</li>
+   <li><strong>사전 빌드 엔터티 관리를</strong> 클릭합니다.</li>
+   <li><strong> datetimeV2</strong> 및<strong> 전자 메일</strong>을 선택합니다.</li>
+   <li><strong>완료</strong>를 클릭합니다.</li>
+   <li>페이지 맨 위에 있는 <strong>학습</strong> 단추를 클릭합니다.</li>
+   <li><strong> 게시</strong> 탭을 클릭합니다.</li>
+   <li><strong>프로덕션 슬롯에 게시</strong> 단추를 클릭합니다.</li>
+   <li>화면 아래쪽에 키 문자열 필드가 있는 목록이 표시됩니다. <strong> 복사 </strong>단추를 클릭하고 Snip Insights 설정에서 해당 키 값을 LUIS 키 필드에 붙여넣습니다.</li>
+   <li>위쪽의<strong> 설정 탭</strong> 을 클릭합니다.</li>
+   <li>표시된 <strong>애플리케이션 ID</strong>를 복사하고 Snip Insights 대한 설정 LUIS 앱 ID 필드에 붙여넣습니다.</li>
+  </ul>
+
+
+  <p>이제 애플리케이션의 설정 패널에 각 키를 붙여넣을 수 있습니다. 모든 키를 입력한 후 저장 단추를 클릭해야 합니다.</p>
+
+
+  <p>입력된 각 키에 해당하는 서비스 엔드포인트가 있습니다. 예를 들어 사용할 수 있는 몇 가지 기본 엔드포인트가 포함되어 있지만 각 키를 복사할 때 사용 중인 각 서비스에 대한 서비스 엔드포인트도 확인하고 바꿉니다. 개요 페이지에서 각 Cognitive Service에 대한 서비스 엔드포인트를 찾을 수 있습니다. 모든 서비스 엔드포인트를 업데이트한 후 저장 단추를 클릭해야 합니다.</p>
+
+
+  <p>축하합니다! 이제 시작하려면 완전히 작동하는 애플리케이션이 있어야 합니다. 프로젝트를 재미있게 테스트하고 기여해 주셔서 감사합니다!</p>
+
+
+  <p>코드, 솔루션 개발 프로세스 및 <a href="https://github.com/Microsoft/ailab/tree/master/Snip-Insights">GitHub</a> 대한 다른 모든 세부 정보를 찾을 수 있습니다.</p>

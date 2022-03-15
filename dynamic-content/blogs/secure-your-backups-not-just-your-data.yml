@@ -1,0 +1,133 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8b096169342811cfd62358188b1f1ef3a2c88d07
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900838"
+Slug: secure-your-backups-not-just-your-data
+Title: 데이터뿐만 아니라 백업을 보호하세요!
+Summary: 랜섬웨어 공격은 더 이상 데이터 삭제로만 제한되지 않지만 공격 백업도 살펴보기 시작했습니다. 백업을 수행하는 것은 보호의 첫 번째 단계에 불과하며 이러한 백업도 안전하게 보호하는 것이 중요합니다. 이번 주에는 세계 백업의 날을 기념하면서 고객이 진화하는 랜섬웨어 공격으로부터 백업을 보호하기 위한 방어를 구축할 때 백업 제품에서 찾아야 하는 주요 고려 사항을 살펴보겠습니다.
+Content: >-
+  <p>오늘날&#39;데이터가 새로운 통화인 디지털 세계에서 이 데이터를 보호하는 것이 그 어느 때보다 중요해졌습니다. 2017년, <a href="https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/WannaCrypt">WannaCry</a>, <a href="https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Petya.B">Petya</a> 및 <a href="https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Locky">Locky</a>와 같은 <a href="https://www.microsoft.com/en-us/wdsi/threats/ransomware">랜섬웨어</a> 공격이 크게 발생하면서 공격자는 기업에 큰 영향을 미쳤습니다. <a href="https://blog.malwarebytes.com/malwarebytes-news/2018/01/presenting-malwarebytes-labs-2017-state-of-malware-report/">MalwareBytes의 보고서에</a> 따르면 랜섬웨어 탐지는 2017년에 각각 기업과 소비자에게 90%와 93% 증가했습니다. 머신이 랜섬웨어의 공격을 받으면 백업은 일반적으로 고객이 의지하는 마지막 방어선입니다.</p>
+
+
+  <p>랜섬웨어 공간의 혁신이 증가함에 따라 공격자는 더 이상 데이터 손상으로만 제한하지 않습니다. 백업은 랜섬웨어 도구의 다음 공격 라인이 되고 있으며, 데이터나 백업이 없는 상황에 처하면 랜섬웨어 공격자에게 인질이 됩니다. 이번 달에는 파일을 암호화할 뿐만 아니라 의도적으로 백업을 삭제하는 새로운 랜섬웨어 <a href="https://www.scmagazine.com/new-ransomware-zenis-will-delete-backup-files-even-if-victim-pays/article/752763/">인 Zenis</a> (MalwareHunterTeam에서 발견됨)가 등장했습니다.</p>
+
+
+  <p>이러한 공격에 대처하기 위해서는 백업을 수행하는 것 이상이 필요합니다. 백업을 수행하는 것은 보호의 첫 번째 단계일 뿐이며, 이 모델에서 해당 백업을 안전하게 보호하는 것이 중요합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/728c9d76-5e3b-468e-8310-140fee0008b0.jpg"><img alt="WorldBackupDayPic" border="0" height="446" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1fe6b6b1-7285-4135-bb36-1b95d05e31b6.jpg" style="border: 0px currentcolor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="WorldBackupDayPic" width="823"></a></p>
+
+
+  <p>현재 백업이 얼마나 안전한지 확인하려면 다음 질문을 합니다.</p>
+
+
+  <ul>
+   <li>백업이 프로덕션 데이터와 격리되어 있나요?</li>
+   <li>파괴적인 작업이 인증되도록 하는 메커니즘이 있나요?</li>
+   <li>이 기간 동안 중요한 작업이 수행된 경우 경고를 받는 메커니즘이 있나요?</li>
+  </ul>
+
+
+  <p>위의 중 어느 것에도 아니요&rdquo;라고 대답한 &ldquo;경우 백업에 대한 새 모델을 확인해야 합니다.</p>
+
+
+  <p>이번 주에는 세계 백업의 날을 기념하면서 고객이&rsquo; 진화하는 랜섬웨어 공격으로부터 백업을 보호하기 위한 방어를 구축할 때 백업 제품에서 찾아야 하는 주요 고려 사항을 살펴보겠습니다.</p>
+
+
+  <h2>백업 보안을 위한 주요 고려 사항</h2>
+
+
+  <p>백업을 보호하려면 백업을 제공하는 것뿐만 아니라 위의 모든 사항을 해결하는 다중 계층 보안 메커니즘이 필요하므로 랜섬웨어는 이에 영향을 줄 수 없습니다.</p>
+
+
+  <ul>
+   <li><b>오프사이트 백업</b>: 로컬 데이터에 대한 액세스가 백업에 대한 액세스를 보장하지 않도록 백업이 프로덕션 데이터와 별도로 저장되었는지 확인합니다.</li>
+   <li><b>중요한 작업에 대한 다단계 인증</b>: 백업 제품은 중요할 수 있는 작업을 검색해야 합니다. 백업 삭제, 암호 변경 및 이러한 작업이 성공하기 전에 다단계 인증이 있는지 확인</li>
+   <li><b>암호화됨</b>: 백업 데이터는 전송 중에 오프사이트 위치와 미사용 위치로 모두 암호화되어야 합니다. 프로덕션 데이터와는 별도로 안전한 위치에 저장하여 암호를 안전하게 유지합니다.</li>
+   <li><b>역할 기반 액세스</b>: 팀 내에서 업무를 분리하고 작업을 수행하는 데 필요한 사용자에 대한 액세스 권한만 부여합니다.</li>
+   <li><b>경고</b>: 백업 데이터의 가용성에 영향을 주는 중요한 작업에 대한 알림을 보내야 합니다.<strong></strong></li>
+   <li><b>지연된 삭제:</b>&nbsp; 백업 제품은 인증된 액세스에서 삭제 요청이 발생하더라도 백업이 최소 기간 동안 유지되도록 해야 합니다.</li>
+  </ul>
+
+
+  <h2>Azure Backup은 이러한 작업을 어떻게 달성하나요?</h2>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top" width="108">
+     <p><b>고려 사항</b></p>
+     </td>
+     <td valign="top" width="504">
+     <p><b>Azure Backup은 어떻게 달성하나요?</b></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="108">
+     <p><strong>오프사이트 백업</strong></p>
+     </td>
+     <td valign="top" width="504">
+     <p>Azure Backup은 Azure Backup 서비스에서 유지 관리되고 고객&#39;구독과 별개인 스토리지 계정에 백업을 저장합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="108">
+     <p><strong>다단계 인증 </strong></p>
+     </td>
+     <td valign="top" width="504">
+     <p>온-프레미스 위치에서 발생하는 모든 중요 작업에는 유효한 2단계 인증이 있어야만 적용됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="108">
+     <p><strong>암호화</strong></p>
+     </td>
+     <td valign="top" width="504">
+     <p>백업은 AES 256을 사용하여 암호화되고 HTTPS를 통해 클라우드로 전송됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="108">
+     <p><strong>역할 기반 액세스</strong></p>
+     </td>
+     <td valign="top" width="504">
+     <p><a href="https://docs.microsoft.com/azure/backup/backup-rbac-rs-vault">Azure RBAC</a>를 사용하여 조직의 다양한 역할에 대한 특정 액세스를 할당할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="108">
+     <p><strong>경고</strong></p>
+     </td>
+     <td valign="top" width="504">
+     <p>Azure Backup은 중요한 작업에 대한 알림을 통해 관리자에게 경고합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="108">
+     <p><strong>지연된 삭제</strong></p>
+     </td>
+     <td valign="top" width="504">
+     <p>Azure Backup은 인증된 사용자의 삭제 요청 후 14일 동안 백업을 유지합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>이번 세계 백업의 날, 게임을 &ndash;&rsquo;한 단계씩 강화하면 데이터를 보호하고 백업도 보호할 수 있습니다!</p>
+
+
+  <h2>관련 링크 및 추가 콘텐츠</h2>
+
+
+  <ul>
+   <li><a href="https://go.microsoft.com/fwlink/?linkid=835219&amp;clcid=0x409">Azure Backup 보안 기능에</a> 대해 자세히 알아보기</li>
+   <li><a href="https://azure.microsoft.com/documentation/articles/backup-azure-arm-vms-prepare/">Recovery Services 자격 증명</a> 모음 시작</li>
+   <li>도움이 필요하신가요? <a href="https://aka.ms/azure-backup-support-forum">지원을 위해 Azure Backup 포럼</a>에 문의</li>
+   <li>새로운 아이디어를 제공하고 기존 아이디어를 투표하여 <a href="https://aka.ms/azure-backup-user-voice">Azure Backup을 개선할</a> 수 있는 방법을 알려주세요.</li>
+   <li>최신 뉴스 및 업데이트에 대한 트위터에 <a href="https://twitter.com/azurebackup">@AzureBackup</a> 우리를 따르라</li>
+  </ul>

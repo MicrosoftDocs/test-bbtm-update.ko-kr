@@ -1,0 +1,85 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 40ac49f2f5afad084aaa7750a96b0234f0a15355
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907142"
+Slug: larger-more-powerful-managed-disks-for-azure-virtual-machines
+Title: Azure Virtual Machines용 더 크고 강력한 Managed Disks
+Summary: 오늘, Premium SSD, 표준 SSD 및 표준 HDD 디스크 제품에서 최대 32TiB의 더 크고 강력한 Azure Managed Disk 크기의 일반 공급에 대해 발표하게 되어 기쁩니다. 또한 미리 보기에서 Ultra Disks에서 최대 64TiB의 디스크 크기를 지원합니다.
+Content: >-
+  <p>오늘, Premium <strong>SSD, 표준 SSD 및 표준 HDD 디스크 제품에서 최대 32TiB</strong>의 더 크고 강력한 Azure Managed Disk 크기의 일반 공급에 대해 발표하게 되어 기쁩니다. 또한 미리 보기에서 Ultra Disks에서 최대 <strong>64TiB의 디스크</strong> 크기를 지원합니다.</p>
+
+
+  <p>또한 Premium SSD의 성능 확장 목표를 <strong>20,000 IOPS 및 900MB/초</strong>로 늘리고 있습니다. 더 큰 디스크 크기의 GA(일반 공급)를 통해 Azure는 이제 프로덕션 워크로드 요구 사항에 맞게 광범위한 디스크 크기를 제공하며, 규모와 성능이 일치하지 않습니다.</p>
+
+
+  <p>더 큰 디스크 크기를 사용할 경우의 이점 중 일부는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>사용 중인 VM 크기와 독립적으로 VM(가상 머신) 디스크&rsquo; 용량을 확장합니다. 더 큰 VM 크기로 업그레이드하거나 여러 VM을 활용하지 않고도 VM당 더 많은 디스크 용량을 연결할 수 있습니다. 예를 들어 이제 가장 작은 B1 Azure VM에 두 개의 32TiB 데이터 디스크를 연결하여 총 디스크 용량 64TiB를 달성할 수 있습니다. 이제 가장 큰 VM은 단일 VM에서 최대 2 PiB의 디스크 Storage 지원할 수 있습니다. 이를 통해 온-프레미스 디스크, NAS 또는 백업 데이터를 Azure로 마이그레이션하는 비용 효율적인 솔루션을 제공합니다.</li>
+   <li>더 높은 성능 확장 제한으로 새로운 범위의 워크로드를 Azure로 리프트 앤 시프트합니다. 최대 20,000 IOPS 및 900MB/초를 제공하는 Premium SSD를 사용하면 다양한 트랜잭션 워크로드를 가속화하고 데이터 분석 애플리케이션의 온-프레미스 런타임 성능을 초과할 수 있습니다. 또한 표준 SSD의 확장성 제한이 높으면 처리량이 매우 많은 빅 데이터 워크로드 및 스케일 아웃 파일 서버를 호스트하는 데 적합합니다.</li>
+   <li>더 큰 용량 또는 고성능을 달성하기 위해 여러 디스크를 스트라이프할 필요가 없도록 하여 배포, 서비스 관리를 간소화하고 VM 유지 관리 비용을 줄입니다. 더 높은 용량과 성능을 달성하기 위해 여러 개의 큰 디스크를 스트라이프할 수 있습니다.</li>
+  </ul>
+
+
+  <p>새 디스크 SKU 및 확장성 목표에 대한 자세한 내용은 아래 섹션을 참조하세요. 예상 디스크 IOPS 및 대역폭을 달성하려면 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq-for-disks#new-disk-sizes-managed-and-unmanaged" target="_blank">디스크 성능을 최적화하는 방법에</a> 대한 지침을 검토하는 것이 좋습니다.</p>
+
+
+  <h2>프리미엄 SSD 디스크</h2>
+
+
+  <p>Premium SSD는 Dynamics AX, Dynamics CRM 등의 엔터프라이즈 애플리케이션과 일관된 고성능 및 낮은 대기 시간이 필요한 SQL Server, Cassandra 및 MongoDB와 같은 데이터베이스 워크로드에 적합합니다.</p>
+
+
+  <h2><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/481d642d-1bb1-44be-a28e-c1ddee3e5e97.png"><img alt="Table displaying Premium SSD disks type, size, IOPS per disk, and throughput per disk." border="0" height="291" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9fbfff45-30ed-4bb9-8c98-9e071db6c126.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="SSD 디스크 Premium" width="1793"></a></h2>
+
+
+  <h2>표준 SSD 디스크</h2>
+
+
+  <p>표준 SSD는 낮은 IOPS 수준에서 일관된 성능이 필요한 웹 서버, 낮은 IOPS 애플리케이션 서버, 빅 데이터 및 엔터프라이즈 애플리케이션에 적합합니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a1c6d691-d5a1-43b3-b594-0cab64edd88d.png"><img alt="Table displaying Standard SSD disks type, size, IOPS per disk, and throughput per disk." border="0" height="291" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ce5fb8da-6bc3-42b7-9196-40ff692ae453.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="표준 SSD 디스크" width="1793"></a></p>
+
+
+  <h2>표준 HDD 디스크</h2>
+
+
+  <p>자기 드라이브를 기반으로 하는 표준 HDD는 개발/테스트 및 백업 시나리오에 가장 비용 효율적인 솔루션을 제공합니다. <strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/28425288-47d7-45ae-910f-9f70269e3bf1.png"><img alt="Table displaying Standard HDD disks type, size, IOPS per disk, and throughput per disk." border="0" height="292" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/88e1e732-0d64-4916-bf51-ee2299db168c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="표준 HDD 디스크" width="1793"></a></strong></p>
+
+
+  <p><strong>참고:</strong></p>
+
+
+  <ol>
+   <li>표준 SSD 및 표준 HDD 새 디스크 SKU의 대상 성능을 달성하려면 이러한 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq-for-disks#new-disk-sizes-managed-and-unmanaged" target="_blank">권장 VM 시리즈를</a> 사용해야 합니다.</li>
+   <li>P60/70/80 및 E60/70/80 디스크는 이제 미리 보기에서 제공되는 확장 제한보다 성능 목표가 더 높습니다. <a href="https://azure.microsoft.com/en-us/blog/introducing-the-public-preview-of-larger-managed-disks-sizes/" target="_blank">이러한 디스크 SKU를 미리 보기로 배포한</a> 경우 지침을 따라 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq-for-disks#new-disk-sizes-managed-and-unmanaged" target="_blank">기존 디스크가</a> 더 높은 GA 성능을 위해 업데이트되었는지 확인할 수 있습니다.</li>
+  </ol>
+
+
+  <h2>시작</h2>
+
+
+  <p>현재 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal" target="_blank">Azure</a> Portal, <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-disk-ps" target="_blank">Powershell</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/add-disk" target="_blank">CLI</a> 를 사용하여 새 Managed Disks를 만들거나 기존 디스크를 더 큰 크기로 확장할 수 있습니다. 새로 도입된 크기는 일반적으로<strong> Azure 퍼블릭 클라우드, Azure 미국 정부</strong> 및 중국 21Vianet의 모든 지역에서 사용할 수 있습니다. 더 큰 디스크 크기는 Managed Disks에서만 지원됩니다. 관리 디스크를 아직 사용하지 않는 경우 이제 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/migrate-to-managed-disks" target="_blank">관리되지 않는 디스크에서 Managed Disks로 변환</a> 하고 고유한 기능을 활용합니다.</p>
+
+
+  <p>다음 시나리오에 대한 지원도 추가했습니다.</p>
+
+
+  <ul>
+   <li>최대 32TiB의 새 디스크 크기에 대한 Azure Portal 환경</li>
+   <li>Powershell 및 CLI를 사용하여 기존 Managed Disks의 크기를 최대 32TiB로 조정</li>
+  </ul>
+
+
+  <p>엔터프라이즈 백업 시나리오에 대한 전체 범위를 제공하는 더 큰 디스크 크기에 대해 Azure Backup을 사용하도록 설정했습니다. 마찬가지로 온-프레미스에서 Azure로의 Azure Site Recovery 지원 및 Azure에서 Azure로의 재해 복구는 곧 모든 디스크 크기로 확장될 예정입니다.</p>
+
+
+  <p>서비스 웹 사이트를 방문하여 <a href="https://azure.microsoft.com/en-us/services/storage/disks/" target="_blank">Azure Disks 포트폴리오</a>를 살펴보세요. 가격 책정에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/managed-disks/" target="_blank">Managed Disks 가격 책정 페이지를</a> 참조하세요.</p>
+
+
+  <h2>일반적인 피드백</h2>
+
+
+  <p>새 디스크 크기에 대한 피드백을 기다리고 있습니다. 이메일을 보내 <a href="mailto:AzureDisks@microsoft.com">AzureDisks@microsoft.com</a>주세요.</p>

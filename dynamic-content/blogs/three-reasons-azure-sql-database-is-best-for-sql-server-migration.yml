@@ -1,0 +1,77 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f823ad5e7c9e3af46ac88d4baa362b7dc46800db
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900158"
+Slug: three-reasons-azure-sql-database-is-best-for-sql-server-migration
+Title: Azure SQL Database 세 가지 이유는 SQL Server 마이그레이션에 가장 적합합니다.
+Summary: 현재 생성된 데이터의 양은 과도할 수 있습니다. IT 조직은 비용을 관리하고, 성능을 최적화하고, 경쟁 우위를 위해 데이터를 사용해야 한다는 압박에 직면하여 점점 더 많은 압력을 완화하기 위해 클라우드를 찾고 있습니다.
+Content: >-
+  <p>현재 생성된 데이터의 양은 과도할 수 있습니다. IT 조직은 비용을 관리하고, 성능을 최적화하고, 경쟁 우위를 위해 데이터를 사용해야 한다는 압박에 직면하여 점점 더 많은 압력을 완화하기 위해 클라우드를 찾고 있습니다. 올해&rsquo; Ignite는 데이터 플랫폼을 재정의하고 온-프레미스와 클라우드 간에 마찰 없는 환경을 조성하는 새로운 혁신을 발표합니다.&nbsp;</p>
+
+
+  <p>현재 Microsoft에서 SQL Server 데이터베이스를 관리하는 Azure 서비스인 Azure SQL Database 집중하겠습니다. SQL Server 다시 패치하고 업그레이드할 필요가 없습니다. 즐겨 찾는 SQL Server 기능 외에도 워크로드 패턴 학습에 따른 기본 제공 가용성 SLA, 동적 크기 조정 및 자동 성능 및 비용 최적화를 통해 완전히 관리되는 데이터베이스 서비스를 활용할 수 있습니다. ID&rsquo;는 SQL Database SQL Server 워크로드에 가장 적합한 이유와 비즈니스에 더 집중할 수 있는 세 가지 핵심 이유를 설명합니다.</p>
+
+
+  <h3>#1: 지능형 데이터베이스를 서비스로 사용하여 비즈니스에 집중</h3>
+
+
+  <p>오늘날&rsquo; 클라우드 중심 세계에서 핵심 역량에 집중하기 위해 클라우드 공급자에 점점 더 의존하여 필요에 따라 확장되는 저렴하고 걱정 없는 컴퓨팅 인프라를 제공할 수 있습니다. 관리형 서비스를 사용하면 수익을 높이고, 출시 시간을 개선하고, 궁극적으로 최고의 비즈니스 성능을 높일 수 있습니다.</p>
+
+
+  <p>SQL Database 전 세계 38개 데이터 센터에서 수백만 개의 프로덕션 데이터베이스를 관리하는 DBaaS(완전 관리형 관계형 DBaaS)로 빠르게 성장하고 있습니다. SQL Database 사용하여 간단한 트랜잭션 데이터 관리에서부터 전 세계적으로 고급 데이터 처리가 필요한 가장 데이터 집약적이고 중요 업무용 애플리케이션을 구동하는 것까지 광범위한 애플리케이션 및 워크로드를 지원할 수 있습니다.</p>
+
+
+  <p>Were&rsquo;는 2018년 10월 1일에 <strong>SQL Database Managed Instances&rsquo; 범용 서비스 계층의 예정된 일반 공급</strong>에 대해 발표하게 되어 기쁘게 생각합니다. 범용 서비스 계층은 일반적인 성능 요구 사항이 있는 대부분의 비즈니스 애플리케이션을 위해 설계되었습니다. Managed Instance는 원하는 SQL Server 기능을 완전 관리형 서비스와 결합하여 워크로드 패턴을 학습하고 자동으로 최적화하는 AI에서 제공하는 SQL Server Always On 기술, 지능형 성능 및 비용 최적화를 통해 제공되는 기본 제공 가용성 SLA와 같은 이점을 제공합니다. 기본 제공 In-Memory 기술을 사용하면 IoT와 같은 최신 워크로드에 필요한 초당 <a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2017/11/08/high-scale-and-performance-of-azure-sql-database/" target="_blank">최대 140만 HTAP 트랜잭션</a>과 고급 분석 워크로드 <a href="https://azure.microsoft.com/en-us/blog/azure-sql-database-in-memory-performance/" target="_blank">에 대해 최대 57배의 성능 향상</a> 에 필요한 놀라운 성능을 달성할 수 있습니다.</p>
+
+
+  <p>&ldquo;<em>TimeXtender 솔루션을 몇 주 만에 Azure SQL Database Managed Instance의 프로덕션 환경에 배포할 수 있었습니다. 우리는 즉시 49 %의 비용 절감을 깨달았고 기계 학습을 통해 인공 지능을 데이터에 적용하겠다는 약속은 우리에게</em>&rdquo; 흥미로운 기회라고 코마츠 오스트레일리아의 비즈니스 기술 &amp; 시스템 GM 인 John Steele은 말했습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance" target="_blank">Managed Instance</a>는 네이티브 백업 복원, CLR, 트랜잭션 복제 게시자, 연결된 서버, DBMail, 쿼리 알림, Always Encrypted, BYOK(Bring Your Own Key) 지원을 통해 투명한 데이터 암호화 같은 인기 있는 SQL Server 기능을 지원합니다.&nbsp; 현재 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-get-started" target="_blank">Managed Instance를 만들고</a> <a href="https://azure.microsoft.com/en-us/services/database-migration/" target="_blank">Azure Database Migration Service</a>를 사용하여 데이터를 쉽게 마이그레이션할 수 있습니다.</p>
+
+
+  <h2>#2: 데이터베이스를 빠르게 하이퍼스케일</h2>
+
+
+  <p>또한<strong> 2018년 10월 1일에 새로운 SQL Database 하이퍼스케일 서비스 계층의 미리 보기를</strong> 발표하게 되어 기쁘게 생각합니다. 대규모 온-프레미스 데이터베이스를 마이그레이션하거나 향후 Azure SQL Database 성장을 위해 새 앱을 빌드하려는 고객을 위해 하이퍼스케일&rsquo; 스케일 아웃 아키텍처는 상용 하드웨어에서 매우 큰 데이터베이스(VLDB)에 대한 획기적인 지원을 제공합니다. 하이퍼스케일을 사용하면 인스턴스 쿼리 확장 및 빠른 지정 시간 복구를 위해 100TB 데이터베이스를 SQL Database 수 있습니다. 확장 하드웨어 없이 VLDB를 지원하도록 엔진 수준 컴퓨팅 및 스토리지를 확장하기 위해 SQL Server 스토리지 엔진을 근본적으로 다시 아키텍처화했습니다.</p>
+
+
+  <p>하이퍼스케일은 처음에 단일 데이터베이스에서 미리 보기로 사용할 수 있으며 나중에 다른 리소스 유형으로 확장될 예정입니다. <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fsql-database%2Fsql-database-hyperscale&amp;data=02%7C01%7C%7Cb0f13cd43d4b4b197bef08d6144643d1%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636718689386553579&amp;sdata=c%2BV8zl5FAD3SdjMxuQIBHEguhXG06HnHDTGVWvk9iMA%3D&amp;reserved=0" target="_blank">하이퍼스케일 서비스 계층</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <h2>#3: 기본 제공 인텔리전스를 사용하여 작업</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/sql-database-learns-and-adapts-with-your-app/?ranMID=24542&amp;ranEAID=TnL5HPStwNw&amp;ranSiteID=TnL5HPStwNw-YVFY0RheOBgZIR1ZsvI7jg&amp;tduid=(9272876fc317c088e6256584265b14cb)(256380)(2459594)(TnL5HPStwNw-YVFY0RheOBgZIR1ZsvI7jg)()" target="_blank">2016년 초부터</a> 성능 및 보안을 모니터링하고 관리하는 다양한 기본 제공 기계 학습 및 적응 기술을 통해 지능형 기능을 제공하기 시작했습니다. Microsoft는 수년에 걸쳐 Azure에서 실행되는 수백만 개의 데이터베이스에서 원격 분석을 사용하여 워크로드를 학습하고 적응시키는 진정한 지능적이고 자율적인 데이터베이스를 학습할 수 있습니다.</p>
+
+
+  <p>&rsquo;Azure SQL Database <strong>인텔리전트 성능</strong>은 데이터베이스 성능에 대한 심층적인 인사이트를 제공하고 지속적인 개선의 번거로움을 제거하여 업무&rdquo; 진행에 집중&ldquo;하지 않도록 도와줍니다. 쿼리 성능 인사이트 및 자동 튜닝과 같은 기능은 데이터베이스 사용량을 지속적으로 모니터링하여 중단 이벤트를 감지한 다음 성능을 개선하기 위한 조치를 취합니다.&nbsp;</p>
+
+
+  <p>지능형 쿼리 처리 기능 제품군에 최신 기능을 추가하여 쿼리 성능을 쉽게 최적화할 수 있습니다. <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fsql%2Frelational-databases%2Fperformance%2Fadaptive-query-processing%3Fview%3Dsql-server-2017%23row-mode-memory-grant-feedback&amp;data=02%7C01%7C%7C57f70590241a4467540208d60df82de2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636711756900809561&amp;sdata=HJIRVaKiM1zphTuds79I%2F1rqfVZeDJBDfOxVjMua1rk%3D&amp;reserved=0" target="_blank">행 모드 메모리 부여 피드백</a>, <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fsql%2Frelational-databases%2Fperformance%2Fintelligent-query-processing%3Fview%3Dsql-server-2017%23approximate-query-processing&amp;data=02%7C01%7C%7C57f70590241a4467540208d60df82de2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636711756900809561&amp;sdata=ykCcv38UN26PQInY4XpYwirVl3Cpd8g90qJCYBSuu1Y%3D&amp;reserved=0" target="_blank">대략적인 쿼리 처리</a> 및 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fsql%2Frelational-databases%2Fperformance%2Fintelligent-query-processing%3Fview%3Dsql-server-2017%23table-variable-deferred-compilation&amp;data=02%7C01%7C%7C57f70590241a4467540208d60df82de2%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636711756900809561&amp;sdata=S1pHhQp%2FC2mPxIQIg5CbIFyxhCub7%2FzPYLEydnZ%2F9bs%3D&amp;reserved=0" target="_blank">테이블 변수 지연 컴파일</a>의 세 가지 새로운 미리 보기 제품을 발표합니다. 이러한 기능은 최소한의 노력으로 메모리 사용량을 전체적으로 최적화하고 전반적인 쿼리 성능을 향상시킬 수 있습니다.&nbsp;</p>
+
+
+  <p>&rsquo;Azure SQL Database <strong>지능형 보호</strong>는 잠재적인 위협 및 취약성을 사전에 모니터링하여 데이터&rsquo; 보안 및 규정 준수 요구 사항을 효율적이고 생산적으로 충족하는 데 도움이 됩니다. 정보 보호, 취약성 평가 및 위협 감지와 같은 기능을 통해 SQL Database 중요한 데이터를 사전에 검색 및 보호하고, 잠재적 취약성을 발견하고, 데이터에 대한 위협을 나타낼 수 있는 비정상적인 활동을 검색합니다.</p>
+
+
+  <h2>보너스: #4 비용 절감 및 생산성 향상</h2>
+
+
+  <p>Id&rsquo;는 SQL Database 경제적으로 가장 좋은 선택으로 만드는 한 가지 이유를 더 주고 싶습니다. SQL Server 워크로드를 SQL Database Managed Instance로 마이그레이션하면 시간이 지남에 따라 크게 절감될 수 있습니다. Forrester Consulting이 실시한 최근 총 경제 영향<sup>TM</sup> 의뢰 연구에서 기업은 온-프레미스 배포와 관련된 하드웨어, 스토리지 및 네트워크 비용을 피함으로써 212%의 ROI와 연간 최대 800K의 자본 비용 절감을 기대할 수 있습니다.&nbsp; 기본 제공 인텔리전스를 갖춘 완전 관리형 서비스는 직원 생산성을 향상시켰으며, 사내 DBA와 IT 전문가는 각각 최대 40%와 20%의 수익을 올렸습니다. 이 연구는 곧 제공될 예정입니다. 오늘 <a href="https://azure.microsoft.com/resources/forrester-tei-sql-database-managed-instance/" target="_blank">요약 요약</a> 을 다운로드하세요.</p>
+
+
+  <p>Azure&rsquo;를 워크로드에 가장 비용 효율적인 클라우드로 만들기 위해 최선을 다하고 있습니다. SQL Server 대한 Azure 하이브리드 혜택을 사용하면 SQL Server Standard 또는 Enterprise Edition 라이선스와 활성 Software Assurance를 사용하여 라이선스 포함 가격 대비 최대 55%1를 절약할 수 있습니다. 또한 1년 또는 3년 동안 SQL Database 컴퓨팅 비용을 선불로 결제할 때 SQL Server 대한 Azure 하이브리드 혜택을 새 예약 용량 제품과 결합하고 라이선스 포함 가격 책정을 최대 80%<sup>2</sup>%까지 절약할 수 있습니다. &rsquo;2019년 7월 9일에 <a href="https://azure.microsoft.com/en-us/blog/announcing-new-options-for-sql-server-2008-and-windows-server-2008-end-of-support/">SQL Server 2008/2008 R2에 대한 지원이 종료</a>되는 경우 이러한 제품을 사용하여 워크로드를 비용 효율적으로 Azure SQL Database 마이그레이션하고 지원 전환 비용을 제거할 수 있습니다. <a href="https://azure.microsoft.com/en-us/pricing/details/sql-database/single/">SQL Database 가격 책정 페이지에서</a> 이러한 제품에 대해 자세히 알아보세요.</p>
+
+
+  <p>닫을 때 Azure SQL Database 데이터 자산을 실행하는 것은 자동 파일럿에 배치하는 것과 같습니다. 최상의 SQL Server 및 기본 제공 지능형 기능을 완전히 관리되는 서비스의 이점과 결합하여 뛰어난 앱을 개발하고 효율적이고 비용 효율적으로 성장을 촉진하는 데 더 집중할 수 있습니다. 이러한&rsquo; 발표에 대해 기쁘게 생각하고 여러분의 의견을 듣고 비즈니스 목표를 가속화할 수 있기를 기대합니다.</p>
+
+
+  <p><br>
+
+  <sup>1<em> </em></sup><em>매월 730시간을 실행하는 미국 동부 지역의 8개 vCore Managed Instance 중요 비즈니스에 따라 절감됩니다. 절감액은 기본 요금(SQL Server Azure 하이브리드 혜택 적용)에 대해 전체 가격(라이선스 포함)으로 계산되며, EA 계약에 따라 달라질 수 있는 SQL Server Enterprise 버전의 Software Assurance 비용은 제외됩니다. 실제 절감액은 지역, 인스턴스 크기 및 성능 계층에 따라 달라질 수 있습니다. 2017년 12월 현재 가격, 변경될 수 있습니다.</em></p>
+
+
+  <p><sup>2 </sup><em>매월 730시간을 실행하는 미국 서부 2 지역에서 8개의 vCore SQL Database 관리되는 인스턴스 비즈니스에 따라 절감됩니다. 절감액은 Azure 하이브리드 혜택 및 3년 예약 용량의 기본 요금에 대해 주문형 전체 가격(라이선스 포함)에서 계산됩니다. 절감액은 ea 계약에 따라 달라질 수 있는 SQL Server Enterprise 버전의 Software Assurance 비용을 제외합니다. 실제 절감액은 지역, 인스턴스 크기 및 성능 계층에 따라 달라질 수 있습니다. 2018년 5월 현재 가격은 변경될 수 있습니다.</em></p>

@@ -1,0 +1,52 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 98f7ab456b1aecb91f415bff94a2e976d07a803d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906736"
+Slug: improved-multi-member-blockchain-networks-now-available-on-azure
+Title: 개선된 다중 멤버 블록체인 네트워크를 이제 Azure에서 사용할 수 있음
+Summary: 'Azure Marketplace에서 사용할 수 있는 블록체인 솔루션에 대한 고객의 관심이 매우 높습니다. 오늘, Azure 제품에서 Ethereum에 대한 중요한 향상된 기능을 발표하게 되어 기쁩니다. '
+Content: >-
+  <p>Azure Marketplace에서 사용할 수 있는 블록체인 솔루션에 대한 고객의 관심이 매우 높습니다. 고객이 프로덕션 블록체인 시나리오를 구축함에 따라 네트워크 안정성 및 상태 모니터링이 점점 더 중요해지고 있음을 이해합니다. 오늘, Azure 제품에서 Ethereum에 대한 중요한 향상된 기능을 발표하게 되어 기쁩니다. 이러한 개선 사항은 엔터프라이즈 시나리오에 적합한 프로덕션 준비 컨소시엄 Blockchain 네트워크를 사용하도록 설계된 일련의 릴리스 중 첫 번째 릴리스입니다.</p>
+
+
+  <p>고객 참여를 통해 다음과 같은 개선 사항을 확인하고 롤아웃했습니다.</p>
+
+
+  <ul>
+   <li><strong>Blockchain 네트워크 존재의 고가용성:</strong>  분산형 네트워크의 참가자로서 합의 프로세스에서 노드&rsquo; 의 존재는 공정하고 안전한 네트워크를 달성하는 데 매우 중요합니다. 고가용성을&rsquo; 보장하기 위해 Azure VMSS(지역 간 Azure VM Scale Sets) 및 Azure Managed Disks를 통합했습니다. 노드가 다운되는 경우 Azure VMSS는 노드를 자동으로 복구하고 Ethereum 네트워크에 다시 조인합니다.&nbsp; 활성 노드는 시간이 지남에 따라 변경 될 수 있으므로 정확한 부팅 노드 목록을 유지 관리하여 다른 멤버가 네트워크에 가입 할 수 있도록합니다.</li>
+   <li><strong>간소화된 배포 환경:</strong>  시나리오에 적합한 네트워크 토폴로지 선택이 어려울 수 있습니다. Weve&rsquo;는 다양한 Ethereum 네트워크 토폴로지들을 하나의 환경으로 통합하는 데 상당한 노력을 기울였으며, 이를 통해 사용자는 배포 옵션을 살펴보고 시나리오에 중요한 정보만 표시할 수 있습니다.</li>
+   <li><strong>모니터링 및 운영 지원: </strong> DevOps 환경에서 블록체인 네트워크는 애플리케이션 아키텍처 내에서 사각지대가 될 수 없습니다. 네트워크 상태 및 블록체인 메트릭을 모니터링, 기록 및 분석해야 할 필요성에 감사드립니다. 이제 Blockchain 네트워크와 함께 사용자 지정 가능한 모니터링 대시보드 배포를 지원하여 블록체인 인프라의 원격 분석을 모니터링합니다. 현재는 광부 및 트랜잭션 노드에서 CPU, 메모리 및 디스크 용량에 대한 사용자 지정 경고를 모니터링하고 만들 수 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/992a2590-2030-4b69-8735-6674c35360e2.png"><img alt="image" border="0" height="290" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4b281469-5549-43f3-aa51-888427efe7f6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p align="center"><em>그림 1 Ethereum 노드의 OMS 모니터링</em></p>
+
+
+  <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-azure-blockchain.azure-blockchain-ethereum?tab=Overview" target="_blank">새 템플릿은</a> 독립 실행형 테스트 네트워크, 새 컨소시엄 네트워크 만들기 또는 기존 컨소시엄 네트워크에 새 멤버 추가를 위한 인프라를 배포할 수 있습니다. 이제 단일 컨소시엄 멤버는 중복성 및 재해 복구를 위해 블록체인 공간을 여러 지역에 배포할 수 있습니다.&nbsp;&nbsp;</p>
+
+
+  <p>이러한 솔루션 템플릿은 최소한의 Azure 및 Ethereum 지식으로 다중 멤버 컨소시엄 Ethereum 네트워크를 더 빠르고 쉽게 배포하고 구성할 수 있도록 설계되었습니다. 소수의 사용자 입력과 단일 클릭 배포를 통해 각 멤버는 전 세계 컴퓨팅, 네트워킹, 스토리지 및 기타 서비스를 Microsoft Azure 사용하여 네트워크 공간을 프로비전할 수 있습니다. 각 멤버&#39;네트워크 공간은 애플리케이션 또는 사용자가 트랜잭션을 제출하기 위해 상호 작용할 수 있는 부하 분산 트랜잭션 노드 집합, 합의를 관리하는 마이닝 노드 집합 및 테넌트 간 연결을 위한 VPN 게이트웨이로 구성됩니다. <a href="https://docs.microsoft.com/en-us/azure/blockchain-workbench/ethereum-deployment-guide" target="_blank">배포 가이드 </a>에서는 VPN 연결을 설정하여 게이트웨이를 연결하고 완전히 구성된 다중 멤버 블록체인 네트워크를 만드는 방법을 보여 줍니다.</p>
+
+
+  <p>각 멤버가 세 지역에 배포한 다중 멤버 네트워크 아키텍처는 다음과 같습니다. 아래의 각 검은색 경계는 컨소시엄의 한 멤버에 대한 공간을 포함하는 리소스 그룹을 나타냅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b1f8ba6-2bee-4905-b69e-46e5751fb2fe.png"><img alt="clip_image002" border="0" height="465" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f66cd786-aa6a-485a-ac02-62b6775c12a6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image002" width="780"></a></p>
+
+
+  <p align="center"><em>그림 2 다중 멤버 다중 지역 토폴로지</em></p>
+
+
+  <p>템플릿이 멤버 간에 허브 및 스포크 연결 모델을 구성하지만 컨소시엄은 특정 요구 사항에 맞게 연결 모델을 변경할 수 있습니다.&nbsp;</p>
+
+
+  <p>솔루션에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/blockchain-workbench/ethereum-deployment-guide" target="_blank">가이드 연습을 참조하세요</a>.</p>
+
+
+  <p>Azure의 Blockchain 제품에 대한 지속적인 열정과 지원에 감사드립니다.&nbsp; 이러한 템플릿의 향상된 버전을 릴리스하고 고가용성 및 향상된 모니터링을 달성하기 위해 이 새로운 제품으로 전환할 것을 권장할&#39;있습니다.</p>

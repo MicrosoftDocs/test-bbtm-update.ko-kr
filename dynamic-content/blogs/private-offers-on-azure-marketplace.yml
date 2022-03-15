@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4fee9c4845b8fcfdd2f1356318cd15218f2a448e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907054"
+Slug: private-offers-on-azure-marketplace
+Title: Azure Marketplace의 프라이빗 제품
+Summary: 오늘, 단일 가상 머신 제품에 대한 Azure Marketplace의 프라이빗 제품의 공개 미리 보기를 발표하게 되어 기쁩니다. Azure 게시자가 프라이빗 제품 및 SKU를 만들 수 있는 기능은 다음과 같습니다.
+Content: >-
+  <p>빌드 2018에서는 게시자가 대상 고객에게만 표시되는 SKU를 만들 수 있도록 단일 가상 머신 제품에 대한 Azure Marketplace의 프라이빗 제품 공개 미리 보기를 <a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-is-reaching-new-audiences/" target="_blank">발표</a> 했습니다. 이제 Azure Marketplace 게시자는 Cloud 파트너 포털을 통해 이러한 프라이빗 제품을 만들 수 있습니다.</p>
+
+
+  <h2>시나리오</h2>
+
+
+  <p>프라이빗 제품은 게시자의 능력을 풀어주어 가장 가까운 고객에게 독점적인 혜택을 만들고 사용자 지정된 소프트웨어 및 약관을 제공합니다. 이러한 사용자 지정 용어를 사용하면 게시자가 다양한 시나리오를 표시할 수 있습니다.</p>
+
+
+  <ul>
+   <li>프라이빗 제품은 대상 고객에게 할인, 장기 가격 책정 및 대량 소프트웨어 거래와 같은 <strong>특수 가격 책정</strong> 을 제공할 수 있습니다.</li>
+   <li>퍼블리셔는 업데이트를 수행할 때 비공개 제품에 대한 대상 그룹을 넓힐 수 있으므로 <strong>제한된 BETA 릴리스</strong>를 실행할 수 있습니다. 이러한 릴리스는 나중에 몇 번의 마우스 클릭으로 공개할 수 있습니다.</li>
+   <li>퍼블리셔가 소프트웨어를 배포하는 동안 동의해야 하는 특별 계약으로 소프트웨어를 제공할 수 있도록 이러한 제품에 <strong>특별 약관 및 제품을</strong> 입력할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>프라이빗 제품 및 SKU 만들기</h2>
+
+
+  <p><strong><em>기존 제품의</em></strong> 경우 게시자는 새 SKU를 만들고 비공개로 표시하여 대상 고객이 볼 수 있고 구매할 수 있는 새 프라이빗 변형을 쉽게 만들 수 있습니다. 프라이빗 SKU는 새 SKU ID를 사용해야 하지만 공용 SKU에 이미 게시된 이미지를 다시 사용할 수 있습니다. 이렇게 하면 게시자는 여러 이미지를 제출하지 않고도 공용 SKU에 대해 여러 개인 SKU를 만들 수 있습니다. 제품에 대한 모든 업데이트는 하나의 이미지를 업데이트하여 수행할 수 있으며 모든 공용 및 프라이빗 SKU의 이미지는 원활하게 업데이트됩니다.</p>
+
+
+  <p>이러한 제품에는 공용 SKU와 하나 이상의 개인 SKU가 모두 대상 고객에게만 표시됩니다. 배포 중에 참조된 SKU ID에 따라 디스크가 배포되고 고객에게 적절한 가격이 청구됩니다. 또한 게시자는 배포 중에 이러한 항목에 대해 표시된 사용 약관 및 설명을 변경할 수 있습니다.</p>
+
+
+  <p>비공개로만 사용할 수 있는 <strong><em>새로운 프라이빗 제품 또는 SKU</em></strong> 의 경우 퍼블리셔는 현재와 마찬가지로 제품을 만들고 SKU를 비공개로 표시할 수 있습니다. 프라이빗 SKU만 있는 제품에는 공개적으로 표시되는 버전이 없습니다. 이러한 SKU는 AzureMarketplace.com 또는 Azure Portal에 표시되지 않습니다.</p>
+
+
+  <p>시작 시 게시자에게 구독 ID를 사용하여 고객을 대상으로 지정할 수 있는 기능을 제공합니다. 게시자는 개별 구독 ID를 입력하거나 프라이빗 제품에 액세스하려는 구독 ID의 CSV를 업로드할 수 있습니다. 향후 테넌트 ID 및 관리 그룹 사용을 포함하여 고객을 대상으로 하는 옵션을 더 추가할 계획입니다.</p>
+
+
+  <h2>프라이빗 제품 배포</h2>
+
+
+  <p>최종 고객을 위해 프라이빗 제품을 배포하는 환경은 다른 퍼블릭 제품과 동일하게 유지됩니다. <a href="https://portal.azure.com/" target="_blank">Azure</a> Portal에서 카탈로그를 보면 고객에게 개인 제품을 사용할 수 있다는 메시지가 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/55589459-4639-4dd7-9761-8ff0573f931b.png"><img alt="Azure Marketplace" border="0" height="421" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/916a6a4d-ae28-4235-8de5-b28697a16ccf.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Marketplace" width="1053"></a></p>
+
+
+  <p>프라이빗 제품은 검색 결과에도 표시되며 다른 제품과 마찬가지로 명령줄 및 ARM 템플릿을 통해 배포할 수 있습니다. 프라이빗&rdquo; 배지만 &ldquo;살펴보세요. 파트너가 사용할 수 있는 새로운 기능에 대해 자세히 알아보려면 <a href="https://go.microsoft.com/fwlink/?linkid=873039" target="_blank">설명서 페이지를</a> 방문하세요. Azure Marketplace에서 판매를 시작하고 이러한 새로운 기능을 활용하려면 <a href="https://go.microsoft.com/fwlink/?linkid=873405" target="_blank">Azure Marketplace 웹 페이지에서</a> 시작할 수 있습니다.</p>
+
+
+  <h2>피드백</h2>
+
+
+  <p>이러한 새로운 기능을 파트너가 사용할 수 있게 되어 기쁘게 생각합니다. <a href="https://cloudpartner.azure.com/" target="_blank">Cloud 파트너 포털</a>에서 웃는 얼굴/찡그린 얼굴 단추를 자유롭게 사용하여 이 기능(또는 다른 기능)에 대한 피드백을 보내주세요.</p>

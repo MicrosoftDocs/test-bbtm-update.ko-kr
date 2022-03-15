@@ -1,0 +1,167 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2004e3cf4426430723d06699449aa3e3f44a4d08
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907316"
+Slug: azure-networking-announcements-for-ignite-2016
+Title: Ignite 2016에 대한 Azure 네트워킹 공지 사항
+Summary: 이번 주에는 고객에게 더 큰 성능, 고가용성, 더 나은 보안 및 더 많은 운영 인사이트를 제공하기 위한 몇 가지 새로운 Azure 네트워킹 서비스 및 기능을 발표합니다.
+Content: >-
+  <p>이번 주에는 고객에게 더 큰 성능, 고가용성, 더 나은 보안 및 더 많은 운영 인사이트를 제공하기 위한 몇 가지 새로운 Azure 네트워킹 서비스 및 기능을 발표합니다. 고객이 퍼블릭 클라우드에서 서비스를 더 쉽고 원활하게 실행할 수 있도록 지속적으로 혁신할 것입니다. 모든 흥미로운 Azure Ignite 공지 사항에 대한 개요는 <a href="https://aka.ms/azureigniteblog" target="_blank">Jason Zanders&rsquo; 블로그 게시물을</a> 참조하세요.</p>
+
+
+  <h2>성능 향상</h2>
+
+
+  <p>Azure는 9년 이상 Microsofts&rsquo; 클라우드 규모 데이터 센터 인프라를 개발해 왔습니다.&nbsp; 초기에는 대규모 데이터 센터를 위한 네트워크 인프라를 구축하고 데이터 전송 속도를 높이려면 네트워킹 기술의 근본적인 변화가 필요하다는 것을 깨달았습니다.&nbsp; Microsoft는 Microsoft에서 개발한 하드웨어 솔루션을 비롯한 최첨단 네트워킹 솔루션을 홍보하고 개발하기 위해 업계 전반에 걸쳐 노력하고 있습니다.</p>
+
+
+  <p>오늘 우리는 네트워킹 대역폭 성능을 33%에서 50%로 개선할 전체 글로벌 서버 플릿에 대한 돌파 발전을 발표합니다. 이는 하드웨어의 네트워크 처리 기능을 활용하는 NVGRE 오프로드와 같은 하드웨어 기술을 활용하여 달성됩니다. Windows 및 Linux VM은 애플리케이션에 중요한 CPU 주기를 반환하면서 이러한 성능 향상을 경험하게 됩니다. 전 세계 배포는 2016년에 완료될 예정이며, 완료되면 이러한 새로운 성능 이점을 반영하도록 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-sizes/#standard-tier-d-series" target="_blank">VM 크기 테이블을</a> 업데이트합니다.</p>
+
+
+  <p>더 많은 성능을 제공하기 위해 가속화된 네트워킹의 공개 미리 보기를 발표하게 되어 매우 기쁩니다. <em>가속화된 네트워킹은 최대 25Gbps의 처리량을 제공하고 네트워크 대기 시간을 최대 10배까지 크게 줄입니다.</em> 애플리케이션은 SR-IOV를 비롯한 차세대 하드웨어 기술을 통해 VM이 하이퍼바이저&rsquo; 가상 스위치를 완전히 우회하여 하드웨어 NIC와 직접 통신할 수 있습니다. 더 높은 대역폭 및 짧은 대기 시간과 함께 애플리케이션은 지터를 줄이고 PPS(초당 패킷 수) 성능을 향상합니다. 가속화된 네트워킹을 사용하면 Azure SQL DB In-Memory OLTP 트랜잭션 성능이 1.5배 향상되었습니다.&nbsp; 또한 이 미리 보기에서 DS15v2 및 D15v2 VM 크기는 최대 25Gbps의 네트워크 처리량을 제공합니다. 지역 가용성 및 미리 보기에 등록하는 링크에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-network-accelerated-networking-powershell/" target="_blank">가상 머신의 가속 네트워킹</a>에서 확인할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2031a850-ff25-4d00-a851-481ef7d5536d.png"><img alt="AzureAccelNetworking" border="0" height="192" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2115f459-20ee-4990-ab02-daec69fe2b87.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureAccelNetworking" width="457"></a></p>
+
+
+  <p>또한 Azure Storage 사용자는 새로 개발된 스토리지 특정 오프로드와 결합된 이러한 발전에 따라 크게 향상된 IOPS 성능을 활용할 수 있습니다. 이제 하드웨어는 NIC의 선 속도까지 데이터 전송을 효율적으로 수행합니다. Storage 대한 롤아웃도 2016년에 완료될 예정입니다.</p>
+
+
+  <p>VNet <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-network-peering-overview/" target="_blank">피어링(Virtual Network 피어링</a> )의 일반 공급이 발표되었습니다. VNet 피어링이 동일한 지역에 있는 VNet(Virtual Network)을 연결하여 직접 전체 메시 연결을 사용하도록 설정합니다. 피어링된 VNet의 VM은 동일한 VNet의 일부인 것처럼 서로 통신하므로 대역폭이 높고 대기 시간이 짧습니다. 허브 &amp; 스포크 토폴로지가 게이트웨이를 통한 전송 라우팅에서 지원됩니다. 게이트웨이가 없는 VNet은 피어된 VNet의 게이트웨이를 통해 프레미스 간 연결을 계속합니다. VNet 피어링은 구독에서 작동하여 간소화된 서비스 관리를 허용합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c2c28a0d-0a80-4711-a811-93b35931fbb3.jpg"><img alt="AzureNetworkingVNetPeering" border="0" height="210" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e4f8a46c-64fd-4aa2-991f-26b75dbff0bc.jpg" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworkingVNetPeering" width="442"></a></p>
+
+
+  <p>이를 통해 동일한 지역에서 VPN 게이트웨이 및 네트워크 가상 어플라이언스를 통합하여 관리를 간소화하고 비용을 절감할 수 있습니다. User-Defined 경로(UDR) 및 NSG(네트워크 보안 그룹)는 피어된 VNet 간의 세분화된 제어를 관리할 수 있습니다. Vnet 피어링을 사용하면 클래식&rdquo; VNet 및 Azure Resource Manager VNet이 공&ldquo;존할 수 있습니다. 이렇게 하면 Azure Resource Manager 모델을 증분 방식으로 채택할 수 있습니다.</p>
+
+
+  <p>많은 엔터프라이즈 고객은 ExpressRoute를 사용하여 프라이빗 네트워크를 Microsoft에 연결합니다. ExpressRoute는 35개 이상의 위치에서 글로벌 통신 공급자, 클라우드 교환 및 서비스 공급자의 대규모 에코시스템에서 지원됩니다. 현재는 최대 10Gbps의 처리량을 지원하는 <a href="https://azure.microsoft.com/en-us/documentation/articles/expressroute-about-virtual-network-gateways/" target="_blank">ExpressRoute용 UltraPerformance 게이트웨이 SKU</a> 를 소개합니다. 이는 가용성 SLA가 99.95%인 기존 ExpressRoute HighPerformance 게이트웨이보다 5배 향상된 기능입니다. UltraPerformance 게이트웨이를 사용하면 고객은 더 많은 네트워킹 집약적 서비스 및 워크로드를 가상 네트워크에 배포할 수 있습니다.</p>
+
+
+  <p>까다로운 네트워킹 및 대규모 실시간 데이터 액세스 요구 사항이 있는 클라우드 애플리케이션은 이러한 새로운 성능 향상을 통해 큰 이점을 얻을 수 있습니다. 워크로드에 대한 준비가 완료되었습니다.</p>
+
+
+  <h2>IPv6</h2>
+
+
+  <p>이제 Azure는 Azure Virtual Machines에서 호스트되는 애플리케이션 및 서비스에 대한 <a href="https://azure.microsoft.com/en-us/documentation/articles/load-balancer-ipv6-overview/?rnd=1" target="_blank">네이티브 IPv6 네트워크 연결을</a> 지원합니다. 새로운 규정 준수 규정과 함께 모바일 디바이스, 수십억 개의 IOT(사물 인터넷) 디바이스가 시장에 진입하면서 IPv6에 대한 수요가 그 어느 때보다 커졌습니다. IPv6는 3년 이상 Office 365 같은 내부 Microsoft 서비스 사용되었습니다. 이제 모든 Azure 고객에게 이 기능을 제공하고 있습니다. 가상 머신에 대한 네이티브 IPv6 연결은 Windows 및 Linux VM 모두에서 사용할 수 있습니다.</p>
+
+
+  <h2>고가용성</h2>
+
+
+  <p>High-Performance VPN 게이트웨이 SKU에 대한 새로운 <a href="https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-highlyavailable/" target="_blank">Active-Active VPN(Virtual Private Network) 게이트웨이</a> 는 프로덕션 워크로드에 권장됩니다. 가용성에는 고객&rsquo; 온-프레미스 VPN 디바이스를 포함하고 다른 서비스 공급자를 사용하여 Active-Active VPN Gateway에 연결하는 완전한 종단 간 관점이 필요합니다. 각 VPN 게이트웨이에는 두 개의 활성 인스턴스가 있습니다. 이제 고객은 프레미스 간 VPN 연결에 이중 중복성을 구현하여 Azure VNet에 대한 VPN 연결의 가용성을 높일 수 있습니다. 모든 고객은 새 Active-Active VPN Gateway를 채택하는 것을 고려해야 합니다.<br>
+
+  &nbsp;<br>
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0937be90-85bb-42cd-b463-282c7982a651.png"><img alt="AzureNetworkingActActGateways" border="0" height="149" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15f5d7d9-ad6f-4d5c-8400-4b4051916361.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworkingActActGateways" width="419"></a></p>
+
+
+  <p>고객은 Azure Load Balancer 구성에 더 많은 자유도가 필요합니다. 현재 디자인 유연성을 높이고, 새로운 시나리오를 사용하도록 설정하고, 효율적인 리소스 통합을 허용하기 위해 몇 가지 공지 사항을 발표하고 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/load-balancer-multivip-overview/">내부 부하 분산 장치에서 여러 VIP</a>의 일반 공급과 공용 및 내부 부하 분산 장치에서 새로운 포트 재사용 옵션을 발표합니다. 다음 주에는 특정 지역에서 두 가지 추가 기능을 미리 볼 예정입니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-network-multiple-ip-addresses-portal/">즉, NIC(네트워크 인터페이스 카드)의 여러 IP 주소</a> 와 VM의 모든 NIC가 NIC 또는 부하 분산 장치를 통해 공용 IP 주소를 가질 수 있도록 합니다. 이러한 기능의 가용성에 대한 <a href="https://azure.microsoft.com/en-us/updates/?product=virtual-network&amp;updatetype=&amp;platform=" target="_blank">서비스 업데이트 페이지를</a> 확인합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e38bbe0e-ab2a-4d13-9d99-601031a4863d.png"><img alt="AzureNetworking_4" border="0" height="216" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1a1b5e1f-fb4f-4f08-bd56-16d7c604c49d.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworking_4" width="377"></a><br>
+
+  NVA(네트워크 가상 어플라이언스)는 이제 보다 유연한 구성을 제공할 수 있습니다. 방화벽 어플라이언스는 동일한 백 엔드 머신을 사용하여 NIC 1의 인터넷 연결 서비스와 NIC 2의 내부 관리 서비스를 노출할 수 있습니다. 또한 NVA는 단일 NIC를 사용하여 고객/서비스당 개별 개인 IP 주소를 보호하여 여러 서비스를 호스트할 수 있습니다. 개별 IP 주소를 대상으로 하는 NSG 규칙을 사용하여 보안을 더욱 강화할 수 있습니다.</p>
+
+
+  <p>또 다른 사용 사례는 이제 미리 보기에서 사용할 수 있는 여러 수신기가 있는 SQL AlwaysOn입니다. 동일한 클러스터에서 여러 가용성 그룹을 호스트하고 활성 복제본 수를 최적화할 수도 있습니다.&nbsp;&nbsp;</p>
+
+
+  <h2>Azure DNS</h2>
+
+
+  <p><a href="https://azure.microsoft.com/documentation/articles/dns-overview/" target="_blank">Azure DNS</a>의 GA 릴리스를 발표합니다. 이제 고객은 Azure DNS에서 도메인을 호스트하고 다른 Azure 서비스와 동일한 자격 증명, API, 도구, 청구 및 지원을 사용하여 DNS 레코드를 관리할 수 있습니다.&nbsp; 또한 Azure DNS는 역할 기반 액세스 제어 및 자세한 감사 로그를 사용하도록 설정하는 Azure Resource Manager&rsquo; 엔터프라이즈급 보안 기능의 이점을 누릴 수 있습니다. Azure DNS는 A, AAAA, CNAME, MX, NS, PTR, SOA, SRV 및 TXT를 비롯한 여러 레코드 형식을 지원하며 99.99% 가용성 SLA와 함께 제공됩니다.</p>
+
+
+  <p>Azure DNS는 다중 지역 오류 또는 네트워크 분할의 경우에도 매우 높은 가용성을 제공하는 이름 서버의 글로벌 네트워크를 사용합니다.&nbsp; DNS 쿼리는 가능한 가장 빠른 쿼리 성능을 위해 사용 가능한 가장 가까운 DNS 서버에서 응답합니다.</p>
+
+
+  <p>AZURE DNS를 사용하면 IT 전문가가 <a href="https://azure.microsoft.com/documentation/articles/dns-getstarted-create-dnszone-portal/" target="_blank">Azure Portal</a>을 사용하거나 <a href="https://azure.microsoft.com/documentation/articles/dns-getstarted-create-dnszone/" target="_blank">Azure PowerShell</a> 또는 플랫폼 간 <a href="https://azure.microsoft.com/documentation/articles/dns-getstarted-create-dnszone-cli/" target="_blank">Azure CLI</a>를 사용하여 스크립팅을 통해 DNS 영역 및 레코드를 관리할 수 있습니다. 개발자는 Azure DNS <a href="https://msdn.microsoft.com/library/mt163862.aspx" target="_blank">REST API</a> 또는 <a href="https://azure.microsoft.com/documentation/articles/dns-sdk/" target="_blank">SDK</a> 를 사용하여 애플리케이션 워크플로의 일부로 DNS 레코드 프로비저닝을 자동화할 수 있습니다. 두 경우 모두 빠른 DNS 레코드 프로비저닝은 새 DNS 레코드가 이름 서버에 전파되기를 기다릴 필요가 없습니다. 고객은 SDK를 사용하여 애플리케이션 워크플로의 일부로 DNS 레코드 프로비저닝을 자동화할 수 있습니다.</p>
+
+
+  <h2>더 안전한</h2>
+
+
+  <p>작년에는 계층 7 부하 분산을 서비스로 제공하는 ADC(애플리케이션 배달 컨트롤러)인 Application Gateway를 도입했습니다. 이는 지역 간 부하 분산을 위한 Azure Traffic Manager(DNS 부하 분산 장치)를 보완하고 지역 내의 계층 4 부하 분산을 위한 Azure Load Balancer(가용성 집합) 지난 1년 동안 웹 애플리케이션 요구 사항을 더 잘 해결하기 위해 Application Gateway를 개선했습니다. 이러한 기능에는 SSL 종료, 라운드 로빈 부하 분산, 쿠키 기반 세션 선호도, URL 경로 기반 라우팅, 동일한 부하 분산 장치에서 여러 웹 애플리케이션을 호스트하는 기능, 액세스 및 성능 로그가 있는 풍부한 진단, WebSocket 지원, VM 확장 집합 지원 및 사용자 구성 가능한 상태 프로브를 정의하는 기능이 포함됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/49a66941-cf68-4cac-b885-5e44e296fa56.jpg"><img alt="AzureNetworking_5" border="0" height="302" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c478f938-309b-4aa9-adc9-ce74b4b1de64.jpg" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworking_5" width="405"></a></p>
+
+
+  <p>향상된 애플리케이션 보안을 제공하기 위한 지속적인 노력의 일환으로 Application Gateway는 이제 종단 간 SSL 암호화 및 사용자 구성 가능한 SSL 정책을 지원합니다. 고객은 Application Gateway에 설정된 라우팅 규칙을 활용하면서 SSL/TLS를 사용하여 사용자 요청에서 백 엔드로의 종단 간 통신을 보호할 수 있습니다. 사용자&rsquo; SSL 요청은 사용자가 구성한 라우팅 규칙을 적용한 다음 백 엔드로 보내기 전에 요청을 다시 암호화하는 게이트웨이에서 종료됩니다. 사용자가 구성할 수 있는 SSL 정책을 사용하면 고객이 이전 SSL/TLS 프로토콜 버전을 선택적으로 사용하지 않도록 설정하여 Application Gateway 뒤에 있는 애플리케이션의 보안 프로필을 더욱 강화할 수 있습니다.</p>
+
+
+  <p>SQL 삽입 또는 사이트 간 스크립팅 공격과 같은 일반적인 취약성으로부터 웹 애플리케이션을 보호하기 위한 고급 보안을 제공하기 위해 Application Gateway 서비스의 일부로 WAF(<a href="https://azure.microsoft.com/en-us/documentation/articles/application-gateway-introduction/" target="_blank">웹 애플리케이션 방화벽</a>)의 공개 미리 보기를 발표합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c3f2a433-848a-434e-9afb-320a8150976a.jpg"><img alt="AzureNetworking_6" border="0" height="193" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b9796efb-4dd4-42af-b0b7-be3ef06a0551.jpg" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworking_6" width="360"></a></p>
+
+
+  <p>Application Gateway WAF는 애플리케이션 보안의 간소화된 관리 효율성을 제공하며 <a href="https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project" target="_blank">OWASP(Open Web Application Security Project)</a> 상위 10가지 일반적인 취약성으로 식별되는 가장 널리 퍼진 웹 취약성으로부터의 보호로 미리 구성됩니다. 고객은 보호 또는 검색 전용 모드에서 Application Gateway WAF를 실행할 수 있습니다. 또한 Application Gateway WAF는 실시간 메트릭 및 경고 보고를 제공하여 악용에 대해 웹 애플리케이션을 지속적으로 모니터링합니다. Azure Security Center와의 보안 규칙 사용자 지정 및 통합은 곧 제공될 예정입니다.</p>
+
+
+  <h2>네트워크 모니터링 및 진단</h2>
+
+
+  <p>클라우드가 완성되기 시작하면 동일한 네트워킹 성능뿐만 아니라 온-프레미스 솔루션과 동일한 수준의 가시성 및 인사이트를 제공하는 것이 중요합니다.&nbsp; Microsoft는 모니터링 및 진단 기능을 지속적으로 향상하여 네트워크를 보다 쉽게 관리할 수 있도록 최선을 다하고 있습니다.</p>
+
+
+  <p>모니터링 및 진단에서 이전에 발표한 기능의 연속 &ndash;</p>
+
+
+  <ul>
+   <li>네트워크 보안 그룹 이벤트 및 카운터</li>
+   <li>SLB 리소스 소모 이벤트 및 프로브 상태</li>
+   <li>Application Gateway 성능 및 액세스 로그</li>
+   <li>모든 네트워킹 리소스에 대한 감사 로그</li>
+  </ul>
+
+
+  <p>일련의 새로운 기능을 출시하고 있습니다.</p>
+
+
+  <p>고객은 Azure Portal에서 Application Gateway에 대한 성능 메트릭을 볼 수 있습니다.&nbsp; 메트릭에는 추가 구성이 필요하지 않습니다. 현재 릴리스는 연속 집계 처리량 통계를 지원하며 추가 메트릭 지원은 곧 제공될 예정입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5b27e48c-b9df-4a3f-9ed5-36e1265d5f32.png"><img alt="AzureNetworking_7" border="0" height="200" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c10416dd-a4b9-46c4-a637-2db1b78c742f.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworking_7" width="420"></a></p>
+
+
+  <p>고객은 메트릭에 대한 임계값 기반 경고를 구성하여 네트워크를 사전에 모니터링할 수 있습니다. 경고는 전자 메일 알림을 보내거나 타사 메시징 서비스와 통합할 수 있는 웹 후크를 호출할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/be1c8e06-db8c-417e-b248-af3b628082f1.png"><img alt="AzureNetworking_8" border="0" height="263" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/72f71274-80cb-4501-910c-4ad8081719e2.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworking_8" width="157"></a></p>
+
+
+  <p>ExpressRoute 사용자는 라우팅 구성 및 네트워크 피어링 통계에 대한 운영 인사이트를 얻을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84cef5e2-bfbf-4251-8133-ce6de173ab5d.png"><img alt="AzureNetworking_11" border="0" height="129" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d862f286-1bb7-400e-8cd0-ab3f9200db7c.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworking_11" width="438"></a></p>
+
+
+  <p>NSG(네트워크 보안 그룹) 및 경로에 대한 향상된 진단을 통해 복잡한 네트워크 연결 문제를 더 잘 진단할 수 있습니다.&nbsp; 유효 경로는 VM&rsquo; 네트워크 트래픽 흐름에 영향을 주는 UDR(사용자 정의 경로), 시스템 및 BGP 경로의 집계된 보기를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d22c9ac8-fbda-42cd-aaae-5233f731bbdf.png"><img alt="AzureNetworking_9" border="0" height="224" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6e784967-c164-48e8-9fd2-825c7d21080d.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworking_9" width="413"></a></p>
+
+
+  <p>네트워크 보안 설정의 정확성을 쉽게 확인하는 기능이 중요합니다. 효과적인 보안 규칙 보기는 VM/NIC에 구성된 보안 규칙을 이해하는 포괄적이면서도 간단하면서도 직관적인 방법을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6c2c2f2e-72ea-4c5d-a59a-9f4c9cc3d948.png"><img alt="AzureNetworking_10" border="0" height="278" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/264c76a0-9035-44a3-a483-fb6b68ca08f1.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AzureNetworking_10" width="395"></a></p>
+
+
+  <p>앞으로 몇 달 안에 더 많은 기능을 기대할 수 있습니다.</p>
+
+
+  <h2>기대</h2>
+
+
+  <p>클라우드는 계속 발전하고 있으며 고객은 더 까다롭고 복잡한 워크로드를 배포하고 있습니다. 이러한 진화는 우리의 사명과 헌신이 끝점이 아니라 여정이라는 것을 의미합니다.&nbsp; 새로운 서비스, 기능 및 기능을 탐색하는 데 시간을 할애하고 요구 사항에 맞게 새로운 네트워킹 기술을 계속 만들고, 개선하고, 배포할 때 귀중한 피드백을 제공해 드리기를 바랍니다.</p>

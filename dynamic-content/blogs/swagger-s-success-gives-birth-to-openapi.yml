@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4a579bb5985b3ffa82afc33b4f9858d95b9d3737
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900214"
+Slug: swagger-s-success-gives-birth-to-openapi
+Title: Swagger의 성공으로 OpenAPI 탄생
+Summary: 지난 몇 년 동안 Swagger라는 API 설명 형식이 빠르게 추진력을 얻었습니다. 그것의 전체 잠재력에 도달 하기 위해 사양은 최근 소유자 Smartbear에 의해 기부 되었다, OpenAPI 이니셔티브 그룹에.
+Content: >-
+  <p>지난 몇 년 동안 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md">Swagger</a> 라는 API 설명 형식이 빠르게 추진력을 얻었습니다. &#39;최대한의 잠재력을 발휘하기 위해 이 사양은 최근 <a href="https://openapis.org/news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how">소유자 Smartbear가</a> <a href="https://openapis.org/">OpenAPI 이니셔티브</a> 그룹에 기부했습니다. OAI는 <a href="https://www.linuxfoundation.org/">Linux 재단</a> 의 청지기 직분에 따라 새로 형성 된 그룹이며, 후원 회원으로 마이크로 소프트, 구글, IBM, 페이팔, 아틀라시안, Captial One, Intuit, Smartbear 및 많은 다른 사람을 포함한다.</p>
+
+
+  <h2>Community 고삐를 잡습니다.</h2>
+
+
+  <p>커뮤니티에서 개발 중인 사양을 Smartbear가 소유한 도구와 구분하기 위해 Swagger 사양의 이름이 OpenAPI 사양으로 바뀌었습니다. 이제 Swagger라는 용어는 OpenAPI 사양을 사용하는 Smartbear가 소유한 <a href="https://github.com/swagger-api/">도구</a> 만을 나타냅니다. OpenAPI 사양에 대한 작업은 참여하려는 모든 사용자가 <a href="https://github.com/OAI/OpenAPI-Specification">Github 리포지토리</a> 에서 수행됩니다.</p>
+
+
+  <h2>모든 손이 도움이 됩니다.</h2>
+
+
+  <p>올해 초에 OpenAPI 기술 개발자 위원회에 참여했으며 정기 회의에 참여하여 문제에 대응하고, 새로운 문제를 만들고, PR을 검토하고, PR을 만들었습니다. <a href="https://azure.microsoft.com/en-us/services/api-management/">Azure API Management</a> 팀의 개발자로서 저는 매일 OpenAPI 사양을 정기적으로 사용합니다. 개발자가 현재 버전의 사양에 직면하고 있는 문제를 이해하고 다음 버전이 어디로 가는지 확인하면 Azure API Management를 고객에게 더 나은 제품으로 만드는 데 도움이 됩니다.</p>
+
+
+  <h2>그것은 마이크로 소프트&#39;혈액에서&#39;</h2>
+
+
+  <p>Microsoft는 많은 제품에서 OpenAPI 사양 버전 2.0을 기본 API 설명 형식으로 채택했습니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/api-management-howto-import-api/">Azure API Management</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/connectors-native-http-swagger/">Logic Apps</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-api-dotnet-get-started/">API Apps</a>, <a href="https://powerapps.microsoft.com/en-us/tutorials/customapi-how-to-swagger/">Power Apps</a>, <a href="https://powerapps.microsoft.com/en-us/tutorials/customapi-how-to-swagger/">Microsoft Flow</a>, <a href="https://blogs.msdn.microsoft.com/visualstudio/2015/03/24/introducing-the-azure-api-apps-tools-for-visual-studio-2013/">Visual Studio</a> 및 <a href="https://github.com/Azure/autorest/blob/master/Documentation/defining-clients-swagger.md">AutoREST</a>는 모두 OpenAPI를 지원하지만 대부분의 지역에서는 Swagger라는 용어가 여전히 사용됩니다.</p>
+
+
+  <h2>변경 없이는 진행이 불가능합니다.</h2>
+
+
+  <p>지난 8개월 동안 핵심 팀과 많은 커뮤니티 구성원이 OpenAPI 사양에 주요 업데이트를 도입하기 위해 노력해 왔습니다. <a href="https://github.com/OAI/OpenAPI-Specification/blob/OpenAPI.next/versions/3.0.md">OpenAPI V3.0</a> 은 이제 안정화되기 시작했으며 팀은 2017년 1월에 새 버전을 출시하는 것을 목표로 하고 있습니다.</p>
+
+
+  <h2>모두를 위한 것</h2>
+
+
+  <p>새 버전에서는 <a href="https://openapis.org/news/blogs/2016/10/tdc-structural-improvements-explaining-30-spec-part-2">문서의 전체 구조를 간소화했습니다</a>. API를 문서화하고 예제를 제공하는 새로운 방법이 추가되었습니다. API를 호스트하기 위한 보다 유연한 옵션이 있습니다. 이제 요청 및 응답 페이로드를 <a href="https://openapis.org/news/blogs/2016/10/tdc-request-parameters-explaining-30-spec-part-3">더 간단하고 유연한 방법으로</a> 설명할 수 있습니다. 이제 URI 매개 변수는 <a href="https://tools.ietf.org/html/rfc6570">URI 템플릿</a> 에서 정의한 기능을 더 많이 지원하며 JSON 스키마 사용에 적용되는 많은 제한 사항이 해제되었습니다.</p>
+
+
+  <p>2.0 사양에서 API를 설명하는 방법에 대한 이러한 개선 사항 외에도 완전히 새로운 시나리오를 지원하기 위한 향상된 기능도 있습니다. 이제 새 콜백 개체를 사용하여 웹후크를 설명할 수 있습니다. 작업 간의 관계를 정적으로 설명할 수 있도록 연결 개념이 추가되었습니다. 이렇게 하면 설명서에서 훨씬 더 많은 컨텍스트 정보를 제공하고 클라이언트 라이브러리가 훨씬 더 사용자 친화적일 수 있는 기회를 제공해야 합니다.</p>
+
+
+  <h2>더 많은 작업 진행</h2>
+
+
+  <p>사양을 완료하는 데는 여전히 상당한 양의 작업이 남아 있으며, 모든 문제를 종결된 것으로 간주하기 전에 도구에서 상당한 작업이 수행될 것으로 예상됩니다. 그러나 현재까지의 진행률이 양호했으며 목표 완료 날짜는 달성 가능한 것으로 보입니다.</p>
+
+
+  <h2>연락 유지, 참여</h2>
+
+
+  <p>자세한 내용은 <a href="https://openapis.org/news-faq/blog">OAI 블로그</a> 를 팔로우하고 계획된 변경 내용에 대한 추가 게시물을 확인하세요. <a href="https://github.com/OAI/OpenAPI-Specification">Github 리포지토리</a>를 확인하여 문제에 대한 피드백을 제공하고, 변경 요청을 끌어오고, 제품 및 도구에 대한 3.0 지원을 사용하고 있는지 팀에 알리는 것을 주저하지&#39;.</p>

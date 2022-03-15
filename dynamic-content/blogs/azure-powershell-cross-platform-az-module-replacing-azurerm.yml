@@ -1,0 +1,86 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f2e01ee592309fa55e1bee126b935277ddca3439
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906543"
+Slug: azure-powershell-cross-platform-az-module-replacing-azurerm
+Title: Azure PowerShell – "AzureRM"을 대체하는 플랫폼 간 "Az" 모듈
+Summary: PowerShell Core 및 Cloud Shell의 기능을 활용하고 PowerShell 5.1과의 호환성을 유지하기 위해 빌드된 새로운 Azure PowerShell 모듈이 있습니다. 이름은 Az입니다.
+Content: >-
+  <p>PowerShell Core 및 Cloud Shell의 기능을 활용하고 PowerShell 5.1과의 호환성을 유지하기 위해 빌드된 새로운 Azure PowerShell 모듈이 있습니다. 이름은 Az입니다. Az는 PowerShell 및 PowerShell Core 사용자가 모든 플랫폼의 모든 PowerShell에서 최신 Azure 도구를 얻을 수 있도록 합니다. 또한 Az는 Azure PowerShell cmdlet 및 모듈 이름을 간소화하고 정규화합니다. Az는 Azure Cloud Shell에서 제공되며 PowerShell 갤러리에서 사용할 수 있습니다.&nbsp;</p>
+
+
+  <p>릴리스, 타임라인 및 호환성 기능에 대한 자세한 내용은 <a href="https://aka.ms/azps-announce" target="_blank">GitHub 공지 페이지를</a> 참조하세요.</p>
+
+
+  <h2>Az 모듈 기능</h2>
+
+
+  <ul>
+      <li>Az는 AzureRM 및 AzureRM.Netcore를 대체합니다.</li>
+      <li>Az는 PowerShell 5.1 및 PowerShell Core에서 실행됩니다.</li>
+      <li>Az는 Azure 서비스에 대한 최신 도구를 항상 최신 상태로 유지합니다.</li>
+      <li>Az는 Cloud Shell에 제공됩니다.</li>
+      <li>Az는 cmdlet 이름을 단축하고 정규화합니다. 모든 cmdlet은 Az&quot;를 명사 접두사로 사용합니다&quot;.</li>
+      <li>Az는 모듈 이름을 단순화하고 정규화합니다. 각 서비스에 대한 데이터 평면 및 관리 평면 cmdlet은 동일한 Az 모듈을 사용합니다.</li>
+      <li>Az는 AzureRM과 스크립트 호환성을 사용하도록 설정하는 새 cmdlet과 함께 제공됩니다(Enable/Disable-AzureRmAlias).</li>
+  </ul>
+
+
+  <h2>지원되는 플랫폼</h2>
+
+
+  <ul>
+      <li>.Net Framework 4.7.2 이상이 설치된 PowerShell 5.1 &ndash; Windows 7 이상</li>
+      <li>PowerShell Core 6.0 &ndash; Windows, Mac OS, Linux</li>
+      <li>PowerShell Core 6.1 &ndash; Windows, Mac OS, Linux</li>
+  </ul>
+
+
+  <h2>Az 설치</h2>
+
+
+  <p><a href="https://www.powershellgallery.com/packages/Az/" target="_blank">PowerShell 갤러리에서 Az를 설치할</a> 수 있습니다.</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp; PS C:\&gt; Install-Module Az</p>
+
+
+  <p>AzureRM과 함께 Az를 설치 <strong>하면 안</strong> 됩니다. <strong>Az를 설치하기 전에 모든 AzureRM 모듈을 제거합니다.</strong></p>
+
+
+  <h2>AzureRM과의 호환성</h2>
+
+
+  <p>Az를 사용하여 AzureRM용으로 개발된 스크립트를 실행하려면 Enable/Disable-AzureRmAlias cmdlet을 사용하여 AzureRM cmdlet에서 Az cmdlet으로 별칭을 추가하거나 제거합니다.</p>
+
+
+  <pre>
+
+  Enable-AzureRmAlias [-Module &lt;string&gt;] [-Scope Process | CurrentUser | LocalMachine]</pre>
+
+
+  <p>지정된 모듈에 대한 AzureRM cmdlet 별칭(또는 모듈이 지정되지 않은 경우 모든 모듈)을 현재 세션(기본값), 현재 사용자에 대한 모든 세션 또는 컴퓨터의 모든 세션에 추가합니다.</p>
+
+
+  <pre>
+
+  Disable-AzureRmAlias [-Module &lt;string[]&gt;] [-Scope Process | CurrentUser | LocalMachine]</pre>
+
+
+  <p>현재 세션(기본값), 현재 사용자에 대한 모든 세션 또는 컴퓨터의 모든 세션에서 지정된 모듈(또는 모듈이 지정되지 않은 경우 모든 모듈)에 대한 AzureRM cmdlet 별칭을 제거합니다.</p>
+
+
+  <p><a href="https://aka.ms/azps-announce" target="_blank">Az의 호환성 기능에</a> 대해 자세히 알아봅니다.&nbsp;</p>
+
+
+  <h2>추가 정보</h2>
+
+
+  <ul>
+      <li>Az는 현재 미리 보기로 제공되며, 올해 하반기에 모든 Azure PowerShell 도구에 권장되는 모듈로 AzureRM을 대체할 예정입니다. <a href="https://aka.ms/azps-announce#migrating-from-azurerm" target="_blank">제품 로드맵</a>에 대해 자세히 알아보세요.</li>
+      <li>Az는 오픈 소스이며 <a href="https://github.com/azure/azure-powershell" target="_blank">GitHub Azure PowerShell 소스 코드 리포지토리를</a> 사용합니다.</li>
+      <li>새 모듈에 대한 질문, 의견 또는 문제가 있는 경우 <a href="https://github.com/azure/azure-powershell/issues" target="_blank">GitHub</a> 관련 내용을 알려주세요.</li>
+  </ul>

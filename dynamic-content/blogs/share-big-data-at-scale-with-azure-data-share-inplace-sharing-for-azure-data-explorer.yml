@@ -1,0 +1,69 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1377dc226895178a8530f9ba73e17ff1606ee457
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900709"
+Slug: share-big-data-at-scale-with-azure-data-share-inplace-sharing-for-azure-data-explorer
+Title: Azure Data Explorer에 대한 Azure Data Share 현재 위치 공유를 사용하여 대규모 빅 데이터 공유
+Summary: 이제 일반 공급되는 Azure Data Explorer에 대한 Azure Data Share 현재 위치 공유를 사용하면 내부 부서와 외부 파트너, 공급업체 또는 고객과 거의 실시간 공동 작업을 위해 빅 데이터를 쉽고 안전하게 공유할 수 있습니다.
+Content: >-
+  <p><em>이 게시물은 지펑 수석 프로그램 매니저와 수미 벤키타라만 수석 제품 관리자가 공동 저술한 Microsoft Azure.</em></p>
+
+
+  <p><a href="https://azure.microsoft.com/services/data-share/" target="_blank">Microsoft Azure 데이터 공유</a>는 조직이 데이터를 현재 위치 또는 데이터 스냅샷으로 공유할 수 있도록 하여 대규모로 데이터를 공유하는 개방적이고 쉽고 안전한 방법입니다. <a href="https://azure.microsoft.com/services/data-explorer/" target="_blank">Microsoft Azure Data Explorer</a>는 원격 분석, 시계열 및 로그 데이터를 위한 빠르고 확장성이 뛰어난 데이터 분석 서비스입니다.</p>
+
+
+  <p>디지털 트랜스포메이션에 힘입어 현대 조직은 점점 더 유동적인 데이터 공유를 가능하게 하여 비즈니스 의사 결정을 주도하고자 합니다. 부서 간 및 조직 간 협업을 위해 데이터를 원활하게 공유하면 엄청난 경쟁 우위를 점할 수 있습니다. 그러나 제어 및 가시성을 유지하는 것은 여전히 어려운 목표입니다. 오늘날에도 FTP(파일 전송 프로토콜), API(애플리케이션 프로그래밍 인터페이스), USB 디바이스 및 전자 메일 첨부 파일을 사용하여 데이터를 공유합니다. 이러한 메서드는 단순히 안전하지 않고, 제어할 수 없으며, 비효율적입니다.</p>
+
+
+  <p>이제 일반 공급되는 Azure Data Explorer에 대한 Azure Data Share 현재 위치 공유를 사용하면 내부 부서와 외부 파트너, 공급업체 또는 고객과 거의 실시간 공동 작업을 위해 빅 데이터를 쉽고 안전하게 공유할 수 있습니다.</p>
+
+
+  <p>데이터 공급자가 데이터를 공유하면 수신자(데이터 소비자)는 추가 개입 없이 항상 최신 데이터를 갖습니다. 또한 데이터 공급자는 공유에 대한 제어를 유지 관리하며, 필요에 따라 액세스를 취소할 수 있습니다. 데이터 공급자는 모든 공유 관계를 중앙에서 관리할 수 있으므로 공유되는 데이터와 공유 대상을 완전히 제어할 수 있습니다. 주문형으로 확장할 수 있는 완전 관리형 환경 내에서 작동하는 데이터 공급자는 데이터 공유가 인프라를 관리하는 동안 논리에 집중할 수 있습니다.</p>
+
+
+  <p>고객이 말하는 내용은 다음과 같습니다.</p>
+
+
+  <p style="margin-left: 40px;"><i>&ldquo;클라이언트는 데이터에 쉽고, 원활하고, 안전하게 연결한 다음, 고유한 사용자 지정 보고서 및 분석을 빌드하는 기능을 좋아합니다. 또한 Azure Data Explorer 및 Azure Data Share와 거의 실시간으로 공유하여 데이터 보안을 손상시키지 않고 조직 간 데이터 공동 작업을 허용합니다.&rdquo; </i>&mdash;Paul Stirpe, CTO, Financial Fabric</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;&rsquo;Azure Data Explorer 및 Azure Data Share와의 현재 위치 공유를 활용하게 되어 매우 기쁩니다. 관련자에게 거의 실시간으로 액세스할 수 있는 기능을 통해 개발의 우선 순위를 지정&nbsp;하고 고객 가동 시간을 개선할 수 있습니다. 또한 데이터 개인 정보 보호&nbsp;에 중점을 두고 핵심 인프라에 성능에 영향을 주지 않고 원격 분석 데이터를 안전하고 쉽게 분석할 수 있었습니다.&rdquo;&nbsp;</em>&mdash; Saajan Patel, IT 제품 관리자, 다임러 트럭 북미</p>
+
+
+  <h2>현재 위치 데이터 공유의 작동 방식<b> </b></h2>
+
+
+  <p>데이터 공급자는 공유하려는 Azure Data Explorer 클러스터 또는 데이터베이스, 공유할 사용자 및 사용 약관을 지정하여 공유를 시작할 수 있습니다. 다음으로, Data Share 서비스는 공유를 수락할 수 있는 데이터 소비자에게 전자 메일 초대를 보냅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5de6c4a5-cd88-4e4d-81ec-887e1437b4f6.png"><img alt="In-place sharing with Azure Data Share." border="0" height="257" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6e148026-f4e6-46f6-aa08-a6067b617286.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Data Share와 현재 위치 공유." width="400"></a></p>
+
+
+  <p>공유 관계가 설정되면 Data Share는 공급자와 소비자&#39;Azure Data Explorer 클러스터 간에 기호 링크를 만듭니다. 이렇게 하면 데이터 소비자가 거의 실시간으로 데이터를 읽고 쿼리할 수 있습니다. 데이터에 대한 액세스는 소비자&#39;Azure Data Explorer 클러스터의 컴퓨팅 리소스를 사용합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7edc3b1c-26fe-46d0-a186-943e5d881d30.png"><img alt="Effortless near real-time collaboration with Azure Data Share and Azure Data Explorer." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1dcd141a-1611-4731-b3f7-284a5400864e.png" style="border: 0px currentcolor; display: inline; background-image: none; width: 600px; height: 367px;" title="Azure Data Share 및 Azure Data Explorer를 사용하여 거의 실시간으로 쉽게 공동 작업할 수 있습니다."></a></p>
+
+
+  <p>Azure Data Explorer를 사용하면 데이터가 클러스터 내의 컴퓨팅 노드에 캐시, 인덱싱 및 배포되고 Azure Storage에 유지됩니다. 컴퓨팅 및 스토리지가 분리되므로 원본 클러스터의 성능 및 보안에 영향을 주지 않고 다양한 캐싱 정책 집합을 사용하여 여러 사용 클러스터를 동일한 원본 스토리지에 연결할 수 있습니다.</p>
+
+
+  <p>내부 공유 기능은 내부 부서 또는 외부 파트너 및 고객과의 거의 실시간 빅 데이터 공동 작업을 찾는 조직을 위한 게임 체인저입니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>Azure Data Explorer에 대한 Azure Data Share 현재 위치 공유를 사용하여 자세히 알아보고 지금 시작하려면 다음 리소스를 참조하세요.</p>
+
+
+  <ul>
+      <li>Azure <a href="https://www.youtube.com/watch?v=Q3MJv90PegE" target="_blank">Data Explorer에서 데이터를 공유하는 방법인 Azure</a> Friday 비디오를 시청하세요.</li>
+      <li>빠른 시작 가이드, <a href="https://docs.microsoft.com/azure/data-explorer/create-cluster-database-portal" target="_blank">Azure Data Explorer 클러스터 및 데이터베이스 만들기</a>를 읽어보세요.</li>
+      <li><a href="https://docs.microsoft.com/azure/data-explorer/data-share" target="_blank">Azure Data Share를 사용하여 Azure Data Explorer와 데이터를 공유합니다</a>.</li>
+      <li><a href="https://customers.microsoft.com/story/825356-financial-fabric-banking-and-capital-markets-azure-powerbi-en-united-states" target="_blank">재무 패브릭 사례 연구를</a> 참조하세요.</li>
+      <li><a href="https://techcommunity.microsoft.com/t5/azure-data-share/share-iot-and-log-data-in-real-time-using-azure-data-share-and/ba-p/1141419" target="_blank">Azure Data Share 및 Azure Data Explorer 블로그를 사용하여 실시간으로 공유 IoT 및 로그 데이터를</a> 읽습니다.</li>
+  </ul>

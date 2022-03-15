@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b13462d828f08cf9366d396f1c423e1efc9d70ab
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907301"
+Slug: azure-relay-cross-platform-open-protocol-connections
+Title: Azure Relay – 플랫폼 간, 개방형 프로토콜 연결
+Summary: 'Azure Relay 서비스는 Azure에서 사용할 수 있는 초기 핵심 서비스 집합 중 하나였으며 Azure에서 실행되는 많은 현재 솔루션에 대한 기본 하이브리드 클라우드 통합 도구입니다. '
+Content: >-
+  <p>Azure Relay 서비스는 Azure에서 사용할 수 있는 초기 핵심 서비스 집합 중 하나였으며 Azure에서 실행되는 많은 현재 솔루션에 대한 기본 하이브리드 클라우드 통합 도구입니다. 릴레이를 사용하면 클라우드와 온-프레미스 자산 간 또는 클라우드를 매치메이커로 사용하는 여러 사이트 간에 안전하고 원활한 통신을 할 수 있습니다. 릴레이는 애플리케이션 수준에서 작동하여 NAT(네트워크 주소 변환) 경계 및 방화벽을 통과하고 네트워킹 환경에 대한 침입적인 변경 없이 엔드포인트 검색을 완전히 수행할 수 있습니다.</p>
+
+
+  <p>오늘 저희가 가지고 있는 첫 번째 좋은 소식은 Event Hubs 및 Service Bus Messaging을 제공하는 동일한 팀에서 개발하고 유지 관리하는 Relay 서비스가 이제 최신 Azure Portal에서 관리 및 모니터링에 사용할 수 있고 릴레이와 같은 독립 실행형 서비스로 사용할 수 있다는 것입니다.</p>
+
+
+  <p>그러나 우리는 더 큰 소식을 가지고 있습니다.</p>
+
+
+  <p>지금까지 Azure Relays&rsquo; 기능은 특정 런타임 및 플랫폼인 Windows 실행되는 전체 .NET Framework 사용해야 합니다. WCF 통신 프레임워크를 사용하는 데 필요한 릴레이된 서비스 빌드 &rsquo;수년에 걸쳐 클라이언트와 서비스에서 이러한 기능을 강력하게 만들기 위해 많은(종종 보이지 않는) 작업을 수행했으며, WCF 릴레이 기능 이름으로 계속 제공할 것입니다. 현재 WCF에서 릴레이 기능을 사용하는 경우&rsquo; 아무 것도 변경되지 않습니다.</p>
+
+
+  <p>Windows 이외의 플랫폼에서 앱을 빌드하거나 원하는 언어, 런타임 또는 프레임워크를 사용하는 경우 모든 것이 변경됩니다&ndash;.</p>
+
+
+  <p>현재 하이브리드&rsquo; 연결이라는 차세대 플랫폼 간 및 오픈 프로토콜 Azure Relay 기능의 공개 미리 보기를 발표하고 공개합니다.</p>
+
+
+  <h3>하이브리드 연결</h3>
+
+
+  <p>릴레이의 하이브리드 연결 진화는 HTTPS 및 WebSocket을 기반으로 하므로 온-프레미스 설정의 방화벽 뒤에 있는 리소스와 서비스를 클라우드 또는 다른 자산의 서비스와 안전하게 연결할 수 있습니다.</p>
+
+
+  <p>WebSockets 프로토콜을 기반으로 하여 특정 프레임워크의 특수성에 방해받지 않는 안전한 양방향 및 이진 통신 채널을 제공하므로 Apache Thrift, Apache Avro, Microsoft Bond 등과 같은 많은 기존 및 최신 RPC 프레임워크와 쉽게 통합할 수 있습니다. 또한 데이터베이스, 원격 데스크톱 또는 셸 연결을 릴레이하여 몇 가지 예제의 이름을 지정하는 스트림 통신 브리지를 위한 훌륭한 기반이기도 합니다.</p>
+
+
+  <p>하이브리드 연결은 Relay 서비스의 강력한 보안 모델을 활용하고 릴레이 솔루션이 현재 사용하는 검증된 부하 분산 및 장애 조치 기능을 제공합니다.</p>
+
+
+  <p>샘플의 초기 집합과 클라이언트 코드는 현재 GitHub C# 및 JavaScript(Node)에 사용할 수 있으며, 일반 상용 가용성을 위해 노력하면서 더 많은 언어 바인딩을 제공할 것입니다. C# 샘플은 이미 Thrift 및 Avro와의 통합을 보여 줍니다.&rsquo; 이를 가능하게 하기 위한 전체 프로토콜 설명서는 이제&nbsp; <a href="https://azure.microsoft.com/documentation/articles/relay-hybrid-connections-protocol/">Azure Documentation Center</a>에서 사용할 수 있습니다&nbsp;.</p>
+
+
+  <h3>하이브리드 연결 및 BizTalk Services</h3>
+
+
+  <p>또한 이 하이브리드 연결 기능은 최신 버전이지만 <a href="https://azure.microsoft.com/en-us/services/biztalk-services/">BizTalk Services</a> 가져온 하이브리드 연결 기능과는 별개의 버전이라는 점에 유의해야 합니다. 해당 특정 기능은 청구 및 사용 방법을 변경하지 않고 현재와 같이 계속 실행됩니다.</p>

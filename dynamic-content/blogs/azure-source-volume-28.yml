@@ -1,0 +1,232 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fa1896632000fce2beddca2de36e8b977e6df9ef
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899915"
+Slug: azure-source-volume-28
+Title: Azure.Source - 볼륨 28
+Summary: 현재 미리 보기 상태, 일반 공급, 뉴스 & 업데이트 등을 포함하여 Azure에서 발생하는 작업을 최신 상태로 유지합니다.
+Content: >-
+  <h2>RSA 컨퍼런스 2018의 Azure 보안 뉴스</h2>
+
+
+  <p>지난 주, 샌프란시스코에서 열린 <a href="https://www.rsaconference.com/events/us18">RSA Conference 2018</a>과 함께 몇 가지 Azure Security 공지 사항을 발표했습니다.</p>
+
+
+  <ul>
+   <li>
+   <p><a href="https://azure.microsoft.com/en-us/blog/introducing-microsoft-azure-sphere-secure-and-power-the-intelligent-edge/">Microsoft Azure Sphere 소개: 지능형 에지 </a> - Microsoft Azure Sphere의 보안 및 전원을 공급하는 것은 매우 안전한 MCU(인터넷 연결 마이크로 컨트롤러) 디바이스를 만들기 위한 새로운 솔루션입니다. Azure Sphere에는 지능형 에지에서 디바이스를 보호하고 전원을 공급하기 위해 함께 작동하는 세 가지 구성 요소인 Azure Sphere 인증 MCU(마이크로 컨트롤러), Azure Sphere OS 및 Azure Sphere Security Service가 포함되어 있습니다.</p>
+
+   <table>
+    <tbody>
+     <tr>
+      <td align="center" width="300">
+      <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/lki7HOOkFjU?rel=0" width="240"></iframe></p>
+      </td>
+      <td valign="top">
+      <p><strong><a href="https://www.youtube.com/watch?v=lki7HOOkFjU">Microsoft Azure Sphere 리더십 비전</a> </strong> - Microsoft 제품 및 비즈니스 리더는 보안 및 새로운 소비자 환경을 지능형 에지의 완전히 새로운 디바이스 클래스로 확장하는 Microsoft의 최신 IoT 제품인 Azure Sphere를 소개합니다.</p>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   </li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/the-3-ways-azure-improves-your-security/">Azure에서 보안을 </a> - 개선하는 3가지 방법 Azure가 Microsoft에서 제공하는 보안 기반, 전체 스택에서 보안을 신속하게 구성하는 데 도움이 되는 기본 제공 보안 컨트롤, 데이터를 보호하고 위협에 실시간으로 대응할 수 있도록 클라우드 규모의 고유한 인텔리전스를 제공하는 세 가지 주요 영역에서 &ndash; Azure가 어떻게 가치를 제공하는지 알아봅니다.</li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/announcing-new-azure-security-center-capabilities-at-rsa-2018/">RSA 2018에서 새로운 Azure Security Center 기능 발표</a> - Azure Security Center는 리소스의 보안 상태에 대한 중앙 집중식 가시성을 제공하고 기계 학습 및 고급 분석의 집단 인텔리전스를 사용하여 위협을 신속하게 감지할 뿐만 아니라 이를 방지하는 데 도움을 줍니다. 새 개요 대시보드는 구독 수준 대신 조직 수준에서 보안 상태에 대한 가시성을 제공하고, 이제 보안 구성을 가상 머신 환경에 통합하고, 위협에 대한 노출을 줄이고 위협을 신속하게 감지 및 대응하는 새로운 기능, Palo Alto Networks 및 McAfee의 새로운 파트너 솔루션을 제공합니다.</li>
+   <li><a href="https://cloudblogs.microsoft.com/enterprisemobility/2018/04/17/password-less-sign-in-to-windows-10-azure-ad-using-fido2-is-coming-soon-plus-other-cool-news/">FIDO2를 사용하여 Azure AD를 Windows 10 암호 없는 Sign-In &amp; 곧 제공될 예정입니다(기타 멋진 소식).</a> -FIDO2 보안 키를 사용하는 암호 없는 로그인의 제한된 미리 보기는 모든 Azure AD 보호 클라우드 리소스에 대한 Single Sign-On 액세스를 포함하는 Windows 10 대한 다음 업데이트에서 사용할 수 있습니다. Azure AD 조건부 액세스 정책은 이제 Windows Defender Advanced Threat Protection에서 보고한 디바이스 상태를 확인할 수 있습니다. 이제 Azure AD 액세스 검토, Privileged Identity Management 및 사용 약관 기능이 모두 일반 공급됩니다. 도메인 허용 및 거부 목록이 추가되면서 Azure AD B2B 협업을 통해 작업하는 파트너 조직을 제어할 수 있습니다.</li>
+   <li>Azure Portal - <a href="https://azure.microsoft.com/en-us/blog/streamlining-gdpr-requests-with-the-azure-portal/">을 사용하여 GDPR 요청 간소화</a> 새 Azure Portal DSR(데이터 주체 요청) 기능은 DSR을 충족하는 데 도움이 됩니다. 이를 사용하여 데이터 주체와 관련된 정보를 식별할 수 있으며 시스템 생성 로그에 대해 DSR을 실행할 수 있습니다(지정된 서비스를 제공하기 위해 Microsoft에서 생성하는 데이터). Azure를 사용하면 제공된 다양한 서비스에서 기존 API(애플리케이션 프로그래밍 인터페이스) 및 UI(사용자 인터페이스)를 통해 고객 데이터(사용자와 사용자가 업로드하거나 만드는 데이터)에 대해 DSR을 처리할 수 있습니다.</li>
+   <li><a href="https://cloudblogs.microsoft.com/microsoftsecure/2018/04/17/connect-to-the-intelligent-security-graph-using-a-new-api/">새 API를 사용하여 지능형 보안 Graph 커넥트</a> Microsoft는 보안 API - 의 공개 미리 보기를 발표하여 고객과 파트너가 지능형 보안 Graph 구축할 수 있도록 합니다. 보안 API는 Microsoft 제품 및 서비스의 데이터와 인텔리전스를 통합하기 위한 통합된 rest API인 Microsoft Graph 일부입니다. 보안 API는 Anomali, Palo Alto Networks 및 PwC와 같은 통합 파트너가 지능형 보안 Graph 사용하여 빌드할 수 있는 새로운 가능성을 열어줍니다. 또한 고객 관리 서비스 공급자 및 기술 파트너는 보안 API를 활용하여 다양한 애플리케이션을 빌드하고 통합할 수 있습니다.</li>
+  </ul>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/373e7dc5-39e9-4598-8f12-c3ef7d6ddb9b.png"><img alt="Microsoft Graph Security API block diagram" border="0" height="252" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b47d154b-c944-4a8f-b71e-9ac2b9e19fc4.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Microsoft Graph Security API 블록 다이어그램" width="500"></a></p>
+
+
+  <ul>
+   <li><a href="https://cloudblogs.microsoft.com/enterprisemobility/2018/04/17/announcing-new-microsoft-azure-information-protection-policy-decision-point-capabilities-with-ionic-security/">Ionic Security를 사용하여 새로운 Microsoft Azure Information Protection 정책 결정 지점 기능 발표</a> - AIP(Azure Information Protection)로 보호되는 파일은 중요한 파일에 대한 보안을 더욱 강화합니다. AIP 및 Azure Active Directory(AAD)의 통합을 통해 조건부 액세스를 설정하여 AIP로 보호된 문서에 대한 액세스를 허용하거나 차단하거나 중요한 문서에 액세스하려는 사용자의 디바이스, 위치 또는 위험 점수를 기반으로 MFA(Multi-Factor Authentication) 또는 디바이스 등록과 같은 추가 보안 요구 사항을 적용할 수 있습니다. Azure Active Directory 조건부 액세스 확장성 기능은 오늘날 고객이 직면한 가장 큰 두 가지 과제인 유용성 및 정책 일관성을 해결하는 데 도움이 됩니다. Azure Active Directory 조건부 액세스 확장성 기능을 사용하여 고객이 AIP 레이블별로 외부화된 정책을 적용하도록 선택할 수 있는 모델을 빌드하고 있습니다. Ionic Securitys&rsquo; 클라우드 간 데이터 트러스트 플랫폼은 새로운 확장성 서비스를 가리키는 외부 의사 결정 지점의 첫 번째 공급자입니다.</li>
+   <li><a href="https://cloudblogs.microsoft.com/microsoftsecure/2018/04/16/tapping-the-intelligent-cloud-to-make-security-better-and-easier/">지능형 클라우드를 탭하여 보안 향상 및 간편</a> - 화 고객과의 대화는 클라우드 서비스를&rsquo; 채택할 때 자산을 안전하게 유지할 수 있는지 묻는 &lsquo;것에서부터 보안 태세를 개선하기 위해 클라우드 서비스를 채택하고 있다고 선언&lsquo;하는 것까지 진행되었습니다.&rsquo; 기업이 클라우드에서 에지로 자산을 더 쉽게 보호할 수 있도록 고유한 클라우드 및 인텔리전스 기능을 기반으로 하는 새로운 기술과 프로그램에 대해 자세히 알아봅니다.</li>
+  </ul>
+
+
+  <h2>이제 미리 보기로</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/programmatically-create-enterprise-subscriptions-preview/">미리 보기: ARM API를 사용하여 프로그래밍 방식으로 Azure 엔터프라이즈 구독 만들기</a> - 이제 EA(기업계약)의 Azure 고객으로서 프로그래밍 방식으로 EA(MS-AZR-0017P) 및 EA 개발/테스트(MS-AZR-0148P) 구독을 만들 수 있습니다. 다른 사용자 또는 서비스 사용자에게 사용자 계정에 청구되는 구독을 만들 수 있는 권한을 부여하려면 등록 계정에 대한 RBAC(역할 기반 액세스 제어) 액세스를 제공합니다.</p>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-ddos-protection-for-virtual-networks-generally-available/">가상 네트워크에 대한 Azure DDoS Protection 일반 공급</a> - Azure VNet(Virtual Networks)과 통합되고 DDoS 공격의 영향에 대한 Azure 리소스에 대한 보호 및 방어를 제공하는 Azure DDoS Protection 표준 서비스는 이제 모든 퍼블릭 클라우드 지역에서 일반 공급됩니다. 기본 보호는 기본적으로 추가 비용 없이 Azure 플랫폼에 통합됩니다. Azure DDoS Protection 표준은 가상 네트워크에 배포된 애플리케이션 및 리소스에 대해 향상된 DDoS 완화 기능을 제공합니다. 잘 심사된 DDoS 인시던트 관리 대응 계획을 수립하는 데 도움을 주기 위해 <a href="https://aka.ms/ddosbest">모범 사례 참조 아키텍처 가이드를 &amp;</a>게시했습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4e38d025-7b43-40ee-94d8-6dfe3a69b4f3.png"><img alt="Azure DDoS Protection diagram" border="0" height="172" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4f505745-8d8a-445d-bf98-082c7b39ce81.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure DDoS Protection 다이어그램" width="640"></a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-service-fabric-announcing-reliable-services-on-linux-and-rhel-support/">Linux 및 RHEL 지원 Service Fabric &ndash; Reliable Services를 발표하는 Azure</a> Service Fabric 핵심 Azure 인프라뿐만 아니라 비즈니스용 Skype, Intune, Azure Event Hubs, Azure Data Factory, Azure와 같은 기타 Microsoft 서비스 지원하는 기본 기술입니다.- DB, Azure SQL Database, Dynamics 365 및 Cortana Cosmos. 최근에는 고객이 제품의 개발 및 방향에 참여할 수 있는 기회를 늘리기 위해 MIT 라이선스로 소스 Service Fabric 오픈했습니다. Service Fabric 런타임 v6.2 릴리스 및 해당 SDK 및 도구 업데이트에 대해 자세히 알아봅니다.</p>
+
+
+  <h3>일반 공급</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-database-for-postgresql/">Azure Database for PostgreSQL</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-database-for-mysql-general-availability/">Azure Database for MySQL</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/region-expansion-global-vnet-peering/">지역 확장: 글로벌 VNet 피어링</a></li>
+  </ul>
+
+
+  <h2>뉴스 &amp; 업데이트</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/gartner-recognizes-microsoft-as-a-leader-in-enterprise-integration/">Gartner는 Microsoft를 엔터프라이즈 통합의 선두 주체로 인정합니다</a>.- 2018년 eiPaaS(Enterprise Integration Platform as a Service)를 위한 Gartners&rsquo; Magic Quadrant는 Microsoft를 리더로 자리매김하고 있으며, 비전의 실행 및 완전성을 반영하는 Microsofts&rsquo; 기능을 반영합니다. 자세한 내용은 현재 <a href="https://aka.ms/eipaasmq">Enterprise Integration Platform as a Service(eiPaaS) 2018용 Gartners&rsquo; Magic Quadrant</a>를 다운로드하세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/spring-data-azure-cosmos-db-nosql-data-access-on-azure/">Spring Data Azure Cosmos DB: Azure</a> - 에서 NoSQL 데이터 액세스 Azure Cosmos DB SQL API를 사용하는 Microsoft&#39;Spring Boot Starter를 사용하면 개발자가 SQL API를 사용하여 Azure Cosmos DB와 쉽게 통합되는 Spring Boot 애플리케이션을 사용할 수 있습니다. Spring Data Azure Cosmos DB를 통해 Java 개발자는 이제 Azure에서 앱에 대한 NoSQL 데이터 액세스를 신속하게 빌드할 수 있습니다. Azure Cosmos DB를 사용하여 기본 데이터 저장소의 특수 특성을 유지하면서 데이터 액세스를 위한 Spring 기반 프로그래밍 모델을 제공합니다. Spring Data Azure Cosmos DB의 기능에는 Azure Cosmos DB 컬렉션과 상호 작용하기 위한 POJO 중심 모델 및 확장 가능한 리포지토리 스타일 데이터 액세스 계층이 포함됩니다.</p>
+
+
+  <p>Data Factory - <a href="https://azure.microsoft.com/en-us/blog/iteratively-develop-and-debug-your-etl-elt-workflows-using-data-factory/">를 사용한 반복 개발 및 디버깅</a> 사용자들 사이에서는 ETL(추출 변환/로드) 및 ELT(추출 부하/변환) 워크플로를 반복적으로 개발하고 디버그해야 하는 필요성이 점점 더 커지고 있습니다. 이제 ADF(Azure Data Factory) 시각적 도구를 사용하여 반복적인 개발 및 디버깅을 수행할 수 있습니다. 또한 Data Factory 시각적 도구를 사용하면 파이프라인 캔버스에 배치하는 중단점에 도달할 때까지 디버깅을 수행할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bf92663e-d68b-490d-8e1c-c59d0fde4f2f.png"><img alt="Azure Data Factory visual tools" border="0" height="239" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e4393eb0-9be7-498e-b65d-8bce84a873da.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Data Factory 시각적 도구" width="400"></a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/recovery-services-vault-limit-increased-to-500-vaults-per-subscription-per-region/">Recovery Services 자격 증명 모음이 지역당 구독당 500개의 자격 증명 모음으로 증가</a> - Azure Backup에 대한 크기 조정 제한이 증가했습니다. 이제 사용자는 지역당 각 구독에 500개의 Azure Recovery Services 자격 증명 모음을 만들 수 있습니다. 또한 각 자격 증명 모음에 대해 등록할 수 있는 Azure 가상 머신의 수는 각 자격 증명 모음에서 200대의 이전 제한에서 1,000개로 증가했습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-new-offers-in-march-2018/">2018년 3월 Azure Marketplace 새 제품</a> - 3월에는 Azure Marketplace에 55개의 새로운 제품을 게시했는데, 이 제품은 Azure에서 실행되도록 인증되고 최적화된 모든 소프트웨어 요구 사항에 &ndash; 대한 최고의 대상입니다. 수백 개의 주요 소프트웨어 공급자에서 애플리케이션 &amp; 서비스를 찾고, 시도하고, 구매하고, 프로비전합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-backup-now-supports-storage-accounts-secured-with-azure-storage-firewalls-and-virtual-networks/">이제 Azure Backup은 Azure Storage 방화벽 및 Virtual Network로 보호되는 스토리지 계정을 지원합니다.</a> - Azure IaaS(Infrastructure as a Service) 가상 머신 백업은 이제 네트워크 제한 스토리지 계정을 지원합니다. 스토리지 방화벽 및 가상 네트워크를 사용하여 선택한 가상 네트워크 및 서브넷의 트래픽만 허용합니다. 이렇게 하면 스토리지 계정에서 관리되지 않는 디스크에 대한 보안 네트워크 경계를 만들 수 있습니다. IP 주소 범위에 따라 네트워크 규칙을 사용하여 온-프레미스 네트워크 및 기타 신뢰할 수 있는 인터넷 트래픽에 대한 액세스 권한을 부여할 수도 있습니다. 이 공지 사항을 통해 가상 네트워크 구성 스토리지 계정에 대해 예약 및 임시 IaaS 가상 머신 백업 및 복원을 수행할 수 있습니다.</p>
+
+
+  <h3>추가 뉴스 &amp; 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azurednsmetrics/">Azure DNS의 새로운&#39;- 메트릭 및 경고</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/log-analytics-whats-new-april-2018/">Azure Log Analytics의 새로운&#39;- 2018년 4월</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/updates-to-subscription-filtering/">전역 구독 필터링에 대한 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/deployment-for-azure-database-for-mysql-kubernetes-with-helm-and-ruby-on-rails-vsts-sprint-133-update/">Azure MySQL, Kubernetes Helm 및 Ruby 배포 - VSTS 스프린트 133 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/announcing-http-2-support-for-azure-app-service/">이제 Azure App Service에 대한 HTTP/2 지원을 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/app-service-and-functions-hosted-apps-can-now-update-tls-versions/">App Service 및 Functions 앱에서 TLS 버전 구성 사용 가능</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/name-changes-azure-cosmos-db-us-government/">이름 변경: Azure Cosmos DB, 미국 정부 지역</a>, <a href="https://azure.microsoft.com/en-us/updates/name-changes-cosmos-db/">Cosmos DB</a>, <a href="https://azure.microsoft.com/en-us/updates/name-changes-azure-sql-db-long-term-backup-retention/">Azure SQL Database 장기 백업 보존</a> 및 <a href="https://azure.microsoft.com/en-us/updates/name-changes-azure-sql-db-long-term-backup-retention-us-government/">Azure SQL Database 장기 백업 보존, 미국 정부 지역</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/guid-migration-azure-redis-cache/">GUID 마이그레이션: Azure Redis Cache</a>, <a href="https://azure.microsoft.com/en-us/updates/guid-migration-azure-security-center/">Azure Security Center</a>, <a href="https://azure.microsoft.com/en-us/updates/guid-migration-linux-support/">Linux 지원</a>, <a href="https://azure.microsoft.com/en-us/updates/guid-migration-zone-redundant-storage/">영역 중복 Storage</a>, <a href="https://azure.microsoft.com/en-us/updates/guid-migration-azure-redis-cache-us-government/">Azure Redis Cache, 미국 정부 지역</a> 및 <a href="https://azure.microsoft.com/en-us/updates/guid-migration-azure-security-center-us-government/">GUID 마이그레이션: Azure Security Center, 미국 정부 지역</a></li>
+  </ul>
+
+
+  <h2>Azure Friday</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Continuous-integration-and-deployment-using-Azure-Data-Factory/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Continuous-integration-and-deployment-using-Azure-Data-Factory">Azure Friday | Azure Data Factory </a> </strong> - Gaurav Malhotra를 사용한 지속적인 통합 및 배포는 Scott Hanselman과 함께 업계 최고의 모범 사례를 따라 ETL(추출 변환/로드) 및 ELT(추출 부하/변환) 워크플로를 개발, 테스트, Prod 등과 같은 여러 환경으로 연속 통합 및 배포하는 방법을 설명합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Deploy-Bitnami-Nodejs-HA-Cluster-with-Azure-Cosmos-DB/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Deploy-Bitnami-Nodejs-HA-Cluster-with-Azure-Cosmos-DB">Azure Friday | Azure Cosmos DB Rick Spencer를 사용하여 Bitnami Node.js HA 클러스터를 배포</a> </strong> 하고, Azure Marketplace에서 ARM을 사용하여 공유 파일 시스템과 Azure Cosmos DB 통합을 통해 부하 분산 장치 뒤에서 3노드 Node.js 클러스터를 자동으로 스핀업하는 Azure Marketplace의 무료 목록인 Azure Cosmos DB를 사용하여 Bitnami Node.js 고가용성 배포에 대한 대화를 나눴습니다.- 구성 또는 sysadmin 지식이 거의 필요하지 않은 상태에서 샘플 MEAN 앱을 GitHub Azure 클라우드의 고가용성 프로덕션 환경으로 빠르게 가져오는 방법을 알아봅니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>기술 콘텐츠 &amp; 교육</h2>
+
+
+  <p><a href="https://cloudblogs.microsoft.com/enterprisemobility/2018/04/18/azure-advanced-threat-protection-credssp-exploit-analysis/">Azure Advanced Threat Protection: CredSSP 악용 분석</a> - 이 블로그에서는 이 취약성의 CredSSP 악용에 대한 네트워크 동작 분석과 네트워크에서 전파하는 데 사용하는 기술을 제공합니다. 또한 Azure ATP를 사용하여 다양한 고급 사이버 공격 시도를 감지하고 조사하는 방법을 강조합니다.</p>
+
+
+  <p><a href="https://info.microsoft.com/ww-landing-breaking-botnets-ondemand.html">웹캐스트: 이 주문형 웹캐스트에서 보고서 볼륨 23Breaking&mdash; Botnets 및 Wrestling 랜섬웨어</a> - 를 Microsoft 보안 인텔리전스 보안 인텔리전스 보고서 볼륨 23에서 주요 인사이트와 테이크아웃을 들을 수&rsquo; 있습니다. 2017년에 살펴본 주요 위협 추세를 심층 분석하고, 공격 벡터에 대해 알아보고, 보안 업계 베테랑 및 이전 CISO의 권장 사항을 확인하세요. 또한&#39;Microsoft가 Gamarue 봇넷을 중단한 방법과 맬웨어에 대한 경계를 유지하는 방법도 알아봅니다.</p>
+
+
+  <h2>Azure 팟캐스트</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" valign="middle" width="300">
+     <p>
+     <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode225.mp3">HTML5 오디오가 지원되지 않음</audio>
+     </p>
+     </td>
+     <td>
+     <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-225-Azure-CXP">Azure 팟캐스트 | 에피소드 225 - Azure CXP CXP</a> </strong> - 주 서비스 엔지니어링 관리자인 Jeremy Hollett에게 CXP 조직에 대해 이야기하고 Azure 내부적으로뿐만 아니라 고객 모두에게 최고의 안정성을 얻는 데 어떻게 도움이 되는지에 대해 설명합니다. 또한 Evan은 동일한 조직에서 작동하므로 두 사람은 좋은 인사이트를 공유합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>이벤트</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/microsoft-at-postgresconf-us-2018/">Microsoft at PostgresConf US 2018</a> - 위에서 설명한 대로 지난 주에 Azure Database for PostgreSQL을 일반 공급으로 릴리스했습니다. 이 게시물에서 로한 쿠마르(Rohan Kumar) Azure Data 기업 부사장은 미리 보기 기간 동안 배운 내용과 지난 주 뉴저지 주 저지시티에서 개최된 제7회 <a href="https://postgresconf.org/conferences/2018">PostgresConf US 2018</a>에 참석하는 것에 대한 자신의 생각을 공유합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/automating-industrial-iot-security/">산업용 IoT 보안</a> - 자동화 이번 주, 마이크로소프트는 <a href="https://www.hannovermesse.de/home">하노버 메세 Industrie에서 (HMI) 2018</a> 하노버에서, 독일. 산업용 IoT는 가장 큰 IoT 기회입니다. Microsoft에서는 연결된 팩터리라는 오픈 소스 Azure IoT Suite 솔루션에 번들로 묶어 1년 전 HMI 2017에서 출시한 산업용 IoT 클라우드 플랫폼 참조 아키텍처를 제공하여 이 수직을 제공합니다. 이 게시물에서는 OPC UA 산업 상호 운용성 표준을 개발하는 비영리 단체인 OPC Foundation과의 지속적인 협력에 대해 알아봅니다.</p>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/altair-democratizes-access-to-computer-aided-engineering-with-azure/">Altair는 Azure를 사용하여 컴퓨터 지원 엔지니어링에 대한 액세스를 민주화</a>합니다.- Altair는 Microsoft Azure SaaS(Software-as-a-Service) 제품을 빌드하여 CAE에 대한 액세스를 민주화하고 있습니다. 최근에 발표한 사례 연구에서 Altair는 하이퍼웍스 무제한 가상 어플라이언스가 어떻게 고객에게 CAE 워크로드를 신속하게 실행하는 데 필요한 소프트웨어와 규모의 조합을 제공하는지 설명합니다.</p>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center">
+     <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/MUahW5L2-js?rel=0" width="240"></iframe></p>
+
+     <p><a href="https://youtu.be/MUahW5L2-js">Azure Cloud Shell의 기본 소프트웨어</a></p>
+     </td>
+     <td valign="top">
+     <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/lsQvHopwWIQ?rel=0" width="240"></iframe></p>
+
+     <p><a href="https://youtu.be/lsQvHopwWIQ">Azure Cloud Shell에서 PowerShell 사용</a></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>개발자 스포트라이트</h2>
+
+
+  <p><a href="https://aka.ms/lwia/data-10">빅 데이터 &amp; 분석:</a> 빅 데이터를 처리하고 고급 분석을 사용하는 동안 인텔리전스를 애플리케이션 - 에 통합하는 애플리케이션에 인텔리전스를 통합하는 것은 많은 사람들에게 생소한 영역입니다. 문제는 소프트웨어 개발의 세계와 빅 데이터 및 고급 분석의 세계는 가벼운 년 떨어져있는 것처럼 보인다는 것입니다. 매우 다른 문제를 해결하기 위해 많은 선택이 있습니다. 서로 다른 소프트웨어 스택, 다양한 엔지니어링 접근 방식 및 다른 용어를 사용합니다. 이 통합 개발 백서를 읽고 이 공간에서 일반적인 문제를 해결하는 방법을 알아봅니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2f8a298e-03dd-4191-9349-29f69a0eb57f.png"><img alt="Solution architecture with Azure SQL Datawarehouse" border="0" height="238" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/65d071fe-b0d3-4660-96bc-ea6087487e5b.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure SQL Datawarehouse를 사용하여 솔루션 아키텍처" width="400"></a></p>
+
+
+  <p><a href="https://aka.ms/lwia/data-11">Azure SQL Data Warehouse 워크로드 패턴 및 안티패턴 </a> - 데이터 마트와 데이터 웨어하우스 및 데이터 레이크에 대해 혼동합니다. 클라우드 데이터 웨어하우스 서비스에 적합한 사용 사례와 그렇지 않은 사항을&rsquo; 이해&rsquo;하려면 이 지침을 참조하세요. OLTP 및 OLAP 워크로드, SMP(대칭 다처리) 및 MPP(대규모 병렬 처리)와 관련된 RDBMS 사용과 관련된 몇 가지 개념을 명확히 하고 싶습니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/data-12">Azure SQL Data Warehouse 참고 자료</a> - Azure SQL Data Warehouse는 MPP 아키텍처 데이터 웨어하우스를 몇 분 안에 클라우드로 스핀업하고 몇 시간 안에 TB의 데이터를 로드하지 않도록 합니다. 이 참고 자료는 Azure SQL Data Warehouse 솔루션을 빌드하기 위한 유용한 팁과 모범 사례를 제공합니다.</p>
+
+
+  <p>멀티 플레이어 게임 - <a href="https://aka.ms/lwia/gaming-16">용 Azure Container Instances</a> Azure Container Instances를 사용하면 기본 서버를 유지 관리하거나 새로운 오케스트레이션 개념을 학습하는 번거로움 없이 Docker 이미지를 호스트하고 실행할 수 있습니다. 이 세션에서는 Azure Container Instances, Event Grid 및 Azure Functions를 사용하여 기존 백 엔드 서비스에 대한 코드 변경 없이 오픈 소스 게임 OpenArena를 예로 사용하여 확장 가능한 멀티 플레이어 백 엔드를 호스트하는 방법을 살펴봅니다.</p>
+
+
+  <p>게임 개발을 - <a href="https://aka.ms/lwia/gaming-17">위한 Unity를 사용한 Git</a> Unity는 궁극적인 게임 개발 플랫폼입니다. Git은 궁극적인 버전 제어 시스템입니다. 하지만 Unity와 Git은 항상 잘 어울리는 것은&#39;. Unity와 Git이 어떻게 상호 작용할 수 있나요? Git 버전 제어 시스템에서 Unity를 사용하기 위한 몇 가지 모범 사례를 살펴볼&#39;있습니다.</p>
+
+
+  <p>App Center - 를 <a href="https://aka.ms/lwia/gaming-18">사용하여 게임을 지속적으로 테스트, 배포 및 모니터링</a> 리포지토리를 커넥트 몇 분 내에 클라우드에서 빌드하고, 수천 개의 실제 디바이스에서 테스트하고, 베타 테스터 및 앱 스토어에 배포하고, 크래시 및 분석 데이터를 사용하여 실제 사용량을 모니터링합니다. 모두 한 곳에서: Visual Studio App Center.</p>
+
+
+  <p>무료 게임 서비스에서 - <a href="https://aka.ms/lwia/gaming-19">$2500 이상 청구</a> PlayFab 및 Visual Studio App Center의 프로모션 제품으로 뛰어난 iOS 및 Android 게임 빌드를 시작합니다.</p>

@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f78feb0173257ab50abd25aa22cd6bded511df3a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900801"
+Slug: security-center-s-adaptive-application-controls-are-generally-available
+Title: Security Center의 적응형 애플리케이션 제어는 일반적으로 사용할 수 있습니다.
+Summary: Azure Security Center는 공격에 취약한 노출 영역을 줄이는 데 도움이 되는 몇 가지 위협 방지 메커니즘을 제공합니다. 이러한 메커니즘 중 하나는 적응형 애플리케이션 컨트롤입니다.
+Content: >-
+  <p>Azure Security Center는 공격에 취약한 노출 영역을 줄이는 데 도움이 되는 몇 가지 위협 방지 메커니즘을 제공합니다. 이러한 메커니즘 중 하나는 <a href="https://azure.microsoft.com/en-us/blog/announcing-the-public-preview-for-adaptive-application-controls/" target="_blank">적응형 애플리케이션 컨트롤입니다</a>. 현재 원치 않는 애플리케이션을 감사하고 차단하는 데 도움이 되는 이 기능의 일반 공급에 대해 발표하게 되어 기쁩니다.</p>
+
+
+  <p>적응형 애플리케이션 컨트롤은 구성된 VM(가상 머신) 그룹에서 실행할 수 있는 애플리케이션 집합을 정의하는 데 도움이 됩니다. VM에 적응형 애플리케이션 컨트롤을 사용하도록 설정하면 몇 가지 작업을 수행할 수 있습니다. 먼저 애플리케이션(EXE, MSI 및 스크립트)을 허용 &quot;목록에&quot; 포함시키고, 비슷한 VM을 자동으로 클러스터링하여 관리 효율성을 완화하고 불필요한 애플리케이션에 대한 노출을 줄이는 것이 좋습니다. 또한 자동화된 방식으로 적절한 규칙을 적용하고, 해당 규칙의 위반을 모니터링하며, 이전에 적용된 애플리케이션 허용 목록 정책을 관리하고 편집할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f088d8ec-cc27-4b1b-8789-aee72a3df6c9.png"><img alt="Adaptive Application Controls" border="0" height="763" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94abd97a-8813-4033-9095-6a64ef68c40a.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="적응형 애플리케이션 컨트롤" width="1432"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/06a1b4e0-265e-4d95-9118-6260b1f473ec.png"><img alt="Adaptive Application Controls 2" border="0" height="801" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/43a99963-06f6-412e-8a9a-1f31881d099b.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="적응형 애플리케이션 컨트롤 2" width="1431"></a></p>
+
+
+  <p>기본적으로 Security Center는 <em>감사</em> 모드에서 애플리케이션 제어를 사용하도록 설정합니다. 허용 목록이 워크로드에 부정적인 영향을 미치지 않는지 유효성을 검사한 후 Security Center UI를 통해 보호 모드를 <em>적용</em> 모드로 변경할 수 있습니다.</p>
+
+
+  <p>동일한 Security Center UI를 통해 구성된 각 VM 그룹에 대한 애플리케이션 제어 정책을 변경하고, 이전에 적용된 규칙을 편집 및 제거하고, 더 많은 애플리케이션이 워크로드에서 실행되도록 규칙을 확장할 수도 있습니다.</p>
+
+
+  <p>이 기능은 Security Center의 <a href="https://azure.microsoft.com/en-us/pricing/details/security-center/" target="_blank">표준 가격 책정 계층</a> 에서 사용할 수 있으며 처음 30일 동안 <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Security Center를 무료로 사용해 볼</a> 수 있습니다.</p>
+
+
+  <p>Security Center에서 이러한 기능에 대해 자세히 알아보려면 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-adaptive-application" target="_blank">설명서를 참조하세요</a>.</p>

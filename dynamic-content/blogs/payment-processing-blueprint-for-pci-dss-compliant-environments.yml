@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c1909471eb73150de111ff284972c528f52430ad
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907062"
+Slug: payment-processing-blueprint-for-pci-dss-compliant-environments
+Title: PCI DSS 규격 결제 처리 환경을 위한 Azure 보안 및 규정 준수 청사진
+Summary: '오늘 우리는 PCI DSS 규격 지불 처리 환경에 대한 새로운 Azure 보안 및 규정 준수 청사진의 일반 공급, 검토 된 유일한 감사자, 지불 카드 산업 데이터 보안 표준에 대한 100 % 자동화 된 솔루션 - PCI DSS 3.2 기술 제어를 발표하게되어 기쁘게 생각합니다. '
+Content: >-
+  <p>오늘 우리는 새로운 <a href="https://aka.ms/pciblueprint">Azure 보안 및 규정 준수 Blueprintfor&nbsp; PCI DSS 규격 지불 처리 환경</a>의 일반 공급, 검토 된 유일한 감사자, 지불 카드 산업 데이터 보안 표준에 대한 100 % 자동화 된 솔루션 - PCI DSS 3.2 기술 제어를 발표하게되어 기쁘게 생각합니다. 아키텍처 프레임워크는 회사가 Microsoft Azure 결제 처리 시스템 또는 신용 카드 처리 솔루션을 배포하고 운영할 수 있도록 설계되었습니다. 이 자동화 솔루션은 고객이 Azure 솔루션을 채택하고 이해하기 간단한 참조 아키텍처를 보여주고 관리자에게 PCI DSS 규정 준수 표준을 준수하면서 안전하고 호환되는 워크로드를 배포하는 방법을 교육하는 데 도움이 됩니다.</p>
+
+
+  <p>이 솔루션은 파트너 Avyan Consulting과 공동으로 개발되었으며, 이후 Microsofts&rsquo; PCI-DSS 감사인 <a href="https://www.coalfire.com/">Coalfire</a>가 검토했습니다. PCI 준수 검토는 솔루션과, 해결이 필요한 구성 요소에 대한 독립적인 제3자 검토를 제공합니다.</p>
+
+
+  <p>이 솔루션의 작동 방식을 빠르게 알아보려면 이 <a href="https://aka.ms/pciblueprintvideo">5분 분량의 비디오를</a> 시청하여 배포를 설명하고 시연하세요.</p>
+
+
+  <p>이 자동화된 아키텍처에는 Azure Application Gateway, 네트워크 보안 그룹, Azure Active Directory, App Service Environment, OMS Log Analytics, Azure Key Vault, Azure SQL DB, Azure Load Balancer, 애플리케이션 Insights , Azure Web App, Azure Automation, Azure Runbooks, Azure DNS, Azure Virtual Network, Azure Virtual Machine, Azure 리소스 그룹 및 정책, Azure Blob Storage, Azure Active Directory 액세스 제어(RBAC) 및 Azure Security Center.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e126b899-9350-4ab6-ac16-dadf7a9b8045.png"><img alt="Azure Solutions Blueprint" border="0" height="1124" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/37ef57e0-287f-4234-911c-4eda133eb413.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="Azure 솔루션 청사진" width="2685"></a></p>
+
+
+  <p>기본 아키텍처는 다음과 같은 구성 요소로 이루어집니다.</p>
+
+
+  <ul>
+   <li><strong>아키텍처 다이어그램.</strong> 이 다이어그램은 Contoso Webstore 솔루션에 사용되는 참조 아키텍처를 보여 줍니다.</li>
+   <li><strong>배포 템플릿.</strong> 이 배포에서는 설정 중 구성 매개 변수를 지정하여 아키텍처 구성 요소를 Microsoft Azure에 자동으로 설치하는 데 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview#template-deployment">Azure Resource Manager 템플릿</a>을 사용합니다.</li>
+   <li><strong>자동화된 배포 스크립트.</strong> 이 스크립트는 엔드투엔드 솔루션 배포를 지원합니다. 스크립트는 다음으로 구성됩니다. <ul>
+    <li>모듈 설치 및 <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles-azure-portal">전역 관리자</a> 설치 스크립트는 필요한 PowerShell 모듈을 설치하고 전역 관리자 역할이 올바르게 구성되어 있는지 확인하는 데 사용됩니다.</li>
+    <li>설치 PowerShell 스크립트는 Azure SQL Database 팀에서 빌드한 <a href="https://github.com/Microsoft/azure-sql-security-sample">보안 구성 요소를</a> 포함하여 엔드 투 엔드 솔루션을 배포하는 데 사용됩니다.</li>
+   </ul>
+   </li>
+   <li><a href="https://aka.ms/pciblueprintcrm32"><strong>샘플 고객 책임 PCI DSS 3.2 통합 문서입니다.</strong></a> 통합 문서에서는 솔루션을 사용하여 각 262 PCI DSS 3.2 컨트롤에서 규격 상태를 달성하는 방법을 설명합니다. 이 통합 문서에서는 Azure와 고객 간의 공동 책임을 성공적으로 구현하는 방법에 대한 세부 정보를 제공합니다.</li>
+  </ul>
+
+
+  <ul>
+   <li>전체 <a href="https://aka.ms/pciblueprintprocessingoverview"><strong>PCI 규격</strong></a> 비즈니스를 위한 기본 아키텍처를 구축하는 데 필요한 항목을 간략하게 설명하는 PCI 규정 준수 검토입니다. Coalfires&rsquo; 검토는 최종 PCI 평가를 위해 더 나은 결과를 얻을 수 있는 추가 솔루션 설계에 앞서 추가 차원을 살펴봅니다.</li>
+   <li><strong>고객 준비 위협 모델입니다. </strong> 이 <a href="https://aka.ms/pciblueprintthreatmodel">DFD(데이터 흐름 다이어그램)</a> 및 솔루션 경계 및 연결에 대한 자세한 설명을 제공하는 솔루션의 Contoso Webstore에 대한 샘플 위협 모델입니다.</li>
+  </ul>
+
+
+  <p>배포된 애플리케이션은 기본 제공 보안 및 규정 준수 고려 사항을 포함하고 엔드투엔드 Azure 솔루션으로 배포할 수 있는 4계층 아키텍처에서 카드 번호, 만료 날짜 및 CVC(카드 확인 확인) 번호를 포함한 신용 카드 데이터의 보안 관리를 보여 줍니다.</p>
+
+
+  <p><a href="https://aka.ms/azureblueprint">Azure 보안 및 규정 준수 청사진 및</a> Azure Government&nbsp;를 최신 상태로 유지하려면 <a href="https://blogs.msdn.microsoft.com/azuregov/feed/">RSS 피드</a>를 구독하고 Azure <a href="https://blogs.msdn.microsoft.com/azuregov/">Government 블로그</a>에서 전자 메일로 구독을 클릭하여 &ldquo;이메일을 수신해야 합니다.&rdquo; 또한 자주 다시 확인하여 Azure 자동화된 기본 아키텍처에 대해 자세히 알아보세요.</p>
+
+
+  <p>조직에 대한 Azure Government의 기능을 사용하려면 <a href="https://azuregov.microsoft.com/trial/azuregovtrial">Azure Government 평가판</a>에 등록합니다.</p>

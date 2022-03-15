@@ -1,0 +1,107 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 23ea7b4422511286d11c0ea728be928a901dfe50
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907385"
+Slug: announcing-general-availability-of-azure-managed-applications-service-catalog
+Title: Azure Managed Applications Service 카탈로그의 일반 공급 발표
+Summary: 오늘 Azure Managed Applications Service 카탈로그의 일반 공급에 대해 발표하게 되어 기쁘게 생각합니다. 서비스 카탈로그를 사용하면 회사 중앙 IT 팀이 솔루션 카탈로그를 만들고 관리할 수 있습니다.
+Content: >-
+  <p>오늘 Azure Managed Applications Service 카탈로그의 일반 공급에 대해 발표하게 되어 기쁘게 생각합니다.</p>
+
+
+  <p>서비스 카탈로그를 사용하면 회사 중앙 IT 팀이 해당 조직의 직원이 사용할 솔루션 및 애플리케이션 카탈로그를 만들고 관리할 수 있습니다. 이를 통해 조직은 승인된 솔루션을 중앙에서 관리하고 규정 준수를 보장할 수 있습니다. 최종 고객 또는 이 경우 조직의 직원이 승인된 솔루션 목록을 쉽게 검색할 수 있습니다. 서비스, 업그레이드 또는 관리하기 위해 솔루션의 작동 방식을 학습하는 것에 대해 걱정할 필요 없이 이러한 솔루션을 사용할 수 있습니다. 이 모든 것은 솔루션을 게시하고 소유한 중앙 IT 팀에서 처리합니다.</p>
+
+
+  <p>이 게시물에서는 관리되는 애플리케이션에 추가된 새로운 기능과 전반적인 환경을 개선하는 방법을 연습합니다.</p>
+
+
+  <h2>향상 된 기능</h2>
+
+
+  <p>전반적인 환경을 개선하고 제작을 훨씬 쉽고 바로 진행할 수 있도록 했습니다. 주요 개선 사항 중 일부는 아래에 설명되어 있습니다.</p>
+
+
+  <h3>패키지 생성 간소화</h3>
+
+
+  <p>미리 보기 버전에서 게시자는 세 개의 파일을 작성하고 zip에 패키지해야 했습니다. 그 중 하나는 Microsoft.Solutions/appliances 리소스만 포함된 템플릿 파일이었습니다. 또한 게시자는 이 템플릿 파일에 실제 리소스를 다시 배포하는 데 필요한 모든 실제 매개 변수를 지정해야 했습니다. 이 매개 변수는 다른 템플릿 파일에 이미 지정되어 있는 매개 변수에 추가되었습니다. 이 작업이 필요했지만, 퍼블리셔에게 중복되고 종종 혼란스러운 작업이 발생했습니다. 앞으로 이 파일은 서비스에서 자동으로 생성됩니다.</p>
+
+
+  <p>따라서 패키지(.zip)에서는 mainTemplate.json(프로비전해야 하는 리소스가 포함된 템플릿 파일) ii) createUIDefinition.json이 두 개의 파일만 필요합니다 &ndash; .</p>
+
+
+  <p>솔루션에서 중첩된 템플릿, 스크립트 또는 확장을&rsquo; 사용하는 경우 변경할 필요가 없습니다.</p>
+
+
+  <h3>포털 지원 사용</h3>
+
+
+  <p>미리 보기에서는 서비스 카탈로그에 대한 관리되는 애플리케이션 정의를 만들기 위한 CLI 지원만 있었습니다. 이제 포털 및 PowerShell 지원이 추가되었습니다. 이를 통해 조직의 중앙 IT 팀은 포털을 사용하여 관리되는 애플리케이션 정의를 신속하게 작성하고 조직의 사용자와 공유할 수 있습니다. &rsquo;CLI를 사용하고 제공되는 다양한 명령을 학습할 필요가 없습니다.</p>
+
+
+  <p>이러한 항목은 더 많은 서비스를&rdquo; 클릭한 다음 관리되는 서비스를 검색하여 포털에서 &ldquo;검색할 수 있습니다. 미리 보기&rdquo;라고 하는 &ldquo;것을 사용하지 마세요&rsquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3977d431-4704-44dc-9edd-737d7f94a74f.png"><img alt="image" border="0" height="357" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/73a9be4d-76de-4135-9d63-de469e71a039.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="610"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>관리되는 애플리케이션 정의를 만들려면 서비스 카탈로그 관리되는 애플리케이션 정의를&rdquo; 선택하고 &ldquo;추가&rdquo; 단추를 클릭합니다&ldquo;. 그러면 아래 블레이드가 열립니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b1b717d6-52a9-4db2-b856-9f7b44f59498.png"><img alt="ManagedAppDefBlade" border="0" height="610" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c37f2a8-c729-4d2c-9ec3-9f8cfd853234.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ManagedAppDefBlade" width="496"></a></p>
+
+
+  <h3>.zip 패키징 대신 템플릿 파일을 인라인으로 제공하는 지원</h3>
+
+
+  <p>.zip 파일을 만들고, Blob에 업로드하고, 공개적으로 액세스할 수 있도록 하고, URL을 가져오고, 관리되는 애플리케이션 정의를 만드는 데는 여전히 많은 단계가 필요합니다. 따라서 CLI 및 Powershell에 추가된 새 매개 변수를 사용하여 이러한 파일을 인라인으로 지정할 수 있는 다른 옵션을 사용하도록 설정했습니다. 인라인 템플릿 파일에 대한 지원은 곧 포털에 추가될 예정입니다.</p>
+
+
+  <h2>서비스 변경 내용</h2>
+
+
+  <p>서비스에 다음과 같은 주요 변경 사항이 적용되었습니다.</p>
+
+
+  <h3>새 api-version</h3>
+
+
+  <p>일반 공급 릴리스에는 위에서 언급한 모든 개선 사항을 활용할 수 있는 새로운 api-version이 도입되었습니다. 새 api-version은 2017-09-01입니다. Azure Portal은 이 새 api-version을 사용합니다. 최신 버전의 Azure CLI 및 Azure PowerShell 이 새로운 api-version을 활용합니다. 관리되는 애플리케이션을 개발하고 관리하려면 이 최신 버전으로 전환해야 합니다. 2017년 9월 25일 이후에는 기존 버전의 CLI를 사용하여 관리되는 애플리케이션을 만들고 관리하는 것이 지원되지 않습니다. 이전 API 버전(이전 CLI)을 사용하여 만든 기존 리소스는 계속 작동합니다.</p>
+
+
+  <h3>리소스 종류 이름이 변경되었습니다.</h3>
+
+
+  <p>리소스 종류 이름이 새 api-version에서 변경되었습니다. 따라서 Microsoft.Solutions/appliances는 이제 Microsoft.Solutions/applications이고, Microsoft.Solutions/applianceDefinitions는 Microsoft.Solutions/applicationDefinitions입니다.</p>
+
+
+  <h3>최신 CLI 및 PowerShell로 업그레이드</h3>
+
+
+  <p>위에서 설명한 것처럼 관리되는 애플리케이션을 계속 사용하고 만들려면 최신 버전의 CLI 및 PowerShell을 사용하거나 Azure Portal을 사용할 수 있습니다. 이전 API 버전에서 빌드된 이러한 클라이언트의 기존 버전은 더 이상 지원되지 않습니다. 기존 리소스는 새 리소스 유형을 사용하도록 마이그레이션되며 새 버전의 클라이언트를 사용하여 계속 작동합니다.</p>
+
+
+  <h3>지원되는 위치</h3>
+
+
+  <p>현재 지원되는 위치는 미국 중서부 및 미국 서부 2입니다.</p>
+
+
+  <p>새 버전의 서비스를 사용해 보고 <a href="https://feedback.azure.com/forums/281804-azure-resource-manager">사용자 음성 채널</a> 또는 아래 의견을 통해 피드백을 알려주세요.</p>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/managed-application-author-marketplace">Marketplace 관리형 애플리케이션 게시</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/managed-application-publishing">서비스 카탈로그 관리되는 애플리케이션 게시</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/managed-application-createuidefinition-overview">관리되는 애플리케이션에 대한 UIDefinition을 만드는 방법</a></li>
+   <li><a href="https://github.com/Azure/azure-managedapp-samples">관리되는 애플리케이션 샘플 GitHub 리포지토리</a></li>
+  </ul>

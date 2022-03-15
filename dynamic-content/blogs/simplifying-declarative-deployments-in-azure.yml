@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 757d957e2e70d0b7224109a4abcf8b23bc3ff109
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900631"
+Slug: simplifying-declarative-deployments-in-azure
+Title: Azure에서 선언적 배포 간소화
+Summary: Azure는 고객에게 ARM(Azure Resource Manager) 템플릿을 통해 인프라를 선언적으로 프로비전하고 관리하는 간단하고 직관적인 방법을 제공합니다.
+Content: >-
+  <p>Azure는 고객에게 ARM(Azure Resource Manager) 템플릿을 통해 인프라를 선언적으로 프로비전하고 관리하는 간단하고 직관적인 방법을 제공합니다. 템플릿 언어를 사용하여 전체 Azure 환경을 설명한 다음 좋아하는 CI/CD 또는 스크립팅 도구를 사용하여 몇 분 안에 이 환경을 돋보이게 할 수 있습니다. ARM 템플릿 언어는 JSON 형식을 사용하며 리소스 스키마를 직접 표현합니다. 즉, 첫날부터 ARM 템플릿을 사용하여 Azure 리소스를 만들고 리소스에 대한 설정을 구성할 수 있습니다. ARM 템플릿을 사용하여 선언적이고 매개 변수가 있는 방식으로 환경을 구성하는 데 필요한 리소스를 설명할 수 있습니다. ARM 템플릿은 선언적이므로 원하는 항목만 지정하면 되며, Azure Resource Manager는 나머지를 파악합니다.</p>
+
+
+  <p>지난 몇 달 동안 고객이 공유하는 몇 가지 주요 문제를 해결하는 데 중점을 두고 ARM 템플릿 배포에 대한 초점을 갱신했습니다. 오늘날,&rsquo; 이러한 과제 중 일부를 해결하기 위해 투자한 몇 가지 투자를&rsquo; 공유합니다.</p>
+
+
+  <h2>Visual Studio Code 사용하여 간소화된 제작 환경</h2>
+
+
+  <p>최신 사용자는 ARM 템플릿을 처음 작성하고 처음부터 편집하는 것이 위협적일 수 있다고 공유했습니다. Azure Portal에서 필요한 리소스를 만들고 다시 사용할 수 있는 ARM 템플릿을 내보내 시작 환경을 간소화했습니다. 또한 리소스를 프로비전하는 800개가 넘는 샘플 템플릿의 템플릿 <a href="https://azure.microsoft.com/en-us/resources/templates/" target="_blank">빠른 시작 갤러리</a> 가 있습니다. 그러나 이제 우리는 당신을 위해 한 걸음 더 나아갔습니다.</p>
+
+
+  <p><a href="https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools" target="_blank">Visual Studio Code 새 ARM(Azure Resource Manager) 도구를</a> 사용하여 코드 조각(미리 만든 리소스 정의), IntelliSense, 색 지정, ARM 템플릿 개요 및 주석에 대한 지원을 추가한&#39;. ARM 템플릿에서 주석 지원을 사용하면 CLI, PowerShell 및 Azure Portal을 사용하여 주석이 있는 모든 템플릿을 배포할 수 있으며 작동합니다. 다음은 VS Code 새 ARM 템플릿 작성 환경에 대한 <a href="https://aka.ms/arm-tools-intro" target="_blank">짧은 비디오</a>입니다.</p>
+
+
+  <h2>가상: 배포 전 영향 분석</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/98f5d354-5aff-4adc-b637-ff5eac95012f.png"><img align="right" alt="Picture2" border="0" height="332" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/89c5a751-67c5-43bf-9fa6-22eee85cddbf.png" style="border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="Picture2Our" width="530"></a> 고객은 배포된 리소스에 대한 변경 내용을 제출하기 전에 환경에 대한 배포의 영향을 평가해야 하는 경우가 많습니다. Azure의 새로운 가상 기능을 통해 고객은 배포 전 평가를 수행하여 리소스 속성 변경을 포함하여 생성, 업데이트 또는 삭제할 리소스를 결정할 수 있습니다. 가상 명령은 환경의 현재 상태를 실시간으로 확인하고 상태를 관리할 필요가 없습니다. <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-deploy-what-if" target="_blank">여기서 what-if를 시작하세요</a>. 미리 보기 상태인 경우 <a href="https://aka.ms/whatifissues" target="_blank">GitHub 리포지토리</a>의 문제 및 기능 요청에 대해 알려주세요.</p>
+
+
+  <h2>배포 스크립트: 마지막 마일&rsquo; 시나리오 완료 &lsquo;</h2>
+
+
+  <p>고객이 환경 설정을 완료하기 위해 ARM 템플릿 배포에서 사용자 지정 스크립트 코드를 실행해야 하는 경우가 많습니다. 이전에 템플릿 배포 외부의 단계를 요구했던 이러한 스크립트는 이제 deploymentScript 리소스를 사용하여 템플릿 배포 내에서 실행할 수 있습니다. 새 deploymentScript 리소스는 템플릿 배포의 일부로 PowerShell 또는 bash 스크립트를 실행합니다. 이 스크립트는 ARM 템플릿의 일부로 포함되거나 외부 원본에서 참조될 수 있습니다. 이제 배포 스크립트를 통해 단일 ARM 템플릿에서 엔드 투 엔드 환경 설정을 완료할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-script-template?tabs=CLI" target="_blank">이 설명서를</a> 사용하여 배포 스크립트에 대해 자세히 알아봅니다. API에 노출되지 않은 특정 Azure 리소스 작업이 컨트롤 플레인에 기본적으로 표시되는 것을 보려는 경우 <a href="https://feedback.azure.com/forums/281804-azure-resource-manager" target="_blank">여기에 요청을 제출</a>하세요.</p>
+
+
+  <h2>대규모 관리 그룹 및 구독 프로비전</h2>
+
+
+  <p>조직에서 Azure 사용을 확장함에 따라 환경, 애플리케이션, 청구 또는 보안을 분리하기 위해 MG(관리 그룹) 계층 구조(그룹화 구문) 및 Azure 구독을 만들어야 한다는 대화가 종종 있습니다. 고객은 시간과 리소스를 절약하기 위해 관리 그룹 및 구독을 프로비전하는 일관되고 선언적인 방법이 필요합니다. 이제 새 테넌트 및 MG 배포 API를 사용하여 ARM 템플릿을 사용하여 MG 및 구독의 프로비저닝을 지원합니다. 이렇게 하면 단일 ARM 템플릿에서 전체 자산 및 관련 인프라 리소스의 설정을 자동화할 수 있습니다. 이에 대해 자세히 알아보고 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-to-subscription" target="_blank">여기에서 샘플 템플릿을 가져옵니다</a>. 또한 이제 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources#apply-tags-to-resource-groups-or-subscriptions" target="_blank">구독 태그 지정을 지원하고</a>, 리소스 그룹당 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history-deletions?tabs=azure-powershell" target="_blank">800개의 배포</a>를 제거하고, 배포당 리소스 그룹 수를 800개로 늘리고, EA(기업계약) 계정당 구독 수를 2000개로 늘려 대규모로 프로비전하고 관리할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9b67a1b-d2dd-4510-892d-eb1fa545aa06.png"><img alt="ARM1" border="0" height="212" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/577d329a-a5b7-4a9a-8ac0-c5b2937ccca9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ARM1" width="1128"></a></p>
+
+
+  <h2>품질 및 안정성에 대한 지속적인 집중</h2>
+
+
+  <p>품질과 안정성은 Microsoft에서 수행하는 모든 작업의 최전선에 있습니다. 이 영역은 스키마의 품질을 개선하고 모든 리소스에 대한 스키마 적용 범위를 갖는 것부터 시작하여 계속 집중해 온 영역입니다. 이러한 이점은 향상된 제작 환경 및 템플릿 내보내기 기능에서 확인할 수 있습니다. 배포하기 전에 문제를 파악하기 위해 오류 메시지를 개선하고 비행 전 유효성 검사의 품질을 향상시키기 위해 부지런히 노력하고 있습니다. 또한 모든 API 버전을 템플릿 참조에 게시하고 리소스 설명서에 템플릿 조각을 추가하여 설명서를 개선하는 데 많은 투자를 했습니다.</p>
+
+
+  <p>ARM 템플릿 코드를 테스트하는 데 도움이 되도록 MICROSOFT에서 내부적으로 사용하는 <a href="https://github.com/Azure/arm-ttk">ARM 템플릿 Toolkit</a> 열어 ARM 템플릿이 모범 사례를 따르도록 합니다. 마지막으로, 속도 문제를 인식하고 대규모 배포에 대한 배포 시간을 약 75% 줄이기 위해 크게 개선했습니다.</p>
+
+
+  <h2>Azure Resource Manager 템플릿을 사용하는 코드로서의 인프라의 미래</h2>
+
+
+  <p>ARM 템플릿 배포를 강화하기 위한 여정을 시작했으며, 팀은 현재 격차를 해소하고 미래를 위해 혁신하기 위해 의식적으로 노력하고 있습니다. 최근 <a href="https://youtu.be/UaVCNpD3pvg?t=718">Microsoft Build 2020 컨퍼런스에서</a> 공유한 향후 투자에 대해 들을 수 있습니다.</p>
+
+
+  <p>ARM 배포에 대한 지속적인 피드백을 환영합니다. 엔지니어링 팀과 심층적인 대화를 나누고 싶다면 <a href="https://www.surveymonkey.com/r/ARMMEET" target="_blank">배포 및 거버넌스 Yammer 그룹에</a> 참여하세요.</p>

@@ -1,0 +1,109 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 59dbc27f1675b28ac9083dc25b7c0803a25e507e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899850"
+Slug: converging-the-physical-and-digital-with-digital-twins-mixed-reality-and-metaverse-apps
+Title: 디지털 트윈, 혼합 현실 및 메타버스 앱과 물리적 및 디지털 수렴
+Summary: '클라우드 및 에지 컴퓨팅은 이전과 같이 함께 제공되어 전 세계 개발자와 비즈니스에 엄청난 기회를 제공합니다. 디지털 트윈, 혼합 현실 및 자율 시스템은 고객이 이미 혜택을 받고 있는 엄청난 혁신의 핵심입니다. '
+Content: >-
+  <p>클라우드 및 에지 컴퓨팅은 그 어느 때보다도 함께 모여 전 세계의 개발자와 조직에 엄청난 기회를 제공하고 있습니다. 디지털 트윈, 혼합 현실 및 자율 시스템은 고객이 이미 이익을 얻는 엄청난 혁신의 핵심입니다.</p>
+
+
+  <p>외부에서 이&rsquo; 기술이 어떻게 수렴되는지 또는 이러한 기능을 함께 가져와 활용할 수 있는 이점을 항상 명확히 하는 것은 아닙니다. 이 때문에 <a href="https://mybuild.microsoft.com/" target="_blank">Microsoft Build</a> 에서 이러한 수렴이 만들어지는 가능성, 고객이 이미 혜택을 받고 있는 방식, 이 기술을 더 쉽게 사용하고 모든 개발자와 조직의 범위 내에서 만들기 위한 여정에 대해 설명합니다.</p>
+
+
+  <h2>연결된 환경의 가능성</h2>
+
+
+  <p>Imagine 복잡한 환경을 활용하고 기술의 힘을 적용하여 경외심을 불러일으키는 환경을 조성하고 이전에는 상상할 수 없었던 새로운 비즈니스 수준에 도달할 수 있습니다. 가능성은 무한합니다: 쇼핑 경험이 실시간으로 최적화되고 선반이 항상 재고가 있는 소매점. 탄소 배출을 추적하고 줄이는 공급망입니다. 천연 재료의 변형을 조정하고 운영 병목 상태를 자동으로 감지하고 보정하는 공정 제조 라인입니다. 에너지원을 최대한 활용하기 위해&rsquo; 다양한 성장 제안을 시뮬레이션하는 도시 계획입니다.</p>
+
+
+  <p>이것은 오늘 일어나고 있다. AB(Anheuser-Busch) InBev, 파리 새클레이, ICA, 토탈 및 브룩필드 속성과 같은 고객은 이미 이러한 시나리오에 생명을 불어넣는 솔루션을 구현하고 있습니다. 여기서 핵심은 물리적 환경의 라이브 데이터 바인딩 디지털 복제본을 만들어서 최신 소프트웨어 기술&mdash; 분석, 시뮬레이션, 자율 제어 및 상호 작용&mdash; 혼합 현실을 적용하여 이전에는 불가능한 이점을 얻을 수 있다는 것입니다.</p>
+
+
+  <p>이러한 변화는 물리적 세계와 디지털 세계의 융합을 나타냅니다. 이러한 공간이 함께 모이면 모든 것을 바꿀 새로운 기회와 혁신적인 솔루션의 세계를 만듭니다. 이러한 솔루션은 메타버스 앱이라고 생각합니다.</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="540" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEGBB" width="960"></iframe></p>
+
+
+  <h2>디지털 트윈을 사용하여 기초 형성</h2>
+
+
+  <p>메타버스 앱은 인텔리전트 클라우드의 절정이며, 인텔리전트 에지는 디지털 트윈이라는 기반이 함께&mdash; 조화를 이루고 있습니다. 디지털 트윈을 사용하면 간단한 자산이나 제품에서 복잡한 환경에 이르기까지 물리적 또는 논리적으로 풍부한 디지털 모델을 만들 수 있습니다. 이러한 환경은 에너지 분배 그리드, 창고 또는 사용자에게 중요한 공장&mdash;이&rsquo; 될 수 있습니다. &rsquo;모델링된 후에는 양방향 IoT 연결을 사용하여 실제 환경에서 구현되고 동기화될 수 있습니다. 물리적 및 디지털의 이 초기 바인딩은 메타버스 앱을 사용하도록 설정하는 데 기초합니다.</p>
+
+
+  <p>이 기반이 구축되면 모델에 소프트웨어 기술을 적용할 수 있습니다. 거기에서 세계는 본질적으로 디지털 캔버스가된다. 분석을 실행하여 환경 변경 기록에서 인사이트를 얻을 수 있습니다. 장비가 서비스해야 하는 경우를 예측하거나, 발생하기 전에 점유 요구 사항을 예상하는 환경&mdash;의 향후 상태를 예측할 수 있습니다.</p>
+
+
+  <p>다음 혜택 집합은 <a href="https://www.microsoft.com/en-us/videoplayer/embed/RWyGgo" target="_blank">디지털</a> 트윈의 복사본을 가져온 다음 시뮬레이션을 실행하는 시뮬레이션에서 비롯됩니다. 이러한 시뮬레이션은 단순히 물리적 환경만 모니터링하여 달성할 수 없는 클라우드&mdash; 상태의 기능을 사용하여 매우 복잡한 환경에서 가상 질문 또는 seekinsights&nbsp; 및 최적화를 평가할 &ldquo;&rdquo; 수 있습니다. 이러한 시뮬레이션이 완료되면 시뮬레이션된 복사본의 인사이트를 실제 디지털 트윈에 적용하고 이러한 변경 내용을 실제 환경으로 다시 동기화하여 이점을 실현할 수 있습니다. 디지털 트윈에 <a href="https://www.microsoft.com/en-us/ai/autonomous-systems" target="_blank">자율 시스템을</a> 만들고 적용하여 일상적인 작업을 자동화하고 시간이 지남에 따라 학습하고 개선하는 시스템으로 개선할 수도 있습니다.</p>
+
+
+  <p>마지막으로, 수행할 수 있는 가장 강력한 작업 중 하나는 혼합 현실의 물리적 환경에 오버레이된 디지털 모델과 상호 작용하는 것입니다. 이 디지털 복사본을 통해 실제 세계에서 수행하는 모든 일에&rsquo; 대한 풍부한 메타데이터와 인사이트를 얻을 수 있습니다. 또한 전 세계 어디서나 동료 및 전문가와 거리를 두고 순수 가상 공간에서 상호 작용할 수 있습니다.&nbsp;</p>
+
+
+  <h2>Microsoft Cloud는 이 모든 것을 함께 제공합니다.</h2>
+
+
+  <p>이 새로운 애플리케이션 클래스에 필요한 다양한 기능을 살펴보면 Microsoft Cloud에는 각 기능에 대한 서비스가 포함됩니다. 사실,&rsquo; 이 전체 스택을 한데 모으는 회사로 고유하게 자리 잡고 있으며, 메타버스 애플리케이션을 가능하게 하는 계층을 쉽게 위아래로 이동할 수 있도록 시간이 지남에 따라 이 스택을 보다 연결되고 원활하게 만드는 것이 우리의 대담한 야망입니다.</p>
+
+
+  <p>Azure Digital Twins는 모든 자산, 시스템 또는 전체 환경을 모델링하고 디지털 트윈을 Azure IoT 최신 상태로 유지할 수 있습니다. Azure Synapse Analytics는 디지털 트윈의 기록을 추적하고 향후 상태를 예측하는 인사이트를 찾습니다. AI 및 기계 학습 플랫폼은&nbsp; 지속적으로 학습하고 개선하는 자율 시스템을 제공합니다&nbsp;. Microsoft Mesh를 사용하는 모든 디바이스&mdash;에서 어디서나&mdash; 현재 상태 및 공유 환경을 사용하도록 설정합니다. 가장 몰입형 및 인체공학적 혼합 현실 디바이스 중 하나인 Microsoft HoloLens 2를 사용하여 최고의 혼합 현실 디바이스 및 Microsoft Mesh를 경험하세요. 또한 Microsoft Power Platform을 사용하면 모든 직원이 코드 없는 로우 코드 솔루션을 사용하여 디지털 트윈 데이터를 확장하고 상호 작용할 수 있습니다. 이 기술 스택의 각 계층은 자체적으로 매우 강력하지만 함께 사용되어 지금까지 본 컴퓨팅&rsquo;의 가장 혁신적인 파도 중 하나를 구동합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/65089cc4-7a70-4d49-9169-3fe8c6d4192c.png"><img alt="Microsoft metaverse technology stack " height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b82e14ea-4da5-46b7-90ad-1bc9797e9962.png" style="display: inline;" title="" width="901"></a></p>
+
+
+  <h2>Anheuser-Busch InBev를 사용하여 미래의 양조장 만들기</h2>
+
+
+  <p>메타버스 애플리케이션에 사용되는 이 기술 스택은 현재 사용 가능하며, 이미 프로세스 제조, 소매, 공급망, 에너지 및 의료 산업 전반에서 획기적인 전환을 가능하게 하고 있습니다. AB InBev는 이것의 좋은 예입니다. 전 세계에 200개 이상의 양조장과 150,000명 이상의 직원이 근무하는 AB InBev는 세계에서 가장 큰 양조장입니다. 그들은&rsquo; 최고 수준의 품질과 일관성에 전념하고, 공정 제조&rsquo; 전문가를 맡으며,&rsquo; 이 스택을 활용하여 운영을 극적으로 변화시킵니다.</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="540" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEBCx" width="960"></iframe></p>
+
+
+  <p>AB InBev는 <a href="https://azure.microsoft.com/en-us/services/digital-twins/" target="_blank">Azure Digital Twins</a> 를 사용하여 양조장 및 공급망의 포괄적인 디지털 모델을 만들었습니다. 물리적 환경과 동기화된 디지털 모델은 천연 재료와 양조 공정&mdash; 간의 복잡한 관계를 날짜까지 최신 상태로&mdash; 유지하며 AB InBevs&rsquo; 브루마스터는 활성 조건에 따라 조정할 수 있습니다. 또한 최전방 운영자는 품질 및 추적 가능성 정보를 통합하여 패키징 프로세스 중에 필요한 컴퓨터에서 작동 시간을 유지할 수 있도록 지원합니다.</p>
+
+
+  <p>AB InBev는 또한 심층 보강 학습을 사용하여 포장 라인 운영자가 복잡한 작업에서 병목 상태를 감지하고 자동으로 보정하는 데 도움을 줍니다. 그들은 심지어 원격 지원을 위해 디지털 트윈을 통해 혼합 현실을 사용하여 여러 지역에서 효과적인 지식 공유를 촉진합니다. 이 기술 스택이 제공하는 제어 및 최적화를 통해 AB InBev는 대담한 비즈니스 및 지속 가능성 목표를 충족하면서 매번 고객에게 완벽한 한 모금을 제공할 수 있습니다.</p>
+
+
+  <h2>엔드 투 엔드 솔루션 전원 공급</h2>
+
+
+  <p>이 스택은 글로벌 파트너 에코시스템을 통해 제공되는 자사 솔루션부터 타사 솔루션까지 다양한 엔드 투 엔드 솔루션의 기초입니다. Microsoft에서 개발 중인 솔루션 중 일부는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><strong>Microsoft Dynamics 365 연결된 저장소:</strong> 실시간 관찰 데이터를 사용하여 매장 내 작업을 개선합니다.</li>
+      <li><strong>Microsoft Dynamics 365 Guides:</strong> 최전방 작업자가 더 잘 작동하고 더 정확하게 작업할 수 있도록 물리적 현실에 대한 단계별 홀로그램 지침 오버레이를 제공합니다.&nbsp;</li>
+      <li><strong>Microsoft Dynamics 365 Remote Assist:</strong> 작업자가 실제 환경에 대한 공유된 시각으로 혼합 현실에서 전 세계 어디서나 전문가와 연결할 수 있습니다. 이를 통해 물리적 장벽을 허물고 조직 전체에서 풍부한 지식 공유 및 교육을 수행할 수 있습니다.</li>
+      <li><strong>연결된 필드 서비스:</strong> 기계에 도움이 필요하고 기업이 유지 관리를 조정하는 데 도움이 되는 경우 수리 기술자를 자동으로 요청합니다.</li>
+  </ul>
+
+
+  <h2>현재 메타버스 앱 개발 시작</h2>
+
+
+  <p>이 기술 스택을 구현하는 것은 모놀리식 또는 선형 프로세스가 아닙니다&rsquo;. 메타버스 애플리케이션을 빌드하기 위한 고정된 시작점이 없으며 각 계층을 점진적으로 채택할 수 있습니다. 메타버스가 가능하게 하는 변화에 의지할 때, 우리는 이러한 경험을 전 세계 어디서나 모든 비즈니스가 최대한의 잠재력에 도달할 수 있도록 이러한 경험을 더 쉽게 구축하고 사용할&mdash; 수 있도록 하겠다는 대담한 야망을 가지고 있습니다. 우리는 당신이 우리와 함께 구축 무엇을보고 기다릴 수 없어&rsquo;.</p>
+
+
+  <p>메타버스 비전, 이를 실현하는 기술 스택 및 전 세계 조직이 이를 어떻게 실행 중인지 자세히 알아보려면 Microsoft Build 세션, <a href="https://mybuild.microsoft.com/sessions/f06287c8-8e56-452f-ae2f-e739c2be4870" target="_blank">Building Digital Twins, Mixed Reality 및 Metaverse Apps</a>를 시청하세요.</p>
+
+
+  <h2>시작 및 자세한 정보&nbsp;</h2>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/learn/certifications/azure-iot-developer-specialty/" target="_blank">Azure IoT 개발자 인증</a>&nbsp;</li>
+      <li><a href="https://docs.microsoft.com/en-us/learn/paths/develop-azure-digital-twins/" target="_blank">Azure Digital Twins를 사용하여 개발</a>&nbsp;</li>
+      <li><a href="https://azure.microsoft.com/en-us/overview/ai-platform/" target="_blank">Azure AI에 대해 자세히 알아보기</a>&nbsp;</li>
+      <li><a href="https://www.microsoft.com/en-us/ai/autonomous-systems" target="_blank">자율 시스템에 대해 자세히 알아보기</a> &nbsp;</li>
+      <li><a href="https://powerplatform.microsoft.com/en-us/" target="_blank">Microsoft Power Platform에 대해 자세히 알아보기</a>&nbsp;</li>
+      <li><a href="https://www.microsoft.com/en-us/mesh?rtc=1&amp;activetab=pivot%3aprimaryr7" target="_blank">Microsoft Mesh에 대해 자세히 알아보기</a>&nbsp;</li>
+      <li><a href="https://www.microsoft.com/en-us/hololens/" target="_blank">Microsoft HoloLens 대해 자세히 알아보기</a></li>
+  </ul>

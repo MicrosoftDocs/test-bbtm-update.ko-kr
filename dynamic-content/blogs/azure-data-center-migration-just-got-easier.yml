@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c60ef91732f77a593a35534cf5caadf25b1f50d3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900007"
+Slug: azure-data-center-migration-just-got-easier
+Title: Azure Data Center 마이그레이션이 더 쉬워졌습니다.
+Summary: ADCMS(Azure Data Center Migration Solution)로 적절하게 명명되고 Apache v2.0에서 라이선스가 부여된 이 솔루션은 한 Azure 데이터 센터에서 다른 Azure 데이터 센터로 자산을 이동하는 매우 유연하고 확장 가능한 방법을 제공합니다.
+Content: >-
+  클라우드 자산을 한 Azure 데이터 센터에서 다른 Azure 데이터 센터로 마이그레이션하려면 어떻게 해야 하나요? 동일한 데이터 센터의 한 구독에서 다른 구독으로 클라우드 배포를 이동하려면 어떻게 해야 하나요?
+
+
+  이러한 시나리오는 매우 일반적인 시나리오입니다. 예를 들어 Microsoft가 대기 시간을 단축하는 새 데이터 센터를 현재 데이터 센터에 더 가깝게 추가하거나 현재 클라우드 배포를 테스트 배포에 복제하려는 경우와 그 반대의 경우도 마찬가지입니다. 각각의 경우 마이그레이션은 복잡한 수동 작업일 수 있습니다.
+
+
+  데이터 센터 마이그레이션에 자동화, 사용자 지정 및 반복성을 추가하는 스크립트를 작성하면 주요 프로그래밍 프로젝트가 될 수 있으며, 마이그레이션 중 문제가 발생하는 경우 오류 처리에 대한 광범위한 투자를 할 수 있습니다.
+
+
+  <a href="https://www.persistent.com/">영구 시스템은</a> 이러한 유형의 마이그레이션에서 많은 고통을 덜어 주는 방갈로르의 Microsoft Azure CAT 팀과 협력하여 개발된 무료 오픈 소스 솔루션을 출시했습니다.
+
+
+  ADCMS( <b>Azure Data Center Migration Solution</b> )로 적절하게 명명되고 Apache v2.0에서 <a href="https://github.com/persistentsystems/adcms/blob/master/License.txt">라이선스가 부여된</a> 이 솔루션은 한 Azure 데이터 센터에서 다른 Azure 데이터 센터로 자산을 이동하는 매우 유연하고 확장 가능한 방법을 제공합니다. 원자성에 중점을 둔 이 유틸리티는 중단을 처리하고 중단된 위치에서 시작하거나 롤백하도록 설계되었습니다.
+
+
+  ADCMS는 구독 구성 메타데이터(선호도 그룹, 네트워크, 디스크, 가용성 집합, 부하 분산 장치 및 클라우드 서비스 포함)의 JSON 기반 템플릿을 생성합니다. 이 템플릿은 복제본을 유지하는 데 사용하거나 수정된 버전을 생성하는 데 편집할 수 있습니다. 이 방법론을 사용하면 내보내기, 가져오기 및 마이그레이션이 가능합니다.
+
+
+  이 솔루션은 <a href="https://github.com/persistentsystems/adcms">github</a>에서 다운로드할 수 있으며 포괄적인 <a href="https://github.com/persistentsystems/adcms/releases/download/v1.0/adcms_user_guide_v1.0.pdf">사용자 가이드</a>와 함께 제공됩니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/01/11/acdm_github.png"><img class="alignnone size-medium wp-image-242211" style="width: 536px; height: 214px;" alt="acdm_github" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/acdm_github-636x291.png" width="636" height="291" /></a>
+
+
+  자세한 내용은 릴리스를 발표하는 영구 시스템 블로그 게시물을 참조하세요. 또한 이 <a href="https://github.com/persistentsystems/adcms/releases/download/v1.0/adcms_v1.0_demo.mp4">비디오에서</a> ADCMS가 작동하는 것을 볼 수 있습니다.
+
+
+  .. 그리고 자세한 내용은 링크드 인에 건축가 사티시 니캄에서 더 자세한 <a href="https://www.linkedin.com/pulse/persistent-systems-releases-azure-data-center-migration-satish-nikam" target="_blank">엔지니어 게시</a> 를 참조하세요.
+
+
+  이 솔루션의 주요 이점은 템플릿 기반 및 오픈 소스 접근 방식에서 제공하는 유연성과 확장성입니다. 한 가지 주의해야 할 점은 마이그레이션이 오프라인으로 수행된다는 점입니다. 디스크 일관성을 유지하려면 마이그레이션 전에 VM을 종료해야 합니다.
+
+  <h2>가동 중지 시간이 없는 마이그레이션 옵션은 어떻습니까?</h2>
+
+  원본 VM이 대상 시스템으로 중단될 때까지 꺼지지 않는 가동 중지 시간을 절대 최소로 유지하는 마이그레이션이 필요하다고 가정합니다. 현재 미리 보기로 제공되는 가동 중지 시간이 거의 없는 VMware, AWS 및 Hyper-V에서 Azure로 자산을 마이그레이션하기 위한 무료 데이터 복제 기반 솔루션인 <a href="https://azure.microsoft.com/en-us/features/migration-accelerator/">Microsoft Migration Accelerator</a>는 곧 지원되는 마이그레이션 범위로 데이터 센터 마이그레이션인&gt; Azure 데이터 센터를 추가할 예정입니다.
+
+
+  고려해야 할 또 다른 옵션은 <a href="https://www.visionsolutions.com/">Vision Solutions</a>에서 <a href="https://www.visionsolutions.com/Products/DT-Move.aspx">Double-Take MOVE</a>입니다. 사용이 쉽고 가동 중지 시간을 최소화하면서 포괄적인 "어디서나" 마이그레이션 솔루션입니다. 설치 문제를 절약하기 위해 <a href="https://azure.microsoft.com/en-us/marketplace/?term=double-take">Azure Marketplace</a>에서 사용할 수 있는 다양한 라이선스 옵션을 사용하여 미리 설치된 여러 Double-Take MOVE 이미지가 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/01/12/doubletake.png"><img class="alignnone size-medium wp-image-242241" style="width: 545px; height: 407px;" alt="doubletake in Azure Marketplace" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/doubletake-505x369.png" width="505" height="369" /></a>
+
+
+  <strong> </strong>
+
+
+  더 많은 Azure 마이그레이션 제품을 사용할 수 있게 되면 Persistent의 오픈 소스 JSON 기반 템플릿 접근 방식, 마이그레이션 가속기의 고가용성 접근 방식 또는 move를 Double-Take 유연성과 원자성이 필요한지 여부에 관계없이 요구 사항에 맞는 솔루션을 쉽게 찾을 수 있습니다.

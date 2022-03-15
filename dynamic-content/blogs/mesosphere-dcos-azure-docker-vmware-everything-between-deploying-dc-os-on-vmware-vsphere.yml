@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 423d92baa95f6983a0849ffac85a6f49444f970d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906681"
+Slug: mesosphere-dcos-azure-docker-vmware-everything-between-deploying-dc-os-on-vmware-vsphere
+Title: Mesosphere DCOS, Azure, Docker, VMware & 모든 것 - VMware vSphere에 DC/OS 배포
+Summary: 이제 Docker 엔진이 가동 및 실행되고 모든 네트워크 & 보안 관련 구성이 준비되었으므로 이제 VMware vSphere를 기반으로 DC/OS 클러스터를 롤업해야 합니다. 이는 전체 플랫폼 설정에서 첫 번째 주요 이정표입니다.
+Content: >-
+  <p><em>이 게시물은 Mesosphere DC/OS, Azure, Docker, VMware &amp; Everything Between&rdquo; 여러 블로그 게시물 시리즈의 일부입니다&ldquo;. 이 시리즈의 이전 posta에서 다음 항목을 살펴보았습니다.</em></p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azure.microsoft.com/en-us/blog/mesosphere-dcos-azure-docker-vmware-and-everything-between-architecture-and-ci-cd-flow/">Mesosphere DCOS, Azure, Docker, VMware 및 아키텍처와 CI/CD 간의 모든 &ndash; Flow</a></p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azure.microsoft.com/en-us/blog/mesosphere-dcos-azure-docker-vmware-and-everything-between-security-docker-engine-installation/">Mesosphere DCOS, Azure, Docker, VMware 및 보안 &amp; Docker 엔진 설치 간의 &ndash; 모든 항목</a></p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azure.microsoft.com/en-us/blog/mesosphere-dcos-azure-docker-vmware-everything-between-ssh-authorized-keys/">Mesosphere DCOS, Azure, Docker, VMware &amp; SSH 권한 있는 키 간의 &ndash; 모든 항목</a></p>
+
+
+  <p>이제 Docker 엔진이 가동 및 실행되고 모든 네트워크 &amp; 보안 관련 구성이 준비&rsquo;되었으므로 이제 VMware vSphere를 기반으로 DC/OS 클러스터가 롤업됩니다. 이는 전체 플랫폼 설정에서 첫 번째 주요 이정표입니다. Lets&rsquo; get moving&hellip;</p>
+
+
+  <p>이는 DC/OS 심층 분석&rdquo; 시리즈가 아니&ldquo;므로 DCOS 구성 요소에 대한 자세한 내용은 자세히 알아보지 않지만, DCOS 구성 요소의 방식과 관련된 정보를 제공합니다.</p>
+
+
+  <p>설치 단계를 살펴보기 전에 <a href="https://dcos.io/docs/1.9/overview/architecture/node-types/">DCOS 노드 유형</a> 및 <a href="https://dcos.io/docs/1.9/overview/concepts/#infrastructure-network">네트워크 KB</a>로 진행하는 것이 좋습니다.</p>
+
+
+  <p>vSphere DCOS 클러스터 배포의 경우 공용 에이전트 노드를 배포하지 않습니다. 이유를 이해하려면 다시 돌아가서 CI/CD 흐름을 검토해야 합니다.</p>
+
+
+  <p>기억하시는 것처럼, 흐름 &ldquo;에서 프로덕션 컨테이너는&rdquo; vSphere에 배포된 DCOS 클러스터에서 중지됩니다. 공용 노드를 배포하지 않는 이유(DMZ 배포 호스트로 간주)는 회사 LAN 또는 VPN을 통해서만 프로덕션 컨테이너를 사용할 수 있도록 해야 한다는 고객 요구 사항입니다. 나중에 회사 부하 분산 장치를 통해 인터넷에 액세스할 수 있도록 하는 계획이지만, 유용하고 간단하게 유지하기 위해 개인 에이전트만 배포할 예정입니다.</p>
+
+
+  <p>에이전트 노드는 Docker 컨테이너 호스팅을 담당하며, 이 배포에는 3개의 컨테이너가 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/81b28ff2-216e-4d07-92d1-b7c430eeabb1.png"><img alt="DCOS Dashboard" border="0" height="507" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/049fe87d-c5d2-416b-b989-ad1b7bd7a4ed.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="DCOS 대시보드" width="1024"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://imallvirtual.com/mesosphere-dcos-azure-docker-vmware-everything-part-4/">내 블로그</a>에서 VMware vSphere를 기반으로 DC/OS 1.9 배포에 대한 모든 세부 정보를 읽어보세요.</p>

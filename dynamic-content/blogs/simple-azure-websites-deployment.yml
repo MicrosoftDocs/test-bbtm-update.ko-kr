@@ -1,0 +1,12 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c7cb18adb57d4f749f0ea15d79ac2149994f69b4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900674"
+Slug: simple-azure-websites-deployment
+Title: '간단한 Azure 웹 사이트: 배포'
+Summary: >
+  Azure 웹 사이트에 배포하는 기본 방법은 Git을 사용하는 것입니다. 이는 처음부터 참여해 온 기능(Kudu라고 함)이기 때문입니다. 그러나 경우에 따라 최소한의 소란으로 로컬 컴퓨터에서 많은 파일을 배포해야 하며 git을 사용하는 것은 과잉입니다. 이러한 시나리오의 경우 WebDeploy(즉, msdeploy)가 정말 빛납니다.
+Content: "Azure 웹 사이트에 배포하는 기본 방법은 <b>Git</b>을 사용하는 것입니다. 이는 처음부터 참여해 온 기능( <a href=\"https://github.com/projectkudu/kudu\">Kudu</a>라고 함)이기 때문입니다.\n\n그러나 경우에 따라 최소한의 소란으로 로컬 컴퓨터에서 많은 파일을 배포해야 하며 git을 사용하는 것은 과잉입니다. 이러한 시나리오의 경우 <b>WebDeploy</b> ( <b>즉, msdeploy</b>)가 정말 빛납니다.\n\nWebDeploy의 과제는 명령줄에서 사용하는 데 익숙해지는 데 약간의 시간이 걸릴 수 있다는 것입니다. 게시 프로필을 다운로드한 후(Azure Websites 대시보드에서) 여러 청크를 추출해야 합니다. 이러한 청크에서 로컬 폴더를 Azure Website에 배포하는 이 매력적인 명령줄을 함께 만들 수 있습니다.\n<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td valign=\"top\" width=\"779\">msdeploy.exe -verb:sync -source:contentPath=\"c:\\FolderToDeploy\" -dest: contentPath='MyAzureSite', ComputerName=\"https://waws-prod-blu-001.publish.azurewebsites.windows.net:443/msdeploy.axd?site=MyAzureSite\", UserName='$myazuresite', Password='fgsghfgskhBigUglyPasswordjfghkjsdhgfkj', AuthType='Basic'</td>\n</tr>\n</tbody>\n</table>\n그건 꽤 한 입, 그렇지? 잘...<b></b> \n\n<b>구조에 WAWSDeploy</b>\n\n일을 쉽게하기 위해, 나는 그것이 될 수있는 한 간단하게 작은 도구를 썼다. Azure Portal에서 게시 프로필을 다운로드해야 하지만 다음 간단한 명령을 실행하기만 하면 됩니다.\n<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td valign=\"top\" width=\"779\">WAWSDeploy c:\\FolderToDeploy MyAzureSite.PublishSettings</td>\n</tr>\n</tbody>\n</table>\n따라서 기본적으로 파일이 어디에 있는지 도구에 알리고 프로필에서 어디로 가야 하는지 알아봅니다. 이 도구는 zip 파일의 콘텐츠에서 직접 배포할 수도 있습니다(예: ).\n<table border=\"1\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td valign=\"top\" width=\"779\">WAWSDeploy c:\\MyFiles.zip MyAzureSite.PublishSettings</td>\n</tr>\n</tbody>\n</table>\n도구를 얻으려면 <a href=\"https://github.com/davidebbo/WAWSDeploy\">원본</a>에서 직접 빌드하거나 <a href=\"https://chocolatey.org/packages/WAWSDeploy\">Chocolatey</a>에서 가져올 수 있습니다.\n\n임의 노트:\n<ul>\n    <li>이 도구는 빌드 단계가 필요하지 않은 간단한 사이트에 가장 적합합니다(ASP.NET MVC용이 아님).</li>\n    <li>그것은 단지 재미 작은 도구 내가 측면에 쓴, 그리고 공식적으로 지원 하거나 마이크로소프트에 의해 후원.</li>\n    <li>WebDeploy는 Windows 작동하므로 WAWSDeploy에는 동일한 제한이 있습니다.</li>\n</ul>\nKudu 및 Azure Websites용 개발에 대한 자세한 내용은 <a href=\"https://blog.davidebbo.com\">블로그</a> 를 방문하세요."

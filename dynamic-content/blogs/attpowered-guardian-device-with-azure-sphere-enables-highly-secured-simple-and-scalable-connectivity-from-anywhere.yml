@@ -1,0 +1,81 @@
+### YamlMime:Yaml
+ms.openlocfilehash: db87222fb326437a96f9806351e92c07a005273c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907344"
+Slug: attpowered-guardian-device-with-azure-sphere-enables-highly-secured-simple-and-scalable-connectivity-from-anywhere
+Title: Azure Sphere를 사용하는 AT&T 전원 보호 디바이스를 사용하면 어디서나 매우 보호되고 단순하며 확장 가능한 연결을 사용할 수 있습니다.
+Summary: 2019년 7월, Microsoft와 AT&T는 혁신을 주도하고 IoT(사물 인터넷)를 포함한 가장 혁신적인 기술 중 일부에서 강력한 새로운 솔루션을 제공하기 위한 전략적 제휴를 체결했습니다. 현재 이 파트너십의 일환으로 AT&T는 네트워크, 보안 및 지원 서비스로 구동되고 Azure Sphere로 빌드된 셀룰러 보호 디바이스로 구성된 새로운 IoT 솔루션을 도입하고 있습니다.
+Content: >-
+  <p>2019년 7월, Microsoft와 ATT&amp;는 혁신을 주도하고 IoT(사물 인터넷)를 포함한 가장 혁신적인 기술 중 일부에서 강력한 새로운 솔루션을 제공하기 위한 전략적 제휴를 체결했습니다. 현재 ATT는 해당 파트너십의 일환으로 네트워크,&amp; 보안 및 지원 서비스로 구동되고 Azure Sphere를 사용하여 빌드된 셀룰러 보호 디바이스로 구성된 새로운 IoT 솔루션을 도입하고 있음을 공유하고 있습니다.</p>
+
+
+  <p>통신 및 네트워크 보안 분야의 글로벌 리더로서 ATT&amp;는 고객이 자신감을 가지고 혁신할 수 있는 복원력 있는 솔루션을 제공하는 데 깊이 투자하고 있습니다. 빌드할 IoT 플랫폼을 찾는 경우 사용 편의성과 동급 최고의 디바이스 보안의 균형을 맞추기 위한 노력에서 타협하지 않았습니다. 그들은 새로운 위협을 방지하고 시간이 지남에 따라 장치를 보호하기 위해 재생 가능한 보안을 원했습니다. 디바이스 보안을 위해 Microsoft Azure Sphere를 선택했습니다.</p>
+
+
+  <p>ATT에서 제공하는 셀룰러 지원 보호 디바이스는 ATTs&amp;&rsquo;&amp; 핵심 네트워크의 완전히 지원되는 다층 보안을 Azure Spheres&rsquo; 통합 실리콘, 소프트웨어 및 클라우드 서비스와 결합합니다. Azure Sphere 구성 요소는 원활하게 함께 작동하여 10년 이상 지속적인 디바이스 보안 업데이트를 제공합니다. 보호 장치는 장비 재설계가 거의 또는 전혀 없는 브라운필드 장비에 물리적으로 연결되어 ATT&amp; 보안 셀룰러 네트워크를 통해 에지-클라우드 통신을 제공합니다.</p>
+
+
+  <p>ATT&amp;&rsquo; 보호 장치는 Microsoft가 ATT&amp;와 같은 업계 리더와 협력하여 더 많은 것을 달성하고 고객에게 혁신과 기회를 제공하기 위해 어떻게 노력하고 있는지를 변환하는 예입니다. 이제 200개 이상의 국가 및 지역에 있는 조직은 다양한 디바이스를 자체 클라우드 네트워크에 직접 연결하여 원격으로 안전하게 관리하고 모니터링할 수 있습니다.</p>
+
+
+  <ul>
+      <li>Wi-Fi의 필요성을 우회하여 자체 클라우드에 직접 연결합니다.</li>
+      <li>Wi-Fi 액세스가 없는 원격 영역의 디바이스 연결</li>
+      <li>연결을 끊고 여러 Wi-Fi 네트워크에 다시 페어링할 필요 없이 모바일인 디바이스입니다.</li>
+  </ul>
+
+
+  <h2>엔터프라이즈를 위한 새 연결 옵션</h2>
+
+
+  <p>셀룰러 연결은 Azure Sphere를 통해 기본적으로 제공되는 Wi-Fi 연결 옵션에 큰 추가 기능입니다. 셀룰러를 통해 기업 고객이 데이터와 인사이트를 통해 실제 비즈니스 문제를 해결할 수 있는 매력적인 기회를 제공합니다.</p>
+
+
+  <p>예를 들어 타사 소유 Wi-Fi가 있는 임베디드 또는 프랜차이즈 매장(예: 식료품점, 공항, 병원 또는 원격 위치에 위치한 편의점, 패스트푸드 레스토랑, 커피숍 또는 원격 위치)이 있는 소매 조직은 이제 Azure Sphere를 사용하여 셀룰러 보호 모듈을 장비에 개조하고 클라우드 환경에 안전하고 직접 연결하여 제품 품질 및 고객 서비스를 개선하고 운영 비용을 절감할 수 있습니다.</p>
+
+
+  <h4>안전하게 연결된 디바이스 및 데이터의 비전 제공</h4>
+
+
+  <p>기업이 혁신을 통해 달성할 수 있는 것을 파악함에 따라 필수 장비를 클라우드에 연결할 때 조직이 취해야 하는 예방 조치는 잘 보장됩니다. 적절하게 보호하지 않으면 인프라가 악용에 취약해질 수 있으며, 이로 인해 장비가 쓸모 없게 렌더링되거나 악의적인 목적으로 제어되거나 데이터 오염 또는 기밀 정보가 손상될 수 있습니다.</p>
+
+
+  <p>IoT 공격은 조직을 위험에 빠뜨리고 너무 나빠서 장기적인 비즈니스 가치와 목표를 위태롭게 할 수 있습니다. ATT&amp;에서 완전히 지원되는 네트워크 보안과 Azure Sphere의 디바이스 수준 보안을 통해 조직은 디바이스와 클라우드 간에 보안이 유지되는 양방향 데이터 전송의 이점을 활용할 수 있습니다. ATT&amp;는 무선 네트워크 보안, 전문 서비스 및 보호자 디바이스 지원을 포함한 프런트 엔드 보안을 제공합니다. Azure Sphere는 백 엔드 보안을 제공하여 보호 디바이스에 연결된 디바이스 또는 장비를 보호합니다. 이 조합을 통해 기업은 연결된 환경으로 비즈니스를 혁신하면서 디바이스를 보호할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f9467eb7-1e4a-44ce-a8ca-4b0f89898241.png"><img alt="AT&amp;T powered guardian device with Azure Sphere 1 v3" border="0" height="631" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/88bd0e47-3e2a-4725-b44d-10af0133bbb6.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Sphere 1 v3을 사용한 ATT&amp; 전원 보호 디바이스" width="1001"></a></p>
+
+
+  <h2>간소화되고 확장 가능한 연결</h2>
+
+
+  <p>ATT&amp;&rsquo;의 광범위한 글로벌 네트워크를 사용하면 고객이&rsquo; 빠른 정품 인증을 통해 셀룰러를 통해 데이터를 이동할 수 있습니다. Azure Sphere를 사용하는 셀룰러 보호 디바이스를 사용하면 원활하고 민첩한 배포를 통해 모든 시장에서 디바이스 연결을 사용할 수 있습니다. ATT&amp; Global SIM을 사용하면 고객이 재인증할 필요 없이 200개 이상의 국가 및 지역에서 동일한 ATT&amp; 구독을 활용할 수 있습니다.</p>
+
+
+  <p>Azure Spheres&rsquo; 임무는 전 세계의 모든 조직이 보안되고 신뢰할 수 있는 IoT 디바이스를 연결하고 만들 수 있도록 하는 것입니다. 우리가 하는 모든 일은 이 사명을 중심으로 구성됩니다. ATT&amp;&rsquo;는 우리의 사명을 보완합니다. 그 핵심&rsquo;은 보안 연결에 언제 어디서나 액세스하여 IoT 변환을 가속화하도록 설계되었습니다.</p>
+
+
+  <p style="margin-left: 40px;">ATT&amp;는 고객을 위해 IoT를 더 쉽게 만들고자 합니다. EVP-Chief 제품 및 플랫폼 책임자인 Mo Katibeh는 <i>&ldquo;ATT&amp;와 Microsoft&rsquo;의 결합된 솔루션을 통해 고객에게 혁신과 비즈니스 문제 해결을 &ndash; 가속화할 수 있는 수단을 제공합니다. 연결 복잡성을 제거하는 간단한 고객 환경을 만드는 것입니다. 셀룰러를 사용하면 고객이 제어하지 않는 Wi-Fi 네트워크와 Wi-Fi 페어링 또는 관리 문제를 수행할 필요 없이 디바이스가 작동합니다.&rdquo;</i></p>
+
+
+  <p>조직은 Azure Sphere를 사용하여 ATT 기반 보호 디바이스를 통해 ATT&amp;&rsquo;&amp; 전문 서비스 제품군을 활용하여 IoT 배포 프로세스를 간소화할 수 있습니다. 기능에는 향상된 지원, 단일 공급자의 우선 순위 관리 및 모니터링, 간소화된 디바이스 연결 프로세스가 포함됩니다. 조직은 이러한 서비스를 활용하여 셀룰러 연결 배포를 확장하여 궁극적으로 더 많은 최종 고객에게 도달할 수 있습니다.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <p>ATT&amp;는 셀룰러 보호 디바이스에 대한 네트워크 보안 및 서비스를 제공하여 시장에 진정으로 독특한 제품을 도입했습니다. &rsquo;securityATT&mdash;&amp;에 대한 헌신으로 네트워크 리더가 셀룰러 보호 디바이스를 되돌리는 것을 보는 것은 고객이 확장 가능한 셀룰러 지원 IoT 배포를 통해 더 많은 것을 달성할 수 있는 길을 열어줍니다.</p>
+
+
+  <p><a href="https://techcommunity.microsoft.com/t5/internet-of-things/azure-sphere-cellular-connectivity-understanding-security/ba-p/1684304" target="_blank">Azure Sphere</a>와의 셀룰러 연결에 대해 자세히 알아보고 이 <a href="mailto:azuresphereguardian@att.com">ATT&amp; 팀과</a> 연결하여 Azure Sphere를 사용하는 ATT&amp; 기반 보호 디바이스가 비즈니스에 가져올 수 있는 기회를 살펴봅니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <hr>
+
+  <p><i>Azure. 목적에 따라 발명.</i></p>

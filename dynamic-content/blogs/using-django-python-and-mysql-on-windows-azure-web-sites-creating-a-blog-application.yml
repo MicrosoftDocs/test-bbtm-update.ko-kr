@@ -1,0 +1,421 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 073c25e50732b90312a3ac1942f71d6f1047c9c5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900098"
+Slug: using-django-python-and-mysql-on-windows-azure-web-sites-creating-a-blog-application
+Title: 'Windows Azure 웹 사이트에서 Django, Python 및 MySQL 사용: 블로그 애플리케이션 만들기'
+Summary: 작성하는 앱에 따라 Windows Azure 웹 사이트의 기본 Python 스택이 요구 사항을 있는 그대로 충족하거나 애플리케이션에 필요할 수 있는 모든 모듈 또는 라이브러리를 포함하지 않을 수 있습니다....
+Content: >-
+  작성하는 앱에 따라 <a href="https://azure.microsoft.com/en-us/documentation/services/web-sites/" target="_blank">Windows Azure 웹 사이트의</a> 기본 Python 스택이 사용자의 요구를 있는 그대로 충족하거나 애플리케이션에 필요할 수 있는 모든 모듈 또는 라이브러리를 포함하지 않을 수 있습니다.
+
+
+  이 블로그 게시물에서는 <a href="https://pypi.python.org/pypi/virtualenv" target="_blank">Virtualenv</a> 및 <a href="https://pytools.codeplex.com/" target="_blank">Visual Studio용 Python 도구</a> 사용하여 애플리케이션에 대한 Python 환경을 만드는 단계를 안내합니다.그 과정에서 <a href="https://www.djangoproject.com/" target="_blank">Django</a> 기반 사이트를 Windows Azure 웹 사이트에 배치하는 방법을 보여 드리겠습니다.
+
+  <h4>MySQL 데이터베이스를 사용하여 Windows Azure 웹 사이트 만들기</h4>
+
+  다음으로, <a href="https://manage.windowsazure.com/" target="_blank">Azure 관리 포털 </a> 에 로그인하고 <strong>사용자 지정 만들기</strong> 옵션을 사용하여 새 웹 사이트를 만듭니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/manage/services/web-sites/how-to-create-websites/" target="_blank">Azure Websites를 만드는 방법을 참조하세요</a> . MySQL 데이터베이스를 사용하여 빈 웹 사이트를 만듭니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5611.website1.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133481" alt="5611.website1.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5611.website1.jpg-550x0.jpg" width="550" height="352" /></a>
+
+
+  마지막으로 지역을 선택하고 사이트 약관에 동의하도록 선택한 후 설치를 완료할 수 있습니다.평소와 같이 비용을 줄이기 위해 웹 사이트와 동일한 지역에 데이터베이스를 배치하는 것이 좋습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4375.website2.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133471" alt="4375.website2.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4375.website2.jpg-550x0.jpg" width="550" height="352" /></a>
+
+
+  관리 포털에서 웹 사이트를 두 번 클릭하여 웹 사이트의 대시보드를 봅니다. "게시 프로필 다운로드"를 클릭합니다. 그러면 Visual Studio 배포에 사용할 수 있는 <strong>.publishsettings</strong> 파일이 다운로드됩니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/02/2273.website3.jpg-550x0.jpg"><img class="alignnone size-medium wp-image-133461" alt="2273.website3.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2273.website3.jpg-550x0-473x369.jpg" width="473" height="369" /></a>
+
+  <h4>Django 프로젝트 만들기</h4>
+
+  이 자습서에서는 Visual Studio 사용하여 Django 웹 애플리케이션을 빌드합니다. Visual Studio를 사용하여 애플리케이션을 빌드하려면 <a href="https://pytools.codeplex.com/releases" target="_blank">PTVS 2.0</a> 을 설치합니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/develop/python/tutorials/django-with-python-tools-for-visual-studio-20/" target="_blank">Visual Studio 사용하여 Django 앱을 빌드하는 방법을</a> 참조하세요.
+
+
+  Visual Studio 열고 <strong>새 Project &gt;</strong><strong> 기타 언어 &gt; </strong><strong>Python &gt;</strong><strong> Django Project </strong> 만들기
+
+
+  <strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0576.website4.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133451" alt="0576.website4.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0576.website4.jpg-550x0.jpg" width="550" height="344" /></a></strong>
+
+
+  솔루션 탐색기에서<strong> DjangoProject </strong><strong>&gt; DjangoApp 추가 </strong><strong>&gt;</strong> 를 마우스 오른쪽 단추로 클릭하여 Django Project 새 Django 애플리케이션을 만듭니다.
+
+
+  <strong><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/02/8176.website6.jpg-550x0.jpg"><img class="alignnone size-medium wp-image-133441" alt="8176.website6.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8176.website6.jpg-550x0-423x369.jpg" width="423" height="369" /></a></strong>
+
+  <p class="codeblock">Django 애플리케이션의 이름 입력(<strong>예: myblog </strong>)</p>
+
+  <p class="codeblock"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2783.website7.jpg-400x0.jpg"><img class="alignnone size-full wp-image-133431" alt="2783.website7.jpg-400x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2783.website7.jpg-400x0.jpg" width="400" height="118" /></a></p>
+
+
+  <h4>가상 환경 만들기</h4>
+
+  간단히 말해 <strong><em>, virtualenv </em></strong>를 사용하면 격리된 사용자 지정 Python 환경을 만들 수 있습니다.즉, 사이트의 나머지 부분에 영향을 주지 않고 다른 패키지를 사용자 지정하고 설치할 수 있습니다.이렇게 하면 실험에도 유용합니다.
+
+
+  솔루션 탐색기에서 Django Project Python 환경을 마우스 오른쪽 단추로 클릭하고 <em>"가상 환경 추가"</em>를 선택합니다.
+
+  <p class="codeblock"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1323.website8.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133421" alt="1323.website8.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1323.website8.jpg-550x0.jpg" width="550" height="295" /></a></p>
+
+  가상 환경 이름(예: "env")을 입력합니다. 이렇게 하면 pip를 제외한 Python 패키지 없이 가상 Python 환경을 포함하는 "env"라는 폴더가 생성됩니다.
+
+  <p class="codeblock"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/02/4353.website9.jpg-550x0.jpg"><img class="alignnone size-medium wp-image-133411" alt="4353.website9.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4353.website9.jpg-550x0-504x369.jpg" width="504" height="369" /></a></p>
+
+
+  <h4>가상 환경에 MySQL-Python 및 Django 패키지 설치</h4>
+
+  솔루션 탐색기에서 환경 <strong>환경을</strong> 마우스 오른쪽 단추로 클릭하고 Python 패키지 설치: <strong>django</strong>
+
+
+  <strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4810.website10.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133401" alt="4810.website10.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4810.website10.jpg-550x0.jpg" width="550" height="264" /></a></strong>
+
+
+  가상 환경에서 Django 설치의 출력을 볼 수 있습니다.
+
+  <p class="codeblock"><strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0333.website11.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133391" alt="0333.website11.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0333.website11.jpg-550x0.jpg" width="550" height="157" /></a></strong></p>
+
+  마찬가지로 mysql-python을 설치해야 하지만 여기에 표시된 것처럼 pip 대신 easy_install 사용합니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5707.website12.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133381" alt="5707.website12.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5707.website12.jpg-550x0.jpg" width="550" height="276" /></a>
+
+
+  이제 가상 환경에 Django 및 MySQL for Python이 모두 설치되었습니다.
+
+  <h4>데이터베이스 모델 빌드</h4>
+
+  Django의 모델은 Django <strong>Model 클래스</strong> 에서 상속되는 클래스이며 특정 개체의 모든 특성을 지정할 수 있습니다. 모델 클래스는 해당 속성을 데이터베이스에 저장된 값으로 변환합니다.
+
+
+  <strong>제목<em>, </em>날짜</strong><em> </em>및<em> </em><strong>본문</strong>의 <em>세 가지 필드 </em> 가 있는 <strong>Post</strong>라는 간단한 모델을 만들어 데이터베이스에 게시 테이블을 만들어 보겠습니다. 모델을 만들려면 <strong>myblog</strong><em>/</em> 폴더 아래에 <strong>models.py</strong> 파일을 포함합니다.
+
+  <p class="codeblockCxSpFirst" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">#<span class="code"> Model 클래스</span>에서 가져오기</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">django.db 가져오기 모델에서</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">클래스 Post(models. 모델:</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;"> #제목 속성 만들기</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    title = models. CharField(max_length=64)</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">#날짜 속성 만들기</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    date = models. DateTimeField()    </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">#콘텐츠 속성 본문 만들기</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    body = models. TextField()</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;"># 이 메서드는 .NET의 toString() 함수와 같습니다. Python에서 다음을 표시해야 할 때마다 </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">#개체의 문자열 표현으로 __, str__ 를 호출합니다.</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    def __str__(self):</span></p>
+
+  <p class="codeblockCxSpLast" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">        반환 "%s" % (self.title)</span></p>
+
+
+  <h4>모델 설치</h4>
+
+  데이터베이스에서 모델을 만들도록 Django에 지시해야 합니다.이렇게 하려면 몇 가지 작업을 더 수행해야 합니다.
+
+  <ul>
+   <li>먼저 settings.py 애플리케이션의 데이터베이스를 구성합니다 <strong>.</strong> Windows Azure 웹 사이트와 연결된 MySQL 데이터베이스 정보를 입력합니다.</li>
+  </ul>
+
+  <p class="codeblockCxSpFirst"><span style="font-family: 'courier new', courier;">DATABASES = {</span></p>
+
+  <p class="codeblockCxSpMiddle"><span style="font-family: 'courier new', courier;">    'default': {</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">        'ENGINE': 'django.db.backends.mysql',</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">        'NAME': 'MYSQL-DATABASE-NAME',                     </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">        'USER': 'MYSQL-SERVER-USER-NAME',                     </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">        'PASSWORD': 'MYSQL-SERVER-USER-PASSWORD',                  </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">        'HOST': 'MySQL-SERVER-NAME',                     </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">        'PORT': '',</span></p>
+
+  <p class="codeblockCxSpMiddle"><span style="font-family: 'courier new', courier;">    }</span></p>
+
+  <p class="codeblockCxSpLast"><span style="font-family: 'courier new', courier;">}    </span></p>
+
+  다음으로, settings.py INSTALLED_APPS 설정에 애플리케이션을  <a href="https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-INSTALLED_APPS" target="_blank">추가합니다</a> <strong>.</strong>
+
+  <p class="codeblockCxSpFirst" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">INSTALLED_APPS = (</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    'django.contrib.auth',</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    'django.contrib.contenttypes',</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    'django.contrib.sessions',</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    'django.contrib.sites',</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    'django.contrib.messages',</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    'django.contrib.staticfiles',   </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    'myblog', </span></p>
+
+  <p class="codeblockCxSpLast" style="padding-left: 30px;"><span class="code" style="font-family: 'courier new', courier;">    )</span></p>
+
+
+  <ul>
+   <li><strong>설정을 settings.py</strong> 저장한 후에는 이미 models.py 추가한 모델에 대한 Clear DB 데이터베이스에 스키마를 만듭니다<strong>.</strong> Django Sync DB 실행을 수행할 수 있습니다.</li>
+  </ul>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/02/1778.website16.jpg-550x0.jpg"><img class="alignnone size-medium wp-image-133371" alt="1778.website16.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1778.website16.jpg-550x0-349x369.jpg" width="349" height="369" /></a>
+
+
+  사용자 고유의 코드를 작성하여 블로그의 게시물 만들기, 편집, 삭제를 관리하거나 관리자 사이트 대시보드를 제공하는 관리 모듈 Django를 사용하여 게시물을 만들고 관리할 수 있습니다. Django 관리 사이트를 사용하도록 설정하는 방법은 이 <a href="https://docs.djangoproject.com/en/dev/ref/contrib/admin/" target="_blank">문서를</a> 참조하세요.
+
+  <h4>Django 관리 사이트 설정</h4>
+
+  관리 사이트에서 블로그 게시물을 만들고 관리하는 대시보드를 제공합니다. 먼저 관리 사이트에 액세스할 수 있는 슈퍼 사용자를 만들어야 합니다. 관리자 사용자를 아직 만들지 않은 경우 이 명령을 실행합니다.
+
+  <p class="codeblock" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">Python manage.py createsuperuser</span></p>
+
+  Django 셸을 사용하여 이 명령을 실행할 수 있습니다. Django Shell을 사용하는 방법에 대한 자세한 내용은 이 문서를 참조<a href="https://azure.microsoft.com/en-us/develop/python/tutorials/django-with-python-tools-for-visual-studio-20/" target="_blank">하세요</a>.
+
+
+  &nbsp;
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8037.website17.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133361" alt="8037.website17.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8037.website17.jpg-550x0.jpg" width="550" height="295" /></a>
+
+
+  &nbsp;
+
+
+  관리 모듈은 기본적으로 사용하도록 설정되지 않으므로 다음 몇 단계를 수행해야 합니다.
+
+  <ul>
+   <li>먼저 settings.py INSTALLED_APPS  <strong><a href="https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-INSTALLED_APPS" target="_blank"></a>setting에  </strong> <strong></strong> '<strong>django.contrib.admin</strong>'을 추가합니다.</li>
+  </ul>
+
+  <p class="codeblockCxSpFirst"><span style="font-family: 'courier new', courier;">INSTALLED_APPS = (</span></p>
+
+  <p class="codeblockCxSpMiddle"><span style="font-family: 'courier new', courier;">    'django.contrib.auth',</span></p>
+
+  <p class="codeblockCxSpMiddle"><span style="font-family: 'courier new', courier;">    'django.contrib.contenttypes',</span></p>
+
+  <p class="codeblockCxSpMiddle"><span style="font-family: 'courier new', courier;">    'django.contrib.sessions',</span></p>
+
+  <p class="codeblockCxSpMiddle"><span style="font-family: 'courier new', courier;">    'django.contrib.sites',</span></p>
+
+  <p class="codeblockCxSpMiddle"><span style="font-family: 'courier new', courier;">    'django.contrib.messages',</span></p>
+
+  <p class="codeblockCxSpMiddle"><span style="font-family: 'courier new', courier;">    'django.contrib.staticfiles',  </span></p>
+
+  <p class="codeblockCxSpMiddle"><span style="font-family: 'courier new', courier;">    'myblog',</span></p>
+
+  <p class="codeblockCxSpLast"><span style="font-family: 'courier new', courier;">    )</span></p>
+
+
+  <ul>
+   <li>이제 애플리케이션에 대한 요청을 관리 사이트 및 홈페이지 보기로 처리하도록 <strong>urls.py</strong> 업데이트합니다.</li>
+  </ul>
+
+  <p class="codeblockCxSpFirst" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">from django.conf.urls import patterns, include, url</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">#관리 모듈 가져오기</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">django.contrib 가져오기 관리자에서</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">admin.autodiscover()</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">#애플리케이션에 대한 요청을 처리하도록 URL 패턴 설정 </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">urlpatterns = patterns('',</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">     url(r'^$', 'DjangoApplication.views.home', name='home'),            </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">     url(r'^admin/', include(admin.site.urls)),</span></p>
+
+  <p class="codeblockCxSpLast" style="padding-left: 30px;">)</p>
+
+
+  <ul>
+   <li>다음으로, post 모델을 등록하는  <strong>myblogfolder</strong><em>/ </em> 아래에 admin.py 만듭니다.</li>
+  </ul>
+
+  <p class="codeblockCxSpFirst" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">모델에서 Post 가져오기</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">django.contrib 가져오기 관리자에서</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">#관리 사이트에 표시되도록 데이터베이스 모델을 등록합니다.</span></p>
+
+  <p class="codeblockCxSpLast" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">admin.site.register(Post)</span></p>
+
+
+  <h4>페이지 보기 빌드</h4>
+
+  만든 모든 블로그 게시물을 나열하는 방법을 만듭니다. 페이지 보기를 만들려면 <strong>myblog/</strong>폴더 아래에<strong> views.py</strong> 파일을 포함합니다.
+
+  <p class="codeblockCxSpFirst" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">django.shortcuts 가져오기 render_to_response</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">모델에서 Post 가져오기</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">#홈페이지에 대한 보기 만들기</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">def home(request):</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">   post = Post.objects.all()</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">   #지정된 컨텍스트 사전을 사용하여 지정된 템플릿을 렌더링하고 </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">returns an</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">   #렌더링된 텍스트가 있는 HttpResponse 개체입니다.</span></p>
+
+  <p class="codeblockCxSpLast" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">   return render_to_response('home.html', {'posts': posts} )</span></p>
+
+  Post 개체를 표시하는 것은 사용자에게 큰 도움이 되지 않으며 게시물 목록을 표시하려면 더 많은 정보를 제공하는 페이지가 필요합니다. 템플릿이 유용한 경우입니다. 일반적으로 템플릿은 HTML을 생성하는 데 사용되지만 Django 템플릿은 텍스트 기반 형식을 똑같이 생성할 수 있습니다.
+
+
+  이 템플릿을 만들려면 먼저 <strong>myblog</strong><em>/</em>에서 <strong>템플릿</strong>이라는 디렉터리를 만듭니다. <strong>views.py</strong> 모든 게시물을 표시하려면 모든 게시물 개체를 반복하고 표시하는 <strong>템플릿<em>/</em></strong> 폴더 아래에 <strong>home.html</strong> 만듭니다.
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">&lt;Html&gt;</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;"> &lt;headtitleMy&gt;&lt;&gt; 블로그&lt;/제목&gt;&lt;/머리&gt;</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;"> &lt;몸&gt;</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">  &lt;h1&gt; 내 블로그&lt;/h1&gt;</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">게시물 %}의 게시물 {%입니다.</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">&lt;h1&gt;{{ post.title }}&lt;/h1&gt;   </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">&lt;em&gt; &lt;time datetime="{{ post.date.isoformat }}"&gt;</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">{{ post.date}}&lt; /time&gt; &lt;br/&gt;</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">&lt;/em&gt; </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">&lt;p&gt;{{ post.body }}&lt;/p&gt;</span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;"> {% endfor %} </span></p>
+
+  <p class="codeblockCxSpMiddle" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;"> &lt;/body&gt;</span></p>
+
+  <p class="codeblockCxSpLast" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">&lt;/html&gt;</span></p>
+
+
+  <h4>정적 디렉터리 경로 설정</h4>
+
+  지금 관리 사이트에 액세스하면 스타일시트가 끊어진 것을 알 수 있습니다. 그 이유는 정적 디렉터리가 애플리케이션에 대해 구성되지 않았기 때문입니다.
+
+
+  정적 루트 폴더 경로를 D:\home\site\wwwroot\static으로 설정해 보겠습니다.
+
+
+  <span style="font-family: 'courier new', courier;">os 가져오기 경로에서</span>
+
+
+  <span style="font-family: 'courier new', courier;">PROJECT_ROOT = path.dirname(path.abspath(path.dirname(__file__)))</span>
+
+
+  <span style="font-family: 'courier new', courier;">STATIC_ROOT = path.join(PROJECT_ROOT, 'static').replace(''\\,'/')</span>
+
+
+  <span style="font-family: 'courier new', courier;"> </span>
+
+
+  <span style="font-family: 'courier new', courier;">STATIC_URL = '/static/'</span>
+
+
+  <strong>settings.py</strong> 이러한 변경 내용을 저장했으면 이 명령을 실행하여 Django Shell을 사용하여 관리 사이트의 "정적" 폴더에 있는 모든 정적 파일을 수집합니다.
+
+  <p style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">   Python manage.py collectstatic</span></p>
+
+
+  <h4>템플릿 디렉터리 경로 설정</h4>
+
+  거의 끝났습니다!Django를 사용하려면 템플릿 디렉터리 및 정적 폴더 디렉터리의 경로를 settings.py 구성해야 합니다. 이 작업을 수행하는 데 필요한 몇 가지 단계만 있습니다.
+
+  <ul>
+   <li>SITE_ROOT 경로에 대한 변수를 만들어 보겠습니다.</li>
+  </ul>
+
+  <p class="codeblockCxSpFirst" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">os.path 가져오기</span></p>
+
+  <p class="codeblockCxSpLast" style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">SITE_ROOT = os.path.dirname(__file__)</span></p>
+
+
+  <ul>
+   <li>그런 다음 Templates 폴더의 경로를 설정합니다.TEMPLATES_DIR 요청이 있을 때 애플리케이션에 대한 템플릿을 찾을 위치를 Django에 알릴 수 있습니다.</li>
+  </ul>
+
+  <p class="codeblockCxSpFirst" style="padding-left: 60px;"><span style="font-family: 'courier new', courier;">TEMPLATE_DIRS = (</span></p>
+
+  <p class="codeblockCxSpLast" style="padding-left: 60px;"><span style="font-family: 'courier new', courier;">   os.path.join(SITE_ROOT, "templates"),)</span></p>
+
+  애플리케이션 배포
+
+
+  이제 애플리케이션을 Windows Azure 웹 사이트 <strong><em>mydjangoblog</em></strong>에 배포하도록 설정되었습니다 <em> .</em> DjangoProject를 마우스 오른쪽 단추로 클릭하고 <strong>"게시"</strong>를 선택합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/02/7711.website19.jpg-550x0.jpg"><img class="alignnone size-medium wp-image-133351" alt="7711.website19.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7711.website19.jpg-550x0-475x369.jpg" width="475" height="369" /></a>
+
+
+  연결의 유효성을 검사한 다음 게시를 클릭하여 배포를 시작할 수 있습니다. 배포가 성공적으로 완료되면 웹 사이트를 찾아 첫 번째 블로그를 만들 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/02/7360.website20.jpg-550x0.jpg"><img class="alignnone size-medium wp-image-133341" alt="7360.website20.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7360.website20.jpg-550x0-474x369.jpg" width="474" height="369" /></a>
+
+  <h4>블로그 게시물 만들기</h4>
+
+  블로그를 만들려면 이전에 만든 슈퍼 사용자 자격 증명을 사용하여 관리 사이트에 <a href="https://mydjangoblog.azurewebsites.net/admin" target="_blank">https://mydjangoblog.azurewebsites.net/admin</a> 로그인합니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1018.website21.jpg-400x0.jpg"><img class="alignnone size-full wp-image-133331" alt="1018.website21.jpg-400x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1018.website21.jpg-400x0.jpg" width="400" height="264" /></a>
+
+
+  대시보드에는 모델에 대한 링크가 포함되며 애플리케이션에서 사용하는 모델의 콘텐츠를 관리할 수 있습니다. 게시물 클릭
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2211.website22.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133321" alt="2211.website22.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2211.website22.jpg-550x0.jpg" width="550" height="194" /></a>
+
+
+  첫 번째 블로그 게시물 만들기 및 저장
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3771.website23.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133311" alt="3771.website23.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3771.website23.jpg-550x0.jpg" width="550" height="207" /></a>
+
+
+  사이트의 홈페이지를 찾아 새로 만든 게시물을 살펴보겠습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0184.website24.jpg-550x0.jpg"><img class="alignnone size-full wp-image-133301" alt="0184.website24.jpg-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0184.website24.jpg-550x0.jpg" width="550" height="201" /></a>
+
+
+  이제 Windows Azure 웹 사이트의 Python에서 필요한 항목만 빌드하기 위한 기본 사항이 있습니다. 행복한 코딩 :)
+
+  <h4>추가 정보</h4>
+
+  <a href="https://www.djangoproject.com/" target="_blank">Django Project</a>
+
+
+  <a href="https://pytools.codeplex.com/documentation" target="_blank">Visual Studio용 Python 도구 Wiki</a>
+
+
+  <a href="https://www.youtube.com/channel/UCpKEjPmLsl19ETchJLJj42g?feature=watch" target="_blank">Visual Studio용 Python 도구 대한 비디오 자습서</a>
+
+
+  <a href="https://azure.microsoft.com/en-us/documentation/services/web-sites/" target="_blank">WAWS(Azure Websites) Windows</a>
+
+
+  <strong> </strong>

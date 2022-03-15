@@ -1,0 +1,101 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 83b338b163e800e892203ee7cb45c125a75801da
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907158"
+Slug: introducing-azure-media-analytics
+Title: 'NAB Show 2016: 강력한 비디오 인텔리전스를 위한 Azure Media Analytics 소개'
+Summary: Azure Media Services 팀은 엔터프라이즈 규모, 규정 준수, 보안 및...
+Content: >-
+  <p>직원을 교육하고, 고객을 참여시키고, 비즈니스 기능을 문서화하는 기본 미디어로 비디오를 도입하는 조직 및 기업이 늘어나고 있습니다. 클라우드 컴퓨팅은 이러한 대규모 미디어 파일을 저장, 스트리밍 및 액세스하는 데 효과적이지만, 회사에서 비디오 콘텐츠 라이브러리를 성장함에 따라 대상 그룹과 보다 의미 있고 개인화된 상호 작용을 만들고 비즈니스를 다음 단계로 끌어올리기 위해 비디오에서 새로운 인사이트를 추출하는 데 똑같이 효과적인 수단이 있어야 합니다.</p>
+
+
+  <p>마켓플레이스에서 이러한 증가하는 요구 사항을 해결하기 위해 Azure Media Services 팀은 <a href="https://www.nabshow.com/">NAB Show 2016</a>에서 엔터프라이즈 규모, 규정 준수, 보안 및 글로벌 범위의 음성 및 컴퓨터 비전 서비스 모음인 <a href="https://azure.microsoft.com/en-us/services/media-services/media-analytics/">Azure Media Analytics</a>의 공개 미리 보기를 발표하게 된 것을 자랑스럽게 생각합니다. Azure Media Analytics 서비스는 핵심 <a href="https://azure.microsoft.com/en-us/services/media-services/">Azure Media Services</a> 플랫폼 구성 요소를 사용하여 빌드되므로 첫날 대규모로 미디어 처리를 처리할 준비가 된 것입니다.</p>
+
+
+  <p>우리는 공공 안전, 정부 및 감시에서 소매, 교육, 자동차 등에 이르기까지 산업 전반의 고객의 피드백과 요구 사항에 따라 이러한 서비스를 도입하고 있습니다. Azure Media Analytics를 사용하면 대량의 비디오를 관리, 처리 및 검토하는 데 필요한 수동 작업을 줄여 생산성을 향상시키는 것을 목표로 합니다.</p>
+
+
+  <p>인텔리전트 클라우드 솔루션 개발을 위한 인지 미디어 솔루션을 제공하는 <a href="https://www.veritone.com/">Veritone</a>은 Cognitive Media Platform을 통해 방송사, 광고주, 미디어 회사 및 기타 기업을 위한 거의 실시간 인텔리전스 솔루션을 빌드하고 배포했습니다. 품종 &quot;인식 엔진&quot;에서 최고의 얼리 어답터로서 Veritone은 이미 Microsoft&#39;Azure Media Indexer 서비스를 플랫폼에 통합함으로써 실질적인 비즈니스 이점을 보았습니다. 이제 Azure Media Analytics의 일부인 Azure Media Indexer는 Veritone이 고객을 위해 여러 언어로 오디오 및 비디오 콘텐츠를 신속하게 분석하고 전사하는 데 도움을 주었습니다.</p>
+
+
+  <p>Veritone은 이미 인식 엔진 포트폴리오를 확장함에 따라 프라이빗 미리 보기에서 추가 Azure Media Analytics 서비스를 구현하기 시작했습니다. Veritone Media의 사장이자 Veritone, Inc.의 Co-Founder 라이언 스틸버그 (Ryan Steelberg)는 오늘날 조직과 기업이 놀라운 속도로 비디오 콘텐츠를 생산하고 있다고 말했다 &ldquo;. 산업&rsquo; 전반에 걸쳐 지능형 클라우드 솔루션을 구축하는 데 전념하는 회사로서 Microsoft Azure Media Analytics&rsquo; 고급 기계 학습 기술을 음성 및 비전에 플랫폼에 통합하게 되어 매우 기쁩니다. 이러한 통합은 인지 기능을 발전시키며, 고객이 현재 방송, 광고, 법 집행 및 법률 산업에 배포된 실행 가능한 인사이트를 파악할 수 있도록 합니다.&rdquo;</p>
+
+
+  <p>불과 2주 전 Microsofts&rsquo; <a href="https://build.microsoft.com/">Build Developer Conference</a>에서 Cognitive <a href="https://www.microsoft.com/cognitive-services">Services</a>의 일부로 이러한 기능 중 일부를 소개하여 개발자가 제한된 규모로 비디오에 대한 비전 기능을 빠르게 시작하고 이 고급 기능을 봇 및 애플리케이션으로 가져올 수 있도록 했습니다. Azure Media Analytics는 대규모 조직에 필요한 전체 규모, 규정 준수, 보안 및 글로벌 도달 범위를 통해 이러한 비디오 API를 엔터프라이즈 환경에 제공합니다.</p>
+
+
+  <p>이 발표의 일환으로 Azure Media Indexer(2014년 9월부터 일반 공급) 및 microsoft Hyperlapse for Azure Media Services(제한된 미리 보기 미디어 프로세서로 사용 가능)는 Azure Media Analytics에서 서비스 컬렉션에 참여합니다. Azure Media Indexer를 제외한 Azure Media Analytics의 모든 서비스는 제한된 시간 동안 무료로 사용할 수 있습니다. Azure Media Analytics의 <a href="https://aka.ms/amademos">데모 페이지를</a> 확인하여 이러한 기술의 가능성을 직접 확인할 수 있습니다.</p>
+
+
+  <h2>세부 정보: Azure Media Analytics</h2>
+
+
+  <p>오늘부터 Azure Media Analytics를 사용하는 고객은 다음 서비스에 액세스할 수 있습니다.</p>
+
+
+  <ul>
+      <li>
+      <p><strong><a href="https://azure.microsoft.com/en-us/blog/introducing-azure-media-indexer/">인덱서</a></strong> &ndash; 이 발표를 통해 <a href="https://azure.microsoft.com/en-us/blog/new-languages-with-azure-media-indexer-2-preview/">Azure Media Indexer 2 Preview</a>라는 새 미디어 프로세서를 통해 음성 텍스트 변환 기능에 대한 6개의 새로운 언어(총 8개)를 지원합니다. 지원되는 언어의 전체 목록에는 영어, 스페인어, 프랑스어, 독일어, 이탈리아어, 중국어, 포르투갈어 및 아랍어가 포함됩니다. 추가 언어에 대한 지원은 앞으로 몇 달 안에 제공될 예정입니다.</p>
+      </li>
+      <li>
+      <p><strong><a href="https://azure.microsoft.com/en-us/blog/announcing-hyperlapse-for-azure-media-services/">하이퍼랩스</a></strong> &ndash; Microsoft Hyperlapse는 MSR에서 20년 이상의 컴퓨터 비전 연구를 통해 비디오 안정화와 시간 경과를 결합하여 긴 형식의 콘텐츠에서 빠르고 소모성 있고 아름다운 비디오를 만든 결과입니다. Hyperlapse의 무료 공개 미리 보기 릴리스 이후 10,000프레임 제한을 제거했습니다. 시간 경과를 만드는 것 외에 Hyperlapse를 사용하여 휴대폰 및 캠코더를 통해 캡처한 흔들리는 비디오에서 안정적인 비디오를 만들 수 있습니다.</p>
+      </li>
+      <li>
+      <p><strong><a href="https://azure.microsoft.com/en-us/documentation/articles/media-services-motion-detection/">동작 감지</a> </strong>&ndash; 이름에서 알 수 있듯이 이 서비스를 사용하여 편지지 배경이 있는 비디오에서 동작을 감지할 수 있습니다. 이는 감시 비디오 피드에서 감시 카메라로 감지된 동작 이벤트에 대해 가양성을 확인하려는 고객에게 적합합니다.</p>
+      </li>
+      <li>
+      <p><strong><a href="https://azure.microsoft.com/en-us/blog/face-and-emotion-detection/">얼굴 감지 및 얼굴 감정</a> </strong>&ndash; 이 서비스를 사용하여 행복, 슬픔, 놀라움, 분노, 경멸, 두려움, 혐오 및 무관심 / 중립적 인 것을 포함하여 사람들의&rsquo; 얼굴과 감정을 감지 할 수 있습니다. 여기에는 이벤트 참여자의 반응을 집계하고 분석하는 등 아래에 설명된 몇 가지 유용한 산업 응용 분야가 있습니다.</p>
+      </li>
+      <li>
+      <p><strong><a href="https://azure.microsoft.com/en-us/blog/video-summarization-on-azure-media-analytics/">비디오 요약</a> </strong>&ndash; 비디오 요약은 원본 비디오에서 흥미로운 조각을 자동으로 선택하여 긴 비디오의 요약을 만드는 데 도움이 될 수 있습니다. 이는 긴 비디오에서 예상되는 사항에 대한 빠른 개요를 제공하려는 경우에 유용합니다.</p>
+      </li>
+      <li>
+      <p><strong>*<a href="https://azure.microsoft.com/en-us/blog/ocr-on-azure-media-analytics/">비디오 광학 문자 인식</a> </strong>&ndash; 이름에서 볼 수 있듯이 이 서비스를 사용하여 비디오에 표시되는 텍스트를 추출할 수 있습니다. 텍스트가 많은 비디오를 위한 스마트 검색 엔진을 빌드하는 데 매우 유용할 수 있습니다. 검색 엔진은 제목 및 설명뿐만 아니라 비디오에서 추출된 텍스트를 인덱싱할 수 있습니다.</p>
+      </li>
+      <li>
+      <p><strong>*<a href="https://azure.microsoft.com/en-us/blog/content-moderator-azure-media-analytics/">콘텐츠 조정</a> </strong>&ndash; 이 서비스는 공격적이고 불법적이고 부적절한 자료에 대한 콘텐츠 검토와 관련된 수동 작업을 줄이기 위해 고안되었으며&nbsp; 익명 소스에서 제출된 많은 사용자 생성 콘텐츠를 처리하는 경우 사용자에게 이상적입니다.</p>
+      </li>
+  </ul>
+
+
+  <p><i>*OCR(Video Optical Character Recognition) 및 콘텐츠 조정은 고객이 비공개 미리 보기로 사용할 수 있습니다. Video OCR 및 콘텐츠 조정에 대한 액세스 권한을 얻으려면 다음 이메일을 보내 <a href="mailto:amsanalytics@microsoft.com">amsanalytics@microsoft.com</a>세요. </i></p>
+
+
+  <h2>시나리오</h2>
+
+
+  <p>다음은 Azure Media Analytics가 산업 전반의 조직과 기업이 비디오에서 새로운 인사이트를 수집하여 보다 개인화된 대상 및 직원 참여를 만들고 비디오 콘텐츠의 양을 보다 효과적으로 관리하는 데 도움이 되는 시나리오의 몇 가지 예입니다.</p>
+
+
+  <ul>
+      <li>
+      <p><strong>콜 센터 </strong>&ndash; 소셜 미디어의 출현에도 불구하고 고객 콜 센터는 여전히 많은 고객 서비스 트랜잭션을 용이하게 합니다. 이 오디오 데이터에는 고객 만족도 향상을 위해 콜 센터 직원을 교육하고 제품 로드맵을 개선하기 위해 분석할 수 있는 고객에 대한 다양한 정보가 인코딩되어 있습니다. Azure Media Indexer를 사용하여 고객은 텍스트를 추출할 수 있으며, 가장 일반적인 불만, 불만의 원인 및 기타 이와 관련된 데이터에 대한 인텔리전스를 추출할 검색 인덱스 및 대시보드를 작성할 수 있습니다.</p>
+      </li>
+  </ul>
+
+
+  <ul>
+      <li>
+      <p><strong>교육 </strong>&ndash; &ndash; 특히 교육 부문에서는 동영상에 PowerPoint 슬라이드가 표시되는 경우가 많습니다. 인덱서와 함께 비디오 광학 문자 인식 서비스를 사용하여 고객은 음성 작품과 표시된 문장을 모두 추출하고 훨씬 풍부한 검색 인덱스를 작성하여 학생들이 관련 비디오를 훨씬 더 빨리 찾을 수 있도록 할 수 있습니다.</p>
+      </li>
+  </ul>
+
+
+  <ul>
+      <li>
+      <p><strong>사용자가 생성한 콘텐츠 조정 </strong>&ndash; 뉴스 미디어 아울렛에서 경찰 부서에 이르기까지 많은 조직에서는 비디오 및 이미지와 같은 UGC 미디어를 수락하는 공개 포털을 가지고 있습니다. 예기치 않은 이벤트로 인해 콘텐츠 양이 급증할 수 있습니다. 이러한 시나리오에서는 콘텐츠의 적합성을 수동으로 효과적으로 검토하는 것이 거의 불가능합니다. 고객은 콘텐츠 감수 서비스에 의존하여 적절한 콘텐츠에 중점을 둘 수 있습니다.</p>
+      </li>
+  </ul>
+
+
+  <ul>
+      <li>
+      <p><strong>감시 </strong>&ndash; IP 카메라의 증가와 함께, 감시 비디오의 폭발이있다. 감시 비디오를 수동으로 검토하는 것은 많은 시간이 소요되고 실수가 발생하기 쉽습니다. Azure Media Analytics는 동작 감지, 얼굴 감지, 비디오 OCR 및 Hyperlapse와 같은 여러 구성 요소를 제공하여 파생 항목을 보다 쉽게 검토, 관리 및 만드는 프로세스를 만듭니다.</p>
+      </li>
+  </ul>
+
+
+  <p>Were&rsquo;는 Azure Media Analytics를 추가하여 인텔리전트 클라우드를 개선하게 되어 매우 기쁩니다. 이번 주 NAB 쇼에 참석하는 경우&rsquo;,&rsquo; 자세한 내용을 보려면 SL6810에서 우리의 부스에 들러 당신을 사랑합니다. 또한 Azure Media Analytics의 <a href="https://aka.ms/amademos">데모 페이지를</a> 확인하여 이러한 기술의 가능성을 직접 확인하세요.</p>

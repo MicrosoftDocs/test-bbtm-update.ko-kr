@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: dcdad49eeba82d1588e27c5cb2b17b8f1153e981
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906284"
+Slug: announcing-alias-records-for-azure-dns
+Title: Azure DNS에 대한 별칭 레코드 발표
+Summary: '공용 영역에 대한 Azure DNS의 별칭 레코드에 대한 지원을 발표하게 되어 기쁘게 생각합니다. '
+Content: >-
+  <p>공용 영역에 대한 Azure DNS <strong>의 별칭 레코드</strong> 에 대한 지원을 발표하게 되어 기쁘게 생각합니다. 이 기능을 사용하면 고객은 참조된 Azure 리소스에 수명 주기 이벤트가 있을 때 DNS 레코드가 자동으로 업데이트되도록 DNS 영역 내에서 다른 Azure 리소스를 참조할 수 있습니다. 현재는 두 Azure 리소스인 공용 IP 및 Azure Traffic Manager 대한 별칭 레코드 참조를 지원하며, 향후 더 많은 리소스가 계획되어 있습니다.</p>
+
+
+  <p>별칭 레코드가 매우 유용한 일반적인 시나리오는 Azure 호스팅 애플리케이션의 공용 IP가 변경되면 DNS 영역을 최신 상태로 유지하는 것입니다. 공용 IP로 연결된 애플리케이션이 DNS 영역 내의 A 레코드를 통해 참조되는 Azure DNS 영역으로 일반적인 설정이 있습니다. 어떤 이유로든 IP 주소가 변경되거나 삭제되면 고객은 DNS 영역을 수동으로 업데이트하여 A 레코드를 업데이트해야 합니다. 트래픽이 차단되거나 의도되지 않은 대상으로 이동될 수도 있습니다. 별칭 레코드 지원을 통해 고객이 해야 할 일은 공용 IP 주소가 변경될 때 Azure DNS가 A 레코드를 자동으로 업데이트하여 올바른 IP를 가리키도록 별칭 레코드와 같은 레코드를 만드는 것입니다.</p>
+
+
+  <p>별칭 레코드에서 해결되는 또 다른 일반적인 시나리오는 고객이 강제로 리디렉션을 수행하지 않고 영역 루트에서 부하 분산 애플리케이션을 실행하는 것입니다. DNS 프로토콜을 사용하면 영역 루트에 대해 A 또는 AAAA 레코드만 지원됩니다. 별칭 레코드 기능을 사용하면 고객은 애플리케이션 엔드포인트가 Traffic Manager 외부 엔드포인트로 추가되는 Azure Traffic Manager 뒤에서 부하 분산된 애플리케이션을 실행할 수 있습니다. 그런 다음 고객은 영역 루트에서 Traffic Manager 프로필에 직접 별칭을 지정할 수 있습니다. 이러한 방식으로 영역 루트뿐만 아니라 www.contoso.com 같은 하위 도메인에서도 동일한 부하 분산 애플리케이션을 가리낼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/58afdd6c-913a-492d-a28e-568e144c8756.png"><img alt="aliasTMref" border="0" height="551" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e573c216-9e1e-489a-826a-c329666179fd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="aliasTMref" width="936"></a></p>
+
+
+  <p>Azure Application Gateway와 같은 공용 IP 리소스 또는 Azure Marketplace의 NVA에서 제공하는 다른 부하 분산 장치에서도 비슷한 시나리오를 실현할 수 있습니다.</p>
+
+
+  <p>별칭 레코드는 DNS 영역의 참조를 대상 리소스, 공용 IP 또는 Traffic Manager 프로필의 Azure Resource Manager ID에 추가하여 구현됩니다. 일반 DNS 영역에서는 Azure 리소스에 대한 명시적 참조가 없습니다. 대상은 기본 대상 &ldquo;리소스를 추적하지 않는다는 측면에서 DNS 레코드에 관한 한 정&rdquo; 적입니다. 별칭은 기본 대상 리소스의 수명 주기 추적을 도입하여 변경합니다. 이 내용은 아래에 나와 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7877021a-4914-409d-a89d-9e1ede166a72.png"><img alt="image" border="0" height="186" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ea751b4-f9e8-4b06-aa00-e41efb8e5460.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="581"></a></p>
+
+
+  <p>별칭 레코드는 Azure Portal, SDK, API, PowerShell 및 CLI를 통해 만들 수 있습니다. Azure Portal의 DNS 영역 블레이드에서 별칭 레코드를 구성하는 것 외에도 공용 IP 포털 블레이드에서 바로 공용 IP에 별칭 레코드를 추가하는 옵션도 있습니다. 아래 스크린샷은 이 흐름을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bedd1695-17b4-4808-8353-8ab56f3efcff.png"><img alt="A1" border="0" height="643" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9b501ff5-b4b3-4694-9b49-0d2460f79071.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="A1" width="1881"></a></p>
+
+
+  <p><a href="https://aka.ms/azurednsaliasdoc" target="_blank">별칭 레코드를 구성하고 사용하는</a> 방법에 대한 자세한 내용은 개요를 참조하세요. 공용 IP 및 Traffic Manager 사용하여 별칭 레코드를 만들기 위한 자습서도 있습니다. 이러한 자습서는 개요 문서에서 연결됩니다.</p>
+
+
+  <p>언제나처럼 피드백을 받는 것을 좋아합니다. <a href="https://feedback.azure.com/forums/217313-networking?category_id=77466" target="_blank">피드백 채널</a>에서 제안 및 피드백을 제출할 수 있습니다.</p>

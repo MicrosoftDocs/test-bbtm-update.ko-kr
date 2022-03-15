@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 72bbf8cf5e30e981ae41dad76d3736739eef8155
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900506"
+Slug: sql-azure-and-windows-azure-table-storage
+Title: Azure Table Storage SQL Azure 및 Windows
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] MSDN Magazine Joseph Fultz는 2010년 11월호에서 "azure Table Storage SQL Azure 및 Windows"라는 제목의 기사를 썼습니다. 조셉은 다음과 같은 논쟁을 하게 됩니다...'
+Content: '<p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>MSDN Magazine Joseph Fultz는 2010년 11월호에서 "<a href="https://msdn.microsoft.com/en-us/magazine/gg309178.aspx">azure Table Storage SQL Azure 및 Windows</a>"라는 제목의 기사를 썼습니다. Joseph은 종종 Azure Table Storage Windows SQL Azure 간의 차이점을 이해하는 데 혼동이 있다고 주장합니다. 이 문서에서는 azure Table Storage 및 SQL Azure Windows 기능 및 제약 조건에 대해 솔루션 및 솔루션 팀의 요구를 평가할 때 결정을 내리기 위한 몇 가지 지침을 제공합니다. 또한 몇 가지 코드 샘플이 있으므로 각 옵션을 사용하는 아이디어를 얻을 수 있습니다.</p>  <p>MSDN: <a href="https://msdn.microsoft.com/en-us/magazine/gg309178.aspx">azure Table Storage SQL Azure 및 Windows</a> 문서 읽기</p>'

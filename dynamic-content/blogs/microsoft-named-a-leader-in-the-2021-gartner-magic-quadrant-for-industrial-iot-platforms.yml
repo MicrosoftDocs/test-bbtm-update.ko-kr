@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5ecd2aa8a002fe189113e50010c5a6a5c1543c0d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906433"
+Slug: microsoft-named-a-leader-in-the-2021-gartner-magic-quadrant-for-industrial-iot-platforms
+Title: Microsoft는 2021년 Gartner® Magic Quadrant™ for Industrial IoT Platforms의 리더로 선정되었습니다.
+Summary: 전 세계 산업이 디지털 변환을 가속화하여 운영 비용을 절감하고, 새로운 서비스 제품을 만들고, 지속 가능성 목표를 달성함에 따라 산업 IoT 플랫폼은 기본적인 역할을 하고 있습니다. 이것이 바로 Gartner가 2년 연속 2021년 산업용 IoT 플랫폼용 매직 쿼드런트에서 Microsoft를 리더로 선정했다는 사실을 공유하는 이유입니다.
+Content: >-
+  <p>전 세계 산업이 디지털 변환을 가속화하여 운영 비용을 줄이고, 새로운 서비스 제품을 만들고, 지속 가능성 목표를 달성함에 따라 산업 IoT 플랫폼이 기본적인 역할을 하고 있습니다. Microsoft는 전 세계&#39;산업이 이러한 목표를 달성할 수 있도록 돕기 위해 최선을 다하고 있으며, 수년 동안 산업용 IoT 플랫폼을 포함하여 이를 강화하는 기능에 투자해 왔습니다.</p>
+
+
+  <p>이 때문에 Gartner는 <a href="https://www.gartner.com/doc/reprints?id=1-27IESWUW&amp;ct=210922&amp;st=sb" target="_blank">2년 연속 2021년 Gartner Magic Quadrant for Industrial IoT Platforms1</a><sup></sup>에서 Microsoft를 리더로 선정하고 Microsoft를 비전의 완전성에 가장 많이 배치하고 실행 능력에서 가장 높은 순위를 차지했습니다.&nbsp; 또한 Microsoft는 이 보고서의 리더 사분면을 PTC 및 Hitachi와 같은 주요 Azure 파트너와 공유합니다. 우리는 함께 전 세계 산업 고객이 목표를 달성할 수 있도록 지원할 수 있는 독특한 위치에 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/35c23594-d5e0-4c61-a677-85e3f9b326d5.png"><img alt="An image of the 2021 Gartner Magic Quadrant for Industrial IoT Platforms showcasing Microsoft in the top right quadrant as a Leader." border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3dd73e55-8840-46b9-bb3d-90deff443777.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="2021 Gartner Magic Quadrant for Industrial IoT Platforms_Updated" width="694"></a></p>
+
+
+  <p>몇 년 전에 산업용 IoT 플랫폼 기능을 빌드하기 위해 준비한 대로 몇 가지 주요 테넌트가 있었습니다.</p>
+
+
+  <ul>
+      <li><strong>보안 우선:</strong> 보안은 산업용 IoT 솔루션의 가장 중요한 기본 요소입니다. 이를&rsquo; 위해 수십 년간의 보안 환경을 기반으로 구축되었으며 IT 및 OT 팀이 함께 잘 작동할 수 있도록 고객과 파트너를 위한 일련의 기능을 만들었습니다. 칩에서 클라우드로, Azure Active Directory, Azure Key Vault, Azure IoT Hub 및 Device Provisioning Service, Azure Sphere, Azure Defender for IoT 및 Azure Sentinel을 사용하여 시장에서 가장 풍부한 보안 기능 집합을 제공합니다. 보안은 결코 수행되지 않으며, 가장 최근에는 <a href="https://www.microsoft.com/security/blog/2021/06/02/microsoft-acquires-refirm-labs-to-enhance-iot-security/" target="_blank">ReFirm Labs를 인수</a> 하여 디바이스 펌웨어에 대한 심층 보안 검사를 제공하기 위해 매년 보안 기능을 계속 확장하고 있습니다.</li>
+      <li><strong>열기 및 상호 운용성:</strong> 산업 고객은 잠금이 아닌 선택을 기대하며, 첫날부터 우리는 개방형 상호 운용성을 받아들였습니다. Microsoft는 개방형 표준 및 오픈 소스를 완전히 수용하고 산업용 IoT에 대한 표준 기반 접근 방식을 취했습니다. 우리는 <a href="https://opcfoundation.org/" target="_blank">OPC 재단</a>에 오픈 소스 소프트웨어의 번호를 하나의 기여자입니다, <a href="https://www.digitaltwinconsortium.org/" target="_blank">디지털 트윈 컨소시엄</a> 및 <a href="https://open-manufacturing.org/" target="_blank">오픈 제조 플랫폼</a>의 창립 멤버, 또한 <a href="https://www.cesmii.org/" target="_blank">스마트 제조 연구소</a>를 포함한 많은 산업 관련 기관에서 작동, <a href="https://www.vdma.org/" target="_blank">VDMA</a>, <a href="https://www.opengroup.org/" target="_blank">오픈 그룹</a>, 비트 콤, <a href="https://www.din.de/en" target="_blank">DIN</a>, <a href="https://www.a-star.edu.sg/" target="_blank">A *스타</a>, <a href="https://lni40.de/" target="_blank">랩 네트워크 산업 4.0</a>, <a href="https://www.odva.org/" target="_blank">ODVA</a>, <a href="https://www.iiconsortium.org/" target="_blank">산업 인터넷 컨소시엄</a>, <a href="https://www.zvei.org/en/" target="_blank">ZVEI</a>,  <a href="https://www.plattform-i40.de/IP/Navigation/EN/Home/home.html" target="_blank">플랫폼 인더스트리 4.0</a>, <a href="https://www.namur.net/en/index.html" target="_blank">NAMUR</a>, <a href="https://openindustry4.com/" target="_blank">오픈 인더스트리 4.0 얼라이언스</a> 및 <a href="https://www.data-infrastructure.eu/GAIAX/Navigation/EN/Home/home.html" target="_blank">GAIA-X</a>.</li>
+      <li><strong>에지 및 클라우드</strong>: 업계의 새로운 지속성 컴퓨팅 패러다임에는 에지와 클라우드가 포함되어 있으며, 하모니&mdash;에서 작동하는 클라우드는 에지가 클라우드와 마찬가지로 중요하다고 믿습니다. 산업용 IoT에서는 산업용 ISA-95 규격 네트워크에 배포할 수 있는 온-프레미스 연결이 끊어진 에지 컴퓨팅을 통해 이를 완전히 새로운 수준으로 끌어올렸습니다. 에지 컴퓨팅 지원을 통해 클라우드의 생산성과 인텔리전스를 배포하고 에지에서 연결되거나 연결이 끊어질 수 있습니다.</li>
+      <li><strong>파트너 주도:</strong> 세계&#39;산업이 디지털 변환을 가속화함에 따라 우리는 풍부하고 다양한 파트너 에코시스템이 산업용 IoT 기능을 사용하여 수천 개의 전문 솔루션을 제공하도록 요구되고 있다고 믿습니다. 초창기부터 우리는 ISV(독립 소프트웨어 공급업체) 및 GSI(글로벌 시스템 통합업체)를 선도하는 업계&rsquo; IoT에서 파트너 주도 전략을 가지고 있으며, 많은 사람들이 Gartner IIoT Magic Quadrant에서 우리와 함께 합니다.</li>
+  </ul>
+
+
+  <p>가트너가 이 네 가지 영역에서 우리의 노력을 인식하는 것을 보는 것은 훌륭했습니다. 우리는 세계&#39;산업이 목표를 달성하고, 산업 IoT에서 세계적 수준의 파트너와 지속적으로 협력하고, 궁극적으로 지속 가능한 산업을 가능하게 함으로써 세상을 더 나은 곳으로 만드는 데 도움을 줍니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+      <li><a href="https://www.gartner.com/doc/reprints?id=1-27IESWUW&amp;ct=210922&amp;st=sb" target="_blank">전체 무료 Gartner 보고서를</a> 읽어보십시오.</li>
+      <li><a href="https://azure.microsoft.com/en-us/overview/iot/industry/discrete-manufacturing/" target="_blank">Azure 산업용 IoT 솔루션</a>에 대해 자세히 알아보려면 웹 사이트를 방문하세요.</li>
+      <li><a href="https://aka.ms/gartnerIIoTSignals" target="_blank">IoT Signals Research를 무료로 다운로드</a> 합니다.</li>
+      <li><a href="https://open-manufacturing.org/#:~:text=The%20Open%20Manufacturing%20Platform%20%28OMP%29%20brings%20together%20business,innovation%20across%20the%20manufacturing%20community%20and%20value%20chain." target="_blank">Open Manufacturing Platform</a>에 대해 자세히 알아보세요.</li>
+      <li><a href="https://aka.ms/ZeroTrustIoT" target="_blank">IoT용 제로 트러스트 보안 문서를</a> 읽어보세요.</li>
+  </ul>
+
+
+  <hr>
+
+  <p><em>이 그래픽은 더 큰 연구 문서의 일환으로 Gartner, Inc.에 의해 출판되었으며 전체 문서의 컨텍스트에서 평가되어야합니다. Gartner 문서는 <a href="https://www.gartner.com/doc/reprints?id=1-27IESWUW&amp;ct=210922&amp;st=sb" target="_blank">요청 시 사용할 수 있습니다</a>.</em></p>
+
+
+  <p><em>GARTNER 및 Magic Quadrant는 미국 및 국제적으로 Gartner, Inc. 및 그 계열사의 등록 상표 및 서비스 마크이며 여기에서 사용 허가를 받아 사용됩니다. 판권.</em></p>
+
+
+  <p><em>Gartner는 연구 간행물에 표시된 공급업체, 제품 또는 서비스를 보증하지 않으며 기술 사용자에게 가장 높은 등급 또는 기타 지정을 가진 공급업체만 선택하도록 권고하지 않습니다. 가트너 연구 간행물은 가트너&rsquo; 연구 조직의 의견으로 구성되며 사실의 진술로 해석되어서는 안됩니다. Gartner는 특정 목적에 대한 상품성 또는 적합성에 대한 보증을 포함하여 이 연구와 관련하여 명시되거나 묵시적인 모든 보증을 부인합니다.</em></p>
+
+
+  <p><em>Gartner, Magic Quadrant for Industrial IoT Platforms, 2021년 10월 18일, Alfonso Velosa et. 알.</em></p>

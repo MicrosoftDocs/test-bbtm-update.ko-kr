@@ -1,0 +1,53 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9604705ba62e1ed18e9a903451282110a8d46cbc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907092"
+Slug: new-pci-dss-azure-blueprint-makes-compliance-simpler
+Title: 새로운 PCI DSS Azure Blueprint는 규정 준수를 더 간단하게 만듭니다.
+Summary: PCI-DSS v3.2.1 청사진 릴리스와 함께 중요한 규정 준수 표준에 대한 두 번째 Azure Blueprint를 발표하게 되어 기쁩니다.  새 청사진은 PCI DSS 규정 준수를 위한 핵심 정책 집합을 Azure 배포 아키텍처에 매핑하므로 소매업체와 같은 기업은 Azure 인프라에 기본 제공되는 규정 준수를 사용하여 새 환경을 신속하게 만들 수 있습니다.
+Content: >-
+  <p>Im&rsquo;은 PCI-DSS v3.2.1 청사진 릴리스와 함께 중요한 규정 준수 표준에 대한 두 번째 Azure Blueprint를 발표하게 되어 기쁩니다. 새 청사진은 PCI(결제 카드 산업) DSS(데이터 보안 표준) 규정 준수에 대한 핵심 정책 집합을 Azure 배포 아키텍처에 매핑하여 소매업체와 같은 기업이 Azure 인프라에 기본 제공되는 규정 준수를 사용하여 새 환경을 신속하게 만들 수 있도록 합니다.</p>
+
+
+  <p><a href="https://aka.ms/getblueprints" target="_blank">Azure Blueprints</a> 는 고객이 표준, 패턴 및 요구 사항을 구현하고 준수하는 반복 가능한 Azure 리소스 집합을 정의할 수 있는 무료 서비스입니다. Azure Blueprints를 사용하면 고객이 대규모 마이그레이션을 위한 프로덕션 구현을 지원하도록 확장할 수 있는 관리되는 Azure 환경을 설정할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0e7751e2-96d4-448b-9897-ef14b248a425.png"><img alt="Azure Blueprint configuration screen." border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7c3683e-1c7d-44a1-96b4-55b5be2eaa4e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Blueprint 구성 화면." width="947"></a></p>
+
+
+  <p>Azure Blueprints는 업계에서&rsquo; 가장 광범위하고 심층적인 91개 규정 준수 제품 포트폴리오를 통해 Azure가 규정 준수를 위한 강력한 플랫폼인 또 다른 이유입니다. Azure는 전 세계에서 가장 엄격한 보안 및 규정 준수 표준을 사용하여 빌드되었으며 물리적 데이터 센터, 인프라 및 운영 전반에 걸쳐 Microsoft에서 제공하는 다계층 보안을 포함합니다. 또한 Azure는 소매, 건강, 정부, 금융, 교육, 제조 및 미디어 산업을 위한 50개 이상의 규정 준수 제품을 포함하여 주요 산업의 특정 규정 준수 요구 사항을 위해 구축되었습니다.</p>
+
+
+  <p>ISO 27001, FedRAMP 및 SOC와 같은 규정 및 표준을 준수하는 것은 모든 유형의 조직에 점점 더 필요해지고 있으며, 규정 준수 표준에 대한 제어 매핑을 Azure Blueprints에 대한 자연스러운 애플리케이션으로 만듭니다. Azure 고객, 특히 규제 산업 분야의 고객은 규정 준수 부담을 덜어주기 위해 규정 준수 청사진에 큰 관심을 표명했습니다. 3월에는 가상 네트워크 및 정책과 같은 기본 Azure 인프라 집합을 특정 ISO 컨트롤에 매핑하는 ISO 27001 Shared Services 청사진 샘플을 <a href="https://azure.microsoft.com/en-us/blog/simplifying-your-environment-setup-while-meeting-compliance-needs-with-built-in-azure-blueprints/" target="_blank">발표</a> 했습니다.</p>
+
+
+  <p>PCI DSS는 신용 카드 데이터의 제어를 강화하여 사기를 방지하도록 설계된 글로벌 정보 보안 표준입니다. 신용 카드로 결제를 수락하는 조직은 5개 주요 신용 카드 브랜드의 결제 카드를 수락하는 경우 PCI DSS 표준을 따라야 합니다. 결제 및 카드 소유자 데이터를 저장, 처리 또는 전송하는 모든 조직에도 PCI DSS를 준수해야 합니다.</p>
+
+
+  <p>PCI-DSS v3.2.1 청사진에는 다음을 비롯한 중요한 PCI DSS 컨트롤에 대한 매핑이 포함됩니다.</p>
+
+
+  <ul>
+   <li><strong>의무의 분리.</strong> 구독 소유자 권한을 관리합니다.</li>
+   <li><strong>네트워크 및 네트워크 서비스에 대한 액세스.</strong> RBAC(역할 기반 액세스 제어)를 구현하여 Azure 리소스에 대한 액세스 권한이 있는 사용자를 관리합니다.</li>
+   <li><strong>사용자의 비밀 인증 정보 관리.</strong> 다단계 인증이 사용하도록 설정되지&#39;감사 계정.</li>
+   <li><strong>사용자 액세스 권한을 검토합니다.</strong> 감가 상각 계정 및 상승된 권한이 있는 외부 계정을 포함하여 검토를 위해 우선 순위를 지정해야 하는 계정을 감사합니다.</li>
+   <li><strong>액세스 권한 제거 또는 조정</strong> 구독에 대한 소유자 권한이 있는 사용되지 않는 계정을 감사합니다.</li>
+   <li><strong>로그온 절차를 보호합니다.</strong> 다단계 인증이 사용하도록 설정되지&#39;감사 계정.</li>
+   <li><strong>암호 관리 시스템.</strong> 강력한 암호를 적용합니다.</li>
+   <li><strong>암호화 컨트롤 사용에 대한 정책입니다.</strong> 특정 암호화 컨트롤을 적용하고 약한 암호화 설정의 사용을 감사합니다.</li>
+   <li><strong>이벤트 및 연산자 로깅입니다.</strong> 진단 로그는 Azure 리소스 내에서 수행된 작업에 대한 인사이트를 제공합니다.</li>
+   <li><strong>관리자 및 운영자 로그.</strong> 시스템 이벤트가 기록되었는지 확인합니다.</li>
+   <li><strong>기술 취약성 관리.</strong> Azure Security Center에서 누락된 시스템 업데이트, 운영 체제 취약성, SQL 취약성 및 가상 머신 취약성을 모니터링합니다.</li>
+   <li><strong>네트워크 컨트롤.</strong> 네트워크를 관리 및 제어하고 허용 규칙을 사용하여 네트워크 보안 그룹을 모니터링합니다.</li>
+   <li><strong>정보 전송 정책 및 절차.</strong> Azure 서비스를 사용한 정보 전송이 안전한지 확인합니다.</li>
+  </ul>
+
+
+  <p>당사는 고객이 안전하고 규정을 준수하는 방식으로 Azure를 활용할 수 있도록 최선을 다하고 있습니다. 앞으로 몇 개월 동안 HITRUST, 영국 NHS(National 상태 관리 서비스) IG(정보 거버넌스) Toolkit, FedRAMP 및 CIS(인터넷 보안 센터) 벤치마크에 대한 새로운 기본 제공 청사진을 출시할 예정입니다. 초기 미리 보기에 참여하려면 <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR1fUHl9R1JtPng3uyom9BmxUQjdNN1FDTlI4U0NERTlXQzJLSTA0SFhHUi4u" target="_blank">이 양식에 등록</a>하거나 규정 준수 청사진에 대한 제안이 있는 경우 <a href="https://feedback.azure.com/forums/915958-azure-governance" target="_blank">Azure 거버넌스 피드백 포럼</a>을 통해 공유하세요.</p>
+
+
+  <p>설명서에서 <a href="https://docs.microsoft.com/en-us/azure/governance/blueprints/samples/pci-dss-3.2.1/" target="_blank">Azure PCI-DSS v3.2.1 청사진</a> 에 대해 자세히 알아봅니다.</p>

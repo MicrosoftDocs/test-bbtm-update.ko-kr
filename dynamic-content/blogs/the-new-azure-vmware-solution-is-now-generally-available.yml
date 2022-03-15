@@ -1,0 +1,99 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 15f6c7f46df931ff7d1a0203615e8adc28f0c662
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907021"
+Slug: the-new-azure-vmware-solution-is-now-generally-available
+Title: 이제 새 Azure VMware Solution을 일반 공급
+Summary: '지난 주, Microsoft Ignite 기간 동안 새로운 Azure VMware Solution의 일반 공급이 발표되었습니다.Azure VMware Solution은 VMware Cloud Foundation 기술을 실행하는 Microsoft, VMware에서 검증된 클라우드에서 설계, 빌드 및 지원하므로 고객은 VMware 워크로드를 클라우드로 원활하게 확장하거나 마이그레이션할 수 있습니다. '
+Content: >-
+  <p>지난 주, Microsoft Ignite 기간 동안 <a href="https://azure.microsoft.com/en-us/blog/bring-innovation-anywhere-with-azures-multicloud-multiedge-hybrid-capabilities/" target="_blank">새로운 Azure VMware Solution의 일반 공급이 발표되었습니다</a>.&nbsp; VMware에서 <a href="https://www.vmware.com/vmware-cloud-verified.html" target="_blank">검증한 Microsoft, VMware</a> 에서 설계, 빌드 및 지원하는 Azure VMware Solution을 사용하면 고객이 VMware&nbsp; 워크로드를 클라우드로 원활하게 확장하거나 마이그레이션할 수 있습니다. 조직은 기존 VMware 기술 및 운영 프로세스를 유지하고, VMware Cloud Foundation 기술을 실행하고, Azureall&mdash;의 이점을 동시에 활용할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/microsoft-announces-next-evolution-of-azure-vmware-solution/" target="_blank">미리 보기를 발표한</a> 이후 Azure&rsquo; VMware Solution에 대한 기업에서 엄청난 관심을 보였습니다. 글로벌 건강 위기에 적응하고 복구하는 조직이 부분적으로 주도하는 조직은 비즈니스의 연속성, 복원력 및 비용 효율성을 보장하기 위해 클라우드를 점점 더 많이 채택하고 있습니다.</p>
+
+
+  <p>언제나처럼 Microsoft는 현재 고객을 충족하는 솔루션을 제공하는 데 주력하고 있습니다. 속도, 단순성 및 기술 보존이 중요한 시대에 Azure VMware Solution은 조직에 클라우드에 대한 빠른 경로를 제공하므로 비즈니스는 사용자가 알고 있는 VMware 플랫폼을 계속 사용하고 온-프레미스 워크로드를 빠르게 현대화할 수 있습니다.</p>
+
+
+  <h2>현재 위치에서 만날 수 있도록 엔지니어링됨</h2>
+
+
+  <p>Azure VMware Solution의 목표는 항상 고객에게 가장 안전하고 가장 기능적인 클라우드를 제공하는 것이었습니다. VMware와 협력하여 구축된 자사 Microsoft Azure 서비스로서, 우리는 고품질의 통합 솔루션을 제공하기 위해 두 플랫폼을 함께 제공합니다.</p>
+
+
+  <p>Azure VMware Solution은 글로벌 인프라의 속도, 규모 및 고가용성을 제공하기 위해 핵심 Azure 컴퓨팅 서비스로 엔지니어링되었습니다. 단순성을 중심으로 솔루션은 통합된 Azure Portal 환경과 다른 Azure 리소스에 대한 원활한 액세스를 제공합니다. Microsoft와 VMware 엔지니어링 팀은 vSphere, HCX, NSX-T 및 vSAN을 비롯한 친숙한 VMware Cloud Foundation 기술을 실행하는 새로운 기능을 제공하기 위해 긴밀히 협력했습니다. 또한 엔터프라이즈 고객으로부터 대규모 대량 마이그레이션의 중요성을 들었으므로 마이그레이션 노력을 더욱 쉽게 하기 위해 이제 RAV(복제 지원 vMotion)를 포함하는 HCX Enterprise 버전(현재 미리 보기 상태)을 활용할 수 있습니다.</p>
+
+
+  <p>마지막으로, 엔터프라이즈 마이그레이션에 대한 경험에서 클라우드로의 마이그레이션을 계획하고 예측하는 것이 중요하다는 것을 알고 있습니다. <a href="https://azure.microsoft.com/en-us/blog/plan-your-migration-to-azure-vmware-solution-using-azure-migrate/" target="_blank">Azure Migrate가 Azure VMware Solution을 지원</a>한다는 사실을 공유하게 되어 기쁘게 생각하며, 비즈니스에서 온-프레미스에서 실행되는 모든 VM을 검색하고 크기 조정 및 비용 분석을 기반으로 평가를 만들 수 있으므로 필요에 따라 Azure VMware Solution 프라이빗 클라우드를 만들 수 있습니다.</p>
+
+
+  <h2>Azure 하이브리드 혜택과 타의 추종을 불허하는 비용 효율성</h2>
+
+
+  <p>핵심 Azure 서비스인 Azure VMware Solution은 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">Azure 하이브리드 혜택을</a> 지원하므로 온-프레미스에서 실행되는 기존 Microsoft 워크로드를 가장 비용 효율적인 방법으로 클라우드로 가져올 수 있습니다. 이제 Azure로 마이그레이션하거나 확장할 때 기존 온-프레미스 Windows Server의 가치를 최대화하고 라이선스 투자를 SQL Server 수 있습니다. 또한 Azure VMware Solution 고객은 2008년 버전의 Windows Server 및 SQL Server 3년간 무료 확장 보안 업데이트를 받을 수 있습니다. 이러한 가격 책정 혜택은 Azure에서만 사용할 수 있으며 클라우드로의 여정에 대한 단순성과 비용 효율성을 만듭니다.</p>
+
+
+  <h2>Azure 서비스에 대한 원활한 액세스</h2>
+
+
+  <p>개발 전반에 걸쳐 Azure 서비스에 대한 원활한 연결을 제공하는 것이 가장 중요했습니다. Azure VMware Solution은 Azure의 모든 클라우드 리소스를 중앙 집중화할 수 있도록 Azure 글로벌 네트워크 백본과 긴밀하게 통합됩니다. 이제 온-프레미스 VMware 기반 애플리케이션을 완전히 마이그레이션하거나 확장하려는 경우 전체 환경에서 보안, 관리 및 현대화의 잠금을 해제할 수 있는 Azure 서비스에 액세스할 수 있습니다. 우리는 고객 대화에서 조직이 조직 내에서 클라우드 역량을 개발하는 데 시간이 필요하다는 것을 알고 있습니다. Azure VMware Solution은 클라우드로 빠르게 이동하여 사용자가 가지고 있는 VMware 도구 및 작업의 일관성을 유지하고 시간이 지남에 따라 클라우드 기술을 향상합니다.</p>
+
+
+  <p>비즈니스 연속성을 보장하고 보안 및 관리를 개선하기 위해 Azure VMware Solution 고객은 Azure 서비스를 증분 방식으로 연결하여 다음을 비롯한 기존 환경 및 프로세스를 개선할 수 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://techcommunity.microsoft.com/t5/azure-migration/azure-backup-for-azure-vmware-solutions-virtual-machines/ba-p/1468794" target="_blank">VM 백업</a> 및 복구를 위해 <a href="https://docs.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview" target="_blank">Recovery Services 자격 증명 모음</a> 과 결합된 Azure Backup. 규정 준수를 위해 지역 중복 장기 오프사이트 스토리지를 제공하며, 동시에 데이터 복원을 위한 단기 보존 요구 사항을 해결합니다. 이는 비용 효율적이며 확장 가능한 백업 접근 방식입니다.</li>
+      <li>Azure VMware Solution VM(가상 머신)과 함께 <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">Azure Security Center</a> 및 <a href="https://azure.microsoft.com/en-us/services/azure-sentinel/" target="_blank">Azure Sentinel</a>을 커넥트 보안 태세를 신속하게 강화하고 위협으로부터 보호합니다. 보안 위협이 계속 증가함에 따라 사용자 환경에 고급 모범 사례를 적용하는 간소화된 방법을 제공합니다.</li>
+      <li>향상된 관리 기능을 사용하여 효율성을 만들어 클라우드 및 하이브리드 환경을 지원합니다. vCenter 로그용 <a href="https://azure.microsoft.com/en-us/services/monitor/" target="_blank">Azure Monitor</a>를 통합하면 VM 사용에 대한 가시성이 제공됩니다. Windows VM의 수명 주기 관리를 위한 Azure Update Manager; <a href="https://azure.microsoft.com/en-us/services/traffic-manager/" target="_blank">여러</a> 엔드포인트에서 Azure VMware Solution에서 실행되는 애플리케이션 워크로드의 균형을 맞추는 Azure Traffic Manager. Azure VMware Solution에서 실행되는 웹앱에 대한 트래픽을 관리하는 Azure <a href="https://docs.microsoft.com/en-us/azure/application-gateway/" target="_blank">App Gateway</a>; 개발자 커뮤니티를 위해 Azure VMware Solution VM에서 API를 게시하고 보호하는 API Management입니다.</li>
+      <li>Azure <a href="https://azure.microsoft.com/en-us/services/netapp/" target="_blank">NetApp Files</a> 및 Azure <a href="https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction" target="_blank">파일 공유</a>와 통합하여 Azure VMware Solution에서 실행되는 VM에 대한 최적화 스토리지입니다. 또한 애플리케이션 스토리지 전략을 현대화할 때 이제 <a href="https://azure.microsoft.com/en-us/services/sql-database/" target="_blank">Azure SQL 서비스와</a> 통합할 수도 있습니다.</li>
+  </ul>
+
+
+  <h2>파트너 에코시스템 확장</h2>
+
+
+  <p>현재 데이터 센터에서 워크로드를 이동하고 기존 VMware 워크로드를 온-프레미스에서 클라우드로 확장하려는 경우 현재 사용할 수 있는 파트너 기술에 대한 지원 가능성도 중요하다는 것을 알고 있습니다. Microsoft는 현재 온-프레미스에서 실행되는 다른 엔터프라이즈 서비스뿐만 아니라 백업 및 재해 복구를 위한 선도적인 솔루션을 포함하여 IT 환경에 필수적인 주요 파트너와 긴밀히 협력하고 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Zerto와 Azure는 클라우드 채택을 가속화하고 DR(데이터 보호 및 재해 복구)을 간소화하려는 기업에게 오랫동안 이상적인 조합이었습니다. 이제 Microsofts&rsquo;에서 일반적으로 사용할 수 있는 Azure VMware Solution 릴리스를 통해 고객은 Zerto를 사용하여 온-프레미스와 동일한 원활한 환경을 통해 클라우드 및 클라우드 내에서 VM을 복제하고 보호할 수 있습니다. 사용자는 2시간 이내에 Azure VMware Solution에 복제하고 복구할 수 있으므로 영화를 보는 데 걸리는 시간보다 적은 시간에 실시간 엔터프라이즈 DR 솔루션을 구현할 수 있습니다. &rsquo;빠르고 관리&rsquo;하기&rsquo; 쉽고 하이브리드 클라우드 배포를 위한 재해 복구 및 데이터 보호를 위한 훌륭한 플랫폼입니다.&rdquo;</em></p>
+
+
+  <p style="margin-left: 40px; text-align: right;"><strong>Gil Levonai, CMO 및 SVP of Product, Zerto</strong></p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Microsoft Azure 파트너십을 통해 재해 복구 및 비즈니스 연속성을 위한 강력하고 비용 효율적인 솔루션을 제공할 수 있습니다. JetStream DR 소프트웨어는 엔터프라이즈 VMware 환경에 지속적인 데이터 보호를 제공하고, Azure Blob Storage 복구 자산을 유지 관리하는 비용 효율적인 수단을 제공하며, Azure VMware Solution은 복구 및 장애 조치 요구 사항에&#39; 고객을 충족하도록 확장할 수 있는 고가용성 신뢰할 수 있는 VMware 플랫폼을 제공하는 이상적인 조합입니다.&#39;&rdquo;</em></p>
+
+
+  <p style="margin-left: 40px; text-align: right;"><strong>톰 크리터, Co-Founder 및 CEO, 제트스트림</strong></p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Microsoft Azure 사용하는 것은 Commvaults&rsquo; 솔루션의 성공에 중요한 구성 요소였으며, 고객 유형이 다른 엔터프라이즈 차원의 데이터 환경의&rsquo; 일부로 Azure VMware Solution에 대한 지원을 추가하게 되어 기쁩니다. Microsoft의 공동 고객은 Microsoft&rsquo; Azure 인프라를 활용하여 제품의 주요 기능과 원활하게 결합된 용이성, 확장성, 보안 및 비용 절감의 이점을 얻을 수 있어 고객에게 성공적인 조합이 됩니다.&rdquo; </em></p>
+
+
+  <p style="margin-left: 40px; text-align: right;"><strong>Randy De Meno, VP/CTO, Microsoft Products &amp; Solutions, Commvault</strong></p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Veritas Technologies와 Microsoft Azure 팀은 Azure VMware Solution에서 가장 중요한 고객 요구를 해결하기 위해 지속적인 파트너십에 상호 투자됩니다. Azure VMware Solution의 VMware 관리자&rsquo; 기대치를 능가하는 보호 및 복구 수준을 제공하기 위해 초기 테스트 및 인증에서 매우 긴밀하게 협력했습니다. Veritas 데이터 보호 솔루션은 VM 데이터가 어디에 있든 스토리지 감소 및 자동화된 지능형 정책의 엔터프라이즈 데이터 보호 요구 사항을 충족하는지 확인합니다. Veritass&rsquo;는 다음 버전의 Azure VMware Solution에 대한 지속적인 지원을 통해 VMware 자산을 포함하여 하이브리드 클라우드를 지속적으로 채택할 수 있도록 공동 고객을 지원하기 위한 강력한 파트너십과 조율된 노력을 보여 줍니다. VMware 관리자는 워크로드와 관련하여 더 이상 로컬 또는 호스트 중에서 선택할 필요가 없으며, 데이터가 Veritas NetBackup을 사용하여 어디서나 보호되고 복구할 수 있다는 사실을 쉽게 알 수 있습니다.&rdquo; </em></p>
+
+
+  <p style="margin-left: 40px; text-align: right;"><strong>Doug 매튜스, VP 제품 관리, Enterprise 데이터 보호 및 규정 준수, Veritas</strong></p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Veeam은 현재 Microsoft Azure Veeam Backup을 통해 Azure 네이티브 가상 머신의 백업을 지원합니다. 이제 Azure VMware Solutions에 대한 Veeam 지원을 통해 Azure와 VSphere 워크로드를 쉽게 백업하고 복제할 수 있습니다. Veeam Availability Suite를 통해 온-프레미스 VMware, Azure VMware Solution 및 Azure 네이티브 VM 워크로드에서 간단한 워크로드 보호 및 이식성을 사용할 수 있습니다. 클라우드 데이터 관리의 선두 주자로서 Veeam은 375,000명의 고객과 파트너십을 맺고 비즈니스 목표를 달성할 수 있도록 돕기 위해 노력하고 있습니다. Azure VMware Solution에 대한 첫 번째 지원은 고객의 헌신뿐만 아니라 VMware 및 Microsoft와의 투자 및 강력한 장기 관계에 대한 증거입니다.</em>&ldquo;</p>
+
+
+  <p style="margin-left: 40px; text-align: right;"><strong>대니 앨런, 제품 전략의 최고 기술 책임자 및 SVP, Veeam</strong></p>
+
+
+  <h2>Azure VMware Solution에 대해 자세히 알아보기</h2>
+
+
+  <ul>
+      <li><strong>Ignite 세션 보기</strong>: 솔루션 및 일반 공급 공지 사항에 대해 자세히 알아보려면 <a href="https://myignite.microsoft.com/sessions/adcaabd7-9038-45d0-8e41-cf5fa3be5f1e" target="_blank">Azure VMware Solution Ignite 개요 세션을</a> 시청하거나 <a href="https://azure.microsoft.com/en-us/services/azure-vmware/" target="_blank">Azure VMware Solution 웹 페이지를 방문하세요</a>. Ignite에서 다음 기술 세션을 확인할 수도 있습니다. <a href="https://Aka.ms/AVSIgnite2020" target="_blank">AVS 기술 개요</a>, <a href="https://Aka.ms//AVSbcdr" target="_blank">AVS 비즈니스 연속성 및 재해 복구</a>, <a href="https://Aka.ms//avsnetworking" target="_blank">AVS 네트워킹</a>.</li>
+      <li><strong>Azure VMware Solutionin&nbsp; 작업을 참조하세요</strong>. 솔루션이 작동하는 모습을 보고&#39;최신 <a href="https://microsoft-my.sharepoint.com/personal/laainley_microsoft_com/Documents/AVS/Blog/aka.ms/AVSMechanics" target="_blank">Microsoft Mechanics</a> Azure VMware Solution 데모를 시청하세요.&nbsp;</li>
+      <li><strong><a href="https://blogs.vmware.com/vmworld/2020/09/microsoft-azure-and-vmware-makes-the-path-to-the-cloud-easier.html" target="_blank">VMworld 2020에 참여</a></strong>하세요. Microsoft는 VMworld 2020에서 다이아몬드 스폰서가 되어 기쁘게 생각하고 새로운 디지털 형식으로 여러분과 연결하기를 기대합니다. <a href="https://azure.microsoft.com/en-us/free/services/virtual-desktop/?&amp;ef_id=Cj0KCQjws536BRDTARIsANeUZ5_Or5lnunuqoXEonQwabvcClbgtBFyIGy3Fw6HmEeK9j1TEw_j89aAaAgMLEALw_wcB:G:s&amp;OCID=AID2100131_SEM_Cj0KCQjws536BRDTARIsANeUZ5_Or5lnunuqoXEonQwabvcClbgtBFyIGy3Fw6HmEeK9j1TEw_j89aAaAgMLEALw_wcB:G:s&amp;gclid=Cj0KCQjws536BRDTARIsANeUZ5_Or5lnunuqoXEonQwabvcClbgtBFyIGy3Fw6HmEeK9j1TEw_j89aAaAgMLEALw_wcB" target="_blank">Azure VMware Solution, Horizon Cloud 및 Windows Virtual Desktop, Azure의 VMware Tanzu, Azure Spring Cloud</a> 등 여러 솔루션 영역에서 함께 협력하는 다양한 솔루션 영역에서 훌륭한 스피커와 세션을 제공합니다.</li>
+  </ul>

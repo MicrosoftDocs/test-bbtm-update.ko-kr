@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cd4617c41b7d4214c6a4e45ad1f864dd02135d94
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906679"
+Slug: mesosphere-dcos-azure-docker-vmware-everything-between-deploying-dc-os-with-azure-container-service
+Title: Mesosphere DCOS, Azure, Docker, VMware & 모든 것 – Azure Container Service를 사용하여 DC/OS 배포
+Summary: vSphere 위에 작동하는 DC/OS 클러스터가 있지만 이제는 ACS(Azure Container Service)를 사용하여 다른 클러스터를 배포할 차례입니다. 두려워하지 말고, 고통없이 Azure에서 실행되는 &이 아기를 얻는 것이 훨씬 빠를 것입니다.
+Content: >-
+  <p>이 게시물은 Mesosphere DC/OS, Azure, Docker, VMware &amp; Everything Between&rdquo; 여러 블로그 게시물 시리즈의 일부입니다&ldquo;. 이 시리즈의 이전 게시물에서 다음 항목을 살펴보았습니다.</p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azure.microsoft.com/en-us/blog/mesosphere-dcos-azure-docker-vmware-and-everything-between-architecture-and-ci-cd-flow/">Mesosphere DCOS, Azure, Docker, VMware 및 아키텍처와 CI/CD 간의 &ndash; 모든 Flow</a></p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azure.microsoft.com/en-us/blog/mesosphere-dcos-azure-docker-vmware-and-everything-between-security-docker-engine-installation/">Mesosphere DCOS, Azure, Docker, VMware 및 보안 &amp; Docker 엔진 설치 간의 &ndash; 모든 항목</a></p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azure.microsoft.com/en-us/blog/mesosphere-dcos-azure-docker-vmware-everything-between-ssh-authorized-keys/">Mesosphere DCOS, Azure, Docker, VMware &amp; 모든 것 SSH &ndash; 권한 있는 키</a></p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azure.microsoft.com/en-us/blog/mesosphere-dcos-azure-docker-vmware-everything-between-deploying-dc-os-on-vmware-vsphere/">Mesosphere DCOS, Azure, Docker, VMware &amp; 모두 &ndash; Azure Container Service를 사용하여 DC/OS 배포</a></p>
+
+
+  <p>얼마나 큰 기쁨입니까! vSphere 위에 작동하는 DC/OS 클러스터가 있지만 이제&rsquo;는 ACS(Azure Container Service)를 사용하여 다른 클러스터를 배포할 시간이 있습니다. 두려워하지 말고, 이 아기를 &amp; Azure에서 달리는 것이 훨씬 더 빠를 것입니다.</p>
+
+
+  <p>기억하시는 것처럼 이 시나리오에서는 두 개의 DC/OS 클러스터가 있습니다. 하나는 프로덕션&rdquo; Docker 컨테이너를 &ldquo;실행하는 데 사용되고 두 번째 컨테이너는 Integration &amp; Testing&rdquo;에 &ldquo;사용됩니다.</p>
+
+
+  <p>Azure에서 클러스터를 배포하기 위해 반관리 컨테이너 오케스트레이션 플랫폼인 Azure Container Service의 마법을 사용합니다. 모든 빅 3 &ndash; DC/OS, Kubernetes 및 Docker Swarm을 지원합니다. 수동 온-프레미스 배포와 달리 ACS는 많은 작업을 수행합니다. 필요한 것은 원하는 마스터 및 슬레이브 노드 수와 노드&rsquo; 수를 명시하기만 하면 됩니다.</p>
+
+
+  <p>ACS 배포와 온-프레미스의 또 다른 주요 차이점은 Azure에서 DC/OS를 프라이빗 및 퍼블릭 슬레이브 노드와 함께 배포해야 한다는 것입니다. vSphere 기반 배포에서 공용 에이전트를 설치하지 않았다는&rsquo; 것을 기억하세요.</p>
+
+
+  <p>이제 ACS를 사용하여 DC/OS를 사용하고 배포하는 방법에 대한 블로그 게시물, KB 및 문서가 많이 있으므로 Ill&rsquo;은 가능한 한 짧지만 포괄적으로 만들려고 노력합니다. IMHO, <a href="https://docs.microsoft.com/en-us/azure/container-service/">Microsoft ACS 설명서는</a> 시작하기에 아주 좋은 장소입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4ae35197-f496-4ec5-ade1-17085a580dd7.png"><img alt="DC OS 1.9 deployment" border="0" height="402" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/180386da-3bd8-48ae-b812-af11abac4d1e.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="DC OS 1.9 배포" width="770"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://imallvirtual.com/mesosphere-dcos-azure-docker-vmware-everything-between-part-5/">개인 블로그</a>에서 VMware vSphere를 기반으로 DC/OS 1.9 배포에 대한 모든 세부 정보를 읽어보세요.</p>

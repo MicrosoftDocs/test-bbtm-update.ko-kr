@@ -1,0 +1,25 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c2f4bcbcd72efc1da9f157db87d95e7382cfb644
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906928"
+Slug: announcing-http-2-support-for-all-azure-cdn-customers
+Title: 모든 Azure CDN 고객에 대한 HTTP/2 지원 발표
+Summary: Azure CDN
+Content: >-
+  <p>2016년 8월에 Akamai의 Azure CDN 대한 HTTP/2 지원을 <a href="https://azure.microsoft.com/en-us/blog/announcing-http-2-support-for-all-customers-with-azure-cdn-from-akamai/">발표</a>했습니다. 오늘, 우리는 Verizon에서 Azure CDN 사용하여 allcustomers&nbsp;에 대한HTTP / 2is&nbsp;도&nbsp; 사용할 수 있음을&nbsp; 발표하게되어 기쁘게 생각합니다.&nbsp; 고객으로부터 추가 조치가&nbsp; 필요하지 않습니다. HTTP/2는 기본적으로 추가 비용 없이 모든 기존 및 새 Azure CDN 프로필에 대해 설정됩니다.</p>
+
+
+  <p>HTTP/2는 웹 페이지 로드 속도를 개선하고 사용자 환경을 최적화하도록 설계되었습니다. 오늘&nbsp; 코드 베이스를 업데이트할 필요 없이 HTTP/2의 이점을 누리기 시작합니다!</p>
+
+
+  <h3>더 읽기</h3>
+
+
+  <ul>
+      <li><a href="https://msdn.microsoft.com/library/mt762901.aspx">Azure CDN HTTP/2 문서</a></li>
+      <li><a href="https://http2.github.io/http2-spec/">HTTP/2 사양</a></li>
+      <li><a href="https://http2.github.io/faq/">HTTP/2 FAQ</a></li>
+  </ul>

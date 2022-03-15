@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: eac5fbaa7fa4cf55eaf1da93fe25235cd35b0e32
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906702"
+Slug: making-songs-swing-with-windows-azure
+Title: Windows Azure로 노래 스윙 만들기
+Summary: Cloud Cover onChannel 9의 에피소드 13에서 라이언 던과 스티브 마르크스는 모든 노래를 가져와 노래의 스윙 타임 버전으로 바꾸는 Azure 애플리케이션에 Windows 재미를 보여주었습니다.&nbsp; 여기...
+Content: <p><a target="_blank" href="https://channel9.msdn.com/shows/Cloud+Cover/Cloud-Cover-Episode-13-Running-Python-the-censored-edition/">Cloud Cover onChannel 9의 에피소드 13</a>에서 라이언 던과 스티브 마르크스는 <a target="_blank" href="https://www.microsoft.com/windowsazure/">Azure 애플리케이션에서</a> 노래를 가져와서 노래의 스윙 타임 버전으로 바꾸는 재미있는 Windows 보여주었습니다.&nbsp; 여기에 그것에 대해 스티브의 블로그 게시물의 발췌입니다 :</p>  <p><i>에서 샘플 애플리케이션 </i><a target="_blank" href="/"><i></i></a> 을 구성했습니다. <i> 즉, MP3로 노래를 업로드하고 그것의 "스윙 시간"버전을 생성 할 수 있습니다. 예를 들어 설명하는 것이 더 쉽</i><i>기 때문에 </i><a target="_blank" href="/Result/6b6ef003-d731-4996-9c67-463bff87a792"><i>스윙피가 변환한 테트리스 테마 곡</i></a>은 다음과 같습니다.</p>  <p><i><a target="_blank" href="/Result/6b6ef003-d731-4996-9c67-463bff87a792"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3252.swingify_5F00_logo.png" border="0"></a><br></i></p>  <p>Steve의 블로그 게시물에는 클라우드에서 Python을 사용하는이 애플리케이션에 대한 모든 기술 세부 사항뿐만 아니라 "스윙"노래의 많은 예가 있습니다. 즐겨보세요!</p>

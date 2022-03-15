@@ -1,0 +1,135 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5443c4bce302d27118dc7276352f4a0eb32e33ec
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906514"
+Slug: azure-source-volume-81
+Title: Azure.Source - 볼륨 81
+Summary: 다음 주, 5월 6-8일 시애틀의 워싱턴 주 컨벤션 센터에서 열리는 개발자를 위한 프리미어 이벤트인 Microsoft Build 2019를 기대합니다. 개발자가 Microsoft의 제품 및 솔루션에서 최신 업데이트 및 개발에 액세스하고, 전략 및 제품 로드맵을 이해하고, 혁신적인 방법으로 새로운 기술과 오픈 소스 소프트웨어에 대해 알아볼 수 있는 기회입니다.
+Content: >-
+  <p>Were&rsquo;는 다음 주, 5월 6-8일 시애틀의 워싱턴 주 컨벤션 센터에서 열리는 개발자를 위한 최고의 이벤트인 <a href="https://www.microsoft.com/en-us/build">Microsoft Build 2019</a>를 기대합니다. &rsquo;개발자가 Microsoft&rsquo; 제품 및 솔루션 전반의 최신 업데이트 및 개발에 액세스하고, 전략 및 제품 로드맵을 이해하고, 혁신적인 방법으로 새로운 기술과 오픈 소스 소프트웨어에 대해 알아볼 수 있습니다. 시애틀의 날씨조차도 협조할&#39;것처럼 보입니다.</p>
+
+
+  <p>물론 Azure 팀은 Build의 큰 부분을 차지합니다. Well&rsquo;은 다양한 프레젠테이션을 제공하고 이벤트 전체에서 공유하는 내용에 대한 자세한 내용을 제공하는 다양한 블로그 게시물을 게시합니다. 이 Channel 9 비디오에서는 Azure IoT 팀을 미리 살펴볼 수 있습니다.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="340" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/The-Azure-IoT-team-gets-ready-for-Microsoft-Build-2019/player?format=ny" width="760"></iframe></p>
+
+
+  <p>Microsoft Build 2019를 위해 다시 준비할&#39;있는 IoT Show는 Microsoft Campus의 Azure IoT&#39;건물에 들어가 멋진 IoT 콘텐츠를 준비하는 일부 화자를 만나게 됩니다.</p>
+
+
+  <p>그 동안,&rsquo; 지금 Azure 주변에서 진행되는 다른 많은 것들이 있습니다. 다음은 몇 가지 주요 기능입니다.</p>
+
+
+  <h2>뉴스 및 업데이트:</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/blog/intelligent-edge-innovation-across-data-iot-and-mixed-reality/">데이터, IoT 및 혼합 현실에서 지능형 에지 혁신</a></h3>
+
+
+  <p>우리는 믿을 수 없을만큼 흥미 진진한 기술 변곡점에 있을&#39;있습니다. 네트워크 가장자리에서 점점 더 연결되고 인식할 수 있는 디바이스와 결합된 클라우드의 사실상 무한한 컴퓨팅 능력은 불과 몇 년 전 &ndash; 만 해도 수백만 개의 연결된 디바이스, 무한 데이터 및 진정한 몰입형 다단계 환경을 만들 수 있는 가능성으로 구성될 수 있는 가능성을 만들어 줍니다. 이 게시물은 최신 발전의 일부를 살펴봅니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/blog/digitizing-trust-azure-blockchain-service-simplifies-blockchain-development/">신뢰 디지털화: Azure Blockchain Service는 블록체인 개발을 간소화합니다.</a></h3>
+
+
+  <p>빠르게 세계화되는 디지털 세계에서 비즈니스 프로세스는 여러 조직에 걸쳐 있으며, 신뢰 경계를 넘나드는 워크플로를 관리하는 데 많은 금액이 소요됩니다. 디지털 트랜스포메이션이 한 회사의 벽을 넘어 공급업체, 파트너 및 고객과 공유하는 프로세스로 확장됨에 따라 신뢰의 중요성이 커지고 있습니다. Microsofts&rsquo;의 목표는 <a href="https://aka.ms/ABSxbox">게임 퍼블리셔</a> 및 <a href="https://cloudblogs.microsoft.com/industry-blog/manufacturing/2018/09/25/buhler-will-track-crops-from-farm-to-fork-using-blockchain-technology/">곡물 프로세서</a>의 모든 회사가 <a href="https://customers.microsoft.com/story/interswitch-banking-capital-markets-azure-blockchain-workbench">ISV</a> 및 <a href="https://customers.microsoft.com/story/insurwave-insurance-azure">글로벌 운송업체</a> 가 다른 사람과 공유하는 프로세스를 디지털 방식으로 변환하는 데 사용할 수 있는 개방형 확장 가능한 플랫폼 및 서비스를 제공하여 안전한 다자간 계산의 새로운 시대에 기업이 번창할 수 있도록 돕는 것입니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/blog/making-ai-real-for-every-developer-and-every-organization/">모든 개발자와 모든 조직에서 AI를 현실로 만들기</a></h3>
+
+
+  <p>AI는 세상을 바꿀 혁신의 다음 물결에 연료를 공급하고 있습니다. <a href="https://azure.microsoft.com/overview/ai-platform/">Azure AI</a>를 통해 조직은 비즈니스 스펙트럼에 AI를 적용하여 고객을 참여시키고, 직원에게 권한을 부여하고, 운영을 최적화하고, 제품을 변환할 수 있습니다. 이 블로그를 읽어 세 가지 투자 원칙에 대해 알아보세요.</p>
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/blog/azure-stack-iaas-part-seven-2/">Azure Stack IaaS &ndash; 7부</a></h3>
+
+
+  <p>이 블로그 게시물에서는 Cloud IaaS 도구 키트의 자동화 옵션에 대해 설명합니다. Weve&rsquo;는 클라우드 및 셀프 서비스 전에 가상화 일에 먼 길을 &ndash; 왔고 모든 승인, 자격 증명, VN(가상 란), LUN(논리 단위 번호) 등을 가져오는 데 시간이 걸렸습니다. 너무 오래 걸렸기 때문에 실제 생성 부분은 쉬웠습니다. 클라우드가 셀프 서비스와 함께 제공되었을 때 다른 사용자에 의존하지 않고 VM(가상 머신)을 만드는 것이 더 쉬웠을 뿐만 아니라 VM이 귀중하거나 삭제 가능한지에 대한 생각이 바뀌었습니다. Well&rsquo; discuss!</p>
+
+
+  <h3><a href="https://azure.microsoft.com/blog/migrating-big-data-workloads-to-azure-hdinsight/">빅 데이터 워크로드를 Azure HDInsight로 마이그레이션</a></h3>
+
+
+  <p>빅 데이터 워크로드를 클라우드로 마이그레이션하는 것은 고객의 주요 우선 순위로 남아 있으며, Azure HDInsight는 이러한 여정을 간단하고 비용 효율적으로 만들기 위해 최선을 다하고 있습니다. HDInsight는 온-프레미스 또는 다른 클라우드 플랫폼에서 HDInsight로 데이터를 마이그레이션할 때 안정적인 애플리케이션 성능을 제공하는 복잡성을 줄이는 것을 사명으로 하는 <a href="https://unraveldata.com/">Unravel</a>와 협력합니다. &rsquo;APM(애플리케이션 성능 관리) 플랫폼은 HDInsight로의 마이그레이션 프로세스를 계획하고 최적화하기 위한 통합 가시성 및 운영 인텔리전스를 제공하기 위한 다양한 서비스를 제공합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/blog/deploy-a-fhir-sandbox-in-azure/">Azure에서 FHIR 샌드박스 배포</a></h3>
+
+
+  <p><a href="https://www.himssconference.org/">HIMSS 2019</a>와 관련하여 고객에게 Azure에서 엔터프라이즈급 관리형 <a href="https://azure.microsoft.com/blog/lighting-up-healthcare-data-with-fhir-announcing-the-azure-api-for-fhir/">FHIR API를 제공하는 Azure API for FHIR</a>&reg;을 발표했습니다. 그 이후로&#39;새 구성 옵션 및 기능으로 서비스를 개선하는 데 바빴습니다. 우리가 작업한 기능 중 일부에는 인증 구성과 <a href="https://smarthealthit.org/">SMART on FHIR</a> Azure Active Directory Proxy가 포함되어 있으며, 이 프록시를 사용하면 FHIR용 Azure API를 사용하여 소위 SMART on FHIR EHR을 시작할 수 있습니다. &#39;서비스 및 구성 옵션을 사용하는 방법을 보여 주는 샌드박스 환경을 개발했습니다. 이 게시물에서는 Azure에서 샌드박스를 배포하는 방법에 중점을  두고 있습니다. 이후 블로그 게시물은 다양한 구성 옵션의 기술 세부 정보 중 일부를 자세히 설명합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/blog/5-internal-capabilities-to-help-you-increase-iot-success/">IoT 성공을 높이는 데 도움이 되는 5개 내부 기능</a></h3>
+
+
+  <p>이 문서는 회사가 IoT에서 ROI를 최대화하는 데 도움이 되도록 설계된 4부로 구성된 시리즈의 세 번째 문서입니다. 첫 번째 게시물에서는 <a href="https://azure.microsoft.com/en-us/blog/why-iot-is-not-a-technology-solution-it-s-a-business-play/">IoT가 비즈니스를 혁신하는 방법에</a> 대해 설명했습니다. 두 번째 게시물에서는 <a href="https://azure.microsoft.com/blog/how-to-develop-an-iot-strategy-that-yields-desired-roi">원하는 ROI를 생성하는 성공적인 전략을</a> 만드는 방법에 대한 인사이트를 공유했습니다. 이 세 번째 게시물에서는 역량 격차를 식별하고 채워 기업이 앞으로 나아갈 수 있는 방법에 대해 설명합니다. &rsquo;IoT 진행 속도를 늦출 수 있는 몇 가지 과제를 해결하는 방법에 대한 몇 가지 아이디어를 살펴보겠습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/blog/monitoring-enhancements-vmware-physical-azure/">Azure Site Recovery로 보호되는 VMware 및 물리적 워크로드에 대한 향상된 모니터링</a></h3>
+
+
+  <p>Azure Site Recovery는 복제 구성 요소인 프로세스 서버에 다양한 상태 신호를 도입하여 워크로드의 상태 모니터링을 향상시켰습니다. DR(하이브리드 재해 복구) 시나리오의 PS(프로세스 서버)는 데이터 복제의 중요한 구성 요소입니다. 복제 캐싱, 데이터 압축 및 데이터 전송을 처리합니다. 워크로드가 보호되면 원본에서 높은 데이터 변경률(변동률), 네트워크 연결, 사용 가능한 대역폭, 프로세스 서버를 프로비전하거나 단일 프로세스 서버로 많은 수의 워크로드를 보호하는 등의 여러 요인으로 인해 문제가 트리거될 수 있습니다. 이로 인해 PS 상태가 좋지 않을 수 있으며 VM 복제에 연속적인 영향을 미칠 수 있습니다. 이제 <a href="https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-monitor-process-server#process-server-alerts">프로세스 서버의 추가 상태 신호를</a> 사용하여 이러한 문제를 보다 쉽게 해결할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/blog/building-recommender-systems-with-azure-machine-learning-service/">Azure Machine Learning 서비스를 사용하여 추천 시스템 빌드</a></h3>
+
+
+  <p>추천 시스템은 소매에서 뉴스 및 미디어에 이르기까지 다양한 산업에서 사용됩니다. &rsquo;이전에 보거나 구매&rsquo;한 내용을&rsquo; 기반으로 권장 사항을 표시한 스트리밍 서비스 또는 전자 상거래 사이트를 사용한 적이 있다면 권장 사항 시스템과 상호 작용했습니다. 많은 양의 데이터를 사용할 수 있게 되면서 많은 기업들이 중요한 수익 동인으로서 추천 시스템으로 전환하고 있습니다. 그러나 올바른 추천 알고리즘을 찾는 것은 데이터 과학자에게 매우 많은 시간이 걸릴 수 있습니다. 이 때문에 Microsoft는 Azure Machine Learning 서비스를 사용하여 권장 사항 시스템의 빌드 및 평가를 용이하게 하기 위해 Python 모범 사례 예제와 <a href="https://azure.microsoft.com/services/machine-learning-service/">함께 GitHub</a> <a href="https://github.com/Microsoft/Recommenders/tree/master/">리포지토리</a>를 제공했습니다.</p>
+
+
+  <h3><a href="https://www.infoq.com/articles/data-science-organization-framework">건강한 Data-Driven 조직을 구축하기 위한 6가지 원칙</a></h3>
+
+
+  <p>조직은 점점 더 데이터 과학 기능을 중심으로 팀을 구성하고 있습니다. 데이터 과학은 수학, 프로그래밍 및 시각화 기술을 결합하고 향후 고객 행동 예측, 항공 교통 경로 계획 또는 음성 패턴 인식과 같은 특정 비즈니스 도메인 또는 문제에 과학적 방법을 적용하는 필드입니다. 하지만 데이터 기반 조직이 됨은 실제로 무엇을 의미할까요? InfoQ를 살펴봅니다.</p>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3>MSDN 채널 9</h3>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/On-NET/DevOps-For-ASPNET-Developers-Pt7-Templates-and-Scaffolding-Tools">ASP.NET 개발자를 위한 DevOps, Pt. 7</a></h3>
+
+
+  <p>아벨과 제레미는 시리즈의 7부에서 Azure DevOps 파이프라인을 스캐폴딩하는 두 가지 방법을 보여 주었습니다. Azure Portal을 통해 Azure DevOps 프로젝트를 사용하는 방법을 확인할&#39;있습니다. 그러면 모든 항목을 구성하는 UI가 제공됩니다. 또한 명령줄에서 작업할 수 있는 Yo Team 생성기를 사용하는 방법을 보여 줄&#39;있습니다.</p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/XamarinShow/Detect-Shake-XamarinEssentials-API-of-the-Week">흔들림 감지(Xamarin. 금주의 Essentials API)</a></h3>
+
+
+  <p>Xamarin.Essentials는 모바일 애플리케이션에 대한 플랫폼 간 API를 개발자에게 제공합니다. 이번 주&#39;Xamarin.Essential API에서는 사용자가 디바이스를 흔들 때를 감지하는 데 도움이 되는 <a href="https://aka.ms/motz-essentials-detect-shake">쉐이크 감지 API</a> 를 살펴봅니다.</p>
+
+
+  <h3>YouTube</h3>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=EVh0MDpgyhM">Cloud Shell, PowerShell 및 Bash를 사용하여 Azure 마스터링!</a></h3>
+
+
+  <p>Azure는 여러 가지 방법으로 관리할 수 있습니다. Azure 인프라를 보다 효율적으로 관리하기 위해 Azure PowerShell, Azure CLI 및 Cloud Shell과 같은 명령줄 옵션을 알아봅니다. 클라우드를 관리하는 셸의 영웅이 되세요!</p>
+
+
+  <h3>Azure 팟캐스트</h3>
+
+
+  <h3><a href="https://azpodcast.azurewebsites.net/">에피소드 276 &ndash; 클라우드 간소화</a></h3>
+
+
+  <p>Microsoft의 Azure Cloud Solutions 설계자인 Ryan Berry는 복잡한 토픽을 한입 크기의 청크로 증류하여 이러한 기능을 신속하게 활용하여 Azure로 이동할 때 필요할 수 있는 유사한 요구 사항을 쉽게 해결할 수 있도록 하는 자신의 YouTube 채널에 대해 이야기합니다.</p>
+
+
+  <h3>Azure DevOps 팟캐스트</h3>
+
+
+  <h3>Azure의 컨테이너에 대한 Rob Richardson</h3>
+
+
+  <p>이 에피소드에서 Rob은 컨테이너를 만들 때 중요한 단계, 개발자가 Azure를 통해 컨테이너를 실행하고 지원할 때 고려해야 할 사항 등을 설명합니다.</p>

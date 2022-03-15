@@ -1,0 +1,89 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 55405ebb61a2fad1861a558fddd19af6e70143bf
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906263"
+Slug: announcing-the-publication-of-parse-server-with-azure-managed-services
+Title: Azure Managed Services를 사용하여 Parse Server 게시 발표
+Summary: '오늘 Azure Managed Services에서 Parse Server를 발표하게 되어 기쁩니다. '
+Content: >-
+  <p>페이스 북은 1 월에 <a href="https://blog.parse.com/announcements/moving-on/">수십만 명의 개발자가 사랑하는 개발 플랫폼 인</a> Parse를 발표하여 모바일 개발 세계를 흔들었다.&nbsp; 오늘,<a href="https://azure.microsoft.com/en/marketplace/partners/Microsoft/ParseServer/"> 우리는 Azure Managed Services의 구문 분석 서버를</a> 발표하게되어 기쁘게 생각합니다. 구문 분석 개발자가 작업을 계속하고 그들이 좋아하는 일에 집중할 수있는 쉬운 방법, 모바일 서비스를 활용하여 멋진 모바일 환경을 작성합니다 : <a href="https://azure.microsoft.com/en-us/documentation/learning-paths/appservice-mobileapps/">Azure App Service</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/notification-hubs-overview/">Notification Hubs</a>, <a href="https://taco.visualstudio.com/">Apache Cordova</a>, <a href="https://blog.xamarin.com/a-xamarin-microsoft-future/">Xamarin </a>및 네이티브 iOS / Android 개발 지원을 포함한 개발자 서비스,  및 <a href="https://azure.microsoft.com/en-us/services/documentdb/">DocumentDB</a>를 포함한 관리되는 데이터베이스 서비스&nbsp;&nbsp;</p>
+
+
+  <p>완전히 관리되는 Azure 서비스를 사용하는 Parse Server 구현을 만들고 Azure Marketplace에 릴리스했습니다.&nbsp; 이 템플릿을 사용하면 Parse 개발자가 미리 통합된 Azure 서비스 제품군을 사용하여 Parse Server v2.1.4를 쉽게 스핀업할 수 있습니다.</p>
+
+
+  <ul>
+   <li>Azure App Service에서 제공하는 서버 v2.1.4 <a href="https://github.com/ParsePlatform/parse-server">구문 분석</a></li>
+   <li>Azure DocumentDB에서 제공하는 NoSQL 데이터 Storage</li>
+   <li>Azure Storage 의해 구동되는 파일 Storage</li>
+   <li>Azure Notification Hubs에서 제공하는 푸시 알림</li>
+   <li>Azure Portal에 통합된 <a href="https://github.com/ParsePlatform/parse-dashboard">구문 분석 대시보드 </a></li>
+  </ul>
+
+
+  <p>이러한 서비스는 앞으로 모바일 백 엔드에 가장 적합한 환경을 제공합니다.&nbsp; 수백만 명의 사용자로 서비스를 쉽게 확장할 수 있습니다. 캐나다 <a href="https://azure.microsoft.com/en-us/blog/canadian-broadcasting-corporation-radio-canada-leverage-azure-for-smooth-election-coverage/">방송공사</a>에 플랫폼의 확장성 및 안정성에 대한 경험에 대해 문의하기만 하면 됩니다.&nbsp; <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/">지속적인 배포 도구</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-staged-publishing/">스테이징 환경을</a> 통해 DevOps 사고방식으로 전환하고 HockeyApp을 사용하여 <a href="https://hockeyapp.net/features/distribution/">베타 배포</a>, <a href="https://hockeyapp.net/features/crashreports/">크래시 분석</a> 및 <a href="https://hockeyapp.net/features/feedback/">피드백을 </a>얻을 수 있습니다.</p>
+
+
+  <p>Parse Server 마이그레이션을 지원하기 위해 특히 Parse Service 고객을 위한 소개 DocumentDB 제품을 제공하고, Azure에서 Parse Server를 사용해 보며, 6월까지 DocumentDB 사용량에 대해 아무 것도 지불하지 않습니다. 이 제품을 활용하려면 <a href="https://azure.microsoft.com/en/marketplace/partners/Microsoft/ParseServer/">Marketplace 템플릿</a> 을 사용하여 구문 분석 서버를 스핀업합니다. DocumentDB는 애플리케이션에 확장 가능한 고성능 데이터 스토리지를 제공하는 NoSQL 데이터베이스 서비스입니다. <a href="https://azure.microsoft.com/en-us/blog/the-walking-dead-no-mans-land-game-soars-to-1-with-azure-documentdb/">Next Games</a>와 같은 고객은 이미 DocumentDB를 사용하여 최고 등급의 iOS 및 Android 게임&nbsp;과 같은 <em>워킹 데드: 맨스 랜드 없음&rsquo;을 제공하고 있습니다</em>.</p>
+
+
+  <p>또한 Azure에는 모든 Azure 서비스에 200달러를 지출할 수 있는 <a href="https://azure.microsoft.com/pricing/free-trial/">무료 1개월 평가판</a> 이 있습니다.</p>
+
+
+  <h2>Parse Service를 Azure로 마이그레이션</h2>
+
+
+  <p>구문 분석 서비스를 마이그레이션하는 것은 3단계 프로세스입니다.&nbsp; 먼저 새 Marketplace 템플릿을 사용하여 구문 분석 서버를 설정합니다.&nbsp; 그런 다음 Parse Service에서 새 Azure 서비스로 데이터를 마이그레이션합니다.&nbsp; 마지막으로 새 서비스를 지원하도록 모바일 클라이언트를 업데이트합니다.&nbsp;&nbsp;</p>
+
+
+  <h3>새 구문 분석 서버 배포</h3>
+
+
+  <p>새 Marketplace 템플릿을 사용하여 Azure에서 구문 분석 서버를 설정하는 것이 그 어느 때보다 쉽습니다.&nbsp;</p>
+
+
+  <ol>
+   <li>Azure 포털에 로그온합니다.</li>
+   <li>사이드바에서 <strong>+ 새로 만들기</strong> 단추를 클릭합니다.</li>
+   <li>검색 상자에 구문 분석 서버를&quot; 입력&quot;합니다.</li>
+   <li>Microsoft에서 게시한 &ldquo;관리되는 Azure 서비스에서&rdquo; 구문 분석 서버를 선택합니다.</li>
+   <li><strong>만들기</strong>를 클릭합니다.</li>
+   <li>새 구문 분석 서버를 만들기 위한 간단한 화면 지침을 따릅니다.</li>
+  </ol>
+
+
+  <p style="margin-left: 80px;"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/parseServerGalleryTransparent.PNG"></p>
+
+
+  <h3>데이터 마이그레이션</h3>
+
+
+  <p>구문 분석에는 이미 <a href="https://github.com/ParsePlatform/parse-server/wiki/Migrating-an-Existing-Parse-App">자세한 마이그레이션 가이드가</a> 있습니다.&nbsp; 인터넷에서 DocumentDB 인스턴스를 사용할 수 있도록 한 다음 구문 분석 계정에 로그인하고 데이터를 마이그레이션해야 합니다.&nbsp; Parse가 4월 28일까지 데이터를 마이그레이션하지 않은 경우 프로덕션 앱에&#39;적합하지 않은 데이터의 우선 순위를 해제한다고 발표했으므로 4월&nbsp; 말까지 이 작업을 수행할 계획입니다.&nbsp; 마이그레이션을 준비하도록 DocumentDB를 구성하기 위한 자세한 지침은 <a href="https://github.com/felixrieseberg/parse-server-azure/wiki/Configuring-DocumentDB-for-Parse-Migration">GitHub 리포지토리</a>에서 확인할 수 있습니다.</p>
+
+
+  <h3>모바일 클라이언트 업데이트</h3>
+
+
+  <p>이 시점에서 구문 분석 서비스가 두 개 있습니다. 구문 분석 서비스에서 실행되는 이전 서비스와 Azure에서 실행되는 새 구문 분석 서비스가 있습니다.&nbsp; <a href="https://github.com/ParsePlatform/parse-server/wiki/Parse-Server-Guide#using-parse-sdks-with-parse-server">새 URL 및 애플리케이션 ID를 사용하여 새 클라이언트를 업데이트하고 게시</a>하려고 합니다.&nbsp; 여기에는 클라이언트에서 사용하는 구문 분석 SDK 업데이트가 포함될 수 있습니다.&nbsp; 서버 URL 및 애플리케이션 ID를 가져오려면 <a href="https://github.com/felixrieseberg/parse-server-azure/wiki/Update-your-Mobile-Clients-for-Parse-Server">GitHub 리포지토리</a>에 대한 자세한 지침을 참조하세요.</p>
+
+
+  <h3>구문 분석 대시보드에 로그온</h3>
+
+
+  <p>구문 분석 대시보드를 Azure Portal 관리 환경에 통합했습니다.&nbsp; Azure에 Parse Server를 배포한 후에는 Azure Portal 내에서 대시보드를 사용할 수 있습니다.</p>
+
+
+  <h3>다음 단계</h3>
+
+
+  <p>구문 분석 서버를 실행하고 마이그레이션하는 것이 주된 관심사&nbsp;임을 알고 있습니다.&nbsp; 백 엔드가 작동하면 사용할 수 있는 새 기능을 확인할 수 있습니다.&nbsp; 여기에는 다음이 포함됩니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/services/app-service/">이제 Azure App Service</a>, <a href="https://azure.microsoft.com/en-us/documentation/services/documentdb/">DocumentDB</a>, <a href="https://azure.microsoft.com/en-us/documentation/services/notification-hubs/">Notification Hubs</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/services/storage/">Storage</a> 사용할 수 있는 새로운 기능에 대해 알아봅니다.</li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/services/application-insights/">Application Insights</a> 사용하여 구문 분석 서버 및 클라이언트를 모니터링하고 <a href="https://hockeyapp.net/features/">HockeyApp</a>을 사용하여 클라이언트를 모니터링합니다.</li>
+   <li>중요한 사용자 인사이트를 얻고 <a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-overview/">Azure Mobile Engagement</a> 사용하여 사용자와 소통합니다.</li>
+  </ul>

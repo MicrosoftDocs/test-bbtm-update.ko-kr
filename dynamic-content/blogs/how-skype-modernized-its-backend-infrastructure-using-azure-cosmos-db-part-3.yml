@@ -1,0 +1,98 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8ad01e90239f8582c2abc4b107c9123a1890b223
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899818"
+Slug: how-skype-modernized-its-backend-infrastructure-using-azure-cosmos-db-part-3
+Title: Skype Azure Cosmos DB를 사용하여 백 엔드 인프라를 현대화하는 방법 - 3부
+Summary: 'Azure Cosmos DB를 사용하여 Skype 세 개의 모놀리식 지리적으로 격리된 데이터 저장소를 더 나은 처리량, 낮은 대기 시간 및 향상된 가용성을 제공하는 전역적으로 분산된 단일 사용자 데이터 서비스로 대체했습니다. '
+Content: >-
+  <p><em>이는 조직이 실제 요구 사항을 충족하기 위해 Azure Cosmos DB를 사용하는 방법과 이러한 요구 사항에 미치는 차이&rsquo;에 대한 3부로 구성된 블로그 게시물 시리즈입니다. <a href="https://azure.microsoft.com/en-us/blog/how-skype-modernized-its-backend-infrastructure-using-azure-cosmos-db-part-1/">1부</a>에서는 Skype 직면한 과제를 탐구하여 조치를 취했습니다. <a href="https://azure.microsoft.com/en-us/blog/how-skype-modernized-its-backend-infrastructure-using-azure-cosmos-db-part-2/">2부</a>에서는 Skype Azure Cosmos DB를 구현하여 백 엔드 인프라를 현대화하는 방법을 검토했습니다. 이 게시물(3부 중 3부)에서는 이러한 노력으로 인한 결과를 다룹니다.</em></p>
+
+
+  <p><strong>참고:</strong> 기울임꼴/괄호 안의 주석은 작성자&#39;.</p>
+
+
+  <h2>결과</h2>
+
+
+  <h3>전체, 대기 시간, 확장성 등 개선됨</h3>
+
+
+  <p>Azure Cosmos DB를 사용하여 Skype 세 개의 모놀리식 지리적으로 격리된 데이터 저장소를 더 나은 처리량, 낮은 대기 시간 및 향상된 가용성을 제공하는 전역적으로 분산된 단일 사용자 데이터 서비스로 대체했습니다. 새로운 PCS 서비스는 향후 성장을 처리하기 위해 수요에 탄력적으로 스케일링할 수 있으며, 이전 PCS 시스템을 유지 관리하는 데 드는 비용의 절반 미만으로 자체 인프라&mdash;를 유지 관리하는 부담 없이 Skype 팀에게 데이터의 소유권을 부여합니다. 솔루션 개발은 Azure Cosmos DB에서 제공하는 광범위한 기능과 완전히 호스팅된 서비스라는&rsquo; 사실 덕분에 빠르고 간단했습니다.</p>
+
+
+  <h3>전체 및 낮은 대기 시간 동안 개선</h3>
+
+
+  <p>이전 솔루션에 비해 새로운 PCS 서비스는 향상된 처리량과 낮은 대기 시간&mdash; 턴을 제공하여 Skype 팀이 모든 SLA를 쉽게 충족할 수 있도록 합니다. &ldquo;Azure Cosmos DB에서 사용하도록 설정된 쉬운 지리적 배포는 이 모든 것을 가능하게&rdquo; 하는 데 핵심적인 역할을 했다고 Kaduk는 말합니다. &ldquo;예를 들어 사용자가 있는 위치에 데이터를 더 가깝게 배치할 수 있게 함으로써, 유럽에서&rsquo;는 호출&mdash;을 설정하는 데 사용되는 권한 서비스에&rsquo; 필요한 시간을 크게 줄이고 해당 작업에 대한 전체 1초 SLA를 충족할 수 있었습니다.&rdquo;</p>
+
+
+  <h3>높은 가용성</h3>
+
+
+  <p>새 PCS 서비스는 시간 제한, 교착 상태 또는 서비스 품질 저하&mdash; 없이 워크로드를 지원하여 사용자가 더 이상 잘못된 데이터로 불편을 겪거나 기다릴 필요가 없습니다. 또한 서비스가 Azure Cosmos DB에서 실행되므로 Skype 팀은 더 이상 새 PCS 서비스가 실행되는 기본 인프라의 가용성에 대해 걱정할 필요가 없습니다.&nbsp;</p>
+
+
+  <p>&ldquo;Azure Cosmos DB는 모든 다중 리전 계정에 대해 99.999%의 읽기 가용성 SLA를 제공하며, 기본 제공은 지역 가동 중단&rdquo;의 가능성으로부터 보호하는 데 도움이 된다고 Kaduk는 말합니다. &ldquo;다중 리전 계정에 대한 장애 조치(failover) 순서의 우선 순위를 지정할 수 있으며, 장애 조치(failover)를 수동으로 트리거하여 데이터 손실이 없도록 보장된 앱의&mdash; 엔드 투 엔드 가용성을 테스트할 수도 있습니다.&rdquo;</p>
+
+
+  <h3>탄력적 확장성</h3>
+
+
+  <p>Azure Cosmos DB를 사용하면 Skype 팀은 전 세계에서 언제든지 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/partition-data" target="_blank">스토리지 및 처리량을 독립적으로 탄력적으로 확장</a>할 수 있습니다. 크기 조정에 필요한 모든 물리적 파티션 관리는 Azure Cosmos DB에서 완전히 관리되며 Skype 팀에 투명합니다. Azure Cosmos DB는 가용성, 일관성, 대기 시간 또는 처리량을 손상시키지 않으면서 물리적 및 논리적 파티션 간에 데이터 배포 및 쿼리 요청을 올바른 파티션&mdash;으로 라우팅하는 작업을 처리합니다. 이 모든 것을 통해 팀은 현재 필요한 스토리지 및 처리량에 대해서만 비용을 지불하고 필요하기 전에&rsquo; 시간, 에너지 또는 비용을 예비 용량에 투자할 필요가 없습니다.</p>
+
+
+  <p>&ldquo;Kaduk는 Azure Cosmos DB의 크기를 조정하는 기능은 분명&rdquo;합니다. &ldquo;우리는 18개월 전에 100테라바이트의 데이터를 계획했으며, 이미 140테라바이트에 달했으며, 이러한 성장을 처리하는 데 큰 문제가 없습니다.</p>
+
+
+  <h3>유지 관리 및 관리가 없는 데이터의 &ndash; 전체 소유권</h3>
+
+
+  <p>Azure Cosmos DB는 완전히 관리되는 Microsoft Azure 서비스이므로 Skype 팀은 일상적인 관리, 소프트웨어 배포 및 구성 또는 업그레이드 처리에 대해 걱정할 필요가 없습니다&rsquo;. 모든 데이터베이스는 자동으로 백업되고, 지역 오류로부터 보호되고, 암호화되므로, 팀은 새로운 고객 가치를 제공하는 데 더 많은 시간을 들여 이러한 작업에&mdash; 대해 걱정할 필요가 없습니다&rsquo;.</p>
+
+
+  <p>&ldquo;새로운 PCS 서비스에 대한 좋은 점 중 하나는 데이터 저장소를 완전히 소유하고 있지만 이전에는&rdquo; 소유하지 않았다는&rsquo; 것입니다. &ldquo;과거에 Microsoft에서 Skype 처음 인수했을 때 데이터베이스를 유지 관리하는 팀이 있었습니다. 우리는 그들을 계속 유지하고 싶지 않았기&rsquo; 때문에 중앙 팀에 넘겨주었습니다. 오늘날, 동일한 사용자 데이터가 다시 우리의 모든 통제 하에 있으며,&rsquo; 여전히 일상적인 유지 관리&mdash;&rsquo;가 두 세계의 최고에 부담을주지 않습니다.&rdquo;</p>
+
+
+  <h3>비용 절감</h3>
+
+
+  <p>Kaduks&rsquo; 팀은 이전 PCS 데이터베이스를 유지하기 위해 비용을 지불하지 않았지만&rsquo; Costand&mdash;에 사용된 것을 알고 있으며 Azure Cosmos DB에서 실행되는 새 솔루션에 대한 월별 청구서가 훨씬 낮다고 말합니다. &ldquo;우리의 새로운 PCS 데이터 저장소는 이전보다 약 40 % 저렴,&rdquo; 그는 말한다. &ldquo;우리는 오늘 그 비용을 스스로 지불하지만, 모든 혜택을 감안할 때, 그것은&rsquo; 잘 가치가 있습니다.&rdquo;</p>
+
+
+  <h3>빠르고 간단한 구현</h3>
+
+
+  <p>전체적으로 Kaduk은 Azure로의 마이그레이션 Cosmos DB는 매우 간단하고 간단하다고 &ldquo;생각합니다.&rdquo; 개발은 2017년 5월에 시작되었으며, 2017년 10월까지 모든 개발이 완료되었고 팀은 40억 명의 Skype 사용자를 모두 새 솔루션으로 마이그레이션하기 시작했습니다. 이 팀은 개발자 8명, 프로그램 관리자 1명, 관리자 1명으로 구성되었습니다.</p>
+
+
+  <p>&ldquo;Azure Cosmos DB에 대한 이전의 경험은 없었지만 속도를&rdquo; 높이기가 매우 쉬웠다고 그는 말합니다. &ldquo;몇 가지 교훈을 배웠음에도 불구하고, 우리는 6 개월 만에 모든 것을 했으며,이 규모의 프로젝트에 매우 인상적입니다. 빠른 성공을 거둔 이유 중 하나는 물리적 인프라를 배포하는 것에 대해 걱정할 필요가 없었기&rsquo; 때문입니다. 또한 Azure Cosmos DB는 엄격한 SLA에서 SQL 구문과 변경 피드 스트리밍 기능이 모두 기본 제공되는 스키마 없는 문서 데이터베이스를 제공했습니다. 이렇게 하면 아키텍처가 크게 간소화되고 최소 시간 안에 모든 요구 사항을 충족할 수 있습니다.&rdquo;</p>
+
+
+  <h3>학습 내용</h3>
+
+
+  <p>이 프로젝트를 되돌아보며 Kaduk은 배운 몇 가지 &ldquo;교훈을 회상합니다.&rdquo; 여기에는 다음이 포함되었습니다.</p>
+
+
+  <ul>
+   <li>성능 &ndash; <strong>향상을 위해 직접 모드 사용 </strong> <strong> </strong>클라이언트가 Azure Cosmos DB에 연결하는 방법은 특히 관찰된 클라이언트 쪽 대기 시간과 관련하여 중요한 성능 영향을 미칩니다. 팀은 기본 게이트웨이 모드 연결 정책을 사용하여 시작했지만 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/performance-tips" target="_blank">더 나은 성능을 제공하기</a> 때문에 직접 모드 연결 정책으로 전환했습니다.</li>
+   <li><strong>저장 프로시저를 작성하고 처리하는 방법 알아보기</strong> &ndash; Azure Cosmos DB를 사용하면 컬렉션에 대해 등록되고 단일 트랜잭션으로 실행되는 JavaScript로 작성된 애플리케이션 논리의 <a href="https://docs.microsoft.com/en-us/rest/api/cosmos-db/stored-procedures" target="_blank">저장 프로시저</a>&mdash;피스를 사용하여 트랜잭션을 구현할 수 있습니다. <em>(Azure Cosmos DB에서 JavaScript는 데이터베이스와 동일한 메모리 공간에서 호스트됩니다. 따라서 저장 프로시저 내에서 수행된 요청은 데이터베이스 세션의 동일한 범위에서 실행되므로 Azure Cosmos DB는 단일 저장 프로시저의 일부인 모든 작업에 대해 ACID를 보장할 수 있습니다.)</em></li>
+   <li><strong>쿼리 디자인</strong> &ndash; 에 주의 Azure Cosmos DB를 사용하면 쿼리가 RU 사용 측면에서 큰 영향을 미칩니다. 개발자는&rsquo; 처음에는 쿼리 디자인에 많은 주의를 기울이지 않았지만 곧 RU 비용이 원하는 것보다 높다는 것을 알게되었습니다. 이로 인해 가능한 경우 지점 문서 읽기를 사용하고 API당 쿼리 선택을 최적화하는 등 쿼리 디자인을 최적화하는 데 집중하게 됩니다.</li>
+   <li><strong>Azure Cosmos DB SDK 2.x를 사용하여 연결 사용량</strong> &ndash; 최적화 Azure Cosmos DB 내에서 각 지역에 저장된 데이터는 수만 개의 실제 파티션에 분산됩니다. 읽기 및 쓰기를 제공하려면 Azure Cosmos DB 클라이언트 SDK가 파티션을 호스트하는 실제 노드와의 연결을 설정해야 합니다. 팀은 Azure Cosmos DB SDK 1.x를 사용하여 시작했지만 연결 멀티플렉싱에 대한 지원이 부족하여 과도한 연결 설정 및 닫는 속도가 발생했음을 발견했습니다. 연결 멀티플렉싱을 지원하는 Azure Cosmos DB SDK 2.x로 전환하면 문제를 &mdash;해결하는 데 도움이 되었으며 <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections-classic" target="_blank">SNAT 포트 고갈 문제를</a> 완화하는 데도 도움이 됩니다.</li>
+  </ul>
+
+
+  <p>다음 다이어그램에서는 SDK 1.x를 사용할 때의 연결 상태 및 time_waits 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cac09d06-6942-43fb-a46b-15249728b69f.png"><img alt="Chart showing connection when using SDK 1.x" border="0" height="399" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/87a294c4-dc66-4620-bb96-81cd063f9239.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SDK 1.x를 사용할 때의 연결을 보여 주는 차트" width="1012"></a></p>
+
+
+  <p>그리고 다음은 SDK 2.x로 이동한 후 동일한 것을 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b055741f-a73d-4db2-8e8b-0edef0d462e8.png"><img alt="Chart showing connection when using SDK 2.x" border="0" height="393" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e1d501df-7e69-43a2-a5b9-486998133d24.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SDK 2.x를 사용할 때의 연결을 보여 주는 차트" width="1144"></a></p>

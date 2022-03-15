@@ -1,0 +1,140 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 155e95c7536d13f0fba6e608a89aefa768018c1b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906738"
+Slug: implement-an-application-insights-telemetry-processor
+Title: 애플리케이션 Insights 확장성을 사용하여 네트워크 상태 파고들기
+Summary: 이 게시물은 애플리케이션의 원격 종속성에 대해 지속적인 네트워크 계층 테스트를 수행하는 사용자 지정 원격 분석 프로세서를 구현하여 애플리케이션 Insights 제공하는 기본 기능을 강조 표시합니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-overview/">AI(애플리케이션 Insights</a>)는 포털로 전송되기 전에 AI SDK에서 생성된 각 데이터 포인트를 검사, 필터링 및 수정할 수 있는 <a href="https://azure.microsoft.com/en-us/blog/request-filtering-in-application-insights-with-telemetry-processor/">원격 분석 프로세서</a> 기능을 릴리스했습니다. Ive&rsquo;는 이 기능을 사용하고 있으며 런타임에 애플리케이션&rsquo; 원격 종속성을 식별하기 위한 프로그래밍 방식 솔루션을 제공한다는 것을 깨달았습니다. 이렇게 하면 애플리케이션&rsquo; 종속성에 대해 네트워크 진단 테스트를 수행하는 사용자 지정 확장을 구현할 수 있습니다. 결과 데이터는 AIs&rsquo; 기본 원격 분석을 확장하고 보완합니다. 원격 분석 프로세서의 유연성과 풍요로움은 많은 시나리오를 가능하게 하지만 네트워크 상태를 파헤치면 처음에는 저에게 큰 영향을 주었습니다. 이 게시물은 Ive&rsquo;가 프로젝트에서 배운 내용을 공유합니다.</p>
+
+
+  <h2>개요</h2>
+
+
+  <p>기록 재고 값을 가져오는 단일 원격 HTTP 종속성이 있는 간단한 ASP.NET 프로젝트를 만들었습니다. 애플리케이션은 AI SDK를 사용하여 계측되고 AI RDD(원격 종속성 데이터) 이벤트를 검사하고, 고유 URI를 구문 분석하고, 진행 중인 일련의 TCP 포트 ping을 수행하는 ping 메시&rdquo; 원격 분석 프로세서 확장을 구현&ldquo;합니다. 그런 다음, 원격 종속성 저하가 네트워크와 관련이 있는지 여부를 격리하는 데 도움이 되는 AI 메트릭으로 진단 결과가 제출됩니다. 이 원격 분석의 값은 속도 저하/실패에 대한 네트워크를 연루시키거나 해당 스택에서 문제가 더 높다는 것을 명확히 하는 데 도움이 되는 방법입니다.</p>
+
+
+  <h2>목표</h2>
+
+
+  <ol>
+   <li>사용자 지정 AI 원격 분석 프로세서 확장을 등록한 다음 개별 AI 원격 분석 이벤트를 처리하는 방법을 보여 줍니다.</li>
+   <li>AIs&rsquo; 원격 종속성 원격 분석 이벤트를 사용하여 런타임 시 애플리케이션 종속성을 동적으로 식별하는 방법을 보여 줍니다.</li>
+   <li>AI SDK 내에서 사용자 지정 코드를 통합하여 종속성에 대한 네트워크 상태 및 성능을 평가하는 방법을 보여 줍니다.</li>
+   <li>AI 애플리케이션에 사용자 지정 원격 분석을 기록하는 방법을 보여줍니다.</li>
+  </ol>
+
+
+  <h2>구현 요약</h2>
+
+
+  <p>애플리케이션 Insights SDK를 사용하면 AI 처리 파이프라인에 통합되고 AI에서 생성된 각 원격 분석 항목을 처리하는 데 사용할 수 있는 사용자 지정 확장을 등록할 수 있습니다. 이 예제에서는 애플리케이션에 대한 원격 종속성을 결정하는 데 관심이 있으므로 애플리케이션이 원격 엔드포인트를 호출할 때마다 생성되는 AIs&rsquo; 원격 종속성 이벤트를 처리합니다. 아래 다이어그램은 솔루션에 대한 간소화된 흐름을 나타냅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67a03983-2bd2-492f-908c-7e496e00b376.png"><img alt="2016-05-18_19h11_45" border="0" height="411" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6b29086f-381c-4eb0-bd25-5189fe2d7195.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_19h11_45" width="610"></a></p>
+
+
+  <ul>
+   <li>애플리케이션 코드는 원격 종속성을 호출합니다.</li>
+   <li>AI SDK는 각 원격 호출을 가로채 등록한 원격 분석 프로세서 확장에 원격 종속성 이벤트를 보냅니다.</li>
+   <li>엔드포인트 속성(호스트 이름 및 포트)은 원격 종속성 이벤트에서 구문 분석되고 Ping Mesh 개체 내의 정적 해시 테이블에 저장됩니다.</li>
+   <li>Ping Mesh 개체는 해시 테이블을 지속적으로 폴링한 다음, 엔드포인트에 대한 네트워크 상태 및 성능을 평가하는 Ping&rsquo; 스레드를 만듭니다&lsquo;.</li>
+   <li>각 Ping 스레드가 완료되면 네트워크 상태 및 응답 시간에 대한 AI 메트릭을 제출합니다.</li>
+  </ul>
+
+
+  <p>오류 발생 시 클라이언트 쪽 네트워크 상태(예: &ndash; netstat, tracert, ipconfig 등)를 캡처하고 이를 추적 이벤트로 AI에 제출하기 위해 향상된 기능을 추가할 수 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-api-custom-events-metrics/">있습니다(여기서</a>는 SDK 지침).</p>
+
+
+  <h2>결과</h2>
+
+
+  <p>구현에 대해 자세히 알아보기 전에 시나리오를 공유하여 솔루션의 가치를 보여주고 싶었습니다. 내 애플리케이션 아키텍처에는 WebAPI 컨트롤러를 사용하여 원격 Yahoo finance API를 호출하는 프런트 엔드 ASP.NET 웹 사이트가 있습니다. 기록 주식 가격 책정 데이터는 원격 종속성에서 가져온 다음 사용자에게 반환됩니다. 다음 다이어그램은 흐름을 보여 줍니다. </p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/953d0152-8842-4203-aecf-8bee2a7b55c5.png"><img alt="2016-05-18_19h15_17" border="0" height="198" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d496698-8978-4a8b-bd42-c852b8f15d9b.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_19h15_17" width="610"></a></p>
+
+
+  <p>ASP.NET VM과 Yahoo API 서버 간에 네트워크 속도가 느려지면 웹 사이트 사용자의 페이지 로드 속도가 느려집니다. 원격 종속성의 상태를 이해하는 데 도움이 되도록 AI는 기록 응답 시간 및 실패율에 대한 멋진 보기를 제공합니다. 아래 예제에서는 내 앱에 대한 전반적인 종속성 호출 기간에 대해 AI에서 가져오는 기본 메트릭을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8c39548c-8ab0-4330-a01b-4722ad9d7f43.png"><img alt="2016-05-18_19h18_16" border="0" height="181" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5940fb2e-52c0-4c2f-a227-901bfbc7a449.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_19h18_16" width="610"></a></p>
+
+
+  <p>그러나 속도가 느려지는 것이 네트워크 때문인지 여부를 알기 어려울 수 있습니다. 사용자 지정 Ping Mesh 확장은 문제가 있는 위치를 식별하는 데 도움이 되는 지속적인 기준 메트릭을 제공합니다. 원하는 기본 패턴은 다음과 같습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4b0e467d-fe13-42a6-b90c-cd2db1c95f9a.png"><img alt="image" border="0" height="189" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/31558468-409a-41cf-aaf7-019b4214dd24.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="651"></a></p>
+
+
+  <p>AIs&rsquo; 원격 종속성 원격 분석은 원격 엔드포인트에 대한 호출의 전반적인 상태 및 성능에 대한 무료 인사이트를 제공합니다(즉, &ndash; 파란색 선 제공). AI 원격 분석 프로세서 확장으로 구현된 약간의 사용자 지정 코드를 사용하여 고유한 네트워크 상태 및 성능 메트릭(예: &ndash; 주황색 선)을 생성할 수 있습니다.</p>
+
+
+  <p>네트워크 속도 저하를 시뮬레이션하고 애플리케이션 Insights 어떻게 보이는지 보여주기 위해 Azure VM에 웹 사이트를 설치하고 네트워크 WAN 시뮬레이터를 사용하여 Yahoo API 엔드포인트 호출에 대한 높은 네트워크 대기 시간을 도입했습니다. 아래에서는 AI의 메트릭이 위의 네트워크 문제&rdquo; 패턴과 일치하는 &ldquo;명확한 데이터를 제공하는 방법을 확인할 수 있습니다(즉, 네트워크 속도 저하는 원격 종속성 속도 저하와 직접적인 상관 관계).</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5cd0cb75-a898-49e3-aa84-bf0badae70e8.png"><img alt="2016-05-18_19h00_13" border="0" height="468" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a7425e3-7592-42bb-b213-042a3e804f2a.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_19h00_13" width="610"></a></p>
+
+
+  <p>따라서 약간의 사용자 지정 코드를 사용하여 AI 원격 분석으로 확장하여 애플리케이션이 새 엔드포인트에 연결되면 동적으로 작동하는 지속적인 네트워크 진단을 제공할 수 있었습니다. 정말 멋지다!</p>
+
+
+  <h2>구현 세부 정보</h2>
+
+
+  <p>Ping Mesh 솔루션을 구현하는 데 필요한 단계는 AI 원격 분석 파이프라인에 연결하는 측면에서 매우 미미했습니다. 대부분의 코드는 사용자 지정 PingMesh.dll 구현되었습니다. 솔루션을 작동하기 위해 수행한 개략적인 단계 집합은 다음과 같습니다.</p>
+
+
+  <ol>
+   <li>최신 AI SDK를 사용하여 내 애플리케이션을 계측하고 AI 내에서 애플리케이션을 설정합니다(VS 프로젝트를 마우스 오른쪽 단추로 클릭하고 마법사에서 프로세스를 안내합니다).</li>
+   <li>네트워크 진단을 구현하는 사용자 지정 ping 메시 라이브러리에 대한 참조를 프로젝트에 추가합니다.</li>
+   <li>원격 분석 프로세서(AITelemetryProcessor.cs)에 대한 코드를 추가하고 해당 생성자에서 PingMesh 개체를 인스턴스화합니다.</li>
+   <li>원격 분석 프로세서에 대한 구성으로 ApplicationInsights.config 업데이트합니다.</li>
+   <li>내 프로젝트를 빌드하고 실행합니다.</li>
+  </ol>
+
+
+  <p><em>GitHub 소스 코드를 찾을 수 있습니다</em><a href="https://github.com/Microsoft/ApplicationInsights-Home/tree/master/Samples/PingMeshWeb" target="_blank"><em></em></a><em>.</em></p>
+
+
+  <p>아래 이미지는 ITelemetryProcessor 코드가 구현된 방법을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b1177ee2-8a2a-417f-ae5d-269dc4848caf.png"><img alt="2016-05-18_18h51_59" border="0" height="457" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/62bfd9dd-1a8a-4d5c-a4d7-ad72bfed642f.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_18h51_59" width="610"></a></p>
+
+
+  <p>원격 분석 프로세서 코드를 만든 후 AI 구성에 등록해야 했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61ef5679-2ea7-475d-9b37-c0ebf0de2611.png"><img alt="2016-05-18_18h50_15[9]" border="0" height="308" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2e2f7826-50c7-45c0-9635-3fcb49d2e7a6.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_18h50_15[9]" width="610"></a></p>
+
+
+  <p>Ping 클라이언트의 SubmitEndpointToTargetList 메서드는 네트워크 진단 코드에서 ping할 수 있는 형식으로 엔드포인트를 구문 분석합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6a966894-9624-4dff-a994-f93df182a224.png"><img alt="2016-05-18_18h57_55" border="0" height="404" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/08a9eeaa-9e00-4573-a878-a4169536df03.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_18h57_55" width="610"></a></p>
+
+
+  <p>앞에서 &ldquo;설명한 대로 Ping&rdquo; 클라이언트 개체가 초기화될 때 ping 스레드가 만들어집니다. 이 ping 스레드는 30초마다 실행됩니다(이 설정을 확장 구성으로 이동해야 하지만 이 데모에 대해 하드 코딩해야 합니다). 여기서&rsquo; 볼 수 있듯이 위에 설정된 PingTarget 해시에 추가된 모든 엔드포인트를 폴링합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/250d70c1-07fc-4d86-a929-912a6c7cf9c3.png"><img alt="2016-05-18_18h58_55" border="0" height="314" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/876e06f0-6b32-4951-ad17-ffb2560cac9d.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_18h58_55" width="610"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9fa179eb-d6d8-40eb-8c74-70db71deaaeb.png"><img alt="2016-05-18_18h59_24" border="0" height="291" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/adc5d1e7-6dbd-4799-94b7-378bb9710287.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_18h59_24" width="610"></a></p>
+
+
+  <p>마지막으로 Ping 클라이언트에서 모든 네트워크 진단 결과가 테스트 중에 DNS 또는 TCP 문제가 발생했는지를 보여 주는 사용자 지정 메트릭으로 애플리케이션 Insights 제출됩니다(참고: 메트릭 이름에 특수 문자가 있는 잠재적인 문제를 방지하기 위해 :&rdquo; &ldquo;를 _&rdquo;로 대체&ldquo;했습니다.)</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8449847e-45a4-487b-bec7-4864555ebb5c.png"><img alt="2016-05-18_18h59_53" border="0" height="118" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/57b795b2-f533-4ab3-8633-20c347abbe7f.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2016-05-18_18h59_53" width="610"></a></p>
+
+
+  <h2>요약</h2>
+
+
+  <p>이 게시물에서는 AI 원격 분석 프로세서 파이프라인에 연결하는 코드를 작성하여 AI에서 제공하는 기본 분석을 확장하는 방법을 살펴보았습니다. 이 예제에서는 AI가 수행하는 원격 종속성 검색을 활용하여 네트워크 상태에 대한 기록 기준을 제공하는 진단을 구현했습니다. 문제가 발생할 때 운영 체제에서 네트워크 상태를 캡처하도록 이 구현을 더 확장할 수 있습니다. 이렇게 하면 AI 원격 분석 프로세서 기능이 얼마나 유연하고 강력한지 알 수 있기를 바랍니다.&nbsp;</p>

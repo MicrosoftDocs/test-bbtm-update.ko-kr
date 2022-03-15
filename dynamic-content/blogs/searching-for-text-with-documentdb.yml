@@ -1,0 +1,104 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0375f6a8da5f7e806e8e08fd669abb95e85cd9f8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900855"
+Slug: searching-for-text-with-documentdb
+Title: DocumentDB를 사용하여 텍스트 검색
+Summary: 'DocumentDB 고객 중 일반적인 질문: "문자열 값이 포함된 문서를 검색하려면 어떻게 하나요?"  이 게시물은 이 작업을 수행하기 위한 두 가지 방법을 탐색합니다.'
+Content: >-
+  <p>DocumentDB 고객 중 일반적인 질문: 텍스트 값이 &ldquo;포함된 문서를 검색하려면 어떻게 해야 하나요?&rdquo; 이 게시물에서는 수행하려는 내용에 따라 이 작업을 수행하는 두 가지 방법을 살펴보겠습니다.</p>
+
+
+  <h2>1. 단어 토큰화</h2>
+
+
+  <p>첫 번째 방법은 구현하기 쉽고 요구 사항이 비교적 간단한 단어 일치일 때 잘 작동합니다. 아래 JSON과 같은 문서를 고려합니다.</p>
+
+
+  <div id="codeSnippetWrapper">
+
+  <pre id="codeSnippet" style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: &quot;Courier New&quot;, courier, monospace; font-size: 8pt; direction: ltr; background-color: rgb(244, 244, 244);">
+
+  {
+      &quot;id&quot;: &quot;CDC101&quot;,
+      &quot;title&quot;: &quot;Fundamentals of database design&quot;,&nbsp;&nbsp;&nbsp;&nbsp; &quot;credits&quot;:  10
+  }</pre>
+
+  제목 필드에 데이터베이스&rsquo;라는 단어가 &lsquo;있는 모든 문서를 검색하는 방법 이 작업을 수행하는 간단한 방법은 타이틀 필드를 토큰화하고 아래와 같이 JSON을 만드는 것입니다.</div>
+
+
+  <div>
+
+  <pre id="codeSnippet" style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: &quot;Courier New&quot;, courier, monospace; font-size: 8pt; direction: ltr; background-color: rgb(244, 244, 244);">
+
+  {
+      &quot;id&quot;: &quot;CDC101&quot;,
+      &quot;title&quot;: &quot;Fundamentals of database design&quot;,
+      &quot;titleWords&quot;: [ &quot;fundamentals&quot;, &quot;database&quot;, &quot;design&quot; ],
+      &quot;credits&quot;:  10
+  }</pre>
+
+  </div>
+
+
+  <blockquote>
+
+  <div>&nbsp;</div>
+
+
+  <div>참고:&nbsp; RegEx를 사용하여 단어를 소문자로 변환하고 문장 부호를 제거하는 것이 좋습니다. 또한, 등, &ldquo;&ldquo;&nbsp;&rdquo;&rdquo;등과 같은 &ldquo;&rdquo;중지 단어를 제거 ()<a href="https://en.wikipedia.org/wiki/Stop_words" title="https://en.wikipedia.org/wiki/Stop_words">https://en.wikipedia.org/wiki/Stop_words</a></div>
+
+  </blockquote>
+
+
+  <p>이제 다음 쿼리를 사용하여 제목에서 단어를 쉽게 검색할 수 있습니다.</p>
+
+
+  <div>
+
+  <div>
+
+  <pre id="codeSnippet" style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: &quot;Courier New&quot;, courier, monospace; font-size: 8pt; direction: ltr; background-color: rgb(244, 244, 244);">
+
+  SELECT VALUE r
+
+  FROM root r JOIN word IN r.titleWords
+
+  WHERE word = &quot;database&quot;
+
+  </pre>
+
+  </div>
+
+
+  <blockquote>참고:&nbsp; 이 SQL 문에서 <strong>VALUE</strong> 키워드를 사용했습니다. <strong>VALUE</strong> 키워드는 JSON 값을 반환하는 방법을 제공합니다. <strong>VALUE </strong>키워드에 대한 자세한 내용은 DocumentDBarticle이 있는 DocumentDBQuery">를</a>&nbsp; 사용한Query를 참조&nbsp;<a href="https://azure.microsoft.com/en-us/documentation/articles/documentdb-sql-query/" target="_blank" title="하세요.</blockquote>
+
+  LINQ의 C#에 동일한 쿼리를 표시하려면 다음과 같습니다.
+
+
+  <div>
+
+  <pre id="codeSnippet" style="margin: 0em; padding: 0px; width: 100%; text-align: left; color: black; line-height: 12pt; overflow: visible; font-family: &quot;Courier New&quot;, courier, monospace; font-size: 8pt; direction: ltr; background-color: rgb(244, 244, 244);">
+
+  List&lt;MyType&gt; results = client.CreateDocumentQuery&lt;MyType&gt;(collection.SelfLink)
+      .SelectMany(r =&gt; r.AllWords
+          .Where(word =&gt; word == &quot;database&quot;)
+          .Select(word =&gt; r)
+      ).ToList&lt;MyType&gt;();</pre>
+  </div>
+
+
+  <div>&nbsp;</div>
+
+  &nbsp; 위의 쿼리는 매우 효율적입니다. 여기서처럼 배열의 각 단어가 DocumentDB에서 기본적으로 인덱싱되므로 단어에 대한 빠른 같음 일치를 허용합니다. 이 방법의 또 다른 장점은 데이터베이스의 일관성 수준을 적용한다는 것입니다. 즉, 토큰화된 단어의 변경 내용을 즉시 쿼리할 수 있습니다. &nbsp;
+
+
+  <h2>2. Azure Search 사용</h2>
+
+  </div>
+
+
+  <p>토큰화할 단어가 많은 경우 추가 단어 배열을 저장하는 데 필요한 추가 스토리지를 수용할 수&#39;없거나 여러 필드 등에서 보다 복잡한 다중 패싯 전체 텍스트 검색 기능이 필요합니다. 위의 접근 방식은 작동하지 않으며 보다 강력한 전체 텍스트 지원 검색 엔진의 지원이 필요합니다. 다행히 Azure에는 설정 및 사용하기 매우 쉬운 이러한 중 하나가 있으며 <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">, 이를 Azure Search</a>라고 합니다. DocumentDB 데이터베이스를 가리키는 데이터 원본을 설치하고 미리 정의된 일정에 따라 검색 인덱서가 데이터를 크롤링하도록 할 수 있습니다. 이 설정에 대한 자세한 단계는 <a href="https://azure.microsoft.com/en-us/documentation/articles/documentdb-search-indexer/">인덱서를 사용하여 DocumentDB와 Azure Search 연결을 확인하세요</a>. DocumentDB 및 검색을 함께 사용하여 샘플 ASP.NET MVC 웹 애플리케이션을 <a href="https://portalcontent.blob.core.windows.net/samples/searchabletodo.zip">다운로드</a>할 수도 있습니다. 이 샘플을 실행하려면 Search 계정 및 DocumentDB 계정을 만들기만 하면됩니다. 이러한 항목이 있으면 엔드포인트 및 키로 web.config 업데이트합니다(Azure 관리 포털에서 얻을 수 있습니다). 다운로드에는 일부 통조림 데이터로 시작하거나 Visual Studio 솔루션을 열고 프로젝트를 실행하여 클린 슬레이트로 시작하려는 경우 DocumentDB로 가져올 수 있는 샘플 할 일 항목이 포함되어 있습니다. 일부 할 일 항목을 추가하고 인덱스 단추를 눌러 수동으로 다시 인덱싱한 다음 검색을 수행합니다. 따라서 DocumentDB 내에서 텍스트를 쉽게 검색할 수 있습니다 &ndash; &gt; . DocumentDB에 대한 자세한 내용은 <a href="https://azure.com/docdb">서비스 페이지를</a> 방문하여 DocumentDB 쿼리 구문에 대해 자세히 알아보려면 <a href="https://www.documentdb.com/sql/demo" target="_blank">쿼리 실습</a> 페이지를 방문하세요.</p>

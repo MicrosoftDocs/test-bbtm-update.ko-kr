@@ -1,0 +1,336 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ec30dc15d09aa5cc06bfee04116170c99275f2f8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900331"
+Slug: step-by-step-guide-for-deployment-of-sap-hana-developer-edition-on-microsoft-azure
+Title: Microsoft Azure SAP HANA Developer Edition 배포를 위한 단계별 가이드
+Summary: 이 단계별 가이드에서는 SAP 클라우드 어플라이언스 라이브러리를 통해 Microsoft Azure SAP HANA Dev Edition을 배포하는 데 필요한 모든 단일 단계를 보여줍니다.
+Content: >-
+  <h1>소개</h1>
+
+  올해 초 Microsoft Azure SAP 워크로드를 지원하기 위한 Microsoft 발표의 일부(<a href="https://www.microsoft.com/en-us/news/press/2014/may14/05-19microsoftsappr.aspx" target="_blank">SAP-on-Azure 발표</a>)는 SAP HANA Developer Edition 배포도 가능할 것이라는 메시지였습니다. SAP HANA Developer Edition의 배포 차량은 SAP CAL이라는 SAP 클라우드 어플라이언스 라이브러리입니다. 토픽과 관련된 SAP 게시된 문서 및 설명서:
+
+  <ul>
+   <li><a href="https://scn.sap.com/community/cloud-appliance-library/blog/2014/05/20/sap-cloud-appliance-library-now-supports-microsoft-azure" target="_blank">Azure의 SAP HANA Dev Edition에 대한 SAP 알림</a></li>
+   <li><a href="https://scn.sap.com/docs/DOC-31722" target="_blank">클라우드의 SAP HANA Dev Edition</a></li>
+   <li><a href="https://scn.sap.com/docs/DOC-28294" target="_blank">방법: 클라우드의 SAP HANA Dev Edition</a></li>
+   <li><a href="https://cal.sap.com/" target="_blank">SAP CAL 포털</a></li>
+  </ul>
+
+  &nbsp;
+
+
+  아래에 설명된 단계별 프로세스가 이러한 방식으로 작동하는 이유를 이해하려면 백그라운드에서 발생하는 작업을 설명해야 합니다. SAP HANA Dev Edition은 Azure 갤러리에서 즉시 사용할 수 있는 단일 이미지 형식으로 제공되지 않습니다. 마지막으로 SAP HANA Dev Edition을 포함하는 VM은 Azure 갤러리의 OS 이미지를 사용하여 동적으로 어셈블된 다음 SAP 소프트웨어를 추가합니다. SAP CAL 포털은 고객 구독 내에서 이 작업을 수행하는 데 필요한 프로세스를 트리거하므로 적절한 액세스 권한이 필요합니다. Azure의 경우 고객이 구독 ID를 입력하여 SAP CAL에 VM을 만들 위치를 알려야 합니다. 또한 SAP CAL이 시작하려고 하는 활동이 있는 경우 권한 부여를 위해 관리 인증서가 필요합니다.
+
+
+  Azure 인증서에 대한 자세한 내용은 여기에서 확인할 수 있습니다.
+
+
+  &nbsp;
+
+  <h1>단계별 가이드</h1>
+
+  &nbsp;
+
+
+  SAP CAL은 고객의 Azure 구독에 HANA Dev Edition VM을 만듭니다. 따라서 이러한 구독을 가져오는 첫 번째 단계는 물론입니다. Azure 홈페이지로 이동하여 기존 MSDN 계정 가져오기를 시작하거나 기존 MSDN 계정을 사용할 수 있습니다. 다음 두 스크린샷을 참조하세요.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Azure_Home_Page" alt="Azure_Home_Page" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Azure_Home_Page.jpg" width="610" height="375" border="0" />
+
+
+  그림 1: <a href="https://azure.microsoft.com/en-us/" target="_blank">Azure 홈페이지</a> 로 이동하여 구독 가져오기
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_02" alt="step_02" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_02.jpg" width="610" height="362" border="0" />
+
+
+  &nbsp;
+
+
+  그림 2: 다른 옵션은 기존 MSDN 계정 내에서 Microsoft Azure 액세스를 활성화하는 것입니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_03" alt="step_03" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_03.jpg" width="610" height="362" border="0" />
+
+
+  &nbsp;
+
+
+  그림 3: Azure에서 SAP HANA Dev Edition을 사용하기 위한 진입점은 <a href="https://cal.sap.com/" target="_blank">SAP CAL</a>이라고도 하는 SAP 클라우드 어플라이언스 라이브러리입니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_04" alt="step_04" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_04.jpg" width="610" height="241" border="0" />
+
+
+  &nbsp;
+
+
+  그림 4: SAP CAL 웹 사이트에서 아래로 스크롤하면 솔루션을 배포하는 데 필요한 단계가 표시됩니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_05" alt="step_05" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_05.jpg" width="480" height="287" border="0" />
+
+
+  &nbsp;
+
+
+  그림 5: 1단계부터 등록된 사용자가 필요합니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_13" alt="step_13" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_13.jpg" width="610" height="330" border="0" />
+
+
+  &nbsp;
+
+
+  그림 6: 솔루션 탭에서 로그인한 후 "hana dev Edition"을 검색합니다. 흥미로운 버전은 버전 1.0 Rev 80입니다. 솔루션에 연결된 계정이 없으면 활성화하려고 하면 실패합니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_14" alt="step_14" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_14.jpg" width="610" height="336" border="0" />
+
+
+  &nbsp;
+
+
+  그림 7: "계정" 탭에서 계정을 만들어야 합니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_15" alt="step_15" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_15.jpg" width="610" height="195" border="0" />
+
+
+  &nbsp;
+
+
+  그림 8: SAP CAL 계정 만들기의 첫 번째 단계는 이름을 지정하는 것입니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_16" alt="step_16" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_16.jpg" width="610" height="205" border="0" />
+
+
+  &nbsp;
+
+
+  그림 9 : 다음 단계는 "Microsoft Azure"인 클라우드 공급자의 선택입니다. Microsoft Azure 경우 소위 구독 ID를 입력해야 합니다. SAP CAL을 사용하려면 HANA Dev Edition VM을 빌드할 위치를 알기 위해 이 정보가 필요합니다. 계정이 만들어지면 "계정" 탭 아래의 테이블에 표시됩니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_16b" alt="step_16b" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_16b.jpg" width="610" height="280" border="0" />
+
+
+  &nbsp;
+
+
+  그림 10: Azure 구독 ID를 가져오려면 한 가지 옵션은 Azure Portal에 로그인하고(아직 새 버전이 아님) 왼쪽에서 "설정"으로 아래로 스크롤하는 것입니다. "구독" 탭에서 여러 구독이 있는 경우 적절한 구독의 ID를 복사합니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_17" alt="step_17" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_17.jpg" width="610" height="337" border="0" />
+
+
+  &nbsp;
+
+
+  그림 11: SAP CAL에서 Azure 구독 ID를 입력하면 "관리 인증서"를 다운로드하라는 대화 상자가 표시됩니다. 이 내용은 소개 섹션에서 설명했습니다. SAP CAL은 고객 Azure 구독 내에서 새 VM을 동적으로 어셈블합니다. 이 작업을 수행하기 위한 적절한 권한을 얻으려면 Microsoft Azure 관리 인증서가 필요합니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_22" alt="step_22" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_22.jpg" width="385" height="480" border="0" />
+
+
+  &nbsp;
+
+
+  그림 12: SAP CAL에서 이동하기 전에 이전에 다운로드한 Azure 관리 인증서를 업로드해야 합니다. 그렇지 않으면 Azure에서 SAP CAL을 통한 VM 생성이 작동하지 않습니다. 다운로드한 인증서를 확인하여 "발급자" 또는 만료 날짜 "유효 대상"과 같은 일부 세부 정보를 확인할 수 있습니다. 이러한 세부 정보는 나중에 Azure Portal에서 확인할 수 있습니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_21" alt="step_21" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_21.jpg" width="610" height="337" border="0" />
+
+
+  &nbsp;
+
+
+  그림 13: 이전과 마찬가지로 Azure 구독 ID를 복사하기 위해 관리 인증서를 업로드하는 한 가지 옵션은 왼쪽에서 아래로 스크롤하여 "설정"로 스크롤하는 것입니다. "관리 인증서" 탭에서 포털 창 아래쪽의 "업로드" 단추를 통해 Azure 구독에 새 인증서를 업로드할 수 있습니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_23" alt="step_23" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_23.jpg" width="610" height="337" border="0" />
+
+
+  &nbsp;
+
+
+  그림 14: 인증서를 업로드한 후 Azure Portal에 나열됩니다. 그림 12 - 발급자 및 만료 날짜에 표시된 세부 정보를 인식합니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_24" alt="step_24" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_24.jpg" width="610" height="337" border="0" />
+
+
+  &nbsp;
+
+
+  그림 15: "솔루션" 탭 아래의 SAP CAL로 돌아가서 이제 솔루션을 활성화할 수 있습니다. 이 작업은 이전에 만든 계정에 대한 활성화 및 연결을 수행합니다. 그 후 Microsoft Azure VM 인스턴스를 만들 수 있습니다. "인스턴스 만들기"를 클릭하기만 하면 됩니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_25" alt="step_25" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_25.jpg" width="610" height="318" border="0" />
+
+
+  &nbsp;
+
+
+  그림 16: 인스턴스(Azure VM)를 다시 만들려면 나중에 Azure에서 VM 이름으로 사용할 이름이 필요합니다. 적절한 계정과 Azure 지역을 선택해야 합니다. 후자는 이 샘플에서 "서유럽"이었습니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_26" alt="step_26" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_26.jpg" width="610" height="330" border="0" />
+
+
+  &nbsp;
+
+
+  그림 17: 현재 Azure의 HANA Dev Edition에 사용할 수 있는 VM 크기는 하나뿐입니다. A7(가상 CPU 8개, 메모리 56GB). SAP CAL은 Azure VM에 대해 만들 모든 엔드포인트를 나열합니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_27" alt="step_27" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_27.jpg" width="610" height="329" border="0" />
+
+
+  &nbsp;
+
+
+  그림 18: SAP CAL의 다음 단계는 솔루션에 대한 마스터 암호 설정입니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_28" alt="step_28" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_28.jpg" width="610" height="330" border="0" />
+
+
+  &nbsp;
+
+
+  그림 19: 일정 옵션에 대해 "수동으로 활성화 및 일시 중단"이 선택되었습니다. 다음 단계를 건너뛰고 최종 요약 화면을 통해 완료할 수 있습니다. 그러면 Microsoft Azure VM 만들기 프로세스가 트리거됩니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_32" alt="step_32" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_32.jpg" width="610" height="345" border="0" />
+
+
+  &nbsp;
+
+
+  그림 20: Azure Portal에서 새 VM 및 모든 관련 세부 정보를 찾습니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_33" alt="step_33" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_33.jpg" width="610" height="345" border="0" />
+
+
+  &nbsp;
+
+
+  그림 21: Azure Portal에서 VM을 볼 때 "ENDPOINTS" 탭에서 이전에 SAP CAL에 표시된 모든 엔드포인트도 찾습니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_34b" alt="step_34b" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_34b.jpg" width="610" height="345" border="0" />
+
+
+  &nbsp;
+
+
+  그림 22: Azure VM의 "대시보드"는 VM 디스크 및 해당 Azure Storage 계정을 보여 줍니다. Azure Portal의 왼쪽에서 "Storage"로 이동하여 SAP CAL에서 만든 Storage 계정과 두 개의 컨테이너를 찾습니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_39" alt="step_39" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_39.jpg" width="610" height="346" border="0" />
+
+
+  &nbsp;
+
+
+  그림 23: Azure VM이 실행 중일 때 브라우저에서 VM의 Azure 공용 IP 주소를 입력할 수 있습니다. 그러면 HANA Dev Edition 환경이 시작됩니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_40" alt="step_40" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_40.jpg" width="610" height="345" border="0" />
+
+
+  &nbsp;
+
+
+  그림 24: 또 다른 옵션은 <a href="https://hanadeveditionsapicl.hana.ondemand.com/hanadevedition/" target="_blank">SAP HANA Studio</a> 를 다운로드하여 온-프레미스에 로컬로 설치하는 것입니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="step_42" alt="step_42" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/step_42.jpg" width="610" height="342" border="0" />
+
+
+  &nbsp;
+
+
+  그림 25: HANA Studio가 설치되면 Azure에서 실행되는 HANA Dev Edition 인스턴스에 연결할 수 있습니다(SAP CAL을 통해 배포됨).

@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: aef4766f8f244bb3af7cd0f7d3050827e382c039
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906714"
+Slug: load-confidently-with-sql-data-warehouse-polybase-rejected-row-location
+Title: SQL Data Warehouse PolyBase 거부 행 위치로 자신 있게 로드
+Summary: 데이터의 모든 행은 찾을 수 있는 인사이트입니다. 따라서 모든 행을 데이터 웨어하우스에 로드할 수 있는 것이 중요합니다. 데이터가 정리되면 PolyBase를 사용하여 Azure SQL Data Warehouse에 데이터를 쉽게 로드할 수 있습니다.
+Content: >-
+  <p>데이터의 모든 행은 찾을 수 있는 인사이트입니다. 따라서 모든 행을 데이터 웨어하우스에 로드할 수 있는 것이 중요합니다. 데이터가 정리되면 PolyBase를 사용하여 Azure SQL Data Warehouse에 데이터를 쉽게 로드할 수 있습니다. 탄력적이고 전역적으로 사용 가능하며 MPP(대규모 병렬 처리)를 활용합니다. 실제로 깨끗한 데이터는 항상 사용할 수 있는 것은 아닙니다. 이러한 경우 로드하지 못한 행과 그 이유를 알아야 합니다.</p>
+
+
+  <p>Azure SQL Data Warehouse에서 외부 테이블 만들기 정의가 Rejected_Row_Location 매개 변수를 포함하도록 확장되었습니다. 이 값은 오류 파일 및 거부된 행이 기록될 외부 데이터 원본의 위치를 나타냅니다.</p>
+
+
+  <pre>
+
+  CREATE EXTERNAL TABLE [dbo].[Reject_Example]
+
+  (
+
+  [Col_one] TINYINT NULL,
+
+  [Col_two] VARCHAR(100) NULL,
+
+  [Col_three] NUMERIC(2,2) NULL
+
+  )
+
+  WITH
+
+  (
+
+  DATA_SOURCE = EDS_Reject_Row
+
+  ,LOCATION = &#39;/Read_Directory&#39;
+
+  ,FILE_FORMAT = CSV
+
+  ,REJECT_TYPE = VALUE
+
+  ,REJECT_VALUE = 100
+
+  ,REJECTED_ROW_LOCATION=&lsquo;/Reject_Directory&#39;
+
+  )</pre>
+
+
+  <h2>데이터가 로드되면 어떻게 됩니까?</h2>
+
+
+  <p>사용자가 위의 테이블에서 CTAS(Create Table as Select)를 실행하는 경우 PolyBase는 외부 데이터 원본에 있는 디렉터리가 없는 경우&rsquo; Rejected_Row_Location 만듭니다. 자식 디렉터리가 거부된 이름으로 &ldquo; 만들어 _집니다&rdquo;. 문자는 &ldquo;_&rdquo; 위치 매개 변수에 명시적으로 명명되지 않는 한 다른 데이터 처리를 위해 디렉터리가 이스케이프되도록 합니다. 이 디렉터리 내에는 로드 제출 시간을 기준으로 YearMonthDay-HourMinuteSecond 형식으로 만든 폴더가 있습니다(예: 20180330-173205). 이 폴더에서 _reason 파일과 data 파일이라는 두 가지 파일에 데이터가 기록됩니다.</p>
+
+
+  <p>reason 파일과 data 파일에는 모두 CTAS 문과 연결된 queryID가 있습니다. data와 reason은 별도의 파일에 있으므로 해당 파일의 접미사가 일치해야 합니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>이 새로운 기능을 모든 SQL DW 고객에게 제공하게 되어 기쁩니다. 구문은 <a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/create-external-table-transact-sql" target="_blank">외부 테이블 만들기(transact-SQL) 설명서를 참조하세요</a>. 새 거부 옵션에 대한 구문이 지원되는 최신 버전의 <a href="https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017" target="_blank">SQL Server Management Studio(SSMS)&nbsp;</a>를 다운로드합니다.</p>

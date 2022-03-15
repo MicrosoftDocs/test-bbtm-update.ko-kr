@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 59b7d687276bbd2f32b548a1ecc544ef2e6f0696
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907048"
+Slug: the-best-of-appsource-azure-marketplace-at-build-2018
+Title: 빌드 2018에서 AppSource & Azure Marketplace의 최고
+Summary: '이번 달에 빌드 컨퍼런스를 놓쳤나요? 새로운 기능, 새로운 기능 및 새 서비스를 포함하여 마켓플레이스에 대한 몇 가지 큰 발표를 했습니다. '
+Content: >-
+  <p>이번 달에 빌드 컨퍼런스를 놓쳤나요? 새로운 기능, 새로운 기능 및 새 서비스를 포함하여 마켓플레이스에 대한 몇 가지 큰 발표를 했습니다. <a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-is-reaching-new-audiences/" target="_blank">Azure Marketplace에서 새로운 대상 그룹 블로그에 도달하고</a> 있는 이러한 공지 사항의 빠른 개요를 확인할 수 있습니다.</p>
+
+
+  <p>여분의 시간을 조금 더 가지고 더 깊이 가고 싶어? 일부 주요 마켓플레이스 세션 및 주문형 콘텐츠를 확인합니다.</p>
+
+
+  <ul>
+      <li><a href="https://developer.microsoft.com/en-us/events/build/content/building-for-azure-marketplace-appsource-pptx" target="_blank">Azure Marketplace 및 AppSource용 앱 및 서비스 빌드</a><br>
+  마켓플레이스의 새로운 기능&rsquo;과 새로운 기능 및 사용 가능한 제품 유형을 활용하는 방법을 알아봅니다. Azure Marketplace 또는 AppSource에서 애플리케이션 또는 서비스 게시를 최대한 활용하기 위한 기술 로드맵을 이해합니다.</li>
+      <li><a href="https://developer.microsoft.com/en-us/events/build/content/building-apps-and-services-for-azure-marketplace" target="_blank">Azure Marketplace용 솔루션 템플릿 및 관리형 애플리케이션 빌드</a><br>
+  상점 간의 차이점을 이해하고, 사용자에게 적합한 상점과 Azure 애플리케이션&rsquo; 솔루션 제품을 개발하는 방법에 대한 도구, 모범 사례 및 데모를 알아봅니다.</li>
+      <li><a href="https://developer.microsoft.com/en-us/events/build/content/deliver-compelling-experiences-on-ms-appsource" target="_blank">Microsoft AppSource에서 매력적인 환경 제공</a><br>
+  Microsoft AppSource에서 매력적인 환경을 제공하는 방법을 알아봅니다. 앱을 게시하기 위한 모범 사례, 시험 사용을 만드는 방법 및 ISV가 플랫폼에서 성공을 달성하는 방법을 확인할&#39;있습니다.</li>
+      <li><a href="https://developer.microsoft.com/en-us/events/build/content/distribute-your-apps-to-millions-of-users?playlist=f5fff893-a9eb-422a-9976-1d2a4b110e60" target="_blank">AppSource를 통해 수백만 명의 사용자에게 앱 배포</a><br>
+  PowerApps용 앱 및 사용자 지정 확장을 패키지하고 조직 내의 AppSource를 통해 또는 Office 365 및 Dynamics 365에서 120M 이상의 월간 활성 사용자에게 배포하는 방법을 알아봅니다. 모든 사용자가 활용할 수 있도록 사용자 지정 솔루션을 준비합니다.</li>
+      <li><a href="https://developer.microsoft.com/en-us/events/build/content/keynote-intelligent-cloud-and-intelligent-edge" target="_blank">비전 키노트: 인텔리전트 클라우드 및 인텔리전트 에지</a><br>
+  마켓플레이스, 개발자, Microsoft 파트너, 인텔리전트 클라우드 및 인텔리전트 에지에 대한 경영진의 비전을 들어보세요.</li>
+
+  </ul>
+
+
+  <p>키노트 <a href="https://developer.microsoft.com/en-us/events/build/content" target="_blank">세션을 포함하여 빌드에서 기록된 세션 및 콘텐츠의 전체 카탈로그</a> 를 확인합니다.</p>

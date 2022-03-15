@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1a13a25ae6f20fc9eb9ef56dcc4da6563723e196
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907096"
+Slug: new-content-affinity-group-and-subscription-history-operations-now-available-in-the-windows-azure-service-management-rest-api
+Title: '새 콘텐츠: 이제 Windows Azure 서비스 관리 REST API에서 선호도 그룹 및 구독 기록 작업을 사용할 수 있습니다.'
+Summary: 최근에 Azure 서비스 관리 REST API에 Windows 다음과 같은 새로운 작업에 대한 콘텐츠를 게시했습니다. 선호도 그룹 만들기 선호도 그룹 삭제 업데이트...
+Content: '<p>최근에 Azure Service Management REST API Windows 다음과 같은 새로운 작업에 대한 콘텐츠를 게시했습니다.</p>  <ul>  <li><a target="_blank" href="https://msdn.microsoft.com/en-us/library/gg715316.aspx">선호도 그룹 업데이트</a></li>  <li><a target="_blank" href="https://msdn.microsoft.com/en-us/library/gg715317.aspx">선호도 그룹 만들기</a></li>  <li><a target="_blank" href="https://msdn.microsoft.com/en-us/library/gg715314.aspx">선호도 그룹 삭제</a></li>  <li><a target="_blank" href="https://msdn.microsoft.com/en-us/library/gg715318.aspx">구독 작업 나열</a></li>  </ul>  <p>&nbsp;이러한 업데이트를&nbsp; 사용하면 이제 이전에 관리 포털을 사용하여 수행할 수 있었던 작업이었던 선호도 그룹을 프로그래밍 방식으로 만들고, 업데이트하고, 삭제할 수 있습니다. 이러한 선호도 그룹 작업&rsquo; 외에도 구독 내에서 발생한 모든 작업을 과거 90일까지 나열할 수 있는 새 구독 기록 작업이 있습니다. 특정 호스티드 서비스에 대한 작업만 표시하는 등 다양한 방법으로 이러한 결과를 필터링할 수 있습니다.</p>  <p>이 업데이트된 기능을 사용하려면 요청 헤더에서 최신 버전의 서비스 관리 API를 지정해야 합니다. 자세한 내용은 <a target="_blank" href="https://msdn.microsoft.com/en-us/library/gg592580.aspx">서비스 관리 버전 관리를 참조하세요</a>.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href= hhttps://blogs.msdn.com/b/windowsazure/archive/2011/04/29/new-content-affinity-group-and-subscription-history-operations-now-available-in-the-windows-azure-service-management-rest-api.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗  <script type="text/javascript"></script>  </p>'

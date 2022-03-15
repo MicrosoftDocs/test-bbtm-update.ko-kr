@@ -1,0 +1,270 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f18063611e16bcabe960c76f1ccdf18ff7ad7eed
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907312"
+Slug: azure-networking-announcements-for-ignite-2017
+Title: Ignite 2017에 대한 Azure 네트워킹 공지 사항
+Summary: 작년에는 고객이 퍼블릭 클라우드에서 서비스를 더 쉽게 실행할 수 있도록 하기 위해 노력했습니다. 우리는 전 세계에서 고객과 만날 때 일반적인 관심사는 의 도전입니다 ...
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-networking-announcements-for-ignite-2016/" target="_blank">작년에</a> 는 고객이 퍼블릭 클라우드에서 서비스를 더 쉽게 실행할 수 있도록 하기 위해 노력했습니다. 전 세계의 고객과 만날 때, 클라우드 기반 중요 업무용 애플리케이션의 포트폴리오를 관리하는 데 어려움이 있다는 공통된 우려가 제기됩니다. Microsoft는 보안, 성능, 모니터링, 연결, 가용성 및 풍부한 파트너 에코시스템 성장의 기본 핵심 요소 외에도 네트워킹 서비스의 전반적인 관리를 간소화하고 안전하고 규정을 준수하는 방식으로 서비스를 실행할 수 있는 더 많은 선택 사항을 제공하는 데 중점을 두고 있습니다. 다음은 Ignite에서 발표하는 개요입니다.</p>
+
+
+  <h2>보안</h2>
+
+
+  <h3>Virtual Network 서비스 엔드포인트</h3>
+
+
+  <p>Storage 및 SQL 같은 Azure 서비스에는 인터넷 연결 IP 주소가 있습니다.&nbsp; 많은 고객은 Azure 서비스를 인터넷에 직접 노출하지 않는 것을 선호합니다. Virtual Network 서비스 엔드포인트는 가상 네트워크 개인 주소 공간 및 VNet의 ID를 Azure 서비스로 확장합니다. 인터넷을 통해서가 아니라 VNet에서만 Azure 리소스에 액세스하도록 제한할 수 있습니다. 한 번의 클릭으로 서브넷에서 VNet 서비스 엔드포인트를 사용할 수 있습니다.&nbsp; 서비스 엔드포인트는 선택한 지역의 Azure Storage 및 Azure SQL Database 미리 보기로 제공됩니다. 향후 몇 달 내에 VNet 서비스 엔드포인트에 추가 Azure 서비스를 포함할 예정입니다. 자세한 내용은 <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview" target="_blank">VNet 서비스 엔드포인트를 참조하세요</a>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/40c06b13-672b-4a30-8647-7821a3172aa0.jpg"><img alt="VNet Service Endpoints" border="0" height="837" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4c5bd5d2-71f0-4e44-896a-f52bc43c0f89.jpg" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="VNet 서비스 엔드포인트" width="1058"></a></p>
+
+
+  <p align="center"><strong>VNet 서비스 엔드포인트는 Azure 서비스를 VNet에서만 액세스하도록 제한합니다. </strong></p>
+
+
+  <h3>가상 네트워크에 대한 DDoS Protection</h3>
+
+
+  <p>네트워크 공격의 유형과 정교함이 증가함에 따라 Azure는 고객에게 애플리케이션의 보안 및 가용성을 보호하는 솔루션을 제공합니다. Azures&rsquo; 기본 DDoS Protection은 자동으로 실시간 완화를 제공하여 전역적으로 배포된 DDoS 인프라의 규모와 용량을 사용하여 Microsofts&rsquo; 클라우드를 보호합니다. 그러나 애플리케이션에는 세분화된 정책이 필요할 수 있습니다.</p>
+
+
+  <p>새 <strong>Azure DDoS Protection</strong> 서비스는 대상 DDoS 공격으로부터 애플리케이션을 보호하고 추가 구성, 경고 및 원격 분석을 제공합니다. 연속 및 자동 조정은 VNet에서 공개적으로 액세스할 수 있는 리소스를 보호합니다. 정교한 기계 학습 알고리즘을 사용하여 애플리케이션&rsquo;에 일반 트래픽 패턴을 프로파일링하여 악의적인 트래픽을 지능적으로 검색하면 대상 DDoS 공격이 완화됩니다. Azure Monitor와의 원활한 통합은 자세한 원격 분석 및 경고를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2c537fc6-6727-4150-971a-2ddca906d531.png"><img alt="Azure DDoS Protection" border="0" height="262" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f6cbd776-4795-45a5-9468-32a64877d701.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure DDoS Protection" width="1399"></a></p>
+
+
+  <p align="center"><strong>Azure DDoS Protection은 Virtual Network에서 공개적으로 액세스할 수 있는 리소스를 보호합니다.</strong></p>
+
+
+  <p>구성은 새 VNet 또는 기존 VNet에 대한 보호를 활성화하기 위한 간단한 클릭입니다.&nbsp; 또한 Azure Application Gateway WAF를 사용하여 애플리케이션 기반(계층 7) 공격으로부터 보호할 수 있습니다. DDoS Protection은 포괄적인 심층 방어 보안 솔루션을 위해 NSG(네트워크 보안 그룹)와 같은 기존 Virtual Network 보안 기능을 보완합니다. 자세한 내용은 <a href="https://aka.ms/azureddos" target="_blank">DDoS Protection 웹 페이지를 참조하세요</a>.</p>
+
+
+  <h3>Application Gateway 및 웹 애플리케이션 방화벽 향상</h3>
+
+
+  <p>오늘날의&rsquo; 클라우드 기반 웹 애플리케이션에는 애플리케이션 수준 부하 분산 및 WAF(웹 애플리케이션 방화벽)가 필요합니다. Azure Application Gateway는 쿠키 기반 세션 선호도, SSL 오프로드, URL/호스트 기반 라우팅, SSL 다시 암호화 및 WAF를 포함한 계층 7 ADC(애플리케이션 배달 컨트롤러) 서비스를 제공합니다. Application Gateway&rsquo;는 암호화 제품군 선택 및 우선 순위 순서 지정에 대한 <a href="https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-ssl-policy-overview" target="_blank">향상된 SSL 정책 지원을</a> 통해 보안을 강화하고 규정 준수를 간소화합니다. <a href="https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-redirect-overview" target="_blank">리디렉션</a>하는 새로운 기능(예: HTTP에서 HTTPS로)을 사용하면 모든 웹 사이트 트래픽이 암호화됩니다. 이제 <a href="https://azure.microsoft.com/en-us/services/app-service/web/" target="_blank">Azure Web Apps</a>와 같은 <a href="https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-web-app-overview" target="_blank">다중 테넌트 백 엔드</a> 엔터티에 대한 지원은 더 많은 유연성과 확장성을 제공합니다. 이제 WAF는 프로덕션 서비스에 권장되는 오픈 소스 <a href="https://www.owasp.org/index.php/Category:OWASP_ModSecurity_Core_Rule_Set_Project" target="_blank">OWASP ModSecurity Core 규칙 집합 3.0</a> 을 지원합니다. 특정 규칙을 사용하거나 사용하지 않도록 설정하는 기능을 사용하여 애플리케이션과 가장 관련된 규칙을 선택합니다. WAF와 Azure Security Center를 통합하면 WAF 관리 효율성 및 모니터링이 더욱 간소화됩니다.</p>
+
+
+  <h3>네트워킹 보안 관리 간소화</h3>
+
+
+  <p>NSG(네트워크 보안 그룹)를 사용하면 VNet의 VM 및 서브넷에 대한 액세스를 제한하는 IP 주소에 따라 네트워크 보안 액세스 정책을 정의할 수 있습니다. 그러나 IP 주소만 사용하여 복잡한 보안 정책을 관리하는 것은 번거롭고 오류가 발생하기 쉬울 수 있습니다. 서비스 태그, 애플리케이션 보안 그룹 및 향상된 NSG 규칙 기능을 사용하여 NSG 관리를 간소화했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0628d99-d42e-4080-9865-e0d6564bc15e.png"><img alt="Simpler Network Security Group management" border="0" height="636" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3862bd71-4e3a-4665-ae3f-80b2b271dccc.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="더 간단한 네트워크 보안 그룹 관리" width="1939"></a></p>
+
+
+  <p align="center"><strong>태그, 그룹 및 향상된 규칙을 사용하여 더 간단한 네트워크 보안 그룹 관리 </strong></p>
+
+
+  <h3>서비스 태그: 특정 Azure 서비스에 대한 네트워크 액세스 조정</h3>
+
+
+  <p>Azure 서비스는 공용 IP 주소를 사용합니다. Storage 같은 서비스에 액세스하려는 VNet은 모든 Azure 공용 IP 주소에 대한 액세스를 열어야 합니다. 이러한 IP 주소를 유지 관리하는 것은 문제가 됩니다. 서비스 태그는 전역 또는 지역적으로 지정된 Azure 서비스의 모든 IP 주소를 나타내는 이름입니다. 예를 들어 Storage 서비스 태그는 모든 Azure Storage IP 주소를 나타냅니다. NSG 규칙에서 서비스 태그를 사용하여 서비스 이름으로 특정 Azure 서비스에 대한 트래픽을 허용하거나 거부할 수 있습니다. 각 태그의 기본 IP 주소는 플랫폼에서 자동으로 업데이트됩니다. 초기 릴리스에는 Storage, SQL 및 Traffic Manager 대한 서비스 태그가 포함됩니다. 자세한 내용은 <a href="https://aka.ms/servicetags" target="_blank">서비스 태그</a>에서 확인할 수 있습니다.</p>
+
+
+  <h3>애플리케이션 보안 그룹: 사용자 정의 VM 그룹을 기반으로 하는 네트워크 보안</h3>
+
+
+  <p>애플리케이션 보안 그룹을 사용하면 VM 그룹을 나타내는 고유한 태그를 만들 수 있습니다. NSG에서 이 태그를 사용할 수 있습니다. 예를 들어 모든 WebServers에 대한 그룹 또는 AppServers에 대한 그룹을 만들고 보안 정책에서 이러한 이름을 사용할 수 있습니다. 자세한 내용은 <a href="https://aka.ms/applicationsecuritygroups" target="_blank">애플리케이션 보안 그룹에서</a> 확인할 수 있습니다.</p>
+
+
+  <h3>네트워크 보안 그룹 보강 규칙: 향상된 네트워크 보안 정의</h3>
+
+
+  <p>네트워크 보안 그룹에 대한 보강된 규칙은 보안 정의를 간소화합니다. 더 적은 규칙으로 더 크고 복잡한 네트워크 보안 정책을 정의할 수 있습니다. 여러 포트, 여러 명시적 IP 주소, 서비스 태그 및 애플리케이션 보안 그룹을 모두 쉽게 이해할 수 있는 단일 보안 규칙으로 결합할 수 있습니다. 자세한 내용은 <a href="https://aka.ms/nsgaugmentedrules" target="_blank">NSG 증강 규칙</a>에서 확인할 수 있습니다.</p>
+
+
+  <h2>성능 - Azure는 가장 빠른 퍼블릭 클라우드로 유지&nbsp;</h2>
+
+
+  <p>Azure는 계속해서 가장 빠른 퍼블릭 클라우드입니다. 성능은 클라우드에서 중요 업무용 워크로드를 실행하는 데 중요합니다. 작년에 25Gbps VM을 도입했으며 이제 30Gbps VM을 발표했습니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90ac90e1-b915-4f28-ae73-4ad792746349.png">을 만듭니다.<img align="right" alt="30Gbps" border="0" height="167" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d8874458-853d-426e-bf85-d8995d5a4494.png" style="margin: 16px 0px 0px; border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: right; display: inline; background-image: none;" title="30GbpsD64" width="193"></a> v3, Ds64 v3, E64 v3, Es64 v3 또는 M128ms VM은 VM 간 트래픽에 대해 초저 대기 시간 및 높은 초당 패킷 속도를 제공하는 가속화된 네트워킹을 사용하여 30Gbps 성능을 얻습니다.</p>
+
+
+  <p>가속화된 네트워킹 지원은 Windows 및 Linux용 Dv2, Dv3, Ev2, Ev3, F 및 M 시리즈 인스턴스의 모든 4개 이상의 물리적 코어 VM으로 크게 확장되었습니다.&nbsp; 가속화된 네트워킹은 일반적으로 모든 공용 지역에서 Windows 사용할 수 있으며&rsquo; Linux 지원 미리 보기를 20개 지역으로 확장했습니다. 이제 Azure Marketplace Ubuntu, SLES 및 CentOS 이미지는 수동 단계 없이 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-create-vm-accelerated-networking" target="_blank">가속화된 네트워킹을</a> 지원합니다. 더 많은 Linux 배포판에 대한 자동화가 곧 제공될 예정입니다.</p>
+
+
+  <p>Weve&rsquo;는 네트워크 하드웨어에 직접 액세스할 수 있는 DPDK( <a href="https://dpdk.org/" target="_blank">Data Plane Development</a> Kit) 기술을 사용하여 빠른 패킷 처리로 고성능 네트워크 가상 어플라이언스를 제공하기 위해 파트너와 협력해 왔습니다. Ignite 세션에서 공지된 대로,&rsquo; A10을 사용하여 가속 네트워킹 및 D 시리즈 VM의 DPDK를 사용하여 Azure의 프로덕션 환경에서 어플라이언스를 가져오고 vThunder 어플라이언스를 사용하여 30Gbps 라인 속도를 확인했습니다.&nbsp;</p>
+
+
+  <p>A10S&rsquo; 자체 단어<em>&ldquo;에서 A10과 Microsoft는 워크로드를 퍼블릭 클라우드&rdquo;로 마이그레이션할 때 고객이 최상의 성능을 달성할 수 있도록 돕고 </em>있다고 A10 Networks의 최고 기술 책임자 Raj Jalan은 말했습니다. <em>&ldquo;DPDK를 사용하는 Azure 클라우드는 네트워크 성능을 크게 향상시킵니다. Azure의 A10s&rsquo; vThunder ADC는 고객에게 10배 더 많은 성능과 감소된 대기 시간을 제공합니다.&rdquo;</em></p>
+
+
+  <p>가속화된 네트워킹을 사용하는 Linux VM에 대한 DPDK 지원은 이제 최상의 네트워킹 성능을 제공하려는 파트너를 위한 개발자 미리 보기로 제공됩니다. 자세한 내용은 다음으로 <a href="mailto:AzureDPDK@microsoft.com" target="_blank">AzureDPDK@microsoft.com</a>문의하세요.&nbsp;</p>
+
+
+  <h3>6x VPN 성능</h3>
+
+
+  <p>Weve&rsquo;는 Azure Virtual Network에 1Gbps VPN 연결을 설정할 수 있도록 VPN 게이트웨이 성능을 향상했습니다.&nbsp; 이러한 성능으로 VPN은 프라이빗 네트워크 연결 솔루션인 ExpressRoute에 대한 좋은 백업 옵션이 됩니다. 핵심 네트워크에서 ExpressRoute를 사용하는 동안 새 VPN Gateway를 사용하여 지사를 VNet에 연결할 수도 있습니다. 내년 초에 VPN 게이트웨이에서 더 많은 성능 업데이트를 기대합니다.</p>
+
+
+  <h2>모니터링</h2>
+
+
+  <p>고객은 중요 업무용 워크로드를 실행하도록 Azure에 맡겼습니다. 이러한 프로덕션 애플리케이션의 실시간 동작에 대한 심층적인 운영 인사이트를 제공하는 것은 필수적입니다. 이러한 요구 사항을 해결하기 위해 네트워크 모니터링 기능이 향상되었습니다.</p>
+
+
+  <h3>Operations Management Suite를 사용하여 ExpressRoute 모니터링</h3>
+
+
+  <p>ExpressRoute는 인터넷을 우회하는 Microsofts&rsquo; 클라우드 서비스에 대한 프라이빗 네트워크 연결을 제공합니다. OMS(Operations Management Suite)의 두 가지 새로운 기능은 온-프레미스에서 Microsoft로 ExpressRoute의 엔드 투 엔드 모니터링을 제공합니다.</p>
+
+
+  <ol>
+   <li><strong>ExpressRoute용 NPM(네트워크 성능 모니터)</strong> &ndash; 고객은 엔드투엔드 연결을 모니터링하여 Azure 서비스 관리 포털에서 대기 시간, 패킷 손실 및 토폴로지 스냅샷을 지속적으로 측정할 수 있습니다. 경고를 설정하고 대기 시간 변화, 패킷 손실 및 ExpressRoute 회로, 피어링 및 연결 통계를 볼 수 있습니다.</li>
+   <li><strong>엔드포인트 모니터링</strong> &ndash; 고객은 대기 시간, 패킷 손실을 측정하고 Microsoft에서 호스트되는 PaaS 또는 SaaS 서비스에 대한 연결의 네트워크 토폴로지 볼 수 있습니다. 예를 들어 엔드포인트 모니터링은 Office 365 및 Azure Storage 계정에 대한 연결 가능성을 추적할 수 있습니다.</li>
+  </ol>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b1cd2dce-50f6-45ef-b91e-ae8af6cb0901.png"><img alt="Network Performance Monitor and Endpoint monitoring 1" border="0" height="198" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/21767d98-5370-4b08-82af-d16fac4b4f50.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="네트워크 성능 모니터 및 엔드포인트 모니터링 1" width="459"></a><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/79224153-d358-4c25-ab1c-206fac932f5b.png"><img alt="Network Performance Monitor and Endpoint monitoring 2" border="0" height="220" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d38be24f-ae2a-46d4-ad61-14c9871c703c.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="네트워크 성능 모니터 및 엔드포인트 모니터링 2" width="229"></a></p>
+
+
+  <p align="center"><strong>네트워크 성능 모니터 및 엔드포인트 모니터링은 ExpressRoute 모니터링을 향상시킵니다.</strong></p>
+
+
+  <h3>향상된 S2S(사이트 대 사이트) VPN 모니터링</h3>
+
+
+  <p>Azure Monitor용 Azure VPN Gateway는 메트릭 및 진단 로그를 모두 제공하여 S2S VPN 터널 및 중요한 이벤트 로그의 처리량을 제공합니다. VPN 터널 메트릭을 기반으로 경고를 설정할 수도 있습니다. 학습된 경로와 보급된 경로 모두에 대한 BGP 피어링 상태를 사용하여 라우팅 정보를 더 잘 파악할 수 있습니다.</p>
+
+
+  <h3>Network Watcher 연결 확인 및 NSG Flow 로그 통합</h3>
+
+
+  <p>Network Watcher를 사용하면 네트워크 진단 및 시각화 도구를 사용하여 Azure 서비스를 진단하고 인사이트를 얻을 수 있습니다. 새로운 연결 확인 기능은 대기 시간 및 패킷이 대상에 도달하는 데 걸리는 경로와 같은 홉 정보를 통해 홉을 볼 수 있는 고급 연결 진단을 제공합니다. NSG, 게스트 방화벽 및 사용자 정의 경로에 의해 차단된 트래픽을 포함하여 구성 문제를 식별할 수도 있습니다. Network Watcher NSG Flow 로그는 Elastics Stack, Grafana 및 Graylog와 같은 <a href="https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-visualize-nsg-flow-logs-open-source-tools" target="_blank">오픈 소스 로그 관리 도구</a>와 쉽게 통합할 수 있습니다.</p>
+
+
+  <h4>&ndash; 실제 사용자 측정값 및 트래픽 보기 Azure Traffic Manager</h4>
+
+
+  <p>Traffic Manager 대기 시간이 가장 짧은 Azure 지역 엔드포인트로 글로벌 클라우드 서비스의 최종 사용자를 안내합니다. Azure Traffic Manager Microsofts&rsquo; 클라우드 서비스를 통해 수집하는 네트워크 대기 시간 측정값을 사용하여 위치에 따라 들어오는 쿼리를 사용자 지정합니다. 새로운 Azure Traffic Manager&rsquo; 실제 사용자 측정을 사용하면 최종 사용자&rsquo; 환경에 기여할 수 있습니다. 자세한 내용은 <a href="https://aka.ms/atmrum" target="_blank">실제 사용자 측정 개요를</a> 참조하세요.</p>
+
+
+  <p>Traffic Manager Traffic View를 사용하면 사용자의 위치, 이러한 지역의 트래픽 볼륨, 대표적인 사용자 대기 시간 및 특정 트래픽 패턴을 이해할 수 있습니다. 이 실행 가능한 인텔리전스를 사용하면 사용자가 뛰어난 네트워크 환경을 얻을 수 있도록 용량 및 글로벌 확장을 더 잘 관리할 수 있습니다. 자세한 내용은 <a href="https://aka.ms/atmtv" target="_blank">트래픽 보기 개요</a>를 참조하세요.</p>
+
+
+  <h2>연결</h2>
+
+
+  <h3>글로벌 Virtual Network 피어링</h3>
+
+
+  <p>글로벌 VNet 피어링을 사용하면 다른 Azure 지역의 VNet을 연결하여 Microsofts&rsquo; 글로벌 백본 네트워크를 통해 VM과 직접 VM 통신을 수행할 수 있습니다. VNet 내의 리소스는 단일 글로벌 네트워크의 일부인 것처럼 서로 통신합니다. 글로벌 추상화로 데이터 복제, 재해 복구 및 데이터 기반 장애 조치(failover)가 훨씬 쉬워집니다. 글로벌 VNet 피어링에 대한 자세한 내용은 <a href="https://aka.ms/globalvnetpeering" target="_blank">글로벌 VNet 피어링을</a> 방문하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e28e3d34-7060-48ed-8d22-76f95379f1bf.png"><img alt="Global VNet Peering" border="0" height="561" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f66eb175-c245-43eb-8115-551cfcd46b7b.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="전역 VNet 피어링" width="1085"></a></p>
+
+
+  <p align="center"><strong>글로벌 VNet 피어링이 다른 지역의 VNet을 연결합니다. </strong></p>
+
+
+  <h3>ExpressRoute 향상된 기능</h3>
+
+
+  <h4>Microsoft 피어링, 경로 필터, IPv6을 통해 Azure 서비스에 액세스</h4>
+
+
+  <p>이전에는 ExpressRoute에는 Azure VNet에 연결하기 위한 프라이빗 피어링, Azure 서비스에 도달하기 위한 공용 피어링, Office 365 및 Dynamics 365용 Microsoft 피어링의 세 가지 피어링이 있었습니다. ExpressRoute 관리 및 구성을 간소화하기 위해 공용 및 Microsoft 피어링을 병합했습니다. 이제 Microsoft 피어링을 통해 Azure PaaS 및 Microsoft SaaS 서비스에 액세스할 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/expressroute/how-to-routefilter-portal" target="_blank">경로 필터는</a> ExpressRoute를 통해 네트워크에 보급되는 IP 접두사 수를 크게 줄일 수 있습니다. ExpressRoute를 통해 액세스하려는 특정 Office 365 또는 Dynamics 365 서비스를 선택할 수 있습니다. 지역별로 Azure 서비스를 선택할 수도 있습니다.&nbsp; 또한 이제 IPv6을 사용하여 Microsoft 피어링을 통해 Office 365 액세스할 수 있습니다.</p>
+
+
+  <h3>VPN 향상</h3>
+
+
+  <h4>macOS 및 AD(Active Directory) 인증에 대한 P2S(지점 및 사이트별) VPN 지원</h4>
+
+
+  <p>P2S VPN 연결을 통해 고객은 Windows 머신과 macOS를 사용하여 어디서나 Azure VNet에 연결할 수 있습니다. Active Directory 도메인 인증을 사용하면 이제 클라이언트 머신에 인증서를 삽입하는 대신 VPN 인증에 조직&rsquo; 도메인 자격 증명을 사용할 수 있습니다. Azure VPN Gateway는 Azure 또는 온-프레미스에서 실행되는 RADIUS 및 AD 도메인 배포와 통합됩니다. P2S VPN에 대한 추가 인증 옵션을 위해 RADIUS 서버를 다른 ID 시스템과 통합합니다.</p>
+
+
+  <h3>Azure DNS - 프라이빗 영역</h3>
+
+
+  <p>AZURE DNS(Domain Name Service) 프라이빗 영역은 VNet 내 및 전체에서 이름을 관리하고 확인하는 DNS 서비스를 제공합니다. 이 정보를 인터넷에 노출하지 않고 애플리케이션의 내부 구조를 비공개로 유지하지 않고 애플리케이션의 내부 DNS 이름을 관리할 수 있습니다. 프라이빗 영역은 VNet의 VM에 대한 호스트 이름 레코드를 자동으로 유지 관리합니다. A, NS, TXT, CNAME, SOA, SPF 및 와일드카드를 비롯한 모든 일반적인 레코드 형식이 지원됩니다.</p>
+
+
+  <p>프라이빗 영역을 사용하여 Azure DNS는 분할 수평선 보기를 지원합니다. 프라이빗 영역 및 인터넷 연결 영역에서 동일한 이름을 사용할 수 있습니다. VNet 내에서 실행되는 경우 DNS 쿼리가 내부 IP 주소로 확인되고 외부에서 쿼리된 경우 외부 IP 주소로 확인됩니다. 이는 동일한 내부 및 외부 이름이 다른 IP 주소로 확인되는 웹 사이트에 유용합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e8d3e115-f743-460c-be3c-64995b3d4ab6.png"><img alt="Azure DNS Private Zones" border="0" height="335" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3701eae7-c82d-498b-a06f-03f6d8d53275.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure DNS 프라이빗 영역" width="609"></a></p>
+
+
+  <p align="center"><strong>DNS 쿼리가 VNet 내에서 또는 VNet 외부에서 호출되는 경우 Azure DNS 프라이빗 영역은 다른 IP를 반환할 수 있습니다.</strong></p>
+
+
+  <h2>가용성</h2>
+
+
+  <h3>새 Load Balancer: 10x 규모, 고급 분석, 가용성 영역, HA 포트</h3>
+
+
+  <p>부하 분산은 애플리케이션의 서비스 가용성을 향상시킵니다. 새 Azure Load Balancer 사용하면 부하 분산된 VM을 100개에서 1000개 VM으로 10배 늘릴 수 있습니다. Load Balancer는 지역 임의 캐스트 IP를 활용하여 외부 또는 내부 트래픽의 부하를 신속하게 분산하여 오류 발생 시 가용성을 보장합니다. 가용성 영역에 배포된 모든 VM에서 부하를 분산하여 영역 프런트 엔드 및 백 엔드에 대한 영역 간 부하 분산을 사용하는 시나리오를 사용할 수 있습니다.&nbsp; 또한 데이터 평면 상태에 대한 연속 대역 내 측정, 엔드포인트별 상태 프로브 상태 및 패킷, 바이트, 연결 시도 및 아웃바운드 연결에 대한 카운터를 포함하여 광범위한 상태 및 진단 메트릭을 얻을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f111b750-045a-4025-ad3b-67ee8ced6bb3.png"><img alt="Azure’s new Load Balancer" border="0" height="410" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a8befc3c-7e2f-43a6-9445-d348e14ec15e.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure의 새 Load Balancer" width="1325"></a></p>
+
+
+  <p align="center"><strong>Azures&rsquo;의 새 Load Balancer는 가용성 영역을 지원하고 더 나은 진단을 제공합니다.</strong></p>
+
+
+  <h3>네트워크 가상 어플라이언스의 고가용성: HA 포트</h3>
+
+
+  <p>NVA(네트워크 가상 어플라이언스)는 고객이 중요한 워크로드를 보호하는 데 도움이 됩니다. 새 Load Balancer를 사용하면 HA(고가용성) 포트를 활용하여 모든 계층 4 포트에서 들어오는 VNet 트래픽을 처리하고 NVA에 분산하는 단일 부하 분산 규칙을 쉽게 구성할 수 있습니다. 내부 네트워크 트래픽은 가상 라우터, 방화벽 및 애플리케이션 배달 컨트롤러와 같은 여러 NVA에서 부하가 분산됩니다.</p>
+
+
+  <p><a href="https://aka.ms/lbpreview" target="_blank">Load Balancer 표준 미리 보기</a> 및 <a href="https://aka.ms/haports" target="_blank">HA 포트</a>에 대해 자세히 알아보세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/34b94b94-b1a7-4db7-a171-6359ddab2443.png"><img alt="HA Ports" border="0" height="535" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a4f26259-22a1-42f9-8619-c9e148035bfc.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="HA 포트" width="929"></a></p>
+
+
+  <p align="center"><strong>HA 포트는 고가용성 NVA의 배포를 간소화합니다.</strong></p>
+
+
+  <h2>에코시스템: 더 나은 솔루션 및 더 많은 선택 제공</h2>
+
+
+  <p>파트너의 풍부한 에코시스템을 구축하면 보다 포괄적인 솔루션과 특정 요구 사항을 가장 잘 충족하는 방법에 대한 다양한 선택이 제공됩니다. 지역당 1.6Pbps 이상의 용량과 Azure에서 사용할 수 있는 뛰어난 네트워크 성능을 갖춘 글로벌 네트워크를 사용하면 Azure에서 매력적인 솔루션을 제공하는 Software as Service 회사 및 NVA(네트워크 가상 어플라이언스) 회사의 추세를 볼 수 있습니다.</p>
+
+
+  <h3>Zscaler Private Access: Azure 애플리케이션에 액세스하기 위한 빠른 로컬 중단을 위해 Azure에서 빌드되었습니다.</h3>
+
+
+  <p>기업은 LOB(기간 업무) 애플리케이션에 대한 사용자별 보안 액세스를 제공하는 데 어려움을 겪고 있습니다. Zscaler는 공용 및 하이브리드 환경 모두에 대해 Azure로의 엔터프라이즈 경험을 간소화하는 데 도움이 됩니다. <a href="https://www.zscaler.com/press/zpa-on-azure" target="_blank">Azure에서 빌드된</a> ZPA(Zscaler Private Access)는 전체 회사 네트워크를 노출하지 않고 비즈니스 애플리케이션에 안전하게 액세스하는 사용자에게 더 빠르고 원활한 정책 기반 SaaS와 유사한 액세스 환경을 제공합니다. Zscaler는 인증 및 간소화된 정책 관리를 위해 Active Directory와 통합됩니다.</p>
+
+
+  <h3>F5 WAF as a Service: Azure에서 빌드됨</h3>
+
+
+  <p>웹 애플리케이션 방화벽 인프라를 유지 관리하는 것은 팀에 부담이 될 수 있습니다. Azure에서 빌드된 F5s&rsquo; 새 WAF as a Service는 엔터프라이즈급 WAF와 API 기반 서비스를 결합하여 앱을 보다 쉽게 보호할 수 있도록 합니다. Azure Marketplace에서 WAF as a Service를 배포할 수 있습니다. <a href="https://f5wafsaaspreview.azurewebsites.net/default.html">F5s&rsquo; 공지 사항을 읽습니다</a>.</p>
+
+
+  <h3>네트워크 가상 어플라이언스: 더 많은 파트너 및 더 많은 선택 사항</h3>
+
+
+  <p>Azure Marketplace에서 사용할 수 있는 NVA 수는 계속 증가하고 있습니다. 최근에 추가된 기능으로는 Arista vRouter, Citrix Netscaler SD-WAN, Riverbed SteelConnect, Cisco Viptela vEdge 및 Verisign DNS 방화벽이 포함됩니다. NVA 에코시스템에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/solutions/network-appliances/" target="_blank">여기</a> 를 참조하세요.</p>
+
+
+  <h3>ExpressRoute 파트너 세 배</h3>
+
+
+  <p>전 세계 40개의 ExpressRoute meet-me 위치에서 저희를 만날 수 있는 더 많은 옵션을 제공하는 ExpressRoute <a href="https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations" target="_blank">파트너 에코시스템</a> 을 세 배로 증가했습니다. 이 강력한 파트너 에코시스템을 통해 전 세계 어디에서나 비공개로 연결할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3885c843-aefe-423b-a8c4-cb8aa68bf19f.png"><img alt="Partner ecosystem" border="0" height="663" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b4e21235-e3ca-4c12-9d28-13d2d8af2707.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="파트너 에코시스템" width="1223"></a></p>
+
+
+  <h2>요약</h2>
+
+
+  <p>중요 업무용 워크로드를 Azure로 계속 가져오면서 애플리케이션의 전반적인 네트워크 관리, 보안, 확장성, 가용성 및 성능을 계속 간소화할 것입니다. 글로벌 클라우드 및 글로벌 백본 네트워크에서 제공하는 혜택을 완전히 얻을 수 있습니다. 우리가 배운 한 가지 핵심 교훈은 네트워크 기반 Software-as-a-Service 제품이 환경을 크게 단순화한다는 것입니다. 앞으로 몇 달 안에 더 흥미로운 발표를 준비하십시오. 새로운 기능 및 기능에 대한 피드백과 요구 사항에 맞게 로드맵을 더욱 구체화하기 위한 지침을 환영합니다.</p>

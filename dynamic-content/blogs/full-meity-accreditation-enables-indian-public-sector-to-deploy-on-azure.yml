@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a436d38313a70949ba8f5205ff204da7b02056f3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907196"
+Slug: full-meity-accreditation-enables-indian-public-sector-to-deploy-on-azure
+Title: 완전한 MeitY 인증을 통해 인도 공공 부문이 Azure에 배포할 수 있습니다.
+Summary: Microsoft는 최근 인도 정부에 대한 전자 정보 기술부 (MeitY)의 완전한 인가를 달성한 최초의 글로벌 클라우드 서비스 제공 업체 중 하나가되었습니다....
+Content: >-
+  <p>Microsoft는 최근 인도 정부의 전자 정보 기술부(<a href="https://meity.gov.in/content/gi-cloud-meghraj" target="_blank">MeitY</a>)의 완전한 인증을 받은 최초의 글로벌 클라우드 서비스 공급자 중 하나가 되었습니다. MeitY는 공공 부문 조직이 해당 서비스를 비교하고 조달할 수 있도록 정부 Cloud Services 디렉터리에 공인된 클라우드 서비스 공급자를 나열합니다.</p>
+
+
+  <p>온라인으로 시민들이 정부 서비스를 사용할 수 있도록 하는 것은 인도를 디지털 역량이 있는 사회와 지식 경제로 전환하는 것을 목표로 하는 &ldquo;<a href="https://digitalindia.gov.in/" target="_blank">디지털 인도 프로그램의</a> 핵심 부분입니다.&rdquo; MeitY가 empanelment로 지칭하는 MeitY 인가를 통해 Microsoft는 이제 인도 경제 지형을 재편&rsquo;하기 위해 인도&rsquo; 공공 부문 조직과 완전히 협력할 수 있는 위치에 있습니다.</p>
+
+
+  <p>Microsoft Azure 통해 인도의 공공 부문 조직은 이제 IaaS(Infrastructure as a Service), PaaS(Platform as a Service), 재해 복구 as a Service, 개발/테스트, Virtual Desktop as a Service 및 관리되는 백업을 비롯한 광범위한 배포 모델 및 서비스 제품을 활용할 수 있습니다.</p>
+
+
+  <p>MeitY 인증은 품질 보증 서비스를 제공하는 정부 기관인 STQC(Standardization Testing and Quality Certification) 디렉터리에서 수행한 엄격한 감사 프로세스의 결과입니다. 평가 프레임워크는 공공 부문 IT 서비스의 구현을 제어하는 인도 정부가 수립한 <a href="https://meity.gov.in/content/gi-cloud-meghraj" target="_blank">Meghraj 클라우드 이니셔티브</a>의 작업을 기반으로 합니다.</p>
+
+
+  <p>전체 MeitY 인증은 아르헨티나, 오스트레일리아, 캐나다, 중국, EU, 독일, 일본, 말레이시아, 네덜란드, 뉴질랜드, 싱가포르, 스페인, 영국 및 미국을 포함한 전 세계 지역 및 국가에 한정된 30개 이상의 제품으로 업계에서 가장 큰 <a href="https://aka.ms/AzureCompliance" target="_blank">70개 이상의 제품의 Azure 규정 준수 포트폴리오</a>에 추가됩니다. 인증은 ISO 27001 및 27018, SOC 1,2 및 3, PCI DSS 및 CSA STAR를 포함하여 엄격하고 널리 인식되고 독립적으로 검증된 표준을 기반으로 하는 Azure 컨트롤의 강력한 특성을 인식합니다. 수십 개의 표준과 수백 개의 컨트롤로 구성된 Azures&rsquo; 규정 준수 기반을 통해 고객은 안전하고 규정을 준수하는 솔루션을 더 쉽게 빌드할 수 있습니다.</p>
+
+
+  <h2>추가 정보</h2>
+
+
+  <ul>
+      <li><a href="https://meity.gov.in/content/gi-cloud-meghraj" target="_blank">MeitY</a> 웹 사이트의 Microsoft 클라우드 인증</li>
+      <li><a href="https://aka.ms/AzureCompliance" target="_blank">Azure 규정 준수 제품에</a> 대한 포괄적인 개요</li>
+  </ul>

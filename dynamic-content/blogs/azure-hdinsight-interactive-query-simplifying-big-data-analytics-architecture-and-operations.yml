@@ -1,0 +1,175 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5c7f5a3fa527f83eb8541a73f682dc044a0762ac
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899991"
+Slug: azure-hdinsight-interactive-query-simplifying-big-data-analytics-architecture-and-operations
+Title: 'Azure #HDInsight 대화형 쿼리: 빅 데이터 분석 아키텍처 간소화'
+Summary: '빠른 대화형 BI, 데이터 보안 및 최종 사용자 채택은 성공적인 빅 데이터 분석 구현을 위한 세 가지 중요한 과제입니다. 올바른 아키텍처와 도구가 없으면 많은 빅 데이터 및 분석 프로젝트가 일반적인 BI 사용자 및 엔터프라이즈 보안 설계자를 따라잡지 못합니다. '
+Content: >-
+  <p align="justify"><em>빠른 대화형 BI, 데이터 보안 및 최종 사용자 채택은 성공적인 빅 데이터 분석 구현을 위한 세 가지 중요한 과제입니다. 올바른 아키텍처와 도구가 없으면 많은 빅 데이터 및 분석 프로젝트가 일반적인 BI 사용자 및 엔터프라이즈 보안 설계자를 따라잡지 못합니다. 이 블로그에서는 빠른 대화형 쿼리, 간소화된 보안 모델 및 BI 사용자와의 향상된 사용자 채택을 위한 빅 데이터 솔루션을 설계하는 데 도움이 되는 아키텍처 접근 방식에 대해 설명합니다.</em></p>
+
+
+  <h2>빠른 대화형 BI에 대한 기존의 접근 방식</h2>
+
+
+  <p align="justify">Hadoop 시스템에서 처리된 심층 분석 쿼리는 일반적으로 느렸습니다. MapReduce 작업 또는 Hive 쿼리는 대규모 데이터 세트를 대량으로 처리하는 데 사용되지만 대화형 BI 사용에 필요한 빠른 응답 시간에는 적합하지 않습니다.</p>
+
+
+  <p align="justify">쿼리 상호 작용이 부족하여 사용자 불만에 직면한 데이터 설계자는 Hadoop 위에 OLAP 큐브를 빌드하는 등의 기술을 사용했습니다. OLAP 큐브는 다양한 차원, 측정값 및 계층을 모두 미리 저장하는 메커니즘입니다. 큐브 처리는 일반적으로 미리 지정된 간격으로 수행됩니다. 사후 처리에서는 결과를 미리 사용할 수 있으므로 BI 도구가 큐브를 쿼리하면 결과를 찾기만 하면 되므로 쿼리 응답 시간을 제한하고 빠르고 대화형으로 만들 수 있습니다. 모든 측정값은 차원의 모든 수준 및 범주에 의해 미리 집계되므로 대화형 작업 및 빠른 응답 시간에 매우 적합합니다. 이 방법은 요약 보기를 표시해야 하는 경우에 특히 적합합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><img alt="image" border="0" height="314" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d4e83f9-fcff-42a0-a63b-ba0483d64f70.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="650"></p>
+
+
+  <p align="justify">위의 접근 방식은 특정 시나리오에서 작동하지만 전부는 아닙니다. 특히 많은 파워 사용자와 데이터 과학자가 많은 임시 쿼리를 작성하는 사용 사례에서 큰 빅 데이터 구현으로 쉽게 분해하는 경향이 있습니다.</p>
+
+
+  <p align="justify">주요 과제는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>
+   <div align="justify">OLAP 큐브에는 대기 시간을 도입하는 집계를 만들기 위한 사전 계산이 필요합니다. 모든 산업의 기업은 짧은 비즈니스 기간 내에 보고 및 분석 인프라에서 더 많은 것을 요구하고 있습니다. OLAP 큐브는 실시간 분석을 제공할 수&rsquo; 없는 경우</div>
+   </li>
+   <li>
+   <div align="justify">빅 데이터 분석에서 사전 계산은 전체 파이프라인의 성능, 안정성 및 안정성을 심각하게 저해하는 전체 빅 데이터 파이프라인에 지속 불가능한 압력을 발생시키는 기본 Hadoop 시스템에 큰 부담을 줍니다.</div>
+   </li>
+   <li>
+   <div align="justify">이러한 유형의 아키텍처는 소규모에서 잘 작동하는 서로 다른 시스템 간에 큰 데이터 세트 이동을 강제합니다. 그러나 대규모 데이터 규모로 구분합니다. 여러 계층에서 데이터를 핫하고 최신 상태로 유지하는 것은 어려운 일입니다.</div>
+   </li>
+   <li>
+   <div align="justify">고급 사용자와 데이터 과학자는 전체 시스템에 추가적인 부담을 주는 정교한 임시 쿼리를 사용하여 실험하는 능력 측면에서 훨씬 더 민첩성과 자유가 필요합니다.</div>
+   </li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>Azure HDInsight 대화형 쿼리 개요</h2>
+
+
+  <p align="justify">Hive 2의 가장 흥미로운 새로운 기능 중 하나는 LLAP(짧은 대기 시간 분석 처리)로, Azure Blob 저장소 또는 Azure Data Lake Store와 같은 상용 스토리지 시스템에 저장된 원시 데이터에 대해 훨씬 더 빠른 쿼리를 생성합니다.</p>
+
+
+  <p align="justify">이렇게 하면 빠른 대화형 쿼리를 사용하도록 추가 계층을 도입할 필요가 줄어듭니다.</p>
+
+
+  <h2 align="justify">빅 데이터 BI 아키텍처에서 대화형 쿼리를 도입할 때의 주요 이점은 다음과 같습니다.</h2>
+
+
+  <p align="justify"><strong>매우 빠른 대화형 쿼리:</strong> 대화형 쿼리의 지능형 캐싱 및 최적화는 Azure Blob 및 Azure Data Lake Store와 같은 원격 클라우드 스토리지에서 매우 빠른 쿼리 결과를 생성합니다. 대화형 쿼리를 사용하면 데이터 분석가가 데이터가 준비된 동일한 스토리지에서 대화형으로 데이터를 쿼리할 수 있으므로 분석 요구를 위해 스토리지에서 다른 분석 엔진으로 데이터를 이동할 필요가 없습니다. <a href="https://azure.microsoft.com/en-us/blog/hdinsight-interactive-query-performance-benchmarks-and-integration-with-power-bi-direct-query/" target="_blank">Azure HDInsight 성능 벤치마킹: 대화형 쿼리, Spark 및 Presto</a>를 참조하여 HDInsight 대화형 쿼리 성능 기대치 <strong>@ 100TB 규모를</strong> 이해합니다.</p>
+
+
+  <p align="justify">HDInsight LLAP(Interactive Query)는 Hive 쿼리의 조각을 실행하는 영구 디먼 집합을 활용합니다. LLAP에 대한 쿼리 실행은 작업자 작업이 컨테이너가 아닌 LLAP 디먼 내에서 실행된다는 점을 제외하고 LLAP가 없는 Hive와 매우 유사합니다.</p>
+
+
+  <p align="justify"><img alt="image" border="0" height="361" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c275e66-7fd7-45fd-841c-caf9ecc53084.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="628"></p>
+
+
+  <p align="justify"><strong>쿼리의 수명 주기: </strong> 클라이언트가 JDBC 쿼리를 제출하면 쿼리 계획, 최적화 및 보안 트리밍을 담당하는 Hive Server 2 Interactive에 쿼리가 도착합니다. 각 쿼리는 Hive Server 2를 통해 제출 <u>되므로 보안 정책을 적용하는 단일 위치가 됩니다. </u></p>
+
+
+  <p align="justify"><u><img alt="image" border="0" height="135" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db16d1a0-ac82-4ae8-9e24-14d57e3e5562.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="675"></u></p>
+
+
+  <p align="justify"><strong>파일 형식의 다용도 및 지능형 캐싱:</strong> Hadoop에 대한 빠른 분석은 항상 하나의 큰 캐치와 함께 제공됩니다 : 그들은 시간이 많이 걸리고 복잡하며 민첩성을 제한하는 ORCFile, Parquet 또는 Avro와 같은 열 형식으로 선전 변환이 필요합니다.</p>
+
+
+  <p>CSV 또는 JSON 데이터를 최적화된 메모리 내 형식으로 즉시 변환하는 대화형 쿼리 동적 텍스트 캐시를 사용하면 캐싱이 동적이므로 쿼리에서 캐시되는 데이터를 결정합니다. <b>텍스트 데이터가 캐시되면 분석이 특정 파일 형식으로 변환한 것처럼 빠르게 실행됩니다</b>.</p>
+
+
+  <p>대화형 쿼리 SSD 캐시는 RAM과 SSD를 LLAP 캐시가 제공하는 다른 모든 이점과 함께 거대한 메모리 풀로 결합합니다. SSD 캐시를 사용하면 일반적인 서버 프로필이 4배 더 많은 데이터를 캐시할 수 있으므로 더 큰 데이터 세트를 처리하거나 더 많은 사용자를 지원할 수 있습니다. <b>대화형 쿼리 <u>캐시는</u> 원격 저장소(Azure Storage)의 기본 데이터 변경 내용을 인식합니다</b>. 기본 데이터가 변경되고 사용자가 쿼리를 실행하면 추가 사용자 단계 없이도 업데이트된 데이터가 메모리에 로드됩니다.</p>
+
+
+  <p><img alt="image" border="0" height="304" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fdcaec11-a65f-4525-9743-9d89cef3aae2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="695"></p>
+
+
+  <p><b>동시성:</b> 훨씬 향상된 세분화된 리소스 관리, 쿼리 및 사용자 간에 캐시된 데이터를 선점 및 공유하면서 대화형 쿼리[LLAP의 Hive]를 사용하면 동시 사용자에게 더 좋습니다.</p>
+
+
+  <p>또한 HDInsight는 공유 Azure Storage 및 Hive 메타스토어에서 여러 클러스터를 만들 수 있도록 지원하므로 클러스터 노드를 더 추가하거나 동일한 기본 데이터 및 메타데이터를 가리키는 클러스터를 더 추가하여 동시성을 확장할 수 있습니다.</p>
+
+
+  <h5><a href="https://blogs.msdn.microsoft.com/ashish/2017/03/24/hive-metastore-in-hdinsight-tips-tricks-best-practices/" target="_blank">HdInsight의 Hive Metastore를 참조하여 Azure HDInsight</a>의 클러스터 및 클러스터 유형 간에 metastore를 공유하는 방법에 대해 자세히 알아보세요.</h5>
+
+
+  <p><a name="_msocom_1"></a></p>
+
+
+  <h2>HDInsight 대화형 쿼리를 사용하여 간소화되고 확장 가능한 아키텍처</h2>
+
+
+  <p align="justify">이제 아키텍처에 대화형 쿼리를 도입하여 파워 사용자, 데이터 과학자 및 데이터 엔지니어를 라우팅하여 대화형 쿼리를 직접 적중할 수 있습니다. 이러한 아키텍처 개선은 BI 시스템의 전반적인 부담을 줄이고 빠른 대화형 쿼리 응답으로 인한 사용자 만족도를 높이고 임시 쿼리를 실행할 수 있는 유연성을 향상시킵니다.</p>
+
+
+  <p><img alt="image" border="0" height="320" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a51281e-a316-4eea-8986-1fb53d169139.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="678"></p>
+
+
+  <p align="justify">위에서 설명한 아키텍처에서 요약 보기를 보려는 사용자는 OLAP 큐브와 함께 계속 제공될 수 있습니다. 그러나 다른 모든 사용자는 대화형 쿼리를 활용하여 쿼리를 제출합니다.</p>
+
+
+  <p align="justify">Azure HDInsight의 OLAP 기반 애플리케이션은 <a href="https://www.atscale.com/azure-hdinsight/" target="_blank">AtScale</a> 및 Apache <a href="https://azure.microsoft.com/en-us/blog/bring-interactive-analytics-to-azure-kyligence-analytics-platform-enables-sub-second-query-on-hdinsight/" target="_blank">Kyligence</a>와 같은 솔루션을 참조하세요.</p>
+
+
+  <h2>보안 모델</h2>
+
+
+  <p>Hadoop 및 Spark 클러스터와 마찬가지로 HDInsight Interactive Query는 Azure Active Directory 및 Apache Ranger를 활용하여 세분화된 액세스 제어 및 감사를 제공합니다. HDInsight 클러스터의 보안 모델을 이해하려면 <a href="https://docs.microsoft.com/en-us/azure/hdinsight/domain-joined/apache-domain-joined-introduction">Hadoop 보안</a> 문서에 대한 소개를 참조하세요.</p>
+
+
+  <p>HDInsight 대화형 쿼리에서 액세스 제한 논리는 Hive 계층으로 푸시다운되고 Hive는 데이터 액세스를 시도할 때마다 액세스 제한을 적용합니다. 이렇게 하면 Hive 쿼리 작성을 간소화하고 쿼리 조건자에서 이 논리를 추가하지 않고도 원활한 백그라운드 적용을 제공합니다. Apache Ranger에서 만들 수 있는 다양한 유형의 보안 정책을 이해하려면 <a href="https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.6.5/bk_security/content/using_ranger_to_provide_authorization_in_hadoop.html">Ranger를 사용하여 Hadoop에서 권한 부여를 제공</a> 하세요.</p>
+
+
+  <h2>친숙한 도구를 사용하는 사용자 채택</h2>
+
+
+  <p align="justify">빅 데이터 분석에서 조직은 분석 시스템이 너무 어렵고 익숙하지 않고 학습하기 어려운 도구를 사용하여 분석을 실행해야 하기 때문에 최종 사용자가 분석 시스템에서 충분한 가치를 얻지 못하는&rsquo; 것을 점점 더 우려하고 있습니다. HDInsight Interactive Query는 데이터에서 인사이트를 얻는 데 필요한 새로운 사용자 학습을 최소화하거나 없도록 하여 이 문제를 해결합니다. 사용자는 이미 사용하고 가장 좋아하는 도구에서 SQL 쿼리(hql)를 작성할 수 있습니다. HDInsight 대화형 쿼리는 <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-for-vscode">Visual Studio Code, Power BI</a>, <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-connect-hive-zeppelin">Apache Zeppelin</a>, <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-visual-studio-tools-get-started#run-interactive-hive-queries">Visual Studio</a>, <a href="https://docs.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-hadoop-connect-hive-power-bi-directquery"></a><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-use-hive-ambari-view">Ambari Hive View</a>, <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-use-hive-beeline">Beeline</a> 및 <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-connect-excel-hive-odbc-driver">Hive ODBC</a>와 같은 BI 도구를 지원합니다.</p>
+
+
+  <h5 align="justify"><img alt="image" border="0" height="356" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5af7f5ea-2063-4bc0-b1b8-0e1d454dad58.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="657"></h5>
+
+
+  <h5>이러한 도구에 대해 자세히 알아보려면 <a href="https://azure.microsoft.com/en-us/blog/azure-hdinsight-interactive-query-ten-tools-to-analyze-big-data-faster/" target="_blank">Azure HdInsight 대화형 쿼리: 빅 데이터를 더 빠르게 분석할 수 있는 10가지 도구를</a> 읽어보세요.</h5>
+
+
+  <h2>Spark, Hive, Presto 및 기타 빅 데이터 엔진을 보완할 수 있도록 빌드됨</h2>
+
+
+  <p align="justify">HDInsight Interactive Query는 Apache Spark, Hive, Presto 등 널리 사용되는 빅 데이터 엔진에서 잘 작동하도록 디자인되었습니다. 사용자가 분석을 실행하기 위해 이러한 도구 중 하나를 선택할 수 있으므로 특히 유용합니다. HDInsights&rsquo; 공유 데이터 및 메타데이터 아키텍처를 사용하면 사용자는 동일한 기본 데이터 및 메타데이터를 가리키는 동일하거나 다른 엔진으로 여러 클러스터를 만들 수 있습니다. 더 이상 분석을 위한 하나의 기술에 구속되지 않는 매우 강력한 개념입니다.</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp; <img alt="image" border="0" height="251" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e0fac778-f800-4ace-b957-1b1b62a849a5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="641"></p>
+
+
+  <h2>지금 HDInsight 사용해 보기</h2>
+
+
+  <p align="justify">HDInsight 대화형 쿼리의 빠른 쿼리 기능을 최대한 활용할 수 있기를 바랍니다. Azure HDInsight를 사용하여 빌드할 항목을 확인하게 되어 기쁩니다. <a href="https://azure.microsoft.com/en-us/blog/azure-hdinsight-training-resources-learn-about-big-data-using-open-source-technologies/">이 개발자 가이드를 읽고</a> 빠른 시작 가이드에 따라 Azure HDInsight에서 이러한 파이프라인 및 아키텍처를 구현하는 방법에 대해 자세히 알아보세요. Twitter <a href="https://twitter.com/search?q=%23HDInsight&amp;src=typd">#HDInsight</a> 및 에 대한 팔로우를 통해 최신 Azure HDInsight 뉴스 및 <a href="https://twitter.com/AzureHDInsight">@AzureHDInsight</a>기능을 최신 상태로 유지하세요. 질문 및 피드백은 다음으로 <a>AskHDInsight@microsoft.com</a>문의하세요.</p>
+
+
+  <h2>HDInsight 정보</h2>
+
+
+  <p align="justify">Azure HDInsight는 Azure에서 오픈 소스 워크로드를 실행하기 위한 Microsofts&rsquo; 프리미엄 관리 제품입니다. Azure HDInsight는 제조, 소매 교육, 비영리, 정부, 의료, 미디어, 은행, 통신, 보험 및 ETL에서 데이터 웨어하우징, Machine Learning IoT에 이르는 다양한 사용 사례에 이르는 다양한 산업 분야에 걸친 중요 업무용 애플리케이션을 지원합니다.</p>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-interactive-query-get-started">Azure에서 HDInsight 대화형 쿼리 클러스터 시작</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/hdinsight-interactive-query-performance-benchmarks-and-integration-with-power-bi-direct-query/" target="_blank">Azure HDInsight 성능 벤치마킹: 대화형 쿼리, Spark 및 Presto</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/">Azure HDInsight에 대해 자세히 알아보기</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-linux-tutorial-get-started">HDInsight에서 Hive 사용</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-component-versioning#hadoop-components-available-with-different-hdinsight-versions">HDInsight의 오픈 소스 구성 요소 가이드</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes">HDInsight 릴리스 정보</a></li>
+   <li><a href="https://social.msdn.microsoft.com/forums/azure/en-us/home?forum=hdinsight">Msdn 포럼에서 HDInsight 질문하기</a></li>
+   <li><a href="https://stackoverflow.com/questions/tagged/hdinsight">스택 오버플로에 대한 HDInsight 질문</a></li>
+  </ul>

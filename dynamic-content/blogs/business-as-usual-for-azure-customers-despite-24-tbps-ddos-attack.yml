@@ -1,0 +1,69 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bd48f8a5d732299259f32ddfad0206061a2ee821
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907265"
+Slug: business-as-usual-for-azure-customers-despite-24-tbps-ddos-attack
+Title: 2.4Tbps DDoS 공격에도 불구하고 Azure 고객의 경우 평소와 같이 비즈니스
+Summary: COVID-19 전염병 동안 클라우드 서비스 채택과 함께 디지털 변환 속도가 크게 가속화되었습니다. 이제 그 어느 때보다도 나쁜 행위자가 지속적으로 애플리케이션을 오프라인으로 전환할 수 있는 방법을 찾습니다. Azure DDoS Protection 표준은 DDoS 공격을 막는 향상된 DDoS 임시 조치 기능을 제공합니다.
+Content: >-
+  <p><em>이 블로그 게시물은 Alethea Toh, Program Manager 및 Syed Pasha, 수석 네트워크 엔지니어, Azure 네트워킹에 의해 공동 작성되었습니다.</em></p>
+
+
+  <p>8월 초에는 2021년 상반기 <a href="https://azure.microsoft.com/en-us/blog/azure-ddos-protection-2021-q1-and-q2-ddos-attack-trends/" target="_blank">에 Azures&rsquo; DDoS(분산 서비스 거부) 공격 추세를</a> 공유했습니다. 최대 공격 처리량이 2020년 3분기 1Tbps&nbsp;에서 2021년 상반기 625Mbps로 감소했음에도 불구하고 2020년 4분기에 비해 공격 수가 25% 증가했다고 보고했습니다.</p>
+
+
+  <p>8월 마지막 주에는 유럽의 Azure 고객을 대상으로 하는 2.4Tbps DDoS 공격이 관찰되었습니다. 이는 <a href="https://azure.microsoft.com/en-us/blog/azure-ddos-protection-2020-year-in-review/" target="_blank">2020년대 1Tbps 공격보다 140&rsquo;</a>% 높고 이전에 Azure에서 검색된 네트워크 볼륨 이벤트보다 높습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/285278d0-a50b-4f10-a3aa-68ecc561c16d.png"><img alt="Figure 1—maximum attack bandwidth (terabytes per second) in 2020 vs. August 2021 attack." border="0" height="297" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/919d1349-ddc3-44fd-9d64-7766c7987810.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="비교 감소 그림 1" width="470"></a></p>
+
+
+  <p><em><strong>그림 1&mdash;</strong> 2020년 최대 공격 대역폭(테라비&nbsp;트퍼 초)과 2021년 8월 공격.</em></p>
+
+
+  <p>이 공격 트래픽은 약 70,000개의 출처와 말레이시아, 베트남, 대만, 일본, 중국 등 Asia-Pacific 지역의 여러 국가뿐만 아니라 미국에서 비롯되었습니다. 공격 벡터는 수명이 매우 짧은 버스트가 있는 10분 이상에 걸친 UDP 리플렉션으로, 각각 테라비트 볼륨에 초 단위로 증가합니다. 총 3개의 주요 피크, 첫 번째는 2.4Tbps, 두 번째는 0.55Tbps, 세 번째는 1.7Tbps로 모니터링했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac2a83f9-1eff-4b83-8d05-2f83d99c5b4e.png"><img alt="Figure 2—attack lifespan and progress." border="0" height="237" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/72a591e5-9b40-41d0-b022-afd1a0963c41.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="공격 대역폭 감소 그림 2" width="553"></a></p>
+
+
+  <p><em><strong>그림 2</strong>&mdash; 공격 수명 및 진행 상황.</em></p>
+
+
+  <h2>Azures&rsquo; 대규모 DDoS 보호</h2>
+
+
+  <p>이 크기의 공격은 네트워크 용량을 질식시키려는 거대한 트래픽 볼륨으로 대상을 범람시켜 악의적인 행위자가 혼란을 일으키는 능력을 보여줍니다. 그러나 분산 DDoS 검색 및 완화 파이프라인을 기반으로 하는 Azures&rsquo; DDoS 보호 플랫폼은 수십 테라비트의 DDoS 공격을 흡수할 수 있습니다. 이 집계된 분산 완화 용량은 가장 많은 양의 DDoS 위협을 흡수하도록 대규모로 확장하여 고객에게 필요한 보호를 제공할 수 있습니다.</p>
+
+
+  <p>공격 완화 수명 주기는 공격 원본에 가장 가까운 가장 최적의 위치에 완화 리소스를 동적으로 할당하는 제어 평면 논리에 의해 오케스트레이션됩니다. 이 경우 Asia-Pacific 지역과 미국에서 발생한 공격 트래픽이 고객 지역에 도달하지 않고 원본 국가에서 완화되었습니다.</p>
+
+
+  <p>Azure는 충분한 완화 용량을 초과하는 추가 보호를 제공합니다. AzureS&rsquo; DDoS 완화는 네트워크 전체의 여러 지점에서 인프라를 지속적으로 모니터링하여 대규모 공격을 빠르게 감지하고 완화합니다. 기준선의 편차가 매우 큰 경우 DDoS 제어 평면 논리는 낮은 볼륨의 홍수에 필요한 정상적인 검색 단계를 통해 즉시 완화를 시작합니다. 이렇게 하면 가장 빠른 완화 시간을 보장하고 대규모 공격으로 인한 부수적 손상을 방지할 수 있습니다.</p>
+
+
+  <p>클라우드 또는 온-프레미스에서 인터넷에 노출된 워크로드가 있는 모든 조직은 DDoS 공격에 취약합니다. Azure&#39;글로벌 흡수 규모 및 고급 완화 논리로 인해 고객은 영향이나 가동 중지 시간을 겪지 않았습니다. 고객이 자신의 데이터 센터에서 실행했다면 무형 비용과 함께 막대한 재정적 피해를 입었을 것입니다.</p>
+
+
+  <h2>DDoS 공격으로부터 워크로드를 보호하는 방법</h2>
+
+
+  <p>COVID-19 전염병 기간 동안 클라우드 서비스 채택과 함께 디지털 변환 속도가 크게 가속화되었습니다. 이제 그 어느 때보다도 나쁜 행위자가 지속적으로 애플리케이션을 오프라인으로 전환할 수 있는 방법을 찾습니다. 따라서 조직은 Azure를 사용하여 강력한 <a href="https://docs.microsoft.com/en-us/azure/ddos-protection/ddos-response-strategy" target="_blank">DDoS 응답 전략을</a> 개발하는 데 최대한 주의를 기울여야 합니다.</p>
+
+
+  <p>Azure DDoS Protection 표준은 DDoS 공격을 막는 향상된 DDoS 임시 조치 기능을 제공합니다. 가상 네트워크의 모든 공용 IP 주소를 보호하도록 자동으로 조정됩니다. 보호는 새 가상 네트워크 또는 기존 가상 네트워크에서 간단하게 설정할 수 있으며 애플리케이션이나 리소스를 변경하지 않아도 됩니다.</p>
+
+
+  <p>DDoS 공격에 대한 시기 적절한 보호 외에도 Azure DDoS Protection 표준의 또 다른 주요 기능은 비용 보호이며, DDoS Protection 표준에 등록된 고객은 문서화된 DDoS 공격으로 인해 발생한 리소스 비용에 대한 데이터 전송 및 애플리케이션 스케일 아웃 서비스 크레딧을 받습니다. 상당한 비용이 발생할 수 있는 대규모 공격으로 이러한 비용 보호를 수행해야 합니다. 고객이 DDoS 공격을 추적하고 문서화할 수 있도록 다양한 공격 <a href="https://docs.microsoft.com/en-us/azure/ddos-protection/telemetry" target="_blank">원격 분석</a> 및 <a href="https://docs.microsoft.com/en-us/azure/ddos-protection/diagnostic-logging?tabs=DDoSProtectionNotifications" target="_blank">로그를</a> 제공합니다.</p>
+
+
+  <h2>Azure DDoS Protection 표준에 대해 자세히 알아보기</h2>
+
+
+  <ul>
+      <li>Azure DDoS Protection <a href="https://azure.microsoft.com/services/ddos-protection/" target="_blank">제품 페이지</a>입니다.</li>
+      <li>Azure DDoS Protection 표준 <a href="https://aka.ms/ddosprotectiondocs" target="_blank">설명서</a>.</li>
+  </ul>

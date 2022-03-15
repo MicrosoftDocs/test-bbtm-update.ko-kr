@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 25a40c6833852f5e4baadd4dbadfbda1a468d56b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899720"
+Slug: just-released-new-version-of-the-windows-azure-service-management-cmdlets
+Title: '방금 릴리스됨: 새 버전의 Windows Azure Service Management CmdLet'
+Summary: Windows Azure Platform Evangelism 팀은 최근 새 버전의 Windows Azure Service Management CmdLet을 출시했습니다.&nbsp; 이러한 cmdlet은 Azure 관리 및 진단 Windows 래핑합니다.
+Content: '<p>Windows Azure Platform Evangelism 팀은 최근 새 버전의 <a target="_blank" href="/">Windows Azure Service Management CmdLet을 출시했습니다</a>.&nbsp; 이러한 cmdlet은 Windows Azure 관리 및 진단 API를 래핑하고 사용자가 Windows Azure 서비스 작업을 보다 쉽게 구성하고 관리할 수 있도록 합니다.&nbsp; 이러한 cmdlet을 사용하여 서비스의 새 배포를 만들거나, 지정된 역할의 구성을 변경하거나, 애플리케이션 진단 구성을 관리할 수도 있습니다.&nbsp;  또한 이러한 cmdlet을 사용하여 Windows Azure 애플리케이션을 구성하고 관리하는 무인 스크립트를 실행할 수 있습니다.</p>  <p><a target="_blank" href=""><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1385.WACmdletsSS.png" border="0"></a></p>  <p>기존 Windows Azure 애플리케이션에서 이러한 cmdlet을 사용하는 것 외에도 cmdlet의 소스 코드를 확인하여 관리 및 진단 API를 더 잘 이해할 수 있습니다.</p>  <p><a target="_blank" href="">여기</a>를 클릭하여 Windows Azure Service Management CmdLet을 다운로드하고 <a target="_blank" href="/Wiki/View.aspx?title=How-To%20Guide&amp;referringTitle=Home">방법 가이드</a>를 참조하여 사용 방법에 대한 자세한 예제를 확인합니다.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href=https://blogs.msdn.com/b/windowsazure/archive/2011/02/08/just-released-new-version-of-the-windows-azure-service-management-cmdlets.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗  <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>  </p>'

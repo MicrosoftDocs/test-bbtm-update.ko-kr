@@ -1,0 +1,75 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1152cff10ed7e550a1d77fb866c5ba0fddd26de6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900861"
+Slug: seamless-access-to-management-insights-for-sql-data-warehouse-with-data-studio
+Title: Data Studio를 사용하여 SQL Data Warehouse에 대한 관리 인사이트에 대한 원활한 액세스
+Summary: 'Azure SQL Data Warehouse(SQL DW)는 고객이 데이터를 실행 가능한 인사이트로 변환하는 데 도움이 되는 빠르고 유연하며 안전한 분석 플랫폼입니다. '
+Content: >-
+  <p>Azure SQL Data Warehouse(SQL DW)는 고객이 데이터를 실행 가능한 인사이트로 변환하는 데 도움이 되는 빠르고 유연하며 안전한 분석 플랫폼입니다. 오늘부터 Azure SQL DW 고객은 풍부한 인사이트를 원활하게 얻고 사용자 지정 가능한 대시보드 위젯을 빌드하여 워크로드를 더 잘 관리하고 조정할 수 있습니다.</p>
+
+
+  <p>이 환경은 IntelliSense가 포함된 T-SQL(Transact-SQL) 코드 편집기, 일반적인 명령줄 도구를 위한 통합 터미널 및 확장을 통해 캡슐화된 사용자 지정 가능한 데이터베이스 위젯을 제공하는 도구인 Azure Data Studio 일반 공급에 의해 실현됩니다. Azure SQL DW 인사이트 확장을 Azure Data Studio 활용하여 대시보드 위젯을 자동으로 렌더링하여 데이터 웨어하우스에 대한 인사이트를 표면화할 수 있습니다. 이러한 대시보드 보기는 모범 사례를 원활하게 적용하고 워크로드가 단일 도구 내에서 성능에 최적화되도록 자동으로 새로 고쳐집니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/16cc0eb4-719a-498d-bd25-89298b214579.png"><img alt="Azure SQL Data Warehouse Insights Extension" border="0" height="725" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bb5cdb68-737a-4a87-abe3-2a4f8abbd34f.png" style="margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure SQL Data Warehouse Insights 확장" width="1157"></a></p>
+
+
+  <p>현재 확장을 다운로드할 때 다음 대시보드 위젯을 즉시 사용할 수 있습니다.</p>
+
+
+  <h3>데이터 웨어하우스 간 데이터 배포</h3>
+
+
+  <p>데이터 웨어하우스 전체의 데이터 분포를 시각화하여 데이터 웨어하우스가 쿼리 성능에 영향을 미칠 수 있는 물리적 <a href="https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-tables-distribute#how-to-tell-if-your-distribution-column-is-a-good-choice">데이터 기울이기를</a> 겪고 있는지 즉시 감지할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7969cb2-672a-40f7-9a66-30257e0b3d5e.png"><img alt="Data Skew Detection" border="0" height="380" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d335eeb8-4b33-4c86-830c-f8a34922a8cc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="데이터 기울이기 검색" width="1190"></a></p>
+
+
+  <h3>테이블 상태</h3>
+
+
+  <p>이러한 보기를 사용하면 <a href="https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-memory-optimizations-for-columnstore-compression" target="_blank">columnstore 행 그룹 품질을</a> 최대화하고 <a href="https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-tables-statistics" target="_blank">최적이 않은 통계를 처리</a>하며 <a href="https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-tables-distribute#how-to-tell-if-your-distribution-column-is-a-good-choice" target="_blank">데이터 기울이기 문제를 해결할 수</a> 있습니다. 이러한 뷰를 사용하여 영향을 받는 테이블을 검색하여 <a href="https://azure.microsoft.com/blog/automatic-intelligent-insights-to-optimize-performance-with-sql-data-warehouse/" target="_blank">데이터 웨어하우스 권장 사항을</a> 즉시 적용할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/64ffb1ee-dcce-404a-9913-cf11d5690e34.png"><img alt="Suboptimal Statistics and Skew Detection" border="0" height="385" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bb8e5ef3-aa87-4b94-a809-dddfa635921c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="최적이 아님 통계 및 기울이기 검색" width="1189"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b1804c1-ffe7-469c-9362-28494db93254.png"><img alt="Poor Row Group Quality Detection" border="0" height="325" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6f8e5dec-cfb2-4445-a5e5-b9c7a3364724.png" style="margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="잘못된 행 그룹 품질 검색" width="308"></a></p>
+
+
+  <h3>데이터 웨어하우스 활동 모니터링</h3>
+
+
+  <p>활성 세션, 큐에 대기 중인 쿼리 및 로드에 대한 세부 정보가 자동으로 새로 고쳐지는 데이터 웨어하우스 워크로드에 대해 지속적으로 알 수 있습니다. 또한 최신 복원 지점을 식별하고 필요한 경우 도구&rsquo; 통합 터미널을 통해 즉시 <a href="https://azure.microsoft.com/blog/quick-recovery-time-with-sql-data-warehouse-using-user-defined-restore-points/" target="_blank">사용자 정의 복원 지점을</a> 만들어 데이터가 보호되도록 할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3caca9da-fac7-48b7-b825-2108d4cf8ed8.png"><img alt="Data Warehouse Activity and Latest Restore Point" border="0" height="523" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a38e37ea-e8cf-4e75-b57b-4256a869c710.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="데이터 웨어하우스 작업 및 최신 복원 지점" width="1183"></a></p>
+
+
+  <h3>시작하기:</h3>
+
+
+  <ol>
+   <li><a href="https://aka.ms/sqlopsstudio" target="_blank">SQL Operations Studio</a> 다운로드</li>
+   <li><a href="https://docs.microsoft.com/sql/sql-operations-studio/extensions?view=sql-server-2017" target="_blank">확장 관리자에</a> 액세스하고 <strong>Azure SQL Data Warehouse Insights</strong> 설치</li>
+   <li><strong>다시 로드</strong>를 선택하고 <a href="https://docs.microsoft.com/sql/sql-operations-studio/quickstart-sql-dw?view=sql-server-2017" target="_blank">SQL 데이터 웨어하우스에 연결</a></li>
+   <li>서버를 마우스 오른쪽 단추로 클릭하고 <strong>관리를</strong> 선택합니다. <strong>대시보드</strong> 탭을 선택하여 인사이트를 확인합니다.</li>
+  </ol>
+
+
+  <p>인사이트 위젯은 Azure Data Studio 내에 포함된 T-SQL 스크립트를 통해 생성됩니다. 모든 모니터링 스크립트는 데이터 웨어하우스 샘플 SQL GitHub 리포지토리에 업로드<a href="https://github.com/Microsoft/sql-data-warehouse-samples/tree/master/samples/sqlops/MonitoringScripts" target="_blank">됩니다</a>. <a href="https://github.com/Microsoft/sql-data-warehouse-samples/issues" target="_blank">피드백을 제공하거나 기여</a>하여 이 확장을 개선하는 데 도움이 될 수 있습니다.</p>
+
+
+  <h2>Azure SQL DW 혁신에 대해 자세히 알아볼 수 있습니다.</h2>
+
+
+  <ul>
+   <li><a href="https://na01.safelinks.protection.outlook.com/?url=aka.ms%2Fsqldwignite&amp;data=02%7C01%7C%7C098860988e504059943808d6200e5937%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636731643325662519&amp;sdata=LXNcXpxtN6uBbVhPEQSuoYUbrigCnsdKlbTL3cnMaJ4%3D&amp;reserved=0" target="_blank">Azure SQL DW가 최신 서비스 업데이트로 데이터 분석을 재정의하는</a> 방법 읽기</li>
+   <li><a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fblog%2Fnear-real-time-analytics-in-azure-sql-data-warehouse%2F&amp;data=02%7C01%7C%7C098860988e504059943808d6200e5937%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636731643325662519&amp;sdata=wRG3PL4xL95KoDbqjx8sVvQi%2FlWIn%2BL1%2Fh%2FUf11HlGA%3D&amp;reserved=0" target="_blank">더 긴밀한 SQL DW 및 Azure Databricks 통합을 사용하여 근 실시간 분석 솔루션을 빌드하는</a> 방법을 알아봅니다.</li>
+   <li><a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fblog%2Fazure-sql-data-warehouse-now-supports-maintenance-scheduling%2F&amp;data=02%7C01%7C%7C098860988e504059943808d6200e5937%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636731643325662519&amp;sdata=5U8CwdWxVmIdApEjZRZSu9kH2extyDNdr%2Fp%2By%2FgX0ic%3D&amp;reserved=0" target="_blank">이제 사용자 제어 유지 관리 기간이 Azure SQL DW 고객에게 더 큰 제어를 제공하는</a> 방법을 읽어보십시오.</li>
+  </ul>

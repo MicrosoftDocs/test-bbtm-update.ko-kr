@@ -1,0 +1,24 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b6945700b164671f6131126494cdb6f9a860973e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906484"
+Slug: cryptletsdd
+Title: Bletchley - 릴리스 & 로드맵 - 암호화 심층 분석
+Summary: 6월에 Project Bletchley 백서가 도입되면서 컨소시엄 기반 블록체인을 구축하는 데 필요한 몇 가지 요구 사항과 차세대 블록체인 애플리케이션을 위한 기본 형식인 Cryptlet을 도입했습니다. 오늘, 나는 Bletchley v1의 릴리스와 Cryptlets에 대한 기능의 로드맵에 대한 세부 사항의 다음 수준을 발표하게 된 것을 자랑스럽게 생각합니다.
+Content: >-
+  <p>6월에 Project Bletchley 백서를 소개하면서 컨소시엄 기반 블록체인과 차세대 블록체인 애플리케이션을 위한 기본 형식인 Cryptlet을 구축하는 데 필요한 몇 가지 요구 사항을 소개했습니다. 오늘, 나는&#39;<a href="https://azure.microsoft.com/en-us/blog/project-bletchley-blockchain-infrastructure-made-easy" target="_blank">Bletchley v1의 출시</a> 와 Cryptlet에 대한 기능의 로드맵에 대한 세부 사항의 다음 수준을 발표하게 된 것을 자랑스럽게 생각합니다.</p>
+
+
+  <p>Bletchley v1은 고객과 파트너가 소수의 노드에서 네트워크의 100s 노드까지 개인 컨소시엄 Ethereum 네트워크를 스핀업할 수 있는 첫 번째 컨소시엄 블록체인 템플릿의 릴리스입니다. &nbsp;전역적으로 분산된 다중 노드 컨소시엄 Ethereum 네트워크를 설정하는 예상 3주 프로세스를 8개의 질문과 5-8분으로 줄입니다. &nbsp;Bletchley v1은 네트워크 인프라 설정을 자동화할 뿐만 아니라 Ethereum에서 애플리케이션 개발을 빠르게 시작하기 위한 포털을 설정합니다.</p>
+
+
+  <p>또한 Cryptlet에 대한 세부 정보가 포함된 Bletchley의 로드맵에 대한 자세한 내용은 여기에서 확인할 수 <a href="https://github.com/Azure/azure-blockchain-projects/blob/master/bletchley/CryptletsDeepDive.md" target="_blank">있습니다</a>. Cryptlet은 이러한 구성 요소를 표준 방식으로 개발, 게시 및 액세스할 수 있는 Cryptlet Fabric을 호출하는 새로운 기능 계층을 위한 구성 요소입니다. &nbsp;쉽게 사용할 수 있도록 개발자, 설계자 및 비즈니스 프로세스 모델링 도구 내에서 검색할 수 있으며 SDK를 사용하여 재사용 및 판매를 위한 고유한 논리를 공개할 수 있습니다. &nbsp;</p>
+
+
+  <p>Cryptlet은 개발자가 기존 시스템에 통합, 보안 실행 및 데이터, 개인 정보 보호, 프로그래밍 언어의 확장성, 엔터프라이즈 개발자가 가장 많이 사용하는 확장성과 같은 교차 절단 기능을 사용할 수 있는 일반적이고 접근 가능한 방법을 제공합니다. &nbsp;Microsoft Azure 허용되는&nbsp; <a href="https://azure.microsoft.com/en-us/regions/">전 세계 공간을 </a>제공합니다. Bletchley는 블록체인 플랫폼에서 차세대 애플리케이션을 빌드하는 데 도움이 되는 하이퍼 스케일 보안 데이터 및 실행 플랫폼을 제공합니다.</p>
+
+
+  <p><a href="https://github.com/Azure/azure-blockchain-projects/blob/master/bletchley/CryptletsDeepDive.md" target="_blank">Bletchley 로드맵 - Cryptlet Deep-Dive 기능 및 동작을 보려면 여기를 클릭하십시오.</a></p>

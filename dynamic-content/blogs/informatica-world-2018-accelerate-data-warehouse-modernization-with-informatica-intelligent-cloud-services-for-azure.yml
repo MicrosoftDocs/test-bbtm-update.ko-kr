@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b69d33febf3a0dddb1600ddff398f6e17a6897b9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899802"
+Slug: informatica-world-2018-accelerate-data-warehouse-modernization-with-informatica-intelligent-cloud-services-for-azure
+Title: Azure용 Informatica Intelligent Cloud Services를 사용하여 데이터 웨어하우스 현대화 가속화
+Summary: 오늘 Informatica World에서 Scott Guthrie, EVP, Cloud + AI는 Anil Chakravarthy와 함께 Informatica의 CEO인 Informatica Intelligent Cloud Services(IICS)의 가용성을 발표했습니다.
+Content: >-
+  <p>오늘 <a href="https://www.informaticaworld.com/">Informatica World</a>에서 Scott Guthrie, EVP, Cloud + AI는 Informatica의 CEO인 Anil Chakravarthy와 함께 <a href="https://infa.media/wp180522a" target="_blank">Azure용 Informatica IICS(Intelligent Cloud Services)</a>의 가용성을 발표했습니다. Microsoft는 고객이 데이터 웨어하우스 현대화를 가속화할 수 있도록 Enterprise 데이터 관리의 선두 주자인 <a href="https://www.informatica.com">Informatica</a>와 파트너십을 맺고 있습니다. 이 서비스는 현재 Azure에서 무료 미리 보기로 제공됩니다.</p>
+
+
+  <p>Informatica는 데이터 웨어하우스 마이그레이션에 대한 검색 기반 접근 방식을 제공합니다. 이 접근 방식은 데이터를 식별하고 <a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is">Azure SQL DW(SQL Data Warehouse</a>), Microsofts&rsquo; 페타바이트 규모의 완전 관리형 글로벌 사용 가능한 분석 플랫폼으로 이동하는 프로세스를 간소화합니다. 최근에 릴리스된 <a href="https://azure.microsoft.com/en-us/blog/blazing-fast-data-warehousing-with-sql-data-warehouse-gen2/">SQL DW 컴퓨팅 최적화 Gen2</a> 계층을 사용하면 이전 세대의 5배 성능, 4배의 동시성 및 5배의 배율을 누릴 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9e12e505-0d0e-4dc3-b664-648158c19664.png"><img alt="image" border="0" height="537" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/27c53f5c-f6fc-4f61-906d-b9f6430816a5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="1024"></a></p>
+
+
+  <p>이 릴리스에서는 Azure Portal에서 직접 Azure용 Informatica Intelligent Cloud Services를 시작할 수 있습니다. Single Sign-On 환경을 즐길 수 있으며 별도의 Informatica 계정을 만들 필요가&#39;없습니다. Azure용 Informatica 데이터 가속기를 사용하면 데이터를 검색하고 SQL DW에 로드할 수 있습니다. Informaticas&rsquo; 검색 기반 접근 방식을 사용하면 수천 개의 테이블과 열을 사용할 수 있습니다.</p>
+
+
+  <p><em>&ldquo;우리는 마이크로 소프트&quot;와의 오랜 파트너십에서이 다음 단계에 대해 매우 기쁘게 생각합니다</em>, Pratik Parekh, 부사장, 제품 관리, Informatica말했다. <em>&ldquo;Azure Portal에서 업계 최고의 iPaaS인 Informatica Intelligent Cloud Services의 이 네이티브 통합은 공동 엔지니어링 약속을 보여줍니다. 이러한 통합을 통해 고객은 레거시 데이터 웨어하우스 워크로드를 Azure SQL Data Warehouse로의 마이그레이션을 가속화할 수 있습니다.&rdquo;</em></p>
+
+
+  <p>Enterprise 전반의 운영 및 관리 기능을 제공하는 <b>Informaticas&rsquo; Enterprise Data Catalog</b>를 사용하여 데이터를 더욱 보강할 수 있습니다. 영향 분석을 수행하고, 데이터 관계를 검색하고, 계보를 추적하고, 다른 기능 간에 로드를 예약할 수 있습니다.</p>
+
+
+  <p>Informatica Intelligent Cloud Services를 Azure와 함께 사용하면 온-프레미스 데이터를 식별하고 최신 데이터 웨어하우스로 마이그레이션할 수 있는 환경이 간소화됩니다. 이 파트너십을 통해 Microsoft와 Informatica는 클라우드로의 여정을 가속화하여 SQL DW에서 제공하는 확장성과 유연성을 활용할 수 있습니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/create-data-warehouse-portal">Azure SQL DW를 만들고</a> Azure Portal에서 직접 Azure용 지능형 클라우드 서비스를 시작합니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2a7c12ac-7ed0-49ab-98c3-dde564616f01.png"><img alt="blogpost_screenshot" border="0" height="325" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/848406b1-8af2-48e1-a472-5a22da2c78eb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="blogpost_screenshot" width="640"></a></p>
+
+
+  <ul>
+   <li>Azure Marketplace에서 Informatica 제품에 액세스하려면 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/informatica.informatica-cloud-services?tab=Overview">Informatica Intelligent Cloud Services</a>, <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/informatica.big-data-management-10-2-byol?tab=Overview">Informatica 빅 데이터 관리</a>, <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/informatica.enterprise_information_catalog?tab=Overview">Informatica Enterprise 데이터 카탈로그</a> 및 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/informatica.dataquality-v10-1-1?tab=Overview">Informatica 데이터 품질을 참조하세요</a>.</li>
+   <li>자세한 내용은 <a href="https://www.informatica.com/lp/cloud-data-warehousing-with-microsoft-azure_3373.html#fbid=WDm9zxNA3OD">Azure SQL DW용 클라우드 데이터 웨어하우징에 대한</a> Informaticas&rsquo; 가이드를 다운로드하세요.</li>
+   <li>Twitter<a href="https://twitter.com/AzureSQLDW">@AzureSQLDW</a>에서 팔로우하여 SQL Data Warehouse에 대한 최신 뉴스를 최신 상태로 유지하세요.</li>
+  </ul>

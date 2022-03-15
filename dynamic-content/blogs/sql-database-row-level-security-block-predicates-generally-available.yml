@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cf4fd8e17b8ed1d7b1e83fa15fb8289e7f2506c4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900413"
+Slug: sql-database-row-level-security-block-predicates-generally-available
+Title: Row-Level 보안 블록 조건자는 일반 공급
+Summary: 'Azure SQL Database RLS(Row-Level 보안) 기능은 이제 공식적으로 블록 조건자를 지원합니다. 차단 조건자는 사용자가 액세스 조건을 위반하는 행을 삽입, 업데이트 또는 삭제하지 못하도록 합니다. '
+Content: >-
+  <p>&rsquo;Azure SQL Database s RLS(<a href="https://msdn.microsoft.com/library/dn765131.aspx">행 수준 보안</a>) 기능은 이제 공식적으로 블록 조건자를 지원합니다. 사용자에게 표시되는 행을 제한하는 필터 조건자와 달리 블록 조건자는 사용자가 액세스 조건을 위반하는 행을 삽입, 업데이트 또는 삭제하지 못하도록 합니다. 필터 및 블록 조건자를 함께 사용하여 테이블의 특정 행에 대한 읽기 및 쓰기 액세스를 제어해야 합니다.</p>
+
+
+  <p>예를 들어 RLS는 일반적으로 테넌트가 다중 테넌트 데이터베이스의 서로&rsquo; 데이터에 액세스하지 못하도록 하는 데 사용됩니다. 필터 조건자를 사용하여 각 테넌트에 표시되는 행을 제한할 수 있으며, 이제 블록 조건자와 동일한 함수를 다시 사용하여 테넌트 간 삽입 또는 업데이트를 방지할 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  CREATE SECURITY POLICY Security.tenantAccessPolicy
+   ADD FILTER PREDICATE Security.fn_tenantAccessPredicate(TenantId) ON dbo.MyTable,
+   ADD BLOCK PREDICATE Security.fn_tenantAccessPredicate(TenantId) ON dbo.MyTable
+  </pre>
+
+
+  <h2>개요 및 데모</h2>
+
+
+  <p><iframe frameborder="0" height="360" longdesc="https://channel9.msdn.com/Shows/Data-Exposed/Row-Level-Security-Updates" name="Row Level Security Updates" scrolling="no" src="https://channel9.msdn.com/Shows/Data-Exposed/Row-Level-Security-Updates/player" width="640"></iframe></p>
+
+
+  <h2>RLS는 언제 사용해야 하나요?</h2>
+
+
+  <ul>
+      <li>다중 테넌트 데이터베이스를 사용하여 SaaS 애플리케이션에서 테넌트 격리 적용</li>
+      <li>분석가가 해당 부서, 지역, 보안 허가 또는 기타 기준에 따라 애플리케이션(예: Excel 또는 PowerBI)을 통해 다양한 데이터 하위 집합에 액세스할 수 있도록 합니다.</li>
+      <li>애플리케이션 코드를 간소화하고 실수로 인한 데이터 유출을 방지하기 위해 데이터베이스 내에서 행 수준 액세스 논리 중앙 집중화</li>
+  </ul>
+
+
+  <h2>시작할 코드 샘플</h2>
+
+
+  <p>Id는 조건자&rsquo; 차단 외에도 모든 데이터베이스 연결이 공유 서비스 계정을 통해 이루어지는 중간 <a href="https://msdn.microsoft.com/library/mt590806.aspx"></a>계층 애플리케이션(예: 웹앱)에서 RLS를 구현하는 데 매우 유용한 새로운 세션 범위 키-값 저장소인 SESSION_CONTEXT 가용성을 강조 표시합니다. <a href="https://rlssamples.codeplex.com/SourceControl/latest#RLS-Projects-MidTier-Demo.sql">RLS-Projects-MidTier-Demo.sql</a> 샘플을 확인하여 직접 시도해 보세요.</p>
+
+
+  <p>물론 RLS는 로그인, 사용자 및 역할 또는 Azure Active Directory&rsquo; 그룹의 SQL Database 기본 제공 보안 시스템을 활용할 수도 있습니다. <a href="https://rlssamples.codeplex.com/SourceControl/latest#RLS-Hospital-BuiltIn-Demo.sql">RLS-Hospital-BuiltIn-Demo.sql</a> 샘플을 확인하여 직접 시도해 보세요.</p>
+
+
+  <p>Entity Framework를 사용하는 엔드 투 엔드 다중 테넌트 샘플의 경우 <a href="https://azure.microsoft.com/documentation/articles/web-sites-dotnet-entity-framework-row-level-security/">Entity Framework 및 Row-Level Security를 사용하는 다중 테넌트 데이터베이스가 있는 자습서: 웹앱을</a> 확인하세요.</p>
+
+
+  <p>기술 세부 정보는 MSDN의 <a href="https://msdn.microsoft.com/library/dn765131.aspx">행 수준 보안 설명서</a> 로 이동하세요.</p>
+
+
+  <h2>의견 보내기</h2>
+
+
+  <p>언제나 그처럼 여러분의 의견을 기다리고 있습니다. 질문, 의견 또는 아이디어가 있는 경우 아래에 의견을 남겨 주세요.</p>

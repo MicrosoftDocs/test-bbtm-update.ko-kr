@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b5022df296f8e135bd2ecf9c24bc42ffe7d3c224
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906700"
+Slug: meet-the-azure-analysis-services-team-at-pass-summit-2017
+Title: PASS Summit 2017에서 Azure Analysis Services 팀을 만나보세요.
+Summary: Azure Analysis Services 팀의 구성원은 올해 WA 시애틀에서 열리는 PASS Summit 2017에서 두 개의 세션을 발표할 예정입니다. 회원은 SQL 클리닉에서 직접 답변 할 수 있습니다 ...
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15e8c975-3dc5-49e0-b29c-e1989d20e407.png"><img alt="image" border="0" height="373" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f679a424-b915-45ae-87d4-6da471a4c018.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="786"></a></p>
+
+
+  <p>Azure Analysis Services 팀의 구성원은 올해 WA 시애틀에서 열리는 PASS Summit 2017에서 두 개의 세션을 발표할 예정입니다. 또한 회원은 SQL 클리닉에서 일대일 설정으로 Analysis Services 질문에 직접 답변할 수 있습니다. 세션에는 다음이 포함됩니다.</p>
+
+
+  <h2>Azure Analysis Services 또는 SQL Server Analysis Services를 사용하여 Enterprise 등급 BI 모델 만들기</h2>
+
+
+  <p><strong>발표자</strong>: Bret Grinslade 및 Christian Wade</p>
+
+
+  <p><strong>수준</strong>: 400</p>
+
+
+  <p>Microsoft Azure Analysis Services 및 SQL Server Analysis Services를 사용하면 Microsoft Power BI 및 Microsoft Excel 같은 친숙한 데이터 시각화 도구를 통해 실행 가능한 인사이트를 제공하는 포괄적인 엔터프라이즈 규모 분석 솔루션을 빌드할 수 있습니다. Analysis Services를 사용하면 Power BI 보고서 및 사용자 간에 일관된 데이터를 사용할 수 있습니다. 이 세션에서는 성능, 확장성, 모델 관리 및 모니터링 영역에서 대규모 엔터프라이즈 모델에 대한 새로운 기능을 공개합니다. 이러한 새로운 기능을 사용하여 손쉬운 데이터 로드 및 간소화된 사용자 사용으로 전례 없는 규모의 테이블 형식 모델을 제공하는 방법을 알아봅니다.</p>
+
+
+  <h2>빅 데이터에서 Enterprise BI 제공</h2>
+
+
+  <p><strong>발표자</strong>: Bret Grinslade 및 Josh Caplan</p>
+
+
+  <p><strong>수준</strong>: 300</p>
+
+
+  <p>페타바이트 규모 SQL Data Warehouse, Azure Data Lake 또는 HDInsight 구현을 기반으로 Azure Analysis Services를 사용하여 생각의 속도로 분석을 제공하는 방법을 알아봅니다. 이 세션에서는 대규모로 가속화하고, 데이터 거버넌스를 위한 변경 관리를 구현하고, 성능 및 보안을 위한 설계를 관리, 처리 및 쿼리하는 모범 사례를 다룹니다. 이러한 고급 기술은 팁과 요령과 함께 아키텍처, 코드, 데이터 흐름을 비롯한 실제 구현을 철저히 보여 줍니다.</p>
+
+
+  <p><a href="https://www.pass.org/summit/2017/Home.aspx" target="_blank">PASS Summit 2017</a>에 대해 자세히 알아보세요. 우리는 거기에 당신을 볼 수 있도록 노력하겠습니다.</p>

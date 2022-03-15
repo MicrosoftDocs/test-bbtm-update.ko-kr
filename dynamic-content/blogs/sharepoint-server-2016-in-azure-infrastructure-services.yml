@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ed812a8223474e77fb49d82491cc0366f217de18
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900698"
+Slug: sharepoint-server-2016-in-azure-infrastructure-services
+Title: Azure 인프라 서비스의 SharePoint Server 2016
+Summary: Azure 인프라 서비스에서 SharePoint Server 2016 팜의 평가, 계획 및 배포를 단계별로 진행합니다.
+Content: >-
+  <p>SharePoint&rsquo; 공동 작업 기능을 활용하기 위해 Microsoft는 Office 365 SharePoint Online을 권장합니다. 이것이 현재 사용자에게 가장 적합한 옵션이 아닌 경우 SharePoint Server 2016을 사용해야 합니다. 그러나 Microsoft Azure 인프라 서비스에서 SharePoint Server 2016 팜을 빌드하려면 추가 계획 고려 사항 및 배포 단계가 필요합니다.</p>
+
+
+  <p>평가에서 성공적인 배포에 이르는 정의된 경로는 <a href="https://technet.microsoft.com/library/mt779107(v=office.16).aspx">Microsoft Azure SharePoint Server 2016을</a> 참조하세요. 이 새 콘텐츠 집합은 Azure의 Server 2016 팜에 SharePoint 개발/테스트, 스테이징, 프로덕션 또는 재해 복구를 디자인하고 배포하는 데 걸리는 시간을 줄입니다.</p>
+
+
+  <p>두 가지 규범적 개발/테스트 환경에 대한 단계별 지침이 있습니다.</p>
+
+
+  <p>1. 데모, 평가 또는 애플리케이션 테스트를 위해 <a href="https://technet.microsoft.com/library/mt723354(v=office.16).aspx">Azure에서 실행되는 단일 서버 팜</a> 입니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2402dc43-965b-4442-8839-06b00f186257.png"></p>
+
+
+  <p>2. 시뮬레이션된 Azure IaaS 하이브리드 구성에서 클라이언트 액세스 및 관리를 실험하기 위해 Azure에서 <a href="https://technet.microsoft.com/library/mt806351(v=office.16).aspx">실행되는 인트라넷 팜</a> 입니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bbfa42ec-9116-42e5-a5c4-0cd9c13fd4c6.png"></p>
+
+
+  <p>SharePoint Server 2016 팜에 대한 Azure 환경 계획을 시작할 준비가 되면 <a href="https://technet.microsoft.com/library/mt779108(v=office.16).aspx">Azure에서 SharePoint Server 2016 팜 디자인을</a> 참조하세요. 테이블 기반의 단계별 접근 방식을 통해 Azure 인프라 서비스의 네트워킹, 스토리지 및 컴퓨팅 요소에 대한 적절한 상호 관련된 설정 집합을 수집할 수 있습니다.</p>
+
+
+  <p>배포할 준비가 되면 <a href="https://technet.microsoft.com/library/mt793552(v=office.16).aspx">Azure에서 SQL Server AlwaysOn 가용성 그룹을 사용하여 SharePoint Server 2016 배포를</a> 참조하여 이 고가용성 구성을 빌드합니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/70389de8-a016-4baf-be5f-fc01cf888518.png"></p>
+
+
+  <p>테이블 기반의 단계적 접근 방식을 사용하면 올바른 설정으로 Azure 인프라를 만들 수 있으며, 비즈니스 요구 사항에 맞게 조정하거나 확장할 수 있습니다.</p>
+
+
+  <p>Azure 인프라를 만들고 고가용성 SharePoint Server 2016 팜의 서버를 구성하는 데 도움이 되도록 다음을 포함하는 TechNet 갤러리의 ZIP 파일인 <a href="https://gallery.technet.microsoft.com/sharepoint-server-2016-3d3d9071">Azure Deployment Kit의 SharePoint Server 2016 고가용성 팜</a>을 사용합니다.</p>
+
+
+  <ul>
+   <li>
+   <p>Microsoft Visio 및 Microsoft PowerPoint 파일과 두 가지 개발/테스트 환경 및 고가용성 배포에 대한 수치</p>
+   </li>
+   <li>
+   <p>Azure에서 고가용성 SharePoint Server 2016 팜을 만들고 구성하는 모든 PowerShell 명령 블록</p>
+   </li>
+   <li>
+   <p>사용자 지정 설정에 따라 Azure에서 SharePoint Server 2016 고가용성 팜을 만드는 PowerShell 명령을 생성하는 Microsoft Excel 구성 통합 문서</p>
+   </li>
+  </ul>

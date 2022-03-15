@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 62f5497175eddd307a97686ffb164eab0a3dbb7f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906683"
+Slug: mesosphere-dcos-azure-docker-vmware-and-everything-between-security-docker-engine-installation
+Title: Mesosphere DCOS, Azure, Docker, VMware 및 그 사이의 모든 것 – 보안 & Docker 엔진 설치
+Summary: 이 시리즈의 2부에서는 vSphere를 기반으로 DC/OS 1.9 설치를 살펴보겠습니다. Mesosphere는 완전히 작동하는 클러스터를 배포하는 몇 가지 방법을 제공하며 모든 것이 실제로 어떻게 연결되어 있는지 확인하고 싶었기 때문에 고급 설치 방법을 선택했습니다. 몇 가지 Linux 관련 조정 및 Docker 엔진 배포부터 시작합니다.
+Content: >-
+  <p>이 시리즈의 2부에서는 vSphere를 기반으로 DC/OS 1.9 설치를 살펴보겠습니다. Mesosphere는 완전히 작동하는 클러스터를 배포하는 몇 가지 방법을 제공하며 모든 것이 실제로 어떻게 연결되어 있는지 확인하고 싶었기 때문에 고급 설치 방법을 선택했습니다. 몇 가지 Linux 관련 조정 및 Docker 엔진 배포부터 시작합니다.</p>
+
+
+  <p>DC/OS 팀이 온라인 설치 가이드를 구성하는 방식이 정말 마음에 납니다. 그것은&rsquo; 깨끗하고, 꽤 포괄적이며, 잘 이해됩니다. 기본적으로 프로덕션 규모&rdquo; 배포를 위한 &ldquo;3개의 로컬 설치 방법이 있습니다. 즉, GUI, CLI &amp; 고급 방식으로 진행했습니다.</p>
+
+
+  <p>설치 가이드는 매우 좋지만 대부분 Linux와 관련된 몇 가지 항목을 누락합니다. 이 <a href="https://azure.microsoft.com/en-us/blog/mesosphere-dcos-azure-docker-vmware-and-everything-between-architecture-and-ci-cd-flow/">시리즈에서</a>는 그 걸 신비화하려고 노력할 것이므로 조한이 말했듯이 모든 것이 실크처럼 부드러워&rdquo;질 &ldquo;것입니다.</p>
+
+
+  <p>배포 프로세스 전체에서 Im이 모든 VM에서 스냅샷을 만들 것을 권장할 때&rsquo; 경고하는 VMware 스냅샷 인터럽트 인터럽트(인터럽트)를 배치하므로 일관성을 유지할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bb922f96-1f8f-4f8c-a668-5e030e377719.gif"><img alt="clip_image002" border="0" height="301" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cda153f2-48a8-4c39-952c-1f8c8d13a1bb.gif" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image002" width="556"></a></p>
+
+
+  <p>개인 <a href="https://imallvirtual.com/mesosphere-dcos-azure-docker-vmware-everything-part-2/">블로그</a>에서 VMware vSphere를 기반으로 DC/OS 1.9, Docker 및 보안 필수 구성 요소에 대한 모든 세부 정보를 읽어보세요.</p>

@@ -1,0 +1,50 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9b369ea90391f92e58a1e035c289175db763b4e2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899952"
+Slug: azure-monitor-logs-in-grafana-now-in-public-preview
+Title: Grafana의 Azure Monitor 로그 - 현재 공개 미리 보기로 제공됩니다.
+Summary: Azure Monitor 로그와 새로운 Grafana 통합을 도입하게 되어 기쁩니다. 이 통합은 이제 Azure Monitor 데이터 원본의 일부로 사용할 수 있는 새 Log Analytics 플러그 인을 통해 수행됩니다.
+Content: >-
+  <p>Were&rsquo;는 Microsoft Azure Monitor 로그와 새로운 Grafana 통합을 도입하게 되어 기쁩니다. 이 통합은 이제 <a href="https://grafana.com/plugins/grafana-azure-monitor-datasource/installation" target="_blank">Azure Monitor 데이터 원본</a>의 일부로 사용할 수 있는 새 Log Analytics 플러그 인을 통해 수행됩니다.</p>
+
+
+  <p>새로운 플러그 인은 Azures&rsquo; 모니터링 데이터를 사용 가능하고 사용하기 쉽게 만들겠다는 약속을 계속합니다. 작년에 이 데이터 원본의 v1에서 Grafana에서 Azure Monitor 메트릭 데이터를 노출했습니다. Azure Monitor <a href="https://docs.microsoft.com/azure/log-analytics/query-language/get-started-analytics-portal" target="_blank">Log Analytics</a>의 모든 로그를 기본적으로 사용할 수 있지만 Grafana에서 로그를 사용할 수 있도록 요청했습니다. Azure에서 OSS 도구를 더 많이 사용할 수 있도록 이 요청을 듣고 Grafana와 제휴했습니다.</p>
+
+
+  <p>새 플러그 인을 사용하면 Log Analytics에서 사용할 수 있는 모든 데이터(예: 가상 머신 성능, 보안, <a href="https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Azure-Active-Directory-Activity-logs-in-Azure-Log-Analytics-now/ba-p/274843" target="_blank">최근 Log Analytics와 통합된</a> Azure Active Directory 및 사용자 지정 로그를 포함한 다른 많은 로그 유형과 관련된 로그)를 표시할 수 있습니다.</p>
+
+
+  <h2>어떻게 사용할 수 있나요?</h2>
+
+
+  <p>새 플러그 인에는 Grafana 버전 5.3 이상이 필요합니다. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/grafana-plugin#configure-data-source-plugin" target="_blank">초기 데이터 원본 구성</a> 후에는 대시보드 및 패널에 Azure Monitor 로그를 쉽게 포함하기 시작하고 Azure <strong>Log Analytics</strong> 및 작업 영역을 선택한 다음 쿼리를 제공할 수 있습니다. Azure에 이미 있는 기존 쿼리를 다시 사용하거나 새 쿼리를 작성할 수 있습니다. Grafana에서 쿼리 작성은 Azure Log Analytics 쿼리 편집기에서 이미 볼 수&rsquo; 있는 친숙한 IntelliSense 자동 완성 옵션으로 간단하게 만들어집니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a98d818f-9fb9-4c3e-b1df-3d846c60c7d6.png"><img alt="Writing queries in Grafana screenshot" border="0" height="650" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bfdfbe14-5768-42c9-93f5-e2e06ceba903.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title=" Grafana 스크린샷에서 쿼리 작성" width="1429"></a></p>
+
+
+  <p>플러그 인은 <a href="https://dev.loganalytics.io/" target="_blank">Log Analytics API를</a> 통해 쿼리를 실행합니다. 즉, Log Analytics에 수집되고 별도의 저장소에 복사되지 않는 즉시&rsquo; 데이터를 쿼리할 수 있습니다. 표준 쿼리 언어 외에도 Grafana는 <strong>$__timeFilter</strong> 같은 특정 매크로를 지원하므로 차트에서 확대하거나 <a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-send-to-grafana?toc=/azure/azure-monitor/toc.json#advanced-grafana-features" target="_blank">변수를 사용하는</a> 등의 기능을 사용할 수 있습니다.</p>
+
+
+  <h2>추가 혜택</h2>
+
+
+  <p>Grafana는 뛰어난 대시보드 기능, 풍부한 시각화 및 40개 이상의 데이터 원본과의 통합을 제공합니다. 대시보드에 Grafana를 이미 사용하고 있는 경우&rsquo; 이 새로운 플러그 인을 사용하면 다양한 모니터링 요구 사항에 맞는 단일 창을 만들 수 있습니다. 결과적으로 <a href="https://azure.microsoft.com/en-us/blog/monitor-azure-services-and-applications-using-grafana/" target="_blank">Azure 메트릭 데이터</a> 와 로그 데이터를 모두 다룹니다.</p>
+
+
+  <p>또한 플러그 인은 <a href="https://aka.ms/loganalyticsquerylanguageref" target="_blank">강력한 쿼리 언어</a> 를 활용하므로 원시 데이터를 표시하는 것보다 훨씬 더 많은 작업을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>리소스 95<sup>번째 백분</sup>위수와 SLA와 같은 의미 있는 데이터를&rsquo; 계산합니다.&rsquo;</li>
+   <li>여러 작업 영역의 데이터와 애플리케이션 Insights <a href="https://docs.microsoft.com/azure/log-analytics/log-analytics-cross-workspace-search" target="_blank">교차 작업 영역 및 앱 간</a> 쿼리를 사용하여 결합합니다.</li>
+   <li>데이터를 조인과 상호 <a href="https://docs.microsoft.com/azure/log-analytics/query-language/joins" target="_blank">연결합니다</a>.</li>
+   <li>기계 학습 알고리즘을 적용합니다. 쿼리 언어는 스마트 분석을 수행하는 연산자를 제공하므로 <a href="https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/smart-analytics/automated-detector-for-service-disruptions-based-on-app-trace-logs.md" target="_blank">추적 로그를 기반으로 서비스 중단을 감지</a> 하거나 <a href="https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/smart-analytics/sliding-window-calculations-cohort-analysis.md" target="_blank">코호트 분석을</a> 실행하는 등의 고급 분석을 실행할 수 있습니다.</li>
+  </ul>
+
+
+  <p>Grafana Azure Log Analytics 플러그 인에 대해 자세히 알아보려면 Grafana &ldquo;<a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/grafana-plugin?toc=%2Fazure%2Fazure-monitor%2Ftoc.json" target="_blank">에서 Azure 서비스를 모니터링하세요</a>.&rdquo;</p>

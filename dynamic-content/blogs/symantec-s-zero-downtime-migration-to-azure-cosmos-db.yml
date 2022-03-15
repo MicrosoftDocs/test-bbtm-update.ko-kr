@@ -1,0 +1,51 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d1c1b2554d20029e9271bd6963a0bb9fa72f9871
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900198"
+Slug: symantec-s-zero-downtime-migration-to-azure-cosmos-db
+Title: Symantec의 Azure Cosmos DB로의 제로 가동 중지 시간 마이그레이션
+Summary: 대기 시간이 짧고 가동 중지 시간이 없는 수십억 개의 요청을 관리해야 하는 주력 제품에 대해 중요 업무용 라이브 데이터를 마이그레이션하려면 어떻게 해야 할까요? Symantec의 소비자 사업부는 비용이 많이 들고 복잡한 자체 관리형 데이터베이스 인프라에서 Azure에서 지리적으로 분산되고 대기 시간이 짧은 관리형 데이터베이스 솔루션으로 전환하기로 결정할 때 이 정확한 문제에 직면했습니다.
+Content: >-
+  <p>대기 시간이 짧고 가동 중지 시간이 없는 수십억 개의 요청을 관리해야 하는 주력 제품에 대해 중요 업무용 라이브 데이터를 마이그레이션하려면 어떻게 해야 할까요? <a href="https://www.symantec.com/" target="_blank">Symantec</a>의 소비자 사업부는 비용이 많이 들고 복잡한 자체 관리형 데이터베이스 인프라에서 Azure에서 지리적으로 분산되고 대기 시간이 짧은 관리형 데이터베이스 솔루션으로 전환하기로 결정할 때 이 정확한 문제에 직면했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/93d8c709-d51c-46aa-84e9-231e59c0d052.png"><img alt="Symantec company logo" border="0" height="169" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6e0e0c81-ea72-4022-8110-aaa5deec9522.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Symantec 회사 로고" width="640"></a></p>
+
+
+  <p>Symantec 소비자 서비스는 150개국에서 4천만 개 이상의 엔드포인트에서 고객 데이터 및 ID를 보호하고 매일 150억 개 이상의 글로벌 요청을 관리합니다. &ldquo;우리의 목표는 데이터를 안전하게&rdquo; 유지하는 것 이상이라고 Symantec의 소프트웨어 엔지니어 스테파니 알리브란디(Stephanie Alibrandi)는 설명합니다. &ldquo;그것은 안전한 장소에 자신의 정보를 유지하여 가족과 사람들을 안전하게 유지하는&#39;.&rdquo;</p>
+
+
+  <p>클라우드로의 전환이 규모 관리, 성능 향상 및 비용 절감을 위한 올바른 결정이라는 것을 알고 있었습니다. 또한 신뢰를 기반으로 하는 브랜드로서 유지 관리하기 위한 5초 SLA(서비스 수준 계약)를 통해 이동 중에 가동 중지 시간 또는 서비스 저하를 가질 수 없다는 것을 알고 있습니다&rsquo;. Alibrandi와 팀은 <a href="https://customers.microsoft.com/en-us/story/symantec-professionalservices-azurecosmosdb" target="_blank">최근 사례 연구에서</a> <a href="https://azure.microsoft.com/en-us/services/cosmos-db/" target="_blank">Azure Cosmos DB</a>를 채택하기로 한 비즈니스 요구 사항과 결정을 공유했습니다.</p>
+
+
+  <h2>가동 중지 시간 마이그레이션을 수행합니다.</h2>
+
+
+  <p>클라우드로 이동하기로 결정하면 팀은&rsquo; 데이터를 성공적으로 마이그레이션하는 방법에 초점을 맞춥니다.&nbsp; 실시간 마이그레이션은 소규모 사업이 아니고 팀은 다음 두 가지 주요 과제를 극복해야 했습니다.</p>
+
+
+  <ul>
+   <li>두 병렬 시스템을 실행하는 비용을 줄이기 위해 마이그레이션을 신속하게 완료해야 했습니다.</li>
+   <li>많은 분산 데이터베이스에 &ndash; 걸쳐 수십억 개의 데이터 볼륨</li>
+  </ul>
+
+
+  <p>기술 설계자 Michael Shavell은 Microsoft Mechanics Live의 특별 &ldquo;에피소드를 빌드&rdquo;한 방법, 마이그레이션 전략 및 Azure Cosmos DB 선택을 통해 최소한의 코드 변경 및 가동 중지 시간 0으로 전환할 수 있었던 방법을 공유합니다.</p>
+
+
+  <p><a href="https://youtu.be/bBfaxw22mHA" target="_blank"><img alt="Diagram showing how Symantec migrated to Cosmos DB" border="0" height="1080" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/257cf435-1e62-41af-8d14-7e7d04239608.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Symantec이 Cosmos DB로 마이그레이션하는 방법을 보여 주는 다이어그램" width="1920"></a></p>
+
+
+  <p>자세한 내용은 워크로드 중심 접근 방식, 적절한 크기 조정에 대한 교훈 및 제로 다운 타임 마이그레이션 접근 방식의 일환으로 서비스에 대한 부하 수요를 모니터링하기 위한 인사이트 기반 DevOps 모델을 포함하여 <a href="https://www.youtube.com/watch?v=bBfaxw22mHA" target="_blank">Symantecs&rsquo; 마이그레이션 전략에 대해 자세히</a> 알아보세요.</p>
+
+
+  <h2>시작</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/services/cosmos-db/" target="_blank">Azure Cosmos DB</a>에 대해 자세히 알아보기</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/cosmos-db/cassandra-import-data" target="_blank">자습서: Azure Cosmos DB에서 Cassandra API 계정으로 데이터 마이그레이션</a></li>
+  </ul>

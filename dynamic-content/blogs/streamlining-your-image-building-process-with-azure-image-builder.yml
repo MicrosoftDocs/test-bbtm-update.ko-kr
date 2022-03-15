@@ -1,0 +1,46 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cb7d93cc0eb55fb2cd4acd6a91f859b0085b569c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900256"
+Slug: streamlining-your-image-building-process-with-azure-image-builder
+Title: Azure Image Builder를 사용하여 이미지 빌드 프로세스 간소화
+Summary: 보안 및 규정 준수 요구 사항을 충족하고 더 빠른 배포를 달성하기 위해 VM(가상 머신) 이미지를 사용자 지정하는 것은 많은 기업에서 강력한 요구 사항입니다.
+Content: >-
+  <p>보안 및 규정 준수 요구 사항을 충족하고 더 빠른 배포를 위해 VM(가상 머신) 이미지를 사용자 지정하는 것은 많은 기업에서 매우 필요하지만, 대부분은 올바른 도구를 결정하고, 올바른 파이프라인을 빌드하고, 지속적으로 유지하는 데 필요한 프로세스와 에너지를 활용하지&#39;.</p>
+
+
+  <p>Azure에서 사용자 지정 이미지를 쉽게 빌드할 수 있도록 Azure <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-overview" target="_blank">Image Builder 서비스를</a> 빌드했습니다.</p>
+
+
+  <p>Azure Image Builder 서비스는 자동화된 이미지 빌드 파이프라인을 사용하여 Azure 및 Azure Stack에서 이미지 빌드 프로세스에 대한 통합 및 간소화를 제공합니다. Windows 또는 Linux 가상 머신 이미지를 빌드하려는 경우 기존 이미지 보안 구성을 사용하여 조직에 대한 규격 이미지를 빌드하고 Linux 명령 또는 Windows 업데이트를 사용하여 기존 사용자 지정 이미지를 패치할 수 있습니다. Azure Image Builder는 여러 Linux 배포판, Azure Marketplace 및 Windows Virtual Desktop 환경의 이미지를 지원하며 GPU VM에 대한 이미지 만들기를 포함하여 특수한 VM 크기에 대한 이미지를 빌드할 수 있습니다.</p>
+
+
+  <p>이미지를 빌드한 후 공유 이미지 갤러리를 사용하여 관리하고 CI/CD 파이프라인을 Azure Image Builder 서비스와 통합할 수 있습니다. Azure DevOps 또는 기타 DevOps 솔루션을 사용하면 이미지 패치, 버전 관리 및 지역 복제 기능을 쉽게 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cbe8570a-1c82-488e-8938-2a35c9801729.gif"><img alt="Building Images with Azure VM Image Builder Service automates your image building process" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/982ca0ac-4dbc-4750-a754-57cec2524c79.gif" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="640"></a></p>
+
+
+  <p>마지막으로, Azure Image Builder 서비스는 역할 기반 액세스 제어가 통합된 타의 추종을 불허하는 거버넌스 및 규정 준수를 제공하므로 어떤 이미지에 액세스할 수 있는지 확인하고 기존 VNET을 연결하여 구성 서버(DSC, Chef, Puppet 등)를 비롯한 라우팅 가능한 리소스, 서버 및 서비스에 액세스할 수 있습니다. Azure Image Builder를 배포할 때는 보안을 보장하고 빌드하는 자산을&rsquo; 완전히 제어할 수 있는 공용 IP 주소가 필요하지 않습니다.</p>
+
+
+  <p>Weve&rsquo;는 다음 사용자 지정 이미지를 빌드하고, 회사 및 규정 준수 규칙을 충족하고, 필요한 번거로움 없이 더 빠른 배포를 위해 애플리케이션으로 VM을 미리 구성할 때&rsquo; 많은 작업을 수행하도록 이 서비스를 설계했습니다. 이미지 파이프라인을 빌드하거나 유지 관리하거나, 새 도구를 배우거나, 다른 도구를 사용하는 방법을 학습하는 데 시간을 할애할 필요가&#39;없습니다. 템플릿에서 이미지 구성을 설명하기만 하면 새 명령이나 기존 명령, 스크립트, 빌드 아티팩트 및 Azure Image Builder를 사용하여 이미지 구성을 만들 수 있습니다.</p>
+
+
+  <p>Azure Image Build는 2020년 3분기에 일반 공급될 예정입니다.</p>
+
+
+  <h2>Azure Image Builder를 사용하여 다음 단계</h2>
+
+
+  <p>다음 리소스를 사용하여 현재 미리 보기에서 Azure Image Builder를 사용해 보세요.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-overview" target="_blank">Azure Image Builder 서비스에</a> 대해 자세히 알아봅니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/image-builder-gallery" target="_blank">Linux 가상 머신 및 Windows 가상 머신</a>용 이미지 갤러리에서 Azure Image Builder를 사용하는 방법을 알아봅니<a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/image-builder-gallery" target="_blank">다</a>.</li>
+      <li>Azure Image Builder 및 공유 이미지 갤러리가 어떻게 도움이 되는지 자세히 알아보려면 Azure Image Builder <a href="https://myignite.techcommunity.microsoft.com/sessions/BRK3133?source=TechCommunity" target="_blank">Ignite 웹캐스트</a> 를 시청하세요.</li>
+  </ul>

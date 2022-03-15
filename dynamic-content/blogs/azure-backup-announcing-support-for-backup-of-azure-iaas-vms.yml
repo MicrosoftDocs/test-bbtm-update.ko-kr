@@ -1,0 +1,172 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 13cca5c45b4b72e1f04029128526f46dac5371e3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900028"
+Slug: azure-backup-announcing-support-for-backup-of-azure-iaas-vms
+Title: Azure Backup - Azure IaaS VM 백업 지원 발표
+Summary: Azure Backup을 사용하여 IaaS VM을 백업하는 기능을 발표하게 되어 기쁩니다.
+Content: >-
+  <a href="https://aka.ms/azurebackup_landingpage">Azure Backup</a>을 사용하여 IaaS VM(미리 보기)을 백업하는 기능을 발표하게 되어 기쁩니다. 고객이 애플리케이션 및 전체 가상 머신을 Azure로 마이그레이션하면 고객 데이터 보호가 우선 순위가 됩니다. Azure Backup에서 몇 번의 간단한 클릭으로 이제 가상 머신을 보호할 수 있습니다.
+
+  <h2>기능 강조 표시(미리 보기)</h2>
+
+  <ol>
+   <li>가상 머신의 애플리케이션 일치 백업
+  <ul>
+   <li>프로덕션 워크로드에 영향을 주지 않는 백업</li>
+   <li>VM 종료 필요 없음</li>
+   <li>Windows OS에 대한 애플리케이션 수준 일관성</li>
+   <li>Linux OS에 대한 파일 시스템 수준 일관성</li>
+  </ul>
+
+  </li>
+   <li>패브릭 수준 백업
+  <ul>
+   <li>백업에 필요한 고객 리소스가 없는 무제한 확장성</li>
+   <li>동시에 여러 VM의 에이전트 없는 백업</li>
+   <li>Azure Portal을 통한 단일 중앙 관리 인터페이스</li>
+   <li>진행률 및 성공/실패를 추적하기 위한 자세한 작업 보기</li>
+  </ul>
+
+  </li>
+   <li>정책 기반 백업 및 보존
+  <ul>
+   <li>예약된 백업 구성</li>
+   <li>주문형 백업</li>
+   <li>Azure Backup 자격 증명 모음 내의 복구 지점 자동 관리</li>
+   <li>원래 VM이 삭제된 경우에도 Azure Backup 자격 증명 모음에 백업 데이터 보존</li>
+  </ul>
+
+  </li>
+
+  </ol>
+
+  &nbsp;
+
+  <h2>디자인 원칙</h2>
+
+  아래에 나열된 디자인 원칙을 통해 Azure Backup은 IaaS VM 백업을 위한 훌륭한 솔루션을 제공할 수 있습니다.
+
+
+  <strong>1. 독립적인 격리된 백업 복사본</strong>
+
+
+  백업은 원래 데이터의 실수로 파괴되지 않도록 보호됩니다. Azure Backup을 사용하면 VM이 복구 지점을 기본으로 관리하는 Azure Backup 자격 증명 모음에 <em>저장</em> 됩니다.
+
+
+  <strong>2. 애플리케이션 일치 백업</strong>
+
+
+  Azure Backup을 사용하면 이제 <em>VM을 종료하지 않고도 Windows VM</em>의 애플리케이션 일치 백업을 가져올 수 있습니다.
+
+
+  <strong>3. 예측 가능한 IO 및 백업 시간</strong>
+
+
+  백업에서 가장 시간이 많이 걸리는 작업은 주 스토리지에서 백업 스토리지로 데이터를 복사하는 것이며, 소요 시간은 네트워크 대기 시간, 기본 스토리지 계정에서 사용 가능한 IOPS, 백업 스토리지 계정에서 사용 가능한 IOPS 등과 같은 다양한 요인에 따라 달라집니다. Azure Backup은 <em>일정하고 예측 가능한 IO 및 백업 시간을</em> 보장하는 최적화된 Blob 복사본을 구현합니다.
+
+
+  <strong>4. 효율적인 스토리지 사용</strong>
+
+
+  Azure Backup은 추가 처리를 수행하여 마지막 복구 지점과 현재 VM 상태 간의 증분 변경을 확인합니다. 증분 변경 내용만 전송하고 저장하면 Azure Backup은 <em>스토리지 효율이 높습니다</em>.
+
+
+  <strong>5. 백업 작업의 높은 성공률</strong>
+
+
+  백업 SLA를 충족하기 위해 고객은 백업 작업의 <em>성공률이 높을</em> 것으로 예상합니다. Azure Backup에는 간헐적인 오류가 백업 작업 완료에 영향을 주지 않도록 백업 작업에 대한 기본 제공 재시도 메커니즘이 있습니다.
+
+
+  <strong>6. 인프라 배포 및 유지 관리 0개</strong>
+
+
+  IaaS VM을 백업하기 위해 고객은 <em>아무것도 배포</em>하지 않습니다. 스토리지 및 컴퓨팅 인프라 요구 사항은 Azure Backup 서비스에서 자동으로 처리됩니다. 고객은 확장에 대해 걱정할 필요가 없습니다. 언제든지 필요한 만큼 VM을 보호합니다. 또한 Azure Backup은 사용자 개입 없이 VM 확장 업그레이드를 자동으로 처리하여 유지 관리 오버헤드를 줄입니다. Azure Backup은 VM 백업에 대해 "설정 및 잊어버리기"를 구현합니다.
+
+
+  &nbsp;
+
+  <h2>간단한 3단계에서 IaaS VM 백업</h2>
+
+  <div id="attachment_268364" align="aligncenter" width="574"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3-steps-for-backup.png"><img class="size-full wp-image-268364" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3-steps-for-backup.png" alt="Discover, Register, Protect - the 3 steps to protect an Azure IaaS VM using Azure Backup" width="574" height="135" /></a> 백업을 위한 3단계</div>
+
+
+  IaaS VM에 대한 백업 구성은 다음 세 가지 간단한 단계의 문제입니다.
+
+  <ol>
+   <li><strong>발견:</strong>  이 단계에서는 아직 보호되지 않은 동일한 지역에 있는 모든 IaaS VM 목록을 가져옵니다.</li>
+   <li><strong>등록:</strong>  이 일회성 단계에서는 백업을 준비하기 위해 선택한 VM에 백업 확장을 설치합니다.</li>
+   <li><strong>보호:</strong>  이 단계에서는 VM에 대한 백업 및 보존 정책을 설정합니다. 백업 정책에 따라 VM 데이터의 초기 복제가 자동으로 수행되고 미리 정의된 일정에 따라 증분 백업이 수행됩니다.</li>
+  </ol>
+
+  <div id="attachment_268374" align="aligncenter" width="497"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/03/25/protection-policy.png"><img class="wp-image-268374 size-medium" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/protection-policy-497x369.png" alt="Input fields for the backup policy" width="497" height="369" /></a> 백업 정책에 대한 입력 필드</div>
+
+
+  &nbsp;
+
+  <h2>VM 백업 상태 모니터링</h2>
+
+  VM에서 백업 정책이 설정되면 다음을 사용하여 백업 작업 및 전체 백업 상태를 추적할 수 있습니다.
+
+  <ul>
+   <li>자격 증명 모음 대시보드의 상태 정보(또는)</li>
+   <li>보호된 항목 페이지의 개략적인 개요(또는)</li>
+   <li>작업 페이지의 진행 중인 작업 및 기록 작업에 대한 자세한 정보</li>
+  </ul>
+
+  <div id="attachment_268504" align="aligncenter" width="494"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/03/25/jobs-page.png"><img class="size-medium wp-image-268504" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/jobs-page-494x369.png" alt="Azure Backup vault - view of Jobs page" width="494" height="369" /></a> Azure Backup 자격 증명 모음 - 작업 페이지 보기</div>
+
+
+  &nbsp;
+
+  <h2>복구 지점에서 복원</h2>
+
+  최신 복구 지점 또는 이전 복구 지점에서 VM을 복원하는 옵션이 있습니다. 기존 클라우드 서비스로 복원하거나 새 클라우드 서비스를 만들어 VM을 만들 수 있습니다. 복원된 VM에 대한 가상 네트워크 및 서브넷을 지정할 수 있습니다.
+
+  <table border="0" align="center">
+
+  <tbody>
+
+  <tr>
+
+  <td>
+
+
+  <div id="attachment_268524" align="alignleft" width="280"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/03/25/restore-1.png"><img class="size-thumbnail wp-image-268524" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/restore-1-280x160.png" alt="IaaS VM Restore operation - select recovery point" width="280" height="160" /></a> IaaS VM 복원 작업 - 복구 지점 선택</div></td>
+
+  <td>
+
+
+  <div id="attachment_268534" align="alignright" width="280"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/03/25/restore-2.png"><img class="wp-image-268534 size-thumbnail" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/restore-2-280x160.png" alt="IaaS VM Restore operation - select destination VM location" width="280" height="160" /></a> IaaS VM 복원 작업 - 대상 VM 위치 선택</div></td>
+
+  </tr>
+
+  </tbody>
+
+  </table>
+
+  &nbsp;
+
+  <h2>시작!</h2>
+
+  시작하려면 <a href="https://manage.windowsazure.com/microsoft.onmicrosoft.com#Workspaces/RecoveryServicesExtension/Resource">Azure Recovery Services 포털</a>을 사용하여 Azure IaaS VM과 동일한 지역에 백업 자격 증명 모음을 만듭니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/backup-azure-vms/">Azure IaaS VM Backup 설명서의 Azure Portal에서 IaaS VM의 백업</a>을 구성하는 방법에 대해 자세히 알아봅니다.
+
+
+  또한 <a href="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Tuesdays-with-Corey-OS-Disk-Size-and-Azure-IaaS-Backup">IaaS VM 백업에서 코리 샌더스의</a> 멋진 비디오를 시청하세요.
+
+
+  &nbsp;
+
+  <h2>관련 링크 및 추가 콘텐츠:</h2>
+
+  <ul>
+   <li><a href="https://aka.ms/azurebackup_landingpage">Azure Backup</a>에 대해 자세히 알아봅니다.</li>
+   <li>설명서를 찾고 계신가요? <a href="https://azure.microsoft.com/en-us/documentation/articles/backup-azure-vms/">Azure IaaS VM 백업 설명서를 확인하세요</a>.</li>
+   <li><a href="https://aka.ms/azure_freetrial">Azure 평가판 구독</a>을 클릭합니다.</li>
+   <li>도움이 필요하신가요? <a href="https://aka.ms/azurebackup_forum">지원을 위해 Azure Backup 포럼</a>에 문의하세요.</li>
+   <li><a href="https://aka.ms/azurebackup_feedback">Azure Backup을 개선할</a> 수 있는 방법을 알려주세요. 새 아이디어를 제공하고 기존 아이디어를 기고하세요!</li>
+   <li><a href="https://twitter.com/azurebackup">Twitterand</a>  <a href="https://channel9.msdn.com/Series/Azure-Backup">Channel9</a>에서 최신 뉴스 및 업데이트를 받으세요.</li>
+  </ul>

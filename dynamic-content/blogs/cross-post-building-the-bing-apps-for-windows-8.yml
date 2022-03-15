@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b6404c04cd70c9017cba72a93b38e04d1630b589
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906490"
+Slug: cross-post-building-the-bing-apps-for-windows-8
+Title: '교차 게시: Windows 8 위한 Bing 앱 빌드'
+Summary: '편집기&rsquo; 참고: Windows 8 앱 개발자 블로그의 교차 게시물입니다.  약 1년 전, Bing 팀원들은 뉴스, 날씨, 금융, 스포츠에 대한 애플리케이션을 빌드하기 시작했습니다,...'
+Content: '<p><strong>편집기&rsquo; 참고: </strong>Windows 8 <a href="https://blogs.msdn.com/b/windowsappdev/" target="_blank">앱 개발자 블로그</a>의 교차 게시물입니다.</p>  <p>약 1 년 전, Bing 팀의 구성원은 뉴스, 날씨, 금융, 스포츠, 여행 및 Windows 8 대한 지도 대한 응용 프로그램을 구축하기 시작했다. 팀은 Windows Azure의 서비스를 사용하여 수억 명의 사용자가 있는 많은 데이터와 콘텐츠로 구동되는 풍부한 앱을 확장하고 지원합니다. 이러한 중 일부는 Finance 앱과 마찬가지로 Windows Azure의 데이터 및 서비스에 크게 의존합니다. Bing 웹 인덱스 또는 업계 최고의 게시자 데이터를 활용하는 앱을 만들려면 <a href="https://datamarket.azure.com/" target="_blank">Windows Azure Marketplace</a>를 확인하세요.</p>  <p>Windows Azure를 활용하여 Windows 8 위한 앱을 개발하는 방법에 대해 자세히 알아보세요<a href="https://blogs.msdn.com/b/windowsappdev/archive/2013/01/21/building-the-bing-apps-for-windows-8.aspx" target="_blank">.</a></p>'

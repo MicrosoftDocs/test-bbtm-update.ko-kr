@@ -1,0 +1,65 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6046c9ac5510214ba327f866a51bcb9e7442f646
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900558"
+Slug: sonic-opens-more-opportunities-for-network-innovation
+Title: SONiC는 네트워크 혁신을 위한 더 많은 기회를 엽니다.
+Summary: SONiC는 네트워크 디바이스용 오픈 소스 운영 체제로서 지난 5년 동안 빠르게 성장하고 있습니다. 우리는 지난 한 해 동안 SONiC를 새로운 시나리오로 확장하는 혁신에 대해 많은 파트너와 협력해 왔습니다. 이번 달 OCP 글로벌 서밋에서 선보인 내용과 SONiC가 가능하게 하는 기회를 살펴보겠습니다.
+Content: >-
+  <p><a href="https://azure.github.io/SONiC/" target="_blank">SONiC</a>는 네트워크 디바이스용 오픈 소스 운영 체제로서 지난 5년 동안 빠르게 성장하고 있습니다. 올해 초 발표된 데이터 센터 전환에 대한 Gartner 시장 가이드에 따르면, 2025년까지 대규모 데이터 센터 네트워크를 운영하는 조직의 40%(200개 이상의 스위치)가 프로덕션 환경에서 SONiC를 실행할 것으로 예상 &ldquo;합니다.&rdquo; &ldquo;그리고 이러한 고객 관심 및 상업 생태계가 급속히 확장됨에 따라 향후 3~6년 동안 SONiC가 Linux와 서버 운영 체제와 유사하게 되어 기업이 하드웨어 공급업체에서 지원되는 NOS에서 표준화할 수 있게 될 가능성이 강하고 있습니다.&rdquo;</p>
+
+
+  <p>우리는 지난 한 해 동안 SONiC를 새로운 시나리오로 확장하는 혁신에 대해 많은 파트너와 협력해 왔습니다. &rsquo;이번 달 <a href="https://www.opencompute.org/summit/global-summit" target="_blank">OCP 글로벌 서밋</a>에서 선보인 내용과 SONiC가 가능하게 하는 기회를 살펴보겠습니다.</p>
+
+
+  <h2>스마트 케이블을 사용하여 고해상도 이중 ToR 지원 사용</h2>
+
+
+  <p>고가용성은 네트워크 엔지니어에게 끝없는 추구입니다. 결함이 없는 고객을 위해 패킷을 배달하는 것은 간단한 요청이지만 경로에서 가능한 모든 종류의 오류로 인해 약속하기가 어렵습니다. 연구에 따르면 네트워크 infrastructureeach&mdash; 스위치의 중요한 역할은 배포 후 3개월 이내에 오류가 발생할 확률이 2%이며, 하드웨어 오류로 인한 오류의 32%와 계획되지 않은 정전으로 인한 오류의 27%가 있습니다. 경로의 안정성을 개선하는 고전적인 방법은 하드웨어 오류의 영향을 줄이기 위해 중복성을 추가하는 것입니다. 올해 SONiC 커뮤니티는 고객 VM에 이중 ToR(Top of Rack) 연결을 제공하는 혁신적인 방법을 개발했습니다. 이 SONiC 기반 접근 방식은 기존 서버에 더 많은 NIC를 추가할 필요가 없으며 분할-뇌 장애가 발생하기 쉬운 기존 MLAG(다중 섀시 링크 집계) 메커니즘을 사용하지 않습니다. 비밀은 케이블 내부로 들어갑니다. 기존의 Y 케이블 대신, 새로운 스마트 케이블에는 마이크로 컨트롤러와 적중되지 않은 MUX가 포함되어 있습니다. 인텔리전스는 SONiC ToR 스위치에 있습니다. 스마트 케이블 내부의 MUX를 관리하고, 서버의 트래픽 경로를 결정하고, 장애 조치(failover)를 신속하게 처리합니다. 측정값에 따르면 이 방법은 스마트 케이블을 통해 이중 연결을 제공하고 장애 조치(failover) 시간이 1s&micro; 미만인 SONiC 스위치를 제공합니다. 이 기능은 <a href="https://github.com/Azure/SONiC/blob/master/doc/SONiC_202106_Release_Notes.md" target="_blank">SONiC 20201230</a> 릴리스에서 사용할 수 있습니다. Microsoft, Broadcom, Credo 및 많은 회사가 이에 기여했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9b6fcb92-4144-4bf0-b07b-eba7bb27bdad.png"><img alt=" Dual ToR support through smart cable and SONiC switches." border="0" height="173" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/50e70c1b-7b06-411d-9987-a389a7291f6b.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title=" 이중 ToR 지원" width="396"></a></p>
+
+
+  <p><em><strong>그림 1:</strong> 스마트 케이블 및 SONiC 스위치를 통한 이중 ToR 지원.</em></p>
+
+
+  <h2>DASH를 사용하면 무제한 네트워킹을 사용할 수 있습니다.</h2>
+
+
+  <p>프로그래밍 가능한 하드웨어 에코시스템(스마트 NIC, 스마트 ToR, 스마트 어플라이언스)은 지난 2년 동안 호황을 누리고 있으며 계속 성장할 것입니다. 이러한 디바이스의 성능 및 사용자 지정성이 뛰어납니다. 올해 SONiC 커뮤니티는 무한 네트워킹을 위해 이를 활용하기 위해 새로운 workstreamDASH&mdash;(SONiC 호스트에 대해 분리된 API)&mdash;를 출시했습니다. 초기 목표는 소프트웨어 구현 솔루션에 비해 소프트웨어 정의 네트워킹 작업의 L4 성능 및 연결 규모를 10배에서 100배로 개선하는 것입니다. DASH는 최신 고속 SmartNIC 하드웨어를 활용하여 흐름 처리를 가속화하고 SDN의 데이터 평면 구현 게임을 변경합니다. VNET 간 연결에 대한 첫 번째 <a href="https://github.com/Azure/DASH/tree/main/SAI" target="_blank">오버레이 및 언더레이 SAI API</a> 집합이 정의되었으며 테스트 디자인이 활발히 논의 중입니다. 고속 인라인 암호화 및 키 관리를 사용하는 암호화 게이트웨이, 부하 분산 장치, 서비스 터널링 등 DASH 혁신의 이점을 누릴 수 있는 많은 애플리케이션을 예측합니다. SONiC의 오픈 소스 특성을 사용하면 개별 사용 사례에 맞게 유연하게 사용자 지정할 수 있습니다. 다양한 프로그래밍 가능한 하드웨어에서 상호 운용성을 보장하기 위해 <a href="https://github.com/opencomputeproject/SAI" target="_blank">SAI(추상화 인터페이스 전환)</a> 를 통해 API를 표준화합니다. 솔루션은 SONiC의 포괄적인 모니터링, 진단 용량, 적중 없는 업그레이드 및 컨테이너 관리와 같은 안정성을 무료로 상속합니다. Nvidia, Pensando, Intel 및 많은 파트너가 이 프로그램에 적극적으로 기여하고 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90e1734e-da2a-47a0-a2e5-48c95469088a.png"><img alt="Seven initial DASH scenarios." border="0" height="263" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/268b13f8-11ca-411e-a850-37c794c2a8a9.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="SONiC DASH" width="280"></a></p>
+
+
+  <p><em><strong>그림 2:</strong> 7가지 초기 <a href="https://github.com/Azure/DASH" target="_blank">DASH </a>시나리오.</em></p>
+
+
+  <h2>프로그래밍 기능을 사용하는 PINSextending&mdash; SONiC</h2>
+
+
+  <p>networkdistributed&mdash; 또는 중앙 집중식으로 실행하는 방법에는 두 가지가 있습니다. 각각은 강도가 있습니다. 분산 모델에서 각 스위치에는 인접 항목을 검색하고, 라우팅 테이블을 빌드하고, 토폴로지 변경에 대응하는 인텔리전스가 있습니다. 이러한 네트워크는 오류가 있는 경우 신속하게 크기를 조정하고 스스로 치유할 수 있습니다. 중앙 집중식 모델에서 전용 외부 제어 시스템은 토폴로지 및 프로그램을 네트워크의 스위치 노드로 빌드합니다. 네트워크 동작은 결정적이고 디버그하기 쉽고 최적의 트래픽 엔지니어링을 가능하게 합니다. 지난 한 해 동안 PINS(P4 통합 네트워크 스택) 커뮤니티와 SONiC 커뮤니티는 SONiC를 PINS와 통합하기 위해 협력해 왔습니다. 이를 통해 고객은 SONiC 스위치를 사용하여 SDN(소프트웨어 정의 네트워크) 중앙 제어 네트워크를 빌드할 수 있습니다. SDN 컨트롤러는 P4Runtime에서 정의한 동작 모델 또는 계약을 사용하여 P4를 통해 네트워크 디바이스, SONiC 스위치를 프로그래밍하여 런타임에 대한 확장을 가능하게 합니다. 이 이니셔티브를 통해 SONiC 사용자는 다양한 하드웨어 에코시스템으로 네트워크를 빌드할 수 있습니다. 최소 실행 가능한 제품은 <a href="https://github.com/Azure/SONiC/wiki/Release-Progress-Tracking-202111" target="_blank">SONiC 20211130</a> 릴리스에 포함되며, 다음 릴리스에서는 더 많은 L2/L3 기능이 제공됩니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>자격을 갖추기 위한 SONiC 커뮤니티의 다른 많은 훌륭한 창의적인 작품들이 있습니다. 예를 들어 PLVision의 SAI 챌린저, 인텔과 알리바바의 텔코 세그먼트용 SRv6, 인텔과 Microsoft의 상호 운용성을 위한 SAI 테스트 프레임워크, Broadcom의 배포를 위한 자동화 등이 있습니다. <a href="https://www.opencompute.org/summit/global-summit" target="_blank">OCP 글로벌 서밋</a>에서 확인하세요.</p>
+
+
+  <p>오픈 소스 하드웨어 커뮤니티의 Microsofts&rsquo; 역할과 OCP Global Summit 2021의 쇼케이스에 대한 자세한 내용은 블로그: <a href="https://azure.microsoft.com/en-us/blog/learn-how-microsoft-azure-is-accelerating-hardware-innovations-for-a-sustainable-future/" target="_blank">Microsoft Azure 지속 가능한 미래를 위해 하드웨어 혁신을 가속화하는 방법을 알아봅니다</a>.</p>
+
+
+  <hr>
+
+  <p><em>GARTNER는 미국 및 국제적으로 Gartner, Inc. 및/또는 그 계열사의 등록 상표 및 서비스 마크이며 여기에서 사용 허가하에 사용됩니다. 판권.</em></p>
+
+
+  <p><strong>참조</strong></p>
+
+
+  <p>가트너, 데이터 센터 전환 시장 가이드, 앤드류 러너, 조나단 포레스트, 에반 징, 2021년 3월 8일</p>

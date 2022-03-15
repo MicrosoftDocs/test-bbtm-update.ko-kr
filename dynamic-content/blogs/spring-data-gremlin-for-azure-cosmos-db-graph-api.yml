@@ -1,0 +1,95 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b42364da6493243f9e8783fb9c662f2d6457ff70
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900516"
+Slug: spring-data-gremlin-for-azure-cosmos-db-graph-api
+Title: Azure Cosmos DB Graph API용 Spring Data Gremlin
+Summary: 이제 Maven Central 및 GitHub 소스 코드에서 Spring Data Gremlin을 사용할 수 있음을 발표하게 되어 기쁘게 생각합니다. 이 프로젝트는 Gremlin을 순회 언어로 사용하는 Graph 데이터베이스에 대한 Spring Data 지원을 제공합니다.
+Content: >-
+  <p>이제 Maven Central 및 GitHub 소스 코드에서 Spring Data Gremlin을 사용할 수 있음을 발표하게 되어 기쁘게 생각합니다. 이 프로젝트는 Gremlin을 순회 언어로 사용하는 Graph 데이터베이스에 대한 Spring Data 지원을 제공합니다. Azure 사용자의 경우 Graph <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/graph-introduction" target="_blank">API</a>를 사용하여 <a href="https://azure.microsoft.com/en-us/services/cosmos-db/" target="_blank">Azure Cosmos DB</a>와 상호 작용하는 즐거운 환경을 제공합니다. 이제 Java 개발자는 Spring 주석을 사용하여 꼭짓점 및 Edge와 같은 데이터베이스 엔터티와 매핑할 수 있습니다. 또한 개발자는 Spring Data 리포지토리를 기반으로 자체 데이터베이스 쿼리를 만들 수 있습니다.</p>
+
+
+  <h2>주요 특징</h2>
+
+
+  <p><a href="https://github.com/Microsoft/spring-data-gremlin" target="_blank">Spring Data Gremlin</a> 은 주석 지향 프로그래밍 모델을 지원하여 데이터베이스 엔터티에 대한 매핑을 간소화합니다. 또한 사용자 지정 쿼리를 만드는 지원도 제공합니다. </p>
+
+
+  <ul>
+   <li>주석을 포함한 데이터베이스 엔터티와의 매핑
+  <br clear="all"><br clear="all"> <ul>
+    <li>@Id 엔터티의 ID 필드를 사용하여 도메인 클래스에 파일된 파일을 매핑하려면 입니다.<br clear="all"></li>
+    <li>@Vertex 꼭 @VertexSet 짓점으로 매핑합니다.</li>
+    <li>@Edge, @EdgeSet@EdgeFrom 및 @EdgeTo Edge를 사용하여 매핑<br clear="all"><br clear="all"></li>
+   </ul>
+   </li>
+   <li>꼭짓점, Edge 및 Graph 고급 작업
+  <br clear="all"><br clear="all"> <ul>
+    <li>findVertexById 및 findEdgeById를 사용하여 특정 필드별로 데이터를 찾습니다.</li>
+    <li>꼭짓점 및 에지 번호를 계산하기 위한 vertexCount 및 edgeCount입니다.<br clear="all"><br clear="all"></li>
+   </ul>
+   </li>
+   <li>Spring Data CRUD 기능.<br clear="all"><br clear="all"></li>
+   <li>Spring Data 리포지토리를 기반으로 하는 사용자 지정 데이터베이스 쿼리입니다.</li>
+  </ul>
+
+
+  <h2>시작</h2>
+
+
+  <p>이 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-java" target="_blank">자습서에 따라 Azure Cosmos DB에서 Graph 데이터베이스 인스턴스를 만들고</a> 데이터 탐색기에서 새 Graph 추가할 수 있습니다. 개요 페이지의 URI 및 키를 사용하여 프로젝트를 구성합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ae473377-974e-433e-b72f-4014ee6bc3e2.png"><img width="1465" height="747" title="첫 번째 스냅샷" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" alt="1st snapshot" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2549ef68-2830-4458-9769-75e25ed4b720.png" border="0"></a></p>
+
+
+  <h2>프로젝트 구성</h2>
+
+
+  <p>pom.xml 파일을 열고 종속성&gt; 섹션에서 다음 설정을 추가하여 Spring <a href="https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22spring-data-gremlin%22" target="_blank">Data Gremlin 라이브러리</a>를 &lt;프로젝트에 포함합니다. 그런 다음, 방금 만든 Graph 데이터베이스에 연결하도록 application.yml 파일을 설정합니다.</p>
+
+
+  <pre>&lt;dependency&gt;
+       &lt;groupId&gt;com.microsoft.spring.data.gremlin&lt;/groupId&gt;
+       &lt;artifactId&gt;spring-data-gremlin&lt;/artifactId&gt;
+       &lt;version&gt;2.0.0&lt;/version&gt;
+  &lt;/dependency&gt; </pre>
+
+
+  <p>자세한 구성은 <a href="https://github.com/Microsoft/spring-data-gremlin" target="_blank">GitHub</a> 사용할 수 있습니다. </p>
+
+
+  <h2>스크립트를 실행합니다.</h2>
+
+
+  <p><a href="https://github.com/Microsoft/spring-data-gremlin/tree/master/examples/example" target="_blank">샘플</a> 시작! 실행한 후에는 Azure Portal을 열어 데이터베이스에서 업데이트된 Graph 확인할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5e6e7fc9-b98f-4ed8-b6a9-0c199d68c461.png"><img width="606" height="215" title="이미지" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" alt="image" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/33cd65aa-ba77-4e12-b813-540ecdbffcbe.png" border="0"></a></p>
+
+
+  <p>완료되면 <a href="https://github.com/Microsoft/spring-data-gremlin/" target="_blank">GitHub</a> 프로젝트에 대해 읽고 고급 기능을 검색합니다. </p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Azure에서 Spring을 사용하는 방법에 대한 자세한 내용은 다음 페이지를 방문하세요.</p>
+
+
+  <ul>
+   <li>GitHub: <a href="https://github.com/Microsoft/spring-data-gremlin/" target="_blank">Spring Data Gremlin</a></li>
+   <li>GitHub: <a href="https://github.com/Microsoft/spring-data-cosmosdb" target="_blank">Spring Data Azure Cosmos DB</a>&nbsp;</li>
+   <li>GitHub: <a href="https://github.com/Microsoft/azure-spring-boot" target="_blank">Azure 서비스를 위한 Spring Boot Starters</a></li>
+   <li>개발자 센터: <a href="https://docs.microsoft.com/en-us/java/azure/spring-framework/" target="_blank">Azure의 Spring</a></li>
+   <li>개발자 센터: <a href="https://docs.microsoft.com/en-us/java/azure/" target="_blank">Azure의 Java</a>&nbsp;</li>
+  </ul>
+
+
+  <h2>피드백</h2>
+
+
+  <p>피드백 및 질문은 개선에 도움이 될 수 있습니다. <a href="https://github.com/Microsoft/spring-data-gremlin/issues/new/choose" target="_blank">GitHub 문의하여</a> 의견을 공유할 수 있습니다.</p>

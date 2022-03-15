@@ -1,0 +1,166 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 16a1bb129600d1ac1102d8ba14e3f5065bf96a43
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899964"
+Slug: azure-media-clipper
+Title: Azure Media Clipper 공개 미리 보기 발표
+Summary: 미디어 서브클립을 작성하고 렌더링된 비디오를 함께 연결하기 위한 Azure Media Services 새로운 기능의 공개 미리 보기를 발표하게 되어 기쁩니다.
+Content: >-
+  <div style="background:#eee;border:1px solid #ccc;padding:5px 10px;"><em><strong>업데이트 2019년 11월 22일:</strong>&nbsp; Azure Media Clipper 대한 최신 정보는 Media Services <a href="https://docs.microsoft.com/en-us/azure/media-services/latest/encoding-concept#creating-job-input-with-subclipping" target="_blank">설명서가 포함된 인코딩 비디오 및 오디오</a>를 참조하세요.</em></div>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>미디어 클립을 작성하고 렌더링된 비디오를 함께 연결하기 위한 AMS(Azure Media Services)의 새로운 기능에 대한 공개 미리 보기를 발표하게 되어 기쁩니다. Azure Media Clipper 웹 개발자가 사용자에게 클립을 만들기 위한 인터페이스를 제공할 수 있는 무료 JavaScript 라이브러리입니다.</p>
+
+
+  <p>예를 들어 James는 웹 기반 비디오 콘텐츠 관리 서비스를 실행하는 웹 개발자입니다. 그의 서비스의 사용자는 스포츠 방송을 인코딩하는 라이브 콘텐츠 소유자입니다. James는 Azure Media Clipper 웹 서비스에 통합하여 콘텐츠 소유자가 미디어 카탈로그에서 스포츠 하이라이트를 만들 수 있도록 합니다. 콘텐츠 소유자는 하나 이상의 라이브 또는 VOD 스포츠 브로드캐스트를 선택하고, 클립할 세그먼트를 지정하고, 클리핑 작업을 제출할 수 있습니다. 작업이 처리되면 콘텐츠 소유자는 소셜 미디어 또는 다른 플랫폼을 통해 게시 또는 배포를 위해 클립을 다시 가져옵니다.</p>
+
+
+  <p>Azure Media Clipper를 사용하면 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+      <li>라이브 보관에서 사전 슬레이트 및 사후 슬레이트 자르기</li>
+      <li>AMS 라이브 이벤트, 라이브 보관 또는 fMP4 VOD 파일에서 비디오 하이라이트 작성</li>
+      <li>여러 원본에서 비디오 연결</li>
+      <li>AMS 미디어 자산에서 요약 클립 생성</li>
+      <li>프레임 정확도를 사용하여 비디오 클리핑</li>
+      <li>GOP(Group of Pictures) 정확도를 사용하여 기존 라이브 및 VOD 자산에 동적 매니페스트 필터 생성</li>
+      <li>미디어 서비스 계정의 자산에 대해 인코딩 작업 생성</li>
+  </ul>
+
+
+  <h2>위젯 사용자 인터페이스</h2>
+
+
+  <p>위젯은 다음 세 가지 구성 요소로 구성됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/12919c2c-9cc1-4dee-a17c-e87f94e12edb.png"><img alt="Components" border="0" height="827" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2942543c-1f8f-4ece-8f85-b5eb8b9e84aa.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="구성 요소" width="1233"></a></p>
+
+
+  <ul>
+      <li>미디어 재생 및 미리 보기용 Azure AMP(<a href="https://amp.azure.net/libs/amp/latest/docs/" target="_blank">Media Player</a>)</li>
+      <li>표시 시간 설정, 재생 헤드 위치 이동 및 프레임 또는 GOP 정밀도로 타임라인 탐색을 위한 클립 인터페이스</li>
+      <li>자산을 선택하고 검색하고 자산 메타데이터를 보기 위한 자산 선택 패널</li>
+  </ul>
+
+
+  <p>이 도구 인터페이스는 밝은 테마와 어두운 테마로 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dc80e904-57e7-4484-93ff-beda9e265017.png"><img alt="Light and Dark Theme" border="0" height="548" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2c983428-262d-4365-9730-73d68fd149be.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="밝은 테마와 어두운 테마" width="1301"></a></p>
+
+
+  <h3>자산 로드</h3>
+
+
+  <p>Azure Media Clipper 미디어 서비스 계정에 호스트된 자산의 JSON 표현을 입력으로 사용합니다. 생성해야 하는 이 JSON 계약에는 자산을 재생하고 매니페스트를 구문 분석하는 데 필요한 모든 메타데이터가 포함됩니다. 렌더링된 미디어가 Clipper 직접 전달되지 않습니다. 지원되는 자산에는 AMS 단일 비트 전송률 MP4, 다중 비트 전송률 MP4 및 동적 매니페스트 필터가 포함됩니다. 현재 Clipper Azure Media Services 외부에서 호스팅되는 미디어를 지원하지 않습니다.</p>
+
+
+  <p>다음 두 가지 방법으로 Azure Media Clipper에 자산을 로드할 수 있습니다.</p>
+
+
+  <ul>
+      <li>고정적으로 자산 라이브러리 제공</li>
+      <li>API를 통해 동적으로 자산 목록 생성</li>
+  </ul>
+
+
+  <p>첫 번째 경우 정적 자산 집합을 전달합니다. 각 자산에는 AMS 자산 ID, 이름, 게시된 스트리밍 URL, AES 또는 DRM 인증 토큰(해당하는 경우) 및 선택적으로 썸네일 URL 배열이 포함됩니다. 전달된 경우 미리 보기가 인터페이스에 채워집니다. 자산 라이브러리가 정적이고 작은 시나리오에서는 라이브러리의 각 자산에 대한 자산 계약을 간단히 전달할 수 있습니다.</p>
+
+
+  <p>또는 JavaScript 콜백을 통해 동적으로 자산을 로드할 수 있습니다. 자산이 동적으로 생성되거나 라이브러리가 큰 시나리오에서는 콜백을 통해 로드하는 것이 좋습니다.</p>
+
+
+  <h3>클립 생성</h3>
+
+
+  <p>클립을 만들려면 클립 인터페이스에 자산을 끌어 놓습니다. 여러 자산에 대해 클리핑하려면 자산 선택 패널에서 여러 자산을 클립 인터페이스로 끌어 놓습니다. 인터페이스에서 원하는 순서로 자산을 선택하고 재지정할 수 있습니다. 자산 선택 패널은 각 자산에 대한 자산 기간, 유형 및 해상도 메타데이터를 제공합니다. 클립 인터페이스의 단추를 사용하여 표시 시간을 찾습니다. 클리핑 작업의 출력을 미리 보려면 미리 보기 단추를 선택하면 선택한 표시 시간에서 클립이 재생됩니다.</p>
+
+
+  <h3>동적 매니페스트 필터 생성</h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/dynamic-manifest/" target="_blank">동적 매니페스트 필터</a>는 매니페스트 특성 및 자산 타임라인을 기반으로 일련의 규칙을 설명합니다. 이러한 규칙은 스트리밍 엔드포인트가 출력 재생 목록(매니페스트)을 조작하는 방법을 결정하며 재생을 위해 스트리밍되는 세그먼트를 변경하는 데 사용할 수 있습니다. Clipper에 의해 생성된 필터는 로컬 필터이며 원본 자산에만 적용됩니다. 렌더링된 클립과 달리 필터는 새로운 자산이 아니며 생성 시 인코딩 작업이 필요하지 않습니다. <a href="https://docs.microsoft.com/en-us/azure/media-services/media-services-dotnet-dynamic-manifest" target="_blank">.NET SDK</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/media-services/media-services-rest-dynamic-manifest" target="_blank">REST API</a>를 통해 매우 빠르게 만들 수 있지만 GOP 정확도만 있습니다. 일반적으로 스트리밍을 위해 인코딩된 자산의 GOP 크기는 2초입니다.</p>
+
+
+  <p>동적 매니페스트 필터를 만들려면 고급 설정 메뉴에서 클리핑 모드로 동적 매니페스트 필터를 선택합니다. 동일한 프로세스를 따라 클립을 생성하여 필터를 만들 수 있습니다. 필터는 단일 자산에 대해서만 생성할 수 있습니다.</p>
+
+
+  <h3>클리핑 작업 또는 동적 매니페스트 필터 API 호출 제출</h3>
+
+
+  <p>Azure Media Clipper 두 가지 유형의 출력을 생성합니다.</p>
+
+
+  <ul>
+      <li>렌더링된 클리핑 작업에 대한 <a href="https://docs.microsoft.com/en-us/azure/media-services/media-services-advanced-encoding-with-mes#trim_video" target="_blank">Media Encoder Standard 인코딩 사전 설정</a></li>
+      <li>매니페스트 필터에 대한 본문을 요청하는 <a href="https://docs.microsoft.com/en-us/azure/media-services/media-services-rest-dynamic-manifest" target="_blank">동적 매니페스트 필터 REST API 호출</a></li>
+  </ul>
+
+
+  <p>이 출력은 JSON으로 반환됩니다. 클립 또는 필터를 만들려면 미디어 서비스 계정을 관리하는 서비스에 작성&rsquo;기 출력을 HTTP 게시합니다. 데이터를 게시하려면 작업 제출 단추에 JavaScript 콜백을 구현해야 합니다. 여기에서 서비스는 클리핑 작업 또는 동적 매니페스트 필터 API 호출의 상태를 제출하고 추적할 수 있습니다. 클리핑 작업에는 인코딩이 필요하며 처리하는 데 시간이 걸립니다. 동적 매니페스트 필터를 생성하려면 API 호출이 필요하며 생성하는 데 상당한 시간이 필요하지 않습니다.</p>
+
+
+  <p>Azure Portal에서는 하위 클리핑을 더 이상 사용할 수 없습니다. 위의 섹션에 설명된 JavaScript 라이브러리를 사용하세요.</p>
+
+
+  <h2>브라우저 지원</h2>
+
+
+  <p>Azure Media Clipper는 최신 HTML5 기술을 사용하여 빌드되었으며 다음 브라우저를 지원합니다.</p>
+
+
+  <ul>
+      <li>Microsoft Edge 13+</li>
+      <li>Internet Explorer 11+</li>
+      <li>Chrome 54+</li>
+      <li>Safari 10+</li>
+      <li>Firefox 50+</li>
+  </ul>
+
+
+  <p>참고: 현재 Azure Media Services 스트림의 HTML5 재생만 지원됩니다.</p>
+
+
+  <h2>언어 지원</h2>
+
+
+  <p>Clipper 위젯은 다음 18개 언어로 제공됩니다.</p>
+
+
+  <ul>
+      <li>중국어(간체)</li>
+      <li>중국어(번체)</li>
+      <li>체코어</li>
+      <li>네덜란드어, 플라망어</li>
+      <li>영어</li>
+      <li>프랑스어</li>
+      <li>독일어</li>
+      <li>헝가리어</li>
+      <li>이탈리아어</li>
+      <li>일본어</li>
+      <li>한국어</li>
+      <li>폴란드어</li>
+      <li>포르투갈어(브라질)</li>
+      <li>포르투갈어(포르투갈)</li>
+      <li>러시아어</li>
+      <li>스페인어</li>
+      <li>스웨덴어</li>
+      <li>터키어</li>
+  </ul>
+
+
+  <p>기본적으로 지원되는 언어 외에도 지원되는 언어 집합을 확장할 수 있습니다.</p>
+
+
+  <h2>피드백 및 기능 요청 제공</h2>
+
+
+  <p>Azure Media Services 계속해서 성장하고 발전하며, 더 많은 기능을 추가하고, 더 많은 시나리오를 가능하게 할 것입니다. 더 나은 서비스를 제공하기 위해 Microsoft는 항상 피드백과 새로운 아이디어를 제공하고 버그 보고서에 감사하므로 최신 기술을 사용하여 놀라운 서비스를 계속 제공할 수 있습니다. 새 기능을 요청하려면 아이디어 또는 피드백을 제공하려면 <a href="https://aka.ms/amsvoice/">Azure Media Services 대한 User Voice에</a> 제출하세요. 특정 문제, 질문 또는 버그가 있는 경우 <a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=MediaServices">포럼</a> 에 질문을 게시하거나 직접 <a href="mailto:amcinfo@microsoft.com">amcinfo@microsoft.com</a>문의하세요.</p>

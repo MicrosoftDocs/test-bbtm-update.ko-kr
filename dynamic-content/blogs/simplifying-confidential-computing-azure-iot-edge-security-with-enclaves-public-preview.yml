@@ -1,0 +1,167 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 513bec3a8393f7fd6905093777f2b8475470e64e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900634"
+Slug: simplifying-confidential-computing-azure-iot-edge-security-with-enclaves-public-preview
+Title: '기밀 컴퓨팅 간소화: enclave를 사용하여 Edge 보안 Azure IoT - 공개 미리 보기'
+Summary: 오늘 인텔리전트 에지의 디바이스용 Open Enclave SDK의 플랫폼 간 가용성과 Open Enclave 및 Azure IoT Edge 보안 관리자의 통합 미리 보기를 발표하게 되어 기쁩니다.
+Content: >-
+  <p><strong> </strong><strong> 지능형 에지에 대해 Open Enclave SDK를 사용하도록 설정하고 운영 체제 및 하드웨어 플랫폼에서 신뢰할 수 있는 애플리케이션의 개발을 간소화합니다.</strong><a href="https://openenclave.io/" target="_blank"><strong></strong></a></p>
+
+
+  <p>오늘 인텔리전트 에지의 디바이스용 Open Enclave SDK의 플랫폼 간 가용성과 Open Enclave 및 Azure IoT Edge 보안 관리자의 통합 미리 보기를 발표하게 되어 기쁩니다. Microsoft는 파트너와 함께 에지에서 사용하는 동안 코드 및 데이터를 보호하는 IoT(사물 인터넷) &ndash; 에서 매우 어려운 보안 문제를 해결할 수 있도록 지원합니다. 여기에는 TEE(신뢰할 수 있는 실행 환경) 또는 단순히 Enclave(기밀 컴퓨팅이라는 개념)의 범위 내에서 컴퓨팅 워크로드를 보호하는 것이 포함됩니다.&nbsp; 하드웨어 보안 전문가부터 에지 및 클라우드 소프트웨어 애플리케이션 개발자까지 모든 대상에 대한 TA 개발을 간소화하는 방식으로 TA(신뢰할 수 있는 애플리케이션)라고도 하는 enclave에서 실행되는 애플리케이션을 개발하기 위한 플랫폼을 제공합니다.</p>
+
+
+  <p>오늘&rsquo; 발표를 통해 Azure IoT Edge 애플리케이션 개발자는 ARM TrustZone&reg;, Intel SGX 및 Windows 또는 Linux 운영 체제를 사용하여 포함된 보안 요소와 같은 암호화 기술을 기반으로 하는 모든 보안 실리콘 TEE에서 루트 트러스트를 작성할 수 있습니다. 다양한 Enclave 기술 및 IoT Edge와의 통합에서 이러한 광범위한 적용 가능성은 개발자가 에지에서 데이터 및 디바이스를 보호하기 위해 수행해야 하는 작업을 크게 간소화합니다. 모든 보안 전문 지식의 접근성을 최우선 목표로 삼고 있는 이 통합에는 아이디어에서 보안 지능형 에지 애플리케이션의 대규모 프로덕션 배포까지의 여정을 진정으로 단순화하고 단축하는 기능이 포함되어 있습니다.</p>
+
+
+  <p>일부 컨텍스트를 제공할 수 있습니다.</p>
+
+
+  <h2>지능형 에지에서 보안의 필요성</h2>
+
+
+  <p><a href="https://azure.microsoft.com/overview/future-of-cloud/" target="_blank">지능형 에지는</a> 클라우드 인텔리전스 및 분석을 에지 디바이스로 확장합니다. <a href="https://azure.microsoft.com/services/iot-edge/" target="_blank">Azure IoT Edge</a>는 게이트웨이 클래스 디바이스와 같은 에지 디바이스에 Azure AI, Azure 서비스 및 사용자 지정 논리를 직접 배포하여 클라우드 인텔리전스를 로컬로 제공하는 완전 관리형 서비스입니다. IoT Edge를 사용하면 연결이 늦거나, 대기 시간이 짧거나, 비용이 높으면 클라우드에 연결할 수 없는 경우 조직에서 AI 및 클라우드 분석을 에지로 가져올 수 있습니다.</p>
+
+
+  <p>보안은 기본적으로 IoT 디바이스가 항상 신뢰할 수 있는 양육권에 있지 않을 수 있기 때문에 에지에서 신뢰와 무결성에 매우 중요합니다. 따라서 지능형 에지 디바이스는 대부분의 IoT 디바이스보다 훨씬 &ldquo;더 스마트&rdquo; 합니다. IoT 디바이스의 일반적인 센서 및 액추에이터 클래스와 달리 매우 중요한 워크로드를 처리하여 똑같이 중요한 결과를 생성하므로 무결성, 개인 정보 보호 및 기밀성 같은 보안 목표를 강력하게 보호해야 합니다. 지능형 에지 및 에지 클래스 IoT 디바이스 이전에는 이러한 중요한 워크로드가 클라우드의 안전 내에서만 존재했습니다. 이러한 조직은 이러한 중요한 워크로드를 지능형 에지로 이동함에 따라 디바이스가 물리적으로 쉽게 액세스할 수 있는 경우가 많기 때문에 변조 및 위조와 같은 위협으로 인한 위험이 증가합니다. 이러한 위험을 줄이기 위해 조직이 에지 애플리케이션을 위한 신뢰할 수 있는 디바이스를 빌드할 수 있도록 보안이 높은 마이크로 컨트롤러 디바이스를 빌드하기 위한 솔루션인 <a href="https://azure.microsoft.com/en-us/blog/azure-sphere-is-here-public-preview-and-dev-kits-now-available/" target="_blank">Azure Sphere</a>를 만들었습니다.</p>
+
+
+  <p>그러나 IoT 디바이스는 다양한 하드웨어에서 파생되어 IoT 대상 문제에 대한 최적의 솔루션을 허용한다는 것을 알고 있습니다. 모든 에지 디바이스를 마이크로 컨트롤러에 빌드할 수 있는 것은 아닙니다. 즉, 조직은 Azure Sphere를 사용하여 빌드할 수 있는 것보다 더 다양한 디바이스가 필요합니다. 그 다양성으로, 불행하게도, 확장 된 위협 표면을 온다. 보안이 효과적이려면 대규모로 안전한 작업을 수행할 수 있도록 디바이스 간에 솔루션이 균일해야 합니다. 에지 디바이스의 다른 유형의 하드웨어 특성은 클라우드에 대응하는 것보다 매우 강력한 실사를 요구합니다. 클라우드와 마찬가지로 지능형 에지는 에지에서 작동하는 것과 관련된 새로운 위협을 포함하여 모든 위협을 해결하는 보안에 대한 강력한 입장이 필요합니다.</p>
+
+
+  <p>보안을 고려하여 지능형 에지에 대한 <a href="https://docs.microsoft.com/azure/iot-edge/security" target="_blank">보안 원칙의 견고한 기반을</a> 갖춘 Azure IoT Edge를 설계했습니다.&nbsp; 1년 전 파트너와 함께<a href="https://azure.microsoft.com/blog/securing-the-intelligent-edge/" target="_blank">, 우리는 이러한 원칙을 입증</a>하여 에지에서 가장 높은 보안을 달성하기 위한 모든 가능성을 열어주었지만, 우리는 거기서 멈추지 않았습니다. 신뢰 모듈의 하드웨어 루트를 생성하는 제조업체의 도메인 전문 지식을 활용하여 이 모델을 확장해야 했습니다. 또한 IoT 및 클라우드 애플리케이션 개발자를 보안 실리콘 하드웨어 작업의 복잡성과 뉘앙스에서 격리해야 했습니다. 일반적으로 HSM(하드웨어 <a href="https://docs.microsoft.com/azure/iot-edge/iot-edge-security-manager" target="_blank">보안</a> 모듈)으로도 알려진 안전한 실리콘에 디바이스의 ID 및 중요한 워크로드를 루팅하여 Azure IoT Edge 디바이스 및 해당 구성 요소를 보호하는 유일한 임무인 잘 바인딩된 신뢰할 수 있는 컴퓨팅 기반인 Azure IoT Edge 보안 관리자를 통해 두 가지 목표를 달성했습니다. Azure IoT Edge 보안 관리자는 표준 상용 상용 제품으로 다양한 OEM(Original Equipment Manufacturers)의 보안 에지 디바이스 가용성을 촉진했습니다. &rsquo;고객을 위해 보안 에지 디바이스의 가용성을 높이는 것에 만족하지만 지능&rsquo;형 에지의 보안을 강화하려는 계획은 아직 완료되지 않았습니다.</p>
+
+
+  <p>지능형 에지를 보호하기 위한 다음 임무는 모든 보안 문제, 특히 큰 과제에 대한 전문가 및 비 전문가의 보안 모범 사례에 대한 액세스를 간소화하는 것입니다. 지금까지 미사용 데이터와 전송 중인 데이터를 보호하는 기능은 보안 전문가의 유일한 지역으로 남아 있습니다. 다른 한편으로는, 그것은 일반적으로 비 전문가가 수행 한 작업 전문가를 활용할 수 있고 기술 공급 업체가 채택 한 것을 의미,&rdquo; 해결 된 문제로 간주됩니다&ldquo;. 그러나 지능형 에지로 부상하는 것은 에지에서 사용 중인 데이터를 보호해야 하는 필요성이며, 이는 전문가에게도 큰 과제입니다. 에지의 기밀 컴퓨팅은 오늘날&rsquo; 즉각적인 큰 보안 과제입니다. 이 솔루션은 보안에 대한 기준이 낮아지지 않고 문제를 해결하고 모든 애플리케이션 개발자, 보안 전문가 및 비 전문가 모두에게 올바른 도구를 사용하여 권한을 부여하는 것입니다.</p>
+
+
+  <p>두 달 전, Microsoft는 클라우드에서 에지까지 Enclave 기술 및 플랫폼에서 오픈 소스 일관된 API 표면인 <a href="https://openenclave.io/sdk/" target="_blank">Open Enclave SDK</a>를 출시했습니다. 즉, 개발자는 여러 Enclave에서 동일한 API를 사용할 수 있으므로 다음 모범 사례의 복잡성을 크게 줄이고 조직이 애플리케이션을 enclave와 통합하도록 장려할 수 있습니다. 이 버전에서 사용할 수 있는 기능은 Intel SGX(Software Extension Guard) 하드웨어 기술 및 Linux 운영 체제를 기반으로 하는 TEE 기술을 대상으로 하는 클라우드 워크로드용 Enclave 애플리케이션을 작성하는 기능이었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8455679a-bf29-4efa-8ee0-34ce3067eeaa.png"><img alt="Azure cloud computing services" border="0" height="458" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b216e403-d0fd-4677-868e-28d3631d01f0.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="Azure 클라우드 컴퓨팅 서비스" width="684"></a></p>
+
+
+  <p><em>그림 1. Open Enclave API 및 추상화가 Azure IoT Edge 기반 지능형 에지 시나리오에 적합한 위치를 보여 주는 클라우드 에지 일관성 있는 기밀 컴퓨팅 프레임워크의 아키텍처입니다. Open Enclave API는 TEE와 일반적으로 REE(리치 실행 환경)라고 하는 비 TEE 환경 간의 인터페이스를 제공합니다. Open Enclave API 아래에서 채택자는 Open Enclave SDK를 선택하거나 타사 제품에서 동등한 구현을 선택할 수 있습니다.</em></p>
+
+
+  <h2>기능</h2>
+
+
+  <h3>보안 실리콘 하드웨어 추상화</h3>
+
+
+  <p>Open Enclave는 보안 하드웨어의 복잡성과 뉘앙스에서 벗어나 개발자 환경을 추상화합니다. 즉, 개발자가 보안 하드웨어와 앱을 통합하는 방법을 더 쉽게 배울 수 있으며 개발자가 장치 간에 일관되게 안전한 소프트웨어를 쉽게 작성할 수 있습니다.</p>
+
+
+  <h3>친숙함을 위해 도구화됨</h3>
+
+
+  <p>개발자가 이미 익숙한 개발 환경에서 선택할 수 있도록 Windows 및 Linux용 GDB에 대한 Visual Studio 지원은 이제 사용할 수 있습니다.</p>
+
+
+  <h3>보다 풍부한 TA(신뢰할 수 있는 애플리케이션) 개발을 위한 TEE(신뢰할 수 있는 실행 환경) 에뮬레이션</h3>
+
+
+  <p>지금까지 Enclave 애플리케이션 또는 TA, 특히 에지 시나리오의 개발은 특정 TEE 하드웨어 제품에 대한 광범위한 경험을 가진 몇 명의 전문가의 유일한 도메인이었습니다. 개발은 하드웨어에 대한 액세스가 필요했고, 데이터 보호에 대한 노예화가 주어진 디버깅은 매우 어려웠습니다. &rsquo;TEE 하드웨어 전문가뿐만 아니라 모든 개발자가 친숙한 도구를 사용하여 하드웨어 없이 신뢰할 수 있는 애플리케이션을 개발하고 디버그할 수 있도록 TEE 에뮬레이션을 제공하여 이를 변경했습니다. 개발자는 한 번 개발하고 여러 TEE 하드웨어 기술 목표를 위해 컴파일할 수 있습니다.</p>
+
+
+  <h3>클라우드 에지 일관성 있는 기밀 컴퓨팅용으로 설계됨</h3>
+
+
+  <p>기밀 컴퓨팅 리소스는 클라우드와 에지에 대해 다르지만 클라우드 및 에지를 대상으로 하는 기밀 컴퓨팅 워크로드에 대한 개발 환경은 다를 필요가 없습니다. 단일 개발 환경에서 개발자는 <a href="https://azure.microsoft.com/solutions/confidential-compute/" target="_blank">Azure 기밀 컴퓨팅</a> 과 같은 클라우드 Enclave 및 TEE 지원 IoT Edge 디바이스에서 배포할 신뢰할 수 있는 애플리케이션을 만들 수 있습니다. 개발자는 에지 및 클라우드에서 사용 중인 동안 미사용, 비행 중 및 사용 중인 코드 및 데이터가 보호되는 애플리케이션에 대한 전체적인 보안을 만들 수 있습니다. 가까운 미래에는&rsquo; 대규모 글로벌 <a href="https://docs.microsoft.com/azure/iot-dps/about-iot-dps" target="_blank">프로비전 서비스인 Azure DPS(Device Provisioning Service)</a>를 활용하여 클라우드 및 에지에서 기밀 컴퓨팅 워크로드 및 신뢰할 수 있는 애플리케이션의 수명 주기를 지속적으로 프로비전하고 관리할 수 있습니다.</p>
+
+
+  <h3>풍부하고 다양한 파트너 에코시스템</h3>
+
+
+  <p>우리는 IoT의 보안이 커뮤니티 플레이라고 강력히 믿습니다. IoT 배포에는 디바이스 제조업체에서 솔루션 통합자 및 솔루션 백 엔드&mdash;에 대한 신뢰가&rsquo; 필요하므로 다양한 역할의 업계 리더와 협력하여 IoT 디바이스, 연결 및 클라우드에 대한 진정한 엔드투엔드 보안을 사용하도록 설정합니다.</p>
+
+
+  <table border="1" cellpadding="2">
+      <tbody>
+          <tr>
+              <td valign="top"><strong>기술</strong></td>
+              <td valign="top"><strong>실리콘 공급자</strong></td>
+              <td valign="top"><strong>원래 디자인 제조업체(ODM)</strong></td>
+              <td valign="top"><strong>OEM(원본 장비 제조업체)</strong></td>
+              <td valign="top"><strong>ISV(독립 소프트웨어 공급업체)</strong></td>
+              <td valign="top"><strong>대량 생산 &amp; 분포</strong></td>
+          </tr>
+          <tr>
+              <td valign="top"><strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f7915a9b-65f5-4428-a52f-b3c98725e88f.png"><img alt="ARM logo" border="0" height="27" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6f98544d-f2da-448f-8fc4-1c4019c04929.png" style="margin: 22px auto 0px; border: 0px currentcolor; display: block; background-image: none;" title="ARM 로고" width="87"></a></strong></td>
+              <td valign="top"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/df4c595e-a07f-4f44-85da-a3a27678b003.png"><img alt="image" border="0" height="43" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b7c539f1-5070-43fb-ab73-768beb197cd0.png" style="margin: 12px auto 0px; border: 0px currentcolor; display: block; background-image: none;" title="이미지" width="81"></a></td>
+              <td valign="top"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d4fa8b38-b3d3-4931-9bde-ad7e7d4703c7.png"><img alt="image" border="0" height="23" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1efcd0d3-794a-4c87-aece-8549dac0cdf6.png" style="margin: 24px auto 0px; border: 0px currentcolor; display: block; background-image: none;" title="이미지" width="121"></a></td>
+              <td valign="top"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ebd1dbb-8969-4222-a597-ba2f17fc0074.png"><img alt="image" border="0" height="70" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ea18d2e8-3b2b-4a6b-87a7-a0e0adf18c90.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="이미지" width="127"></a></td>
+              <td valign="top"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bed783c4-ea3b-4602-a8d9-e7a80941db76.png"><img alt="image" border="0" height="68" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c2e16692-e6c5-46ce-bf3b-0955026735f4.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="이미지" width="68"></a></td>
+              <td valign="top"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8f1b06f4-22ff-4bff-bf16-7720d98b63aa.png"><img alt="image" border="0" height="21" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1f9ffca2-9e7c-4150-a557-f2e69bce0712.png" style="margin: 24px auto 0px; border: 0px currentcolor; display: block; background-image: none;" title="이미지" width="97"></a></td>
+          </tr>
+          <tr>
+              <td valign="top"><strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ed86e168-b323-46d4-802a-8c29de15a8dc.png"><img alt="Intel logo" border="0" height="55" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd549c86-7e1e-42db-a558-ba382e6cea2a.png" style="margin: 13px auto 0px; border: 0px currentcolor; display: block; background-image: none;" title="Intel 로고" width="83"></a></strong></td>
+              <td valign="top"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cdb89f4c-4c4a-47bb-ae8e-369246817d9a.png"><img alt="image" border="0" height="36" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aab2a44c-0c0c-4bf0-b864-77785bb8fc2a.png" style="margin: 25px auto 0px; border: 0px currentcolor; display: block; background-image: none;" title="이미지" width="67"></a></td>
+              <td valign="top"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ddb7fe1-44ac-429b-8c0e-35c5293b8e5d.png"><img alt="image" border="0" height="30" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a007280-d540-4ee5-b9b9-de359167af93.png" style="margin: 30px auto 0px; border: 0px currentcolor; display: block; background-image: none;" title="이미지" width="131"></a></td>
+              <td valign="top">
+              <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0838e44d-372b-4216-978b-07a63c3c4a5c.png"><img alt="Hewlett_Packard_Enterprise_logo" border="0" height="45" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cdedbd9c-6a8c-45f5-89ad-96a948c95d65.png" style="margin: 17px auto 0px; border: 0px currentcolor; display: block; background-image: none;" title="Hewlett_Packard_Enterprise_logo" width="108"></a></p>
+              </td>
+              <td valign="top">&nbsp;&nbsp; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/89b85eb3-e3f8-40aa-99df-7c0777e85f2c.png"><img alt="wolf ssl-logo-shadow-1" border="0" height="67" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/742c131e-07b6-4547-bff4-eb162b42bddf.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="wolf ssl-logo-shadow-1" width="86"></a></td>
+              <td valign="top">&nbsp;</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h3>Azure IoT Edge를 사용하는 기밀 컴퓨팅의 애플리케이션 가능성</h3>
+
+
+  <p>open Enclave를 사용하는 Azure IoT Edge는 기밀 컴퓨팅을 사용하여 이전에는 분리하기가 매우 어려웠던 보안 문제에 대한 솔루션을 제공합니다. 실제로 비즈니스 기능을 제공하는 실행 파일을 보호하는 데 달려 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e051697e-8372-4e83-8a24-34ed35b01dac.png"><img alt="image" border="0" height="566" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4494ed38-013b-4aaa-b17f-07edf18eeda5.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="이미지" width="647"></a></p>
+
+
+  <h2>TrustBox &ndash; 평가에서 대량 생산으로의 최적의 경로</h2>
+
+
+  <p>조직은 지능형 에지에 대해 알아보고 프로젝트를 시작할 때 예기치 않은 보안 및 규정 준수 과제로 인해 속도가 느려지는 경우가 많습니다. 이에 대응하여 파트너와 협력하여 프로젝트 평가에서 프로덕션으로의 여정을 단축하고 있습니다. 지금까지 일반적인 환경은 Arduino 기반 보드 또는 Raspberry Pis와 같은 많은 상업적으로 사용 가능한 프로토타입 보드를 사용하여 평가하고 실험하는 개발자를 수반합니다. 아쉽게도 개발자가 프로덕션으로 전환할 때 업계에 필요한 보안 및 규정 준수 표준을 충족할 수 있는 솔루션으로 보드를 전환해야 합니다. 나중에 보드를 전환하는 대신 개발자는 규정 준수 목표를 충족하면서 나중에 파일럿 및 프로덕션 요구 사항을 충족할 수 있는 보드로 평가를 시작해야 합니다.</p>
+
+
+  <p><a href="https://www.scalys.com/trustbox" target="_blank">TrustBox</a> 는 하드웨어 신뢰 루트, 암호화 가속기 및 네트워크 가속을 통합하는 NXP Layerscape LS1012A 네트워킹 프로세서를 기반으로 하는 고급 보안 라우터 및 IoT 게이트웨이를 제공하여 프로덕션 보드에 대한 프로토타입 요구 사항을 해결하는 한 가지 옵션입니다. 보안 엔지니어링과 신중한 구성 요소 선택에 따라 TrustBox는 최고 수준의 업계 및 보안 표준으로 인증할 수 있습니다. TrustBox는 <a href="https://www.ces.tech/Events-Programs/Innovation-Awards/honorees.aspx#prettyPhoto/16/" target="_blank">2019 CES Best of Innovations: 사이버 보안 및 개인 정보 보호</a> 상을 수상했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7203f4d5-e272-478f-b0a1-1af56dc22c94.jpg"><img alt="TrustBox" border="0" height="415" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a019942f-439e-4064-9e66-8f785615225f.jpg" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="TrustBox" width="448"></a></p>
+
+
+  <p><em>그림 2: 신뢰 및 암호화 가속기의 &amp; 하드웨어 루트인 NXPS Layerscape 제품군의&rsquo; 멤버인 NXP Layerscape LS1012A를 기반으로 하는 고급 보안 라우터 IoT 게이트웨이인 TrustBox입니다. TrustBox는 평가, 파일럿 및 프로덕션 실행을 위해 Scalys를 통해 있는 그대로 사용 가능하거나 사용자 지정할 수 있습니다.</em></p>
+
+
+  <p>평가판의 가용성은 보드를 사용자 지정해야 하는 경우 어려울 수 있는 대량 생산 단계 중 하나일 뿐입니다. 이를 위해 NXP, Scalys 및 Arrow Electronics와 협력하여 통합 회로에서 최종 배포까지 완벽한 공급망의 예를 제공했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ced3964d-20a3-436c-8822-2e0c09b18b27.png"><img alt="The supply chain for TrustBox" border="0" height="71" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/60486f33-6d34-421b-96c9-35576d3a3bff.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="TrustBox의 공급망" width="628"></a></p>
+
+
+  <p><em>그림 3: 이제 모든 Enclave 보안 디바이스에 사용할 수 있는 TrustBox의 공급망에는 평가 및 파일럿 실행, 하드웨어 사용자 지정 및 대량 생산을 위한 소싱이 포함되어야 합니다. 이것은 많은 가능성 중 하나일 뿐입니다. </em></p>
+
+
+  <p>Scalys TrustBox는 2019년 2월부터 출시될 예정이며, 지금 <a href="https://www.scalys.com/trustbox" target="_blank">Scalys에서 예약 주문</a> 할 수 있습니다. TrustBox의 상용 등급 전기 등급인 <a href="https://www.grapeboard.com/" target="_blank">Grapeboard</a>를 사용하여 지금 평가를 시작할 수도 있습니다.</p>
+
+
+  <h2>다음 내용&rsquo;</h2>
+
+
+  <p>IoT Edge와 Open Enclave 통합 미리 보기의 한 가지 목표는 OEM(Original Equipment Manufacturers)의 하드웨어 중심 개발을 AVAILING TEE 지원 디바이스로 전환하는 것입니다. 향후 몇 개월 내에 현재 사용할 수 있는 동일한 플랫폼에 구애받지 않는 개발자 및 배포 환경을 제공할 TEE 지원 Azure IoT Edge 인증 디바이스의 가용성을 예상합니다. 이 때 개발자는 구체화된 TA 수명 주기 관리 기능을 기대할 수도 있습니다. 그때까지 개발자 미리 보기에는 잘 문서화된 플랫폼별 설치 스크립트가 포함됩니다.</p>
+
+
+  <p>가장자리에 대한 노예 기술은 은행 및 정부와 같은 틈새 산업에서 수년 동안 주변되었습니다. 지금까지 기술에 대한 액세스는 특정 TEE 하드웨어 및 노예 기술에 대한 깊은 전문 지식을 가진 소수의 사람들로 제한되었습니다. 현재 파트너와&rsquo; 협력하여 에지에서 신뢰할 수 있는 애플리케이션 개발을 간소화하는 플랫폼을 제공하므로 이 권한을 에지 및 클라우드 애플리케이션 개발자에게 모든 기능을 확장할 수 있습니다. 새로 확장된 리포지토리의 다양한 구성 요소에 대한 오픈 소싱이 오늘 시작됩니다.</p>
+
+
+  <ul>
+      <li>enclave 작업에 대한 개요 <a href="https://aka.ms/openenclave-overview" target="_blank">를 가져옵니다</a>.</li>
+      <li><a href="https://www.grapeboard.com/" target="_blank">이제 Grapeboard</a>를 사용하여 <a href="https://aka.ms/openenclave-grapeboard" target="_blank">ARM TrustZone&reg;의 Linux</a>를 시작합니다.</li>
+      <li><a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fark.intel.com%2Fproducts%2F95069%2FIntel-NUC-Kit-NUC7i3BNK&amp;data=02%7C01%7Cv-canmo%40microsoft.com%7C30113372134a44d1df5208d64c19e559%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636780071436840205&amp;sdata=mKy9lmIT9VnMUDoIAeiyfgoDcgan096k18ZUid7%2BSBE%3D&amp;reserved=0" target="_blank">Intel NUC7i3BNK</a>를 사용하여 <a href="https://aka.ms/openenclave-nuc" target="_blank">Intel SGX에서 Windows OS</a>를 시작합니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/iot-edge/" target="_blank">Azure IoT Edge</a>를 사용하여 지능형 에지 애플리케이션을 개발하는 방법에 대해 자세히 알아봅니다.</li>
+      <li>www.openenclave.io 열린 enclave에 대해 자세히 알아보세요.</li>
+  </ul>

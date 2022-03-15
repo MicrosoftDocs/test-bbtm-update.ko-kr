@@ -1,0 +1,285 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2e3ffdf1530d1116d88193d142932825258ee84a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907310"
+Slug: azure-networking-fall-2018-update
+Title: Azure 네트워킹 2018년 가을 업데이트
+Summary: 기업이 점점 더 까다로운 중요 업무용 워크로드를 클라우드로 이동함에 따라, 우리는 쉽게 배포, 관리, 크기 조정 및 모니터링할 수 있는 포괄적인 네트워킹 서비스를 제공하기 위해 노력하고 있습니다.
+Content: >-
+  <h3>발표: 100Gbps, 퍼블릭 클라우드에서 가장 빠른 연결 및 분기 연결의 가용성, 새로운 클라우드 네이티브 보안 기능 및 애플리케이션 성능 서비스</h3>
+
+
+  <p>기업이 점점 더 까다로운 중요 업무용 워크로드를 클라우드로 이동함에 따라, 우리는 쉽게 배포, 관리, 크기 조정 및 모니터링할 수 있는 포괄적인 네트워킹 서비스를 제공하기 위해 노력하고 있습니다. 고객은 클라우드에 연결하는 더 나은 방법, 클라우드 워크로드의 더 나은 보호, 최적의 애플리케이션 성능 제공 및 보다 포괄적인 모니터링 서비스를 계속 요구합니다.</p>
+
+
+  <p>커넥트 방법에 대해 고객은 고급 분석 및 기계 학습을 활용하기 위해 대량의 데이터를 클라우드로 전송하는 데 어려움을 겪으면서 훨씬 더 높은 대역폭 솔루션을 요청했습니다. SDWAN(소프트웨어 정의 광역 네트워킹)은 인터넷에 더 많은 트래픽을 지능적으로 라우팅하고 고객이 지사에 대한 연결을 더 잘 관리할 수 있도록 지원하여 비용을 절감할 것을 약속합니다. 가상 데이터 센터의 개념은 보류되었지만 글로벌 규모로 이러한 솔루션을 구축하는 것은 여전히 어려운 일입니다. 54개 이상의 Azure 지역 등을 통해 글로벌 네트워크가 계속해서 새로운 위치로 확장되는 동시에 전체 용량을 늘릴 수 있습니다. 고객은 글로벌 WAN을 활용하는 새로운 방법을 요청했습니다. 가상 <em><strong>네트워크</strong></em> 및 <em><strong>DNS</strong></em>에 대한 향상된 기능과 함께 <strong><em>ExpressRoute 100Gbps Direct</em></strong>, <em><strong>ExpressRoute Global Reach</strong></em> 및 <strong><em>Azure Virtual WAN</em></strong>의 일반 공급에 대해 발표합니다.</p>
+
+
+  <p>기업이 중요 업무용 워크로드를 <strong>보호</strong> 해야 함에 따라 보안은 항상 최우선 순위입니다. 악의적인 의도로부터 애플리케이션을 보호하는 것은 중요하며 모든 리소스에 대한 모든 액세스 제어가 중요합니다. 클라우드는 제로 트러스트 보안 상태뿐만 아니라 보안을 관리하기 위한 DevOps 모델을 수용하는 데 도움이 될 수 있습니다. 클라우드 네이티브 솔루션을 사용하면 보안 정책의 크기 조정, 관리 및 이해가 훨씬 쉬워집니다. <em><strong>DDoS 보호</strong></em> 및 웹 애플리케이션 방화벽의 향상된 기능과 함께 <em><strong>Azure Firewall</strong></em> GA의 일반 공급이 발표됩니다.</p>
+
+
+  <p>애플리케이션 성능, 가용성 및 복원력은 글로벌 및 지역 워크로드를 모두 <strong>제공하는</strong> 데에도 중요합니다. 클라우드는 다양한 유형의 트래픽 패턴을 동적으로 처리하는 애플리케이션 확장성을 해결하기 위해 기본적으로 설계되었습니다. Azure를 글로벌 네트워크와 결합하면 자연스럽게 Bing, Office 365 및 Xbox와 같은 Microsoft 서비스 가속화할 수 있을 뿐만 아니라 애플리케이션을 가속화할 수도 있습니다. <em><strong>Application Gateway</strong></em> 및 <strong><em>Traffic Manager</em></strong> 향상된 기능과 함께 <strong><em>Azure CDN</em></strong> 일반 공급인<strong><em> Azure Front Door</em></strong> Preview를 발표합니다.</p>
+
+
+  <p>DevOps 모델을 사용하려면 팀이 애플리케이션의 상태 및 성능을 <strong>모니터링</strong>해야 합니다. 클라우드는 서비스에 대한 더 나은 인사이트를 제공하여 측정, 문제 해결, 경고 및 조치를 수행할 수 있습니다. Azure 24x7x365를 실행하면서 우리는 엄청난 운영 경험을 가지고 있으며, 자체 운영 팀에 가해지는 압력과 세계적 수준의 환경을 제공하기 위한 모니터링 요구 사항을 완전히 이해합니다. Network Watcher의 향상된 기능과 함께 <em><strong>Virtual Network TAP</strong></em> 의 미리 보기를 발표합니다.</p>
+
+
+  <p>다음은 클라우드에 연결하고, 워크로드를 보호하고, 최적의 성능을 제공하고, 서비스를 모니터링하는 데 도움이 되는 기존 서비스에 대한 새로운 네트워킹 서비스 및 향상된 기능의 요약입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9bb4d1b7-11ff-448f-a8e6-f2e3222dc75c.png"><img alt="Networking enhancement diagram" border="0" height="351" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ed00c79a-adeb-4608-be60-87d0d7edf342.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="네트워킹 향상 다이어그램" width="640"></a></p>
+
+
+  <p align="center"><em>Azure를 사용하면 서비스를 커넥트, 보호, 제공 및 모니터링할 수 있습니다.</em></p>
+
+
+  <h2>연결</h2>
+
+
+  <h3>10배 빠른 &ndash; ExpressRoute Direct 100Gbps 연결</h3>
+
+
+  <p>Azure는 클라우드 연결의 속도 장벽을 허물고 있습니다. ExpressRoute Direct는 극단적인 대역폭 요구 사항이 있는 고객을 위해 100G 연결을 제공합니다. <em>이는 다른 클라우드보다 10배 더 빠릅니다</em>. Enterprise 고객은 원격 분석, 콘텐츠 배포 및 IoT와 같은 대규모 데이터 수집 시나리오를 제공합니다. ExpressRoute Direct를 사용하면 Azure Storage 및 Azure Virtual Network와 같은 Azure 서비스에 100Gbps의 네트워크 트래픽을 보낼 수 있습니다. 모든 트래픽은 단일 100G ExpressRoute 회로에 있거나 40G, 10G, 5G, 2G 및 1G ExpressRoute 회로의 조합으로 사업부 간에 100G를 세분화할 수 있습니다. 기본적으로 이러한 회로는 동일한 지리적 지역(예: 북아메리카, 유럽, 오스트레일리아, 일본 등)에 있는 모든 Azure 지역에 연결을 제공하는 ExpressRoute 표준 회로입니다. 전역 연결을 제공하는 ExpressRoute Premium 회로로 회로를 지정할 수도 있습니다. 이러한 유연성을 통해 특정 사업부의 요구 사항을 해결할 수 있습니다. 예를 들어 한 사업부에서 40G ExpressRoute 표준 회로를 사용하여 로컬 Azure 지역 내의 서비스에 액세스하려면 높은 대역폭이 필요할 수 있습니다. 다른 사업부에는 2G 글로벌 연결이 필요할 수 있으므로 2G ExpressRoute Premium 회로를 사용합니다. 당신은 결정합니다. ExpressRoute는 ExpressRoute와 같은 중요 업무용 워크로드용이므로 활성-활성 구성에서 두 개의 물리적 라우터를 통해 물리적 연결을 제공합니다. <a href="https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about" target="_blank">ExpressRoute Direct</a>에 대해 자세히 알아보기</p>
+
+
+  <h3>사이트를 비공개로 연결하는 ExpressRoute Global Reach &ndash;</h3>
+
+
+  <p>ExpressRoute Global Reach를 사용하면 두 ExpressRoute 회로를 함께 연결할 수 있습니다. ExpressRoute에 이미 연결된 사이트는 이제 ExpressRoute 회로를 통해 데이터를 비공개로 교환할 수 있습니다. 예를 들어, 각각 ExpressRoute 회로가 있는 런던과 도쿄에 데이터 센터가 있는 다국적 기업은 ExpressRoute Global Reach를 사용하도록 설정하여 이러한 사이트가 로컬 ExpressRoute 회로 및 Microsofts&rsquo; 글로벌 네트워크를 사용하여 서로 트래픽을 비공개로 보낼 수 있습니다. ExpressRoute Global Reach는 ExpressRoute 표준 및 ExpressRoute Premium 회로 모두에서 사용하도록 설정할 수 있습니다. ExpressRoute Global Reach는 홍콩, 아일랜드, 일본, 네덜란드, 영국, 미국, 한국 및 싱가포르에서 사용할 수 있습니다. 더 많은 위치는 올해 말에 사용할 수 있습니다. <a href="https://docs.microsoft.com/azure/expressroute/expressroute-global-reach" target="_blank">ExpressRoute Global Reach</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <h3>Virtual WAN 일반 공급</h3>
+
+
+  <p><strong>20Gbps S2S 연결, 새로운 기능 및 성장하는 파트너 에코시스템</strong></p>
+
+
+  <p>&rsquo;VPN 서비스에 연결하는 50개 또는 100개의 지점 디바이스를 관리하는 것은 매우 어려운 일입니다. 올 여름, 인터넷을 통해 분기와 분기 간 시나리오에 대한 대규모 분기 연결을 간소화하는 Azure Virtual WAN을 도입했습니다. SDWAN을 활용하여 지사를 Azure와 서로 연결하려는 대형 소매, 의료, 제조, 석유 및 가스 고객을 포함한 기업용 Virtual WAN을 설계했습니다. Virtual WAN 에코시스템에서 제공하는 SDWAN 및 VPN 디바이스를 사용하면 자동화된 프로비전, 구성, 확장성 및 높은 처리량을 얻을 수 있습니다. Virtual WAN은 최대 20Gbps 분기 연결을 지원합니다. 이는 VPN 게이트웨이의 20배 향상된 기능입니다. 이제 분기 연결을 관리할 수 있게 되었습니다. 이제 Virtual WAN이 일반 공급됩니다.</p>
+
+
+  <p>Microsoft는 Office 365 고객이 로컬 인터넷 중단을 사용하여 가능한 한 빨리 Microsofts&rsquo; 글로벌 네트워크에 접속하고 Office 365 분산 에지 노드 에코시스템을 활용하는 <a href="https://aka.ms/pnc" target="_blank">것이 좋습니다</a>. 고객 네트워크 디자인의 주요 목표는 가장 가까운 Office 365 프런트 도어에 대한 대기 시간을 최적화하고 고객&rsquo; 개인 네트워크에서 Office 365 요청의 모발 고정을 최소화하는 것입니다. 중앙 위치로 백하울링하거나 트래픽 인터넷 검색을 제공하는 다른 클라우드 서비스를 통해 연결을 라우팅하는 대신<a href="https://aka.ms/ipurlblog" target="_blank">, 키 Office 365 트래픽</a>은 가능한 한 로컬로 인터넷을 사용하여 사용자 위치(분기)로, 그리고 Microsoft 네트워크로 직접 송신할 수 있어야 합니다. 이 접근 방식을 로컬 및 직접 인터넷 중단이라고 하며 고객이 정책으로 지정한 선택한 애플리케이션에 대해 수행하는 경우가 많습니다. 고객은 <a href="https://aka.ms/ipurlws" target="_blank">웹 서비스를</a> 사용하거나 정규화된 파트너의 SD-WAN 솔루션을 사용하여 분기 라우팅 정책을 자동화하여 Office 365 서비스에 대한 로컬 및 직접 인터넷 중단을 구현할 수 있습니다. Azure Virtual WAN 고객은 Azure Portal에서 Office 365 인터넷 중단 정책을 구성하고 해당 정책을 지점의 지원되는 SD-WAN 디바이스로 푸시할 수 있습니다. 이렇게 하면 최적의 최종 사용자 환경을 제공하는 키 Office 365 흐름의 로컬 및 직접 인터넷 이스케이프가 보장됩니다.</p>
+
+
+  <p>Virtual WAN 에코시스템은 계속 성장하고 있습니다. Citrix 및 Riverbed 외에도 Virtual WAN 솔루션은 이제 <a href="https://www.128technology.com/partners/azure" target="_blank"><strong>128 Technology</strong></a><strong>, </strong><a href="https://www.barracuda.com/AzurevWAN" target="_blank"><strong>Barracuda</strong></a><strong>, </strong><a href="https://www.checkpoint.com/solutions/microsoft-azure-virtual-wan/" target="_blank"><strong>Check Point</strong></a><strong>, </strong><a href="https://netfoundry.io/azurevirtualwan/" target="_blank"><strong>NetFoundry</strong></a> <strong>및 </strong><a href="https://researchcenter.paloaltonetworks.com/2018/09/azure-vwan-integration/" target="_blank"><strong>Palo Alto</strong></a>에서 사용할 수 있습니다. 곧 <strong>CloudGenix, Nuage Networks, Silver Peak, Versa Networks 및 VeloCloud</strong>에서 Virtual WAN 솔루션을 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f3a4bc68-a4d1-45f5-a8f5-b40d10436771.png"><img alt="VeloCloud quote" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3e8c7360-0ff7-4e1b-aeeb-8fb19e5a1a32.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="VeloCloud 견적" width="573"></a></p>
+
+
+  <p align="center"><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb297ad4-7195-41f4-8b68-77677869b503.png"><img alt="vwan partners updated 2" border="0" height="376" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/302f1114-2df9-4cdf-8b1d-12cfe9dd8b8f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="vwan 파트너 업데이트 2" width="783"></a></em></p>
+
+
+  <p align="center"><em>Azure Virtual WAN 에코시스템</em></p>
+
+
+  <p>새로운 Virtual WAN 미리 보기 기능에는 P2S VPN 및 ExpressRoute가 포함됩니다. P2S VPN을 사용하면 OpenVPN 클라이언트를 사용하여 Virtual WAN에 연결할 수 있습니다. 이를 통해 모바일 작업자는 이동하거나 집에서 작업하는 동안 노트북 및 모바일 장치에서 Virtual WAN을 통해 리소스에 안전하게 액세스할 수 있습니다. Azure P2S VPN은 Azure Virtual WAN에서 사용할 수 있으며 처리량이 18 Gpbs인 Virtual WAN 허브당 최대 10,000명의 동시 원격 사용자를 지원할 수 있습니다.</p>
+
+
+  <p>ExpressRoute를 Virtual WAN의 일부로 사용하면 분기가 인터넷을 사용하여 Virtual WAN에 안전하게 액세스한 다음 해당 트래픽이 ExpressRoute에 연결된 데이터 센터로 비공개로 이동하도록 할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cb23490a-ee57-4ea3-bf67-7048749592d5.png"><img alt="Azure Virtual WAN simplifies all your connectivity" border="0" height="405" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/69123ce6-712c-4d81-95f2-ac2769441ac4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Virtual WAN은 모든 연결을 간소화합니다." width="640"></a></p>
+
+
+  <p align="center"><em>Azure Virtual WAN은 모든 연결을 간소화합니다.</em></p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/virtual-wan/" target="_blank">Virtual WAN</a>에 대한 자세한 정보.</p>
+
+
+  <h3>VPN 및 ExpressRoute Virtual Network 게이트웨이 Zone-Redundant</h3>
+
+
+  <p>많은 고객이 VPN 및 ExpressRoute를 사용하여 Virtual Network에 액세스합니다. 게이트웨이의 복원력, 확장성 및 가용성을 개선하기 위해 이제 Azure 가용성 영역을 지원하는 새로운 영역 중복 VPN 및 ExpressRoute 게이트웨이가 있습니다. 이러한 새로운 영역 중복/영역 게이트웨이를 사용하면 Azure 가용성 영역에 Azure VPN 및 Azure ExpressRoute 게이트웨이를 배포할 수 있으므로 영역 수준 오류로부터 Azure에 대한 온-프레미스 네트워크 연결을 보호하기 위해 지역 내에서 물리적으로 논리적으로 분리할 수 있습니다. 또한 이러한 게이트웨이의 배포 시간도 단축되었습니다. 영역 중복 게이트웨이에 대한 자세한 내용은 <a href="https://docs.microsoft.com/azure/vpn-gateway/create-zone-redundant-vnet-gateway" target="_blank">설명서를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8113b32e-1382-4985-9d6e-15646d7821a9.png"><img alt="Zone redundant gateways provide better resiliency" border="0" height="326" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f61f3d26-a3b5-4e28-a08b-d658e87fbd7d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="영역 중복 게이트웨이는 더 나은 복원력을 제공합니다." width="640"></a></p>
+
+
+  <p align="center"><em>영역 중복 게이트웨이는 더 나은 복원력을 제공합니다.</em></p>
+
+
+  <h3>공용 IP 접두사</h3>
+
+
+  <p>공용 IP 접두사는 알려진 고정 범위의 공용 IP 주소와 Azure 리소스를 연결할 수 있도록 하는 Azure 공용 엔드포인트에 대한 IP 주소의 연속 범위입니다. 이렇게 하면 새 리소스에 IP 주소를 할당할 때 방화벽 규칙을 변경할 필요가 없어 관리 오버헤드가 크게 줄어듭니다. 미리 보기를 시작하고 <a href="https://aka.ms/publicipprefix" target="_blank">공용 IP 접두</a>사에 대해 자세히 알아보세요.</p>
+
+
+  <h3>유휴 상태의 부하 분산 장치 &ndash; 아웃바운드 규칙 및 TCP 재설정</h3>
+
+
+  <p>아웃바운드 규칙을 사용하면 공용 Load Balancer&#39;풀 기반 NAT(아웃바운드 네트워크 주소 변환)를 간단하게 구성할 수 있습니다. 선언적 구성을 사용하여 아웃바운드 구성의 크기를 조정하고 특정 요구 사항에 맞게 조정할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/764f6d4f-08ea-4095-aca9-5345123a24f0.png"><img alt="Simple load balancer configuration" border="0" height="417" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a2fd9d43-34ad-4e32-a3df-93b2cc55c41b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="간단한 부하 분산 장치 구성" width="640"></a></p>
+
+
+  <p align="center"><em>간단한 부하 분산 장치 구성</em></p>
+
+
+  <p>아웃바운드 규칙은 어떤 가상 머신 풀을 어떤 공용 IP 주소로 변환해야 하는지, 할당할 아웃바운드 SNAT 포트 수를 설명하고 아웃바운드 유휴 시간 제한을 변경합니다.&nbsp; 공용 IP 접두사로 아웃바운드 규칙을 사용하여 허용 목록을 간소화할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-rules-overview" target="_blank">자세한 내용은 아웃바운드 규칙을 검토합니다</a>.</p>
+
+
+  <p>애플리케이션을 변경하지 않고 클린 연결 릴리스에 대한 모든 규칙에서 유휴 상태에서 TCP 재설정을 사용하도록 설정하여 애플리케이션 성능을 최적화할 수 있습니다. 사용하도록 설정하면 TCP 재설정 패킷이 유휴 시간 제한 시 클라이언트 및 서버 엔드포인트 모두에 전송됩니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-tcp-reset" target="_blank">유휴 시간 제한 시 TCP 재설정을 사용하여 Load Balancer</a> 를 검토합니다.</p>
+
+
+  <h3>컨테이너용 Virtual Network</h3>
+
+
+  <p>Azure CNI(Container Networking Interface) 플러그 인은 컨테이너를 VNet에 연결합니다. Azure VM을 구동하는 동일한 SDN 스택을 활용하여 풍부한 Azure 네트워킹 기능 집합을 컨테이너에 제공합니다. 이제 컨테이너는 ExpressRoute 또는 사이트 간 VPN을 통해 피어된 VNet 및 온-프레미스에 연결하고 VNet 서비스 엔드포인트로 보호되는 Storage 및 SQL 같은 서비스에 액세스할 수 있습니다. NSG(네트워크 보안 그룹) 및 UDR(사용자 정의 라우팅) 규칙을 컨테이너에 직접 적용할 수 있습니다.</p>
+
+
+  <p>Azure CNI는 Azure Kubernetes Service에서 활용됩니다. 또한 향상된 SDN 스택을 활용하여 컨테이너를 고객 VNet에 빠르고 안전하게 주입하는 Azure Container Instance Service 및 App Services용 Azure WebApps에 통합됩니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/container-networking-overview">설명서를</a> 참조하세요.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+  <h3>Azure DNS에 대한 별칭(참조) 레코드 지원</h3>
+
+
+  <p>Azure DNS 고객은 때때로 DNS 영역 내에서 Azure 리소스의 수명 주기를 추적하는 데 문제가 있습니다. 예를 들어 애플리케이션과 연결된 공용 IP 리소스가 삭제되면 고객은 트래픽을 차단할 수 있는 현수 참조를 방지하기 위해 DNS 영역을 수동으로 업데이트해야 했습니다. DNS 영역에 대한 별칭 레코드에 대한 지원을 발표합니다. 이를 통해 고객은 참조된 Azure 리소스에 수명 주기 이벤트가 있을 때 DNS 레코드가 자동으로 업데이트되도록 DNS 영역 내에서 다른 Azure 리소스를 참조할 수 있습니다. 두 Azure 리소스 공용 IP에 대한 별칭 레코드 참조를 지원하고 향후 더 많은 리소스 &ndash; 가 계획되어 있는 Azure Traffic Manager &ndash; 지원합니다. Azure DNS 내의 별칭 레코드 지원에 대한 자세한 내용은 <a href="https://aka.ms/dnsaliasblog" target="_blank">이 블로그 게시물을</a> 참조하세요.</p>
+
+
+  <h2>보호</h2>
+
+
+  <h3>Azure Firewall &ndash; 일반 공급, 새로운 기능</h3>
+
+
+  <p>현재 GA인 Azure Firewall은 VNet 리소스에 대한 완전한 상태 저장 네트워크 및 애플리케이션 수준 트래픽 필터링을 제공하며, 기본 제공 고가용성 및 클라우드 확장성이 서비스로 제공됩니다. 고객은 아웃바운드, 인바운드, 스포크 스포크, VPN 및 ExpressRoute 트래픽을 필터링하여 VNet을 보호할 수 있습니다. 연결 정책 적용은 여러 VNet 및 Azure 구독에서 지원됩니다. Azure Monitor를 사용하여 중앙 집중식 로깅을 사용하면 스토리지 계정에 로그를 보관하거나, 이벤트 허브로 이벤트를 스트리밍하거나, Log Analytics 또는 선택한 SIEM으로 보낼 수 있습니다. Azure Firewall은 잘 알려진 Microsoft 서비스(예: ASE, Azure Backup 및 Windows 업데이트) 및 대상 NAT 구성에 대한 트래픽을 허용하는 FQDN 태그를 지원합니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/firewall" target="_blank">Azure Firewall 설명서를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/75331e89-cf1b-4ad0-9c9c-d33cd5638784.png"><img alt="ABN AMRO quote" border="0" height="347" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6507ffd4-1dfc-4cf2-9f8f-16417110f069.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ABN AMRO 견적" width="526"></a></p>
+
+
+  <p>파트너 에코시스템과 협력하여 Azure Firewall 공용 REST API를 사용하여 SaaS 기반 보안 정책 관리 기능을 제공하고 있습니다. 솔루션은 <strong>Barracuda</strong> 및 <strong>AlgoSec AlgoSaaS</strong>를 사용한 중앙 관리, <strong>Tufin Orca</strong>를 사용하는 컨테이너 AKS(Azure Kubernetes Service)에 대한 보안 정책 관리를 포함하여 올해 말 미리 보기로 제공됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/73111d2f-98a4-4479-85ef-eed58d7f5632.png"><img alt="Azure Firewall ecosystem" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7343f73-78a3-485c-b0ac-b3c9047d1b18.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Firewall 에코시스템" width="654"></a></p>
+
+
+  <p align="center"><em>Azure Firewall 에코시스템 성장</em></p>
+
+
+  <h3>DDoS Protection 공격 분석</h3>
+
+
+  <p>DDoS 공격의 정교함과 빈도는 계속 증가하여 5개 기업 중 거의 2개에 도달했습니다. DDoS 공격으로 인해 서비스 중단이 발생합니다. 메가 DDoS 공격을 시작하기 위해 봇넷으로 무기화된 손상된 IoT 디바이스가 확산됨에 따라 해커는 사악한 목표를 달성할 준비가 잘 되어 있습니다. <a href="https://azure.microsoft.com/en-us/services/ddos-protection/" target="_blank">Azure DDoS Protection</a> 은 정교한 DDoS 위협에 대한 대책을 제공합니다.</p>
+
+
+  <p>Azure DDoS Protection에 대한 세 가지 새로운 기능인 공격 완화 보고서, 공격 완화 Flow 로그 및 DDoS 신속한 대응의 일반 공급이 발표됩니다. Azure DDoS Protection을 사용하여 DDoS 공격으로부터 가상 네트워크를 보호하는 고객은 Azure Monitor의 진단 설정을 통해 공격을 완화하기 위해 수행된 공격 트래픽 및 작업에 대한 자세한 가시성을 얻을 수 있습니다. DDoS 신속한 대응을 통해 고객은 특수 지원을 위해 적극적인 공격을 수행하는 동안 DDoS 전문가를 참여시킬 수 있습니다.</p>
+
+
+  <p>공격 완화 보고서는 공격에 대한 거의 실시간 정보와 공격이 완화된 후&rsquo;의 공격을 요약하는 포괄적인 보고서를 제공합니다. 공격 완화 Flow 로그는 활성 DDoS 공격 중에 수행된 네트워크 수준 5 튜플 패킷 데이터(프로토콜, 원본/대상 포트, 원본/대상 IP) 및 작업을 제공합니다. 이 데이터는 거의 실시간 모니터링을 위해 이벤트 허브를 통해 SIEM(보안 정보 및 이벤트 관리) 시스템과 통합될 수 있습니다. 데이터 시각화를 위해 완화 보고서 및 Flow 로그를 Azure Analytics와 통합할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ccd9d05c-4021-4395-82c9-5b4ea4f49ecb.png"><img alt="DDoS Attach Mitigation Reports" border="0" height="437" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4eff6d29-52c7-4b2b-a31b-ebd93960226d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="DDoS 연결 완화 보고서" width="1586"></a></p>
+
+
+  <p align="center"><em>DDoS 공격 완화 보고서</em></p>
+
+
+  <p>이제 고객은 활성 공격 중에 특수 지원을 위해 DDoS DRR(신속한 대응) 팀에 액세스할 수 있습니다. DRR 팀은 공격 조사, 공격 중 사용자 지정 완화 및 사후 공격 분석을 지원합니다. 자세한 내용은 이 <a href="https://aka.ms/ddosanalyticsblog" target="_blank">블로그 게시물</a> 및 <a href="https://aka.ms/ddosprotectiondocs" target="_blank">제품 설명서를</a> 참조하세요.</p>
+
+
+  <h3>Azure Virtual Network 서비스 엔드포인트 정책</h3>
+
+
+  <p>Azure VNet 서비스 엔드포인트 정책을 사용하면 가상 네트워크에서 Azure 서비스 리소스에 대한 무단 액세스를 방지할 수 있습니다. 엔드포인트 정책은 NSG(네트워크 보안 그룹) 서비스 태그를 보다 세부적으로 제어합니다. 서비스 엔드포인트 정책을 사용하여 특정 Azure 서비스 리소스(예: Azure Storage 계정)에만 액세스를 허용할 수 있습니다. 이 기능은 미리 보기에서 Azure Storage 사용할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoint-policies-overview" target="_blank">서비스 엔드포인트 정책 설명서를</a> 참조하세요.</p>
+
+
+  <h2>제공</h2>
+
+
+  <h3>Azure Front Door Service &ndash; 글로벌 HTTP 부하 분산</h3>
+
+
+  <p>AFD(Azure Front Door Service)는 지능형 네트워크 에지를 활용하여 빠르고 안전하며 대규모로 확장 가능한 웹 애플리케이션을 만들 수 있는 확장 가능한 글로벌 진입점입니다.&nbsp; BING, Office 365, Xbox Live, MSN 및 Azure DevOps 포함하여 Microsoft&rsquo;의 가장 큰 웹 워크로드를 지원하도록 빌드된 AFD는 웹 규모의 안정성과 확장성을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bf96b9fb-29aa-4a9d-b694-a108417ea996.png"><img alt="Azure Front Door Service diagram" border="0" height="516" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f43ad62b-33cb-4f9d-89d1-9e283fd33216.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Front Door Service 다이어그램" width="676"></a></p>
+
+
+  <p align="center"><em>Azure Front Door Service는 애플리케이션을 가속화합니다.</em></p>
+
+
+  <p>현재 글로벌 WAN으로 연결된 Microsoft 네트워크 에지 위치의 33개국에 위치한 AFD는 애플리케이션 가속, SSL 오프로드를 통해 애플리케이션&rsquo; 성능을 향상시키고, 글로벌 HTTP 트래픽을 가장 가까운 사용 가능한 백 엔드로 라우팅할 수 있으며, 자동화된 인스턴트 장애 조치(failover)를 통해 엔터프라이즈급 안정성을 지원합니다.</p>
+
+
+  <p>AFD&rsquo; 경로 인식 라우팅, 인라인 캐싱, 속도 제한 및 애플리케이션 계층 보안을 사용하여 Azure에서 최신 글로벌 애플리케이션을 빌드할 수 있습니다.&nbsp; 중앙 제어 평면 및 대시보드를 사용하면 Azure 내부 또는 외부에서 서비스 트래픽 및 글로벌 마이크로 서비스 백 엔드를 관리하고 모니터링할 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview" target="_blank">Azure Web Apps</a>, <a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/index" target="_blank">Azure Monitor</a> 및 <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-overview" target="_blank">Log Analytics</a>와 AFD&rsquo;를 통합하면 대기 시간이 짧고 안정성이 높으며 글로벌 트래픽 인사이트가 심해 애플리케이션을 쉽게 가속화하고 제공할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/frontdoor" target="_blank">AFD 설명서를</a> 참조하여 애플리케이션을 가속화하는 방법을 알아보세요.</p>
+
+
+  <h3>Microsoft 일반 공급에서 Azure CDN</h3>
+
+
+  <p>클라우드 서비스에는 안정성, 규모, 민첩성 및 성능이 필요합니다. Azure CDN 쉽게 설치하고 CDN 플랫폼을 사용하여 비디오, 파일, 웹 사이트 및 기타 HTTP 콘텐츠를 전 세계에 배포합니다. Verizon, Akamai 및 현재 Microsoft의 CDN 서비스를 통해 Azure CDN Azure 애플리케이션을 위한 다중 CDN 에코시스템을 통해 동급 최고의 CDN 서비스를 제공하기 위해 처음부터 구축되었습니다.</p>
+
+
+  <p>&rsquo;Azure CDN 다중 CDN 에코시스템을 사용하면 주문형 API 기반 모델을 통해 Azure 리소스로 CDN 관리할 수 있습니다.&nbsp; 이러한 유연성과 세 가지 강력한 CDN 인프라를 통해 콘텐츠 배달 전략의 일부로 다중 CDN 쉽게 추가할 수 있습니다.&nbsp; 이러한 CDN 솔루션을 다중 CDN 솔루션에서 나란히 사용하거나 계층화하여 안정성, 오프로드 및 성능을 최대화하면 비즈니스 요구에 맞게 배달을 최적화하는 데 집중할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-overview" target="_blank">Azure CDN 설명서를</a> 참조하세요.</p>
+
+
+  <h3>Application Gateway 자동 크기 조정, 5배 향상된 성능, 영역 중복 및 분석</h3>
+
+
+  <p>Application Gateway 및 WAF(웹 애플리케이션 방화벽)는 애플리케이션 배달 컨트롤러를 서비스로 제공합니다.&nbsp; 애플리케이션&rsquo; 트래픽 패턴에 따라 자동으로 확장 또는 축소되는 배포를 사용하도록 설정하는 새로운 탄력적 자동 크기 조정 옵션의 미리 보기를 발표합니다. 고객은 예상 최대 트래픽 볼륨을 미리 프로비전할 필요가 없으므로 관리가 크게 간소화됩니다. 자동 크기 조정은 영역 오류 복원력을 위해 Azure 영역도 지원합니다. 단일 Application Gateway 또는 WAF 배포는 이제 물리적 및 논리적으로 분리되어 모든 영역의 백 엔드 서버로 트래픽을 라우팅할 수 있는 여러 가용성 영역에 걸쳐 있습니다. 또한 자동 크기 조정된 Application Gateway는 더 나은 성능, 제한된 프로비전 시간 및 정적 VIP에 대한 지원을 제공합니다. SSL 오프로드 성능이 이제 5배 향상되었습니다. 자세한 내용 및 자습서는 설명서를 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e7c22f1b-8ad8-4ee2-ad76-6b851003676f.png"><img alt="Zone Redundant Web Application Firewall" border="0" height="568" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5acf3b92-d36e-4749-8341-f5475c6ffbca.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="영역 중복 웹 애플리케이션 방화벽" width="648"></a></p>
+
+
+  <p align="center"><em>영역 중복 웹 애플리케이션 방화벽</em></p>
+
+
+  <p>AKS(Azure Kubernetes Service) 수신 컨트롤러와 Application Gateway 통합의 미리 보기를 발표합니다. AKS 클러스터 내에서 Pod로 실행되는 Application Gateway 수신 컨트롤러를 사용하면 Application Gateway가 AKS 클러스터에 대한 입구로 작동할 수 있습니다. Kubernetes API 서버에서 Kubernetes 수신 리소스를 수신 대기하고 Azure Application Gateway 구성으로 변환하고 ARM(Azure Resource Manager)을 통해 Application Gateway를 업데이트합니다. 자세한 내용은 <a href="https://azure.github.io/application-gateway-kubernetes-ingress/" target="_blank">설명서를</a> 참조하세요.</p>
+
+
+  <p>WAF(웹 애플리케이션 방화벽)는 고객이 요청 본문 및 파일 업로드 크기를 제어할 수 있도록 향상된 구성성을 미리 봅니다. 고객은 요청 본문 페이로드 검사를 사용하거나 사용하지 않도록 설정할 수 있습니다. 웹 애플리케이션 방화벽은 제외 목록을 통해 규칙 평가에서 요청&rsquo; 헤더, 쿠키 또는 쿼리 문자열을 제외하는 기능을 제공합니다. 이를 통해 고객은 WAF 규칙의 전달자 토큰과 같은 알려진 안전 매개 변수를 허용 목록에 추가하여 가양성도 줄일 수 있습니다. 자세한 내용 및 자습서는 <a href="https://aka.ms/appgw-waf-configuration" target="_blank">설명서를</a> 참조하세요.</p>
+
+
+  <h3>Azure Traffic Manager 더 많은 라우팅 및 엔드포인트 모니터링 옵션</h3>
+
+
+  <p>이제 고객은 <a href="https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-endpoint-types#external-endpoints" target="_blank">IPv4 또는 IPv6 주소를 사용하여 Traffic Manager 프로필에 엔드포인트</a>를 추가하고 해당 프로필에 대해 수행한 DNS 쿼리에 대한 A/AAAA 형식 응답을 가져올 수 있습니다. 현재 외부 형식 엔드포인트로 제한되는 이 옵션을 사용하면 연결된 DNS 이름이 없는 엔드포인트가 Traffic Manager 라우팅 방법의 일부가 될 수 있으며 최종 사용자에 대한 고가용성 및 짧은 대기 시간 연결의 이점을 얻을 수 있습니다. 연결된 새 라우팅 방법 <a href="https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods#a-name--multivalueamultivalue-traffic-routing-method" target="_blank">인 다중 값 라우팅</a>을 사용하면 단일 DNS 쿼리 응답의 일부로 반환할 정상 엔드포인트 수를 지정할 수 있습니다. 이 기능은 정상 엔드포인트를 다시 쿼리하기 전에 호출자에게 다시 시도할 수 있는 여러 옵션을 제공하여 애플리케이션의 안정성을 향상합니다.</p>
+
+
+  <p>이제 Traffic Manager Traffic Manager 시작된 상태 검사에서 헤더(호스트 헤더 포함)를 지정하도록 하여 다중 테넌트 엔드포인트를 지원합니다. 이렇게 하면 이러한 다중 테넌트 엔드포인트를 정확하게 확인하고 트래픽을 적절하게 라우팅할 수 있습니다. Traffic Manager에서 이러한 새로운 기능에 대해 자세히 알아보려면 <a href="https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-monitoring" target="_blank">엔드포인트 모니터링 설명서를</a> 참조하세요.</p>
+
+
+  <h2>Monitor</h2>
+
+
+  <h3>모니터링, 보안 및 성능을 위한 Virtual Network TAP &ndash; 표시 유형</h3>
+
+
+  <p>퍼블릭 클라우드에서 사용할 수 있는 첫 번째 네이티브 분산 네트워크 TAP의 미리 보기를 발표합니다. Azure Virtual Network TAP은 에이전트를 사용하지 않고 패킷 수집기에 가상 머신 네트워크 트래픽을 연속 미러링합니다.</p>
+
+
+  <p><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5ea765a6-bf52-4b37-88c4-96caa8a28b0b.png"><img alt="Virtual Network TAP" border="0" height="435" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fc77583a-12de-4a68-b209-7d6d166ad229.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Virtual Network TAP" width="752"></a></em></p>
+
+
+  <p align="center"><em>Azure Virtual Network TAP을 사용하면 대역 외 모니터링을 사용할 수 있습니다.</em></p>
+
+
+  <p>이제 대역 외 모니터링, 보안 및 성능 솔루션을 Virtual Network에 배포할 수 있습니다. 솔루션은 <a href="https://www.bigswitch.com/products/big-monitoring-fabric/public-cloud/microsoft-azure" target="_blank">빅 스위치 네트워크</a>, <a href="https://www.extrahop.com/company/tech-partners/microsoft/" target="_blank">ExtraHop</a>, <a href="https://www.fidelissecurity.com/technology-partners/microsoft-azure" target="_blank">Fidelis</a>, <a href="https://www.flowmon.com/blog/azure-vtap" target="_blank">Flowmon</a>, <a href="https://blog.gigamon.com/2018/09/13/why-microsofts-new-vtap-service-works-even-better-with-gigasecure-for-azure" target="_blank">Gigamon</a>, <a href="https://www.ixiacom.com/cloudlens/cloudlens-azure" target="_blank">Ixia</a>, <a href="https://www.netscout.com/technology-partners/microsoft/azure-vtap" target="_blank">Netscout</a>, <a href="https://www.nubeva.com/azurevtap" target="_blank">Nubeva</a>, <a href="https://www.rsa.com/azure" target="_blank">RSA</a> 및 <a href="https://vectra.ai/microsoftazure" target="_blank">Vectra</a>에서 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7ff6aa59-2d8f-4bdb-b8a1-a9a1bba9ebe7.png"><img alt="Virtual Network TAP Partners" border="0" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/665f02fe-1d06-417b-bb52-3ed9235f11f1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Virtual Network TAP 파트너" width="683"></a></p>
+
+
+  <p align="center"><em>Azure Virtual Network TAP 에코시스템</em></p>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/azure/virtual-network/virtual-network-tap-overview" target="_blank">Azure Virtual Network TAP 설명서를</a> 참조하세요.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>Azure에 연결하고, 워크로드를 보호하고, 훌륭한 네트워킹 환경을 제공하고, 배포 및 운영 비용을 간소화하는 동시에 고객을 더 잘 지원할 수 있도록 광범위한 모니터링을 제공하기 위해 최선을 다하고 있습니다. Ignite 2018에서는 공지 사항에 대한 자세한 내용을 추가합니다. 기술 세션 목록은 다음과 <a href="https://aka.ms/ignitenwsessions" target="_blank">같습니다</a>. Well&rsquo;은 클라우드를 최대한 활용하는 데 도움이 되는 혁신적인 네트워킹 서비스 및 지침을 계속 제공합니다. &rsquo;네트워킹 서비스에서 사용하도록 설정된 새로운 시나리오에 대해 알아보게 되어 기쁩니다. 언제나 그처럼 여러분의 의견을 환영합니다.</p>

@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cb821470029cf51ce471e0c7a2f501ce2b0089b8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906678"
+Slug: mesosphere-dcos-azure-docker-vmware-everything-between-ssh-authorized-keys
+Title: Mesosphere DCOS, Azure, Docker, VMware & 모든 것 - SSH 권한 있는 키
+Summary: 모든 보안 관련 조정, 구성을 지우고 모든 DC/OS 클러스터 노드를 Docker 엔진과 함께 설치한 후 SSH 권한 있는 키 파일을 만들고 클러스터의 다른 모든 노드에 대한 부트스트랩 노드 간의 트러스트 관계를 설정하는 시간이 되면 이 시리즈의 3부를 살펴보겠습니다.
+Content: >-
+  <p>모든 보안 관련 조정, 구성을 지우고 모든 DC/OS 클러스터 노드를 Docker 엔진과 함께 설치한 후 SSH 권한 있는 키 파일을 만들고 클러스터의 다른 모든 노드에 대한 부트스트랩 노드 간의 트러스트 관계를 설정하는 시간이 걸리는 이 시리즈의&rsquo; 3부를 살펴보겠습니다.</p>
+
+
+  <p>부트스트랩 노드가 안전하게 통신하고 다른 노드에 SSH 터널을 열고 설치하는 동안 DC/OS 구성 스크립트를 끌어올 수 있도록 하려면 먼저 ssh-keygen 도구를 사용하여 프라이빗 및 퍼블릭 키를 생성하고 공개 키를 부트스트랩 authorized_keys 파일에 추가해야 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7c97d61c-50c1-42b1-8fa6-8d18cc91294d.png"><img alt="image" border="0" height="200" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4f872867-4613-4661-b15c-0faf9152a678.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="200"></a></p>
+
+
+  <p>내 <a href="https://imallvirtual.com/mesosphere-dcos-azure-docker-vmware-everything-part-3/">개인 블로그</a>에서 DC/OS 1.9 SSH 권한 있는 키에 대한 모든 세부 정보를 읽어보세요.</p>

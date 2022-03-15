@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: eb84cd8f01d6680e2dfd8b3ee82854ee58db0ec4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900690"
+Slug: sharing-the-devops-journey-at-microsoft
+Title: Microsoft에서 DevOps 경험 공유
+Summary: Microsoft에서는 DevOps 채택이 어려울 수 있다는 것을 알고 있습니다. 이 때문에 microsoft는 DevOps 채택을 통해 작업하는 방식을 혁신한 Microsoft 팀의 학습과 함께 자신의 여정을 공유하게 되어 기쁩니다.
+Content: >-
+  <p>오늘날 점점 더 많은 조직이 고객에게 새로운 디지털 솔루션을 제공하고 민첩성 향상, 프로세스 개선 및 개발 및 운영 팀 간의 협업이 비즈니스에 중요해지고 있음을 발견하는 데 초점을 맞추고 있습니다. 10년 이상 <a href="https://azure.microsoft.com/en-us/overview/what-is-devops/" target="_blank">DevOps</a> 이러한 어려움에 대한 해답이었습니다. DevOps 필요성을 이해하는 것은 한 가지이지만, 실제 세계에서 DevOps 실제로 채택하는 것은 완전히 다른 과제입니다. 여러 팀과 프로젝트가 있고, 뿌리 깊은 기존 프로세스와 상당한 레거시 소프트웨어가 있는 조직은 어떻게 방식을 바꾸고 DevOps 수용할 수 있을까요?</p>
+
+
+  <p>Microsoft에서는 이러한 문제에 대해 알고 있습니다. 수십 년 동안 소프트웨어를 구축해 온 Microsoft는 다양한 제품을 제공하는 전 세계 수천 명의 엔지니어로 구성되어 있습니다. Office, Azure, Xbox에 이르기까지 소프트웨어를 제공하는 새로운 방법에 적응해야 한다는 것을 알게 되었습니다. 클라우드의 새로운 시대는 경쟁이 둔화되지 않는 동안 더 풍부하고 더 나은 경험에<i>&mdash;</i> 대한 고객의&rsquo; 증가하는 수요를 충족하기 위해 혁신의 엄청난 잠재력을 잠금 해제합니다. 혁신을 가속화하고 우리가 일하는 방식을 변화시켜야 할 필요성은 현실적이고 시급합니다.</p>
+
+
+  <p>변화의 길은 쉽지 않으며, 우리는 이 어려운 길을 탐색하는 가장 좋은 방법은 이미 걸어온 사람들의 발자취를 따르는 것이라고 믿습니다. 따라서 <a href="https://azure.microsoft.com/en-us/solutions/devops/devops-at-microsoft/" target="_blank">Microsoft에서 DevOps 경험을</a> DevOps 채택을 통해 혁신한 회사 전체의 팀의 학습과 공유하게 되어 기쁩니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" src="https://www.microsoft.com/en-us/videoplayer/embed/RE3ZqT9" width="560"></iframe></p>
+
+
+  <h2>도구 그 이상</h2>
+
+
+  <p>엔지니어에게 최상의 도구와 최신 사례를 제공하여 조직의&rsquo; 성공을 달성합니다. Microsoft의 1ES(One Engineering System) 팀은 회사 전체의 팀이 높은 성능을 발휘할 수 있도록 다양한 노력을 기울이고 있습니다. 팀은 처음에 도구 표준화에 집중했고 몇 가지 좋은 결과&mdash; 원본 제어 문제가 감소하고 빌드 시간 및 빌드 안정성이 향상되는 것을 보았습니다. 그러나 시간이 지남에 따라 도구에 초점을 맞추는 것만으로는 충분하지 않다는 것이 분명해졌고, 팀을 돕기 위해 1ES는 문화 변화에도 집중해야 했습니다. 문화 변화에 접근하는 것은 까다로울 수 있으며, 빠른 승리로 시작하거나 대규모로 근본적인 변화를 시도합니까? 크기 및 성숙도가 다른 팀에 적합한 참여 모델은 무엇인가요? <a href="https://azure.microsoft.com/en-us/solutions/devops/devops-at-microsoft/one-engineering-system" target="_blank">One Engineering System 팀의</a> 실험 경험에 대해 자세히 알아보세요.</p>
+
+
+  <h2>IT 역할 및 책임 재정의</h2>
+
+
+  <p>클라우드로 이동하면 조직의 책임 정의에 도전할 수 있습니다. 개발 팀이 클라우드 혁신을 수용함에 따라 IT 운영 팀은 인프라에 대한 기존의 소유권 모델이 더 이상 적용되지 않는다는 것을 알게 됩니다. Microsoft Core 서비스 그룹(이전의 Microsoft IT)의 관리 효율성 플랫폼 팀은 Azure로 이동하려면 IT 및 개발 팀이 함께 작동하는 방식을 재고해야 한다는 것을 발견했습니다. 팀이 개발 팀과의 관계를 개선하면서 일상 업무에서 벗어날 수 있도록 중앙 집중식 IT 모델을 어떻게 분산할 수 있을까요? <a href="https://azure.microsoft.com/en-us/solutions/devops/devops-at-microsoft/it-monitoring" target="_blank">관리 효율성 플랫폼 팀의 변환을 살펴봅니다</a>.</p>
+
+
+  <h2>개발자 협업 간소화</h2>
+
+
+  <p>개발자 협업은 혁신의 핵심 구성 요소입니다. 이 점을 염두에 두고 Microsoft는 <a href="https://dotnet.microsoft.com/" target="_blank">.NET</a> 프레임워크를 오픈 소스로 사용하여 커뮤니티가 .NET에서 공동 작업하고 혁신하도록 초대했습니다. 시간이 지남에 따라 프로젝트가 오픈 소스로 공급됨에 따라 그 규모와 복잡성이 명백해졌습니다. 이 프로젝트는 여러 리포지토리에 걸쳐 있으며, 각 리포지토리에는 여러 CI(연속 통합) 시스템을 사용하는 자체 구조가 있어 개발자가 리포지토리 간에 이동하기가 어렵습니다. Microsoft의 .NET 인프라 팀은 개발자 프로세스 간소화에 투자하기로 결정했습니다. 이러한 과제는 리포지토리 구조 표준화, 공유 도구 및 단일 CI 시스템에 수렴하는 데 집중하여 프로젝트에 대한 내부 및 외부 기여자가 모두 혜택을 받을 수 있도록 함으로써 해결되었습니다. <a href="https://azure.microsoft.com/en-us/solutions/devops/devops-at-microsoft/net-framework" target="_blank">.NET 인프라 팀의</a> 투자에 대해 자세히 알아봅니다.</p>
+
+
+  <h2>연속 학습의 여정</h2>
+
+
+  <p>Microsoft의 DevOps 목적지가 아닌 여정입니다. Teams 적응하고, 새로운 것을 시도하고, 변경하고 개선하는 방법을 계속 알아봅니다. 항상 더 많은 것을 배울 수 있으므로 앞으로 몇 달 동안 Microsoft에서 추가 팀의 변환 이야기를 계속 공유할 것입니다. 이러한 지속적인 내부 학습 경험의 연장선상에 있는 이 여정에 참여하여 DevOps 수용하고 팀이 더 나은 솔루션을 구축하고 더 빠르게 더 행복한 고객에게 제공할 수 있도록 힘을 실어주는 방법을 배우도록 초대합니다.</p>
+
+
+  <p><img alt="DevOps at Microsoft" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7894965d-61b8-405e-bba5-b3e158ca1359.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="Microsoft의 DevOps"></p>
+
+
+  <h2>리소스</h2>
+
+
+  <ul style="width: 85%; margin-left: 40px;">
+      <li style="margin-bottom: 2px;"><a href="https://azure.microsoft.com/en-us/solutions/devops/devops-at-microsoft/" target="_blank">Microsoft의 DevOps 경험</a></li>
+      <li style="margin-bottom: 2px;"><a href="https://azure.microsoft.com/en-us/overview/what-is-devops/" target="_blank">DevOps란?</a></li>
+      <li style="margin-bottom: 2px;"><a href="https://azure.microsoft.com/en-us/solutions/devops/" target="_blank">Azure의 DevOps 솔루션</a></li>
+  </ul>
+
+
+  <hr>
+
+  <p><em>Azure. 목적에 따라 발명.</em></p>

@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1876b930cb1595629adac5a96b97a947884b3675
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900402"
+Slug: sql-dw-cost-savings-with-functions-part-1
+Title: '#<a name="azuresqldw-cost-savings-with-optimized-for-elasticity-and-azure-functions--part-1"></a>탄력성 및 Azure Functions에 최적화된 AzureSQLDW 비용 절감 - 1부'
+Summary: 'Azure SQL Data Warehouse는 EDW(Enterprise Data Warehouse)의 중추인 Microsoft의 SQL 분석 플랫폼입니다. 이 서비스는 고객이 대규모 병렬 처리로 컴퓨팅 및 스토리지를 탄력적이고 독립적으로 확장할 수 있도록 설계되었습니다. '
+Content: >-
+  <p><a href="https://azure.microsoft.com/services/sql-data-warehouse/">Azure SQL Data Warehouse</a>는 EDW(Enterprise Data Warehouse)의 중추인 Microsofts&rsquo; SQL 분석 플랫폼입니다. 이 서비스는 고객이 대규모 병렬 처리로 컴퓨팅 및 스토리지를 탄력적이고 독립적으로 확장할 수 있도록 설계되었습니다. SQL DW는 빅 데이터 저장소와 원활하게 통합되며 EDW의 최적화되고 맞춤형 성능을 위해 데이터 마트와 큐브의 허브 역할을 합니다. Azure SQL DW는 요구 사항에 맞는 데이터 웨어하우스를 빌드할 수 있도록 <a href="https://azure.microsoft.com/support/legal/sla/sql-data-warehouse/v1_0/">99.9%의 고가용성</a>, 규정 준수, <a href="https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-manage-security">고급 보안</a> 및 업스트림 및 다운스트림 서비스와<a href="https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-integrate">의 긴밀한 통합</a>을 보장합니다. Azure SQL DW는 기업이 30개 이상의 지역에서 글로벌 가용성을 사용하여 모든 곳에서 데이터를 복제할 수 있는 최초의 유일한 서비스입니다. 이제 최적화된 성능을 위해 Azure Analysis Services에 데이터를 빠르게 푸시하는 방법을 보여 줍니다.</p>
+
+
+  <p>Azure SQL Data Warehouse의 주요 기능 중 하나는 분리된 컴퓨팅 및 스토리지 모델입니다. 주요 가격 및 성능의 경우 필요한 최대값뿐만 아니라 현재 워크로드와 일치하는 성능 수준을 선택하는 것이 중요합니다. 이 블로그 게시물은 Azure Function App을 사용하여 컴퓨팅 수준을 자동화하여 비용을 절감하는 방법을 다루는 두 부분으로 구성된 블로그 시리즈의 첫 번째 게시물입니다.</p>
+
+
+  <p>첫 번째 솔루션은 Azure 함수의 일정 기반 집합으로, 데이터 웨어하우스를 확장, 축소 또는 일시 중지하려는 시간을 설정할 수 있습니다. 많은 데이터 웨어하우스 사용자는 작업 기간 및 비활성 기간을 가지며 일반적으로 workday에 해당합니다. 아래에는 며칠에 걸쳐 해당 쿼리 사용량이 있는 실제 고객 데이터 웨어하우스 인스턴스가 나와 있습니다. 이 일일 워크로드를 관찰하는 쿼리 패턴은 매일 근무 시간 동안 명확한 급증을 표시하고 밤에는 하차합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0034562b-d740-4031-b197-01dc02d8b301.png"><img alt="DWU Usage to Query Activity Recommendation" border="0" height="351" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7dabd1c-b78d-43ca-978e-573c9db1fb3c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="쿼리 작업 권장 사항에 대한 DWU 사용량" width="713"></a></p>
+
+
+  <p>현재 이 고객은 사용량에 관계없이 DWU를 변경하지 않으며 DW600에서 지속적으로 실행되고 있습니다. 근무일 중에는 DW600이 필요할 수 있지만, 근무 시간외에는 DW200이 더 적합할 수 있습니다. 16:8시간 비율로 이 두 값 간의 크기 조정을 한 달 동안 수행하면 약 32%를 절약할 수 있습니다. 사용량을 살펴보면 오전 12시 UTC에서 작업이 급증하기 전에 한 번 스케일 업하고 매일 오후 5시 UTC로 축소하는 것이 좋습니다. Azure TimeTrigger 함수를 사용하여 이 고객의&rsquo; 월별 지출을 25% 줄일 수 있습니다.</p>
+
+
+  <p>Azure Functions를 사용하여 데이터 웨어하우스 일정 기반 크기 조정을 SQL 방법에 대해 자세히 알아보려면 <a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/manage-compute-with-azure-functions" target="_blank">설명서</a> 및 <a href="https://github.com/Microsoft/sql-data-warehouse-samples/tree/master/arm-templates/sqlDwAutoScaler" target="_blank">Github 리포지토리</a>를 확인하거나 인스턴스에 지금 배포하세요! 이 일정 기반 함수는 POC(개념 증명)이며, 로깅, 오류 발생 시 재시도 논리 및 사용자 환경을 향상시키는 기타 기능에 대한 커뮤니티 기여를 기대합니다. 이 함수는 기본적으로 Blob Storage에서 소비 계획을 사용합니다. 소비 계획 가격 책정에는 매월 100만 개의 요청과 400,000GB의 리소스 사용량에 대한 무료 부여가 포함됩니다.</p>
+
+
+  <p>POC에 대한 도움이 필요한 경우 <a href="https://azure.microsoft.com/services/sql-data-warehouse/information-request/" target="_blank">직접 문의하세요</a>. Twitter<a href="https://twitter.com/AzureSQLDW" target="_blank">@AzureSQLDW</a>에서 최신 Azure SQL DW 뉴스 및 기능을 최신 상태로 유지하세요.</p>
+
+
+  <p><a href="https://ms.portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Fsql-data-warehouse-samples%2Fmaster%2Farm-templates%2FsqlDwTimerScaler%2Fazuredeploy.json" target="_blank"><img alt="Deploy in Azure" border="0" height="34" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b2ded0f-259f-4b85-ad0a-71ad6d0f4867.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure에 배포" width="161"></a></p>

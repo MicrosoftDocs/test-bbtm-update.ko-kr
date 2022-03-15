@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 45b0d86c967812cfde48cf2f6f6fd80436193af2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906415"
+Slug: new-intermediate-level-tutorial-available-for-developers
+Title: 개발자가 사용할 수 있는 새로운 Intermediate-Level 자습서
+Summary: 최근에 여러 Microsoft 기술을 활용하고 쉽게 개발하는 방법을 보여 주는 새로운 자습서인 Code First 및 SQL Azure 사용하여 Windows Azure Data Application 개발을 발표했습니다.
+Content: '<p><span class="Apple-style-span" style="font-size: 12px; font-weight: normal;"></span>최근에 여러 Microsoft 기술을 활용<a target="_blank" href="https://www.microsoft.com/windowsazure/learn/tutorials/road-trip-tutorial/">하고 Windows Azure에서 데이터 기반 애플리케이션을</a> 쉽게 개발하는 방법을 보여 주는 새로운 자습서인 Code First 및 <a target="_blank" href="https://www.microsoft.com/windowsazure/">SQL Azure 사용하여 Windows Azure</a> 데이터 애플리케이션 개발을 게시했습니다.&nbsp; 이 자습서에서는 <a target="_blank" href="https://msdn.microsoft.com/en-us/data/aa937723">Entity Framework Code First</a> 기능을 사용하여 ASP.NET MVC 3 애플리케이션에 대한 데이터 모델을 만들고 새 SQL Azure 데이터베이스를 자동으로 만듭니다.</p>  <p>이 자습서는 첫 번째 중간 수준 자습서이며 개발자가 플랫폼의 다양한 부분을 시작할 수 있도록 돕는 데 초점을 맞춘 <a target="_blank" href="https://www.microsoft.com/windowsazure/learn/tutorials/get-started/">일련의 자습서</a> 중 네 번째 자습서입니다.&nbsp; 사이트의 기술 콘텐츠 및 다음에 설명된 내용에 가장 관심이 있는 시나리오에 대한 피드백을 듣고 싶습니다.&nbsp; 이 게시물에 댓글을 달거나, 직접 <a target="_blank" href="mailto:azuresitefeedback@microsoft.com">azuresitefeedback@microsoft.com</a>연락하거나, &nbsp;아이디어와 투표를 Windows Azure 설명서 투표 및 azure 코드 샘플 투표 페이지에 Windows 피드백을 제공할 수 있습니다.</p>  <p><em>Windows Azure Information Experience 팀은 기술 콘텐츠를 개발하고 Windows Azure 고객을 위한 정보 환경을 만드는 역할을 담당합니다.</em></p>'

@@ -1,0 +1,31 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c12e509e746277c822df6ed4f98a72e79673feb1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900289"
+Slug: storsimple-virtual-array-update-0-3-now-available
+Title: 'StorSimple 가상 배열: 중요 업데이트, 소프트웨어 버전 10.0.10288.0(업데이트 0.3) 사용 가능'
+Summary: StorSimple 가상 배열 버전 10.0.10288.0(업데이트 0.3)에 대한 새로운 중요 업데이트를 다운로드할 수 있습니다.
+Content: >-
+  <p>StorSimple 가상 배열 버전 10.0.10288.0(업데이트 0.3)에 대한 새로운 중요 업데이트를 다운로드할 수 있습니다.</p>
+
+
+  <ul>
+      <li>이 릴리스에서 해결된 릴리스 정보 및 문제: <a href="https://azure.microsoft.com/en-us/documentation/articles/storsimple-ova-update-03-release-notes/">StorSimple 가상 배열 업데이트 0.3 릴리스 정보</a>입니다.</li>
+      <li>업데이트 설치 가이드: <a href="https://azure.microsoft.com/en-us/documentation/articles/storsimple-ova-install-update-01/">StorSimple 가상 배열에 업데이트를 설치</a>합니다.</li>
+  </ul>
+
+
+  <p>업데이트 0.3에는 다음과 같은 버그 수정 및 개선 사항이 포함되어 있습니다.</p>
+
+
+  <ul>
+      <li><strong>백업을:</strong> 특정 조건에서 파일 공유&rsquo;에 대한 백업이 &lsquo;실패할 수 있습니다.&nbsp; 이 문제가 발생하면&nbsp; 백업 &lsquo;작업이&rsquo; 실패한&rsquo; 것으로 &lsquo;표시되고 &lsquo;StorSimple Manager 서비스에서 알림으로 중요한 경고&rsquo;가 발생합니다. 이 문제는 공유의 데이터 또는 데이터에 대한 액세스에 영향을 주지 않습니다.&nbsp; 이 문제의 근본 원인은 이 릴리스에서 해결되었습니다.  이 수정 사항은 이 문제가 이미 발생하고 있는 공유에 소급 적용되지 않습니다. 이 문제가 표시되는 고객은 먼저 업데이트 0.3을 적용한 다음 Microsoft 지원에 문의하여&nbsp; 문제를 해결해야 합니다.</li>
+      <li><strong>Iscsi:</strong> StorSimple 가상 배열의 볼륨에 대량의 데이터를 복사할 때 iSCSI 세션의 연결이 끊어진 이전 릴리스에서 관찰된 드문&nbsp; 경우입니다.&nbsp; 이 문제는 이 릴리스에서 해결되었습니다.</li>
+      <li><strong>새 가상 디스크 이미지:</strong> 이제 Azure 클래식 포털을 통해 새 VHD, VHDX 및 VMDK를 사용할 수 있습니다. 이러한 이미지를 다운로드하여 새 업데이트 0.3 디바이스를 프로비전할 수 있습니다.</li>
+  </ul>
+
+
+  <p>이 업데이트를 적용하는 것이 좋습니다. 업데이트하려면&nbsp; amaintenance 기간 동안virtual arrayandcan&nbsp;&nbsp;의&nbsp; areboot를&nbsp; 적용해야 합니다. 문제가 발생하면 <a href="https://azure.microsoft.com/en-us/documentation/articles/storsimple-contact-microsoft-support/">Microsoft 지원에</a> 문의하세요.</p>

@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 56594f394ef59f88b274a7708620a3d10944440a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900823"
+Slug: securing-the-hybrid-cloud-with-azure-security-center-and-azure-sentinel
+Title: Azure Security Center 및 Azure Sentinel을 사용하여 하이브리드 클라우드 보호
+Summary: 인프라 보안은 온-프레미스, 클라우드 또는 하이브리드에서 워크로드를 관리하는 조직에서 가장 중요합니다. 끊임없이 변화하는 보안 환경을 유지하는 것은 중요한 과제입니다.
+Content: >-
+  <p>인프라 보안은 온-프레미스, 클라우드 또는 하이브리드에서 워크로드를 관리하는 조직에서 가장 중요합니다. 끊임없이 변화하는 보안 환경을 유지하는 것은 중요한 과제입니다. 다행히 퍼블릭 클라우드의 힘과 규모는 보안 운영이 변화하는 위협 환경보다 앞서나갈 수 있도록 지원하는 강력한 새로운 기능을 잠금 해제했습니다. Microsoft는 고객의 의견을 수집하면서 계속 진화하는 인기 있는 클라우드 기반 보안 기술을 많이 개발했습니다. 오늘 wed&rsquo;는 몇 가지 주요 Azure 보안 기능을 분석하고 보호 계층을 제공하기 위해 함께 작동하는 방법을 설명하려고 합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">Azure Security Center</a> 는 잘못된 구성을 식별하고 수정하고 위협에 대한 가시성을 제공하여 신속하게 수정함으로써 통합 보안 관리를 제공합니다. Security Center는 사용량과 기능이 빠르게 성장했으며 SIEM(보안 정보 및 이벤트 관리)과 유사한 기능인 조사 기능을 포함하여 많은 새로운 솔루션을 파일럿할 수 있게 해 주었습니다. 조사 환경에 대한 응답은 긍정적이지만 고객은 더 많은 기능을 구축하도록 요청했습니다. 동시에 VM(가상 머신)과 같은 리소스당 가격이 책정되는 Security Center의 기존 비즈니스 모델은 SIEM에 반드시 적합하지는 않습니다&rsquo;. 고객이 Security Center와 차별화되고 통합된 본격적인 독립 실행형 SIEM 솔루션이 필요하다는 것을 깨달았기 때문에 Azure Sentinel을 만들었습니다. 이 블로그 게시물은 각 제품의 역할과 Azure Security Center가 Azure Sentinel과 어떻게 관련되어 있는지를 명확히 설명합니다.</p>
+
+
+  <p>앞으로 Security Center는 다음 세 가지 주요 영역에서 기능을 계속 개발할 것입니다.</p>
+
+
+  <ol>
+   <li><strong>클라우드 보안 상태 관리</strong>: Security Center는 Azure 환경 전반에 걸쳐 새&rsquo; 눈 보안 상태 보기를 제공하여 Azure <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-secure-score" target="_blank">보안 점수를</a> 사용하여 보안 상태를 지속적으로 모니터링하고 개선할 수 있도록 합니다. Security Center를 사용하면 보안 모범 사례로 권장되는 강화 작업을 식별하고 수행하고 컴퓨터, 데이터 서비스 및 앱에서 구현할 수 있습니다. 여기에는 보안 정책을 관리 및 적용하고 Azure Virtual Machine 인스턴스, 비 Azure 서버 및 Azure PaaS 서비스를 준수하는지 확인하는 것이 포함됩니다. 새로 추가된 IoT 기능을 사용하면 이제 Azure IoT 솔루션에 대한 공격 노출 영역을 줄이고 문제를 해결하기 전에 문제를 해결할 수 있습니다. 보안 상태 관리에서 사용할 수 있는 리소스 범위 및 깊이 인사이트를 계속 확장할 것입니다. Security Center는 환경의 보안 상태에 대한 완전한 가시성을 제공하는 것 외에도 일반적인 규정 표준에 대한 Azure 환경의 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-compliance-dashboard" target="_blank">규정 준수</a> 상태에 대한 가시성을 제공합니다.</li>
+   <li><strong>클라우드 워크로드 보호</strong>: Security Center&#39;위협 방지를 사용하면 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-os-coverage" target="_blank">IaaS(Infrastructure-as-a-Service) 계층</a>뿐만 아니라 Azure IoT, Azure App Service 및 온-프레미스 가상 머신과 같은 PaaS(Platform-as-a-Service) 리소스에서 위협을 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-detection-capabilities" target="_blank">감지</a>하고 방지할 수 있습니다. Security Center 위협 방지의 주요 기능에는 구성 모니터링, 서버 엔드포인트 검색 및 대응(EDR), 애플리케이션 제어, 네트워크 세분화가 포함되며 컨테이너 및 서버리스 워크로드를 지원하도록 확장되고 있습니다.</li>
+   <li><strong>데이터 보안</strong>: Security Center에는 SQL 데이터베이스, 데이터 웨어하우스 및 스토리지 계정에 대한 위반 및 비정상적인 활동을 식별하는 기능이 포함되어 있으며 다른 데이터 서비스로 확장될 예정입니다. 또한 Security Center를 사용하면 Azure SQL 데이터베이스에서 데이터의 자동 분류를 수행할 수 있습니다.</li>
+  </ol>
+
+
+  <p>클라우드 워크로드 보호와 관련하여 목표는 개별 위협을 해결할 수 있도록 사용하기 쉬운 방식으로 Security Center 내의 사용자에게 정보를 제공하는 것입니다. Security Center는 SecOps(고급 보안 작업) 헌팅 시나리오를 사용하거나 SIEM 도구로 사용할 수 없습니다.</p>
+
+
+  <p>앞으로 SIEM 및 보안 오케스트레이션 및 SOAR(자동화된 응답) 기능이 Azure Sentinel에서 제공됩니다. Azure Sentinel은 엔터프라이즈 전반에 지능적인 보안 분석 및 위협 인텔리전스를 제공하며, 경고 검색, 위협 가시성, 주도적 헌팅 및 위협 대응을 위한 단일 솔루션을 제공합니다.</p>
+
+
+  <p>Azure Sentinel은 엔터프라이즈 전체의 SOC(서비스 운영 센터) 보기로, 점점 더 정교해지는 공격의 스트레스, 경고 볼륨 증가 및 긴 해결 기간을 완화합니다. Azure Sentinel을 사용하여 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>온-프레미스와 여러 클라우드의 모든 사용자, 디바이스, 애플리케이션 및 인프라에서 <strong>클라우드 규모로 데이터를 수집</strong>합니다.</li>
+   <li>Security Center, Microsoft Threat Protection과 같은 Microsofts&rsquo; 보안 제품 및 비 Microsoft 보안 솔루션에서 <strong>큐레이팅된 경고를 통합</strong>합니다.</li>
+   <li>전 세계 Microsoft 서비스 및 시스템에서 수조 개의 신호를 사용하여 새롭고 진화하는 위협을 식별하는 Microsoft Intelligent Security Graph 사용하여 <strong>이전에 감지되지 않은</strong> 위협을 감지하고 가양성을 최소화합니다. 인공 지능을 사용하여 위협을 조사하고 Microsoft에서 수년간의 사이버 보안 경험을 활용하여 대규모로 의심스러운 활동을 헌팅합니다.</li>
+   <li>일반 작업의 기본 제공 오케스트레이션 및 자동화로 <strong>빠르게 인시던트에 대응</strong>합니다.</li>
+  </ul>
+
+
+  <p>일반적으로 SIEM은 특정 워크로드에 대한 위협 인텔리전스 애플리케이션을 비롯한 광범위한 애플리케이션과 통합되며 Azure Sentinel에서도 마찬가지입니다. SecOps는 AI 모델을 사용하여 원시 데이터에 대해 쿼리하고, 사용자 고유의 모델을 빌드할 수 있는 모든 기능을 제공합니다.</p>
+
+
+  <h2>그렇다면 Azure Security Center는 Azure Sentinel과 어떤 관련이 있을까요?</h2>
+
+
+  <p>Security Center는 Azure Sentinel이 전체 조직에 대한 보기를 만들기 위해 데이터를 수집하는 위협 방지 정보의 여러 원본 중 하나입니다. Azure를 사용하는 고객은 몇 번의 클릭만으로 Azure Security Center를 Azure Sentinel에 연결할 수 있는 VM, SQL, Storage 및 IoT와 같은 워크로드의 위협 방지<a href="https://docs.microsoft.com/en-us/azure/sentinel/connect-azure-security-center" target="_blank">를 위해 Azure Security Center를</a> 사용하는 것이 좋습니다. Security Center 데이터가 Azure Sentinel에 있으면 고객은 고급 쿼리 및 인공 지능의 기능을 사용하여 사전 예방적 헌팅 및 위협 완화를 위해 해당 데이터를 방화벽, 사용자 및 디바이스와 같은 다른 원본과 결합할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/05db1e19-d44f-44ca-9ee5-74e8d99b4ec6.png"><img alt="Diagram representing how Azure Sentinel connects with Azure Security Center" border="0" height="373" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d422d54d-e2e8-4ea8-9248-ef0d5a0cbbe0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Sentinel이 Azure Security Center와 연결하는 방법을 나타내는 다이어그램" width="2074"></a></p>
+
+
+  <h2>이 전략의 결과로 Security Center에 변경 내용이 있나요?</h2>
+
+
+  <p>혼동을 줄이고 사용자 환경을 간소화하기 위해 Security Center의 초기 SIEM과 유사한 두 가지 기능, 즉 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-features-retirement-july2019" target="_blank">보안 경고 및 사용자 지정 경고의 조사 흐름</a> 이 가까운 장래에 제거될 예정입니다. 개별 경고는 Security Center에 남아 있으며, Azure Sentinel에는 보안 경고와 사용자 지정 경고 모두에 해당하는 경고가 있습니다.</p>
+
+
+  <p>앞으로 Microsoft는 Azure Security Center와 Azure Sentinel 모두에 계속 투자할 것입니다. Azure Security Center는 클라우드 보안 상태 관리 및 클라우드 워크로드 보호를 위한 통합 인프라 보안 관리 시스템이 될 것입니다. Azure Sentinel은 SIEM에 계속 집중합니다.</p>
+
+
+  <p>두 제품에 대해 자세히 알아보려면 <a href="https://azure.microsoft.com/en-us/services/azure-sentinel/" target="_blank">Azure Sentinel 홈페이지</a> 또는 <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">Azure Security Center 홈페이지</a>를 방문하세요.</p>

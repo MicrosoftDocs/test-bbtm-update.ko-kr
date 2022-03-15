@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 98766fe47087048ae111503eb95e116f3758ae05
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907221"
+Slug: cross-post-updates-to-windows-azure-mobile-web-sites-sql-data-sync-acs-media-store
+Title: '교차 게시: Windows Azure에 대한 업데이트(모바일, 웹 사이트, SQL 데이터 동기화, ACS, 미디어, 스토어)'
+Summary: 오늘 아침에는 Azure를 Windows 여러 가지 향상된 기능을 발표했습니다.&nbsp; 이러한 새로운 기능에는 Mobile Services(작업 스케줄러 지원, 유럽 지역 지원, 명령줄 지원) 웹...
+Content: <p>오늘 아침에는 Azure를 Windows 여러 가지 향상된 기능을 발표했습니다.&nbsp; 이러한 새로운 기능은 다음과 같습니다.</p>  <ul>  <li>Mobile Services(작업 스케줄러 지원, 유럽 지역 지원, 명령줄 지원)</li>  <li>웹 사이트(확장 개선 사항, 통합 소스 제어)</li>  <li>SQL 데이터 동기화(새 HTML 포털에서 지원)</li>  <li>ACS 관리(새 HTML 포털에서 지원)</li>  <li>Media Services(작업 및 작업 관리, Blob Storage 지원, 예약된 컴퓨팅)</li>  <li>Virtual Network 개선 사항</li>  <li>구독 필터링 지원</li>  <li>Windows Azure Store(현재 더 많은 국가에서 사용 가능)</li>  </ul>  <p>이러한 모든 개선 사항은 이제 프로덕션 환경에 적용되며 즉시 사용을 시작할 수 있습니다.&nbsp; <a href="https://weblogs.asp.net/scottgu/archive/2012/12/21/great-updates-to-windows-azure-mobile-services-web-sites-sql-data-sync-acs-media-more.aspx">내 블로그의 모든 세부 정보를 통해 전체 게시물을</a> 확인하세요.</p>  <p>스콧</p>

@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6d8cbfdeb50ecb6f819d68cb8a3655b5c7929bbb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907278"
+Slug: blockchain-identity-proofs
+Title: Microsoft 및 Tierion이 블록체인 증명을 & 증명에 대해 공동 작업
+Summary: Microsoft의 탈중앙화 ID 이니셔티브의 목표는 사용자와 조직이 ID 및 관련 데이터를 제어할 수 있도록 하는 것입니다. 사용자가 자신의 ID로 데이터, 클레임 또는 계약에 서명할 수 있는 기술을 빌드하고 있습니다. 이러한 ID 서명된 데이터의 비트를 증명이라고 합니다.
+Content: >-
+  <p class="part" data-endline="7" data-startline="7"><em>ID 팀의 Daniel Buchner는 Microsoft&nbsp; One의 분산 ID 이니셔티브에 대해 다양한 조직과 협력하고 있습니다. 이러한 조직인 Tierion은 이 게시물에 설명된 증명에 대한 데이터 정렬에 최선을 다하고 있습니다.</em></p>
+
+
+  <p class="part" data-endline="7" data-startline="7">Microsofts&rsquo; 탈중앙화 ID 이니셔티브의 목표는 사용자와 조직에게 사용자가 자신의 ID로 데이터, 클레임 또는 계약에 서명할 수 있도록 하는 ID 및 관련 데이터 Were&rsquo; 빌드 기술을 제어하도록 하는 것입니다. 이러한 ID 서명된 데이터의 비트는 Microsoft 및 <a href="https://tierioncom/" target="_blank"><u>Tierion</u></a> 이 증명&rsquo;을 생성, 관리 및 유효성 검사하는 서비스에서 공동 작업하는 증명이라고 합니다. 이 기술이 개발자와 조직의 요구에 어떻게 도움이 되는지 다시 살펴보기</p>
+
+
+  <p class="part" data-endline="9" data-startline="9">나중에 온라인 과정을 수강하고 필요한 작업을 완료했음을 증명하는 증명을 받을 수 있습니다. 이 증명은 교육 조직&rsquo; <a href="https://blockstackorg/" target="_blank"><u>분산 식별자에</u></a> 의해 디지털 서명되고 보안 공용 블록체인에 뿌리를 둔 타임스탬프 증명은 누구나 서명자 또는 해당 서비스 공급자를 신뢰하지 않고도 ID를 확인하고 이 데이터의 유효성을 검사할 수 있습니다. 블록체인은 신뢰 증명의 루트 역할을 하며 보안 데이터 저장소에 보관됩니다. 사용자가 완전히 제어하는 업계는 때때로 이 <a href="https://wwwlifewithalacritycom/2016/04/the-path-to-self-soverereign-identityhtml" target="_blank"><u>자기 주권 ID</u></a>를 호출합니다.</p>
+
+
+  <p class="part" data-endline="11" data-startline="11">계층화는 이 그림에 어떤 영향을 주나요? 비 거부는 금융 서비스, 의료 및 보험과 같은 규제 산업에 중요합니다. 이러한 조직은 데이터 계층 연결 데이터를 블록체인에 백데이트하거나 수정하기 위한 공모가 있었다&rsquo;는 것을 증명하고 데이터&rsquo; 무결성 및 존재에 대한 타임스탬프 증명을 생성해야 합니다. 이 증명을 가진 사람은 신뢰할 수 있는 기관에 의존하지 않고 독립적으로 데이터를 확인할 수 있습니다.</p>
+
+
+  <p class="part" data-endline="13" data-startline="13">비트코인과 같은 퍼블릭 블록체인은 <a href="https://wwwcoindeskcom/bitcoins-security-model-deep-dive/" target="_blank"><u>매우 안전</u></a>하지만, 비트코인 네트워크의 현재 처리량은 초당 약 4개의 트랜잭션입니다. 계층화는 수백만 개의 데이터 요소를 암호화하여 블록체인을 신뢰 앵커로 사용하기 위해 개발한 오픈 소스 <a href="https://chainpointorg/" target="_blank"><u>체인포인트</u></a> 프로토콜을 활용하는 서비스에서 <a href="https://tierioncom/" target="_blank"><u>Tierion</u></a>으로 작업하는 단일 트랜잭션 Were&rsquo;에 암호화하여 이 확장성 문제를 해결합니다.</p>
+
+
+  <p class="part" data-endline="13" data-startline="13"><img alt="" src="" style="width: 800px; height: 250px;"></p>
+
+
+  <p class="part" data-endline="13" data-startline="13">Microsoft와 Tierion 간의 협업은 탈중앙화 ID 이니셔티브를 진행하면서 앞으로 몇 달 안에 더 많은 콘텐츠, 협업 및 공지 사항을 찾는 개발자에게 최고의 블록체인 기반 도구 및 서비스를 제공하는 또 다른 중요한 단계입니다.</p>
+
+
+  <p class="part" data-endline="13" data-startline="13">&nbsp;</p>

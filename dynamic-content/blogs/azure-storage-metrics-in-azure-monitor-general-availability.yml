@@ -1,0 +1,37 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 98cc387f8d677a39ca3886fc922445f1afd5ffc4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907298"
+Slug: azure-storage-metrics-in-azure-monitor-general-availability
+Title: '일반 공급: Azure Monitor에서 메트릭 Azure Storage'
+Summary: 이전에 공개 미리 보기로 제공되었던 Azure Monitor의 Azure Storage 메트릭이 이제 일반 공급됩니다.
+Content: >-
+  <p>이전에 <a href="https://azure.microsoft.com/en-us/blog/azure-storage-metrics-in-azure-monitor-public-preview/" target="_blank">공개 미리 보기</a>로 제공되었던 Azure Monitor의 Azure Storage 메트릭이 이제 일반 공급됩니다.</p>
+
+
+  <p>Azure Monitor는 Azure 리소스에 대한 모니터링 데이터의 단일 원본을 제공하는 플랫폼 서비스입니다. Azure에서 Azure Monitor를 통해 리소스의 메트릭과 로그에 대해 시각화, 쿼리, 라우팅, 보관 및 조치를 수행할 수 있습니다. 모니터 포털 블레이드, Azure Monitor SDK(소프트웨어 개발 키트) 및 다른 여러 방법을 통해 데이터로 작업할 수 있습니다. Azure Storage Azure의 기본 서비스 중 하나이며, 이제 하나의 통합 보기에서 다른 메트릭과 함께 스토리지 메트릭을 차트로 작성하고 쿼리할 수 있습니다. Azure Storage 메트릭을 정의하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-metrics-in-azure-monitor" target="_blank">설명서를</a> 참조하세요.</p>
+
+
+  <p>메트릭을 기반으로 구축된 기능은 클라우드별로 다르게 사용할 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-monitor-general-availability-of-multi-dimensional-metrics-apis/" target="_blank">Azure Monitor SDK</a> (REST, .Net, Java &amp; CLI): 모든 클라우드에서 사용 가능</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-metric-charts#how-do-i-create-a-new-chart" target="_blank">메트릭 차트</a>: 퍼블릭 클라우드에서 사용할 수 있으며 소버린 클라우드에서 출시 예정</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview-unified-alerts" target="_blank">경고</a>: 퍼블릭 클라우드에서 사용할 수 있으며 소버린 클라우드에서 출시 예정</li>
+  </ul>
+
+
+  <p>한편, 이전 메트릭은 클래식이 되며 여전히 지원됩니다. 다음 스크린샷은 전환 환경이 무엇인지 보여 줍니다. 경고 및 메트릭은 새 메트릭에서 작동하며 경고(클래식), 메트릭(클래식), 진단 설정(클래식) 및 사용량(클래식)은 클래식 메트릭에서 작동합니다.</p>
+
+
+  <p style="margin: 0in; font-family: calibri; font-size: 11pt;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ca948a21-673a-4f23-9f7b-8a02931fb813.png"><img alt="AzureStorageMetricsTransitionExperience" border="0" height="741" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7e6ac369-0e23-45e7-aa2b-073c2e4541ff.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AzureStorageMetricsTransitionExperience" width="1151"></a></p>
+
+
+  <p style="margin: 0in; font-family: calibri; font-size: 11pt;">&nbsp;</p>
+
+
+  <p>클래식 메트릭의 지원은 나중에 조기 통지로 종료됩니다. <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-metrics-migration" target="_blank">마이그레이션 지침</a>에 따라 워크로드 또는 모니터링을 마이그레이션하여 새 메트릭을 채택하는 것이&#39;.</p>

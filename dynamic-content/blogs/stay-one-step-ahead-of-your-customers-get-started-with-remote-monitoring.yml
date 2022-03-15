@@ -1,0 +1,111 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0894d80c5c9bd5a7a1cf529fdeb0dd3cf92e49d0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900340"
+Slug: stay-one-step-ahead-of-your-customers-get-started-with-remote-monitoring
+Title: '고객보다 한 단계 앞서 나가기: 원격 모니터링 시작'
+Summary: 비즈니스에서 과거에 원격 모니터링을 살펴본 적이 있다면 이제 다시 살펴볼 차례입니다. IoT(사물 인터넷) 기술과의 통합으로 핵심 비즈니스 프로세스의 작동 방식이 바뀌었습니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/056ddea2-0c59-496c-9491-7eff8ace5ed8.png"><img alt="IoT blog 2" border="0" height="472" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c4c669a5-7247-406c-920f-3a3188ce0cdb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT 블로그 2" width="1024"></a></p>
+
+
+  <p>비즈니스에서 과거에&rsquo; 원격 모니터링을 살펴본 적이 있다면 IoT(<a href="https://www.internetofyourthings.com/">사물 인터넷</a>) 기술과의 통합이 핵심 비즈니스 프로세스의 작동 방식을 바꾸어야 할 &mdash; 때입니다. 다른 사람들은 잠재적 &mdash; 기업이 원격 모니터링 및 기타 IoT 애플리케이션을 점점 더 많이 채택하고 있다고 보고 있습니다. <a href="https://www.businesswire.com/news/home/20160921005122/en/IDCs-2016-Global-IoT-Decision-Maker-Survey">IDC</a> 는 조사 대상 조직의 31.4%가 IoT 솔루션을 출시했으며, 43%는 향후 12개월 안에 배포할 것으로 나타났습니다.&nbsp; 원격 모니터링 및 IoT 기술은 핵심 비즈니스 프로세스를 실행하는 방식을 변경했으며 다양한 방법으로 지속적으로 가치를 제공하고 있습니다. 데이터 개인 정보 보호, <a href="https://blogs.microsoft.com/microsoftsecure/2016/10/26/securing-the-internet-of-things-introducing-the-security-program-for-azure-iot/">보안</a> 및 구현 비용과 같은 문제는 이러한 종류의 기술 변화를 피하기 위한 타당한 이유처럼 보일 수 있지만 실제로 <a href="https://blogs.microsoft.com/iot/2016/09/08/four-principles-for-maximizing-the-roi-of-iot/">는 ROI를 최대화</a>하고 <a href="https://www.microsoft.com/en-us/cloud-platform/trusted-cloud">데이터를 보호</a> 하며 IoT를 사용하는 동안 <a href="https://download.microsoft.com/download/8/C/4/8C4DEF9B-041B-47F3-AD7F-52F391B1D0AB/Securing_your_Internet_of_Things_from_the_ground_up_white_paper_EN_US.pdf">포괄적인 보안을 보장할</a> 수 있는 많은 방법이 있습니다.</p>
+
+
+  <p>최첨단 아이디어에서 필수 산업 표준으로 빠르게 진화하는 원격 모니터링은 반복적으로 그 가치를 입증했습니다. 크고 작은 제조업체는 IoT 지원 원격 모니터링에서 많은 가치를 보고 있으므로 효율성 향상, 더 나은 사용률 및 낮은 비용의 보상을 거두기 위해 많은 투자를 하고 있습니다. 애버딘의 보고서에 따르면 2015년 현재 <a href="https://www.ptc.com/service-lifecycle-management/evolution-of-smart-service?utm_source=field%20service%20digital%20%20fieldservice.com&amp;utm_medium=referral&amp;utm_campaign=SV%20Aberdeen%20Evolution%20of%20Smart%20Service%20Report&amp;utm_content=SV_Aberdeen_Evolution_of_Smart_Service_Report-field_service_digital__fieldservice.com-referral-Aberdeen_Report-NA-2536&amp;cl1=SV_Aberdeen_Evolution_of_Smart_Service_Report-field_service_digital__fieldservice.com-referral-Aberdeen_Report-NA-2536&amp;cmsrc=field%20service%20digital%20%20fieldservice.com&amp;cid=701F0000000c8EvIAI&amp;elqCampaignId=684">현장에서</a> 서비스 가능한 장비의 40%가 네트워크에 연결되어 있으며, 이는 2013년의 35%에서 증가했습니다.&nbsp; 그리고 이러한 상승 추세는 변하지 않을&rsquo; 것입니다. 점점 더 많은 제조업체가 원격 모니터링의 이점을 실현함에 따라 Itll&rsquo;은 차별화 요소가 되지 않을 것이며 경쟁력을 유지하기 위한 요구 사항이 될 것입니다.</p>
+
+
+  <p>비즈니스는 가시성을 향상시키거나 혁신적인 비즈니스 모델을 탐색하고자 하며 원격 모니터링은 다양한 비즈니스 혜택을 위한 토대를 마련합니다. &rsquo;기업이 원격 모니터링을 구현하고 가치를 보는 몇 가지 방법을 살펴보겠습니다.</p>
+
+
+  <h2>비즈니스 전반의 가시성 향상</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0e75a3bb-736c-480f-9b73-42f80fb87a17.png"><img alt="IoT blog 2 1" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2aa0504-6bef-4b2c-8978-edf7e0e5e82e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT 블로그 2 1" width="490"></a></p>
+
+
+  <p>Imagine 자산에 눈과 귀가 있고 실시간으로 대화할 수 있는지를 나타냅니다. &rsquo;IoT 기반 원격 모니터링의 기능을 통해 항상 모든 자산에서 발생하는 일을 정확하게 확인할 수 있습니다. 원격 모니터링 솔루션은 전 세계의 센서 지원 장비에서 데이터를 수집, 통합 및 구성하여 실시간 가시성을 확보합니다. 수동, 비용이 많이 드는 시간 집약적 프로시저였던 프로시저는 이제 동적, 자동화 및 즉각적일 수 있습니다. 연결된 디바이스의 라이브 데이터를 사용하여 조직은 상태에 대한 일정한 펄스를 가지며 현재 조건에 신속하게 자동으로 응답할 수 있습니다.</p>
+
+
+  <p>원격 모니터링을 사용하면 전문가가 여행하지 않고도 잠재적인 문제를 볼 수 있습니다. 모든 성능 데이터를 함께 사용하면 모든 위치에서 잠재적인 문제에 대한 사전 대응을 위해 가장 강력한 지원 엔지니어의 전문 지식을 확장할 수 있습니다.</p>
+
+
+  <p>예를 들어, 세계에서 가장 큰 산업 자동화 회사 중 하나인 <a href="https://www.microsoft.com/en-us/cloud-platform/customer-stories-rockwell-automation">Rockwell Automation</a>은 석유 산업의 일부 고객이 공급망을 모니터링하고 고가의 장비에 대한 투자를 모니터링하는 방식을 바꾸는 데 도움을 주었습니다. 회사의&rsquo; 글로벌 공간 때문에 모든 현장 자산 및 고객 제품이 지정된 시간에 어떻게 운영되는지 잘 읽는 것은 거의 불가능했습니다. 장비 데이터가 잠재적인 문제를 가리킬 수 있더라도, 그에 따라 행동하는 데 너무 많은 시간이 걸렸기 때문에 문제가 종종 발생할 수 있습니다. Microsoft <a href="https://www.microsoft.com/en-us/cloud-platform/internet-of-things-azure-iot-suite">Azure IoT Suite</a>에 자산을 연결하는 센서를 배포한 후 Rockwell은 알래스카의 석유 굴착 장치에서 코너 주유소에 이르기까지 전체 공급망을 처음부터 끝까지 볼 수 있었습니다. 압력, 온도 및 유량과 같은 장비 성능 및 상태 요인에 대한 실시간 정보를 캡처하여 비즈니스 전반에 걸쳐 향상된 가시성을 얻을 수 있었습니다. 이러한 새로운 인사이트를 통해 Rockwell은 프로세스를 미세 조정하고 잠재적인 문제 및 실패 &mdash; 에 대한 사전 예방적이고 규범적인 지침을 고객에게 제공하여 비용이 많이 드는 가동 중지 시간을 크게 줄일 수 있습니다.</p>
+
+
+  <h2>비즈니스 프로세스를 대상으로 개선</h2>
+
+
+  <p>원격 모니터링은 모니터링 비용을 줄이고 가시성을 높이는 것으로 시작합니다. 그러나 이러한 가시성은 에너지 사용량 감소, 향상된 고객 서비스, 예측 유지 관리 프로그램 및 새로운 혁신과 같은 비즈니스의 다른 개선 사항도 유도합니다.</p>
+
+
+  <h3>비용 효율적인 에너지 관리</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ff863ad0-b482-4f05-b51a-764cad9aa946.png"><img alt="IoT blog 2 3" border="0" height="296" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a18d400-11dd-43d0-a08d-3f1401121a44.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT 블로그 2 3" width="640"></a></p>
+
+
+  <p>고객이 여기서 Azure IoT Suite의 원격 모니터링 기능을 활용하는 방법에 대해 자세히 알아보세요.</p>
+
+
+  <p>에너지 사용량 및 비용을 효과적으로 관리하려면 전력 및 에너지 시스템에 대한 인사이트가 필요합니다. 현장 없이 에너지 사용량을 모니터링하고 관리할 수 있으므로 팀은 에너지 부하 분산을 최적화하고 가동 중단을 방지하여 비용을 절감할 수 있습니다. 데이터를 실행 가능한 인사이트로 변환하면 잠재적인 문제를 사전에 해결하고 가동 중지 시간을 최소화할 수 있습니다.</p>
+
+
+  <p>Azure IoT Suite의 원격 모니터링 기능이 이를 가능하게 한 방법의 주요 예는 <a href="https://www.johnsoncontrols.com/insights/2016/buildings/features/smart-connected-chillers"><strong>Johnson Controls</strong></a>입니다. 건물용 센서 및 장비의 선도적인 제조업체인 Johnson Controls는 건물 운영 및 유지 관리 요구 사항에 대한 실시간 인사이트를 사전에 제공하고자 했습니다. 건물 운영에 대한 통찰력이 부족하다는 것은 고객이 편안함과 안전 문제를 사후적으로 처리하고 비용을 제어할 수 없다는 것을 의미했습니다. Johnson Controls는 Microsoft와 협력하여 수천 개의 냉각기, 5,000개 이상의 옥상 및 약 40,000개의 건물 하위 시스템을 <a href="https://www.microsoft.com/en-us/cloud-platform/internet-of-things-azure-iot-suite">Azure IoT Suite</a>에 연결했습니다. 이 데이터를 수집하고 분석함으로써 Johnson Controls는 고객이 에너지 소비와 비용을 줄여 건물을 보다 효율적으로 관리할 수 있도록 지원했습니다.</p>
+
+
+  <h3>향상된 현장 유지 관리 및 고객 서비스</h3>
+
+
+  <p>더 복잡한 장비 및 제품에는 더 복잡한 수정이 필요합니다. 특수 장비 및 수리 절차를 사용하면&rsquo; 서비스 기술자가 더 이상 정보를 알지 못하는 고객 사이트에 표시할 수 없습니다. 한 부분이나 도구가 타고 함께하지 않는 경우, 기술은 수리를 연장하고 고객을 좌절, 일정을 조정해야합니다. 성능 데이터를 공유하는 스마트 및 연결된 머신은 서비스 기술자가 각 서비스 방문을 통해 더 많은 준비와 생산성을 높일 수 있음을 의미합니다. 그들은 문제를 처음 해결하기 위해 올바른 도구, 부품 및 워크플로를 갖춘 도착 할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c0f117e-91c2-4a97-8dbe-4b5caefab675.png"><img alt="Discover more about how customers have delivered service excellence here with Microsoft’s Connected Field Service solution." border="0" height="354" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/73583c45-7417-4ce9-8521-cb7bb8cc2de2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="640"></a></p>
+
+
+  <p>Microsofts&rsquo; 연결된 필드 서비스 솔루션을 사용하여 고객이 서비스 우수성을 제공하는 방법에 대해 자세히 알아보세요.</p>
+
+
+  <p>또한 IoT를 사용하면 경험이 적은 기술자가 다른 기술이 나오거나 전화를 통해 이를 통과하지 않고도 처음으로 수리를 구동할 수 있도록 원격 진단을 사용할 수 있습니다. 고객에게 성능 인사이트와 현장 기술에 대한 원격 진단 정보를 모두 제공하는 것은 기업이 고객 만족도를 제공하는 방식을 완전히 변화시키고 시장에서 차별화를 만듭니다.</p>
+
+
+  <h3>반응형에서 사전 대응으로 이동</h3>
+
+
+  <p>원격 모니터링은 유지 관리 패러다임을 완전히 재정의합니다. 기록 데이터를 수집, 저장 및 분석하여 원격 모니터링을 통해 부품이 마모되고 서비스가 필요할 때 수학적 수준의 확실성을 확인할 수 있습니다. 고정된 일정에 의존하고 1년 동안 정상적으로 작동할 수 있는 부품을 교체하는 대신 특정 성능 임계값을 모니터링하여 부품을 교체해야 하는 시기를 파악할 수 있습니다. 이렇게 하면 문제가 발생하기 전에 비용이 많이 드는 문제를 방지할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/808fc253-2882-43dc-b767-e65f350f80f5.png"><img alt="IoT blog 2 5" border="0" height="287" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d3882e09-c375-421f-96f2-fb281b893054.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT 블로그 2 5" width="640"></a></p>
+
+
+  <p>예를 들어, <a href="https://blogs.windows.com/devices/2016/09/15/microsoft-hololens-enables-thyssenkrupp-to-transform-the-global-elevator-industry/">ThyssenKrupp</a> 는 세계에서 가장 유명한 건물 중 일부에 설치된 110만 개의 엘리베이터를 더 잘 모니터링하고 서비스를 제공하고자 했습니다. 통찰력이 부족하여 예측되지 않은 오류로 인해 비용이 많이 드는 가동 중지 시간이 발생했습니다. 엘리베이터에 내장된 수천 개의 센서를 Microsoft 클라우드에 연결함으로써 ThyssenKrupp는 HoloLens 통해 제품 성능과 신속한 원격 진단 기능에 대한 실시간 가시성을 얻었습니다. 이제 ThyssenKrupp는 <a href="https://www.microsoft.com/en-us/cloud-platform/internet-of-things-azure-iot-suite">Azure IoT Suite</a>를 통해 20,000명의 엘리베이터 서비스 기술자를 무장시켜 작업 전에 문제를 시각화하고 식별하고 현장의 기술 및 전문가 정보에 원격으로 핸즈프리로 액세스할 수 있도록 함으로써 유지 관리 비용과 엘리베이터 가동 중지 시간을 줄입니다.</p>
+
+
+  <h3>안내된 혁신 및 보다 쉬운 제품 디자인</h3>
+
+
+  <p>원격 모니터링 솔루션을 통해 자산 센서를 함께 연결하면 제품 재설계를 안내하고, 향후 개발을 알리고, 혁신을 주도할 수 있습니다. 운영 온도와 같은 성능 데이터는 디자인 팀이 원래 디자인 사양과 비교할 때 과도하거나 과소 서명된 내용을 이해하는 데 도움이 될 수 있습니다. 또한 제품 내 센서를 사용하면 디자이너가 가장 자주 사용되는 기능과 향후 제외될 수 있는 기능을 쉽게 알 수 있습니다. 사용하지 않는 기능을 줄이면 비용을 절감하거나 작동이 더 간단하거나 직관적인 새 버전의 제품을 만들 수 있습니다. 사용량 현황 데이터를 활용하여 이전에 알려지지 않은 시장 또는 다른 제품의 혜택을 모두 함께 얻을 수 있는 고객의 하위 집합을 검색할 수도 있습니다.</p>
+
+
+  <h2>새로운 비즈니스 인사이트 얻기 및 혁신적인 비즈니스 모델 살펴보기</h2>
+
+
+  <p>전체 그림을 볼 수 있으면 결코 가능하지 않은 연결을 만드는 것이 더 쉬워집니다. IoT 및 빅 데이터까지는 서로 다른 데이터 사일로의 정보를 수집하고 상관 관계를 지정하기가 어려웠습니다. 비즈니스 및 인사이트는 회사 내 수직으로 제한되었습니다. 데이터를 Azure IoT Suite로 이동하면 추세를 파악하고 회사 내에서 잠재적인 기회를 파악하는 것이&rsquo; 더 쉬워졌습니다. <a href="https://www.rolls-royce.com/media/press-releases/yr-2016/11-07-2016-rr-takes-totalcare-digital-with-microsoft-and-singapore-airlines.aspx">롤스로이스(Rolls-Royce</a>)와 같은 주요 제조업체는 고객에게 제공할 수 있는 이러한 향상된 데이터 인사이트를 기반으로 새로운 수익원을 개방하고 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b5e69092-4bd4-417b-b89d-4b841f3270a6.png"><img alt="IoT blog 2 6" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7433c7d5-cc8c-4622-8915-24df975b9a23.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT 블로그 2 6" width="470"></a></p>
+
+
+  <p>Rolls-Royce 20년 전 엔진 서비스 제공으로 항공 산업을 혼란에 빠뜨렸고, 이제는 Azure IoT Suite의 인사이트를 통해 다시 한 번 항공 산업을 혼란에 빠뜨렸습니다. 자산을 연결한 후 고객이 엔진을 사용하는 방법을 확인하고 엔진과 연료 성능을 비교하고 교육 및 유지 관리 지원을 통해 효율성을 개선하기 위해 항공사에 권장 사항을 제공할 수 있었습니다. 이 인사이트는 새 서비스인 TotalCare&reg;를 생성합니다. TotalCare&reg;는 엔진 유지 관리 계획일 뿐 아니라&rsquo; 엔진 상태,&rsquo; 연료 사용량 및 기타 데이터 요소에 대한 데이터를 수집하고 집계하여 <a href="https://www.microsoft.com/en-us/cloud-platform/internet-of-things-azure-iot-suite">Azure IoT Suite</a> 및 <a href="https://www.microsoft.com/en-us/cloud-platform/cortana-intelligence-suite">Cortana Intelligence Suite</a> 실시간으로 집계하여 고객에게 향상된 가시성을 제공하는 포괄적인 서비스 모델입니다. TotalCare&reg;를 통해 Rolls-Royce 고객이 항공편 중단을 줄이고 연간 수백만 달러를 절약할 수 있도록 돕고 있습니다.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <p>원격 모니터링은 한동안 사용되어 왔지만 IoT를 사용하면 완전히 새로운 일련의 비즈니스 이점을 제공할 수 있습니다. 이 솔루션은 예측 유지 관리, 연결된 현장 서비스 및 제품 혁신과 같은 사용 사례에 대한 심층적인 가시성과 진단을 조직에 제공합니다. 자산이 길가에 있든 전 세계에 걸쳐 있든 관계없이&rsquo; 비즈니스 경쟁력과 차별화를 유지하는 실시간 의사 결정을 내리는 데 필요한 통찰력을 얻을 수 있습니다.</p>
+
+
+  <p>비즈니스에 대한 전체 가치를 잠금 해제할 준비가 되셨나요? <a href="https://azure.microsoft.com/en-us/solutions/remote-monitoring/">IoT 솔루션과 함께</a> Microsofts&rsquo; 원격 모니터링을 사용하여 자산 데이터를 클라우드로 원활하게 가져와 필요한 비즈니스 인사이트를 얻습니다. <a href="https://www.InternetofYourThings.com">IoT가 오늘날 비즈니스를 어떻게 변화시킬 수</a> 있는지에 대해 자세히 알아보세요.</p>

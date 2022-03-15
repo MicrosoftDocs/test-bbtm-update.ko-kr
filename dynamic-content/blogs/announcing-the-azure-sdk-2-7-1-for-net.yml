@@ -1,0 +1,125 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9c9a194c38516ccdecb89a4ca71197a76189a23b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906896"
+Slug: announcing-the-azure-sdk-2-7-1-for-net
+Title: .NET용 Azure SDK 2.7.1 발표
+Summary: 오늘 Visual Studio 2013 및 Visual Studio 2015용 Azure SDK 2.7.1을 발표하게 되어 기쁩니다. 이 릴리스에는 Azure용 Visual Studio Tools 몇 가지 개선 사항이 포함되어 있습니다.
+Content: >-
+  <p>오늘 Visual Studio 2013&rsquo; 및 Visual Studio 2015용 Azure SDK 2.7.1을 발표하게 되어 기쁩니다. 이 릴리스에는 Azure용 Visual Studio Tools 몇 가지 개선 사항이 포함되어 있으며 <a href="https://www.dreamspark.com/Product/Product.aspx?productid=99">DreamSpark</a> 또는 <a href="https://mspartner.microsoft.com/en/us/pages/solutions/cloud-reseller-FAQ.aspx">클라우드 솔루션 공급자</a> 프로그램에 등록된 고객 환경을 개선합니다. 이 게시물에서는 업데이트와 새 도구가 Azure 개발 환경을 개선하는 방법을 요약합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/downloads/">.NET용 Azure SDK 2.7.1</a> [<a href="https://go.microsoft.com/fwlink/?LinkId=616239">VS 2015VS</a> |  <a href="https://go.microsoft.com/fwlink/?LinkId=616240">2013</a>용 다운로드]</p>
+
+
+  <ul>
+   <li><b>Visual Studio 2013 대한 향상된 지원</b>: Azure SDK 2.7.1은 2015년 Visual Studio <a href="https://azure.microsoft.com/blog/2015/07/20/announcing-the-azure-sdk-2-7-for-net">Azure SDK 2.7 릴리스</a>에서 사용할 수 있는 기능과 동등한 Visual Studio 2013 제공합니다. Visual Studio 2013 이제 <a href="https://www.dreamspark.com/Product/Product.aspx?productid=99">DreamSpark</a> 및 <a href="https://mspartner.microsoft.com/en/us/pages/solutions/cloud-reseller-FAQ.aspx">클라우드 솔루션 공급자</a> 고객 계정을 지원합니다. 이제 Visual Studio 2013 새 클라우드 탐색기 도구 창도 사용할 수 있습니다.</li>
+   <li><b>Visual Studio 위한 HDInsight 도구 개선</b>: 빅 데이터 개발자는 Hive 작업 운영자 보기, Hive 오류 표식 및 Storm 토폴로지 Graph 개선된 이점을 누릴 수 있습니다. 또한 Weve&rsquo;는 HDInsight에 대한 IntelliSense 제안을 몇 가지 개선했습니다.</li>
+   <li><b>Azure Resource Manager 도구는</b> 더 나은 IntelliSense를 포함하고 게스트 내 사용자 지정을 더 쉽게 사용하여 가상 머신의 배포를 자동화하도록 업데이트되었습니다.</li>
+   <li><b>AZCopy 3.2.0 RTM</b>: 이 업데이트에는 새 스토리지 Blob 유형 <b>추가 Blob</b> 및 FIPS 규격 MD5 설정에 대한 지원이 포함됩니다. <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2015/08/18/azcopy-introducing-append-blob-file-storage-asynchronous-copying-file-storage-share-sas-table-storage-data-exporting-to-csv-and-more.aspx">자세한 내용은 Azure Storage 블로그</a>에서 확인할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>향상된 Visual Studio 2013 지원</h2>
+
+
+  <p><a href="https://azure.microsoft.com/blog/2015/07/20/announcing-the-azure-sdk-2-7-for-net">Azure SDK 2.7 릴리스</a>에서는 2015년 Visual Studio 역할 기반 액세스 제어, 클라우드 솔루션 공급자, DreamSpark 및 기타 계정 및 구독 유형을 통해 Azure에 액세스하는 계정에 대한 지원을 추가했습니다. Azure SDK 2.7.1을 사용하면 이러한 계정 및 구독도 Visual Studio 2013 지원됩니다.</p>
+
+
+  <p>Azure SDK 2.7.1에서는 <a href="https://msdn.microsoft.com/en-us/library/azure/mt185741.aspx">클라우드 탐색기</a> 도구 창도 Visual Studio 2013. 이제 Visual Studio 2015년 클라우드 탐색기를 통해 제공되는 모든 성능 및 확장성 개선 사항도 Visual Studio 2013 사용할 수 있습니다.</p>
+
+
+  <h3>Azure 리소스 관리자 도구</h3>
+
+
+  <p>Azure Resource Manager 도구는 더 많은 리소스 공급자를 위한 IntelliSense를 포함하고 게스트 내 사용자 지정을 사용하여 가상 머신을 더 쉽게 배포할 수 있도록 개선되었습니다.</p>
+
+
+  <p>이제 IntelliSense는 함수 이름 &amp; 매개 변수 또는 변수 검사를 포함하여 템플릿 언어 식에 대한 몇 가지 오류 검사를 표시합니다. 자동 완성은 Storage, 네트워킹 및 컴퓨팅을 포함한 더 많은 리소스 공급자를 포함하도록 업데이트되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c788f2dd-30e3-4bf5-b2ef-943eb01c4c63.png"><img alt="intellisense - fin" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/82151bd9-5dba-4d96-ba8a-fd69ea3627f7.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="intellisense - fin" width="606"></a></p>
+
+
+  <p>IntelliSense를 구동하는 스키마는 캐시되지만 <i>Ctrl+Shift+J</i>를 누르거나 마우스 오른쪽 단추를 클릭하고 배포 템플릿을 편집하는 동안 스키마&rdquo; 다시 로드를 선택하여 &ldquo;수동으로 업데이트할 수 있습니다.</p>
+
+
+  <p>가상 머신 구성의 경우 JSON 개요 보기를 사용하여 템플릿에 JSON 코드 조각을 추가하는 경우 배포 중에 Azure Resource Manager에 대한 구성 아티팩트가 자동으로 스테이징되도록 템플릿 및 프로젝트가 업데이트됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a4b036e6-6f47-4490-b0f9-84c6ac88c03c.jpg"><img alt="clip_image004" border="0" height="467" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ae62dd34-e027-4f6c-acf9-add8b5afaf43.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image004" width="623"></a></p>
+
+
+  <p>JSON에서 속성이 매개 변수화되었으며 구성 스크립트가 프로젝트에 자동으로 추가된 것을 볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2bf8200e-b64d-49db-a063-b00644150b26.png"><img alt="dsc extension in json" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/280aeb33-8dbb-4843-9443-d037a11c9c21.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="json의 dsc 확장" width="594"></a></p>
+
+
+  <p>템플릿을 배포할 때 Visual Studio 템플릿을 배포하는 데 사용하는 Deploy-AzureResourceGroup.ps1 스크립트는 DSC에서 가상 머신을 구성하는 데 사용하는 zip 보관 파일을 자동으로 만들고 업로드합니다. 그런 다음 템플릿 매개 변수 값은 배포할 아티팩트 위치를 Azure Resource Manager에 알리기 위해 스크립트에 의해 자동으로 설정됩니다. 도구에서 처리되므로 배포 전에 아티팩트가 수동으로 스테이징할 필요가 없습니다. 특정 위치에 아티팩트가 이미 있는 경우 배포 중에 해당 값을 제공하면 생성된 값 대신 해당 값이 사용됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/20826c90-c16a-4b1e-8b1f-1f7d9e648293.png"><img alt="clip_image007" border="0" height="428" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b2ee10fc-6d22-4d0d-b0d4-2a996ab07613.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image007" width="500"></a></p>
+
+
+  <h2>HDInsight 도구의 향상된 기능</h2>
+
+
+  <p>이 섹션에서는 HDInsight 팀이 Visual Studio 도구 환경에 적용한 일부 업데이트에 대해 자세히 설명합니다.</p>
+
+
+  <h3>새 Azure Portal에서 만든 HDInsight 클러스터 지원</h3>
+
+
+  <p>새 Azure Portal에서 만든 클러스터(기존 HDInsight Tools for Visual Studio 버전에는 나열할 수 없습니다.)https://portal.azure.com) 몇 가지 변경 사항이 적용되었으며, 이제 모든 것이 완벽하게 &ndash; 작동하여 생성된 위치에 관계없이 모든 클러스터에 작업을 보고 제출할 수 있습니다.</p>
+
+
+  <h3>Hive 작업 연산자 보기</h3>
+
+
+  <p>Hive 쿼리를 더 잘 이해할 수 있도록 이 릴리스에서 Hive 연산자 보기를 추가합니다. 작업 그래프의 꼭짓점을 두 번 클릭해야 꼭짓점 내의 모든 운영자를 볼 수 있습니다. 특정 운영자에 대한 자세한 정보를 보려면 이 운영자를 마우스로 가리킵니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/89fa5ab8-3f34-4424-b45b-0eb62feaa2cf.png"><img alt="Operator View 1" border="0" height="387" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fbb1495c-db40-4930-981c-d1816ff56b60.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="연산자 보기 1" width="640"></a></p>
+
+
+  <h3>Hive 오류 표식</h3>
+
+
+  <p>이 릴리스에서는 문법 오류를 즉시 볼 수 있도록 Hive 오류 마커를 도입했습니다. 또한 클러스터에서 스크립트를 실행 &amp; 하지 않고 Hive 스크립트에 구문 오류가 있는 경우와 동일한 오류 메시지를 볼 수 있도록 오류 메시지를 개선했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b09039de-1a33-41fa-a3d3-4c51ac92dd16.jpg"><img alt="clip_image011" border="0" height="350" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a3292719-accb-42c3-ae57-5656a3aa3b38.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image011" width="624"></a></p>
+
+
+  <h3>Storm 토폴로지 Graph</h3>
+
+
+  <p>토폴로지의 작동 여부를 확인하려는 경우 시각화가 매우 중요합니다. 이 릴리스에서는 Storm 그래프에 대한 시각화가 추가되었습니다. 토폴로지의 중요한 메트릭을 시각적으로 보고 특정 Bolt가 색으로 사용&rdquo; 중&ldquo;인지 여부를 확인할 수 있습니다. Bolt/Spou를 두 번 클릭하여 자세한 정보를 볼 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7c086dba-e0f2-452a-9347-2c1173fcc203.png"><img alt="Storm Graph" border="0" height="387" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e520f14a-1513-4cfa-9f0f-3434184287da.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Storm Graph" width="640"></a></p>
+
+
+  <h3>개선 사항: 더 많은 IntelliSense가 더 빠른 Hive 메타데이터 로드를 지원&amp; 합니다.</h3>
+
+
+  <p>더 많은 사용자 친화적인 제안을 추가하여 IntelliSense를 개선했습니다. 예를 들어 이제 테이블 별칭도 IntelliSense에서 제안되므로 쿼리를 보다 쉽게 작성할 수 있습니다. 또한 Hive 메타데이터 로드 속도가 개선되어 Hive 메타스토어의 모든 데이터베이스, 테이블 및 열을 나열하는 데 몇 초밖에 걸리지 않습니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/azure-sdk-dotnet-release-notes-2_7/">2.7.1 릴리스의 Azure SDK 2.7 릴리스 정보 부록</a>에서 이전 버전의 호환성이 손상되는 변경 내용 및 새 기능의 알려진 문제에 대한 정보를 확인하세요.</p>
+
+
+  <p>Azure 계정이 아직 없는&rsquo; 경우 <a href="https://azure.microsoft.com/en-us/pricing/free-trial/">무료 평가판</a> 에 등록하고 현재 위의 모든 기능을 사용할 수 있습니다. 그런 다음 <a href="https://azure.microsoft.com/en-us/documentation/">, Azure 개발자 센터를</a> 방문하여 앱을 빌드하는 방법에 대해 자세히 알아보세요. Visual Studio IDE에서 웃는 <a href="https://go.microsoft.com/fwlink/?LinkId=517102">얼굴 보내기</a>를 통해 <a href="https://connect.microsoft.com/visualstudio">커넥트</a>, UserVoice를 통한 제안, 빠른 생각 또는 아이디어를 통해 버그를 제출할 수도 있습니다.</p>
+
+
+  <h2>크레딧</h2>
+
+
+  <p>이 블로그 문서는 여러 사람의 공동 작업입니다. 브라이언 무어, 샤오용 주, 사우라브 바티아에게 큰 감사.</p>

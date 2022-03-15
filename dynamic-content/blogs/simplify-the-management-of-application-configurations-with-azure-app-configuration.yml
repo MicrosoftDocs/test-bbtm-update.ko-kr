@@ -1,0 +1,46 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 90db7cc6415c479148756cd112a2b765e63b6691
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900637"
+Slug: simplify-the-management-of-application-configurations-with-azure-app-configuration
+Title: Azure App Configuration을 사용하여 애플리케이션 구성 관리 간소화
+Summary: 개발자 및 IT를 위한 애플리케이션 구성 및 기능 플라이팅 관리를 간소화하기 위한 새로운 서비스인 Azure App Configuration의 공개 미리 보기를 발표하게 되어 기쁩니다.
+Content: >-
+  <p>&rsquo;개발자 및 IT를 위한 애플리케이션 구성 및 기능 플라이팅 관리를 간소화하기 위한 새로운 서비스인 Azure App Configuration의 공개 미리 보기를 발표하게 되어 매우 기쁩니다. App Configuration은 사용자가 모든 애플리케이션 설정 및 기능 플래그(즉, 기능 토글)를 저장하고, 액세스를 제어하고, 필요한 구성 데이터를 제공할 수 있도록 Microsoft Azure 중앙 집중식 위치를 제공합니다.</p>
+
+
+  <h2>분산 애플리케이션에서 문제 해결이 어려운 오류 제거</h2>
+
+
+  <p>업계 전반의 기업들은 고객에게 더 나은 서비스를 제공하고, 긴밀한 관계를 촉진하고, 경쟁에 더 빠르게 대응하기 위해 디지털 조직으로 변모하고 있습니다. 우리는 고객이 가지고 있는 애플리케이션의 수가 급격히 증가하는 것을 목격했습니다. 최신 애플리케이션, 특히 클라우드에서 실행되는 애플리케이션은 일반적으로 여러 구성 요소로 구성되며 본질적으로 배포됩니다. 이러한 구성 요소에 구성 데이터를 분산하면 프로덕션 환경에서 문제를 해결하기 어려운 오류가 발생하는 경우가 많습니다. 회사에 대규모 애플리케이션 포트폴리오가 있는 경우 이러한 문제는 매우 빠르게 곱합니다.</p>
+
+
+  <p>App Configuration을 사용하면 애플리케이션 설정을 함께 유지하여 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+      <li>모든 구성 데이터에 대한 단일 통합 보기가 있습니다.</li>
+      <li>설정을 쉽게 변경하고, 값을 비교하고, 롤백을 수행할 수 있습니다.</li>
+      <li>이러한 설정을 컴퓨팅 서비스(예: App Service)에 직접 삽입하거나 CI/CD 파이프라인에 포함하거나 코드 내에서 주문형으로 검색하는 등 다양한 옵션을 애플리케이션에 제공할 수 있습니다.</li>
+  </ul>
+
+
+  <p>App Configuration을 사용하면 구성 데이터에 대한 제어를 유지하고 자신 있게 처리할 수 있습니다.</p>
+
+
+  <h2>기능 플래그를 사용하여 릴리스 속도 향상</h2>
+
+
+  <p>App Configuration에서 제공하는 핵심 솔루션 중 하나는 기능 관리입니다. 일반적으로 새 애플리케이션 기능은 릴리스되기 전에 일련의 테스트를 거쳐야 합니다. 이는 일반적으로 긴 개발 주기로 이어집니다. 기능 플래그를 사용하는 기능 관리와 같은 최신 소프트웨어 엔지니어링 방법은 애플리케이션 안정성을 보호하면서 프로덕션 환경에서 실제 테스트를 사용하도록 설정하여 주기를 단축하는 데 도움이 됩니다. 기능 관리는 특히 클라우드용 애플리케이션을 빌드할 때 많은 개발자 문제를 해결합니다.</p>
+
+
+  <p>App Configuration은 기능 관리에 대한 기본 제공 지원을 제공합니다. 이를 활용하여 배포된 애플리케이션에서 기능 가용성을 원격으로 제어할 수 있습니다. 모든 프로그래밍 언어와 함께 사용할 수 있지만 REST API를 통해 .NET Core 및 ASP.NET Core 라이브러리는 완전한 엔드 투 엔드 솔루션을 제공합니다.</p>
+
+
+  <h2>지금 시작</h2>
+
+
+  <p>App Configuration은 애플리케이션 설정 및 기능 플래그를 처리하기 위한 완전한 턴키 솔루션을 제공합니다. &rsquo;쉽게 온보딩하고 사용할 수 있습니다. 전체 설명서는 <a href="https://docs.microsoft.com/azure/azure-app-configuration/" target="_blank">Azure App Configuration Preview 설명서</a>에서 &ldquo; 찾을 수 있습니다.&rdquo; 시도해 보시고 어떻게 생각하시는지 알려주세요!</p>

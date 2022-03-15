@@ -1,0 +1,121 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ecb5ae609811a71bf0d28ab38038f2de5b36bb4f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907306"
+Slug: azure-networking-fridays-black-belt-team
+Title: Azure Black Belt 팀과 함께하는 Azure 네트워킹 금요일
+Summary: Azure 네트워킹 및 Microsoft Cloud에 대한 연결을 계획하고 설계하는 방법에 대해 자세히 알아보려면 올 가을 매주 금요일에 우리와 함께하세요.
+Content: >-
+  <p>Azure 네트워킹 금요일에 참가할 수 있습니다!</p>
+
+
+  <p>이 시간 긴 세션은 올 가을 매주 금요일에 발생합니다. 모든 고객과 파트너가 Azure 네트워킹(ExpressRoute 및 가상 네트워킹 포함)과 Microsoft Cloud에 대한 연결을 계획하고 설계하는 방법에 대해 자세히 알아볼 수 있습니다.</p>
+
+
+  <p>마지막에는 고객이 전문가에게 물어볼 수 있는 개방형 QA&amp; 세션이 열립니다. 콘텐츠 및 파트너 발표자는 각 세션에 따라 다르지만 일반적인 의제는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>Azure 네트워킹 기본 사항(10분)</li>
+      <li>금주의 심층 분석 항목(15-20분)</li>
+      <li>이번 주의 파트너 스포트라이트(15-20분)</li>
+      <li>Q&amp;A</li>
+  </ul>
+
+
+  <p>Were&rsquo;는 <strong>2016년 9월 16일 금요일</strong> 시리즈를 시작합니다.</p>
+
+
+  <p><a href="https://meet.lync.com/microsoft/omartin/JJHKTG25" target="_blank"><u>Skype 모임</u></a> 참가하고 이 시리즈를 <a href="https://azurenetworkingfridays.blob.core.windows.net/webinar-content/Azure%20Networking%20Fridays.ics" target="_blank"><u>Outlook 일정</u></a>에 추가하여 향후 세션을 놓치지 않도록&rsquo; 합니다(<a href="https://azurenetworkingfridays.blob.core.windows.net/webinar-content/Azure%20Networking%20Fridays.ics" target="_blank"><u>여기서 ICS 다운로드</u></a>).</p>
+
+
+  <h2>편의를 위해 게시하는&rsquo; 몇 가지 링크는 다음과 같습니다.</h2>
+
+
+  <ul>
+      <li>세션 녹음/녹화는 채널 9에 <a href="https://channel9.msdn.com/Shows/Azure-Networking-Fridays/" target="_blank"><u>게시</u></a>됩니다.</li>
+      <li><a href="https://aka.ms/ERCheckList" target="_blank"><u>https://aka.ms/ERCheckList</u></a> 세션에 표시된 확인 목록의 경우</li>
+  </ul>
+
+
+  <h2>9월 16<sup>일</sup> 통화 요약:</h2>
+
+
+  <ul>
+      <li>Jon Ormond를 사용하여 ExpressRoute에 대한 심층 기술 다이빙!</li>
+      <li>Check Point vSEC를 사용하여 파트너 스포트라이트</li>
+      <li>다음은 9월 16<sup>일</sup> 세션 중에 제시된 데크<a href="https://azurenetworkingfridays.blob.core.windows.net/webinar-content/2016-09-16-AzureNetworkingFridays-with-CheckPoint.pdf"><u>에 대한 링크</u></a>입니다.</li>
+      <li>모든 세션이 <a href="https://channel9.msdn.com/Shows/Azure-Networking-Fridays/" target="_blank"><u>채널 9</u></a>에 기록되고 게시됩니다!</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>9월 30<sup>일</sup> 통화 요약:</h2>
+
+
+  <ul>
+      <li>이번 주 Ignite에서 발표된 내용을 회상하세요! <a href="https://www.youtube.com/watch?v=Mk_LYKt_zKQ" target="_blank"><u>여기에서</u></a> 기록된 Ignite 세션을 살펴보고 Ignite 2016에 대한 새로운 Azure 네트워킹 공지 사항에 대한 <a href="https://azure.microsoft.com/en-us/blog/azure-networking-announcements-for-ignite-2016/" target="_blank"><u>블로그 게시물을</u></a> 참조하세요!</li>
+      <li>Karthik Ananthakrishnan과 ExpressRoute에 대한 심층 기술 다이빙!</li>
+      <li>Barracuda Networks NextGen 방화벽 F와 파트너 스포트라이트</li>
+      <li>다음은 9월 30일 세션 중에 제시된 데크<a href="https://azurenetworkingfridays.blob.core.windows.net/webinar-content/2016-09-30-AzureNetworkingFridays-with-Barracuda.pdf" target="_blank"><u>에 대한 링크</u></a><sup>입니다</sup>.</li>
+      <li>모든 세션이 <a href="https://channel9.msdn.com/Shows/Azure-Networking-Fridays/" target="_blank"><u>채널 9</u></a>에 기록되고 게시됩니다!</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>10월 14<sup>일</sup> 통화 요약:</h2>
+
+
+  <ul>
+      <li>Bala Natarajan을 사용하는 VNet 피어링 및 Virtual Network 게이트웨이 데모!</li>
+      <li>Microsoft 클라우드 제품용 Equinix 및 원격 포트를 통해 파트너 추천!</li>
+      <li>다음은 10월 14일 세션 중에 제시된 데크<a href="https://azurenetworkingfridays.blob.core.windows.net/webinar-content/2016-10-14-AzureNetworkingFridays-with-Equinix.pdf" target="_blank"><u>에 대한 링크</u></a><sup>입니다</sup>.</li>
+      <li>모든 세션이 <a href="https://channel9.msdn.com/Shows/Azure-Networking-Fridays/" target="_blank"><u>채널 9</u></a>에 기록되고 게시됩니다!</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>10월 28<sup>일</sup> 통화 요약:</h2>
+
+
+  <ul>
+      <li>Azure에서 BIG-IP에 대해 이야기하는 F5를 사용하여 파트너 스포트라이트!</li>
+      <li>제품 팀 텔모 삼파오의 특별 게스트와 심층 기술 다이빙!</li>
+      <li>다음은 10월 28일 세션 중에 제시된 데크<a href="https://azurenetworkingfridays.blob.core.windows.net/webinar-content/2016-10-28-AzureNetworkingFridays-with-F5.pdf" target="_blank"><u>에 대한 링크</u></a><sup>입니다</sup>.</li>
+      <li>모든 세션이 <a href="https://channel9.msdn.com/Shows/Azure-Networking-Fridays/" target="_blank"><u>채널 9</u></a>에 기록되고 게시됩니다!</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>다음 통화! 11월 11<sup>일</sup>:</h2>
+
+
+  <ul>
+      <li>Azure ECG CAT 팀의 Richard 카펜터를 사용하여 네트워크 보안 그룹의 데모!</li>
+      <li>메가포트와 파트너 스포트라이트!</li>
+      <li>다음은 11월 11일 세션에서 제시된 데크<a href="https://azurenetworkingfridays.blob.core.windows.net/webinar-content/2016-11-10-AzureNetworkingFridays-with-Megaport.pdf" target="_blank"><u>에 대한 링크</u></a><sup>입니다</sup>.</li>
+      <li>모든 세션이 <a href="https://channel9.msdn.com/Shows/Azure-Networking-Fridays/" target="_blank"><u>채널 9</u></a>에 기록되고 게시됩니다!</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>휴일 전에 마지막 전화! 12월 2<sup>일 </sup>:</h2>
+
+
+  <ul>
+      <li>이번 주 특별 게스트: 글로벌 네트워크 인수 담당 이사인 프랭크 레이.</li>
+      <li>KEMP Technologies와 파트너 스포트라이트.</li>
+  </ul>

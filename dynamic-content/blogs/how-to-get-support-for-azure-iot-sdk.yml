@@ -1,0 +1,23 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 21f5371dac46aa528e4a21008dfc9ee3d27f9ca7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907182"
+Slug: how-to-get-support-for-azure-iot-sdk
+Title: Azure IoT SDK에 대한 지원을 받는 방법
+Summary: 'Azure IoT SDK를 사용하면 개발자가 Azure IoT Hub 및 Azure IoT Hub Device Provisioning Service용 애플리케이션 코딩을 쉽게 시작하고 배포할 수 있습니다. '
+Content: >-
+  <p>Azure IoT SDK를 사용하면 개발자가 Azure IoT Hub 및 Azure IoT Hub Device Provisioning Service용 애플리케이션 코딩을 쉽게 시작하고 배포할 수 있습니다. SDK는 Microsoft의 지원을 받는 프로덕션 품질 오픈 소스 프로젝트입니다. 개발 단계의 모든 단계에 대한 지원이 필요하고 평가 또는 프로덕션 배포 중에 문제가 있는 경우 도움을 드리겠습니다. 문제 및 요청이 표시되는 여러 채널이 있습니다. 더 빠른 처리 시간을 위해 다음 채널을 사용하는 것이 좋습니다.</p>
+
+
+  <ul>
+      <li><strong>SDK에 대한 기능 요청이 있나요?</strong> 기능 요청에 대한 <a href="https://feedback.azure.com/forums/321918-azure-iot">사용자 음성</a> 이 있습니다. 새 요청을 만들고, 기존 요청을 호출하고, 우선 순위를 지정하는 데 도움을 주세요!</li>
+      <li><strong>기술에 대해 궁금한 점이 있습니까?</strong> 태그 &ldquo;azure-iot-hub&rdquo;를 사용하여 <a href="https://stackoverflow.com/questions/tagged/azure-iot-hub">Stack Overflow</a>에 요청합니다. 스택 오버플로에서 질문이 있는지 모니터링합니다. 답변에 대한 높은 수준의 스택 오버플로&rsquo;를 통해 커뮤니티의 다른 사용자를 돕기 위해 완전하고 상세한 답변을 얻을 수 있습니다.</li>
+      <li><strong>지원이 필요하세요? </strong> Azure 구독이 있는 경우 <a href="https://docs.microsoft.com/en-us/azure/azure-supportability/how-to-create-azure-support-request">지원 요청을</a> 제출하고 디버그에 도움이 되는 지원을 받을 수 있습니다. 또한 지원 요청을 통해 허브 이름 또는 구독 ID와 같은 공개 GitHub 문제에서 안전하지 않은 기밀 정보를 전달할 수 있습니다. 지원 요청을 제출할 때 SDK 언어, 버전, 프레임워크 버전(Node, Java, C#, Python), OS 버전 및 디바이스 유형을 지정해야 합니다.</li>
+      <li><strong>버그를 찾았나요? </strong> GitHub(<a href="https://github.com/Azure/azure-iot-sdk-c">C</a>, <a href="https://github.com/Azure/azure-iot-sdk-java">Java</a>, <a href="https://github.com/Azure/azure-iot-sdk-csharp">.NET</a>, <a href="https://github.com/Azure/azure-iot-sdk-node">Node.js</a>, Python)에 문제를 제출<a href="https://github.com/Azure/azure-iot-sdk-python">합니다</a>. 더 나은 지원을 제공할 수 있도록 명확한 재현 단계를 제공해야 합니다.</li>
+  </ul>
+
+
+  <p>IoT 개발 과정에서 고객을 돕기 위해 최선을 다하고 있습니다. 이러한 채널을 사용하여 지원을 받고 훌륭한 IoT 솔루션을 개발하세요!</p>

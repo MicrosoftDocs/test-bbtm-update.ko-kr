@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 50311b13b97e6d59e251011ff2366142ecbd723e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907080"
+Slug: next-generation-cryptography-now-available-with-azure-web-sites
+Title: 이제 Azure 웹 사이트에서 차세대 암호화 사용 가능
+Summary: SSL을 사용하여 사이트를 보호하는 것은 그 어느 때보다 중요하지만 암호화가 새로운 것은 아니지만 암호화 사용자는 더 안전한 방법을 계속 찾고 있으며 Azure 웹 사이트에서는 항상 최신 및 최대를 지원할 방법을 찾고 있습니다. 현재 가장 큰 것은 ECC(타원 곡선 암호화) 인증서입니다.
+Content: >-
+  SSL을 사용하여 사이트를 보호하는 것은 그 어느 때보다 중요하지만 암호화가 새로운 것은 아니지만 암호화 사용자는 더 안전한 방법을 계속 찾고 있으며 Azure 웹 사이트에서는 항상 최신 및 최대를 지원할 방법을 찾고 있습니다. 현재 가장 큰 것은 ECC(타원 곡선 암호화) 인증서입니다.
+
+
+  타원 곡선 암호화는 한정된 필드에 타원 곡선의 대수 구조를 기반으로 하는 암호화 기술입니다. 복잡해 들린다면 걱정하지 마세요... 많은 사람들이 그것을 얻을 수 없습니다. 타원 곡선은 대수 함수의 <b><sup>y2</sup> = <sup>x3</sup> + ax + b</b> 패밀리를 기반으로 그려지는 그래프입니다. 이러한 함수의 X 및 Y 값을 그릴 때 곡선은 타원 및 대칭으로 표시됩니다. 예를 들어 <b>함수 <sup>y2</sup>=4x3-4x+4<sup></sup></b>에 대한 그래프는 다음과 같습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Erez-Benari-Next-Generation-Cryptography-now-available-with-Azure-Web-Sites-image-1.png"><img class="size-full wp-image-151891 aligncenter" style="width: 246px; height: 244px;" alt="Erez Benari - Next Generation Cryptography now available with Azure Web Sites image 1" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Erez-Benari-Next-Generation-Cryptography-now-available-with-Azure-Web-Sites-image-1.png" width="340" height="340" /></a>
+
+
+  이 뒤에 수학에 너무 깊이 들어가지 않고, 이러한 종류의 함수에서 대칭 및 계산 복잡성을 통해 중단하기가 훨씬 더 어려운 퍼블릭 및 프라이빗 키 집합을 효율적으로 만들 수 있습니다. 프라이빗 키를 생성한 다음 선택한 타원 함수를 사용하여 공개 키를 파생합니다. 이를 되돌리는 것은(공개 키에서 프라이빗 키를 계산하는 공격자가) 오늘날의 기술에 비현실적이며 더 많은 년 동안 유지되어야 하는 기념비적인 계산 작업입니다. 클래식 프라이빗/퍼블릭 키 생성과 비교하면 대략 10단계로 더 어렵습니다(<a href="https://arstechnica.com/security/2013/10/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/">모든 피투성이 세부 정보를 원하는 경우 읽어</a>보세요). 즉, ECC를 사용하여 생성된 256비트 길이의 키 집합은 RSA에서 2600비트 이상의 키와 동일합니다. 오늘날 시장의 표준은 2048 비트이며, 오늘날의 컴퓨팅 능력을 해독하는 데 여전히 시간이 오래 걸리므로 ECC 키 세트를 해독하는 것은 슈퍼 컴퓨터에 액세스 할 수있는 사람에게도 사실상 불가능할 것입니다.
+
+
+  이 모든 것이 실제 세계에서 의미하는 바는 사이트를 보호하기 위해 일반 SSL 인증서를 구입하는 대신 ECC 인증서를 구매하도록 선택할 수 있으므로 보안을 강화한다는 것입니다. ECC 인증서는 시장에 상대적으로 새로운 인증서이므로 많은 인증서 공급자가 인증서를 제공하지 않습니다. 이러한 공급자 중 하나는 <a href="https://www.symantec.com/verisign/ssl-certificates">Symantec</a>이고 다른 공급자는 Entrust이며, 다른 공급자도 곧 마차에 뛰어들 것입니다.
+
+
+  흥미로운 경우 Azure 웹 사이트가 테스트되었으며 ECC 인증서를 완벽하게 지원합니다. 하나를 사용하려면 선택한 인증서 공급자와 협력하여 인증서를 구매한 다음 클래식 RSA 인증서를 업로드하고 사이트에 할당하는 것처럼 AZURE에 PFX 파일로 업로드하면 됩니다. 이 모든 것이 있습니다! 모든 클라이언트가 ECC 인증서를 지원하지는 않지만 Windows Vista 이상을 실행하는 경우 클라이언트에 대한 구성이나 변경 없이 SSL을 통해 정기적으로 사이트로 이동할 수 있어야 합니다. 안전하게 지낼 수 있습니다!
+
+
+  &nbsp;

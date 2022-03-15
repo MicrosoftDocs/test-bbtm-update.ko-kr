@@ -1,0 +1,43 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 28ce7af14d9dab6d4439211cacd4b40712989ad3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900029"
+Slug: azure-backup-can-automatically-protect-sql-databases-in-azure-vm-through-auto-protect
+Title: Azure Backup은 자동 보호를 통해 Azure VM에서 SQL 데이터베이스를 자동으로 보호할 수 있습니다.
+Summary: Azure VM(Virtual Machines)에서 SQL Server 대한 자동 보호 기능을 공유하게 되어 기쁩니다. 이는 올해 초 발표된 Azure VM의 SQL Server 대한 Azure Backup 공개 미리 보기에 추가된 주요 기능입니다.
+Content: >-
+  <p>Azure VM(Virtual Machines)에서 SQL Server 대한 자동 보호 기능을 공유하게 되어 기쁩니다. 이는 올해 초 발표된 <a href="https://azure.microsoft.com/en-in/blog/azure-backup-for-sql-server-on-azure-vm-public-preview/"><b>Azure VM의 SQL Server 대한 Azure Backup</b></a> 공개 미리 보기에 추가된 주요 기능입니다. SQL Server용 Azure Backup은 네이티브 SQL 백업 및 복원 API를 활용하여 Azure VM에서 실행되는 SQL 서버를 백업하는 포괄적인 솔루션을 제공하는 종량제(종량제)<b> </b>서비스<b></b>입니다.</p>
+
+
+  <p>보호된 SQL Server 새 데이터베이스를 추가하면 어떻게 되나요? 데이터베이스를 다시 검색한 다음 해당 데이터베이스를 백업하도록 구성 보호를 수동으로 트리거해야 합니다. 이제 사용자가 작업을 제거하고 인스턴스에 추가하는 각 새 데이터베이스를 자동으로 검색하고 보호하는 경우를 상상해 보십시오. 우리의 새로운 자동 보호 기능은 그렇게합니다.</p>
+
+
+  <p>자동 보호는 독립 실행형 SQL Server 인스턴스 또는 SQL Server Always On 가용성 그룹의 모든 데이터베이스를 자동으로 보호할 수 있는 기능입니다. 기존 데이터베이스에 대한 백업을 사용하도록 설정할 뿐만 아니라 나중에 추가할 수 있는 모든 데이터베이스도 보호합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d63be707-7c9f-4ae0-b1bb-7cdc24c38e72.png"><img alt="Auto-protection diagram" border="0" height="419" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/63302174-5932-4dc6-89f2-fe524bac7f82.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="자동 보호 다이어그램" width="762"></a></p>
+
+
+  <h2>시작</h2>
+
+
+  <p>Azure VM에서 SQL Server 백업 <strong>구성</strong>에서 원하는 SQL Server 인스턴스 또는 Always On 가용성 그룹에 대해 자동 보호를 사용하도록 설정할 수 있습니다. 사용하도록 설정하면 해당 SQL Server 대한 모든 데이터베이스가 자동으로 선택됩니다. 그런 다음 선택한 데이터베이스에 대한 백업 정책을 정의할 수 있습니다. 정책을 연결한 후 <strong>백업 항목</strong> 아래에 새로 보호된 데이터베이스를 볼 수 있습니다.</p>
+
+
+  <p>따라서 사용자 환경에서 데이터베이스가 크게 추가되거나 삭제되는 경우 자동 보호 기능을 사용하면 새 데이터베이스를 자동으로 검색하고 보호하여 시간과 노력을 절약할 수 있습니다.</p>
+
+
+  <h3>관련 링크 및 추가 콘텐츠</h3>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/backup/backup-azure-sql-database">Azure에 대한 Backup SQL Server 데이터베이스 </a> 에 대한 설명서를 참조하여 자동 보호에 대해 자세히 알아봅니다.</li>
+   <li><a href="https://azure.microsoft.com/services/backup/">Azure Backup</a>에 대해 자세히 알아봅니다.</li>
+   <li>자세한 내용을 원하십니까? <a href="https://azure.microsoft.com/documentation/services/backup/">Azure Backup 설명서를 확인하세요</a>.</li>
+   <li>도움이 필요하신가요? <a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=windowsazureonlinebackup">지원을 위해 Azure Backup 포럼</a>에 문의하세요.</li>
+   <li>새 아이디어를 기여하고 기존 아이디어를 투표하여 <a href="https://feedback.azure.com/forums/258995-azure-backup">Azure Backup을 개선할</a> 수 있는 방법을 알려주세요.</li>
+   <li>최신 뉴스 및 업데이트에 대한 트위터에 <a href="https://twitter.com/azurebackup">@AzureBackup</a> 우리를 따르십시오.</li>
+  </ul>

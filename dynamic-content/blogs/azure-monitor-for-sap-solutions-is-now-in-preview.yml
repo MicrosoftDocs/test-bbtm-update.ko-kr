@@ -1,0 +1,70 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c050221a413b2d6130e4f3da2f16a50519d2709c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899958"
+Slug: azure-monitor-for-sap-solutions-is-now-in-preview
+Title: SAP 솔루션을 위한 Azure Monitor는 현재 미리 보기로 제공됩니다.
+Summary: Azure의 SAP 고객이 SAP 애플리케이션을 효과적으로 모니터링할 수 있도록 현재 Azure에서 SAP 솔루션을 실행하는 고객을 위한 Azure 네이티브 모니터링 솔루션인 SAP 솔루션용 Azure Monitor의 미리 보기를 발표합니다.
+Content: >-
+  <p>세계에서 가장 큰 기업 중 일부는 현재 Microsoft Azure SAP 솔루션을 실행하고 있습니다. 이러한 SAP 애플리케이션은 업무상 중요하므로 1분 동안의 서비스 지연 또는 중단은 조직에 상당한 재정적, 평판적 영향을 미칠 수 있습니다.</p>
+
+
+  <p>고객이 Azure 배포에서 SAP를 효과적으로 모니터링할 수 있도록 <b>오늘 SAP 솔루션을 위한 Azure Monitor 미리 보기를 발표합니다. 이 Azure 네이티브 모니터링 솔루션을 통해 Azure에서 SAP 환경을 실행하는 고객은</b> 이제 간소화된 모니터링, 효율적인 문제 해결 및 유연한 사용자 지정에 액세스할 수 있습니다. Azure Friday에서 <a href="https://aka.ms/azfr/633" target="_blank">SAP 솔루션을 위한 Azure Monitor 소개하는</a> 것을 시청하세요.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" src="https://channel9.msdn.com/Shows/Azure-Friday/Introducing-Azure-Monitor-for-SAP-Solutions/player" title=" SAP 솔루션을 위한 Azure Monitor 소개 - Microsoft Channel 9 비디오" width="480"></iframe></p>
+
+
+  <p>2019년 9월 SAP 솔루션을 위한 Azure Monitor <a href="https://azure.microsoft.com/en-us/blog/12-tb-vms-expanded-sap-partnership-on-blockchain-azure-monitor-for-sap-solutions/" target="_blank">프라이빗 미리 보기를 발표</a>하기 전에 고객이 복잡하고 관리하기 쉬운 이질적인 도구와 대시보드에 의존한다는 소식을 들었습니다. 고객은 종단 간 보기를 위해 한 위치에서 필요한 SAP 원격 분석을 수집하여 패턴을 쉽게 인식하고 SAP 환경 내의 다양한 구성 요소 간에 데이터를 상호 연결하려고 했습니다.</p>
+
+
+  <p style="margin-left: 40px;"><i>&ldquo;SAP 솔루션을 위한 Azure Monitor 통해 인프라 팀은 SAP HANA 전문가가 아니어도 엔터프라이즈에 중요한 SAP HANA DB의 상태를 신속하게 식별할 수 있습니다. 기능 팀이 시스템 문제에 대한 인프라를 지적하고 모니터를 사용하여 문제의 실제 근본 원인을 신속하게 확인하거나 가리킬 수 있는 여러 가지 경우가 있었습니다. 이 도구는 고객이 직면한 문제를 해결하는 데 누가 관여해야 하는지 식별하는 데 걸리는 시간을 단축합니다...&rdquo;</i> &mdash;<b>Thomas Kremer, Sr. Manager II Cloud and Service Delivery, Walgreens</b></p>
+
+
+  <h2>SAP 솔루션을 위한 Azure Monitor 주요 기능</h2>
+
+
+  <p>SAP 솔루션을 위한 Azure Monitor 주요 기능은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><b>다중 인스턴스/다중 공급자:</b> 고객은 동일한 원본 시스템 유형의 여러 시스템 또는 다른 원본 시스템 유형의 여러 시스템에서 원격 분석 데이터를 가져올 수 있습니다. 예를 들어 고객은 하나의 모니터링 리소스만 배포하여 여러 SAP HANA 인스턴스 및 여러 Pacemaker 클러스터를 모니터링할 수 있습니다.</li>
+      <li><b>SAP</b><b> HANA DB 원격 분석:</b> 고객은 Azure Portal을 사용하여 한 위치에서 다양한 SAP HANA 인스턴스의 인프라 사용률 데이터 외에도 HANA Backup 및 HSR 원격 분석을 수집하고 볼 수 있습니다.</li>
+      <li><b>Microsoft SQL Server 원격 분석:</b> 고객은 Microsoft SQL Server 원격 분석을 가져올 수 있으며, CPU 및 메모리와 상위 SQL 문&mdash;으로 원격 분석 데이터를&mdash; 시각화하고 상호 연결할 수 있으며 Always On에 대한 &lsquo;정보도 가져올 수 있습니다.&rsquo;</li>
+      <li><b>HA(고가용성) 클러스터 원격 분석:</b> 고객은 Pacemaker 클러스터에서 원격 분석 데이터를 얻고 정상 클러스터와 비정상 클러스터를 식별하고 이를 기본 노드 및 리소스 상태와 상호 연결할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>SAP 솔루션을 위한 Azure Monitor 이점</h2>
+
+
+  <p>SAP 솔루션을 위한 Azure Monitor 이점에는 다음을 수행할 수 있는 기능이 포함됩니다.</p>
+
+
+  <ul>
+      <li>기본 인프라(Azure <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-get-started" target="_blank">Virtual Machines</a>, Azure <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-overview-architecture" target="_blank">큰 인스턴스</a> 또는 둘 다)와 관계없이 중앙 위치에 있는 Azure 인프라 및 데이터베이스에서 원격 분석 데이터를 쉽게 수집하고 통합할 수 있습니다. 고객은 이 데이터를 사용하여 더 빠른 문제 해결을 위해 서로 다른 구성 요소 간에 원격 분석을 시각적으로 상호 연결할 수 있습니다.</li>
+      <li>Azure 대시보드를 만들어 Azure에서 실행되는 SAP 및 비 SAP 구성 요소의 원격 분석을 확인합니다. 이 작업은 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview#pinning-visualizations" target="_blank">고정&rsquo;을&lsquo;</a> 사용하여 SAP 솔루션을 위한 Azure Monitor 원격 분석(SAP 가로 구성 요소를 모니터링하는 데 사용됨)과 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview" target="_blank">Application Insights</a> 또는 Log Analytics(비 SAP 구성 요소를 모니터링하는 데 사용됨)의 원격 분석과 결합할 수 있습니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/workbooks-overview#getting-started" target="_blank">시각화를 편집</a> 하여 사용자 지정된 차트 및 그래프를 만듭니다. 고객은 SAP 솔루션을 위한 Azure Monitor 수집한 원시 데이터에 대해 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/get-started-portal" target="_blank">사용자 지정 Kusto 쿼리를 실행</a>하여 패턴을 식별하고, 경고를 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-log" target="_blank">구성</a>하여 사전 알림을 받고, 추세 분석을 위해 원격 분석 데이터를 보존하도록 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period" target="_blank">사용자 지정 데이터 보존</a> 기간을 구성할 수 있습니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/lighthouse/overview" target="_blank">Azure Lighthouse</a>와 통합합니다. 이를 통해 파트너는 적절한 액세스 정책에 따라 여러 테넌트에서 원격 분석을 볼 수 있습니다. 이를 통해 파트너는 고객이 Azure 환경에서 SAP를 모니터링하고 문제를 해결하는 데 도움을 줄 수 있습니다.</li>
+  </ul>
+
+
+  <p>또한 SAP 솔루션을 위한 Azure Monitor 오픈 소스이므로 고객은 이 <a href="https://github.com/Azure/AzureMonitorForSAPSolutions" target="_blank">GitHub 리포지토리</a>를 방문하여 제품의 내부 작동을 보고 피드백을 제공할 수 있습니다.</p>
+
+
+  <h2>가격 책정 및 가용성</h2>
+
+
+  <ul>
+      <li>SAP 솔루션을 위한 Azure Monitor 서유럽, 미국 동부, 미국 동부 2 및 미국 서부 2에서 사용할 수 있습니다.</li>
+      <li>제품에 대한 라이선스 요금은 없습니다. 고객은 제품의 일부로 배포되는 기본 인프라에 대해서만 비용을 지불합니다.</li>
+  </ul>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>제품 및 가격 책정에 대해 자세히 알아보려면 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/azure-monitor-overview" target="_blank">SAP 솔루션을 위한 Azure Monitor 설명서를 확인하세요</a>. 시작하려면 이 <a href="https://www.youtube.com/watch?v=oWxtxAm-YRQ&amp;t=9s" target="_blank">빠른 시작 비디오를</a> 시청하고 <a href="https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Azure_Marketplace/MarketplaceOffersBlade/selectedMenuItemId/home" target="_blank">Azure Marketplace</a> 로 이동하여 첫 번째 리소스를 만듭니다.</p>

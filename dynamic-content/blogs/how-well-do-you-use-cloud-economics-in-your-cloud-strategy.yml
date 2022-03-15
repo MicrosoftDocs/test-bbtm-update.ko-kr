@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 094bc1a39a14dcfc399e4452c40b05cb62c6e84e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906740"
+Slug: how-well-do-you-use-cloud-economics-in-your-cloud-strategy
+Title: 클라우드 전략에서 클라우드 경제학을 얼마나 잘 사용하나요?
+Summary: 클라우드 전략은 비용을 절감하거나 수익 성장을 촉진하는 데 중점을 두나요? 이 질문에 도달하면 클라우드 서비스를 사용하는 환경 수준과 애플리케이션 개발자 및 IT Ops 팀에 제공해야 하는 지침에 대해 많은 것을 결정할 수 있습니다.
+Content: >-
+  클라우드 전략은 비용을 절감하거나 수익 성장을 촉진하는 데 중점을 두나요? 이 질문에 도달하면 클라우드 서비스를 사용하는 환경 수준과 애플리케이션 개발자 및 IT Ops 팀에 제공해야 하는 지침에 대해 많은 것을 결정할 수 있습니다.
+
+
+  고객 연구에 따르면 대부분의 CIO는 클라우드 컴퓨팅을 자본 및 운영 비용을 절감할 수 있는 아웃소싱 및 호스팅의 진화로 간주하여 절감에 투표할 것입니다. 어떤 경우에는 이것이 정확하지만 많은 상황에서 반대가 발생합니다.클라우드를 잘못 사용하면 비용이 발생할 수 있습니다.
+
+
+  그러나 이것은 문제의 핵심이 아닙니다, 그것은 진짜 열매를 맺는 당신에게 돈을  <i>부담</i> 하는 사용 사례의 탐구이기 때문입니다. 그리고 이 경험을 통해 비용을 절감하는 것에서 수익 기회로 생각을 전환할 수 있습니다. <a href="https://www.forrester.com/How+And+Why+Customers+Choose+Public+Cloud+Platforms/fulltext/-/E-res107401">Forrester 설문 조사에 따르면</a> 개발자가 클라우드 서비스(및 사업부의 권한이 부여된 비 개발자)를 활용하는 가장 큰 이유는 새로운 앱과 기능을 신속하게 배포하는 것입니다. 그리고 이러한 노력의 원동력은 새로운 서비스, 더 나은 고객 경험 및 향상된 생산성입니다. 번역: 수익 및 이익.
+
+
+  클라우드가 새로운 자금을 도입하고 있다면, 더 저렴한 솔루션이라면 정말 중요한가요? 처음에는 그렇지 않습니다. 그러나 시간이 지남에 따라 클라우드를 수익 엔진으로 사용하는 것이 반드시 해당 수익에 대한 높은 마진을 의미하지는 않습니다. 클라우드의 비용 이점 사용에 대한 경험이 제공되는 곳입니다. Cloudyn, <a href="https://www.cloudcruiser.com/partners/microsoft/">CloudCruiser</a> 등과 <a href="https://www.cloudyn.com/microsoft-azure/"></a>같은 <a href="https://azure.microsoft.com/en-us/marketplace/">Azure Marketplace</a> 파트너가 클라우드 지출을 최적화하는 데 실제로 도움이 될 수 있는 위치는 다음과 같습니다. 최근에 게시된 <a href="https://weblogs.asp.net/scottgu/new-azure-billing-apis-available">Azure 청구 및 요금 카드 API</a>를 활용하여 직접 사용할 수도 있습니다.
+
+
+  <a href="https://www.forrester.com/">Forrester</a>가 내 연구 보고서인 "<a href="https://www.forrester.com/The+Three+Stages+Of+Cloud+Economics/fulltext/-/E-RES59165">클라우드 경제학의 3단계</a>"에 기록한 이러한 결론에 도달하기 위해 개별적인 사고 과정과 경험적 경로가 있습니다. 많은 성숙도 모델과 마찬가지로 조직은 첫 번째 단계에서 경험을 쌓아 저축이 이익으로 변하는 후자의 이익을 이해하고 수확하기 시작해야 합니다.
+
+
+  IT를 비용 센터에서 수익 동인으로 전환하기 위한 기회를 클라우드 컴퓨팅에 전달할 여유가 없습니다. 손을 더럽게 하고 생각과 클라우드 사용을 진화하기 시작합니다.<span style="font-family: Calibri;"> </span>

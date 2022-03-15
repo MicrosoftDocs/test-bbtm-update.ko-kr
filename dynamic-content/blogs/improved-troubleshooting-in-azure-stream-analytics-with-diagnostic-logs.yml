@@ -1,0 +1,67 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8f77fbfc741301cf2c7535bc9a7035a1219fe805
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906735"
+Slug: improved-troubleshooting-in-azure-stream-analytics-with-diagnostic-logs
+Title: 진단 로그를 사용하여 Azure Stream Analytics에서 문제 해결 개선
+Summary: Azure Monitoring과의 통합을 통해 Azure Stream Analytics에 대한 진단 로그의 대망의 공개 미리 보기를 발표합니다. 이제 예기치 않은 동작을 일으키는 늦은 데이터 또는 잘못된 형식의 데이터를 검사할 수 있습니다. 이렇게 하면 쿼리의 기대치를 준수하지 않는 데이터로 인한 오류를 수정할 수 있습니다.
+Content: >-
+  <p>Azure Monitoring과의 통합을 통해 Azure Stream Analytics에 대한 진단 로그의 대망의 공개 미리 보기를 발표합니다. 이제 예기치 않은 동작을 일으키는 늦은 데이터 또는 잘못된 형식의 데이터를 검사할 수 있습니다. 이렇게 하면 쿼리의 기대치를 준수하지 않는 데이터로 인한 오류를 수정할 수 있습니다.</p>
+
+
+  <p>진단 로그는 스트리밍 작업과 연결된 모든 작업에 대한 풍부한 인사이트를 제공합니다. 기본적으로 꺼져 있으며 모니터링&rdquo; 아래&ldquo;의 &ldquo;진단 로그&rdquo; 블레이드에서 사용하도록 설정할 수 있습니다. 항상 사용하도록 설정되고 수행되는 관리 작업에 대한 세부 정보를 제공하는 <a href="https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs">활동 로그</a> 와는 다릅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f4c13e37-0321-44b1-a8e9-7ff705e9ac59.png"><img alt="Screenshot_Monitoring_Diagnostic logs" border="0" height="139" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2cf42135-d6f7-4090-8e9b-79554a5931ce.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="로그 Screenshot_Monitoring_Diagnostic" width="211"></a></p>
+
+
+  <p>진단 로그가 도움이 될 수 있는 데이터 처리 오류의 예는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>스키마가 일치하지 않는 경우 데이터 변환 및 serialization 오류입니다.</li>
+   <li>허용 null 및 중복과 같은 제약 조건을 포함하여 호환되지 않는 형식입니다.</li>
+   <li>변환 중에 문자열 잘림 및 전체 자릿수 관련 문제</li>
+   <li>0으로 나누기, 오버플로 등과 같은 식 계산 오류입니다.</li>
+  </ul>
+
+
+  <p>Azure Storage에 기록되는 비준수 데이터의 예는 다음과 같습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  {
+                Diagnostic:&quot;Encountered error trying to write 3 events: &hellip;&quot;,
+                  Timestamp:&quot;7/25/2015 12:27:44Z&quot;,
+                  Source:&quot;Output1&quot;,
+                  Output:&quot;Output1&quot;,
+                  Error:
+                  {
+                        Type:&quot;System.InvalidOperationException&quot;,
+                        Description:&quot;The given value &ldquo;hello world&rdquo; of type string from the data source cannot be converted to type decimal of the specified target column [Amount].&quot;,
+                  },
+                  EventData:
+                  {
+                                  SomeValue:&rdquo;hello world&rdquo;,
+                                  Count:1
+                  }
+  }</pre>
+
+
+  <p align="center"><em>오류는 위와 같이 오류 유형 및 원본별로 샘플링됩니다.</em></p>
+
+
+  <p>오류를 발생시키는 실제 데이터에 즉시 액세스하면 문제를 신속하게 수정하거나 비준수 데이터를 무시하여 진행할 수 있습니다.</p>
+
+
+  <p>Azure Storage 아티팩트에서 이벤트 데이터 및 운영 메타데이터(예: 발생 시간 및 발생 횟수)를 유지하면 문제를 보다 쉽게 진단하고 빠르게 해결할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/log-analytics/">이 데이터는 Azure Log Analytics</a>를 사용하여 오프라인으로 분석할 수도 있습니다. 이 데이터를 EventHub로 라우팅하면 Stream Analytics 작업을 설정하여 다른 Stream Analytics 작업을 모니터링할 수 있습니다.</p>
+
+
+  <p>비규격 데이터를 분석하기 위한 Azure Storage, EventHub 및 Log Analytics와 같은 서비스의 사용량은 해당 서비스의 가격 책정 모델에 따라 요금이 청구됩니다.</p>
+
+
+  <p>진단 로그를 사용해 볼 수 있게 되어 기쁩니다. 이 기능을 사용하는 방법에 대한 자세한 단계는 <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-job-diagnostic-logs">설명서 페이지에서</a> 찾을 수 있습니다.</p>

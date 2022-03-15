@@ -1,0 +1,50 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d12bd5cb34922dd4b0ae2d467a4bb88af40a5ba5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906445"
+Slug: microsoft-and-swift-extend-partnership-to-make-native-payments-a-reality
+Title: Microsoft와 SWIFT는 클라우드 네이티브 결제를 현실로 만들기 위해 파트너십을 확장합니다.
+Summary: '이번 주, 세계 최대의 금융 서비스 이벤트인 Sibos에서 Microsoft와 SWIFT는 작년 행사에서 발표된 클라우드 네이티브 POC(개념 증명)의 진화를 선보이고 있습니다. Microsoft Azure, SWIFT 및 Microsoft 재무부와의 협력 사이의 관계를 구축한 이 회사는 Azure에서 SWIFT Cloud 커넥트 시장에 출시하기 위한 장기적인 전략적 파트너십을 체결하고 있습니다. '
+Content: >-
+  <p><em>이 블로그 게시물은 George Zinn, 회사 부사장, Microsoft 재무가 공동 저술했습니다. </em></p>
+
+
+  <p>이번 주 세계&rsquo; 최대 금융 서비스 이벤트인 Sibos에서 Microsoft와 SWIFT는 작년&rsquo; 행사에서 발표된 POC(클라우드 네이티브&nbsp; <a data-bi-area="content" data-bi-id="" href="https://azure.microsoft.com/en-us/blog/microsoft-and-swift-make-azure-cloud-native-payments-a-reality/">개념</a>&nbsp; 보호)의 진화를 선보이고 있습니다. Microsoft Azure, SWIFT 및 Microsoft 재무와의 관계를 구축한 회사는 Azure에서 클라우드 연결 서비스를 출시하기 위해 협력하고 있습니다. 함께 다양한 Azure 서비스를 활용하여 SWIFT Cloud 커넥트 금융 서비스 산업의 재료 워크로드에 대한 복원력, 보안 및 규정 준수 요구를 달성할 수 있도록 하는 엔드투엔드 아키텍처를 구축했습니다. Microsoft는 SWIFT와 협력하여 퍼블릭 클라우드 연결을 구축하는 최초의 클라우드 공급자이며 곧 이 솔루션을 업계에서 사용할 수 있게 될 것입니다.&nbsp;</p>
+
+
+  <p>SWIFT는 200개 이상의 국가 및 지역에서 11,000개 이상의 금융 기관, 시장 인프라 및 기업에서 사용하고 신뢰하는 보안 금융 메시징 서비스의 세계&rsquo; 최고의 공급자입니다. 오늘날 기업과 은행은 SWIFT 기술의 온-프레미스 설치를 활용하여 매우 안전한 SWIFT 네트워크를 통해 결제 메시지를 보내 이러한 거래를 수행합니다. SWIFT Cloud 커넥트 Microsoft 클라우드가 제공하는 운영, 보안 및 인텔리전스 혜택이 추가된 은행과 유사한 전신 송금 환경을 만듭니다.</p>
+
+
+  <blockquote>
+
+  <p><em>&ldquo;클라우드 컴퓨팅은 더 빠르고 마찰없는 미래의 핵심 인에이블러이며 혁신적인 새로운 서비스를 위한 강력한 촉매제입니다. 우리 커뮤니티는 잠재력을 포착하고 있으며 다양한 접근 방식과 다양한 요구 사항을 반영하는 다양한 연결 옵션으로 이를 지원하기 위해 최선을 다하고 있습니다. 이러한 새로운 개발은 이러한 약속을 강조하면서 진화하는 마켓플레이스에 계속 적응하면서 보안과 복원력에 대한 확고한 초점을 강조합니다.&rdquo;&nbsp; 크레이그 영, SWIFT 최고 정보 책임자</em></p>
+
+  </blockquote>
+
+
+  <p>프로덕션 지원 서비스의 잠재력을 입증하기 위해 Microsoft Treasury는 SWIFT 프로덕션 네트워크를 통해 Azure의 SWIFT를 통해 결제 확인을 위해 해당 BNY Mellon(New York-Mellon Bank of New York-Mellon)에 대한 테스트 결제 거래를 성공적으로 실행했습니다. BNY Mellon은 고객이 투자 수명 주기 동안 금융 자산을 관리하고 서비스할 수 있도록 돕는 데 전념하는 글로벌 투자 회사입니다. 글로벌 결제, 무역 서비스 및 현금 관리에서 고품질의 성과를 제공하는 회사&rsquo; 재무 서비스 그룹은 Microsoft 재무부에 대한 지불 서비스를 제공합니다.</p>
+
+
+  <blockquote>
+
+  <p>&ldquo;BNY Mellon에서 우리는 고객의&rsquo; 기대를&rdquo; 초과하는 세계적 수준의 솔루션을 제공하는 데 초점을 맞추고 있다고 뉴욕 멜론 재무부 서비스 CEO 폴 캠프는 말했습니다. &ldquo;SWIFT와 함께 전 세계 고객에 대한 결제 환경을 개선하기 위해 지속적으로 노력합니다. Were&rsquo;는 이제 Microsoft 재무 클라이언트 및 SWIFT와 함께 클라우드 커넥트 현실화하고 Microsofts&rsquo; 클라우드 전문 지식을 활용하여 금융 기술의 국경을 확장할 수 있게 되어 기쁩니다. 클라우드 커넥트 대한 긍정적인 경험을 바탕으로 Microsoft Treasury를 통해 디지털 결제 전략을 발전시킬 수 있는 추가 기회를 모색할 수 있기를 기대합니다.&rdquo;</p>
+
+  </blockquote>
+
+
+  <p>빠르게 증가하는 사이버 위협 환경에 대응하여 SWIFT는 일련의 필수 보안 제어를 사용하여 CSP(고객 보안 프로그램)를 도입했습니다. 제어 구현을 간소화하고 지원하고 지속적인 모니터링 및 감사를 사용하도록 설정하기 위해 Microsoft는 CSP 프레임워크에 대한 청사진을 개발했습니다. <a href="https://azure.microsoft.com/services/blueprints/">Azure Blueprint</a> 는 고객이 표준, 패턴 및 제어 요구 사항을 구현하고 준수하는 반복 가능한 Azure 리소스 및 정책 집합을 정의할 수 있는 무료 서비스입니다.&nbsp; Azure Blueprints를 사용하면 고객이 안전하고 규정을 준수하는 프로덕션 구현을 지원하기 위해 대규모로 관리되는 Azure 환경을 설정할 수 있습니다. <a href="https://azure.microsoft.com/en-gb/blog/new-azure-blueprint-enables-swift-connect/">SWIFT CSP 청사진</a>은 이제 미리 보기로 제공됩니다.</p>
+
+
+  <p>Microsoft 재무는 Azure Logic Apps 서비스를 활용하여 결제 거래를 처리함으로써 SWIFT로 테스트를 수행했습니다. 이러한 구현은 몇 달이 걸리지만 몇 주 만에 완료되었습니다. 재무부는 Logic Apps를 통해 백 엔드 SAP 시스템을 SWIFT에 통합하여 결제 거래 및 비즈니스 승인을 처리했습니다. 이 처리의 일환으로 트랜잭션의 유효성을 검사하고 Logic Apps의 풍부한 기능을 사용하여 중복 또는 변칙을 확인합니다.</p>
+
+
+  <p>Logic Apps는 Microsoft Azure&rsquo; s iPaaS(통합 플랫폼 as a Service)이며 이제 SWIFT 메시징에 대한 기본 이해를 제공하여 고객이 클라우드로의 마이그레이션을 가속화할 수 있도록 합니다. 온-프레미스 애플리케이션에 대한 하이브리드 VNet 연결 통합 기능과 다양한 Azure 서비스 배열을 통해 Logic Apps는 지능형 자동화, 통합, 데이터 이동 등을 위한 300개 이상의 커넥터를 제공하여 Azure의 기능을 활용합니다.</p>
+
+
+  <p>Microsoft 재무는 Azure의 기능을 신속하게 활용하여 결제 트랜잭션을 원활하게 이체할 수 있습니다. Azure Monitor 및 Log Analytics를 사용하면 전체 엔드투엔드 프로세스 가시성을 위해 결제 트랜잭션을 모니터링, 관리 및 상호 연결할 수도 있습니다.</p>
+
+
+  <p>SWIFT와의 협업을 확장하게 되어 기쁘게 생각하며, 이것이 업계에 필수적인 제품이 될 것이라고 믿습니다. 우리는 SWIFT 클라우드 커넥트 잠재력을 확인하는 자신의 부분에 대한 BNY 멜론 감사합니다. 작동 중인 것을 보려면 노스 이벤트 홀 Z131의 Microsoft 부스에 들러 보세요.</p>

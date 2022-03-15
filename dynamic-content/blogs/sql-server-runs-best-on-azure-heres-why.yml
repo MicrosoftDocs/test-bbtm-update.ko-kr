@@ -1,0 +1,69 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 33c6d0da8124c3ca52e3b0c7bc5b6c458d3f3587
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900373"
+Slug: sql-server-runs-best-on-azure-heres-why
+Title: SQL Server Azure에서 가장 잘 실행됩니다. 그 이유는 다음과 같습니다.
+Summary: 데이터베이스를 클라우드로 마이그레이션하는 SQL Server 고객은 클라우드 대상에 대해 여러 가지 선택 항목을 선택할 수 있습니다.
+Content: >-
+  <p align="left">데이터베이스를 클라우드로 마이그레이션하는 SQL Server 고객은 클라우드 대상에 대해 여러 가지 선택을 할 수 있습니다. SQL Server 워크로드에 가장 적합한 클라우드를 철저히 평가하기 위해 고려해야 할 두 가지 주요 요소는 다음과 같습니다.</p>
+
+
+  <ol>
+      <li>
+      <div align="left">클라우드 공급자가 고유하게 제공할 수 있는 혁신.</div>
+      </li>
+      <li>
+      <div align="left">독립적인 벤치마크 결과입니다.</div>
+      </li>
+  </ol>
+
+
+  <h2 align="left">클라우드 공급자가 SQL Server 워크로드에 가져올 수 있는 혁신은 무엇인가요?</h2>
+
+
+  <p align="left">클라우드에서 SQL Server 실행하는 옵션을 고려할 때 클라우드 공급자가 현재와 내일 모두 제공할 수 있는 것을 이해하는 것이 중요할&#39;있습니다. 최신 애플리케이션의 성능을 최대화하는 기능을 제공할 수 있나요? 취약성으로부터 자동으로 사용자를 보호하고 중요 업무용 워크로드의 가용성을 보장할 수 있나요?</p>
+
+
+  <p align="left">SQL Server 고객은 지난 25년 동안 개발된 지속적인 전문 지식을 활용하여 성능, 보안 및 혁신을 제공합니다. 여기에는 다른 곳에서는 사용할 수 없는 혁신을 고객에게 제공하는 Azure에 SQL Server 배포하는 것이 포함됩니다&rsquo;. 이 중 한 가지 좋은 예는 고객에게 빠르고 무료 읽기를 제공하는 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/premium-storage-performance#disk-caching" target="_blank">Azure BlobCache</a>입니다. 이 기능만으로도 오늘날 시장에서 타의 추종을 불허하는 고객에게 엄청난 가치를 제공합니다.</p>
+
+
+  <p align="left">또한 패치, <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-overview" target="_blank">고가용성</a> 및 <a href="https://docs.microsoft.com/en-in/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-backup-recovery" target="_blank">백업</a>과 같은 작업을 자동화<a href="https://docs.microsoft.com/en-in/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-automated-patching" target="_blank">하는</a> 미리 구성된 기본 제공 보안 및 관리 기능을 제공합니다. 또한 Azure는 취약성 평가와 고급 위협 방지를 모두 사용할 수 있는 고급 <a href="https://cloudblogs.microsoft.com/sqlserver/2019/05/23/advanced-data-security-for-sql-server-is-coming-to-azure-virtual-machines/" target="_blank">데이터 보안을</a> 제공합니다. 고객은 Azure Marketplace 이미지를 사용할 때와 Azure <a href="https://techcommunity.microsoft.com/t5/SQL-Server/Benefit-from-Resource-Provider-registration-when-self-installing/ba-p/742794" target="_blank">가상 머신에 SQL Server 자체 설치할</a> 때 이러한 모든 기능을 활용할 수 있습니다.</p>
+
+
+  <p align="left">Azure만이 이러한 혁신을 제공합니다.</p>
+
+
+  <h2 align="left">독립적인 업계 표준 벤치마크에 대한 성능 결과는 무엇인가요?</h2>
+
+
+  <p align="left">벤치마크는 클라우드 옵션을 평가하는 데 유용한 도구가 될 수 있습니다. 그러나 이러한 벤치마크가 독립적인 제3자에 의해 수행되었는지, 그리고 오늘날의&rsquo; 업계 표준 방법을 사용했는지 여부를 묻는 것이&#39;중요합니다.</p>
+
+
+  <p><em><img alt="bar graphs comparing the prefromance and price differences between Azure and AWS. " border="0" height="482" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7ceff60b-0bd4-4867-85cd-61883c401c2f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1287"></em></p>
+
+
+  <p>위의 이미지는 <a href="https://www.aka.ms/gigaom_benchmark"><em>2020년 2월 GigaOm 성능 벤치마크 블로그 게시물의 성능</em></a> <em>및 가격 비교를 보여줍니다</em><em>.&nbsp; </em></p>
+
+
+  <p>12월, GigaOm의 독립적인 연구는 업계 표준 TPC-E 벤치마크에서 파생된 현장 테스트를 사용하여 Azure Virtual Machines의 SQL Server AWS EC2와 비교했습니다. GigaOm은 Azure가 AWS보다 최대 <a href="https://gigaom.com/report/sql-transaction-processing-price-performance-testing-azure-eas-vs-aws-r5a/" target="_blank">3.4배, 87% 저렴</a> 합니다.&nbsp; 오늘, GigaOms&rsquo;의 두 번째 벤치마크 분석에서 최신 가상 머신 비교 및 디스크 스트라이프를 사용하여 Azure가 AWS보다 최대 <a href="https://www.aka.ms/gigaom_benchmark" target="_blank">3.6배 빠르고 84% 저렴</a> 하다는 것을 발표하게 되어 기쁩니다.<sup> 1</sup>&nbsp;</p>
+
+
+  <p>이러한 결과는 SQL Server Azure에서 가장 잘 실행된다는 것을 계속 보여줍니다.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <p>Azure에서 SQL Server 사용하여 현재 이러한 혜택을 활용하는 방법에 대해 <a href="https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/" target="_blank">자세히 알아보세요</a>.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <hr>
+
+  <p><sup>1</sup> 2020년 2월, Microsoft가 의뢰하고 GigaOm에서 수행한 연구의 데이터를 기반으로 하는 가격-성능 클레임입니다. 이 연구는 Azure E32as_v4 인스턴스 유형의 Windows Server 2019 Datacenter Edition에서 SQL Server 2019 Enterprise Edition P30 Premium SSD Disks 및 SQL Server 2019 Enterprise Edition 간의 가격 성능을 비교했습니다. Windows SERVER 2019 Datacenter edition in AWS EC2 r5a.8xlarge 인스턴스 유형(범용(gp2) 볼륨 포함) 벤치마크 데이터는 인식된 업계 표준 TPC 벤치마크&trade; E(TPC-E)에서 파생된 GigaOm 분석 필드 테스트에서 가져옵니다. 필드 테스트는 전체 TPC-E 벤치마크를 구현하지 않으므로 게시된 TPC-E 벤치마크와 비교할 수 없습니다. 가격은 2020년 1월 현재 Azure Virtual Machines 및 AWS EC2용 북부 캘리포니아의 SQL Server 대해 미국 서부에서 공개적으로 사용할 수 있는 미국 가격을 기준으로 합니다. 가격 책정에는 Azure 및 AWS 컴퓨팅 가격 책정에 대한 3년 예약과 SQL Server 대한 Azure 하이브리드 혜택 및 Windows Server에 대한 Azure 하이브리드 혜택 및 AWS의 SQL Server 대한 라이선스 이동성이 통합되어 있으며 Software Assurance 비용은 제외됩니다. 실제 결과 및 가격은 구성 및 지역에 따라 달라질 수 있습니다.</p>

@@ -1,0 +1,151 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 24a56234c9e7c6d51ec8dcaa85c81902de005e65
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900802"
+Slug: security-center-playbooks-and-azure-functions-integration-with-firewalls
+Title: Security Center 플레이북 및 Azure Functions와 방화벽 통합
+Summary: '공격이 감지된 경우 매 초마다 계산됩니다. 감지된 위협에 대해 신속하게 조치를 취할 수 있어야 한다는 소식을 들었습니다. Ignite 2017에서는 Security Center에서 감지한 위협에 대응하는 방법을 제어할 수 있는 Azure Security Center 플레이북을 발표했습니다. '
+Content: >-
+  <p>공격이 감지된 경우 매 초마다 계산됩니다. 감지된 위협에 대해 신속하게 조치를 취할 수 있어야 한다는 소식을 들었습니다. <a href="https://youtu.be/e8iFCz5RM4g" target="_blank">Ignite 2017</a>에서는 Security Center에서 감지한 위협에 대응하는 방법을 제어할 수 있는 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-playbooks" target="_blank">Azure Security Center 플레이북</a>을 발표했습니다. Security Center 경고가 트리거될 때 Security Center 플레이북을 수동으로 실행하여 응답 시간을 줄이고 보안 상태를 계속 제어할 수 있습니다. 현재 Azure Functions가 Security Center 플레이북과 함께 작동하여 Palo Alto VM-Series 방화벽에 대해 감지된 위협에 신속하게 대응하는 방법에 대한 구체적인 예제를 살펴보겠습니다.</p>
+
+
+  <p>이 시나리오에서 Azure Security Center는 RDP 무차별 암호 대입 공격을 감지하고 사용자에게 알렸습니다. Palo Alto VM-Series 방화벽에서 해당 공격의 원본 IP 주소를 차단하는 데 도움이 되도록 완료해야 하는 몇 가지 단계가 있습니다. 먼저 C# 프로그래밍 언어 <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function" target="_blank">를</a> 사용하는 HTTP 트리거용 Azure Portal의 Functions 앱에서 완료할 수 있는 Azure Function을 만들어야 합니다. Azure Function을 사용하면 Security Center 플레이북이 Palo Alto VM-Series 방화벽과 통신하고 궁극적으로 악의적인 활동이 방화벽을 트래버스하지 못하도록 차단할 수 있습니다.&nbsp;</p>
+
+
+  <p>다음으로, Security Center 플레이북을 배포할 때 플레이북이 악성 IP가 <a href="https://www.paloaltonetworks.com/documentation/80/pan-os/xml-api/get-started-with-the-pan-os-xml-api/explore-the-api/use-the-api-browser" target="_blank">Palo Alto VM-Series 방화벽</a>을 통과하지 못하도록 차단하도록 Azure Function에 아래 샘플 코드를 배치합니다.</p>
+
+
+  <pre>
+
+  using System.Net;
+
+
+  using System.Security.Cryptography.X509Certificates;
+
+
+  using System.Net.Security;
+
+
+  public static async Task&lt;HttpResponseMessage&gt; Run(HttpRequestMessage req, TraceWriter log)
+
+
+  {
+
+   string key = &quot;<b>YOUR_PaloAlto_KEY</b>&quot;;
+
+   string xmlElementForamt = @&quot;
+
+  &lt;source&gt;
+
+   &lt;member&gt;{0}-{0}&lt;/member&gt;
+
+  &lt;/source&gt;
+
+
+  &lt;destination&gt;
+
+   &lt;member&gt;any&lt;/member&gt;
+
+  &lt;/destination&gt;
+
+
+  &lt;application&gt;
+
+   &lt;member&gt;any&lt;/member&gt;
+
+  &lt;/application&gt;
+
+
+  &lt;service&gt;
+
+   &lt;member&gt;any&lt;/member&gt;
+
+  &lt;/service&gt;
+
+
+  &lt;action&gt;deny&lt;/action&gt;
+
+
+  &lt;source-user&gt;
+
+
+  &lt;member&gt;any&lt;/member&gt;
+
+
+  &lt;/source-user&gt;
+
+
+  &lt;disabled&gt;no&lt;/disabled&gt;
+
+
+  &lt;log-start&gt;yes&lt;/log-start&gt;
+
+
+  &lt;log-end&gt;yes&lt;/log-end&gt;
+
+
+  &lt;description&gt;IP Blocked as response from Azure Security Center&lt;/description&gt;
+
+
+  &lt;from&gt;
+
+
+  &lt;member&gt;any&lt;/member&gt;
+
+
+  &lt;/from&gt;
+
+
+  &lt;to&gt;
+
+   &lt;member&gt;any&lt;/member&gt;
+
+  &lt;/to&gt;&quot;;
+
+   ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
+   dynamic data = await req.Content.ReadAsAsync&lt;object&gt;();
+
+   string ip = data?.ip;
+
+   string ruleName = string.Format(&quot;IP {0} blocked from ASC&quot;, ip);
+
+   string xmlElement = string.Format(xmlElementForamt, ip);
+
+   string url = string.Format(
+
+  &quot;https://<b>YOUR_PALO_ALTO_URL</b>/api/?type=config&amp;action=set&amp;key={0}&amp;xpath=/config/devices/entry/vsys/entry/rulebase/security/rules/entry[@name=&#39;{1}&#39;]&amp;element={2}&quot;,key, ruleName, xmlElement);
+
+   var request = (HttpWebRequest)WebRequest.Create(Uri.EscapeUriString(url));
+
+   request.ServerCertificateValidationCallback += (object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) =&gt; true;
+
+   var response = (HttpWebResponse)(await request.GetResponseAsync());
+
+   response.Close();
+
+  return req.CreateResponse(HttpStatusCode.OK);
+
+
+  }</pre>
+
+
+  <p>이제 샘플 코드가 Azure Function에 있으므로 Security Center로 이동하여 아래 표시된 워크플로를 사용하여 새 플레이북을 만들어야 합니다. 플레이북은 Palo Alto 방화벽 관련 문제에 대한 응답을 오케스트레이션하는 방법을 정의합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/599dee6f-79ec-46a0-a86b-f43412d39671.png"><img alt="image" border="0" height="242" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4782947c-c090-4b65-a2bb-f5997b9ed928.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p>위와 같이 경고가 생성되면 보안 관리자에게 공격의 원본 IP를 차단하거나 무시할 것인지 묻는 <a href="https://docs.microsoft.com/en-us/azure/connectors/connectors-create-api-office365-outlook" target="_blank">승인 이메일</a> 이 전송됩니다. 해당 전자 메일에 대한 답변이 차단되면 생성된 Azure Function은 원본 IP를 수신하고 Palo Alto VM-Series 방화벽에 차단 규칙을 만듭니다. 승인 전자 메일에 대한 답변이 무시되면 경고 설명이 포함된 다른 전자 메일이 보안 관리자에게 전송됩니다.</p>
+
+
+  <p>이제 보안 경고가 트리거되면 Azure Functions 및 플레이북이 설정되므로 Palo Alto VM-Series 방화벽에서 차단 규칙을 만들어 검색된 위협에 신속하게 대응하고 네트워크 보안을 제어할 수 있습니다.</p>
+
+
+  <p>플레이북 및 기능에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/security-center/" target="_blank">설명서를 참조하세요</a>.</p>
+
+
+  <p>Azure Security Center 플레이북을 시작하려면 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-pricing" target="_blank">표준 보안 계층</a>을 사용해 보세요.</p>

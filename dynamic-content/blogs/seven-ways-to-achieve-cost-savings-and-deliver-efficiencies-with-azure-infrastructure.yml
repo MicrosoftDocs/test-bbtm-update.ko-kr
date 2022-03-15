@@ -1,0 +1,90 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b90aa3b0f6b7de704ffcc15b73a7175c10ae93b9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900712"
+Slug: seven-ways-to-achieve-cost-savings-and-deliver-efficiencies-with-azure-infrastructure
+Title: Microsoft Azure 인프라를 사용하여 비용을 최적화하고 가치를 극대화하는 8가지 방법
+Summary: Azure 인프라가 현금 흐름을 개선하고, 비용 절감을 달성하고, 운영 효율성을 높이고, 보안 및 관리를 통합하는 데 도움이 될 수 있는 8가지 방법입니다.
+Content: >-
+  <p>글로벌 건강 위기는 우리가 일하고 사는 방식을 변화시켰습니다. Microsoft는 고객이 위기에 대응하고 향후 성공을 위해 미리 계획할 수 있도록 최선을 다하고 있습니다.</p>
+
+
+  <p>지난 몇 달 동안 저는 원격 작업을 사용하도록 IT 우선 순위를 신속하게 조정하고 비용 및 효율성을 최적화하는 동시에 복구 및 미래 성장을 준비하는 현명한 방법에 투자해 온 전 세계IT 리더들로부터 영감을&mdash;&mdash; 받았습니다. 이러한 목표를 달성하기 위해 많은 IT 리더들이 클라우드 컴퓨팅 채택을 가속화하고 있습니다.</p>
+
+
+  <h2>Azure 인프라를 사용하여 IT 비용 최적화 및 비즈니스 가치 최대화</h2>
+
+
+  <p>다음은 현재 Azure 인프라가 현금 흐름을 개선하고, 비용 절감을 달성하고, 운영 효율성을 높이고, 보안 및 관리를 통합하는 데 도움이 될 수 있는 8가지 방법입니다.</p>
+
+
+  <h3>1. 어디서나 원격 작업을 사용하도록 설정하고 생산성을 보장합니다.</h3>
+
+
+  <p>사용자가 어디서나 작동하는 데 필요한 데스크톱 및 앱에 액세스할 수 있도록 하려면 <a href="https://azure.microsoft.com/en-us/services/virtual-desktop/" target="_blank">Virtual Desktopno</a>&mdash;가 새 하드웨어를 프로비전해야 Windows 가상 데스크톱을 빠르게 스핀업하고 확장할 수 있습니다. Windows Virtual Desktop은 다중 세션을 지원하는 최상의 Windows 10 및 Office 365 가상 데스크톱 환경을 제공합니다. 사용 중인 인프라에 대해서만 비용을 지불하고 컴퓨터를 사용하지 않을 때 컴퓨터를 끄면 비용을 절감할 수 있습니다. <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/30/enable-remote-work-faster-new-windows-virtual-desktop-capabilities/" target="_blank">블로그</a>를 참조하여 더 빠른 배포를 가능하게 하고, 보안 및 규정 준수를 더욱 강화하고, 가상 데스크톱 내에서 데스크톱에서 기대하는 Microsoft Teams 사용자 환경을 제공하기 위해 최근에 릴리스한 새로운 Windows Virtual Desktop 기능에 대해 알아봅니다.</p>
+
+
+  <p>직원은 가상 데스크톱 외에도 온-프레미스 및 클라우드의 리소스에 액세스해야 합니다. Azure를 사용하면 Azure <a href="https://azure.microsoft.com/en-us/services/vpn-gateway/" target="_blank">VPN Gateway</a>를 사용하여 온-프레미스 VPN(가상 사설망) 솔루션을 빠르게 확장하고 확장할 수 있습니다. 신속하게 프로비전하고 쉽게 스케일 업 및 다운할 수 있습니다. Azure 네트워크는 리소스 사용률의 급격한 변화를 견딜 수 있도록 설계되었으며 사용량이 가장 많은 기간을 쉽게 관리할 수 있습니다. <a href="https://azure.microsoft.com/en-us/blog/how-azure-vpn-helps-organizations-scale-remote-work/" target="_blank">블로그</a>를 읽어 Azure VPN이 조직이 원격 작업을 확장하는 데 도움이 되는 방법에 대한 모범 사례 및 팁에 대해 알아봅니다.</p>
+
+
+  <h3>2. 비용이 많이 드는 중단을 방지하기 위해 비즈니스 연속성 유지</h3>
+
+
+  <p>많은 회사에서 데이터와 애플리케이션이 비즈니스 중단으로부터 완전히 보호되도록 백업 및 재해 복구 전략을 자세히 살펴보고 있습니다. 몇 번의 클릭만으로 <a href="https://azure.microsoft.com/en-us/services/backup/" target="_blank">Azure Backup</a> 및 <a href="https://azure.microsoft.com/en-us/services/site-recovery/" target="_blank">Azure Site Recovery</a> 를 통해 고객은 데이터와 애플리케이션을 클라우드에 쉽게 백업하고 클라우드 기반 복제, 장애 조치 및 복구 프로세스를 신속하게 배포할 수 있습니다.</p>
+
+
+  <p>또한 신뢰할 수 있는 연결을 보장하기 위해 고객은 지원되는 파트너 SD-WAN 디바이스와 <a href="https://azure.microsoft.com/en-us/services/virtual-wan/" target="_blank">함께 Azure Virtual WAN</a> 을 사용하여 애플리케이션 및 데이터가 호스트되는 온-프레미스 및 퍼블릭 클라우드에 원격 지사를 연결합니다. Azure Virtual WAN은 가장 가까운 네트워크 위치에서 Microsofts&rsquo; 전용 글로벌 네트워크를 통해 지점으로 트래픽을 라우팅하여 빠르고 안정적인 대규모 연결을 제공합니다.</p>
+
+
+  <h3>3. 증가하는 사이버 공격으로부터 온-프레미스 및 클라우드 워크로드 보호</h3>
+
+
+  <p>원격 작업을 가능하게 하는 디지털 인프라에 대한 의존도가 증가함에 따라 사이버 범죄가 증가하고 있습니다. Microsoft는 사이버 보안에 매년 10억 달러 이상을 투자하고 있으며 하루에 8조 개 이상의 신호를 처리하는 대규모 위협 인텔리전스 소스를 보유하고 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">Azure Security Center</a> 는 모든 클라우드 및 온-프레미스 워크로드의 보안 상태에 대한 통합 보기를 제공하고 MFA(다단계 인증) 켜기, SSH(보안 셸) 및 RDP(원격 데스크톱 프로토콜) 포트 보호 등을 포함한 보안 권장 사항을 제공합니다. <a href="https://azure.microsoft.com/en-us/services/web-application-firewall/" target="_blank">Azure Web Application Firewall</a> 및 <a href="https://azure.microsoft.com/en-us/services/ddos-protection/" target="_blank">Azure DDoS Protection</a> 은 모든 액세스에서 ID를 확인하고 네트워크가 올바르게 분할되었는지 확인하는 등 제로 트러스트 보안으로 웹 워크로드를 보호합니다. 또한 많은 고객이 클라우드 네이티브 보안 정보 및 이벤트 관리 SIEM인 <a href="https://azure.microsoft.com/en-us/services/azure-sentinel/" target="_blank">Azure Sentinel</a>을 활용하여 고급 AI 지원 위협 방지에 액세스하고 있습니다. Covid-19 기간 동안 <a href="https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/ensuring-security-during-covid-19-operations/ba-p/1251983" target="_blank">보안 운영을 강화하고</a> <a href="https://www.microsoft.com/security/blog/2020/05/14/open-sourcing-covid-threat-intelligence/" target="_blank">새로운 위협 인텔리전스를 오픈 소싱하는</a> 방법에 대해 자세히 알아봅니다.</p>
+
+
+  <h3>4. 하이브리드 환경을 효율적으로 관리</h3>
+
+
+  <p>고객&rsquo; IT 환경은 분산된 위치에서 다양한 하드웨어 집합에서 실행되는 다양한 유형의 애플리케이션으로 발전하고 있습니다. 개발자 혁신을 늦추지 않고 IT 리소스를 효율적으로 관리하는 방법은 오늘날 IT 리더가 직면한 주요 과제입니다. <a href="https://azure.microsoft.com/en-us/services/azure-arc/" target="_blank">Azure Arc</a>를 통해 고객은 온-프레미스, 다중 클라우드 및 단일 컨트롤 플레인의 에지에 걸쳐 Windows 및 Linux 서버, Kubernetes 클러스터 및 애플리케이션을 원활하게 제어, 관리 및 보호할 수 있습니다. 또한 Azure Arc는 <a href="https://azure.microsoft.com/en-us/services/azure-arc/hybrid-data-services/" target="_blank">Azure 데이터 서비스와 같은 Azure 서비스를</a> 모든 인프라에 제공하므로 고객은 최신 클라우드 기능, 확장성, 신속한 배포 및 클라우드 청구&mdash;를 모든 클라우드 및 Kubernetes 클러스터에 포함하는 Azure 혁신&mdash;을 활용할 수 있습니다.</p>
+
+
+  <h3>5. 클라우드로 마이그레이션하고 비용 절감</h3>
+
+
+  <p>조직은 자본 지출을 줄이고, 비용 절감을 실현하고, 가치 창출 시간을 단축하기 위해 클라우드 마이그레이션을 가속화하고 있습니다. <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">Azure 하이브리드 혜택</a> 및 무료 확장 보안 업데이트를 포함한 제품을 통해 Azure는 Windows Server 및 SQL Server 워크로드를 마이그레이션하기 위해 <a href="https://azure.microsoft.com/en-us/overview/azure-vs-aws/cost-savings/" target="_blank">AWS보다 5배 저렴</a>합니다. <a href="https://azure.microsoft.com/en-us/overview/linux-on-azure/" target="_blank">Linux 워크로드를 Azure로 마이그레이션하여</a> Microsoft의 통합 지원을 통해 즐겨 찾는 배포판에서 더 많은 성능과 효율성을 얻습니다. 또한 <a href="https://azure.microsoft.com/en-us/migration/migration-program/" target="_blank">고객은 Azure 마이그레이션 프로그램을</a> 통해 무료 마이그레이션 도구, 지침 및 모범 사례를 통해 마이그레이션 비용을 줄이고 마이그레이션 여정을 가속화할 수 있습니다.</p>
+
+
+  <h3>6. Azure에서 SAP 솔루션을 실행하여 인사이트 및 민첩성 활용</h3>
+
+
+  <p>Azure에서 SAP 솔루션을 실행하면 고객에게 실시간 인사이트 및 유연성을 제공하여 시장의&nbsp; 변화하는 요구에 신속하게 대응하는 동시에 복원력 있는 미래로 가는 길을 열어줍니다. Azure는 중요 업무용 SAP 워크로드를 실행하도록 최적화된 검증된 클라우드 플랫폼이며 현재 퍼블릭 클라우드에서 가장 큰 프로덕션 SAP 환경을 지원합니다.</p>
+
+
+  <p>포용 이니셔티브를 통해 SAP와 Microsoft는 업계별 모범 사례, 참조 아키텍처 및 공동 파트너 에코시스템&mdash;을 통해 고객에게 간소화되고 공동으로 개발된 클라우드 경로를 제공하기 위해&nbsp; 파트너십을 심화했습니다. <a href="https://azure.microsoft.com/en-us/solutions/sap/" target="_blank">Azure에서 SAP 워크로드</a>를 마이그레이션하면 고객은 SAP 및 비 SAP 데이터를 풀링하고 지능형 분석을 적용하고, 100개 이상의 Azure 서비스를 활용하여 앱 혁신을 만들고, SAP Cloud Platform을 사용하여 Microsoft 365, Microsoft Teams, Microsoft Power Apps 및 Microsoft와 같은 기존 생산성 및 협업 도구와 통합할 수 있습니다. Power BI.</p>
+
+
+  <h3>7. 온-프레미스 인프라 현대화</h3>
+
+
+  <p>많은 고객이 규정 요구 사항을 충족하거나 대기 시간 문제를 해결하거나 기존 투자를 최대화하기 위해 특정 워크로드를 온-프레미스에 유지합니다. 이 경우 고객은 온-프레미스 인프라를 현대화하고 효율성을 높여 클라우드 혁신을 활용할 수 있습니다.</p>
+
+
+  <p>예를 들어 <a href="https://azure.microsoft.com/en-us/products/azure-stack/hci/" target="_blank">Azure Stack HCI</a> 를 사용하면 고객이 클라우드에 연결된 하이퍼 수렴형 인프라에서 온-프레미스 가상화된 애플리케이션을 통합하여 스토리지 및 컴퓨팅에 대한 최상의 가격 성능에 액세스할 수 있습니다. <a href="https://azure.microsoft.com/en-us/products/azure-stack/hub/" target="_blank">Azure Stack Hub</a> 는 60여 개국의 고객이 온-프레미스에서 클라우드 네이티브 애플리케이션을 빌드 및 배포하고 자체 프라이빗, 자율적 클라우드&mdash; 연결 또는 연결 끊김&mdash;을 실행하는 데 도움을 줍니다.</p>
+
+
+  <h3>8. 워크로드를 지속적으로 비용 최적화</h3>
+
+
+  <p>Azure는 고객이 비용을 최적화하는 여러 가지 방법을 제공합니다. <a href="https://azure.microsoft.com/en-us/services/cost-management/" target="_blank">Azure Cost Management + 청구는</a> 고객에게 클라우드 지출을 모니터링 및 분석하고, 예산 및 지출 경고를 설정하고, 팀 전체에 클라우드 비용을 할당할 수 있는 무료 도구를 제공합니다. <a href="https://docs.microsoft.com/en-us/azure/advisor/advisor-cost-recommendations" target="_blank">Azure Advisor</a> 를 사용하면 조직에서 개인 설정된 권장 사항을 사용하여 클라우드 리소스 사용률을 최적화할 수 있습니다. <a href="https://azure.microsoft.com/en-us/pricing/spot/" target="_blank">Azure Spot Virtual Machine</a>과 <a href="https://azure.microsoft.com/en-us/reservations/" target="_blank">Azure Reservations</a>를 결합한 제품으로 고객은 선불 예약 가격 책정으로 Azure 서비스의 종량제 가격보다 최대 90%까지 절감하거나 사용하지 않는 Azure 컴퓨팅 용량을 대폭 할인된 가격으로 활용할 수 있습니다. <a href="https://azure.microsoft.com/blog/optimize-your-azure-costs-to-help-meet-your-financial-objectives" target="_blank">Azure 비용을 최적화하는 모든 방법에</a> 대해 자세히 알아봅니다.</p>
+
+
+  <h2>지금 Azure 인프라 서비스 시작</h2>
+
+
+  <p>우리는 위에서 다루는 주제 중 일부에 대해 더 자세히 알아보기 위해 앞으로 몇 주 안에 더 많은 블로그 게시물을 게시하고 있습니다. <a href="https://azure.microsoft.com/en-us/blog/" target="_blank">Azure 블로그</a>로 돌아와서 새 게시물을 확인하세요. 또한 <a href="https://azure.microsoft.com/en-us/overview/what-is-azure/iaas/" target="_blank">Azure IaaS(Infrastructure as a Service)</a> 를 방문하여 Azure 인프라 서비스 및 솔루션이 어떻게 도움이 되는지 자세히 알아보세요.</p>

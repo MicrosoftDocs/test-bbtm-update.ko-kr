@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: abc2d183ab1d9f8956fdb7b98797fa2ad732c454
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900535"
+Slug: speech-services-august-2018-update
+Title: Speech Services 2018년 8월 업데이트
+Summary: Cognitive Services Speech SDK(버전 0.6.0)에 대한 또 다른 업데이트 릴리스를 발표하게 되어 기쁘게 생각합니다. 이 릴리스에서는 Windows 10(x64) 및 Linux(x64)에서 Java에 대한 지원을 추가했습니다.
+Content: >-
+  <p>Cognitive <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/">Services Speech SDK </a>(버전 0.6.0)에 대한 또 다른 업데이트 릴리스를 발표하게 되어 기쁘게 생각합니다. 이 릴리스에서는 Windows 10(x64) 및 Linux(x64)에서 Java에 대한 지원을 추가했습니다. 또한 .NET Standard 2.0에 대한 지원을 Linux 플랫폼으로 확장하고 있습니다. 변경 내용은 아래 표에서 강조 표시되어 있습니다. SDK의 샘플 섹션은 새로 지원되는 언어의 사용을 보여주는 샘플로 업데이트되었습니다. UWP 지원은 Speech SDK 버전 0.5.0 릴리스에 추가되었습니다. 이제부터 Speech SDK로 빌드된 UWP 앱을 Microsoft Store 게시할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/006e7474-5866-47f3-9710-bbd823f0e7eb.png"><img alt="Speech SDK August Update" border="0" height="634" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a0a6752c-ae48-4e1f-a444-4f65fd0a24ca.png" style="border: 0px currentColor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Speech SDK 8월 업데이트" width="1024"></a></p>
+
+
+  <p>또한 얼리어답터에 의해 보고된 몇 가지 버그 수정도 포함되었습니다. 가장 주목할 만한 것은 장기 실행 음성 전사의 오류를 수정하고 사용 중인 소켓 연결 및 스레드의 양을 줄여야 합니다.</p>
+
+
+  <p>기타 기능 변경, 호환성이 손상되는 변경 및 버그 수정은 <a href="https://aka.ms/csspeech/whatsnew" target="_blank">Speech SDK&rsquo; 릴리스 정보</a>에서 찾을 수 있습니다. Speech SDK 및 Speech Services에 대한 질문은 <a href="https://aka.ms/csspeech/support" target="_blank">지원 페이지를</a> 방문하세요.</p>
+
+
+  <p><a href="https://aka.ms/sdsdk-info" target="_blank">Speech Devices SDK</a>에 영향을 주는 변경 내용도 있습니다. 약간의 배경을 제공하기 위해 Speech Devices SDK는 디바이스 솔루션용입니다. Speech SDK를 사용하고 Speech SDK를 사용하여 음성 인식을 위해 음성 서비스에 오디오를 보냅니다. Speech Devices SDK에는 또한 높은 음성 인식 정확도를 위해 개발 키트 마이크를 통해 수집된 오디오 데이터의 오디오 품질을 크게 개선하기 위해 Roobo 개발 키트&rsquo;에 튜닝된 고급 오디오 처리 알고리즘&rsquo;이 있습니다.</p>
+
+
+  <p><a href="https://aka.ms/sdsdk-kws" target="_blank">사용자 지정 키워드 스포팅</a> 기능은 Speech Devices SDK에서만 사용할 수 있습니다. 이 릴리스에서 사용자 지정 키워드 스포팅 기능&rsquo; KeywordRecognitionModel 함수는 이제 kws.table과 (선택 사항) 키워드 적응 파일을 포함하는 zip 형식의 fromFile() 및 fromStream()을 지원합니다. 일반적으로 <a href="https://aka.ms/sdsdk-info" target="_blank">Speech SDK가 릴리스된 직후 Speech Devices SDK</a>에 대한 업데이트를 릴리스합니다.<a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/"></a> Speech Devices SDK와 관련된 모든 업데이트는 Speech Devces SDK&rsquo; 릴리스 정보를 참조하세요.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/support" target="_blank">지원 페이지를</a> 방문하여 질문이 있는 경우 알려주세요.</p>

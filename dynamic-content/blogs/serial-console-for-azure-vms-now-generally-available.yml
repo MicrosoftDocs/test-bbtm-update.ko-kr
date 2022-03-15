@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ee6e0b58efc255f6a87c778cb32d4f86735ad53a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900761"
+Slug: serial-console-for-azure-vms-now-generally-available
+Title: 이제 Azure VM용 직렬 콘솔을 일반 공급
+Summary: 올해 초, VM(Virtual Machines)용 Azure 직렬 콘솔의 공개 미리 보기를 릴리스했습니다. 현재 직렬 콘솔의 일반 공급이 발표되고 있으며, 시스템 관리자, IT 관리자, DevOps 엔지니어, VM 관리자 및 시스템 엔지니어를 위한 더 나은 도구로 직렬 콘솔을 만들기 위해 다양한 기능과 향상된 성능을 추가했습니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/blog/virtual-machine-serial-console-access/" target="_blank">올해</a> 초 Azure VM(Virtual Machines)의 직렬 콘솔 기능에 대한 공개 미리 보기를 발표했습니다. 현재 직렬 콘솔의 일반 공급이 발표되고 있으며&rsquo;, 시스템 관리자, IT 관리자, DevOps 엔지니어, VM 관리자 및 시스템 엔지니어를 위한 더 나은 도구가 되도록 다양한 기능과 향상된 성능이 추가되었습니다.</p>
+
+
+  <p>직렬 콘솔&rsquo;을 처음으로 사용하는 경우 이 시나리오를 인식할 수 있습니다. Youve&rsquo;가 VM을 변경하여 SSH 또는 RDP를 통해 VM에 연결할 수 없게 되었습니다. 과거에, 이것은 당신에게 꽤 무력을 남겼을 것입니다. 그러나 직렬 콘솔을 사용하면 VM 직렬 포트 &ndash; 를 통해 VM&rsquo;과 직접 상호 작용할 수 있습니다. 즉, 현재 네트워크 상태와 독립적이거나, 원하는&rsquo;&ldquo; 대로 키보드를 VM에 연결하는 것과 같습니다.&rdquo; 즉, 연결되지 않은 VM을 디버그하여 VM을 삭제하고 다시 만들 필요 없이 손상된 fstab 또는 잘못 구성된 네트워크 인터페이스와 같은 문제를 해결할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2c8030bd-38d8-48ee-8b23-c0582577c8be.gif"><img alt="loading" height="1080" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/df5f2609-1f95-427a-b9ed-c7edfaa08535.gif" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="로드" width="1690"></a></p>
+
+
+  <p>직렬 콘솔의 최신 기능에는 구독 수준 사용/사용 안 함 기능, 매직 SysRq 키 지원, 마스크할 수 없는 인터럽트 지원, 접근성 개선, 성능 및 안정성 향상이 포함됩니다. 이제 구독의 모든 VM에 대해 직렬 콘솔을 해제할 수 있습니다. 이 기능에 대한 자세한 내용은 <a href="https://aka.ms/serialconsolelinux#disable-serial-console" target="_blank">Linux</a> 및 <a href="https://aka.ms/serialconsolewindows#disable-serial-console" target="_blank">Windows</a> VM에 대한 설명서에 있습니다.</p>
+
+
+  <p>매직 SysRq 키라고도 하는 시스템 요청 키를 사용하면 상태에 관계없이 Linux 커널에서 이해할 수 있는 키 조합을 입력할 수 있습니다. SysRq와 마찬가지로 NMI(마스크할 수 없는 인터럽트)는 VM을 강제로 충돌할 수 있습니다. 이는 VM이 완전히 고정된 경우에 유용합니다. 다른 말로, 그 불쾌 한 디버깅 상황의 더 많은 도구 키트에 추가 도구를 제공 하는 were&rsquo;. 자세한 내용은 <a href="https://aka.ms/serialconsolesysrqhelp" target="_blank">Linux</a> 및 <a href="https://aka.ms/serialconsolewindows#use-serial-console-for-nmi-calls-in-windows-vms" target="_blank">Windows</a> VM에 대한 설명서에서 확인할 수 있습니다.</p>
+
+
+  <p>또한 시각, 청각 또는 신체 장애가 있는 모든 사용자가 직렬 콘솔에 더 쉽게 액세스할 수 있도록 하는 데 주력했습니다. 마우스를 사용할 필요 없이 이제 직렬 콘솔을 탭하여 화면의 위치를 정확하게 표시할 수 있습니다. 직렬 콘솔에는 네이티브 화면 읽기 프로그램 지원도 포함되어 있습니다. 즉, 화면 읽기 프로그램이 직렬 콘솔 내에서 무슨 일이 일어나고 있는지 정확히 알려줄 수 있습니다.</p>
+
+
+  <p><a href="https://aka.ms/serialconsoleazurefriday" target="_blank">Azure Fridays의 이 에피소드에서</a> 작동하는 직렬 콘솔을 확인하고 <a href="https://aka.ms/serialconsolelinux" target="_blank">Linux</a> 및 <a href="https://aka.ms/serialconsolewindows" target="_blank">Windows</a> VM에 대한 직렬 콘솔 설명서를 방문하여 자세히 알아볼 수 있습니다.</p>

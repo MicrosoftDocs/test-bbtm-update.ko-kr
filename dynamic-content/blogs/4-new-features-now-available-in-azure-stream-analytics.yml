@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b63def474a0fabba9163fa3b1338f892758749c3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906582"
+Slug: 4-new-features-now-available-in-azure-stream-analytics
+Title: 4 new features now available in Azure Stream Analytics(Azure Stream Analytics에서 이제 사용 가능한 4가지 새 기능)
+Summary: Azure Stream Analytics는 빠르게 움직이는 데이터 스트림에서 실시간 분석을 실행하는 Azure의 서버리스 PaaS 서비스입니다. 오늘 Azure Stream Analytics의 몇 가지 새로운 기능을 발표하게 되어 기쁩니다.
+Content: >-
+  <p>Azure Stream Analytics는 빠르게 움직이는 데이터 스트림에서 실시간 분석을 실행하는 Azure의 서버리스 PaaS 서비스입니다. 오늘 Azure Stream Analytics의 몇 가지 새로운 기능을 발표하게 되어 기쁩니다.</p>
+
+
+  <h2>공개 미리 보기</h2>
+
+
+  <h3>세션 창</h3>
+
+
+  <p>창 함수에 대한 기본 지원은 개발자가 임시 창에서 복잡한 스트림 처리 논리를 작성하는 데 도움이 되는 Azure Stream Analytics의 주요 기능입니다. 지금까지 Stream Analytics는 스트리밍 데이터에 대한 임시 작업을 수행하기 위해 연속, 호핑 및 슬라이딩 창을 제공했습니다. 오늘 <a href="https://msdn.microsoft.com/azure/stream-analytics/reference/session-window-azure-stream-analytics">세션</a> 창이라는 새로운 창 유형을 발표합니다. 세 가지 기존 창 유형과 달리 세션 창은 들어오는 데이터의 일괄 처리에 따라 변수 크기의 동적 임시 창을 만듭니다. 따라서 사용자는 데이터가 없는 기간을 필터링할 수 있습니다. 시간 제한, 최대 기간 및 분할 키(선택 사항)의 세 가지 주요 매개 변수를 사용하면 개발자가 클릭스트림 분석, 연결된 자동차 원격 분석 등의 시나리오에 대한 솔루션을 쉽게 빌드할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/395a5fc6-659e-4335-95f6-f7a42db50d3a.png"><img alt="image" border="0" height="249" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/611af02f-4fb5-425f-bedc-f3144408730f.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="598"></a></p>
+
+
+  <p align="center"><em>5분 시간 제한이 있는 세션 창의 예</em></p>
+
+
+  <h2 align="left">프라이빗 미리 보기</h2>
+
+
+  <h3 align="left">IoT Edge의 Stream Analytics 작업에 대한 C# 사용자 지정 코드 지원</h3>
+
+
+  <p align="left">작년에 JavaScript <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-javascript-user-defined-functions" target="_blank">사용자 정의 함수를 도입했습니다</a>. 그 이후로 많은 고객으로부터 확장성을 위해 다른 여러 언어를 사용하고 싶다는 소식을 들었습니다. 오늘 <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge" target="_blank">IoT Edge용 Azure Stream Analytics</a>에서 C# 사용자 지정 코드의 지원을 발표하게 되어 기쁘게 생각합니다. 쿼리 작성에 대한 Visual Studio 지원 및 IoT Edge에서 제공하는 배포의 용이성을 통해 사용자는 풍부한 스트리밍 파이프라인을 작성할 수 있습니다. SQL 언어의 단순성 외에도 사용자가 기존 코드 및 라이브러리를 활용하거나 스트리밍 엔진에서 직접 실행되는 새 논리를 개발할 수 있습니다.</p>
+
+
+  <h3 align="left">사용자 지정 특성으로 Blob 출력 분할</h3>
+
+
+  <p align="left">이제 쿼리의 열을 기반으로 Azure Stream Analytics 출력을 Blob Storage로 분할할 수 있습니다. 이전에는 {date} 및 {time} 분할만 지원되었습니다. 이 기능은 Blob 출력을 보다 세밀하게 제어할 수 있도록 하여 다운스트림 데이터 처리 워크플로를 크게 개선하도록 설계되었습니다. 파티션 키는 입력 스트림의 열이거나 쿼리 자체의 필드일 수 있습니다. 예를 들어 고객 인텔리전스를 위한 실시간 애플리케이션에서 Blob 출력의 경로 접두사 필드를 {client_id}로 설정할 수 있습니다.</p>
+
+
+  <h3 align="left">변칙 검색을 위한 업데이트된 Built-In ML 모델</h3>
+
+
+  <p align="left">이 기능은 몇 달 동안 공개 미리 보기로 제공됩니다. 중요한 고객 피드백에 따라 현재 사용 가능한 양방향, 느린 긍정 및 느린 부정 추세 검색 외에도 급증&rsquo; 및 &lsquo;급락&rsquo; 감지에 대한 &lsquo;ML 모델 지원을 추가하고 있습니다. 또한 고객이 결과를 더 잘 해석할 수 있도록 변칙 점수 정규화를 개선하고 있습니다.</p>
+
+
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d18c23e7-b742-48d6-8fd6-57a6d5b73d86.png"><img alt="image" border="0" height="189" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8eaaa771-fc65-478d-91c1-2c85d2ed32b5.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="645"></a></p>
+
+
+  <p align="center"><em>빨간색 점으로 표시되는 수준 변경 변칙 및 빨간색 화살표로 표시되는 급증 변칙</em></p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eea6e687-261c-4894-8e86-8940b865e828.png"><img alt="image" border="0" height="210" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ea1ff6f8-1566-4192-ab54-a34f3d66135f.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="300"></a></p>
+
+
+  <p align="center"><em>긍정적인 추세 변경 변칙</em></p>
+
+
+  <h3>피드백과 아이디어가 계속 제공될 예정</h3>
+
+
+  <p>Azure Stream Analytics 팀은 사용자 의견을 경청하고 사용자 의견으로 향후 투자를 지시할 수 있도록 최선을 다하고 있습니다. 대화에 참여하고 <a href="https://feedback.azure.com/forums/270577-stream-analytics/filters/top" target="_blank">UserVoice</a>를 통해 음성을 들을 수 있게 되어 환영합니다.</p>

@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 26d64d8492cb25e10f229647509f9d343c91b933
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899791"
+Slug: introducing-a-new-upgrade-option-in-place
+Title: '새 업그레이드 옵션 소개: In-Place'
+Summary: 현재는 "현재 위치 업그레이드"라는 새로운 업그레이드 메커니즘을 도입하여 먼저 배포하지 않고도 기존 버전에 대해 새 버전의 서비스를 증분 방식으로 롤업할 수 있습니다.
+Content: '<p>현재는 새 버전을 스테이징에 먼저 배포하지 않고 기존 버전에 대해 새 버전의 서비스를 증분 방식으로 롤링할 수 있는 "현재 위치 업그레이드"라는 새로운 업그레이드 메커니즘을 도입하고 있습니다. 이 새로운 메커니즘을 사용하면 애플리케이션의 다른 역할을 방해하지 않고 전체 애플리케이션 또는 단일 역할(예: 웹 역할)만 업그레이드할 수 있습니다. 먼저 새 버전을 스테이징에 배포한 다음 프로덕션 배포와 교환하여 이전과 같이 업그레이드할 수 있습니다.</p>  <p>현재 위치 업그레이드 중에 애플리케이션 가용성을 보장하기 위해 Windows Azure는 인스턴스의 하위 집합만 한 번에 중지하여 업그레이드하고 나머지 인스턴스는 계속 실행합니다. 이를 위해 Windows Azure는 논리적으로 애플리케이션을 "업그레이드 도메인"으로 분할하고 한 번에 하나의 도메인을 업데이트합니다. Community Technology Preview 동안 Windows Azure는 각 애플리케이션에 대해 두 개의 업그레이드 도메인을 사용합니다. 즉, 현재 위치 업그레이드 중에 역할 인스턴스의 절반이 한 번에 오프라인 상태가 됩니다. 나중에 원하는 업그레이드 도메인 수를 선택할 수 있습니다.</p>  <p><img style="border-bottom: 0px; border-left: 0px; display: inline; margin-left: 0px; border-top: 0px; margin-right: 0px; border-right: 0px" title="이미지" border="0" alt="image" align="right" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image_6.png" width="260" height="205"> Windows Azure Portal 또는 <a href="https://blogs.msdn.com/windowsazure/archive/2009/09/17/introducing-the-windows-azure-service-management-api.aspx">새 서비스 관리 API</a>를 사용하여 현재 위치 업그레이드를 수행할 수 있습니다. 업그레이드에 서비스 정의 변경(예: 새 역할 또는 엔드포인트)이 포함된 경우 현재 위치 업그레이드를 사용할 수 없습니다. 자세한 내용은 MSDN 설명서를 참조하세요.</p>  <p>피드백을 알려주세요!</p>  <p>감사합니다,</p>  <p>투샤르 샨바그</p>'

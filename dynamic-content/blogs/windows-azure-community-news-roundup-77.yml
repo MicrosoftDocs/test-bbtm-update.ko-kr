@@ -1,0 +1,106 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fff00971188222f900944f26a90b05ee1d6a4e77
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906963"
+Slug: windows-azure-community-news-roundup-77
+Title: 'Windows Azure Community 뉴스 검거 #77'
+Summary: 클라우드 컴퓨팅 및 Windows Azure에 대한 최신 커뮤니티 기반 뉴스, 콘텐츠 및 대화의 주간 모집에 오신 것을 환영합니다. 이번 주의 하이라이트는 다음과 같습니다....
+Content: >-
+  <p>클라우드 컴퓨팅 및 <a href="https://www.windowsazure.com/en-us/pricing/free-trial/?WT.mc_id=WindowsAzureBlog_112113" target="_blank">Windows Azure</a>에 대한 최신 커뮤니티 기반 뉴스, 콘텐츠 및 대화의 주간 모집에 오신 것을 환영합니다. 이번 주의 하이라이트는 다음과 같습니다.</p>
+
+  <p><strong>문서, 비디오 및 블로그 게시물</strong></p>
+
+  <ul>
+
+  <li>문서: &nbsp; Mike Wood<a href="https://www.simple-talk.com/cloud/cloud-data/an-introduction-to-windows-azure-table-storage/">의 azure Table Storage Windows 소개</a>(11/14 게시)</li>
+
+  <li>블로그: #WindowsAzure&nbsp;비 알렉산드르 브리세부아 (게시 11/19)</li>
+
+  <li>블로그: 누노 고딘호<a href="https://msmvps.com/blogs/nunogodinho/archive/2013/11/20/windows-azure-storage-performance-best-practices.aspx">의 Windows Azure Storage 성능 모범 사례</a>(11/20 게시)</li>
+
+  <li>블로그: <a href="https://www.scarydba.com/2013/11/19/windows-azure-views/" target="_blank">Windows Azure Views</a> by Grant Fritchey(11/19에 게시됨)</li>
+
+  <li>블로그: SQL Server 2014 하이브리드: Azure Storage에 데이터 파일 저장 - 기괴하거나 그렇지 않나요? &nbsp;그렉 로우에 의해 (게시 11/20)</li>
+
+  <li>블로그: <a href="https://cloudshaper.wordpress.com/2013/11/18/messagehandler-early-adopter-program/" target="_blank">MessageHandler &ndash; 얼리 어답터 프로그램</a>&nbsp;비 이브 골레벤&nbsp;(게시 11/18)</li>
+
+  <li>블로그: 마누 코헨에 의해 SQL Database 없음을 선택하는 방법 (게시 11/10)</li>
+
+  <li>블로그: Alexandre <a href="https://alexandrebrisebois.wordpress.com/2013/11/14/create-predictable-guids-for-your-windows-azure-table-storage-entities/">Brisebois의 Windows Azure Table Storage 엔터티에 대한 예측 가능한 GUID 만들기</a>(11/14)</li>
+
+  <li>블로그: <a href="https://blogs.blackmarble.co.uk/blogs/sspencer/post/2013/11/15/Windows-Store-App-Notifications-the-Notification-Hub-and-Background-tasks.aspx" target="_blank">Windows 스토어 앱 알림, 알림 허브 및</a> Steve Spencer의 백그라운드 작업(11/15 게시)</li>
+
+  <li>블로그: Azure에 대한 추가 업데이트: SQL 사용자와 관련된 변경 내용은 무엇입니까? &nbsp;그렉 로우에 의해 (게시 11/14)</li>
+
+  <li>블로그: #windowsazure <a href="https://techmike2kx.wordpress.com/2013/11/13/the-windowsazure-story-continuous-in-integration-and-delivery-tfs-vs-online-mvpbuzz/" target="_blank">스토리 연속 &hellip; 통합 및 배달 &hellip; TFS + VS 온라인 #mvpbuzz</a> 마이크 마틴에 의해 (게시 11/13)</li>
+
+  <li>블로그: Windows Marcel Meijer의 <a href="https://blogs.msmvps.com/marcelmeijer/blog/2013/11/11/windows-azure-portal-enhancements-2013-11/">Azure Portal 개선 사항 2013-11</a>(게시 11/11)</li>
+
+  <li>블로그: Azure 클라우드 서비스&nbsp;인 David Rodriguez에서 외부 시작 작업 구성(11/1 게시)</li>
+
+  <li>블로그: <a href="https://gauravmantri.com/2013/11/10/windows-azure-scheduler-service-part-i-introduction/" target="_blank">Windows Azure Scheduler Service &ndash; Part I: Introduction</a> by Gaurav Mantri(게시 11/10)</li>
+
+  <li>블로그: Windows <a href="https://blogs.msmvps.com/marcelmeijer/blog/2013/11/10/windows-azure-tools-2-2/" target="_blank">Azure Tools 2.2</a> by Marcel Meijer(게시 10/11)</li>
+
+  <li>문서: Eric D. Boyd가 Windows Azure에 데이터 저장 및 액세스(11/8 게시)</li>
+
+  </ul>
+
+  <h4><span style="font-size: 1em"></span><strong style="font-size: 1em">향후 이벤트 및 사용자 그룹 모임</strong></h4>
+
+  <p>&nbsp;<strong>북미</strong></p>
+
+  <p>2014년 1월 18일: 사메디 아키텍처 &amp; Azure&nbsp;&nbsp;- 몬트리올, 캐나다</p>
+
+  <p><strong>유럽</strong></p>
+
+  <p>12월 5<sup>일</sup>&nbsp;&ndash; 6<sup>일</sup>: <a href="" target="_blank">IG2013 컨퍼런스</a>&nbsp;&nbsp;&ndash; 크루 홀, 영국</p>
+
+  <p>11월 12<sup>일</sup>&nbsp;&ndash; 13<sup>일</sup>:&nbsp;SharePoint 일 2013&nbsp;&ndash; 슬로베니아</p>
+
+  <p>12월 4<sup>일</sup>:&nbsp;영국 노스&nbsp;&ndash; 통에서 열린 건축 포럼</p>
+
+  <ul>
+
+  <li>12월 5-6 <a href=""></a> - 일 영국 크루 할린</li>
+
+  </ul>
+
+  <p>12월 7<sup>일</sup>:&nbsp;Windows Azure&nbsp;&nbsp;&ndash; Mechelen, 벨기에의 CloudBrew &ndash; A Full-Day</p>
+
+  <p>12월 10<sup>일</sup>:&nbsp;&ndash;벨기에 겐트 BizTalk Services Azure Windows&nbsp;&nbsp;&ndash; 랩</p>
+
+  <p><strong>기타 세계/가상</strong></p>
+
+  <p>진행 중:&nbsp;&nbsp;<a href="https://msdn.microsoft.com/en-us/dd540819.aspx" target="_blank">Windows Azure Virtual Labs</a>&nbsp;&ndash; 주문형</p>
+
+  <p><strong>코드:</strong></p>
+
+  <p><a href="https://github.com/paulbouwer/scriptcs-azuremanagement" target="_blank">Azure 관리 스크립트 팩&nbsp;</a></p>
+
+  <h4>Stack Overflow<strong>에 대한 최근 Windows Azure 토론 </strong><strong><a href="https://stackoverflow.com/questions/tagged/azure?page=1&amp;sort=newest&amp;pagesize=15" target="_blank"></a></strong></h4>
+
+  <p><strong>답변:</strong></p>
+
+  <p><a href="https://stackoverflow.com/questions/20006360/how-does-azure-service-bus-identify-a-duplicate-message">Azure Service Bus는 중복 메시지를 어떻게 식별하나요?</a> - 1 답변, 4 표</p>
+
+  <p><a href="https://stackoverflow.com/questions/19913858/best-practices-for-cron-job-style-tasks-on-the-asp-net-mvc-azure-platform" target="_blank">ASP.NET MVC/Azure 플랫폼에서 cron 작업 스타일 작업에 대한 모범 사례</a> &ndash; 4 답변, 4 투표</p>
+
+  <p><a href="https://stackoverflow.com/questions/19935404/upload-largefile-to-azure-blob-using-javascript" target="_blank">Javascript를 사용하여 큰 파일을 Azure Blob에 업로드?</a> &ndash; 1 답변, 2 표</p>
+
+  <p><a href="https://stackoverflow.com/questions/20014372/need-to-use-appsettings-in-azure-service" target="_blank">Azure 서비스에서 appsettings를 사용해야 합니까?</a> &ndash; 1 답변, 2 표</p>
+
+  <p><a href="https://stackoverflow.com/questions/20083421/transfer-files-from-azure-paas-vm-to-iaas-vm" target="_blank">Azure PaaS VM에서 IaaS VM으로 파일을 전송하나요?</a> &ndash; 1 답변, 2 표</p>
+
+  <p><a href="https://stackoverflow.com/questions/20040341/windows-azure-application-high-volume-of-records-insertions" target="_blank">Azure Application에서 대량의 레코드 삽입을 Windows?</a> -1 답변, 0표</p>
+
+  <p><a href="https://stackoverflow.com/questions/20031449/upload-a-page-blob-to-azure-using-rest-api-python" target="_blank">REST API Python을 사용하여 페이지 Blob을 azure에 업로드?</a>- 2 답변, 0 투표</p>
+
+  <p>강조 표시할 사용자와 같은 문서&rsquo; 또는 공유하려는 사용자 고유&rsquo;의 콘텐츠를 보내주세요. 또한 Azure 커뮤니티의 나머지 Windows 알려야 한다고 생각하는 로컬 이벤트, 그룹 또는 활동에 대해서도 알려주세요. 아래의 댓글 섹션을 사용하거나 Twitter <a href="https://twitter.com/windowsazure" target="_blank">@WindowsAzure</a>에서 문의할 수 있습니다.</p>
+
+  <p>멋진 주말을 만드세요!</p>
+
+  <p><a href="https://www.twitter.com/markjbrown" target="_blank">마크 브라운</a></p>

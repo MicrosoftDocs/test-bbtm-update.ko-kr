@@ -1,0 +1,83 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5220c69a08291493ec598366e990156d5d1f9a8e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899697"
+Slug: large-disk-support
+Title: 대규모 디스크 백업에 대한 백업 및 복원 성능 향상 및 지원 발표
+Summary: '대용량 디스크 지원 및 백업 및 복원 성능 향상의 일반 공급 발표 '
+Content: >-
+  <p>오늘 <a href="https://azure.microsoft.com/blog/azure-introduces-new-disks-sizes-up-to-4tb/">대규모 디스크 VM</a> 의 백업 지원과 백업 및 복원에 소요되는 시간을 줄이기 위한 개선 사항을 발표하게 되어 기쁩니다. 이러한 개선 사항 및 대규모 디스크 지원 세트는 새 VM 백업 스택을 기반으로 하며 관리 디스크와 비관리 디스크 모두에 사용할 수 있습니다. 진행 중인 백업 작업에 영향을 주지 않고 이 새 스택으로 원활하게 업그레이드할 수 있으며 백업 또는 복원을 설정하는 방법은 변경되지 않습니다.</p>
+
+
+  <p>이 공지 사항은 다음과 같은 여러 기능 향상을 결합합니다.</p>
+
+
+  <ul>
+   <li><strong>대용량 디스크 지원</strong> &ndash; 이제 관리 및 관리되지 않는 디스크 크기가 최대 4TB(4095GB)인 VM을 백업할 수 있습니다.</li>
+   <li><strong>인스턴트 복구 지점</strong> &ndash; 백업 작업의 일부로 스냅샷이 완료되는 즉시 복구 지점을 사용할 수 있습니다. 이렇게 하면 백업의 데이터 전송 단계가 완료될 때까지 복원을 트리거할 때까지 기다릴 필요가 없습니다. 이는 패치를 적용하려는 시나리오에서 특히 유용합니다. 이제 스냅샷 단계가 완료되면 패치를 진행할 수 있으며, 로컬 스냅샷을 사용하여 패치가 나빠지면 되돌릴 수 있습니다. 이는 스냅샷이 백업 자격 증명 모음에 안전하게 저장되는 이점이 추가된 Hyper-V 또는 VMware에서 제공하는 검사점 솔루션과 유사합니다.</li>
+   <li><strong>백업 및 복원 성능 향상 &ndash; </strong> 이 새로운 발표의 일환으로 백업 작업&nbsp; forseven 일의 일부로 수행된 스냅샷도 유지됩니다. 이렇게 하면 두 백업 작업 간의 변경 내용을 효율적으로 계산하여 백업 시간을 줄일 수 있습니다. 이러한 스냅샷을 사용하여 복원을 트리거할 수도 있습니다. 이러한 스냅샷은 로컬에서 사용할 수 있으므로 복원 프로세스는 자격 증명 모음에서 스토리지 계정으로 데이터를 다시 전송할 필요가 없으므로 복원 시간을 시간에서 분으로 줄입니다. 로컬에 저장된 보존 스냅샷을 구성하는 기능은 향후 릴리스에서 사용할 수 있습니다.</li>
+   <li><strong>복원된 VM</strong> &ndash; 의 디스크 배포 관리되지 않는 VM을 사용하는 경우 복원하는 동안 모든 디스크를 동일한 스토리지 계정으로 복원하는 것을 확인할 수 있습니다. 복원 후 필요한 재구성을 줄이기 위해 해당 디스크를 원래 VM과 동일한 스토리지 계정 집합에 배포하도록 지시할 수 있는 기능을 추가하고 있습니다.</li>
+  </ul>
+
+
+  <h2>시작하기:</h2>
+
+
+  <p>Azure Portal 또는 PowerShell을 사용하여 구독을 새 스택으로 업데이트할 수 있습니다. 이는 단방향 변경이며 기존의 모든 정책, 복구 지점을 그대로 유지합니다.&nbsp;</p>
+
+
+  <h3>포털:</h3>
+
+
+  <p><em>오늘부터 이 환경을 사용하도록 설정하고 지역별로 배포하고 있습니다. 이번 주 말까지 모든 지역에서 이 항목이 표시됩니다.</em>&nbsp;</p>
+
+
+  <p>Recovery Services 자격 증명 모음 대시보드에 배너가 표시됩니다. 배너를 클릭하면 스택을 업그레이드하고 향상된 기능을 얻을 수 있는 화면이 열립니다. 자격 증명 모음에서 전체 구독을 업그레이드할 수 있습니다. 업그레이드되면 구독의 모든 VM 백업이 새 스택을 사용하여 백업됩니다.</p>
+
+
+  <p><img alt="VM backup stack V2 enable screen" border="0" height="461" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/685058f6-aade-4f44-b999-ebaea611bf90.png" style="border: 0px currentColor; border-image: none; display: block; background-image: none;" title="VM 백업 스택 V2 사용 화면" width="640"></p>
+
+
+  <h3>PowerShell:</h3>
+
+
+  <p>관리자 권한 PowerShell 터미널에서 다음 cmdlet을 실행하세요.</p>
+
+
+  <p>1. Azure 계정에 로그인합니다.</p>
+
+
+  <pre>
+
+  PS C:&gt; Login-AzureRmAccount</pre>
+
+
+  <p>2. 업그레이드에 등록할 구독을 선택합니다.</p>
+
+
+  <pre>
+
+  PS C:&gt;  Get-AzureRmSubscription &ndash;SubscriptionName &quot;Subscription Name&quot; | Select-AzureRmSubscription</pre>
+
+
+  <p>3. 업그레이드를 위해 이 구독을 등록합니다.</p>
+
+
+  <pre>
+
+  PS C:&gt;  Register-AzureRmProviderFeature -FeatureName &ldquo;InstantBackupandRecovery&rdquo; &ndash;ProviderNamespace Microsoft.RecoveryServices</pre>
+
+
+  <h2>관련 링크 및 추가 콘텐츠:</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/services/backup/">Azure Backup</a>에 대해 자세히 알아봅니다.</li>
+   <li>자세한 내용을 원하십니까? <a href="https://aka.ms/instantrp">Azure Backup 설명서를 확인하세요</a>.</li>
+   <li>도움이 필요하신가요? <a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=windowsazureonlinebackup">지원을 위해 Azure Backup 포럼</a>에 문의하세요.</li>
+   <li>새 아이디어를 제공하고 기존 아이디어를 투표하여 <a href="https://feedback.azure.com/forums/258995-azure-backup">Azure Backup을 개선하는</a> 방법을 알려주세요.</li>
+   <li>최신 뉴스 및 업데이트에 대한 트위터에 <a href="https://twitter.com/azurebackup">@AzureBackup</a> 우리를 따르십시오.</li>
+  </ul>

@@ -1,0 +1,18 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 447d987e7ecf07fc45b57e7a0883b5703fd454f9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900154"
+Slug: tlsssl-cipher-suite-enhancements-and-perfect-forward-secrecy
+Title: 'TLS/SSL Cipher Suite 향상된 기능 및 완벽한 전달 비밀 '
+Summary: 12월에는 고객의 데이터 보안을 더욱 강화하겠다는 약속을 발표했습니다. 현재 Azure는 보안에 대한 당사의 약속을 존중하는 추가적인 개선 사항을 발표하고 있습니다.
+Content: >-
+  12월에는 고객의 데이터 보안을 더욱 강화하겠다는 <a href="https://blogs.technet.com/b/microsoft_blog/archive/2013/12/04/protecting-customer-data-from-government-snooping.aspx">약속을 발표</a> 했습니다. 현재 Azure는 보안 및 향상된 투명성에 대한 우리의 약속을 존중하는 추가적인 개선 사항을 발표하고 있습니다.이러한 변경 내용에는 기본 TLS(전송 계층 보안)/SSL(Secure Socket Layer) 암호화 도구 모음에 대한 향상된 기능과 PFS(Perfect Forward Secrecy)를 사용하도록 설정하는 등의 강력한 암호화 사용이 포함됩니다. PFS는 모든 연결에 대해 다른 암호화 키를 사용하므로 공격자가 연결을 해독하기가 더 어려워집니다. 이 암호화 작업은 Microsoft Office 365, Skype 및 OneDrive 같은 많은 제품 및 서비스에 이미 있는 기존 보호를 기반으로 합니다.
+
+
+  2014년 8월 Azure 게스트 OS 릴리스에서 TLS/SSL 암호 제품군 개선 사항 및 Perfect Forward Secrecy는 기본적으로 고객이 사용할 수 있게 되며 게스트 OS를 사용하는 모든 Azure 구독에 적용됩니다.
+
+
+  이러한 보안 향상에 대한 자세한 내용은 MSDN 문서의 향후 변경 내용, Azure 게스트 OS와 기본 Windows Server 간의 차이점을 참조하세요.

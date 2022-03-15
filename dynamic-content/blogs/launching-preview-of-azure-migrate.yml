@@ -1,0 +1,59 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3845c740d8bcb67bd86187474f748ab3504dfc1b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907132"
+Slug: launching-preview-of-azure-migrate
+Title: Azure Migrate 미리 보기 시작
+Summary: Microsoft Ignite 2017에서는 Azure로 마이그레이션하는 데 도움이 되는 지침, 인사이트 및 메커니즘을 제공하는 새로운 서비스인 Azure Migrate를 발표했습니다. 우리는 제한된에서 서비스를 사용할 수 있도록 ...
+Content: >-
+  <p>Microsoft Ignite 2017에서는 Azure로 마이그레이션하는 데 도움이 되는 지침, 인사이트 및 메커니즘을 제공하는 새 서비스를 Azure Migrate &ndash; 에 <a href="https://azure.microsoft.com/en-in/blog/announcing-azure-migrate/" target="_blank">발표</a>했습니다. 제한된 미리 보기에서 서비스를 사용할 수 있도록 하여 액세스를 요청하고, 사용해 보고, 피드백을 제공할 수 있습니다. 피드백을 제공하는 데 걸린 시간 동안 받은 응답에 겸손하고 감사드립니다.</p>
+
+
+  <p>오늘 Azure Migrate의 미리 보기를 시작하게 되어 기쁩니다. 이제 서비스를 광범위하게 사용할 수 있으며 액세스를 요청할 필요가 없습니다.</p>
+
+
+  <p>Azure Migrate를 사용하면 VMware 가상화된 Windows 및 Linux VM(가상 머신)을 에이전트 없이 검색할 수 있습니다. 에이전트 기반 검색도 지원합니다. 이렇게 하면 단일 VM 또는 VM 그룹에 대한 종속성 시각화를 통해 다중 계층 애플리케이션을 쉽게 식별할 수 있습니다.</p>
+
+
+  <p>애플리케이션 중심 검색은 좋은 시작이지만 정보에 입각한 결정을 내리기에는 충분하지 않습니다. 따라서 Azure Migrate를 사용하면 다음 세 가지 질문에 답변하는 데 도움이 되는 빠른 평가를 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>준비 상태: VM이 Azure에서 실행하기에 적합한가요?</li>
+   <li>권한 부여: CPU, 메모리, 디스크(처리량 및 IOPS) 및 네트워크의 사용률 기록에 따라 적합한 Azure VM 크기는 무엇인가요?</li>
+   <li>비용: Azure 하이브리드 혜택과 같은 할인을 고려하여 반복되는 Azure 비용은 얼마 <a href="https://azure.microsoft.com/en-in/pricing/hybrid-benefit/" target="_blank">인가요</a>?</li>
+  </ul>
+
+
+  <p>평가는 거기서 멈추지 않습니다&rsquo;. 워크로드별 마이그레이션 서비스도 제안합니다. 예를 들어 서버의 <a href="https://docs.microsoft.com/en-us/azure/site-recovery/tutorial-migrate-on-premises-to-azure" target="_blank">경우 ASR(Azure Site Recovery</a> ) 및 데이터베이스용 Azure DMS( <a href="https://azure.microsoft.com/en-us/services/database-migration/" target="_blank">Database Migration Service</a> )입니다. ASR을 사용하면 최소한의 가동 중지 시간과 영향을 주지 않는 마이그레이션 테스트를 통해 애플리케이션 인식 서버 마이그레이션을 수행할 수 있습니다. DMS는 온-프레미스 SQL 데이터베이스를 Azure로 이동하기 위한 간단한 자체 기반 솔루션을 제공합니다.</p>
+
+
+  <p>마이그레이션된 후에는 VM이 안전하고 잘 관리되도록 해야 합니다. 이를 위해 <a href="https://azure.microsoft.com/en-in/services/security-center/" target="_blank">Azure Security Center</a>, Azure <a href="https://azure.microsoft.com/en-us/services/cost-management/" target="_blank">Cost Management</a>, Azure Backup 등과 같은 다양한 다른 <a href="https://azure.microsoft.com/en-in/services/backup/" target="_blank">Azure</a> 제품을 사용할 수 있습니다.</p>
+
+
+  <p>Azure Migrate는 추가 비용 없이 제공되며 프로덕션 배포에 지원되며 미국 중서부 지역에서 사용할 수 있습니다. 특정 지역에서 Azure Migrate의 가용성은 다른 대상 지역에 대한 마이그레이션을 계획하는 기능에 영향을 주지 않는다는 점에 유의해야 합니다. 예를 들어 마이그레이션 프로젝트가 미국 중서부에서 만들어지더라도 검색된 VM은 미국 서부 2 또는 영국 서부 또는 일본 동부에 대해 평가할 수 있습니다.</p>
+
+
+  <p>Azure Portal에서 <a href="https://aka.ms/azuremigrate/getstarted" target="_blank">마이그레이션 프로젝트를 만들어</a> 시작할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/910bc973-7e66-471f-81cf-120a323ce070.png"><img alt="Azure Migrate (preview)" border="0" height="870" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bfa1f7dd-ecc4-4d91-8228-960204cbe349.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Migrate(미리 보기)" width="1395"></a></p>
+
+
+  <p>다음도 가능합니다.</p>
+
+
+  <ul>
+   <li><a href="https://aka.ms/azuremigrate/documentation" target="_blank">설명서를</a> 참조하여 정보를 얻을 수 있습니다.</li>
+   <li><a href="https://aka.ms/AzureMigrateforum" target="_blank">포럼</a>에 질문을 게시하거나 Microsoft 지원에 문의하여 도움을 구하세요.</li>
+   <li><a href="https://aka.ms/AzureMigrateUservoice" target="_blank">사용자 음성</a>에 아이디어를 게시(또는 투표)하여 피드백을 제공합니다.</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>Azure Migrate를 Azure로의 여정에서 유용하게 사용할 수 있기를 바랍니다.</p>

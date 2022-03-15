@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9f91791b80176efbb849dc42b51546caea62718b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900027"
+Slug: azure-backup-announcing-support-for-windows-client-operating-system
+Title: Azure Backup - Windows 클라이언트 운영 체제에 대한 지원 발표
+Summary: Azure Backup을 사용하여 Windows 7, Windows 8 및 Windows 8.1 머신에서 Azure에 데이터를 백업하는 지원을 발표하게 되어 기쁩니다.
+Content: >-
+  <a href="https://aka.ms/azurebackup_landingpage">Azure Backup</a>을 사용하여 Windows 7, Windows 8 및 Windows 8.1 머신에서 Azure에 데이터를 백업하는 지원을 발표하게 되어 기쁩니다. 지원되는 클라이언트 운영 체제 버전인 <a href="https://support.microsoft.com/kb/3015072">KB3015072</a>의 SKU에 대한 자세한 내용을 확인할 수 있습니다<i>.</i> 이 업데이트를 다운로드하면 다음을 포함하여 지난 몇 개월 동안 릴리스된 모든 기능이 자동으로 제공됩니다.
+
+  <ul>
+   <li><a href="https://support.microsoft.com/kb/2989574">KB2989574:</a> 850GB를 초과하는 데이터 원본에 대한 지원</li>
+   <li><a href="https://support.microsoft.com/kb/2997692">KB2997692</a>: <a href="https://azure.microsoft.com/blog/2014/09/11/announcing-long-term-retention-for-azure-backup/">장기 보존</a> 및 <a href="https://azure.microsoft.com/blog/2014/09/11/getting-started-with-azure-backup/">간소화된 등록 &amp; 등록</a></li>
+   <li><a href="https://support.microsoft.com/kb/2999951">KB2999951</a>: <a href="https://azure.microsoft.com/blog/2014/10/06/announcing-support-for-backup-of-windows-server-2008-with-azure-backup/">Windows Server 2008 지원</a></li>
+   <li><a href="https://support.microsoft.com/kb/3015072">KB3015072</a>: Windows 7, Windows 8, Windows 8.1 지원</li>
+  </ul>
+
+  이 릴리스는 고객이 온-프레미스 파일 및 폴더를 Azure에 직접 백업할 수 있도록 하여 Azure Backup에 대한 새로운 시나리오를 엽니다. 초기 백업 복사가 완료되면 Azure Backup은 백업된 파일의 변경 내용을 추적하고 HTTPS를 통해 변경된 콘텐츠만 효율적으로 전송합니다.
+
+
+  Azure Backup 설정은 매우 간단하며 단계를 설명하는 3부 비디오 <a href="https://azure.microsoft.com/blog/2014/11/04/back-up-your-data-to-the-cloud-with-3-simple-steps/">시리즈</a> 가 있습니다. 시작 블로그 <a href="https://azure.microsoft.com/blog/2014/09/11/getting-started-with-azure-backup/">문서에</a> 도 단계가 자세히 설명되어 있습니다.
+
+
+  &nbsp;
+
+
+  이 블로그 문서에서는 이 시나리오에 대한 몇 가지 모범 사례 및 권장 사항을 다룹니다.
+
+  <ol>
+   <li>데이터를 저장하는 백업 자격 증명 모음에 컴퓨터를 등록하는 방법에는 두 가지가 있습니다.
+  <ul>
+   <li><b>옵션 #1: </b> 백업 자격 증명 모음당 하나의 컴퓨터를 등록합니다. 백업 자격 증명 모음은 Azure 구독의 Recovery Services 아래에 만들어집니다. <b> </b>이 옵션을 사용하여 구독당 25개의 백업 자격 증명 모음만 만들 수 있습니다. Azure에 백업할 컴퓨터가 더 있는 경우 두 번째 옵션을 사용하세요.</li>
+   <li><b>옵션 #2: </b> 동일한 자격 증명 모음에 여러 컴퓨터를 등록합니다. 이렇게 하면 최대 50대의 컴퓨터를 단일 백업 자격 증명 모음에 등록할 수 있습니다.</li>
+  </ul>
+
+  </li>
+
+  </ol>
+
+  <p style="padding-left: 60px;">두 옵션 모두에서 백업 데이터에 대한 액세스는 암호화 암호를 사용하여 제어됩니다. 백업 자격 증명 모음에 컴퓨터를 등록할 때 사용자가 암호화 암호를 제공하며 백업 중인 데이터를 암호화하고 암호 해독하는 데 사용됩니다. 서로 다른 컴퓨터에 서로 다른 암호화 암호를 사용하면 격리가 보장됩니다.</p>
+
+  <p style="padding-left: 30px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clientencryption-passphrase.png"><img class="alignnone size-full wp-image-237554" alt="clientencryption passphrase" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clientencryption-passphrase.png" width="471" height="335" /></a></p>
+
+  <p style="padding-left: 30px;">2. 노트북이 배터리로 실행되는 경우 Azure에 예약된 백업은 지능적으로 건너뜁니다. 대신, 랩톱이 충전을 위해 다시 연결되는 즉시 백업 작업이 시작됩니다.</p>
+
+  <p style="padding-left: 30px;">3. 하루에 백업 시간을 선택할 때 설정에 가장 적합한 시간을 선택하세요. 야간에 컴퓨터를 종료하는 경향이 있는 경우 백업이 이러한 시간 동안 예약되지 않았는지 확인합니다.</p>
+
+  <p style="padding-left: 30px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/client-backup-schedule.png"><img class="alignnone size-full wp-image-237564" alt="Azure Backup Client Backup Schedule" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/client-backup-schedule.png" width="398" height="344" /></a></p>
+
+  <p style="padding-left: 30px;">4.백업 작업의 백업 진행률 또는 상태를 모니터링하려면 "<b><i>Microsoft Azure Backup</i></b>"을 검색하고 해당 mmc를 시작합니다. 백업 작업에 대한 최신 정보 및 통계를 제공합니다.</p>
+
+  <p style="padding-left: 30px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/client-monitoring.png"><img class="alignnone size-full wp-image-237574" alt="Azure backup client monitoring" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/client-monitoring.png" width="626" height="287" /></a></p>
+
+  요약하자면, 이 릴리스에서는 이제 클라이언트 컴퓨터에서 Azure로 데이터를 백업하는 기능이 추가되었습니다. Azure를 익숙하지 않은 경우 계정/구독이 필요한 경우 <a href="https://aka.ms/azure_freetrial">여기</a> 를 클릭하여 시작합니다. 여기에서 직접 Azure Backup 에이전트를 다운로드할 수도 <a href="https://aka.ms/azurebackup_agent">있습니다</a>.
+
+
+  도움이 필요한 경우 <a href="https://aka.ms/azurebackup_forum">Azure Backup 포럼</a>에 질문을 게시합니다. 기존 아이디어에 대해 추가/투표하려는 제안이 있는 경우 <a href="https://aka.ms/azurebackup_feedback">피드백</a> 페이지를 방문하거나 이 블로그에 의견을 남겨 주세요.

@@ -1,0 +1,275 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 35f0f0a0f754c0c8209d7f1afdf77c47df7699d3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899908"
+Slug: azure-source-volume-35
+Title: Azure.Source - 볼륨 35
+Summary: 현재 미리 보기 상태, 일반 공급, 뉴스 & 업데이트 등을 포함하여 Azure에서 발생하는 작업을 최신 상태로 유지합니다.
+Content: >-
+  <h2>Azure의 서비스로서의 인프라 기능</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/why-you-should-bet-on-azure-for-your-infrastructure-needs-today-and-in-the-future/">현재와 미래의 인프라 요구 사항에 대해 Azure에 베팅해야 하는 이유</a> - 모든 워크로드에 적합한 인프라를 제공하기 위해 최선을 다하고 있습니다. 50개 Azure 지역에서 애플리케이션 요구 사항에 맞게 다양한 CPU, GPU, 메모리 및 디스크 구성을 사용하는 광범위한 가상 머신에서 선택할 수 있습니다. Azure 블로그의 이 게시물에서 Azure의 기업 부사장인 Corey Sanders는 인프라 요구 사항에 대해 Azure에 베팅해야 하는 몇 가지 주요 이유를 공유하고 몇 가지 새로운 기능을 발표합니다. 또한 이러한 블로그 게시물은 Corey&#39;게시물에서 다루는 항목에 대해 확장됩니다.</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/blog/preview-standard-ssd-disks-for-azure-virtual-machine-workloads/">(미리 보기) Azure Virtual Machine 워크로드</a> - 용 표준 SSD 디스크 이제 Microsoft Azure Virtual Machines에 대한 새로운 유형의 지속성 스토리지인 Azure Standard SSD Managed Disks를 미리 보기로 사용할 수 있습니다. Azure 표준 SSD는 낮은 IOPS 워크로드에 일관된 성능을 제공하고 HDD 디스크에 비해 더 나은 가용성과 대기 시간을 제공합니다. Azure 표준 SSD는 일관된 대기 시간이 필요한 개발 테스트 및 엔트리 수준 프로덕션 애플리케이션에 최적화된 비용 효율적인 Managed Disk 솔루션이기도 합니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-stack-expands-availability-to-92-countries/">Microsoft Azure Stack은 92개국으로 가용성을 확장합니다.</a> - 전 세계 고객의 증가하는 수요를 충족하기 위해 Azure Stack의 지리적 범위를 확장하고 있습니다. Azure Stack은 이제 전 세계 92개국에서 사용할 수 있습니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-of-disaster-recovery-for-azure-iaas-vms-using-asr/">일반 공급: Azure IaaS 가상 머신</a> - 에 대한 재해 복구 이제 Azure Site Recovery를 사용하여 Azure IaaS 가상 머신에 대한 재해 복구를 일반 공급합니다. 지역 간 DR 기능은 Site Recovery를 사용할 수 있는 모든 Azure 공용 지역에서 일반적으로 사용할 수 있습니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/azure-backup-for-sql-server-on-azure-vm-public-preview/">현재 Azure의 SQL Server용 Azure Backup은 공개 미리 보기</a> - 로 제공됩니다. 이 엔터프라이즈 백업은 Azure를 다른 퍼블릭 클라우드와 차별화하는 새로운 백업 혁신을 제공합니다. 이 워크로드 백업 기능은 네이티브 SQL 백업 및 복원 API를 활용하여 Azure IaaS VM에서 실행되는 SQL 서버를 백업하는 포괄적인 솔루션을 제공하는 인프라 없는 PAYG(Pay as You Go) 서비스로 빌드됩니다.</li>
+      <li><a href="https://info.microsoft.com/ww-landing-4-Reasons-to-Choose-Azure-for-Your-Infrastructure-Needs.html">Azure 웹 세미나 시리즈: 인프라 요구 사항에 맞게 Azure를 선택해야 하는 4가지 이유</a> - Microsoft Azure IaaS(Infrastructure as a Service)는 높은 수준의 제어, 보안 및 단순성을 갖춘 컴퓨팅, 네트워킹 및 스토리지 서비스를 제공합니다. 이 웨비나&rsquo;에서는 IaaS의 장점을 알아보고, 경쟁사와 어떻게 다른지 알아보고, 워크로드를 클라우드로 이동하기 위한 아이디어를 알아봅니다.</li>
+  </ul>
+
+
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/speech-services-now-in-preview/">Speech Services가 미리 보기로 제공됩니다</a>-. 빌드 2018에서 발표한 대로 Speech Service는 사용자 지정 음성이 있는 Speech to Text, 사용자 지정 음성이 있는 텍스트 음성 변환 및 음성 번역을 포함하여 미리 보기로 제공됩니다. 또한 Speech SDK는 대부분의 음성 서비스에 대한 단일 SDK가 될 미리 보기에서 사용할 수 있으며 음성 인식 및 LUIS(언어 이해 서비스)를 위해 하나의 Azure 구독 키만 필요합니다. Speech Devices SDK는 승인된 디바이스 파트너에게 제한된 미리 보기로 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/appserviceteam/2018/06/04/app-service-deployment-center-preview/">App Service 배포 센터(미리 보기)</a> - App Service 배포 센터는 Azure App Service에 배포를 설정하기 위한 미리 보기의 새로운 환경입니다. 사용 가능한 모든 배포 옵션에 대한 중앙 집중식 개요와 배포를 설정하는 단계별 환경을 제공합니다.</p>
+
+
+  <p><a href="https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/">레거시 인증을 차단하기 위한 Azure AD 조건부 액세스 지원은 공개 미리 보기로 제공됩니다.</a> - 레거시 인증 차단에 대한 Azure AD 조건부 액세스 지원은 공용 preivew에서 사용할 수 있으며, 이를 통해 Azure AD 관리 콘솔에서 전체 조건부 액세스 전략의 한 부분으로 레거시 인증 차단을 관리할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/process-more-files-than-ever-and-use-parquet-with-azure-data-lake-analytics/">그 어느 때보다 많은 파일을 처리하고 parquet를 Azure Data Lake Analytics</a> - Azure Data Lake Analytics(ADLA)와 함께 사용하면 크기 제한이 증가하여 소위 파일 집합을 사용하여 단일 U-SQL 작업에서 수십만 개의 파일을 스키마화하고 처리할 수 있습니다. 또한 최대 1GB의 데이터의 최대 200개 파일을 단일 꼭짓점(미리 보기)으로 그룹화하여 많은 작은 파일의 처리를 개선했습니다. 또한 이 최신 릴리스에서 ADLA 인기 있는 Parquet 파일 형식에 대한 네이티브 추출기 및 출력기의 공개 미리 보기와 &ldquo;ORC(Optimized Row Columnar)에 대한 프라이빗&rdquo; 미리 보기를 추가하여 이러한 인기 있는 데이터 형식을 대규모로 쉽게 사용하고 생성할 수 있도록 합니다.</p>
+
+
+  <h3>미리 보기로도 제공됩니다.</h3>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/updates/storage-explorer-preview-now-available-in-azure-portal/">공개 미리 보기: Azure Portal에서 Storage Explorer</a></li>
+  </ul>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <p>클라우드 - <a href="https://azure.microsoft.com/en-us/blog/offering-the-largest-scale-and-broadest-choice-for-sap-hana-in-the-cloud/">에서 SAP HANA에 가장 큰 규모 및 가장 광범위한 선택 제공 </a> Microsoft는 퍼블릭 클라우드에서 SAP HANA에 가장 큰 규모와 성능을 제공하기 위해 최선을 다하고 있으며, 지난 주 플로리다 주 올랜드의 SAPPHIRE NOW 2018에서 Azure에서 SAP HANA 제품을 추가로 발표했습니다. SAP Cloud Platform은 이제 Azure에서 일반 공급되는 통합 서비스가 있는 PaaS 개발 플랫폼을 사용하여 SAP 애플리케이션 및 확장을 빌드할 수 있는 옵션을 개발자에게 제공합니다. 개발자는 이제 서유럽 지역의 Azure에 Cloud Foundry 기반 SAP Cloud Platform을 배포할 수 있습니다. 앞으로&rsquo; 몇 달 안에 더 많은 지역을 사용할 수 있도록 SAP와 협력해야 합니다.</p>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/use-azure-monitor-to-integrate-with-siem-tools/">Azure Monitor를 사용하여 SIEM 도구</a> - 와 통합 Weve&rsquo;는 최고 SIEM(보안 정보 및 이벤트 관리) 파트너와 협력하여 Azure Monitor에서 해당 도구로 데이터를 가져오는 커넥터를 빌드했습니다. 이 게시물에서는 사용 중인 SIEM 도구 및 현재 통합 상태를 기반으로 해야 하는 작업을 다룹니다. Azure Monitors&rsquo; SIEM 통합 기능은&rsquo; Azure Log Integration 도구가 아직 수행할 수 있는 모든 작업을 수행할 수 없으므로 이 게시물은 알려진 간격을 해결하기 위한 로드맵도 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-search-is-now-certified-for-several-levels-of-compliance/">Azure Search는 이제 여러 수준의 규정 준수</a> - 에 대해 인증되었습니다. 규정 준수는 전 세계 규제 산업 및 시장에서 자체 규정 준수 의무를 충족하기 위해 소프트웨어 및 서비스를 살펴볼 때 고객에게 중요한 요소입니다. 이러한 이유로 Azure Search가 HIPPA 및 HITECH Act와 같은 여러 수준의 규정 준수에 대해 인증되었음을 발표하게 되어 기쁩니다. Azure 규정 준수 제품은 전역적으로 적용 가능한, 미국 정부, 산업별 및 지역/국가별 네 가지 세그먼트로 그룹화됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-data-lake-tools-for-vscode-supports-azure-blob-storage-integration/">VSCode용 Azure Data Lake Tools는 Azure Blob Storage 통합</a> - 을 지원합니다. VSCode용 Azure Data Lake 도구는 Microsoft Azure Data Lake를 사용하여 U-SQL 프로젝트를 개발하기 위한 확장입니다. VSCode 탐색기를 Azure Blob Storage와 통합하면 Data Lake Explorer를 사용하여 Blob Storage를 탐색하고, Blob 컨테이너, 폴더 및 파일에 액세스하고 관리할 수 있습니다.</p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/updates/sql-dw-polybase-support-for-azure-storage-encryption-using-customer-managed-keys/">SQL 데이터 웨어하우스 PolyBase에서 고객 관리형 키를 사용한 Azure Storage 암호화 지원</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/postgresql-10-on-azure-database-for-postgresql/">Azure Database for PostgreSQL에서 릴리스된 PostgreSQL 10.3</a></li>
+  </ul>
+
+
+  <h2>Azure 팟캐스트</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center" valign="middle" width="300">
+              <p>
+              <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode232.mp3">HTML5 오디오가 지원되지 않음</audio>
+              </p>
+              </td>
+              <td>
+              <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-232-Java-on-Azure">Azure 팟캐스트: 에피소드 232 - Azure</a> </strong> - 의 Java BUILD 2018의 세션을 계속 진행하면서 Azure에서 Java를 실행하는 Asir Selvasingh에 대해 자세히 설명합니다.</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>기술 콘텐츠 및 교육</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/get-started-with-u-sql-it-s-easy/">U-SQL 시작 : 그것은&rsquo; 쉽게!</a> -Azure Data Lake Analytics 선언적 개념과 명령적 개념을 U-SQL이라는 새 언어 형식으로 결합합니다. wich는 Azure Data Lake Analytics 빅 데이터 쿼리 언어 및 실행 프레임워크입니다. 이 게시물은 U-SQL 강화해야 하는 단계를 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/use-azure-data-lake-analytics-to-query-avro-data-from-iot-hub/">Azure Data Lake Analytics 사용하여 IoT Hub</a> - 에서 AVRO 데이터 쿼리 Apache Avro는 데이터 serialization 및 원격 프로시저 호출을 위한 파일 형식을 제공하는 프레임워크입니다. U-SQL 및 Avro 추출기를 사용하여 IoT Hub 데이터를 구문 분석, 변환 및 쿼리할 수 있습니다. IoT Hub는 메시지 본문과 메시지 속성을 모두 포함하는 Avro 형식으로 Blob 콘텐츠를 작성합니다. 이 게시물에는 Azure Data Lake Analytics 사용하여 Azure IoT Hub를 통해 수집된 IoT 디바이스의 데이터를 분석하는 방법을 보여 주는 IoT Show의 에피소드가 포함되어 있습니다.</p>
+
+
+  <p><a href="https://cloudblogs.microsoft.com/microsoftsecure/2018/06/06/cybersecurity-reference-architecture-security-for-a-hybrid-enterprise/">사이버 보안 참조 아키텍처: 하이브리드 Enterprise</a> - 대한 보안 Microsoft 사이버 보안 참조 아키텍처는 Microsofts&rsquo; 사이버 보안 기능 및 기존 보안 아키텍처 및 기능과 통합하는 방법을 설명합니다. v2에서 꽤 많은 변경 내용을 적용했으며 이 게시물은 변경된 내용과 이 문서를 빌드하는 방법에 대한 기본 철학을 강조 표시합니다.</p>
+
+
+  <p>Linux - <a href="https://azure.microsoft.com/en-us/blog/detecting-script-based-attacks-on-linux/">에서 스크립트 기반 공격 검색</a> 4월에 ASC(Azure Security Center)는 의심스러운 프로세스 감지, 의심스러운 로그인 시도 및 비정상적인 커널 모듈 로드를 포함하도록 Linux 위협 탐지 미리 보기 프로그램을 확장했습니다. 이 게시물은 기존 Windows 검색에 base64로 인코딩된 셸 및 스크립트 공격과 같은 Linux 아날로그가 자주 있는 방법을 보여 줍니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/appserviceteam/2018/06/06/app-service-diagnostics-profiling-an-asp-net-web-app-on-azure-app-service/">App Service 진단 &ndash; Azure App Service에서 ASP.NET 웹앱 프로파일링</a> 이 게시물에서는 .NET 프로파일러 추적 수집 옵션과 이를 사용하여 느리거나 실패한 ASP.NET 기반 웹앱 문제를 해결하는 방법을 자세히 설명합니다.- 수집하는 추적은 기본 .NET 예외, 다양한 요청 처리 파이프라인 단계에서 소요된 시간을 식별하는 데 도움이 되며, 시간이 걸리는 애플리케이션 코드 내에서 정확한 메서드로 드릴다운할 수도 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/8-reasons-to-choose-azure-stream-analytics-for-real-time-data-processing/">실시간 데이터 처리를 위해 Azure Stream Analytics를 선택해야 하는 8가지 이유</a> - Azure Stream Analytics는 복잡한 이벤트 처리를 위한 Microsofts&rsquo; 서버리스 실시간 분석 제품입니다. 이를 통해 고객은 빅 데이터의 기능을 활용하여 귀중한 인사이트를 확보하고 경쟁 우위를 확보할 수 있습니다. 이 게시물은 실시간 분석을 위해 ASA를 선택해야 하는 8가지 이유를 제공합니다.</p>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/4rvVbWBOzko?rel=0" width="240"></iframe></p>
+
+              <p>Azure App Services를 사용하여 웹앱 로드</p>
+              </td>
+              <td valign="top">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/exBvgew8LlU?rel=0" width="240"></iframe></p>
+
+              <p>App 설정 및 Azure App Service 작업</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <p>에지 - <a href="https://azure.microsoft.com/en-us/blog/regenerative-maps-alive-on-the-edge/">에서 재생 지도 활성화</a> Mapbox는 비전 SDK를 Microsoft Azure IoT 플랫폼과 통합하여 개발자가 스마트 도시, 자동차 산업, 공공 안전 등을 위한 혁신적인 애플리케이션과 솔루션을 구축할 수 있도록 할 것이라고 발표했습니다. Mapbox와 Microsofts&rsquo;의 협업은 인공 지능의 확산과 함께 클라우드 및 에지 컴퓨팅에 대한 당사의 노력을 보여줍니다. Mapbox Vision SDK와 Azure IoT Hub 및 Azure IoT Edge는 에지에서 Azure 클라우드로의 데이터 흐름을 간소화하고 디바이스로 다시 전송합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-new-offers-for-may-1-15/">Azure Marketplace 새 제품: 5월 115&ndash;일</a> - Azure Marketplace는 Azure에서 실행하도록 인증되고 최적화된 모든 소프트웨어 요구 사항에 &ndash; 대한 최고의 대상입니다. 수백 개의 주요 소프트웨어 공급자로부터 애플리케이션 &amp; 서비스를 찾고, 시도하고, 구매하고, 프로비전합니다. 5월 상반기에는 Solar inCode, SAP Netweaver 및 SAP HANA용 인프라, TeamCity 등 28개의 새로운 제품을 발표했습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/mellanox-uses-azure-to-accelerate-network-design/">Mellanox는 Azure를 사용하여 네트워크 디자인을</a> - 가속화합니다. Mellanoxs&rsquo;는 몇 년 전에 Azure에서 HPC 워크로드를 실행하는 과정을 시작했습니다. 처음에는 재해 복구와 같은 서비스를 찾고 있었는데, 이 서비스를 통해 대부분의 시간 동안 환경 프로비전을 해제할 수 있었습니다. 그런 다음 클라우드로 백업과 같은 서비스를 이동하는 방법을 살펴보기 시작했습니다. Mellanox는 HPC 예약 및 오케스트레이션 소프트웨어의 선도적인 공급자인 Univa와 협력하여 다양한 퍼블릭 클라우드 옵션을 평가하고 Azure를 선택하지 않았습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/stm-iot-starter-kit/">STMicroelectronics 스타터 키트를 사용하여 몇 분</a> - 안에 Azure IoT 연결 STMicroelectronics는 미리 통합된 소프트웨어, 강력한 개발 에코시스템 및 귀중한 스타터 키트와 함께 광범위한 IoT 하드웨어를 제공합니다. Microsoft는 STMicroelectronics와 같은 실리콘 공급업체와 협력하여 임베디드 시스템 개발을 간소화하고 가속화하므로 고객은 개념 증명에서 프로덕션으로 프로젝트를 더 빠르게 이동할 수 있습니다.</p>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/STMicroelectronics-Starter-kits-for-Azure-IoT/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/STMicroelectronics-Starter-kits-for-Azure-IoT">IoT 쇼 | STMicroelectronics의 Azure IoT Manuel Cantone용 STMicroelectronics 스타터 키트</a> </strong> 는 Azure IoT 원활하게 연결되는 최신 개발자 키트를 제공합니다.- 이 키트는 몇 분 만에 Azure IoT 경험하기 시작할 수 있습니다 ... 라이브 시연!</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>이벤트</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/empowering-developers-to-ship-ios-apps-that-scale/">AltConf: 개발자가 크기를 조정하는 iOS 앱을 제공할 수 있도록 지원</a> - Objective-C 또는 Swift 개발자든 Azure는 더 빠르고 자신있게 앱을 배송하는 데 필요한 항목을 제공합니다. 지난 주, 마이크로소프트는 AltConf에서 골드 스폰서, 애플&#39;WWDC와 병렬로 발생 하는 무료, 커뮤니티 기반 이벤트. 규모가 조정되는 지능형 iOS 앱을 빌드하는 데 어떻게 도움이 되는지에 대해 설명했습니다. 자세한 내용은 이 게시물의 정보를 확인하세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-is-the-best-place-for-analytics/">Spark + AI Summit: Azure는 분석에 가장 적합한 위치입니다.</a> - 고객을 위한 혁신을 계속 추진하기 위해 지난 주 Spark + AI Summit에서 발표한 Azure Databricks의 몇 가지 흥미로운 개선 사항, 즉 Azure Databricks를 사용하여 대규모로 AI 모델을 빌드, 학습 및 배포하는 GPU 지원 및 Azure Databricks의 프리미엄 SKU의 일부로 미리 보기로 Machine Learning Azure Databricks Runtime에 대한 향상된 기능을 만들었습니다.</p>
+
+
+  <h2>Azure Friday</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Horizontal-Partitioning-in-Azure-Cosmos-DB/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Horizontal-Partitioning-in-Azure-Cosmos-DB">Azure Friday | 에피소드 437 - TITLE</a> </strong> - Carey MacDonald는 수평 확장이 무제한인 관리형 데이터베이스 서비스인 Azure Cosmos DB에 대해 Scott Hanselman과 채팅하여 스토리지 및 처리량을 독립적으로 확장할 수 있도록 합니다. 이 비디오에서 Carey는 Azure Cosmos DB에서 데이터를 분할하는 방법, 파티션 키 선택 모범 사례 및 잘못된 파티션 키 선택 문제를 해결하는 방법을 설명합니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Tips-for-using-the-Gremlin-API-with-Azure-Cosmos-DB/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Tips-for-using-the-Gremlin-API-with-Azure-Cosmos-DB">Azure Friday | 에피소드 438 - TITLE</a> </strong> - Jayanta Mondal은 Cosmos DB 그래프에 대한 순회 쿼리 언어인 Gremlin에 대해 Scott Hanselman과 채팅합니다. Gremlin은 데이터 흐름 언어이며 절차는 본질적으로 효율적인 Gremlin 쿼리를 작성하려면 그래프 구조 및 쿼리 실행 계획에 대한 지식이 필요합니다. Gremlin 쿼리를 구성하는 방법과 모범 사례 및 최상의 성능을 얻기 위한 팁 &amp; 요령을 알아봅니다.</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>개발자 스포트라이트</h2>
+
+
+  <p><a href="https://aka.ms/lwia/containers-06">Azure 컴퓨팅 서비스에</a> - 대한 의사 결정 트리 이 순서도는 권장 사항에 도달하기 위한 주요 결정 기준 집합을 안내하여 애플리케이션에 대한 Azure 컴퓨팅 서비스를 선택하는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/containers-07">KubeCon 2018 Go-Node 원격 디버그</a> - 코펜하겐의 KubeCon 2018에서 온 엔드 투 엔드 다중 서비스 원격 컨테이너 디버깅 데모입니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/containers-08">자습서: VS Code</a> - Docker를 사용하여 Java 이 자습서에서는 Visual Studio Code 사용하여 Java 애플리케이션용 Docker 이미지를 빌드하고 배포하는 방법을 안내합니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/containers-09">.NET 마이크로 서비스 아키텍처 전자책</a> - 이 가이드에서는 마이크로 서비스 기반 애플리케이션을 개발하고 컨테이너를 사용하여 관리하는 방법을 소개합니다. 또한 .NET Core와 Docker 컨테이너를 사용하여 아키텍처를 설계하고 구현하는 방법을 설명합니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/containers-10">.NET Core 및 AKS를 사용하여 복원력 있는 마이크로 서비스 빌드</a> - 빌드 2018의 이 세션에서는 .NET Core 2.1의 새 애플리케이션 패턴을 사용하여 .NET Core 마이크로 서비스를 더 쉽게 빌드할&#39;수 있도록 하는 방법과 Kubernetes 및 Helm을 사용하여 배포 및 관리하는 방법을 보여&#39;.</p>
+
+
+  <h2>The IoT Show</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-device-SDK-for-Python/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-device-SDK-for-Python">IoT 쇼 | Python용 Azure IoT Hub 디바이스 SDK</a> </strong> - Python 개발자이며 Azure IoT 개발을 위해 발을 젖게 하는 방법을 궁금하신가요? 우리는 당신이 덮여있어! Python용 Azure IoT SDK의 수석 개발자인 Zoltan Varga는 IoT Show에 참여하여&#39;방법을 보여 주었습니다.</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>AI Show</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/AI-Show/Video-Moderation-with-Content-Moderator/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://channel9.msdn.com/Shows/AI-Show/Video-Moderation-with-Content-Moderator">AI Show | Content Moderator</a> </strong> - 콘텐츠 조정을 사용한 비디오 조정은 공격적이고 바람직하지 않으며 위험한 콘텐츠를 모니터링하는 프로세스입니다. Cognitive Services 제품인 Content Moderator는 이미지, 텍스트 및 비디오에 대한 기계 지원 콘텐츠 조정 API와 사용자 검토 도구를 완전한 콘텐츠 조정 솔루션으로 결합합니다. 이 에피소드에서는 Content Moderator에 대한 개요를 확인하고 비디오 조정 기능에 대해 알아봅니다. Content Moderator의 API 및 사용자 검토 기능을 다룹니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/AI-Show/Image-and-Text-Moderation-with-Content-Moderator/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://channel9.msdn.com/Shows/AI-Show/Image-and-Text-Moderation-with-Content-Moderator">AI Show | Content Moderator</a> </strong> - 콘텐츠 조정을 사용한 이미지 및 텍스트 조정은 공격적이고 바람직하지 않으며 위험한 콘텐츠를 모니터링하는 프로세스입니다. Cognitive Services 제품인 Content Moderator는 이미지, 텍스트 및 비디오에 대한 기계 지원 콘텐츠 조정 API와 사용자 검토 도구를 완전한 콘텐츠 조정 솔루션으로 결합합니다. 이 에피소드에서는 Content Moderator에 대한 개요를 확인하고 이미지 조정 및 텍스트 조정 기능에 대해 알아봅니다. 두 API의 모든 기능을 다룹니다.</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>이번 주 Azure</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/qsejxzDvrkA?rel=0" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://www.youtube.com/watch?v=qsejxzDvrkA">Azure 이번 주 - 2018년 6월 8</a> </strong> - 일 이번 주 Azure의 이 에피소드에서 James는 Azure Portal에서 Storage Explorer 공개 미리 보기, Azure VM용 표준 SSD 디스크의 공개 미리 보기, Azure VM에 대한 지역 간 재해 복구의 일반 공급 및 Microsoft가 GitHub 획득한다는 발표를 살펴봅니다.</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>

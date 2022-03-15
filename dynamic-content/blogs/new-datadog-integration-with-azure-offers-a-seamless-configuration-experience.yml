@@ -1,0 +1,93 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f9cf97a91f3b375c8f354b34fc4c5985f1d54a8f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906431"
+Slug: new-datadog-integration-with-azure-offers-a-seamless-configuration-experience
+Title: Azure와 새로운 Datadog 통합은 원활한 구성 환경을 제공합니다.
+Summary: Datadog와 새로운 Azure 통합을 통해 조직은 이제 레거시 및 클라우드 기반 시스템을 완전히 매핑하고, 클라우드 전환의 모든 단계에서 실시간 데이터를 모니터링하고, 마이그레이션된 애플리케이션이 성능 목표를 충족하는지 확인할 수 있습니다.
+Content: >-
+  <p><em>이 게시물은 Sreekanth Thirthala Venkata, 수석 프로그램 관리자, Visual Studio 및 .NET에 의해 공동 저술되었습니다.</em></p>
+
+
+  <p><i>이제 Azure와의 Datadog 통합을 </i><em>일반적으로&nbsp; 사용할 수 있으며</em><i>, 이 게시물은 2021년 5월 28일 마지막으로 업데이트되었습니다.</i></p>
+
+
+  <p>Microsoft Azure 통해 고객은 여러 파트너 솔루션과 협력하여 클라우드에서 실행되도록 애플리케이션을 마이그레이션하고 현대화할 수 있습니다. 이러한 파트너 중 하나는 사용자가 하이브리드 및 다중 클라우드 환경에서 애플리케이션의 상태 및 성능을 이해할 수 있도록 관찰 가능성 및 보안 도구를 제공하는 <a href="https://www.datadoghq.com/">Datadog</a>입니다. 그러나 필요한 통합을 구성하려면 Azure Portal과 Datadog 간에 탐색해야 하는 경우가 많습니다.</p>
+
+
+  <p>이렇게 하면 복잡성이 추가되고 시간이 걸리며 문제가 작동하지 않는&rsquo; 경우 문제를 해결하기가 어렵습니다. 여러 포털에서 관리 부담을 줄이기 위해 Datadog과 협력하여 Azure 클라우드 플랫폼에서 통합 Datadog 솔루션을 만들었습니다. <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/" target="_blank">Azure Marketplace</a>를 통해 제공되는 이 솔루션은 Azure에서 Datadogs&rsquo; 클라우드 모니터링 솔루션을 사용하기 위한 원활한 환경을 제공합니다.</p>
+
+
+  <p style="margin-left: 40px;"><i>&ldquo;Microsoft 클라우드는 Datadog과 같은 타사 솔루션을 사용하는 고객에게 원활한 구성 및 관리 환경을 가능하게 하는 첫 번째 클라우드입니다. Datadog을 사용하면 고객은 이 환경을 사용하여 Azure 워크로드를 모니터링하고 클라우드로 빠르게 전환할 수 있습니다.&rdquo;</i>&mdash; Corey Sanders, Microsoft Solutions 기업 부사장</p>
+
+
+  <p>Datadog와 새로운 Azure 통합을 통해 조직은 이제 레거시 및 클라우드 기반 시스템을 완전히 매핑하고, 클라우드 전환의 모든 단계에서 실시간 데이터를 모니터링하고, 마이그레이션된 애플리케이션이 성능 목표를 충족하는지 확인할 수 있습니다. 이 통합은 Azures&rsquo;의 글로벌 존재, 유연성, 보안 및 규정 준수와 Datadog&#39;로깅 및 모니터링 기능을 결합하여 기업에 최상의 환경을 만듭니다.</p>
+
+
+  <p>이 통합 환경을 통해 고객은 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+      <li>새 Datadog 조직을 프로비전하고 고객이 설치하고 운영할 수 있는 인프라가 없는 Datadoga&mdash; 완전 관리형 설정에 로그 및 메트릭을 보내도록 Azure 리소스를 구성합니다.</li>
+      <li>로그 및 메트릭을 Datadog에 원활하게 보낼 수 있습니다. 로그 전달 프로세스가 완전히 자동화되었습니다. 진단 설정, Event Hubs, Functions 등을 사용하여 로그 전달 파이프라인을 빌드하지 않고 몇 번의 클릭만으로 모든 항목을 구성할 수 있습니다.</li>
+      <li>한 번의 클릭으로 VM 호스트 및 App Services에 Datadog 에이전트를 쉽게 설치합니다.</li>
+      <li>Datadog 포털에서 Datadoga&mdash;로 SSO(Single Sign-On)를 간소화할 필요가 없습니다.</li>
+      <li>Azure 구독 청구를 통해 Datadog 서비스의 통합 청구를 받을 수 있습니다.</li>
+  </ul>
+
+
+  <p style="margin-left: 40px;"><i>&quot;가시성은 성공적인 클라우드 마이그레이션을 위한 핵심 기능입니다. Microsoft Azure 새로운 파트너십을 통해 고객은 이제 Azure 콘솔에서 직접 Datadog 플랫폼에 액세스할 수 있으므로 새 워크로드와 마이그레이션된 워크로드를 마이그레이션, 최적화 및 보호할 수 있습니다.&quot;</i>&mdash; Amit Agarwal, Datadog 최고 제품 책임자</p>
+
+
+  <p>이&rsquo; 통합 환경을 간단히 살펴보겠습니다.</p>
+
+
+  <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.microsoft.com/en-us/videoplayer/embed/RE4Gc2z" width="560"></iframe></p>
+
+
+  <h2 style="margin-bottom: 11px;">Datadog 솔루션 획득 및 설정</h2>
+
+
+  <p style="margin-bottom: 11px;">&rsquo;이제 단계별 프로세스를 따라 Datadog 솔루션을 획득하고 설정할 수 있습니다.</p>
+
+
+  <p><strong>Datadog 앱 조달</strong>: Azure 고객은 Azure Marketplace를 통해 Datadog 앱을 조달할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/962f55dd-004c-4863-ba35-4b805bbf27a1.png"><img alt="Datadog app on marketplace 1" border="0" height="862" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e4750a7f-eccb-4644-9f52-98c845047b59.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="마켓플레이스 1의 Datadog 앱" width="1024"></a></p>
+
+
+  <p><strong>Azure Portal에서 프로비전:</strong> Azure Marketplace에서 조달한 후 고객은 Azure Portal을 통해 Datadog를 Azure의 통합 서비스로 원활하게 프로비전할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/81935ee7-ee7c-4305-856e-0d101e727436.png"><img alt="Datadog overview page" border="0" height="563" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3530747f-aa81-4d24-85cf-716bea088025.png" style="display: inline; background-image: none;" title="Datadog 개요 페이지" width="1028"></a></p>
+
+
+  <p><strong>로그 및 메트릭 구성:</strong> 고객은 Azure에서 Datadog 리소스를 만들고 로그 및 메트릭과 Datadog에 보내는 Azure 리소스를 구성합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4b50938a-0f8a-4830-a406-3740d61e2820.png"><img alt="Create datadog resource" border="0" height="1363" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/342da24f-144d-47a8-8dbb-43175b2bc702.png" style="display: inline; background-image: none;" title="datadog 리소스 만들기" width="1296"></a></p>
+
+
+  <p><strong>Datadog 에이전트 설치</strong>: 고객은 한 번의 클릭으로 VM(가상 머신) 및 앱 서비스에 확장으로 Datadog 에이전트를 설치할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6357c143-1ecd-4c52-b379-576f135feeb5.png"><img alt="Installing Diagnostic Agent." border="0" height="908" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b94f951a-43e3-461e-bf72-d42e44beeee4.png" style="display: inline; background-image: none;" title="진단 에이전트 설치" width="1662"></a></p>
+
+
+  <p><strong>SSO를 통한 액세스:</strong> 고객은 간소화된 SSO 환경을 통해 Azure Portal에서 Datadog에 액세스하고 Azure 서비스의 로그 및 메트릭에 대한 대상으로 Datadog를 구성합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8c39c56f-e52e-4c76-878c-ae25bb134ac7.png"><img alt="Datadog Azure virtual machines dashboard." border="0" height="1288" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9ab94954-0532-4973-9c06-65be5838ee87.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Datadog Azure 가상 머신 대시보드." width="1114"></a></p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+      <li><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/datadog1591740804488.dd_liftr_v2?tab=Overview" style="color:#0563c1; text-decoration:underline" target="_blank">Azure Marketplace</a>에서&nbsp; 사용할 수 있는 Azure&quot;와의 Datadog 통합 미리 보기를 &quot;구독합니다.</li>
+      <li>Datadog와 Azure Monitor 파트너 통합에 대해 <a href="https://aka.ms/datadogwithazure" target="_blank">자세히 알아보세요</a>.</li>
+  </ul>

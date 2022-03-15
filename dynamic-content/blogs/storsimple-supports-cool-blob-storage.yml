@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ef163858138329a942b394ada44ce7c5c3574589
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900305"
+Slug: storsimple-supports-cool-blob-storage
+Title: StorSimple은 쿨 Blob Storage를 지원합니다.
+Summary: StorSimple이 Azure Blob Storage 계정을 지원한다고 발표하게 되어 기쁘게 생각합니다.
+Content: >-
+  <p><a href="https://www.microsoft.com/en-us/server-cloud/products/storsimple/"><u>StorSimple</u></a>이 Azure Blob Storage 계정을 지원한다고 발표하게 되어 기쁘게 생각합니다. <a href="https://download.microsoft.com/download/A/4/4/A4433735-9985-46F3-B026-91B86A7B22BD/StorSimple_Solution_Overview.pdf"><u>StorSimple 8000 시리즈 Storage 배열</u></a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/storsimple-virtual-device-u2/"><u>StorSimple 클라우드 어플라이언스</u></a> 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/storsimple-ova-overview/"><u>StorSimple 가상 배열</u></a>은 모두 Blob Storage 계정에서 제공하는 핫 및 쿨 액세스 계층을 모두 완전히 지원합니다.</p>
+
+
+  <p>Blob 스토리지 계정은 Azure Storage에서 Blob(개체)과 같은 구조화되지 않은 데이터를 저장하기 위한 특수 스토리지 계정입니다. 이제 Blob Storage 계정을 사용하여 핫 및 쿨 스토리지 액세스 계층 중에서 선택할 수 있습니다. 또한 언제든지 Azure Portal에서 빠른 토글로 핫 및 쿨 액세스 계층 간에 전환할 수 있습니다. Blob Storage 계정(핫 및 쿨)의 대기 시간은 밀리초 단위이며 확장성 및 성능 목표는 범용 스토리지 계정과 동일합니다. Azure Blob Storage <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-blob-storage-tiers/">설명서</a>에서 자세한 내용을 읽어보세요.</p>
+
+
+  <p>Azure Blob Storage 계정은 StorSimple 내의 범용 스토리지 계정처럼 사용할 수 있습니다. Blob Storage 계정을 사용하도록 StorSimple 볼륨 컨테이너를 구성하면 모든 클라우드 계층화된 데이터 및 클라우드 스냅샷 데이터가 해당 스토리지 계정으로 이동합니다.</p>
+
+
+  <p>동일한 StorSimple 어플라이언스 내에서 다양한 유형의 스토리지 계정을 혼합할 수 있습니다. 각 볼륨 컨테이너는 하나의 스토리지 계정으로 구성됩니다. 액세스 빈도가 더 많은 볼륨이 있는 경우 핫 스토리지를 사용하고 액세스 빈도가 낮은 볼륨의 경우 쿨 스토리지를 사용할 수 있습니다. Azure 쿨 스토리지 계층은 많은 StorSimple 시나리오에 적합합니다. 일반적으로 거의 액세스되지 않는 모든 데이터는 쿨 스토리지 계층에 적합한 후보입니다.</p>
+
+
+  <p>범용 스토리지 계정에서 Blob Storage 계정으로의 StorSimple 데이터 마이그레이션은 현재 지원되지 않지만 향후 추가를 검토하고 있습니다. 마이그레이션 <a href="mailto:memard@microsoft.com"><u>memard@microsoft.com</u></a>하려는 기존 고객인 경우 .&nbsp;</p>
+
+
+  <p>StorSimple에서 Azure Blob Storage 계정을 사용하는 모범 사례:</p>
+
+
+  <ul>
+      <li>처음에 액세스 계층을 핫으로 설정합니다. 초기 데이터 마이그레이션이 완료되고 계정에 자주 액세스하지 않는 데이터가 많이 발생할 때까지 액세스 계층을 핫으로 설정합니다. 그런 다음 쿨로 전환하는 것이 좋습니다.</li>
+      <li>기존 사용 패턴을 평가하여 쿨 스토리지 계정을 사용할 수 있는지 여부를 결정합니다. Azure Storage 메트릭이 스토리지 사용 패턴을 이해하는 데 어떻게 도움이 되는지 알아보려면 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-enable-and-view-metrics/">여기</a>를 클릭하세요.</li>
+      <li>512K 청크 크기를 사용하도록 StorSimple 볼륨을 구성하는 것이 좋습니다. StorSimple은 기본적으로 64K 데이터 청크를 사용합니다. 이렇게 하면 중복 제거가 낮아질 수 있는 비용으로 발생하는 트랜잭션 및 트랜잭션 수수료의 수가 줄어듭니다. 이렇게 하려면 볼륨을 만들 때 자주 액세스하지 않는 보관 데이터에&rdquo; 대한 &ldquo;확인란을 선택합니다.</li>
+      <li>개발/테스트 또는 연구를 위해 StorSimple 클라우드 어플라이언스를 사용하는 것과 같이 많은 클라우드 데이터 액세스를 포함하는 시나리오는 핫 스토리지에 더 적합합니다.</li>
+      <li>데이터를 자주 복제해야 하는 경우 핫 스토리지를 선택해야 합니다.</li>
+  </ul>
+
+
+  <p>쿨 Blob Storage를 사용하여 StorSimple 어플라이언스를 구성하려면 다음을 수행합니다.</p>
+
+
+  <ol>
+      <li><a href="https://azure.microsoft.com/en-us/documentation/articles/storage-blob-storage-tiers/">Blob Storage 계정을 만듭니</a>다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/documentation/articles/storsimple-manage-storage-accounts/">StorSimple을 사용하여 스토리지 계정을 구성합니다</a>.</li>
+  </ol>
+
+
+  <p>가격 책정 정보는 영업 팀에 문의하세요. <a href="mailto:storagesales@microsoft.com">storagesales@microsoft.com</a></p>

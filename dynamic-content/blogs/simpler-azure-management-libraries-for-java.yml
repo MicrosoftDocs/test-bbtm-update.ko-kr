@@ -1,0 +1,137 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c98a75be4e35b6b7d975b9c0bb7f761dbdea8e75
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900665"
+Slug: simpler-azure-management-libraries-for-java
+Title: Java용 더 간단한 Azure 관리 라이브러리
+Summary: 인증할 하나의 Java 문입니다. 가상 머신을 만드는 하나의 문입니다. 기존 가상 네트워크를 수정하는 하나의 문입니다. 필요한 항목과 선택 사항 및 수정할 수 없는 항목에 대해 더 이상 추측하지 않습니다.
+Content: >-
+  <p>인증할 하나의 Java 문입니다. 가상 머신을 만드는 하나의 문입니다. 기존 가상 네트워크를 수정하는 하나의 문입니다. 필요한 항목과 선택 사항 및 수정할 수 없는 항목에 대해 더 이상 추측하지 않습니다.</p>
+
+
+  <p>Java용 간소화된 새로운 Azure 관리 라이브러리의 첫 번째 개발자 미리 보기 릴리스를 발표합니다. 우리의 목표는 가독성 및 쓰기에 최적화된 더 높은 수준의 개체 지향 API를 제공하여 개발자 환경을 개선하는 것입니다.</p>
+
+
+  <h2>Azure 인증</h2>
+
+
+  <p>구독을 인증하고 선택하는 하나의 문입니다. Azure 클래스는 Azure 리소스를 만들고 상호 작용하기 위한 가장 간단한 진입점입니다.</p>
+
+
+  <pre class="prettyprint">
+
+  Azure azure = Azure.authenticate(credFile).withDefaultSubscription();</pre>
+
+
+  <h2>가상 머신 만들기</h2>
+
+
+  <p>define() create() &hellip; 메서드 체인을 사용하여 가상 머신 인스턴스를 만들 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  //=============================================================
+
+  // Create a Linux VM
+
+
+  System.out.println(&quot;Creating a Linux VM&quot;);
+
+
+  VirtualMachine linuxVM = azure.virtualMachines().define(&quot;myLinuxVM&quot;)
+       .withRegion(Region.US_EAST)
+       .withNewResourceGroup(&quot;myResourceGroup&quot;)
+       .withNewPrimaryNetwork(&quot;10.0.0.0/28&quot;)
+       .withPrimaryPrivateIpAddressDynamic()
+       .withNewPrimaryPublicIpAddress(&quot;mylinuxvmdns&quot;)
+       .withPopularLinuxImage(KnownLinuxVirtualMachineImage.UBUNTU_SERVER_16_04_LTS)
+       .withRootUserName(&quot;tirekicker&quot;)
+       .withSsh(sshKey)
+       .withSize(VirtualMachineSizeTypes.STANDARD_D3_V2)
+       .create();
+
+  System.out.println(&quot;Created a Linux VM: &quot; + linuxVM.id());</pre>
+
+
+  <h2>가상 머신 업데이트</h2>
+
+
+  <p>update() apply() &hellip; 메서드 체인을 사용하여 가상 머신 인스턴스를 업데이트할 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  linuxVM.update()
+       .defineNewDataDisk(dataDiskName)
+       .withSizeInGB(20)
+       .withCaching(CachingTypes.READ_WRITE)
+       .attach()
+       .apply();</pre>
+
+  <h2>관리 라이브러리는 Eclipse 또는 IntelliJ에서 명령문 완성 기능을 발휘합니다.</h2>
+
+
+  <p><a href="https://www.martinfowler.com/bliki/FluentInterface.html">문</a> 완성과 함께 Fluent 영감을 받은 메서드 체인은 필요한 메서드와 선택적 메서드를 올바른 시퀀스로 제공하여 마법사와 유사한 개발자 환경을 제공합니다. 예를 들어 Linux 가상 머신 이미지를 선택하면 명령문 완성 시 루트 사용자 이름과 다른 이름을 입력하라는 메시지가 표시됩니다.</p>
+
+
+  <p><img alt="" border="0" height="251" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/867b5088-56e9-4c56-bdc6-0bdab2b65137.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="" width="640"></p>
+
+
+  <p>그런 다음 명령문 완성 시 SSH 키와 다른 항목이 없는지 묻는 메시지가 표시됩니다. create()를 호출하는 데 필요한 최소값에 도달할 때까지 계속됩니다.</p>
+
+
+  <p><img alt="" border="0" height="285" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eecca379-8f64-47c6-8270-d8f6d0886b4f.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="" width="640"></p>
+
+
+  <p>또 다른 예로, Windows 가상 머신 이미지를 선택하는 경우 명령문 완성 시 관리자 사용자 이름 및 암호를 묻는 메시지가 표시됩니다.</p>
+
+
+  <h2>샘플</h2>
+
+
+  <p>Azure Compute, Storage, 네트워크 및 Resource Manager의 주요 관리 시나리오를 보여 주는 다양한 샘플 코드를 찾을 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://github.com/Azure-Samples/compute-java-manage-vm">가상 머신 관리</a></li>
+   <li><a href="https://github.com/Azure-Samples/compute-java-manage-availability-sets">가용성 집합 관리</a></li>
+   <li><a href="https://github.com/Azure-Samples/compute-java-list-vm-images">가상 머신 이미지 나열</a></li>
+   <li><a href="https://github.com/Azure-Samples/storage-java-manage-storage-accounts">스토리지 계정 관리</a>&nbsp;</li>
+   <li><a href="https://github.com/Azure-Samples/network-java-manage-virtual-network">가상 네트워크 관리</a></li>
+   <li><a href="https://github.com/Azure-Samples/network-java-manage-network-interface">네트워크 인터페이스 관리</a></li>
+   <li><a href="https://github.com/Azure-Samples/network-java-manage-network-security-group">네트워크 보안 그룹 관리</a></li>
+   <li><a href="https://github.com/Azure-Samples/network-java-manage-ip-address">IP 주소 관리</a></li>
+   <li><a href="https://github.com/Azure-Samples/resources-java-manage-resource-group">리소스 그룹 관리</a></li>
+   <li><a href="https://github.com/Azure-Samples/resources-java-manage-resource">리소스 관리</a></li>
+   <li><a href="https://github.com/Azure-Samples/resources-java-deploy-using-arm-template">ARM 템플릿을 사용하여 리소스 배포</a>&nbsp;</li>
+  </ul>
+
+
+  <h2>시험해 보기</h2>
+
+
+  <p>Azure Compute, Storage, 네트워킹 및 Resource Manager의 주요 부분을 지원하는 개발자 미리 보기입니다. 위의 샘플을 실행하거나 <a href="https://github.com/Azure/azure-sdk-for-java">GitHub 리포지토리</a>로 바로 이동하거나 <a href="https://azure.github.io/azure-sdk-for-java/">Javadoc</a>를 찾아볼 수 있습니다.</p>
+
+
+  <p>Java용 Azure 관리 라이브러리의 다음 미리 보기 버전은 진행 중인 작업입니다. 향후 몇 개월 동안 더 많은 Azure 서비스에 대한 지원을 추가하고 API를 조정할 예정입니다.</p>
+
+
+  <p><a href="https://www.research.net/r/java-libs">4개의 질문 설문 조사에</a> 응답하거나 <a href="https://github.com/Azure/azure-sdk-for-java">GitHub</a>, <a href="https://twitter.com/javaonazure">Twitter</a>, 전자 메일(<a href="mailto:java@microsoft.com">Microsoft dot com의 Java</a>) 또는 아래 의견을 통해 의견을 공유하여 의견을 보내주세요. 다음에 대해 어떻게 생각하는지 배우는 것이 특히 좋습니다.</p>
+
+
+  <ul>
+   <li>Java용 새 관리 라이브러리의 유용성과 효율성.</li>
+   <li>곧 지원되는 Azure 서비스를 확인합니다.</li>
+   <li>샘플 코드로 설명해야 하는 추가 시나리오입니다.</li>
+   <li>Java용 관리 라이브러리를 사용하는 앱의 대상 플랫폼(Windows, Linux, Mac, Android 등)입니다.&nbsp;</li>
+  </ul>
+
+
+  <p>또한 마지막으로 관리에 비동기 호출을 사용한 시간과 활용한 비동기 프레임워크에 대해서도 알아보겠습니다. 또는 API를 통해 생산성을 높이는 데 어떻게 도움이 될 수 있는지에 대한 오류와 생각을 어떻게 조사했나요?</p>
+
+
+  <p>Azure의 Java에 대한 자세한 내용은 다음에서 <a href="https://azure.com/java">https://azure.com/java</a>확인할 수 있습니다.</p>

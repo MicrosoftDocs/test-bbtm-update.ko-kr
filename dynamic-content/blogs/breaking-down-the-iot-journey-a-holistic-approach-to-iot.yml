@@ -1,0 +1,61 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 56b4ead618f3ea68ac0461cdf6a4ce073f0f7edc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906873"
+Slug: breaking-down-the-iot-journey-a-holistic-approach-to-iot
+Title: IoT 경험 | IoT에 대한 전체적인 접근 방식
+Summary: 사물 인터넷은 최신 도구를 배포하거나 클라우드에서 작업하는 행위 그 이상입니다. 오늘날의 "클라우드에서 태어난" 회사들은 혁신적인 사고방식으로 시작했기 때문에 성공하고 있습니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c06c2371-f660-484e-b344-d8c1c452e7d4.jpg"><img alt="Breaking down IoT journey" border="0" height="537" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c000bc58-d610-41b7-aa82-0b401e77e1a8.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT 경험 분해" width="1024"></a></p>
+
+
+  <p>사물 인터넷은 최신 도구를 배포하거나 클라우드에서 작업하는 행위 그 이상입니다. &rsquo;&ldquo;클라우드&rdquo; 회사에서 태어난 오늘날에는 혁신적 사고방식으로 시작했기 때문에 성공하고 있습니다. 은행 및 제조와 같은 레거시 산업의 성숙한 기업의 경우 이러한 사고 방식을 개발하는 것은 그리 간단하지 않습니다.</p>
+
+
+  <p>변화는 어렵다. 그러나 그것은 가능하고, 보상은 중대하다. 실제로 <a href="https://blogs.microsoft.com/firehose/2016/09/21/study-data-leaders-consistently-outperform-peers-in-core-business-metrics/">키스톤 전략(Keystone Strategy</a> )의 최근 연구에 따르면 디지털 리더들은 디지털 전환에 뒤쳐진 것보다 훨씬 더 나은 총 마진, 더 높은 수익 및 더 높은 순이익을 실현하고 있습니다.</p>
+
+
+  <p>IoT가 수익 궤도에 엄청난 영향을 미치려면 올바른 방법으로 접근해야 합니다. IoT의 주요 목표는 비즈니스 및 고객에 대해 알아보는 데 사용할 수 있는 데이터를 수집하는 것입니다. 연결된 디바이스의 복잡성을 관리하려면 보안 사고방식으로 여정을 시작해야 합니다.</p>
+
+
+  <h2>보안 기반</h2>
+
+
+  <p>보안은 한 번 해결할 수 있는 것이 아닙니다. 그것은&rsquo; 유지 관리해야 할 보안 주체에 항상 존재하는 도전을 &ndash; 합니다. 처음부터 누가, 무엇을, 언제, 어디서 문제를 일으킬 수 있는지 고려하지 않고 IoT 여정을 시작합니다. IoT의 기술, 가상 및 물리적 보안은 전략의 기초가 되어야 합니다. 고려할 사항은 다음과 같습니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+   <li>Who 데이터가 필요합니까?</li>
+   <li>언제 수집되나요?</li>
+   <li>어떻게 저장하나요?</li>
+   <li>어떻게 보호하나요?</li>
+   <li>접근성을 향상하려면 어떻게 해야 할까요?</li>
+   <li>데이터를 언제, 어떻게, 어디서 검토하고 보고하나요?</li>
+  </ul>
+
+
+  <p>보안 사고방식은 조직이 IoT와 관련하여 수행하는 모든 작업을 정의해야 합니다. 신중하고 사전 예방적인 접근 방식을 취하면 조직에 필요한 보안 유형을 정의하는 데 도움이 될 수 있습니다.</p>
+
+
+  <h2>X에 대한 해결</h2>
+
+
+  <p>IoT에 대한 전체적인 접근 방식은 데이터에 더 가까워지고 중요한 정보를 제공할 수 있는 디바이스를 연결하여 시작됩니다. 디바이스를 연결할 수 있는 경우 디바이스에서 수집할 수 있는 비즈니스 인텔리전스와 디바이스를 캡처하고 배포하는 계획을 만드는 방법을 이해해야 합니다.</p>
+
+
+  <p>적절한 시기에 적절한 방법으로 데이터를 사용할 수 있는 방법을 고려하도록 각 디바이스에 대한 사용 사례를 만듭니다. 예를 들어 공장 현장의 연결된 컴퓨터는 연산자에게 데이터를 제공하여 데이터를 계속 실행하고 향후 결과를 예측하는 데 도움이 되어야 합니다. 재고를 제조하는 디바이스는 공급 시스템, 현장 서비스 담당자 및 영업 담당자에 연결되어 각 부서에서 사용 가능한 재고의 양, 재고가 부족할 때, 추가 구성 요소를 주문하는 시기 및 주문을 채우는 데 걸리는 시간을 알 수 있도록 할 수 있습니다.</p>
+
+
+  <h2>위치, 위치, 위치</h2>
+
+
+  <p>연결된 디바이스의 위치는 데이터 수집 방법에 영향을 미칠 수 있습니다. 디바이스의 물리적 위치가 야외에 있는 경우 디바이스가 연결되면&rsquo; 요소로부터 보호해야 하는지 여부를 고려합니다. &rsquo;원격 위치에 있는 경우 물리적 액세스 권한이 있어야 합니까?&nbsp; 디바이스가 공용 위치에 있는 경우 어떤 이유로든 보호하거나 숨겨야 합니까? 그리고 아마도 가장 중요한 것은 디바이스의 위치가 연결 문제를 야기하는가하는 것입니다. 수집할 데이터를 아는 것 외에도 수집되는 방법을 이해하는 것은 성공적인 IoT 전략의 중요한 부분입니다.</p>
+
+
+  <p>조직에서는 연결, 스토리지 및 디바이스 액세스를 고려하는 것이&rsquo; 일반적이지만 사일로에서 이러한 각 항목을 고려하는 것은 위험합니다. 보안에 대한 사려 깊고 전체적인 접근 방식은 연결 및 배포할 장비의 유형을 정의하는 데 도움이 됩니다. 연결하는 디바이스가 많을수록 대규모 및 보안 및 규정 준수를 위해 더 많은&rsquo; 관리가 필요합니다.</p>
+
+
+  <p>IoT 환경의 선두 주자인 Microsoft는 이러한 각 과제를 해결하여 기업이 데이터를 더 빠르게 사용할 수 있도록 합니다. 자세한 내용은 <a href="https://info.microsoft.com/en-us-landing-idc-marketscape-worldwide-iot-platforms.html">IDC MarketScape 보고서의 발췌를 다운로드</a>합니다.</p>

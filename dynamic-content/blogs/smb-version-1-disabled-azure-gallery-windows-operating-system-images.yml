@@ -1,0 +1,34 @@
+### YamlMime:Yaml
+ms.openlocfilehash: de77dffc1ad5ee19ad72d4140e5bfd81bf39780c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900596"
+Slug: smb-version-1-disabled-azure-gallery-windows-operating-system-images
+Title: SMB 버전 1 사용 안 함 Azure Gallery Windows 운영 체제 이미지
+Summary: Azure 보안 팀은 최근 Azure 갤러리에서 사용할 수 있는 Windows 운영 체제 이미지의 기본 동작에 대한 일부 변경 사항을 적용했습니다. 이러한 변경 내용은 최근 변경 내용에 대한 응답입니다...
+Content: >-
+  <p>Azure 보안 팀은 최근 Azure 갤러리에서 사용할 수 있는 Windows 운영 체제 이미지의 기본 동작에 대한 일부 변경 사항을 적용했습니다. 이러한 변경 내용은 서버 메시지 블록 버전 1 네트워크 파일 공유 프로토콜과 관련된 문제를 활용할 수 있었던 맬웨어에 대한 최근의 우려에 대응합니다. <a href="https://www.us-cert.gov/ncas/current-activity/2017/05/12/Multiple-Ransomware-Infections-Reported" target="_blank">Petya 및 WannaCry</a> 랜섬웨어 공격은 SMB v1의 약점으로 인해 확산할 수 있었던 두 가지 유형의 맬웨어입니다.</p>
+
+
+  <p>SMB v1 사용과 관련된 보안 문제로 인해 Azure 갤러리의 거의 모든 Windows 운영 체제에서 SMB v1 프로토콜을 사용할 수 없습니다. 이 변경의 결과는 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/" target="_blank">Azure Virtual Machines</a> 서비스에서 새 가상 머신을 만들 때 해당 가상 머신에 기본적으로 SMB v1 프로토콜을 사용하지 않도록 설정하게 됩니다. 아래 그림과 같이 프로토콜을 수동으로 사용하지 않도록 설정할 필요가 없습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b84dce92-1cc8-4157-9039-0df6665f12a9.png"><img alt="Turn Windows features on or off" border="0" height="338" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67077cad-83a0-47c4-9ad0-b723976d0303.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="Windows 기능 켜기 또는 끄기" width="383"></a></p>
+
+
+  <p>이러한 변경으로 인해 중단이 거의 또는 전혀 없을 것으로 예상되지만 고려해야 할 문제가 있을 수 있습니다.</p>
+
+
+  <ul>
+   <li>이 변경의 영향을 받는 특정 Windows 운영 체제 이미지는 무엇인가요?</li>
+   <li>현재 SMB v1 공간은 무엇인가요?</li>
+   <li>이 변경 내용은 현재 실행 중인 가상 머신에 어떤 영향을 미치나요?</li>
+   <li>Linux 및 SMB v1은 어떤가요?</li>
+   <li>PaaS 이미지란? 이러한 변경과 관련이 있나요?</li>
+   <li>가상 머신에서 SMB v1을 사용할 때 경고를 받을 수 있는 도구는 무엇인가요? Azure Security Center가 이 컨텍스트에서 유용할 수 있나요?</li>
+  </ul>
+
+
+  <p>이 변경 내용 및 이러한 문제에 대해 자세히 알아보려면 <a href="https://blogs.msdn.microsoft.com/azuresecurity/2017/08/18/disabling-server-message-block-version-1-smb-v1-in-azure/" target="_blank">Azure에서 SMB v1(서버 메시지 블록 버전 1)을 사용하지 않도록 설정</a>하세요.</p>

@@ -1,0 +1,121 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b1e32137d1de73b6e2c4d21eb44b3294dcbc16e8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907065"
+Slug: now-is-the-time-to-migrate-all-your-apps-data-and-infrastructure-to-azure
+Title: 이제 모든 앱, 데이터 및 인프라를 Azure로 마이그레이션할 시간입니다.
+Summary: 7월 발표 이후 Azure 마이그레이션에 대한 고객의 관심이 매우 많이 있으며, 그 이후로 다음 수준의 고객 성공 및 제품 투자를 구축해 왔습니다.
+Content: >-
+  <p><em>이 블로그 게시물은 제레미 윈터( Jeremy Winter) Microsoft Azure 프로그램 관리 파트너 이사와 Microsoft Azure 제품 마케팅 수석 디렉터인 Tanuj Bansal이 공동 저술했습니다.</em></p>
+
+
+  <p>&rsquo;<a href="https://azure.microsoft.com/en-us/blog/announcing-new-offers-and-capabilities-that-make-azure-the-best-place-for-all-your-apps-data-and-infrastructure/" target="_blank">7월 공지</a> 사항 이후 Azure 마이그레이션에 대한 고객의 관심이 매우 많으며 그 이후로 다음 수준의 고객 성공 및 제품 투자를 구축해 왔습니다. 이 블로그의 의도는 앞으로의 접근 방식에 대한 추가 인사이트를 제공하고 새로운 Azure 기능을 발표하는 것입니다. 또한 Microsoft Ignite의 주이기도 하며, 이러한 새로운 기능을 소개하기 위해 여러 <a href="https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222018-09-23T08%253A00%253A00-04%253A00%2522%252C%2522to%2522%253A%25222018-09-28T19%253A00%253A00-04%253A00%2522%257D&amp;q=Azure%2520migration%2520migrating#ignite-html-anchor" target="_blank">Azure 마이그레이션 세션을</a> 마련했습니다.</p>
+
+
+  <p>첫째, 다음 세 가지 주요 이유로 인해 Azure로 마이그레이션할 수 있는 적절한 시기입니다.</p>
+
+
+  <ol>
+   <li><strong><u>2008년 지원 종료</u>:</strong> 대부분의 경우 Windows/SQL Server 2008/R2 버전의 대규모 배포가 있을 수 있습니다. SQL Server <strong>9개월 이내에 2008/R2 버전에 대한 지원이 종료되고 Windows Server의 경우 이후 6개월 이내에</strong> Azure로 마이그레이션을 계획하고 시작할 시간입니다. <a href="https://www.microsoft.com/en-us/cloud-platform/windows-sql-server-2008" target="_blank">2008년 지원 종료</a>에 대해 자세히 알아보세요.</li>
+   <li><strong><u>엄청난 비용 절감</u>:</strong> <strong>Azure에서만 Windows/SQL Server 2008/R2에 대한 3년간의 무료 확장 보안 업데이트를 받게 됩니다.</strong> Azure 하이브리드 혜택 및 예약 인스턴스와 결합된 AWS의 이러한 서버는 Azure 대비 5배 더 많은 비용이 들 수 있습니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/resources/azure-vs-aws-windows-server-2008-costs/">여기</a>를 참조하세요.&nbsp;</li>
+   <li><strong><u>Azure의 새로운 기능</u>:</strong> 지난 6~9개월 동안 Azure Migrate, Azure Database Migration Service, Azure SQL Database Managed Instance 및 Azure Data Box와 같은 몇 가지 새로운 Azure 서비스를 제공했습니다. &rsquo;오늘 많은 서비스에 대한 추가 업데이트를 발표하게 되어 매우 기쁩니다.&nbsp; <ul>
+    <li>Azure Migrate는 CY18이 끝날 때까지 Hyper-V 평가를 지원합니다.</li>
+    <li>이제 Azure SQL Database Managed Instance(범용 계층)를 일반 공급</li>
+    <li>대규모 데이터베이스 마이그레이션을 위한 새로운 계층인 하이퍼스케일 Azure SQL Database</li>
+    <li>Azure Database Migration Service는 MySQL/PostgreSQL/Mongo DB 및 SQL Managed Instance 마이그레이션에 대한 SQL Server 포함하여 확장된 데이터베이스 시나리오를 지원합니다.</li>
+    <li>이제 Azure Data Box에 새로운 1PB 변형이 있으며, 이제 100TB 버전이 일반 공급됩니다.</li>
+   </ul>
+   </li>
+  </ol>
+
+
+  <h2>Azure 마이그레이션 환경 및 새로운 기능</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e8e02bbb-2fef-457e-8549-a57a1badefb2.png"><img alt="Azure migration experience" border="0" height="540" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/26c3b5dc-dac0-4118-963a-328c964b621d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 마이그레이션 환경" width="1208"></a></p>
+
+
+  <p>위에 표시된 보기를 통해 Azure 마이그레이션 투자에 접근합니다. 이러한 단계는 마이그레이션 도구, 시나리오 지침, 고객 성공 투자, 에코시스템 참여 및 모범 사례와 같은 모든 작업을 안내합니다.</p>
+
+
+  <h3>평가</h3>
+
+
+  <p>이 단계는 Azure 마이그레이션을 위한 온-프레미스 리소스의 검색 및 평가에 관한 것입니다. <a href="https://azure.microsoft.com/en-us/free/services/azure-migrate/" target="_blank">Azure Migrate</a> 는 2월 말부터 일반 공급되는 무료 기본 제공 도구입니다.&nbsp; 온-프레미스 환경의 모양을 고려하여 VMware 환경에 대한 검색/평가를 시작했습니다. 그리고 오늘 우리는 CY18 말까지 사용할 수있는 Windows 서버 Hyper-V 평가의 추가를 발표하고있다.&nbsp; Weve&rsquo;는 봄부터 엄청난 채택을 보았습니다. Azure Migrate는 450K 이상의 VM을 검색하고 Azure 준비 상태를 위해 325K+ VM을 평가했으며 매달 두 자릿수 증가합니다.</p>
+
+
+  <p>요구 사항에 가장 적합한 도구를 선택할 수 있도록 Azure Migrate가 현재 제공하는 것 이상으로 평가 시나리오에 대한 도구를 제공하는 ISV와 긴밀하게 협력하고 통합하고 있습니다. 자세한 내용은 <a href="https://azure.com/migrate" target="_blank">Azure 마이그레이션 센터를</a> 방문하세요.</p>
+
+
+  <h3>Migrate</h3>
+
+
+  <p>이 단계에서는 마이그레이션 및 현대화 전략을 &ndash; 정의하고 실행하는 방법에 대해 설명합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bdafbc7a-aa5b-4b30-a6be-a97fec281f66.png"><img alt="Migrate" border="0" height="468" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/00e6c083-d360-4579-bf38-3a5dfbebfa10.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="마이그레이션할" width="1611"></a></p>
+
+
+  <p><strong>인프라 마이그레이션:</strong> 애플리케이션을 리팩터링하는 컨테이너와 같은 기능이 마이그레이션 계획의 일부가 되고 있지만 대부분의 마이그레이션에 대한 주요 경로는 Azure VM에서 OS, Windows 또는 Linux를 다시 호스트하는 것입니다. ASR(Azure Site Recovery)은 이 용도로 빌드된 도구입니다. 가동 중지 시간 마이그레이션이 거의 없고 앱 데이터 손실이 없으므로 마이그레이션하는 동안 무료로 사용할 수 있습니다. 최근 ASR 개선 사항에는 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fblog%2Fmigrate-windows-server-2008-with-azure-site-recovery%2F&amp;data=02%7C01%7C%7Cd82f2bd5a19445c8f4f208d6137684a0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636717797076503987&amp;sdata=QcebMRfj3eFIU3qXSNSSUHsFMaLe%2FLg27d9eEb3rw4o%3D&amp;reserved=0" target="_blank">Windows Server 2008/R2 마이그레이션</a>(ASR 및 Azure에서 32비트 및 64비트 지원)에 대한 지원과 확장된 Linux 배포 지원이 포함됩니다. 또한 ASR을 보완하는 마이그레이션 도구를 제공하는 ISV 에코시스템도 있습니다. 자세한 내용은 <a href="https://azure.com/migrate" target="_blank">Azure 마이그레이션 센터를</a> 방문하세요.</p>
+
+
+  <p><strong>데이터 마이그레이션:</strong> 데이터 마이그레이션 도구는 이미 1년 이내에 41K+ 데이터베이스를 Azure로 마이그레이션했습니다. 오늘 고객이 SQL Server 완전한 호환성을 제공하는 완전 관리형 Azure 서비스로 <a href="https://azure.microsoft.com/en-us/blog/three-reasons-azure-sql-database-is-best-for-sql-server-migration/" target="_blank">SQL Server 마이그레이션</a>할 수 있는 Azure SQL Database <a href="https://azure.microsoft.com/en-us/blog/azure-sql-database-managed-instance-general-purpose-tier-general-availability/" target="_blank">Managed Instance</a>(범용 계층)의 일반 공급이 발표되었습니다. 데이터베이스당 최대 100TB의 자동 크기 조정을 통해 대규모 데이터베이스를 Azure로 마이그레이션할 수 있도록 하는 새로운 <a href="https://azure.microsoft.com/en-us/blog/announcing-azure-sql-database-hyperscale-public-preview/" target="_blank">Azure SQL Database 하이퍼스케일</a> 계층을 추가했습니다. Azure DMS(<a href="https://azure.microsoft.com/en-us/blog/database-migration-service-and-tool-updates-ignite-2018/" target="_blank">Database Migration Service</a>)를 사용하면 여러 데이터베이스 원본에서 Azure의 완전 관리형 서비스로 대규모 마이그레이션을 수행할 수 있습니다. 또한 Azure SQL DB Managed Instance로의 SQL Server 마이그레이션의 일반 공급, Azure로 MySQL/PostgreSQL 마이그레이션 미리 보기 및 MongoDB에서 Cosmos DB 마이그레이션에 대한 제한된 미리 보기를 발표했습니다.</p>
+
+
+  <blockquote>
+
+  <p>&ldquo;몇 주 만에 TimeXtender 솔루션을 Azure SQL Database Managed Instance의 프로덕션 환경에 배포할 수 있었습니다. 우리는 즉시 49%의 비용 절감을 실현했으며, 기계 학습을 통해 인공 지능을 데이터에 적용하겠다는 약속은 우리에게 흥미로운 기회라는 것을 깨달았습니다.&rdquo;</p>
+
+  </blockquote>
+
+
+  <p align="right">- John Steele, GM of Business Technology &amp; Systems, Komatsu Australia</p>
+
+
+  <p>대량의 데이터를 안전하게 마이그레이션하기 위해 고객은 이제 필요에 따라 40TB, 100TB 및 1PB &ndash; &ndash; 의 세 가지 크기로 제공되는 <a href="https://aka.ms/databoxfamilyignite2018" target="_blank">Azure Data Box</a>를 사용할 수 있습니다.</p>
+
+
+  <p><strong>앱 마이그레이션:</strong> Azure App Service는 Docker화된 Windows/Linux 컨테이너뿐만 아니라 다양한 앱 프레임워크를 지원하는 완전 관리형 서비스입니다. 오늘, 개발자가 웹앱을 Azure로 쉽게 마이그레이션할 수 있도록 Linux의 App Service에서 기본 제공 Apache Tomcat/Java 지원을 일반 공급한다고 발표했습니다. 또한 AppOrbit 및 Chef와 같은 파트너와 협력하여 고객에게 추가 앱 마이그레이션 기능을 사용하도록 설정하고 있습니다.</p>
+
+
+  <h3>최적화</h3>
+
+
+  <p>Azure에서 무료로 <a href="https://docs.microsoft.com/en-us/azure/cost-management/" target="_blank">제공되는 Azure Cost Management</a>를 통해 고객은 이제 통합된 환경에서 클라우드 지출을 관리하고 Azure Advisor의 기본 제공 모범 사례 권장 사항을 활용하여 Azure 리소스를 지속적으로 최적으로 구성할 수 있습니다. 고객은 대규모 절감을 위해 Azure 하이브리드 혜택 및 Azure Reserved Instances를 적용할 수도 있습니다. 또한 Azure 리소스에 대한 비용과 성능을 지속적으로 최적화하는 도구를 제공하는 ISV 파트너가 있습니다. 자세한 내용은 <a href="https://azure.com/migrate" target="_blank">Azure 마이그레이션 센터를</a> 방문하세요.</p>
+
+
+  <h3>보안 유지 및 관리</h3>
+
+
+  <p>마이그레이션된 리소스의 보안 및 관리는 마이그레이션 중, 이후 및 진행 중에도 매우 중요합니다. Azure 보안 및 관리를 통해 고객은 Azure 및 온-프레미스 워크로드에 기본 제공 지능형 서비스를 활용할 수 있습니다. 리소스를 마이그레이션한 직후에 Azure Security Center, Azure Backup 및 Azure Log Analytics를 켜고 시간이 지남에 따라 미세 조정하는 것이 좋습니다.&nbsp;&nbsp;</p>
+
+
+  <p>Enterprise 고객은 속도와 제어를 위해 Azure를 찾고 있습니다. 오늘 발표한 새로운 거버넌스 기능인 <a href="https://docs.microsoft.com/en-us/azure/governance/blueprints" target="_blank">Azure Blueprints</a>를 사용하면 이미 미리 정의된 리소스, 정책 및 액세스 제어를 사용하여 규격 구독을 쉽게 설정할 수 있습니다. 이렇게 하면 규정을 준수해야 하는 컨트롤에 액세스하고, 새 환경의 생성을 가속화하며, 규격 개발자 셀프 서비스를 사용할 수 있습니다.</p>
+
+
+  <h2>이 시리즈의 다음 시간</h2>
+
+
+  <p>Azure로 마이그레이션하기 위한 모범 사례와 같이 고객이 요청하는 주요 범주를 해결하기 위해 이후 몇 달 동안 추가 블로그를 게시할 예정입니다. 기대해 주세요.</p>
+
+
+  <h2>주요 리소스</h2>
+
+
+  <ul>
+   <li><a href="https://azure.com/migrate" target="_blank">Azure 마이그레이션 센터에서</a>의 여정에 대한 규범적인 지침을 얻고 이러한 <a href="https://docs.microsoft.com/en-us/azure/migrate/contoso-migration-overview" target="_blank">시나리오 기반 마이그레이션 가이드를</a> 사용합니다.&nbsp;</li>
+   <li>데이터 자산 현대화를 위한 포괄적인 단계별 지침은 <a href="https://aka.ms/datamigration" target="_blank">Azure Database Migration Guide</a> 를 사용합니다.</li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/announcing-azure-expert-msps/" target="_blank">Azure 전문가 MSP</a>의 도움을 받거나 <a href="https://www.microsoft.com/en-us/fasttrack/azure?rtc=1" target="_blank">Azure용 FastTrack</a> 직접 핸드홀딩 지원을 받으세요.</li>
+  </ul>
+
+
+  <h2>오늘 Azure 마이그레이션 시작</h2>
+
+
+  <p>새로운 마이그레이션 기능, 뛰어난 비용 절감, 포괄적인 &lsquo;지침 방법을&rsquo; 통해 Azure로 전환하는 데 더 좋은 시기는 없었습니다. 지금 <a href="https://azure.com/migrate" title="https://azure.com/migratehttps://azure.com/migrate"></a>마이그레이션을 시작하세요.</p>
+
+
+  <p>이번 주에 Microsoft Ignite에서 여러분을 만나보시기 기대합니다! 이러한 주제 등을 다룰 <a href="https://myignite.techcommunity.microsoft.com/sessions/64684?source=sessions" target="_blank">Azure Migration 세션</a> 에 참석하세요.&nbsp; Azure 마이그레이션 여정의 진행 방식과 도움이 되는 방법을 알려주세요.</p>

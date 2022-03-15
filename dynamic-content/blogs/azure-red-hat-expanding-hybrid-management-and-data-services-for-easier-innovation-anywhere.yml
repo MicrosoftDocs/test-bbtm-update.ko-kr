@@ -1,0 +1,89 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4e82c59f261638edf9fdfe1517d7715dd41e8972
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899944"
+Slug: azure-red-hat-expanding-hybrid-management-and-data-services-for-easier-innovation-anywhere
+Title: 'Azure + Red Hat: 어디서나 쉽게 혁신할 수 있는 하이브리드 관리 및 데이터 서비스 확장'
+Summary: 지난 몇 년 동안 Microsoft와 Red Hat은 고객이 온-프레미스와 클라우드 모두에서 혁신할 수 있도록 하이브리드 솔루션을 공동 개발했습니다. 2019년 5월에 일반 공급...
+Content: >-
+  <p>지난 몇 년 동안 Microsoft와 Red Hat은 고객이 온-프레미스와 클라우드 모두에서 혁신할 수 있도록 하이브리드 솔루션을 공동 개발했습니다. 2019년 5월에는 기업이 Microsoft 및 Red Hat이 공동으로 운영하는 Azure의 OpenShift 관리 서비스를 통해 중요한 컨테이너 기반 프로덕션 워크로드를 실행할 수 있도록 하는 Azure Red Hat OpenShift의 일반 공급이 발표되었습니다.</p>
+
+
+  <p>Microsoft와 Red Hat은 이제 Azure 서비스를 온-프레미스 및 다중 클라우드의 하이브리드 환경으로 더욱 확장하기 위해 협력하고 있으며, 향후 Azure Arc for OpenShift 및 RHEL(Red Hat Enterprise Linux)을 지원하므로 고객은 어디서나 클라우드 네이티브 애플리케이션을 보다 효과적으로 개발, 배포 및 관리할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/azure-arc/" target="_blank">Azure Arc</a>를 사용하면 고객은 Red Hat OpenShift 및 RHEL을 포함하여 Microsoft 하이브리드 클라우드에서 보다 일관된 관리 및 운영 환경을 갖게 됩니다.</p>
+
+
+  <h2>Azure Arc를 사용하는 Red Hat 고객의 새로운 기능&rsquo;</h2>
+
+
+  <p>Azure Arc 미리 보기의 일부로 Azure&rsquo; Arcs&rsquo; Linux 및 Kubernetes 관리 기능을 확장하여 Red Hat 고객에 대한 지원을 추가함으로써 다음을 수행할 수 있습니다.</p>
+
+
+  <h3>환경 전반에서 Red Hat 에코시스템 구성, 보안 및 관리</h3>
+
+
+  <p>많은 고객이 클라우드, 데이터 센터 및 에지 위치에 걸쳐 워크로드를 확장합니다. Azure Arc를 사용하면 고객이 Azure에서 RHEL 서버 및 OpenShift 클러스터를 대규모로 중앙에서 관리, 보호 및 제어할 수 있습니다. 워크로드가 실행되는 모든 위치에서 고객은 Azure Portal에서 인벤토리를 보고 검색할 수 있습니다. 정책을 적용하고 Azure Policy에서 연결된 서버 및 클러스터에 대한 규정 준수를 관리할 수 있습니다. 한 번에 하나 이상의 클러스터 고객은 어디에서 실행하든 동일한 방식으로 작동하는 관리형 인프라에 대한 기본 제공 Azure 보안 정책 및 RBAC를 통해 보안 태세를 향상시킬 수 있습니다. Azure Arc가 일반 공급으로 진행됨에 따라 만료된 인증서에 대한 보고, 암호 복잡성, SSH 키 관리 및 디스크 암호화 적용과 같은 더 많은 정책이 사용하도록 설정됩니다.</p>
+
+
+  <p>또한 RHEL 8용 SQL Server 2019를 사용하면 이제 Azure Marketplace에서 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsqlserver.sql2019-rhel8?tab=overview" target="_blank">사용할 수 있는</a> 새 이미지를 통해 더 빠르게 배포할 수 있으며,&rsquo; AZURE Arc를 확장하여 RHEL에서 SQL Server 관리하고 통합 Azure 정책을 통해 통합 데이터베이스 및 서버 거버넌스를 제공합니다.</p>
+
+
+  <p>마지막으로 Azure Arc를 사용하면 Azure 외부에서 실행되는 워크로드 및 인프라를 처리할 때 Azure Monitor 및 Azure Security Center와 같은 Azure 관리 서비스를 쉽게 사용할 수 있습니다.</p>
+
+
+  <h3>대규모 OpenShift 클러스터 및 애플리케이션 관리</h3>
+
+
+  <p>Azure의 Azure Red Hat OpenShift 서비스에서 실행되는 컨테이너 기반 애플리케이션과 IaaS, VM(가상 머신) 또는 온-프레미스 운영 체제 미설치 컴퓨터에서 실행되는 OpenShift 클러스터를 관리합니다. Github 리포지토리에 정의된 애플리케이션은 Azure Policy 및 Azure Arc를 통해 리포지토리에 연결된 OpenShift 클러스터에 자동으로 배포될 수 있으며, 정책을 사용하여 최신 상태로 유지할 수 있습니다. 새 애플리케이션 버전은 로깅 및 품질 테스트를 위한 전체 DevOps CI/CD 파이프라인 통합을 통해 Github 끌어오기 요청을 사용하여 모든 Azure Arc 관리 OpenShift 클러스터에 전역적으로 배포할 수 있습니다. 또한 애플리케이션이 무단으로 수정되면 변경 내용이 되돌려지므로 OpenShift 환경은 안정적이고 규정을 준수합니다.</p>
+
+
+  <h3>OpenShift 및 기타 위치에서 Azure Data Services 실행</h3>
+
+
+  <p>Azure Arc를 사용하면 자체 배포 클러스터 또는 Azure Red Hat OpenShift와 같은 관리형 컨테이너 서비스 등 OpenShift 온-프레미스, 에지 및 다중 클라우드 환경에서 Azure 데이터 서비스를 실행할 수 있습니다. Azure SQL Managed Instance 및 OpenShift&rsquo;의 Azure PostgreSQL 하이퍼스케일에 대한 Azure Arc 지원을 사용하면 컨테이너 기반 데이터 인프라가 항상 최신 상태이고 최신 상태임을 알 수 있습니다. OpenShift에 대한 Microsoft SQL BDC(빅 데이터 클러스터) 지원은 빅 데이터 스토리지 및 분석을 위한 새로운 컨테이너 기반 배포 패턴을 제공하므로 실행되는 모든 위치에서 동적 OpenShift 기반 애플리케이션으로 데이터를 탄력적으로 확장할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4e013d68-1af0-4a7f-b9f3-09ce38e79da4.jpg"><img alt="Managing multiple configurations for an on-premises OpenShift deployment from Azure Arc. " border="0" height="618" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/312759ad-1010-4449-98f4-308ec63ec078.jpg" style="margin: 0px auto; border: 0px currentcolor; display: block; background-image: none;" title="" width="1099"></a></p>
+
+
+  <p style="text-align: center;"><em>Azure Arc에서 온-프레미스 OpenShift 배포에 대한 여러 구성 관리 </em></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/520f2b3f-e2e3-42a7-83b7-19b0c7b067b3.jpg"><img alt="Azure SQL Managed Instances within Azure Arc. " border="0" height="684" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ba80c4d0-0390-48a7-97b0-9d841faa9092.jpg" style="margin: 0px auto; border: 0px currentcolor; display: block; background-image: none;" title="" width="1216"></a></p>
+
+
+  <p style="text-align: center;"><em>Azure arc 내에서 Azure SQL Managed Instances.</em></p>
+
+
+  <p>&rsquo;하이브리드 클라우드 환경에서 고객이 더 쉽게 혁신할 수 있도록 Azure가 Red Hat과 함께 작업하는 방법에 대해 자세히 알아보려면 오늘 Red Hat Summit 2020 Virtual Experience에서 Red Hat용 Azure Arc 데모를 포함하여 Microsoft의 클라우드 및 AI EVP인 Scott Guthrie와 Red Hat의 사장 겸 CEO인 Paul Cormier 간의 노변의 채팅에 참여하세요.</p>
+
+
+  <h2>Azure Red Hat OpenShift에 추가된 프라이빗 하이브리드 클러스터 및 OpenShift 4</h2>
+
+
+  <p>Red Hat 고객을 위한 하이브리드 제품을 마무리하고, 오늘&rsquo; <a href="https://aka.ms/openshift" target="_blank">OpenShift 4에서 Azure Red Hat OpenShift</a>의 일반 공급에 대해 발표했습니다.</p>
+
+
+  <p>이 릴리스에서는 <a href="https://www.openshift.com/blog/introducing-red-hat-openshift-4" target="_blank">Red Hat OpenShift 4에서 Azure Red Hat OpenShift로의 주요 혁신</a> 을 제공합니다. &lsquo;또한 다음과 같은 하이브리드 및 엔터프라이즈 고객 시나리오를 지원하는 기능을 사용하도록 설정해야 합니다.</p>
+
+
+  <ul>
+      <li><strong>프라이빗 API 및 수신 엔드포인트</strong>: 이제 고객은 공용 및 프라이빗 클러스터 관리(API) 및 수신 엔드포인트 중에서 선택할 수 있습니다. 프라이빗 엔드포인트 및 Azure Express Route를 사용하면&rsquo; 프라이빗 하이브리드 클러스터를 사용하도록 설정하여 상호 고객이 온-프레미스 솔루션을 Azure로 확장할 수 있습니다.<br>
+  &nbsp;</li>
+      <li><strong>업계 규정 준수 인증</strong>: 고객이 전 세계 규제 산업 및 시장에서 규정 준수 의무를 충족할 수 있도록 Azure Red Hat OpenShift는 이제 PCI DSS, HITRUST 및 FedRAMP 인증을 받았습니다. Azure는 총 제품 수와 평가 범위의 고객 지향 서비스 수 측면에서 업계에서 가장 큰 규정 준수 포트폴리오를 유지 관리합니다.<br>
+  &nbsp;</li>
+      <li><strong>다중 가용성 영역 클러스터</strong>: 가장 높은 복원력을 보장하기 위해 클러스터 구성 요소가 지원되는 Azure 지역의 3개 Azure 가용성 영역에 배포되어 가장 까다로운 중요 업무용 애플리케이션 및 데이터에 대한 고가용성을 유지합니다. Azure Red Hat OpenShift의 SLA(서비스 수준 계약)는 99.9%입니다.</li>
+  </ul>
+
+
+  <ul>
+      <li><strong>클러스터 관리자 지원</strong>: Weve&rsquo;는 Azure Red Hat OpenShift 클러스터에서 클러스터 관리자 역할을 사용하도록 설정하여 권한 있는 컨테이너 실행 및 CRD(사용자 지정 리소스 정의) 설치와 같은 전체 클러스터 사용자 지정 기능을 사용하도록 설정했습니다.</li>
+  </ul>
+
+
+  <h2>Azure Arc 시작</h2>
+
+
+  <p>RHEL 환경용 Azure Arc에 대해 자세히 알아보려면 <a href="https://docs.microsoft.com/en-us/azure/azure-arc/servers/overview" target="_blank">지금 미리 보기를</a> 시작하세요. Azure Arc 지원 OpenShift에 관심이 있는 모든 사용자를 위해 곧 공개 미리 보기로 전환될 예정입니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/services/azure-arc/#contact-us" target="_blank">여기로 문의하세요</a>.</p>

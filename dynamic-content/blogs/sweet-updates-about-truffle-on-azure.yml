@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e7982357d051fc8c1d87c603273784e2ad88f5c0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900200"
+Slug: sweet-updates-about-truffle-on-azure
+Title: Azure의 Truffle에 대한 달콤한 업데이트
+Summary: 일반적으로 DApps라고 하는 Ethereum 기반 애플리케이션의 개발 및 배포는 개발자에게 어려운 작업일 수 있습니다. 100만 개 이상의 다운로드를 기록한 Truffle은 메인넷의 공용 Ethereum 네트워크와 개인 컨소시엄 모두에 스마트 계약 및 DApps를 개발하는 데 사용할 수 있는 최고의 도구 모음으로 입증되었습니다.
+Content: >-
+  <p>일반적으로 DApps라고 하는 Ethereum 기반 애플리케이션의 개발 및 배포는 개발자에게 어려운 작업일 수 있습니다. 100만 개 이상의 다운로드를 기록한 <a href="https://truffleframework.com/" target="_blank">Truffle</a> 은 메인넷의 공용 <a href="https://ethereum.org/" target="_blank">Ethereum</a> 네트워크와 개인 컨소시엄 모두에 스마트 계약 및 DApps를 개발하는 데 사용할 수 있는 최고의 도구 모음으로 입증되었습니다.</p>
+
+
+  <p>Truffle은 변경 내용을 인식하고, 기본 블록체인으로 마이그레이션하고, 코드의 일반적인 단계 및 하위 수준 구성 요소 검사를 통해 풍부한 디버깅 환경을 허용하는 프레임워크를 제공하는 프로세스를 간소화합니다.</p>
+
+
+  <p>Truffle Suite는 개발자가 Ethereum에서 종단 간 솔루션을 빌드할 수 있도록 Microsoft가 빌드하는 제품에 매우 적합합니다. 예를 들어 <a href="https://azure.microsoft.com/en-us/features/blockchain-workbench/" target="_blank">Azure Blockchain Workbench</a>를 활용하는 솔루션을 빌드할 때 주요 구성 요소는 기본 스마트 계약을 만드는 것입니다. Truffle 프레임워크를 사용하여 Azure Blockchain Workbench에 업로드될 스마트 계약을 빌드, 테스트 및 유지 관리하면 개발자와 IT 전문가를 위한 프로세스가 간소화됩니다.</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/trufflecon.png" style="width: 1000px; height: 151px;"></p>
+
+
+  <p>Truffle 팀은 이번 주말 오리건 주 포틀랜드에서 첫 번째 연례 <a href="https://truffleframework.com/trufflecon2018" target="_blank">TruffleCon</a> 을 개최했습니다. 이 행사는 전국의 개발자들이 모여 커뮤니티를 지속적으로 구축하고 Ethereum 개발자 공간에서 연결을 만들고 경험, 피드백, 과제 및 성공 사례를 공유했습니다! Microsoft는 Truffle Suite와 팀 모두의 열렬한 팬이며&rsquo;, 이 첫 번째 이벤트를 후원하고 참여하게 되어 자랑스럽습니다. 블록체인 엔지니어링 팀의 프로그램 관리자 및 엔지니어가 이 행사에 참석하여 경험을 공유하고 다른 사람들로부터 배웠습니다.</p>
+
+
+  <p>Truffle과의 공동 작업의 일환으로 Truffle을 개발 파이프라인에 더 심층 통합하기 위해 노력해 왔습니다. Truffle 및 VS Code 개발 환경을 더 잘 통합하기 위한 VS Code <a href="https://aka.ms/truffle-extension" target="_blank">확장</a> 개발을 발표하게 되어 기쁘게 생각합니다.</p>
+
+
+  <p>확장의 목표는 Truffle 및 관련 프레임워크 요소(예: Ganache)를 사용할 때 개발자 생산성을 높이는 것입니다. Truffle 도구 모음은 이미 IDE에서 매우 잘 작동하며, 특히 로컬 개발에 <a href="https://truffleframework.com/ganache" target="_blank">Ganache</a> 를 사용하는 경우 개발자가 IDE의 하위 창 사이를 이동해야 합니다. TruffleCon 컨퍼런스에서 처음으로 이 확장을 보여주었으며 올 가을 <a href="https://marketplace.visualstudio.com/vscode" target="_blank">Visual Studio 마켓플레이스에서</a> 다운로드할 수 있도록 할 계획입니다.</p>
+
+
+  <p>Microsoft가 더 원활한 방식으로 Truffle 및 Azure Blockchain Workbench를 연결하고 있음을 발표하게 되어 기쁘게 생각합니다. 현재 Azure Blockchain Workbench 사용자는 샘플 스마트 계약을 솔루션의 시작점으로 활용할 수 있습니다. 기본 출처, 공급망, 자산 관리 등에 대한 샘플은 <a href="https://github.com/Azure-Samples/blockchain/tree/master/blockchain-workbench/application-and-smart-contract-samples" target="_blank">Workbench Git</a>을 통해 사용할 수 있습니다. 그러나 이제 개발자가 Workbench를 더 빠르게 시작할 수 있도록 <a href="https://truffleframework.com/boxes" target="_blank">Truffle 상자</a> 로 사용할 수 있습니다.</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/truffle-bx.png" style="width: 400px; height: 153px; margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p>설치가 0인 Truffle 사용을 시작하려는 경우 <a href="https://aka.ms/truffle-stable" target="_blank">현재 안정적인 버전</a> 과 <a href="https://aka.ms/truffle-beta" target="_blank">베타 버전</a> 에 대한 Azure Marketplace 이미지를 지금 사용할 수 있습니다. 이러한 단일 클릭 이미지를 사용하면 Azure의 샌드박스 컴퓨팅 노드에서 Truffle 사용을 매우 쉽게 시작할 수 있습니다.</p>
+
+
+  <p><img alt="" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/truffle-amp-1.png" style="border: 0px currentcolor; border-image: none; width: 500px; height: 334px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;"></p>
+
+
+  <p>마지막으로, Microsoft Australia의 수석 SDE인 David Burela는 Trufflecon에서 발표했으며, GitHub Ethereum 프로젝트가 Truffle 도구 모음과 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fmarketplace%2Fazure-pipelines&amp;data=02%7C01%7CCale.Teeter%40microsoft.com%7C5d17cf4fe4ad49e3c34008d62c71748b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636745263122430626&amp;sdata=f1Ok7iSRODK0bhu2ig%2B9ZHifaLqOvdjS9xffxHXMWWE%3D&amp;reserved=0" target="_blank">함께 Azure DevOps Pipelines</a> 활용하여 모든 커밋 또는 끌어오기 요청에 따라 Ethereum 스마트 계약을 자동으로 빌드하고 테스트하는 방법을 보여주는 가이드를 발표했습니다. 새 YAML 기반 빌드 파이프라인을 사용하면 5분 이내에 GitHub 프로젝트를 구성할 수 있으며 3줄의 YAML 코드를 구성할 수 있습니다. <a href="https://github.com/DavidBurela/Trufflecon2018-presentation" target="_blank">온라인으로 프레젠테이션에서 노트를</a> 찾습니다.</p>
+
+
+  <p>우리는 Truffle과 협력하여 제품을 계속 통합하기를 기대합니다!</p>

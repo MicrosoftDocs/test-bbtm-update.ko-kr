@@ -1,0 +1,41 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 10e8fbe9fc216bace4f0405a47292c0d1559f13b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906556"
+Slug: announcing-token-authentication-with-azure-cdn
+Title: Azure CDN 사용하여 토큰 인증 발표
+Summary: 'Azure CDN 토큰 인증의 일반적인 가용성을 발표하게 되어 기쁘게 생각합니다. 이 기능은 Verizon Premium 제품의 Azure CDN 사용할 수 있습니다. '
+Content: >-
+  <p>Azure CDN 토큰 인증의 일반적인 가용성을 발표하게 되어 기쁘게 생각합니다. 이 기능은 Verizon Premium 제품의 Azure CDN 사용할 수 있습니다. 모든 신규 및 기존 Verizon Premium 고객에게 이 기능을 사용하도록 설정했습니다.</p>
+
+
+  <p>토큰 기반 인증은 여러 사용자에 대한 인증을 처리하는 데 유용한 도구입니다. 쉽게 스케일링되고 보안을 제공합니다. 토큰 인증의 주요 이점은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>쉽게 확장할 수 있으며 사용자 로그인 정보를 서버에 저장할 필요가 없습니다.</li>
+      <li>모바일 애플리케이션 준비 솔루션.</li>
+      <li>보안을 제공합니다. 각 요청에는 토큰이 포함되어야 하며 토큰이 만료된 후에는 사용자가 다시 로그인해야 합니다.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery">사이트 간 요청 위조</a>(CSRF, 세션 타기라고도 함)와 같은 공격을 방지합니다.</li>
+  </ul>
+
+
+  <p>CDN 이 기능을 사용하도록 설정하면 Azure CDN 권한이 없는 사용자에게 자산을 제공하지 못하도록 하는 콘텐츠를 전달하기 전에 CDN 에지 POP에서 각 요청을 인증합니다. 이는 일반적으로 다른 웹 사이트(종종 메시지 보드)가 권한 없이 자산을 사용하는 콘텐츠의 핫링크를 방지하기 위해 수행됩니다. 콘텐츠 배달 비용에 영향을 줄 수 있습니다.</p>
+
+
+  <p>오늘 토큰 인증을 설정하는 방법을 알아보려면 전체 <a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-token-auth">기능 설명서를</a> 참조하세요.</p>
+
+
+  <h3>추가 정보</h3>
+
+
+  <ol>
+      <li><a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-overview">CDN 개요</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-rules-engine">규칙 엔진</a></li>
+  </ol>
+
+
+  <p>Azure CDN 보고 싶은 기능이&#39;있나요? <a href="https://feedback.azure.com/forums/169397-cdn">피드백을 보내주세요</a>!</p>

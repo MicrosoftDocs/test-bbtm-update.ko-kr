@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 88dfbb65c06863da8febfb968f92e8b0a84b50ff
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906488"
+Slug: cross-post-ctp-of-apache-hadoop-based-services-for-windows-azure-now-available
+Title: '교차 게시물: 지금 사용할 수 있는 Windows Azure용 Apache Hadoop 기반 서비스의 CTP'
+Summary: 블로그 게시물&ldquo;인 Community Technology의 가용성에 따르면 Windows Azure용 Apache Hadoop 기반 서비스(또는 Azure의 Hadoop)의 CTP(커뮤니티 기술 미리 보기)를 사용할 수 있습니다.
+Content: '<p>Windows Azure용 Apache Hadoop 기반 서비스(또는 Azure의 Hadoop)의 CTP(커뮤니티 기술 미리 보기)는 이제 SQL Server <a target="_blank" href="https://blogs.technet.com/b/dataplatforminsider/">팀 블로그</a><a target="_blank" href="https://blogs.technet.com/b/dataplatforminsider/archive/2011/12/14/availability-of-community-technology-preview-ctp-of-hadoop-based-service-on-windows-azure.aspx">&ldquo;의 Windows Azure&rdquo;에 있는 Hadoop 기반 서비스의 CTP(Community 기술 미리 보기) 가용성</a>에 따라 사용할 수 있습니다.&nbsp;<img style="float: right;" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3630.Hadoop.png" alt="" border="0" height="350" width="263"></p>  <p>그리고 블로그 게시물에 따르면, &ldquo;<a target="_blank" href="https://blogs.msdn.com/b/sqlcat/">Microsoft SQL Server 개발 고객 자문 팀 블로그</a>에 지하철&rdquo;을 가서 Hadoop 쉽게 만드는 데 도움, &ldquo;Azure 서비스의 새로운 Hadoop에 대한 좋은 점 중 하나는 Hadoop는 이제 &lsquo;라이브 타일 구현과 메트로 UI입니다 모든 메트로&rsquo; &ndash; 입니다.&rdquo;</p>  <p>&ldquo;더 차가운&rdquo; 것은 게시물이 계속되며, Hadoop, Hive, &ldquo;Pig-Latin, Hadoop Javascript 프레임워크, Windows Azure DataMarket 및 Windows Azure 서비스에서 Hadoop을 사용하여 Excel 상호 작용할 수 있다는 것입니다.&rdquo;&nbsp; &nbsp;자세한 내용은 Windows Azure에서 Hadoop용Channel 9 비디오를 확인하세요.</p>  <p>CTP에 대한 초대 코드를 원하는 경우 <a target="_blank" href="https://connect.microsoft.com/SQLServer/Survey/Survey.aspx?SurveyID=13697">커넥트 설문 조사</a> 작성을 확인하세요.</p>  <p><a href="https://blogs.technet.com/b/dataplatforminsider/archive/2011/12/14/availability-of-community-technology-preview-ctp-of-hadoop-based-service-on-windows-azure.aspx">여기</a>를 클릭하여 Windows Azure용 Apache Hadoop 기반 서비스의 CTP에 대한 전체 블로그 게시물을 읽어보세요.&nbsp; Hadoop 및 Metro에 대한 자세한 내용을 보려면 <a target="_blank" href="https://blogs.msdn.com/b/sqlcat/archive/2011/12/14/helping-to-make-hadoop-easier-by-going-metro.aspx">여기</a>를 클릭하십시오.</p>  <p>&nbsp;</p>'

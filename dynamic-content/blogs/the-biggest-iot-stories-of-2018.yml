@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ccf8051ddbb929464e78ffedf9076b70a1e7d808
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907043"
+Slug: the-biggest-iot-stories-of-2018
+Title: 2018년 가장 큰 IoT 사례
+Summary: 2018년이 끝나갈 무렵, 블로그에서 가장 관심과 흥분을 불러일으켰던 주제를 되돌아보고 가까운 장래에 이 기술에 어떤 영향을 미칠지 살펴보겠습니다.
+Content: >-
+  <p>4월에는 향후 5년간 IoT( <a href="https://blogs.microsoft.com/iot/2018/04/04/microsoft-will-invest-5-billion-in-iot-heres-why/" style="font-size: 13.008px;" target="_blank">사물 인터넷)에 50억 달러를 투자하겠다는 의사를</a> 밝혔습니다. 기술이 이미 발전하고 고객이 혁신을 거듭하고 가능성이 커짐에 따라 이 약속의 중요성이 더욱 분명해졌습니다. 2018년이 가까워짐에 따라 블로그&rsquo;에서 가장 관심과 흥분&mdash;을 불러일으킨 주제를 되돌아보고 가까운 장래에이 기술에 대한 내용&rsquo;에 대한 창을 제공합니다.</p>
+
+
+  <h2>스마트 공간</h2>
+
+
+  <p>우리 주변의 공간은 데이터의 힘으로 살아나고 있습니다. Azure IoT&rdquo; <a href="https://blogs.microsoft.com/iot/2018/06/05/smart-buildings-are-built-on-azure-iot/" target="_blank">기반으로 구축된 스마트 빌딩</a>의 게시물 &ldquo; 에서 IoT 및 AI가 건물을 소유, 관리 및 사용하는 사람들이 효율성을 높여 비용을 절감하고 생산성을 향상시키는 데 어떻게 도움이 되는지에 대해 이야기했습니다. <a href="https://azure.microsoft.com/en-us/blog/introducing-microsoft-azure-sphere-secure-and-power-the-intelligent-edge/" target="_blank">Azure Sphere</a> 및 <a href="https://blogs.microsoft.com/iot/2018/09/24/announcing-azure-digital-twins-create-digital-replicas-of-spaces-and-infrastructure-using-cloud-ai-and-iot" target="_blank">Azure Digital Twins</a>와 같은 제품의 발표를 통해 파트너와 고객은 빌드된 환경을 실시간으로 신속하게 관리하고 개선할 수 있는 새로운 가능성을 탐색할 수 있습니다.</p>
+
+
+  <p>지난 1년&rsquo; 동안 고객은 스마트 공간이 무엇을 할 수 있는지에 대한 비전을 확장하는 것을 보았습니다. 전통적으로 이러한 프로젝트는 인프라 유지 관리, 물 및 전력 사용과 같은 건물 관리의 운영 측면에 중점을 두 있었습니다. 이것은 여전히 IoT 지원 건물의 기본 사용 사례 및 근거이지만 사람들은 스마트 공간의 혁신적인 기능에 대해 점점 더 흥분하고 있습니다. 고객은 분석을 사용하여 사람들이 거주하는 공간을 사용하는 방법을 이해하고 최적화하는 방법을 모색하고 있습니다. 또한&rsquo; 일상적인 생산성에 크게 영향을 미치고 긍정적인 상호 작용을 증가시킬 수 있는 스마트 빌딩 솔루션을 설계해야 합니다.</p>
+
+
+  <p>예를 들어 Steelcase는 <a href="https://blogs.microsoft.com/iot/2017/09/26/steelcase-demonstrates-smart-connected-workplace-new-iot-powered-solutions/" target="_blank">스마트하고 연결된 작업 공간을 만드는</a> 방법을&rsquo; 보여 줍니다. Scott Sadler, Steelcase Smart + Connected Manager가 말했듯이, &ldquo;우리는 기술을 작업 환경에 포함함으로써 사람들이 조직에 어떤 공간이 성공적이고 그 이유를 알릴 수 있도록 하고 있습니다. 우리는 사람들이 일하는 방법과 장소에서 패턴을 측정하고 식별 할 수 있습니다.&rdquo; 이러한 통찰력을 얻는 용이성은 내년에만 증가할 것이며&rsquo;,이 분야가 어디로 향하고 있는지 보고 기뻐합니다. 스마트 공간 이니셔티브가 경기장, 학교, 병원, 은행 등을&mdash; 포괄하기 위해 직장을 넘어 확장됨에 따라 에지 및 클라우드 기술이 더 큰 건설 환경&mdash; 혁신 가능성에 연결됨에 따라 등장할 수밖에 없습니다.&nbsp;</p>
+
+
+  <h2>지능형 에지</h2>
+
+
+  <p>스마트 빌딩과 마찬가지로,&rsquo; 파트너와 고객이 에지 컴퓨팅에 대해 가지고 있는 선견지명이 있는 범위에서 영감을 받아 2019년에 큰 일을 기대합니다. IT 부서는 에지 컴퓨팅을 사용하여 인프라 및 보안 문제를 해결하여 IoT를 현실로 만들고 있습니다. 하드웨어 공급업체는 새로운 기능을 활용하기 위해 디바이스의 인텔리전스를 확장하고 있습니다. 다양하고 활기찬 생태계가 발생하여 가능한 것을&rsquo; 가장자리에 밀어 붙일 것입니다.</p>
+
+
+  <p>IoT 솔루션 비용 절감, 보안 향상, 대기 시간 단축, 안정성 향상, 레거시 디바이스와의 상호 운용성 등 <a href="https://blogs.microsoft.com/iot/2017/09/19/five-ways-edge-computing-will-transform-business" target="_blank">비즈니스를 혁신하는 5가지 방법을</a> 강조했습니다. 이러한 선함을 사용하려면 강력한 기술 기반이 필요하므로 Azure IoT Edge 플랫폼이 업계에서 많은 관심을 끌었습니다. 그 이후 솔루션은 <a href="https://azure.microsoft.com/en-us/services/iot-edge/" target="_blank">일반 공급으로 전환</a>되어 모든 비즈니스가 플랫폼 간 IoT 디바이스에서 로컬로 클라우드 인텔리전스를 제공할 수 있게 되었습니다.</p>
+
+
+  <p>에지 컴퓨팅은 인프라와 IoT 모두에서 심도 있는 성장을 촉진하여 연결된 디바이스에서 데이터 처리, 분석 및 고급 기능을 클라우드에 연결했는지 여부에 관계없이&rsquo; 허용합니다.</p>
+
+
+  <p>이러한 혁신은 다양하고 다양합니다. 일관된 배포 모델을 통해 회사는 모든 플랫폼에서 에지 기능을 코딩 및 테스트하고 원활하게 시작할 수 있습니다. 예를 들어 일부는 클라우드 규모의 기계 학습 엔진을 사용하여 데이터 모델을 학습한 다음, 해당 모델을 에지 디바이스에 있는 그대로 배포하는 것입니다. 다른 사용자는 관련 데이터만 클라우드에 전달되도록 정보를 집계하고 전처리하는 방법으로 에지를 사용하고 있습니다. 에지 컴퓨팅을 사용하면 오랜 시간 동안 오프라인 상태이지만 로컬 데이터를 기반으로 강력한 예측 기능을 제공하는 IoT 솔루션을 빌드할 수도 있습니다. 전 세계의 일상 생활을 개선하기 위해 데이터를 보다 효율적이고 효과적으로 사용할 수 있습니다.&nbsp;</p>
+
+
+  <h2>개방형 표준 및 상호 운용성</h2>
+
+
+  <p>상호 운용성은 특히 기업이 IoT 준비 및 레거시 장비의 혼합으로 연결된 공장을 가능하게 하는 간단하고 포괄적인 솔루션을 찾고 있는 제조 공간에서 화제가 됩니다. <a href="https://blogs.microsoft.com/iot/2018/04/11/why-the-opc-ua-standard-and-whats-next" target="_blank">OPC UA(OPC 통합 아키텍처)에 대한 4월 게시물</a>은 높은 수준의 보안을 유지하면서 제조업체가 표준을 사용하여 개방성과 상호 운용성을 가능하게 하는 방법을 강조했습니다.</p>
+
+
+  <p>사실, 지난 해는 ABB, 로크웰, 슈나이더 일렉트릭이 SIEMENS, SAP,&rdquo; Yokogava, Iconics, Ascolab 및 Microsoft와 함께 OPC 재단 이사회 멤버에 합류하면서 OPC UA의 해로 간주&ldquo;될 수 있습니다.</p>
+
+
+  <p>국가 산업 이니셔티브는 상호 운용성에 대한 헌신을 계속 심화시켰습니다. 독일&rsquo; Industrie 4.0은 표준에 따라 새로운 테스트베드 및 사양을 발표했으며, 중국 2025 이니셔티브는 OPC UA에 유사한 올인원 약속을 했습니다. Weve&rsquo;는 <a href="https://azure.microsoft.com/en-us/blog/automating-industrial-iot-security/" target="_blank">신규 및 업데이트된 제품</a>으로 OPC UA의 세계에 기여했습니다. 불연속 제조는 또한 독일 기계 도구 협회 VDW가 OPC UA를 아키텍처에 통합하는 <a href="https://vdw.de/en/connectivity-initiative-leads-to-first-applications/" target="_blank">개방형 유니버설 기계 도구 인터페이스(umati) 이니셔티브를</a> 발표하면서 상호 운용성 행위에 뛰어들고 있습니다.</p>
+
+
+  <h2>향후 전망</h2>
+
+
+  <p>이 모든 활기찬 활동에서 큰 교훈? IoT는 기존 경계를 넘어 디지털 변환을 위한 촉매제입니다. &rsquo;새로운 가능성을 가능하게 하기 위해 여러 위치에서 데이터와 인사이트를 통합하는 새로운 에코시스템과 솔루션이 등장합니다. 스마트 도시, 차량, 건물, 공간, 에너지 및 더 많은 수렴이 가능해짐에 따라 기회도 커지고 엔드투엔드 관리 효율성 및 보안에 대한 요구도 커&mdash;집니다. 지능형 에지에서 기본 제공 연결, 실시간 성능 및 보안 혁신을 통해 이러한 문제를 해결하기 위해 최선을 다하고 있습니다. <a href="https://azure.microsoft.com/en-us/overview/iot/" target="_blank">Microsoft가 연결된 미래를 구축하는 데 어떻게 도움이 되는지</a> 자세히 알아보세요.</p>

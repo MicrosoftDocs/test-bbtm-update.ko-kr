@@ -1,0 +1,79 @@
+### YamlMime:Yaml
+ms.openlocfilehash: afe9cb597e36020c59b01289653bc347472f6fca
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900768"
+Slug: send-your-azure-alerts-to-itsm-tools-using-action-groups
+Title: 작업 그룹을 사용하여 ITSM 도구에 Azure 경고 보내기
+Summary: 오늘 Azure 작업 그룹에서 새로운 ITSM(IT Service Management) 작업을 발표하게 되어 기쁩니다. 아시다시피 작업 그룹은 Azure 경고에 대해 재사용 가능한 알림 그룹입니다. 사용자는 다음을 수행할 수 있습니다.
+Content: >-
+  <p>Ignite 2017에서는 Azure 작업 그룹의 새로운 ITSM(IT 서비스 관리) 작업을 발표했습니다. 아시다시피 작업 그룹은 Azure 경고에 대해 재사용 가능한 알림 그룹입니다. 사용자는 이메일 또는 SMS 보내기와 같은 함수를 사용하여 작업 그룹을 만들고 웹후크를 호출하고 여러 경고에서 다시 사용할 수 있습니다. 새 ITSM 작업을 사용하면 경고가 발생할 때 연결된 ITSM 도구에서 작업 항목을 만들 수 있습니다.</p>
+
+
+  <h2>Log Analytics의 ITSM 커넥터 솔루션</h2>
+
+
+  <p>이 작업은 Azure Log Analytics의 <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-itsmc-overview" target="_blank">IT 서비스 관리 커넥터 솔루션을</a> 기반으로 합니다. ITSM 커넥터 솔루션은 선택한 ITSM 도구와 양방향 연결을 제공합니다. 현재 솔루션은 공개 미리 보기로 제공되며 System Center Service Manager, ServiceNow, Provance 및 Cherwell과 같은 ITSM 도구와의 연결을 지원합니다. 현재 ITSM 작업을 통해 Azure 경고에 동일한 통합 기능을 제공합니다.</p>
+
+
+  <p>IT 서비스 관리 커넥터를 사용하면 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>Log Analytics 경고가 발생할 때 또는 Log Analytics 로그 레코드에서 수동으로 연결된 ITSM 도구에서 작업 항목(인시던트, 경고 및 이벤트)을 만듭니다.</li>
+   <li>인시던트 및 변경 요청과 같은 지원 센터 데이터와 활동 및 진단 로그, 성능 및 구성 변경과 같은 로그 데이터를 결합하여 인시던트를 신속하게 완화합니다.</li>
+   <li>Azure Log Analytics 플랫폼을 사용하여 인시던트에서 인사이트를 파생합니다.</li>
+  </ul>
+
+
+  <h2>새 ITSM 작업 사용</h2>
+
+
+  <p>ITSM 작업 사용을 시작하려면 <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-itsmc-overview" target="_blank">먼저 Log Analytics에서 IT 서비스 관리 커넥터 솔루션을</a> 설치하고 구성해야 합니다. 솔루션이 구성되면 아래 단계에 따라 ITSM 작업을 사용할 수 있습니다.</p>
+
+
+  <p>1. Azure Portal에서 <strong>모니터</strong>를 클릭합니다.</p>
+
+
+  <p>2. 왼쪽 창에서 <strong>작업 그룹을</strong> 클릭합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e9a776b2-5953-4931-b529-dcf768af0852.png"><img alt="Action groups" border="0" height="159" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5ed0268b-1639-4c54-9049-5f1d4d69fbc5.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="작업 그룹" width="233"></a></p>
+
+
+  <p>3. 작업 그룹에 대한 <strong>이름</strong> 및 <strong>ShortName</strong> 을 제공합니다. 작업 그룹을 만들려는 <strong>리소스 그룹</strong> 및 <strong>구독</strong>을 선택합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/87da02d8-da9f-4148-ab3b-872b50d9c112.png"><img alt="Add action group" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9fb52d8b-3c5a-4c95-b1ad-33aaeadf4bc4.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="작업 그룹 추가" width="316"></a></p>
+
+
+  <p>4.작업 목록의 <strong>작업 유형</strong> 드롭다운에서 <strong>ITSM</strong>을 선택합니다. 해당 작업에 대한 <strong>이름</strong>을 제공하고 <strong>세부 정보 편집</strong>을 클릭합니다.</p>
+
+
+  <p>5. Log Analytics 작업 영역이 있는 <strong>구독</strong> 을 선택합니다. <strong>연결</strong> 선택(예: ITSM 커넥터 이름) 뒤에 작업 영역 이름이 표시됩니다. 예를 들어 &quot;MyITSMMConnector(MyWorkspace)입니다.&quot;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a9ea834-3d77-4da3-8caa-eae6774875ba.png"><img alt="ITSM Ticket" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/237a2234-81d1-400e-abb9-fc5fffea6bb8.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="ITSM 티켓" width="320"></a></p>
+
+
+  <p>6. 드롭다운에서 <strong>작업 항목</strong> 유형을 선택합니다.</p>
+
+
+  <p>7. 기존 템플릿을 사용하거나 ITSM 제품에 필요한 필드를 완료하도록 선택합니다.</p>
+
+
+  <p>8.<strong>확인을 클릭합니다.</strong></p>
+
+
+  <p>Azure 경고 규칙을 만들거나 편집할 때 ITSM 작업이 있는 작업 그룹을 사용합니다. 경고가 트리거되면 ITSM 도구에서 작업 항목이 만들어집니다.</p>
+
+
+  <p><strong>참고:</strong> 현재 활동 로그 경고만 ITSM 작업을 지원합니다. 다른 Azure 경고의 경우 이 작업이 트리거되지만 작업 항목은 생성되지 않습니다.</p>
+
+
+  <p>이 기능은 경고 및 Service Desk 솔루션을 통합하는 데 유용합니다. <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-itsmc-overview" target="_blank">IT 서비스 관리 커넥터 솔루션</a> 및 <a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-action-groups" target="_blank">작업 그룹에</a> 대해 자세히 알아보고 정보를 가져옵니다.</p>
+
+
+  <p>여러분의 의견을 듣고 싶습니다. 질문이나 피드백을 <a href="mailto:azurealertsfeedback@microsoft.com" target="_blank">azurealertsfeedback@microsoft.com</a>보내주세요.&nbsp;</p>

@@ -1,0 +1,147 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 32c1fadb89cdd2657707902a4d8ba1454232ccc3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906541"
+Slug: azure-premium-blob-storage-public-preview
+Title: Azure Premium Blob Storage 공개 미리 보기
+Summary: 오늘 Azure Premium Blob Storage 공개 미리 보기를 발표하게 되어 기쁩니다. Premium 블록 Blob은 기존 핫, 쿨 및 보관 계층을 보완하는 Azure Blob Storage 새로운 성능 계층입니다.
+Content: >-
+  <div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">2019년 3월 25일에 Azure Premium 블록 Blob Storage 일반 공급되었습니다. 자세한 내용은 블로그 게시물을 &ldquo; 참조하세요. <a href="https://azure.microsoft.com/en-us/blog/azure-premium-block-blob-storage-is-now-generally-available/">이제 Azure Premium 블록 Blob Storage 일반 공급됩니다</a>.&rdquo;</div>
+
+
+  <p>오늘 Azure Premium Blob Storage 공개 미리 보기를 발표하게 되어 기쁩니다. Premium Blob Storage 기존 <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers">핫, 쿨 및 보관 계층</a>을 보완하는 Azure Blob Storage 새로운 성능 계층입니다. Premium Blob Storage 트랜잭션 속도가 높은 워크로드에 적합하거나 IoT, 원격 분석, AI 및 대화형 비디오 편집, 웹 콘텐츠, 온라인 트랜잭션 등과 같은 루프에서 사람이 있는 시나리오와 같은 매우 빠른 액세스 시간이 필요합니다.</p>
+
+
+  <p>테스트 결과 평균 및 99번째 백분위수 서버 대기 시간이 핫 액세스 계층보다 훨씬 낮으므로 다양한 개체 크기에서 읽기 및 쓰기 모두에 대해 더 빠르고 일관된 응답 시간을 제공합니다. 짧은 대기 시간을 실현하려면 스토리지 계정과 동일한 Azure 지역의 컴퓨팅 인스턴스에 애플리케이션을 배포해야 합니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/blog/premium-block-blob-storage-a-new-level-of-performance/">blob Storage Premium 새로운 수준의 성능을</a> 참조 &ldquo; 하세요.&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/555fe18d-e5a6-4cf7-a889-3acbc0dd1438.png"><img alt="Graph of Latency comparison of Premium and Standard Blob Storage" border="0" height="288" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/586f1a48-f73c-41db-88af-1fab22a20fc9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="450"></a></p>
+
+
+  <p align="center"><em>그림 1 - Premium 및 표준 Blob Storage 대기 시간 비교</em></p>
+
+
+  <p>Premium Blob Storage 선택한 지역의 Locally-Redundant Storage(LRS), Zone-Redundant Storage(ZRS)에서 사용할 수 있으며, 256KB보다 큰 블록 Blob을 수집할 때 매우 높고 즉각적인 쓰기 처리량을 제공하는 High-Throughput 블록 Blob(HTBB)과 함께 제공됩니다.</p>
+
+
+  <p>블록 Blob 및 추가 Blob을 Premium Blob Storage 저장할 수 있습니다. Premium Blob Storage 사용하려면 구독에서 새 <a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers">&lsquo;블록 Blob&rsquo; Storage 계정을</a> 프로비전하고(자세한 내용은 아래 참조) 기존 <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api">Blob Service REST API</a> 및/또는 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy">AzCopy</a> 또는 <a href="https://azure.microsoft.com/en-us/features/storage-explorer/">Azure Storage Explorer</a> 같은 기존 도구를 사용하여 컨테이너 및 Blob 만들기를 시작합니다.</p>
+
+
+  <h2>가격 책정 및 지역 가용성</h2>
+
+
+  <p>Premium Blob Storage 데이터 스토리지 비용이 더 높지만 일반 핫 계층에 저장된 데이터에 비해 트랜잭션 비용이 낮습니다. 이렇게 하면 비용 효율적이며 트랜잭션 속도가 매우 높은 워크로드의 경우 비용이 적게 들 수 있습니다. <a href="https://azure.microsoft.com/en-us/pricing/details/storage/blobs/">자세한 내용은 가격 책정 페이지</a>&nbsp;와 이 <a href="https://azure.microsoft.com/en-us/blog/reducing-overall-storage-costs-with-azure-premium-blob-storage/" target="_blank">블로그 게시물을</a>&nbsp; 확인하세요.</p>
+
+
+  <p>Premium Blob Storage 공개 미리 보기는 미국 동부, 미국 동부 2, 미국 중부, 미국 서부, 미국 서부 2, 북유럽, 서유럽, 일본 동부,&nbsp; 오스트레일리아 동부, 한국 중부 및 동남 아시아 지역에서 사용할 수 있습니다.</p>
+
+
+  <h2>개체 계층화</h2>
+
+
+  <p>현재 Premium 저장된 데이터는 핫, 쿨 또는 보관 액세스 계층으로 계층화할 수 없습니다. 향후 개체 계층화 지원을 위해 노력하고 있습니다. 데이터를 이동하려면 이 API를 지원하는 새 <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/put-block-from-url">PutBlockFromURL</a> API(<a href="https://github.com/seguler/PutBlockFromURL_sample/blob/master/PutBlockFromURL/Program.cs">샘플 코드</a>) 또는 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10">AzCopy v10</a>을 사용하여 Blob을 동기적으로 복사할 수 있습니다. PutBlockFromURL은 데이터 서버 쪽을 동기적으로 복사합니다. 즉, 호출이 완료되면 데이터 복사가 완료되고 모든 데이터 이동이 Azure Storage 내에서 발생합니다.&nbsp;</p>
+
+
+  <h2>스토리지 계정을 만드는 방법(Azure Portal)</h2>
+
+
+  <p>Azure Portal을 사용하여 블록 Blob Storage 계정을 만들려면 스토리지 계정&rsquo; 만들기 블레이드로 &lsquo;이동하여 입력합니다.</p>
+
+
+  <ul>
+      <li><strong>위치에서</strong> 지원되는 지역 중 하나를 선택합니다.</li>
+      <li><strong>성능</strong>에서 Premium 선택</li>
+      <li><strong>계정 종류</strong>에서 블록 Blob Storage 선택(미리 보기)</li>
+  </ul>
+
+
+  <p>예는 다음과 같습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3293135e-4d48-4182-93de-ff820248a433.png"><img alt="Screenshot of creating a storage account" border="0" height="682" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb3fbcfa-78e5-4562-ba8d-90daa35aa062.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p>계정을 만든 후에는 SAS 토크 생성, 메트릭 검토 등을 포함하여 Premium Blob Storage 계정을 관리할 수 있습니다.</p>
+
+
+  <h2>스토리지 계정을 만드는 방법(PowerShell)</h2>
+
+
+  <p>블록 Blob 계정을 만들려면 먼저 PowerShell AzureRm을 설치해야 합니다. 미리 보기 모듈을 Storage.</p>
+
+
+  <p>1단계: 최신 버전의 PowerShellGet이 설치되어 있는지 확인합니다.</p>
+
+
+  <pre>
+
+  Install-Module PowerShellGet &ndash;Repository PSGallery &ndash;Force</pre>
+
+
+  <p>2단계:&nbsp; 새 PowerShell 콘솔을 열고 AzureRm.Storage 모듈을 설치합니다.</p>
+
+
+  <pre>
+
+  Install-Module Az.Storage &ndash;Repository PSGallery -RequiredVersion 1.1.1-preview &ndash;AllowPrerelease &ndash;AllowClobber &ndash;Force</pre>
+
+
+  <p>3단계: 새 PowerShell 콘솔을 열고 Azure 계정으로 로그인합니다.</p>
+
+
+  <pre>
+
+  Connect-AzAccount</pre>
+
+
+  <p>PowerShell 미리 보기 모듈이 설치되면 블록 Blob Storage 계정을 만들 수 있습니다.</p>
+
+
+  <pre>
+
+  New-AzStorageAccount -ResourceGroupName &lt;resource group&gt; -Name &lt;accountname&gt; -Location &lt;region&gt; -Kind &quot;BlockBlobStorage&quot; -SkuName &quot;Premium_LRS&quot;</pre>
+
+
+  <h2>스토리지 계정을 만드는 방법(Azure CLI)</h2>
+
+
+  <p>블록 Blob 계정을 만들려면 먼저 <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest">Azure CLI</a> v를 설치해야 합니다. 2.0.46 이상</p>
+
+
+  <p>1단계: 구독에 로그인</p>
+
+
+  <pre>
+
+  az login</pre>
+
+
+  <p>2단계: 스토리지 미리 보기 확장 추가</p>
+
+
+  <pre>
+
+  az extension add -n storage-preview</pre>
+
+
+  <p>3단계:&nbsp; 스토리지 계정 만들기</p>
+
+
+  <pre>
+
+  az storage account create --location &lt;location&gt; --name &lt;accountname&gt; --resource-group &lt;resource-group&gt; --kind &quot;BlockBlobStorage&quot; --sku &quot;Premium_LRS&quot;</pre>
+
+
+  <h2>피드백</h2>
+
+
+  <p>의견을 보내 주세요.<a href="mailto:premiumblobfeedback@microsoft.com">premiumblobfeedback@microsoft.com</a></p>
+
+
+  <h2>결론</h2>
+
+
+  <p>Premium Blob Storage 사용하여 낮고 일관된 대기 시간으로 Azure Blob Storage 제공할 수 있게 되어 매우 기쁘게 생각합니다. Blob Storage 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">제품 페이지를</a> 방문하세요. 또한, 더 많은 업데이트를 위해 내 <a href="https://www.twitter.com/ClausJor">트위터를</a> 따라 자유롭게.</p>

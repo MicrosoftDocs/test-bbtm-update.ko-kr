@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 604c4c8d4b485a839a2f71f2374d29836c9495d0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900550"
+Slug: sosp-paper-windows-azure-storage-a-highly-available-cloud-storage-service-with-strong-consistency
+Title: 'SOSP 문서 - Windows Azure Storage: 강력한 일관성을 갖춘 고가용성 클라우드 Storage 서비스'
+Summary: 우리는 최근에 운영 체제 원칙 (SOSP)에 제 23 ACM 심포지엄에서 Windows Azure Storage 내부 세부 사항을 설명하는 논문을 발표했다.  이 문서는 여기에서 찾을 수 있습니다. 컨퍼런스...
+Content: <p>우리는 최근에 운영 체제 원칙 (SOSP)에 제 23 ACM 심포지엄에서 Windows Azure Storage 내부 세부 사항을 설명하는 논문을 발표했다.</p>  <p>이 문서는 여기에서 찾을 수 <a href="https://sigops.org/sosp/sosp11/current/2011-Cascais/printable/11-calder.pdf">있습니다</a>. 컨퍼런스는 또한 <a href="https://www.youtube.com/watch?v=QnYdbQO0yj4">여기에</a> 말씀의 비디오를 게시. 대화용 슬라이드<a href="https://sigops.org/sosp/sosp11/current/2011-Cascais/11-calder.pptx">를 사용할 수</a> 있습니다&nbsp;.</p>  <p>이 문서에서는 스토리지 스탬프를 통해 데이터 센터 내부 및 전체에서 용량을 프로비전 및 스케일 아웃하는 방법과 스토리지 위치 서비스를 사용하여 스탬프 및 스토리지 계정을 관리하는 방법을 설명합니다. 그런 다음 스탬프(프런트 엔드 계층, 파티션 계층 및 스트림 계층) 내에서 아키텍처의 세 가지 계층에 대한 세부 정보, 이러한 계층이 있는 이유, 해당 기능, 작동 방식 및 두 복제 엔진(스탬프 내 및 스탬프 간)에 대해 자세히 설명합니다. 또한 이 문서에서는 이 대규모 분산 시스템을 빌드하여 배운 교훈뿐만 아니라 우리가 내린 몇 가지 설계 결정/절충안이 요약되어 있습니다.</p>  <p>Windows Azure Storage 주요 디자인 목표는 아키텍처에 대해 예상되는 네트워크 분할 유형에 대해 일관성, 가용성 및 CAP(파티션 허용 오차)(모두 2가 아닌 모두 3개)를 제공하는 것입니다. 이는 노드 수준 및 랙 수준 네트워크 분할과 같이 스탬프 내에서 발생하는 일반적인 유형의 분할/실패에 대한 파티션 허용 오차가 되는 동시에 강력한 일관성과 고가용성을 제공하도록 파티션 계층 및 스트림 계층을 공동 디자인하여 수행됩니다.</p>  <p>이 짧은 컨퍼런스 강연에서는 파티션 계층이 스토리지 스탬프당 100억 개의 개체로 확장 가능한 자동 부하 분산 개체 인덱스를 제공하는 방법, 스트림 계층이 스탬프 내 복제를 수행하고 오류를 처리하는 방법, 두 계층이 일관성을 제공하도록 공동 설계된 방법,  노드 및 랙 수준 네트워크 분할 및 실패에 대한 가용성 및 파티션 내성을 제공합니다.</p>  <p>브래드 칼더</p>

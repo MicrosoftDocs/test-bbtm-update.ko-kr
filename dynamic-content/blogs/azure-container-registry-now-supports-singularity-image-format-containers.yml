@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 773a42ca7dfaceee3e515c802292bac6c57db502
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907343"
+Slug: azure-container-registry-now-supports-singularity-image-format-containers
+Title: 이제 Azure Container Registry에서 단수 이미지 형식 컨테이너를 지원합니다.
+Summary: Azure와 Sylabs는 오늘 OCI(Open Container Initiative) 배포 사양을 지원하는 레지스트리에 특이성 컨테이너 이미지를 저장할 수 있는 새로운 협업을 발표했습니다. 단수 버전 3.0은 새 보안 SIF(단수 이미지 형식)를 정의합니다.
+Content: >-
+  <p>Azure와 <a href="https://www.sylabs.io/" target="_blank">Sylabs</a> 는 오늘 <a href="https://github.com/opencontainers/distribution-spec/" target="_blank">OCI(Open Container Initiative) 배포 사양</a>을 지원하는 레지스트리에 특이성 컨테이너 이미지를 저장할 수 있는 새로운 협업을 발표했습니다. 단수 버전 3.0은 새 <a href="https://www.sylabs.io/2018/03/sif-containing-your-containers/" target="_blank">보안 SIF(단수 이미지 형식)</a>를 정의합니다.</p>
+
+
+  <p>Azure Container Registry는 <a href="https://github.com/deislabs/oras/" target="_blank">OCI Registry as Storage(ORAS)</a> 프로젝트를 일반적인 라이브러리로 사용하여 다양한 아티팩트 형식을 저장할 수 있도록 하여 Helm, CNAB 및 기타 클라우드 네이티브 아티팩트 저장을 OCI 배포 기반 레지스트리<a href="https://stevelasker.blog/2019/01/25/cloud-native-artifact-stores-evolve-from-container-registries/" target="_blank">에 저장하도록</a> 지원합니다. 동일한 공통 라이브러리를 활용하여 이제 단일성 이미지 형식 컨테이너 이미지를 Azure Container Registry 및 기타 OCI 배포 기반 레지스트리에 저장할 수 있습니다.</p>
+
+
+  <p>&ldquo;<em>OCI(Open Containers Initiative)에서 나오는 표준을 준수하는 것은 특이성의 최신 릴리스 중 일부에서 강조된 문제였으며</em>,&rdquo; 특이성 설립자이자 Sylabs CEO 그레고리 커처(Gregory Kurtzer)는 말했습니다. &ldquo;<em>사실, 특이성은 OCI가 옹호하는 이미지 및 런타임 사양을 모두 준수합니다. 그러나 이러한 표준의 채택을 실제로 추진하려면 컨테이너 배포 문제도 해결해야 합니다. 다행히 <a href="https://github.com/deislabs/oras/" target="_blank">ORAS</a> 는 이러한 상당한 격차를 해결하고 광범위한 엔터프라이즈 채택에 대한 장벽을 크게 낮춥니다. Singularity &lsquo;가 ORAS를 인식&rsquo;할 수 있도록 Azure와 지속적으로 협업하게 되어 기쁩니다. 초기 노력을 통해 이제 SIF 컨테이너 이미지를 Azure Container Registry 및 기타 OCI 배포 기반 레지스트리에 저장하고 검색할 수 있습니다. Azure Container Registry에서 표준 규격 컨테이너를 활용하려는 경우 특이성을 통한 ORAS에 대한 지원은 상당한 발전을 나타냅니다</em>.&rdquo;</p>
+
+
+  <p>Sylabs 및 Singularity 커뮤니티는 항상 상호 운용성에 초점을 맞추고 있으며, 이 새로운 통합은 컨테이너 커뮤니티를 위한 보다 광범위한 솔루션 집합을 만들기 위한 개념을 확장합니다. Azure Container Registry 또는 기타 OCI 배포 기반 레지스트리를 이미 사용하는 고객의 경우 이 새로운 협업을 통해 워크플로에서 SIF 컨테이너를 채택하는 통합 경로를 사용할 수 있습니다.</p>
+
+
+  <p>Sylabs와 공동으로 수행된 작업을 통해 고객은 다른 SIF 배포 라이브러리를 실행하고 유지 관리하지 않고도 Singularity를 사용하여 <a href="https://aka.ms/acr/singularity" target="_blank">Azure Container Registry</a> 및 기타 OCI 불만 레지스트리에 대한 투자를 활용할 수 있습니다.</p>
+
+
+  <p>GitHub OCI 규격 레지스트리를 &ldquo;<a href="https://aka.ms/acr/artifacts" target="_blank">아티팩트 레지스트리</a>&rdquo;로 사용하여 방문하여 자세히 알아보세요.</p>

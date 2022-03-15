@@ -1,0 +1,137 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b88ee6c671c16f097b1b5f6601fe20044f3f4b61
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900584"
+Slug: soap-pass-through
+Title: SOAP 통과
+Summary: 많은 고객이 AZURE API Management를 사용하여 REST/HTTP API에 대해 허용하는 것과 동일한 방식으로 SOAP API에 대한 프록시를 만들 수 있는 기능을 요청하여 개발자 포털 통합, 분석, 정책 등을 지원합니다.
+Content: >-
+  <p>많은 고객이 AZURE API Management를 사용하여 REST/HTTP API에 대해 허용하는 것과 동일한 방식으로 SOAP API에 대한 프록시를 만들 수 있는 기능을 요청하여 개발자 포털 통합, 분석, 정책 등을 지원합니다. 이 문서에서는 SOAP API를 설정하고 새 API의 작동 방식을 보여 줍니다.</p>
+
+
+  <p>&#39;시작하자! 가져올 WSDL 파일이 필요합니다. SOAP 서비스는 Azure API Management의 REST 서비스와 같이 처음부터 만들 수 없습니다(약간 너무 복잡함). 사용하려는 SOAP 서비스의 WSDL URL을 검색하거나 예제 <a href="https://fazioapisoap.azurewebsites.net/FazioService.svc?singleWsdl">Orders SOAP 서비스를</a> 사용합니다. WSDL을 지원하는 방법을 알려 줄 몇 가지 사항은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>WS-I 기본 프로필 1.1, SOAP 1.1, WSDL1.1 및 SOAP 1.2를 사용하여 정의된 SOAP 서비스를 지원합니다.</li>
+   <li>현재 wsdl:import 요소 또는 여러 부분이 있는 메시지를 포함하는 WSDL은 지원되지 않습니다.</li>
+  </ul>
+
+
+  <p>게시자 포털에서 API 메뉴로 이동하고 가져오기 API&quot;를 선택합니다&quot;. 표시되는 화면에서 WADL, Swagger 또는 WSDL 중에서 가져오기 형식으로 선택할 수 있습니다.</p>
+
+
+  <p>WSDL을 선택한 다음 링크를 붙여넣거나 WSDL 파일로 이동합니다. API에 URL 접미사(예: &quot;주문&quot;)를 제공하고 원하는 경우 제품에 추가합니다(개발자 포털에서 테스트할 수 있도록 제품에 예제를 추가합니다). &#39;저장&#39; 선택합니다.</p>
+
+
+  <p>데모에 표시될 수 있고 여기에 표시되는 다음 화면은 WSDL 파일에 여러 서비스 엔드포인트(&quot;포트 형식&quot; 또는 &quot;인터페이스&quot;)가 정의되어 있을 때 발생하는 화면입니다. SOAP API를 다른 API와 비슷한 방식으로 처리하려면 해당 API 내에 정의된 인터페이스 중 하나만 가져와야 합니다(다른 인터페이스는 별도의 API로 가져올 수 있음). 계속하려면 FazioService::basic을 선택합니다.</p>
+
+
+  <p>이제 API Management에서 SOAP API를 만듭니다. 만들어지면 SOAP API임을 나타내는 아이콘이 있다는 점을 제외하고 일반 API 대시보드가 표시됩니다. 개발자 포털로 이동하면 비슷한 아이콘이 표시됩니다.</p>
+
+
+  <p>개발자 포털에서 Orders API를 클릭하면 생성된 작업 및 설명서를 볼 수 있습니다. SOAP API에 정의된 모든 SOAP 작업은 REST API의 Operations처럼 처리됩니다. 각 작업에 대한 스키마 및 예제 SOAP 메시지를 볼 수 있어야 합니다. REST API와 마찬가지로 API를 테스트할 수도 있습니다. &quot;GetOpenOrders&quot;를 클릭하고 사용해 보기&quot; 단추를 누르면 &quot;예제 요청이 표시됩니다. GetOpenOrders의 경우 고객 번호(커스트&quot; 태그 사이&quot;)&quot;를 1001&quot;로 변경하여 예제 응답을 검색합니다.<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/475d4317-0730-4933-a23f-040e6bb6b024.png"><img alt="clip_image002" border="0" height="352" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ead4e290-ff2c-43df-b71b-b0e7287e033e.png" style="display: inline; background-image: none;" title="clip_image002" width="1251"></a></p>
+
+
+  <p>마지막으로 Publisher Portal로 돌아가 분석 탭을 살펴봅니다. GetOpenOrders에 방금 수행한 호출을 볼 수 있어야 합니다. Azure API Management의 SOAP API에 대한 분석은 REST API와 동일한 방식으로 작동합니다.</p>
+
+
+  <p>SOAP 작업에 대한 몇 가지 빠른 정보입니다. 첫째, 이제 정책 식에서 SOAP 본문에 액세스하는 기능을 제공합니다.</p>
+
+
+  <pre>
+
+  &lt;policies&gt;
+
+
+  &lt;inbound&gt;
+
+
+  &lt;send-request mode=&quot;copy&quot; response-variable-name=&quot;Request&quot; timeout=&quot;5&quot; ignore-error=&quot;false&quot;&gt;
+
+
+  &lt;set-url&gt;https://myservice.test/test&lt;/set-url&gt;
+
+
+  &lt;set-method&gt;POST&lt;/set-method&gt;
+
+
+  &lt;set-body&gt;@(context.Request.Body.AsSoap(true).Body.Contents.ToString())&lt;/set-body&gt;
+
+
+  &lt;/send-request&gt;
+
+
+  &lt;base /&gt;
+
+
+  &lt;/inbound&gt;
+
+
+  &lt;backend&gt;
+
+
+  &lt;base /&gt;
+
+
+  &lt;/backend&gt;
+
+
+  &lt;outbound&gt;
+
+
+  &lt;base /&gt;
+
+
+  &lt;/outbound&gt;
+
+
+  &lt;/policies&gt;</pre>
+
+
+  <p>또한 관리 API를 사용하여 게시자 포털이 아닌 WSDL을 업로드할 수도 있습니다.</p>
+
+
+  <p>서비스 및 엔드포인트 이름을 지정하지 않고 요청:</p>
+
+
+  <p>https://myservice.management.current.int-azure-api.net/apis/soapapi?import=true&amp;p ath=soapapiapi-version&amp;=2014-02-14-preview</p>
+
+
+  <p>HTTP 동사: Put</p>
+
+
+  <p>Headers:</p>
+
+
+  <p>Content-Type application/wsdl+xml</p>
+
+
+  <p>관리 API에 대한 권한 부여 &lt;SAS 토큰&gt;</p>
+
+
+  <p>본문: WSDL의 콘텐츠</p>
+
+
+  <p>서비스 및 엔드포인트 이름을 지정하는 요청:</p>
+
+
+  <p>https://myservice.management.current.int-azure-api.net/apis/soapapi?import=true&amp;p ath=soapapiwsdlServiceName&amp;=MyApiwsdlEndpointName&amp;=MySoapapi-version&amp;=2014-02-14-preview</p>
+
+
+  <p>HTTP 동사: Put</p>
+
+
+  <p>Headers:</p>
+
+
+  <p>Content-Type application/wsdl+xml</p>
+
+
+  <p>관리 API에 대한 권한 부여 &lt;SAS 토큰&gt;</p>
+
+
+  <p>본문: WSDL의 콘텐츠</p>

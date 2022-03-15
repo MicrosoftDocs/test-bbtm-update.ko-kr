@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 21bbcc08b1fec2167d0bae27d21f3c5dc08d3879
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899986"
+Slug: azure-hdinsight-makes-cluster-customization-generally-available-and-provide-more-templates-for-hadoop-projects-including-spark-r-giraph-and-solr
+Title: Azure HDInsight는 클러스터 사용자 지정을 일반 공급하고 Spark, R, Giraph 및 Solr을 비롯한 Hadoop 프로젝트에 더 많은 템플릿을 제공합니다.
+Summary: 오늘 스크립트 작업 기능이 일반 공급되고 사용자가 클러스터를 통해 사용자 지정을 수행할 수 있도록 완벽하게 지원된다는 사실을 발표하게 되어 기쁩니다.
+Content: >-
+  11월에는 Apache Hadoop 에코시스템에서 사용할 수 있는 프로젝트로 HDInsight 클러스터를 사용자 지정할 수 있는 기능을 제공하는 스크립트 작업의 <a href="https://azure.microsoft.com/blog/2014/11/17/azure-hdinsight-clusters-can-now-be-customized-to-run-a-variety-of-hadoop-projects-including-spark-and-r/">공개 미리 보기를 발표</a> 했습니다. 새 Hadoop 프로젝트를 사용할 수 있게 되면 추가할 수 있습니다. 이러한 추가 사항은 강력하고 유연한 방식으로 Hadoop 클러스터를 사용자 지정할 수 있는 PowerShell의 스크립트를 통해 이루어집니다. 이 사용자 지정 옵션은 Hadoop, HBase 및 Storm을 비롯한 모든 유형의 HDInsight 클러스터에서 사용할 수 있습니다.
+
+
+  오늘 스크립트 작업 기능이 일반 공급되고 사용자가 클러스터를 통해 사용자 지정을 수행할 수 있도록 완벽하게 지원된다는 사실을 발표하게 되어 기쁩니다. 이제 사용자는 GA를 사용하여 사용자 인터페이스를 통해 이러한 사용자 지정을 수행할 수 있습니다(PowerShell에서 수행하는 작업 외에도). 사용자 인터페이스에서 고객은 스크립트의 URI, 실행해야 하는 노드 유형 및 스크립트의 매개 변수를 지정할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/12/18/image.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="이미지" alt="image" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image_thumb.png" width="642" height="403" border="0" /></a>
+
+
+  또한 Microsoft에는 공개 미리 보기의 <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-spark-install/">Spark</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-r-scripts/">R</a> 외에도 <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-giraph-install/">Giraph</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-solr-install/">Solr</a>에 대한 샘플 설명서가 포함되어 있습니다. <a href="https://giraph.apache.org/">Giraph</a> 는 Hadoop 기반 그래프 처리 시스템입니다. 그래프는 엔터티 간의 관계를 모델링하는 데 사용되는 데이터 구조입니다. 예를 들어 웹 그래프는 웹 페이지를 엔터티로 구성하고 관계를 매핑하는 기본 하이퍼링크 구조로 구성됩니다. Solr은 많은 잘 알려진 웹 사이트 및 애플리케이션을 지원하는 인기 있는 오픈 소스 검색 플랫폼입니다. HDInsight에 통합하면 고객은 Hadoop의 HDFS에 저장된 데이터를 검색하여 테이블 형식, 텍스트, 지리적 위치 또는 센서와 같은 다양한 데이터 형식에 대한 전체 텍스트 검색 및 인덱싱을 사용할 수 있습니다.
+
+
+  클러스터 사용자 지정을 사용하면 HDInsight 사용자가 Hadoop 에코시스템에서 사용할 수 있는 다양한 구성 요소 및 런타임을 배포하고 실험할 수 있습니다. 이제 고객이 이러한 새로운 가능성을 조사할 수 있게 되어 기쁩니다. 아래 리소스를 사용하여 이 작업을 수행하는 방법에 대해 자세히 알아보세요.
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-customize-cluster/">스크립트 작업을 사용하여 HDInsight 클러스터 사용자 지정</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-script-actions/">HDInsight를 사용한 스크립트 작업 개발</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-spark-install/">HDInsight 클러스터에서 Spark 설치 및 사용</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-r-scripts/">HDInsight Hadoop 클러스터에 R 설치 및 사용</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-giraph-install/">HDInsight 클러스터에서 Giraph 설치 및 사용</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-solr-install/">HDInsight 클러스터에서 Solr 설치 및 사용</a></li>
+  </ul>

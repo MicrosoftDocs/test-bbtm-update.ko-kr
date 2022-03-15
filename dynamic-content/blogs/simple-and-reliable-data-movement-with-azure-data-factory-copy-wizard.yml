@@ -1,0 +1,81 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8833943c9e68d3e9e0c463fa62f79fb3bdc22606
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900675"
+Slug: simple-and-reliable-data-movement-with-azure-data-factory-copy-wizard
+Title: Azure Data Factory 복사 마법사를 사용하여 간단하고 안정적인 데이터 이동
+Summary: ADF(Azure Data Factory) 복사 마법사의 공개 미리 보기를 발표하게 되어 기쁩니다.
+Content: >-
+  <p>대화형 및 &ldquo;코드 없는&rdquo; 데이터 이동 환경을 위한 ADF(Azure Data Factory) 복사 마법사의 미리 보기를 발표하게 되어 기쁩니다. 데이터는 분석을 위한 원료이며, 우리의 목표는 다양한 데이터(구조, 구조화되지 않은, 작음, 큰 등)를 마찰이 없고 성능이 뛰어나며 신뢰할 수 있는 방식으로 Azure 간에 이동할 수 있도록 하는 것입니다. 이 릴리스를 통해 고객은 간단하고 코드 없는 마법사를 사용하여 Azure BlobStorage, Azure SQL, Azure SQL DW, Azure Data Lake 및 온-프레미스 SQL Server 간에 데이터를 쉽게 이동할 수 있습니다.</p>
+
+
+  <p>이것은 첫 번째 이정표이며 앞으로 몇 주 동안 이 환경을 발전시키고 현재 ADF에서 지원하는 모든 기존 20개 이상의 커넥터를 사용하도록 설정할 예정입니다. 두 데이터 과학자가 실험 및 데이터 개발자를 위해 샘플 데이터를 Azure에 업로드하여 엔터프라이즈&rsquo; Data Lake 또는 Data Warehouse 로드 또는 대규모 클라우드에서 예측 분석 수행과 같은 비즈니스 중요 작업에 대한 데이터 이동을 오케스트레이션하기 위한 요구 사항을 해결하는 것을 목표로 하고 있습니다. 이 릴리스에서 사용하도록 설정한 몇 가지 흥미로운 기능을 확인하세요.</p>
+
+
+  <p>복사 마법사를 사용하여 온-프레미스 SQL Server Azure SQL Data Warehouse로 데이터를 이동하는 데이터 이동 파이프라인을 신속하게 설정하는 방법에 대한 빠른 예제를 참조하세요.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="315" src="https://channel9.msdn.com/Blogs/Windows-Azure/Azure-Data-Factory-code-free-copy-wizard/player" width="560"></iframe></p>
+
+
+  <h2>데이터를 복사할 수 있는 직관적이고 원활한 마법사</h2>
+
+
+  <p>다음 세 가지 간단한 단계를 통해 원본에서 대상으로 몇 분 안에 데이터를 이동합니다.</p>
+
+
+  <ol>
+   <li>원본 선택</li>
+   <li>대상 선택</li>
+   <li>설정 구성</li>
+  </ol>
+
+
+  <h2><font color="#000000">풍부한 데이터 탐색 및 스키마 매핑</font></h2>
+
+
+  <p>풍부한 시각적 데이터 저장소 탐색, 간단한 변환, 데이터 미리 보기, 스키마 매핑 및 직관적인 복사 설정을 사용하면 몇 분 안에 간단하고 복잡한 데이터 이동 작업을 만들 수 있습니다. 기능은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>파일, 폴더 및 관계형 테이블 찾아보기</li>
+   <li>데이터 미리 보기, 스키마 매핑 및 간단한 변환 수행</li>
+   <li>원본에서 대상으로 열 매핑</li>
+   <li>식 유효성 검사: 사용자 지정 쿼리에서 ADF 활동 창 시스템 변수를 활용하고 배포하기 전에 유효성을 검사합니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/data-factory-functions-variables/#data-factory-system-variables" target="_blank">여기에서</a> ADF 시스템 변수에 대해 자세히 알아보고 아래 예제를 참조하세요.</li>
+  </ul>
+
+
+  <p><img alt="clip_image001[13]" border="0" height="446" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/603f2f28-2d71-492e-9446-0da3d25f928b.jpg" style="border-width: 0px; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="clip_image001[13]" width="610"></p>
+
+
+  <h2>다양한 데이터 및 개체 유형에 따라 규모를 조정할 수 있는 환경</h2>
+
+
+  <p>이 환경은 처음부터 빅 데이터를 염두에 두고 설계되었습니다. 수백 개의 폴더, 파일 또는 테이블을 이동하는 것은 간단하고 원활하게 작성할 수 있습니다.</p>
+
+
+  <p><img alt="clip_image001[15]" border="0" height="439" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b67ce542-3f7b-4ea2-9e1d-b75c9d7fb447.jpg" style="border-width: 0px; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="clip_image001[15]" width="610"></p>
+
+
+  <h2>다양한 일정 옵션</h2>
+
+
+  <p>일회성 복사 작업과 예약된 복사 작업 모두에 대한 기본 지원입니다. 이러한 두 옵션은 온-프레미스, 클라우드 및 로컬 데스크톱 복사본에서 커넥터의 폭에 사용할 수 있습니다. 일회성 복사를 사용하면 원본에서 대상으로 한 번만 데이터를 이동할 수 있으며 모든 크기 및 지원되는 형식의 데이터에 적용됩니다. 예약된 복사본을 사용하면 지정된 되풀이에서 데이터를 복사할 수 있습니다. 사용자는 다양한 설정(예: 재시도, 시간 제한, 경고 등)을 활용하여 예약된 복사본을 구성할 수 있습니다.</p>
+
+
+  <h2>지금 사용해 보기</h2>
+
+
+  <p>새로 만들거나 기존 데이터 팩터리를 사용하여 Azure Portal의 ADF 요약 블레이드에서 복사 마법사를 시작합니다. 그런 다음 요약 블레이드에서 &ldquo;데이터&rdquo; 복사 타일을 클릭하여 앱을 시작합니다.</p>
+
+
+  <p><img alt="clip_image001[19]" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2f5c7b37-bab2-41df-8f1c-4a88f132e38e.jpg" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="clip_image001[19]" width="343"></p>
+
+
+  <p>복사 마법사 사용에 대한 단계별 <a href="https://azure.microsoft.com/en-us/documentation/articles/data-factory-copy-data-wizard-tutorial/" target="_blank">자습서</a> 에 대한 설명서를 확인하세요.</p>
+
+
+  <p>모든 기존 및 향후 커넥터에 대해 이 환경을 발전시키고 개선하기 위해 지속적으로 노력하고 있습니다. <a href="https://feedback.azure.com/forums/270578-azure-data-factory">Azure Data Factory 피드백 포럼</a>을 통해 사용해 보고 피드백을 제공하세요.</p>

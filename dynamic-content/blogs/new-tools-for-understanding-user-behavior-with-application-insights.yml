@@ -1,0 +1,97 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1382836adf330163d996193ef4fc7e78833e11dc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906410"
+Slug: new-tools-for-understanding-user-behavior-with-application-insights
+Title: Application Insights 사용하여 사용자 동작을 이해하기 위한 새로운 도구
+Summary: 애플리케이션 Insights 개발 팀이 고객이 웹앱을 사용하는 방법을 더 잘 이해할 수 있도록 하는 새로운 도구가 있습니다. 이러한 도구는 현재 애플리케이션 Insights 미리 보기로 제공됩니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/services/application-insights/">애플리케이션 Insights</a> 개발 팀이 고객이 웹앱을 사용하는 방법을 더 잘 이해할 수 있도록 하는 새로운 도구가 있습니다. 이러한 도구는 현재 Azure Portal의 애플리케이션 Insights 미리 보기로 제공됩니다.</p>
+
+
+  <p>앱의 성능, 가용성 및 안정성을 모니터링하는 것 외에도 애플리케이션 Insights 이제 팀에 도움이 될 수 있습니다.</p>
+
+
+  <ul>
+   <li>보존 및 활성 사용자 수와 같은 애플리케이션과 관련된 비즈니스 메트릭을 추적합니다.</li>
+   <li>새 버전의 앱, 특정 브라우저 또는 특정 국가에서의 사용량 증가 또는 감소를 조사합니다.</li>
+   <li>현재 사용자 동작에 대한 인사이트를 사용하여 새 페이지와 기능을 더 잘 디자인할 수 있습니다.</li>
+   <li>거의 사용되지 않는 레거시 시스템에서 안전하게 제거될 수 있는 페이지와 기능을 식별합니다.</li>
+   <li>고객 또는 다른 사용자에게 미치는 영향을 보여 줌으로써 조직 내에서 앱의 비즈니스 가치를 보여 줍니다.</li>
+  </ul>
+
+
+  <h2>채택 및 참여 측정</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/99b47b98-8efe-4898-bed2-522ca9196592.png"><img alt="Build2017Users" border="0" height="388" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9254b971-b137-4dec-999d-7260c6eb6dce.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Build2017Users" width="694"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>새 사용자, 세션 및 이벤트 도구를 사용하면 다음과 같은 질문에 쉽게 대답할 수 있습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <ul>
+   <li>팀에서 활성 사용을 고려하는 &ldquo;일부 이벤트 집합에 대해 앱에 일반적으로 있는 일일 활성 사용자는 몇 명입니까&rdquo;?</li>
+   <li>얼마나 많은 사용자가 앱의 새로운 기능을 시도하나요?</li>
+   <li>사이트의 각 페이지에 가장 많은 트래픽을 가져오는 국가, 브라우저 및 운영 체제는 무엇인가요?</li>
+   <li>평균 사용자가 특정 기능과 상호 작용하는 데 소비하는 세션은 몇 개입니까?</li>
+   <li>팀이 설정한 다른 A/B 실험 그룹으로 분할된 앱의 특정 페이지를 몇 번이나 볼 수 있나요?</li>
+  </ul>
+
+
+  <p>사용자에 대한 흥미로운 인사이트를 찾으면 다른 팀과 공유할 수 있도록 보고서로 저장할 수 있습니다. 동일한 애플리케이션 Insights 리소스에 액세스할 수 있는 사용자는 도구의 저장된 보고서 섹션에 표시됩니다.</p>
+
+
+  <p>사용량 조사&rsquo; 중에 자주 분석하려는 공통 특성을&rsquo; 가진 사용자 그룹을 검색합니다. 새 사용자 그룹 도구를 사용하면 몇 번의 클릭으로 이러한 그룹을 쉽게 만들고, 이름을 지정하고, 저장할 수 있습니다. 그런 다음 사용자, 세션 및 이벤트 도구 &ldquo;에서 이러한 사용자 그룹을 사용하여 20달러 이상의 항목을 구매한&rsquo; 사용자가 내 앱의 특정 기능과 상호 작용하는 방법 및 해당 동작을 내 앱의 모든 사용자와 어떻게 비교하나요?&rdquo;</p>
+
+
+  <p>이러한 새 도구를 사용하면 Application Insights 기존 사용 블레이드가 더 이상 사용되지 않습니다. 동일한 모든 정보는 사용자 도구에 기본적으로 저장되는 개요 보고서를 확인하세요.</p>
+
+
+  <p><a href="https://go.microsoft.com/fwlink/?linkid=846145">사용자, 세션 및 이벤트 도구</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <h2>고객 보존 추적</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5526b683-5d53-4a7f-93a6-cd573e600ab5.png"><img alt="UsageRetentionBuild2017" border="0" height="398" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fdd57aa7-b68e-4b77-a4dd-542fe9c5d40a.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="UsageRetentionBuild2017" width="713"></a></p>
+
+
+  <p>종종 앱 사용을 늘리는 가장 빠른 방법은 새 고객을 확보하는 것보다 기존 고객을 더 잘 유지하는 것입니다. 한 번의 클릭으로 새 보존 도구는 특정 일 또는 주에 기능을 사용한 사용자가 이후 며칠 또는 몇 주 동안 기능을 사용하기 위해 돌아온 수를 보여줍니다.</p>
+
+
+  <p>이 기능은 특히 새로운 기능, 콘텐츠 또는 마케팅의 효과를 이해하여 보존을 늘리는 데 유용합니다. 팀은 새로운 작업이 수행되기 전과 후에 사용자의 코호트를 비교하여 무엇이 작동하고 무엇을 하지 않는지&rsquo; 학습한 다음, 반복하여 진전을 이룰 수 있습니다.</p>
+
+
+  <p><a href="https://go.microsoft.com/fwlink/?linkid=846144">보존 도구</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>사용자, 세션, 이벤트, 보존 및 사용자 그룹 도구는 Azure Portal의 각 애플리케이션 Insights 리소스의 리소스 메뉴에서 사용할 수 있습니다.</p>
+
+
+  <p>이러한 도구는 애플리케이션 Insights 페이지 보기 또는 사용자 지정 이벤트를 보내는 앱에 의존합니다. 앱이 이러한 유형의 원격 분석 중 하나를 전송하지 않는&rsquo; 경우 가장 빠른 시작 방법은 애플리케이션 Insights JavaScript SDK를 앱에 추가하는 것입니다. 이렇게 하면 페이지 보기가 자동으로 수집되며, 개별 단추 및 상호 작용과 같이 앱의 일부를 보다 자세히 모니터링하는 사용자 지정 이벤트를 쉽게 수집할 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/application-insights/app-insights-javascript">Application Insights JavaScript SDK</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <ul>
+   <li><a href="https://go.microsoft.com/fwlink/?linkid=846142">애플리케이션 Insights 사용 현황 모니터링</a></li>
+   <li><a href="https://go.microsoft.com/fwlink/?linkid=846145">사용자, 세션 및 이벤트 도구</a></li>
+   <li><a href="https://go.microsoft.com/fwlink/?linkid=846144">재방문 주기 도구</a></li>
+  </ul>

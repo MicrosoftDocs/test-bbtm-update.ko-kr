@@ -1,0 +1,107 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d1bd19887688b7a05ecb094a13a718f642ab4dc4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907076"
+Slug: nextgeneration-firewall-capabilities-with-azure-firewall-premium
+Title: Azure Firewall Premium 있는 차세대 방화벽 기능
+Summary: 2021년 2월에 발표된 미리 보기 릴리스에 이어 Azure Firewall Premium 일반 공급 릴리스를 발표합니다. 이 릴리스의 주요 기능은 TLS 검사, IDPS, 웹 범주 및 URL 필터링입니다.
+Content: >-
+  <p><em>이 게시물은 Gopikrishna Kannan, 수석 프로그램 관리자, Azure 네트워킹 및 Suren Jamiyanaa, Program Manager 2, Azure 네트워킹에 의해 공동 저술되었습니다.</em></p>
+
+
+  <p>2021년 2월에 발표된 <a href="https://azure.microsoft.com/en-us/blog/azure-firewall-premium-now-in-preview-2/" target="_blank">미리 보기 릴리스</a>에 이어 <a href="https://docs.microsoft.com/en-us/azure/firewall-manager/policy-overview" target="_blank">Microsoft Azure 방화벽 Premium</a> 일반 공급 릴리스를 발표합니다.</p>
+
+
+  <p>이 릴리스의 주요 기능은 다음과 같습니다.</p>
+
+
+  <ol>
+      <li><strong>TLS 검사:</strong> Azure Firewall Premium 아웃바운드 및 TLS(동서 전송 계층 보안) 연결을 종료합니다. 인바운드 TLS 검사는 엔드투엔드 암호화를 허용하는 Azure Application Gateway와 함께 지원됩니다. Azure Firewall은 필요한 부가 가치 보안 기능을 수행하고 원래 대상으로 전송되는 트래픽을 다시 암호화합니다.</li>
+      <li><strong>IDP:</strong> Azure Firewall Premium 네트워크 트래픽의 바이트 시퀀스 또는 맬웨어에서 사용되는 알려진 악성 명령 시퀀스와 같은 특정 패턴을 검색하여 공격을 신속하게 검색할 수 있도록 서명 기반 IDPS(침입 감지 및 방지 시스템)를 제공합니다.</li>
+      <li><strong>웹 범주:</strong> 관리자는 범주(예: 소셜 네트워킹, 검색 엔진, 도박 등)를 기반으로 인터넷에 대한 아웃바운드 사용자 액세스를 필터링하여 개별 FQDN(정규화된 도메인 이름) 및 URL을 관리하는 데 소요되는 시간을 줄일 수 있습니다. 이 기능은 FQDN을 기반으로 하는 Azure Firewall Standard에서도 사용할 수 있습니다.</li>
+      <li><strong>URL 필터링:</strong> 관리자가 FQDN뿐만 아니라 특정 URL에 대한 아웃바운드 액세스를 필터링할 수 있습니다. 이 기능은 TLS 검사를 사용하는 경우 일반 텍스트 및 암호화된 트래픽 모두에 대해 작동합니다.</li>
+  </ol>
+
+
+  <h2>Azure Firewall Premium 이점</h2>
+
+
+  <p>Azure Firewall 프리미엄은 결제 및 의료 서비스 산업과 같은 매우 민감하고 규제된 환경의 요구 사항을 충족하는 고급 위협 방지를 제공합니다. 조직은 IDPS 및 TLS 검사와 같은 Premium SKU(재고 유지 단위) 기능을 활용하여 맬웨어 및 바이러스가 횡적 방향과 수평 방향으로 네트워크 간에 확산되는 것을 방지할 수 있습니다. IDPS 및 TLS 검사의 향상된 성능 요구를 충족하기 위해 Azure Firewall Premium 보다 강력한 Virtual Machine SKU를 활용합니다. 표준 SKU와 마찬가지로 Premium SKU는 최대 30Gbps까지 원활하게 확장할 수 있으며 가용성 영역과 통합되어 99.99%의 SLA(서비스 수준 계약)를 지원할 수 있습니다. 프리미엄 SKU는 PCI DSS(Payment Card Industry Data Security Standard) 환경 요구 사항을 준수합니다.</p>
+
+
+  <p>표준 SKU 고객에 대한 마이그레이션을 간소화하기 위해 Azure Firewall Policy를 사용하는 일반적인 구성 방법을 사용했습니다. 이 방법을 사용하면&nbsp; 최소한의 변경으로 API를 통합하고&nbsp; Firewall Manager를 사용하여 Azure Firewall을 계속 관리할 수 있습니다. 방화벽 규칙(클래식)을 사용하는 고객은 먼저 Azure Firewall Policy로 마이그레이션하기 위한 추가 단계를 수행합니다. Azure Firewall Policy는 여러 방화벽에서 공통 구성을 공유하고, 규칙 컬렉션 그룹을 사용하여 규칙을 그룹화하고, 정책 분석(프라이빗 미리 보기)을 사용하여 시간에 따른 규칙 관리와 같은 몇 가지 이점을 제공합니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/firewall-manager/policy-overview" target="_blank">Azure Firewall Policy 설명서 페이지를 참조하세요</a>.</p>
+
+
+  <p>Azure Firewall Premium SKU는 최신 클라우드 네이티브 방화벽 서비스에 가장 적합한 가치를 제공하기 위해 <a href="https://azure.microsoft.com/en-us/pricing/details/azure-firewall/" target="_blank">최적으로 가격이 책정됩니다</a>. 고급 위협 방지 기능을&nbsp; 갖춘 Premium SKU는 온-프레미스&nbsp; 보안 경계 네트워크를 클라우드로 마이그레이션할 수 있는 강력한&nbsp; 기능을 제공합니다. 이 방법은 온-프레미스 경계 네트워크로의 역행 인터넷 트래픽을 발생시키는 대기 시간을 지원&nbsp;합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/edd260c7-421b-47e2-af95-c1b543d97b4f.png"><img alt="Azure Firewall Premium capabilities" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6a0956b5-eb59-4661-8810-46bd5214e3f9.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Firewall Premium 기능" width="862"></a></p>
+
+
+  <p><em>그림 1: Azure Firewall Premium 기능</em></p>
+
+
+  <h2>Azure Firewall Standard에서 Premium 마이그레이션</h2>
+
+
+  <p>이 일반 공급 릴리스의 일부로 원활한 마이그레이션을 허용하는 두 가지 새로운 기능을 제공합니다.</p>
+
+
+  <ol>
+      <li>기존 Azure Firewall 규칙(클래식)을 Azure Firewall Policy로 변환합니다.</li>
+  </ol>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/530963b1-2d08-4416-857a-fdd5bcff75dd.png"><img alt="Migrate classic rules to Firewall Policy" height="522" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d6a3d8a8-4f76-4927-bd87-6a161684a9cf.png" style="display: inline;" title="" width="1024"></a></p>
+
+
+  <p><em>그림 2: 클래식 규칙을 Azure Firewall Policy로 마이그레이션합니다.</em></p>
+
+
+  <p>2.새 Azure Firewall Premium 만들고 기존 정책에 연결합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b3daf67-5368-4daf-b4d0-1b7ccd841bc6.png"><img alt="Create a new Premium Firewall and associate a Policy" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b1d41c3c-bd99-4a51-ba30-7edd50b685c5.png" style="display: inline;" title="" width="625"></a></p>
+
+
+  <p><em>그림 3: 새 Azure Firewall Premium 만들고 Azure Policy를 연결합니다.</em></p>
+
+
+  <p>Azure Firewall 구성을 내보내고 기존 Azure Firewall Standard를 서비스 해제한 후 표준 방화벽 구성에 연결하고 공용 IP를 유지 관리하는 동안 새 Azure Firewall Premium 배포할 수 있습니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/firewall/premium-migrate" target="_blank">Azure Firewall Premium 설명서로 마이그레이션을 참조하세요</a>.</p>
+
+
+  <h2>Azure Firewall Premium 가격 책정</h2>
+
+
+  <p>표준 SKU와 마찬가지로 Azure Firewall Premium 가격 책정에는 배포 및 데이터 처리 요금이 모두 포함됩니다.</p>
+
+
+  <p>배포 요금은 Azure Firewall 표준보다 40% 더 높으며 데이터 처리 요금은 Azure Firewall 표준과 동일하게 유지됩니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/azure-firewall/" target="_blank">Azure Firewall 가격 책정 페이지를 참조하세요</a>.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>이 블로그 게시물에서 다루는 모든 항목에 대한 자세한 내용은 다음을 참조하세요.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/firewall/" target="_blank">Azure Firewall 설명서</a>.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/firewall-manager/" target="_blank">Azure Firewall Manager 설명서</a>.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/firewall/premium-features" target="_blank">Azure Firewall Premium란</a>?</li>
+      <li><a href="https://aka.ms/AzNetSecBlog" target="_blank">Azure Network Security 기술 커뮤니티 블로그</a>.</li>
+      <li><a href="https://aka.ms/AzNetSec" target="_blank">Azure 네트워크 보안 GitHub 리포지토리</a>.</li>
+      <li><a href="https://docs.microsoft.com/azure/firewall/premium-deploy" target="_blank">Azure Firewall Premium 배포 및 구성</a>합니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/architecture/example-scenario/gateway/firewall-application-gateway#application-gateway-before-firewall" target="_blank">Azure Firewall에서 Application Gateway 사용</a></li>
+      <li><a href="https://www.microsoft.com/security/blog/2021/06/08/optimize-security-with-azure-firewall-solution-for-azure-sentinel/" target="_blank">Azure Sentinel용 Azure Firewall 솔루션을 사용하여 보안을 최적화</a>합니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/use-azure-firewall-for-secure-and-cost-effective-windows-virtual-desktop-protection/" target="_blank">안전하고 비용 효율적인 Windows Virtual Desktop 보호를 위해 Azure Firewall을 사용합니다</a>.</li>
+  </ul>

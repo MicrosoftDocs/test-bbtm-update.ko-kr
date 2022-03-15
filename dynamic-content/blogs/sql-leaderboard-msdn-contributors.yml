@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cdfdbbdfb9246183081b5235cc16dedff62a9aef
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900400"
+Slug: sql-leaderboard-msdn-contributors
+Title: MSDN에서 가장 가치 있는 데이터베이스 시스템 기여자를 인식하는 순위표
+Summary: 포럼에서 가장 활발하게 활동하는 커뮤니티 구성원을 인식하고 존중하기 위해 매월 순위표를 게시할 예정입니다. 이는 SQL SERVER, Azure SQL Database, Azure SQL Data Warehouse 및 MSDN의 Azure 질문에 대한 SQL Server VM을 비롯한 데이터베이스 시스템에 대한 파일럿 작업입니다.
+Content: >-
+  <p>Microsoft는 오랫동안 개발자 및 IT Professional 커뮤니티의 구성원에게 의존하여 도움이 필요한 다른 커뮤니티 구성원을 지원해 왔습니다. 특히 지역 사회 구성원이 MSDN 포럼에서만 매달 2,000개가 넘는 새로운 질문에 답변하여 도움을 주는 SQL Server 및 Azure SQL Database 특히 그렇습니다. 포럼에서 가장 활발하게 활동하는 커뮤니티 구성원을 인식하고 존중하기 위해 매월 순위표를 게시할 예정입니다. 이는 SQL SERVER, Azure SQL Database, Azure SQL Data Warehouse 및 MSDN의 Azure 질문에 대한 SQL Server VM을 비롯한 데이터베이스 시스템에 대한 파일럿 작업입니다.</p>
+
+
+  <p>회원은 수락된 답변을 빠르게 제공하기 위한 포인트를 얻습니다. 다음은 포인트 계층 구조(포인트의 감소 순서)입니다.<br>
+
+  <img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a52691c2-9799-47f6-8e25-1d5496932ed7.png">순위표는 한 달에 한 번 게시되며 해당 월의 시작과 끝 사이에 주어진 답변이 점수가 매어집니다. 예를 들어 2016년 9월 1일 00:01에서 2016년 9월 30일 23:59 사이에 제공된 답변은 2016년 9월 순위로 간주됩니다. 순위표는 Microsoft 직원 및 계열사를 포함하여 커뮤니티의 모든 구성원 간에 공유됩니다. 모든 데이터베이스 시스템 순위표는 Microsofts&rsquo; Database Systems 제품 및 서비스와 관련된 모든 포럼을 기반으로 합니다. 클라우드 데이터베이스 순위표는 Azure VM의 Azure SQL Database, Azure SQL Data Warehouse 및 SQL 관련된 포럼을 기반으로 합니다.<br>
+
+  &nbsp;<br>
+
+  순위표는 곧 자체 웹 페이지에서 작동합니다. 웹 사이트가 준비되는 동안 2016년 10월 순위표를 파일럿으로 게시하는 것이 좋을 것이라고 생각했습니다.&nbsp;</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/36c98bc9-42b6-445c-bd8f-898376613bd8.png">2016년 10월&nbsp; 순위표에 참여한 멤버들에게&nbsp; 축하드립니다!</p>
+
+
+  <p>이 순위표와 관련된 질문은 에 작성하세요. <a href="mailto:leaderboard-sql@microsoft.com">leaderboard-sql@microsoft.com</a></p>
+
+
+  <h2>FAQ</h2>
+
+
+  <p>1.&nbsp; <strong>답변이 여러 가지 있는 경우 어떻게 해야 할까요? 여러 답변이 수락되면 어떻게 해야 할까요?</strong><br>
+
+  모든 답변은 동일한 점수를 얻습니다.<br>
+
+  &nbsp;<br>
+
+  2. <strong>특정 달에 답변을 제공하고 다른 달에 수락되면 어떻게 해야 하나요?</strong><br>
+
+  응답 월에 액세스되지 않은 답변에 대한 포인트와 수락 월의 답변에 대한 추가 포인트를 얻습니다.<br>
+
+  &nbsp;<br>
+
+  3. <strong>순위표에서 내 점수를 찾으려면 어떻게 하나요?</strong><br>
+
+  순위표는 커뮤니티의 모든 구성원이 월별 점수를 찾을 수 있는 자체 웹 사이트를 곧 받게 됩니다. 파일럿의 경우 상위 10명의 참가자의 이름을 게시할 계획입니다.</p>
+
+
+  <p>4. <strong>이러한 포럼에서 중요한 질문은 무엇인가요?</strong><br>
+
+  azure의 SQL Server, Azure SQL Database, Azure SQL Data Warehouse, SQL Server VM과 관련된 포럼 내의 모든 질문에는 동일한 가중치가 적용됩니다.<br>
+
+  &nbsp;<br>
+
+  5. <strong>MSDN은 이미 순위표를 게시합니다. 어떻게 다른가요?</strong><br>
+
+  데이터베이스 시스템 관련 질문에는 다른 모든 MSDN 포럼에 비해 특정하고 고유한 기술 세트가 필요합니다. 이것은 지역 사회의 더 큰 이익을 위해이 특별한 기술을 사용하는 사람들을 인식하기 위한 제품 팀의 노력입니다.</p>

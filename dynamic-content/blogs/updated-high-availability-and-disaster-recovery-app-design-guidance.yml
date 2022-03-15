@@ -1,0 +1,24 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 76e8a7c6ad003be3bce9da32c00c5b103ca22891
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900114"
+Slug: updated-high-availability-and-disaster-recovery-app-design-guidance
+Title: 고가용성 및 재해 복구 앱 디자인 지침 업데이트
+Summary: 재해 복구 및 Microsoft Azure 빌드된 애플리케이션의 고가용성 및 재해 복구 및 고가용성을 위한 별도의 가이드에 대한 지침 문서를 업데이트했습니다.
+Content: >-
+  <p>Were&rsquo;는 <a href="https://azure.microsoft.com/en-us/documentation/articles/resiliency-disaster-recovery-high-availability-azure-applications/">Microsoft Azure 빌드된 애플리케이션에 대한 재해 복구 및 고</a>가&rsquo;용성 지침 문서를 업데이트했음을 발표하게 되어 기쁘게 생각합니다.&nbsp;</p>
+
+
+  <p>Azure용 애플리케이션을 디자인할 때 제공한 가장 유용한 문서 중 하나는 고가용성 및 재해 복구를 위한 설계에 대한 지침이라고 들었습니다. 또한 가장 관심 있는 콘텐츠에 직접 액세스하는 더 쉬운 방법도 원한다고 들었습니다. 원래 지침은 매우 상세&rsquo;했기 때문에 사용 사례에 따라 이 지침을 위반하여 고가용성 및 재해 복구에 대한 지침을 별도로 제공했습니다.</p>
+
+
+  <p>Microsoft Azure 문서에서<a href="https://azure.microsoft.com/en-us/documentation/articles/resiliency-high-availability-azure-applications/"> 빌드된 애플리케이션에 대한 새로운 고가용성을</a> 통해 Azure의 작동 방식과 다양한 전략을 사용하여 Azure에서 애플리케이션의 고가용성을 달성하는 방법을 이해할 수 있습니다.</p>
+
+
+  <p>Microsoft Azure 문서에서 <a href="https://azure.microsoft.com/en-us/documentation/articles/resiliency-disaster-recovery-azure-applications/">빌드된 애플리케이션에 대한 새로운 재해 복구</a>는 다양한 재해 복구 시나리오를 통해 비용, 복잡성, RTO(복구 시간 목표) 및 RPO(복구 지점 목표)의 차이를 고려하는 데 도움이 됩니다.</p>
+
+
+  <p>이 지침은 Azure에서 더 나은 복원력 있는 애플리케이션을 빌드하는 데 도움이 되기를 바랍니다. Well&rsquo;은 계속해서 지침을 검토하고 개선하며, 귀하의 피드백은 적절한 시기에 적절한 방식으로 적절한 콘텐츠를 제공하는 데 도움이 되는&rsquo; 핵심입니다. 이러한 문서에 대한 피드백은 항상 감사하고 권장되므로 아래의 의견 섹션, 문서 페이지에 직접 의견을 남기거나 이메일을 보내 <a href="mailto:ResiliencyFeedback@microsoft.com?subject=Updated%20high%20availability%20and%20disaster%20recovery%20app%20design%20guidance%20available%20Blog%20Feedback">ResiliencyFeedback@microsoft.com</a>주시기 바랍니다.</p>

@@ -1,0 +1,78 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e23fee809f84974449f8df8d476afaf7bb9adcaf
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900390"
+Slug: sql-server-alwayson-cluster-template-updated-with-internal-listeners-and-optimized-performance
+Title: SQL Server 내부 수신기 및 최적화된 성능으로 업데이트된 AlwaysOn 클러스터 템플릿
+Summary: 보안, 가용성 및 성능을 개선하기 위해 Azure Portal에서 SQL Server AlwaysOn 클러스터 템플릿을 몇 가지 흥미로운 기능으로 개선했습니다.
+Content: >-
+  <p>보안, 가용성 및 성능을 개선하기 위해 Azure Portal에서 SQL Server AlwaysOn 클러스터 템플릿을 몇 가지 개선했습니다.</p>
+
+
+  <p>항상 사용 가능한 구성을 보장하기 위해 AlwaysOn 클러스터 템플릿은 다음 리소스를 자동으로 배포합니다.</p>
+
+
+  <ul>
+   <li>SQL Server Virtual Machines 2개와 AlwaysOn 클러스터의 미러링 모니터 서버 가상 머신 1개</li>
+   <li>새 Windows 도메인을 만드는 두 개의 도메인 컨트롤러</li>
+   <li>내부 Load Balancer를 사용하는 AlwaysOn 수신기 1개</li>
+   <li>보안을 위한 모든 리소스를 포함하는 Virtual Network</li>
+  </ul>
+
+
+  <p>또한 다음 기능을 사용하여 클러스터를 사용자 지정하여 성능 및 가용성을 최적화할 수 있습니다.</p>
+
+
+  <ul>
+   <li>사용자 지정 가능한 Storage 구성</li>
+   <li>구성 가능한 패치 일정</li>
+   <li>SQL Server 버전을 선택하는 옵션</li>
+  </ul>
+
+
+  <p>이 모든 것을 통해 템플릿을 사용하여 가용성, 성능 및 보안 요구 사항을 충족하는 프로덕션 지원 클러스터를 배포할 수 있습니다.</p>
+
+
+  <p><img alt="SQL Server AlwaysOn Cluster Template in Azure now with internal listeners and optimized performance" border="0" height="601" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c34d8c7b-43ce-4319-b61c-0425ba0ea4c7.png" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-image: none" title="내부 수신기 및 최적화된 성능으로 Azure에서 AlwaysOn 클러스터 템플릿 SQL Server" width="610"></p>
+
+
+  <h5>&nbsp;</h5>
+
+
+  <h2>내부 부하 분산 장치 지원</h2>
+
+
+  <p>이 배포의 보안을 개선하기 위해 템플릿은 이제 수신기 엔드포인트에 대한 내부 Load Balancer를 활용합니다. 즉, Virtual Network 내에서 주 복제본에만 연결할 수 있습니다.</p>
+
+
+  <h2>워크로드에 대한 Storage 및 SQL Server 구성</h2>
+
+
+  <p>과거에는 SQL Server VM을 프로비전한 후 원하는 수의 IOP 또는 처리량(MB/s)을 제공하도록 적절한 수의 데이터 디스크를 수동으로 연결하고 구성해야 했습니다. 그런 다음 디스크에 SQL 파일을 스트라이프하거나 Storage 풀을 만들어 IOP 또는 처리량을 나누어야 합니다. 마지막으로 Azure&rsquo; <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-sql-server-performance-best-practices/">VM에 대한 성능 모범 사례</a>에 따라 SQL Server 구성해야 합니다.</p>
+
+
+  <p>이제 AlwaysOn 클러스터 템플릿에서 만드는 단일 SQL VM 및 SQL VM 모두에 대한 프로비저닝 환경의 이 부분을 만들었습니다. 이 템플릿에서는 시작할 1~4테라바이트 사이의 스토리지 용량을 지정할 수 있습니다(향후 증가). 입력에 따라 필요한 수의 데이터 디스크를 연결하고 구성합니다. 둘 이상의 데이터 디스크가 필요한 경우 지정한 워크로드 유형(온라인 트랜잭션 처리 또는 데이터 웨어하우징)에 따라 성능 모범 사례를 사용하여 모든 디스크에 하나의 Storage 풀을 만듭니다.</p>
+
+
+  <h2>SQL Server 버전을 선택하는 옵션</h2>
+
+
+  <p>이제 SQL Server 복제본 VM에 사용할 SQL Server 버전을 선택할 수 있습니다. SQL Server 2012 및 2014(모든 Enterprise 버전)를 사용하려는 경우 필요한 버전을 선택하기만 하면 됩니다. 곧 SQL Server 2016 CTP3도 지원될 예정입니다.</p>
+
+
+  <h2>자동화된 패치</h2>
+
+
+  <p>클러스터 및 도메인의 가용성을 개선하기 위해 이 템플릿은 이제 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-sql-server-automated-patching/">자동화된 패치</a> 기능을 활용합니다. 이 기능은 지정된 기간 동안에만 패치 및 후속 다시 부팅이 수행되도록 VM에 대한 패치 창을 구성합니다. 이 클러스터가 배포되면 각 가상 머신에 다른 패치 창이 있으므로 패치 업데이트로 인해 AlwaysOn 배포에 포함된 두 개의 VM이 동시에 중단되지 않습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>Azure Resource Manager를 지원하도록 AlwaysOn 템플릿을 업데이트했습니다. 즉, 곧 ARM 템플릿을 <a href="https://github.com/Azure/azure-quickstart-templates">추가하여 GitHub</a> PowerShell을 통해 사용자 지정하고 배포할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-sql-server-alwayson-availability-groups-gui-arm/">자세한 내용은 설명서를 참조하세요</a>. 지금 <a href="https://portal.azure.com/">Azure Portal</a> 에서 시도해 볼 수 있습니다. Azure 구독이 아직 없는 경우 지금 <a href="https://azure.microsoft.com/en-us/pricing/free-trial/">한 달 동안 체험</a>해 보세요.</p>

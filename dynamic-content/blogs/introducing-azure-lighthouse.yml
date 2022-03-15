@@ -1,0 +1,69 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 93d9a62f136e9cf88b48b74619531c4b23346299
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907165"
+Slug: introducing-azure-lighthouse
+Title: Azure Lighthouse 소개
+Summary: 파트너는 Azure에서 놀라운 혁신 스토리의 중심에 있으며, 고객의 성공 경로를 조명합니다. 오늘, 우리는 Azure Lighthouse의 일반 공급, 파트너가 차별화하고 더 큰 효율성과 자동화의 혜택을 누릴 수 있도록 대규모 고객 간 관리 기능을 시작합니다.
+Content: >-
+  <h3>파트너가 차별화된 관리형 서비스를 제공할 수 있도록 지원</h3>
+
+
+  <p>파트너는 Azure에서 놀라운 혁신 스토리의 중심에 있으며, 고객의 성공 경로를 조명합니다. 오늘, 우리는 Azure Lighthouse의 일반 공급, 파트너가 차별화하고 더 큰 효율성과 자동화의 혜택을 누릴 수 있도록 대규모 고객 간 관리 기능을 시작합니다. <a href="https://aka.ms/azurelighthouse-testimonial" target="_blank">이 새로운 기능을 초기에 사용한</a> 파트너는 팬입니다!</p>
+
+
+  <p>Im&rsquo;은 Gavriella Schuster, One Commercial Partner 기업 부사장과 함께 Azure Lighthouse에서 Microsoft와 함께 이 여정에서 자신의 역할에 대한 Azure Expert MSP 커뮤니티에 감사를 표합니다. 그 어느 때보다도 고객은 중요 업무용 워크로드를 Azure로 마이그레이션하고, 확장 가능하고 동적인 애플리케이션을 실행하고, AKS(Azure Kubernetes Service)를 사용하여 최신 앱을 설계하는 파트너&rsquo; 의 전문 지식을 활용합니다. Azure Lighthouse는 효율적인 도구로 에코시스템을 강화하기 위한 지속적인 투자의 일부이므로 고객 기반이 새로운 정점에 도달하면 파트너가 수익성 있게 성장할 수 있습니다. 지난 1년 동안, Weve&rsquo;는 제품 개발의 바다를 함께 항해하여 그렇게 했습니다.</p>
+
+
+  <p>패치에서 로그 분석, 정책, 구성 및 규정 준수에 이르기까지 고객 관리의 수명 주기 동안 더 높은 자동화를 사용하도록 설정하면 Azure Lighthouse는 추가 비용 없이 서비스 공급자를 위해 규모와 정밀도를 함께 제공하며&rsquo; EA(기업 계약), CSP(클라우드 솔루션 공급자) 및 종량제 등 고객이 선택할 수 있는 모든 라이선싱 구문에 대해 일관되게 확장성과 정밀도를 제공합니다.</p>
+
+
+  <p><em>&quot;DXC는 Microsoft Azure 대한 DXC&rsquo;의 깊고 광범위한 제품 포트폴리오를 향상시키는 Microsoft Azure Lighthouse 릴리스에서 Microsoft와 협력하게 되어 기쁩니다. Azure Lighthouse를 사용하면 더 높은 자동화 및 향상된 거버넌스를 통해 고객과 리소스를 관리할 수 있는 단일 환경을 제공합니다.&rdquo;</em></p>
+
+
+  <p align="right">- DXC 기술 수석 부사장 겸 최고 기술 책임자 댄 허슨</p>
+
+
+  <p>Imagine Azure Portal 내의 단일 보기에서 수백 명의 고객에 걸쳐 VM(가상 머신) 리소스 상태를 모니터링합니다. 여러 액세스 토큰 및 ID를 순환하지 않고도 API 호출을 통해 여러 고객의 Azure 리소스를 만들고 업데이트하고 크기를 조정하는 Imagine. Imagine 단일 환경에서 모든 경고를 보기 위해 고객 간에 컨텍스트를 전환할 필요가 없습니다. &rsquo;이제 Azure Lighthouse에서 사용할 수 있습니다!</p>
+
+
+  <p>Azure Lighthouse는 Azure Resource Manager 재단의 Azure 위임 리소스 관리 기능을 통해 구동됩니다. 서비스 공급자&rsquo; 테넌트 컨텍스트에 고객 리소스의 논리적 프로젝션을 통해 여러 고객, 테넌트 간 보기 및 작업을 잠금 해제합니다. 고객과 파트너는 프로젝션의 정확한 범위와 원하는 역할 기반 액세스를 결정합니다. Azure 최고 기술 책임자 Mark Russinovichs&rsquo; <a href="https://aka.ms/azurelighthouse-mark" target="_blank">블로그</a> 에서 심층적인 내부 보기를 확인하세요.</p>
+
+
+  <p><em>&ldquo;Azure Lighthouse는 AZURE 리소스를 대규모로 안전하게 관리하고 ARM 템플릿 및 API와 같은 프로그래밍 옵션을 통해 자동화를 제공할 수 있으므로 전략에 완벽하게 부합합니다.&rdquo; </em></p>
+
+
+  <p align="right">- 스타니슬라프 젤리아즈코프, 클라우드 인프라 엔지니어, 센티아</p>
+
+
+  <p>Azure Lighthouse 기능은 기본적으로 그리고 API를 통해 파트너 클라우드 관리 포털 또는 모니터링 및 IT 서비스 관리와 같은 파트너 애플리케이션에 통합됩니다. 이 파트너-파트너 협업은 Microsofts&rsquo; 파트너 에코시스템에 고유합니다.</p>
+
+
+  <p><em>&ldquo;Azure Lighthouse는 고객&rsquo; Azure 리소스를 관리하는 방식을 변경합니다. 이 기능 집합을 사용하면 단일 포털에서 중앙 집중식 모니터링, 경고, 규정 준수 및 보안을 사용하여 모든 구독을 관리할 수 있습니다.&rdquo; </em></p>
+
+
+  <p align="right">- 웨슬리 하크먼, 수석 Azure 설계자, 인터셉트</p>
+
+
+  <p>또한 서비스 공급자는 Azure Marketplace에서 퍼블릭 또는 프라이빗 관리 서비스 제품을 통해 또는 Azure Resource Manager 템플릿을 사용하여 새 고객을 원활하게 온보딩할 수 있습니다. <a href="https://aka.ms/azurelighthouse-github" target="_blank">GitHub</a> 확장성 및 자동화 템플릿 리포지토리를 통해 파트너는 Azure Lighthouse를 사용하는 옵션을 제공합니다. 파트너 Admin Link의 기본 제공 활성화 덕분에 Azure Lighthouse를 사용하는 관리 서비스 파트너는 파트너 보상 및 인센티브에 원활하게 참여할 수 있습니다.</p>
+
+
+  <p>클라우드 성장의 다음 개척지에서 파트너는 계속해서 고객 성공의 열쇠가 될 것입니다. 고객과 파트너의 공동 성공을 가능하게 하는 Azure에 대한 우리의 초점은 그 어느 때보다도 열정적으로 계속될 것입니다. Azure Lighthouseplease&mdash;를 사용하는 경험에 대해 알아보기를 기대합니다.</p>
+
+
+  <p style="text-align: center;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/782c39ca-b08d-48f3-8fc4-966f0b2f25c5.png" target="_blank"><img alt="Azure Lighthouse" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/07ccb686-efe9-4295-9b92-5e15aba629ca.png" style="border: 1px solid rgb(0, 0, 0); border-image: none; width: 80%; display: inline; background-image: none;" title="Azure Lighthouse"></a></p>
+
+
+  <p><a href="https://azure.com/lighthouse" target="_blank">azure.com/lighthouse</a> 자세히 알아보세요.</p>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <p><a href="https://aka.ms/azurelighthouse-docs" target="_blank">Azure Lighthouse 설명서</a></p>
+
+
+  <p><a href="https://aka.ms/azurelighthouse-github" target="_blank">GitHub 리포지토리</a></p>

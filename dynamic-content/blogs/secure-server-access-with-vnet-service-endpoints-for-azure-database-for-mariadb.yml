@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 483492aeef00b260d1c39ea9af5053ce20a27f9b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900840"
+Slug: secure-server-access-with-vnet-service-endpoints-for-azure-database-for-mariadb
+Title: Azure Database for MariaDB용 VNet 서비스 엔드포인트를 사용하여 서버 액세스 보호
+Summary: '이제 Azure Database for MariaDB에서 일반적으로 사용할 수 있는 VNet(가상 네트워크) 서비스 엔드포인트를 사용하여 보안을 보장하고 MariaDB 서버에 대한 액세스를 제한합니다. '
+Content: >-
+  <p><em>이 블로그 게시물은 Azure 네트워킹의 수석 프로그램 관리자인 Sumeet Mittal이 공동 저술했습니다.</em></p>
+
+
+  <p>이제 Azure Database for MariaDB에서 일반적으로 사용할 수 있는 VNet(가상 네트워크) 서비스 엔드포인트를 사용하여 보안을 보장하고 <a href="https://azure.microsoft.com/en-us/services/mariadb/">MariaDB 서버에 대한</a> 액세스를 제한합니다. VNet 서비스 엔드포인트를 사용하면 가상 네트워크 내의 지정된 서브넷에서 논리 서버에 대한 연결을 격리할 수 있습니다. VNet에서 Azure Database for MariaDB로의 트래픽은 항상 Azure 네트워크 내에 유지됩니다. 이 직접 경로에 대한 기본 설정은 가상 어플라이언스 또는 온-프레미스를 통해 인터넷 트래픽을 라우팅하는 특정 경로보다 우선합니다.</p>
+
+
+  <p>VNet 서비스 엔드포인트를 통한 가상 네트워크 액세스에 대한 추가 청구는 없습니다. Azure Database for MariaDB의 현재 <a href="https://azure.microsoft.com/en-us/pricing/details/mariadb/" target="_blank">가격 책정 모델이</a> 그대로 적용됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/34509f18-fd87-46d1-bc64-34d2dd629fc6.png"><img alt="Flowchart display on Internet traffic being routed through the Azure Network" border="0" height="668" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9378ab78-89ba-4d80-9f66-b353f2b83ef2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 네트워크를 통해 라우팅되는 인터넷 트래픽에 순서도 표시" width="710"></a></p>
+
+
+  <h2>방화벽 규칙 및 VNet 서비스 엔드포인트를 함께 사용</h2>
+
+
+  <p>VNet 서비스 엔드포인트를 켜면 Azure Database for MariaDB에서 프로비전한 방화벽 규칙이 재정의되지 않으며 둘 다 적용 가능한 상태로 유지됩니다.</p>
+
+
+  <p>VNet 서비스 엔드포인트는 온-프레미스로 확장하지 않습니다&rsquo;. 온-프레미스에서 액세스를 허용하려면 방화벽 규칙을 사용하여 공용(NAT) IP에 대한 연결만 제한할 수 있습니다.</p>
+
+
+  <p>VNet 보호에 대한 자세한 내용은 설명서를 &ldquo; 보려면 <a href="https://docs.microsoft.com/en-us/azure/mariadb/concepts-data-access-security-vnet" target="_blank">Azure Database for MariDB에 대한 Virtual Network 서비스 엔드포인트 및 규칙을 사용합니다</a>.&rdquo;</p>
+
+
+  <h2>기존 방화벽 규칙이 있는 서버에 대한 서비스 엔드포인트 켜기</h2>
+
+
+  <p>서비스 엔드포인트가 켜져 있는 서버에 연결하면 데이터베이스 연결의 원본 IP가 VNet의 개인 IP 공간으로 전환됩니다. 구성은 Azure Database for MariaDB, MySQL, PostgreSQL, Azure SQL Database 및 Managed Instance 및 Azure SQL Data Warehouse를 비롯한 모든 Azure Database에 대한 Microsoft.Sql&rdquo; 공유 서비스 태그를 통해 &ldquo;구성됩니다. 현재 서버 또는 데이터베이스 방화벽 규칙이 특정 Azure 공용 IP를 허용하는 경우 VNet 방화벽 규칙에 지정하여 지정된 VNet/서브넷을 허용할 때까지 연결이 끊어집니다. 연결을 보장하기 위해 <strong>IgnoreMissingServiceEndpoint</strong> 플래그를 사용하여 서비스 엔드포인트를 켜기 전에 VNet 방화벽 규칙을 선제적으로 지정할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b95cf383-e261-403c-862c-8d77e477d2cd.png"><img alt="Screenshot of the Connection security dashboard" border="0" height="499" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/344e83d8-2910-42b6-a252-371235d65b29.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="연결 보안 대시보드의 스크린샷" width="800"></a></p>
+
+
+  <h2>ASE 지원</h2>
+
+
+  <p>일반 공급의 일환으로 가상 네트워크에 배포된 ASE(App Service Environment) 서브넷에 대한 서비스 엔드포인트를 지원합니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/mariadb/quickstart-create-mariadb-server-database-using-azure-portal" target="_blank">Azure</a> Portal 또는 Azure <a href="https://docs.microsoft.com/en-us/azure/mariadb/quickstart-create-mariadb-server-database-using-azure-cli" target="_blank">CLI</a>를 사용하여 첫 번째 Azure Database for MariaDB 서버를 만들어 서비스를 시작합니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/mariadb/howto-manage-vnet-portal" target="_blank">Azure Portal</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/mariadb/howto-manage-vnet-cli" target="_blank">Azure CLI</a>를 사용하여 MariaDB용 VNet 서비스 엔드포인트를 구성하는 방법을 알아봅니다.</li>
+   <li>팀 <a href="mailto:AskAzureDBforMariaDB@service.microsoft.com">AskAzureDBforMariaDB@service.microsoft.com</a>에게 이메일을 보내주세요.</li>
+   <li><a href="https://feedback.azure.com/forums/915439-azure-database-for-mariadb" target="_blank">UserVoice</a>의 파일 기능 요청입니다.</li>
+   <li>최신 기능을 따라가려면 Twitter <a href="https://twitter.com/AzureDBMariaDB" target="_blank">@AzureDBMariaDB</a> 를 팔로우하세요.</li>
+  </ul>

@@ -1,0 +1,68 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 706ca9b8f7f1adcd9757ed39a1ca88683a8da06d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907382"
+Slug: announcing-general-availability-of-azure-sql-database-reserved-capacity
+Title: Azure SQL Database 예약된 용량의 일반 공급 발표
+Summary: 이제 단일 및 탄력적 풀 데이터베이스에 사용할 수 있는 Azure SQL Database 예약된 용량의 일반 공급에 대해 발표하게 되어 매우 기쁩니다-...
+Content: >-
+  <p>이제 단일 및 탄력적 풀 데이터베이스&mdash;에 사용할 수 있는 Azure SQL Database 예약된 용량의 일반 공급에 대해 발표하게 되어 매우 기쁩니다. Azure를 워크로드에 가장 비용 효율적인 클라우드로 만들기 위한 <a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-azure-reserved-vm-instances-ris/" target="_blank">노력</a>입니다. 이 새로운 가격 책정 옵션을 사용하면 1년 또는 3년 동안 SQL 데이터베이스 vCore를 선불로 지불하여 라이선스가 포함된 가격 책정에 비해 최대 33%<sup>1</sup>% 절감할 수 있습니다.</p>
+
+
+  <h2>Azure는 SQL Server 워크로드에 가장 비용 효율적인 클라우드입니다.</h2>
+
+
+  <p>현재 Active Software Assurance를 사용하는 고객은 SQL Database 새 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tiers-vcore" target="_blank">vCore 기반</a> 구매 모델을 사용하여 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">SQL Server Azure 하이브리드 혜택을</a> 사용하여 최대 55%를 절약할 수 있습니다. 단일 데이터베이스 및 탄력적 풀에서 예약된 용량을 지원하면 Azure 하이브리드 혜택과 예약된 용량 가격을 결합하여 <strong>최대 80%2의 절감을 달성할 때 더 많은 비용을 절감할</strong> 수 <sup>있습니다</sup>.&nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/767f9e0c-fc3c-4549-825c-2edd0fe6bacd.png"><img alt="Savings" border="0" height="283" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eecd230d-f615-48fc-adc4-f99c2ed852ee.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="할인" width="536"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&rsquo;2019년 7월 9일에 <a href="https://azure.microsoft.com/en-us/blog/announcing-new-options-for-sql-server-2008-and-windows-server-2008-end-of-support/" target="_blank">SQL Server 2008/2008 R2에 대한 지원이 종료</a>되는 경우 워크로드를 완전 관리형 서비스인 Azure SQL Database 마이그레이션하고 지원 전환 비용 종료를 제거할 수 있습니다. Azure 하이브리드 혜택을 사용하면 활성 Software Assurance와 함께 기존 라이선스를 사용하여 Azure에서 더 많은 비용을 절감할 수 있으며, 이제 예약된 용량을 통해 Azure SQL Database 훨씬 더 비용 효율적으로 전환할 수 있습니다.</p>
+
+
+  <h2>단일 구독에 적용하거나 등록 전체에서 공유</h2>
+
+
+  <p>SQL Database 예약된 용량 가격 책정은 <em>단일 구독</em> 또는 <em>공유</em>로 범위가 지정됩니다. 혜택을 사용할 수 있는 구독 수와 예약이 특정 구독에 적용되는 방식을 제어할 수 있습니다.</p>
+
+
+  <p><em>단일 구독</em>으로 범위가 지정된 예약은 예약된 용량 할인이 선택한 구독 내의 SQL Database 리소스에 적용됨을 의미합니다. <em>공유</em> 범위가 있는 예약은 등록의 MSDN 구독 또는 계정의 종량제 구독을 제외하고 등록(즉, 기업계약 고객) 또는 계정(즉, 종량제 고객)의 모든 구독에서 청구 혜택을 공유할 수 있음을 의미합니다.</p>
+
+
+  <h2>변경해야 할 때 절감액 유지</h2>
+
+
+  <p>SQL Database 예약된 용량은 예약된 용량 가격에 영향을 주지 않고 성능 계층 및 지역 내에서 확장 또는 축소할 수 있도록 <em>vCore 크기 유연성을</em> 제공합니다. 예를 들어 SQL Database 범용으로 예약된 용량의 Gen5 vCore 16대를 구매하고 4개의 vCore 데이터베이스와 8개의 vCore 탄력적 풀을 5세대 컴퓨팅으로 배포하기로 결정한 경우 예약된 용량 혜택이 두 가지 모두에 자동으로 적용됩니다. 데이터베이스를 8개 vCore로 확장하려는 경우 예약된 용량 혜택도 자동으로 적용됩니다.</p>
+
+
+  <p>또한 예약된 용량 혜택을 잃지 않고 동일한 지역 및 성능 계층 내에서 정상 작업의 일부로 풀과 단일 데이터베이스 간에 핫 데이터베이스를 일시적으로 이동할 수 있습니다. 예약에서 적용되지 않은 버퍼를 유지하여 예산을 초과하지 않고 성능 급증을 효과적으로 관리할 수 있습니다.</p>
+
+
+  <p>SQL Database 예약된 용량은 처음에 단일 데이터베이스 및 탄력적 풀에서 사용할 수 있으며, 관리되는 인스턴스 지원은 향후 제공될 예정이며 <a href="https://go.microsoft.com/fwlink/?linkid=2008494&amp;clcid=0x409" target="_blank">Azure Portal</a>을 통해 구매할 수 있습니다. 예약된 용량 가격 책정에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/sql-database/single/" target="_blank">SQL Database 가격 책정 페이지를</a> 방문하여 <a href="https://go.microsoft.com/fwlink/?linkid=2008493&amp;clcid=0x409" target="_blank">설명서를</a> 검토하세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><br>
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39326df6-c4dd-4258-8c1c-16114ed7ed7b.png"><img alt="SQL Database" border="0" height="520" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c9bb4ebc-49ae-414d-98d8-fb492b6f4db3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Database" width="1005"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em><sup>1 </sup> 매월 730시간을 실행하는 미국 서부 2 지역의 8개 vCore SQL Database 관리되는 인스턴스 범용을 기반으로 비용을 절감합니다. 절감액은 포함된 3년 예약 용량 라이선스에 대한 주문형 전체 가격(라이선스 포함)에서 계산됩니다. 실제 절감액은 지역, 인스턴스 크기 및 성능 계층에 따라 달라질 수 있습니다. 2018년 5월 현재 가격은 변경될 수 있습니다.</em></p>
+
+
+  <p><em><sup>2개 </sup> 매월 730시간을 실행하는 미국 서부2 지역에서 8개의 vCore SQL Database 관리되는 인스턴스 비즈니스에 따라 절감됩니다. 절감액은 Azure 하이브리드 혜택 및 3년 예약 용량의 기본 요금에 대해 주문형 전체 가격(라이선스 포함)에서 계산됩니다. 절감액은 EA 계약에 따라 달라질 수 있는 SQL Server Enterprise 버전의 Software Assurance 비용을 제외합니다. 실제 절감액은 지역, 인스턴스 크기 및 성능 계층에 따라 달라질 수 있습니다. 2018년 5월 현재 가격은 변경될 수 있습니다.</em></p>

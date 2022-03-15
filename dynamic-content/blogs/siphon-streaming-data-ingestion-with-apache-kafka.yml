@@ -1,0 +1,120 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2807f67db25157c5e10b04cc16dc16254c48494c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900614"
+Slug: siphon-streaming-data-ingestion-with-apache-kafka
+Title: '사이펀: Apache Kafka를 사용하여 데이터 수집 스트리밍'
+Summary: 데이터는 Bing, Office, Skype 등 Microsoft 클라우드 서비스의 핵심입니다. 이러한 서비스가 성장하고 성숙함에 따라 데이터를 수집, 처리 및 소비해야 할 필요성은 다음과 같이 증가했습니다.
+Content: >-
+  <p>데이터는 Bing, Office, Skype 등 Microsofts&rsquo; 클라우드 서비스의 핵심입니다. 이러한 서비스가 성장하고 성숙함에 따라 데이터를 수집, 처리 및 사용해야 할 필요성도 증가했습니다. 데이터는 운영 모니터링 및 서비스 관리에서 비즈니스 및 기술 의사 결정에 이르기까지 의사 결정을 지원합니다. 또한 데이터는 데이터 마이닝 및 기계 학습을 통해 구동되는 지능형 서비스의 원료이기도 합니다.</p>
+
+
+  <p>Microsoft에서 대부분의 대규모 데이터 처리는 Hadoop과 개념적으로 유사한 분산되고 확장 가능하며 대규모 병렬화된 스토리지 및 컴퓨팅 시스템을 사용하여 수행되었습니다. 이 시스템은 일괄 처리 패러다임을 사용하여 데이터 처리를 지원했습니다. 시간이 지남에 따라 새로운 클래스의 &lsquo;빠른&rsquo; 스트리밍 데이터 처리 파이프라인에 전원을 공급하기 위해 거의 실시간 대기 시간에 대규모 데이터 처리가 필요하게 됩니다.</p>
+
+
+  <h2>Siphon &ndash; 소개</h2>
+
+
+  <p>Siphon은 거의 실시간으로 처리하기 위해 대량의 데이터를 수집하기 위해 고가용성 및 신뢰할 수 있는 서비스로 만들어졌습니다. Apache Kafka는 확장 가능한 pub/sub 메시지 큐로 Siphon에서 사용되는 핵심 기술입니다. Siphon은 Microsoft의 여러 비즈니스 시나리오에서 하루에 1조 개 이상의 이벤트 수집을 처리합니다. 처음에 Siphon은 Microsofts&rsquo; 내부 데이터 센터 패브릭에서 실행되도록 설계되었습니다. 시간이 지남에 따라 이 서비스는 <a href="https://azure.microsoft.com/en-us/services/hdinsight/apache-kafka/">HDInsight용 Apache Kafka</a>와 같은 Azure 제품을 활용하여 Azure에서 서비스를 운영했습니다.</p>
+
+
+  <p>Siphon에서 Microsoft를 지원하는 몇 가지 시나리오는 다음과 같습니다.</p>
+
+
+  <p><strong>O365 보안:</strong> Office 365 고객&rsquo; 데이터를 보호하는 것은 비즈니스에서 중요한 부분입니다. 이러한 중요한 측면은 보안 인시던트가 거의 실시간으로 감지되어 적시에 위협에 대응할 수 있도록 하는 것입니다. 이를 위해 스트리밍 처리 파이프라인은 초당 수백만 건의 이벤트를 처리하여 위협을 식별합니다. 주요 시나리오 요구 사항은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>수백만 개의 이벤트/초를 안정적으로 지원하는 수집 파이프라인</li>
+   <li>통합 감사 및 경고를 사용하여 신뢰할 수 있는 신호 수집</li>
+   <li>SOC 및 ISO<a href="https://products.office.com/en-us/business/office-365-trust-center-compliance-certifications">와 같은 O365 규정 준수 인증 지원</a></li>
+  </ul>
+
+
+  <p>이 시나리오에서 Siphon은 초당 기가바이트 이상의 볼륨을 사용하여 최대 700만 개 이상의 이벤트/초 수집을 지원합니다.</p>
+
+
+  <p><strong>O365 SharePoint Online:</strong> 데이터 기반 제품 기능뿐만 아니라 분석, 제품 인텔리전스를 강화하려면 분석, 감사 및 지능형 기능에 대한 다양한 사용 사례에 이러한 신호를 사용하는 다운스트림 서비스에 사용자 활동 신호를 연결하기 위한 최신의 확장 가능한 데이터 파이프라인이 필요합니다. 주요 요구 사항은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>신호는 거의 실시간으로 필요하며, 종단 간 대기 시간은 몇 초입니다.</li>
+   <li>파이프라인은 하루에 수십억 개의 이벤트로 확장해야 합니다.&nbsp;</li>
+   <li>O365 규정 준수 및 데이터 처리 요구 사항 지원</li>
+  </ul>
+
+
+  <p>Siphon은 이 파이프라인에 대한 데이터 펍/서브를 구동하며 여러 지역에서 규모가 확장되고 있습니다. 서비스가 한 지역에서 프로덕션 상태이면 전 세계 여러 지역에서 복제하는 것이 쉬운 작업이었습니다.</p>
+
+
+  <p><strong>마일리크:</strong> MileIQ는 자동화된 마일리지 추적을 가능하게 하는 앱입니다. MileIQ 백 엔드에는 확장 가능한 메시지 pub/sub가 필요한 여러 시나리오가 있습니다.</p>
+
+
+  <ul>
+   <li>마이크로 서비스 간에 이벤트 디스패치</li>
+   <li>O365 기판에 데이터 통합</li>
+   <li>분석을 위한 ETL 데이터</li>
+  </ul>
+
+
+  <p>MileIQ는 Siphon에 온보딩하여 안정성, 대기 시간 및 데이터 손실을 보장하면서 10초에 수천 개의 메시지/초 동안 거의 실시간 pub/sub가 필요한 이러한 시나리오를 사용하도록 설정합니다.</p>
+
+
+  <h2>Siphon 아키텍처</h2>
+
+
+  <p>Siphon은 다양한 스트리밍 데이터 처리 파이프라인에 전력을 공급하기 위해 신뢰할 수 있고 처리량이 높고 대기 시간이 짧은 데이터 수집 기능을 제공합니다. 신뢰할 수 있고 규정을 준수하는 엔터프라이즈 규모 &lsquo;Data Bus로 작동합니다.&rsquo; 데이터 생산자는 각 다운스트림 시스템이 아니라 데이터 스트림을 한 번 게시할 수 있습니다. 데이터 소비자는 필요한 데이터 스트림을 구독할 수 있습니다. 데이터는 Apache Spark 스트리밍, Apache Storm 등의 스트리밍 플랫폼을 통해 또는 데이터를 다양한 대상으로 스트리밍하는 Siphon 커넥터를 통해 사용할 수 있습니다.</p>
+
+
+  <p>Siphon 아키텍처의 간소화된 보기:</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/22c0eda0-bae8-46c2-af6b-a5d972f667a7.png"><img alt="Siphon-architecture" border="0" height="1390" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/924a1af7-5f3d-49e8-8ac3-35c86362ad31.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="사이펀 아키텍처" width="2189"></a>&nbsp;<br>
+
+  Siphon의 핵심 구성 요소는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>Siphon SDK: 데이터 생산자는 이 SDK를 사용하여 Siphon에 데이터를 보내며, 이 SDK는 스키마화, 직렬화, 일괄 처리, 재시도 및 장애 조치(failover)를 지원합니다.&nbsp;</li>
+   <li>수집기: 데이터를 수신하기 위한 HTTPS 엔드포인트가 있는 서비스입니다. 인증, 라우팅, 제한, 모니터링 및 부하 분산/장애 조치(failover)를 제공합니다.</li>
+   <li>Apache Kafka: 시나리오 요구 사항에 필요에 따라 하나 이상의 Kafka 클러스터가 배포됩니다.</li>
+   <li>커넥터: 필터링, 데이터 변환 및 대상&rsquo; 프로토콜 적응을 지원하는 Siphon에서 다양한 대상으로의 데이터 구성 기반 이동을 지원하는 서비스입니다.</li>
+  </ul>
+
+
+  <p>이러한 구성 요소는 비즈니스 시나리오를 지원하기 위해 다양한 Microsoft 데이터 센터/Azure 지역에 배포됩니다. 전체 시스템은 시스템 상태에 대한 모니터링 및 경고뿐만 아니라 데이터 완전성 및 대기 시간에 대한 감사 시스템을 비롯한 관리 계층이 있는 다중 사용자/다중 테넌트 서비스로 관리됩니다.</p>
+
+
+  <h2>HDInsight로의 사이펀&rsquo; 여행</h2>
+
+
+  <p>Siphon 팀이 Azure에서 서비스를 실행하는 데 필요한 구성 요소를 고려했을 때 <a href="https://azure.microsoft.com/en-us/services/hdinsight/apache-kafka/">HDInsight용 Apache Kafka</a> 서비스는 빌드할 수 있는 매력적인 구성 요소였습니다. 주요 이점은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><strong>관리되는 서비스:</strong> HDInsight 서비스는 전체 SLA가 99.9%인 Apache Kafka 클러스터를 만들고 클러스터를 가동 및 실행하며 일상적인 유지 관리 및 패치를 처리합니다.</li>
+   <li><strong>준수:</strong> HDInsight는 다양한 보안 및 규정 준수 요구 사항을 충족하며 Siphon이 Office 365 같은 서비스의 엄격한 요구 사항을 충족하는 데 필요한 추가 기능을 구축할 수 있는 좋은 기반입니다.</li>
+   <li><strong>비용:</strong> Kafka 노드와 Azure Managed Disks의 통합과 같은 혁신을 통해 안정성을 저하시키지 않으면서 확장 및 비용 절감이 가능합니다.</li>
+   <li><strong>유연성:</strong> HDInsight는 사용되는 VM 유형 및 디스크뿐만 아니라 사용자 지정 소프트웨어 설치 및 적절한 비용 및 성능 요구 사항에 대한 전체 서비스를 조정하는 측면에서 클러스터를 유연하게 사용자 지정할 수 있습니다.</li>
+  </ul>
+
+
+  <p>Siphon은 HDInsight(미리 보기) 서비스용 Apache Kafka의 초기 내부 고객이었습니다. Azure Managed Disk 통합을 구현하여 이 대규모 &lsquo;Data Bus&rsquo; 서비스를 실행하는 데 드는 전체 비용을 절감할 수 있었습니다.</p>
+
+
+  <p>Siphon은 현재 전 세계 Azure 지역에 30개 이상의 HDInsight Kafka 클러스터(약 600개의 Kafka 브로커 포함)를 배포하고 있으며 그 공간을 계속 확장하고 있습니다. 클러스터 크기는 3개에서 50개까지 다양하며, 일반적인 클러스터에는 10개의 브로커가 있으며 각 브로커에 10개의 디스크가 연결됩니다. 집계에서 이러한 Siphon 클러스터는 최대 볼륨에서 초당 4GB 이상의 데이터를 수집할 수 있습니다.</p>
+
+
+  <p>HDInsight용 Apache Kafka를 사용하면 Siphon이 O365 서비스를 지원하기 위해 새로운 지리적 지역으로 쉽게 확장할 수 있게 되었으며, 자동화된 배포를 통해 새 Azure 지역에서 Siphon의 현재 상태를 며칠이 아닌 몇 시간으로 단축할 수 있습니다.</p>
+
+
+  <h2>결론</h2>
+
+
+  <p>데이터는 Bing, Office 365 및 Skype 같은 Microsoft&#39;대규모 클라우드 서비스의 중추입니다. Siphon은 이러한 서비스에 대한 처리 및 분석을 위해 거의 실시간 데이터 스트림을 수집, 배포 및 소비하기 위한 고가용성 및 신뢰할 수 있는 분산 데이터 버스를 제공하는 서비스입니다. Siphon은 HDInsight용 Apache Kafka를 매우 안정적이고 확장 가능하며 비용 효율적인 핵심 구성 요소로 사용합니다. Siphon은 하루에 1조 개 이상의 메시지를 수집하고 HDInsight를 활용하여 속도와 볼륨이 계속 증가할 계획입니다.</p>
+
+
+  <p>Azure HDInsight에서 Apache Kafka를 <a href="https://docs.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-get-started">시작</a>합니다.</p>

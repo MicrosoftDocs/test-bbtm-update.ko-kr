@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 98af3f41d1b6fbc08bf0692615d5d04d23b6cf71
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900226"
+Slug: supercharge-your-php-productivity-on-azure
+Title: Azure에서 PHP 생산성을 극대화하세요!
+Summary: 오늘 곧 Azure App Service에서 PHP용 Z-Ray 기술을 사용할 수 있게 될 것이라고 발표하게 되어 기쁩니다.
+Content: >-
+  오늘 곧 Azure App Service에서 PHP용 Z-Ray 기술을 사용할 수 있게 될 것이라고 발표하게 되어 기쁩니다.
+
+
+  Azure App Service는 개발자가 모든 플랫폼 및 모든 디바이스에 대해 지능형 웹 및 모바일 앱을 빌드할 수 있게 해주는 일종의 클라우드 서비스입니다. App Service는 개발을 간소화하고, 온-프레미스 및 SaaS 시스템과 쉽게 통합할 수 있으며, 비즈니스 프로세스를 신속하게 자동화하는 기능을 제공하는 통합 솔루션입니다. App Service 팀은 다양한 개발 플랫폼 및 언어를 지원하기 위해 최선을 다하고 있으며, Zend와의 파트너십을 통해 PHP 기능을 개선할 수 있게 되어 매우 기쁩니다.
+
+
+  몇 달 전에 우리 팀이 Z-Ray를 보았을 때 우리의 관심을 끌었습니다. 직관적인 개발자 워크플로와 결합된 정보의 깊이는 Azure App Service(통합된 Z-Ray 환경을 제공하는 유일한 클라우드 서비스)에서만 사용할 수 있도록 하는 고객에게 매우 매력적인 제안으로, WordPress, Drupal, Magento 및 기타 PHP 애플리케이션 개발자에게 최상의 사용자 환경을 제공하기 위한 노력을 강화합니다. Azure App Service를 클라우드에서 PHP 앱뿐만 아니라 .NET, Java, Node.js 및 Python과 같은 다른 플랫폼을 개발하기 위한 훌륭한 플랫폼이 되도록 노력합니다.
+
+
+  Z-Ray는 개발자의 조종석 역할을 하며, 개발자에게 브라우저 창 내에서 애플리케이션의 내부 작동을 지속적으로 보여주며 앱 웹 UI에 원활하게 통합됩니다. Z-Ray는 일반적인 PHP 정보뿐만 아니라 많은 앱 및 프레임워크에 대한 지원도 제공합니다.
+
+
+  Zend와 함께 작업하고 앞으로 몇 달 안에 App Service 환경에 Z-Ray를 통합하기 시작하기를 기대합니다.
+
+
+  <a href="https://azure.microsoft.com/en-us/campaigns/azure-march-announcement/">여기</a>로 이동하여 새 Azure App Service에 대해 자세히 알아보고 시도해 보세요.
+
+
+  Azure용 Z-Ray에 대한 자세한 내용은 <a href="https://www.zend.com/z-ray-azure">www.zend.com/z-ray-azure</a>

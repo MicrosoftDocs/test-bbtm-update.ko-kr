@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f99ab28e5003c3a4fefea84f2836335842537c90
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900042"
+Slug: application-accessibility-restored
+Title: 애플리케이션 접근성 복원됨
+Summary: 현재 Windows Azure에서 실행되는 많은 애플리케이션은 일정 기간 동안 연결할 수 없었습니다.&nbsp; 가장 이른 사건은 오늘 (4 월 2 일) 오후 1시 15분에 PDT에서 일어났습니다.
+Content: <p>현재 Windows Azure에서 실행되는 많은 애플리케이션은 일정 기간 동안 연결할 수 없었습니다.&nbsp; 가장 이른 사건은 오늘(4월 2일) 오후 1시 15분에 PDT에서 일어났으며, 우리 팀은 하루 종일 영향을 받는 애플리케이션을 복원했으며 모든 애플리케이션은 오후 9시 00분 PDT에 액세스할 수 있었습니다.&nbsp; 스토리지 서비스가 영향을 받지 않았습니다.&nbsp; 오후 내내 <a href="https://social.msdn.microsoft.com/Forums/en-US/windowsazure/threads" mce_href="https://social.msdn.microsoft.com/Forums/en-US/windowsazure/threads">Windows Azure 포럼</a>에서 <a href="https://social.msdn.microsoft.com/Forums/en-US/windowsazure/thread/4dd48387-59f0-4b54-9264-d14ada9ad7b8" mce_href="https://social.msdn.microsoft.com/Forums/en-US/windowsazure/thread/4dd48387-59f0-4b54-9264-d14ada9ad7b8">이 스레드</a>에 대해 전달했습니다.</p>  <h3>무슨 일이 있었나요?</h3>  <p>패브릭 컨트롤러의 책임 중 하나는 클라우드에서 서버 및 애플리케이션의 상태와 상태를 모니터링하고 애플리케이션이 비정상일 때 기능을 자동으로 복원하는 것입니다.&nbsp; 이를 위해 서버와 정기적으로 통신하여 상태를 요청합니다.&nbsp; 오늘 오후, 여러 서버가 패브릭 컨트롤러에 대한 응답을 중지했습니다.&nbsp; 패브릭 컨트롤러는 즉시 해당 서버를 오작동으로 표시하고, 트래픽 라우팅을 중지하고, 영향을 받는 애플리케이션 인스턴스를 새 서버로 마이그레이션하기 시작했습니다.&nbsp; 패브릭 컨트롤러의 버그로 인해 해당 인스턴스가 디자인된 대로 빠르게 이동하지 못했습니다.&nbsp;&nbsp; 영향을 받는 서버에 모든 인스턴스가 있는 애플리케이션은 이 기간 동안 연결할 수 없게 되었습니다.</p>  <h3>우리는 미래에 무엇을하고 있습니까?</h3>  <p>위에서 언급한 특정 버그를 수정하는 것 외에도 패브릭 컨트롤러에 애플리케이션의 상태에 대한 보다 세부적인 보기를 제공하는 것을 포함하여 패브릭 컨트롤러에서 검색 및 응답 알고리즘을 개선하기 위한 지속적인 작업을 계속하고 있습니다.</p>  <p>3월 13일 오작동의 근본 원인은 매우 달랐지만 패브릭 컨트롤러에서 감지 및 대응에서 수행하는 것과 동일한 개선 사항이 적용됩니다.</p>

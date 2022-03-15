@@ -1,0 +1,87 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 36126ce53613c8977cd0b511b76b01593a842698
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906544"
+Slug: azure-powershell-az-module-version-1
+Title: Azure PowerShell 'Az' 모듈 버전 1.0
+Summary: PowerShell Core 및 Cloud Shell의 기능을 활용하고 Windows PowerShell 5.1과의 호환성을 유지하기 위해 빌드된 새로운 Azure PowerShell 모듈이 있습니다. 이름은 Az입니다. Az는 Windows PowerShell 및 PowerShell Core 사용자가 모든 플랫폼의 모든 PowerShell에서 최신 Azure 도구를 얻을 수 있도록 합니다.
+Content: >-
+  <p>PowerShell Core 및 Cloud Shell의 기능을 활용하고 Windows PowerShell 5.1과의 호환성을 유지하기 위해 빌드된 새로운 Azure PowerShell 모듈이 있습니다. 이름은 Az입니다&ldquo;.&rdquo; Az는 Windows PowerShell 및 PowerShell Core 사용자가 모든 플랫폼의 모든 PowerShell에서 최신 Azure 도구를 얻을 수 있도록 합니다. 또한 Az는 Azure PowerShell cmdlet 및 모듈 이름을 간소화하고 정규화합니다. Az는 Azure Cloud Shell에서 제공되며 <a href="https://www.powershellgallery.com/packages/Az" target="_blank">PowerShell 갤러리</a>에서 사용할 수 있습니다.&nbsp;</p>
+
+
+  <p>Az 모듈 버전 1.0은 2018년 12월 18일에 릴리스되었으며 2019년 1월 15일 릴리스부터 2019년에 2주 주기로 업데이트됩니다.</p>
+
+
+  <p>모든 Azure PowerShell 모듈과 마찬가지로 Az는 의미 체계 버전 지정을 사용하고 엄격한 <a href="https://github.com/Azure/azure-powershell/blob/master/CONTRIBUTING.md#breaking-changes" target="_blank">호환성이 손상되는 변경 정책을</a> &ndash; 구현합니다. 모든 호환성이 손상되는 변경에는 사전 고객 알림이 필요하며 호환성이 손상되는 변경 릴리스 중에만 발생할 수 있습니다.&nbsp;</p>
+
+
+  <p>릴리스, 타임라인 및 호환성 기능에 대한 자세한 내용은 <a href="https://aka.ms/azps-announce" target="_blank">Az 공지 페이지를</a> 확인하세요.</p>
+
+
+  <h2>새로운 기능</h2>
+
+
+  <ul>
+   <li>Az는 Windows PowerShell 5.1 및 PowerShell Core(플랫폼 간)에서 실행됩니다.</li>
+   <li>Az는 Azure 서비스에 대한 최신 도구로 항상 최신 상태입니다.</li>
+   <li>Az는 Cloud Shell에서 배송됩니다.</li>
+   <li>Az는 cmdlet 이름을 &ndash; 단축하고 정규화합니다. 모든 cmdlet은 Az&rsquo;를 명사 접두사로 사용합니다&lsquo;.</li>
+   <li>Az는 동일한 Az 모듈을 사용하는 각 서비스에 대한 모듈 이름 &ndash; 데이터 평면 및 관리 평면 cmdlet을 간소화하고 정규화합니다.</li>
+   <li>Az는 AzureRM과 스크립트 호환성을 사용하도록 설정하는 새 cmdlet과 함께 제공됩니다(Enable/Disable-AzureRmAlias).</li>
+   <li>Az는 디바이스 코드 인증 지원을 사용하도록 설정하여 터미널을 통해 다른 컴퓨터, VM 또는 컨테이너로 원격으로 원격으로 연결할 때 로그인을 허용합니다.</li>
+  </ul>
+
+
+  <p>Az 로드맵 및 기능에 대한 자세한 내용은 Az 공지 페이지에서 확인할 수 있습니다.</p>
+
+
+  <h2>AzureRM에서 마이그레이션</h2>
+
+
+  <p>AzureRM은 계속 지원되므로 사용자는 AzureRM에서 마이그레이션할 필요가 없습니다.그러나 모든 새로운 Azure PowerShell 기능은 Az&rsquo;에&lsquo;만 표시됩니다. Az에는 마이그레이션을 용이하게 하는 새로운 기능이 있으며, <a href="https://aka.ms/azps-migration-guide" target="_blank">Az 1.0 마이그레이션 가이드</a>에서 자세히 설명합니다.AzureRM용으로 작성된 스크립트가 있는 경우 마이그레이션에 대한 세 가지 경로가 있습니다.</p>
+
+
+  <ul>
+   <li>기존 스크립트를 주로 대화형으로 Azure PowerShell 사용하고 스크립트가 거의 없는 사용자를 위해 기존 스크립트를 Az &ndash; 로 변환합니다. 가장 간단한 옵션은 Az를 설치할 때 AzureRM을 제거하는 것입니다.Az 모듈에 &lsquo;포함된 Uninstall-AzureRm&rsquo; cmdlet을 사용하여 이 작업을 수행할 수 있습니다.&nbsp;</li>
+   <li>Az 및 AzureRM 스크립트를 별도로 유지하고 별도의 세션에서 실행하면 동일한 PowerShell 세션에서 &ndash; Az 및 AzureRM을 실행할 수 없습니다. 그러나 스크립트에서 Az 또는 AzureRM을 사용하도록 주의하는 경우 별도의 세션에서 각 모듈을 사용하여 두 모듈을 설치하고 스크립트를 실행할 수 있습니다.&nbsp;</li>
+   <li>PowerShell Core가 Windows PowerShell 5.1과 함께 설치되므로 PowerShell Core &ndash; 에 Az를 설치하면 Windows PowerShell 5.1에서 실행되는 기존 AzureRM 스크립트에 영향을 주지 않고 PowerShell Core에 Az를 설치할 수 있습니다.자세한 내용은 <a href="https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-powershell-core-on-windows?view=powershell-6" target="_blank">Windows PowerShell Core 설치 가이드</a>를 참조하세요.</li>
+  </ul>
+
+
+  <h2>인증 변경 내용</h2>
+
+
+  <p>Az 모듈은 플랫폼 간이므로 Connect-AzureRmAccount 지원하는 일부 인증 메커니즘은 일부 플랫폼에서 지원되지 않으므로 Connect-AzAccount cmdlet의 Az 1.0 버전에서 변경되거나 제거되었습니다.이러한 인증 메커니즘 중 일부는 이후 버전에서 사용하도록 설정됩니다.</p>
+
+
+  <ul>
+   <li>PSCredential을 사용한 사용자 로그인 지원: 이 기능은 현재 Az 1.0에서 사용하지 않도록 설정되어 있지만 2019년 1월 15일 릴리스에서 Windows PowerShell 5.1에 대해서만 사용하도록 설정됩니다. 이 시나리오는 제한된 경우를 제외하고 스크립트를 인증하는 메커니즘으로 권장되지 않습니다. 대신 스크립트는 <a href="https://docs.microsoft.com/en-us/powershell/azure/authenticate-azureps" target="_blank">Azure PowerShell</a> 로그인에 &ldquo; 설명된 대로 서비스 주체 인증을 사용해야 합니다.&rdquo;</li>
+   <li>자동 로그인 대화 상자를 사용하여 대화형 로그인 지원: AzureRM에서 대화형 사용자 로그인은 사용자가 자격 증명을 입력하는 웹 페이지를 자동으로 표시합니다. Az 1.0에서는 아래 그림과 같이 사용자가 디바이스 로그인 페이지에 브라우저를 열고 자격 증명을 제공하기 전에 코드를 입력하는 디바이스 코드 인증으로 바뀝니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e0a3f7d9-7e12-41bb-9ff8-ed2cfffef71f.png"><img alt="Device Login" border="0" height="797" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c3c621d-5525-46bd-8b1b-171dce323e45.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="디바이스 로그인" width="1439"></a></p>
+
+
+  <p>자동 웹 페이지 로그인 디스플레이가 있는 대화형 로그인은 2019년 1월 15일 릴리스에서만 Windows PowerShell 5.1에 사용하도록 설정되며 2019년 초에 모든 플랫폼에서 지원됩니다.</p>
+
+
+  <h2>Azure Automation 지원</h2>
+
+
+  <p>Az 모듈은 Windows PowerShell 5.1에서 실행할 수 있지만 .NET Framework 버전 4.7.2 이상이 필요합니다.Azure Automation 클라우드 작업자는 현재 .NET Framework 버전 4.6.1을 지원합니다. Azure Automation은 .NET 버전 4.7.2를 지원하도록 클라우드 작업자를 업데이트하고 있으며, 이러한 새 작업자가 배포될 때까지는 Azure Automation 클라우드 Runbook에서 Az를 사용할 수 없습니다.&nbsp;</p>
+
+
+  <p>Azure Automation 팀은 2019년 3월 15일까지 .NET 4.7.2를 지원하는 클라우드 작업자를 모든 Azure 환경 및 지역에 배포할 계획입니다. 새해에 이 출시가 진행됨에 따라 더 많은 공지 사항이 표시될 것으로 예상됩니다.<a href="https://aka.ms/azps-announce" target="_blank">자세한 내용은 Az 공지 페이지에서</a> 확인할 수 있습니다.</p>
+
+
+  <h2>사용해 보기</h2>
+
+
+  <p>오픈 소스인 Az는 2018년 12월 18일에 버전 1.0을 배송했습니다. PowerShell 갤러리에서 Az를 설치할 수 있으며 코드를 진행하려는 경우 <a href="https://github.com/Azure/azure-powershell" target="_blank">Azure PowerShell GitHub 리포지토리</a>를 확인할 수 있습니다.</p>
+
+
+  <p>새로운 플랫폼 간 Az 모듈을 설치하고 사용해 보도록 초대하고 싶습니다. 기본 제공 Send-Feedback cmdlet을 사용하거나 <a href="https://github.com/Azure/azure-powershell/issues" target="_blank">문제를 제출하여</a> GitHub 통해 Az와 관련된 질문, 의견 또는 문제를 듣기를 기대합니다.</p>

@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c522118670b33039041fd9ce9655325565c775de
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906295"
+Slug: annoucing-new-kubernetes-jenkins-plugins-for-azure
+Title: Azure Container Service 및 컨테이너 에이전트 플러그 인을 & Kubernetes에 배포 발표
+Summary: Kubernetes에 대한 Azure 지원에 네이티브 Jenkins를 출시하게 되어 기쁩니다. 컨테이너 에이전트를 사용하여 쉽게 빌드하고 Azure Container Service에서 Kubernetes 클러스터를 배포할 수 있습니다. Jenkins World 2017에서 만나보세요!
+Content: >-
+  <h2>Kubernetes 및 Azure Container Service용 지속적인 배포 플러그 인</h2>
+
+
+  <p>어떤 ACS 오케스트레이터를 선택하든 동일한 간단한 플러그 인을 사용하여 Jenkins에서 해당 클러스터에 지속적으로 배포할 수 있도록 Jenkins용 ACS(Azure Container Service) 플러그 인을 만들었습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/container-service/">Azure Container Service</a> 는 특히 Azure용으로 인기 있는 오픈 소스 도구 및 기술의 구성을 최적화합니다. 컨테이너와 애플리케이션 구성 모두에 이식성을 제공하는 개방형 솔루션을 얻을 수 있습니다. 크기, 호스트 수 및 오케스트레이터 도구(<a href="https://docs.microsoft.com/en-us/azure/container-service/dcos-swarm/container-service-swarm-walkthrough">Docker Swarm</a>, <a href="https://docs.microsoft.com/en-us/azure/container-service/kubernetes/container-service-intro-kubernetes">Kubernetes</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/container-service/dcos-swarm/container-service-dcos-quickstart">DC/OS</a>)를 선택합니다. 컨테이너 서비스는 다른 모든 것을 처리합니다.</p>
+
+
+  <p>ACS 플러그 인에서 작업할 때 Jenkins 환경을 조사하고 Jenkins에서 Kubernetes로 네이티브 연속 배포를 허용하는 플러그 인을 찾을 수 없습니다&rsquo;. 그래서 우리는 Jenkins와 Kubernetes 커뮤니티 모두에게 매우 가치가있을 것이라고 생각하기 때문에 하나를 만들기로 결정했습니다. ACS 플러그 인은 Kubernetes 지원에 대한 종속성으로 이 플러그 인을 사용합니다.</p>
+
+
+  <p>다음은 미리 보기로&#39;.</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/k8sdemo.gif" style="width: 740px; float: none; margin-left: auto; display: block; margin-right: auto"></p>
+
+
+  <h2>Azure Container Service 및 Azure Container Instances용 Jenkins 에이전트 플러그 인</h2>
+
+
+  <p>Jenkins는 많은 수의 에이전트를 사용하여 parrallel에서 많은 수의 작업을 실행할 수 있습니다. <a href="https://aka.ms/azjenkinsagents">VM 에이전트 플러그 인</a>을 사용하면 새 작업이 있을 때 Jenkins VM 에이전트를 Azure에 동적으로 프로비전하고 작업이 완료되면 VM 프로비전을 해제합니다. <a href="https://ci.jenkins.io/">ci.jenkins.io</a> 플러그 인을 광범위하게 사용합니다. 월별 빌드 비용을 75% 절감할 수 있었던 .NET Core 팀도 마찬가지입니다.</p>
+
+
+  <p>이제 VM 대신 필요한 모든 도구 및 환경 설정이 있는 Docker 이미지를 기반으로&#39;프로비전하는 데 몇 분이 아닌 몇 초가 걸리는 컨테이너 에이전트를 만들 수 있습니다. 새 컨테이너를 만들어 빌드를 실행하고 빌드가 완료된 후 프로비저닝 비용에 대한 걱정 없이 중단할 수 있습니다. 또한 <a href="https://azure.microsoft.com/en-us/services/container-instances/">ACI(Azure Container Instances)</a>를 실험하려는 경우 바로 진행하여 플러그 인에서 ACI도 지원하므로 사용해 볼 수 있습니다.</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/containerAgent.png" style="width: 740px; float: none; margin-left: auto; display: block; margin-right: auto"></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이러한 모든 플러그 인은 <a href="https://www.cloudbees.com/jenkinsworld">Jenkins World 2017</a>에서 선보일 예정이며, 최신 Java 앱을 빌드하고 Linux의 Azure App Service 및 Azure의 Kubernetes 클러스터에 배포하는 방법을 보여 드립니다. <a href="https://jenkinsworld20162017.sched.com/event/AK4K/azure-devops-open-source-integrations">Azure DevOps 오픈 소스 통합</a>에 대한 우리의 이야기를 잡아해야합니다. <a href="https://www.cloudbees.com/jenkinsworld">Jenkins World 2017</a>에서 만나보세요!</p>

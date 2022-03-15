@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a7f025108ef5f3e5982b8a349b5257c6173cf0cf
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900117"
+Slug: unlock-query-performance-with-sql-data-warehouse-using-graphical-execution-plans
+Title: 그래픽 실행 계획을 사용하여 SQL Data Warehouse를 사용하여 쿼리 성능 잠금 해제
+Summary: 이제 SQL Server Management Studio(SSMS) 내의 그래픽 실행 계획 기능이 SQL Data Warehouse(SQL DW)에서 지원됩니다. 단추를 클릭하면 SQL DW에 대한 분산 쿼리 계획의 그래픽 표현을 만들 수 있습니다.
+Content: >-
+  <p>이제 SQL Server Management Studio(SSMS) 내의 그래픽 실행 계획 기능이 SQL Data Warehouse(SQL DW)에서 지원됩니다. 단추를 클릭하면 SQL DW에 대한 분산 쿼리 계획의 그래픽 표현을 만들 수 있습니다.</p>
+
+
+  <p>이 기능이 향상되기 전에 SQL DW에 대한 쿼리 문제 해결은 종종 지루한 프로세스였으며 <a href="https://docs.microsoft.com/en-us/sql/t-sql/queries/explain-transact-sql" target="_blank">EXPLAIN 명령을</a> 실행해야 했습니다. SQL 이제 DW 고객은 쿼리 계획을 원활하고 시각적으로 디버그하여 SSMS 창 내에서 직접 성능 병목 상태를 식별할 수 있습니다. 이 환경은 느린 분산 쿼리 계획의 가장 일반적인 이유인 비용이 많이 드는 데이터 이동 작업을 표시하여 쿼리 문제 해결 환경을 확장합니다. 다음은 그래픽 실행 계획을 활용하는 SQL DW를 사용하여 분산 쿼리 계획의 문제를 해결하는 간단한 예제입니다.</p>
+
+
+  <p>아래 보기에는 쿼리에 대한 예상 실행 계획이 표시됩니다. 여기서 볼 수 있듯이 서로 다른 열에 분산된 두 테이블 사이에 조인이 있을 때 발생하는 호환되지 않는 조인입니다. 호환되지 않는 조인은 ShuffleMove 작업을 만듭니다. 여기서 결과를 사용자에게 다시 스트리밍하기 전에 로컬에서 조인을 충족하기 위해 모든 배포에 임시 테이블이 만들어집니다. ShuffleMove는 이 쿼리의 성능 병목 상태가 되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d1084fc8-f0d6-4af3-bdac-dc9ea7dd2968.png"><img alt="ssms_dw_execution_plan_1" border="0" height="756" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f4844612-a0b4-4eae-a9da-e49f662627bc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ssms_dw_execution_plan_1" width="1199"></a></p>
+
+
+  <p>테이블 정의를 자세히 살펴보면 조인되는 두 테이블이 서로 다른 열에 분산되어 있음을 알 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84776ead-d451-42da-b341-04e12a8dd989.png"><img alt="ssms_dw_execution_plan_2 (002)" border="0" height="820" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/32c63b0d-f5e0-4464-83f3-bcc3e50b519d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ssms_dw_execution_plan_2 (002)" width="451"></a></p>
+
+
+  <p>예상 그래픽 실행 계획을 활용하여 적절한 열의 <a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-tables-distribute#resolve-a-distribution-column-problem">테이블을 재배포하여</a> ShuffleMove 작업을 제거하여 이 쿼리의 성능을 향상시킬 수 있음을 확인했습니다.</p>
+
+
+  <p>분산 SQL 쿼리 문제 해결 및 조정이 더 쉬워졌습니다. 오늘 이 기능을 사용하려면 최신 SSMS 릴리스를 다운로드하세요! POC에 대한 도움이 필요한 경우 <a href="https://azure.microsoft.com/en-us/services/sql-data-warehouse/information-request/">직접 문의하세요</a>. Twitter에서 팔로우하여 최신 Azure SQL DW 뉴스 및 기능을 최신 상태로 유지<a href="https://twitter.com/AzureSQLDW">@AzureSQLDW</a></p>

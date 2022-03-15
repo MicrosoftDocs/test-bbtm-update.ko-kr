@@ -1,0 +1,74 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6c3b9f65f03c56fde0f094c373224bb76678320e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906527"
+Slug: azure-site-recovery-twitter-ama
+Title: Azure Site Recovery 팀이 Ask Me Anything 세션을 호스트하고 있습니다.
+Summary: 'ASR(Azure Site Recovery) 팀은 2019년 1월 22일 화요일 오전 8시 30분부터 태평양 표준시 오전 10:00까지 트위터에서 AMA(Ask Me Anything) 세션을 개최합니다. #ASR_AMA 트윗할 @AzSiteRecovery @AzureSupport 수 있습니다.'
+Content: >-
+  <p><strong>곧 #ASR_AMA 질문을 시작할 수 있습니다!</strong></p>
+
+
+  <p>ASR(Azure Site Recovery) 팀은 2019년 1월 22일 화요일 오전 8시 30분부터 태평양 표준시 오전 10:00까지 트위터에서 AMA(Ask Me Anything) 세션을 개최합니다. #ASR_AMA 트윗할 @AzSiteRecovery @AzureSupport 수 있습니다.</p>
+
+
+  <h2>AMA 세션은 무엇인가&rsquo;요?</h2>
+
+
+  <p>우리는&#39;ASR 제품 팀의 사람들이 당신이 가진 질문에 대답 할 수 있습니다. 제품, 서비스 또는 우리 팀에 대해 무엇이든 물어볼 수 있습니다!</p>
+
+
+  <h2>AMA를 수행하는 이유는 무엇인가요?</h2>
+
+
+  <p>우리는 고객과 지역 사회에서 손을 내밀고 배우는 것을 좋아합니다. ASR을 사용하는 방법과 사용자 환경이 어떻게 사용되었는지 알고 싶습니다. 귀하의 질문은 서비스를 개선시킬 수 있는 방법에 대한 인사이트를 제공합니다.</p>
+
+
+  <h2>Twitter에서 질문하려면 어떻게 하나요?</h2>
+
+
+  <p>트윗에서 #ASR_AMA 언급하여 질문을 할 수 있습니다. 이 해시태그를 사용하여 게시한 첫 번째 트윗에 회신하여 여러 트윗에 대한 질문을 할 수 있습니다. 직접 메시지를 표시 @AzSiteRecovery 하거나 @AzureSupport 질문을 비공개로 유지하려는 경우에도 가능합니다. 지정된 시간에 이벤트에 참석하지 못할 수 있는 다른 표준 시간대에 있는 고객의 경우 AMA(1월 21일 월요일)의 예약된 시간 하루 전에 질문을 게시할 수 있으며 이벤트 시간 동안 답변해 드립니다. 예약된 시간 동안 라이브 대화를 할 수 있습니다. 추가 후속 조치가 있는 경우 대화 후 이벤트 시간을 계속 진행합니다. 가서 우리를 트윗!</p>
+
+
+  <h2>Who 있을 것인가?</h2>
+
+
+  <p>물론이죠! ASR 팀의 프로그램 관리자도 참여할&#39;있습니다.</p>
+
+
+  <p>다음 항목에 대한 질문이 있나요? AMA로 가져옵니다.</p>
+
+
+  <ul>
+      <li>주 Azure 지역에서 보조 Azure 지역으로 VM 재해 복구</li>
+      <li>VMware에서 Azure로 VM 재해 복구</li>
+      <li>Hyper-V에서 Azure로 VM 재해 복구</li>
+      <li>물리적 서버를 Azure로 재해 복구</li>
+  </ul>
+
+
+  <h2>StackOverflow 또는 MSDN 대신 여기에 질문을 해야 하는 이유는 무엇인가요? 난 정말 아무것도 물어 할 수 있습니까?</h2>
+
+
+  <p>AMA는 우리에게 아무것도 물어 좋은 장소입니다. StackOverflow 및 MSDN에는 질문을 할 수 있는 제한이 있습니다. AMA&rsquo;를 사용하면 팀에서 직접 답변을 얻고 이러한 제품 및 서비스를 빌드하는 사람들과 대화를 나눌 수 있습니다.</p>
+
+
+  <p>다음은 몇 가지 질문 아이디어입니다.</p>
+
+
+  <ul>
+      <li>ASR이란?</li>
+      <li>ASR 가격은 어떻게 책정하나요?</li>
+      <li>관리 디스크를 사용하여 Azure VM의 재해 복구를 수행할 수 있나요?</li>
+      <li>ASR이 복제를 암호화하나요?</li>
+      <li>ASR을 사용하여 데이터를 얼마나 자주 복제할 수 있나요?</li>
+  </ul>
+
+
+  <p>계속 진행하여 퍼블릭 제품 또는 팀에 대해 문의하세요. 릴리스되지 않은 기능, 향후 계획 및 심층적인 디버깅이 필요한 문제에 대해서는 언급할 수 없습니다.</p>
+
+
+  <p>우리는&#39;당신과 대화를 기대하고 있습니다!</p>

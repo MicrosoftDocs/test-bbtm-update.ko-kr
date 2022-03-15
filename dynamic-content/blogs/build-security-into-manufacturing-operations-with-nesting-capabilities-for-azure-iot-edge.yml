@@ -1,0 +1,94 @@
+### YamlMime:Yaml
+ms.openlocfilehash: eadfab7af70aa608284f2001f56485b80a9bcb0d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907274"
+Slug: build-security-into-manufacturing-operations-with-nesting-capabilities-for-azure-iot-edge
+Title: Azure IoT Edge에 대한 중첩 기능을 사용하여 안전한 제조 작업 빌드
+Summary: '제조 산업은 생산성을 최적화하고, 효율성을 얻고, 가동 시간을 늘리고, 지속 가능성 목표를 달성하기 위해 IoT 기술을 빠르게 채택하고 있습니다. '
+Content: >-
+  <p>제조 산업은 생산성을 최적화하고, 효율성을 얻고, 가동 시간을 늘리고, 지속 가능성 목표를 달성하기 위해 IoT(사물 인터넷) 기술을 빠르게 채택하고 있습니다. 조직이 연결된 디바이스의 에코시스템에서 IoT를 활용하려고 함에 따라 보안 및 규정 준수는 계속해서 대화의 최전선에 서 있습니다.</p>
+
+
+  <p>우리의 약속은 주류 채택을 위해 IoT를 단순화하는 것입니다. 따라서 네트워크 격리를 위한 ANSI/ISA-95 표준을 준수하는 <a href="https://aka.ms/iotedge-nested-tutorial" target="_blank">Microsoft Azure IoT Edge에 대한 중첩 기능</a>의 일반 공급이 발표됩니다. 이 IoT Edge 솔루션은 Azure Defender for IoT, Azure IoT <a href="https://techcommunity.microsoft.com/t5/internet-of-things/secure-your-iot-edge-compute-today-with-enclaves/ba-p/1685143" target="_blank">Edge 보안 enclave</a>, <a href="https://www.microsoft.com/security/blog/2021/01/27/announcing-the-general-availability-of-azure-defender-for-iot/" target="_blank">IoT Hub용</a> 디바이스 업데이트 및 <a href="https://azure.microsoft.com/services/digital-twins/" target="_blank">Azure Digital Twins</a>를 포함하여 기업이 <a href="https://techcommunity.microsoft.com/t5/internet-of-things/streamline-device-management-with-device-update-for-iot-hub-now/ba-p/2167663" target="_blank">IoT</a>의 혜택을 더 쉽게 활용할 수 있도록 하는 다른 중요한 발전을 추가합니다.</p>
+
+
+  <h2>중첩된 Azure IoT Edge 디바이스를 사용하여 값 잠금 해제</h2>
+
+
+  <p>스마트 제조는 딜레마에 직면해 있습니다. 제조업체는 AI(인공 지능&nbsp;) 기반 예측 유지 관리와 같은 최신 클라우드 규모의 솔루션을 사용하여 운영 우수성을 향상시키고자 합니다. 그러나 보안 및 안전 문제로 인해 산업 시스템을 인터넷에 쉽게 연결할 수 없는 경우가 많습니다. 수년 동안 시설 내의 네트워크 분리는 ANSI/ISA-95 표준에서 권장하는 보안 원칙으로, 잠재적으로 위험한 위반을 방지하기 위해 높은 보안 요구 사항을 가진 산업 전반에 걸쳐 널리 채택되어 왔습니다. 그러나 이는 클라우드와의 온-프레미스 네트워크 분리가 불가능했음&mdash;을 의미합니다.</p>
+
+
+  <p>자동화 피라미드를 통해 IoT Edge 디바이스의 계층 구조를 사용하도록 설정하면 제조업체는 시스템에서 데이터를 수집하고, 집계하고, 시스템을 손상시키지 않고 클라우드로 전달할 수 있습니다. 단일 IoT Edge 디바이스의 디바이스 관리 및 통신 기능도 IoT Edge 디바이스의 계층 구조를 통해 작동하도록 확장되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2698a1e1-6e44-4a14-9b8e-af811077c148.png"><img alt="Hierarchy of IoT Edge devices to extract data from the automation pyramid" border="0" height="680" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f325d094-7d44-408a-92c2-1bf808ce2f54.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p><em>그림 1: 자동화 피라미드에서 데이터를 추출하는 IoT Edge 디바이스의 계층 구조</em></p>
+
+
+  <h2>Edge에서 위협 인텔리전스의 강력한 성능 발휘</h2>
+
+
+  <p>Azure Defender for IoT는 IoT Edge의 중첩 기능과 함께 작동하여 보안을 강화할 수 있습니다. 생산 중단, 민감한 지적 재산권 도용 및 안전 및 환경 인시던트를 유발할 수 있는 사이버 공격의 위협으로부터 브라운필드 및 그린필드 IoT/OT 환경을 모두 보호하기 위한 실용적이고 에이전트 없는 네트워크 계층 솔루션입니다. 네트워크 또는 안정성에 영향을 주지 않고 위협, 변칙 또는 무단 활동에 대한 산업 네트워크를 지속적으로 모니터링합니다.</p>
+
+
+  <h2>IoT Edge에 중첩을 사용하여 작업 개선</h2>
+
+
+  <p>테트라 팍, 도요타 인더스트리, 소프트링 인더스트리 와 같은 세계&rsquo; 최대 제조업체 중 일부는 이미 계층화된 네트워크를 통해 추가 가치를 제공하기 위해 IoT Edge 디바이스의 구조를 검토하고&nbsp; 있습니다.</p>
+
+
+  <h3>Tetra Pak, IoT Edge 디바이스 계층 구조로 디지털 서비스 확장</h3>
+
+
+  <p>지속 가능성, 혁신 및 품질에 중점을 둔 식품 및 포장 산업의 선구자인 Tetra Pak은 Azure IoT 플랫폼을 사용하여 <a href="https://aka.ms/Tetra_Pak_IoT" target="_blank">새로운 서비스를 제공하고 고객&rsquo; 운영을 개선하고 있습니다</a>. 새로운 Tetra Pak 디지털 플랫폼의 핵심은 머신 데이터 전송 및 에지에서 실행되는 애플리케이션의 오케스트레이션을 위해 프로덕션 네트워크와 클라우드 간에 강력하고 안전한 연결을 설정하는 것입니다. 고객&rsquo; 정책 및 계층화된 네트워크를 준수하기 위해 IoT Edge의 새로운 중첩 기능을 사용하는 Tetra Pak은 기술 설계 및 테스트에 대해 Microsoft와 협업한 얼리 어답터입니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;IoT에서 얻을 수 있는 솔루션과 Azure IoT Edge 디바이스에 대한 새로운 중첩 기능을 통해 고객과 함께 기능을 확장하여 더 많은 가치를 제공할 수 있습니다.&rdquo;&mdash;</em> Magnus Wijk, System Architect IIoT, Tetra Pak.</p>
+
+
+  <h3>도요타 인더스트리, 회사 전체 IoT 플랫폼 기능 확장</h3>
+
+
+  <p>도요타 인더스트리는 다양한 제조 관련 기업에서 사업을 운영하고 있으며 <a href="https://aka.ms/Toyota_Industries_IoT" target="_blank">, 데이터를 수집, 저장 및 분석하는 회사 전체의 표준화된 IoT 플랫폼인</a> GAUDI를 구축했습니다. 제조 사이트를 지속적으로 개선하기 위한 노력의 일환으로, 회사는 장비 데이터에서 결함의 징후를 감지하고 최적의 매개 변수를 반환하기 위한 AI 기반 메커니즘을 수립했습니다.</p>
+
+
+  <p>도요타 인더스트리는 엄격한 네트워킹 요구 사항에 따라 중첩된 에지 기능을 활용하여 공장과 회사 네트워크 간에 다층 구조를 구축하고자 합니다.</p>
+
+
+  <h3>제조 데이터 통합 가능성을 높이는 소프트 산업</h3>
+
+
+  <p>Microsoft 파트너인 Softing은 OT/IT 통합을 위한 제품 및 솔루션의 연결을 전문으로 합니다. 컨테이너 기술을 지원하는 edgeConnector Siemens와 같은 제품은 Azure IoT Edge에 배포하고 Azure 플랫폼을 통해 완전히 관리할 수 있습니다. 구성 요소는 일반적으로 계층화된 토폴로지의 낮은 네트워크 수준에서 자동화 네트워크 내에서 실행되어야 합니다. 중첩 토폴로지에 대한 Azure IoT Edge 지원을 통해 Softing 고객은 구성 요소에 직접 인터넷 연결이 없&rsquo;더라도 <a href="https://aka.ms/Softing_marketplace" target="_blank">효율적인 방식으로 회사&rsquo; 구성 요소를 관리할</a> 수 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;연결 제품은 Azure IoT Edge와 원활하게 통합됩니다. Azure IoT 프레임워크 내에서 중첩된 네트워크 토폴로지로 고객에게 안전하고 확장 가능한 데이터 통합을 계속 제공할 수 있습니다.&rdquo;&mdash;</em> Dr. Christopher Anhalt, VP Product Marketing, Softing Industrial</p>
+
+
+  <h2>IoT Edge에 중첩 기능을 사용하여 IoT의 이점 활용</h2>
+
+
+  <p>IoT Edge에 대한 중첩 기능은 Microsoft가 산업용 IoT 사용자를 위해 제공하는 보안 중심의 유연한 솔루션에 추가됩니다. 4월 12-16일에 <a href="https://cloudblogs.microsoft.com/industry-blog/manufacturing/2021/04/01/top-5-things-to-see-and-do-at-hannover-messe-digital-edition/" target="_blank">Hannover Messe</a>에 참여하여 Azure IoT 제품 및 서비스를 통해 IoT 디바이스 연결, 관리 및 보안 프로세스를 간소화하고 조직이 IoT에서 성공하도록 지원하는 방법을 알아봅니다.</p>
+
+
+  <p>파트너와 고객은 이 <a href="https://aka.ms/iotedge-nested-tutorial" target="_blank">중첩된 IoT Edge 자습서</a> 및 GitHub 샘플에서 이 새로운 솔루션<a href="https://github.com/Azure-Samples/iot-edge-for-iiot" target="_blank">에 대해</a> 자세히 알아볼 수 있습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="540" src=" https://channel9.msdn.com/Shows/Internet-of-Things-Show/Nested-IoT-Edge-devices-and-offline-dashboards/player " width="960"></iframe></p>
+
+
+  <h2>제조 리소스의 추가 IoT</h2>
+
+
+  <ul>
+      <li><a href="https://aka.ms/cloudformanufacturing" target="_blank">Microsoft Cloud for Manufacturing</a>에 대해 자세히 알아보세요.</li>
+      <li><a href="https://azure.microsoft.com/en-us/resources/iot-signals/" target="_blank">Microsoft IoT Signals 보고서의</a> 최신 제조 인사이트를 참조하세요.</li>
+      <li><a href="https://azure.microsoft.com/en-us/resources/intelligent-manufacturing-azure/" target="_blank">인텔리전트 제조 백서를</a> 읽어 보세요.</li>
+      <li>I <a href="https://aka.ms/AAbtpkx" target="_blank">Wish I Knew 비디오 시리즈에서</a> 제조 고객 및 파트너의 의견을 듣습니다.</li>
+      <li><a href="https://techcommunity.microsoft.com/t5/internet-of-things/iot-plug-and-play-simplifies-iot-adoption-enabling-intelligent/ba-p/2167059" target="_blank">IoT 플러그 앤 플레이</a>와의 디바이스 통합을 간소화합니다.</li>
+      <li><a href="https://www.microsoft.com/azure/partners/azure-certified" target="_blank">Azure Certified Device 프로그램을</a> 통해 산업용 IoT 솔루션에 대한 디바이스를 인증합니다.</li>
+  </ul>

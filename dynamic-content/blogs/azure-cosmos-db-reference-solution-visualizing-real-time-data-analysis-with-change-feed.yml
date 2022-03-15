@@ -1,0 +1,56 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1aad1cc69d98e585e527fa417f4402c7a757f44c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900009"
+Slug: azure-cosmos-db-reference-solution-visualizing-real-time-data-analysis-with-change-feed
+Title: 'Azure #CosmosDB 참조 솔루션: 변경 피드를 사용하여 실시간 데이터 분석 시각화'
+Summary: Cosmos DB Explorer 인턴은 Azure Cosmos DB 변경 피드 기능(+ Azure Functions, Azure Event Hubs, Azure Stream Analytics, Power BI)을 활용하는 참조 솔루션을 출시하게 되어 기쁩니다.
+Content: >-
+  <p><em>이 블로그 게시물은 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdevki98%2F&amp;data=02%7C01%7C%7Cb8c16f6cbe904f31db2008d5fe3aa37d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636694450153668257&amp;sdata=YGv7AeSx4X%2ByDqZ0ZJ5lCjOqEfFGkJGXr4LjJKSMTmw%3D&amp;reserved=0" target="_blank">데브키 트리베디</a>, <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fserena-davis-b21629120%2F&amp;data=02%7C01%7C%7Cb8c16f6cbe904f31db2008d5fe3aa37d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636694450153668257&amp;sdata=aJiwhyB%2BFjC9Pd4XwEQrN37c7erUQWXnI350oi1xv4w%3D&amp;reserved=0" target="_blank">세레나 데이비스</a>, <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fpascalhabineza%2F&amp;data=02%7C01%7C%7Cb8c16f6cbe904f31db2008d5fe3aa37d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636694450153668257&amp;sdata=d7LYms1rCSajXfgU2wS1P4Hb5Fi%2FIR%2B%2BDRpxGPCzMP0%3D&amp;reserved=0" target="_blank">파스칼 하비네자가</a> 공동 저술했습니다.</em></p>
+
+
+  <p><em>Cosmos DB Explorer 인턴은 Azure Cosmos DB 변경 피드 기능(+ Azure Functions, Azure Event Hubs, Azure Stream Analytics, Power BI)을 활용하는 <a href="https://aka.ms/cosmosdbchangefeedlab" target="_blank">참조 솔루션을</a> 출시하게 되어 기쁩니다. 이 솔루션은 데이터를 Cosmos DB에 업로드하는 것부터 변경 피드 트리거 구현, Power BI 의미 있는 방식으로 해당 데이터를 시각화하는 등 전체 파이프라인을 통해 사용자를 안내하는 실습 랩을 제공합니다.</em></p>
+
+
+  <p>이 참조 솔루션을 사용하면 기업은 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li><strong>실시간으로</strong> 판매 및 사이트 활동 추적&nbsp;</li>
+   <li>데이터를 조작하여 유용한 메트릭 <strong>만</strong> 표시</li>
+   <li>데이터를 처리할 특정 시간 창 선택</li>
+  </ul>
+
+
+  <p>Cosmos DB 변경 피드는 Cosmos DB에서 수정되거나 삽입된 레코드의 연속 및 증분 피드를 가져오는 자동 메커니즘을 제공합니다. 가장 인기 있는 몇 가지 사용 사례는 다음과 같습니다.</p>
+
+
+  <ol>
+   <li>이벤트 기반 아키텍처 내에서 마이크로 서비스 및 함수 트리거</li>
+   <li>보조 데이터 저장소에 데이터 복제</li>
+   <li>실시간 데이터 처리</li>
+  </ol>
+
+
+  <p>이 참조 솔루션은 특히 전자 상거래 회사의 요구에 맞게 실시간 데이터 처리에 중점을 둡니다. 예를 들어 전자 상거래 회사는 현재 구매한 가장 인기 있는 제품을 추적할 수 있지만, 일반적으로 고객의 카트에 보고 추가되지만 구매하지 않는 제품을 식별하여 광고 및 가격 책정 전략을 개선할 수 있습니다. 비즈니스는 매시간, 매일 및 주간 수익을 알고 싶을 수 있습니다. 이러한 메트릭은 비즈니스에서 광고, 재고 투자 및 사용자 환경 전략을 개발하는 데 도움이 될 수 있습니다. 기업은 이 솔루션을 사용하여 요구 사항에 맞게 이러한 메트릭을 사용자 지정할 수 있으며 변경 피드를 사용하여 실시간으로 관찰할 수 있습니다.<br>&nbsp;&nbsp; <br>
+
+  이 참조 솔루션은 상호 작용을 위해 위의 활동을 모델링하고 Azure 리소스를 배포하는 프로세스를 설명합니다. 전자 상거래 컨텍스트 내에서 실시간 데이터 처리에 중점을 두지만 다양한 도메인에 적용할 수 있습니다.<br>&nbsp;&nbsp; <br>
+
+  이 솔루션 배포의 결과는 아래 그림과 같이 <strong>실시간으로</strong> 업데이트되는 대시보드입니다. 사용자는 대시보드의 요구 사항에 맞게 사용자 지정할 수 있는 메트릭을 사용하여 비즈니스 성과를 분석할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8b727c02-4b9d-482e-bab8-4ea0f9e1e99d.png"><img width="636" height="353" title="이미지" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" alt="image" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/128ac750-8a5b-4ef7-8c9a-42a149832c82.png" border="0"></a>&nbsp;<br>
+
+  아래 파이프라인은 솔루션이 Microsoft Azure 사용하여 Power BI 사용하여 데이터 생성에서 실시간 데이터 시각화로 쇼핑객의 데이터를 처리하는 방법을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2938c725-230d-4cdf-9f8a-c0e2eeefecd2.png"><img width="656" height="89" title="이미지" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" alt="image" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/19921f64-5c97-4c7b-81c8-608eb2a192e1.png" border="0"></a> 온라인 쇼핑객이 데이터를 만들면 Cosmos DB에 처리되고 기록됩니다. 이러한 데이터 이벤트는 나중에 사용하기 위해 저장됩니다. 이 경우 변경 피드가 인수되기 시작합니다. 상호 작용의 모든 인스턴스에 대해 새 이벤트가 만들어지고 Cosmos DB로 푸시될 때 변경 피드는 해당 이벤트를 레코드에 추가합니다. 변경 피드는 이벤트를 추가할 때마다 Azure 함수를 트리거합니다. 함수는 삽입된 각 문서를 반복하여 이벤트 허브 클라이언트를 통해 Azure Event Hub로 보냅니다. 다음으로, Azure Stream Analytics는 Event Hub에서 데이터를 쿼리하고 결과를 사용자 시각화를 위해 Power BI 전송하여 의미 있는 메트릭을 작성합니다.</p>
+
+
+  <p><a href="https://www.youtube.com/watch?v=AYOiMkvxlzo" target="_blank">Cosmos DB 변경 피드를 사용하여 Real-Time 데이터 분석 시각화</a>를 시청하고 <a href="https://aka.ms/cosmosdbchangefeedlab">변경 피드 랩</a>을 확인하여 비즈니스에서 실시간으로 데이터에서 통찰력 있는 메트릭을 추출하는 애플리케이션을 빌드하는 방법을 알아봅니다.</p><p><a href="https://aka.ms/cosmosdbchangefeedsolution" target="_blank"><img width="480" height="360" title="clip_image001" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" alt="clip_image001" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7ed5ed13-b341-4b4e-9db1-29ea498f5253.jpg" border="0"></a></p>
+
+
+  <p>생각? <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8K_JtWBhupCpepG-HuzNVlUOUdNU0E5VUNRMlpNU1pNTzRCVE1VNE0wOS4u">의견을</a> 보내주세요.</p>

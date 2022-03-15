@@ -1,0 +1,69 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d248477c4b909f90377b08d53c01c8888b7be2c1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907176"
+Slug: iaas-isn-t-your-only-path-to-outsized-gains
+Title: IaaS는 큰 이익을 얻는 유일한 경로가 아닙니다.
+Summary: 최신 클라우드 시대는 IaaS 중심이 아니라 최신 앱 중심입니다. 시장을 선도하는 Azure PaaS 서비스 포트폴리오를 활용하여 혁신적인 애플리케이션을 더 빠르게 빌드 및 배포하고, 자동으로 확장하며, 강력한 Azure 서비스에 쉽게 연결하고 통합할 수 있습니다.
+Content: >-
+  <p>물론 애플리케이션을 클라우드로 이동하고 더 민첩한 DevOps 방법을 채택하면 비용을 절감하고 복잡한 애플리케이션 배포의 효율성을 높일 수 있지만 실제로 큰 이익을 얻으려면 대다수의 개발자가 코딩에 다시 집중합니다. 포레스터 컨설팅에 따르면, 그렇게에서 이득은 거 대 한.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/909415af-b1f8-49e1-8ba3-f3d8210b4517.png"><img alt="PaaS value chart" border="0" height="272" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e5b3d3bf-3ea0-4ce1-9da9-d8b2da0179d1.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="PaaS 값 차트" width="610"></a></p>
+
+
+  <p>예, VM 및 컨테이너에서 클라우드 네이티브 앱을 다시 호스팅하거나 빌드하면 민첩성과 비용 절감이 크게 향상되지만 개발자에게 구성을 관리하고, OS 및 미들웨어를 업데이트하고, 앱을 지원하기 위한 올바른 가상 리소스를 선택하도록 요청하는 것은 생산성을 저하시키는 방해 요소입니다.</p>
+
+
+  <p>최신 클라우드 시대는 IaaS 중심이 아니라 최신 앱 중심입니다. Azure PaaS(Platform-as-a-Service) 서비스 및 <a href="https://azure.microsoft.com/en-us/marketplace/partners/pivotal/pivotal-cloud-foundryazure-pcf/">Cloud Foundry</a>, <a href="https://azure.microsoft.com/en-us/marketplace/partners/engineyard/engineyardplatformasaservice/">EngineYard</a> 등을 비롯한 <a href="https://azure.microsoft.com/en-us/marketplace/?term=platform">파트너 PaaS 플랫폼</a>의 시장을 선도하는 포트폴리오를 활용하여 혁신적인 애플리케이션을 더 빠르게 빌드 및 배포하고, 자동으로 확장하며, 쉽게 연결하고, <a href="https://azure.microsoft.com/en-us/services/search/">검색</a>, <a href="https://azure.microsoft.com/en-us/services/data-lake-store/">빅 데이터</a>, <a href="https://azure.microsoft.com/en-us/suites/cortana-intelligence-suite/">기계 학습</a>, <a href="https://azure.microsoft.com/en-us/services/data-lake-analytics/">고급 분석</a> 및 <a href="https://azure.microsoft.com/en-us/suites/iot-suite/">IoT</a>를 비롯한 다양한 강력한 Azure 서비스에 통합할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/functions/">Azure Functions</a>, <a href="https://azure.microsoft.com/en-us/services/app-service/">Azure App Service</a>, <a href="https://powerapps.microsoft.com/en-us/tutorials/getting-started/">PowerApps</a> 등을 사용하여 앱을 빌드하면 개발자가 기본 시스템 소프트웨어 또는 가상 구성을 유지할 필요가 없습니다. Azure는 OS, 데이터베이스, 컨테이너 및 기타 요소를 최신 상태로 유지하고 최신 버전 및 패치 &ndash; 로 올바르게 구성하므로 개발자는 비즈니스 가치에 전적으로 집중할 수 있습니다. PaaS는 실제 비즈니스 <a href="https://www.dummies.com/how-to/content/the-business-benefits-of-paas-in-cloud-computing.html">이점을 제공합니다</a>.</p>
+
+
+  <p>얼마나, 당신은 물어? <a href="https://go.forrester.com/">Forrester Consulting</a>은 최신 <a href="https://azure.com/azure-paas-benefits">총 경제 영향 연구에서</a> Azures&rsquo; PaaS 서비스의 현재 고객 수를 인터뷰하고<strong> IaaS에서 PaaS로 마이그레이션하면 466%의 투자 수익률</strong>을 기록했다고 결론을 내렸습니다. 온-프레미스 환경에서 PaaS로 마이그레이션하는 고객의 경우 투자 수익률이 훨씬 더 커질 수 있습니다. PaaS 서비스를 사용하여 애플리케이션을 배포하는 효율성과 속도 때문에 <strong>출시 시간도 50%까지 향상</strong>되었습니다.</p>
+
+
+  <p>실제로, 복합 조직의 경우 Forrester는 아래 그림과 같이 5년 동안 718만 달러의 전반적인 위험 조정 혜택과 127만 달러의 비용을 추정했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7a489509-a1b2-4e4f-b690-6fdab2f65aa4.png"><img alt="PaaS benefits and costs" border="0" height="311" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/49897686-1cb9-4001-8182-89d008f7e5af.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="PaaS 혜택 및 비용" width="610"></a></p>
+
+
+  <p>새 애플리케이션에 대해 생각하고 있나요? 가장 좋은 방법은 Get-go에서 PaaS 애플리케이션으로 작성하는 것입니다. Forrester가 말했듯이 개발자는 환경 설정에 시간을 낭비하지 않고 개발 및 테스트 환경이 일치하는지 확인하는 등 생산성을 높일 수 있습니다.</p>
+
+
+  <p>클라우드로 마이그레이션하시겠습니까? 대부분의 최신 앱처럼 애플리케이션이 3계층(프레젠테이션, 비즈니스 논리 및 데이터베이스)인 경우 웹 프런트 엔드용 <a href="https://azure.microsoft.com/en-us/services/app-service/">Azure App Service</a>, 중간 계층에 대한 <a href="https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/">VM Scale Sets</a>(확장 가능하고 항상 사용 가능한 마이크로 서비스에 대한 <a href="https://azure.microsoft.com/en-us/services/service-fabric/">Service Fabric</a> 포함) 및 관계형 데이터베이스 계층에 대한 <a href="https://azure.microsoft.com/en-us/documentation/articles/data-management-azure-sql-database-and-sql-server-iaas/">Azure SQL</a> 사용하여&nbsp; PaaS 모델로 잘 변환됩니다. 물론, 그건&rsquo; 그냥 시작. PaaS로 변환되면 Azure 서비스를 쉽게 활용하여 빅 데이터 분석, <a href="https://azure.microsoft.com/en-us/services/iot-hub/">IoT 디바이스에서</a> 높은 대역폭 이벤트 수집 및 <a href="https://dev.botframework.com/">챗봇</a> 기능을 추가할 수 있습니다. &rsquo;제한이 없습니다!</p>
+
+
+  <p>Forrester가 보여준 것처럼 보상은 중요합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a6ade07-93ae-438f-ab7a-730722e51546.png"><img alt="PaaS summary benefits" border="0" height="161" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cb8eabea-1cae-42d2-ad34-1136f39f2556.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="PaaS 요약 이점" width="610"></a></p>
+
+
+  <p>또는 미국의 IT 서비스 회사의 창립자인 한 고객이 Azure PaaS 없이 앱을 개발한다고 말 &ldquo;했습니다. 글쎄, 우리는 그것을하지 않았을 것입니다&rsquo;. 솔직히, 필요한 여분의 시간과 자원은 우리가 생성 한 모든 이익을 전멸했을 것입니다.&rdquo; <a href="https://azure.com/azure-paas-benefits">전체 보고서를</a> 사용할 수 있도록 했으며 체크 아웃하는 것이 좋습니다!</p>
+
+
+  <p>PaaS 서비스 활용을 보류했다면 이제 그 결정을 다시 검토할 때입니다. PaaS 서비스를 활용하는 광범위한 개발자 집합에 권한을 부여하고, 배포 모범 사례가 기본적으로 사용되고 있다는 것을 알고 보다 일관된 확장성, 보안 및 고객 만족도를 보장할 수 있습니다. 또한 이 올바른 &ndash; Azure 및 IT 운영 전문가를 위해 학습되고 신뢰할 수 있고 권한이 부여된 사용자에게 보안, 운영 효율성 및 복구 기능을 그대로 둡니다. 이 Forrester 컨설팅 연구는 또한 IT 전문가가 애플리케이션(소프트웨어 업그레이드, 패치)을 관리하고 관리하는 데 필요한 시간이 <strong>80%</strong> 감소하여 이러한 기능에 필요한 인력이 적어 직원이 비즈니스 가치를 더 직접적으로 추가하는 기능에 재할당될 수 있다는 것을 발견했습니다.</p>
+
+
+  <p>따라서 모든 개발자를 VM 및 컨테이너를 빌드, 관리 및 유지 관리해야 하는 DevOps 전문가로 전환하려고 시도하지 않습니다. 코딩은 이를 위해 &ndash; 고용한 것이므로 이 가치를 제공하는 데 집중할 수&rsquo; 있습니다.</p>
+
+
+  <p>Azure만 다음을 통해 회사의 모든 코더에 권한을 부여하는 도구를 제공합니다.</p>
+
+
+  <ul>
+   <li>경량 디자이너 &ndash; <a href="https://powerapps.microsoft.com/en-us/tutorials/getting-started/">PowerApps</a></li>
+   <li>스크립트 마스터 &ndash; <a href="https://azure.microsoft.com/en-us/blog/introducing-azure-functions/">Azure Functions</a></li>
+   <li>웹 및 모바일 개발자 &ndash; <a href="https://tryappservice.azure.com/">Azure App Service</a></li>
+   <li>SaaS 앱 사용자 지정자 &ndash; <a href="https://dynamicsxrmtools.codeplex.com/">Dynamics XRM</a></li>
+   <li>마이크로 서비스 코더 &ndash; <a href="https://azure.microsoft.com/en-us/services/service-fabric/">Service Fabric</a></li>
+  </ul>
+
+
+  <p>그리고 앞으로 더 많은 것이&rsquo; 있으므로이 공간을 더 보십시오. 하지만 지금은 &hellip; 그것을 위해 이동!</p>

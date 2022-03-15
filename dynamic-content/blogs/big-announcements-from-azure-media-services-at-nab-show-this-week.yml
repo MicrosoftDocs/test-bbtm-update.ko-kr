@@ -1,0 +1,126 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fe99f374d1c4d3a671a175e06b7013fe97af0dc1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899878"
+Slug: big-announcements-from-azure-media-services-at-nab-show-this-week
+Title: NAB 쇼에서 Azure Media Services 흥미 진진한 제품 및 파트너십 발표
+Summary: AMS(Azure Media Services 바쁜 한 해였습니다. 지난 12개월 동안 전 세계에 걸쳐 고객의 승리를 이끈 제품을 확장했습니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dcadf1cb-04ec-42ac-aa7c-aa3d278b8cd0.jpg"><img alt="Azure Media_NAB show" border="0" height="305" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d89455d4-b788-42f1-bc82-039cbbe98024.jpg" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Media_NAB 표시" width="610"></a></p>
+
+
+  <p>&rsquo;AMS(Azure Media Services 바쁜 한 해였습니다. 지난 12개월 동안 Weve&rsquo;는 올림픽 규모의 라이브 스트리밍 플랫폼을 출시하고, 콘텐츠 보호 제품을 확장하고, 플랫폼 간 Azure Media Player를 도입하고, 핵심 Media Services 기능을 향상시키고, 인도, 남미 및 호주를 포함한 여러 새로운 지리적 위치로 입지를 넓히고, 여러 업계에서 인정받는 규정 준수 인증을 달성했습니다. 이로 인해 전 세계에 걸쳐 고객이 승리를 거두었으며 RTL 네덜란드, 아벡스 그룹, TVN 폴란드, 베리톤, 오세아니아링 및 Clickview가 포함됩니다.</p>
+
+
+  <p>오늘 라스베이거스에서 전국 방송사 협회 (NAB) 쇼 2016에서, 우리는 획기적인 새로운 미디어 분석 제품군을 발표하고있다, 애플 페어 플레이 스트리밍 및 360&deg; 비디오 스트리밍에 대한 지원, 뿐만 아니라 MPAA 및 FACT 인증.</p>
+
+
+  <p>또한 Imagine Communications&nbsp;,&rsquo; Veritone, Signiant 및 VSN과의 새롭고 확장된 업계 파트너십을 발표했습니다.</p>
+
+
+  <h2>Azure Media Analytics 소개</h2>
+
+
+  <p>지난 주 우리 팀은 엔터프라이즈 준비, 규정 준수, 보안 및 글로벌 도달 범위를 제공하는 8개의 음성 및 비전 서비스 모음인 Azure Media Analytics의 공개 미리 보기를 <a href="https://azure.microsoft.com/en-us/blog/introducing-azure-media-analytics/">발표</a> 했습니다. Azure Media Analytics는 동작 감지, 음성 전사, 심층 인덱싱된 비디오 검색, 콘텐츠 조정 등과 같은 새로운 주요 기능을 비디오 도메인에 제공합니다. 이러한 기능에는 공공 안전, 정부, 감시, 소매, 교육, 자동차 등 다양한 산업에 적용됩니다. Media Analytics는 Azure Media Services 우산 아래에서 제공되는 서비스 제품군에 추가된 주요 기능입니다. <a href="https://azure.microsoft.com/en-us/blog/introducing-azure-media-analytics/">자세한 블로그 게시물</a>에서 자세히 알아볼 수 있으며 <a href="https://azure.microsoft.com/en-us/documentation/articles/media-services-analytics-overview/">여기에서</a> 사용해 볼 수도 있습니다.</p>
+
+
+  <h2>Apple FairPlay 스트리밍 지원</h2>
+
+
+  <p>NAB에서 이번 주, were&rsquo;는 또한 Azure Media Services 플랫폼에서 <a href="https://azure.microsoft.com/en-us/blog/azure-media-services-expands-multi-drm-offering/">페어 플레이 스트리밍 지원</a>의 공개 미리보기를 발표. Apple FairPlay 스트리밍을 사용하면 HLS(HTTP 라이브 스트리밍) 프로토콜을 사용하여 프리미엄 콘텐츠를 안전하게 스트리밍할 수 있습니다. 이제 Azure Media Services FairPlay 스트리밍을 기본적으로 구현하여 비디오를 쉽게 암호화하고 키를 교환하며 iOS, Apple TV 및 OS X 디바이스에서 콘텐츠를 최적으로 안전하게 재생할 수 있습니다. FairPlay Streaming, PlayReady 및 Widevine에 대한 통합 지원을 통해 Azure Media Services VOD 및 라이브 콘텐츠를 스트리밍하기 위한 완전한 다중 DRM 클라우드 솔루션을 제공하므로 고객은 가장 최적의 프로토콜을 사용하여 오늘날&rsquo; 인기 있는 가장 광범위한 장치에서 대상에게 도달할 수 있습니다.</p>
+
+
+  <h2>Azure Media Player용 비디오 편집기 플러그 인</h2>
+
+
+  <p>비디오 편집기 플러그 인은 비디오 스트림 클리핑 및 트리밍 작업을 간소화하는 Azure Media Player용 추가 기능입니다. Azure Media Services 기존 비디오의 하위 클립을 생성하는 기능을 지원했지만, 더 긴 비디오 스트림에서 완벽한 영상 창을 캡처하기 위한 좋은 도구가 없으면 해당 프로세스가 어렵고 정확하지 않을 수 있습니다.</p>
+
+
+  <p>예를 들어 장면 변경이 힘들고 시간이 오래 걸릴 수 있는 정확한 프레임을 선택하면 해당 작업이 라이브 스트림으로 점점 더 복잡해집니다. 또한 많은 고객이 VCMS(전체 비디오 콘텐츠 관리 시스템) 또는 간단한 사내 자산 목록 페이지 등 기존 워크플로와 통합되는 도구가 필요하다고 말했습니다. 자세한 내용은 Azure 블로그의 <a href="https://azure.microsoft.com/en-us/blog/video-editor-plugin/"><u>비디오 편집기 플러그 인 게시물을</u></a> 확인하세요.</p>
+
+
+  <h2>360&deg; 라이브 비디오 스트리밍</h2>
+
+
+  <p>라이브 스트리밍 및 인코딩 플랫폼이 성공적으로 출시되면서 고객 및 파트너가 다양한 사용 사례 및 시나리오를 구축했습니다. Azure Media Services 팀의 포럼과 받은 편지함에 대한 최근 핫 토픽은 360&deg;개의 가상 현실 스트리밍이었습니다.</p>
+
+
+  <p>VR 스트리밍 에코시스템이 발전함에 따라 공급업체는 헤드 기어(삼성 및 페이스북),카메라(GoPro) 및 소프트웨어(<a href="https://www.video-stitch.com/">VideoStitch</a>)에 이르는 제품을 제공함으로써 이 분야를 전문으로 하기 시작했습니다. 이 에코시스템을 발전하기 위해 Videostitch와의 파트너십을 발표하여 Azure Media Services 360개의 라이브 비디오 스트림을 만들 수 있게 되어 기쁩니다. VideoStitch에서 Azure Media Services 및 Vahana VR을 사용하여 360&deg;개의 라이브 비디오 스트림을 만드는 <a href="https://azure.microsoft.com/en-us/blog/live-virtual-reality-streaming/">방법을 알아봅니</a>다.</p>
+
+
+  <h2>MPAA 및 FACT 인증</h2>
+
+
+  <p>2016년 3월, Microsoft Azure 3가지 콘텐츠 보안 모범 사례 프레임워크인 Common, Application 및 Cloud Security Guidelines을 모두 해결하는 <a href="https://www.microsoft.com/en-us/TrustCenter/Compliance/MPAA">MPAA(영화 협회)의</a> 공식 평가를 성공적으로 완료한 최초의 하이퍼스케일 다중 테넌트 클라우드 공급자가 되었습니다.</p>
+
+
+  <p>오늘, Azure 클라우드 플랫폼을 활용하려는 프리미엄 콘텐츠 소유자에게 추가 수준의 보안 보증을 제공하는 <a href="https://www.microsoft.com/en-us/TrustCenter/Compliance/FACT">FACT(저작권 도용 방지 페더레이션)</a> 인증의 추가 성과를 <a href="https://azure.microsoft.com/en-us/blog/just-the-fact-please/">발표</a>하게 되어 기쁩니다.</p>
+
+
+  <h2>MPEG 공통 미디어 애플리케이션 형식 스트리밍</h2>
+
+
+  <p>CMAF(Common Media Application Format)는 인터넷 비디오 배달을 간소화하기 위해 Microsoft와 Apple이 공동으로 주도하는 미디어 스트리밍 형식으로, 광범위한 업계 지원을 받았으며 표준화를 위해 MPEG에 제출되었습니다. CMAF는 MPEG DASH 스트리밍(HTTP를 통한 동적 적응 스트리밍)과 함께 널리 채택된 Apple QuickTime 및 Microsoft 부드러운 스트리밍에서 진화한 기술의 업계 융합을 기반으로 합니다. 모든 주요 HTML5 웹 브라우저에서 지원됩니다. CMAF에는 모든 주요 DRM 시스템과의 보안 재생을 위한 MPEG 공통 암호화가 포함되어 있으며, 영화 또는 TV 쇼와 같은 프리미엄 비디오의 단일 인코딩을 인터넷 액세스가 가능한 모든 디바이스로 안전하게 스트리밍할 수 있습니다. 네트워크는 소비 디바이스에 관계없이 HTTP, 브로드캐스트 및 멀티캐스트 네트워크를 통해 동일한 미디어 세그먼트의 효율적인 캐싱 및 라우팅을 활용할 수 있습니다.</p>
+
+
+  <h2>신규 및 확장 파트너 관계</h2>
+
+
+  <p>파트너십 전선에서 Imagine Communications, Veritone, Signiant 및 VSN과의 새롭고 확장된 파트너십을 발표하게 되어 기쁩니다.</p>
+
+
+  <h4>Imagine Communications는 업계에서 입증된 비디오 처리 및 배포 기능을 Azure에 제공합니다.</h4>
+
+
+  <p>Azure Media Services 고객은 이제 Microsoft Azure 통해 사용할 수 있는 효율적이고 중앙 집중화된 가상화된 워크플로 환경에서 시장 최고의 플레이아웃, 인코딩 및 동적 광고 삽입 기술에 즉시 액세스할 수 있습니다.&nbsp; Imagine  혁신적 혁신을 통해 미디어 및 엔터테인먼트 산업에 힘을 실어주는 커뮤니케이션은 이제 <a href="https://azure.microsoft.com/en-us/marketplace/partners/imaginecommunications/versio-3-0/">Microsoft Azure 시장 최고의 플레이아웃</a>, <a href="https://azure.microsoft.com/en-us/marketplace/partners/imaginecommunications/selenio-flex-liveselenioflex-live/">라이브 인코딩</a> 및 <a href="https://azure.microsoft.com/en-us/marketplace/partners/imaginecommunications/terulio-ad-insertion-for-multiscreentelurio-dai/">동적 광고 삽입</a> 솔루션을 사용할 수 있다고 발표했습니다.</p>
+
+
+  <p>이 솔루션 제품군은 방송사, 비디오 서비스 공급자 및 기타 미디어 회사에 새로운 수익 창출 기회를 제공하는 것 외에도 Azure를 통해 안전하고 확장 가능하며 주문형 액세스를 제공하여 미디어 워크플로 운영의 속도, 효율성 및 유연성을 크게 향상시킬 수 있습니다.</p>
+
+
+  <p>미디어 및 기술 업계의 이 두 리더 간의 <a href="https://www.imaginecommunications.com/resources/press-release/imagine-communications-brings-end-end-video-capabilities-cloud">협력</a> 은 퍼블릭 클라우드에서 브로드캐스트 품질 비디오 출처 및 배포 기능을 제공하기 위한 현재까지 가장 야심찬 조치입니다.</p>
+
+
+  <p>Imagine Communications 솔루션의 전체 목록은 <a href="https://azure.microsoft.com/en-us/marketplace/partners/imaginecommunications/terulio-ad-insertion-for-multiscreentelurio-dai/">Azure Marketplace</a>에서 찾을 수 있으며 즉시 배포할 준비가 된 것입니다.</p>
+
+
+  <h3>Veritone은 Azure Media Analytics를 활용하여 인지 미디어 플랫폼을 빌드하고 있습니다.</h3>
+
+
+  <p>인텔리전트 클라우드 솔루션 개발을 위한 인지 미디어 솔루션을 제공하는 Veritone은 Cognitive Media Platform을 통해 방송사, 광고주, 미디어 회사 및 기타 기업을 위한 거의 실시간 인텔리전스 솔루션을 빌드하고 배포했습니다. 품종 &quot;인지 엔진&quot;에서 최고의 <a href="https://azure.microsoft.com/en-us/blog/introducing-azure-media-analytics/">얼리 어답터</a>로서 Veritone은 이미 Microsoft&#39;Media Indexer 서비스를 플랫폼에 통합함으로써 실질적인 비즈니스 이점을 보았습니다. 이제 Azure Media Analytics의 일부인 Media Indexer는 Veritone이 고객을 위해 여러 언어로 오디오 및 비디오 콘텐츠를 신속하게 분석하고 전사하는 데 도움을 주었습니다.</p>
+
+
+  <h3>Signiant가 Azure Media Services 원활한 통합을 발표합니다.</h3>
+
+
+  <p>Signiant는 AMS 플랫폼과의 긴밀한 통합을 제공하는 미리 빌드된 워크플로의 가용성을 발표했습니다. 자동화된 워크플로는 Signiant 가속 기술을 사용하여 온-프레미스 스토리지에서 AMS가 자산을 검색하고 처리하는 Microsoft Azure 콘텐츠 파일을 빠르고 안전하게 전송합니다. 완성된 콘텐츠는 Signiant를 통해 온-프레미스 위치로 반환됩니다.</p>
+
+
+  <p>Signiant 워크플로는 선택적 Premium 또는 표준 코드 변환 프로필과 함께 <a href="https://www.signiant.com/news/media-coverage/signiant-workflows-embrace-the-cloud/">미디어 자산을 Azure에 제공합니다</a>. Signiant는 AMS 내에서 트랜스코드의 진행률을 모니터링하여 진행률 또는 오류 메시지를 고객에게 보고합니다. 성공적으로 다운로드되면 AMS에서 처리된 자산을 삭제하도록 워크플로를 구성할 수도 있습니다. 워크플로는 Signiant M+A와 Azures&rsquo; 확장성을 결합하여 여러 코드 변환 작업을 동시에 처리할 수 있도록 합니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://www.signiant.com/">signiant.com</a> 방문하세요.</p>
+
+
+  <h3>VSN은 Microsoft Azure 선호하는 클라우드 파트너로 선택합니다.</h3>
+
+
+  <p>브로드캐스트, 미디어 및 엔터테인먼트에 대한 고급 기능을 갖춘 VSNs&rsquo; Media Asset Management 제품군은 이제 Azure Media Services 완전히 통합되어 미디어 회사의 가장 까다로운 요구 사항을 해결하는 향상된 MAM on Cloud 솔루션을 만듭니다.</p>
+
+
+  <p>VSN은 Microsoft Azure 대한 신뢰를 선호하는 클라우드 파트너로 확인합니다. Azure 통합을 통해 VSN&rsquo; 사용자는 이제 대역폭 제약 조건 없이 향상된 VoD(주문형 비디오) 또는 라이브 스트리밍 플랫폼에 액세스할 수 있으며, MPEG-DASH 지원, 다중 디바이스 및 DRM 관리, AES, PlayReady, Widevine 및 FairPlay Streaming에서 제공하는 보호 및 암호화를 통합할 수 있습니다. 또한 이러한 통합을 통해 미디어 관리를 다음 수준의 효율성으로 끌어올리는 고급 자동 카탈로그 기능을 사용할 수 있습니다. 이 통합은 VSNs&rsquo; 스탠드 SL8006의 NAB Show 2016에서 제공됩니다.</p>
+
+
+  <p>이러한 공지 사항을 자세히 살펴볼 더 많은 Azure Media 블로그 게시물을 계속 살펴보세요. <a href="https://azure.microsoft.com/en-us/services/media-services/">Azure Media Services 대해 자세히 알아보</a>고 <strong>NAB 부스 SL 6810</strong>을 방문하여 Azure Media Services 팀을 만나 이러한 서비스가 실제로 작동하는지 확인하세요.</p>
+
+
+  <p>공식 설명서 및 Azure Media Services 대한 새로운 기능에 대한 논의는 <a href="https://azure.microsoft.com/en-us/documentation/services/media-services/">설명서를</a> 참조하세요. Azure Media Services 대한 질문이 있는 경우 아래에 나열된 두 개의 공식 커뮤니티 포럼 중 하나를 사용하거나 <a href="https://azure.microsoft.com/en-us/services/media-services/">Azure.com</a> 페이지를 방문하여 기술 질문에 대한 답변을 얻으세요.</p>
+
+
+  <ul>
+   <li><a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=MediaServices">MSDN Media Services</a></li>
+   <li><a href="https://stackoverflow.com/questions/tagged/azure-media-services">StackOverFlow</a>: azure-media-services 태그 &ldquo;사용&rdquo;</li>
+  </ul>

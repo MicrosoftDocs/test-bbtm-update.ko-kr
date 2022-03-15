@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7646e38c5c7afb546291ebc80c077f56ca5df98e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906794"
+Slug: first-hyperscale-csp-with-offering-graphic-intensive-workload-supportable-vms-in-uk-microsoft-azure-s-g-gs-ls-h-n-series-now-supported-by-uk-south
+Title: '영국에서 Graphic-Intensive 지원 가능한 VM이 있는 첫 번째 하이퍼스케일 CSP: Microsoft Azure G/GS/LS/H/N 시리즈는 현재 영국 남부에서 사용할 수 있습니다.  '
+Summary: 현재 Microsoft Azure Virtual Machine 고객은 영국 남부에서 사용할 수 있는 Azure G/GS/LS/H/N 시리즈 Virtual Machine 크기를 활용할 수 있습니다. 우리는 또한 그 Microsoft Azure 발표하게 되어 기쁩니다...
+Content: >-
+  <p>현재 Microsoft Azure Virtual Machine 고객은 영국 남부에서 사용할 수 있는 Azure G/GS/LS/H/N 시리즈 Virtual Machine 크기를 활용할 수 있습니다. Were&rsquo;는 또한 Microsoft Azure 영국에서 그래픽 집약적 워크로드를 실행할 수 있는 VM을 제공하는 최초의 하이퍼스케일 클라우드 공급자임을 발표하게 되어 기쁩니다(아래 N 시리즈 참조).</p>
+
+
+  <p><strong>새 Azure N 시리즈 &ndash;</strong> NC 및 NV 크기를 GPU 지원 인스턴스라고도 합니다. 다양한 시나리오 및 사용 사례에 최적화된 NVIDIA&reg;&#39;GPU 카드를 포함하는 특수 가상 머신입니다. NV 크기는 OpenGL 및 DirectX와 같은 프레임 워크를 활용하는 원격 시각화, 스트리밍, 게임, 인코딩 및 VDI 시나리오에 맞게 최적화되고 설계되었습니다. NC 크기는 계산 집약적 및 네트워크 집약적 애플리케이션, CUDA를 비롯한 알고리즘, OpenCL 기반 애플리케이션 및 시뮬레이션에 좀 더 최적화되어 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-n-series-general-availability-on-december-1/" target="_blank">N 시리즈에</a> 대해 자세히 알아보세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f21b99cc-9efe-440f-a6fa-55a8259fe23c.png"><img alt="Series Chart" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cb113d64-efa3-4b90-b4e6-b6fa655c0a2b.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="계열 차트" width="607"></a></p>
+
+
+  <p><strong>새 Azure G/GS/LS 시리즈 &ndash;</strong>&nbsp; G/GS 시리즈는 더 빠른 CPU, 더 나은 로컬 디스크 성능 또는 더 높은 메모리 요구가 있는 애플리케이션에 적합합니다. 이들은 많은 엔터프라이즈급 애플리케이션을 위한 강력한 조합을 제공합니다. LS 시리즈는 NoSQL 데이터베이스(예: Cassandra, MongoDB, Cloudera 및 Redis)와 같이 대기 시간이 짧은 로컬 스토리지가 필요한 워크로드에 최적화되어 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-has-the-most-powerful-vms-in-the-public-cloud/" target="_blank">G/LS 시리즈에</a> 대해 자세히 알아보세요.</p>
+
+
+  <p><strong>새 Azure H 시리즈 &ndash;</strong>&nbsp; H 시리즈 VM은 컴퓨팅 집약적 워크로드에 매우 적합하며 MPI 워크로드에 대한 RDMA 백 엔드 네트워크뿐만 아니라 최첨단 성능을 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/availability-of-h-series-vms-in-microsoft-azure/" target="_blank">H 시리즈에</a> 대해 자세히 알아보세요.</p>
+
+
+  <p>자세한 내용은 <a href="https://azure.microsoft.com/en-us/services/virtual-machines" target="_blank">Virtual Machines</a> 페이지 및 <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines" target="_blank">Virtual Machines 가격 책정</a> 페이지를 참조하세요.</p>

@@ -1,0 +1,181 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 39d7ab73f2e91bbe93da6fe02860f270e17fc889
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900638"
+Slug: simplify-performance-tuning-and-troubleshooting-with-azure-sql-database
+Title: Azure SQL Database 사용하여 성능 조정 및 문제 해결 간소화
+Summary: SQL Database 기록 데이터베이스 사용량에 따라 지능형 튜닝 작업 및 권장 사항을 제공하여 데이터베이스의 성능을 개선하는 데 어떻게 도움이 되는지 알아봅니다. SQL Database Advisor 및 성능 대시보드를 사용하여 데이터베이스 성능을 향상시킵니다.
+Content: >-
+  <p>Azure SQL Database 서비스는 현재 수백만 개의 고객 데이터베이스를 실행합니다. 이러한 모든 데이터베이스를 실행하여 학습한 다음 각 데이터베이스에 대해 사용자 지정된 환경을 제공하도록 조정하여 서비스가 요구 사항에 맞게 특별히 조정된 것처럼 느끼게 합니다. 따라서 이전처럼 데이터베이스 애플리케이션에 대한 비즈니스 가치를 제공하는 데 집중할 수 있습니다.</p>
+
+
+  <p>SQL Database <strong>Database Advisor</strong>라는 새로운 기능을 통해 지능형 튜닝 권장 사항을 제공하여 데이터베이스의 성능을 개선하는 데 도움이 됩니다. 권장 사항 기록 데이터베이스 사용량을 기반으로 하며 시간이 지남에 따라 워크로드가 발전함에 따라 권장 사항이 자동으로 조정되어 관련성을 유지합니다.</p>
+
+
+  <p>데이터베이스 관리자는 이전 인덱스 관리자 기능을 대체합니다. 이제 SQL Database 제공하는 권장 사항은 인덱스 관리만 넘어가므로 새롭고 광범위한 범위를 반영하도록 기능 이름을 업데이트했습니다.</p>
+
+
+  <p>또한 새 SQL Database <strong>성능 대시보드</strong>를 사용하면 데이터베이스 성능에 대한 전체적인 보기를 제공하여 성능 문제 해결을 더 쉽게 수행할 수 있으며, 현재 데이터베이스 상태를 잘 이해하기 위해 여러 보기 간에 전환해야 하는 필요성이 대체됩니다.</p>
+
+
+  <p>이 블로그 게시물은 이러한 새로운 기능에 대한 개략적인 개요를 제공하며, 후속 게시물은 이러한 각 영역에 대한 자세한 내용을 제공합니다.</p>
+
+
+  <h2>SQL Database 성능 대시보드: 데이터베이스 성능의 올인원 개요</h2>
+
+
+  <p>성능 대시보드는 다음을 포함하여 한 곳에서 데이터베이스 성능과 관련된 주요 정보를 제공하는 Azure Portal의 새로운 보기입니다.</p>
+
+
+  <ol>
+   <li>SQL Database Advisor의 <strong>최고 성능 튜닝 권장 사항</strong> 분석</li>
+   <li><strong>자동 조정 기능의 현재 상태에 대한</strong> 개요입니다.</li>
+   <li>최근 기록에 대한 <strong>쿼리 성능</strong> 개요입니다.</li>
+  </ol>
+
+
+  <p><img alt="Performance Dashboard v2" border="0" height="697" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/adcc63d3-c442-43b0-899d-ebdaa22fb7a0.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px auto; display: block; padding-right: 0px" title="성능 대시보드 v2" width="768"></p>
+
+
+  <p>성능 대시보드는 성능 -&gt; 개요&rdquo; 설정 항목 또는 SQL Database 기본 보기의 새 아이콘을 통해 액세스&ldquo;됩니다.</p>
+
+
+  <p><img alt="Performance Tile" border="0" height="195" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bc109a3a-1ef7-443f-9628-b8d1c419f212.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px auto; display: block; padding-right: 0px" title="성능 타일" width="195"></p>
+
+
+  <p>성능 대시보드에서 타일을 클릭하면 해당 특정 영역에 대한 심층적인 보기가 제공됩니다. &rsquo;각 영역을 좀 더 자세히 살펴보겠습니다.</p>
+
+
+  <h2>SQL Database Advisor: 데이터베이스에 대한 맞춤형 성능 조정 권장 사항</h2>
+
+
+  <p>성능 대시보드에서 권장 사항 타일을 클릭하면 Azure SQL Database Advisor(이전의 Index Advisor)로 이동하여 SQL 데이터베이스에 대한 뛰어난 성능을 달성하고 유지 관리하는 데 도움이 됩니다.</p>
+
+
+  <ol>
+   <li>관찰된 기록 사용량에 따라 데이터베이스에 <strong>대한 맞춤형 성능 조정 권장 사항을</strong> 제공합니다.</li>
+   <li>권장 튜닝 작업을<strong> 쉽게 구현하고 유효성을 검사</strong> 할 수 있도록 합니다. 권장 작업을 적용하고 결과에 대한 보고서를 생성하는 완전히 관리되는 구현 프로세스를 시작하기 위해 몇 번의 클릭만 하면 됩니다.</li>
+  </ol>
+
+
+  <p><img alt="13a" border="0" height="401" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/715afbf3-26f7-461c-9a52-2136528abb31.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="13a" width="761"></p>
+
+
+  <p>이 릴리스에서 Database Advisor는 데이터베이스 성능 튜닝의 다음과 같은 측면을 다룹니다.</p>
+
+
+  <div align="center">
+
+  <table align="center" border="0" cellpadding="2" cellspacing="0" width="759">
+   <tbody>
+    <tr>
+     <td valign="top" width="351"><strong>영역 </strong></td>
+     <td valign="top" width="406"><strong>범위</strong></td>
+    </tr>
+    <tr>
+     <td valign="top" width="351">
+     <p align="left"><strong>비클러스터형 인덱스의 레이아웃 최적화</strong><br>
+  (이전에 Index Advisor를 통해 사용 가능)</p>
+     </td>
+     <td valign="top" width="406">
+     <p align="left">누락된 인덱스를 만들어 쿼리 성능을 개선하고 중복 인덱스를 삭제하여 디스크 공간을 절약합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="351">
+     <p align="left"><strong>데이터베이스 스키마 문제 해결</strong><br>
+  (이 릴리스의 새로운 기능)</p>
+     </td>
+     <td valign="top" width="406">
+     <p align="left">데이터베이스 스키마 및 쿼리 정의가 일치하지 않아 쿼리가 실패하는 상황을 다룹니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="351">
+     <p align="left"><strong>데이터베이스 매개 변수화 문제 해결</strong><br>
+  (이 릴리스의 새로운 기능)</p>
+     </td>
+     <td valign="top" width="406">
+     <p align="left">적절한 쿼리 매개 변수화가 부족하여 쿼리 컴파일에 과도한 리소스 사용이 발생할 수 있는 상황을 다룹니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+  </div>
+
+
+  <h2>&nbsp;</h2>
+
+
+  <h2>자동화된 성능 튜닝</h2>
+
+
+  <p>데이터베이스에 대한 인덱스를 관리하는 데 지쳤나요? &rsquo;이제 사용자가 특정 유형의 권장 사항 구현을 자동화하고 싶다고 Azure SQL Database&rsquo; 알릴 수 있습니다. 몇 번의 클릭만 있으면 SQL Database 게시된 즉시 선택한 형식의 새 권장 사항을 자동으로 구현합니다. 간단하고 효과적입니다.</p>
+
+
+  <p><img alt="Set up automation" border="0" height="707" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/156ef815-927c-4182-87c7-bc6b2e37173c.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px auto; display: block; padding-right: 0px" title="자동화 설정" width="1050"></p>
+
+
+  <h2>Query Performance Insight: 데이터베이스 쿼리의 성능에 대한 실시간 인사이트</h2>
+
+
+  <p>성능 대시보드에서 차트를 클릭하면 <a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-query-performance/">쿼리 성능 인사이트</a> 기능이 열리며, 이를 통해 데이터베이스 리소스 사용의 원인을 파악하고 문제가 되기 전에 쿼리 성능 문제를 검색할 수 있습니다.</p>
+
+
+  <p>Query Performance Insight는 고객에게 다음을 제공합니다.</p>
+
+
+  <ul>
+   <li>데이터베이스 리소스 사용에 대한 심층 인사이트.</li>
+   <li>최상위 CPU 사용 쿼리는 향상된 성능을 위해 잠재적으로 조정될 수 있습니다.</li>
+   <li>쿼리에 대한 세부 정보로 드릴다운할 수 있습니다.</li>
+  </ul>
+
+
+  <p><img alt="14" border="0" height="808" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/af993ab1-b109-4161-8032-9da30ddb2778.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="14" width="1056"></p>
+
+
+  <p>Query Performance Insight는 쿼리 저장소를 기반으로 하며 쿼리 저장소에서 캡처한 풍부한 쿼리 성능 데이터에서 몇 가지 주요 인사이트를 표시합니다. 자세한 내용에 관심이 있는 사용자는 SQL Server Management Studio 쿼리 저장소 보기를 활용하거나(<a href="https://azure.microsoft.com/en-gb/blog/query-store-a-flight-data-recorder-for-your-database/">이 블로그 게시물에</a> 설명되어 있음) <a href="https://msdn.microsoft.com/en-us/library/dn817826.aspx">이 문서에</a> 설명된 대로 쿼리 저장소 기본 제공 카탈로그 뷰를 사용하여 데이터를 탐색할 수 있습니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>Azure SQL Database 성능 튜닝 및 문제 해결을 이전보다 쉽고 빠르게 수행할 수 있으므로 프로세스의 시간과 노력을 절약하면서 데이터베이스 애플리케이션에 뛰어난 성능을 제공할 수 있습니다. SQL Database 사용자에게 다음을 제공합니다.</p>
+
+
+  <ul>
+   <li>기록 데이터베이스 사용량을 기반으로 하는 <strong>맞춤형 성능 조정 권장 사항</strong>입니다.</li>
+   <li>&ldquo;데이터베이스 튜닝 작업의 구현 및 유효성 검사를 자동화<strong>하는 자동 조정 모드</strong>를 통한 핸즈프리&rdquo; 성능 최적화</li>
+   <li>시간이 지남에 따라 <strong>쿼리 워크로드 성능을 Insights </strong>잠재적인 문제를 쉽게 찾고 해결할 수 있습니다.</li>
+  </ul>
+
+
+  <p>따라서 Azure SQL Database 데이터베이스를 관리하고 조정하는 동시에 멋진 데이터베이스 애플리케이션을 빌드하고 비즈니스 수익에 영향을 미치는 데 집중할 수 있습니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Azure SQL Database 새로운 경우&rsquo; <a href="https://azure.microsoft.com/en-us/pricing/free-trial/">지금 무료 평가판에 등록</a>하고 Azure SQL DB의 기본 제공 지능형 기능을 통해 그 어느 때보다 쉽고 빠르게 놀라운 데이터베이스 애플리케이션을 빌드할 수 있는 방법을 알아보세요.</p>
+
+
+  <p>이미 Azure SQL Database 사용하고 있는 경우&rsquo; <a href="https://portal.azure.com">지금 </a>SQL Database Advisor 및 SQL Database 성능 대시보드를 사용해 보고 Azure Portal의 기본 제공 피드백 메커니즘을 사용하거나 이 게시물의 설명 섹션에서 피드백을 공유하세요. Wed&rsquo; love to hear back from you!</p>
+
+
+  <p><img alt="Feedback Button" border="0" height="148" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/05fe6c6d-3b67-41ae-ab81-383c280c8663.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="피드백 단추" width="197"></p>
+
+
+  <p>자세한 내용은 온라인 설명서를 참조하세요.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-performance/">SQL Database 성능 대시보드</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-index-advisor/">SQL Database 관리자</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-query-performance/">쿼리 성능 인사이트 SQL Database</a></li>
+   <li><a href="https://msdn.microsoft.com/en-us/library/mt614796.aspx">쿼리 저장소 사용 시나리오</a></li>
+  </ul>

@@ -1,0 +1,117 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 47652559deff58b9306137816705f305374584d1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907072"
+Slug: nfs-41-support-for-azure-files-is-now-in-preview
+Title: Azure Files에 대한 NFS 4.1 지원은 현재 미리 보기로 제공됩니다.
+Summary: Azure Files는 SMB(서버 메시징 블록) 및 REST 프로토콜을 제공하는 분산 클라우드 파일 시스템입니다. Azure Files를 사용하면 고객이 기술을 수정하거나 변경하지 않고도 레거시 워크로드를 클라우드로 쉽게 리프트 앤 시프트할 수 있습니다. SMB는 대부분의 사용 사례에 대해 Windows 운영 체제와 UNIX 운영 체제 모두에서 작동합니다. 일부 애플리케이션은 POSIX 규격 파일 시스템에 대해 작성되었기 때문에 고객은 완전히 POSIX 호환 NFS 파일 시스템에서 동일한 뛰어난 환경을 원했습니다. NFS v4.1 프로토콜에 대한 Azure Files 지원은 현재 미리 보기로 제공됩니다.
+Content: >-
+  <div aria-level="1" paraeid="{bbae08c7-d0f7-4749-aa22-52d762b3dfaf}{231}" paraid="1375115473" role="heading" style="background:#eeeeee;border:1px solid #cccccc;padding:5px 10px;"><em><strong>2022년 1월 7&nbsp;일&nbsp; 업데이트:&nbsp;</strong>Azure Filesis&nbsp;용 NFS 4.1support&nbsp;는 이제 모든 공용 지역에서 일반 공급됩니다. 최신 정보는 <a href="https://azure.microsoft.com/en-us/blog/updates-to-azure-files-nfs-v41-higher-performance-limits-and-reserved-instance-pricing/">이 공지</a> 사항을 참조하세요.</em></div>
+
+
+  <p aria-level="1" paraeid="{bbae08c7-d0f7-4749-aa22-52d762b3dfaf}{231}" paraid="1375115473" role="heading">Azure Files는 2015년부터 일반적으로 사용할 수 있는 파일 시스템 SMB 및 REST 프로토콜을 제공하는 분산 클라우드 파일 시스템입니다. 고객은 Azure Files를 통해 기술을 수정하거나 변경하지 않고 레거시 워크로드를 클라우드로 쉽게 리프트 앤 시프트할 수 있는 방법을 좋아합니다. SMB는 대부분의 사용 사례에서 Windows 및 UNIX 운영 체제 모두에서 잘 작동합니다. 그러나 일부 애플리케이션은 POSIX 규격 파일 시스템에 대해 작성되었기 때문에 고객은 완전히 POSIX 호환 NFS 파일 시스템에서 동일한 뛰어난 환경을 원했습니다. 오늘,&rsquo; <strong>NFS v4.1 프로토콜에 대한 Azure Files 지원을</strong> 발표하게 되어 기쁩니다!</p>
+
+
+  <p aria-level="1" paraeid="{bbae08c7-d0f7-4749-aa22-52d762b3dfaf}{231}" paraid="1375115473" role="heading">Azure Files에 대한 NFS 4.1 지원은 사용자에게<strong> 완전히 관리되는 NFS 파일 시스템을 서비스로</strong> 제공합니다. 이 제품은 Azure Blob, 디스크 및 큐를 제공하는 진정으로 분산된 복원력 있는 스토리지 플랫폼을 기반으로 <strong>구축되어 Azure Storage</strong> 몇 가지 구성 요소에만 이름을 지정합니다. 그것은 본질적으로 고가용성 및 내구성이 높습니다. 또한 Azure Files는 강력한 일관성 및 권고 바이트 범위 잠금과 같은 <strong>전체 파일 시스템 액세스 의미 체계</strong> 를 지원하며 데이터에 대한 빈번한 현재 위치 업데이트를 효율적으로 제공할 수 있습니다.</p>
+
+
+  <h2>일반 사용 예</h2>
+
+
+  <p paraeid="{583ad1b1-7a58-4503-8b9d-07eb789ea3e2}{33}" paraid="12583779">Azure Files NFS v4.1에는 광범위한 사용 사례가 있습니다. Linux 파일 시스템을 위해 작성된 대부분의 애플리케이션은 NFS에서 실행할 수 있습니다. <em><strong>참고: 서비스가 미리 보기 상태이지만 프로덕션 사용량은 권장되지 않습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/files/files-nfs-protocol#Validated-workloads" target="_blank">Azure Files NFS 설명서를</a> 참조하세요.&nbsp;</strong></em></p>
+
+
+  <p paraeid="{583ad1b1-7a58-4503-8b9d-07eb789ea3e2}{33}" paraid="12583779">제한된 미리 보기 중에 본 고객 사용 사례의 하위 집합은 다음과 같습니다.</p>
+
+
+  <h3>Linux 애플리케이션 스토리지:</h3>
+
+
+  <p paraeid="{583ad1b1-7a58-4503-8b9d-07eb789ea3e2}{95}" paraid="490924002">SAP, 이미지 또는 비디오용 스토리지, IoT(사물 인터넷) 신호 등과 같은 애플리케이션에 대한 공유 스토리지입니다. 이 컨텍스트에서 미리 보기 고객 중 한 명이 다음과 같이 말했습니다.</p>
+
+
+  <p paraeid="{583ad1b1-7a58-4503-8b9d-07eb789ea3e2}{139}" paraid="134033322"><img alt="T Systems logo" border="0" height="87" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/80dffd07-d541-4471-b1bd-b813990f9d7e.png" style="margin: 0px 5px 0px 0px; border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="T Systems 로고" width="87"></p>
+
+
+  <p paraeid="{583ad1b1-7a58-4503-8b9d-07eb789ea3e2}{139}" paraid="134033322"><em>&ldquo;T-Systems는 선도적인 SAP 아웃소싱 업체 중 하나입니다. SAP 환경 배포를 위한 NFS 파일 시스템을 제공하기 위해 고성능의 고가용성 영역 중복 Azure 네이티브 솔루션을 찾고 있었습니다. Azure Files가 성능 기대치를 초과하는 것을 보게 되어 기뻤습니다. 또한 사용 가능한 다른 클라우드 솔루션에 비해 막대한 비용 절감과 복잡성이 감소합니다.&rdquo;&nbsp; - Lars Micheel, SAP 솔루션 배달 및 CTO PU SAP 책임자.</em></p>
+
+
+  <h3>최종 사용자 스토리지:</h3>
+
+
+  <p>Jupyter Notebook과 같은 애플리케이션에 대한 최종 사용자 홈 디렉터리 및 홈 디렉터리에 대한 공유 파일 스토리지입니다. 또한 일부 고객은 온-프레미스 공간을 줄이고 민첩성을 사용하여 더 많은 지리적 지역으로 확장하기 위해 데이터 센터 NAS 데이터를 클라우드로 리프트 앤 시프트하는 데 사용했습니다. 이 컨텍스트에서 미리 보기 고객 중 한 명이 다음과 같이 말했습니다.</p>
+
+
+  <p paraeid="{4bc7a84a-edd2-4545-9c91-2eaf9e778390}{233}" paraid="1696096652"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d741d05d-95bc-419e-bc82-02f28e77fa10.png"><img alt="Cloudera logo" border="0" height="36" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d569373f-63d9-4de3-8372-f802c36c61b3.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Cloudera 로고" width="195"></a></p>
+
+
+  <p paraeid="{4bc7a84a-edd2-4545-9c91-2eaf9e778390}{233}" paraid="1696096652"><em>&ldquo;Cloudera는 기계 학습 기능으로 잘 알려져 있으며, 업계 분석가 회사인 Cloudera는 최근 보고서에서 우리를 &quot;리더로 지명했을 때 기계&quot; 학습이라고 불렀습니다. ML 기능에 맞게 고성능 NFS 파일 시스템이 필요했습니다. Azure Files는 Cloudera Machine Learning 실제 파일 시스템에 대해 가지고 있는 모든 요구 사항을 충족하고 모든 대안을 능가했습니다. 그것은 Azure Storage 스택과 통합 되어 있기 때문에, 내 기대는 뿐만 아니라 대안 보다 저렴 하 고 훨씬 쉽게 관리할 것 이다&#39;.&rdquo;&nbsp; -&nbsp; 숀 맥커리, 소프트웨어 엔지니어, Cloudera</em></p>
+
+
+  <h3>컨테이너 기반 애플리케이션:</h3>
+
+
+  <p>Docker 및 Kubernetes 환경에 대한 영구 스토리지입니다. 또한 현재<a href="https://github.com/kubernetes-sigs/azurefile-csi-driver/tree/master/deploy/example/nfs" rel="noreferrer noopener" target="_blank"> NFS에 대한 Azure 파일 지원용 CSI 드라이버</a> 의 미리 보기를 시작합니다.</p>
+
+
+  <h3>데이터베이스:</h3>
+
+
+  <p>Oracle 데이터베이스를 호스팅하고 RMAN(Recovery Manager)을 사용하여 백업을 수행하는 경우 Azure Files 프리미엄 계층은 자사가 종속성을 사용하는 데이터베이스 종류의 워크로드를 위해 특별히 빌드되었습니다.</p>
+
+
+  <h2 paraeid="{0223e73d-4860-4d6f-9595-098d448e2845}{42}" paraid="100957656">관리</h2>
+
+
+  <p paraeid="{0223e73d-4860-4d6f-9595-098d448e2845}{48}" paraid="1034929290">Azure Portal, PowerShell 및 CLI를 통해 Azure Files에서 동일한 친숙한 공유 관리 환경을 얻을 수 있습니다.</p>
+
+
+  <p paraeid="{0223e73d-4860-4d6f-9595-098d448e2845}{76}" paraid="1768800057"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0a49cc36-b7f4-4545-9185-535f10601f87.jpg"><img alt="Screenshot of Azure Files through Azure portal" border="0" height="489" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f37b1fb4-f41e-42b8-8f88-754f3e8eef0c.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Portal을 통한 Azure Files의 스크린샷" width="1024"></a></p>
+
+
+  <p><em>Azure Portal에서 몇 번의 클릭으로 NFS 파일 공유 만들기</em></p>
+
+
+  <h2 paraeid="{0223e73d-4860-4d6f-9595-098d448e2845}{81}" paraid="1535822560">보안</h2>
+
+
+  <p paraeid="{0223e73d-4860-4d6f-9595-098d448e2845}{87}" paraid="1008179906">Azure Files는 미사용 암호화에 AES 256을 사용합니다. 또한 Azure Key Vault에서 관리하는 소유 키를 사용하여 모든 데이터를 암호화하는 옵션도 있습니다. 볼륨과 대상 간에 NFS 트래픽을 비공개로 허용하도록 보안 가상 네트워크를 구성하여 지역 내, 다른 지역 또는 온-프레미스에서 공유에 액세스할 수 있습니다. NFS 공유로 들어오는 데이터는 신뢰할 수 있는 VNet에서 나와야 합니다. 올바른 네트워크 보안 규칙을 구성하여 액세스 권한을 명시적으로 부여하지 않는 한 NFS 공유에 대한 모든 액세스는 기본적으로 거부됩니다.</p>
+
+
+  <h2 paraeid="{a18cc9d0-ad1c-4150-baab-938ca9b47f83}{2}" paraid="1828143412">성능</h2>
+
+
+  <p paraeid="{a18cc9d0-ad1c-4150-baab-938ca9b47f83}{48}" paraid="1914841104">NFS 프로토콜은 Azure Files <a href="https://azure.microsoft.com/en-us/blog/premium-files-redefines-limits-for-azure-files/" rel="noreferrer noopener" target="_blank">프리미엄 계층</a>에서 사용할 수 있습니다. 성능은 프로비전된 용량으로 <a href="https://aka.ms/premiumfilesdocs" rel="noreferrer noopener" target="_blank">선형적으로 확장</a> 됩니다. 단일 100TiB 볼륨에서 최대 100K IOPS 및 80Gibps 처리량을 얻을 수 있습니다.</p>
+
+
+  <h2 paraeid="{a18cc9d0-ad1c-4150-baab-938ca9b47f83}{126}" paraid="55224481">Backup</h2>
+
+
+  <p paraeid="{a18cc9d0-ad1c-4150-baab-938ca9b47f83}{132}" paraid="1647567541">NFS 공유에서 데이터 백업은 rsync와 같은 익숙한 도구나 타사 백업 파트너 제품 중 하나를 사용하여 오케스트레이션할 수 있습니다. <a href="https://documentation.commvault.com/commvault/v11/article?p=92634.htm" target="_blank">Commvault,</a>&nbsp; <a href="https://www.veeam.com/blog/azure-files-nfs-backup-available.html">Veeam</a> 및 <a href="https://www.youtube.com/watch?v=sisC4iOy4PY&amp;feature=youtu.be" target="_blank">Veritas</a>를 포함한 여러 백업 파트너는 초기 미리 보기의 일부였으며 Azure Files용 SMB 3.0 및 NFS 4.1을 모두 사용할 수 있도록 솔루션을 확장했습니다.</p>
+
+
+  <h2 paraeid="{a18cc9d0-ad1c-4150-baab-938ca9b47f83}{172}" paraid="40310383">마이그레이션</h2>
+
+
+  <p paraeid="{a18cc9d0-ad1c-4150-baab-938ca9b47f83}{178}" paraid="1205101411">데이터 마이그레이션의 경우 scp, rsync 또는 rsync와 같은 표준 도구를 사용할 수 있습니다. 여러 컴퓨팅 인스턴스에서 동시에 파일 스토리지에 액세스할 수 있으므로 병렬 업로드를 사용하여 복사 속도를 향상시킬 수 있습니다. 지역 외부에서 데이터를 마이그레이션하려면 VNet 피어링, VPN 또는 ExpressRoute를 사용하여 다른 Azure 지역 또는 온-프레미스 데이터 센터에서 파일 시스템에 연결합니다.</p>
+
+
+  <h2 paraeid="{a18cc9d0-ad1c-4150-baab-938ca9b47f83}{246}" paraid="1659673280">가격 책정</h2>
+
+
+  <p paraeid="{a18cc9d0-ad1c-4150-baab-938ca9b47f83}{252}" paraid="128573015">이 제품은 프리미어 계층 가격 책정에 따라 요금이 청구됩니다. 100GiB만큼 작은 공유를 프로비전하고 용량을 1GiB씩 늘릴 수 있습니다. Azure Files <a href="https://azure.microsoft.com/en-us/pricing/details/storage/files/" rel="noreferrer noopener" target="_blank">가격 책정 페이지에서 프리미엄 계층 가격 책정</a>을 참조하세요.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p paraeid="{b83d26ab-8294-45df-826c-223849b2e0fb}{38}" paraid="1350714524">Azure Files에 대한 NFS 4.1 지원은 현재 <a href="https://aka.ms/azurefiles/nfs/preview/regions" rel="noreferrer noopener" target="_blank">일부 지역 집합</a> 에 있으며 앞으로 몇 주 안에 이 목록에 더 많은 지역을 지속적으로 추가할 예정입니다. 다음 간단한 단계별 지침에 따라 오늘 <a href="https://aka.ms/azurefilesnfs/quickstart" rel="noreferrer noopener" target="_blank">시작</a>하세요!</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p paraeid="{b83d26ab-8294-45df-826c-223849b2e0fb}{148}" paraid="1040241556">더 많은 기능을 추가하고 NFS v 4.1 제품의 성능을 개선하는 데 지속적으로 투자하면서 여러분의 의견을 듣고 싶습니다. 미리 보기 &nbsp;<a href="https://docs.microsoft.com/en-us/azure/storage/files/storage-troubleshooting-files-nfs" target="_blank">중 Referenceknown</a>&nbsp; 문제가 발생하는 경우 이 페이지는 주기적으로 업데이트됩니다. <a href="mailto:azurefilesnfs@microsoft.com">azurefilesnfs@microsoft.com</a> 나열된 문제에 대한 질문이나 피드백이 있거나 <a href="https://docs.microsoft.com/en-us/azure/storage/files/storage-troubleshooting-files-nfs" target="_blank">문제 해결 Azure NFS 파일 공유</a> 페이지에 나열되지 않은 문제가 발생하는 경우 문의하세요.</p>

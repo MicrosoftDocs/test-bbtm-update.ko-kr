@@ -1,0 +1,103 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4498163ce42d723c5cf637bcf7e8f903f43489fc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907035"
+Slug: the-broadest-range-of-cloud-innovation-across-us-government-data-classifications
+Title: 미국 정부 데이터 분류에서 가장 광범위한 클라우드 혁신
+Summary: 오늘 Microsoft는 Azure Government의 새로운 기능을 갖춘 미국 정부용 중요 업무용 클라우드의 확장, Azure Government 비밀의 확장 및 일급 비밀 기밀 데이터(Azure Government 일급 비밀)를 고객에게 제공하는 새로운 클라우드의 발표를 발표합니다.
+Content: >-
+  <p>오늘, 우리는 Azure Government의 새로운 기능을 갖춘 미국 정부<sup></sup>용 중요 업무용 클라우드의 확장, Azure Government 비밀의 확장 및 일급 비밀 기밀 데이터&mdash;Azure Government 일급 비밀로 고객에게 서비스를 제공하는 새로운 클라우드의 발표를 발표합니다.</p>
+
+
+  <h2>Azure Government 일급 비밀 발표</h2>
+
+
+  <p>우리는 최근에 새로운 Azure Government 일급 비밀 지역의 빌드를 완료했으며, 미국 정부와 협력하여 인증을 받고 있습니다. 정부 임무 요구 사항에 따라 상업적 패리티에 대한 지속적인 노력의 일환으로 Azure Government 일급 비밀 지역은 Azure(상업용), Azure Government 및 Azure Government Secret과 동일한 기능을 제공하도록 설계되어 미션 클라우드에서 전술적 에지까지 컴퓨팅의 연속성을 가능하게 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0653686b-712f-45c3-b691-3377f1e22ed9.png"><img alt="(Options for US Gov Compliance):  How Azure meets full spectrum of data classification needs." height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6b073a67-329e-41cc-ab3a-862ae020f8b6.png" style="margin-right: auto; margin-left: auto; display: block;" title="" width="1024"></a></p>
+
+
+  <p>광범위한 서비스는 모든 위치에서 얻은 데이터로부터 심층적인 인사이트를 얻고 원격 작업의 신속한 확장을 가능하게 해야 하는 필요성을 포함하여 분류된 공간에서 더 민첩성에 대한 수요를 충족합니다. 또한 업무 소유자는 비즈니스 분석가에서 개발자, 데이터 과학자에 이르기까지 광범위한 기술 수준에서 작동하는 도구를 사용하여 개방형 표준 및 개방형 프레임워크에서 작동하는 안전한 클라우드 플랫폼을 통해 레거시 시스템을 현대화하는 데 더 많은 선택을 할 수 있습니다.</p>
+
+
+  <h2>Azure Government Secret 새 기능</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/global-infrastructure/government/national-security/" target="_blank">Azure Government Secret</a> 은 임무 소유자가 새로운 인사이트의 잠금을 해제하고, 안전한 혁신을 가능하게 하고, 더 민첩성을 달성하며, 더 많은 임무를 수행할 수 있도록 지속적으로 지원합니다. 미국 DoD, 법 집행 기관 및 기타 기관을 포함한 고객은 현재 Azure Government Secret을 사용하고 있습니다. Azure Government Secret은 IL6(국방부 영향 수준 6) 및 ICD(인텔리전스 Community 지시문) 503 모두에서 권한을 부여받습니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&ldquo;Microsoft는 임무 활성화에 초점을 맞추고 있습니다. 워크로드를 사용하여 임무를 사용할 수 있습니다. 워크로드는 다양한 수준의 데이터를 보관하는 Enclave 내에 있습니다. Microsoft는 대규모 임무 워크로드에서 원활하고 안전하며 비용 포함 민첩성을 지원합니다.</em></p>
+
+
+  <p style="margin-left: 40px;"><em>Azure(상업용), Azure Government 및 Azure Government Secret 간의 일관성은 소프트웨어 개발이 어디에서나 발생할 수 있으므로 게임을 변경하기 시작했으며, 코드 자체는 더 높은 분류 수준을 가진 enclave로 승격될 수 있습니다. 더 높은 분류 수준의 데이터와 상호 작용할 수 있습니다. 하루의 끝에서, 이것은 낮은 전반적인 비용으로 임무에 대한 더 많은 일을 의미합니다.&quot; &mdash;캐롤 문, CloudFit 소프트웨어의 CTO.</em>&nbsp;</p>
+
+  </blockquote>
+
+
+  <p>오늘 Azure Government Secret에서 몇 가지 새로운 서비스를 발표합니다. 애플리케이션 개발자를 위해 AKS(Azure Kubernetes Service) 및 Azure Container Instances를 사용하면 컨테이너화된 애플리케이션을 보다 쉽게 배포하고 관리할 수 있습니다. 이제 Azure Sentinel 및 Azure Security Center의 지능형 보안 분석 서비스도 Azure Government Secret에서 사용할 수 있으므로 디지털 자산 전체에서 통합 보안 및 통합된 사전 예방적 위협 관리를 사용할 수 있습니다. 이러한 서비스는 Azure Monitor와 함께 Azure 및 온-프레미스 환경에서 원격 분석 데이터를 수집, 분석 및 처리하는 데 도움이 됩니다.</p>
+
+
+  <h2>Azure Government 가용성 영역, Windows Virtual Desktop 가용성 및 확장된 규정 준수</h2>
+
+
+  <p>지난 1년 동안의 이벤트는 중요한 정부 운영을 안전하게 유지하는 것의 중요성을 강조했습니다. 고가용성 및 복원력을 위한 클라우드 플랫폼을 설계하고 구축했으며, 현재 Azure Government에서 가용성 영역을 발표하여 가장 까다로운 중요 업무용 애플리케이션 및 데이터에 고가용성을 제공합니다. 가용성 영역은 서비스의 중복성 및 논리적 격리를 통해 데이터 센터 오류에 관대하므로 중요한 고객 서비스 및 워크로드를 언제 어디서나 사용할 수 있습니다.</p>
+
+
+  <p>전례 없는 사건에 대응하는 것 외에도 정부 기관은 오늘날&rsquo; 원격 작업에 빠르게 대응하고 있으며&rsquo;, 팀이 안전하게 관리되는 환경 내에서 관련 데이터를 유지하면서 어디서나 작업할 수 있는 솔루션에 대한 높은 수요를 보였습니다. 최근 FedRAMP High 인증을 통해 <a href="https://devblogs.microsoft.com/azuregov/windows-virtual-desktop-now-generally-available-in-azure-government/#:~:text=Windows%20Virtual%20Desktop%20%28WVD%29%20in%20Azure%20commercial%20has,and%20you%20can%20read%20more%20on%20these%20below." target="_blank">Azure Government에서 Windows WVD(Virtual Desktop)</a>의 가용성을 발표하여 기관이 중요 업무용 워크로드에 WVD를 채택하고 어디서나 보다 안전하고 생산적인 작업을 수행할 수 있도록 지원합니다.</p>
+
+
+  <p>각 정부 전용 클라우드 지역에 새로운 서비스가 도입됨에 따라, Microsoft는 이러한 서비스가 워크로드에 대해 적절한 수준에서 권한을 부여받도록 인증업체와 협력하고 있습니다. 이제 FedRAMP High에서 137개의 Azure Government 서비스를 제공하고 모든 Azure Government 지역에 걸쳐 IL5(국방부 영향 수준 5)에서 97개의 서비스를 제공합니다. <sup>1</sup> <a href="https://docs.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope#azure-government-services-by-audit-scope" target="_blank">감사 범위별 전체 서비스</a> 목록을 보려면 설명서 페이지를 방문하세요.</p>
+
+
+  <h2>전술적 에지의 총 유연성</h2>
+
+
+  <p>오늘, 우리는 미국 정부 고객을위한 우리의 전술 에지 포트폴리오에 대한 업데이트를 발표하고있다. 이러한 새로운 자사 에지 디바이스를 사용하면 짧은 대기 시간 응답 시간을 위해 데이터를 미리 처리하든, AI 및 기계 학습(ML)을 먼 가장자리로 가져오든, 위성 데이터를 보다 신속하게 활용하여 연결이 끊긴 환경에서 의사 결정을 내릴 수 있는지 여부에 관계없이 임무를 위해 더 많은 작업을 수행할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cab689cc-189e-4b59-9409-42925e09f9ca.png"><img alt="(Tactical edge devices):  Image capturing tactical edge portfolio for US Government customers." height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0246171b-d2e4-4c26-a5ce-20acbdc4402f.png" style="margin-right: auto; margin-left: auto; display: block;" title="" width="1024"></a></p>
+
+
+  <h2>모듈식 데이터 센터는 고가용성 옵션과 함께 영향 수준 5 및 6에서 일반 공급됩니다.</h2>
+
+
+  <p>최근에 발표된 <a href="https://azure.microsoft.com/en-us/blog/azure-modular-datacenter-mission-resiliency-for-the-field" target="_blank">MDC(Azure Modular Datacenter)</a> 는 불리한 조건, 네트워크 가용성 중단 및 특수 인프라에 대한 제한된 액세스가 일반적으로 클라우드 컴퓨팅을 금지하는 영역에 대한 데이터 센터 규모 컴퓨팅 및 스토리지 리소스를 제공합니다. MDC는 별도의 보안 Enclave를 실행할 수 있으므로 임무 사용자는 단일 단위로 여러 데이터 분류에서 동시에 워크로드를 작동할 수 있으며, 다른 러기드 디바이스와 마찬가지로 완전히 연결되거나, 연결이 끊어지거나, 완전히 연결되지 않은 시나리오에서 작동할 수 있습니다. MDC를 통해 정부 고객은 물류 오버헤드를 줄이는 자체 포함 공간으로 다양한 분류 수준에서 다양한 임무 워크로드의 요구를 충족하기 위해 중요한 인프라의 단일 부분을 배포할 수 있습니다.</p>
+
+
+  <p>오늘 우리는 발표하고있다 :</p>
+
+
+  <ul>
+      <li>여러 궤도에서 여러 위성 통신 파트너를 통해 네트워크 복원력을 제공하는 MDC용 네트워크 HA(고가용성) 모듈입니다. 네트워크 복원력은 파이버 장애 조치(failover) 중 COOP(작업 연속성)를 위해 SpaceX 및 SES와 같은 SATCOM 파트너의 지속적으로 성장하는 에코시스템을 통해 SATCOM 링크를 통해 제공됩니다.</li>
+      <li>고객이 필요로 하는 복원력을 더하는 고가용성 전원 모듈은 MDC만큼 전송 가능한 폼 팩터에 전력 안정성 리소스를 추가하는 주문형 방법을 제공합니다. 간헐적이거나 신뢰할 수 없는 전원이 있는 배포의 경우 여러 전원 간에 전환하면 MDC 워크로드가 계속 실행됩니다.</li>
+  </ul>
+
+
+  <h2>Azure Stack Hub Ruggedized</h2>
+
+
+  <p style="margin-left: 40px;">Microsoft에서 러기드된 Azure Stack Hub는 제한된 네트워크 연결 또는 네트워크 연결 없음, 군사 사양이 필요한 가혹한 조건 및 Azure 클라우드에 대한 선택적 연결이 있는 높은 보안 요구 사항을 해결하면서 운영 환경에 클라우드 일관된 접근 방식을 제공하는 Azure 하드웨어 및 소프트웨어 솔루션입니다. 이제 Azure Stack Hub 러기드화는 Azure Government 및 Azure Government Secret의 고객에게 일반 공급됩니다.</p>
+
+
+  <h2>Azure Stack Edge Pro R 및 Mini R</h2>
+
+
+  <p style="margin-left: 40px;">Azure Stack Edge 어플라이언스 Azure Stack Edge Pro R 및 Azure Stack Edge Mini R을 사용하면 애플리케이션을 실행하고 하드웨어 가속 AI 및 ML 솔루션을 활용하여 에지에서 데이터를 분석, 변환 및 필터링할 수 있습니다. 그런 다음 두 가지 모두에서 공통 앱 논리를 사용하여 추가 분석을 위해 Azure에서 데이터를 집계할 수 있습니다. 또한 어플라이언스는 클라우드 스토리지 게이트웨이 역할을 하므로 파일에 대한 로컬 액세스를 유지하면서 Azure로 데이터를 전송할 수 있습니다. Azure Stack Edge Pro R 및 Mini R은 일반적으로 Azure Government 및 Azure Government Secret의 고객에게 제공됩니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>임무 요구 사항을 위해 설계되고 빌드된 이 견고한 에지 디바이스는 재해 대응에서 최신 함대 관리, 경계 보안 및 위험한 개체 감지에 이르는 시나리오를 가능하게 합니다. 미국 정부 고객 및 파트너<sup>2는</sup> 규정 준수 요구 사항에 따라 Azure 상업용, Azure Government 및 Azure Government Secret을 사용하여 임무를 진행할 수 있습니다. IaaS, PaaS 및 SaaS에 걸쳐 정부에<b> </b>광범위한 상업적 혁신을<b> </b>제공하고 가장 포괄적인 규정 준수를 제공하는 이러한 클라우드 플랫폼은 임무 시스템을 현대화하고 현재와 미래의 선두를 유지하는 데 도움이 되도록 설계되었습니다.</p>
+
+
+  <p><em><sup>1</sup> </em><a href="https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-impact-level-5" target="_blank">영향 수준 5 워크로드에 대한 격리 지침을 읽습니다</a><em>.</em></p>
+
+
+  <p><em><sup>2</sup> Azure Government는 자격 검토를 통해 미국 연방, 주, 지방 또는 부족 정부 기관 및 해당 솔루션 공급자에서 사용할 수 있습니다. Azure Government Secret은 비밀 수준에서 분류된 미국 정부 데이터로 작업하는 기관에 대한 미국 정부의 승인을 통해 사용할 수 있습니다.</em></p>

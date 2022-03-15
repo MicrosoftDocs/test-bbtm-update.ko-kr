@@ -1,0 +1,96 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 231bc249cfd8c49dc8668814e8ba141ee9767a2c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900523"
+Slug: spotlight-on-new-capabilities-of-azure-sql-database-geo-replication
+Title: Azure SQL Database 지역에서 복제의 새로운 기능에 대한 스포트라이트
+Summary: 오늘 우리는 고객의 문제를 해결하고 고객에게 새로운 기능을 가능하게하는 새로운 지역 복제 개선 사항 집합을 발표하고 있습니다.
+Content: >-
+  <p>작년에 SQL Database 지역 복제가 출시된 이후 우리는 고객의 피드백을 경청하고 기능을 개선하기 위해 노력해 왔습니다. 오늘 우리는 고객의 문제를 해결하고 고객에게 새로운 기능을 가능하게하는 새로운 지역 복제 개선 사항 집합을 발표하고 있습니다<em>. </em> 이러한 기능은 V12 데이터베이스에 사용할 수 있으며 다음을 포함합니다.</p>
+
+
+  <ul>
+   <li>지역에서 복제에 대한 T SQL 지원</li>
+   <li>장애 조치(failover) 및 장애 복구(failback)</li>
+   <li>보안 자격 증명 및 방화벽 규칙을 동기화하는 기능</li>
+   <li>탄력적 풀의 데이터베이스에 대한 지역 복제의 전체 지원</li>
+   <li>보조 데이터베이스의 구성 가능한 성능 수준</li>
+   <li>Azure Resource Manager API 및 역할 기반 보안 지원</li>
+   <li>동기 PowerShell cmdlet</li>
+  </ul>
+
+
+  <h1>지역에서 복제에 대한 T SQL 지원</h1>
+
+
+  <p>이제 T-SQL 사용하여 지역에서 복제를 구성하고 장애 조치(failover)를 시작할 수 있습니다. 이러한 명령은 SQL 인증이 필요하므로 기존 PowerShell cmdlet과 마찬가지로 구독 인증서 공유에 의존하지 않습니다. 특히 주 서버와 다른 Azure 구독에서 만든 보조 논리 서버를 사용할 수 있습니다. 새 T-SQL 구문에 대한 자세한 내용은 <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-transact-sql/">Transact-SQL 사용하는 Azure SQL Database 대한 지역 복제</a>를 참조하세요.&nbsp; 각 T-SQL 명령에는 <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-powershell/">PowerShell</a> 또는 <a href="https://msdn.microsoft.com/library/mt163571(Azure.100).aspx">REST API</a>가 동일합니다.</p>
+
+
+  <h1>장애 조치(failover) 및 장애 복구(failback)</h1>
+
+
+  <p>새 장애 조치(failover) 명령을 사용하면 관계를 유지하면서 데이터베이스 역할을 쉽게 전환할 수 있습니다. 실제 가동 중단 중에 계획&rdquo;되지 않은 옵션을 사용하여 명령을 &ldquo;호출하여 보조를 기본으로 즉시 승격할 수 있습니다.&nbsp; 실패한 주 복제본이 복구되고 다시 사용할 수 있는 경우 시스템은 자동으로 보조 복제본으로 표시하고 새 주 복제본을 사용하여 최신 상태로 유지합니다.&nbsp; 복제의 비동기 특성으로 인해 주 복제본이 가장 최근의 변경 내용을 보조 데이터베이스에 복제하기 전에 실패하는 경우 계획되지 않은 장애 조치(failover) 중에 소량의 데이터가 손실될 수 있습니다.</p>
+
+
+  <p>또 다른 향상된 기능은 여러 보조 데이터베이스의 자동 관리입니다.&nbsp; 여러 보조 복제본이 있는 주 데이터베이스가 장애 조치(failsover)되면 시스템은 자동으로 복제 관계를 다시 구성하고 나머지 보조 데이터베이스를 사용자 개입 없이 새로 승격된 주 복제본에 연결합니다.</p>
+
+
+  <p>다음 그림에서는 Azure Portal을 사용하여 중단이 발생한 경우 지역에서 복제된 데이터베이스를 장애 조치(failover)하는 방법을 보여 줍니다. 지역에서 복제에 Azure Portal을 사용하는 방법에 대한 자세한 내용은 이 <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-portal/">문서를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/85c9dc78-2ca7-40aa-bb48-fb454de88e9c.png"><img alt="Geo-failover capture (2)" border="0" height="716" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2fbc20ec-72ca-43bd-b8d8-11ec3508fff4.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="지역 장애 조치(failover) 캡처(2)" width="1030"></a></p>
+
+
+  <p>중단이 완화된 후에는 애플리케이션을 주 지역으로 반환하는 것이 바람직할 수 있습니다. 이렇게 하려면 계획된&rdquo; 옵션을 사용하여 장애 조치(failover) 명령을 호출할&nbsp; &ldquo;수 있습니다. 계획된&rdquo; 장애 조치(failover)를 활성화&ldquo;하는 방법에 대한 자세한 내용은 PowerShell을 <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-transact-sql/">사용하는 Azure SQL Database Transact-SQL</a> 및 <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-powershell/">지역 복제를 사용하는 Azure SQL Database 대한 지역 복제</a>를 참조하세요.</p>
+
+
+  <h1>DR 드릴</h1>
+
+
+  <p>앞에서 설명한 것처럼 계획된&rdquo; 모드에서 &ldquo;장애 조치(failover) 명령을 호출하면 데이터가 완전히 동기화된 후 데이터베이스 역할을 보조 역할과 주 데이터베이스 간에 전환합니다. 계획된 장애 조치(failover)로 인해 데이터가 손실되지 않고 주 데이터베이스가 항상 보호되므로 이 명령을 사용하여 프로덕션 환경에서 재해 복구 훈련을 수행할 수도 있습니다.&nbsp;</p>
+
+
+  <h1>자격 증명 및 방화벽 규칙의 동기화 유지</h1>
+
+
+  <p>모든 보조 데이터베이스가 주 데이터베이스와 동일한 <a href="https://azure.microsoft.com/documentation/articles/sql-database-firewall-configure/">방화벽 규칙을</a> 갖도록 이러한 규칙을 데이터베이스와 복제할 수 있도록 지역에서 복제된 데이터베이스에 대해 데이터베이스 방화벽 규칙을 사용하는 것이 좋습니다.&nbsp; 이렇게 하면 고객이 주 데이터베이스와 보조 데이터베이스를 모두 호스팅하는 서버에서 방화벽 규칙을 수동으로 구성하고 유지 관리할 필요가 없습니다.&nbsp;</p>
+
+
+  <p>마찬가지로 데이터 액세스에 <a href="https://azure.microsoft.com/documentation/articles/sql-database-manage-logins/">포함된 데이터베이스 사용자를</a> 사용하면 기본 데이터베이스와 보조 데이터베이스 모두 항상 동일한 사용자 자격 증명을 갖게 되므로 장애 조치(failover) 시 로그인 및 암호 불일치로 인해 중단이 발생하지 않습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/">AAD(Azure Active Directory</a>)가 추가되면서 고객은 주 데이터베이스와 보조 데이터베이스&nbsp; 모두에 대한 사용자 액세스를 관리할 수 있으며 데이터베이스에서 자격 증명을 모두 관리할 필요가 없습니다.</p>
+
+
+  <h1>탄력적 풀 데이터베이스의 지역에서 복제</h1>
+
+
+  <p>표준 또는 Premium 탄력적 데이터베이스 풀의 모든 데이터베이스에 대한 지역 복제를 구성할 수 있습니다. 서비스 계층이 동일하면 보조 데이터베이스가 다른 탄력적 데이터베이스 풀에 있을 수 있습니다. 일반 데이터베이스의 경우 보조 데이터베이스는 탄력적 데이터베이스 풀일 수 있고 그 반대의 경우도 마찬가지입니다. 다시, 서비스 계층이 동일한 한. 탄력적 데이터베이스 풀에서 지역에서 복제를 구성하는 좋은 예는 PowerShell을 <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-transact-sql/">사용하는 Azure SQL Database Transact-SQL</a> 및 <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-powershell/">지역 복제를 사용하는 Azure SQL Database 대한 지역 복제</a>를 참조할 수 있습니다.&nbsp;</p>
+
+
+  <h1>보조 데이터베이스의 구성 가능한 성능 수준</h1>
+
+
+  <p>이제 주 데이터베이스보다 성능 수준이 낮은 보조 데이터베이스를 만들 수 있습니다. 동일한 서비스 계층을 확보하려면 주 데이터베이스와 보조 데이터베이스 모두 필요합니다. 이 옵션은 데이터베이스 쓰기 작업이 많은 애플리케이션에서는 복제 지연이 증가할 수&nbsp; 있으므로 장애 조치(failover) 후 상당한 데이터 손실 위험이 높기 때문에 권장되지 않습니다.&nbsp; 또한 장애 조치(failover) 후 새 주 복제본이 더 높은 성능 수준으로 업그레이드될 때까지 애플리케이션&rsquo; 성능에 영향을 줍니다.&nbsp; <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-powershell/">PowerShell</a>을 <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-transact-sql/">사용하는 Azure SQL Database Transact-SQL 및 지역 복제를 사용하여 Azure SQL Database 대한 지역</a> 복제에서 보조 복제본의 성능 수준을 구성하는 예제를 찾을 수 있습니다.&nbsp;</p>
+
+
+  <h1>Azure Resource Manager API 및 역할 기반 보안</h1>
+
+
+  <p>이제 지역에서 복제에는 새 ARM <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-powershell/">기반 PowerShell cmdlet</a>을 포함하여 관리를 위한 새 <a href="https://msdn.microsoft.com/en-us/library/azure/mt163571.aspx">ARM(Azure Resource Manager) API</a> 집합이 포함됩니다. 이러한 API에는 리소스 그룹을 사용하고 RBAC(역할 기반 보안)를 지원해야 합니다. 액세스&rsquo; 역할 구현에 대한 유용한 지침이 포함된 <a href="https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/">RBAC 입문</a> 서를 소개합니다.</p>
+
+
+  <blockquote>
+
+  <p>기존 <a href="https://msdn.microsoft.com/en-us/library/azure/dn505719.aspx">Azure SQL Service Management(클래식) REST API</a> 및 <a href="https://msdn.microsoft.com/en-us/library/azure/dn546723.aspx">Azure SQL Database(클래식) cmdlet</a>은 이전 버전과의 호환성을 위해 지원됩니다. 그러나 새 기능은 ARM 기반 <a href="https://msdn.microsoft.com/en-us/library/azure/mt163571.aspx">Azure SQL REST API</a> 및 ARM 기반 <a href="https://msdn.microsoft.com/en-us/library/azure/mt574084.aspx">Azure SQL Database PowerShell cmdlet</a>에서만 지원됩니다.</p>
+
+  </blockquote>
+
+
+  <h1>동기 PowerShell cmdlet</h1>
+
+
+  <p>기본적으로 동기 실행을 지원하는 <a href="https://azure.microsoft.com/documentation/articles/sql-database-geo-replication-powershell/">새 ARM 기반 PowerShell cmdlet을</a> 도입하여 스크립팅을 간소화합니다. 지역에서 복제 및 장애 조치(failover) 명령을 동기적으로 사용하는 경우 이러한 장기 실행 작업의 진행률을 더 이상 모니터링할 필요가 없습니다. 명령이 반환될 때까지 기다리도록 스크립트를 작성할 수 있습니다.</p>

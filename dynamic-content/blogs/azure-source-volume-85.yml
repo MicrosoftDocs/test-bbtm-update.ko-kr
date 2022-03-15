@@ -1,0 +1,163 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5c815092d0ad3aeb6eb6fdfb24aec92691bea2c8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906509"
+Slug: azure-source-volume-85
+Title: Azure.Source – 볼륨 85
+Summary: 'HB 시리즈 Azure Virtual Machines는 클라우드 슈퍼컴퓨팅 마일스톤을 달성합니다. 이제 Azure NetApp Files를 일반 공급합니다. Azure IoT Hub 메시지 보강은 데이터의 다운스트림 처리를 간소화합니다. '
+Content: >-
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/hb-series-azure-virtual-machines-achieve-cloud-supercomputing-milestone/" target="_blank">HB 시리즈 Azure Virtual Machines는 클라우드 슈퍼컴퓨팅 마일스톤을 달성합니다.</a></h3>
+
+
+  <p>Azure Virtual Machine HB 시리즈는 MPI 기반 HPC(고성능 컴퓨팅) 작업을 10,000개 코어로 확장한 최초의 퍼블릭 클라우드입니다. 이 수준의 크기 조정은 오랫동안 세계에서&rsquo; 가장 강력하고 독점적인 슈퍼컴퓨터의 영역으로 간주되어 왔지만, 이제는 Azure를 사용하는 모든 사용자가 사용할 수 있습니다. HB 시리즈 VM(가상 머신)은 높은 메모리 대역폭이 필요한 HPC 애플리케이션에 최적화되어 있습니다. 이 워크로드 클래스의 경우 HB 시리즈 VM은 Azure 또는 퍼블릭 클라우드의 다른 곳에서 시작된 가장 성능이 뛰어난 확장성 및 가격 성능입니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/simplifying-event-driven-architectures-with-the-latest-updates-to-event-grid/" target="_blank">Event Grid에 대한 최신 업데이트를 사용하여 이벤트 기반 아키텍처 간소화</a></h3>
+
+
+  <p>이벤트 기반 아키텍처는 점점 더 덜 동적 폴링 기반 시스템을 대체하고 능가하여 <a href="https://azure.com/serverless" target="_blank">서버리스</a> 컴퓨팅의 이점을 IoT 시나리오, 데이터 처리 작업 또는 인프라 자동화 작업으로 가져오고 있습니다. 마이크로 서비스의 자연스러운 진화로 전 세계 기업들은 이벤트 중심의 접근 방식을 취하여 기존 애플리케이션에서 새로운 환경을 만들거나 이러한 애플리케이션을 클라우드로 가져와 매일 더 강력하고 복잡한 시나리오를 구축하고 있습니다. &rsquo;오늘날 클라우드에서 더 높은 성능과 고급 이벤트 기반 애플리케이션을 구동하는 Event Grid에 대한 일련의 업데이트를 발표하게 되어 매우 기쁩니다.</p>
+
+
+  <h2>일반 공급</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-netapp-files-is-now-generally-available/" target="_blank">이제 Azure NetApp Files를 일반 공급</a></h3>
+
+
+  <p>업계&rsquo; 최초의 운영 체제 미설치 클라우드 파일 스토리지 및 데이터 관리 서비스인 <a href="https://azure.microsoft.com/en-us/services/storage/netapp/" target="_blank">Azure NetApp Files</a>의 GA(일반 공급)를 발표하게 되어 기쁩니다.&#39; Azure NetApp Files는 코드 변경 없이 데이터베이스, SAP 및 고성능 컴퓨팅 애플리케이션을 포함하여 클라우드에서 가장 까다로운 엔터프라이즈 파일 워크로드를 마이그레이션하고 실행하기 위한 Azure 자사 서비스입니다. 이 이정표는 업계에서 고유한 서비스를&rsquo; 통해 고객에게 훌륭한 경험을 제공하기 위해 두 회사가 심층 투자한 결과입니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-iot-hub-message-enrichment-simplifies-downstream-processing-of-your-data/" target="_blank">Azure IoT Hub 메시지 보강은 데이터의 다운스트림 처리를 간소화합니다.</a></h3>
+
+
+  <p><a href="https://azure.microsoft.com/services/iot-hub/" target="_blank">방금 Azure IoT Hub</a>에서 다른 서비스로 송신되는 메시지를 보강할 수 있는 새로운 기능을 릴리스했습니다. Azure IoT Hub는 메시지를 다른 서비스에 자동으로 배달하는 기본 기능을 제공하며 IoT 디바이스에서 수십억 개의 메시지를 처리하도록 빌드되었습니다. 메시지는 IoT 솔루션 전체에서 다양한 워크플로를 사용하도록 설정하는 중요한 정보를 전달합니다. <a href="https://aka.ms/iotmsgenrich" target="_blank">메시지 보강</a>&nbsp; 데이터의 후처리를 간소화하고 정보를 위해 디바이스 쌍 API를 호출하는 비용을 줄일 수 있습니다. 이 기능을 사용하면 디바이스 쌍의 세부 정보, IoT Hub 이름 또는 추가하려는 정적 속성과 같은 메시지에 대한 정보를 스탬프할 수 있습니다.</p>
+
+
+  <h2>이제 미리 보기로</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/simplify-the-management-of-application-configurations-with-azure-app-configuration/" target="_blank">Azure App Configuration을 사용하여 애플리케이션 구성 관리 간소화</a></h3>
+
+
+  <p>&rsquo;개발자 및 IT를 위한 애플리케이션 구성 및 기능 플라이팅 관리를 간소화하기 위한 새로운 서비스인 Azure App Configuration의 공개 미리 보기를 발표하게 되어 매우 기쁩니다. App Configuration은 사용자가 모든 애플리케이션 설정 및 기능 플래그(기능 토글이라고도 함)를 저장하고, 액세스를 제어하고, 필요한&#39;구성 데이터를 제공할 수 있도록 Microsoft Azure 중앙 집중식 위치를 제공합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/manage-your-cross-cloud-spend-using-azure-cost-management/" target="_blank">Azure Cost Management를 사용하여 클라우드 간 지출 관리</a></h3>
+
+
+  <p>기업에서 둘 이상의 클라우드 공급자에서 워크로드를 실행하는 것이&rsquo; 일반적입니다. 그러나 다중 클라우드 전략을 채택하면 다양한 비용 모델 처리, 다양한 청구 주기 및 여러 대시보드 및 보기를 탐색하기 어려울 수 있는 다양한 클라우드 디자인과 같은 복잡성이 있습니다. Weve&rsquo;는 여러 클라우드 공급자에서 지출을 관리하고, 예산 초과를 방지하고, 제어를 유지하고, 소비자와의 책임을 만드는 데 도움이 되는 중앙 비용 관리 솔루션이 필요하다는 소식을 많이 들었습니다. Azure Cost Management는 이제 클라우드 간 지원을 제공합니다. 미리 보기에서 사용할 수 있으며 조직의&rsquo; 다중 클라우드 요구 사항을 효율적이고 효과적으로 관리하는 데 중요한 역할을 할 수 있습니다.</p>
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/isolate-app-integrations-for-stability-scalability-and-speed-with-an-integration-service-environment/" target="_blank">통합 서비스 환경을 사용하여 안정성, 확장성 및 속도를 위해 앱 통합 격리</a></h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/connecting-the-colossal-how-to-scale-innovation-with-serverless-integration/" target="_blank">대규모 혁신</a> 은 대규모 조직이 직면한 일반적인 과제입니다. 이 과제의 주요 기여자는 수많은 앱과 환경을 조정하는 복잡성입니다. <a href="https://azure.microsoft.com/en-us/services/logic-apps/">Azure Logic Apps</a> 같은 통합 도구는 온-프레미스 또는 클라우드에서 원하는 만큼 빠르게 크기를 조정하고 혁신할 수 있는 유연성을 제공합니다. 이는 클라우드로 마이그레이션할 때 또는 클라우드 네이티브로&#39;경우에도 필요한 주요 기능입니다. 종종 통합은 사실 이후에 해야 할 일로 강등되었습니다. 그러나 최신 엔터프라이즈에서 애플리케이션 통합은 애플리케이션 개발 및 혁신과 함께 수행해야 하는 작업입니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/key-causes-of-performance-differences-between-sql-managed-instance-and-sql-server/" target="_blank">SQL 관리되는 인스턴스와 SQL Server 간의 성능 차이의 주요 원인</a></h3>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-index" target="_blank">Microsoft Azure SQL Database 관리형 인스턴스</a>로 마이그레이션하면 완전 관리형 지능형 클라우드 데이터베이스 서비스에서만 얻을 수 있는 다양한 운영 및 재정적 이점을 얻을 수 있습니다. 이러한 이점 중 일부는 전체 데이터베이스 성능을 최적화하거나 개선하는 기능에서 비롯됩니다. 마이그레이션 후 많은 고객이 워크로드 성능을 온-프레미스 <a href="https://www.microsoft.com/en-us/sql-server" target="_blank">SQL Server</a> 경험한 것과 비교하기를 열망하며, 때로는 결과에 놀랄&#39;있습니다. 이 문서는 성능 차이를 유발할 수 있는 기본 요인과 SQL Server SQL Database 공정하게 비교하기 위해 수행할 수 있는 단계를 이해하는 데 도움이 됩니다.</p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=aqjvBJWexnk&amp;feature=youtu.be" target="_blank">Azure 리소스 템플릿 및 Chef Automate를 사용하여 Azure 배포</a></h3>
+
+
+  <p>이 비디오에서는 Azure와 Chef의 조합을 사용하여 웹 사이트를 빌드하는 방법을 보여줍니다.</p>
+
+
+  <h3><a href="https://medium.com/microsoftazure/serverless-video-less-servers-more-code-4b360a50ed7d" target="_blank">서버리스 비디오: 서버 감소, 코드 추가</a></h3>
+
+
+  <p>서버리스는 전 세계 마케팅 팀이 클라우드 기반 제품과 연결하는 것을 좋아한다는 단어이지만 실제로 무엇을 의미합니까? 완전 관리형 제품과 진정한 &ldquo;서버리스의 차이점은 무엇인가&rsquo;요?&rdquo; <em>실제로</em> 관련된 서버가 없나요? 기존 애플리케이션 서비스를 서버리스로 마이그레이션해야 하나요? 서버리스를 통합해야 하는 새 프로젝트를 어떻게 결정하나요? 이 비디오에서는 설명합니다.</p>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3>Azure Cosmos <a href="https://channel9.msdn.com/Shows/Azure-Friday" target="_blank">DBAzure</a> |  Friday<a href="https://channel9.msdn.com/Shows/Azure-Friday/Serverless-geo-distributed-applications-with-Azure-Cosmos-DB" target="_blank">를 사용하는 서버리스 지역 분산 애플리케이션</a></h3>
+
+
+  <p>Matias Quaranta는 Scott Hanselman과 함께 Azure Cosmos DB와 서버리스 지역 분산 애플리케이션을 만들기 위한 몇 가지 모범 사례를 공유합니다. Azure Cosmos DB와 Azure Functions 간의 네이티브 통합을 사용하여 Azure Cosmos DB 계정에서 직접 데이터베이스 트리거, 입력 바인딩 및 출력 바인딩을 만들 수 있습니다. Azure Functions 및 Azure Cosmos DB를 통해 전역 사용자 기반의 풍부한 데이터에 짧은 대기 시간으로 액세스할 수 있는, 서버를 사용하지 않는 이벤트 구동 앱을 만들고 배포할 수 있습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" scrolling="no" src="https://channel9.msdn.com/Shows/Azure-Friday/Serverless-geo-distributed-applications-with-Azure-Cosmos-DB/player?format=ny" width="480"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/On-NET/Updating-the-WinForms-Designer-for-NET-Core-30" target="_blank">.NET Core 3.0</a> | 용 WinForms 디자이너 업데이트 <a href="https://channel9.msdn.com/Shows/On-NET/?ocid=AID765057&amp;wt.mc_id=CFID0451" target="_blank">.NET에서</a></h3>
+
+
+  <p>.NET Core가 데스크톱 애플리케이션에 가져올 수 있는 많은 이점이 있습니다. .NET Core 3.0에서는 WinForms 및 WPF(Windows Presentation Foundation)를 사용하여 데스크톱 애플리케이션을 빌드하기 위한 지원이 추가되고 있습니다. 이 에피소드에서 제레미는 메리 맥가우와 더스틴 캠벨과 함께 WinForms 디자이너가 .NET Core 3을 준비할&#39;있는 작업에 대한 흥미로운 통찰력을 공유합니다.</p>
+
+
+  <p style="text-align: center;"><iframe align="middle" allowfullscreen="" frameborder="0" height="270" scrolling="no" src="https://channel9.msdn.com/Shows/On-NET/Updating-the-WinForms-Designer-for-NET-Core-30/player?format=ny" width="480"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Parkinsons-Patient-Before-and-After-Sensoria-Smart-Sock" target="_blank">파킨슨 병&rsquo; 환자 : 사물의 센서리아 스마트 SockInternet</a> |  <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show" target="_blank">전후 쇼</a></h3>
+
+
+  <p>Sensoria는 의류가 컴퓨터&reg;라는 비전을 가진 Azure IoT 파트너입니다. Sensoria&#39;독점 센서 주입 스마트 의류, Sensoria&reg; Core 마이크로 일렉트릭 및 클라우드 시스템을 통해 스마트 의류를 통해 실시간으로 사용자를 위한 실행 가능한 정보로 데이터를 변환할 수 있습니다. Davide Vigano는 IoT Show의 비전과 제품 및 Azure IoT 파트너 관계를 공유합니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" scrolling="no" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Parkinsons-Patient-Before-and-After-Sensoria-Smart-Sock/player?format=ny" width="480"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/XamarinShow/Next-Level-Maps-With-ArcGIS-For-NET" target="_blank">버전 추적(주 Xamarin.essentials API)</a> |  <a href="https://channel9.msdn.com/Shows/XamarinShow" target="_blank">Xamarin Show</a></h3>
+
+
+  <p>Xamarin.Essentials는 모바일 애플리케이션에 대한 플랫폼 간 API를 개발자에게 제공합니다. 이번 주&#39;Xamarin.Essential API에서 버전 추적 API를 살펴보겠습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" scrolling="no" src="https://channel9.msdn.com/Shows/XamarinShow/Next-Level-Maps-With-ArcGIS-For-NET/player?format=ny" width="480"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-Productivity-Tips" target="_blank">Visual Studio 생산성 팁</a> | <a href="https://channel9.msdn.com/Shows/Visual-Studio-Toolbox" target="_blank">Visual Studio 도구 상자</a></h3>
+
+
+  <p>이 에피소드에서 로버트는 <a href="https://twitter.com/gotheap">켄드라 헤이븐스에 합류한다</a>. 모든 버전의 Visual Studio 새로운 생산성 기능을 도입합니다. Visual Studio 2019에 도입 된 것들 중 일부를 보려면 Kendra&#39;비디오를 &ldquo; 확인하여 <a href="https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2019-Launch-Event/Write-beautiful-code-faster" target="_blank">아름다운 코드를 더 빨리 작성</a>하십시오.&rdquo; 하지만 한동안 Visual Studio 있었던 것들은 어떨까요? 그 중 일부를 보려면이 비디오를 시청하십시오.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" scrolling="no" src="https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-Productivity-Tips/player?format=ny" width="480"></iframe></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=brS7jMD08YM&amp;list=PLI1_CQcV71RnI3YwRSFNfFcE8u3xojHp-&amp;index=3&amp;t=0s" target="_blank">클라우드 전문가: Azures&rsquo; 새 인증 설명</a> | <a href="https://www.youtube.com/channel/UCp8lLM2JP_1pv6E0NQ38pqw" target="_blank">A 클라우드 전문가</a></h3>
+
+
+  <p>Lars는 클라우드 설계자이자 어드바이저인 티아고 코스타(Tiago Costa)와 함께 MVP 글로벌 서밋에서 Microsofts가 새로 시작한 역할 기반 인증을 분석&rsquo;합니다. 인증 변경의 &quot;이유에&rdquo; 대한 인사이트와 이 Azure MVP 및 Microsoft Certified Trainer의 보너스 시험 팁이 제공됩니다.</p>
+
+
+  <h2>Azure 팟캐스트</h2>
+
+
+  <h3><a href="https://azpodcast.blob.core.windows.net/episodes/Episode281.mp3" target="_blank">에피소드 281 - 재해 복구</a> |  <a href="https://azpodcast.azurewebsites.net/" target="_blank">Azure 팟캐스트</a></h3>
+
+
+  <p>켄달과 신시아는 Sujay Talasila 및 Won Huh와 함께 재해 복구에 대해 어떻게 생각하는지, 재해 복구와 백업 간에 고려해야 할 차이점, 사용자가 고려해야 할 권장 사례에 대해 이야기합니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode281.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h2>파트너 및 산업</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/visual-data-ops-for-apache-kafka-on-azure-hdinsight-powered-by-lenses/" target="_blank">Lenses로 구동되는 Azure HDInsight의 Apache Kafka에 대한 시각적 데이터 작업 </a></h3>
+
+
+  <p>Apache Kafka는 현재 가장 인기 있는 오픈 소스 스트리밍 플랫폼 중 하나입니다. 그러나 Kafka를 배포하고 실행하는 것은 여전히 대부분의 과제입니다. Azure HDInsight는 다양한 개선 사항을 제공하여 이 문제를 해결합니다. 이 블로그에서는 이를 설명하고, 이제 Azure Portal 내에서 <a href="https://azure.microsoft.com/en-us/services/hdinsight/">Azure HDInsight</a> 애플리케이션 에코시스템의 일부로 일반적으로 사용할 수 있는 오버레이 플랫폼인 <a href="https://lenses.io/?utm_source=Azure_Cloud&amp;utm_medium=Microsoft_Blog&amp;utm_campaign=Azure_Lensesio">Lenses</a>를 사용하여 가시성에서 모니터링에 이르기까지 스트리밍 데이터 작업을 성공적으로 관리하는 방법을 보여 줍니다.</p>

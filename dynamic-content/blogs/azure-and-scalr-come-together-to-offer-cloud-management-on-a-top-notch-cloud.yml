@@ -1,0 +1,162 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2ce547b0b0b1f9dd221b1804033ef4b7f9617d01
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906615"
+Slug: azure-and-scalr-come-together-to-offer-cloud-management-on-a-top-notch-cloud
+Title: Azure와 Scalr가 함께 모여 Azure에서 최고 수준의 클라우드 관리를 제공합니다.
+Summary: 오늘 Scalr의 클라우드 관리 플랫폼이 Azure Virtual Machines에 대한 지원을 추가했다는 사실을 발표하게 되어 기쁩니다.
+Content: >-
+  우리는 지금까지 시애틀에서 훌륭한 여름을 보냈고 계속 좋아지고 있습니다!! 오늘 <a href="https://www.scalr.com/blog/scalr-now-supports-microsoft-azure">Scalr의 클라우드 관리 플랫폼이 Azure Virtual Machines에 대한 지원을 추가했다는</a> 사실을 발표하게 되어 기쁩니다. 이제 여러 클라우드 및 하이브리드 환경에 걸친 배포, 인프라 거버넌스 및 재무 정책 제어를 위해 Scalr의 환상적인 관리 환경을 사용하여 Azure에서 클라우드 네이티브 인프라를 빌드할 수 있습니다.
+
+
+  Scalr 클라우드 관리 플랫폼(<a href="https://www.scalr.com"><i>https://www.scalr.com</i></a><i>)</i> 을 사용하면 퍼블릭이든 프라이빗이든 관계없이 여러 하이브리드 클라우드에서 애플리케이션 개발을 관리할 수 있으므로 인프라 배포를 위한 학습 곡선을 단축할 수 있습니다. Scalr 플랫폼은 배포, 모니터링을 자동화하고 재무 비용 책임 및 규정 준수 제어를 포함한 거버넌스 및 정책을 제공합니다. 이전에 BUILD 및 오늘 발표에서 설명한 Scalr는 컴퓨팅, 네트워킹 및 스토리지에서 Azure의 새로운 <a href="https://azure.microsoft.com/blog/2015/04/29/iaas-just-got-easier-again/">Azure Resource Manager</a> 를 사용하여 Virtual Machines를 배포하고 관리하는 지원을 추가했습니다.
+
+
+  Azure의 Scalr는 AWS 및 GCE보다 더 많은 지역을 지원하는 19개 지역(곧 24개 지역)에서 즉시 사용할 수 있습니다. Azure에서 제공하는 이 광범위한 글로벌 범위를 통해 Scalr를 사용하여 클라우드 네이티브 인프라를 간단하게 관리하면서 최종 고객 또는 직원에게 더 가깝게 애플리케이션을 실행할 수 있습니다. 배포된 Virtual Machines를 Azure Web Apps, Mobile Apps 또는 Logic Apps와 같은 다양한 Azure PaaS 서비스와 결합할 수도 있습니다.
+
+  <h2>Scalr 플랫폼을 사용하는 방법</h2>
+
+  이제 Scalr를 사용하여 Azure에 배포하는 방법에 대한 빠른 자습서를 살펴보겠습니다. Scalr fromand <a href="https://github.com/Scalr/installer-ng">https://github.com/Scalr/installer-ng</a> 를 설치하고 로그인한 후 "이미지"에서 "모든 위치" 단추를 클릭하고 여기에서 "Azure"를 선택합니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Scalr.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Scalr" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Scalr_thumb.png" alt="Scalr" width="1098" height="467" border="0" /></a>
+
+
+  &nbsp;
+
+
+  그런 다음 원하는 이미지를 선택하고 "사용" 단추를 클릭합니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Scalr-Use.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Scalr-Use" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Scalr-Use_thumb.png" alt="Scalr-Use" width="1505" height="316" border="0" /></a>
+
+
+  &nbsp;
+
+
+  새 역할을 만들거나 기존 역할의 이미지를 사용할 수 있습니다. 이 예제에서는 계속해서 새 역할을 만들어 보겠습니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Create-New-Role.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="새 역할 만들기" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Create-New-Role_thumb.png" alt="Create New Role" width="1606" height="653" border="0" /></a>
+
+
+  &nbsp;
+
+
+  다음 단계는 팜을 만들고 Azure에서 만든 역할을 팜에 추가하는 것입니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Azure-Farm.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Azure Farm" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Azure-Farm_thumb.png" alt="Azure Farm" width="1611" height="208" border="0" /></a>
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Azure-Farm-2.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Azure Farm 2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Azure-Farm-2_thumb.png" alt="Azure Farm 2" width="1609" height="426" border="0" /></a>
+
+
+  &nbsp;
+
+
+  팜 속성을 구성한 후 "모든 클라우드" 드롭다운에서 "Azure"를 선택합니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/All-Clouds.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="모든 클라우드" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/All-Clouds_thumb.png" alt="All Clouds" width="969" height="615" border="0" /></a>
+
+
+  &nbsp;
+
+
+  이제 이전에 만든 역할을 선택하면 VM 세부 정보, 네트워킹 구성, 스토리지 구성 및 리소스 그룹 정보와 같은 Azure 특정 속성을 구성할 수 있습니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Select-Role.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="역할 선택" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Select-Role_thumb.png" alt="Select Role" width="1608" height="503" border="0" /></a>
+
+
+  &nbsp;
+
+
+  이 데모의 Standard_D1 사용하여 배포하는 것이 좋습니다. 그것은 좋은 "시작"VM 크기입니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Standard_D1.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Standard_D1" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Standard_D1_thumb.png" alt="Standard_D1" width="1488" height="964" border="0" /></a>
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Standard_D1-v2.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="Standard_D1 v2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Standard_D1-v2_thumb.png" alt="Standard_D1 v2" width="1488" height="958" border="0" /></a>
+
+
+  &nbsp;
+
+
+  다양한 메트릭에 따라 역할에 대한 크기 조정 결정을 구성할 수도 있습니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Metrics.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="메트릭" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Metrics_thumb.png" alt="Metrics" width="1505" height="956" border="0" /></a>
+
+
+  &nbsp;
+
+
+  또한 다양한 트리거 이벤트를 기반으로 양식에서 수행할 오케스트레이션 논리를 추가할 수 있습니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Logic.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="논리" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Logic_thumb.png" alt="Logic" width="1509" height="959" border="0" /></a>
+
+
+  &nbsp;
+
+
+  팜을 시작하면 "팜" 탭에서 진행률을 추적할 수 있습니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/06/Farm-Tab.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="팜 탭" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Farm-Tab_thumb.png" alt="Farm Tab" width="1510" height="191" border="0" /></a>
+
+
+  &nbsp;
+
+
+  거기 당신은 그것을 가지고! Scalr에서 관리 및 모니터링하는 Azure Virtual Machine입니다.
+
+
+  이 도움이 되기를 바랍니다!! 또한 Scalr 플랫폼에 대해 자세히 알아보기 위한 몇 가지 링크도 있습니다.
+
+  <ul>
+   <li><a href="https://scalr-wiki.atlassian.net/wiki/display/docs/Five+Minute+Quick+Start">Scalr 5분 빠른 시작</a></li>
+   <li><a href="https://scalr-wiki.atlassian.net/wiki/display/docs/Tutorials">Scalr 자습서</a></li>
+   <li><a href="https://scalr-wiki.atlassian.net/wiki/display/docs/API">Scalr API</a></li>
+  </ul>
+
+  주위를 둘러보십시오.
+
+
+  코리

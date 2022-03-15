@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0cf8f1a2c3bbaa3fd441968c1f0f9a4b83828fea
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900537"
+Slug: speech-devices-sdk-and-dev-kits-news-august-2018
+Title: Speech Devices SDK 및 Dev Kits 뉴스(2018년 8월)
+Summary: 며칠 전에 다운로드 사이트에 Speech Devices SDK의 v0.5.0 버전을 출시했습니다. 액세스하려면 Microsoft Speech Devices SDK 등록 양식을 통해 신청하세요.
+Content: >-
+  <p>며칠 전에 다운로드 <a href="https://shares.datatransfer.microsoft.com/" target="_blank">사이트에</a> <a href="https://aka.ms/sdsdk-info" target="_blank">Speech Devices SDK</a>의 v0.5.0 버전을 출시했습니다. 액세스하려면 <a href="https://aka.ms/sdsdk-signup" target="_blank">Microsoft Speech Devices SDK 등록 양식을</a> 통해 신청하세요.</p>
+
+
+  <p>최신 버전의 Speech Devices SDK 및 일치하는 샘플 앱을 사용하세요. Speech Devices SDK는 <a href="https://aka.ms/csspeech" target="_blank">Speech SDK</a>를 사용합니다. 또한 고급 오디오 처리 알고리즘을 사용하고 사용자 지정 KWS(키 단어 스포팅) 기능을 사용하도록 설정합니다. Speech Devices SDK&#39;버전은 모든 API가 일관되도록 Speech SDK 버전과 일치합니다. 현재 Java에 대한 지원만 있습니다. <a href="https://aka.ms/csspeech/javaref" target="_blank">Java API 참조를 참조하세요</a>. 자세한 내용은 <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/devices-sdk-release-notes" target="_blank">Speech Devices SDK&rsquo; 릴리스 정보를</a> 참조하세요. 현재 개발자 중심 Java 샘플 앱이 하나 있습니다. 소스 코드는 <a href="https://github.com/Azure-Samples/Cognitive-Services-Speech-Devices-SDK/tree/master/Samples/Android/Speech%20Devices%20SDK%20Starter%20App" target="_blank">샘플/Android 예제</a>의 <a href="https://github.com/Azure-Samples/Cognitive-Services-Speech-Devices-SDK" target="_blank">GitHub 리포지&rsquo;토리</a>에 게시할 수 있습니다. 사용할 수 있게 되면 추가 Java 샘플 앱을 게시할 예정입니다.</p>
+
+
+  <p>우리의 하드웨어 공급자 Roobo에서 마이크 배열 개발 키트, 또한 최근에 판매에 갔다. 하드웨어 사양 및 제품 세부 정보는 Microsoft Speech Services용 ROOBO 개발 키트를 방문하세요. 주문 및 배송을 포함하여 디바이스 하드웨어에 대한 질문이 있는 경우 Roobo에 rooboddk@roobo.com문의하세요. 현재는 미국과 중국으로만 배송할 수 있습니다.</p>
+
+
+  <p>Microsoft Cloud &amp; AI 그룹의 Xuedong Huang(기술 동료)의 개발 키트에 대한 <a href="https://www.linkedin.com/pulse/worlds-amazing-microphone-array-development-kits-xuedong-huang/" target="_blank">LinkedIn 문서</a>도 읽어보세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0302dbf-a3b9-42c9-964c-285e1359fc5d.png"><img alt="image" border="0" height="356" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3f4322f2-d460-4f67-92cd-25ef7f182105.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="599"></a></p>
+
+
+  <p>Microsoft Speech Devices SDK 및 Roobo Smart Audio Dev Kits를 사용하여 빌드할 멋진 디바이스 및 애플리케이션을 보기 위해 기다릴 수&rsquo; 없어요!</p>
+
+
+  <p>Speech Devices SDK 또는 Speech Services에 대한 질문은 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/support" target="_blank">지원 페이지를 방문</a>하세요.</p>

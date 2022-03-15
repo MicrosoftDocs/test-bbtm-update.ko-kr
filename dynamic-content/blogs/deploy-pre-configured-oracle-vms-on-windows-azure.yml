@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 740d14aad99e62ead99650f013c6c4f8a17cb886
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906839"
+Slug: deploy-pre-configured-oracle-vms-on-windows-azure
+Title: Windows Azure에 미리 구성된 Oracle VM 배포
+Summary: 전략적 파트너shibetween&nbsp; 마이크로 소프트와 오라클의 최근 발표를 기반으로; 오늘 우리는 통해 사용할 수있는 인기있는 Oracle 소프트웨어 구성의 숫자를 만들고 &nbsp;있다 ...
+Content: <p>전략적 파트너shibetween&nbsp; Microsoft 및 Oracle의 최근 발표를 기반으로 하며, 현재는 Windows Azure 이미지 갤러리를 통해 다양한 인기 있는 Oracle 소프트웨어 구성을 사용할 수 있도록 하고 &nbsp;있습니다.&nbsp; 즉시 고객은 <strong>Oracle 소프트웨어에 대한 라이선스가 포함된</strong> Windows Server에 Oracle Database, Oracle WebLogic Server 및 Java Platform SE 다양한 조합을 실행하는 미리 구성된 가상 머신 이미지를 배포할 수 있습니다. 미리 보기 중에 이러한 이미지는 일반 컴퓨팅 비용 이외의 <strong>추가 비용 없이 제공됩니다</strong> . 미리 보기 기간이 종료되면 Oracle 이미지는 한 달 동안 VM이 실행되는 총 시간(분)에 따라 요금이 청구됩니다. VM 가격 책정에 대한 세부 정보는 나중에 발표될 예정입니다. &nbsp;</p>  <p>이러한 즉시 배포할 수 있는 이미지를 사용하면 엔터프라이즈 Oracle 애플리케이션의 손쉬운 스케일링뿐만 아니라 개발 및 테스트를 위한 비용 효율적인 클라우드 환경을 신속하게 프로비전할 수 있습니다. Oracle 라이선스 이동성을 사용하면 이제 Oracle 소프트웨어에 라이선스가 부여된 기존 고객이 Azure를&nbsp; 배포할 수 Windows&nbsp; 강력한 관리 기능, 플랫폼 간 도구 및 자동화 기능을 활용할 수&nbsp; 있습니다.</p>  <p>또한 Oracle은 이제 Oracle Linux, Oracle Database를 사용하는 Oracle Linux 및 WebLogic Server가 있는 Oracle Linux를 Windows Azure 이미지 갤러리에서 이러한 제품을 사용할 수 있는 라이선스가 있는 고객을 위해 제공합니다.</p>  <p>Windows Azure에서 Oracle을 시작하려면 <a href="https://azure.microsoft.com/oracle" target="_blank">www.windowsazure.com/oracle</a> 및 Oracle 이미지에 대한 <a href="https://go.microsoft.com/fwlink/?LinkId=321002" target="_blank">기술 연습 설명서를</a> 방문하세요. 당신이 어떻게 생각하는지 <a href="https://twitter.com/windowsazure" target="_blank">@WindowsAzure</a>우리에게 잊지 마세요&rsquo;!&nbsp;</p>  <p><a href="" target="_blank"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8037.Oracle.png" alt="" border="0"></a></p>

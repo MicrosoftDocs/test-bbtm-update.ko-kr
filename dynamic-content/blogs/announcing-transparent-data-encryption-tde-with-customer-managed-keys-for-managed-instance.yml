@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f6402a95e3b6c14356c227e5074d8f7245df4608
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906882"
+Slug: announcing-transparent-data-encryption-tde-with-customer-managed-keys-for-managed-instance
+Title: Managed Instance에 대한 고객 관리형 키를 사용하여 TDE(투명한 데이터 암호화)
+Summary: Microsoft Azure SQL Database Managed Instance에 대한 BYOK(Bring Your Own Key) 지원을 통해 TDE(투명한 데이터 암호화)의 공개 미리 보기를 발표하게 되어 기쁩니다. Azure SQL Database 관리...
+Content: >-
+  <p>Microsoft Azure SQL Database <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance" target="_blank">Managed Instance</a>에 대한 BYOK(Bring Your Own Key) 지원을 통해 TDE(투명한 데이터 암호화)의 공개 미리 보기를 발표하게 되어 기쁩니다. Azure SQL Database Managed Instance는 최상의 온-프레미스 SQL Server 지능형 완전 관리형 관계형 데이터베이스 서비스의 운영 및 재정적 이점과 결합한 SQL Database 새로운 배포 옵션입니다.&nbsp;</p>
+
+
+  <p>BYOK를 지원하는 TDE는 2018년 4월부터 단일 데이터베이스 및 탄력적 풀에 일반 공급되었습니다. 미사용 데이터를 보호하거나 특정 키 관리 제어를 구현해야 하는 규정 및 규정 준수 의무를 충족하려는 기업 고객이 가장 자주 요청하는 기능 중 하나입니다. BYOK를 지원하는 TDE는 기본적으로 모든 새 Azure SQL 데이터베이스, 단일 데이터베이스, 풀 및 관리되는 인스턴스에서 사용하도록 설정된 서비스 관리 키가 있는 TDE 외에도 제공됩니다.</p>
+
+
+  <p>BYOK 지원을 사용하는 TDE는 FIPS 140-2 수준 2의 검증된 HSM(하드웨어 보안 모듈)에서 지원하는 RSA 암호화 키에 대해 고가용성 및 확장 가능한 보안 스토리지를 제공하는 <a href="https://azure.microsoft.com/en-us/services/key-vault/" target="_blank">Azure Key Vault</a>를 사용합니다. Azure Key Vault는 키 관리 프로세스를 간소화하고 고객이 키 액세스 관리 및 감사 등 암호화 키를 완전히 제어할 수 있도록 합니다.</p>
+
+
+  <p>고객은 RSA 키를 생성하여 Azure Key Vault로 가져와서 관리되는 인스턴스에 대한 BYOK 지원을 통해 Azure SQL Database TDE와 함께 사용할 수 있습니다. Azure SQL Database Azure Key Vault에 저장된 TDE 보호기라는 고객 관리형 키를 사용하여 보호되는 대칭 DEK(데이터베이스 암호화 키)를 사용하여 데이터베이스, 로그 파일 및 백업에 저장된 데이터의 암호화 및 암호 해독을 완전히 투명하게 처리합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1de78771-dbea-43e1-95d6-f8f024abb81e.png"><img alt="Access control transition from Azure SQL Database to Azure Key Vault flow chart" border="0" height="320" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d17b570-574c-4f2e-9637-29a861adf2c8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure SQL Database Azure Key Vault 흐름도로 액세스 제어 전환" width="815"></a></p>
+
+
+  <p>고객은 특정 보안 요구 사항 또는 산업별 규정 준수 의무를 충족하기 위해 Azure Key Vault에서 TDE 보호기를 회전할 수 있습니다. TDE 보호기가 회전되면 Azure SQL Database 몇 분 내에 새 키 버전을 검색하고 데이터베이스에 저장된 데이터를 암호화하는 데 사용되는 DEK를 다시 암호화합니다. 이렇게 하면 실제 데이터가 다시 암호화되지 않으며 사용자에게 필요한 다른 작업이 없습니다.</p>
+
+
+  <p>고객은 Azure Key Vault에 저장된 관리되는 인스턴스 TDE 보호기 액세스 권한을 취소하여 암호화된 관리되는 인스턴스&rsquo;에 대한 액세스를 취소할 수도 있습니다. Azure Key Vault에 저장된 키에 대한 액세스를 취소하는 방법에는 여러 가지가 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/powershell/module/azurerm.keyvault/?view=azurermps-4.0.0" target="_blank">Azure Key Vault PowerShell</a> 및 <a href="https://docs.microsoft.com/en-us/cli/azure/keyvault" target="_blank">Azure Key Vault CLI</a> 설명서를 참조하세요. Azure Key Vault에서 액세스를 취소하면 TDE 보호기가 Azure SQL Database 관리되는 인스턴스에서 액세스할 수 없는 경우 모든 데이터베이스에 대한 액세스를 효과적으로 차단합니다.</p>
+
+
+  <p>Azure SQL Database 실수로 삭제되지 않도록 TDE 보호기를 보호하기 위해 Azure Key Vault에서 <a href="https://docs.microsoft.com/en-us/azure/key-vault/key-vault-ovw-soft-deletehttps:/docs.microsoft.com/en-us/azure/key-vauhttps:/docs.microsoft.com/en-us/azure/key-vault/key-vault-ovw-soft-deletelt/key-vault-ovw-soft-delete" target="_blank">일시 삭제</a>를 사용하도록 설정해야 합니다.</p>
+
+
+  <p>Azure Portal을 방문하여 <a href="https://docs.microsoft.com/en-us/rest/api/sql/managedinstancekeys" target="_blank">Managed Instance에 대한 REST API</a> 및 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-powershell-samples" target="_blank">PowerShell 설명서 사용에 대한 방법 가이드를</a> 검토하여 오늘 시작할 수 있습니다. 모범 사례를 포함한 기능에 대해 자세히 알아보고 구성 검사 목록을 검토하려면 <a href="https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption-byok-azure-sql" target="_blank">Azure SQL 투명한 데이터 암호화: Bring Your Own Key 지원을</a> 참조 &ldquo; 하세요.&rdquo;</p>

@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ba0cb5fa8407d6e1a09af7ad4e96de0fa217805e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907367"
+Slug: announcing-sql-azure-importexport-service-now-in-production
+Title: 프로덕션 환경에서 SQL Azure Import/Export 서비스 발표
+Summary: 우리는 SQL Azure Import/Export 일반 공급 발표 기쁘게 생각합니다!&nbsp; 이제 프로덕션 서비스로 사용할 수 있는 SQL Azure Import/Export 조직에서 온-프레미스 데이터베이스를 배포하는 데 도움이 됩니다...
+Content: '<p>우리는 SQL Azure Import/Export 일반 공급 발표 기쁘게 생각합니다!&nbsp; 이제 프로덕션 서비스로 사용할 수 있는 SQL Azure Import/Export 조직에서 온-프레미스 데이터베이스를 SQL Azure 배포하고 <a target="_blank" href="https://www.windowsazure.com/en-us/home/tour/sql-azure/?WT.mc_id=cmp_pst001_blg_post0037">SQL Azure</a> 보관하고 데이터베이스를 Windows Azure Storage SQL Server. 새 프로덕션 릴리스의 주요 개선 사항은 다음과 같습니다.</p>  <ul>  <li>향상된 성능 &amp; 복원력</li>  <li>진행률 보고</li>  <li>선택적 내보내기</li>  <li>프로덕션 지원</li>  <li><a target="_blank" href="https://sqldacexamples.codeplex.com/wikipage?title=Import%20Export%20Service%20Client&amp;referringTitle=Documentation">새 사용 샘플 EXE</a></li>  </ul>  <p>이 서비스는 SQL Azure 및 Windows Azure Storage 사용하는 고객에게 무료로 제공됩니다. <span style="background-color: #ffffff;">자세한 내용 및 비디오 자습서는 <a target="_blank" href="https://dacguy.wordpress.com/2012/01/24/sql-azure-importexport-service-has-hit-production/"><span style="background-color: #ffffff;">DAC 블로그를</span></a> 참조하세요.</span></p>'

@@ -1,0 +1,136 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e055f12c2e2452eea25fa844ea63fe8d922f1857
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900225"
+Slug: supercomputing-2020-new-mpi-heights-joining-the-graph500-and-1-tbs-filesystems
+Title: 슈퍼컴퓨팅 2020 — 새 MPI 높이, Graph500 및 1TB/s 파일 시스템 조인
+Summary: "1년 전 SC'19에서 Azure가 HPC(고성능 컴퓨팅)를 위한 VM(Virtual Machines)의 HBv2 클러스터를 공개했습니다. 당시, 우리는 이 독특하고 강력하고 확장 가능한 VM을 \"지구상에서 가장 진보된 슈퍼컴퓨터와 경쟁\"으로 규정했습니다. "
+Content: >-
+  <p>1년 전 SC19에서 Azure는 HPC(고성능 컴퓨팅)를 위한 VM(가상 머신)의 HBv2 클러스터를 공개했습니다. 당시 우리는 이 독특하고 강력하고 확장 가능한 VM<a href="https://azure.microsoft.com/en-us/blog/azure-high-performance-computing-at-sc-19/" target="_blank">을 지구상에서 가장 진보된 슈퍼컴퓨터에 필적하는</a> 것으로 &ldquo; 특징지어 섰습니다.&rdquo; 클라우드 공급자에 대한 굵은 클레임입니다. 그 이후로 우리는&rsquo; <a href="https://azure.microsoft.com/en-us/blog/azure-hbv2-virtual-machines-eclipse-80000-cores-for-mpi-hpc/" target="_blank">이 약속을 이행</a>하기 위해 노력했습니다. &rsquo;혁신과 창의성의 원동력으로서 확장 가능한 HPC에 대한 우리의 노력이 고객과 파트너들에게 얼마나 큰 공감을 불러일으켰는지 알게 되어 기뻤습니다. 더 나은 여전히, 그들은 더 높은 막대를 설정하는 우리를 영감을했다. 가장 중요한 것은, 이 유일하게 어려운 한 해 동안, 우리는 고객과&rsquo; 파트너가&rsquo; 가장 <a href="https://cloudblogs.microsoft.com/industry-blog/microsoft-in-business/government/2020/09/04/u-s-navy-taps-microsoft-azure-to-enhance-weather-modeling/" target="_blank">중요</a> 하고 <a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/covid-19/" target="_blank">영향력 있는</a> 업무를 지원할 수 있는 특권을 받았습니다.</p>
+
+
+  <p>슈퍼컴퓨팅 2020(SC20)&nbsp;이 시작되면서, Wed&rsquo;는 Azure H 시리즈 제품에 새로운 슈퍼컴퓨팅 기능을 지속적으로 제공하는 Azure&rsquo;에 대한 몇 가지 중요한 업데이트를 공유하고 싶습니다. 또한 Wed&rsquo;는 Azure HPC 포트폴리오에 곧 추가될 예정을 미리 보고자 합니다.&nbsp;</p>
+
+
+  <h2>중요한 질병 연구를 위한 86,400개의 코어</h2>
+
+
+  <p>Azure는 퍼블릭 클라우드에서 MPI(메시지 전달 인터페이스 기반) HPC 크기 조정에 대한 새로운 기록을 달성했다고 발표하게 되어 기쁩니다. 86,400개의 CPU(중앙 처리 장치) 코어에서 NAMD(Nanoscale Molecular Dynamics)를 실행하는 Azure는 페타스케일 컴퓨팅이 어디서나 연구자의 손끝에 있음을 입증했습니다.</p>
+
+
+  <p>NAMD는 매우 현실적인 생체 분자 시뮬레이션을 제공하는 능력으로 21 세기의 가장 영향력있는 HPC 응용 프로그램 중 하나로 <a href="https://www.supercomputing.org/sc2002/news_nrp_conclude.html" target="_blank">널리 인식</a>되어 계산 현미경의 &ldquo;별명을 얻었습니다.&rdquo; <a href="https://covid19-hpc-consortium.org/" target="_blank">COVID-19 HPC 컨소시엄</a>에 Microsofts&rsquo; 참여를 통해 Azures&rsquo; Dr. Jer-Ming Chia는 일리노이 대학교의 Beckman 고급 과학 기술 연구소의 연구원들과 협력하여 SARS-CoV-2 바이러스의 향후 시뮬레이션을 지원하기 위한 HBv2 VM을 평가했습니다.</p>
+
+
+  <p>연구팀은 HBv2 클러스터가 연구원&rsquo; 요구 사항을 충족할 수 있을 뿐만 아니라 Azure의 성능과 확장성이 경쟁적이고 경우에 따라 오스틴 텍사스 대학에서 2020년 6월 TOP500 목록에서 8위를 차지한 Frontera 슈퍼컴퓨터의 기능을 능가하는 것으로 나타났습니다. Frontera는 개방형 과학 연구를 위한 미국 국립 과학 재단&rsquo; 리더십 수준의 HPC 리소스입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8525525b-1743-48b7-a8a2-0587cb6ab3a9.png"><img alt="NAMD Speedup from 8 to 720 Azure HBv2 VMs, Tobacco Mosaic Virus model" border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/842fcaa8-bc1c-45b5-a4c2-765ac39b8063.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p style="margin-left: 160px;"><em>그림 1: Azure HBv2 VM 8개에서 720개까지의 NAMD 속도 향상, 담배 모자이크 바이러스 모델</em></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/78a88d2d-d5f3-4805-ad87-25f58e62e7f2.jpg"><img alt="NAMD performance and scaling, 210m atom STMV model" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac8886d2-b4e9-4bb7-8567-4a3f0878e330.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="913"></a></p>
+
+
+  <p style="margin-left: 200px;"><em>그림 2: NAMD 성능 및 크기 조정, 210m 원자 STMV 모델</em></p>
+
+
+  <p>210m 원자 STMV 케이스를 사용하는 512개 노드(61,440개의 병렬 프로세스)에서 <a href="https://www.ks.uiuc.edu/Research/namd/benchmarks/" target="_blank">Frontera에서 NAMD 2.15의 게시된 벤치마킹</a>에 비해 NAMD 2.14를 실행하는 HBv2는 다음을 생성했습니다.</p>
+
+
+  <ul>
+      <li>AVX2 이진 파일을 사용하는 Frontera에 비해 87% 더 많은 성능(4.25ns v. 2.27ns).</li>
+      <li>AVX512 바이너리(4.25ns v)를 사용하는 Frontera에 비해 37% 더 많은 성능 3.1ns).</li>
+      <li>AVX512-Tiles 이진 파일(4.25ns v)을 사용하는 Frontera에 비해 성능이 8% 감소했습니다. 4.62 ns).</li>
+      <li>AVX512-Tiles 이진 파일을 사용하는 Frontera 대비 7%와 크기 조정 효율성(87% 대 80%).</li>
+  </ul>
+
+
+  <p>또한 팀은 궁극적으로 NAMD를 720 HBv2 클러스터 노드로 확장하여 추가로 23%의 애플리케이션 성능과 13%의 리드를 이 모델에 대해 Frontera에서 입증된 최고 수준의 성능을 제공할 수 있었습니다.</p>
+
+
+  <p>Jer-mings 블로그를&rsquo; 방문하여 Azure에서 슈퍼컴퓨팅 규모를 통해 <a href="https://techcommunity.microsoft.com/t5/azure-compute/accelerating-drug-discovery-with-supercomputing-scale/ba-p/1882640" target="_blank">가속화된 약물 발견을 지원하는 Microsofts&rsquo; 작업에</a> 대해 자세히 알아보세요.</p>
+
+
+  <h2>Azure가 Graph500에 조인하여 상위 20개 표시</h2>
+
+
+  <p>SC20에서 Azure는 권위 있는 <a href="https://graph500.org/" target="_blank">Graph500</a>에서 17위를 차지함으로써 세계에서&rsquo; 가장 강력한 데이터 집약적 슈퍼컴퓨터의 대열에 합류하게 된 것을 자랑스럽게 생각합니다. 여기서는 퍼블릭 클라우드가 Graph500에 배치된 것은 이번이 처음입니다. HBv2 VM이 1,151 GTEPS(초당 기가 트래버스 에지)를 생성한 경우 Graph500의 Azure&rsquo; 배치는 게시된 제출에 대한 상위 6%&nbsp;의 시간 중 하나입니다.</p>
+
+
+  <p><a href="https://www.top500.org/" target="_blank">TOP500</a> Linpack 벤치마크와 달리 Graph500은 데이터 집약적 워크로드에 중점을 둡니다. 정부, 기업 및 연구의 모든 부문의 작업이 점점 더 데이터 중심이 됨에 따라 Graph500은 까다로운 데이터 문제를 클라우드로 마이그레이션하려는 고객과 파트너에게 유용한 기압계 역할을 합니다.</p>
+
+
+  <p>Graph500 벤치마크 내에서 BFS(폭 우선 검색) 테스트는 데이터를 이동하는 기능을 일관되게 강조하면서 여러 가지 방법으로 HPC 및 슈퍼컴퓨팅 환경을 강조합니다. 또한 암호화, 분자 지문 및 매우 조밀한 데이터 스토리지 분야의 고객 워크로드에 특히 유용한 popcount&rdquo; CPU 명령을 사용합니다&ldquo;.</p>
+
+
+  <p>HPC용 Azure H 시리즈 VM은 Azures&rsquo; 리더십 메모리 대역폭 및 InfiniBand 네트워킹으로 인해 이러한 종류의 워크로드에 특히 매력적인 플랫폼입니다. 예를 들어 HBv2 VM은 다른 퍼블릭 클라우드 HPC 플랫폼에 비해 최대 84% 더 많은 메모리 대역폭과 10배 더 낮은 네트워크 대기 시간을 제공합니다. 또한 Azures&rsquo; InfiniBand가 장착된 VM은 하드웨어 가속 MPI 집합체를 지원합니다.</p>
+
+
+  <p>Azure HPC 팀의 Jithin Jose 박사는 BFS 테스트에서 power-of-2 구성에 따라 프로세스 수를 사용하는 것을 강력하게 선호하므로 VM당 64개의 병렬 프로세스를 사용하여 BFS 테스트를 640 HBv2 VM으로 확장했습니다. 총 640개의 VM은 287TB 이상의 분산 메모리, 218TB/s의 집계 메모리 대역폭 및 230테라비트/s의 양극 네트워크 대역폭을 활용했습니다.</p>
+
+
+  <p>Azure Tech Community Jithins&rsquo; 블로그를 방문하여 H 시리즈 Virtual Machines 제품군에서 <a href="https://aka.ms/graph500blog" target="_blank">Graph500 벤치마크를 실행하는</a> 방법을 알아보세요.</p>
+
+
+  <h2>클라우드&rsquo; 첫 번째 1TB/s 병렬 파일 시스템</h2>
+
+
+  <p>중요한 고객 관심에 대한 응답으로 Azure HPC는 초당 1테라바이트의 클라우드 기반 병렬 파일 시스템을 성공적으로 입증했다고 보고하게 되어 기쁘게 생각합니다.</p>
+
+
+  <p>Azures&rsquo; Paul Edwards는 300개의 HBv2 VM과 250TB 이상의 NVMe 스토리지 용량에서 실행되는 BeeOND(&ldquo;BeeGFS On Demand&rdquo;) 파일 시스템을 사용하여 1.46TB/sof&nbsp; 읽기 성능과 456GB/s의 쓰기 성능을 달성&nbsp;했습니다.</p>
+
+
+  <p>이는 퍼블릭 클라우드의 다른 곳에서 입증되거나 주장된 것보다 최소 3.6 더 높은 읽기 성능입니다.</p>
+
+
+  <p>BeeOND는 주문형 및 탄력적 특성으로 인해 클라우드에 잘 일치하는 HPC 파일 시스템입니다. 최대 수천 개의 작업에만 배포할 수 있습니다. 또한 BeeOND는 Azures&rsquo; InfiniBand 네트워킹에서 사용하도록 설정된 RDMA(원격 직접 메모리 액세스)를 활용합니다. 마지막으로, 추가 비용 없이 포함된 Azure VM의 로컬 스토리지를 활용하므로 클라우드의 고성능 스크래치 파일 시스템에 대한 파괴적인 비용 효율적인 접근 방식을 제공합니다.</p>
+
+
+  <p>Azure Tech Community 블로그를 방문하여 Azure에서 <a href="https://techcommunity.microsoft.com/t5/azurecat/tuning-beegfs-and-beeond-on-azure-for-specific-i-o-patterns/ba-p/1015446" target="_blank">BeeGFS 및 BeeOND 병렬 파일 시스템을 배포하고 최적화</a>하는 방법을 알아보세요.</p>
+
+
+  <h2>더 많은 고객 워크로드를 위한 클라우드 슈퍼컴퓨트</h2>
+
+
+  <p>하드웨어 아키텍처의 Azure CVP인 Steve Scott이 올해 SC20에서 논의하는 것처럼 Azure는 이제 심각한 HPC 워크로드를 실행하고 있습니다. 오늘과 지난 1년 동안 공지 사항을 종합하고 퍼블릭 클라우드의 다른 곳에서 HPC의 최상위를 평가할 때 Azure는 이제 최대 12배 더 확장되고 있음을 알 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0e967557-c3f5-4db0-970c-ee0674299121.png"><img alt="Placeholder" border="0" height="591" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ddc5f5e5-b17b-45ef-8402-551a5f5e59ff.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p style="margin-left: 200px;"><em>그림 3:&nbsp;가장 큰 규모의 클라우드 MPI 작업(NAMD가 있는 86,400개 코어)</em></p>
+
+
+  <h2>2021년 HPC 고객에게 3세대 EPYC CPU를 제공하기 위한 Azure 및 AMD 파트너</h2>
+
+
+  <p>Azure HPC 팀은 AMD의 제3 GenEPYC&nbsp; 프로세서인 코드명 &ldquo;Milan&rdquo; 이 2021년에 Azure HPC 제품군에 합류할 것이라는 점을 공유하게 되어 기쁩니다. 이를 통해 클라우드에서 슈퍼컴퓨팅 규모의 경계를 넓히려는 고객을 포함하여 Azure HPC 고객 및 파트너에게 새로운 기능과 이점이 제공될 것입니다. 또한 AMD 자체가 자체 실리콘 디자인 워크로드를 지원하는 이 향후 Azure HPC 제품의 고객이 될 것이라는 점을 공유하게 되어 기쁩니다. 이 협업에 대한 자세한 내용은 곧 AMD와 공유할 예정입니다.</p>
+
+
+  <h2>고객 혁신과 창의성의 잠금 해제</h2>
+
+
+  <p>Microsoft Azure 고객에게 세계적 수준의 HPC 환경과 최대 수준의 성능, 비용 효율성 및 규모를 제공하기 위해 최선을 다하고 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;NIH 센터는 NAMD에서 빠르게 확장 가능한 코드를 개발하기 위한 수년간의 프로그래밍 노력을 기울였습니다. Charm++의 UCX 지원과 함께 이러한 노력을 통해 소스 코드를 수정하지 않고도 Microsoft Azure Rome 클러스터에서 NAMD의 성능과 스케일링을 얻을 수 있습니다.&rdquo;&mdash;</em> 데이비드 하디, 일리노이 대학교 Urbana-Champaign 연구 프로그래머</p>
+
+
+  <p style="margin-left: 40px;"><em>&quot;중요한 고객이 까다로운 스파스 그래프 문제와 같이 고유한 요구 사항이 있는 경우 더 이상 세계적 수준의 성능을 갖도록 자체 시스템을 설정할 필요가 없습니다. 세계 상위 10대 컴퓨터의 결과와 경쟁하고 있으므로 이 데모에서는 중요한 정부 사용자를 포함하여 고유한 임무를 가진 모든 사용자가 기존 기능을 활용할 수 있음을 보여 줍니다. 이는 소유권의 비용과 부담 없이 제공되므로, 이는 미션 사용자가 고성능 컴퓨팅에 액세스하는 방법을 변경합니다. 나는 이것이 HPC의 영향을 크게 민주화하는 것으로 본다.&quot; &mdash;</em> Microsoft의 미션 시스템 부사장인&nbsp; 윌리엄 샤펠 박사</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/" target="_blank">Azure의 고성능 컴퓨팅에</a> 대해 자세히 알아보세요.</li>
+      <li><a href="https://techcommunity.microsoft.com/t5/azure-compute/accelerating-drug-discovery-with-supercomputing-scale/ba-p/1882640" target="_blank">Azure 슈퍼컴퓨팅 규모로 약물 검색 가속화</a></li>
+      <li>Azure에서 <a href="https://aka.ms/graph500blog">Graph500 벤치마크 제품군 실행</a></li>
+      <li><a href="https://techcommunity.microsoft.com/t5/azurecat/tuning-beegfs-and-beeond-on-azure-for-specific-i-o-patterns/ba-p/1015446" target="_blank">특정 I/O 패턴에 대해 Azure에서 BeeGFS 및 BeeOND</a> 튜닝</li>
+      <li><a href="https://github.com/Azure/azurehpc" target="_blank">Github</a>의 Azure HPC.</li>
+      <li>Azure HPC <a href="https://techcommunity.microsoft.com/t5/azure-compute/azure-centos-7-6-7-7-hpc-images/ba-p/977094" target="_blank">CentOS 7.6 및 7.7 이미지</a>.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-hpc" target="_blank">Azure HPC Virtual Machines</a>.</li>
+  </ul>

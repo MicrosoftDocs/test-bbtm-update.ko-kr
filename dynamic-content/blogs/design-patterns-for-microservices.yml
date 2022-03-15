@@ -1,0 +1,43 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 75231faafb951f58a8aa6f534727fb2286e4cbb5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906823"
+Slug: design-patterns-for-microservices
+Title: 마이크로서비스 디자인 패턴
+Summary: AzureCAT 패턴 &amp; 사례 팀은 Azure 아키텍처 센터에 9개의 새로운 디자인 패턴을 게시했습니다. 이러한 9가지 패턴은 디자인 및 구현할 때 특히 유용합니다.
+Content: >-
+  <p>AzureCAT 패턴 &amp; 사례 팀은 <a href="https://aka.ms/architecture">Azure 아키텍처 센터에</a> 9개의 새로운 디자인 패턴을 게시했습니다. 이러한 9가지 패턴은 마이크로 서비스를 설계하고 구현할 때 특히 유용합니다. 업계 내 마이크로 서비스에 대한 관심이 증가한 것은 이러한 패턴을 문서화하기 위한 동기부여였습니다.</p>
+
+
+  <p>다음 다이어그램에서는 이러한 패턴을 마이크로 서비스 아키텍처에서 사용하는 방법을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ba865aef-4e7f-4b97-a94b-517aacf8d29a.png"><img alt="MSA patterns" border="0" height="697" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bf41dea6-76a3-46b9-9c3b-43869f3496f5.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="MSA 패턴" width="991"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>각 패턴에 대해 문제, 솔루션, 패턴 사용 시기 및 구현 고려 사항에 대해 설명합니다.</p>
+
+
+  <p>새로운 패턴은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><strong><a href="https://docs.microsoft.com/azure/architecture/patterns/ambassador">Ambassador</a></strong> 를 사용하여 모니터링, 로깅, 라우팅 및 보안(예: TLS)과 같은 일반적인 클라이언트 연결 작업을 언어에 구애받지 않는 방식으로 오프로드할 수 있습니다.</li>
+   <li><strong><a href="https://docs.microsoft.com/azure/architecture/patterns/anti-corruption-layer">손상 방지 계층</a></strong> 은 새 애플리케이션과 레거시 애플리케이션 간의 페이&ccedil;드를 구현하여 새 애플리케이션의 디자인이 레거시 시스템에 대한 종속성에 의해 제한되지 않도록 합니다.</li>
+   <li><strong><a href="https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends">프런트 엔드에 대한 백 엔드는</a></strong> 데스크톱 및 모바일과 같은 다양한 유형의 클라이언트에 대해 별도의 백 엔드 서비스를 만듭니다. 이렇게 하면 단일 백 엔드 서비스가 다양한 클라이언트 유형의 충돌하는 요구 사항을 처리할 필요가 없습니다&rsquo;. 이 패턴은 클라이언트별 문제를 구분하여 각 마이크로 서비스를 단순하게 유지하는 데 도움이 될 수 있습니다.</li>
+   <li><strong><a href="https://docs.microsoft.com/azure/architecture/patterns/bulkhead">Bulkhead</a></strong> 는 각 워크로드 또는 서비스에 대한 연결 풀, 메모리 및 CPU와 같은 중요한 리소스를 격리합니다. 격벽을 사용하면 단일 워크로드(또는 서비스)가 모든 리소스를 사용할 수&rsquo; 없어 다른 리소스가 부족합니다. 이 패턴은 하나의 서비스로 인한 연속 오류를 방지하여 시스템의 복원력을 높입니다.</li>
+   <li><strong><a href="https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation">게이트웨이 집계는</a></strong> 여러 개별 마이크로 서비스에 대한 요청을 단일 요청으로 집계하여 소비자와 서비스 간의 수다를 줄입니다.</li>
+   <li><strong><a href="https://docs.microsoft.com/azure/architecture/patterns/gateway-offloading">게이트웨이 오프로드를</a></strong> 사용하면 각 마이크로 서비스가 SSL 인증서 사용과 같은 공유 서비스 기능을 API 게이트웨이로 오프로드할 수 있습니다.</li>
+   <li><strong><a href="https://docs.microsoft.com/azure/architecture/patterns/gateway-routing">게이트웨이 라우팅은</a></strong> 단일 엔드포인트를 사용하여 여러 마이크로 서비스에 요청을 라우팅하므로 소비자가 별도의 여러 엔드포인트를 관리할 필요가&#39;없습니다.</li>
+   <li><strong><a href="https://docs.microsoft.com/azure/architecture/patterns/sidecar">Sidecar</a></strong> 는 애플리케이션의 도우미 구성 요소를 별도의 컨테이너 또는 프로세스로 배포하여 격리 및 캡슐화를 제공합니다.</li>
+   <li><strong><a href="https://docs.microsoft.com/azure/architecture/patterns/strangler">스트랭글러</a></strong> 는 특정 기능을 새 서비스로 점진적으로 대체하여 증분 마이그레이션을 지원합니다.</li>
+  </ul>
+
+
+  <p>마이크로 서비스의 목표는 애플리케이션을 독립적으로 배포할 수 있는 소규모 자율 서비스로 분해하여 애플리케이션 릴리스의 속도를 높이는 것입니다. 마이크로 서비스 아키텍처는 몇 가지 문제도 발생하며 이러한 패턴은 이러한 문제를 완화하는 데 도움이 될 수 있습니다. 사용자 고유의 프로젝트에서 유용하게 사용할 수 있기를 바랍니다. 언제나 그처럼 여러분의 피드백에 감사드립니다.</p>

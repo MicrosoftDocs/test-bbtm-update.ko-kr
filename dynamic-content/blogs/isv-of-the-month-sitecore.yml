@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 64d424af65731d65d0792ef292d5c35a4489e14b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906450"
+Slug: isv-of-the-month-sitecore
+Title: 'ISV of the Month: Sitecore'
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] Sitecore는 해당 달의 첫 번째 ISV로 선택되었습니다. &nbsp;Sitecore는 Enterprise 웹 사이트에 대한 콘텐츠 관리 솔루션을 제공하며...'
+Content: '<p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>Sitecore는 해당 달의 첫 번째 ISV로 선택되었습니다. &nbsp;Sitecore는 Enterprise 웹 사이트에 대한 <a href="https://www.microsoft.com/casestudies/Case_Study_Detail.aspx?CaseStudyID=4000008283">콘텐츠 관리 솔루션을</a> 제공하며 ISV 커뮤니티 및 고객 모두에게 강력한 모멘텀을 제공합니다. &nbsp;아래 비디오에서 Sitecore는 Gartner 매직 사분면의 리더인 이유를 간략하게 설명합니다.</p>  <p style="text-align: center;">[보기:]</p>  <p style="text-align: left;">  <meta charset="utf-8">Sitecores&rsquo; CMS Azure Edition은 확장성 있는 Enterprise 클래스 배포를 위해 Azure의 상당한 이점을 활용합니다. Azure를 사용하면 Sitecore가 솔루션을 클라우드로 확장할 수 있으므로 고객과 파트너가 웹 사이트를 새로운 지리적 위치로 쉽고 빠르게 확장하고 수요 급증에 대응할 수 있습니다.</p>  <p style="text-align: left;">  <meta charset="utf-8">  </p>  <p>Microsoft Azure Sitecore 공용 웹 서버에 대한 글로벌 배포 플랫폼을 제공합니다. Core 및 Master Sitecore 서버는 방화벽 뒤에 있는 시설에 로컬로 배포되지만 공용 Sitecore 웹 서버는 Microsoft 시설에서 호스트됩니다. Microsoft Windows Azures&rsquo; 컴퓨팅, 스토리지, 네트워킹 및 관리 기능은 온-프레미스 Sitecore 애플리케이션 및 서버에 원활하고 안정적으로 연결됩니다.</p>  <p>이 하이브리드 접근 방식의 장점은 사용자가 기본 Sitecore 편집 및 데이터베이스 서버를 온-프레미스에서 안전하게 관리하고 분산된 지리적 위치에 있는 Azure 클라우드 서버를 Windows 프런트 엔드 Sitecore에 웹 사이트 콘텐츠를 푸시할 수 있다는 것입니다.</p>  <p style="text-align: left;">  <meta charset="utf-8">Sitecore에는 예정된 웹캐스트가&nbsp; <a href="https://www.eventbuilder.com/microsoft/event_desc.asp?p_event=k67q797n">있습니다. 여기에 등록하세요</a>.</p>  <p style="text-align: left;">여기에서 보도 자료를 찾습니다.</p>'

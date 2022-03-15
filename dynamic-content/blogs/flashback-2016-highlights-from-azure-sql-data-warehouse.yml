@@ -1,0 +1,132 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 32add06a57c7ecfac71a261f29af352b803676a6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906458"
+Slug: flashback-2016-highlights-from-azure-sql-data-warehouse
+Title: Flashback 2016 – Azure SQL Data Warehouse의 하이라이트
+Summary: 올해 초 우리는 SQL 기반의 완전 관리형 페타바이트 규모의 클라우드 솔루션을 제공하는 Azure SQL Data Warehouse의 일반 공급에 대해 발표했습니다. SQL Data Warehouse는 매우 탄력적이므로...
+Content: >-
+  <p>올해 초, 데이터 웨어하우징을 위한 SQL 기반의 완전 관리형 페타바이트 규모의 클라우드 솔루션을 제공하는 Azure SQL Data Warehouse의 <a href="https://blogs.technet.microsoft.com/dataplatforminsider/2016/07/12/the-elastic-future-of-data-warehousing/" target="_blank">일반 공급</a>이 발표되었습니다. SQL Data Warehouse는 매우 탄력적이므로 몇 분 안에 프로비전하고 용량을 초 단위로 확장할 수 있습니다. 컴퓨팅 및 스토리지를 독립적으로 확장하여 복잡한 분석 워크로드에 대한 컴퓨팅을 버스트하거나 보관 시나리오를 위해 웨어하우스를 축소할 수 있으며, 미리 정의된 클러스터 구성에 고정되지 않고 사용 중인&#39;비용을 지불할 수 있습니다. 다른 클라우드 데이터 웨어하우스 서비스와 달리 SQL Data Warehouse는 컴퓨팅을 일시 중지하는 고유한 옵션을 제공하여 클라우드 비용을 더 효율적으로 관리할 수 있는 더 많은 자유를 제공합니다.</p>
+
+
+  <p>우리는 산업 전반에 걸쳐 고객의 모멘텀을보고 기쁘게 생각하고 우리는 더욱 고객 경험을 향상시키기 위해 새로운 기능을 가지고 계속.</p>
+
+
+  <p>선도적인 디지털 광고 회사인 MediaBrix는 Azure SQL Data Warehouse를 사용하여 30TB의 데이터를 심층 분석하는 수십억 개의 데이터 &ndash; 행에 대한 분석을 실행합니다. SQL Data Warehouse는 MediaBrix가 빠른 인사이트를 얻는 데 도움이 될 뿐만 아니라 Azure Machine Learning 같은 기술에 연결하여 예측 모델을 만들고, 실시간으로 데이터를 변경하고, 적합한 사용자에게 올바른 광고를 제공합니다. <a href="https://customers.microsoft.com/en-us/story/digital-advertising-company-gets-answers-from-terabytes-of-data-with-microsoft-azure-platform" target="_blank">MediaBrix가 Microsoft Azure 플랫폼을 사용하여 데이터에서 답변을 가져오는</a> 방법에 대해 자세히 알아봅니다.</p>
+
+
+  <p>2016년이 끝나면 기억에 남는 한 해의 하이라이트는 다음과 같습니다.</p>
+
+
+  <h2>현재 전 세계 23개 지역에서 일반 공급</h2>
+
+
+  <p>7월에 14개 지역에서 일반 공급이 발표된 이후, 현재 9개의 추가 지역으로 확장되어 다른 주요 클라우드 공급자보다 총 23 &ndash; 개까지 늘어났습니다. 이제 다음 지역의 고객은 Azure SQL Data Warehouse를 사용할 수 있습니다. 북유럽, 미국 중북부, 미국 동부, 미국 동부 2, 미국 중남부, 미국 중서부, 미국 서부, 미국 서부 2, 캐나다 중부, 캐나다 동부, 서유럽, 독일 중부, 독일 북동부, 동아시아, 동남 아시아, 오스트레일리아 남동부, 인도 중부, 인도 남부, 중국 동부, 중국 북부,  일본 동부 및 브라질 남부.</p>
+
+
+  <h2>업계 최고의 분석 쿼리 성능</h2>
+
+
+  <p>Azure SQL Data Warehouse는 SQL Server 기반하며 GA를 통해 2016년 SQL Server 함께 진행했습니다. <a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/03/14/columnstore-index-how-does-sql-server-delivers-industry-leading-performance-for-analytic-queries/" target="_blank">업계 최고의 SQL Server 2016 columnstore</a> 구현은 SQL Data Warehouse에서 분석 쿼리를 제공하는 핵심입니다. 많은 수의 행을 처리할 때 IO를 줄이기 위해 데이터 압축 및 세그먼트 제거를 크게 개선했습니다.</p>
+
+
+  <p>columnstore 위에 배치 모드를 실행하면 쿼리 속도가 크기별로 향상됩니다. SQL Server 2016에서는 순서별 및 창 집계와 같은 일반적인 분석 연산자를 위한 일괄 처리 모드 지원을 추가했습니다. 또한 이제 검색 노드에 대한 집계 푸시다운 및 문자열 조건자 푸시다운을 지원합니다.</p>
+
+
+  <p><em>&ldquo;실제로 광고를 사용하는 사용자를 고객에게&rsquo; 알릴 수 있습니다. 예를 들어, 자녀가&rsquo; 있는 24세에서 35세 사이의 여성을 대상으로 하려면 동부 해안에서 오전 6시에서 8시 사이에 펜실베이니아나 뉴저지에서 대상으로 해야 한다고 말할 수 있습니다. &rsquo;그들은&rsquo; 다른 사람으로부터 지능의 수준을 얻지 못하기 때문에, 그들에게 말하는 것은 마음이 불고있다.&rdquo; </em></p>
+
+
+  <p><em>- </em>크리스토퍼 비치, MediaBrix 엔지니어링 수석 부사장</p>
+
+
+  <p>광고 회사가 Microsoft Azure 플랫폼을 사용하여 <a href="https://customers.microsoft.com/en-US/story/digital-advertising-company-gets-answers-from-terabytes-of-data-with-microsoft-azure-platform" target="_blank">데이터에서 답변을 얻는</a> 방법에 대해 자세히 알아봅니다.</p>
+
+
+  <h2>ADF 및 PolyBase를 사용하여 빠른 로드</h2>
+
+
+  <p>최근에 Azure Data Factory 복사 마법사를 사용하여 <a href="https://docs.microsoft.com/en-us/azure/data-factory/data-factory-load-sql-data-warehouse" target="_blank">15분 미만의 1TB 데이터를 Azure SQL Data Warehouse에</a> 초당 1.2GB 이상의 처리량으로 로드하는 방법을 공유했습니다. Azure Data Factory는 여러 온-프레미스 및 클라우드 원본 &ndash; 에서 데이터를 수집할 수 있는 클라우드의 데이터 이동 서비스입니다SQL Data Warehouse는 데이터 이동을 더욱 쉽게 하기 위해 Data Factory와 한 번의 클릭 통합을 배포했습니다. 스테이징 Blob 기능을 사용하면 Polybase가 기본적으로 지원하는 Azure Blob Storage를 제외한 모든 유형의 데이터 저장소에서 높은 로드 속도를 얻을 수 있습니다.</p>
+
+
+  <p><em>&ldquo;Azure SQL Data Warehouse&rsquo;를 사용하면 거의 실시간 컴퓨팅을 수행하여 지난 1시간 동안의 데이터를 볼 수 있습니다. 경우에 따라 기본 시스템을 우회하고 해당 시간에 방에 얼마나 많은 사람들이 있는지 보여주는 실제 라이브 시스템으로 전환할 수도 있습니다.&rdquo; </em></p>
+
+
+  <p><em>- </em>톰 셰퍼드, 프레즌스 Orb 최고 경영자</p>
+
+
+  <p><a href="https://customers.microsoft.com/en-US/story/wi-fi-analytics-firm-gains-real-time-benefits-with-azure-sql-data-warehouse" target="_blank">Azure SQL Data Warehouse의 실시간 혜택</a>에 대해 자세히 알아보세요.</p>
+
+
+  <h2>향상된 마이그레이션, 모니터링 및 SQL 도구 환경</h2>
+
+
+  <p>Azure SQL Data Warehouse는 SQL Data Warehouse를 로드, 모니터링 및 개발할 때 원활한 환경을 제공하기 위해 <a href="https://azure.microsoft.com/en-us/blog/enhanced-loading-monitoring-and-troubleshooting-experience-for-azure-sql-data-warehouse/" target="_blank">Azure Portal 및 SQL Server Management Studio(SSMS)에 대한 업데이트를 도입</a>했습니다. 업데이트에는 일반적인 문제를 해결하는 간단한 프로세스인 온-프레미스 및 클라우드의 20개 이상의 데이터 저장소에서 로드하기 위한 통합 지원이 포함됩니다. 또한 업데이트는 데이터베이스 사용자 및 사용자 정의 함수에 대한 스크립트 생성 마법사 실행을 사용하도록 설정하는 등 SQL 사용자의 환경을 더욱 향상시키기 SSMS 내에서 매우 요청된 기능을 제공합니다.</p>
+
+
+  <p>SQL Data Warehouse에는 모든 데이터베이스를 신속하게 관리할 수 있는 <a href="https://azure.microsoft.com/en-us/blog/new-resource-blade-for-azure-sql-data-warehouse/" target="_blank">새로운 최상위 리소스 블레이드가 도입</a>되었습니다. <a href="https://portal.azure.com/" target="_blank">SQL Data Warehouse 리소스 블레이드</a>를 사용하여 이름, 상태, 서버, 가격 책정 계층, 위치 및 구독과 같은 세부 정보를 데이터 웨어하우스를 빠르게 검색할 수 있습니다.</p>
+
+
+  <h2>가속화된 조회 쿼리</h2>
+
+
+  <p>SQL Data Warehouse<a href="https://azure.microsoft.com/en-us/blog/secondary-indexes-on-column-store-accelerate-sql-data-warehouse-look-up-queries/" target="_blank">는 이제 열 저장소 테이블에서 보조 B-트리 인덱스 만들기를 지원합니다</a>. 대부분의 분석 쿼리는 대량의 데이터를 집계하며 열 저장소 세그먼트를 직접 검사하여 잘 제공됩니다. 그러나 건초 더미&rdquo;에서 바늘을 찾아야 &ldquo;하는 경우가 많으며, 이는 단일 행 또는 작은 행 범위를 조회하는 쿼리로 변환됩니다. 이러한 조회 쿼리는 응답 시간에서 크기(1000배)가 개선된 순서를 가져오고 필터 열에 B-트리 인덱스가 있는 경우 잠재적으로 1초 미만에서 실행될 수 있습니다.</p>
+
+
+  <h2>Azure 내에서 Azure Active Directory 인증 및 기타 서비스와 쉽게 통합</h2>
+
+
+  <p>Azure AD는 중앙 집중식 ID 및 그룹 관리를 사용하도록 설정하는 SQL 인증에 대한 대안을 제공합니다. 페더레이션된 도메인에 SQL Data Warehouse를 사용하여 Single Sign-On 환경을 사용할 수 있습니다. Azure AD를 사용하여 점점 더 많은 Azure 및 기타 Microsoft 서비스 인증할 수 있으며, 고객이 사용자 및 암호의 확산을 방지할 수 있습니다.</p>
+
+
+  <p><em>&ldquo;Amazon Redshift에서 전환하는 것은 Azure SQL Data Warehouse와 직접적인 비교가 아니었습니다. 전체 Azure 제품은 많은 동기부여를 제공했습니다.&rdquo; </em></p>
+
+
+  <p><em>- </em>Bill Sabo, 정수 분석 정보 기술 전무 이사</p>
+
+
+  <p><a href="https://customers.microsoft.com/en-US/story/integral-analytics-switches-to-azure-for-high-performance-and-cost-effective-data-warehousing" target="_blank">AWS에서 Azure로의 정수 분석 스위치에</a> 대해 자세히 알아봅니다.</p>
+
+
+  <h2>HIPAA 인증</h2>
+
+
+  <p>의료 산업 내에서 더 큰 채택을 가능하게 하기 위해 Azure SQL Data Warehouse는 이제 <a href="https://www.microsoft.com/en-us/trustcenter/Compliance/HIPAA" target="_blank">Microsoft HIPAA BAA(Business Associate Agreement)</a>에서 적용되는 서비스입니다. HIPAA(건강 보험 이식성 및 책임법)는 개별적으로 식별 가능한 건강 정보의 사용, 공개 및 보호에 대한 요구 사항을 설정하는 미국 의료법입니다.&nbsp; HIPAA 규격 솔루션을 구현하는 방법에 대한 자세한 내용은 <a href="https://www.microsoft.com/en-us/trustcenter/Compliance/HIPAA" target="_blank">FAQ 섹션</a> 을 참조하세요. 추가 Microsoft HIPAA 관련 세부 정보는 <a href="https://www.youtube.com/watch?v=6ptdye1LZ5k&amp;feature=youtu.be" target="_blank">AZURE 비디오의 HIPAA 준수 이해</a> 비디오를 시청하여 찾을 수 있습니다.</p>
+
+
+  <h2>손쉬운 환경을 위한 파트너의 신제품</h2>
+
+
+  <p>우리는 고객이 데이터 마이그레이션 및 관리 환경을 향상시키기 위해 사용자 지정 제품을 빌드하는 것을 포함하여 서비스를 &ndash; 경험하고 채택하는 여정을 돕기 위해 훌륭한 파트너가 우리와 함께했습니다. 예를 들어, SQL Server 도구를 제공하는 오랜 파트너인 Redgate는 온-프레미스 SQL Server 데이터베이스를 Azure SQL Data Warehouse로 마이그레이션하는 간단하고 신뢰할 수 있는 방법을 제공하는 <a href="https://azure.microsoft.com/en-us/blog/redgate-delivers-efficient-migrations-for-azure-sql-data-warehouse/" target="_blank">DPS(Data Platform Studio)</a>를 만들었습니다.</p>
+
+
+  <h2>전용 무료 평가판</h2>
+
+
+  <p>10월 연례 PASS 서밋에서는 고객이 한 달 동안 무료로 이 클라우드 기반 서비스를 경험할 수 있는 SQL Data Warehouse <a href="https://azure.microsoft.com/en-us/services/sql-data-warehouse/extended-trial/" target="_blank">전용 무료 평가판을</a> &ndash; 발표했습니다.</p>
+
+
+  <p>그것은&rsquo; 좋은 해와 여행에 우리와 함께 한 모든 사람에게 감사드립니다. 내년에는 가장 중요한 데이터 웨어하우징 문제를 해결하고 더욱 매력적인 기능과 서비스 향상을 실현할 수 있기를 기대합니다. 그때까지, 당신에게 2017에 가장 좋은 시작을 기원합니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>다음을 포함하여 SQL Data Warehouse에 대해 자세히 알아보기 위한 많은 리소스를 확인하세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/documentation/articles/sql-data-warehouse-overview-what-is/" target="_blank">Azure SQL Data Warehouse란?</a></p>
+
+
+  <p><a href="https://azure.microsoft.com/documentation/articles/sql-data-warehouse-best-practices/" target="_blank">데이터 웨어하우스 모범 사례 SQL</a></p>
+
+
+  <p><a href="https://azure.microsoft.com/documentation/videos/index/?services=sql-data-warehouse" target="_blank">비디오 라이브러리</a></p>
+
+
+  <p><a href="https://social.msdn.microsoft.com/Forums/en-US/home?forum=AzureSQLDataWarehouse" target="_blank">MSDN 포럼</a></p>
+
+
+  <p><a href="https://stackoverflow.com/questions/tagged/azure-sqldw" target="_blank">Stack Overflow 포럼</a></p>

@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3d2a75f65bc524dde94cd7cc78a9cda078093f2f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899763"
+Slug: introducing-the-microsoft-azure-modular-datacenter
+Title: Microsoft Azure 모듈식 데이터 센터 소개
+Summary: Microsoft Azure MDC(모듈식 데이터 센터)는 어려운 환경에서 고강도 보안 클라우드 컴퓨팅에 대한 인도주의적 지원, 재해 대응 및 기타 요구 사항에 대한 데이터 센터 규모 시나리오를 지원하도록 설계되었습니다.
+Content: >-
+  <p>원격 영역을 포함하여 하이브리드 또는 까다로운 환경에서 클라우드 컴퓨팅 기능이 필요한 고객을 위해 AZURE MDC(Modular Datacenter)를 디자인했습니다. 이 발표는 전 세계 어디서나 위성 연결을 확장할 수 있는 <a href="https://news.microsoft.com/azurespace/" target="_blank">Azure Space</a> 제품 및 파트너 관계로 보완됩니다. 시나리오는 모바일 명령 센터, 인도주의적 지원, 군사 임무 요구 사항, 광물 탐사 및 Azure에서 고강도 보안 컴퓨팅이 필요한 기타 사용 사례에 이르기까지 다양합니다.</p>
+
+
+  <p>MDC는 대기 시간이 짧은 자체 데이터 센터에 연결하여 온-프레미스에서 이러한 워크로드를 실행하면서 고객에게 Azure로 앱을 마이그레이션할 수 있는 경로를 제공할 수 있습니다. 이렇게 하면 이러한 앱을 온-프레미스 또는 퍼블릭 또는 소버린 클라우드에서 계속 실행할 수 있는 옵션을 사용하여 워크로드를 Azure API로 변환하기 위한 디딤돌을 제공합니다.</p>
+
+
+  <h2>필요한 Azure</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/035c5d1f-194a-4bd2-8f88-11a4991ff8ed.jpg"><img alt="Modular Datacenter in remote location." border="0" height="805" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/086ab745-514d-4a12-b1eb-c342c869208e.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="원격 위치의 모듈식 데이터 센터입니다." width="1432"></a></p>
+
+
+  <p>전 세계적으로 통신이 낮고 네트워크 가용성이 저하되고 특수 인프라에 대한 액세스가 제한되어 클라우드 컴퓨팅을 활용하지 못하게 하는 불리한 조건이 있는 영역에는 상당한 클라우드 컴퓨팅 및 스토리지 요구 사항이 있습니다. MDC는 이러한 환경에 Azure를 가져와서 데이터 센터 규모 컴퓨팅 리소스가 필요한 위치에 가장 가까운&#39;제공하여 이 문제를 해결합니다.</p>
+
+
+  <p>MDC를 사용하면 거의 즉각적인 값을 제공하는 필드 전송 가능한 솔루션을 사용하여 자체 포함 데이터 센터 단위를 배포할 수 있습니다. 이 장치는 러기드 무선 주파수(RF) 보호 장치에서 광범위한 기후와 가혹한 조건에서 작동할 수 있습니다. 일단 배포되면 온도, 습도 및 수준 표면이 어려울 수 있는 중요한 인프라 역할을 할 수 있습니다.</p>
+
+
+  <p>MDC는 컴퓨팅 및 스토리지 기능의 현장 보강, 현장에서 고성능 애플리케이션 관리 및 운영, 매우 낮은 대기 시간이 필요한 IoT 및 실시간 분석 워크로드를 제공하고, 중요한 인프라 복구를 지원하기 위해 클라우드 애플리케이션을 강화할 수 있습니다.</p>
+
+
+  <h2>연결</h2>
+
+
+  <p>MDC의 주요 차이점은 고객이 때때로 연결되거나 완전히 연결되지 않은 전체 네트워크 연결로 단위를 실행할 수 있다는 것입니다. 이는 고객이 해당 조건에 따라 Azure 클라우드의 강력한 기능에 액세스할 수 있게 해주는 독특하고 강력한 기능입니다.</p>
+
+
+  <h2>위성 통신 옵션</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/54d7651b-a765-4e2d-906f-c8305dc7c57a.png"><img alt="Modular Datacenter deployed to airfield." border="0" height="805" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/19820660-49a2-4816-ba66-c24cf809638a.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="비행장에 배포된 모듈식 데이터 센터입니다." width="1430"></a></p>
+
+
+  <p>Microsoft는 위성 운영자와 협력하여 배포된 현장 MDC 단위에 안전하고 안정적인 연결을 위한 옵션을 제공합니다.</p>
+
+
+  <p>이 연결은 네트워크 성능을 지속적으로 평가하는 네트워크 고가용성 모듈을 통해 수행됩니다. 네트워크 중단이 발생할 경우 네트워크 고가용성 모듈은 영향을 받은 네트워크에서 백업 위성 연결로 트래픽을 이동합니다. 이러한 복원력을 통해 Azure를 통해 필수 하이퍼스케일 서비스를 지속적으로 배달할 수 있습니다. 또는 MDC는 다른 네트워크를 사용할 수 없는 기본 연결로 위성 통신을 사용할 수 있습니다.</p>
+
+
+  <h2>준비 완료</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/88df98cb-465f-46b2-888c-e1984e1a5074.png"><img alt="Modular Datacenter next to building. " border="0" height="531" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e17ed98b-6427-4d61-b036-97ad0f38317e.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="빌드 옆의 모듈식 데이터 센터입니다. " width="943"></a></p>
+
+
+  <p>MDC 단위는 국방 및 민간 부문 조직에서 초기에 사용되며 자세한 내용은 Microsoft 담당자에게 문의하세요.</p>
