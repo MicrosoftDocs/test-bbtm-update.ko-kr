@@ -1,0 +1,35 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 476e687516d007c7b252c6b63eae696496e2ca23
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911834"
+Slug: intelligent-edge-support-grows-azure-iot-edge-now-available-on-virtual-machines
+Title: 지능형 Edge 지원 증가 - 이제 가상 머신에서 Azure IoT Edge 사용 가능
+Summary: Azure IoT Edge는 가상 머신에서 지원되므로 고객은 인텔리전트 에지 및 인텔리전트 클라우드를 아우르는 솔루션의 일부로 기존 인프라를 활용할 수 있습니다.
+Content: >-
+  <p>올해 초, Microsoft는 고객이 클라우드 인텔리전스를 에지로 가져와서 가스 파이프의 균열을 인식하거나 장비 고장을 예측하는 드론이든 실시간 데이터에 즉시 작동할 수 있도록 하는 Azure IoT Edge의 <a href="https://azure.microsoft.com/en-us/blog/azure-iot-edge-generally-available-for-enterprise-grade-scaled-deployments/">일반 가용성</a>을 발표했습니다. Azure IoT Edge는 안전하고 이식 가능하며 개방되도록 빌드되었습니다. Azure IoT Edge 런타임은 GitHub 오픈 소스이므로 코드를 쉽게 수정할 수 있으며, 개방형 컨테이너 접근 방식을 사용하면 다양한 에지 디바이스에 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/category/internet-of-things?page=1&amp;subcategories=iot-edge-modules">Microsoft 및 <sup>타사</sup> 서비스를 배포</a>할 수 있습니다.</p>
+
+
+  <p>Were&rsquo;는 개방적이고 강력한 에코시스템을 구축하고 고객에게 에지 솔루션을 배포할 수 있는 선택권을 제공하기 위해 최선을 다하고 있습니다. 오늘 Azure IoT&rsquo; Edge는 <a href="https://docs.microsoft.com/en-us/azure/iot-edge/support">지원되는 운영 체제</a> 중 하나를 사용하여 VM(가상 머신)에서 실행한다고 발표했습니다. 이는 여러 가상화 기술에 대해 작동하지만 <a href="https://octo.vmware.com/azure-iot-edge-on-vmware-vsphere/">VMware는 VMware</a> vSphere를 사용하여 VM에 Azure IoT Edge의 배포 프로세스를 간소화했습니다. 또한 vSphere 6.7 이상에서는 TPM(신뢰할 수 있는 플랫폼 모듈)에 대한 통과 지원을 제공하여 Azure IoT Edge가 신뢰의 하드웨어 루트를 활용하여 업계 최고의 <a href="https://docs.microsoft.com/en-us/azure/iot-edge/security">보안 프레임워크</a>를 유지할 수 있도록 합니다.</p>
+
+
+  <p>Azures&rsquo; 인텔리전트 에지 포트폴리오는 고객의&rsquo; 시나리오에 맞게 하드웨어의 숨결을 실행하도록 설계되었습니다. 여기에는 Azure Sphere를 실행하는 MCU(마이크로 컨트롤러 단위)부터 Azure Stack을 통해 구동되는 클라우드 및 에지인 완전히 일관된 환경에 이르기까지 모든 것이 포함됩니다. Azure IoT Edge는 이미 다양한 Linux 및 Windows 운영 체제뿐만 아니라 Raspberry Pi보다 작은 디바이스에서 서버로의 하드웨어 스펙트럼을 지원합니다. VMware vSphere에서 IoT Edge를 지원하면 이미 소유한 인프라에서 AI를 실행하려는 사용자에게 더 많은 고객 선택을 제공합니다.</p>
+
+
+  <p>인텔리전트 에지에서 시나리오를 구동하기 위해 고객이 사용할 수 있는 하드웨어 포트폴리오는 사용되는 섹터&rsquo;만큼이나 다양합니다. 거의 모든 산업에서 하이브리드 클라우드 및 에지 솔루션을 빌드하는 고객을 볼 수 있으며, 각각에 대해 선택하는 하드웨어가 목적에 적합합니다.</p>
+
+
+  <ul>
+      <li>가전 제품 제조업체는 어플라이언스에 Azure Sphere 인증 칩을 사용하여 운영이 손상되지 않으며 고객 데이터가 안전하게 유지되도록 할 수 있습니다.</li>
+      <li>석유 및 가스 산업은 Raspberry Pi보다 작은 Azure IoT Edge 디바이스를 사용하여 현장에서 로드 펌프 데이터를 처리하여 생산을 최적화하고 예측 유지 관리를 수행하고 있습니다.</li>
+      <li>유틸리티 회사는 Azure IoT Edge를 사용하여 드론에서 실행되는 비디오 분석을 통해 파이프라인 및 전력선에서 결함을 자율적으로 <a href="https://www.youtube.com/watch?v=EruH-4Fvecc">검사</a>하고 있습니다.</li>
+      <li>섬유 생산업체는 Azure IoT Edge를 실행하는 산업화된 PC를 생산 라인에 추가하여 직조 결함을 감지하고 있습니다.</li>
+      <li>대형 소매업체는 각 소매점의 기존 서버에서 실행되는 VM의 Azure IoT Edge를 사용하여 HVAC 데이터를 분석하여 매장&rsquo; 에너지 사용량을 최적화하고 있습니다.</li>
+      <li>전자 제조업체는 Azure Data Box Edge를 사용하여 <a href="https://www.youtube.com/watch?v=Tkztz2DsJtg">품질 관리 및 감사 규정 준수 시나리오를 구현하고 있습니다</a> .</li>
+      <li>의료 네트워크는 개인 식별이 가능한 의료 데이터에 대한 업계 규정을 준수하면서 Azure Stack을 사용하여 스타킹 백신을 최적화합니다.</li>
+  </ul>
+
+
+  <p>모든 회사&rsquo; 디지털 트랜스포메이션은 고유합니다. 일부 시나리오는 주로 클라우드에서 수행할 수 있지만, 많은 사용 사례에서는 데이터 센터에서 높은 가치의 클라우드 서비스를 자유롭게 사용하고 데이터를 만드는 디바이스와 인접하거나 실제로 실행해야 합니다. Azure는 회사의&rsquo; 하이브리드 클라우드 및 에지 요구 사항에 관계없이 가장 안전하고 확장 가능하며 유연한 옵션을 제공합니다.</p>

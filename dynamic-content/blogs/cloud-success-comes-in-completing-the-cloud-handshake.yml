@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fd1f1ea051aff7e00b6403b8fffa3469a55a5991
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911991"
+Slug: cloud-success-comes-in-completing-the-cloud-handshake
+Title: 클라우드 핸드셰이크를 완료하면 클라우드 성공
+Summary: 엔터프라이즈가 클라우드 컴퓨팅 플랫폼을 사용하는 것에 대해 제기하는 일관된 주요 관심사는 애플리케이션에 대한 명확한 서비스 수준 보장을 원합니다. 그렇다면 어떻게 격차를 해소하고 클라우드 기반 애플리케이션의 가용성과 성능을 확인할 수 있을까요?
+Content: >-
+  <p>엔터프라이즈가 클라우드 컴퓨팅 플랫폼을 사용하는 것에 대해 제기하는 일관된 주요 관심사는 애플리케이션에 대한 명확한 서비스 수준 보장을 원합니다. Microsoft Azure 및 기타 많은 클라우드에서 <a href="https://azure.microsoft.com/en-us/support/legal/sla/">개별 서비스에 대한 SLA</a>(서비스 수준 계약)를 게시하는 동안 애플리케이션 보증과 동일하지 않으므로&rsquo; 어떻게 격차를 해소하고 클라우드 기반 애플리케이션의 가용성과 성능을 확인할 수 있을까요? 대답은 <em>클라우드 핸드셰이크를 완료하는 것입니다</em>. 클라우드 기반 리소스를 활용할 때마다 동일한 방식으로 여러 고객이 사용하도록 설계된 확장 가능한 다중 테넌트 자동화 제품을 활용하게 됩니다.</p>
+
+
+  <p>표준화를 통해 차별화된 규모, 성능 및 볼륨 소비 기반 비용 효율성을 제공하기 때문에 이러한 서비스를 활용하려고 합니다. 그리고 정의된 SLA입니다. 이러한 서비스 외에도 워크로드 및 회사 목표를 가장 잘 충족 <a href="https://azure.microsoft.com/en-us/overview/what-is-cloud-computing">하는 방식으로 클라우드 컴퓨팅 서비스를</a> 함께 문자열링할 수 있는 구성 옵션을 제공합니다. &rsquo;표준 클라우드 서비스 위에 있는 요소의 숙달을 통해 원하는 워크로드별 보증을 달성할 수 있습니다. <em>클라우드 핸드셰이크는 우리가 제공하는 서비스를 이해하고 워크로드를 제대로 빌드 및 구성하는 적절한 결합입니다.</em></p>
+
+
+  <p>간단한 예: 99.95% SLA를 사용하여 가상 머신에 배포된 애플리케이션에 대해 99.99% SLA를 달성할 수 있나요? 예, 각 클러스터 노드가 별도의 컴퓨팅 리소스에서 실행되는 VM 클러스터에 애플리케이션을 배포하여 Azure, <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-how-to-configure-availability/">가용성 집합</a>에서 호출합니다. SLA를 더 높게 하고 싶으신가요? 22개 지역에서 서비스를 곧 사용할 수 있게 되면 <a href="https://azure.microsoft.com/en-us/regions/">Azure 지역에</a> 워크로드를 분산하여 데이터 센터 중단 및 지리적 자연 재해로부터 워크로드를 보호할 수 있습니다. 이 간단한 원칙을 따르지만 구현의 모든 측면(네트워킹, 스토리지, 앱 서비스, 캐시 등)에서 이를 전달하는 방법은 클라우드 핸드셰이크를 완료하는 방법입니다.</p>
+
+
+  <p>그러나 조직에서 핸드셰이크가 매번 올바르게 수행되도록 하기 위해 수행해야 하는 모범 사례 개발 및 운영 방법은 무엇인가요? 권장 사항:</p>
+
+
+  <ol>
+   <li><strong>반복 가능한 개발 프로세스로 시작합니다</strong>. 그룹이 민첩하게 이동했는지, 지속적인 업데이트로 이동했는지, 폭포 모델에 남아 있는지 여부는 코드 체크 인, 테스트 자동화 및 배포에 일관된 도구를 활용하는 명확한 방법론으로 시작합니다. <a href="https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs.aspx">Visual Studio Online</a>은 여러 언어, 도구, 소스 코드 리포지토리 및 배포 대상에서 작업하는 코더가 공동 작업을 설계할 수 있도록 하면서 자동화할 때 이러한 단계를 지원할 수 있습니다.</li>
+   <li><strong>운영 분석을 사용합니다</strong>. 애플리케이션의 성능 및 실행을 모니터링하고 측정하여 코드, 구성 또는 배포 문제가 발생할 때 신속하게 식별하므로 이러한 결과를 개발 및 관리 프로세스에 신속하게 다시 삽입할 수 있습니다. 새 <a href="https://azure.microsoft.com/en-us/services/application-insights/">Visual Studio Application Insights</a> 서비스는 코드 가시성을 제공하고 <a href="https://azure.microsoft.com/en-us/documentation/articles/cloud-services-how-to-monitor/">Azure Portal</a>은 구성 및 서비스 성능 세부 정보를 표시합니다. 이러한 도구( <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-command-line-tools/">CLI 또는</a> PowerShell을 통해)에서 임계값 및 경고를 설정하여 발생하는 문제의 근본 원인을 파악하여 신속하게 해결할 수 있습니다.</li>
+   <li><strong>SLA 종속성을 이해합니다</strong>. 위의 간단한 예제에서는 낮은 SLA 서비스가 높은 SLA 결과를 달성할 수 있는 방법에 대해 설명했습니다. 아쉽게도 서로 종속성이 있는 여러 서비스를 함께 문자열링하는 애플리케이션을 빌드할 때 그 반대의 경우도 발생할 수 있습니다. 예를 들어&rsquo; 99.95% SLA를 사용하여 웹 서비스로 시작하고 99.95% SLA가 있는 데이터베이스에 연결하고 99.95% SLA를 사용하여 CRM SaaS 서비스와 통합하는 모바일 애플리케이션 서비스를 빌드했습니다. 결합된 서비스에 대한 SLA는 99.95%가 아닙니다&rsquo;. 이러한 서비스 화합물에서 발생할 수 있는 잠재적인 가동 중지 시간이 있기 때문입니다. 99.95% SLA를 모두 사용하시겠습니까? 그런 다음 종속성 전체에서 중복성을 보장해야 합니다. 이 권한을 얻으려면 다음을 수행합니다.&hellip;</li>
+   <li><strong>실패를 가정하여 디자인</strong>합니다. 넷플릭스는 몇 년 전 클라우드 애플리케이션 디자인에 대한 이러한 접근 방식을 대중화했으며, 그 교훈은 오늘날에도 여전히 유효합니다. 클라우드 구현에서 최상의 결과를 얻으려면 문제가 발생할 수 있다고 가정하고 코드 디자인뿐만 아니라 구성, 테스트 및 배포 모델에서도 이러한 모든 가능성을 고려했는지 확인해야 합니다. 이러한 작업을 지속적으로 수행하려면 클라우드 사례를 완성할 때 초기에 개발한 모범 사례와 이전에 온 사용자로부터 학습하는 것이 좋습니다. 따라서 고객이 <a href="https://azure.microsoft.com/en-us/support/forums/">포럼</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-template-deploy/">템플릿</a> 및 <a href="https://github.com/Azure/azure-content/tree/master/articles">공동 작업 설명서</a> 모델을 활용하여 모범 사례를 배우고 공유하여 최대의 성공을 달성할 수 있도록 하는 것이 좋습니다. <a href="https://www.microsoft.com/en-us/server-cloud/operations-management-suite/default.aspx">Operations Management Suite</a>는 애플리케이션을 배포하는 위치에 관계없이 목표를 달성하는 데 필요한 컨트롤, 백업 및 재해 복구 및 보안 보호를 구현하는 데 도움이 됩니다.</li>
+   <li><strong>테스트, 시뮬레이션, 측정,</strong> <strong>반복</strong>. 그리고 마지막으로, 학습을 계속합니다. 고객 트래픽을 테스트, 모니터링, 추적 및 시뮬레이트할수록(프로덕션 배포를 적극적으로 모니터링하는 것은 물론) 클라우드 핸드셰이크 기술을 더 잘 연마할 수 있습니다. Azure의 사용량 종량제 모델과 <a href="https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits/">모든 MSDN 계정에서 테스트/개발 사용을 위해 제공하는 크레딧</a>을 감안할 때 조직에서 이를 일관된 사례로 만들지 않는 것은 변명의 여지가 없습니다. 그리고 학습을 개발 팀에 신속하게 전달하여 개발 프로세스의 루프를 닫아 현재 실행 중인 애플리케이션을 향상시키고 미세 조정합니다.</li>
+  </ol>
+
+
+  <p>더 자세히 알아보고 싶으세요? <a href="https://azure.microsoft.com/en-us/services/machine-learning/">불</a>연속 요소 및 코드 줄을 측정할 뿐만 아니라 <a href="https://datamarket.azure.com/dataset/aml_labs/lexicon_based_sentiment_analysis">고객 감정</a>, <a href="https://datamarket.azure.com/application/7df1add0-6bac-4c16-82b8-513bd3a9795d">유용성</a>, <a href="https://datamarket.azure.com/dataset/amla/customer-churn-prediction">주요 고객</a> 환경 분석, 평균 고객 환경, <a href="https://gallery.azureml.net/Experiment/9adb3d1dda91434a825a55cad4adacc7?share=1">비용 최적화</a> 및 애플리케이션 디자인의 기본 사항을 넘어서는 <a href="https://datamarket.azure.com/dataset/aml_labs/survivalanalysis">외부 영향</a>의 영향을 예측하는 등 더 큰 결론을 도출하여 Azure Machine Learning 수식으로 가져옵니다. 하루가 끝나면 애플리케이션의 작동 시간과 성능에 대해 가장 걱정할 수 있지만 고객은 우리가 제공하는 환경에 더 관심이 있습니다. 그들에게 중요한 것은 그 경험이 그들의 필요에 얼마나 잘 부합하는지, 그들이 그것을 활용하는 시기와 맥락, 그리고 우리가 그들의 삶을 풍요롭게 하고 있는지 여부이며, <a href="https://apmdigest.com/customer-experience-drives-more-loyalty-than-a-good-price">이는 충성심</a> 과 궁극적으로 우리 모두에게 <a href="https://www.slideshare.net/ConnectTheExperience/the-business-case-for-connected-customer-experiences-2015">수익성을</a> 가져다 줍니다. 위의 소리가 압도적으로 들리기 시작하면 걱정하지 마십시오&rsquo;. 클라우드&rsquo; 핸드셰이크의 일부를 해결하기 위해 혼자가 아닙니다. 전체 Azure 에코시스템이 들어오는 위치입니다. 검증된 구성을 사용하여 워크로드를 배포하고 싶으신가요? <a href="https://azure.microsoft.com/en-us/documentation/templates/">Azure 리소스 템플릿이</a> 들어오는 위치입니다. 더 적은 구성 세부 정보를 원하는 경우 현재 Azure에서 실행 중인 <a href="https://azure.microsoft.com/en-us/marketplace/?term=PaaS">애플리케이션 플랫폼 서비스</a> (예: <a href="https://azure.microsoft.com/blog/2015/05/29/try-cloud-foundry-on-azure-today/">CloudFoundry</a> 또는 자체 <a href="https://azure.microsoft.com/en-us/services/app-service/">Azure App Service</a>) 위에 애플리케이션을 빌드합니다. 여기서 서비스에 대한 SLA를 얻고 기본 구성에 대해 걱정합니다. 클라우드 핸드셰이크의 남은 부분을 관리하는 데 도움을 줄 사람이 있나요? 많은 Microsoft Azure <a href="https://pinpoint.microsoft.com/en-US/search?keyword=azure&amp;type=companies&amp;market=">클라우드 파트너가</a> 도움을 줄 수 있습니다. 이 항목에 대한 자세한 내용은 다음 블로그 게시물에서 참조하세요.</p>

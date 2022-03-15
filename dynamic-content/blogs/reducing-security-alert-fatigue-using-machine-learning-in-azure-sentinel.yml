@@ -1,0 +1,112 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ef76843db17442a077c86ad07cb8a29300017793
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912525"
+Slug: reducing-security-alert-fatigue-using-machine-learning-in-azure-sentinel
+Title: Azure Sentinel에서 기계 학습을 사용하여 보안 경고 피로 감소
+Summary: 지난 주에 클라우드 네이티브 SIEM 도구인 Azure Sentinel을 출시했습니다. Azure Sentinel의 기계 학습(ML)은 처음부터 기본 제공됩니다. 보안 분석가, 보안 데이터 과학자 및 엔지니어의 생산성을 높이기 위한 ML 혁신을 통해 시스템을 신중하게 설계했습니다.
+Content: >-
+  <p>지난 주에 클라우드 네이티브 SIEM 도구인 <a href="https://azure.microsoft.com/en-us/blog/introducing-microsoft-azure-sentinel-intelligent-security-analytics-for-your-entire-enterprise/" target="_blank">Azure Sentinel</a>을 출시했습니다. Azure Sentinel의 기계 학습(ML)은 처음부터 기본 제공됩니다. 보안 분석가, 보안 데이터 과학자 및 엔지니어의 생산성을 높이기 위한 ML 혁신을 통해 시스템을 신중하게 설계했습니다. 경고 피로를 줄이고 보안 커뮤니티에 맞게 조정된 ML 도구 키트를 제공하는 것이 중요합니다. Azure Sentinel의 세 가지 ML 핵심 요소로는 Fusion, 기본 제공 ML, 사용자 고유의 ML 빌드가 포함됩니다.</p>
+
+
+  <h2>Fusion</h2>
+
+
+  <p>경고 피로는 현실입니다. 보안 분석가는 엄청난 양의 경고를 꼼꼼하게 살펴 추려야 할 뿐 아니라 여러 제품의 경고를 수동으로 또는 기존 상관 관계 엔진을 사용하여 상관 관계를 설정해야 하기 때문에 어마어마한 분류 업무에 시달리고 있습니다.</p>
+
+
+  <p>현재 공개 미리 보기로 제공되는 Fusion 기술은 최신의 확장 가능한 학습 알고리즘을 사용하여 수백만 개의 낮은 충실도 비정상적인 활동을 수십 개의 고화질 사례로 상호 연결합니다. Azure Sentinel은 Microsoft 365 솔루션과 통합되며 Azure Identity Protection, Microsoft Cloud App Security, Azure Advanced Threat Protection, Windows Advanced Threat Protection, O365 Advanced Threat Protection, Intune 및 Azure Information Protection 같은 여러 제품의 수백만 개 신호의 상관 관계를 설정합니다. Fusion 사용 설명서를 &ldquo; 방문하여 Fusion을 켜는 방법을 알아볼 수 <a href="https://docs.microsoft.com/en-us/azure/sentinel/connect-fusion" target="_blank">있습니다.</a>&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/806dae29-415c-4830-afad-9b50675a45c1.png"><img alt="Screenshot of fusion and two composite alerts" border="0" height="526" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c6f93e4-6fbe-4864-b251-006eacca45fd.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Fusion 및 두 개의 복합 경고 스크린샷" width="1024"></a></p>
+
+
+  <p><strong>Fusion은 실행 불가능할 수 있는 노란색 경고를 높은 충실도 보안 흥미로운 빨간색 사례로 결합합니다</strong>. 가양성 비율을 줄이기 위해 실행 가능한 인시던트가 생성되도록 서로 다른 제품을 살펴봅니다. 외부 고객과의 측정 및 내부 평가에서 경고 피로도는 평균 <strong>90% 감소</strong>합니다. Fusion은 복잡한 다단계 공격을 감지할 수 있으며 다음과 같은 방법으로 기존 상관 관계 엔진과 다르기 때문에 가능합니다.</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top" width="312">
+     <p><strong>기존 상관 관계 엔진</strong></p>
+     </td>
+     <td valign="top" width="312">
+     <p><strong>Fusion</strong></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="312">
+     <p>공격자가 목표를 달성하기 위해 하나의 경로만 취한다고 가정합니다.</p>
+     </td>
+     <td valign="top" width="312">
+     <p><b>반복 공격 시뮬레이션 - </b> Fusion은 반복적인 arkov 체인 몬테카를로 시뮬레이션을 사용하여 다양한 공격 경로를 시뮬레이션하여 불확실성을 경로/단계로 인코딩합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="312">
+     <p>공격 경로가 실행될 때 공격자가 정적 킬 체인을 따른다고 가정합니다.</p>
+     </td>
+     <td valign="top" width="312">
+     <p><b>확률적 클라우드 킬 체인 &ndash; </b> Fusion은 사용자 지정 정의 이전 확률 함수를 통해 킬 체인의 다음 단계로 이동할 확률을 지속적으로 업데이트합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="312">
+     <p>모든 정보가 공격자를 잡기 위해 로그에 있다고 가정합니다.</p>
+     </td>
+     <td valign="top" width="312">
+     <p><strong>그래픽 메서드의 고급 기능을 </strong>&ndash; 사용하여 킬 체인의 정보의 완전성/연결에 대한 불확실성을 인코딩하여 새로운 공격을 탐지하는 데 도움을 줍니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>위의 스크린샷에서 Fusion 사례와 그 안에 들어간 두 개의 복합 경고를 볼 수 있습니다.</p>
+
+
+  <p>조직은 현재 다음 시나리오에 Fusion을 사용하여 <strong>ID 보호 및 Microsoft Cloud App Security 제품의</strong> 변칙을 복합화하고 있습니다.</p>
+
+
+  <ul>
+   <li>O365 사서함 반출로 이어지는 비정상적인 로그인</li>
+   <li>의심스러운 클라우드 앱 관리 작업으로 이어지는 비정상적인 로그인</li>
+   <li>대량 파일 삭제로 이어지는 비정상적인 로그인</li>
+   <li>대량 파일 다운로드로 이어지는 비정상적인 로그인</li>
+   <li>O365 가장으로 이어지는 비정상적인 로그인</li>
+   <li>비정상적인 로그인으로 인해 대량 파일 공유</li>
+   <li>클라우드 앱에서 랜섬웨어로 이어지는 비정상적인 로그인</li>
+  </ul>
+
+
+  <h2>기본 제공 ML</h2>
+
+
+  <p>기계 학습은 이제 기존 규칙 기반 시스템을 벗어나는 새로운 유형의 공격을 탐지하기 위한 보안 분석의 필수 도구 키트입니다. 그러나 <a href="https://www.nytimes.com/2017/10/22/technology/artificial-intelligence-experts-salaries.html" target="_blank">ML 인재 풀이 부족</a>하기 때문에 보안 조직에서 적용된 보안 데이터 과학자를 직원으로 배치하기가 어렵습니다. 보안 커뮤니티의 요구에 맞게 조정된 ML 도구 키트를 민주화하기 위해 현재 제한된 공개 미리 보기로 제공되는 기본 제공 ML 도입했습니다.</p>
+
+
+  <p>기본 제공 ML 보안 분석가 및 엔지니어를 위해 설계되었으며, Microsofts&rsquo; 보안 기계 학습 엔지니어가 설계한 ML 시스템을 재사용하기 위한 사전 ML 지식이 없습니다. 기본 제공 ML 시스템의 이점은 조직이 ML 교육 교차 유효성 검사 또는 배포와 같은 기존 투자에 대해 걱정할 필요가 없고 기존 접근 방식으로는 찾을 수 없는 위협을 신속하게 식별할 필요가 없다는 것입니다.</p>
+
+
+  <p>표지 뒤에는 기본 제공 ML 모델 압축 원칙과 전이 학습 요소를 사용하여 Microsofts&rsquo; ML 엔지니어가 개발한 모델을 조직의&rsquo; 요구에 맞게 사용할 수 있도록 합니다. 모델은 다양한 데이터 세트에 대해 학습되고 개념 드리프트를 고려하도록 주기적으로 재학습됩니다.</p>
+
+
+  <p>보안 분석가가 SSH 로그에서 비정상적인 로그인을 검색하는 데 사용할 주력 지역 로그인 변칙 모델을 열고 있습니다. ML 전문 지식이 필요하지 않으며, 고객은 로그를 Azure Sentinel로 가져오고 기본 제공 ML 시스템을 사용하여 즉시 분석을 얻습니다.</p>
+
+
+  <h2>사용자 고유의 ML</h2>
+
+
+  <p>조직에서는 보안 사용 사례에 대한 기계 학습에 대한 투자 수준이 서로 다르다는 것을 알고 있습니다. 일부 조직에는 더 심층적인 분석을 사용자 지정해야 하는 데이터 과학자가 있을 수 있습니다. 이러한 조직의 경우 보안 분석을 작성하는 사용자 소유 ML 옵션을 제공합니다.</p>
+
+
+  <p>Azure Sentinel은 데이터 배관을 처리하고, 템플릿에 ML 알고리즘, 모델 학습 및 예약을 위한 코드 조각을 제공하고, 곧 원활한 모델 관리, 모델 배포, 워크플로 스케줄러, 데이터 버전 관리 기능 및 특수 보안 분석 라이브러리를 도입하기 위해 Databricks, Spark 및 Jupyter Notebook 검색&rsquo; 작성 환경을 제공합니다. 이렇게 하면 보안 데이터 과학자가 지루한 파이프라인 및 플랫폼 작업에서 벗어나고 하이퍼 스케일 ML 보안 플랫폼에서 생산적인 분석에 집중할 수 있습니다.</p>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <p>우리는 이러한 혁신 뒤에 기술적 인 세부 사항으로이 공간을 업데이트 할 것입니다! 기본 제공 ML 켜거나 자체 ML 인프라를 사용하는 방법에 대한 질문이 있는 경우 문의<a href="mailto:askepd@microsoft.com">askepd@microsoft.com</a>하세요. 또한 고객이 Azure Sentinel을 사용할 때 Fusion을 사용하도록 설정하는 것이 좋습니다. Fusion 사용 설명서를 &ldquo; 방문하여 Fusion을 켜는 방법을 알아볼 수 <a href="https://docs.microsoft.com/en-us/azure/sentinel/connect-fusion" target="_blank">있습니다.</a>&rdquo;</p>

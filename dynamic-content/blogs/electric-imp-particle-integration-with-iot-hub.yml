@@ -1,0 +1,79 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 80b66f97ebbda2dc94eb9f9600712fd537f50a93
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905993"
+Slug: electric-imp-particle-integration-with-iot-hub
+Title: Azure IoT Hub와 새로운 전기 임프 및 파티클 원활한 통합
+Summary: Azure IoT Hub와 새로운 입자 및 전기 임프 통합은 "인터넷"과 "사물"의 최고를 함께 제공합니다.
+Content: >-
+  <p>디바이스 연결 플랫폼과 새로운 Azure IoT 통합은 최상의 인터넷&rdquo;과 사물&rdquo;을 &ldquo;함께 제공&ldquo;하므로 하드웨어 연결과 클라우드 개발을 모두 간단하게 만들 수 있습니다.</p>
+
+
+  <p>각각 고유한 방식으로 <a href="https://www.electricimp.com/microsoft">전기 임프</a>와 <a href="https://aka.ms/iothubparticleintegration">파티클</a>은 사물을 인터넷에 원활하고 안전하며 안정적으로 연결할 수 있는 디바이스 연결 플랫폼을 제공합니다. 솔루션을 완료하고 고객에게 클라우드의 강력한 기능을 쉽게 액세스하기 위해 두 회사는 이제 Azure IoT Hub와 원활한 통합을 제공합니다. 디바이스 데이터가 IoT Hub를 통해 Azure에 도착하면 쉽게 분석하여 인사이트, 저장 및 시각화를 수행할 수 있으며, 예측 유지 관리, 원격 모니터링 및 워크플로 자동화를 위한 Business Applications 라인에 대한 전체 통합과 같은 광범위한 기능을 열 수 있습니다.</p>
+
+
+  <h2>IoT 쉽고 안전하면서도 강력한 IoT 만들기</h2>
+
+
+  <p>IoT 디바이스 수명 주기 관리는 항상 쉬운 작업이 아닙니다. IoT 디바이스를 안전하게 프로비전, 연결, 통신, 모니터링, 업데이트, 관리 및 사용 중지하려면 심층적인 하드웨어 전문 지식이 필요합니다. 파티클과 일렉트릭 임프(Electric Imp)는 이 작업을 더 간단하고 안전하게 만들기 위해 고유한 답변을 제안합니다.</p>
+
+
+  <p>그러나 디바이스를 클라우드에 안전하게 연결하는 것이 필요한 것은 아닙니다. 사물을 최대한 활용하고 데이터를 활용하려면 클라우드 서비스를 구성하여 플라이트에서 데이터를 분석하고, 수백만 개의 데이터 요소에서 즉시 인사이트를 얻고, 대량의 데이터를 쉽게 탐색 및 시각화하고, 알림을 자동화하고, 유지 관리 프로세스를 최적화할 수 있는 강력하고 쉬운 구성이 필요합니다... Azure IoT 이러한 새로운 IoT 시나리오를 해결하기 위한 다양한 Platform-as-a-Service 솔루션을 제공합니다.</p>
+
+
+  <p><a href="https://www.particle.io/products/platform/particle-cloud">Particle Cloud</a> 및 <a href="https://www.electricimp.com/microsoft">Electric Imp Cloud</a>와의 IoT Hub 통합은 모두 디바이스 연결 플랫폼을 IoT Hub에 연결하는 것으로 구성되며, 필드의 각 디바이스를 IoT Hub의 고유한 디바이스로 나타냅니다.</p>
+
+
+  <p>통합을 사용하도록 설정하는 데 필요한 것은 IoT Hub 인스턴스에 대한 액세스 권한을 Particle Cloud 또는 Electric Imp Cloud에 부여하는 것이며, 이를 통해 알고 있는 각 디바이스를 IoT Hub의 해당 디바이스 ID와 연결하고, IoT Hub 디바이스 ID를 생성, 업데이트 및 삭제할 수 있습니다. 데이터가 IoT Hub에 도착하면 디바이스가 직접 연결된 경우와 다르지 않습니다. 새 디바이스를 기존 또는 새 IoT 솔루션에 원활하게 통합할 수 있습니다.</p>
+
+
+  <h2>사용하도록 설정된 새 비즈니스 모델</h2>
+
+
+  <p><a href="https://www.kellyroofing.com">켈리 루핑(Kelly Roofing</a>)과 같은 기업은 전문 지식(하드웨어 및 클라우드 개발)의 영역이 아닌 영역에서 귀중한 시간과 리소스를 소비할 필요가 없으므로 기록적인 시간에 비즈니스를 새로운 모델로 확장할 수 있습니다.</p>
+
+
+  <p>Microsoft Dynamics는 <a href="https://www.powerobjects.com/">PowerObjects</a> 및 <a href="https://www.kellyroofing.com">Kelly Roofing</a> 과 협력하여 Particle/IoT Hub 통합을 활용하는 파일럿을 실행합니다. 입자를 통해 Azure에 연결된 누수 센서가 있는 지붕을 장착함으로써 Kelly Roofing은 고객에게 20년마다 지붕을 판매하는 기존의 모델에서 벗어나 고객에게 연간 요금으로 누출 방지 지붕을 제공할 수 있습니다. 이 연결된 지붕은 Particle 디바이스에서 Azure로 센서 데이터를 보냅니다. 누출이 감지되면 Dynamics에서 서비스 경고가 트리거되고 계약자가 지붕을 서비스하기 위해 자동으로 디스패치됩니다. 이렇게 하면 충성도, 만족도 및 수명 가치를 높이면서 소비자에게 선불 비용을 절감할 수 있습니다. 통합에서 제공하는 종단 간 값을 보여 줍니다.</p>
+
+
+  <ul>
+      <li>연결에 대한 입자 전자</li>
+      <li>디바이스 관리 및 무선 펌웨어 업데이트를 위한 Particle Cloud</li>
+      <li>Azure IoT 허브를 데이터의 진입점으로 사용</li>
+      <li>변칙 검색에 대한 Azure Machine Learning 및 Power BI</li>
+      <li>서비스 경고를 트리거하고 기술자를 예약하는 Dynamics</li>
+  </ul>
+
+
+  <h2>Electric Imp는 산업용 IoT에 &ldquo;대한 모든 Azure&rdquo; 솔루션을 제공합니다.</h2>
+
+
+  <p>대규모 IoT 디바이스 배포, 시운전, 보안 및 관리의 복잡성을 사실상 제거하는 고급 통합을 제공하는 것 외에도, Electric Imp는 고객에게 Microsoft Azure 완전히 호스트되는 프라이빗 관리형 Electric Imp Cloud 인스턴스의 옵션을 제공합니다. 이를 통해 고객은 모든 클라우드 리소스에서 배포별 데이터 개인 정보 보호, 확장성 및 유연성을 추가로 제어할 수 있습니다.</p>
+
+
+  <h2>오늘 디바이스와 Azure IoT Hub로 게임을 시작하세요!</h2>
+
+
+  <p>단계별 가이드에 따라 몇 분 안에 시작할 수 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://aka.ms/iothubelectricimpintegration">impCloud-Azure IoT Hub 통합 빠른 시작</a></li>
+      <li><a href="https://aka.ms/iothubparticleintegration">Azure IoT Hub에 연결하도록 Particle 클라우드 설정</a></li>
+  </ul>
+
+
+  <p>디바이스를 Azure에 안전하게 연결한 후에는 일반적인 IoT 솔루션 패턴을 신속하게 구현할 수 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-store-data-in-azure-table-storage">Azure 데이터 스토리지에 IoT Hub 메시지 저장</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi">Power BI 사용하여 Azure IoT Hub에서 실시간 센서 데이터 시각화</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps">Azure Web Apps를 사용하여 Azure IoT Hub에서 실시간 센서 데이터 시각화</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning">Azure Machine Learning에서 IoT Hub의 센서 데이터를 사용한 일기 예보</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-device-management-iothub-explorer">iothub-explorer를 사용하여 디바이스 관리</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps">Logic Apps를 사용하여 원격 모니터링 및 알림</a></li>
+  </ul>

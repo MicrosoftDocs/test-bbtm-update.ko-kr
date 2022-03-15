@@ -1,0 +1,160 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e5acc485b6262e8dc1a2c7f17033537af3492085
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905705"
+Slug: windows-azure-websites-development-stacks-support
+Title: Azure Websites 개발 스택 지원 Windows
+Summary: waWS(Azure 웹 사이트) Windows 팀은 웹앱이 빠르게 실행되고 웹앱이 확장할 수 있는 개발 스택에 대한 지원 모델에 열정적으로 투자합니다. 이...
+Content: >-
+  waWS(Azure 웹 사이트) Windows 팀은 웹앱이 빠르게 실행되고 웹앱이 확장할 수 있는 개발 스택에 대한 지원 모델에 열정적으로 투자합니다. 이 블로그 문서에서는 개발 스택의 버전 관리 및 확장성에 사용하는 몇 가지 기본 원칙과 이러한 원칙이 웹앱에 적용되는 방식을 설명합니다.
+
+
+  현재 <strong>.NET</strong>, <strong>PHP</strong>, <strong>Node.js</strong>및 <strong>Python</strong> 스택을 지원합니다. Windows Azure 개발 센터는 <a href="https://azure.microsoft.com/en-us/develop" target="_blank">https://azure.microsoft.com/en-us/develop</a> 이들 각각에 대한 훌륭한 기술 자료를 제공합니다. 웹 사이트를 만든 후에는 콘텐츠를 업로드할 수 있으며 사용자의 최소한의 정보 입력으로 실행될 수 있습니다.
+
+  <h4><strong>WAWS 개발 스택 버전 관리</strong></h4>
+
+  PHP와 같이 지원하는 일부 개발 스택은 <strong>병렬 버전을</strong> 사용하도록 설계되었습니다. 이러한 개발 스택의 경우 플랫폼에 대해 유효성이 검사된 현재 버전 집합을 제공합니다. 또한 호환성을 위해 특정 버전을 선호하지 않는 한 입력이 필요하지 않도록 기본값을 설정합니다.
+
+
+  .NET과 같은 다른 개발 스택은 일부 버전(예: .NET 4.5)의 <strong>현재 위치 업그레이드</strong> 를 제공하도록 설계되었습니다. 이 경우 개발 스택의 현재 보기를 유지하고 최신 버전의 기능과 이점을 제공하기 위해 열심히 노력하고 있습니다.
+
+
+  지원되는 각 개발 스택 및 해당 버전 기본값에 대해 WAWS에서 사용할 수 있는 버전의 요약은 다음 링크 <a href="https://github.com/projectkudu/kudu/wiki/Azure-Web-Sites-Development-Stacks" target="_blank">https://github.com/projectkudu/kudu/wiki/Azure-Web-Sites-Development-Stacks</a>에서 사용할 수 있습니다.
+
+  <h4><strong>개발 스택 확장성</strong></h4>
+
+  사용자 지정해야 하는 경우 각 개발 스택에서 제공하는 확장성 지점을 지원합니다.
+
+  <h4><strong>.NET </strong></h4>
+
+  .NET 프레임워크는 WAWS 플랫폼과 긴밀하게 통합되어 있습니다.
+
+
+  <span style="text-decoration: underline;"><strong>구성</strong></span>
+
+
+  <em>web.config </em>파일을 사용하여 구성을 지정할 수 있습니다. 일부 개발자가 사용하는 데 익숙한 <em>apphost.config</em> 파일은 WAWS에서 직접 편집할 수 없지만 XDT( <a href="https://msdn.microsoft.com/en-us/library/dd465326.aspx" target="_blank">XML 문서 변환</a> ) 선언을 사용하여 수정할 수 있습니다. 기본 문서와 같은 <em>apphost.config</em> 일부 설정은 Azure Portal을 통해 웹 사이트의 구성 탭에서 편집할 수도 있습니다.
+
+
+  <span style="text-decoration: underline;"><strong>확장성</strong></span>
+
+
+  MVC 또는 웹 페이지와 같은 Bin 배포 가능 구성 요소를 웹 애플리케이션 폴더에 추가할 수 있습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1072.1.png-550x0.png"><img class="alignnone size-full wp-image-133241" alt="1072.1.png-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1072.1.png-550x0.png" width="550" height="223" /></a>
+
+  <h3><strong>Node.JS</strong></h3>
+
+  <span style="text-decoration: underline;"><strong>구성</strong></span>
+
+
+  다음은 WAWS에 배포된 Node.js 애플리케이션과 관련된 기본 구성 파일입니다.
+
+  <ul>
+   <li><em>package.json</em></li>
+  </ul>
+
+  플랫폼 간 관련 Node.js 특정 구성 파일입니다. 사용 예에는 Node.js 모듈 종속성(예: Express.js) 및 런타임 버전 번호 지정이 포함됩니다.
+
+  <ul>
+   <li><em>iisnode.yml </em></li>
+  </ul>
+
+  iisnode 사용자 지정 IIS 모듈에서 사용하는 구성 파일입니다. 예를 들어 node.exe 시작하기 위한 명령 지정, iisnode에서 만들 node.exe 프로세스 수 및 로깅 구성이 포함됩니다.
+
+  <ul>
+   <li><em>web.config</em></li>
+  </ul>
+
+  WAWS 플랫폼에서 사용하는 IIS 구성 파일입니다. 이 파일은 필요한 처리기 등록을 캡처하고 정적 파일 사용의 성능 최적화를 위해 URL 재작성을 사용할 수 있습니다.
+
+
+  <span style="text-decoration: underline;"><strong>확장성</strong></span>
+
+
+  WAWS와 통합된 Node.js 개발 스택에는 문서화된 <a href="https://nodejs.org/api/" target="_blank">https://nodejs.org/api</a>핵심 기능이 포함되어 있습니다. 문서화된 <a href="https://npmjs.org/" target="_blank">https://npmjs.org</a> NPM 모듈의 에코시스템을 사용하여 핵심 개발 스택 기능을 확장할 수 있습니다. package.json 구성 파일을 사용하여 웹 애플리케이션에 포함할 모듈을 지정할 수 있습니다. WAWS 플랫폼 <em>npm 설치 </em>와 통합된 git 기반 소스 제어를 사용하는 경우 <em>git 푸시</em> 작업 중에 실행되어 종속성을 가져오고 설치합니다. FTP와 같은 다른 배포 메커니즘을 사용하는 경우 로컬 개발 중에 모듈을 다운로드 및 구성하고 전체 웹앱을 WAWS에 업로드할 수 있습니다. NPM 모듈에는 호환되는 플랫폼 간 호환 Javascript 모듈과 특정 플랫폼을 대상으로 하도록 디자인된 네이티브 모듈이 모두 포함되어 있으므로 항상 애플리케이션을 테스트하는 것이 좋습니다.
+
+
+  <span style="text-decoration: underline;"><strong>런타임 버전</strong></span>
+
+
+  WAWS 플랫폼에 포함된 Node.js 버전을 선택하거나 사용자 지정 Node.js 런타임을 업로드하고 구성할 수 있습니다. 지침은 Windows Azure 개발자 센터를 <a href="https://azure.microsoft.com/en-us/develop/nodejs/common-tasks/specifying-a-node-version" target="_blank">https://azure.microsoft.com/en-us/develop/nodejs/common-tasks/specifying-a-node-version</a>통해 제공됩니다.
+
+  <h4><strong>PHP</strong></h4>
+
+  <span style="text-decoration: underline;"><strong>구성</strong></span>
+
+
+  WAWS에 배포된 PHP 애플리케이션과 관련된 기본 구성 파일은 표준 PHP <em>.user.ini </em>파일입니다. 이 파일을 사용하여 진단을 위한 display_errors 같은 변경 가능한 PHP 지시문을 설정할 수 있습니다.
+
+
+  <span style="text-decoration: underline;"><strong>확장성</strong></span>
+
+
+  WAWS는 기본적으로 핵심 PECL 확장 집합을 지원합니다. 사용자 지정 확장도 환영합니다. 사용자 지정 확장을 사용하도록 설정하려면 FTP 루트 아래에 DLL을 가져오고, 값이 PHP 확장의 위치(애플리케이션 루트를 기준으로)로 설정된 CONFIGURE 탭 아래에 PHP_EXTENSIONS 앱 설정을 추가합니다.
+
+
+  <span style="text-decoration: underline;"><strong>런타임 버전 및 사용자 지정</strong></span>
+
+
+  버전 선택은 Azure Portal을 통해 웹 사이트의 구성 탭에 액세스할 때 사용할 수 있습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3005.2.png-550x0.png"><img class="alignnone size-full wp-image-133231" alt="3005.2.png-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3005.2.png-550x0.png" width="550" height="301" /></a>
+
+
+  사용자 지정 FastCGI 기반 PHP 개발 스택도 WAWS에서 지원됩니다. 웹 사이트 루트 아래에 개발 스택을 업로드. 웹 사이트의 CONFIGURE 탭에 액세스하고 새 스크립트 프로세서(일반적으로 php-cgi.exe)를 *.php 확장과 연결합니다. 스크립트 프로세서에는 절대 경로가 필요합니다. 예: D:\home\site\wwwroot가 사이트 루트를 참조하는 데 사용되는 D:\home\site\wwwroot\php5.5\php-cgi.exe.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2287.3.png-550x0.png"><img class="alignnone size-full wp-image-133221" alt="2287.3.png-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2287.3.png-550x0.png" width="550" height="102" /></a>
+
+  <h3><strong>Python</strong></h3>
+
+  <span style="text-decoration: underline;"><strong>구성</strong></span>
+
+
+  WAWS에 배포된 Python 애플리케이션과 관련된 기본 구성 파일은 <em>web.config</em>. 이 파일은 필요한 처리기 등록을 캡처하고 정적 파일 사용의 성능 최적화를 위해 URL 재작성을 사용할 수 있습니다. <em>web.config</em> 파일의 사용은 선택 사항이며, 처리기 매핑은 Azure Portal의 CONFIGURE 탭을 통해 지정할 수도 있습니다. 자세한 내용은 Windows Azure 개발자 센터를 <a href="https://azure.microsoft.com/en-us/develop/python/tutorials/web-sites-configuration" target="_blank">https://azure.microsoft.com/en-us/develop/python/tutorials/web-sites-configuration</a>통해 확인할 수 있습니다.
+
+
+  Azure Portal의 동일한 구성 탭에서 앱 설정 통해 일부 구성 옵션을 업데이트할 수 있습니다.
+
+  <ul>
+   <li>WSGI_LOG: 애플리케이션 및 구성 오류를 캡처하기 위한 로그 파일의 절대 경로</li>
+   <li>WSGI_HANDLER: 환경 및 start_response 함수를 수락하는 WSGI 프로토콜에 대한 호출 가능한 <a href="https://www.python.org/dev/peps/pep-0333/#the-application-framework-side" target="_blank">애플리케이션 개체</a></li>
+  </ul>
+
+  여기에 지정된 값은 모듈/패키지 이름이어야 하고, 사용할 모듈의 특성(예: mypackage.mymodule.handler)이어야 합니다(특성을 호출해야 함을 나타내는 괄호 추가).
+
+  <ul>
+   <li>WSGI_RESTART_FILE_REGEX: 파일 이름을 지정하는 정규식</li>
+  </ul>
+
+  기본적으로 모든 *.py 및 *.config 파일을* 참조합니다. (.\\py)| (\\.config))$
+
+
+  <span style="text-decoration: underline;"><strong>확장성</strong></span>
+
+
+  애플리케이션 루트 아래에 포함시키고web.config또는 앱 <em> 설정 </em> 통해 PYTHONPATH를 구성하여 배포에 패키지를 추가할 수 있습니다. Virtualenv는 현재 WAWS에서 지원되지 않습니다.
+
+
+  임의의 패키지의 배포를 지원하려면 먼저 웹 사이트 루트 아래에 패키지를 저장하기 위한 디렉터리를 만듭니다.이는 Python lib 폴더에 <em>sitepackages</em> <em></em>- 디렉터리가 있는 것과 비슷하지만 웹 애플리케이션 내에 있으며 azure Websites를 Windows 위해 배포됩니다.이 새 디렉터리에 패키지를 복사하고 이 디렉터리의 절대 경로를 <em>web.config</em> PYTHONPATH에 추가합니다(예: <em>D:\home\site\wwwroot\my-packages</em>).이제 웹 애플리케이션 내에서 패키지를 가져올 수 있습니다.
+
+
+  이 중 한 가지 예는 애플리케이션 내에서 Django를 포함하는 것입니다.먼저 기존 Python 설치에 Django를 다운로드하거나 설치합니다.다음으로 Django 패키지(일반적으로 __init.py__ 파일이 있는 django라는 폴더)를 애플리케이션의 디렉터리에 복사합니다.기본적으로 애플리케이션 루트는 패키지를 검색하는 디렉터리 목록에 포함됩니다.하위 디렉터리(예: mypackages\django)에 포함하려는 경우 web.config PYTHONPATH에 부모 디렉터리를 추가할 수 있습니다. 이 경우 D:\home\site\wwwroot\mypackages입니다.
+
+
+  자세한 내용은 Windows Azure 개발자 센터를 <a href="https://azure.microsoft.com/en-us/develop/python/tutorials/web-sites-with-django" target="_blank">https://azure.microsoft.com/en-us/develop/python/tutorials/web-sites-with-django</a>통해 확인할 수 있습니다.
+
+
+  <span style="text-decoration: underline;"><strong>런타임 버전 및 사용자 지정</strong></span>
+
+
+  사용자 지정 FastCGI 기반 Python 개발 스택을 환영합니다. 웹 사이트 루트 아래에 사용자 지정 개발 스택을 업로드하고 FastCGI 기반 스크립트 프로세서에 대한 절대 경로를 포함하도록 웹 사이트 처리기 매핑을 구성할 수 있습니다.
+
+
+  Microsoft는 항상 피드백을 주셔서 감사합니다. <a href="https://social.msdn.microsoft.com/Forums/en-US/windowsazurewebsitespreview/threads/" target="_blank">포럼 피드백을</a> 통해 개발 스택 요구 사항을 더 잘 지원하는 방법을 알려주세요.

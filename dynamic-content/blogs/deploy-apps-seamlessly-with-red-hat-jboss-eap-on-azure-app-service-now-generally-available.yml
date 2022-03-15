@@ -1,0 +1,75 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8a01f03284a5cac3167bc038e8e87a8b8b547e84
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911950"
+Slug: deploy-apps-seamlessly-with-red-hat-jboss-eap-on-azure-app-service-now-generally-available
+Title: Azure App Service에서 Red Hat JBoss EAP를 사용하여 원활하게 앱 배포- 이제 일반 공급
+Summary: Azure App Service의 Red Hat JBoss EAP는 Java EE(Jakarta EE) 애플리케이션에 대한 완전 관리형 제품입니다. 고객은 Java EE(Jakarta EE) 애플리케이션을 위한 관리형 플랫폼과 Red Hat 및 Microsoft의 공동 지원과 함께 제공되는 안심을 제공합니다. 현재는 제품을 일반적으로 사용할 수 있으므로 Red Hat 구독 또는 라이선스가 필요하지 않은 App Service의 JBoss Enterprise Application Platform에 앱을 배포할 수 있습니다.
+Content: >-
+  <p>Azure App Service의 Red Hat JBoss Enterprise EAP(애플리케이션 플랫폼)는 Java EE(Jakarta EE) 애플리케이션에 대한 완전 관리형 제품입니다. Java 개발자는 플랫폼이 Java를 처음 지원한 2014&mdash;년부터 App Service에서 Tomcat, Spring Boot 및 기타 Java 앱을 배포하고 크기를 조정해 왔습니다. 그 이후로 고객은 Java EE(Jakarta EE) 애플리케이션에 대해 동일한 호스팅 옵션을 원한다고 말했습니다.</p>
+
+
+  <p>사용자의 의견을 듣고 Red Hat과 협력하여 2020년 9월부터 미리 보기로 제공되는 App Service에서 JBoss EAP를 제공합니다. 고객은 Java EE(Jakarta EE) 애플리케이션을 위한 관리형 플랫폼과 Red Hat 및 Microsoft의 공동 지원과 함께 제공되는 안심을 제공합니다. 현재 이 제품은 일반적으로 사용할 수 있으므로 Red Hat 구독 또는 라이선스가 필요하지 않은 <a href="https://docs.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=jbosseap&amp;pivots=platform-linux" target="_blank">App Service의 Red Hat JBoss EAP에 앱을 배포</a> 할 수 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Red Hat과 Microsoft는 기존 Java 애플리케이션을 클라우드로 전환하면서 조직의 선택과 유연성을 확장하기 위해 최선을 다하고 있습니다. Azure의 Red Hat JBoss EAP는 조직이 클라우드 기반 아키텍처의 이점을 보다 쉽게 실현할 수 있도록 완전히 구성된 공동 지원 솔루션을 고객에게 제공합니다. Microsoft와의 오랜 관계를 지속적으로 구축하고 공동 고객에 대한 지원을 확대할 수 있기를 기대합니다.&quot;</em>&mdash; Rich Sharples, <a href="https://azure.microsoft.com/en-us/overview/linux-on-azure/red-hat/">Red Hat</a> 제품 관리 &ndash; 애플리케이션 서비스 수석 이사</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a70dcf86-5f6b-4850-9f32-0ccf5edada61.png"><img alt="Figure 1 -  App service creation App Service interface showing the available options for creating a JBoss EAP application." border="0" height="719" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6b7efc4f-713a-49b0-b870-00784777ff6c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="웹앱 만들기" width="687"></a></p>
+
+
+  <p align="left"><em>그림 1. JBoss EAP 애플리케이션을 만드는 데 사용할 수 있는 옵션을 보여 주는 App Service 만들기 App Service 인터페이스입니다.</em></p>
+
+
+  <p>즉, Java EE(Jakarta EE) 애플리케이션에 대해 다음과 같은 모든 App Services&rsquo; 플랫폼 기능을 활용할 수 있습니다.</p>
+
+
+  <ul>
+      <li>요청, CPU, 메모리 사용률 또는 단순히 하루 중 시간과 같은 메트릭을 기반으로 자동 크기 조정</li>
+      <li>애플리케이션 인사이트는 느리거나 실패한 요청, 예외 로깅 및 분산 추적을 모니터링하기 위한 자동 계측입니다.</li>
+      <li>운영 체제, Java 가상 머신 및 Red Hat JBoss EAP 서버에 대한 자동 업데이트입니다. 특정 버전의 JBoss를 선택하고 사용자 고유의 용어로 업데이트할 수도 있습니다.</li>
+      <li>Maven, GitHub Actions 및 인기 있는 IDE와의 배포 API 및 통합</li>
+      <li>인터넷에서 애플리케이션을 보호하고 격리하기 위한 네트워킹 통합.</li>
+  </ul>
+
+
+  <h2>Java EE 애플리케이션을 배포하고 실행하는 용도로 빌드된 API</h2>
+
+
+  <p>App Service의 Red Hat JBoss EAP는 공동으로 지원되는 PAYG(종량제) 제품입니다. 즉, Red Hat에서 지원 구독을 미리 구매할 필요가 없습니다. Azure Portal 또는 CLI(명령줄 인터페이스)에서 JBoss EAP 웹앱을 만들고 Java EE 앱 배포를 시작하기만 하면 됩니다. 문제가 발생하거나 질문이 있는 경우 Microsoft 또는 Red Hat을 사용하여 지원 사례를 만들고 두 회사의 지원 엔지니어가 협업하여 사례를 해결합니다. 통합 지원에 대한 지원 요금은 2021년 8월 1일부터 모든 JBoss EAP 사이트에 자동으로 적용됩니다*. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/app-service/linux/" target="_blank">App Service 가격 책정 페이지를 확인하세요</a>.</p>
+
+
+  <p>Java 애플리케이션이 EAR, WAR 또는 JAR에 패키지되어 있는지 여부에 관계없이 App Service에는 애플리케이션을 배포하고 실행하기 위해 특별히 빌드된 API가 있습니다. 원활한 개발자 환경을 위해 Azure CLI, Maven 플러그 인 및 기타 도구에 통합됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b296fec9-d48d-4e5e-ae55-7024d3f8ace8.png"><img alt="Figure 2 - High level architecture diagram showing Red Hat JBoss EAP on App Service connecting to other Azure services and users" border="0" height="720" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b761f04b-d0b6-4328-9f67-8956aec30db5.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="ACOM v2용 JBoss 아치 다이어그램" width="1280"></a></p>
+
+
+  <p align="left"><em>그림 2. 다른 Azure 서비스 및 사용자에 연결하는 App Service의 Red Hat JBoss EAP를 보여 주는 고급 아키텍처 다이어그램</em></p>
+
+
+  <p>App Service의 Red Hat JBoss EAP는 Premium V3 및 격리된 V2 App Service 계획 유형에서 제공됩니다. 즉, 보안 및 규모를 강화하기 위해 최신 버전의 App Service 환경에 Red Hat JBoss EAP를 배포하거나 App Service의 다중 테넌트 변형에 배포할 수 있습니다. 두 경우 모두 <a href="https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/reservation-discount-app-service" target="_blank">RI(Reserved Instance) 가격 책정을 사용하여 호스팅 청구서를 저장할</a> 수 있으며, 이를 통해 1년 또는 3년 약정을 수행하고 각각 최대 35%와 55%를 절약할 수 있습니다.</p>
+
+
+  <h2>시작할 준비가 되셨나요?</h2>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/app-service/quickstart-java?tabs=jbosseap&amp;pivots=platform-linux" target="_blank">빠른 시작을 통해</a> Maven 플러그 인을 사용하여 Red Hat JBoss EAP 사이트를 만들고 샘플 애플리케이션을 배포하는 방법을 알아봅니다. 다음으로, Microsoft Learn로 이동하여 <a href="https://docs.microsoft.com/en-us/learn/modules/deploy-java-ee-app-to-jboss-app-service/" target="_blank">JBoss EAP 사이트를 Azure에서 실행되는 MySQL 데이터베이스에 연결합니다</a> . 마지막으로 Java EE(Jakarta EE) 애플리케이션을 App Service의 Red Hat JBoss EAP로 마이그레이션할 준비가 되면 <a href="https://docs.microsoft.com/en-us/azure/developer/java/migration/migrate-jboss-eap-to-jboss-eap-on-azure-app-service?toc=/azure/developer/java/ee/toc.json&amp;bc=/azure/developer/breadcrumb/toc.json" target="_blank">마이그레이션 가이드</a>를 읽어보세요.</p>
+
+
+  <h2>리소스</h2>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/developer/java/ee/jboss-on-azure" target="_blank">Azure의 Red Hat JBoss EAP 개요</a>입니다.</li>
+      <li><a href="https://github.com/Azure-Samples/migrate-javaee-app-to-azure-training" target="_blank">Java EE 앱을 GitHub App Service 교육으로 마이그레이션</a>합니다.</li>
+      <li><a href="https://aka.ms/maven-plugin-webapps-june2021" target="_blank">Azure Web Apps용 Maven 플러그 인</a>을 사용하여 한 단계에서 앱 및 종속성을 배포합니다.</li>
+  </ul>
+
+
+  <hr>
+
+  <p>*Red Hat JBoss EAP 통합 지원은 코어당 시간당 $0.15이며 올해 말 1년 예약 인스턴스 가격 책정을 받을 수 있습니다.</p>

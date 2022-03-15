@@ -1,0 +1,87 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b288bd8fc5bc1c8346a6d17894029bb15b3a970f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911565"
+Slug: teradata-to-azure-sql-data-warehouse-migration-guide
+Title: Teradata에서 Azure로 SQL Data Warehouse 마이그레이션 가이드
+Summary: 클라우드 기반 데이터 웨어하우스의 이점이 증가함에 따라 기존 온-프레미스 데이터 웨어하우스에서 클라우드로 마이그레이션하는 고객의 수가 급증하고 있습니다.
+Content: >-
+  <p>클라우드 기반 데이터 웨어하우스의 이점이 증가함에 따라 기존 온-프레미스 데이터 웨어하우스에서 클라우드로 마이그레이션하는 고객의 수가 급증하고 있습니다. Microsoft Azure SQL Data Warehouse(SQL DW)는 클라우드 기반 데이터 웨어하우스 경쟁 업체와 비교할 때 성능에 가장 적합한 가격을 제공합니다.&nbsp; <a href="https://azuremarketplace.microsoft.com/en-gb/marketplace/apps?search=teradata&amp;page=1" target="_blank">Azure Marketplace 및 Azure</a>의 <a href="https://www.teradata.com/Resources/Datasheets/Teradata-IntelliCloud-for-Azure" target="_blank">Intellicloud</a>를 통해 Teradata 스택을 Azure로 마이그레이션하거나 Azure Datawarehouse로 마이그레이션할 수 있습니다.</p>
+
+
+  <p>DW 마이그레이션을 SQL Teradata에는 여러 단계가 포함됩니다. 이러한 단계에는 기존 워크로드 분석, 관련 스키마 모델 생성 및 ETL 작업 수행이 포함됩니다. 이 백서의 목적은 마이그레이션 워크플로, 아키텍처, 기술 디자인 고려 사항 및 모범 사례에 중점을 두고 이러한 앞서 언급한 마이그레이션에 대한 지침을 제공하는 것입니다.</p>
+
+
+  <h2>마이그레이션 단계</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ead30cb1-6259-47fc-bc0b-ed68790d0cbf.png"><img alt="Migration phases flow chart" border="0" height="250" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/361662d3-596c-44f3-a2c2-f6ff64b5c18a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="마이그레이션 단계 흐름도" width="610"></a></p>
+
+
+  <p>Teradata 마이그레이션은 다음 6개 영역을 피벗해야 합니다. 권장되지만 개념 증명은 대체 단계입니다. Azure의 이점을 통해 개발 팀이 데이터를 마이그레이션하기 전에 비즈니스 개체 마이그레이션을 시작하고 마이그레이션 프로세스 속도를 높이기 위해 Azure SQL Data Warehouses를 신속하게 프로비전할 수 있습니다.</p>
+
+
+  <h3>1 &ndash; 단계 팩트 찾기</h3>
+
+
+  <p>질문 및 답변 세션을 통해 마이그레이션 프로젝트에 대한 입력 및 출력을 정의할 수 있습니다.</p>
+
+
+  <h3>POC(개념 증명)에 대한 2 &ndash; 단계 정의 성공 조건</h3>
+
+
+  <p>1단계에서 답변을 받아 필요한 출력의 유효성을 검사하기 위해 POC를 실행하기 위한 워크로드를 식별하고 다음 단계를 POC로 실행합니다.</p>
+
+
+  <h3>3단계: 데이터 계층 매핑 옵션</h3>
+
+
+  <p>이 단계는 Teradata에 있는 데이터를 Azure SQL Data Warehouse에서 만들 데이터 레이아웃에 매핑하는 것입니다. 몇 가지 일반적인 시나리오는 데이터 형식 매핑, 날짜 및 시간 형식 등입니다.</p>
+
+
+  <h3>4 &ndash; 단계 데이터 모델링</h3>
+
+
+  <p>데이터 매핑을 정의한&rsquo; 후 4단계는 Azure SQL Data Warehouse를 조정하는 방법에 집중합니다. 이렇게 하면 데이터를 가져올 데이터에 가장 적합한 성능이 제공됩니다.</p>
+
+
+  <h3>5단계: 마이그레이션 경로 식별</h3>
+
+
+  <p>최소 저항 경로는 무엇인가요? 클라우드 완성도를 고려할 때 가장 빠른 경로는 무엇인가요? 5단계는 열려 있는 옵션을 설명한 다음 원하는 경로를 결정하는 데 도움이 됩니다.</p>
+
+
+  <h3>6단계: 마이그레이션 실행</h3>
+
+
+  <p>Teradata 데이터를 SQL Data Warehouse로 마이그레이션하려면 일련의 단계가 필요합니다. 이러한 단계는 준비, 메타데이터 마이그레이션 및 데이터 마이그레이션의 세 가지 논리적 단계로 실행됩니다.</p>
+
+
+  <h2>마이그레이션 솔루션</h2>
+
+
+  <p>데이터를 수집하려면 온-프레미스 솔루션에서 Azure SQL Data Warehouse로 데이터를 이동하고 대부분의 데이터가 로드되면 개발 팀이 Azure Analysis Cubes를 빌드할 수 있도록 하기 위한 기본 클라우드 데이터 웨어하우스 설정이 필요합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ca1b1978-5de0-4db7-8f55-0ff9c5b00550.png"><img alt="Migration solution flow chart" border="0" height="329" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/243f63d3-f7e2-4101-b3d7-fa1b5e9c1ccd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="마이그레이션 솔루션 흐름도" width="1416"></a></p>
+
+
+  <ul>
+   <li>Azure Data Factory 파이프라인은 저장소, 준비 및 학습 파이프라인을 통해 데이터를 수집하고 이동하는 데 사용됩니다.</li>
+   <li>Polybase를 통해 파일을 추출하고 Azure SQL DW의 스테이징 스키마로 로드합니다.</li>
+   <li>Azure SQL DW에서 스테이징, 원본(ODS), EDW 및 Sematic 스키마를 통해 데이터를 변환합니다.</li>
+   <li>Azure Analysis Services는 수천 명의 최종 사용자에게 서비스를 제공하고 Azure SQL DW 동시성을 확장하는 수식 계층으로 사용됩니다.</li>
+   <li>Azure Analysis Services를 기반으로 운영 보고서 및 분석 대시보드를 빌드하여 Power BI 통해 수천 명의 최종 사용자에게 서비스를 제공합니다.</li>
+  </ul>
+
+
+  <p>Teradata에서 Azure SQL Data Warehouse로 마이그레이션하는 방법에 대한 자세한 내용은 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=57465" target="_blank">Teradata에서 Azure SQL Data Warehouse로 마이그레이션하는</a> 다음 백서 &ldquo; 에서 확인합니다.&rdquo;</p>
+
+
+  <p>이 백서는 마이그레이션 단계, 스키마 마이그레이션, 비즈니스 논리 마이그레이션, 실제 데이터 마이그레이션 방법 및 테스트 전략을 포함한 데이터 마이그레이션에 필요한 준비를 자세히 설명하는 섹션으로 나뉩니다.</p>
+
+
+  <p>마이그레이션에 유용한 스크립트는 Teradata의 github에서 <a href="https://github.com/Microsoft/DataMigrationTeam/tree/master/Teradata%20to%20Azure%20SQL%20DW%20Scripts/Teradata%20to%20Azure%20SQL%20DW%20Scripts" target="_blank">Azure SQL DW 스크립트로</a> 사용할 수 있습니다.</p>

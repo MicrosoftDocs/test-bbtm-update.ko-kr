@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fab460b87ccb16521e5946e7b5c1b26cceebb9c1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912087"
+Slug: azure-dns-updates-caa-record-support-and-ipv6-nameservers
+Title: Azure DNS 업데이트 – CAA 레코드 지원 및 IPv6 이름 서버
+Summary: 고객이 오랫동안 기다려온 Azure DNS에 대한 몇 가지 업데이트(CAA(인증 기관 권한 부여) 레코드 및 IPv6 이름 서버 지원)을 발표하게 되어 기쁘게 생각합니다.
+Content: >-
+  <p>고객이 오랫동안 기다려온 Azure DNS에 대한 몇 가지 업데이트를 발표하게 되어 기쁘게 생각합니다.</p>
+
+
+  <ul>
+   <li>CAA(인증 기관 권한 부여) 레코드 지원</li>
+   <li>IPv6 이름 서버</li>
+  </ul>
+
+
+  <h2>CAA 레코드 지원</h2>
+
+
+  <p><a href="https://tools.ietf.org/html/rfc6844">CAA(인증 기관 권한 부여) 리소스</a> 레코드를 사용하면 도메인 소유자가 도메인에 대한 인증서를 발급할 권한이 있는 하나 이상의 CA(인증 기관)를 지정할 수 있습니다. CA의 경우 인증서 발급 프로세스의 일부로 <a href="https://cabforum.org/2017/03/08/ballot-187-make-caa-checking-mandatory/">CAA 레코드를 확인해야 합니다</a>. 이 심층 방어 보안 기능을 사용하면 CA가 의도하지 않은 인증서 잘못 발급의 위험을 줄일 수 있습니다.</p>
+
+
+  <p>CAA 레코드 형식은 다음 세 가지 속성을 지원합니다.</p>
+
+
+  <ul>
+   <li><strong>플래그:</strong> <a href="https://tools.ietf.org/html/rfc6844#section-3">RFC</a>당 특정 의미가 있는 중요 플래그를 나타내는 데 사용되는 0 &ndash; 255 사이의 부호 없는 정수입니다.</li>
+   <li><strong>태그:</strong> 다음 중 하나일 수 있는 ASCII 문자열입니다. <ul>
+    <li>문제: 도메인 소유자가 인증서(모든 형식)를 발급할 수 있는 CA를 지정할 수 있습니다.</li>
+    <li>Issuewild: 도메인 소유자가 인증서를 발급할 수 있는 CA를 지정할 수 있습니다(와일드카드 인증서만 해당).</li>
+    <li>Iodef: 도메인 소유자가 CA가 CAA 레코드를 통해 권한이 부여되지 않은 도메인에 대한 인증서 발급 요청에 대해 알릴 수 있는 이메일 주소 또는 호스트 이름을 지정할 수 있습니다.</li>
+   </ul>
+   </li>
+   <li><strong>값:</strong> 사용된 특정 태그와 연결된 값</li>
+  </ul>
+
+
+  <p>Azure REST API, PowerShell 및 CLI를 통해 CAA 레코드를 만들고 관리할 수 있습니다.</p>
+
+
+  <h2>IPv6 이름 서버</h2>
+
+
+  <p>지난 몇 년 동안 IPv6을 지원하는 DNS 클라이언트뿐만 아니라 IPv6을 통해 도메인 이름 쿼리를 지원하는 재귀 확인자도 크게 증가했습니다. Azure DNS 이름 서버는 이제 이전과 같이 IPv4 외에도 IPv6을 통해 쿼리를 지원한다고 발표하게 되어 기쁩니다.</p>
+
+
+  <p>예를 들어 아래 포털 화면 캡처는 Azure DNS에서 호스트되는 DNS 영역에 대한 Azure DNS 이름 서버를 찾는 방법을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec4f994b-e494-4c80-bf45-f82600b668af.png"><img alt="dnsnameservers" border="0" height="546" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15322e2f-53d6-48d5-a31f-c7cbcce54025.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="dnsnameservers" width="898"></a></p>
+
+
+  <p>nslookup과 같은 명령을 사용하여 각 이름 서버에 대한 IPv6 주소를 찾을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9dcf0f1-2372-4a51-96b0-09b813184c88.png"><img alt="image" border="0" height="52" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9d9a97b4-5ba9-45af-aeb9-0803e7346deb.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="623"></a></p>
+
+
+  <p>언제나처럼, 우리는 고객의&rsquo; 피드백을 얻는 것을 좋아합니다. &nbsp;<a href="https://feedback.azure.com/forums/217313-networking?category_id=77466">AzureFeedback&nbsp;</a> 채널&nbsp;은 기능 및 향후 지원되는 시나리오에 대한 제안을 받습니다. 다른 사용자가 제안하는 내용을 찾아보고, 즐겨찾기를 투표하고, 원하는 제안을 입력하는 것이 좋습니다.</p>
+
+
+  <p>가장 빈번한 질문에 대한 답변은 공개 <a href="https://docs.microsoft.com/en-us/azure/dns/dns-faq">FAQ</a> 를 검토하세요.</p>

@@ -1,0 +1,164 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a69389f9401ba441ca547269995a9ca7ea3c464a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905806"
+Slug: new-offers-in-azure-marketplace
+Title: Azure Marketplace의 새 제품
+Summary: 지난 달 31개의 새로운 클라우드 제품이 Azure Marketplace에 게시되었습니다. 체크 아웃!
+Content: >-
+  <p>지난 달 31개의 새로운 클라우드 제품이 Azure Marketplace에 게시되었습니다. 체크 &lsquo;아웃!</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0" width="2298">
+   <tbody>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/64edb287-f6de-4a6d-aa20-b90e2eee7324.png"><img alt="Cloudbreak for Hortonworks Data Platform" border="0" height="57" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1abcf0f7-6a58-4b40-ab01-e811822c8954.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Hortonworks 데이터 플랫폼용 Cloudbreak" width="57"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/hortonworks.cloudbreak-for-hortonworks-data-platform?tab=Overview" target="_blank">Hortonworks Data Platform용 Cloudbreak</a>: Cloudbreak for Hortonworks Data Platform은 클라우드 환경에서 HDP 클러스터의 프로비전, 관리 및 모니터링을 간소화합니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84e2bad4-b7ab-4839-93bc-5b58f8fc25d7.png"><img alt="CloudLanes" border="0" height="51" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a0fe48d0-2146-4e40-a270-a6996ee615f3.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="CloudLanes" width="51"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudlanes.cloudlanes-cloud-backup-accelerator-vtl?tab=Overview" target="_blank">CloudLanes 클라우드 백업 가속기 &amp; VTL 게이트웨이</a>: 초고속 백업. 훨씬 더 빠른 속도로 클라우드로 데이터를 보냅니다. 클라우드 백업 및 보관을 사용하려면 사용자가 클라우드에서 파일 및 정보를 업로드하고 다운로드해야 합니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d2347a36-938c-40e7-b68f-78a6503e3f85.png"><img alt="Workspot" border="0" height="60" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1a8b0882-3328-46b5-a087-f428a9b94bd1.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Workspot" width="60"></a></td>
+     <td valign="top" width="1981">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/workspot.deploy-cloud-desktops-in-azure?tab=Overview" target="_blank">Workspot Cloud Desktops: Azure의 VDI 및 DaaS</a>: VDI는 무한 확장 가능한 클라우드 서비스입니다. 하루에 수천 개의 Windows 10 데스크톱을 배포합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f880f917-dd91-495e-a95e-23075d5e535e.png"><img alt="Forscene Edgeserver" border="0" height="60" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dba9dfe5-fbc2-4a6c-b2bf-9ff5c59a83ef.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Forscene Edgeserver" width="60"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/forscene.edgeserver?tab=Overview" target="_blank">Forscene Edgeserver</a>: Forscene from Forbiddene는 공동 작업 프로덕션 및 원격 워크플로를 위한 전문 비디오 편집 소프트웨어입니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8fa36705-9b4d-4c8c-bb47-9a40605d6942.png"><img alt="CloudLanes" border="0" height="51" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4da541c9-52d1-4a07-ab0f-ce654992d792.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="CloudLanes" width="51"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudlanes.cloud-video-accelerator-nfs?tab=Overview" target="_blank">CloudLanes Cloud Video Accelerator &amp; NFS Storage</a>: CloudLanes Cloud Video Accelerator를 사용하면 뛰어난 경제성과 풍부한 기능을 활용하여 온-프레미스 비디오를 빠르고 안전하게 수집하고 클라우드로 이동할 수 있습니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4587d2c8-93f3-4712-9266-0d8ec582581f.jpg"><img alt="Hanu" border="0" height="59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fff2ae12-1a34-45f0-a0ee-8539baa9dedf.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="하누 시" width="59"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/hanu.hanu-managed-services?tab=Overview" target="_blank">Hanu Managed Services</a>: 당사의 제품은 모든 고객의 사용자 지정 요구 사항에 맞게 표준 및 주문형 서비스로 분류됩니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/75091b17-d84e-4a5b-9894-e0b8dd966aaf.png"><img alt="Optimiz Centos Linux Web Server" border="0" height="64" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7a08a733-91ac-4857-8533-d5b5943cbdc4.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Centos Linux 웹 서버 최적화" width="64"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tunnelbiz.centos7phpoptimizing?tab=Overview" target="_blank">Centos Linux 웹 서버 최적화</a>: 더 빠른 웹 서버를 위해 준비 최적화 centos 및 php 7 서버 이미지 (OS CENTOS 7 - MariaDB - PHP 7 - PageSpeed)를 빌드합니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b4a04ca7-25ed-4cfd-b3f0-117dcef81135.png"><img alt="RapidMiner" border="0" height="63" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/78ce151d-4a9d-4609-b8eb-bc9228e4a746.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="RapidMiner" width="63"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rapidminer.rapidminer_server_75?tab=Overview" target="_blank">RapidMiner Server 7.5</a>: RapidMiner Server를 사용하면 RM Studio에서 만든 모델 및 결과를 쉽게 공유, 재사용 및 운영할 수 있습니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5b45b343-7bdd-41bd-a3a0-381f056abacd.png"><img alt="RapidMiner" border="0" height="63" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e1cf2f3a-55a4-4bed-91fa-03be63d32fab.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="RapidMiner" width="63"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rapidminer.rapidminer_server_76?tab=Overview" target="_blank">RapidMiner Server 7.6</a>: 빠르고 간단한 실제 데이터 과학입니다. RapidMiner Server를 사용하면 RM Studio에서 만든 모델 및 결과를 쉽게 공유, 재사용 및 운영할 수 있습니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b07aaea-1ec0-4b7d-bfcf-3dfe1b54b667.png"><img alt="RSA" border="0" height="59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61bed82b-fc38-4423-a391-176f1e55bfb9.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="RSA" width="59"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rsa-security-llc.rsa-nw-azure-broker?tab=Overview" target="_blank">RSA NetWitness Broker 10.6.4</a>: RSA NetWitness Broker는 다른 디바이스 및 이벤트 원본에서 캡처한 데이터를 집계합니다. Broker는 구성된 집중기에서 데이터를 집계합니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aac931a4-262e-4c83-9817-f5fe9b7020a4.png"><img alt="RSA" border="0" height="59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15a622e1-8b87-415b-894a-053c76b7f143.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="RSA" width="59"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rsa-security-llc.rsa-nw-azure-con?tab=Overview" target="_blank">RSA NetWitness Concentrator 10.6.4</a>: RSA NetWitness Concentrator는 네트워크 또는 로그 데이터에서 추출된 메타데이터를 인덱싱하고, 보고 및 경고를 용이하게 하면서 엔터프라이즈 전체 쿼리 및 실시간 분석에 사용할 수 있도록 합니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/294dc760-e05e-46b9-8068-e9eb849dc7b6.png"><img alt="RSA" border="0" height="59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/293cbefb-253b-4014-a192-40e5b9f26c9c.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="RSA" width="59"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rsa-security-llc.rsa-nw-azure-esa?tab=Overview" target="_blank">RSA NetWitness 이벤트 스트림 분석 10.6.4</a>: RSA NetWitness ESA 호스트는 높은 처리량과 짧은 대기 시간으로 상관 관계 및 복잡한 이벤트 처리와 같은 고급 스트림 분석을 제공합니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53dfc78d-0926-47c3-809a-60f5cecc4061.png"><img alt="RSA" border="0" height="59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1efb983a-6679-4e77-9965-280f848f72a8.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="RSA" width="59"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rsa-security-llc.rsa-nw-azure-ldec?tab=Overview" target="_blank">RSA NetWitness 로그 디코더 10.6.4</a>: RSA NetWitness 로그 디코더는 수백 개의 디바이스 및 이벤트 원본에서 로그 이벤트를 수집하고 실제 버전과 동일한 광범위한 기능과 기능을 제공합니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/45bad523-72f3-4443-8370-3f90f57f70cd.png"><img alt="RSA" border="0" height="59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5bc7ba25-d343-4297-900a-9a5ba596d2da.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="RSA" width="59"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rsa-security-llc.rsa-nw-azure-vlc?tab=Overview" target="_blank">RSA NetWitness 가상 로그 수집기 10.6.4</a>: RSA NetWitness VLC는 현재 지원되는 이벤트 원본 및 프로토콜에서 로그를 수집하는 호스트입니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3e28969e-b937-4b9f-b195-cb03945ae2d6.png"><img alt="RSA" border="0" height="59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/32d0aec8-8c51-4cfb-b6f1-dbf57d4a9b20.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="RSA" width="59"></a></td>
+     <td valign="top" width="1981">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/rsa-security-llc.rsa-nw-azure-arch?tab=Overview" target="_blank">RSA NetWitness Archiver 10.6.4</a>: RSA NetWitness Archiver는 로그 데이터를 인덱싱 및 압축하고 보관 스토리지로 전송하여 장기 로그 보관을 가능하게 하는 호스트입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1bf52a93-1e26-4ed0-a57a-80cf802154e1.png"><img alt="Wardy it" border="0" height="62" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8990bf32-3acb-443d-9dad-2be4b131cb89.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="그것을 와드" width="62"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wardy-it-solutions.sqlbeacon?tab=Overview" target="_blank">SQL 비콘</a>: SQL 비콘은 단일 인스턴스에서 전체 조직의 SQL 서버를 모니터링하므로 DBA는 종종 수행할 시간이 없는&rsquo; 모범 사례 검사를 완전히 잊어버릴 수 있습니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d00bf4fa-bf63-4189-a559-d25b97c94fcb.png"><img alt="Delphix" border="0" height="61" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7f729853-fda6-445f-b3f7-593d80c1e1e6.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Delphix" width="61"></a></td>
+     <td valign="top" width="1981">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/delphix.delphix_dynamic_data_platform?tab=Overview" target="_blank">Azure용 Delphix 동적 데이터 플랫폼</a>: Delphix Dynamic Data Platform을 사용하면 애플리케이션 및 솔루션의 신속한 개발 및 제공을 가능하게 하는 데 필요한 속도로 클라우드, 하이브리드 및 온-프레미스 환경에서 모든 관련자에게 데이터를 안전하게 전달할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/75135f06-1d95-40e2-9586-863314123063.png"><img alt="OmniOS" border="0" height="59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6a2c3c1d-ab69-4665-b10c-9387e2ba51cb.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="OmniOS" width="59"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/delphix.omniosce?tab=Overview" target="_blank">OmniOS Community Edition</a>: OmniOS Community Edition Association(OmniOSce)는 관련된 모든 당사자의 이익을 위해 OmniOS의 지속적인 지원 및 릴리스에 전념하는 스위스 협회입니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/56c12253-316a-4b54-8312-f0d2a72b28f9.png"><img alt="CIS" border="0" height="54" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bb0836d6-4849-460d-b321-545a1f8cb250.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="CIS" width="54"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/center-for-internet-security-inc.cis-windows-server-2008-r2-v3-0-1-l1?tab=Overview" target="_blank">CIS Windows Server 2008 R2 벤치마크 v3.0.1.5 - L1</a>: 이 Microsoft Windows Server 2008 R2 인스턴스는 CIS 벤치마크에 따라 강화됩니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/58643737-46de-4b01-a81d-0b736f872388.png"><img alt="CIS" border="0" height="54" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9959ea2d-2eff-4c5c-9e14-2ad22de37857.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="CIS" width="54"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/center-for-internet-security-inc.cis-windows-server-2008-r2-v3-0-1-l2-?tab=Overview" target="_blank">CIS Windows Server 2008 R2 벤치마크 v3.0.1.5 - L2</a>:&nbsp; 이 Microsoft Windows Server 2008 R2 인스턴스는 CIS 벤치마크에 따라 강화됩니다. CIS에서 규정한 신뢰할 수 있는 보안 구성 기준에 따라 강화된 이미지를 실행하면 조직에 대한 비용, 시간 및 위험을 줄일 수 있습니다.&nbsp;</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4f39de28-ef71-4913-8611-327f81eae046.png"><img alt="CIS" border="0" height="54" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/60bce77b-28bd-48d3-9968-da78c36ae4b8.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="CIS" width="54"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/center-for-internet-security-inc.cis-windows-server-2012-v2-0-1-l1?tab=Overview" target="_blank">CIS Windows Server 2012 Benchmark v2.0.1.5 - L1</a>: 이 Microsoft Windows Server 2008 R2 인스턴스는 CIS 벤치마크에 따라 강화됩니다. CIS에서 규정한 신뢰할 수 있는 보안 구성 기준에 따라 강화된 이미지를 실행하면 조직에 대한 비용, 시간 및 위험을 줄일 수 있습니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8512076c-f198-46c7-9323-d6cbfa4293ee.png"><img alt="CIS" border="0" height="54" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/850a1742-cfc1-4bda-9dc4-e5ed318658b0.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="CIS" width="54"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/center-for-internet-security-inc.cis-windows-server-2012-v2-0-1-l2?tab=Overview" target="_blank">CIS Windows Server 2012 Benchmark v2.0.1.5 - L2</a>: Microsoft Windows Server 2008 R2의 이 인스턴스는 CIS 벤치마크에 따라 강화됩니다. CIS에서 규정한 신뢰할 수 있는 보안 구성 기준에 따라 강화된 이미지를 실행하면 조직에 대한 비용, 시간 및 위험을 줄일 수 있습니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a1a51e1c-1c5b-48f5-a796-7f7da48d1c42.png"><img alt="CIS" border="0" height="54" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2ae1f2e-23b4-4c98-96f6-73865d1e937c.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="CIS" width="54"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/center-for-internet-security-inc.cis-windows-server-2016-v1-0-0-l1?tab=Overview" target="_blank">CIS Windows Server 2016 Benchmark v1.0.0.4 - L1</a>: Microsoft Windows Server 2008 R2의 이 인스턴스는 CIS 벤치마크에 따라 강화됩니다. CIS에서 규정한 신뢰할 수 있는 보안 구성 기준에 따라 강화된 이미지를 실행하면 조직에 대한 비용, 시간 및 위험을 줄일 수 있습니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ef537589-db2c-4b33-9955-cb335ec17069.png"><img alt="Pilot Things IoT VPN" border="0" height="62" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/40536a5e-b82b-4f1c-bece-a138b85e4723.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="파일럿 사물 IoT VPN" width="62"></a></td>
+     <td valign="top" width="1981">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/src-solution.pilot-things-iot-vpn?tab=Overview" target="_blank">파일럿 작업 IoT VPN</a>: 몇 번의 클릭으로 전 세계 IoT VPN을 빌드하여 복잡성을 줄입니다.&nbsp;</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4fb069cc-01f8-4287-9e24-fc2861172a4f.png"><img alt="FlashGrid" border="0" height="64" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5e3f8b30-a197-4181-986e-7d5c2addac1a.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="FlashGrid" width="64"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/flashgrid-inc.flashgrid-ol7?tab=Overview" target="_blank">Oracle RAC용 FlashGrid 노드(OL 7 기반)</a> : VM 이미지에는 FlashGrid 소프트웨어가 포함되어 있으며 Oracle 실제 애플리케이션 클러스터 노드를 만드는 데 사용할 수 있습니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="315"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c5d1ee50-5bec-4831-aefa-b4a14805abed.png"><img alt="Kobalt Software" border="0" height="64" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c7208ea6-afa8-48fe-8f9b-8e9427952391.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Kobalt Software" width="64"></a></td>
+     <td valign="top" width="1981"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/kobalt.certify-vm?tab=Overview" target="_blank">CERTIFY</a>: Certify 스마트 도구는 의료 기기에 적용되는 표준 요구 사항을 식별하고 해당 위험 및 기술 요구 사항을 자동으로 만듭니다.</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h3>솔루션 템플릿</h3>
+
+
+  <table border="1" cellpadding="2" cellspacing="0" width="2293">
+   <tbody>
+    <tr>
+     <td valign="top" width="313"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bdbdd82a-08d9-407c-b672-e9a3ca215592.png"><img alt="Kyligence Analytics Platform" border="0" height="72" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cbd02db2-d57a-4c23-9c42-dcfa2ff284a8.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Kyligence Analytics 플랫폼" width="72"></a></td>
+     <td valign="top" width="1978"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/kyligence.kap?tab=Overview" target="_blank">Kyligence Analytics Platform 2.3</a>: KYligence Analytics Platform(KAP)은 Apache Kylin 및 Apache Hadoop에서 제공하는 엔터프라이즈 지원 빅 데이터 제품입니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="313"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c9b72f52-9204-48c0-8230-1571aea844cc.png"><img alt="Parity" border="0" height="58" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3b45503d-66bc-4f58-9b0e-171a404e39d6.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="패리티" width="58"></a></td>
+     <td valign="top" width="1978">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ethcore.parity-etherum-failover-kovan?tab=Overview" target="_blank">Parity Ethereum 장애 조치(failover) Kovan</a>: 이 패리티 인스턴스는 고가용성을 보장하기 위해 Kovan 네트워크 기관에서 사용됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="313"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7ade2e92-5c63-42d3-8b8d-dabeada62927.png"><img alt="Versio" border="0" height="62" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c7feeb1b-bb0d-4e92-81b5-b404c12dd463.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Versio" width="62"></a></td>
+     <td valign="top" width="1978"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/imaginecommunications.versio?tab=Overview" target="_blank">Versio&trade; 플랫폼</a>: Versio&trade; 는 Azure 클라우드에서 실행되는 100% 소프트웨어인 클라우드 플랫폼의 고급 완전 IP 지원 통합 플레이아웃입니다.&nbsp;</td>
+    </tr>
+    <tr>
+     <td valign="top" width="313"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67155ff4-1555-45f2-b0a9-2b093b082f30.png"><img alt="Hortonworks" border="0" height="66" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/46aaaddc-e5c4-413c-a17c-fbf1a409d634.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Hortonworks" width="66"></a></td>
+     <td valign="top" width="1978"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/hortonworks.cloudbreak-for-hortonworks-data-platform?tab=Overview" target="_blank">Hortonworks 데이터 플랫폼용 Cloudbreak</a>: 클라우드 환경에서 HDP 클러스터의 프로비저닝, 관리 및 모니터링을 간소화합니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="313"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67b27b44-e7a9-4878-bb5e-faa9436482ed.png"><img alt="Veritas" border="0" height="64" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/841fd827-c00f-4a60-8bd8-65a2707d2efe.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Veritas" width="64"></a></td>
+     <td valign="top" width="1978"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veritas.veritas-netbackup-8-s?tab=Overview" target="_blank">Veritas NetBackup&trade; 8.0</a>: Microsoft Azure 클라우드 플랫폼에서 비즈니스를 더 발전시키고자 하는 대규모의 복잡하고 다른 유형의 다중 클라우드 환경을 가진 기업에 대한 통합 데이터 보호를 제공합니다.</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>- Azure Marketplace 팀</p>

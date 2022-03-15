@@ -1,0 +1,80 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1154340d86c98116119cb15b29d5864fd9160c02
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911568"
+Slug: tensorflow-2-0-on-azure-fine-tuning-bert-for-question-tagging
+Title: 'Azure의 TensorFlow 2.0: 질문 태그 지정을 위한 BERT 미세 조정'
+Summary: TensorFlow 2.0 릴리스에 대한 TensorFlow 커뮤니티를 축하합니다. 이 블로그에서는 Azure에서 TensorFlow 모델의 빌드, 교육 및 배포를 간소화할 수 있는 몇 가지 방법을 강조합니다.
+Content: >-
+  <p><em>이 게시물은 아베 오모로그베, 프로그램 관리자, Azure Machine Learning, 존 우, 프로그램 관리자, Azure Machine Learning</em></p>
+
+
+  <p>TensorFlow 2.0 <a href="https://medium.com/tensorflow/tensorflow-2-0-is-now-available-57d706c2a9ab" target="_blank">릴리스</a> 에 대한 TensorFlow 커뮤니티를 축하합니다. 이 블로그에서는 Azure에서 TensorFlow 모델의 빌드, 교육 및 배포를 간소화할 수 있는 몇 가지 방법을 강조합니다. 이 블로그를 읽는 것 외에도 아래에 설명된 <a href="https://aka.ms/tf2_azureml" target="_blank">데모를 확인</a> 하여 Azure에서 TensorFlow 2.0을 사용하여 질문에 자동으로 태그를 지정하기 위해 BERT(변환기의 양방향 인코더 표현) 모델을 미세 조정하는 방법을 보여 줍니다.</p>
+
+
+  <p>TensorFlow 1.x는 실무자가 대규모로 딥 러닝 모델을 빌드하고 실행할 수 있는 강력한 프레임워크입니다. TensorFlow 2.0은 <a href="https://keras.io/" target="_blank">Keras</a>(신경망을 빌드하기 위한 라이브러리)와<a> </a> 더 긴밀하게 통합하고, 기본적으로 열망 모드를 사용하도록 설정하고, 간소화된 API 표면을 구현하여 TensorFlow 1.x의 기능을 기반으로 합니다.</p>
+
+
+  <h2>Azure의 TensorFlow 2.0</h2>
+
+
+  <p>Tensorflow 2.0을 <a href="https://azure.microsoft.com/services/machine-learning-service/" target="_blank"><b>Azure Machine Learning 서비스와</b></a> 통합하여 TensorFlow 워크로드를 Azure로 최대한 원활하게 가져올&#39;있습니다. Azure Machine Learning 서비스는 Azure의 단일 VM(가상 머신), Azure의 GPU(그래픽 처리 장치) 클러스터 또는 로컬 머신을 포함하여 원하는 프레임워크에서 기계 학습 모델을 작성하고 선택한 컴퓨팅 대상에서 실행할 수 있는 SDK를 제공합니다. Python용 Azure Machine Learning SDK에는 선택한 모든 컴퓨팅 대상에서 TensorFlow 학습 스크립트를 쉽게 실행할 수 있는 전용 <a href="https://docs.microsoft.com/python/api/azureml-train-core/azureml.train.dnn.tensorflow?view=azure-ml-py" target="_blank">TensorFlow 추정기가</a> 있습니다.</p>
+
+
+  <p>또한 <a href="https://azure.microsoft.com/en-ca/blog/three-things-to-know-about-azure-machine-learning-notebook-vm/" target="_blank">Azure Machine Learning 서비스 Notebook VM</a>에는 TensorFlow 2.0이 미리 설치되어 있어 TensorFlow 2.0을 사용하는 Jupyter Notebook을 쉽게 실행할 수 있습니다.</p>
+
+
+  <h2>Azure 데모의 TensorFlow 2.0: TF 2.0, Azure 및 BERT를 사용하여 질문의 자동화된 레이블 지정</h2>
+
+
+  <p>앞서&rsquo; 설명한 것처럼 TensorFlow 2.0을 사용하면 딥 러닝 모델 빌드를 쉽게 시작할 수 있습니다. Azure에서 TensorFlow 2.0을 사용하면 애플리케이션에 관계없이 Microsofts&rsquo; 글로벌 엔터프라이즈급 클라우드의 성능 이점을 쉽게 얻을 수 있습니다.</p>
+
+
+  <p>Azure에서 TensorFlow 2.0의 엔드투엔드 사용을 강조하기 위해 TensorFlow 2.0을 사용하여 <a href="https://github.com/google-research/bert" target="_blank">BERT</a> 모델을 학습하여 온라인에서 묻는 질문에 대한 태그를 제안하는 <a href="https://conferences.oreilly.com/tensorflow/tf-ca/public/schedule/detail/79338" target="_blank">TensorFlow World</a>에서 제공되는 워크샵을 준비했습니다. 전체 <a href="https://github.com/microsoft/bert-stack-overflow" target="_blank">GitHub 리포지토리</a>를 확인하거나 아래의 상위 수준 개요를 참조하세요.</p>
+
+
+  <h3>데모 목표</h3>
+
+
+  <p>Azure 엔지니어링 팀은 Microsofts&rsquo;가 <a href="https://www.microsoft.com/security/blog/2019/06/24/5-principles-driving-customer-obsessed-identity-strategy-microsoft/" target="_blank">고객에 대한 집착을 강조</a>하면서 온라인 포럼에서 사용자 질문에 답변하는 데 도움을 주려고 노력합니다. Azure 팀은 질문이 존재한다는 것을 알고 있는 경우에만 질문에 답할 수 있으며, 새로운 질문에 대한 경고를 받는 방법 중 하나는 사용자 적용 태그를 감시하는 것입니다. 사용자는 항상 지정된 질문에 적용할 수 있는 최상의 태그를 알지 못할 수 있으므로 AI 에이전트가 새 질문에 적합한 태그를 자동으로 제안하도록 하는 것이 도움이 됩니다.</p>
+
+
+  <p>새로운 Azure 관련 질문에 자동으로 태그를 지정하도록 AI 에이전트를 학습시키는 것을 목표로 합니다.</p>
+
+
+  <h3>학습</h3>
+
+
+  <p>먼저 <a href="https://aka.ms/tfworld_training" target="_blank">학습 전자 필</a>기장을 확인합니다. <a href="https://azure.microsoft.com/services/databricks/" target="_blank">Azure Databricks</a>에서 데이터를 준비한 후 Azure Machine Learning 서비스 TensorFlow Estimator 클래스를 사용하여 Azure GPU 클러스터에서 Keras 모델을 학습시킵니다. Keras, TensorFlow 및 Azures&rsquo; 컴퓨팅 인프라를 통합하는 것이 얼마나 쉬운지 확인합니다. 실행 개체를 사용하여 학습 진행률을 쉽게 모니터링할 수 있습니다.</p>
+
+
+  <h3>유추</h3>
+
+
+  <p>다음으로 <a href="https://aka.ms/tfworld_inferencing" target="_blank">추론 Notebook</a>을 엽니다. Azure를 사용하면 학습된 TensorFlow 2.0 모델을 REST 엔드포인트로 간단하게 배포하여 새 질문과 관련된 태그를 가져올 수 있습니다.</p>
+
+
+  <h3>Machine Learning 작업</h3>
+
+
+  <p>다음으로 <a href="https://aka.ms/tfworld_mlops" target="_blank">Machine Learning 작업 지침을</a> 엽니다. 프로덕션 설정에서 모델을 사용하려는 경우 Microsoft의 제품인 <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-model-management-and-deployment" target="_blank">ML Ops</a>를 통해 파이프라인에 추가적인 견고성을 제공할 수 있습니다. 이 제품은 기계 학습에 DevOps 사고방식을 제공하므로 여러 데이터 과학자가 동일한 모델에서 작업하면서 특정 기준을 충족하는 모델만 프로덕션에 배치되도록 할 수 있습니다.</p>
+
+
+  <h3>다음 단계</h3>
+
+
+  <p>TensorFlow 2.0은 이전과 새로운 딥 러닝 실무자를 위한 흥미로운 새로운 지평을 열어줍니다. 시작하려면 다음 리소스를 확인하세요.</p>
+
+
+  <ul>
+      <li><a href="https://medium.com/tensorflow/tensorflow-2-0-is-now-available-57d706c2a9ab" target="_blank">TensorFlow 2.0 공지</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/python/api/azureml-train-core/azureml.train.dnn.tensorflow?view=azure-ml-py" target="_blank">Azure의 TensorFlow 추정기</a></li>
+  </ul>
+
+
+  <hr align="left" size="1" width="33%">
+
+  <p><a name="_msocom_1"></a></p>

@@ -1,0 +1,31 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 70687b1cde95c7d4dddb0168d3d5c8dca34193bd
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905874"
+Slug: isvs-find-their-cloud-footing-on-azure
+Title: 'ISV는 Azure에서 클라우드 발판을 찾습니다. '
+Summary: >
+  이 게시물은 ISV 팀에서 작성합니다. Gartner는 "2020년까지 새로운 IT 이니셔티브에 대한 클라우드 전용 전략 이외의 다른 것은 대기업 조직의 30% 이상에서 정당화가 필요할 것"이라고 말합니다. 혁신이 퍼블릭 데이터 센터로 전환함에 따라 ISV는 자체 클라우드 로드맵을 개발해야 한다는 압박을 받고 있습니다.
+Content: >-
+  <p><em>이 게시물은 ISV 팀에서 작성합니다. </em></p>
+
+
+  <p>Gartner &ldquo;에 따르면 2020년까지 새로운 IT 이니셔티브에 대한 클라우드 전용 전략 이외의 다른 것은 대기업 조직의 30% 이상에서 정당화가 필요합니다.&rdquo; 혁신이 퍼블릭 데이터 센터로 전환함에 따라 ISV는 자체 클라우드 로드맵을 개발해야 한다는 압박을 받고 있습니다.</p>
+
+
+  <p>클라우드로 이동하는 것은 큰 단계이지만 생각보다 더 쉬울 수 있습니다. Microsoft Azure 플랫폼에는 비즈니스 혁신을 가속화하는 다양한 옵션이 있습니다. 사용 약관에 따라 클라우드로 이동하고, 거기에서 하늘&rsquo;이 한계를 만듭니다.</p>
+
+
+  <p>예를 들어 600개 이상의 은행과 신용 조합에 대한 기술 솔루션 공급자인 <a href="https://assets.contentful.com/jbgby94eivkz/1RK6VFFrCkQYIs0OymqaIu/3699d0d98bcdfc8dbbe01e7a89fe9bdb/Microsoft_Breadth_Case_Studies_Baker_Hill.pdf">Baker Hill</a> 은 이전 에이전트를 사용하거나 원래 데이터 센터에서 아무 것도 건드리지 않고 48시간 만에 모회사&rsquo; 데이터 센터에서 10테라바이트 이상의 데이터를 이동해야 했습니다. Microsoft의 도움으로 Baker Hill은 Equinixs&rsquo; 고속 네트워크에 연결된 Azure ExpressRoute를 사용하여 여유 시간이 있는 수백 개의 데이터베이스를 마이그레이션했습니다. 그리고 이제 Baker Hill이 마이그레이션 마감일을 맞이했으므로 회사는 Azure를 사용하여 제품을 계속 변환하고 있습니다.</p>
+
+
+  <p>또 다른 시나리오에서는 전 세계 고객에게 클라우드 기반 판매 준비 및 교육 플랫폼을 제공하는 <a href="https://assets.contentful.com/jbgby94eivkz/27LJubvLPumKIOicooeQcW/9942d0e51025b138b18c949e459ca5df/Microsoft_Brainshark_CaseStudy.pdf">Brainshark</a> 는 계속 확장되는 비디오 콘텐츠 볼륨을 처리하기 위한 보다 탄력적인 솔루션을 찾아야 했습니다. 스토리지 및 처리 제약 조건을 제거하기 위해 Brainshark는 Azure로 이동했습니다. 최종 사용자 환경을 개선하는 것 외에도 전환으로 유지 관리 비용이 사실상 제거되었습니다. 그러나 그것은 단지 첫 번째 단계였습니다. 다음으로, 이 회사는 웨어러블 기술, 가상 현실 및 인공 지능을 포함하는 차세대 판매 지원 솔루션의 인큐베이터인 <a href="https://www.prnewswire.com/news-releases/brainshark-launches-brainshark-labs-at-microsoft-build-2017-300455218.html">Brainshark Labs</a>를 만들었습니다. 이 혁신의 다음 챕터를 위해 Brainshark는 Azure Cognitive Services를 HoloLens 혼합 현실 시뮬레이션 기술과 통합하여 판매 교육 및 고객 참여를 혁신했습니다.</p>
+
+
+  <p>다음은 Microsoft 기술을 사용한 많은 성공 사례 중 두 가지에 불과합니다. 추가할 준비가 되셨나요?</p>
+
+
+  <p><a href="https://aka.ms/isv">Microsoft와의 파트너 관계를</a> 자세히 알아봅니다.</p>

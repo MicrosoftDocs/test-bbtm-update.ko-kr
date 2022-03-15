@@ -1,0 +1,70 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b0ea02c31d1bfc6ffbf1c5b85decd1f87d6222e8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906046"
+Slug: cloud-takes-off-at-the-microsoft-azure-conference-2015-in-pune-india
+Title: 인도 푸네에서 열린 Microsoft Azure 컨퍼런스 2015에서 클라우드가 이륙했습니다.
+Summary: 이 게시물에서는 인도 푸네에서 열린 2015년 Microsoft Azure 컨퍼런스의 흥미로운 하이라이트에 대해 설명합니다!
+Content: >-
+  Microsoft 클라우드 포트폴리오의 필수 불가결한 부분인 Azure는 수천 개의 기업이 클라우드 퍼스트 비전을 향해 나아가는 디딤돌입니다. 2015년 3월 18일과 19일 인도 푸네에서 개최된 2015 Microsoft Azure 컨퍼런스는 Microsoft 인도가 고객과 파트너가 모바일 우선 클라우드 우선 세계에서 비즈니스를 혁신할 수 있도록 Azure의 비전, 전략, 비즈니스 가치, 제품 및 기술 세부 사항을 논의할 수 있는 완벽한 지점이었습니다.
+
+
+  6개의 하루 종일 트랙과 65회의 세션을 통해 컨퍼런스에는 청중과의 대화형 대화에서 지원하는 발표자가 심층 기술 회담과 실습 경험을 흥미진진하게 혼합하여 전달했습니다.
+
+
+  흥미로운 하이라이트 중 일부는 아래에 포함되어 있으며 더 많은 것을 확인하기 위해 <a href="https://azure.microsoft.com/blog/2015/04/22/cloud-experts-enthusiasts-come-together-to-learn-at-india-microsoft-azure-conference-2015-pune">Sarvashrestha Paliwal</a> 의 최근 게시물로 향하는 것이 좋습니다!
+
+  <h2>개방성에 대한 Community 원탁 회의</h2>
+
+  Mark Hill은 오픈 소스 개발자 커뮤니티 원탁 회의 개최를 통해 오픈 소스가 Microsoft의 비전에 필수적임을 강조하고 애플리케이션 플랫폼 요구 사항에 대한 고객의 선택의 자유를 간략하게 설명한 Microsoft의 "개방성" 전략에 참석자를 소개했습니다. 또한 Microsoft가 표준에 기여하고, 오픈 소스 커뮤니티와 더 잘 협력하기 위해 Azure &amp; 에서 더 많은 오픈 소스 워크로드를 온보더에 탑재하기 위해 수행하는 작업을 설명했습니다.
+
+  오픈 소스 커뮤니티는 Mark와의 연결과 토론 중에 제공된 훌륭한 인사이트를 높이 평가했습니다.
+
+  <h2>비즈니스 의사 결정자 트랙</h2>
+
+  컨퍼런스에 데뷔한 것은 최고 재무 책임자, 최고 제품 책임자, 최고 마케팅 책임자 및 최고 인사 책임자가 각 트랙에서 피어 투 피어 연결을 포함하는 비즈니스 의사 결정권자를위한 전문 참여였습니다. "새로운 시대 기술에 대한 금융 모델"과 "가치 창출자로서 CPO의 진화"에서 "분석 기반 엔터프라이즈", "HR의 디지털 변환"에 이르기까지 다양한 주제를 다루면서 클라우드 우선, 모바일 퍼스트 월드의 모든 비즈니스 핵심 핵심 요소의 변화를 설명하는 다양한 주제를 다루었습니다.
+
+  <h2>기본 기술 트랙</h2>
+
+  주요 기술 트랙의 일부로 컴퓨팅, 네트워킹, Data Services &amp; App Services에 걸쳐 있는 콘텐츠입니다. 클라우드에서 신뢰 구축, Enterprise Mobility, Azure의 Docker 컨테이너, Azure의 Linux 및 오픈 소스 워크로드, 클라우드로 데이터베이스 마이그레이션, 빅 데이터 및 Machine Learning 및 IoT와 같은 핫 토픽은 많은 관심을 끌었습니다. Azure Vs. AWS에 대한 토론은 청중들 사이에서 많은 토론을 했고 Azure의 기능에 대한 신화적인 버스터 역할을 했으며 클라우드 솔루션에 대한 선택의 플랫폼으로 Azure를 설정했습니다.
+
+  <h2>실습 랩</h2>
+
+  학습의 어떤 형태는 직접 일을 연습하여 기술로 더러운 손을 얻는 것보다 낫다. 이 컨퍼런스는 참가자들이 일반적인 작업을 완료하고, 감독하고, 해당 분야의 전문가에 의해 조달하기 위해 미리 정의된 절차 세트를 통해 진행하도록 만들어진 10개의 실습 실습을 자랑했습니다. 예를 들어 여기에는 Azure에 Linux 및 LAMP Stack 솔루션 배포, 알림 허브 및 애플리케이션 인사이트를 사용하여 온-프레미스 데이터베이스를 SQL Azure 마이그레이션 등이 포함됩니다.
+
+  <h2>Chalk-Talks</h2>
+
+  클라우드를 디자인하려면 기존 아키텍처 패턴에서 상당한 마음가짐을 전환해야 합니다. 컨퍼런스의 분필 회담은 클라우드의 솔루션에 대한 실제 사례 연구 및 시나리오를 통해 청중을 안내하기 위해 고안되었습니다. AWS -&gt; Azure 마이그레이션, 하이브리드 클라우드 시나리오에서 Docker를 사용하여 Azure에서 DevOps 것까지, 분필 회담은 자신의 경험, 모범 사례 및 성공을 위한 팁을 공유한 참가자들 간의 치열한 토론을 가져왔습니다.
+
+  <h2>사물 인터넷: 인도 최초의 IoT 쇼케이스</h2>
+
+  IOT 경쟁 및 솔루션 쇼케이스, 빅 데이터, 미들웨어 및 백 엔드 서비스를 위한 Azure의 힘은 전 세계가 볼 수 있도록 전시되었습니다. 약 175개의 출품작이 접수되고 평가되었으며, 그 중 30개의 솔루션이 선택되었으며 IoT Kits에서 솔루션을 개발했습니다. 이러한 솔루션 중 5개는 약 1,500명의 대면 사용자와 55,000명의 가상 사용자 앞에서 상을 받았습니다.
+
+  <h2>The Azure Night</h2>
+
+  이 All-Night 해커톤은 전문가가 시연한 <strong>37개 서비스 공유에서 약 170개의</strong>  Azure 기능과 150명 이상의 대상을 대상으로 하는 활성 QA&amp;를 제공합니다. 또한 다음 날 아침 관객에게 제공되는 밤을 통해 약 9 개의 솔루션이 구축되었습니다.모든 참석자는 인증서가 "<strong>Azure Ready</strong>"인 상태로 남아 있으며 많은 선행이 있습니다!
+
+
+  또한 250개 도시에 걸쳐 10,000개의 SMB가 클라우드로 전환할 수 있도록 파트너에게 도움을 주는 클라우드 교육 프로그램인 <strong>Azure Vidyapeeth 및 GuruVarta</strong>와 같은 다양한 흥미로운 이니셔티브를 시작했습니다.
+
+  <h2>헤드라인 만들기</h2>
+
+  <h2><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/clip_image001.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="clip_image001" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image001_thumb.jpg" alt="clip_image001" width="290" height="169" border="0" /></a>  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/clip_image002.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="clip_image002" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image002_thumb.jpg" alt="clip_image002" width="298" height="171" border="0" /></a></h2>
+
+  <h2><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/image.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="이미지" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image_thumb.png" alt="image" width="764" height="138" border="0" /></a></h2>
+
+  <h2>컨퍼런스를 엿볼 수 있습니다.</h2>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/clip_image00110.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="145 해커가 Azure Night에 참석" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image00110_thumb.jpg" alt="Microsoft Azure Conference 2015" width="296" height="170" border="0" /></a>   <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/clip_image00112.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="170개의 Azure 기능 데모 및 9가지 솔루션 빌드" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image00112_thumb.jpg" alt="Microsoft Azure Conference 2015" width="294" height="169" border="0" /></a> 145명의 해커가 Azure Night 170 Azure 기능 데모 및 빌드된 9개 솔루션에 참석합니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/MG_2339.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="오전 4:30 - 해커는 밤새 세심했다" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/MG_2339_thumb.jpg" alt="Microsoft Azure Conference 2015" width="290" height="193" border="0" /></a>  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/DSC_0329.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="App Track의 꽉 찬 방" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DSC_0329_thumb.jpg" alt="Microsoft Azure Conference 2015" width="290" height="193" border="0" /></a> 오전 4시 30분 : 해커는 응용 프로그램 트랙에서 밤새 포장 된 방을 세심했다 <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/DSC_0044.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="130명의 참석자가 있는 비즈니스 트랙" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DSC_0044_thumb.jpg" alt="Microsoft Azure Conference 2015" width="290" height="193" border="0" /></a>    <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/3C3A0022.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="컴퓨팅 및 데이터를 위한 더 큰 홀이 꽉 찼습니다." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3C3A0022_thumb.jpg" alt="Microsoft Azure Conference 2015" width="288" height="193" border="0" /></a> 최대 130명의 참석자가 컴퓨팅 및 데이터를 위해 더 큰 홀을 포장한 비즈니스 트랙 <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/DSC_0046.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="전문가가 진행하는 실습 랩" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DSC_0046_thumb.jpg" alt="Microsoft Azure Conference 2015" width="296" height="198" border="0" /></a>   <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/02/DSC_0697.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="컨퍼런스의 쇼케이스 영역" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DSC_0697_thumb.jpg" alt="Microsoft Azure Conference 2015" width="297" height="198" border="0" /></a> 전문가에 의해 프록터링 실습 실습 회의에서 영역을 쇼케이스
+
+
+  전반적으로, 그것은 회의를 준비하고 이틀 동안 그것을 실행하는 정말 좋은 몇 달이었다. 이 컨퍼런스의 큰 성공은 Microsoft의 로컬 데이터 센터 제공 제안과 함께 국내 클라우드 산업에 엄청난 도약입니다. 이 컨퍼런스는 디지털 인도 고객 경험을 클라우드 채택을 선도하는 Microsoft와 함께 거대한 판도를 바꾸는 단계로 만들기 위한 한 걸음이었습니다.
+
+
+  우리가 혁신해야 할 아이디어 나 다른 영역이 있다면, 외치십시오!
+
+
+  Aditee Rele @aditeerele

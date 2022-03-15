@@ -1,0 +1,127 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 21801126577cf5e0b9895cdbcc3cd508073da253
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912410"
+Slug: run-your-core-applications-on-azure
+Title: Azure에서 핵심 애플리케이션 실행
+Summary: 이번 주 Microsoft Ignite에서는 점점 더 많은 고객과 ISV(독립 소프트웨어 공급업체)가 Azure에서 업무용 및 중요 비즈니스용 애플리케이션을 실행하는 방법에 대해 설명했습니다.
+Content: >-
+  <p>이번 주 <a href="https://aka.ms/NavneetIgnite2020Session" target="_blank">Microsoft Ignite</a>에서는 점점 더 많은 고객과 ISV(독립 소프트웨어 공급업체)가 Microsoft Azure 업무용 및 중요 비즈니스용 애플리케이션을 실행하는 방법에 대해 논의했습니다.</p>
+
+
+  <p>고객 전체에서 업무와 중요 비즈니스용 시스템을 연결하는 공통 스레드는 핵심 비즈니스 프로세스를 지원한다는 것입니다. 예를 들어 ERP(엔터프라이즈 리소스 계획), SCM(공급망 관리), CRM(고객 관계 관리) 애플리케이션뿐만 아니라 분석, 전자 상거래 시스템, 재무 관리, 조달 및 결제와 같은 기록 시스템 등이 있습니다. 이제 그 어느 때보다 디지털화된 고객 환경을 지원하는 시스템도 비즈니스 성공에 매우 중요합니다.</p>
+
+
+  <ul>
+      <li>JetBlue와 같은 조직은 전자 상거래 사이트와 같은 기존의 중요 비즈니스용 애플리케이션 및 예측 모델을 사용하여 전체 고객 환경을 개선하는 Azure를 사용합니다.</li>
+      <li><a href="https://customers.microsoft.com/en-us/story/allscripts-partner-professional-services-azure" target="_blank">Allscripts와</a> 같은 회사는 Azure에서 오픈 소스 소프트웨어를 사용하여 중요한 의료 관련 애플리케이션을 제공합니다.</li>
+      <li><a href="https://customers.microsoft.com/en-us/story/757588-manulife-insurance-azure-microsoft-365-teams" target="_blank">Manulife</a> 는 새로운 비즈니스 모델의 지원을 가속화하면서 민첩성, 확장성, 위험 관리 및 비용 효율성을 개선하기 위해 비즈니스에 중요한 애플리케이션을 마이그레이션하고 현대화하기 위해 Azure를 선택했습니다.</li>
+      <li><a href="https://customers.microsoft.com/en-us/story/792300-walgreens-boots-alliance-azure-sap-migration-technical-retailer" target="_blank">Walgreens Boots Alliance는</a> Azure에서 SAP HANA를 실행하며, 12TB의 메모리와 28TB의 스토리지가 있는 VM(가상 머신)을 사용하여 100TB 이상의 스케일 아웃 SAP 환경을 실행합니다.</li>
+  </ul>
+
+
+  <p>Azure에서 비즈니스를 실행하면 특히 불확실한 시기에 미래에 대비하고 비즈니스 복원력을 높이는 데 도움이 될 수 있습니다. 예를 들면, COVID-19의 케이스가 2020년 2월에 미국에서 상승하기 시작했을 때, 적응 생명 공학은 진단, 치료 및 백신을 개발하는 전 세계 연구원에게 이 정보를 공개적으로 유효하게 하기 위하여 COVID-19에 면역 반응을 매핑하기 위하여 그들의 면역 의학 플랫폼을 돌렸습니다.</p>
+
+
+  <p>몇 주 안에 적응형은 29년 계산 년을 사용하여 감염의 면역 서명을 식별하는 5억 개의 시퀀스를 처리했습니다. 그 결과, 적응형은 T 세포 신호가 감염 후 특정 시점에 COVID-19 바이러스에 대한 노출을 평가하는 최적의 마커가 될 수 있음을 보여주었으며, 이를 통해 회사는 세계&rsquo; 최초의 모든 질병에 대한 T 세포 기반 진단에 대한 FDA의 응급 사용 권한 부여를 추구하기 시작할 수 있었습니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&ldquo;Azures&rsquo; 클라우드 컴퓨팅 리소스 및 기계 학습 기능은 면역 의학 플랫폼에 전력을 공급하여 면역 세포 수용체를 COVID-19 및 라임 병과 같은 질병에 신속하게 매핑하고 차세대 진단에 연료를 공급할 수 있도록 합니다.&rdquo; </em>- 마크 애덤스, 적응 생명 공학 최고 기술 책임자</p>
+
+  </blockquote>
+
+
+  <h2>도전 과제 및 기회</h2>
+
+
+  <p>2020년 초, 우리는 포레스터의 부사장 겸 수석 애널리스트인 데이브 바르톨레티, 람키 라마스와미, JetBlue의 IT, 기술 및 통합 담당 부사장, Trimble Inc.의 소프트웨어 아키텍처 &amp; 전략 수석 부사장인 프라카시 아이어(Prakash Iyer)와 <a href="https://info.microsoft.com/ww-ondemand-azure-webinar-series-five-key-factors-in-migrating-mission-critical-workloads-to-the-cloud.html?lcid=en-us" target="_blank">함께 클라우드 마이그레이션 웨비나 시리즈에</a> 참여하게 되어 기뻤습니다. IT 조직이 현재 중요 업무용 인프라를 관리할 때 직면하는 주요 과제에 대해 설명했습니다. 보안 문제, 높은 비용 및 IT 전문가가 환경을 업데이트해야 할 때 직면하는 어려움을 가장 염두에 두고 있습니다.</p>
+
+
+  <p>&nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eb264860-7a06-46ea-ab92-5c7c0443c434.png"><img alt="MC1" border="0" height="329" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/70caf24a-0e34-48b0-9033-cf219905d9e9.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="MC1" width="727"></a><br>
+
+  반대로 중요 업무용 워크로드를 클라우드&rsquo;로 마이그레이션하여 기업이 실현한 주요 이점을 살펴보면 클라우드로의 전환이 이러한 많은 문제를 해결하는 데 도움이 되었다는 것을 분명히 알 수 있습니다. 그들이 인용한 가장 큰 이점은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>향상된 보안 및 규정 준수.</li>
+      <li>중요 업무용 시스템의 성능 및 대기 시간이 향상되었습니다.</li>
+      <li>민첩성 향상(기존 시스템 현대화, 새로운 기능 개발 포함)</li>
+      <li>전체 IT 비용이 감소했습니다.</li>
+      <li>인프라 구현 시간이 빨라집니다.</li>
+  </ul>
+
+
+  <p>따라서&rsquo; 이러한 모든 차원에 걸쳐 더 많은 기능을 지속적으로 제공하고 있으며, 앞서 Microsoft Ignite에서는 이해 관계자의 요구를 더 잘 충족하기 위해 몇 가지 새로운 IaaS(Infrastructure as a Service) 기능의 미리 보기를 발표했습니다&rsquo; .</p>
+
+
+  <h2>Azure에서 중요 비즈니스용 애플리케이션의 가용성, 보안, 확장성 및 성능을 향상시키는 새로운 핵심 IaaS 기능</h2>
+
+
+  <p>최근에 <a href="https://aka.ms/BusinessCritical" target="_blank">중요 비즈니스용 워크로드</a>의 요구 사항을 충족하는 몇 가지 새로운 기능을 발표했습니다.</p>
+
+
+  <h3>Azure 전용 호스트: 더 많은 제어, 유연성 및 선택</h3>
+
+
+  <p>이제 Azure 고객은 <a href="https://azure.microsoft.com/en-us/services/virtual-machines/dedicated-host/" target="_blank">전용 호스트</a> 및 격리된 VM(가상 머신)에서 플랫폼 유지 관리 작업을 예약할 수 있으며 Azure Virtual Machine Scale Sets의 게스트 OS 이미지 업데이트를 롤아웃할 수 있는 시기를 제어할 수 있습니다. 이제 Azure Dedicated Host는 <a href="https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/" target="_blank">Virtual Machine Scale Sets</a>를 지원하며, 고객은 플랫폼에서 VM을 배포할 호스트 그룹을 선택하도록 하여 전용 호스트에서 Azure Virtual Machines의 배포를 간소화할 수도 있습니다. 이러한 모든 새로운 기능은 <a href="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAEUB0xASRFUMVNXMlZVSFcyRE00QzBMRURWODVEVVVBWS4u" target="_blank">이제 미리 보기로 제공됩니다</a>. 마지막으로, 가까운 장래에 고객은 Fsv2 시리즈 VM을 사용하여 성능 향상을 위해 Intel Cascade Lake 프로세서가 포함된 Azure Dedicated Hosts에서 계산 집약적 워크로드를 실행할 수 있습니다.</p>
+
+
+  <h3>고성능 범용 및 메모리 최적화 가상 머신</h3>
+
+
+  <p>Microsoft는 또한 범용 및 메모리 집약적 워크로드를 위해 Intel Cascade Lake 프로세서를 갖춘 새로운 <a href="https://azure.microsoft.com/en-us/services/virtual-machines/" target="_blank">Azure Virtual Machines</a>를 최근에 출시했습니다. 따라서 이제 Azure는 로컬 임시 디스크를 포함하지 않으므로 항목 가격을 낮추는 새 범주의 VM을 제공합니다. 이러한 VM 시리즈는 이전 세대에 비해 최대 20% 더 큰 CPU 성능을 제공합니다.</p>
+
+
+  <h3>새 디스크 Storage 및 네트워킹 기능은 보안, 성능 및 가용성을 향상시킵니다.</h3>
+
+
+  <p>이제 일반 공급되는 새로운 <a href="https://azure.microsoft.com/en-us/services/storage/disks/" target="_blank">Azure Disk Storage</a> 업데이트에는 보안을 강화하기 위해 프라이빗 가상 네트워크를 통해 데이터를 안전하게 가져오고 내보낼 수 있는 Azure Private Link 통합과 이전 버전의 Oracle&reg; DB와 같은 레거시 워크로드를 클라우드로 마이그레이션할 수 있도록 Azure Ultra Disks의 512E 지원이 포함됩니다. 자세한 내용은 <a href="https://aka.ms/AzureDiskBlog-TechCommunity" target="_blank">Azure Community 게시물을</a> 참조하세요.</p>
+
+
+  <p>마지막으로, 이제 고객은 전역적으로 분산된 워크로드에서 Azure Load Balancer 사용하여 지역 간 부하 분산(미리 보기)을 사용하여 애플리케이션&rsquo; 성능 및 가용성을 향상시킬 수 있습니다.</p>
+
+
+  <h2>Azure에서 Linux 인프라 및 워크로드를 관리하는 데 도움이 되는 새로운 Linux 도구 및 비용 효율적인 라이선스 모델</h2>
+
+
+  <p>이제 Azure 하이브리드 혜택에는 Linux가 포함되며, Azure Image Builder와 함께 Azure에서 Linux 인프라 및 워크로드를 마이그레이션, 운영 및 관리할 수 있는 새로운 도구와 비용 효율적인 라이선스 모델을 제공합니다.</p>
+
+
+  <p>이제 Azure 하이브리드 혜택을 통해 더 간단하고 비용 효율적인 <a href="https://aka.ms/ahb-linux-form" target="_blank">Linux 구독 이식성을</a> 사용할 수 있습니다. 이 새로운 기능은 미리 보기에서 사용할 수 있으며 고객에게 기존 Red Hat Enterprise Linux 및 SUSE Linux Enterprise Server 구독을 사용하여 Azure의 Red Hat Enterprise Linux 및 SUSE Linux Enterprise Server를 실행하는 기존 종량제 인스턴스를 BYOS(bring-your-own-subscription) 청구로 변환할 수 있는 기능을 제공합니다. 고객은 기존 구독을 Azure로 가져와서 Red Hat 및 SUSE에 대한 기존 투자를 활용하고, 특별 가격 할인을 유지하며, 클라우드로 전환된 모든 온-프레미스 구독에 대해 이중 청구를 방지할 수 있습니다.</p>
+
+
+  <p>2020년 4분기에 일반 공급되는 Azure Image Builder는 Linux 및 Windows 이미지의 생성, 업데이트, 패치, 관리 및 작업을 간소화하는 무료 이미지 빌드 서비스입니다. Azure Image Builder는 사용할 때 구독에 리소스를 배포합니다. 이미지 빌드 파이프라인을 실행할 때 사용되는 VM 및 연결된 스토리지 및 네트워킹 리소스에 대해서만 비용을 지불합니다.</p>
+
+
+  <h2>다음 단계 및 추가 리소스</h2>
+
+
+  <p>기업이 기술 강도를 높이면서 비즈니스에 중요한 애플리케이션의 범위는 계속 확장됩니다. 에코시스템 기반 접근 방식을 통해 고객 및 파트너 모두와 함께 광범위한 솔루션을 구축할 수 있습니다. 우리는 앞의 가능성과 함께 성취할 수 있는 것에 활력을 불어넣습니다.</p>
+
+
+  <p>제품에 대해 자세히 알아보려면 <a href="https://aka.ms/BusinessCritical" target="_blank">중요 비즈니스용 애플리케이션 사이트를</a> 방문하여 참조 아키텍처, ISV 솔루션 및 제품 기능에 액세스합니다. <a href="https://aka.ms/AzureComputeChannel" target="_blank">학습 비디오를</a> 시청하여 Azure에서 최신 기능을 경험할 수도 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://aka.ms/updateschedules/" target="_blank">호스트 업데이트에 대한 예약된 유지 관리에</a> 대해 자세히 알아봅니다.</li>
+      <li><a href="https://aka.ms/vmsssupdatecontrol/" target="_blank">확장 집합을 사용하여 예약된 유지 관리에</a> 대해 자세히 알아봅니다.</li>
+      <li>최신 디스크 Storage 업데이트에 대한 Azure Community 게시물을 읽<a href="https://aka.ms/AzureDiskBlog-TechCommunity" target="_blank">어봅니다</a>.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/maintenance-control" target="_blank">유지 관리 제어 기능 설명서를 읽어</a>보세요.</li>
+      <li>전용 호스트의 Azure Virtual Machine Scale Sets 미리 보기에 대한 <a href="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAEUB0xASRFUMVNXMlZVSFcyRE00QzBMRURWODVEVVVBWS4u" target="_blank">액세스를 요청</a>합니다.</li>
+      <li>Azure 하이브리드 혜택 - <a href="https://aka.ms/ahb-linux-form" target="_blank">Linux 구독 이식성</a> (미리 보기)을 사용하여 옵션을 검토합니다.</li>
+  </ul>
+
+
+  <hr>
+
+  <p><i>Azure. 목적에 따라 발명.</i></p>
+
+
+  <ul>
+
+  </ul>

@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1804b692f4400a1c4356a519e0def30f1216698f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905503"
+Slug: keeping-shelves-stocked-and-consumers-happy-and-shopping
+Title: 선반을 비축하고 소비자를 행복하게 유지 (및 쇼핑!)
+Summary: 저는 두 어린 자녀를 둔 일하는 부모로서 가정 심부름에 얼마나 많은 시간을 할애하는지 제한하려고 노력합니다. 나는 편의성과 용이성을 기반으로 쇼핑의 조건이되었다 그 쇼핑객 중 하나입니다.
+Content: >-
+  <p>저는 두 어린 자녀를 둔 일하는 부모로서 가정 심부름에 얼마나 많은 시간을 할애하는지 제한하려고 노력합니다. 나는 편의성과 용이성을 기반으로 쇼핑의 조건이되었다 그 쇼핑객 중 하나입니다. 내가 원하는 제품의 가용성, 그리고 내가 항상 쇼핑 &mdash; 하는 모든 채널을 통해 나에게 사용할 수 있어야합니다! 주문이 이행되거나 매장에서 쇼핑을 할 수&rsquo; 없고 선반이 비어 있기 때문에 온라인으로 쇼핑하는 것보다 더 실망스러운 것은 없습니다. 경우에 따라 구매를 지연할 수 있습니다. 그러나 그렇지 않다면 대체 제품을 찾거나 다른&rsquo; 소매 업체에 내 사업을 가져 갈 것입니다. 어느 쪽이든, 그것은 다른 곳에서 내 달러를 복용 Im&rsquo;을 의미하고, 지역 소매 업체와 소비자 브랜드 모두 판매를 잃고 잠재적으로 장기 관계는 품절이 정기적으로 발생해야한다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/228b6390-1254-416c-be38-9e554e2346e9.png"><img alt="image" border="0" height="350" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/628fb36a-b8f8-4082-94e2-5104b77939c8.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="이미지" width="526"></a></p>
+
+
+  <h2>고급 분석은 재고 부족 문제를 해결할 수 있습니다.</h2>
+
+
+  <p>고급 분석을 사용하여 아웃 오브 증시에 대한 작업 과정을 보다 면밀히 모니터링하고 예측하고 제공하는 향상된 SKU 구색은 이러한 환경을 방지할 수 있습니다. 현재는 사용 가능한 SKU를 최적화하는 예측 인사이트를 제공하는 알고리즘을 개발하여 이 시나리오 및 시나리오와 같은 시나리오를 해결할 수 있으며, 소비자 수요를 충족하기 위해 제품을 재고할 수 있도록 매장별로 구색을 조정합니다.</p>
+
+
+  <p>고급 분석 솔루션은 수백만 개의 SKU를 처리하고 데이터를 세부 비교로 분할할 수 있어야 합니다. 그 결과 고급 분석 및 시각화 도구를 사용하여 제품 구색을 조정하여 인사이트를 사용하도록 설정하여 모든 매장에서 매출을 최대화할 수 있습니다. 이 작업을 성공적으로 수행하면 약 5-10%의 매출 증가가 발생할 수 있습니다.</p>
+
+
+  <p>Azure는 비용 효율적이고 포괄적인 확장 가능한 분석 솔루션을 빌드하는 데 사용할 수 있는 몇 가지 기본 제공 서비스를 제공합니다. 솔루션 개발이 실행 가능한 옵션이 아닌 경우 Microsoft는 이 비즈니스 과제를 대규모로 해결하는 검증된 역량을 갖춘 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fnealanalytics.com%2F&amp;data=02%7C01%7C%7C53ac947c51834e229d8908d609e12d71%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636707260060184995&amp;sdata=XZ%2BlmDEGd4pKMki8h8ZcgMEVxQH30azrwysqRNEA%2B30%3D&amp;reserved=0" target="_blank">Neal Analytics</a> 와 같은 파트너와 협력합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/758cb61e-fadb-452e-a594-b25c198490d0.png"><img alt="AssortmentOptimization" border="0" height="554" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/731cb3f1-2204-4b04-8427-8fc54b57e9de.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="AssortmentOptimization" width="1280"></a></p>
+
+
+  <p align="center"><em>다양한 최적화 솔루션</em></p>
+
+
+  <h2>재고 부족 예제에 기계 학습을 적용하는 방법</h2>
+
+
+  <p>SKU 구색 최적화 솔루션을 사용하여 재고 부족 문제를 해결하는 방법을 확인하려면 <a href="https://download.microsoft.com/download/0/1/5/0150425C-14C7-41F4-97EA-3DE57B678C51/IndUC_InvOpt.pdf">SKU 구색 + 기계 학습 사용 사례를 통해 인벤토리 최적화</a>를 읽어보십시오. 이 문서에서는 비즈니스 분석을 위한 Microsoft 2017 올해의 글로벌 파트너인 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fappsource.microsoft.com%2Fproduct%2Fweb-apps%2Fneal_analytics.8066ad01-1e61-40cd-bd33-9b86c65fa73a%3FWT.mc_id%3Dshelves-acomblog-mazoroto&amp;data=02%7C01%7C%7C3d28ba314a0f4f46a86508d60d159e22%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636710783823548462&amp;sdata=WgVSSlAfuyri2YBEilDQwr9tR6XDahqWEWQ3V5oCQeI%3D&amp;reserved=0">Neal Analytics</a>의 접근 방식을 포함하여 품절 문제를 해결하는 옵션과 Azure 서비스를 활용하는 솔루션 개요를 제공합니다.&nbsp;</p>
+
+
+  <p>나는 소셜 미디어에 새로운 발전에 대해 정기적으로 게시합니다.&nbsp; 당신이 나를 따르고 싶다면 당신은 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmariyazoro%2F&amp;data=02%7C01%7C%7C1678284a3409426907c508d60948ef14%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636706606180460149&amp;sdata=eM1Vn2otwH1d2gpTUky%2FkJA84tlrhSsuWDvY%2Fmz5iNQ%3D&amp;reserved=0" target="_blank">링크드 인</a> 과 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2Fmariyazoro&amp;data=02%7C01%7C%7C1678284a3409426907c508d60948ef14%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636706606180460149&amp;sdata=urBMAR8vz3exdZtxqrkh8H01kW3sciGppuCcRJsm5Jo%3D&amp;reserved=0" target="_blank">트위터에서</a> 나를 찾을 수 있습니다.</p>

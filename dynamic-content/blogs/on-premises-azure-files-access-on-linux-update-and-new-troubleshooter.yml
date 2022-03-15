@@ -1,0 +1,86 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0ba3f9ee869d5c8ddd1945931973d9839ffa528f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905316"
+Slug: on-premises-azure-files-access-on-linux-update-and-new-troubleshooter
+Title: Linux 업데이트 및 새 문제 해결사에서 온-프레미스 Azure Files 액세스
+Summary: 4월에 첫 번째 OS 배포인 Ubuntu 17.04를 위해 Azure Files의 Linux 온-프레미스 및 지역 간 탑재 가용성을 발표했습니다. 이제 더 많은 Linux 배포판에 Azure Files의 온-프레미스 및 지역 간 탑재를 허용하는 이 기능이 포함되어 있음을 공유하게 되어 기쁩니다.
+Content: >-
+  <p>4월에 첫 번째 OS 배포인 Ubuntu 17.04를 위해 <a href="https://azure.microsoft.com/en-us/blog/azure-file-storage-on-premises-access-for-ubuntu/" target="_blank">Azure Files의 Linux 온-프레미스 및 지역 간 탑재</a> 가용성을 발표했습니다. 이제 더 많은 Linux 배포판에 Azure Files의 온-프레미스 및 지역 간 탑재를 허용하는 이 기능이 포함되어 있음을 공유하게 되어 기쁩니다.</p>
+
+
+  <p>보안상의 이유로 Azure 파일 공유가 있는 동일한 데이터 센터에서 연결 시도가 이루어지지 않는 동안 통신 채널이 암호화되지 않으면&rsquo; Azure Files 공유에 대한 연결이 차단됩니다. 사용자&rsquo; 클라이언트 OS가 SMB 암호화를 지원하지 않고 Linux에서 아직 지원하지 않는 경우 채널 암호화가 제공되지 않습니다&rsquo;. Linux 커뮤니티와 협력하여 Linux CIFS 암호화를 구현했습니다. 암호화 지원은 4.11 커널에 도입되었습니다.</p>
+
+
+  <p>이 기능은 이미 다음 Linux 배포판으로 백포트되었습니다.</p>
+
+
+  <ul>
+   <li>Ubuntu 16.04 이상</li>
+   <li>SUSE Linux Enterprise Server 12 SP3 이상</li>
+   <li>CoreOS Stable</li>
+   <li>제시 백포트 커널이 있는 Debian 9</li>
+  </ul>
+
+
+  <p>이 기능은 다음 Linux 배포판에서 곧 제공될 예정입니다.</p>
+
+
+  <ul>
+   <li>CentOS 7.5(2018년 중반)</li>
+   <li>RHEL의 다음 릴리스(7.4 이후)</li>
+  </ul>
+
+
+  <p>즉, 위의 버전을 사용하면 온-프레미스, Azure의 다른 지역 또는 다른 클라우드와 같은 다양한 환경에 있는 VM 간에 데이터 액세스를 공유할 수 있습니다. Azure Files를 가리키고 Linux VM에 탑재된 SMB/CIFS 공유를 얻거나 Windows 동일한 공유를 탑재하고 플랫폼 간에 데이터를 공유할 수 있습니다.</p>
+
+
+  <h2>Linux용 새로운 시작 및 진단 도구</h2>
+
+
+  <p>또한 Linux 환경이 올바르게 설정되었는지 쉽게 확인할 수 있으며, 6월에 발표한 <a href="https://azure.microsoft.com/en-us/blog/new-troubleshooting-diagnostics-for-azure-files-mounting-errors-on-windows/" target="_blank">Windows 문제 해결</a>사처럼 <strong>Linux용 새로운 문제 해결사 도구를</strong> 릴리스하여 SMB를 사용하기 위한 모든 필수 구성 요소가 있습니다.</p>
+
+
+  <p>얼마 전에 <a href="https://docs.microsoft.com/en-us/azure/storage/files/storage-troubleshoot-linux-file-connection-problems" target="_blank">Linux 가이드에 대한 문제 해결을</a> 게시했습니다. 현재 환경이 올바르게 설정되었다는 것을 확신할 수 있도록 Azure toubleshooter 도구를 릴리스하고 있습니다.</p>
+
+
+  <p>지금 스크립트 센터에서 <a href="https://gallery.technet.microsoft.com/Troubleshooting-tool-for-02184089" target="_blank">AzFileDiagnostics를</a> 다운로드하고 다음 명령을 실행하면 됩니다&rsquo;. 이 도구는 파일 공유를 탑재하기 위해 수행해야 하는 작업을 알려줍니다. 이렇게 하려면 파일 공유를 탑재합니다.</p>
+
+
+  <pre>
+
+  chmod +x AzFilesDiagnostics.sh
+
+  ./AzFilesDiagnostics.sh</pre>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/30fde5d2-4335-42c8-856c-43c00e2601df.png"><img alt="azure-files-access-on-linux" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2f94da71-5e69-4fce-80b8-3fcd53a30780.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="azure-files-access-on-linux" width="943"></a></p>
+
+
+  <h2>요약 및 다음 단계</h2>
+
+
+  <p>Azure는 Linux 및 오픈 소스 기술을 위한 일류 플랫폼입니다. Microsoft는 Azure Linux 고객에게 최상의 환경을 제공하기 위해 Linux 오픈 소스 커뮤니티에 지속적으로 기여해 왔으며, 계속해서 이 작업을 수행하기를 기대합니다.</p>
+
+
+  <p>Azure File Storage 엄청난 채택을 보게 되어 기쁩니다. 5분 안에 시작하여 Azure File Storage를 사용해 볼 수 있습니다. 자세한 정보 및 자세한 설명서 링크는 아래에 제공됩니다.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/storage/storage-how-to-use-files-linux" target="_blank">Linux에서 Azure 파일 사용</a></li>
+   <li><a href="https://azure.microsoft.com/documentation/videos/azurecon-2015-azure-files-storage-a-frictionless-cloud-smb-file-system-for-windows-and-linux/" target="_blank">Azure File Storage: Windows 및 Linux을 위한 원활한 클라우드 SMB 파일 시스템</a></li>
+   <li><a href="https://azure.microsoft.com/blog/inside-azure-file-storage/" target="_blank">Azure 파일 Storage 내부</a></li>
+  </ul>
+
+
+  <p>사용자 의견에 따라 Azure 파일 Storage 계속 향상할 것입니다. 의견, 요청 또는 문제가 있는 경우 다음 채널을 사용하여 연락할 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://stackoverflow.com/questions/tagged/windows-azure-storage+or+windows-azure-storage+or+azure-storage-blobs+or+azure-storage-tables+or+azure-table-storage+or+windows-azure-queues+or+azure-storage-queues+or+azure-storage-emulator+or+azure-storage-file" target="_blank">스택 오버플로</a></li>
+   <li><a href="https://social.msdn.microsoft.com/Forums/windowsazure/en-US/home?forum=windowsazuredata" target="_blank">MSDN</a></li>
+   <li><a href="https://feedback.azure.com/forums/217298-storage" target="_blank">User Voice</a></li>
+  </ul>

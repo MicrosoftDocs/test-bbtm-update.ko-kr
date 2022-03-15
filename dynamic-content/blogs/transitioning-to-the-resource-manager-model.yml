@@ -1,0 +1,100 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3dfa3639be9bfa965717790b330db04ef4894f36
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905275"
+Slug: transitioning-to-the-resource-manager-model
+Title: Resource Manager 모델로 전환
+Summary: 새 Resource Manager 모델로 전환할 때 중요한 우선 순위는 모든 Azure 서비스가 지원하도록 하는 것입니다. 이를 위해 대부분의 Azure 서비스를 마이그레이션하여 새 모델을 지원했습니다.
+Content: >-
+  <p>작년에 Resource Manager 모델을 출시했을 때 RBAC( <a href="https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/">역할 기반 액세스 제어</a> ), <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-authoring-templates/">템플릿</a>을 사용하는 복잡한 애플리케이션에 대한 단일 클릭 배포, 차지백에 대한 리소스별 <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-using-tags/">태그 지정</a> , 새 리소스 관리자 <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-manager-policy/">배포 정책</a> (서비스 큐레이션 포함) 등 다양한 이점을 도입했습니다. 이전 모델인 ASM(Azure Service Management) 모델에 비해 Resource Manager 모델은 새로운 기능을 제공하는 데 큰 도약을 했습니다. 템플릿 만들기 및 공유부터 애플리케이션 리소스 간 종속성 관리, 태그 지정을 위한 리소스 그룹화에 이르기까지 Resource Manager는 <a href="https://github.com/Azure/azure-quickstart-templates">애플리케이션</a>을 개발, 배포 및 관리&nbsp;하기 위한 GitHub 있는 흥미로운 템플릿 및 솔루션의 커뮤니티를 확장합니다. 실제로 최근에 릴리스된 Azure Stack은 Resource Manager 모델을 기반으로 하며 이 에코시스템을 온-프레미스 환경으로 확장합니다.</p>
+
+
+  <p>Resource Manager 모델 사용으로 전환할 때 가장 중요한 우선 순위는 모든 Azure 서비스가 Resource Manager 모델을 지원하는지 확인하는 것입니다. 이를 위해 이 새 모델을 지원하기 위해 대부분의 Azure 서비스를 마이그레이션했습니다( <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-manager-supported-services/">전체 목록</a> 참조). 이 모델을&rsquo; 아직 지원하지 않는&rsquo; 나머지 대부분의 서비스의 경우 향후 몇 개월 내에 지원을 추가할 계획입니다.</p>
+
+
+  <p>&rsquo;Azure에서 새 애플리케이션을 빌드하거나 새 프로젝트를 시작할 때 리소스 그룹 모델을 사용하는 것이 좋습니다. 그러나 사용할 서비스 중 일부가 아직 Resource Manager 모델을 지원하지 않거나&rsquo; ASM 모델을 사용하여 기존 프로젝트에 리소스를 추가하기만 하면&rsquo; ASM&rsquo; 모델을 계속 사용하는 것이 좋습니다. 새 기능과 기능은 Resource Manager 모델을 통해서만 제공되는 우선 순위가 지정되지만 ASM 모델을 더 이상 사용하지 않을 계획은 없습니다.</p>
+
+
+  <p>Resource Manager 모델을 사용하여 새 배포를 계획하더라도 ASM 모델에서 만든 기존 배포가 여전히 있을 수 있습니다. 이러한 경우 서비스를 관리하거나 다른 모델을 사용하여 만든 VNet(가상 네트워크 환경)을 연결해야 할 수 있습니다. 현재 두 모델에서 만든 두 개의 Azure VNet을 연결할 수 있으며, 아래와 같이 VPN을 사용하여 온-프레미스에서 연결할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e227508f-3779-4d6f-abe8-ad5fbbf69d42.png"><img alt="Azure VNets" border="0" height="155" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/96563dc4-eeaf-4abe-87d5-8b54ea9d3c9c.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="Azure VNet" width="610"></a></p>
+
+
+  <p>ExpressRoute를 사용하는 경우 ASM 모델에서 만든 회로는 ASM 모델의 VNet에서만 사용할 수 있으며 Resource Manager 모델에서 만든 회로는 Resource Manager 모델에서 만든 VNet에서만 사용할 수 있습니다. 두 개의 ExpressRoute 회로를 서로 다른 환경에 연결하는 것은 번거롭고 비용이 많이 들 수 있으며 2016년 2분기까지 이 문제를 해결하기 위해 노력하고 있으며, 이 때 하나의 ExpressRoute 회로만 사용하여 두 환경에 연결할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d174ca0b-a8cb-4b86-8be7-ee023f51ddaa.png"><img alt="ExpressRoute Circuit" border="0" height="155" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dac742a4-ba3e-4a3b-99fd-dfdbec4192f0.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="ExpressRoute 회로" width="610"></a></p>
+
+
+  <p>ASM 환경을 Resource Manager 모델로 마이그레이션하는 것을 계획하는 동안 두 환경을 동시에 관리하고 두 환경에 연결하는 것은 매우 중요합니다.</p>
+
+
+  <p>마이그레이션에 대해 말하자면 최근에 ASM에서 Resource Manger 모델로 Virtual Machines를 마이그레이션하는 데 도움이 되는 몇 가지 <a href="https://github.com/fullscale180/asm2arm">스크립트</a> 를 게시했습니다. 또한 마이그레이션 시 VM 재부팅 및 네트워크 가동 중지 시간을 줄이는 데 도움이 되는 몇 가지 솔루션도 추가로 진행하고 있습니다. 다음 표에서는 이러한 솔루션을 사용할 수 있도록 희망하는 예상 기간을 제공합니다.</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top" width="29%">
+     <p>솔루션</p>
+     </td>
+     <td valign="top" width="51%">
+     <p><b>고객 환경</b></p>
+     </td>
+     <td valign="top" width="18%">
+     <p><b>2016년 예상 가용성</b></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="29%">
+     <p>스크립트 마이그레이션</p>
+     </td>
+     <td valign="top" width="51%">
+     <p>VM이 Resource Manager 모델에서 다시 만들어지면서 다시 부팅됩니다. 환경에 대한 Virtual Machines가 다시 만들어지는 동안 네트워크 연결이 끊어집니다.</p>
+     </td>
+     <td valign="top" width="18%">
+     <p align="center">Q1</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="29%">
+     <p>Virtual Machines, VNET 없음</p>
+     </td>
+     <td valign="top" width="51%">
+     <p>Resource Manager 모델에 배포된 모든 Virtual Machines가 VNet에 있어야 하므로 Virtual Machines가 마이그레이션되어 새 VNET에 배치됩니다. 이로 인해 네트워크 구성이 변경되어 다시 연결하기 위해 다시 부팅해야 합니다.</p>
+     </td>
+     <td valign="top" width="18%">
+     <p align="center">Q2</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="29%">
+     <p>VNET을 사용하는 Virtual Machines</p>
+     </td>
+     <td valign="top" width="51%">
+     <p>2분기부터 플랫폼은 실행 중인 Virtual Machine을 방해하지 않고 ASM에서 Resource Manager 모델로 Virtual Machine 마이그레이션을 제공합니다. 이렇게 하려면 마이그레이션을 수행하기 전에 ExpressRoute 또는 VPN을 통해 온-프레미스에 연결된 모든 VNet의 연결을 끊습니다.</p>
+     </td>
+     <td valign="top" width="18%">
+     <p align="center">Q2</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="29%">
+     <p>기본 하이브리드를 사용하는 Virtual Machines(하나의 연결)</p>
+     </td>
+     <td valign="top" width="51%">
+     <p>3분기부터 플랫폼은 실행 중인 Virtual Machine을 중단하지 않고 기본 하이브리드 연결에 대한 중단을 최소화하면서 ASM에서 Resource Manager 모델로 Virtual Machine 마이그레이션을 제공하며, 온-프레미스에서 하나의 연결로만 제한됩니다. 더 복잡한 연결은 마이그레이션을 수행하기 전에 연결 끊김이 필요합니다.</p>
+     </td>
+     <td valign="top" width="18%">
+     <p align="center">Q3</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>ASM 모델에 이미 많은 배포가 있는 경우 새 Resource Manager 모델로 전환하면 문제가 발생하지만 새 모델의 이점을 누릴 수 있다고 확신합니다. 그 동안 Well&rsquo;은 환경을 마이그레이션하고 연결하는 데 도움이 되도록 할 수 있는 모든 작업을 계속 수행합니다.</p>

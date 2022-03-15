@@ -1,0 +1,78 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5a1d5616b6675c1690b815107477048ea979671a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911225"
+Slug: azure-api-for-fhir-moves-to-general-availability
+Title: Azure API for FHIR®이 일반 공급으로 이동
+Summary: '현재 Microsoft는 네이티브 FHIR 형식으로 의료 데이터를 수집, 유지 및 관리하는 완전 관리형 자사 서비스를 갖춘 첫 번째 클라우드가 되었습니다. Azure API for FHIR®은 현재 모든 Azure 고객에게 일반 공급됩니다. 의료의 핵심 임무는 더 나은 건강 결과를 제공하는 것이며, 그 임무의 미래를 촉진하는 데이터 표준은 FHIR입니다. '
+Content: >-
+  <h4>현재 Microsoft는 네이티브 FHIR 형식으로 의료 데이터를 수집, 유지 및 관리하는 완전 관리형 자사 서비스를 갖춘 첫 번째 클라우드가 되었습니다. <a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">Azure API for FHIR&reg;</a>은 현재 모든 Azure 고객에게 일반 공급됩니다.</h4>
+
+
+  <p>의료의 핵심 임무는 더 나은 건강 결과를 제공하는 것이며, 그 임무의 미래를 촉진하는 데이터 표준은 FHIR입니다. FHIR(Fast Healthcare Interoperability Resource)은 지난 몇 년 동안 업계에 혁명을 일으키고 있으며 전자 형식으로 의료 정보를 교환하고 관리하기 위한 기본 표준으로 빠르게 확립되고 있습니다.&nbsp; Microsoft는 클라우드에서 PHI(보호된 상태 정보)를 관리할 수 있도록 FHIR이 제공하는 고유한 가치를 이해하므로&rsquo;, Azure 기술 발전에 따라 상태 고객이 네이티브 FHIR 형식으로 Azure 환경에서 PHI 데이터를 수집, 관리 및 유지할 수 있도록 합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">Azure API for FHIR</a>을 사용하면 개발자, 연구원, 디바이스 제조업체 또는 턴키 플랫폼을 통해 작동하는&mdash; 모든 사용자가 단 몇 분 만에 클라우드 기반 FHIR 서비스를 프로비전하고 Azure에서 PHI 데이터를 안전하게 관리하기 시작합니다. Weve&rsquo;는 이 새로운 PaaS(Platform-as-a-Service)를 통해 FHIR을 간소화하여 고객이 운영 리소스를 확보하고 개발 노력을 집중하여 상태 데이터를 통해 분석, 기계 학습 및 실행 가능한 인텔리전스를 조명하는 데 집중할 수 있습니다.</p>
+
+
+  <p>영국 런던의 아리디아 및 그레이트 오만드 스트리트 병원(GOSH)은 이미 Azure Cloud의 FHIR을 활용하여 DRE(디지털 연구 환경)에 전력을 공급하고 있으며, 역사적 및 현재 환자 기록 데이터를 모두 제공하는 의료 업계의 선두 주자입니다.&nbsp;</p>
+
+
+  <p><em>&ldquo;우리는 이제 젊은 환자를 위해 병원에 차세대 기계 학습 및 디지털 서비스를 설계, 테스트 및 배포하기 위한 기초로 통합 API를 가지고 있습니다. 이것은 또한 우리의 국제 소아과 병원 파트너와 신속하고 쉬운 협력이 환자 결과 및 경험을 향상하기 위하여 전문화한 공구를 공유하는 가능하게 할 것입니다,&quot;</em> 교수 닐 Sebire, GOSH에 최고 연구 정보 책임자는 말했습니다.</p>
+
+
+  <p><em>&ldquo;Azure API for FHIR에서 Microsoft와 파트너 관계를 구축하면 SMART on FHIR의 고객&rsquo; 사용을 확장하고 가속화할 수 있습니다. 관리되는 서비스는 Aridhia DRE 플랫폼의 훌륭한 추가 구성 요소로, 연구 및 혁신을 임상 영향에&rdquo; 더 가깝게 가져왔다고</em> 아리디아의 로드리고 반스 CTO는 덧붙였다.</p>
+
+
+  <h2>클라우드의 관리되는 FHIR 서비스</h2>
+
+
+  <p>FHIR 형식으로 건강 데이터를 정규화하면 의료 과학으로 발전하는 오픈 소스 표준의 기능을 활용할 수 있습니다. FHIR 표준은 건강 데이터 흐름을 위해 정확하게 설계되었으므로 현재 데이터 상호 운용성을 허용하고 의학 과학이 발전함에 따라 미래를 위해 생태계를 설정합니다.&nbsp; FHIR 서비스를 통해 다양한 데이터 세트를 혼합하면 기계 학습 개발을 가속화할 수 있는 강력한 기회가 제공됩니다. 시스템에 대한 연구 및 효율성 모델을 개발하고 구현할 때 데이터 출력을 FHIR API와 작동하는 모든 애플리케이션 인터페이스와 안전하고 쉽게 교환할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">Azure API for FHIR</a>을 사용하면 클라우드 &ndash; 의 모든 이점은 사용자가 사용하는 것에 대해서만 지불하고, 짧은 대기 시간과 고성능을 제공하고, 보안 및 인텔리전스에 대한 기본 제공 컨트롤이 있는 주문형 확장성 있는 기계 학습 도구를 제공합니다.</p>
+
+
+  <p>Azure API for FHIR의 주요 기능은 다음과 같습니다.</p>
+
+
+  <p>&bull;&nbsp;&nbsp;&nbsp; 몇 분 만에 엔터프라이즈급 관리형 FHIR 서비스 프로비전 및 시작<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; FHIR 표준의 R3 및 R4 지원<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; RBAC(역할 기반 액세스 제어) &ndash; 를 사용하여 대규모로 데이터에 대한 액세스를 관리할 수 있습니다.<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; 각 데이터 저장소 내에서 액세스, 만들기, 수정 및 읽기에 대한 감사 로그 추적<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; 클라우드의 보안 규정 준수: ISO 27001:2013 인증, HIPAA 및 GDPR 지원, HITRUST 인증 Azure 플랫폼 기반<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; 다중 지역 장애 조치(failover)를 사용하여 데이터의 글로벌 가용성 및 보호<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; SMART on FHIR 기능</p>
+
+
+  <h2>클라우드의 PHI 데이터에 대한 보안</h2>
+
+
+  <p>PHI(보호된 상태 정보)를 관리하기 위해 선택하는 클라우드 환경이 중요합니다. Microsoft는 신뢰할 수 있는 방식으로 운영합니다.</p>
+
+
+  <p>Weve&rsquo;는 가장 엄격한 <a href="https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings" target="_blank">업계 규정 준수</a> 표준에 따라 계층화된 심층 방어 및 고급 위협 방지로 데이터를 격리하고 보호하도록 FHIR용 Azure API를 빌드했습니다. Azure는 국제 표준화 기구(ISO 27001:2013) 및 HIPAA(Health Insurance and Portability and Accountability Act)를 포함하여 90개 이상의 규정 준수 제품을 다룹니다.&nbsp; Azure API for FHIR은 개인 및 규격 파이프라인에서 PHI 데이터의 지속성, 보안 및 교환을 가능하게 할 것이라고 확신할 수 있습니다.</p>
+
+
+  <p>&nbsp;<em> &ldquo;Humana는 Microsofts&rsquo; Azure API for FHIR을 사용하여 의료 팀이 범용 언어로 회원&rsquo; 디지털 건강 기록에 액세스할 수 있도록 하고 있으며, 이는 상시 보안에 의해 보호됩니다. Humana는 회원&rsquo; 기록에 대한 액세스를 제공하여 의사, 간호사 및 임상의를 지원하고 회원들이 최상의 삶을 경험하도록 돕는 데 집중할 수 있습니다.&rdquo;</em> &ndash; 마크 윌라드, 부사장, 휴머나</p>
+
+
+  <p><em>&ldquo;Azure API for FHIR을 사용하면 보안 및 확장성에 대한 걱정을 덜하면서 이 동적 규제 환경에서 모든 규모의 의료 조직을 위한 People Compatible&trade; 솔루션을 설계하는 데 집중할 수 있습니다.&rdquo;</em> &ndash; 파완 진달, 다레나 솔루션스 창립자 &amp; 사장</p>
+
+
+  <h2>의료 분야에서 인공 지능의 기초 구축</h2>
+
+
+  <p>&rsquo;FHIR에 클라우드를 밝히게 되어 기쁘지만,&rsquo; FHIR이 의료 분야의 기계 학습과 생명 과학의 미래를 위해 위조하고 있는 기초에 대해 더욱 흥분하고 있습니다.&nbsp; Were&rsquo;는 FHIR을 사용하여 새로운 혁신을 개척하는 광범위한 고객과 적극적으로 소통합니다. 에코시스템 전반에서 운영 효율성을 개선하거나, 새로운 보안 FHIR 기반 데이터 저장소가 필요하거나, 연구 및 혁신을 위한 보다 풍부한 데이터 세트를 만들려는 경우&rsquo;, 클라우드의 상태 데이터의 미래 및 FHIR에 대한 Its&rsquo;가 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">Azure API for FHIR을</a> 확인하고 상태 데이터를 사용하여 더 많은 작업을 수행합니다.</p>

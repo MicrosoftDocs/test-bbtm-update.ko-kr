@@ -1,0 +1,315 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 48feefd029b719677e4e6f710d3da7d0ded2d89a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906003"
+Slug: detect-malicious-activity-using-azure-security-center-and-azure-log-analytics
+Title: Azure Security Center 및 Azure Log Analytics를 사용하여 악의적인 활동 검색
+Summary: 우리는 고객의 시스템에서 악의적인 활동을 조사하는 것이 지루할 수 있으며 어디서부터 시작해야 할지 아는 것이 어려울 수 있다는 것을 들었습니다. Azure Security Center를 사용하면 간단하게 작업할 수 있습니다.
+Content: >-
+  <p><em>이 블로그 게시물은 Microsoft Threat Intelligence Center에서 작성했습니다</em><em>. </em></p>
+
+
+  <p>우리는 고객의 시스템에서 악의적인 활동을 조사하는 것이 지루할 수 있으며 어디서부터 시작해야 할지 아는 것이 어려울 수 있다는 것을 들었습니다. Azure Security Center를 사용하면 감지된 위협에 쉽게 대응할 수 있습니다. 기본 제공 동작 분석 및 기계 학습을 사용하여 위협을 감지하고 시도되거나 성공한 공격에 대한 경고를 생성합니다. 이전 게시물에서 설명한 대로 Azure Log Analytics를 사용하여 공격에 관련된 모든 엔터티 간의 관계를 표시하는 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-helps-analyze-attacks-using-investigation-and-log-search/" target="_blank">조사 경로를</a> 통해 검색된 위협 경고를 탐색할 수 있습니다. 현재는 기계 학습 및 Azure Log Analytics를 사용하여 위협을 탐지하는 Security Center&rsquo; 기능이 빠르게 진화하는 사이버 공격에 보조를 맞추는 데 어떻게 도움이 되는지 설명하겠습니다.</p>
+
+
+  <h2>Azure Log Analytics를 사용하여 시스템에서 변칙 조사</h2>
+
+
+  <p>한 가지 방법은 프로세스, 계정 및 컴퓨터의 추세를 확인하여 잠재적으로 악의적이거나 원치 않는 활동을 나타내는 컴퓨터에서 비정상적이거나 드문 프로세스 및 계정이 실행되는 시기를 이해하는 것입니다. 데이터에 대해 아래 쿼리를 실행하고 지난 30일 동안 발생하는 이상 또는 드물게 발생합니다. 이 쿼리는 1주일 동안 컴퓨터 및 계정 그룹에서 실행하는 프로세스를 보여 하여 새로운 내용을 확인하고 지난 30일 동안의 동작과 비교합니다. 이 기술은 고급 Azure Log Analytics 창에 제공된 로그에 적용할 수 있습니다. 이 예제에서는 Security Event 테이블을 사용하고 있습니다.</p>
+
+
+  <p><strong>굵</strong>게 표시된 항목은 노이즈에 대한 사용자 고유의 결과를 필터링하는 예이며 특별히 필요하지 않습니다. 내가 포함 한 이유는 자주 실행되지 않는 특정 항목이 있을 것임을 분명히하고 사용자 환경에 특정하고 조사에 초점을 맞출 수 있도록 수동 제외가 필요할 수 있습니다이 또는 유사한 쿼리를 사용할 때 비정상으로 표시하기 위한 것입니다. 사용자 환경에 따라 필터링할 알려진 좋은&rdquo; 항목의 &ldquo;목록을 직접 작성하세요.</p>
+
+
+  <pre>
+
+  let T = SecurityEvent
+
+  | where TimeGenerated &gt;= ago(30d)
+
+  | extend Date = startofday(TimeGenerated)
+
+  | extend Process = ProcessName
+
+  | where Process != &quot;&quot;
+
+  | where Process != &quot;-&quot;
+
+  <strong>| where Process !contains &quot;\\Windows\\System&quot;
+
+  | where Process !contains &quot;\\Program Files\\Microsoft\\&quot;
+
+  | where Process !contains &quot;\\Program Files\\Microsoft Monitoring Agent\\&quot;
+
+  | where Process !contains &quot;\\ProgramData\\&quot;
+
+  | where Process !contains &quot;\\Windows\\WinSxS\\&quot;
+
+  | where Process !contains &quot;\\Windows\\SoftwareDistribution\\&quot;
+
+  | where Process !contains &quot;\\mpsigstub.exe&quot;
+
+  | where Process !contains &quot;\\WindowsAzure\\GuestAgent&quot;
+
+  | where Process !contains &quot;\\Windows\\Servicing\\TrustedInstaller.exe&quot;
+
+  | where Process !contains &quot;\\Windows\\Microsoft.Net\\&quot;
+
+  | where Process !contains &quot;\\Packages\\Plugins\\&quot;
+
+  </strong>| project Date, Process, Computer, Account
+
+  | summarize count() by Date, Process, Computer, Account
+
+  | sort by count_ desc nulls last;
+
+  T
+
+  | evaluate activity_counts_metrics(Process, Date, startofday(ago(30d)), startofday(now()), 1d, Process, Computer, Account)
+
+  | extend WeekDate = startofweek(Date)
+
+  | project WeekDate, Date, Process, PotentialAnomalyCount = new_dcount, Account, Computer
+
+  | join kind= inner
+
+  (
+
+  &nbsp;&nbsp;&nbsp; T
+
+  &nbsp;&nbsp;&nbsp; | evaluate activity_engagement(Process, Date, startofday(ago(30d)), startofday(now()),1d, 7d)
+
+  &nbsp;&nbsp;&nbsp; | extend WeekDate = startofweek(Date)
+
+  &nbsp;&nbsp;&nbsp; | project WeekDate, Date, Distribution1day = dcount_activities_inner, Distribution7days = dcount_activities_outer, Ratio = activity_ratio*100
+
+  )
+
+  on WeekDate, Date
+
+  | where PotentialAnomalyCount == 1 and Ratio &lt; 100
+
+  | project WeekDate, Date, Process, Account, Computer , PotentialAnomalyCount, Distribution1day, Distribution7days, Ratio
+
+  | render barchart kind=stacked
+
+  </pre>
+
+
+  <p>위의 쿼리를 실행하면 날짜 및 참조된 프로세스가 다르지만 아래 항목과 유사한 TABLE이 표시됩니다. 이 예제에서는 지난 30일 동안의 주별 데이터를 기반으로 특정 프로세스, 컴퓨터 및 계정이 이전에 표시되지 않은 경우를 확인할 수 있습니다. 특히 4/15 주와 4/17의 특정 날짜에 표시된 regedit.exe, 4/30의 PowerShell, 지난 30일 동안 매주 처음으로 4/30 및 5/8에 프릭몬이 표시되는 것을 볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/86537878-1ab4-45b2-94c4-3e8d81c6638f.png"><img alt="image" border="0" height="454" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/680494a1-0453-4ea7-aae0-f660b40d67a4.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="1160"></a></p>
+
+
+  <p>차트 모드에서 결과를 보고 아래와 같이 가로 막대형 차트의 피벗을 변경할 수도 있습니다. 예를 들어 프로세스 대신 컴퓨터에서 드롭다운 및 피벗을 사용하고 이 프로세스를 시작한 컴퓨터를 확인합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/86b57b16-eddb-4cd2-ae68-55b90bf8b845.png"><img alt="Completed" border="0" height="213" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ed4ed221-1c09-42c7-abce-df9833170dc9.png" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="완료" width="668"></a></p>
+
+
+  <p>마우스를 가져가서 특정 컴퓨터와 처음으로 표시되는 프로세스 수를 확인합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0cf7a381-9966-4ece-91b1-7a90de4dcbfb.png"><img alt="Potential Anomaly Count" border="0" height="449" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8511af27-a539-4030-87a1-4cc9ea11f019.png" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="잠재적인 변칙 수" width="418"></a></p>
+
+
+  <p>위의 쿼리에서는 1일 이상 실행되는 항목(100개 미만의 비율)을 살펴봅니다. 이는 날짜를 구문 분석하고 지정된 컴퓨터에서 프로세스가 실행되는 경우의 범위를 보다 쉽게 이해하는 방법입니다. 며칠에 걸쳐 실행된 희귀 항목을 살펴보면 사용자 환경을 검색하는 공격자가 공격 노출 영역을 더욱 높일 수 있는 정보를 검색하여 수동 활동을 감지할 수 있습니다.</p>
+
+
+  <p>또는 위의 쿼리에서 비율 == 100만 선택하여 수행할 수 있는 지난 30일 중 1일에만 실행된 프로세스를 살펴볼 수 있습니다. 관련 줄을 다음과 같이 변경하기만 하면 됩니다.</p>
+
+
+  <pre>
+
+  | where PotentialAnomalyCount == 1 and Ratio == 100 </pre>
+
+
+  <p>위의 쿼리 변경은 드문 프로세스에 대해 다른 적중 횟수 집합을 생성하며, 이 시스템, 여러 시스템에서 데이터를 신속하게 수집하기 위해 스크립션된 공격을 사용함을 나타내거나 하루만에 공격자 활동을 나타낼 수 있습니다.</p>
+
+
+  <p>마지막으로, Mgmt Studio 프로세스 Ssms.exe SQL 등 대화형 로그온을 나타내는 여러 대화형 프로세스가 실행되는 것을 볼 수 있습니다. 이 시스템에 예기치 않은 로그온이 발생할 수 있으며 이 쿼리는 예기치 않은 프로세스 외에도 이러한 유형의 변칙을 노출하는 데 도움이 될 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c5337ef2-8bb0-47a4-9db6-e145e11530ca.png"><img alt="image" border="0" height="333" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7acb45c1-0926-42be-9b01-50c59866924f.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="1184"></a></p>
+
+
+  <p>조사하려는 컴퓨터 또는 계정을 확인한 후에는 해당 컴퓨터의 전체 데이터를 자세히 살펴볼 수 있습니다. 이 작업은 보조 쿼리 창을 열고 관심 있는 컴퓨터 또는 계정에서만 필터링하여 수행할 수 있습니다. 이 예제는 다음과 같습니다. 이 시점에서 비정상적이거나 드문 프로세스 실행 시간에서 발생한 작업을 확인할 수 있습니다. portping.exe 프로세스를 선택하고 날짜 범위를 좁혀 자세히 살펴볼 수 있도록 합니다.&nbsp; 위의 표에서 아래의 날짜[UTC]를 볼 수 있습니다. 이 날짜는 쿼리가 제대로 작동하기 위해 가장 가까운 날짜로 반올림되지만, 사용된 컴퓨터 및 계정과 함께 이 날짜는 컴퓨터에서 실행된 시점의 기간에 집중할 수 있도록 해야 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e8af4403-1fba-4e68-b347-aecd9c8ac8f4.png"><img alt="image" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c2e407a7-0949-48a3-b3e3-9190e868f099.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="1188"></a></p>
+
+
+  <p>기간에 집중하기 위해 해당 날짜를 사용하여 일 범위를 제공합니다. 아래에 표시된 표준 날짜 형식을 사용하여 쿼리에 범위를 전달할 수 있습니다. 노란색으로 강조 표시된 +를 클릭하고 아래 쿼리를 창에 붙여넣습니다.</p>
+
+
+  <p>결과에서 고유 시간은 빨간색으로 표시됩니다. 후속 쿼리에서 사용합니다.</p>
+
+
+  <pre>
+
+  SecurityEvent
+
+  | where TimeGenerated &gt;= datetime(2018-04-16 00:00:00.000) and TimeGenerated &lt;= datetime(2018-04-16 23:59:59.999)
+
+  | where Computer contains &quot;Contoso-2016&quot; and Account contains &quot;ContosoAdmin&quot;
+
+  | where Process contains &quot;portping.exe&quot;
+
+  | project TimeGenerated, Computer, Account, Process, CommandLine</pre>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f42deb19-ce2d-47ca-8588-26573c61afe3.png"><img alt="Code" border="0" height="662" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/570c1ae1-bfc9-40d4-84aa-d5de62c049db.png" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="코드" width="1424"></a></p>
+
+
+  <p>이제 정확한 시간이 있으므로 해당 날짜 주위에 더 작은 시간 프레임으로 발생하는 활동을 확인할 수 있습니다. 일반적으로 +5분 및 -5분 블록을 사용합니다. 예를 들면 다음과 같습니다.</p>
+
+
+  <pre>
+
+  SecurityEvent
+
+  | where TimeGenerated &gt;= datetime(2018-04-16 19:10:00.000) and TimeGenerated &lt;= datetime(2018-04-16 19:21:00.000)
+
+  | where Computer contains &quot;Contoso-2016&quot; and Account contains &quot;ContosoAdmin&quot;
+
+  //| where Process contains &quot;portping.exe&quot;
+
+  | project TimeGenerated, Computer, Account, Process, CommandLine</pre>
+
+
+  <p>아래 결과에서는 누군가가 RDP를 통해 시스템에 로그인한 것을 쉽게 확인할 수 있습니다. RDPClip.exe 시작되고 있기 때문에 이를 알고 있습니다. 이는 호스트와 원격 시스템 간에 복사하고 붙여넣고 있음을 나타냅니다.</p>
+
+
+  <p>또한 portping.exe 작업 후에 사용자 암호2를 netplwiz.exe 명령을 사용하여 계정 또는 암호 기능을 수정하려고 시도하는 것을 확인할 수 있습니다.</p>
+
+
+  <p>그런 다음 Procmon.exe 실행하여 시스템에서 실행 중인 다른 프로세스를 확인합니다. 일반적으로 이 작업은 공격자가 추가 악용에 사용할 수 있는 내용을 파악하기 위해 수행됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a9c3e03-4ba5-49c8-89f2-0b73db12f972.png"><img alt="Query" border="0" height="1580" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/14c9c2b3-1b1e-4474-a28a-004cf58f0a0c.png" style="background-image: none; display: inline; border-image: none" title="쿼리" width="1512"></a></p>
+
+
+  <p>이 시점에서 이 컴퓨터는 오프라인으로 전환하고 손상의 정도를 이해하기 위해 더 깊이 조사해야 합니다.</p>
+
+
+  <h2>Azure Log Analytics를 사용하여 공격자가 일반적으로 배포하는 숨겨진 기술 찾기</h2>
+
+
+  <p>대부분의 보안 전문가들은 공격자가 탐지를 피하기 위해 시스템에서 명령 사용을 숨기는 데 사용하는 기술을 보았습니다. 명령줄에도 표시되지 않도록 하는 방법이 분명히 있지만, 아래에서 사용되는 난독 처리 기술은 다양한 수준의 공격자에 의해 정기적으로 사용됩니다.</p>
+
+
+  <p>아래에서 명령줄 데이터에서 base64로 인코딩된 문자열을 디코딩하고 공격에 사용되는 일반적인 PowerShell 메서드를 찾습니다.</p>
+
+
+  <pre>
+
+  SecurityEvent
+
+  | where TimeGenerated &gt;= ago(30d)
+
+  | where Process contains &quot;powershell.exe&quot; and CommandLine contains &quot; -enc&quot;
+
+  |extend b64 = extract(&quot;[A-Za-z0-9|+|=|/]{30,}&quot;, 0,CommandLine)
+
+  |extend utf8_decode=base64_decodestring(b64)
+
+  |extend decode =  replace (&quot;\x00&quot;,&quot;&quot;, utf8_decode)
+
+  |where decode contains &#39;Gzip&#39; or decode contains &#39;IEX&#39; or decode contains &#39;Invoke&#39; or decode contains &#39;.MemoryStream&#39;
+
+  | summarize by Computer, Account, decode, CommandLine</pre>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d1578e3b-a777-4103-a4bb-1eab2ca8f58e.png"><img alt="image" border="0" height="164" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95098453-b8cf-4d35-928b-3ea514519aa3.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="이미지" width="1190"></a></p>
+
+
+  <p>보듯이 결과는 인코딩된 명령줄의 내용과 공격자가 시도한 작업에 대한 세부 정보를 제공합니다.</p>
+
+
+  <p>이제 위의 쿼리의 세부 정보를 사용하여 동일한 테이블에 시간과 컴퓨터를 추가하여 동시에 실행된 내용을 확인할 수 있습니다. 이를 통해 시스템의 다른 작업과 쉽게 연결할 수 있습니다. 이 프로세스는 위에서 자세히 설명합니다. 한 가지 주의할 점은 행의 첫 번째 열에 화살표가 있는 이벤트를 확장하여 자동으로 추가할 수 있다는 것입니다. 그런 다음 TimeGenerated를 마우스로 가리키고 + 단추를 클릭합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6649b6b7-76ba-4f29-b3ee-a638fdbbfd62.png"><img alt="image" border="0" height="343" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b35678e2-2dd6-455b-b107-a09a2c21ac02.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="이미지" width="1177"></a></p>
+
+
+  <p>이렇게 하면 쿼리 창에 다음과 같은 항목이 추가됩니다.</p>
+
+
+  <pre>
+
+  | where TimeGenerated == todatetime(&#39;2018-04-24T02:00:00Z&#39;)</pre>
+
+
+  <p>다음과 같이 시간 범위를 수정합니다.</p>
+
+
+  <pre>
+
+  SecurityEvent
+
+  | where TimeGenerated &gt;= ago(30d)
+
+  | where Computer == &quot;XXXXXXX&quot;
+
+  | where TimeGenerated &gt;= todatetime(&#39;2018-04-24T02:00:00Z&#39;)-5m and TimeGenerated &lt;= todatetime(&#39;2018-04-24T02:00:00Z&#39;)+5m
+
+  | project TimeGenerated, Account, Computer, Process, CommandLine, ParentProcessName
+
+  | sort by TimeGenerated asc nulls last</pre>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0abec47f-4a92-4bfe-b729-597e005d8127.png"><img alt="image" border="0" height="732" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/27572359-48f1-4428-8ace-a2a394f3ad60.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="이미지" width="1317"></a></p>
+
+
+  <p>마지막으로, 조인을 사용하여 지난 30일 동안의 경고에 대한 다양한 경고에 연결하여 연결된 경고를 확인합니다.</p>
+
+
+  <pre>
+
+  SecurityEvent
+
+  | where TimeGenerated &gt;= ago(30d)
+
+  | where Process contains &quot;powershell.exe&quot;  and CommandLine contains &quot; -enc&quot;
+
+  | extend b64 = extract( &quot;[A-Za-z0-9|+|=|/]{30,}&quot;, 0,CommandLine)
+
+  | extend utf8_decode=base64_decodestring(b64)
+
+  | extend decode =  replace (&quot;\x00&quot;,&quot;&quot;, utf8_decode)
+
+  | where decode contains &#39;Gzip&#39; or decode contains&#39;IEX&#39; or decode contains &#39;Invoke&#39; or decode contains &#39;.MemoryStream&#39;
+
+  | summarize by TimeGenerated, Computer=toupper(Computer), Account, decode, CommandLine
+
+  | join kind= inner (
+        SecurityAlert | where TimeGenerated &gt;= ago(30d)
+        | extend ExtProps = parsejson(ExtendedProperties)
+        | extend Computer = toupper(tostring(ExtProps[&quot;Machine Name&quot;]))
+        | project Computer, AlertName, Description
+  ) on Computer</pre>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/33dff85c-ccd1-4f72-a79e-6ccf11b6ba69.png"><img alt="image" border="0" height="198" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c1802a6e-4bb3-4c97-928d-58e60cbe4bdf.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="이미지" width="1274"></a></p>
+
+
+  <p>Security Center는 Azure Log Analytics를 사용하여 데이터의 변칙을 감지하고 공격자가 사용하는 일반적인 숨기기 기술을 노출하는 데 도움을 줍니다. 위에서 제시한 것과 같은 지시된 쿼리를 통해 더 많은 데이터를 탐색하면 악의적이고 양성인 변칙을 발견할 수 있지만, 이렇게 하면 환경을 더욱 안전하게 만들고 구독의 시스템 및 리소스에서 진행되는 활동을 더 잘 이해할 수 있습니다.</p>
+
+
+  <h2>Azure Security Center에 대한 자세한 정보</h2>
+
+
+  <p>Azure Security Centers&rsquo; 검색 기능에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-detection-capabilities" target="_blank">위협 탐지 설명서를 참조하세요</a>.</p>
+
+
+  <p>Azure Advance Threat Protection에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure-advanced-threat-protection/what-is-atp" target="_blank">위협 방지 설명서를 참조하세요</a>.</p>
+
+
+  <p>Windows Defender Advanced Threat Protection과의 통합에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure-advanced-threat-protection/integrate-wd-atp" target="_blank">위협 방지 통합 설명서를 참조하세요</a>.</p>
+
+
+  <p>Azure Security Center의 최신 공지 사항을 최신 상태로 유지하려면 <a href="https://azure.microsoft.com/en-us/blog/topics/security/" target="_blank">블로그를 읽고 구독하세요</a>.</p>

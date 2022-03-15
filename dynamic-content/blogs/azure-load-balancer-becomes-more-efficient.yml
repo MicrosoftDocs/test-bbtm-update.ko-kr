@@ -1,0 +1,153 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d46be02fed1ec89c5fa857bedc6ab06b02f76cf1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905635"
+Slug: azure-load-balancer-becomes-more-efficient
+Title: Azure Load Balancer 더 효율적입니다.
+Summary: Azure는 2017년 말에 고급의 보다 효율적인 Load Balancer 플랫폼을 도입했습니다. 이 플랫폼은 새로운 표준 Load Balancer를 사용하여 고객 워크로드에 대한 완전히 새로운 기능 집합을 추가합니다. 새로운 Load Balancer 플랫폼이 제공하는 주요 추가 사항 중 하나는 간소화되고 예측 가능하며 효율적인 아웃바운드 연결 관리입니다.
+Content: >-
+  <p>Azure는 2017년 말에 고급의 보다 효율적인 Load Balancer 플랫폼을 도입했습니다. 이 플랫폼은 새로운 <a href="https://aka.ms/lbstandard" target="_blank">표준 Load Balancer</a>를 사용하여 고객 워크로드에 대한 완전히 새로운 기능 집합을 추가합니다. 새로운 Load Balancer 플랫폼이 제공하는 주요 추가 사항 중 하나는 간소화되고 예측 가능하며 효율적인 아웃바운드 연결 관리입니다.</p>
+
+
+  <p>표준 Load Balancer와 이미 통합되어 있지만, 이제는 이 이점을 나머지 Azure 배포에 제공합니다. 이 블로그에서는 그것이 무엇인지, 그리고 그것이 어떻게 모든 소비자의 삶을 더 좋게 만드는지 설명합니다. 우리가 집중하려는 중요한 변화는 고객에게 매우 중요한 디자인 포인트이므로 아웃바운드 연결 동작 사전 및 사후 플랫폼 통합입니다.</p>
+
+
+  <h2>Load Balancer 및 원본 NAT</h2>
+
+
+  <p>Azure 배포는 고객&rsquo; 배포 모델 및 활용되고 구성된 리소스에 따라 <a href="https://aka.ms/lboutbound#scenarios" target="_blank">아웃바운드 연결</a>에 대해 세 가지 시나리오 중 하나 이상을 사용합니다. Azure는 SNAT(원본 네트워크 주소 변환)를 사용하여 이러한 시나리오를 사용하도록 설정합니다. 여러 개인 IP 주소 또는 역할이 동일한 공용 IP(Load Balancer에 할당된 공용 IP 주소, <a href="https://aka.ms/lboutboundrules" target="_blank">아웃바운드 규칙에</a> 사용되거나 독립 실행형 가상 마힌에 대해 자동으로 할당된 공용 IP 주소)를 공유하는 경우 Azure는 PAT(포트 위장 SNAT)를 사용하여 공용 IP 주소의 임시 포트를 사용하여 개인 IP 주소를 공용 IP 주소로 변환합니다. ILPIP(인스턴스 수준 공용 IP 주소)가 할당된 경우에는 PAT가 적용되지 않습니다.</p>
+
+
+  <p>여러 인스턴스가 공용 IP 주소를 공유하는 경우 Azure Load Balancer VIP 뒤에 있는 각 인스턴스는 아웃바운드 흐름을 가장하는 데 필요한 PAT(SNAT 포트)에 사용되는 고정된 수의 임시 포트를 미리 할당합니다. 인스턴스당 미리 할당된 포트 수는 백 엔드 풀의 크기에 따라 결정됩니다. 자세한 내용은 <a href="https://aka.ms/lboutbound#snat" target="_blank">SNAT 알고리즘</a> 섹션을 참조하세요.</p>
+
+
+  <h2>레거시 알고리즘과 새 SNAT 알고리즘 간의 차이점</h2>
+
+
+  <p>플랫폼 개선에는 SNAT 알고리즘이 Azure에서 작동하는 방식의 개선도 포함되었습니다. 아래 표에서는 이러한 할당 모드와 해당 속성을 나란히 비교합니다.</p>
+
+
+  <table align="center" border="2" cellpadding="1" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle; width: 100px;">&nbsp;</td>
+     <td style="vertical-align: middle; width: 220px;"><strong>레거시 SNAT 포트 할당<br>
+  (레거시 기본 SKU 배포)</strong></td>
+     <td style="vertical-align: middle; width: 300px;"><strong>새 SNAT 포트 할당<br>
+  (최근 기본 SKU 배포 및 표준 SKU 배포)</strong></td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle; width: 100px;"><strong>적용 대상</strong></td>
+     <td style="vertical-align: middle; width: 220px;">2017년 9월 이전에 배포된 서비스는 이 할당 모드를 사용합니다.</td>
+     <td style="vertical-align: middle; width: 300px;">2017년 9월 이후에 배포된 서비스는 이 할당 모드를 사용합니다.</td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle; width: 100px;"><strong>사전 할당</strong></td>
+     <td style="vertical-align: middle; width: 220px;">160<br>
+  (300개 인스턴스보다 큰 테넌트에 대한 작은 수)</td>
+     <td style="vertical-align: middle; width: 300px;">
+     <p>백 엔드 풀 크기 및 풀 경계에 따른 <a href="https://aka.ms/lboutbound#snat" target="_blank">SNAT 포트 할당의 경우 SNAT 포트 사전 할당을 방문</a>하세요.</p>
+
+     <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6cb31eb5-3a64-4336-b317-ea87ec99a0f7.png"><img alt="An image of back-end instnace count vs Ephermeral port count" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/202ba353-e7f0-4241-b8aa-5a618d043b97.png" style="border: 0px currentcolor; display: inline; background-image: none; width: 300px; height: 119px;" title="백 엔드 instnace count 및 Ephermeral 포트 수의 이미지"></a></p>
+
+     <p>아웃바운드 규칙을 사용하는 경우 사전 할당은 아웃바운드 규칙에 정의된 포트와 동일합니다. 인스턴스의 하위 집합에서 포트가 소진된 경우 SNAT 포트가 할당되지 않습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle; width: 100px;"><strong>최대 포트</strong></td>
+     <td style="width: 220px;">모두 소진될 때까지 적은 수의 포트를 동적으로 주문형으로 할당합니다. (하나의 프런트 엔드 IP 주소에 사용할 수 있는 총 SNAT 포트 코운드는 65,535이며 모든 백 엔드 인스턴스에서 공유됩니다.)<br>
+  요청 제한이 없습니다.</td>
+     <td style="vertical-align: middle; width: 300px;">기본 SKU 리소스*의 경우 사용 가능한 모든 SNAT 포트가 주문형으로 동적으로 할당됩니다.<br>
+  요청의 일부 제한이 적용됩니다(초당 인스턴스당).<br>
+
+  *표준 SKU 리소스에 대해 더 이상 동적 포트 할당이 수행되지 않습니다.</td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle; width: 100px;"><strong>강화</strong></td>
+     <td style="vertical-align: middle; width: 220px;">
+     <p>포트 다시 할당이 완료되었습니다.</p>
+
+     <p>기존 연결은 다시 할당될 때 삭제될 수 있습니다.</p>
+     </td>
+     <td style="width: 300px;">
+     <p>정적 SNAT 포트는 항상 새 인스턴스에 할당됩니다.</p>
+
+     <p>백 엔드 풀 경계가 변경되거나 포트가 소진되면 포트 재할당이 수행됩니다.</p>
+
+     <p>기존 연결은 다시 할당될 때 삭제될 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle; width: 100px;"><strong>규모 축소</strong></td>
+     <td style="vertical-align: middle; width: 220px;">포트 다시 할당이 완료되었습니다.</td>
+     <td style="vertical-align: middle; width: 300px;">백 엔드 풀 경계가 변경되면 모든 사용자에게 추가 포트를 할당하기 위해 포트 재할당이 수행됩니다.</td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle; width: 100px;"><strong>사용 사례</strong></td>
+     <td style="vertical-align: middle; width: 220px;">
+     <ul>
+      <li>시끄러운 이웃은 모든 포트를 사용하고 나머지 인스턴스/테넌트는 굶어 죽을 수 있습니다.</li>
+      <li>포트 할당 관리는 제한 없이는 거의 불가능합니다.</li>
+     </ul>
+     </td>
+     <td style="vertical-align: middle; width: 220px;">
+     <ul>
+      <li>SNAT 포트 할당에 대한 사용자 지정 및 제어가 훨씬 향상되었습니다.</li>
+      <li>대부분의 고객 시나리오를 다루기 위한 사전 할당이 더 높습니다.</li>
+      <li>예측 가능한 포트 할당 및 애플리케이션 동작</li>
+     </ul>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>SNAT 포트 할당에 대한 플랫폼 통합 및 영향</h2>
+
+
+  <p>&rsquo;안정성과 효율성을 확장하고 고객을 위한 원격 분석 및 SKU 업그레이드와 같은 기능을 사용하도록 설정하기 위해 두 플랫폼의 통합 작업을 진행합니다. 이 통합의 결과로 Azure의 모든 사용자는 새 SNAT 포트 할당 알고리즘으로 이동됩니다. 이 통합 연습은 진행 중이며 2020년 봄 이전에 완료될 예정입니다.</p>
+
+
+  <h3>플랫폼 통합 후에는 어떤 유형의 SNAT 할당을 받을 수 있나요?</h3>
+
+
+  <p>&rsquo;이러한 시나리오를 다른 시나리오로 분류할 수 있습니다.</p>
+
+
+  <ol>
+   <li><strong>레거시 SNAT 포트 할당</strong> 은 SNAT 포트 할당의 이전 모드이며 2017년 9월 이전에 배포된 배포에서 사용되고 있습니다. 이 모드는 부하 분산 장치 뒤의 인스턴스에 적은 수의 SNAT 포트(160)를 정적으로 할당하고 나중에 SNAT 오류 및 동적 주문형 할당을 사용합니다.
+
+   <ul>
+    <li><strong>플랫폼 통합 후</strong> 이러한 배포는 위의 섹션 A에 설명된 대로 새 플랫폼의 <strong>새 SNAT 할당</strong> 으로 이동됩니다. 그러나 마이그레이션&rsquo; 후 새 플랫폼의 &lt;이전 플랫폼에서&gt; 최대 정적 포트 할당, 동적 포트 할당과 동일한 포트 할당을 보장합니다.</li>
+   </ul>
+   </li>
+   <li>이전 플랫폼의 <strong>새로운 SNAT 포트 할당 모드</strong>는 2018년 초에 도입되었습니다. 이 모드는 위에서 설명한 새 SNAT 포트 할당 모드와 동일합니다.
+   <ul>
+    <li><strong>플랫폼 통합 후에</strong>는 이러한 배포가 변경되지 않은 상태로 유지되므로 이전 플랫폼에서 SNAT 포트 할당이 유지됩니다.</li>
+   </ul>
+   </li>
+  </ol>
+
+
+  <h3>내 서비스 또는 기존 아웃바운드 흐름에 어떤 영향을 주나요?</h3>
+
+
+  <ol>
+   <li>인스턴스가 미리 할당된 기본 SNAT 포트보다 적게 사용되는 대부분의 경우 기존 흐름에는 영향을 주지 않습니다.</li>
+   <li>훨씬 더 많은 수의 SNAT 포트(동적 할당을 통해 수신됨)를 사용하는 소수의 고객 배포에서는 추가 동적 포트 할당에 따라 흐름의 일부가 일시적으로 감소할 수 있습니다. 몇 초 내에 자동으로 수정해야 합니다.</li>
+  </ol>
+
+
+  <h2>지금 어떻게 해야 하나요?</h2>
+
+
+  <p>안정적이고 확장 가능한 시나리오를 디자인하는 방법에 대한 지침은 <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections#snatexhaust" target="_blank">SNAT 포트 고갈 관리에</a> 설명된 시나리오 및 패턴을 검토하고 숙지합니다.</p>
+
+
+  <h2>예정된 중요한 기간에 대한 중단을 보장하려면 어떻게 해야 하나요?</h2>
+
+
+  <p>플랫폼 통합 및 결과 포트 할당 알고리즘은 Azure 플랫폼 수준 변경입니다. 그러나 Azure에서 중요한 프로덕션 워크로드를 실행하고 있으며 이 수준의 서비스 논리 변경이 중요한 기간 동안 구현되지 않도록 하고 서비스 중단을 방지하려고 합니다. 이러한 시나리오에서는 배포 정보를 사용하여 포털에서 Load Balancer 지원 사례를 만들고,&rsquo; 서비스를 중단하지 않도록 웹 작업을 진행하세요.</p>

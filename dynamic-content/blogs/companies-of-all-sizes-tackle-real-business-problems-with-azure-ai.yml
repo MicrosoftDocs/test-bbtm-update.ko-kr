@@ -1,0 +1,127 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3b2461148abb25b5631cfadc8de5b15ca89aef88
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911091"
+Slug: companies-of-all-sizes-tackle-real-business-problems-with-azure-ai
+Title: 모든 규모의 회사가 Azure AI를 사용하여 실제 비즈니스 문제를 해결합니다.
+Summary: 지난 몇 년 동안 우리는 기업이 AI의 힘을 활용하여 비즈니스 프로세스를 혁신하고 고객에게 영향을 미치면서 산업 전반에 걸쳐 놀라운 변화를 보았습니다.
+Content: >-
+  <p>AI의 적용을 통해 산업 전반에 걸쳐 놀라운 변화가 일어나고 있습니다. 핵심 비즈니스 프로세스를 성공적으로 디지털화하고 보다 매력적이고 개인화된 고객 환경을 만드는 고객과 함께 앞줄 좌석이 있습니다. Microsofts&rsquo; AI 플랫폼인 Azure AI를 통해 Microsoft의 비전은 생산적이고 엔터프라이즈 규모적인 보안 솔루션을 사용하여 고객이 목적에 따라 혁신할 수 있도록 돕는 데 계속 중점을 두고 있습니다. 이 비전은 대규모 AI 시스템에서 Microsoft Azure 기능을 확장하는 하드웨어 및 소프트웨어 플랫폼을 개발하기 위해 <a href="https://news.microsoft.com/2019/07/22/openai-forms-exclusive-computing-partnership-with-microsoft-to-build-new-azure-ai-supercomputing-technologies/" target="_blank">OpenAI에 대한 투자</a>와 같은 최근 파트너십을 통해 더욱 강해졌습니다.</p>
+
+
+  <p>오늘날 우리는 다양한 AI 혁신을 통해 조직이 AI 여정에 있는 모든 곳에서 요구 사항을 충족하는 방식으로 AI를 더 쉽게 채택하고 적용할 수 있도록 하고 있습니다. 제품 업데이트에는 모든 기술 수준의 개발자 및 데이터 과학자의 생산성을 높이는 Microsoft Azure Machine Learning 새로운 기능, Microsoft Azure Cognitive Services의 새로운 혁신 및 AI 앱 및 에이전트 생성을 간소화하기 위한 Microsoft Azure Bot Service의 새로운 기능<a href="https://azure.microsoft.com/services/search/" target="_blank">, 지식</a> 마이닝 애플리케이션을 개발할 수 있도록 하는 Azure Cognitive Search.</p>
+
+
+  <h2>엄청난 고객 모멘텀</h2>
+
+
+  <p>Azure AI의 엄청난 채택으로 겸손해졌습니다. 크고 작은 조직에서는 데이터를 소유하고 제어한다는 것을 알고 안심하고 대규모로 AI를 배포하고 빌드하기 위해 Azure AI 솔루션을 채택했습니다. 입증된 AI 기술을 통해 <a href="https://www.novartis.com/news/novartis-and-microsoft-announce-collaboration-transform-medicine-artificial-intelligence" target="_blank">노바티스</a>, <a href="https://news.microsoft.com/2019/10/21/humana-and-microsoft-announce-multiyear-strategic-partnership-to-reimagine-health-for-aging-populations-and-their-care-teams/" target="_blank">휴머나</a> 및 <a href="https://customers.microsoft.com/story/ups" target="_blank">UPS</a>와 같은 고객뿐만 아니라 제조, 소매, 항공 우주 및 동물 보호와 같은 분야의 다른 고객들은 대규모 AI를 통해 의미 있는 결과를 이끌어낼 수 있도록 Azure AI 서비스를 배포하고 있습니다.</p>
+
+
+  <p>Were&rsquo;는 Azure AI가 현재 <strong>20,000명 이상의 활성 유료 고객을</strong> &ndash; 보유하고 있으며 <strong>포춘지 선정 100대 기업 중 85% 이상이 지난 12</strong> 개월 동안 Azure AI를 사용했다는 사실을 공유하게 되어 기쁘게 생각합니다. 또한 Azure AI 고객은 <strong>매월 100만 개 이상의 기계 학습 실험을</strong> 실행하고, Azure Cognitive Search를 사용하여 <strong>하루에 60억</strong> 개 이상의 문서를 처리하고, <strong>매월 50억 개 이상의 Cognitive Services 트랜잭션</strong>을 실행하고, <strong>매월 10억 개 이상의 봇 메시지를</strong> 처리합니다.</p>
+
+
+  <h2>기계 학습 채택 가속화</h2>
+
+
+  <p>새로운 기계 학습 디자이너, 자동화된 기계 학습 향상 기능 및 기본 제공 Notebook을 비롯한 새로운 <a href="https://azure.microsoft.com/services/machine-learning-service/" target="_blank">Microsoft Azure Machine Learning</a> 기능은 모든 기술 수준의 데이터 과학자 및 개발자의 요구를 충족하도록 설계되었습니다. 새로운 MLOps(기계 학습 작업) 기능은 데이터 과학 및 IT 팀이 더 나은 협업을 수행하고 더 많은 거버넌스 및 제어를 통해 모델 배포 속도를 높이는 데 도움이 됩니다. 다양한 칩셋을 실행하도록 기계 학습 모델을 최적화하는 프로세스를 간소화하는 ONNX 런타임 1.0의 R 및 가용성을 지원하는 개방형 에코시스템에 계속 투자하고 있습니다. 오늘 Azure Machine Learning <a href="https://azure.microsoft.com/free/services/machine-learning/" target="_blank">무료로 시작할</a> 수 있습니다.</p>
+
+
+  <p><strong>슈나이더 일렉트릭</strong>과 같은 고객은 Azure Machine Learning 사용하여 작업자 위험을 크게 최소화하고 시간을 절약하며 비용을 절감하고 있습니다. <a href="https://customers.microsoft.com/story/schneider-electric-power-utilities-azure" target="_blank">슈나이더 일렉트릭</a>은 Azure Machine Learning 내에서 자동화된 기계 학습 기능을 활용하여 예측 유지 관리에 적합한 모델을 식별하는 프로세스를 1개월에서 1일로 줄여 줍니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin: 12px auto; width: 85%; font-style: italic;">&ldquo;우리 팀의 모든 데이터 과학자는 Azure Machine Learning 서비스를 사용합니다. 그 이유는 무엇일까요? &rsquo;일상적인 작업에서 사용하는 다른 모든 도구와 완전히 상호 운용 가능하기 때문에 추가 교육이 필요하지 않으며 이제 더 빠르게 수행됩니다.&rdquo; &mdash; Matthieu Boujonnier: 분석 애플리케이션 설계자 및 데이터 과학자, 슈나이더 일렉트릭</p>
+
+  </blockquote>
+
+
+  <p><strong><a href="https://www.microsoft.com/microsoft-365/blog/2019/07/09/lexmark-digitizes-its-future-with-modern-workplace-microsoft-365/" target="_blank">Lexmark</a></strong>는 Azure Machine Learning 사용하여 수백만 개의 IoT 지원 프린터에서 수집한 데이터에서 중요한 인사이트를 수집하고 보다 정보에 입각한 비즈니스 결정을 내리고 있습니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin: 12px auto; width: 85%; font-style: italic;">&ldquo;연결된 필드 서비스는 Azure Machine Learning 의해 보강된 Lexmark IoT Hub에서 데이터를 가져와 Dynamics 365에 정보를 공급하므로 개별 머신 및 경고 서비스 기술자가 준비되도록 예측 진단을 만들 수 있습니다.&rdquo;&mdash; 브래드 클레이, 렉스마크 인터내셔널 최고 정보 및 규정 준수 책임자 수석 부사장</p>
+
+  </blockquote>
+
+
+  <p>아프리카&rsquo; <strong><a href="https://www.peaceparks.org/" target="_blank">평화 공원 재단</a> (<a href="https://www.peaceparks.org/how/combating-wildlife-crime/" target="_blank">PPF</a>)</strong><b></b>의 야생 동물 범죄 팀은 남아프리카 보호 기관 Ezemvelo KZN 야생 동물과 협력하여 코뿔소 밀렵을 모니터링하고 방지하기 위해 Azure Machine Learning 사용하고 있습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" height="315" src="https://channel9.msdn.com/Shows/AI-Show/Peace-Parks-Foundation-tackles-rhino-poaching-with-Azure-Machine-Learning/player" width="560"></iframe></p>
+
+
+  <h2>지능형 앱 및 에이전트 개발 간소화</h2>
+
+
+  <p><a href="https://azure.microsoft.com/services/cognitive-services/" target="_blank">Azure Cognitive Services</a> 는 도메인별, 즉시 사용할 수 있는 AI 모델의 포괄적인 집합입니다. 오늘, 보충 학습을 기반으로 하는 업계&#39;최초의 AI 서비스인 Personalizer라는 새로운 Azure Cognitive Service의 일반 공급이 발표됩니다. Personalizer를 통해 기업은 각 고객 상호 작용에서 가장 관련성이 높은 콘텐츠 및 환경의 우선 순위를 지정하여 풍부한 고객 상호 작용을 만들 수 있습니다. 새로운<b> </b>Speech Service 기능은 고객이 심층 신경망을 사용하여 브랜드 음성을 만들 수 있는 <a href="https://azure.microsoft.com/services/cognitive-services/text-to-speech/" target="_blank">사용자 지정 신경망 음성 </a>및 Office 365 데이터를 사용하여 최적화된 사용자 지정 음성 모델을 자동으로 만드는 기능을 포함하여 미리 보기로 제공됩니다. <a href="https://azure.microsoft.com/services/cognitive-services/text-analytics/" target="_blank">Text Analytics</a><b></b>에 대한 업데이트에는 문서에서 개인 식별 정보를 검색하고 추출하는 기능과 100개 이상의 명명된 엔터티 형식에 대한 확장된 엔터티 형식 지원이 포함됩니다. 새 <a href="https://azure.microsoft.com/services/bot-service/" target="_blank">Bot Framework Composer</a> 그래픽 사용자 인터페이스를 통해 봇 만들기를 간소화하는 데 도움이 됩니다. Cognitive Services 및 Bot Service를 <a href="https://azure.microsoft.com/free/services/cognitive-services/" target="_blank">무료로 시작할</a> 수 있습니다.</p>
+
+
+  <p>유럽 항공우주 제조업체인 <strong>에어버스</strong>와 같은 고객은 Azure Cognitive Services를 사용하여 혼합 항공기 함대에 대한 예측 유지 관리를 제공하고 있습니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin: 12px auto; width: 85%; font-style: italic;">&ldquo;혁신은 항상 에어버스의 원동력이었습니다. Azure Cognitive Service인 Anomaly Detector를 사용하여 일부 항공기 예측 유지 관리 사용 사례를 보다 쉽게 해결할 수 있습니다.&rdquo; &mdash;피터 웨케서, 디지털 트랜스포메이션 책임자, 국방 및 우주, 에어버스</p>
+
+  </blockquote>
+
+
+  <p><strong>Spotify</strong> 는 누구나 스토리텔러용 사운드트랩 애플리케이션으로 팟캐스트를 쉽게 만들 수 있도록 합니다. Speech Service를 사용하여 Spotify는 콘텐츠 제작자가 팟캐스터&rsquo; 오디오 트랙을 자동 전사하고 전사된 문서 내에서 직접 편집할 수 있도록 하여 전체 팟캐스트 편집 프로세스를 간소화할 수 있도록 돕고 있습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/4wrweO1SdZA" width="560"></iframe></p>
+
+
+  <p>하라스,<b> </b> 시저스, 호스슈 등의 브랜드를 운영하는 <strong><a href="https://customers.microsoft.com/story/739892-caesars-media-and-entertainment-azure-office365" target="_blank">시저스 엔터테인먼트</a></strong>는 Azure Bot Service를 사용하여 문자 메시지 봇을 배포하여 사용자의&rsquo; 질문에 답변하고 있습니다.&rsquo;</p>
+
+
+  <p>보험 부문에서<strong> Nationwide</strong> 는 Azure 봇 서비스를 사용하여 매월 25,000개의 상호 작용을 처리하는 봇 NOVA를 구축했습니다. 현재 전국&#39;로그인 및 클레임 웹 사이트를 통해 고객이 사용할 수 있는 NOVA를 사용하면 고객이 더 복잡한 요청에 집중할 수 있도록 콜 센터 에이전트를 확보하면서 처리를 위해 손실 클레임을 제출하고, 자주 묻는 질문을 해결하고, 암호 재설정을 부여할 수 있습니다.</p>
+
+
+  <h2>지식 마이닝으로 콘텐츠에서 잠재 인사이트 파악</h2>
+
+
+  <p><a href="https://azure.microsoft.com/services/search/" target="_blank">이전에 Azure Search로 알려진 Azure Cognitive Search</a>는 콘텐츠의 패턴과 관계를 검색하고, 감정을 이해하고, 핵심 구를 추출하는 데 사용할 수 있는 AI 기능이 내장된 유일한 클라우드 검색 서비스입니다. 새로운 데이터 커넥터,<b> </b>추가 기본 제공 AI 기술 및 확장된 지역 가용성을 포함하여<b> </b><b> </b>Azure Cognitive Search를 업데이트하면 기업에서 구조화되고 구조화되지 않은 정보를 수집, 보강 및 검색하여 더 나은 비즈니스 의사 결정에 영향을 주는 지식 마이닝 애플리케이션을 쉽게 빌드할 수 있습니다. Azure Cognitive Search <a href="https://azure.microsoft.com/services/search/">를 사용하여 무료로 시작할</a> 수 있습니다.</p>
+
+
+  <p><strong>Atlantic</strong> 은 Azure AI를 사용하여 160년 동안 게시된 기록을 카탈로그화하고 보존합니다. Azure Cognitive Search를 활용하여 게시는 하드 카피에서 디지털 시스템으로 전환되고 있으며, 이 시스템에서는 대중이 아카이브를 탐색할 수 있을 뿐만 아니라 작가가 스토리 간의 연결을 구축하고 콘텐츠를 보강할 수 있는 리소스로 사용할 수 있습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/Svd_0k8PKAk?rel=0" width="560"></iframe></p>
+
+
+  <p>지능형 정보 관리 솔루션 공급자<strong>인 <a href="https://customers.microsoft.com/story/archive360-partner-professional-services-azure-search" target="_blank">Archive360</a></strong>은 Azure Cognitive Search를 사용하여 고객이 페타바이트 크기의 보관 데이터 세트에 대해 빠르고 비용 효율적으로 복잡한 질문을 할 수 있도록 합니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&quot;Azure Cognitive Search를 사용하여 고객에게 필요한 검색 성능과 단순성을 제공함으로써 이전보다 더 심층적인 데이터 인사이트를 제공할 수 있습니다.&quot;&mdash; Tibi Popp, 최고 기술 책임자, 아카이브 360</em></p>
+
+  </blockquote>
+
+
+  <p><strong><a href="https://customers.microsoft.com/story/734572-autotrader-automotive-azure" target="_blank">신규</a></strong> 또는 중고차 시장에서 매월 500만 명 이상의 캐나다인에게 서비스를 제공하는 autoTRADER.ca Azure Cognitive Search를 사용하여 딜러-딜러 경매 사이트를 포함한 새로운 성장 기회를 시작하고 이전 검색 엔진을 소비자 마켓플레이스에 대한 보다 비용 효과적이고 확장 가능하며 향상된 검색 환경으로 대체할 계획을 세우고 있습니다.</p>
+
+
+  <blockquote>
+
+  <p 5="" a="" and="" as="" auction="" azure="" been="" by="" can="" canadians="" chief="" cognitive="" consumer="" customers="" data="" dealer-to-dealer="" deeper="" deliver="" engine="" ever="" experience="" for="" growth="" has="" href="https://customers.microsoft.com/en-us/story/734572-autotrader-automotive-azure" improved="" in="" including="" insights="" launch="" market="" million="" monthly="" more="" new="" old="" opportunities="" or="" p="" performance="" plans="" provide="" replace="" search="" serves="" simplicity="" style="margin: 12px auto; width: 85%; font-style: italic;" target="_blank" technology="" than="" the="" their="" they="" tibi="" to="" used="" using="" we="" well="" which="" with="">&ldquo;Azure Cognitive Search를 사용하면 딜러 경매 사이트를 시작할 수 있습니다. 그렇지 않으면 할 수 없었고&rsquo;,&rsquo; 마켓플레이스에 Azure Cognitive Search를 사용하는 것에 대해 매우 기쁘게 생각하고 있습니다. 모든 장치에서 즉각적이고 원활한 환경을 통해 고객에게 더 나은 서비스를 제공할 수 있는 기회를 제공합니다.&rdquo;&mdash; 앨런 웨일즈: 기술 담당 부사장, autoTRADER.ca</p>
+
+  </blockquote>
+
+
+  <p>&rsquo;Azure AI를 채택하는 엔터프라이즈 기업의 스타트업을 보고 기뻐하지만, 우리는 기업이 AI의 모든 이점을 활용하는 능력을 저해&rsquo;하는 장벽을 해결하는 데 초점을 맞추고 있습니다.</p>
+
+
+  <p>앞으로 몇 달 동안 더 많은 업데이트를 계속 지켜봐 주시기 바랍니다.&rsquo; 그동안 Microsoft는 Microsoft&rsquo; AI 플랫폼인 Azure AI의 기능으로 가장 어려운 비즈니스 문제를 해결할 수 있는 방법을 알아보는 데 도움을 줍니다. <a href="https://azure.microsoft.com/free/ai/" target="_blank">지금 Azure AI</a> 무료 평가판을 시작하세요.&nbsp;</p>
+
+
+  <hr>
+
+  <p><em>Azure. 목적에 따라 발명.</em></p>

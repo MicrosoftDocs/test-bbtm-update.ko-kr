@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5c67459c940b384e4bf90927d5bf8eb3c877b5ab
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911353"
+Slug: azure-iot-suite-helps-sandvik-coromant-stay-on-cutting-edge-within-digital-manufacturing
+Title: Azure IoT Suite는 샌드빅 코로만트가 디지털 제조에서 최첨단을 유지할 수 있도록 도와줍니다.
+Summary: '기술은 꽤 놀라운 것들을 가능하게했지만, 한 번에 두 장소에있는 것은 여전히 그들 중 하나가 아닙니다. '
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/413c7a27-46e5-404c-b917-5a6876e034e2.png"><img alt="Manufacturing" border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e7281d09-f283-4cc3-90b0-1861f06a2bed.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="제조" width="1024"></a></p>
+
+
+  <p>기술은 꽤 놀라운 것들을 가능하게했지만, 한 번에 두 장소에있는 것은 여전히 그들 중 하나가 아닙니다&rsquo;. 다행히 IoT(사물 인터넷)를 통해 기업은 전문 지식을 보다 효율적으로 사용하고 공유할 수 있으므로 인력을 늘릴 필요 없이 생산성을 높일 수 있습니다.</p>
+
+
+  <p>예를 들어, 샌드빅 코로만트는 글로벌 산업 그룹 샌드빅의 일부입니다. 샌드빅 코로만트는 글로벌 시장의 선두 주자로서 수십 년 동안 도구 및 제조 산업 내에서 광범위한 노하우를 개발해 왔습니다. 제조 내에서 디지털 솔루션이 등장한 이후 샌드빅 코로만트는 이 지식을 이른바 &ldquo;디지털 제조로 성공적으로 이전했습니다&rdquo;.</p>
+
+
+  <p>Sandvik Coromant는 항상 기술 개발을 추구하기 위해 최선을 다하고 있으며 제조 고객과 긴밀히 협력하여 신뢰할 수있는 도구 및 도구 솔루션을 제공한다고 믿습니다. 이러한 헌신은 150여 개국의 &ldquo;고객에게 교육 및 문제 해결을 제공하는 광범위한 전문 지식을 갖춘 기술 전문가인 노란색 코트&rdquo; 팀에 의해 구현됩니다. 샌드빅 코로만트 센터 &ldquo;와 원격으로 고객을 돕는 것 외에도 노란색 코트&rdquo; 는 현장 방문을 실시하여 필요에 따라 조정하고 고객&rsquo; 제조 프로세스를 개선하기 위한 권장 사항을 제공할 수 있습니다.</p>
+
+
+  <p>지속적인 성장은 샌드빅 코로만트에게 새로운 도전이 되었으나&mdash;&ldquo;, 노란색 코트는&rdquo; 한 번에 어디에나 있을 수 없었습니다&rsquo;. 문제는 품질에 영향을 주지 않고 팀&rsquo; 서비스를 신속하게 확장하는 방법이었습니다.</p>
+
+
+  <p>IoT에서 답변을 제공했습니다. 복합 재료의 발전과 센서 및 기타 IoT 기술의 이점으로 인해 많은 제조업체가 Industry 4.0의 &ldquo;현실을 개선해야 했습니다&rdquo;. Sandvik Coromant는 고객이 익숙한 &ldquo;것과 동일한 세계적 수준의 서비스 품질 및 기술 전문 지식을 제공하는 확장 가능한 서비스 모델을 만들 수 있는 기회를 제공했으며 필요한 경우 노란색 코트를&rdquo; 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://www.microsoft.com/en-us/cloud-platform/internet-of-things-azure-iot-suite">Microsoft는 Azure IoT Suite</a>, Cortana Intelligence 및 Dynamics 365를 사용하여 샌드빅 코로만트가 공급망 및 제작 프로세스의 모든 요소를 연결하는 예측 분석 솔루션으로 서비스 모델을 개발하는 데 도움을 주었습니다.</p>
+
+
+  <p>IoT Suite는 매장 전체의 모든 도구에 포함된 센서에서 데이터를 수집, 컴퓨팅 및 분석하여 성능의 모든 측면과 전체 공급망 또는 제조에 병목 현상이 있는지 모니터링합니다. 그런 다음, Cortana Intelligence를 통해 Sandvik Coromant는 해당 분석을 수행하고 제조 프로세스를 최적화하는 방법에 대한 권장 사항을 제시하고 예정되지 않은 종료를 방지하도록 설계된 예측 유지 관리 일정을&rsquo; 만듭니다. 마지막으로, 이 솔루션은 CRM 시스템의 마스터 데이터를 매장 시스템 및 가공 시스템의 메타 데이터와 통합하고 CRM을 통해 샌드빅 코로만트로 사용할 수 있게 해주며, 이를 통해 피드백을 제공하고 도구를 변경하거나 주문할 시기를 예측할 수 있습니다.</p>
+
+
+  <p><a href="https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/2016/09/Sandvik_Hero-e1473275175867.png"><img alt="Sandvik_Hero" height="150" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Sandvik_Hero-e1473275175867-150x150.png" width="150"></a></p>
+
+
+  <p>&ldquo;Microsoft와의 긴밀한 파트너십을 통해 기계 데이터, 도구 데이터와 같은 모든 정보를 수집하는 사내 현장 제어 도구를 연결하는 새로운 예측 분석 제조 솔루션을 개발했으며, Machine Learning 알고리즘을 사용하여 실시간 분석을 위해 Azure로 전송하여 프로세스를 실시간으로 최적화하고 예측 유지 관리 일정을 설정하고 경보를 설정하여 머신을 사용하는 시기를 알 수 있습니다.  오류가 발생하기 전에 오프라인으로 전환합니다. 결국, 우리의 고객은 더 수익성이&rdquo; 되기 위해 더 빠르고 더 나은 정보에 입각한 결정을 내릴 수있을 것입니다 Nevzat 에르탄, 수석 건축가 &amp; 수석 매니저, 샌드빅 코로만트 말한다.</p>
+
+
+  <p>이 기술을 통해 Sandvik Coromant는 심층 전문 지식을 디지털화하고 고객이 보다 정보에 입각한 의사 결정을 내리고 새로운 가공 도구에서 재무 수익을 보다 쉽게 계산할 수 있는 서비스를 제공합니다. 이를 통해 추가 수익, 더 행복한 고객 및 기술 전문가가 고객과 연결하는 방법에 대한 유연성이 향상됩니다.</p>
+
+
+  <p><a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=28859">샌드빅 Coromant 고객 스토리를 </a>읽고 회사&rsquo; 예측 분석 솔루션에 대해 자세히 알아보세요. <a href="https://www.InternetofYourThings.com">IoT가 현재 비즈니스를 어떻게 변화시킬 수</a> 있는지 알아봅니다.</p>

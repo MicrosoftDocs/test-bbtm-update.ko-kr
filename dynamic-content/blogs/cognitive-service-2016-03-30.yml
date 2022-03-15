@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6e824684ba8ec88f7f264fb1bcf512e0973365a0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906033"
+Slug: cognitive-service-2016-03-30
+Title: //Build 2016에서 발표된 Cognitive Services
+Summary: //Build 2016에서 발표된 Microsoft Cognitive Services는 개발자가 애플리케이션을 보다 지능적이고 매력적이며 검색 가능하게 만들 수 있는 새로운 인텔리전스 및 지식 API 컬렉션입니다. 그것은 Bing 지능형 API를 포함, 전 Project 옥스포드, 그리고 더, 시스템이 보고, 듣고, 말하고, 이해하고 통신의 자연 방법을 사용하여 우리의 요구를 해석 할 수 있도록, ...
+Content: >-
+  <p>//Build 2016에서 발표된 Microsoft Cognitive Services는 개발자가 애플리케이션을 보다 지능적이고 매력적이며 검색 가능하게 만들 수 있는 새로운 인텔리전스 및 지식 API 컬렉션입니다. 여기에는 Bing, 이전 Project Oxford 등의 지능형 API가 포함되어 있으며, 이를 통해 시스템은 자연스러운 통신 방법 및 개발자에게 웹의 기능을 제공하는 지식 API를 사용하여 요구 사항을 보고 듣고, 말하고, 이해하고 해석할 수 있습니다.</p>
+
+  <p>Cognitive Services를 사용하면 개발자는 감정 및 감정 감지, 비전 및 음성 인식, 지식, 검색 및 언어 이해 &ndash; 와 같은 지능형 기능을 &ndash;&nbsp;애플리케이션에 쉽게 추가할 수 있습니다. 컬렉션은 지속적으로 개선되어 새 API를 추가하고 기존 API를 업데이트합니다. 오늘 발표:</p>
+
+  <ul>
+
+  <li>Computer Vision API는 2,000개 이상의&nbsp; 이미지 범주로 확장되었으며 이제 이미지에 대한 자연어 캡션을 포함합니다.</li>
+
+  <li><a href="https://aka.ms/TranslatorS2SAnnouncement">이제 Microsoft 번역기 API</a>에는 음성 번역이 포함됩니다.</li>
+
+  <li>이제 Emotion API는 정적 이미지뿐만 아니라 비디오의 감정을 감지할 수 있습니다.</li>
+
+  <li>Language Understanding Intelligent Service는 이제 세 가지 추가 언어(스페인어, 이탈리아어 및 프랑스어) 및 계층적 엔터티 검색을 지원합니다.</li>
+
+  <li>새 버전의 Bing Search, Bing Image Search, Bing Video Search 및 Bing News Search API;</li>
+
+  <li>Bing 자동 제안, 맞춤법 검사, 지식 탐색 서비스, 엔터티 연결 API 및 언어 분석 API를 포함한 새 API 및 업데이트된 API입니다.</li>
+
+  </ul>

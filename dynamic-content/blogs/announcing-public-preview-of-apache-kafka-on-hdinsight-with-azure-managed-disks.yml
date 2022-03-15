@@ -1,0 +1,111 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 372857bccdf74a73f2c60e216317a1190ef9d823
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911433"
+Slug: announcing-public-preview-of-apache-kafka-on-hdinsight-with-azure-managed-disks
+Title: Azure Managed Disks를 사용하여 HDInsight의 Apache Kafka 공개 미리 보기 발표
+Summary: HDInsight는 기업이 Azure에서 안전하고 강력하고 확장 가능한 오픈 소스 스트리밍 파이프라인을 빌드할 수 있도록 지원하려는 확고한 목표를 세웠습니다. 이 목표를 달성하기 위해 몇 달 전에 Azure HDInsight에서 Managed Kafka의 제한된 미리 보기를 발표했습니다.
+Content: >-
+  <p>HDInsight는 기업이 Azure에서 안전하고 강력하고 확장 가능한 오픈 소스 스트리밍 파이프라인을 빌드할 수 있도록 지원하려는 확고한 목표를 세웠습니다. 이 목표를 달성하기 위해 몇 달 전에 <a href="https://azure.microsoft.com/en-us/services/hdinsight/apache-kafka/">Azure HDInsight에서 Managed Kafka</a>의 제한된 미리 보기를 <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=5&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwi2ge_F-LrUAhUhS5oKHWZFAg4QFghCMAQ&amp;url=https%3A%2F%2Fchannel9.msdn.com%2FShows%2FAzure-Friday%2FIntroducing-Apache-Kafka-on-Azure-HDInsight&amp;usg=AFQjCNE9K8XAt-z0ppbTkFYk6bgbsEbduw&amp;sig2=1JR8uoivaE9PURAqCjqeSg">발표</a>했습니다. HDInsight에서 Kafka를 추가하면 Azure에서 확장 가능한 오픈 소스 스트리밍을 위한 수집 작업이 완료됩니다. HDInsight Kafka 고객은 Apache Kafka의 규모 및 성능 이점 외에도 다음과 같은 이점을 얻을 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/support/legal/sla/hdinsight/v1_0/?v=17.23h">99.9%</a> 가동 시간 SLA를 통해 지원되는 관리형 오픈 소스 Kafka의 약속
+
+   <ul>
+    <li>여기에는 오픈 소스 구성 요소의 설치, 구성 및 관리가 포함됩니다.</li>
+    <li>또한 HDInsight는 클러스터 셰이프의 일부로 Zookeeper 쿼럼을 프로비전하고 모니터링합니다.</li>
+   </ul>
+   </li>
+   <li>Azure 업데이트 도메인 및 장애 도메인에서 복제본 및 파티션의 관리되는 리밸런스. 이렇게 하면 랙의 다차원 뷰가 있는 환경에서 Kafka 파티션의 고가용성이 보장됩니다. 이 도구는 <a href="https://github.com/hdinsight/hdinsight-kafka-tools">여기에서 오픈 소스로도 사용할 수 있습니다</a>.</li>
+   <li>SOC, PCI, DSS와 같은 인증을 통해 <a href="https://www.microsoft.com/en-us/TrustCenter/Compliance">Azure</a> 및 <a href="https://azure.microsoft.com/en-us/services/hdinsight/?v=17.23h">HDInsight</a> 의 보안 및 규정 준수 이점</li>
+   <li>ARM 템플릿에서 미리 빌드된 아키텍처를 통해 몇 분 내에 관리되고 안전한 스트리밍 파이프라인(Kafka, Storm 또는 Spark 스트리밍)을 배포하는 통합 환경입니다.</li>
+  </ul>
+
+
+  <p>오늘 HDInsight 플랫폼에서 <a href="https://azure.microsoft.com/en-us/services/managed-disks/">Azure Managed Disks</a> 를 사용하여 Apache Kafka의 공개 미리 보기를 발표하게 되어 기쁩니다. 이제 사용자는 등록할 필요 없이 Azure Portal에서 바로 관리 디스크가 있는 Kafka 클러스터를 배포할 수 있습니다. 이를 통해 워크로드가 확장됨에 따라 기하급수적으로 낮은 비용과 함께 기하급수적으로 더 높은 확장성의 강력한 이점을 누릴 수 있습니다. 이 기능은 아래에서 자세히 설명합니다.</p>
+
+
+  <h2>고객 성공 사례: 도요타 커넥티드</h2>
+
+
+  <p>지난 한 해 동안 HDInsight는 세계에서 가장 크고 가장 분산 된 커넥티드 카 스트리밍 플랫폼 중&rsquo; 하나를 구축하기 위해 도요타 Inc.와 매우 긴밀하게 협력했습니다. 이 플랫폼은 HDInsight Kafka의 프로덕션 환경에서 매일 수백만 개의 대규모 이벤트를 처리하여 실시간으로 인사이트를 잠금 해제합니다. 이 규모의 플랫폼은 HDInsight의 안전하고 관리되며 탄력적으로 확장 가능한 특성에 의해 가능해졌습니다. 혜택은 가장 아래 연결된 도요타의 최고 제품 소유자에 의해 설명된다.</p>
+
+
+  <blockquote>
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a5a7e242-6d34-4d43-8091-6f19cd664dea.png"><img align="left" alt="image" border="0" height="121" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2a321347-6588-4d17-aa18-cc96ac94e872.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: left; display: inline; background-image: none;" title="imageToyota" width="189"></a>&quot;는 전 세계적으로 수백만 대의 자동차를 제조하고 있으며 도요타 규모로 실시간 데이터를 처리하는 커넥티드 카 플랫폼을 구축하는 것은 엄청난 도전입니다. 도요타&rsquo; 규모로 이벤트를 처리하려면 Kafka와 같은 기술을 활용해야 합니다. HDInsight는 Kafka를 99.9% SLA로 관리되는 서비스로 제공하는 유일한 관리형 플랫폼이므로 도요타는 Azure HDInsight에서 Kafka, Storm 및 Spark의 확장 가능한 기술을 활용할 수 있었습니다. HDInsight 플랫폼을 사용하여 엔터프라이즈급 스트리밍 파이프라인을 배포하여 매초 수백만 대의 자동차에서 이벤트를 처리할 수 있었습니다. 이것은 단지 표면을 긁는 것입니다 - Azure HDInsight의 글로벌 커넥티드 카의 미래는 밝으며, 우리는&#39;저장소에 있는 것에 대해 기쁘게 생각합니다.&quot;&nbsp;&nbsp; -Vijay Chemuturi, 최고 제품 소유자, 도요타 연결</p>
+
+  </blockquote>
+
+
+  <p>연결된 자동차 아키텍처의 고급 아키텍처가 아래에 설명되어 있습니다. Vijay가 말했듯이, 이것은 &ndash; 우리가 앞으로 몇 달 안에이 강력한 스트리밍 플랫폼을 기반으로 구축하게되어 매우 기쁩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ca4cbb01-9e0e-428b-8a5f-0dca84d4bcc5.png"><img alt="Toyota-Blog-Arch-3" border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f1c6418d-6f86-4cdb-bc82-548ef84c25f0.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="도요타 블로그 아치-3" width="1024"></a></p>
+
+
+  <p>유사한 IoT 시나리오 설계에 대한 자세한 내용은 향후 일련의 블로그를 참조하세요.</p>
+
+
+  <h2>AZURE Managed Disks와 HDInsight Kafka 통합</h2>
+
+
+  <p>이 공개 미리 보기를 통해 HDInsight Kafka는 Azure Managed Disks와의 네이티브 통합도 릴리스합니다.</p>
+
+
+  <p>Azure Managed Disks는 더 쉽고 관리되는 경로가 디스크를 사용할 수 있도록 고객의 스토리지 계정 사양을 추상화하는 새로운 기능입니다. 중앙 집중식 스토리지 계정에서 지정된 VHD에서 수백 개의 VM을 만드는 기능과 함께 스토리지 계정 IOPS 제한을 폐지하여 더 높은 규모를 제공합니다. 디스크는 Premium(SSD) 또는 표준(HDD) 및 1TB 크기일 수 있습니다. 이 기능에 대한 자세한 내용은 여기를 참조하세요.</p>
+
+
+  <p>Kafka는 I/O가 많은 높은 처리량, 짧은 대기 시간 메시징 서비스입니다. Azure Managed Disks 이전의 HDInsight Kafkas&rsquo; 원래 미리 보기는 노드의 가장 큰 지속형 디스크에 저장된 데이터를 제공합니다. 즉, 각 노드의 제한은 1TB입니다. Kafkas&rsquo; I/O가 많은 특성을 감안할 때 디스크는 종종 병목 상태가 되고 더 많은 스토리지를 위해 추가 노드를 추가해야 합니다. 이로 인해 클러스터에서 CPU 및 메모리의 총 사용이 미달되는 높은 비용이 발생했습니다. 이 릴리스에서는 아래 그림과 같이 Managed Disks 기능을 사용하여 HDInsight Kafka를 구현하고 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0f8c2c1c-5f39-487a-b862-04fd60c560fb.png"><img alt="Kafka-MD-Diagram" border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e753a130-ce6b-47cc-b104-27cad7858d30.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Kafka-MD-Diagram" width="1024"></a></p>
+
+
+  <p>이 기능을 사용하면 노드당 최대 16TB의 지속형 데이터와 확장 가능한 데이터를 모두 가질 수 있습니다. 이렇게 하면 워크로드가 증가함에 따라 기하급수적으로 더 낮은 비용, 더 높은 확장성 및 더 나은 성능을 사용할 수 있습니다. 디스크 비용은 노드 비용의 일부이므로 아래 그림에서는 크기 조정 요구 사항이 증가함에 따라 노드 수와 비용이 기하급수적으로 축소되는 방식을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b55a01bf-8195-4e48-9b90-4dc5b8dfb657.png"><img alt="KafkaBlogScale" border="0" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/31a8586e-a27d-486b-abf7-83e822639d9e.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="KafkaBlogScale" width="1024"></a></p>
+
+
+  <p>이 기능은 자동으로 켜지고 이 기능을 &ndash; 활용하면 사용자가 지정된 노드에 연결할 디스크 수를 지정하기만 하면 됩니다. 이 작업은 포털을 통해 수행하거나 아래 그림과 같이 ARM 템플릿에서 단일 속성을 지정하여 수행할 수 있습니다. 디스크 &ndash; Premium 또는 표준 유형은 작업자 노드를 선택한 VM 유형에 따라 결정됩니다. Premium 디스크는 <strong>DS</strong> 및 <strong>GS</strong> 시리즈 VM에 연결된 반면 표준은 다른 모든 VM 유형에 연결됩니다. 이러한 클러스터를 만드는 방법에 대한 예제와 함께 종단 간 템플릿은 다음 섹션에서 자세히 설명합니다. 이에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-kafka-get-started">설명서</a>에 있습니다.</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="533">
+   <tbody>
+    <tr>
+     <td valign="top" width="222"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/04067fd1-0ee6-42e4-abef-140cd1483dd7.png"><img alt="KafkaBlogPortal" border="0" height="354" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/93bc6b29-3f05-4a4c-a7b4-fe344ee1011d.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="KafkaBlogPortal" width="350"></a></td>
+     <td valign="top" width="309"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/44335bed-7ad3-44cb-89ec-afc0a4662bf6.png"><img align="left" alt="image" border="0" height="356" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/74cc5a47-5d3a-4a11-8863-ffcb0805c584.png" style="border-width: 0px; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: left; display: inline; background-image: none;" title="이미지" width="350"></a></td>
+    </tr>
+    <tr>
+     <td valign="top" width="222">
+     <p align="left"><em>포털 1을 통한 디스크 사양</em></p>
+     </td>
+     <td valign="top" width="309">
+     <p align="left"><em>ARM 템플릿 1을 통한 디스크 사양</em></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>몇 분 내에 HDInsight의 Managed Disks에서 Spark, Storm 및 Kafka 배포 및 사용 시작</h2>
+
+
+  <p>HDInsight에서 확장 가능한 오픈 소스 스트리밍 솔루션을 배포하는 데 도움이 되도록 설명서 및 샘플을 업데이트했습니다. 이러한 각 예제는 클러스터를 단계별로 만드는 방법을 안내하고 강력한 파이프라인을 사용하도록 설정하는 ARM 템플릿을 한 번 클릭으로 배포합니다. 또한 구조적 스트리밍에 대한 새로운 예제를 포함하도록 Spark 스트리밍 예제를 업데이트하고 Twitter, Kafka, Spark Streaming을 사용하여 종단 간 파이프라인을 만들었습니다.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-kafka-get-started">HDInsight용 Kafka 시작</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-spark-with-kafka">HDInsight Kafka + Spark 스트리밍 배포</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-storm-with-kafka">HDInsight Kafka + Storm 배포</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-kafka-connect-vpn-gateway">온-프레미스에서 클라우드의 HDInsight Kafka로 데이터 스트리밍</a></li>
+   <li><a href="https://docs.microsoft.com/azure/hdinsight/hdinsight-apache-kafka-spark-structured-streaming">HDInsight Kafka로 트윗 스트리밍 및 Spark 구조적 스트리밍으로 처리</a></li>
+  </ul>
+
+
+  <p>질문, 제안 또는 피드백은 주저 <a href="mailto:HDIFeedback@microsoft.com">HDIFeedback@microsoft.com</a>하지 말고 . 우리는 당신이 온보딩하게되어 정말 기쁘고, 당신에게서 듣고 싶습니다.</p>

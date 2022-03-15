@@ -1,0 +1,507 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 980a4e166f0232e1ed27efa081b62b935e51d3a1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911955"
+Slug: data-series-sql-server-in-windows-azure-virtual-machine-vs-sql-database
+Title: '데이터 시리즈: Windows Azure Virtual Machine의 SQL Server 및 SQL Database'
+Summary: >-
+  이 블로그 게시물은 최신 상태가 아닙니다. 최신 정보는 다음을 참조하세요.
+
+      Understanding Azure SQL Database and SQL Server in Azure VMs
+      Azure SQL Database
+      SQL Server in Azure Virtual Machines
+
+  &...
+Content: >-
+  <strong>이 블로그 게시물은 최신 상태가 아닙니다. 최신 정보는 다음을 참조하세요.</strong>
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/data-management-azure-sql-database-and-sql-server-iaas/">Azure SQL 데이터베이스 및 Azure VM의 SQL Server 이해</a></li>
+   <li><a href="https://msdn.microsoft.com/en-us/library/azure/ee336279.aspx">Azure SQL Database</a></li>
+   <li><a href="https://msdn.microsoft.com/en-us/library/azure/jj823132.aspx">Azure Virtual Machines의 SQL Server</a></li>
+  </ul>
+
+  &nbsp;
+
+
+  이러한 두 클라우드 데이터베이스 선택 중 특정 솔루션에 더 적합한 옵션을 결정하는 주요 기준은 다음과 같습니다.
+
+  <ul>
+   <li>SQL Server box 제품 버전과의 완전한 호환성</li>
+   <li>제어 및 비용</li>
+   <li>데이터베이스 스케일 아웃 요구 사항</li>
+  </ul>
+
+  일반적으로 두 옵션은 서로 다른 용도로 최적화됩니다.
+
+  <ul>
+   <li>SQL Database 가능한 최소 금액으로 <b>비용을 절감</b>하도록 최적화되어 있습니다.고객이 <b>가상 머신 또는 데이터베이스 소프트웨어를 프로비전하거나 유지 관리할 필요가 없</b>으므로 지속적인 관리 비용을 절감하면서 클라우드에서 스케일 아웃 데이터 계층을 빌드하는 매우 빠르고 쉬운 방법을 제공합니다.</li>
+   <li>Windows Azure VM에서 실행되는 SQL Server <b>기존 애플리케이션 및 하이브리드 애플리케이션과의 최상의 호환성을 위해 최적화되어 있습니다</b>.전체 SQL Server box 제품 기능을 제공하고 관리자에게 전용 SQL Server 인스턴스 및 클라우드 기반 VM에 대한 모든 권한을 부여합니다.</li>
+  </ul>
+
+  <h3>SQL Server Box Product Edition과의 호환성</h3>
+
+  기능 및 호환성 관점에서 Windows Azure VM에서 SQL Server 2012(또는 이전 버전)를 실행하는 것은 사용자 고유의 데이터 센터에서 호스트되는 VM에서 전체 SQL Server 상자 제품을 실행하는 것과 다르지 않습니다. 전체 상자 제품이며 지원되는 기능은 SQL Server 버전에 따라 달라집니다.  배포합니다(AlwaysOn 가용성 그룹은 현재 미리 보기 릴리스가 아닌 GA에서 지원을 대상으로 하며 Windows 클러스터링을 GA에서 사용할 수 없음).Windows Azure VM에서 SQL Server 실행하는 이점은 인프라를 구입하거나 유지 관리할 필요가 없으므로 TCO가 낮아집니다.기존 SQL Server 기반 애플리케이션은 올바른 버전을 배포하는 한 Windows Azure VM에서 실행되는 SQL Server "작동"합니다.애플리케이션에 전체 SQL Server Enterprise Edition이 필요한 경우 SQL Server Enterprise Edition을 Windows Azure VM에 배포하는 한 기존 애플리케이션이 작동합니다. 여기에는 SQL Server Integration Services, Analysis Services 및 Reporting Services와 같은 기능이 포함됩니다. 코드 마이그레이션이 필요하지 않으며 클라우드 또는 온-프레미스에서 애플리케이션을 실행할 수 있습니다.또한 이번 달에 발표된 새 <a href="https://www.windowsazure.com/en-us/home/features/networking/?WT.mc_id=cmp_pst001_blg_post0140vn" target="_blank">Windows Azure Virtual Network</a>를 사용하여 온-프레미스 도메인에 SQL Server 실행하는 Windows Azure VM을 도메인에 가입할 수도 있습니다. 이는 단일 회사 신뢰 경계 하에서 온-프레미스 및 오프-프레미스에 걸쳐 있는 하이브리드 애플리케이션을 개발할 수 있도록 하는 데 중요합니다.또한 SQL Server 있는 VM 이미지는 Windows Azure 내에서 제공된 스톡 이미지 갤러리에서 클라우드에서 만들거나 기존 배포에서 온-프레미스로 만들어 Windows Azure에 업로드할 수 있습니다. 배포가 완료되면 SQL Server 라이선스 이동성을 사용하여 온-프레미스와 클라우드 간에 VM 이미지를 이동할 수 있으며, 이는 SA(Software Assurance)를 사용하여 SQL Server 사용이 허가된 고객에게 제공됩니다.
+
+
+  반면 Windows Azure SQL Database 모든 SQL Server 기능을 지원하지는 않습니다.기능의 매우 큰 하위 집합이 지원되지만(그리고 이 기능 집합은 시간이 지남에 따라 증가하고 있음), 버전에 SQL Server Enterprise 완전하지는 않으며, 위에서 설명한 대로 SQL Database 대한 다양한 디자인 목표에 따라 차이가 항상 존재합니다. MSDN에서는 SQL Database 및 SQL Server box 제품 간의 중요한 기능 수준 차이점을 설명하는 <a href="https://msdn.microsoft.com/en-us/library/windowsazure/ff394115" target="_blank">가이드</a>를 사용할 수 있습니다.그러나 이러한 차이점이 있더라도 SQL Server Management Studio 및 SQL Server Data Tools 같은 도구는 온-프레미스 및 Windows Azure VM에서 실행되는 SQL Server SQL Database 사용할 수 있습니다. 간단히 말해서, Windows Azure VM에서 SQL Server 실행하는 것은 전체 SQL Server 박스 제품과의 호환성을 고려하여 기존 애플리케이션 및 서비스를 Windows Azure로 마이그레이션하고 단일 회사 신뢰 경계 아래 온-프레미스 및 클라우드에 걸친 하이브리드 애플리케이션 및 서비스를 빌드하는 가장 좋은 경로입니다.그러나 새로운 클라우드 기반 애플리케이션 및 서비스의 경우 SQL Database 아래에서 자세히 설명하는 이유로 더 나은 선택이 될 수 있습니다.
+
+  <h3>제어 및 비용</h3>
+
+  Windows Azure VM에서 실행되는 SQL Server 기본 제품과 동일한 데이터베이스 기능을 제공하지만 SQL Database 비용 및 관리 오버헤드를 최소화하는 서비스로 목표로 합니다.예를 들어 SQL Database 사용하면 클라우드의 컴퓨팅 리소스에 대한 비용을 지불하지 않습니다.대신 100MB 데이터베이스의 경우 매월 $5.00부터 150GB 데이터베이스의 경우 매월 $228.00까지 데이터베이스 크기에 따라 데이터베이스당 사용 요금을 지불하면 됩니다(단일 SQL Database 데이터베이스의 현재 크기 제한).
+
+
+  Windows Azure VM에서 실행되는 SQL Server 최상의 애플리케이션 호환성을 제공하지만 고객이 이해해야 하는 SQL Database 두 가지 중요한 기능이 있습니다.
+
+  <ul>
+   <li>HA(고가용성) 및 99.9% 데이터베이스 가동 시간 SLA 기본 제공</li>
+   <li>SQL Database 페더레이션</li>
+  </ul>
+
+  SQL Database 경우 고가용성이 추가 비용 없이 표준 기능입니다.Windows Azure SQL Database 만들 때마다 해당 데이터베이스는 실제로 주 노드 및 여러 온라인 복제본에서 작동하므로 주 노드가 실패할 경우 보조 노드는 애플리케이션 가동 중지 시간 없이 몇 초 내에 자동으로 대체합니다.이는 추가 비용 없이 SQL Database 99.9% 가동 시간 SLA를 제공할 수 있는 방법입니다.
+
+
+  Windows Azure VM에서 SQL Server 경우 가상 머신 인스턴스는 상용 릴리스에서 SLA(99.9% 가동 시간)를 갖습니다. 이 SLA는 SQL Server 데이터베이스가 아닌 VM 자체용입니다. 데이터베이스 HA의 경우 SQL Server 2012를 실행하는 여러 VM을 구성하고 AlwaysOn 가용성 그룹을 설정할 수 있지만, 이를 위해서는 일부 수동 구성 및 관리가 필요하며, 온-프레미스 HA 구성과 마찬가지로 작동하는 각 보조 데이터베이스에 대해 추가 비용을 지불하게 됩니다.
+
+
+  Windows Azure VM에서 실행되는 SQL Server 운영 체제 및 데이터베이스 구성을 제어할 수 있습니다(구성할 전용 VM이므로). 그러나 시간이 지남에 따라 OS 및 데이터베이스 소프트웨어의 패치 및 업그레이드뿐만 아니라 바이러스 백신, 백업 도구 등과 같은 추가 소프트웨어를 설치하는 것을 포함하여 시간이 지남에 따라 이 VM을 구성하고 유지 관리해야 합니다. SQL Database 사용하면 VM에서 실행되지 않으며 VM 구성을 제어할 수 없습니다. 그러나 데이터 센터에서 Microsoft에서 데이터베이스 소프트웨어를 자동으로 구성, 패치 및 업그레이드하므로 관리 비용이 절감됩니다.
+
+
+  Windows Azure VM의 SQL Server 사용하면 VM의 크기를 제어하여 더 작은 컴퓨팅, 스토리지 및 메모리 구성에서 더 큰 VM 크기로 어느 정도 <b>확장</b>할 수 있습니다. 반면에 SQL Database 더 높은 처리량 속도를 달성하기 위한 스케일 아웃 방식과 스케일 업 접근 방식을 위해 설계되었습니다.페더레이션이라는 SQL Database 고유한 기능을 통해 구현됩니다.페더레이션을 사용하면 단일 논리 데이터베이스를 여러 물리적 노드로 매우 쉽게 분할(분할)하여 가장 까다로운 데이터베이스 기반 애플리케이션에 대해 매우 높은 처리량을 제공합니다.SQL Database 페더레이션 기능은 SQL Database 고유한 PaaS 특성과 거의 마찰 없는 프로비전 및 자동화된 관리로 인해 가능합니다.SQL Database 페더레이션은 아래에서 자세히 설명합니다.
+
+  <h3>데이터베이스 스케일 아웃 요구 사항</h3>
+
+  Azure VM과 SQL Database Windows 실행 중인 SQL Server 선택하기 위한 또 다른 주요 평가 기준은 성능 및 확장성입니다.고객은 성능에 매우 최적화된 하드웨어를 구입할 수 있으므로 자체 하드웨어에서 SQL Server 실행할 때 항상 최상의 수직 확장성(즉, '스케일 업')을 얻을 수 있습니다. Windows Azure VM에서 실행되는 SQL Server 단일 데이터베이스의 성능은 Windows Azure에서 가능한 가장 큰 가상 머신 이미지로 제한됩니다. 이 이미지에는 8개의 가상 CPU, 14GB RAM, 16TB의 스토리지 및 800MB/s 네트워크 대역폭이 있는 VM이 도입됩니다. Storage 성능에 최적화되고 고객이 구성할 수 있습니다.또한 고객은 AlwaysOn 가용성 그룹(미리 보기 릴리스가 아닌 GA)을 구성하고 실행할 수 있으며, 필요에 따라 읽기 전용 보조 데이터베이스 또는 확장 가능한 공유 데이터베이스, 피어 투 피어 복제, 분산 분할된 뷰 및 데이터 종속 라우팅과 같은 다른 스케일 아웃 메커니즘을 사용하여 추가 성능을 얻을 수 있습니다.
+
+
+  반면 SQL Database 고객은 CPU 또는 메모리 수를 선택하지 않습니다. SQL Database 고객이 구성할 필요가 없는 공유 리소스에서 작동합니다.어떤 애플리케이션도 지속적으로 리소스를 지배하지 않도록 SQL Database 리소스 사용량의 균형을 맞추기 위해 노력합니다.그러나 이는 단일 SQL Database 처리량 기능에서 본질적으로 제한되며 특정 데이터베이스가 특정 리소스 제한을 초과하는 경우 자동으로 제한됨을 의미합니다.그러나 SQL Database Federation이라는 기능을 통해 고객은 네이티브 스케일 아웃 기능을 통해 훨씬 더 큰 확장성을 달성할 수 있습니다.페더레이션을 사용하면 단일 논리 데이터베이스를 여러 물리적 노드로 쉽게 분할할 수 있습니다.
+
+
+  SQL Database 이 네이티브 기능을 사용하면 스케일 아웃을 훨씬 쉽게 설정 및 관리할 수 있습니다.예를 들어 SQL Database 사용하면 데이터베이스를 몇 개 또는 수백 개의 노드로 빠르게 분할할 수 있으며, 각 노드는 데이터 계층의 전체 용량에 추가됩니다(애플리케이션은 이 기능을 활용하도록 특별히 설계되어야 합니다).분할 작업은 T-SQL 한 줄만큼 간단하며 데이터베이스는 다시 분할하는 동안에도 온라인 상태로 유지됩니다.SQL Database 페더레이션에 대한 자세한 내용은 여기에서 확인할 수 있습니다.
+
+  <h3>요약</h3>
+
+  이 블로그가 Windows Azure VM(IaaS)과 PaaS(Window Azure SQL Database)에서 실행되는 SQL Server 간의 몇 가지 주요 차이점과 유사성을 소개하는 데 도움이 되기를 바랍니다.좋은 소식은 가까운 장래에 고객이 이러한 두 모델 중에서 선택할 수 있으며 두 모델을 쉽게 혼합하고 다양한 유형의 솔루션에 일치시킬 수 있다는 것입니다.
+
+  <table style="border-color: #0033cc; border-width: 0px; border-style: solid; width: 547px; height: 648px;" border="0" frame="box" rules="all" cellspacing="0" cellpadding="3">
+
+  <tbody>
+
+  <tr>
+
+  <td valign="bottom" width="190">
+
+  <p align="center"><b>조건</b></p>
+
+  </td>
+
+  <td valign="bottom" width="156">
+
+  <p align="center"><b>Windows Azure VM 내 SQL Server</b></p>
+
+  </td>
+
+  <td valign="bottom" width="138">
+
+  <p align="center"><b>Windows Azure SQL 데이터베이스</b></p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190"><b>솔루션에 대한 시간</b></td>
+
+  <td valign="bottom" width="156">&nbsp;</td>
+
+  <td valign="bottom" width="138">&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">기존 앱 마이그레이션</td>
+
+  <td valign="bottom" width="156">
+
+  <p align="center">빠름</p>
+
+  </td>
+
+  <td valign="bottom" width="138">
+
+  <p align="center">보통</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">새 앱 빌드</td>
+
+  <td valign="bottom" width="156">
+
+  <p align="center">보통</p>
+
+  </td>
+
+  <td valign="bottom" width="138">
+
+  <p align="center">빠름</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190"><b>솔루션 비용</b></td>
+
+  <td valign="bottom" width="156">
+
+  <p align="center"></p>
+
+  </td>
+
+  <td valign="bottom" width="138">
+
+  <p align="center"></p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">하드웨어 관리</td>
+
+  <td valign="bottom" width="156">
+
+  <p align="center">없음</p>
+
+  </td>
+
+  <td valign="bottom" width="138">
+
+  <p align="center">없음</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td width="190">소프트웨어 관리(데이터베이스 &amp; OS)</td>
+
+  <td valign="bottom" width="156">
+
+  <p align="center">설명서</p>
+
+  </td>
+
+  <td valign="bottom" width="138">
+
+  <p align="center">없음</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">컴퓨터 고가용성</td>
+
+  <td valign="bottom" width="156">
+
+  <p align="center">자동화됨(상용 릴리스 시 99.9% 가동 시간 SLA)</p>
+
+  </td>
+
+  <td valign="bottom" width="138">
+
+  <p align="center">해당 없음</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">데이터베이스 고가용성</td>
+
+  <td valign="bottom" width="156">
+
+  <p align="center">AlwaysOn을 통한 추가 VM 및 수동 설정(상용 릴리스) DBM; 로그 전달, 트랜잭션 복제를 통한 DR</p>
+
+  </td>
+
+  <td valign="bottom" width="138">
+
+  <p align="center">표준 기능(99.9% DB 가동 시간 SLA)</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">Cost</td>
+
+  <td valign="bottom" width="156">
+
+  <p align="center">중간</p>
+
+  </td>
+
+  <td valign="bottom" width="138">
+
+  <p align="center">낮음</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190"><b>모델 크기 조정</b></td>
+
+  <td width="156">
+
+  <p align="center"></p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center"></p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td width="190">수직 확장</td>
+
+  <td width="156">
+
+  <p align="center">X-Large VM(8코어, 14GB RAM, 최대 16TB 디스크 공간)</p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center">지원되지 않음</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td width="190">Scale-Out</td>
+
+  <td width="156">
+
+  <p align="center">AlwaysOn 읽기 전용 보조 데이터베이스, 확장 가능한 공유 데이터베이스, 피어 투 피어 복제, 분산 분할된 뷰 및 데이터 종속 라우팅을 통한 수동(수동 설정 및 애플리케이션은 이러한 기능을 위해 설계되어야 합니다).</p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center">SQL Database 페더레이션(페더레이션용으로 설계된 애플리케이션을 사용하여 데이터 계층에서 자동화됨)</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190"><b>컨트롤 &amp; 사용자 지정</b></td>
+
+  <td width="156">
+
+  <p align="center"></p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center"></p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">OS 및 VM</td>
+
+  <td width="156">
+
+  <p align="center">모든 권한</p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center">컨트롤 없음</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td width="190">SQL Server 데이터베이스 호환성, 사용자 지정</td>
+
+  <td width="156">
+
+  <p align="center">데이터베이스 엔진, SSIS, SSAS, SSRS를 비롯한 SQL Server 2012 상자 제품 기능에 대한 전체 지원</p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center">SQL Server 2012 기능의 큰 하위 집합</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190"><b>하이브리드</b></td>
+
+  <td width="156">
+
+  <p align="center"></p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center"></p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">도메인 가입 및 Windows 인증</td>
+
+  <td width="156">
+
+  <p align="center">Yes</p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center">가능하지 않음</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">Azure 데이터 동기화 통한 데이터 동기화</td>
+
+  <td width="156">
+
+  <p align="center">지원됨</p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center">지원됨</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190"><b>관리 효율</b></td>
+
+  <td width="156">
+
+  <p align="center"></p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center"></p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td width="190">리소스 거버넌스 &amp; 보안 수준</td>
+
+  <td width="156">
+
+  <p align="center">SQL 인스턴스/VM</p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center">논리 DB 서버</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td width="190">도구 지원</td>
+
+  <td width="156">
+
+  <p align="center">SSMS, System Center 및 SSDT와 같은 기존 SQL Server 도구</p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center">SSMS, System Center 및 SSDT와 같은 기존 SQL Server 도구</p>
+
+  </td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="190">크기 조정 기능에서 관리</td>
+
+  <td width="156">
+
+  <p align="center">보통</p>
+
+  </td>
+
+  <td width="138">
+
+  <p align="center">좋음</p>
+
+  </td>
+
+  </tr>
+
+  </tbody>
+
+  </table>
+
+  -그레고리 리크, 제품 마케팅 이사, SQL Server

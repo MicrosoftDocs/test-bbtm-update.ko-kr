@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7617f8467a58fbfa13d913c2b2d39ca2c6508d39
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911727"
+Slug: microsoft-and-red-hat-help-accelerate-enterprise-container-adoption
+Title: Microsoft 및 Red Hat은 Enterprise 컨테이너 채택을 가속화합니다.
+Summary: 오늘 우리는 컨테이너 지원에 대한 Red Hat과 함께 흥미로운 발표를 했습니다. OpenShift, Azure의 OpenShift Dedicated 및 OpenShift에서 SQL Server 지원에 Windows 지원을 추가하고 있습니다.
+Content: >-
+  <p>오늘 우리는 컨테이너 지원에 대한 Red Hat과 함께 흥미로운 발표를 했습니다. Were&rsquo;는 OpenShift, Azure의 OpenShift Dedicated에서 SQL Server Windows 지원을 추가하고 OpenShift 및 Red Hat Linux의 지원을 공동 로드맵에 추가하고 파트너십의 서명이었던 통합된 공동 배치 지원을 확장합니다. 보도 자료의 모든 뉴스를 여기에서 읽을 수 <a href="https://news.microsoft.com/?p=368052" target="_blank">있습니다</a>.</p>
+
+
+  <p>나에게 중요한 것은 Red Hat과 Microsoft가 클라우드에서 계속 미치는 영향입니다. &rsquo;오래 전만 해도 이 두 회사가 함께 일한다는 생각은 거의 상상할 수 없었을 것입니다. 글쎄, 그것은 단어가 사람들이 그것을 무슨 생각을 의미하지 않는 것으로 나타났습니다.</p>
+
+
+  <p>Weve&rsquo;는 고객이 Red Hat 또는 Microsoft를 선택하지 않는다는&rsquo; 사실을 공동으로 인식했으며, 이미 두 기술을 모두 사용하기로 결정했습니다. 전 세계 기업에서는 Windows 및 Red Hat Enterprise Linux를 사용하고 있습니다. Java와 .NET, 그리고 Microsoft와 Red Hat을 함께 사용하면 우리 둘 중 한 명만이 할 수 있는 것보다 훨씬 더 나은 서비스를 제공할 수 있습니다.</p>
+
+
+  <p>이것이 바로 Microsoft가 2015년 말 <a href="https://blogs.microsoft.com/blog/2015/11/04/microsoft-and-red-hat-partner-to-deliver-more-flexibility-and-choice/" target="_blank">Red Hat과 힘을 합</a> 친 이유입니다. 먼저 Red Hat 솔루션을 Microsoft Azure 고객에게 기본적으로 제공하고, 하이브리드 환경에서 통합 엔터프라이즈 지원을 제공하고, 새로운 세대의 애플리케이션을 위해 .NET에서 공동 작업하는 등 시작했습니다. 작년에 우리는 Red Hat <a href="https://blogs.microsoft.com/blog/2016/03/07/announcing-sql-server-on-linux/" target="_blank">Enterprise Linux를 포함하여 Linux에</a> SQL Server 가져올 것이라고 발표했습니다. 그 이후로 Weve&rsquo;는 이러한 솔루션과 기타 솔루션을 &ndash; 제공하기 위해 계속 협력했으며 고객에게 타의 추종을 불허하는 선택과 유연성을 &ndash; 제공했습니다. 이러한 정신으로 OpenShift&rsquo;를 실행하는 고객이 단일 클러스터에서 Linux 및 Windows 컨테이너를 함께 사용할 수 있다는 발표와 함께 OpenShift의 컨테이너에서 .NET Core 2.0을 사용하고 Azure 또는 자체 데이터 센터에서 운영 체제 및 OpenShift에 SQL Server 수 있습니다. 이렇게 하면 고객이&rsquo; 올바른 작업에 적합한 기술을 선택하고 함께 작업할 수 있는 기능이 확장됩니다. 그것은 오래 전에 상상할 수없는 경우에도,이 삶에 와서 볼 꽤 멋지다.</p>
+
+
+  <p>오늘&rsquo; 발표를 되돌아보면 Kubernetes에 대해 생각하는 데 도움이 될 수 없습니다&rsquo;. 지난 달, 저는 우리가 참여하고 있는 <a href="https://azure.microsoft.com/en-us/blog/announcing-cncf/" target="_blank">업스트림 CNCF 프로젝트에</a> 대해 이야기했습니다. 그 이후로 Microsoft 직원이 상위 커밋자,&rsquo; 업스트림 관리/전용 Blob 디스크 <a href="https://github.com/kubernetes/kubernetes/pull/46360" target="_blank">기여</a> , 물론 Open Service Broker API를 포함하는 Kubernetes 서비스 카탈로그를 비롯한 커뮤니티 업스트림에 계속 참여했습니다. 커뮤니티와 협력하고 업스트림에 기여하는 것은 Red Hat과의 관계에서 중요한 부분이 될 것입니다.</p>
+
+
+  <p>레드햇의 동료들에게 파트너십에 감사드립니다. Weve&rsquo;는 함께 많은 시간을 넣어, 그것은&rsquo; 항상 즐거움을. Microsoft의 모든 고객 여러분께 감사드리며 고객들을 위한 문제를 계속해서 함께 해결할 수 있기를 기대합니다.</p>
+
+
+  <p>Microsoft Azure Red Hat 솔루션에 대해 자세히 알아보고 오늘 시작하려면 <a href="https://azure.com/redhat" target="_blank">azure.com/redhat</a> 방문하세요.</p>

@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 306e7aad652ab303ae69fcdb5ca82b035949d5fe
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906156"
+Slug: azure-kubernetes-service-aks-ga-new-regions-new-features-new-productivity
+Title: AKS(Azure Kubernetes Service) GA – 새 지역, 더 많은 기능, 생산성 향상
+Summary: 오늘 AKS(Azure Kubernetes Service)를 일반 공급한다고 발표하게 되어 매우 기쁩니다. 또한 오스트레일리아 동부, 영국 남부, 미국 서부, 미국 서부 2 및 북유럽을 포함한 5개의 새로운 지역을 추가하고 있습니다.
+Content: >-
+  <p>그들은 재미있을&#39;때 시간이 날아간다고 말하며, Azure에서 컨테이너 작업을 하는 데 2년이 가까워지면서 그 말에 진실을 봅니다. 지난 2년 동안 <a href="https://azure.microsoft.com/en-us/blog/introducing-azure-container-service-aks-managed-kubernetes-and-azure-container-registry-geo-replication/" target="_blank">우리는 Azure에서 Kubernetes 서비스를 시작하고</a>, <a href="https://blogs.microsoft.com/blog/2017/04/10/microsoft-acquire-deis-help-companies-innovate-containers/" target="_blank">Deis를 인수</a>하고, <a href="https://open.microsoft.com/2016/11/17/microsoft-joins-linux-foundation/" target="_blank">Linux 재단에 가입</a>하고, <a href="https://github.com/Azure/draft" target="_blank">초안</a> 및 <a href="https://github.com/Azure/brigade" target="_blank">여단</a> 오픈 소스 프로젝트를 시작했으며, <a href="https://azure.microsoft.com/en-us/blog/announcing-azure-container-instances/" target="_blank">주요 퍼블릭 클라우드에서 최초의 서버리스 컨테이너 인프라를 시작</a>했으며, 가장 최근에 Kubernetes가 태어난 <a href="https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/" target="_blank">GitHub 인수했습니다</a>. 또한 Azure의 Kubernetes에서 고객 수의 5배, 1년 전 사용량의 10배에 달하는 놀라운 성장을&#39;. Microsoft와 Azure에서 흥분이 결코 끝나지 않는다고 말하는 것은 과소 평가입니다!</p>
+
+
+  <p>현재 Im&rsquo;은 AKS( <a href="https://aka.ms/akspage" target="_blank">Azure Kubernetes Service</a> )를 일반 공급한다고 발표하게 되어 매우 기쁩니다. 또한 오스트레일리아 동부, 영국 남부, 미국 서부, 미국 서부 2 및 북유럽을 포함한 5개의 새로운 지역을 추가하고 있습니다. AKS는 이제 3개 대륙의 10개 지역에서 일반 공급되며, 향후 몇 개월 내에 10개의 지역이 더 추가될 예정입니다!</p>
+
+
+  <p>이러한 모든 지역에서 AKS를 사용하거나 전 세계의 애플리케이션을 사용하는 사용자는 Azure&#39;엔지니어가 고객의&rsquo; 완전 관리형 Kubernetes 클러스터에 대한 지속적인 모니터링, 운영 및 지원을 제공하고 있다는 확신을 가지고 프로덕션 Kubernetes 애플리케이션을 배포하고 관리할 수 있습니다. 또한 Azure는 무료 관리형 Kubernetes Service를 제공하는 최초의 클라우드이기도 하며 GA에서 계속 무료로 제공합니다. 관리 인프라 비용을 지불하지 않고 Kubernetes를 사용할 수 있어야 한다고 생각합니다.</p>
+
+
+  <p><a href="https://open.microsoft.com/2018/06/13/brendan-burns-co-founder-kubernetes-aks-interview" target="_blank">미리 보기에서 일반 공급으로 전환</a> 하려면 AKS 엔지니어링 팀뿐만 아니라 새로운 서비스를 시도하기 위해 시간과 인내심을 자원한 고객 모두의 헌신과 노력이 필요합니다. AKS를 개선하고 일반 공급이 가능하도록 하는 데 시간을 할애한 Microsoft 내부 및 외부의 모든 사용자에게 매우 감사할&#39;있습니다. 오늘 우리가 배송하는 제품은 당신의 노력 때문에 더 낫습니다. 감사합니다!</p>
+
+
+  <p>AKS에 대한 작업 외에도 팀은 업스트림 오픈 소스 Kubernetes 커뮤니티와도 협력하고 있습니다. 오픈 소스에서는 소프트웨어를 사용하기에 충분하지 않으며 사용하는 프로젝트에 참여하고 기여하는 것이 중요합니다. 따라서 <a href="https://k8s.devstats.cncf.io/d/9/companies-table?orgId=1&amp;var-period_name=Last%20decade&amp;var-metric=contributors&amp;var-period=y10&amp;var-full_name=Kubernetes" target="_blank">Kubernetes에 기여한 거의 70명의 Microsoft 직원을</a> 매우 자랑스럽게&#39;.</p>
+
+
+  <p>Kubernetes API는 시작에 불과합니다. 처음부터 Microsoft&#39;DNA의 핵심 구성 요소는 개발자가 생산성을 높일 수 있도록 플랫폼을 구축해 왔습니다. 클라우드 네이티브 애플리케이션의 작성기를 사용할 수 있도록 이 유산이 새로운 세대의 도구로 들어오는 것을 보는 것은 굉장했습니다. 지난 5월 Microsoft Build 컨퍼런스에서 설명한 것처럼 Azure는 클라우드 네이티브 애플리케이션 개발을 위한 <a href="https://azure.microsoft.com/en-us/blog/kubernetes-on-azure/" target="_blank">가장 완전하고 유능한 클라우드입니다</a> . Azure에서 <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-helm" target="_blank">도구를</a> 사용하면 Kubernetes를 사용하여 컨테이너화된 애플리케이션을 더 쉽게 빌드하고 디버그할 수 있습니다. 이를 더욱 개선하려면 Kubernetes <a href="https://docs.microsoft.com/en-us/azure/aks/aad-integration" target="_blank">RBAC(역할 기반 액세스 제어), Azure Active Directory 기반 ID,</a> 기존 <a href="https://docs.microsoft.com/en-us/azure/aks/networking-overview" target="_blank">사용자 지정 가상 네트워크에</a> 클러스터를 배포하는 기능 등 모든 AKS 지역에서 사용할 수 있는 더 많은 기능을 발표하게 되어 기쁘게&#39;. 또한 <a href="https://aka.ms/tfaks" target="_blank">Terraform</a> 및 Azure&#39;자체 Resource Manager 템플릿과 같은 오픈 소스 도구를 모두 사용하여 클러스터를 배포하고 관리할 수도 있습니다. <a href="https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes" target="_blank">그들을 체크 아웃 와서</a>!</p>
+
+
+  <p>Azure를 Kubernetes를 실행하는 업계 최고의 위치로 만드는 것 외에도 Kubernetes를 실행하려는 위치에 관계없이 Kubernetes 사용자 커뮤니티에 다시 제공하기 위해 최선을 다하고 있습니다. 이를 위해 다음을 수행합니다.</p>
+
+
+  <ul>
+      <li>Cloud Native Compute Foundation에서 최상위 프로젝트로 승격된 <a href="https://helm.sh/" target="_blank">Kubernetes용 Helm 패키지 관리자</a> 개발을 이끌고 지원합니다.</li>
+      <li>우리는 초보 사용자가 Kubernetes를 더 쉽게 접근 할 수 있도록 <a href="https://github.com/Azure/draft" target="_blank">초안</a> 및 <a href="https://github.com/Azure/brigade" target="_blank">여단</a> 을 구축하고 출시했습니다.</li>
+      <li>개발 환경과 운영 환경 간의 직관적이고 사용하기 쉬운 통합을 가능하게 하는 <a href="https://blogs.msdn.microsoft.com/visualstudio/2018/06/08/preview-of-visual-studio-kubernetes-tools/" target="_blank">Visual Studio 및 Visual Studio Code Kubernetes 플러그 인</a>을 지속적으로 개선하고 있습니다.</li>
+      <li>이러한 통합은 <a href="https://docs.microsoft.com/en-us/azure/aks/jenkins-continuous-deployment?toc=%2Fen-us%2Fazure%2Fjenkins%2Ftoc.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json" target="_blank">AKS를 Jenkins</a> 및 Visual Studio Team Services 같은 즐겨 찾는 CI/CD 도구에 간단히 통합할 수 있는 <a href="https://docs.microsoft.com/en-us/vsts/pipelines/actions/azure-devops-project-aks?view=vsts" target="_blank">DevOps</a> 도구로 확장됩니다.</li>
+      <li>또한 <a href="https://github.com/virtual-kubelet/virtual-kubelet" target="_blank">가상 kubelet</a>에 대한 작업을 통해 Azure Container Instances와 같은 혁신적인 기술을 사용하여 VM이 없는 환경에 Kubernetes 관리를 제공하는 업계 간 노력을 주도하고 있습니다.</li>
+  </ul>
+
+
+  <p>이 모든 작업은 사용자가 있는 곳을 충족하고 훌륭한 작업을 달성할 수 있는 유용한 서비스를 제공하지 않는 한 아무 의미가&#39;것입니다. <a href="https://www.youtube.com/watch?v=7tpACVy5CGA" target="_blank">Siemens</a> 및 <a href="https://customers.microsoft.com/en-us/story/varian-health-provider-azure" target="_blank">Varian Health</a>와 같은 회사가 Azure에서 Kubernetes를 사용하여 성공을 찾는 것을 보는 것은&#39;굉장합니다.</p>
+
+
+  <p>Azure Kubernetes 팀이 이 시점에 이르기 위해 수행한 모든 일에 대해 자랑스럽게 생각하며, 고객이 프로덕션 등급의 전 세계 Azure Kubernetes Service를 기반으로 구축한 프로덕션 애플리케이션을 볼 수&#39;있습니다. 팀에 관해서는, 우리는 이미 전 세계의 모든 AKS 사용자와 Kubernetes 친구를위한 흥미 진진한 기능의 다음 세트에 노력하고&#39;!</p>
+
+
+  <p>자세히 알아보려면 <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough" target="_blank">클러스터를 만들고, 일부 애플리케이션을 배포하고, Azure Kubernetes Service에서 제공해야 하는 기능을 확인</a>하거나 <a href="https://github.com/Microsoft/SmartHotel360-AKS-DevSpaces-Demo" target="_blank">샘플 앱</a> 중 하나를 사용해 보는 것이 좋습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>감사합니다!</p>
+
+
+  <p>브렌 든</p>

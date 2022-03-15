@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ecffa58808f49f1a3a7c0b34bcd75673042dcb13
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911387"
+Slug: azure-availability-zones-expand-with-new-services-and-to-new-regions-in-europe-and-united-states
+Title: Azure 가용성 영역은 새 서비스와 새 지역으로 확장됩니다.
+Summary: Azure 가용성 영역은 고객의 애플리케이션 및 데이터를 데이터 센터 수준 오류로부터 보호하는 Azure 지역 내의 물리적으로 별도의 위치입니다. 올해 초, 우리는 발표 ...
+Content: >-
+  <p>Azure 가용성 영역은 데이터 센터 수준 오류로부터 고객&rsquo; 애플리케이션 및 데이터를 보호하는 Azure 지역 내의 물리적으로 별도의 위치입니다. 올해 초, 가용성 영역의 일반 공급이 발표되었습니다. 이제 가용성 영역이 <strong>북유럽</strong> 및 <strong>미국 서부 2</strong>의 추가 지역으로 지속적으로 확장되는 것을 공개하게 되어 기쁩니다. 이 확장된 적용 범위를 통해 유럽 및 미국 서부에서 운영하는 고객은 데이터 센터 수준 오류로부터 보호하는 짧은 대기 시간 동기 복제가 필요한 애플리케이션을 빌드하고 실행할 수 있습니다. 가용성 영역과 지역 쌍의 조합을 통해 고객은 선택한 지역에서 <a href="https://azurecomcdn.azureedge.net/mediahandler/files/resourcefiles/azure-resiliency-infographic/Azure_resiliency_infographic.pdf" target="_blank">데이터 상주로 포괄적인 비즈니스 연속성 전략을</a> 만들 수 있습니다.</p>
+
+
+  <p>Azures&rsquo; 글로벌 공간은 140개국 이상에서 고객에게 서비스를 제공하는 100개 이상의 데이터 센터가 있는 54개 지역으로 구성됩니다. Microsoft&rsquo;의 전반적인 전략은 고객이 비즈니스 연속성을 보장하기 위한 광범위한 옵션을 갖도록 하는 것입니다. 가용성 영역은 고객이 고가용성 애플리케이션을 빌드하고 실행할 수 있는 추가 복원력 기능을 제공합니다. 다른 클라우드 공급자보다 글로벌 <a href="https://azure.microsoft.com/en-us/global-infrastructure/regions/" target="_blank">지역이</a> 많은 Azure는 일류 복원력을 제공하도록 설계되었습니다.</p>
+
+
+  <p>Azure 지역 간 가용성 영역의 지속적인 확장 외에도 Azure SQL Database, Service Bus, Event Hubs, Application Gateway, VPN Gateway 및 ExpressRoute를 포함한 영역 중복 서비스의 확장된 목록을 발표하게 되어 기쁘게&#39;. <a href="https://docs.microsoft.com/en-us/azure/availability-zones/az-overview" target="_blank">영역 및 영역 중복 서비스에</a> 대해 자세히 알아봅니다.</p>
+
+
+  <p>Azure는 가상 머신이 동일한 지역의 두 개 이상의 가용성 영역에서 실행되는 경우 업계 최고의 99.99% 가동 시간 SLA를 제공합니다. 자세한 내용을 알아보고 현재 <a href="https://azure.microsoft.com/en-us/global-infrastructure/availability-zones" target="_blank">Azure 가용성 영역</a> 사용을 시작합니다. 고가용성 및 재해 복구를 사용하여 애플리케이션을 빌드하는 방법을 알아보려면 <a href="https://azure.microsoft.com/en-us/global-infrastructure/availability-zones" target="_blank">Azure 복원력 페이지를 방문하세요</a>.</p>

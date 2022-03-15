@@ -1,0 +1,61 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1edb21bf7d1ca659f56f0542b32d3501e6dfd8ee
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911868"
+Slug: how-azure-backup-helped-customers-russell-reynolds
+Title: 'Azure Backup의 고객 성공 사례: 러셀 레이놀즈'
+Summary: 고객은 Azure Backup이 Azure로 이동하는 데 어떻게 도움이 되었는지 설명하고 백업 및 복구 요구 사항을 처리합니다.
+Content: >-
+  <p>Azure Backup을 사용하는 고객의 성공 사례를 제공하는 블로그 시리즈 중 첫 번째입니다. 여기서는 Azure Backup이 러셀 레이놀즈를 어떻게 도왔는지 설명합니다.</p>
+
+
+  <h2>고객 배경</h2>
+
+
+  <p>러셀 레이놀즈(Russell Reynolds)는 글로벌 리더십 및 경영진 검색 회사로, C-suite 내에서 이사회, 최고 경영자 및 기타 주요 역할 내에서 평가, 임원 검색 및 리더십 전환을 고객들에게 도움을 줍니다. IT 및 데이터 센터 비용을 줄이기 위해 Azure로 이전한 이 회사는 번거롭고 비용이 많이 드는 테이프 백업에 대한 대안을 찾기 시작했습니다. Azure Backup을 입력합니다.</p>
+
+
+  <h2>Azure Backup이 도움이 된 방법</h2>
+
+
+  <p><a href="https://docs.microsoft.com/azure/backup/backup-azure-dpm-introduction"><u>Microsoft System Center 2012 R2 Data Protection Manager</u></a> VMWare 워크로드를 로컬 및 Azure 클라우드에 백업하여 테이프에 대한 요구 사항을 99년까지 유지할 수 있습니다. Azure Backup <a href="https://docs.microsoft.com/azure/backup/backup-azure-backup-import-export"><u>오프라인 시드</u></a> 기능을 사용하여 초기 10TB의 데이터를 클라우드로 복사했습니다. 그 후 Azure Backup은 매일 백업하는 동안 증분 데이터만 전송하므로 스토리지 사용량이 줄어들고 대역폭이 많이 필요합니다.</p>
+
+
+  <p><em>&ldquo;테이프 처리에 매우 평판이 좋은 파트너를 사용했지만, 데이터가 시설을&quot; 떠날 때 항상 긴장하게 만들었다고</em> 러셀 레이놀즈 어소시에이츠의 글로벌 분산 인프라 및 클라이언트 서비스 디렉터 데이비드 W.Pfister는 말합니다.<em>&ldquo; 이제 데이터가 온-프레미스 또는 Azure 클라우드에 있으므로 안심할 수 있습니다.&rdquo;</em></p>
+
+
+  <p>Azure에 백업을 배치하면 비용도 절감됩니다. <em>&ldquo;이제 우리는 값비싼 스토리지 솔루션&rdquo;이 아닌 저렴한 디스크 무리에 백업</em>한다고 러셀 레이놀즈의 분산 인프라 팀의 수석 엔지니어인 Sean DeLessio는 말합니다.<em>&ldquo; &rsquo;비용이 많이 드는 전용 백업 스토리지 시스템의 공간을 관리하는 것에 대해 걱정할 필요가 없습니다. 우리는 테이프 비용, 관리 비용, 아무것도 없습니다. Azure를 사용하면 백업 비용이 크게 저렴합니다.&rdquo;</em></p>
+
+
+  <p>러셀 레이놀즈는 클라우드에서 백업 및 비즈니스 연속성/재해 복구를 구현함으로써 한 명의 정규직 직원을 새 프로젝트에 재할당할 수 있었습니다.&quot; <em>Weve&rsquo;는 활동에&#39; 조명을 유지하는 &#39;자원을 비즈니스 경쟁력&quot;을 높이는 새로운 프로젝트 작업으로 이전할 수 있었다고 </em>Pfister는 말합니다.</p>
+
+
+  <p>테이프 관리와 같은 평범하고 반복적인 집안일의 직원을 완화하면 직원의 삶의 질이 향상됩니다. <em>&ldquo;&rsquo;클라우드를 통해 직원들이 새로운 기술을 배우기 위해 보다 전략적이고 건축적인 활동에 집중할 수 있게 되었습니다. 그것은&rsquo; 정말 그들을 젊어지게. Weve&rsquo;는 학습에 대한 새로운 초점과 흥분을 보았으며, 이는&rsquo; 우선순위&rdquo;를 두었다</em>고 Pfister는 말합니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>Azure Backup을 사용하고 비즈니스에 중요한 워크로드에 대한 더 나은 보호, 더 나은 마음의 평화, 낮은 비용 및 흥분된 직원을 통해 Russell Reynolds는 이러한 ROI가 꽤 좋은 ROI를 더한다고 믿습니다. <em>&ldquo;우리의 시장은 항상 더 빠르게 움직이고 있으며, 클라우드를 사용하면 더 민첩하고 공격적&rdquo;일 수</em> 있다고 Pfister는 말합니다.&quot; <em>우리는 우리가 가고 싶은 곳에 더 집중하고 거기에 도착하는 방법에 덜 집중할 수 있습니다. Were&rsquo;는 더 이상 백업, DR 및 기타 운영 작업에 대해 걱정하지 않습니다.&rdquo;</em>&nbsp;</p>
+
+
+  <p>출처: <a href="https://customers.microsoft.com/story/russell-reynolds-and-attunix">Russel Reynolds의 Azure 사례 연구</a></p>
+
+
+  <h2>관련 링크 및 추가 콘텐츠</h2>
+
+
+  <ul style="background-color: transparent; box-sizing: border-box; color: rgb(80, 80, 80); font-family: &amp;quot;Segoe UI&amp;quot;,SegoeUI,&amp;quot;Segoe WP&amp;quot;,Tahoma,Arial,sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; list-style-position: outside; list-style-type: disc; margin-bottom: 14px; margin-left: 0px; orphans: 2; padding-left: 17px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; word-wrap: break-word;">
+      <li style="box-sizing: border-box; color: rgb(80, 80, 80); font-size: 15px; margin-bottom: 12px;"><a href="https://azure.microsoft.com/documentation/articles/backup-azure-arm-vms-prepare/" style="background-color: transparent; box-sizing: border-box; color: rgb(0, 120, 215); text-decoration: none; transition-delay: 0s; transition-duration: 0.2s; transition-property: color; transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);" target="_blank">Recovery Services 자격 증명 모음</a> 시작</li>
+      <li style="box-sizing: border-box; color: rgb(80, 80, 80); font-size: 15px; margin-bottom: 12px;"><a href="https://azure.microsoft.com/services/backup/" style="background-color: transparent; box-sizing: border-box; color: rgb(0, 120, 215); text-decoration: none; transition-delay: 0s; transition-duration: 0.2s; transition-property: color; transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);" target="_blank">Azure Backup</a>에 대해 자세히 알아봅니다.</li>
+      <li style="box-sizing: border-box; color: rgb(80, 80, 80); font-size: 15px; margin-bottom: 12px;">자세한 내용을 원하십니까? <a href="https://azure.microsoft.com/documentation/services/backup/" style="background-color: transparent; box-sizing: border-box; color: rgb(0, 120, 215); text-decoration: none; transition-delay: 0s; transition-duration: 0.2s; transition-property: color; transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);" target="_blank">Azure Backup 설명서를 확인하세요</a>.</li>
+      <li style="box-sizing: border-box; color: rgb(80, 80, 80); font-size: 15px; margin-bottom: 12px;">도움이 필요하신가요? <a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=windowsazureonlinebackup" style="background-color: transparent; box-sizing: border-box; color: rgb(0, 120, 215); text-decoration: none; transition-delay: 0s; transition-duration: 0.2s; transition-property: color; transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);" target="_blank">지원을 위해 Azure Backup 포럼</a>에 문의하세요.</li>
+      <li style="box-sizing: border-box; color: rgb(80, 80, 80); font-size: 15px; margin-bottom: 12px;">새 아이디어를 기여하고 기존 아이디어를 투표하여 <a href="https://feedback.azure.com/forums/258995-azure-backup" style="background-color: transparent; box-sizing: border-box; color: rgb(0, 120, 215); text-decoration: none; transition-delay: 0s; transition-duration: 0.2s; transition-property: color; transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);" target="_blank">Azure Backup을 개선할</a> 수 있는 방법을 알려주세요.</li>
+      <li style="box-sizing: border-box; color: rgb(80, 80, 80); font-size: 15px; margin-bottom: 0px;">최신 뉴스 및 업데이트에 대한 트위터에 <a href="https://twitter.com/azurebackup" style="background-color: transparent; box-sizing: border-box; color: rgb(0, 120, 215); text-decoration: none; transition-delay: 0s; transition-duration: 0.2s; transition-property: color; transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);" target="_blank">@AzureBackup</a> 우리를 따르십시오.</li>
+  </ul>
+
+
+  <p>&nbsp;</p>

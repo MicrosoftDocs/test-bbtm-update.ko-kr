@@ -1,0 +1,143 @@
+### YamlMime:Yaml
+ms.openlocfilehash: af0fccb3b8bd4b38e636c0815e0386ce5e34d300
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911970"
+Slug: cosmos-developer-experience
+Title: Azure Cosmos DB 개발자 환경 업데이트
+Summary: Azure Cosmos DB 팀은 Azure Cosmos DB의 1개월 무료 평가판, 다중 지역 쓰기를 지원하는 SDK 업데이트, Cosmos 탐색기, 포털 UX 업데이트 및 권장 사항, 빌드 작업을 & Azure DevOps 모든 API에 대한 Emulator 지원을 포함하여 개발자를 위한 새로운 기능 및 개선 사항을 발표하게 되어 기쁘게 생각하고 있습니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/services/cosmos-db/">Azure Cosmos DB</a> 팀은 개발자를 위한 새로운 기능 및 개선 사항을 발표하게 되어 기쁩니다.</p>
+
+
+  <ul>
+   <li><a href="#free-trial">Azure Cosmos DB의 1개월 무료 평가판</a></li>
+   <li><a href="#sdk-updates">다중 지역 쓰기를 지원하는 SDK 업데이트</a></li>
+   <li><a href="#cosmos-explorer">Cosmos 탐색기</a></li>
+   <li><a href="#portal">포털 UX 업데이트 및 권장 사항</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/cosmos-developer-experience/#emulator">빌드 작업 Azure DevOps</a></li>
+  </ul>
+
+
+  <h2 id="free-trial">Azure Cosmos DB의 1개월 무료 평가판</h2>
+
+
+  <p>이제 한 달 내내 Azure Cosmos DB를 무료로 사용해 볼 수 있습니다. 이 평가판을 사용하면 최대 25개의 컨테이너(컬렉션)와 최대 10,000RU(요청 단위)/초의 처리량, Azure 구독 또는 크레딧이 필요하지 않은 데이터베이스를 만드는 등 30일 동안 Azure Cosmos DB&rsquo; 기능을 무료로 평가할 수 있습니다. <a href="https://azure.microsoft.com/try/cosmosdb/">Azure Cosmos DB 사용해 보기</a> 시작 Azure Cosmos DB는 12개월 동안 400RU/s를 포함하는 <a href="https://azure.microsoft.com/free/">Azure 체험 계정에</a>도 포함됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/126ce19e-34d1-4410-a08d-7171052a25d3.png"><img alt="try-cosmos-db" border="0" height="1034" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92abaf14-4140-46d0-b5fc-2d41fb17d8e9.png" style="display: inline; background-image: none;" title="try-cosmos-db" width="2094"></a></p>
+
+
+  <h2 id="sdk-updates">.NET, Java, JavaScript 및 Python SDK 업데이트</h2>
+
+
+  <p>이제 JavaScript 2.0 SDK를 <a href="https://aka.ms/Ignite18JavaScriptSDK">일반 공급합니다</a>. Weve&rsquo;는 명시적 URL&ndash; 및 약속 및 기타 최신 JavaScript 기능에 대한 지원 없이 Cosmos DB 리소스를 더 쉽게 참조할 수 있도록 하는 새로운 &ldquo;흐름&rdquo; 스타일 개체 모델 &ndash; 인 다중 지역 쓰기에 대한 지원을 추가했습니다. 또한 TypeScript로 작성되었으며 최신 TypeScript 3.0을 지원합니다.</p>
+
+
+  <p>이러한 변경 내용으로 새 데이터베이스, 컨테이너를 만들고 10줄의 코드로 항목을 추가할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bd29298d-228f-43cd-bfa0-7e78eb5dcb3d.png"><img alt="helloCosmos" border="0" height="337" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0365fd7d-fdbf-4b55-9d7f-f1394715c537.png" style="display: inline; background-image: none;" title="helloCosmos" width="1366"></a></p>
+
+
+  <p>새 Python 3.0 SDK에서는 다중 지역 쓰기 지원&rsquo; 외에도 네임스페이스를 <strong>azure.cosmos</strong>로 변경하고 document_client&rsquo; &lsquo;이름을 &lsquo;cosmos_client 변경했습니다.&rsquo; Azure Cosmos DB는 여러 API 모델을&rsquo; 지원하므로 컬렉션&rdquo; 및 문서의&rdquo; 개념&ldquo;도 컨테이너&rdquo; 및 &ldquo;&ldquo;항목으로 &ldquo;변경했습니다.&rdquo;</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top"><strong>SDK</strong></td>
+     <td valign="top"><strong>최신 릴리스</strong></td>
+    </tr>
+    <tr>
+     <td valign="top">.NET</td>
+     <td valign="top"><a href="https://aka.ms/CosmosDotNetSDK">2.1</a></td>
+    </tr>
+    <tr>
+     <td valign="top">Java</td>
+     <td valign="top"><a href="https://aka.ms/CosmosJavaSDK">2.2</a></td>
+    </tr>
+    <tr>
+     <td valign="top">JavaScript</td>
+     <td valign="top"><a href="https://aka.ms/CosmosJavaScriptSDK">2.0</a></td>
+    </tr>
+    <tr>
+     <td valign="top">Python</td>
+     <td valign="top"><a href="https://aka.ms/CosmosPythonSDK">3.0</a></td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2 id="cosmos-explorer">Cosmos 탐색기</h2>
+
+
+  <p><a href="https://cosmos.azure.com/">Cosmos 탐색기는</a> 인기 있는 Azure Cosmos DB 데이터 탐색기의 전체 화면 독립 실행형 웹 기반 버전을 제공합니다. Cosmos Explorer를 사용하면 전체 화면 공간을 사용하여 데이터베이스 계정 및 컨테이너에 액세스하고, 쿼리를 실행하고, 결과를 볼 수 있습니다. 권한 있는 피어가 구독 또는 포털 액세스 권한을 가질 필요 없이 권한 있는 피어에 대한 임시 액세스를 공유할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/de5080c5-9794-4142-8d7e-91251e2c7a21.png"><img alt="cosmos-explorer_1" border="0" height="1010" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9af32a5f-1ae2-451e-b664-446863c8df61.png" style="display: inline; background-image: none;" title="cosmos-explorer_1" width="2024"></a></p>
+
+
+  <p>Cosmos 탐색기는 쿼리 통계 탭에서 쿼리 실행 메트릭을 표시<b>할 수도 있습니다</b>. CSV를 다운로드하여 파티션 수준에서 자세한 메트릭을 볼 수도 있습니다. 이러한 <a href="https://docs.microsoft.com/azure/cosmos-db/sql-api-sql-query-metrics" target="_blank">메트릭 및 Azure Cosmos DB에서 쿼리를 조정하는 방법에</a> 대해 자세히 알아봅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/551d7f59-a2e3-4f73-8347-807a77bde385.png"><img alt="query_stats" border="0" height="944" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dcf26c1c-adab-4f0d-9953-d9493f4e0181.png" style="display: inline; background-image: none;" title="query_stats" width="1373"></a></p>
+
+
+  <p>Cosmos 탐색기를 시도하려면 데이터 탐색기로 이동하고 <strong>전체 화면 열기</strong> 링크를 클릭합니다. 연결 문자열로 <a href="https://cosmos.azure.com/">https://cosmos.azure.com/</a> 직접 이동하여 붙여넣을 수도 있습니다. <a href="https://docs.microsoft.com/azure/cosmos-db/data-explorer" target="_blank">Azure Cosmos DB 탐색기를 사용하여 데이터를 관리하는</a> 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a1c4eca-c664-47ba-847d-bdcfe1afeebe.png"><img alt="cosmos-explorer_2" border="0" height="236" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a3428baa-8ed9-480c-9947-4efb2c45c114.png" style="display: inline; background-image: none;" title="cosmos-explorer_2" width="1417"></a></p>
+
+
+  <h2 id="portal">포털에서 계정을 만들기 위한 새 UX</h2>
+
+
+  <p>Weve&rsquo;는 포털에서 Azure Cosmos DB 계정 만들기 환경을 업데이트했습니다. 이제 새 Azure Cosmos DB 계정을 만들 때 전체 화면을 활용할 수 있습니다.</p>
+
+
+  <p><a name="_msocom_1"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/06c11e78-d245-45c5-9059-d00062b362f3.png"><img alt="full-scren-create_v2" border="0" height="884" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7638a6ac-bc71-40a6-bfa0-f08310ebefe5.png" style="display: inline; background-image: none;" title="full-scren-create_v2" width="1230"></a></p>
+
+
+  <p>계정 생성 상태를 추적할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c6f499b2-d7d0-4ef4-893c-6ddf30b59057.png"><img alt="full-screen-create_2" border="0" height="846" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b59fa1a9-7fde-474b-b395-71c0f05c94ba.png" style="display: inline; background-image: none;" title="전체 화면 create_2" width="1729"></a></p>
+
+
+  <h2>권장 사항</h2>
+
+
+  <p>이제 Azure Cosmos DB 포털에서 계정에 대한 경고, 권장 사항 및 메시지를 표시할 수 있습니다. 이를 보려면 <b>개요</b> 탭으로 이동하여 <b>알림 섹션을 봅니다</b> .</p>
+
+
+  <p>예를 들어 아래 권장 사항은 컬렉션에 있는 파티션 키 속성의 많은 값이 null이며 적절한 배포를 보장하기 위해 검토해야 한다는 것을 시사합니다.</p>
+
+
+  <p><a name="_msocom_1"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/897717d4-2914-4b75-8f70-2cbe6c5a8e52.png"><img alt="recommendations-v2" border="0" height="337" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/74a17662-2425-4dec-95b6-21e69566b397.png" style="display: inline; background-image: none;" title="recommendations-v2" width="1407"></a></p>
+
+
+  <h2 id="emulator">Azure Cosmos DB Emulator 업데이트</h2>
+
+
+  <p><a href="https://docs.microsoft.com/azure/cosmos-db/local-emulator">Azure Cosmos DB Emulator</a> 개발 목적으로 Azure Cosmos DB 서비스를 에뮬레이트하는 로컬 환경을 제공합니다. 이 에뮬레이터를 사용하면 Azure 구독을 구입하거나 비용을 발생시키지 않고도 로컬에서 애플리케이션을 테스트할 수 있습니다.</p>
+
+
+  <p>&rsquo;빌드 및 릴리스 프로세스의 일부로 실행되도록 Azure Cosmos DB 에뮬레이터를 설정하려고 했다면 유지 관리가 어려울 수 있습니다. 이제 새 <a href="https://aka.ms/cosmosbuildtask">Azure Cosmos DB를 사용하여 Azure DevOps(이전의 Visual Studio Team Services)에 대한 작업 확장을 빌드</a>할 Emulator 있습니다. 빌드 작업을 사용하면 CI 파이프라인의 일부로 에뮬레이터에 대해 직접 테스트를 실행할 수 있습니다.</p>
+
+
+  <p>시작하려면 <a href="https://docs.microsoft.com/azure/cosmos-db/tutorial-setup-ci-cd">자습서</a> 에 따라 Marketplace에서 확장을 설치 <a href="https://aka.ms/cosmosbuildtask">합니다</a>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/28a59a34-98f9-47a9-9e8a-032e9031743c.png"><img alt="emulator-build-task" border="0" height="574" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53d8f055-3692-4480-b278-11b5841a401d.png" style="display: inline; background-image: none;" title="emulator-build-task" width="1450"></a></p>
+
+
+  <p>Twitter<a href="https://twitter.com/azurecosmosdb">@AzureCosmosDB</a>에서 팔로우하여 최신 Azure <a href="https://twitter.com/search?q=%23cosmosdb">#CosmosDB</a> 뉴스 및 기능을 최신 상태로 유지하세요. Azure Cosmos DB를 사용하여 빌드할 항목을 확인하게 되어 정말 기쁩니다!</p>

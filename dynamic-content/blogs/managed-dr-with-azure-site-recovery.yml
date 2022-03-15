@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 29600688dc7acf7019384761aa79e9d28d8fb179
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899680"
+Slug: managed-dr-with-azure-site-recovery
+Title: Azure Site Recovery는 Microsoft 파트너의 새로운 관리형 DR 제품을 지원합니다.
+Summary: Azure Site Recovery는 다양한 배포 시나리오에서 고객에게 원활한 환경을 제공하기 위해 최고 Microsoft 파트너와 파트너 관계를 맺고 있습니다. 오늘 Microsoft의 두 파트너인 Rackspace 및 CDW가 이제 Azure Site Recovery를 관리형 DR 솔루션으로 제공한다는 사실을 발표하게 되어 기쁩니다.
+Content: >-
+  <p>오늘 Microsoft 파트너 2개인 Rackspace 및 CDW가 이제 고객을 위한 관리형 DR 솔루션으로 Azure Site Recovery를 제공한다는 사실을 발표하게 되어 기쁩니다.</p>
+
+
+  <p>15년 이상의 Microsoft 경험과 전문 지식을 갖춘 Rackspace와 5회 Microsoft 올해의 호스팅 파트너로 구성된 Rackspace는 이제 <a href="https://www.rackspace.com/en-us/microsoft/hyper-v">Hyper-V용 클라우드 복제를</a> 제공합니다. 이 서비스는 Microsoft Hyper-V 워크로드를 실행하는 고객에게 재해 복구 전략을 제공하는 새로운 서비스입니다. Rackspace는 용량 계획 및 Azure 아키텍처를 지원하여 가상 머신의 성공적인 복제를 가능하게 하고, 애플리케이션 가용성을 보장하기 위한 정기적인 장애 조치(failover) 테스트를 제공합니다.</p>
+
+
+  <p><strong></strong><em>&ldquo;Azure Site Recovery는 고객이 전반적인 재해 복구 요구 사항&rdquo;의 일환으로 중요한 리소스를 Microsoft Azure 복제할 수 있는 강력한 솔루션을 제공합니다</em>.<em>&ldquo; microsoft는 Microsoft Azure 및 Hyper-V에 대한 전문 지식과 서비스를 ASR의 도구 및 자동화와 결합하여 고객에게 보조 환경을 실행하는 데 드는 비용의 일부에 불과한 완전 관리형 복제 솔루션을 제공합니다.&rdquo;</em></p>
+
+
+  <p>거의 2년간의 Microsoft 제품 판매 및 서비스 환경과 <a href="https://www.cdw.com/content/brands/azure/default.aspx">Azure에서 관리되는 서비스를</a> 제공하는 심층 경험을 갖춘 인증된 Microsoft Cloud Service 공급자가 있는 CDW는 이제 CDW DRaaS(재해 복구 서비스)를 제공합니다. CDWs&rsquo; DRaaS 제품은 CDWs&rsquo; 전문 서비스 팀의 전문 지식을 관리되는 서비스의 기능과 결합하여 맞춤형 DRaaS 계획 및 절차를 계획, 구현 및 관리합니다.</p>
+
+
+  <p><strong>솔루션 설계자, CDW인 Aaron Melius</strong>의 말에 따르면,<em> &ldquo;ASR이 다른 Azure 서비스 및 VMware 지원 인프라와 얼마나 잘 통합되어 Microsoft Azure Site Recovery를 중심으로 CDW DRaaS를 빌드했습니다. ASR </em> 은 <em> 성능과 가격 책정의 예측 가능성을 위해 </em><em></em><em><em>구조화</em></em><em>되어 있으므로 이를 구현하는 고객은 재해 복구를 원활하고 쉽고 경제적으로 &ndash; 만들 수 있습니다. 특히 전문 및 관리형 서비스와 함께 제공되는 경우&rsquo; 더욱 그렇습니다.&rdquo;</em></p>
+
+
+  <p>오늘 Azure Site Recovery를 시작하려면 <a href="https://azure.microsoft.com/en-in/services/site-recovery/">웹 사이트를 방문하세요</a>. 파트너와 함께 작업하려면 Azure Site Recovery <a href="https://aka.ms/asr-partner-search">파트너를 확인하세요</a>.</p>

@@ -1,0 +1,102 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c595f0c966f870b3303f8094a2d5a176e7e7dadc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905479"
+Slug: map-storage-scenarios-to-services
+Title: Microsoft 클라우드의 서비스에 스토리지 시나리오 매핑
+Summary: 특정 클라우드 스토리지 시나리오에 사용할 수 있는 Microsoft 클라우드의 스토리지 서비스 및 기능을 결정합니다.
+Content: >-
+  <p>Microsofts&rsquo; 클라우드 서비스 및 플랫폼에서 사용할 수 있는 다양한 스토리지 옵션에 대한 핸들을 가져오려고 합니까?&nbsp; 앱 또는 스토리지 시나리오에 가장 적합한 Azure Storage 서비스의 조합을 결정해야&nbsp; 합니까?</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/298359ad-7db2-4db3-8022-bb2374455e8f.png"></p>
+
+
+  <p>Enterprise <a href="https://technet.microsoft.com/library/dn919927.aspx#storage">Architects용 새로운 Microsoft Cloud Storage </a>포스터를 통해 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>Azure Storage 서비스(파일, Blob, 큐, 테이블)를 사용하여 자체 스토리지 솔루션 또는 앱을 처음부터 만드는 방법을 이해합니다.</li>
+   <li>Azure Storage Servicessuch를&mdash; Azure DocumentDB, Azure Redis Cache 및 StorSimpleas&mdash;로 통합하여 사용자 지정에 맞게 추가 구성 또는 코딩을 통해 스토리지 솔루션의 시작점이 됩니다.</li>
+   <li>Azure Site Recovery 및 Azure Backup&mdash;으로 즉시 사용할 수 있는 Azure Storage 서비스의&mdash; 스토리지 기능을 확인하고 Office 365, Microsoft Dynamics CRM Online 및 Microsoft Intune 위한 스토리지 기능을 결정합니다.</li>
+  </ul>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/660ee679-e344-4cdb-a4bc-91227b7ed2fe.png"></p>
+
+
+  <p>그리드 형식을 사용하면 데이터 관리 또는 파일 백업과 같은 특정 스토리지 시나리오에 대한 서비스 집합을 쉽게 찾을 수 있습니다.</p>
+
+
+  <p>이 여러 페이지 포스터를 <a href="https://download.microsoft.com/download/1/8/0/18066E9A-7775-4DCA-B21C-E235C215A37A/MSFT_cloud_architecture_storage.pdf">PDF</a> 또는 <a href="https://download.microsoft.com/download/1/8/0/18066E9A-7775-4DCA-B21C-E235C215A37A/MSFT_cloud_architecture_storage.vsd">Visio</a> 파일로 다운로드하거나 <a href="https://doc.co/U7aXnY">찾아보기 쉬운 </a>새로운 형식으로 볼 수 있습니다. 타블로이드 서식 용지(11x17, 원장 또는 A3라고도 함)에 이 포스터의 페이지를 인쇄할 수도 있습니다.</p>
+
+
+  <p>&nbsp;microsoft Cloud for Enterprise Architects Series의 테오더 포스터를 확인하세요.</p>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td>
+     <p><img alt="Microsoft Cloud Services and Platform Options poster" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9ed55dee-9ff3-4c94-a90d-817c7758d9dc.png" style="border: 0px solid currentColor; border-image: none; width: 80px; height: 80px;" title="CloudArchitecture_PlatformOptions_80"></p>
+     </td>
+     <td>
+     <p>Microsoft Cloud Services 및 플랫폼 옵션</p>
+
+     <p><a href="https://aka.ms/cloudarchoptions">https://aka.ms/cloudarchoptions</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p><img alt="Microsoft Cloud Identity for Enterprise Architects" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a4c47d6-9129-4367-b955-25dae3aebbd3.png" style="border: 0px solid currentColor; border-image: none; width: 80px; height: 80px;" title="CloudArchitecture_Identity_80"></p>
+     </td>
+     <td>
+     <p>엔터프라이즈 설계자용 Microsoft Cloud Identity</p>
+
+     <p><a href="https://aka.ms/cloudarchidentity">https://aka.ms/cloudarchidentity</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p><img alt="Microsoft Cloud Security for Enterprise Architects" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/966f1d7d-dd4c-4f6d-a6a9-462aa00f016d.png" style="border: 0px solid currentColor; border-image: none; width: 80px; height: 80px;" title="CloudArchitecture_Security_80"></p>
+     </td>
+     <td>
+     <p>엔터프라이즈 설계자용 Microsoft Cloud Security</p>
+
+     <p><a href="https://aka.ms/cloudarchsecurity">https://aka.ms/cloudarchsecurity</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p><img alt="Microsoft Cloud Networking for Enterprise Architects" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7c14bda2-fac0-455f-a64b-fe9d8a79156f.png" style="border: 0px currentColor; border-image: none;"></p>
+     </td>
+     <td>
+     <p>엔터프라이즈 설계자용 Microsoft Cloud Networking</p>
+
+     <p><a href="https://aka.ms/cloudarchnetworking">https://aka.ms/cloudarchnetworking</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/983e194c-af7e-4a88-8799-8f1f0004d30a.png"></p>
+     </td>
+     <td>
+     <p>엔터프라이즈 설계자용 Microsoft Hybrid Cloud</p>
+
+     <p><a href="https://aka.ms/cloudarchhybrid">https://aka.ms/cloudarchhybrid</a></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>Microsoft 클라우드 플랫폼 및 서비스에 대한 모든 리소스를 보려면 <a href="https://aka.ms/cloudarchitecture">Cloud 로드맵을 Enterprise Microsofts&rsquo;</a>를 확인&nbsp;하세요.</p>
+
+
+  <p>Twitter 사용자에 대한 참고 사항: 이 포스터 또는 시리즈의 다른 사용자에 대해 트윗하는 경우 #mscloudarch 사용하세요. 감사합니다.</p>

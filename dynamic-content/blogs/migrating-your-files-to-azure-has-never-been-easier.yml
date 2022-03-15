@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5ad139671eb83cc746147133b38a8c69cc4bdd1e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905394"
+Slug: migrating-your-files-to-azure-has-never-been-easier
+Title: 파일을 Azure로 마이그레이션하는 것이 더 쉬워졌습니다.
+Summary: 오늘 Microsoft는 솔루션 통합자 및 서비스 공급자 에코시스템의 고객과 파트너에게 Komprise 및 Data Dynamics에서 업계 최고의 파일 마이그레이션 솔루션에 대한 액세스를 비용 없이 제공하는 Azure 파일 마이그레이션 프로그램을 발표합니다. 이러한 솔루션은 파일 및 개체 데이터를 Azure Storage 쉽고 안전하게 마이그레이션하는 데 도움이 됩니다.
+Content: >-
+  <p>우리는 고객의 의견을 경청한 다음, 고객의 요구를 충족하고 모든 애플리케이션이 Azure로 마이그레이션할 수 있도록 제품 및 파트너십을 구축하는 것에 자부심을 느낍니다. Virtual Desktop, Virtual Server, 고성능 컴퓨팅, 분석 및 기타 많은 중요한 애플리케이션을 마이그레이션하려면 파일 서버, NAS 어플라이언스 및 개체 Storage 저장된 수십 테라바이트 단위의 파일 데이터를 Azure에 복사해야 합니다. 다른 유형의 플랫폼 간에 파일 데이터를 마이그레이션하고 이러한 프로젝트의 내재된 복잡성과 위험을 없애려면 자동화되고 직관적이며 확장 가능한 솔루션이 필요합니다. 고객은 비정형 및 반구조화된 파일 데이터를 Azure Blob Storage, Azure Files 및 Azure NetApp Files에 복사하는 것이 빠르고 쉬워야 Azure 서비스 혁신에 집중할 수 있다고 말했습니다.</p>
+
+
+  <p>오늘 Microsoft는 솔루션 통합자 및 서비스 공급자 에코시스템의 고객과 파트너에게 <a href="https://aka.ms/kompriseoffer" target="_blank">Komprise</a> 및 <a href="https://www.datadynamicsinc.com/microsoft/" target="_blank">Data Dynamicsat</a>&mdash;의 업계 최고의 파일 마이그레이션 솔루션에 대한 액세스 권한을 비용 없이 제공하는 Azure 파일 마이그레이션 프로그램을 발표합니다. 이러한 솔루션은 파일 및 개체 데이터를 Azure Storage 쉽고 안전하게 마이그레이션하는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/azure-migrate/" target="_blank">Azure Migrate</a> 는 중요한 애플리케이션에 대한 가상 머신, 웹 사이트, 데이터베이스 및 가상 데스크톱을 마이그레이션하는 데 도움이 되는 매우 강력한 비용 없음(또는 저렴한 비용) 도구 집합을 제공합니다. 레거시 애플리케이션을 <a href="https://docs.microsoft.com/en-us/azure/migrate/whats-new#update-july-2021" target="_blank">서버에서 컨테이너로 마이그레이션하고</a> 클라우드 네이티브 환경을 빌드하여 현대화할 수 있습니다. 새 프로그램은 Azure Migrate를 보완하고 대량의 비정형 파일 데이터를 포함하는 애플리케이션 및 워크로드를 마이그레이션하는 수단을 제공합니다.</p>
+
+
+  <p>이 프로그램은 무료 소프트웨어 라이선스, 온보딩 세션 및&nbsp; 마이그레이션 솔루션 공급자&rsquo; 지원 조직에 대한 액세스 권한을 제공합니다. <a href="https://aka.ms/comparemigrationtools" target="_blank">솔루션에</a> 대한 자세한 비교를 검토하고, <a href="https://aka.ms/datadynamicsguide" target="_blank">데이터 역학</a> 및 <a href="https://aka.ms/kompriseguide" target="_blank">Komprise</a>에 대한 시작 가이드를 검토하고, <a href="https://aka.ms/filemigrationvideos" target="_blank">해당 기능을 보여주는 비디오를 시청할 수 있습니다</a>. 요구 사항에 가장 적합한 솔루션을 선택한 후에는 Azure Marketplace에서 적절한 Azure 스폰서 제품을 선택하기만 하면 됩니다.</p>
+
+
+  <p>프로그램을 확장할 때 업데이트를 위해 이 블로그에 구독하는 모든 스토리지 마이그레이션 시나리오&mdash;를 지원하기 위해 추가 마이그레이션 ISV 및 대상 스토리지 플랫폼을 포함<a href="https://techcommunity.microsoft.com/t5/azure-storage-blog/migrate-the-critical-file-data-you-need-to-power-your/ba-p/3038751" target="_blank">하도록 이</a> 프로그램을 확장할 계획입니다.</p>
+
+
+  <h2>Azure 파일 마이그레이션 프로그램에 대해 자세히 알아보기</h2>
+
+
+  <p>이 프로그램에 대해 자세히 알아보려면 수석 프로그램 관리자 칼 라우텐스트라우치 (Karl Rautenstrauch)가 앞으로 나아가이 훌륭한 제안을 활용하는 데 도움이되는 게시물을 작성한 <a href="https://techcommunity.microsoft.com/t5/azure-storage-blog/migrate-the-critical-file-data-you-need-to-power-your/ba-p/3038751" target="_blank">기술 Community 블로그</a>를 방문하십시오! Azure <a href="https://azure.microsoft.com/en-us/migration/#overview" target="_blank">마이그레이션 및 현대화 센터를</a> 방문하여 애플리케이션 워크로드를 Azure로 마이그레이션하는 방법에 대해서도 자세히 알아볼 수 있습니다.</p>

@@ -1,0 +1,109 @@
+### YamlMime:Yaml
+ms.openlocfilehash: da4811ecd11273e4b2d57272850f3036074d0b1b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911566"
+Slug: teradata-bolsters-analytics-and-database-capabilities-for-azure
+Title: Teradata는 Azure에 대한 분석 및 데이터베이스 기능을 강화합니다.
+Summary: 이 게시물은 Azure의 제품 관리자인 Rory Conway, Teradata와 공동 작성되었습니다. Microsoft Azure Marketplace에서 Teradata Database의 엔터프라이즈급 기능이 향상되었습니다. 훌륭해요...
+Content: >-
+  <p><em>이 게시물은 Azure의 제품 관리자인 Rory Conway, Teradata와 공동 작성되었습니다.</em></p>
+
+
+  <p>Microsoft Azure Marketplace에서 Teradata Database의 엔터프라이즈급 기능이 향상되었습니다. 이는 고객 경험, 위험 완화, 자산 최적화, 재무 변환, 제품 혁신 및 운영 우수성과 같은 영역에 최적의 비즈니스 결과를 제공하기 위해 고급 분석을 위한 엔진으로 Teradata Database를 사용하거나 시도하려는 조직에 좋은 소식입니다. Azure에서 Teradata Demand Chain Management의 최근 출시와 함께 이러한 기능은 상당한 개선 사항을 통해 주목할 만한 인상적인 솔루션 집합을 제공합니다. <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/teradata.teradata-database-template" target="_blank">직접 사용해 보세요</a>.</p>
+
+
+  <h2>Teradata Primer</h2>
+
+
+  <p>이미 알고 있듯이 <a href="https://www.teradata.com/" target="_blank">Teradata Corporation</a> 은 오랫동안 대규모 분석을 위한 데이터 웨어하우스 공급자를 선도하는 시장&rsquo;으로 간주되어 왔습니다. 1,400명 이상의 고객으로부터 2B 이상의 수익을 창출하고 10,000명의 직원을 지원하는 Teradata는 대규모 조직이 전략적 파트너와 연계할 때 추구하는 깊은 뿌리와 기술적 강점을 가지고 있습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0" width="1775">
+   <tbody>
+    <tr>
+     <td valign="top" width="704">
+     <p><strong>Teradata by the numbers: </strong></p>
+
+     <ul>
+      <li>35년 이상의 혁신과 리더십</li>
+      <li>77개국 최대 1,400명의 고객</li>
+      <li>43개국에서 10,000명 이하의 직원</li>
+      <li>2016년 매출 $2.8B</li>
+     </ul>
+     </td>
+     <td valign="top" width="1069">
+     <p><strong>Teradata는 다음과 같은 많은 주요 기업과 협력합니다. </strong></p>
+
+     <ul>
+      <li>&ndash; 항공사 상위 6개 항공사 모두</li>
+      <li>&ndash; 글로벌 상업 및 저축 은행 상위 20개 은행 중 18개 은행</li>
+      <li>상위 20개 &ndash; 통신 회사 중 통신 19개</li>
+      <li>&ndash; 상위 20개 제조 회사 중 제조 13개</li>
+      <li>상위 20개 글로벌 소매업체 중 소매 &ndash; 점 15개</li>
+     </ul>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>Teradatas&rsquo; 평판은 대규모 분석 성능을 기반으로 합니다. 회사&rsquo; 배포 전략은 하이브리드 클라우드 및 라이선스 이식성 &ndash; &ldquo;<a href="https://www.teradata.com/News-Releases/2016/Teradata-Announces-the-World%E2%80%99s-Most-Powerful" target="_blank">Teradata Everywhere</a>&trade;&rdquo; &ndash; 를 중심으로 하여 고객이 Teradata를 더 적은 증분으로 구매하고 필요에 따라 소비를 늘릴 수 있도록 합니다.</p>
+
+
+  <p>Teradatas&rsquo; 시장 조사에 따르면 기업의 90% 이상이 2020년까지 온-프레미스 및 클라우드 리소스를 혼합하여 사용할 것으로 예상합니다. 따라서 Teradata는 조직이 하이브리드 아키텍처로 발전하고 분석 투자에서 가장 많은 가치를 도출할 수 있도록 지원하는 <a href="https://www.teradata.com/Solutions-and-Industries/ecosystem-architecture-consulting" target="_blank">강력한 서비스 전문가</a> 의 지원을 받아 모든 배포 옵션에서 소프트웨어 일관성을 강조합니다.</p>
+
+
+  <h2>Azure의 Teradata Database</h2>
+
+
+  <p>&rsquo;이제 옵션에 관심을 돌릴 수 있습니다. <a href="https://www.teradata.com/products-and-services/azure/" target="_blank">Azure의 Teradata Database</a> 는 다양한 가격대의 다양한 기능을 갖춘 4가지 소프트웨어 계층을 제공합니다. 현재 워크로드에 필요한 항목에 해당하는 번들을 선택합니다. Teradata 데이터베이스 계층은 낮음부터 높음까지 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><strong>개발자</strong> <strong>&ndash;</strong> 애플리케이션 개발을 위한 무료 소프트웨어</li>
+   <li><strong>기본</strong> <strong>&ndash;</strong> 낮은 동시성, 엔트리 수준 데이터 웨어하우스에 대한 위치 지정</li>
+   <li><strong>고급</strong> <strong>&ndash;</strong> 동시성이 높고 프로덕션 혼합 워크로드를 지원합니다.</li>
+   <li><strong></strong> <strong>&ndash;</strong> 정교한 워크로드 관리를 사용하여 최상위 제품 Enterprise</li>
+  </ul>
+
+
+  <p>Azure 배포는 DS15_v2 및 DS14_v2(Azure Premium Storage) 및 G5 및 D15_v2(로컬 스토리지)를 포함하여 전 세계적으로 거의 모든 지역에서 사용할 수 있는 여러 VM(Virtual Machine) 유형에서 제공됩니다. 여러 데이터 리포지토리에서 인사이트를 끌어오고 결합할 수 있는 Teradata QueryGrid와 같은 다른 분석 에코시스템 구성 요소도 사용할 수 있습니다.</p>
+
+
+  <p>아래 표에는 현재 사용 가능한 옵션이 표시됩니다. 최신 구성 및 소프트웨어 가격 책정은 <a href="https://www.teradata.com/products-and-services/azure/products/" target="_blank">Teradatas&rsquo; 웹 사이트를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ade55422-f52b-46db-abc0-680b9420be6d.png"><img alt="Azure Table 17 08 03" border="0" height="149" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/efa02025-5398-48a6-8071-989040406d55.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Azure Table 17 08 03" width="941"></a></p>
+
+
+  <p>Azure에서 Teradata를 쉽게 사용할 수 있습니다. Azure Marketplace 솔루션 템플릿은 직관적인 단계별 프로비저닝 프로세스를 통해 안내하며, 약 1시간 안에 전체 분석 에코시스템을 가동하고 실행할 수 있습니다. 다음은&rsquo; 포괄적인 단계별 배포 프로세스를 보여 주는 스크린샷입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a200992d-a2ab-4ed5-8c13-09ead34dbf1d.png"><img alt="Deployment process" border="0" height="494" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/815d05fe-ea77-4bd2-8206-c79dc3ed7158.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="배포 프로세스" width="666"></a></p>
+
+
+  <h2>Azure의 Teradata Demand Chain Management</h2>
+
+
+  <p>&rsquo;특히 소매 및 소비재에서 많은 기업이 퍼블릭 클라우드 공급자로서 Azure와 연계되어 있다는 것은 비밀이 아닙니다. 소매 및 소비재 부문을 위한 Teradata의 추가 SaaS(Software as a Service) 옵션은 예측, 처리 및 수요 체인 분석을 제공하는 애플리케이션 제품군인 <a href="https://www.teradata.com/Resources/Datasheets/Teradata-Demand-Chain-Management-Software-as-a-Ser" target="_blank">TEradata DCM(Demand Chain Management</a> )입니다.</p>
+
+
+  <p>Teradata DCM은 소비자 수요 데이터를 사용하여 계절 및 인과 식별을 사용한 기록 성능을 기반으로 여러 매장 위치에서 각 항목의 일일 및/또는 주간 판매 예측을 개발합니다. 그런 다음 예측은 각 위치에서 예상되는 판매를 기반으로 공급망을 통해 재고를 끌어오는 재고 및 이행 전략과 결합됩니다. 그 결과 기존의 공급망 정보 흐름이 반전되어 매장 및 SKU 수준의 수요가 피라미드의 절정에 적절한 역할을 할 수 있게 됩니다.</p>
+
+
+  <h2>오늘 Azure에서 Teradata 시작</h2>
+
+
+  <p>Teradata는 Azure 커뮤니티에 강력한 분석 기능을 제공합니다. 기존 Teradata 고객의 경우 Azure의 일관된 소프트웨어는 이미 투자한 투자를 활용할 수 있음을 의미합니다&rsquo;. 다른 사용자에게 Azure에서 Teradata를 시도하는 것은 사용자에게 적합한지 여부를&rsquo; 결정하는 쉽고 낮은 위험 방법입니다. Azure Marketplace에서 Teradata를 배포하여 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/teradata.teradata-database-template" target="_blank">지금 사용해 보세요</a>.</p>
+
+
+  <p>기본적으로 보안을 위해 Teradata 배포는 VM에 대한 공용 IP 주소를 자동으로 만들지 않습니다. 배포 후 VPN/ExpressRoute를 통해 이미 동일한 Virtual Network에 있는 jumpbox VM에서 또는 공용 IP 주소 및 특정 네트워크 보안 그룹을 뷰포인트, 데이터 이동기, 데이터 스트림 컨트롤러, 에코시스템 관리자 또는 서버 관리와 같이 액세스해야 하는 VM에 수동으로 연결하여 Teradata VM에 액세스할 수 있습니다.</p>
+
+
+  <p>자세한 내용은 Azure 시작 가이드의 <a href="https://www.teradata.com/products-and-services/azure/getting-started/" target="_blank">Teradata를 참조하세요</a>.</p>

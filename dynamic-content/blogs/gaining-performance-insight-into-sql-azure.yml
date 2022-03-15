@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4e9380c48a62d27348f033926dc0fe47cf70f5cc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911279"
+Slug: gaining-performance-insight-into-sql-azure
+Title: SQL Azure 성능 인사이트 얻기
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] TechNet에는 SQL Azure 쿼리 성능을 이해하는 흥미로운 문서가 있습니다. &nbsp;이 문서에서는 데이터베이스 관리자가 다음을 수행할 수 있는 방법을 설명합니다.'
+Content: '<p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>TechNet에는 SQL Azure 쿼리 성능을 이해하는 흥미로운 문서가 있습니다. &nbsp;이 문서에서는 데이터베이스 관리자가 제출되는 Transact-SQL 문을 정확히 추적하는 방법 및 데이터베이스가 해당 결과를 반환하는 방법과 그 결과를 반환하는 방법에 대해 설명합니다.&nbsp; </p>  <p><a href="https://social.technet.microsoft.com/wiki/contents/articles/gaining-performance-insight-into-sql-azure.aspx">TechNets&rsquo; 문서: &ldquo;SQL Azure 대한 Performance Insight 얻기에 대한 자세한 내용을 보려면 여기를 클릭하세요.</a></p>  <p>-Steve</p>'

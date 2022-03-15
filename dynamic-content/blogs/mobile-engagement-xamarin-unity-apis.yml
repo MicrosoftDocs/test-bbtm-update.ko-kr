@@ -1,0 +1,86 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 505d62d5ba11f3c4478174f6b091e5d2a23ac592
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905350"
+Slug: mobile-engagement-xamarin-unity-apis
+Title: Xamarin SDK, Unity SDK 및 Azure Mobile Engagement용 개방형 API 발표
+Summary: 제품의 도달 범위를 늘리기 위해 몇 가지 주요 기능을 발표하게 되어 매우 기쁩니다.
+Content: >-
+  <p><strong>Xamarin SDK</strong>, <strong>Unity SDK</strong> &amp; <strong>오픈 API</strong>를 Azure Mobile Engagement 몇 가지 주요 기능을 발표하게 되어 매우 기쁩니다. 그러면 더 많은 고객에게 제품의 도달 범위를 늘릴 수 있습니다. Azure Mobile Engagement &ndash; 새로운 사용자를 위해 앱 사용량, 실시간 사용자 구분에 대한 데이터 기반 인사이트를 제공하고 상황에 맞는 인식 푸시 알림을 사용하도록 설정하는 사용자 참여 플랫폼을 제공합니다.</p>
+
+
+  <p>우리 팀은 또한이 년 빌드 컨퍼런스&nbsp; 주에 참석 - 우리는 <strong>금요일, 4 월 1 일 금요일 오전 10:00에서 부스</strong>&nbsp;와 aMain&nbsp; 극장 세션이 있습니다. 그래서 거기 우리를 만나 우리는 어떤 질문을하고 Azure Mobile Engagement 당신의 비즈니스 요구를 충족 할 수있는 방법을 논의 행복 할 것이다!&nbsp;</p>
+
+
+  <h2>Xamarin SDK</h2>
+
+
+  <ul>
+   <li>Xamarin.Android &amp; Xamarin.iOS 앱을 만드는 Xamarin 개발자는 이제 <a href="https://www.nuget.org/packages/Microsoft.Azure.Engagement.Xamarin/">Nuget 패키지를</a> 다운로드하여 Azure Mobile Engagement 사용할 수 있습니다.</li>
+   <li>또한 <a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-xamarin-ios-get-started">Xamarin.iOS 및 Xamarin.Android</a> 에 대한 기본 SDK 통합을 설명하는 자습서를 쉽게 따를 <a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-xamarin-android-get-started">수 있습니다</a>.</li>
+  </ul>
+
+
+  <p>&nbsp;<img alt="Azure Mobile Engagement Xamarin SDK" border="0" height="326" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/38615d71-245c-473f-a62a-a7df0661e3c6.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Xamarin SDK Azure Mobile Engagement" width="610"></p>
+
+
+  <p style="text-align: center;"><em>Xamarin Nuget 패키지 Azure Mobile Engagement</em></p>
+
+
+  <h2>Unity SDK</h2>
+
+
+  <ul>
+   <li>Unity 프레임워크를 사용하여 게임 앱을 만드는 Unity 개발자는 <a href="https://github.com/Azure/azure-mobile-engagement-unity">오픈 소스 Unity SDK</a>를 통해 Azure Mobile Engagement 사용할 수도 있습니다.</li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-unity-ios-get-started">또한 iOS용 Unity 및 Android용 Unity에 대한</a> 기본 SDK 통합을 설명하는 자습서를 쉽게 따를 수 <a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-unity-android-get-started">있습니다</a>.</li>
+  </ul>
+
+
+  <p><img alt="Mobile Engagement Unity game notification" border="0" height="343" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/01764c95-3d92-4e6e-b70b-e17233a0cb75.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Unity 게임 알림 Mobile Engagement" width="610"></p>
+
+
+  <p style="text-align: center;"><em>Unity 게임에 표시되는 Azure Mobile Engagement 의해 구동되는 앱 내 알림</em></p>
+
+
+  <h2>API 열기</h2>
+
+
+  <p>최근에 IT/CRM/CMS 시스템과 같은 기존 백 엔드를 Mobile Engagement 쉽게 통합할 수 있도록 프로그래밍 방식으로 Mobile Engagement 상호 작용하는 공용 REST API 및 .NET SDK를 출시했습니다. 이러한 API를 사용하여 다음을 수행할 수 있습니다.</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp; 푸시 캠페인을 만들고&nbsp;&amp;&nbsp; 푸시 통계를 가져옵니다.</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp;디바이스에 대한 Mobile Engagement 저장된 정보를 검색하고 향상시킵니다.</p>
+
+
+  <p>몇 가지 유용한 리소스:</p>
+
+
+  <ul>
+   <li>
+   <div align="left"><a href="https://msdn.microsoft.com/en-us/library/azure/mt683754.aspx">REST API 참조</a>는 사용 가능한 모든 REST API와 해당 요청/응답 형식에 대한 간략한 설명을 열거합니다.</div>
+   </li>
+   <li>
+   <div align="left"><a href="https://swagger.io/">Swagger</a> 또는 Open API 사양은 REST API를 설명하는 표준 방법입니다. Azure Mobile Engagement REST API는 이 <a href="https://github.com/Azure/azure-rest-api-specs/blob/master/arm-mobileengagement/2014-12-01/swagger/mobile-engagement.json">Swagger 사양</a>을 사용하여 설명합니다.</div>
+   </li>
+   <li>
+   <div align="left">서비스 통합을 위해 이러한 API를 사용하는 <a href="https://www.nuget.org/packages/Microsoft.Azure.Management.Engagement">.NET SDK</a> 도 게시했습니다.</div>
+   </li>
+   <li>
+   <div align="left">샘플 - <a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-dotnet-sdk-service-api/">.NET SDK 샘플</a> &amp; <a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-engagement-dotnet-rest-service-api/">REST API 샘플</a>은 프로그래밍 방식으로 푸시 캠페인을 만들거나 Mobile Engagement 앱에 대한 디바이스 정보를 가져오는 것과 같은 몇 가지 간단한 시나리오를 보여 줍니다.</div>
+   </li>
+  </ul>
+
+
+  <p align="left">감사하고 다음 중 어떤을 사용하여 우리와 연결하는 것을 주저하지 마십시오&rsquo; :</p>
+
+
+  <ul>
+   <li><a href="https://twitter.com/AzureMobileEng">트위터에서</a> 우리와 함께 커넥트</li>
+   <li><a href="https://feedback.azure.com/forums/285737-mobile-engagement">UserVoice</a>를 통해 기능 요청 제공</li>
+   <li><a href="https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=azuremobileengagement">MSDN 포럼</a>에서 질문하기</li>
+  </ul>

@@ -1,0 +1,71 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6ccc735d005cf2451aaf879d5fc7c5e15f6e89b1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912296"
+Slug: what-to-expect-in-spark-ai-summit-europe
+Title: Spark + AI 서밋 유럽에서 기대할 수 있는 사항
+Summary: 'Spark + AI 서밋 유럽은 런던에서 며칠 만에 시작됩니다. Microsoft와 Azure Databricks를 사용하는 많은 고객이 정상 회담에 참석합니다. '
+Content: >-
+  <p><a href="https://databricks.com/sparkaisummit/europe" target="_blank">Spark + AI 서밋 유럽</a>은 런던에서 며칠 만에 시작됩니다. Microsoft와 <a href="https://azure.microsoft.com/en-gb/services/databricks/" target="_blank">Azure Databricks를</a> 사용하는 많은 고객이 Summit에 참석합니다. Azure Data의 회사 부사장인 Rohan Kumar는 Azure Databricks가 최고의 Apache<sup>&reg; </sup>Spark<sup>&trade;</sup> 분석 플랫폼과 Microsoft Azure Data Services를 결합하여 고객이 데이터의 힘을 발휘하고 AI를 가능하게 하고 세상을 개선할 수 있는 가능성을 재구상할 수 있도록 하는 방법에 대한 기조연설을 제공할 예정입니다. 이러한 플랫폼을 사용하면 일관된 단일 API 집합으로 개발자 생산성이 향상되고 개발자는 동일한 환경 내에서 다양한 종류의 처리를 혼합하고 일치시킬 수 있습니다. 또한 Azure Databricks는 환경 간에 불필요한 데이터 이동을 제거하여 성능을 향상시킵니다.</p>
+
+
+  <p>고객 및 파트너가 Azure Databricks를 활용하는 성공 사례를 공유하는 몇 가지 권장 세션은 다음과 같습니다.</p>
+
+
+  <h2>석유 &amp; 가스의 경우</h2>
+
+
+  <ul>
+      <li><a href="https://databricks.com/session/keynote-from-daniel-jeavons" target="_blank"><em>AI로 전환</em></a>: 실제 고객이 Azure Databricks를 사용하여 딥 러닝을 활용하여 주유소에서 안전 인시던트를 감지할 수 있는 솔루션을 구현하는 방법을 알아봅니다. 또한 조직 전체에서 AI 프로젝트를 이끌 수 있도록 Advanced Analytics COE를 빌드하는 방법을 알아봅니다.</li>
+  </ul>
+
+
+  <h2>소매의 경우</h2>
+
+
+  <ul>
+      <li><a href="https://databricks.com/session/keynote-from-rob-mckendrick" target="_blank"><em>&rsquo;Databricks를 사용하여 벽돌과 박격포에서 AI로의 협동 변환</em></a>: 이 세션에서는 식품, 보험, 장례식에서 일하는 소비자 협동 조합 내의 데이터 책임자로부터 데이터 전략, 거버넌스 및 엔지니어링을 선도하는 방법을 알아보고 회사 전체 팀과 긴밀히 협력합니다.</li>
+  </ul>
+
+
+  <h2>제조용</h2>
+
+
+  <ul>
+      <li><a href="https://databricks.com/session/magneti-marelli-presentation" target="_blank"><em>빅 데이터 애플리케이션을 위한 Enterprise 아키텍처로의 여정: Apache Spark와 싱글톤, 래핑 및 페이&ccedil;드 혼합</em></a>: 전 세계적으로 빅 데이터와 고급 분석을 통합하는 방법을 고급 자동차 부품 제조업체에서 알아봅니다. 제조 산업에서 안정성과 출시 시간은 비즈니스 목표를 달성하기 위한 핵심 요소입니다. 오늘날 분석이 점점 더 많이 배포되어 데이터에서 인사이트를&rsquo; 얻고 데이터 기반 문화를 촉진하여 비즈니스 운영 내에서 효율성과 효율성을 높일 수 있습니다. 분석 도메인에서는 다른 유형의 광범위한 데이터 원본의 존재, 수집 기술 및 전략 선택, 지속적인 데이터 유입을 보장하고 매일 운영에 통합할 프로덕션 준비 분석 서비스를 릴리스해야 하는 등의 실제 과제가 데이터 수집으로 표현되는 경우가 많습니다. 고객이 AI를 채택하기 위해 이러한 과제를 어떻게 극복하고 있는지 알아봅니다.</li>
+  </ul>
+
+
+  <ul>
+      <li><a href="https://databricks.com/session/using-apache-spark-structured-streaming-on-azure-databricks-for-predictive-maintenance-of-coordinate-measuring-machines" target="_blank"><em>좌표 측정 머신의 예측 유지 관리를 위해 Azure Databricks에서 Apache Spark 구조적 스트리밍 사용</em></a>: 데이터 과학자와 그의 팀이 조직을 위한 디지털 제품을 빌드하는 방법을 알아봅니다. 이 세션에서는 Azure Databricks에서 Apache Spark 구조적 스트리밍을 사용하여 라이브 데이터를 처리하고 Spark MLlib를 사용하여 머신 오류를 예측하기 위한 모델을 학습시키는 방법에 대해 설명합니다. 이를 통해 사용자는 모든 관련 컴퓨터 정보를 계속 파악하고 컴퓨터가 안정적으로 작동할 수 있는지 한눈에 알 수 있습니다. Azure Databricks를 통해 팀이 점점 더 많은 Spark 작업을 쉽게 예약하고 모니터링하여 앱에 새로운 기능을 지속적으로 추가하는 방법을 보여 줍니다.</li>
+  </ul>
+
+
+  <ul>
+      <li><a href="https://databricks.com/session/using-azure-databricks-structured-streaming-deep-learning-pipelines-to-monitor-1000-solar-farms-in-real-time" target="_blank"><em>실시간으로 1,000개 이상의 태양광 팜을 모니터링하는 Azure Databricks, 구조적 스트리밍 및 심층 Learning Pipelines</em></a>: 또한 제조 시 Azure Databricks 클라우드의 주요 기능과 Azure Data Lake 및 Azure Event Hubs에서 원활하게 작동하는 방법을 시작으로 플랫폼을 작동시키는 기본 아키텍처, 기술 및 접근 방식에 대해 이 기술 심층 분석 세션에서 알아봅니다. ML 및 DL Pipelines 대한 적절한 검사와 구조적 스트리밍을 통해 이미지 인식 및 기계 학습과 함께 사용되는 방법을 통해 다음과 같은 실시간 의사 결정을 내릴 수 있습니다.
+
+      <ul>
+          <li>현장 카메라에서 클라우드 커버를 예측하기 위해 빈번하게 이미지 데이터를 거의 실시간으로 처리</li>
+          <li>태양광 인버터의 팬 오류에 대한 데이터 및 예방적 유지 관리의 드론 분석</li>
+      </ul>
+      </li>
+  </ul>
+
+
+  <h2>공공 부문의 경우</h2>
+
+
+  <ul>
+      <li><a href="https://databricks.com/session/keynote-from-caroline-bellamy" target="_blank"><em>Fireside Chat</em></a>: 이 Fireside 채팅에 참여하여 영국 운영 회사 및 해외에서 비즈니스 인텔리전스, 데이터 및 변환 분야의 오랜 비즈니스 리더로부터 배우세요. BI 및 빅 데이터 전략을 정의하고 이를 제공하기 위한 주요 변환 프로그램의 실행을 주도하는 방법을 알아봅니다. 또한 보드 수준에서 데이터의 챔피언이 되어 데이터가 놀라운 전략적 자산으로 취급되도록 하는 방법을 알아봅니다.</li>
+  </ul>
+
+
+  <h2>클라우드의 람다 아키텍처</h2>
+
+
+  <ul>
+      <li><a href="https://databricks.com/session/lambda-architecture-in-the-cloud-with-azure-databricks" target="_blank"><em>Azure Databricks를 사용하는 클라우드의 람다 아키텍처</em></a>: 실제 고객 시나리오를 사용하는 또 다른 세션입니다. 이 대화에서 고객은 Azure Databricks를 핵심 구성 요소로 사용하여 Microsoft Azure 구현에 대한 청사진을 보여 줍니다. 기능 프로그래밍의 핵심 원칙 중 일부를 다양한 엔드 투 엔드 빅 데이터 분석 시나리오에 대한 Apache Spark의 기능에 연결하는 방법을 알아봅니다. 또한 람다 아키텍처가 사용&rdquo; 중이고 실제 고객 시나리오 &ndash; 를 사용하여 연간 2.5M 방문자의 데이터를 처리하는 테라바이트 규모의 Azure 기반 데이터 플랫폼을 사용하는 관련 장단점도 볼 &ldquo;수 있습니다.</li>
+  </ul>

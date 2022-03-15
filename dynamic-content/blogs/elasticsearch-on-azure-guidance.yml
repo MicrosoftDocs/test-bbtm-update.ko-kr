@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 84ae79b70d974be88be39e820a452e5d2be54118
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905994"
+Slug: elasticsearch-on-azure-guidance
+Title: Azure에서 Elasticsearch를 실행하기 위한 지침
+Summary: Microsoft Patterns & Practices 그룹은 Elasticsearch 구현에 대한 지침을 제공했으며 고객이 직면한 많은 과제와 이를 통해 작업하는 방법을 보여 줍니다.
+Content: >-
+  <p><a href="https://www.elastic.co/products/elasticsearch" target="_blank">Elasticsearch</a> 는 확장 가능한 오픈 소스 검색 엔진 및 데이터베이스로, 클라우드 기반 시스템을 빌드하는 개발자들 사이에서 인기를 얻고 있습니다. 적절하게 구성된 경우 대용량 데이터를 매우 빠르게 수집하고 효율적으로 쿼리할 수 있습니다.</p>
+
+
+  <p>&rsquo;Elasticsearch 클러스터를 빌드하고 Azure에 배포하는 것은 매우 간단합니다. Windows 또는 Linux VM 집합을 만든 다음 적절한 Elasticsearch 패키지를 다운로드하여 각 VM에 설치할 수 있습니다. 또는 Azure Portal에서 대부분의 프로세스를 자동화하는 데 사용할 수 있는 <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/elasticsearch" target="_blank">ARM 템플릿</a> 을 게시했습니다.</p>
+
+
+  <p>Elasticsearch는 매우 구성 가능하지만&rsquo;, 옵션을 제대로 선택하지 못해 성능이 저하되는 많은 시스템을 목격했습니다. 이에 대한 한 가지 이유는 다음을 포함하여 최상의 처리량과 응답성이 뛰어난 시스템을 달성하기 위해 고려해야 하는 여러 가지 요인이 있기 때문입니다.</p>
+
+
+  <ul>
+      <li>클러스터 토폴로지(클라이언트 노드, 마스터 노드 및 데이터 노드)</li>
+      <li>각 인덱스의 구조(지정할 분할된 데이터베이스 및 복제본 수)</li>
+      <li>가상 하드웨어(디스크 용량 및 속도, 메모리 양, CPU 수)</li>
+      <li>각 클러스터에 리소스 할당(디스크 레이아웃, Java Virtual Machine 메모리 사용량, Elasticsearch 큐 및 스레드, I/O 버퍼)</li>
+  </ul>
+
+
+  <p>실행 중인 워크로드의 특성이 시스템 성능에도 큰 영향을 주므로 이러한 항목을 격리된 상태로 고려할 수 없습니다. 데이터 수집에 최적화된 설치는 쿼리에 대해 잘 조정되지 않을 수 있으며 그 반대의 경우도 마찬가지입니다. 따라서 시스템에서 지원해야 하는 다양한 작업의 요구 사항의 균형을 유지해야 합니다. 이러한 이유로 일련의 구성을 통해 많은 테스트를 수행하고 결과를 분석하는 데 상당한 시간을 보냈습니다.</p>
+
+
+  <p>용도는 고유한 요구 사항을 충족하도록 Elasticsearch 클러스터를 디자인하고 빌드하는 방법을 설명하고 성능을 테스트하고 조정하는 방법을 보여 주는 것이었습니다. 이 지침은 이제 <a href="https://azure.microsoft.com/en-us/documentation/articles/guidance-elasticsearch/" target="_blank">Azure 설명서</a>에서 사용할 수 있습니다. 다음을 다루는 일련의 문서를 제공했습니다.</p>
+
+
+  <ul>
+      <li>사용 가능한 구성 옵션 및 Azure에서 실행되는 클러스터에 적용할 수 있는 방법을 설명하는 Elasticsearch에 대한 일반 지침</li>
+      <li>높은 수준의 데이터 수집 작업을 지원해야 하는 Elasticsearch 클러스터 배포, 구성 및 테스트에 대한 특정 지침</li>
+      <li>혼합 워크로드 및/또는 쿼리 집약적 시스템을 지원해야 하는 Elasticsearch 시스템에 대한 지침 및 고려 사항</li>
+  </ul>
+
+
+  <p><a href="https://jmeter.apache.org/" target="_blank">Apache JMeter</a>를 사용하여 성능 테스트를 수행하고 Java를 사용하여 작성된 JUnit 테스트를 통합했습니다. 그런 다음 성능 데이터를 CSV 파일 집합으로 캡처하고 Excel 사용하여 결과를 그래프로 작성하고 분석했습니다. 또한 <a href="https://www.elastic.co/products/marvel" target="_blank">Elasticsearch Marvel을</a> 사용하여 테스트가 실행되는 동안 시스템을 모니터링했습니다.</p>
+
+
+  <p>사용자 고유의 설정에서 이러한 작업을 반복하려는&#39;<a href="https://azure.microsoft.com/en-us/documentation/articles/guidance-elasticsearch/" target="_blank">설명서</a> 에서는 JMeter 테스트를 실행하는 스크립트를 제공하는 것 외에도 고유한 JMeter 테스트 환경을 만들고 Elasticsearch에서 성능 정보를 수집하는 방법에 대한 지침을 제공합니다.</p>

@@ -1,0 +1,50 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a9fe41b4c7d0b7d54fef1003d437a77f0b0ebf4a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911890"
+Slug: feeding-iot-device-telemetry-data-to-kafka-based-applications
+Title: Kafka 기반 애플리케이션에 IoT 디바이스 원격 분석 데이터 공급
+Summary: Event Hubs에서 Kafka 스트림에 대한 새로 릴리스된 지원을 통해 이제 Azure IoT Hub 고객이 추가 다운스트림 처리 또는 분석을 위해 IoT 디바이스 원격 분석 데이터를 Kafka 기반 애플리케이션에 쉽게 공급할 수 있습니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-event-hubs-for-kafka-ecosystems-in-public-preview/">Event Hubs에서 Kafka 스트림</a>에 대한 새로 릴리스된 지원을 통해 이제 Azure IoT Hub 고객이 추가 다운스트림 처리 또는 분석을 위해 IoT 디바이스 원격 분석 데이터를 Kafka 기반 애플리케이션에 쉽게 공급할 수 있습니다. 이를 통해 기존 Kafka 기반 애플리케이션을 사용하는 고객은 애플리케이션의 일부를 미리 다시 작성할 필요 없이 Azure IoT Hub를 더 빠르게 채택할 수 있습니다. 즉, 고객은 메시징, 디바이스 및 구성 관리에 대한 IoT Hub&#39;기본 지원을 조기에 사용하고 나중에 Event Hubs를 기본적으로 사용하도록 원격 분석 처리 애플리케이션을 마이그레이션하는 결정을 연기할 수 있습니다.</p>
+
+
+  <h2>적용 가능한 고객 시나리오</h2>
+
+
+  <p>IoT 디바이스 원격 분석 데이터를 Kafka 기반 처리 애플리케이션에 공급하는 기능은 다음과 같은 여러 시나리오에서 유용합니다.</p>
+
+
+  <ul>
+   <li>기본 시나리오에는 Kafka 클러스터와의 인터페이스에 이미 작성된 레거시 데이터 처리 애플리케이션을 사용하는 잠재 Azure IoT Hub 고객이 포함됩니다. Event Hubs에서 Kafka에 대한 지원을 통해 고객은 Azure IoT Hub에 온보딩하는 과정의 일환으로 이러한 애플리케이션을 미리 변경해야 할 필요성을 연기할 수 있습니다. 새 기능을 사용하면 선불 개발 비용이 낮은 고객에게 더 빠른 IoT Hub 채택 주기를 사용할 수 있습니다.</li>
+   <li>보조 시나리오에는 기존 Kafka 기반 원격 분석 처리 애플리케이션을 있는 그대로 유지하려는 고객이 포함되며, 다른 서로 다른 원본(예: 비 Azure-IoT-Hub 관리 디바이스)에서 Kafka 스트림으로 내보낸 원격 분석 데이터를 처리하는 데 사용할 수 있습니다. 마찬가지로, 새로운 기능은 기존 Kafka 기반 애플리케이션의 변동을 줄임으로써 고객에게 혜택을 줍니다.</li>
+   <li>최종 시나리오에는 단순히 향후 채택을 위해 Azure IoT Hub&#39;기능을 평가하는 고객이 포함되며 일반적으로 외부 주변 데이터 처리 시스템을 크게 변경하지 않고 IoT Hub&#39;기능의 유효성을 검사하는 데 필요한 최소한의 변경 사항을 수행하려고 합니다.</li>
+  </ul>
+
+
+  <h2>IoT Hub 원격 분석에서 Kafka 기반 애플리케이션 사용</h2>
+
+
+  <p>아래 다이어그램에 표시된 것처럼 IoT Hub는 디바이스 원격 분석 데이터의 통로 역할을 합니다. 이 데이터는 Event Hubs에 유지되며 궁극적으로 다운스트림 애플리케이션에서 사용됩니다.</p>
+
+
+  <p>Kafka 기반 애플리케이션이 이 데이터를 검색할 수 있도록 하려면 이벤트 허브를 IoT Hub에 엔드포인트/경로로 추가하고 데이터가 저장된 Event Hub의 연결 문자열을 사용하여 Kafka 기반 애플리케이션을 구성해야 합니다. 다음 단계를 완료하는 방법에 대한 아래 링크를 사용합니다.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-create-kafka-enabled#create-a-kafka-enabled-event-hubs-namespace">새 Kafka 지원 Event Hubs 가이드를 만듭니</a>다(만들기 프로세스에서 Kafka&quot; 사용 옵션이 선택되어 있는지 확인&quot;).</li>
+   <li>IoT <a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-endpoints#custom-endpoints">Hub에서 이벤트 허브를 새 엔드포인트로</a> 추가하고 디바이스 메시지를 라우팅하는 <a href="https://docs.microsoft.com/en-us/azure/iot-hub/tutorial-routing">경로를 추가</a>합니다.</li>
+   <li>Event Hubs의 연결 문자열을 사용하여 Kafka 소비자 구성( <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-quickstart-kafka-enabled-event-hubs">빠른 시작 코드를</a> 샘플 Kafka 소비자로 사용할 수 있음)</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ebfd2f70-7a66-4be3-ada2-e530c298fb48.png"><img alt="image" border="0" height="653" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b39c430b-4937-4df5-bb1c-e082176c0548.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="1024"></a></p>
+
+
+  <p>관련된 단계에 대한 자세한 데모는 아래 녹화된 비디오를 참조하세요.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="540" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Kafka-Integration-with-Azure-IoT-Hub/player" width="960"></iframe></p>

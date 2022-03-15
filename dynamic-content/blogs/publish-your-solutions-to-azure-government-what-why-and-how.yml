@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 06628c320f598b3d1e170a9c5d9f75af3d58a2bf
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905795"
+Slug: publish-your-solutions-to-azure-government-what-why-and-how
+Title: Azure Government에 솔루션 게시 - 무엇을, 왜, 어떻게
+Summary: Azure Marketplace는 Azure에서 실행되도록 최적화된 모든 소프트웨어 요구 사항을 위한 최고의 대상입니다. Azure Government Marketplace에는 Azure에서 사용할 수 있는 여러 동일한 솔루션이 포함되어 있습니다.
+Content: >-
+  <p>Azure Marketplace는 Azure에서 실행되도록 최적화된 모든 소프트웨어 요구 사항을 위한 최고의 대상입니다. Azure Government Marketplace에는 정부 고객이 중요 업무용 워크로드를 클라우드로 안전하게 전송할 수 있는 Microsoft Azure 전용 인스턴스인 <a href="https://azure.microsoft.com/en-us/global-infrastructure/government/" target="_blank">Azure Government</a>에서 사용할 수 있는 동일한 솔루션이 많이 포함되어 있습니다.</p>
+
+
+  <p>솔루션을 Azure Government로 가져오려는 소프트웨어 회사는 Azure Government 비디오 시리즈의 이 에피소드를 시청하여 자세히 알아볼 수 있습니다. <a href="https://www.youtube.com/watch?v=MgIynt_zguY&amp;index=2&amp;list=PLLasX02E8BPA5IgCPjqWms5ne5h4briK7" target="_blank">Azure Government에 솔루션 게시 - 무엇을, 왜, 어떻게(비디오)</a></p>
+
+
+  <p>이 에피소드에서는 수석 프로그램 관리자인 Steve Michelotti가 Azure Government Marketplace에 대해 Azure Government의 프로그램 관리자인 Sarah Weldon과 대화합니다. 이 비디오에서는 새 정부 고객에게 도달하는 이 플랫폼을 사용하는 방법, 이유 및 방법을&quot; 다룹니&quot;다.</p>
+
+
+  <p>&rsquo;Azure Government의 규정 준수 이점에 대해 알아보고, Azure Marketplace에 이미 소프트웨어를 게시한 경우&rsquo; 이 공간으로 이동하는 방법을 알아봅니다. Steve와 Sarah는 성공을 보장하기 위한 추가 지침과 함께 Azure Government Marketplace에 대한 게시 프로세스 데모를 포함합니다.</p>
+
+
+  <p align="center"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="480" src="https://www.youtube.com/embed/MgIynt_zguY?rel=0" width="854"></iframe></p>
+
+
+  <p>또한 <a href="https://www.youtube.com/user/windowsazure/featured" target="_blank">Microsoft Azure YouTube 채널을</a> 구독하여 Azure Government 재생 목록에서 최신 비디오를 확인해야 합니다.</p>
+
+
+  <h2>Azure Government 정보</h2>
+
+
+  <p>Azure Government는 매우 중요한 데이터를 위해 설계된 세계적 수준의 보안 및 제어 기능을 갖춘 Microsoft Azure 전용 인스턴스입니다. 이를 통해 정부 고객은 중요 업무용 워크로드를 클라우드로 안전하게 이전할 수 있습니다.</p>
+
+
+  <p>Azure Government는 FedRAMP 고규격 프로그램과 미국 전역의 강력한 네트워킹에 포함된 38개 이상의 서비스를 보유하고 있으며, 영향 수준 5에서 인증된 DoD 지역 2개를 포함하여 8개 지역이 발표되었으며, 모두 프라이빗 다크 파이버를 통해 연결됩니다. 각 지역은 비즈니스 연속성을 위해 지역 간 데이터 복제와 500마일 이상 떨어져 있습니다.</p>
+
+
+  <p>Azure Government의 모든 항목을 최신 상태로 유지하려면 Azure <a href="https://blogs.msdn.microsoft.com/azuregov/" target="_blank">Government 블로그</a>에서 이메일 구독을&rdquo; 클릭하여 &ldquo;<a href="https://blogs.msdn.microsoft.com/azuregov/feed/" target="_blank">RSS 피드</a>를 구독하고 등록하여 이메일을 받습니다.</p>

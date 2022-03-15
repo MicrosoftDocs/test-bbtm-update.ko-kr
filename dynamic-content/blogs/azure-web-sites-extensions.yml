@@ -1,0 +1,64 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 50241d94d4291a49ed2166075c4b65154a71cd3e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906150"
+Slug: azure-web-sites-extensions
+Title: Azure 웹 사이트 확장
+Summary: >
+  사이트 확장은 사이트 관리 도구를 확장할 수 있는 관리 엔드포인트입니다. 웹 사이트에서 사용할 새 사이트 확장을 만들고 사이트 확장 갤러리 제출 포털을 통해 새 사이트 확장을 제출할 수도 있습니다.
+Content: >-
+  각 Azure 웹 사이트는 사이트 확장으로 배포된 강력한 도구 집합을 활용할 수 있는 확장 가능한 관리 엔드포인트를 제공합니다. 이러한 도구는 Visual Studio Online과 같은 소스 코드 편집기부터 웹 사이트에 연결된 MySQL 데이터베이스와 같은 연결된 리소스에 대한 관리 도구에 이르기까지 다양합니다. 기존 사이트 확장은 Azure Preview 포털의 각 웹 사이트에 사용할 수 있습니다.
+
+  <p align="center"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/06/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img1.png"><img alt="Daria Grigoriu - Daria Griguriu - Azure Web Sites Extensions - Img1" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img1-636x345.png" width="636" height="345" /></a></p>
+
+  이 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-transform-extend/">링크</a>의 지침에 따라 웹 사이트에서 사용할 새 사이트 확장을 만들 수 있습니다. 이제 사이트 확장 갤러리 제출 포털을 통해 Azure Websites 플랫폼에서 가용성을 위해 새 사이트 확장을 제출할 수도 있습니다 <a href="https://www.siteextensions.net">https://www.siteextensions.net</a>.
+
+  <h1>기존 사이트 확장과 상호 작용</h1>
+
+  기존 사이트 확장과 상호 작용하기 위한 진입점은 구성 렌즈 아래의 각 웹 사이트에 대한 Azure Preview 포털에서 사용할 수 있습니다. 확장 파트에 액세스하면 새 블레이드가 열립니다.
+
+  <p align="center"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/06/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img2.png"><img alt="Daria Grigoriu - Daria Griguriu - Azure Web Sites Extensions - Img2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img2-636x248.png" width="636" height="248" /></a></p>
+
+  새 사이트 확장을 추가하려면 추가 단추를 클릭하고 목록에서 확장을 선택합니다. 이러한 각 확장은 확장명 아래에 나열된 게시자가 사용할 수 있도록 하며 각 게시자가 제공한 법적 조건은 확장을 설치하기 전에 수락해야 합니다.
+
+
+  추가되면 사이트 확장 콘텐츠가 %HOME%\SiteExtensions 폴더 아래에 웹 사이트 루트와 병렬로 복사됩니다. 사이트 확장을 추가하면 사이트가 다시 시작됩니다.
+
+  <p align="center"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/06/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img3.png"><img alt="Daria Grigoriu - Daria Griguriu - Azure Web Sites Extensions - Img3" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img3-367x369.png" width="367" height="369" /></a></p>
+
+  확장 목록의 항목을 마우스 오른쪽 단추로 클릭하거나 각 사이트 확장에 대한 블레이드 맨 위에 표시된 작업을 통해 설치된 각 사이트 확장에 액세스하고 관리할 수 있습니다.
+
+  <p align="center"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/06/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img4.png"><img alt="Daria Grigoriu - Daria Griguriu - Azure Web Sites Extensions - Img4" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img4-470x369.png" width="470" height="369" /></a></p>
+
+
+  <h1>새 사이트 확장 만들기</h1>
+
+  사용자 고유의 사이트 확장을 만들고 공유하시겠습니까? Azure Websites 고객이 사용할 수 있기를 기대합니다.
+
+
+  사이트 확장은 확장 등록을 위한 간단한 메타데이터가 있는 웹앱입니다. 사이트 확장은 Azure Websites 플랫폼에서 지원하는 모든 개발 스택에 대해 작성할 수 있습니다. 예제는 이 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-transform-extend/">링크</a>의 설명서를 통해 사용할 수 있습니다. 특정 구성에 대한 applicationHost.xdt 파일을 만들 수 있습니다. 이러한 파일이 없으면 사이트 확장에 대한 애플리케이션 및 가상 디렉터리 경로를 나타내기 위해 간단한 템플릿이 자동으로 생성됩니다.
+
+
+  사이트 확장은 이 <a href="https://docs.nuget.org/docs/creating-packages/creating-and-publishing-a-package">링크</a>에 설명된 대로 NuGet 형식으로 패키지됩니다. 예를 들어 이 <a href="https://nuget.org/nuget.exe">링크</a> 에서 NuGet.exe 명령줄 유틸리티를 다운로드하여 간단한 샘플 확장을 패키지할 수 있습니다. 이 샘플 확장의 소스 코드는 이 링크를 참조 <a href="https://github.com/projectkudu/FileCounterSiteExtension">하세요</a>.
+
+  <ol>
+   <li>사이트 확장의 이름을 사용하여 폴더를 만듭니다.</li>
+   <li>웹앱을 만들고 모든 관련 콘텐츠를 콘텐츠 폴더의 사이트 확장 폴더 아래에 배치합니다.</li>
+   <li>확장에 대한 NuSpec 파일을 만들고 이 링크의 예제와 같은 사용 조건에 대한 <a href="https://github.com/projectkudu/FileCounterSiteExtension/blob/master/FileCounter.nuspec">링크를</a> 포함해야 합니다.</li>
+   <li>NuGet.exe 유틸리티가 경로에 있는지 확인하고 사이트 확장 폴더에서 다음을 실행하여 NuGet 패키지를 만듭니다.</li>
+  </ol>
+
+  <pre class="prettyprint">nuget pack example.nuspec</pre>
+
+  Azure Websites 플랫폼에서 가용성을 위해 NuPkg 사이트 확장을 제출하려면 제출 포털에 액세스합니다 <a href="https://www.siteextensions.net">https://www.siteextensions.net</a>. 제출 액세스를 등록해야 합니다.
+
+  <p align="center"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/06/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img5.png"><img alt="Daria Grigoriu - Daria Griguriu - Azure Web Sites Extensions - Img5" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img5-391x369.png" width="391" height="369" /></a></p>
+
+  등록/로그인 후에는 확장 패키지를 업로드하고 제출 세부 정보를 확인합니다.
+
+  <p align="center"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/06/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img6.png"><img alt="Daria Grigoriu - Daria Griguriu - Azure Web Sites Extensions - Img6" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Daria-Grigoriu-Daria-Griguriu-Azure-Web-Sites-Extensions-Img6-611x369.png" width="611" height="369" /></a></p>
+
+  사이트 확장을 만들면 Azure Websites 커뮤니티에 큰 도움이 될 수 있습니다. 작업에 대한 다운로드를 추적하려면 갤러리 페이지에서 <a href="https://www.siteextensions.net/">https://www.siteextensions.net</a>특정 확장 링크로 이동합니다. 즐겨 찾는 소셜 미디어 아울렛에서 새 사이트 확장을 발표하는 것을 잊지 마세요.

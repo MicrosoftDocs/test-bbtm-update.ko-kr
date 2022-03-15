@@ -1,0 +1,64 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 01bd9c3ba5b03ccdf1cd9581433a44c602d96d55
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911665"
+Slug: new-azure-hpc-and-partner-offerings-at-supercomputing-19
+Title: Supercomputing 19의 새로운 Azure HPC 및 파트너 제품
+Summary: 3년 이상, HPC(고성능 컴퓨팅) 커뮤니티를 구성하는 연구원과 실무자들이 연례 행사를 위해 함께 모일 것입니다. 1만 명 이상의 참석자들이 콜로라도 주 덴버에 모여 HPC의 최첨단을 발전시킬 것입니다.
+Content: >-
+  <p>3년 이상, HPC(고성능 컴퓨팅) 커뮤니티를 구성하는 연구원과 실무자들이 연례 행사를 위해 함께 모일 것입니다. 1만 명 이상의 참석자들이 콜로라도 주 덴버에 모여 HPC의 최첨단을 발전시킬 것입니다. 슈퍼컴퓨팅 &lsquo;19의 테마는 이제&rdquo; HPC로&ldquo;, 고객에게 제공하기 위해 노력해온 획기적인 기능을&rsquo; 감안할 때 Azure HPC 팀과 강력하게 공감하는 테마입니다.</p>
+
+
+  <p>Azure는 가장 최적화된 온-프레미스 배포에 필적하거나 초과하는 슈퍼컴퓨터급 기술, 혁신적인 서비스 및 성능을 제공하여 클라우드가 HPC를 위해 무엇을 할 수 있는지에 대한 선입견을 쌓고 있습니다. Azure&rsquo;가 혁신, 연구 및 생산성의 새로운 시대를 위한 길을 열고 있는지 확인하기 위해 노력하고 있습니다.</p>
+
+
+  <p>이 쇼에서 Well&rsquo;은 Azure HPC 및 파트너 솔루션을 소개하고, 백서 및 고객 사례 연구를 &ndash;&rsquo;벤치마킹하여 제공된 내용&rsquo;에 대한 개요를 제공합니다.</p>
+
+
+  <ul>
+      <li><strong>대규모 MPI &ndash;</strong> 다른 퍼블릭 클라우드&rsquo; 상용 네트워크의 한계가 아니라 상상력의 한계에서 문제를 해결합니다. Azure는 최신 HPC급 CPU와 매우 짧은 대기 시간 InfiniBand hDR 네트워킹을 갖춘 작업당 최대 80,000개의 코어까지 긴밀하게 결합된 워크로드를 지원합니다.</li>
+      <li><strong>가속 컴퓨팅 &ndash;</strong> HPC, AI 및 시각화 워크로드에서 최대 성능 및 유연성을 위해 최신 GPU, FPGA(필드 프로그래밍 가능 게이트 배열) 및 이제 IPU 중에서 선택합니다.</li>
+      <li><strong>앱 및 서비스 &ndash;</strong> 하이브리드 클라우드에서 클라우드 마이그레이션, POC에서 프로덕션까지, 최적화된 영구 배포에서 민첩한 환경 재구성에 이르는 모든 시나리오에 고급 소프트웨어 및 스토리지를 활용합니다. Azure HPC 소프트웨어에서 다룹니다.</li>
+  </ul>
+
+
+  <h2>Azure HPC, 새로운 제품 발표</h2>
+
+
+  <ul>
+      <li><strong>HPC&ndash;용 새 2세대 AMD EPYC 기반 HBv2 Azure Virtual Machines 미리 보기</strong> HBv2 VM(가상 머신)은 다양한 실제 HPC 워크로드에 대한 슈퍼컴퓨터 클래스 성능, MPI(메시지 전달 인터페이스) 확장성 및 비용 효율성을 제공합니다. HBv2 VM은 새로운 AMD EPYC&trade; 7742 프로세서의 120개의 비 하이퍼스레드 CPU 코어, x86 대안보다 최대 45% 더 많은 메모리 대역폭, 최대 4테라FLOPS의 배정밀도 컴퓨팅을 제공합니다. Mellanox에서 200기가비트 HDR InfiniBand의 클라우드&rsquo; 첫 번째 배포를 활용하여 HBv2 VM은 MPI 작업당 최대 80,000개의 코어를 지원하여 세계에서&rsquo; 가장 크고 가장 강력한 운영 체제 미설치 슈퍼컴퓨터에 필적하는 워크로드 확장성 및 성능을 제공합니다. HBv2는 Azure에서 지금까지 만든 가장 강력한 HPC 서버 중 하나일 뿐만 아니라 가장 저렴한 서버 중 하나입니다. 이제 HBv2 VM을 사용할 수 있습니다.</li>
+      <li><strong>가상 데스크톱&ndash;용 새 NVv4 Azure Virtual Machines 미리 보기</strong> NVv4 VM은 새로운 AMD EPYC&trade; 7742 프로세서와 AMD RADEON INSTINCT&trade; MI25 GPU를 도입하여 Windows Virtual Desktops의 Azure&rsquo; 포트폴리오를 향상시킵니다. NVv4는 분할 가능한 GPU를 제공하여 고객에게 더 많은 선택과 유연성을 제공합니다. 고객은 워크로드 및 가격 포인트에 적합한 가상 GPU 크기를 선택할 수 있으며, 클라우드의 엔트리 레벨 데스크톱에 대해 최대 2GB의 전용 GPU 프레임 버퍼를 사용하여 최대 16GB의 HBM2 메모리가 있는 전체 MI25 GPU까지 강력한 워크스테이션 클래스 환경을 제공할 수 있습니다. NVv4 VM은 현재 미리 보기로 제공됩니다.</li>
+      <li><strong>미리 보기 NDv2 Azure GPU Virtual Machines &ndash;</strong> NDv2 VM은 Azure GPU 제품군에 가장 빠르고 가장 강력한 최신 기능이며 가장 까다로운 분산 HPC, AI(인공 지능) 및 기계 학습(ML) 워크로드를 위해 특별히 설계되었습니다. 이러한 VM에는 각각 32GB의 HBM2 메모리, Intel Xeon Platinum 8168 프로세서의 비 하이퍼스레드 코어 40개 및 시스템 메모리 672GiB가 있는 8개의 NVIDIA Tesla V100 NVLink 상호 연결된 GPU가 있습니다. NDv2 시리즈 가상 머신은 이제 표준 OFED 드라이버 및 모든 MPI 유형 및 버전을 지원하는 Mellanox의 100기가비트 EDR InfiniBand를 제공합니다. NDv2 시리즈 가상 머신은 InfiniBand에 대한 기본 제공 NCCL2 지원을 통해 가장 까다로운 기계 학습 모델 및 분산 AI 학습 워크로드에 대비하여 인기 있는 ML 도구 및&nbsp; 프레임워크를 포함하여 CUDA를 활용하는 워크로드를 실행할 수 있는 슈퍼컴퓨터 크기의 클러스터로 쉽게 확장할 수 있습니다. NDv2 VM은 현재 미리 보기로 제공됩니다.</li>
+      <li><strong>이제 Azure HPC Cache 사용 가능 &ndash;</strong> 파일 성능과 관련하여 새로운 Azure HPC Cache는 유연성과 규모를 제공합니다. Azure Portal에서 바로 이 서비스를 사용하여 고성능 컴퓨팅 워크로드를 온-프레미스 네트워크 연결 스토리지에 연결하거나 이식 가능한 운영 체제 인터페이스로 Azure Blob을 실행합니다.</li>
+      <li><strong>새 NDv3 Azure Virtual Machines for AI&ndash;의 미리 보기</strong> NDv3 VM의 미리 보기는 Ai 학습 및 유추 워크로드를 위해 처음부터 설계된 Graphcore IPU를 특징으로 하는 Azures&rsquo; 첫 번째 제품입니다. IPU 새 아키텍처를 사용하면 소규모 일괄 처리 크기에서도 신경망을 처리할 수 있으므로 학습 수렴이 가속화되고 유추 대기 시간이 짧아질 수 있습니다. NDv3가 출시되면 Azure는 최신 AI 실리콘 혁신을 퍼블릭 클라우드에 도입하고 고객에게 대규모 AI 교육 및 유추 워크로드를 개발하고 실행하는 방법에 대한 추가적인 선택을 제공하고 있습니다. NDv3 VM에는 각각 1200개 이상의 코어와 7,000개 이상의 독립 스레드와 최대 45TB/s의 메모리 대역폭을 제공하는 300MB의 대형 온칩 메모리가 있는 16개의 IPU 칩이 있습니다. 8개의 Graphcore 액셀러레이터 카드는 대역폭이 높고 대기 시간이 짧은 상호 연결을 통해 연결되어 큰 모델을 모델 병렬(파이프라이닝 포함) 또는 데이터 병렬 방식으로 학습할 수 있습니다. NDv3 VM에는 인텔 제온 플래티넘 8168 프로세서와 768GB 메모리가 지원하는 40코어의 CPU도 포함되어 있습니다. 고객은 Graphcores&rsquo; Poplar&reg; 소프트웨어 개발 도구 키트를 사용하여 IPU 기술용 애플리케이션을 개발하고 인기 있는 기계 학습 프레임워크의 IPU 호환 버전을 활용할 수 있습니다. 이제 NDv3 VM을 미리 보기로 사용할 수 있습니다.</li>
+      <li>
+      <p><strong>HPC용 NP Azure Virtual Machines 출시 예정 &ndash;</strong>&nbsp; Alveo U250 FPGA-Accelerated VM은 강력한 Xeon Platinum CPU 코어 및 빠른 NVMe 기반 스토리지를 통해 지원되는 Azure VM으로 1-4 Xilinx U250 FPGA 디바이스에서 제공됩니다. NP 시리즈는 범용 클라우드용 FPGA 애플리케이션의 진정한 리프트 앤 시프트 및 단일 대상 개발을 가능하게 합니다. 오늘날 고객이 구매할 수 있는 보드 및 소프트웨어 에코시스템에 따라 Xilinxs&rsquo; U250 카드 및 SDAccel 2019.1 런타임을 대상으로 하는 RTL 및 고급 언어 디자인은 온-프레미스 및 에지에서와 마찬가지로 Azure VM에서 실행되므로 가속기 개발의 출혈 가장자리가 추가 개발 비용 없이 클라우드의 기능을 활용할 수 있습니다.</p>
+      </li>
+      <li>
+      <p><strong>Azure CycleCloud 7.9 업데이트 </strong><strong style="font-style: normal; font-size: 13.008px; font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif;">&ndash;</strong> Azure CycleCloud 7.9의 릴리스를 발표하게 되어 기쁩니다. 버전 7.9는 특히 Azures&rsquo; 고유 InfiniBand 상호 연결된 인프라의 대규모 MPI 워크로드에 대해 향상된 운영 명확성 및 제어에 중점을 둡니다. 다른 많은 개선 사항 중에서 이 릴리스에는 다음이 포함됩니다.</p>
+
+      <ul>
+          <li>
+          <p>VM 문제 진단을 크게 간소화하는 오류 검색 및 보고 UI(사용자 인터페이스)가 향상되었습니다.</p>
+          </li>
+          <li>
+          <p>사용자가 자동 크기 조정 정책의 &ldquo;영향을 받지 않는 MPI 애플리케이션을 빌드하고 디버그할 수 있도록 하는 Keep-alive&rdquo; 함수를 통한 노드 시간-라이브 기능</p>
+          </li>
+          <li>
+          <p>대기 시간이 중요한 애플리케이션에 대한 노드 토폴로지로 사용자를 직접 제어하는 UI를 통한 VM 배치 그룹 관리.</p>
+          </li>
+          <li>
+          <p>가상 머신 및 가상 머신 확장 집합 시작 성능 및 비용을 개선하는 임시 OS 디스크에 대한 지원</p>
+          </li>
+      </ul>
+      </li>
+      <li>
+      <p><strong>Microsoft HPC Pack 2016, 업데이트 3</strong>&nbsp;<strong style="font-style: normal; font-size: 13.008px; font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif;">&ndash;&nbsp;</strong> 8월에 릴리스된 업데이트 3에는 상당한 성능 및 안정성 향상, Azure의 Windows Server 2019 지원, Azure IaaS Windows 노드를 배포하기 위한 새로운 VM 확장 및 기타 많은 기능, 수정 사항 및 개선 사항이 포함되어 있습니다.</p>
+      </li>
+  </ul>
+
+
+  <p>모든 새로운 제품 및 파트너와 함께 Azure HPC는 HPC 지향 사용 사례에 대한 최신 기능을 지속적으로 제공하는 것을 목표로 합니다. 파트너 인텔, AMD, Mellanox, NVIDIA, Graphcore, Xilinx 등과 함께 다음 주 <a href="https://sc19.supercomputing.org/" target="_blank">덴버</a>에서 만나볼 수 있기를 기대합니다!</p>

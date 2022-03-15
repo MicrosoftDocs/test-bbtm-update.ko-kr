@@ -1,0 +1,98 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 03ba2f0cdca9a1d940382c287a0e66a91ed64be7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911395"
+Slug: azure-automation-run-tasks-on-azure-virtual-machines-without-opening-ports
+Title: 'Azure Automation: 포트를 열지 않고 Azure Virtual Machines에서 작업 실행'
+Summary: 이 게시물에서는 Azure Automation Runbook을 사용하여 Azure VM 에이전트의 사용자 지정 스크립트 확장 구성 요소를 사용하여 스크립트 또는 scriptblock을 Azure VM에 푸시하는 방법을 설명합니다.
+Content: >-
+  <a href="https://azure.microsoft.com/en-us/services/automation/">Azure Automation</a>의 한 가지 좋은 점은 포함된 Azure PowerShell 모듈을 사용하여 Azure 리소스와 상호 작용하는 기능입니다. 리소스 쿼리, 추가, 변경 및 삭제는 PowerShell-in-a-Runbook의 몇 줄에 지나지 않습니다.
+
+
+  IT 전문가가 원하는 가장 일반적인 작업 중 하나는 Azure 가상 머신에서 작업을 실행하는 것입니다. 기본적으로 Azure VM이 프로비전될 때마다 아래와 같이 원격 클라이언트에서 PowerShell 액세스를 허용하도록 엔드포인트가 정의됩니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="Azure VM의 PowerShell 엔드포인트" alt="Run tasks on Azure Virtual Machines - without opening ports" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1-robcost-RunTaskonAzVMs-PSEndpoint.png" width="915" height="146" border="0" />
+
+
+  이전에는 Azure Automation에서 Azure VM에서 PowerShell 명령을 실행할 수 있는 <a href="https://gallery.technet.microsoft.com/scriptcenter/How-to-Use-a-PowerShell-59b2e28c">샘플 Runbook</a> 을 제공했습니다. 이 샘플은 WinRM PowerShell 원격을 통해 Azure VM에 원격으로 액세스하기 위해 자격 증명을 사용하는 데 의존하는 <a href="https://gallery.technet.microsoft.com/scriptcenter/Connect-to-an-Azure-85f0782c">커넥트-AzureVM</a> Runbook에 의존했습니다.
+
+
+  그러나 회사 또는 보안 정책에서 Azure VM에 열려 있는 PowerShell 엔드포인트를 허용하지 않는 경우가 있을 수 있습니다. 예를 들어 ExpressRoute를 통해 엔터프라이즈 데이터 센터를 버스팅하거나 확장하기 위해 Azure VM을 사용하는 경우 인증된 액세스만 인터넷에 액세스하더라도 Azure VM의 PowerShell 엔드포인트가 액세스를 위해 열리지 않도록 할 수 있습니다. 또는 WinRM 설정을 제어하고 PowerShell 원격을 허용하지 않는 Azure VM에 그룹 정책을 적용할 수 있습니다. 두 경우 모두 PowerShell 원격을 사용하여 Azure VM에서 작업을 실행할 수 없습니다.
+
+
+  그렇다면 PowerShell 원격을 사용할 수 없는 경우 Azure VM에서 작업을 실행하려면 어떻게 해야 할까요? Azure VM을 배포할 때 설정 중에 Azure VM 에이전트를 설치하는 옵션을 알아차렸을 것입니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border: 0px;" title="VM 에이전트 옵션 사용" alt="Run tasks on Azure Virtual Machines - without opening ports" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2-robcost-RunTaskonAzVMs-VMAgentOption.png" width="610" height="203" border="0" />
+
+
+  Azure VM 에이전트를 사용하면 Azure Fabric 컨트롤러가 VM 내부를 볼 수 있으므로 다른 방법으로 VM과 상호 작용할 수 있습니다. VM 에이전트에서 제공하는 액세스 방법 중 하나는 Azure VM 사용자 지정 스크립트 확장을 사용하는 기능입니다.
+
+
+  사용자 지정 스크립트 확장을 사용하면 Azure VM 내의 Azure VM 에이전트에 Azure Storage Blob에서 스크립트 파일을 다운로드하고 VM에서 스크립트를 실행하도록 지시할 수 있습니다. 새 Azure VM을 프로비전할 때 사용자 지정 스크립트 옵션이 표시되어 VM을 만든 후 스크립트를 실행할 수 있지만 사용자 지정 스크립트 확장을 사용하여 언제든지 Azure VM에서 스크립트를 실행할 수도 있습니다. 이렇게 하면 Azure Automation에서 활용할 수 있는 개방형 포트 또는 PowerShell 원격 없이 Azure VM에서 스크립트를 실행할 수 있는 또 다른 방법을 제공합니다.
+
+  <h2>Azure Automation에서 사용자 지정 스크립트 확장 사용</h2>
+
+  Azure Automation의 사용자 지정 스크립트 확장을 활용하기 위해 스크립트 센터에서 찾을 수 있는 <a href="https://gallery.technet.microsoft.com/scriptcenter/Run-tasks-on-Azure-Virtual-4997b390">Push-AzureVMCommand</a> 라는 Runbook을 만들거나 Azure 관리 포털의 <a href="https://azure.microsoft.com/blog/2014/10/07/introducing-the-azure-automation-runbook-gallery/">Azure Automation Runbook 갤러리를 통해 Azure Automation</a> 계정으로 직접 가져올 수 있습니다. 이 Runbook을 사용하면 PowerShell 엔드포인트를 사용하도록 설정하거나 VM 내에서 PowerShell 원격을 구성할 필요 없이 Azure VM에 대해 모든 스크립트를 실행할 수 있습니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border: 0px;" title="Runbook 갤러리에서 예제 Runbook 가져오기" alt="Run tasks on Azure Virtual Machines - without opening ports" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3-robcost-RunTaskonAzVMs-RBGallery.png" width="610" height="399" border="0" />
+
+
+  Push-AzureVMCommand Runbook은 다음을 수행합니다.
+
+  <ol>
+   <li>제공하는 스크립트 블록을 가져와서 .ps1 파일에 쓴 다음 해당 파일을 Azure Storage Blob으로 업로드합니다. 또는 선택적으로 Azure Storage 기존 스크립트를 이미 저장한 경우 직접 사용할 수 있습니다.</li>
+   <li>Azure Storage 스크립트를 사용하도록 지정한 VM에서 사용자 지정 스크립트 확장을 구성합니다.</li>
+   <li>요청된 경우 Runbook은 스크립트가 완료될 때까지 기다렸다가 생성된 모든 출력을 반환합니다.</li>
+  </ol>
+
+  이 Runbook에는 Azure에 인증하기 위해 Azure Active Directory OrgID 사용자가 포함된 Azure Automation 자격 증명 자산이 필요합니다. OrgID 및 자격 증명 자산을 만드는 방법에 대한 자세한 내용은 이 이전 <a href="https://azure.microsoft.com/blog/2014/08/27/azure-automation-authenticating-to-azure-using-azure-active-directory/">게시물을</a> 참조하세요.
+
+
+  Push-AzureVMCommand Runbook을 사용하려면 Azure Automation 계정으로 가져오고 게시한 후에는 다른 Runbook에서 Runbook 인라인을 호출하고 필요한 매개 변수를 제공하기만 하면 됩니다. 다음은 Push-AzureVMCommand Runbook과 수신할 응답을 호출하는 두 가지 예입니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border: 0px;" title="Push-AzureVMCommand Runbook을 사용하는 첫 번째 예제 Runbook입니다." alt="Run tasks on Azure Virtual Machines - without opening ports" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4-robcost-RunTaskonAzVMs-ExampleRB1.png" width="899" height="384" border="0" />
+
+
+  스크립트에 입력 매개 변수가 포함된 경우 ScriptArguments 매개 변수를 사용하여 Push-AzureVMCommand Runbook에 전달할 수도 있습니다.
+
+
+  WaitForCompletion 플래그를 $true 설정한 경우 Push-AzureVMCommand 스크립트의 출력을 반환합니다. 그러나 WaitForCompletion이 $false 설정되면 사용자 지정 스크립트 확장에서 스크립트를 계속 실행하는 동안 Push-AzureVMCommand 성공적으로 종료됩니다.
+
+
+  스크립트의 출력은 Azure VM에서 PowerShell 세션의 StdOut 스트림을 통해 사용자 지정 스크립트 확장으로 반환되고 VM 개체의 상태 값에 저장됩니다. 이 출력은 문자열 값으로 전달되지만 스크립트에서 개체를 출력하고 Runbook에서 해당 개체를 사용할 수 있습니다. 이렇게 하려면 스크립트 내에서 개체를 XML로 직렬화한 다음 Runbook 내의 개체로 다시 직렬화 해제할 수 있습니다.
+
+
+  예를 들어 스크립트에서 개체를 직렬화하고 출력하여 스크립트에서 $SerializedOutput 개체만 출력합니다. 그런 다음 Push-AzureVMCommand를 호출할 때 스크립트의 출력을 캡처하고 역직렬화하여 사용하도록 준비합니다. 아래 스크린샷은 이 프로세스의 예를 보여 줍니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border: 0px;" title="Push-AzureVMCommand Runbook을 사용하는 두 번째 예제 Runbook입니다." alt="Run tasks on Azure Virtual Machines - without opening ports" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5-robcost-RunTaskonAzVMs-ExampleRB2.png" width="844" height="309" border="0" />
+
+
+  이 Runbook을 사용할 때 유의해야 할 몇 가지 사항은 다음과 같습니다.
+
+  <ul>
+   <li>Runbook은 Azure VM에 대해서만 작동합니다.</li>
+   <li>Runbook을 사용하려면 대상 가상 머신에 Azure VM 에이전트를 설치하고 사용자 지정 스크립트 확장을 사용하도록 설정해야 합니다.</li>
+   <li>사용자 지정 스크립트 확장은 순차적으로 실행되므로 한 번에 하나의 스크립트만 제출할 수 있습니다.</li>
+   <li>사용자 지정 스크립트 확장은 마지막 실행 스크립트의 출력만 저장하고, 새 스크립트가 제출되면 이전 출력 데이터가 제거됩니다.</li>
+   <li>사용자 지정 스크립트 확장을 사용하여 실행되는 스크립트는 대상 Virtual Machine과만 상호 작용합니다. 동일한 Virtual Network의 다른 Virtual Machines와 상호 작용하려면 적절한 자격 증명 및 WinRM 설정(예: CredSSP)을 구성해야 합니다.</li>
+   <li>ScriptBlock 매개 변수를 Push-AzureVMCommand에 전달할 때 매개 변수 형식이 문자열이므로 스크립트 블록에 매개 변수 또는 변수(예: $a = Get-Process)가 포함되어 있으면 스크립트 블록의 각 매개 변수/변수가 심각한 문자(`) in front of it (i.e. `$a = Get-Process)를 배치하여 이스케이프되는지 확인합니다. 이렇게 하면 PowerShell 엔진이 변수를 조회/스크립트 블록 외부에 정의된 변수로 교체하지 않도록 합니다. scriptblock에서 이스케이프되지 않은 변수는 Runbook을 실행할 때 예외가 발생합니다.</li>
+   <li>CSE StdOut 출력 필드는 저장할 수 있는 출력의 양에 다소 제한됩니다. 이는 스크립트에서 Runbook으로 다시 직렬화/역직렬화할 수 있는 개체 수에 영향을 줄 수 있습니다. 직렬화된 개체는 일반적으로 매우 긴 문자열이므로 위의 serialize/deserialize 예제는 "small" 개체에서만 작동합니다.</li>
+  </ul>
+
+  <h2>결론</h2>
+
+  이제 PowerShell 엔드포인트 또는 PowerShell 원격을 사용하지 않고, 런타임에 동적으로 스크립트를 제공하거나, Azure Storage 컨테이너의 스크립트 컬렉션에서 스크립트를 실행하지 않고도 Azure VM에 대해 스크립트를 실행해야 합니다.
+
+
+  행복한 자동화!
+
+
+  Azure Automation을 시작하기만 하면 되었나요? <a href="https://aka.ms/Q2p1ap">여기에서</a> 서비스에 대해 알아보고 <a href="https://twitter.com/AzureAutomation">Twitter</a>에서 Azure Automation을 따르세요.

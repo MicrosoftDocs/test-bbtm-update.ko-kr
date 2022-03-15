@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f3bc9fbacca34136739b5e845d01df781495698d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899656"
+Slug: msdn-article-how-to-connect-to-sql-azure-through-asp-net
+Title: 'MSDN 문서: ASP.NET 통해 SQL Azure 커넥트 방법'
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] MSDN은 Microsoft&nbsp; SQL Azure Databaseto&nbsp; ASP.Net 컨트롤의 데이터를 바인딩하는 방법에 대한 문서를 작성했습니다. &nbsp;이 문서에서는 다음을 제공합니다.'
+Content: <p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>MSDN은 Microsoft&nbsp; SQL Azure Databaseto&nbsp; ASP.Net 컨트롤의 데이터를 바인딩하는 방법에 대한 문서를 작성했습니다. &nbsp;이 문서에서는 기본 연습과 이 작업을 수행하는 방법에 대한 예제를 제공합니다.&nbsp; 또한 이 문서에서는 SQL Azure 작업하는 것이 SQL Server 얼마나 유사한지 보여줍니다. &nbsp;웹 애플리케이션은 기존 데이터 센터 내에서 또는 호스트를 사용하여 계속 실행할 수 있으며, 대부분의 경우 SQL Azure 클라우드 데이터베이스를 사용하는 데 필요한 유일한 변경은 연결 문자열을 변경하는 것일 뿐임을 보여주는 좋은 예입니다.</p>  <p>나는 사람들이 어떻게 생각하는지 듣고 싶습니다.&nbsp;&nbsp; <a href="https://msdn.microsoft.com/en-us/library/ee621781.aspx">문서를 살펴보고 연습을 시도해 보세요.</a> </p>  <p>-Steve</p>

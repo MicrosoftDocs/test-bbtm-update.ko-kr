@@ -1,0 +1,125 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c5c8f787932dff979776f225ec7effe53eb10b49
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911024"
+Slug: hardening-azure-analysis-services-with-the-new-firewall-capability
+Title: 새 방화벽 기능을 사용하여 Azure Analysis Services 보안 강화
+Summary: Azure AS(Azure Analysis Services)는 보안을 염두에 두고 설계되었으며 Azure 플랫폼에서 사용할 수 있는 보안 기능을 활용합니다. 예를 들어 Azure Active Directory 통합...
+Content: >-
+  <p>Azure AS(Azure Analysis Services)는 보안을 염두에 두고 설계되었으며 Azure 플랫폼에서 사용할 수 있는 보안 기능을 활용합니다. 예를 들어 azure AD(Azure Active Directory)와의 통합은 액세스 제어를 위한 견고한 기반을 제공합니다. Azure Analysis Services 서버를 만들거나 관리하거나 연결하는 모든 사용자에게는 유효한 Azure AD 사용자 ID가 있어야 합니다. 모델 내의 개체 수준 보안을 사용하면 테이블, 행 및 열 수준에서 사용 권한을 정의할 수 있습니다. 또한 Azure AS는 암호화를 사용하여 데이터 센터, 데이터 센터 간, 온-프레미스 네트워크 간, 공용 인터넷 연결을 통해 로컬 데이터 센터 내에서 미사용 및 전송 중인 데이터를 보호합니다. TLS(전송 계층 보안), PFS(Perfect Forward Secrecy) 및 RSA 기반 2,048비트 암호화 키의 조합은 도청자에 대한 강력한 보호를 제공합니다.</p>
+
+
+  <p>그러나 Azure Analysis Services는 다중 테넌트 클라우드 서비스라는 점에 유의해야 합니다. 이 서비스는 기본적으로 모든 클라이언트의 네트워크 트래픽을 허용합니다. 기본 방화벽 지원을 활용하여 서버를 강화하는 것을 잊지 마세요. Azure Portal에서 Azure AS 서버의 속성을 표시할 때 방화벽 설정을 찾을 수 있습니다. 다음 스크린샷과 같이 <strong>방화벽</strong> 탭을 클릭합니다. 방화벽을 구성하려면 Analysis Services Admins 그룹의 구성원이어야 합니다.</p>
+
+
+  <p>클라이언트 IP 주소 범위를 제공하지 않고 방화벽을 사용하도록 설정하면 Azure AS 서버가 Power BI 클라우드 서비스의 모든 인바운드 트래픽&mdash;을 효과적으로 닫습니다. Power BI 서비스는 상태의 기본 &quot;방화벽에서&quot; 허용 목록에 포함되지만 원하는 경우 이 규칙을 사용하지 않도록 설정할 수 있습니다. <strong>저장</strong>을 클릭하여 변경 내용을 적용합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b5ec817a-21e8-4d5b-a6b9-c2390b568e7a.png"><img alt="image" border="0" height="436" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ef94ab6-178e-4751-9563-5664efd4df5d.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="이미지" width="737"></a></p>
+
+
+  <p>방화벽을 사용하도록 설정하면 Azure AS 서버가 401 오류 코드로 차단된 트래픽에 응답합니다. 해당 오류 메시지는 클라이언트가 사용 중인 IP 주소를 알려줍니다. 이는 Azure AS 서버에 이 IP 주소 액세스 권한을 부여하려는 경우에 유용할 수 있습니다. 이 오류 처리는 차단된 트래픽에 전혀 응답하지 않는 스텔스 모드의 네트워크 방화벽과 다릅니다. Azure AS 방화벽은 스텔스 모드에서 작동하지 않지만 서버를 효과적으로 잠글 수 있습니다. 다음 스크린샷과 같이 SQL Server Management Studio(SSMS)에서 방화벽 동작을 빠르게 확인할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3d779286-e2b0-45d3-8c54-3a5c49a0a14e.png"><img alt="image" border="0" height="500" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dbd0780b-05af-436e-944b-9c646654f78c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="이미지" width="722"></a></p>
+
+
+  <p>Azure Portal에서 워크스테이션의 클라이언트 IP 주소를 검색할 수도 있습니다. 방화벽 페이지에서 <strong>클라이언트 IP 추가</strong> 를 클릭하여 현재 워크스테이션 IP 주소를 허용된 IP 주소 목록에 추가합니다. IP 주소는 일반적으로 공용 주소로, 인터넷에 대한 네트워크 액세스 지점에서 동적으로 할당된 가능성이 높습니다. 클라이언트 컴퓨터에서 항상 동일한 IP 주소를 사용하는 것은 아닙니다. 따라서 일반적으로 개별 주소 대신 IP 범위를 구성하는 것이 좋습니다. 예제는 다음 표를 참조하세요. 주소를 IPv4 형식으로 지정해야 합니다.</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top" width="156">
+     <p><b>이름</b></p>
+     </td>
+     <td valign="top" width="156">
+     <p><b>IP 주소 시작</b></p>
+     </td>
+     <td valign="top" width="156">
+     <p><b>끝 IP 주소</b></p>
+     </td>
+     <td valign="top" width="156">
+     <p><b>설명</b></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="156">
+     <p><b>ClientIPAddress</b></p>
+     </td>
+     <td valign="top" width="156">
+     <p>192.168.1.1</p>
+     </td>
+     <td valign="top" width="156">
+     <p>192.168.1.1</p>
+     </td>
+     <td valign="top" width="156">
+     <p>정확히 하나의 IP 주소에 대한 액세스 권한을 부여합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="156">
+     <p><b>ClientIPAddresses</b></p>
+     </td>
+     <td valign="top" width="156">
+     <p>192.168.1.0</p>
+     </td>
+     <td valign="top" width="156">
+     <p>192.168.1.254</p>
+     </td>
+     <td valign="top" width="156">
+     <p>192.168.1.x 서브넷의 모든 IP 주소에 대한 액세스 권한을 부여합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="156">
+     <p><b>미국 동부 2 데이터 센터 </b></p>
+     </td>
+     <td valign="top" width="156">
+     <p>23.100.64.1</p>
+     </td>
+     <td valign="top" width="156">
+     <p>23.100.71.254</p>
+     </td>
+     <td valign="top" width="156">
+     <p>미국 동부 2 데이터 센터의 주소 범위는 23.100.64.0/21입니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>온-프레미스 네트워크의 Power BI 및 클라이언트 컴퓨터 외에도 특정 Azure 기반 솔루션에 Azure AS 서버에 대한 액세스 권한을 부여할 수도 있습니다. 예를 들어 Azure Functions를 기반으로 하는 솔루션을 사용하여 Azure AS에 대해 자동화된 처리 또는 기타 작업을 수행할 수 있습니다. Azure AS 방화벽이 솔루션을 차단하는 경우 <em>System.Net.WebException&ldquo;: 원격 서버에서 오류((401) 권한 없음)를 반환했습니다.&rdquo;</em> 다음 스크린샷은 오류 조건을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39add6dc-8f8e-4205-94f1-41555001cc16.png"><img alt="AF blocked" border="0" height="850" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fdfeab5d-e6f3-4922-9e00-7b605c204689.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="AF 차단됨" width="1077"></a></p>
+
+
+  <p>Azure APP Service에 Azure AS 서버에 대한 액세스 권한을 부여하려면 함수 앱에서 사용하는 IP 주소를 결정해야 합니다. 함수 앱의 속성에서 아웃바운드 IP 주소(다음 스크린샷 참조)를 복사하고 방화벽 규칙에서 허용된 클라이언트 IP 주소 목록에 추가합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/755bf1c6-9f57-472a-ad83-d0a60373f063.png"><img alt="GetAFIPAddresses" border="0" height="850" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dec757c8-00c0-4794-bd3c-f0066e3f5d4a.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="GetAFIPAddresses" width="1077"></a></p>
+
+
+  <p>이 시점에서 전체 데이터 센터에 Azure AS 서버를 여는 방법을 궁금할 것입니다. Azure 데이터 센터 주소 범위가 동적이므로 약간 더 복잡합니다. Microsoft 다운로드 센터에서 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=41653">모든 Azure 데이터 센터의 IP 주소 범위 목록을 사용하여 XML 파일을</a> 다운로드할 수 있습니다. 이 목록은 매주 업데이트되므로 주기적으로 업데이트를 확인해야 합니다.</p>
+
+
+  <p>XML 파일은 클래스 없는 CIDR(도메인 간 라우팅) 표기법을 사용하지만 Azure AS 방화벽 설정은 시작 및 끝 IP 주소로 범위를 지정해야 합니다. CIDR 형식을 시작 및 끝 IP 주소로 변환하려면 공개적으로 사용 가능한 IP 변환기 도구를 사용할 수 있습니다. 또는 다음 스크린샷과 같이 파워 쿼리를 사용하여 XML 파일을 처리할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9f5315f2-4efb-46f3-bcfe-e555e0b109e5.png"><img alt="XMLfileprocessing" border="0" height="1298" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8feb366-c5d9-4f71-a9ef-e55366de3c96.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="XMLfileprocessing" width="1743"></a></p>
+
+
+  <p><a href="https://github.com/Microsoft/Analysis-Services/blob/master/BlogArticleUploads/StartIP-EndIP.xlsx">Excel 통합 문서를</a> 다운로드하고 다운로드한 XML 파일을 가리키도록 XmlFilePath 매개 변수를 업데이트해야 합니다. 편의를 위해 통합 문서에는 ARM(Azure Resource Manager) 템플릿에 정의된 대로 데이터 센터 정보를 방화벽 규칙에 연결하는 방화벽 규칙 추가라는 열이 포함되어 있습니다. 다음 스크린샷은 미국 동부 2 데이터 센터의 IP 주소 범위에서 Azure AS 서버에 대한 액세스 권한을 부여하는 여러 규칙이 있는 ARM 템플릿을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a3410dc-fa3b-4442-a0ff-4c66db2de81b.png"><img alt="ARM Template" border="0" height="891" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec621656-3adc-4279-b85d-4fdb8d1ea033.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="ARM 템플릿" width="1158"></a></p>
+
+
+  <p>ARM 템플릿을 사용하면 Azure PowerShell, AZURE CLI(명령줄 인터페이스), Azure Portal 또는 Resource Manager REST API를 사용하여 프로그래밍 방식으로 큰 규칙 목록을 쉽게 적용할 수 있습니다. 그러나 IP 주소 목록이 너무 길어 관리하기가 어렵습니다. 또한 Azure AS 방화벽은 들어오는 모든 요청에 대해 각 규칙을 평가해야 합니다. 이러한 이유로 규칙 수를 절대 필요한 규칙으로 제한하는 것이 좋습니다. 예를 들어 모든 Azure 데이터 센터에서 모든 IP 범위에 대해 약 3,500개의 규칙을 추가하지 않도록 합니다. 규칙을 서버&rsquo; 로컬 데이터 센터로 제한하더라도 400개 이상의 서브넷이 있을 수 있습니다. 모범 사례로, Azure App Service의 경우처럼 고정 IP 주소 또는 최소한 작은 동적 IP 주소 집합을 지원하는 기술을 사용하여 Azure AS 비즈니스 솔루션을 빌드합니다. 노출 영역이 작을수록 Azure AS 서버의 강화가 더 효과적입니다.</p>
+
+
+  <p><a href="https://feedback.azure.com/forums/556165">피드백 포럼</a>에서 기능에 대한 고유한 아이디어를 제출하고 <a href="https://docs.microsoft.com/azure/analysis-services/analysis-services-overview">Azure Analysis Services</a>에 대해 자세히 알아보세요.</p>

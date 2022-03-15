@@ -1,0 +1,96 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fc8c30c7187acab508e551ea738c1ba5dc9146e8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911837"
+Slug: intel-and-microsoft-bring-optimizations-to-deep-learning-on-azure
+Title: Intel 및 Microsoft는 Azure에서 딥 러닝에 최적화를 제공합니다.
+Summary: Microsoft와 Intel이 Azure에 최적화된 딥 러닝 프레임워크를 제공하기 위해 협력하고 있음을 발표하게 되어 기쁩니다. 이러한 최적화는 Linux용 Intel Optimized Data Science VM(Ubuntu)이라는 Azure Marketplace의 새로운 제품에서 사용할 수 있습니다.
+Content: >-
+  <p><em>이 게시물은 Intel의 라비 판추마티와 맷슨 티메와 공동 저술되었습니다.</em></p>
+
+
+  <p>Microsoft와 Intel이 Azure에 최적화된 딥 러닝 프레임워크를 제공하기 위해 협력하고 있음을 발표하게 되어 기쁩니다. 이러한 최적화는 <a href="https://aka.ms/dsvm/intel" target="_blank">Linux용 Intel Optimized Data Science VM(Ubuntu)</a>이라는 Azure Marketplace의 새로운 제품에서 사용할 수 있습니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac5936da-1672-4bd5-8309-48264ad03015.png" style="margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p>지난 몇 년 동안 딥 러닝은 여러 기계 학습 및 인지 애플리케이션에 대한 최첨단이 되었습니다. 딥 러닝은 시스템이 데이터에서 학습하고 광범위한 기계 학습 문제에 대한 정확한 모델을 빌드할 수 있도록 여러 계층의 비선형 변환이 있는 신경망을 활용하는 기계 학습 기술입니다. 컴퓨터 비전, 언어 이해 및 음성 인식은 오늘날 딥 러닝의 모든 예입니다. 이러한 도메인의 심층 신경망의 혁신을 통해 이러한 알고리즘은 비전, 음성 인식 및 <a href="https://blogs.microsoft.com/ai/machine-translation-news-test-set-human-parity/">기계 번역</a><a href="https://blogs.microsoft.com/ai/historic-achievement-microsoft-researchers-reach-human-parity-conversational-speech-recognition/">에서 인간 수준의 성능에</a> 도달할 수 있게 해 줍니다. 이 분야의 발전은 데이터 과학자, 조직 및 미디어 아울렛 모두를 지속적으로 자극합니다. 많은 조직 및 데이터 과학자에게 대규모 딥 러닝을 잘 수행하면 기술적 제한으로 인해 문제가 발생합니다.</p>
+
+
+  <p>TensorFlow와 같은 인기 있는 딥 러닝 프레임워크의 기본 빌드가 CPU에 대한 학습 및 유추에 완전히 최적화되지 않는 경우가 많습니다. 이에 대한 대응으로 Intel은 Intel&reg; Xeon 프로세서에 대한 오픈 소스 프레임워크 최적화를 제공합니다. 이제 Intel은 Microsoft와의 파트너십을 통해 이 새로운 마켓플레이스 제품으로 Microsoft Azure 딥 러닝 워크로드를 가속화할 수 있도록 돕고 있습니다.</p>
+
+
+  <blockquote>
+
+  <p><em>&quot;Microsoft는 항상 고객이 Azure에서 다양한 기계 학습 시나리오에 대해 최상의 성능을 얻을 수 있는 방법을 찾고 있습니다. Microsoft는 Intel과 협력하여 두 회사의 도구 세트를 결합하고 사용자를 위해 Azure Marketplace의 편리한 사전 통합 패키지로 제공하게 되어 기쁩니다.&rdquo;</em>&nbsp;</p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p>&ndash;Venky Veeraraghavan, 파트너 그룹 프로그램 관리자, ML 플랫폼 팀, Microsoft.</p>
+
+  </blockquote>
+
+
+  <h2>Azure에서 심층 Learning 워크로드 가속화</h2>
+
+
+  <p>인기 있는 <a href="https://aka.ms/dsvm">DSVM(Data Science Virtual Machine)</a>을 기반으로 구축된 이 제품은 Intels&rsquo; 최적화 버전의 TensorFlow 및 MXNet을 포함하는 새로운 Python 환경에 추가됩니다. 이러한 최적화는 <a href="https://www.intel.com/content/www/us/en/architecture-and-technology/avx-512-overview.html">Intel&reg; 고급 벡터 확장 512(Intel&reg; AVX-512)</a> 및 <a href="https://01.org/mkl-dnn">Intel MKL-DNN(심층 신경망용 Intel&reg; 수학 커널 라이브러리)을 활용하여 Intel&reg;</a>&reg; Xeon&reg; 프로세서에 대한 학습 및 유추를 가속화합니다. Azure F72s_v2 VM 인스턴스에서 실행할 때 이러한 최적화는 모든 표준 CNN 토폴로지 <a href="https://www.intel.ai/intel-optimized-data-science-virtual-machine-azure">에서 학습 처리량에서 평균 7.7배의 속도 향상을 생성</a> 했습니다. <a href="https://www.intel.ai/intel-optimized-data-science-virtual-machine-azure">최적화 방법에 대한 자세한 내용은 여기에서 확인할 수 있습니다</a>.</p>
+
+
+  <p>데이터 과학자 또는 AI 개발자로서 이러한 변화는 매우 투명합니다. 여전히 표준 TensorFlow 또는 MXNet 프레임워크를 사용하여 코딩합니다. DSVM에서 새로운 Python(conda) 환경(intel_tensorflow_p36, intel_mxnet_p36)을 사용하여 코드를 실행하여 Azure의 Intel&reg; Xeon 프로세서 기반 F 시리즈 또는 H 시리즈 VM 인스턴스에 대한 모든 최적화를 최대한 활용할 수 있습니다. 이 제품은 DSVM을 기본 이미지로 사용하여 빌드되었으므로 <a href="https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/overview#whats-included-in-the-data-science-vm">데이터 과학 및 기계 학습을 위한 모든 다양한 도구를</a> 계속 사용할 수 있습니다. 코드를 개발하고 모델을 학습하면 클라우드 또는 에지에서 추론을 위해 모델을 배포할 수 있습니다.</p>
+
+
+  <blockquote>
+
+  <p><em>&ldquo;Intel과 Microsoft는 개발자와 데이터 과학자가 기계 학습 애플리케이션을 위해 Azure에서 Intel 하드웨어 및 소프트웨어 최적화를 쉽게 활용할 수 있도록 하여 인공 지능을 민주화하기 위해 최선을 다하고 있습니다. Intel Optimized Data Science Virtual Machine(DSVM)은 코드 수정 없이 기존 프레임워크에서 최대 7.7배의 속도 향상을 제공하여 전 세계 Microsoft 및 Intel 고객에게 혜택을 줍니다.&rdquo;</em></p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p><i>&ndash; </i>Binay Ackalloor, 디렉터 비즈니스 개발, AI 제품 그룹, 인텔.</p>
+
+  </blockquote>
+
+
+  <h2>성능</h2>
+
+
+  <p>Azure F72s_v2 인스턴스에서 실행되는 Intels&rsquo; 벤치마크 테스트에서 최적화된 버전의 TensorFlow와 표준 TensorFlow 빌드를 비교한 결과는 다음과 같습니다.</p>
+
+
+  <p><img alt="Bar graph of Default TensorFlow vs. Intel Optimization for TensorFlow" height="447" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/22570384-118a-427b-be77-8d47a3fe9c3e.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="" width="859"></p>
+
+
+  <p><strong>그림 1:</strong> TensorFlow에 대한 Intel&reg; 최적화는 주요 CNN 토폴로지의 학습 처리량에서 <strong>평균 7.7배 증가</strong> (빨간색 선으로 표시된 평균)를 제공합니다. <a href="https://github.com/IntelAI/azure-applications/tree/master/scripts/benchmark">tf_cnn_benchmarks 사용하여 고유한 벤치마크를 실행합니다</a>. 성능 결과는 2019/01/15 현재 Intel 테스트를 기반으로합니다. <a href="https://www.intel.ai/intel-optimized-data-science-virtual-machine-azure">여기에서 전체 테스트 구성을 찾습니다</a>.</p>
+
+
+  <h2>시작하기</h2>
+
+
+  <p>Intel Optimized DSVM을 시작하려면 <a href="https://aka.ms/dsvm/intel">Azure Marketplace에서 제품을</a> 클릭한 다음 지금 가져오기&rdquo;를 클릭합니다&ldquo;. Azure Portal에서 몇 가지 간단한 질문에 대답하면 모든 DSVM 도구 집합과 Intel 최적화 딥 러닝 프레임워크를 미리 구성하고 사용할 준비가 된 VM이 만들어집니다.</p>
+
+
+  <p><img alt="Screenshot of Intel Optimized Data Science VM for Linux in Azure marketplace" height="629" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e88d1192-ade4-4a0c-818b-51c714fdbd68.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="" width="886"></p>
+
+
+  <p>Intel Optimized Data Science VM은 Azure의 Intel Xeon 프로세서 기반 VM 인스턴스에서 딥 러닝 모델을 개발하고 학습시키는 데 이상적인 환경입니다. Microsoft와 Intel은 오랜 파트너십을 통해 <a href="https://aka.ms/azureml">Azure Machine Learning 서비스</a> 및 <a href="https://azure.microsoft.com/services/iot-edge/">Azure IoT Edge</a>와 같은 Azure의 다른 서비스에 대한 추가 AI 솔루션 및 프레임워크 최적화를 탐색할 것입니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+   <li>Azure Marketplace에서 <a href="https://aka.ms/dsvm/intel">Intel Optimized Data Science VM</a> 인스턴스를 만듭니다.</li>
+   <li><a href="https://www.intel.ai/intel-optimized-data-science-virtual-machine-azure">Intel Optimized Data Science VM</a>에 대해 자세히 알아보세요.</li>
+   <li><a href="https://azure.microsoft.com/services/machine-learning-service/">Azure Machine Learning 서비스를</a> 사용하여 AI 솔루션을 빌드하고 대규모 프로덕션 환경에서 기계 학습 모델을 배포합니다.</li>
+   <li>Azure를 처음 사용하세요? <a href="https://azure.com/free">무료 평가판을</a> 받으세요.</li>
+  </ul>

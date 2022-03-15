@@ -1,0 +1,77 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 43c34a4d96c55aef3b133db4c52018d2de0bf444
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912384"
+Slug: saas-patterns-accelerate-saas-application-development-on-sql-database
+Title: SaaS 패턴을 사용하여 SQL Database SaaS 앱 개발 가속화
+Summary: SQL Database SaaS 애플리케이션 개발을 가속화하는 데 사용할 수 있는 일련의 SaaS 중심 디자인 및 관리 패턴을 구현하는 샘플 SaaS 애플리케이션, 관리 스크립트 및 자습서의 가용성을 발표합니다.
+Content: >-
+  <p>Were&rsquo;는 샘플 SaaS 애플리케이션의 가용성과 SQL Database SaaS 애플리케이션 개발을 가속화할 수 있는 다양한 SaaS 중심 디자인 및 관리 패턴을 보여 주는 일련의 관리 스크립트 및 자습서를 발표하게 되어 기쁩니다. 이러한 패턴은 SQL Database 이점을 확장하여 광범위한 데이터 집약적 다중 테넌트 SaaS 애플리케이션에 가장 효과적이고 관리하기 쉬운 데이터 플랫폼입니다.</p>
+
+
+  <h2>테넌트별 데이터베이스 모델은 테넌트 격리를 제공합니다.</h2>
+
+
+  <p>패턴에 대한 논의는 사용할 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-design-patterns-multi-tenancy-saas-applications" target="_blank">데이터 모델을</a> 고려하여 시작됩니다. 다중 테넌트 애플리케이션은 일반적으로 다중 테넌트 데이터베이스를 사용하여 구현되었습니다. 다중 테넌트 데이터베이스는 일부 애플리케이션, 특히 테넌트당 저장된 데이터의 양이 적은 경우 여전히 유효하지만, 많은 SaaS 애플리케이션은 테넌트당 데이터베이스를 사용하는 데 내재된 격리의 이점을 활용합니다. SQL Database 완전히 관리되는 특성과 탄력적 풀을 사용하면 수많은 데이터베이스를 실용적으로 관리할 수 있습니다. 현재 많은 ISV가 탄력적 풀에 수만 개의 테넌트 데이터베이스가 있는 SQL Database SaaS 애플리케이션을 실행하고 있습니다. 호주의 선도적인 회계 ISV인 MYOB은 땀을 흘리지 않고 130,000개 이상의 테넌트 데이터베이스를 관리하고 있습니다! 테넌트별 데이터베이스 모델을 사용하면 이러한 고객이 데이터 보안, 개인 정보 보호, 성능 관리, 확장성 등을 개선하여 다중 테넌트 데이터베이스를 통해 가능하지 않은 테넌트 격리 수준을 달성할 수 있습니다.</p>
+
+
+  <h2>고객 환경의 Learning</h2>
+
+
+  <p>많은 고객과 긴밀히 협력하고 경험을 통해 학습함으로써 테넌트별 데이터베이스 접근 방식의 채택과 대규모 사용을 간소화하는 모든 비즈니스 도메인에 적용할 수 있는 일련의 디자인 및 관리 패턴을 수집했습니다. 이러한 패턴에 따라 샘플 SaaS 애플리케이션 및 팔로우하기 쉬운 자습서를 통해 지원되는 관리 스크립트 집합을 이제 <a href="https://github.com/Microsoft/WingtipSaaS" target="_blank">GitHub</a> 모든 코드와 자습서를 온라인으로 사용할 수 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-wtp-overview" target="_blank">있습니다</a>.</p>
+
+
+  <p>5분 이내에 샘플 애플리케이션을 설치하고 앱을 사용하여 플레이하고 Azure Portal, SQL Server Management Studio 및 Visual Studio 사용하여 빌드된 방법을 확인하여 패턴을 직접 탐색할&rsquo; 수 있습니다. 앱 및 관리 스크립트를 연구하고 자습서를 통해 작업하면 고유한 SaaS 앱 프로젝트를 바로 시작할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/45b2bf51-dc88-4b06-8907-4084c5e16ba7.png"><img alt="Screenshot_5" border="0" height="204" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bef70b03-510a-4293-9906-dc8d93792e6e.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Screenshot_5" width="549"></a></p>
+
+
+  <p>샘플 앱은 간단한 이벤트 목록 및 티켓팅 SaaS 앱으로, 각 장소에는 이벤트, 티켓 가격, 고객 및 티켓 판매가 포함된 자체 데이터베이스가 있으며, 모두 다른 장소&rsquo; 데이터와 안전하게 격리됩니다. 앱은 데이터 계층에 정식 SaaS 앱 아키텍처를 사용합니다. 각 테넌트는 조회 및 연결에 사용되는 카탈로그 데이터베이스를 사용하여 해당 데이터베이스에 매핑됩니다. 다양한 자습서를 탐색할 때 다른 시나리오를 사용하도록 다른 데이터베이스가 설치됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d7adfc8-ceb8-4ae3-b771-59e6438f84ee.png"><img alt="Apps" border="0" height="289" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a623335-44d8-4b2b-9d6f-aa774679dcf2.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="애플 리 케이 션" width="517"></a></p>
+
+
+  <h2>탐색된 SaaS 시나리오</h2>
+
+
+  <p>앱 및 관리 스크립트는 다음을 비롯한 여러 일반적인 SaaS 관련 시나리오를 해결합니다.</p>
+
+
+  <ul>
+   <li>데이터베이스 프로비저닝 및 초기화, 카탈로그 등록을 포함한 테넌트 등록</li>
+   <li>앱에서 올바른 테넌트 데이터베이스로 라우팅 및 연결</li>
+   <li>풀 간 모니터링 및 경고를 포함한 데이터베이스 성능 모니터링, 경고 및 관리</li>
+   <li>모든 테넌트 데이터베이스에 대한 스키마 변경 및 참조 데이터 배포를 포함한 스키마 관리</li>
+   <li>모든 테넌트 데이터베이스에 분산 쿼리를 사용하여 임시 실시간 쿼리 및 분석 허용</li>
+   <li>분석 데이터베이스 또는 데이터 웨어하우스에 테넌트 데이터 추출</li>
+   <li>특정 시점으로 단일 테넌트 데이터베이스 복원</li>
+  </ul>
+
+
+  <p>부하 생성기는 예측할 수 없는 테넌트 작업을 시뮬레이션하여 매일 또는 매주 워크로드 패턴을 처리하기 위한 풀 크기 조정, 부하 분산 풀 및 개별 테넌트 워크로드의 대규모 변형 관리를 비롯한 리소스 관리 시나리오를 탐색할 수 있습니다. 티켓 생성기를 사용하면 상당한 양의 데이터를 사용하여 분석 시나리오를 탐색할 수 있습니다.</p>
+
+
+  <p>또한 이 앱은 각 테넌트 실제 워크로드 프로필에 따라 테넌트 데이터베이스 성능을 최적화하는 자동 지능형 인덱스 튜닝을 포함하여 테넌&rsquo;트별 데이터베이스 컨텍스트에서 특히 관련된 다른 SQL Database 기능의 이점을 누릴 수 있습니다.</p>
+
+
+  <h2>종단 간 SaaS 시나리오를 위해 다른 Azure 서비스와 통합</h2>
+
+
+  <p>앱 계층의 App Services 및 Traffic Manager, 대규모 모니터링 및 경고를 위한 Log Analytics(OMS), 테넌트 간 분석을 위한 데이터 웨어하우스 SQL 배포를 위한 ARM(Azure Resource Management) 템플릿을 비롯한 여러 다른 Azure 서비스도 앱의 일부로 전시됩니다.</p>
+
+
+  <p>앱은 추가 관리 패턴에서 Power BI, Azure Machine Learning, Azure Search 및 Active Directory를 포함한 다른 Azure 서비스와의 심층 통합에 이르기까지 더 많은 시나리오를 포함하도록 시간이 지남에 따라 확장되어 완전한 E2E SaaS 시나리오를 빌드합니다. 또한 적절한 절차에 따라 다중 테넌트 데이터베이스 모델을 사용하여 동일한 시나리오를 탐색하려고 합니다.</p>
+
+
+  <p>이러한 SaaS 패턴은 SQL Database 서비스에 대한 향후 개선 계획을 알려줍니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>코드 및 관리 스크립트를 다운로드할 수 있는 GitHub 한 번의 클릭으로 <a href="https://github.com/Microsoft/WingtipSaaS" target="_blank">앱을 설치</a>하여 시작합니다.&nbsp; 패턴에 대해 자세히 알아보<a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-wtp-overview" target="_blank">고 자습서를 살펴보세요</a>. 샘플과 패턴에 대해 어떻게 생각하는지, 그리고 다음에 추가되는 것을 보고 싶은지&rsquo; 알려주세요<a>saasfeedback@microsoft.com</a>.</p>

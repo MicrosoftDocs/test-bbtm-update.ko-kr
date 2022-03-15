@@ -1,0 +1,508 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 77c40bd79ce78d67ddfed871cb1c8d61ffc20eb2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905425"
+Slug: microsoft-cognitive-services-general-availability-for-face-api-computer-vision-api-and-content-moderator
+Title: Microsoft Cognitive Services – Face API, Computer Vision API 및 Content Moderator에 대한 일반 공급
+Summary: 개발자는 앱에 Bring Vision을 사용하여 자연스럽게 요구 사항을 보고, 듣고, 말하고, 이해하고, 해석할 수 있는 차세대 애플리케이션을 만들 수 있습니다.
+Content: >-
+  <p><em>이 게시물은 Cognitive Services 팀에서 작성했습니다.</em></p>
+
+
+  <p>Microsoft Cognitive Services를 사용하면 개발자가 자연스러운 통신 방법을 사용하여 요구 사항을 보고, 듣고, 말하고, 이해하고, 해석할 수 있는 차세대 애플리케이션을 만들 수 있습니다. 플랫폼에 지능형 기능을 더 쉽게 추가할 수 있습니다.</p>
+
+
+  <p>오늘, 최초의 <a href="https://www.microsoft.com/dataamp">Microsoft Data Amp</a> 온라인 이벤트에서 Microsoft <strong>Cognitive Services의 Face API,&rsquo; Computer Vision API 및 Content Moderator API의 일반 공급에 대해 발표하게 되어 매우 기쁩니다</strong>.</p>
+
+
+  <ul>
+   <li><strong>Face API</strong> 는 사람의 얼굴을 감지하고 유사한 얼굴을 비교하고, 시각적 유사성에 따라 사람들을 그룹으로 구성하고, 이전에 태그가 지정된 사람과 이미지에서 감정을 식별합니다.</li>
+   <li><strong>Computer Vision API</strong> 는 모든 이미지의 내용을 이해하는 도구를 제공합니다. 개체, 유명인 같은 존재 또는 이미지의 동작을 식별하는 태그를 만들고 일관된 문장을 만들어 설명합니다. 이제 이미지에서 랜드마크 및 필기를 검색할 수 있습니다. 필기 검색은 미리 보기로 유지됩니다.</li>
+   <li><strong>Content Moderator</strong> 는 사용자 검토 도구로 보강된 텍스트 및 이미지의 컴퓨터 지원 조정을 제공합니다. 비디오 조정은 Azure Media Services 일부로 미리 보기에서 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <p>&rsquo;이러한 API가 수행할 수 있는 작업을 자세히 살펴보겠습니다.</p>
+
+
+  <p style="text-align: center"><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/2aA8OEZ1wk8" width="560"></iframe></p>
+
+
+  <p align="center"><em>Anna는 Cognitive Services의 최신 업데이트를 제공합니다.</em></p>
+
+
+  <h2>앱에 비전 가져오기</h2>
+
+
+  <p>이전에는 Face API 사용자가 <em>연령, 성별, 얼굴 포인트</em> 및 <em>헤드포지션</em>과 같은 특성을 얻을 수 있습니다. &rsquo;이제 동일한 Face API 호출에서 감정을 가져올 수도 <strong>있습니다</strong>. 이는 연령과 감정이 동시에 요청된 일부 사용자 시나리오에 응답합니다. 가이드에서 <a href="https://www.microsoft.com/cognitive-services/en-us/face-api/documentation/overview">Face API에 대해 자세히 알아보세요</a>.</p>
+
+
+  <h2>랜드마크 인식</h2>
+
+
+  <p>Weve&rsquo;는 <strong>랜드마크 인식을</strong> 통합하여 Computer Vision API에 더 풍부한 기능을 추가했습니다. 랜드마크 모델과 유명인 인식은 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/home#Domain-Specific">도메인별 모델의</a> 예입니다. 우리의 랜드 마크 인식 모델은 전 세계에서 9,000 자연과 인공 랜드 마크를 인식합니다. 도메인별 모델은 Computer Vision API 내에서 지속적으로 진화하는 기능입니다.</p>
+
+
+  <p>여행 중 찍은 이 사진을 앱에서 인식하도록 하겠습니다&rsquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a546ca6-41fc-4275-b2e3-31d781b33dea.jpg"><img alt="Landmark image" border="0" height="433" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/85ba8d75-4f75-4882-b446-ec64cf5747ab.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="랜드마크 이미지" width="654"></a></p>
+
+
+  <p align="center"><em>이것이 어디에서 왔는지에 대한 아이디어를 가질 수 있지만 기계가 어떻게 쉽게 알 수 있습니까?</em></p>
+
+
+  <p>C#에서는 다음과 같이 간단한 REST API 호출을 수행하여 이러한 기능을 활용할 수 있습니다. <em>그런데, 다른 언어는이 게시물의 하단에 있습니다.</em></p>
+
+
+  <pre class="prettyprint">
+
+  using System;
+
+  using System.IO;
+
+  using System.Net.Http;
+
+  using System.Net.Http.Headers;
+
+
+  namespace CSHttpClientSample
+
+  {
+      static class Program
+      {
+          static void Main()
+          {
+              Console.Write(&quot;Enter image file path: &quot;);
+              string imageFilePath = Console.ReadLine();
+
+              MakeAnalysisRequest(imageFilePath);
+
+              Console.WriteLine(&quot;\n\nHit ENTER to exit...\n&quot;);
+              Console.ReadLine();
+          }
+
+          static byte[] GetImageAsByteArray(string imageFilePath)
+          {
+              FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
+              BinaryReader binaryReader = new BinaryReader(fileStream);
+              return binaryReader.ReadBytes((int)fileStream.Length);
+          }
+
+          static async void MakeAnalysisRequest(string imageFilePath)
+          {
+              var client = new HttpClient();
+
+              // Request headers. Replace the second parameter with a valid subscription key.
+              client.DefaultRequestHeaders.Add(&quot;Ocp-Apim-Subscription-Key&quot;, &quot;putyourkeyhere&quot;);
+
+              // Request parameters. You can change &quot;landmarks&quot; to &quot;celebrities&quot; on requestParameters and uri to use the Celebrities model.
+              string requestParameters = &quot;model=landmarks&quot;;
+              string uri = &quot;https://westus.api.cognitive.microsoft.com/vision/v1.0/models/landmarks/analyze?&quot; + requestParameters;
+              Console.WriteLine(uri);
+
+              HttpResponseMessage response;
+
+              // Request body. Try this sample with a locally stored JPEG image.
+              byte[] byteData = GetImageAsByteArray(imageFilePath);
+
+              using (var content = new ByteArrayContent(byteData))
+              {
+                  // This example uses content type &quot;application/octet-stream&quot;.
+                  // The other content types you can use are &quot;application/json&quot; and &quot;multipart/form-data&quot;.
+                  content.Headers.ContentType = new MediaTypeHeaderValue(&quot;application/octet-stream&quot;);
+                  response = await client.PostAsync(uri, content);
+                  string contentString = await response.Content.ReadAsStringAsync();
+                  Console.WriteLine(&quot;Response:\n&quot;);
+                  Console.WriteLine(contentString);
+              }
+          }
+      }
+  }
+
+  </pre>
+
+
+  <p>JSON에서 반환된 성공적인 응답은 다음과 같습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  ```json
+
+  {
+    &quot;requestId&quot;: &quot;b15f13a4-77d9-4fab-a701-7ad65bcdcaed&quot;,
+    &quot;metadata&quot;: {
+      &quot;width&quot;: 1024,
+      &quot;height&quot;: 680,
+      &quot;format&quot;: &quot;Jpeg&quot;
+    },
+    &quot;result&quot;: {
+      &quot;landmarks&quot;: [
+        {
+          &quot;name&quot;: &quot;Colosseum&quot;,
+          &quot;confidence&quot;: 0.9448209
+        }
+      ]
+    }
+  }
+
+  ```
+
+  </pre>
+
+
+  <h2>필기 인식</h2>
+
+
+  <p><strong>필기 OCR</strong> 은 Computer Vision API의 미리 보기에서도 사용할 수 있습니다. 이 기능은 필기 이미지에서 텍스트를 검색하고 인식된 문자를 컴퓨터에서 사용할 수 있는 문자 스트림으로 추출합니다.<br>
+
+  노트, 편지, 에세이, 화이트보드, 양식 등에서 필기 텍스트를 감지하고 추출합니다. 백서, 스티커 메모 및 화이트보드와 같은 다양한 표면 및 배경에서 작동합니다. 더 이상 필기 노트를 기록할 필요가 없습니다. 대신 이미지를 스냅하고 필기 OCR을 사용하여 노트를 디지털화하고 시간, 노력 및 용지 혼란을 절약할 수 있습니다. 노트를 다시 끌어오려는 경우 빠른 검색을 수행할 수도 있습니다.</p>
+
+
+  <p><a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api">대화형 데모에서 샘플을 업로드하여</a> 직접 사용해 볼 수 있습니다.</p>
+
+
+  <p>화이트보드에서 필기를 인식하고 싶다고 가정해 보겠습니다&rsquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b734faa6-763b-4ce9-8fd1-a6edbc2fb7a9.png"><img alt="Whiteboard image" border="0" height="398" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/657052cd-d157-4d2a-85dc-1692c737dc82.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="화이트보드 이미지" width="601"></a></p>
+
+
+  <p align="center"><em>Id가 유지하고 싶은 영감 따옴표&rsquo;.</em></p>
+
+
+  <p align="left">C#에서는 다음을 사용합니다.</p>
+
+
+  <pre class="prettyprint">
+
+  using System;
+
+  using System.IO;
+
+  using System.Collections;
+
+  using System.Collections.Generic;
+
+  using System.Net.Http;
+
+  using System.Net.Http.Headers;
+
+
+  namespace CSHttpClientSample
+
+  {
+      static class Program
+      {
+          static void Main()
+          {
+              Console.Write(&quot;Enter image file path: &quot;);
+              string imageFilePath = Console.ReadLine();
+
+              ReadHandwrittenText(imageFilePath);
+
+              Console.WriteLine(&quot;\n\n\nHit ENTER to exit...&quot;);
+              Console.ReadLine();
+          }
+
+          static byte[] GetImageAsByteArray(string imageFilePath)
+          {
+              FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
+              BinaryReader binaryReader = new BinaryReader(fileStream);
+              return binaryReader.ReadBytes((int)fileStream.Length);
+          }
+
+          static async void ReadHandwrittenText(string imageFilePath)
+          {
+              var client = new HttpClient();
+
+              // Request headers - replace this example key with your valid subscription key.
+              client.DefaultRequestHeaders.Add(&quot;Ocp-Apim-Subscription-Key&quot;, &quot;putyourkeyhere&quot;);
+
+              // Request parameters and URI. Set &quot;handwriting&quot; to false for printed text.
+              string requestParameter = &quot;handwriting=true&quot;;
+              string uri = &quot;https://westus.api.cognitive.microsoft.com/vision/v1.0/recognizeText?&quot; + requestParameter;
+
+              HttpResponseMessage response = null;
+              IEnumerable&lt;string&gt; responseValues = null;
+              string operationLocation = null;
+
+              // Request body. Try this sample with a locally stored JPEG image.
+              byte[] byteData = GetImageAsByteArray(imageFilePath);
+              var content = new ByteArrayContent(byteData);
+
+              // This example uses content type &quot;application/octet-stream&quot;.
+              // You can also use &quot;application/json&quot; and specify an image URL.
+              content.Headers.ContentType = new MediaTypeHeaderValue(&quot;application/octet-stream&quot;);
+
+              try {
+                  response = await client.PostAsync(uri, content);
+                  responseValues = response.Headers.GetValues(&quot;Operation-Location&quot;);
+              }
+              catch (Exception e)
+              {
+                  Console.WriteLine(e.Message);
+              }
+
+              foreach (var value in responseValues)
+              {
+                  // This value is the URI where you can get the text recognition operation result.
+                  operationLocation = value;
+                  Console.WriteLine(operationLocation);
+                  break;
+              }
+
+              try
+              {
+                  // Note: The response may not be immediately available. Handwriting recognition is an
+                  // async operation that can take a variable amount of time depending on the length
+                  // of the text you want to recognize. You may need to wait or retry this operation.
+                  response = await client.GetAsync(operationLocation);
+
+                  // And now you can see the response in in JSON:
+                  Console.WriteLine(await response.Content.ReadAsStringAsync());
+              }
+              catch (Exception e)
+              {
+                  Console.WriteLine(e.Message);
+              }
+          }
+      }
+  }
+
+  </pre>
+
+
+  <p>성공하면 다음 JSON을 통해 반환되는 OCR 결과에는 텍스트, 영역, 줄 및 단어에 대한 경계 상자가 포함됩니다.</p>
+
+
+  <pre class="prettyprint">
+
+  {
+    &quot;status&quot;: &quot;Succeeded&quot;,
+    &quot;recognitionResult&quot;: {
+      &quot;lines&quot;: [
+        {
+          &quot;boundingBox&quot;: [
+            542,
+            724,
+            1404,
+            722,
+            1406,
+            819,
+            544,
+            820
+          ],
+          &quot;text&quot;: &quot;You must be the change&quot;,
+          &quot;words&quot;: [
+            {
+              &quot;boundingBox&quot;: [
+                535,
+                725,
+                678,
+                721,
+                698,
+                841,
+                555,
+                845
+              ],
+              &quot;text&quot;: &quot;You&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                713,
+                720,
+                886,
+                715,
+                906,
+                835,
+                734,
+                840
+              ],
+              &quot;text&quot;: &quot;must&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                891,
+                715,
+                982,
+                713,
+                1002,
+                833,
+                911,
+                835
+              ],
+              &quot;text&quot;: &quot;be&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                1002,
+                712,
+                1129,
+                708,
+                1149,
+                829,
+                1022,
+                832
+              ],
+              &quot;text&quot;: &quot;the&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                1159,
+                708,
+                1427,
+                700,
+                1448,
+                820,
+                1179,
+                828
+              ],
+              &quot;text&quot;: &quot;change&quot;
+            }
+          ]
+        },
+        {
+          &quot;boundingBox&quot;: [
+            667,
+            905,
+            1766,
+            868,
+            1771,
+            976,
+            672,
+            1015
+          ],
+          &quot;text&quot;: &quot;you want to see in the world !&quot;,
+          &quot;words&quot;: [
+            {
+              &quot;boundingBox&quot;: [
+                665,
+                901,
+                758,
+                899,
+                768,
+                1015,
+                675,
+                1017
+              ],
+              &quot;text&quot;: &quot;you&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                752,
+                900,
+                941,
+                896,
+                951,
+                1012,
+                762,
+                1015
+              ],
+              &quot;text&quot;: &quot;want&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                960,
+                896,
+                1058,
+                895,
+                1068,
+                1010,
+                970,
+                1012
+              ],
+              &quot;text&quot;: &quot;to&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                1077,
+                894,
+                1227,
+                892,
+                1237,
+                1007,
+                1087,
+                1010
+              ],
+              &quot;text&quot;: &quot;see&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                1253,
+                891,
+                1338,
+                890,
+                1348,
+                1006,
+                1263,
+                1007
+              ],
+              &quot;text&quot;: &quot;in&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                1344,
+                890,
+                1488,
+                887,
+                1498,
+                1003,
+                1354,
+                1005
+              ],
+              &quot;text&quot;: &quot;the&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                1494,
+                887,
+                1755,
+                883,
+                1765,
+                999,
+                1504,
+                1003
+              ],
+              &quot;text&quot;: &quot;world&quot;
+            },
+            {
+              &quot;boundingBox&quot;: [
+                1735,
+                883,
+                1813,
+                882,
+                1823,
+                998,
+                1745,
+                999
+              ],
+              &quot;text&quot;: &quot;!&quot;
+            }
+          ]
+        }
+      ]
+    }
+  }
+
+  </pre>
+
+
+  <p>원하는 언어로 쉽게 시작하려면 다음을 참조하세요.</p>
+
+
+  <ul>
+   <li><a href="https://www.microsoft.com/cognitive-services/en-us/Face/documentation/QuickStarts/CSharp">C#</a>, <a href="https://www.microsoft.com/cognitive-services/en-us/Face/documentation/QuickStarts/Java">Java</a>, <a href="https://www.microsoft.com/cognitive-services/en-us/Face/documentation/QuickStarts/Python">Python</a> 등에 대한 <a href="https://azure.microsoft.com/en-us/services/cognitive-services/face/">Face API 페이지</a> 및 빠른 시작 가이드입니다.</li>
+   <li><a href="https://www.microsoft.com/cognitive-services/en-us/Computer-Vision-API/documentation/QuickStarts/CSharp">C#</a>, <a href="https://www.microsoft.com/cognitive-services/en-us/Computer-Vision-API/documentation/QuickStarts/Java">Java</a>, <a href="https://www.microsoft.com/cognitive-services/en-us/Computer-Vision-API/documentation/QuickStarts/Python">Python</a> 등에 대한 <a href="https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/">Computer Vision API 페이지</a> 및 빠른 시작 가이드입니다.</li>
+   <li><a href="https://azure.microsoft.com/en-us/services/cognitive-services/content-moderator/">Content Moderator 페이지</a> 및 <a href="https://contentmoderator.cognitive.microsoft.com/">시험 사용 Content Moderator</a>는 구성 가능한 완전한 콘텐츠 조정 수명 주기를 사용하도록 설정하는 방법을 알아봅니다.</li>
+  </ul>
+
+
+  <p>사용 사례에 대한 자세한 내용은 <a href="https://customers.microsoft.com/en-us/story/graymeta-media-cable-cognitive-services">GrayMeta와 함께 Vision API</a>를 많이 사용하는 것을 포함하여 <a href="https://customers.microsoft.com/en-us/search?sq=%22Microsoft%20Cognitive%20Services%22&amp;ff=&amp;p=0&amp;so=story_publish_date%20desc">고객 사례를</a> 살펴보는 것을 주저하지 마세요&rsquo;.</p>
+
+
+  <p>즐거운 코딩 작업이 되길 바랍니다!</p>

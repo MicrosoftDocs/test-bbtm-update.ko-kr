@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 414a30483292f6fe298bd18d1570bbee49ec9b75
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139910999"
+Slug: innovations-for-a-more-secure-us-microelectronics-supply-chain
+Title: 보다 안전한 미국 마이크로 일렉트론스 공급망을 위한 혁신
+Summary: '오늘날 기술 혁신의 빠른 속도를 따라잡기 위해서는 새로운 마이크로 일렉트론의 개발 속도에 동등한 발전이 필요합니다. '
+Content: >-
+  <p>오늘날 기술 혁신의 빠른 속도를 따라잡기 위해서는 새로운 마이크로 일렉트론의 개발 속도에 동등한 발전이 필요합니다. 동시에 고객은 실리콘까지 기술 공급망을 보호하는 데 점점 더 집중하고 있습니다. 마이크로 일렉트론스 분야에서 미국의 힘과 리더십을 유지하기 위해 Microsoft와 파트너는 엄격한 보안, 보호 및 규정 준수 요구 사항을 충족하는 마이크로 일렉트론 공급망을 활성화하기 위해 최선을 다하고 있습니다.</p>
+
+
+  <p>상업적으로 마이크로 일렉트론 산업은 Azure를 사용하여 새로운 회로 및 칩 개발을 가속화하여 설계와 제조 프로세스를 모두 개선합니다. Microsoft는 반도체 설계 및 주조 파트너 및 EDA(전자 디자인 자동화) 공급업체와 긴밀히 협력하여 Azure HPC(고성능 컴퓨팅), IoT(사물 인터넷) 및 에지 인프라에서 실행되는 미세 조정된 솔루션을 개발하고<a href="https://azure.microsoft.com/en-us/overview/ai-platform/" target="_blank">, Azure 인공 지능</a> 및 <a href="https://azure.microsoft.com/en-us/services/machine-learning/" target="_blank">Machine Learning</a> 활용하여 <a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/silicon/" target="_blank">실리콘</a> 개발 주기를 가속화합니다.</p>
+
+
+  <p>또한 이러한 기능을 통해 미국 정부 고객은 방어 및 중요 인프라에 대한 엄격한 공급망 요구 사항을 준수할 수 있습니다. 오늘 우리는&rsquo; 국방부 (DoD)와의 협력을 발표하여 <a href="https://www.defense.gov/Newsroom/Releases/Release/Article/2384039/department-of-defense-announces-1972-million-for-microelectronics/" target="_blank">고급 상업 기능 Project 사용하여 RAPID Assured Microelectronics 프로토타입 (RAMP)</a>에 대한 작업을 통해 미국 마이크로 일렉트론 공급망을 강화합니다. 이 작업은 Azure를 사용하여 상용 산업 에코시스템과의 협업을 확장하여 마이크로 일렉트렉트론 설계, 제조 및 공급망 관리를 위한 안전하고 확장 가능한 플랫폼을 제공합니다.</p>
+
+
+  <p>RAMP는 변조로부터 최대한의 안전 장치가 필요한 방위 산업 및 기타 중요 업무용 시스템에 사용되는 구성 요소에 대한 미국 국내 공급망을 보호하는 데 초점을 맞춘 중요한 이니셔티브입니다. 이러한 구성 요소는 인공 지능, 5G 통신 및 양자 컴퓨팅을 포함하여 많은 분야에서 새로운 기술 및 새로운 기술의 보안에 기초합니다.</p>
+
+
+  <p>Microsoft는 실리콘 개발 및 공급망 보증의 보다 민첩하고 안전하며 협력적인 방법론을 위해 혁신적인 접근 방식의 장점을 입증하기 위해 이미 상업용 리더와 파트너십을 맺고 있습니다. 실리콘 고객과 파트너는 실리콘 디자인 및 제조 혁신을 지원하는 심층적인 산업 노력과 Azures&rsquo; 기능을 위해 Microsoft를 선택했습니다. Microsoft는 대규모 실리콘 디자인 워크로드가 Azures&rsquo;의 광범위한 서비스 및 기능에 맞게 사용자 지정된 확장 가능하고 프로덕션이 준비된 EDA 아키텍처에서 효율적으로 실행되는 것을 보여 줍니다. Microsoft는 실리콘 도구 공급업체와 긴밀히 협력하여 Azure용 도구를 최적화하고 경우에 따라 도구를 재설계했습니다. EDA 도구 공급업체는 Azure 인공 지능 및 Azure Machine Learning 기술을 차세대 제품에 도입했습니다. Microsoft는 주부 파트너와도 긴밀한 관계를 맺고 있습니다. 올해 초 Microsoft는 <a href="https://azure.microsoft.com/en-us/blog/microsoft-and-tsmc-announce-joint-innovation-lab-to-accelerate-silicon-design-on-azure/" target="_blank">TMSC와 공동 혁신 랩</a> 을 발표하여 클라우드 및 EDA를 위한 혁신적인 솔루션을 개발 및 통합하고 반도체 산업에 성능 및 비용 효율성을 제공하여 실리콘 제품 혁신을 위한 시장 출시 시간을 가속화할 수 있도록 지원했습니다.</p>
+
+
+  <p>Microsoft는 RAMPincludingApplied&nbsp;&nbsp; <a href="https://www.appliedmaterials.com/" target="_blank">Materials, Inc.,</a> <a href="https://www.baesystems.com/en/home" target="_blank">BAE Systems</a>, <a href="https://www.battelle.org/" target="_blank">Battelle Memorial Institute</a>, <a href="https://www.cadence.com/en_US/home.html" target="_blank">Cadence Design Systems</a>, <a href="https://www.globalfoundries.com/" target="_blank">GlobalFoundries</a>, <a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank">Intel Corporation</a>, <a href="https://nimbisservices.com/" target="_blank">Nimbis Services, Inc.</a>, <a href="https://www.northropgrumman.com/" target="_blank">Northrop Grumman</a>, <a href="https://www.plm.automation.siemens.com/global/en/" target="_blank">Siemens EDA</a>, <a href="https://www.synopsys.com/" target="_blank">Synopsys, Inc.</a>, <a href="https://www.zeroasic.com/" target="_blank">Zero ASIC Corporation</a>을 지원하는 기능 개발에 초점을 맞춘 업계 리더 연합을 이끌고 있습니다. 이 파트너십의 강점은 DoD가 사용 가능한 최고의 마이크로 일렉트론 개발 기능을 활용할 수 있도록 하는 상업 및 정부 에코시스템을 연결합니다. 이 접근 방식은 Azure의 실리콘 및 마이크로 일렉트론을 위한 안전하고 확장 가능한 공동 설계 및 제조 환경과 같은 CASCADE(기밀 및 보안 Cloud-Accessible 디자인 환경)를 다루는 솔루션을 확장하는 데 중요한 고유한 전문 지식과 경험을 결합하고 RAMP의 목표를 충족합니다. 제안된 기술 솔루션은 제작 지식을 활용하여 기밀성 및 무결성이 DIB(국방 산업 기반) 설계에 효과적으로 구현되고 제조 공정을 위해 릴리스에서 발생하는 변환을 통해 보존되도록 하는 기능을 보여줍니다.</p>
+
+
+  <p>RAMP 솔루션은 <a href="https://azure.microsoft.com/en-us/global-infrastructure/government/federal/" target="_blank">Azure Government</a> 지역에서 호스트되어 DoD 공급망 요구 사항을 준수합니다. 미국 정부 기관 및 파트너에게 중요 업무용 클라우드인 Azure Government는 미션 클라우드에서 인텔리전트 에지에 이르는 데이터 분류 전반에 걸친 컴퓨팅의 연속체를 제공하여 고객이 가장 광범위한 상업적 기능과 정부 전용 클라우드의 가장 광범위한 규정 준수 적용 범위로 혁신을 가속화할 수 있도록 지원합니다.</p>

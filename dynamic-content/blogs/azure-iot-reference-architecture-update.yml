@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2ac8c05bccd6722f3c381eeca22df0586184747b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906163"
+Slug: azure-iot-reference-architecture-update
+Title: Azure IoT 참조 아키텍처 업데이트
+Summary: 지난 주에는 Azure IoT 참조 아키텍처 가이드에 대한 업데이트를 릴리스했습니다. 이 업데이트의 초점은 최신 Azure IoT 클라우드 네이티브 권장 아키텍처 및 최신 기술 구현 권장 사항으로 문서를 전달하는 것이었습니다.
+Content: >-
+  <p>지난 주에<a href="https://aka.ms/iotrefarchitecture">는 Azure IoT 참조 아키텍처 가이드</a>에 대한 업데이트를 릴리스했습니다. 이 업데이트의 초점은 최신 Azure IoT 클라우드 네이티브 권장 아키텍처 및 최신 기술 구현 권장 사항으로 문서를 전달하는 것이었습니다. 업데이트된 가이드에는 IoT 공간의 개요, 솔루션에 권장되는 하위 시스템 요소 및 하위 시스템당 규범적인 기술 권장 사항이 포함되어 있습니다. 추가된 기술 콘텐츠에는 마이크로 서비스, 컨테이너, 오케스트레이터(예: Kubernetes 및 Service Fabric), 서버리스 사용, Azure Stream Analytics 및 Edge 디바이스와 같은 항목의 적용 범위가 포함됩니다. 다양한 유형의 IoT 솔루션에서 Azure의 규칙 처리 및 스토리지 기술 옵션을 다루는 문서의 스트림 처리 및 Storage 하위 시스템 섹션에 대한 주요 업데이트가 이루어졌습니다.</p>
+
+
+  <p><a href="https://aka.ms/iotrefarchitecture">IoT 아키텍처 가이드</a>는 검증된 프로덕션 준비 아키텍처, 검증된 기술 구현 선택 및 <a href="https://github.com/Azure/azure-iot-pcs-remote-monitoring-dotnet/">원격 모니터링</a> 및 <a href="https://github.com/Azure/azure-iot-connected-factory">연결된 팩터</a>리와 같은 솔루션 가속기 참조 아키텍처 구현에 대한 링크를 제공하여 Azure에서 IoT 솔루션을 빌드하는 고객을 가속화하는 것을 목표로 합니다. 이 문서에서는 IoT 공간의 개요, 확장 가능한 IoT 솔루션에 권장되는 하위 시스템 팩터링, 하위 시스템당 규범적인 기술 권장 사항 및 사용 사례 및 기술 대안을 살펴보는 하위 시스템별 자세한 섹션을 제공합니다. </p>
+
+
+  <h2>향후 업데이트 - 피드백을 제공하고 질문하세요.</h2>
+
+
+  <p>앞으로 몇 달 동안 일관된 업데이트를 할 예정이며, Azure를 사용하여 프로덕션 솔루션을 빌드하는 것에 대한 피드백을 주셔서 감사합니다. <a href="https://feedback.azure.com/forums/321918-azure-iot">사용자 음성 채널을</a> 사용하여 아키텍처 및 기술 제안을 제공하세요. 다른 사용자가 제안하는 내용을 찾아보고, 즐겨찾기를 투표하고, 자신의 제안을 입력하는 것이 좋습니다.</p>

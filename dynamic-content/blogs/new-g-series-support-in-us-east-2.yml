@@ -1,0 +1,18 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bf103f3f6e4d67261770785b44d38283bf505df1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911654"
+Slug: new-g-series-support-in-us-east-2
+Title: 미국 동부 2의 새로운 G 시리즈 지원
+Summary: 수요가 증가함에 따라 이제 미국 서부 또는 미국 동부 2에 G 시리즈 Virtual Machines를 배포할 수 있습니다.
+Content: >-
+  몇 주 전에 Microsoft Azure Virtual Machines에 대한 새로운 G 시리즈 크기에 대한 지원을 <a href="https://azure.microsoft.com/blog/2015/01/08/largest-vm-in-the-cloud/">발표</a>했습니다. 이러한 크기는 최신 <a href="https://www.intel.com/content/www/us/en/processors/xeon/xeon-e5-solutions.html">Intel® Xeon® 프로세서 E5 v3 제품군</a>, 448GB 메모리 및 6.59TB의 로컬 SSD(반도체 드라이브) 공간을 사용하여 최대 32개의 vCPU를 제공합니다.
+
+
+  우리가 보고 있는 증가하는 수요를 감안할 때, 우리는 다른 지역인 미국 동부 2의 출시를 가속화했습니다! 이제 미국 서부 또는 미국 동부 2에 G 시리즈 Virtual Machines를 배포할 수 있습니다. 고객 수요 및 사용량에 따라 G 시리즈 지원을 다른 지역으로 계속 확장할 것입니다.
+
+
+  또한 미국 동부 2 가격은 미국 서부 가격보다 약간 낮습니다. <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/">여기에서</a> 확인해 보세요!

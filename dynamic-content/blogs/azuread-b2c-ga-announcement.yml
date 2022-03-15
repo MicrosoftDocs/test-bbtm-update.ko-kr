@@ -1,0 +1,103 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 173b3d80206dbead889d8aa0d3c39dc2e0a40dd7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906133"
+Slug: azuread-b2c-ga-announcement
+Title: Azure Active Directory B2C는 이제 북미에서 일반 공급됩니다.
+Summary: 오늘 우리는 북미에서 Azure Active Directory B2C의 일반 공급에 대해 발표하게되어 기쁩니다.
+Content: >-
+  <p>오늘 우리는 <strong>북아메리카에서 Azure Active Directory B2C의 일반 공급에</strong> 대해 발표하게되어 기쁩니다 (아래 <strong>Production-scaleB2C</strong>&quot;<strong style="line-height: 1.53em; font-size: 13px;">&nbsp;</strong> 테넌트에 대한 &quot; 참고 사항을 참조하세요). 이 서비스는 미리 보기 발표 이후 사용량과 관심이 폭발적으로 증가했습니다. 레알 마드리드&nbsp;와 인디애나 주를 포함한 여러 기업과 정부는 이미 라이브로 전환했으며, 다른 많은 기업과 정부는 다음 분기 내에 그렇게 할 것으로 예상됩니다. 또한 <strong>Azure Active Directory(Azure AD) B2C는 2017년 초까지 무료로 유지됩니다</strong>. 이제 시작하기에 좋은 시간입니다!</p>
+
+
+  <h3>Azure AD B2C란?</h3>
+
+
+  <p>Azure AD B2C는 앱 개발자를 위해 특별히 빌드된 클라우드 ID 및 액세스 관리 서비스입니다. 소비자가 기존 소셜 계정을 다시 사용하거나 새 앱-로컬 계정을 만들어 소비자에게 앱에 대한 보안 액세스를 제공하려는 모든 규모의 조직을 위한 게임 체인저입니다. 로그인뿐만 아니라 모든 앱 ID 관리 요구 사항을 처리하여 앱&rsquo;&rsquo; 핵심 기능과 소비자 기반 성장에 집중할 수 있습니다. 하루에 수십억 개의 인증을 처리하는 클라우드 ID 플랫폼인 Azure AD를 기반으로 하는 Azure AD B2C는 수억 개의 ID로 확장할 수 있는 고가용성 서비스입니다. 완전히 사용자 지정할 수 있으며, 눈에 보이지 않고 원활하게 앱에 통합됩니다. 여러 앱이 있는 경우 모두에 대해 Single Sign-On을 사용하도록 설정할 수 있습니다. 또한 Azure AD B2C를 사용하면 소비자가 등록, 프로필 관리 및 암호 재설정과 같은 셀프 서비스 경험을 통해 자신의 계정을 간단하게 관리할 수 있습니다.</p>
+
+
+  <h3>오늘 사용할 수있는 것은&rsquo; 무엇입니까?</h3>
+
+
+  <p><b>보안 ID: </b> 소비자는 기존 소셜 계정(Facebook, Google, LinkedIn, Amazon, Microsoft 계정)을 가져오거나 새 앱 관련 계정(앱에 로컬 사용자 이름 및 암호)을 만들 수 있습니다. 앱 <a href="https://azure.microsoft.com/documentation/articles/active-directory-b2c-reference-mfa/">에 다단계 인증</a> 을 추가하고 소비자에게 추가 보안 계층을 제공할 수도 있습니다.</p>
+
+
+  <p>&ldquo;<em>Azure Active Directory B2C는 인디애나 Office 시민들이 모든 주 애플리케이션에 액세스하기 위해 다른 로그인을 요구하는 오랜 문제를 해결하는 데 도움을 주었습니다. Azure Active Directory B2C를 사용하면 Hoosiers는 한 명의 사용자 이름과 암호만 기억하면서 안전하게 상태와 비즈니스를 수행할 수 있는 안전하고 사용하기 쉬운 ID를 만들 수 있습니다. 인디애나 주&rsquo; 국무장관 INBiz 애플리케이션과 함께 Azure Active Directory B2C를 처음 배포하는 것은 엄청난 성공을 거두었으며 향후 모든 애플리케이션에 Azure Active Directory B2C를 사용하고 시민 로그인이 필요한 레거시 애플리케이션에 기술을 소급 적용하는 것을 고려하고 있습니다.</em>&rdquo; -  <b>브라이언 롱, 클라우드 아키텍트 - 인디애나 Office</b></p>
+
+
+  <p><b>원활한 환경</b>: <a href="https://azure.microsoft.com/documentation/articles/active-directory-b2c-reference-ui-customization/">애플리케이션&rsquo; 소비자 환경을 픽셀 단위로 완벽하게 제어할 수</a> 있습니다. 서비스는 보기에서 완전히 숨겨집니다. 레알 마드리드는 이 기능을 사용하여 팬들을 위한 매력적인 모바일(iOS, Android, Windows Phone) 및 웹앱을 제공했습니다.</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d9e44ea-ed14-427c-ab65-ccd588918639.jpg" style="border-width: 0px; width: 249px; height: 443px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title=""></p>
+
+
+  <p>&ldquo;<i>Azure Active Directory B2C는 Facebook과 같은 소셜 계정이나 전통적인 사용자 이름/암호 로그인을 통해 간소화된 등록 및 로그인을 통해 전 세계 4억 5천만 명의 팬들에게 경기장을 더 가깝게 만드는 데 도움이 됩니다. &rsquo;모든 플랫폼의 모바일 애플리케이션에서 원활한 환경을 제공할 수 있습니다. Azure Active Directory B2C를 사용하여 사용자 지정 코드를 빌드하지 않고도 완전히 사용자 지정된 로그인 페이지를 빌드할 수 있었습니다. 또한 Microsoft 솔루션을 사용하여 보안, 데이터 위반 및 확장성에 대한 모든 우려를 완화했습니다.</i>&rdquo; -  <b>라파엘 드 로스 산토스, 디지털 책임자 - 레알 마드리드</b></p>
+
+
+  <p><b>고도로 사용자 지정 가능한 여정</b>: 개발자가 코드를 전달하지 않아도&rsquo; 되도록 등록, 로그인, 등록 또는 로그인, 프로필 편집 및 암호 재설정과 같은 <a href="https://azure.microsoft.com/documentation/articles/active-directory-b2c-reference-policies/">기본 소비자 경험을</a> 제공합니다. 이러한 소비자 경험은 각 앱의 요구 사항에 맞게 조정될 수 있습니다(<a href="https://azure.microsoft.com/documentation/articles/active-directory-b2c-reference-ui-customization/">브랜딩</a>, <a href="https://azure.microsoft.com/documentation/articles/active-directory-b2c-token-session-sso/">토큰, 세션 및 SSO 구성</a>, <a href="https://azure.microsoft.com/documentation/articles/active-directory-b2c-reference-custom-attr/">소비자로부터 수집된 정보</a> 및 <a href="https://azure.microsoft.com/documentation/articles/active-directory-b2c-reference-tokens/">앱에 다시 전달된 클레임</a>).</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/af42566a-84ef-478e-9024-fad76ae6de74.jpg" style="border-width: 0px; width: 256px; height: 492px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title=""></p>
+
+
+  <p><b>개발자 환경</b>: Azure AD B2C는 산업 표준 프로토콜인 OpenID 커넥트 및 OAuth 2.0을 지원합니다. Microsofts&rsquo; 인증 라이브러리 또는 오픈 소스 앱을 사용하여 모바일, 웹 및 네이티브 앱을 보호할 수 있습니다. <a href="https://azure.microsoft.com/documentation/services/active-directory-b2c/">aka.ms/aadb2c</a> 설명서 및 샘플을 확인하세요.</p>
+
+
+  <p><b>확장 가능한 디렉터리</b>: B2C 테넌트는 수억 개의 소비자 프로필을 저장할 수 있습니다. 또한 <a href="https://azure.microsoft.com/documentation/articles/active-directory-b2c-devquickstarts-graph-dotnet/">RESTful API</a>(&ldquo;Graph API&rdquo;)를 통해 완전히 프로그래밍할 수 있습니다. 가장 중요한 것은 소비자&rsquo; 데이터를 소유하고 앱&rsquo; 사용 약관을 관리하는 것입니다.</p>
+
+
+  <p><b>클라우드 우선</b>: 클라우드 ID 서비스는 안전하고 안정적이며 고가용성(SLA 99.9%)입니다. <b> </b>하루에 10억 개 이상의 Azure AD 로그인을 구동하는 동일한 기술 인프라를 기반으로 합니다.</p>
+
+
+  <p><b>우수한 경제성</b>: 무료 기간 이후에 적용되는 <a href="https://azure.microsoft.com/pricing/details/active-directory-b2c/">소비 기반 가격 책정</a> 모델은 온-프레미스 시스템의 총 소유 비용을 상회합니다.</p>
+
+
+  <h3>프로덕션 규모&rdquo; B2C 테넌트에 대한 &ldquo;중요 참고 사항</h3>
+
+
+  <p>최근에 Azure AD B2C 전용으로 북미 데이터 센터에 새 서버를 배포했습니다. 이러한 서버에서 호스트되는 B2C 테넌트는 <i>테넌트당</i> 수억 개의 소비자 ID까지 확장할 수 있습니다. 북미의 이러한 &ldquo; 프로덕션 <b>규모</b>&rdquo; B2C 테넌트에서만 프로덕션 앱을 실행해야 합니다. 미국, 캐나다, 코스타리카, 도미니카 공화국, 엘살바도르, 과테말라, 멕시코, 파나마, 푸에르토리코, 트리니다드 토바고 등 국가 또는 지역에서 <a href="https://azure.microsoft.com/documentation/articles/active-directory-b2c-get-started/">새로운 B2C 테넌트</a> 만들기를 통해 얻을 수 있습니다.</p>
+
+
+  <p>북미 이외의 사용자는 요구 사항을 충족하는 경우 북미 B2C 테넌트 사용을 고려할 수 있습니다. 향후 몇 개월 동안 다른 국가 또는 지역에서 Azure AD B2C를 일반 공급할 계획입니다.</p>
+
+
+  <p>테넌트 유형에 대한 정보는 B2C 관리 UI에서 사용할 수 있습니다. <b>프로덕션 규모 테넌트가</b>&rdquo; 표시 &ldquo; 되면 진행하는 것이 좋습니다. 기존 &ldquo;<b>미리 보기 테넌트가</b>&rdquo; 있는 경우 개발 및 테스트에만 사용해야 합니다.</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2a90a7aa-ac83-496d-a51a-cae641506e93.png" style="border-width: 0px; width: 542px; height: 296px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title=""></p>
+
+
+  <h3><b>다음 단계는 무엇입니까&rsquo;?</b></h3>
+
+
+  <ul>
+   <li><b>유럽 및 아시아 태평양 지역의 GA: </b> 향후 몇 개월 동안 다른 국가 또는 지역에 대한 일반 공급 공지 사항을 보려면 이 공간을 시청하세요.</li>
+   <li><b>다국어 지원</b>: Azure AD B2C는 21개 이상의 언어(및 해당 지역 변형)로 페이지를 렌더링합니다. 사용자 고유의 텍스트 콘텐츠(레이블, 오류 메시지 등)를 업로드 애플리케이션&rsquo; 환경을 추가로 사용자 지정합니다.</li>
+   <li><b>액세스 토큰 지원</b>: 액세스 토큰을 사용하여 앱&rsquo; 클라이언트와 서버 구성 요소 간의 통신을 관리합니다.</li>
+   <li><b>로드맵</b>: <a href="https://www.microsoft.com/en-us/cloud-platform/roadmap-in-development">온라인으로 로드맵</a> 을 확인하고 <a href="https://feedback.azure.com/forums/169401-azure-active-directory/category/160596-b2c">Azure UserVoice</a>에서 즐겨 찾는 기능에 투표하세요.</li>
+  </ul>
+
+
+  <h3><b>요약</b></h3>
+
+
+  <p>오늘의&rsquo; 이정표는 시작입니다. 우리는 그 어느 때보다도 개발자가 ID 플랫폼에서 성공할 수 있도록 하는 데 주력하고 있습니다. Azure AD B2C는 ID 공급자, 클레임 공급자 및 휴식 서비스를 안전하게 오케스트레이션하기 위해 특별히 구축된 클라우드 규모의 ID 서비스를 기반으로 구축된 Azure AD B2C를 빠르게 발전시키는 동시에 개발자에게 사용자 환경을 완벽하게 제어하고 수억 명의 소비자, 파트너 및 디바이스를 처리할 수 있도록 확장할 것입니다. 자세한 내용을 보려면 연락해 <a href="mailto:aadb2cdev@microsoft.com">aaddev@microsoft.com</a>&nbsp;주세요.</p>
+
+
+  <h3><b>시작할 리소스</b></h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/documentation/services/active-directory-b2c/">aka.ms/aadb2c</a> 설명서 및 샘플을 찾을 수 있습니다.</li>
+   <li>Stack Overflow에 대한 도움말을 확인합니다( <a href="https://stackoverflow.com/questions/tagged/azure-active-directory">azure-active-directory</a> 태그 사용).</li>
+   <li>에서 웹 페이지를 방문하세요 <a href="https://azure.com/azuread-b2c">https://azure.com/azuread-b2c</a>.</li>
+   <li>우리 (<a href="https://twitter.com/azuread">@azuread</a>) 또는 나 (<a href="https://twitter.com/swaroop_kmurthy">@swaroop_kmurthy</a>)를 트윗.</li>
+  </ul>
+
+
+  <p>감사합니다.</p>
+
+
+  <p>Azure AD B2C 엔지니어링 팀을 대신하여 Swaroop Krishnamurthy</p>

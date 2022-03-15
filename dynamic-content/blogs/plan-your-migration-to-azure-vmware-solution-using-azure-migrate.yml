@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e44dfc78ff303101e035db0a3e084eaa8da7805a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911634"
+Slug: plan-your-migration-to-azure-vmware-solution-using-azure-migrate
+Title: Azure Migrate를 사용하여 Azure VMware 솔루션으로 마이그레이션 계획
+Summary: Azure Migrate는 이제 AVS(Azure VMware Solution)에 대한 평가를 지원하여 Azure로의 마이그레이션을 계획할 수 있는 더 많은 옵션을 제공합니다.
+Content: >-
+  <p>Azure Migrate는 이제 AVS( <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/introduction" target="_blank">Azure VMware Solution</a> )에 대한 평가를 지원하여 Azure로의 마이그레이션을 계획할 수 있는 더 많은 옵션을 제공합니다. AVS를 사용하면 Azure에서 VMware를 기본적으로 실행할 수 있습니다. AVS는 Azure의 VMware 환경을 위한 전용 SDDC(소프트웨어 정의 데이터 센터)를 제공하여 친숙한 VMware 도구 및 투자를 활용하는 동시에 Azure 네이티브 서비스와 통합하여 애플리케이션 초과 작업을 현대화할 수 있습니다. 서비스로 제공되고 운영되는 프라이빗 클라우드 환경은 온-프레미스 VMware 환경을 확장하고 Azure로 마이그레이션하는 데 필요한 모든 컴퓨팅, 네트워킹, 스토리지 및 소프트웨어를 제공합니다.</p>
+
+
+  <p>조직이 그 어느 때보다 비용 효율성, 비즈니스 안정성 및 일관성을 찾고 있으므로 가장 효율적인 마이그레이션 경로를 선택하는 것이 필수적입니다. 즉, 서버를 Azure Virtual Machines로 마이그레이션하거나 AVS를 사용하여 Azure에서 기본적으로 기존 VMware 워크로드를 실행하는 등 다양한 워크로드 시나리오와 대상을 고려합니다.</p>
+
+
+  <p>이전에 <a href="https://azure.microsoft.com/en-us/services/azure-migrate/" target="_blank">Azure Migrate</a> 도구는 데이터베이스, 웹 애플리케이션 및 가상 데스크톱 시나리오에 대한 지원뿐만 아니라 Windows 및 Linux 서버를 Azure Virtual Machines로 마이그레이션하기 위한 지원을 제공했습니다. 이제 마이그레이션 허브를 사용하여 AVS로 마이그레이션할 컴퓨터를 평가할 수도 있습니다.</p>
+
+
+  <p>Azure Migrate: 서버 평가 도구를 사용하여 AVS로 마이그레이션하기 위한 준비 상태, Azure 적합성, 비용 계획, 성능 기반 권한 부여 및 애플리케이션 종속성을 분석할 수 있습니다. AVS 평가 기능은 현재 미리 보기로 제공됩니다.</p>
+
+
+  <p>이 확장된 지원을 통해 데이터 센터에 대한 보다 포괄적인 평가를 얻을 수 있습니다. Azure 네이티브 VM(가상 머신)과 AVS 간의 클라우드 비용을 비교하여 비즈니스에 가장 적합한 마이그레이션 결정을 내릴 수 있습니다. Azure Migrate는 인텔리전트 허브 역할을 하며, 평가 전반에 걸쳐 인사이트를 수집하여 VM 또는 VMware 워크로드 마이그레이션을 위한 도구 권장 사항을 포함하여 제안합니다.</p>
+
+
+  <h2>AVS 평가를 수행하는 방법</h2>
+
+
+  <p>Azure Migrate에서 Azure Virtual Machines에 제공하는 모든 기존 평가 기능을 사용하여 AVS 평가를 수행할 수 있습니다. 하나의 Azure Migrate 프로젝트에서 최대 35,000개의 VMware 서버를 사용하여 AVS로 마이그레이션을 계획합니다.</p>
+
+
+  <ul>
+      <li><strong>검색</strong>: Azure Migrate: 서버 평가 도구를 사용하여 Azure Migrate 어플라이언스를 다운로드하거나 CSV 업로드를 통해 인벤토리 데이터를 가져와 데이터 센터 검색을 수행합니다. <a href="https://azure.microsoft.com/en-us/blog/assess-your-servers-with-a-csv-import-into-azure-migrate/" target="_blank">Azure Migrate로 CSV 가져오기를 사용하여 서버 평가를</a> 읽어 가져오기 기능에 대해 자세히 알아보세요.</li>
+      <li><strong>그룹 서버</strong>: 검색된 컴퓨터 목록에서 서버 그룹을 만듭니다. 여기서는 Azure Virtual Machine 평가 또는 AVS 평가에 대한 그룹을 만들지 여부를&rsquo; 선택할 수 있습니다. 애플리케이션 종속성 분석 기능을 사용하면 애플리케이션 간의 연결에 따라 그룹을 구체화할 수 있습니다.</li>
+      <li><strong>평가 속성</strong>: 속성을 변경하고 평가를 다시 계산하여 AVS 평가를 사용자 지정할 수 있습니다. 대상 위치, 노드 유형 및 RAID(독립 디스크의 중복 배열) 수준&mdash; 집합을 선택하면 현재 미국 동부, 서유럽 및 미국 서부를 포함하는 세 가지 위치를 사용할 수&mdash; 있으며 추가 노드가 릴리스되면 더 많은 위치가 계속 추가됩니다.</li>
+      <li><strong>적합성 분석</strong>: 평가는 성능 기반 또는 온-프레미스 간에 Azure의 노드 크기를 조정하는 몇 가지 옵션을 제공합니다. 검색된 각 서버에 대한 AVS 지원을 확인하고 서버를 AVS로 그대로&rdquo; 마이그레이션&ldquo;할 수 있는지 확인합니다. 문제가 발견되면 평가에서 자동으로 수정 지침을 제공합니다.</li>
+      <li><strong>평가 및 비용 계획 보고서</strong>: 평가를 실행하여 사용 중인 컴퓨터 수와 AVS에 있는 월별 및 컴퓨터당 예상 비용을 살펴봅니다. 평가에서는 컴퓨터를 AVS로 마이그레이션하는 도구도 권장합니다. 이를 통해 AVS 마이그레이션을 가능한 한 효율적으로 계획하고 실행하는 데 필요한 모든 정보가 있습니다.<br>
+  &nbsp;</li>
+
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a7d5456-dae6-4624-b1f9-30047656ab14.png"><img alt="Plan your migration to Azure VMware Solution using Azure Migrate 1" border="0" height="417" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5e1ed9d8-5fd5-45d0-9a03-1a6c9a8b2da0.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Migrate 1을 사용하여 Azure VMware Solution으로 마이그레이션 계획" width="1024"></a></p>
+
+
+  <p><em>AVS 평가 및 비용 계획 보고서.</em></p>
+
+
+  <p><br>
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2f7dc50f-8ddb-4991-b39c-85c6f51541fd.png"><img alt="Plan your migration to Azure VMware Solution using Azure Migrate 2" border="0" height="475" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/62bc49f5-0fec-48cc-8392-2bed34fb178b.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Migrate 2를 사용하여 Azure VMware Solution으로 마이그레이션 계획" width="1024"></a>&nbsp;<br>
+
+  <em>제안된 마이그레이션 도구가 있는 AVS 준비 보고서입니다.</em></p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <ul>
+      <li>AVS 평가를 수행하는 방법에 대한 자세한 지침은 <a href="https://go.microsoft.com/fwlink/?linkid=2133917" target="_blank">설명서 페이지</a>로 이동하세요.</li>
+      <li><a href="https://azure.microsoft.com/en-us/services/azure-vmware/" target="_blank">웹 사이트</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/introduction" target="_blank">설명서 페이지에서</a> Azure VMware Solution에 대해 자세히 알아보세요.</li>
+      <li>Azure <a href="https://azure.microsoft.com/services/azure-migrate/" target="_blank">Migrate 웹 사이트에서 Azure Migrate</a> 에 대해 자세히 알아봅니다.</li>
+      <li>서버 마이그레이션을 수행하는 데모는 최신 <a href="https://www.youtube.com/watch?v=0s2ZqHgieT0" target="_blank">Azure Migrate 비디오를</a> 시청하세요.</li>
+      <li>새 <a href="https://azure.microsoft.com/resources/migrate-to-the-cloud-with-azure-migrate/" target="_blank">Azure Migrate 전자책</a>을 확인하세요.</li>
+  </ul>

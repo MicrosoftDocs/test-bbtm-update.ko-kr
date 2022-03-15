@@ -1,0 +1,40 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6ab9d389607354e15b20f9247bb15e65114879a0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912077"
+Slug: azure-documentdb-edit-and-query-documents-in-the-azure-portal
+Title: Azure DocumentDB - Azure Portal에서 문서 편집 및 쿼리
+Summary: DocumentDB 관리 환경을 더욱 개선하기 위해 다양한 향상된 기능을 출시했습니다. 우리의 10 월 23 일 포털 업데이트는 몇 가지 새로운 기능을 조명!
+Content: >-
+  <p>Weve&rsquo;는 DocumentDB 관리 환경을 더욱 개선하기 위해 여러 가지 향상된 기능을 출시했습니다.&nbsp; 10월 23<sup>일 포털</sup> 업데이트는 다음을 통해 <a href="https://portal.azure.com">https://portal.azure.com</a>다음과 같은 새로운 기능을 표시합니다.</p>
+
+
+  <ul>
+   <li>문서 CRUD 작업 &ndash; 문서 만들기, 편집 및 삭제</li>
+   <li>문서 탐색기 내에서 문서 필터링 및 새로 고침 &ndash; 필터 및 새로 고침 결과</li>
+   <li>쿼리 탐색기 &ndash; 작성 및 DocumentDB SQL 쿼리 실행</li>
+  </ul>
+
+
+  <p>&nbsp; 이러한 새로운 각 기능에 대한 몇 가지 추가 정보를 계속 읽어보세요! &nbsp;</p>
+
+
+  <h3><strong>CRUD 작업 문서화</strong></h3>
+
+
+  <p>문서를 만들고 편집하고 삭제할 수 있도록 문서 탐색기가 향상되었습니다.&nbsp; 문서를 만들려면 문서 만들기 명령을 클릭하면 최소한의 JSON 코드 조각이 제공됩니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/04/1-new.png"><img alt="1-new" class="alignnone size-large wp-image-214481" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1-new-601x369.png" width="601"></a> ID를 제공하지 않도록 선택하면 문서 탐색기에서 ID 값으로 GUID를 자동으로 생성합니다. 저장을 클릭하면 제공된(또는 생성된) ID <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/04/2-new.png"><img alt="2-new" class="alignnone size-large wp-image-214581" height="345" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2-new-636x345.png" width="636"></a> 가 반영되도록 블레이드 제목이 업데이트됩니다. 기존 문서를 편집하려면 문서 탐색기에서 문서를 편집하고, 원하는 대로 문서를 편집하고, 저장 명령을 클릭합니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3.png"><img alt="3" class="alignnone size-full wp-image-212381" height="205" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3.png" width="624"></a> 마찬가지로 문서를 선택하고 삭제 명령을 클릭한 다음 삭제를 확인하여 문서를 삭제할 수 있습니다.  문서는 문서 탐색기 목록에서 즉시 제거됩니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4.png"><img alt="4" class="alignnone size-full wp-image-212391" height="205" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4.png" width="624"></a> 문서 탐색기는 문서에 유효한 JSON이 포함되어 있는지 확인합니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5.png"><img alt="5" class="alignnone size-full wp-image-212401" height="192" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5.png" width="624"></a> 또한 잘못된 JSON 콘텐츠가 있는 문서를 저장할 수 없습니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6.png"><img alt="6" class="alignnone size-full wp-image-212411" height="206" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6.png" width="624"></a></p>
+
+
+  <h3><strong>문서 탐색기 필터 및 새로 고침 지원</strong></h3>
+
+
+  <p>이제 문서 탐색기에서 현재 로드된 문서 집합을 ID 속성으로 필터링할 수 있습니다.&nbsp; 필터 상자에 입력하기만 하면 그리드의 현재 결과가 조건에 따라 필터링됩니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/04/7-new.png"><img alt="7-new" class="alignnone size-medium wp-image-214591" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7-new-193x369.png" width="193"></a></p>
+
+
+  <h3><strong>쿼리 탐색기</strong></h3>
+
+
+  <p>&rsquo;DocumentDB SQL 쿼리를 작성하고 실행할 수 있는 새로운 쿼리 탐색기 환경을 도입하게 되어 매우 기쁩니다. DocumentDB 계정, 데이터베이스 또는 컬렉션 블레이드에서 쿼리 탐색기를 시작할 수 있습니다.&nbsp; SELECT * FROM c의 기본 쿼리가 쿼리 편집기에서 제공됩니다.&nbsp; 기본 쿼리를 수락하거나 직접 생성한 다음 실행 명령을 클릭하여 결과를 볼 수 있습니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/04/8-new2.png"><img alt="8-new2" class="alignnone size-large wp-image-214631" height="270" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8-new2-636x270.png" width="636"></a> 기본적으로 쿼리 탐색기는 100 집합의 결과를 반환합니다.&nbsp; 쿼리에서 100개 이상의 결과를 생성하는 경우 다음 페이지 및 이전 페이지 명령을 사용하여 결과 집합 <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/04/9-new.png"><img alt="9-new" class="alignnone size-large wp-image-214621" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9-new-580x369.png" width="580"></a> 을 탐색하기만 하면 됩니다. 언제나처럼, Wed&rsquo;는 Azure Portal 내에서 가장 가치 있는 DocumentDB 기능 및 환경에 대해 듣고 싶어합니다.&nbsp; Microsoft Azure DocumentDB <a href="https://feedback.azure.com/forums/263030-documentdb?filter=top&amp;page=1">피드백 포럼</a>에서 제안 사항을 제출하세요.&nbsp; DocumentDB를 아직 시도하지 않은&rsquo; 경우 <a href="https://azure.microsoft.com/en-us/services/documentdb/">여기에서</a> 시작합니다. 즐겨보세요!</p>

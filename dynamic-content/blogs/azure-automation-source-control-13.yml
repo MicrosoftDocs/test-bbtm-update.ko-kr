@@ -1,0 +1,185 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3bfb7a71a2cd4141203e2fcfbb82491acd245513
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911389"
+Slug: azure-automation-source-control-13
+Title: Azure Automation의 소스 제어 통합
+Summary: 소스 제어 자동화를 사용하면 Azure Automation에서 작성하는 코드를 소스 제어(푸시)에 체크 인하고 소스 제어에 있는 코드를 Azure Automation(끌어오기)과 동기화할 수 있습니다. 이 문서에서는 소스 제어가 중요한 이유와 Azure Automation 환경에서 이를 설정하는 방법을 살펴보겠습니다.
+Content: >-
+  <p>&nbsp;</p>
+
+
+  <p><em><font color="#666666">크리스토퍼 맨크를 대신하여 <a href="https://azure.microsoft.com/en-us/blog/author/cmank/" target="_blank" title="https://azure.microsoft.com/en-us/blog/author/cmank/">게시됨(동시성)</a></font></em></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>견고한 소스 제어 시스템을 갖추는 것은 모든 소프트웨어 개발 프로젝트에 필수적입니다. 많은 시스템 관리자 및 엔지니어가 인식하지 못하는 것은 자동화 개발도 다르지 않다는 것입니다. 스크립트 및 자동화 작성자는 소프트웨어 개발자와 동일한 유형의 도구를 사용하여 코드를 추적하고 관리해야 합니다.</p>
+
+
+  <p>지난 달, Azure Automation 팀은 UserVoice에서 소스 제어 통합의 미리 보기를 발표했습니다. 현재 이 소스 제어는 공용으로 사용할 수 있습니다.&nbsp; 소스 제어 자동화&nbsp;를 사용하면 Azure Automation에서 다시 작성할&#39;있는 코드를 소스 제어(푸시)에 체크 인하고 소스 제어의 항목을&rsquo; Azure Automation(끌어오기)과 동기화할 수 있습니다. 이 문서에서&rsquo;는 소스 제어가 중요한 이유와 Azure Automation 환경에서 이를 설정하는 방법을 살펴보겠습니다. 하자&rsquo; 점프!</p>
+
+
+  <h1>소스 제어가 중요한 이유는 무엇인가요?</h1>
+
+
+  <p>소스 제어는 현재 스크립트 및 Runbook을 작성하는 모든 사용자에게 중요한 구성 요소입니다. 변경한 사용자와 변경 내용에 대한 기록 추적을 제공할 뿐만 아니라 모든 코드에 대한 하나의 중앙 집중식 원본을 제공하여 문제가 발생할 경우 재작업 및 문제 해결 시간을 절약할 수 있습니다. 또한 자동화 파이프라인의 한 부분에 대한 특정 지식이 있을 수 있는 팀 간에 쉽게 협업할 수 있습니다. 자동화는 비즈니스에 중요한 복잡한 프로세스를 설명할 수 있으므로 배포된 다른 소프트웨어와 마찬가지로 관리해야 합니다.&nbsp;</p>
+
+
+  <p>소스 제어 통합은 DevOps 방향에서 좋은 단계입니다. 이를 통해 자동화를 중심으로 개발과 유사한 분야를 시작할 수 있으며 비즈니스에 솔루션을 더 빠르게 제공할 수 있습니다.</p>
+
+
+  <p>Azure Automation에 직접 통합하는 것은 서비스의 가장 흥미로운 기능 중 하나여야 하며 UserVoice에서 가장 요청이 많은 기능 중 하나입니다. 간단히 말해서&nbsp;, 현재 스크립트 및 자동화에 소스 제어를 사용하지 않는 경우</p>
+
+
+  <h1>Azure Automation에서 원본 제어 통합</h1>
+
+
+  <p>소스 제어 통합을 사용하면 자동화 계정의 Runbook을 소스 제어 리포지토리에 연결할 수 있습니다. 이 설정을 가져오는 단계는 다음과 같습니다.</p>
+
+
+  <h2>GitHub 구성</h2>
+
+
+  <ol>
+   <li><a href="https://github.com/" target="_blank">https://github.com/</a> 새 계정을 찾아서 만들거나 기존 GitHub 계정에 로그인합니다.
+
+   <ul>
+    <li><strong><font color="#ff0000">참고</font></strong>: 소스 제어 미리 보기는 현재 GitHub 통합됩니다. Visual Studio Online과 같은 다른 플랫폼으로 확장할 계획입니다. 여기에서 즐겨 찾는 소스 제어 시스템에 투표할 수 <a href="https://www.surveymonkey.com/r/?sm=2dVjdcrCPFdT0dFFI8nUdQ%3d%3d" target="_blank">있습니다</a>.&nbsp;</li>
+   </ul>
+   </li>
+   <li>GitHub 홈페이지에서 리포지토리 만들기를 클릭합니다&quot;.&quot; 기존 리포지토리를 선택할 수도 있지만 이 연습&rsquo;에서는 새 리포지토리를 만듭니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/942fa268-37a0-4fed-91ac-ed100510ea61.png"><img alt="Configure-Step2" border="0" height="429" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f4f5b646-1efe-40f0-8e01-462623ce62c2.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 10px auto; display: block; padding-right: 0px" title="Configure-Step2" width="1042"></a></li>
+   <li>리포지토리에 이름을 지정하고, 추가 설정을 구성하고, 리포지토리 만들기를 클릭합니다 &quot;.&quot;</li>
+  </ol>
+
+
+  <blockquote>
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ffd043f8-fc5e-4dd4-8be8-2fe6f97986e3.png"><img alt="Configure-Step3" border="0" height="543" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9b73d19f-9263-4e3a-8b22-44552092eb1e.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="Configure-Step3" width="1057"></a>&nbsp;</p>
+
+  </blockquote>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>소스 제어 통합 구성</h2>
+
+
+  <ol>
+   <li>조직&rsquo; Azure 구독으로 이동하여 <a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a> 로그인합니다. 여기에서 모든 &gt; Automation 계정 찾아보기를 클릭합니다.</li>
+   <li>Automation 계정 블레이드에서 새 계정을 만들거나 원본 제어를 구성하려는 기존 Automation 계정을 선택합니다.</li>
+   <li>아래쪽에서 소스 제어 설정을 클릭합니다 &quot;.&quot;</li>
+   <li>소스 제어 설정 페이지에서 리포지토리 구성에 대해 다음 값을 입력하고 확인을 클릭하여 통합을 만듭니다.</li>
+  </ol>
+
+
+  <ul style="margin-left: 80px;">
+   <li><strong>원본 선택</strong>: GitHub</li>
+   <li><strong>권한 부여</strong>: 권한 부여&rsquo; 단추를 클릭하여 &lsquo;Azure Automation에 GitHub 리포지토리에 대한 액세스 권한을 부여한 다음 아래쪽에서 확인을 클릭합니다. 권한이 부여되면 마법사에 GitHub 사용자 이름이 표시됩니다.</li>
+   <li><strong>리포지토리 선택</strong>: 위의 3단계에서 만든 리포지토리를 선택합니다.</li>
+   <li><strong>분기 선택</strong>: 사용 가능한 <a href="https://www.git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging" target="_blank">분기</a> 중 하나를 선택합니다.&nbsp; 코드를 분기한 적이 없는 경우 마스터&quot;만 &quot;선택 영역으로 사용할 수 있습니다.</li>
+   <li><strong>Runbook 폴더 경로: Runbook</strong> 소스 코드가 저장될 GitHub 리포지토리 내의 폴더 경로입니다. 하위 폴더가 아닌 폴더의 Runbook만 Azure Automation에 동기화됩니다. 원하는 폴더 구조를 구성할 수 있습니다. 리포지토리를 입력하는 형식은 기본 폴더 또는 /folderToSync용입니다&ldquo;&rdquo;/.&ldquo;&rdquo;</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d81f3047-6b36-4de6-92a0-ba1bcf6f085c.png"><img alt="Configure-step4" border="0" height="898" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7fd9cefd-709d-4f9c-a118-e360c27b75c5.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 2px auto 5px; display: block; padding-right: 0px; border-top-width: 0px" title="Configure-step4" width="900"></a></p>
+
+
+  <blockquote>&nbsp;</blockquote>
+
+
+  <p>&nbsp; 5.&nbsp; 이제 Automation 계정에 대한 소스 제어 통합이 구성되었습니다.&nbsp;</p>
+
+
+  <blockquote>
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/75434a74-2d97-49e3-ab3e-0f2f0ac4b6b2.png"><img alt="Configure-Step5" border="0" height="211" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a515d51-a087-401d-8187-ff645dcc330b.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 5px auto 0px; display: block; padding-right: 0px; border-top-width: 0px" title="Configure-Step5" width="387"></a></p>
+
+  </blockquote>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><b><font color="#ff0000">참고</font></b>: 이 통합이 만들어지면 Automation 원본 제어가 GitHub 계정에 권한 있는 애플리케이션으로 추가됩니다. 이 정보는 GitHub 찾아보고 프로필 &gt;&nbsp; 설정 &gt; 애플리케이션을 클릭하여 볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d8909356-d421-481a-935e-4f6633d72fca.png"><img alt="Configure-Step5B" border="0" height="501" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a54ee300-7e58-4aa5-945f-62305b0252d9.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="Configure-Step5B" width="1019"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h1>Runbook 체크 인(푸시)</h1>
+
+
+  <p>Runbook 체크 인을 사용하면 개별 Runbook에 적용한 변경 내용을&rsquo; 소스 제어 계정에 푸시할 수 있습니다. 체크 인을 수행하는 단계는 다음과 같습니다.</p>
+
+
+  <ol>
+   <li>원본 제어를 설정한 자동화 계정에서 새로 만들거나 기존 텍스트 Runbook을 선택하고 편집을 선택합니다.
+   <ul>
+    <li><b><font color="#ff0000">참고</font></b>: 소스 제어 미리 보기는 Textual/PowerShell 워크플로 Runbook과의 통합만 지원합니다. 그래픽 Runbook 및 PowerShell 스크립트에 대한 지원이 곧 제공될 예정입니다.</li>
+   </ul>
+   </li>
+   <li>이제 작성 블레이드의 맨 위에 있는 명령에 체크 인 옵션이 표시됩니다. 연습&rsquo;에서는 간단한 변수를 추가하고 체크 인을 클릭합니다 &ldquo;.&quot; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e8b2595b-cbd1-4eb7-b051-51865ba5619d.png"><img alt="RunbookCheckin-Step2" border="0" height="245" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/564afc9e-f72b-4a08-8ed0-fbe26a1d7248.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 10px auto; display: block; padding-right: 0px" title="RunbookCheckin-Step2" width="780"></a></li>
+   <li>다음 확인 메시지가 표시됩니다. [예&rdquo;]를 클릭하여 &ldquo;체크 인을 진행합니다.<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a243e88-2dee-47b9-930f-80e63c3bbacc.png"><img alt="RunbookCheckin-Step3" border="0" height="284" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0a476f8a-ff6b-4ed7-94f8-36540576644c.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 10px auto; display: block; padding-right: 0px" title="RunbookCheckin-Step3" width="1407"></a>
+   <ul>
+    <li><b><font color="#ff0000">참고</font></b>: Azure Automation의 체크 인은 소스 제어에 현재 존재하는 코드를 덮어씁니다.</li>
+   </ul>
+   </li>
+   <li>Azure Automation에서 GitHub 변경 내용을 푸시하기 위해 Runbook &quot;Sync-MicrosoftAzureAutomationAccountToGithubV1&quot;이 시작됩니다. 자동화 계정의 루트로 다시 이동하고 리포지토리 동기화를 클릭하여 이 작업의 진행률을 확인할 수 있습니다.<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7e4efb17-1ce2-4386-9f1f-1ebd9575a030.png"><img alt="RunbookCheckin-Step4" border="0" height="883" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/742116bd-5536-4803-b8bc-70050348a3f7.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 10px auto; display: block; padding-right: 0px" title="RunbookCheckin-Step4" width="1577"></a></li>
+   <li>동기화 작업을 선택하여 드릴 인하고 작업의 세부 정보를 봅니다. 출력을 클릭하고 &ldquo;&rdquo; 오류 및 경고를 포함하여 작업에 대한 세부 정보를 스트림 클릭하여 작업 출력을 &quot;볼 수 있습니다.&quot;</li>
+   <li>동기화 작업이 완료되면 폴더와 Runbook이 GitHub 성공적으로 동기화되었는지 확인할 수 있습니다.</li>
+  </ol>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cefc03f1-8d1e-4f93-b221-6e1ff3490443.png"><img alt="RunbookCheckin-Step6" border="0" height="407" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bd4b6ac4-a887-4b28-8629-d78add1e57e1.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="RunbookCheckin-Step6" width="1035"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h1>Runbook 동기화(끌어오기)</h1>
+
+
+  <p>Runbook 동기화를 사용하면 소스 제어에 있는 현재 Runbook 코드를 Azure Automation으로 끌어올 수 있습니다. 동기화를 수행하는 단계는 다음과 같습니다.</p>
+
+
+  <ol>
+   <li>위의 Runbook 예제를 사용하여 연필 아이콘을 클릭하고 GitHub Runbook을 변경합니다. 필요에 따라 Windows 클라이언트용 GitHub 같은 Git 클라이언트를 사용하여 파일 시스템을 통해 원본 파일과 상호 작용할 수 <a href="https://windows.github.com/" target="_blank">있습니다.</a></li>
+   <li>원본 제어를 설정한 자동화 계정에서 리포지토리 동기화 &agrave; 를 클릭합니다. 다음 확인 메시지가 표시됩니다. [예&rdquo;]를 클릭하여 &ldquo;동기화를 진행합니다.<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/37cb648d-3956-4398-85ef-30e3f8915673.png"><img alt="RunbookSync-Step2" border="0" height="276" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/393c567d-59ad-46c1-a281-281b075badbb.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 10px auto; display: block; padding-right: 0px" title="RunbookSync-Step2" width="924"></a>
+   <ul>
+    <li><b><font color="#ff0000">참고</font></b>: 소스 제어의 동기화는 현재 소스 제어에 있는 모든 Runbook용 Azure Automation에 있는 코드를 강제로 덮어씁니다. 한 Runbook에 대한 변경 내용만 푸시하는 체크 인과 달리 동기화는 원본 제어의 모든 Runbook에 대한 변경 내용을 끌어오고, 기존 항목을 덮어쓰&rsquo;고, 사용 중인 Azure Automation 계정에 대한 작성 상태를 <b>초안(편집 중)</b> 으로 변경합니다.</li>
+   </ul>
+   </li>
+   <li>Runbook &quot;Sync-MicrosoftAzureAutomationAccountToGithubV1&quot;은 GitHub 변경 내용을 Azure Automation으로 끌어오기 위해 시작됩니다. Automation 계정의 루트로 다시 이동하고 리포지토리 동기화를 클릭하여 이 작업의 진행률을 확인할 수 있습니다.</li>
+   <li>Azure Automation에서 사용 중인 Runbook 예제&rsquo;로 돌아가서 GitHub 변경 내용이 Runbook에 적용되었는지 확인합니다.
+   <ol>
+    <li><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3d8959d0-7f4e-410d-ad3a-384e6c635c29.png"><img alt="RunbookSync-Step4" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd58eac3-7118-43c4-9db3-f95ff59d8dbe.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="RunbookSync-Step4" width="713"></a></li>
+   </ol>
+   </li>
+  </ol>
+
+
+  <p>&nbsp;</p>
+
+
+  <h1>피드백 제출</h1>
+
+
+  <p>원본 제어 자동화는 방금 공개용으로 릴리스되었으며 Azure Automation 팀은 이 작업에 대한 피드백을 얻을 수 있게 되어 기쁩니다. 따라서 드라이브를 사용하고 <a href="https://feedback.azure.com/forums/246290-azure-automation/suggestions/5742120-source-control-support" target="_blank">UserVoice</a>에 대한 피드백을 제출하여 의견을 알려주세요. 모두 완료되었습니다!</p>
+
+
+  <p>Azure Automation을 시작하기만 하면 되었나요? <a href="https://aka.ms/Q2p1ap" target="_blank">여기에서</a> 서비스에 대해 알아보고 <a href="https://twitter.com/AzureAutomation" target="_blank">Twitter</a>에서 Azure Automation을 따르세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><i><font color="#666666">이 게스트 블로그 게시물은 동시성, Inc.의 크리스토퍼 맨크에 의해 기여했다. Azure 블로그에 기능하고 싶은 Azure Automation&rsquo;에 대한 블로그 게시물에 대한 흥미로운 아이디어가 있나요? 트위터에서 조 레비에게 문의하세요</font></i><a href="https://twitter.com/jodoglevy" target="_blank"></a><i>.</i></p>

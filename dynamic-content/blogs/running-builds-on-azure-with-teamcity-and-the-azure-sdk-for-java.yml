@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3445532fa8bffbcbc8b0a708fc9fd9b99d828dd7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912405"
+Slug: running-builds-on-azure-with-teamcity-and-the-azure-sdk-for-java
+Title: TeamCity 및 Java용 Azure SDK를 사용하여 Azure에서 빌드 실행
+Summary: JetBrains에서는 Java, .NET 및 기타 여러 플랫폼을 위한 강력한 연속 통합 서버인 TeamCity를 빌드합니다. 빌드 서버는 가변 워크로드의 일반적인 예입니다. 지정된 날에는 2개의 빌드 에이전트를 실행하는 것으로 충분할 수 있습니다.
+Content: >-
+  <img class="alignnone size-full wp-image-217031" style="margin-right: 8px; margin-bottom: 2px;" alt="TeamCity Logo" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/01-tc-post-logo.png" width="110" height="99" align="left" />
+
+
+  JetBrains에서는 Java, .NET 및 기타 여러 플랫폼을 위한 강력한 연속 통합 서버인 <a href="https://www.jetbrains.com/teamcity/">TeamCity</a>를 빌드합니다. 빌드 서버는 가변 워크로드의 일반적인 예입니다. 지정된 날에는 2개의 빌드 에이전트를 실행하는 것으로 충분할 수 있습니다. 예를 들어 릴리스 날짜가 가까운 다른 날에는 애플리케이션의 컴파일, 테스트 및 배포 부하에 대처할 수 있는 10개의 빌드 에이전트가 필요합니다. <a href="https://blog.jetbrains.com/teamcity/2014/11/introducing-teamcity-azure-plugin-run-builds-in-the-cloud/">TeamCity Azure 플러그 인</a>을 빌드한 이유입니다. TeamCity는 빌드 에이전트를 자동으로 프로비전 및 프로비전 해제하여 빌드 팜의 실행 비용을 줄이면서 개발자 피드백을 위한 최적의 용량을 제공합니다.
+
+
+  TeamCity 서버에 플러그 인을 설치한 후 새 Microsoft Azure 클라우드 프로필을 추가하고 TeamCity에서 빌드 에이전트를 만들려는 관리 인증서 및 구독 ID를 전달할 수 있습니다. 다음으로 TeamCity에서 프로비전할 가상 머신 이미지 선택과 같은 몇 가지 옵션과 가상 머신 크기를 제공할 수 있습니다. 리소스가 적은 Extra Small 컴퓨터에서 SSD 빌드를 실행할 수 있는 고급 D 시리즈 컴퓨터에 이르기까지 구독에서 지원하는 가상 머신 크기를 시작할 수 있습니다. 빌드 에이전트는 Windows 또는 Linux일 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/11/02-tc-post-tc-window.png"><img class="alignnone size-medium wp-image-217041" alt="02-tc-post-tc-window" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/02-tc-post-tc-window-529x369.png" width="529" height="369" /></a>
+
+
+  저장되면 TeamCity는 먼저 클라우드가 아닌 에이전트에서 빌드를 시작합니다. 사용할 수 있는 일반 에이전트가 없는 경우 TeamCity는 호환되는 에이전트가 있는 가상 머신 또는 가상 머신 이미지를 찾아 Azure에서 시작합니다. TeamCity를 사용하면 구성된 최대 인스턴스 수를 초과하지 않으며 가상 머신이 제대로 종료되어 비용을 절감할 수 있습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/03-tc-post-portal.png"><img class="alignnone size-medium wp-image-217051" alt="03-tc-post-portal" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/03-tc-post-portal.png" width="605" height="214" /></a>
+
+
+  TeamCity는 Java에서 빌드되었기 때문에 Microsoft Azure 관리 API와 통신하는 방법을 선택해야 했습니다. 원시 REST 호출을 작성하거나 Java로 작성된 즉시 사용할 수 있는 클라이언트 라이브러리인 <a href="https://github.com/Azure/azure-sdk-for-java">Java용 Microsoft Azure SDK</a>를 사용하여 <a href="https://blog.jetbrains.com/teamcity/2014/11/introducing-teamcity-azure-plugin-run-builds-in-the-cloud/">TeamCity Azure 플러그 인</a>을 빌드할 수 있습니다. <a href="https://search.maven.org/#browse%7C1671162511">Maven에서 쉽게 사용하고</a> 모든 REST 내부를 캡슐화할 수 있으므로 Java용 Microsoft Azure SDK를 사용하기로 결정했습니다. 또한 완전히 <a href="https://github.com/Azure/azure-sdk-for-java">오픈 소스</a>이기 때문에 내부를 쉽게 보거나 추가 기능으로 확장할 수 있습니다.
+
+
+  Java용 Microsoft Azure SDK를 기반으로 빌드하는 것은 좋은 경험이었습니다. Microsoft Azure 관리 포털에서 수행할 수 있는 모든 작업은 SDK를 사용하여 수행할 수 있습니다. 이를 사용하여 기존 가상 머신을 시작 및 중지하고 가상 머신 이미지에서 새 가상 머신을 만들고 시작하므로 필요한 만큼 빌드 에이전트를 만들 수 있습니다. 추가 보너스로 Java용 Microsoft Azure SDK는 장기 실행 작업에 비동기 메서드를 제공하며 관리 API에 대한 호출을 차단하지 않습니다.
+
+
+  <a href="https://github.com/JetBrains/teamcity-azure-plugin">GitHub 플러그 인을 오픈 소스</a>로 오픈 소스로 설정하여 작업을 구현한 방법에 기여하거나 간단히 살펴볼 수 있습니다. Java용 Microsoft Azure SDK를 사용하므로 가상 네트워킹 지원 등과 같은 더 많은 기능으로 플러그 인을 확장할 수 있습니다. <a href="https://blog.jetbrains.com/teamcity/2014/11/introducing-teamcity-azure-plugin-run-builds-in-the-cloud/">TeamCity Azure 플러그 인</a>에 사용해 보려는 경우 <a href="https://www.jetbrains.com/teamcity/">무료 버전의 TeamCity</a>를 다운로드할 수 있습니다. TeamCity 서버와 에이전트가 Microsoft Azure 호스트되도록 하는 것이 좋습니다.

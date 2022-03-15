@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7ef599ce1e44d6aff4af571808ffa91b3eadbd1a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911725"
+Slug: microsoft-and-redis-labs-collaborate-to-give-developers-new-azure-cache-for-redis-capabilities
+Title: Microsoft 및 Redis Labs가 협업하여 개발자에게 새로운 Azure Cache for Redis 기능을 제공합니다.
+Summary: 'Microsoft와 Redis Labs 간의 새로운 파트너십을 통해 업계 최고의 기술과 전문 지식을 Azure Cache for Redis에 제공합니다. '
+Content: >-
+  <p>이제 그 어느 때보다도 기업은 고객의 높은 기대치에 부합하는 속도와 견고성으로 애플리케이션을 제공해야 합니다. 밀리초 미만의 응답 시간을 제공하고, 중소기업에서 대규모로 기업의 요구를 안정적으로 지원하고, 초당 수백만 개의 요청을 처리하도록 원활하게 확장하는 기능은 최신 애플리케이션 개발에 매우 중요합니다. 동시에 기술 솔루션은 중요 업무용 가동 시간과 안정성을 유지하면서 클라우드 네이티브 아키텍처를 처리할 수 있도록 보다 개방적이고 유연해야 합니다.</p>
+
+
+  <h2>Azure Cache for Redis에 새로운 기능을 제공하기 위한 Microsoft 및 Redis Labs 파트너</h2>
+
+
+  <p>이 점을 염두에 두고 업계 최고의 기술과 전문 지식을 <a href="https://azure.microsoft.com/en-us/services/cache/" target="_blank">Azure Cache for</a> Redis에 도입하기 위해 Microsoft와 Redis Labs 간의 새로운 파트너십을 발표합니다. 이 파트너십은 Redis Labs 기술과 주요 클라우드 플랫폼 간의 첫 번째 네이티브 통합을 나타내며, 고객의 선택과 유연성에 대한 우리의 약속을 강조합니다.</p>
+
+
+  <p>수년 동안 개발자는 <a href="https://redis.io/" target="_blank">Redis</a> 의 속도와 처리량을 활용하여 타의 추종을 불허하는 응답성을 생성하고 애플리케이션을 확장해 왔습니다. Weve&rsquo;는 Azure 고객이 Redis 성능을 분산 캐시, 세션 저장소 및 메시지 브로커로 활용했기 때문에 오픈 소스 Redis를 기반으로 구축된 관리형 솔루션인 Azure Cache for Redis를 대폭 채택했습니다. Redis Labs Redis Enterprise 기술의 통합은 개발자가 Redis를 활용할 수 있는 사용 사례 범위를 확장하면서 향상된 운영 복원력과 보안을 제공합니다.</p>
+
+
+  <h2>엔터프라이즈 고객을 위해 설계된 Redis 통합</h2>
+
+
+  <p>이 파트너십을 통해 Redis와 협력하여 특히 엔터프라이즈 고객의 요구를 겨냥한 Redis Labs 기술로 구동되는 새로운 확장된 제품을 구축했습니다. Redis Labs 기술과 Azure Cache for Redis의 통합을 통해 고객은 이제 RediSearch, RedisBloom 및 RedisTimeSeries를 포함하여 Redis Labs에서 개발한 모듈에 액세스할 수 있으며, 이 모듈은 데이터 분석 및 기계 학습과 같은 사용 사례를 더욱 가능하게 하는 새로운 데이터 구조를 제공합니다.</p>
+
+
+  <p>이러한 모듈은 데이터 지속성, 클러스터링, 지역 복제 및 네트워크 격리를 포함하여 Azure Cache for Redis의 기존 기능과 쌍으로 연결됩니다. 고객은 이제 SSD 플래시 스토리지에 배포할 수 있는 옵션을 갖게 되며, GB당 더 낮은 가격으로 최대 10배 더 큰 캐시 크기 및 유사한 성능 수준을 제공합니다. 안정성은 향상된 SLA와 활성 지역 복제를 활용하여 데이터 손실 없이 다른 지역으로 장애 조치(failover)할 수 있는 전역적으로 사용 가능한 캐시를 구성하는 기능을 통해 훨씬 더 큰 우선 순위가 될 것입니다. 나중에 이 기능을 사용하면 가용성 및 장애 조치(failover)를 위해 온-프레미스 캐시를 Azure의 캐시와 연결할 수 있습니다.</p>
+
+
+  <h2>네이티브 Azure 관리는 개발자를 위한 간소화된 환경을 만듭니다.</h2>
+
+
+  <p>새 서비스는 기본적으로 Azure에서 두 개의 새로운 Enterprise 계층으로 관리되지만 고객은 구성 프로세스의 필수적인 부분으로 Azure Marketplace를 통해 Redis Labs 소프트웨어를 구독합니다. 이 고유한 통합은 Azure Portal 및 명령줄을 통한 관리, 보안 및 표준 규정 준수 및 통합 청구 환경을 포함하여 Azure에 포함된 서비스를 사용할 때의 모든 이점을 제공합니다.</p>
+
+
+  <p>Microsoft는 첫 번째 줄 지원을 처리하고 특정 지원 문제에 대해 Redis Labs와 협력하여 기술에 대한 심층 지식을 활용합니다. 이제 개발자 팀은 네이티브 제품으로서 이미 익숙한 보안, 구성 및 지원 도구를 활용하여 Redis Enterprise 기능을 Azure 개발 작업에 훨씬 쉽게 통합할 수 있습니다. 또한 개발자는 가동 중지 시간 또는 청구 관리 변경 없이 이러한 새로운 기능을 사용하도록 설정할 수 있습니다.</p>
+
+
+  <p>Redis Labs와의 관계를 확장하고 Redis 오픈 소스 커뮤니티와의 협업을 계속하게 되어 기쁩니다. 함께 Redis의 잠재력을 잠금 해제하고 기업이 개발자가 좋아하는 도구를 사용하여 이전보다 응답성이 높고 확장 가능한 애플리케이션을 빌드할 수 있도록 합니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>Redis Labs 파트너십에 대한 자세한 내용은 Redis Labs CEO Ofer Bengal의 <a href="https://www.aka.ms/redisceoblog" target="_blank">블로그 게시물을</a> 참조하세요. 추가 제품 정보는 <a href="https://www.aka.ms/redisproductblog" target="_blank">Redis Labs 블로그</a>에서도 사용할 수 있습니다. 초기 발표는 <a href="https://events.redislabs.com/redisconf20/" target="_blank">RedisConf 2020 테이크 아웃</a>에서 이루어졌습니다. 이 새로운 제품에 대한 미리 보기는 올해 하반기에 제공될 예정입니다. 미리 보기를 사용할 수 있을 때 알림을 받도록 <a href="https://www.aka.ms/redispreviewsignup" target="_blank">등록</a>합니다.</p>

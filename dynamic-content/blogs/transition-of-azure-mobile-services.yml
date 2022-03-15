@@ -1,0 +1,120 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 929d802c50f28f6b67b32f0b07c53d6b173a3dca
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905283"
+Slug: transition-of-azure-mobile-services
+Title: Azure App Service로의 Azure Mobile Services 전환 발표
+Summary: >
+  Azure Mobile Services Azure App Service로 전환하고 있습니다.
+Content: >-
+  <p><em>이 서비스 공지는 Azure Mobile Services 실행하는 경우에만 영향을 줍니다.&nbsp;</em></p>
+
+
+  <p>Azure Mobile Services Azure App Service로 전환하고 있습니다.&nbsp; 작업이 필요하지&nbsp;는 않지만 관리 환경이 변경됩니다. 2016년 9월 1일 이전에 마이그레이션하거나 Azure가 마이그레이션될 때까지 기다릴 수 있습니다.&nbsp;</p>
+
+
+  <h2>자세한 내용</h2>
+
+
+  <p>지난 몇 년 동안 온-프레미스 SQL 서비스에 액세스하기 위한 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-hybrid-connection-get-started/">하이브리드 연결</a>, 스테이징 사이트 및 A/B 테스트를 허용하는 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/">스테이징 슬롯</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/">공동 배치된 웹 사이트</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-backup/">사이트 백업</a> 및 복원과 같은 Azure App Service &ndash; 기능에서 계획된 Azure Mobile Services 기능을 제공하라는 요청을 받았습니다.&nbsp; 여러 서비스에서 기능을 복제하는 대신 Azure App Service와 Mobile Services 통합했습니다.&nbsp;</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-value-prop-what-is/">Azure App Service</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-value-prop/">Azure Mobile Apps</a>에 대해 알아봅니다.</p>
+
+
+  <p>2015년 11월<a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-app-service-mobile-apps/">, Microsoft는 Azure Mobile Services Azure App Service Mobile Apps</a>로 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-migrating-from-mobile-services/">원클릭 마이그레이션과 함께 Azure App Service Mobile Apps</a>를 출시했습니다.&nbsp; <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-value-prop-migration-from-mobile-services/">Mobile Services Azure App Service의 이점에</a> 대해 알아볼 수 있습니다. 서비스 통합의 결과로 Azure Mobile Services 실행하는 모든 고객을 Azure App Service로 마이그레이션합니다. 참조는 아래 타임라인을 확인하세요.</p>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+          <tr>
+              <td style="width: 120px;">
+              <p>2016년 5월</p>
+              </td>
+              <td style="width: 504px;">
+              <p>전송된 사용 중단 알림(현재 읽고 있는 내용이지만 각 구독 소유자에게 보내는 서비스 전자 메일에서도 읽을 수 있음).</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 120px;">
+              <p>2016년 5월</p>
+              </td>
+              <td style="width: 504px;">
+              <p>새 고객은 더 이상 Azure Mobile Services 만들 수 없습니다. 기존 고객은 이미 모바일 서비스를 구성한 경우에도 새 사이트를 만들 수 있습니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 120px;">
+              <p>2016년 8월</p>
+              </td>
+              <td style="width: 504px;">
+              <p>새 Azure Mobile Service를 만들 수 없습니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 120px;">
+              <p>2016년 9월</p>
+              </td>
+              <td style="width: 504px;">
+              <p>무료 사이트부터 Mobile Services 사이트 마이그레이션을 시작합니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 120px;">
+              <p>2016년 12월</p>
+              </td>
+              <td style="width: 504px;">
+              <p>모든 무료 사이트가 마이그레이션됩니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="width: 120px;">2017년 5월</td>
+              <td style="width: 504px;">
+              <p>모든 사이트가 마이그레이션되고 서비스가 종료됩니다.</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>다음 두 가지 방법으로 이 알림을 활용할 수 있기를 바랍니다.</p>
+
+
+  <ul>
+      <li>
+      <p>테스트 또는 학습을 위한 무료 모바일 서비스를 만든 경우 테스트가 완료된 후 모바일 사이트에서 트래픽을 받지 않습니다. 더 이상 사용하지 않는 경우 모바일 서비스를 삭제하여 도움을 줄 수 있습니다. 테스트에 모바일 서비스를 계속 사용하는 경우 편의 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-migrating-from-mobile-services/">상 모바일 서비스를 Azure App Service로 마이그레이션</a> 하세요.</p>
+      </li>
+      <li>
+      <p>서비스 변경은 프로덕션 사이트에 특히 중요한 사항임을 알고 있습니다. Azure App Services로 마이그레이션해도 도메인 이름이나 모바일 사이트의 기본 코드 또는 데이터베이스는 변경되지 않습니다. 마이그레이션과 관련된 최소 가동 중지 시간이 있습니다(일반적으로 몇 초 미만). 프로덕션 사이트를 실행하는 경우 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-migrating-from-mobile-services/">마이그레이션 프로세스에 대해 읽어 보세요</a>.</p>
+
+      <ul>
+          <li>
+          <p>테스트 사이트(대체 지역에 있는 기존 사이트의 복제일 수 있음)를 사용하여 마이그레이션을 테스트합니다.</p>
+          </li>
+          <li>
+          <p>편리한 시간에 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-migrating-from-mobile-services/">사이트를 마이그레이션</a>합니다.</p>
+          </li>
+      </ul>
+      </li>
+      <li>
+      <p>2016년 9월 1일에 아직 마이그레이션하지 않은 사이트 마이그레이션을 시작합니다. &nbsp;마이그레이션이 발생하는 시기를 제어하려면 2016년 9월 1일까지 마이그레이션을 완료할 계획입니다.</p>
+      </li>
+      <li>
+      <p>유료 모바일 서비스가 있는 경우 2017년 5월 1일까지 사이트를 마이그레이션하지 않습니다.&nbsp; Azure 클래식 포털 모바일 서비스&quot; 마이그레이션 단추를 사용하여 &quot;일정에 따라 마이그레이션하는 것이 좋습니다.</p>
+      </li>
+  </ul>
+
+
+  <p>도움이 필요한 경우 도움을 받으세요.&nbsp; <a href="https://social.msdn.microsoft.com/Forums/en-US/home?forum=azuremobile&amp;filter=alltypes&amp;sort=lastpostdesc">Azure Community 포럼</a>에 메시지를 게시하세요.&nbsp; <a href="https://stackoverflow.com/questions/tagged/azure-mobile-services">우리는 또한 스택 오버플로</a>와 <a href="https://twitter.com/azureMobile">트위터를 듣습니다</a>.</p>
+
+
+  <p>또한 Azure App Service에서 제공하는 추가 기능을 검색할 수 있기를 바랍니다.</p>
+
+
+  <p>감사합니다.</p>
+
+
+  <p>Azure Mobile 팀</p>

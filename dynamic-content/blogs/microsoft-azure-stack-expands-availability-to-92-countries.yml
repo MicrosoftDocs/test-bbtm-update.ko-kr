@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0984a9d5df5d04e642e1825bcb001f6ade3c6f61
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905441"
+Slug: microsoft-azure-stack-expands-availability-to-92-countries
+Title: Microsoft Azure Stack은 92개 국가/지역으로 가용성을 확장합니다.
+Summary: 오늘 초, Azure IaaS에서 Microsoft Azure Stack의 공간을 총 92개 국가/지역으로 확장하는 등 몇 가지 흥미로운 업데이트를 발표했습니다. 새 Azure로의 첫 주...
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/91387d80-0131-4c5b-b66d-e31ca536604c.png"><img alt="Azure Stack Geo Availability" border="0" height="1052" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5af02977-688c-4248-a022-816c9cd35364.png" style="border: 0px currentColor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Stack 지역 가용성" width="1979"></a></p>
+
+
+  <p>오늘 초, Azure IaaS에서 Microsoft Azure <a href="https://azure.microsoft.com/en-us/overview/azure-stack/" target="_blank">Stack</a>의 공간을 총 92개 국가/지역으로 확장하는 등 몇 가지 흥미로운 업데이트를 <a href="https://azure.microsoft.com/en-us/blog/why-you-should-bet-on-azure-for-your-infrastructure-needs-today-and-in-the-future/" target="_blank">발표</a>했습니다. 새로운 Azure Stack 마케팅 리더로서 첫 주에 Azure Stack 팀과 하드웨어 파트너가 이 작업을 수행하기 위해 수행한 훌륭한 작업을 매우 자랑스럽게 생각합니다.</p>
+
+
+  <p>진정한 하이브리드 클라우드에 대한 고객의 관심과 수요를 충족하기 위한 이러한 투자와 노력에 대해 매우 기쁘게 생각합니다. Microsoft는 고객이 구상한 놀라운 사용 사례와 인텔리전트 에지 시나리오, DevOps 또는 정책 요구 사항을 충족하는 솔루션과 같이 Azure와 Azure Stack을 함께 활용하는 파트너가 구축한 솔루션을 보고 있습니다.</p>
+
+
+  <p>Ignite에서는 작년에 46개 국가/지역에서 Azure Stack을 시작했으며, 그 이후 고객 수요를 고려하여 하드웨어 파트너와 협력하여 Azure Stack이 현재 지원하는 국가/지역 수를 두 배로 증가시켰습니다.</p>
+
+
+  <p>출시 이후 고객 및 파트너로부터 Azure Stack을 사용하는 방법과 Azure 및 Azure Stack이 진정한 분산 및 하이브리드 환경에서 비즈니스 및 IT 환경에 가져다 주는 가치에 대한 훌륭한 이야기를 들었습니다. 예를 들어 Azure Stack은 선도적인 통신 서비스 공급자인 <a href="https://customers.microsoft.com/en-us/story/binbox-professional-service-azurestack-romania" target="_blank">루마니아&rsquo; BinBox</a>가 서비스를 확장하여 경쟁이 치열한 시장에서 눈에 띄는 권한을 부여합니다.</p>
+
+
+  <p><em>&ldquo;포트폴리오에 Microsoft Azure Stack 서비스를 포함하면 DevOps 도구, 진정한 하이브리드 클라우드 제품, 비즈니스 인텔리전스 및 AI와 같은 Azure 서비스에 대한 고객 액세스, 원하는 고객을 위한 완전 관리형 서비스에 이르기까지 다양한 방법으로 가치 제안을 향상시킵니다. Microsoft Azure  스택은 퍼블릭 클라우드를 이용하려 했지만 데이터 위치 문제로 인해 보류 중이었던 고객을 데려올 것입니다. 실제로 파이프라인에는 이미 Azure Stack&rdquo; 이전을 대상으로 할 수 없었던 약 60명의 고객이 포함되어 있다고&rsquo;</em> <strong>BinBox의 CEO Tiberiu Croitoru</strong>는 말했습니다.</p>
+
+
+  <p>또한 고객이 비즈니스 요구 사항을 탐색할 수 있도록 에코시스템 파트너와 협업하고 있습니다. 파트너의 Azure Stack에 대한 흥분에 대해 계속 읽어보세요.</p>
+
+
+  <p><em>&ldquo;Accenture와 Microsoft 간의 합작 투자인 Avanade는 Azure Stack을 완전 관리형 서비스로 제공하므로 고객은 비즈니스에 집중할 수 있습니다. 리치 스턴(Rich Stern), 이그제큐티브, 글로벌 시장 단위 및 클라우드,&rdquo; 아바나데(Avanade)는 Microsoft와 협력하여 범위를 전 세계 더 넓은 지역으로 확장하게 되어 매우 기쁩니다</em>.<strong></strong></p>
+
+
+  <p><em>&ldquo;Cisco 통합 컴퓨팅 시스템은 전 세계 60,000명 이상의 고객을 보유하고 있으며 전 세계 서비스 공급자를 선도하고 있습니다. Microsoft와 파트너십을 맺고 선도적인 Nexus 기반 네트워킹 기능을 활용하여 EMEA(예: Binbox), 북미 및 아시아 태평양 지역의 광범위한 고객 위치에 Azure Stack을 설치했습니다. 이제 Microsoft Azure Stack과 함께 배포된 하이브리드 클라우드 솔루션의 이점이 필요한 확장된 대상에게 Microsoft Azure Stack&rdquo;용 Cisco 통합 시스템을 사용할 수 있게 되어 기쁘게 생각합니다</em><strong>.</strong></p>
+
+
+  <p><em>&ldquo;전 세계 기업은 성장하고 끊임없이 진화하는 비즈니스 요구 사항을 충족하기 위해 완전한 하이브리드 솔루션을 요구하고 있습니다. 최신 HPE ProLiant for Microsoft Azure Stack(Gen 10) 솔루션을 통해 전 세계 고객이 IT 구현을 간소화하고 Software-Defined 온-프레미스&rdquo;로 제공되는 클라우드 운영 모델과 관련된 혜택을 누릴 수 있습니다</em>.<strong></strong></p>
+
+
+  <p><em>&ldquo;Lenovo는 성능에 초점을 맞춘 솔루션에 전념하고 있습니다. Microsoft가 전 세계에 걸쳐 Azure Stack의 가용성을 계속 확장함에 따라, 우리는 이러한 지역의 많은 지역에서&rdquo; 고유한 업계 최고의 ThinkAgile SX 제품 및 서비스를 통해 이를 계속 지원할 것이라고</em> <strong>EMEA의 비즈니스 단위 담당 전무 이사 Per Overgaard</strong>는 말했습니다. <em>&ldquo;고객은 Azure 퍼블릭 클라우드의 단순성과 lenovo&#39;Microsoft Azure Stack용 ThinkAgile SX의 안정성을 경험하게 됩니다.</em></p>
+
+
+  <p>몇 주 전, Natalia Mackevicius는 <a href="https://azure.microsoft.com/en-us/blog/new-azure-stack-developer-features-to-build-intelligent-hybrid-applications/" target="_blank">Azure Stack 개발자 기능을 위한 Microsoft Build 2018에서 발표한</a> 내용과 지난 6개월 동안의 혁신에 대한 요약을 공유했습니다.</p>
+
+
+  <p>앞으로 Azure Stack을 통해 고객에게 새로운 하이브리드 클라우드 시나리오를 제공하고 이전보다 훨씬 더 빠르게 비즈니스 가치를 실현할 수 있도록 함으로써 Azure를 보완하는 방법에 대해 매우 기쁘게 생각합니다.</p>
+
+
+  <p>마지막으로, 파트너의 경우 <a href="https://www.microsoft.com/en-us/CloudandHosting/microsoft-inspire.aspx" target="_blank">Microsoft Inspire 2018</a> 에서 에코시스템 파트너가 Microsoft <a href="https://myinspire.microsoft.com/sessions/7c95658e-ca6b-4e81-afae-4c0a0d2b735d?source=sessions" target="_blank">하이브리드 클라우드 기회를</a> 활용하는 방법을 공유할 수 있기를 바랍니다.</p>
+
+
+  <p>Azure Stack을 사용할 수 있는 국가/지역의 전체 목록은 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/how-to-buy/" target="_blank">Azure Stack</a> 웹 페이지를 방문하세요. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/partners/" target="_blank">파트너가 지원하는 국가/지역 목록을</a> 참조하고 선호하는 파트너&rsquo; 로고를 클릭합니다.</p>

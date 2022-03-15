@@ -1,0 +1,47 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bd478e56c31f1875f272d39b818a427a2a7b63bc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912151"
+Slug: azure-app-service-improves-node-js-and-php-developer-experience
+Title: Azure App Service는 Node.js 및 PHP 개발자 환경을 개선합니다.
+Summary: Node.js 및 PHP 스택에 대한 네이티브 Linux 지원을 소개하는 미리 보기를 출시하게 되어 기쁩니다.
+Content: >-
+  <p>2015년 3월, Azure App Service는 개발자가 클라우드에서 멋진 작업을 더 쉽게 수행할 수 있도록 하기 위해 일반 공급에 들어갔습니다. 웹 및 모바일 개발자를 위한 이 PaaS(Platform as a Service)는 350K 이상의 활성 고객과 Azure에서 호스팅되는 백만 개 이상의 활성 애플리케이션으로 빠르게 성장했습니다. .NET 개발자를 위한 뛰어난 환경 외에도 PHP, Node.js, Java 및 Python 스택뿐만 아니라 다양한 오픈 소스 웹 제품에 대한 지원도 포함됩니다. 현재는&rsquo; Node.js 및 PHP 스택에 대한 네이티브 Linux 지원을 소개하는 미리 보기를 릴리스했습니다.</p>
+
+
+  <p>App Service는 웹 및 모바일 개발자에게 웹 서버 및 운영 체제의 일상적인 관리 노력을 없애주는 완전히 관리되는 환경을 제공합니다. 이러한 환경을 제공하기 위해 Windows Server를 사용하여 Microsofts&rsquo; 고유의 차별화 요인을 구축했습니다. PHP 및 Node.js 또한 출시 이후 App Service에서 지원되었지만,&rsquo; 일부 개발자는 NPM 또는 web.config 파일 및 페이지 렌더링 파이프라인의 경로가 너무 긴&quot; 오류와 같은 &quot;운영 체제 호환성 단점을 처리해야 한다는 것을 <a href="https://feedback.azure.com/forums/169385-web-apps-formerly-websites/suggestions/8362119-support-linux-for-paas">크고 분명하게 들었습니다</a>. 이제 미리 보기를 통해 기본 플랫폼으로 Windows 대신 Linux를 선택할 수 있으므로 웹 애플리케이션이 Windows 대신 Linux에서 기본적으로 실행되므로 .htaccess 파일로 직접 작업하거나 수정된 확장 또는 코드를 사용하지 않아도 됩니다&nbsp;. 여기에는 배포 슬롯, 사용자 지정 도메인, SSL 구성, 지속적인 배포 및 수평 및 수직 크기 조정을 사용하는 간소화된 배포 기능이 포함됩니다.</p>
+
+
+  <p>App Service는 고객이 CMS(콘텐츠 관리 시스템)를 실행하는 <a href="https://azure.microsoft.com/en-us/solutions/digital-marketing/">디지털 마케팅 솔루션</a> 에 많이 사용됩니다. 실제로 WordPress는 이 사용량의 50% 이상을 차지하며 또 다른 40%는 Drupal 및 Joomla와 같은&#39;다른 LAMP 스택 CMS입니다. 이러한 모든 Windows 실행하려면 약간의 조정이 필요합니다. 경우에 따라 플러그 인 및 확장은 배포를 차단하는 지원되지 않습니다. 이 미리 보기를 통해 Apache/Linux에서 실행되도록 WordPress의 마켓플레이스 인스턴스를 업데이트했습니다. Drupal 및 Joomla에 대한 업데이트가 있을 예정입니다! 향후</p>
+
+
+  <h2>App Service의 데이터 솔루션</h2>
+
+
+  <p>또한 웹 개발자와 긴밀히 협력하여 데이터 솔루션과 관련된 App Service의 환경을 개선하고 있습니다. 지난 몇 개월 동안&rsquo; 웹 개발자를 위한 데이터 솔루션 포트폴리오에는 <a href="https://blogs.msdn.microsoft.com/sqlphp/2016/07/11/microsoft-drivers-4-0-for-php-for-sql-server-with-php-7-0-support-released/">Azure SQL 대한 PHP 클라이언트 드라이버</a>, 새로운 버전의 <a href="https://blogs.technet.microsoft.com/dataplatforminsider/2016/07/14/microsoft-jdbc-driver-6-0-for-sql-server-is-now-released/">JDBC 드라이버</a>, <a href="https://blogs.technet.microsoft.com/dataplatforminsider/2016/01/11/preview-the-newest-odbc-sql-server-driver-for-windows-and-linux/">ODBC 드라이버</a>의 Linux에 대한 지원 확장, DocumentDB의 MongoDB <a href="https://azure.microsoft.com/en-us/documentation/articles/documentdb-protocol-mongodb/">프로토콜 지원</a>, Linux SQL Server 드라이버의 새로운 PHP의 초기 <a href="https://blogs.msdn.microsoft.com/sqlphp/2016/08/09/early-technical-preview-of-microsoft-drivers-4-0-3-for-php-on-linux-for-sql-server-released/">기술 미리 보기</a> 등 웹 개발자를 위한 데이터 솔루션 포트폴리오에서 많은 시간이 소요되었습니다. 웹 개발자가 언어, 스택 및 플랫폼에 관계없이 Azure에서 뛰어난 애플리케이션을 쉽게 출시할 수 있도록 더 많은 데이터 솔루션에 대해 계속 노력할 것입니다.</p>
+
+
+  <p>Azure는 다음을 포함하여 MySQL을 호스팅하기 위한 다양한 솔루션을 제공합니다.</p>
+
+
+  <ul>
+      <li>ClearDB 데이터베이스 및 <a href="https://azure.microsoft.com/en-us/marketplace/partners/cleardb-clusters/cluster/">ClearDB 클러스터</a>를 비롯한 <a href="https://azure.microsoft.com/en-us/marketplace/partners/cleardb/databases/">ClearDB</a> 관리형 MySQL 솔루션</li>
+      <li><a href="https://azure.microsoft.com/en-us/marketplace/partners/bitnami/mysql/">Bitnami</a> 및 MariaDB와 같은 파트너의 <a href="https://azure.microsoft.com/en-us/marketplace/?term=mysql">MySQL</a>, <a href="https://azure.microsoft.com/en-us/marketplace/?term=mariadb">MariaDB</a> 및 기타 MySQL 호환 솔루션에 대한 Marketplace 솔루션</li>
+      <li>VM에 배포하는 COMMUNITY 기여<a href="https://azure.microsoft.com/en-us/documentation/templates/?term=mysql+cluster+centos+-lamp+-website">한 ARM(Azure Resource Manager) 템플릿</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-classic-mysql-on-opensuse/">Linux</a> 또는 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-classic-mysql-2008r2/">Windows OS</a>의 가상 머신에서 MySQL</li>
+  </ul>
+
+
+  <p>8월에는 App Service <a href="https://azure.microsoft.com/en-us/blog/mysql-in-app-preview-app-service/">에서 MySQL</a> 개발/테스트 스택을 빠르게 회전하기 위한 MySQL 인앱이 발표되었습니다. Linux 미리 보기의 일부로 유사한 MySQL 개발/테스트 기능이 있습니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>Linux의 App Service 미리 보기는 현재 모든 Azure 고객에게 제공됩니다. 시작하려면 무료 평가판에 로그인하거나 시작하고 App Service 인스턴스를 만듭니다. <a href="https://aka.ms/webapp-linux">App Service 설명서</a>에서 사용할 수 있는 자세한 정보입니다.</p>
+
+
+  <p>이 미리 보기에 대한 피드백을 듣고 싶습니다. <a href="https://feedback.azure.com/forums/169385-web-apps-formerly-websites">피드백 페이지를</a> 방문하여 팀의 손에 맡기세요.</p>

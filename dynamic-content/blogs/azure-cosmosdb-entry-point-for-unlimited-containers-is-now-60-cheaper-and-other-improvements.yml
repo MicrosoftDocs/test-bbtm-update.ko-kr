@@ -1,0 +1,34 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c33c12943adeaede38bb54497bfd9920f65cf467
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906232"
+Slug: azure-cosmosdb-entry-point-for-unlimited-containers-is-now-60-cheaper-and-other-improvements
+Title: 'Azure #CosmosDB: 무제한 컨테이너의 진입점은 이제 60% 저렴하고 기타 개선 사항'
+Summary: 'Azure Cosmos DB는 Microsoft의 전역적으로 분산되고 수평 분할된 다중 모델 데이터베이스 서비스입니다. 이 서비스는 고객이 여러 지리적 지역에 걸쳐 처리량 및 스토리지를 탄력적이고 독립적으로 확장할 수 있도록 설계되었습니다. '
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/725b2c61-2db3-4f83-8d81-e3b527bacf89.png"><img alt="image" border="0" height="174" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a27e6784-9848-4a28-9ea8-dd016ffccdaa.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p>Azure Cosmos DB는 <a href="https://aka.ms/acdbglobaldist">전역적으로 분산된</a> 수평 분할된 다중 모델 데이터베이스 서비스인 Microsofts&rsquo;입니다. 이 서비스는 고객이 여러 지리적 지역에 걸쳐 처리량 및 스토리지를 탄력적이고 독립적으로 확장할 수 있도록 설계되었습니다. Azure Cosmos DB는 99번째 백분위수, 99.999% 고가용성, 예측 가능한 처리량 및 잘 정의된 여러 <a href="https://aka.ms/acdbconsistency">일관성 모델</a>에서 짧은 대기 시간을 보장합니다. Azure Cosmos DB는 오늘날 업계 최초로 전 세계적으로 분산된 데이터베이스 서비스로, 고객이 가장 중요하게 사용하는 4가지 차원인 처리량, 99번째 백분위수의 대기 시간, 가용성 및 일관성을 포괄하는 포괄적인 <a href="https://azure.microsoft.com/en-us/support/legal/sla/cosmos-db/">SLA</a>(서비스 수준 계약)를 제공합니다. 클라우드 서비스로서 다중 테넌트, 수평 확장성 및 글로벌 배포를 염두에 두고 Azure Cosmos DB를 신중하게 설계하고 엔지니어링했습니다.</p>
+
+
+  <p>방금 몇 가지 대망의 변경 내용을 출시했으며 다음과 같이 공유하려고 했습니다.</p>
+
+
+  <ul>
+   <li><strong>무제한 컬렉션/컨테이너의 진입점은 이제 60% 저렴합니다</strong>. 2월에는&rsquo; 무제한 컨테이너의 진입점을 낮추어 <a href="https://azure.microsoft.com/en-us/blog/azure-documentdb-entry-point-for-partitioned-collections-now-75-cheaper/">75% 저렴</a>하게 만듭니다. 우리는 우리의 서비스에 개선을 계속하고 오늘 우리는 무제한 컨테이너가 이제 이전보다 60 % 저렴한 진입점을 가지고 있음을 발표하게되어 기쁘게 생각합니다. 최소 2,500RU/초를 프로비전하는 대신 1,000RU/초로 무제한 컬렉션을 프로비전하고 100RU/초 단위로 확장할 수 있습니다. 무제한 컨테이너(컬렉션)를 사용하면 스토리지 사용량 제한 없이 프로비저닝을 최대 1,000RU/초에서 수백만 RU/초로 동적으로 확장할 수 있습니다.</li>
+   <li><strong>이제 엄청난 양의 처리량을 프로비전하는 것은 완전히 마찰이 없습니다</strong>. Azure Cosmos DB&rsquo; 설계를 통해 개발자는 SLA를 유지하면서 여러 지리적 지역에서 처리량을 탄력적으로 확장할 수 있습니다. 이 시스템은 지역 간에 처리량을 확장하도록 설계되었으며 프로비전된 처리량에 대한 변경 내용이 즉시 적용되도록 합니다. Azure Cosmos DB에서 사용자와 중요 업무용 워크로드의 권한을 부여하기 위해 이제 지원 요청을 제기하지 않고 컨테이너당 최대 1,000,000RU/초를 프로비전할 수 있습니다. 이를 통해 고객은 여러 지리적 지역에 걸쳐 애플리케이션 트래픽 패턴에 따라 처리량을 탄력적으로 확장하여 지리와 시간에 따라 달라지는 변동 워크로드를 지원할 수 있습니다. 시스템은 Azure Cosmos DB 컨테이너의 가용성, 일관성, 대기 시간 또는 처리량을 손상시키지 않고 파티션을 투명하게 관리합니다.</li>
+   <li><strong>Azure Cosmos DB는 이제 프랑스에서 Microsoft Azure 일부로 사용할 수 있습니다</strong>. Azure Cosmos DB는 전 세계의 중요 업무용 애플리케이션, 서비스 및 고객 워크로드를 구동하는 Azure의 기본 서비스입니다. Azure Cosmos DB는 <a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-preview-with-azure-availability-zones-now-open-in-france/">프랑스의 Microsoft Azure 미리 보기의</a> 일부이며, 이제 전 세계 모든 고객, 파트너 및 ISV가 이러한 최신 Azure 지역에서 Azure Cosmos DB에 대해 서비스를 배포하고 워크로드를 테스트할 수 있는 기회를 제공합니다. 프랑스의 새로운 Azure 지역은 Azure에 있는 42개 지역의 글로벌 포트폴리오에 속합니다. 새 지역의 Azure Cosmos DB는 프랑스의 비즈니스 및 조직의 업무상 중요한 애플리케이션 및 워크로드를 지원하기 위해 업계 최고의 포괄적인 SLA와 동일한 엔터프라이즈급 안정성 및 성능을 제공할 것입니다. Azure France 미리 보기에 등록하려면 <a href="https://formulaires.microsoft.fr/page/UHUZDE-AzurePreview/">여기를 방문하세요</a>.</li>
+  </ul>
+
+
+  <h2>Azure Cosmos DB는 모든 최신 앱의 기본 데이터 요구 사항을 해결합니다.</h2>
+
+
+  <p>Azure Cosmos DB는 미래의 데이터베이스입니다 . 이렇게 하면 전 세계 사용자가 있는 곳과 가까운 곳에서 데이터를 사용할 수 있습니다. 선택한 API 및 데이터 모델을 사용하여 행성 규모 앱을 쉽게 빌드하기 위한 전역적으로 분산된 다중 모델 데이터베이스 서비스입니다. 지금 <a href="https://azure.microsoft.com/try/cosmosdb/">무료로 Azure Cosmos DB를 사용해 볼</a> 수 있으며, 등록 또는 신용 카드가 필요하지 않습니다. 도움이 필요하거나 질문이나 피드백이 있는 경우 <a href="https://stackoverflow.com/questions/tagged/azure-cosmosdb">Stack Overflow의 개발자 포럼에</a> 문의하세요. Twitter <a href="https://twitter.com/search?q=%23cosmosDB&amp;src=typd">#CosmosDB</a><a href="https://twitter.com/AzureCosmosDB">@AzureCosmosDB</a>에서 최신 Azure Cosmos DB 뉴스 및 기능을 최신 상태로 유지하세요.</p>
+
+
+  <p>-&nbsp;&nbsp;&nbsp;Azure Cosmos DB의 친구</p>

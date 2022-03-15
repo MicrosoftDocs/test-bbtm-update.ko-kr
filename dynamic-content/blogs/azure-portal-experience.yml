@@ -1,0 +1,231 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6f7dccf31c964992d462f3d51ddc2885063ae546
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905616"
+Slug: azure-portal-experience
+Title: Azure Portal 환경을 최대한 활용
+Summary: 안녕하세요, Azure 친구! Azure 리소스를 관리하는 경우 Azure Portal에 이미 익숙할 것입니다. 이 블로그 게시물에서 몇 가지 경험 및 기능을 강조 표시하고 싶습니다.
+Content: >-
+  <p>안녕하세요, Azure 친구! Azure 리소스를 관리하는 경우 Azure Portal에 이미 익숙할 것입니다&rsquo;. 이 블로그 게시물에서 Id&rsquo;는 Azure Portal 환경을 최대한 활용하기 위해 활용할 수 있는 몇 가지 환경과 기능을 강조 표시합니다.</p>
+
+
+  <h2>필요한 항목을 빠르게 찾을 수 있습니다.</h2>
+
+
+  <p>빠르고 편리한 방법으로 리소스에 액세스하는 것이 <strong>생산성</strong>의 핵심입니다. Azure Portal은 항상 위쪽 탐색 모음에 있는 <strong>검색</strong> 기능을 제공하므로 리소스, 리소스 그룹, 사용 가능한 서비스 및 공용 Azure 설명서에서 검색할 수 있습니다.</p>
+
+
+  <p>검색 상자가 포커스를 받으면 <strong>최근에 사용한</strong> 리소스에 대한 액세스 권한을 즉시 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cd87a4ba-42fa-4d78-80d7-514b16e724d1.png"><img alt="Search-Recents" border="0" height="547" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/31e3a943-5a12-411a-bed5-6e332754fa76.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Search-Recents" width="843"></a></p>
+
+
+  <p>검색 문자열을 입력하면 리소스 목록(예: 가상 머신, 데이터베이스, 앱 서비스 등), 리소스 그룹, Azure에서 사용할 수 있는 서비스 및 설명서에서 <strong>일치 </strong>항목을 검색합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d03c4851-1cc3-42bd-b7e2-d4456340d83f.png"><img alt="Search-Results" border="0" height="1098" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/122086f8-717c-41df-96f6-8bac6ec0c043.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="검색 결과" width="992"></a>&nbsp;</p>
+
+
+  <p>위의 검색은 <strong>여러 구독 </strong>에서 수행됩니다(이 경우 모든 34개 구독에서). 구성 <strong>가능한 </strong>설정이므로 검색 범위를 완전히 제어할 수 있습니다.</p>
+
+
+  <p>검색 상자는 항상 <strong>위쪽 탐색 모음 </strong> 에 있습니다. 또한 키 조합 <i>&ldquo;G&rdquo;&rdquo; + &ldquo;/</i>를 사용하여 액세스하고 키보드를 사용하여 관심 지점으로 이동할 수도 <strong>있습니다</strong>!</p>
+
+
+  <h2>리소스 찾아보기</h2>
+
+
+  <p>리소스를 <strong>찾아보 </strong>려는 경우가 많습니다. 실제로 포털을 사용하는 대부분의 고객에게 가장 일반적인 <strong>진입점 </strong>입니다. 모든 리소스를 탐색하거나 유형별로 리소스 범위를 지정할 수 있습니다(예: 모든 가상 머신, 앱 서비스 등). 두 경우 모두 목록을 계속 범위 지정하고 중요한 리소스에 <strong>집중하는</strong> 데 사용할 수 있는 추가 <strong>필터</strong>가 많이 있습니다. 이러한 환경은 여러 구독 및 <strong>위치에</strong> 걸쳐 리소스<strong>를 </strong>표시하므로 <strong>한 화면에서</strong> 관심 있는 <strong>모든 </strong>것을 얻을 수 있습니다. 아래 이미지는 모든 위치에서 내 34개 구독의 리소스를 표시하는 단일 목록을 보여 줍니다.&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b22f8e03-74a3-4e50-9614-9f68c97e38b4.png"><img alt="Browse - all resources" border="0" height="1151" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/71b43de9-d6fb-46e7-b5e7-d090b3971dab.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="찾아보기 - 모든 리소스" width="2045"></a></p>
+
+
+  <h2>여러 리소스에 대해 작업</h2>
+
+
+  <p>한 번에 여러 가상 머신을 시작하시겠습니까? 리소스 목록은 <strong>하나</strong> 또는 <strong>여러 리소스</strong>에 <strong>대해 작업</strong>하는 기능을 제공합니다.</p>
+
+
+  <p>아래 애니메이션은 다음과 같은 시나리오를 보여 줍니다. 몇 가지 테스트 VM을 만들었으며 일부 테스트를 실행하기 시작해야 합니다. 단일 및 빠른 상호 작용으로 시작할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4eab68a2-06cd-431d-895d-9b33234075a2.gif"><img alt="Browse - bulk commanding" border="0" height="1149" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb69c54c-9eed-49b7-b933-c83d860bd65f.gif" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="찾아보기 - 대량 명령" width="2042"></a></p>
+
+
+  <h2>태그를 사용하여 리소스 구성</h2>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-using-tags">태그를</a> 사용하면 나중에 해당 <strong>리소스를</strong> <strong>논리적</strong>으로 <strong>구성하는 </strong>데 사용할 수 있는 정보로 리소스에 주석을 달 수 있습니다. 태그는 <strong>청구 데이터에 </strong>도 표시되므로 <strong>리소스 및 비용 관리</strong> 모두에 사용할 수 있습니다. 태그 지정 환경을 개선하고 있으며, 이제 아래 이미지와 같이 단일 상호 작용을 통해 <strong>여러</strong> 리소스에 태그를 지정하거나 태그를 해제할 수 있습니다.</p>
+
+
+  <h3><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/85413f16-320f-4a11-964a-9c7124dd9b47.gif"><img alt="Browse - Tags" height="1149" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/78dedb4c-053c-4dc2-814e-3e37d4f51f0a.gif" style="display: inline" title="찾아보기 - 태그" width="2042"></a></h3>
+
+
+  <h2>일관된 환경</h2>
+
+
+  <p>Azure는 다양한 서비스를 제공하며 모든 항목에 대한 기본 관리를 수행하는 방법에 대한 기본 사항을 배우는 것은 무섭습니다. Azure Portal은 기본 <strong>관리 </strong>작업을 수행하기 위해 이 게시물의 시작 부분에서 다루는 리소스 인스턴스를 찾는 방법을 다루는 <strong>일관된</strong> <strong>환경을</strong> 제공합니다. 아래 이미지는 예를 들어 Virtual Machine 개요 화면을 사용하는 몇 가지 <strong>일반적인 패턴을 </strong>강조 표시합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5b734953-b80f-453f-a0fb-b4434542af14.png"><img alt="Consistent Management with annotations" border="0" height="1048" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9dd01f62-978c-4485-b76f-61f35e47a43e.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="주석을 사용하여 일관된 관리" width="2139"></a></p>
+
+
+  <p>대부분의 리소스에 대한 관리 방문 페이지에는 <strong>동일한 구조</strong> 와 기본 요소가 포함되어 있으므로 <strong>몇 가지 패턴을</strong> 알게 되면 대부분의 포털에서 적용할 수 있습니다. 아래 이미지는 App Service, Virtual Machine 및 SQL 대한 개요 페이지를 보여 줍니다. 모든 화면은 이전 이미지에 도입된 구조를 따릅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8310bf2d-f4f5-4ecb-90e7-611279384e9b.png"><img alt="Consistent Management - services" border="0" height="1116" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e99a0004-f806-402b-a666-141f51b343dd.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="일관성 관리 - 서비스" width="1843"></a></p>
+
+
+  <h2>직접 만들기</h2>
+
+
+  <p>Microsoft는 모든 사용자가 다르게 작동한다는 것을 알고 있으며, 사용자가 작업하는 방식에 맞게 포털 <strong>을 사용자 지정하는</strong> 여러 가지 방법을 제공하고 사용자에게 중요한 사항을 제공합니다. 다음은 사용자 지정할 수 있는 몇 가지 사항입니다.</p>
+
+
+  <ul>
+   <li>왼쪽 탐색 모음의 항목</li>
+   <li>테마(4가지 테마 지원)</li>
+   <li>언어 및 로캘(18개 언어 지원)</li>
+   <li>찾아보기 목록의 열(모든 리소스, Virtual Machines, App Services 등)</li>
+   <li>대시보드(다음 섹션에서 자세히 설명)</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5b66f6a1-0f49-4ace-826a-c7f0e1e7f970.gif"><img alt="Customize" height="1149" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/daa3819d-db74-467b-a6bc-9ed15ff62415.gif" style="display: inline" title="사용자 지정" width="2042"></a></p>
+
+
+  <h2>사용자 지정 가능한 대시보드</h2>
+
+
+  <p>Azure Portal 대시보드는 <strong>직접 만들</strong> 수 있는 캔버스입니다. 완전히 <strong>사용자 지정할 수</strong> 있으며, 중요한 내용을 전면과 가운데로 가져오도록 변경할 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards" target="_blank">이 문서에</a> 설명된 대로 <strong>여러 대시보드를 만들고</strong> 동료와 <strong>공유할</strong> 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards" target="_blank">타일을 끌어서 놓</a>거나 <a href="https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards-create-programmatically" target="_blank">프로그래밍 방식으로</a> 대시보드를 업데이트할 수 있습니다. 아래 이미지는 Azure Portal에서 빌드할 수 있는 대시보드의 예를 보여 줍니다.</p>
+
+
+  <p><strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7eae04d7-1b93-407d-afeb-6453ff295026.png"><img alt="Dashboards" border="0" height="1151" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3923dd2-9ace-4fef-8df0-1e04fa997966.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="대시보드" width="2049"></a></strong></p>
+
+
+  <p>Azure Portal은 대시보드를 빌드하는 데 사용할 수 있는 다양한 <strong>타일</strong> 을 제공합니다. ID&rsquo;가 호출하려는 두 개의 타일은 <strong>ARM 데이터</strong> 및 <strong>ARM 작업</strong>입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/561cd0b8-8531-442b-8202-de0350325b19.png"><img alt="a893fb81-8626-44ee-88ff-4e056a9b4eef" border="0" height="356" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/17eb5e1b-f3ac-4694-919c-081e127837ce.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="a893fb81-8626-44ee-88ff-4e056a9b4eef" width="492"></a></p>
+
+
+  <p><strong>ARM 데이터를</strong> 사용하면 Azure Resource Manager에서 리소스의 <strong>데이터를</strong> 표시할 수 있습니다. 대시보드에 타일 인스턴스를 추가하고 리소스 URI를 가리키고 표시하려는 속성으로 이동합니다. <strong> ARM 작업은</strong> 비슷하지만 리소스에 대한 <strong>작업의</strong> 경우입니다.</p>
+
+
+  <p>아래 이미지에서 ARM 데이터 및 ARM 작업 타일은 VM에 대한 정보와 시작 및 중지를 위한 두 가지 명령을 표시하는 데 사용됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8c1dc989-941b-47de-abf3-3b72d5f77906.png"><img alt="Dashboards - ARM Tiles in use" border="0" height="1148" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/793f9a10-1fad-4393-9f6f-6ae447d14f49.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="대시보드 - 사용 중인 ARM 타일" width="2041"></a></p>
+
+
+  <p>Azure Resource Manager에 있는 경우 대시보드에 있을 수 있습니다.</p>
+
+
+  <h2>포털의 통합 콘솔 환경</h2>
+
+
+  <p>지점을 사용하여 계정을 관리하고 GUI를 클릭하거나 <a href="https://azure.microsoft.com/en-us/features/cloud-shell/">Cloud Shell</a> (Bash 또는 PowerShell)을 사용하여 명령줄 환경을 통해 관리할 수 있습니다. Cloud Shell은 클라우드에서 호스트되고 포털에 포함된 거의 모든 위치에서 액세스할 수 있는 인증된 브라우저 기반 셸 환경을 제공하며 항상 한 번의 클릭으로 가능합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb196cbb-4488-4265-b2da-151de074ff20.png"><img alt="Console" border="0" height="1152" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0c6fcc4-1a1d-4017-909d-5bcd5389a59c.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="콘솔" width="2046"></a></p>
+
+
+  <h2>Azure Resource Manager 템플릿의 기능 활용</h2>
+
+
+  <p>Azure 여정을 진행하면서 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates">Azure Resource Manager 템플릿</a>을 사용할 가능성이 매우 높습니다. 템플릿을 처음부터 <strong>만들</strong>거나 <a href="https://azure.microsoft.com/en-us/resources/templates/">Azure 빠른 시작 템플릿 갤러리</a>에서 사용할 수 있는 <strong>600개 이상의 템플릿</strong> <strong>중 하나를</strong> <strong>사용할</strong>/ 수 있습니다.</p>
+
+
+  <p>Azure Portal은 템플릿을 <strong>작성하고</strong> <strong>실행하는</strong> 데 유용한 <strong>환경을</strong> 제공합니다. 전역 검색 상자에서 사용자 지정 템플릿을 검색 &ldquo; 하여 <strong>템플릿</strong>&rdquo; 작성 환경을 빠르게 확인할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a3148ac9-5e2d-4920-b0aa-5299458deb0a.png"><img alt="Template - entry point" border="0" height="528" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b79d98a4-1762-429c-b85e-4922f9625fb9.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="템플릿 - 진입점" width="610"></a>&nbsp;</p>
+
+
+  <p>이 환경은 Azure 빠른 시작 템플릿 갤러리와 완전히 <strong>통합</strong> 되므로 갤러리에서 템플릿을 로드할 수 있습니다. 요구 사항에 맞는 템플릿을 찾으면 템플릿, 구문 색 지정 및 도우미의 전체 개요를 제공하는 <strong>템플릿 편집기</strong> 화면을 사용하여 템플릿을 <strong>편집</strong>하여 템플릿에 새 리소스 인스턴스를 쉽게 추가하거나 템플릿을 <strong>실행할 </strong>수 있습니다. 템플릿을 실행하려는 경우 포털은 데이터 입력 오류를 줄이기 위해 특수 필드와 유효성 검사가 포함된 데이터 <strong>입력 화면을 </strong>제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a2328f4-8244-479a-8b72-c64e25e33d8d.gif"><img alt="Custom template" height="1149" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8ece49f9-83da-45d8-bb38-747dec216d9f.gif" style="display: inline" title="사용자 지정 템플릿" width="2046"></a></p>
+
+
+  <p>앞서 설명한 것 외에도 포털은 고유한 템플릿을 저장하는 데 사용할 수 있는 템플릿 <strong>라이브러리 </strong>를 제공합니다.</p>
+
+
+  <p>또한 모든 리소스는 해당 리소스가 포함된 전체 리소스 그룹에 대해 CLI, PowerShell, .NET 및 Ruby에서 템플릿<strong>을 실행</strong><strong>하기 위한</strong> 모든 <strong>코드</strong>와 함께 Azure Resource Manager 템플릿을 제공하는 <strong>Automation 스크립트</strong>&rdquo; 옵션을 왼쪽 메뉴에 노출 &ldquo; 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d6a2a65a-be78-4deb-9f3f-82637e85117a.gif"><img alt="Custom template - automation options" border="0" height="1149" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0eaf7367-a0ce-4c6c-ad80-f23d79499303.gif" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="사용자 지정 템플릿 - 자동화 옵션" width="2046"></a></p>
+
+
+  <h2>Azure를 최대한 활용</h2>
+
+
+  <p>클라우드 애플리케이션을 빌드하는 것은 어려운 작업이며, 플랫폼을 최대한 활용하는 것은 훨씬 더 어렵습니다. <a href="https://azure.microsoft.com/en-us/services/advisor/">Azure Advisor</a> 는 비용, 가용성, 보안 및 성능 향상을 위한 <strong>권장 사항을</strong> 제공하여 Azure를 최대한 활용할 수 있도록 도와줍니다. Azure Advisor는 기본적으로 왼쪽 탐색 모음에서 사용할 수 있습니다. Azure Advisor에 도착하면 플랫폼이 애플리케이션 및 인프라를 최적화하는 데 도움이 되는 최상의 권장 사항을 제공하는 구독을 선택할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f02fb4cb-f420-4f89-8320-bbbeb883ff48.png"><img alt="Advisor" border="0" height="1041" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e361f1d3-b8f0-47bb-95bd-3859d9cfaa72.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="관리자" width="2041"></a></p>
+
+
+  <p>지금 Azure Advisor 사용을 시작하고 Azure를 최대한 활용하세요!</p>
+
+
+  <h2>Azure 리소스 모니터링</h2>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor">Azure Monitor</a>는 Microsoft Azure 대부분의 서비스에 대한 기본 수준 인프라 메트릭 및 로그를 제공합니다. 기본적으로 왼쪽 탐색 모음에서 사용할 수 있으므로 인프라 및 애플리케이션의 맨 위에 있는 것은 한 번의 클릭으로 가능합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/66e08c93-e6e2-4cac-bd37-6eb7a368a804.png"><img alt="Monitor" border="0" height="1077" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/760c8162-9fa8-43b8-abfd-e4cbb0f566c9.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="모니터" width="2047"></a></p>
+
+
+  <p>위의 Azure Monitor 화면은 일관성 관리 환경에&rdquo; 대해 &ldquo;논의할 때 이 블로그 게시물에서 이전에 소개한 것과 동일한 UX 패턴을 따릅니다. <a href="https://azure.microsoft.com/en-gb/blog/revamped-solutions-in-azure-for-application-and-infrastructure-monitoring/" target="_blank">Azure Monitor</a>의 최신 버전에 대해 자세히 알아보세요.</p>
+
+
+  <h2>클라우드 지출 최적화</h2>
+
+
+  <p>Azure Portal을 사용하면 <strong>요금이 청구</strong>되는 항목을 보고 <strong>이해할</strong> 수 없도록 항상 <strong>한 번 클릭</strong>할 수 있습니다. 기본 왼쪽 탐색 모음에는 <strong>Cost Management + 청구</strong> 화면으로 이동 &ldquo; 되는 항목이 있습니다&rdquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1bed02a0-4f74-40d7-8a24-96c7be0ce2e8.png"><img alt="Billing and Cost Management" border="0" height="1148" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/738e1825-7d4d-4e22-a191-749e228e7d85.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="청구 및 비용 관리" width="2047"></a></p>
+
+
+  <p><a href="https://aka.ms/costmanagement" target="_blank">Azure Cost Management</a>를 사용해 보세요. Wed&rsquo;는 여러분의 의견을 듣는 것을 좋아합니다.</p>
+
+
+  <h2>어디서나 Azure를 이용하세요!</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/features/azure-portal/mobile-app/">Azure 모바일 앱을 사용하면 Azure</a> 리소스 및 애플리케이션에 <strong>대한 정보를 유지하고</strong> <strong>연결</strong>하며 <strong>제어</strong>할 수 있습니다. <a href="https://azure.microsoft.com/en-us/blog/five-more-reasons-why-you-should-download-the-azure-mobile-app" target="_blank">Azure 모바일 앱</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c1bf05d3-d993-4cb7-b814-3c8002f69697.png"><img alt="Mobile" border="0" height="610" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8cb4775-b2c0-4736-b9a0-2d5507fc0d8c.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="모바일" width="343"></a></p>
+
+
+  <p>오늘 Azure 모바일 앱을 <strong>다운로드</strong>하고 어떻게 생각하는지 알려주세요!</p>
+
+
+  <h2>새 기능에 대한 조기 액세스</h2>
+
+
+  <p><a href="https://preview.portal.azure.com">Azure Portal 미리 보기</a>에서는 <strong>초기</strong> 단계에서 일부 기능을 배포하는 경우가 많습니다. 이러한 <strong>새로운 기능을</strong> <strong>사용</strong>하려면 <strong>미리 보기</strong> 스탬프를 사용하고 피드백이 해당 기능을 개선하는 데 도움이 될 것이라고 생각하는 내용을 알려주세요!</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8344e688-31eb-4484-bdfe-fa4ec925c431.png"><img alt="preview portal" border="0" height="258" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6825e341-1cfd-4578-88a7-db59a72d0faa.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="미리 보기 포털" width="921"></a></p>
+
+
+  <h2>이러한 채널을 통해 여러분의 의견과 생각을 공유해 주시기 바랍니다.</h2>
+
+
+  <p>Weve&rsquo;는 많은 항목을 통과했으며 여전히 Azure Portal에서 사용할 수 있는 모든 항목을 다루지 않았습니다! 팀은 항상 환경 개선에 집중하기 위해 열심히 일하고 있으며 <strong></strong> <strong>, 항상 피드백을</strong> 얻고<strong> 경험을 개선할 수</strong> 있는 방법을 배우고자 합니다. 사용자 의견이나 Azure 사용자 환경에 대한 생각으로 저에게 <a>lwelicki@microsoft.com</a> 직접 연락해 보세요.</p>
+
+
+  <p>최고의 클라우드 환경을 <strong>함께</strong> 구축해 보세요&rsquo;!</p>

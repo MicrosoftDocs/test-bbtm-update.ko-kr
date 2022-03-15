@@ -1,0 +1,71 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 167911a234bb012a0021ed86dcf2a337cc59a703
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905279"
+Slug: transitioning-application-insights-from-the-vso-portal-to-the-azure-portal
+Title: VSO Portal에서 Azure Portal로 애플리케이션 Insights 전환
+Summary: Visual Studio Online 포털의 애플리케이션 Insights 10월 15일에 읽기 전용 모드로 전환됩니다. Azure Preview 포털에서 호스트되는 새 버전을 사용하도록 애플리케이션을 업데이트하는 방법을 알아봅니다.
+Content: >-
+  Visual Studio Online 포털에서 이전 버전의 <a href="https://azure.microsoft.com/services/application-insights/">애플리케이션 Insights</a> 사용하는 경우 <strong>10월 15</strong>일까지 <a href="https://portal.azure.com/">Azure Preview 포털</a>에서 호스트되는 새 버전을 사용하도록 <a href="https://azure.microsoft.com/documentation/articles/app-insights-upgrade-vso-azure/">애플리케이션을 업데이트</a>해야 합니다.
+
+
+  애플리케이션 Insights Visual Studio Online 포털에서 새 Azure Preview 포털에서 제공되는 서비스 중 하나로 전환하고 있음을 <a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/06/application-insights-moving-from-visual-studio-online-portal-to-azure-preview-portal.aspx">2월 블로그 게시물</a>에서 처음 발표했습니다. Azure Portal 환경에서 애플리케이션 Insights 기능과 기능에 계속 투자하고 있으며, 라이브 애플리케이션의 성능, 가용성 및 사용량에 걸쳐 포괄적인 360° 보기를 제공하는 <a href="https://azure.microsoft.com/blog/2015/04/29/announcing-application-insights-public-preview-2/">데 있어 공개 미리 보기</a> 수준의 완성도에 도달한 4월에 이정표를 세웠습니다. 또한 Azure Preview 포털의 새 버전의 애플리케이션 Insights iOS, Android, Windows 디바이스 앱 및 온-프레미스 또는 클라우드에서 호스팅되는 웹 애플리케이션을 J2EE 또는 .NET으로 포함하도록 지원되는 애플리케이션 유형의 범위를 지속적으로 확장하고 있습니다.
+
+  <h2>전환 일정</h2>
+
+  오늘 VSO 포털에서 Azure Portal로 애플리케이션 Insights 전환에 대한 자세한 내용을 발표합니다. <strong>2015년 10월 15</strong>일 VSO 포털의 애플리케이션 Insights 읽기 전용 모드로 이동합니다. MMA 에이전트 또는 원격 분석 SDK의 새 데이터를 허용하지 않으며 VSO 포털에 구성된 웹 테스트가 더 이상 실행되지 않습니다. VSO 포털에서 애플리케이션 Insights 사용하여 10월 15일 이전에 수집된 데이터를 볼 수 있습니다.
+
+
+  VSO 포털의 애플리케이션 Insights <strong>2015년 11월 30</strong>일에 사용 중지됩니다.
+
+
+  참고: 아직 수행하지 않은 경우 <strong>이제 </strong>VSO 포털의 애플리케이션 Insights Azure Portal의 애플리케이션 Insights 애플리케이션을 이동할 때입니다.
+
+  <h2>Azure Portal에서 애플리케이션 Insights 사용하도록 애플리케이션을 전환하려면 어떻게 해야 하나요?</h2>
+
+  애플리케이션을 전환하는 프로세스는 여기에 자세히 설명되어 <a href="https://azure.microsoft.com/documentation/articles/app-insights-upgrade-vso-azure/">있습니다</a> . ASP.NET 앱의 기본 단계는 다음과 같습니다.
+
+  <ol>
+   <li>에 로그인할 수 있도록 <a href="https://azure.microsoft.com/pricing/free-trial/">Microsoft Azure 구독</a>을 <a href="https://portal.azure.com/">https://portal.azure.com</a>가져옵니다.</li>
+   <li>애플리케이션에서 이전 SDK를 제거합니다. NuGet 패키지를 삭제하고, ApplicationInsights.config 삭제하고, 웹 페이지에서 스크립트를 삭제합니다.</li>
+   <li>새 SDK를 추가합니다. Visual Studio 2013 업데이트 3 이상에서 웹앱 프로젝트를 마우스 오른쪽 단추로 클릭하고 애플리케이션 Insights 추가를 선택합니다. 앱을 빌드합니다. 코드에서 이전 API를 사용한 경우 <a href="https://azure.microsoft.com/documentation/articles/app-insights-api-custom-events-metrics/">새 API</a>로 업데이트해야 합니다.</li>
+   <li>디버그 모드에서 실행하고 새 포털에서 데이터를 봅니다. 프로젝트를 마우스 오른쪽 단추로 클릭하고 애플리케이션 Insights 포털 열기를 선택합니다.</li>
+   <li>포털에서 사용량을 클릭하고 지침에 따라 웹 페이지에 스크립트를 추가합니다. 가용성을 클릭하여 웹 테스트를 설정합니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/07/21/Availability-Usage.png"><img class="alignnone size-medium wp-image-321641" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Availability-Usage-238x369.png" alt="Availability-Usage" width="238" height="369" /></a></li>
+  </ol>
+
+  <h2>Azure Portal에서 애플리케이션 Insights 이해</h2>
+
+  전환을 더욱 용이하게 하기 위해 Azure Portal에서 애플리케이션 Insights 환경을 사용하여 VSO 포털을 사용한 것과 동일한 작업을 수행하는 방법을 설명하는 <a href="https://www.youtube.com/channel/UCbd7i2SMUgSEDVixqzk7RPQ">일련의 짧은 비디오를</a> 만들었습니다. 특정 비디오는 다음과 같습니다.
+
+  <ol>
+   <li><a href="https://www.youtube.com/watch?v=WYjYaiOLxpU">애플리케이션의 사용량을 모니터링하는 방법</a></li>
+   <li><a href="https://www.youtube.com/watch?v=k_3mdVQSuLk">애플리케이션의 성능을 이해하는 방법</a></li>
+   <li><a href="https://www.youtube.com/watch?v=7DtiYQVMKJo">애플리케이션의 가용성을 모니터링하는 방법</a></li>
+   <li><a href="https://www.youtube.com/watch?v=AGSGhmBiJco">경고를 사용하는 방법</a></li>
+   <li><a href="https://www.youtube.com/watch?v=nJxLcoR0l68">앱의 진단 로그 데이터를 검색하는 방법</a></li>
+   <li><a href="https://www.youtube.com/watch?v=CfsbPmWNkrQ">대시보드용 Azure Portal에는 무엇이 있나요?</a></li>
+   <li><a href="https://www.youtube.com/watch?v=L_weK6gY4sI">Azure Portal 버전의 애플리케이션 Insights SDK로 이동하는 경우 SDK는 어떻게 변경됩습니까?</a></li>
+  </ol>
+
+  <h2>접시에서 계속 작업: 대시보드</h2>
+
+  VSO와 Azure Portal에서 애플리케이션 Insights 환경 간에 정확한 기능 패리티는 없지만, 새로운 Azure Portal 환경에서 적절한 기능 집합을 구현하기 위해 고객 데이터에 의해 구동되었습니다.검색 및 메트릭 분석 기능은 VSO 포털에 있는 것보다 훨씬 더 강력하며 이제 VSO(특히 Android 및 iOS)보다 더 많은 플랫폼을 지원합니다.
+
+
+  Azure Portal에서 누락된 가장 높은 요청 기능은 대시보드입니다. 타일 갤러리를 통해 블레이드에 타일을 추가하는 프로세스를 간소화하는 등 이러한 방향으로 많은 작업을 수행했습니다.따라서 앞으로 몇 주 안에 애플리케이션 Insights 차트 타일이 곧 사용자 지정 가능하고 자동으로 새로 고쳐질 것입니다. 애플리케이션의 다양한 구성 요소 또는 다른 Azure 리소스의 차트를 포함하여 최대화된 블레이드를 사용하여 대시보드를 빌드할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/04/Dashboard-Example.png"><img class="alignnone size-medium wp-image-325391" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Dashboard-Example-636x316.png" alt="Dashboard Example" width="636" height="316" /></a>
+
+
+  추가적인 유형의 타일과 더 많은 크기 옵션을 포함하여 더 많은 작업을 수행해야 하며, 누락된 핵심 부분은 다른 사용자와 이 대시보드 환경을 공유하는 기능이라는 것을 알고 있습니다. 그에 대한 해결책을 얻기 위해 노력하고 있음을 알려주세요. 그 동안 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-export-power-bi/">애플리케이션 Insights 내보낸 데이터로 Power BI 및 Stream Analytics</a>를 사용하여 공유 가능한 대시보드를 만들 수 있습니다.
+
+  <h2>요약</h2>
+
+  <a href="https://portal.azure.com/">Azure Preview 포털</a>에서 애플리케이션 <a href="https://azure.microsoft.com/services/application-insights/">Insights 사용하도록 애플리케이션</a>을 아직 전환하지 않은 경우 <strong>지금 수행하세요!</strong> Application Insights 기본 제공 분석, 빠르고 강력한 진단 및 360° 보기에서 전반적으로 향상된 기능을 통해 이제 애플리케이션의 가용성, 성능 및 사용량을 더 잘 이해할 수 있습니다.
+
+
+  마지막으로, 애플리케이션 Insights 사용자 의견 페이지에서 새로운 기능 또는 향상된 기능에 대한 아이디어를 공유하고 질문이 있으면 <a href="https://social.msdn.microsoft.com/Forums/en-US/ApplicationInsights/">애플리케이션 Insights 포럼</a>을 방문하세요.

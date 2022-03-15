@@ -1,0 +1,71 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 66e626243a9ab988ba50b1efb2267d9bf2ddc375
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905940"
+Slug: guest-health-feature-in-azure-monitor-for-virtual-machines
+Title: 가상 머신용 Azure Monitor의 게스트 상태 기능
+Summary: '모니터링되는 매개 변수가 허용 범위를 벗어나면 가상 머신의 상태를 모니터링하고 경고를 발생시키는 가상 머신용 Azure Monitor 게스트 상태 기능의 미리 보기를 발표합니다. '
+Content: >-
+  <p>가상 머신의 상태를 모니터링하는 것이 필수적입니다. 그러나 가상 머신의 상태를 모니터링하기 위해 각 메트릭 및 경고를 검토하는 데 얼마나 많은 시간을 할애하나요?</p>
+
+
+  <p>모니터링되는 매개 변수가 허용 범위를 벗어나면 가상 머신의 상태를 모니터링하고 경고를 발생시키는 가상 머신 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/vminsights-health-overview">용 Azure Monitor 게스트 상태</a> 기능의 미리 보기를 발표합니다. 이 기능은 다음을 제공합니다.</p>
+
+
+  <ul>
+      <li>가상 머신의 전반적인 상태를 모니터링하는 간단한 환경입니다.</li>
+      <li>가상 머신의 상태를 추적하기 위한 주요 VM 메트릭을 기반으로 하는 기본 상태 모니터입니다.</li>
+      <li>가상 머신이 비정상 상태인지 알릴 수 있는 기본 경고입니다.</li>
+  </ul>
+
+
+  <p>가상 머신 게스트 상태 기능에는 부모-자식 계층적 모델이 있습니다. 가상 머신에 대한 CPU, 디스크 및 메모리의 상태 상태를&nbsp; 모니터링하고 고객에게 변경 내용을 알 수 있습니다. 각 자식 모니터에 대해 고객이 설정한 임계값에 따라 정의된 세 가지 상태&mdash; 심각도, 경고 및 criticalare&mdash;입니다. 각 모니터는 특정 구성 요소의 상태를 측정합니다. 가상 머신의 전반적인 상태는 개별 모니터의 상태에 따라 결정됩니다. VM의 최상위 모니터는 모든 자식 모니터의 상태를 그룹화하고 가상 머신의 단일 상태를 제공합니다. 자식 모니터의 상태를 정상 상태가 가장 낮은 상태와 일치합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/809d3316-a9b9-44e4-8721-a8d405023049.png"><img alt="Placeholder" border="0" height="485" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/de286894-4cc1-4f92-b718-dbbf86d2ab0c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <h2>시작</h2>
+
+
+  <p>가상 머신용 Azure Monitor의 시작&nbsp; 페이지에서 구독 및 리소스 그룹의 각 VM 상태를 게스트 VM healthcolumn&nbsp;에서 볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67c3a0cf-8cd2-4993-bcfc-d146f44323b6.png"><img alt="Placeholder" border="0" height="415" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7e702ed1-8d9e-4c9f-a9a0-9d656f93bad2.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <h2>상태 트리</h2>
+
+
+  <p>시작 페이지에서 상태를 클릭하여 VM의 자세한 상태를 볼 수 있습니다. 측면 창에서 개요 탭은 모니터에 대한 설명, 마지막으로 평가된 시간 및 현재 상태를 확인하기 위해 샘플링된 값을 제공합니다. 기록 탭에는 모니터의 상태 변경 기록이 나열됩니다. 구성 탭에서 각 모니터의 위험 및 경고 상태에 대한 임계값을 보고 수정할 수 있습니다. 모니터의 상태 변경 시 경고를 받으려면 이 탭에서 경고 상태를 사용하도록 설정할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b792e185-eeee-4d08-a4a2-f52914e06fd3.png"><img alt="Placeholder" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db7b8248-9295-4e48-bfcf-fbd7801d5d12.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="912"></a></p>
+
+
+  <h2>가격 책정</h2>
+
+
+  <p>게스트 상태 기능에 대한 직접적인 비용은 없지만 Log Analytics 작업 영역에서 상태 데이터의 수집 및 스토리지 비용이 있습니다. 모든 데이터는 HealthStateChangeEvent 테이블에 저장됩니다.</p>
+
+
+  <h2>지원되는 OS 및 지역</h2>
+
+
+  <p>미리 보기의 경우 Azure Virtual Machines만 지원됩니다. 서버용 가상 머신 확장 집합 및 Azure Arc는 현재 지원되지 않습니다.</p>
+
+
+  <ul>
+      <li>가상 머신은 다음 운영 체제 중 하나를 실행해야 합니다. <ul>
+          <li>Ubuntu 16.04 LTS, Ubuntu 18.04 LTS</li>
+          <li>Windows Server 2012 이상</li>
+      </ul>
+      </li>
+      <li>가상 머신 및 Log Analytics 작업 영역은 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/vminsights-health-enable?tabs=powershell#current-limitations" target="_blank">여기에 나열된</a> 지역 중 하나에 있어야 합니다.</li>
+  </ul>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-health-overview" target="_blank">전체 설명서를</a> 확인하세요. Wed&rsquo;는 이 기능에 대해 좋아하는 것과 마음에 들지 않는&rsquo; 것을 듣고 싶어하며, 당신이 우리를 좋아하는 곳을&rsquo; 좋아합니다. 사용자 환경에서 피드백 제공을 클릭하여 의견을 공유하세요.</p>

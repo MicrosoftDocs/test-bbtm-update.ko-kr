@@ -1,0 +1,84 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0e460c9719a62115db1fa2fa0a647321a8cb6b54
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911525"
+Slug: traffic-analytics-in-preview
+Title: Traffic Analytics를 사용하여 네트워크 활동에 대한 가시성 - 현재 공개 미리 보기로 제공됩니다.
+Summary: 클라우드 네트워크의 사용자 및 애플리케이션 트래픽에 대한 가시성을 제공하는 클라우드 기반 흐름 모니터링 솔루션인 Traffic Analytics의 공개 미리 보기를 발표합니다.
+Content: >-
+  <p>현재 클라우드 네트워크의 사용자 및 애플리케이션 트래픽에 대한 가시성을 제공하는 클라우드 기반 솔루션인 Traffic Analytics의 공개 미리 보기를 발표합니다.</p>
+
+
+  <p>Traffic Analytics는 Azure 지역에서 NSG Flow 로그를 분석하고 작업 성능을 최적화하고, 애플리케이션 및 데이터를 보호하고, 조직&rsquo; 네트워크 활동을 감사하고, 규정을 준수하기 위한 실행 가능한 정보를 제공합니다.</p>
+
+
+  <p>이제 Traffic Analytics를 사용하여 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>
+   <h4><em>클라우드 네트워크에서 네트워크 활동에 대한 가시성을 확보합니다. 솔루션은 다음에 대한 인사이트를 제공합니다.</em></h4>
+
+   <ul style="list-style-type: circle;">
+    <li>트래픽은 Azure와 인터넷 간의 네트워크, Azure, 퍼블릭 클라우드 지역,&nbsp; VNET 및 서브넷 간에 흐릅니다.</li>
+    <li>중요한 비즈니스 서비스와 애플리케이션 간의 상호 관계입니다.</li>
+    <li>스니퍼 또는 전용 흐름 수집기 어플라이언스가 필요 없는 네트워크의 애플리케이션 및 프로토콜</li>
+   </ul>
+   </li>
+   <li>
+   <h4><em>네트워크 보호; 네트워크에서 다음과 같은 위협을 식별합니다.</em></h4>
+
+   <ul style="list-style-type: circle;">
+    <li>은 VM과 악성 네트워크 간에 흐릅니다.</li>
+    <li>네트워크 포트가 인터넷에 열립니다.</li>
+    <li>애플리케이션에서 인터넷 액세스를 시도합니다.</li>
+    <li>비정상적인 네트워크 트래픽 동작(예: 연결을 시도하는 백 엔드 서버, 네트워크 외부 서버 등)</li>
+   </ul>
+   </li>
+   <li>
+   <h4><em>다음을 통해 애플리케이션의 성능을 향상시킵니다.</em></h4>
+
+   <ul style="list-style-type: circle;">
+    <li>용량 계획 - VPN 게이트웨이 및 기타 서비스의 사용률 추세를 모니터링하여 과잉 프로비전 또는 사용률 저하 문제를 제거합니다.</li>
+    <li>바인딩된 흐름 및 아웃바운드 흐름 분석</li>
+    <li>애플리케이션 액세스 패턴 이해(예: 사용자가 어디에 있나요?, 더 나은 워크로드 배치로 애플리케이션 대기 시간을 줄일 수 있나요?).</li>
+    <li>트래픽 핫스팟 식별</li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <p>이 릴리스에서 Traffic Analytics는 패킷 캡처 또는 흐름 수집 어플라이언스를 사용하지 않고도 캠퍼스 네트워크에서 사용할 수 있는 기능(NetFlow, IPFIX, sFlow 기반 도구를 통해)과 동등한 Azure 클라우드에 풍부한 흐름 모니터링 기능을 제공합니다.</p>
+
+
+  <h2>시작하기</h2>
+
+
+  <p>클라우드에서 발생하는 상황을&rsquo; 알아보세요!&nbsp; <a href="https://aka.ms/trafficanalyticsdocs">설명서를</a> 확인하고 Azure 네트워크에서 Traffic Analytics 사용을 시작합니다.</p>
+
+
+  <h2><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb188538-4145-4cb9-b427-971f27f912bc.png"><img alt="image" border="0" height="283" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/13db6280-59b7-4096-ad61-8d5d5d7cf146.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="623"></a></h2>
+
+
+  <p align="center"><em>그림 1: NOC 뷰는 Azure의 다양한 지역에 걸친 흐름에 대한 개요를 제공합니다.</em></p>
+
+
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6870876f-a853-4fc9-b5b2-39baebbefa5f.png"><em><img alt="image" border="0" height="336" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c4899c62-8e08-49f0-bcbf-f963a4390d2d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></em></a></p>
+
+
+  <p align="center"><em>그림 2: Azure 지역 간 트래픽을 보여 주는 지역 지도입니다.&nbsp; 빨간색 점은 악의적인 트래픽의 원본을 나타냅니다.</em></p>
+
+
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ee664910-93f2-42d6-9b3b-070d6747569e.png"><img alt="image" border="0" height="311" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3b9c900f-40e7-47d1-b767-68dd0a059147.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="623"></a></p>
+
+
+  <p align="center"><em>그림 3: 통신 국가, 데이터 센터, 호스트 등에 대한 요약이 포함된 VNET 대화 맵</em></p>
+
+
+  <h2>우리는 듣고있다</h2>
+
+
+  <p>여러분의 의견을 듣고 싶습니다.&nbsp; <a href="https://feedback.azure.com/forums/267889-log-analytics/category/188146-network-monitoring" style="font-size: 13px;">사용자 의견</a> 페이지를 통해 제안 사항을 보내주세요.</p>

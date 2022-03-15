@@ -1,0 +1,41 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7f5f4091281c8120f4e6c62be88ee1bac1d5f9a5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912138"
+Slug: azure-cli-supports-microsoft-account-logins
+Title: Azure CLI는 Microsoft 계정 로그인을 지원합니다.
+Summary: Microsoft 계정(라이브 ID)을 통한 로그인을 지원하는 Azure CLI v0.9.10을 도입하게 되어 기쁘게 생각합니다. Azure CLI v0.9.10은 이제 WebPI, Mac 및 NPM을 통해 사용할 수 있습니다.
+Content: >-
+  <p>Microsoft 계정(라이브 ID)을 통한 로그인을 지원하는 Azure CLI v0.9.10을 도입하게 되어 기쁘게 생각합니다. Azure CLI v0.9.10은 이제 <a href="https://aka.ms/webpi-azure-cli">WebPI</a>, <a href="https://aka.ms/mac-azure-cli">Mac</a>, <a href="https://www.npmjs.com/package/azure-cli">NPM</a> 및 <a href="https://github.com/Azure/azure-xplat-cli/releases/tag/v0.9.10-October2015">GitHub</a> 사용할 수 있습니다.</p>
+
+
+  <p>이전 버전의 Azure CLI에서 유일하게 지원되는 인증 체계는 Azure 조직 계정 및 서비스 주체를 사용했습니다. 이 릴리스 전에 Azure CLI 사용자는 Azure 관리 포털에 로그인해야 하며, 종종 Microsoft 계정(라이브 ID)을 사용하여 Azure CLI에 로그인하기 위해 Azure Active Directory 인스턴스 내에 사용자를 만들어야 했습니다. 이 흐름은 Azure CLI에 대한 새 사용자의 온보딩을 개선할 수 있는 기회를 제공했기 때문에 Azure Active Directory 협력하여 Microsoft 계정을 사용할 수 있는 Azure CLI에 대한 새로운 인증 흐름을 개발했습니다.</p>
+
+
+  <h2>&#39;로그인 명령에 대한 Azure CLI 도움말을 검토해 보겠습니다.</h2>
+
+  <script src="https://gist.github.com/devigned/1a62a90f52d594ba60a3.js"></script>
+
+
+  <h2>이제 Azure CLI에 대한 세 가지 인증 흐름이 있습니다.</h2>
+
+
+  <ol>
+   <li>Microsoft 계정(라이브 ID) 및 조직 계정<br />
+   <script src="https://gist.github.com/devigned/5dd22909b88255a4eafe.js"></script></li>
+   <li>조직 계정(Multi-Factor Authentication이 아닌)<br />
+   <script src="https://gist.github.com/devigned/6c0e980f5cc74b075806.js"></script></li>
+   <li>서비스 주체(Azure Active Directory 내의 자동화 계정)<br />
+   <script src="https://gist.github.com/devigned/ad5ea4bc93c2bba9c2ac.js"></script></li>
+  </ol>
+
+
+  <p>Azure Active Directory 인증에 대한 자세한 내용은 Azure Resource Manager를 사용한 Dushyant Gill&#39;개발자 &ldquo;&#39;인증 가이드를 참조하세요.&rdquo;</p>
+
+
+  <h2>다시 말하지만, Azure CLI를 사용하여 로그인하는 것은</h2>
+
+  <script src="https://gist.github.com/devigned/5dd22909b88255a4eafe.js"></script>

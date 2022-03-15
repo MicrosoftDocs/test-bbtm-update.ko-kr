@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1cb37c975ecaac3393687dda23459db58a2a3740
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905300"
+Slug: technet-wiki-sql-azure-data-sync-scenario-sql-server-to-sql-azure-synchronization
+Title: 'TechNet Wiki- SQL Azure 데이터 동기화 시나리오: SQL Server-SQL Azure 동기화'
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.]  2 주 전, 우리는 SQL Azure 데이터 동기화 대한 업데이트에 대해 이야기했다. 개발자들 사이에서 자주 나오는 데이터 동기화 둘러싼 주제 중 하나...'
+Content: '<p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p><span style="font-size: small;"><span style="font-family: Calibri;"><o:p>  <p>2 주 전, 우리는 SQL Azure 데이터 동기화 대한 업데이트에 대해 이야기했다. 개발자들 사이에서 자주 나오는 데이터 동기화 둘러싼 주제 중 하나는 SQL Server SQL Azure 동기화하는 것입니다. TechNet에는 SQL Server SQL Azure 동기화하는 방법과 이를 수행하는 방법에 대한 연습 지침을 제공하는 방법에 대한 고려 사항을 설명하는 훌륭한 Wiki 문서가 있습니다. </p>  <p><a href="https://social.technet.microsoft.com/wiki/contents/articles/sql-azure-data-sync-scenario-sql-server-to-sql-azure-synchronization.aspx">문서를 보려면 여기를 클릭하십시오.</a></p>  <p>동기화 SQL Server 및 SQL Azure 몇 가지 경험이 있었나요? 의견에 알려주세요. 나는 그들의 경험이 무엇인지에 대한 일부 개발자와 이야기하고 싶습니다.</p>  <p>-Steve</p>  </o:p></span></span></p>'

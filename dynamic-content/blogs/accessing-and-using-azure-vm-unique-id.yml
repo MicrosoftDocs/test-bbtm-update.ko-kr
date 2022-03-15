@@ -1,0 +1,100 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2e9c1bb8590c92a91c37b4534c428f70da6c28aa
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911245"
+Slug: accessing-and-using-azure-vm-unique-id
+Title: Azure VM 고유 ID 액세스 및 사용
+Summary: 최근에 Azure VM 고유 ID에 대한 지원을 추가했습니다. Azure VM의 플랫폼 또는 애플리케이션 요구 사항에 관계없이 이제 Azure VM 고유 식별자에 액세스할 수 있습니다.
+Content: >-
+  최근에 Azure VM 고유 ID에 대한 지원을 추가했습니다. Azure VM 고유 ID는 모든 Azure IaaS VM의 SMBIOS에 인코딩 및 저장되며 플랫폼 BIOS 명령을 사용하여 읽을 수 있는 128비트 식별자입니다.
+
+
+  이 식별자는 VM이 Azure 또는 온-프레미스에서 실행되는지 여부에 관계없이 다양한 시나리오에서 사용할 수 있으며, Azure IaaS 배포에 대한 라이선스, 보고 또는 일반 추적 요구 사항에 도움이 될 수 있습니다. 애플리케이션을 빌드하고 Azure에서 인증하는 많은 독립 소프트웨어 공급업체 및 파트너는 수명 주기 내내 Azure VM을 식별하고 VM이 Azure, 온-프레미스 또는 다른 클라우드 공급자에서 실행 중인지 알려야 할 수 있습니다. 예를 들어 이 플랫폼 식별자는 소프트웨어의 사용이 제대로 허가되는지 여부를 감지하거나 VM 데이터와 원본 간 상관 관계를 파악하는 데 도움이 되므로 올바른 플랫폼에 대해 올바른 메트릭을 설정할 수 있도록 하고, 이러한 메트릭을 추적하고 다양한 경우에 상관 관계를 파악할 수 있도록 합니다.
+
+
+  이 고유 식별자는 수정할 수 없으며 쿼리할 수 있습니다. 2014년 9월 18일 이후에 만든 새 VM만 이 기능을 만들 때 사용하도록 설정되지만, 2014년 9월 18일 이전에 만든 VM은 다음 VM을 다시 시작할 때 자동으로 이 기능을 가져옵니다. Azure 고유 VM ID는 재부팅, 종료(계획되지 않음), 할당 해제 시작/중지, 서비스 복구 또는 복원 시 변경되지 않습니다. 그러나 VM이 스냅샷이고 새 인스턴스를 만들기 위해 복사된 경우 Azure VM ID가 변경됩니다.
+
+
+  이 새로운 기능이 출시된 이후 이전 VM을 만들고 실행 중인 경우(2014년 9월 18일) VM을 다시 시작하여 재설정 시 사용할 수 있는 고유 ID를 자동으로 가져오세요.
+
+
+  &nbsp;
+
+
+  VM 내에서 Azure VM ID에 액세스하려면 다음 단계를 수행합니다.
+
+
+  &nbsp;
+
+  <h2><strong>1단계</strong> - VM 만들기(2014년 9월 18일 이후에 만든 VM만 이 기능을 기본적으로 사용하도록 설정됨)</h2>
+
+  &nbsp;
+
+
+  다음 단계를 수행합니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-create-custom/" target="_blank">사용자 지정 가상 머신을 만드는 방법</a>
+
+
+  &nbsp;
+
+  <h2><strong>2단계</strong> - VM에 커넥트</h2>
+
+  &nbsp;
+
+
+  다음 단계를 수행합니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-log-on-windows-server/" target="_blank">Windows Server를 실행하는 Virtual Machine</a><a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-log-on/" target="_blank">에 로그온하는 방법 또는 Linux를 실행하는 Virtual Machine에 로그온하는 방법</a>
+
+
+  &nbsp;
+
+  <h2><span style="font-weight: bold">3단계 </span>- VM 고유 ID 쿼리</h2>
+
+  <h3></h3>
+
+  <h3><span style="font-weight: bold"><span style="text-decoration: underline">Linux VM</span></span></h3>
+
+  <blockquote><span style="font-size: medium"><span style="font-weight: bold"><span style="text-decoration: underline">명령(Ubuntu):</span></span></span>
+
+  <pre class="prettyprint">sudo dmidecode | grep UUID</pre>
+
+  <span style="font-size: medium"><span style="text-decoration: underline"><strong>예상 결과 예</strong>:</span></span></blockquote>
+
+  <blockquote>
+
+  <pre class="prettyprint">UUID: 090556DA-D4FA-764F-A9F1-63614EDA019A</pre>
+
+  </blockquote>
+
+  <blockquote>Big Endian 비트 순서로 인해 이 경우 실제 고유 VM ID는 다음과 같습니다.</blockquote>
+
+  <blockquote>
+
+  <pre class="prettyprint">DA 56 05 09 – FA D4 – 4f 76 - A9F1-63614EDA019A</pre>
+
+  </blockquote>
+
+  &nbsp;
+
+  <h3><span style="font-weight: bold"><span style="text-decoration: underline">VM Windows</span></span></h3>
+
+  <blockquote><span style="font-size: medium"><span style="font-weight: bold"><span style="text-decoration: underline">명령을:</span>  </span></span>
+
+  <pre class="prettyprint">$computerSystemProduct = Get-WmiObject -class Win32_ComputerSystemProduct -namespace root\CIMV2
+
+
+  'BIOS GUID:             "{0}"' -f $computerSystemProduct.UUID</pre>
+
+  <span style="font-size: medium"><strong><span style="text-decoration: underline">예상 결과 예: </span></strong></span>
+
+  <pre class="prettyprint">'BIOS GUID: "BC5BCA47-A882-4096-BB2D-D76E6C170534"</pre>
+
+  <h3><span style="font-size: medium"> </span></h3>
+
+  </blockquote>
+
+  Azure VM의 플랫폼 또는 애플리케이션 요구 사항에 관계없이 이제 Azure VM 고유 식별자에 액세스할 수 있습니다.
+
+
+  이 새로운 기능이 출시된 이후 이전 VM을 만들고 실행 중인 경우 VM을 다시 시작하여 재설정 시 사용할 수 있는 고유한 ID를 자동으로 가져오세요.

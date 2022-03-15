@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 03375ef39ce9e0509f53d0314a358b3c5cc84039
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911418"
+Slug: automating-cybersecurity-guardrails-with-new-zero-trust-blueprint-and-azure-integrations
+Title: 새로운 제로 트러스트 청사진 및 Azure 통합을 사용하여 사이버 보안 가드 레일 자동화
+Summary: 오늘날 규제 산업의 많은 고객이 제로 트러스트 아키텍처를 채택하고 있으며, 현대 환경의 복잡성에 보다 효과적으로 적응하고, 모바일 인력을 수용하며, 어디에 있든 사람, 디바이스, 애플리케이션 및 데이터를 보호하는 보안 모델로 전환하고 있습니다.
+Content: >-
+  <p>일상적인 작업에서는 고객이 Azure의 네이티브 기능을 사용하여 디지털 자산의 보안을 강화할 수 있도록 돕는 데 중점을  두고 있습니다. 이 과정에서 Azure를 사용하여 조직&rsquo; 사이버 보안 태세를 개선하면 이러한 고객이 규정 준수를 보다 신속하게 달성하는 데 도움이 될 수 있습니다.</p>
+
+
+  <p>오늘날 규제 산업의 많은 고객이 <a href="https://www.microsoft.com/en-us/security/business/zero-trust" target="_blank">제로 트러스트</a> 아키텍처를 채택하고 있으며, 현대 환경의 복잡성에 보다 효과적으로 적응하고, 모바일 인력을 수용하며, 어디에 있든&rsquo; 사람, 디바이스, 애플리케이션 및 데이터를 보호하는 보안 모델로 전환하고 있습니다.</p>
+
+
+  <p>요청이 시작된 위치 또는 액세스하는 리소스에 관계없이 제로 트러스트는 신뢰하지 말고 항상 확인하도록 &ldquo;가르칩니다.&rdquo; 제로 트러스트 모델에서 모든 액세스 요청은 강력하게 인증되고, 정책 제약 조건 내에서 권한이 부여되며, 액세스 권한을 부여하기 전에 변칙을 검사합니다. 이 접근 방식은 금융 서비스, 방위 산업 기반 및 정부를 포함한 NIST 기반 제어를 사용하는 산업에 대한 규정 준수를 달성하는 프로세스를 도울 수 있습니다.</p>
+
+
+  <p>제로 트러스트 접근 방식은 전체 디지털 자산 전체에 걸쳐 확장되어야 하며, 세 가지 기본 원칙인 (1) 명시적으로 확인, (2) 최소 권한 액세스를 적용하고, (3) 위반을 가정하는 세 가지 기본 원칙에 걸쳐 통합 보안 철학 및 엔드투엔드 전략의 역할을 해야 합니다.</p>
+
+
+  <h2>제로 트러스트의 빠른 구성을 위해 Azure 청사진 사용</h2>
+
+
+  <p>제로 트러스트용 Azure 청사진을 사용하면 애플리케이션 개발자와 보안 관리자가 애플리케이션 워크로드에 대한 강화된 환경을 보다 쉽게 만들 수 있습니다. 기본적으로 청사진은 ID, 디바이스, 애플리케이션, 데이터, 인프라 및 네트워크의 6가지 기본 요소에서 제로 트러스트 컨트롤을 구현하는 데 도움이 됩니다.</p>
+
+
+  <p>Azure Blueprints 서비스를 사용하여 제로 트러스트 청사진은 먼저 기본적으로 모든 네트워크 트래픽을 거부하도록 VNET을 구성하여 비즈니스 요구 사항에 따라 선택적 트래픽에 대한 규칙을 확장 및/또는 설정할 수 있습니다. 또한 청사진은 Azure Policy를 사용하여 특정 NIST SP 800-53 보안 제어 요구 사항에 따라 Azure 리소스 동작 및 구성을 적용하고 유지 관리합니다.</p>
+
+
+  <p>청사진에는 Virtual Network, 네트워크 보안 그룹, Azure Key Vault, Azure Monitor, Azure Security Center 등과 같은 Azure 리소스를 배포하고 구성하는 Azure Resource Manager 템플릿이 포함되어 있습니다. FedRAMP High 또는 DoD 영향 수준 4 요구 사항을 준수해야 하거나 클라우드 배포의 보안 태세를 개선하려는 애플리케이션으로 작업하는 경우&rsquo; 제로 트러스트의 청사진은 더 빠르게 이동할 수 있도록 설계되었습니다.</p>
+
+
+  <p>제로 트러스트용 Azure 청사진은 현재 제한된 지원으로 미리 보기로 제공됩니다. 자세한 내용을 알아보고 Azure에 배포하는 지침을 찾으려면 <a href="https://aka.ms/zerotrust-blueprint" target="_blank">제로 트러스트용 Azure 청사진을</a> 참조하세요. 자세한 내용, 질문 및 피드백은 <a href="https://aka.ms/zerotrust-blueprint-feedback" target="_blank">제로 트러스트 청사진 피드백</a>에<strong> </strong> 문의하세요.</p>
+
+
+  <p>이 새로운 청사진&rsquo; 외에도 공공 부문 및 규제 산업에 더 빠른 권한 부여 및 유연성을 제공하기 위해 Azure와의 두 가지 새로운 통합을 발표했습니다.</p>
+
+
+  <h2>Xacta를 사용하여 Azure 배포에 대한 위험 관리 가속화</h2>
+
+
+  <p>클라우드 기반 이니셔티브가 권한 부여를 달성하는 속도를 높이는 것은 현대화의 중요한 부분입니다. 종종 이 프로세스는 수동이며 지속적인 모니터링을 위한 명확한 그림을 제공하는 기능이 부족합니다.</p>
+
+
+  <p><a href="https://www.telos.com/cyber-risk-management/xacta/" target="_blank">이제 Xacta</a> 는 Azure Policy 및 Azure Blueprints와 통합되어 고객이 규정 준수 정책을 중앙에서 관리하고, 규정 준수 상태를 추적하고, 정책을 보다 쉽게 적용하여 지속적인 규정 준수를 보장할 수 있습니다. 예를 들어 Xacta는 NIST RMF(위험 관리 프레임워크), NIST CSF(사이버 보안 프레임워크), FedRAMP 및 ISO 27001과 같은 주요 보안 프레임워크와 관련된 많은 노동 집약적 작업을 간소화하고 자동화합니다.</p>
+
+
+  <p>이 새로운 통합을 통해 Azure Policy는 필요한 인증 패키지의 상당 부분을 Xacta에 직접 자동으로 생성하여 위험 관리 프레임워크를 인스턴스화하고 위험 전문가에게 필요한 수동 작업을 줄여 중요한 위험 결정에 집중할 시간을 확보합니다.</p>
+
+
+  <h2>Anchore를 사용하여 컨테이너의 연속 모니터링 사용</h2>
+
+
+  <p>컨테이너를 사용하여 규제된 환경 내에서 더 큰 유연성을 달성하는 고객은 일반적으로 보안 및 거버넌스 문제가 발생합니다. 이러한 문제를 해결하기 위해 <a href="https://anchore.com/" target="_blank">Anchore</a>는 최근 Windows 컨테이너에 대한 지원을 발표하여 컨테이너 기반 애플리케이션을 개발하고 광범위한 DevSecOps 이니셔티브를 구현하는 공공 부문 기관 및 기업에 더 많은 선택을 제공했습니다. Anchore Enterprise 2.3은 Windows 컨테이너 이미지에 대한 심층 이미지 검사를 수행하여 팀이 속도를 손상시키지 않고 컨테이너 규정 준수에 대한 정책 기반 접근 방식을 수립할 수 있도록 지원합니다.</p>
+
+
+  <p>&rsquo;현재 컨테이너를 사용하든 Azure Kubernetes Service와 같은 서비스를 평가하든, 여러분은 보안 및 규정 준수를 가속화하는 데 도움이 되는 세계적 수준의 사이버 보안 기술, 제어 및 모범 사례를 계속 제공할 수 있습니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>Azure에서 제로 트러스트 아키텍처를 구현하는 방법에 대한 자세한 내용은 Azure Government 개발자 <a href="https://devblogs.microsoft.com/azuregov/implementing-zero-trust-with-microsoft-azure-identity-and-access-management-1-of-6/" target="_blank">블로그에서 6부로 구성된 블로그 시리즈를</a> 참조하세요. 보안 문제에 대한 우리의 보도를 따라가고 사이버 보안에 대한 최신 뉴스 및 업데이트를 위해 <a href="https://twitter.com/@MSFTSecurity" target="_blank">@MSFTSecurity</a> <a href="https://www.microsoft.com/security/blog/" target="_blank">보안 블로그</a>에 책갈피를 달고 싶을 수도 있습니다.</p>

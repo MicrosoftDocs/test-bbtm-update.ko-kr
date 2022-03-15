@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0df286e4218dc87430a7b66921be4d4045260e1f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905481"
+Slug: loading-data-to-sql-azure-the-fast-way
+Title: 빠른 SQL Azure 데이터 로드
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] Lubor Kollar와 George Varghese는 데이터를 SQL Azure 마이그레이션할 때 다양한 도구의 성능을 설명하는 블로그 게시물을 게시했습니다. 읽기...'
+Content: <p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>Lubor Kollar와 George Varghese는 데이터를 SQL Azure 마이그레이션할 때 다양한 도구의 성능을 설명하는 블로그 게시물을 게시했습니다. 빠른 방법을 SQL Azure 데이터 로드를 읽습니다.</p>

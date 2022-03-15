@@ -1,0 +1,64 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bad4940e8c27309149ebc9da949cefa1cfc6e089
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911339"
+Slug: building-resilient-expressroute-connectivity-for-business-continuity-and-disaster-recovery-2
+Title: 비즈니스 연속성 및 재해 복구를 위한 복원력 있는 Azure ExpressRoute 연결 빌드
+Summary: 중요 비즈니스용 워크로드를 이동하려면 워크로드에 대한 프런트 엔드 네트워크 연결뿐만 아니라 조직에 직접 백 엔드 네트워크 연결을 위한 재해 복구 전략이 필요합니다. 재해 복구를 위해 고가용성 및 ExpressRoute 연결을 최대화하는 데 도움이 되는 모범 사례, 아키텍처 및 Azure 네트워킹 기능을 공유합니다. 아키텍처는 재해 복구를 위해 조직의 기존 지역 중복 ExpressRoute 회로를 추가로 활용합니다.
+Content: >-
+  <p>점점 더 많은 조직이 중요 비즈니스용 워크로드에 Azure를 채택함에 따라 조직&rsquo; 온-프레미스 네트워크와 Microsoft 간의 연결이 중요해집니다. <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank">Azure ExpressRoute</a> 는 온-프레미스 네트워크와 Microsoft 간의 프라이빗 연결을 제공합니다. 기본적으로 ExpressRoute 회로는 Microsoft 백본 네트워크에 대한 중복 네트워크 연결을 제공하며 통신 사업자 등급의 고가용성을 위해 설계되었습니다. 그러나 네트워크 연결의 고가용성은 엔드 투 엔드 경로에서 가장 약한 링크의 견고성만큼 좋습니다. 따라서 고객 및 ExpressRoute 연결의 서비스 공급자 세그먼트도 고가용성을 위해 설계되어야 합니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/expressroute/designing-for-high-availability-with-expressroute" target="_blank">ExpressRoute를 사용하여 고가용성을 위한 디자인</a> 은 이러한 디자인 고려 사항을 해결하고 고객 온-프레미스 네트워크와 Microsoft 네트워크 코어 간의 강력한 엔드 투 엔드 ExpressRoute 연결을 설계하는 방법에 대해 설명합니다. 이 문서에서는 프라이빗 피어링 및 Microsoft 피어링과 관련된 구성 요소뿐만 아니라 일반적으로 ExpressRoute의 고가용성을 최대화하는 방법을 설명합니다.</p>
+
+
+  <h2>프라이빗 피어링 고가용성</h2>
+
+
+  <p>ExpressRoute 연결의 각 구성 요소는 여러 회로에서 동일한 VNet(가상 네트워크) 및 VNet 내의 가상 네트워크 게이트웨이에 이르는 온-프레미스에서 피어링 위치까지의 첫 번째 마일을 포함하여 고가용성을 위해 빌드하는 데 핵심적인 요소입니다.</p>
+
+
+  <p>ExpressRoute 가상 네트워크 게이트웨이의 가용성을 개선하기 위해 Azure는 <a href="https://docs.microsoft.com/azure/availability-zones/az-overview" target="_blank">가용성 영역을</a> 활용하는 <a href="https://docs.microsoft.com/azure/vpn-gateway/about-zone-redundant-vnet-gateways" target="_blank">영역 중복 가상 네트워크 게이트웨이</a>를 제공합니다. 또한 ExpressRoute는 링크 오류 검색을 신속하게 수행하도록 <a href="https://docs.microsoft.com/azure/expressroute/designing-for-high-availability-with-expressroute" target="_blank">BFD(양방향 전달 검색)</a> 를 지원하여 링크 실패 후 MTTR(평균 복구 시간)을 크게 개선합니다.</p>
+
+
+  <h2>Microsoft 피어링 고가용성</h2>
+
+
+  <p>또한 NAT(네트워크 주소 변환)를 구현하는 위치와 방법은 연결 실패 후 Microsoft 피어링을 통해 사용되는 Microsoft PaaS 서비스(O365 포함)의 MTTR에 영향을 줍니다. Microsoft 피어링<a href="https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing#path-selection-on-microsoft-and-public-peerings" target="_blank">에서 인터넷과 ExpressRoute 간의 경로 선택</a>도 매우 안정적이고 확장 가능한 아키텍처를 보장해야 합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95d704c9-28cf-4dbc-b04e-0d193dae544b.png"><img alt="expressroute" border="0" height="604" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/08088121-0b3a-4e23-8eda-7bdb183eb2b0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="expressroute" width="630"></a></p>
+
+
+  <h2>ExpressRoute 재해 복구 전략</h2>
+
+
+  <p>재해 복구 및 비즈니스 연속성을 위해 ExpressRoute 연결을 설계하는 방법은 무엇입니까? 로컬 연결을 위해 서로 다른 지역의 ExpressRoute 회로를 최적화하고 다른 지역 ExpressRoute 오류에 대한 백업 역할을 할 수 있나요?&nbsp; 다음 아키텍처에서는 Microsoft 백본을 통해 또는 조직&rsquo; 전역 연결(Microsoft 외부)을 통해 대칭 지역 간 트래픽 흐름을 어떻게 보장합니까? <a href="https://docs.microsoft.com/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering" target="_blank">ExpressRoute 프라이빗 피어링을 사용하여 재해 복구를 설계하면</a> 이러한 문제를 해결하고 ExpressRoute 프라이빗 피어링을 사용하여 재해 복구를 설계하는 방법에 대해 설명합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39943bbc-0eb4-4c53-be87-d0b8e82414f4.png"><img alt="expressroute2" border="0" height="486" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90cfb278-5451-43ba-86ad-c8e800db07a4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="expressroute2" width="633"></a></p>
+
+
+  <h2>요약</h2>
+
+
+  <p>강력한 ExpressRoute 회로를 빌드하려면 장애 후 중복성을 최대화하고 MTTR을 최소화하는 고가용성을 위해 엔드 투 엔드 ExpressRoute 연결을 설계해야 합니다. 강력한 ExpressRoute 회로는 많은 단일 지점 오류를 견딜 수 있습니다. 그러나 전체 피어링 위치에 영향을 주는 재해를 방지하려면 재해 복구 계획에 지역 중복 ExpressRoute 회로가 포함되어야 합니다. 지역 중복 ExpressRoute 회로로 장애 조치(failover)하는 경우 비대칭 라우팅을 비롯한 문제에 직면합니다. 다음 문서는 지역 중복 ExpressRoute 회로를 사용하여 고가용성 ExpressRoute 회로를 설계하고 재해 복구를 설계하는 데 도움이 됩니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/azure/expressroute/designing-for-high-availability-with-expressroute" target="_blank">ExpressRoute를 사용한 고가용성을 위한 설계</a></li>
+   <li><a href="https://docs.microsoft.com/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering" target="_blank">ExpressRoute 개인 피어링을 사용하여 재해 복구용으로 디자인</a></li>
+   <li><a href="https://docs.microsoft.com/azure/availability-zones/az-overview" target="_blank">Azure의 가용성 영역이란?</a></li>
+   <li><a href="https://docs.microsoft.com/azure/vpn-gateway/about-zone-redundant-vnet-gateways" target="_blank">Azure 가용성 영역의 영역 중복 가상 네트워크 게이트웨이 정보</a></li>
+   <li><a href="https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing#path-selection-on-microsoft-and-public-peerings" target="_blank">인터넷과 ExpressRoute 간의 경로 선택</a></li>
+   <li><a href="https://docs.microsoft.com/azure/expressroute/expressroute-bfd" target="_blank">ExpressRoute를 통해 BFD 구성</a></li>
+  </ul>

@@ -1,0 +1,87 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cb1abf110e0e4cd482cafd333431591557e4f591
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139910921"
+Slug: microsoft-365-boosts-usage-analytics-with-azure-cosmos-db-part-2
+Title: Microsoft 365 Azure Cosmos DB를 사용하여 사용 현황 분석 향상 - 2부
+Summary: 이 게시물은 조직이 Azure Cosmos DB를 사용하여 실제 요구 사항을 충족하는 방법과 이러한 요구 사항에 미치는 차이에 대한 2부로 구성된 시리즈의 일부입니다. 이 게시물에서는 팀의 노력으로 인한 추가 구현 세부 정보 및 결과를 살펴보겠습니다.
+Content: >-
+  <p><i>이 게시물은 조직이 Azure Cosmos DB를 사용하여 실제 요구 사항을 충족하는 방법과 이를 위한 차이점&rsquo;에 대한 2부로 구성된 시리즈의 일부입니다. <a href="https://azure.microsoft.com/en-us/blog/microsoft-365-boosts-usage-analytics-with-azure-cosmos-db/">1부</a>에서는 Microsoft 365 사용 현황 분석 팀이 조치를 취하도록 유도한 과제, 새 솔루션의 아키텍처 및 프로덕션 워크로드의 마이그레이션을 살펴보기 위해 설명했습니다. 이 게시물&rsquo;에서는 팀의&rsquo; 노력으로 인한 추가 구현 세부 정보 및 결과를 검토합니다.</i></p>
+
+
+  <h2>올바른 파티션 keya&mdash; 중요 디자인 결정 찾기</h2>
+
+
+  <p>Azure Cosmos DB로 이동한 후 팀은 데이터를 분할하는 방법(MongoDB의 분할이라고 함&ldquo;)을&rdquo; 다시 검토했습니다. Azure Cosmos DB를 사용하면 각 컬렉션에 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/partitioning-overview">데이터의 논리적 파티션</a> 역할을 하고 Azure Cosmos DB에 파티션 간에 데이터를 분산하기 위한 자연스러운 경계를 제공하는 파티션 키가 있어야 합니다. 단일 논리 파티션에 대한 데이터는 단일 실제 파티션 내에 있어야 합니다. 물리적 파티션 관리는 Azure Cosmos DB에서 내부적으로 관리됩니다.</p>
+
+
+  <p>Microsoft 365 사용 현황 분석 팀은 Azure Cosmos DB 팀과 긴밀히 협력하여 고성능을 보장하는 방식으로 데이터 배포를 최적화했습니다. 팀은 처음에 파티션 키로 임의의 GUID를 사용하는 MongoDB와 동일한 방법을 시도했습니다. 그러나 이렇게 하려면 모든 파티션에서 읽기를 검사하고 쓰기에 대한 리소스를 초과하여 쓰기를 빠르게 하지만 읽기 속도가 느려야 했습니다. 그런 다음 팀은 테넌트 ID를 파티션 키로 사용하려고 했지만 각 테넌트에 대한 보고서 데이터의 양이 크게 다르면 일부 파티션이 너무 뜨거워서 제한이 필요한 반면 다른 파티션은 차가운 상태를 유지했습니다.</p>
+
+
+  <p>솔루션은 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/synthetic-partition-keys">가상 파티션 키를 만드는 데</a> 있습니다. 결국 팀은 테넌트 ID당 100개의 문서를 버킷으로 그룹화한 다음 테넌트 ID와 버킷 ID의 조합을 파티션 키로 사용하여 느린 읽기 및 너무 뜨겁고 너무 차가운 문제를 모두 해결했습니다. 버킷 ID는 1에서 <i>n</i> 으로 반복됩니다. 여기서 <i>n</i> 은 변수이며 각 보고서에 대해 조정할 수 있습니다.</p>
+
+
+  <h3>매일 4테라바이트 단위의 새 데이터 처리</h3>
+
+
+  <p>한 지역에서만 6TB 이상의 데이터가 Azure Cosmos DB에 저장되며, 그 중 4TB가 매일 작성되고 새로 고쳐집니다. 이 두 수치는 계속 증가하고 있습니다. 데이터베이스는 50개 이상의 컬렉션으로 구성되며 가장 큰 컬렉션의 크기는 300GB를 초과합니다. 처리량의 초당 평균 150,000 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/request-units">개 요청 단위</a> (RU/s)를 소비하여 필요에 따라 이 수를 확장 및 축소합니다.</p>
+
+
+  <p>다른 컬렉션은 시스템에서 제공하는 다양한 보고서에 밀접하게 매핑되며, 처리량 요구 사항이 다릅니다. 이 디자인을 통해 Microsoft 365 사용 현황 분석 팀은 <a href="https://docs.microsoft.com/en-ca/azure/cosmos-db/how-to-provision-container-throughput">각 컬렉션에 할당된 RU/s 수를</a> 최적화하고(따라서 각 보고서에) 컬렉션별 및 보고서별로 처리량을 탄력적으로 확장 또는 축소할 수 있습니다.</p>
+
+
+  <h2>기본 제공 비용 효율적인 확장성 및 성능</h2>
+
+
+  <p>Azure Cosmos DB를 사용하는 Microsoft 365 사용 현황 분석 팀은 낮은 비용으로 유지 관리, 성능 향상 및 가용성 향상&mdash;으로 실시간 고객 인사이트를 제공하고 있습니다. 이제 새로운 사용 현황 분석 시스템을 쉽게 확장하여 Office 365 상용 고객 수의 향후 증가를 처리할 수 있습니다. 이 모든 작업은 서비스 중단 없이 5개월 이내에 수행되었습니다. &ldquo;Microsoft 365 사용 현황 분석 팀의 수석 소프트웨어 개발 관리자인 Guo Chen은 MongoDB에서 Azure Cosmos DB로 이동하는 이점은 그 노력을&rdquo; 정당화하는 것 이상이라고 말합니다.</p>
+
+
+  <h3>향상된 성능 및 서비스 가용성</h3>
+
+
+  <p>팀은&rsquo; 기본 제공 턴키 지역 배포를 사용하여 두 지역에 읽기 및 쓰기를 쉽게 배포할 수 있는 방법을 제공했습니다. Azure Cosmos DB Core(SQL) API를 사용하여 데이터 액세스 계층을 다시 작성하는 등 팀에서 수행한 다른 작업과 결합하면 팀은 대부분의 읽기 시간을 12밀리초에서 3밀리초로 줄일 수 있었습니다. 아래 이미지는 이러한 성능 향상을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d5ff7c82-0c12-449a-a3a1-f17c4bdbee6f.png"><img alt="The move to Azure Cosmos DB led to a 4x improvement in average query speeds." border="0" height="290" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a6aec864-7945-4966-b1cc-444975a4dafa.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>이러한 차이는 보고서를 보는 컨텍스트에서 무시할 수 있지만 상당한 서비스 향상을 초래했습니다. &ldquo;사용 현황 분석 시스템에서 보고 데이터에 액세스하는 방법에는 두 가지가 있습니다. Microsoft 365 관리 센터 통해 Microsoft Graph 통해 Microsoft 365&rdquo; 사용 현황 분석 팀의 소프트웨어 엔지니어인 Xiaodong Wang에 대해 설명합니다. &ldquo;과거에 사람들은 Graph API가 너무 느리다고 불평했습니다. 즉&rsquo;, 더 이상 문제가되지 않습니다. 또한 쿼리 시간 제한의 가능성이 줄어들기 때문에 서비스 가용성이 더 좋습니다.&rdquo;</p>
+
+
+  <p>아래 이미지는 서비스 가용성이 얼마나 개선되었는지 보여줍니다. 그래프는 성공한 API 요청을 총 API 요청으로 나눈 것을 보여 줍니다. 시스템이 현재 99.99% 이상의 서비스 가용성 수준을 제공하고 있음을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/00ef063f-ee22-4b66-aa1b-77d0b697e307.png"><img alt="Service availability is now greater than 99.99 percent." border="0" height="257" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1bac520b-048b-42de-b394-d8108ad60045.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1024"></a></p>
+
+
+  <h3>유지 관리 및 관리 0개</h3>
+
+
+  <p>Azure Cosmos DB는 완전 관리형 서비스이므로 Office 365 개발 팀은 더 이상 한 명의 전임 사용자를 데이터베이스 유지 관리 및 관리에 투입할 필요가 없습니다. 연간 인증서 유지 관리는 더 이상 부담이 되지 않으며, 서비스 가용성의 손상으로부터 보호하기 위해 매주 VM을 다시 시작할 필요가 없습니다.</p>
+
+
+  <p>&ldquo;이전에는 MongoDB를 사용하여 데이터 저장소&rdquo;의 관리 관리에 핵심 개발자 리소스를 할당해야 했습니다. Microsoft 365 사용 현황 분석 팀의 수석 프로그램 관리자인 Shilpi Sinha는 말합니다. &ldquo;이제 완전 관리형 서비스에서 실행 중이므로 인프라를 관리하는 대신 새 고객 가치를 추가하도록 개발자 리소스를 다시 지정할 수 있습니다.&rdquo;</p>
+
+
+  <h3>탄력적 확장성</h3>
+
+
+  <p>이제 Microsoft 365 사용 현황 분석 팀은 평균적으로 3개월마다 8%의 속도로 증가하는 변동하는 워크로드를 수용하기 위해 필요에 따라 데이터베이스 처리량을 확장 또는 축소할 수 있습니다. Azure Portal에서 또는 프로그래밍 방식으로 수행할 수 있는 각 컬렉션에 할당된 RU/s 수를 조정하기만 하면 팀은 많은 데이터 수집 기간 동안 쉽게 확장하여 새 보고서를 처리할 수 있으며, 가장 중요한 것은 전 세계 Office 365 지속적으로 증가하는 것을 수용할 수 있습니다.</p>
+
+
+  <p>&ldquo;오늘날 우리가 해야 할 일은 예산이 책정된&rdquo; 것과 비교해 요청 단위 사용량을 주시하는 것만 있으면 됩니다. &ldquo;&rsquo;용량에 도달하면 몇 분 안에 더 많은 RU/s를 할당할 수 있습니다. &rsquo;필요할 때까지 예비 용량에 대한 비용을 지불할 필요가 없으며, 더 중요한 것은 데이터 볼륨의 향후 증가를 처리할 수 있는지 또는 사용량을 보고할 수 있는지 더 이상 걱정할 필요가 없다는 것입니다.&rdquo;</p>
+
+
+  <h3>비용 절감</h3>
+
+
+  <p>이러한 모든 이점 외에 Microsoft 365 사용 현황 분석 팀은 데이터 및 보고 볼륨을 늘리면서 사용 현황 분석 시스템에 대한 월별 Microsoft Azure 요금을 13% 이상 줄입니다. &ldquo;Azure Cosmos DB로 인계한 후 월별 Azure 비용은 거의 20%&rdquo; 감소했다고 Chen은 말합니다. &ldquo;우리는 고객에게 더 나은 서비스를 제공하기 위해이 프로젝트를 착수했습니다. 연간&mdash; 1,000만 달러에 가까운 비용을 절감할 수 있으며, 케이크에 착빙하는 것과 같은 미래에&mdash; 더 많은 비용을 절감할 수 있을 것입니다.&rdquo;</p>
+
+
+  <p>&ldquo;사용 현황 분석은 구매&quot;하는 구독 유형에 관계없이 모든 Microsoft 365 고객에게 기본 기능의 일부로 제공됩니다. &quot;이 서비스를 가능한 한 낮게 운영하는 비용을 유지하면 전체 Microsoft 365 서비스를 최대한 효율적으로 실행하는 동시에 고객이 서비스를 사용하는 방법에 대한 새롭고 향상된 통찰력을 제공하는 것이 우리의 목표에 기여합니다.&rdquo;</p>
+
+
+  <p>현재 <a href="https://docs.microsoft.com/en-us/office365/admin/usage-analytics/usage-analytics?view=o365-worldwide">Microsoft 사용 현황 분석</a> 및 <a href="https://azure.microsoft.com/en-us/services/cosmos-db/">Azure Cosmos DB</a>에 대해 자세히 알아보세요.</p>

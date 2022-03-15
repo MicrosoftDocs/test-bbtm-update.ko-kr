@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4cbaf12d521743aa58d0e1ef24c127b7349beef9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906068"
+Slug: building-a-better-experience-for-azure-and-datastax-customers
+Title: Azure 및 DataStax 고객을 위한 더 나은 환경 구축
+Summary: Cassandra 서밋은 이번 주 캘리포니아 주 산타 클라라에서 최고 기어로, 동종 최대의 NoSQL 이벤트를 나타냅니다! 이것은 현재까지 가장 큰 카산드라 정상 회담입니다. 7,000명 이상의 참석자(현장 및 가상 모두)가 있는 이번 서밋은 135회 이상의 연설 세션이 있는 3일간의 행사입니다.
+Content: >-
+  <p><strong>Microsoft 전략적 협업 공지 사항의 DataStax - </strong><em>Matt Rollender, VP Cloud Strategy, DataStax, Inc.의 게스트 게시물</em></p>
+
+
+  <p>Cassandra 서밋은 이번 주 캘리포니아 주 산타 클라라에서 최고 기어로, 동종 최대의 NoSQL 이벤트를 나타냅니다! 이것은 현재까지 가장 큰 카산드라 정상 회담입니다. 7,000명 이상의 참석자(현장 및 가상 모두)가 있는 이번 서밋은 135회 이상의 연설 세션이 있는 3일간의 행사입니다. <a href="https://www.datastax.com/"><u>또한 DataStax</u></a>가 OReilly&rsquo; Media와 함께 공식화된 Apache Cassandra&trade; 교육 및 인증 프로그램을 처음 선보일 예정입니다. 모든 믿을 수 없을만큼 흥미로운 이정표!</p>
+
+
+  <p>우리는 또 다른 이정표를 공유하게 되어 기쁩니다. 어제 Microsoft와의 공식적인 전략적 협업을 <a href="https://www.datastax.com/2015/09/datastax-announces-strategic-collaboration-with-microsoft"><u>발표</u></a> 했습니다. Dedicated DataStax 및 Microsoft 팀은 Azure에서 제품 통합, QA 테스트, 플랫폼 최적화, 자동화된 프로비저닝 및 Azure DSE(<a href="https://www.datastax.com/products/datastax-enterprise"><u>DataStax Enterprise</u></a>) 특성화에 대해 1년 이상 백그라운드에서 긴밀하게 협력해 왔으며, Azure 클라우드에서 DataStax Enterprise 사용자에게 제품 유효성 검사 및 훌륭한 고객 환경을 보장합니다. 강력한 파트너십을 위한 모든 중요한 구성 요소인 매우 긴밀한 경영진, 현장 및 기술 조정이라는 두 조직 간에 강력한 조정이 있습니다.</p>
+
+
+  <p>이 파트너십은 공동 고객에 의해 주도되고 형성됩니다. 고객은 종종 데이터베이스 기술의 온-프레미스 배포를 통해 여정을 시작한 다음 클라우드로 전환해야 하는 요구 사항이 있습니다. Microsoft는 클라우드에서 애플리케이션을 마이그레이션하고 크기를 조정하는 기능과 함께 진정한 하이브리드 환경의 유연성을 제공하는 데 도움이 되는 환상적인 파트너입니다. 또한 Microsoft는 데이터 센터와 관련하여 상당한 폭을 가지고 있습니다. 고객은 최종 사용자와 더 가까워지&rsquo;기 위해 전 세계의 수많은 Azure 데이터 센터에 배포할 &lsquo;수 있습니다. 이는 피어 투 피어 분산 데이터베이스이므로 DataStax Enterprise 소프트웨어에 대한 매우 보완적인 기능이며, 고객은 항상 사용 가능한 항상 사용 가능한 엔터프라이즈 애플리케이션을 사용하여 최종 사용자와 가까워야 합니다.&nbsp;</p>
+
+
+  <p>몇 가지 공동 고객과 사용 사례를 강조하기 위해 First American Title 및 IHS, Inc.가 있습니다. 퍼스트 아메리칸은 $5B 이상의 수익을 가진 타이틀 보험 및 합의 서비스의 선도적 인 제공 업체입니다.&nbsp; 그들은 수집 및 업계에서 부동산 부동산 기록의 가장 큰 숫자 (수십억)를 저장합니다. 대규모 데이터 세트에 액세스, 검색 및 분석하여 관련 세부 정보를 신속하게 가져오는 것은 고객에게 실시간으로 더 나은 정보를 제공하고 최종 사용자가 온라인 속성 레코드를 쉽게 검색할 수 있도록 비즈니스를 &ndash; 수행하는 새로운 방법입니다. 대규모 데이터 요구 사항과 애플리케이션의 크기를 계속 조정해야 하기 때문에 DSE 및 Azure를 선택했습니다.</p>
+
+
+  <p>두 번째로 훌륭한 고객 및 사용 사례는 기업 및 정부의 의사 결정 프로세스를 지원하기 위해 정보와 분석을 제공하는 2B 달러 규모의 수익 회사인 IHS, Inc.입니다. 이 프로젝트는 IHS가 NoSQL, 비관계형 기술을 사용하여 차세대 빅 데이터 애플리케이션을 카탈로그&ndash;&rsquo;로 만드는 IHS &lsquo;&rsquo; 를 위한 혁신적인 프로젝트이며, 애플리케이션을 더 빠르게 출시할 수 있도록 클라우드에 배포하려고 합니다.</p>
+
+
+  <p>여기서 볼 수 있듯이, 우리는 기업에서 항상 항상 사용 가능하고 분산된 애플리케이션으로 이전과 같이 고객을 참여시킬 수 있도록 하고 있습니다. 앞으로 몇 달 안에 함께 나아갈 때 더 많은 것을 지켜봐 주시기 바랍니다!</p>
+
+
+  <p>매트</p>
+
+
+  <p>자세한 내용은 Azure에서&nbsp; <a href="https://www.datastax.com/marketplace-microsoft-azure"><u>https://www.datastax.com/marketplace-microsoft-azure</u></a> Datastax Enterprise 샌드박스를 사용해 보세요.</p>

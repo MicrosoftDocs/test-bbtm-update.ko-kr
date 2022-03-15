@@ -1,0 +1,365 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7604e915f4da16e5a5d44bba9fd04b526a6d8487
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905614"
+Slug: azure-resource-manager-2-5-for-visual-studio
+Title: Visual Studio 대한 Azure 리소스 그룹
+Summary: Azure Resource Manager를 사용하면 애플리케이션을 구성하는 리소스를 선언적으로 설명하는 재사용 가능한 배포 템플릿을 만들 수 있습니다.
+Content: >-
+  &nbsp;
+
+  <h3>이전에 Azure Resource Manager 도구 미리 보기라고 함</h3>
+
+  .NETenables <a href="https://azure.microsoft.com/en-us/downloads/">용 Azure SDK 2.7의 Azure</a> Resource Manager 도구는 다음을 수행할 수 있습니다.
+
+  <ul>
+   <li>Azure 갤러리 템플릿을 사용하여 애플리케이션을 만듭니다.</li>
+   <li>JSON 개요 및 편집기를 사용하여 웹 사이트, 데이터베이스, 가상 머신 등을 비롯한 리소스를 프로비전하는 Azure Resource Manager 배포 템플릿을 만들고 편집합니다.</li>
+   <li>Azure Resource Manager 배포 템플릿 및 매개 변수 파일을 만들고 편집하여 개발, 스테이징 및 프로덕션과 같은 다양한 환경에 대한 배포를 사용자 지정합니다.</li>
+   <li>리소스 그룹을 만들고 템플릿을 배포하여 리소스 만들기를 간소화합니다.</li>
+  </ul>
+
+  Azure Resource Manager를 사용하면 Azure 웹 사이트 및 SQL Azure 데이터베이스와 같은 애플리케이션을 구성하는 리소스를 선언적으로 설명하는 재사용 가능한 배포 템플릿을 만들 수 있습니다. 이렇게 하면 개발, 테스트 및 프로덕션을 위한 복잡한 환경을 반복 가능한 방식으로 만드는 프로세스가 간소화됩니다. 또한 <a href="https://portal.azure.com/">Azure Preview 포털</a>에서 애플리케이션을 구성하는 리소스를 관리하고 모니터링하는 통합된 방법을 제공합니다.
+
+
+  Azure 갤러리 템플릿을 사용하여 애플리케이션을 만들고 JSON 템플릿을 사용하여 Azure 리소스를 정의하고 관리할 수 있습니다. 이렇게 하면 Azure에서 애플리케이션을 개발/테스트하는 데 필요한 환경을 더 쉽게 설정할 수 있습니다. 두 가지 주요 기능은 Azure 갤러리와의 Visual Studio 통합 및 Azure Resource Manager 배포 템플릿을 만들고 편집하는 기능입니다.
+
+
+  시나리오를 진행하여 이 도구를 사용하기 시작합니다. 먼저 클라우드 배포 프로젝트를 기반으로 웹 사이트를 만들고 프로젝트를 만들 때 솔루션에 추가되는 아티팩트가 무엇인지 살펴보겠습니다. 그런 다음 애플리케이션 게시를 포함하는 애플리케이션에 필요한 Azure 리소스 그룹 및 리소스를 만들고 배포합니다.
+
+
+  이 도구는 <a href="https://azure.microsoft.com/en-us/downloads/">.NET용 Azure SDK 2.7</a>에서 사용할 수 있습니다[<a href="https://go.microsoft.com/fwlink/?linkid=518003&amp;clcid=0x409">VS 2015VS</a> |  <a href="https://go.microsoft.com/fwlink/p/?linkid=323510&amp;clcid=0x409">2013</a>용 다운로드
+
+  <h2>Azure 리소스 그룹 프로젝트 만들기</h2>
+
+  이 연습에서는 리소스 그룹에 웹 사이트를 배포하는 방법을 설명합니다. ASP.NET 4.5.2 웹 사이트가 아직 없는 경우 파일 - Project 선택하고 Visual C#/Visual Basic -&gt; 클라우드 -&gt;&gt; ASP.NET 웹 애플리케이션을 선택하여 지금 만듭니다.
+
+
+  Azure Resource Manager 도구를 사용하면 Azure 갤러리 템플릿을 사용하여 Visual Studio 애플리케이션을 만들 수 있습니다. 앞에서 설명한 대로 클라우드 배포 프로젝트 템플릿을 보려면 Azure SDK 2.7을 설치해야 합니다. 파일-&gt;새로 만들기 Project 선택하여 이러한 템플릿을 찾을 수 있습니다. 템플릿 -&gt; Visual C#/Visual Basic -&gt; 클라우드 -&gt; "Azure 리소스 그룹"을 선택합니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/26/NewProjectDlg.png"><img class="alignnone size-medium wp-image-324081" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/NewProjectDlg-533x369.png" alt="NewProjectDlg" width="533" height="369" /></a>
+
+
+  클라우드 배포 Project 만들면 사용 가능한 템플릿 목록을 찾을 수 있습니다. 몇 가지 인기 있는 Azure 갤러리 템플릿을 사용할 수 있게 되었습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/26/SelectTemplate.png"><img class="alignnone size-medium wp-image-324091" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/SelectTemplate-492x369.png" alt="SelectTemplate" width="492" height="369" /></a>
+
+
+  템플릿에는 웹앱, SQL 데이터베이스 및 가상 머신(Windows 및 Linux 모두)을 만드는 기능이 포함됩니다. 빈 템플릿은 JSON 개요 및 편집기 또는 자체 사용자 지정 편집기를 사용하여 처음부터 템플릿을 빌드하려는 개발자가 사용할 수 있습니다.
+
+
+  이 연습에서는 <strong>웹앱 + SQL</strong> 템플릿을 선택합니다. 템플릿은 Sql Server를 만들고 웹 사이트를 만들지만 웹 사이트 패키지를 배포하지 않는 Azure 리소스 그룹 프로젝트를 만듭니다. 이전 버전(클라우드 배포 프로젝트)에서는 웹 사이트 프로젝트가 배포 프로젝트에 포함되었습니다. 기존 웹 프로젝트에 배포 프로젝트를 더 쉽게 추가할 수 있도록 제거되었습니다. 따라서 표준 ASP .NET 웹 애플리케이션 프로젝트를 솔루션에 추가해 보겠습니다. 배포 프로젝트에서 이를 처리하므로 "클라우드에서 호스트" 옵션을 확인할 필요가 없습니다.
+
+
+  솔루션에 웹 애플리케이션 프로젝트를 추가한 후 배포 프로젝트 참조에 웹 애플리케이션 프로젝트 참조를 추가합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/26/AddReference.png"><img class="alignnone size-medium wp-image-324111" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AddReference-538x369.png" alt="AddReference" width="538" height="369" /></a>
+
+
+  참조를 추가하면 백그라운드에서 몇 가지 작업이 수행되며, 배포 프로젝트에서 연결된 웹 프로젝트를 알 수 있으며 웹 프로젝트에서 웹 배포 패키지(package.zip)를 빌드할 수 있습니다. 이 패키지의 위치는 나중에 배포 매개 변수에 필요합니다.
+
+
+  웹 사이트 자체를 배포하는 데 필요한 JSON을 추가해 보겠습니다. WebSiteSQLDatabase.json 파일을 열어 WebDeploy 리소스를 추가합니다. 이 작업을 수행하는 가장 쉬운 방법은 JSON 개요 도구 창에서 웹 사이트 리소스를 마우스 오른쪽 단추로 클릭하고 새 리소스 추가를 선택하는 것입니다. 웹 사이트 리소스를 선택하면 적절한 JSON이 강조 표시됩니다.
+
+
+  &nbsp;
+
+  <h2><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/JsonOutlineEditor.png"><img class="alignnone size-full wp-image-324141" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/JsonOutlineEditor.png" alt="JsonOutlineEditor" width="855" height="708" /></a></h2>
+
+  새 리소스 추가를 선택하면 이 문서의 앞부분과 동일한 리소스 템플릿뿐만 아니라 사용자 지정을 허용하는 다른 리소스 조각도 표시되는 리소스 추가 대화 상자가 표시됩니다. 이번에는 Web Apps용 웹 배포를 선택합니다. 배포 중인 웹앱을 선택해야 합니다. Azure 리소스 그룹 프로젝트에서 만드는 웹 사이트입니다. 이 경우 웹 사이트입니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AddWebDeployJSON.png"><img class="alignnone size-full wp-image-324121" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AddWebDeployJSON.png" alt="AddWebDeployJSON" width="800" height="600" /></a>
+
+  <h2>클라우드 앱 솔루션</h2>
+
+  배포 프로젝트에는 Azure에 리소스를 배포하는 데 사용할 수 있는 배포 템플릿 파일(<strong>WebSite.json</strong>), 템플릿 매개 변수 정의(<strong>WebSite.param.dev.json</strong>) 및 PowerShell 스크립트(<strong>Publish-AzureResourceGroup.ps1</strong>)가 포함됩니다.
+
+
+  <img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="SolnExpExpanded" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/SolnExpExpanded.png" alt="SolnExpExpanded" width="360" height="285" border="0" />
+
+
+  솔루션에서 이러한 각 아티팩트를 살펴보겠습니다. 참조 섹션에서 리소스 그룹 프로젝트에 추가한 MyWebsite 프로젝트에 대한 참조가 있습니다. MSDeploy 확장을 보다 쉽게 사용하려면 이 작업이 필요합니다.
+
+
+  <strong>Deploy-AzureResourceGroup.ps1</strong> 배포에 사용되는 기본 스크립트입니다. Azure에서 리소스를 프로비전하기 위해 배포 아티팩트 업로드 및 New-AzureResourceGroup 호출을 처리합니다. Visual Studio IDE의 "새 배포" 메뉴는 배포에 이 스크립트를 사용하여 사용자가 배포를 사용자 지정할 수 있도록 합니다.
+
+
+  <strong>WebSiteSQLDatabase.json</strong> 파일은 리소스가 정의된 배포 템플릿 파일입니다. 이 파일에는 나중에 프로비전할 모든 리소스가 포함되어 있습니다. 상상할 수 있듯이 웹 사이트 + SQL 템플릿을 선택했으므로 이 파일에는 웹 사이트 및 SQL Azure 데이터베이스를 만들고 웹 사이트 패키지를 배포하는 데 필요한 정의가 포함되어 있습니다. 나중에 자세히 살펴보겠습니다.
+
+
+  <strong>WebSiteSQLDatabase.param.dev.json</strong>에는 배포 템플릿 파일에 필요한 기본이 아닌 매개 변수에 대한 값이 포함되어 있습니다. 예를 들어 웹 사이트의 이름은 매개 변수이며 해당 값은 이 파일에 포함됩니다.
+
+  <h2>내 Azure 리소스 만들기 - 대화 상자 사용</h2>
+
+  리소스 및 리소스 그룹을 Azure에 배포하는 방법에는 몇 가지가 있습니다. 가장 간단한 방법은 배포 Project 마우스 오른쪽 단추로 클릭하고 배포/새 배포를 선택하는 것입니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/14/2014-11-13_13h08_13.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="2014-11-13_13h08_13" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2014-11-13_13h08_13_thumb.png" alt="2014-11-13_13h08_13" width="484" height="88" border="0" /></a>
+
+
+  구독뿐만 아니라 사용할 계정을 선택합니다.
+
+
+  &nbsp;
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DeploytoRG.png"><img class="alignnone size-full wp-image-324151" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DeploytoRG.png" alt="DeploytoRG" width="500" height="428" /></a>
+
+
+  웹 애플리케이션에 필요한 모든 리소스의 논리적 그룹화가 포함된 Azure 리소스 그룹을 만들어야 합니다. 이렇게 하려면 리소스 그룹 콤보 상자를 클릭하고 "새로 만들기"를 선택합니다.
+
+
+  <img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="CreateNewRG" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CreateNewRG.png" alt="CreateNewRG" width="480" height="378" border="0" />
+
+
+  원하는 대로 Azure 리소스 그룹의 이름을 지정하고(솔루션 이름 "MyAzureCloudApp"을 기반으로 기본값을 사용함) 위치를 지정합니다. 준비가 되면 만들기 단추를 클릭하면 Azure 리소스 그룹이 자동으로 프로비전됩니다(아직 리소스가 없음).
+
+
+  위에서 수행한 대로 배포 템플릿(<strong>WebSiteDeploySQL.json</strong>), 템플릿 매개 변수 파일(<strong>WebSiteDeploySQL.param.dev.json</strong>) 및 스토리지 계정을 선택했는지 확인합니다. 스토리지 계정이 아직 없는 경우 계속하기 전에 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account/" target="_blank">스토리지 계정을 만들어야</a> 합니다.
+
+
+  다음으로 "매개 변수 편집" 단추를 클릭합니다. 여기서 수행한 것처럼 보이도록 웹 사이트 이름, 웹 호스팅 계획 이름 및 웹 사이트 위치를 정의하려고 합니다.
+
+
+  &nbsp;
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/EditParameters.png"><img class="alignnone size-full wp-image-324161" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/EditParameters.png" alt="EditParameters" width="400" height="478" /></a>
+
+
+  빨간색 느낌표는 추가해야 하는 필수 매개 변수입니다. 다음은 각 매개 변수에 대한 정보가 포함된 테이블입니다.
+
+  <table border="1" cellspacing="0" cellpadding="0">
+
+  <tbody>
+
+  <tr>
+
+  <td valign="top" width="312">siteName</td>
+
+  <td valign="top" width="312">이 매개 변수는 웹 사이트의 이름입니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">hostingPlanName</td>
+
+  <td valign="top" width="312"><a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-web-hosting-plan-overview/">웹 호스팅 계획</a> 이름입니다. 호스팅 계획은 둘 이상의 웹 사이트에서 공유할 수 있는 기능 및 용량 설정을 나타냅니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">siteLocation</td>
+
+  <td valign="top" width="312">웹 사이트가 상주하는 지역은 "미국 서부" 또는 "미국 중부" 또는 유효한 웹 사이트 <a href="https://azure.microsoft.com/en-us/regions/#services">지역과</a> 같습니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">sku</td>
+
+  <td valign="top" width="312">기본값은 "무료"이며 <a href="https://azure.microsoft.com/blog/2014/04/21/azure-web-sites-new-basic-pricing-tier/">웹 사이트의 가격 책정 계층</a> 입니다(다른 옵션은 공유, 기본 및 표준).</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">workerSize</td>
+
+  <td valign="top" width="312">기본값은 0입니다. 이 설정은 웹 사이트를 실행하는 가상 머신의 크기를 설명하는 데 사용됩니다(0=small, 1= medium 및 2=large). 이 예제에서는 "Free"의 sku 크기를 선택하므로 workerSize는 효과가 없습니다. 적용하려면 기본 또는 표준으로 sku 크기를 선택해야 하며 적절한 workerSize를 선택해야 합니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">serverName</td>
+
+  <td valign="top" width="312">Azure SQL Server 이름입니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">serverLocation</td>
+
+  <td valign="top" width="312">Azure SQL Server 위치입니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">administratorLogin</td>
+
+  <td valign="top" width="312">SQL 서버의 관리자 이름입니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">administratorLoginPassword</td>
+
+  <td valign="top" width="312">관리자의 암호입니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">databaseName</td>
+
+  <td valign="top" width="312">서버에서 만든 데이터베이스의 이름입니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">collation</td>
+
+  <td valign="top" width="312"><a href="https://msdn.microsoft.com/en-us/library/azure/ee336245.aspx">SQL Server 데이터 정렬 지원</a></td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">edition</td>
+
+  <td valign="top" width="312"><a href="https://msdn.microsoft.com/en-us/library/azure/dn741340.aspx">Azure SQL Database 서비스 계층</a></td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">maxSizeBytes</td>
+
+  <td valign="top" width="312"><a href="https://msdn.microsoft.com/en-us/library/azure/ee336245.aspx">데이터베이스 크기 제한</a></td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">requestedServiceObjectiveId</td>
+
+  <td valign="top" width="312"><a href="https://msdn.microsoft.com/en-US/library/azure/dn505701">버전 성능 수준</a></td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">webSitePackage</td>
+
+  <td valign="top" width="312">배포 패키지의 이름 및 부모 폴더</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">_artifactsLocation</td>
+
+  <td valign="top" width="312">웹 배포 패키지에 대해 자동으로 생성된 위치입니다. _artifactsLocation webSitePackage가 복사될 "리소스 그룹에 배포" 대화 상자에 입력된 Azure Storage의 폴더입니다.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="312">_artifactsLocationSASToken</td>
+
+  <td valign="top" width="312">자동 생성된 보안 키입니다.</td>
+
+  </tr>
+
+  </tbody>
+
+  </table>
+
+  "암호 저장" 확인란은 암호를 JSON 파일에 저장하지만 일반 텍스트로 저장되므로 이 옵션을 사용하여 더 부지런해야 합니다.
+
+
+  이러한 매개 변수를 입력한 후 "<strong>배포</strong>" 단추를 클릭하거나 이 예제와 같이 매개 변수를 편집한 경우 "저장" 및 "배포"를 클릭하면 리소스 그룹 및 리소스가 Azure에 배포됩니다. 이 경우 Azure 리소스 그룹 내에 사용자 지정 웹 애플리케이션을 사용하여 웹 사이트를 배포했습니다(새롭고 향상된 <a href="https://portal.azure.com/" target="_blank">Azure Portal</a>에서 확인).
+
+
+  <img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="AzurePortal" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzurePortal.png" alt="AzurePortal" width="447" height="480" border="0" />
+
+  리소스를 배포한 후 다음과 같이 매개 변수 값을 <strong>WebSiteDeploySQL.param.dev.json</strong> 파일에 다시 쓴 것을 볼 수 있습니다.
+
+
+  <img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="ParamDevFull" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ParamDevFull.png" alt="ParamDevFull" width="288" height="480" border="0" />
+
+
+  변경 내용이 유지되도록 JSON 파일을 저장합니다. 리소스 그룹을 배포하거나 매개 변수를 편집하지 않은 경우 <strong>WebSiteDeploySQL.param.dev.json</strong> 에는 매개 변수 값에 대해 "null"이 있습니다.
+
+
+  <img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="ParamDevEmpty" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ParamDevEmpty.png" alt="ParamDevEmpty" width="319" height="480" border="0" />
+
+  배포 출력은 Azure 프로비저닝 창으로 전송됩니다.
+
+
+  <img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="DeployOutputWindow" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DeployOutputWindow.png" alt="DeployOutputWindow" width="480" height="408" border="0" />
+
+
+  이제 게시했으므로 Azure 리소스 그룹을 만들고 Azure 리소스를 배포할 수 있는 다른 방법을 살펴보겠습니다.
+
+  <h2>내 Azure 리소스 배포 - PowerShell 사용</h2>
+
+  Azure에서 리소스 그룹을 만드는 두 번째 방법은 배포 프로젝트(<strong>Publish-AzureResourceGroup.ps1</strong>)의 일부로 제공된 PowerShell 스크립트를 실행하는 것입니다. 스크립트는 최신 <a href="https://azure.microsoft.com/en-us/documentation/articles/powershell-azure-resource-manager/" target="_blank">Azure PowerShell</a> 활용합니다(버전 0.8.3 이상).
+
+
+  제공된 스크립트는 <a href="https://msdn.microsoft.com/en-us/library/dn654594.aspx" target="_blank">Azure PowerShell</a> cmdlet을 사용하여 Azure 리소스 그룹이 없는 경우(스크립트의 –Name 매개 변수에 의해 지정됨) Azure 리소스 그룹을 만듭니다. 스크립트는 <strong>WebSiteDeploySQL.json</strong> 및 WebSiteDeploySQL.param.dev.json 파일을 Azure Resource Manager 서비스에 전달하여 배포해야 하는 Azure 리소스를 정확히 파악합니다.
+
+
+  실행하기 전에 <strong>WebsiteDeploySQL.param.dev.json</strong> 파일에 웹 사이트, 호스팅 계획, 웹 사이트 위치 및 SQL 매개 변수의 올바른 이름이 포함되어 있는지 확인해야 합니다. 변경 내용을 저장해야 합니다.
+
+
+  아래의 웹 사이트 이름을 "mattsAwesomeSite"로 변경했습니다. 웹 사이트 이름도 변경하려고 합니다. 나는 그것이 나를 위해 새로운 웹 사이트를 만드는지 확인하기 위해 그렇게했다.
+
+
+  <img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="ParamDevFull" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ParamDevFull.png" alt="ParamDevFull" width="288" height="480" border="0" />
+
+
+  여기서 무언가를 표시하려면Publish-AzureResourceGroup.ps1파일을 두 번 클릭하여 <strong> Visual Studio </strong> 문서 창에 표시합니다(아직 보지 못한 경우 PowerShell 스크립트에 대한 색 지정을 추가했습니다). 그런 다음 Publish-AzureResourceGroup.ps1파일을 마우스 오른쪽<strong> 단추 </strong> 로 클릭하고 "PowerShell ISE로 열기"를 선택할 수 있습니다.
+
+
+  <img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="OpenPSISE" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/OpenPSISE.png" alt="OpenPSISE" width="480" height="58" border="0" />
+
+
+  그러면 PowerShell ISE가 시작됩니다. 이 시점에서 PowerShell 스크립트를 실행할 수 있습니다. 그러나 오류 없는 환경이 있는지 확인하려면 다음 몇 가지를 다시 확인합니다.
+
+  <ul>
+   <li><a href="https://go.microsoft.com/?linkid=9811175" target="_blank">아직 Azure PowerShell</a> 설치했나요(버전 0.8.3 이상)?
+  <ul>
+   <li><a href="https://www.microsoft.com/web/downloads/platform.aspx" target="_blank">웹 플랫폼 설치 관리자</a>를 사용하여 설치할 수 있습니다."Microsoft Azure PowerShell"을 선택하기만 하면 됩니다.</li>
+  </ul>
+
+  </li>
+
+  </ul>
+
+  <img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="WPIPowerShell" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/WPIPowerShell.png" alt="WPIPowerShell" width="480" height="29" border="0" />
+
+  <ul>
+   <li>이전에 PowerShell을 많이 수행하지 않은 경우 PowerShell 스크립트를 실행할 수 있도록 실행 정책을 설정해야 할 수 있습니다. 이렇게 하려면 PowerShell ISE에서 "<a href="https://technet.microsoft.com/en-us/library/ee176961.aspx" target="_blank">Set-ExecutionPolicy RemoteSigned</a>"를 실행하여 이와 같은 원격 서명된 스크립트를 실행할 수 있도록 해야 합니다(참고: 관리자 권한으로 이 명령을 실행해야 함). 정책 설정을 변경하려는지 확인하는 대화 상자가 표시됩니다.</li>
+   <li>Azure PowerShell 명령 "<a href="https://msdn.microsoft.com/en-us/library/dn495128.aspx" target="_blank">Add-AzureAccount</a>"를 실행하여 Azure 계정을 현재 PowerShell 세션에 로그인했는지 확인합니다. 대화 상자가 표시되고 Azure 자격 증명에 입력하라는 메시지가 표시됩니다.</li>
+  </ul>
+
+  이제 PowerShell 스크립트를 실행합니다. "&gt; .\Deploy-AzureResourceGroup.ps1 -ResourceGroupLocation '미국 서부' -TemplateFile .. \Templates\WebSiteSQLDatabase.json -TemplateParametersFile .. \Templates\WebSiteSQLDatabase.param.dev.json -StorageAccountName myStorageAccount -UploadArtifacts true" 유효한 지역인 리소스 그룹의 스토리지 위치와 위치를 묻는 메시지가 표시됩니다("미국 서부"를 선택했습니다).
+
+
+  몇 초 후에 PowerShell 스크립트가 완료됩니다. 또한 스크립트는 훌륭한 세부 정보 출력을 제공하므로 어떤 리소스가 만들어졌는지, 어떤 오류(있는 경우)가 발생했는지 명확하게 확인할 수 있습니다.
+
+
+  스크립트가 완료되면 Azure 리소스 그룹 및 지정한 Azure 리소스가 사용자를 위해 만들어졌으며(이전 예제에서와 마찬가지로) <a href="https://portal.azure.com/" target="_blank">Azure Portal</a>에서 볼 수 있습니다.
+
+  <h2>요약</h2>
+
+  이 모든 것이 끝나면 이제 Azure 리소스 그룹 Project 소개했습니다. Azure 갤러리 템플릿을 기반으로 Visual Studio 프로젝트를 만드는 방법을 보여 줍니다.도구를 사용하여 Azure 리소스 그룹 및 리소스를 정의하고 배포하는 방법 Azure 리소스 그룹은 애플리케이션을 호스트하는 데 필요한 환경을 설정하는 좋은 방법입니다.

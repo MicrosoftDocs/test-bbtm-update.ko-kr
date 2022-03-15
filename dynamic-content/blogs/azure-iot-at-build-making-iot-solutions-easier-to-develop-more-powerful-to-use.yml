@@ -1,0 +1,176 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 46eb75a728e0eb93b5e87a7673ca3d433584dd83
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906207"
+Slug: azure-iot-at-build-making-iot-solutions-easier-to-develop-more-powerful-to-use
+Title: '빌드의 Azure IoT: IoT 솔루션을 더 쉽게 개발하고 사용하기에 더 강력하게 만들기'
+Summary: 이번 주, 시애틀에서 열리는 최고의 개발자 컨퍼런스인 Microsoft Build에서 IoT를 더욱 간소화하고 고객과 파트너의 가치 창출 시간을 획기적으로 가속화하는 최신 혁신을 발표하게 되어 기쁩니다.
+Content: >-
+  <p><img alt="Ran Tech / Microsoft 3/9/17" border="0" height="682" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/98896b46-b704-4864-9065-3c9e14e4b380.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ran Tech / Microsoft 3/9/17" width="1024"></p>
+
+
+  <p>IoT는 전 세계의 모든 비즈니스를 혁신하고 있으며 이러한 변화는 가속화되고 있습니다. 기업은 수십억 개의 IoT 디바이스를 활용하여 고객이 제품을 사용하는 동안 연결되지 않았던&mdash; 비즈니스의 중요한 부분에 대한 귀중한 인사이트를 찾을 수 있도록 돕고 있으며, 고객이 제품을 사용하기 전에 자산을 서비스하는 시기, 에너지 소비를 줄이는 방법, 운영을 최적화하는 방법 및 기업의&rsquo; 상상력에 의해서만 제한되는 수천 개의 다른 사용자 사례를 찾을 수 있습니다.</p>
+
+
+  <p>Microsoft는 모든 회사에서 빠르고 안전하게 혜택을 누릴 수 있도록 IoT를 단순화하는 데 열정적이기 때문에&rsquo; IoT를 선도하고 있습니다.</p>
+
+
+  <p>작년에 우리는 <a href="https://blogs.microsoft.com/iot/2018/04/04/microsoft-will-invest-5-billion-in-iot-heres-why/" target="_blank">50억 달러의 약정</a>을 발표했고, 올해는 업계에서 보고 있는 <a href="https://blogs.microsoft.com/blog/2019/04/04/one-year-in-how-our-5b-investment-in-iot-and-intelligent-edge-is-accelerating-customer-partner-and-solution-innovation/" target="_blank">모멘텀을 강조</a> 했습니다. 이번 주, 시애틀&rsquo;의 <a href="https://www.microsoft.com/en-us/build" target="_blank">프리미어 개발자 컨퍼런스인 Microsoft Build</a>에서 IoT를 더욱 간소화하고 고객과 파트너의 가치 창출 시간을 획기적으로 가속화하는 최신 혁신을 공유하게 되어 기쁩니다.</p>
+
+
+  <h2>IoT 가속화</h2>
+
+
+  <p>Azure IoT 사용하여 클라우드 기반 IoT 솔루션을 개발하는 것은 그 어느 때보다 빠르거나 안전하지만,&rsquo; 더 쉽게 만들 수 있는 방법을 항상 찾고 있습니다. 고객 및 파트너와&rsquo; 협력하여 디바이스 쪽에서 가속화할 수 있는 기회를 보았습니다.</p>
+
+
+  <p>우리가 보는 과제 중 하나는 디바이스에 기록된 소프트웨어와 클라우드에서 일치해야 하는 소프트웨어 간의 긴밀한 결합입니다. 이를&rsquo; 설명하기 위해 과거의 비슷한 문제와 해결 방법을 살펴볼 가치가 있습니다.</p>
+
+
+  <p>Windows 초기 버전은 키보드 및 마우스와 같은 광범위한 연결된 디바이스 집합을 지원하는 데 어려움을 겪었습니다. 각 디바이스에는 디바이스가 작동하기 위해 Windows 설치해야 하는 자체 소프트웨어가 함께 제공되었습니다. 디바이스의 소프트웨어와 Windows 설치해야 하는 소프트웨어는 긴밀한 결합이 있었고, 이 긴밀한 결합으로 인해 개발 프로세스가 느리고 디바이스 제조업체에 취약해졌습니다.</p>
+
+
+  <p>Windows 플러그 앤 플레이로 이 문제를 해결했는데, 그 핵심은 디바이스가 연결되었을 때 Windows 선언하고 제시할 수 있는 기능 모델이었습니다. 이 기능 모델을 사용하면 수천 대의 다른 디바이스가 Windows 연결하고 Windows 소프트웨어를 설치할 필요 없이 사용할 수 있습니다.</p>
+
+
+  <h2>IoT Plug and Play</h2>
+
+
+  <p>지난 주 말, IoT 디바이스가 기능을 선언할 수 있는 개방형 모델링 언어를 기반으로 하는 IoT 플러그 앤 플레이를 <a href="https://azure.microsoft.com/en-us/blog/intelligent-edge-innovation-across-data-iot-and-mixed-reality/" target="_blank">발표</a> 했습니다. 디바이스 기능 모델이라고 하는 이 선언은 IoT 디바이스가 <a href="https://azure.microsoft.com/en-us/services/iot-central/?&amp;OCID=AID739522_SEM_BufunwZd&amp;MarinID=BufunwZd_79233647824710_iot%20central%20azure_be_c__1267737284705687_kwd-79233839296255:loc-190_" target="_blank">Azure IoT Central</a> 및 파트너 솔루션과 같은 클라우드 솔루션에 연결할 때 표시되며, 그러면 코드를 작성하지 않고도 디바이스를 자동으로 이해하고 반복&mdash;과 상호 작용을 시작할 수 있습니다.</p>
+
+
+  <p>또한 IoT 플러그 앤 플레이는 하드웨어 파트너가 IoT 플러그 앤 플레이 호환 디바이스를 빌드할 수 있게 해 줍니다. 그러면 Azure Certified for IoT 프로그램으로 인증을 받고 고객과 파트너가 즉시 사용할 수 있습니다. 이 방법은 Linux, Android, Azure Sphere OS, Windows IoT, RTOS 등 모든 운영 체제를 실행하는 디바이스에서 작동합니다. 또한 모든 IoT 플러그 앤 플레이 지원은 언제나처럼 오픈 소스입니다.</p>
+
+
+  <p>마지막으로, Visual Studio Code IoT 플러그 앤 플레이 디바이스 기능 모델 모델링을 지원하고 해당 모델을 기반으로 IoT 디바이스 소프트웨어를 생성하여 IoT 디바이스 소프트웨어 개발을 크게 가속화합니다.</p>
+
+
+  <p>Well&rsquo;은 빌드에서 IoT 플러그 앤 플레이를 시연할 예정이며, 올 여름 미리 보기로 제공될 예정입니다. IoT 플러그 앤 플레이를&rsquo; 디자인하기 위해 Weve는 대규모 시작 파트너와 협력하여 하드웨어가 준비되었는지 확인했습니다.</p>
+
+
+  <p><img alt="Build_IoT_replace" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cd619c6b-277e-4bc1-a17e-7a9ca8d83007.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Build_IoT_replace" width="1024"></p>
+
+
+  <p>인증된 디바이스는 이제 미리 보기용 <a href="https://catalog.azureiotsolutions.com/" target="_blank">Azure IoT 디바이스 카탈로그</a>에 게시되며, Azure IoT Central 및 <a href="https://azure.microsoft.com/en-us/services/iot-hub/" target="_blank">Azure IoT Hub</a>는 IoT 플러그 앤 플레이와 통합된 첫 번째 서비스가 될 것이지만, 앞으로 몇 달 안에 <a href="https://azure.microsoft.com/en-us/services/digital-twins/" target="_blank">Azure Digital Twins</a> 및 기타 솔루션에 대한 지원을 추가할 예정입니다. IoT 플러그 앤 플레이에 대한 자세한 내용을 보려면 <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Introduction-to-IoT-Plug-and-Play" target="_blank">이 비디오를 시청</a>하고 Azure IoT Central의 IoT 플러그 앤 플레이 지원에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/blog/build-with-azure-iot-central-and-iot-plug-and-play/">이 블로그 게시물을</a> 참조하세요.</p>
+
+
+  <h2>IoT 플러그 앤 플레이 연결 파트너 발표</h2>
+
+
+  <p>저전력 네트워킹에 대한 옵션이 증가함에 따라 IoT 프로젝트에서 셀룰러 기술의 역할이 증가하고 있습니다. &rsquo;현재는 IoT 플러그 앤 플레이 연결 파트너를 소개합니다. 이러한 파트너&rsquo; 기술과 Azure IoT 간의 긴밀한 통합은 고객 배포를 간소화하고 새로운 기능을 추가합니다.</p>
+
+
+  <p>이번 주 빌드에서는 Twilio의 <a href="https://www.twilio.com/wireless/trust-onboard" target="_blank">Trust Onboard</a> 를 활용하는 이러한 통합 중 첫 번째 통합을 강조 표시합니다. 통합은 SIM에 기본 제공되는 보안 기능을 사용하여 Azure를 자동으로 인증하고 연결하여 현재 제조 프로세스에서 작동하는 IoT 디바이스를 고유하게 식별하는 안전한 수단을 제공합니다.</p>
+
+
+  <p>다음은 우리가 작업하는 많은 연결 파트너 중 일부입니다.</p>
+
+
+  <p><img alt="Build_IoT_2" border="0" height="460" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8814bbca-e63b-4f6e-8d34-7d943b6a2db9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Build_IoT_2" width="1024"></p>
+
+
+  <h2>개발자를 위해 Azure IoT Central을 더욱 강력하게 만들기</h2>
+
+
+  <p>작년에는 고객과 파트너가 IoT 애플리케이션을 15초 안에 프로비전하고, 몇 시간 안에 사용자 지정하고, 클라우드에서 코드를 작성하지 않고도 같은 날&mdash; 프로덕션으로 전환할 수 있는 Azure IoT Central의 일반 공급이 발표되었습니다.</p>
+
+
+  <p>많은 고객이 Azure IoT 플랫폼 서비스에서 직접 IoT 솔루션을 빌드하지만,&rsquo; Azure IoT Central에서 제공하는 빠른 애플리케이션 개발과 같은 고객과 파트너의 상승이 발생합니다. 물론 Azure IoT Central은 동일한 훌륭한 Azure IoT 플랫폼 서비스를 기반으로 합니다.</p>
+
+
+  <p>오늘 빌드&rsquo;에서 개발자를 위해 Azure IoT Central을 활성화하고 단순화하는 방법을&rsquo; 설명하는 새로운 기능 집합을 발표했습니다. Well&rsquo;은 고객과 파트너가 Azure IoT Centrals&rsquo; UI를 쉽게 수정하여 자신의 모양과 느낌을 준수할 수 있도록 하는 새로운 개인 설정 기능과 같은 몇 가지 혁신을 보여 줍니다. 빌드 키노트&rsquo;에서 스타벅스가 스토어의 Azure Sphere 디바이스에 연결된 Azure IoT Central 솔루션에 이 개인 설정 기능을 사용하는 방법을 보여 드립니다.</p>
+
+
+  <p>또한 Well&rsquo;은 Azure IoT Central이 IoT 플러그 앤 플레이와 함께 작업하여 엔드투엔드 IoT 솔루션을 빌드하는 데 얼마나 빠르고 쉬운지 보여 주며, Microsoft는 여전히 호출기를 착용하고 고객과 파트너가 IoT가 제공하는 이점에 집중할 수 있도록 모든 것을 가동하고 있습니다. Azure IoT Central 공지사항에 대해 자세히 알아보려면 <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Central-New-Integration-and-Extensibility-Features" target="_blank">이 비디오를 시청하세요</a>.</p>
+
+
+  <h2>성장하는 Azure Sphere 하드웨어 에코시스템</h2>
+
+
+  <p>Azure Sphere는 보안 MCU 기반 IoT 디바이스를 쉽게 만들기 위한 Microsofts&rsquo; 포괄적인 솔루션입니다. Azure Sphere는 Microsoft 보안 기술이 내장된 MCU, 사용자 지정 Linux 커널을 기반으로 하는 OS 및 클라우드 기반 보안 서비스를 포함하는 통합 시스템입니다. Azure Sphere는 디바이스와 클라우드 간의 보안 통신, 디바이스 인증 및 증명, 지속적인 OS 및 보안 업데이트를 제공합니다. Azure Sphere는 강력한 심층 방어 디바이스 보안을 제공하여 원격 공격의 도달 범위와 영향을 제한하고 보안 업데이트를 통해 디바이스 상태를 갱신합니다.</p>
+
+
+  <p>이번 주 빌드에서 Well&rsquo;은 디바이스 제조업체의 출시 시간을 단축하는 하드웨어 모듈, 조직이 신속하게 프로토타입을 제작하는 데 도움이 되는 개발 키트 및 새로운 보호자 모듈과 같은 새로운 솔루션 세트를 소개합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/guardian-modules-bringing-azure-sphere-security-to-brownfield-iot/" target="_blank">가디언 모듈은</a> 브라운필드 장비를 보호하고 위험을 완화하며 IoT의 이점을 실현하는 Azure Sphere에 빌드된 새로운 종류의 디바이스입니다. 장비 재설계가 필요하지 않은 브라운필드 장비에 물리적으로 연결하여 중요한 운영 장비를 네트워크에 노출하지 않고 데이터를 처리하고 디바이스를 제어합니다. 보호 모듈을 통해 Azure Sphere는 브라운필드 디바이스를 보호하고, 공격을 사용하지 않도록 운영 장비를 보호하고, 디바이스 개조 프로젝트를 간소화하며, 무선 업데이트 및 IoT 연결을 통해 장비 효율성을 높입니다.</p>
+
+
+  <p>빌드에 표시되는 7개의 모듈 및 개발 키트는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><strong>Avnet Guardian 모듈.</strong> 이전에 연결하기에는 너무 중요하다고 판단되는 장비에 Azure Spheres&rsquo; 보안을 제공하여 brownfield IoT의 잠금을 해제합니다. 곧 사용할 수 있습니다.</li>
+   <li><strong>Avnet MT3620 스타터 키트.</strong> Azure Sphere 프로토타입 및 개발 플랫폼. 커넥터를 사용하면 다양한 MikroE Click 및 Grove 모듈을 사용하여 쉽게 확장할 수 있습니다. 2019년 5월에 사용할 수 있습니다.</li>
+   <li><strong>Avnet Wi-Fi 모듈.</strong> 쉬운 최종 제품 어셈블리를 위해 설계된 Azure Sphere 기반 모듈입니다. 스탬프 홀(카스텔레이션) 핀 디자인으로 품질 보증을 간소화합니다. 2019년 6월에 사용할 수 있습니다.</li>
+   <li><strong>AI-Link WF-M620-RSC1 Wi-Fi 모듈.</strong> 비용에 민감한 애플리케이션용으로 설계되었습니다. 스탬프 홀(카스텔레이션) 핀 디자인으로 품질 보증을 간소화합니다. 지금 사용할 수 있습니다.</li>
+   <li><strong>MT3620 개발 보드를 참조하세요.</strong> 포괄적인 프로토타입 생성을 위해 설계되었습니다. 사용 가능한 확장 방패를 사용하면 Grove 모듈에 대한 이더넷 연결 및 지원을 사용할 수 있습니다. 지금 사용할 수 있습니다.</li>
+   <li><strong>MT3620 미니 개발 보드를 참조하세요.</strong> 크기가 제한된 프로토타입용으로 설계되었습니다. 프로토타입에서 상용화까지의 빠른 경로를 위해 AI-Link 모듈을 기반으로 합니다. 2019년 5월에 사용할 수 있습니다.</li>
+   <li><strong>USI 듀얼 밴드 Wi-Fi + Bluetooth 콤보 모듈.</strong> BLE 및 Bluetooth 5 Mesh를 지원합니다. 비접촉 Bluetooth 페어링 및 디바이스 프로비전의 경우 NFC 태그로도 작동할 수 있습니다. 곧 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <p>모듈에 대해 자세히 알아보려는 사용자를 위해 각각에 대한 사양을 찾고 <a href="https://aka.ms/AzureSphereHardware" target="_blank">Azure Sphere 하드웨어 에코시스템 페이지에서</a> 자세한 정보를 확인할 수 있습니다.</p>
+
+
+  <h2>Build에서 작동하는 Azure Sphere 참조</h2>
+
+
+  <p>Azure Sphere는 이번 주 Satya Nadellas&rsquo; 기조 연설에서 빌드의 중심 단계를 진행합니다. Microsoft 고객 및 동료 시애틀 지역 회사 인 Starbucks는 파트너와 직원이 고객과 더 잘 소통하고, 에너지 소비 및 폐기물 감소를 관리하고, 음료 일관성을 보장하고, 예측 유지 관리를 용이하게 할 수 있도록 선택 장비 내에서 Azure Sphere에 구축 된 Azure IoT 기능 및 보호자 모듈을 테스트하는 방법을 선보일 것입니다. 회사&rsquo; 솔루션도 스타벅스 기술 부스에 전시될 예정입니다.</p>
+
+
+  <h2>새로운 Azure IoT Edge 혁신 발표</h2>
+
+
+  <p>오늘 <a href="https://aka.ms/iotedge-on-kubernetes" target="_blank">Kubernetes에 대한 Azure IoT Edge 지원의 공개 미리 보기를 발표합니다</a>. 이를 통해 고객과 파트너는 온-프레미스의 Kubernetes 클러스터에 <a href="https://azure.microsoft.com/en-us/services/iot-edge/" target="_blank">Azure IoT Edge</a> 워크로드를 배포할 수 있습니다. &rsquo;에지의 중요 비즈니스용 시스템에서 Azure IoT Edge 워크로드가 사용되는 것을 보고 있습니다. 이 새로운 통합을 통해 고객은 Kubernetes에서 제공하는 기능이 풍부하고 복원력 있는 인프라 계층을 사용하여 Azure IoT Hub에서 중앙에서 안전하게 관리되는 Azure IoT Edge 워크로드를 실행할 수 있습니다. <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deploying-Azure-IoT-Edge-workloads-on-Kubernetes" target="_blank">이 비디오를 시청하여 자세히 알아보세요.</a></p>
+
+
+  <p>추가 IoT Edge 공지는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>Linux ARM64에 대한 Azure IoT Edge 지원 미리 보기(2019년 6월에 제공될 예정).</li>
+   <li><a href="https://azure.microsoft.com/blog/extended-offline-operation-with-azure-iot-edge/" target="_blank">IoT Edge의 일반 공급은 오프라인 지원을 확장</a>했습니다.</li>
+   <li>Windows 10 IoT Enterprise x64에 대한 IoT Edge 지원의 일반 공급.</li>
+   <li>x.509 및 SaS 토큰을 사용하는 새로운 프로비전 기능입니다.</li>
+   <li>새로운 기본 제공 문제 해결 도구.</li>
+  </ul>
+
+
+  <p>IoT Edge의 일반적인 사용 사례는 카메라를 스마트 센서로 변환하여 물리적 세계를 이해하고 디지털 피드백 루프를 사용하도록 설정하는 것입니다. 즉, 선반에서 누락된 제품을 찾고 손상된 제품을 감지하는 것입니다. 이러한 예제에서는 일관되고 신뢰할 수 있는 결과, 대규모 스트리밍 기능 및 더 빠른 처리를 위한 특수 하드웨어를 제공하여 비즈니스에 실시간 인사이트를 제공하기 위해 까다로운 컴퓨터 비전 알고리즘이 필요합니다. Build&rsquo;에서는 Lenovo 및 NVIDIA와 협력하여 이러한 애플리케이션의 개발 및 배포를 대규모로 간소화합니다. 범용 스트리밍 분석을 위한 <a href="https://developer.nvidia.com/deepstream-sdk" target="_blank">NVIDIA DeepStream SDK</a> 를 사용하면 Lenovo 하드웨어를 실행하는 단일 IoT Edge 서버가 최대 70개의 1080P/30FPS H265 비디오 스트림 채널을 처리하여 비용 효율적이고 빠른 출시 시간 솔루션을 제공할 수 있습니다.</p>
+
+
+  <p>올 여름, NVIDIA DeepStream SDK는 IoT Edge 마켓플레이스에서 사용할 수 있습니다. 또한 Lenovos&rsquo;의 새로운 <a href="https://lenovopress.com/lp1069-introducing-the-thinksystem-se350" target="_blank">ThinkServer SE350</a> 및 GPU 기반 &ldquo;의 작은&rdquo; 에지 게이트웨이는 IoT Edge에 대한 인증을 받게 됩니다.</p>
+
+
+  <h2>Azure 지도 통해 Mobility Services 발표</h2>
+
+
+  <p>현재 Azure에서 빌드된 앱의 수가 늘어나면서 위치 정보를 어떤 식으로든 활용하도록 설계되었습니다.</p>
+
+
+  <p>지난 11월, <a href="https://azure.microsoft.com/en-us/blog/iot-for-smart-cities-new-partnerships-for-azure-maps-and-azure-digital-twins/" target="_blank">세계&rsquo; 1위 대중교통 서비스 제공업체인 Moovit과</a> <a href="https://azure.microsoft.com/en-us/services/azure-maps/" target="_blank">Azure 지도</a> 위한 새로운 플랫폼 파트너십을 발표했습니다. &rsquo;이 파트너십을 통해 달성한 것은 TomTom과 함께 오늘 구축한 것과&rsquo; 비슷합니다. 이번 주&rsquo; 빌드에서는 최신 모빌리티 솔루션을 빌드하기 위해 Moovits&rsquo; API를 활용하는 API 세트가 될 Azure 지도 Mobility Services를 발표했습니다.</p>
+
+
+  <p>이러한 새로운 서비스를 통해 대중 교통,&rsquo; 자전거 공유, 스쿠터 공유 등을 통합하여 고객이 이동 시간을 최적화하고 교통 혼잡을 최소화하기 위해 대체 교통 모드를 활용하여 경로를 계획할 수 있는 대중 교통 경로 권장 사항을 제공할 수 있습니다. 고객은 또한 자전거 및 스쿠터 도킹 스테이션에 대한 실시간 인텔리전스와 현재 및 예상 가용성 및 실시간 대중 교통 정류장 도착을 포함하여 자동차 공유 차량 가용성에 액세스 할 수 있습니다.</p>
+
+
+  <p>고객은 지리 공간 또는 위치 데이터(예: 현장 서비스, 물류, 제조 및 스마트 도시용 앱)를 사용하는 모든 애플리케이션을 IoT 애플리케이션&mdash;용 Azure 지도 사용할 수 있습니다. 소매 앱은 모바일 인텔리전스를 통합하여 고객이 매장에 액세스하거나 전송 접근성을 최적화하는 향후 매장 위치를 계획할 수 있도록 도와줄 수 있습니다. 현장 서비스 앱은 실시간 서비스 수요에 따라 한 고객에서 다른 고객으로 직원을 안내할 수 있습니다. 도시 계획자는 모바일 인텔리전스를 사용하여 거주자의 이동을 분석하여 자신의 모바일 서비스를 계획하고, 새로운 개발을 시각화하고, 거주자의 이익을 위해 위치의 우선 순위를 지정할 수 있습니다.</p>
+
+
+  <p>Azure 지도 Azure 지도 <a href="https://azure.microsoft.com/en-us/blog/topics/azure-maps/" target="_blank">블로그</a>에서 차세대 위치 서비스를 위한 길을 닦는 방법에 대한 최신 정보를 확인할 수 있으며&rsquo;, 이번 주 빌드에서 Azure 지도 부스를 방문하여 모바일 및 공간 운영 서비스가 작동하는 것을 확인해야 합니다.</p>
+
+
+  <h2>Windows 10 IoT를 사용하여 로봇 시스템 개발 간소화</h2>
+
+
+  <p>Microsoft와 Open Robotics는 ROS(로봇 운영 체제)를 Windows 10 IoT에 일반적으로 사용할 수 있도록 하기 위해 협력했습니다. &rsquo;또한 커뮤니티에서 지원하는 Visual Studio Code 확장에 대한 향후 Windows, 디버깅 및 시각화를 지원하여 Visual Studio Code ROS 솔루션을 더욱 쉽게 빌드할 수 있습니다. <a href="https://blogs.windows.com/buildingapps/?p=55279" target="_blank">Windows 10 IoT와 ROS 간의 통합에 대해 자세히 알아보세요.</a></p>
+
+
+  <h2>빌드에서 우리를 보러 오세요</h2>
+
+
+  <p>이번 주 시애틀에 있는 경우&rsquo; 부스에서 이러한 새로운 기술 중 일부를 볼 수 있으며 IoT 실습 랩에서 함께 플레이할 수도 있습니다. Ill&rsquo;은 또한 IoT Vision 및 로드맵에서 세션을 호스팅합니다. 이러한 공지 사항에 대한 자세한 내용을 듣고 이러한 흥미로운 새로운 기술 중 일부가 작동하는 것을 확인하세요.</p>

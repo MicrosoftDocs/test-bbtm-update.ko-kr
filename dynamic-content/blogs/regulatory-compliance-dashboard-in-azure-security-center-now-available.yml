@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b92c156913061d2a86637851719e16e08fb9766b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912516"
+Slug: regulatory-compliance-dashboard-in-azure-security-center-now-available
+Title: 이제 Azure Security Center의 규정 준수 대시보드를 사용할 수 있습니다.
+Summary: 이제 Azure Security Center는 최근 공개 미리 보기로 릴리스된 새로운 규정 준수 대시보드를 사용하여 규정 준수 표준을 충족하는 이 프로세스를 간소화하는 데 도움이 됩니다.
+Content: >-
+  <p>규정 준수 의무를 충족하고 벤치마크 표준의 모든 요구 사항을 준수하는 것은 클라우드 또는 하이브리드 환경에서 중요한 과제가 될 수 있습니다. 수행할 평가를 식별하고, 상태를 평가하고, 격차를 해결하는 것은 매우 어려운 작업일 수 있습니다. 이제 ASC(Azure Security Center)를 통해 최근 공개 미리 보기로 릴리스된 새로운 규정 준수 대시보드를 통해 이 프로세스를 간소화할 수 있습니다.</p>
+
+
+  <p>규정 준수 대시보드는 Azure 환경의 지속적인 평가를 기반으로 지원되는 표준 및 규정 집합에 대한 규정 준수 상태에 대한 인사이트를 제공합니다.</p>
+
+
+  <p>Azure Security Center에서 수행하는 평가는 보안 모범 사례에 따라 하이브리드 클라우드 환경의 위험 요소를 분석합니다. 이러한 평가는 지원되는 표준 집합의 선택적 규정 준수 제어에 매핑됩니다. 규정 준수 대시보드에서 특정 표준 또는 규정의 컨텍스트에서 환경 내 모든 평가의 상태를 단일 보기로 볼 수 있습니다. 권장 사항에 따라 작업하고 환경에서 위험 요소를 줄임에 따라 준수 상태 개선을 확인할 수 있습니다.</p>
+
+
+  <h2>규정 준수 상태 평가 및 개선</h2>
+
+
+  <p>Azure Security Center 규정 준수 블레이드에서 지원되는 표준 집합과 관련하여 규정 준수 상태의 주요 부분에 대한 개요를 확인할 수 있습니다. 현재 지원되는 표준은<strong> Azure CIS</strong>, <strong>PCI DSS 3.2</strong>,<strong> ISO 27001</strong> 및 <strong>SOC TSP</strong>입니다.</p>
+
+
+  <p>대시보드에서 전체 규정 준수 점수와 각 표준의 통과 및 실패 평가 수를 확인할 수 있습니다. 이제 사용자에게 중요한 표준 또는 규정을 준수하는 격차에 집중할 수 있습니다.</p>
+
+
+  <p style="line-height: normal; margin-bottom: 0pt;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ae98968-0336-4f97-8cdf-321cb5150f59.png"><img alt="Azure Security Center regulartory compliance dashboard screenshot" border="0" height="836" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/630c781f-1fe1-456d-9b94-a584af1b75bb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Security Center 정기 준수 대시보드 스크린샷" width="1553"></a></p>
+
+
+  <p>ASC 규정 준수 대시보드는 대시보드 내에서 직접 권장 사항을 확인하여 규정 준수 상태를 개선하는 데 도움이 되도록 설계되었습니다. 각 권장 사항을 클릭하여 권장 사항을 구현해야 하는 리소스를 포함하여 세부 정보를 검색합니다.</p>
+
+
+  <p>규정 준수 대시보드에서 제공하는 정보는 지원되는 표준을 사용하여 규정 준수 상태에 대한 증거를 내부 및 외부 감사에게 제공하는 데 매우 유용할 수 있습니다. 관련자와 쉽게 공유할 수 있는 보고서를 만들고 내보내는 기능과 같은 추가 기능에 대해 계속 지켜봐 주시기 바랍니다. 또한 ASC 규정 준수 대시보드의 데이터는 곧 <a href="https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud" target="_blank">준수 관리자</a>에 통합되어 수동 프로세스가 필요하지 않고 Azure에서 직접 준수 관리자 환경으로 자동화된 평가의 이점을 제공합니다.</p>
+
+
+  <p>규정 준수 대시보드 미리 보기는 <a href="https://docs.microsoft.com/azure/security-center/" target="_blank">Azure Security Center</a>의 표준 가격 책정 계층 내에서 사용할 수 있으며 처음 30일 동안 무료로 사용해 볼 수 있습니다.</p>
+
+
+  <p>Azure Security Center의 규정 준수에 대한 자세한 내용은 <a href="https://aka.ms/AscRegulatoryComplianceLearnMore" target="_blank">자습서: 규정 준수 개선</a> 설명서를 &ldquo; 참조하세요.&rdquo; 그것을 시도하고 당신이 어떻게 생각하는지 알려주세요!</p>

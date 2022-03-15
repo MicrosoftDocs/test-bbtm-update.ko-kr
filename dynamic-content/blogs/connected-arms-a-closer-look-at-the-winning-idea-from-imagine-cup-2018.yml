@@ -1,0 +1,133 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d42449712d3442494c2e48e3d4fc247620d04304
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911977"
+Slug: connected-arms-a-closer-look-at-the-winning-idea-from-imagine-cup-2018
+Title: '연결된 팔 : Imagine 컵 2018에서 우승 아이디어를 자세히 살펴'
+Summary: >
+  농부들이 병든 식물을 식별하고 관리하는 데부터 청각 장애인을 돕는 것까지, 올해의 최종 후보자들은 각계각층의 사람들에게 영향을 미치는 어려운 문제를 해결했습니다. 이 게시물에서는 Imagine Cup 2018 smartARM의 챔피언 프로젝트를 자세히 살펴봅습니다.
+Content: >-
+  <p><em>이 블로그 게시물은 <a href="https://www.linkedin.com/in/nile-wilson/" target="_blank">나일 윌슨</a>, 소프트웨어 엔지니어 인턴, 마이크로 소프트에 의해 공동 저술되었다. </em></p>
+
+
+  <p>이전 게시물에서, 우리는 <a href="https://aka.ms/ImagineCup1" target="_blank">올해&rsquo; Imagine Cup에서 최고의 팀 중 몇 팀이</a> 우승 솔루션의 핵심에 인공 지능 (AI)을 가지고 방법을 탐구했다. 농부들이 병든 식물을 식별하고 관리하는 데부터 청각 장애인을 돕는 것까지, 올해&rsquo; 결선 진출자들은 각계각층의 사람들에게 영향을 미치는 어려운 문제를 해결했습니다.</p>
+
+
+  <p>이 게시물에서는 Imagine Cup 2018 smartARM의 챔피언 프로젝트를 자세히 살펴봅습니다.</p>
+
+
+  <h2>smartARM</h2>
+
+
+  <p>사민 칸과 하마알 추드리는 smartARM 뒤에 두 명의 멤버 팀입니다. 이야기는 이 중학교 반 친구들의 우연히 만나는 것으로 시작됩니다. 토론토 대학교에서 기계 학습 및 컴퓨터 비전을 공부한 Samin은 2018년 1월 UofTHacks 해커톤에 등록하기로 결정했고, 우연히 온타리오 공과대학에서 메카트로닉스 공학을 공부하면서 하마야에 진출했습니다. 그의 배경에도 불구하고, 하마야알은 참여보다 관전에 더 관심이 있었다. 그러나 따라잡을 때, 그들은 컴퓨터 비전, 기계 학습 및 메카트로닉스의 기술 세트를 결합하여 특별한 것을 만들 수 있다는 것을 깨달았습니다. 이 실현과 함께, 그들은 해커톤에서 팀을 형성하고 이후 함께 일하고있다. 초기 해커톤에서 Imagine 컵에 이르기까지 칸과 Choudhrys&rsquo; 아이디어는 작은 프로젝트에서 세계에 영향을 미치도록 설계된 제품으로 발전했습니다.</p>
+
+
+  <p align="center"><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9d9dd8f2-347c-429d-a153-a3609e082140.png"><img alt="smartARM prototype" border="0" height="511" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4958be48-500d-4413-a2ec-f79e1c83b90f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="smartARM 프로토타입" width="766"></a></em></p>
+
+
+  <p align="center"><em>테이블에 손바닥을 올려 놓는 스마트ARM 프로토타입.</em></p>
+
+
+  <p>개발 초기 단계에서 칸과 Choudhry는 아넬리사 보우리(Annelisa Bowry)와 함께 일할 수 있었는데, 그녀는 선천성 수족절단원으로 자신을 사용할 수 있는 장치 개발에 대한 의견을 제공하게 되어 기뻤습니다. 그녀의 경험을 듣고 직접적인 피드백을 받는 것은 팀에 큰 도움이 되었습니다.</p>
+
+
+  <p>로봇 상지 보철물은 새로운 것이 아니지만 Khan과 Choudhrys&rsquo; AI 접근 방식은 보철 제어의 아이디어를 혁신하고 수족을 위한 잘 작동하는 저렴한 로봇 솔루션의 타당성을 크게 향상시킵니다. &rsquo;smartARM이 AI를 사용하여 오늘날 고급 보철 개발자가 직면한 어려운 문제를 우회하는 방법과 이 솔루션이 커뮤니티에 미치는 영향을 살펴보겠습니다.</p>
+
+
+  <h2>(보철) 암의 상태</h2>
+
+
+  <p>세부 사항으로 점프하기 전에,&rsquo; 그것은 상지 보철물의 종류가 오늘 거기 밖으로 무엇인지 이해하는 것이 중요합니다. 현대 보철 팔은 기능성과 화장품의 두 가지 범주로 광범위하게 정렬 할 수 있습니다.</p>
+
+
+  <p>기능적 보철 범주 내에는 간단한 후크부터 인공신경망 인터페이싱 로봇 암에 이르기까지 다양한 기능을 사용할 수 있습니다. 불행히도, 더 높은 함수는 종종 더 높은 비용을 수반합니다.</p>
+
+
+  <p>일상 활동을 진행하는 경우 다양한 손아귀와 조합을 사용하여 다양한 개체와 표면과 상호 작용하는 경향이 있습니다. 후크와 같은 저비용 및 간단한 솔루션은 일반적으로 한 가지 유형의 손아귀만 수행합니다. 이러한 솔루션은 신체의 특정 부분을 이동 하는 사용자에 의해 작동 하 고 신체에 의해 작동, 그들의 어깨 등. 이러한 간단한 솔루션은 비용이 저렴하고 케이블 장력을 통해 사용자에게 힘을 줄 수 있지만 보철물의 기능은 매우 제한적입니다. 또한 더 이상 팔에 전력을 공급하기 위해 신체의 움직임이 필요하지 않으므로 사용자의 부담을 줄이는 이러한 간단한 팔에 대한 전기 구동 대안이 있지만 일반적으로 훨씬 더 많은 기능을 제공하지 않고도 무겁고 비용이 많이 듭니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8dd30ba8-2cc6-420e-baa5-a2b4389c7533.jpg"><img alt="Neural interfacing research prosthetic arm" border="0" height="504" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e0672855-ca3b-4790-81df-5636b0e92ac2.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="인공신경망 인터페이싱 연구 보철 팔" width="756"></a></p>
+
+
+  <p align="center"><em>인공신경망 인터페이싱 연구 보철 팔. 사진 제공: 존스 홉킨스 대학 응용 물리학 연구소. </em></p>
+
+
+  <p>대조적으로, 인공신경망 인터페이스 상지 보철물은 더 자연스러운 제어와 여러 그립을 포함하여 더 큰 기능을 제공하지만 훨씬 더 많은 비용이 듭니다. 이러한 근전도 보철물은 근육의 전기 활동(EMG)의 변화를 포착하고 특정 변경 내용을 해석하여 로봇 손에 명령으로 라우팅하도록 프로그래밍됩니다. 이렇게 하면 착용자가 팔을 더 자연스럽게 제어할 수 있습니다. 그러나, 근전도 보철물은 복잡한 손 움직임에 개별 근육 활성화의 직접, 조정된 번역을 허용하기 위하여 아직 충분히 진보되지 않습니다. 이러한 근전도 장치 중 일부는 표적 근육 재인증 (TMR)이라는 작업을 통해 사지의 끝에서 가슴으로 신경 끝을 이동하는 수술이 필요합니다.</p>
+
+
+  <p>수술이 없더라도 이러한 근전도 보철물의 높은 비용과 제한된 가용성은 접근성을 제한합니다. 많은 사람들이 여전히 연구 단계에 있으며 아직 상업적으로 사용할 수 없습니다.</p>
+
+
+  <p>SmartARM은 저비용 재료와 AI를 사용하여 저비용, 저기능 및 고비용, 팔꿈치 아래의 고기능 보철물 사이의 격차를 메우는 것을 목표로 합니다.</p>
+
+
+  <h2>단순성 및 혁신</h2>
+
+
+  <p>오늘날 시장에서 사용할 수 있는 기능을&rsquo; 더 잘 이해했으므로 smartARM이 어떻게 다른지 물어볼 &ldquo;수 있습니다.&rdquo;</p>
+
+
+  <p>근전도 보철물과 달리 smartARM은 신경 신호를 해석하여 손 모양을 파악하기 위해 알리고 영향을 주지 않습니다. smartARM은 사용자가 수술을 받거나 근육을 훈련하거나 보철물을 제어하기 위해 남은 신경 끝을 보내도록 요구하는 대신 AI를 사용하여 스스로 생각합니다. EMG를 통해 개별 손가락 이동 의도 및 복잡한 손아귀를 결정하는 것은 사소한 문제입니다. 제어를 위해 주변 신경계를 우회함으로써 smartARM은 근육 활성화의 특정 변화를 해석하는 능력에 의해 제한되지 않는 쉬운 제어를 허용합니다.</p>
+
+
+  <p>smartARM의 손목에 배치된 카메라를 사용하면 명시적 사용자 입력 또는 EMG 신호 없이 보철 사지가 앞의 개체에 적합한 손아귀를 확인할 수 있습니다. 팔 &ldquo;은 그 자체로 생각하지만&rdquo; , 그 자체로는 행동하지 않습니다. 사용자는 smartARM이 활성화되는 시기를 완전히 제어하고 손 위치를 변경하여 파악할 수 있습니다.</p>
+
+
+  <p>카메라를 사용하는 아이디어는 간단해 보일 수 있지만 보&rsquo;철 팔의 세계에서 철저히 추구된 것은 아닙니다. 보철물의 세계가 컴퓨터 비전의 세계와 혼합 될 수있는 방법에 대한 일부 기본 사고는 저렴한 멀티 그립 솔루션의 개발에 도움이 될 수 있습니다.</p>
+
+
+  <p>smartARM과 유사한 솔루션에 대한 또 다른 잠재적인 특징은 학습 능력입니다. AI를 활용하여 개별 손가락 위치를 결정하여 다양한 그립을 형성하기 때문에 보철물은 착용자&rsquo; 사용과 함께 개발이 계속됨에 따라 더 많은 유형의 개체를 인식하는 방법을 배울 수 있습니다.</p>
+
+
+  <h2>작동 원리</h2>
+
+
+  <p>그렇다면 smartARM은 실제로 어떻게 작동할까요?</p>
+
+
+  <p>smartARM의 손목에 배치된 카메라는 손바닥 앞에서 보기의 라이브 비디오를 지속적으로 캡처합니다. 이 비디오 피드는 온보드 Raspberry Pi Zero W 단일 보드 컴퓨터에서 프레임 단위로 처리됩니다. 각 프레임은 Microsoft Azure Machine Learning Studio에서 개발된 로컬로 배포된 다중 클래스 모델을 통해 실행되어 개체&rsquo; 3D 기하학적 모양을 추정합니다.</p>
+
+
+  <p>다른 셰이프와 관련된 다양한 일반적인 그립은 메모리에 저장됩니다. 셰이프가 결정되면 smartARM은 사용자가 개체와 제대로 상호 작용할 수 있는 해당 공통 그립을 선택합니다. 그러나 smartARM은 사용자가 그립을 활성화할 때까지 손 위치를 변경하지 않습니다.</p>
+
+
+  <p>그립을 활성화하기 전에 사용자는 스마트ARM을 파악하려는 개체에 가까이 가져와 그립이 활성화되면 개체를 보유하도록 손을 놓습니다.</p>
+
+
+  <p>그립을 활성화하기 위해 사용자는 이전에 트리거 근육 센서로 보정한 근육을 구부립니다. 플렉스는 미리 계산된 손아귀에 따라 손가락을 적절한 위치로 이동하는 그립을 트리거합니다. 사용자는 보정된 근육이 구부러지는 한 개체를 보유할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/12bf0afd-e4fc-4a7f-b25f-6c502fc0bda0.png"><img alt="AI Oriented Architecture for smartARM" border="0" height="426" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f4659618-932b-4af7-8366-e8bc946382a8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="smartARM용 AI 지향 아키텍처" width="910"></a></p>
+
+
+  <p align="center"><em>smartARM을 위한 AI 지향 아키텍처입니다.</em></p>
+
+
+  <p>smartARM은 클라우드와 호환되므로 처음에 로드된 모델 및 미리 계산된 그립 온보드로 제한되지 않습니다. 시간이 지남에 따라 팔은 하드웨어를 변경하지 않고도 다양한 유형의 모양을 인식하고 다양한 손아귀를 수행하는 방법을 배울 수 있습니다.</p>
+
+
+  <p>또한 사용자는 원하는 그립의 해당 손가락 위치로 비디오 샘플을 클라우드로 전송하여 새로운 손아귀를 수행하도록 팔을 훈련할 수 있습니다. 이를 통해 개인은 smartARM을 사용자 지정하여 일상 생활과 관련된 개체를 인식하고 일반적으로 사용하는 그립을 작동시킬 수 있지만 다른 개체는 그렇지 않을 수 있습니다.</p>
+
+
+  <h2>보철 암 디지털 변환</h2>
+
+
+  <p>칸과 Choudhry는 저가 소재를 클라우드 및 AI와 결합하여 스마트ARM을 최첨단 고급 보철 무기에 대한 저렴하면서도 개인화된 대안으로 제시합니다. 보철물은 여러 유형의 그립을 허용할 뿐만 아니라 비용이 많이 드는 하드웨어 수정 없이도 시간이 지남에 따라 팔이 더 많은 그립을 배울 수 있게 해줍니다. 이것은 비싼 근전도 보철물을 감당할 수 없지만 여전히 사용자 지정 가능한 멀티 그립 손을 사용하려는 사용자의 삶의 질에 큰 영향을 미칠 가능성이 있습니다.</p>
+
+
+  <h3 align="center"><em>&ldquo;Imagine 모든 보조 디바이스에 AI가 주입되고 사용자와 함께 작동하도록 설계된 미래입니다. 이는 전 세계 사람들의&rsquo; 삶의 질에 엄청난 긍정적인 영향을 미칠 수 있습니다.&rdquo;</em></h3>
+
+
+  <p align="center">Joseph Sirosh, AI의 기업 부사장 겸 CTO, Microsoft</p>
+
+
+  <p>Khan과 Choudhrys&rsquo;는 영리하면서도 단순하면서도 인공 지능을 보철 팔에 주입하는 것은 클라우드와 AI가 사람들에게 진정으로 힘을 실어줄 수 있는 방법의 좋은 예입니다.</p>
+
+
+  <p>AI를 사용하여 중요한 문제를 해결하는 방법에 대한 고유한 아이디어가 있고 어디서부터 시작해야 할지 알고 싶다면 <a href="https://learnanalytics.microsoft.com/home/index" target="_blank">Microsoft AI School</a> 사이트에서 자체 AI 솔루션을 구현하는 방법에 대한 무료 자습서를 찾을 수 있습니다. 빌드할 멋진 AI 애플리케이션을 보기 위해 기다릴 수 없습니다.&nbsp;</p>
+
+
+  <p>조셉 &amp; 나일</p>

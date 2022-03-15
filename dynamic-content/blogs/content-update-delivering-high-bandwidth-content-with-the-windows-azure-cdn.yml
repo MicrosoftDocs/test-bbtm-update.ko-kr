@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b4d663baa051d130746ef7a55b28da0d70f68d8c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906017"
+Slug: content-update-delivering-high-bandwidth-content-with-the-windows-azure-cdn
+Title: '콘텐츠 업데이트: Windows Azure CDN High-Bandwidth 콘텐츠 제공'
+Summary: Windows Azure Content Delivery Network(CDN)를 사용하는 방법에 대한 MSDN 라이브러리 콘텐츠가 Windows Azure에서 사용할 수 있는 새로운 기능을 포함하도록 수정, 재구성 및 확장되었습니다.
+Content: '<p>Windows Azure Content Delivery Network(CDN)를 사용하는 방법에 대한 MSDN 라이브러리 콘텐츠가 수정, 재구성 및 확장되어 Windows Azure 플랫폼 관리 포털에서 사용할 수 있는 새로운 기능을 다룹니다. <a href="https://msdn.microsoft.com/en-us/library/ee795176.aspx" target="_blank"> Windows Azure CDN High-Bandwidth 콘텐츠 제공</a>에서 업데이트된 콘텐츠는 CDN 대한 자세한 개요와 관리 포털에서 사용할 수 있는 새로운 기능을 사용하여 CDN 설정, 사용 및 관리하는 방법에 대한 단계별 지침을 제공합니다. 이를 확인하고 페이지 등급/피드백을 사용하거나 전자 메일  <a href="mailto:azuresitefeedback@microsoft.com" target="_blank">  azuresitefeedback@microsoft.com</a>을 보내 의견을 알려주세요. </p>  <p><iframe style="overflow: hidden; width: 300px; height: 50px;" src="https://www.facebook.com/plugins/like.php?href=https://blogs.msdn.com/b/windowsazure/archive/2011/03/29/content-update-delivering-high-bandwidth-content-with-the-windows-azure-cdn.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" frameborder="0" scrolling="no"></iframe><br>트윗</p>'

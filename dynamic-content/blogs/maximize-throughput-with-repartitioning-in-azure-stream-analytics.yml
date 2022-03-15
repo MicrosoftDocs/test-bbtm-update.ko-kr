@@ -1,0 +1,76 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cd289ec39d2a752198ceb69edbc56ad5bae9081a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905455"
+Slug: maximize-throughput-with-repartitioning-in-azure-stream-analytics
+Title: Azure Stream Analytics에서 다시 분할하여 처리량 최대화
+Summary: '고객은 5분 이내에 실행 중인 파이프라인을 설정할 수 있는 기능을 통해 이동 중인 데이터 스트림을 쉽게 분석할 수 있는 Azure Stream Analytics를 좋아합니다. 완전히 병렬화할 수 없는 시나리오에서 고성능을 달성하려고 할 때 처리량 최적화는 항상 어려운 과제였습니다. '
+Content: >-
+  <p>고객은 5분 이내에 실행 중인 파이프라인을 설정할 수 있는 기능을 통해 이동 중인 데이터 스트림을 쉽게 분석할 수 있는 Azure Stream Analytics를 좋아합니다. 완전히 병렬화되지&#39;수 있는 시나리오에서 고성능을 달성하려고 할 때 처리량 최적화는 항상 어려운 과제였습니다. 이는 입력 스트림의 파티션 키를 제어하지&#39;또는 나중에 병합해야 하는 여러 파티션에 소스 &ldquo;가 입력을 분사&rdquo; 할 때 발생합니다. 이제 Azure Stream Analytics SQL 새 확장을 사용하여 데이터를 다시 구성할 때 스트림의 파티션 수를 지정할 수 있습니다. 이 새로운 기능은 성능의 잠금을 해제하고 이러한 시나리오에서 처리량을 극대화하는 데 도움이 됩니다.</p>
+
+
+  <p>Azure Stream Analytics SQL 새 확장에는 <strong>PARTITION BY </strong>문을 사용하여 다시 구성을 수행할 때 스트림에 대한 파티션 수를 지정할 수 있는 키워드 <strong><a href="https://docs.microsoft.com/en-us/stream-analytics-query/into-azure-stream-analytics#into-shard-count" target="_blank">INTO</a></strong>가 포함되어 있습니다. 이 새로운 키워드와 이 키워드가 제공하는 기능은 위의 시나리오에 대한 고성능 처리량을 달성하고 순서를 섞은 후 데이터 스트림을 더 잘 제어하기 위한 주요 기능입니다. Azure Stream Analytics의 새로운 기능에&rsquo; 대해 자세히 알아보려면 <a href="https://azure.microsoft.com/en-us/blog/eight-new-features-in-azure-stream-analytics/" target="_blank">Azure Stream Analytics의 8가지 새로운 기능을</a> 참조 &ldquo; 하세요.&rdquo;</p>
+
+
+  <h2>다시 분할이란?</h2>
+
+
+  <p>Event Hubs 사례의 PartitionId와 같이 자연 입력 체계에 따라 분할되지 않은 스트림에서 데이터를 처리할 때는 다시 분할 또는 재구성이 필요합니다. 이 문제는 이벤트 생성기의 라우팅을 제어하지 않거나&rsquo; 리소스 제약 조건으로 인해 흐름을 확장해야 할 때 발생할 수 있습니다. 다시 분할한 후에는 각 분할된 데이터베이스를 다른 분할된 데이터베이스와 독립적으로 처리하고 분할된 데이터베이스 간에 추가 동기화 없이 진행할 수 있습니다. 이를 통해 스트리밍 파이프라인을 선형적으로 확장할 수 있습니다.</p>
+
+
+  <p>PARTITION BY 문 이후에 새로 도입된 키워드 INTO를 사용하여 파티션 수를 나타내는 엄격히 양의 정수를 사용하여 스트림을 분할해야 하는 파티션 수를 지정할 수 있습니다. 예제는 아래를 참조하세요.</p>
+
+
+  <pre>
+
+  SELECT * INTO [output] FROM [input] PARTITION BY DeviceID INTO 10</pre>
+
+
+  <p>위의 쿼리는 자연스럽게 분할되든 관계없이 입력에서 읽고 DeviceID 차원에 따라 스트림을 10배 다시 분할하고 데이터를 출력으로 플러시합니다. 차원 값(DeviceID)의 해시를 사용하여 어떤 파티션이 어떤 하위 스트림을 수락할지 결정합니다. 출력이 분할된 쓰기를 지원하고 파티션이 10개이거나 임의의 수를 처리할 수 있다고 가정하면 분할된 각 스트림에 대해 데이터가 독립적으로 플러시됩니다.</p>
+
+
+  <p>재분할이 있는 데이터 흐름의 다이어그램은 다음과 같습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/702bed3a-68a4-40bd-9ca2-d16b05567a5d.png"><img alt="Diagram of the data flow with the repartition in place " border="0" height="404" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a129541a-72f8-4ca2-96ca-2735decb6b48.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="다시 분할이 있는 데이터 흐름의 다이어그램 " width="640"></a></p>
+
+
+  <h2>다시 분할을 사용하는 이유와 방법은 무엇인가요?</h2>
+
+
+  <p>재 분할을 사용하여 처리의 많은 부분을 최적화합니다. 데이터가 입력 시 제대로 분할되지 않은 경우에도 연결되지 않은 하위 집합에서 독립적으로 동시에 데이터를 처리합니다. 파티션 키는 동일하게 유지되는 한 분할 구성표가 전달됩니다.</p>
+
+
+  <p>작업의 리소스 사용률을 실험하고 관찰하여 필요한 파티션의 정확한 수를 확인합니다. Azure Stream Analytics의 배율 단위인 SU( <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-streaming-unit-consumption" target="_blank">스트리밍 단위</a> ) 수는 작업에 사용할 수 있는 실제 리소스 수가 분할된 흐름에 맞게 조정되어야 합니다. 일반적으로 6개의 SU는 각 파티션에 할당하는 데 적합한 숫자입니다. 작업에 할당된 리소스가 부족한 경우 시스템은 작업에 이익이 되는 경우에만 재분할을 적용합니다.</p>
+
+
+  <p>명시적으로 다시 분할된 두 개의 데이터 스트림을 조인할 때 이러한 스트림에는 동일한 파티션 키와 파티션 수가 있어야 합니다. 결과는 파티션 구성표가 동일한 스트림입니다. 예제는 아래를 참조하세요.</p>
+
+
+  <pre>
+
+  <strong>WITH </strong>step1 AS (<strong><em>SELECT</em></strong> * <strong><em>FROM</em></strong> [input1] <strong><em>PARTITION BY</em></strong> DeviceID <strong><em>INTO</em></strong> 10<strong><em>),</em></strong>
+       step2 AS (<strong><em>SELECT</em></strong> * <strong><em>FROM</em></strong> [input2] <strong><em>PARTITION BY</em></strong> DeviceID <strong><em>INTO</em></strong> 10<strong><em>)</em></strong>
+
+  <strong><em>SELECT</em></strong> * <strong><em>INTO</em></strong> [output] <strong><em>FROM </em></strong>step1 <strong><em>PARTITION BY</em></strong> DeviceID <strong>UNION </strong>step2 <strong><em>PARTITION BY</em></strong> DeviceID</pre>
+
+
+  <p>일치하지 않는 파티션 수 또는 파티션 키를 지정하면 작업을 만들 때 컴파일 오류가 발생합니다.</p>
+
+
+  <p>분할된 스트림을 출력에 쓸 때 출력 체계가 키 및 개수별로 스트림 구성표와 일치하면 가장 잘 작동하므로 각 하위 스트림을 다른 하위 스트림과 독립적으로 플러시할 수 있습니다. 또는 스트림을 병합하고 플러시하기 전에 다른 구성표로 다시 분할해야 합니다. 이렇게 하면 처리의 일반적인 대기 시간뿐만 아니라 리소스 사용률도 추가되며 피해야 합니다.</p>
+
+
+  <p>SQL 출력이 있는 사용 사례의 경우 명시적 다시 분할을 사용하여 최적의 파티션 수와 일치하여 처리량을 최대화합니다. SQL 8명의 작가와 가장 잘 작동하므로 플러시하기 전에 흐름을 8개로 다시 분할하거나 더 업스트림 어딘가에서 작업&rsquo; 성능에 도움이 될 수 있습니다. 자세한 내용은 설명서, &ldquo;<a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-sql-output-perf" target="_blank">Azure Stream Analytics 출력을 참조하여 Azure SQL Database</a>.&rdquo;</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-introduction" target="_blank">Azure Stream Analytics를 시작하고</a> <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-parallelization" target="_blank">Azure Stream Analytics에서 쿼리 병렬 처리를 활용하는</a> 방법을 이해하기 위한 설명서를 살펴보세요.</p>
+
+
+  <p>질문이 있으면 <a href="https://stackoverflow.com/questions/tagged/azure-stream-analytics" target="_blank">Stack Overflow</a>에서 대화에 참여하세요.</p>

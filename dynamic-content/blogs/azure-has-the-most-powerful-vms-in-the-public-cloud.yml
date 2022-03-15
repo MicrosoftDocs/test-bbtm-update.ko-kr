@@ -1,0 +1,168 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 522eb0c653e0a701ea0f3dcabd4b28fc2c798c2e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905643"
+Slug: azure-has-the-most-powerful-vms-in-the-public-cloud
+Title: 'GS 시리즈 발표: 퍼블릭 클라우드에서 가장 큰 VM에 Premium Storage 지원 추가'
+Summary: G 시리즈의 컴퓨팅 성능과 Premium Storage 성능을 결합하여 가장 스토리지 및 컴퓨팅 집약적인 애플리케이션을 위한 강력한 VM을 만드는 G 시리즈 G 시리즈 변형을 발표하게 되어 기쁩니다.
+Content: >-
+  <p>클라우드는 하이퍼스케일 컴퓨팅을 가능하게 하며, Azure를 사용하면 애플리케이션에 타의 추종을 불허하는 규모를 제공합니다. 애플리케이션을 지역에 걸쳐 있는 100대의 VM(가상 머신)으로 즉시 확장하거나 강력하고 비교할 수 없는 VM에서 애플리케이션을 실행하여 애플리케이션을 확장할 수 있습니다. 올해 초, G 시리즈 VM을 출시하여 퍼블릭 클라우드의 모든 VM 크기보다 더 많은 메모리와 로컬 SSD 공간을 제공하여 애플리케이션에 더 많은 &lsquo;전력을 추가할&rsquo; 수 있습니다.</p>
+
+
+  <p>&rsquo;오늘날 G 시리즈의 컴퓨팅 성능과 Premium Storage 성능을 결합하여 가장 스토리지 및 컴퓨팅 집약적인 애플리케이션을 위한 강력한 VM을 만드는 G 시리즈의 변형인 GS 시리즈를 발표하게 되어 매우 기쁩니다. Intel Xeon E5 v3 제품군 프로세서로 구동되는 GS 시리즈는 최대 64TB의 스토리지를 포함할 수 있으며 80,000IOP(초당 스토리지 I/Os)를 제공하고 2,000MB/초의 스토리지 처리량을 제공할 수 있습니다. GS 시리즈는 다른 하이퍼스케일 퍼블릭 클라우드 공급자가 제공하는 모든 VM 중 가장 높은 디스크 처리량을 두 배 이상 제공합니다. 또한 G 시리즈와 GS 시리즈는 모두 최대 20Gbps의 네트워크 대역폭을 제공하며, 이는 하이퍼스케일 퍼블릭 클라우드 공급자의 가장 가까운 VM보다 두 배 이상 높습니다.</p>
+
+
+  <p>GS 시리즈는 컴퓨팅 및 스토리지 집약적인 애플리케이션에 적합합니다. SQL Server 및 mySQL과 같은 관계형 데이터베이스, MongoDB와 같은 noSQL 데이터베이스 및 데이터 웨어하우스는 GS 시리즈에서 실행할 때 모두 상당한 성능 향상을 얻을 수 있습니다. GS 시리즈를 사용하여 Exchange 및 <a href="https://blogs.msdn.com/b/dax/archive/2015/09/01/accelerating-microsoft-dynamics-ax-deployments-on-microsoft-azure.aspx" target="_blank">Dynamics</a>와 같은 엔터프라이즈 애플리케이션의 성능을 크게 확장할 수도 있습니다.</p>
+
+
+  <p>Windows Linux에서 GS 시리즈의 기능을 확인하려면 아래의 Mark Russinovichs&rsquo; 비디오를 시청하세요.</p>
+
+
+  <p><br />
+
+  <iframe allowfullscreen="" frameborder="0" height="315" src="https://channel9.msdn.com/Blogs/Regular-IT-Guy/G-Series-Machines/player" width="560"></iframe></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>아래에 나열된 GS 시리즈 크기는 미국 서부, 미국 동부 2 및 서유럽을 포함하여 G 시리즈 크기를 사용할 수 있는 모든 지역에서 사용할 수 있습니다.<br />
+
+  <br />
+
+  &nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+      <tbody>
+          <tr>
+              <td valign="top" width="126">
+              <p><b>크기</b></p>
+              </td>
+              <td valign="top" width="63">
+              <p><b>코어 수</b></p>
+              </td>
+              <td valign="top" width="82">
+              <p><b>메모리</b></p>
+              </td>
+              <td valign="top" width="134">
+              <p><b>최대 디스크 IOPS</b></p>
+              </td>
+              <td valign="top" width="240">
+              <p><b>최대 디스크 대역폭 </b></p>
+
+              <p><b>(초당 MB)</b></p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="126">
+              <p><b>Standard_GS1</b></p>
+              </td>
+              <td valign="top" width="63">
+              <p>2</p>
+              </td>
+              <td valign="top" width="82">
+              <p>28</p>
+              </td>
+              <td valign="top" width="134">
+              <p>5,000</p>
+              </td>
+              <td valign="top" width="240">
+              <p>125</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="126">
+              <p><b>Standard_GS2</b></p>
+              </td>
+              <td valign="top" width="63">
+              <p>4</p>
+              </td>
+              <td valign="top" width="82">
+              <p>56</p>
+              </td>
+              <td valign="top" width="134">
+              <p>10000</p>
+              </td>
+              <td valign="top" width="240">
+              <p>250</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="126">
+              <p><b>Standard_GS3</b></p>
+              </td>
+              <td valign="top" width="63">
+              <p>8</p>
+              </td>
+              <td valign="top" width="82">
+              <p>112</p>
+              </td>
+              <td valign="top" width="134">
+              <p>20,000</p>
+              </td>
+              <td valign="top" width="240">
+              <p>500</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="126">
+              <p><b>Standard_GS4</b></p>
+              </td>
+              <td valign="top" width="63">
+              <p>16</p>
+              </td>
+              <td valign="top" width="82">
+              <p>224</p>
+              </td>
+              <td valign="top" width="134">
+              <p>40,000</p>
+              </td>
+              <td valign="top" width="240">
+              <p>1,000</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="126">
+              <p><b>Standard_GS5</b></p>
+              </td>
+              <td valign="top" width="63">
+              <p>32</p>
+              </td>
+              <td valign="top" width="82">
+              <p>448</p>
+              </td>
+              <td valign="top" width="134">
+              <p>80,000</p>
+              </td>
+              <td valign="top" width="240">
+              <p>2,000</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p><br />
+
+  우리는 지난 3 개월 동안 사용량이 50 % 이상 증가하면서 현재까지 G 시리즈의 엄청난 고객 채택에 대해 기쁘게 생각하고 있습니다.<br />
+
+  &nbsp;</p>
+
+
+  <h1>D 시리즈 및 DS-Series 가격 인하, VM 진단 지원 및 Service Bus Premium 메시징</h1>
+
+
+  <p>GS 시리즈는 퍼블릭 클라우드에서 가장 큰 VM과 가장 빠른 스토리지를 제공하지만 Azure의 D 시리즈 및 DS 시리즈는 가장 일반적인 워크로드에 CPU 성능, 메모리 및 로컬 SSD의 좋은 조합을 제공합니다. Were&rsquo;는 낮은 가격대에서 이러한 접근성을 향상하기 위해 지속적으로 노력하고 있으며, D 시리즈 및 DS 시리즈 인스턴스의 가격을 최대 27%까지 인하한다고 오늘&rsquo; 발표하게 되어 기쁩니다. 가격 변경은 10월 1일에 적용됩니다. 이러한 가격 절감은 Azure를 비즈니스에 가장 적합한 선택으로 만들기 위해 노력하는 여러 가지 방법&rsquo; 중 하나일 뿐입니다.</p>
+
+
+  <p>VM 업데이트 외에도 실행 중인 Virtual Machine에서 직렬 및 콘솔 출력을 볼 수 있는 VM &ndash; 에 대한 새로운 진단 기능을 발표하게 되어 기쁩니다. 이렇게 하면 고객이 부팅 또는 런타임 오류로 인해 발생할 수 있는 VM을 진단하는 데 도움이 됩니다.</p>
+
+
+  <p>마지막으로, 더 광범위한 중요 업무용 클라우드 애플리케이션을 지속적으로 지원하기 위해 노력하고 있으며, 현재 예측 가능하고 반복 가능한 성능과 향상된 가용성으로 Azure Service Bus 큐 및 토픽의 모든 메시징 기능을 제공하는 새로운 Service Bus 계층인 Azure Service Bus Premium Messaging을 도입하고 있습니다. 기본 및 표준 Service Bus 계층에서 사용하는 다중 테넌트 모델과 달리 프리미엄 계층은 마이크로 서비스 모델을 사용하여 리소스 격리 및 일관된 성능을 제공합니다.</p>

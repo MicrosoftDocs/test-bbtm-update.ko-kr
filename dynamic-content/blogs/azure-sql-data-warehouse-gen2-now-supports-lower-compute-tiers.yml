@@ -1,0 +1,28 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 629fddf6a95b3ef8c24c4bb3ac6cf80f4b24e41d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911142"
+Slug: azure-sql-data-warehouse-gen2-now-supports-lower-compute-tiers
+Title: Azure SQL Data Warehouse Gen2, 이제 하위 컴퓨팅 계층 지원
+Summary: 'Microsoft는 매우 빠른 Azure SQL Data Warehouse Gen2에 대한 하위 컴퓨팅 계층을 추가하여, 까다로운 쿼리를 처리할 수는 데이터 웨어하우스를 실행하는 초급 수준 비용을 낮출 수 있도록 도와줍니다. '
+Content: >-
+  <p>Microsoft는 빠른 <a href="https://azure.microsoft.com/en-us/blog/blazing-fast-data-warehousing-with-sql-data-warehouse-gen2/" target="_blank">Azure SQL Data Warehouse Gen2</a>에 낮은 컴퓨팅 계층을 추가하여 까다로운 쿼리를 처리할 수 있는 데이터 웨어하우스를 실행하는 엔트리 레벨 비용을 절감할 수 있도록 지원하고 있습니다. 고객은 100 cDWU(데이터 웨어하우스&rsquo; 단위)부터 시작하여 몇 분 안에 30,000 cDWU로 확장되는 Azure SQL <a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/what-is-a-data-warehouse-unit-dwu-cdwu" target="_blank">Data</a> Warehouse의 성능, 유연성 및 보안 기능을 경험할 수 있습니다. 2018년 12월 중순부터 고객은 15 <a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/gen2-lower-tier-regions" target="_blank">개 지역에서</a> 낮은 컴퓨팅 계층을 통해 Gen2 성능과 유연성을 활용할 수 있으며, 나머지 지역은 2019년에 사용할 수 있습니다.</p>
+
+
+  <p>Microsoft는 차세대 데이터 웨어하우징에 대한 진입점을 낮춰 최적의 평가판 환경이 무엇인지 추측하지 않고 안전한 고성능 데이터 웨어하우스의 모든 이점을 평가하려는 가치 중심 고객에게 문을 열어주고 있습니다. 고객은 현재 500 cDWU 진입점에서 최저 100 cDWU로 시작할 수 있습니다. SQL Data Warehouse Gen2는 일시 중지 및 다시 시작 작업을 계속 지원하며 컴퓨팅 시 뛰어난 유연성을 제공합니다. 또한 Gen2는 쿼리당 2.5배 더 많은 메모리와 함께 무제한 열 저장소 스토리지 용량을 지원하며, 최대 128개의 동시 쿼리 및 <a href="https://azure.microsoft.com/en-us/blog/adaptive-caching-powers-azure-sql-data-warehouse-performance-gains/" target="_blank">적응형 캐싱</a> 기능을 지원하여 <strong>동일한 가격으로 Gen1의 동일한 데이터 웨어하우스 단위에 비해 평균 5배 더 많은 성능을</strong> 제공합니다. 지역 중복 백업은 기본 제공되는 데이터 보호 기능과 함께 Gen2 표준입니다. Azure SQL Data Warehouse Gen2는 필요 시 확장 가능합니다.</p>
+
+
+  <h2>Azure SQL Data Warehouse Gen2 시작</h2>
+
+
+  <p>고객은 새 Gen2 인스턴스를 배포하거나 기존 Gen1 데이터 웨어하우스 인스턴스를 업그레이드하여 차세대 데이터 웨어하우징의 유연성과 성능을 경험할 수 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/services/sql-data-warehouse/?v=17.44" target="_blank">Azure SQL Data Warehouse 컴퓨팅 최적화 Gen2 계층을</a> 사용해 보세요.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/upgrade-to-latest-generation" target="_blank">Azure SQL Warehouse 컴퓨팅 최적화 Gen1을 Gen2로 업그레이드</a>합니다.</li>
+      <li><a href="https://www.youtube.com/watch?v=Ap8I3UZonzI&amp;feature=youtu.be" target="_blank">이 Microsoft Mechanics 비디오에서</a> Azure SQL Data Warehouse Gen2의 작동을 시청하세요.</li>
+  </ul>

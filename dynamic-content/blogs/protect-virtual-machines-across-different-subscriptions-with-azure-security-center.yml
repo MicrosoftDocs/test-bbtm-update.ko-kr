@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cb1fb92ea243bf698fac0a00154338d7125593eb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911588"
+Slug: protect-virtual-machines-across-different-subscriptions-with-azure-security-center
+Title: Azure Security Center를 사용하여 여러 구독에서 가상 머신 보호
+Summary: 고객이 Azure Security Center에 더 간단한 온보딩 환경을 원한다는 소식을 들었습니다. 오늘 Azure Security Center의 일반 공급 방법을 발표하게 되어 기쁩니다...
+Content: >-
+  <p>고객이 Azure Security Center에 더 간단한 온보딩 환경을 원한다는 소식을 들었습니다. 오늘 Azure Security Centers&rsquo; 구독 간 작업 영역 선택의 일반 공급에 대해 발표하게 되어 기쁩니다. 이 기능을 사용하면 다른 작업 영역, 구독 및 실행 쿼리에서 실행되는 가상 머신에서 한 위치에서 데이터를 수집하고 모니터링할 수 있습니다.&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/40eab7b0-4e86-4337-89fb-e6dc9ccb23ab.png"><img alt="Security policy - Data Collection" border="0" height="1002" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/511dc2d3-4329-4805-ae53-9118978d79ef.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="보안 정책 - 데이터 수집" width="681"></a></p>
+
+
+  <p>Azure Security Center에 처음 온보딩하는 경우&rsquo; Azure에 모니터링 에이전트를 프로비전하려면 데이터 수집 탭에서 시작해야 합니다. 에이전트를 사용하면 하이브리드 클라우드 리소스의 보안 상태를 모니터링할 수 있습니다. 가상 머신이 가동 및 축소되고 조직 전체의 워크로드 소유자가 새 워크로드 및 리소스를 만드는 경우 가상 머신을 만들 때 보호해야 합니다.</p>
+
+
+  <p>기본적으로 모니터링 에이전트가 수집하는 데이터를 Log Analytics 작업 영역에 배치하지만 다른 관리 기능에 이미 사용하는 경우 다른 작업 영역을 유연하게 사용할 수 있습니다.</p>
+
+
+  <p>현재 데이터에 상주&rsquo;할 작업 영역을 선택하면 사용 가능한 모든 구독에서 모든 작업 영역이 표시됩니다. 구독 간 작업 영역 선택을 사용하면 다른 구독에서 실행되는 가상 머신에서 데이터를 수집하고 선택한 작업 영역에 저장할 수 있습니다. 이 기능은 Linux 및 Windows에서 실행 중인 가상 머신 둘 다에서 작동합니다.</p>
+
+
+  <p>구독 간 작업 영역 선택 Azure Security Centers&rsquo; <a href="https://azure.microsoft.com/en-us/pricing/details/security-center/" target="_blank">무료 계층</a>의 일부로, 오늘 쉽게 시작할 수 있습니다. 이 기능 및 기타 Azure Security Center 기능을 설정하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-enable-data-collection" target="_blank">설명서를 참조하세요</a>. 피드백 또는 추가 정보는 문의하세요 <a target="_blank">ASC_Onboarding@microsoft.com</a>.</p>

@@ -1,0 +1,73 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 50325ad3ef65e8edc7be5bf62999204dcb11d49e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139910977"
+Slug: iot-in-action-4-innovations-that-are-revolutionizing-iot
+Title: 'IoT in Action: IoT를 혁신하는 4가지 혁신'
+Summary: IoT(사물 인터넷)는 제조에서 의약품에 이르기까지 모든 산업을 재편하고 있으며 비즈니스를 혁신할 수 있는 기회는 거의 무한합니다. IoT는 여러 파트너, 기술 세트 및 기술이 필요한 복잡한 노력이지만, 새로운 혁신을 통해 프로젝트를 보다 쉽게 배포하고, 더 안전하고, 지능적으로 만들 수 있습니다.
+Content: >-
+  <p>IoT(사물 인터넷)는 제조에서 의약품에 이르기까지 모든 산업을 재편하고 있으며 비즈니스를 혁신할 수 있는 기회는 거의 무한합니다. IoT는 여러 파트너, 기술 세트 및 기술이 필요한 복잡한 노력이지만, 새로운 혁신을 통해 프로젝트를 보다 쉽게 배포하고, 더 안전하고, 지능적으로 만들 수 있습니다.</p>
+
+
+  <p>아래 Ive&rsquo;는 IoT 산업에 혁명을 일으키고 있는 네 가지 혁신을 설명했습니다. 이러한 혁신을 활용하는 방법에 대해 자세히 알아보려면 <a href="https://iotinactionwebinars.com/en-us/event/vbc?ocid=MSFT_WW_EN_VBC_OTH_VBC1_EA_BL_CE_AZB_NA" target="_blank">Action Virtual Bootcamp에서 예정된 IoT에</a> 등록해야 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/300bad56-692f-42d3-99fd-d184fa77ef5c.jpg"><img alt="IoT in Action virtual event details" border="0" height="335" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7a85af5-44e0-488f-b7be-f03611ae928c.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT in Action 가상 이벤트 세부 정보" width="640"></a></p>
+
+
+  <h2>1. AI(인공 지능) 및 인지 기능</h2>
+
+
+  <p>Cognitive Services 및 AI는 높은 가격표와 함께 제공됩니다. 그러나 시대가 바뀌고 이러한 기능에 점점 더 쉽게 액세스할 수 있게 되었습니다.</p>
+
+
+  <p>IoT Hub 및 <a href="https://azure.microsoft.com/en-us/services/cognitive-services/" target="_blank">Cognitive Services를</a> 사용하면 데이터 과학자 팀이 없는 고급 인텔리전스로 IoT 솔루션을 조정할 수 있습니다. AI 및 Cognitive Services를 사용하면 이미지 인식, 음성 분석 및 지능형 권장 사항과 같은 기능을 통해 IoT 솔루션을 더 쉽게 주입할 수 있을 뿐만 아니라, 회사에서 수집되는 데이터에 대해 작업하고 IoT의 진정한 가치를 실현할 수 있습니다. 시나리오는 사실상 무한합니다. <a href="https://customers.microsoft.com/en-us/story/uber" target="_blank">UBER</a>와 같은 회사는 플랫폼 보안을 강화하기 위해 시각적 ID 확인을 사용하고 있으며, <a href="https://www.forbes.com/sites/janakirammsv/2018/10/22/microsoft-blends-iot-and-edge-computing-with-ai-to-change-the-game-of-cricket/#78f8eb94ee3e" target="_blank">Spektacom</a>은 타격 스타일에 대한 통찰력을 제공 할 수있는 크리켓 박쥐에 AI가 주입 된 스티커로 크리켓을 더 잘 만들고 있습니다.</p>
+
+
+  <h2>2. 지능형 에지의 실시간 분석</h2>
+
+
+  <p>IoT 솔루션을 완료하려면 데이터 분석이 필요하지만 필요한 모든 데이터는 에지에서 원하는 위치&mdash;&rsquo;가 아닙니다. 한 가지 솔루션은 클라우드 환경을 로컬로 재현하는 것이지만 비용이 많이 들 수 있으며 결국 두 가지 솔루션이 아닌 두 가지 솔루션을 지원해야 할 수 있습니다.</p>
+
+
+  <p>이제 클라우드 인텔리전스 및 분석을 에지로 확장할 수 있습니다. <a href="https://azure.microsoft.com/en-us/blog/azure-iot-edge-generally-available-for-enterprise-grade-scaled-deployments/" target="_blank">Azure IoT Edge</a>는 에지와 클라우드 간의 성능을 최적화하여 대기 시간을 줄여 실시간 데이터를 가져옵니다. 이 보안 솔루션을 사용하면 간헐적인 클라우드 연결이 있는 경우에도 에지 디바이스가 안정적으로 작동하면서 필요한 데이터만 클라우드로 전송되도록 할 수 있습니다. 또한 클라우드의 데이터와 에지의 데이터를 결합하여 두 세계의 최고를 얻을 수 있습니다.</p>
+
+
+  <h2>3. 더 안전한 IoT 디바이스</h2>
+
+
+  <p>IoT 보안은 계속 발전하고 있습니다. 즉&rsquo;, IoT 솔루션을 잠그는 것이 그 어느 때보다 쉬워졌습니다. Microsoft는 우리가 만드는 모든 제품에 타협하지 않는 보안을 계속 구축하고 있습니다. 최근에 새로운 종류의 MCU(마이크로 컨트롤러)를 사용하여 매우 안전한 연결된 디바이스를 만들기 위한 엔드투엔드 솔루션인 <a href="https://blogs.microsoft.com/iot/2018/04/17/new-iot-security-solutions-showcase-microsofts-commitment-to-trust/" target="_blank">Azure Sphere</a>를 출시했습니다. Azure Sphere는 에지 디바이스를 구동하며, Azure Sphere 인증 MCU, Azure Sphere OS 및 Azure Sphere Security Service를 포함한 세 가지 주요 구성 요소를 결합합니다.</p>
+
+
+  <h2>4. 대규모로 신속하게 IoT 프로비전</h2>
+
+
+  <p>IoT를 수동으로 프로비전하는 것은 시간이 많이 소요되며, 특히 구성할 수 있는 수백, 수천 또는 수백만 개의 디바이스가 있는 경우&rsquo; 빠르게 쇼스토퍼가 될 수 있습니다. 수동 프로비저닝이 가능하더라도 향후 디바이스를 빠르고 안전하게 프로비전하는 기능을 구축하는 것이 중요합니다.</p>
+
+
+  <p>Azure IoT Hub는 사람의 개입 없이 원격 <a href="https://azure.microsoft.com/en-us/blog/enabling-true-zero-touch-secure-identity-management-for-iot-devices/" target="_blank">프로비저닝을 가능하게 하는 DPS(Device Provisioning Service)</a>를 제공합니다. Azure DPS는 안전하고 확장 가능한 방식으로 수백만 디바이스를 프로비전하는 데 필요한 인프라를 제공합니다. DPS는 실리콘에서 클라우드로 신뢰를 확장하여 위치, 매핑, 노화 및 사용 중지를 포함한 관리 ID 서비스를 사용하도록 레지스트리를 만듭니다. 솔루션별 요구 사항에 따라 자동 구성에서 여러 허브 간 부하 분산, 지리적 위치에 따라 디바이스 연결에 이르기까지 다양한 시나리오에서 작동합니다.</p>
+
+
+  <h2>Action Virtual Bootcamp에서 IoT에 등록</h2>
+
+
+  <p>이러한 혁신을 활용하는 방법에 대해 자세히 알아보려면 Action Virtual Bootcamp에서 IoT에 등록해야 합니다. 엔지니어, 소프트웨어 설계자 또는 실습 소유자이든 관계없이 이 가상 부트캠프는 디바이스에서 클라우드로 IoT에 대한 명확한 이해를 제공하고 비즈니스용 IoT 솔루션 개발을 가속화합니다.</p>
+
+
+  <p>이 이벤트는 보안 MCU, IoT OS 및 고급 애플리케이션 서비스를 비롯한 최신 IoT 디바이스 및 클라우드 서비스를 파악하는 데 도움이 됩니다. 또한 신뢰할 수 있는 지침과 단일 에코시스템 보기를 통해 실제 비즈니스 가치를 추가하고 흥미로운 새 고객 환경을 만드는 보안 IoT 솔루션 설계를 지원합니다. 수익 성과를 최적화하면서 새로운 환경과 수익원을 만들어 IoT 에코시스템에서 리더십 위치를 구축할 수 있습니다.</p>
+
+
+  <p>표준 시간대의 Action Virtual Bootcamp에서 IoT에 등록합니다.</p>
+
+
+  <ul>
+   <li><a href="https://vshow.on24.com/vshow/IOT_Bootcamp/registration/15667?l=en&amp;partnerref=MSFT_AP_EN_VBC_OTH_VBC1_EA_BL_CE_AZB_NA" target="_blank">아시아: 2019년 1월 28-29일</a></li>
+   <li><a href="https://vshow.on24.com/vshow/IOT_Bootcamp/registration/15666?l=en&amp;partnerref=MSFT_EMEA_EN_VBC_OTH_VBC1_EA_BL_CE_AZB_NA" target="_blank">유럽, 중동 및 아프리카: 2019년 1월 30-31일</a></li>
+   <li><a href="https://vshow.on24.com/vshow/IOT_Bootcamp/registration/15653?l=en&amp;partnerref=MSFT_AM_EN_VBC_OTH_VBC1_EA_BL_CE_AZB_NA" target="_blank">북미 및 남미: 2019년 2월 4-5일</a></li>
+  </ul>
+
+
+  <p>직접 IoT in Action 이벤트 중 하나에 참석하시겠습니까? 가까운 도시에 오는 <a href="https://iotinactionevents.com/?ocid=MSFT_WW_EN_IOTALE_OTH_IALP_EA_BL_CE_AZB_NA" target="_blank">무료 이벤트에 등록</a>합니다.</p>

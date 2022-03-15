@@ -1,0 +1,219 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d2116a3c1bffe5b154e0a49ba9e48f46b29bfe1d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905987"
+Slug: embed-video-indexer-ai-widgets-in-your-website
+Title: 웹 사이트에 Video Indexer 인사이트 포함
+Summary: Video Indexer 포함 위젯은 비디오에 AI 인사이트를 추가하기 시작하는 좋은 방법입니다. 게시된 비디오에 심층 검색 기능을 추가하거나 사용자가 웹 사이트의 비디오 콘텐츠에 더 많이 참여하도록 하려는 경우 Video Indexer 웹 애플리케이션에서 포함 가능 옵션을 사용하거나 Video Indexer API를 사용하여 쉽게 수행할 수 있습니다.
+Content: >-
+  <p>Video Indexer 포함 위젯은 비디오에 AI 인사이트를 추가하기 시작하는 좋은 방법입니다. 게시된 비디오에 심층 검색 기능을 추가하거나 사용자가 웹 사이트의 비디오 콘텐츠에 더 많이 참여하도록 하려는 경우 <a href="https://www.videoindexer.ai" target="_blank">Video Indexer</a> 웹 애플리케이션에서 포함 가능 옵션을 사용하거나 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-use-apis" target="_blank">Video Indexer API</a>를 사용하여 쉽게 수행할 수 있습니다.</p>
+
+
+  <h2>시작하기</h2>
+
+
+  <p>웹 사이트에 Video Indexer 인사이트 포함을 시작하려면 등록된 계정이 있어야 합니다. 계정이&#39;없는 경우 Microsoft, Google, LinkedIn 또는 Azure Active Directory 사용하여 Video Indexer에 쉽게 <a href="https://www.videoindexer.ai/account/login" target="_blank">로그인</a>하고 생성된 계정을 가져올 수 있습니다.</p>
+
+
+  <p>Video Indexer는 애플리케이션에 두 가지 유형의 위젯인 <strong>Cognitive Insights </strong>및 <strong>Player</strong>를 포함하도록 지원합니다.</p>
+
+
+  <h2>Cognitive Insights 위젯</h2>
+
+
+  <p>이 위젯에는 사람 모양, 상위 키워드, 감정 분석, 대본 및 검색과 같은 인덱싱 프로세스 후에 비디오에서 추출된 모든 시각적 인사이트가 포함됩니다.</p>
+
+
+  <p>또한 언어를 변경하고 선택한 언어에 따라 모든 인사이트를 얻을 수 있습니다. 이에 대한 자세한 내용은 <a href="https://vi.microsoft.com/en-us/">Video Indexer</a> 웹 페이지에서 확인하세요.&nbsp;</p>
+
+
+  <h2>플레이어 위젯</h2>
+
+
+  <p>플레이어 위젯은 비디오 스트리밍을 제공하는 것 외에 재생 속도 및 선택 자막과 같은 추가 기능을 포함하는 사용자 지정된 Azure Media Player입니다. <a href="https://vi.microsoft.com/en-us/">Video Indexer</a> 웹 페이지에서 이에 대해 자세히 알아볼 수 있습니다.</p>
+
+
+  <p>웹 사이트에 위젯을 포함하려면 embed 태그를 가져와서 html 파일에 붙여넣어야 합니다. embed 코드에는 포함 URL이 있는 iframe 태그가 포함되어 있습니다.</p>
+
+
+  <p>포함 URL을 가져오는 두 가지 옵션이 있습니다. Video Indexer 웹 애플리케이션을 통해 또는 Video Indexer API 특정 메서드를 호출합니다. 우리는 두 가지 방법을 모두 다룰 것입니다.</p>
+
+
+  <h2>Video Indexer 웹 애플리케이션을 통해 포함 코드 가져오기(공개 비디오만 해당)</h2>
+
+
+  <p>단추를 클릭하여 인덱싱된 비디오에 대한 embed 태그를 쉽게 가져올 수 있습니다.</p>
+
+
+  <p>VI에서 계정에 1. <a href="https://www.videoindexer.ai/account/login" target="_blank">로그인</a></p>
+
+
+  <p>2.비디오 업로드</p>
+
+
+  <p>3.인덱싱 프로세스가 완료된 후 기본 갤러리 페이지의 비디오에서 재생&rdquo;을 클릭합니다&ldquo;.</p>
+
+
+  <p>4.&ldquo;포함 단추를&rdquo; 클릭하고 원하는 옵션으로 포함할 위젯을 선택합니다. (플레이어/인사이트)<br>
+
+  &nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c727ef5c-4052-47a4-8e3f-d6d9f4f540b6.jpg"><img alt="breakdownSS" border="0" height="61" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e897a438-ff2d-4359-9f2b-4088310146a1.jpg" style="border: 0px currentColor; border-image: none; display: inline; background-image: none;" title="breakdownSS" width="55"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94723dfb-eaea-4870-9afe-a91703433bfe.jpg"><img alt="embed" border="0" height="527" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/07fc4543-99e9-453f-88dc-9e5eef505c56.jpg" style="border: 0px currentColor; border-image: none; display: inline; background-image: none;" title="포함" width="710"></a></p>
+
+
+  <p>5. 코드를 복사하여 html 파일에 붙여넣습니다.</p>
+
+
+  <p><strong>참고: </strong>웹 애플리케이션을 통해 포함하는 경우 <u>공개 비디오만</u> 포함할 수 있습니다. 프라이빗 비디오에는 비디오에 대한 1시간 액세스 토큰이 포함된 embed URL에 accessToken 매개 변수가 필요합니다.</p>
+
+
+  <h2>Video Indexer API를 통해 포함 코드 가져오기(공개 또는 비공개 비디오)</h2>
+
+
+  <p>비디오에 대한 accessToken이 포함된 embed URL을 가져오려면 비디오 ID를 전달하여 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-use-apis" target="_blank"><strong>Video Indexer APIand</strong></a><strong>&nbsp;</strong> 호출 <a href="https://videobreakdown.portal.azure-api.net/docs/services/582074fb0dc56116504aed75/operations/582074fb0dc5610e14c75ecb" target="_blank"><strong>get Insights 위젯 Urlor</strong></a>&nbsp; <a href="https://videobreakdown.portal.azure-api.net/docs/services/582074fb0dc56116504aed75/operations/582074fb0dc5610e14c75ecc" target="_blank"><strong>Get Player 위젯 URL</strong></a><strong></strong>을 사용할 수 있습니다.</p>
+
+
+  <p>고유한 비디오를 관리하는 경우 <a href="https://videobreakdown.portal.azure-api.net/docs/services/582074fb0dc56116504aed75/operations/588a03710dc5610e446342ec" target="_blank"><strong>Get Insight 위젯 By External Id</strong></a>를 호출<strong>하여 내부 비디오 </strong>ID에 따라 embed 코드를 가져올 수도 있습니다.</p>
+
+
+  <p>API 작업을 시작하려면 먼저 API 구독 키를 등록하고 가져와야 합니다. <a href="https://azure.microsoft.com/en-us/blog/gettingstartedwiththevideoindexerapi/">Video Indexer API 블로그 게시물 시작에서는 Video Indexer API </a>시작에 대한 매우 자세한 블로그 게시물을 찾을 수 있습니다.</p>
+
+
+  <p>embed URL이 있으면 웹 사이트의 아무 곳이나 찾으려는 iframe 요소의 <strong>src</strong>&rdquo; 특성으로 &ldquo; 붙여넣습니다.</p>
+
+
+  <pre style="background: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+
+  &lt;iframe width=&quot;580&quot; height=&quot;580&quot; src=&quot;https://www.videoindexer.ai/embed/insights/00000000-0000-0000-0000-000000000000/4452cf7e59/?widgets=people,search&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+  </pre>
+
+
+  <h2>편집을 사용하도록 설정된 embed 코드 가져오기</h2>
+
+
+  <p>포함된 위젯에서 편집 인사이트 기능(예: 웹 애플리케이션에 있는 것처럼)을 제공하려면 get <a href="https://videobreakdown.portal.azure-api.net/docs/services/582074fb0dc56116504aed75/operations/582074fb0dc5610e14c75ecb" target="_blank"><strong>Insights 위젯 URL</strong></a>&nbsp; 또는 <a href="https://videobreakdown.portal.azure-api.net/docs/services/582074fb0dc56116504aed75/operations/588a03710dc5610e446342ec" style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;" target="_blank"><strong style="font-size: 13px;">Get Insight Widget By External Id</strong></a>를 호출하고 <strong>allowEdit=true를 추가&amp;</strong>해야 합니다.</p>
+
+
+  <h2>포함 옵션</h2>
+
+
+  <p>Video Indexer 위젯은 필요에 따라 사용자 지정할 수 있습니다.&nbsp; 인사이트 위젯 또는 플레이어만 포함하도록 선택하거나 둘 다 포함할 수 있습니다.</p>
+
+
+  <h3>애플리케이션에 두 가지 유형의 위젯 포함</h3>
+
+
+  <p>플레이어 위젯 및 인사이트 위젯에 대한 embed 코드를 복사하여 붙여넣고 닫는 &lt;본문&gt; 태그 앞에 다음 JS 파일을 포함합니다.</p>
+
+
+  <pre style="background: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+
+  &lt;script src=&quot;https://breakdown.blob.core.windows.net/public/vb.widgets.mediator.js&quot;&gt;&lt;/script&gt;
+
+  </pre>
+
+
+  <p>위 파일은 위젯 간의 원본 간 통신을 처리하기 위해 필요합니다.</p>
+
+
+  <p>이 문서의 작동 방식에 대해 자세히 확인할 수 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-embed-widgets#cross-origin-communications" target="_blank">있습니다.</a></p>
+
+
+  <h3>Cognitive Insights 포함 및 Azure Media Player 사용</h3>
+
+
+  <p>웹 사이트에서 Azure Media Player를 사용하는 경우 vi 통신 플러그 인을 사용하여 플레이어와 통신하는 Video Indexer 인사이트 위젯을 쉽게 포함할 수 있습니다. 다음 스크립트를 Azure Media Player 라이브러리 스크립트 다음에 페이지에 붙여넣으면 모두 설정됩니다.</p>
+
+
+  <pre style="background: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+
+  &lt;script src=&quot;https://breakdown.blob.core.windows.net/public/amp-vb.plugin.js&quot;&gt;&lt;/script&gt;
+
+  </pre>
+
+
+  <p>플러그 인을 사용하면 플레이어의 VTT 파일을 가져와서 언어와 대본을 비디오와 동기화할지 선택할 수 있습니다.</p>
+
+
+  <p>자세한 내용 및 코드 샘플은 관련 Video Indexer <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-embed-widgets#embed-the-cognitive-insights-widget-and-use-azure-media-player-to-play-the-content" target="_blank">문서를 참조하세요</a>.</p>
+
+
+  <h3>비디오 플레이어에 Cognitive Insights 포함</h3>
+
+
+  <p>YouTube 플레이어, Vimeo 또는 자신의 플레이어와 같은 다른 플레이어를 사용하는 경우 Video Indexer Cognitive Insights를 포함하고 플레이어와 통신할 수 있습니다. 예를 들어 사용자가 위젯 중 하나를 클릭할 때 관련 순간으로 이동합니다.</p>
+
+
+  <p>이를 위해서는 일부 함수를 구현하고 postMessage&rdquo; JavaScript 이벤트를 수신 대기해야 합니다&ldquo;.</p>
+
+
+  <p>다음은 이 방법을 보여 주는 자세한 <a href="https://videobreakdown.portal.azure-api.net/demo-your-player" target="_blank">데모</a> 입니다.</p>
+
+
+  <h2>Video Indexer 위젯을 사용자 지정하는 방법</h2>
+
+
+  <p>Video Indexer 위젯은 필요에 따라 사용자 지정할 수 있습니다. 사용자에게 더 유용할 것으로 생각되는 인사이트만 포함하도록 선택할 수 있습니다.</p>
+
+
+  <h3>Cognitive Insights 위젯 사용자 지정</h3>
+
+
+  <p>API 또는 웹 애플리케이션에서 가져오는 embed 코드에 추가된 다음 URL 매개 변수에 값&nbsp; 으로 지정하여 원하는 인사이트 유형을 선택할 수 있습니다.</p>
+
+
+  <p>&amp;widgets=&lt;원하는 위젯 목록&gt;</p>
+
+
+  <p>가능한 값은 people, keywords, sentiments, transcript, search입니다.<br>
+
+  iframe URL에 제목을 제공하여 &amp;iframe 창의 제목을 사용자 지정할 수도 있습니다.</p>
+
+
+  <p>예를 들어 사람 및 검색 인사이트만 포함하는 위젯을 포함하려는 경우 타이틀이 myInsights&quot;가 &quot;되도록 하려면 iframe 포함 URL은 다음과 같습니다.<br>
+
+  https://www.videoindexer.ai/embed/insights/00000000-0000-0000-0000-000000000000/4452cf7e59/?widgets=people,searchtitle&amp;=myInsights</p>
+
+
+  <p>자세한 <a href="https://videobreakdown.portal.azure-api.net/custom-widget" target="_blank">데모</a> 는 여기에서 볼 수 있으며 Video Indexer 문서에서 자세히 확인할 수 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-embed-widgets" target="_blank">있습니다</a>.</p>
+
+
+  <h3>플레이어 위젯 사용자 지정</h3>
+
+
+  <p>Video Indexer 플레이어를 포함하는 경우 iframe의 크기를 지정하여 플레이어의 크기를 선택할 수 있습니다.</p>
+
+
+  <p>예:</p>
+
+
+  <pre style="background: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+
+  &lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.videoindexer.ai/embed/player/{accountId}/{id}&rdquo; frameborder=&quot;0&quot; allowfullscreen /&gt;
+
+  </pre>
+
+
+  <p>비디오가 업로드되면 Video Indexer 플레이어는 기본적으로 비디오에서 추출된 비디오의 전사에 따라 선택 자막을 선택한 소스 언어로 자동으로 생성합니다.</p>
+
+
+  <p>다른 언어로 포함하려는 경우 캡션=&lt; 언어 | &rdquo; 추가할 &amp;수 있습니다. 사용 가능한 모든 언어 캡션을 사용하려는 경우 포함 플레이어 URL에 allfalse&rdquo;&rdquo;&ldquo;&gt; | 를 지정하거나 모든&rdquo; 값을 값으로 입력&ldquo;합니다.<br>
+
+  캡션을 defualt로 해제하려면<strong> showCaptions=true를 전달할 &amp;</strong> 수 있습니다.</p>
+
+
+  <p>그러면 embed URL이 다음과 <a href="https://www.videoindexer.ai/embed/player/00000000-0000-0000-0000-000000000000/4452cf7e59/?captions=italian" style="font-size: 13px;">https://www.videoindexer.ai/embed/player/00000000-0000-0000-0000-000000000000/4452cf7e59/?captions=italian</a>같이 표시됩니다. 캡션을 사용하지 않도록 설정하려면 캡션 매개 변수의 값으로 false&rdquo;를 전달할 &ldquo;수 있습니다.</p>
+
+
+  <p>기본적으로 자동 재생 &ndash; 은 플레이어가 비디오 재생을 시작합니다. 위의 embed URL에 <strong>autoplay=false를 전달&amp;</strong>하여 사용하지 않도록 선택할 수 있습니다.</p>
+
+
+  <p><a href="https://codepen.io/videoindexer/pen/eGxebZ" target="_blank">다음은 전체 위젯 사용자 지정 옵션에 대한 코드 조각입니다.</a></p>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview">Video Indexer 설명서를</a> 참조하세요. Twitter <a href="https://twitter.com/Video_Indexer">@Video_Indexer</a> 에서 Video Indexer에 대한 최신 뉴스를 확인하세요. 질문이 있거나 도움이 필요한 경우 문의하세요 <a href="mailto:visupport@microsoft.com">visupport@microsoft.com</a>.</p>

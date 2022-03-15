@@ -1,0 +1,105 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fb7086049a24f28eddbb3d49bb6c13ca4eee1cb1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912478"
+Slug: retail-brands-gain-a-competitive-advantage-with-modern-data-management
+Title: '소매 브랜드: 최신 데이터 관리를 통해 경쟁 우위 확보'
+Summary: 오늘날 소매업체는 상당한 양의 데이터를 책임지고 있습니다. 고객은 PCI DSS(Payment Card Industry Data Security Standard), GDPR(일반 데이터 보호 규정) 및 기타 규정 준수 지침에 따라 소매업체에 제공하는 데이터가 제대로 처리될 것으로 기대합니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c78f1c7b-f199-4747-a92d-98863896eaaf.jpg"><img alt="928414120" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/31882239-fa4c-4130-87b7-9270cabedbf8.jpg" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="928414120" width="1366"></a></p>
+
+
+  <p>오늘날 소매업체는 상당한 양의 데이터를 책임지고 있습니다. 고객은 PCI DSS(Payment Card Industry Data Security Standard), GDPR(일반 데이터 보호 규정) 및 기타 규정 준수 지침에 따라 소매업체에 제공하는 데이터가 제대로 처리될 것으로 기대합니다.</p>
+
+
+  <p>또한 소매업체에 제공하는 데이터가 쇼핑 환경을 개선하는 방식으로 활용되고 있다고 기대합니다. 예를 들어 구매 기록, 좋아요&rdquo; 및 &ldquo;검색을 고려할 때 더 나은 권장 사항을 원합니다. 나는 소매 업체가 한 번의 클릭 체크 아웃에 대한 내 이메일 및 지불 정보를 알 것으로 기대합니다. 데이터가 올바른 권한으로 제대로 처리되는 한 제거할 수 있는 작고 사소한 마찰입니다. 또한 빅 데이터(모든 고객에서 집계된 일반 정보)의 캡처 및 분석은 소매업체가 전체 고객 환경을 미세 조정할 수 있는 기회입니다.</p>
+
+
+  <p>그러나 수집된 데이터의 대부분은 사용되지 않습니다. 조직 내의 인프라에서 데이터에 액세스하거나 검색할 수 없으므로 이 문제가 발생합니다. 소매 가치 체인 전체에서 의사 결정을 개선하는 데 사용할 수&rsquo; 없습니다. 사용되지 않는 데이터는 모바일 디바이스, 디지털 및 물리적 스토어 쇼핑 및 IoT와 같은 많은 원본에서 제공됩니다. 즉, 수집을 위해 방대한 양의 데이터 요소가 잘 익은 것입니다. 그러나 데이터를 효과적으로 관리하고 활용하는 데 필요한 투자와 현대화는 따라잡지 못했습니다&rsquo;. 오늘날&rsquo; 데이터에서 가치를 얻는 데 방해가 되는 장애물은 다음과 같습니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+   <li>데이터 사일로</li>
+   <li>위화감 있는 데이터 형식</li>
+   <li>성능 제약 조건</li>
+   <li>비용 상승</li>
+  </ul>
+
+
+  <p>정상 데이터 환경은 조직이 발생한 작업에서 &ldquo;예측 및 작업 지향 인사이트로 전환하여 값을 생성할 수 있도록 하는 환경입니다. &ldquo;어떤 일이 일어날&rdquo;까&rdquo;요? 그러면 어떤 예측을 자동화하고&rdquo;, 인사이트에서 작업으로 이동하고, 새로운 가치를 생성할 수 있는지에 대한 의문이 제기&ldquo;됩니다.</p>
+
+
+  <p>최신 사례를 통해 유연하고 확장 가능하며 안전한 방식으로 데이터를 보다 효율적이고 효과적으로 활용할 수 있습니다. 데이터에서 값을 파생한다는 것은 조직에서 다음을 달성했음을 의미합니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+   <li>데이터 통합</li>
+   <li>다양한 데이터 모델에 대한 지원</li>
+   <li>무제한 크기 조정</li>
+   <li>완전 관리형 인프라</li>
+   <li>총 소유 비용 절감</li>
+  </ul>
+
+
+  <h4>차트: 데이터 에코시스템의 이상적인 특성</h4>
+
+
+  <table border="1" cellpadding="1" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top">
+     <h4><strong>오늘:</strong></h4>
+
+     <h4><strong>데이터에서 가치 얻기에 대한 장벽</strong></h4>
+     </td>
+     <td valign="top">
+     <h4><strong>내일:</strong></h4>
+
+     <h4><strong>데이터에서 값 파생</strong></h4>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">데이터 사일로</td>
+     <td valign="top">데이터 통합</td>
+    </tr>
+    <tr>
+     <td valign="top">위화감 있는 데이터 형식</td>
+     <td valign="top">다양한 데이터 모델에 대한 지원</td>
+    </tr>
+    <tr>
+     <td valign="top">
+     <p>성능 제약 조건</p>
+     </td>
+     <td valign="top">무제한 크기 조정</td>
+    </tr>
+    <tr>
+     <td valign="top">비용 상승</td>
+     <td valign="top">완전 관리형 인프라</td>
+    </tr>
+    <tr>
+     <td valign="top">&nbsp;</td>
+     <td valign="top">TCO(총 소유 비용) 절감</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>조직은 클라우드 및 AI와 같은 새로운 기술 기능을 활용하는 것과 함께 효과적인 데이터 관리에 노력을 기울여야 합니다. 어떤 면에서는 현대화 및/또는 변환을 위한 필수 구성 요소여야 합니다.</p>
+
+
+  <p>데이터 관리 모델은 수집, 준비, 저장, 분석 및 작업과 같은 상태로 구성됩니다. 데이터는 구매, 공용 및 독점 데이터라는 세 가지 유형의 데이터 원본으로 분류할 수 있습니다. 레거시 환경에서 데이터는 종종 채널, 시스템 또는 유틸리티와 같은 다양한 요인에 의해 사일로되고 제한됩니다. 주요 목표는 조직 전체에서 올바른 데이터를 안전하게 활용할 수 있도록 이러한 기존 제약 조건을 제거하는 것입니다. 특히 조직&rsquo; 데이터 과학 기능이 성장함에 따라 건강한 데이터 환경을 육성하는 것은 경쟁 우위입니다.</p>
+
+
+  <p>훌륭한 데이터 관리는 중요한 전략적 이점을 제공하고 고객에게 서비스를 제공할 때 브랜드 차별화를 가능하게 합니다. 소매업에서는 데이터가 풍부하거나 데이터가 좋지 않은 경우 문제가 되지 않습니다&rsquo;. 의사 결정을 구동하고 자동화하기 위해 조치를 취하고 인사이트를 운영할 수&rsquo; 없는 경우 데이터 관리 전략을 다시 검사해야 합니다.</p>
+
+
+  <h2>권장하는 다음 단계</h2>
+
+
+  <ul style="margin-left: 40px;">
+   <li>데이터 처리 및 처리에 대한 자세한 고려 사항은 <a href="https://docs.microsoft.com/en-us/azure/industry/retail/retail-data-management-overview?WT.mc_id=dm-acomblog-mazoroto" target="_blank">Retail의 데이터 관리를</a> 참조하세요.</li>
+   <li>컨텍스트에서 데이터 관리를 적용하려면 클라우드의 데이터 및 기계 학습 기능으로 해결되는 실제 소매 문제에 이 정보를 적용하는 <a href="https://download.microsoft.com/download/0/1/5/0150425C-14C7-41F4-97EA-3DE57B678C51/IndUC_InvOpt.pdf" target="_blank">SKU 구색 + 기계 학습 사용 사례를 통해 인벤토리 최적화</a> 를 읽습니다.</li>
+  </ul>

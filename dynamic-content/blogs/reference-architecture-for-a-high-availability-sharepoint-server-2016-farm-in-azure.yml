@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 284699479247041bbccc269382539dd7e11ddf60
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912524"
+Slug: reference-architecture-for-a-high-availability-sharepoint-server-2016-farm-in-azure
+Title: Azure의 고가용성 SharePoint Server 2016 팜에 대한 참조 아키텍처
+Summary: AzureCAT 패턴 & 사례 팀은 Azure에서 고가용성 SharePoint Server 2016 팜을 배포하고 실행하기 위한 새로운 참조 아키텍처를 게시했습니다.
+Content: >-
+  <p>Azure CAT Patterns Practices &amp; 팀은 <a href="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/sharepoint">Azure에서 고가용성 SharePoint Server 2016 팜</a>을 배포하고 실행하기 위한 새로운 참조 아키텍처를 게시했습니다.</p>
+
+
+  <p>다음 항목을 포함하여 규범적인 지침을 제공합니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+   <li>리소스를 포함하여 배포에 필요한 아키텍처 리소스입니다.</li>
+   <li>확장성 고려 사항.</li>
+   <li>가용성 고려 사항.</li>
+   <li>관리 효율성 고려 사항.</li>
+   <li>보안 고려 사항</li>
+  </ul>
+
+
+  <p><a href="https://docs.microsoft.com/azure/architecture/reference-architectures/">Azure 참조 아키텍처</a>에서 찾을 수 있는 모든 참조 아키텍처와 마찬가지로 설명 지침과 PowerShell 스크립트 집합 및 Azure Resource Manager 템플릿이 포함되어 SQL Server Always On 및 시뮬레이션된 온-프레미스 네트워크를 사용하여 작동하는 SharePoint Server 2016 팜을 배포합니다. 이 참조 아키텍처의 배포 시간은 몇 시간만 걸릴 수 있으므로 이전에 빌드하고 테스트하는 데 며칠이 걸리는 작업을 간소화할 수 있습니다.</p>
+
+
+  <p>참조 아키텍처를 검토하고, 배포를 사용해 보며, GitHub 이 아키텍처 및 기타 참조 아키텍처에 기여하도록 초대합니다.</p>
+
+
+  <p><b>참고</b>: SharePoint HA 팜에 대한 컴퓨팅 요구 사항은 온-프레미스 또는 클라우드에서 실행되는 많은 워크로드보다 훨씬 높습니다. 이를 배포하는 경우 전체 배포에서 38개의 코어를 사용합니다. 따라서 타이어를 걷어차는 경우&rsquo; 청구서에 대한 놀라움을 피하기 위해 완료될&rsquo; 때 가상 머신을 종료해야 합니다.</p>
+
+
+  <p>결과 구성은 다음과 같습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/edc286a0-8a9f-4935-9cd6-9e8ec81a1e41.png"><img alt="image" border="0" height="699" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7910d3fa-471f-4981-aefd-21b6e04a0054.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="1024"></a></p>

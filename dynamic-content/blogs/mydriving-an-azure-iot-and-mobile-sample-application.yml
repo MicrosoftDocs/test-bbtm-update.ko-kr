@@ -1,0 +1,93 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f0757ea92931e4348b361e76855426155048b2fa
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905341"
+Slug: mydriving-an-azure-iot-and-mobile-sample-application
+Title: MyDriving – Azure IOT 및 모바일 샘플 애플리케이션
+Summary: MyDriving Azure IoT 및 모바일 샘플 애플리케이션을 사용하면 MyDriving 모바일 애플리케이션 및 선반 OBD 디바이스를 사용하여 차량의 여정을 기록할 수 있습니다.
+Content: >-
+  <p>IoT 및 모바일 솔루션 빌드 재미&nbsp;와 흥미 진진한. 올해는 //Build에서 이 두 가지를 결합할 때 함께 사용할 수 있는 놀라운 시나리오를 보여주고 싶었습니다. 그래서 샘플 애플리케이션을 개발했습니다. <a href="https://aka.ms/iotsampleapp">MyDriving</a> Azure IoT 및 모바일 샘플 애플리케이션을 사용하면 MyDriving 모바일 애플리케이션 및 기성 OBD 디바이스를 사용하여 차량의 여정을 기록할 수 있습니다. 백 엔드에서 Azure 서비스를 사용하여 연료 소비량과 같은 실시간 인사이트와 운전자 등급과 같은 장기 패턴 및 추세 모두에 대한 자동차 원격 분석 데이터를 분석합니다.</p>
+
+
+  <p>사용자의 노력을 시작하기 위해 <a href="https://github.com/Azure-Samples/MyDriving">모든 코드를 오픈 소스로</a> 제공하고 광범위한 참조 <a href="https://aka.ms/mydrivingdocs">가이드</a> 와 <a href="https://azure.microsoft.com/documentation/articles/iot-solution-build-system/">설명서를</a> 작성했습니다. 이 가이드를 통해 프로젝트를 쉽게 시작할 수 있을 것으로 믿습니다.</p>
+
+
+  <h3>MyDriving의 IoT 디바이스</h3>
+
+
+  <p align="left">이 솔루션은 차량 <a href="https://en.wikipedia.org/wiki/On-board_diagnostics">의 온보드 진단</a> (OBD) 데이터를 사용하여 운전을 분석합니다. 대부분의 현대 자동차는 객실에 표준 OBD-II 데이터 링크 커넥터를 가지고 있습니다. OBD-II 규격 동글을 연결하면 USB, Bluetooth 또는 WiFi를 통해 다른 로컬 디바이스에서 차량 데이터를 사용할 수 있습니다. 자동차의 제조, 모델 및 연령에 따라 속도, 연료 효율 및 엔진 RPM과 같은 다양한 유형의 OBD 원격 분석을 수집할 수 있습니다.</p>
+
+
+  <p align="left">이 연습의 목표 중 하나는 개발자가 저렴한 기성 OBD 디바이스로 이 솔루션을 직접 사용해볼 수 있도록 하는 것이었습니다. 따라서 전화 자체는 여기서 필드 게이트웨이로 사용되고 MyDriving 모바일 애플리케이션을 통해 OBD 디바이스에서 수집된 데이터를 <a href="https://azure.microsoft.com/en-us/services/iot-hub/">Azure IOT Hub로</a> 보내는 데 사용됩니다. 자동차에 적합한 장치를 찾으려면 <a href="https://azure.microsoft.com/documentation/articles/iot-solution-get-started/">여기에서</a> 시작하는 문서를 살펴보세요.<img alt="IOT" border="0" height="192" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/96b5d591-697a-4580-83e5-9f18b192bcdf.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IOT" width="610"></p>
+
+
+  <h2>Azure를 사용하여 백 엔드 전원 공급</h2>
+
+
+  <p>백 엔드&mdash; 내에서 MyDrivingwe&mdash;의 마음과 영혼은 많은 코드를 작성하거나 처음부터 이러한 서비스를 빌드할 필요 없이 여러 Azure 서비스가 의미 있는 전체로 결합되는 방식을 보여주기 위해 노력했습니다. 주로 IoT Hub, Stream Analytics, SQL 데이터베이스, HDInsight, Machine Leaning 및 App Services와 같은 서비스의 구성 및 상호 연결을 통해 Power BI 같은 외부 서비스를 통해 백 엔드를 빌드했습니다.</p>
+
+
+  <p>또한 MyDriving에 포함되지 않은 추가 시나리오에 맞게 사용자 지정할 수 있도록 디자인을 확장할 수 있기를 원했습니다. MyDriving에서 이러한 예는 차량에 대한 VIN 조회를 수행하는 마이크로 서비스입니다. 다음 아키텍처 다이어그램은 MyDriving 솔루션의 전체 보기를 제공합니다. 시작 <a href="https://azure.microsoft.com/documentation/articles/iot-solution-build-system/">가이드</a>에 설명된 대로 사용자 고유의 Azure 계정에서 ARM 템플릿을 실행할 때 얻을 수 있는 Azure 서비스가 여기에&rsquo; 표시됩니다.</p>
+
+
+  <p><img alt="DeveloperWalkthrough_rev_3_28_FINAL" border="0" height="343" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dfdd7368-a8eb-4312-8d18-e4a082d9078d.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="DeveloperWalkthrough_rev_3_28_FINAL" width="610"></p>
+
+
+  <h3><img alt="Dashboard" border="0" height="299" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ca114054-fd8c-4847-93e0-f9d4cab2f969.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="대시보드" width="610"></h3>
+
+
+  <h2>iOS, Android 및 유니버설 Windows 플랫폼용 Mobile Apps</h2>
+
+
+  <p>각 플랫폼에 대한 네이티브 앱을 개별적으로 개발하고 훌륭한 사용자 환경을 제공할 수 있지만, 이렇게 하는 비용은 출시 시간 및 앱&rsquo; 수명 전체의 총 소유 비용 측면에서 금지될 수 있습니다. <a href="https://www.xamarin.com/?utm_source=microsoft&amp;utm_campaign=my-driving">Xamarin</a> 플랫폼을 사용하여 솔루션의 모바일 앱 부분을 빌드하도록 선택합니다.</p>
+
+
+  <p>Xamarin을 사용하면 플랫폼 API에 대한 모든 권한을 제공하는 구성 요소를 사용하여 C# 및 .NET을 사용하여 네이티브 iOS 및 Android 애플리케이션을 빌드할 수 있습니다. 또한 이식 가능한 클래스 라이브러리를 사용하여 iOS, Android 및 Windows 버전의 앱 간에 상당한 양의 코드(70%) 이상을 공유할 수 있었습니다. <a href="https://aka.ms/mydrivingdocs">참조 가이드</a>(3장)에서는 최대 재사용을 위해 코드를 구조화하는 방법과 모바일 환경을 제공하는 데 사용되는 다양한 구성 요소 및 기술에 대한 자세한 개요를 제공합니다. 모바일 앱에서 사용할 수 있는 최종 사용자 시나리오에 대한 자세한 개요는 여기에서 시작 가이드를 참조 <a href="https://azure.microsoft.com/documentation/articles/iot-solution-get-started/">하세요</a>.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e7a6e269-8dd1-4ccb-a329-03e0663f044f.png"><img alt="Profile" border="0" height="356" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f9ad9db7-4130-4386-b225-7af2fbea14e3.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="프로필" width="200"></a>&nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95c2ea0b-8920-4fe7-9ec3-26e0d6f3492c.png"><img alt="Screenshot_20160327-142756" border="0" height="356" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/365efe0d-5f97-4fbb-8c8c-19fb5afd6846.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="Screenshot_20160327-142756" width="200"></a>&nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4eb7ca80-faef-4f26-b1e0-e0b06925ea99.png"><img alt="Past Trips" border="0" height="356" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d504ecd-9eca-486a-a1ff-f5fa62301105.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="과거 여행" width="200"></a></p>
+
+
+  <h3>모바일 DevOps</h3>
+
+
+  <p>MyDriving 솔루션을 빌드하는 동안 빠른 DevOps 주기를 활용하여 앱을 빌드, 테스트 및 배포했습니다. 또한 사용량을 모니터링하고, 사용자로부터 충돌 로그 및 축자 피드백을 받고, 해당 인사이트를 사용하여 향후 개발 주기를 더 잘 계획하고 실행할 수 있었습니다. 지속적인 통합을 위해 <a href="https://www.visualstudio.com/en-us/products/visual-studio-team-services-vs.aspx">Visual Studio Team Services</a> 빌드 및 테스트를 설정합니다. 즉, GitHub 호스트되는 리포지토리의 모든 코드 커밋이 모든 플랫폼에 대한 빌드를 트리거하고 각각에 대해 테스트를 실행합니다. 이 모든 결과는 아래 프로젝트 대시보드에 표시됩니다.</p>
+
+
+  <p>빌드가 성공하면 <a href="https://www.xamarin.com/test-cloud">Xamarin Test Cloud</a>를 사용하여&nbsp; iOS 및 Android용 테스트를 실행하면 수천 개의 모바일 디바이스에서 자동 모바일 애플리케이션 테스트를 수행할 수 있습니다. 앱 패키지가 모든 테스트를 성공적으로 통과하면 Visual Studio Team Services&rsquo; 대한 HockeyApp 플러그 인을 사용하여 테스트에 통과한 빌드된 앱 패키지를 Tester에 배포하기 위해 <a href="https://hockeyapp.net">HockeyApp</a>에 보내는 것이 간단합니다. 앱 자체는 HockeySDK를 사용하여 사용자 피드백과 원격 분석을 수집하고 보고하도록 계측됩니다.</p>
+
+
+  <p><img alt="VSTS" border="0" height="309" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/795baca7-2312-4620-956b-eb4edc1a4f1e.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="VSTS" width="610"></p>
+
+
+  <h2>MyDriving 사용해 보기</h2>
+
+
+  <p>향후 4~5년 동안 IoT 솔루션에 6조 달러 이상이 지출될 예정입니다. 모든 앱 스토어의 총 매출은 1,000억 달러에 달하는 것으로 추정됩니다. 기회는 놀랍 &ndash; 지만 비즈니스 &ndash; 에&rsquo; 매료되지 않더라&rsquo;도 가젯을 가지고 노는 것이 정말 재미 있습니다!</p>
+
+
+  <p>우리는 여러분 모두가 가서이 솔루션을 시도하기를 바랍니다. 사용자 고유의 IoT 및 모바일 솔루션 빌드를 시작하는 것이 얼마나 쉬운지 유쾌하게 놀라게 되기를 바랍니다. 요약하자면, 사용자 고유의 솔루션을 시도하고 빌드하기 시작할 수 있는 몇 가지 리소스는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><a href="https://aka.ms/iotsampleapp">MyDriving 개요</a></li>
+   <li><a href="https://azure.microsoft.com/documentation/articles/iot-solution-get-started/">MyDriving 사용 시작</a></li>
+   <li><a href="https://azure.microsoft.com/documentation/articles/iot-solution-build-system/">고유한 MyDriving 솔루션 빌드 시작</a></li>
+   <li><a href="https://aka.ms/mydrivingdocs">MyDriving 참조 가이드</a></li>
+   <li><a href="https://github.com/Azure-Samples/MyDriving">MyDriving&nbsp; GitHub 리포지토리</a></li>
+  </ul>
+
+
+  <h2>사용자의 의견을 듣고 싶습니다!</h2>
+
+
+  <p>사용자 고유의 Azure IOT 및 모바일 솔루션을 바로 시작하기 위해 MyDriving을 만들었으며 사용자의 경험에 대해 듣고 싶습니다. 어려움이나 어려움이 있거나 MyDriving을 개선하기 위한 다른 제안이 있는지 알려주세요. MyDriving Mobile 앱 내에서 기본 제공 HockeyApp 피드백 메커니즘을 사용할 수 있습니다.</p>
+
+
+  <p>iOS 및 Android에서는 휴대폰에 흔들림을 주거나 설정 피드백 메뉴 명령을 사용합니다. <a href="https://github.com/Azure-Samples/MyDriving/issues">GitHub</a> 문제를 제기하거나 이 게시물이나 <a href="https://aka.ms/mydriving-use">시작 설명서</a>에 의견을 남길 수도 있습니다.</p>
+
+
+  <p>여러분의 소중한 의견을 기다리고 있습니다.</p>

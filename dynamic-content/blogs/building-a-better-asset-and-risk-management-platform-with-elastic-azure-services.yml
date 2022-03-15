@@ -1,0 +1,83 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7ecf8a4ef4849f0444182c36d41426c42e350041
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906069"
+Slug: building-a-better-asset-and-risk-management-platform-with-elastic-azure-services
+Title: 탄력적 Azure 서비스를 사용하여 더 나은 자산 및 위험 관리 플랫폼 빌드
+Summary: 탄력성은 서비스가 주문형으로 확장 및 계약할 수 있는 것을 의미합니다. 즉, 종량제 요금제에 있는 Microsoft Azure 고객은 Azure 서비스에서 가장 많은 혜택을 누릴 수 있습니다.
+Content: >-
+  <p>탄력성은 서비스가 주문형으로 확장 및 계약할 수 있는 것을 의미합니다. 즉, 종량제 요금제에 있는 Azure 고객은 Azure 서비스에서 가장 많은 혜택을 누릴 수 있습니다. 해당 서비스는 항상 사용할 수 있지만 비용은 최소한으로 유지됩니다. 이 기능은 매우 중요합니다. 한 Microsoft 파트너가 이를 차별화 지점으로 사용하고 있습니다.</p>
+
+
+  <h2>모듈식 및 탄력적 이점</h2>
+
+
+  <p>Azure의 주요 특성은 서비스의 상호 교환 가능한 특성입니다. 탄력성과 함께 Azure를 사용하면 최신 기업이 보다 쉽게 마이그레이션하고 발전할 수 있습니다. 금융 서비스 공급자의 경우 모듈식 접근 방식을 통해 고객은 최상의 분석과 다음 영역에서 이점을 얻을 수 있습니다.</p>
+
+
+  <ul>
+   <li><strong>위험 및 성능 분석</strong>: Azure Data Lake Storage, DataBricks 및 Azure Stream Analytics는 위험을 계산하기 위한 몇 가지 옵션에 불과합니다.</li>
+   <li><strong>규정 준수 자동화(regtech)</strong>: Azure DevOps 사용하거나 CloudNeeti와 같은 서비스 공급자를 사용하여 규정 준수를 자동화하면 힘든 작업이 간소화됩니다.</li>
+   <li><strong>투자 관리 기술</strong>: Azure Virtual Machines 또는 Azure Functions는 투자 포트폴리오를 관리하기 위한 두 가지 옵션일 뿐입니다.</li>
+  </ul>
+
+
+  <p>이러한 기능을 통해 자산 관리자는 클라이언트에 대해 더 높은 수익을 창출하는 우수한 제품을 빌드할 수 있습니다.</p>
+
+
+  <h2>금융 서비스는 어려운 시장입니다.</h2>
+
+
+  <p>자산 관리 산업의 경쟁은 활성 대 활성, 수동 대 활성, 수동 및 수동 대 패시브에 대한 경쟁이 치열해지며 마진은 줄어들고 있습니다. 동시에 비용이 많이 들고, 오래되고, 유지 관리하기 어려운 레거시 시스템과 기술이 비용과 운영 효율성 모두에 영향을 미치므로 성능을 더욱 끌어들이면서 규모를 조정하기가 어렵습니다. 새로운 Microsoft 파트너 인 <a href="https://www.axioma.com/" target="_blank">Axioma</a>는 금융 서비스 업계의 고객이 경쟁력을 회복하고 유지할 수 있도록 돕고 있습니다.</p>
+
+
+  <h2>온-프레미스는 엄격한 리소스를 의미합니다.</h2>
+
+
+  <p>많은 투자 회사는 제어 및 보안을 유지하기 위한 수단으로 물리적 데이터 센터에 의존해 있습니다. 그러나 이러한 속성 및 레거시 시스템은 유지 관리 비용이 많이 들고 크기 조정이 어렵습니다. 시장 변동성, 수수료 압축 및 전반적인 경쟁 투자 환경을 감안할 때 펀드 매니저는 우수한 투자 전략과 제품을 검색, 생성 및 구현할 수 있는 유연한 솔루션을 찾고 있습니다. 특히 엔터프라이즈 수준의 분석, 데이터, 보고 및 데이터 스토리지가 필요합니다.</p>
+
+
+  <h2>클라우드 탄력성은 중요한 특성입니다.</h2>
+
+
+  <p>Axioma는 API를 통해 각 구성 요소에 액세스할 수 있는 개방적이고 유연한 플랫폼을 제공합니다. 플랫폼은 클라우드 네이티브 아키텍처이지만 모듈화는 다른 최고의 공급자와 원활한 통합 지점을 허용합니다. 예를 들어 <a href="https://www.axioma.com/products/risk/" target="_blank">Axioma Risk</a> 는 엔터프라이즈 수준의 MAC(다중 자산 클래스) 위험 관리 플랫폼입니다. 이 솔루션을 통해 자산 관리자는 AUM(관리 중인 자산)을 효율적으로 확장하여 수익 성장을 촉진하고 마진 압축의 영향을 줄일 수 있습니다.</p>
+
+
+  <h2>Azure를 사용하여 통합 플랫폼 빌드</h2>
+
+
+  <p>Azure를 사용하여 플랫폼을 빌드할 때 플랫폼 사용자는 공통 아키텍처의 이점을 누릴 수 있습니다. 예를 들어 Axioma는 솔루션을 플랫폼 <strong>axiomaBlue</strong>로 마이그레이션하는 데 도움이 됩니다. 그러면 클라이언트는 위험 및 성능 분석을 계산하는 공통 엔진의 이점을 누릴 수 있습니다. 플랫폼에 하나의 엔진이 있다는 것은 동일한 기본 시장 및 참조 데이터를 사용하는 것을 의미합니다. 따라서 클라이언트는 엔터프라이즈 및 전면, 중간 및 백오피스 기능 전반에서 위험과 수익을 일관되게 볼 수 있습니다.</p>
+
+
+  <p>특수 플랫폼에서 사용자는 유연한 모듈식 워크플로 솔루션을 만들 수 있습니다. 금융 서비스의 경우 플랫폼 접근 방식은 이 그래픽과 같이 고도로 특수화된 구성 요소 집합을 의미합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d86c3129-04c6-403d-8386-cf1b6713e2ff.png"><img alt="Diagram-showing-a-highly-specialized[2]" border="0" height="613" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b25d6347-97c7-4b35-a5ab-b4c5390c2ed9.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="다이어그램-showing-a-high-specialized[2]" width="876"></a></p>
+
+
+  <h2>사용되는 Azure 서비스</h2>
+
+
+  <p>Axioma는 Azure의 탄력적 및 모듈식 특성을 최대한 사용하는 기본 예제입니다. 다음 Azure 서비스를 사용합니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-service-fabric-service-fabric-mesh/?WT.mc_id=AxiomaMarketplace-Blog-hbush" target="_blank">Service Fabric</a>&nbsp;</li>
+   <li><a href="https://azure.microsoft.com/services/virtual-machines/?WT.mc_id=AxiomaMarketplace-Blog-hbush" target="_blank">가상 머신</a>(Windows 및 Linux)&nbsp;</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision?WT.mc_id=AxiomaMarketplace-Blog-hbush" target="_blank">VM 확장 집합</a> /  <a href="https://docs.microsoft.com/en-us/rest/api/load-balancer/?WT.mc_id=AxiomaMarketplace-Blog-hbush" target="_blank">부하 분산 장치</a></li>
+   <li><a href="https://azure.microsoft.com/services/active-directory/" target="_blank">Azure Active Directory</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/services/data-lake-analytics/?WT.mc_id=AxiomaMarketplace-Blog-hbush" target="_blank">Azure 데이터 레이크</a></li>
+   <li><a href="https://azure.microsoft.com/services/sql-database/" target="_blank">Azure SQL Database</a></li>
+   <li><a href="https://azure.microsoft.com/services/postgresql/" target="_blank">Azure Database for PostgreSQL</a></li>
+   <li><a href="https://azure.microsoft.com/services/storage/blobs/?WT.mc_id=AxiomaMarketplace-Blog-hbush" target="_blank">Storage 계정</a>&nbsp;</li>
+   <li><a href="https://azure.microsoft.com/services/service-bus/?WT.mc_id=AxiomaMarketplace-Blog-hbush" target="_blank">Service Bus/릴레이</a></li>
+  </ul>
+
+
+  <h2>권장하는 다음 단계</h2>
+
+
+  <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/axioma.axioma-risk?tab=Overview?WT.mc_id=AxiomaMarketplace-Blog-hbush" target="_blank">AxiomaBlue</a>에 대한 Azure Marketplace 목록으로 이동하여 <strong>연락처</strong>를 클릭합니다.</p>

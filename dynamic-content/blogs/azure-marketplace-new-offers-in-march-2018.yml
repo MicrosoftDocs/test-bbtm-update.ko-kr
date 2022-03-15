@@ -1,0 +1,354 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a2579a1d7b8101a403067877c48874506494b4d9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912066"
+Slug: azure-marketplace-new-offers-in-march-2018
+Title: Azure Marketplace 새 제품 - 볼륨 7
+Summary: Azure Marketplace 에코시스템을 계속 확장합니다. 2018년 3월, 56개의 새로운 제품이 등록 기준을 성공적으로 충족하고 라이브로 전환되었습니다. 새 제품의 세부 정보를 참조하세요...
+Content: >-
+  <p>Azure Marketplace 에코시스템을 계속 확장합니다. 2018년 3월, 55<b></b>개의 새로운 제품이 등록 기준을 성공적으로 충족하고 라이브로 전환되었습니다. 아래의 새로운 제품에 대한 세부 정보를 참조하세요.</p>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b1ea9060-e87d-46ab-945a-81b7083981d5.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3aa4bdb0-2133-47a9-86d9-dce1260a9a27.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.kentico-on-windows-server-2012-r2">Windows Server 2012 R2의 Kentico</a>: Kentico CMS는 웹 사이트, 온라인 상점, 인트라넷 및 커뮤니티 사이트를 빌드하기 위한 무료 버전 웹 콘텐츠 관리 시스템입니다. 커뮤니티를 사회적으로 만들고 관리하고 통합하여 브랜드에 대한 대화를 장려합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/18f709cb-18dc-484b-b129-c604babeafb2.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9f448456-1feb-4e2c-8894-cd410c7735fe.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/opentext.ps-16-jan-18-info">OpenText Process Suite 16.3 Marketplace 정보 VM</a>: 지능적으로 자동화되고 콘텐츠가 풍부한 프로세스를 사용하여 빠르게 빌드하고 쉽게 수정할 수 있는 Process Suite는 훨씬 낮은 IT 워크로드로 다양한 새 디지털 환경을 제공할 수 있는 기능을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/60ae004f-8637-454c-ad33-7c3502846065.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2a30188-1d80-4ffb-9d71-d94fbed824c0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/opentext.cs-16-jan18-info">Content Suite 16(2018년 1월)</a> : OpenText Content Suite Platform은 보관 및 처리를 통해 캡처에서 정보의 흐름을 관리하도록 설계된 포괄적인 ECM(엔터프라이즈 콘텐츠 관리) 시스템입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8dfa1eba-71ed-43b5-8acc-456683681fce.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/93c25e89-a8f0-4bed-8d29-c2d4b5836690.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intel-bigdl.bigdl__vm">BigDL Spark Deep Learning Framework VirtualMachine</a>: Apache Spark 아키텍처용으로 설계되고 Intel Xeon CPU에 대해 고도로 최적화된 분산 컴퓨팅을 위한 심층 Learning 프레임워크입니다. GPU가 필요 없는 TensorFlow, Caffe 등의 기능 패리티</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a97281a0-331f-402e-b3d4-5205e3ae02fc.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/69bdc719-a0ce-4a61-bc58-f8295f6ee9a8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.gallery-server-on-windows-server-2012-r2">Windows Server 2012 R2의 갤러리 서버</a>: 갤러리 서버는 사진, 비디오, 오디오 및 기타 파일을 공유하고 관리하기 위한 무료 오픈 소스, DAM(Digital Asset Management) 애플리케이션 및 웹 갤러리입니다. ASP.NET 및 C#으로 작성되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f4463538-a281-4770-995e-2799f07c9666.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6f9e2725-0c6a-412e-8189-13ab9bdf1bd5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.sugarcrm-on-windows-server-2012-r2">Windows Server 2012 R2의 SugarCRM</a>: SugarCRM Community Edition은 전 세계 수백만 기업의 요구를 충족하는 오픈 소스 무료 CRM(고객 관계 관리) 솔루션입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95a3a5ec-0331-4963-bd23-c0b04b68c2dc.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/80110a22-bc78-4295-8e56-8439666560fe.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.apache-web-server-on-ubuntu-14-04-lts">Ubuntu 14.04 LTS의 Apache 웹 서버</a>: Apache는 무료 오픈 소스 플랫폼 간 웹 서버 소프트웨어입니다. Apache Software Foundation에서 개발 및 유지 관리하는 이 소프트웨어는 전 세계 모든 웹 서버의 67%에서 실행됩니다. 빠르고 안정적이며 안전합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c6113dc1-7d7f-4d88-b260-25f2733189c8.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3956c295-04c4-42d4-8701-d673e0b12a38.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.mysql-5-7-on-centos-7-4">CentOS 7.4의 MySQL 5.7</a>: MySQL은 SQL 구조적 쿼리 언어 &ndash; 기반으로 하는 관계형 데이터베이스 관리 시스템입니다. 이 애플리케이션은 데이터 웨어하우징, 전자 상거래, 로깅 애플리케이션 및 웹 데이터베이스를 비롯한 다양한 용도로 사용됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9279b820-2210-45b3-8616-7dbbcbc49bdd.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d3d2590-633c-4c6b-be59-40e6f391e424.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.mysql-5-7-on-ubuntu-14-04-lts">Ubuntu 14.04 LTS의 MySQL 5.7</a>: MySQL은 SQL 구조적 쿼리 언어 &ndash; 기반으로 하는 관계형 데이터베이스 관리 시스템입니다. 이 애플리케이션은 데이터 웨어하우징, 전자 상거래, 로깅 애플리케이션 및 웹 데이터베이스를 비롯한 다양한 용도로 사용됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0e6b2262-981a-4bec-aee4-a8325914c0e1.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f537d744-83e6-49fa-86e6-3292773e549b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.dnn-cms-win2012-r2">Windows Server 2012 R2의 DNN 플랫폼</a>: DNN 플랫폼(이전의 DotNetNuke Community Edition)은 ASP.NET 위한 개방적이고 확장 가능하며 안전하고 확장 가능한 콘텐츠 관리 시스템입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/08e33411-f8fd-47f1-8c6e-438f76e549e8.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a42dbf1-b5e2-4aef-9825-c8703220a2cc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ubercloud.ansys_182_test">ANSYS 18.2 유체 및 구조</a>: 엔지니어링 생산성을 향상합니다. Microsoft Azure ANSYS는 복잡한 시뮬레이션을 수행하는 데 필요한 추가 컴퓨팅 성능과 접근성을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/34a2861d-7ae4-4f86-a40a-286aab90602d.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7b66476e-b539-45c3-b658-fcba8546687e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.mysql-5-7-on-ubuntu-16-04-lts">Ubuntu 16.04 LTS의 MySQL 5.7</a>: MySQL은 SQL 구조적 쿼리 언어 &ndash; 기반으로 하는 관계형 데이터베이스 관리 시스템입니다. 이 애플리케이션은 데이터 웨어하우징, 전자 상거래, 로깅 애플리케이션 및 웹 데이터베이스를 비롯한 다양한 용도로 사용됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5c569d29-fb45-4035-9c5c-2e1bffef270a.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e6075f16-8598-4f30-b6e2-3f66be8c3d20.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/alachisoft.ncache-community-48">NCache Community 4.8 서버</a>: NCache는 실시간 데이터 액세스 요구 사항이 있는 중요 업무용 .NET 애플리케이션을 위한 고성능 개체 캐싱 솔루션입니다. NCache는 타오르는 속도를 제공하며 .NET 스택과 완전히 통합됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db3cfdc5-97be-4222-924a-aa137ac0f3a0.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/303d83c2-d44b-47aa-99a6-ccd22fdb053c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.redis-on-ubuntu-16-04-lts">Ubuntu 16.04 LTS의 Redis</a>: Redis는 데이터베이스, 캐시 및 메시지 브로커로 사용되는 오픈 소스(BSD 라이선스), 메모리 내 데이터 구조 저장소입니다. Redis는 Redis Sentinel을 통한 고가용성 및 Redis 클러스터를 사용한 자동 분할을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e6ab3f32-514d-4184-9bb6-f0002857ffad.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cae457e5-21ca-4be6-a0cb-9a311b9082f2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thoughtspot-inc.thoughtspotvirtualmachine">Thoughtspot Virtual Machine</a>: ThoughtSpots&rsquo; 차세대 분석 플랫폼은 사용하기 쉬운 검색 기반 환경을 제공합니다. 즉, 누구나 검색을 사용하여 몇 초 안에 회사 데이터를 분석하고 원클릭 자동화된 인사이트를 분석할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/184856e3-fdb9-4cb8-9706-85f4adc7338c.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/110413b2-36a8-4c4d-82ff-9c4a5ca45bfa.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.postgresql-on-ubuntu-16-04-lts">Ubuntu 16.04 LTS의 PostgreSQL</a>: Postgres는 확장성 및 표준 준수에 중점을 둔 개체 관계형 데이터베이스 관리 시스템입니다. 작은 단일 머신 애플리케이션에서 대형 인터넷 연결 애플리케이션에 이르는 워크로드를 처리할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92ace203-f98e-4e2f-be1d-1766d4a85b34.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/054ffaf2-14e7-4683-ba4a-ed2f5acebd77.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.apache-web-server-on-centos-7-4">CentOS 7.4의 Apache 웹 서버</a>: Apache는 무료 오픈 소스 플랫폼 간 웹 서버 소프트웨어입니다. Apache Software Foundation에서 개발 및 유지 관리하는 이 소프트웨어는 전 세계 모든 웹 서버의 67%에서 실행됩니다. 빠르고 안정적이며 안전합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a39bddca-1563-4391-b38c-68344d58a764.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3589e635-f6e3-42ba-84b3-b4fdd8ad4621.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.postgresql-on-centos-7-4">CentOS 7.4의 PostgreSQL</a>: Postgres는 확장성 및 표준 준수에 중점을 둔 개체 관계형 데이터베이스 관리 시스템입니다. 작은 단일 머신 애플리케이션에서 대형 인터넷 연결 애플리케이션에 이르는 워크로드를 처리할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/df502731-daa1-4095-b0cb-11c62ba0bf3c.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4df555e4-4472-4849-8a47-22076a691371.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.apache-web-server-on-ubuntu-16-04-lts">Ubuntu 16.04 LTS의 Apache 웹 서버</a>: Apache는 무료 오픈 소스 플랫폼 간 웹 서버 소프트웨어입니다. Apache Software Foundation에서 개발 및 유지 관리하는 이 소프트웨어는 전 세계 모든 웹 서버의 67%에서 실행됩니다. 빠르고 안정적이며 안전합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dc668aee-2191-48a3-84e3-6e8c1bc043ca.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bbc0fee2-b28c-4779-bad5-d12c0ea694c4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudhub-technologies.postgresql-on-ubuntu-14-04-lts">Ubuntu 14.04 LTS의 PostgreSQL</a>: Postgres는 확장성 및 표준 준수에 중점을 둔 개체 관계형 데이터베이스 관리 시스템입니다. 작은 단일 머신 애플리케이션에서 대형 인터넷 연결 애플리케이션에 이르는 워크로드를 처리할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bf217335-b9b1-4ad4-863a-f78deab9c2b8.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d24eec13-0493-44db-af10-3d28f9c10dc7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dell_software.spotlight-enterprise-12-2">스포트라이트 Enterprise 12.2</a>: 24 x 7 모니터링 및 진단을 가져와 SQL Server 성능을 최적화합니다. 비즈니스에 영향을 미치기 전에 SQL Server 성능에 영향을 주는 모든 것을 완전히 파악하고 문제를 사전에 해결합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/194ac21e-309d-48bc-8248-0af4298a53ae.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f1ec38a4-bc60-48ff-9ac3-76a86c3b8f02.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fortinet.fortinet_fortivoice">Fortinet FortiVoice Enterprise PBX</a>: 우수한 고객 서비스와 효율적인 직원 협업을 위해 총 통화 제어 및 정교한 통신 기능을 얻습니다. FortiVoice Enterprise 시스템은 최대 10,000명의 전화 사용자가 있는 사무실에 강력한 기능과 가치를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92e3e749-1085-4fe7-b2ee-1fb36a3b4958.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f43fa7af-30ee-4b7c-bae5-295a2d094659.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netiq.replication_environment">PlateSpin 복제 환경</a>: PlateSpin Migrate는 단일 제어 지점에서 물리적 서버, 가상 호스트 및 엔터프라이즈 클라우드 플랫폼&mdash; 간 네트워크를 통해 워크로드를 이동하는 프로세스를 자동화하는 강력한 워크로드 이식성 솔루션입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f8a7612b-96cd-4699-927b-36cb38cb9ba3.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/570189e3-3511-409a-81f9-a357d579ea75.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/profisee.maestro-rdm-server-v6">RDM용 LightSwitch 프로파일링</a>: 더 나은 비즈니스 결과를 위한 빠른 경로인 참조 데이터 관리를 위한 Profisee LightSwitch를 사용하여 일반적인 데이터를 제어하고 엔터프라이즈 정보 관리 전략에 대한 도움을 받을 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e76810c2-8c9c-4db5-85c4-ee58774d0fa4.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c321be80-1fb3-49c3-9d2c-fff3dec74e2f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mfe_azure.mcafee_vnsp_controller_for_azure">McAfee&reg; vNSP 컨트롤러</a>: vNSP 컨트롤러는 네트워크 및 보안 정책의 중앙 적용 지점입니다. 클라우드 환경의 인스턴스에 설치된 모든 가상 프로브를 제어하고 네트워크 보안 관리자에서 구성할 수 있는 중앙 집중식 관리자입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ef915d96-8dac-423a-beb1-31d6324944c5.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/41b4f622-ba2b-4240-9262-8d0866939afd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mfe_azure.mcafee_vnsp_for_azure">Mcafee&reg; 가상 IPS 센서</a>: 침입, 오용 및 맬웨어의 정확한 검색 및 방지를 위해 빌드된 확장 가능하고 유연한 콘텐츠 처리 가상 어플라이언스를 가져옵니다. 가상 IPS 센서는 악의적인 활동을 감지하고 대응하는 실시간 트래픽 모니터링을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e7bac419-4eb1-410b-9639-a07cfb473683.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db508b10-4ded-4942-831d-373450cc7daa.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mfe_azure.mcafee_vnsp_nsm_for_azure">Mcafee&reg; 네트워크 보안 관리자</a>: McAfee Network Security Manager를 사용하면 단일 관리 인터페이스를 사용하여 물리적 및 하이브리드 클라우드 환경을 쉽게 보호할 수 있습니다. 이를 통해 타의 추종을 불허하는 속도, 정확도 및 단순성으로 정책을 관리할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b7ece56-148c-4dea-ae27-ba7b1f4219a4.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1148fc4f-64a4-4f4e-85c8-a151aac7f5b7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/avepoint.84104b82-160c-44c6-830d-2c0c03344ddb">AP Elements FLY</a>: 파일 공유, Exchange/Gmail 사서함 및 SharePoint Office 365 마이그레이션합니다. AP Elements Fly는 빠른 Office 365 마이그레이션 도구입니다. 고객이 미리 정의된 매핑, 일정 및 실시간 모니터를 사용하여 마이그레이션 프로젝트를 자동화하는 데 도움이 될 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eacb8e3f-6fb8-43ea-9a5c-87d6631e16b1.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c783bb4b-02a7-4601-8c8e-fd0781e9e4a1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fidesys.fidesys_rus_1_7">Fidesys Rus</a>: Fidesys는 메시링에서 결과 시각화에 이르는 엔지니어링 강도 분석의 전체 주기를 수행하는 혁신적인 CAE 시스템입니다. 모든 유형의 산업에 대한 다양한 기능뿐만 아니라 러시아어로 편리한 인터페이스를 얻을 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a16c3b59-05ac-49fa-9c56-b30b6e9dec21.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ca8ca883-0f68-4f9e-9861-b71c04116ca3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/syte.syteoffer">Syte.ai</a>: Syte.ai 사진이나 비디오의 모든 제품을 즉시 구매할 수 있게 합니다. 고객의 영감을 받아 새로운 쇼핑 기회로 자동 전환하고, 입증된 결과를 통해 소매업체 및 브랜드에 대한 브랜드 충성도, 검색성 및 변환을 증가시킵니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cd0e35b5-4beb-4aae-b51f-bb0109efc9a6.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a3c5123b-bd4b-4790-af4d-377a75e9c68b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetnexus.dvwa">젠장 취약한 웹앱</a>: DVWA는 보안 개념을 연구하고 보안 도구를 테스트하기 위한 취약한 PHP/MySQL 웹 애플리케이션입니다. 이는 교실 환경에서 보안 전문가, 웹 개발자 및 교사/학생에게 도움이 될 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c0e05fe-a422-48c9-a44a-ffddb1eac413.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61087506-57ec-4676-9079-7820ea3f7c88.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jetnexus.zap">웹 애플리케이션 공격 도구</a>: 웹 애플리케이션 공격 도구는 OWASP ZAP를 기반으로 하는 취약성 검사기입니다. 애플리케이션을 개발하고 테스트하는 동안 웹 애플리케이션에서 보안 취약성을 자동으로 찾는 데 도움이 될 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bad24492-43a5-4a27-8994-89389bcdb5c0.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/24f062e5-688e-4dec-bb9b-5dc6e0005475.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/paloaltonetworks.panorama">Palo Alto Networks Panorama</a>: 파노라마 네트워크 보안 관리는 끊임없이 변화하는 위협 환경에서 정적 규칙 및 동적 보안 업데이트를 제공합니다. 관리자 워크로드를 줄이고 전반적인 보안 태세를 개선합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3f307aa4-41fd-4d5d-95e1-aa7b1344182b.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0064cc67-6e8f-49c1-b0bd-0d09e3579442.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tunnelbiz.centos7phpoptimizingnginx">Centos 7 nginx Linux 웹 서버 최적화</a>: centos 7, PHP 7 및 nginx 웹 서버 이미지를 최적화하는 더 빠른 웹 서버 빌드를 위해. OS CENTOS 7, MariaDB, PHP 7 및 nginx와 같은 커널 재구성이 함께 제공됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/13687619-1522-470a-919e-a30d22abe34b.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/29a0eae1-320b-4b90-b820-ac15b29b2b34.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/timextender.timextenderdiscoveryhub">TimeXtender 검색 허브 애플리케이션 서버</a>: TimeXtender는 단일, 통합된 메타데이터 기반, Agile 및 자동화된 소프트웨어 플랫폼입니다. 다양한 데이터 원본의 데이터를 쉽게 병합하고 민첩한 데이터 모델링을 사용하여 최신 데이터 웨어하우스 및 의미 체계 모델을 빌드합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c861940-1e5a-4396-bd28-b14a0f16cb3d.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5eb3675a-56ae-4ec7-8d01-d80190a4bdd4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/truestack.tsdc">TrueStack Direct 커넥트</a>: VPN 관리 서버인 TrueStack Direct 커넥트 온-프레미스 Windows 도메인 컨트롤러를 클라우드로 가져오는 가장 간단한 방법이므로 IT 부서와 최종 사용자가 어디서나 액세스할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/35179dc6-1489-41c1-9617-77f5db68e5b5.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8cea3678-daaa-4bf0-9933-e2d651c5f037.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/aquaforest.aquaforest-searchlight-tagger">Office 365 대한 자동화된 메타데이터 태그 지정 솔루션</a>: 문서의 텍스트 또는 바코드 내용에 따라 메타데이터를 자동으로 추가합니다. 검색 기능을 크게 향상시키기 위해 Searchlight Tagger는 문서 콘텐츠에 따라 메타데이터 태그를 자동으로 추가할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b65d4cc9-d358-4548-aebe-6e00b357f827.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb2ed08b-5296-4302-aa01-62869c5e7059.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cisco.cisco_cloud_vedge_17_2_4">Cisco vEdge Cloud Router</a>: Cisco vEdge Cloud는 물리적 vEdgerouter 플랫폼에서 사용할 수 있는 다양한 기능을 지원하는 소프트웨어 라우터 플랫폼입니다. vEdge Cloud 라우터는 프라이빗, 퍼블릭 또는 하이브리드 클라우드 환경에 배포할 수 있는 가상 머신으로 제공됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8358d19b-3d47-4cca-b65a-5a6b32a15f34.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6d4282a4-bd7d-4a7f-b1ad-bf12f9d50541.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/barracudanetworks.waf">Azure용 Barracuda CloudGen WAF</a>: Azure용 Barracuda CloudGen WAF는 인바운드 웹 트래픽을 검사하고 애플리케이션을 대상으로 하는 많은 공격을 차단합니다. 통합 액세스 제어 엔진은 강력한 인증 및 사용자 제어를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eb0b1233-3135-4634-824d-77b549b9c9c1.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6407688e-3fd7-4a63-b61d-e2c42d8719e8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/imperva.securesphere-waf-v13">SecureSphere 웹 애플리케이션 방화벽 v13.0</a>: SecureSphere by Imperva를 사용하여 중요 비즈니스용 애플리케이션을 보호합니다. 엔터프라이즈급 보호, 동적 보안 제어 및 앱 취약성, OWASP 상위 10개 위협 및 계층 7 DDoS 공격에 대한 방어를 가져옵니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/42ec92b9-e169-4f82-98ae-bf28de14c888.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a15974ab-01f9-484e-ac40-e7537c66663b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/xendata-inc.cloud-file-gateway">XenData Cloud File Gateway</a>: XenData Cloud File Gateway를 사용하면 파일 기반 애플리케이션에서 수정 없이 Azure Blob Storage를 사용할 수 있습니다. 게이트웨이는 비디오, 이미지 및 기타 대용량 파일에 최적화되어 있어 광범위한 애플리케이션에 적합합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e6b84b36-23a2-4777-a7a7-8a231873de30.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3682c849-21d3-4f7a-8fed-4e97ac78dec2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/haproxy-technologies.hapee-rhel">HAProxy Enterprise - Red Hat Enterprise Linux</a>: HAProxy Enterprise Edition HAProxy를 엔터프라이즈급 기능, 서비스 및 일류 지원과 결합하는 소프트웨어 부하 분산 장치 및 애플리케이션 배달 컨트롤러입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a6283c1f-5f95-4732-8050-be2f01d7e75d.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ee3c5e0f-b8df-48a8-8976-c2af8a7b33c6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/haproxy-technologies.hapee-ubuntu">HAProxy Enterprise - Ubuntu Server</a>: HAProxy Enterprise Edition HAProxy를 엔터프라이즈급 기능, 서비스 및 일류 지원과 결합하는 소프트웨어 부하 분산 장치 및 애플리케이션 배달 컨트롤러입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">&nbsp;</td>
+     <td width="670">
+     <p align="center"><b>Microsoft Azure 애플리케이션</b></p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/101610ee-c747-4e06-ad8c-7c698a3024ac.png"><img alt="image" border="0" height="104" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61371846-d315-412f-b41d-f6a53465634d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/baas-techbureau.mijin_baas_on_azure">Azure의 mijin BaaS</a>: mijin 블록체인은 기존 인프라의 비용을 줄이면서 고성능, 제로 가동 중지 시간 및 고정할 수 없는 데이터로 안전한 데이터 공유 환경을 만듭니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e2990dd2-f76c-4ffc-8644-17b20c9c4928.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4e07ab95-8942-4ec6-8497-b80c37d33cb1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/watchguard-technologies.firebox">WatchGuard Firebox Cloud</a>: 보안 경계를 클라우드로 확장하고 퍼블릭 클라우드 환경 내에서 실행되는 이메일 서버, 웹 서버, CRM(고객 관계 관리 시스템) 및 파일 스토리지를 보호합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7fc36bcb-d695-455c-b277-0b30ed122197.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fd8d9013-6473-4be2-8c34-4f5b8a9a6aa7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudlink.cloudlink-solution">CloudLink SecureVM</a>: 가상 머신을 쉽고 안전하게 제어, 모니터링 및 암호화합니다. CloudLink SecureVM by Dell EMC는 정책 기반 키 관리 및 오케스트레이션을 제공하여 네이티브 Windows BitLocker 및 Linux OS 암호화 기능을 잠금 해제합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1822ae4f-84ef-43da-a875-f1c6fe4c7e9d.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1cbd507c-be93-4a1e-9358-84e06f18e84d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/black-duck-software.blackduck_hub_431">Black Duck Hub</a>: Black Duck Hub를 사용하면 보안 및 개발 팀이 애플리케이션 및 컨테이너에서 오픈 소스 관련 위험을 식별하고 완화할 수 있습니다. Black Duck은 타사 개발 도구와 광범위한 통합을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4332ee87-d36d-49ba-b184-402faac05a00.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ae4f5bdb-996e-4232-93c6-fe154bb508e6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/crate-io.cratedb">CrateDB</a>: CrateDB는 NoSQL 기술 스택에 빌드된 분산 실시간 SQL 데이터베이스 엔진입니다. 이 고유한 아키텍처는 최상의 SQL 및 NoSQL을 제공하며 기계 생성 데이터에 적합합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/139a1782-ebc5-4424-ab3a-69fd7ccebf2f.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cf215a99-0072-435c-a388-8d95dbcb7824.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dellemc.dell-emc-avamar-datadomain-virtual-edition">Dell EMC Avamar 및 Data Domain Virtual Edition</a>: AVE 및 DDVE는 업계 최고의 보호 소프트웨어의 소프트웨어 정의 버전입니다. 이 솔루션 템플릿의 제안은 Azure에서 Avamar 및 Data Domain을 한 번 클릭으로 배포합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6ef82f0f-f5b1-417f-95bf-d34ead77ac60.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/29d9bf9f-135b-48fb-8653-0239d7d96aa2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nubeva-inc.controller-template">컨트롤러</a>: Nubeva, Inc.의 컨트롤러는 컨트롤러 VM 및 필요한 모든 관련 리소스를 배포합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb3e673a-d583-4855-8c46-883e45b629fb.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cea5c4c7-c9ab-444e-a69d-b29362131d2f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dyadic_security.ukc_pair">언바운드 키 제어</a>: UKC를 사용하면 Azure에 배포된 모든 애플리케이션에서 키를 관리하고 제어할 수 있습니다. 이 순수 소프트웨어 솔루션은 클라우드의 암호화 키에 대한 보안 및 제어를 제공하면서 배포 및 유지 관리가 용이합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/63847f59-27d7-4953-9755-fe0b7931c23c.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ce309c81-d5b0-4b2b-a120-335045993719.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-ads.geodsvm">ArcGIS를 사용하는 Geo AI Data Science VM</a>: Geo AI Data Science VM은 Esri와 Microsoft 간의 협업을 통해 제공되는 Azure의 Windows Server 2016 버전의 Azure DSVM(Data Science Virtual Machine)에 대한 확장입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/25699c0a-9789-46b1-be4c-0121b761cafd.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/82aa8a54-5e47-4eca-8bf8-5c8a68fbad62.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azure-oss.terraform">Terraform</a>: Microsoft는 Terraform을 기본 프로비저닝 도구로 사용하려는 사용자를 위해 Linux에 HashiCorp Terraform 인스턴스를 게시했습니다. 솔루션 템플릿은 Azure에서 작동하도록 구성된 도구와 함께 Linux(Ubuntu 16.04 LTS) VM에 Terraform을 설치합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f21af03b-27a6-49a9-8aa9-93cbd4cf01ea.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/281143c3-7ea2-471c-b7f3-4f8fe0febe02.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-azure-blockchain.azure-blockchain-hyperledger-fabric">Azure의 Hyperledger Fabric</a>: 소수의 사용자 입력과 Azure Portal을 통해 한 번의 클릭으로 배포하면 전 세계의 Microsoft Azure 컴퓨팅, 네트워킹 및 스토리지 서비스를 사용하여 몇 분 안에 완전히 구성된 블록체인 네트워크 토폴로지를 프로비전할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/58bdcf52-a7c3-4345-9bff-b110fe5ff1a2.png"><img alt="image" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67511bba-6da5-4a1c-adc8-0f819c62d500.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="80"></a></td>
+     <td width="670">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-azure-blockchain.azure-blockchain-ethereum">Azure의 Ethereum</a>: 몇 분 안에 Ethereum 블록체인 네트워크를 배포하고 구성합니다. 컴퓨팅, 스토리지 및 네트워킹과 같이 사용되는 기본 인프라 리소스에 대해서만 요금이 청구됩니다. 솔루션 자체에 대한 증분 요금은 없습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

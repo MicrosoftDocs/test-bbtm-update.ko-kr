@@ -1,0 +1,70 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 55664357e870ee1957767e1f905b162efc84f17d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905960"
+Slug: four-models-businesses-like-yours-are-using-to-monetize-iot
+Title: 사용자와 같은 4가지 모델 비즈니스가 IoT 수익 창출에 사용하고 있습니다.
+Summary: IoT(사물 인터넷)를 활용하기 위해 회사에서 할 수 있는 모든 멋진 일에 대해 쉽게 이야기할 수 있습니다. 실제로 비즈니스를 위해 어떻게 작동하는지 파악하는 것은 좀 더 어려운 일입니다. 특히 수익을 창출하는 방법에 대한 부분입니다.
+Content: >-
+  <p><em>이 게시물은 피터 쿠퍼, 수석 제품 마케팅 매니저, Azure IoT 마크 펜더그라스트, 제품 마케팅 이사, Microsoft Azure 공동 저술했다.</em></p>
+
+
+  <p>&rsquo;IoT(사물 인터넷)를 활용하기 위해 회사에서 할 수 있는 모든 멋진 일에 대해 쉽게 이야기할 수 있습니다. 실제로 비즈니스를 위해 어떻게 작동하는지 알아내&rsquo;는 것은 특히 수익을 창출하는 방법에 대해 좀 더 어렵습니다 &mdash; .</p>
+
+
+  <p>IoT 기술은 새로운 수익원을 열 수 있는 주요 잠재력을 가지고 있습니다. 이를 활용하려면 종종 현명한 사고와 현명한 위험을 감수하려는 의지가 필요합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a844ea9f-3e66-4cbd-9ee5-18cbf5f211bb.jpg"><img alt="Prepare your Organization" border="0" height="540" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9cfaa36c-b018-4c6b-aba6-296b20e32061.jpg" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="조직 Hero_IoT_Prepare" width="960"></a></p>
+
+
+  <p>Weve&rsquo;는 전 세계 수천 명의 고객이 IoT에서 이익을 얻는 데 도움을 주었습니다. 이러한 계약을&rsquo; 진행하면서 수익 창출 모델은 네 가지 범주로 분류되는 경향이 있음을 발견했습니다. 접근 방식을 &mdash; 빌드할 때 고려해야 할 몇 가지 옵션은 다음과 같습니다.</p>
+
+
+  <h2>1. 일회용: 일회성 구매</h2>
+
+
+  <p>일회성 구매는 일반적인 모델입니다. IoT 연결이 기능으로 추가되어 제품을 프리미엄으로 판매하거나 경쟁에서 두각을 나타낼 수 있습니다. 이 방법은 반복적인 수익 창출 서비스가 필요하지 않고 제품에 지속적인 지원이 필요하지 않은&rsquo; 시나리오에 적합합니다. 예를 들어, 많은 <a href="https://customers.microsoft.com/en-us/story/askey" target="_blank">웨어러블 장치</a> 및 <a href="https://customers.microsoft.com/en-us/story/legrand-manufacturing-azure" target="_blank">연결된 가정용 제품이</a> 이런 식으로 판매됩니다. 트랜잭션이 완료되면 고객은 디바이스를 완전히 소유합니다.</p>
+
+
+  <p>그러나 이야기의&rsquo; 끝은 아닙니다. 이러한 제품에서 수집하는 데이터는 매우 유용할 수 있습니다. 시간이 지남에 따라 제품을 개선하고, 마케팅 벅에 대한 더 많은 강타를 얻고, 경쟁업체가 하기 전에 성장 기회를 발견할 수 있습니다.</p>
+
+
+  <p>이는 오늘날 일반적으로 판매되는 방식이기 때문에&rsquo; 제조업체가 채택하는 가장 쉬운 가격 책정 모델입니다. 이 모델을 작동시키는 비결은 연결된 제품과 관련된 지속적인 비용이 시간이 지남에 따라 수익을 침식하지 않도록&rsquo; 하는 것입니다. 예를 들어 데이터를 수집하고 저장하거나 고객에게 대시보드를 제공하는 경우&rsquo; 이러한 함수를 고려해야 합니다.</p>
+
+
+  <h2>2. 좋은, 더 나은, 최고: 부가 가치 제품 서비스</h2>
+
+
+  <p>제품이 판매 된 후 흐르는 수익을 유지하는 것은 제조 업체에 대한 주요 성장 기회입니다. 연결된 제품을 사용하면 부가 가치 서비스에 대한 구독을 제공할 수 있습니다. 예를 들어 <a href="https://customers.microsoft.com/en-gb/story/buhlergroup-azure-machine-learning-iot-edge-switzerland" target="_blank">식품 가공 장비 리더인 Buhler</a>는 고객이 사용할 수 있는 기능에 따라 요금을 청구하는 곡물 정렬 기계에 구독 기반 모델을 사용하고 있습니다.</p>
+
+
+  <p>수익을 높이는 것 외에도 구독은 상황이 끊어질 때뿐만 아니라 제품 수명 주기 내내 고객과 가깝게 지낼 수 있도록 도와줍니다. 서비스에는 풍부한 데이터 및 운영 보고에서 예측 유지 관리 경고에 이르기까지 모든 항목이 포함될 수 있습니다. 많은 기업들이 프리미엄 옵션을 제공하고 고급 솔루션에 대한 요금을 부과하는 계층화된 접근 방식을 취합니다. 그것은&rsquo; 새로운 시장을 &mdash; 열어 균열하는 좋은 방법은 고객에게 연결된 제품의 가치의 맛을 제공하고 그들은&rsquo; 곧 더 많은 것을 원한다.</p>
+
+
+  <p>그러나 구독 서비스 모델은 단일 트랜잭션 접근 방식에서 크게 벗어나지 않습니다. 구매자에게 지속적인 프리미엄을 지불하도록 설득하려면 명확한 가치 제안을 제시하고 강력한 고객 지원을 제공해야 합니다. 고객은 정기적인 개선과 강력하고 신뢰할 수 있는 환경을 기대합니다.</p>
+
+
+  <h2>3. 종량제: 제품을 서비스로 전환</h2>
+
+
+  <p>IoT는 기존 소유권 환경을 뒤집어 고객이 사용하는 것에 대해서만 비용을 지불할 수 있도록 합니다. 서비스로서의 제품 모델은 자전거 또는 자동차 공유 서비스를 사용한 모든 사람에게 친숙하며, 여기서 차량은 GPS로 추적되고 시간 또는 분 단위로 임대됩니다. 구매자는 자본 및 유지 관리 비용을 피하고 항상 최신 기술을 가지고 있으며, 공급 업체는 장기적으로 더 많은 이익과 안정성을 제공 할 수있는 지속적인 수익원을 얻습니다.<br>
+
+  &nbsp;<br>
+
+  이 모델은 매우 복잡하고 비용이 많이 드는 제품에 대해서도 작동할 수 있습니다. 예를 들어 <a href="https://customers.microsoft.com/en-us/story/rollsroycestory" target="_blank">, 롤스로이스는 이제 비행기 엔진 대신 비행 시간을 판매합니다</a>. IoT 센서에서 수집된 데이터를 통해 회사는 엔진이 사용된 &mdash; 기간을 정확히 알 수 있으며 엔진을 최상의 상태로 유지하는 데 필요한 데이터를 제공합니다. 회사는 고급 분석을 사용하여 무언가 중단되기 전에 기계적 문제를 예측하고 해결할 수 있습니다.</p>
+
+
+  <h2>4.&rsquo; Were in this together: revenue-sharing</h2>
+
+
+  <p>IoT 솔루션이 고객에게 향상된 결과를 제공할 것이라고 확신하시겠습니까? 수익 공유 모델을 고려합니다. 제품이나 서비스를&rsquo; 판매하는 대신 결과를 판매할 수 있습니다. 실제로 이 방법의 또 다른 이름은 서비스로서의 결과입니다 &ldquo;.&rdquo; <a href="https://cloudblogs.microsoft.com/industry-blog/industry/uncategorized/itron-creating-a-more-resourceful-world-through-digital-transformation/" target="_blank">한 가지 예는</a> 총 결과 서비스가 도시에 IoT 서비스를 제공하여 비용 절감 및 성능 목표에 따라 고객에게 요금을 부과하는 Itron입니다. 회사에서 비즈니스 위험을 감수해야 하기 때문에 이 모델은 고객에게 매우 매력적일 수 있습니다. &rsquo;또한 전통적인 제조 수익 모델에서 가장 멀리 떨어져 있으며 가장 혁신적인 사고 및 가격 책정 전략이 필요할 수 있습니다.</p>
+
+
+  <h2>비즈니스에 적합한 모델은 무엇인가요?</h2>
+
+
+  <p>IoT로 수익을 창출하는 방법을&rsquo; 파악하기 위해 시간과 리소스를 투자할 계획입니다. 성공적인 이니셔티브는 종종 몇 명의 좋은 고객이 참여하는 파일럿 프로젝트로 시작됩니다. IoT 솔루션 자체 외에도 시스템, 사람 및 프로세스는 새로운 비즈니스 방식에 적응해야 합니다. 백서에서 연결된 제품에서 수익을 창출하는 방법에 대한 로드맵을 얻고 <a href="https://download.microsoft.com/download/6/C/A/6CA242E0-361C-4B19-A66A-D9F276C3799C/Connected-Products-Whitepaper.pdf" target="_blank">연결된 제품을 통해 새로운 IoT 비즈니스 기회로 가는 길을 탐색합니다</a>. 고유한 가치 제안, 수익 창출 전략, 일반적인 장애물을 해결하는 방법, 새로운 기술 접근 방식 및 조직 변화를 관리하는 방법을 안내합니다.</p>

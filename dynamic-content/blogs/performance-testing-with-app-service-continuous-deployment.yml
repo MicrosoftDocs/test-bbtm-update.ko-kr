@@ -1,0 +1,55 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 10608d09da3c7ce2ec93f4a1e6ec0b46acf66ab1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899602"
+Slug: performance-testing-with-app-service-continuous-deployment
+Title: App Service 연속 배포를 사용한 성능 테스트
+Summary: App Service를 사용하면 지속적인 배포 기능을 통해 배포 프로세스를 자동화할 수 있으며, 이제 Visual Studio 부하 테스트와의 통합을 추가하여 연속 통합 워크플로의 일부로 테스트를 트리거했습니다.
+Content: >-
+  <p>애플리케이션을 위해 새 비트를 배포할 때마다 가장 기본적인 것은 앱이 작동하고 예상된 성능 목표를 충족한다는 것입니다. App Service를 사용하면 지속적인 배포 기능을 통해 <strong>배포</strong> 프로세스를 자동화할 수 있습니다. 아래 비디오에서 이 기능에 대해 자세히 알아보세요.</p>
+
+
+  <blockquote>
+
+  <p><iframe allowfullscreen="" frameborder="0" height="360" src="https://channel9.msdn.com/Series/Windows-Azure-Web-Sites-Tutorials/Github-Continuous-Delivery-in-the-Preview-Portal/player" width="640"></iframe></p>
+
+  </blockquote>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/announcing-public-preview-for-performance-test-on-webapps/" target="_blank">Visual Studio 부하 테스트</a>와 통합되어 연속 통합 워크플로의 일부로 테스트를 트리거했습니다. 즉, 새 버전을 체크 인하는 즉시 앱을 업데이트하고 테스트하여 자동화된 방식으로 동작 및 성능의 유효성을 검사할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-staged-publishing/" target="_blank">이는 배포 슬롯</a>과 함께 사용할 때 더 잘 작동하므로 새 비트를 프로덕션으로 교환하기 전에 추가 유효성 검사를 수행할 수 있습니다.</p>
+
+
+  <p><strong>연속 배포</strong> 워크플로의 일부로 <strong>성능 테스트를</strong> 설정하려면 배포 원본을 설정 &gt; 앱&rsquo;으로 이동하여 선택한 공급자의 <strong>연속 배포</strong>를 설정합니다.</p>
+
+
+  <p><img alt="image" border="0" height="344" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dfdb5559-e987-4f07-b104-6410defb9739.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="612"></p>
+
+
+  <p>구성되면 <strong>연속 배포</strong> 파이프라인을 통해 새 비트가 배포될 때마다 실행되는 <strong>성능 테스트를</strong> 구성하는 옵션도 제공됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a904528b-2f1d-4ae4-84c3-ecd81ed16c92.png"><img alt="image" border="0" height="344" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f3c8a457-53e1-4994-a4de-a710a117d160.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="612"></a></p>
+
+
+  <p><strong>성능 테스트</strong> 는 배포 후 작업으로 실행됩니다.</p>
+
+
+  <p><img alt="image" border="0" height="344" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e89c0499-e642-436e-8127-382dac09fa57.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="612"></p>
+
+
+  <p><strong>로그 보기 </strong>링크를 클릭하여 최신 실행 결과를 검토할 수 있습니다.</p>
+
+
+  <p><img alt="image" border="0" height="344" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e0cdc07d-ce2e-4bd8-9c46-69b7f11c680e.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="612"></p>
+
+
+  <p>명령 모음에서 <strong>성능 테스트</strong> 구성 아이콘을 클릭하여 기존 <strong>연속 배포 </strong>구성에 성능 테스트를 추가할 수 있습니다.</p>
+
+
+  <p>아래의 의견 섹션 또는 <a href="https://feedback.azure.com/forums/169385-web-apps-formerly-websites">사용자 의견</a> 피드백 포럼을 통해 여러분의 생각, 질문 및 아이디어가 무엇인지 알려주세요.</p>

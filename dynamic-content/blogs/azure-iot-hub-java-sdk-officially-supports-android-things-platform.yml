@@ -1,0 +1,29 @@
+### YamlMime:Yaml
+ms.openlocfilehash: efe2e571b8e55697054cd9a1a5c8467eb4b85962
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906173"
+Slug: azure-iot-hub-java-sdk-officially-supports-android-things-platform
+Title: Azure IoT Hub Java SDK는 Android Things 플랫폼을 공식적으로 지원합니다.
+Summary: '연결은 종종 IoT(사물 인터넷) 세계에서 첫 번째 과제이므로 3년 전에 Azure IoT SDK를 출시했습니다. Azure IoT SDK를 사용하면 개발자가 IoT Hub 및 IoT Hub Device Provisioning Service와 상호 작용하는 IoT 애플리케이션을 빌드할 수 있습니다. '
+Content: >-
+  <p>연결은 종종 IoT(사물 인터넷) 세계에서&rsquo; 첫 번째 과제이므로 3년 전에 Azure IoT SDK를 출시했습니다. <a href="https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks" target="_blank">Azure IoT SDK를</a> 사용하면 개발자가 IoT Hub 및 IoT Hub Device Provisioning Service와 상호 작용하는 IoT 애플리케이션을 빌드할 수 있습니다. SDK는 C, .NET, Java, Python 및 Node.js 비롯한 IoT 개발에서 가장 인기 있는 언어뿐만 아니라 Windows, Linux, OSX 및 MBED와 같은 <a href="https://docs.microsoft.com/azure/iot-hub/iot-hub-device-sdk-platform-support" target="_blank">인기 있는 플랫폼을</a> 다룹니다. 2018년 4월부터 모바일 IoT 시나리오를 사용하도록 <a href="https://azure.microsoft.com/blog/azure-iot-sdk-ios-support/" target="_blank">iOS</a> 및 <a href="https://azure.microsoft.com/en-us/blog/azure-iot-java-sdk-provides-improved-android-support/" target="_blank">Android</a> 에 대한 공식 지원이 추가되었습니다.</p>
+
+
+  <p>오늘, 우리는 허브 Java SDK가 공식적으로 <a href="https://developer.android.com/things/" target="_blank">Android Things</a> 플랫폼을 지원할 Azure IoT 공유하게 되어 기쁩니다. 이 공지에서는 IoT 배포에서 더 큰 선택과 유연성을 구현하기 위한 노력을 보여줍니다. 개발자는 디바이스 쪽에서 Android Things 운영 체제의 이점을 활용할 수 있으며, <a href="https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub" target="_blank">Azure IoT Hub</a>를 수백만 개의 동시에 연결된 디바이스로 확장하는 중앙 메시지 허브로 사용할 수 있습니다.</p>
+
+
+  <p>Java SDK의 모든 기능은 지원되는 Azure IoT Hub 기능 및 <a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-reliability-features-in-sdks" target="_blank">네트워크 안정성에 대한 재시도 정책과</a> 같은 SDK 관련 기능을 포함하여 Android Things 플랫폼에서 사용할 수 있습니다. 또한 Android Things 플랫폼은 모든 릴리스에서 테스트됩니다. 테스트 도구 모음에는 단위 테스트, 통합 테스트 및 엔드 투 엔드 테스트가 포함되며, 모두 <a href="https://github.com/Azure/azure-iot-sdk-java" target="_blank">GitHub</a> 사용할 수 있습니다. 또한 테스트 <a href="https://docs.microsoft.com/azure/iot-hub/iot-hub-device-sdk-platform-support" target="_blank">중인 정확한 플랫폼 버전을 게시</a> 합니다.&nbsp;</p>
+
+
+  <p>아래 리소스를 방문하여 Android Things에서 IoT Hub용 애플리케이션을 빌드하는 방법에 대해 자세히 알아보세요.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/azure/iot-hub/iot-hub-how-to-android-things">Azure IoT Java SDK를 사용하여 Android Things용 애플리케이션을 빌드</a>하는 방법에 대한 자습서</li>
+      <li><a href="https://github.com/Azure-Samples/azure-iot-samples-java/tree/master/iot-hub/Samples/device/AndroidSample">Android 사물에서 Azure IoT Java SDK를 사용하는 디바이스 클라이언트 샘플</a></li>
+      <li><a href="https://github.com/Azure-Samples/azure-iot-samples-java"> GitHub Azure IoT Java SDK를 사용하는</a> 샘플 리포지토리</li>
+      <li>Java SDK에 대한 소스 코드는 <a href="https://github.com/Azure/azure-iot-sdk-java" target="_blank">GitHub</a></li>
+  </ul>

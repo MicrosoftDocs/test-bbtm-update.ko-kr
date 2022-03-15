@@ -1,0 +1,120 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8611fe0ca0546fd5d579556e984e06c3e06d1945
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912147"
+Slug: azure-blockchain-update-7
+Title: 'Azure Blockchain as a Service 업데이트 #7'
+Summary: 블록체인을 서비스로 검색하는 새로운 방법, 새로운 파트너 추가 - Expanse, Influx, Monero, Radium 및 Tendermint. 이제 매니폴드의 엔드포인트도 사용할 수 있습니다.
+Content: >-
+  <p>Azure&#39;Blockchain as a Service는 매우 빠른 속도로 계속 성장하고 있습니다. 다양한 파트너 제품을 모두 통합하고 가장 일반적인 용도로 보다 쉽게 검색할 수 있도록 하기 위해 이러한 자산을 찾을 수 있는 세 가지 주요 장소가 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/marketplace/">인증된 Marketplace</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/templates/">템플릿 라이브러리</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/services/devtest-lab">DevTest 랩</a></li>
+   <li><a href="https://github.com/Azure/azure-blockchain-projects/tree/master/baas-artifacts">아티팩트 리포지토리</a></li>
+  </ul>
+
+
+  <p>DevTest 랩은 블록체인 네트워크의 기능을 탐색하기 위한 매우 활발한 장소가 되고 있습니다. Azure DevTest 랩을 사용하면 파트너, 경쟁 업체 및 공급망 참가자를 초대하는 랩 &quot;샌드박스&quot; 를 만들어 자신이 만든 리소스를 완전히 제어할 수 있지만 다른 리소스에 대한 관리 권한은 없는 참가자가 될 수 있습니다. 분산 원장을 기반으로 공유 전자 상거래 플랫폼으로 이동하는 블록체인에 대한 공동 작업 사용 사례를 사용해 보기에 완벽한 환경을 만듭니다. 이렇게 하면 Azure 구독 내에서 고유한 &quot;프라이빗&quot; 컨소시엄 랩을 만들고 사용량에 대한 제한을 설정하지만 전체 &quot;공동&quot; 랩 설정을 건너뛰고 최대한 빨리 작업할 수 있습니다.</p>
+
+
+  <p>DevTest Labs 아티팩트 라이브러리에는 <a href="https://github.com/Azure/azure-blockchain-projects/tree/master/baas-artifacts">새 홈</a>이 있습니다. 이전 위치는 유지되지만 업데이트되지 않습니다. DevTest Lab에 이전 라이브러리를 수동으로 추가한 경우 아티팩트 라이브러리의 URL을 새 URL로 리디렉션하세요.</p>
+
+
+  <p>고유한 &quot;컨소시엄&quot; 랩을 시작하기에 매우 쉽도록 Blockchain as a Service Marketplace 템플릿을 만들었습니다. 템플릿은 가장 인기 있는 랩 설정으로 랩을 자동으로 설정하며 기존 Blockchain as a Service 파트너 제품의 라이브러리를 포함합니다. 블록체인 아티팩트 라이브러리는 최신 상태로 유지되므로 새로운 분산 원장 플랫폼, 도구 및 서비스를 사용할 수 있게 되는 시기를 알 수 있습니다.</p>
+
+
+  <h2>새로운 파트너!</h2>
+
+
+  <p>이번 주 마이크로 소프트는 환영합니다 : Algorythmix, 창공, 유입, 모네로, 라디움과 텐더 마인트.</p>
+
+
+  <h4><a href="https://algorythmix.in/beta/">Algorythmix</a></h4>
+
+
+  <p>세타스: 탈중앙화 KYC 및 신용 등급 서비스</p>
+
+
+  <p>Cetas는 협업 경제의 힘을 사용하여 여러 조직에서 ID 및 평판 서비스를 제공하는 것을 목표로 합니다. Cetas를 사용하면 다양한 산업 간 조직에서 신용 등급을 사용하여 KYC/AML 같은 복잡한 ID 및 평판 시스템 프로세스를 공유할 수 있습니다. Cetas는 규제 기관, 동의를 가진 사용자 및 인증 권한을 가진 은행 기관에 권한을 부여하여 AML 및 개인 정보 보호 법 사이의 적절한 균형을 유지합니다. 이 강력한 ID 플랫폼을 사용하면 새로운 협업 경제 전반의 행동에 따라 엔터티의 신용 점수를 생성할 수 있는 차세대 P2P 신용 등급 플랫폼을 사용할 수 있습니다.</p>
+
+
+  <p>Microsoft Azure 통합하면 사용자와 조직에 분산 원장 및 해당 애플리케이션에 대한 KYC/AML/크레딧 서비스를 제공할 수 있습니다. 개발자를 위해 Certas는 해당 업계에 추가 KYC/AML 기능을 사용하여 확장 서비스를 빌드하는 플랫폼을 제공합니다. Algorythmix는 앞으로 몇 달 안에 제공 될 것으로 예상되는 Microsoft BaaS에서 Cetas의 베타 버전을 출시할 예정입니다.</p>
+
+
+  <h4><a href="https://www.expanse.tech/">확대</a></h4>
+
+
+  <p>Expanse는 커뮤니티 기반의 분산형 정보, 애플리케이션 및 스마트 계약 플랫폼입니다. Expanse 프로젝트는 구성원이 직접 공동 작업하는 DAO(분산된 자치 조직)를 통해 커뮤니티에서 운영됩니다. 생각과 아이디어를 교환; 및 투표하여 프로젝트&#39;향후 개발 및 관리 결정을 결정합니다. 증가하는 스마트 계약 컬렉션, dApps 및 도구 키트를 통해 모든 유형의 사용자와 조직에 블록체인 기술의 가장 흥미로운 애플리케이션에 직관적으로 액세스할 수 있습니다.</p>
+
+
+  <p>이 프로젝트는 기업, 자선 단체, 심지어 정부가 스마트 자산을 만들고 관리하는 것에서부터 디지털 이행 및 배포 제공에 이르기까지 블록체인 기술을 쉽고 직관적으로 활용하는 데 사용할 수 있는 도구와 서비스를 제공합니다. Expanse는 강력한 솔루션을 제공하기 위해 Microsoft와 협력하여 Expanse 블록체인의 강력한 기능을 사용하여 Azure의 서비스를 활용하게 되어 기쁩니다.&quot; 아래 비디오를 확인하여 알아보거나 <a href="https://azure.microsoft.com/en-us/documentation/templates/go-expanse-on-ubuntu/">여기에서</a> 시도해 보세요.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/N36Ibz5kR6k" width="560"></iframe></p>
+
+
+  <h4>유입</h4>
+
+
+  <p>Influx는 Pow+Pos 하이브리드 백 엔드를 사용하여 사전 마이닝이 없는 X11 알고리즘 기반 동전이며 CPU/GPU 설정을 위해 특별히 설계되었습니다. 원래 암호 화폐에 대해 젊은이들에게 가르치기 위해 참신한 동전으로 계획되었던 이 동전은 빠르게 훨씬 더 많은 것으로 발전했습니다. 우리는 컴퓨터 요구 사항을 가진 사람들을 돕기위한 열정을 가지고 있으며, 진정으로 세계와 상호 작용 할 수있는 것을 좋아합니다. 이제 웹 호스팅 및 방대한 웹 공간과 관련된 기타 결제 솔루션과 같은 웹 서비스에 사용할 파트너 관계(INFX)를 얻기 위해 노력하고 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/templates/influx-blockchain-ubuntu/">여기에서</a> 사용해 보세요.</p>
+
+
+  <h4><a href="https://getmonero.org/home">모네로 주</a></h4>
+
+
+  <p>Monero는 비트 코인 코드베이스를 기반으로하지 않는 암호화 통화이며, 가능한 한 개인, 보안 및 확장성으로 유지하는 것을 목표로합니다. 모든 Monero 트랜잭션은 암호화를 추적할 수 없고 연결할 수 없으며 별도의 &quot;명확한&quot; 토큰이 없습니다. 이를 통해 최종 사용자는 Monero를 가치의 개인 저장소로 사용하고 블록체인 분석 또는 광부 검열에 영향을 주는 교환 매체로 사용할 수 있습니다.</p>
+
+
+  <p>개인 정보 보호 인식 또는 개인 정보 중심 애플리케이션을 빌드하는 개발자는 Monero&#39;프라이빗 기본 접근 방식을 활용하며 모든 트랜잭션에서 사용할 수 있는 작고 간단한 메타데이터 스토리지 영역(tx_extra)을 감상할 수 있습니다. 또한 Daniel J. 번스타인&#39;Curve25519 EC 곡선 및 EdDSA 시그니처를 기반으로 하는 표준 및 복잡하지 않은 암호화를 활용할 수 있습니다.</p>
+
+
+  <p>Monero&#39;동적 블록 크기 알고리즘이 증가하여 온체인 수요에 따라 블록 크기 제한을 축소하기 때문에 오프 체인 또는 사이드 체인 시스템을 빌드하는 경우 온-체인 제한에 대해 걱정할 필요가&#39;. 필요한 만큼 Monero 블록체인으로 다시 페그!</p>
+
+
+  <p>마지막으로, 사물의 학술 및 연구 측면에 관심이있는 사람들을 위해, Monero 연구 연구소는 몇 가지 연구 게시판과 도구를 발표했다, 이는 <a href="https://lab.getmonero.org">연구 실험실&#39;</a> <a href="https://github.com/monero-project/research-lab">GitHub 리포지토리에 연구 실험실</a> 사이트에서 &nbsp; 사용할 수 있습니다.</p>
+
+
+  <p>공식 <a href="https://forum.getmonero.org/">Monero 포럼</a> 에 대해 자세히 알아보거나 <a href="https://azure.microsoft.com/en-us/documentation/templates/monero-on-ubuntu/">여기에서</a> 사용해 보세요.</p>
+
+
+  <h4>라 듐</h4>
+
+
+  <p>Radium은 Radium SmartChain의 기본 블록체인 역할을 하는 지분 증명 암호화입니다. Radium 및 SmartChain의 목표는 중앙 집중식 서버 없이 분산된 블록체인 서비스를 개발하기 위한 고유한 플랫폼을 제공하는 것입니다. 빠르게 증가하는 목록에는 Username-Address 링크, 존재 증명, 소유권 증명 및 파일 증명 원본이 포함됩니다. 고급 Radium 함수는 Radium 블록 체인에 포함되고 SmartChain RPC 클라이언트를 통해 액세스됩니다. 파일 원본은 SmartChain OneClickVerify 시스템을 통해 확인하거나 SmartChain 확인 웹 사이트를 통해 온라인으로 확인할 수 있습니다.</p>
+
+
+  <h4><a href="https://tendermint.com/">Tendermint</a></h4>
+
+
+  <p>Tendermint는 세계&#39;블록체인에 단순성, 보안 및 속도를 제공합니다.</p>
+
+
+  <ul>
+   <li><strong>단순:</strong> 모든 프로그래밍 언어로 블록체인 애플리케이션(즉, 스마트 계약)을 프로그래밍합니다. 비즈니스 논리에 집중합니다.</li>
+   <li><strong>보안:</strong> 최첨단 책임 BFT 합의 알고리즘; Tendermint는 전기 및 광업 대신 디지털 서명 및 쿼럼을 사용합니다.</li>
+   <li><strong>속도:</strong> 초 미만의 블록타임 및 초당 10,000개의 트랜잭션; 포크가 없는 체인에서 트랜잭션을 즉시 커밋하고 정산합니다.</li>
+  </ul>
+
+
+  <p>Tendermint는 모든 원장 애플리케이션에 전력을 공급할 수 있는 핵심 오픈 소스 블록체인 엔진을 사용하여 블록체인 개발을 위한 새로운 모듈식 아키텍처를 개발하고 있습니다. 비트 코인&rsquo; UTXO, Ethereum 가상 머신 또는 완전히 새로운 디자인을 기반으로하는지 여부.</p>
+
+
+  <p><a href="https://github.com/Azure/azure-blockchain-projects/tree/master/baas-artifacts/linux-tendermint">여기서</a> DevTest Labs를 사용해 보세요.</p>
+
+
+  <p>마지막으로, CentOS VM에 매니폴드 플랫폼 블록체인을 서비스 엔드포인트로 설치하는 Manifold&#39;BaaS 제품을 환영합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/templates/manifold-endpoint/">여기에서</a> 사용해 보세요.</p>
+
+
+  <p><em>그&#39;앞으로 좋은 일을 기대, 이번 주에 대한 것입니다!</em></p>

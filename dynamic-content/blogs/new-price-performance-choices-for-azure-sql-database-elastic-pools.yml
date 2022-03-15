@@ -1,0 +1,71 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6ca61615932c76eda37f5430e97f0e8d72a2ce88
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905801"
+Slug: new-price-performance-choices-for-azure-sql-database-elastic-pools
+Title: Azure SQL Database 탄력적 풀에 대한 새로운 가격-성능 선택
+Summary: Azure SQL Database 탄력적 풀은 예측할 수 없는 사용 패턴을 사용하여 여러 데이터베이스의 성능을 관리하기 위한 간단한 비용 효율적인 솔루션을 제공합니다. 에 대 한 새로운 가격-성능 선택...
+Content: >-
+  <p>Azure SQL Database 탄력적 풀은 예측할 수 없는 사용 패턴을 사용하여 여러 데이터베이스의 성능을 관리하기 위한 간단한 비용 효율적인 솔루션을 제공합니다. 탄력적 풀에 대한 새로운 가격-성능 선택은 이전보다 훨씬 더 비용 효율적이고 더 큰 규모를 제공합니다.</p>
+
+
+  <p><strong>더 많은 비용 효율성</strong><br>
+
+  이제 데이터베이스 제한이 더 높은 더 작은 탄력적 풀 크기 및 풀을 사용할 수 있습니다. 이러한 새로운 선택은 풀의 시작 가격을 낮추고, 데이터베이스당 유효 비용을 낮추며, 풀 크기 간의 가격 점프를 줄입니다.</p>
+
+
+  <p><strong>더 큰 규모</strong><br>
+
+  또한 이제 기본, 표준 및 Premium 풀의 크기가 더 크고 Premium 풀의 데이터베이스당 eDTU 제한이 더 높습니다. 이러한 새로운 선택은 더 큰 규모와 가장 까다로운 워크로드를 위한 더 많은 스토리지 및 eDTU 헤드룸을 제공합니다.</p>
+
+
+  <h2>주요 항목</h2>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="892">
+      <tbody>
+          <tr>
+              <td valign="top" width="200"><br>
+              더 많은 풀 eDTU 크기</td>
+              <td valign="top" width="690">
+              <ul>
+                  <li>새 크기는 기본 및 표준 풀의 경우 50 eDTU부터 Premium 풀의 경우 최대 4,000 eDTU까지 다양하며 그 사이에 추가 크기 조정을 선택할 수 있습니다.</li>
+              </ul>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="200">표준 풀에 대한 추가 스토리지</td>
+              <td valign="top" width="690">
+              <ul>
+                  <li>3,000개의 eDTU 표준 풀에 대해 최대 2.9TB입니다.</li>
+              </ul>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="200">풀당 더 높은 데이터베이스 제한</td>
+              <td valign="top" width="690">
+              <ul>
+                  <li>최소 200 eDTU의 기본 및 표준 풀에 대해 최대 500개의 데이터베이스.</li>
+                  <li>최소 250 eDTU의 Premium 풀에 대해 최대 100개의 데이터베이스</li>
+              </ul>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="200">Premium 풀에 대한 데이터베이스당 더 높은 eDTU 제한</td>
+              <td valign="top" width="690">
+              <ul>
+                  <li>데이터베이스당 최대 eDTU는 가장 큰 Premium 풀의 경우 1750 eDTU(P11 수준) 및 4000 eDTU(P15 수준)로 증가합니다.</li>
+              </ul>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>SQL Database 탄력적 풀 및 이러한 새로운 선택에 대해 자세히 알아보려면 <a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-elastic-pool">SQL Database 탄력적 풀</a> 웹 페이지를 방문하세요.&nbsp; 가격 책정 정보는 <a href="https://azure.microsoft.com/en-us/pricing/details/sql-database/">SQL Database 가격 책정</a> 웹 페이지를 방문하세요.</p>

@@ -1,0 +1,121 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 76ccc9ef2d210036cb87911785b64070cb5be887
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911755"
+Slug: luis-ai-automated-machine-learning-for-custom-language-understanding
+Title: '루이스. AI: 사용자 지정 언어 이해를 위한 자동화된 Machine Learning'
+Summary: 대화형 시스템은 가상 도우미, 고객 관리 및 사물 인터넷과 같은 솔루션의 핵심 구성 요소가 되고 있습니다. 대화형 시스템에 대해 이야기할 때는 컴퓨터가 사람의 음성을 이해하고 사용자의 의미를 이해하여 조치를 취하는 기능을 말합니다.
+Content: >-
+  <p><em>이 블로그 게시물은 퓨즈 랩스의 수석 프로그램 매니저인 리함 만수르(Riham Mansour)가 공동 저술했습니다.</em></p>
+
+
+  <p>대화형 시스템은 가상 도우미, 고객 관리 및 사물 인터넷과 같은 솔루션의 핵심 구성 요소가 되고 있습니다. 대화형 시스템에 대해 이야기할 때는 사용자의 음성을 이해하고 사용자의 의미를 이해하여 조치를 취할 수 있는 컴퓨터&rsquo; 기능을 참조합니다. 더욱&rsquo;이, 이러한 시스템은 음성과 텍스트에만 의존하지 않습니다&rsquo;. 그들은&rsquo; 이러한 상호 작용을 처리하고 이해하기 위해 시력, 소리 및 느낌을 사용하여 디지털 구와 우리가 살고있는 현실 사이의 선을 더욱 흐리게합니다. 챗봇은 대화형 시스템의 일반적인 예입니다.</p>
+
+
+  <p>챗봇은 자연어로 사용자와의 대화를 유지하고, 사용자 의도를 이해하고&rsquo;, 조직&rsquo; 비즈니스 규칙 및 데이터에 따라 응답을 보낼 수 있는 대화형 시스템의 매우 트렌디한 예입니다. 이러한 챗봇은 인공 지능을 사용하여 언어를 처리하여 인간의 음성을 이해할 수 있도록 합니다. 그들은 구두 또는 서면 질문을 해독하고 적절한 정보 또는 방향과 응답을 제공 할 수 있습니다. 많은 고객이 회사 웹 사이트의 대화 상자를 통해 챗봇을 처음 경험했습니다. 챗봇은 또한 Cortana, Siri 및 Amazons&rsquo; Alexa와 같은 소비자와 구두로 상호 작용합니다. 챗봇은 이제 기업에서 고객 서비스를 보강하는 데 점점 더 사용되고 있습니다.</p>
+
+
+  <p>LU(언어 이해)는 봇, IoT 환경, 분석 등과 같은 대화형 서비스를 사용하도록 설정하는 매우 중심적인 구성 요소입니다. 음성 대화 상자 시스템에서 LU는 문장의 단어에서 일반적으로 문장의 의도와 현재 엔터티를 나타내는 컴퓨터에서 읽을 수 있는 의미 표현으로 변환합니다. 예를 들어 시계와 같은 웨어러블 디바이스에 대화 시스템이 포함된 피트니스 도메인을 고려합니다. 이 대화 상자 시스템은 StartActivity 및 StopActivity와 같은 의도를 인식하고 ActivityType과 같은 엔터티를 인식할 수 있습니다. 사용자 입력이 조깅을 시작할 때 LU의 목표는 의도를 StartActivity로 식별하고 엔터티 ActivityType=&rsquo;&rsquo; jog를 식별하는 것입니다&rsquo;&rsquo;.&rdquo;&ldquo;</p>
+
+
+  <p>지금까지 LU, 기계 학습(ML) 모델 및 수공예 규칙을 구현하기 위한 두 가지 옵션이 있었습니다. 수공예 규칙은 일반 소프트웨어 개발자가 액세스할 수 있지만 확장하기 어렵고 데이터 혜택을 받지 않습니다. ML 기반 모델은 실제 사용량 데이터에 대해 학습되고, 새로운 상황으로 일반화되며, 견고성 측면에서 우수합니다. 그러나 희귀하고 비용이 많이 드는 전문 지식, 대규모 데이터 집합에 대한 액세스 및 복잡한 Machine Learning(ML) 도구가 필요합니다. 따라서 ML 기반 모델은 일반적으로 상당한 리소스가 있는 조직에서만 사용됩니다.</p>
+
+
+  <p>그림 1에 표시된 LUIS는 LU, Microsofts&rsquo; Language Understanding Intelligent Service를 민주화하기 위한 노력의 일환으로 소프트웨어 개발자가 ML 전문 지식 없이 애플리케이션 도메인과 관련된 클라우드 기반 기계 학습 LU 모델을 만들 수 있도록 하는 것을 목표로 합니다. Microsoft Azure Cognitive Services 언어 제품의 일부로 제공됩니다. LUIS를 사용하면 개발자가 고급 ML 기술을 사용하여 실제 트래픽을 기반으로 모델을 개선하는 기능을 통해 사용자 지정 LU 모델을 반복적으로 빌드할 수 있습니다. LUIS 기술은 인공 지능에서 Microsoft의 지속적인 혁신과 최소 20년 이상 거슬러 올라가는 연구, 과학 및 엔지니어링 노력으로 자연어 이해를 위한 애플리케이션을 활용합니다. 이 블로그에서는 지능형 대화형 시스템을 사용하도록 설정하는 LUIS 기능에 대해 자세히 알아보세요. 또한 대기업이 LUIS를 자동화된 AI 솔루션으로 사용하여 LU 모델을 빌드하는 방법을 보여 주는 몇 가지 고객 사례를 강조합니다. 이 블로그는 Molson Coors, UPS 및 Equadex와 같은 고객과 <a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-bot-service-and-language-understanding-enabling-developers-to-build-better-conversational-bots/" target="_blank">대화형 AI 및 언어 이해 도구의 일반 공급</a> 에 대한 2017년 12월 발표와 일치합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/16f8ebac-8b5b-4e43-a499-3622d87f62bf.png"><img alt="image" border="0" height="273" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/06f23b65-897c-44a9-9949-1935fcf7165f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="625"></a></p>
+
+
+  <p align="center"><em>그림 1: Language Understanding Service</em></p>
+
+
+  <h2>LUIS를 사용하여 Language Understanding 모델 빌드</h2>
+
+
+  <p>LUIS 앱은 사용자가 설계하고 요구 사항에 맞게 조정된 도메인별 언어 모델입니다. LUIS는 최종 사용자가 모든 디바이스에서 사용할 수 있는 클라우드 기반 서비스입니다. 12개 언어를 지원하며 전 세계 12개 지역에 배포되어 여러 국가에 고객이 있는 대기업에 매우 매력적인 솔루션입니다.</p>
+
+
+  <p>미리 빌드된 도메인 모델로 시작하거나, 직접 빌드하거나, 미리 빌드된 도메인의 조각을 사용자 고유의 사용자 지정 정보와 혼합할 수 있습니다. 간단한 사용자 환경을 통해 개발자는 몇 가지 예제 발화를 제공하고 초기 합리적으로 정확한 애플리케이션을 부트스트랩하도록 레이블을 지정하여 시작합니다. 개발자는 실제 트래픽을 받을 수 있는 AZURE에서 HTTP 엔드포인트를 얻기 위해 LUIS 앱을 학습하고 게시합니다. LUIS 애플리케이션에 엔드포인트 쿼리가 있으면 LUIS를 사용하면 활성 학습을 통해 실제 트래픽에서 잘 수행되지 않는 개별 의도 및 엔터티를 개선할 수 있습니다. 활성 학습 프로세스에서 LUIS는 모든 엔드포인트 발화를 검사하고 확실하지 않은 발화를 선택합니다. 이러한 발화에 레이블을 지정하고, 발화를 학습 및 게시하면 LUIS는 발화를 더 정확하게 식별합니다. 만족스러운 성능을 얻을 때까지 활성 학습을 사용하여 개별 의도 및 엔터티를 개선하는 여러 짧고 빠른 반복으로 LUIS 애플리케이션을 빌드하는 것이 좋습니다. 그림 2는 LUIS 애플리케이션 개발 수명 주기를 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8b345ce9-a4d9-4d91-9670-f2e06c31eca5.png"><img alt="image" border="0" height="332" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/946d2afc-3890-4a10-9441-ab716de70393.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="581"></a></p>
+
+
+  <p align="center"><em>그림 2: LUIS 애플리케이션 개발 수명 주기</em></p>
+
+
+  <p>LUIS 앱이 디자인, 학습 및 게시되면 발화를 수신하고 처리할 준비가 됩니다. LUIS 앱은 HTTP 요청으로 발화를 수신하고 추출된 사용자 의도로 응답합니다. 클라이언트 애플리케이션은 발화를 보내고 그림 3에 표시된 대로 LUIS&#39;평가를 JSON 개체로 받습니다. 그러면 클라이언트 앱이 적절한 조치를 취할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/24454d54-52de-4359-baca-91604618898d.png"><img alt="image" border="0" height="122" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/441e6512-b1bb-4f09-910f-dacfe7eac353.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="643"></a></p>
+
+
+  <p align="center"><em>그림 3: LUIS 입력 발화 및 출력 JSON</em></p>
+
+
+  <p>LUIS에는 다음 세 가지 주요 개념이 있습니다.</p>
+
+
+  <ul>
+   <li><strong>의도:</strong> 의도는 사용자가 수행하려는 작업을 나타냅니다. 의도는 항공편 예약, 청구서 지불 또는 뉴스 기사 찾기와 같은 사용자&#39;입력에 표현된 목적 또는 목표입니다. 이러한 작업에 해당하는 의도를 정의하고 이름을 지정합니다. 여행 앱은 BookFlight라는 &quot;의도를 정의할 수 있습니다.&quot;</li>
+   <li><strong>발언:</strong> 발화는 앱이 이해해야 하는 사용자의 텍스트 입력입니다. 파리행 항공권 예약과 같은 &quot;문장이나 예약&quot; 또는 &quot;파리&quot; 항공편과 같은 &quot;문장 조각일 수 있습니다.&quot; 발화는 항상 올바른 형식이&#39;않으며 특정 의도에 대한 많은 발화 변형이 있을 수 있습니다.</li>
+   <li><strong>엔터티:</strong> 엔터티는 발화와 관련된 자세한 정보를 나타냅니다. 예를 들어 &quot;파리 행 항공권 예약&quot; 발화에서 &quot;파리&quot;는 위치입니다. LUIS는 사용자 발화에 언급된 엔터티를 인식하고 레이블을 지정하여 사용자&rsquo;&#39;요청에 응답하기 위해 수행할 특정 작업을 선택하는 데 도움이 됩니다.</li>
+  </ul>
+
+
+  <p>LUIS는 개발자가 정교한 발화를 이해할 수 있는 앱을 빌드할 수 있도록 하는 강력한 엔터티 추출기 집합을 지원합니다. LUIS는 날짜 및 시간 인식기, 돈, 숫자 등 개발자가 앱에서 자주 필요로 하는 일반적인 형식을 제공하는 미리 빌드된 엔터티 집합을 제공합니다. 개발자는 최고 수준의 기계 학습 알고리즘뿐만 아니라 어휘집 기반 엔터티 또는 둘 다의 혼합을 기반으로 사용자 지정 엔터티를 빌드할 수 있습니다. 기계 학습을 통해 만든 엔터티는 조직 이름&rdquo;, 계층 구조 또는 복합과 같은 &ldquo;간단한 엔터티일 수 있습니다. 또한 LUIS를 사용하면 개발자가 웹에서 채굴된 대규모 사전에서 제공하는 권장 항목을 통해 쉽고 빠르게 어휘집 기반의 목록 엔터티를 빌드할 수 있습니다.</p>
+
+
+  <p>계층적 엔터티는 둘 이상의 수준에 걸쳐 엔터티 간의 <strong>Is-A</strong>&rdquo; 관계를 모델링 &ldquo; 합니다. 예를 들어 <strong>런던에서</strong> <strong>시애틀</strong>&rdquo;로 가는 항공편을 예약하려는 것과 같은 &ldquo;발언을 분석하려면 둘 다 도시라는 점을 감안할 때 <strong>런던</strong>&rdquo; 출발 &ldquo; 지와 대상 &ldquo;<strong>시애틀</strong>&rdquo;을 구별할 수 있는 모델을 구축해야 합니다. 이 경우 두 개의 자&ldquo;식 원본&rdquo;과 &ldquo;대상이 있는 계층 구조 엔터티 &ldquo;위치를&rdquo; 빌드합니다&rdquo;.</p>
+
+
+  <p>복합 엔터티 모델 &ldquo; 엔터티 간의 <strong>관계가</strong>&rdquo; 있습니다. 예를 들어 <strong>감자 튀김 2</strong>개와 <strong>햄버거</strong>&rdquo; 3개를 주문하려는 것처럼 &ldquo;발화를 분석하려면 발화 분석에서 <strong>감자 튀김</strong>&rdquo; <strong>2</strong>&rdquo;개와 &ldquo;&ldquo; 햄버거 <strong>3</strong>&rdquo; &ldquo; 개를 &ldquo; 바인딩하는지 확인하려고 <strong>합니다</strong>&rdquo;. 이 경우 <strong>항목</strong>&rdquo; 수 및 &ldquo;<strong>식품 유형</strong>&rdquo;으로 구성된 &ldquo;<strong>음식 순서</strong>&rdquo;라는 &ldquo; 복합 엔터티를 LUIS에 빌드합니다.</p>
+
+
+  <p>LUIS는 개발자가 사용자 지정 언어 이해 애플리케이션 빌드를 빠르게 시작할 수 있도록 도와주는 강력한 도구 집합을 제공합니다. 이러한 도구는 미리 빌드된 사용자 지정 가능한 앱 및 엔터티 사전(예: 일정, 음악 및 디바이스)과 결합되어 솔루션을 보다 신속하게 빌드하고 배포할 수 있습니다. 사전은 웹에 대한 집단 지식에서 채굴되고 수십억 개의 항목을 제공하여 모델이 사용자 대화에서 중요한 정보를 올바르게 식별할 수 있도록 지원합니다.</p>
+
+
+  <p>그림 4와 같이 미리 빌드된 도메인은 도메인 또는 클라이언트 애플리케이션의 일반적인 범주에 대해 함께 작동하는 미리 빌드된 의도 및 엔터티 집합입니다. 미리 빌드된 도메인은 미리 학습되었으며 LUIS 앱에 추가할 준비가 되어 있습니다. 미리 빌드된 도메인의 의도 및 엔터티는 앱에 추가한&#39;완전히 사용자 지정할 수 있습니다. 사용자에 대해 작동할 수 있도록 시스템에서 발화를 사용하여 학습할 수 있습니다. 전체 미리 빌드된 도메인을 사용자 지정의 시작점으로 사용하거나 미리 빌드된 도메인에서 몇몇 의도 또는 엔터티를 빌려올 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/711534b4-40a8-447f-870a-263b2f126004.png"><img alt="image" border="0" height="276" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/23654a86-480b-4fce-b5c1-4bf49ae2288d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="625"></a></p>
+
+
+  <p align="center"><em>그림 4: LUIS 미리 빌드된 도메인</em></p>
+
+
+  <p>LUIS는 개발자에게 프로덕션 환경에서 적극적으로 학습할 수 있는 기능을 제공하고 개선 방법에 대한 지침을 제공합니다. 모델이 엔드포인트에서 입력 처리를 시작하면 개발자는 <strong>앱 성능 향상</strong> 탭으로 이동하여 지속적으로 모델을 업데이트하고 개선할 수 있습니다. LUIS는 모든 엔드포인트 발화를 검사하고 확실하지 않은 발화를 선택하고 개발자에게 표시합니다. 이러한 발화에 레이블을 지정하고 학습하고 게시하는 경우 LUIS는 이러한 발언을 보다 정확하게 처리합니다.</p>
+
+
+  <p>LUIS에는 모델을 빌드하는 두 가지 방법, 즉 <a href="https://aka.ms/luis-authoring-api" target="_blank">Authoring API</a> 와 <a href="https://www.luis.ai/" target="_blank">LUIS.ai 웹앱이 있습니다</a>. 두 방법 모두 LUIS 모델 정의를 제어할 수 있습니다. LUIS.ai 또는 Authoring API 또는 둘 다의 조합을 사용하여 모델을 빌드할 수 있습니다. 우리가 제공하는 관리 기능에는 모델, 버전, 협력자, 외부 API, 테스트 및 학습이 포함됩니다.</p>
+
+
+  <h2>고객 스토리</h2>
+
+
+  <p>LUIS를 사용하면 과거에 구현하기가 훨씬 어려웠던 여러 대화형 AI 시나리오를 사용할 수 있습니다. 이제 모임 도우미 및 HR 봇과 같은 생산성 봇, 고객에게 더 나은 서비스를 제공하는 디지털 도우미 및 IoT 애플리케이션을 비롯한 다양한 가능성이 있습니다. MICROSOFT의 가치 제안은 LUIS를 자동화된 AI 솔루션으로 사용하여 디지털 변환을 가능하게 하는 고객을 통해 강력하게 입증되었습니다.</p>
+
+
+  <p><a href="https://customers.microsoft.com/en-us/story/ups" target="_blank">UPS</a>는 최근 Microsoft Bot Framework 및 LUIS에서 실행되는 UPS Bot이라는 챗봇을 통해 서비스 수준을 개선하는 변환 프로젝트를 완료했습니다. 고객은 UPS 봇을 텍스트 기반 및 음성 기반 대화에 참여시켜 배송, 요금 및 UPS 위치에 필요한 정보를 얻을 수 있습니다. 애플리케이션 설계자 인 Katie Duffy에 따르면 플랫폼으로서의 UPS &quot;대화는 미래이므로 Bot Framework 및 LUIS&quot;를 사용하여 고객에게 이미 제공하는 것이&rsquo;&#39;좋습니다.</p>
+
+
+  <p>Microsoft 서비스와 협력하여 <a href="https://customers.microsoft.com/en-us/story/dixons-carphone-retail-cognitive-services" target="_blank">Dixons Carphone</a> 은 고객이 기술 세계를 탐색할 수 있도록 설계된 Cami라는 챗봇을 개발했습니다. Cami는 현재 질문의 형태로 텍스트 기반 입력을 수락하고 재고 상태를 확인하기 위해 매장 내 선반 레이블의 사진&rsquo; 도 허용합니다. 봇은 LUIS의 자동화된 AI 기능을 대화형 기능에 사용하고 Computer Vision API를 사용하여 이미지를 처리합니다. 딕슨 카폰은 온라인 구매 가이드의 정보로 Cami를 프로그래밍하고 동료 교육 자료를 저장하여 고객을 올바른 제품으로 안내했습니다.</p>
+
+
+  <p><a href="https://customers.microsoft.com/en-us/story/rockwell-automation" target="_blank">Rockwell Automation</a> 은 80개국 이상, 22,000명의 직원을 보유하고 있으며, 2016년에는 연간 59억 달러의 매출을 보고했습니다. 고객에게 실시간 운영 인사이트를 제공하기 위해 회사는 Windows 10 IoT Enterprise 운영 체제를 기존 제조 장비 및 소프트웨어와 통합하고 온-프레미스 인프라를 Microsoft Azure IoT Suite에 연결하기로 결정했습니다. 이 회사는 장비의 자동화 컨트롤러를 별도의 독립 실행형 컴퓨터에 연결하는 대신 업계 최고의 Logix 5000TM 컨트롤러 엔진 옆에 Windows 10 IoT Enterprise 운영 체제가 포함된 하이브리드 자동화 컨트롤러를 설계했습니다. 이 솔루션은 별도의 독립 실행형 컴퓨터에 대한 필요성을 없애고 고급 분석을 위해 LUIS를 포함한 고객&rsquo; IT 환경 및 Azure IoT Suite 및 Cognitive Services에 쉽게 연결합니다.&nbsp;</p>
+
+
+  <p>LUIS는 이제 Azure에서 AI 애플리케이션을 빌드하는 데 사용할 수 있는 훨씬 더 큰 기능 포트폴리오의 일부입니다. 그림 5에 표시된 것처럼 AI가 <a href="https://www.azure.com/ai" target="_blank">모든 개발자를 보강하고 역량을 강화하는 방법에</a> 대해 자세히 알아보도록 초대합니다. 또한 Weve&rsquo;는 <a href="https://aischool.microsoft.com/" target="_blank">개발자가</a> 그림 4에 표시된 모든 AI 기술을 사용하여 속도를 높일 수 있도록 AI School을 시작했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dc0cf2c0-3f97-4825-9cc6-650a9b992a9f.png"><img alt="image" border="0" height="241" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2f475794-eac1-4ef6-9b96-de13d997b4e1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p align="center"><em>그림 5: 개발자가 AI 기술을 시작할 수 있는 리소스입니다.</em></p>
+
+
+  <p>현재 애플리케이션에 대화형 AI를 주입하는 방법을 알아보고 알아봅니다.</p>

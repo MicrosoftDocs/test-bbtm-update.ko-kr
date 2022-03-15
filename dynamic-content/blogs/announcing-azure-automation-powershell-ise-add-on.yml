@@ -1,0 +1,126 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8e97e9aab4a5ba48896ef9f7400fd7d23cb8c9c3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912188"
+Slug: announcing-azure-automation-powershell-ise-add-on
+Title: Azure Automation PowerShell ISE 추가 기능 발표
+Summary: Runbook 작성을 위한 새로운 오픈 소스 도구인 Azure Automation PowerShell ISE 추가 기능을 개발했습니다.
+Content: >-
+  <p>Azure Automation에서 Runbook 작성은 일반적으로 브라우저 기반 환경을 사용하여 Azure Portal에서 수행됩니다. 그러나 Runbook 제작 프로세스를 개선하는 방법을 실험하면서 <a href="https://github.com/azureautomation/azure-automation-ise-addon">Azure Automation PowerShell ISE 추가</a> 기능을 작성 &ndash; 하기 위한 새로운 오픈 소스 도구를 개발했습니다.</p>
+
+
+  <p>이 프로젝트는 한동안 진행되어 왔으며 많은 고객이 이미 사용하고 있습니다. 이제 우리는 마침내 더 많은 노출과 사용에 대한 준비가 되었다고 생각합니다&rsquo;. 다음 두 가지를 관찰했기 때문에 이 환경을 구축했습니다.</p>
+
+
+  <ol>
+   <li>고객은 PowerShell을 작성할 때 PowerShell ISE를 많이 사용합니다.</li>
+   <li>Runbook을 작성하거나, 포털을 앞뒤로 복사/붙여넣거나, PowerShell cmdlet을 사용하여 가져오거나 내보낼 때도 PowerShell ISE를 사용합니다.</li>
+  </ol>
+
+
+  <p>따라서 이 강력한 도구를 기반으로 하는 Azure Automation 환경을 만드는 것은 어떨까요? 이미 익숙한 도구를&rsquo; 사용하여 Runbook 제작 프로세스를 가속화하려는 경우&rsquo; Azure Automation PowerShell ISE 추가 기능을 사용해 볼 수 있기를 바랍니다&rsquo;.</p>
+
+
+  <h2>설치</h2>
+
+
+  <p>다음을 사용하여 <a href="https://www.powershellgallery.com/packages/AzureAutomationAuthoringToolkit/">PowerShell 갤러리</a> 에서 ISE 추가 기능 모듈을 설치할 수 있습니다.</p>
+
+
+  <p>&gt;<em>Install-Module AzureAutomationAuthoringToolkit -Scope CurrentUser</em></p>
+
+
+  <p>그런 다음 PowerShell ISE가 항상 자동으로 추가 기능을 로드하도록 하려면 다음을 실행합니다.</p>
+
+
+  <p>&gt;<em>Install-AzureAutomationIseAddOn</em></p>
+
+
+  <p>그렇지 않으면 추가 기능을 로드할 때마다 PowerShell ISE에서 다음을 실행합니다.</p>
+
+
+  <p>&gt;<em>Import-Module AzureAutomationAuthoringToolkit</em></p>
+
+
+  <p>추가 기능은 최신 버전을 사용할 수 있게 되면 업데이트하라는 메시지를 표시합니다.</p>
+
+
+  <h2>개요</h2>
+
+
+  <p>추가 기능을 로드하면 PowerShell ISE의 오른쪽에 표시됩니다.</p>
+
+
+  <p><img alt="Announcing the Azure Automation PowerShell ISE Add-On" border="0" height="378" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/77558a67-ab45-4ec8-b22d-23f0b0915b51.png" style="border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px; float: none; margin-left: auto; display: block; border-top-width: 0px; margin-right: auto" title="Azure Automation PowerShell ISE Add-On 발표" width="610"></p>
+
+
+  <p>이를 사용하여 Automation 계정에서 Runbook을 보고 편집하고 테스트할 수 있습니다. 또한 Automation 자산을 관리합니다.</p>
+
+
+  <p><b>구성 </b>탭(위 그림)에서는 Azure에 로그인하고 작업할 Automation 계정을 선택합니다. Runbook 및 자산은 이 탭의 맨 위에 지정된 작업 영역 폴더에 다운로드됩니다. 보안을 위해 비밀 자산 값(예: 암호화된 변수 및 자격 증명 암호)은 다운로드되지 않지만, 나중에 수동으로 입력하고 로컬 &ndash; 로 안전하게 저장할 수 있습니다.</p>
+
+
+  <h2>로컬 컴퓨터에서 Runbook 테스트</h2>
+
+
+  <p>추가 기능을 설치할 때 Get-AutomationVariable, Get-AutomationPSCredential, Set-AutomationVariable 등과 같은 표준 Automation 작업을 에뮬레이트하는 cmdlet도 제공합니다. 로그인할 때 계정&rsquo; 자산이 다운로드되므로 Automation에서 테스트하기 전에 로컬 컴퓨터에서 Runbook을 테스트할 수 있습니다.</p>
+
+
+  <p>&rsquo;로컬 테스트를 완료한 후에는 ISE 환경을 벗어나지 않고 Azure Automation(또는 Automation 계정에 연결된 모든 하이브리드 작업자)에서 Runbook을 테스트할 수도 있습니다. 예를 들면 다음과 같습니다.</p>
+
+
+  <p><img alt="Announcing the Azure Automation PowerShell ISE Add-On" border="0" height="358" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4dc291d5-7ba4-4567-a22a-df7013885e00.png" style="border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px; float: none; margin-left: auto; display: block; border-top-width: 0px; margin-right: auto" title="Azure Automation PowerShell ISE Add-On 발표" width="610"></p>
+
+
+  <p>새 창에는 이 Runbook에 대한 Azure Automation에서 실행되는 테스트 작업에 대한 정보가 표시됩니다. &rsquo;Azure Automation의 테스트 작업 창에 해당하는 PowerShell ISE&rsquo;를 나타냅니다.</p>
+
+
+  <h2>암호화된 자산 사용</h2>
+
+
+  <p>위에서 설명한 것처럼 비밀은 수동으로 입력해야 합니다. 자산 탭에서 이러한 값을 입력할 수 <b>있습니다 </b>. 암호화된 변수 또는 자격 증명 암호 필드와 같은 값이 누락된&rsquo; 자산은 아래와 같이 주황색으로 강조 표시됩니다.</p>
+
+
+  <p><img alt="Announcing the Azure Automation PowerShell ISE Add-On" border="0" height="355" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b6b4d4fd-2b28-436c-bcf1-21ff16eb903b.png" style="border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px; float: none; margin-left: auto; display: block; border-top-width: 0px; margin-right: auto" title="Azure Automation PowerShell ISE Add-On 발표" width="610"></p>
+
+
+  <p>이 경우 암호 필드가 설정되지 않았기 때문에 이러한 자격 증명이 강조 표시됩니다. 자격 증명 자산을 두 번 클릭하면 원하는 값을 입력할 수 있습니다.</p>
+
+
+  <p>자산 값은 암호화되지 않은 자산에 대해 하나씩, 다른 하나는 암호화된 자산에 대해 두 개의 파일 &ndash; 로 작업 영역의 디스크에 저장됩니다. 암호화된 자산 값은 런타임에 암호화 및 암호 해독을 위해 <b>구성 </b>탭에 지문이 표시되는 인증서를 사용합니다. 암호화에 사용할 사용자 고유의 인증서를 선택할 수도 있습니다.</p>
+
+
+  <h2>참가</h2>
+
+
+  <p>이 프로젝트는 오픈 소스이며 ISE 추가 기능을 개선하기 위한 새로운 아이디어가 있는 경우 끌어오기 요청을 검토하게 되어 기쁩니다(첫 번째 외부 기여자라는 이유로 Matt McNabb에게 소리 내세요!). 이 프로젝트는 Azure Automations&rsquo; <a href="https://github.com/azureautomation/azure-automation-ise-addon">GitHub</a> 호스트됩니다.</p>
+
+
+  <p>Azure Automation용 고유한 앱을 개발하는 데 관심이 있는 경우&rsquo; 이 프로젝트는 <a href="https://www.nuget.org/packages/Microsoft.Azure.Management.Automation/">C# SDK</a>를 사용하는 방법의 좋은 예이기도 합니다.</p>
+
+
+  <h2>피드백</h2>
+
+
+  <p>이러한 채널을 통해 여러분의 의견과 생각을 공유해 주시기 바랍니다. 문제를 발견하거나 기능 요청이 있는 경우 <a href="https://github.com/azureautomation/azure-automation-ise-addon/issues">GitHub</a> 제출할 수 있습니다.</p>
+
+
+  <p>ISE 추가 기능 자체의 <b>피드백 </b>탭을 사용하여 피드백을 제출할 수도 있습니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>Weve&rsquo;는 이미 많은 사용자로부터 이 도구가 Runbook 개발 프로세스에 매우 유용하다는 소식을 들었습니다. 우리는 당신이&rsquo; 그것을 밖으로 시도하고 우리가 그것을 구체화 할 수 있도록 우리의 경험에 대해 알려 바랍니다.</p>
+
+
+  <p>행복한 자동화!</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>Azure Automation을 시작하기만 하면 되었나요? <a href="https://aka.ms/Q2p1ap">여기에서</a> 서비스에 대해 알아보고 <a href="https://twitter.com/AzureAutomation">Twitter</a>에서 Azure Automation을 따라 최신 업데이트를 확인하세요.</p>

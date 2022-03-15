@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e9e1bf41034f7be1c2ae5bfb7f220eb22b195851
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911976"
+Slug: content-update-new-guidance-available-on-using-ssl-certificates-with-windows-azure
+Title: '콘텐츠 업데이트: Windows Azure에서 SSL 인증서 사용에 사용할 수 있는 새로운 지침'
+Summary: 최근에 인증서에 대한 도움말을 더 쉽게 찾을 수 있도록 Windows Azure에서 인증서 관리의 콘텐츠를 업데이트하고 재구성했습니다. 가장 중요한 변화는 두 개의 새로운 추가입니다...
+Content: '<p>최근에 인증서에 대한 도움말을 더 쉽게 찾을 수 있도록 Windows Azure에서 인증서 관리의 콘텐츠를 업데이트하고 재구성했습니다. 가장 중요한 변화는 SSL 인증서 사용에 대한 두 가지 새로운 항목을 추가하는 것입니다.</p>  <ul>  <li>SSL 인증서를 가져오는 방법</li>  <li>HTTPS 엔드포인트에서 SSL 인증서를 구성하는 방법</li>  </ul>  <p>이러한 업데이트를 사용하면 이제 <a target="_blank" href="https://azure.microsoft.com/">Windows Azure</a>에서 SSL 인증서를 가져오고 구성하기 위한 전체 엔드투엔드 지침을 찾을 수 있습니다.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href= https://blogs.msdn.com/b/windowsazure/archive/2011/05/31/content-update-new-guidance-available-on-using-ssl-certificates-with-windows-azure.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗  <script type="text/javascript"></script>  </p>'

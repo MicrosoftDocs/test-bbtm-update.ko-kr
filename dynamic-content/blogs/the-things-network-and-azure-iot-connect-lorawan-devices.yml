@@ -1,0 +1,37 @@
+### YamlMime:Yaml
+ms.openlocfilehash: df088bce3fd47ce1a8169300497d5215186f021b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911549"
+Slug: the-things-network-and-azure-iot-connect-lorawan-devices
+Title: 사물 네트워크 및 Azure IoT LoRaWAN 디바이스 연결
+Summary: 이번 주 암스테르담에서 열린 사물 컨퍼런스에서 Microsoft 및 Things Network Foundation은 2,000명의 LoRaWAN 개발자, 혁신가 및 통합업체와 협력하여 중앙 디바이스 브리지에서 오픈 소스 프로젝트 Azure IoT 사용하여 디바이스를 Azure IoT Central에 연결합니다.
+Content: >-
+  <p>이번 주 암스테르담에서 열린 <a href="https://www.thethingsnetwork.org/conference/" target="_blank">사물 컨퍼런스에서</a> Microsoft 및 Things Network Foundation은 2,000명의 LoRaWAN 개발자, 혁신가 및 통합업체와 협력하여 중앙 <a href="https://github.com/Azure/iotc-device-bridge" target="_blank">디바이스 브리지</a>에서 오픈 소스 프로젝트 Azure IoT 사용하여 디바이스를 Azure IoT Central에 연결합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/93160969-524a-4eb6-8fe2-c9341ac89bc6.png"><img alt="IoT Central dashboard" border="0" height="1322" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/706ddf61-2881-487d-85ba-c6f05e4af3d7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT Central 대시보드" width="1792"></a></p>
+
+
+  <p>IoT(사물 인터넷) 애플리케이션은 센서 및 디바이스 데이터를 활용하여 프로세스와 비즈니스를 변환하는 방법을 설명합니다. 지능형 에지, 연결된 디바이스 및 센서에서 컴퓨팅을 허용하고, 지능형 클라우드와 학습을 통신하고 공유하려면 만연한 연결이 필요합니다. IoT 디바이스, 네트워크 및 인프라의 이질적인 특성으로 인해 IoT 디바이스를 무선으로 연결하기 위한 다양한 프로토콜 및 기술이 생성되며, 각 프로토콜은 배터리 소비, 범위, 보안, 빈도 사용 등에 대한 특정 요구 사항 및 요구 사항을 해결합니다.</p>
+
+
+  <p><a href="https://lora-alliance.org/about-lorawan" target="_blank">LoRaWAN</a>&trade; 는 게이트웨이가 최종 디바이스와 중앙 네트워크 서버 간에 메시지를 릴레이하는 별별 토폴로지 기반의 저전력 광역 네트워킹 프로토콜로 <a href="https://lora-alliance.org/" target="_blank">LoRa Alliance</a>에서 개발한 사양 중 하나입니다&ndash;. 많은 회사에서 LoRaWAN을 채택했으며 종종 IoT 연결 서비스를 제공하여 IoT 디바이스에 대한 연결을 간소화합니다. LoRa Alliance의 활성 회원인 <a href="https://www.thethingsnetwork.org/" target="_blank">Things Network</a>는 글로벌 오픈 LoRaWAN 네트워크를 구축하고 산업급 LoRaWAN 솔루션을 구축하는 개발자를 지원하는 것을 목표로 하는 재단입니다. 60,000명 이상의 개발자로 구성된 적극적인 글로벌 커뮤니티를 육성하고 LoRaWAN 호환 솔루션, 디바이스 및 서비스의 마켓플레이스를 제공합니다.</p>
+
+
+  <p>사물 네트워크와 같은 기존 IoT 클라우드 솔루션에 Microsoft Azure 인텔리전스를 제공하기 위해 Azure IoT 팀은 Azure 서비스를 활용하고 LoRaWAN 디바이스를 IoT용 Microsofts&rsquo; SaaS 제품에 연결하는 프로젝트를 배포할 준비가 된 오픈 소스인 Azure IoT <a href="https://azure.microsoft.com/en-us/blog/connect-devices-from-other-iot-clouds-to-azure-iot-central/" target="_blank">Central Device Bridge</a>를 만들었습니다. 몇 분 만에 통합된 두 솔루션의 조합을 통해 비즈니스 애플리케이션에서 작업을 표시, 분석 및 트리거할 수 있도록 Things Network 디바이스 및 센서&rsquo; 데이터를 Azure IoT Central에 수집할 수 있습니다.</p>
+
+
+  <blockquote>
+
+  <p><em>&ldquo;Azure IoT Central이 있는 브리지는 환경을 개선하고 LoRaWAN 개발자의 복잡성을 줄이는 데 필요한 단계입니다. 커뮤니티가 더 빠르고 적은 노력으로 엔드투엔드 IoT 애플리케이션을 개발할 수 있도록 하는 이 오픈 소스 프로젝트에서 Azure IoT 팀과 협업하게 되어 기쁩니다.&rdquo;</em></p>
+
+  </blockquote>
+
+
+  <p align="right">&ndash; 알렉산더 오버툼, 사물 산업의 비즈니스 개발 책임자</p>
+
+
+  <p>사물 회의는 2,000명의 LoRaWAN 개발자, 혁신가 및 통합자를 한데 모아 이 간단하고 강력한 통합에 대해 LoRaWAN 전문가와 협력하기에 이상적인 놀이터입니다. 우리는 지역 사회의 도움으로 Azure IoT Central Device Bridge 프로젝트를 성장시키고 수백만 대의 LoRaWAN 항목을 Azure IoT 연결하기를 기대합니다. LoRaWAN 솔루션을 계획 중이거나 이미 개발 중인 경우 오늘 프로젝트에 참여하여 코드, 의견 및 제안을 작성하세요!</p>

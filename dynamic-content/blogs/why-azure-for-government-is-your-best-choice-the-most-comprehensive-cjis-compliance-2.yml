@@ -1,0 +1,77 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2c008c7f000bd93a8bd3ef4310c7bd0af1783968
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912266"
+Slug: why-azure-for-government-is-your-best-choice-the-most-comprehensive-cjis-compliance-2
+Title: Azure for Government가 가장 적합한 선택인 가장 포괄적인 CJIS 규정 준수
+Summary: >
+  정부 클라우드가 모두 동일하지는 않으므로 Microsoft Government 클라우드를 구축하기 위한 전략에 대한 대화를 시작하고 있으며, 매우 가치 있는 차별화 요인이라고 생각하는 여러 영역을 탐색하고 있습니다. 정부, 국방 및 정보 기관이 어떤 클라우드 플랫폼이 중요 업무용 서비스를 시민과 구성원에게 제공할지 결정할 때 세부 사항이 중요합니다. 오늘 저는 형사 사법 정보 서비스 또는 CJIS 준수를 지원하는 방법에 대해 이야기하겠습니다. 이는 업계 최고의 규정 준수 포트폴리오의 일부이며 고객을 위해 규정 준수를 더 간단하게 만들기 위해 열심히 노력하겠다는 우리의 약속을 나타냅니다.
+Content: >-
+  <p>정부 클라우드는 모두 동일하지 않으므로&rsquo; Microsoft Government 클라우드를 구축하기 위한 전략에 대한 대화를 시작하고 매우 가치 있는 차별화 요인이라고 생각하는 여러 영역을 탐색합니다. 정부, 국방 및 정보 기관이 어떤 클라우드 플랫폼이 중요 업무용 서비스를 시민과 구성원에게 제공할지 결정할 때 세부 사항이 중요합니다.</p>
+
+
+  <p>오늘 Im&rsquo;은 형사 사법 정보 서비스 또는 CJIS 준수를 지원하는 방법에 대해 이야기 할 것입니다. 업계&rsquo; 최고의 규정 준수 포트폴리오의 일부이며 고객을 위해 규정 준수를 더 간단하게 만들기 위해 열심히 노력하겠다는 우리의 약속을 나타냅니다. CJIS는 경찰과 공공 안전 담당자가 정보 기술을 안전하게 사용하고 올바른 개인 정보 보호 제어를 통해 클라우드를 채택하는 주 및 지방 정부의 가장 중요한 규정 준수 요구 사항입니다.</p>
+
+
+  <h2>CJIS는 처음부터 Azure에 기본 제공되었습니다.</h2>
+
+
+  <p>거의 4년 전, 우리는 CJIS 보안 정책의 적용 가능한 통제를 준수하기로 매우 신중한 결정을 내렸으며, 궁극적으로 50개 주에서 미국 법무부와 CJIS 시스템 기관을 만족시키는 접근법에 대한 작업을 시작했습니다. 우리는 은색 총알도 없고, 규정 준수를 달성하기 위한 간단한 단계도 없고, 모든 주를 포괄하는 단일 연방 협정도 없다는 것을 재빨리 알게 되었습니다.&nbsp; Microsoft의 접근 방식은 Microsoft가 정책의 적용 가능한 요구 사항을 충족한다는 것을 각 주 CJIS 시스템 기관에 인증하는 것입니다. 정책에는 13개의 보안 영역이 있으며 그 중 4개는 기관 요구 사항 및 Microsofts&rsquo; 접근 방식에 특히 중요합니다.</p>
+
+
+  <ul>
+   <li>지문 및 배경 심사를 통해 해당 Microsoft 직원의 상태 승인 예 &ndash; , 우리는 정말 각 주에 운영 직원의 지문을주고있다!</li>
+   <li>CJIS 보안 인식 교육은 할당 30일이 있는 데이터에 대한 잠재적 액세스 권한이 있는 각 직원이 완료했습니다. 이는 CJIS 보안 정책 요구 사항인 6개월을 5개월 초과합니다.</li>
+   <li>Microsoft에서 법인 및 해당하는 각 직원으로 서명된 부록입니다. 모든 직원은 고용 조건으로 CJIS 표준을 충족하기 위해 개별적으로 최선을 다하고 있습니다.</li>
+   <li>보안 보고서 및 물리적 데이터 센터 검사 검토를 통해 CJIS에 대한 Microsoft 증명의 상태 검토 및 수용</li>
+  </ul>
+
+
+  <p>다른 공급자는 CJIS와 관련하여 Microsoft에서 제공하는 투명성과 인사이트를 제공하지 않습니다.</p>
+
+
+  <h2>23개 주(및 성장) &ndash; 를 통해 Microsoft는 CJIS 클라우드 리더입니다.</h2>
+
+
+  <p>2012년 12월 Microsoft는 서명된 CJIS 관리 계약 및 CJIS 보안 부록을 사용하여 해당 CJIS 컨트롤을 계약상으로 인증한 최초의 하이퍼스케일 클라우드 공급자입니다. <strong>다른 주요</strong> 클라우드 공급자가 되기까지는 3년이 걸렸습니다. 2012년부터 우리는 23개 주와 계약을 체결하기 위해 일대일로 노력해 했으며, 50개 주에 모두 도달하려는 우리의 목표는 여전히 눈에 띄지 않습니다.</p>
+
+
+  <p><img alt="CJISStatus" border="0" height="440" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e90c4225-9955-49e7-b406-aa899eb73322.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="CJISStatus" width="800"></p>
+
+
+  <h2>CJIS가 더 똑똑하고 빠르며 더 나은 미션 포커스가 중요한 &ndash; 이유</h2>
+
+
+  <p>경찰 기관 착용 비디오 카메라는 정의와 공공 안전에서 오늘날 가장 큰 신흥 기술 중단 중 하나이며 CJIS의 적용 가능성은 모든 주에서 계속 진화하고 있습니다. Were&rsquo;는 포괄적인 CJIS 전략으로 각 주&rsquo; 결정을 지원할 준비가 되었습니다.</p>
+
+
+  <p>법 집행 기관과 클라우드가 어떻게 결합되는지에 대한 매력적인 예는 Miami-Dade 경찰국의 혁신입니다. Miami-Dade 경찰은 Microsoft, VIEVU와 협력하여 Microsoft Azure Government를 기반으로 보안 솔루션을 빌드하고 배포하기로 결정했습니다. 이미 이 솔루션은 Miami-Dade 경찰국이 운영을 혁신하고 대중을 더 잘 참여시키며 시민과의 투명성을 높이는 데 도움이되었습니다. 후안 J. 페레즈에 의해 말했듯이, Miami-Dade 경찰국의 이사 :</p>
+
+
+  <p><em>&ldquo;우리는 기술의 최전선에 서 다른 방법으로 수집 할 수없는&rsquo; 증거를 캡처 할 수 있기를 원했습니다.&nbsp; 그러나 우리는 또한 관련된 모든 사람들에게 가장 긍정적 인 영향을 보장하기 위해 신체 착용 카메라의 구현에 신중하게 접근해야한다는 것을 알고 있습니다.&rdquo;</em></p>
+
+
+  <p>변환 <a href="https://blogs.microsoft.com/transform/2016/09/13/miami-dade-county-embraces-technology-build-community-make-policing-transparent/">블로그</a>에서 마이애미-데&rsquo;이드 이야기에 대해 자세히 알아보세요.</p>
+
+
+  <p>Miami-Dade VIEVU는 캘리포니아 주와 테이저와 같은 파트너와 같은 수백 개의 주와 파트너가 같은 선택을 한 것은 아닙니다 &ndash; .</p>
+
+
+  <h2>이것이 의미하는 것</h2>
+
+
+  <p>Microsoft는 신뢰할 수 있는 정부 클라우드를 구축하기 위해 최선을 다하고 있으며, 이는 중요 업무용 정부 및 국방 워크로드를 클라우드로 변환하는 데 필요한 표준을 충족하거나 초과하는 것을 의미합니다. 미국 주 및 지방 정부가 제공하는 공공 안전 서비스는 이러한 워크로드 중 하나이며 현재 시장에서 CJIS에 가장 깊고 포괄적인 규정 준수를 제공하는 것을 자랑스럽게 생각합니다.</p>
+
+
+  <p>시장의 다른 공급자와 달리, 우리는 부분적인 적용 범위를 가지고 있지 않으며&rsquo; 입증되지 않은 주장을하지 않으며&rsquo; 정부 고객이 타사 소프트웨어를 사용하도록 요구하지 않습니다&rsquo;. 우리는 규정 준수가 단순화되고 투명해야 하며 정부 기관이 임무를 완수하는 데 집중할 수 있도록 해야 한다고 믿습니다.</p>
+
+
+  <p>Microsoft Government 클라우드의 보안과 신뢰를 경험하기 위해 <a href="https://azuregov.microsoft.com/trial/azuregovtrial" target="_blank">무료 Azure Government 평가판</a>에 등록하도록 초대합니다.</p>
+
+
+  <p><br>
+
+  --Tom</p>

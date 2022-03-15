@@ -1,0 +1,43 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d8a7df547184e85011a3eddf528801a2a3bb4fd0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905266"
+Slug: using-hue-with-hadoop-on-azure-hdinsight
+Title: Azure HDInsight에서 Hadoop을 사용하여 쿼리 작성에 Hue 사용
+Summary: HDInsight는 고객이 Hadoop 클러스터를 쿼리할 수 있도록 다양한 옵션을 제공합니다. Linux의 HDInsight에서 Hue를 사용하는 방법을 알아봅니다.
+Content: >-
+  <h1>HDInsight에서 쿼리 작성&nbsp; 도구</h1>
+
+
+  <p>HDInsight는 Hadoop 클러스터를 쿼리할 수 있도록 고객에게 많은 옵션을&nbsp; 제공합니다. Windows 또는 Linux에서 <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-connect-excel-hive-odbc-driver/">ODBC</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-visual-studio-tools-get-started/">Visual Studio</a>, 명령줄(<a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-use-hive-remote-desktop/">창의 CLI</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-use-hive-ssh/">Linux의 SSH</a>), <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-submit-hadoop-jobs-programmatically/#submit-hive-jobs-by-using-hdinsight-net-sdk">.Net SDK</a> 또는 <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-use-hive-powershell/">PowerShell</a>을 사용할 수 있습니다. 고객은 종종 웹 애플리케이션이 쿼리를 작성하고 제출하기를 원합니다. Windows 이미 고객이 매우 광범위하게 사용하는 <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-use-hive-query-console/">쿼리 콘솔</a>이 있습니다. 그러나 Linux에는 쿼리 콘솔을 사용할 수 없습니다. Linux의 HDInsight에 대한 오픈 소스 쿼리 작성 애플리케이션 <a href="https://gethue.com/">Hue </a>&ndash; 를 발표합니다. 자세한 내용은 아래 지침을 참조하세요.</p>
+
+
+  <h1>Hue 정의</h1>
+
+
+  <p><a href="https://gethue.com/">Hue </a>는 Hadoop 클러스터와 상호 작용하는 데 사용되는 웹 애플리케이션 집합입니다. Hue를 사용하여 Hadoop 클러스터(HDInsight 클러스터의 경우 WASB)와 연결된 스토리지를 찾아보고, Hive 작업 및 Pig 스크립트 등을 실행할 수 있습니다. HDInsight Hadoop 클러스터에서 Hue를 설치할 때 지원되는 구성 요소는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>Beeswax Hive 편집기</li>
+   <li>Pig</li>
+   <li>메타스토어 관리자</li>
+   <li>Oozie</li>
+   <li>FileBrowser(WASB 기본 컨테이너와 대화)</li>
+   <li>작업 브라우저</li>
+  </ul>
+
+
+  <h1>HDInsight 클러스터에서 Hue 사용</h1>
+
+
+  <p>Linux의 HDInsight에서 Hue를 사용하는 방법에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-hue-linux/">이 문서를</a> 참조하세요.</p>
+
+
+  <h1>피드백/질문</h1>
+
+
+  <p>Hue 사용에 대한 질문이 있거나 HDInsight의 개발 및 디버깅 환경 개선에 대한 다른 피드백이 있는 경우 문의 <a href="mailto:hdiworkload@microsoft.com">hdiworkload@microsoft.com</a>하세요.</p>

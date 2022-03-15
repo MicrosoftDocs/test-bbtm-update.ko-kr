@@ -1,0 +1,116 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d9ffd50ff706c7d52ffb0bf00762af9f166b3e5e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911872"
+Slug: hdinsight-tools-for-intellij-eclipse-december-updates
+Title: IntelliJ용 HDInsight 도구 & Eclipse 12월 업데이트
+Summary: IntelliJ &amp; Eclipse용 HDInsight Tools의 12월 업데이트를 발표하게 되어 기쁘게 생각합니다. IntelliJ &amp; Eclipse용 HDInsight 도구는 오픈 소스 커뮤니티에 서비스를 제공하며 관심을 가질 것입니다...
+Content: >-
+  <p>IntelliJ &amp; Eclipse용 HDInsight Tools의 12월 업데이트를 발표하게 되어 기쁘게 생각합니다. IntelliJ &amp; Eclipse용 HDInsight 도구는 오픈 소스 커뮤니티에 서비스를 제공하며 HDInsight Spark 개발자가 관심을 가질 것입니다. 이 도구는 Linux, Mac 및 Windows 원활하게 실행됩니다. 최근 릴리스에서는 프로젝트 만들기 및 제출에 대한 원활한 사용자 환경을 보장하기 위해 사용자&rsquo; 피드백에 중점을 둡니다. 또한 이 릴리스에서는 Spark 2.0 지원, 로컬 실행 및 구체화된 작업 보기 &amp; 작업 Graph 포함한 몇 가지 새로운 기능을 다룹니다.</p>
+
+
+  <h2>Spark 2.0 지원</h2>
+
+
+  <p>이제 IntelliJ &amp; Eclipse용 HDInsight 도구는 완전히 호환되는 Spark 2.0입니다. API 유용성, <a href="https://spark.apache.org/releases/spark-release-2-0-0.html">SQL 2003</a> 지원, 성능 향상, 구조적 스트리밍, R UDF 지원, 운영 개선 등 Spark 2.0의 멋진 기능을 즐길 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8af2d450-fbc4-4daa-978f-052aaa68d070.png"><img alt="Pic1" border="0" height="560" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b47f1724-5e5a-411a-93e1-529ff80c2a17.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Pic1" width="726"></a></p>
+
+
+  <h2>로컬 실행 - Hortonworks 샌드박스와 함께 IntelliJ용 HDInsight 도구 사용</h2>
+
+
+  <p>이 기능을 사용하면 HdInsight 클러스터에 Spark 작업을 제출하는 것 외에도 IntelliJ용 HDInsight 도구가 일반 Hadoop 클러스터와 함께 작동할 수 있습니다. Hortonworks Sandbox를 사용하여 개발 환경에서 로컬로 Hadoop를 사용할 수 있습니다. 솔루션을 개발하여 대규모로 배포했으므로 HDInsight 클러스터를 살펴볼 수 있습니다.</p>
+
+
+  <h3>로컬 실행 및 디버그를 위해 로컬 샌드박스에 커넥트</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5e7ed165-e071-4076-a689-cfd66cdbd6bb.png"><img alt="Pic2" border="0" height="484" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0cd94d50-e201-4f98-b563-bc4316f0f24c.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Pic2" width="726"></a></p>
+
+
+  <h2>작업 보기 &amp; 작업 Graph</h2>
+
+
+  <p>업데이트된 작업 보기는 작업 목록, 작업 요약 및 선택한 작업에 대한 세부 정보를 볼 수 있는 매끄러운 UI를 제공합니다. 또한 작업 그래프를 사용하면 작업에 대한 실행 세부 정보, 작업 요약 및 실행기 보기를 볼 수 있습니다.</p>
+
+
+  <h3>작업 목록 및 작업 요약</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac6eaf59-c3c8-4057-86ce-9e06575b356e.png"><img alt="Pic3" border="0" height="408" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1f0b884c-5aeb-4674-8c82-ecc375f375a6.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Pic3" width="726"></a></p>
+
+
+  <h3>작업 그래프</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/869f25fc-f6ca-4b09-af10-125adf665b7b.png"><img alt="Pic4" border="0" height="407" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2bbcacc2-a36c-4d78-8681-d0a2d0945c2a.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Pic4" width="726"></a></p>
+
+
+  <h3>작업 요약</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ac2ce15-b196-40bc-8f6c-2acb99c72b53.png"><img alt="Pic5" border="0" height="405" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94f6bc49-e919-4c99-83b8-fab5b115df6e.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Pic5" width="726"></a></p>
+
+
+  <h3>실행기 보기</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe021aca-d1c6-4651-939d-58485a0488bf.png"><img alt="Pic6" border="0" height="407" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0193e61d-0421-439b-aabc-f88d16459dbc.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Pic6" width="726"></a></p>
+
+
+  <h2>IntelliJ 설치 &ndash;</h2>
+
+
+  <p>사용자는 IntelliJ 리포지토리로 이동하고 Azure Toolkit 검색&ldquo;하여 최신 비트를 가져올 수 있습니다.&rdquo; 또한 사용자가 플러그 인을 이미 설치한 경우 IntelliJ는 사용자에게 최신 업데이트를 요청하는 메시지를 표시합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9e5d5a9e-625e-4b2f-910c-94060a239977.png"><img alt="IntelliJ Installation" border="0" height="423" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/767cf483-842c-45be-85d2-2fe222aa2e4e.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="IntelliJ 설치" width="726"></a></p>
+
+
+  <h1>&nbsp;</h1>
+
+
+  <h2>Eclipse 설치 &ndash;</h2>
+
+
+  <p>사용자는 Eclipse 리포지토리로 이동하여 Java&rdquo;용 Azure Toolkit 검색&ldquo;하여 최신 비트를 가져올 수 있습니다. 또한 Eclipse는 이전에 Java용 Azure Toolkit 플러그 인을 설치한 경우 최신 업데이트를 묻는 메시지를 표시합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/105723e4-2470-4e15-9a51-ae896f4d16b8.png"><img alt="Eclipse Installation" border="0" height="538" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1041af80-8855-423a-a88b-ed13057204be.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="Eclipse 설치" width="726"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>자세한 내용은 다음을 확인하세요:</p>
+
+
+  <ul>
+   <li>IntelliJ HDInsight Spark 로컬 실행: <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-tools-for-intellij-with-hortonworks-sandbox" target="_blank">Hortonworks 샌드박스와 함께 IntelliJ용 HDInsight 도구 사용</a>&nbsp;&nbsp;&nbsp;</li>
+   <li>IntelliJ 원격 디버그: <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-spark-intellij-tool-plugin-debug-jobs-remotely" target="_blank">IntelliJ용 Azure Toolkit HDInsight 도구를 사용하여 HDInsight Spark Linux 클러스터에서 원격으로 Spark 애플리케이션 디버그</a>&nbsp;</li>
+  </ul>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spark 애플리케이션 만들기:</p>
+
+
+  <ul>
+   <li>IntelliJ 사용자 가이드: <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-spark-intellij-tool-plugin" target="_blank">IntelliJ용 Azure Toolkit HDInsight 도구를 사용하여 HDInsight Spark Linux 클러스터용 Spark 애플리케이션 만들기</a></li>
+   <li>비디오: <a href="https://mix.office.com/watch/1nqkqjt5xonza">Spark 개발을 위한 IntelliJ용 HDInsight 도구 소개</a></li>
+   <li>Eclipse 사용자 가이드: <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-spark-eclipse-tool-plugin">Eclipse용 Azure Toolkit HDInsight 도구를 사용하여 Spark 애플리케이션 만들기</a></li>
+   <li>비디오: <a href="https://mix.office.com/watch/1rau2mopb6fha" target="_blank">Eclipse용 HDInsight 도구를 사용하여 Spark 애플리케이션 만들기</a></li>
+  </ul>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/">Azure 블로그</a> 및 <a href="https://blogs.msdn.microsoft.com/azuredatalake">빅 데이터 블로그</a>에서 오늘&rsquo; 공지 사항에 대해 자세히 알아보세요.</p>
+
+
+  <p>더 많은 <a href="https://azure.microsoft.com/en-us/updates/">Azure 서비스 업데이트를 검색합니다</a>.</p>
+
+
+  <p>질문, 피드백, 의견 또는 버그 보고서가 있는 경우 아래의 의견을 사용하거나 메모를 <a href="mailto:hdivstool@microsoft.com">hdivstool@microsoft.com</a>보내주세요.</p>

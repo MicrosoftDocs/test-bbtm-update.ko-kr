@@ -1,0 +1,53 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fa1a9e3a8337bd4afbbd6a4c5b5af8e577675999
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912391"
+Slug: running-docker-container-on-azure-batch
+Title: Azure Batch에서 Docker 컨테이너 실행
+Summary: Batch 서비스에서 Linux VM 지원이 도입되면서 Docker 허브를 패키징 및 배포 메커니즘으로 사용하여 Azure Batch에서 컨테이너 기반 작업을 실행할 수 있습니다.
+Content: >-
+  <h5>이 블로그 게시물은 이제 최신 상태가 아닙니다.&nbsp; 이제 컨테이너 애플리케이션을 Batch와 함께 사용할 수 있습니다. 두 가지 방법 중 하나를 아래에 설명된 샘플 대신 사용해야 합니다. Batch에서 또는 <a href="https://github.com/Azure/batch-shipyard">Batch Shipyard</a>를 사용하여 컨테이너 애플리케이션을 <a href="https://docs.microsoft.com/azure/batch/batch-docker-container-workloads">기본적으로</a> 실행하는 방법에 대한 설명서를 참조하세요.</h5>
+
+
+  <hr>
+
+  <p>Docker는 컨테이너 내에서 애플리케이션을 패키지, 배포 및 실행하는 도구입니다. <a href="https://azure.microsoft.com/blog/announcing-support-of-linux-vm-on-azure-batch-service/">Batch 서비스에서 Linux VM 지원이</a> 도입되면서 Docker 허브를 패키징 및 배포 메커니즘으로 사용하여 Azure Batch에서 컨테이너 기반 작업을 실행할 수&#39;있습니다.<br>
+
+  &nbsp;<br>
+
+  또한 Azure는 Marathon 및 Chronos를 사용하여 컨테이너 호스팅을 서비스로 제공합니다. 컨테이너 기반 애플리케이션에 대한 호스팅 환경이 필요한 경우 Azure Container Service를 선택하는 것이 좋습니다. 반면에 반복적인 컴퓨팅 작업을 실행하기 위해 스케줄러가 필요한 경우 작업 이진 파일 및 데이터를 컨테이너 형식으로 패키지하고 배포할 수 있는 Batch 서비스를 선택해야 합니다.<br>
+
+  &nbsp;<br>
+
+  Weve&rsquo;는 Batch에서 Docker 기술을 사용하는 방법을 보여주기 위해 <a href="https://github.com/Azure/azure-batch-samples/tree/master/Python/Batch">GitHub 두 개의 샘플을</a> 추가했습니다. 첫 번째는 컴퓨팅 노드의 Batch 풀을 만들어 Docker Swarm 클러스터로 전환하는 방법을 보여 줍니다. SSH 터널을 사용하여 Docker Swarm에 로컬로 연결하여 클러스터와 상호 작용할 수 있습니다.<br>
+
+  &nbsp;<br>
+
+  두 번째 샘플은 Batch 풀에서 작업으로 Docker 컨테이너를 실행하기 위한 종단 간 워크플로를 보여 줍니다.<br>
+
+  &nbsp;<br>
+
+  두 샘플 모두 VM에 Docker 컨테이너를 설치하는 풀을 만드는 것부터 시작합니다. 풀 VM은 Ubuntu 14.04를 기반으로합니다. 풀은 Docker_starttask.sh를 실행하는 시작 작업으로 만들어집니다. 이 스크립트는 패키지 원본 목록에 Docker 리포지토리를 추가하고, Docker 엔진을 설치하고, 구성 후 단계를 실행하는 방법을 알고 있습니다. 스크립트는 VM이 기본 풀 구성인 Ubuntu 14.04를 기반으로 하는 것으로 가정합니다. 이 스크립트는 다른 Linux 배포판에서 작동하지 않지만 쉽게 업데이트할 수 있습니다(특히 다른 버전의 Ubuntu의 경우). 시작 작업에 RunElevated 플래그가 true로 설정되어 있으므로 스크립트 cli에는 sudo&quot;가 필요하지 않습니다&quot;.<br>
+
+  &nbsp;<br>
+
+  그런 다음 두 번째 샘플은 작업 준비 태스크를 사용하여 작업을 만듭니다. 이 작업은 Docker 풀&quot;을 실행&quot;하여 Docker 허브에서 이미지를 끌어옵니다. 작업 준비 태스크는 작업의 다른 태스크가 노드에서 실행되기 전에 실행되도록 보장되므로 실제 작업이 시작되면 이미지가 표시됩니다. 또 다른 옵션은 작업 명령줄에서 &ldquo;Docker 끌어오기를&rdquo; 첫 번째 옵션으로 배치하는 것입니다.<br>
+
+  &nbsp;<br>
+
+  이 샘플은 마지막으로 작업에 작업을 추가합니다. 작업 명령줄은 명령을 컨테이너에 공급하는 한 라이너입니다. 컨테이너는 -i&quot;를 대화형 모드로 실행하고 &quot;콘솔의 STDIN/STDOUT/STDERR에 연결되므로 모든 출력을 stdout 및 stderr에 캡처할 수 있습니다.<br>
+
+  &nbsp;<br>
+
+  스크립트가 완료되면 컨테이너가 완료됩니다. 그러면 작업이 완료된 것으로 표시됩니다. Docker는 컨테이너 자체에서 반환된 코드와 함께 종료를 실행하므로 작업 실행 정보 속성에서 작업 종료 코드를 모니터링하여 결과를 확인할 수 있습니다.<br>
+
+  &nbsp;<br>
+
+  컨테이너는 VM 샌드박스 대신 호스트 환경 내에서 실행되므로 일반적인 모니터링 도구가 작동합니다. 호스트의 위쪽/htop과 같은 명령은 작업 CPU 사용량을 표시합니다. Stdout/stderr는 컨테이너에서 출력을 캡처합니다. 호스트는 인터넷에 연결하여 필요한 리소스를 다운로드할 수 있습니다.<br>
+
+  &nbsp;<br>
+
+  한 가지 언급할 점은 컨테이너가 기본적으로 호스트에서 파일을 공유하지&#39;않는다는 것입니다. 컨테이너를 시작하기 위해 리소스 파일이 필요한 경우 Docker cli에 -v&quot; 옵션을 추가하여 &quot;컨테이너에 호스트 디렉터리를 탑재할 수 있습니다.</p>

@@ -1,0 +1,67 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2bc560e314325241d4cb74ab960955e76ea28df8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911203"
+Slug: azure-images-sql-server-2016-on-windows-server-2016
+Title: 'Azure 이미지: Windows Server 2016 SQL Server 2016'
+Summary: Azure Marketplace의 Windows Server 2016 SQL Server 2016의 이미지를 발표하게 되어 기쁩니다.
+Content: >-
+  <p>Were&rsquo;는 <a href="https://azure.microsoft.com/en-us/marketplace/?term=%22SQL+Server+2016+RTM%22+%22Windows+Server+2016%22">Azure Marketplace</a>의 Windows Server 2016 SQL Server 2016의 이미지를 발표하게 되어 기쁩니다!</p>
+
+
+  <p>Windows Server 2016 Data Center의 모든 SQL Server 2016 버전을 사용할 수 있습니다.</p>
+
+
+  <ul>
+   <li>
+   <div align="left">SQL 개발자 &ndash; 개발/테스트를 위한 SQL Server 무료 전체 버전(프로덕션 없음)</div>
+   </li>
+   <li>
+   <div align="left">SQL Express &ndash; 경량 워크로드를 위한 엔트리 레벨 무료 데이터베이스(1GB 메모리, 10GB 스토리지)</div>
+   </li>
+   <li>
+   <div align="left">SQL Web &ndash; 낮은 크기에서 중간 크기 웹 애플리케이션에 대한 저렴한 데이터베이스</div>
+   </li>
+   <li>
+   <div align="left">SQL Standard &ndash; 중간 크기 워크로드에 대한 핵심 데이터베이스 기능</div>
+   </li>
+   <li>
+   <div align="left">&ndash; 중요 업무용 또는 대규모 트랜잭션 처리, 데이터 웨어하우징 및 비즈니스 인텔리전스 워크로드를 위한 포괄적인 기능을 갖춘 전체 버전의 SQL Server SQL Enterprise</div>
+   </li>
+  </ul>
+
+
+  <p>또한 BYOL 버전의 SQL Standard 및 SQL Enterprise 사용하여 사용자 라이선스 필요 혜택을 쉽게 활용할 수 있습니다.</p>
+
+
+  <p>모든 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-portal-sql-server-provision/">자동화된 포털 환경</a>(스토리지 구성, 대상 워크로드 최적화, 자동화된 패치)이 이러한 이미지와 함께 작동하는 가장 좋은 방법입니다&ndash;.</p>
+
+
+  <h2>SQL Server 2016</h2>
+
+
+  <p><a href="https://www.microsoft.com/en-us/cloud-platform/sql-server">SQL Server 2016</a>은 트랜잭션 처리 및 비즈니스 인텔리전스를 위한 업계 최고의 데이터베이스 플랫폼입니다. 가장&rsquo; 취약한 데이터베이스이며 고급 분석에서 비교할 수 없는 메모리 내 성능에 이르기까지 모든 것이 기본 제공됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8faf308-9292-4649-b6bd-cc735962ff82.png"><img alt="SQL Server 2016" border="0" height="161" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/abe6a48c-fe65-4744-8f85-05772bfb68ae.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2016" width="1024"></a></p>
+
+
+  <h2>Windows Server 2016</h2>
+
+
+  <p><a href="https://www.microsoft.com/en-us/cloud-platform/windows-server">Windows Server 2016</a> 여러 보안 계층을 추가하고 강력한 스토리지 및 관리 기능을 도입하면서 워크로드를 지원하는 클라우드 지원 운영 체제입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/854f5d80-2289-4634-8b69-a528e819366b.png"><img alt="Windows Server 2016" border="0" height="134" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3f8b91c4-b8de-4675-bdf2-1844a63a04d5.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2016" width="1024"></a></p>
+
+
+  <h2>SQL Server 2016과 함께 더 나은 Windows Server 2016 &ndash;</h2>
+
+
+  <p>Windows Server 2016 Windows 서버&rsquo; 성능 및 확장성이 더욱 향상됩니다. 또한 새로운 SQL Server 시나리오를 사용하거나 기존 시나리오를 간소화하는 다양한 기능을 소개합니다(예: <a href="https://technet.microsoft.com/en-us/windows-server-docs/storage/storage-spaces/storage-spaces-direct-overview">저장소 공간 Direct</a>, <a href="https://blogs.msdn.microsoft.com/clustering/2015/08/17/workgroup-and-multi-domain-clusters-in-windows-server-2016/">다중 도메인 및 작업 그룹 Windows 클러스터</a>, <a href="https://msdn.microsoft.com/en-us/powershell/jea/readme">JEA(Just-Enough Administration))</a>.</p>
+
+
+  <p>오늘 <a href="https://azure.microsoft.com/en-us/marketplace/?term=%22SQL+Server+2016+RTM%22+%22Windows+Server+2016%22">Windows Server 2016 SQL Server 2016을</a> 사용하여 VM을 프로비전합니다.</p>

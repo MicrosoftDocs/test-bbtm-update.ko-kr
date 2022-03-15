@@ -1,0 +1,31 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 250d1408474aca74f048aa0632c597d50bce0d6f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899638"
+Slug: new-lower-azure-pricing
+Title: 새로운 낮은 Azure 가격 책정
+Summary: 10월 1일부터 고객에게 최상의 가격으로 Azure를 제공하기 위한 지속적인 노력의 일환으로 가장 인기 있는 많은 VM(가상 머신)의 가격을 낮추고 있습니다.
+Content: >-
+  <p>10월 1일부터 고객에게 최상의 가격으로 Azure를 제공하기 위한 지속적인 노력의 일환으로 가장 인기 있는 많은 VM(가상 머신)의 가격을 낮추고 있습니다. 이 블로그의 나머지 부분에는 주요 주요 내용이 포함되어 있지만 자세히 알아볼 준비가 되면 사용 사례에 매핑되는 VM 범주를 쉽게 식별하고 지역 전체에서 가격을 찾을 수 있도록 새롭게 디자인된 <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/" target="_blank">웹 사이트를</a> 확인하세요.</p>
+
+
+  <p>다음은 변경 내용의 요약입니다.</p>
+
+
+  <ul>
+      <li><strong>범용 인스턴스:</strong> Dv2 시리즈 VM의 가격은 최대 15%까지 할인됩니다. 또한 A1 및 A2 기본 VM의 가격을 최대 50%까지 낮춥니다.</li>
+      <li><strong>컴퓨팅 최적화 인스턴스:</strong> F 시리즈 가격은 최대 11%까지 할인됩니다.</li>
+      <li><strong>Av2 시리즈:</strong> 2016년 11월에는 A 시리즈 표준 VM 가격보다 최대 36% 낮은 가격으로 새로운 A 시리즈 가상 머신(Av2)을 도입할 예정입니다.</li>
+  </ul>
+
+
+  <p>VM 범주에 익숙하지 않은 경우&rsquo; 시리즈 VM은 엔트리 레벨 컴퓨팅 계층입니다. Dv2 시리즈 VM은 A 시리즈보다 더 많은 메모리와 로컬 SSD 스토리지가 있는 범용 계층입니다. F 시리즈 VM은 Dv2 시리즈보다 더 낮은 가격으로 더 높은 CPU 대 메모리 비율을 제공합니다.</p>
+
+
+  <p>이러한 할인된 가격 외에도 Software Assurance에서 Windows Server를 사용하는 고객의 경우 최근에 발표된 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/" target="_blank">Microsoft Azure 하이브리드 사용 혜택</a>은 Windows Server 워크로드를 41% 저렴한 비용으로 실행하는 데 도움이 될 수 있습니다. 오늘&rsquo;부터 갤러리에서 이러한 방식으로 Windows 서버 VM을 더 쉽게 배포할 수 있는 이미지 집합을 제공합니다.</p>
+
+
+  <p>&rsquo;이러한 변경 내용이 고객에게 무엇을 의미하는지, 그리고 Azure에서 실현할 수 있는 가치에 대해 매우 기쁘게 생각하고 있습니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/" target="_blank">여기</a>를 방문하세요.</p>

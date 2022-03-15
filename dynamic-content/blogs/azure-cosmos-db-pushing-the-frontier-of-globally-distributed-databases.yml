@@ -1,0 +1,168 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0347336136b6a8228dbf8b80a8ab7e1d805ead13
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912114"
+Slug: azure-cosmos-db-pushing-the-frontier-of-globally-distributed-databases
+Title: 'Azure Cosmos DB: 전역적으로 분산된 데이터베이스의 경계선 추진'
+Summary: 2010년 클라우드 기반 데이터베이스를 개념화한 이래, 클라우드의 세 가지 기본 속성을 활용하도록 Azure Cosmos DB를 신중하게 설계하고 엔지니어링했습니다.
+Content: >-
+  <p>2010년 클라우드 기반 데이터베이스를 개념화한 이래, 클라우드의 세 가지 기본 속성을 활용하도록 Azure Cosmos DB를 신중하게 설계하고 엔지니어링했습니다.</p>
+
+
+  <ul>
+   <li>투명한 다중 마스터 복제를 통해 <strong>전역 배포</strong></li>
+   <li>수평 분할<strong>을 통해 전 세계적으로 처리량 및 스토리지의 탄력적 확장성</strong></li>
+   <li>데이터베이스 엔진에서 복제 프로토콜까지 리소스 관리가 높은 시스템 스택을 통해 <strong>세분화된 다중 테넌트</strong>입니다.</li>
+  </ul>
+
+
+  <p>Cosmos DB는 99번째 백분위수 및 99.999%의 고가용성에서 보장된 한 자리 밀리초 대기 시간으로 전 세계 쓰기 및 읽기의 탄력적 확장성을 제공하는 새로운 방법으로 이러한 세 가지 속성을 구성합니다. 이 서비스는 데이터를 투명하게 복제하고 전역적으로 분산된 Cosmos 데이터베이스의 단일 시스템 이미지를 제공하며, 사용자가 전 세계 어디서나 로컬 복제본을 작성하고 읽는 동안 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels">5가지 잘 정의된 일관성 모델</a>(<a href="https://github.com/Azure/azure-cosmos-tla">TLA+</a>를 사용하여 정확하게 지정됨)을 선택할 수 있습니다. 작년 출시 이후, 서비스의 성장은 우리의 디자인 선택과 우리가 만든 독특한 엔지니어링 단점의 유효성을 검사하고있다.</p>
+
+
+  <h2>빠르고 전역적으로 확장 가능한 쓰기 사용</h2>
+
+
+  <p>Azure의 기본 서비스 중 하나인 Cosmos DB는 기본적으로 모든 Azure 지역에서 실행됩니다. 작성 당시 Cosmos DB는 50개 이상의 지리적 지역에서 운영되고 있으며, 수만 명의 고객이 Cosmos 데이터베이스를 2~50개 이상의 지역에서 전역적으로 복제하도록 구성했습니다.</p>
+
+
+  <p>고객은 Cosmos 데이터베이스를 사용하여 여러 지역에 걸쳐 있었지만, 지금까지는 읽기를 위해 다른 모든 지역과 쓰기(및 읽기)를 위한 지역 중 하나만 지정할 수 있었습니다. 몇 년 동안 Microsofts&rsquo; 내부 워크로드를 실행하여 서비스를 전투 테스트한 후, 오늘 Cosmos 데이터베이스를 여러 쓰기 지역(즉&ldquo;, 다중 마스터&rdquo; 구성)으로 구성할 수 있게 되어 기쁩니다. 이 기능은 다음과 같은 이점을 제공합니다.</p>
+
+
+  <ul>
+   <li>전 세계 &ndash; <strong>쓰기 및 읽기 가용성 99.999%</strong> 99.999% 읽기 가용성 외에도 Cosmos DB는 이제 금융 SLA에서 지원되는 99.999% 쓰기 가용성을 제공합니다.</li>
+   <li>전 세계의 - <strong>탄력적 쓰기 및 읽기 확장성</strong> 이제 읽기 외에도 전 세계에서 쓰기 크기를 탄력적으로 조정할 수 있습니다. 애플리케이션이 Cosmos DB 컨테이너(또는 데이터베이스)에서 구성하는 처리량은 금융 SLA를 통해 모든 지역에 전달되도록 보장됩니다.</li>
+   <li><strong>전 세계 99번째 백분위수에서 한 자리 밀리초의 쓰기 및 읽기 대기 시간</strong> - 보장된 한 자리 밀리초 읽기 대기 시간 외에도 Cosmos DB는 이제 금융 SLA를 통해 전 세계 어디서나 99번째 백분위수에서 10ms 쓰기 대기 시간을 제공합니다&lt;.</li>
+   <li><strong>잘 정의된 여러 일관성 모델</strong> &ndash; Cosmos DB&rsquo; 복제 프로토콜은 5가지 잘 정의되고 실용적이며 직관적인 일관성 모델을 제공하여 올바른 전역 분산 애플리케이션을 쉽게 빌드하도록 설계되었습니다. <a href="https://github.com/Azure/azure-cosmos-tla">또한 일관성 모델에 대한 높은 수준의 TLA+ 사양을 사용할 수 있도록</a> 했습니다.</li>
+   <li><strong>무제한 엔드포인트 확장성</strong> &ndash; Cosmos DB&rsquo; 복제 프로토콜은 100개의 데이터 센터와 수십억 개의 에지 디바이스에 걸쳐 균일하게 확장되도록 설계되었습니다. 아키텍처는 Azure 지역 또는 에지 디바이스를 모두 Cosmos DB 복제본을 호스팅할 수 있고 다중 마스터 복제 프로토콜에서 true 피어로 참여할 수 있는 것과 동일하게 &ndash; 처리합니다.</li>
+   <li><strong>다중 마스터 MongoDB, Cassandra, SQL, Gremlin 및 Tables</strong> - 다중 모델 및 다중 API 데이터베이스인 Cosmos DB는 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-introduction">SQL(Cosmos DB)</a>, <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/cassandra-introduction">CQL(Cassandra</a>), <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-introduction">MongoDB</a>, <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/table-introduction">Table Storage</a> 및 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/graph-introduction">Gremlin</a> API에 대한 네이티브 유선 프로토콜 호환 지원을 제공합니다. Cosmos DB를 사용하면 MongoDB 및 Cassandra 애플리케이션에 대한 완전 관리형 보안, 규정 준수, 비용 효율적인 서버리스 데이터베이스 서비스를 사용할 수 있으며, 업계 최고의 포괄적인 SLA가 다시 지원됩니다. 위의 나열된 기능은 Cassandra, MongoDB, Gremlin, Table Storage 및 SQL 포함하여 DB 지원 Cosmos 모든 API에 사용할 수 있습니다. 예를 들어 이제 다중 마스터, 전역적으로 분산된 MongoDB 또는 Apache Gremlin 액세스 가능한 그래프 데이터베이스를 Cosmos DB로 구동할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>수십 년간의 연구 + 엄격한 엔지니어링 = Cosmos DB</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e17a86b0-c899-4637-ba8b-b3f1968121b8.png"><img alt="image" border="0" height="201" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92f4d489-b015-4f89-abd8-13fc5d46fcf3.png" style="border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="imageLast" width="302"></a> year, Cosmos DB의 출시에, 우리는 Cosmos DB의 기술적 기초를 설명하는 튜링 상 수상자 레슬리 램포트 박사와의 비디오 인터뷰와 함께 Cosmos DB의 <a href="https://azure.microsoft.com/en-us/blog/a-technical-overview-of-azure-cosmos-db/">기술 개요</a>를 썼다. 이 전통을 이어가는 <a href="https://aka.ms/LeslieMM">레슬리의 새로운 비디오 인터뷰는</a> Cosmos DB&rsquo; 아키텍처의 진화, 새로운 복제 프로토콜의 디자인에서 TLA +의 적용, 그리고 Cosmos DB가 Paxos에서 세계적 수준의 엔지니어링으로 전염병 프로토콜에 수십 년 동안 분산 시스템 연구를 결혼하여 진정한 우주 규모 앱을 구축 할 수있는 방법을 설명합니다.</p>
+
+
+  <p>이 블로그 게시물에서는 Cosmos 데이터베이스에 여러 쓰기 지역을 사용하도록 설정하는 새로운 기능을 포함하여 Cosmos DB&rsquo; 글로벌 배포 아키텍처에 대해 좀 더 자세히 설명합니다. 다음 섹션에서는 전 세계의 쓰기 크기를 조정하기 위한 엔트로피 방지 기반 디자인과 함께 Cosmos DB&rsquo; 글로벌 배포를 위한 시스템 모델에 대해 설명합니다.</p>
+
+
+  <h2>전역 배포를 위한 시스템 모델</h2>
+
+
+  <p>Cosmos DB 서비스는 Azure의 기본 서비스이므로 퍼블릭, 소버린, DoD 및 정부 클라우드를 포함하여 전 세계 모든 Azure 지역에 배포됩니다. 데이터 센터 내에서는 각각 전용 로컬 스토리지가 있는 대규모 &ldquo;컴퓨터 스탬프에 Cosmos DB 서비스를 배포하고 관리합니다&rdquo;. 데이터 센터 내에서 Cosmos DB는 여러 클러스터에 배포되며, 각 클러스터는 여러 세대의 하드웨어를 실행할 수 있습니다. 클러스터 내 머신은 일반적으로 10-20개 장애 도메인에 분산되어 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2e1e0416-fd72-49d0-8b10-b3a3b21145ec.png"><img alt="image" border="0" height="265" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1f298337-e4aa-4b6f-8876-b52703b58a44.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="600"></a></p>
+
+
+  <p style="text-align: center;"><strong>그림 1: 시스템 토폴로지</strong></p>
+
+
+  <p>Cosmos DB의 글로벌 배포는 턴키입니다. 언제든지 몇 번의 단추 클릭(또는 단일 API 호출을 사용하여 프로그래밍 방식으로)을 통해 고객은 Cosmos <strong>데이터베이스</strong>와 연결할 지리적 지역을 원하는 수만큼 추가(또는 제거)할 수 있습니다. Cosmos 데이터베이스는 Cosmos 컨테이너 집합으로 구성<strong>됩니다</strong>. Cosmos DB에서 컨테이너는 배포 및 확장성의 논리 단위 역할을 합니다. 만드는 컬렉션, 테이블 및 그래프는 (내부적으로) Cosmos 컨테이너로 표시됩니다. 컨테이너는 완벽히 스키마에 구애받지 않으며 쿼리에 대한 범위를 제공합니다. Cosmos 컨테이너의 모든 데이터는 수집 시 자동으로 인덱싱됩니다. 따라서 사용자는 특히 전역적으로 분산된 설정에서 스키마 또는 인덱스 관리의 해시를 처리하지 않고도 데이터를 쿼리할 수 있습니다.</p>
+
+
+  <p>그림 2에서 볼 수 있듯이 컨테이너 내의 데이터는 다음 두 차원을 따라 분산됩니다.</p>
+
+
+  <ul>
+   <li>지정된 지역 내에서 컨테이너 내의 데이터는 기본 리소스 파티션(로컬 배포)에 의해 제공되고 투명하게 관리되는 파티션 키를 사용하여 분산됩니다.</li>
+   <li>또한 각 리소스 파티션은 지리적 영역에 복제됩니다(글로벌 배포).</li>
+  </ul>
+
+
+  <p>Cosmos DB를 사용하는 앱이 Cosmos 컨테이너에서 처리량을 탄력적으로 조정하거나 더 많은 스토리지를 사용하는 경우 Cosmos DB는 모든 지역에서 파티션 관리(예: 분할, 복제, 삭제 등)를 투명하게 수행합니다. 규모, 배포 또는 실패와 관계없이 Cosmos DB는 컨테이너 내 데이터의 단일 시스템 이미지를 계속 제공하며, 이는 모든 지역에 전역적으로 분산됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0c3180b-6f58-4500-89c5-950fde694820.png"><img alt="image" border="0" height="412" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/78029eca-fe3b-496b-b433-66a25f79ad59.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="462"></a></p>
+
+
+  <p><strong>그림 2: 전 세계 여러 지역에 걸쳐 있는 두 차원에 걸쳐 리소스 파티션을 배포합니다.</strong></p>
+
+
+  <p>실제로 <strong>리소스 파티션</strong> 은 복제본 <strong>집합</strong>이라고 하는 복제본 그룹에 의해 구현됩니다. 각 컴퓨터는 고정된 프로세스 집합 내의 다양한 리소스 파티션에 해당하는 수백 개의 복제본을 호스트합니다(그림 1 참조). 리소스 파티션에 해당하는 복제본은 클러스터 내의 컴퓨터와 지역 내의 데이터 센터에 동적으로 배치되고 부하가 분산됩니다.</p>
+
+
+  <p>복제본은 Cosmos DB 테넌트에 고유하게 속합니다. 각 복제본은 리소스와 연결된 인덱스를 관리하는 Cosmos DB&rsquo; <a href="https://www.vldb.org/pvldb/vol8/p1668-shukla.pdf">데이터베이스 엔진</a>의 인스턴스를 호스팅합니다. Cosmos DB 데이터베이스 엔진은 ARS(atom-record-sequence) 기반 형식 <sup>system1</sup>에서 작동합니다.&nbsp; 엔진은 스키마의 개념에 완전히 독립적이며 레코드의 구조와 인스턴스 값 사이의 경계를 흐리게 합니다. Cosmos DB는 수집 시 모든 항목을 효율적인 방법으로 자동으로 인덱싱하여 사용자가 스키마나 인덱스 관리를 처리하지 않고도 전역적으로 분산된 데이터를 쿼리할 수 있도록 함으로써 완전한 스키마 불가지론성을 실현합니다. Cosmos DB 데이터베이스 엔진은 각각 트랜잭션 스토리지 및 데이터 인덱싱을 담당하는 여러 조정 기본 형식, 언어 런타임, 쿼리 프로세서, 스토리지 및 인덱싱 하위 시스템의 구현을 포함한 구성 요소로 구성됩니다. 내구성과 고가용성을 제공하기 위해 데이터베이스 엔진은 해당 데이터 및 SSD에 대한 인덱스를 유지하고 복제본 집합 내에서 각각 데이터베이스 엔진 인스턴스 간에 복제합니다. 더 큰 테넌트는 처리량 및 스토리지의 더 높은 규모에 해당하며 더 크거나 더 많은 복제본 또는 둘 다(또는 그 반대의 경우도 마찬가지)가 있습니다. 시스템의 모든 구성 요소는 스레드가 차단되지 않고 완전히 비동 &ndash; 기적이며, 각 스레드는 불필요한 스레드 스위치를 발생시키지 않고 수명이 짧은 작업을 수행합니다. 속도 제한 및 역 압력은 승인 제어에서 모든 I/O 경로까지 전체 스택에 걸쳐 연결됩니다. 데이터베이스 엔진은 세분화된 동시성을 활용하고, 적은 양의 시스템 리소스 내에서 운영하는 동시에 높은 처리량을 제공하도록 설계되었습니다.</p>
+
+
+  <p>Cosmos DB&rsquo; 전역 배포는 두 가지 주요 추상화 &ndash; <strong>복제본 집합</strong>과 <strong>파티션 집합</strong>을 사용합니다. 복제본 집합은 조정을 위한 모듈식 레고 블록이며, 파티션 집합은 지리적으로 분산된 하나 이상의 리소스 파티션에 대한 동적 오버레이입니다. 글로벌 배포의 작동 방식을 이해하려면 이러한 두 가지 주요 추상화에 대해 이해해야 합니다.</p>
+
+
+  <h2>복제본 세트 - 레고 조정 블록</h2>
+
+
+  <p>리소스 파티션은 자체 관리되고 여러 장애 도메인에 걸쳐 동적으로 부하가 분산된 복제본 그룹으로 구체화됩니다(복제본 세트라고 함). 이 집합은 리소스 파티션 내의 데이터를 고가용성, 내구성 및 강력한 일관성으로 만들기 위해 복제된 상태 머신 프로토콜을 집합적으로 구현합니다. 복제본 집합 멤버 자격 N은 &ndash; 실패, 관리 작업 및 실패한 복제본이 다시 생성/복구되는 시간에 따라 <sub>NMin</sub> 과 <sub>NMax</sub> 간에 변동을 유지합니다. 멤버 자격 변경에 따라 복제본 프로토콜도 읽기 및 쓰기 쿼럼의 크기를 재구성합니다. 지정된 리소스 파티션에 할당된 처리량을 균일하게 분산하기 위해 두 가지 아이디어를 사용합니다. 첫째, 리더에 대한 쓰기 요청을 처리하는 비용이 팔로워에 업데이트를 적용하는 비용보다 높습니다. 이에 따라, 리더는 팔로워에 비해 더 많은 시스템 리소스를 예산으로 충당합니다. 둘째, 가급적 지정된 일관성 수준에 대한 읽기 쿼럼은 팔로워 복제본으로만 구성됩니다. 절대적으로 필요한 경우가 아니면 읽기를 제공하기 위해 리더에게 연락하지 않습니다. DB에서 지원하는 5가지 일관성 모델에 대한 쿼럼 기반 시스템의 <a href="https://www.cs.utexas.edu/~lorenzo/corsi/cs395t/04S/notes/naor98load.pdf">부하 및 용량</a> 관계에 대해 수행된 연구에서 다양한 아이디어를 Cosmos.</p>
+
+
+  <h2>파티션 집합 &ndash; 동적 지리적으로 분산된 오버레이</h2>
+
+
+  <p>Cosmos 데이터베이스 지역으로 구성된 각 지역의 리소스 파티션 그룹은 구성된 모든 영역에 걸쳐 복제된 동일한 키 집합을 관리하도록 구성됩니다. 이러한 더 높은 조정 기본 형식을 파티션 집합이라고 하며, 지정된 키 집합을 관리하는 리소스 파티션의 지리적으로 분산된 동적 오버레이입니다. 지정된 리소스 파티션(즉, 복제본 집합)의 범위는 클러스터 내에서 지정되지만 파티션 집합은 클러스터, 데이터 센터 및 지리적 지역에 걸쳐 있습니다(그림 2 및 그림 3).</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/31111e2b-0d09-4da6-8340-230abbf1812d.png"><img alt="image" border="0" height="344" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d94db21b-35e7-40b1-a7cf-cbd84dad1fba.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="480"></a></p>
+
+
+  <p align="center"><strong>그림 3: 파티션 집합은 리소스 파티션의 동적 오버레이입니다.</strong></p>
+
+
+  <p>파티션 집합은 동일한 키 집합을 소유하는 여러 복제본 집합&rdquo;으로 구성된 지리적으로 분산된 &ldquo;슈퍼 복제본 집합으로 생각할 수 있습니다. 복제본 집합과 마찬가지로 파티션 집합 멤버 자격은 지정된 파티션 집합&rsquo;에서 새 파티션을 추가/제거하기 위한 암시적 리소스 파티션 관리 작업에 따라 동적 &ndash; 으로 변동됩니다(예: 컨테이너에서 처리량을 확장할 때, Cosmos 데이터베이스에 지역을 추가/제거하는 경우, 오류가 발생하는 경우 등). 파티션 집합의 각 파티션이 자체 복제본 집합 내에서 파티션 집합 멤버 자격을 관리하도록 함으로써 멤버 자격은 완전히 탈중앙화되고 고가용성입니다. 파티션 집합을 재구성하는 동안 리소스 파티션 간 오버레이의 토폴로지도 설정됩니다. 토폴로지는 원본과 대상 리소스 파티션 간의 일관성 수준, 지리적 거리 및 사용 가능한 네트워크 대역폭에 따라 동적으로 선택됩니다.</p>
+
+
+  <p>서비스를 사용하면 Cosmos 데이터베이스를 단일 쓰기 지역 또는 다중 쓰기 지역으로 구성할 수 있으며, 선택에 따라 파티션 집합은 단 하나의 지역 또는 모든 지역에서 쓰기를 허용하도록 구성됩니다. 시스템은 쓰기를 수락하는 리소스 파티션의 복제본 집합 복제본 내에서 한 수준 중첩된 2단계 합의 프로토콜 &ndash; 을 사용하고, 다른 수준은 파티션 집합의 수준에서 작동하여 파티션 집합 내의 모든 커밋된 쓰기에 대한 완전한 순서를 보장합니다. 이 다층적이고 중첩된 일치는 고가용성을 위한 엄격한 SLA를 구현하고, 동시에 Cosmos DB가 고객에게 제공하는 일관성 모델을 구현하는 데 매우 중요합니다.</p>
+
+
+  <h2>유연한 충돌 해결을 사용하는 엔트로피 방지</h2>
+
+
+  <p>업데이트 전파, 충돌 해결 및 인과 관계 추적을 위한 설계는 전염병 알고리즘 및 <a href="https://zoo.cs.yale.edu/classes/cs422/2013/bib/terry95managing.pdf">Bayou 시스템에</a> 대한 이전 작업에서 영감을 줍니다. 아이디어의 커널은 살아남았고 Cosmos DB&rsquo; 시스템 디자인을 전달하기 위한 편리한 참조 프레임을 제공하지만, Cosmos DB 시스템에 적용하면서 상당한 변화를 겪었습니다. 이전 시스템은 리소스 거버넌스나 Cosmos DB가 작동해야 하는 규모나 기능(예: 제한된 부실 일관성)과 Cosmos DB가 고객에게 제공하는 엄격하고 포괄적인 SLA를 제공하도록 설계되지 않았기 때문에 필요했습니다.</p>
+
+
+  <p>파티션 집합은 여러 지역에 분산되고 Cosmos DB&rsquo;(다중 마스터) 복제 프로토콜을 따라 지정된 파티션 집합으로 구성된 리소스 파티션 간에 데이터를 복제합니다. 각 리소스 파티션(파티션 집합에서)은 쓰기를 허용하며 일반적으로 해당 지역에 있는 클라이언트에 읽기를 제공합니다. 지역 내의 리소스 파티션에서 수락된 쓰기는 지속력 있게 커밋되며 클라이언트에서 승인되기 전에 리소스 파티션 내에서 높은 가용성을 제공합니다. 이러한 쓰기는 임시 쓰기이며, 엔트로피 방지 채널을 사용하여 파티션 집합 내의 다른 리소스 파티션으로 전파됩니다. 클라이언트는 요청 헤더를 전달하여 임시 쓰기나 커밋된 쓰기를 요청할 수 있습니다. 엔트로피 방지 전파(전파 빈도 포함)는 파티션 집합의 토폴로지, 리소스 파티션의 지역 근접성 및 구성된 일관성 수준에 따라 동적입니다. 파티션 집합 내에서 Cosmos DB는 동적으로 선택된 중재자 파티션과 함께 기본 커밋 체계를 따릅니다. 중재자 선택은 오버레이의 토폴로지 기반 파티션 집합 재구성의 필수적인 부분입니다. 커밋된 쓰기(다중 행/일괄 처리 업데이트 포함)는 완전히 정렬되도록 보장됩니다.</p>
+
+
+  <p>인과 관계 추적 및 버전 벡터에 대해 인코딩된 벡터 클록(각각 복제본 집합 및 파티션 집합의 각 합의 수준에 해당하는 지역 ID 및 논리 클록 포함)을 사용하여 업데이트 충돌을 감지하고 해결합니다. 토폴로지 및 피어 선택 알고리즘은 버전 벡터의 고정 및 최소 스토리지 및 최소한의 네트워크 오버헤드를 보장하도록 설계되었습니다. 알고리즘은 엄격한 수렴 속성을 보장합니다.<br>
+
+  여러 쓰기 지역으로 구성된 Cosmos 데이터베이스의 경우, 시스템은 다음을 포함하여 개발자가 선택할 수 있는 유연하며 다양한 자동 충돌 해결 정책을 제공합니다.</p>
+
+
+  <ol>
+   <li><strong>LWW(Last-Write-Wins)</strong> 는 기본적으로 시스템 정의 타임스탬프 속성(시간 동기화 클록 프로토콜 기반)을 사용합니다. 또한 Cosmos DB를 사용하면 충돌 해결에 사용할 다른 사용자 지정 숫자 속성을 지정할 수 있습니다.</li>
+   <li>애플리케이션에서 정의한 충돌 의미 체계 조정을 위해 설계된 애플리케이션 정의 <strong>사용자 지정 충돌 해결 정책(병합 절차를 통해 표현됨)</strong> . 이러한 프로시저는 서버 쪽의 데이터베이스 트랜잭션에서 쓰기-쓰기 충돌이 검색될 때 호출됩니다. 시스템은 커밋 프로토콜의 일부로 병합 프로시저의 실행에 대해 정확히 한 번의 보장을 제공합니다. 사용할 수 있는 샘플이 몇 개 있습니다.</li>
+   <li>데이터베이스 엔진의 핵심(ARS) 형식 시스템 내에서 기본적으로 <strong>충돌 없는 CRDT(복제된 데이터 형식)</strong>입니다. 이렇게 하면 트랜잭션적으로나 데이터베이스 엔진 내에서 직접 약정 프로토콜의 일부로 충돌을 자동으로 해결할 수 있습니다.</li>
+  </ol>
+
+
+  <h2>정확하게 정의된 5가지 일관성 모델</h2>
+
+
+  <p>단일 또는 여러 쓰기 지역을 사용하여 Cosmos 데이터베이스를 구성하는 경우 서비스에서 제공하는 5가지 잘 정의된 일관성 모델을 사용할 수 있습니다. 다중 쓰기 지역을 사용하도록 설정하기 위해 새로 추가된 지원에서는 다음과 같이 일관성 수준에서 몇 가지 주목할 만한 측면이 있습니다.</p>
+
+
+  <p>이전과 마찬가지로<strong> 제한된 부실 일관성은</strong> 모든 읽기가 모든 지역의 최신 쓰기에서 k 접두사 또는 t 초 내에 있음을 보장합니다. 또한, 제한된 부실 지속성은 단조 및 일관된 접두사 보증을 제공합니다. 엔트로피 방지 프로토콜은 속도 제한 방식으로 작동하며, 접두사가 누적되지 않고 쓰기에서 역 압력을 적용할 필요가 없음을 보장합니다. 이전과 마찬가지로 <strong>세션 일관성</strong> 은 전 세계적으로 단조 읽기, 단조 쓰기, RYOW, write-follows-read 및 일관된 접두사 보장을 보장합니다. <strong>강력한 일관성</strong>으로 구성된 데이터베이스의 경우 시스템은 각 파티션 집합 내에서 리더를 지정하여 단일 쓰기 지역으로 다시 전환합니다.</p>
+
+
+  <p>여기서는 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels">5가지 일관성 모델의</a> 의미 체계를 설명하고 <a href="https://github.com/Azure/azure-cosmos-tla">높은 수준의 TLA+ 사양</a>을 사용하여 수학적으로 설명합니다.</p>
+
+
+  <h2>결론</h2>
+
+
+  <p>전역적으로 분산된 데이터베이스인 Cosmos DB는 데이터를 모든 수의 Azure 지역에 투명하게 복제합니다. 새로운 완전히 분산된 다중 마스터 복제 아키텍처를 사용하면 Cosmos 데이터베이스와 연결된 모든 지역에서 쓰기 및 읽기를 탄력적으로 확장할 수 있습니다. 전 세계 어디에서나 Cosmos 데이터베이스의 로컬 복제본에 기록하여 전 세계적으로 쓰기 크기를 탄력적으로 조정하는 기능은 지난 몇 년 동안 작동해 왔습니다. 이제 이 기능을 모든 사용자가 일반적으로 사용할 수 있게 되어 매우 기쁩니다!</p>
+
+
+  <h2>감사의 말</h2>
+
+
+  <p>Azure Cosmos DB는 2010년 말 Project 피렌체&rdquo;로 &ldquo;시작한 후 현재의 형태로 확장되고 꽃을 피웠습니다. 수년 동안 서비스를 광범위하게 사용하여 Azure Cosmos DB를 견고하게 만든 Microsoft 내의 모든 팀에 감사드립니다. 우리는 컴퓨팅, 네트워킹 및 Service Fabric 포함하여 Azure Cosmos DB가 구축된 많은 구성 요소 기술이 거인 &ndash; 의 어깨에 서 있습니다&ndash;. 우리에게 영감을 주고 분산 시스템을 설계하는 우리의 접근 방식에 영향을 준 레슬리 램포트 박사에게 감사드립니다. 업무에 중요한 앱을 빌드하기 위해 Cosmos DB에 의존하고 서비스의 한계를 뛰어넘고 항상 최고를 요구해 주신 고객에게 매우 감사드립니다. 마지막하지만 적어도, 그들의 깊은 헌신과 관심에 대한 모든 놀라운 코스모나우트 덕분에.</p>
+
+
+  <hr>
+
+  <ol>
+   <li><i>JSON, BSON 및 CQL과 같은 문법은 ARS 형식 시스템의 엄격한 하위 집합입니다.</i></li>
+  </ol>

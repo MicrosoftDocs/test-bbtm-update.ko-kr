@@ -1,0 +1,111 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d2b57cb8097f539d78e1ba484af583de6cdc1de3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905998"
+Slug: detecting-script-based-attacks-on-linux
+Title: Linux에서 스크립트 기반 공격 검색
+Summary: 지난 달, Linux에 대한 Azure Security Center 검색의 확장을 발표했습니다. 이 게시물은 기존 Windows 검색에 Linux 아날로그가 자주 있는 방법을 보여 주는 것을 목표로 합니다.
+Content: >-
+  <p>지난 달 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-helps-detect-attacks-against-your-linux-machines/">Linux용 Azure Security Centers&rsquo; 검색</a>의 확장을 발표했습니다. 이 게시물은 기존 Windows 검색에 Linux 아날로그가 자주 있는 방법을 보여 주는 것을 목표로 합니다. 이에 대한 구체적인 예는 명령줄의 인코딩 또는 난독 처리입니다. 공격자가 명령을 인코딩하려는 이유 중 일부에는 스크립트에서 명령을 캡슐화할 때 따옴표/이스케이프 문제를 최소화하고 호스트 기반 침입 검색에서 숨기는 기본 수단이 포함됩니다. 이러한 기술은 디스크에 파일을 삭제할 필요가 없도록 방지하여 공격자가 기존 바이러스 백신 제품에 의해 탐지될 위험을 줄일 수 있는 추가적인 이점을 제공합니다.</p>
+
+
+  <h2>Windows 대한 인코딩된 PowerShell 공격</h2>
+
+
+  <p>Windows 환경에 대한 공격에 사용되는 이러한 동작의 많은 예가 있습니다. 이전 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-unveils-suspicious-powershell-attack/">블로그 게시물</a> 에서는 PowerShell 명령을 base64로 인코딩하는 기술 중 하나를 강조 표시합니다. PowerShell은 실제로 이 작업을 놀라울 정도로 쉽게 만들어 양식의 명령을 허용합니다.</p>
+
+
+  <pre>
+
+  powershell.exe -EncodedCommand dwByAGkAdABlAC0AbwB1AHQAcAB1AHQAIABFAG4AYwBvAGQAZQBkACAAUABvAHcAZQByAFMAaABlAGwAbAAgAHMAYwByAGkAcAB0AA==</pre>
+
+
+  <p>유일한 실제 걸림돌은 디코딩된 명령이 UTF-16이어야 한다는 요구 사항입니다(따라서 결과 base64에서 A&rsquo;의 &lsquo;보급).</p>
+
+
+  <h2>Linux에서 인코딩된 셸 공격</h2>
+
+
+  <p>Windows 시스템에 대한 공격과 마찬가지로 Linux 시스템에서 명령을 인코딩하는 것과 동일한 동기가 있습니다. 즉, 특수 문자와 캡슐화 문제를 방지하고 nave&iuml; 안티 바이러스 또는 로그 분석을 회피하기 위해.</p>
+
+
+  <p>Linux에는 PowerShells&rsquo; -EncodedCommand 매개 변수에 해당하는 네이티브가 없지만 거의 항상 <em>coreutils</em> 패키지의 <em>base64</em>와 같은 명령(<em>cp</em>, <em>ls</em>, <em>mv</em>, <em>rm</em> 등과 같은 중요한 명령을 제공하는 패키지)으로 패키지됩니다. 포함된 시스템에서 이러한 동일한 유틸리티는 <em>종종 BusyBox</em> 또는 유사한 유틸리티를 포함하여 제공됩니다. 이렇게 하면 이러한 호출의 출력을 선택한 셸로 리디렉션하는 것처럼 인코딩된 명령을 간단하게 실행할 수 있습니다. 간단한 Bash 예제는 다음과 같습니다.</p>
+
+
+  <pre>
+
+  echo ZWNobyAiT2JmdXNjYXRlZCBiYXNoIHNjcmlwdCI= | base64 -d | bash</pre>
+
+
+  <p>이 시점에서 주목할 만한 점은 특히 Linux에서 base64는 마을에서 유일한 게임이 아니며 유비쿼터스 16 진수 인코딩일 가능성이 높습니다.</p>
+
+
+  <pre>
+
+  echo 6563686f20224f626675736361746564206261736820736372697074220a | xxd -r -p | bash</pre>
+
+
+  <p>또는 더 자세한 백슬래시가 8진수 또는 16진수로 이스케이프되었습니다.</p>
+
+
+  <pre>
+
+  printf &#39;\145\143\150\157\040\042\117\142\146\165\163\143\141\164\145\144\040\142\141\163\150\040\163\143\162\151\160\164\042\012&#39; | bash</pre>
+
+
+  <h2>Linux에서 인코딩된 스크립트 공격</h2>
+
+
+  <p>이러한 전용 디코더 외에도 Python/Perl/Ruby와 같은 대부분의 스크립팅 언어에는 자체 기본 제공 base64 라이브러리가 함께 제공되므로 이러한 스크립트의 난독 처리가 매우 쉽습니다. 간단한 Perl 예제는 다음과 같습니다.</p>
+
+
+  <pre>
+
+  exec(decode_base64(&quot;SW5zZXJ0IFBlcmwgc2NyaXB0IGhlcmUuLi4=&quot;))</pre>
+
+
+  <p>이 기술의 한 가지 사소한 단점은 관련 라이브러리를 먼저 가져오기 위한 일반적인 요구 사항입니다(이 경우 필요한 &ldquo;MIME::Base64&rdquo; 문 사용을 생략함).</p>
+
+
+  <h2>Linux 호스트에서 관찰된 실제 공격</h2>
+
+
+  <p>다음 예제에서는 Python에서 이 방법을 실제로 사용하는 방법을 보여 줍니다. 이 이벤트에서는 SSH 암호의 무차별 암호 대입이 성공한 후 동작이 관찰되었습니다.</p>
+
+
+  <p>이 활동은 성공적인 무차별 암호 대입부터 시작하여 Azure Security Center의 여러 분석에서 선택되었습니다. 다음 스크린샷은 이전 섹션에서 설명한 형식의 의심스러운 인코딩된 Python 검색을 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0ea20d9-e3b8-4027-921f-765eb473acfc.png"><img alt="Azure Security Center detection" border="0" height="921" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1db8120f-c115-40b8-ab62-ea892020018b.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="Azure Security Center 검색" width="1202"></a><br>
+
+  &nbsp;<br>
+
+  경고에 강조 표시된 명령줄에서 캡슐화된 base64를 디코딩하면 다음이 제공됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2760706a-7fc8-41e3-99ef-0308f5d5dd89.png"><img alt="Python botnet downloader" border="0" height="243" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/448dbd05-9caf-4911-abcd-31a3e5bba192.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="Python 봇넷 다운로더" width="940"></a><br>
+
+  &nbsp;<br>
+
+  여기서 볼 수 있듯이 <em>urlopen</em> 및 추가 <em>base64decodeexec</em> /  호출은 더 많은 base64로 인코딩된 Python을 다운로드하고 실행합니다.<em></em> 외부 인코딩 아래에 있는 이 동작은 강조 표시된 경고가 감지한 동작입니다. 다운로드할 스크립트는 이 전체 Python 봇넷의 기본 컨트롤러 코드입니다.</p>
+
+
+  <p>컨트롤러 스크립트의 후속 분석(추가 <em>urlopen</em> 호출을 통해 수신하는 구성 포함)은 이 봇넷의 주요 목표는 Monero 암호화 통화 광부의 다운로드 및 실행이며, 이진 명명 <em>된 wipfs</em> 로 저장됩니다(이상하게도 Linux 파일 시스템 서명을 초기화하는 데 거의 사용되지 않는 도구의 이름을 가정함). 마지막으로, 지속성은 6시간 단위 cron 작업을 추가하여 또 다른 base64로 인코딩된 Python 스크립트를 실행하며, 이번에는 <em>httpsd</em> 로 저장됩니다(아마도 Apaches&rsquo; <em>httpd</em>의 허수 SSL 변형처럼 보이도록 선택됨). 컨트롤러 코드의 다음 코드 조각은 이 후자의 작업을 강조 표시합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e13aee25-1dd1-4c8c-a5c8-fa6a14a623ba.png"><img alt="Python botnet controller" border="0" height="693" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d337d8be-a986-4430-8d58-8b0de0134cdc.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="Python 봇넷 컨트롤러" width="940"></a></p>
+
+
+  <h2>Linux VM 보호</h2>
+
+
+  <p>이 게시물에 언급된 대부분의 공격 유형은 SSH 암호의 무차별 암호로 시작됩니다. 개별 머신에 대한 액세스 요구 사항에 따라 이 기술을 완화하는 방법에는 여러 가지가 있습니다. 가장 간단한 솔루션은 가능한 경우 <a href="https://docs.microsoft.com/en-us/azure/security/azure-security-network-security-best-practices">네트워크 모범 사례 조언</a>에 언급된 대로 SSH를 사용하지 않도록 설정하거나 특정 네트워크에 대한 액세스를 잠그는 것입니다. 인터넷에서 특정 머신에 대한 임시 연결이 필요한 경우 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-just-in-time">Azure Security Centers&rsquo; JIT 가상 머신 액세스를</a> 사용하도록 설정하면 제한된 기간 동안 주문형 액세스 권한을 부여할 수 있습니다. 마지막으로, 대부분의 SSH 지침과 마찬가지로 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed">공개 키 인증을 사용하도록 설정</a> 하여 암호 로그인을 사용하지 않도록 설정하는 것은 거의 항상 합리적인 예방 조치입니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>PowerShell 분석은 언뜻 보기에 완전히 Windows 포커스가 있는 것처럼 보일 수 있지만 Linux 시스템을 대상으로 하는 공격자는 비슷한 행동을 보입니다. 근본적으로, 이것은 종종 두 플랫폼을 공격하는 동일한 사람들이기 때문에 놀라운 일이 아닙니다. 또한 종종 비슷하게 이식 가능할 수 있다는 것을 감지하는 방법을 기억하는 것이 중요합니다. 위의 예제와 같이 Python과 같은 플랫폼에 구애받지 않는 스크립팅 언어를 사용하여 공격자가 Windows Linux에서 정확히 동일한 코드를 사용하여 후속 검색을 동일하게 만들 수 있으므로 이 이식성은 실제로 한 단계 더 발전할 수 있습니다.</p>

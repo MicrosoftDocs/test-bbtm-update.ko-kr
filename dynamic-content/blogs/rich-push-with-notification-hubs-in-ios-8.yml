@@ -1,0 +1,24 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 46281d161724a86de161dabe58a2574e0411c18c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912459"
+Slug: rich-push-with-notification-hubs-in-ios-8
+Title: iOS 8에서 Notification Hubs를 사용하여 리치 푸시
+Summary: iOS8 &amp; 7에서 Notification Hubs를 사용하여 이미지로 풍부한 알림을 푸시하는 방법을 알아봅니다.
+Content: >-
+  즉시 풍부한 콘텐츠로 사용자를 참여시키기 위해 애플리케이션은 일반 텍스트 이상으로 알림을 푸시하는 경우가 많습니다. 이러한 알림에는 URL, 이미지, 소리 등이 포함될 수 있습니다. Azure Notification Hubs 및 새로운 iOS8 푸시 알림 사용자 지정 작업을 통해 개발자는 풍부한 푸시를 사용하여 매력적인 사용자 환경을 쉽게 제공할 수 있습니다.
+
+
+  <a href="https://azure.microsoft.com/en-us/documentation/articles/notification-hubs-aspnet-backend-ios-rich-push/">Azure Notification Hubs 리치 푸시</a> 자습서에서는 풍부한 페이로드(이미지)를 저장하고 보내는 ASP.NET 백 엔드와 사용자가 탭한 후 페이로드를 검색하고 표시하는 iOS 앱을 통해 자세히 알아봅니다. 일반 푸시 알림과 달리 백 엔드는 먼저 자동 알림을 사용하여 풍부한 콘텐츠 ID를 사용자의 디바이스로 보냅니다. 네이티브 애플리케이션은 알림을 표시하기 전에 이미지를 검색합니다. 이렇게 하면 사용자가 자세히 단추를 탭할 때 콘텐츠가 즉시 표시됩니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="iOS8에서 Notification Hubs를 사용하여 리치 푸시" alt="Rich Push with Notification Hubs in iOS8" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/rich-push-ios-1.png" width="610" height="355" border="0" />
+
+
+  이 자습서를 완료하려면 <a href="https://azure.microsoft.com/en-us/documentation/articles/notification-hubs-aspnet-backend-ios-notify-users/">Azure Notification Hubs Notify Users</a> 자습서 또는 사용자 고유의 WebAPI 프로젝트 및 iOS 애플리케이션이 필요합니다.
+
+
+  질문이나 피드백이 있는 경우 설명 섹션 또는 <a href="https://github.com/Azure/azure-content/blob/master/articles/notification-hubs-aspnet-backend-ios-rich-push.md">GitHub</a> 사용하세요.

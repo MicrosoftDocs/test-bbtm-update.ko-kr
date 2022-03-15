@@ -1,0 +1,109 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a4a9eeca139ed7c787f27dea82d42e1d2b636cb1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912505"
+Slug: remote-profiling-support-in-azure-app-service
+Title: Azure App Service의 원격 프로파일링 지원
+Summary: Azure Web Apps 및 API Apps 및 WebJobs는 이제 원격으로 프로파일될 수 있습니다. Azure App Service에서 프로세스를 프로파일하고 CPU 사용량 보고서를 가져오는 세 가지 방법을 알아보세요.
+Content: >-
+  Azure Web Apps 및 API Apps 및 WebJobs는 이제 원격으로 프로파일될 수 있습니다. 프로세스가 예상보다 느리게 실행되고 있거나 HTTP 요청의 대기 시간이 정상보다 높고 프로세스의 CPU 사용량도 매우 높은 경우 프로세스를 원격으로 프로파일링하고 CPU 샘플링 호출 스택을 가져와서 프로세스 작업 및 코드 핫 경로를 분석할 수 있습니다.
+
+
+  Azure App Service에서 프로세스를 프로파일하고 CPU 사용량 보고서를 가져오는 세 가지 방법이 있습니다.
+
+  <ul>
+   <li>Visual Studio 2015 사용</li>
+   <li>Azure App Service의 사이트 제어 관리 대시보드 찾아보기(즉, kudu)</li>
+   <li>REST API 사용</li>
+  </ul>
+
+  &nbsp;
+
+
+  프로파일링은 무료 또는 공유 사이트에서 지원되지 않습니다. 프로파일을 설정하려면 사이트를 기본 또는 표준으로 업그레이드해야 합니다. 또한 CPU 프로파일링은 .Net 앱에서 가장 잘 작동합니다.
+
+  <h2>Visual Studio 2015를 사용하여 프로파일링</h2>
+
+  Visual Studio 2015를 사용하여 프로파일링하려면 아래 단계를 수행합니다.
+
+  <ul>
+   <li>서버 탐색기를 엽니다(보기 메뉴 &gt; 서버 탐색기 또는 Ctrl+W, L).</li>
+   <li>Azure, App Service, 리소스 그룹을 확장한 다음, 앱의 노드를 마우스 오른쪽 단추로 클릭하고 프로파일링 시작 제스처를 선택합니다.</li>
+   <li>원격 프로파일링 세션이 시작되고 시나리오를 실행할 수 있으며 프로세스에 대한 CPU 샘플이 Azure에서 수집됩니다.</li>
+   <li>프로파일링 중지 제스처를 사용하여 원격 프로파일링 세션을 중지하면 Azure Web App에서 수집된 프로파일링 데이터가 다운로드되어 2015년 Visual Studio 열립니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/03/vs_profiling.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Azure App Service의 원격 프로파일링 지원" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/vs_profiling_thumb.png" alt="Remote Profiling support in Azure App Service" width="610" height="473" border="0" /></a>
+
+
+  &nbsp;
+
+
+  동일한 단계를 반복하여 웹앱의 WebJobs 섹션에서 API 앱 또는 WebJob을 프로파일할 수 있습니다. 웹앱이 여러 인스턴스에서 실행되는 경우 VS는 하나를 선택하고 해당 인스턴스에서만 프로파일링 세션을 시작합니다.
+
+
+  Azure SDK 2.7에 대한 자세한 내용은 <a href="https://azure.microsoft.com/blog/2015/07/20/announcing-the-azure-sdk-2-7-for-net/">.NET용 Azure SDK 2.7 공지</a> 사항을 확인하세요.
+
+
+  Visual Studio 2015의 새로운 디버깅 및 프로파일링 기능에 대한 자세한 내용은 Visual Studio <a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/20/performance-and-diagnostic-tools-in-visual-studio-2015.aspx">2015의 성능 및 진단 도구를</a> 참조하세요.
+
+  <h2>kudu 사이트를 사용하여 프로파일링</h2>
+
+  아래 단계에 따라 kudu 사이트를 사용하여 프로파일을 만듭니다.
+
+  <ul>
+   <li>사이트의 scm 엔드포인트(&lt;yoursite.scm.azurewebsites.net&gt;)로 이동합니다.</li>
+   <li>프로세스 탐색기를 클릭합니다. 여기서는 사이트의 컨텍스트(샌드박스)에서 실행되는 모든 프로세스를 볼 수 있습니다.</li>
+   <li>프로파일링하려는 프로세스에 대한 프로파일링 시작 단추를 클릭합니다(w3wp.exe 프로세스일 가능성이 큽니다).</li>
+   <li>시나리오를 실행한 다음 프로파일링 중지 단추를 클릭합니다.</li>
+   <li>몇 초 후에 브라우저에서 파일 다운로드 옵션을 표시해야 합니다. 프로필을 저장하고 나중에 보거나 Visual Studio 2015에서 열 수 있습니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/03/kudu.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border: 0px;" title="Azure App Service의 원격 프로파일링 지원" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/kudu_thumb.png" alt="Remote Profiling support in Azure App Service" width="610" height="72" border="0" /></a>
+
+
+  &nbsp;
+
+
+  프로파일링이 큰 파일을 생성할 수 있으므로 1~2분 이상 프로파일링 세션을 실행하지 않는 것이 좋습니다. kudu 사이트에서 세션이 시작되고 15분 이상 실행되는 경우 프로파일링 세션이 종료됩니다.
+
+
+  웹앱이 여러 인스턴스에서 실행되는 경우 프로파일링하려는 인스턴스의 scm 사이트에 연결하고 해당 인스턴스에서만 프로파일링 세션을 시작할 수 있습니다.
+
+  <h2>REST 호출을 사용하여 프로파일링</h2>
+
+  kudu 엔드포인트를 사용하여 REST 호출을 사용하여 프로파일링 세션을 시작하고 중지할 수 있습니다.
+
+
+  프로파일링 세션을 시작하려면<strong> : POST /api/process/{process id}/profile/start</strong>
+
+
+  프로파일링 세션을 중지하고 프로필을 다운로드하려면 <strong>: GET /api/process/{process id}/profile/stop</strong>
+
+  <h2>프로필 보기</h2>
+
+  생성된 프로필은 Visual Studio 2015로 열 수 있는 .diagsession 파일입니다. VS 2015를 사용할 수 없는 경우 확장명의 이름을 .zip 파일로 바꾸고 ETW 이벤트를 이해하는 도구에서 zip 내에서 .etl 파일을 열 수 있습니다.
+
+
+  VS 2015에서 프로필을 열면 프로파일링 세션의 세부 사항을 쉽게 드릴다운하고 병목 상태를 찾을 수 있는 친숙한 프로파일링 페이지가 모두 표시됩니다. 다음은 장기간 높은 CPU를 겪는 애플리케이션의 샘플 프로필 세션입니다.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/03/output.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border: 0px;" title="Azure App Service의 원격 프로파일링 지원" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/output_thumb.png" alt="Remote Profiling support in Azure App Service" width="610" height="258" border="0" /></a>
+
+
+  &nbsp;
+
+
+  자세한 보고서 만들기를 클릭하여 프로파일링 세션에 대한 자세한 내용을 볼 수 있습니다.

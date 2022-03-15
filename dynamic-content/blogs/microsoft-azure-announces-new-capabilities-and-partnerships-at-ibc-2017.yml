@@ -1,0 +1,91 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5f1bfc6ad7c1d2052d6c5e8a0a0550f9ee0141c5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905830"
+Slug: microsoft-azure-announces-new-capabilities-and-partnerships-at-ibc-2017
+Title: Microsoft Azure, IBC 2017에서 새로운 기능 및 파트너십 발표
+Summary: 지난 몇 달 동안 콘텐츠 소유자와 파트너가 클라우드에서 미디어를 준비, 저장, 보호, 배포 및 수익을 창출할 수 있도록 Azure에서 혁신적인 새로운 기능을 적극적으로 추가했습니다. 우리...
+Content: >-
+  <p>지난 몇 달 동안 콘텐츠 소유자와 파트너가 클라우드에서 미디어를 준비, 저장, 보호, 배포 및 수익을 창출할 수 있도록 Azure에서 혁신적인 새로운 기능을 적극적으로 추가했습니다. 미디어 &amp; 케이블 조직이 디지털 변환 요구 사항에 Microsoft Azure 선택하는 것을 보게 되어 기쁩니다. 조직이 인프라에서 콘텐츠로 포커스를 이동하도록 돕거나, 디지털 시대 속도로 콘텐츠를 배포하거나, 신뢰할 수 있고 관련 있는 콘텐츠를 제공하든, Microsoft Azure 미디어 산업&rsquo; 요구 사항에 대한 신뢰할 수 있는 글로벌 규모의 클라우드입니다.</p>
+
+
+  <h2>Azure Media Services</h2>
+
+
+  <p>열정적인 고객 피드백에 응답하여 Azure Media Services 다음과 같은 새로운 기능을 추가했습니다.</p>
+
+
+  <ul>
+      <li><strong>미디어 산업용 AI 민주화:</strong> <a href="https://www.videoindexer.ai/" target="_blank">Video Indexer</a> 는 미디어 산업에 AI에 생명을 불어넣는 강력한 새로운 기능으로, 몇 달 전 BUILD 2017에서 비디오 콘텐츠에 특별히 적용된 Microsoft&#39;클라우드 기반 인공 지능 및 인지 기능의 고유한 통합 묶음으로 도입되었습니다. 얼굴 감지, 감정 추출, 개체 해독, 오디오 대본 등과 같은 기능을 제공합니다. 이 서비스의 <a href="https://azure.microsoft.com/en-us/blog/microsoft-video-indexer-expands-functionality-unlocking-more-video-insights/" target="_blank">향상된 기능에는</a> 음성 분석을 위한 이집트 아랍어 지원, 여러 속도로 재생 등이 포함됩니다.<br>
+      <a href="https://azure.microsoft.com/en-us/blog/general-availability-azure-media-redactor/" target="_blank">Azure Media Redactor</a> 는 단어급 인공 지능을 활용하는 강력한 클라우드 비디오 처리 서비스로, 공공 안전 및 뉴스 미디어와 같은 경우에 사용하기 위해 비디오에서 얼굴을 자동으로 감지하고 흐리게 할 수 있습니다. 이는 <a href="https://azure.microsoft.com/en-us/services/media-services/media-analytics/" target="_blank">Azure Media Analytics</a>의 기존 기능의 광범위한 집합에 새로 추가된 것입니다.</li>
+      <li><strong>HEVC 인코딩 지원:</strong> <a href="https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding" target="_blank">HEVC</a>의 향상된 인코딩 효율성은 비디오 서비스 운영자가 시청자에게 더 높은 해상도와 고품질의 비디오를 제공하는 동시에 스토리지 및 CDN 비용을 절감하는 데 도움이 됩니다. Apples&rsquo; iOS11 릴리스는 이 코덱을 지원하므로 이 코덱을 채택하는 운영자에게 주소 지정이 가능한 대규모 시장이 보장됩니다. HEVC 인코딩은 이제 Premium 인코더를 통해 Azure Media Services 일반 공급됩니다. 또한 HEVC 인코딩은 H.264 &ndash; 와 동일하게 <a href="https://azure.microsoft.com/en-us/pricing/details/media-services/" target="_blank">가격이 책정</a>되며 이는 고객의 성공에 매우 중요하다고 생각합니다.</li>
+  </ul>
+
+
+  <h2>Azure CDN</h2>
+
+
+  <p>Azure CDN NAB 이후 미디어 스트리밍 및 동적 콘텐츠에 대한 성능을 최적화하는 다음과 같은 새로운 기능이 추가되었습니다.</p>
+
+
+  <p><strong>미디어 스트리밍 최적화 배달 Azure CDN:</strong> 스트리밍 미디어 배달을 쉽게 최적화하는 기능을 추가했습니다. 한 번의 클릭으로 미디어 스트리밍 최적화가 자동으로 적용됩니다. 따라서 사용자에게 미디어 자산을 빠르고 효율적으로 전달하고 원본에 대한 요청을 최적화합니다.</p>
+
+
+  <p><strong>동적 콘텐츠 가속:</strong> 이제 Azure CDN 동적으로 제공되는 콘텐츠의 배달을 최적화하기 위해 DSA(동적 사이트 가속)를 지원합니다. DSA를 사용하도록 설정하면 경로/네트워크 최적화, 리소스 프리페치 및 스마트 이미지 압축으로 인해 동적 콘텐츠가 있는 웹 페이지의 성능이 크게 향상됩니다.</p>
+
+
+  <p><strong>Storage 및 Web Apps와의 원클릭 통합:</strong> 사용자에게 CDN 기능을 투명하게 만들려는 우리의 목표에 따라 Azure Storage의 &amp; 자산에 대해 원클릭&rdquo; 사용뿐만 아니라 Azure에서 빌드된 &ldquo;웹 사이트 &amp; 웹앱에 대한 CDN 간편하게 클릭할 수 있도록 설정했습니다.</p>
+
+
+  <h2>Azure Storage</h2>
+
+
+  <p>Azure Storage 미디어의 &amp; 요구를 해결하기 위해 2017년에 상당한 개선을 이루었습니다. 엔터테인먼트 고객. 다음 내용이 포함됩니다.</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/blog/announcing-the-public-preview-of-azure-archive-blob-storage-and-blob-level-tiering/" target="_blank">Azure Archive Blob Storage</a> - Azure Archive Blob Storage는 유연한 대기 시간 요구 사항이 있는 거의 액세스되지 않는 데이터에 대해 내구성이 뛰어나고 고가용성 보안 클라우드 스토리지를 제공하는 저렴한 비용의 수단을 미디어 조직에 제공하도록 설계되었습니다. 이는 즉각적인 높은 처리량 개체 스토리지를 제공하는 기존 <a href="https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers" target="_blank">핫 &amp; 쿨 계층</a> 에 추가됩니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers#blob-level-tiering-feature-preview" target="_blank">Blob 수준 계층화</a> - 데이터 수명 주기 관리를 간소화하기 위해 이제 고객이 Blob 수준에서 데이터를 계층화할 수 있습니다.&nbsp; 고객은 계정 간에 데이터를 이동하지 않고도 사용 패턴이 변경되면 핫, 쿨 또는 보관 계층 간에 Blob의 액세스 계층을 쉽게 변경할 수 있습니다. 세 액세스 계층 모두의 Blob은 동일한 계정 내에 공존할 수 있습니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/general-availability-larger-block-blobs-in-azure-storage/" target="_blank">더 큰 개체 크기</a> &ndash; 이제 Azure Blob Storage 4K 및 8K 미디어의 요구를 해결하기 위해 최대 5TB 개체를 지원합니다.</li>
+      <li>이제 더 높은 성능 &ndash; 의 Azure Blob Storage 단일 개체가 사후 프로덕션, 코드 변환 및 기타 워크로드를 지원하기 위해 개체 읽기에 대해 초당 최대 기가바이트까지 훨씬 더 높은 처리량을 지원합니다. 미디어 보관을 비롯한 대규모 미디어 수집을 지원하도록 쓰기 처리량도 향상되었습니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption" target="_blank">미사용 데이터 암호화</a>(고객 관리형 키 포함)&ndash; Azure Blob Storage 미디어 고객의 보안 요구 사항을 충족하기 위해 미사용 데이터 암호화를 지원합니다. Azure는 <a href="https://azure.microsoft.com/en-us/blog/enabling-the-motion-picture-industry/" target="_blank">MPAA 인증</a>을 준수하는 유일한 퍼블릭 클라우드입니다. 이번 여름에는 고객이 자신의 키로 데이터를 암호화하여 보안을 더욱 강화할 수 있는 고객 관리형 키에 <a href="https://azure.microsoft.com/en-us/blog/announcing-storage-service-encryption-with-customer-managed-keys-limited-preview-for-azure-blob-storage/" target="_blank">대한 미리 보기를</a> 출시했습니다.</li>
+  </ul>
+
+
+  <h2>성장하는 파트너 에코시스템</h2>
+
+
+  <p>올해 IBC에서는 파트너 에코시스템이 빠른 속도로 성장하여 고객이 디지털 워크플로의 길이와 폭을 아우르는 솔루션을 제공할 수 있게 되어 기쁩니다.</p>
+
+
+  <p>올해 초, 우리는 Avid가<strong> </strong> 클라우드에서 비즈니스를 구동하기 위해 <a href="https://www.avid.com/press-room/2017/04/cloud-partnership" target="_blank"><strong></strong> 선호하는 파트너로 Microsoft Azure 선택했다고</a> 발표했습니다. IBC의 Microsoft 부스를 방문하는 방문객들은 통합 Microsoft Azure 및 Avid 제품을 보여주는 데모를 볼 수 있습니다.</p>
+
+
+  <p>7월 하순, Microsoft Azure 실행되는 <strong>Ooyalas&rsquo;</strong> <a href="https://www.ooyala.com/about/press/zonetv-and-ooyala-join-forces-microsoft-bring-artificial" target="_blank">Flex 플랫폼</a>이 이제 <strong>영역 TV</strong>에서 엔드투엔드 워크플로 요구에 맞게 활용될 것이라고 발표되었습니다. 또한 오얄라&#39;솔루션에서 가치를 창출하는 다른 주목할 만한 고객은 <strong>내셔널 럭비 리그</strong> (NRL), <strong>SiriusXM</strong> 및 <strong>Zoomin.TV</strong> (네덜란드)입니다. IBC의 홀 15를 방문하는 방문객들은 오얄라&rsquo; 플렉스와 Azure Media Services 간의 공동 데모를 볼 수 있다는 것을 발표하게 되어 기쁩니다.</p>
+
+
+  <p>우리는 또한 우리의 새로운 파트너 &ndash; Amagi 및 액슬 비디오를 발표하게되어 기쁘게 생각합니다. 클라우드 관리형 브로드캐스트 서비스와 타겟 광고 솔루션을 제공하는 <strong>Amagi</strong>는 <a href="https://www.amagi.com/newsroom/amagi-to-offer-cloudport-virtualized-playout-on-microsoft-azure-cloud-platform/" target="_blank">이제 클라우드 플레이아웃 플랫폼인 CLOUDPORT 제품을 Microsoft Azure 배포할 수 있다고 발표했습니다</a>. 미디어 관리 솔루션을 제공하는 <strong>axle Video</strong>는 액슬 ai 제품을 향상시키기 위해 <a href="https://finance.yahoo.com/news/axle-ai-launches-microsoft-video-203300578.html" target="_blank">Microsoft Video Indexer와 긴밀한 통합을 발표</a>했습니다.</p>
+
+
+  <p>우리는 또한 <strong>LiveArena</strong>와의 파트너십을 확장하여 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mps.testmps" target="_blank">LiveArena 브로드캐스트 룸</a>을 출시하여 Microsoft Azure 전적으로 구축 된 모든 장치에 라이브 및 주문형 TV의 생산 및 방송을 허용하는 엔드 투 엔드 서비스입니다.</p>
+
+
+  <p>또한 도달률 엔진 제조업체인 <strong>Level Beyond</strong>는 Microsoft Azure 기반으로 구축되고 Microsoft Azure Storage 통합된 <a href="https://www.4-traders.com/MICROSOFT-CORPORATION-4835/news/Microsoft-Reach-Engine-Media-Services-to-Extend-and-Enhance-Capabilities-for-Media-Organizations-b-25123932/" target="_blank">도달률 엔진 Media Services 출시를 발표</a>했습니다. 대용량 데이터 스토리지 솔루션 공급자인 <strong>XenData</strong>는 Microsoft Azure Storage 통합하여 관리형 하이브리드 클라우드 서비스를 출시한다고 발표했습니다.</p>
+
+
+  <p>이러한 공지 사항을 자세히 살펴볼 더 많은 Azure 블로그 게시물을 계속 살펴보세요.</p>
+
+
+  <p>&rsquo;클라우드에서 미디어 워크플로를 사용하도록 설정하는 데 있어 지속적으로 혁신하고 새로운 파트너십을 형성하며, Microsoft Azure 구축하여 활용하도록 초대합니다.</p>
+
+
+  <h2>IBC 2017에서 만나보세요.</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/media-services/" target="_blank">Azure Media Services</a> 및 <a href="https://azure.microsoft.com/en-us/services/storage/" target="_blank">Azure Storage</a> 대해 자세히 알아보고, <strong>15홀의 IBC 부스를</strong> 방문하여 Azure Media Services 및 Azure Storage 팀을 만나 이러한 서비스가 실제로 작동하는지 확인하세요. 또한 Microsoft Hall에 초대하여 파트너 &ndash; Amagi, GameOn Technology, GrayMeta, IPV Limited, LiveArena, Make.TV, Oceaneering, Oooyala, Ownzones, StreamingBuzz, Veritone Media 및 x.news 정보 기술과 이야기를 나누고자 합니다.</p>
+
+
+  <p>컨퍼런스에 참석하지 않지만 미디어 산업용 서비스에 대해 자세히 알아보려면 <a href="https://www.azure.com/blog" target="_blank">Azure 블로그</a> 에 따라 새 공지 사항을 최신 상태로 알려 드립니다.</p>

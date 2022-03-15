@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d31f12c0a47fb5e393333751339d5b5bf185bc8f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912427"
+Slug: run-java-containers-on-azure
+Title: 'IntelliJ Community Edition: Azure에서 Java 컨테이너를 실행하려면 1 클릭'
+Summary: '이 블로그는 One-Click 환경이 Azure에서 컨테이너화된 Java 애플리케이션을 실행할 수 있도록 하는 IntelliJ Community Edition의 새로운 기능을 발표합니다. '
+Content: >-
+  <p>IntelliJ에서 쉽게 Azure에 Java 컨테이너를 배포할 수 있습니다. 몇 분이 아니라 몇 초가 걸립니다.</p>
+
+
+  <p>오늘 <a href="https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-hello-world-web-app-linux" target="_blank">1-Click 환경에서 Azure에서 컨테이너화된 Java 애플리케이션을 실행할</a> 수 있는 새로운 기능을 발표하게 되어 기쁩니다. 이를 통해 Java 개발자는 프로젝트를 쉽게 Docker화하고, Docker 이미지를 ACR(Azure Container Registry)과 같은 퍼블릭 또는 프라이빗 리포지토리에 푸시하고, Web App for Containers에서 실행할 수 있습니다. 새로운 기능은 Ultimate 및 <strong>Community </strong>Edition인 IntelliJ IDEA에서 지원됩니다. <a href="https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-hello-world-web-app-linux" target="_blank">Azure에서 컨테이너 경험을 시작</a>하려는 Java 개발자에게 간단한 환경을 제공합니다.</p>
+
+
+  <h2>Azure에서 컨테이너화된 Java 애플리케이션 실행</h2>
+
+
+  <p>Azure에서 Maven 프로젝트를 dockerize하고 실행할 수 있는 방법은 다음과 같습니다. 세 단계만 수행합니다.</p>
+
+
+  <ol>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-installation" target="_blank">IntelliJ IDEA Community Edition</a>에서 Java Maven 프로젝트를 만듭니다.</li>
+   <li>프로젝트에 Docker 지원을 추가합니다.</li>
+   <li>Azure Container Registry 및 Web App for Containers 구성 정보를 제공하고 실행을 적중합니다.</li>
+  </ol>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1c53a973-d8a1-419a-b775-5936642c6bce.gif"><img alt="Run a Java application on Azure Web App for container" height="328" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84b71c8f-d47b-4471-aafe-8be5b2f116c1.gif" style="display: inline;" title="컨테이너용 Azure Web App에서 Java 애플리케이션 실행" width="610"></a></p>
+
+
+  <h2>1-클릭하여 애플리케이션 다시 배포</h2>
+
+
+  <p>IntelliJ에서 앱이 설정되면 실행을 눌러 애플리케이션을 다시 배포하기만 하면 됩니다. 언제든지 실행 구성을 편집할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/46906853-0a28-4b80-b68e-ecbd4841b6b9.gif"><img alt="1-Click to redeploy your application" height="328" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1c61570c-d1ef-4322-9272-6a0c54d37d29.gif" style="display: inline;" title="1-클릭하여 애플리케이션 다시 배포" width="610"></a></p>
+
+
+  <h2>시험해 보기</h2>
+
+
+  <p>시작하는 데 도움이 <a href="https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-hello-world-web-app-linux" target="_blank"></a> 되는 <a href="https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-hello-world-web-app-linux" target="_blank">단계별 자습서</a>가 있습니다. (아래 <a>의 이메일</a> 또는 의견을 통해) 피드백을 받고 싶습니다. IntelliJ에서 더 많은 Azure 개발자 환경을 계속 조명할 것입니다.</p>
+
+
+  <p>Azure에서 Java에 대한 자세한 정보를 찾을 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://github.com/Microsoft/azure-tools-for-java" target="_blank">IntelliJ/Eclipse 도구 키트의 오픈 소스 프로젝트에 대한 GitHub 페이지</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij" target="_blank">IntelliJ용 Azure Toolkit 홈페이지</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse" target="_blank">Eclipse용 Azure Toolkit 홈페이지</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/java/azure/" target="_blank">Azure 개발자 센터의 Java</a></li>
+  </ul>

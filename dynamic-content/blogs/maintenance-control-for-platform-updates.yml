@@ -1,0 +1,84 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1efffd43a520de1db155bcb4fa2e9acd3dd98a5c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139910922"
+Slug: maintenance-control-for-platform-updates
+Title: 플랫폼 업데이트에 대한 유지 관리 제어 소개
+Summary: Azure Dedicated Host 및 격리된 가상 머신의 플랫폼 업데이트에 대한 유지 관리 제어 기능의 미리 보기를 살펴보겠습니다. 이 기능을 사용하면 고객은 롤링 창에서 35일 동안 호스트 업데이트를 제어할 수 있습니다. 공개 미리 보기에서는 CLI, PowerShell, API를 사용할 수 있습니다. 포털은 나중에 제공됩니다.
+Content: >-
+  <p style="margin: 0px 0px 1em; padding: 0px; outline: 0px; border: 0px currentcolor; border-image: none; text-align: left; color: rgb(67, 67, 67); text-transform: none; line-height: 1.53em; text-indent: 0px; letter-spacing: normal; font-family: inherit; font-size: 100%; font-style: inherit; font-variant: normal; font-weight: inherit; text-decoration: none; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; -webkit-text-stroke-width: 0px;">오늘 플랫폼 유지 관리를 위해 매우 중요한 워크로드를 사용하는 고객에게 더 많은 제어를 제공하는 Azure Virtual Machines에 대한 유지 관리 제어 기능의 미리 보기를 발표합니다. 고객은 이 기능을 사용하여 최대 35일 동안 재부팅 없는 업데이트를 비롯한 모든 영향력 있는 호스트 업데이트를 제어할 수 있습니다.</p>
+
+
+  <p>Azure는 안정성, 성능 및 보안을 개선하거나 새 기능을 시작하기 위해 인프라를 자주 업데이트합니다. 거의 모든 업데이트는 Azure VM(가상 머신)에 영향을 주지 않습니다. 업데이트에 영향을 주는 경우 Azure는 가장 영향이 적은 업데이트 방법을 선택합니다.</p>
+
+
+  <ul>
+      <li>업데이트에 다시 부팅이 필요하지 않은 경우 호스트가 업데이트되는 동안 VM이 잠시 일시 중지되거나 이미 업데이트된 호스트로 실시간 마이그레이션될&#39;있습니다. 이러한 재부팅 없는 유지 관리 작업은 장애 도메인에 의해 장애 도메인에 적용되며 경고 상태 신호가 수신되면 진행이 중지됩니다.</li>
+      <li>유지 관리를 다시 부팅해야 하는 매우 드문 시나리오에서는 고객에게 계획된 유지 관리 <a href="https://docs.microsoft.com/azure/virtual-machines/linux/maintenance-notifications" target="_blank">알림을 받</a> 습니다. Azure는 사용자가 편리한 시간에 유지 관리를 직접 시작할 수 있는 시간 범위도 제공합니다.</li>
+  </ul>
+
+
+  <p>일반적으로 재부팅되지 않는 업데이트는 전체 고객 환경에 영향을 주지 않습니다. 그러나 매우 중요한 특정 워크로드에는 모든 유지 관리 작업을 완전히 제어해야 할 수 있습니다. 이 새로운 기능은 이러한 유형의 워크로드를 배포하는 고객에게 도움이 됩니다.</p>
+
+
+  <h2>Who?</h2>
+
+
+  <p>유지 관리 기간을 제어하는 기능은 기본 물리적 서버가 단일 고객&rsquo; 워크로드를 실행하는 <a href="https://azure.microsoft.com/services/virtual-machines/dedicated-host/" target="_blank">Azure Dedicated Host</a> 또는 <a href="https://docs.microsoft.com/azure/security/fundamentals/isolation-choices#compute-isolation" target="_blank">격리된 VM</a>에서 실행되는 중단에 매우 민감한 워크로드를 배포할 때 특히 유용합니다. 이 기능은 다른 고객과 공유되는 호스트에 배포된 VM에는 지원되지 않습니다.</p>
+
+
+  <p>이 기능을 사용하는 것을 고려해야 하는 일반적인 고객은 최신 업데이트를 적용해야 하지만 비즈니스에서는 적어도 일부 클라우드 리소스를 자체 일정에 영향을 주지 않는 상태로 업데이트해야 하기 때문에 업데이트를 완전히 제어해야 합니다.</p>
+
+
+  <p>Azure 전용 호스트 또는 격리된 VM을 사용하는 금융 서비스 공급자, 게임 회사 또는 미디어 스트리밍 서비스와 같은 고객은 가장 중요한 Azure 리소스에 영향을 주지 않고 필요한 업데이트를 관리할 수 있으므로 이점을 얻을 수 있습니다.</p>
+
+
+  <h2>작동 원리</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9ebb2836-e754-46c6-bcab-912cf7661f97.png"><img alt="A diagram showing how this feature works." border="0" height="158" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2305fab1-d6f7-42de-ab64-d96bc2be7689.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이 기능의 작동 방식을 보여 주는 다이어그램" width="584"></a></p>
+
+
+  <p>리소스(Azure 전용 호스트 또는 격리된 VM)에 사용자 지정 유지 관리 구성을 추가하여 플랫폼 업데이트에 대한 유지 관리 제어 기능을 사용하도록 설정할 수 있습니다. Azure 업데이트 관리자가 이 사용자 지정 구성을 확인하면 재부팅 없는 업데이트를 포함하여 영향을 주지 않는 모든 업데이트를 건너뜁니다. 유지 관리 구성이 리소스에 적용되는 한 해당 리소스에 대한 업데이트를 시작할 시기를 결정하는 것은 사용자의 책임입니다. 리소스에 대한 보류 중인 업데이트를 확인하고 35일 기간 내에 업데이트를 적용할 수 있습니다. 리소스에 대한 업데이트를 시작하면 Azure는 보류 중인 모든 호스트 업데이트를 적용합니다. 리소스에서 다른 업데이트가 보류된 후 새 35일 기간이 시작됩니다. 35일 기간 내에 업데이트를 적용하지 않도록 선택하면 Azure에서 보류 중인 모든 업데이트를 자동으로 적용하여 리소스가 안전하게 유지되도록 하고 다른 수정 사항 및 기능을 얻습니다.</p>
+
+
+  <h2>고려할 사항</h2>
+
+
+  <ul>
+      <li>자동화 스크립트를 통해 보류 중인 업데이트 적용 명령을 호출 &ldquo;하여 유지 관리 기간에 대한 플랫폼 업데이트를&rdquo; 자동화할 수 있습니다. 애플리케이션 유지 관리와 함께 일괄 처리할 수 있습니다. <a href="https://docs.microsoft.com/azure/azure-functions/functions-overview" target="_blank">Azure Functions를</a> 사용하고 정기적으로 업데이트를 예약할 수도 있습니다.</li>
+      <li>유지 관리 구성은 구독 및 리소스 그룹에서 지원되므로 모든 유지 관리 구성을 한 곳에서 관리하고 필요한&#39;어디서나 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>시작</h2>
+
+
+  <p>플랫폼 업데이트에 대한 유지 관리 제어 기능은 현재 미리 보기로 제공됩니다. <a href="https://docs.microsoft.com/azure/virtual-machines/maintenance-control-cli/" target="_blank">CLI</a>, <a href="https://docs.microsoft.com/azure/virtual-machines/maintenance-control-powershell/" target="_blank">PowerShell</a>&nbsp;, <a href="https://docs.microsoft.com/rest/api/maintenance/" target="_blank">REST API</a>, <a href="https://docs.microsoft.com/dotnet/api/microsoft.azure.management.maintenance?view=azure-dotnet" target="_blank">.NET</a> 또는 <a href="https://azure.microsoft.com/downloads/" target="_blank">SDK</a>를 사용하여 시작할 수 있습니다. Azure Portal 지원은 다음과 같습니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/azure/virtual-machines/maintenance-and-updates" target="_blank">Azure의 가상 머신에 대한 유지 관리</a> 설명서를 참조하세요.</p>
+
+
+  <h2>FAQ</h2>
+
+
+  <p><strong>Q: 특정 업데이트를 제어할 수&rsquo; 없는 경우가 있나요?&nbsp; </strong></p>
+
+
+  <p>A:&nbsp; Azure 플랫폼 또는 고객을 위험에 빠뜨릴 수 있는 심각도가 높은 보안 문제의 경우 Azure는 유지 관리 기간의 고객 제어를 재정의하고 변경을 추진해야 할 수 있습니다. 이는 심각한 보안 문제로부터 보호하기 위한 최후의 수단과 같은 극단적인 경우에만 사용되는 드문 경우입니다.</p>
+
+
+  <p><strong>Q: 35일 이내에 자체 업데이트하지 않으면&rsquo; Azure에서 어떤 조치를 취합니까? </strong></p>
+
+
+  <p>A:&nbsp; 35일 이내에 플랫폼 업데이트를 실행하지 않는&rsquo; 경우 Azure는 장애 도메인을 기준으로 장애 도메인에 보류 중인 업데이트를 적용합니다. 이 작업은 보안 및 성능을 유지하고 결함을 해결하기 위해 수행됩니다.</p>
+
+
+  <p><b>Q: 이 기능은 모든 지역에서 지원되는가요?</b></p>
+
+
+  <p>A:&nbsp;&nbsp; 유지 관리 제어는 모든 퍼블릭 클라우드 지역에서 지원됩니다. 현재는 gov 클라우드 지역을 지원하지&#39;않지만 이 지원은 나중에 제공됩니다.</p>

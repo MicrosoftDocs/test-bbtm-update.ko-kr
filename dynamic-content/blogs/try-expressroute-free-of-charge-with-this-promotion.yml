@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7584c7ab5bd39cb3f32ca96d73fc25c19edd7452
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905767"
+Slug: try-expressroute-free-of-charge-with-this-promotion
+Title: 이 프로모션을 사용하여 ExpressRoute 무료 사용해 보기
+Summary: 오늘 Azure ExpressRoute에 대한 프로모션 제안을 발표하게 되어 기쁘게 생각하고 있으므로 온-프레미스 환경과 Azure 간의 빠르고 프라이빗 네트워크 연결을 더 쉽게 시작할 수 있습니다.
+Content: >-
+  오늘 Azure ExpressRoute에 대한 프로모션 제안을 발표하게 되어 기쁘게 생각하고 있으므로 온-프레미스 환경과 Azure 간의 빠르고 프라이빗 네트워크 연결을 더 쉽게 시작할 수 있습니다. 2015년 1월 1일부터 2015년 6월 30일까지 <strong>무료로</strong> 제공되는 Azure ExpressRoute 10Mbps NSP(네트워크 서비스 공급자)를 사용해 보세요. ExpressRoute 10Mbps NSP 제품에 대한 이 프로모션은 ExpressRoute가 현재 제공되는 모든 지역의 신규 및 기존 고객에게 제공됩니다.
+
+
+  또한 일부 파트너는 자체 제안으로 프로모션을 보완하여 ExpressRoute 연결을 평가하는 비용 효율적인 방법을 즐길 수 있게 되어 기쁩니다. 다음은 보완 프로모션을 제공하는 파트너의 세부 정보입니다.
+
+  <ul>
+   <li>British Telecom(BT)은 ExpressRoute 프로모션과 2015년 6월 30일까지 10Mbps 무료 제품을 매칭합니다.</li>
+   <li>Colt는 2015년 6월 30일까지 IP-VPN 고객에게 Microsoft Azure 서비스에 대한 10Mbps 무료 프라이빗 액세스를 제공합니다. 제품 세부 정보는 여기를 참조하세요.</li>
+   <li><a href="https://www.level3.com/en/products/mpls-ip-vpn/" target="_blank">수준 3</a> 은 2015년 6월 30일까지 10Mbps IPVPN 연결을 무료로 제공합니다. 자세한 내용은 수준 3 계정 담당자에게 문의하세요.</li>
+   <li><a href="https://www.verizonenterprise.com/products/networking/secure-cloud-interconnect/" target="_blank">Verizon</a> 은 매월 최대 1TB의 2년 계약을 체결한 최초 고객을 위한 기본 데이터 요금제에서 보안 클라우드 상호 연결을 위한 6개월 프로모션을 제공합니다. 자세한 내용은 계정 담당자에게 문의하세요.</li>
+   <li>ATT&amp;는 6개월 동안 NetBond 평가판을 제공합니다. 자세히 알아보려면 여기를 클릭하세요.</li>
+  </ul>
+
+  &nbsp;
+
+
+  ExpressRoute는 Azure에 빠르고 안정적인 연결을 제공하므로 데이터 마이그레이션, 비즈니스 연속성을 위한 복제, 재해 복구 및 기타 고가용성 전략과 같은 시나리오에 적합합니다. 또한 기존 데이터 센터를 Azure로 원활하게 확장하여 하이브리드 시나리오를 사용하도록 설정할 수 있습니다. <a href="https://azure.microsoft.com/en-us/documentation/services/expressroute/" target="_blank">여기에서</a> 서비스에 대해 자세히 알아보세요.
+
+
+  이 제한된 프로모션 기간 동안 비용 0으로 제공되는 고속, 짧은 대기 시간, 10Mbps ExpressRoute 연결을 사용해 볼 수 있는 기회를 놓치지 마세요! Azure Direct 고객인 경우 계정 관리자에게 문의하여 시작하거나 <a href="https://azure.microsoft.com/en-us/pricing/purchase-options/">여기에</a> 등록하세요.
+
+  <blockquote>*다른 파트너 네트워크 서비스 공급자 요금은 계속 적용될 수 있습니다. 요금에 대한 자세한 내용은 특정 파트너에게 문의하세요.</blockquote>

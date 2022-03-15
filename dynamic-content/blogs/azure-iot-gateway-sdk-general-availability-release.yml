@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ee8e6d7e7d39b70980e7e38c3868c453e14b09fa
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906187"
+Slug: azure-iot-gateway-sdk-general-availability-release
+Title: Azure IoT Gateway SDK를 사용하여 작업 커넥트
+Summary: '이제 일반 공급으로 릴리스된 Azure IoT Gateway SDK를 사용하여 작업을 커넥트. '
+Content: >-
+  <p>Azure IoT Gateway SDK는 2017년 5월 10일에 Azure IoT Edge로 발전했습니다. 자세히 알아보려면 <a href="https://azure.microsoft.com/campaigns/iot-edge/">여기를 클릭하세요</a>.</p>
+
+
+  <p>IoT(사물 인터넷)는 회사 운영 방식의 거의 모든 측면을 변화시킬 수 있습니다. 그러나 IoT 플랫폼이 비즈니스에 이미 있는 자산과 작동하지 않거나&rsquo; 직원이 새로운 기술을 습득하도록 요구하는 경우 그 기회는 덜 영향을 미치 &ndash; 거나 매력적일 수 있습니다.&nbsp;</p>
+
+
+  <p>Microsoft Azure IoT 플랫폼은 사용 약관에 따라 작동합니다. 기존 디바이스와 서비스를 쉽게 통합하고, 개발자가 이미 알고 있는 프로그래밍 언어로 확장할 수 있으며, 비즈니스에 이미 배포된 백 엔드 플랫폼과 원활하게 통합됩니다. 솔루션은 온-프레미스, 호스트된 클라우드 또는 프라이빗 클라우드 또는 하이브리드 클라우드/온-프레미스 조합에서 실행할 수 있습니다. 그래서&rsquo; 우리는 그것을 당신의 사물 인터넷이라고 부릅니다.&nbsp;</p>
+
+
+  <p>현재는&rsquo; <a href="https://azure.microsoft.com/en-us/services/iot-hub/iot-gateway-sdk/">Azure IoT Gateway SDK</a>의 향상된 기능으로 이러한 약속을 확장하여 Azure 클라우드의 데이터 센터를 넘어 많은 비즈니스&rsquo; 자산 및 디바이스가 연결된 네트워크의 가장자리까지 IoT 및 고급 분석의 기능을 확장할 수 있습니다. SDK의 모듈식 아키텍처를 사용하면 개발자가 개별 논리 부분을 함께 문자열링하여 네트워크 가장자리에서 데이터를 변환하는 솔루션을 만들 수 있습니다. 암호화, 필터링, 주석 또는 사용자 지정 분석을 통해 데이터를 만드는 디바이스 가까이에서 데이터가 처리되므로 추가 처리를 위해 진정으로 필요한 부분만 클라우드로 전송됩니다.</p>
+
+
+  <p>이는 석유 및 가스, 소매, 스마트 도시와 같은 산업에서 특히 중요하며, 기업은 서로 다른 지리적 위치에서 여러 번 현장에서 실시간 계산을 실행할 수 있는 능력이 필요합니다. 경우에 따라 네트워크&rsquo; 에지의 디바이스에 클라우드&rsquo;에서 데이터 분석을 활용하기에 충분한 대역폭이 없을 수 있으므로 게이트웨이에서 에지 컴퓨팅 기능을 사용하여 온-프레미스에서 분석을 실행할 수 있어야 합니다.</p>
+
+
+  <p><a href="https://github.com/azure/azure-iot-gateway-sdk">오픈 소스 Azure IoT Gateway SDK</a> 에코시스템은 개발자와 ISV가 솔루션을 개발하는 방법에 대한 더 많은 선택을 제공하여 궁극적으로 출시 시간과 유지 관리 비용을 줄입니다. 개발자는 다른&rsquo; 사용자가 선택한 언어로 작업하거나 SDK를 확장할 수 있습니다. 개별 논리 및 모듈은 Node.js, Java, C# 또는 C 언어로 작성할 수 있습니다. 더욱이 엔드 투 엔드 게이트웨이 솔루션은 다른 언어로 구현된 모듈로 구성될 수 있습니다. 특정 프로그래밍 언어의 전문가인지 여부에&rsquo; 관계없이 에코시스템의 어디에서나 코드를 사용할 수 있습니다.</p>
+
+
+  <p>SDK를 기반으로 게이트웨이 솔루션에 전원을 공급하는 하드웨어를 찾는 것도 원활한 프로세스입니다. Weve&rsquo;는 인텔과 협력하여 <a href="https://www.seeedstudio.com/Grove-IoT-Commercial-Gateway-Kit-p-2724.html">상업용 게이트웨이 키트</a> 를 생산했으며 파트너 에코시스템에는 이미 많은 <a href="https://catalog.azureiotsuite.com/?q=gateway">Azure Certified for IoT 게이트웨이 하드웨어</a>가 포함되어 있습니다. Wind River Linux, Ubuntu, Windows 10 및 Windows Server 2012 비롯한 여러 운영 체제에 대한 지원을 통해 요구 사항에 맞는 게이트웨이 디바이스를 선택하는 것은 사용자의 요구에 완전히 부합합니다.</p>
+
+
+  <p>Azure IoT 가장 완벽한 IoT 에코시스템입니다. 현재&rsquo; Azure IoT Gateway SDK의 확장을 통해 사물 인터넷을 디자인하고 배포하는 방법에 더 큰 유연성을 제공합니다.&nbsp;</p>
+
+
+  <p>Azure IoT Gateway SDK에 대해 자세히 알아보고 고유한 게이트웨이 솔루션 개발을 시작하려면 <a href="https://azure.microsoft.com/en-us/services/iot-hub/iot-gateway-sdk/">여기</a>를 방문하세요. Microsoft IoT가 비즈니스를 혁신하는 방법에 대한 자세한 내용은 <a href="https://www.microsoft.com/en-us/cloud-platform/internet-of-things">internetofyourthings.com</a> 방문하세요.</p>

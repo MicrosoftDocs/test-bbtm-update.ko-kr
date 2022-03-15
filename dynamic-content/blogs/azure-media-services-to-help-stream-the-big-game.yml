@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fb5174ef414492c692b39452d0c352d47f35d410
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912030"
+Slug: azure-media-services-to-help-stream-the-big-game
+Title: Azure Media Services 큰 게임을 스트리밍하는 데 도움이
+Summary: NBC 스포츠는 최근 '슈퍼 스트림 일요일'을 발표하여 일요일의 큰 경기를 둘러싼 11 시간 이상의 연속 스트리밍을 허용했습니다.
+Content: >-
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/untitled.png"><img class="alignnone size-full wp-image-245511" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/untitled.png" alt="untitled" width="299" height="169" /></a>
+
+
+  <a href="https://www.nbcsports.com">NBC 스포츠 </a>는 최근 '슈퍼 스트림 일요일'을 <a href="https://nbcsportsgrouppressbox.com/2015/01/20/nbcuniversal-creates-super-stream-sunday-to-promote-tv-everywhere/">발표 </a>하여 일요일의 큰 경기를 둘러싼 11 시간 이상의 연속 스트리밍을 허용했습니다. Microsoft에서 많은 사람들이 홈 팀이 챔피언으로 반복 할 수있는 기회를 가지고 있다는 것을 기쁘게 생각합니다, 우리는 또한 NBC 스포츠가 다시 한 번 NBC 스포츠 라이브 엑스트라, NBC 스포츠 디지털의 라이브 스트리밍 제품을 통해 PC, 노트북 및 태블릿을 통해 큰 게임의 멀티 플랫폼 시청 경험을 제공하기 위해 기술 파트너로 Microsoft Azure Media Services 선택한 것을 자랑스럽게 생각합니다.
+
+
+  지난 한 해 동안 NBC 스포츠와 Azure Media Services 2014 년 동계 올림픽의 성공적이고 기록적인 스트리밍을 제공하기 위해 파트너십을 했습니다. 스트리밍 솔루션의 규모와 성능을 통해 전 세계 1억 명 이상의 시청자가 올림픽을 스트리밍하고 당시 일부 기록을 세웠으며, 미국 대 캐나다 하키 경기 동안 약 210만 건의 동시 HD 조회수를 기록했습니다. Azure Media Services 라이브 및 주문형 비디오를 어디서나 연결된 디바이스에 인코딩, 저장 및 스트리밍하는 즉시 사용할 수 있는 서비스를 제공합니다. 온라인 콘텐츠 시청률이 증가함에 따라 일요일 경기는 NBC Sports와 같은 파트너가 Azure의 힘과 유연성을 사용하여 고객에게 더 많은 선택을 제공하는 또 다른 흥미로운 예입니다.
+
+
+  우리는 당신이 NBC 스포츠 라이브 엑스트라 <a href="https://stream.nbcsports.com/liveextra/">웹 사이트 </a>또는 <a href="https://www.nbcsports.com/sports-mobile" target="_blank">응용 프로그램을</a> 통해 일요일에 모든 작업에 조정 바랍니다. 또한 큰 게임 후에 다시 확인하여 '슈퍼 스트림 일요일'을 현실로 만들기 위해 제공되는 서비스 Microsoft Azure 및 Azure Media Services 사용하여 프리미엄 미디어 콘텐츠로 수익을 창출하는 방법에 대해 자세히 알아보세요.

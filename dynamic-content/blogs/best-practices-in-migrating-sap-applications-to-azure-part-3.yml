@@ -1,0 +1,221 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 59c71d650bdb86e3b15f11849d6b01152ec34d89
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906122"
+Slug: best-practices-in-migrating-sap-applications-to-azure-part-3
+Title: SAP 애플리케이션을 Azure로 마이그레이션하는 모범 사례 - 3부
+Summary: SAP를 Azure로 마이그레이션하는 모범 사례에 대한 세 부분으로 구성된 블로그 게시물 시리즈의 세 번째 블로그입니다.
+Content: >-
+  <p><em>SAP를 Azure로 마이그레이션하는 모범 사례에 대한 세 부분으로 구성된 블로그 게시물 시리즈의 세 번째 블로그입니다.</em></p>
+
+
+  <h2>Azure의 HANA 및 BW/4HANA의 BW</h2>
+
+
+  <p>SAP HANA를 클라우드로 마이그레이션하는 데 중요한 많은 SAP 고객은&rsquo; 다음 두 가지 요인에 의해 주도되었습니다.</p>
+
+
+  <ul>
+   <li>수명이 종료된 1세대 SAP HANA 어플라이언스로 인해 고객이 플랫폼을 다시 평가합니다.</li>
+   <li>기존 데이터베이스 및 이후 BW/4HANA에 비해 유연한 TDI 모델에서 HANA 기반 SAP BW(Business Warehouse)의 초기 가치를 활용하고자 하는 것입니다.</li>
+  </ul>
+
+
+  <p>그 결과, SAP HANA를 Microsoft Azure 수많은 초기 마이그레이션은 BW 워크로드에 SAP HANAs&rsquo; 메모리 내 기능을 활용하기 위해 SAP BW에 집중했습니다. 즉, 데이터베이스 계층에서 SAP HANA를 활용하도록 BW 애플리케이션을 마이그레이션하고 결국에는 HANA에서 BW를 BW/4HANA로 마이그레이션하는 것이 더 많이 관련됩니다.</p>
+
+
+  <p>마이그레이션의 일부로 사용되는 SUM의 시스템 이동 옵션이 있는 SAP <a href="https://vimeo.com/user21884330/review/78267156/e0caac1dde" target="_blank">DMO(Database Migration Option)</a>를 사용하면 고객은 원본 시스템 온-프레미스 또는 Microsoft Azure 있는 대상 시스템으로의 단일 단계로 마이그레이션을 수행할 수 있으므로 전체 가동 중지 시간을 최소화할 수 있습니다.</p>
+
+
+  <p>SAP 애플리케이션을 Azure &ndash; 파트 2로 마이그레이션하는 모범 사례에 &ldquo;사용된 S/4HANA 예제와 마찬가지로,&rdquo; AnyDB의 기존 BW를 고객 데이터 센터에서 HANA의 BW로 이동하면 결국 두 단계로 BW/4HANA를 수행할 수 있습니다. 대규모의 Microsoft Azure 글로벌 범위는 자본 투자를 최소화하면서 마이그레이션을 완료할 수 있는 유연성을 제공할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b6ae9213-46bb-4c5e-b345-983f0fd0a1a2.png"><img alt="SAP BW on HANA and BW 4HANA migrations" border="0" height="1022" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0a207642-99ce-4e47-8797-0b04c20bfde9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="HANA 및 BW 4HANA 마이그레이션의 SAP BW" width="1837"></a></p>
+
+
+  <p align="center"><em>그림 1: HANA의 SAP BW 및 BW/4HANA 마이그레이션</em></p>
+
+
+  <h3>1단계</h3>
+
+
+  <p>첫 번째 단계는 AnyDB의 SAP BW를 Microsoft Azure 실행되는 HANA의 SAP BW로 마이그레이션하는 것입니다. 제 동료 Bartosz Jarkowski는 <a href="https://blogs.sap.com/2017/10/05/your-sap-on-azure-part-2-dmo-with-system-move/" target="_blank">SAPS&rsquo; SUM(소프트웨어 업데이트 관리자)의 데이터베이스 마이그레이션 옵션(DMO)</a>을 설명하는 훌륭한 블로그를 작성했습니다.</p>
+
+
+  <p>이 마이그레이션 단계는 SAP HANA를 실행하는 대상 서버로 <a href="https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure" target="_blank">인증되고 지원되는 SAP HANA 하드웨어 디렉터리 &ndash; IaaS 플랫폼에 나열된 HANA 인증</a> SKU 중 하나를 사용하여 수행할 수 있습니다.</p>
+
+
+  <p>현재 Microsoft Azure OLTP 및 OLAP 시나리오에서 12개의 전용 하드웨어 옵션을 포함하여 192GiB에서 20TiB RAM에 이르는 모든 하이퍼 스케일 클라우드 공급자의 <strong>HANA 인증 SKU를 가장 많이 제공합니다</strong>.</p>
+
+
+  <p>고객이 SAP HANA OLAP 스케일 아웃 구성을 선택하는 경우 Azure는 TDIv4에서 <a href="https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure%23OLAP%2FOLTP%23OLAP%23OLTP&amp;recordid=1983" target="_blank">최대 60TiB</a> , TDIv5 인증을 <a href="https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure&amp;recordid=1984" target="_blank">통해 최대 120TB</a> 의 인증된 옵션을 제공합니다.</p>
+
+
+  <p>Azure의 많은 SAP HANA 고객은 이미 Azure의 HANA에서 BW로의 DMO 마이그레이션을 실행하여 BW/4HANA로의 여정 중 하나를 수행했습니다. 이는 경우에 따라 가상 머신 및 HANA 대규모 인스턴스 전용 하드웨어에 있는 스케일 아웃 시나리오와 유사합니다.</p>
+
+
+  <p>이 초기 단계를 통해 고객은 네트워크, 가상 머신 및 스토리지와 같은 클라우드 인프라를 준비할 수 있습니다. 또한 백업/복원, 데이터 계층화, 고가용성 및 재해 복구와 같은 Microsoft Azure 운영 기능 및 지원 모델을 사용하도록 설정할 수 있습니다.</p>
+
+
+  <h3>2단계</h3>
+
+
+  <p>고객이 Azure에서 HANA에서 SAP BW를 실행하면 대규모 클라우드 유연성의 실제 이점이 실현되기 시작합니다. BW/4HANA 마이그레이션 연습을 반복적으로 테스트할 수 있으므로, 필요한 경우 병렬로 테스트할 수 있지만 사용된 항목에 대해서만 비용을 지불하면 마이그레이션 레시피가 완성되고 프로덕션에 대해 실행할 준비가 되면 버릴 수 있습니다.</p>
+
+
+  <h2>Microsoft Azure SAP HANA 최적 실행</h2>
+
+
+  <p>MICROSOFT AZURE 실행되는 HANA의 SAP BW 및 BW/4HANA 시나리오는 다음과 같은 IaaS 서비스의 조합을 통해 사용하도록 설정됩니다.</p>
+
+
+  <ul>
+   <li>고성능 Azure Virtual Machines</li>
+   <li>Azure Premium Storage</li>
+   <li>Azure 가속 네트워킹</li>
+  </ul>
+
+
+  <p>이러한 매우 유연하고 성능이 뛰어난 VM(가상 머신)은 고객이 SAP HANA 워크로드를 신속하게 스핀업하고 n+0 스케일 아웃 구성을 위한 인프라를 배포할 수 있는 기능을 제공합니다. 또한 Azure는 전용 전용 SAP HANA 대규모 인스턴스 하드웨어에서 스케일 아웃 시나리오를 통해 OLAP 워크로드를 확장하는 기능도 고객에게 제공합니다.</p>
+
+
+  <p>이러한 HANA 대규모 인스턴스 구성에서 고객은 N+1&rdquo; 구성에 SAP HANA를 &ldquo;설치합니다. 이는 일반적으로 다음을 의미합니다.</p>
+
+
+  <ul>
+   <li>마스터 노드 1대</li>
+   <li>N 작업자 노드</li>
+   <li>대기 노드 1개(선택 사항)</li>
+  </ul>
+
+
+  <p>50개 이상의 작업자 노드가 있는 스케일 아웃 구성이 있지만 실제로 대부분의 스케일 아웃 구성은 3~15개의 노드 범위에 있습니다.</p>
+
+
+  <h2>Microsoft Azure 어떻게 보이나요?</h2>
+
+
+  <p>성능이 향상되고 사용 가능한 인프라를 보장하기 위해 Microsoft 및 SAP&rsquo; 지침을 준수하기 위해 VM 시나리오에서 Azure 인프라를 활용하여 SAP HANA용 컴퓨팅, 네트워크 및 스토리지를 설계하는 것이 중요합니다.</p>
+
+
+  <ul>
+   <li>가용성 집합</li>
+   <li>가속 네트워킹</li>
+   <li>Azure Virtual Networks</li>
+  </ul>
+
+
+  <p>HANA 대규모 인스턴스 시나리오에서 전용 공유 NFS 스토리지 및 스냅샷을 사용하면 대기 노드로 스케일 아웃할 수 있습니다. 추가 오버헤드를 최소화하면서 BW 시스템의 가용성을 보장합니다.</p>
+
+
+  <h3>네트워킹</h3>
+
+
+  <p>NFS를 사용하는 SAP HANA 스케일 아웃 구성에는 예측 성능을 보장하기 위해 SAP HANA 클라이언트 트래픽, SAP HANA 내역 통신 및 SAP HANA NFS(스토리지 통신)를 격리하기 위해 세 가지 고유한 네트워크 영역이 필요합니다. 위의 개념을 설명하기 위해 대기 노드(1+6+1)가 있는 샘플 8노드 SAP HANA 시스템의 다이어그램에 나와 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/17fcf960-18eb-4f72-bd42-faa7df904ce0.png"><img alt="SAP HANA scale-out client, intranode and storage network zones" border="0" height="505" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dbef23f1-f84a-4812-be3c-59d49b290000.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SAP HANA 스케일 아웃 클라이언트, intranode 및 스토리지 네트워크 영역" width="2133"></a></p>
+
+
+  <p align="center"><em>그림 2: SAP HANA 스케일 아웃 클라이언트, 정수 및 스토리지 네트워크 영역</em></p>
+
+
+  <p>SAP HANA용으로 디자인할 때 SAP 권장 TDI 사례를 따라야 합니다.</p>
+
+
+  <ul>
+   <li>할당된 RAM에 비례하여 적절하고 성능이 좋은 스토리지입니다.</li>
+   <li>NFS 공유 스토리지를 올바르게 구성하여 HANA 큰 인스턴스가 있는 n+1 구성의 경우 적절한 장애 조치(failover) 작업을 보장합니다.</li>
+   <li>네트워크 트래픽을 클라이언트 및 노드 내 영역으로 격리하는 고유한 네트워크 영역입니다.</li>
+  </ul>
+
+
+  <p>SAP 맞춤형 데이터 센터 이니셔티브 v4 사양(TDIv4)에 따라 올바른 스토리지 구성을 포함하여 미리 정의된 HANA 대규모 인스턴스 컴퓨팅 SKU는 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-available-skus" target="_blank">미리 설계되었으며</a> 고객이 필요에 따라 사용할 준비가 되었습니다. 이러한 SKU는 고객별 크기 조정으로 인한 특정 요구 사항에 맞게 조정할 수 있습니다.</p>
+
+
+  <h3>Storage</h3>
+
+
+  <p>TDI 모델의 SAP HANA 대규모 인스턴스 스케일 아웃 구성은 고성능 NFS 공유 스토리지를 사용하여 대기 노드가 실패한 노드를 인수할 수 있도록 합니다.</p>
+
+
+  <p>Azure HANA 대규모 인스턴스의 TDI 스케일 아웃 구성에서 SAP HANA 설치에 대해 설정된 공유 파일 시스템의 유형은 최소 4가지입니다.</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top" width="174">
+     <p><b>공유 파일 시스템</b></p>
+     </td>
+     <td valign="top" width="310">
+     <p><b>설명</b></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="174">
+     <p>/usr/sap/SID</p>
+     </td>
+     <td valign="top" width="310">
+     <p>낮은 IO 성능 요구 사항</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="174">
+     <p>/hana/shared/SID</p>
+     </td>
+     <td valign="top" width="310">
+     <p>낮은 IO 성능 요구 사항</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="174">
+     <p>/hana/data/SID/mnt0000*</p>
+     </td>
+     <td valign="top" width="310">
+     <p>중간/높은 IO 성능 요구 사항</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="174">
+     <p>/hana/log/SID/mnt0000*</p>
+     </td>
+     <td valign="top" width="310">
+     <p>중간/높은 IO 성능 요구 사항</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><em>HANA 데이터 및 로그 파일 시스템의 수와 이름은 사용 중인 스케일 아웃 노드 수와 일치하며 아래 다이어그램입니다.</em></p>
+
+
+  <p>스케일 아웃 구성에서 적절한 SAP HANA 작업에 필요한 다른 파일 시스템은 표시되지 않지만, 이러한 4개의 파일 시스템은 고성능 IO 특성과 스케일 아웃 구성의 모든 노드에서 공유되는 기능을 제공하는 데 필요한 파일 시스템입니다.</p>
+
+
+  <p>아래 예제에서는 HANA 스케일 아웃의 8개 Azure HANA 대규모 인스턴스 단위를 보여 줍니다. 여기서 각 단위는 HANA 파일 시스템이 프로비전된 다른 모든 단위&rsquo;, 가장 중요한 HANA 및 로그 볼륨을 볼 수 있지만, 언제든지 각 단위는 NFS v4 잠금에 의해 적용되는 자체 데이터 및 로그 파일 시스템에 대한 읽기/쓰기 제어를 가집니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aca9c501-3087-405e-9208-886f7de2c6d1.png"><img alt="SAP HANA scale-out filesystem on Microsoft Azure HANA Large Instances" border="0" height="776" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ae0c944f-dfff-4ff2-9d88-4372dec64fa0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Microsoft Azure HANA 대규모 인스턴스의 SAP HANA 스케일 아웃 파일 시스템" width="2141"></a></p>
+
+
+  <p align="center"><em>그림 2: Microsoft Azure HANA 대규모 인스턴스의 SAP HANA 스케일 아웃 파일 시스템</em></p>
+
+
+  <p>오류가 발생할 경우 SAP HANA 대기 노드는 해당 노드&rsquo; 스토리지의 소유권을 인수할 수 있으며 노드&rsquo; 가 운영 스케일 아웃 HANA 시스템에 배치된다고 가정합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2cd6b16-fb9d-4833-91eb-9f9b97c1ccde.png"><img alt="SAP HANA standby bode taking ownership of a failed node's storage" border="0" height="773" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b5460226-62a4-4992-84fa-d0e91ade5730.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="실패한 노드의 스토리지 소유권을 가져오는 SAP HANA 대기 보데" width="2123"></a></p>
+
+
+  <p align="center"><em>그림 3: 실패한 노드 스토리지의 소유권을 가져오는 SAP HANA 대기 노드&rsquo;</em></p>
+
+
+  <p>Microsoft Azure SAP HANA 대기 노드 기능은 SAP HANA를 실행할 플랫폼으로 Microsoft Azure 선택할 때 가용성과 쌍을 이루는 성능에 대한 고객의 선택을 심화합니다.</p>
+
+
+  <p>SAP <a href="https://aka.ms/SAPSAPPHIRENOW2019" target="_blank">SAPPHIRENOW 2019</a> 에 참석하여 이러한 솔루션에 대해 자세히 알아보고 제품 실습 데모를 보려면 Microsoft 부스 #729에 들러 보세요. 올랜도에서 보자!</p>

@@ -1,0 +1,40 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7be7eeb018faf713221df5c94f7cf1e3530bbe0b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911138"
+Slug: azure-sql-data-warehouse-introduces-premium-storage-for-greater-performance
+Title: Azure SQL Data Warehouse는 성능 예측 가능성을 높이기 위한 Premium Storage 도입했습니다.
+Summary: Azure SQL Data Warehouse 서비스가 표준에서 Premium Storage 이동하여 쿼리 런타임, 특히 더 높은 DWU(데이터 웨어하우스 단위)에서 성능 예측 가능성 및 일관성을 높일 수 있게 될 것이라고 발표하게 되어 기쁩니다.
+Content: >-
+  <p>Azure SQL Data Warehouse 서비스가 표준에서 Premium Storage 이동하여 쿼리 런타임, 특히 더 높은 DWU(데이터 웨어하우스 단위)에서 성능 예측 가능성 및 일관성을 높일 수 있게 될 것이라고 발표하게 되어 기쁩니다. 오늘부터 생성된 모든 새 데이터 웨어하우스는 대부분의 <a href="https://azure.microsoft.com/en-us/pricing/details/sql-data-warehouse/" target="_blank">지역에서</a>&nbsp; <a href="https://azure.microsoft.com/en-us/services/storage/premium-storage/" target="_blank">Azure Premium Disk Storage</a> 사용합니다Premium&nbsp;디스크 Storage 사용할 수 있습니다. 궁극적으로 SQL Data Warehouse의 스토리지는 미리 보기 기간 이후에 1TB 할당으로 청구됩니다&nbsp;. 그러나 미리 보기 기간 동안 Premium Disk Storage 사용하는 SQL Data Warehouse 고객은 현재 <a href="https://azure.microsoft.com/en-us/pricing/details/storage/" target="_blank">표준 디스크 Storage 모델에</a> 따라 계속 요금이 청구됩니다. 표준 Storage 기존 데이터 웨어하우스를 사용하는 고객은 향후 몇 주 안에 Premium Disk Storage 마이그레이션하는 방법에 대한 이메일 지침을 받게 됩니다.</p>
+
+
+  <h1>데이터 보호</h1>
+
+
+  <p>앞으로 몇 주 안에 Premium 디스크 Storage 대한 Geo-Backups 소개할 예정입니다. Geo-Backups 24시간마다 데이터 웨어하우스를 <a href="https://azure.microsoft.com/en-us/documentation/articles/best-practices-availability-paired-regions/" target="_blank">Azure 쌍</a>으로 연결된 지역에 복사하여 데이터 웨어하우스에 대한 지역 복원력을 사용하도록 설정합니다. Geo-Backup Azure의 모든 지역으로 복원할 수 있습니다.</p>
+
+
+  <h1>오늘 Premium Storage 사용해 보기</h1>
+
+
+  <p>우리는 Premium Storage 도입에 대해 기쁘게 생각. 사용해 보고, 가장 까다로운 워크로드를 실행하고, 피드백을 보내주세요! <a href="https://feedback.azure.com/forums/307516-sql-data-warehouse" target="_blank">UserVoice</a>에서 Microsoft와 연결하여 제품 투자를&mdash; 제안하거나 투표하세요. 요청에 대한 정기 업데이트를 받고 기능이 출시되는 시기를 가장 먼저 파악할 수 있습니다.</p>
+
+
+  <h1>자세한 정보</h1>
+
+
+  <p>데이터 웨어하우스에 대한 자세한 내용은 SQL 리소스를 확인하세요. 몇 가지 예를 들면 다음과 같습니다.&nbsp;</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/documentation/articles/sql-data-warehouse-overview-what-is/" target="_blank">Azure SQL Data Warehouse란?</a></li>
+      <li><a href="https://azure.microsoft.com/documentation/articles/sql-data-warehouse-best-practices/" target="_blank">데이터 웨어하우스 모범 사례 SQL</a></li>
+      <li><a href="https://azure.microsoft.com/documentation/videos/index/?services=sql-data-warehouse" target="_blank">동영상</a></li>
+      <li><a href="https://social.msdn.microsoft.com/Forums/en-US/home?forum=AzureSQLDataWarehouse" target="_blank">MSDN 포럼</a></li>
+      <li><a href="https://blogs.msdn.microsoft.com/sqlcat/tag/sql-dw/" target="_blank">CAT 팀 블로그</a></li>
+      <li><a href="https://stackoverflow.com/questions/tagged/azure-sqldw" target="_blank">Stack Overflow 포럼</a></li>
+  </ul>

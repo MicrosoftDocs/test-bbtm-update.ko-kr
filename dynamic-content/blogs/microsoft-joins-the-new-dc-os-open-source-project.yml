@@ -1,0 +1,71 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e50e65bfc0ae39fadaa306dcdcab4d13fc98c1c8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911690"
+Slug: microsoft-joins-the-new-dc-os-open-source-project
+Title: Microsoft가 새 DC/OS 오픈 소스 프로젝트에 참여합니다.
+Summary: 현재 Microsoft는 Mesosphere와 Accenture, Cisco 및 Hewlett Packard Enterprise 포함한 광범위한 업계 파트너 그룹에 합류하여 오픈 소스 DC/OS 프로젝트를 발표했습니다.
+Content: >-
+  <h3>오픈 소스 DC/OS 프로젝트가 오늘 발표됨</h3>
+
+
+  <p>현재 Microsoft는 Mesosphere와 Accenture, Cisco 및 Hewlett Packard Enterprise 포함한 광범위한 업계 파트너 그룹에 합류하여 최신 분산 애플리케이션을 안정적으로 대규모로 실행하기 위한 Apache Mesos의 새로운 노력인 <a href="https://dcos.io/">오픈 소스 DC/OS 프로젝트를</a> <a href="https://mesosphere.com/blog/2016/04/19/open-source-dcos">발표</a>했습니다. Mesospheres&rsquo; 데이터 센터 운영 체제에서 파생된 100% 오픈 소스 DC/OS는 규모에 따라 컨테이너 작업을 위한 강력한 기능을 제공하며, 한 번의 클릭으로 HDFS, Apache Spark, Apache Kafka, Apache Cassandra 등을 비롯한 복잡한 분산 시스템의 앱 스토어와 유사한 설치 기능을 제공합니다.</p>
+
+
+  <p>Microsofts&rsquo; 클라우드 전략은 오픈 시스템 및 오픈 소스 솔루션에 대한 지원을 포함하여 고객 선택에 따라 설정됩니다. 최신 애플리케이션을 실행하려면 퍼블릭 클라우드, 프라이빗 데이터 센터 및 호스팅 공급자에서 하이브리드 배포를 지원하는 입증된 유연한 시스템도 필요합니다. 오늘&rsquo; 발표를 통해 DC/OS는 입증되고 유연하며 이식 가능한 오픈 소스와 같은 모든 고객 기준을 충족합니다. Microsoft는 새로운 오픈 소스 DC/OS 커뮤니티의 창립 멤버임을 자랑스럽게 생각하며, <a href="https://aka.ms/ACS_GA">현재 일반 공급</a>에 진입함에 따라 DC/OS를 새 Azure Container Service의 핵심 구성 요소로 만들었습니다. Azure Container Service는 클라우드에서 컨테이너 애플리케이션을 실행하는 가장 개방적이고 유연한 방법입니다. Docker 이미지에 대한 완전한 지원은 개별 컨테이너의 이식성을 제공하며, 오케스트레이션 계층에서 오픈 소스 소프트웨어만 사용하겠다는 약속은 퍼블릭 및 프라이빗 클라우드 솔루션과 온-프레미스에서 애플리케이션의 이식성을 제공합니다.</p>
+
+
+  <h3>DC/OS란?</h3>
+
+
+  <p>DC/OS의 핵심은 검증된 Apache Mesos 기술입니다. Mesos는 Linux 커널과 같은 분산 시스템 커널로 설명되었지만 애플리케이션을 예약하고 전체 데이터 센터에서 리소스를 관리할 수 있도록 클러스터의 각 컴퓨터에서 실행됩니다. 2009년 UC 버클리에서 시작된 Mesos는 트위터와 다른 사람들이 하이퍼스케일 클라우드 서비스를 구축하기 위해 신속하게 채택했습니다. 분산 시스템과 애플리케이션을 빌드하고 실행하는 것이 어렵다는 것은 잘 알려진 격언이므로 고객은 프로덕션에서 전투 테스트를 받은 솔루션을 원합니다. <a href="https://mesos.apache.org/documentation/latest/powered-by-mesos/">이제 Powered By Mesos 목록에는</a> AirBnb, Apple, Netflix와 같은 이름이 포함됩니다. PayPal 옐프. 분명히 Mesos는 입증 된 실적을 가지고 있습니다.</p>
+
+
+  <p>그러나 커널만으로는 대부분의 애플리케이션을 실행하기에 충분하지 않습니다. 일반적으로 필요한 다른 기능에는 서비스 검색 및 부하 분산, 배포 및 패키지 관리, 로깅 및 메트릭, 웹 및 명령줄 사용자 인터페이스가 포함됩니다. Mesosphere는 데이터 센터 운영 체제의 일부로 이러한 구성 요소의 대부분을 빌드했으며, 이제 다음을 포함하여 완전히 오픈 소스 DC/OS 프로젝트에 포함됩니다.</p>
+
+
+  <ul>
+      <li>Marathon: Mesos를 기반으로 실행되는 Acontainer&nbsp; 오케스트레이터 플랫폼입니다. Marathon은 Azure Container Service를 구동하는 핵심 기술 중 하나입니다.</li>
+      <li>Universe: 분산 시스템 배포 환경과 같은 앱 스토어 및 분산 작업 스케줄러인 Chronos와 같은 추가 관리 구성 요소를 제공합니다.</li>
+      <li>DC/OS UI 및 DC/OS CLI: 웹 또는 명령줄에서 DC/OS를 운영하는 경우</li>
+      <li>설치 관리자: 온-프레미스 및 클라우드용 GUI 기반 설치</li>
+  </ul>
+
+
+  <p>DC/OS는 이러한 모든 기능을 단일 소프트웨어 배포로 번들로 묶는 유일한 오픈 소스 프로젝트입니다. DC/OS는 데이터 센터 확장 서비스를 실행하기 위한 안정적이고 검증된 커널을 기반으로 구축되었으며, Mesosphere가 이끄는 커뮤니티와 <a href="https://dcos.io/community/">Microsoft, Hewlett-Packard Enterprise, Intel, Cisco, Verizon 및 Yelp</a>를 포함한 50개 이상의 기술 회사 및 DC/OS 사용자를 포함한 커뮤니티에서 지원하는 완전한 오픈 소스 솔루션을 제공합니다.</p>
+
+
+  <h3>솔루션의 성장 우주</h3>
+
+
+  <p>운영 체제에는 애플리케이션 및 솔루션과 배포하기 쉬운 방법도 필요합니다. DC/OS Universe는 Apt 또는 Yum과 달리 패키지 관리 및 배포 시스템이 아니라 Apache Spark, Kafka, Cassandra 및 Zeppelin 등을 비롯한 분산 시스템의 경우<a href="https://mesosphere.com/blog/2016/04/19/open-source-dcos/#available-services">입니다.</a> DC/OS의 고유한 이점 중 하나는 동일한 클러스터에서 컨테이너 및 데이터 분석 애플리케이션을 실행하는 기능이며, Universe는 이를 쉽게 만드는 데 핵심적인 요소입니다. 또한 개발자가 DC/OS에서 실행되는 솔루션을 패키지하고 게시할 수 있는 방법을 제공하므로 Universe는 확장될 예정입니다. Universe 웹 UI는 이러한 솔루션을 찾아 DC/OS 클러스터에 배포하기 위한 환경과 같은 앱 스토어를 제공합니다.</p>
+
+
+  <h3>Microsoft Azure DC/OS 실행</h3>
+
+
+  <p>오늘 일반 공급 발표를 발표한 <a href="https://aka.ms/ACS_GA">Azure Container Service </a>는 DC/OS를 사용하여 사용하기 쉽고 강력하지만 신뢰할 수 있는 방식으로 대규모 컨테이너를 오케스트레이션합니다. Azure Container Service를 사용하면 사용자는 클러스터의 크기 및 위치와 같은 매우 작은 매개 변수 집합을 제공하여 몇 분 만에 대규모로 배포할 수 있는 DC/OS의 참조 구현을 얻을 수 있습니다. Azure Container Service는 학습 및 실험 또는 프로덕션 워크로드를 위해 DC/OS를 시작하는 가장 쉬운 방법이라고 생각합니다.</p>
+
+
+  <p>Azure Container Service는 배포를 쉽고 가장 많이 사용하는 사례와 알려진 안정적인 구성을 지원하기 위한 최소 구성을 제공합니다. 물론 고객은 DC/OS 클러스터의 구성을 보다 세세하게 제어해야 합니다. 이러한 사용자의 경우 Mesosphere와 Microsoft는 AZURE Marketplace에 DC/OS를 배치하기 위해 파트너로 협력했습니다. Marketplace 버전의 DC/OS의 목표는 항상 Azure에서 사용할 수 있는 완전히 구성 가능한 최신 버전의 DC/OS를 사용하는 것입니다.</p>
+
+
+  <p>Microsoft는 처음부터 DC/OS 프로젝트에 참여해 왔습니다. 고객은 단일 공급업체에 잠그지 않은 솔루션을 원하거나 퍼블릭 클라우드, 프라이빗 데이터 센터 또는 선호하는 로컬 호스터 중에서 선택하도록 강제하는 솔루션을 원했기 때문에 오픈 소스 기술에서 Azure Container Service를 빌드하도록 요청했습니다. 오픈 소스 컨테이너 오케스트레이션 솔루션의 선도적인 공급자인 Mesosphere와의 파트너십을 통해 이러한 고객의 요구를 충족하고 있습니다. 새로운 DC/OS 커뮤니티와의 협업은 이 약속에 따라 더욱 확장될 것입니다.</p>
+
+
+  <h3>다음 단계는 무엇입니까&rsquo;?</h3>
+
+
+  <p>DC/OS를 시도하는 가장 쉬운 방법은 현재 <a href="https://azure.microsoft.com/en-us/services/container-service/">Azure Container Service</a> 인스턴스를 시작하는 것입니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/container-service-deployment/">자습서를 사용해 보세요</a>. 더 많은 옵션을 보려면 <a href="https://azure.microsoft.com/en-us/marketplace/partners/mesosphere/dcosdcos/">Azure Marketplace</a>에서 시작하여 전체 DC/OS를 사용해 보세요. 자세한 내용은 DC/OS <a href="https://dcos.io/docs/latest/">에 대한 설명서 및 자습서</a> 를 참조하세요.</p>
+
+
+  <p>Microsoft는 계속해서 DC/OS에 기여하여 프로젝트를 개선하고 Azure에서 잘 작동하도록 할 것입니다. 또한 Microsoft는 Mesosphere와 협력하여 Apache Mesos 프로젝트에 <a href="https://mesosphere.com/blog/2015/08/20/mesos-everywhere-apache-mesos-for-windows-server">Windows 지원을</a> 추가하고 있습니다. 작업이 완료되면 DC/OS를 Windows 및 Linux의 혼합 환경으로 확장할 수 있습니다.</p>
+
+
+  <p><a href="https://dcos.io/community/">또한 DC/OS 커뮤니티에 참여</a>하도록 초대합니다. 프로젝트&rsquo; <a href="https://chat.mesosphere.com/?_ga=1.215026003.538419389.1461102916">Slack 채널</a>에서 DC/OS에 대한 대화에 참여합니다. <a href="https://github.com/dcos">GitHub</a> 코드를 가져옵니다. 또는 등록하고 코드에 기여하거나 자습서를 작성합니다.</p>
+
+
+  <p>마지막으로,&rsquo; DC/OS를 개발하고 이 새로운 오픈 소스 커뮤니티를 조직하는 모든 작업과 Azure Container Service의 일부로 DC/OS를 제공하는 Microsoft와의 파트너십에 대해 Mesosphere 팀 전체에 감사드립니다.</p>

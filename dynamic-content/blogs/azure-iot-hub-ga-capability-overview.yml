@@ -1,0 +1,73 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9588c9f558b10fd52dea29b226684b6cc433703e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906178"
+Slug: azure-iot-hub-ga-capability-overview
+Title: Azure IoT Hub 일반 공급 개요
+Summary: 2월 4일에 Azure IoT Hub의 일반 공급이 발표되었습니다. 이 서비스는 디바이스에 명령을 안전하게 연결, 프로비전, 업데이트 및 보내기 위한 기능을 제공합니다.
+Content: >-
+  <div class="SCX9952457">
+
+  <div class="OutlineElement Ltr SCX9952457">
+
+  <p><em>이 게시물은 니콜 베르디에 의해 공동 저술되었다, 프로그램 관리자 II, Azure IoT.&nbsp;</em></p>
+
+
+  <p>IoT( <a href="https://www.microsoft.com/en-us/server-cloud/internet-of-things/overview.aspx">사물 인터넷</a> )는 기업이 운영을 개선하고, 작업을 보다 효율적으로 수행하고, 새로운 수익원을 만들 수 있는 새로운 기회를 제공하고 있습니다.<a href="https://www.microsoft.com/en-us/server-cloud/internet-of-things/overview.aspx">Microsoft는 IoT가 비즈니스에</a> 가장 중요한 요소인 사물에서 시작한다고 믿습니다. 고객이 IoT를 최대한 활용할 수 있도록 Microsoft는 지난 가을 Azure IoT Hub의 Azure IoT Suite 및 공개 미리 보기를 도입했습니다.</p>
+
+
+  <p>2월 4일에 <strong>Azure IoT Hub</strong>의 일반 공급이 발표되었습니다. 이 서비스는 디바이스에 명령을 안전하게 연결, 프로비전, 업데이트 및 보내기 위한 기능을 제공합니다. IoT Hub를 사용하면 기업은 광범위한 운영 체제 및 프로토콜 집합에서 실행되는 수백만 개의 IoT 자산을 제어하여 IoT 프로젝트를 바로 시작합니다.</p>
+
+
+  <p>IoT Hub에는 공개 미리 보기로 출시된 풍부한 기능 집합 외에도 몇 가지 흥미로운 새로운 기능이 있습니다. 일반 공급은 다음과 같은 기능을 제공합니다.</p>
+
+
+  <dir>
+
+  </dir>
+
+
+  <dir>
+
+  </dir>
+
+
+  <ul style="margin-left: 40px;">
+      <li><strong>대량 디바이스 ID 가져오기/내보내기:</strong> 디바이스 ID를 IoT Hubs&rsquo; 디바이스 레지스트리로 대량으로 가져오거나 장애 조치(failover)를 위해 다른 IoT Hub로 가져올 디바이스 목록을 내보낼 수 있습니다.</li>
+      <li><strong>작업 모니터링:</strong> 사용자는 디바이스 ID 작업, 디바이스 원격 분석, 클라우드-디바이스 명령 및 연결의 네 가지 범주에 걸쳐 IoT Hub에서 실시간으로 작업 상태를 모니터링할 수 있습니다.</li>
+      <li><strong>진단 메트릭:</strong> 이 기능은 구독의 Azure 리소스 상태에 대한 더 나은 데이터를 제공하기 위해 Azure 전체 메트릭 푸시의 일부입니다. 메트릭을 사용하면 IoT Hub 및 연결된 디바이스의 전반적인 상태를 평가할 수 있습니다.</li>
+      <li><strong>MQTT에 대한 기본 지원:</strong> Azure IoT SDK(또는 OSS 라이브러리)는 이제 MQTT 3.1.1 프로토콜을 사용하여 IoT Hub에 연결할 수 있으며 프로토콜 게이트웨이가 필요하지 않습니다. 프로토콜 게이트웨이를 사용하여 사용자 지정 프로토콜을 지원할 수 있습니다.</li>
+      <li><strong>WebSocket을 통해 AMQP:</strong> 이제 방화벽 요구 사항이 이전에 AMQP 사용을 차단한 시나리오에서 AMQP 프로토콜을 사용할 수 있습니다.</li>
+      <li><strong>세 가지 새 지역의 가용성:</strong> 원래 세 지역(동아시아, 미국 동부 및 북유럽) 외에도 이제 동남 아시아, 서유럽 및 미국 서부에서 IoT Hub를 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <p>이러한 모든 훌륭한 기능은 공개 미리 보기의 기능 집합 릴리스 외에도 제공됩니다.</p>
+
+
+  <dir>
+
+  </dir>
+
+
+  <dir>
+
+  </dir>
+
+
+  <ul>
+      <li><strong>디바이스별 인증 및 보안 연결:</strong> 각 디바이스는 자체 보안 키를 사용하여 IoT Hub에 연결합니다. 애플리케이션 백 엔드는 디바이스 액세스를 완전히 제어할 수 있도록 각 디바이스를 개별적으로 허용 목록에 추가 및 차단 목록에 추가할 수 있습니다.</li>
+      <li><strong>광범위한 디바이스 라이브러리 집합: </strong>Azure IoT 디바이스 SDK는 C/C#, Java 및 JavaScript와 같은 다양한 언어 및 플랫폼에서 사용할 수 있고 지원됩니다.</li>
+      <li><strong>IoT 프로토콜 및 확장성:</strong> IoT Hub는 디바이스 연결을 위해 HTTP 1.1 및 AMQP 1.0 프로토콜을 기본적으로 지원합니다.</li>
+      <li><strong>규모:</strong> IoT Hub는 수백만 개의 동시에 연결된 디바이스와 초당 수백만 개의 이벤트로 확장됩니다.</li>
+  </ul>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide">IoT Hub 개발자 가이드</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/iot-hub/">Azure.com 설명서</a>에서 IoT Hub의 기술 기능에 대해 알아봅니다. IoT 기술 및 프로토콜을 사용하여 프로젝트에 적합한 선택을 할 수 있도록 <a href="https://azure.microsoft.com/en-us/overview/internet-of-things-iot/iot-technology-protocols/">IoT 기술</a> 자료를 빌드합니다. <a href="https://portal.azure.com/">Azure</a> Portal로 이동하여 Azure IoT Hub를 사용하여 고유한 IoT 솔루션 빌드를 시작합니다.</p>
+
+  </div>
+
+  </div>

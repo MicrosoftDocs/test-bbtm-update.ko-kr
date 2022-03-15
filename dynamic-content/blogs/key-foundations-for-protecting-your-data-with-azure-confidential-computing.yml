@@ -1,0 +1,126 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f65fa7bbde169fd3205133f1e5b18db7825aaf5e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905487"
+Slug: key-foundations-for-protecting-your-data-with-azure-confidential-computing
+Title: Azure 기밀 컴퓨팅을 사용하여 데이터를 보호하기 위한 주요 기초
+Summary: 데이터 세트의 기하급수적인 성장으로 인해 소비자 데이터 개인 정보 보호 및 규정 준수 관점에서 데이터가 노출되는 방식에 대한 조사가 증가했습니다. 이러한 맥락에서 기밀 컴퓨팅은 조직이 비즈니스 및 소비자 데이터를 둘러싼 개인 정보 보호 및 보안 요구를 충족하는 데 도움이 되는 중요한 도구가 됩니다.
+Content: >-
+  <p>데이터 세트의 기하급수적인 성장으로 인해 소비자 데이터 개인 정보 보호 및 규정 준수 관점에서 데이터가 노출되는&mdash; 방식에 대한 조사가 증가하고 있습니다. 이러한 맥락에서 <a href="https://aka.ms/AzureCC" target="_blank">기밀 컴퓨팅</a> 은 조직이 비즈니스 및 소비자 데이터를 둘러싼 개인 정보 보호 및 보안 요구를 충족하는 데 도움이 되는 중요한 도구가 됩니다.</p>
+
+
+  <p>기밀 컴퓨팅 기술은 메모리의 데이터를 암호화하고 클라우드 환경이 확인된 후에만 처리하므로 클라우드 운영자, 악의적인 관리자 및 하이퍼바이저와 같은 권한 있는 소프트웨어의 데이터 액세스를 방지합니다. 이 기능은 미사용 및 전송 중인 데이터를 보호하는 기존 솔루션에 더해 수명 주기&mdash; 내내 데이터를 보호하도록 도와줍니다. 이제 사용 중인 동안 데이터가 보호됩니다.</p>
+
+
+  <p>기밀 컴퓨팅 덕분에 전 세계 조직은 이제 이전에는 불가능했던 기회를 잠금 해제할 수 있습니다. 예를 들어 이제 다자간 데이터 분석 및 기계 학습을 통해 공유하지 않거나 공유할 수 없었던 당사자의 데이터 세트를 결합하여 참가자 간에 데이터를 비공개로 유지할 수 있습니다. 실제로 RBC는 고객이 더 최적화된 할인을 옵트인할 수 있도록 개인 정보 보호 분석을 위한 <a href="https://aka.ms/RBCstory" target="_blank">플랫폼을 만들었습니다</a> . 이 플랫폼은 RBC&rsquo; 신용 카드 및 직불 카드 거래를 소비자가 구매한 특정 품목의 소매업체 데이터와 기밀로 결합하여 소비자 구매 선호도에 대한 통찰력을 생성합니다.</p>
+
+
+  <h2>업계 리더십 및 표준화</h2>
+
+
+  <p>Microsoft는 오랫동안 기밀 컴퓨팅 분야의 사고 리더였습니다. Azure는 고객이 TE(신뢰할 수 있는 실행 환경) 내에서 가장 중요한 워크로드를 실행할 <strong>수 있도록 Kubernetes에서 기밀 컴퓨팅 가상 머신 및 기밀 컨테이너 지원을 제공하는 최초의 클라우드 공급자가 되었을 때 클라우드에 기밀 컴퓨팅&rdquo;을 도입했습니다.&ldquo;</strong> Microsoft는 또한 <a href="https://confidentialcomputing.io/" target="_blank"><strong>CCC(기밀 컴퓨팅 컨소시엄)</strong></a>&nbsp;&nbsp;의 창립 멤버이며, 하드웨어 제조업체, 클라우드 공급자 및 솔루션 공급업체를 한데 모아 기술 산업 전반에서 데이터 보호를 개선하고 표준화하는 방법에 대해 공동으로 작업합니다.</p>
+
+
+  <h2>기밀 컴퓨팅 기반</h2>
+
+
+  <p>기밀성 표시줄은 기밀 컴퓨팅을 위한 포괄적인 기반을 제공하기 위해 CCC에서 설정한 막대를 정렬하고 확장합니다. Microsoft는 Microsoft 운영자, 자체 운영자 또는 둘 다에서 데이터를 격리할 수 있는 기술 컨트롤을 고객에게 제공하기 위해 노력하고 있습니다. Azure에는 고객 테넌트 간의 하이퍼바이저 격리를 넘어 Microsoft 운영자의 액세스로부터 고객 데이터를 보호하는 기밀 컴퓨팅 제품이 있습니다. 또한 고객 운영자의 액세스를 방지하기 위해 보안 Enclave가 있는 기밀 컴퓨팅도 있습니다.</p>
+
+
+  <p>기밀 컴퓨팅의 기초는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>데이터가 보호되고 실리콘에 고정되도록 <strong>하는 하드웨어 신뢰 루트</strong>입니다. 신뢰는 하드웨어 제조업체에 기반하므로 Microsoft 운영자도 하드웨어 구성을 수정할 수 없습니다.</li>
+      <li>고객이 환경의 무결성을 직접 확인할 수 있는 <strong>원격 증명</strong>입니다. 고객은 워크로드가 실행되는 하드웨어와 소프트웨어가 모두 승인된 버전이고 데이터에 액세스할 수 있도록 허용하기 전에 보안이 유지되는지 확인할 수 있습니다.</li>
+      <li><strong>신뢰할 수 있는 시작</strong> 은 권한 있는 소프트웨어로 가상 머신이 부팅되도록 하고 고객이 확인할 수 있도록 원격 증명을 사용하는 메커니즘입니다. &rsquo;기밀 VM, 보안 부팅 및 vTPM을 포함한 모든 VM에서 사용할 수 있으며 루트킷, 부트킷 및 악성 펌웨어에 대한 방어를 추가합니다.</li>
+      <li><strong>메모리 격리 및 암호화</strong> 를 통해 데이터를 처리하는 동안 데이터를 보호합니다. Azure는 VM, 컨테이너 또는 애플리케이션에 의한 메모리 격리를 제공하여 고객의 다양한 요구 사항을 충족하고 하드웨어 기반 암호화를 제공하여 데이터 센터에서 물리적 액세스가 있더라도 데이터를 무단으로 볼 수 없도록 합니다.</li>
+      <li><strong>키 관리를 보호</strong> 하여 키가 수명 주기 동안 암호화된 상태로 유지되고 권한 있는 코드로만 해제되도록 합니다.</li>
+  </ul>
+
+
+  <p>위의 구성 요소는 기밀 컴퓨팅이라고 생각하는 요소의 기초를 형성합니다. 현재 Azure에는 다른 클라우드 공급업체보다 하드웨어 및 소프트웨어에 걸친 기밀 컴퓨팅 옵션이 더 많이 있습니다.</p>
+
+
+  <h2>혁신적인 새 하드웨어</h2>
+
+
+  <p><a href="https://aka.ms/DCsv3Blog" target="_blank">새로운 Intel 기반 DCsv3 기밀 VM</a>에는 하드웨어로 보호되는 애플리케이션 Enclave를 구현하는 Intel SGX가 포함됩니다. 개발자는 SGX enclave를 사용하여 중요한 데이터에 대한 액세스 권한이 있는 코드의 양을 최소한으로 줄일 수 있습니다. 또한 각 VM이 고유한 하드웨어 키로 보안을 설정할 수&nbsp; 있도록 TME-MK(Total Memory Encryption-Multi-Key)를 사용하도록 설정합니다.</p>
+
+
+  <p><a href="https://aka.ms/DCasv5Blog" target="_blank">사용 가능한 새로운 AMD 기반 DCasv5/ECasv5 기밀 VM</a>은 SEV-SNP(Secure Encrypted Virtualization-Secure 중첩 페이징)를 제공하여 다른 가상 머신, 하이퍼바이저 및 호스트 관리 코드로부터 데이터를 보호하는 하드웨어 격리 가상 머신을 제공합니다. 고객은 코드를 변경하지 않고 기존 가상 머신을 리프트 앤 시프트할 수 있으며, 필요에 따라 관리하거나 Microsoft에서 관리하는 키를 사용하여 향상된 디스크 암호화를 활용할 수 있습니다.</p>
+
+
+  <p>컨테이너화된 워크로드를 지원하기 위해 AKS(Azure Kubernetes Service)에서 모든 기밀 VM을 작업자 노드 옵션으로 사용할 수 있도록 하고 있습니다. 이제 고객은 Intel SGX 또는 AMD SEV-SNP 기술로 컨테이너를 보호할 수 있습니다.</p>
+
+
+  <p>Azures&rsquo; 메모리 암호화 및 격리 옵션은 다른 클라우드보다 더 강력하고 포괄적인 고객 데이터를 보호합니다.</p>
+
+
+  <h2>산업 전반에서 고객 성공</h2>
+
+
+  <p>많은 조직에서 이미 Azure 기밀 컴퓨팅의 뛰어난 데이터 개인 정보 보호 및 보안 이점을 활용하고 있습니다.</p>
+
+
+  <p><a href="https://aka.ms/ACC-SAIL" target="_blank">보안 AI Labs</a> 는 AMD 기반 가상 머신의 프라이빗 미리 보기를 사용하여 의료 연구원이 의료 공급자와 보다 쉽게 협업하여 연구를 진행할 수 있는 플랫폼을 만들고 있습니다. Secure AI Labs Inc.의 엔지니어링 부사장인 Luis Huapaya는 Azure 기밀 컴퓨팅으로 인해 보안 AI Labs는 보안을 희생하지 않고도 Azure에서 실행되는 모든 이점을 실현할 수 있다고 언급 &ldquo;했습니다. Azure confidentialcomputingmight&nbsp; 내에서 가상 페이로드를&nbsp; 실행하는 것이 프라이빗 서버 온-프레미스에서 실행하는 것보다 더 안전하다고 주장할 수 있습니다. 또한 가상 페이로드에 해당 ID의 암호화 증명을 제공하고 enclave 내에서 실행 중인지 확인할 수 있는 기능을 제공하기 때문에 중요한 보안 기능인 원격 증명을 제공합니다. AMD SEV-SNP를 사용한 Azure 기밀 컴퓨팅을 사용하면 작업을 훨씬 쉽게 수행할 수 있습니다.&rdquo;</p>
+
+
+  <p>규제 산업이 규정 준수 요구 사항과 매우 중요한 데이터&nbsp;로 인해 얼리 어답터로 사용되었지만 제조에서 소매 및 에너지에 이르기까지 산업 전반에 걸쳐 관심이 증가하고 있습니다.</p>
+
+
+  <p>높은 보안 및 개인 정보 보호로 유명한 전 세계 메시징 앱인 <a href="https://customers.microsoft.com/en-us/story/1374464612401582154-signal-nonprofit-azure-security" target="_blank">Signal Messenger</a>는 Intel SGX와 함께 Azure 기밀 컴퓨팅을 활용하여 연락처 정보와 같은 고객 데이터를 보호합니다.&nbsp; Signal의 엔지니어링 부사장인 Jim OLeary&rsquo;는 &ldquo;매일 수백만 명의 보안 및 개인 정보 보호 기대치를 충족하기 위해 Azure 기밀 컴퓨팅을 활용하여 서비스에 확장 가능하고 안전한 환경을 제공합니다. 신호는 사용자를 최우선으로 하며, Azure는 기밀 컴퓨팅을 통해 데이터 보호의 최전선에 서도록 도와줍니다.&rdquo;</p>
+
+
+  <p>조직에서 고객의 개인 정보 보호 요구를 충족하기 위해 Azure 기밀 컴퓨팅의 데이터 보호에 대한 확신을 가지고 Azure에 더 많은 워크로드를 가져오는 것을 보게 되어 기쁩니다.</p>
+
+
+  <h2>Azure 기밀 클라우드</h2>
+
+
+  <p>Azure는 클라우드에서 에지로의 세계&rsquo; 컴퓨터입니다. 모든 산업의 모든 규모의 고객은 다중 클라우드, 온-프레미스 및 에지에서 애플리케이션을 혁신, 빌드 및 안전하게 운영하려고 합니다. HTTPS가 인터넷 웹 검색 중에 데이터를 보호하는 데 만연한 것처럼, 여기서는 Azure에서 기밀 컴퓨팅이 모든 컴퓨팅 인프라에 필요한 요소가 될 것이라고 믿습니다.&nbsp;</p>
+
+
+  <p><strong>우리의 비전은 Azure 클라우드를 Azure 기밀 클라우드로 변환하여 명확한 컴퓨팅에서 클라우드 및 에지에서 기밀로 컴퓨팅으로 전환하는 것입니다. </strong> Microsoft는 고객이 모든 워크로드에 대해 최고 수준의 개인 정보 보호 및 보안을 달성할 수 있도록 지원하려고 합니다.</p>
+
+
+  <p>보안 솔루션을 발전시키기 <a href="https://www.linkedin.com/posts/satyanadella_thank-you-president-biden-for-convening-activity-6836412665846472704-bELj/" target="_blank">위해 향후 5년간 200억 달러의 투자</a>와 함께 하드웨어 공급업체와 협력하여 Microsoft 내에서 혁신하여 고객에게 최고 수준의 데이터 보안 및 개인 정보를 제공할 것입니다&nbsp;.&nbsp; 기밀 클라우드를 선도하는 세계가&rsquo; 되기 위한 여정에서는 Azure 인프라 전반에서 수평적으로 그리고 Azure에서 실행되는 모든 Microsoft 서비스 통해 수직적으로 기밀 컴퓨팅 혁신을 추진합니다&nbsp;.</p>
+
+
+  <p><a href="https://aka.ms/AzureCC" target="_blank">Azure 기밀 컴퓨팅</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <h3>최신 기밀 컴퓨팅 제품에 대해 자세히 알아보기</h3>
+
+
+  <ul>
+      <li><a href="https://aka.ms/DCsv3Blog" target="_blank">Intel SGX 보안 Enclave가 있는 기밀 가상 머신(미리 보기)</a></li>
+      <li><a href="https://aka.ms/DCasv5Blog" target="_blank">AMD SEV-SNP(미리 보기)를 사용하는 기밀 VM</a>.</li>
+      <li>모든 Azure Gen 2 가상 머신에서 보안 부팅 및 vTPM을 사용하여 신뢰할 수 있는 <a href="https://aka.ms/TrustedLaunchBlog" target="_blank">시작을</a> 실행하여 VM에서 신뢰할 수 있는 코드만 실행되는지 확인합니다.</li>
+  </ul>
+
+
+  <h3>기밀 서비스, 도구 및 프레임워크 시작</h3>
+
+
+  <ul>
+      <li><a href="https://aka.ms/ACLblog" target="_blank">Azure Portal을 통해 Azure 기밀 원장이</a> 미리 보기로 제공됩니다.</li>
+      <li><a href="https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-enclaves" target="_blank">보안 enclave를 사용하여 Always Encrypted를 SQL.</a></li>
+      <li><a href="https://docs.microsoft.com/azure/key-vault/managed-hsm/overview" target="_blank">Azure Key Vault 관리형 HSM</a>.</li>
+      <li><a href="https://docs.microsoft.com/azure/attestation/overview" target="_blank">Microsoft Azure 증명</a>입니다.</li>
+      <li>프라이빗 블록체인 기반 원장에 대한 <a href="https://github.com/microsoft/CCF" target="_blank">CCF(기밀 컨소시엄 프레임워크)</a> 오픈 소스 프레임워크입니다.</li>
+      <li>데이터에 대한 C/C++ 코드 줄 제어용 <a href="https://github.com/openenclave/openenclave" target="_blank">Enclave</a> 오픈 소스 SDK를 엽니다.</li>
+      <li>기밀 ML 유추를 위한 <a href="https://github.com/microsoft/onnxruntime-openenclave" target="_blank">ONNX 런타임</a> 오픈 소스 프레임워크입니다.</li>
+      <li><a href="https://github.com/deislabs/mystikos" target="_blank">.Net 앱을 애플리케이션 Enclave로 포팅하기 위한 Mystikos입니다</a>.</li>
+      <li>IoT Edge에서&nbsp; 기밀 컴퓨팅을 위한 <a href="https://aka.ms/edb-blogs-msft" target="_blank">Enclave 디바이스 청사진</a>입니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-containers" target="_blank">AKS의 기밀 컨테이너</a>.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/confidential-computing/confidential-nodes-aks-overview" target="_blank">기밀 컴퓨팅 노드가 있는 AKS.</a></li>
+  </ul>
+
+
+  <hr>
+
+  <p><em>Azure. 목적에 따라 발명.</em></p>

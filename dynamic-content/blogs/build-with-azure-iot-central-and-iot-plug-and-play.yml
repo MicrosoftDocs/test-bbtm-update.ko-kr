@@ -1,0 +1,106 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3e339c5641531ff690c882b6a2d67fd7e9e860c5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906072"
+Slug: build-with-azure-iot-central-and-iot-plug-and-play
+Title: Azure IoT Central 및 IoT 플러그 앤 플레이로 빌드
+Summary: Microsoft는 파트너 및 고객이 심층적인 전문 지식 없이도 아이디어에서 파일럿, 프로덕션으로 신속하게 전환할 수 있도록 클라우드 및 에지에서 강력하면서도 간편하게 사용할 수 있는 IoT 제품을 제공하는 것이 우리의 사명입니다. Azure IoT Central 및 IoT 플러그 앤 플레이는 고객이 어디에서 시작하든 신뢰할 수 있는 연결된 솔루션을 빠르고 쉽게 만들 수 있도록 IoT 여정을 간소화하는 데 핵심적인 역할을 합니다.
+Content: >-
+  <p>Weve&rsquo;는 파트너 및 고객이 심층적인 전문 지식 없이도 아이디어에서 파일럿, 프로덕션으로 신속하게 전환할 수 있도록 클라우드와 에지에서 강력하면서도 간편하게 사용할 수 있는 IoT 제품을 제공하는 것이 우리의 사명입니다. <a href="https://aka.ms/iotc-overview" target="_blank">Azure IoT Central</a> 및 IoT 플러그 앤 플레이는 고객이 어디에서&rsquo; 시작하든 신뢰할 수 있는 연결된 솔루션을 빠르고 쉽게 만들 수 있도록 IoT 여정을 간소화하는 데 핵심적인 역할을 합니다.</p>
+
+
+  <h2>Azure IoT Central을 사용하여 새 데이터 스트림을 비즈니스 프로세스에 통합</h2>
+
+
+  <p>Azure IoT Central은 IoT 디바이스 및 제품을 쉽게 연결, 모니터링 및 관리할 수 있는 완전 관리형 IoT 솔루션입니다. Azure IoT Central은 IoT 솔루션의 초기 설정을 단순화하고 일반적인 IoT 프로젝트의 관리 부담, 운영 비용 및 오버헤드를 줄입니다.</p>
+
+
+  <p>점점 더 많은 개발자와 파트너가 Azure IoT Central을 사용하여 빌드할 수 있는 강력한 기능을 발견하고 있습니다. 이러한 구축 방식을 통해 고객의 요구를 해결하고 비즈니스 가치를 창출하는 데 에너지, 창의성 및 고유한 도메인 전문 지식을 적용할 수 있으며, 고가용성 및 재해 복구를 통해 글로벌 규모의 솔루션을 관리하는 작업을 Microsoft에 맡기게 됩니다. IoT 솔루션 운영, 관리, 보안 및 크기 조정의 어려운 측면을 처리하는 동안 몇 시간 안에 완성된 브랜드 SaaS 제품을 직접 만들 수 있습니다.</p>
+
+
+  <h3>Azure IoT Central의 새로운 기능</h3>
+
+
+  <p>최근에는 Azure IoT Central과 기존&rsquo; 엔터프라이즈 및 고객 라인 비즈니스 솔루션(인사이트 및 작업 포함)을 보다 쉽고 원활하게 통합할 수 있는 기능을 추가했습니다.</p>
+
+
+  <ul>
+   <li><strong>규칙 및 경고</strong>: <a href="https://azure.com/sa" target="_blank">Azure Stream Analytics</a>에서 지원하는 강력한 규칙 엔진을 사용하면 디바이스 상태 및 사용량에 영향을 주는 모든 이벤트를 모니터링하고 경고할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/functions/" target="_blank">Azure Functions</a>, <a href="https://flow.microsoft.com/" target="_blank">Microsoft Flow</a> 및 <a href="https://azure.com/logicapps" target="_blank">Logic Apps</a>와 통합하여 비즈니스 앱에 깨끗하고 일관된 데이터를 제공합니다.</li>
+   <li><strong>시각화</strong>: 다양한 유형의 사용자에 대해 여러 대시보드 및 데이터 시각화 옵션을 사용할 수 있습니다. 이제 애플리케이션 관리자는 하나의 크기에 맞는 모든 접근 방식을 사용하는 대신 다양한 유형의 사용자에 대한 사용자 지정 보기를 만들 수 있습니다.</li>
+   <li><strong>커넥터</strong>: 인바운드 및 아웃바운드 데이터 커넥터를 사용하면 운영자가 타사 시스템과 통합할 수 있습니다. <a href="https://aka.ms/iotcentralgithubdevicebridge" target="_blank">디바이스 브리지</a>를 사용하여 다른 클라우드의 데이터를 Azure IoT Central 애플리케이션으로 수집합니다. 예를 들어 <a href="https://aka.ms/iotcentraldocscontinuousdataexport" target="_blank">연속 데이터 내보내기</a> 기능은 다운스트림 비즈니스 애플리케이션에 데이터를 제공합니다.</li>
+   <li><strong>개인 설정</strong>: 조직의&rsquo; 다른 애플리케이션에 더 나은 시각적 개체를 위해 새 흰색 레이블 지정 옵션을 사용하여 Azure IoT Central 애플리케이션에 사용자 지정 브랜딩 및 운영자 리소스를 추가합니다.</li>
+   <li><strong>디바이스 관리</strong>: 쉽게 대규모로 디바이스를 관리합니다. 이전에 만든 작업을 복사하고, 나중에 완료할 작업을 저장하고, 실행 중인 작업을 중지하거나 다시 시작하고, 완료 후 작업 세부 정보 보고서를 다운로드합니다. 새 디바이스 템플릿 라이브러리를 사용하면 디바이스를 더 쉽게 온보딩하고 모델링할 수 있으며, 새 디바이스 작성은 템플릿을 디바이스와 분리하고 전체 환경을 간소화합니다.</li>
+  </ul>
+
+
+  <h3>산업 전반에서 혁신 활성화</h3>
+
+
+  <p>오늘날 Azure IoT Central과 함께 구축하는 고객은 글로벌 전력 관리 회사인 <strong>Eaton</strong>을 포함합니다. Eaton은 보다 효율적이고 안전하며 지속 가능한 전기, 유압 및 기계적 전력을 효과적으로 관리하는 에너지 효율적인 솔루션을 제공합니다. Eaton은 Azure IoT Central을 사용하여 업계 최초의 EMCB(에너지 관리 회로 차단기)에 대한 간편한 애플리케이션 개발을 가능하게 합니다. 표준 회로 차단기의 안전 기능과 그리드 최적화를 지원하기 위해 기본 제공되는 클라우드 연결 및 온보드 인텔리전스를 갖춘 차세대 &ldquo;스마트 차단기&rdquo; 입니다. 회로 차단기 기술의 중요한 변환이며 수익 등급 분기 회로 계량, 통신 기능 및 원격 액세스를 제공합니다.</p>
+
+
+  <p><a href="https://customers.microsoft.com/en-us/story/sagegreenlife-smart-spaces-azure-cradlepoint" target="_blank"><strong>Sagegreenlife</strong></a>는 또한 <a href="https://cradlepoint.com/news/cradlepoint-and-microsoft-create-integrated-solution-simplify-and-accelerate-enterprise-iot"><strong>크래들포인트</strong></a>와 협력하여 Azure IoT Central을 사용하여 우수한 고객 경험을 보장하고 있습니다. Sagegreenlife는 모듈식, 확장 가능하고 유연한 생활 벽을 만들어 생활 디자인을 현대 환경에 주입합니다. 생활 디자인은 기술, 과학 및 디자인을 결합하여 자연 요소를 가정, 사무실, 학교, 상점, 병원 및 기타 일상 구조에 통합함으로써 환경에 생명을 불어 넣습니다. Azure IoT Central을 사용하면 Sagegreenlife가 공장에 영향을 미치기 전에 운영 효율성을 개선하고 문제를 해결할 수 있습니다.</p>
+
+
+  <p>복잡성 계층을 제거하고 기존 솔루션 및 비즈니스 프로세스와 통합함으로써 Azure IoT Central은 IoT에서 혁신의 다음 물결을 만드는 데 필요한 단순성을 조직에 제공합니다. Azure IoT Central은 비즈니스를 위해 열려 있으며 현재 사용하고 있는 수천 명의 개발자와 함께 할 준비가 되어 있습니다.</p>
+
+
+  <p>새로운 기능에 대한 아이디어 또는 제안이 있나요? <a href="https://feedback.azure.com/forums/911455-azure-iot-central" target="_blank">UserVoice</a>에 게시합니다. 이미 Azure IoT Central을 탐색하기 시작한 경우&rsquo; 피드백을 들을 수 있도록 이 <a href="https://aka.ms/IOTCSurvey" target="_blank">설문 조사를</a> 고려하세요.</p>
+
+
+  <h2>IoT 플러그 앤 플레이를 사용하여 솔루션과 원활하게 통합되는 디바이스 연결</h2>
+
+
+  <p>모든 IoT 과정의 시작에는 사물을 연결하고 데이터를 가져오는 작업이 포함됩니다. 이를 위해서는 클라우드 개발, 하드웨어 조달, 임베디드 개발 및 시스템 통합 분야를 통합해야 하므로 어려운 첫 번째 단계가 될 수 있습니다. 이러한 프로세스는 종종 프로젝트 타임라인이 길어지고 대부분의 경우 IoT 디지털 변환의 성공적인 완료를 지연하거나 차단할 수 있습니다. Microsoft의 목표는 이 중요한 단계를 훨씬 더 빠르게 완료할 수 있도록 기성 디바이스와 클라우드 솔루션 간의 통합을 제공하는 것입니다. 최근에 IoT 디바이스가 해당 기능을 선언할 수 있는 개방형 모델링 언어를 기반으로 하는 IoT <a href="https://azure.microsoft.com/en-us/blog/intelligent-edge-innovation-across-data-iot-and-mixed-reality/" target="_blank">플러그 앤 플레이(IoT 플러그 앤 플레이</a>)를 발표했습니다.</p>
+
+
+  <h3>간소화된 IoT</h3>
+
+
+  <p>IoT 플러그 앤 플레이를 통해 솔루션 개발자는 포함된 코드를 작성하지 않고도 디바이스를 통합할 수 있습니다. IoT 플러그 앤 플레이의 중심에는 디바이스 기능을 설명하는 스키마가 있습니다. 이를 JSON-LD 문서인 디바이스 기능 모델이라고 합니다. &rsquo;속성(펌웨어 버전과 같은 특성 또는 팬 속도와 같은 설정), 원격 분석(온도와 같은 센서 판독값 또는 경고와 같은 이벤트) 및 디바이스가 수신할 수 있는 명령(예: 재부팅)으로 구성된 인터페이스 집합으로 구성됩니다. 인터페이스를 디바이스 기능 모델에서 재사용하여 공동 작업 및 개발 속도를 촉진할 수 있습니다.</p>
+
+
+  <h3>공동 작업 열기</h3>
+
+
+  <p>IoT 플러그 앤 플레이가 Azure Digital Twins와 원활하게 작동하도록 하기 위해 예정된 <a href="https://aka.ms/DTDL" target="_blank">DTDL(디지털 트윈 정의 언어)</a>과 IoT 플러그 앤 플레이 스키마를 통합했습니다. IoT 플러그 앤 플레이 및 DTDL은 커뮤니티에 공개되며, Microsoft는 고객, 파트너 및 업계 기업과의 협업을 환영합니다. 둘 다 JSON-LD 및 RDF와 같은 개방형 W3C 표준을 기반으로 하므로 서비스 및 도구에서 더 쉽게 채택할 수 있습니다. 또한 IoT 플러그 앤 플레이 및 DTDL 사용에 대한 추가 비용은 없습니다. IoT Hub, Azure IoT Central 및 기타 Azure 서비스에 대한 표준 요금은 동일하게 유지됩니다.</p>
+
+
+  <p>Azure IoT Central을 포함하여 Azure IoT 빌드된 모든 솔루션은 IoT 플러그 앤 플레이를 지원합니다. 현재 Azure IoT Central은 모델링 속성, 원격 분석, 명령 및 의미 체계 형식을 지원합니다. 이제 IoT 플러그 앤 플레이 디바이스 모델로 공식화됩니다. 예를 들어 <a href="https://aka.ms/compalgt100" target="_blank">Compal GT100 추적기는</a> IoT 플러그 앤 플레이에서 사용하도록 설정되며 Azure IoT Central에서 원격 분석을 표시합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ab00d7e2-49a4-4f56-9e81-3786c028cf5a.png"><img alt="Compal GT100 tracker enabled with IoT Plug and Play" border="0" height="572" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c6a8d5b4-31c4-417e-aaef-5407f2df9d4a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT 플러그 앤 플레이에서 사용할 수 있는 Compal GT100 추적기" width="800"></a></p>
+
+
+  <p align="center"><em>IoT 플러그 앤 플레이에서 사용할 수 있는 Compal GT100 추적기</em></p>
+
+
+  <h3>출시 파트너</h3>
+
+
+  <p>IoT 플러그 앤 플레이는 올해 하반기에 미리 보기로 제공될 예정입니다. Weve&rsquo;는 대규모 출시 파트너와 협력하여 하드웨어가 IoT 플러그 앤 플레이에 대한 인증을 받을 수 있도록 했습니다. <a href="https://catalog.azureiotsolutions.com/" target="_blank">카탈로그에서 IoT 플러그 앤 플레이 인증된 디바이스</a>를 찾아보고 해당 기능 모델을 다운로드하거나 다음 파트너에게 문의하여 제품 제품에 대해 자세히 알아보세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a6644f7-4b79-4e5d-b038-af7f4337a746.png"><img alt="Partners offering IoT Plug and Play certified-ready devices" border="0" height="509" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6385033f-cc14-425f-b2a8-001979d0d42a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT 플러그 앤 플레이 인증된 디바이스를 제공하는 파트너" width="800"></a></p>
+
+
+  <p align="center"><em>IoT 플러그 앤 플레이 인증된 디바이스를 제공하는 파트너</em></p>
+
+
+  <p>&rsquo;공개 출시&rsquo;에 앞서 참여하는 방법을 알아보려면 <a href="https://aka.ms/DTDL" target="_blank">현재 GitHub 사용할 수 있는 정의 언어</a>를 검토하고 피드백을 직접 제공하는 것이 좋습니다. 가까운 디바이스 파트너가 IoT 플러그 앤 플레이에 대해 자세히 알아보고 공개 출시에 앞서 Azure Certified for IoT에 참여하도록 권장합니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Azure IoT Central 또는 IoT 플러그 앤 플레이의 새로운 기능에 대해 자세히 알아보려면 다음 리소스를 확인하세요.</p>
+
+
+  <ul>
+   <li><a href="https://aka.ms/iotshow/140" target="_blank">Azure IoT Central의 새로운 기능에</a> 대해 자세히 알아보세요.</li>
+   <li>Azure IoT Central 무료 <a href="https://azure.microsoft.com/en-us/services/iot-central/" target="_blank">평가판을 시작합니다</a>.</li>
+   <li>최신 <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Introduction-to-IoT-Plug-and-Play" target="_blank">사물 인터넷 에피소드를</a> 확인하여 IoT 플러그 앤 플레이 작동을 확인합니다.</li>
+  </ul>

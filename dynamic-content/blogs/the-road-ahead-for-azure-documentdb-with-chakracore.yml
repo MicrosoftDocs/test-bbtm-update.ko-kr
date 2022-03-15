@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b93230d452ed92bc4a5ffac015de2a27357c43cd
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899589"
+Slug: the-road-ahead-for-azure-documentdb-with-chakracore
+Title: Chakra를 사용하여 Azure DocumentDB에서 JavaScript 실행
+Summary: 최근 발표와 함께 마이크로소프트는 차크라의 오픈 소스 핵심 구성 요소 (라는 ChakraCore) GitHub, 우리는 차크라와 Azure DocumentDB의 경험을 공유 하 고 차크라Core로 이동 하는 미래 계획 행복.
+Content: >-
+  <p><em>이 게시물은 차크라의 프로그램 관리자 인 <a href="https://twitter.com/limin_z">Limin Zhu</a>와 공동 저술되었습니다.</em></p>
+
+
+  <p>Chakra JavaScript 엔진은 Microsoft Edge 및 유니버설 Windows 애플리케이션의 전원을 공급하는 것으로 잘 알려져 있습니다. Windows 8.1 및 Windows Server 2012 R2부터 Chakra는 위에서 언급한 클라이언트 전용 시나리오 외부에서 Chakra를 포함할 수 있는 새로운 API(<a href="https://msdn.microsoft.com/en-us/library/dn249673.aspx">JavaScript 런타임</a> 또는 JSRT API라고 함)를 추가했습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/documentdb/">Azure DocumentDB</a> 는 데이터베이스 엔진 내에서 JavaScript 프로그래밍 기능을 기본적으로 제공하기 위해 Chakra를 포함하는 첫 번째 서비스 중 하나입니다. <a href="https://aka.ms/ChakraCoreOSS">최근 발표</a>와 함께 마이크로 소프트는 차크라의 오픈 소스 핵심 구성 요소 (<a href="https://github.com/Microsoft/ChakraCore">라는 ChakraCore</a>) GitHub, 우리는 우리의 경험과 차크라와 미래의 계획을 공유 행복.</p>
+
+
+  <h2>NoSQL 데이터베이스에서 JavaScript 실행</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/documentdb/">Azure DocumentDB</a>의 핵심은 JSON 및 JavaScript를 기본적으로 지원하기 위해 빌드된 쓰기 최적화 NoSQL 문서 지향 데이터베이스 엔진입니다. JavaScript 개체 식에서 시작된 JSON은 구조화 및 반구조화된 데이터에 자주 사용되는 전송 메커니즘입니다. DocumentDB는 Chakra를 사용하여 데이터베이스 엔진 내에서 JavaScript 논리의 트랜잭션 실행을 위한 서버 쪽 프로그래밍 화면을 제공합니다. <a href="https://azure.microsoft.com/en-us/blog/azure-documentdb-javascript-as-modern-day-t-sql/">JavaScript를 최신 T-SQL</a> 사용하는 접근 방식은 개발자에게 DocumentDB에서 서버 쪽 스크립트(<a href="https://azure.microsoft.com/en-us/documentation/articles/documentdb-programming/">저장 프로시저, 트리거 및 사용자 정의 함수</a>) 형식으로 표현된 비즈니스 논리를 구현하는 자연스러운 인터페이스를 제공합니다.</p>
+
+
+  <p>다중 테넌트 서비스로서 처음부터 리소스 거버넌스 및 성능 격리를 사용하여 <em>전체</em> DocumentDB 스택을 구축했습니다. DocumentDBs&rsquo; 데이터베이스 엔진을 포함한 모든 구성 요소는 리소스 거버넌스를 매우 엄격하게 적용하도록 설계되었습니다. DocumentDB 엔진을 사용하려면 SLA 지원 대상 성능을 제공하기 위해 호스트된 각 구성 요소가 시스템 리소스의 매우 검소한 예산 내에 있어야 합니다.&nbsp; 즉, JavaScript 런타임은 엄격한 리소스 제약 조건에서 필요한 성능을 제공하는 동일한 수준의 성능 격리 및 기능을 지원해야 합니다. 여러 JavaScript 엔진을 평가한 후 모든 다중 테넌트 요구 사항을 충족할 수 있었기 때문에 결국 Chakra를 사용하기로 결정했습니다.&nbsp;</p>
+
+
+  <p>&rsquo;저장 프로시저를 사용하여 DocumentDB 내에서 차크라가 어떻게 사용되는지 살펴보겠습니다. 개발자는 JavaScript로 작성된 저장 프로시저를 등록하고 실행할 수 있습니다. 이 프로시저를 사용하여 여러 문서에서 일괄 처리 또는 작업 시퀀스를 단일 ACID 트랜잭션으로 수행할 수 있습니다. 테넌트가 저장 프로시저를 등록하면 차크라가 바이트코드로 암시적으로 미리 컴파일됩니다. 테넌트가 저장 프로시저를 실행하면 스크립트가 샌드박스 환경의 Chakra 런타임에서 실행됩니다. 런타임은 데이터베이스의 격리된 스냅샷에서 JavaScript 프로그래밍 모델의 긴밀한 통합을 제공합니다. 저장 프로시저가 성공적으로 완료되면 데이터베이스에 대한 모든 작업이 단일 트랜잭션으로 커밋됩니다. 스크립트 내에서 전파되는 예외가 있는 경우 DocumentDB는 전체 트랜잭션을 자동으로 롤백합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a478d6e-2884-4251-8f36-8ccb35121a85.gif"><img alt="chakra480" height="344" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1443be9a-b6d2-4def-a17b-9b238a2b1b00.gif" style="float: none; margin-left: auto; display: block; margin-right: auto" title="chakra480" width="610"></a></p>
+
+
+  <p>몇 가지 <a href="https://blogs.windows.com/msedgedev/2015/05/18/using-chakra-for-scripting-applications-across-windows-10/">Chakra 기능에</a>&rsquo; 대해 자세히 알아보고 DocumentDB 내에서 일류 JavaScript 지원을 제공하는 데 사용하는 방법에 대해 자세히 알아보겠&rsquo;습니다.</p>
+
+
+  <ul>
+   <li><strong>임대 스레딩 - </strong> Chakra는 JavaScript 런타임이 항상 단일 스레드이지만 특정 스레드에 하드 바인딩되지 않는 임대 스레딩 모델을 제공합니다. 즉, 런타임은 한 번에 하나의 스레드에서만 작동하지만 스레드 선호도는 때때로 자유롭게 변경할 수 있습니다. DocumentDB는 런타임 풀을 관리하고 각 테넌트에 런타임을 할당하여 JavaScript를 실행할 수 있으므로 임대 스레딩은 DocumentDB에서 특히 잘 작동합니다. 이렇게 하면 테넌트당 새 런타임을 시작하는 비용이 방지되고 DocumentDB가 각 테넌트에 대한 보안 및 격리를 유지할 수 있습니다.</li>
+   <li><strong>바이트 코드 serialization - </strong> 서버 쪽 스크립트를 등록할 때 DocumentDB는 Chakra를 사용하여 스크립트를 바이트코드로 미리 컴파일하고 직렬화합니다. 일반적인 JavaScript 실행 파이프라인에서 엔진은 코드를 구문 분석하고, 구문 트리를 생성하고, 실행 전에 바이트 코드를 생성해야 합니다. Chakras&rsquo; 바이트 코드 serialization을 사용하면 DocumentDB가 바이트 코드 생성(및 포함)까지 스크립트를 사전 처리하고 다시 사용하기 위해 바이트코드의 캐시된 복사본을 저장할 수 있습니다. 이렇게 하면 사용자가 스크립트를 실행할 때마다 다시 구문 분석하는 비용을 방지할 수 있으므로 시간이 지남에 따라 성능이 크게 절감됩니다.</li>
+  </ul>
+
+
+  <p>차크라 <a href="https://aka.ms/coreossannoucement">는 최근 오픈 소스</a> 의 핵심 구성 요소, 코드 이름 <a href="https://github.com/Microsoft/ChakraCore">차크라코어</a>. ChakraCore는 Chakra가 가지고있는 <a href="https://github.com/Microsoft/ChakraCore/wiki/Architecture-Overview">거의 동일한 기능 세트를</a> 가지고 있으며 앞으로 공개에서 개발되고있는 독립 실행형 JavaScript 엔진으로 형성됩니다. DocumentDB는 가까운 장래에 차크라에서 ChakraCore로 마이그레이션하기 위해 최선을 다하고 있습니다. ChakraCore로 이동하여 DocumentDB는 앞서 언급한 모든 혜택을 유지하고 사용자에게 더 많은 기능을 제공할 수 있습니다. 이제 Chakra가 오픈 소스가 되었으므로 DocumentDB 팀은 변경 내용을 다시 기여할 계획입니다.</p>
+
+
+  <h2>맺음말</h2>
+
+
+  <p>차크라에 의존 하 고 우리에 게 큰 성공을 가져왔고&rsquo; 차크라코어로 마이그레이션 하 여 가능 하 게 될 것입니다 무엇에 대 한 흥분. <a href="https://github.com/Microsoft/ChakraCore/wiki/Embedding-ChakraCore">embedding wiki</a>는 ChakraCore를 사용자 고유의 애플리케이션에 포함하는 방법을 배울 수 있는 좋은 시작점입니다.</p>
+
+
+  <p>Chakra 팀에 대한 피드백이 있는 경우 <a href="https://github.com/Microsoft/ChakraCore">GitHub</a> 문제를 열거나 Twitter<a href="https://twitter.com/chakracore">@ChakraCore</a>를 통해 연락할 수 있습니다.</p>
+
+
+  <p>DocumentDBs <a href="https://azure.microsoft.com/en-us/documentation/articles/documentdb-programming/">설명서 페이지를 방문하여 DocumentDBs&rsquo;</a>&rsquo; 서버 쪽 프로그래밍 기능 모델에 대해 자세히 알아볼 수도 있습니다.</p>
+
+
+  <p>DocumentDB에 대한 도움이 필요하거나 질문이 있는 경우 <a href="https://stackoverflow.com/questions/tagged/azure-documentdb">StackOverflow의 개발자 포럼에</a> 문의하거나 DocumentDB 엔지니어링 팀과 1:1 채팅을 예약하세요. 또한 Twitter <a href="https://twitter.com/DocumentDB">@DocumentDB</a>에서 팔로우하여 최신 DocumentDB 뉴스 및 기능을 최신 상태로 유지할 수 있습니다.</p>

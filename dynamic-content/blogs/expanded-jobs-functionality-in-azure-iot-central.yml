@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: be5c705ce5c41a5a4e35f0578171d98454cc681c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905980"
+Slug: expanded-jobs-functionality-in-azure-iot-central
+Title: Azure IoT Central의 확장된 작업 기능
+Summary: IoT Central 일반 공급 출시 중에 작업 기능의 릴리스를 발표한 이후, 다음을 통해 디바이스 관리 워크플로를 개선하기 위해 어떻게 노력하고 있는지 공유하게 되어 기쁩니다.
+Content: >-
+  <p>Azure IoT Central 일반 공급 출시 중에 작업 기능의 릴리스를 발표한 이후 추가 작업 기능을 통해 디바이스 관리 워크플로를 개선하기 위해 어떻게 노력하고 있는지 공유하게 되어 기쁩니다. 이제 만든 <b>기존 작업을 </b><b>&rsquo;복사하고, 나중에 작업을 계속하기 위해 작업을 저장하고, 실행 중인 작업을 중지하거나 다시 시작하고, 작업 실행이 완료되면 작업 세부 정보 보고서를 다운로드할 수 있습니다. </b> 이러한 추가 작업 기능을 사용하면 대규모로 디바이스를 훨씬 쉽게 관리할 수 있습니다.</p>
+
+
+  <p>만든 작업을 복사하려면 기본 작업 목록에서 작업을 선택하고 복사&rdquo;를 선택&ldquo;하기<b></b>만 하면&rsquo; 됩니다. 그러면 선택적으로 작업 구성의 일부를 업데이트할 수 있는 작업의 복사본이 열립니다. 디바이스를 만든 이후 디바이스 집합이 변경된 경우 복사한 작업에는 편집할 수 있는 변경 내용이 반영됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/990ebe62-e671-4ae2-ac9a-9a2a8088c77b.png"><img alt="Copy an existing job created in Azure IoT Central" border="0" height="397" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/17f18048-618b-4819-8c3b-d120a0e433a1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure IoT Central에서 작업 복사" width="640"></a></p>
+
+
+  <p>작업을 편집하는 동안 이제 저장&rdquo;을 선택하여 작업을 저장하여 나중에 작업을 계속할 수 있습니다&ldquo;. 저장된 이 작업은 저장&rdquo;됨 상태의 &ldquo;기본 작업 목록에 표시되며 언제든지 다시 열어 편집을 계속할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a442f4ba-2148-4581-b334-aa475443cbf6.png"><img alt="Save a job to continue working on later in Azure IoT Central" border="0" height="398" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/14865a3c-7703-422d-887c-9d1b6a9783a8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure IoT Central에서 작업 구성" width="640"></a></p>
+
+
+  <p>작업을 실행하도록 선택한 후에는 중지&rdquo; 단추를 선택하여 &ldquo;작업이 더 이상 실행되도록 중지할 수 있습니다. 목록에서 중지된 작업을 열고 원하는 시간에&rsquo; 다시 실행을&rdquo; 선택할 &ldquo;수 있습니다.</p>
+
+
+  <p>작업이 중지되었거나 실행이 완료되었는지 여부에 관계없이 디바이스 ID, 작업이 완료 또는 중지된 시간, 디바이스 상태 및 오류 메시지(해당하는 경우)를 나열하는 .csv 파일을 다운로드하기 위해 디바이스 목록 근처에서 디바이스 보고서&rdquo; 다운로드를 선택할 &ldquo;수 있습니다. 디바이스 문제를 해결하거나 정렬 도구로 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f48cbf57-e81c-4777-b31b-4882266ca701.png"><img alt="Download a job details report once your job has completed running" border="0" height="469" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9e45db6e-55c0-4993-9d1f-40288537ba64.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Iot Central에서 작업의 세부 정보 다운로드" width="640"></a></p>
+
+
+  <p>디바이스를 그 어느 때보다 쉽게 관리할 수 있도록 디바이스 관리 환경을 개선하기 위해 지속적으로 노력하고 있습니다. 워크플로에서 유용하게 사용할 수 있는 디바이스 관리 또는 작업 기능에 대한 제안이 있는 경우 <a href="https://aka.ms/iotcuservoice" target="_blank">피드백을 남겨</a> 주세요.</p>
+
+
+  <p><a href="https://aka.ms/howto-run-a-job" target="_blank">Azure IoT Central에서 작업을 실행하는 방법에</a> 대해 자세히 알아봅니다.</p>

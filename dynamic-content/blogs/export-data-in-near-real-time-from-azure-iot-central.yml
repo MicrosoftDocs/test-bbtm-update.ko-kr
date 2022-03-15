@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3cdcd1afb66c1769412451ccc9fe59b4694671e4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911330"
+Slug: export-data-in-near-real-time-from-azure-iot-central
+Title: Azure IoT Central에서 거의 실시간으로 데이터 내보내기
+Summary: 이제 Azure IoT Central 앱에서 거의 실시간으로 Azure Event Hubs 및 Azure Service Bus 데이터를 내보낼 수 있다는 것을 공유하게 되어 기쁩니다.
+Content: >-
+  <p>이제 Azure IoT Central 앱에서 거의 실시간으로 Azure Event Hubs 및 Azure Service Bus 데이터를 내보낼 수 있다는 것을 공유하게 되어 기쁩니다. 이전에는 연속 데이터 내보내기를 사용하여 콜드 경로 스토리지 및 분석을 위해 1분마다 한 번씩 IoT Central 측정값, 디바이스 및 디바이스 템플릿 데이터를 Azure Blob Storage 계정으로 내보낼 수 있습니다. 이제 분석 및 모니터링을 위해 이 데이터를 Azure Event Hubs 및 Azure Service Bus 인스턴스로 거의 실시간으로 내보낼 수 있습니다.</p>
+
+
+  <p>예를 들어 에너지 회사는 하루 중 시간 및 일주일 내내 다른 지역의 에너지 소비 추세를 이해하고 예측하려고 합니다. IoT Central에 연결된 전기 장비를 사용하여 연속 데이터 내보내기를 사용하여 IoT 데이터를 Azure Event Hubs로 내보낼 수 있습니다. 배포된 기계 학습 모델을 실행하여 소비에 대한 인사이트를 얻고 Event Hubs를 Azure Databricks에 연결하여 변칙 검색을 수행합니다. Event Hubs에서 Azure Stream Analytics로 데이터를 전송하여 특정 중단을 감지하기 위한 고도로 사용자 지정 규칙을 실행할 수 있습니다. 장기 데이터 스토리지의 경우 연속 데이터 내보내기를 계속 사용하여 모든 디바이스 데이터를 Azure Blob Storage 저장할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8ea7c346-4271-47b4-9f74-45f3ca66414f.png"><img alt="CDE for blog post" border="0" height="725" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7721021c-bd96-4355-a6fa-fb7eff45e6f8.png" style="display: inline; background-image: none;" title="블로그 게시물용 CDE" width="1344"></a></p>
+
+
+  <p style="text-align: center;"><em>Azure IoT Central에서 연속 데이터 내보내기</em></p>
+
+
+  <h2>새로운 기능</h2>
+
+
+  <p>다음은 Azure IoT Central의 연속 데이터 내보내기 새 기능 및 변경 내용입니다.</p>
+
+
+  <ul>
+   <li>새 내보내기 대상에는 Azure Blob Storage 외에도 Azure Event Hubs 및 Azure Service Bus 포함됩니다.</li>
+   <li>IoT Central 앱과 다른 구독에 있는 대상을 포함하여 유효한 연결 문자열을 사용하여 지원되는 모든 대상으로 내보냅니다.</li>
+   <li>앱당 최대 5개의 내보내기를 만듭니다.</li>
+   <li>내보내기는 평가판 앱과 종량제 앱 모두에서 사용할 수 있습니다.</li>
+   <li>연속 데이터 내보내기가 이동되었습니다! 왼쪽 탐색 메뉴에서 찾습니다.</li>
+  </ul>
+
+
+  <h2>시작</h2>
+
+
+  <p>연속 데이터 내보내기 및 설정 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/iot-central/howto-export-data" target="_blank">Azure IoT Central의 데이터 내보내기</a> 설명서를 &ldquo; 참조하세요.&rdquo; 기존 Blob Storage, Event Hubs 또는 Service Bus 인스턴스를 사용하거나 새 인스턴스를 만들 수 있습니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>연속 데이터 내보내기에서 새 기능을 사용하여 사용자 지정 웜 경로 및 콜드 경로 처리 및 IoT 데이터에 대한 분석을 위해 사용자 고유의 Azure Event Hubs, Azure Service Bus 및 Azure Blob Storage 인스턴스로 데이터를 내보냅니다.</p>
+
+
+  <ul>
+   <li>새로운 기능에 대한 아이디어 또는 제안이 있나요? <a href="https://feedback.azure.com/forums/911455-azure-iot-central">Uservoice</a>에 게시합니다.</li>
+   <li>피드백 또는 질문이 있으신가요? 에 우리를 <a>iotcfeedback@microsoft.com</a>작성하는 것을 주저하지 마십시오&rsquo;.</li>
+   <li>전체 기능 집합을 살펴보려면 무료 평가판을 시작하고 <a href="https://azure.microsoft.com/en-us/services/iot-central/">IoT Central 웹 사이트에서</a> 자세히 알아보세요.</li>
+   <li>첫 번째 디바이스를 연결하는 자습서를 포함하여 <a href="https://docs.microsoft.com/en-us/azure/iot-central/overview-iot-central">설명서를</a> 확인하세요.</li>
+   <li>최신 뉴스를 포함한 Azure IoT 포트폴리오에 대해 자세히 알아보려면 <a href="https://azure.microsoft.com/en-us/overview/iot/">Microsoft Azure IoT 페이지를 방문하세요</a>.</li>
+  </ul>

@@ -1,0 +1,43 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d7455cbf0efcc7412c68a51ea0c85ab32fe823cc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906237"
+Slug: azure-cosmosdb-and-microsoft-s-project-olympus-honored-in-infoworld-s-2018-technology-of-the-year-awards
+Title: 'Azure #CosmosDB 및 Microsoft의 Project 올림푸스가 InfoWorld의 2018 올해의 기술 상을 수상했습니다.'
+Summary: 이 단어는 밖으로, 업계는 주목하고있다. Azure Cosmos DB는 네이티브 NoSQL을 지원하는 세계 최초의 글로벌 분산 다중 모델 데이터베이스 서비스입니다.
+Content: >-
+  <p>이 단어는 밖으로, 업계는 주목하고있다. <a href="https://azure.microsoft.com/en-us/services/cosmos-db/" target="_blank">Azure Cosmos DB</a>는 네이티브 NoSQL을 지원하는 세계&rsquo; 최초의 글로벌 분산 다중 모델 데이터베이스 서비스입니다. 클라우드용으로 설계된 Azure Cosmos DB를 사용하면 사용자가 SLA로 보장되는 짧은 대기 시간, 처리량 및 99.99% 가용성으로 데이터를 가져오는 행성 규모의 애플리케이션을 빌드할 수 있습니다.</p>
+
+
+  <p>IDG&#39;sInfoWorld의&nbsp; 전문가들은 최근 올해의 InfoWorldTechnology&nbsp; 어워드에서 <a href="https://www.infoworld.com/article/3251828/application-development/infoworlds-2018-technology-of-the-year-award-winners.html#slide13" target="_blank">Azure Cosmos DB를 인정</a>했으며, &ldquo;튜링 어워드 수상자인 레슬리 램포트(Leslie Lamport)의 작업을 활용하여 여러 일관성 모델을 제공하는 것을 인정하는 등 분산 시스템을&rdquo; 구축하고 관리하는 복잡성에 대한 혁신적인 접근 방식에 집중했습니다. Azure Cosmos DB는 전 세계 어디서나 사용자가 위치에 관계없이 동일한 버전의 데이터를 볼 수 있는 전역 분산 시스템을 제공하는 것으로 인정되었습니다.</p>
+
+
+  <p>또한 InfoWorld는 JSON 기반 문서 저장소에서 MongoDB API 지원 및 Azure Table Storage 대한 SQL 쿼리 옵션에 이르기까지 Azure&rsquo; Cosmos DB를 사용하는 유연성과 다양한 사용 사례를 보완했습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <blockquote>
+
+  <h5 style="text-align: center;">&ldquo;API 및 일관성 모델을 선택할 수 있는 분산 NoSQL 데이터베이스가 필요한가요? Microsofts Azure Cosmos DB입니다&rsquo;.&rdquo;&mdash; InfoWorld, <a href="https://www.infoworld.com/article/3252231/application-development/technology-of-the-year-2018-the-best-hardware-software-and-cloud-services.html" target="_blank">올해의 기술 2018: 최고의 하드웨어, 소프트웨어 및 클라우드 서비스</a></h5>
+
+  </blockquote>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>InfoWorld는 2017년이 Azure Cosmos DB에서 사용할 수 있는 여러 일관성 모델의 장점인&rdquo; 큰 손상 없이 데이터베이스를 선택할 수 있는 해라고 &ldquo;지적했습니다. 5가지 고유한 옵션을 사용하면 더 이상 느리지만 정확하거나 빠르지만 부정확한 데이터 중에서 선택할 필요가 없습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/resources/cosmosdb-modern-apps-big-data-global-scale/" target="_blank">무료 전자책</a>에 대해 자세히 알아보고, <a href="https://azure.microsoft.com/en-us/overview/real-time-experience-apps/" target="_blank">실시간 개인 설정 시나리오</a>를 실습하거나, 무료 <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Azure 계정</a>으로 Azure Cosmos DB를 사용해 보거나, <a href="https://azure.microsoft.com/en-us/try/cosmosdb/" target="_blank">지금 바로 Azure Cosmos DB를 사용해 보세요</a>.</p>
+
+
+  <p>Azure Cosmos DB와 함께 InfoWorld는 2018년 시상식에서 <a href="https://www.infoworld.com/article/3251828/application-development/infoworlds-2018-technology-of-the-year-award-winners.html#slide25" target="_blank">Microsofts&rsquo; Project Olympus를 수상</a>하며 오픈 컴퓨팅 Project 클라우드 규모의 하드웨어 개발을 추진할 수 있도록 Microsoft의 개방형 하드웨어 디자인을 설명했습니다. 복잡한 워크로드는 데이터 센터가 하드웨어를 다양화하도록 유도하고 있으며, Project Olympus 디자인은 여러 컴퓨팅 구성과 모든 제조업체에서 사용할 수 있는 새로운 오픈 소스 표준으로 유연합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/microsofts-project-olympus-delivers-cloud-hardware-innovation-at-scale/" target="_blank">Azure에서 Project Olympus 배포에</a> 대해 자세히 알아봅니다.</p>

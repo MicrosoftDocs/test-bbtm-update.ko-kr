@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 59f3218f672c60b847c8aa8bbd2755f8423bed0b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906031"
+Slug: cognitive-service-2016-06-01
+Title: '앱을 더 인간으로 만들기: Computer Vision API가 이미지 분석에 인텔리전스를 제공하는 방법'
+Summary: '인공 지능에 대한 액세스를 민주화하는 것이 목표인 경우 개발자에게 앱에서 지능형 이미지 분석을 구현할 수 있는 기능을 제공하려면 어떻게 해야 할까요? 이미지를 분리하고, 300개 이상의 요소를 식별하고 태그를 지정하며, 학습된 요소를 계속 배우고 발전시킬 수 있는 API를 제공합니다. 즉, Computer Vision API입니다 : 모든 개발이 어떤에 드롭 할 수있는 기계 학습 이미지 분석기 ...'
+Content: >-
+  <p>인공 지능에 대한 액세스를 민주화하는 것이 목표인 경우 개발자에게 앱에서 지능형 이미지 분석을 구현할 수 있는 기능을 제공하려면 어떻게 해야 할까요? 이미지를 분리하고, 300개 이상의 요소를 식별하고 태그를 지정하며, 학습된 요소를 계속 배우고 발전시킬 수 있는 API를 제공합니다. 이것이 Computer Vision API입니다. 모든 개발에서 몇 줄의 코드만으로 모든 앱에 드롭할 수 있는 기계 학습 이미지 분석기입니다. 그리고 앱이 더 인간적인 방식으로 동작&mdash;하고 응답&mdash;하도록 하는 긴 여정의 다음 단계입니다.</p>
+
+  <p style="padding-left: 30px;"><a href="https://www.microsoft.com/cognitive-services/en-us/subscriptions?productId=/products/54d873dd5eefd00dc474a0f4">&gt; Computer Vision API 키 가져오기</a></p>
+
+  <p><strong>라이온스는 개가 아닙니다.</strong></p>
+
+  <p>Microsoft는 AI를 사용하여 Computer Vision API로 이미지를 분석하기 시작하지 않았습니다. Computer Vision의 전구체인 이전의 더 제한된 반복&mdash;이 있었습니다. 범위가 더 제한된 API 제품군&mdash;의 일부였습니다. Computer Vision의 설계자 중 한 명인 Cornelia Carapcea를 포함한 Microsoft 개발자는 원래 API 제품군을 사용한 개발자의 의견을 듣고 커뮤니티의 응답에서 Computer Vision을 발전하는 방법을 결정했습니다. 예를 들어 원래 API는 라이온스&mdash;가 개라고 생각한 것을 인식하지 못했습니다. 따라서 개선이 필요했습니다.</p>
+
+  <p>Carapcea와 그녀의 팀은 지난 1년 동안 이러한 수요를 충족하기 위해 Computer Vision API를 엔지니어링했습니다. 그러나 API에 대한 그녀의 작업은 컴퓨터가 식별할 수 있는 것을 조정하는 것 이상입니다. 앱은 점점 더 인간화되고 있으며, 개발자는 앱이 인간이 행동하는 것처럼 행동할 수 있는 방법을 원한다고 설명합니다. 이렇게 하려면 AI 및 기계 학습을 백본으로 사용해야 합니다. Carapcea는 "인간의 뇌가 달성할 수 있는 여러 레이어&mdash; 슬래벨과 분류&mdash;를 일치시키려고 시도할 수 있는 유일한 방법은 AI를 사용하는 것입니다. "딥 러닝 및 신경망과 대량의 데이터를 기반으로 합니다."</p>
+
+  <p style="padding-left: 30px;"><a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api/documentation#user-content-the-research-behind-computer-vision-api">&gt; Computer Vision에 대한 연구 읽기</a></p>
+
+  <p style="padding-left: 30px;">
+
+  <p><strong>학습하는 API</strong></p>
+
+  <p>이것이 하는 일은 API가 인간의 뇌와 거의 동일한 방식으로 이미지의 요소를 분류할 수 있도록 허용하는 것입니다. 예를 들어, 네 살짜리 아이는 조랑말을 보고 조랑말이라는 것을 알 수 있습니다. 그러나 그 네 살짜리 조랑말을 보고 그것을 말의 일종이라고 부를 수 있을까요? 네 살짜리 아이가 두 생물을 모두 동물이라고 부른다는 것을 알 수 있을까요? 이것이 바로 Carapcea와 그녀의 팀이 Computer Vision을 제공하기 위해 노력하는 수준입니다: 말, 조랑말, 그리고 둘 다 동물의 유형임을 인식하는 API입니다. 따라서 여기서 볼 수 있는 것은 인간이 동일한 패턴(또는 이미지)을 여러 번 보고 배우는 것 같다는 것입니다. Computer Vision의 기계 학습도 마찬가지입니다.</p>
+
+  <p><strong>언어 문제</strong></p>
+
+  <p>그러나 Computer Vision은 식별되는 태그에 따라 문장을 생성하는 것&mdash; 이상으로 확장됩니다. <a href="https://www.captionbot.ai/">CaptionBot 앱</a>은 Computer Vision으로 수행할 수 있는 작업의 기본 애플리케이션입니다. Carapcea는 "접근성, 시각 장애인 또는 이미지를 이해하는 봇에 대한 애플리케이션은 무한합니다. "이것은 최첨단 물건입니다. 다른 누구도 지금 API로 이미지 캡션을 제공하지 않습니다. 수천 개체를 인식하려는 경우 사용할 API입니다."</p>
+
+  <p style="padding-left: 30px;"><a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api/documentation">&gt; API 설명서 읽기</a></p>
+
+  <p style="padding-left: 30px;"><a href="https://cognitive.uservoice.com/">&gt; 사용자 의견 포럼에 댓글 남기기</a></p>

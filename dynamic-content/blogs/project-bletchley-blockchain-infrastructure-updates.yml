@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: dbb0422eed7760665a7e1592925ad96b049d35c7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899597"
+Slug: project-bletchley-blockchain-infrastructure-updates
+Title: 'Project Bletchley: 블록체인 인프라 업데이트'
+Summary: 피드백을 처리하고 추가 기능을 추가하기 위해 Bletchley v1 인프라 기판에 대한 업데이트를 발표하게 되어 기쁘게 생각합니다.
+Content: >-
+  <p>우리는 일찍 출시하고 자주&rdquo; 출시 할 것이라고 &ldquo;말했고 우리는 그 접근 방식을 따르고 있습니다. 복잡한 컨소시엄 네트워크를 설계, 구축 및 관리하고 스마트 계약을 사용하여 비즈니스 애플리케이션을 개발하는 데 필요한 서비스, 도구 및 모범 사례를 더욱 개선하기 위해 <a href="https://azure.microsoft.com/en-us/blog/project-bletchley-blockchain-infrastructure-made-easy/">블록체인 인프라 작업을 </a>확장합니다.</p>
+
+
+  <p>&nbsp;컨소시엄 Ethereum 네트워크에 대한 배포를 간소화하고 구성 가능성을 개선하며 요청된 기능을 지원하기 위해 Azure 빠른 시작 템플릿에 대한 업데이트를 릴리스했습니다.&nbsp; 주요 업데이트 중 일부는 다음과 같습니다.</p>
+
+
+  <ol>
+   <li><strong>더 작은 네트워크 공간</strong> 지원: 무료 평가판 구독에서 더 적은 수의 Azure 리소스를 사용하여 3개의 노드만큼 작은 네트워크를 스핀업할 수 있습니다.&nbsp; 필요한 공용 IP 주소 수를 줄여 줍니다.</li>
+   <li><strong>다시 부팅</strong> 복원력: 네트워크 내의 노드는 가상 머신의 계획되거나 계획되지 않은 재부팅을 견딜 수 있습니다.&nbsp; 시작 시 네트워크 연결을 자동으로 다시 설정합니다.</li>
+   <li>사용 <strong>진단:</strong> 네트워크의 각 가상 머신에 대해 진단이 설정됩니다.</li>
+   <li>더 간단한 <strong>사용자 입력</strong>:&nbsp; 더 이상 프라이빗 키를 생성하고 제공할 필요가 없습니다. 키는 제공된 암호에서 자동으로 생성되므로 필수 구성 요소를 더욱 간소화할 수 있습니다.</li>
+   <li>추가 <strong>리팩터링 및 최적화</strong>: 기본 ARM 템플릿 및 스크립트를 쉽게 사용자 지정할 수 있도록 하고 관리자 페이지 새로 고침 속도를 높이는 등 전반적인 환경을 개선하기 위해 변경했습니다.</li>
+  </ol>
+
+
+  <p>자세한 내용은 템플릿의 자세한 <a href="https://aka.ms/blockchain-consortium-networks">연습을</a>&nbsp; 참조하세요.</p>
+
+
+  <p>시작 시 질문, 피드백 또는 추가 요청이 포함된 전자 메일을 보내거나 의견을 남기는 것을 주저하지 마세요.&nbsp;&nbsp; 여러분의 의견을 진심으로 소중히 생각합니다.</p>

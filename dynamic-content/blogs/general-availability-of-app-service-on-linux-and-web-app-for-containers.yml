@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5970f5df3db708899fab513d7aa4a6c6d2be0e78
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905953"
+Slug: general-availability-of-app-service-on-linux-and-web-app-for-containers
+Title: Linux 및 Web App for Containers의 App Service 일반 공급
+Summary: 애플리케이션은 놀라운 고객 경험을 제공하는 것에서 내부 운영 혁신에 이르기까지 오늘날 비즈니스 속도를 변화시키고 있습니다. 개발자는 속도를 유지하기 위해 도움이 되는 솔루션이 필요합니다.
+Content: >-
+  <p>애플리케이션은 놀라운 고객 경험을 제공하는 것에서 내부 운영 혁신에 이르기까지 오늘날 &ndash; 비즈니스 속도를 변화시키고 있습니다. 개발자는 기본 웹 서버 또는 운영 체제를 유지 관리하지 않고도 애플리케이션을 신속하게 빌드, 배포 및 확장하는 데 도움이 되는 솔루션이 필요합니다. <a href="https://azure.microsoft.com/en-us/services/app-service/">Azure App Service</a> 는 이 환경을 제공하며 현재 100만 개 이상의 클라우드 애플리케이션을 호스트합니다. 개발자는 통합 CI/CD, 배포 슬롯 및 자동 크기 조정과 같은 강력한 기능을 사용하여 최종 사용자에게 애플리케이션을 훨씬 더 빠르게 제공할 수 있습니다. 그리고 오늘은 더 나은 만들기 were&rsquo;.&nbsp;</p>
+
+
+  <p>이제 Azure App Service가 <a href="https://azure.microsoft.com/en-us/services/app-service/containers">Web App for Containers</a> 기능을 포함하여 Linux에서 일반 공급된다는 사실을 발표하게 되어 기쁩니다. 이를 통해 이제 linux의 ASP.NET Core, Node.js, PHP 및 Ruby에 대한 기본 제공 이미지 지원을 제공할 뿐만 아니라 개발자에게 Java, Python, Go 등을 지원하는 자체 Docker 형식 컨테이너 이미지를 가져올 수 있는 옵션을 제공합니다.</p>
+
+
+  <p>Azure에서는 기존 투자를 최대화하는 데 도움이 되는 더 많은 선택 사항을 제공하는 데 계속 투자하고 있습니다. Linux에서 Azure App Service를 지원하는 것은 해당 방향에서 중요한 단계입니다.</p>
+
+
+  <h2>높은 생산성 개발</h2>
+
+
+  <p>클라우드 애플리케이션 개발을 가속화하기 위해 Linux에서 실행되는 ASP.NET Core, Node.js, PHP 및 Ruby에 대한 기본 제공 이미지를 활용하여 인프라 대신 애플리케이션에 집중할 수 있습니다. 웹앱에 필요한 스택을 선택하기만 하면 애플리케이션 환경을 설정하고 유지 관리를 처리합니다. 환경을 더 자세히 제어하려면 <a href="https://docs.microsoft.com/en-us/azure/app-service-web/app-service-linux-ssh-support">애플리케이션에 SSH를</a> 설치하고 관리 명령에 대한 모든 원격 액세스를 얻을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b3cb631-3e3e-4308-88d8-fd4fc4eed9e9.png"><img alt="Web App" border="0" height="811" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a8719fb-ea50-495b-abbb-ff1dbc4600d1.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="웹앱" width="1431"></a></p>
+
+
+  <p>WordPress, Joomla 및 Drupal 솔루션을 포함한 미리 빌드된 패키지는 Azure Marketplace에서도 사용할 수 있으며 App Service에 단 몇 번의 클릭으로 배포할 수 있습니다.</p>
+
+
+  <h2>간편한 배포</h2>
+
+
+  <p>새로운 App Service 기능인 <a href="https://azure.microsoft.com/en-us/services/app-service/containers">Web App for Containers</a>를 사용하면 몇 초 만에 컨테이너화된 애플리케이션을 프로덕션으로 가져올 수 있습니다. 컨테이너 이미지를 Docker Hub, <a href="https://azure.microsoft.com/en-us/services/container-registry/">Azure Container Registry</a> 또는 프라이빗 레지스트리에 푸시하기만 하면 Web App for Containers가 컨테이너화된 애플리케이션을 배포하고 필요한 인프라를 프로비전합니다. 또한 필요할 때마다 Linux OS 패치 및 부하 분산을 자동으로 수행합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/24138933-6808-411e-a482-f3ae209eb82e.png"><img alt="Docker Container" border="0" height="811" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94450bfb-0e88-4e16-a62d-50d7ae0be364.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Docker 컨테이너" width="1431"></a></p>
+
+
+  <p>포털 외에도 CLI 또는 Azure 리소스 관리 템플릿을 사용하여 App Service에 배포하는 옵션도 있습니다.</p>
+
+
+  <h2>기본 제공 CI/CD, 주문형 확장</h2>
+
+
+  <p>Linux의 Azure App Service는 기본 제공 CI/CD 기능과 직관적인 크기 조정 환경을 제공합니다. 몇 번의 간단한 클릭으로 GitHub, Docker Hub 또는 Azure Container Registry와 통합하고 <a href="https://azure.microsoft.com/en-us/blog/annoucing-jenkins-deploy-to-azure-app-service-plugin-and-new-managed-disk-support-for-azure-storage-plugin/preview/">Jenkins</a>, VSTS 또는 <a href="https://azure.microsoft.com/en-us/blog/maven-deploy-java-web-apps-to-azure/">Maven</a>을 통해 <a href="https://docs.microsoft.com/en-us/azure/app-service-web/app-service-linux-ci-cd">지속적인 배포</a>를 실현할 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/app-service-web/web-sites-staged-publishing">배포 슬롯을</a> 사용하면 쉽게 대상 환경에 배포하고, 스테이징을 프로덕션으로 교환하고, 성능 및 품질 테스트를 예약하고, 가동 중지 시간이 0인 이전 버전으로 롤백할 수 있습니다.</p>
+
+
+  <p>업데이트를 프로덕션으로 승격한 후 크기 조정은 슬라이더를 끌거나 REST API를 호출하거나 자동 크기 조정 규칙을 구성하는 것만큼 간단합니다. 요청 시 또는 자동으로 애플리케이션을 확장 또는 축소하고, 여러 지리적 지역 내에서 고가용성을 얻을 수 있습니다.</p>
+
+
+  <p>Linux에서 Azure App Service를 시작하려면 <a href="https://aka.ms/appservicelinuxoverview">사용 사례를</a> 확인하고 <a href="https://azure.microsoft.com/en-us/try/app-service/">App Service를 무료로 사용해 보세요</a> . 자세히 알아보시겠어요? 컨테이너화된 애플리케이션에 초점을 맞춘 예정된 웨비나에 <a href="https://aka.ms/WAfCWebcast">등록</a>합니다. 오픈 <a href="https://events.linuxfoundation.org/events/open-source-summit-north-america">소스 서밋 북미</a>에서 우리와 수천 명의 다른 개발자와 함께 할 수도 있습니다. 자세한 내용 및 업데이트는 다음을 따르세요 <a href="https://twitter.com/OpenAtMicrosoft">@OpenAtMicrosoft</a>.&nbsp;</p>

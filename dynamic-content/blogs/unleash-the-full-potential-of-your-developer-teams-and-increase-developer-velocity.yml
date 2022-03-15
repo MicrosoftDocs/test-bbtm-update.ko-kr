@@ -1,0 +1,128 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cffb1ed1814319f035ee2f47a1a31e9f7716c5d7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912329"
+Slug: unleash-the-full-potential-of-your-developer-teams-and-increase-developer-velocity
+Title: 개발자 팀의 잠재력을 최대한 발휘하고 개발자 속도를 높입니다.
+Summary: 오늘날의 환경에서 소프트웨어 개발의 우수성은 비즈니스 성공에 더욱 중요해지고 있습니다. 지난 몇 달 동안 조직에서 미래의 성공은 기술을 활용하여 비즈니스 모델을 재고하고, 혁신하고, 프로세스를 개선하여 직원과 고객에게 더 나은 서비스를 제공하는 데 달려 있다는 것을 깨달았습니다.
+Content: >-
+  <p>오늘날의&rsquo; 환경에서 소프트웨어 개발의 우수성은 비즈니스 성공에 더욱 중요해지고 있습니다. 지난 몇 달 동안&rsquo; 조직은 향후 성공이 기술을 활용하여 비즈니스 모델을 재고하고, 혁신하고, 프로세스를 개선하여 직원과 고객에게 더 나은 서비스를 제공하는 데 달려 있다는 것을 깨달았습니다. 현실은 다른 산업에 걸쳐 많은 회사가 소프트웨어 회사가되고있다. McKinsey &amp; Company: <a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/developer-velocity-how-software-excellence-fuels-business-performance" target="_blank">Developer Velocity: 소프트웨어 우수성이 비즈니스 성능을 촉진하는 방법에</a> 대한 최근 연구에 따르면 현재 전 세계적으로 2천만 명 이상의 소프트웨어 엔지니어가 있으며, 이러한 개발자의 50% 이상이 기술 산업 외부의 조직에서 일하고 있습니다.</p>
+
+
+  <p>가장 성공적인 조직은 소프트웨어 회사로의 전환은 새로운 기술의 도입을 통해서만 달성할 수 없다는 것을 이해합니다. 오히려 변화를 촉매하고 그들이 추구하는 새로운 가치를 창조할 사람들을 지원하는 데 집중해야 합니다.</p>
+
+
+  <p>이 같은 연구에서 McKinsey는 업계가 개발자 <a href="https://azure.com/developervelocity" target="_blank"><strong>속도</strong></a>라고 부르기 시작한 내용에서 비즈니스 리더가 개발자 &ndash; 가 생산성과 혁신의 잠금을 해제할 수 있도록 소프트웨어 개발 &ndash; 뒤에 있는 사람들에게 권한을 부여해야 한다고 결론을 내렸습니다.</p>
+
+
+  <h2>개발자 속도란?</h2>
+
+
+  <p>개발자 속도는 개발자의 역량을 강화하고, 혁신에 적합한 환경을 조성하고, 마찰 지점을 제거하여 소프트웨어 개발을 통해 비즈니스 성능을 높이는 것을 의미합니다.</p>
+
+
+  <p>개발자 속도는 소프트웨어 배달 속도를 높이는 것에 관한 것이&rsquo; 아니라&rsquo; 개발자 팀의&rsquo; 아이디어를 고객의 요구와 비즈니스 목표를 지원하는 소프트웨어로 전환하는 개발자 독창성을 &ndash; 발휘하는 것에 관한 것입니다.</p>
+
+
+  <p>개발자 팀의 잠재력과 재능을 발휘하고, 일상적인 개발자 경험을 제공하고, 소프트웨어 인재를 행복하고 동기 부여된 상태로 유지하여 소프트웨어 성공을 촉진합니다.</p>
+
+
+  <p>우리는 종종 소프트웨어 리더로부터 성능 향상을 위한 잠재적 레버 세트가 너무 크고 다양 &ndash; 하기 때문에 우선 순위를 지정하는 방법이나 시작할 위치가 명확하지 않은 경우가 많습니다.</p>
+
+
+  <p>회사가 개발자 속도를 높이는 데 필요한 사항을 정확하게 이해하기 위해 McKinsey는 동일한 연구에서 기술, 작업 사례 및 조직 활성화를 포함한 소프트웨어 개발 관행에 대한 포괄적인 검토를 수행하고 단일 전체적인 메트릭 &ndash; &ldquo;개발자 속도 지수&rdquo; 또는 DVI 점수에 수렴했습니다.&nbsp; DVI(개발자 속도 지수) 점수는 13개 기능 영역(전시)에서 46개의 다양한 드라이버를 고려합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2057d89d-6024-4d75-845b-d7ba53ad9d7b.png"><img alt="Developer Velocity Index (DVI)." border="0" height="720" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/37a65a62-0afa-46b7-8c02-37d7a741a301.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="개발자 속도 인덱스(DVI)." width="1280"></a></p>
+
+
+  <p>이 연구의 주요 연구 결과 중 일부는 DVI(개발자 속도 지수)가 높은 기업이 경쟁사의 최대 5배까지 매출 성장을 능가하고 혁신에서 55% 더 높은 점수를 기록했다고 지적합니다. 또한 이러한 조직은 고객 만족도, 브랜드 인식 및 인재와 같은 다른 주요 비즈니스 성과 지표에서 동료를 능가합니다.</p>
+
+
+  <p>이 연구는 또한 다양한 차원의 모든 다른 드라이버에서 개발자 속도의 상위 4개 동인에는 동급 최고의 도구, 제품 관리 기능, 문화 및 인재 관리가 포함된다는 결론을 내렸습니다.&nbsp; 마지막으로, 퍼블릭 클라우드 채택은 비소 소프트웨어 회사의 비즈니스 성과의 핵심 동인이며, 오픈 소스 채택은 최고 실적을 위한 가장 큰 차별화 요소이며, 저코드 플랫폼을 채택하는 기업은 혁신에서 33% 더 높은 점수를 받았습니다.</p>
+
+
+  <p>개발자는 항상 디지털 변환, 혁신 및 비즈니스 성과의 진정한 촉매제였습니다. 이 데이터는 기업이 개발 팀에 투자하는 것이 얼마나 중요한지 확인합니다. 개발자 속도 연구에 대해 자세히 알아보고 소매, 제조 및 금융 산업에 대한 자세한 결과 및 인사이트를 얻으려면 이 5개의 에피소드로 구성된 웨비나 시리즈: <a href="https://aka.ms/developervelocity-bdm-webinars" target="_blank">개발자 속도를 통해 비즈니스 성능 향상</a>을 시청하세요.</p>
+
+
+  <h2>조직의 DVI(개발자 속도 인덱스 점수)를 계산하려면 어떻게 해야 하나요?</h2>
+
+
+  <p>지난 5월에 <a href="https://developervelocityassessment.com/" target="_blank">개발자 속도 평가 도구를</a> 출시했습니다. 이 도구를 사용하여 조직이 개발자 속도 완성도 규모에 있는 위치를 검색하고 동료를 기준으로 DVI(개발자 속도 인덱스)를 벤치마킹할 수 있습니다. 그런 다음 조직에 더 나은 비즈니스 결과를 이끌어내는 방법에 대한 실행 가능한 지침을 가져옵니다.</p>
+
+
+  <p>이 온라인 평가는 완료하는 데 15-30분이 소요되며, 사용자와 조직이 기술, 작업 사례 및 조직 지원이라는 세 가지 주요 도메인 간의 격차를 식별할 수 있도록 빌드되었습니다. 평가는 개발자 및 소프트웨어 전략의 증가하는 요구 사항을 충족하기 위해 시간이 지남에 따라 조직이 개선할 수 있는 방법에 대한 자세한 개요를 보여 주는 개인 설정된 보고서를 제공합니다.</p>
+
+
+  <p>이번 주에는 고객이 DVI(개발자 속도 인덱스) 점수를 더욱 명확하게 볼 수 있도록 평가 도구에 추가 기능을 제공했습니다. 이러한 추가 사항에는 새 차트, 보고서 및 범주, 하위 범주 및 개별 메트릭 수준별 DVI 점수에 대한 자세한 분석이 포함됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5f4c363f-6609-44fd-a89a-8ca5455ff8d4.png"><img alt="Developer Velocity Assessment." border="0" height="734" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/942780ca-51e6-454c-a6b3-1ad23b3967d9.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="개발자 속도 평가." width="2560"></a></p>
+
+
+  <p>조직이 이 평가를 활용하여 더 나은 비즈니스 결과를 이끌어낼 수 있는 특정 드라이버를 식별하는 데 어떻게 도움이 되는지 매우 기쁘게 봅니다. <a href="https://developervelocityassessment.com/" target="_blank">개발자 속도 평가 도구를</a> 시작하여 조직의 DVI 점수를 계산하고 비즈니스 성능을 높일 수 있는 방법을 알아봅니다.</p>
+
+
+  <h2>개발자 속도를 높이기 위해 DevOps 사례 크기 조정</h2>
+
+
+  <p>많은 조직이 DevOps 채택하고 있지만 엔터프라이즈 규모에서 효과적인 사례를 구현하는 것은 어려울 수 있습니다.&nbsp; Microsoft Ignite에서는 <a href="https://azure.microsoft.com/en-us/resources/enterprise-devops-report-20202021/" target="_blank">250&ndash;</a>개 이상의 클라우드 및 DevOps 구현에 대한 Microsoft 및 Sogeti 연구 연구인 새로운 Enterprise DevOps Report 20202021을 발표하게 되어 매우 기쁩니다. 이 보고서는 DevOps 사례를 확장하여 비즈니스 메트릭을 개선하고, 고객 만족도를 높이고, 개발자가 혁신할 수 있는 적절한 환경을 만드는 개발자 속도를 &ndash; 높이는 방법에 대한 포괄적인 검토를 제공합니다. 또한 엔터프라이즈 DevOps 성공적으로 채택하기 위한 청사진으로 연구&rsquo; 권장 사항을 사용할 수 있습니다.</p>
+
+
+  <p>이 보고서에서는&rsquo; 다음을 알아봅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39e4e105-a18c-4a19-89ae-63a00aae13ea.png"><img align="left" alt="Enterprise DevOps Report." border="0" height="260" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/acaf7920-4b32-423d-98d6-4b8986f9642a.png" style="border:0px currentcolor; display:inline; background-image:none; float:left" title="Enterprise DevOps 보고서입니다." width="220"></a>&bull; 거버넌스를 포함한 엔터프라이즈 IT의 6가지 주요 영역은 엔터프라이즈 DevOps 변환의 일환으로 중요한 과제에 직면해 있습니다.</p>
+
+
+  <p>&bull;일반적인 이데올로기와 패턴, 그리고 엔터프라이즈 DevOps 문제를 해결하기 위해 최고의 성과를 내는 채택자가 뒤따릅니다.</p>
+
+
+  <p>&bull; 성공적인 기업이 엔지니어링 프로세스에 대한 지속적인 거버넌스, 보안, 품질 및 규정 준수를 구축하기 위해 구현한 전략입니다.</p>
+
+
+  <p>&bull;조직에서 분산 팀 및 원격 작업을 지원할 수 있도록 하는 모범 사례를 DevOps.</p>
+
+
+  <ul>
+
+  </ul>
+
+
+  <h2>&nbsp;</h2>
+
+
+  <h2>개발자 팀의 역량 강화 및 비즈니스 성능 향상</h2>
+
+
+  <p><a href="https://azure.com/developervelocity" target="_blank">개발자 속도는</a> 개발자 팀의 잠재력을 최대한 발휘하고, 혁신을 주도하며, 비즈니스 성능을 향상시키는 데 도움이 됩니다. 오늘날 그 어느 때보다도 소프트웨어 우수성에 투자하고 개발자 팀에 권한을 부여하는 문화를 구축하는 것은 모든 조직의&rsquo; 성공에 계속 중요할 것입니다.</p>
+
+
+  <p>지난 몇 달 동안&rsquo; 전 세계의 많은 개발자들이 원격으로 작업하는 동안 놀라운 <a href="https://news.microsoft.com/features/developers-bring-behind-the-scenes-magic-to-help-companies-change-course-quickly-in-a-crisis/" target="_blank">고객 애플리케이션</a> 과 내부적으로 작업 솔루션을 빌드하는 것을 보았습니다. 상황이 정상으로 돌아오는 동안 Microsoft는 전 세계 개발자를 지원하고 <a href="https://www.microsoft.com/en-us/resilience/remote-development-solutions" target="_blank">원격 개발을</a> 가능하게 하는 데 작은 역할을 하게 되어 기쁘게 생각합니다. 개발자가 생산성을 향상하고, 안전하게 협업하고, Microsoft가 &ndash; 어디에 있든 관계없이 혁신 &ndash; 을 확장할 수 있도록 Visual Studio, GitHub, Microsoft Azure 및 Power Apps 통해 세계에서&rsquo; 가장 포괄적인 개발자 도구 키트를 제공합니다. &rsquo;모든 조직 내에서 개발자 속도를 가능하게 하는 이 기능 집합을 설명합니다.&nbsp; <a href="https://aka.ms/Ignite20/AppDev" target="_blank">Microsoft Ignite</a>에서 공유하는 Visual Studio, GitHub, Azure 및 Power Apps 대한 최신 혁신에 대해 자세히 알아볼 수 있습니다. 개발자 속도 및 Microsofts 가장 포괄적인 개발자 도구 키트 및 플랫폼에 대해 자세히 알아볼 수 있는 Microsoft&rsquo; Ignite 키노트도 놓치지 마세요&rsquo;.</p>
+
+
+  <ul>
+
+  </ul>
+
+
+  <p>&bull;<a href="https://myignite.microsoft.com/sessions/0eaefb05-0020-457b-be25-f5c71810d8ba" target="_blank">사티아 나델라: 디지털 복원력 구축</a></p>
+
+
+  <p>&bull;<a href="https://myignite.microsoft.com/sessions/08249e43-c5d0-4140-ab0d-2782dc694a55" target="_blank">Julia White: Azure에서 목적에 따라 발명</a></p>
+
+
+  <p>&bull;<a href="https://myignite.microsoft.com/sessions/7a0f75b5-0ab1-483f-86a1-4f7fdb5a4ed5" target="_blank">Scott Hanselman: Azure의 앱 개발</a></p>
+
+
+  <hr>
+
+  <p><i>Azure. 목적에 따라 발명.</i></p>
+
+
+  <ul>
+
+  </ul>

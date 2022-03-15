@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1cf3ba9642849203f6dad8c9d406a3c5a37e5c98
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905825"
+Slug: new-disk-support-capabilities-in-azure-storage-explorer
+Title: Azure Storage Explorer 새 디스크 지원 기능
+Summary: Storage Explorer 1.10.0 릴리스는 Azure Storage 계정으로 작업할 때 생산성과 효율성을 높이는 데 도움이 되기를 바라는 많은 흥미로운 업데이트와 새로운 기능을 제공합니다. 이전에 Storage Explorer 사용한 적이 없는 경우 제품 페이지로 이동하여 즐겨 찾는 운영 체제에 맞게 다운로드하세요.
+Content: >-
+  <p>Storage Explorer 1.10.0 릴리스는 Azure Storage 계정으로 작업할 때 생산성과 효율성을 높이는 데 도움이 되기를 바라는 많은 흥미로운 업데이트와 새로운 기능을 제공합니다. 이전에 Storage Explorer 사용한 적이 없는 경우&rsquo; <a href="https://azure.microsoft.com/en-us/features/storage-explorer/" target="_blank">제품 페이지로 이동하여</a> 즐겨 찾는 운영 체제용으로 다운로드하세요. 이 게시물&rsquo;에서는 1.10.0 릴리스에 추가된 VM(가상 머신) 디스크 관리에 대해 새로 추가된 지원을 살펴보겠습니다.</p>
+
+
+  <h2>디스크 지원을 사용하여 VM을 쉽게 백업 및 복원</h2>
+
+
+  <p>관리 디스크는 페이지 Blob, Blob 컨테이너 및 스토리지 계정에 대한 Azure VM 만들기 및 유지 관리를 간소화했습니다. 현재 Azure 관리 디스크는 Azure IaaS VM의 기본 스토리지 옵션입니다. 최근에 스토리지 계정에서 데이터를 준비하지 않고 온-프레미스에서 데이터를 업로드할 수 있는 Direct 업로드 API를 도입했습니다. <a href="https://azure.microsoft.com/en-us/features/storage-explorer/" target="_blank">Azure Storage Explorer</a> 관리 디스크를 만들고 액세스하기 위한 성능이 뛰어난 업로드 및 다운로드 기능을 제공하여 이러한 작업을 더욱 간소화합니다. 다음은 새 기능이 사용자와 같은 고객에게 어떻게 도움이 되는지에 대한 두 가지 예제 시나리오입니다.</p>
+
+
+  <p>온-프레미스에서 Azure로 VM을 마이그레이션하는 것이 일반적이라는 것을 배웠습니다. Storage Explorer <a href="https://aka.ms/md-explorer" target="_blank">사용하면 설명서</a>의 다음 단계를 사용하여 이 작업을 편리하게 수행할 수 있습니다.</p>
+
+
+  <p align="center"><strong>그림 1: Storage Explorer 사용하여 VHD 업로드</strong></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/595f6ba8-d904-49eb-b7ab-9f5cd83537ce.gif"><img alt="A gif showing an upload of a VHD using Storage Explorer." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3554931a-deea-4534-9ced-8a16df878c80.gif" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none; width: 1024px; height: 221px;" title="업로드(003)"></a></p>
+
+
+  <p align="left">백업 및 복원 작업은 고객&rsquo; 재해 복구 전략에서 매우 일반적인 사례이기도 합니다. 일반적인 시나리오는 지역 중단 또는 애플리케이션 업그레이드 실패 후 스냅샷에서 디스크를 복원하여 마지막으로 알려진 정상 버전으로 VM을 롤백하는 것입니다.</p>
+
+
+  <p align="left">이제 워크플로가 Storage Explorer 관리 디스크 지원으로 간소화되었습니다. <a href="https://azure.microsoft.com/en-us/features/storage-explorer/" target="_blank">1.10.0 릴리스</a>에서는 다른 Blob과 마찬가지로 디스크를 스냅샷하여 현재 버전을 백업할 수 있습니다. 향후 릴리스에서는 엔드 투 엔드 시나리오를 완료하기 위해 스냅샷에서 디스크를 만드는 것을 완벽하게 지원할 것입니다.</p>
+
+
+  <p align="center"><strong>그림 1: Azure VM에서 VHD 스냅샷 캡처</strong></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f95784d2-e8fa-4bca-badf-62c5feda2d53.gif"><img alt="A gif showing the capturing of screenshots of VHDs from an Azure VM." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a733cada-c98d-484b-9997-3a3bc01a456b.gif" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none; width: 1024px; height: 230px;" title="스냅샷(003)"></a></p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>오늘 <a href="https://azure.microsoft.com/en-us/features/storage-explorer/" target="_blank">Storage Explorer 1.10.0</a>을 다운로드하고 VM 및 디스크를 효율적으로 관리하기 시작합니다. 피드백이 있는 경우 <a href="https://github.com/microsoft/AzureStorageExplorer/issues" target="_blank">GitHub 리포지토리</a>에서 새 문제를 열어야 합니다. 제품을 사용하는 데 어려움이 있는 경우 <a href="https://docs.microsoft.com/en-us/azure/azure-supportability/how-to-create-azure-support-request" target="_blank">다음 지침</a>에 따라 지원 티켓을 여세요.</p>

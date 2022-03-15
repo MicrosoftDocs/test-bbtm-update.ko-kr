@@ -1,0 +1,61 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3e1ca439bd7f93221992a56d548cabdba9631e03
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911350"
+Slug: azure-iot-supports-new-security-hardware-to-strengthen-iot-security
+Title: Azure IoT IoT 보안을 강화하기 위해 새로운 보안 하드웨어를 지원합니다.
+Summary: >
+  Microsoft IoT Microsoft가 IoT를 단순화하여 모든 비즈니스가 보다 접근 가능하고 구현하기 쉬운 IoT 솔루션을 통해 디지털로 변환할 수 있도록 하는 방법에 대해 자세히 알아보세요.  Microsoft는 디바이스에 대한 운영 체제, 제어할 클라우드 서비스, 인사이트를 얻기 위한 고급 분석 및 지능형 작업을 가능하게 하는 비즈니스 애플리케이션 등 비즈니스가 시작해야 하는 모든 것을 포함하여 IoT 여정에 있는 조직을 충족하기 위해 광범위한 IoT 제품을 제공하는 가장 포괄적인 IoT 포트폴리오를 보유하고 있습니다. Microsoft IoT가 비즈니스를 어떻게 변화시킬 수 있는지 확인하려면 www.InternetofYourThings.com 방문하세요.
+Content: >-
+  <div>
+
+  <p>IoT 보안의 리더십에 대한 Microsofts&rsquo;의 약속은 Azure IoT&rsquo;&nbsp; IoT 배포 보안에 대한 신뢰 수준과 신뢰 수준을 입증하고 있습니다.&nbsp; Azure IoT 이제 DICE(Device Identity Composition Engine) 및 다양한 종류의 HSM(하드웨어 보안 모듈)을 지원&nbsp;합니다.&nbsp; DICEis&nbsp;는 디바이스 식별 및 증명을 위한 TCG(신뢰할 수 있는 컴퓨팅 그룹)&nbsp;의 향후 표준으로, 제조업체는 실리콘 게이트를 사용하여 하드웨어에 기반한 디바이스 식별을 만들어 처음부터 새로운 디바이스의 DNA에 보안 하드웨어 부분을 만들 수 있습니다. HSM은 디바이스 ID를 보호하고 하드웨어 기반 디바이스 증명 및 제로 터치 프로비저닝과 같은 고급 기능을 제공하는 데 사용되는 핵심 보안 기술입니다.</p>
+
+  </div>
+
+
+  <div>또한&nbsp; Azure IoT 팀은 표준 조직 및 주요 업계 파트너와 협력하여 최신 보안 모범 사례를 사용하여 다양한 HSM(하드웨어 보안 모듈)에 대한 지원을 배포하고 있습니다.&nbsp; HSM은 IoT 디바이스에서 신뢰할 수 있는 내성 및 복원력 있는 하드웨어 루트를 제공합니다. Azure IoT 플랫폼은 Azure IoT Hub Device Provisioning 및 Azure IoT Hub Device Management와 같은 플랫폼 서비스와 HSM 지원을 투명하게 통합하므로 고객과 개발자는 애플리케이션과 관련된 특정 위험을 식별하는 데 더 집중할 수 있으며 보안 배포 전술에는 더 집중할 수 있습니다.&nbsp;</div>
+
+
+  <div>&nbsp;</div>
+
+
+  <div>IoT 디바이스 배포는 원격, 자율적, 스푸핑, 변조 및 변위와 같은 위협에 개방될 수 있습니다. 이 경우 HSM은 인증, 무결성, 기밀성, 개인 정보 보호 등에 대한 신뢰를 높이기 위한 주요 방어 계층을 제공합니다. Azure IoT 팀은 고객 및 개발자의 배포 관련 위험을 수용하기 위해 다양한 HSM에 쉽게 액세스할 수 있도록 주요 HSM 제조업체와 직접 협력하고 있습니다.&nbsp;</div>
+
+
+  <div>&nbsp;</div>
+
+
+  <div>Azure IoT 팀은 개방형 표준을 활용하여 안전하고 강력한 배포에 대한 모범 사례를 개발합니다.&nbsp; 이러한 향후 표준 중 하나는 TCG(신뢰할 수 있는 컴퓨팅 그룹)의 DICE(디바이스 ID 컴퍼지션 엔진)로, 인증, 보안 부팅 및 원격 증명과 같은 다양한 보안 솔루션을 빌드하기 위해 신뢰를 고정하기 위해 최소한의 HSM 공간이 필요한 확장 가능한 보안 프레임워크를 제공합니다.&nbsp; DICE는 IoT 디바이스의 특징을 지속적으로 지정하는 제약 조건 컴퓨팅의 새로운 현실에 대한 응답입니다.&nbsp; 미니멀한 접근 방식은 Azure IoT 플랫폼에서도 지원되는 TCG(<a href="https://trustedcomputinggroup.org/">신뢰할 수 있는 컴퓨팅 그룹&rsquo;</a>) 및 TPM(<a href="https://trustedcomputinggroup.org/work-groups/trusted-platform-module/">Trusted Platform Module</a>)과&nbsp; 같은 보다 전통적인 보안 프레임워크 표준에 대한 대체 경로입니다.&nbsp;&nbsp; 이 글을 쓰는 시점에서 Azure IoT 플랫폼은 STMicroelectronics 및 <a href="https://www.micron.com/">Micron</a>과 같은 실리콘 공급 업체의 HSM에서 DICE에 대한 HSM 지원뿐만 아니라 TPM 1.2에 대한 지원을 제공합니다.&nbsp; <a href="https://developer.spyrus.com/azure-iot-hub/">Spyrus</a>&rsquo; Rosetta 같은 공급업체별 프로토콜을 사용하는 HSM에 대한 지원도 있습니다.</div>
+
+
+  <div>&nbsp;</div>
+
+
+  <div>마지막으로, 위험 평가에 대한 높은 수준의 지침은 솔루션 설계자가 HSM 선택을 포함하여 적절한 보안 결정을 내릴 수 있도록 돕는 것입니다. 채택 비용이 너무 많이 드는 보안 솔루션을 과도하게 도입할 수 있지만 비용상의 이유로 솔루션 보안 엔지니어링을 바로 가기로 할 수도 있습니다.&nbsp; 따라서 최적의 솔루션을 위해 보안과 비용 간의 상호 작용을 이해해야 합니다.&nbsp; 이를 위해 Azure IoT 팀은 고객과 솔루션 설계자가 IoT 인프라의 <a href="https://blogs.microsoft.com/microsoftsecure/2016/10/26/securing-the-internet-of-things-introducing-the-security-program-for-azure-iot/">보안에 </a>액세스하고 IoT 배포에 적합한 보안 접근 방식을 찾을 수 있도록 지원하는 Azure IoT 보안 프로그램을 제공합니다.&nbsp;</div>
+
+
+  <div>&nbsp;</div>
+
+
+  <div>보안 여정은 고객과 개발자가 IoT 배포를 보호하는 데 가장 높은 신뢰와 신뢰를 얻기 위해 지속적으로 도움을 주기 위해 최선을 다하고 있는 Azure IoT 팀 중 하나입니다.&nbsp; 여기에는 광범위한 하드웨어 기본 보안 및 보안 표준을 지원하여 IoT 디바이스에 대한 하드웨어 신뢰 루트를 보호하는 작업이 포함됩니다.</div>
+
+
+  <div>&nbsp;</div>
+
+
+  <h2>Microsoft IoT에 대해 자세히 알아보기</h2>
+
+
+  <div><br>
+
+  Microsoft는 모든 비즈니스가 보다 접근성이 높고 구현하기 쉬운 IoT 솔루션을 통해 디지털로 변환할 수 있도록 IoT를 간소화하고 있습니다. Microsoft는 디바이스에 대한 운영 체제, 제어할 <a href="https://www.microsoft.com/en-us/internet-of-things/">클라우드 서비스</a>, 인사이트를 얻기 위한<a href="https://www.microsoft.com/en-us/cloud-platform/cortana-intelligence-suite"> 고급 분석 </a>및 지능형 작업을 가능하게 하는 <a href="https://www.microsoft.com/en-us/dynamics365/field-service">비즈니스 애플리케이션</a>에 이르기까지 비즈니스가 시작해야 &mdash; 하는 모든 것을 포함하여 IoT 여정에 있는 조직을 충족하기 위해 광범위한 IoT 제품을 갖춘 가장 포괄적인 IoT 포트폴리오를 보유하고 있습니다. Microsoft IoT가 비즈니스를 어떻게 변화시킬 수 있는지 확인하려면 <a href="https://www.InternetofYourThings.com">www.InternetofYourThings.com</a> 방문하세요.</div>
+
+
+  <div>&nbsp;</div>
+
+
+  <div>&nbsp;</div>

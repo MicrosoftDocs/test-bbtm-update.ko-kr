@@ -1,0 +1,73 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b16b21ce0a44d44269cd413a5cf344c6af4c748a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912169"
+Slug: auditing-media-assets-lifecycle-part-3
+Title: 미디어 자산 수명 주기 감사 – 3부
+Summary: 미디어 자산의 수명 주기를 감사하는 데 도움이 되는 일련의 게시물의 3부(샘플 코드 포함). 3부에서는 특히 개별 파일이 자산에 추가된 시기를 보여 주는 보고서를 생성하는 데 집중했습니다.
+Content: >-
+  이 블로그의 <a href="https://azure.microsoft.com/blog/2014/07/23/auditing-media-assets-lifecycle-part-1-2">1부</a>와 <a href="https://azure.microsoft.com/blog/2014/08/06/auditing-media-assets-lifecycle-part-2">2부</a>에서는 미디어 자산이 만들어지고 삭제되고 미디어 처리 VM에 복사되는 시기를 보여 주는 자산 감사 보고서를 만들 수 있도록 하는 데 중점을 두었으며, 3부에서는 개별 파일이 자산에 추가된 시기와 관련된 데이터로 보고서를 개선하는 방법을 설명합니다. 좋은 점은 코드를 작성하지 않고도 가능하다는 것입니다.
+
+
+  &nbsp;
+
+  <h2>Storage 자산 파일</h2>
+
+  자산 파일은 스토리지의 자산 컨테이너 아래에 Blob으로 저장됩니다. 이 블로그의 1부에서 설명한 대로 자산 컨테이너는 "asset-"로 시작합니다. 이를 활용하여 Excel 파워 쿼리를 사용하여 자산 및 자산 파일 데이터를 Excel 가져옵니다. 파워 쿼리를 Excel 사용한 적이 없는 경우 "<a href="https://office.microsoft.com/en-us/excel/download-microsoft-power-query-for-excel-FX104018616.aspx">Excel 위해 Microsoft 파워 쿼리 다운로드</a>" 웹 페이지에서 다운로드할 수 있습니다. 설치되면 Excel 시작할 수 있으며 "POWER QUERY"라는 탭이 표시됩니다. 해당 탭을 클릭한 다음 "다른 원본에서" 단추를 클릭하면 아래 스크린샷과 같이 "Windows Azure Blob Storage"이라는 메뉴 항목이 표시됩니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/07/2014-07-08_15h40_40.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="2014-07-08_15h40_40" alt="2014-07-08_15h40_40" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2014-07-08_15h40_40_thumb.png" width="614" height="501" border="0" /></a>
+
+
+  해당 메뉴 항목을 클릭한 다음 Storage 계정 이름(Media Services 계정과 연결됨)을 입력하고 확인을 클릭합니다. 다음 화면에서 계정 키를 입력하고 확인을 클릭합니다. 이 단계에서는 아래 스크린샷과 같이 오른쪽에 "탐색기" 창이 표시됩니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/07/2014-07-08_15h49_45.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="2014-07-08_15h49_45" alt="2014-07-08_15h49_45" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2014-07-08_15h49_45_thumb.png" width="614" height="463" border="0" /></a>
+
+
+  "탐색기" 창에서 Storage 계정 이름을 마우스 오른쪽 단추로 클릭하고 "편집"을 클릭합니다. 아래와 같이 열에 로드된 모든 컨테이너와 함께 별도의 창이 열립니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/07/2014-07-08_15h52_11.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="2014-07-08_15h52_11" alt="2014-07-08_15h52_11" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2014-07-08_15h52_11_thumb.png" width="614" height="597" border="0" /></a>
+
+
+  "이름" 열 옆에 있는 드롭다운 단추를 클릭한 다음 "텍스트 필터"와 "시작 중..."을 차례로 선택합니다. 다음과 같습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/07/2014-07-08_15h55_26.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="2014-07-08_15h55_26" alt="2014-07-08_15h55_26" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2014-07-08_15h55_26_thumb.png" width="614" height="597" border="0" /></a>
+
+
+  아래와 같이 "starts with" 절에 "asset-"을 입력하고 확인을 클릭합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/07/2014-07-08_15h57_47.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="2014-07-08_15h57_47" alt="2014-07-08_15h57_47" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2014-07-08_15h57_47_thumb.png" width="614" height="224" border="0" /></a>
+
+
+  이제 테이블에 로드된 자산 컨테이너만 표시됩니다. 그런 다음 " 데이터" 열 옆에 있는 단추를 클릭하고 확인을 클릭합니다. 이제 컨테이너 아래의 모든 Blob에 대한 데이터가 표시됩니다. 그런 다음 Data.Attributes 열 옆에 있는 단추를 클릭하고 확인을 클릭합니다. 최종 결과는 아래와 같습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/07/2014-07-08_16h03_49.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="2014-07-08_16h03_49" alt="2014-07-08_16h03_49" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2014-07-08_16h03_49_thumb.png" width="1017" height="436" border="0" /></a>
+
+
+  이 단계에서는 "닫기 적용 &amp; "을 클릭할 수 있습니다. 그러면 모든 데이터가 Excel 워크시트에 로드됩니다. 이제 피벗 테이블에 데이터를 로드하고 다음과 같은 보기를 생성할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/07/2014-07-08_16h16_03.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="2014-07-08_16h16_03" alt="2014-07-08_16h16_03" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2014-07-08_16h16_03_thumb.png" width="378" height="614" border="0" /></a>
+
+
+  즉, 이제 자산에 대한 마지막으로 수정된 타임스탬프와 함께 자산에 있는 모든 파일을 표시하는 보기가 있습니다.
+
+
+  &nbsp;
+
+  <h2>고려 사항</h2>
+
+  마지막으로 다음 사항에 유의하세요.
+
+  <ul>
+   <li>위의 작업을 사용하여 자산 파일 삭제 작업을 확인할 수 없습니다. 이를 위해 Storage 로그에서 DeleteBlob 작업을 찾아야 합니다. 이 블로그의 1부에 제공된 샘플 코드를 향상시켜 해당 작업을 찾고 <strong>AssetAudit </strong>테이블에 항목을 기록할 수 있습니다.</li>
+   <li>대부분의 자산 파일에는 마지막으로 수정된 타임스탬프가 같을 수 있으므로 <strong>AssetAudit </strong>테이블에 각 자산 파일(LastModified 타임스탬프를 RowKey로 사용)에 대한 항목을 로깅하는 것을 고려하는 경우 주의해야 합니다.</li>
+  </ul>

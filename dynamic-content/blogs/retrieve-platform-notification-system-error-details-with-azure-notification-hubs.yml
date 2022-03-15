@@ -1,0 +1,121 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8cbf01f133b00a5e9a4bddf97f281ec0a49e4c5f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912469"
+Slug: retrieve-platform-notification-system-error-details-with-azure-notification-hubs
+Title: Azure Notification Hubs를 사용하여 플랫폼 알림 시스템 오류 세부 정보 검색
+Summary: 이제 Notification Hubs를 사용하여 푸시할 때 플랫폼 알림 시스템에서 푸시 요청당 자세한 오류 피드백을 얻을 수 있습니다.
+Content: >-
+  <p>잠시 후 <a href="https://msdn.microsoft.com/en-us/library/azure/mt705560.aspx">플랫폼 알림 시스템 피드백을</a> 사용하도록 설정하여 모니터링 및 디버깅을 개선했습니다. 여기서 허브와 연결된 Platform Notification Systems의 모든 채널 오류 피드백이 스토리지 Blob에 저장되어 정독할 수 있습니다. 아직 준비하지 않은&rsquo; 경우, 우리가 준비한 기능과 간단한 <a href="https://github.com/Azure/azure-notificationhubs-samples/blob/master/dotnet/SendRestExample/SendRestExample/Program.cs">샘플을</a> 확인하는 것이 좋습니다. 많은 고객이 매우 유용하다고 생각하지만 Notification Hubs에 대한 메시지 요청당 이러한 피드백을 볼 수 있는 방법을 원했습니다.</p>
+
+
+  <p>우리는 그것에 대해 생각하고 멋진 아이디어였다!</p>
+
+
+  <p>최신 업데이트를 통해&rsquo; 메시지별 원격 분석으로 작업하지 않은&rsquo; 경우 메시지별 원격 분석에 &ndash; 새 필드 <em>PnsErrorDetailsUri</em>를 추가했습니다. <a href="https://azure.microsoft.com/en-us/blog/updates-from-notification-hubs-independent-nuget-installation-model-pmt-and-more/">여기에서</a> 확인할 수 있습니다. 즉, 메시지별 원격 분석의 일부로, 알림을 푸시 아웃하고, 오류를 추출하고, URI가 표시되는 Blob에 배치할 때 플랫폼 알림 시스템의 메시지별 피드백을 처리합니다. 이렇게 하면 이러한 피드백이 훨씬 더 타겟팅되고 유용하므로 푸시에서 오류를 감지할 수 있습니다.</p>
+
+
+  <p>다음은 플랫폼 알림 시스템 피드백과 메시지별 원격 분석에 추가한 PNS 오류 세부 정보 간의 차이점에 대한 개요입니다.</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="733">
+      <tbody>
+          <tr>
+              <td valign="top" width="133">&nbsp;</td>
+              <td valign="top" width="283">플랫폼 알림 시스템 피드백</td>
+              <td valign="top" width="315">메시지별 원격 분석&rsquo; PNS 오류 세부 정보</td>
+          </tr>
+          <tr>
+              <td valign="top" width="133">Scope</td>
+              <td valign="top" width="283">알림 허브</td>
+              <td valign="top" width="315">알림 ID</td>
+          </tr>
+          <tr>
+              <td valign="top" width="133">콘텐츠</td>
+              <td valign="top" width="283">만료된 채널 및 PNS의 잘못된 채널 오류</td>
+              <td valign="top" width="315">PNS의 모든 오류</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>PNS 피드백 및 PNS 오류 세부 정보는 모두 표준 계층 네임스페이스에 사용할 수 있습니다.</p>
+
+
+  <p>REST를 사용하는 경우 <em>Api-Version 2016-07 </em>이상에서 작업할 때 <a href="https://msdn.microsoft.com/en-us/library/azure/mt608135.aspx">메시지별 원격 분석</a>의 반환에는 추가 <em>PnsErrorDetailsUri</em>가 있습니다. 오류는 다음 중 어느 것일 수 있습니다.</p>
+
+
+  <ul>
+      <li>잘못된 PNS 자격 증명</li>
+      <li>PNS에 연결할 수 없음</li>
+      <li>잘못된 채널</li>
+      <li>만료된 채널</li>
+      <li>잘못된 채널</li>
+      <li>PNS가 제한됨</li>
+      <li>잘못된 토큰</li>
+      <li>잘못된 토큰</li>
+      <li>Dropped</li>
+  </ul>
+
+
+  <p>오류 세부 정보는 연결된 알림 보내기 작업이 완료된 후에만 완전히 사용할 수 있으며 오류가 없는 경우 <em>PnsErrorDetailsUri</em> 에 대해 NULL을 받게 됩니다.</p>
+
+
+  <p><a href="https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/">NuGet</a> 사용하는 경우 <a href="https://msdn.microsoft.com/en-us/library/azure/microsoft.azure.notificationhubs.notificationhubclient.getnotificationoutcomedetailsasync.aspx">알림 결과 세부 정보</a> 및 Blob 콘텐츠에서 <em>PnsErrorDetailUri</em>를 추출하는 몇 줄의 코드를 추가하기만 하면 됩니다.</p>
+
+
+  <pre class="prettyprint">
+
+  // Get Notification ID from any send request
+
+  var outcome = await client.SendWindowsNativeNotificationAsync(winPayload.ToString(), tag);
+
+
+  // Get pns error detail uri once notification processing is complete
+
+  var feedbackUri = string.Empty;
+
+  var retryCount = 0;
+
+  while (retryCount++ &lt; 6)
+
+  {&nbsp;&nbsp; var result = client.GetNotificationOutcomeDetailsAsync(outcome.NotificationId).Result;&nbsp;&nbsp; if (result.State != NotificationOutcomeState.Completed)&nbsp;&nbsp; {&nbsp;&nbsp; await Task.Delay(TimeSpan.FromSeconds(10));&nbsp;&nbsp; }&nbsp;&nbsp; else&nbsp;&nbsp; {&nbsp;&nbsp; feedbackUri = result.PnsErrorDetailsUri;&nbsp;&nbsp; break;&nbsp;&nbsp; }
+
+  }
+
+  if (!string.IsNullOrEmpty(feedbackUri))
+
+  {&nbsp;&nbsp; Console.WriteLine(&quot;feedbackBlobUri: {0}&quot;, feedbackUri);&nbsp;&nbsp; var feedbackFromBlob = ReadFeedbackFromBlob(new Uri(feedbackUri));&nbsp;&nbsp; Console.WriteLine(&quot;Feedback from blob: {0}&quot;, feedbackFromBlob);
+
+  }</pre>
+
+
+  <p>Azure Storage NuGet 사용하여 다음 호출을 사용하여 Blob을 쉽게 읽을 수 <a href="https://www.nuget.org/packages/WindowsAzure.Storage/">있습니다</a>.</p>
+
+
+  <pre class="prettyprint">
+
+  private static string ReadFeedbackFromBlob(Uri uri)
+
+  {
+      var currentBlock = new CloudAppendBlob(uri);
+      var stringbuilder = new StringBuilder();
+      using (var streamReader = new StreamReader(currentBlock.OpenRead()))
+      {
+          while (!streamReader.EndOfStream)
+          {
+              string currentFeedbackString = streamReader.ReadLine();
+              if (currentFeedbackString != null)
+              {
+                  stringbuilder.AppendLine(currentFeedbackString);
+              }
+          }
+      }
+      return stringbuilder.ToString();
+  } </pre>
+
+
+  <p>이 기능을 사용하도록 곧 Node.js SDK를 업데이트할 예정입니다. 한편, NuGet 또는 REST API를 사용해 보시고 여러분이 어떻게 생각하는지 알려주세요!</p>

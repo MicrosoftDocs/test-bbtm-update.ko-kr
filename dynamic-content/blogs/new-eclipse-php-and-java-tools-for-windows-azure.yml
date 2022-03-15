@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9317ec546b508a5b199259fb0397c8cc2bb75f79
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905814"
+Slug: new-eclipse-php-and-java-tools-for-windows-azure
+Title: 새 Eclipse, PHP 및 Java Tools for Windows Azure
+Summary: 어제 독일 루드비히스부르크에서 열린 Eclipse Summit Europe에서 Microsoft는 PHP 및 Java 개발자가 Windows 쉽게 작업할 수 있도록 하는 두 가지 흥미로운 새로운 오픈 소스 프로젝트를 발표했습니다.
+Content: <p>어제 독일 루드비히스부르크에서 열린 Eclipse Summit Europe에서 Microsoft는 PHP 및 Java 개발자가 Windows Azure.&#160; 작업하는 데 더 쉽게 사용할 수 있는 두 가지 흥미로운 새로운 오픈 소스 프로젝트를 발표했습니다. 두 프로젝트는 프랑스 기반 IT 솔루션 공급자인 Soyatec과 공동으로 만들어졌습니다.</p>  <p>Eclipse용 Azure 도구에 Windows 첫 번째 프로젝트는 PHP 개발자가 Eclipse를 사용하여 Azure projects.&#160; <a href="https://blogs.msdn.com/interoperability/archive/2009/10/28/tasktop-soyatec-microsoft-to-foster-eclipse-and-microsoft-platform-interoperability.aspx">상호 운용성 @ Microsoft 블로그</a>에 Windows 작성하는 데 도움이 됩니다.</p>  <blockquote>   <p>Windows Azure Tools for Eclipse는 개발자가 PHP 애플리케이션을 작성하고, 디버그하고, 구성하고, azure에 배포할 수 있는 일련의 마법사 및 유틸리티를 Windows. www.windowsazure4e.org 다운로드할 수 있습니다.</p>    <p>…</p>    <p>또한 플러그 인은 몇 달 전에 소개한 기존 <a href="https://blogs.msdn.com/interoperability/archive/2009/07/07/july-ctp-of-php-sdk-for-windows-azure-released-and-support-in-zend-framework.aspx">Windows Azure SDK for PHP</a>를 번들로 제공합니다.</p> </blockquote>  <p>Java용 Azure SDK에 Windows 두 번째 프로젝트는 Java.Windows &#160; Azure Storage에 액세스하기 위한 클라이언트 라이브러리입니다. 이 라이브러리는 Eclipse 확장의 "Storage Explorer" 기능을 만드는 데 사용되었습니다.</p>  <p>Windows Azure 팀은 모든 개발자에게 훌륭한 플랫폼 환경을 제공하기 위한 지속적인 작업의 일부인 이 두 프로젝트에 대해 매우 기쁘게 생각하고 있습니다.</p>  <p>어제 발표에는 Windows 7 및 버전 1.0의 Eclipse Tools for Silverlight.&#160;&#160; <a href="https://blogs.msdn.com/interoperability/archive/2009/10/28/tasktop-soyatec-microsoft-to-foster-eclipse-and-microsoft-platform-interoperability.aspx">상호 운용성 @ Microsoft 블로그</a>에 대한 자세한 내용이 포함되어 있습니다.</p>

@@ -1,0 +1,46 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4db1fe302cf5cc0d7069e548d79c440ed8b3cc65
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905437"
+Slug: microsoft-azure-stack-technical-preview-is-now-available-for-download
+Title: 이제 Microsoft Azure Stack Technical Preview를 다운로드할 수 있습니다.
+Summary: 이제 Azure Stack의 첫 번째 Technical Preview를 다운로드할 수 있습니다.
+Content: >-
+  <p><em>이 블로그 게시물은 Azure Stack 팀에서 제공했습니다.</em></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이번 주 초 <a href="https://azure.microsoft.com/en-us/blog/announcing-the-first-technical-preview-of-microsoft-azure-stack/" target="_blank">공지에</a> 따라 Azure Stack의 첫 번째 Technical Preview를 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/try/" target="_blank">다운로드</a>할 수 있습니다!</p>
+
+
+  <p>현재는&rsquo; 접근 방식을 훨씬 더 풍부하게 이해하는 데 도움이 되는 주요 Azure Stack 개념 및 기능에 대한 자세한 정보를 제공하는 <a href="https://download.microsoft.com/download/3/F/3/3F3811C0-969D-422C-9EDA-42CB79BABA96/Bring-the-cloud-to-your-datacenter-Microsoft-Azure-Stack.pdf" target="_blank">백서</a> 도 공개합니다. 당신이 속도까지 완전히 찢어 있도록&rsquo; 그것을 읽어야합니다.</p>
+
+
+  <p>이 Technical Preview에는 데이터 센터에서 Azure 서비스를 제공하는 데 도움이 되는 다음과 같은 기본 기능이 포함되어 있습니다.</p>
+
+
+  <ul>
+   <li><strong>개발자 및 IT 전문가 환경:</strong> 애플리케이션 개발자 및 서비스 관리자를 위한 Azure Portal 환경</li>
+   <li><strong>통합 애플리케이션 모델:</strong> Azure Resource Manager</li>
+   <li><strong>기본 서비스:</strong> 컴퓨팅(Virtual Machines 및 Virtual Machine 확장), 네트워킹(Virtual Network, 소프트웨어 부하 분산 장치, 분산 방화벽) 및 Storage(Blob 및 테이블)</li>
+   <li><strong>핵심 서비스:</strong> 구독 관리(ID 및 할당량), 역할 기반 액세스 제어, 계량 및 감사</li>
+   <li><strong>애플리케이션 구성 요소:</strong> Azure Stack 작업을 시작할 수 있도록 큐레이팅된 Azure Resource Manager <a href="https://github.com/Azure/AzureStack-QuickStart-Templates" target="_blank">템플릿</a> 및 Azure 일치 VM 확장(예: Desired State Configuration 및 Docker/Linux 통합)</li>
+  </ul>
+
+
+  <p>Technical Preview를 배포하면 추가 Azure 서비스를 배포하고 실행할 수 있습니다. App Service(Web Apps)를 비롯한 <a href="https://aka.ms/azurestackpaasservices" target="_blank">첫 번째 PaaS 서비스 세트</a>가 다음 주에 제공됩니다.</p>
+
+
+  <p>또한 업데이트된 Azure SDK(Azure Stack에 대한 PowerShell 지원 및 플랫폼 간 CLI 지원 포함) 및 Azure Stack &ndash; 에 대한 Visual Studio 2015 지원도 다음 주에 제공<a href="https://aka.ms/azurestackpaasservices" target="_blank">될 예정입니다</a>. 이는 우리 팀의 새로운 정상이며,&rsquo; 데이터 센터에서 클라우드 모델을 운영할 수 있도록 지속적인 혁신을 제공하는 방법을 설명합니다.</p>
+
+
+  <p>이 Technical Preview에서 사용할 수 있는 시나리오를 시작하고 시험 사용하는 방법에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/azure-stack/" target="_blank">설명서를</a> 확인하세요. 이 개념 증명 환경을 호스트하려면 단일 서버가 필요합니다. 문제가 발생하여 도움이 필요하거나 피드백을 제공하거나 요청을 하려는 경우&rsquo; <a href="https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=azurestack" target="_blank">Azure Stack 포럼</a>을 방문하세요.<br />
+
+  &nbsp;<br />
+
+  Wed&rsquo;는 이 미리 보기 릴리스에서 타이어를 걷어차는 경험에 대해 자세히 알고 싶어합니다. 여러분의 생각과 피드백을 공유해 주셔서 미리 감사드립니다. 자세한 내용을 알아보기 위해 Mark Russinovich와 Jeffrey Snover는 <strong>2월 3일 수요일 오전 9:00에 PDT</strong> &ndash; 에서 일정을 표시하는 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/webcast/" target="_blank">웹캐스트</a>를 개최합니다.</p>

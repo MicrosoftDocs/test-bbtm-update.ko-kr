@@ -1,0 +1,50 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 494e2a16b27fd2f2715d714fdb9b93efc6ab79c8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911018"
+Slug: harness-real-time-data-for-smarter-cities-buildings-and-transportation
+Title: 스마트 도시, 건물 및 교통을 위한 실시간 데이터 활용
+Summary: '어디에 살든, 악천후가 시민의 안전과 도시 예산에 심각한 영향을 미칠 수 있다는 것을 너무나 잘 알고 있을 것입니다. '
+Content: >-
+  <p><em>이 문서는 CMO, Fathym 및 Azure Gov 팀에 Co-Founder &amp; 크리스티 조크(Christy Szoke)가 공동 저술했습니다.</em></p>
+
+
+  <p><a href="https://msdnshared.blob.core.windows.net/media/2018/06/Fathym-Logo_Registered-01-e1528727194108.jpg"><img alt="Fathym logo" border="0" height="162" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5fe84e2d-6a66-4986-ac71-730cf13cc2bc.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Fathym 로고" width="349"></a></p>
+
+
+  <p>여러분이 어디에 살든,&rsquo; 악천후가 시민의 안전과 도시 예산에 심각한 영향을 미칠 수 있다는 것을 너무나 잘 알고 있을 것입니다. 그리고 최근까지 도로 및 기상 조건 변경으로 영향을 받는 지방 자치 단체는 사전에 대응하는 데 필요한 데이터에 쉽게 액세스할 수 없었습니다&rsquo;. 이제 IoT( <a href="https://www.internetofyourthings.com/" target="_blank">사물 인터넷)의</a> 최근 발전으로 인해 지역 사회는 하이퍼 로컬 도로 날씨 데이터를 기반으로 더 빠르고 정보에 입각한 결정을 내리고 도로 안전 및 운영 효율성을 향상시킬 수 있습니다.</p>
+
+
+  <p><a href="https://msdnshared.blob.core.windows.net/media/2018/06/Fathym-smart-city-building-transportation.jpg"><img alt="Image of industrial modes of transportation" border="0" height="833" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/935cbead-f45c-4b19-a2b7-d0a624fd7119.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="산업용 교통 모드 이미지" width="1246"></a></p>
+
+
+  <p>알래스카 주 페어뱅크스에 있는 주&rsquo; 교통부는 눈보라가 다가오거나 폭풍우가 몰아치는 동안 도로를 얼음으로 내릴지 여부와 같은 중요한 결정을 내릴 방법이 필요했습니다. Fairbanks는 Azure IoT <a href="https://azure.microsoft.com/en-us/services/iot-hub/" target="_blank">Hub</a>를 활용하는 실시간 도로 날씨를 보다 완벽하게 이해할 수 있는 정교한 날씨 추적 제품 제품군인 IoT 솔루션 공급자 <a href="https://fathym.com/" target="_blank">Fathym</a> 및 <a href="https://fathym.com/smart-transportation" target="_blank">WeatherCloud</a> 솔루션으로 전환했습니다.</p>
+
+
+  <p>Fathym은 IoT 솔루션의 배포를 간소화하고 가속화하기 위해 Azure에 구축된 혁신을 지속적으로 제공하고 있으며, 조직이 더 나은 의사 결정을 내릴 수 있도록 서로 다른 원본의 실시간 데이터를 연결하는 데 고유한 전문 지식을 확장하고 있습니다. Fathym의 CTO인 Michael Gearhardt는 Azure IoT Hub가 오픈 소스 SDK 및 여러 프로토콜&rsquo;을 지원하는 개방적이고 유연한 클라우드 플랫폼이기 때문에 민간 및 공공 부문 모두에서 고객을 위한 새로운 솔루션을 만들기 위해 더 빠르게 혁신할 수 있다고 말합니다&ldquo;.&rdquo;</p>
+
+
+  <p>Fathym은 서로 다른 사일로 및 센서의 데이터를 원활하게 병합하므로 엔터프라이즈급 IoT 솔루션 및 데이터 애플리케이션을 빌드하는 시간을 몇 달에서 몇 주 또는 며칠로 줄일 수 있습니다. Fathyms&rsquo; 도구는 운영 직원이 조직의 요구에 맞는 솔루션을 만들고 지속적으로 발전시킬 수 있도록 설계되어 개발자가 다른 우선 순위를 확보할 수 있습니다. Fathyms&rsquo; <a href="https://fathym.com/data-device-framework" target="_blank">Data &amp; Device Framework</a> 는 유연성과 공동 작업을 위해 빌드되어 사용자가 데이터를 쉽게 필터링 및 융합하고, 데이터 스트림을 시각화와 페어링하고, 다양한 대시보드 및 앱을 빌드하고, 언제든지 솔루션을 다시 구성할 수 있도록 합니다.</p>
+
+
+  <p>교통부는 Fathym을 사용하여 IoT 센서의 입력과 결합된 실시간 날씨 데이터를 제공하여 여름철 도로 재충전부터 겨울철에 더 효율적으로 소금에 절이는 것까지 모든 것을 관리하고 있습니다.</p>
+
+
+  <ul>
+   <li>실시간 데이터를 통해 운송 팀은 다양한 지역의 포장 온도를 보다 쉽게 모니터링하여 안전한 운전 시기를&rsquo; 평가할 수 있습니다.</li>
+   <li>Lidar 장치를 사용하여 소금과 자갈 더미에 대한 대량 평가를 통해 교통부는 재고 추정치의 정확도를 10~15% 이내에서 2-3% 이내로 늘릴 수 있다고 데이터 엔지니어링 및 분석의 Fathym 디렉터 라이언 사펜필드(Ryan Sappenfield)는 보고합니다.</li>
+   <li>의사 결정에 대한 실시간 날씨 데이터를 활용하면 큰 폭풍이 전국을 휩쓸 때 기관이 공항 및 기타 교통 서비스를 운영하는 데 도움이 될 수 있습니다. 이를 다른 IoT 데이터와 결합하면 공항에서 예기치 않은 이벤트가 발생할 때 필요한 사람, 트래픽 및 관리 서비스의 흐름을 예측하는 데 도움이 될 수 있습니다.</li>
+   <li>또한 Fathym은 공급망 연결을 제공하여 최신 날씨 데이터를 기반으로 리소스를 보다 효율적으로 분산합니다.</li>
+  </ul>
+
+
+  <p>Fathym은 또한 기존 센서와 새로운 센서를 사용하여 태양열 및 풍력을 모니터링하고 이를 WeatherCloud 예측 데이터와 결합하여 수요에 대한 예측 정보와 이 수요를 충족하는 데 가장 적합한 에너지원 유형을 제공하는 여러 재생 가능 에너지 고객과 협력하고 있습니다. 에너지 생산자는 소기후를 예측할 수 있는 IoT 시스템을 사용하여 시간에 필요한 에너지원을 더 잘 예측하여 그리드를 보다 효율적으로 만들고 조직이 다양한 에너지원에서 최적화할 수 있도록 지원합니다.</p>
+
+
+  <h2>Fathym 정보</h2>
+
+
+  <p>콜로라도 주 볼더에 본사를 둔 Fathym은 엔터프라이즈 사물 인터넷 솔루션의 신속한 개발 및 배포를 위한 혁신 프레임워크입니다. Fathyms&rsquo; WeatherCloud 솔루션은 독점 알고리즘과 기계 학습을 센서 및 대기 기상 관측과 결합하여 전 세계적으로 유일하게 확장된 도로 및 대기 일기 예보 시스템을 제공합니다.</p>

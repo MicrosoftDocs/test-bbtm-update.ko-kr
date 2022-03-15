@@ -1,0 +1,62 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 65b3cc219c66c54936e26f88df397fedada802d9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911895"
+Slug: enhancements-abound-in-general-availability-of-azure-iot-hub-device-management
+Title: 일반 공급으로 Azure IoT Hub 디바이스 관리에서 향상된 기능이 풍부합니다.
+Summary: Azure IoT Hub 디바이스 관리의 일반 공급에 대해 자세히 알아보세요.
+Content: >-
+  <div>성공적인 IoT 솔루션의 가장 중요한 요소 중 하나는 디바이스의 지속적인 관리를 위한 신중한 전략을 구현하는 것입니다.&nbsp; 올해 초 <a href="https://azure.microsoft.com/en-us/blog/microsoft-announces-two-new-offerings-to-streamline-iot-management/">Azure IoT Hub 디바이스 관리</a><a href="https://azure.microsoft.com/en-gb/blog/introducing-azure-iot-hub-device-management/"></a>의 미리 보기에 따라 개발자와 파트너의 뛰어난 커뮤니티는 이제 모든 고객이 사용할 수 있는 새로운 기능과 기능을 소개할 수 있는 피드백을 제공했습니다.</div>
+
+
+  <div>&nbsp;</div>
+
+
+  <div>Azure IoT Hub 디바이스 관리는 IoT 개발자와 운영자에게 Azure 하이퍼스케일 클라우드의 기능을 활용하여 수십억 개의 디바이스에서 변경 내용을 구성, 모니터링, 쿼리 및 오케스트레이션할 수 있는 기능을 제공합니다. IoT 운영자는 Azure IoT Hub 디바이스 관리 도구 및 다음과 같은 많은 일반적인 비즈니스 요구를 해결하는 애플리케이션을 활용할 수 있습니다.</div>
+
+
+  <ul style="margin-left: 40px;">
+      <li><strong>규모 &amp; </strong> &ndash; 자동화 일상적인 작업의 자동화는 운영자의 상대적으로 작은 직원과 디바이스의 수백만의 관리를 가능하게</li>
+      <li><strong>개방 &amp; </strong> 다양한 디바이스 클래스, 플랫폼 유형, 운영 체제 및 프로토콜 표준에 대한 호환성 &ndash; 맞춤형 관리</li>
+      <li><strong>컨텍스트 인식</strong> &ndash; 서비스 안정성, 기계 상태 및 운영자 및 사용자의 안전을 유지하기 위해 제조 및 산업 환경의 동적 특성을 설명하는 유연하고 지능적인 디자인</li>
+      <li><strong>여러 역할</strong> &ndash; 서비스 IoT 운영자의 워크플로 및 프로세스를 지원하면서 다른 중요 업무용 기술 및 비즈니스 역할과의 공동 작업을 용이하게 합니다.</li>
+  </ul>
+
+
+  <p>모든 고객에게 Azure IoT Hub 디바이스 관리의 일반 공급으로 신규 및 기존 Azure IoT Hub 고객은 다음과 같은 새로운 기능과 기능에 액세스할 수 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><strong>디바이스 쌍</strong> &ndash; 클라우드와 디바이스 간의 디바이스 조건 및 운영자 구성 동기화를 허용하는 물리적 디바이스의 디지털 표현입니다.</p>
+
+
+  <p style="margin-left: 40px;"><strong>직접 메서드</strong> &ndash; 클라우드를 통해 연결된 디바이스에 직접 수행 작업을 적용합니다.</p>
+
+
+  <p style="margin-left: 40px;"><strong>작업</strong> -&nbsp; 디바이스 쌍 변경 내용 및 메서드를 브로드캐스트하고 예약하여 수백만 개의 디바이스에서 관리 작업을 확장합니다.</p>
+
+
+  <p style="margin-left: 40px;"><strong>쿼리</strong> &ndash; 디바이스 쌍 및 작업에서 실시간 동적 보고서를 만들어 디바이스가 오프라인 상태인지 여부에 관계없이 전체 디바이스 컬렉션의 상태와 상태를 증명합니다.</p>
+
+
+  <p>이 기능은 <a href="https://github.com/Azure/azure-iot-sdks">Azure IoT 디바이스 SDK</a>의 일부로 사용할 수 있으며 디바이스 쪽 지원은 현재 C, Node.js 및 Pythonwith&nbsp; C# 및 Java용으로 출시될 예정입니다.&nbsp; 이러한 기본 구성 요소 외에도 다음과 같은 디바이스 관리 작업을 지원하기 위해 <a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-device-management-get-started">라이브러리를 사용할 수 있도록 하고 있습니다</a>.</p>
+
+
+  <p style="margin-left: 40px;"><strong>펌웨어 업데이트</strong> &ndash; 단일 디바이스 또는 디바이스 컬렉션에 제공된 펌웨어 이미지 적용</p>
+
+
+  <p style="margin-left: 40px;"><strong>재부팅</strong> &ndash; 하나 이상의 디바이스에서 다시 시작</p>
+
+
+  <p style="margin-left: 40px;"><strong>공장 초기화</strong> &ndash; 디바이스 또는 디바이스 컬렉션을 초기 팩터리 이미지 및 구성으로 되돌리기</p>
+
+
+  <p style="margin-left: 40px;"><strong>구성</strong> &ndash; 디바이스 쌍 desired 속성을 사용하여 하나 이상의 디바이스가 온 또는 오프라인 상태인지 여부를 구성합니다.</p>
+
+
+  <p>이러한 작업에 대한 구현은 <a href="https://github.com/Azure/azure-iot-sdks/tree/master/c/iothub_client/samples/iothub_client_sample_mqtt_dm/pi_device">Raspberry Pi 2 &amp; 3</a>에도 사용할 수 있습니다.&nbsp; 또한&rsquo; <a href="https://azure.microsoft.com/en-us/blog/microsoft-expands-azure-certified-for-iot-to-help-customers-choose-the-right-iot-device/">IoT 및 산업용 인터넷 디바이스 제조업체의 광범위한 커뮤니티와</a> 협력하여 훨씬 더 광범위한 디바이스에 자사 지원을 제공하기 위해 노력하고 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-device-management-overview">현재&#39;</a> 향상된 Azure IoT Hub 디바이스 관리에 대해 자세히 알아보고 가이드&nbsp;를 <a href="https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-device-management-get-started">시작하세요</a>. 고객 피드백을 매우 중요하게 사용하므로 Azure IoT <a href="https://www.yammer.com/azureadvisors/">Advisors Yammer 그룹에</a> 가입하는 <a href="https://feedback.azure.com/forums/321918-azure-iot/">Azure IoT User Voice 포럼</a>&nbsp;을 통해 계속해서 제안 사항을 제출하세요.</p>

@@ -1,0 +1,102 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6d04a4dca60f154d6aec2fd33e4ab7be997a8ab3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905584"
+Slug: azurecat-chalk-talks-at-strata-2014
+Title: Strata 2014에서 AzureCAT 분필 회담
+Summary: 이번 주 AzureCAT 팀은 Strata 컨퍼런스에서 첫 번째 팀에 출연하게 되어 기쁩니다.AzureCAT 팀에 익숙하지 않은 사용자들을 위해 Microsoft는 약 70개의 Azure로 구성된 국제 그룹입니다...
+Content: >-
+  이번 주 <a href="https://social.msdn.microsoft.com/profile/azurecat/">AzureCAT 팀은</a> Strata 컨퍼런스에서 첫 번째 팀에 출연하게 되어 기쁩니다.AzureCAT 팀에 익숙하지 않은 분들을 위해 Microsoft는 Microsoft의 클라우드 및 Enterprise 부서의 중심부에 자리 잡은 약 70개의 Azure 및 데이터 괴짜로 구성된 국제적인 그룹입니다. 우리는 고객이 큰 배포를 할 때 현장 및 임원이 호출하는 사람들입니다.가장 크고 나쁜 데이터, 데이터 스토리지, 분석 및 클라우드 앱 시나리오에 대해 이야기하고 있습니다.현재까지 우리는 이러한 계약의 수백을 처리하고 여전히 stong가지고있다. 우리 팀은 이러한 학습을 엔지니어링 팀으로 다시 가져와 고객이 디자인의 초점을 유지하고 고객이 직면한 문제를 인식할 수 있도록 합니다. 우리는 또한 이러한 학습을 여러분, 우리 커뮤니티로 되돌리는 습관을 들이고 있습니다. 올해 우리는 Strata에 그 지식을 가져오고 있습니다.
+
+
+  올해 Strata Microsoft 부스에서 Microsoft 부스 지식 극장을 구성하여 Microsoft가 클라우드 및 데이터에서 어떻게 뛰어난지 보여주는 일련의 강연을 발표할 예정입니다. 다음은 라이브로 가져올 프레젠테이션 목록입니다. 우리는 우리의 경험을 공유하고 우리가 이벤트에서 여러분 모두에게서 배울 수있는 모든 것에 대해 더 흥분하게되어 기쁩니다.
+
+
+  Microsoft의 AzureCAT에서 호스팅하는 '지식 극장'에는 빠른 학습 스낵의 훌륭한 라인업이 있습니다. Microsoft 부스 및 Microsoft Cybercrimes 프레젠테이션에서 여러분을 만나게 되어 기쁩니다. 더 좋은 정보를 보려면 트위터에서 <a href="https://twitter.com/WinAzureCAT">@winazurecat</a>우리를 따르세요.
+
+  <h4>한 번 저장, 자주 사용 – 여러 HDInsight Hadoop 클러스터와 클라우드 데이터 공유</h4>
+
+  <a href="https://twitter.com/SQLCindy"><em>신디 그로스</em></a><em> https://blogs.msdn.com/cindygross</em>
+
+
+  2월 12<sup>일</sup> 수요일 오후 12:30(Microsoft 부스 극장)
+
+
+  2월 13<sup>일</sup> 목요일 오후 1:30(Microsoft 부스 극장)
+
+
+  Windows Azure HDInsight를 사용하면 데이터를 Azure에 한 번 로드하고, 선택한 도구를 사용하여 해당 데이터를 변환 및 정리한 다음, 여러 Hadoop 클러스터를 동일한 데이터 원본에 연결하고 출력을 전역적으로 공유할 수 있습니다.
+
+  <h4>HDInsight의 새로운 기능</h4>
+
+  <a href="https://twitter.com/mwinkle"><em>맷 윙클러</em></a><strong><em></em></strong>
+
+
+  2월 11<sup>일</sup> 화요일 오후 5:30(Microsoft 부스 극장)
+
+
+  2월 12<sup>일</sup> 수요일 오전 10:30(Microsoft 부스 극장)
+
+
+  Windows Azure HDInsight는 Hadoop의 기능을 활용하여 강력한 빅 데이터 분석 및 기계 학습을 클라우드에 손쉽게 배치할 수 있는 서비스입니다.업데이트된 Hadoop 구성 요소, 향상된 관리 효율성 및 추가 개발자 도구를 포함하여 HDInsight에서 최근에 제공된 새로운 기능에 대해 알아봅니다.
+
+  <h4>관계형 및 Hadoop 결합 - PDW 및 PolyBase</h4>
+
+  <a href="https://twitter.com/bizinfomall"><em>다윈 슈바이처</em></a><strong><em></em></strong>
+
+
+  2월 12<sup>일</sup> 수요일 오후 3:30(Microsoft 부스 극장)
+
+
+  2월 13<sup>일</sup> 목요일 오후 2:30(Microsoft 부스 극장)
+
+
+  Microsoft의 PDW(병렬 데이터 웨어하우스) 어플라이언스에 기본 제공되는 PolyBase 기술을 사용하면 관계형 및 MapReduce 쿼리 결과를 Excel 셀프 서비스 BI 기능을 사용하여 사용자가 사용할 수 있는 하나의 결과 집합으로 결합할 수 있습니다.
+
+  <h4>Excel 빅 데이터 충족 – Self-Service 통해 비즈니스 사용자 역량 강화</h4>
+
+  <a href="https://twitter.com/FaisalMo"><em>파이살 모하무드</em></a><strong><em></em></strong>
+
+
+  2월 12<sup>일</sup> 수요일 오전 11:30 오후 &amp; 6:00(Microsoft 부스 극장)
+
+
+  2월 12<sup>일</sup> 수요일 오후 12:15(호튼웍스 부스)
+
+
+  2월 13<sup>일</sup> 목요일 오전 10:30(Microsoft 부스 극장)
+
+
+  빅 데이터를 Excel 일류 셀프 서비스 BI 기능과 결합하면 어떻게 될까요?비즈니스 사용자에게 접근할 수 있는 방식으로 크거나 작거나 구조화되거나 구조화되지 않은 모든 데이터의 기능을 어떻게 잠금 해제할 수 있을까요?비즈니스 사용자가 모든 모양과 크기의 데이터를 활용할 수 있도록 Excel 연결을 발전시키는 방법에 대해 알아보기 위해 참여하세요.
+
+  <h4>빅 데이터에서 빅 시각적 개체로 15분 Insights</h4>
+
+  산제이 소니<em> </em>
+
+
+  2월 11<sup>일</sup> 화요일 오후 5:35(호튼웍스 부스)
+
+
+  2월 12<sup>일</sup> 수요일 오후 1:30(Microsoft 부스 극장)
+
+
+  2월 13<sup>일</sup> 목요일 오후 12:30(Microsoft 부스 극장)
+
+
+  HDInsight에 데이터가 있습니다. 이제 어떻게 해야 할까요?비즈니스 사용자가 이미 잘 알고 있는 Excel 셀프 서비스 BI 도구를 사용하여 해당 데이터에 대한 인사이트를 얻고 의미 있는 데이터 프레젠테이션을 만드는 것이 얼마나 쉬운지 알아보세요.
+
+  <h4>이 Azure 항목이란 무엇이며 어떻게 사용할 수 있나요?</h4>
+
+  <a href="https://twitter.com/SQLBoyWonder"><em>척 하인젤만</em></a><em></em>
+
+
+  2월 12<sup>일</sup> 수요일 오후 2:30(Microsoft 부스 극장)
+
+
+  2월 13<sup>일</sup> 목요일 오전 11:30 오후 &amp; 3:30(Microsoft 부스 극장)
+
+
+  데이터가 있습니다.사용하려는 도구를 알고 있습니다.이제 데이터와 도구를 호스트할 수 있는 장소가 필요합니다.Windows Azure는 Microsoft 기술을 기반으로 하지 않더라도 솔루션을 호스팅하는 데 사용할 수 있는 다양한 인프라 서비스를 제공합니다.

@@ -1,0 +1,88 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c798cd37c793f00cd5b17683fb67bcb739322943
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912532"
+Slug: reduce-false-positives-become-more-efficient-by-automating-anti-money-laundering-detection
+Title: 가양성 감소, 자금 세탁 방지 감지 자동화로 효율성 높아짐
+Summary: 은행의 가양성을 줄이는 데 도움이 되는 Microsoft Azure 자금 세탁 방지 게시물의 마지막 블로그 게시물에서 Microsoft는 자금 세탁 방지(AML) 탐지 및 관리의 엔드투엔드 처리를 자동화하는 솔루션에 대한 Microsoft의 높은 수준의 접근 방식을 언급했습니다.
+Content: >-
+  <p>이 블로그 게시물은 Microsoft의 전 세계 산업 팀의 은행 &amp; 자본 시장 전략 리더인 Andr&eacute; Burrell과 협력하여 작성되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e1a7314e-5cfd-4cea-8712-4ae1f3dd58aa.png"><img alt="image" border="0" height="478" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a9d676a-bf9e-4290-a5e6-8ad7858688e8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p><a href="https://azure.microsoft.com/blog/anti-money-laundering-microsoft-azure-helping-banks-reduce-false-positives/?WT.mc_id=rfp-acomblog-hbush" target="_blank">은행이 가양성을 줄이는 데 도움이 되는 자금 세탁 &ndash; 방지 Microsoft Azure</a> 마지막 블로그 게시물에서 Microsofts는 자금 세탁 방지(AML) 탐지 및 관리의 엔드투엔드 처리를 자동화하는 솔루션&mdash;에 대한 Microsofts&rsquo;의 높은 수준의 접근 방식을 언급했습니다.</p>
+
+
+  <ul>
+   <li>&ne; AML 사기 방지. 사기 방지는 즉각적인 식별 및 거래 중단입니다.</li>
+   <li>AML 자금 세탁 의심 또는 기타 범죄의 식별을 추구합니다.</li>
+   <li>적절한 트랜잭션 모니터링 시스템이&rdquo; 없으면 &ldquo;상당한 벌금이 부과될 수 있습니다.</li>
+  </ul>
+
+
+  <p>발행 된 벌금의 증가로 인해, 이제 규정 준수 임원, 고위 임원 및 이사회 구성원이 적절한 AML 프로그램 및 거래 모니터링 시스템 (TMS)을 갖지 못한 것에 대해 개인적으로 책임을 지도록 하는 드라이브가 증가하고 있습니다. TMS에 의해 생성되고 닫혀 있지 않은 모든 경고는 사람이 검토해야 합니다. 현재 기술은 컨텍스트에서 트랜잭션을 평가할 수 없습니다. 인간의 개입이 없다면 돈 세탁이나 테러리스트가 사용하는 빠르게 진화하는 패턴에 적응하는 것은 어렵고 거의 불가능합니다. 우리는 사기로 은행 문제를 해결하는 많은 파트너가 있습니다. 그 엘리트 그룹 중 BioCatch 및 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazuremarketplace.microsoft.com%2Fmarketplace%2Fapps%2Fonfido-5084500.onfidoidentifycheckingsolution%3FWT.mc_id%3Drfp-acomblog-hbush&amp;data=02%7C01%7C%7C396971d442304713613208d614f67d0b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636719446220002616&amp;sdata=ah2eR7UuAfyMIEvLL72NlJ9RN9phELOzkUbSa%2BrEr3k%3D&amp;reserved=0" target="_blank">Onfido ID 확인 솔루션</a><a href="https://appsource.microsoft.com/en-US/product/web-apps/biocatch.biocatch_behavioral_biometrics?wt.mc_id=amlbattle-acomblog-hbush" target="_blank">의 동작 생체 인식</a> 솔루션은 마찰 없는 탐지를 통해 사기 탐지를 자동화하는 데 도움이 됩니다.</p>
+
+
+  <h2>예 또는 아니요? 가양성 문제</h2>
+
+
+  <p>규칙은 관련된 고객, 제품 및 지리적 위치의 고정 위험 점수를 사용합니다. 위험 점수에 따라 동일한 규칙 내에서 다른 달러 임계값이 적용됩니다.&nbsp; 이러한 제한 사항을 악화시키는 경우 데이터 사일로(은행 간)는 TMS에서 사용할 데이터의 형식을 지정하기 위해 상당한 데이터 조작이 필요합니다. 이로 인해 제한된 컨텍스트 정보가 TMS에 입력됩니다. 그 결과 <strong>TMS 시스템은 엄청난 수의 가양성 경고를 생성하고 있습니다</strong>. 그런 다음, 엄격한 기간 내에 인간 조사자가 각 경고를 검토해야 합니다. 대부분의 은행은 약 95-99 %의 가양성&rdquo; 비율을 경험하고 &ldquo;있습니다.&nbsp; 즉, 모든 경고의 1%&ndash;5%만이 SAR(의심스러운 활동 보고서)을 실제로 제출합니다. 저런!</p>
+
+
+  <p>은행은 일반적으로 인수 합병을 통해 성장했습니다. 이러한 시스템이 성장함에 따라 서로 다른 시스템을 통합하겠다는 약속이 이루어지고 있습니다. 그러나, 현실에서, 그 약속은 거의 유지되지 않습니다. 은행이 계속 성장함에 따라 사일로 시스템 문제가 악화되고 있습니다.</p>
+
+
+  <p>규제 기관은 각 경고를 생성 후 60&nbsp; 일 이내에 검토해야 하며 90일 이내에 최종 결정을 내려야 합니다. 트랜잭션이 의심스럽다고 판단한 후 30일 이내에 SAR을 제출해야 합니다. 이러한 시간 프레임을 정기적으로 충족하지 못하는 것은 규제 조치의 근거가 될 수 있습니다. 이번에는 은행이 기한을 맞추기 위해 임의로 결정을 내려야 함에 따라 추가적인 문제가 발생합니다.</p>
+
+
+  <h2>컨텍스트&rsquo;가 누락되었습니다.</h2>
+
+
+  <p>은행이 마감일을 정하고 규칙이 올바르게 작동하는 경우에도 추가 컨텍스트없이 사기를 감지하기 때문에 부적절한 정보가 있다는 또 다른 문제가 있습니다.</p>
+
+
+  <p>누락된 컨텍스트의 한 가지 유형: 고객의 위치입니다. 예를 들어 고객이 런던에서 거래가 시작되는 동안 독일에서 열리는 모임에 참석합니다. 누락된 컨텍스트의 또 다른 유형: 소셜 데이터. 예를 들어 소셜 미디어 정보는 고객이 자신의 존재를 확인할 수 있는 소규모 비즈니스를 소유하고 있음을 알 수 있습니다.</p>
+
+
+  <p>SAR을 제출한다고 해서 거래가 불법인 것은 아닙니다.&nbsp; 그러나 손실로 인한 막대한 벌금과 비용을 피하기 위해 은행은 SAR을 과도하게 제출하기 시작합니다. 결과: 합법적인 고객은 의심스러운 활동에 관여한 것으로 잘못 플래그가 지정되어 더 면밀한 모니터링을 받게 됩니다. 최근에 이러한 고객은 위험 수준이 낮아지게 됩니다. 즉, 높은 위험에 대한 인식으로 계정을 닫습니다. 사일로 시스템은 조사관이 여러 시스템에 액세스하여 고객 및 트랜잭션 기록에 대한 정보를 수집하여 트랜잭션이 의심스러운지 여부를 결정하도록 요구합니다. 또한 조사관은 경고가 닫힌 이유에 대한 서면 레코드를 만들어야 합니다.</p>
+
+
+  <p>은행은 지나치게 주의를 기울여 법 집행&mdash;기관에 대한 SA의 가치를 약화시키고 있으며, 또한 가양성 SA로 압도됩니다. 이러한 기술 및 데이터 제한 사항은 업계에서 잘 알려져 있습니다. 돈 세탁자와 테러리스트는 또한 이러한 약점을 악용하는 것으로 알려져있다.</p>
+
+
+  <p>그림 1은 10개의 현금 거래가 기록되고 모든 거래가 $9500인 문제에 대한 간단한 그림을 보여 줍니다. 10명 중 한 명만이 불법 거래입니다. $10,000 이상의 모든 현금 거래를 보고해야 하는 규칙이 있습니다. 이 규칙은 $10,000 이상의 모든 현금 거래에 대한 보고를 피하기 위해 현금 거래를 &ldquo;분리하는&rdquo; 고객을 식별하기 위한 것입니다. 그림 1에서는 일부 기간 동안 $9,500에서 $9,999 사이의 고객에 의한 모든 현금 거래를 식별합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d5729ff0-cce8-4948-ab4e-13c72643fec9.png"><img alt="image" border="0" height="398" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4148d565-1a1a-47e4-9da6-690608c86c90.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="597"></a></p>
+
+
+  <p align="center"><em>그림 1</em></p>
+
+
+  <p>전체 컨텍스트에서 볼 때 10개 트랜잭션 중 1개만 진정으로 의심스럽습니다. 컨텍스트가 없는 기존 규칙 기반 시스템은 10개 트랜잭션 모두에 대한 경고를 생성합니다. 따라서 인간은 10개의 트랜잭션을 모두 검토해야 합니다. 이 예제에서 가양성 비율은 90%입니다. 중소 규모의 은행의 TMS에는 20개 이상의 규칙이 있으며, 규칙당 3가지 이상의 변형이 있어 다른 위험 기반 임계값을 해결할 수 있다고 고려할 때 문제의 크기가 명백해집니다.</p>
+
+
+  <p>은행 상품과 서비스가 더 복잡해짐에 따라 규칙이 더 복잡해집니다. TMS의 규칙을 조정하여 벌금을 부과할 수 있나요? 예, 기술적 관점에서 규칙을 구체화할 수 있습니다. 규제 당국은 은행이 규칙의 효율성을 주기적으로 검증할 것으로 기대합니다. 그러나 제한된 상황별 정보로 은행은 라인 테스트 위와 아래에서 간단한 수행으로 줄어듭니다. 은행이 가양성 수를 줄이기 위해 규칙을 조정할 때마다 진정으로 의심스러운 활동을 놓치고 규제 조치를 받을 위험이 있습니다. 결과: <strong>무딘 힘 접근 방식은 현상 유지입니다</strong>. 은행은 가양성의 높은 수를 처리하도록 강요된다. 그리고 법 집행에 대한 SAR의 유용성이 줄어듭니다. 이로 인해 TMS 기술은 기계 학습 및 인공 지능(ML/AI)의 적용을 통해 중단을 위해 잘 익습니다.</p>
+
+
+  <h2>가양성 감소는 더 많은 컨텍스트를 위해 360도 뷰를 요구합니다.</h2>
+
+
+  <p>은행은 결국 대부분의 기술에서 클라우드를 수용하지만, 현재로서는 은행 전체 데이터 세트를 기반으로 하는 모든 은행 플랫폼/시스템에서 고객의 진정한 360도 보기가 필요합니다. 360도 보기가 있으면 진정한 고객 인사이트와 컨텍스트를 더 쉽게 사용할 수 있습니다. 비용을 절감하면서 위험 및 규정 준수를 보다 강력하게 만들 수 있습니다. 은행 어두운 데이터, 고객 기반 및 제품에 대한&rsquo; 심층 분석을 사용할 수 있게 됩니다. 또한 KYC(Know Your Customer) 솔루션을 빌드하고 <a href="https://dynamics.microsoft.com/?WT.mc_id=rfp-acomblog-hbush" target="_blank">Microsoft Dynamics</a>(고객 관계 관리 시스템) 및 <a href="https://www.microsoft.com/hololens?WT.mc_id=rfp-acomblog-hbush" target="_blank">Hololens</a>라는 Microsofts&rsquo; 혼합 현실 제품을 활용하여 은행&rsquo; 직원의 효율성과 해결 속도를 향상시킬 수 있는 강력한 기반을 마련합니다.</p>
+
+
+  <p>현재 AML 조사관은 일반적으로 경고를 조사하는 데 필요한 정보를 수집하기 위해 3~5개 이상의 시스템에 액세스합니다. Hololens를 통해 Imagine AML 조사자는 노드에 도달하여 노드를 선택하고, 미리 정의된 <a href="https://powerbi.microsoft.com/en-us/PowerBI?WT.mc_id=rfp-acomblog-hbush" target="_blank">PowerBI</a> 대시보드 템플릿을 적용하여 선택한 데이터를 추가로 심문하거나, 여러 창을 다른 시스템에 열어 두거나, 두 명 이상의 조사자가 조사 및 관련 데이터를 동시에 보고 공동 작업을 수행할 수 있도록 하여 트랜잭션 네트워크의 시각화를 보고 데이터를 드릴다운할 수 있습니다.  결정. 이러한 시스템은 은행이 고객 정보에 대한 클라우드에 대한 저항을 극복하는 동시에 모든 은행&rsquo; 플랫폼에서 고객의 완전한 360도 뷰에 대한 규제 당국의 요구를 충족하여 더 나은 고객 인사이트 및 규정 준수 및 위험 관리를 가능하게 하는 데 도움이 될 것입니다.&nbsp;</p>
+
+
+  <h2>권장하는 다음 단계</h2>
+
+
+  <p>엄청난 양의 정보를 줄이고 회사에 대한 경로를 제공하기 위해 AI 사용 사례를 사용하여 <a href="https://azure.microsoft.com/industries/financial/banking/usecases/?WT.mc_id=rfp-acomblog-hbush" target="_blank">온라인 및 모바일 사기 감지</a> 사례를 발표했습니다.&nbsp; 여기서는 새로운 유형의 공격 벡터, 매일 새로운 유형의 사기 행위, 탐지 시스템이 Azure Machine Learning 및 AI 솔루션을 활용하여 그 어느 때보다 빠르게 대응해야 하는 방법에 대해 자세히 알아볼 수 있습니다.</p>
+
+
+  <p>이 항목에 대한 저자 및 게스트 기여자와 함께 참여해 주시면 감사드립니다. 아래의 의견을 통해 자유롭게 연락할 수 있습니다.</p>

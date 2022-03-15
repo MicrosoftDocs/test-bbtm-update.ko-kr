@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b9a8f5c95aef23b14317c0882e34b9a066317697
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899653"
+Slug: msdn-article-how-to-connect-to-sql-azure-using-ado-net
+Title: 'MSDN 문서: ADO.net 사용하여 SQL Azure 커넥트 방법'
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] ADO.net 사용하여 SQL Azure 연결하는 것은 SQL Server 사용하여 연결한 방식과 매우 유사하다는 것을 이해하는 것이 중요합니다. &nbsp;…'
+Content: '<p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>ADO.net 사용하여 SQL Azure 연결하는 것은 SQL Server 사용하여 연결한 방식과 매우 유사하다는 것을 이해하는 것이 중요합니다. &nbsp;MSDN은 이 작업을 수행하는 방법에 대한 자습서를 작성했습니다. 이 문서에서는 빠른 연습을 제공하고 ADO.net 사용하여 SQL Azure 데이터베이스에 연결하는 데 몇 가지 고려 사항을 제공합니다. 몇 분 정도 읽은 다음 시도해 보세요.</p>  <p><a href="https://msdn.microsoft.com/en-us/library/ee336243.aspx">MSDN 문서에 대한 링크를 보려면 여기를 클릭하세요</a>.<span style="text-decoration: underline;"> </span></p>  <p>-Steve</p>'

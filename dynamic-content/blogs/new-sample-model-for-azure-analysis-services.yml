@@ -1,0 +1,102 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 041cccaca758905bf4bac095a1e7e20527918bf7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911646"
+Slug: new-sample-model-for-azure-analysis-services
+Title: Azure Analysis Services에 대한 새 샘플 모델
+Summary: 4월에는 Microsoft SQL Server Analysis Services의 검증된 분석 엔진에서 진화한 Azure Analysis Services의 일반 공급이 발표되었습니다. 최신 데이터의 성공-...
+Content: >-
+  <p>4월에는 Microsoft SQL Server Analysis Services의 검증된 분석 엔진에서 진화한 Azure Analysis Services의 일반 공급이 발표되었습니다. 최신 데이터 기반 조직의 성공을 위해서는 IT 전문가 및 데이터 과학자뿐만 아니라 모든 비즈니스 사용자의 손끝에서 정보를 사용하여 일상적인 의사 결정을 내릴 수 있어야 합니다. 셀프 서비스 BI 도구는 비즈니스 사용자가 데이터에 액세스할 수 있도록 하는 데 큰 진전을 이루었습니다. 그러나 대부분의 비즈니스 사용자는&rsquo; 데이터를 탐색하여 인사이트를 도출하기 전에 데이터의 올바른 원본을 찾고, 원시 데이터를 가져오고, 올바른 모양으로 변환하고, 비즈니스 논리 및 메트릭을 추가하는 등 일반적으로 필요한 많은 작업을 수행하려는 전문 지식이나 욕구가 없습니다. Azure Analysis Services를 사용하면 BI 전문가가 원시 데이터에 대한 의미 체계 모델을 만들고 비즈니스 사용자와 공유할 수 있으므로 모든 BI 도구에서 모델에 연결하고 즉시 데이터를 탐색하고 인사이트를 얻을 수 있습니다. Azure Analysis Services는 고도로 최적화된 메모리 내 엔진을 사용하여 생각 속도에 따라 사용자 쿼리에 대한 응답을 제공합니다.</p>
+
+
+  <p>지난 12월에 <a href="https://azure.microsoft.com/blog/first-azure-as/" target="_blank">는 Azure Analysis Services를 사용하여 첫 번째 모델을 만드는</a> 게시물을 작성했습니다. 이제 Adventure Works Internet Sales 데이터베이스를 기반으로 하는 새 샘플 모델을 사용하여 아무것도 빌드할 필요 없이 Azure Analysis Services를 사용해 볼 수 있습니다. 다양한 Analysis Services 모델링 기능을 표시하도록 설계되었습니다.</p>
+
+
+  <p>이제 본격적으로 Power BI Desktop을 이 블로그 게시물의 나머지 부분에 있는 단계를 수행하면&rsquo; 얼마나 쉬운지 확인할 수 있습니다.</p>
+
+
+  <p>시작하기&rsquo; 전에 다음이 필요합니다.</p>
+
+
+  <p>Azure 구독 - <a href="https://azure.microsoft.com/free/?b=16.46">평가판에 등록</a>합니다.</p>
+
+
+  <h2>Azure에서 Analysis Services 서버 만들기</h2>
+
+
+  <p>1. 로 <a href="https://portal.azure.com/">https://portal.azure.com</a>이동합니다.</p>
+
+
+  <p>2. 메뉴 블레이드에서 <b>새로 만들기</b>를 클릭합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/363975fd-f03f-4477-aa61-1dafe0f71ab5.png"><img alt="image" border="0" height="285" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/73bb5f29-9659-43f7-a09d-4350f3414345.png" style="background-image: none; display: inline; border-image: none" title="이미지" width="259"></a></p>
+
+
+  <p>3.<b>데이터 + 분석을</b> 확장한 다음 <b>Analysis Services를</b> 클릭합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d186d9b7-08c2-4f3c-915a-c260f76f1694.png"><img alt="image" border="0" height="521" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a398b447-975a-42dc-884f-83cda16b6cf2.png" style="background-image: none; display: inline; border-image: none" title="이미지" width="417"></a></p>
+
+
+  <p>4. Analysis Services 블레이드에서 다음을 입력한 다음 <b>만들기</b>를 클릭합니다.</p>
+
+
+  <ul>
+   <li><b>서버 이름</b>: 고유한 이름을 입력합니다.</li>
+   <li><b>구독</b>: 구독을 선택합니다.</li>
+   <li><b>리소스 그룹</b>: <b>새로 만들기</b>를 선택한 다음 새 리소스 그룹의 이름을 입력합니다.</li>
+   <li><b>위치</b>: 서버를 호스트하는 Azure 데이터 센터 위치입니다. 가장 가까운 위치를 선택합니다.</li>
+   <li><b>가격 책정 계층</b>: 간단한 모델의 경우 <b>D1을</b> 선택합니다. 이것은 가장 작은 계층이며 시작하기에 좋습니다. 더 큰 계층은 캐시 및 쿼리 처리 단위의 양에 따라 구분됩니다. 캐시는 압축된 후 캐시에 로드할 수 있는 데이터의 양을 나타냅니다. 쿼리 처리 단위 또는 QPU는 동시에 지원될 수 있는 쿼리 수의 표시입니다. QPU가 높을수록 성능이 향상되고 사용자 동시성이 높아질 수 있습니다.</li>
+  </ul>
+
+
+  <p>&rsquo;이제 서버를 만들었으므로 샘플을 추가할 수 있습니다.</p>
+
+
+  <h2>서버에 샘플 모델 추가</h2>
+
+
+  <p>1.서버의 개요 블레이드에서 왼쪽 위에서 <strong>새 모델을 클릭합니다+</strong>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/11cc1862-3553-4c97-8bf6-d55e2bf48a9e.png"><img alt="image" border="0" height="320" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/49b5d428-3551-4ffa-a382-d94668219095.png" style="background-image: none; display: inline; border-image: none" title="이미지" width="493"></a></p>
+
+
+  <p>2. 데이터 원본 선택에서 <strong>샘플 데이터를</strong> 선택하고 <strong>추가</strong>를 클릭합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6fe2cd4a-36e4-493c-9216-f08543d1fec0.png"><img alt="image" border="0" height="286" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/454214d8-4dc3-414a-876e-358f6246d5af.png" style="background-image: none; display: inline; border-image: none" title="이미지" width="279"></a></p>
+
+
+  <p>모델을 만드는 데 몇 분 정도 걸립니다. 완료되면 서버의 모델 목록에 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8e2257a3-a588-4327-b394-ab1e4e7aba67.png"><img alt="image" border="0" height="157" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/397f492b-54fb-4ea5-981d-9ea1f8ee8e79.png" style="background-image: none; display: inline; border-image: none" title="이미지" width="989"></a></p>
+
+
+  <p>이제 모델 이름 옆에 있는 세 개의 점을 클릭하고 사용하려는 도구를 선택하여 Microsoft Excel, Power BI Desktop 또는 Visual Studio 편집할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/774efc86-c3dd-40ef-9b44-c9cf4b0d6df8.png"><img alt="image" border="0" height="251" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/37b11c91-7db9-4a22-a690-a750dbc7bdb9.png" style="background-image: none; display: inline; border-image: none" title="이미지" width="955"></a></p>
+
+
+  <p>참고: 이러한 도구를 다운로드해야 하는 경우 아래 링크를 클릭합니다.</p>
+
+
+  <p>SQL Server Data Tools/Visual Studio - <a href="https://msdn.microsoft.com/library/mt204009.aspx">최신 버전을 무료로 다운로드</a>합니다.</p>
+
+
+  <p>Power BI Desktop - <a href="https://go.microsoft.com/fwlink/?LinkId=521662&amp;clcid=0x409">최신 버전을 무료로 다운로드합니다</a>.</p>
+
+
+  <p>그런 다음 데이터 시각화를 시작할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/29f423b1-0a4f-4c58-a37e-c4c0b5f771d8.png"><img alt="image" border="0" height="570" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d50d3c60-6b8a-4347-9d97-be6e6c1f207b.png" style="background-image: none; display: inline; border-image: none" title="이미지" width="795"></a></p>
+
+
+  <p><strong><a href="https://azure.microsoft.com/services/analysis-services/">Azure Analysis Services</a>에 대해 자세히 알아봅니다.</strong></p>

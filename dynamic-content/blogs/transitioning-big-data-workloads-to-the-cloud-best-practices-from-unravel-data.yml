@@ -1,0 +1,107 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e5e15c4e2b4d9bd5de54b0d8702cec0fecc7431c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905277"
+Slug: transitioning-big-data-workloads-to-the-cloud-best-practices-from-unravel-data
+Title: '빅 데이터 워크로드를 클라우드로 전환: 데이터 해명에서 모범 사례'
+Summary: 온-프레미스 Apache Hadoop® 및 Spark 워크로드를 클라우드로 마이그레이션하는 것은 많은 조직에서 여전히 중요한 우선 순위입니다. 마지막 게시물에서 "온-프레미스 Hadoop 인프라를 Azure HDInsight로 마이그레이션하기 위한 팁 및 트릭"을 공유했습니다.
+Content: >-
+  <p>온-프레미스 Apache Hadoop® 및 Spark 워크로드를 클라우드로 마이그레이션하는 것은 많은 조직에서 여전히 중요한 우선 순위입니다. 마지막 게시물에서 "<a href="https://azure.microsoft.com/en-us/blog/migrating-on-premises-hadoop-infrastructure-to-azure-hdinsight/" target="_blank">온-프레미스 Hadoop 인프라를 Azure HDInsight로 마이그레이션하기 위한 팁 및 트릭</a>"을 공유했습니다. 이 시리즈에서는 HDInsight의 파트너 중 하나인  <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/unravel-data.unravel-app" target="_blank">해명 데이터(Unravel Data</a>)가 많은 온-프레미스 Hadoop 및 Spark 배포를 클라우드로 마이그레이션하는 데 도움을 주는 인사이트를 기반으로 학습, 모범 사례 및 지침을 공유합니다.</p>
+
+
+  <p>해명 데이터는 빅 데이터 워크로드를 관리하고 최적화하기 위한 AI 기반 APM(애플리케이션 성능 관리) 솔루션입니다. 해명 데이터는 앱, 리소스, 데이터 및 사용자의 통합된 전체 스택 보기를 제공하여 사용자가 앱 성능 및 안정성을 기준 및 관리하고, 비용 및 SLA를 사전에 제어하고, 자동화를 적용하여 지원 오버헤드를 최소화할 수 있도록 합니다. Ops 및 Dev 팀은 온-프레미스 워크로드에 대해 Unravel Data의 통합 기능을 사용하고 Azure에서 워크로드를 계획, 마이그레이션 및 운영합니다. 해명 데이터는 HDInsight 애플리케이션 플랫폼에서 사용할 수 있습니다.</p>
+
+  <p>다섯 부분으로 구성된 시리즈를 시작하는 오늘의 게시물은 시브나스 바부, CTO 및 해명 데이터의 Co-Founder. 이 블로그 시리즈에서는 마이그레이션 계획에서 주요 고려 사항에 대해 설명합니다. 예정된 게시물에서는 빅 데이터에 대한 클라우드 채택 수명 주기의 마이그레이션, 운영 및 최적화 단계에 대한 모범 사례를 간략하게 설명합니다.</p>
+
+
+  <h2>마이그레이션 계획에 대한 데이터의 관점 해명</h2>
+
+
+  <p>클라우드는 기업 전체에서 빅 데이터 채택을 가속화하는 데 도움이 되고 있습니다. 그러나 이렇게 하면 빅 데이터의 확장성, 유연성, 최적화 및 비용 절감이 가능하지만, 워크로드를 데이터 센터에서 마이그레이션한 후에는 사라지지 않는 온-프레미스에 존재하는 특정 운영 및 가시성 문제가 있습니다.</p>
+
+
+  <p>마이그레이션이 지나치게 단순화되고 애플리케이션 종속성 및 시스템 버전 매핑과 같은 고려 사항이 적절한 주의를 기울이지 않는 상황을 몇 번이고 경험했습니다. 이로 인해 프로비저닝 간격을 통해 오버 프로비전 또는 프로덕션 지연을 통해 비용이 오버런됩니다.</p>
+
+
+  <p>오늘날 기업은 다양한 플랫폼에 의존하는 최신 데이터 애플리케이션을 기반으로 합니다. 이러한 조직은 최신 데이터 앱 및 인프라의 성능을 이해하고, 계획하고, 최적화하고, 자동화하는 통합된 방법이 절실히 필요합니다. 전체 스택 관찰 가능성 및 AI 기반 자동화를 통해 시스템의 성능 문제를 빠르고 지능적으로 해결할 수 있는 솔루션이 필요합니다. 그런 다음에야 이러한 조직은 비즈니스 환경이 계속 발전함에 따라 이를 따라잡을 수 있으며 빅 데이터 투자가 약속을 이행하고 있음을 확신할 수 있습니다.</p>
+
+
+  <h2>빅 데이터의 현재 과제</h2>
+
+
+  <p>오늘날 IT는 다양한 기술 및 사일로 접근 방식을 사용하여 최신 데이터 앱 및 빅 데이터 인프라의 다양한 측면을 관리합니다.</p><p>
+
+  대부분의 기존 모니터링 솔루션은 빅 데이터 환경에 대한 엔드투엔드 지원을 제공하지 않거나, 전체 스택 호환성이 부족하거나, 복잡한 계측이 필요한 경우가 많습니다. 여기에는 심층적인 주제 전문 지식이 필요한 애플리케이션 및 해당 구성 요소에 대한 구성 변경이 포함됩니다. 조직이 현재 사용하는 모니터링 솔루션의 어두운 수프는 비즈니스에 필요한 애플리케이션 민첩성을 제공하지 않습니다.</p>
+
+  <p>따라서 이로 인해 조직에서 이러한 문제를 해결하기 위해 점점 더 많은 도구를 구매하고 이러한 도구를 관리하고 유지 관리하는 데 추가 리소스를 지출해야 하므로 사용자 환경이 저하되고 비효율성 및 탑재 비용이 발생합니다.</p>
+
+  <p>또한 종속성을 이해하고 근본 원인 분석에 계속 집중하기 어렵기 때문에 조직에서는 MTTI(평균 식별 시간) 및 MTTR(평균 해결 시간) 문제가 발생합니다. 세분성과 종단 간 가시성의 부족으로 인해 이러한 모든 문제를 해결할 수 없으며 기업은 림보 상태에 갇혀 있습니다.</p>
+
+  <p>그것은 과거에 무슨 짓을했는지 계속 할 수있는 옵션이 아닙니다. Teams 현재 그들이 하고 있는 일, 여전히 어떤 격차가 있는지, 비즈니스 결과를 개선하기 위해 취할 수 있는 조치에 대해 자세히 이해해야 합니다. 빅 데이터 전략의 현재 상태를 깊이 이해하고 필요한 위치에 대한 계획을 세울 수 있는 고객의 근본 원인 분석 및 수정 시간이 10배 이상 향상되는 것은 드문 일이 아닙니다.<br>
+
+  </p>
+
+
+  <h2>클라우드로의 빅 데이터 경험 시작</h2>
+
+
+  <p>통합 APM 플랫폼이 없으면 기업이 빅 데이터를 클라우드로 이동함에 따라 문제가 더욱 심화됩니다. 클라우드 채택은 명확한 시작 및 종료 날짜가 있는 유한한 프로세스가 아니며, 네 가지 광범위한 단계(계획, 마이그레이션, 운영 및 최적화)가 있는 지속적인 수명 주기입니다. 아래에서는 아래 조직에서 발생하는 몇 가지 주요 과제 및 질문에 대해 간략하게 설명하며, 이후 게시물에서 자세히 살펴보겠습니다.</p>
+
+
+  <p> <strong>계획 </strong> 단계에서 주요 질문은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>"클라우드로 이동하는 데 가장 적합한 앱은 무엇입니까?"</li>
+      <li>"리소스 요구 사항은 무엇인가요?</li>
+      <li>"현재 얼마나 많은 디스크, 컴퓨팅 및 메모리를 사용하고 있나요?"</li>
+      <li>"앞으로 3개월, 6개월, 9개월, 12개월 동안 무엇을 해야 하나요?"</li>
+      <li>"어떤 데이터 세트를 마이그레이션해야 하나요?"</li>
+      <li>"영구, 일시적, 자동 크기 조정 또는 스폿 인스턴스를 사용해야 하나요?"</li>
+  </ul>
+
+
+  <p>워크로드가 반복적으로 이동함에 따라 장기 실행 프로세스가 될 수 있는  <strong>배포 중에는</strong> 성능 및 비용을 지속적으로 모니터링해야 합니다. 주요 질문은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>"마이그레이션에 성공했습니까?"</li>
+      <li>"성능이 온-프레미스와 어떻게 비교됩니까?"</li>
+      <li>"모든 중요한 종속성 및 서비스 매핑을 올바르게 평가했나요?"</li>
+  </ul>
+
+
+  <p>워크로드가<strong>  </strong> 클라우드에서 생산되면 주요 고려 사항은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>"SLA를 보장하기 위해 비용과 성능을 계속 최적화하려면 어떻게 해야 하나요?"</li>
+      <li>"Ops 팀이 최대한 효율적이고 자동화되도록 하려면 어떻게 해야 하나요?"</li>
+      <li>"애플리케이션 소유자가 셀프 서비스를 활용하여 민첩성을 개선하기 위해 자체 문제를 쉽게 해결할 수 있도록 하려면 어떻게 해야 하나요?"</li>
+  </ul>
+
+
+  <p>온-프레미스 및 클라우드에서 서로 다른 빅 데이터 기술을 관리하는 문제는 운영 계획에 대한 포괄적인 접근 방식으로 해결할 수 있습니다. 이 블로그 시리즈에서는 클라우드 채택 수명 주기의 각 단계에 대해 자세히 알아보고 여정의 모든 부분에 대한 실용적인 조언을 제공합니다. 예정된 게시물은 이 수명 주기의 계획, 마이그레이션, 작업 및 최적화 단계에 대한 모범 사례를 간략하게 설명합니다.</p>
+
+
+  <h2>HDInsight 애플리케이션 플랫폼 정보</h2>
+
+
+  <p>HDInsight 애플리케이션 플랫폼은 빅 데이터 에코시스템에서 인기 있는 애플리케이션을 검색하고 설치하기 위한 원클릭 배포 환경을 제공합니다. 애플리케이션은 데이터 수집, 데이터 준비, 데이터 관리, 카탈로그, 계보, 데이터 처리, 분석 솔루션, 비즈니스 인텔리전스, 시각화, 보안, 거버넌스, 데이터 복제 등 다양한 시나리오를 충족합니다. 애플리케이션은 다른 클러스터 노드와 동일한 Azure Virtual Network 경계 내에서 만들어지는 에지 노드에 설치되므로 이러한 애플리케이션에 안전한 방식으로 액세스할 수 있습니다.</p>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <ul>
+      <li> <a href="https://docs.microsoft.com/en-us/azure/hdinsight/" target="_blank">Azure HDInsight</a>에 대해 자세히 알아보기</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-on-premises-migration-motivation?toc=%2Fen-us%2Fazure%2Fhdinsight%2Fhadoop%2FTOC.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json" target="_blank">온-프레미스 Apache Hadoop 클러스터를 Azure HDInsight로 마이그레이션</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/get-up-to-speed-with-azure-hdinsight-the-comprehensive-guide/" target="_blank">Azure HDInsight를 사용하여 속도 향상: 포괄적인 가이드</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-component-versioning" target="_blank">HDInsight의 오픈 소스 구성 요소 가이드</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes" target="_blank">HDInsight 릴리스 정보</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes" target="_blank">MSDN 포럼에서 HDInsight 질문하기</a></li>
+      <li><a href="https://social.msdn.microsoft.com/forums/azure/en-us/home?forum=hdinsight" target="_blank">StackOverflow에 대한 HDInsight 질문하기</a></li>
+  </ul>

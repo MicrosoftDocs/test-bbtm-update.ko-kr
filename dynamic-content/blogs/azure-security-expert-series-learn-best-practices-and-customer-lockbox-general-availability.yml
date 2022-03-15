@@ -1,0 +1,99 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 19c57643e06a4a92f67e64b096752c970bc9326c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905598"
+Slug: azure-security-expert-series-learn-best-practices-and-customer-lockbox-general-availability
+Title: 'Azure Security Expert 시리즈: 모범 사례 및 고객 Lockbox 일반 공급 알아보기'
+Summary: '보안 전문가가 하이브리드 클라우드 환경을 보호할 수 있도록 진행 중인 가상 콘텐츠를 제공하는 Azure Security Expert 시리즈를 출시했습니다. Microsoft 사이버 보안 솔루션 그룹의 CVP인 Ann Johnson은 이 시리즈를 시작하고 5가지 클라우드 보안 모범 사례를 공유했습니다. '
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/782fdd24-b5da-4bb2-88ca-97ead71e7211.png"><img alt="image" border="0" height="357" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6b318076-69cd-4f12-8ec5-35b14fadfb57.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="1280"></a></p>
+
+
+  <p>더 많은 컴퓨팅 환경이 클라우드로 이동하면서 더 강력한 클라우드 보안에 대한 필요성은 그 어느 때보다 커졌습니다. 하지만 효과적인 클라우드 보안을 구성하는 것은 무엇이며, 어떤 모범 사례를 따라야 할까요?</p>
+
+
+  <p>Microsoft Azure 타의 추종을 불허하는 기본 제공 보안을 제공하는 반면, 보안 컨트롤의 폭을 이해하고 이를 활용하여 워크로드를 보호하는 것이 중요합니다.</p>
+
+
+  <p>보안 전문가가 하이브리드 클라우드 환경을 보호할 수 있도록 진행 중인 가상 콘텐츠를 제공하는 Azure Security Expert 시리즈를 출시했습니다. Microsoft 사이버 보안 솔루션 그룹의 CVP인 Ann Johnson은 이 시리즈를 시작하고 5가지 클라우드 보안 모범 사례를 공유했습니다.</p>
+
+
+  <ol>
+   <li>액세스 제어 강화</li>
+   <li>보안 태세 강화</li>
+   <li>앱 및 데이터 보호</li>
+   <li>네트워킹 관리</li>
+   <li>위협 완화</li>
+  </ol>
+
+
+  <p>조직 보안을 유지함에 따라 이러한 각 중요한 모범 사례를 신속하게 처리해야 합니다.</p>
+
+
+  <h2>Microsoft Azure에 대한 고객 Lockbox</h2>
+
+
+  <p>Anns&rsquo; 메인 토크에서 그녀는 Microsoft Azure 고객 Lockbox의 일반 공급 을 발표했습니다. Azure용 고객 Lockbox는 고객 개인 정보 보호에 대한 약속을 확장하는 동시에 가장 필요할 때 도움을 줍니다. Microsoft Azure 고객 Lockbox를 사용하면 고객은 지원 사례 중에 Microsoft 엔지니어의 데이터 액세스 요청을 검토하고 승인하거나 거부할 수 있습니다. 액세스 권한은 승인되고 전체 프로세스가 활동 로그에 저장된 레코드로 감사되는 경우에만 부여됩니다.</p>
+
+
+  <p>이제 고객 Lockbox는 일반 공급되며 현재 가상 머신에 대한 원격 데스크톱 액세스에 사용됩니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/security/azure-customer-lockbox-overview">Microsoft용 고객 Lockbox</a> 설명서로 이동하세요.</p>
+
+
+  <h2>학습할 내용</h2>
+
+
+  <p>브로드캐스트를 놓쳤거나 SIEM, IOT, 네트워킹 또는 Security Center에 대해 자세히 알아보고 싶으신가요?</p>
+
+
+  <p>Ann의 모범 사례 세션과 다음을 포함한 추가 드릴다운 세션이 포함된 <a href="https://www.youtube.com/playlist?list=PLLasX02E8BPA0ZNzg-BsHio7yTciN-UVu">Azure Security Expert 시리즈를</a> 확인하세요.</p>
+
+
+  <ul>
+   <li>클라우드 네이티브 SIEM Azure Sentinel 시작</li>
+   <li>클라우드 네이티브 Azure 네트워크 보안이란?</li>
+   <li>Security Center를 사용하여 하이브리드 클라우드 보호</li>
+   <li>IoT Security의 다른 점은 무엇인가요?</li>
+  </ul>
+
+
+  <p>2019년 6월 26일까지 Microsoft Xbox One S 획득할 수 있습니다. 입력하려면 세션을 시청하고 <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR-pFStLa-89LtNw94eidL19UNDZORTZBUE1CVjlCSFI4RDlQMDZUTFFIMC4u">항목 양식</a>에 대한 지식 검사를 완료하고 항목을 제출합니다.**</p>
+
+
+  <h2>&lsquo;Azure 보안 전문가에게 질문&rsquo; 하기</h2>
+
+
+  <p>질문이 더 있으신가요? Azure 보안 팀은 <strong>2019년 6월 24일 월요일</strong> 오전 &ndash; 11:30(동부 표준시 오후 1시 &ndash; 30분)부터 트위터에서 Ask Us Anything&rsquo; 세션을 개최합니다&lsquo;. 제품 및 엔지니어링 팀은 Azure 보안 서비스에 대한 질문에 답변할 수 있습니다.</p>
+
+
+  <p>해시태그 <a href="https://twitter.com/search?q=%23azuresecurityseries&amp;src=typd">#AzureSecuritySeries</a>를 <a href="https://twitter.com/Azuresupport">@AzureSupport</a> 언급하고 사용하여 Twitter에 질문을 게시합니다.</p>
+
+
+  <p>Twitter 세션 이후에 추가 작업 또는 추가 질문이 있는 경우 아무 문제도 없습니다! 나중에&rsquo; 트위터를 통해 대화를 계속하거나 질문을 <a href="mailto:Azuresecurityexpert@microsoft.com">Azuresecurityexpert@microsoft.com</a>보내게 되어 기쁩니다.<br>
+
+  <br>
+
+  <a href="https://aka.ms/AA5cs3l" style="padding: 15px 25px; color: white; background-color: rgb(0, 120, 215);">일정 확인</a><br>
+
+  &nbsp;</p>
+
+
+  <h2>Azure 보안에 대해 자세히 알아보고 기술 커뮤니티와 연결하려면 어떻게 해야 하나요?</h2>
+
+
+  <p>클라우드 보안 계획을 시작하거나 가속화하는 데 도움이 되는 다양한 클라우드 보안 항목을 다루는 새로운 임원 회담, 주문형 세션 또는 기타 유형의 중요한 콘텐츠에 연결하고 액세스할 수 있는 여러 가지 방법이 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://www.youtube.com/playlist?list=PLLasX02E8BPA0ZNzg-BsHio7yTciN-UVu">Azure Security Expert 시리즈의</a> 콘텐츠를 확인합니다.</li>
+   <li>제품 세부 정보는 <a href="https://azure.microsoft.com/en-us/overview/security/">Microsoft Azure</a> 방문하세요.</li>
+   <li>Azure 보안 뉴스 및 업데이트에 <a href="https://twitter.com/Azure">@Azure</a>대한 소셜 채널을 팔로우하세요.</li>
+   <li><a href="https://techcommunity.microsoft.com/plugins/common/feature/oauth2sso/sso_login_redirect?referer=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2FEnterprise-Mobility-Security%2Fct-p%2FEMS">보안 커뮤니티</a>에 참여하여 엔지니어링 팀과 연결하고 미리 보기, 그룹 토론, 피드백 제공 등에 참여하세요.</li>
+   <li><a href="https://academy.microsoft.com/en-us/professional-program/tracks/cyber-security/">사이버 보안용 Microsoft Professional 프로그램을</a> 사용하여 실습 교육 과정을 통해 Azure 내 보안 기능에 대한 지식을 가속화하거나 <a href="https://docs.microsoft.com/en-us/learn/">Microsoft Learn</a>에서 새로운 Azure 보안 교육 세션을 조심하세요.</li>
+   <li>전문 보안 학습 경로 및 기타 독점 활동을 위해 <a href="https://www.microsoft.com/en-us/ignite">Microsoft Ignite</a> 에 참석하여 전문가로부터 배우고 동료와 연결하세요.</li>
+  </ul>
+
+
+  <p><em>**경품 행사는 태평양 표준시 오후 11시 59분(태평양 표준시)6월 19 &ndash; 일 오후 11시 59분 사이에 독점적으로 진행됩니다. 구매가 필요하지 않습니다. 입국하려면 50개 미국(컬럼비아 특별구 포함)의 법적 거주자여야 하며 18세 이상이어야 합니다. 경품 이벤트에 참가하려면 응모 양식의 모든 지식 점검 질문을 완료해야 합니다. 자세한 내용은 <a href="https://download.microsoft.com/download/5/D/2/5D28903D-61E5-4B29-84A7-D64C4B27D43B/Azure_Security_Expert_Series_Kick_off_Sweepstakes_Sweepstakes_Official_Rules.pdf">공식 규칙을</a> 참조하세요.</em></p>

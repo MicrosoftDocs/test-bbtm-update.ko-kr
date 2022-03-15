@@ -1,0 +1,167 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5196e9b82119eecb629b392df77a2575483a28af
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912327"
+Slug: updates-from-notification-hubs-independent-nuget-installation-model-pmt-and-more
+Title: 'Notification Hubs의 업데이트: 독립 NuGet, 설치 모델, PMT 등'
+Summary: '더 원활한 개발 환경과 메시지별 원격 분석, 다중 테넌트, 푸시 변수, 직접 보내기 등을 비롯한 편리한 기능 집합을 제공하기 위해 지난 몇 개월 동안 우리 팀이 작업해 온 내용에 대한 업데이트입니다. '
+Content: >-
+  <p>Microsoft는 고객에게 원활한 개발 환경과 몇 가지 편리한 기능을 제공하기 위해 노력하고 있습니다. &rsquo;지난 몇 개월 동안 어떤 작업을 수행했는지 확인합니다.</p>
+
+
+  <ul>
+   <li>Notification Hubs는 공식적으로 독립적인 NuGet 사용하여 Azure Service Bus 분리된 독립 서비스입니다.</li>
+   <li>디바이스 및 알림을 처리하는 새로운 푸시 모델인 설치 모델을 도입했습니다. 모델은 플랫폼 알림 시스템과 일치하며 중복 또는 부실 등록을 제거하도록 향상되었습니다.</li>
+   <li>메시지별 원격 분석은 Notification Hubs에 전송 요청의 자세한 결과를 제공합니다.</li>
+   <li>다중 테넌시는 네임스페이스 수준에서 자격 증명으로 작업할 수 있으므로 그 어느 때보다 쉽습니다.</li>
+   <li>푸시 변수는 개별적으로 사용자 지정된 브로드캐스트 알림을 보내는 것을 간소화합니다.</li>
+   <li>직접 보내기를 사용하면 Notification Hubs에 디바이스를 등록하지 않고도 푸시할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>Notification Hubs&#39; 독립 Nuget</h2>
+
+
+  <p>이제 Notification Hubs가 공식적으로 Service Bus 분할됩니다. Notification Hubs 게이트웨이와 통신하고 Notification Hub 형식 네임스페이스와 <a href="https://msdn.microsoft.com/en-us/library/azure/mt414893.aspx">SDK 참조</a>를 함께 사용하는 &quot;&quot; 독립적인 <a href="https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs">NuGet</a> 알려 드립니다.</p>
+
+
+  <p>또한 독립적인 NuGet 향후 Azure SDK 릴리스에도 도입될 예정입니다.</p>
+
+
+  <p>혼합 네임스페이스를 변환해야 합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/updating-mixed-notification-hubs-namespace-type/">혼합 알림 업데이트</a>가 거의 완료되었습니다! Notification Hubs와 Service Bus 기능을 모두 활용하는 혼합 네임스페이스가 있는 경우 향후 사용자 환경을 개선하려면 이 변환을 완료하는 데 도움이 필요합니다. 혼합&rdquo; 네임스페이스를 찾고 &ldquo;큐/토픽/릴레이/Event Hubs를 새 &ldquo;메시징&rdquo; 형식 네임스페이스로 이동해야 합니다. &ldquo;Notification Hubs만 포함된 혼합&quot; 네임스페이스는 알림 허브&quot; 유형으로 &quot;자동으로 변환됩니다.</p>
+
+
+  <p>Notification Hubs 기능을 활용하는 네임스페이스를 지정된 형식으로 변환하는 것은 고객이 새로운 기능 롤아웃 및 버그 수정의 혜택을 계속 누릴 수 있도록 하는 데 매우 중요합니다.</p>
+
+
+  <h2>반짝이는 새 설치 모델</h2>
+
+
+  <p>[<a href="https://msdn.microsoft.com/en-us/library/azure/mt621153.aspx">REST</a>, <a href="https://msdn.microsoft.com/en-us/library/azure/microsoft.azure.notificationhubs.notificationhubclient.createorupdateinstallationasync.aspx">NuGet</a>, <a href="https://azure.github.io/azure-sdk-for-node/tutorial-notification-hubs.html">Node.js</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/notification-hubs-java-backend-how-to/">Java</a>]</p>
+
+
+  <p>Notification Hubs를 사용하고 디바이스 및 알림을 관리하는 새로운 방법인 설치 모델을 소개하려고 합니다. 설치는 디바이스에서 특정 설치에 필요한 모든 속성(푸시 채널, 태그, 템플릿 등)을 전달하는 JSON 모음입니다. 이 모델은 Notification Hubs를 보다 쉽고 직관적으로 사용할 수 있도록 설계되었습니다. 설치를 좋아하고 여러분도 그렇게 생각하는 몇 가지 이유가 있습니다.</p>
+
+
+  <ul>
+   <li>설치는 APN, GCM, WNS 등을 비롯한 주요 플랫폼 알림 시스템에서 사용하는 디바이스 기반 모델과 일치합니다.</li>
+   <li>설치는 푸시 관련 정보를 구성하고 통합합니다. 이렇게 하면 각 디바이스에 대한 등록 목록을 유지 관리하는 복잡성이 간소화됩니다.</li>
+   <li>설치는 중복된 알림에 대해 더 강력한 보호를 제공합니다.</li>
+   <li>설치는 단일 디바이스 대상 지정을 일류 기능으로 추가하여 개별 설치 ID로 보낼 수 있도록 합니다.</li>
+   <li>설치를 통해 패치를 허용합니다.</li>
+   <li>설치 ID는 사용자 지정이며 설치와 디바이스/사용자 GUID를 연결할 수 있습니다.</li>
+  </ul>
+
+
+  <p>설치를 사용하는 일반적인 작업 흐름은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>클라이언트에서 설치 개체 만들기</li>
+   <li>Notification Hubs에 설치 개체 등록</li>
+   <li>나중에 액세스할 수 있도록 성공 시 디바이스에 설치 ID 저장</li>
+   <li>알림 보내기(쉽게 시작할 수 있도록 푸시 인터페이스는 이전 등록 모델의 푸시 인터페이스와 동일합니다.)</li>
+  </ul>
+
+
+  <p>많은 사용자가 이미 SDK(<a href="https://msdn.microsoft.com/en-us/library/azure/microsoft.azure.notificationhubs.notificationhubclient.createorupdateinstallationasync.aspx">.NET</a>, <a href="https://azure.github.io/azure-sdk-for-node/tutorial-notification-hubs.html">Node.js</a>, <a href="https://azure.microsoft.com/en-us/documentation/articles/notification-hubs-java-backend-how-to/">Java</a>)를 사용했을 수 있으며 REST 설명서는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><a href="https://msdn.microsoft.com/en-us/library/azure/mt621153.aspx">설치 만들기 또는 덮어쓰기</a></li>
+   <li><a href="https://msdn.microsoft.com/en-us/library/azure/mt621169.aspx">설치 ID로 설치 업데이트</a></li>
+   <li><a href="https://msdn.microsoft.com/en-us/library/azure/mt621170.aspx">설치 삭제</a></li>
+  </ul>
+
+
+  <h2>메시지당 원격 분석</h2>
+
+
+  <p>[<a href="https://msdn.microsoft.com/en-us/library/azure/mt608135.aspx">REST</a>]</p>
+
+
+  <p>최상의 모니터링 및 진단 환경을 제공하기 위해 메시지별 원격 분석을 도입하게 되어 매우 기쁩니다. 송신 요청&rsquo; 알림 ID가 지정된 경우 이제 요청의 상태 및 푸시 결과를 검색할 수 있습니다. 다음과 같은 다른 플랫폼별 결과 중에서 요청이 처리되는 시기를 추적합니다.</p>
+
+
+  <ul>
+   <li># 성공 송신</li>
+   <li># 잘못된 자격 증명</li>
+   <li># PNS에 연결할 수 없음</li>
+   <li># 잘못된 채널</li>
+   <li># PNS 서버 오류</li>
+   <li># 채널 제한</li>
+   <li># 건너뛴 항목(중복 등록)</li>
+  </ul>
+
+
+  <p><span style="font-size: 13px; font-family: tahoma, 'Helvetica Neue', arial, helvetica, sans-serif; font-weight: normal; font-style: normal; line-height: 20px">설명서</span>&nbsp;에서 각 플랫폼에 대한 전체 결과 목록을 볼 수 <a href="https://msdn.microsoft.com/en-us/library/azure/mt608135.aspx">있습니다.</a> 이렇게 하면 알림으로 작업하는 개발 환경이 크게 향상될 것이라고 확신합니다.</p>
+
+
+  <h2>다중 테넌트</h2>
+
+
+  <p>[<a href="https://msdn.microsoft.com/en-us/library/azure/mt238294.aspx">REST</a>]</p>
+
+
+  <p>다중 테넌시는 이전보다 더 쉽습니다. 이제 네임스페이스 수준에서 푸시 시스템 자격 증명을 사용할 수 있습니다. <a href="https://msdn.microsoft.com/en-us/library/azure/mt238294.aspx">네임스페이스 PNS(푸시 알림 서비스) API</a>는 여러 허브에 걸쳐 있는 대형 앱을 위해 설계되었습니다. 개발자는 동일한 네임스페이스 아래의 여러 허브에 대한 통합 PNS 설정을 한 번에 쉽게 읽고 업데이트할 수 있습니다. 네임스페이스 수준에서 푸시 자격 증명 및 인증서를 설정하고 네임스페이스 내의 모든 허브에 자동으로 적용되는지 확인합니다.</p>
+
+
+  <h2>푸시 변수</h2>
+
+
+  <p>[<a href="https://msdn.microsoft.com/en-us/library/azure/dn223265.aspx">REST</a>, 현재 등록 모델에서 사용 가능]</p>
+
+
+  <p>새 푸시 변수 기능은 네이티브 및 템플릿 모두에 각 디바이스 등록과 최대 60개의 문자열 키-값 쌍을 연결할 수 있는 편리한 기능을 제공합니다. 송신 시 사용자는 등록된 키를 자리 표시자로 사용할 수 있으며 Notification Hubs는 런타임에 각 송신에 대한 해당 값을 대체합니다. 이는 다음과 같은 이유로 매우 유용합니다.</p>
+
+
+  <ul>
+   <li>푸시 변수 기능은 JSON 키-값 쌍을 이루는 사전을 사용하므로 쉽게 사용하고 사용자 지정할 수 있습니다.</li>
+   <li>개발자는 등록당 사용자 또는 디바이스 정보를 저장하고 모든 메시지에 사용할 수 있습니다. 이렇게 하면 템플릿 푸시 알림의 서식 제한이 제거되고 더 많은 메시지 변형이 허용됩니다.</li>
+   <li>특정 등록에 대해 쌍을 이루는 값이 없는 경우 보내기 시 기본값과 함께 푸시 변수를 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <p>이 기능은 api-version=2015-04 이상 버전에서 기존 등록 디자인의 확장입니다.</p>
+
+
+  <pre class="prettyprint">
+
+  <font face="Calibri">&lt;{Platform}RegistrationDescription xmlns:i=&quot;https://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;https://schemas.microsoft.com/netservices/2010/10/servicebus/connect&quot;&gt;
+      &lt;Tags&gt;myTag, myOtherTag&lt;/Tags&gt;
+      &lt;ChannelUri&gt;{ChannelUri}&lt;/ChannelUri&gt;
+      ...
+      &lt;PushVariables&gt;{&quot;key1&quot;:&quot;value1&quot;,&quot;key2&quot;:&quot;value2&quot;}&lt;/PushVariables&gt;
+  &lt;/{Platform}RegistrationDescription&gt;</font></pre>
+
+
+  <p>푸시 변수 매개 변수는 기본적으로 사전입니다.</p>
+
+
+  <pre class="prettyprint">
+
+  <font face="Calibri">PushVariables = new Dictionary&lt;string, string&gt; {{&quot;deviceUser&quot;, &quot;Jane&quot;}, {&quot;deviceLocation&quot;, &quot;London&quot;}}</font></pre>
+
+
+  <p>템플릿과의 호환성 및 템플릿에서 허용하는 모든 식에 대한 지원 외에도 푸시 변수는 기본<a href="https://msdn.microsoft.com/en-us/library/azure/dn530748.aspx"></a>값도 지원합니다. 푸시 변수 및/또는 템플릿과 함께 보내기를 사용하는 경우 사용자는 $(key:{defaultValue})를 사용하여 개별 등록 또는 템플릿 등록에서 키가 없는 경우 키를 사용해야 하는 기본값을 지정할 수 있습니다. &quot;안녕하세요. $(firstName:{friend})&quot;는 firstName 키를 지정하지 않고 Good morning, friend&quot;를 등록에 푸시&quot;합니다.</p>
+
+
+  <h2>직접 보내기</h2>
+
+
+  <p>[<a href="https://msdn.microsoft.com/en-us/library/azure/mt608572.aspx">REST</a>, <a href="https://msdn.microsoft.com/en-us/library/azure/microsoft.azure.notificationhubs.notificationhubclient.senddirectnotificationasync.aspx">NuGet</a>]</p>
+
+
+  <p><a href="https://msdn.microsoft.com/en-us/library/azure/microsoft.azure.notificationhubs.notificationhubclient.senddirectnotificationasync.aspx">직접 보내기</a>를 사용하면 PNS 핸들에 직접 알림을 보낼 수 있습니다. 이 기능은 자신의 디바이스를 관리하거나 Notification Hubs를 사용하여 등록되지 않은 디바이스에 배달하도록 선택하는 고객에게 적합합니다.</p>
+
+
+  <h2>다음 단계는 무엇입니까&rsquo;?</h2>
+
+
+  <p>혼합 네임스페이스 사용자인 경우 위의 내용을 따라 혼합 네임스페이스를 변환해야 합니다. 그렇지 않으면, 우리의 업데이트를 재미와 아래의 의견에 우리에게 메모를 드롭 또는 <a href="mailto:nhtalk@microsoft.com">nhtalk@microsoft.com</a> ifyou 어떤 질문이나 피드백이있는 경우&nbsp;!</p>

@@ -1,0 +1,71 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e561e955bbee12892d0ceecc35122ab845d8fb6d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899619"
+Slug: octopus-on-azure
+Title: Azure의 문어
+Summary: TechEd Europe 2014에서 Azure는 문어 배포에 대한 지원을 발표했으며, 옥토퍼스 구성 요소가 미리 설치된 Azure Virtual Machines를 만드는 기능을 제공하는 것은 Azure User Voice에서 가장 많이 요청된 기능 중 하나였으며 이 기능을 제공하게 되어 매우 기쁩니다!
+Content: >-
+  TechEd Europe 2014 <a href="https://weblogs.asp.net/scottgu/azure-new-marketplace-network-improvements-new-batch-service-automation-service-more">에서 Azure는</a> <a href="https://octopusdeploy.com/">문어 배포</a>에 대한 지원을 발표했습니다. 문어 구성 요소가 미리 설치된 Azure Virtual Machines를 만드는 기능을 제공하는 것은 <a href="https://feedback.azure.com/forums/216843-virtual-machines/suggestions/5730576-add-octopus-deploy-agent-installation-option">Azure User Voice</a> 에서 가장 많이 요청된 기능 중 하나였으며, 이 기능을 제공하게 되어 매우 기쁩니다!
+
+
+  이를 자세히 살펴보기 전에 확장 설명서 페이지를 살펴보고 지원되는 VM 확장의 전체 목록과 다양한 VM 관리 작업에 사용할 수 있는 방법을 확인합니다. 이 블로그 게시물은 문어 확장에 중점을 두고 있지만 VM 확장에 대한 간략한 개요는 <a href="https://azure.microsoft.com/blog/2014/04/11/vm-agent-and-extensions-part-1/">여기</a> 와 <a href="https://azure.microsoft.com/blog/2014/04/15/vm-agent-and-extensions-part-2/">여기</a>의 블로그 게시물을 참조하세요.
+
+
+  Octopus Deploy는 ASP.NET 웹 애플리케이션, Windows Services 및 기타 애플리케이션을 쉽게 배포할 수 있는 자동화된 배포 도구입니다. 문어는 팀이 배포 상태를 볼 수 있도록 대시보드를 제공하며, 많은 컴퓨터에 걸쳐 있는 배포에 대한 로그는 한 곳에서 중앙 집중화됩니다.Octopus는 소프트웨어를 배포하기 위한 Virtual Machine의 안전하고 가벼운 에이전트 서비스인 Tentacle을 사용하며, 이 통합을 통해 Tentacle은 완전히 자동화된 방식으로 Azure VM에 배포 및 구성할 수 있습니다.
+
+
+  문어 시스템 설정에는 다음 두 단계가 있습니다.
+
+  <blockquote>1. 문어 서버 설정.
+
+
+  2. Azure Octopus 확장을 사용하여 촉수 에이전트 설치</blockquote>
+
+  <h3><strong>Octopus 서버 설정:</strong></h3>
+
+  기존 Octopus Server 배포가 있는 경우 사용할 수 있습니다. 그렇지 않은 경우 아래와 같이 설정할 수 있습니다.
+
+  <blockquote>1. <a href="https://docs.octopusdeploy.com/display/OD/Installing+Octopus">msi</a> 를 다운로드하여 Azure Virtual Machine을 Octopus 서버로 설정할 수 있습니다. 여기에는 라이선스 키 정보 설정이 포함됩니다.
+
+
+  2. 서버가 설정되면 Virtual Machine에 http(또는 https) 엔드포인트를 추가합니다. 이 작업은 Azure Portal(<a href="https://portal.azure.com">https://portal.azure.com</a> )에서 수행할 수 있으며, Octopus 서버 VM으로 이동하여 공용 및 프라이빗 포트 값이 80인 'http' 엔드포인트를 추가합니다.
+
+
+  3. DNS 이름을 사용하여 Octopus 서버 URL로 이동하고 환경을 만듭니다. 이 시점에서 서버가 성공적으로 설정되었습니다.</blockquote>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/05/OctopusServer.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="OctopusServer" alt="OctopusServer" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/OctopusServer_thumb.png" width="614" height="387" border="0" /></a>
+
+  <h3><strong>Tentacle 에이전트 설치:</strong></h3>
+
+  모든 Windows VM에 Tentacle 에이전트를 설치하려면 VM을 <a href="https://portal.azure.com">https://portal.azure.com</a> 찾아 문어 확장을 선택합니다. 문어 서버 URL(위 단계부터), <a href="https://docs.octopusdeploy.com/display/OD/How+to+create+an+API+key">API 키</a>  , 사용자가 만든 환경 및 수신 포트(기본값 10933)를 입력으로 제공합니다.공용 및 프라이빗 포트 값(기본값 10933)을 사용하여 VM에서 수신 대기 포트 엔드포인트를 지정하는 것을 잊지 마세요.
+
+  <blockquote><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/05/InstallOctopus.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="InstallOctopus" alt="InstallOctopus" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/InstallOctopus_thumb.png" width="614" height="322" border="0" /></a></blockquote>
+
+  모든 항목이 설치되면 문어 대시보드에 VM이 표시됩니다. 여기서 설명한 모든 단계는 <a href="https://azure.microsoft.com/en-us/documentation/articles/install-configure-powershell/#Install">Azure PowerShell cmdlet</a>을 사용하여 완전히 자동화할 수 있습니다. Azure Portal UI 및 Azure PowerShell cmdlet에서 촉수 에이전트를 설치하는 전체 개요는 여기에서 Octopus 팀의 블로그 게시물을 참조하세요.
+
+  <blockquote><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/05/OctopusDasboard.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="OctopusDasboard" alt="OctopusDasboard" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/OctopusDasboard_thumb.png" width="475" height="338" border="0" /></a></blockquote>
+
+  <blockquote>&nbsp;</blockquote>
+
+  서버와 클라이언트가 설정되면 일반 문어 게시 메커니즘을 사용하여 VM에서 소프트웨어를 관리할 수 있습니다. 또한 PowerShell의 <a href="https://blogs.msdn.com/b/powershell/archive/2014/08/07/introducing-the-azure-powershell-dsc-desired-state-configuration-extension.aspx">DSC(Desired State Configuration</a>)는 촉수 에이전트를 구성하는 데 사용되는 기본 기술임을 주목할 가치가 있습니다. 실제로 사용 중인 Octopus DSC 리소스는 <a href="https://github.com/OctopusDeploy/OctopusDSC">여기에서</a> 다운로드할 수 있습니다.
+
+
+  Azure에서 Octopus 확장을 사용할 수 있게 되어 매우 기쁘게 하며, 환경을 더욱 개선할 수 있도록 개선 작업을 계속할 것입니다. 그 중 몇 가지는 다음과 같습니다.
+
+
+  1. 포털 및 PowerShell의 자세한 상태 보고:
+
+  <blockquote>이 확장에 대한 모든 자세한 구성 로그는 VM에서 사용할 수 있지만 UI 또는 Azure PowerShell cmdlet에서 보고되지 않습니다. 향후 릴리스에서는 포털, PowerShell 및 기타 클라이언트에서 사용할 수 있도록 다른 확장과 마찬가지로 REST API를 통해 이 자세한 상태를 제공하려고 합니다.</blockquote>
+
+  2. Server 2012 이하 지원.
+
+  <blockquote>현재 버전에서 DSC는 Windows Server 2012 R2에서 지원되지만 향후 릴리스에서 Windows Server 2012 이하로 이식하기 위해 적극적으로 노력하고 있습니다. 2012 지원 업데이트는 곧 제공될 예정입니다.</blockquote>
+
+  예정된 블로그 게시물에서는 Azure에서 Microsoft Release Management 확장을 사용하여 Release Management 작업을 수행하는 방법을 설명합니다.
+
+
+  Azure와 통합하려는 다른 DevOps 기술/솔루션에 대해 알려드립니다. <a href="https://feedback.azure.com/forums/216843-virtual-machines">Azure User Voice</a>에 아이디어를 게시하세요!

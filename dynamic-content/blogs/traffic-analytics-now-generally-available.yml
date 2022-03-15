@@ -1,0 +1,126 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c02eeb1b1e7283da669dbdc8db079f72f655f791
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905285"
+Slug: traffic-analytics-now-generally-available
+Title: 이제 Traffic Analytics 일반 공급
+Summary: 조직에서 위협을 식별하고 보안 및 성능을 향상시키고 사용자에 대한 가시성을 높일 수 있도록 하는 Traffic Analytics의 일반 공급에 대해 발표하게 되어 매우 기쁩니다.
+Content: >-
+  <p>클라우드 네트워크의 사용자 및 애플리케이션 트래픽에 대한 가시성을 제공하는 SaaS 솔루션인 Traffic Analytics의 GA(일반 공급)를 발표하게 되어 기쁩니다.</p>
+
+
+  <p>3개월 전 <a href="https://azure.microsoft.com/en-in/blog/traffic-analytics-in-preview/" target="_blank">공개 미리 보기</a> 이후 이 솔루션은 가상 서브넷, VNet, Azure 데이터 센터 지역 및 VPN에서 네트워크 활동을 위해 정기적으로 몇 테라바이트의 Flow 로그를 분석하고 고객에게 도움이 되는 실행 가능한 인사이트를 제공했습니다.</p>
+
+
+  <ul>
+   <li>네트워크를 감사하고 섀도 IT 및 비준수 워크로드를 루트 아웃합니다.</li>
+   <li>워크로드 배치를 최적화하고 최종 사용자의 사용자 환경을 개선합니다.</li>
+   <li>보안 문제를 검색하고 애플리케이션 및 데이터 보안을 개선합니다.</li>
+   <li>오버 프로비저닝 또는 사용률 저하 문제를 제거하여 비용을 줄이고 배포 크기를 조정합니다.</li>
+   <li>여러 구독에서 여러 Azure 지역에 걸쳐 있는 퍼블릭 클라우드 네트워크에 대한 가시성을 확보합니다.</li>
+  </ul>
+
+
+  <p>이 GA 릴리스에는 이전보다 빠르고 직관적으로 문제를 감지하고 네트워크를 보호/최적화하는 데 도움이 되는 향상된 기능이 포함되어 있습니다.</p>
+
+
+  <p>이 릴리스의 향상된 기능 중 일부는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><strong>사용자 환경:</strong> 전체 Azure 네트워크에 대한 보기를 제공하고, 비활성 지역, 가상 네트워크 및 서브넷 &ndash; 을 식별합니다(예: VM이 있는 네트워크 위치 및 추가 분석을 위한 네트워크 활동 없음). 애플리케이션 게이트웨이, 서브넷 및 네트워크를 통해 흐르는 악의적인 흐름을 검색합니다. 인터넷을 통해 대화하는 열린 포트를 나타내고 가능한 위협을 파악하기 위해 트래픽을 인터넷으로 보내는 호스트를 나타냅니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/527920c5-c0dd-48da-8068-31839f6fc5ef.png"><img alt="Your environment" border="0" height="554" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/864d4957-ee65-4b19-ac5d-a55314647c15.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="사용자 환경" width="1295"></a></p>
+
+
+  <p align="center"><em>그림 1: 사용자 환경은 직관적이고 시각적으로 풍부한 네트워크 맵을 사용하여 지역, VNet 및 서브넷으로 드릴다운하여 클라우드 네트워크에 대한 개요를 제공합니다.</em></p>
+
+
+  <ul>
+   <li><strong>요약 보기:</strong> 인바운드 및 아웃바운드 트래픽에서 허용, 차단, 양성 및 악의적인 흐름에 대한 요약을 제공합니다. 트래픽 유형의 비정상적인 증가는 허용된 악의적인 흐름의 수와 무해한 차단된 흐름의 수와 같은 법의학적 조사에 가치가 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c9814616-c2fd-4cb7-b976-8458fa4d8111.png"><img alt="Dashboard_1 Blog" border="0" height="238" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/77d829ed-39df-40b0-97a5-3150dff3862c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Dashboard_1 블로그" width="1397"></a></p>
+
+
+  <p align="center"><em>그림 2: 트래픽 요약은 허용되는 악성 흐름과 많은 수의 무해하지만 차단된 흐름을 강조 표시합니다.</em></p>
+
+
+  <ul>
+   <li><strong>애플리케이션 작업:</strong> VNet에서 호스트에 이르는 세분성에서 가장 많은 흐름을 생성하거나 사용하는 애플리케이션과 상위 VM 대화 쌍을 포함한 워크로드 작업을 식별합니다. 애플리케이션/포트에 의한 악의적이고 차단된 트래픽으로부터 인사이트를 사용하여 네트워크를 보호하거나, 일반 트래픽을 허용하도록 NSG(네트워크 보안 그룹)를 업데이트합니다. 예를 들어 통신을 위해 열려 있는 포트를 식별하고 악의적인 흐름을 허용합니다. 이러한 장점은 NSG 구성에서 추가 조사 및 가능한 업데이트입니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0cc3699a-5db9-40fb-9c1e-440e8960147a.png"><img alt="Host Blog" border="0" height="687" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5c616631-8e45-48c4-8c88-63113fd9b133.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="호스트 블로그" width="1414"></a></p>
+
+
+  <p align="center"><em>그림 3: 호스트, 서브넷 및 VNet 세분성에서 트래픽 흐름 분산</em></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f5a4ed32-3e29-4833-bb5b-3c9c0140ce66.png"><img alt="Application Port Blog" border="0" height="620" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/52141319-3a75-4a92-8eb3-8f42c95645f6.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="애플리케이션 포트 블로그" width="1399"></a></p>
+
+
+  <p align="center"><em>그림 4: 포트별 Flow 네트워크의 상위 애플리케이션과 상위 소비자를 결정합니다.</em></p>
+
+
+  <ul>
+   <li><strong>용량 계획:</strong> VPN은 하이브리드 및 VNet 간 연결에 중요한 매체를 구성합니다. 게이트웨이 전체에서 사용률을 확인하고, 사용률이 밑으로 또는 최대 아웃된 게이트웨이를 검색합니다. 게이트웨이당 상위 VPN 연결 목록을 사용하여 트래픽 패턴을 이해하고, 트래픽 부하를 분산&nbsp; 하고, 프로비전 중으로 인한 가동 중지 시간을 제거합니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7a150151-0f86-46bd-b66e-be01ef34e98b.png"><img alt="VPN GW Blog" border="0" height="684" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4e72a458-a3d9-4973-b980-7d22bfcdd042.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="VPN GW 블로그" width="1403"></a></p>
+
+
+  <p align="center"><em>그림 5: VPN 게이트웨이의 용량 사용률</em></p>
+
+
+  <ul>
+   <li><strong>Application Gateway 및 Load Balancer 지원:</strong> 이제 Traffic Analytics는 Azure Application Gateway 및 Load Balancer를 통해 흐르는 트래픽을 포함하도록 분석 기능을 확장합니다. 트래픽 패턴, 악의적인 트래픽의 영향을 받는 리소스 및 백 엔드 풀 인스턴스 및 호스트에 대한 트래픽 분산에 대한 인사이트를 가져옵니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a8f5d267-b5fd-4c30-8637-3e7a81c76f4c.png"><img alt="Flow statistics" border="0" height="1038" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ab40387d-f36b-4c3e-b24b-397591f2e0b8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Flow 통계" width="1856"></a></p>
+
+
+  <p align="center"><em>그림 6: Application Gateway 및 Load Balancer에 대한 통계 Flow.</em></p>
+
+
+  <ul>
+   <li><strong>NSG 인사이트를 사용하여 클라우드 네트워크 보호:</strong> 상위 5개 NSG 및 NSG 규칙에서 자세한 흐름 정보에 이르기까지 자세한 통계를 얻을 수 있으므로 질문에 &ldquo;대답할 수 있습니다. NSG는 얼마나 효과적입니까?&rdquo;, &ldquo;NSG당 상위 규칙은 무엇인가요?&rdquo;, &ldquo;악의적인 원본에서 트래픽을 허용하고 있나요?&rdquo;, &ldquo;NSG당 흐름 통계는 무엇인가요?&rdquo;, &ldquo;NSG당 상위 대화 쌍은 무엇인가요?&rdquo;,  등.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4de07262-922c-45ea-8cf7-74fc3ac20d66.png"><img alt="NSG2 Blog" border="0" height="1807" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac35c12b-bc9a-438c-ae17-bd3f6c99320f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="NSG2 블로그" width="1860"></a></p>
+
+
+  <p align="center"><em>그림 7: NSG 및 시계열 차트에 대한 자세한 통계입니다.</em></p>
+
+
+  <ul>
+   <li><strong>배포 자동화:</strong> 분석을 위해 사용하도록 설정해야 하는 지역 간에 여러 NSG가 있나요? 이제 Traffic Analytics는 PowerShell(v6.2.1 이상)을 지원하여 몇 분 안에 시작하고 분석할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/powershell/module/azurerm.network/set-azurermnetworkwatcherconfigflowlog?view=azurermps-6.2.0" target="_blank">설명서를</a> 참조하세요.</li>
+   <li><strong>더 많은 지역:</strong> 이제 동남 아시아에서 작업 영역을 추가하거나 이 Azure 지역의 NSG를 분석할 수 있습니다. 지원되는 지역의 전체 목록은 <a href="https://docs.microsoft.com/en-us/azure/network-watcher/traffic-analytics-faq" target="_blank">FAQ</a> 를 확인하세요.</li>
+  </ul>
+
+
+  <h2>시작</h2>
+
+
+  <p>시작하려면 <a href="https://docs.microsoft.com/en-us/azure/network-watcher/traffic-analytics" target="_blank">Traffic Analytics를 설정하는 방법에</a> 대한 자세한 지침을 참조하세요.</p>
+
+
+  <h3>우리는 듣고있다!</h3>
+
+
+  <p>Traffic Analytics를 사용해 보고 피드백을 제공해 주셔서 감사합니다. <a href="https://feedback.azure.com/forums/217313-networking?category_id=195844" target="_blank">UserVoice 페이지를</a> 통해 계속해서 제안 사항을 보내주세요.</p>
+
+
+  <h3>질문이 있나요?</h3>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/network-watcher/traffic-analytics-faq" target="_blank">트래픽 분석 FAQ를 확인하세요</a>.</p>

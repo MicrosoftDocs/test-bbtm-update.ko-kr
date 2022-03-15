@@ -1,0 +1,34 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ed9e54e5b651cfa05fc16a5e0898d35e6e543eea
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905674"
+Slug: announcing-azure-database-services-for-mysql-and-postgresql-for-azure-government-customers
+Title: Azure Government 고객을 위한 MySQL 및 PostgreSQL용 Azure 데이터베이스 서비스 발표
+Summary: '오늘 Azure Database for MySQL 및 Azure Government 고객을 위한 Azure Database for PostgreSQL의 GA(일반 공급)를 발표하게 되어 기쁩니다. 이 GA 이정표를 통해 정부 기관 및 파트너는 임무를 진행하기 위해 노력할 때 더 많은 옵션을 사용할 수 있습니다. '
+Content: >-
+  <p>오늘 Azure Database for MySQL 및 Azure Government 고객을 위한 Azure Database for PostgreSQL의 GA(일반 공급)를 발표하게 되어 기쁩니다. 이 GA 이정표를 통해 정부 기관 및 파트너는 임무를 진행하기 위해 노력할 때 더 많은 옵션을 사용할 수 있습니다. 이러한 완전 관리형 정부 지원 서비스 제공 데이터베이스는 커뮤니티 버전의 MySQL 및 PostgreSQL을 기본 제공 고가용성, 99.99% 가용성 SLA, 성능에 대한 탄력적 확장 및 업계 최고의 보안 및 규정 준수를 갖춘 중요 업무용 정부 워크로드로 가져옵니다. MySQL 및 PostgreSQL의 커뮤니티 버전을 기반으로 하여 클라우드로 리프트 앤 시프트하는 것이 그 어느 때보다 쉬워지며 선택한 언어 및 프레임워크와의 완전한 호환성을 유지합니다.</p>
+
+
+  <p>기능에는 최대 32개의 vCore 컴퓨팅 확장, 새로운 메모리 최적화 계층 제공, 애플리케이션 성능에 영향을 주지 않고 컴퓨팅과 독립적으로 스토리지를 스케일링하는 기능, 백업 스토리지 옵션의 유연성 향상, ISO, SOC 및 HIPAA를 통한 업계 규정 준수 달성 등이 포함됩니다. 또한 GDPR(일반 데이터 보호 규정)을 준수합니다. 모든 Azure Government 서비스와 마찬가지로 세계적 수준의 보안, 규정 준수 및 고급 위협 방지 서비스도 보장합니다.</p>
+
+
+  <h2>Azure Government의 차이점</h2>
+
+
+  <p>Azure Government는 정부 기관 및 해당 파트너가 중요 업무용 워크로드를 클라우드로 변환할 수 있는 전용 클라우드를 제공합니다. 정부 전용 서비스로서, 그것은 미국 정부의 엄격한 요구를 제공하기 위해 처음부터 만들어졌습니다. 중요한 규정 준수 표준을 충족하고 미국 정부 규제 요구 사항을 초과합니다. Azure Government는 영향 수준 5에서 인증된 두 개의 DoD 지역을 포함하여 미국 전역의 8개 공지 지역에서 사용할 수 있습니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/services/mysql/">Azure Database for MySQL</a>의 기능 및 이점에 대해 자세히 알아보려면</li>
+   <li><a href="https://azure.microsoft.com/en-us/services/postgresql/">Azure Database for PostgreSQL</a>의 기능 및 이점에 대해 자세히 알아보려면</li>
+   <li><a href="https://azure.microsoft.com/en-us/global-infrastructure/government/">Azure Government</a>에 대해 자세히 알아보려면</li>
+   <li><a href="https://azure.microsoft.com/en-us/global-infrastructure/government/get-started/">Azure Government</a>를 시작합니다.</li>
+   <li>월별 Azure Government 모임에 팀을 초대하여 Microsoft Azure Government 기능 및 사용 사례에 대한 최신 정보를 확인하세요.</li>
+   <li>Azure Government를 탐색하려면 <a href="https://azure.microsoft.com/en-us/overview/clouds/government/request/">오늘 무료 90일 평가판을 요청하세요</a>. 또는 <a href="https://azure.microsoft.com/en-us/offers/azure-government/">지금 시작하기</a> 위한 구매 옵션을 확인하세요.</li>
+  </ul>

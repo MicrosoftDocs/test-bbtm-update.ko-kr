@@ -1,0 +1,32 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 098db9f732000c9c1faadf33ca85c48a72a58fc5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139906138"
+Slug: azure-websites-virtual-network-integration
+Title: Azure Websites 가상 네트워크 통합
+Summary: Azure Websites는 Azure VNET과 Azure Websites 간의 통합에 대한 지원을 발표하게 되어 기쁩니다. Virtual Network 기능은 VNET을 실행하는 리소스에 대한 액세스 권한을 웹 사이트에 부여합니다.
+Content: >-
+  Azure Websites는 Azure VNET과 Azure Websites 간의 통합에 대한 지원을 발표하게 되어 기쁩니다.Azure VNET에 Azure 웹 사이트를 배치할 수는 없지만 Virtual Network 기능은 VNET을 실행하는 리소스에 대한 액세스 권한을 웹 사이트에 부여합니다.여기에는 Azure Virtual Machines에서 실행되는 웹 서비스 또는 데이터베이스에 액세스할 수 있는 기능이 포함됩니다. VNET이 사이트-사이트 VPN을 사용하여 온-프레미스 네트워크에 연결된 경우 Azure 웹 사이트는 이제 Azure Websites Virtual Network 기능을 통해 온-프레미스 시스템에 액세스할 수 있습니다.이 기능은 현재 미리 보기로 제공되며 GA로 가는 길에 계속 개선될 예정입니다.
+
+
+  Azure Websites Virtual Network 통합을 사용하려면 Azure 가상 네트워크에 동적 라우팅 게이트웨이가 있어야 하며 지점 및 사이트를 사용하도록 설정해야 합니다. 이 기능은 현재 미리 보기로 릴리스되고 있으며 현재 표준 계층에서만 사용할 수 있습니다. 표준 웹 호스팅 계획에는 최대 5개의 네트워크가 연결될 수 있지만 웹 사이트는 하나의 네트워크에만 연결할 수 있습니다. 그러나 네트워크에 연결할 수 있는 웹 사이트 수는 제한되지 않습니다.
+
+
+  이 Virtual Network 기능은 새 Azure Preview 포털을 통해 액세스할 수 있으며 하이브리드 연결과 함께 표시됩니다.
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/09/Compy-VPNImage1.png"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border: 0px" title="웹 사이트 가상 네트워크" alt="Websites Virtual Networks" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Compy-VPNImage1_thumb.png" width="614" height="395" border="0" /></a>
+
+
+  새 사용자 인터페이스를 통해 기존 Azure VNET에 연결하거나 새 사용자 인터페이스를 만들 수 있습니다. Azure VNET에 연결하는 이 기능은 웹 사이트를 만들 때 수행해야 하는 것이 아니라 언제든지 추가, 변경 또는 제거할 수 있습니다. 유일한 제한 사항은 올바른 가격 책정 계획에 있어야 하며 계획에 대한 할당량 한도를 충족하지 못했다는 것입니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/09/Compy-VPNImage2.png"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="웹 사이트 가상 네트워크 추가" alt="Websites Add virtual network" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Compy-VPNImage2_thumb.png" width="614" height="512" border="0" /></a>
+
+
+  Virtual Network 기능은 TCP 및 UDP 프로토콜을 모두 지원하며 VNET DNS와 함께 작동합니다. 하이브리드 연결 및 Virtual Network는 호환되므로 동일한 웹 사이트에서 둘 다 혼합할 수 있습니다. Virtual Network와 하이브리드 연결 간에 겹치는 몇 가지 사용 사례가 있지만 둘 다 자체에 매우 유용한 별도의 항목을 제공한다는 점에 유의해야 합니다.
+
+
+  하이브리드 연결은 원격 애플리케이션에 액세스하는 기능을 제공합니다. 하이브리드 연결 에이전트는 모든 네트워크에 배포하고 Azure에 다시 연결할 수 있습니다. 이렇게 하면 여러 네트워크의 애플리케이션 엔드포인트에 액세스할 수 있으며 이를 위해 VNET을 구성하는 데 의존하지 않습니다. Virtual Network는 VNET의 모든 리소스에 대한 액세스 권한을 부여하며, 이렇게 하려면 에이전트를 설치할 필요가 없습니다. Azure 네트워크 사이트-사이트 VPN을 사용하면 기업에서 사용되는 도구를 사용하여 온-프레미스 네트워크를 Azure 네트워크에 연결할 수 있습니다. 두 기능 모두 중요한 기능을 제공하고 Azure Websites에 대한 원격 데이터 액세스 스토리를 완료합니다.

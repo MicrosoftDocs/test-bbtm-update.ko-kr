@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c701060462a8ff2c52a38ccc9363e04a70846b6b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912009"
+Slug: azure-stream-analytics-innovative-use-cases-by-customers
+Title: 혁신적인 Azure Stream Analytics 고객 사용 사례
+Summary: 고객은 이 제품을 형성하는 데 도움을 주었기 때문에 Azure Stream Analytics를 사용하여 빌드된 흥미로운 경험을 공유하고 싶었습니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/services/stream-analytics/">Azure Stream Analytics</a> 는 2015년 4월에 일반 사용 가능한 서비스로 출시되었습니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/stream-analytics-introduction/">Azure Stream Analytics</a>는 복원력, 크기 조정이 용이한 엔터프라이즈급 SLA를 기본 제공하며 언어와 같은 SQL 제공하여 개발 복잡성을 제거하는 완전히 관리되는 클라우드의 스트림 처리 솔루션입니다.</p>
+
+
+  <p>2015년부터 Weve&rsquo;는 제품에 몇 가지 새로운 기능을 추가했으며, 그 중 상당수는 <a href="https://feedback.azure.com/forums/270577-azure-stream-analytics">사용자가 요청했습니다</a>. 고객은 이 제품을 형성하는 데 도움을 주었습니다. 사용자가 Azure Stream Analytics를 사용하여 빌드한 혁신적이고 흥미로운 경험 중 일부를 공유하고자 했습니다.</p>
+
+
+  <h2>Honeywell 빌드 솔루션</h2>
+
+
+  <p>Honeywell Building Solutions는 에너지 효율 및 건물 자동화 분야의 글로벌 비즈니스 리더입니다. 전 세계 수천 대의 상업, 주거, 시/도 및 산업 시설을 위한 공기 처리, 조명, 생명 안전 및 보안 시스템을 포함한 통합 건물 제어 시스템을 설치하고 관리합니다. 이러한 고객은 하니웰을 통해 에너지를 절약하고 건물을 안전하고 편안하게 유지하는 장비에 대한 신속하고 세심한 유지 관리를 수행할 수 있습니다.</p>
+
+
+  <p>효율성을 최적화하고 이 장비의 상태를 더 잘 모니터링하기 위한 방법으로 Honeywell Building Solutions는 현장 센서를 사용하여 시간 경과에 따라 이러한 건물 자산의 상태와 성능을 추적하여 최대 시간 정보를 캡처하고 기록합니다. 각 원격 센서는 건물 전체의 각 다양한 단위에서 실온 및 습도와 관련된 20~40개의 고유 데이터 요소를 수집합니다.</p>
+
+
+  <p>Honeywell은 수집된 데이터를 고객이 작업할 수 있는 유용하고 시기 적절한 정보로 변환할 수 있는 시스템이 필요했습니다. 예를 들어 Honeywell이 공기 처리 장치의 필터를 교체해야 하는 시기를 예측할 수 있는 경우 필요에 관계없이 고정된 일정으로 교체하는 대신 필터 비용뿐만 아니라 배송 및 설치 비용도 절감할 수 있습니다. Honeywell은 이러한 종류의 예방 유지 보수가 잠재적으로 그 단위의 수명을 10 개월 또는 심지어 15 개월 연장 할 수 있다는 것을 알고 있었습니다. 이러한 절감액을 수백 개의 건물에 걸쳐 서비스하는 수천 개의 자산에 곱하면 Honeywell이 고객에게 상당한 절감액을 제공할 수 있습니다.</p>
+
+
+  <p>Azure Stream Analytics가 Honeywell에 자산 모니터링 데이터를 활동으로 전환하여 에너지를 절약하고 유지 관리를 선점하여 비즈니스 프로세스를 개선하고 보다 효율적인 워크플로를 위한 기회를 창출할 수 있는 보다 효과적인 방법을 <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=24510">알아봅니</a>다.</p>
+
+
+  <h2>IoT 및 Azure Stream Analytics를 활용하는 VMob은 맥도날드&rsquo; 고객 참여를 변화시킵니다.</h2>
+
+
+  <p>뉴질랜드에 본사를 둔 VMob은 IoT를 활용하여 맥도날드&rsquo;가 네덜란드, 스웨덴 및 일본에서 고객 참여를 혁신할 수 있도록 돕고 있으며, 이는 전 세계 식품 서비스 소매업체&rsquo;의 약 60%를 차지하는 지역입니다. VMob을 통해 맥도날드&rsquo;는 이러한 시장에서 기존 모바일 앱을 확장하여 제품 정보, 레스토랑 로케이터 및 프로모션 및 스페셜을 위한 대량 제품과 같은 표준 기능을 구축했습니다.</p>
+
+
+  <p>맥도날드&rsquo;는 모바일 앱을 상황별 정보 및 소셜 참여와 결합하여 고객 환경을 동적으로 개인화함으로써 이를 수행했습니다. 고객이 맥도날드&rsquo; 앱을 열면 위치, 하루 중 시간, 날씨 및 프로모션을 구매하고 응답하는 자신의 습관에 따라 개별화된 콘텐츠를 얻습니다. 예를 들어 화창한 여름 오후에 상점 근처를 걷는 고객은 샌드위치 구매로 무료 아이스크림을 구입할 수 있습니다. 또는 추운 회색 아침 일찍, 제안은 커피 또는 고객이&rsquo; 좋아하는 아침 식사 항목에있을 수 있습니다.</p>
+
+
+  <p>VMob 플랫폼을 배포한 결과 네덜란드의 맥도날드&rsquo;는 제품 상환이 700% 증가했습니다. 또한 앱을 사용하는 고객은 평균적으로 두 배나 자주 매장으로 돌아왔으며 47% 더 많은 시간을 보냈습니다. 전체 <a href="https://hospitalitytechnology.edgl.com/news/NRF-2016-NEWS--International-McDonald-s-Boosts-Sales-with-IoT-powered-Customer-Engagement104201">스토리를</a> 읽고 VMob이 이를 달성하는 데 도움이 되는 여러 Azure 서비스가 어떻게 결합되었는지 알아봅니다.</p>
+
+
+  <h2>Azure Streaming을 사용한 맥주 IoT</h2>
+
+
+  <p><a href="https://gunnarpeipman.com/bio/">Gunnar Peipman</a>은 Azure Stream Analytics를 사용하여 IoT Hub의 데이터를 <a href="https://gunnarpeipman.com/2016/02/beer-iot-using-stream-analytics-to-save-data-from-iot-hub-to-sql-database/">맥주</a>와 함께 SQL 데이터베이스로 저장하는 방법을 설명합니다. 그의 요구 사항은 다음 냉각 세션을 위해 귀중한 데이터를 저장하고 IoT Hub와의 연결이 끊어지면 측정값을 조회하는 것입니다. 자세한 게시물에 대한 군나르 감사합니다.</p>
+
+
+  <h2>IoT 및 Azure Streaming의 재미, 맨해튼 Project</h2>
+
+
+  <p>브라이언 블랜차드와 마이클 깁슨은 Azure Streaming이 어떻게 10차원에서 물 소비량을 더 잘 이해할 수 있는지 보여줍니다. 확인해 보세요.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/KTkPl2iCNbE" width="560"></iframe></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이러한 이야기를 통해 Azure Stream Analytics를 사용하여 멋진 IoT 프로젝트를 빌드할 수 있기를 바랍니다. Wed&rsquo;는 여러분의 이야기를 듣고 AzureStreaming 커뮤니티의 나머지 부분과 공유하는 것을 좋아하므로 Twitter 또는 Twitter<a href="https://twitter.com/AzureStreaming">@azurestreaming</a>에서 <a href="mailto:azstream@microsoft.com">azstream@microsoft.com</a> 연락해 주세요.</p>

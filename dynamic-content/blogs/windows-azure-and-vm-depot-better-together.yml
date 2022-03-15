@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e3d42bc9dcd443d141f6d82ee7c445bcc0463ef3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905735"
+Slug: windows-azure-and-vm-depot-better-together
+Title: Azure 및 VM 디포 Windows – 함께 개선
+Summary: Microsoft Open Technologies, Inc.가 오픈 소스 가상 머신 이미지의 커뮤니티 기반 카탈로그인 VM 디포의 가용성을 발표한 지 불과 몇 주가 지났습니다. 그 이후로...
+Content: <p>Microsoft Open Technologies, Inc.가 오픈 소스 가상 머신 이미지의 커뮤니티 기반 카탈로그인 VM 디포의 가용성을 <a href="https://blogs.technet.com/b/port25/archive/2013/01/09/for-your-oss-image-building-and-sharing-pleasure-meet-vm-depot-from-ms-open-tech.aspx" target="_blank">발표한</a> 지 불과 몇 주가 지났습니다. 그 이후로 커뮤니티는 VM 디포를 통해 가상 머신 이미지를 사용하고 게시하여 이 새롭고 개방적인 접근 방식에 참여해 왔습니다. Alt Linux, Basho, Bitnami 및 Hupstream을 포함한 VM 디포 출시 파트너는 많은 수의&nbsp; 패키지에 기여&nbsp;했으며 사이트에 게시된 이미지 수는 매일 업로드되는 새로운 이미지로 거의 세 배로 증가했습니다.<br><br>오늘 youthatVM&nbsp;&nbsp; Depot와 공유하고 싶습니다. 이제&nbsp; 이러한 이미지를 더 쉽게 사용할 수 있도록 <a href="https://manage.windowsazure.com/" target="_blank">Azure 관리 포털</a>&nbsp;에 Windows 통합되었습니다. 이제 사용자는 지원되는 Linux 배포판에 따라 커뮤니티에서 제공하는 오픈 소스 스택을 찾아 Windows&nbsp; Azure Portal 내에서 직접 개인 이미지로 프로비전할 수 있습니다.<br><br>"Virtual Machines" 탭을 선택하면 이제 "VMDEPOT 찾아보기" 옵션이 표시됩니다.<br><a href=""><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4744.vmdepot1.JPG" alt="" border="0"></a></p>  <p>"VMDEPOT 찾아보기"를 클릭하면 OS 배포판별로 필터링할 수 있는 사용 가능한 이미지의 전체 목록이 표시됩니다.<br><a href=""><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7433.vmdepot2.JPG" alt="" border="0"></a><br><br>커뮤니티에 가입하고 VM Depot를 오픈 소스 커뮤니티가 함께 작업하고 클라우드용 공유 이미지를 빌드할 수 있는 최적의 장소로 만들 수 있도록 도와주세요. Twitter <a href="https://twitter.com/vmdepot" target="_blank">@vmdepot</a>에 업로드된 새 이미지에 대한 시기 적절한 경고를 받을 수도 있습니다. 다음 단원에서 뵙겠습니다!<br><br>크레이그 키터먼<br>Sr. Product Manager<br>Windows Azure<br><a href="https://www.twitter.com/craigkitterman">@craigkitterman</a></p>

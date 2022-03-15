@@ -1,0 +1,24 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 14f2bc7d1e8a9e4892752031ca9892022ab709c2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911932"
+Slug: easily-import-data-to-documentdb
+Title: DocumentDB로 데이터 쉽게 가져오기
+Summary: 고객의 일반적인 요청은 "DocumentDB로 데이터를 쉽게 마이그레이션할 수 있는 방법"입니다.  다양한 접근 방식이 있지만 DocumentDB 데이터 마이그레이션 도구보다 더 쉬운 방법은 상상하기 어렵습니다.
+Content: >-
+  <p>고객으로부터 자주 수신되는 요청&rsquo;은 &ldquo;DocumentDB로 데이터를 쉽게 마이그레이션하려면 어떻게 해야 하나요?&rdquo;&nbsp; 다양한 방법이&rsquo; 있지만 다음과 같은 다양한 원본에서 DocumentDB로 데이터를 가져오는 오픈 소스 솔루션인 DocumentDB 데이터 마이그레이션 도구보다 더 쉬운 방법은 상상하기 어렵습니다.</p>
+
+
+  <ul>
+   <li>JSON 파일</li>
+   <li>MongoDB</li>
+   <li>SQL Server</li>
+   <li>CSV 파일</li>
+   <li>DocumentDB 컬렉션</li>
+  </ul>
+
+
+  <p>도구&rsquo; 그래픽 사용자 인터페이스(dtui.exe)를 통해 가져오기를 설정하는 것은 간단한 작업입니다. 가져오기 원본을 선택하고 해당 정보를 <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/14/source.png"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/14/source2.png"><img alt="source" class="alignnone size-medium wp-image-270471" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/source-492x369.png" width="492"><img alt="source2" class="alignnone size-medium wp-image-270481" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/source2-492x369.png" width="492"></a></a> 제공합니다. 가져오기 옵션 지정:<img alt="target1" class="alignnone size-medium wp-image-270491" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/target1-492x369.png" width="492"></a> <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/14/target1.png">가져오기 설정을 확인하고 가져오기를 클릭합니다.<img alt="confirm" class="alignnone size-medium wp-image-270501" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/confirm-492x369.png" width="492"></a> <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/14/confirm.png"></a> <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/14/confirmimportsettings.png"><img alt="confirmimportsettings" class="alignnone size-medium wp-image-273702" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/confirmimportsettings-492x369.png" width="492">도구는 명령줄에서 구동할 수도 있습니다(dt.exe). 실제로 UI를 통해 가져오기를 설정한 후에는 연결된 명령을 <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/14/command.png"><img alt="command" class="alignnone size-medium wp-image-270531" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/command-492x369.png" width="492"></a> 출력하는 옵션이 있습니다.&#39;항목은 가져오기 중에 계층 관계(하위 문서)를 만들 수 있도록 테이블 형식 원본 데이터(예: SQL Server 또는 CSV 파일)를 변환하는 기능과 날짜 필드 처리 옵션을 지원합니다. 마이그레이션 도구 소스 코드는 <a href="https://github.com/azure/azure-documentdb-datamigrationtool">GitHub</a> 사용할 수 있으며 Microsoft <a href="https://www.microsoft.com/downloads/details.aspx?FamilyID=cda7703a-2774-4c07-adcc-ad02ddc1a44d">다운로드 센터에서</a> 컴파일된 버전을 사용할 수 있습니다.&nbsp; 솔루션을 컴파일하거나 컴파일된 버전을 다운로드하여 원하는 디렉터리로 추출할 수 있습니다. 각 데이터 원본 옵션에 대한 명령줄 샘플을 포함하여 도구를 사용하는 방법에 대한 자세한 내용은 여기 내 문서를 참조<a href="https://azure.microsoft.com/en-us/documentation/articles/documentdb-import-data/">하세요</a>.&nbsp; DocumentDB에 대한 자세한 내용은 <a href="https://azure.com/docdb">서비스 페이지를</a> 방문하세요.</p>

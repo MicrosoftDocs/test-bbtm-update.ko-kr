@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 54e197bef3ac2a8fce12fc15beca0294d9042009
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905511"
+Slug: just-released-new-windows-azure-tutorials-and-tutorial-landing-pages
+Title: '방금 릴리스됨: 새로운 Windows Azure 자습서 및 자습서 방문 페이지'
+Summary: Were&rsquo;는 Azure를 Windows 빠르게 실행하려는 개발자와 IT 전문가에게 도움이 되는 4가지 새로운 시작 자습서를 발표하게 되어 기쁘게 생각합니다. 이외에도...
+Content: '<p>Were&rsquo;는 Azure를 Windows 빠르게 실행하려는 개발자와 IT 전문가에게 도움이 되는 4가지 새로운 시작 자습서를 발표하게 되어 기쁘게 생각합니다. 이러한 자습서 외에도 Windows Azure 제품 웹 사이트에서 Windows Azure 플랫폼의 모든 측면을 다루는 자습서 콘텐츠를 카탈로그로 표시하는 새로운 자습서 섹션을 시작했습니다.</p>  <p>새로운 시작 자습서에서는 다음과 같은 몇 가지 일반적인 시나리오를 다룹니다.</p>  <ul>  <li>SDK 설치 및 구독 가져오기는 Windows Azure 개발 환경을 설정하고 Windows Azure 구독에 등록하는 과정을 안내합니다.</li>  <li>Windows Azure 샘플 애플리케이션을 배포하는 방법은 미리 패키지된 Windows Azure 애플리케이션을 배포하고 구성하는 방법을 설명합니다.</li>  <li>ASP.NET MVC 3을 사용하여 Windows Azure Hello World 애플리케이션을 개발하는 방법은 기본 웹 애플리케이션을 만들고 Windows Azure에 배포하는 방법을 설명합니다.</li>  <li>Code First 및 SQL Azure 사용하여 Windows Azure Data Application을 개발하는 것은 Entity Framework Code First 기능을 사용하여 SQL Azure 데이터베이스 구성 요소를 추가하여 Hello World 애플리케이션에서 확장됩니다.</li>  </ul>  <p>새 자습서 방문 페이지는 여러 Microsoft 사이트에서 가장 Windows Azure 자습서를 한데 모아 작업 및 경험 수준으로 그룹화하여 요구 사항을 가장 잘 충족하는 자습서를 쉽게 식별할 수 있도록 합니다. 예를 들어 기존 애플리케이션을 Windows Azure로 이동하려면 Migrate Services 및 Data Tutorials를 확인하세요. 기존 Windows Azure 애플리케이션에 인증을 추가해야 하는 경우 제어 액세스 자습서를 사용해 보세요.</p>  <p>새 페이지 또는 Windows Azure 제품 웹 사이트의 콘텐츠에 대한 피드백을 받으려고 합니다. 우리에게 당신의 생각을 보내 : <a target="_blank" href="mailto:azuresitefeedback@microsoft.com">azuresitefeedback@microsoft.com</a>.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href= https://blogs.msdn.com/b/windowsazure/archive/2011/07/26/just-released-new-windows-azure-tutorials-and-tutorial-landing-pages.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗  <script type="text/javascript"></script>  </p>'

@@ -1,0 +1,74 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a92fddbaa8bdd695be8c72f892ca1921000ff337
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911745"
+Slug: making-azure-the-best-place-for-all-your-applications-and-data
+Title: Azure를 모든 애플리케이션 및 데이터에 가장 적합한 위치로 만들기
+Summary: 클라우드, 데이터 및 AI의 합류는 전례 없는 변화를 이끌고 있습니다. 데이터를 활용하고 획기적인 작업과 경험으로 전환하는 기능은 오늘날 혁신의 토대가 됩니다....
+Content: >-
+  <p>클라우드, 데이터 및 AI의 합류는 전례 없는 변화를 이끌고 있습니다. 데이터를 활용하고 획기적인 작업 및 환경으로 전환하는 기능은 오늘날 혁신의 토대가 됩니다. 조직은 클라우드 기술을 사용하여 비즈니스&mdash; 마이그레이션 애플리케이션 및 데이터를 클라우드로 유도하는 혁신을 가속화하는 것이 이 전략의 핵심 이니셔티브입니다.<br>
+
+  &nbsp;<br>
+
+  Microsoft만 모든 애플리케이션 및 데이터에 대해 하이브리드 클라우드에 최적화된 일관되고 글로벌 플랫폼을 제공합니다. Microsoft는 일관된 하이브리드 클라우드 환경을 유지하는 동시에 다양한 마이그레이션 및 현대화 옵션을 제공하는 유연성을 제공합니다. 이러한 일관성을 통해 다양한 기술 세트, 시스템 및 도구를 유지 관리하는 동시에 데이터에서 인사이트를 추출하여 혁신을 추진할 필요가 없어도 애플리케이션 및 데이터 워크로드를 용어로 배포할 수 있습니다.</p>
+
+
+  <p>오늘, SQL Server 및 오픈 소스 애플리케이션을 Azure로 이동하는 선택과 ROI를 크게 확장하는 투자를 발표하게 되어 기쁩니다. SQL Server 고객은 이제 <a href="https://azure.microsoft.com/en-us/blog/migrate-your-databases-to-a-fully-managed-service-with-azure-sql-database-managed-instance/" target="_blank"><strong>SQL Database Managed Instance에 대한 미리 보기</strong></a>, 고객이 최대 30%*를 절약할 수 있는 SQL Server 라이선스 혜택을 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank"><strong>위한 Azure 하이브리드 혜택</strong></a> 및<strong> </strong> Managed Instance에 대한 <a href="https://azure.microsoft.com/en-us/services/database-migration/" target="_blank"><strong>Azure Database Migration Service</strong></a> 미리 보기를 사용해 볼 수 있습니다. 또한 향후 몇 주 내에 <a href="https://azure.microsoft.com/en-us/blog/public-preview-of-java-on-app-service-built-in-support-for-tomcat-and-openjdk/" target="_blank"><strong>Azure App Service의 Apache Tomcat&reg; 지원</strong></a> <strong>미리 보기 </strong> 와<strong> Azure Database for</strong> <a href="https://azure.microsoft.com/en-us/services/mysql/" target="_blank"><strong>MySQL</strong></a><strong> 및 </strong><a href="https://azure.microsoft.com/en-us/services/postgresql/" target="_blank"><strong>PostgreSQL</strong></a>의 일반 공급이 발표되어 오픈 소스 기반 애플리케이션을 Azure로 더 쉽게 가져올 수 있게 되었습니다.</p>
+
+
+  <h2>SQL Server 워크로드 마이그레이션</h2>
+
+
+  <p>Azure SQL Database Managed Instance의 새 배포 옵션을 사용하여 애플리케이션을 변경하지 않고<strong>도 SQL Server</strong> 애플리케이션을 Azure로 원활하게 이동할 수 있도록 하고 있습니다. Managed Instance는 SQLAgent, DBMail 및 변경 데이터 캡처와 같은 기능을 포함하여 기존 SQL Server 배포와의 완전한 엔진 호환성을 제공하여 몇 가지 이름을 지정하고 생산성이 높은 SQL Database 서비스를 기반으로 합니다. 제한된 미리 보기에 참여한 고객은 데이터베이스에 대한 경보 시스템 역할을 하는 성능 모니터링 및 튜닝 및 위협 감지를 포함한 완전 관리형 서비스, 기본 제공 HA 및 반자율 데이터베이스 기능을 포함하여 시장에서 사용할 수 있는 다른 옵션과 Azure SQL Database 제공하는 차별화된 가치에 흥분하고 있습니다.</p>
+
+
+  <p>SQL Database Managed Instance가 출시되면 SQL Server 대한 지원을 포함하도록 <strong>Azure 하이브리드 혜택</strong> 프로그램도 확장하고 있습니다. 이제 활성 Software Assurance를 사용하여 온-프레미스 SQL Server 라이선스를 Managed Instance로 이동하고 곧 SQL Server Integration Services 라이선스를 할인된 가격으로 Azure Data Factory로 이동하여 최대 30%*까지 절약할 수 있습니다.</p>
+
+
+  <p>피벗 기술 솔루션과 같은 Managed Instance 미리 보기 고객은 라이선스 할인과 함께 완전 관리형 데이터베이스 서비스의 조합을 좋아합니다. <em>&ldquo;SQL Managed Instance는 우리가 찾고 있던 행복한 매체입니다. 우리는 SQL Server 힘과 호환성이 필요했지만 VM 24x7 실행과 함께 제공되는 관리 오버헤드와 비용이 없으면 Robert Shurbet, 수석 소프트웨어 개발 Professional, 피벗 기술 솔루션이 명시되어 있습니다. &ldquo; 이러한 기능과 관리&rsquo; 용이성을 얻을 수 있을 뿐만 아니라 Azure 하이브리드 혜택을 사용할 수 있으므로 Software Assurance를 통해 기존 SQL Server 라이선스를 사용할 수 있습니다. 애플리케이션 개발, 배포 및 관리는 Azure 및 SQL Managed Instance를 통해 훨씬 더 쉽고 저렴해지고 있습니다.&rdquo;</em></p>
+
+
+  <p>마지막으로 데이터베이스를 SQL Database Managed Instance로의 마이그레이션을 간소화할 수 있도록 <a href="https://azure.microsoft.com/en-us/campaigns/database-migration/" target="_blank"><strong>Azure Database Migration Service</strong></a>를 확장하여 SQL Database Managed Instance를 지원하게 되어 기쁩니다. Azure Database Migration Service는 데이터베이스 지원의 전체 로드맵의 시작으로 Azure SQL Database 온-프레미스 SQL Server 이동하기 위한 원활한 엔드 투 엔드 솔루션으로 설계되었습니다. 전체 서비스 로드맵은 MySQL 및 PostgreSQL 데이터베이스에 대한 향후 지원을 포함하여 다양한 데이터베이스 원본 및 대상 &mdash;에서 Azure Database for MySQL 및 Azure Database for PostgreSQL로의 데이터베이스 마이그레이션을 지원합니다.</p>
+
+
+  <h2>오픈 소스 워크로드 마이그레이션</h2>
+
+
+  <p>Azure를 모든 애플리케이션 및 데이터에 가장 적합한 대상으로 만들려면 오픈 소스 기반 워크로드를 완전히 지원해야 합니다. 현재 Azure App Service에서 Apache Tomcat 및 OpenJDK 8 <a href="https://azure.microsoft.com/en-us/blog/public-preview-of-java-on-app-service-built-in-support-for-tomcat-and-openjdk/" target="_blank">에 대한 기본 제공 지원</a> 미리 보기를 도입하여 Java 개발자가 웹 애플리케이션 및 API를 Azures&rsquo; 시장을 선도하는 PaaS에 쉽게 배포할 수 있게 되었습니다. .jar 또는 .war 파일을 App Service로 가져오면&rsquo; 용량 프로비전, 서버 유지 관리 및 부하 분산을 처리합니다. Jetty 및 다른 버전의 JRE와 같은 다른 기본 설정 이미지가 있는 경우 <a href="https://docs.microsoft.com/en-us/azure/app-service/containers/tutorial-custom-docker-image" target="_blank">사용자 고유의 Docker 이미지를 빌드</a>하고 컨테이너 레지스트리를 가리켜 App Service에 배포할 수도 있습니다.&nbsp; Java 애플리케이션이 배포되면 <a href="https://azure.microsoft.com/en-us/downloads/" target="_blank">Java용 Azure SDK</a>를 사용하여 확장하여 Storage, Azure Database for MySQL 및 Azure Database for PostgreSQL과 같은 다양한 Azure 서비스를 사용할 수 있습니다. </p>
+
+
+  <p>또한 <a href="https://azure.microsoft.com/en-us/services/mysql/" target="_blank"><strong>MySQL</strong></a><strong> 및 </strong><a href="https://azure.microsoft.com/en-us/services/postgresql/" target="_blank"><strong>PostgreSQL</strong></a><strong>용 Azure 데이터베이스 서비스를 </strong> 향후 몇 주 안에 <strong> 일반 공급으로 </strong>릴리스하게 되어 기쁘게 생각하고 있습니다. 이러한 미리 보기 서비스는 작년에 미리 보기로 출시된 이후 엄청난 성장을 거두었으며, 개발자는 데이터 가용성, 보호 및 규모와 관련된 복잡성을 제거하는 간단하고 완전히 관리되는 서비스 플랫폼에서 데이터베이스 선택을 제공하기를 원한다는 것을 증명했습니다. MySQL 및 PostgreSQL용 Azure 데이터베이스 서비스는 Azure에서 이러한 서비스를 사용하여 가장 간단한 마이그레이션과 가장 빠른 개발 경로를 보장하기 위해 커뮤니티 버전을 제공합니다. Azure에서 오픈 소스 지원 서비스를 사용하면 GeekWire와 같은 회사에서 기술 스택 및 개발자 문화에 지장을 주지 않고 워크로드를 클라우드로 쉽게 이동할 수 있습니다.</p>
+
+
+  <p>케빈 리소타에 따르면, <a href="https://customers.microsoft.com/en-us/story/geekwire" target="_blank">GeekWire</a> 개발자, <em>&ldquo;[GeekWire] 웹 사이트는 우리의 생명선입니다. 중요할 경우 사이트의 안정성입니다. &rsquo;사이트에서 트래픽이 5배, 10배 증가하는 것은 드문 일이 아닙니다. 사이트를 Azure로 마이그레이션했으며 예측할 수 없는 트래픽 급증을 지원하기 위해 다양한 Azure 서비스에 사이트를 호스트했습니다. GeekWire는 WordPress에서 실행되며 Nginx 및 PHPthe&hellip; 주요 의사 결정자는 Microsoft가 Azure Database for MySQL을 출시했을 때 전체 스택과 함께 데이터베이스 계층을 실행할 수도 있었습니다.&rdquo;</em></p>
+
+
+  <h2>Azure는 애플리케이션 및 데이터에 가장 적합한 위치입니다.</h2>
+
+
+  <p>오늘&rsquo; 공지는 Azure를 모든 앱, 데이터 및 인프라 요구 사항에 가장 적합한 위치로 만들기 위한 또 다른 단계입니다. 2월 28일에 <a href="https://azure.microsoft.com/en-us/blog/confidently-plan-your-cloud-migration-azure-migrate-is-now-generally-available/" target="_blank">는 Azure Migrate의 일반 공급</a>도 발표했습니다. Azure Migrate를 사용하면 워크로드 준비 상태, 적절한 크기의 리소스 및 비용 예측에 대한 규범적 지침을 포함하여 풍부한 인사이트를 사용하여 클라우드 마이그레이션 프로젝트를 자신 있게 계획할 수 있습니다. Azure Migrate를 모든 온-프레미스 워크로드를 검색하고 평가할 수 있는 단일 위치로 만드는 것이 우리의 비전입니다.&nbsp;&nbsp;</p>
+
+
+  <p>이러한 투자는 온-프레미스 및 클라우드에서 더 심층적인 플랫폼 일관성, 풍부한 오픈 소스 애플리케이션 프레임워크 및 데이터베이스 지원, Microsoft 고객을 위한 확장된 비용 절감을 제공합니다. Were&rsquo;는 Azure로의 마이그레이션을 최대한 원활하게 만드는 동시에 가속화된 혁신을 위한 길을 열기 위해 최선을 다하고 있습니다. 우리의 목표는 오늘날의&rsquo; 혁신가들이 애플리케이션과 데이터의 힘을 발휘하고 세계를 개선할 가능성을 재구상할 수 있도록 하는 기술을 구축하는 것입니다.</p>
+
+
+  <h2>오늘 시작하세요!</h2>
+
+
+  <p>이러한 흥미로운 신기술을 사용해 보시기 기대됩니다! 오늘 시작하고 피드백을 알려주세요.</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/blog/migrate-your-databases-to-a-fully-managed-service-with-azure-sql-database-managed-instance/" target="_blank">SQL Database Managed Instance 미리 보기</a> 살펴보기</li>
+      <li><a href="https://azure.microsoft.com/en-us/services/database-migration/" target="_blank">Managed Instance에 대한 Azure Database Migration Service 지원 시도</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">SQL Server 대한 Azure 하이브리드 혜택 살펴보기</a></li>
+      <li><a href="https://aka.ms/Glbs6q" target="_blank">Apache Tomcat에 대한 Azure App Service 기본 제공 지원 사용해 보기</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/services/mysql/" target="_blank">MySQL</a> 및 <a href="https://azure.microsoft.com/en-us/services/postgresql/" target="_blank">PostgreSQL</a>용 Azure 데이터베이스 서비스 사용해 보기</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/confidently-plan-your-cloud-migration-azure-migrate-is-now-generally-available/" target="_blank">Azure Migrate</a> 사용해 보기</li>
+  </ul>
+
+
+  <p><em>*미국 동부 가격에서 Azure SQL DB Managed Instance 가격에 대한 가격 책정. 절감액은 완전 가격(라이선스 포함)과 비교할 때 기본 요금으로 계산됩니다. 위에 포함된 SA 비용은 OPEN, NL용입니다. SA 가격은 EA 계약에 따라 달라질 수 있습니다.</em></p>

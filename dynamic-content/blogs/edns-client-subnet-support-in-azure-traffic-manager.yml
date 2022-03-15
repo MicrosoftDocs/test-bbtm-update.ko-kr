@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e63cb49bcc8a1636b547fa0fb2ef5d96125e072a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911918"
+Slug: edns-client-subnet-support-in-azure-traffic-manager
+Title: Azure Traffic Manager EDNS 클라이언트 서브넷 지원
+Summary: 지난 몇 개월 동안 Azure Traffic Manager 사용하여 지리적 트래픽 라우팅, 빠른 장애 조치(failover) 및 TCP 검색에 대한 지원을 발표했습니다. 새로운 기능을 추가하는 것은 우리의 지속적인 노력입니다...
+Content: >-
+  <p>지난 몇 개월 동안 Azure Traffic Manager 사용하여 <a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-geographic-routing-capability-in-azure-traffic-manager/" target="_blank">지리적 트래픽 라우팅</a>, <a href="https://azure.microsoft.com/en-us/updates/aztmfftcp/" target="_blank">빠른 장애 조치(failover</a>) 및 <a href="https://azure.microsoft.com/en-us/updates/aztmfftcp/" target="_blank">TCP 검색</a>에 대한 지원을 발표했습니다. 고객에게 가치를 더하는 새로운 기능을 추가하기 위한 지속적인 노력입니다. 오늘 Azure Traffic Manager EDNS ECS(클라이언트 서브넷)에 대한 지원을 발표하게 되어 기쁩니다.</p>
+
+
+  <p>고객이 Azure Traffic Manager <a href="https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-routing-methods" target="_blank">성능 또는 지리적 라우팅 방법을</a> 사용하도록 선택하는 경우 라우팅 결정은 DNS(도메인 이름 시스템) 요청의 원본에 따라 달라집니다. Azure Traffic Manager 쿼리의 원본 IP 주소를 검사하여 요청 원본 지역을 결정합니다. 대부분의 경우 최종 사용자를 대신하여 재귀 DNS 조회를 수행하는 로컬 DNS 확인자의 IP 주소입니다.</p>
+
+
+  <p>이는 최종 사용자의 위치에 적합한 프록시이지만 사용자가 지리적 위치 외부에서 해결자를 사용할 수 있는 경우가 많습니다. 이로 인해 쿼리 응답이 최적화되지 않습니다.</p>
+
+
+  <p>ECS에 대한 지원을 통해 Azure Traffic Manager 쿼리를 프록시하는 DNS 확인자가 전달한 경우 이 정보를 사용하여 라우팅을 결정합니다. 이렇게 하면 성능 라우팅 방법을 사용할 때 정확도가 증가하고 지리적 라우팅 방법을 사용하는 경우 지리적 위치 식별의 정확성이 향상됩니다.</p>
+
+
+  <p>특히 이 기능은 클라이언트 서브넷 주소를 확인자에게 전달할 수 있는 <a href="https://tools.ietf.org/html/rfc2671" target="_blank">EDNS0(DNS용 확장 메커니즘)</a>을 제공하는 <a href="https://tools.ietf.org/html/rfc7871" target="_blank">DNS 쿼리의 RFC 7871 &ndash; 클라이언트 서브</a>넷에 대한 지원을 제공합니다.</p>
+
+
+  <p>이 기능을 사용하도록 설정하는 데 필요한 고객 작업은 없으며 모든 Azure 클라우드에서 사용할 수 있습니다. ECS 정보를 사용하는 모든 최종 사용자 쿼리는 이미 Azure Traffic Manager 이 새로운 기능을 활용하고 있습니다.</p>

@@ -1,0 +1,351 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c3f575570b8c5f163f5ad80ad217167063f6663e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912406"
+Slug: running-azure-batch-jobs-using-the-azure-cli-no-code-required
+Title: Azure CLI를 사용하여 Azure Batch 작업 실행 - 코드 필요 없음
+Summary: 이제 Azure CLI를 사용하여 코드 없이 일괄 처리 작업을 종단 간 실행할 수 있습니다. 확장은 풀, 작업 및 작업을 만들 수 있도록 Batch 템플릿 지원을 추가하는 Azure CLI에 사용할 수 있으며 파일 전송 기능을 추가합니다.
+Content: >-
+  <p>Azure Batch를 도입했을 때 대상 그룹은 대규모로 애플리케이션 또는 알고리즘을 실행해야 하는 SaaS 또는 클라이언트 솔루션을 생성하는 개발자였습니다. 개발자는 Batch API를 사용하여 Batch와 통합하고 솔루션 내에서 구성 요소로 활용합니다.</p>
+
+
+  <p>출시 이후 코드 없이 Batch를 더 쉽게 사용할 수 있는 추가 기능을 추가하고 Batch를 활용할 수 있는 대상 그룹을 확장했습니다. 작업을 엔드 투 엔드(end-to-end)로 정의하고 실행할 수 있도록 하는 새로운 Azure CLI 기능이 최근에 추가된 것을 발표하게 되어 기쁘게 생각합니다. 사용자는 직접 또는 스크립팅을 통해 풀을 만들고, 데이터를 업로드하고, 대규모로 작업을 실행하고, 코드 없이 Azure CLI를 사용하여 출력 데이터를 &ndash; 다운로드할 수 있습니다.</p>
+
+
+  <h2>Batch 템플릿</h2>
+
+
+  <p>Batch 템플릿은 JSON 파일이 풀, 작업, 태스크 및 기타 항목을 만들기 위한 속성 이름 및 값을 지정할 수 있도록 하는 Azure CLI의 기존 Batch 지원을 기반으로 합니다. Batch 템플릿을 사용하면 JSON 파일에서 가능한 기능과 비교하여 다음 기능을 사용할 수 있습니다.</p>
+
+
+  <ul>
+      <li>매개 변수를 정의할 수 있습니다. 템플릿을 사용하는 경우 템플릿 본문에 지정된 다른 항목 속성 값을 사용하여 해당 항목을 만들도록 매개 변수 값을 지정합니다. Batch 및 Batch에서 실행할 애플리케이션을 이해하는 사용자는 풀, 작업 및 작업 속성 값을 지정하여 템플릿을 만들 수 있습니다. Batch 및/또는 애플리케이션에 익숙하지 않은 사용자는 정의된 매개 변수의 값을 지정하기만 하면 됩니다.</li>
+      <li>작업 작업 팩터리는 작업과 연결된 하나 이상의 작업을 만들어 많은 작업 정의를 만들 필요가 없도록 하고 작업 제출을 크게 간소화합니다.</li>
+  </ul>
+
+
+  <h2>입력 및 출력 파일 업로드 및 다운로드</h2>
+
+
+  <p>입력 데이터 파일을 작업에 제공해야 하며 출력 데이터 파일이 종종 발생합니다. 스토리지 계정은 기본적으로 각 Batch 계정과 연결됩니다. Azure CLI를 사용하여 이제 코딩 없이 클라이언트와 이 스토리지 계정 간에 파일을 쉽게 전송할 수 있습니다. 또한 풀 노드 간 전송을 위해 풀 및 작업 템플릿에서 파일을 참조합니다.</p>
+
+
+  <h2>ffmpeg를 사용하여 비디오 파일 코드 변환 예제 &ndash;</h2>
+
+
+  <p><a href="https://ffmpeg.org/">ffmpeg</a> 는 오디오 및 비디오 파일을 처리하는 인기 있는 애플리케이션입니다. Azure Batch CLI를 사용하여 ffmpeg를 호출하여 여러 비디오 파일을 병렬로 트랜스코딩하고 원본 비디오 파일을 다른 해상도로 변환할 수 있습니다.</p>
+
+
+  <h3>풀 템플릿 만들기</h3>
+
+
+  <p>ffmpeg 애플리케이션을 설치해야 하는 VM 노드 풀과 실행할 개별 코드가 필요합니다. Batch 및 ffmpeg에 대한 지식이 있는 사람은 풀 템플릿을 정의합니다. 템플릿은 풀을 만드는 데 사용될 때 풀 ID와 노드 수만 지정하도록 작성됩니다.</p>
+
+
+  <p>템플릿은 다음을 정의합니다.</p>
+
+
+  <ul>
+      <li>풀 ID와 풀 &ndash; 노드 수를 풀에 만드는 데 템플릿을 사용할 때 값을 제공해야 하는 두 개의 매개 변수입니다.</li>
+      <li>템플릿 본문은 OS, VM 크기, ffmpeg 패키지 및 기타 풀 속성을 지정합니다.</li>
+  </ul>
+
+
+  <p>풀 템플릿의 예는 다음과 같습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;parameters&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;nodeCount&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;type&quot;: &quot;int&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;metadata&quot;: { &quot;description&quot;: &quot;The number of pool nodes&quot; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;poolId&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;type&quot;: &quot;string&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;metadata&quot;: { &quot;description&quot;: &quot;The pool id &quot; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;pool&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;type&quot;: &quot;Microsoft.Batch/batchAccounts/pools&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;apiVersion&quot;: &quot;2016-12-01&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;properties&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;id&quot;: &quot;[parameters(&#39;poolId&#39;)]&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;virtualMachineConfiguration&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;imageReference&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;publisher&quot;: &quot;Canonical&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;offer&quot;: &quot;UbuntuServer&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;sku&quot;: &quot;16.04.0-LTS&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;version&quot;: &quot;latest&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;nodeAgentSKUId&quot;: &quot;batch.node.ubuntu 16.04&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;vmSize&quot;: &quot;STANDARD_D3_V2&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;targetDedicatedNodes&quot;: &quot;[parameters(&#39;nodeCount&#39;)]&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;enableAutoScale&quot;: false,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;maxTasksPerNode&quot;: 1,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;packageReferences&quot;: [
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;type&quot;: &quot;aptPackage&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;id&quot;: &quot;ffmpeg&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]
+
+  } } }</pre>
+
+
+  <h3>작업 템플릿 만들기</h3>
+
+
+  <p>비디오 파일을 트랜스코딩하기 위해 비디오 파일당 하나의 작업으로 작업이 만들어집니다. 각 태스크는 노드에 복사할 원본 비디오 파일, 대상 확인, 출력 파일 이름 및 위치 및 기타 작업 속성을 지정하는 매개 변수를 사용하여 ffmpeg 애플리케이션을 호출해야 합니다.</p>
+
+
+  <p>Batch 및 ffmpeg에 대한 지식이 있는 사람은 작업 템플릿을 정의합니다. 이 템플릿은 사용되는 경우 풀 ID 및 작업 ID만 지정해야 하므로 작성되었습니다. 간단히 하기 위해 원본 파일이 고정된 위치에 업로드되고, 출력 파일이 고정된 위치에 기록되고, 출력 해상도가 특정 값으로 설정된 것으로 가정합니다.</p>
+
+
+  <pre class="prettyprint">
+
+  {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;parameters&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;poolId&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;type&quot;: &quot;string&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;metadata&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;description&quot;: &quot;The pool id which runs the job&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;jobId&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;type&quot;: &quot;string&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;metadata&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;description&quot;: &quot;The job id&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;resolution&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;type&quot;: &quot;string&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;defaultValue&quot;: &quot;428x240&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;allowedValues&quot;: [
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;428x240&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;854x480&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;metadata&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;description&quot;: &quot;Target video resolution&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;job&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;type&quot;: &quot;Microsoft.Batch/batchAccounts/jobs&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;apiVersion&quot;: &quot;2016-12-01&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;properties&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;id&quot;: &quot;[parameters(&#39;jobId&#39;)]&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;constraints&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;maxWallClockTime&quot;: &quot;PT5H&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;maxTaskRetryCount&quot;: 1
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;poolInfo&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;poolId&quot;: &quot;[parameters(&#39;poolId&#39;)]&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;taskFactory&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;type&quot;: &quot;taskPerFile&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;source&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;fileGroup&quot;: &quot;ffmpeg-input&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;repeatTask&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;commandLine&quot;: &quot;ffmpeg -i {fileName} -y -s [parameters(&#39;resolution&#39;)] -strict -2 {fileNameWithoutExtension}_[parameters(&#39;resolution&#39;)].mp4&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;resourceFiles&quot;: [
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;blobSource&quot;: &quot;{url}&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;filePath&quot;: &quot;{fileName}&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ],
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;outputFiles&quot;: [
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;filePattern&quot;: &quot;{fileNameWithoutExtension}_[parameters(&#39;resolution&#39;)].mp4&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;destination&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;autoStorage&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;path&quot;: &quot;{fileNameWithoutExtension}_[parameters(&#39;resolution&#39;)].mp4&quot;,
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;fileGroup&quot;: &quot;ffmpeg-output&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;uploadOptions&quot;: {
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;uploadCondition&quot;: &quot;TaskSuccess&quot;
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;onAllTasksComplete&quot;: &quot;terminatejob&quot;
+
+  } } }</pre>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3>풀 템플릿을 사용하여 풀 만들기</h3>
+
+
+  <p>트랜스코딩할 파일이 있는 사용자는 먼저 코드 변환을 수행할 노드가 포함된 풀을 만들 수 있습니다. 스크립트된 경우 매개 변수 값을 명령줄에 전달할 수 있습니다. 직접 호출되면 매개 변수 값에 대한 메시지가 사용자에게 표시됩니다.</p>
+
+
+  <p><code>C:\BatchCliTemplates&gt;az batch pool create --template pool-ffmpeg.json<br>
+
+  You are using an experimental feature {Pool Template}.<br>
+
+  nodeCount (The number of pool nodes): 20<br>
+
+  poolId (The pool id): MyFfmpegPool </code></p>
+
+
+  <p>템플릿의 사용자로서 Azure VM 크기,&rsquo; 풀 속성 및 ffmpeg를 설치하는 방법을 이해해야 했습니다.</p>
+
+
+  <h3>코드 변환할 원본 파일 업로드</h3>
+
+
+  <p>Azure로 트랜스코딩할 파일을 업로드해야 합니다. 사용할 파일 그룹의 이름이 제공되었습니다. 이는 Batch 계정과 연결된 Azure Storage 계정에서 만든 컨테이너와 동일시됩니다.</p>
+
+
+  <p><code>az batch file upload --local-path c:\source_videos\*.mp4 --file-group ffmpeg-input</code></p>
+
+
+  <h3>작업 템플릿을 사용하여 원본 파일을 트랜스코딩하는 작업 실행</h3>
+
+
+  <p>업로드된 입력 파일당 하나의 작업이 있는 작업을 만들어야 합니다. 스크립트된 경우 매개 변수 값을 명령줄에 전달할 수 있습니다. 직접 호출되면 매개 변수 값에 대한 메시지가 사용자에게 표시됩니다.</p>
+
+
+  <p><code>az batch job create --template job-ffmpeg.json</code></p>
+
+
+  <p>템플릿&rsquo;의 사용자로서 ffmpeg를 호출하고 코드 변환을 수행할 적절한 매개 변수를 지정하는 방법을 이해해야 했으며 작업 및 작업에 대한 Batch 속성을 지정하지 않았습니다&rsquo;.</p>
+
+
+  <h3>코드 변환된 파일 다운로드</h3>
+
+
+  <p>클라이언트에서 코드 변환된 출력 파일이 필요한 경우 쉽게 다운로드할 수 있습니다.</p>
+
+
+  <p><code>az batch file download --file-group ffmpeg-output --local-path c:\output_lowres_videos</code></p>
+
+
+  <h2>요약</h2>
+
+
+  <p>이 예제에서는 사용자가 ffmpeg를 사용하여 비디오 코드 변환을 수행하는 Batch 풀 및 작업 템플릿을 만드는 방법을 보여 했습니다. 사용자가 Batch API를 사용할 필요가 없습니다. ffmpeg 애플리케이션 및 Azure Batch에 대한 지식이 필요합니다. 템플릿을 사용하려면 최종 사용자가 Azure CLI를 사용하여 파일을 업로드하여 트랜스코딩하고, 출력 파일을 다운로드하고, 풀 및 작업 템플릿 매개 변수 값을 제공해야 합니다.</p>
+
+
+  <h2>추가 정보</h2>
+
+
+  <p>자세한 내용은 다음을 사용할 수 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/azure/batch/batch-cli-templates">Azure Batch CLI 설명서</a></li>
+      <li><a href="https://github.com/Azure/azure-batch-cli-extensions">Batch 확장에 대한 Azure GitHub 리포지토리</a>의 자세한 설명서, 샘플 및 소스 코드입니다.</li>
+  </ul>

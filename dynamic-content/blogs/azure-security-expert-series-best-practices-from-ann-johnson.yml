@@ -1,0 +1,100 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e91416b25b70b2a80eb20b95d105bd394c4789d4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905599"
+Slug: azure-security-expert-series-best-practices-from-ann-johnson
+Title: 'Azure Security Expert 시리즈: Ann Johnson의 모범 사례'
+Summary: 더 많은 컴퓨팅 환경이 클라우드로 이동하면서 더 강력한 클라우드 보안에 대한 필요성은 그 어느 때보다 커졌습니다. 하지만 효과적인 클라우드 보안을 구성하는 것은 무엇이며, 어떤 모범 사례를 따라야 할까요? 보안 운영 및 IT 전문가를 위해 6월 19일에 Azure 보안 전문가 시리즈를 시작하게 되어 기쁩니다. 다양한 클라우드 보안 항목에 대한 논의에서 Ann Johnson, Microsoft 사이버 보안 CVP 및 기타 업계 전문가와 함께 시작합니다.
+Content: >-
+  <p style="text-align: center;background-color:black;"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Azure%20Security%20Expert_nologo.png" style="width: 50%"></p>
+
+
+  <h4>6월 19<sup>일</sup> 오전 10시 &ndash; 11시 PT(오후 1시 &ndash; 2시 동부 표준시)</h4>
+
+
+  <p>더 많은 컴퓨팅 환경이 클라우드로 이동하면서 더 강력한 클라우드 보안에 대한 필요성은 그 어느 때보다 커졌습니다. 하지만 효과적인 클라우드 보안을 구성하는 것은 무엇이며, 어떤 모범 사례를 따라야 할까요?</p>
+
+
+  <table border="0" cellpadding="1" cellspacing="1" style="width:100%;border:none;">
+   <tbody>
+    <tr style="border:none;">
+     <td style="width:70%;">보안 운영 및 IT 전문가를 위해 6월 19일에 Azure 보안 전문가 시리즈를 시작하게 되어 기쁩니다. 다양한 클라우드 보안 항목에 대한 논의에서 <strong>Ann Johnson</strong>, CVP 사이버 보안 솔루션 그룹, Microsoft 및 기타 업계 전문가와 함께 시작합니다.<br>
+     <br>
+     <br>
+     <br>
+     <a href="https://aka.ms/AA5bvj6" style="padding:15px 25px; background-color: #0078D7;color:white;">일정 확인</a></td>
+     <td><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bab639d2-06df-4d94-8b31-e7bf442ee537.png"><img alt="image" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dddba53b-18a5-4a70-83ef-181006d8f9ae.png" style="margin: 3px 5px; border: 0px currentcolor; float: right; display: inline; background-image: none; width:80%;" title="이미지"></a></td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>이벤트에 포함된 항목은 무엇인가요?</h2>
+
+
+  <p>다음에 대한 앤 존슨의 의견을 들을&#39;있습니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+   <li>Microsoft의 헤이든 하인스워스, GM 및 파트너, 사이버 보안 엔지니어링을 사용한 클라우드 보안 모범 사례.</li>
+   <li>최신 Azure 보안 혁신.</li>
+   <li>Check Point Software Technologies의 클라우드 보안 책임자인 Ran Nahmias와의 파트너십.</li>
+   <li>Microsoft 엔터프라이즈 고객의 보안 원칙</li>
+  </ul>
+
+
+  <p>스트리밍 이벤트 중에는 Microsoft 클라우드 보안 전문가와 실시간 채팅에 참여할 수 있는 기회가&#39;.</p>
+
+
+  <p>또한 Microsoft 보안 제품 전문가가 이끄는 사용자 고유의 속도로 새로운 주문형 세션을 시청하여 다음 항목에서 실질적인 지식을 얻을 수 있습니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+   <li>클라우드 네이티브 SIEM인 Azure Sentinel을 시작합니다.</li>
+   <li>클라우드 네이티브 Azure 네트워크 보안이란?</li>
+   <li>Security Center를 사용하여 하이브리드 클라우드를 보호합니다.</li>
+   <li>IoT Security의 다른 점은 무엇인가요?</li>
+  </ul>
+
+
+  <p><strong>그게&rsquo; 전부는 아닙니다!</strong> 이벤트 후 Microsoft Xbox One S 획득할 수 있습니다. 모든 세션을 시청하고, 경품 행사 양식에 대한 지식 점검 질문을 완료하고, 제출 &ndash; 하고, 입력하면 됩니다!**</p>
+
+
+  <h2>튜닝</h2>
+
+
+  <p>따라서 <a href="https://aka.ms/AA5bvj6">오늘 일정을 표시</a>하면 6월 19일 수요일 오전 10시(동부 표준시 오후 1시)에 온라인으로 확인할&#39;있습니다.</p>
+
+
+  <h2>Azure 보안 전문가에게 질문하기</h2>
+
+
+  <p>질문이 더 있으신가요? Azure 보안 팀은 <strong>2019년 6월 24일 월요일</strong> 오전 &ndash; 11:30(동부 표준시 오후 1시 &ndash; 30분)부터 트위터에서 Ask Us Anything&rsquo; 세션을 개최합니다&lsquo;.&nbsp; 제품 및 엔지니어링 팀의 구성원은 Azure 보안 서비스에 대한 질문에 답변할 수 있습니다.</p>
+
+
+  <p>해시태그 <a href="https://twitter.com/search?q=%23AzureSecuritySeries&amp;src=typd">#AzureSecuritySeries</a>를 <a href="https://twitter.com/azuresupport">@AzureSupport</a> 언급하고 사용하여 Twitter에 질문을 게시합니다.</p>
+
+
+  <p>Twitter 세션 이후에 추가 작업 또는 추가 질문이 있는 경우 아무 문제도 없습니다! 나중에&rsquo; 트위터를 통해 대화를 계속하거나 질문을 <a href="mailto:Azuresecurityexpert@microsoft.com">Azuresecurityexpert@microsoft.com</a>보내게 되어 기쁩니다.</p>
+
+
+  <h2>Azure 보안에 대해 자세히 알아보고 기술 커뮤니티와 연결하려면 어떻게 해야 하나요?</h2>
+
+
+  <p>클라우드 보안 계획을 시작하거나 가속화하는 데 도움이 되는 다양한 클라우드 보안 항목을 다루는 새로운 임원 회담, 주문형 세션 또는 기타 유형의 중요한 콘텐츠에 연결하고 액세스할 수 있는 여러 가지 방법이 있습니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+   <li>콘텐츠 보기: <a href="https://www.youtube.com/playlist?list=PLLasX02E8BPA0ZNzg-BsHio7yTciN-UVu">Azure Security Expert 시리즈 페이지</a></li>
+   <li>제품 세부 정보는 <a href="https://azure.microsoft.com/en-us/overview/security/">Microsoft Azure</a> 방문하세요.</li>
+   <li>Microsoft Azure Twitter에서 Azure 보안 뉴스 및 업데이트에 대한 소셜 채널을 팔로우<a href="https://twitter.com/Azure?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">하세요</a>.</li>
+   <li><a href="https://techcommunity.microsoft.com/plugins/common/feature/oauth2sso/sso_login_redirect?referer=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2FEnterprise-Mobility-Security%2Fct-p%2FEMS">보안 Community</a> 참여하여 엔지니어링 팀과 연결하고 미리 보기, 그룹 토론, 피드백 제공 등에 참여하세요.</li>
+   <li><a href="https://docs.microsoft.com/en-us/learn/">Microsoft Learn</a>의 실습 교육 과정을 통해 Azure 내의 보안 기능에 대한 지식을 가속화합니다(향후 몇 달 동안 새로운 보안 교육 세션에 주의).</li>
+   <li>전문가로부터 배우고 동료와 연결하는 전문 보안 학습 경로를 위해 <a href="https://www.microsoft.com/en-us/ignite">Microsoft Ignite</a> 에 참석하세요.</li>
+  </ul>
+
+
+  <p><em>**경품 행사는 6월 19 &ndash; 일 사이에만 진행됩니다. 6월 26일 오후 11:59 태평양 표준시. 구매가 필요하지 않습니다. 입국하려면 50개 미국(컬럼비아 특별구 포함)의 법적 거주자여야 하며 18세 이상이어야 합니다. 경품 행사의 품질에 대한 항목 양식의 모든 지식 점검 질문을 완료해야 합니다. 자세한 내용은 </em><a href="https://download.microsoft.com/download/5/D/2/5D28903D-61E5-4B29-84A7-D64C4B27D43B/Azure_Security_Expert_Series_Kick_off_Sweepstakes_Sweepstakes_Official_Rules.pdf"><em>공식 규칙을</em></a> 참조하세요 <em> .</em></p>

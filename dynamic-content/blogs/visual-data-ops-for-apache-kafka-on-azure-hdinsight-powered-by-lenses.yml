@@ -1,0 +1,80 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 74d3e815d8c20792cedb52c131318a19431446aa
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905752"
+Slug: visual-data-ops-for-apache-kafka-on-azure-hdinsight-powered-by-lenses
+Title: Lenses로 구동되는 Azure HDInsight의 Apache Kafka에 대한 시각적 데이터 작업
+Summary: Apache Kafka는 현재 가장 인기 있는 오픈 소스 스트리밍 플랫폼 중 하나입니다. 그러나 Kafka를 배포하고 실행하는 것은 여전히 대부분의 과제입니다.
+Content: >-
+  <p><em>이 블로그는 Lenses의 CTO 앤드류 스티븐슨과 공동으로 작성되었습니다.</em></p>
+
+
+  <p>Apache Kafka는 현재 가장 인기 있는 오픈 소스 스트리밍 플랫폼 중 하나입니다. 그러나 Kafka를 배포하고 실행하는 것은 여전히 대부분의 과제입니다. Azure HDInsight는 다음을 제공하여 이 문제를 해결합니다.</p>
+
+
+  <ol>
+   <li>사용 편의성: 클라우드에 Kafka 클러스터를 신속하게 배포하고 다른 Azure 서비스와 간단히 통합합니다.</li>
+   <li>더 높은 규모와 낮은 TCO(총 작업 비용): 관리 디스크를 사용하면 컴퓨팅 및 스토리지가 분리되어 클러스터에 100TB를 사용할 수 있습니다.</li>
+   <li>향상된 보안: Apache Ranger를 사용하여 BYOK(사용자 고유 키) 암호화, 사용자 지정 가상 네트워크 및 토픽 수준 보안을 가져옵니다.</li>
+  </ol>
+
+
+  <p>하지만&rsquo; 이제 Azure Portal 내에서 Azure <a href="https://azure.microsoft.com/en-us/services/hdinsight/" target="_blank">HDInsight</a> 애플리케이션 에코시스템의 일부로 일반적으로 사용할 수 있는 오버레이 플랫폼인 <a href="https://lenses.io/?utm_source=Azure_Cloud&amp;utm_medium=Microsoft_Blog&amp;utm_campaign=Azure_Lensesio" target="_blank">Lenses</a>를 사용하여 가시성에서 모니터링에 이르기까지 스트리밍 데이터 작업을 성공적으로 관리할 수 있는 것은 아닙니다&ndash;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/66011ec2-be50-486f-9cc2-e15625d6e1ed.png"><img alt="Lenses for HDInsight" border="0" height="877" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/846786c3-4e7a-4da0-bded-462b2dc4d2af.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="HDInsight용 렌즈" width="1822"></a></p>
+
+
+  <p>이제 렌즈를 사용하여 고객은 다음을 수행할 수 있습니다.</p>
+
+
+  <ol>
+   <li>Kafka 항목 내부를 쉽게 살펴보기</li>
+   <li>SQL 사용하여 스트리밍 데이터 검사 및 수정</li>
+   <li>애플리케이션 환경 시각화</li>
+  </ol>
+
+
+  <h2>Kafka 항목 내부 살펴보기</h2>
+
+
+  <p>일반적인 프로덕션 Kafka 클러스터에는 수천 개의 토픽이 있습니다. Imagine 이러한 모든 항목에 대해 높은 수준의 보기를 확인하려고 합니다. 복제 또는 파티션 배포와 같은 다양한 항목의 구성을 이해하려고 할 수 있습니다. 또는 메시지 처리량 및 리더 브로커를 조사하면서 특정 항목 내부를 자세히 살펴볼 수 있습니다.</p>
+
+
+  <p>Kafka CLI를 통해 이러한 많은 인사이트를 제공할 수 있지만 Lenses는 사용하기 쉽고 직관적인 시각적 인터페이스를 통해 토픽 및 브로커에 대한 주요 인사이트를 통합하여 환경을 크게 간소화합니다. Lenses를 사용하면 Kafka 클러스터를 쉽게 검사할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/596563dd-cee1-4365-958e-e49383e9a926.png"><img alt="Lenses Dashboard" border="0" height="725" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/914d8164-1b63-4212-8cd3-38adfed00c42.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Lenses 대시보드" width="1501"></a></p>
+
+
+  <h2>SQL 사용하여 스트리밍 데이터 검사 및 수정</h2>
+
+
+  <p>Kafka 토픽 내의 데이터를 검사하고 특정 기간 내에 전송된 메시지를 보려면 어떻게 해야 할까요? 또는 실제로 해당 스트림의 하위 집합을 처리하고 다른 Kafka 토픽에 다시 쓰려는 경우 렌즈 UI 내에서 SQL 쿼리 및 프로세서를 사용하여 이를 달성할 수 있습니다. SQL 쿼리를 작성하여 스트리밍 데이터의 유효성을 검사하고 클라이언트 조직의 차단을 더 빠르게 해제할 수 있습니다.</p>
+
+
+  <p>SQL 프로세서를 배포하고 모니터링하여 실시간 변환 및 분석을 수행할 수 있으며, 조인 및 집계와 같이 SQL 예상되는 모든 기능을 지원합니다. AKS(Azure Kubernetes Service)를 사용하여 처리를 확장하도록 Lenses를 구성할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bcb378ca-3871-4295-a219-1dee1f0d52c0.png"><img alt="Inspect and modify streaming data using SQL with Lenses" border="0" height="945" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4bab3530-bd67-4e77-ba86-e493ac991bfd.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Lenses에서 SQL 사용하여 스트리밍 데이터 검사 및 수정" width="1379"></a></p>
+
+
+  <h2>애플리케이션 환경 시각화</h2>
+
+
+  <p>하루의 끝에서, 당신은&rsquo; 비즈니스 영향을 만들 것입니다 솔루션을 만들려고. 해당 솔루션은 다양한 마이크로 서비스, 데이터 생산자 및 분석 엔진으로 구성됩니다. 렌즈를 사용하면 실행 중인 프로세스와 데이터 플랫폼의 계보를 설명하는 애플리케이션 환경에 대한 쉬운 인사이트를 얻을 수 있습니다.</p>
+
+
+  <p><strong>토폴로지</strong> 보기에서 실행 중인 애플리케이션은 동적으로 추가되고 시작 시 복구되며 항목이 포함됩니다. 엔드 투 엔드 솔루션을 만들기 위해 Lenses는 대규모 Kafka 커넥트 커넥터 컬렉션을 포함하는 오픈 소스 <a href="https://github.com/Landoop/stream-reactor" target="_blank">Stream Reactor</a> 프로젝트에서 커넥터를 쉽게 배포할 수 있는 방법을 제공합니다.</p>
+
+
+  <p>Azure HDInsight에서 Lenses를 시작하려면 다음 리소스를 확인하세요.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-get-started" target="_blank">HDInsight Kafka 클러스터 만들기</a></li>
+   <li><a href="https://lenses.io/blog/2019/05/lenses-on-kafka-azure-hdinsight/?utm_source=Azure_Cloud&amp;utm_medium=Microsoft_Blog&amp;utm_campaign=Azure_Lensesio_Blog" target="_blank">Azure HDInsight의 렌즈</a></li>
+  </ul>

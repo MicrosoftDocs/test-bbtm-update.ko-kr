@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 59e650e812f01472264a8c3852d04a8bb0662cb8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905361"
+Slug: mix-09-update-2
+Title: "Mix '09 Update #2"
+Summary: "[이 문서는 SQL Azure 팀에서 제공했습니다.] MIX '09에서 다시 안녕하세요!&nbsp;   Nigel Ellis는 SDS에서 MIX 세션을 마쳤습니다. Microsoft SQL Data Services의 새로운 기능(MIX09-T06F).&..."
+Content: "<p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>MIX '09에서 다시 안녕하세요!&nbsp; </p>  <p>Nigel Ellis는 SDS에서 MIX 세션을 마쳤습니다. Microsoft SQL Data Services의 새로운 기능(MIX09-T06F).&nbsp; (편집: 이 대화는 여기에서 온라인으로 볼 수 있습니다). </p>  <p>라스베이거스에서 금요일 오전 9시에 참석은 놀랍게도 좋았습니다.&nbsp; 예상대로 나이젤은 강연에서 멋진 일을했고 전반적인 메시지와 드릴 다운 정보는 청중에게 잘 공감하는 것처럼 보였습니다.&nbsp; 특히 Nigel은 온-프레미스 SQL 사용하는 호환성 SDS v1에 대한 정말 좋은 데모를 수행했으며, 이를 통해 기존 애플리케이션을 클라우드 환경으로 포팅하는 방법을 매우 쉽게 수행할 수 있습니다.&nbsp; 특히 Windows Azure Compute에서 웹 및 작업자 프로세스를 실행하는 기능과 함께 매우 강력한 메시지입니다.&nbsp; 이러한 기능은 함께 차세대 서비스 기반 애플리케이션을 제공하기 위한 훌륭한 기반을 제공합니다. </p>  <p>한 가지 놀라운 점은 fastCGI에 대한 Windows Azure의 지원과 SQL PHP 클라이언트 라이브러리와 같은 기존 SQL 클라이언트 라이브러리에 대한 지원을 통해 PHP, Ruby, Java 및 기타 광범위한 개발 환경에 대한 지원과 관련된 메시지가 MIX 대상 그룹에게 큰 반향을 불러일으키지 않았다는 것입니다.&nbsp;  나는 사람들이 이유의 일부가 될 수 있도록 우리의 전반적인 방향의 추가 뉘앙스의 일부를 소화하는 데 시간이 걸릴 것이라고 생각합니다.&nbsp; 또한 MIX에서도 기존 핵심 웹 개발자보다 광범위한 대상 그룹에 대해 초기에 \"자체 선택\"할 수 있습니다.&nbsp; </p>  <p>다음에 대한 질문을 포함하여 마지막에 많은 후속 관심과 좋은 질문: <br></p>  <ul>  <li>부하 분산 및 유연한 용량 – esp. 애플리케이션의 버스트 기간 처리 </li>  <li>데이터 동기화 및 Microsoft Sync Framework 기술을 활용하는 방법 </li>  <li>Windows Azure 컴퓨팅과 함께 로컬 개발을 수행할 때 시작하는 방법 </li>  <li>전체 텍스트 인덱싱 및 공간 등 다른 기능에 대한 v1 지원 </li>  <li>데이터 플랫폼의 다른 주요 부분인 Reporting Services, Integration Services 등과의 통합 및 호환성   <ul>  <li>이 메시지는 정말 광범위하게 공명 하는 것 같다.&nbsp; 전체 SQL Data Platform에서 SDS가 잘 통합된 부분인 v1에서도 많은 가치를 제공합니다. </li></ul></li>  <li>스케일 아웃 데이터베이스 애플리케이션에 대한 추가 지침 및 패턴 및 사례를 요청합니다.&nbsp; 나이젤은 SaaS에 대한 우리의 지원을 드릴다운하기 위해이 관심을 활용의 좋은 일을했다 </li>  <li>v1 이상에서 ISV. </li>  <li>지리적 위치 지원 </li>  <li>그리고 슬라이드를 사용할 수 있도록 요청 :) </li></ul>  <p>모두 모두, 좋은 회의.&nbsp; 우리는 정말 모든 관심을 주셔서 감사합니다 MIX는 서비스에 투자하는 많은 사용자로부터 만나 추가 피드백을 얻을 수있는 환상적인 기회였습니다.&nbsp; 우리가 우리의 v1 배달을 향해 운전으로 그것은 꽤 재미 타고 될 것입니다. </p>  <p>패트릭</p>"

@@ -1,0 +1,124 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5f2470b6006554a2d4ba871bcb317f669922d2dd
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905533"
+Slug: have-fun-and-draw-awesome-on-the-cosmic-scale-azure-cosmosdb-pxdraw-canvas-today
+Title: '오늘 Azure #CosmosDB #PxDraw 캔버스의 우주 규모에 재미있고 멋진 그림을 그리세요!'
+Summary: PxDraw는 전 세계 수천 명의 다른 사람들과 한 번에 한 픽셀씩 그림을 만들 수 있는 대규모 실시간 그리기 캔버스입니다. PxDraw는 Azure 실험입니다...
+Content: >-
+  <p>PxDraw는 전 세계 수천 명의 다른 사람들과 한 번에 한 픽셀씩 그림을 만들 수 있는 대규모 실시간 그리기 캔버스입니다. PxDraw는 <a href="https://azure.microsoft.com/en-us/services/cosmos-db/" target="_blank">Azure Cosmos DB</a> 팀이 Microsoft Build Conference 2018을 위해 함께 만든 실험입니다. 컨퍼런스가 5월 9일 수요일에 마무리된 후에 종료됩니다. Azure Cosmos DB에 대한 다중 마스터 지원과 소수의 다른 훌륭한 Azure 기술을 곧 출시할 예정입니다. 2018년 5월 7일 Microsoft Build 키노트에서 데모를 볼 수 있습니다.</p>
+
+
+  <p>지금 <a href="https://pxdraw.azure.com/">https://pxdraw.azure.com/</a>그리기 시작!</p>
+
+
+  <p>- 친구 <a href="https://twitter.com/azurecosmosdb?lang=en" target="_blank">@AzureCosmosDB</a></p>
+
+
+  <p><strong>P.S. 팀을 구성하고 우주 예술을 만들기 위해 친구를 초대! #CosmosDB #PxDraw.</strong></p>
+
+
+  <p><strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/771d40ec-1259-47bf-bcd4-89a665393ce3.png"><img alt="Azure Cosmos DB Draw" border="0" height="860" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/01084642-a33e-43ea-8805-97f56e366eab.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Cosmos DB 그리기" width="1313"></a></strong></p>
+
+
+  <h2>PxDraw란?</h2>
+
+
+  <p>그것은 당신의 멋진 아이디어로 가득 할 준비가 백만 픽셀을&#39;! //build 데모에 대한 아이디어로 시작하여 모든 사람이 //build 중에 시도할 수 있는 대규모 &quot;Cosmos&quot; 규모의 실험으로 확장되었습니다. //build에 참여하든 온라인을 따라 작업하든 관계없이 모든 사용자가 공동 작업을 수행할&#39;있습니다. <strong>우리는 확실히 사람들이 함께 일하고 더 복잡한 디자인을 그리기 위해 팀을 구성하는 것이 좋습니다.</strong> &#39;1000x1000 그리드는 16가지 색을 지원합니다. 픽셀을 한 번에 하나씩 추가합니다. 픽셀을&#39;다른 사람을 덮어쓸 수 있습니다(그리고 덮어쓸 수 있으므로 점점 더 많은 픽셀을 그릴 때 영토를 &quot;&quot; 방어해야 할 수도 있음). 30초마다 1픽셀만 그리는 것으로 제한될&#39;있습니다.</p>
+
+
+  <p>시작하려면 창의 오른쪽 위에 있는 로그인 단추로 이동하여 <a href="https://pxdraw.azure.com/">https://pxdraw.azure.com/</a> 클릭합니다. 그러면 Twitter 계정으로 로그인하라는 메시지가 표시됩니다. 이제 왼쪽에서 색을 선택하고 그릴 픽셀을 선택할 수&#39;. 확대하여 수정하는 픽셀을 확인하는 데 도움이 될 수 있습니다. 마우스 휠로 확대하거나 터치 스크린 장치에서 손가락 모으기 제스처를 사용할 수 있습니다. 마우스 오른쪽 단추를 클릭하거나 손가락으로 끌면 캔버스가 이동합니다. 마우스/손가락이 현재 가리키고 있는 픽셀을 마우스 왼쪽 클릭 또는 손가락 탭으로 삽입합니다. 그러면 다음 배너를 삽입할 수 있는 시기를 알려주는 타이머가 오른쪽 위 배너에서 시작됩니다.</p>
+
+
+  <h2>어떻게 빌드하나요?</h2>
+
+
+  <p>PxDraw는 Azure Cosmos DB, Azure Functions, Azure Storage, SignalR, C#, TypeScript 등을 포함한 다양한 Azure 및 Microsoft 기술로 빌드됩니다. 최종 디자인, 코드 베이스 및 학습된 모든 교훈을 사용하여 후속 블로그 게시물을 공개할 계획입니다. 짧은 대기 시간을 유지하면서 많은 지역에서 많은 쓰기를 보여 주는 디자인이&#39;. 이제 제한된 미리 보기로 제공된 Azure Cosmos DB&#39;뮤틀리 마스터 기능을 모두 활용합니다. 여기에서 미리 보기에 대한 액세스를 등록할 수 <a href="https://pxdraw.azure.com/" target="_blank">있습니다</a>.</p>
+
+
+  <h2>FAQ</h2>
+
+
+  <p>다음은 몇 가지 질문과 대답입니다.</p>
+
+
+  <p><strong>Q: Twitter 계정이 필요한가요?</strong></p>
+
+
+  <p>A: 예. 이 실험을 지원하는 유일한 ID 공급자는&#39;&#39;.</p>
+
+
+  <p><strong>Q: 내 Twitter 계정 정보는 무엇을 사용합니까?</strong></p>
+
+
+  <p>A: ID(고유 번호가 아닌) @handle만 사용하여 마지막 삽입 시간, 삽입한 픽셀 및 잘못된 사용자 차단을 추적합니다. Microsoft는 계정에 대한 다른 정보를 저장하거나 액세스하지 않습니다. 가능한 최소 권한을 갖도록 Twitter 앱을 설정한&#39;. &quot;모든 트윗 #CosmosDB&quot; 단추는 Twitter 창 자체를 엽니다. 우리는 결코 그녀를 대신하여 트윗하지 않을 것입니다.</p>
+
+
+  <p><strong>Q: 봇이 허용되었나요?</strong></p>
+
+
+  <p>A:&#39;봇을 허용하도록 애플리케이션을 명시적으로 디자인하지 않았고&#39;설명서가 없지만 클라이언트 앱을 리버스 엔지니어링하고 봇을 빌드하는 경우 스스로 행동하면 문제가 되지&#39;. 여전히 twitter 인증을 사용하고 쿠키를 허용하거나 인증 헤더를 사용해야&#39;. (힌트: x-zumo-auth의 경우 bing).</p>
+
+
+  <p>잘못된 동작에 대한 응답은 _________&quot;?에 대한 &quot;아래 질문을 참조하세요.</p>
+
+
+  <p><strong>Q: 타이머는 삽입 사이에 항상 30초가 되나요?</strong></p>
+
+
+  <p>A: 아니요, 트래픽 ALOT을 가져오는 경우 시간 제한을 연장하거나 더 흥미롭게 만들려는 경우 제한 시간을 줄일 수 있습니다. (명시적으로 봇을 허용하는 것은 아니지만 봇인 경우 /api/메타데이터 엔드포인트에서 시간 제한을 가져올 수 있습니다).</p>
+
+
+  <p><strong>Q: 어떤 사람들은 긴 선/많은 수의 픽셀을 그릴 수 있는 것처럼 보이는 이유는 무엇인가요?</strong></p>
+
+
+  <p>A: 관리자는 무료로 그릴&quot; 수 있습니다&quot;. 실시간 해제를 표시하기 위해 //build 데모에서 이 사례를 보여 주지만 다양한 용도로 관리 도구로도 사용될&#39;있습니다.</p>
+
+
+  <p><strong>Q: 누군가가 내 픽셀을 계속 가리고 있습니다. 당신은 그들을 중지 할 수 있습니까?</strong></p>
+
+
+  <p>A: 픽셀 수가 제한되어 있기 때문에 일부 &quot;전투&quot; 는 재미있습니다. 당신이 당신 때문에 identiy의 대상이되고 있다고 생각하고 괴롭힘을당하고 있다면, 행동을보고하고 우리는 그것을 중지하기 위해 최선을 다할&#39;.</p>
+
+
+  <p><strong>Q: 나쁜 동작은 어디에서 보고할 수 있나요?</strong></p>
+
+
+  <p>A: 제목에 &quot;PXDRAW 문제가&quot; 있는 전자 메일<a target="_blank">pxdraw-admins@microsoft.com</a>. 다른 모든 전자 메일은 무시됩니다.</p>
+
+
+  <p><strong>Q: 원하는 대로 그릴 수 있나요? ____을(를) 할 수 있나요?</strong></p>
+
+
+  <p>A: 그렇지 않습니다. 우리는 세계적인 전문가 커뮤니티이며 전문적으로 자신을 수행합니다. 우리는 이 실험을 모든 사람에게 환영하기 위해 노력합니다. 불일치는 가난한 행동과 가난한 매너에 대한 변명이 아닙니다. 무례하고 용납할 수 없는 동작은 다음을 포함하지만 다음으로 제한되지는 않습니다.</p>
+
+
+  <ul>
+   <li>폭력적인 위협 또는 언어.</li>
+   <li>차별적이거나 경멸적인 농담, 언어 및 행동.</li>
+   <li>성적으로 노골적이거나 폭력적인 자료를 게시합니다.</li>
+   <li>게시, 또는 게시 위협, 사람들은 개인적으로&#39;- 정보를 식별 (&quot;doxing&quot;).</li>
+   <li>모욕, 특히 차별적 용어 나 비방을 사용하는 사람들.</li>
+   <li>성적 관심으로 인식 될 수있는 행동.</li>
+   <li>위의 동작을 옹호하거나 장려합니다.</li>
+  </ul>
+
+
+  <p>이 목록은 완전하지는 않지만 우리가 용납하지 않을 것에 대한 일반적인 감각입니다.<br>
+
+  당사는 어떤 이유로든 언제든지 사용자를 금지할 권리를 보유합니다. 어떤 이유로든 언제든지 작업을 지울 수 있는 권리가 있습니다. 우리는 어떤 이유로든 언제든지 실험을 종료할 수 있는 권리를 보유합니다. 이 모든 작업은 예고 없이 수행됩니다. 금지에 대한 항소 절차는 없습니다.</p>
+
+
+  <p><strong>Q: 데이터에 액세스할 수 있나요?</strong></p>
+
+
+  <p>A: 몇 가지 멋진 사용 사례가 들리고 관리 가능한 방식으로 수행할 수 있다고 생각되면 나중에 데이터 세트(사용자 식별 정보 제외)를 릴리스할 수 있습니다.</p>
+
+
+  <p><strong>Q: 본인에게 표시되는 데이터를 기록할 수 있나요?</strong></p>
+
+
+  <p>A: 우리는 이 권리를 명시적으로 부여하거나 공식적으로 지원하지&#39;.</p>

@@ -1,0 +1,180 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 73fd1cc99e6706fac78a1443d4584df99bd976cc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912055"
+Slug: azure-marketplace-new-offers-june-16-30
+Title: Azure Marketplace 새 제품 - 볼륨 14
+Summary: Azure Marketplace 에코시스템을 계속 확장합니다. 6월 16일부터 30일까지 22개의 새로운 제품이 등록 기준을 성공적으로 충족하고 라이브로 전환되었습니다. 아래의 새로운 제품에 대한 세부 정보를 참조하세요.
+Content: >-
+  <p>Azure Marketplace 에코시스템을 계속 확장합니다. 6월 16일부터 30일까지 22개의 새로운 제품이 등록 기준을 성공적으로 충족하고 라이브로 전환되었습니다. 아래의 새로운 제품에 대한 세부 정보를 참조하세요.</p>
+
+
+  <h2>Virtual Machines</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94660747-9ad4-4ca8-b17b-0deb1059f19d.png"><img alt="Altair HyperWorks Unlimited Virtual Appliance-BYOL" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/28147580-6728-4106-82ad-2df72896c0f6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Altair HyperWorks 무제한 가상 어플라이언스-BYOL" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/altair-engineering-inc.altair-hwul-va" target="_blank">Altair HyperWorks Unlimited Virtual Appliance-BYOL</a>: Altairs&rsquo; HyperWorks Unlimited Virtual Appliance는 엔지니어링 Software-as-a-Service에 대한 액세스를 제공하여 기업이 컴퓨터 지원 엔지니어링 용량을 확장할 수 있도록 합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0be5ee22-8431-44e5-9f22-a86af2c7ef86.png"><img alt="Autopsy" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5c162d00-e8b1-4a46-9c12-8d3bb37b71ab.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="부검" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/responder-corp.autopsy-windows" target="_blank">부검</a>: 부검은 Sleuth 키트 및 기타 디지털 법의학 도구에 대한 디지털 법의학 플랫폼 및 그래픽 인터페이스입니다. 그것은 컴퓨터에서 무슨 일이 있었는지 조사하기 위해 법 집행 기관, 군사 및 기업 심사관에 의해 사용됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2e166f6d-6bda-4397-972e-5c8b47e113b3.png"><img alt="Denodo Platform 7.0" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b6b66a60-fe02-443a-9547-87311cd7b608.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Denodo Platform 7.0" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/denodo.denodo-platform-7_0" target="_blank">Denodo Platform 7.0</a>: Denodo는 Azure 원본 및 Software-as-a-Service 애플리케이션의 데이터를 통합하여 표준 기반 데이터 게이트웨이를 제공하여 사용자가 클라우드 호스팅 데이터에 빠르고 쉽게 액세스하고 사용할 수 있도록 하는 데이터 가상화 제품입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b388668b-b70b-462b-83ab-d095903ebdc1.png"><img alt="F5 Advanced WAF" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1143e665-650d-42a5-80f6-28d2c707f3a6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="F5 고급 WAF" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/f5-networks.f5-big-ip-advanced-waf" target="_blank">F5 고급 WAF: 고급 WAF</a>는 계층 7 DDoS 공격, 악성 봇 트래픽, 모든 Open Web Application Security Project 상위 10개 위협 및 API 프로토콜 취약성을 포함하여 위협로부터 애플리케이션을 보호하여 강력한 웹 애플리케이션 방화벽 보호를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/612643fd-5ab9-4ff9-8496-a79954f072ca.png"><img alt="Hardened IIS On Windows Server 2012 R2" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c63d5af0-6ef4-43b4-aef5-361e9c6c309a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2012 R2의 강화된 IIS" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.hardened-iis-on-windows-server-2012-r2" target="_blank">강화된 IIS on Windows Server 2012 R2</a>: 인터넷 정보 서비스(IIS)는 microsoft에서 Windows NT 제품군과 함께 사용하기 위해 만든 확장 가능한 웹 서버입니다. 이 이미지는 강화된 커널에 자체 관리형 Community 버전을 배포하려는 고객을 위해 만들어집니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fed6d17a-b451-4bf3-83f2-411226f15948.png"><img alt="Hardened IIS On Windows Server 2016" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6bd0e266-5329-4c8b-8a96-e7edba0a3268.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2016 강화된 IIS" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.hardened-iis-on-windows-server-2016" target="_blank">강화된 IIS on Windows Server 2016</a>: 인터넷 정보 서비스(IIS)는 microsoft에서 Windows NT 제품군과 함께 사용하기 위해 만든 확장 가능한 웹 서버입니다. 이 이미지는 강화된 커널에 자체 관리형 Community 버전을 배포하려는 고객을 위해 만들어집니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ed9ae68-0211-4e23-b255-6ac6de676012.png"><img alt="Hardened PHP MYSQL and IIS on Windows Server 2016" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e94e67a2-936e-4bb7-9fad-d74cea6406c7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2016 강화된 PHP MYSQL 및 IIS" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.hardened-php-and-iis-on-windows-server-2012-r2" target="_blank">Windows Server 2012 R2의 강화된 PHP 및 IIS</a>: PHP는 웹 개발을 위한 서버 쪽 스크립팅 언어이며 범용 프로그래밍 언어로 사용되는&#39;. 이 이미지는 강화된 커널에 자체 관리형 Community 버전을 배포하려는 고객을 위한 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b3b7f4b1-a01a-4550-8c56-cdd7eb9d1907.png"><img alt="Hardened WebServer On Windows Server 2016" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9168b690-ce74-43c7-acf4-27c958ab69ac.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="강화된 WebServer on Windows Server 2016" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.hardened-webserver-on-windows-server-2016" target="_blank">강화된 WebServer on Windows Server 2016</a>: 인터넷 정보 서비스(IIS)는 microsoft에서 Windows NT 제품군과 함께 사용하기 위해 만든 확장 가능한 웹 서버입니다. 이 이미지는 강화된 커널에 자체 관리형 Community 버전을 배포하려는 고객을 위한 것입니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>웹 애플리케이션</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/65597969-35ff-4d5f-8932-64d49a0a5b86.png"><img alt="Aporeto Enterprise" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ef1d8845-3a2e-4451-b36a-9d538cf01cf5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Aporeto Enterprise" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/aporeto.aporeto_enterprise" target="_blank">Aporeto Enterprise</a>: Aporeto는 클라우드 애플리케이션에 대한 네트워크 보안, 런타임 보호 및 API 액세스 제어를 제공합니다. 이러한 보안 기능은 애플리케이션 리소스를 고유하게 식별하고 보호하기 위한 고유한 접근 방식인 애플리케이션 ID를 통해 제공됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/176d5ab8-9e7c-4cbd-959a-c815136f8385.png"><img alt="EXASOL Analytics Database BYOL" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/14a14a17-81f7-4fa5-aadd-b8f9b1713dbe.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="EXASOL Analytics 데이터베이스 BYOL" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/exasol.exasol-analytics-database-byol" target="_blank">EXASOL 분석 데이터베이스(BYOL)</a>: Exasol은 비즈니스 인텔리전스, 분석 및 보고를 위해 설계된 MPP 데이터베이스입니다. Exasol은 10GB에서 100TB의 데이터로 확장되고, 구현이 빠르며, 비용과 복잡성 없이 뛰어난 성능을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/af634722-9733-414b-b582-488f5d18036c.png"><img alt="Reblaze" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1ed3d894-99d7-47f2-8fc0-01900ca98035.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Reblaze" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/reblaze.reblaze" target="_blank">Reblaze</a>: Reblaze는 DoS/DDoS, 해킹 및 위반, 봇, 스크래핑 및 기타 웹 위협을 방어하는 포괄적인 클라우드 기반 지능형 웹 보안을 제공합니다. 여기에는 자동 크기 조정 대역폭, 자동화된 지역 가중치 및 트래픽 분산 등이 포함됩니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>컨테이너 솔루션</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0390173-f36e-472a-8b74-fb386e019670.png"><img alt="Hardened PHP MYSQL and IIS on Windows Server 2016" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/303a14cb-4f2b-42d0-842e-d78d1c984a9f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2016 강화된 PHP MYSQL 및 IIS" width="115"></a></td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.hardened-php-mysql-and-iis-on-windows-2016" target="_blank">Windows Server 2016 강화된 PHP MYSQL 및 IIS</a>: PHP는 웹 개발을 위한 서버 쪽 스크립팅 언어이며 범용 프로그래밍 언어로&#39;. 이 이미지는 강화된 커널에 자체 관리형 Community 버전을 배포하려는 고객을 위한 것입니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>컨설팅 서비스</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3d01d36-a259-423f-b62d-b9a853e4397b.png"><img alt="Azure Lift-and-Shift FastStart 10-Day Workshop" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c456769a-6cac-40b1-8874-b2c1e2d0b599.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 리프트 앤 시프트 빠른 시작 10일 워크샵" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/softlanding.azure-lift-shift" target="_blank">Azure Lift-and-Shift FastStart: 10일 워크샵:</a> 비용이 많이 드는 온-프레미스 인프라 &ldquo;와 관련하여 리프트 앤 시프트&rdquo; 접근 방식은 사내 앱을 클라우드로 전환하는 비용 절감 방법이 될 수 있습니다. 이 워크샵은 Microsoft Azure 마이그레이션의 타당성을 계획합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/461f9aeb-6465-488b-a2b8-4df0373d529e.png"><img alt="Azure Migrate 5-Day Assessment" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fc728b69-7d1c-45ee-b8e4-395d17e00618.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Migrate 5일 평가" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/softlanding.azure-migrate-10" target="_blank">Azure Migrate: 10일 평가:</a> 이 제품은 클라이언트&rsquo; 온-프레미스 환경을 평가하는 동안 Azure Migrate를 설치하기 위한 Softlanding의 고정 요금 10일 연장 계약입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8eb97480-e8d7-4bb3-8c6d-9baf6b2a4bc0.png"><img alt="Azure Migrate 10-Day Assessment" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/35077933-bdc8-4b0e-8d57-5d77513051d2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Migrate 10일 평가" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/softlanding.azure-migrate-quickstart" target="_blank">Azure Migrate: 5일 평가:</a> 이 5일 간의 계약에는 Azure Migrate 설치 및 온-프레미스 vCenter 가상 머신 검색 및 평가가 포함됩니다. 여기에는 클라이언트&#39;온-프레미스 환경에 대한 평가가 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec5e6192-7165-48eb-8807-2b274eeae47c.png"><img alt="Azure VM Backup FastStart 10-Day Implementation" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1da6a55d-e16e-496b-8627-d911159c3004.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure VM Backup FastStart 10일 구현" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/softlanding.azure-vm-backup" target="_blank">Azure VM Backup FastStart: 10일 구현:</a> 조직이 클라우드 기반 워크로드를 추가로 보호할 수 있도록 설계된 Softlandings&rsquo; Azure Virtual Machine Backup 제품을 통해 조직은 간단하고 비용 효율적인 Backup-as-a-Service 솔루션을 만들고 구성할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90007474-5e53-4caf-b80f-3bc675acf285.png"><img alt="Azure 1-Wk Assessment" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6d4c1648-3298-4a89-97c4-6d8b21c30f17.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 1-Wk 평가" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/phidiax.azure_assessment" target="_blank">Azure: 1-Wk 평가</a>: Phidiax&#39;클라우드 평가는 Microsoft Azure 조직의&rsquo; 민첩성을 높이고 지출을 절감하는 방법에 대한 사용자 지정적이고 자세한 보기를 제공합니다. Phidiax는 조직에서 평가, 계획, 마이그레이션, 구현 및 지원을 지원합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/502c6f9d-d5c5-4924-a09f-f9ab0154fa2b.png"><img alt="Azure 1-Wk PoC" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b46048d3-664e-41b4-bb5b-8b10fbe0844c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 1-Wk PoC" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/phidiax.azure_poc" target="_blank">Azure: 1-Wk PoC</a>: Phidiax&#39;솔루션 전문가의 전문적인 평가를 받게 됩니다. 여기에는 사용자 지정된 전문 구현 및 Microsoft Azure 솔루션에 대한 개념 증명이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ab075c1-343d-49fb-929e-1329237357a1.png"><img alt="Customer 360 Powered by Zero2Hero" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95c44a6b-7060-4349-a3bb-2abed80c7ee0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Customer 360 Powered by Zero2Hero" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bardess.customer-360-powered-by-zero2hero" target="_blank">고객 360 Powered by Zero2Hero</a>: Bardess Group에서 이 제품에 정의되고 측정 가능한 비즈니스 가치를 가진 개념 증명을 배포합니다. 고객 360 Powered by Zero2Hero는 모든 유형, 크기 및 속도의 데이터를 활용하여 보다 포괄적인 고객 보기를 구축합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/21bd7873-f855-40df-9b4f-3bfe44f4e4b6.png"><img alt="DevOps Kickstart 3-Wk Implementation" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0cccdeb-e69d-49d2-81b1-1b87a2926d3e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="DevOps Kickstart 3-Wk 구현" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/diaxion.diaxion_devops_kickstart" target="_blank">DevOps Kickstart: 3-Wk 구현</a>: 자동화 및 DevOps 민첩성을 위해 활용할 수 있는 방법을 고려하는 조직의 경우 Diaxion은 DevOps 이니셔티브를 사용하도록 설정하는 로드맵을 개발할 것입니다. 권장 사항 보고서에는 클라이언트와의 현장 워크샵이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7bc12ee8-e789-439e-b6cd-837558d5ec47.png"><img alt="Horizontal Portal with AEM - 1-Hr Briefing" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/be0803ab-6973-45c9-a4b9-89cb50de125c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AEM을 사용하는 가로 포털 - 1시간 브리핑" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/lti-lt-infotech.horizontal_portal_aem_on_azure" target="_blank">AEM을 사용한 수평 포털: 1시간 브리핑:</a> 이 개요는 통합된 사용자 경험 및 사용자 지정 가능한 기능을 갖춘 개인 설정된 액세스 지점 역할을 하는 LTI&#39;수평 포털 솔루션을 다룹니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0767ae5-1378-445e-bc45-68efe4cea0a2.png"><img alt="KPMG Adoxio Portal Azure 4-Wk Assessment" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a718cae3-2d37-400a-a609-f79456d84243.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="KPMG Adoxio Portal Azure 4-Wk 평가" width="115"></a></td>
+     <td style="vertical-align: middle;" width="630">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/adoxio.adoxio-portal-assessment-azure" target="_blank">KPMG Adoxio Portal Azure: 4-Wk 평가:</a> KPMG Adoxio는 Microsoft가 2018년 8월 Adxstudio Portals 버전 7의 지원을 종료할 때 고객이 자신의 경로에 대해 정보에 입각한 의사 결정을 내릴 수 있도록 지원하는 포털 평가 서비스를 제공합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

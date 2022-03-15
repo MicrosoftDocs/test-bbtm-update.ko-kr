@@ -1,0 +1,741 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 108383f63758424bcdbd24e225df60bffc4f82d8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911508"
+Slug: webjobs-goes-into-full-production
+Title: WebJobs 개요
+Summary: 프로덕션(GA)에 들어가는 모든 Azure Webjobs의 개요입니다.
+Content: >-
+  <a href="https://microsoft.qualtrics.com/SE/?SID=SV_8iRbWLZVMIhjqTj" target="_blank"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="clip_image001" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image001_thumb.jpg" alt="clip_image001" width="159" height="173" border="0" /></a>
+
+  <h1><a href="https://microsoft.qualtrics.com/SE/?SID=SV_8iRbWLZVMIhjqTj">사용자 의견</a></h1>
+
+  <a href="https://microsoft.qualtrics.com/SE/?SID=SV_8iRbWLZVMIhjqTj">입력이 필요합니다.  이 설문 조사를 작성하세요.</a>
+
+
+  https://microsoft.qualtrics.com/SE/?SID=SV_8iRbWLZVMIhjqTj
+
+  <h1>개요</h1>
+
+  WebJobs는 관리되는 플랫폼의 완전한 컴퓨팅 솔루션입니다. 런타임은 코드 실행 <i>방법</i> (cron, service, 수동으로)에 대한 다양한 선택 항목을 제공합니다. Azure Websites를 플랫폼으로 사용한다는 것은 WebJobs가 수많은 멋진 기능을 상속한다는 것을 의미합니다. Azure Scheduler는 다양한 일정 선택을 제공합니다. ASP.NET 팀은 WebJobs SDK를 빌드하여 다양한 Azure 구성 요소(Blob, 큐, 테이블, Service Bus)와 인터페이스하는 코드를 작성합니다. 그리고 풍부한 Visual Studio 도구는 모든 것을 원활하게 래핑합니다. 때때로 전체가 부분의 합보다 크다는 것을 보여주기 위해 간다.
+
+  <h2>"WebJobs"란?</h2>
+
+  간단히 말해서 로컬 컴퓨터에서 프로그램 또는 스크립트를 실행할 수 있는 경우 클라우드에서 실행하기만 하면 업로드됩니다.정말 간단합니다! Azure에 등록하고 코드를 업로드하고 실행하는 데 5분도 채 걸리지 않습니다. WebJobs는 일반 컴퓨팅 환경과 함께 완전히 기능적이고 관리되는 클라우드 기반 호스팅 플랫폼을 교차할 때 얻을 수 있는 기능입니다.즉, WebJobs는 관리되는 플랫폼에서 컴퓨팅됩니다. 코드를 실행하고 계속 실행하기 위한 모든 것이 관리됩니다. 프로그램을 폴더에 배치하기만 하면 됩니다.
+
+  <h2>클라우드의 코드</h2>
+
+  WebJobs에서 프로그램을 실행하면 클라우드에서 실행되므로 프로그램을 여러 컴퓨터로 확장할 수 있습니다. 크기 조정은 부하 분산 장치를 효과적으로 복제, 병렬화 및 추가하여 성능을 최적화합니다. Azure Traffic Manager 사용하여 작업을 전역적으로 배포하거나 Azure Websites의 VNET을 통해 사용자 고유의 서버에 연결할 수도 있습니다. WebJobs는 다양한 기능에 대한 인프라 및 액세스를 제공하는 <a href="https://azure.microsoft.com/en-us/services/websites/" target="_blank">Azure Websites</a>에서 실행됩니다.
+
+  <h2>도구</h2>
+
+  좋은 도구는 필수이므로 WebJobs 지원은 Visual Studio 직접 통합되었습니다. Visual Studio 'WebJobs' 형식의 새 프로젝트를 만들고 코드를 Azure에 직접 게시할 수 있습니다. 원격 디버깅 세션을 연결하여 클라우드에서 라이브로 실행되는 코드를 단계별로 실행할 수도 있습니다.
+
+
+  코딩을 더 쉽게 하기 위해 일반적인 작업을 크게 간소화하는 WebJobs SDK도 있습니다. WebJobs SDK는 기본적으로 Azure SDK를 기반으로 하는 추상화입니다. 복잡한 작업 및 개체를 C# 기본 형식에 바인딩할 수 있습니다. 이렇게 하면 모든 작동 방식을 파악할 필요가 없습니다.
+
+  <h2>모니터링 및 디버깅</h2>
+
+  WebJobs에는 전용 대시보드를 통해 실행 중인 코드를 모니터링, 디버그 및 최적화하는 방법도 포함되어 있습니다. WebJobs 대시보드를 사용하면 코드가 실행되는 동안 코드의 모든 세부 정보를 살펴볼 수 있습니다. 런타임에 모든 함수, 실행 시 매개 변수, 기간 및 호출 스택을 모두 볼 수 있습니다. 로컬 컴퓨터에서 실행되는 것처럼 클라우드에서 실행되는 코드를 한 단계씩 실행할 수 있는 원격 디버깅 기능은 말할 것도 없습니다.
+
+  <h2>런타임</h2>
+
+  WebJobs를 다양한 방법으로 실행할 수 있습니다. 수동으로, API를 통해, 웹 사이트와 동시에, 지속적으로("Always On" 기능의 도움으로) 또는 일정에 따라 실행할 수 있습니다. WebJobs는 지정된 시간에 한 번 또는 일정에 따라 주기적으로 실행되도록 예약할 수 있습니다. 일정은 <a href="https://azure.microsoft.com/en-us/documentation/services/scheduler/" target="_blank">Azure Scheduler</a>를 통해 수행되며, 이 스케줄러는 생각할 수 있는 일정 옵션의 거의 모든 순열을 제공합니다.
+
+  <h2>자세히...</h2>
+
+  WebJobs의 거의 모든 구성 요소는 선택 사항이며 독립적으로 작동할 수 있으므로 원하는 방식으로 유연하게 작업할 수 있습니다. WebJobs에 대한 많은 세부 정보 및 사용 사례가 있으며, 이 중 대부분은 <a href="https://go.microsoft.com/fwlink/?linkid=390226" target="_blank">Azure WebJobs 권장 리소스</a>에서 다룹니다.최상의 환경을 위해 최신 <a href="https://www.visualstudio.com/news/vs2013-update4-rc-vs" target="_blank">Visual Studio 업데이트</a>와 최신 <a href="https://azure.microsoft.com/en-us/downloads/" target="_blank">Azure SDK</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/websites-dotnet-webjobs-sdk-get-started/" target="_blank">WebJobs SDK</a>가 있는지 확인해야 합니다.
+
+
+  &nbsp;
+
+  <h1>큰 목록</h1>
+
+  <table class="MsoNormalTable" style="border-collapse: collapse;margin-left: -0.4pt" border="1" width="1038" cellspacing="0" cellpadding="0">
+
+  <tbody>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="342" height="26">
+
+  <h2 align="center">런타임</h2>
+
+  </td>
+
+  <td style="border-top: white 1pt solid;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b> </b></p>
+
+  </td>
+
+  <td style="border-top: white 1pt solid;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="324" height="26">
+
+  <h2 align="center">SDK)</h2>
+
+  </td>
+
+  <td style="border-top: white 1pt solid;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b> </b></p>
+
+  </td>
+
+  <td style="border-top: white 1pt solid;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="337" height="26">
+
+  <h2 align="center">Visual Studio</h2>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="342" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>트리거됨(Scheduled/OnDemand)</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="324" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>바인딩</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="337" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>WebJobs 게시</b></p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" rowspan="9" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">시스템 로그 및 사용자 출력에 대한 액세스</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="3" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">Blob, 테이블, 큐, Service Bus</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="2" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">웹 사이트를 사용하여 WebJobs 게시</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">정상 종료</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">C# 기본 형식에 바인딩</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">WebJobs로 콘솔 앱 게시</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">알림에 대한 웹후크</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">    Ie. Stream, string, TextReader/writer 등...</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="337" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>연속 WebJobs</b></p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">인수로 전달하는 매개 변수</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="324" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>Parallelism</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="3" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">시작 &amp; 중지</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">수동으로 실행(요청 시)</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="4" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">단일 또는 여러 큐 항목</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">대시보드 보기</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">지정된 시간에 실행하도록 예약됨</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">큐 항목의 병렬 처리</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">디버거 연결</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">반복적으로 예약된 실행</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">큐/Blob에 대한 포이즌 메시지 처리</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="337" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>트리거된 WebJobs</b></p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">고급 일정 /Azure Scheduler</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">비동기 함수</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="2" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">실행</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">구성 가능한 다시 시도 및 오류 작업</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="324" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>트리거(Azure Storage 및 Service Bus)</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">대시보드 보기</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="342" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><strong>연속 </strong>(또는 연속)</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="2" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">큐, Blob, Service Bus 대한 새 기능</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="337" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>WebJobs 새 프로젝트 템플릿</b></p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" rowspan="4" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">시스템 로그 및 사용자 출력에 대한 액세스</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">Blob에 대한 수정</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">예약된 &amp; 연속</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">싱글톤 또는 병렬 모드</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="324" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>WebJobs 모니터링</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="337" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>서버 탐색기 통합 </b></p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">정상 종료</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="2" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">함수 수준, 호출, 매개 변수</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">VS에서 원격 디버깅을 마우스 오른쪽 단추로 클릭</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">연속성을 위해 "Always On"에 대해 작동합니다.</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">     Ie. 실행 시간, I/O, 기본 프로필 등...</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" nowrap="nowrap" width="337" height="26"></td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" colspan="2" width="342" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>설정 파일<i>(선택 사항)</i></b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="324" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>WebJobs용 대시보드</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" rowspan="2" valign="bottom" nowrap="nowrap" width="337" height="26">
+
+  <h2 align="center">기타 기능</h2>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">구성 가능한 다시 시작 시간 및 시간 제한</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="3" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">호출 및 재생</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">트리거된 기록 크기(# 실행)<b></b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">함수 간의 인과 관계(연결)</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="337" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>Azure Websites에서 상속된 일부 기능</b></p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="342" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>지원되는 스택</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">Blob 검색</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="6" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">Visual Studio Online에서 스크립트를 편집할 수 있음</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">cmd, bat, exe, ps1, sh, php, py, js, jar...</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="324" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>오류 처리</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">자동 크기 조정(CPU, 리소스 또는 일정 모니터링)</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="342" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>API</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" rowspan="2" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">다시 시도</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">웹 사이트와 환경 변수 공유</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">REST API, Powershell</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="306" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">WebJobs 종료 지원</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">배포 옵션, 기능 &amp; 도구</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 19.5pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" width="342" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt"><b>대시보드</b></p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" nowrap="nowrap" width="324" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="26"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="26">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">프로세스 탐색기에서 CPU 및 기타 리소스를 표시합니다.</p>
+
+  </td>
+
+  </tr>
+
+  <tr style="height: 24pt">
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: white 1pt solid;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="18" height="32"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="323" height="32">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">진단 모니터링 &amp;</p>
+
+  </td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="18" height="32"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" colspan="2" valign="bottom" nowrap="nowrap" width="324" height="32"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" nowrap="nowrap" width="15" height="32"></td>
+
+  <td style="border-top: medium none;border-right: white 1pt solid;background: #eaeff7;border-bottom: white 1pt solid;border-left: medium none;padding: 0in 5.4pt 0in 5.4pt" valign="bottom" width="319" height="32">
+
+  <p class="MsoNormal" style="margin: 0in 0in 0pt">지역 배포에 대한 Azure Traffic Manager</p>
+
+  </td>
+
+  </tr>
+
+  </tbody>
+
+  </table>

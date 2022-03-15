@@ -1,0 +1,93 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 787e8824d408052d4fa5e1f3b68679ad6d704b7b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912248"
+Slug: why-the-azure-cloud
+Title: Azure Cloud를 사용하게 된 이유는 무엇인가요?
+Summary: AzureCon을 되돌아보고, BYOL(Bring Your Own Licenses)을 Azure로 가져올 수 있는 기능을 포함하여 미래를 내다보고 있습니다.
+Content: >-
+  <p>지난 주는 Microsoft Azure 클라우드 플랫폼에 대한 흥미로운 주였습니다. 세계&rsquo; 최대의 가상 클라우드 이벤트 중 하나인 <a href="https://azure.microsoft.com/en-us/azurecon/" target="_blank">AzureCon</a>을 개최했으며, 150,000명 이상의 사용자가 나스카, Jet.com 및 알래스카 항공에서 유엔 개발 프로그램, 로킹웰 자동화 등에 이르기까지 모든 유형의 &ndash; 조직을 위한 지능형 클라우드를 발전시키는 방법을&rsquo; 알아보기 위해 튜닝했습니다. Azure가 이러한 <a href="https://channel9.msdn.com/Events/Microsoft-Azure/AzureCon-2015?sort=sequential&amp;direction=desc&amp;term=&amp;tag=customer%2Bstory" target="_blank">비디오에서</a> 비즈니스를 혁신하는 데 어떻게 도움이 되는지 고객으로부터 직접 들어보세요.</p>
+
+
+  <p>AzureCon에서는 빅 데이터 및 예측 분석에서 사물 인터넷, 컨테이너화 및 마이크로 서비스와 같은 추세, 최첨단 클라우드 인프라 &ndash; 에 이르기까지 클라우드 &ndash; 를 위한 여정을 간략하게 설명하여 Azure가 오늘날 비즈니스에서 가능한 것을&rsquo; 어떻게 변화시키고 있는지를 강조했습니다. 그러나 변환은 복잡할 필요가 없습니다&rsquo;. Microsoft의 사명은 클라우드 혁신을 간단하고 저렴한 현실 &ndash; 로 만드는 동시에 가장 독특한 가치를 제공하는 것입니다. 클라우드 및 온-프레미스 간 일관성과 원활한 통합, 타의 추종을 불허하는 제품 기능, 유연한 가격 책정 및 동급 최고의 지원을 통해 Azure가 <a href="https://azure.microsoft.com/en-us/overview/azure-for-microsoft-software/">Microsoft 소프트웨어</a> 또는 <a href="https://azure.microsoft.com/en-us/overview/choose-azure-opensource/">소프트웨어를</a> 실행하는 데 가장 적합한 퍼블릭 클라우드인지 확인하기 위해 최선을 다하고 있습니다.</p>
+
+
+  <h2>속도에 맞는 클라우드</h2>
+
+
+  <p>클라우드로의 여정을 지원하기 위해 최상의 가격 책정 및 유연한 옵션을 제공하기 위해 최선을 다하고 있습니다. AzureCon에서 공개한 Azure Compute 사전 구매 계획은 이 약정의 예입니다. 이 새로운 제품은 예측 가능한 컴퓨팅 워크로드를 위해 설계되었으며 1년 컴퓨팅을 미리 구매할 때 최대 63%의 비용 절감을 제공할 수 있습니다. 또한 많은 수의 워크로드를 Azure로 이동하지만 보통 또는 덜 예측 가능한 속도로 이동하는 경우&rsquo; 새로운 Azure Compute 옵션은 더 많은 예산 유연성으로 훌륭한 가격 책정을 제공합니다. Windows Server 연금 라이선스에 대한 추가 기능에 대한 대가로 최대 60%의 할인을 사용하여 Azure에서 컴퓨팅 인스턴스를 실행합니다. 이 두 제품에 대한 자세한 내용은 여기에서 확인할 수 <a href="https://azure.microsoft.com/en-us/overview/azure-for-microsoft-software/faq/">있습니다</a>. 또한 최근 인기 있는 D 시리즈 가상 머신의 <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/" target="_blank">가격 인하를</a> 최대 27%, A8-11 가상 머신에서 표준 가격을 최대 60% 할인한다고 발표했습니다. 이는 클라우드에서 최상의 가격 책정 및 가장 유연한 옵션을 제공하기 위해 최선을 다하고 있는 방법&rsquo;의 몇 가지 예에 불과합니다.</p>
+
+
+  <h2>Azure용 BYOL 발표</h2>
+
+
+  <p>또한 하이브리드 시나리오를 사용하도록 설정하는 것의 중요성에 대해서도 계속 듣고 있습니다. 여기에는 데이터 센터, Azure 및 타사 호스팅 데이터 센터에서 Microsoft 소프트웨어를 사용하는 것이 포함됩니다. BYOL(Bring Your Own Licenses)에 대한 지원을 Azure로 확장하여 현재 SQL Server 및 SharePoint 같은 인기 있는 다른 Microsoft 제품과 마찬가지로 기존 Windows Server 라이선스를 Azure로 가져올 수 있습니다. 또한 Azure에서 Windows 10 실행할 수 있도록 합니다. 간단히 말해서,&rsquo; Azure가 Microsoft 소프트웨어를 실행하는 가장 좋은 장소인지 확인합니다. <a href="https://azure.microsoft.com/overview/azure-for-microsoft-software/faq/">곧 자세한 내용을 찾습니다</a>.</p>
+
+
+  <p>Azure를 가장 완벽한 클라우드 환경으로 만드는 혁신에 대해 자세히 알아보고 싶으신가요? 아래의 지난 주&rsquo; AzureCon 공지 사항 요약을 확인하세요.</p>
+
+
+  <h2>개방적이고 유연한 클라우드</h2>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/blog/azure-container-service-now-and-the-future/" target="_blank">Azure Container Service</a> 는 Docker 및 Mesosphere와의 Microsofts&rsquo; 파트너 관계를 기반으로 하는 새로운 오픈 소스 컨테이너 예약 및 오케스트레이션 서비스입니다. Azure Container Service를 사용하면 컨테이너화된 애플리케이션을 배포, 오케스트레이션 및 관리할 수 있는 호스트 머신의 확장 가능한 클러스터를 만들고 관리할 수 있습니다. 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-windows-server-containers-docker-and-an-introduction-to-azure-container-service/" target="_blank">비디오를</a> 시청하세요.</li>
+      <li>Hive, Spark, HBase 및 Storm을 비롯한 광범위한 오픈 소스 분석 엔진을 갖춘 완전 관리형 Apache Hadoop 클러스터 서비스인 <a href="https://weblogs.asp.net/scottgu/announcing-general-availability-of-hdinsight-on-linux-new-data-lake-services-and-language" target="_blank">Azure HDInsight</a>가 이제 일반 공급됩니다. 이 릴리스에서는 이제 Windows 서버 운영 체제와 Ubuntu 기반 Linux 운영 체제를 모두 사용하여 이러한 클러스터를 실행하도록 구성할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>IoT 및 빅 데이터 사용</h2>
+
+
+  <ul>
+      <li><a href="https://blogs.microsoft.com/iot/2015/09/29/azure-iot-suite-now-available/" target="_blank">이제 Azure IoT Suite</a>를 구매할 수 있습니다. 이 제품군은 클라우드 플랫폼을 활용하여 IoT 프로젝트를 쉽게 빌드하고 크기를 조정할 수 있도록 합니다. 또한 새로운 Microsoft Azure Certified for IoT 프로그램은 IoT 요구 사항에 도움이 되도록 제품을 테스트하고 인증한 파트너의 전체 에코시스템을 제공합니다. 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-introducing-the-microsoft-azure-iot-suite/" target="_blank">비디오를</a> 시청하세요.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/announcing-cortana-analytics-suite-and-new-partner-investments-at-wpc-2015/" target="_blank">Cortana Analytics Suite</a>는 완전히 관리되는 빅 데이터 및 고급 분석 제품군을 구매할 수 있습니다. 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-introducing-the-cortana-analytics-suite/" target="_blank">비디오를</a> 시청하세요.</li>
+      <li><a href="https://blogs.technet.com/b/dataplatforminsider/archive/2015/09/28/microsoft-expands-azure-data-lake-to-unleash-big-data-productivity.aspx" target="_blank">Azure Data Lake</a> Store, Data Lake Analytics 및 HDInsights를 비롯한 확장된 Azure Data Lake 기능 Visual Studio 통합을 사용하면 빅 데이터 코드의 간소화된 작성, 디버깅 및 최적화를 활용할 수 있습니다. 또한 SQL 이점을 사용자 코드의 표현력과 통합하는 새로운 언어인 U-SQL 도입했습니다. 빅 데이터로 작업하는 경우 생산성을 높이기 전에 전체 팀이 새로운 기술을 배울 필요가 없습니다.</li>
+      <li>최근에 릴리스된 Power BI 통합을 포함한 <a href="https://azure.microsoft.com/en-us/blog/integration-of-power-bi-with-azure-sql-data-warehouse/" target="_blank">Azure SQL Data Warehouse</a>는 이제 컴퓨팅을 동적으로 증가, 축소 및 일시 중지 &ndash; 할 수 있는 최초의 엔터프라이즈급 클라우드 데이터 웨어하우스로 광범위하게 사용할 수 있으므로 필요한 쿼리 성능에 대해서만 비용을 지불할 수 있습니다. 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-migrating-the-enterprise-data-warehouse-with-azure-sql-data-warehouse/" target="_blank">비디오를</a> 시청하세요.</li>
+  </ul>
+
+
+  <h2>클라우드에서 뛰어난 성능</h2>
+
+
+  <ul>
+      <li>GPU 기능을 갖춘 Azure Virtual Machines의 새로운 제품군인 N 시리즈가 발표되었으며 앞으로 몇 달 안에 미리 보기로 제공될 예정입니다. 이러한 VM은 NVidias&rsquo; M60 및 K80 GPU를 기반으로 하며 원격 시각화 및 대규모 컴퓨팅 시나리오를 제공하도록 설계되었습니다. 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-applications-that-scale-using-gpu-compute/" target="_blank">비디오를</a> 시청하세요.</li>
+      <li>이제 사용자 지정된 2.4GHz Intel Xeon&reg; E5 v3(Haswell) 프로세서를 기반으로 하는 차세대 D 시리즈 Virtual Machine 인스턴스인 DV2가 일반 공급됩니다. 이러한 인스턴스는 현재 D 시리즈 인스턴스보다 최대 35% 더 빠르며 현재 퍼블릭 클라우드에서 가장 성능이 좋은 옵션 중 하나입니다.</li>
+  </ul>
+
+
+  <h2>하이퍼스케일로 신뢰</h2>
+
+
+  <ul>
+      <li>인도의 &ndash; <a href="https://azure.microsoft.com/en-us/regions/" target="_blank">새 Azure 지역</a> 인도 중부 푸네 남부 인도 첸나이와 뭄바이 &ndash; 의 인도 서부는 인도 최초의 하이퍼스케일 퍼블릭 클라우드 공급자로 Microsoft Azure.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/making-the-cloud-more-secure/" target="_blank">Azure Security Center</a> 는 Azure 리소스에 대한 통합된 엔드 투 엔드 가시성 및 제어를 제공하여 위협을 쉽게 예방할 수 있는 최초의 보안 서비스입니다. 자세한 내용은 이 <a href="https://channel9.msdn.com/Events/Microsoft-Azure/AzureCon-2015/ACON205" target="_blank">비디오를</a> 시청하세요.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/announcing-expanded-microsoft-azure-support-for-financial-services-customers/" target="_blank">금융 서비스 규정 준수 프로그램은</a> 금융 서비스 회사가 글로벌 금융 규제 감독 및 위험 관리 요구 사항을 충족할 수 있는 새로운 프로그램입니다. 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-financial-services-compliance-in-azure/" target="_blank">비디오를</a> 시청하세요.</li>
+  </ul>
+
+
+  <h2>진정한 하이브리드 클라우드</h2>
+
+
+  <ul>
+      <li>O365용 ExpressRoute 및 현재 일반 공급되는 비즈니스용 Skype 포함한 <a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-expressroute-more-partners-and-new-billing-choices/" target="_blank">ExpressRoute 고급 기능</a> ExpressRoute를 사용하여 Office 365 활용하여 연결의 성능 및 개인 정보 개선을 수행할 수 있습니다. 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-using-expressroute-with-office-365/" target="_blank">비디오를</a> 시청하세요. 또한 ExpressRoute를 통해 Microsoft Azure&rsquo; Government 클라우드에 연결할 수 있는 기능도 발표했습니다. 마지막으로, <a href="https://azure.microsoft.com/en-us/pricing/details/expressroute/" target="_blank">이제 ExpressRoute에 대한 새로운 가격 책정 플랜</a> 을 사용할 수 있으므로 데이터 사용량에 따라 적절한 플랜을 보다 유연하게 선택할 수 있습니다.</li>
+      <li>이제 <a href="https://azure.microsoft.com/en-us/blog/azure-file-storage-now-generally-available/" target="_blank">Azure 파일 Storage</a> 일반 공급됩니다. Azure File Store는 온-프레미스 및 클라우드 모두에서 애플리케이션과의 보안 연결을 위해 널리 사용되는 SMB 3.0 프로토콜을 활용합니다. 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-azure-files-storage-a-frictionless-cloud-smb-file-system-for-windows-and-linux/" target="_blank">비디오를</a> 시청하세요.</li>
+  </ul>
+
+
+  <h2>포괄적인 통합 앱 개발</h2>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-app-service-environment-intro/" target="_blank">App Service Environment</a> 는 모든 앱을 안전하게 실행하고 크기를 조정하기 위해 완전히 지원되는 SLA와 함께 일반적으로 사용할 수 있습니다. 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-deploying-highly-scalable-and-secure-web-and-mobile-apps/" target="_blank">비디오를</a> 시청하세요.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/microsoft-and-akamai-bring-cdn-to-azure-customers/" target="_blank">akamai와 Azure CDN</a>. Akamai와의 새로운 파트너십을 통해 Akamais&rsquo; 업계 최고의 CDN 기능을 Azure에 통합하여 Azure CDN&rsquo; 기능, 규모 및 지리적 범위를 확장할 수 있습니다. Azure CDN 기능 및 Akamai와의 새로운 파트너십에 대해 자세히 알아보려면 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-azure-content-delivery-network-expanded-offers-and-capabilities/" target="_blank">비디오를</a> 시청하세요.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/general-availability-azure-mobile-engagement/" target="_blank">사용자</a> 세분화, 앱 사용자 분석 및 상황에 맞는 인식 스마트 푸시 알림 및 디바이스 간 앱 내 메시징을 사용하여 앱 사용, 보존 및 수익 창출을 최대화할 수 있는 Azure Mobile Engagement 이제 일반 공급됩니다.</li>
+      <li>슈퍼 볼 XLIX와 2014 동계 올림픽에 의해 전투 테스트로 이벤트의 &ndash; 라이브 스트리밍을위한 모든 장치에, 다양한 네트워크 조건에서, 고품질의 비디오의 배달을위한 Azure Media Services 라이브 <a href="https://azure.microsoft.com/en-us/services/media-services/encoding/" target="_blank">인코딩</a>은 이제 일반 공급된다. Azure Media Services 대해 자세히 알아보려면 이 <a href="https://azure.microsoft.com/en-us/documentation/videos/azurecon-2015-how-customers-in-the-media-and-entertainment-industry-are-using-azure-media-services-to-attract-new-digital-audiences-and-drive-revenue/" target="_blank">비디오를</a> 시청하세요.</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/azure-redis-cache-public-preview-of-premium-tier/">Azure Redis Cache Premium 계층</a>은 이제 공개 미리 보기에서 사용할 수 있습니다. 이 제품은 최대 규모 및 엔터프라이즈 통합을 위해 설계된 Enterprise 준비 계층입니다. Premium 계층에는 성능 향상, 더 큰 워크로드, 데이터 지속성 및 향상된 보안과 같은 모든 표준 계층 기능 등이 포함됩니다.</li>
+  </ul>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/azurecon/" target="_blank">AzureCon</a>의 기조 연설 및 드릴다운 세션을 확인하여 클라우드로의 여정을 활성화하기 위해 Azure가 수행할 수 있는 일에 대해 자세히 알아보세요.</p>

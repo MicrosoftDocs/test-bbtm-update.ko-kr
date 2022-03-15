@@ -1,0 +1,73 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 314c232ef6ffc7432cb802364b1c54f3405380c0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905851"
+Slug: linux-fuse-adapter-for-blob-storage
+Title: Blob용 Linux FUSE 어댑터 Storage
+Summary: Blob Storage Linux FUSE 어댑터 발표 이제 Linux에 Blob 컨테이너를 탑재하고 Linux 파일 시스템을 통해 액세스할 수 있습니다.
+Content: >-
+  <p>Azure Blob Storage 비용 효율성, 규모 및 단순성을 위해 매일 클라우드 애플리케이션에서 사용됩니다. 그러나 오늘날에는 많은 애플리케이션이 로컬 파일 시스템을 염두에 두고 계속 개발되고 있으며, 여전히 많은 수의 레거시 애플리케이션이 존재합니다. 종종 REST API를 통해 Blob Storage를 사용하도록 이러한 애플리케이션을 수정하는 것은 우리가 제공하는 훌륭한 SDK에서도 어려운 일이었습니다. 이러한 문제를 해결하기 위해 <a href="https://github.com/Azure/azure-storage-fuse">Blob Storage 새 FUSE 어댑터</a>의 미리 보기를 소개합니다. 이렇게 하면 Linux 플랫폼에 Blob 컨테이너를 탑재할 수 있습니다. 애플리케이션을 다시 작성할 필요가 없습니다.&nbsp;</p>
+
+
+  <h2>blobfuse &ndash; Azure Blob Storage에서 백업하는 Linux용 가상 파일 시스템</h2>
+
+
+  <p><a href="https://github.com/libfuse/libfuse">FUSE(Userspace)의 파일 시스템은</a> 사용자가 커널 코드의 복잡성 없이 자체 파일 시스템을 만들 수 있도록 하는 Linux의 인터페이스입니다. blobfuse는 이 인터페이스와 통신하는 데 필요한 함수를 구현하고 Azure Blob Storage에서 지원되는 가상 파일 시스템을 만듭니다. blobfuse를 사용하여 Linux에서 권한이 없는 사용자로 컨테이너를 탑재하고 Linux의 일반 파일 시스템 인터페이스를 사용하여 REST API에서 액세스하는 것과 동일한 데이터에 액세스할 수 있습니다.&nbsp;</p>
+
+
+  <p>다음은 ffmpeg로 비디오 코드 변환을 포함하여 blobfuse를 사용하여 몇 가지 간단한 작업을 실행하는 데모입니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/blobfuse2.gif"></p>
+
+
+  <h2>기능</h2>
+
+
+  <p>현재 blobfuse에서 다음 기능을 구현합니다.</p>
+
+
+  <ul>
+   <li>Linux에서 Blob 컨테이너 탑재</li>
+   <li>mkdir, opendir, readdir, rmdir, open, read, create, write, close, unlink, truncate, stat 및 rename과 같은 기본 파일 시스템 작업</li>
+   <li>후속 파일 액세스 시간을 개선하기 위한 로컬 캐시</li>
+   <li>더 높은 처리량을 달성하기 위해 데이터의 병렬 다운로드 및 업로드</li>
+   <li>여러 노드에서 동일한 컨테이너를 탑재할 수 있습니다. 여러 노드에 탑재된 blobfuse를 사용하면 일반 파일 시스템 API를 사용하여 데이터에 액세스하는 동안 스토리지 계정에서 <a href="https://azure.microsoft.com/en-us/blog/announcing-larger-higher-scale-storage-accounts/">증가된 처리량 및 IOPS 제한을</a> 활용할 수 있습니다. 그러나 Blob Storage에 대한 쓰기의 노드 간에는 동기화가 없습니다. 자세한 내용은 다음 제한 사항 섹션을 참조하세요.)&nbsp;</li>
+  </ul>
+
+
+  <h2>제한 사항</h2>
+
+
+  <p>blobfuses&rsquo; 기본 사용 시나리오는 개발자, 데이터 과학자, 시스템 관리자가 익숙한 파일 시스템 작업을 사용하여 Blob Storage와 상호 작용할 수 있도록 하는 것입니다. 또한 일부 레거시 애플리케이션이 Blob Storage를 기반으로 실행되도록 설정할 수 있습니다. blobfuse는 개체 저장소 위에서 실행되므로 모든 기능이 일반 파일 시스템과 동일하게 동작하지는 않는다는 점을 이해하는 것이 중요합니다. 일부 사례:&nbsp;</p>
+
+
+  <ul>
+   <li>blobfuse에서 구현되지 않은 파일 시스템 작업으로 기존 애플리케이션이 중단될 수 있습니다. 바로 가기 링크, 파일 권한, 플래그 및 POSIX 파일 잠금 작업은 현재 구현되지 않습니다.</li>
+   <li>blobfuse는 콘텐츠를 수정하기 전에 전체 파일을 로컬 디스크에 다운로드하기 때문에 기존 파일을 업데이트하는 것은 비용이 많이 드는 작업입니다.</li>
+   <li>여러 노드에서 blobfuse를 탑재할 수 있지만 Blob Storage에 대한 쓰기와 관련하여 노드 간에 동기화가 없습니다. 동시 쓰기에는 blobfuse를 사용하지 마세요.</li>
+  </ul>
+
+
+  <p>blobfuse를 평가할 때 이러한 제한 사항에 유의하세요. 모든 제한 사항 및 문제의 전체 목록은 Github의 blobfuse 리포지토리를 방문하세요.&nbsp;</p>
+
+
+  <h2>설치</h2>
+
+
+  <p><a href="https://github.com/Azure/azure-storage-fuse/wiki/Installation"> 설치 지침을</a> 따릅니다. 현재 설치하는 유일한 방법은 소스 코드에서 빌드하고 리포지토리에 제공된 탑재 스크립트를 사용하여 탑재하는 것입니다. 향후 설치 패키지를 제공할 예정입니다. 자세한 내용은 계속 지켜봐 주시기 바랍니다.</p>
+
+
+  <h2>참고</h2>
+
+
+  <p>blobfuse는 현재 미리 보기로 제공됩니다. blobfuse를 사용하기 전에 데이터의 적절한 백업이 있어야 합니다. HTTPS를 사용하여 유선으로 데이터를 보호하고 데이터 손상으로부터 보호하는 것이 좋습니다.</p>
+
+
+  <h2>피드백</h2>
+
+
+  <p>모든 피드백을 환영합니다. <a href="https://github.com/azure/azure-storage-fuse/issues">blobfuse 리포지토리</a>에서 문제를 만들어 선을 삭제하세요. 피드백을 통해 Blobfuse를 개선할 예정입니다. 그래서, 밖으로 도달 주저하지 마십시오&rsquo;!</p>

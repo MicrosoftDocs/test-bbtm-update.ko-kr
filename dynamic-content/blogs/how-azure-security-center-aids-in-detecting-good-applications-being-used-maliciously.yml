@@ -1,0 +1,123 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cd190929353071c29c29738a914bba6c8b2ffc05
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911856"
+Slug: how-azure-security-center-aids-in-detecting-good-applications-being-used-maliciously
+Title: Azure Security Center가 악의적으로 사용되는 좋은 애플리케이션을 검색하는 데 도움이 되는 방법
+Summary: 과거에는 Azure Security Center가 비트코인 마이닝 공격을 자세히 설명하는 게시물과 아웃바운드 DDoS 공격에 대한 게시물을 포함하여 손상된 VM에서 악의적인 활동을 검색하는 방법에 대해 작성했습니다. 대부분의 경우 공격자는 악의적인 도구 집합을 사용하여 손상된 컴퓨터에서 이러한 작업 및 기타 작업을 수행합니다.
+Content: >-
+  <p>Weve&rsquo;는 과거에 Azure Security Center가 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-detects-a-bitcoin-mining-attack/">비트코인 마이닝 공격을</a> 자세히 설명하는 게시물과 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-detects-ddos-attack-using-cyber-threat-intelligence/">아웃바운드 DDoS 공격에</a> 대한 게시물을 포함하여 손상된 VM에서 악의적인 활동을 검색하는 방법에 대해 작성했습니다. 대부분의 경우 공격자는 악의적인 도구 집합을 사용하여 손상된 컴퓨터에서 이러한 작업 및 기타 작업을 수행합니다. 그러나 보안 연구원 팀은 공격자가 좋은 애플리케이션을 사용하여 악의적인 작업을 수행하는 새로운 추세를 확인했습니다. 이 블로그에서는 알려진 해커 도구와 본질적으로 사악하지는 않지만 악의적으로 사용되는 도구의 사용과 Azure Security Center가 해당 사용을 검색하는 데 어떻게 도움이 되는지에 대해 설명합니다.</p>
+
+
+  <h2>해커 도구는 착취에 도움이</h2>
+
+
+  <p>일반적으로 무차별 암호 대입 공격 후 표시되는 도구의 첫 번째 범주는 포트 및 IP 주소 검사 도구입니다. 이러한 도구의 대부분은 악의적으로 작성되지 않았지만 사용 편의성 때문에 공격자는 IP 범위와 포트를 검색하여 대상으로 지정할 수 있는 취약한 컴퓨터를 찾을 수 있습니다.</p>
+
+
+  <p>가장 자주 발생하는 포트 검색 도구 중 하나는 KportScan 3.1로, 열린 포트와 로컬 포트를 검색할 수 있습니다. 개별 주소 및 IP 범위뿐만 아니라 모든 포트로 작업하는 것을 포함하여 다양한 용도가 있습니다.&nbsp; 다중 스레드(1,200개 흐름)로 손상된 머신에서 거의 리소스를 사용하지 않으며, 가장 좋은 부분은 도구가 무료라는 것입니다.&nbsp; 검사를 실행한 후 결과는 기본적으로results.txt&rdquo;파일에 &ldquo; 저장됩니다. 아래 예제에서 KportScan은 포트 3389가 인터넷에 열려 있는 범위가 지정된 모든 IP&rsquo;를 반환하도록 구성됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/131be5f2-9015-4678-af4a-366c1e5a4279.png"><img alt="image" border="0" height="386" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8598017-f98d-48d3-a035-65d953b3a367.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="500"></a></p>
+
+
+  <p>손상 후 머신에서 삭제된 다른 스캐너로는 Masscan, xDedicIPScanner 및 D3vSpider가 있습니다.&nbsp; 이러한 경우 빈도가 낮지만 주목할 만합니다.</p>
+
+
+  <p>Masscan은 가장 빠른 인터넷 포트 스캐너 중 하나라고 주장합니다. 사용자 고유의 네트워크 대역폭이 유일한 게이팅 요소인 6분 안에 전체 인터넷을 스캔하는 것이 좋습니다.&nbsp; Linux는 기본 플랫폼이지만 Windows 및 Mac OS X를 비롯한 다른 많은 운영 체제에서 실행됩니다.&nbsp; 아래 명령은 서브넷 범위가 104.208.0.0~104.215.255.255인 3389의 열린 포트를 검색합니다( 512k 상당의 주소).&nbsp; 결과는 good.xml XML 파일에 저장됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84c4f84c-4bae-49fd-adfb-71fc4a0db14d.png"><img alt="image" border="0" height="51" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/38ad4743-6936-4669-a497-688a3f488f0d.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="460"></a></p>
+
+
+  <p>xDedicIPScanner는 Masscan을 기반으로 하는 또 다른 포트 스캐너입니다. Masscan과 동일한 기능이 많지만 사용자가 GUI 기반이므로 Linux를 학습할 필요가 없습니다.&nbsp; 일부 기능에는 CIDR 블록 검사, 국가 범위 자동 로딩, 작은 풋 프린트 및 여러 포트 또는 포트 범위를 검색하는 기능이 포함됩니다. 또한 실행할 몇 가지 애플리케이션 종속성이 있으며 Winpcap 및 Microsoft Visual C++ 2010을 포함합니다. 또한 Windows 7 이상이 필요합니다. 관찰에서 xDedicIPScanner는 주로 악의적으로 사용되는 것으로 보입니다. 아래 예제에서는 검사 도구에 로드되는 국가 범위를 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7380b4a9-9f45-41b1-956a-38623e740e45.png"><img alt="image" border="0" height="362" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bd1ffe8e-702f-40d6-9428-9488867e6af4.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="320"></a></p>
+
+
+  <p>마지막으로, Pastebin D3vSpider는 자주 볼 수 있는 스캐너&rsquo;이기도 합니다. D3vSpider는 포트 스캐너가 아니라 텍스트를 저장하고 공유하는 데 널리 사용되는 Pastebin 리포지토리(도난당한 암호, 사용자 이름 및 네트워크 데이터 포함)를 검색합니다. 도구&rsquo; 출력은 사용자&rsquo; 입력 검색 조건을 기반으로 하며 사용자 이름 및 암호를 포함한 정보를 제공합니다. 아래 예제에서는 한 달 동안 745개의 사용자 이름과 암호를 검색한 다음, 나중에 다른 도구와 함께 사용할 수 있도록 txt 파일로 내보낼 수 있습니다. 예를 들어 알려진 RDP 무차별 암호 대입 도구인 NLBrute와 함께 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/af04f66e-c441-45b0-ac97-9f609ba69742.png"><img alt="image" border="0" height="334" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b9391e35-b6d7-4f7d-bd47-4f24eeaca561.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="338"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>최근에, 우리는 다른 악성 및 비 악성 도구를 삭제하는 데 사용되는 메시징 애플리케이션의 사용을 확인하기 시작했다. 메시징 애플리케이션은 널리 사용되며 본질적으로 악의적이지 않습니다. 클라우드 기반 메시징 서비스인 경향이 있으며 데스크톱 시스템과 모바일 디바이스를 비롯한 광범위한 디바이스 기반에 대한 지원을 제공합니다. 제품 사용자는 종단 간 암호화를 사용하거나 사용하지 않는 모든 유형의 메시지 및 파일을 교환하고 모든 사용자&rsquo; 디바이스에서 메시지를 동기화할 수 있습니다.&nbsp; 이러한 메시징 서비스 중 일부는 배달 후 메시지를 자체 소멸&rdquo;할 &ldquo;수 있으므로 더 이상 디바이스에서 볼 수 없습니다. 이러한 메시징 애플리케이션의 기능 중 하나는 비밀&rdquo; 채팅이라고 합니다&ldquo;. 사용자는 암호화 키를 교환하고 교환 후에 확인되며 추적되지 않고 자유롭게 통신할 수 있습니다. 이러한 기능과 더 많은 기능을 통해 이러한 메시징 서비스는 일부 공격자&rsquo; 도구 상자에 선호됩니다.&nbsp;</p>
+
+
+  <p>다른 컴퓨터에 파일을 쉽게 놓을 수 있는 기능은 공격자가 이 프로그램을 사용하는 주된 이유 중 하나인 것으로 보입니다. 실제로 2016년 12월부터 구성된 컴퓨터에서 이러한 도구의 존재를 확인하기 시작했습니다.&nbsp; 처음에, 우리는 우연의 일치로 이것을 기각, 하지만 추가 조사 후 우리는 알려진 해커 도구를보고 시작 (NLBrute, Dubrute, D3vSpider) 이러한 메시징 응용 프로그램의 설치 후 손상된 컴퓨터에 표시.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6aa491c8-780e-429f-8ff9-29e39e76d3ed.png"><img alt="image" border="0" height="280" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/07834e10-5609-44ba-946d-8be3c6710cce.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="373"></a></p>
+
+
+  <p>이러한 도구는 모든 사용자&rsquo; 디바이스에서 메시지를 동기화할 수 있으므로 대화의 일부인 모든 사용자는 나중에 메시지를 다시 방문하여 파일 또는 사진을 다운로드할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5bf0c51c-3d63-40b6-b196-ec036f9d3132.png"><img alt="image" border="0" height="274" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67eed22d-7c93-492c-8d83-ca8d6399553c.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="365"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>사용한 또 다른 방법은 메시지를 무제한 구독자에게 브로드캐스트하는 주요 목적을 위해 메시징 채널을 만드는 것입니다. 채널은 공개적으로 사용 가능하거나 비공개일 수 있습니다. 공개 채널은 누구나 참여할 수 있습니다. 그러나 비공개 채널의 경우 참가 초대를 추가하거나 받아야 합니다. 이러한 애플리케이션이 배포하는 암호화로 인해 채팅 채널에 조인하는 컴퓨터 이외의 활동은 거의 표시되지 않습니다. 아래 표시된 내용의 예는 다음과 같습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a0cfe9b-78e8-4a9e-915c-e4ba4f59c992.png"><img alt="image" border="0" height="33" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/415c31da-678d-4ea4-9b3d-c6820bfd46c7.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="1024"></a></p>
+
+
+  <p>채널에 조인하는 것이 중요하지만 이 후 컴퓨터에 표시되는 파일이 가장 흥미롭습니다.&nbsp; 이러한 도구는 크랙 도구, RDP 무차별 암호 대입 도구 및 공격자가 트래픽을 숨기고 활동의 원본 IP 주소를 가리도록 하는 암호화 도구에 이르기까지 다양합니다. 다음은 비공개 채널에 연결한 후 호스트에서 직접 본 내용의 예입니다.&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/119bb607-94f6-4dc0-afb0-0307867311a8.png"><img alt="image" border="0" height="222" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/402495a4-2924-423b-a146-98783d45c4c3.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="800"></a></p>
+
+
+  <h3>&rsquo;다음 사항:</h3>
+
+
+  <p>Weve&rsquo;는 공격자가 선호하고 Azure의 가상 머신에서 사용되는 자주 볼 수 있는 도구 중 일부를 제시했습니다. 대부분의 경우 이러한 도구는 악의적인 의도 없이 합법적인 사용을 위해 만들어졌으며, 기능과 사용 편의성 때문에 이제 악의적으로 사용되고 있습니다.</p>
+
+
+  <p>이러한 도구 중 하나의 존재는 경보의 이유가 아닐 수 있지만, 다른 요인을 자세히 살펴보면 악의적으로 사용되는지 여부를 확인하는 데 도움이 됩니다. 예를 들어 Azure 가상 머신에 둘 이상의 가상 머신이 표시되면 컴퓨터가 손상될 가능성이 훨씬 더 크고 추가 조사가 필요할 수 있습니다. Azure 머신의 다른 작업 컨텍스트에서 도구&rsquo; 사용을 확인하는 것도 이러한 도구가 악의적으로 사용되는지 확인하는 데 매우 중요합니다. <a href="https://azure.microsoft.com/en-us/blog/azure-security-center-adds-context-alerts-to-aid-threat-investigation/">Azure Security Center 컨텍스트 경고</a>에 대한 Ian Hellens&rsquo; 블로그는 Security Center에서 얼마나 많은 지루한 보안 조사 작업을 자동화하고 의심스러운 활동이 감지되기 직전에 Azure 머신에서 발생한 다른 작업에 대해 관련 컨텍스트가 제공되는지 설명합니다. KportScan, Masscan, XDedicIPScanner, D3vSpider 및 악성 메시징 서비스와 같은 도구는 Azure Security Center 컨텍스트 경고에 의해 검색되고 경고됩니다.</p>
+
+
+  <p>조사된 인시던트 수에서 악의적인 목적으로 합법적인 도구를 사용하는 것은 상승 추세인 것으로 보입니다. 이에 대한 대응으로 분석가, 조사자 및 개발자로 구성된 Azure Security Centers&rsquo; 팀은 이러한 유형의 손상 지표를 적극적으로 찾고 감시하고 있습니다(그 중 상당수는 일부 AV 서명에서 감지되지 않음). 현재 이 블로그에 설명된 이러한 도구를 모두 검색하고 있으며, 더 많은 도구를 Azure Security Center 검색에 추가하고 있습니다.</p>
+
+
+  <h2>권장되는 수정 및 완화 단계</h2>
+
+
+  <p>Microsoft는 사용 가능한 로그 원본, 호스트 기반 분석 및 필요한 경우 포렌식 분석을 검토하여 공격 캠페인을 조사할 것을 권장합니다. Azure &lsquo;IaaS(Infrastructure as a Service&rsquo; ) VM(가상 머신)의 경우 실행 중인 컴퓨터 및 디스크 이미징 기능에 데이터 드라이브를 연결하는 기능을 포함하여 데이터 수집을 용이하게 하기 위한 몇 가지 기능이 있습니다.</p>
+
+
+  <p>피해자 컴퓨터를 깨끗하게 확인할 수 없거나 손상의 근본 원인을 식별할 수 없는 경우 중요한 데이터를 백업하고 새 가상 머신으로 마이그레이션하는 것이 좋습니다. 또한 손상 또는 다시 감염을 방지하기 위해 가상 머신을 한 줄에 가져오기 전에 강화하는 것이 좋습니다. 그러나 이 작업을 즉시 수행할 수 없는 경우가 있다는 점을 이해하면 다음 수정 단계를 구현하는 것이 좋습니다.</p>
+
+
+  <ul>
+   <li><strong>애플리케이션 검토</strong>: 악의적으로 사용되거나 사용되지 않을 수 있는 개별 프로그램이 있는 경우 관리자 및 사용자와 함께 호스트에 있는 애플리케이션을 검토하는 것이 좋습니다. 알려진 사용자가 설치하지 않았을 수 있는 애플리케이션이 있는 것으로 확인되면 관리자가 결정한 대로 적절한 조치를 취하는 것이 좋습니다.</li>
+   <li><strong>Azure Security Center 권장 사항 검토</strong>: 가장 강화된 OS 버전에 대한 권장 규칙에 맞지 않는 OS 구성(예: 암호 저장 허용 안 함), 누락된 보안 업데이트가 있거나 맬웨어 방지 보호가 없는 컴퓨터, 노출된 엔드포인트 등을 포함하여 Security Center에서 식별된 모든 보안 취약성을 검토하고 해결합니다.</li>
+   <li><strong>Defender 검사</strong>: 잠재적인 맬웨어에 플래그를 지정할 수 있는 Microsoft Antimalware 또는 다른 솔루션을 사용하여 전체 맬웨어 방지 검사를 실행합니다.</li>
+   <li><strong>금이 간 소프트웨어 사용 방지</strong>: 금이 간 소프트웨어를 사용하면 불법 복제 소프트웨어와 관련된 맬웨어 및 기타 위협의 원치 않는 위험이 발생합니다. Microsoft는 해당 조직에서 권장하는 대로 금이 간 소프트웨어를 사용하지 않고 법적 소프트웨어 정책을 따르는 것이 좋습니다.</li>
+  </ul>
+
+
+  <p>Azure Security Center에 대한 자세한 내용은 다음을 참조하세요.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-detection-capabilities">Azure Security Center 감지 기능</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-managing-and-responding-alerts">Azure Security Center에서 보안 경고 관리 및 대응</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-recommendations">Azure Security Center에서 보안 권장 사항 관리</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-monitoring">Azure Security Center에서 보안 상태 모니터링</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-partner-solutions">Azure Security Center를 사용하여 파트너 솔루션 모니터링</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-faq">Azure Security Center FAQ</a></li>
+  </ul>
+
+
+  <p>Azure 보안 블로그를 읽어 최신 <a href="https://blogs.msdn.com/b/azuresecurity/">Azure 보안</a> 뉴스 및 정보를 가져옵니다.</p>

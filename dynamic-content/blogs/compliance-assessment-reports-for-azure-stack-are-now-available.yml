@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6c2fe6803b5426eb2e790609ef897798393529c6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911079"
+Slug: compliance-assessment-reports-for-azure-stack-are-now-available
+Title: 이제 Azure Stack에 대한 준수 평가 보고서를 사용할 수 있습니다.
+Summary: 몇 달 전, Microsoft Azure Stack에서 규정 준수 평가를 수행하고 있다고 발표했습니다. 오늘 준수 평가가 완료되고 사용할 수 있다는 것을 공유하게 되어 기쁩니다.
+Content: >-
+  <p>몇 달 전, <a href="https://azure.microsoft.com/en-us/blog/security-and-compliance-in-azure-stack/" target="_blank">Microsoft Azure Stack에서 규정 준수 평가를</a> 수행하고 있다고 발표했습니다. 오늘 준수 평가가 완료되고 사용할 수 있다는 것을 공유하게 되어 기쁩니다.</p>
+
+
+  <p>규정 준수 서류 준비는 지루한 작업이라는 것을 알고 고객을 위해 설명서를 미리 컴파일했습니다. <a href="https://azure.microsoft.com/en-us/overview/azure-stack/">Azure Stack</a>은 하드웨어 파트너를 통해 통합 시스템으로 제공되므로 모든 고객에게 적용되는 Azure Stack에 대한 공식적인 규정 준수 평가를 수행할 수 있는 고유한 위치에 있습니다. 이로 인해 고객이 규정 준수 인증 프로세스를 가속화하는 데 사용할 수 있는 미리 컴파일된 규정 준수 문서 집합이 생성되었습니다.</p>
+
+
+  <p>QSA(정규화된 보안 평가자) 및 독립 감사 회사인 Coalfire가 <a href="https://www.pcisecuritystandards.org/pci_security/">PCI-DSS</a> 및 <a href="https://cloudsecurityalliance.org/group/cloud-controls-matrix/">CSA 클라우드 제어 매트릭스</a>의 기술 컨트롤에 대해 Azure Stack 인프라를 감사하고 평가했으며 Azure Stack이 해당 컨트롤을 충족한다는 사실을 알게 되어 기쁩니다.</p>
+
+
+  <p>평가자&rsquo; 단어에서 다음을 수행합니다.</p>
+
+
+  <p>&ldquo;<i>2017년 7월부터 2017년 10월까지 검토된 Microsoft Azure Stack 통합 시스템은 PCI DSS 규격 인프라를 만들고 PCI DSS 버전 3.2를 준수하는 포괄적인 프로그램을 지원하는 데 효과적일 수 있다는 것이 Coalfires&rsquo;의 의견입니다.</i>&rdquo;</p>
+
+
+  <p>&ldquo;<i>2017년 7월부터 2017년 10월까지 검토된 OEM(Original Equipment Manufacturer) 통합 시스템 테스트에 배포된 Microsoft Azure Stack이 CSA CCM 3.0.1 규격 인프라를 만드는 데 효과적일 수 있으며 CSA CCM 버전 3.0.1을 준수하는 포괄적인 프로그램을 지원할 수 있다는 것이 Coalfires&rsquo;의 의견입니다.</i>&rdquo;</p>
+
+
+  <p>이 규정 준수 설명서에서는 Azure Stack이 Azure Stack 인프라에 적용되는 기술 컨트롤을 충족하는 방법을 설명합니다. 그러나 Azure Stack에서 실행되는 워크로드와 관련된 기술 컨트롤뿐만 아니라 사용자 및 프로세스와 관련된 컨트롤은 고객에게만 해당되므로 고객의 책임은 그대로 유지됩니다. 이 설명서를 통해 고객은 이제 PCI-DSS 또는 CSA-CCM 프레임워크에서 다루는 많은 규정 준수 표준에 대해 인증을 받는 데 필요한 모든 Azure Stack 인프라 관련 정보를 제공합니다.</p>
+
+
+  <p>Azure Stack용 PCI-DSS 및 CSA-CCM 문서는 <a href="https://aka.ms/azurestackcompliance">Microsoft 서비스 신뢰 포털</a>에서 다운로드할 수 있습니다.</p>
+
+
+  <p>규정 준수에는 Azure Stack 인프라뿐만 아니라 배포된 워크로드도 포함됩니다. 워크로드와 관련된 규정 준수의 복잡성을 줄이기 위해 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/">Azure Stack</a> 및 <a href="https://servicetrust.microsoft.com/ViewPage/Blueprint">Azure Blueprint 프로그램은</a> 고객&rsquo; 규정 준수 요구를 지원하고 회사와 고객에게 신속하게 가치를 제공할 수 있도록 턴키 규정 준수 솔루션을 제공하기 위해 함께 모입니다. 앞으로 몇 달 안에 Azure Stack용 Azure Blueprint 프로그램에 대한 자세한 내용을 공유할 예정입니다. 지켜!</p>
+
+
+  <p>Azure Stack은 고객 요구에 따라 유효성이 검사된 표준 포트폴리오를 계속 확장할 것입니다. 우선 순위를 지정하려는 규정 준수 표준에 대한 선호도를 표현하려면 이 <a href="https://aka.ms/azurestack_compliance">설문 조사를</a> 작성하세요.</p>
+
+
+  <p><a name="_msocom_1"></a></p>

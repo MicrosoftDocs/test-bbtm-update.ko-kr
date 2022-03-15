@@ -1,0 +1,59 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 28d9b01498e0627fe74d086a80fc3defef7fb5fb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911986"
+Slug: connect-devices-from-other-iot-clouds-to-azure-iot-central
+Title: 다른 IoT 클라우드에서 Azure IoT Central로 디바이스 커넥트
+Summary: 디바이스 브리지는 디바이스가 보내는 데이터를 IoT Central 앱을 통해 다른 클라우드로 전달하여 다른 IoT 클라우드를 IoT Central과 연결합니다.
+Content: >-
+  <p>이 게시물에서 새로운 Azure IoT 중앙 장치 브리지에 대해 이야기 할 수&rsquo; 있습니다. Sigfoxs&rsquo; 저전력 광역 네트워크에 연결된 자산 추적 디바이스를 사용하든, 파티클 디바이스 클라우드에서 공기 질 모니터링 디바이스를 사용하든, TTN에서 토양 수분 모니터링 디바이스를 사용하든, 이제 IoT Central 디바이스 브리지를 사용하여 IoT Central의 기능을 직접 활용할 수 있습니다. 디바이스 브리지는 디바이스가 다른 클라우드로 보내는 데이터를 IoT Central 앱으로 전달하여 Sigfox, Particle 및 Things Network와 같은 다른 IoT 클라우드를 IoT Central에 연결합니다. IoT Central 앱에서 해당 데이터에 대해 규칙을 빌드하고 분석을 실행하며, Microsoft Flow 및 Azure Logic Apps에서 워크플로를 만들고, 해당 데이터를 내보내는 등의 작업을 수행할 수 있습니다.</p>
+
+
+  <h2>정의 및 작동 방식</h2>
+
+
+  <p>IoT Central 디바이스 브리지는 <a href="https://aka.ms/iotcentralgithubdevicebridge" target="_blank">Github의 오픈 소스 솔루션</a>입니다. 여러 Azure 리소스가 있는 &ldquo;사용자 지정 ARM(Azure Resource Manager) 템플릿을 Azure&rdquo; 구독에 배포하는 Azure에 배포 단추를 사용할 준비가 된 것입니다.</p>
+
+
+  <p>리소스에는 다음이 포함됩니다.</p>
+
+
+  <ul>
+   <li>Azure 함수 앱</li>
+   <li>Azure Storage 계정</li>
+   <li>App Service 계획(S1 계층)</li>
+   <li>Azure Key Vault</li>
+  </ul>
+
+
+  <p>함수 앱은 디바이스 브리지의 중요 부분입니다. 간단한 웹후크 통합을 통해 다른 IoT 플랫폼 또는 사용자 지정 플랫폼에서 HTTP POST 요청을 받습니다. Sigfox, Particle 및 TTN 클라우드에 연결하는 방법을 보여주는 예제가 나와 있습니다. 플랫폼이 함수 앱에 HTTP POST 요청을 보낼 수 있는 경우 이 솔루션을 쉽게 확장하여 사용자 지정 IoT 클라우드에 연결할 수 있습니다.</p>
+
+
+  <p>함수 앱은 데이터를 IoT Central에서 허용하는 형식으로 변환하고 DPS API를 통해 전달합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dca651bf-7ec1-4d67-bdb4-9602d2231ee3.png"><img alt="IoT integration command code in the functions app" border="0" height="860" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f21289ea-603a-442c-b860-ba3e3cca1486.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="함수 앱의 IoT 통합 명령 코드" width="1564"></a></p>
+
+
+  <p>IoT Central 앱에서 디바이스를 전달된 메시지에 있는 디바이스 ID로 인식하는 경우 해당 디바이스에 대해 새 측정값이 표시됩니다. IoT Central 앱에서 디바이스 ID를 본 적이 없는 경우 함수 앱은 해당 디바이스 ID에 새 디바이스를 등록하려고 시도하며 IoT Central 앱에서 연결되지 않은 디바이스&rdquo;로 &ldquo;표시됩니다.</p>
+
+
+  <h2>설정하려면 어떻게 해야 하나요?</h2>
+
+
+  <p>지침은 <a href="https://aka.ms/iotcentralgithubdevicebridge" target="_blank">Github 리포지토리</a>의 추가 정보 파일에 있는 자세한 목록에 있습니다<a>.</a></p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>IoT Central 디바이스 브리지를 사용하는 것은 다른 IoT 클라우드에서 IoT Central 앱으로 메시지를 전달하는 간단하고 사용자 지정 가능한 방법입니다. 이를 사용하여 이미 연결된 디바이스가 있을 수 있는 기존 IoT 솔루션으로 IoT Central의 이점을 빠르게 활용할 수 있습니다. 오픈 소스 코드는 이 <a href="https://aka.ms/iotcentralgithubdevicebridge" target="_blank">Github 리포지토리</a>에서 찾을 수 있습니다. 피드백 또는 질문이 있으신가요? 에 우리를 <a href="mailto:iotcfeedback@microsoft.com" target="_blank">iotcfeedback@microsoft.com</a>쓰는 것을 주저하지 마십시오&rsquo;.</p>
+
+
+  <p>전체 기능 집합을 살펴보려면 무료 평가판을 시작하고 IoT Central 웹 사이트에서 자세히 알아보세요. 첫 번째 디바이스를 연결하는 자습서를 포함하여 설명서를 확인하세요.</p>
+
+
+  <p>최신 뉴스를 포함한 Azure IoT 포트폴리오에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/overview/iot/" target="_blank">Microsoft Azure IoT 페이지를 방문하세요.</a></p>

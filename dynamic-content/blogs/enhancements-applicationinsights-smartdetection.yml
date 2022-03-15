@@ -1,0 +1,49 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 163c5844eca420df56a94534d0b9376fa4aa6f0c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911894"
+Slug: enhancements-applicationinsights-smartdetection
+Title: 애플리케이션 Insights 스마트 검색의 향상된 기능
+Summary: >-
+  종속성 성능 저하 감지
+
+
+  스마트 검색 및 프로파일러 통합
+Content: >-
+  <p>Were&rsquo; happy는 애플리케이션 Insights <a href="https://docs.microsoft.com/azure/application-insights/app-insights-proactive-performance-diagnostics">스마트 검색</a>에 두 가지 향상된 기능을 도입하여 라이브 웹앱에 성능 문제가 표시되는지 자동으로 알 수 있습니다. 이제 라이브 웹앱 종속성이 느려지는 경우(예: 앱이 호출하는 데이터베이스 또는 REST API) 자동 알림이 표시됩니다. 또한 스마트 검색 세부 정보에서 문제가 발생한 작업의 <a href="https://docs.microsoft.com/azure/application-insights/app-insights-profiler">프로파일러 </a>추적까지 클릭할 수 있습니다.</p>
+
+
+  <h2>종속성 기간의 성능 저하 스마트 검색</h2>
+
+
+  <p>이제 스마트 검색은 <a href="https://docs.microsoft.com/azure/application-insights/app-insights-asp-net-dependencies">종속성 호출</a> 기간 동안의 성능 저하를 감지합니다. 웹 애플리케이션 및 최신 서비스는 일반적으로 외부 서비스 및 플랫폼을 사용하여 주요 시나리오를 구동하는 경우가 많습니다. 이러한 애플리케이션 종속성 호출의 경우 기간은 전체 애플리케이션 성능의 핵심 요소입니다. 스마트 검색은 기록 성능에 비해 종속성 기간의 변경 내용을 자동으로 알립니다. 모든 종속성 호출 형식에 대해 지원합니다. <a href="https://docs.microsoft.com/en-us/azure/application-insights/app-insights-proactive-performance-diagnostics#dependency-duration-degradation">여기를 참조하세요</a>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/299360ed-a4f8-488e-bd30-f7f6b5d6172d.png"><img alt="DependencyDurationDegradation-blog%20resolution" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/495779ab-3ca9-4a1a-a3a6-16008ac71ceb.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="DependencyDurationDegradation-blog%20resolution" width="416"></a></p>
+
+
+  <p>또한 <a href="https://docs.microsoft.com/azure/application-insights/app-insights-proactive-performance-diagnostics#server-response-time-degradation">서버 응답 시간 성능 저하 검색</a>에 종속성 기간 분석을 추가했습니다. 따라서 작업 성능 저하가 관련 종속 서비스 성능의 저하와 상관 관계가 있는 경우 이 정보는 검색 분석 섹션에 포함됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7f6672b9-7158-4f5c-9756-aea687448a76.png"><img alt="Server response time degradation" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a5f2d73a-caf0-4164-8dfd-f0b1adbf2369.png" style="border: 0px currentColor; border-image: none; width: 423px; height: 528px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="서버 응답 시간 저하" width="516"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>스마트 검색 및 프로파일러 통합</h2>
+
+
+  <p>또 다른 새로운 향상된 기능은 스마트 검색과 <a href="https://docs.microsoft.com/azure/application-insights/app-insights-profiler">프로파일러</a> 간의 통합입니다. 경우에 따라 근본 원인을 찾는 가장 빠른 방법은 특정 작업을 실행할 때 소요된 시간을 보여 주는 Profiler에서 수집한 추적 예제를 검토하는 것입니다. 이제 스마트 검색 세부 정보 블레이드에서 링크를 클릭하여 관련 프로파일러 예제를 볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/63f63ec7-e2c0-496f-b6aa-bae71293902c.png"><img alt="Smart detection profiler integrations" border="0" height="401" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/36e8aa44-8f49-4401-a024-94634c1173e5.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="스마트 검색 프로파일러 통합" width="764"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>참고: 프로파일러 예제를 보는 링크는 검색 기간 동안 이 작업에 대한 예제가 수집된 경우에만 표시됩니다.</p>

@@ -1,0 +1,41 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b3bae0d08deb4964101445fade1ac4e456fdde7d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905412"
+Slug: microsoft-container-registry-unaffected-by-the-recent-docker-hub-data-exposure
+Title: 최근 Docker Hub 데이터 노출의 영향을 받지 않는 Microsoft 컨테이너 레지스트리
+Summary: Docker는 최근 Docker Hub가 Docker Hub 데이터베이스에 무단으로 액세스할 수 있도록 하는 짧은 보안 노출을 통해 자동화된 빌드에 대한 190k Hub 계정 및 관련 GitHub 토큰을 노출했다고 발표했습니다. 초기 정보는 계정의 해시로 인해 image:tags가 공식 및 Microsoft/조직 이미지를 포함한 취약성으로 업데이트될 수 있다고 믿게 되었지만, 그렇지 않았습니다. Microsoft는 Docker 허브에서 호스팅되는 공식 Microsoft 이미지가 손상되지 않은 것을 확인했습니다.
+Content: >-
+  <p>Docker는 최근 <a href="https://success.docker.com/article/docker-hub-user-notification">Docker Hub가 Docker Hub</a> 데이터베이스에 무단으로 액세스할 수 있도록 하는 짧은 보안 노출을 통해 자동화된 빌드에 대한 190k Hub 계정 및 관련 GitHub 토큰을 노출했다고 발표했습니다. 초기 정보는 계정의 해시로 인해 image:tags가 공식 및 <a href="https://hub.docker.com/u/microsoft">Microsoft/</a> 조직 이미지를 포함한 취약성으로 업데이트될 수 있다고 믿게 되었지만, 그렇지 않았습니다.&nbsp; Microsoft는 Docker 허브에서 호스팅되는 공식 Microsoft 이미지가 손상되지 않은 것을 확인했습니다.</p>
+
+
+  <h2>Microsoft Container Registry Microsoft 이미지 사용(MCR)</h2>
+
+
+  <p>클라우드 및 소프트웨어 회사로서 <a href="https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/">Microsoft는 공식 Microsoft 이미지를 Docker 허브에서 제공하는 것에서</a> 2018년 5월부터 Microsoft에서 직접 제공하는 것으로 전환하고 있습니다. 기존 고객을 중단하지 않도록 하기 위해 이전에 Docker Hub에서 사용할 수 있었던 image:tags를 계속 사용할 수 있습니다. 그러나 최신 Microsoft 이미지 및 태그는 mcr.microsoft.com Microsoft Container Registry(MCR)에서 직접 사용할 수 있습니다. 이미지의 검색 및 검색 기능은 <a href="https://hub.docker.com/u/microsoft">Docker Hub</a>를 통해 사용할 수 있지만 docker pull, run 및 build 문은 mcr.microsoft.com 참조해야 합니다. 예를 들어 <a href="https://hub.docker.com/_/microsoft-windows-servercore">windows-servercore</a> 이미지를 끌어온 다음을 수행합니다.<br>
+
+  <code>docker pull mcr.microsoft.com/windows/servercore</code></p>
+
+
+  <p>공식 <a href="https://hub.docker.com/u/microsoft">microsoft/</a> 조직 이미지는 동일한 형식을 따릅니다.</p>
+
+
+  <p>Microsoft는 mcr.microsoft.com Microsoft 공식 이미지를 끌어당기는 것이 좋습니다.</p>
+
+
+  <h2>권장 모범 사례</h2>
+
+
+  <p>Docker Hub 및 Microsoft의 커뮤니티 및 공식 이미지를 활용하는 것은 오늘날&rsquo; 클라우드 네이티브 개발의 중요한 부분입니다. 동시에 이러한 공용 이미지와 프로덕션 워크로드 간에 버퍼를 만드는 것이&rsquo; 항상 중요합니다. 이러한 버퍼는 가용성, 성능, 안정성 및 취약성의 위험을 고려합니다. 사용하는 클라우드 또는 온-프레미스에서 작업하는 경우 프로덕션 이미지를 프라이빗 레지스트리로 가져오는 것이 이미지 끌어오기의 인증, 가용성, 안정성 및 성능을 제어하는 모범 사례입니다. 자세한 내용은 <a href="https://stevelasker.blog/2018/11/14/choosing-a-docker-container-registry/">Docker Container Registry 선택을 참조하세요</a>.</p>
+
+
+  <h2>자동화된 컨테이너 빌드</h2>
+
+
+  <p>이미지에 프라이빗 레지스트리를 사용하는 것 외에도 회사 통합 인증을 통합하는 클라우드 컨테이너 빌드 시스템을 사용하는 것이 좋습니다. 예를 들어 Azure는 OS &amp; <a href="https://azure.microsoft.com/en-us/services/devops/pipelines/">.NET Framework</a> 패치를 포함하여 컨테이너 빌드를 자동화하기 위한 Azure Pipelines 및 <a href="https://aka.ms/acr/tasks">ACR 작업을</a> 제공합니다. 또한 ACR은 Docker 허브 및 기타 레지스트리에서 이미지를 가져오기 위한 <a href="https://aka.ms/acr/import">az acr import</a>를 제공하여 이 버퍼를 사용하도록 설정합니다.</p>
+
+
+  <p>Microsoft는 소프트웨어 및 워크로드의 보안 및 안정성을 위해 최선을 다하고 있습니다.</p>

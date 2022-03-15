@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 652330dd7a8034bd0eb63d547e02fceaf8724672
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911003"
+Slug: incrementally-copy-new-files-by-lastmodifieddate-with-azure-data-factory
+Title: Azure Data Factory를 사용하여 LastModifiedDate로 새 파일을 증분 복사
+Summary: ADF(Azure Data Factory)는 Azure의 분석 워크로드를 위한 완전 관리형 데이터 통합 서비스입니다.
+Content: >-
+  <p style="margin: 0px 0px 10.66px;">ADF(<a href="https://docs.microsoft.com/en-us/azure/data-factory/" target="_blank">Azure Data Factory</a>)는 Azure의 분석 워크로드를 위한 완전 관리형 데이터 통합 서비스입니다. ADF를 사용하면 사용자는 온-프레미스 및 클라우드의 <a href="https://docs.microsoft.com/en-us/azure/data-factory/copy-activity-overview#supported-data-stores-and-formats" target="_blank">80개 이상의 데이터 원본</a> 에서 레이크를 로드하고, <a href="https://docs.microsoft.com/en-us/azure/data-factory/transform-data" target="_blank">다양한 변환 활동을</a> 사용하여 Azure 분석 엔진을 사용하여 데이터를 준비, 정리 및 처리하는 동시에, 혁신적인 분석 및 인사이트를 얻기 위해 큐레이팅된 데이터를 데이터 웨어하우스에 끌어들일 수 있습니다.</p>
+
+
+  <p style="margin: 0px 0px 10.66px;">종단 간 데이터 통합 흐름을 빌드하기 시작할 때 첫 번째 과제는 다른 데이터 저장소에서 데이터를 추출하는 것입니다. 이 단계에서는 초기 전체 로드 후 데이터를 증분(또는 델타) 로드하는 것이 널리 사용됩니다. 이제 ADF는 파일 기반 저장소에서 <strong>LastModifiedDate</strong> 에 의해서만 새 파일 또는 변경된 파일을 증분 방식으로 복사할 수 있는 새로운 기능을 제공합니다. 이 새로운 기능을 사용하면 시간 기반 폴더 또는 파일 이름으로 데이터를 분할할 필요가 없습니다. 새 파일 또는 변경된 파일은 해당 메타데이터<strong> LastModifiedDate</strong> 에 의해 자동으로 선택되고 대상 저장소에 복사됩니다.</p>
+
+
+  <p style="margin: 0px 0px 10.66px;">이 기능은 <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage" target="_blank">Azure Blob Storage</a>, <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-store" target="_blank">Azure Data Lake Storage Gen1, Azure Data Lake Storage Gen2</a>, <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-amazon-simple-storage-service" target="_blank">Amazon S3</a>, <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-file-system" target="_blank">파일 시스템</a>, <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-sftp" target="_blank">SFTP</a> 및 <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-hdfs">HDFS</a>에서 데이터를 로드할 때 사용할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-data-lake-storage" target="_blank"></a></p>
+
+
+  <p style="margin: 0px 0px 10.66px;">이 기능에 대한 리소스는 다음과 같습니다.</p>
+
+
+  <p style="margin: 0px 0px 10.66px;">1.데이터 복사 도구를 &rdquo; 사용하여 Azure Blob Storage에서 Azure Blob Storage로의 <a href="https://docs.microsoft.com/en-us/azure/data-factory/tutorial-incremental-copy-lastmodified-copy-data-tool" target="_blank">LastModifiedDate에 따라 새 파일과 변경된 파일을</a> 증분 방식으로 복사하여 첫 번째 파이프라인을 가져오는 데 도움이 되는 <strong>LastModifiedDate</strong> 기반의 새 파일과 변경된 파일을 증분 방식으로 복사하는 자습서 &ldquo; 를 참조하세요.</p>
+
+
+  <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10.66px;"><img alt="" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/copy%20wizard-3.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" width="750"></p>
+
+
+  <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10.66px;">2.또한 템플릿 갤러리에서 템플릿을 활용하고, &ldquo;<a href="https://docs.microsoft.com/en-us/azure/data-factory/solution-template-copy-new-files-lastmodifieddate" target="_blank">Azure Data Factory를 사용하여 LastModifiedDate로 새 파일 및 변경된 파일을 복사</a>하여 솔루션에 대한 시간을 늘리고 <strong>LastModifiedDate</strong>에 따라 새 파일과 변경된 파일을 증분 방식으로 복사하는 기능으로 파이프라인을 빌드할 수 있는 충분한 유연성을 제공할 수 &rdquo; 있습니다.</p>
+
+
+  <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10.66px;"><img alt="" height="466" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Solution_Template.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" width="640">3. ADF UI에서 해당 기능을 가져오기 위해 처음부터 시작할 수도 있습니다.</p>
+
+
+  <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10.66px;"><img alt="" height="439" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/UI-1.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" width="640"></p>
+
+
+  <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10.66px;">4. ADF SDK에서 해당 기능을 가져오는 코드를 작성할 수 있습니다.</p>
+
+
+  <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10.66px;"><img alt="" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/SDK.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" width="627"></p>
+
+
+  <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 10.66px;">이러한 추가 기능을 사용해 보고 피드백을 제공하는 것이 좋습니다. 시나리오에서 도움이 되기를 바랍니다. <a href="https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureDataFactory" target="_blank">Azure Data Factory 포럼</a>에 질문을 게시하거나 <a href="https://feedback.azure.com/forums/270578-data-factory" target="_blank">Data Factory 피드백 사이트에서</a> 의견을 공유하세요.</p>

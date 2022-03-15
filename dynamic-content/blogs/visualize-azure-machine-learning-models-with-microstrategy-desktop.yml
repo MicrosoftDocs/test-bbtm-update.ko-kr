@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 86f1c6dcd35d2861cb321fd15f7a6f4b778abe72
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912306"
+Slug: visualize-azure-machine-learning-models-with-microstrategy-desktop
+Title: MicroStrategy Desktop™을 사용하여 Azure Machine Learning 모델 시각화
+Summary: 이 블로그에서 참조하는 워크샵은 MicroStrategy를 사용하여 효과적으로 대시보드를 작성하고 약 1시간 안에 모든 작업을 수행하는 동안 비행 예측을 수행하는 Azure Machine Learning 모델을 실제로 만드는 방법을 보여줍니다.
+Content: >-
+  <p>&nbsp;&nbsp; <img alt="3 tools Working Seamlessly together" border="0" height="301" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c08fab1b-3bb3-4b1f-bf4f-f01d87dbbda0.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="원활" width="360"></p>
+
+
+  <p>작업에서 기계 학습을 어떻게 사용할 수 있는지 궁금한 적이 있나요?</p>
+
+
+  <p>간단한 물류 또는 복잡성으로 인해 이러한 유형의 고급 기술을 사용할 수 없다고&rsquo; 쉽게 가정할 수 있습니다. 사실 기계 학습은 그 어느 때보다 &ndash; 접근성이 높으며 사용하기도 쉽습니다.</p>
+
+
+  <p>Microsoft와 MicroStrategy를 함께 사용하면 사용자가 셀프 서비스 분석을 통해 강력한 클라우드 기반 기계 학습 애플리케이션을 만들 수 있습니다. Microsoft Azure ML 결합된 MicroStrategy Desktop&trade;은 끌어서 놓기 인터페이스를 사용하여 사용자가 예측 대시보드에서 인사이트를 효율적으로 계획, 생성 및 수집할 수 있도록 합니다.</p>
+
+
+  <p>4월 18일부터 20일까지 워싱턴 DC의 <a href="https://events.microstrategy.com/events/microstrategy-world-2017/event-summary-476428e7820e403d88530fc9e79b5fd7.aspx?lang=en&amp;sms=7&amp;cn=lhHQe_NkHUy38qNmouOpAA">MicroStrategy World</a> 에서 Microsoft는 실습 워크샵을 사용하여 사용자가 1시간 이내에 기계 학습을 기반으로 하는 완전한 기능의 예측 데이터 시각화로 이동하는 방법을 보여줍니다. Well&rsquo; 사용 세 가지 도구는 Microsoft R Open, Azure Machine Learning 및 MicroStrategy 10 Desktop입니다.</p>
+
+
+  <p>우리는 세션에 참석하고 직접 행동에 볼 당신을 초대합니다. <a href="https://events.microstrategy.com/events/microstrategy-world-2017/event-summary-476428e7820e403d88530fc9e79b5fd7.aspx?lang=en&amp;sms=7&amp;cn=lhHQe_NkHUy38qNmouOpAA">MicroStrategy World</a>로 여행을 할 수&rsquo; 없는 경우 대상 그룹과 함께 검토하는&rsquo; <a href="https://github.com/bethz/AzureML-FlightPrediction/blob/master/MicroStrategy/2017MSTRWorldAMLWorkshop.pdf">단계별 가이드</a>를 확인하세요.</p>
+
+
+  <p>작업에서 Machine Learning 사용하기 쉬운 방법처럼 들립니다. &rsquo;한 시간 안에 시작하고 실행하는 데 필요한 세 가지 도구에 대한 자세한 정보를 제공합니다.</p>
+
+
+  <h2>Microsoft R Open</h2>
+
+
+  <p>이전에 RRO(Revolution R Open)로 알려진 Microsoft R Open은 Microsoft Corporation의 향상된 R 배포입니다. 통계 분석 및 데이터 과학을 위한 완벽한 오픈 소스 플랫폼입니다. 현재 버전인 Microsoft R Open 3.3.2는 세계에서 가장 널리 사용되는 통계 소프트웨어인 R-3.3.2를 기반으로 하며, 따라서 해당 버전의 R에서 작동하는 모든 패키지, 스크립트 및 애플리케이션과 완벽하게 호환됩니다. 여기에는 향상된 성능, 재현성을 위한 추가 기능뿐만 아니라 Windows 및 Linux 기반 플랫폼에 대한 지원이 포함됩니다.</p>
+
+
+  <p>R과 마찬가지로 Microsoft R Open은 오픈 소스이며 무료로 다운로드, 사용 및 공유할 수 있습니다. 에서 사용할 수 있습니다 <a href="https://mran.microsoft.com/open/">https://mran.microsoft.com/open/</a> .</p>
+
+
+  <h2>Azure Machine Learning</h2>
+
+
+  <p>데이터는 특히 많은 비밀을 보유할 수 있습니다. 무언가에 대한 많은 데이터를 사용하여 해당 데이터를 지능적인 방법으로 검사하여 패턴을 찾을 수 있습니다. 일반적으로 너무 복잡하여 자신을 감지할 수 없는 패턴은 문제를 해결하는 방법을 알려줄 수 있습니다.</p>
+
+
+  <p>이것이 바로 기계 학습에서 수행하는 작업입니다. 패턴을 찾는 대량의 데이터를 검사한 다음, 새 데이터에서 이러한 패턴을 인식할 수 있는 코드를 생성합니다. 애플리케이션은 이 생성된 코드를 사용하여 더 나은 예측을 수행할 수 있습니다. 즉, 기계 학습은 더 스마트한 애플리케이션을 만드는 데 도움이 될 수 있습니다. Azure Machine Learning 사용하면 강력한 클라우드 기반 기계 학습 애플리케이션을 빌드할 수 있습니다.</p>
+
+
+  <h2>MicroStrategy Desktop</h2>
+
+
+  <p>Enterprise 조직은 MicroStrategy Desktop을 사용하여 가장 어려운 비즈니스 질문에 답합니다.</p>
+
+
+  <p>Mac 및 PC에서 사용할 수 있는 MicroStrategy Desktop은 사용자가 직접 데이터에 액세스하고 대시보드를 빌드할 수 있는 강력한 데이터 검색 도구입니다. MicroStrategy Desktop을 사용하면 사용자는 개인 스프레드시트에서 관계형 데이터베이스 및 Hadoop과 같은 빅 데이터 원본에 이르기까지 70개가 넘는 데이터 원본에 액세스할 수 있습니다. 기본 제공 데이터 랭글링을 사용하여 데이터 세트를 준비, 혼합 및 프로파일링하는 기능을 통해 사용자는 단일 인터페이스에서 몇 분 안에 데이터에서 대시보드로 갈 수 있습니다. MicroStrategy Desktop을 사용하면 부서 사용자가 수백 개의 차트 및 그래프 옵션으로 정보를 시각화하여 스스로 결정을 내릴 수 있습니다.</p>
+
+
+  <p>MicroStrategy World에 참여하거나 직접 워크샵을 시도해 보세요.</p>

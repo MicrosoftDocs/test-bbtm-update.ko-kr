@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1135144c48696d671c73e07ed6b2f4a105fcd3bc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911688"
+Slug: microsoft-named-a-leader-in-forrester-wave-functionasaservice-platforms
+Title: 'Microsoft는 Forrester Wave: Function-as-a-Service 플랫폼의 리더로 선정되었습니다.'
+Summary: 장기 실행 워크플로, 사람이 승인한 프로세스 및 전자 상거래 쇼핑 카트 애플리케이션과 같이 상태 저장이 필요한 서버리스의 몇 가지 사용 사례가 있습니다. 서버리스 함수에 상태 저장 및 오케스트레이션 기능을 제공하는 Azure Functions 런타임에 대한 확장인 Durable Functions입니다. Durable Functions는 서버리스 공간에 단독으로 있으므로 상태 저장 함수와 서버리스 워크플로를 프로그래밍 방식으로 정의하는 방법을 제공합니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/93129eec-f81c-4915-a5ad-eca09a17e37e.png"><img alt="2021Q1_Function-As-A-Service-Platforms_161673_hi-res" border="0" height="259" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/963b247c-c1ef-4c66-af26-6e77621d8b30.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="2021Q1_Function-as-A-Service-Platforms_161673_hi-res" width="259"></a></p>
+
+
+  <p>Forrester는 개발자 경험 게임 및 상태 저장 기능 향상에 대한 인식과 함께<a href="https://azure.microsoft.com/en-us/services/functions/" target="_blank">Azure Functions</a>의 평가를 기반으로 2021년 1분기 포레스터 웨이브&trade;: Function-As-A-Service 플랫폼의&nbsp; 리더로 Microsoft를 선정했습니다.</p>
+
+
+  <h2>개발 환경</h2>
+
+
+  <p>Azure Functions는 다른 Azure 서비스 및 개발 도구와 완전히 통합됩니다. 엔드투엔드 개발 환경을 통해 주요 플랫폼(Windows, macOS 및 Linux)에서 로컬로 함수를 빌드하고 디버그할 수 있으며 클라우드에서 함수를 배포하고 모니터링할 수 있습니다. C#, Node.js, Python, JavaScript, Java 및 PowerShell과 같은 다양한 프로그래밍 언어를 사용하여 함수를 빌드할 수 있습니다.</p>
+
+
+  <p>보고서에서 Forrester는 온보딩, 개발자 도구 지원 및 로컬 머신의 &ldquo;개발 및 디버깅 지원에 대한 Azure Functions 투자를 인식했습니다.&rdquo;</p>
+
+
+  <h2>서버리스 컴퓨팅 환경의 상태 저장 워크로드</h2>
+
+
+  <p>장기 실행 워크플로, 사람이 승인한 프로세스 및 전자 상거래 쇼핑 카트 애플리케이션과 같이 상태 저장&mdash;이 필요한 서버리스의 몇 가지 사용 사례가 있습니다. 서버리스 함수에 상태 저장 및 오케스트레이션 기능을 제공하는 Azure Functions 런타임에 대한 확장인 <a href="https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=csharp" target="_blank">Durable</a> Functions입니다. Durable Functions는 서버리스 공간에 단독으로 있으므로 상태 저장 함수와 서버리스 워크플로를 프로그래밍 방식으로 정의하는 방법을 제공합니다.</p>
+
+
+  <p>Forrester는 특히 보고서에서 Durable Functions가 &ldquo;Azure Event Hub에 상태 저장 기능 및 바인딩을 제공하고, Azure Event Grid는 개발자가 이벤트 기반 마이크로 서비스를 빌드하는 데 도움이 된다고 언급했습니다.&rdquo;</p>
+
+
+  <h2>Enterprise 등급 FaaS 플랫폼</h2>
+
+
+  <p>Enterprise 고객은 이벤트 기반 아키텍처가 애플리케이션 개발에 가져오는 생산성과 민첩성을 찾고 있습니다. Azure Functions를 사용하면 컨테이너를 사용하여 자체 인프라 또는 Kubernetes 클러스터와 같은 다른 환경에 배포하여 원활한 하이브리드 배포를 사용할 수 있습니다.</p>
+
+
+  <p>Azure Functions는 데이터를 끌어 오거나 다른 서버리스 서비스에 데이터를 푸시하는 수단을 제공하는 입력 및 출력 바인딩을 제공합니다. Forrester는 Azure Event Hub 및 Azure Event Grid에 대한 바인딩은 개발자가 &ldquo;이벤트 기반 마이크로 서비스를 빌드하는 데 도움이 된다고 지적했습니다.&rdquo;</p>
+
+
+  <p>Azure Functions는 Azure Application Insights 및 Azure Monitor와의 기본 제공 통합을 제공하므로 문제를 쉽게 진단하고 함수 사용 방법을 더 잘 이해할 수 있습니다.</p>
+
+
+  <h2>고객 모멘텀</h2>
+
+
+  <p><a href="https://customers.microsoft.com/en-us/story/854432-mitsubishi-electric-corporation-manufacturing-azure-en" target="_blank">미쓰비시 일렉트릭</a>, <a href="https://customers.microsoft.com/en-us/story/1350589317331631326-east-west-bank-builds-a-modern-platform-on-azure-to-win-new-mobile-customers" target="_blank">이스트 웨스트 뱅크</a>, <a href="https://customers.microsoft.com/en-us/story/855518-blackmores-group-consumer-goods-azure" target="_blank">블랙모어스 그룹과</a> 같은 고객이 이벤트 기반 아키텍처에서 Functions를 사용하는 방법을 알아봅니다. Azure Functions를 이상적인 FaaS 플랫폼으로 만들기 위해 최선을 다하고 있으며, 이러한 인식은 여정의 중요한 시점에 있습니다.</p>
+
+
+  <p>전체 <a href="https://reprints2.forrester.com/#/assets/2/108/RES161673/report" target="_blank">Forrester 보고서를</a> 읽고 오늘 <a href="https://azure.com/functions" target="_blank">Azure Functions</a> 를 시작하세요.</p>
+
+
+  <p>피드백이나 질문이 있는 경우 <a href="https://stackoverflow.com/questions/tagged/azure-functions" target="_blank">GitHub,StackOverflow</a> 또는 <a href="https://feedback.azure.com/forums/355860-azure-functions" target="_blank">UserVoice</a>에 문의하세요. <a href="https://github.com/Azure/Azure-Functions" target="_blank"></a></p>

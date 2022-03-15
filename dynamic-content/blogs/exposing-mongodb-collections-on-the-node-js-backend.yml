@@ -1,0 +1,476 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7671ab70361247a5b27ed25f197ecc53355c8fec
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911326"
+Slug: exposing-mongodb-collections-on-the-node-js-backend
+Title: node.js 백 엔드에 MongoDB 컬렉션 노출
+Summary: .NET 백 엔드와 달리 Azure Mobile Services node.js 백 엔드에는 MongoDB 컬렉션에 대한 기본 지원이 없습니다. 그러나 테이블 스크립트를 사용하여 node.js 모바일 서비스에서 구현할 수 있습니다. 이 게시물에서는 Mongo 데이터베이스에서 모바일 서비스에 CRUD 작업에 대한 기본 지원을 추가하는 방법을 보여 줍니다.
+Content: >-
+  .NET 백 엔드를 릴리스했을 때 다양한 종류의 스토리지 계층(SQL(Entity Framework를 통해), Azure Table Storage 및 MongoDB에 대한 기본 지원이 제공되었습니다. node.js 백 엔드는 항상 SQL Azure 지원하며, Azure Table Storage 모바일 서비스 클라이언트에 노출하는 방법을 설명하는 <a href="https://chrisrisner.com/Mobile-Services-and-Windows-Azure-Storage">몇 가지</a> <a href="https://blogs.msdn.com/b/paolos/archive/2013/04/09/how-to-use-windows-azure-table-storage-in-windows-azure-mobile-services.aspx">게시물을</a> 보았습니다. <a href="https://blogs.msdn.com/b/azuremobile/archive/2014/04/14/creating-mongodb-backed-tables-in-azure-mobile-services-with-net-backend.aspx">.NET 백 엔드에서 MongoDB를 사용하는</a> 방법에 대해 이미 작성했으므로 이 게시물은 루프를 닫기 시작하고 node.js 지원되는 Azure Mobile Service에서 MongoDB 컬렉션을 "테이블"로 노출하는 방법에 대해 설명합니다.
+
+
+  이 게시물에서 사용할 방법은 노드 백 엔드에서 "가상" 테이블을 만드는 것입니다. 먼저 테이블을 만든 다음( <a href="https://manage.windowsazure.com">Azure Portal</a> 을 통해 또는 <a href="https://azure.microsoft.com/en-us/documentation/articles/xplat-cli/">명령줄 인터페이스</a>를 통해) CRUD(만들기/읽기/업데이트/삭제) 스크립트를 업데이트하여 모든 요청을 MongoDB 컬렉션으로 리디렉션합니다. 이 게시물에서는 삽입/업데이트/삭제 작업과 간단한 읽기(단일 항목 조회 또는 모든 항목 읽기)를 구현합니다. 이 항목의 다음 게시물에서는 전체 읽기 작업을 구현하는 데 필요한 단계를 살펴보겠습니다.
+
+  <h2>데이터베이스 설정</h2>
+
+  이러한 지침은 <a href="https://blogs.msdn.com/b/azuremobile/archive/2014/04/14/creating-mongodb-backed-tables-in-azure-mobile-services-with-net-backend.aspx">.NET 백 엔드에 대한 게시물</a>과 정확히 동일하지만 이 게시물을 자체 포함할 수 있도록 여기에 복사합니다. 일부 컬렉션이 생성된 MongoDB 계정이 이미 있는 경우 이 단계를 건너뛸 수 있습니다(연결 문자열을 기록해 두면 나중에 필요합니다). 또한 이 게시물에서 "orders"라는 컬렉션을 사용합니다. 이 컬렉션은 만들 필요가 없으며 백 엔드가 없으면 해당 컬렉션을 만듭니다.
+
+
+  처음부터 시작하는 경우 이 게시물의 경우 Azure Portal에서 무료로(샌드박스, 개발자 버전용) 받을 수 있는 Mongo Labs 데이터베이스를 사용합니다. 계정을 만들려면 Azure Portal로 이동하여 "새로 만들기" -&gt; "스토어"를 선택하고 MongoLab 추가 기능을 선택하여 계정에 등록할 수 있습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1902/2630.001_2D00_CreateMongoDB_5F00_63FDC00F.png"><img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="001-CreateMongoDB" alt="001-CreateMongoDB" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1902/5367.001_2D00_CreateMongoDB_5F00_thumb_5F00_6AB0C992.png" width="610" height="399" border="0"></a>
+
+
+  계정이 설정되면 "연결 정보" 단추를 클릭하여 URI를 복사하여 데이터베이스에 연결하고 해당 값을 저장합니다. 계정에 지정한 이름은 나중에 사용할 데이터베이스의 이름입니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1902/8400.002_2D00_MongoConnectionInfo_5F00_4A95BCD5.png"><img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="002-MongoConnectionInfo" alt="002-MongoConnectionInfo" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1902/8004.002_2D00_MongoConnectionInfo_5F00_thumb_5F00_3F6C328B.png" width="360" height="175" border="0"></a>
+
+
+  이제 Mongo 데이터베이스가 설정되었습니다. 컬렉션을 만들 필요가 없습니다. 백 엔드를 통해 처음 액세스하려고 하면 컬렉션이 만들어집니다.
+
+  <h2>서비스 설정</h2>
+
+  아직 사용하지 않은 경우 이 예제에서 사용할 새 모바일 서비스를 만듭니다. 포털에서 "orders"라는 테이블을 만들고 해당 테이블의 스크립트를 사용하여 클라이언트의 요청을 Mongo 데이터베이스로 릴레이합니다. 마지막으로 포털의 "구성" 탭으로 이동하여 이전 섹션에서 가져온 연결 문자열을 저장하는 데 사용할 새 앱 설정("MongoConnectionString"이라고 함)을 추가합니다. 여러 사람이 코드(개발자)에 액세스할 수 있지만 서비스 자체의 관리자만 프로덕션 포털에 액세스할 수 있기 때문에 연결 문자열(및 기타 비밀)을 코드에 직접 저장하는 대신 애플리케이션 설정으로 저장하는 것이 좋습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1902/2146.003_2D00_ConnectionStringAsAppSetting_5F00_1F5125CE.png"><img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="003-ConnectionStringAsAppSetting" alt="003-ConnectionStringAsAppSetting" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1902/1641.003_2D00_ConnectionStringAsAppSetting_5F00_thumb_5F00_5148C658.png" width="610" height="96" border="0"></a>
+
+  <h3>MongoDB SDK 가져오기</h3>
+
+  Mongo DB(적절하게 <a href="https://www.npmjs.org/package/mongodb">mongodb</a>라고 함)와 통신할 수 있는 node.js 패키지가 있으며 이 게시물에서 사용할 것입니다. 사용자 지정 노드 패키지를 사용하려면 에 <a title="https://azure.microsoft.com/en-us/documentation/articles/mobile-services-store-scripts-source-control/https://azure.microsoft.com/en-us/documentation/articles/mobile-services-store-scripts-source-control/" href="https://azure.microsoft.com/en-us/documentation/articles/mobile-services-store-scripts-source-control/"></a>설명된 대로 소스 제어를 사용하도록 설정해야 합니다. 서비스에 이미 이 기능이 활성화되어 있는 것일 수 있습니다(새로 만든 서비스의 기본값임). 완료되면 서비스 리포지토리를 로컬로 복제합니다.
+
+  <pre class="prettyprint">C:\temp\blog\MongoDbFromNodeBackend&gt;git clone https://blog20140618.scm.azure-mobile.net/blog20140618.git
+
+  Cloning into 'blog20140618'...
+
+  Username for 'https://blog20140618.scm.azure-mobile.net': carlosfigueira
+
+  Password for 'https://carlosfigueira@blog20140618.scm.azure-mobile.net':
+
+  remote: Counting objects: 92, done.
+
+  remote: Compressing objects: 100% (84/84), done.
+
+  remote: Total 92 (delta 38), reused 0 (delta 0)
+
+  Unpacking objects: 100% (92/92), done.</pre>
+
+  완료되면 리포지토리의 서비스 폴더로 이동하여 npm을 사용하여 서비스에 mongodb 모듈을 설치할 수 있습니다(아직 수행하지 않은 경우 <a href="https://nodejs.org/">웹 사이트를</a> 방문하여 수행할 수 있는 node.js 설치해야 함). 이 <a href="https://blogs.msdn.com/b/azuremobile/archive/2014/01/20/support-for-package-json-in-azure-mobile-services.aspx">블로그 게시물</a>에서 설명한 대로 "--save" 옵션을 사용하여 packages.json 파일에 모듈을 추가할 수 있습니다. 그 후에는 리포지토리의 패키지 파일을 "git-ignore"할 수 있습니다.
+
+  <pre class="prettyprint">C:\temp\blog\MongoDbFromNodeBackend\blog20140618\service&gt;npm install --save mongodb
+
+  npm WARN package.json blog20140618@1.0.0 No README.md file found!
+
+  npm http GET https://registry.npmjs.org/mongodb
+
+  npm http 200 https://registry.npmjs.org/mongodb
+
+  npm http GET https://registry.npmjs.org/mongodb/-/mongodb-1.4.6.tgz
+
+  npm http 200 https://registry.npmjs.org/mongodb/-/mongodb-1.4.6.tgz
+
+  ...</pre>
+
+  package.json 지원을 사용하는 경우 다음 줄을 사용하여 <code>.gitignore</code> 파일을 추가합니다.
+
+  <pre class="prettyprint">node_modules/</pre>
+
+  그리고 .gitignore 및 package.json 파일을 "git add"합니다. 그렇지 않은 경우 node_modules 폴더를 리포지토리에 "git 추가"합니다. MongoDB와 통신할 테이블 작업에 코드를 추가할 준비가 완료되었습니다.
+
+  <h2>CRUD 작업</h2>
+
+  mongodb 패키지를 사용하고 컬렉션을 사용하려면 모든 작업이 먼저 DB에 대한 연결을 열고, 컬렉션 개체를 만들고(존재하지 않는 경우 DB에서 컬렉션을 만들거나, 기존 컬렉션에 대한 참조를 반환하는) 작업을 수행해야 합니다. 하나씩 가자.
+
+  <h3>Inserts</h3>
+
+  삽입 작업부터 살펴보겠습니다. 앞에서 설명한 대로 연결하고 컬렉션을 가져와서 실제 삽입을 수행합니다.
+
+  <pre class="prettyprint">function insert(item, user, request) {
+      var collectionName = tables.current.getTableName();
+      var MongoClient = require('mongodb').MongoClient;
+      var connectionString = process.env['MongoConnectionString'];
+      MongoClient.connect(connectionString, function(err, db) {
+          if (err) {
+              console.log('Error connecting to the MongoDB: ', err);
+              request.respond(500, { error: err });
+          } else {
+              db.createCollection(collectionName, function(err, collection) {
+                  if (err) {
+                      console.log('Error creating collection: ', err);
+                      request.respond(500, { error: err });
+                  } else {
+                      collection.insert(item, { w: 1 }, function(err, result) {
+                          if (err) {
+                              console.log('Error inserting into the collection: ', err);
+                              request.respond(500, { error: err });
+                          } else {
+                              // item has been inserted!
+                              request.respond(201, result);
+                          }
+                      });
+                  }
+              });
+          }
+      });
+  }</pre>
+
+  이제 테스트할 수 있습니다. Fiddler를 사용하지만 다른 HTTP 클라이언트는 제대로 작동합니다.
+
+  <pre class="prettyprint">POST https://blog20140618.azure-mobile.net/tables/orders HTTP/1.1
+
+  User-Agent: Fiddler
+
+  Content-Type: application/json
+
+  x-zumo-application: LuKpHqHmHgHBwuqpUzXonKnIdGOZBk59
+
+  Host: blog20140618.azure-mobile.net
+
+  Content-Length: 221
+
+
+  {
+      "client":"John Doe",
+      "orderDate":"2014-06-12T00:00:00.000Z",
+      "items":[
+          { "name" : "bread", "quantity" : 1, "price" : 1.99 },
+          { "name" : "milk", "quantity" : 1, "price" : 2.99 }
+      ]
+  }</pre>
+
+  그리고 모든 것이 제대로 작동하는 경우 이 헤더와 유사한 응답을 받아야 합니다(일부 헤더가 제거되고 선명도를 위해 줄 바꿈이 추가됨).
+
+  <pre class="prettyprint">HTTP/1.1 201 Created
+
+  Content-Length: 190
+
+  Content-Type: application/json
+
+  Server: Microsoft-IIS/8.0
+
+  Date: Thu, 12 Jun 2014 23:51:22 GMT
+
+
+  [
+      {
+          "client":"John Doe",
+          "orderDate":"2014-06-12T00:00:00.000Z",
+          "items":[
+              {"name":"bread","quantity":1,"price":1.99},
+              {"name":"milk","quantity":1,"price":2.99}
+          ],
+          "_id":"539a3cfaad2df8d85e780e81"
+      }
+  ]</pre>
+
+  삽입 작업이 작동했습니다. MongoDB에 대한 관리 콘솔을 여는지 확인할 수 있으므로 항목이 DB에 삽입되었습니다. 그러나 응답에는 모바일 서비스 클라이언트에 문제가 되는 몇 가지 속성이 있습니다.
+
+  <ul>
+   <li>반환 형식은 개체가 아닌 배열입니다.</li>
+   <li>만든 개체의 식별자는 클라이언트 SDK에서 예상한 대로 "id"가 아닌 "_id"로 정의됩니다.</li>
+  </ul>
+
+  우리는 이러한 문제를 처리해야합니다. 첫 번째는 실제로 MongoDB의 <em>기능</em> 입니다. 한 번에 여러 항목을 "대량 삽입"할 수 있으며 컬렉션 개체의 "insert" 메서드도 이를 지원합니다. 모바일 서비스 클라이언트 SDK는 대량 삽입을 지원하지 않으므로 단일 항목 삽입만 처리하겠습니다. ID의 경우 클라이언트로 돌아가기 전에 정규화해야 합니다. 그러나 항목을 삽입할 때 페이로드의 일부로 항목의 ID를 전달할 수 있는 경우에도 고려해야 합니다. 항목을 삽입하기 전에 ID를 정규화해야 합니다.
+
+  <pre class="prettyprint">function insert(item, user, request) {
+      var collectionName = tables.current.getTableName();
+      var MongoClient = require('mongodb').MongoClient;
+      var connectionString = process.env['MongoConnectionString'];
+      MongoClient.connect(connectionString, function(err, db) {
+          if (err) {
+              console.log('Error connecting to the MongoDB: ', err);
+              request.respond(500, { error: err });
+              return;
+          }
+          db.createCollection(collectionName, function(err, collection) {
+              if (err) {
+                  console.log('Error creating collection: ', err);
+                  request.respond(500, { error: err });
+                  return;
+              }
+              if (Array.isArray(item)) {
+                  request.respond(400, { error: 'Bulk inserts not supported' });
+                  return;
+              }
+
+              // Normalize the id to what MongoDB expects
+              mobileServiceIdToMongoId(item);
+
+              collection.insert(item, { w: 1 }, function(err, result) {
+                  if (err) {
+                      console.log('Error inserting into the collection: ', err);
+                      request.respond(500, { error: err });
+                      return;
+                  }
+
+                  // Unwrap the inserted item
+                  result = result[0];
+
+                  // Normalize the id to what the mobile service client expects
+                  mongoIdToMobileServiceId(result);
+
+                  request.respond(201, result);
+              });
+          });
+      });
+  }
+
+
+  function mobileServiceIdToMongoId(item) {
+      var itemId = item.id;
+      delete item.id;
+      if (itemId) {
+          item._id = itemId;
+      }
+  }
+
+
+  function mongoIdToMobileServiceId(item) {
+      var itemId = item._id;
+      delete item._id;
+      if (itemId) {
+          item.id = itemId;
+      }
+  }</pre>
+
+  동일한 요청을 다시 보내면 클라이언트에서 예상한 대로 응답을 받아야 합니다.
+
+  <pre class="prettyprint">HTTP/1.1 201 Created
+
+  Content-Length: 187
+
+  Content-Type: application/json
+
+  Location: https://blog20140618.azure-mobile.net/tables/orders/539a41da134eac902318577e
+
+  Server: Microsoft-IIS/8.0
+
+  Date: Fri, 13 Jun 2014 00:12:10 GMT
+
+
+  {
+      "client":"John Doe",
+      "orderDate":"2014-06-12T00:00:00.000Z",
+      "items":[
+          {"name":"bread","quantity":1,"price":1.99},
+          {"name":"milk","quantity":1,"price":2.99}
+      ],
+      "id":"539a41da134eac902318577e"
+  }</pre>
+
+  이제 "Location" HTTP 헤더도 가져옵니다. 이 헤더는 node.js 런타임에서 무료로 사용할 수 있습니다(ID가 있는 개체를 사용하여 만든 201을 반환했기 때문에).
+
+  <h3>읽기</h3>
+
+  삽입 사례와 마찬가지로 원하는 실제 작업을 실행하기 전에 데이터베이스에 연결하고 컬렉션을 가져와야 합니다. 코드를 반복하게 되므로 일부 코드를 공유 스크립트로 이동해야 합니다. git 리포지토리의 루트에 있는 서비스/공유 폴더에서 "mongoHelper.js"이라는 파일을 만들고 아래에 표시된 코드를 추가합니다. mongo와 모바일 서비스 ID 간에 변환하는 함수에서 나중에 사용할 개체에서 ID를 변환하거나 제거할지 여부를 결정하기 위해 추가 매개 변수를 추가합니다.
+
+  <pre class="prettyprint">exports.connectAndGetCollection = function(collectionName, callback) {
+      var MongoClient = require('mongodb').MongoClient;
+      var connString = process.env["MongoConnectionString"];
+      MongoClient.connect(connString, function(err, db) {
+          if (err) {
+              callback(err, null);
+          } else {
+              db.createCollection(collectionName, function(err, collection) {
+                  if (err) {
+                      callback(err, null);
+                  } else {
+                      callback(null, collection);
+                  }
+              });
+          }
+      });
+  }
+
+
+  exports.mobileServiceIdToMongoId = function(item, remove) {
+      var itemId = item.id;
+      delete item.id;
+      if (itemId &amp;&amp; !remove) {
+          item._id = itemId;
+      }
+
+      return itemId;
+  }
+
+
+  exports.mongoIdToMobileServiceId = function(item, remove) {
+      var itemId = item._id;
+      delete item._id;
+      if (itemid &amp;&amp; !remove) {
+          item.id = itemId;
+      }
+
+      return itemId;
+  }</pre>
+
+  이제 읽기 스크립트로 이동합니다. 아래 표시된 콘텐츠와 함께 서비스/테이블/orders.read.js 아래에 파일을 만듭니다. "일반" 테이블과 마찬가지로 두 가지 유형의 읽기 요청이 있습니다. 조회(또는 단일 요소에 대한 읽기, /tables/&lt;tableNameitem&lt;&gt;/ ID&gt;에 대한 GET 요청) 및 항목 목록을 반환하는 "일반" 읽기가 있습니다. 함수에 전달되는 쿼리 개체의 "id" 속성을 확인하여 두 호출을 구분할 수 있습니다. 아래 코드에서 더 읽기 쉽게 하기 위해 두 사례를 자체 함수로 분할합니다.
+
+  <pre class="prettyprint">function read(query, user, request) {
+      var collectionName = tables.current.getTableName();
+      var mongoHelper = require('../shared/mongoHelper');
+      mongoHelper.connectAndGetCollection(collectionName, function(err, collection) {
+          if (err) {
+              console.log('Error creating collection: ', err);
+              request.respond(500, { error: err });
+              return;
+          }
+
+          if (query.id) {
+              findSingleObject(collection, query.id, mongoHelper, request);
+          } else {
+              returnMultipleObjects(collection, query, mongoHelper, request);
+          }
+      });
+  }</pre>
+
+  단일 개체를 찾으려면 컬렉션 개체에서 "findOne" 메서드를 사용할 수 있습니다. 그러나 개체 ID를 검색하는 방법은 다릅니다. <a href="https://docs.mongodb.org/manual/reference/object-id/">MongoDB의 ObjectID</a> (ID를 전달하지 않고 항목을 삽입하는 경우 가져올 식별자의 형식)를 사용하는 경우 ObjectID 개체 자체(또는 JSON 프로젝션{ $oid: &lt;실제 id&gt;})를 사용하여 검색해야 합니다. 그렇지 않으면 "_id" 속성 자체를 검색할 수 있습니다. 클라이언트의 요청에서 들어오는 ID는 항상 문자열이므로 유효한 개체 ID가 "어떻게 표시되는지" 확인할 수 있습니다. 그런 다음 개체 ID와 "단순" ID를 모두 검색합니다. 그렇지 않으면 개체 ID가 아니라는 것을 알고 있으므로 _id 값으로 더 간단하게 검색할 수 있습니다.
+
+  <pre class="prettyprint">function findSingleObject(collection, itemId, mongoHelper, request) {
+      // Lookup operation: get for a single element
+      var callback = function(err, item) {
+          if (err) {
+              console.log('error querying collection: ', err);
+              request.respond(500, { error: err });
+          } else {
+              if (item) {
+                  mongoHelper.mongoIdToMobileServiceId(item);
+                  request.respond(200, item);
+              } else {
+                  request.respond(404);
+              }
+          }
+      };
+      var ObjectID = require('mongodb').ObjectID;
+      if (ObjectID.isValid(itemId)) {
+          // Maybe its a MongoDB object id; maybe it just looks like one
+          collection.findOne({ _id: { $in: [ itemId, new ObjectID(itemId) ] } }, callback);
+      } else {
+          // It's not an object id; may have been created by the client
+          collection.findOne({ _id: itemId }, callback);
+      }
+  }</pre>
+
+  일반적인 읽기 사례에서 서버는 여러 항목을 반환합니다. 지금은 컬렉션의 모든 항목만 반환합니다(클라이언트에서 전달한 페이징/필터링/정렬 옵션 무시). 이 개체의 다음 게시물에서 쿼리 개체에 대한 자세한 내용으로 이동하여 전체 쿼리 기능을 구현하는 방법을 알아봅니다.
+
+  <pre class="prettyprint">function returnMultipleObjects(collection, query, mongoHelper, request) {
+      // TODO: look at query parameters. For now, return all items.
+      collection.find().toArray(function(err, items) {
+          if (err) {
+              console.log('error querying collection: ', err);
+              request.respond(200, { error: err });
+          } else {
+              items.forEach(function(item) {
+                  mongoHelper.mongoIdToMobileServiceId(item);
+              });
+              request.respond(200, items);
+          }
+      });
+  }</pre>
+
+  이제 항목을 삽입하고 쿼리할 수 있습니다. 나머지 작업으로 이동...
+
+  <h3>Updates</h3>
+
+  모바일 서비스 테이블에서 HTTP <strong>PATCH </strong>요청이 서버로 전송되면 업데이트 스크립트가 호출됩니다. PATCH의 의미 체계는 요청 본문에 지정된 속성만 수정해야 하며 컬렉션 개체의 <a href="https://mongodb.github.io/node-mongodb-native/markdown-docs/insert.html#find-and-modify">findAndModify</a> 메서드에 잘 매핑됩니다. 또한 이전 섹션에서 설명한 대로 ID 및 두 사례를 기준으로 쿼리를 수행해야 하므로 이제 해당 논리를 공유 코드로 이동하는 것이 좋습니다. 이 추가 내보내기를 파일 서비스/공유/mongoHelper.js 추가합니다.
+
+  <pre class="prettyprint">exports.queryForId = function(id) {
+      /// &lt;summary&gt;
+      /// Returns a query object which can be used to find an object with the given id.
+      ///  the query will be a simple query by "_id" based on the value of the id if
+      ///  the id is not a valid ObjectID, or a query by the id value or the ObjectID
+      ///  value otherwise.
+      /// &lt;/summary&gt;
+      /// &lt;param name="id" type="String"&gt;The id to create the query for.&lt;/param&gt;
+      /// &lt;returns&gt;An object which can be used as the query parameter in MongoDB's
+      ///  collection methods "findOne" or "update".&lt;/returns&gt;
+      if (ObjectID.isValid(id)) {
+          return { _id: { $in: [ id, new ObjectID(id) ] } };
+      } else {
+          return { _id: id };
+      }
+  }</pre>
+
+  그리고 업데이트 함수에서 사용할 수 있습니다. "findAndModify"의 결과가 콜백에 전달되고 오류가 없고 개체가 업데이트된 경우 업데이트된 개체가 호출자에게 반환될 수 있는 "result" 매개 변수에 전달됩니다. 필터 조건과 일치하는 항목이 없는 경우(이 경우 ID에 따라) 해당 값은 null/undefined가 되며, 이 경우 클라이언트에 404 찾을 수 없음을 반환합니다. 업데이트 메서드에서는 업데이트를 적용할 때 개체의 ID를 설정할 필요가 없으므로 모바일 서비스와 node.js 형식 간에 변환하는 데 사용되는 함수의 "remove" 매개 변수를 사용합니다.
+
+  <pre class="prettyprint">function update(item, user, request) {
+      var collectionName = tables.current.getTableName();
+      var mongoHelper = require('../shared/mongoHelper');
+      mongoHelper.connectAndGetCollection(collectionName, function(err, collection) {
+          if (err) {
+              console.log('Error creating collection: ', err);
+              request.respond(500, { error: err });
+              return;
+          }
+
+          // Normalize the id to what MongoDB expects and remove it from the object.
+          var itemId = mongoHelper.mobileServiceIdToMongoId(item, true);
+
+          var params = {
+              query: mongoHelper.queryForId(itemId),
+              sort: [],
+              update: { $set: item },
+              options: { new: true }
+          };
+
+          collection.findAndModify(params.query, params.sort, params.update, params.options, function(err, result) {
+              if (err) {
+                  console.log('Error updating in the collection: ', err);
+                  request.respond(500, { error: err });
+                  return;
+              }
+
+              if (result) {
+                  request.respond(200, result);
+              } else {
+                  request.respond(404);
+              }
+          });
+      });
+  }</pre>
+
+  그리고 패치 의미 체계가 수행됩니다.
+
+  <h3>Deletes</h3>
+
+  마지막 작업은 매우 간단합니다. 요청에서 ID를 가져오고 해당 ID와 일치하는 항목을 제거합니다.
+
+  <pre class="prettyprint">function del(itemId, user, request) {
+      var collectionName = tables.current.getTableName();
+      var mongoHelper = require('../shared/mongoHelper');
+      mongoHelper.connectAndGetCollection(collectionName, function(err, collection) {
+          if (err) {
+              console.log('Error creating collection: ', err);
+              request.respond(500, { error: err });
+              return;
+          }
+
+          collection.remove(mongoHelper.queryForId(itemId), { w: 1 }, function(err, result) {
+              if (err) {
+                  console.log('Error deleting item in the collection: ', err);
+                  request.respond(500, { error: err });
+                  return;
+              }
+
+              if (result) {
+                  request.respond(204);
+              } else {
+                  request.respond(404);
+              }
+          });
+      });
+  }</pre>
+
+  또한 MongoDB 컬렉션을 Azure Mobile Services 테이블로 노출하기 위한 CRUD 작업의 기본 구현을 마무리합니다.
+
+  <h2>요약</h2>
+
+  .NET 백 엔드와 달리 node.js 백 엔드에서 MongoDB 컬렉션을 사용하는 데 "기본 제공" 지원이 없더라도 기본 지원을 추가하는 것은 그리 복잡하지 않다는 것을 보여 줍니다. 다음 게시물에서는 페이징, 정렬 및 필터링을 비롯한 복잡한 쿼리 작업을 구현하기 위해 이 시나리오를 확장합니다. 또한이 게시물에 대 한 코드를 가져올 하려는 경우에서 <a title="https://github.com/carlosfigueira/blogsamples/tree/master/AzureMobileServices/MongoDbOnNodeBackend/CRUDTests/SimpleOperationshttps://github.com/carlosfigueira/blogsamples/tree/master/AzureMobileServices/MongoDbOnNodeBackend/CRUDTests/SimpleOperations" href="https://github.com/carlosfigueira/blogsamples/tree/master/AzureMobileServices/MongoDbOnNodeBackend/CRUDTests/SimpleOperations"></a>찾을 수 있습니다.
+
+
+  그리고 언제나처럼, 이 게시물의 의견 섹션이나 <a href="https://social.msdn.microsoft.com/Forums/windowsazure/en-US/home?forum=azuremobile">MSDN 포럼</a>에서 의견 / 제안 / 버그 보고서를 자유롭게 남겨 두십시오.

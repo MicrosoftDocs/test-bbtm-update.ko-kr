@@ -1,0 +1,28 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c6e732270927beb6f18ee31bbab07e35f0b66f73
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911829"
+Slug: intermediate-tls-certificates-for-azure-app-service-web-apps
+Title: Azure App Service Web Apps에 대한 중간 TLS 인증서
+Summary: 고객이 Azure App Service Web Apps에서 TLS/SSL 엔드포인트에 대한 중간 인증서를 구성할 수 있도록 하는 기능이 도입되었습니다.
+Content: >-
+  고객이 Azure App Service Web Apps에서 TLS/SSL 엔드포인트에 대한 중간 인증서를 구성할 수 있도록 하는 기능이 도입되었습니다. <a href="https://social.msdn.microsoft.com/Forums/azure/en-US/21ce541c-b314-4363-bcdb-889ef29147ab/azure-website-serving-the-old-intermediate-sha1-cert?forum=windowsazurewebsitespreview">여기</a> 여기와 <a href="https://social.msdn.microsoft.com/Forums/azure/en-US/5318c857-8b5d-4da8-8a7e-d66539e647c7/ssl-intermediate-certificates?forum=windowsazurewebsitespreview">여기</a> 포럼 게시물과 같이 몇 가지 고객이 이에 대해 묻고 있으며,이 기능은 이러한 게시물에 언급 된 기능 격차를 해결해야합니다.
+
+  <h2>중간 인증서를 업로드하려면 어떻게 하나요?</h2>
+
+  TLS/SSL 인증서를 사용하여 PFX 파일을 이미 업로드한 경우 인증서를 다시 업로드해야 합니다.
+
+
+  내보낼 때 TLS/SSL 인증서의 PFX 파일에 전체 인증서 체인이 포함되어 있는지 확인합니다. Windows 인증서 관리자에서 인증서를 내보낼 때 아래 옵션을 선택했는지 확인하여 수행할 수 있습니다.
+
+
+  <div id="attachment_301632" align="aligncenter" width="381"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/05/29/CertExport.png"><img class="wp-image-301632 size-medium" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CertExport-381x369.png" alt="Certificate Export Wizard" width="381" height="369" /></a> 전체 인증서 체인을 사용하여 PFX로 인증서 내보내기</div>
+
+
+  &nbsp;
+
+
+  관리 포털 또는 REST API를 통해 인증서를 다시 업로드하면 완료됩니다. 체인의 중간 인증서가 프런트 엔드와 체인에서 신뢰할 수 있는 루트로 누락되었는지 확인합니다. 누락된 항목을 찾으면 프런트 엔드에 동적으로 설치합니다. 이 결과로 신뢰할 수 있는 기관에 새 루트 인증서를 설치하지 않고 중간 인증서만 설치합니다.

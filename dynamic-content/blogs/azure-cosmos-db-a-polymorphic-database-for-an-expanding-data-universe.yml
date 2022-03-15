@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 565ef0e67a7901731429bd7f5201ef6ee3fb5c89
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912126"
+Slug: azure-cosmos-db-a-polymorphic-database-for-an-expanding-data-universe
+Title: Azure Cosmos DB – 확장 중인 데이터 우주를 위한 다형 데이터베이스
+Summary: 최근 데이터베이스 세계에서 인기를 얻고 있는 일종의 논쟁을 들었을 수도 있습니다. 데이터베이스 관리자 및 NoSQL 개발자는 이러한 문제를 제기해 왔으며 다음과 같은 문제가 표시되었을 수 있습니다.
+Content: >-
+  <p>오늘날 데이터 세계에서 자주 발생하는 논의는 관계형 이론(예: Oracle 또는 SQL Server 기반)과 일반적으로 NoSQL&rdquo; 데이터베이스라고 하는 &ldquo;플랫폼의 최신 물결을 기반으로 하는 기존 데이터베이스 간의 비교를 중심으로 합니다. 두 유형의 데이터베이스의 지지자들은 어떤 데이터베이스가 가장 좋은가에 관한 &ldquo;분쟁에 들어가는 경향이 있습니까?&rdquo; 그러나 이는 잘못된 경합 지점일 수 있습니다. 그 이유를 이해하기 위해 기록을 추적하고 NoSQL 데이터베이스가 어떻게 처음 눈에 띄는지 생각해보는 데 도움이 될 수 있습니다.</p>
+
+
+  <p>지난 15년 동안 데이터베이스 기술은 물리학 비유를 데이터 우주의 초기 조건, 즉 관계형 데이터베이스를 사용한 트랜잭션 처리의 특이성으로 사용하기 위해 설명할 수 있는 것 이상으로 근본적으로 확장되었습니다. 이 확장은 더 많은 데이터와 다양한 종류의 데이터를 처리하는 기능에 대한 수요에 힘입어 향상된 기술과 채택으로 성장했습니다. 소셜 미디어와 모바일 시대에 의해 침전된 데이터 교환에 혁명이 있었습니다. 이로 인해 다양한 일시적이고 유연한 스토리지 매체와 <a href="https://en.wikipedia.org/wiki/XML" target="_blank">XML</a> 및 <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a>과 같은 프로토콜의 인기가 높아졌습니다. 이러한 표준은 다양한 형태의 웹 게시 및 메시징에서 사실상 표준이 되었지만 애플리케이션을 빌드하는 방법도 발전하고 완성되었습니다. 애플리케이션에서 개체 지향 디자인의 인기가 높아져 <a href="https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch" target="_blank">개체 관계형 임피던스 불일치가</a> 발생했습니다. 이렇게 하면 관계형 데이터베이스를 사용하여 애플리케이션을 빌드하고 유지 관리할 수 있는 방법이 더욱 제한되었습니다. 또한 다양한 종류의 비정형 데이터, 로그 파일, 이진 이미지, 텍스트, 감각 데이터 등을 저장하기 시작했습니다. 이로 인해 디자인 타임에 <a href="https://en.wikipedia.org/wiki/Database_schema" target="_blank">스키마</a>와 같은 구조를 적용할 필요 없이 대규모 데이터 집합에서 큰 쿼리를 수행할 수 있는 <a href="https://en.wikipedia.org/wiki/Apache_Hadoop" target="_blank">Hadoop</a> 및 <a href="https://en.wikipedia.org/wiki/Apache_Spark" target="_blank">Spark</a>와 같은 분산 컴퓨팅 아키텍처가 생겼습니다. 즉, 현재 관리해야 하는 다양한 데이터 구조가 크게 변경되었습니다.</p>
+
+
+  <p>더 큰 유연성에 대한 요구에 대응하여 데이터를 모델링하는 이러한 변화하는 접근 방식은 모든 종류의 데이터를 저장하는 애플리케이션을 빌드할 때 구조적 무결성과 민첩성/생산성 간의 새로운 장단점이라고 생각할 수 있습니다. 이러한 요구는 <a href="https://www.techopedia.com/definition/30153/schema-on-read" target="_blank">읽기 시 스키마</a>로 알려진 패러다임으로 특징지어졌습니다. 데이터 구조를 자체 설명하거나 <a href="https://en.wikipedia.org/wiki/Semi-structured_data" target="_blank">반구조화</a>할 수 있으므로 데이터에 의미를 적용하기 위한 스키마는 디자인 타임에 데이터베이스에 긴밀하게 결합되지 않고 소비자/클라이언트 코드 내에서 어떤 의미에서 살 수 있습니다. 따라서 데이터베이스는 데이터를 수집할 때 더 유연하게 사용할 수 있습니다.</p>
+
+
+  <p>보다 유연한 데이터 구조에 대한 소비자 수요의 이러한 변화와 동시에 데이터베이스에서 처리하는 데이터의 볼륨과 속도가 대폭 증가했습니다. 이로 인해 트랜잭션 무결성과 물리적 가용성, 대기 시간 및 동시성의 균형을 유지해야 하는 필요성이 증가했습니다. 처리되는 데이터의 양이 너무 커져서 기존 관계형 데이터베이스가 최종 사용자가 요구하는 전반적인 성능 수준을 제공하는 데 어려움을 겪을 수 있습니다. <a href="https://en.wikipedia.org/wiki/ACID_(computer_science)" target="_blank">ACID</a> 트랜잭션의 경우, 이것은 더 큰 동시성을 제공하기 위해 ACID 의미 체계의 <a href="https://en.wikipedia.org/wiki/Isolation_(database_systems)" target="_blank">격리</a> 요소를 완화시키는 일반적인 관행으로 이어졌습니다. 가용성 및 대기 시간의 경우 <a href="https://en.wikipedia.org/wiki/Distributed_database" target="_blank">분산 데이터베이스</a> 아키텍처가 등장하여 <a href="https://en.wikipedia.org/wiki/PACELC_theorem" target="_blank">일관성(복제본)과 가용성</a> 간의 균형을 조정해야 합니다. <a href="https://en.wikipedia.org/wiki/CAP_theorem" target="_blank">CAP 정리</a> 및 <a href="https://en.wikipedia.org/wiki/PACELC_theorem" target="_blank">PACELC 정리</a>에 대해 자세히 알아보세요.&nbsp;</p>
+
+
+  <p>사용할 데이터베이스 엔진 유형을 결정하는 컨텍스트에서 이제 확장 중인 데이터 우주&rdquo;에서 데이터 스토리지 및 지속성을 위한 새로운 스펙트럼 집합을 &ldquo;갖게 되었습니다. 아래 다이어그램은 이를 보여 줍니다. 여기서는 그 안에서 공고화된 새로운 패러다임을 배치할 수 있는 위치를 제시합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/756ba395-dd20-4abe-8162-195837b57774.png"><img alt="Data Universe" border="0" height="1280" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ae77e6a0-02b1-40f6-9455-dae4291438d3.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Data Universe" width="2043"></a></p>
+
+
+  <p>궁극적으로 이러한 스펙트럼은 현대 애플리케이션에서 처리해야 하는 데이터의 다양성, 속도 및 볼륨이 증가하고 이를 지원하는 기술의 발전을 통해 등장하고 굳어지게 되었습니다.</p>
+
+
+  <p>ACID 데이터베이스의 격리 장차는 한동안 알려져 왔으며 <a href="https://en.wikipedia.org/wiki/CAP_theorem" target="_blank">CAP TheoremPACELC</a>/ <a href="https://en.wikipedia.org/wiki/PACELC_theorem" target="_blank">정리</a>는 분산 데이터베이스의 복제 일관성 스펙트럼과 관련된 몇 가지 장차를 노출하는 데 많은 언론을 받았습니다. 데이터 구조 스펙트럼의 출현은 아마도 덜 논의되지만 데이터베이스 세계에서 변화하는 패러다임을 이해하는 데 중요합니다. 이러한 데이터 패러다임의 확산은 데이터베이스 기술에 대해 묻는 질문이 실제로 비즈니스 사용 사례를 중심으로 해야 하며, 이러한 스펙트럼을 따라 어떤 데이터베이스가 가장 적합한지 묻는 대신 적절한 패러다임을 적용하여 사용 사례를 최적으로 처리해야 한다는 것을 의미합니다. 이제 모든 데이터 구조 또는 데이터 지속성 시나리오에 가장 적합한 단일 패러다임이 없는 확장된 데이터 우주&rdquo;에 살고 &ldquo;있습니다.</p>
+
+
+  <p>물론 이러한 확장 및 성숙 패러다임, Microsofts&rsquo; 다형<a href="https://azure.microsoft.com/en-us/services/cosmos-db/" target="_blank">성 Azure Cosmos DB</a>에 걸쳐 다른 데이터베이스보다 더 많은 접지를 포함하는 데이터베이스가 하나 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/79638658-e160-40fb-a7a4-bd5b438cd2f4.png"><img alt="Azure Cosmos DB" border="0" height="858" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90f6ddc2-a037-4e6a-a9be-8d2fbb73da8c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Cosmos DB" width="1650"></a></p>
+
+
+  <h2>데이터 구조 스펙트럼</h2>
+
+
+  <p>데이터 구조 스펙트럼에서 Azure Cosmos DB는 ARS(atom-record-sequence)라고 하는 혁신적인 공통 형식 시스템을 제공합니다. 이렇게 하면 API 및 유선 프로토콜 수준에서 여러 데이터 모델을 용이하게 하며, 각각은 이전 다이어그램에 표시된 다양한 데이터 모델을 나타냅니다. 이러한 모델은 관련이 없는 것처럼 보일 수 있지만, 각 모델은 디자인 타임과 쿼리 시간에 데이터에 구조/의미를 적용하거나, 스키마 온-쓰기 및 스키마 온-읽기 간에 서로 다른 수준의 장단점을 나타내므로 개념적으로 스펙트럼을 따라 지점을 차지합니다. 왼쪽에서 오른쪽으로 <a href="https://en.wikipedia.org/wiki/Column_family" target="_blank">열 패밀리</a>의 경우 오픈 소스 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/cassandra-introduction" target="_blank">Cassandra API</a> 형식으로 제공됩니다. <a href="https://en.wikipedia.org/wiki/Document-oriented_database" target="_blank">문서 데이터 모델의</a> 경우 사용자는 네이티브 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-introduction" target="_blank">SQL API</a> 또는 MongoDB용 오픈 소스 Azure Cosmos <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-introduction" target="_blank">DB API</a> 중에서 선택할 수 있습니다. <a href="https://en.wikipedia.org/wiki/Graph_database" target="_blank">그래프</a> 데이터의 경우 사용자는 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/graph-introduction" target="_blank">Gremlin API</a>를 채택할 수 있습니다. 마지막으로 <a href="https://en.wikipedia.org/wiki/Key-value_database" target="_blank">키-값</a> 저장소의 경우 사용자는 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/table-introduction" target="_blank">Table API</a>를 선택할 수 있습니다.</p>
+
+
+  <h2>데이터 지속성 스펙트럼</h2>
+
+
+  <p>마찬가지로 데이터 지속성 스펙트럼에서 Azure Cosmos DB는 요청당 재정의할 수 있는 복제에 대한 <a href="https://blogs.technet.microsoft.com/uktechnet/2018/03/20/azure-cosmos-db-tunable-consistency/" target="_blank">턴키 사용으로 여러 일관성 추상화</a> 기능을 제공하는 세계 유일의 데이터베이스 중 하나입니다. Azure Cosmos DB는 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/programming#database-program-transactions" target="_blank">스냅샷 격리를 사용하여 ACID 트랜잭션을</a> 수행하는 기능도 제공합니다.</p>
+
+
+  <p>이전 다이어그램에 표시된 것처럼 복제 일관성을 위한 데이터 지속성 스펙트럼의 모든 지점이 지원되며 실제로 Cosmos DB에서 잘 정의된 추상화로 고유하게 개척되었습니다. 실제 예제를 사용하는 설명과 함께 각 일관성 설정의 이점 및 사용 사례에 대한 자세한 내용은 <a href="https://blogs.technet.microsoft.com/uktechnet/2018/03/20/azure-cosmos-db-tunable-consistency/" target="_blank">Azure Cosmos DB &ndash; 튜닝 가능 일관성!</a>&rdquo; 블로그 제목 &ldquo; 을 참조하세요. Cosmos DB용으로 만든 데이터 일관성 모델을 좀 더 자세히 알아보려면 <a href="https://discover.microsoft.com/apps-for-cats/" target="_blank">전자책을 살펴보</a>세요.</p>
+
+
+  <h2>전역 배포 및 SLA</h2>
+
+
+  <p>이러한 모든 급성장하는 스펙트럼에서 이러한 광범위한 범위 외에도 Azure Cosmos DB는 전 세계에서 유일하게 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/distribute-data-globally-turnkey" target="_blank">턴키 전역 분산 데이터베이스</a> 중 하나이며, <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/multi-master-conflict-resolution" target="_blank">자동 충돌 해결</a>을 통해 원활한 복제 및 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/enable-multi-master" target="_blank">다중 마스터 쓰기 지역</a> 기능을 통해 지리적으로 분산된 애플리케이션에서 읽기 및 쓰기 모두에 대해 매우 짧은 대기 시간을 가능하게 합니다. 클라우드 네이티브 소프트웨어 아키텍처를 통해 가능하게 된 엄격하게 제어된 리소스 거버넌스 모델을 통해 <a href="https://azure.microsoft.com/en-us/support/legal/sla/cosmos-db/v1_0/" target="_blank">일관성, 가용성, 대기 시간 및 처리량 전반에 걸쳐 재정적으로 지원되는 SLA</a>를 제공합니다.</p>
+
+
+  <h2>유연한 옵션</h2>
+
+
+  <p>Azure Cosmos DB는 각 스펙트럼을 따라 서로 다른 지점 간에 정보에 입각한 결정을 내릴 필요성을 회피하지 않으며, 관계형 데이터베이스와 같은 다른 데이터베이스 플랫폼을 완전히 선택해야 하는 경우도 있습니다. 그러나 위에서 설명한 것처럼 확장되는 데이터 우주&rdquo;에서 &ldquo;점점 더 많은 스펙트럼 지점에서 턴키의 편리성과 효율성을 제공하는 매우 광범위한 지원을 제공합니다. 따라서 실제 비즈니스 사용 사례의 높은 수에 걸쳐 우수한 범위를 제공하기 위해 매우 강력하게 배치됩니다.</p>

@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d4c9f4bd340726529b4d24b5db05b2502611881f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905889"
+Slug: introducing-the-azure-analysis-services-web-designer
+Title: Azure Analysis Services 웹 디자이너 소개
+Summary: 현재 Azure Analysis Services 웹 디자이너의 미리 보기를 릴리스하고 있습니다. 이 새로운 브라우저 기반 환경을 통해 개발자는 AAS(Azure Analysis Services)를 만들고 관리할 수 있습니다...
+Content: >-
+  <p>현재 Azure Analysis Services 웹 디자이너의 미리 보기를 릴리스하고 있습니다. 이 새로운 브라우저 기반 환경을 통해 개발자는 AAS(Azure Analysis Services) 의미 체계 모델을 빠르고 쉽게 만들고 관리할 수 있습니다. SQL Server Data Tools(SSDT) 및 SQL Server Management Studio(SSMS)는 여전히 개발의 주요 도구이지만, 이 새로운 환경은 빠르고 쉽게 간단하게 변경할 수 있도록 하기 위한 것입니다. 새 모델을 시작하거나 개발 또는 프로덕션 AAS 모델에 새 측정값을 추가하는 등의 작업을 수행하는 데 유용합니다.</p>
+
+
+  <p>이 초기 릴리스에는 세 가지 주요 기능, 모델 만들기, 모델 편집 및 쿼리 수행이 포함됩니다. 모델은 Azure SQL Database 및 SQL Data Warehouse에서 직접 만들거나 Power BI Desktop PBIX 파일에서 가져올 수 있습니다. 데이터베이스에서 만들 때 포함할 테이블을 선택할 수 있으며 도구는 데이터 원본에 대한 직접 쿼리 모델을 만듭니다. 그런 다음 모델 메타데이터를 보고, TMSL(테이블 형식 모델 스크립팅 언어) JSON을 편집하고, 측정값을 추가할 수 있습니다. Power BI Desktop 모델을 열거나, Excel, 즉석에서 모델에서 만든 Visual Studio 프로젝트를 여는 바로 가기가 있습니다. 모델에 대해 간단한 쿼리를 만들어 데이터를 보거나 새 측정값을 테스트할 수도 있습니다.</p>
+
+
+  <p>Azure Portal에서 Azure Analysis Services 서버로 이동하고 개요 블레이드에서 열기&rdquo; 링크를 클릭합니다&ldquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b757f4f3-08c0-4767-81b3-c1baf240721d.png"><img alt="New model" border="0" height="161" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a06401ab-cc9c-4c98-8639-64fbda3e7aa0.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="새 모델" width="666"></a></p>
+
+
+  <p>웹 디자이너가 열리면 서버로 직접 이동하여 기존 모델을 검사하거나 새 모델을 만들 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/afe4b6d3-6a3d-4ba3-84ba-8353aa5c3cb4.jpg"><img alt="clip_image002" border="0" height="359" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/da7d0fc0-0e68-436d-ba10-d85ce97ba440.jpg" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="clip_image002" width="640"></a></p>
+
+
+  <p>이제 AAS 서버가 있으므로 데이터베이스에서 직접 모델을 추가하거나 Power BI Desktop PBIX 파일을 가져올 수 있습니다. PBIX 가져오기의 경우 현재 Azure SQL Database, Azure SQL Data Warehouse, Oracle 및 Teradata만 지원됩니다. 또한 직접 쿼리 모델은 아직 가져오기에 지원되지 않습니다. 매달 가져오기를 위한 새 연결 형식을 추가할 예정이므로 원하는 데이터 원본이 아직 지원되지 않는지 알려주세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d65dbe5b-b34f-42a0-8626-c1ca27f4c86b.jpg"><img alt="clip_image004" border="0" height="364" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/41b20990-6126-421b-ae2f-29e621c875ce.jpg" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="clip_image004" width="640"></a></p>
+
+
+  <p>이제 데이터베이스 또는 PBIX 파일에서 새 모델을 만들었으므로 AAS 서버의 모델 목록에서 모델을 보고 모델을 편집하거나 모델을 찾아볼 수 있습니다. 모델을 편집하려면 모델 이름 옆에 있는 연필 아이콘을 클릭합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6898d872-c96e-4a11-9dd4-0a168dec11fa.png"><img alt="clip_image005" border="0" height="393" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/274b96ab-09fa-4ca9-bad6-06a98a8084e8.png" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="clip_image005" width="640"></a></p>
+
+
+  <p>편집할 때 전체 TMSL에 액세스할 수 있으며 모델의 메타데이터를 직접 변경할 수 있습니다. 변경 내용을 저장하는 경우 클라우드에서 모델을 업데이트합니다. BISM Normalizer와 같은 도구를 사용하여 개발 서버를 변경하고 프로덕션에 변경 내용을 전파하는 것이 가장 좋습니다. 프로토타입 생성 및 개발의 경우 이러한 방식으로 빠르고 쉽게 변경할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5d0209d1-e9b0-432f-a071-309567e11fbd.jpg"><img alt="clip_image007" border="0" height="169" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2c65b88c-59c9-47e0-9e84-f8b32b2891b3.jpg" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="clip_image007" width="640"></a></p>
+
+
+  <p>쿼리를 클릭하면 간단한 보기를 통해 데이터를 보거나 열기&rdquo; 단추를 사용하여 &ldquo;Power BI Desktop 또는 Excel 열 수 있습니다. 간단한 웹 보기는 SSMS 사용하지 않고도 만든 모델 또는 새 측정값을 빠르게 확인할 수 있는 방법이라고 생각합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d68d2887-3195-4537-988f-3e6465e757df.jpg"><img alt="clip_image009" border="0" height="263" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/959cca6f-2af3-4473-ab1b-5e6bbfa6d803.jpg" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="clip_image009" width="640"></a></p>
+
+
+  <p>마지막으로 필드 목록에서 파란색 &ldquo;측정값 링크를 눌러 간단한 측정&rdquo; 값 편집기를 열 수 있습니다. 모든 측정값을 한 곳에서 볼 수 있고 UX에서 테스트할 측정값을 빠르게 추가할 수 있는 좋은 장소입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0fc9d66-6d6d-4019-80b2-12ee6ff2b7ff.jpg"><img alt="clip_image011" border="0" height="392" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bf3d3c6d-833f-4491-9910-bdc5817d98c0.jpg" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="clip_image011" width="640"></a></p>
+
+
+  <p>새 Azure Analysis Services 웹 디자이너를 간략하게 소개합니다. 이 도구가 유용하기를 바라며 <a href="https://feedback.azure.com/forums/556165-azure-analysis-services">Azure Analysis Services 피드백 포럼</a>에서 여러분의 의견을 환영합니다. 이 새로운 환경은 빠르게 시작하고 웹 환경에서 바로 변경할 수 있는 새로운 옵션을 제공하는 데 도움이 될 것이라고 생각합니다. 매월 추가 기능을 추가할 예정이므로 다음에 무엇을 보고 싶은지 알려주세요!</p>
+
+
+  <p><a href="https://azure.microsoft.com/services/analysis-services/">Azure Analysis Services에 대해 자세히 알아봅니다</a>.</p>

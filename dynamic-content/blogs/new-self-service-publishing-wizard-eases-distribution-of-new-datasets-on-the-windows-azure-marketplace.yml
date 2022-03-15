@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 89407c0b9fb7330adb2378b38d29261161f42d33
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911643"
+Slug: new-self-service-publishing-wizard-eases-distribution-of-new-datasets-on-the-windows-azure-marketplace
+Title: 새 Self-Service 게시 마법사는 Windows Azure Marketplace에서 새 데이터 세트 배포를 용이하게 합니다.
+Summary: 지난 1년 동안 Windows Azure Marketplace 팀은 데이터 공급자와 직접 협력하여 새 데이터를 Marketplace에 온보딩했습니다.&nbsp; 오늘날 우리는 스포츠에서 백 개 이상의 데이터 세트를 가지고 ...
+Content: '<p>지난 1년 동안 <a href="https://datamarket.azure.com/" target="_blank">Windows Azure Marketplace</a> 팀은 데이터 공급자와 직접 협력하여 새 데이터를 Marketplace에 온보딩했습니다.&nbsp; 오늘날 스포츠 통계에서 과거 날씨에 이르기까지 앱을 빌드하고 분석을 수행하는 데 사용할 수 있는 100개가 넘는 데이터 세트가 있습니다.<a target="_blank" href="https://datamarket.azure.com/"><img style="float: right;" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5270.WindowsAzureMarketplaceLogo.png" alt="" border="0" height="99" width="209"></a></p>  <p>현재 유용한 데이터를 가진 모든 사용자가 간단한 셀프 서비스 마법사를 통해 Marketplace에 배포할 수 있도록 사용 가능한 도구를 만들고 있습니다.&nbsp; 게시 마법사를 사용하면 샘플 이미지, 로고 및 텍스트를 포함하여 제품이 Windows Azure Marketplace에 표시되는 방식을 디자인할 수 있습니다.&nbsp; 공급자는 이 초기 릴리스를 <a href="https://azure.microsoft.com/en-us/home/tour/database-management/?WT.mc_id=cmp_pst001_blg_post0012" target="_blank">사용하여 SQL Azure</a> 저장된 모든 데이터를 게시하도록 선택할 수 있으며, 도구는 자동으로 데이터베이스를 테스트하고 성능 및 구성 변경을 권장하여 마켓플레이스에서 최상의 환경을 제공합니다.&nbsp; 가격 책정 옵션을 정의하고 게시 프로세스의 일부로 무료 평가판을 사용하도록 설정할 수도 있습니다.</p>  <p>이러한 새로운 도구는 마켓플레이스 제품을 관리하고 재무 보고서를 보고 세금 및 은행 계좌 정보를 업데이트하는 기능을 제공하는 <a href="https://publish.marketplace.windowsazure.com/" target="_blank">게시 포털</a>의 일부입니다. 중요한 데이터가 있는 경우 오늘 게시 포털을 방문하여 Windows Azure Marketplace에 배포할 수 있습니다.&nbsp; 게시&rsquo;자로부터 다양한 새 데이터를 탐색하고 함께 생성된 앱과 분석을 볼 수 있기를 기대합니다.</p>'

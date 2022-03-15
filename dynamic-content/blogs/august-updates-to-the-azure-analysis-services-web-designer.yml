@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0164c7798ccca63766ed93a689b6abf6b05e6708
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912155"
+Slug: august-updates-to-the-azure-analysis-services-web-designer
+Title: Azure Analysis Services 웹 디자이너에 대한 8월 업데이트
+Summary: 지난 달에는 Azure Analysis Services 웹 디자이너의 미리 보기를 릴리스했습니다. 이 새로운 브라우저 기반 환경을 통해 개발자는 AAS(Azure Analysis Services) 의미 체계 모델을 빠르고 쉽게 만들고 관리할 수 있습니다. SQL Server Data Tools(SSDT) 및 SQL Server Management Studio(SSMS)는 여전히 개발의 주요 도구이지만, 이 새로운 환경은 간단한 변경을 빠르고 쉽게 만들기 위한 것입니다. 새 모델을 시작하거나 개발 또는 프로덕션 AAS 모델에 새 측정값을 추가하는 등의 작업을 수행하는 것이 좋습니다.
+Content: >-
+  <p>지난 달에는 Azure Analysis Services 웹 디자이너의 미리 보기를 릴리스했습니다. 이 새로운 브라우저 기반 환경을 통해 개발자는 AAS(Azure Analysis Services) 의미 체계 모델을 빠르고 쉽게 만들고 관리할 수 있습니다. SQL Server Data Tools(SSDT) 및 SQL Server Management Studio(SSMS)는 여전히 개발의 주요 도구이지만, 이 새로운 환경은 간단한 변경을 빠르고 쉽게 만들기 위한 것입니다. 새 모델을 시작하거나 개발 또는 프로덕션 AAS 모델에 새 측정값을 추가하는 등의 작업을 수행하는 것이 좋습니다.</p>
+
+
+  <p>오늘 우리는 수정 사항과 새로운 기능의 혼합을 포함하는 업데이트의 첫 번째 세트를 발표하고있다. 앞으로 몇 달 동안 웹에서 더 쉽고 고급 모델을 만들 수 있도록 웹 디자이너를 계속 발전시킬 것입니다. 새로운 기능에는 다음이 포함됩니다.</p>
+
+
+  <h3>측정값에 대한 DAX 구문 강조 표시</h3>
+
+
+  <p>측정값을 추가하는 것은 DAX 수식 구문을 인식하는 여러 줄 코드 편집기를 사용하면 좀 더 간단합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ceac9d2b-26f3-46a9-b155-5974d49f80e5.png"><img alt="image" border="0" height="287" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/79947bfa-069a-460d-b35b-a0b8e23c2b25.png" style="border: 0px currentColor; border-image: none; display: inline; background-image: none;" title="이미지" width="631"></a></p>
+
+
+  <h3>JSON 편집기에서 새 미니 맵</h3>
+
+
+  <p>이제 모델 JSON 편집기 오른쪽에 미니 문서 맵이 포함되어 JSON 문서를 더 간단하게 검색할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a92ac76-7c92-45a9-8d93-75c1d8b34948.png"><img alt="image" border="0" height="383" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2dfe1d7-50db-4e58-bbf0-b1a905cbfdd0.png" style="border: 0px currentColor; border-image: none; display: inline; background-image: none;" title="이미지" width="702"></a></p>
+
+
+  <h3>쿼리 디자이너에서 폴더 및 계층 구조 지원 표시</h3>
+
+
+  <p>이제 쿼리를 그래픽으로 디자인할 때 계층 구조를 사용하고 폴더를 표시할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/666b16e7-2149-48cb-aa80-65b217ea1020.png"><img alt="image" border="0" height="320" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8f09f4c2-a93d-46ed-b109-3b3c46c78c4f.png" style="border: 0px currentColor; border-image: none; display: inline; background-image: none;" title="이미지" width="269"></a><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/716ec4f0-19a3-4e8a-bb62-82eab0f25133.png"><img alt="image" border="0" height="318" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6e3b8188-7b7f-4ff6-8768-a0229850f375.png" style="border: 0px currentColor; border-image: none; display: inline; background-image: none;" title="이미지" width="191"></a></p>
+
+
+  <h3>테이블 관계 편집기</h3>
+
+
+  <p>새 관계 편집기 대화 상자를 사용하여 테이블 간에 새 관계를 만들거나 기존 관계를 편집합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9de46d4-606c-425d-a336-ffed4df7d14f.png"><img alt="image" border="0" height="204" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4404e995-87c7-4f20-b696-6707a59c37c2.png" style="border: 0px currentColor; border-image: none; display: inline; background-image: none;" title="이미지" width="670"></a></p>
+
+
+  <h3>서버 이름 복사</h3>
+
+
+  <p>SSMS 또는 SSDT와 같은 다른 도구에서 서버에 연결해야 하는 경우 이제 서버 블레이드에서 전체 서버 이름을 복사하기만 하면 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4ad5259a-64bb-41b2-a184-78bfabf42ecf.png"><img alt="image" border="0" height="96" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bf51f809-c91c-4324-bcd5-145206885782.png" style="border: 0px currentColor; border-image: none; display: inline; background-image: none;" title="이미지" width="307"></a></p>
+
+
+  <p>Azure Portal의 서버에서 연결하여 현재 Azure Analysis 웹 디자이너를 사용해 볼 수 <a href="https://portal.azure.com" target="_blank">있습니다</a>.</p>
+
+
+  <p><a href="https://feedback.azure.com/forums/556165" target="_blank">피드백 포럼</a>에서 기능에 대한 고유한 아이디어를 제출하세요. <a href="https://docs.microsoft.com/azure/analysis-services/analysis-services-overview">Azure Analysis Services</a> 및 <a href="https://azure.microsoft.com/blog/introducing-the-azure-analysis-services-web-designer/">Azure Analysis Services 웹 디자이너</a>에 대해 자세히 알아봅니다.</p>

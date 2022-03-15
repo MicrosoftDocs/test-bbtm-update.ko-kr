@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 705b1175c828a2e2c89f17074b3ddb10a5e51e56
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911730"
+Slug: microsoft-and-nvidia-extend-video-analytics-to-the-intelligent-edge
+Title: Microsoft 및 NVIDIA는 비디오 분석을 지능형 에지로 확장
+Summary: AI(인공 지능) 알고리즘은 매일 더 지능적이고 정교해지고 있으며, 카메라와 같은 IoT 디바이스가 물리적 및 디지털 세계를 연결하도록 허용하고 있습니다.
+Content: >-
+  <p>AI(인공 지능) 알고리즘은 매일 더 지능적이고 정교해지고 있으며, 카메라와 같은 IoT 디바이스가 물리적 및 디지털 세계를 연결하도록 허용하고 있습니다. 알고리즘은 경고를 트리거하고 소매점에서 사용 가능한 주차 공간 및 누락된 물품을 찾는 것에서부터 위험 구역에 접근하는 태양 전지판 또는 작업자의 변칙을 감지하는 것까지 자동으로 &mdash; 조치를 취할 수 있습니다.</p>
+
+
+  <p>데이터 센터에서 이러한 최첨단 AI 알고리즘을 처리하려면 비디오 피드를 클라우드에 배달하려면 안정적인 대역폭 연결이 필요합니다. 그러나 이러한 카메라는 종종 신뢰할 수 없는 연결이 있는 원격 지역에 위치하거나 대역폭, 보안 및 규정 요구 사항을 고려하여 합리적이지 않을 수 있습니다.</p>
+
+
+  <p>Microsoft와 NVIDIA는 원시 고대역폭 비디오를 경량 원격 분석으로 변환하기 위해 에지에서 지능형 비디오 분석을 위한 새로운 접근 방식을 제휴하고 있습니다. 이렇게 하면 실시간 성능이 제공되고 사용자의 컴퓨팅 비용이 절감됩니다. 센서로서의 카메라 및 에지 워크로드는 <a href="https://azure.microsoft.com/services/iot-edge/" target="_blank">Azure IoT Edge</a>에서 로컬로 관리되며, 카메라 스트림 처리는 <a href="https://developer.nvidia.com/deepstream-sdk" target="_blank">NVIDIA DeepStream</a>에서 구동됩니다.&quot; &ldquo; 비디오가 변환되면 Azure IoT <a href="https://azure.microsoft.com/en-us/services/iot-hub/" target="_blank">Hub</a>를 사용하여 데이터를 클라우드로 수집할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7ac49f20-051a-444b-a561-8c050e25c02d.jpg"><img alt="Edge appliance and Azure cloud diagram" border="0" height="818" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e86d2867-40b5-4726-9334-82fb715526f5.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="에지 어플라이언스 및 Azure 클라우드 다이어그램" width="2167"></a></p>
+
+
+  <p>회사는 <a href="https://catalog.azureiotsolutions.com/" target="_blank">Azure IoT 디바이스 카탈로그</a>에서 DeepStream을 실행하는 엔터프라이즈 지원 디바이스를 고객에게 제공할 계획이며, NVIDIA DeepStream 모듈은 곧 <a href="https://aka.ms/iot-edge-marketplace" target="_blank">Azure IoT Edge 마켓플레이스에서</a> 사용할 수 있게 될 것입니다.</p>
+
+
+  <p>수년에 걸쳐 Microsoft와 NVIDIA는 고객이 클라우드의 GPU에서 까다로운 애플리케이션을 실행하는 데 도움을 주었습니다. 이 최신 협업을 통해 NVIDIA DeepStream 및 Azure IoT Edge는 AI 향상된 비디오 분석 파이프라인을 영상이 캡처되는 위치, 안전하고 대규모로 확장합니다. 이제 고객은 NVIDIA GPU를 사용하여 에지에서 전 세계에&mdash; 지원되는 비디오 분석을 최대한 활용하고 Azure IoT Edge 및 Azure IoT Hub를 통한 보안 연결 및 강력한 디바이스 관리를 얻을 수 있습니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://azure.microsoft.com/services/iot-edge/" target="_blank">Azure IoT Edge</a> 및 <a href="https://developer.nvidia.com/deepstream-sdk" target="_blank">NVIDIA DeepStream</a> 제품 페이지를 참조하세요. <a href="https://www.nvidia.com/en-us/gtc/" target="_blank">직접 GTC</a>에 참석하는 경우 <strong>2019년 3월 19일 화요일 오전 9:00 10:00 &ndash; </strong>부터 S9545 세션 S9545 &ndash; &ldquo;에서 AI-Based Video Analytics&rdquo;용 DeepStream SDK를 사용하거나 부스 1122에서 Microsoft를 방문하세요.</p>

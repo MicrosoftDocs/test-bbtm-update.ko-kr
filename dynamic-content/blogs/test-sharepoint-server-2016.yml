@@ -1,0 +1,242 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4a2855a019c7ce32a3091cdb887fa3c84104aba7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911564"
+Slug: test-sharepoint-server-2016
+Title: Azure에서 SharePoint Server 2016 테스트
+Summary: SharePoint Server 2016에 대한 Azure 가상 머신 갤러리 이미지를 사용합니다.
+Content: >-
+  <p>Microsoft는 최근 SharePoint Server 2016의&nbsp; 일반 공급 방법을 발표했습니다. 이 새 버전의 SharePoint 쉽게 설치하고 테스트할 수 있도록 SharePoint 제품 팀은 SharePoint Server 2016 및 필수 구성 요소가 미리 설치된 새로운 Microsoft Azure 가상 머신 갤러리 이미지를 만들었습니다.</p>
+
+
+  <p>이는 Azure 인프라 서비스의 완벽한 사용입니다. 가상 머신을 빠르고 쉽게 스핀업하여 Microsoft 또는 다른 공급업체에서 제공하는 새로운 버전의 주력 서버 제품을 평가하고 테스트합니다.</p>
+
+
+  <p>이미지에는 SharePoint Server 2016의 평가판 버전이 완전히 설치되어 있습니다. A5(ExtraLarge), A6 또는 A7 가상 머신 크기를 사용하는 것이 좋습니다. 서비스 팩 1 또는 SQL Server 2016 CTP 2.2 이상에서 SQL Server 2014를 실행하는 별도의 가상 머신도 필요합니다.</p>
+
+
+  <p>가상 머신을 만든 후 시작 화면에서 SharePoint 2016 제품 구성 마법사를 사용하여 해당 역할을 구성합니다. 추가 구성 및 관리를 위해 시작 화면에서도 사용할 수 있는 SharePoint 2016 중앙 관리 및 SharePoint 2016 관리 셸을 사용합니다.</p>
+
+
+  <p>TechNet에 게시된 현재 문서 집합은 <a href="https://technet.microsoft.com/library/cc303422(v=office.16).aspx">SharePoint Server 2016</a>을 참조하세요.</p>
+
+
+  <h2>Resource Manager 배포 모델</h2>
+
+
+  <p>PowerShell 또는 AZURE CLI(명령줄 인터페이스)를 사용하여 SharePoint Server 2016 Trialimage&nbsp;를 사용하여 Resource Manager 기반 가상 머신을 만들 수 있습니다. Resource Manager 가상 머신에 대한 이미지를 지정하려면 이미지 게시자, 제품 및 SKU를 식별해야 합니다. SharePoint Server 2016Trial&nbsp; 이미지의 값은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>Publisher: MicrosoftSharePoint</li>
+   <li>제품: MicrosoftSharePointServer</li>
+   <li>SKU: 2016</li>
+  </ul>
+
+
+  <p>다음은 이 이미지를 사용하여 새 Resource Manager 기반 가상 머신을 빌드하는 Azure PowerShell 1.0which의 예제&nbsp; 명령입니다&nbsp;.&nbsp;</p>
+
+
+  <h4>예제 Azure PowerShell 명령 집합</h4>
+
+
+  <p>SharePoint Server 2016을 실행하는 가상 머신이 필요합니다.</p>
+
+
+  <ul>
+   <li>SP2016Test 이름이 있습니다.</li>
+   <li>AZDatacenter 가상 네트워크의 FrontEnd 서브넷(서브넷 인덱스 0)에 있습니다.</li>
+   <li>기존 SPFarm 리소스 그룹 및 기존 SP_WFE_AS 가용성 집합에 있습니다.</li>
+  </ul>
+
+
+  <p>다음은 이 가상 머신을 만드는 해당 Azure PowerShell 명령 집합입니다.</p>
+
+
+  <pre class="prettyprint">
+
+  # Set values for existing resource group and storage account names
+
+  $rgName=&quot;SPFarm&quot;
+
+  $locName=&quot;West US&quot;
+
+  $saName=&quot;contosospfarmserverssa&quot;
+
+
+  # Set the existing virtual network and subnet index
+
+  $vnetName=&quot;AZDatacenter&quot;
+
+  $subnetIndex=0
+
+  $vnet=Get-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName
+
+
+  # Create the NIC
+
+  $nicName=&quot;SP2016Test-NIC&quot;
+
+  $dnsName=&quot;contoso-vm-sp2016test&quot;
+
+  $pip=New-AzureRMPublicIpAddress -Name $nicName -ResourceGroupName $rgName -DomainNameLabel $dnsName -Location $locName -AllocationMethod Dynamic
+
+  $nic=New-AzureRMNetworkInterface -Name $nicName -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[$subnetIndex].Id -PublicIpAddressId $pip.Id
+
+
+  # Specify the name, size, and existing availability set
+
+  $vmName=&quot;SP2016Test&quot;
+
+  $vmSize=&quot;Standard_A6&quot;
+
+  $avName=&quot;SP_WFE_AS&quot;
+
+  $avSet=Get-AzureRMAvailabilitySet &ndash;Name $avName &ndash;ResourceGroupName $rgName
+
+  $vm=New-AzureRMVMConfig -VMName $vmName -VMSize $vmSize -AvailabilitySetId $avset.Id
+
+
+  # Specify the image and local administrator account, and then add the NIC
+
+  $pubName=&quot;MicrosoftSharePoint&quot;
+
+  $offerName=&quot;MicrosoftSharePointServer&quot;
+
+  $skuName=&quot;2016&quot;
+
+  $cred=Get-Credential -Message &quot;Type the name and password of the local administrator account.&quot;
+
+  $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName $vmName -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
+
+  $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName $pubName -Offer $offerName -Skus $skuName -Version &quot;latest&quot;
+
+  $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
+
+
+  # Specify the OS disk name and create the VM
+
+  $diskName=&quot;OSDisk&quot;
+
+  $storageAcc=Get-AzureRMStorageAccount -ResourceGroupName $rgName -Name $saName
+
+  $osDiskUri=$storageAcc.PrimaryEndpoints.Blob.ToString() + &quot;vhds/&quot; + $vmName + $diskName  + &quot;.vhd&quot;
+
+  $vm=Set-AzureRMVMOSDisk -VM $vm -Name $diskName -VhdUri $osDiskUri -CreateOption fromImage
+
+  New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
+
+  </pre>
+
+
+  <p>추가 데이터 디스크 또는 고정 IP 주소와 같은 추가 구성을 포함하는 고유한 Azure PowerShell 명령 집합을 구성하려면 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-ps-create-preconfigure-windows-resource-manager-vms/">Resource Manager 및 Azure PowerShell 사용하여 Windows Virtual Machine 만들기 및 미리 구성</a>을 참조하세요.</p>
+
+
+  <p>Azure CLI(명령줄 인터페이스)와 함께 SharePoint Server 2016Trial&nbsp; 이미지를 사용하여 Resource Manager 가상 머신을 만들려면 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-deploy-rmtemplates-azure-cli/#quick-create-a-vm-in-azure">TASK: Azure에서 VM 빠른 만들기를</a> 참조하세요.</p>
+
+
+  <p>SharePoint 팜이 가동되고 실행되면 SharePoint 웹 사이트 또는 중앙 관리에 대한 인터넷 액세스를 허용하려면 SharePoint 서버 가상 머신에 대한 부하 분산 장치 및 인바운드 NAT 규칙을 구성해야 합니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/load-balancer-arm-powershell/">Azure Resource Manager를 사용하여 인터넷 연결 부하 분산 장치 구성 시작을 참조하세요</a>.</p>
+
+
+  <h2>클래식 배포 모델</h2>
+
+
+  <p>클래식 Azure 가상 머신의 경우 <b>갤러리에서 새 &gt; 컴퓨팅 &gt; Virtual Machine&gt;</b>을 클릭하여 Azure 클래식 포털에서 SharePoint Server 2016Trial&nbsp; 이미지를 지정할 수 있습니다. 왼쪽 트리에서 <b>SharePoint</b> 클릭한 다음 <b>SharePoint Server 2016 평가판을</b> 클릭합니다. 오른쪽 화살표 단추를 클릭하여 새 가상 머신의 구성을 계속합니다.</p>
+
+
+  <p>Azure PowerShell 또는 Azure CLI를 사용하여 SharePoint Server 2016Trial&nbsp; 이미지를 사용하여 클래식 가상 머신을 만들 수도 있습니다.</p>
+
+
+  <p>Azure PowerShell 경우 <b>New-AzureVMConfig</b> cmdlet에 필요한 SharePoint Server 2016Trial&nbsp; 이미지의 이름을 지정해야 합니다. 최신 이미지의 이름을 가져오고 $image 변수에 저장하려면 다음 명령을 사용합니다.</p>
+
+
+  <pre class="prettyprint">
+
+  $family=&quot;SharePoint Server 2016 Trial&quot;
+
+  $image=Get-AzureVMImage | where { $_.ImageFamily -eq $family } | sort PublishedDate -Descending | select -ExpandProperty ImageName -First 1
+
+  </pre>
+
+
+  <p>다음은 이 이미지를 사용하여 새 클래식 가상 머신을 빌드하는 Azure PowerShell 1.0 이상&nbsp;에 대한&nbsp; 예제&nbsp; 명령 집합입니다.</p>
+
+
+  <h4>예제 Azure PowerShell 명령 집합</h4>
+
+
+  <p>SharePoint Server 2016을 실행하는 가상 머신이 필요합니다.</p>
+
+
+  <ul>
+   <li>SP2016Test 이름이 있습니다.</li>
+   <li>corp.contoso.com 도메인의 멤버임</li>
+   <li>AZDatacenter 가상 네트워크의 FrontEnd 서브넷에 있음</li>
+   <li>기존 Azure-TailspinToys 클라우드 서비스에 있습니다.</li>
+  </ul>
+
+
+  <p>다음은 이 가상 머신을 만드는 해당 Azure PowerShell 명령 집합입니다.</p>
+
+
+  <pre class="prettyprint">
+
+  $family=&quot;SharePoint Server 2016 Trial&quot;
+
+  $image=Get-AzureVMImage | where { $_.ImageFamily -eq $family } | sort PublishedDate -Descending | select -ExpandProperty ImageName -First 1
+
+  $vmname=&quot;SP2016Test&quot;
+
+  $vmsize=&quot;ExtraLarge&quot;
+
+  $vm1=New-AzureVMConfig -Name $vmname -InstanceSize $vmsize -ImageName $image
+
+
+  $cred1=Get-Credential &ndash;Message &quot;Type the name and password of the local administrator account.&quot;
+
+  $cred2=Get-Credential &ndash;Message &quot;Now type the name (not including the domain) and password of an account that has permission to add the machine to the domain.&quot;
+
+  $domaindns=&quot;corp.contoso.com&quot;
+
+  $domacctdomain=&quot;CORP&quot;
+
+  $vm1 | Add-AzureProvisioningConfig -AdminUsername $cred1.GetNetworkCredential().Username -Password $cred1.GetNetworkCredential().Password -WindowsDomain -Domain $domacctdomain -DomainUserName $cred2.GetNetworkCredential().Username -DomainPassword $cred2.GetNetworkCredential().Password -JoinDomain $domaindns
+
+
+  $vm1 | Set-AzureSubnet -SubnetNames &quot;FrontEnd&quot;
+
+
+  $svcname=&quot;Azure-TailspinToys&quot;
+
+  $vnetname=&quot;AZDatacenter&quot;
+
+  New-AzureVM &ndash;ServiceName $svcname -VMs $vm1 -VNetName $vnetname
+
+  </pre>
+
+
+  <p>추가 데이터 디스크 또는 고정 IP 주소와 같은 추가 구성을 포함하는 고유한 Azure PowerShell 명령 집합을 구성하려면 <a href="https://azure.microsoft.com/documentation/articles/virtual-machines-ps-create-preconfigure-windows-vms/">Azure PowerShell 사용하여 Windows 기반 Virtual Machines를 만들고 미리 구성</a>하세요.</p>
+
+
+  <p>Azure CLI에서 SharePoint Server 2016Trial&nbsp; 이미지를 사용하여 클래식 가상 머신을 만들려면 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-command-line-tools/#commands-to-manage-your-azure-virtual-machines">Azure 가상 머신을 관리하는 명령을 참조하세요</a>.</p>
+
+
+  <p>SharePoint 팜이 가동되고 실행되면 SharePoint 웹 사이트 또는 중앙 관리에 대한 인터넷 액세스를 허용하려면 SharePoint 서버 가상 머신에 대한 엔드포인트를 구성해야 합니다. 자세한 내용은 <a href="https://azure.microsoft.com/documentation/articles/virtual-machines-set-up-endpoints/">Azure의 가상 컴퓨터에 엔드포인트 설정</a>을 참조하세요.</p>
+
+
+  <h2>SharePoint 2016 개발/테스트 팜 만들기</h2>
+
+
+  <p>도메인 컨트롤러 및 SQL 서버로 완료된 단일 서버 SharePoint 2016 개발/테스트 환경을 빌드하는 지침은 <a href="https://technet.microsoft.com/library/mt723354(v=office.16).aspx">이 문서를 </a>참조하세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9e3446b6-caae-4997-87d7-208dbb26f1b5.png"></p>
+
+
+  <p>굵게. 앞으로 이동합니다. 이 가상 머신 이미지를 사용하고 새로운 세대의 SharePoint 경험합니다.</p>

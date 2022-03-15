@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 375628ced6e43d67464a1a6e995969adb339dee1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139910973"
+Slug: ip-and-domain-restrictions-for-windows-azure-web-sites
+Title: Windows Azure 웹 사이트에 대한 IP 및 도메인 제한
+Summary: IP 및 도메인 제한에 대한 WAWS(Azure 웹 사이트) 구성은 가장 많이 요청된 요청 중 하나였으며 이제 마침내 사용할 수 있게 되었습니다. IP 및 도메인 제한은 추가 정보를 제공합니다...
+Content: >-
+  IP 및 도메인 제한에 대한 WAWS(Azure 웹 사이트) 구성은 가장 많이 요청된 요청 중 하나였으며 이제 마침내 사용할 수 있게 되었습니다. IP 및 도메인 제한은 최근에 사용하도록 설정된 <a href="https://azure.microsoft.com/blog/2013/08/27/confirming-dynamic-ip-address-restrictions-in-windows-azure-web-sites/" target="_blank">DIPR(동적 IP 주소 제한) 기능</a>과 함께 사용할 수 있는 추가 보안 옵션을 제공합니다.
+
+
+  개발자는 IP 및 도메인 제한을 사용하여 웹 사이트에 대한 액세스가 허용되거나 거부되는 IP 주소 집합 및 주소 범위를 제어할 수 있습니다. Windows 통해 개발자는 해당 웹 사이트에 있는 <strong>web.config</strong> 파일을 사용하여 기능을 사용하거나 사용하지 않도록 설정하고 해당 동작을 사용자 지정할 수 있습니다.
+
+
+  <a href="https://www.iis.net/configreference/system.webserver/security/ipsecurity" target="_blank">IIS.Net 웹 사이트에서</a> 사용할 수 있는 IIS의 IP 및 도메인 제한 기능에 대한 개요가 있습니다. 개별 구성 요소 및 특성에 대한 전체 설명은 <a href="https://msdn.microsoft.com/en-us/library/ms691353(v=vs.90).aspx" target="_blank">TechNet</a>에서 사용할 수 있습니다.
+
+
+  아래의 예제 구성 코드 조각은 <em>ipAddress</em> 및 <em>subnetMask</em> 특성의 조합으로 지정된 범위에서 발생하는 주소에만 액세스할 수 있는 <em>ipSecurity</em> 구성을 보여 줍니다. <em>allowUnlisted</em>를 <em>false</em>로 설정하면 개발자가 명시적으로 지정한 개별 주소 또는 주소 범위만 웹 사이트에 HTTP 요청을 할 수 있습니다. 자식 <em>추가</em> 요소에서 <em>허용된</em> 특성을 <em>true</em>로 설정하면 주소와 서브넷이 함께 웹 사이트에 액세스할 수 있는 주소 범위를 정의함을 나타냅니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8132.Blog2_.JPG-550x0.jpg"><img class="alignnone size-full wp-image-133571" alt="8132.Blog2.JPG-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8132.Blog2_.JPG-550x0.jpg" width="550" height="104" /></a>
+
+
+  허용된 IP 주소 범위를 벗어난 주소에서 웹 사이트에 요청하면 <em>denyAction</em> 특성에 정의된 대로 <strong>HTTP 404 찾을 수 없는 오류가</strong> 반환됩니다.
+
+
+  마지막으로 도우미 DIPR 기능과 마찬가지로 azure 웹 사이트에 Windows IP 및 도메인 제한 모듈에서 클라이언트 IP 주소가 HTTP 요청을 만드는 인터넷 클라이언트의 실제 IP 주소인지 확인합니다.

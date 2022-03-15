@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 07e4cfca669d7b29c5482a536af3dd4a1cf7ef62
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139911190"
+Slug: azure-managed-disks-sse
+Title: Azure Managed Disks에 대한 Storage 서비스 암호화 발표
+Summary: 오늘 Microsoft에서 관리되는 Managed Disks 키를 사용하여 SSE(Azure Storage Service Encryption)를 발표하게 되어 기쁩니다.
+Content: >-
+  <p style="margin: 0px 0px 11px;">2017년 2월에 Managed Disks의 <a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/"><u>일반 공급</u></a>이 발표되었습니다.&nbsp; 오늘 Managed Disks에 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-service-encryption"><u>대한 Azure Storage SSE(서비스 암호화</u></a>)를 발표하게 되어 기쁩니다. SSE는 미사용 암호화를 제공하고 조직의 보안 및 규정 준수 약정을 충족하도록 데이터를 보호합니다.</p>
+
+
+  <p style="margin-top:0in;margin-right:0in;margin-bottom:8.25pt;margin-left:&#10;0in;background:white">SSE는 모든 공용 및 독일 지역의 모든 Managed Disks, 스냅샷 및 이미지에 대해 기본적으로 사용하도록 설정됩니다. 2017년 6월 10일부터 모든 새 Managed Disks/Snapshots/Images 및 기존 Managed Disks에 기록된 새 데이터는 Microsoft에서 관리하는 키를 사용하여 미사용 시 자동으로 암호화됩니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-faq-for-disks#managed-disks-and-storage-service-encryption-sse"><u>Managed Disks FAQ</u></a> 페이지를 참조하세요.</p>
+
+
+  <p style="margin-top:0in;margin-right:0in;margin-bottom:8.25pt;margin-left:&#10;0in;background:white">언제나처럼 의견을 통해 피드백을 듣고 싶습니다. 이 기능에 문제가 있거나 질문이 있는 경우 <a href="https://social.msdn.microsoft.com/Forums/windowsazure/en-US/home?forum=windowsazuredata"><u>항상 Azure Storage MSDN 포럼</u></a>에서 도움을 줄 준비가 되어 있습니다.</p>
+
+
+  <p style="margin-top:0in;margin-right:0in;margin-bottom:8.25pt;margin-left:&#10;0in;background:white">아래 링크를 사용하여 Managed Disks에 대해 자세히 알아보세요.</p>
+
+
+  <p style="background: white; margin: 0px 0px 11px 40px; line-height: normal; text-indent: -0.25in;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docs.microsoft.com/en-us/azure/storage/storage-managed-disks-overview"><u>Azure Managed Disks 개요</u></a></p>
+
+
+  <p style="background: white; margin: 0px 0px 11px 40px; line-height: normal; text-indent: -0.25in;">&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks"><u>Managed Disks로 마이그레이션</u></a></p>
+
+
+  <p>&nbsp;</p>

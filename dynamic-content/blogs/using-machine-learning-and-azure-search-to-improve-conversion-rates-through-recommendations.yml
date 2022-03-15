@@ -1,0 +1,34 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f49b4445f61882db4b8a6d46e3c0a8e674bcf362
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905264"
+Slug: using-machine-learning-and-azure-search-to-improve-conversion-rates-through-recommendations
+Title: Machine Learning 및 Azure Search를 사용하여 권장 사항을 통한 전환율 개선
+Summary: 권장 사항 카탈로그의 더 많은 콘텐츠에 사용자를 노출하는 매우 강력한 도구입니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94f4f158-fe68-4284-932f-b42bb7d8de17.png"><img align="left" alt="AzureSearchRecommendations" border="0" height="209" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8fab8172-17fc-4e58-9f68-6d32cb0a242d.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: left; padding-top: 0px; padding-left: 0px; margin: 0px 10px 5px 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="AzureSearchRecommendations" width="223"></a>권장 사항는 카탈로그의 더 많은 콘텐츠에 사용자를 노출하는 매우 강력한 도구입니다. 판매를 늘리는 데 도움이 되는 기술이며 웹 또는 모바일 애플리케이션의 사용자 탐색을 지원하는 방법일 수도 있습니다. 현재 보고 있는 항목과 함께 자주 함께 구매하는 항목을 보여 준 전자 상거래 소매 사이트와 같은 어떤 형태로든 권장 사항을 보았을 것입니다&rsquo;. 또는 제안 된 영화 스트리밍 사이트에서&rsquo;&ldquo;이 영화를 좋아하는 사용자도 이것을 좋아했습니다.&rdquo; 이 기술을 일반적으로 항목 기반 권장 사항 호출합니다.</p>
+
+
+  <p>사용자가 볼 수 있는 또 다른 유형의 권장 사항은 사용자 기반 권장 사항 또는 공동 작업 필터링이라고 하며, 이는 사용자에 대해 알려진 내용과 다른 사용자에게 갖는 유사성에 따라 사용자별 권장 사항을 제공하는 아이디어입니다.</p>
+
+
+  <p>권장 사항에 대한 흥미로운 점은 전자 상거래 시나리오에만 적용되지 않는다는&rsquo; 것입니다. 거의 모든 유형의 검색 애플리케이션에 적용할 수 있습니다. 예를 들어 문서의 기술 자료가 있는 경우 다른 사용자가 읽고 있는 내용을 기반으로 대체 문서를 제안하거나 사용자가 질문에 대한 답변을 검색할 수 있는 지원 포럼이 있는 경우 다른 사용자&rsquo; 동작에 따라 다른 대체 답변을 추천할 수 있습니다. <a href="https://www.nubimetrics.com/">Nubimetrics</a>의 경우 마케터들이 16개국에서 3천만 개 이상의 경쟁 정보를 기반으로 판매를 향상시키는 결정을 내릴 수 있도록 권장 사항이 사용됩니다.</p>
+
+
+  <blockquote>
+
+  <p>많은 전자 상거래 마켓플레이스에는 수백만 개의 판매 품목이 있으며, 잠재 고객이 볼 수 있는 것은 어려울 수 있습니다. 사다리를 오르고 목록의 첫 번째 결과 중 나열되는 쉬운 방법은 더 많은 노출에 대한 비용을 지불하는 것입니다. 그러나, 더 많은 방문에 더 많은 결과를 지불 할 것인가, 따라서 잠재적으로 더 많은 판매? 이러한&#39;Nubimetrics가 들어오는 위치입니다. 매일 마켓플레이스에서 수집하는 모든 정보에 따라 판매자가 게시하는 각 항목에 대해 적절한 노출 수준을 권장할 수 있습니다. 목록의 정확한 위치는 얼마나 많은 사람들이 지불하고 얼마나 당신이 상승에 따라 원래 위치에 따라 달라집니다으로, 우리는 그들에게 돈을 절약하면서 판매자가 판매를 높일 수 있습니다. - 기예르모 J. 벨만, 클라우드 설계자, Nubimetrics</p>
+
+  </blockquote>
+
+
+  <h3>권장 사항 자습서</h3>
+
+
+  <p>권장 사항 약간 위협적일 수 있으므로 이 자습서에서는 Azure Search 인덱스를 사용하여 작동하는 권장 사항의 견고한 구현을 얻는 데 필요한 핵심 요소에 집중합니다.&nbsp; 항목 기반 권장 사항 집중하지만 사용자 기반 권장 사항 동일한 기술을 사용할 수 있습니다. 여기에서 데이터 과학자가 될 필요 없이 권장 사항을 더욱 개선하기 위해 빌드를 시작할 수 있습니다.</p>
+
+
+  <p>GitHub 방문하여 빌드할 내용에 대한 <a href="https://aka.ms/azsearchrecdemo">라이브 데모</a>를 볼 <a href="https://aka.ms/azsearchrecommendation">수 있습니다.</a>&nbsp; 나는 당신이 도움이 찾을 수 있기를 바랍니다 그리고 당신은 이것에 대한 질문이나 피드백이있는 경우, 아래의 의견에 저를 보자.</p>

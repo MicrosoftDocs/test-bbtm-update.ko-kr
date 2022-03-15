@@ -1,0 +1,101 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 10dddb252763dcc85fa105ebe06fc53bc1099d13
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139905756"
+Slug: using-certificates-in-azure-websites-applications
+Title: Azure Websites 애플리케이션에서 인증서 사용
+Summary: 이 게시물에서는 Azure Websites 애플리케이션에서 인증서를 사용하는 방법을 보여 줍니다.
+Content: >-
+  인증서를 사용해야 하는 애플리케이션이 Azure Websites에 있는 경우 Azure Websites의 인증서 컬렉션에 인증서를 업로드하고 사이트의 개인 인증서 저장소에서 웹 애플리케이션에서 사용할 수 있습니다. 이 기능은 전용 사이트(기본 및 표준 계층)에서만 사용할 수 있습니다. 아래 섹션에서는 이 작업을 수행하는 단계를 자세히 설명하지만, 이 작업이 필요한 이유와 변경된 사항에 대해 신속하게 알아보고 싶습니다.
+
+
+  인증서에는 인증, 서명 및 기타 목적으로 웹 애플리케이션에서 사용할 수 있는 암호화 키가 포함되어 있으며 일반적으로 보안에 민감한 것으로 간주됩니다. 이전에는 Azure Websites 애플리케이션이 인증서의 키를 사용해야 하는 경우 애플리케이션의 App_Data 디렉터리에 있는 프라이빗 키(일반적으로 .pfx 컨테이너)를 사용하여 인증서를 유지하고 이 위치에서 사용해야 했습니다. 이 솔루션은 작동하지만 몇 가지 단점이 있습니다. 애플리케이션 코드 또는 개발자에서 숨겨진 인증서의 프라이빗 키를 유지할 수 없습니다. 또한 애플리케이션이 오픈 소스이고 비밀이어야 하는 인증서를 사용하거나 개발자가 인증서의 프라이빗 키에 액세스하지 못하도록 격리하려는 경우 App_Data 옵션도 불가능합니다.
+
+  <h2>Azure Websites 애플리케이션에서 사용할 인증서 구성</h2>
+
+  Azure 관리 포털과 Azure Websites REST API에서 Azure Websites 애플리케이션에서 인증서를 구성하고 사용하는 단계는 다음과 같습니다.
+
+  <h3>1. 업로드 인증서</h3>
+
+  <blockquote>
+
+  <h3 style="text-align: left;">a. 관리 포털 사용</h3>
+
+  <a href="https://manage.windowsazure.com/">Azure 관리 포털</a>에 로그인하고 인증서를 업로드할 웹 사이트를 선택합니다. 그런 다음 맨 위에 있는 <em>구성</em> 옵션을 선택합니다.</blockquote>
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Azure Websites 구성" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureWebsitesConfigure.png" alt="Azure Websites Configure" width="610" height="158" border="0" />
+
+
+  <em>인증서</em> 섹션까지 아래로 스크롤하고 <em>인증서 업로드</em> 단추를 클릭합니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Azure Websites 업로드 인증서" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureWebsitesUploadCertificate.png" alt="Azure Websites Upload Certificate" width="610" height="158" border="0" />
+
+
+  .pfx 파일을 찾아 인증서의 암호 해독 암호를 지정하는 대화 상자가 표시됩니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Azure Websites 업로드 인증서 대화 상자" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureWebsitesUploadCertDialog.png" alt="Azure Websites Upload Certificate Dialog" width="610" height="200" border="0" />
+
+
+  그런 다음 Azure 관리 포털의 <em>인증서</em> 섹션에 다음 단계에서 필요한 지문이 나열된 인증서가 표시됩니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Azure Websites 인증서" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureWebsitesCertificate.png" alt="Azure Websites Certificates" width="610" height="158" border="0" />
+
+
+  &nbsp;
+
+  <blockquote>
+
+  <h3>b. REST API 사용</h3>
+
+  <a href="https://resources.azure.com/" target="_blank">Azure Resource Explorer</a>를 사용하여 REST API를 사용하여 인증서를 업로드할 수 있습니다. Azure Resource Explorer에 대한 자세한 내용은 <a href="https://azure.microsoft.com/blog/2015/04/02/azure-resource-explorer-a-new-tool-to-discover-the-azure-api/" target="_blank">이 블로그</a>를 참조하세요.</blockquote>
+
+  <h3>2. 앱 설정 추가</h3>
+
+  인증서의 지문에 값이 설정된 WEBSITE_LOAD_CERTIFICATES라는 앱 설정을 추가하면 웹 애플리케이션에서 액세스할 수 있습니다. 쉼표로 구분된 지문 값을 여러 개 포함하거나 이 값을 "* " (따옴표 없이)로 설정할 수 있습니다. 이 경우 모든 인증서가 웹 애플리케이션 개인 인증서 저장소에 로드됩니다.
+
+
+  웹 사이트에 대해 이 구성을 추가하려면 관리 포털에서 웹 사이트에 대한 <em>구성</em> 옵션으로 이동하여 <em>앱 설정</em> 섹션으로 아래로 스크롤하고 이전 단계에서 업로드한 인증서의 지문과 함께 아래와 같이 설정을 추가합니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="AzureWebsitesCertificate2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureWebsitesCertificate2.png" alt="AzureWebsitesCertificate2" width="610" height="131" border="0" />
+
+
+  인증서는 작업자 프로세스의 ApplicationPool ID의 개인 인증서 저장소에 설치됩니다.
+
+  <h3>3. 앱에서 액세스</h3>
+
+  다음은 웹 애플리케이션에서 지문을 사용하여 위의 예제에서 클라이언트 인증서에 액세스하는 데 사용할 수 있는 샘플 C# 코드입니다. 아래 지문을 인증서에 대한 지문으로 바꿔야 합니다.
+
+  <pre class="prettyprint">using System;
+
+  using System.Security.Cryptography.X509Certificates;namespace UseCertificateInAzureWebsiteApp
+
+  {
+    class Program
+    {
+      static void Main(string[] args)
+      {
+        X509Store certStore = new X509Store(StoreName.My, StoreLocation.CurrentUser);
+        certStore.Open(OpenFlags.ReadOnly);
+        X509Certificate2Collection certCollection = certStore.Certificates.Find(
+                                   X509FindType.FindByThumbprint,
+                                   // Replace below with your cert's thumbprint
+                                   “E661583E8FABEF4C0BEF694CBC41C28FB81CD870”,
+                                   false);
+        // Get the first cert with the thumbprint
+        if (certCollection.Count &gt; 0)
+        {
+          X509Certificate2 cert = certCollection[0];
+          // Use certificate
+          Console.WriteLine(cert.FriendlyName);
+        }
+        certStore.Close();
+      }
+    }
+  }</pre>
