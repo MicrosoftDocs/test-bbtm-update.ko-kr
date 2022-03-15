@@ -1,0 +1,172 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 79c5b3fd4f72866a3ff02fcc20570946b9497b2b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902759"
+Slug: azure-audit-logs-ux-refresh
+Title: Azure 감사 로그 UX 새로 고침
+Summary: 이 블로그 게시물에서는 감사 로그에 대한 UX 새로 고침의 일부로 출시된 새로운 기능에 대해 설명합니다.
+Content: >-
+  <p>최근에 Azure 감사 로그 데이터를 스토리지 계정 및 이벤트 허브로 내보낼 수 있는 기능을 <a href="https://azure.microsoft.com/en-us/blog/new-features-for-azure-diagnostics-and-azure-audit-logs/">발표</a> 했습니다. 감사 로그를 탐색하기 위한 풍부한 환경을 갖는 것에 대한 피드백을 공유했으며 Azure Portal에서 향상된 감사 로그 환경을 발표하게 되어 기쁩니다.</p>
+
+
+  <h2>Azure 감사 로그란?</h2>
+
+
+  <p>Azure 감사 로그는 리소스에서 수행된 모든 쓰기 작업(PUT, POST, DELETE)을 캡처합니다. 예를 들어 감사 로그를 사용하여 문제 해결 시 오류를 찾거나 조직의 사용자가 리소스를 수정하는 방법을 모니터링할 수 있습니다. 지난 90일간의 감사 로그에 무료로 액세스할 수 있습니다. 더 긴 기간 동안 감사 로그 데이터의 복사본을 유지해야 하는 경우 내보내기 옵션을 선택하고 데이터를 스토리지 계정으로 라우팅할 수 있습니다. 또한 이벤트 허브로 데이터를 스트리밍할 수도 있습니다.</p>
+
+
+  <h2>UX 새로 고침</h2>
+
+
+  <p>다음은 몇 가지 새로운 기능입니다.</p>
+
+
+  <ul>
+   <li>선행 필터 환경, 가로 스크롤 감소</li>
+   <li>사용자/서비스 주체 정보를 Graph 조회</li>
+   <li>신속한 정보 활용</li>
+   <li>쿼리는 &ndash; 일반적으로 사용되는 필터를 다시 사용합니다.</li>
+   <li>대시보드에 쿼리 고정</li>
+   <li>통합 결과 보기</li>
+   <li>상황에 맞는 요약 정보</li>
+   <li>CSV 파일 다운로드</li>
+  </ul>
+
+
+  <h4>선행 필터 환경, 가로 스크롤 감소</h4>
+
+
+  <p>새 블레이드를 열지 않고도 기본 필터 환경을 선불로 제공합니다. 가로 스크롤에 대한 피드백과 문제를 들었으며 반드시 필요한 경우가 아니면 새 블레이드를 열지 않았습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5cf6dcd4-9b59-417a-b194-a7fe5a2888b4.png"><img alt="" border="0" height="136" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5909210d-38e5-4648-9666-8834f243c9c4.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="1024"></a></p>
+
+
+  <h4>사용자/서비스 주체 정보를 Graph 조회</h4>
+
+
+  <p>특정 사용자가 수행한 작업을 필터링하려는 경우 필터 환경에서 해당 사용자를 직접 검색할 수 있습니다. &rsquo;사용자 정보를 조회할 수 있는 사용자의 &ndash; 정확한 이메일 주소를 알 필요가 없습니다. 백그라운드에서 Azure Active Directory 그래프 조회를 수행합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/64b7b0ee-e122-4645-bbb0-59c8dacdc079.png"><img alt="" border="0" height="157" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/03ee930e-9ee1-4373-9985-ebdb0bd69a47.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="1024"></a></p>
+
+
+  <p>Graph 조회는 사용자에게만 국한되지 않지만 서비스 주체에도 적용됩니다. 서비스 주체를 사용하여 스크립트 및 배포를 자동화한 경우 이제 특정 서비스 주체가 특별히 수행한 항목을 필터링하고 볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a110533d-3514-4c76-8dfa-be2abfbc9efa.png"><img alt="" border="0" height="158" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/57576a90-4f7b-4808-8316-d92ecb23bec6.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="1024"></a></p>
+
+
+  <h4>신속한 정보 활용</h4>
+
+
+  <p>빠른 Insights 필터를 설정하지 않고도 구독에서 발생하는 일을 엿볼 수 있는 방법을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8752ec9a-abad-4ddb-aad1-3114bcce6996.png"><img alt="" border="0" height="30" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61087439-dd18-4840-83d8-b2f32f8e3948.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="1024"></a></p>
+
+
+  <p>기본적으로 선택한 구독에 대해 다음과 같은 인사이트를 제공합니다.</p>
+
+
+  <ul>
+   <li>실패한 배포 수</li>
+   <li>역할 할당 수</li>
+   <li>오류 수</li>
+   <li>발생한 경고 수</li>
+   <li>중단 인시던트 수</li>
+  </ul>
+
+
+  <p>원하는 항목을 클릭하면 해당 쿼리에 대한 결과를 직접 가져오고 쿼리 필터를 자동으로 채우기도 합니다.</p>
+
+
+  <h4>쿼리는 &ndash; 일반적으로 사용되는 필터를 다시 사용합니다.</h4>
+
+
+  <p>이제 일반적인 필터 패턴을 쿼리로 저장할 수 있습니다. 예를 들어 특정 리소스 그룹의 모든 오류를 표시하는 쿼리를 만들 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6cf7c53b-ab6f-4ff0-8722-f0a512b45725.png"><img alt="" border="0" height="136" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ed75bef0-d633-43f5-b109-641924d67da8.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="1024"></a></p>
+
+
+  <p>다음에 감사 로그를 찾아볼 때 필터를 다시 설정하는 대신 기존 쿼리 중 하나를 다시 사용할 수 있습니다.</p>
+
+
+  <h4>대시보드에 쿼리 고정</h4>
+
+
+  <p>쿼리를 지속적으로 모니터링하려는 경우 대시보드에 쿼리를 고정하여 쉽게 모니터링할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53e6f0c5-227a-459a-93f6-b4f03e151cd1.png"><img alt="" border="0" height="64" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b846aabe-b042-48ce-ba77-df8404551eaa.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="640"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5de1dd2f-b080-4e8d-be70-6643c898e44d.png"><img alt="" border="0" height="424" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5862494d-a0ae-4264-a2d4-19ba659d4649.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="640"></a></p>
+
+
+  <p>여러 쿼리를 고정할 수 있으며 Azure 대시보드를 단일 위치로 사용하여 감사 로그 작업을 포함하여 모니터링과 관련된 모든 항목을 볼 수 있습니다.</p>
+
+
+  <p>이렇게 하면 감사 로그 블레이드를 열 필요 없이 가장 일반적인 쿼리의 작업 수를 모니터링할 수 있습니다.</p>
+
+
+  <h4>통합 결과 보기</h4>
+
+
+  <p>쿼리할 때 모든 데이터를 한 곳에 함께 표시합니다. 호출자 정보에 서비스 주체 이름도 표시됩니다. 다른 관련 작업이 있는 경우 사용자는 작업을 드릴다운할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/89a1ff59-a6e1-47e1-8735-379e47f11a99.png"><img alt="" border="0" height="477" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d82cfb7f-d225-4fd3-b8e3-b6e717127128.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="1024"></a></p>
+
+
+  <p>특정 작업을 클릭하여 요약을 볼 수 있습니다. 요약 데이터 대신 원시 JSON 데이터를 보려면 JSON 탭을 클릭하면 됩니다.</p>
+
+
+  <h4>상황에 맞는 요약 정보</h4>
+
+
+  <p>다음과 같은 상황에 맞는 요약 정보가 있습니다.</p>
+
+
+  <ul>
+   <li>오류: 오류를 클릭하면 요약에 실패 이유가 자동으로 표시됩니다.</li>
+   <li>역할 할당: 역할 할당을 클릭하면 요약 내에서 리소스를 공유한 사람이 자동으로 표시됩니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/20aa9764-6174-4568-931a-3838f43ffe10.png"><img alt="" border="0" height="387" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b80dfb8f-d4fe-4feb-b810-e8526946ea5f.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="1024"></a></p>
+
+
+  <p>위의 스크린샷에서는 사용자&rsquo;&lsquo; PrincipalId&rsquo;가 표시되지 않습니다. 대신 Azure Active Directory 사용자 정보를 조회하고 현재 컨텍스트와 관련된 사용자 정보를 직접 표시합니다. 그래프 조회와 마찬가지로 서비스 주체에도 적용할 수 있습니다.</p>
+
+
+  <h4>CSV 파일 다운로드</h4>
+
+
+  <p>결과를 CSV 파일로 다운로드하여 포털에 표시되는 정확한 결과를 다운로드할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4c6c1077-78b8-470d-a907-af0f4fbfa11c.png"><img alt="" border="0" height="163" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/be2cbbd3-d29a-4add-a771-115f3dc2ebc8.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="" width="1024"></a></p>
+
+
+  <h2>다음에&#39;것</h2>
+
+
+  <p>앞으로 다음을 포함하여 모니터링 환경의 다른 측면을 통합하기 위해 노력하고 있습니다.</p>
+
+
+  <ul>
+   <li>경고를 관리하는 더 나은 방법</li>
+   <li>향상된 메트릭 환경</li>
+   <li>진단 로그를 구성하고 보는 쉬운 방법</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>사용해 보고 피드백을 알려주세요!</p>

@@ -1,0 +1,97 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 08749080dbb1b2ac1db1bc377b40e3b244a83984
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903172"
+Slug: microsoft-azure-storage-import-export-announcements
+Title: Microsoft Azure Storage Import/Export 알림
+Summary: 'Azure Resource Manager 및 쿨 Storage 계정 지원이 포함된 Azure Portal 오늘 새 Azure Portal에서 Azure Import/Export Service의 가용성을 발표합니다. '
+Content: >-
+  <p>Azure Import/Export Service를 사용하면 하드 드라이브에 데이터를 전달하여 Azure Blob Storage 내/외부로 데이터를 전송할 수 있습니다. 네트워크를 통해 업로드/다운로드하는 데 시간이 오래 걸리는 많은 양의 데이터가 있는 경우 이 서비스를 사용할 수 있습니다. 오늘 이 서비스에 대한 몇 가지 개선 사항을 공유하게 되어 기쁩니다.</p>
+
+
+  <h2>Azure Portal의 Azure Import/Export</h2>
+
+
+  <p>오늘 <a href="https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.ImportExport%2Fjobs">새 Azure Portal</a>에서 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-import-export-service">Azure Import/Export Service</a>의 일반 공급에 대해 발표하게 되어 기쁩니다.</p>
+
+
+  <p>Azure Portal을 지원하면 다음을 수행할 수 있는 기능이 추가됩니다.</p>
+
+
+  <ul>
+   <li>동일한 창의 모든 스토리지 계정에서 가져오기 및 내보내기 작업을 관리합니다.</li>
+   <li>전체 작업 및 각 드라이브의 상태를 개별적으로 보고 데이터 전송 중에 완료율을 표시합니다.</li>
+   <li>가져오기 또는 내보내기 작업 중에 경고/오류가 발생한 경우 오류 로그에 대한 링크를 가져옵니다.</li>
+   <li>작업 처리 지연을 방지하기 위해 추적 정보를 업데이트하지 못한 경우 미리 알림 경고 표시를 참조하세요.</li>
+  </ul>
+
+
+  <p><a href="#"><img alt="image" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7ae070d5-4faa-4999-a0e6-1e6d1d4d038d.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="956"></a></p>
+
+
+  <h2>Storage 계정 &ndash; 클래식, Azure Resource Manager(쿨 및 핫 액세스 계층)</h2>
+
+
+  <p>클래식 Storage 계정 외에도 핫 및 쿨 액세스 계층을 사용하여 Azure Resource Manager 계정을 대상으로 하는 가져오기 및 내보내기 작업을 만들 수 있습니다. 클래식 및 Resource Manager 스토리지 계정에 대한 모든 새 작업은 Azure Portal에서 만들 수 있습니다. 클래식 포털에서 이미 만든 작업의 경우 클래식 Azure Portal을 통해 작업을 계속 관리할 수 있습니다.</p>
+
+
+  <h2>Import/Export 도구 &ndash; 다중 드라이브 및 다중 소스 지원</h2>
+
+
+  <p>WAImportExport 클라이언트 도구 개선 사항도 발표하게 되어 기쁩니다. 다운로드 센터에서 최신 버전의&nbsp; WAImportExport 클라이언트 도구를 다운로드합니다. <a href="https://docs.microsoft.com/en-us/azure/storage/storage-import-export-tool-how-to">WAImportExport 클라이언트 도구를 사용하는 방법을</a> 알아봅니다. 이 도구를 사용하여 Azure 데이터 센터에 운송할 하드 드라이브에 데이터를 복사할 수 있습니다.</p>
+
+
+  <p>많은 양의 데이터를 처리하기 위해 디스크를 Azure 데이터 센터로 보내기 전에 필요한 준비 작업을 크게 줄이기 위해 이 도구가 향상되었습니다. 더 이상 데이터를 분할하고 여러 디스크에 데이터의 최적의 배치를 파악할 필요가 없습니다. 이제 단일 명령줄에서 여러 원본 디렉터리에서 데이터를 복사할 수 있습니다.</p>
+
+
+  <p><br>
+
+  이 버전의 도구는 가져오기 작업을 위해 디스크를 준비하는 동안 다음과 같은 향상된 기능을 제공합니다.</p>
+
+
+  <ul>
+   <li>단일 명령으로 여러 원본 디렉터리에서 데이터를 복사할 수 있습니다.</li>
+   <li>대상 데이터를 다양한 원본 디렉터리에서 다른 대상 가상 디렉터리로 재구성할 수 있습니다.</li>
+   <li>단일 명령줄을 사용하여 여러 디스크를 준비하는 기능.</li>
+   <li>여러 디스크에 데이터를 자동으로 분산합니다.</li>
+   <li>CSV(쉼표로 구분된) 파일을 사용하여 각 디스크와 데이터를 처리하는 방법을 중앙에서 제어합니다.</li>
+  </ul>
+
+
+  <h2>Import/Export 도구 v1 &ndash; 플랫폼 독립적 복사본</h2>
+
+
+  <p>도구의 WAImportExport V1 릴리스에서 새 플래그<em><strong> /skipwrite</strong></em> 를 도입하게 되어 기쁘게 생각합니다.</p>
+
+
+  <p>이 새 플래그를 사용하면 디스크 준비를 OS/도구를 사용한 데이터 복사 및 Import/Export 도구 v1을 사용한 후처리의 두 단계로 분할할 수 있습니다. 사후 처리에는 저널 파일, 드라이브 매니페스트 생성 및 데이터가 이미 디스크에 미리 작성된 경우 선택적으로 디스크 암호화가 포함됩니다.</p>
+
+
+  <p>즉, 데이터 복사는 NTFS 파일 시스템(예: <strong>Linux</strong>)을 지원하는 모든 OS에서 발생할 수 있습니다. Windows 컴퓨터에서는 사후 처리만 이뤄져야 합니다.</p>
+
+
+  <p>또한 백업 하드 디스크를 직접 다시 사용하고 Azure Import/Export 작업에 대한 추가 하드웨어를 조달할 필요가 없습니다.</p>
+
+
+  <p>도구의 <a href="https://download.microsoft.com/download/0/C/D/0CD6ABA7-024F-4202-91A0-CE2656DCE413/WaImportExportV1.zip">WAImportExport V1 버전을 다운로드</a> 하고 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-import-export-tool-how-to-v1">WAImportExport V1 사용 가이드</a> 를 참조하세요.</p>
+
+
+  <h2>지역별 가용성 확장</h2>
+
+
+  <p>이제 Azure Import/Export 서비스를 캐나다, US Gov 및 중국으로 확장했습니다. 이러한 추가 기능을 사용하면 드라이브를 배송하기 위해 가까운 20개 지역 중 하나를 선택할 수 있습니다. 모든 지역에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/regions/services/">지역 페이지에서 사용할 수 있는 Azure 제품의</a> Storage 아래 Import/Export&nbsp; 참조하세요.</p>
+
+
+  <h2>하드 드라이브 유형</h2>
+
+
+  <p>3.5&rdquo; 내부 SATA II/III 디스크 외에도 Azure Import/Export 이제 2.5&rdquo; 내부 SATA 드라이브 및 내부 SSD 드라이브를 사용하여 가져오기 또는 내보내기 작업을 처리할 수 있습니다.</p>
+
+
+  <h2>궁금한 점이 더 있나요?</h2>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-import-export-service">Azure Import/Export 개요</a>로 이동합니다. 피드백은 Microsoft에 중요하므로 <a href="https://feedback.azure.com/forums/217298-storage/category/180676-import-export">Import/Export User Voice</a>를 사용하여 모든 피드백 또는 기능 요청을 보냅니다. 도움이 필요하면 걱정하지 &ndash; 마세요&rsquo;. Microsoft 지원에서 도움을 받을 수 있습니다.</p>

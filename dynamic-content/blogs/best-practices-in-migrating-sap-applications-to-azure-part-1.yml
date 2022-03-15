@@ -1,0 +1,134 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0556f244167ed60deb2af7d74109b2306d43c7d7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898699"
+Slug: best-practices-in-migrating-sap-applications-to-azure-part-1
+Title: SAP 애플리케이션을 Azure로 마이그레이션하는 모범 사례 - 1부
+Summary: '이 블로그 게시물에서는 마이그레이션 준비 상태의 Azure 아키텍처에서 SAP를 빌드하는 것과 관련하여 "훌륭한 Azure 아키텍처의 핵심 요소"에 설명된 원칙을 살펴보겠습니다. '
+Content: >-
+  <p><em>SAP를 Azure로 마이그레이션하기 위한 모범 사례에 대한 3부로 구성된 블로그 게시물 시리즈의 첫 번째 블로그입니다.</em></p>
+
+
+  <h2>Azure 아키텍처에서 뛰어난 SAP 디자인</h2>
+
+
+  <p>이 블로그 게시물에서는 마이그레이션 준비를 위해 Azure 아키텍처에서 &ldquo; SAP를 빌드하는 것과 관련하여 <a href="https://docs.microsoft.com/en-us/learn/modules/pillars-of-a-great-azure-architecture/" target="_blank">훌륭한 Azure 아키텍처</a>&rdquo;의 핵심 요소에 설명된 원칙을 살펴보겠습니다.</p>
+
+
+  <p>Azure의 훌륭한 SAP 아키텍처는 다음 네 가지 핵심 요소에 기반한 견고한 기반에서 시작됩니다.</p>
+
+
+  <ul>
+   <li>보안</li>
+   <li>성능 및 확장성</li>
+   <li>가용성 및 복구 기능</li>
+   <li>효율성 및 운영</li>
+  </ul>
+
+
+  <h2>보안을 위한 디자인 <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a050ecb0-17d7-41a1-9622-42098fa867ef.png"><img align="right" alt="Graph comparing the responsibility of Microsoft and customers" border="0" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ed46ce1f-ce14-49f5-917e-81d1802dc2e1.png" style="margin: 43px 0px 0px; border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="Microsoft 및 고객의 책임 비교 Graph" width="295"></a></h2>
+
+
+  <p>SAP 데이터는 조직&#39;기술적 공간의 보물일 수 있습니다. 따라서 보안 인증을 통해 SAP 아키텍처에 대한 액세스를 보호하고, 네트워크 취약성으로부터 애플리케이션 및 데이터를 보호하고, 암호화 방법을 통해 데이터 무결성을 유지하는 데 집중해야 합니다.</p>
+
+
+  <p>Azure의 SAP는 IaaS(서비스 제공 인프라) 클라우드 모델로 제공됩니다. 즉, 보안 보호는 물리적 데이터 센터, 물리적 네트워크, 물리적 호스트 수준 및 하이퍼바이저에서 Microsoft에 의해 서비스에 기본 제공됩니다. 따라서 하이퍼바이저 위의 영역(예: SAP용 게스트 운영 체제)의 경우 선택한 서비스 및 기술을 신중하게 평가하여 아키텍처에 적절한 보안 제어를 제공해야 합니다.</p>
+
+
+  <p>인증 측면에서 Azure AD(<a href="https://docs.microsoft.com/en-us/azure/active-directory/" target="_blank">Azure Active Directory</a>)를 활용하여 S/4HANA Fiori 실행 패드에 SSO(Single Sign-On)를 사용하도록 설정할 수 있습니다. Azure AD를 SAP SCP(클라우드 플랫폼)와 통합하여 AZURE에서도 실행할 수 있는 SCP 서비스에 Single Sign-On을 제공할 수 있습니다.</p>
+
+
+  <p>NSG(<a href="https://docs.microsoft.com/en-us/azure/virtual-network/security-overview" target="_blank">네트워크 보안 그룹</a>)를 사용하면 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview" target="_blank">가상 네트워크의</a> 리소스에 대한 네트워크 트래픽을 필터링할 수 있습니다. 예를 들어 온-프레미스 IP 주소 범위에서 SAP 애플리케이션 포트에 대한 액세스를 허용하고 공용 인터넷 액세스를 거부하는 등 SAP 서비스에 대한 액세스를 허용하거나 거부하도록 NSG 규칙을 정의할 수 있습니다.</p>
+
+
+  <p>데이터 무결성과 관련하여 <a href="https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-faq" target="_blank">Azure Disk Encryption</a> 은 운영 체제와 데이터 볼륨을 스토리지의 미사용 시 암호화할 수 있는 SAP 가상 머신 디스크를 암호화하는 데 도움이 됩니다. Azure Disk Encryption은 암호화 키를 제어하고 관리하는 <a href="https://docs.microsoft.com/en-us/azure/key-vault/key-vault-whatis" target="_blank">Azure Key Vault</a> 와 통합됩니다. 대부분의 SAP 고객은 해당 운영 체제 디스크에 대해 Azure Disk Encryption을 선택하고 SAP 데이터베이스 파일에 대해 투명한 DBMS 데이터 암호화를 선택합니다. 이 방법은 운영 체제의 무결성을 보호하고 데이터베이스 백업도 암호화되도록 합니다.</p>
+
+
+  <p>보안 영역에서 관심 있는 항목을 자세히 알아보려면 <a href="https://docs.microsoft.com/en-us/azure/security/" target="_blank">Azure Security 설명서를</a> 참조하세요.</p>
+
+
+  <h2>성능 및 확장성을 위한 디자인</h2>
+
+
+  <p>성능은 비즈니스 프로세스를 디지털화하는 핵심 동인이며, 성능이 뛰어난 SAP 애플리케이션을 사용하는 것은 최종 사용자가 좌절 없이 효율적으로 작업하는 데 매우 중요합니다. 따라서 SAP 배포를 위한 품질 크기 조정 연습을 수행하고 Azure 구성 요소 컴퓨팅, 스토리지 및 네트워크의 크기를 조정하는 것이 중요합니다 &ndash; .</p>
+
+
+  <p><a href="https://launchpad.support.sap.com/#/notes/1928533" target="_blank">SAP Note #1928533</a> SAP 애플리케이션을 실행하는 데 지원되는 Azure Virtual Machines의 <a href="https://www.sap.com/about/benchmark/measuring.html" target="_blank">SAPS</a> 값을 자세히 설명하며, 아래 링크 내에서 Azure VM 유형별 네트워크 및 스토리지 처리량을 얻을 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes?toc=%2fazure%2fvirtual-n..." target="_blank">Azure에서 Windows Virtual Machines의 크기</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes?toc=%2fazure%2fvirtual-net..." target="_blank">Azure의 Linux Virtual Machines 크기</a></li>
+  </ul>
+
+
+  <p>Azure의 민첩성을 통해 SAP 시스템을 쉽게 확장할 수 있습니다. 예를 들어 데이터베이스 서버의 컴퓨팅 용량을 늘리거나 수요가 발생할 때 애플리케이션 서버를 추가하여 수평적으로 확장할 수 있습니다. 여기에는 SAP 마이그레이션 처리량을 가속화하고 가동 중지 시간을 줄이기 위해 인프라를 일시적으로 강화하는 것이 포함됩니다.</p>
+
+
+  <p>SAP 애플리케이션 및 데이터베이스 계층에 가상 머신 가속기를 활용하는 것이 좋습니다. 가상 머신에서 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/create-vm-accelerated-networking-cli" target="_blank">가속화된 네트워킹을</a> 사용하도록 설정하여 네트워크 성능을 가속화합니다. M 시리즈 가상 머신에서 SAP 데이터베이스를 실행하는 시나리오에서는 쓰기 I/O 대기 시간을 개선하기 위해 데이터베이스 로그 볼륨에서 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/how-to-enable-write-accelerator" target="_blank">Write Accelerator</a> 지속성 쓰기 캐시를 사용하도록 설정하는 것이 좋습니다. 쓰기 가속기는 /hana/log 볼륨에 대한 쓰기 대기 시간(하위 밀리초)을 보장하기 위해 생산적인 SAP HANA 워크로드에 필수입니다.</p>
+
+
+  <p>SAP 데이터베이스 서버에 Premium Storage Managed Disks를 사용하여 고성능 및 짧은 대기 시간 I/O를 활용할 수 있습니다. 애플리케이션 요구 사항에 맞게 IOPS 및 처리량을 집계하기 위해 RAID-0 스트라이프를 빌드해야 할 수 있습니다. SAP HANA 워크로드의 경우 설명서, &ldquo;<a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-vm-operations" target="_blank">SAP HANA 인프라 구성 및 Azure에서의 작업</a> 내에서 스토리지 모범 사례를 다룹니다.&rdquo;</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank">ExpressRoute</a> 또는 VPN은 온-프레미스 SAP 최종 사용자 및 Azure의 SAP 애플리케이션에 연결하는 애플리케이션 인터페이스에 대한 연결을 용이하게 합니다. Azure의 프로덕션 SAP 애플리케이션의 경우 안정성, 더 빠른 속도, 짧은 대기 시간 및 더 엄격한 보안을 제공하는 전용 전용 연결에 ExpressRoute를 사용하는 것이 좋습니다. SAP 애플리케이션과 비 SAP 애플리케이션 간의 대기 시간에 중요한 인터페이스를 염두에 두고 SAP 애플리케이션 및 비 SAP 애플리케이션 그룹이 Azure에 함께 배치되는 마이그레이션 &ldquo;이동 그룹을&rdquo; 정의해야 할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b3157cdc-744d-4491-812c-e1d813b0b725.png"><img alt="ExpressRoute or VPN facilitates connectivity for on-premises SAP end-users and application interfaces connecting to your SAP applications in Azure." border="0" height="200" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/de76cdfb-309e-49e2-b5ca-5b9905e52e23.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ExpressRoute 또는 VPN은 연결을 용이하게 합니다. " width="780"></a></p>
+
+
+  <h2>가용성 및 복구 가능성을 위한 디자인</h2>
+
+
+  <p>운영 안정성 및 비즈니스 연속성은 중요 업무용 계층 1 SAP 애플리케이션에 매우 중요합니다. 가용성을 디자인하면 지역화된 소프트웨어 또는 하드웨어 오류가 발생할 경우 SAP 애플리케이션 작동 시간이 보호됩니다. 생산적인 SAP 애플리케이션의 경우 계획되거나 계획되지 않은 유지 관리 이벤트로부터 보호하기 위해 시스템 중앙 서비스 A(SCS) 및 데이터베이스와 같은 SAP 단일 실패 지점을 실행하는 가상 머신을 가용성 집합 또는 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/sap-ha-availability-zones" target="_blank">가용성 영역에</a> 배포하는 것이 좋습니다. 이는 하나의 더 큰 애플리케이션 서버 대신 몇 개의 작은 서버를 권장하는 SAP 애플리케이션 서버에도 적용됩니다. Windows 장애 조치(failover) 클러스터 또는 Linux Pacemaker와 같은 운영 체제 클러스터 기술은 게스트 OS에서 구성되어 A(SCS) 및 DBMS의 짧은 장애 조치(failover) 시간을 보장합니다. DBMS 동기 복제는 데이터 손실을 방지하도록 구성됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3d7f7719-88c6-4892-a048-82503f1748a1.png"><img alt="Industry-leading high availability SLA" border="0" height="533" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e731a7e6-20d2-41c1-9847-639ec7a3964e.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="업계 최고의 고가용성 SLA" width="1232"></a></p>
+
+
+  <p>복구 가능성을 위한 설계는 SAP 데이터베이스의 논리적 오류 또는 대규모 재해 또는 전체 Azure 지역의 손실과 같은 데이터 손실로부터 복구하는 것을 의미합니다. 복구 기능을 디자인할 때는 SAP 애플리케이션의 RPO(복구 지점 목표) 및 RTO(복구 시간 목표)를 이해해야 합니다. <a href="https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions" target="_blank">Azure 지역 쌍</a> 은 단일 지역에 영향을 미치는 자연 재해 또는 사람 재해의 위험에 대비하여 격리 및 가용성을 제공하는 재해 복구에 권장됩니다.</p>
+
+
+  <p>DBMS 계층에서 비동기 복제를 사용하여 주 지역에서 재해 복구 지역으로 프로덕션 데이터를 복제할 수 있습니다. SAP 애플리케이션 계층에서 <a href="https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-sap" target="_blank">Azure-Azure Site Recovery</a> 는 효율적이고 비용에 민감한 재해 복구 솔루션의 일부로 사용할 수 있습니다.</p>
+
+
+  <p>SAP 배포 아키텍처 디자인 내에서 가용성과 복구 가능성을 신중하게 고려해야 합니다. 이렇게 하면 가동 중지 시간 및 데이터 손실로 인한 재정적 손실로부터 비즈니스를 보호할 수 있습니다.</p>
+
+
+  <h2>운영 및 효율성 설계</h2>
+
+
+  <p>Azure로 이동하면 SAP 시스템 합리화 평가를 수행할 수 있는 기회도 제공됩니다. 모든 SAP 시스템을 이동해야 합니까, 아니면 더 이상 사용되지 않는 시스템을 해제할 수 있나요? 예를 들어 Microsoft-IT는 <a href="https://www.microsoft.com/itshowcase/blog/hello-azure-unpacking-microsoft-moved-sap-workload-cloud/" target="_blank">Azure로의 SAP 마이그레이션</a>의 일환으로 약 60개의 가상 머신을 서비스 해제했습니다.</p>
+
+
+  <p>효율성 측면에서는 Azure 배포에서 SAP 내에서 낭비를 제거하는 데 집중합니다. 라이브로 전환한 후 크기 조정을 검토합니다. 사용률에 따라 가상 머신의 크기를 줄일 수 있나요? 사용되지 않는 디스크를 삭제할 수 있나요?&nbsp;&nbsp;</p>
+
+
+  <p>가상 머신의 할당을 해제하거나 &ldquo;다시 알림&rdquo; 하면 엄청난 비용을 절감할 수 있습니다. 예를 들어 SAP 샌드박스 시스템을 24시간 x 7일이 아닌 10시간 x 5일 동안 실행하면 종량제 모델에서 비용이 약 70% 절감됩니다. SAP 애플리케이션이 24 x 7을 실행해야 하는 경우 <a href="https://azure.microsoft.com/en-gb/pricing/reserved-vm-instances/" target="_blank">Azure Reserved Instances</a> 를 선택하여 비용을 절감합니다.</p>
+
+
+  <p>각 SAP 배포에 대해 수동으로 인프라를 설정하는 것은 번지러울 수 있으며 오류가 발생하기 쉬울 수 있으며, 여러 SAP 설치가 필요한 경우 몇 시간 또는 며칠이 소요되는 경우가 많습니다. 따라서 효율성을 향상하려면 SAP 인프라 배포 및 소프트웨어 설치를 최대한 자동화하는 것이 좋습니다. 코드로서의 인프라를 사용하여 SAP 프로젝트 환경과 같이 필요에 따라 새 SAP 환경을 빌드하는 DevOps 패러다임을 수용합니다. 아래에서 자동화를 시작할 수 있는 몇 가지 링크가 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f1b579b0-39be-4fe3-9f81-e50e4a4fde86.png"><img alt="Manual deployment pairs and automated deployment gains" border="0" height="416" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/011a0bcd-ea2c-4155-a40e-15b6dc9af99b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="수동 배포 쌍 및 자동화된 배포 향상" width="640"></a></p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com\en-gb\blog\automating-sap-deployments-in-microsoft-azure-using-terraform-and-ansible/" target="_blank">Terraform 및 Ansible을 사용하여 Microsoft Azure에서 SAP 배포 자동화</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/accelerate-your-sap-on-azure-hana-project-with-suse-microsoft-solution-templates" target="_blank">SUSE Microsoft 솔루션 템플릿을 사용하여 Azure HANA 프로젝트에서 SAP 가속화</a></li>
+  </ul>
+
+
+  <p>SAP에서 Azure로의 여정에 착수할 때 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/get-started" target="_blank">공식 설명서를</a> 검토하여 SAP 워크로드를 호스팅하고 실행하기 위해 Azure를 사용하는 것에 대한 이해를 심화하는 것이 좋습니다.&nbsp;</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/sap-deployment-checklist" target="_blank">Azure의 SAP 워크로드 계획 및 배포 검사 목록을</a> 나침반으로 사용하여 SAP 마이그레이션 프로젝트의 다양한 단계를 탐색합니다. 검사 목록은 Azure에서 고품질 SAP 배포를 위한 올바른 방향으로 안내합니다.</p>
+
+
+  <p>또한 Azure의 SAP에 대한 백서인 &ldquo; 마이그레이션 방법론을 살펴보는 것이 좋습니다. <a href="https://azure.microsoft.com/en-us/resources/migration-methodologies-for-sap-on-azure/" target="_blank">여기서는 Azure</a>&rdquo;에 SAP 자산을 배치하기 위한 다양한 마이그레이션 옵션을 살펴보는 것이 좋습니다. SAP 애플리케이션에 거대한 데이터베이스 공간이 있는 시나리오에서도 다룹니다. 자세한 내용은 블로그 게시물인 &ldquo;<a href="https://techcommunity.microsoft.com/t5/Running-SAP-Applications-on-the/Very-Large-Database-Migration-to-Azure-8211-Recommendations/ba-p/368146" target="_blank">매우 큰 데이터베이스를 Azure로 마이그레이션하는 방법을</a> 참조하세요.&rdquo;</p>
+
+
+  <p>이 시리즈의 다음 블로그에서는 Azure에서 Suite-on-HANA 및 S/4HANA로 마이그레이션하는 방법을 중점으로 살펴보겠습니다.</p>

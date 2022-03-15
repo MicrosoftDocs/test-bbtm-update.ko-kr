@@ -1,0 +1,127 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3e05dc1d1db99d2c634f1df402b62fc78c875d53
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899195"
+Slug: a-year-in-review-for-azure-government
+Title: Azure Government에 대한 1년 검토
+Summary: 지난 1년 동안의 성과를 되돌아보면 2018년 Azure Government에 대한 투자를 계속 두 배로 줄이면서 실질적인 모멘텀을 얻을 수 있습니다.
+Content: >-
+  <p>지난 1년을 되돌아보면 2018년 Azure Government에 대한 투자를 계속 두 배로 줄이면서 실질적인&rsquo; 모멘텀을 얻을 수 있습니다.</p>
+
+
+  <p>Azure Government의 엔지니어링 책임자로서 우리 팀은 데이터 센터를 빌드하는 위치, 해당 데이터 센터에 배치한 하드웨어 및 네트워킹, 가져오는 서비스 및 규정 준수를 달성하는 방법에 이르기까지 모든 것을 살펴봅니다.</p>
+
+
+  <p>다음은&#39;놀라운 작업을 지원하기 위해 지난 1년 동안 우리가 제공한&#39;몇 가지 하이라이트입니다.<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/19efff07-4399-42ad-b54e-dea4ff51370d.png"><img align="right" alt="RegionsImage_thumb[1]" border="0" height="132" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b27bd58-e50d-4890-8930-a62e7fc0fbc9.png" style="margin: 10px 0px 0px 6px; border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="RegionsImage_thumb[1]" width="198"></a></p>
+
+
+  <p><b>전국의 고객에게 더 나은 서비스를 제공하기 위해</b> <a href="https://blogs.msdn.microsoft.com/azuregov/2017/07/10/microsoft-azure-government-now-available-from-six-us-datacenter-regions/" target="_blank">텍사스와 애리조나</a> 의 새로운 지역과 <a href="https://blogs.msdn.microsoft.com/azuregov/2017/01/13/azure-dod-regions-accredited-at-impact-level-5-and-now-generally-available/" target="_blank">두 개의 새로운 DoD 지역을 통해 두 지역에서</a> 6개로 성장했습니다. 우리는 새로운 ExpressRoute 위치로 서해안으로 발자국을 확장했기 때문에 전국에 발자국이 있는 기관은 서해안과 동부 해안 모두에서 우리와 피어하고 어두운 섬유를 데이터 센터로 탈 수 있습니다. 고객에게 더 가까운 애플리케이션을 실행하고 두 해안 모두에서 재해 복구 기능을 사용할 수 있습니다.</p>
+
+
+  <p><strong>정부의 가장 엄격한 규정 준수 요구를 충족하기 위해</strong> <a href="https://blogs.msdn.microsoft.com/azuregov/2017/01/13/azure-dod-regions-accredited-at-impact-level-5-and-now-generally-available/" target="_blank">두 개의 새로운 DoD 지역은</a> 다음과 같습니다.<strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3d0833b9-df53-4092-9af7-d2e1a7c493b2.jpg"><img align="right" alt="160a5ed2-4068-4033-8c62-5b1885ed2a32_thumb[3]" border="0" height="107" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7ef7aace-bae5-4f7d-9d35-a8319427281e.jpg" style="margin: 0px 0px 10px; border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="160a5ed2-4068-4033-8c62-5b1885ed2a32_thumb[3]" width="111"></a>영향 수준 5에서 공인. </strong>미국 국방부 동부 및 US DoD 중부 지역은 클라우드 컴퓨팅에 대한 미국 국방부(DoD) 보안 요구 사항, 특히 DoD 영향 수준 5로 지정된 데이터에 맞게 설계되는 Microsoft Azure 물리적으로 분리된 지역입니다. DoD 워크로드에 대한 전용 지역을 찾는 방어 고객은 Azure Government에서 이를 찾을 수 있습니다.</p>
+
+
+  <p><strong>다양한 워크로드&rsquo;에 도움이 되도록 확장된 컴퓨팅 옵션을 크게</strong> 익히면&rsquo; 향후 몇 달 안에 더 많은 것을 볼 수 있습니다. 큰 컴퓨팅, 높은 메모리 컴퓨팅 등을 수행할 수 있는 기능을 도입했습니다. 기계 학습 알고리즘 또는 그래픽 및 이미지 처리를 수행하는 <a href="https://blogs.msdn.microsoft.com/azuregov/2017/08/16/azure-nc-virtual-machines-availability-gpu-compute/" target="_blank">데 GPU 컴퓨팅</a> 이 필요한 경우 고속으로 이를 수행할 수 있는 기능이 있습니다. 그리고 이전에는 가능하지 않았던 규모&rsquo;로 이전에는 가능하지 않았던&rsquo; 쿼리를 수행하도록 GPU를 기반으로 실행되도록 데이터베이스를 다시 상상할 수 있습니다.</p>
+
+
+  <table border="1" cellpadding="2">
+   <tbody>
+    <tr>
+     <td valign="top">
+     <p style="text-align: center;"><strong>컴퓨팅</strong></p>
+
+     <p style="text-align: center;"><a href="https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-functions" target="_blank">Azure Functions</a></p>
+
+     <p style="text-align: center;"><strong>네트워킹</strong></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/02/02/vnet-peering-generally-available-for-azure-government/" target="_blank">Vnet 피어링</a></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/09/05/network-performance-monitor-general-availability/" target="_blank">네트워크 성능 모니터</a></p>
+
+     <p style="text-align: center;"><strong>스토리지</strong></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/09/05/announcing-general-availability-of-blob-storage-hotcool-in-us-gov-virginia/" target="_blank">Blob Storage(핫/쿨)</a></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/07/21/general-availability-of-storage-service-encryption-and-secure-transfer-required" target="_blank">스토리지 서비스 암호화</a></p>
+
+     <p style="text-align: center;"><strong>웹 + 모바일</strong></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2016/10/13/azure-app-service-generally-available-in-azure-government/" target="_blank">Azure App Service</a></p>
+
+     <p style="text-align: center;"><strong>Media Services</strong></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/07/13/azure-media-analytics-now-available-on-azure-government/" target="_blank">Azure 미디어 분석</a></p>
+
+     <p style="text-align: center;"><strong>데이터베이스</strong></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/05/11/announcing-cosmosdb-and-blob-hotcool-storage/" target="_blank">Azure Cosmos DB</a></p>
+     </td>
+     <td valign="top">
+     <p style="text-align: center;"><strong>데이터 &amp; 분석</strong></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/12/04/hdinsight-extension-for-vs-code-now-available-in-azure-government/" target="_blank">Azure HD Insight</a></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/09/28/power-bi-premium-generally-available-for-u-s-government-users/" target="_blank">정부 Power BI</a></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/10/11/data-science-virtual-machines-are-now-available-on-azure-government-clou" target="_blank">데이터 과학 VM</a></p>
+
+     <p style="text-align: center;"><strong>AI &amp; Cognitive Services</strong></p>
+
+     <p style="text-align: center;"><a href="https://azure.microsoft.com/en-us/blog/azure-brings-big-data-analytics-and-visualization-capabilities-to-u-s-government/" target="_blank">Cognitive Services 미리 보기</a></p>
+
+     <p style="text-align: center;"><strong>사물 인터넷</strong></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/06/12/microsoft-expands-data-offerings-for-government-with-general-availability-of-azure-iot-hub-on-azure-government/" target="_blank">IoT Hub</a></p>
+
+     <p style="text-align: center;"><strong>보안 + ID</strong></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/10/17/azure-security-center-coming-to-azure-government" target="_blank">새 보안 + 감사 기능</a></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/09/18/azure-active-directory-premium-is-now-in-limited-preview-in-azure-government/" target="_blank">미리 보기의 AAD Premium</a></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/10/18/announcing-new-azure-government-capabilities-for-classified-mission-critical-workloads/" target="_blank">보안 및 분류된 워크로드를 위한 새로운 기능</a></p>
+
+     <p style="text-align: center;"><strong>모니터링 + 관리</strong></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/08/01/azure-site-recovery-available-in-dod-and-new-azure-government-regions/" target="_blank">모든 Azure Government 지역의 Azure Site Recovery 및 Backup</a></p>
+
+     <p style="text-align: center;"><a href="https://blogs.msdn.microsoft.com/azuregov/2017/08/24/azure-monitor-now-available-in-azure-government/" target="_blank">Azure Monitor</a></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><strong>전국의 형사 사법 커뮤니티를 지원하기 위해, 우리는 </strong><a href="https://blogs.msdn.microsoft.com/azuregov/2017/09/28/microsoft-extends-commitment-to-cjis-compliance-with-maine-and-vermont/" target="_blank"><strong> 형사 사법 정보 확대 <img align="right" alt="5e0872a2-37fe-4d2a-8f52-c240081dea64" border="0" height="125" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a17753e4-ce7c-4aa1-a2dd-09e355e9ba3f.png" style="border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="5e0872a2-37fe-4d2a-8f52-c240081dea64Services" width="186">(CJIS) 규정 준수는 인구의 70% 이상에 해당합니다.</strong></a> 뉴욕, 캘리포니아, 텍사스 등과 같은 주에 가입한 네바다, 메인, 버몬트는 최근 CJIS 정보 계약을 체결하여 형사 사법 커뮤니티에 Microsoft Government Cloud Services에 중요 업무용 정의 및 공공 안전 솔루션을 배포할 수 있는 기회를 제공했습니다.</p>
+
+
+  <p><strong>특수한 규정 준수 요구 사항을 충족하기 위해 </strong><a href="https://blogs.msdn.microsoft.com/azuregov/tag/dfars/" target="_blank"><strong>DFARS(Defense Federal Acquisition Regulation Supplement)에 대한 지원을 추가했습니다</strong></a>. 우리는 Azure Government Services에 대한 DFARS(Defense Federal Acquisition Regulation Supplement) 요구 사항에 대한 지원을 발표함으로써 미국 국방부(DoD) 계약자 및 DIB(국방 산업 기지)에 대한 노력을 강화했습니다. <strong> </strong></p>
+
+
+  <p><strong>파트너는 </strong><a href="https://azuremarketplace.microsoft.com/en-us/" target="_blank"><strong>150개가 넘는 새로운 Marketplace 제품을 게시했습니다</strong></a>. Azure Government Marketplace를 통해 <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e6786faa-2ffb-4aa3-a9e3-2754dc507a5f.png"><img align="right" alt="ab0706d6-5e39-4a4a-9f96-b081537b9fd9" border="0" height="116" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/471dab4e-bf32-42d3-84fc-5cdebe34dce0.png" style="border-image: none; float: right; display: inline; background-image: none;" title="ab0706d6-5e39-4a4a-9f96-b081537b9fd9connect" width="188"></a> 정부 기관 및 독립 소프트웨어 공급업체(ISV) 및 Azure Government에서 솔루션을 제공하는 신생 업체와 파트너. 여기에서 사용 가능한 이미지 목록을 찾을 수 <a href="https://docs.microsoft.com/en-us/azure/azure-government-image-gallery">있습니다</a>.</p>
+
+
+  <p><strong>Azure Government 솔루션에 대한 자세한 기술 지침을 제공하기 위해 Microsoft 팀은</strong> 주요 정보, 팁 및 방법 지침과 함께 Azure Government 솔루션에 고유한 몇 가지 주요 사항을 이해하는 데 도움이 되는 <a href="https://aka.ms/Azuregovvideos" target="_blank">28개의 Channel 9 에피소드를</a> 호스팅했습니다. <a href="https://aka.ms/Azuregovvideos">우리의 에피소드를 확인하십시오</a>.</p>
+
+
+  <p><strong>IT 전문가 및 개발자를 위한 심층 교육을 제공하기 위해 </strong> 15개 도시에서 <a href="https://enterprise.microsoft.com/en-us/event/azure-government-hackfest-training/" target="_blank"><strong>Azure Government Hackfests</strong></a>를 개최했습니다.<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d83eadf2-601f-46de-9e54-4d3ba0563457.png"><img align="right" alt="e03adf21-c42c-4475-9678-c562a11f66d7" border="0" height="109" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/08f5cc8a-146a-44a2-b270-147b249d176b.png" style="margin: 0px 0px 0px 8px; border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="e03adf21-c42c-4475-9678-c562a11f66d7with" width="193"></a> 추가 예정. 이러한 교육 이벤트는 Microsoft 전문가와 직접 소통하면서 &ldquo;Azure Government에서 강력한 솔루션을 구축하는 데 실&rdquo; 습할 수 있는 기회를 제공합니다. 이 친절하고 지원 환경에서 모든 경험 수준을 환영합니다. 가까운 도시에서 <a href="https://enterprise.microsoft.com/en-us/event/azure-government-hackfest-training/">다가오는 Hackfest</a> 에 참여하세요!</p>
+
+
+  <p><strong>모범 사례를 공유하고 모두를 위한 네트워킹 포럼을 제공하는 사용자 커뮤니티를 만들었습니다.</strong> Meetup 플랫폼에서 1520명 이상의 회원으로 구성된 <a href="https://www.meetup.com/DCAzureGov/" target="_blank">Azure Gov Meetup</a> 을 계속 성장시키고 있습니다. 작년에 우리는 워싱턴 D에서 무료 및 오픈 월간 모임을 개최했습니다. 그리고 전국의 사용자에게 도달하는 생명의 삶을 통해. 또한 <a href="https://www.youtube.com/channel/UCdUkv8-_p58v6Ly4oG9OBfA" target="_blank">YouTube</a>에서 주문형 비디오를 제공하는 모임도 녹화합니다.</p>
+
+
+  <ul>
+   <li>DC에서 월간 Azure Gov Meetups에 참가하도록 <a href="https://www.meetup.com/DCAzureGov/" target="_blank">등록</a></li>
+   <li>DC에 없나요? 각 모임에 대해 오후 6시 35분에 <a href="https://aka.ms/azuregovmeetuplive" target="_blank">라이브 스트림을 통해 참가</a>하세요.</li>
+   <li><a href="https://www.youtube.com/channel/UCdUkv8-_p58v6Ly4oG9OBfA" target="_blank">Azure Gov 모임 채널</a>에서 과거 모임 보기</li>
+   <li>#AzureGovMeetup Twitter에서 대화 팔로우하기</li>
+  </ul>
+
+
+  <p>Weve&rsquo;는 2018년에 더 많은 것을 얻었으며 예정된 일부 행사에서 여러분을 만나기를 희망합니다!</p>
+
+
+  <p>Azure Government 환경을 지속적으로 개선하는 데 도움이 되는 의견과 제안을 환영합니다. Azure Government의 모든 항목을 최신 상태로 유지하려면 Azure <a href="https://blogs.msdn.microsoft.com/azuregov/" target="_blank">Government 블로그</a>에서 전자 메일로 구독을&quot; 클릭합니다&quot;. Azure Government를 탐색하려면 <a href="https://azure.microsoft.com/en-us/overview/clouds/government/request/" target="_blank">오늘 무료 90일 평가판을 요청하세요</a>. 또는 <a href="https://azure.microsoft.com/en-us/offers/azure-government/" target="_blank">지금 시작하기</a> 위한 구매 옵션을 확인하세요.</p>

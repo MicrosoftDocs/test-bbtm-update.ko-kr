@@ -1,0 +1,79 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 18f513b968ed7ea947a98a17b49e7b08aefef658
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903347"
+Slug: application-insights-three-latest-visual-studio-features
+Title: '애플리케이션 Insights: Visual Studio 최신 기능 세 가지'
+Summary: Visual Studio Developer Analytics Tools 기능은 Application Insights 데이터를 편집 및 디버깅 워크플로에 통합합니다. 추가한 최신 기능 중 세 가지 사항을 확인하세요.
+Content: >-
+  <p>애플리케이션 Insights 원격 분석은 웹 서비스에서 문제를 검색, 심사 및 진단하기 위한 강력한 도구입니다. Visual Studio Developer Analytics Tools 기능은 Application Insights 데이터를 편집 및 디버깅 워크플로에 통합합니다. 추가된 최신 기능&rsquo; 중 세 가지 사항을 확인하세요.</p>
+
+
+  <h2>애플리케이션 Insights 검색의 작업 타임라인</h2>
+
+
+  <p>웹 서비스는 요청에 의해 구동됩니다. 따라서 원격 분석을 사용하여 웹 서비스의 문제를 진단하는 경우&rsquo; 예외, 종속성 호출 또는 사용자 지정 이벤트를 트리거한 요청 컨텍스트에서 원격 분석을 확인하는 것이&rsquo; 유용합니다. 이러한 관련 이벤트 시퀀스를 애플리케이션 Insights 작업&rdquo;이라고 합니다&ldquo;.</p>
+
+
+  <p>애플리케이션 Insights 검색 도구의 각 이벤트에 대한 새 <strong>추적 작업</strong> 탭에는 동일한 작업 중에 발생한 다른 이벤트가 표시됩니다.</p>
+
+
+  <p><img alt="Operation Tracking with Application Insights in Visual Studio" border="0" height="418" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ac03f1e-27d5-4833-b99b-208a08ca8f93.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Visual Studio 애플리케이션 Insights 사용하여 작업 추적" width="610"></p>
+
+
+  <p>추적 작업 탭을 사용하면 이벤트를 시간순으로 나열하여 문제가 발생하기 전에 서비스에서 발생한 작업을 쉽게 정리할 수 있습니다. 각 이벤트에 대한 타임라인 및 이벤트 기간 데이터는 느린 종속성을 파악하고 서비스 성능을 개선하는 데 도움이 될 수 있습니다. 각 작업에서 가장 느린 이벤트는 쉽게 찾을 수 있도록 불꽃 아이콘으로 표시됩니다.</p>
+
+
+  <h2>CodeLens에서 원격 분석 요청</h2>
+
+
+  <p>이제 각 ASP.NET 컨트롤러 메서드에 대한 요청 원격 분석이 CodeLens에 표시됩니다. CodeLens 표시기에서 지난 24시간 동안의 요청 수와 실패한 요청의 백분율을 볼 수 있습니다. CodeLens 표시기를 클릭하면 요청에 대한 평균 응답 시간과 각 요청 메트릭에 대한 지난 24시간과 이전 24시간 간의 비교도 확인할 수 있습니다.</p>
+
+
+  <p><img alt="Request CodeLens with Application Insights in Visual Studio" border="0" height="363" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/30937d64-58d4-436a-b6ee-18ae5e188b89.png" style="border-width: 0px; margin: 0px auto; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: none; display: block; background-image: none;" title="Visual Studio 애플리케이션 Insights CodeLens 요청" width="610"></p>
+
+
+  <p>요청 원격 분석을 편집&rsquo;기에서 바로 배치하면 코드베이스에서 작업하는 동안&rsquo; 프로덕션 안정성 및 성능 문제를 쉽게 파악할 수 있습니다. 지난 24시간 동안 메서드가 요청된 빈도를 확인하면 변경 &ldquo;하면서 유용한 컨텍스트를 제공할 수 있습니다. Im&rsquo;이 편집하려는 이 메서드는 프로덕션에서 많은 사용량을 볼 수 있나요?&rdquo;</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio-codelens/">Azure 설명서</a>에서 Application Insights 및 CodeLens에 대해 자세히 알아봅니다.</p>
+
+
+  <h2>디버그 세션 원격 분석을 위한 CodeLens</h2>
+
+
+  <p>이제 Azure의 Application Insights 서비스에 애플리케이션을 연결하지 않은&rsquo; 경우에도 CodeLens에서 로컬 디버그 세션의 원격 분석을 표시할 수 있습니다. Application Insights SDK&rsquo;를 사용하는 ASP.NET 프로젝트에서는 예외에 대한 CodeLens 표시기를 참조하고 가장 최근 디버그 세션에서 원격 분석을 요청합니다. 디버깅을 중지하고 코드를&rsquo; 편집하면 요청 응답 시간, 예외 데이터 등을 손쉽게 확인할 수 있습니다.</p>
+
+
+  <p><img alt="Local CodeLens with Application Insights in Visual Studio" border="0" height="486" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/51843949-7f3f-483e-ae2d-7da506ae2569.png" style="border-width: 0px; margin: 0px auto; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: none; display: block; background-image: none;" title="Visual Studio 애플리케이션 Insights 있는 로컬 CodeLens" width="610"></p>
+
+
+  <h2>시작</h2>
+
+
+  <p>Developer Analytics Tools 기능은 Visual Studio 2015 및 Visual Studio &ldquo;15에 포함되어 있습니다.&rdquo; 또한&rsquo; <a href="https://visualstudiogallery.msdn.microsoft.com/82367b81-3f97-4de1-bbf1-eaf52ddc635a/">Visual Studio 갤러리</a>에서 확장으로 사용할 수 있습니다.</p>
+
+
+  <p>애플리케이션을 애플리케이션 Insights 서비스에 연결하고 프로덕션 원격 분석을 사용하도록 설정하려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li>솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 <strong>애플리케이션 Insights 원격 분석&hellip; 추가</strong>를 선택합니다.</li>
+   <li>애플리케이션 Insights 구성 창의 지침을 따릅니다.</li>
+  </ol>
+
+
+  <p>원하는 경우 Application Insights 서비스에 연결하지 않고 디버그 세션 원격 분석을 위해 애플리케이션에 애플리케이션 Insights Insights SDK를 추가할 수 있습니다.</p>
+
+
+  <ol>
+   <li>솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 <strong>애플리케이션 Insights 원격 분석&hellip; 추가</strong>를 선택합니다.</li>
+   <li>애플리케이션 Insights 구성 창의 지침을 따릅니다.</li>
+   <li>로컬 전용 모드를 시도하기 위해 &ldquo;SDK를 추가하기 위한 링크를 찾습니다.&rdquo;</li>
+  </ol>
+
+
+  <p>아래의 설명에서 Developer Analytics Tools 사용하는 방법과 Visual Studio 내에서 애플리케이션 Insights 원격 분석을 사용하는 방법을&rsquo; 알려주세요.</p>

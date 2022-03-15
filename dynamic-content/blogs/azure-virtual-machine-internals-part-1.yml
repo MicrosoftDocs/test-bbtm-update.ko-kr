@@ -1,0 +1,550 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8879df7224d3b4c8b089dd63572c3921cbff6639
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899062"
+Slug: azure-virtual-machine-internals-part-1
+Title: Azure Virtual Machine Internals – 1부
+Summary: Azure VM의 작동 방식을 자세히 알아보고 내부 세부 정보 중 일부를 알아 보세요.
+Content: >-
+  <h2>소개</h2>
+
+
+  <p>Azure 클라우드 서비스는 Compute, Storage 및 네트워킹의 요소로 구성됩니다. 컴퓨팅 구성 요소는 이 게시물에서 논의되는 주제인 VM(Virtual Machine)입니다. 웹 검색은 VM을 만들고 관리하기 위한 명령, API 및 UX와 관련하여 많은 양의 설명서를 생성합니다. 이는 101이 아니거나 &lsquo;방법&rsquo; 이며 판독기는 대부분 VM 만들기 및 관리 항목에 이미 익숙할 것으로 예상됩니다. 이 시리즈의 목표는 VM이 다양한 상태를 거치면서 어떤 일이 일어나고 있는지 살펴보는 것입니다.</p>
+
+
+  <p>Azure는 IaaS 및 PaaS VM을 제공합니다. 이 게시물에서 VM을 참조할 때 IaaS VM을 의미합니다. Azure에는 ASM(Azure Service Management) 및 ARM(Azure Resource Manager)의 두 컨트롤 플레인 스택이 있습니다. 우리는 앞으로 찾고 컨트롤 플레인이기 때문에 ARM으로 자신을 제한할 것입니다.</p>
+
+
+  <p>ARM은 VM, NIC와 같은 리소스를 노출하지만 실제로 ARM은 씬 프런트 엔드 계층이며 리소스 자체는 CRP(컴퓨팅 리소스 공급자), NRP(네트워크 리소스 공급자) 및 SRP(Storage 리소스 공급자)와 같은 하위 수준 리소스 공급자에 의해 노출됩니다. 포털은 ARM을 호출하여 리소스 공급자를 호출합니다.</p>
+
+
+  <h2>시작하기</h2>
+
+
+  <p>대부분의 고객에게 VM을 만드는 첫 번째 환경은 <a href="https://portal.azure.com/">Azure Portal에 있습니다</a>. 동일한 작업과 미국 서부 지역에서 표준 DS1 v2&rsquo; 크기의 &lsquo;VM을 만들었습니다. 나는 주로 UI가 제시한 기본값을 유지했지만 CustomScript&rsquo; 확장을 추가&lsquo;하도록 선택했습니다. 메시지가 표시되면 CustomScript&rsquo; 확장에 대한 &lsquo;PowerShell 스크립트로 Sample.ps&rsquo; 로컬 파일을 &lsquo;제공했습니다. PS 스크립트 자체는 한 줄 Get-Process입니다.</p>
+
+
+  <p>VM이 성공적으로 프로비전되었지만 전체 ARM 템플릿 배포가 실패했습니다(포털 대시보드에서 밝은 빨간색). 몇 번의 클릭으로 CustomScript&rsquo; 확장이 &lsquo;실패했으며 포털에 다음 메시지가 표시됩니다.</p>
+
+
+  <pre>
+
+  {
+    &quot;status&quot;: &quot;Failed&quot;,
+    &quot;error&quot;: {
+      &quot;code&quot;: &quot;ResourceDeploymentFailure&quot;,
+      &quot;message&quot;: &quot;The resource operation completed with terminal provisioning state &#39;Failed&#39;.&quot;,
+      &quot;details&quot;: [
+        {
+          &quot;code&quot;: &quot;DeploymentFailed&quot;,
+          &quot;message&quot;: &quot;At least one resource deployment operation failed. Please list deployment operations for details. Please see <a href="https://aka.ms/arm-debug">https://aka.ms/arm-debug</a> for usage details.&quot;,
+          &quot;details&quot;: [
+            {
+              &quot;code&quot;: &quot;Conflict&quot;,
+              &quot;message&quot;: &quot;{\r\n  \&quot;status\&quot;: \&quot;Failed\&quot;,\r\n  \&quot;error\&quot;: {\r\n    \&quot;code\&quot;: \&quot;ResourceDeploymentFailure\&quot;,\r\n    \&quot;message\&quot;: \&quot;The resource operation completed with terminal provisioning state &#39;Failed&#39;.\&quot;,\r\n    \&quot;details\&quot;: [\r\n      {\r\n        \&quot;code\&quot;: \&quot;VMExtensionProvisioningError\&quot;,\r\n        \&quot;message\&quot;: \&quot;VM has reported a failure when processing extension &#39;CustomScriptExtension&#39;. Error message: \\\&quot;Finished executing command\\\&quot;.\&quot;\r\n      }\r\n    ]\r\n  }\r\n}&quot;
+            }
+          ]
+        }
+      ]
+    }
+  }</pre>
+
+
+  <p>무엇이 잘못되었는지 즉시 명확하지 않았습니다&rsquo;. 우리는 여기에서 발굴 할 수 있으며 종종 사실처럼 실패는 성공보다 우리에게 더 많은 것을 가르쳐줍니다.</p>
+
+
+  <p>방금 프로비전된 VM에 RDP를 적용했습니다. VM 에이전트에 대한 로그는 C:\WindowsAzure\Logs에 있습니다. VM 에이전트는 모든 IaaS VM에서 실행되는 시스템 에이전트입니다(고객이 원한다면 옵트아웃할 수 있음). 확장을 실행하려면 VM 에이전트가 필요합니다. CustomScript 확장에 대한 로그를 피킹해 보겠습니다&rsquo;.</p>
+
+
+  <pre>
+
+  C:\WindowsAzure\Logs\Plugins\Microsoft.Compute.CustomScriptExtension\1.8\CustomScriptHandler
+
+
+  [1732+00000001] [08/14/2016 06:19:17.77] [INFO] Command execution task started. Awaiting completion...
+
+
+  [1732+00000001] [08/14/2016 06:19:18.80] [ERROR] Command execution finished. Command exited with code: -196608</pre>
+
+
+  <p>오류 로그가 비밀스러운 사실은 치명적인 일이 일어났다는 것을 암시합니다. 그래서 입력을 다시 살펴보고 PS 스크립트의 파일 확장명 문제가 있음을 깨달았습니다. 나는 그것이 Sample.ps1 되었을 때 Sample.ps 그것을했다. 이번에는 올바른 확장명인 스크립트 파일을 지정하여 VM을 업데이트했습니다. 위에서 언급한 로그 파일에 추가된 더 많은 레코드가 표시한 대로 성공했습니다.</p>
+
+
+  <pre>
+
+  [3732+00000001] [08/14/2016 08:42:24.04] [INFO] HandlerSettings = ProtectedSettingsCertThumbprint: , ProtectedSettings: {}, PublicSettings: {FileUris: [https://iaasv2tempstorewestus.blob.core.windows.net/vmextensionstemporary-10033fff801becb5-20160814084130535/simple.ps1?sv=2015-04-05&amp;sr=c&amp;sig=M3qa7lS%2BZwp%2B8Tytqf1VEew4YaAKvvYn1yzGrPfSwyw%3D&amp;se=2016-08-15T08%3A41%3A30Z&amp;sp=rw], CommandToExecute: powershell -ExecutionPolicy Unrestricted -File simple.ps1 }
+
+
+  [3732+00000001] [08/14/2016 08:42:24.04] [INFO] Downloading files specified in configuration...
+
+
+  [3732+00000001] [08/14/2016 08:42:24.05] [INFO] DownloadFiles: fileUri = https://iaasv2tempstorewestus.blob.core.windows.net/vmextensionstemporary-10033fff801becb5-20160814084130535/simple.ps1?sv=2015-04-05&amp;sr=c&amp;sig=M3qa7lS+Zwp+8Tytqf1VEew4YaAKvvYn1yzGrPfSwyw=&amp;se=2016-08-15T08:41:30Z&amp;sp=rw
+
+
+  [3732+00000001] [08/14/2016 08:42:24.05] [INFO] DownloadFiles: Initializing CloudBlobClient with baseUri = https://iaasv2tempstorewestus.blob.core.windows.net/
+
+
+  [3732+00000001] [08/14/2016 08:42:24.22] [INFO] DownloadFiles: fileDownloadPath = Downloads\0
+
+
+  [3732+00000001] [08/14/2016 08:42:24.22] [INFO] DownloadFiles: asynchronously downloading file to fileDownloadLocation = Downloads\0\simple.ps1
+
+
+  [3732+00000001] [08/14/2016 08:42:24.24] [INFO] Waiting for all async file download tasks to complete...
+
+
+  [3732+00000001] [08/14/2016 08:42:24.29] [INFO] Files downloaded. Asynchronously executing command: &#39;powershell -ExecutionPolicy Unrestricted -File simple.ps1 &#39;
+
+
+  [3732+00000001] [08/14/2016 08:42:24.29] [INFO] Command execution task started. Awaiting completion...
+
+
+  [3732+00000001] [08/14/2016 08:42:25.29] [INFO] Command execution finished. Command exited with code: 0</pre>
+
+
+  <p>CustomScript 확장은 Storage Blob에서 파일로 제공할 수 있는 스크립트 파일을 사용합니다. 포털은 로컬 컴퓨터에서 파일을 허용하는 편리한 위치를 제공합니다. 내 \temp 폴더에 있는 Simple.ps1 제공했습니다. 백그라운드 포털은 Blob에 파일을 업로드하고, SAS(공유 액세스 서명)를 생성하고, CRP에 전달합니다. 위의 로그에서 해당 <a href="https://iaasv2tempstorewestus.blob.core.windows.net/vmextensionstemporary-10033fff801becb5-20160814084130535/simple.ps1?sv=2015-04-05&amp;sr=c&amp;sig=M3qa7lS+Zwp+8Tytqf1VEew4YaAKvvYn1yzGrPfSwyw=&amp;se=2016-08-15T08:41:30Z&amp;sp=rw">URI</a>를 볼 수 있습니다.</p>
+
+
+  <p>이 URI는 이해할 가치가 있습니다. 미국 서부(내 VM이 배포된 동일한 지역)의 계정에 대해 다음과 같은 특성이 있는 Storage Blob SAS입니다.</p>
+
+
+  <ul>
+   <li>se=2016-08-15T08:41:30Z는 SAS가 해당 시간(UTC)까지 유효하다는 것을 의미합니다. 로그의 해당 레코드(08/14/2016 08:42:24.05)의 타임스탬프와 비교하면 SAS가 24시간 동안 생성되는 것이 분명합니다.</li>
+   <li>Sr=c는 컨테이너 수준 정책임을 의미합니다.</li>
+   <li>Sp=rw는 읽기 및 쓰기 모두에 대한 액세스 권한을 의미합니다.</li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-1/">SAS(공유 액세스 서명)</a>에는 전체 설명이 있습니다.</li>
+  </ul>
+
+
+  <p>나는 이것이 미국 서부의 스토리지 계정이라고 위에서 주장했다. 이는 스토리지 계정(iaasv2tempstorewestus)의 명명에서 명백할 수 있지만 보장되지는 않습니다. 그렇다면 이 스토리지 계정(또는 다른 스토리지 계정)이 해당 계정이 있는 것으로 주장하는 지역에 있는지 어떻게 확인할 수 있을까요?</p>
+
+
+  <p>Blob DNS URL의 간단한 nslookup에서 이를 표시합니다.</p>
+
+
+  <pre>
+
+  C:\Users\yunusm&gt;nslookup iaasv2tempstorewestus.blob.core.windows.net
+
+
+  Server: PK5001Z.PK5001Z
+
+
+  Address: 192.168.0.1
+
+
+  Non-authoritative answer:
+
+
+  Name: blob.by4prdstr03a.store.core.windows.net
+
+
+  Address: 40.78.112.72
+
+
+  Aliases: iaasv2tempstorewestus.blob.core.windows.net</pre>
+
+
+  <p>Blob URL은 정식 DNS blob.by4prdstr03a.store.core.windows.net 대한 CNAME입니다. 실험에서는 둘 이상의 스토리지 계정이 단일 정식 DNS URL에 매핑되는 것을 보여 줍니다. 이름에 있는 by4&rsquo;는 &lsquo;위치 지역에 대한 힌트를 제공합니다. <a href="https://azure.microsoft.com/en-us/regions/">Azure 지역</a> 페이지에 따라 미국 서부 지역은 캘리포니아에 있습니다. IP 주소의 지리적 위치(40.78.112.72)를 조회하면 캘리포니아 내에서 더 구체적인 지역을 나타냅니다.</p>
+
+
+  <h2>VM 이해</h2>
+
+
+  <p>이제 정상 VM이 있으므로 더 많은 것을 이해할 수 있습니다&rsquo;. Azure VM 크기 페이지에 따라 방금 만든 VM은 다음과 같습니다.</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="3">
+   <tbody>
+    <tr>
+     <td valign="top">
+     <p>크기</p>
+     </td>
+     <td valign="top">
+     <p>CPU 코어</p>
+     </td>
+     <td valign="top">
+     <p>메모리</p>
+     </td>
+     <td valign="top">
+     <p>NIC(최대)</p>
+     </td>
+     <td valign="top">
+     <p>최대 디스크 크기</p>
+     </td>
+     <td valign="top">
+     <p>최대 데이터 디스크(각 1023GB)</p>
+     </td>
+     <td valign="top">
+     <p>최대 IOPS(디스크당 500)</p>
+     </td>
+     <td valign="top">
+     <p>최대 네트워크 대역폭</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+     <p>Standard_D1_v2</p>
+     </td>
+     <td valign="top">
+     <p>1</p>
+     </td>
+     <td valign="top">
+     <p>3.5 GB</p>
+     </td>
+     <td valign="top">
+     <p>1</p>
+     </td>
+     <td valign="top">
+     <p>임시(SSD) = 50GB</p>
+     </td>
+     <td valign="top">
+     <p>2</p>
+     </td>
+     <td valign="top">
+     <p>2x500</p>
+     </td>
+     <td valign="top">
+     <p>온건한</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>이 정보는 <a href="https://management.azure.com/subscriptions/f028f547-f912-42b0-8892-89ea6eda4c5e/resourceGroups/BlogRG/providers/Microsoft.Compute/virtualMachines/BlogWindowsVM/vmSizes?api-version=2016-03-30">GET</a>을 수행하여 프로그래밍 방식으로 가져올 수 있습니다.</p>
+
+
+  <p>다음을 반환합니다.</p>
+
+
+  <pre>
+
+  {
+
+
+  &quot;name&quot;: &quot;Standard_DS1_v2&quot;,
+
+
+  &quot;numberOfCores&quot;: 1,
+
+
+  &quot;osDiskSizeInMB&quot;: 1047552,
+
+
+  &quot;resourceDiskSizeInMB&quot;: 7168,
+
+
+  &quot;memoryInMB&quot;: 3584,
+
+
+  &quot;maxDataDiskCount&quot;: 2
+
+
+  }
+
+
+  Doing a <a href="https://management.azure.com/subscriptions/f028f547-f912-42b0-8892-89ea6eda4c5e/resourceGroups/BlogRG/providers/Microsoft.Compute/virtualMachines/BlogWindowsVM?api-version=2016-03-30">GET on the VM</a> we created
+
+  Returns the following. Let&rsquo;s understand this response in some detail. I have annotated inline comments <em>preceded and followed by //</em>
+
+  {
+    &quot;properties&quot;: {
+      &quot;vmId&quot;: &quot;694733ec-46a0-4e0b-a73b-ee0863a0f12c&quot;,
+      &quot;hardwareProfile&quot;: {
+        &quot;vmSize&quot;: &quot;Standard_DS1_v2&quot;
+      },
+      &quot;storageProfile&quot;: {
+        &quot;imageReference&quot;: {
+          &quot;publisher&quot;: &quot;MicrosoftWindowsServer&quot;,
+          &quot;offer&quot;: &quot;WindowsServer&quot;,
+          &quot;sku&quot;: &quot;2012-R2-Datacenter&quot;,
+          &quot;version&quot;: &quot;latest&quot;</pre>
+
+  <p>여기서 흥미로운 필드는 버전입니다. 게시자는 언제든지 동일한 이미지의 여러 버전을 가질 수 있습니다. 인기 있는 이미지는 일반적으로 보안 패치를 사용하여 월별 빈도로 다시 변환됩니다. 주 새 버전은 새 SKU로 릴리스됩니다. 포털에서 기본값을 최신 버전으로 설정했습니다. 고객은 포털을 통해 배포하든 CLI 또는 REST API를 사용하여 ARM 템플릿을 통해 배포하든 특정 버전을 선택하도록 선택할 수 있습니다. 후자는 자동화된 시나리오에 대해 선호되는 방법입니다. 특정 버전을 지정하는 문제는 ARM 템플릿을 깨지기 쉬운 상태로 렌더링할 수 있다는 것입니다. 게시자가 게시자가 할 수 있는 것처럼 하나 이상의 지역에서 특정 버전을 게시 취소하면 배포가 중단됩니다. 따라서 권장하지 않는 한 버전 설정에 대한 기본 설정 값은 최신입니다. 예를 들어 다음 SKU 2012-R2-Datacenter 이미지는 CLI 명령 azure vm 이미지 목록에서 반환된 대로 현재 WestUS 지역에 있습니다.</p>
+
+
+  <p>MicrosoftWindowsServer WindowsServer 2012-R2-Datacenter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows&nbsp; 4.0.20151120&nbsp;&nbsp;&nbsp;&nbsp; westus&nbsp;&nbsp;&nbsp; MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:4.0.20151120&nbsp;&nbsp;<br>
+
+  MicrosoftWindowsServer WindowsServer 2012-R2-Datacenter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows&nbsp; 4.0.20151214&nbsp;&nbsp;&nbsp;&nbsp; westus&nbsp;&nbsp;&nbsp; MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:4.0.20151214&nbsp;&nbsp;<br>
+
+  MicrosoftWindowsServer WindowsServer 2012-R2-Datacenter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows&nbsp; 4.0.20160126&nbsp;&nbsp;&nbsp;&nbsp; westus&nbsp;&nbsp;&nbsp; MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:4.0.20160126&nbsp;&nbsp;<br>
+
+  MicrosoftWindowsServer WindowsServer 2012-R2-Datacenter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows&nbsp; 4.0.20160229&nbsp;&nbsp;&nbsp;&nbsp; westus&nbsp;&nbsp;&nbsp; MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:4.0.20160229&nbsp;&nbsp;<br>
+
+  MicrosoftWindowsServer WindowsServer 2012-R2-Datacenter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows&nbsp; 4.0.20160430&nbsp;&nbsp;&nbsp;&nbsp; westus&nbsp;&nbsp;&nbsp; MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:4.0.20160430&nbsp;&nbsp;<br>
+
+  MicrosoftWindowsServer WindowsServer 2012-R2-Datacenter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows&nbsp; 4.0.20160617&nbsp;&nbsp;&nbsp;&nbsp; westus&nbsp;&nbsp;&nbsp; MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:4.0.20160617&nbsp;&nbsp;<br>
+
+  MicrosoftWindowsServer WindowsServer 2012-R2-Datacenter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows&nbsp; 4.0.20160721&nbsp;&nbsp;&nbsp;&nbsp; westus&nbsp;&nbsp;&nbsp; MicrosoftWindowsServer:WindowsServer:2012-R2-Datacenter:4.0.20160721&nbsp;&nbsp;</p>
+
+
+  <pre>
+        },
+        &quot;osDisk&quot;: {
+          &quot;osType&quot;: &quot;Windows&quot;,
+          &quot;name&quot;: &quot;BlogWindowsVM&quot;,
+          &quot;createOption&quot;: &quot;FromImage&quot;,
+          &quot;vhd&quot;: {
+            &quot;uri&quot;: <a href="https://blogrgdisks562.blob.core.windows.net/vhds/BlogWindowsVM2016713231120.vhd">https://blogrgdisks562.blob.core.windows.net/vhds/BlogWindowsVM2016713231120.vhd</a></pre>
+
+  <p>OS 디스크는 페이지 Blob이며 Publisher 게시한 원본 이미지의 복사본으로 시작합니다. 이 Blob의 메타 데이터를 살펴보고 VM 자체의 메타데이터와 상관 관계를 지정하는 것은 유익합니다. Blob&rsquo; 속성 창을 Microsoft Visual Studio 클라우드 탐색기를 사용합니다.<br>
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4e10e0b5-c266-4c51-ba75-6e5767a27f39.png"><img alt="1" border="0" height="686" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/128643e7-4a67-4b74-b446-379975c63585.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="1" width="1239"></a></p>
+
+
+  <p>네트워크를 통해 OS 디스크로 작동하는 일반 페이지 Blob입니다. 마지막으로 수정한 날짜는 VM이 실행되는 동안 디스크에 정기적으로 발생하는 몇 가지 플러시가 있는 한 대부분의 시간이 &ndash; NOW()와 함께 유지되는 것을 확인할 수 있습니다. OS 디스크의 크기는 127GB입니다. Azure에서 허용되는 최대 OS 디스크는 1TB입니다.</p>
+
+
+  <p><a href="https://azurestorageexplorer.codeplex.com">Azure Storage Explorer</a> VS 클라우드 탐색기보다 동일한 Blob에 대한 더 많은 속성을 표시합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4d2146a2-f2e7-44ba-8eee-f5a1639705f5.png"><img alt="image" border="0" height="642" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4c830573-c8ad-480f-b5ad-55411454b6a0.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="1261"></a></p>
+
+
+  <p>흥미로운 속성은 임대 속성입니다. 무한 기간으로 임대된 Blob을 표시합니다. 내부적으로 VM 만들기에 대해 페이지 Blob이 VM의 OS/데이터 디스크로 구성된 경우 VM에 연결하기 전에 해당 Blob에서 임대를 수행합니다. 실행 중인 VM에 대한 Blob이 대역 외에서 삭제되지 않도록 하는 것입니다. 디스크 지원 Blob에 VM에 연결된 것으로 표시되는 동안 임대가 없는 경우 일관성이 없는 상태이며 복구해야 합니다.</p>
+
+
+  <p>VM 자체에서 RDPing을 사용하면 두 개의 드라이브가 탑재된 것을 볼 수 있으며 OS 드라이브는 Storage 페이지 Blob과 거의 같은 크기입니다. 페이지 파일이 D 드라이브에 있습니다. 오류가 발생한 페이지를 Blob Storage 네트워크를 통해 가져오는 대신 로컬로 가져옵니다. VM이 다른 노드로 재배치되는 경우 임시 스토리지가 손실될 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c58399a3-cc72-4443-83e1-f129c9616db6.png"><img alt="image" border="0" height="602" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ba3a6fae-87d6-4b17-80ac-659d3b0b2573.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="1256"></a></p>
+
+
+  <pre>
+   },
+    &quot;caching&quot;: &quot;ReadWrite&quot;
+  },
+
+  &quot;dataDisks&quot;: []</pre>
+
+
+  <p>아직 데이터 디스크가 없지만 곧 추가될 예정입니다.</p>
+
+
+  <pre>
+
+  },
+
+  &quot;osProfile&quot;: {
+    &quot;computerName&quot;: &quot;BlogWindowsVM&quot;,</pre>
+
+  <p>포털에서 VM에 대해 선택한 이름도 호스트 이름입니다. VM은 DHCP를 사용하도록 설정되어 있으며 DHCP를 통해 DIP 주소를 얻습니다. VM이 내부 DNS에 등록되고 생성된 FQDN이 있습니다.</p>
+
+
+  <pre>
+
+  <em>C:\Users\yunusm&gt;ipconfig /all</em>
+
+
+  <em>Windows IP Configuration</em>
+
+
+  <em>   Host Name . . . . . . . . . . . . : BlogWindowsVM
+     Primary Dns Suffix  . . . . . . . :
+     Node Type . . . . . . . . . . . . : Hybrid
+     IP Routing Enabled. . . . . . . . : No
+     WINS Proxy Enabled. . . . . . . . : No
+     DNS Suffix Search List. . . . . . : qkqr4ajgme4etgyuajvm1sfy3h.dx.internal.cl
+  oudapp.net</em></pre>
+
+
+  <p>이더넷 어댑터:</p>
+
+
+  <pre>
+
+  <em>   </em>Connection-specific DNS Suffix  . : qkqr4ajgme4etgyuajvm1sfy3h.dx.internal.cl
+
+  oudapp.net
+     Description . . . . . . . . . . . : Microsoft Hyper-V Network Adapter
+     Physical Address. . . . . . . . . : 00-0D-3A-33-81-01
+     DHCP Enabled. . . . . . . . . . . : Yes
+     Autoconfiguration Enabled . . . . : Yes
+     Link-local IPv6 Address . . . . . : fe80::980c:bf29:b2de:8a05%12(Preferred)
+     IPv4 Address. . . . . . . . . . . : 10.1.0.4(Preferred)
+     Subnet Mask . . . . . . . . . . . : 255.255.255.0
+     Lease Obtained. . . . . . . . . . : Saturday, August 13, 2016 11:14:58 PM
+     Lease Expires . . . . . . . . . . : Wednesday, September 20, 2152 6:24:34 PM
+     Default Gateway . . . . . . . . . : 10.1.0.1
+     DHCP Server . . . . . . . . . . . : 168.63.129.16
+     DHCPv6 IAID . . . . . . . . . . . : 301993274
+     DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-1F-41-C4-70-00-0D-3A-33-81-01
+
+     DNS Servers . . . . . . . . . . . : 168.63.129.16
+     NetBIOS over Tcpip. . . . . . . . : Enabled
+
+  &quot;adminUsername&quot;: &quot;yunusm&quot;,
+
+  &quot;windowsConfiguration&quot;: {
+    &quot;provisionVMAgent&quot;: true,</pre>
+
+  <p>여러 구성을 수행하고 확장을 실행하는 게스트 에이전트를 설치하는 힌트입니다. 게스트 에이전트 이진 파일은 다음과 같습니다. C:\WindowsAzure\Packages</p>
+
+
+  <pre>
+
+  &quot;enableAutomaticUpdates&quot;: true</pre>
+
+
+  <p>Windows VM은 기본적으로 Windows Update Service에서 자동 업데이트를 받도록 설정됩니다. 가용성 및 자동 업데이트와 관련하여 여기에서 파악해야 할 미묘한 차이가 있습니다. 예기치 않은 오류에 대해 높은 SLA를 얻기 위해 여러 VM이 있는 가용성 집합이 있는 경우 가용성 집합 전체에서 VM을 제거할 수 있는 상호 관련된 작업(예: Windows 업데이트)을 사용하지 않으려는 것입니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a465d7ac-11c5-453d-ac8a-e212e05dd041.png"><img alt="image" border="0" height="392" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ce389ebe-a664-48f1-8ea3-b9ca517db447.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="969"></a></p>
+
+
+  <pre>
+
+  },
+
+
+  &quot;secrets&quot;: []
+
+
+  },
+
+
+  &quot;networkProfile&quot;: {
+
+
+  &quot;networkInterfaces&quot;: [
+
+
+  {
+
+
+  &quot;id&quot;: &quot;/subscriptions/f028f547-f912-42b0-8892-89ea6eda4c5e/resourceGroups/BlogRG/providers/Microsoft.Network/networkInterfaces/blogwindowsvm91&quot;</pre>
+
+
+  <p>NIC는 독립 실행형 리소스이며 아직 네트워킹 리소스에 대해 논의하지 않습니다.</p>
+
+
+  <pre>
+      }
+    ]
+  },
+
+  &quot;diagnosticsProfile&quot;: {
+    &quot;bootDiagnostics&quot;: {
+      &quot;enabled&quot;: true,
+      &quot;storageUri&quot;: &quot;<a href="https://blogrgdiag337.blob.core.windows.net/&quot;">https://blogrgdiag337.blob.core.windows.net/&quot;</a>
+    }</pre>
+
+  <p>부팅 진단이 사용하도록 설정되었습니다. 포털에는 스크린샷을 보는 방법이 있습니다. CLI에서 스크린샷의 URL을 가져올 수 있습니다.</p>
+
+
+  <pre>
+
+  C:\Program Files (x86)\Microsoft SDKs\Azure\CLI\bin&gt;node azure vm get-serial-output
+
+
+  info: Executing command vm get-serial-output
+
+
+  Resource group name: blogrg
+
+
+  Virtual machine name: blogwindowsvm
+
+
+  + Getting instance view of virtual machine &quot;blogwindowsvm&quot;
+
+
+  info: Console Screenshot Blob Uri:
+
+
+  https://blogrgdiag337.blob.core.windows.net/bootdiagnostics-blogwindo-694733ec-46a0-4e0b-a73b-ee0863a0f12c/BlogWindowsVM.694733ec-46a0-4e0b-a73b-ee0863a0f12c.screenshot.bmp
+
+
+  info: vm get-serial-output command OK</pre>
+
+
+  <p>부팅 스크린샷은 포털에서 볼 수 있습니다. 그러나 스크린샷 bmp 파일의 URL은 브라우저에서 렌더링되지 않습니다.</p>
+
+
+  <p>무엇을 제공하나요? 익명 액세스를 차단하는 스토리지 계정의 인증 때문입니다. Azure Storage Blob 또는 컨테이너의 경우 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-manage-access-to-resources/">익명 읽기 액세스를 구성할 수 있습니다</a>. 비밀이 노출되지 않는 경우에만 주의해서 이 작업을 수행하세요. SAS 서명을 생성할 필요 없이 기밀이 아닌 데이터를 공유하는 데 유용한 기능입니다. 컨테이너에서 익명 액세스를 사용하도록 설정하면 스크린샷이 포털 외부의 모든 브라우저에서 렌더링됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/df121718-855a-4a0d-a6fc-a6038586b61a.png"><img alt="image" border="0" height="675" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/750bf908-68e3-4803-b338-16b9f8e37437.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="1059"></a><br>
+
+  &nbsp;&nbsp;&nbsp; },<br>
+
+  &nbsp;&nbsp;&nbsp;&quot;provisioningState&quot;: &quot;Succeeded&quot;<br>
+
+  &nbsp; },<br>
+
+  &nbsp;&quot;resources&quot;: [<br>
+
+  &nbsp;&nbsp;&nbsp; {<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;properties&quot;: {<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;publisher&quot;: &quot;Microsoft.Compute&quot;,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;형식&quot;: &quot;CustomScriptExtension&quot;,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;typeHandlerVersion&quot;: &quot;1.7&quot;,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;autoUpgradeMinorVersion&quot;: true,</p>
+
+
+  <p>일반적으로 부 버전에서 확장을 자동으로 업데이트하는 것이 안전합니다. 자동 업데이트하지 않는 옵션이 있지만 이 점에서 놀라움은 거의 없었습니다.</p>
+
+
+  <pre>
+          &quot;settings&quot;: {
+            &quot;fileUris&quot;: [
+              <a href="https://iaasv2tempstorewestus.blob.core.windows.net/vmextensionstemporary-10033fff801becb5-20160814084130535/simple.ps1?sv=2015-04-05&amp;sr=c&amp;sig=M3qa7lS%2BZwp%2B8Tytqf1VEew4YaAKvvYn1yzGrPfSwyw%3D&amp;se=2016-08-15T08%3A41%3A30Z&amp;sp=rw">https://iaasv2tempstorewestus.blob.core.windows.net/vmextensionstemporary-10033fff801becb5-20160814084130535/simple.ps1?sv=2015-04-05&amp;sr=c&amp;sig=M3qa7lS%2BZwp%2B8Tytqf1VEew4YaAKvvYn1yzGrPfSwyw%3D&amp;se=2016-08-15T08%3A41%3A30Z&amp;sp=rw</a></pre>
+
+  <p>앞에서 설명한 대로 PowerShell 스크립트에 대한 SAS 키입니다. Blob에 파일 및 데이터 &ndash; 업로드를 공유하고, SAS 키를 생성하고, 전달하는 데 일반적으로 사용되는 패턴으로 표시됩니다.</p>
+
+
+  <pre>
+            ],
+            &quot;commandToExecute&quot;: &quot;powershell -ExecutionPolicy Unrestricted -File simple.ps1  &quot;
+          },
+          &quot;provisioningState&quot;: &quot;Succeeded&quot;
+        },
+        &quot;id&quot;: &quot;/subscriptions/f028f547-f912-42b0-8892-89ea6eda4c5e/resourceGroups/BlogRG/providers/Microsoft.Compute/virtualMachines/BlogWindowsVM/extensions/CustomScriptExtension&quot;,
+        &quot;name&quot;: &quot;CustomScriptExtension&quot;,
+        &quot;type&quot;: &quot;Microsoft.Compute/virtualMachines/extensions&quot;,
+        &quot;location&quot;: &quot;westus&quot;
+      },
+      {
+        &quot;properties&quot;: {
+          &quot;publisher&quot;: &quot;Microsoft.Azure.Diagnostics&quot;,
+          &quot;type&quot;: &quot;IaaSDiagnostics&quot;,
+          &quot;typeHandlerVersion&quot;: &quot;1.5&quot;,
+          &quot;autoUpgradeMinorVersion&quot;: true,
+          &quot;settings&quot;: {
+            &quot;xmlCfg&quot;: &lt;trimmed&gt;,
+            &quot;StorageAccount&quot;: &quot;blogrgdiag337&quot;
+          },
+          &quot;provisioningState&quot;: &quot;Succeeded&quot;
+        },
+        &quot;id&quot;: &quot;/subscriptions/f028f547-f912-42b0-8892&not;-89ea6eda4c5e/resourceGroups/BlogRG/providers/Microsoft.Compute/virtualMachines/BlogWindowsVM/extensions/Microsoft.Insights.VMDiagnosticsSettings&quot;,
+        &quot;name&quot;: &quot;Microsoft.Insights.VMDiagnosticsSettings&quot;,
+        &quot;type&quot;: &quot;Microsoft.Compute/virtualMachines/extensions&quot;,
+        &quot;location&quot;: &quot;westus&quot;
+      }
+    ],
+    &quot;id&quot;: &quot;/subscriptions/f028f547-f912-42b0-8892-89ea6eda4c5e/resourceGroups/BlogRG/providers/Microsoft.Compute/virtualMachines/BlogWindowsVM&quot;,
+    &quot;name&quot;: &quot;BlogWindowsVM&quot;,
+    &quot;type&quot;: &quot;Microsoft.Compute/virtualMachines&quot;,
+    &quot;location&quot;: &quot;westus&quot;
+  }</pre>
+
+
+  <h2>계속하려면</h2>
+
+
+  <p>단일 VM에서 학습할 수 있는 내용을 계속 진행한 다음 다른 항목으로 이동합니다.</p>

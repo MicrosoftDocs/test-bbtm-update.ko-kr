@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2b98f637af66014df2f44b20202646be7545d4cf
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898587"
+Slug: how-to-develop-your-service-health-alerting-strategy
+Title: 서비스 상태 경고 전략을 개발하는 방법
+Summary: 서비스 문제는 가동 중단 및 계획된 유지 관리에서 서비스 전환 및 사용 중지로 인한 가용성에 영향을 줄 수 있는 모든 문제입니다.
+Content: >-
+  <p>서비스 문제는 가동 중단 및 계획된 유지 관리에서 서비스 전환 및 사용 중지에 이르기까지 가용성에 영향을 줄 수 있는 모든 문제입니다. 무해한 유지 관리 및 사이트 안정성 엔지니어링&mdash; 서비스 문제와 같은 분야의 혁신 덕분에 항상 희귀&mdash;하지만 서비스 상태 경고는 클라우드 운영을 성공적으로 관리하는 데 매우 중요한 부분입니다. &rsquo;문제가 발생할 경우 신속하게 작업할 수 있도록 팀이 환경의 상태와 상태를 이해하는 데 도움이 됩니다. 즉, 앱이 계속 실행되도록 다른 지역으로 장애 조치(failover)하거나 이해 관계자와 통신하여 무슨 일이 일어나고 있는지 알 수 있도록 하는 것과 같은 정정 조치를 취하는 것을&rsquo; 의미할 수 있습니다.</p>
+
+
+  <p>이 블로그&rsquo;에서는 효과적인 서비스 상태 경고 전략을 개발한 다음 <a href="https://aka.ms/ash-alertstrategy-blog">, Azure Service Health</a> 경고를 사용하여 실제로 만드는 방법을 설명합니다.</p>
+
+
+  <h2>Azure Service Health 경고의 작동 방식</h2>
+
+
+  <p>Azure Service Health는 중단 및 계획된 유지 관리와 같은 Azure 서비스 문제가 영향을 줄 때 경고 및 지침을 제공하는 무료 Azure 서비스입니다. Azure Service Health는 포털에서 활성, 예정된 문제 및 과거 문제를 확인할 수 있는 대시보드로 사용할 수 있습니다.</p>
+
+
+  <p>물론 Azure Service Health 대시보드를 정기적으로 확인하지 않을 수도 있습니다. Azure&rsquo; Service Health도 경고를 제공하는 이유입니다. Azure Service Health 경고는 이메일, SMS, 모바일 푸시 알림, ServiceNow 또는 PagerDuty와 같은 내부 발권 시스템에 대한 웹후크 등의 기본 채널을 통해 자동으로 알림을 보내며, 사용자에게 영향을 주는 문제가 있는&rsquo; 경우 더 많은 정보를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1db97210-1892-4fec-8570-c1b76d1f258a.png"><img alt="A screenshot of Azure Service Health in the Azure portal." border="0" height="608" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dae54c80-6e02-4260-b66d-425758d75d75.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>Azure Service Health 경고를&rsquo; 새로 고치면&rsquo; 구성 프로세스 중에 선택할 수 있는 많은 항목이 있음을 알 수 있습니다. Who 서비스 및 지역에 대해 경고해야 하나요? Who 어떤 유형의 상태 이벤트에 대해 경고해야 하나요? 중단? 계획된 유지 관리? 건강 권고? 전자 메일, SMS, 푸시 알림, 웹후크 등의 알림 유형 또는 사용해야 하는 다른 항목은 무엇인가요?</p>
+
+
+  <p>올바른 방법으로&rsquo; 이러한 질문에 대답하려면 팀과 대화를 나누고 서비스 상태 경고 전략을 개발해야 합니다.</p>
+
+
+  <h2>팀과 함께 서비스 상태 경고 전략을 개발하는 방법</h2>
+
+
+  <p>Azure Service Health 경고를 설정할 때 팀에서 해결해야 할 세 가지 주요 고려 사항이 있습니다.</p>
+
+
+  <p>첫째, <i>비판적 성에</i> 대해 생각해 보십시오. 지정된 구독, 서비스 또는 지역은 얼마나 중요합니까? 프로덕션&rsquo;&rsquo; 환경에서 경고를 설정하려고 하지만 개발/테스트가 필요하지 않을 수 있습니다. Azure Service Health는 개인 설정되므로&rsquo; 서비스 문제가 사용하지 않는 서비스 또는 지역에 영향을 미치는 경우 경고를 트리거하지 않습니다&rsquo;.</p>
+
+
+  <p>다음으로, 문제가 발생할 경우 <i>알릴 사람을</i> 결정합니다. Who 그들이 행동 할 수 있도록 서비스 문제에 대해 말할 수있는 올바른 사람 또는 팀입니까? 예를 들어 Azure SQL 또는 Azure Cosmos DB 문제를 데이터베이스 팀에 보냅니다.</p>
+
+
+  <p>마지막으로, 개인 또는 팀을 <i>알리는 방법에</i> 동의합니다. 메시지에 적합한 통신 채널은 무엇인가요? 전자 메일이 시끄럽기 때문에 팀이 응답하는 데 더 오래 걸릴 수 있습니다. &rsquo;몇 주 정도 떨어진 계획된 유지&rsquo; 관리에는 괜찮지만 현재 사용자에게 영향을 미치는 중단에는 해당되지 않습니다. 이 경우&rsquo; 푸시 알림 또는 SMS와 같이 즉시 표시되는 채널을&rsquo; 사용하여 통화 중인 팀에 경고하려고 합니다. 또는 더 크거나 더 성숙한 조직을 만드는 경우&rsquo; 정상적인 워크플로를 따를 수 있도록 웹후크/ITSM 연결을 사용하여 기존 문제 관리 시스템에 경고를 연결합니다.</p>
+
+
+  <p>Azure Service Health, 경고 설정 방법 및 서비스 문제를 처리하기 위한 기타 중요한 지침에 대한 자세한 내용은 아래 비디오를 참조하세요.</p>
+
+
+  <p><a href="https://aka.ms/ashmechanics"><img alt="A thumbnail of a video about Azure Service Health." border="0" height="575" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e1dcd657-9ac6-4d11-a852-97286f1faa49.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1024"></a></p>
+
+
+  <h2>오늘 Azure Service Health 경고 설정</h2>
+
+
+  <p>팀과 Azure Service Health 경고 대화를 나누고 전략을 개발한 후에&rsquo;는 Azure Portal에서 <a href="https://aka.ms/ash-alertstrategy-blog">Azure Service Health 경고를 구성합니다</a> .</p>
+
+
+  <p>자세한 지침은 Azure Service Health <a href="https://aka.ms/servicehealthdocs">설명서를 참조하세요</a>. <a href="https://aka.ms/servicehealthfeedback">피드백 포럼</a>을 통해 아이디어를 제출하여 제안이 있는지 알려주세요.</p>

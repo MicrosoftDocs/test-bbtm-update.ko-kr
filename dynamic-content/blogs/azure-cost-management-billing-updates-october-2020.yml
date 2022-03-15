@@ -1,0 +1,209 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7c6f6974ebc0f9aa828a4f5546915da2f6b74a23
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899361"
+Slug: azure-cost-management-billing-updates-october-2020
+Title: Azure Cost Management 및 청구 업데이트 - 2020년 10월
+Summary: 지난 달에는 많은 비용 최적화 팁과 요령을 공유했습니다. 이러한 초점을 계속 진행하는 10월은 Azure IaaS(Infrastructure as a Service), 데이터베이스 또는 스토리지 제품에 대한 비용을 절감하는 데 도움이 됩니다. 또한 Azure Resource Manager 배포 템플릿을 통해 구독을 만드는 방법에 대해서도 알아보고, 설문 조사에 참여하여 청구된 요금을 확인할 때 환경을 간소화하고, 몇 가지 초기 미리 보기를 미리 볼 수 있습니다. 즐겨보세요!
+Content: >-
+  <p>새로운 학생이든, 신생 기업이든, 대기업이든&#39;재정적 제약이 있으며, 지출할&#39;, 미래를 위한 계획 위치 및 방법을 알아야 합니다. 이 법안에 관해서 아무도 놀라움을 원하지 않으며, Azure Cost Management 및&nbsp;Billing이 들어오는 곳입니다.</p>
+
+
+  <p>&#39;항상 문제에 대해 자세히 알아볼 수 있는 방법과 Azure Cost Management 및&nbsp;Billing을 통해 클라우드에서 비용을 다시 발생시킬&#39;있는 위치를 더 잘 이해하고, 잘못된 지출 패턴을 식별 및 방지하며, 비용을 최적화하여 더 적은 비용으로 더 많은 작업을 수행할 수 있는 방법을 찾고 있습니다. 피드백에 따른 몇 가지 최신 개선 사항 및 업데이트는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><a href="#advisor">Azure Advisor 점수 소개</a></li>
+      <li><a href="#subscriptions">ARM 템플릿을 사용하여 구독 만들기</a></li>
+      <li><a href="#survey">청구된 요금을 확인할 때 필요한 사항 알려주세요.</a></li>
+      <li><a href="#labs">Cost Management Labs의 새로운&#39;</a></li>
+      <li><a href="#optimize">Azure를 사용하여 비용을 절감하는 새로운 방법</a></li>
+      <li><a href="#videos">새로운 비디오 및 학습 기회</a></li>
+      <li><a href="#docs">설명서 업데이트</a></li>
+  </ul>
+
+
+  <p>&#39;세부 사항을 자세히 살펴보겠습니다.</p>
+
+
+  <p><a name="advisor"></a>&nbsp;</p>
+
+
+  <h2>Azure Advisor 점수 소개</h2>
+
+
+  <p>비용 효율적인 방식으로 워크로드를 다시 실행할&#39;있다는 확신을 가지는 것이&#39;좋을까요? 이&#39;Azure Advisor가 제공하는 것과 정확히 일치하며, Advisor 점수를 사용하면 Azure 워크로드가 모범 사례를 얼마나 잘 따르고 있는지 이해하고, 문제를 수정하여 얻을 수 있는 금액을 평가하고, 배포를 최적화하기 위해 취할 수 있는 가장 영향력 있는 권장 사항의 우선 순위를 지정하는 것이 그 어느 때보다 쉽게&#39;.</p>
+
+
+  <p>Advisor 점수가 도움이 됩니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/azure/advisor" target="_blank">Azure Advisor</a> 및 <a href="https://azure.microsoft.com/blog/introducing-the-microsoft-azure-wellarchitected-framework" target="_blank">Microsoft Azure Well-Architected Framework</a>에서 정의한 모범 사례를 얼마나 잘&rsquo; 따르는지 <strong>평가</strong>합니다.</li>
+      <li>가장 영향력 있는 작업을 먼저 수행하여 배포를 <strong>최적화</strong>합니다.</li>
+      <li>시간이 지남에 따라 잘 설계된 진행 상황을 <strong>보고</strong>합니다.</li>
+  </ul>
+
+
+  <p><img alt="Screenshot of the Azure Advisor Score experience in the Azure portal" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bcb247c7-d8dd-4c00-a23d-fc83a68109b7.png"></p>
+
+
+  <p><a href="https://azure.microsoft.com/blog/optimize-your-azure-workloads-with-azure-advisor-score" target="_blank">Azure Advisor 점수</a>에 대해 자세히 알아보고 Azure Portal에서 <a href="https://aka.ms/azureadvisor" target="_blank">Azure Advisor</a>를 방문하여 오늘 점수를 확인하세요.</p>
+
+
+  <p><a name="subscriptions"></a>&nbsp;</p>
+
+
+  <h2>ARM 템플릿을 사용하여 구독 만들기</h2>
+
+
+  <p>사용량이 증가하고 여러 구독에서 Azure 사용 공간을 확장하기 시작하면 프로그래밍 방식으로 구독을 만들&#39;있는 상황을 찾을 수 있습니다. 이는 중앙 IT 팀 또는 단일 단위로 배포 가능한 완전히 패키지된 애플리케이션을 포함할 수 있는지 확인하려는 경우에 특히 중요합니다. 이를 위해 스크립트를 빌드할 수 있지만 <a href="https://docs.microsoft.com/azure/azure-resource-manager/templates/overview" target="_blank">ARM(Azure Resource Manager) 배포 템플릿</a> 은 종속성을 관리하고 사용자를 대신하여 오케스트레이션을 처리하는 간단하고 선언적인 언어로 그 어느 때보다 쉽게 이 작업을 수행할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/programmatically-create-subscription#create-subscriptions-using-arm-templates" target="_blank">ARM 템플릿을 사용하여 구독을 만들고</a> 수동 프로세스를 자동화하여 시간을 절약하는 방법을 알아봅니다.</p>
+
+
+  <p><a name="survey"></a>&nbsp;</p>
+
+
+  <h2>청구된 요금을 확인할 때 필요한 사항 알려주세요.</h2>
+
+
+  <p>아시다시피, 우리는 항상 당신의 요구와 기대에 대해 자세히 배울 수있는 방법을 찾고&#39;. 이번 달에는 실제 사용량 현황 데이터에 대한 청구 요금을 확인하는 방법에 대해 자세히 알아보고자&#39;. &#39;입력을 사용하여 비용 관리 및 청구의 송장 환경을 최적화하여 청구서를 더 빠르고 쉽게 이해하고 결제할 수 있도록 지원합니다. 설문 조사에는 약 10분이 소요됩니다.</p>
+
+
+  <p><a href="https://microsoft.qualtrics.com/jfe/form/SV_0IZUAgwD803UKyh" target="_blank">설문 조사를 수행하세요</a>.</p>
+
+
+  <p><a name="labs"></a>&nbsp;</p>
+
+
+  <h2>Cost Management Labs의 새로운&#39;</h2>
+
+
+  <p><a href="https://azure.microsoft.com/blog/azure-cost-management-updates-july-2019/#labs" target="_blank">Cost Management Labs</a>를 사용하면 Azure Cost Management에서 제공되는&#39;파악할 수 있으며, 피드백을 공유하고 서비스를 사용하는 방법을 더 잘 이해할 수 있도록 Microsoft와 직접 협력하여 더 많은 튜닝 및 최적화된 환경을 제공할 수 있습니다. Cost Management Labs에서 볼 수 있는 몇 가지 기능은 다음과 같습니다.</p>
+
+
+  <ol>
+      <li>
+      <p><strong>새로운: 범위 알약은 이제 현재 범위</strong> &ndash; 의 위치를 엽니 다 <em>이제 공용 포털에서 사용할 수 있습니다.</em><br>
+  Cost Management 환경의 범위 약을 사용하면 리소스 그룹, 구독 또는 청구 계정 간에 빠르고 쉽게 전환할 수 있습니다. 이제 범위 선택기를 열면 현재 선택한 범위가 기본값으로 설정되어 그 어느 때보다 빠르게 범위 간을 전환할 수 있습니다.</p>
+      </li>
+      <li>
+      <p><strong>신규: 리소스 및 예약에 대한 새로운 비용 분석 보기</strong><br>
+  리소스 및 예약별로 비용을 절감하는 새롭고 빠른 비용 보기를 도입합니다. 우리는 여전히이 작업을 할&#39;있습니다. <a href="https://aka.ms/costmgmt/labs" target="_blank">Cost Management Labs</a>에서 미리 보기 체험을 사용하여 새 보기를 옵트인할 수 있습니다.</p>
+      </li>
+      <li>
+      <p><strong>향상된 시작</strong><br>
+  Cost Management 및&nbsp;Billing에서 더 많은 옵션을 다루는 확장된 시작 환경</p>
+      </li>
+  </ol>
+
+
+  <p>물론, 그&#39;전부는 아닙니다. Azure Cost Management의 모든 변경 내용은 전체 Azure Portal에서&#39;일주일 전에 Cost Management Labs에서 사용할 수 있습니다. 여러분의 생각을 듣고 다음에 보고 싶은 것을 이해하고&#39;&#39;. 무엇을 망설이고 계신가요? 지금 <a href="https://aka.ms/costmgmt/labs" target="_blank">Cost Management Labs를</a> 사용해 보세요.</p>
+
+
+  <p><a name="optimize"></a>&nbsp;</p>
+
+
+  <h2>Azure를 사용하여 비용을 절감하는 새로운 방법</h2>
+
+
+  <p><a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-september-2020/" target="_blank">9월의 모든 비용 최적화 팁과 요령</a>만으로는 충분하지&#39;이번 달에 더 많은 것을 제공합니다. Azure IaaS(Infrastructure as a Service), 데이터베이스 또는 스토리지 제품을 사용하는&#39;경우 이러한 항목을 확인할&#39;있습니다.</p>
+
+
+  <p>새 가격 책정 옵션:</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/updates/achieve-higher-performance-and-cost-savings-on-azure-disk-storage-with-performance-tiers" target="_blank">Azure Disk Storage 성능 계층을 사용하여</a> 비용을 최소화합니다.</li>
+  </ul>
+
+
+  <p>이미 사용하고&#39;서비스에 대한 할인된 가격:</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/updates/azure-machine-learning-offers-new-capabilities-at-no-added-cost" target="_blank">이제 Azure Machine Learning Enterprise Edition 기능을 추가 비용 없이 사용할 수 있습니다</a>.</li>
+      <li><a href="https://azure.microsoft.com/blog/lower-prices-and-more-flexible-purchase-options-for-azure-red-hat-openshift" target="_blank">Azure Red Hat OpenShift</a>에 대한 저렴한 가격으로 최대 77%를 절약하세요.</li>
+  </ul>
+
+
+  <p>더 많은 것을 저장하는 데 도움이 되는 새로운 기능:</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/updates/new-azure-spot-virtual-machines-features" target="_blank">Azure Spot Virtual Machine 가격 및 제거 요금을 검토합니다</a>.</li>
+      <li><a href="https://azure.microsoft.com/updates/new-azure-dedicated-hosts-capabilities" target="_blank">새로운 Azure Dedicated Host 기능</a>.</li>
+      <li><a href="https://azure.microsoft.com/updates/serverless-offer-for-azure-cosmos-db-coming-soon-on-all-apis" target="_blank">Azure Cosmos DB에 대한 서버리스 제품은 모든 API에서 곧 제공됩니다</a>.</li>
+      <li><a href="https://azure.microsoft.com/updates/public-preview-of-azure-netapp-files-cross-region-replication-crr-capability" target="_blank">Azure NetApp Files CRR(지역 간 복제)의 공개 미리 보기</a>입니다.</li>
+      <li>사용되지 않는 리소스를 중지하여 요금 발생을 중지합니다. <ul>
+          <li><a href="https://azure.microsoft.com/updates/azure-database-for-postgresql-flexible-server-now-in-preview" target="_blank">Azure Database for PostgreSQL 유연한 서버 미리 보기</a></li>
+          <li><a href="https://azure.microsoft.com/updates/public-preview-aks-startstop-cluster-feature" target="_blank">AKS(Azure Kubernetes Service) 클러스터 미리 보기 시작/중지</a></li>
+      </ul>
+      </li>
+  </ul>
+
+
+  <p>확장된 Azure 예약 제안 집합:</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/updates/reserved-capacity-on-azure-sql-database-hyperscale-is-now-available" target="_blank">이제 Azure SQL Database 하이퍼스케일의 예약된 용량을 사용할 수 있습니다</a>.</li>
+      <li><a href="https://azure.microsoft.com/blog/lower-prices-and-more-flexible-purchase-options-for-azure-red-hat-openshift" target="_blank">Azure Red Hat OpenShift</a>에 대한 3년 예약으로 더 많은 비용을 절감할 수 있습니다.</li>
+  </ul>
+
+
+  <p>또한 온 <a href="https://azure.microsoft.com/blog/unlock-cost-savings-and-maximize-value-with-new-azure-infrastructure-innovation" target="_blank">-프레미스 및 클라우드 인프라에 대한 이러한 추가 절감 옵션을 확인하세요</a>.</p>
+
+
+  <p><a name="videos"></a>&nbsp;</p>
+
+
+  <h2 id="new-videos-and-learning-opportunities">새로운 비디오 및 학습 기회</h2>
+
+
+  <p>Azure Spring Cloud를 사용할&#39;있는 경우&#39;비용을 최소화하는 방법을 알아보는 데 도움이 되는 새 비디오를&#39;.</p>
+
+
+  <ul>
+      <li><a href="https://channel9.msdn.com/events/The-Launch-Space/Azure-Spring-Cloud/Azure-Spring-Cloud-with-Autoscale?term=cost&amp;sortBy=recent" target="_blank">자동 크기 조정을 사용하여 Azure Spring Cloud에서 앱 사용률을 높</a> 입니다(20분).</li>
+  </ul>
+
+
+  <p><a href="https://aka.ms/costmgmt/videos" target="_blank">Azure Cost Management 및&nbsp;Billing YouTube 채널을</a> 따라 새 동영상이 다시 릴리스될&#39;루프를 유지하고 다음에 보고 싶은&#39;알려주세요.</p>
+
+
+  <p>좀 더 안내적인 환경을 원하십니까? <a href="https://aka.ms/costmgmt/learn" target="_blank">Azure Cost Management 및Billing을 사용하여 Azure 지출 제어 및&nbsp; 청구서 관리</a>부터 시작합니다.</p>
+
+
+  <p><a name="docs"></a>&nbsp;</p>
+
+
+  <h2>설명서 업데이트</h2>
+
+
+  <p>이번 달에는 하나의 설명서만 업데이트됩니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/azure/cost-management-billing/manage/delete-azure-payment-method" target="_blank">Azure 청구 결제 방법을 삭제합니다</a>.</li>
+  </ul>
+
+
+  <p>모든 설명서 업데이트를 주시하고 싶으신가요? GitHub <strong>azure-docs</strong> 리포지토리에서 <a href="https://github.com/MicrosoftDocs/azure-docs/commits/master/articles/cost-management-billing" target="_blank">Cost Management 및&nbsp;Billing 문서 변경 기록을</a> 확인합니다. 누락된 항목이 표시되면 문서 맨 위에서 <strong>편집</strong> 을 선택하고 빠른 끌어오기 요청을 제출합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>다음&#39;?</h2>
+
+
+  <p>이들은 지난 달에서 큰 업데이트의 단지 몇 가지. <a href="https://aka.ms/costmgmt/blog">이전 Azure Cost Management 및&nbsp;Billing 업데이트를</a> 확인하는 것을 잊지&#39;. 피드백에 따라 항상 의견을 경청하고 지속적으로 개선할&#39;있으므로 피드백을 계속 보내주세요.</p>
+
+
+  <p>Twitter를 팔로우 <a href="https://twitter.com/azurecostmgmt">@AzureCostMgmt</a> 하고 <a href="https://aka.ms/costmgmt/videos" target="_blank">YouTube 채널을</a> 구독하여 업데이트, 팁 및 요령을 확인하세요. 그리고 언제나처럼, 당신의 아이디어를 공유하고 <a href="https://aka.ms/costmgmt/feedback" target="_blank">비용 관리 피드백 포럼</a>에서 다른 사람을 투표.</p>
+
+
+  <p>우리는 이것이 모두를 위해 노력하는 시간인 것을 알고 있습니다. Azure Cost Management 및&nbsp;Billing 팀의 최고의 소원입니다. 안전하게 유지하고 건강을 유지!</p>

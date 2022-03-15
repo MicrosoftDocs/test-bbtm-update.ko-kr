@@ -1,0 +1,131 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cfaa0ff752588315023b603f497ddef1862e4e0a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898997"
+Slug: enhancements-in-application-insights-profiler-and-snapshot-debugger
+Title: 애플리케이션 Insights 프로파일러 및 스냅샷 디버거의 향상된 기능
+Summary: Application Insights Profiler 및 스냅샷 디버거에 대한 일련의 개선 사항을 발표하게 되어 기쁘게 생각합니다.
+Content: >-
+  <p>Application Insights Profiler 및 스냅샷 디버거에 대한 일련의 개선 사항을 발표하게 되어 기쁘게 생각합니다. Profiler는 로드 중인 웹앱 성능을 저하시킨 코드 줄을 식별합니다. 스냅샷 디버거는 런타임 예외 호출 스택 및 지역 변수를 캡처하여 코드에서 문제를 식별합니다. 사용자가 도구를 쉽고 편리하게 사용할 수 있도록 Profiler 및 스냅샷 디버거에 대해 다음과 같은 새로운 기능을 제공했습니다.</p>
+
+
+  <h2>Profiler 및 스냅샷 디버거를 사용하는 애플리케이션 Insights 사용</h2>
+
+
+  <p>새로 향상된 애플리케이션 Insights 사용 환경을 통해 Profiler 및 스냅샷 디버거는 애플리케이션 Insights 사용할 기본 옵션입니다.</p>
+
+
+  <ul>
+   <li><strong>웹앱을 다시 배포하지 않고 스냅샷 디버거 사용</strong>: ASP.NET 핵심 웹앱의 경우 스냅샷 디버거는 앱 Insights 사용하도록 설정할 때 간단한 기본 옵션입니다. NuGet 설치하고 예외 추적 코드를 추가하도록 프로젝트를 수정해야 했습니다. &rsquo;이제 앱 설정을 통해 ASP.NET 코어 호스팅을 통해 수행되므로 다시 배포가 필요하지 않습니다. ASP.NET 지원은 곧 제공될 예정입니다.</li>
+   <li>
+   <p><strong>한 단계에서 애플리케이션 Insights 프로파일러</strong> 사용: 추가 단계가 필요한 별도의 프로파일러 구성 창에서 프로파일러를 사용하도록 설정합니다. 더 이상 필요하지 않습니다.</p>
+   </li>
+  </ul>
+
+
+  <h3>프로파일러</h3>
+
+
+  <ul>
+   <li>
+   <p><strong>주문형 프로파일러</strong>: 필요에 따라 언제든지 웹앱에서 프로파일러 실행 세션을 트리거합니다. 이전에는 Profiler가 임의로 5%의 시간을 실행하여 중요한 추적 캡처를 놓칠 수 있습니다. 새로운 주문형 프로파일러 기능을 사용하면 사용자가 필요에 따라 언제든지 추적을 캡처할 수 있으므로 이 문제가 해결됩니다.</p>
+   </li>
+   <li>
+   <p><strong>Linux의 ASP.NET 코어용 프로파일러</strong>: Profiler는 이제 App Services Linux ASP.NET 핵심 2.0 docker 이미지에서 작동합니다. 향후 더 많은 플랫폼이 지원될 예정입니다.</p>
+   </li>
+  </ul>
+
+
+  <h3>스냅샷 디버거</h3>
+
+
+  <ul>
+   <li>
+   <p><strong>스냅샷 정상 검사</strong>: 웹앱 런타임 예외에 연결된 스냅샷이 없는 이유를 스마트하게 진단합니다. 더 많은 인사이트와 가시성으로 스냅샷 디버거 문제를 쉽고 빠르게 해결합니다.</p>
+   </li>
+  </ul>
+
+
+  <h2>프로파일러 및 스냅샷 디버거 사용이 그 어느 때보다 쉬워졌습니다.</h2>
+
+
+  <p>App Services에 대한 앱 Insights 사용 환경을 개선했습니다. App Services 리소스에 웹 애플리케이션을 배포했다고 가정합니다. 나중에 웹앱이 느리거나 예외를 throw하는 것을 볼 수 있습니다. 웹앱에서 앱 Insights 사용하여 진행 중인 작업을&rsquo; 모니터링하고 진단하려고 합니다. 물론 모니터링 서비스를 사용하도록 설정하기 위해 웹앱을 다시 배포하지는 않습니다&rsquo;.</p>
+
+
+  <p>새 사용 환경을 사용하면 설정 | 아래에서 앱 Insights 사용하도록 설정하는 진입점을 쉽게 찾을 수 있습니다.<strong> 애플리케이션 Insights</strong>. 추가된 <strong>섹션 코드 수준 진단</strong> 은 기본적으로 프로파일러 및 스냅샷 디버거가 느린 앱 성능 및 런타임 예외를 진단할 수 있도록 설정됩니다.</p>
+
+
+  <p>Profiler 에이전트는 새 앱 Insights 사이트 확장에 설치되고 앱 설정에서 사용하도록 설정되므로 다음과 같이 프로파일러를 쉽게 사용할 수 있습니다. 스냅샷 디버거는 ASP.NET 코어 호스팅을 통해 활성화되며, 환경 변수가 설정된 경우 런타임에 어셈블리가 포함됩니다.</p>
+
+
+  <p>새 사용 환경에 대한 UI를 사용하면 모든 항목을 한 단계로 구성할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/41666712-3cd4-4986-b372-4ee59b1ef39d.png"><img alt="Enablement_UI" border="0" height="1140" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/be4833d3-d95d-4ec2-bfd3-2a16bb5e7818.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Enablement_UI" width="1509"></a></p>
+
+
+  <p>다음 App 설정 Profiler 및 스냅샷 디버거를 사용하도록 설정하기 위해 App Services에 추가됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/64944680-41f5-4e38-a53f-a499ab280e99.png"><img alt="Enablement_AppSettings" border="0" height="264" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7e9766e5-d177-4eef-b4de-24ea63b328c3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Enablement_AppSettings" width="992"></a></p>
+
+
+  <h2>흥미로운 프로파일러 추적 주문형 캡처</h2>
+
+
+  <p>새로운 주문형 트리거 프로파일러 기능을 도입하게 되어 기쁩니다. 중요한 추적이 누락되지 않도록 하려면 프로파일러 구성 창으로 이동하여 <strong>프로필 지금</strong> 단추를 클릭하여 필요에 따라 프로파일러를 시작할 수 있습니다. 다음과 같은 경우에 프로파일러 실행을 트리거할 수 있습니다.</p>
+
+
+  <ul>
+   <li>
+   <p>첫 번째 추적을 캡처하여 모든 것이 작동하는지 테스트하여 프로파일러 사용을 시작하려고 합니다.</p>
+   </li>
+   <li>
+   <p>부하 테스트 실행 중에 추적을 효율적이고 안정적으로 캡처하려고 합니다.</p>
+   </li>
+   <li>
+   <p>지금 진행 중인 성능 문제에 대한 추적을 즉시 캡처해야 합니다.</p>
+   </li>
+  </ul>
+
+
+  <p>또한 Profiler 실행 기록 목록에서 프로파일러가 어떻게 실행되었는지 더 자세히 확인할 수 있습니다.</p>
+
+
+  <p><a href="https://go.microsoft.com/fwlink/?linkid=873212" target="_blank">수동으로 Profiler 트리거</a>에서 자세히 알아볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7f58b5df-fa71-4956-b3c9-85da6668048f.png"><img alt="OnDemand-Profiler" border="0" height="1003" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95831846-bb56-490e-8087-856a0ed199a7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="OnDemand-Profiler" width="2423"></a></p>
+
+
+  <h2>Profiler를 사용하여 Linux에서 ASP.NET Core 성능 조사</h2>
+
+
+  <p>이제 이벤트 파이프 기술을 활용하여 App Services에서 호스트되는 Linux 컨테이너 내에서 실행되는 ASP.NET 핵심 웹앱에 대한 추적을 캡처할 수 있습니다. 프로파일러가 ASP.NET 코어에서 프로시저로 실행되어 추적을 캡처하므로 오버헤드가 줄어듭니다. 현재 미리 보기 릴리스는 평가 목적으로만 제공됩니다. <a href="https://docs.microsoft.com/azure/application-insights/app-insights-profiler-aspnetcore-linux">Application Insights Profiler를 사용하여 프로필 ASP.NET Core Azure Linux 웹앱을</a> 사용해 보세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/34e779e4-136f-4401-956a-56bc4286b62e.png"><img alt="Linux_profiler" border="0" height="482" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6957a22d-cf9f-4aac-a807-e3be7e971d4b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Linux_profiler" width="1467"></a></p>
+
+
+  <h2>신속하게 문제를 이해하고 해결하기 위한 스냅샷 상태 검사</h2>
+
+
+  <p>예외에 대한 스냅샷을 볼 수 없는 경우에 대한 주요 고객 피드백 중 하나를 해결하기 위해 사용자가 누락된 스냅샷의 원인을 진단하는 데 도움이 되는 새로운 기능을 빌드했습니다. 서비스는 사용자 입력에 따라 스냅샷 디버거에서 상태 검사를 수행합니다. 스냅샷이 누락된 경우 엔드 투 엔드 추적 뷰어 블레이드에 아무 것도 표시하지 않고 사용자가 진행&rsquo; 중인 문제를 해결하는 데 도움이 되는 링크를 표시합니다. 이를 통해 고객이 근본 원인을 파악하고 문제를 해결하는 데 신속하게 도움이 되기를 바랍니다. 우리는 항상 고객의&rsquo; 성공을 위해 노력합니다.</p>
+
+
+  <p><a href="https://go.microsoft.com/fwlink/?linkid=873213">스냅샷 디버거 문제 해결</a>에 대해 자세히 알아보세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b857ee85-9c4d-4c18-83e3-24c08ae29e65.png"><img alt="healthcheck2" border="0" height="1147" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/34e3ba3b-946b-4309-a640-7f5d2e4a3d7f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="healthcheck2" width="2303"></a></p>
+
+
+  <h2><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/af253ae0-5a1f-47e4-95c9-9734ff89d086.png"><img alt="SnapshotHealthCheck" border="0" height="1233" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7788e55d-7567-4018-abb2-009b7e1313aa.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SnapshotHealthCheck" width="2309"></a></h2>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>지금 웹앱에서 프로파일러 및 스냅샷 디버거를 사용하도록 설정합니다. 또는 .에서 <a href="mailto:  serviceprofilerhelp@microsoft.com">serviceprofilerhelp@microsoft.com</a> 피드백을 보냅니다<a href="mailto:snapshothelp@microsoft.com">snapshothelp@microsoft.com</a>. 이 게시물에 직접 회신할 수도 있습니다.</p>

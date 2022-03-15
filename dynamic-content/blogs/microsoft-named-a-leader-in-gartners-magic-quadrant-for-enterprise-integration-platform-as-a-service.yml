@@ -1,0 +1,47 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0905b38a82260fa40a1266773897d58e4e69b247
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898848"
+Slug: microsoft-named-a-leader-in-gartners-magic-quadrant-for-enterprise-integration-platform-as-a-service
+Title: Microsoft는 Enterprise Integration Platform as a Service에 대한 Gartner의 매직 사분면의 리더로 선정되었습니다.
+Summary: 우리는 Gartner가 비전의 실행 능력과 완전성을 기반으로 2020 년 엔터프라이즈 통합 플랫폼 (EiPaaS) 매직 쿼드런트에서 리더로 Microsoft를 위치했다는 것을 공유하게되어 기쁩니다. Microsoft는 지난 3년 동안 EiPaaS MQ 리더로 남아 있습니다.
+Content: >-
+  <p>우리는 Gartner가 비전의 실행 능력과 완전성을 기반으로 2020 년 Enterprise 통합 플랫폼 as a Service (EiPaaS) 매직 사분면에서 리더로 Microsoft를 배치한 것을 공유하게되어 기쁩니다. Microsoft는 지난 3년 동안 EiPaaS MQ 리더로 남아 있습니다.</p>
+
+
+  <p>Gartner에 따르면, &ldquo;Enterprise iPaaS 공급자는 점점 더 많은 엔터프라이즈 통합 시나리오를 다루기 위해 시장 진출 전략을 계속 확대하고 있습니다.&rdquo; 우리의 비전은 고객이 기존의 중앙 IT에서 비즈니스 주도 활동에 이르기까지 운영의 모든 영역에서 통합을 가능하게 하는 것입니다. API Management, Logic Apps, Service Bus 및 Event Grid로 구성된 AIS(Azure Integration Services)는 고객이 기계 학습, 인지 서비스 및 분석과 같은 서비스를 위해 애플리케이션과 데이터를 클라우드에 원활하게 연결하여 엔터프라이즈 차원의 가시성과 민첩성을 높일 수 있도록 지원합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9d58a3a-8c3b-4413-9753-1b70096fc5fe.png"><img alt="#1518" border="0" height="619" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2059e880-8170-4a2e-9a89-59d77305b60a.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="594"></a></p>
+
+
+  <h2>동급 최고의 통합 기능 및 플랫폼</h2>
+
+
+  <p>애플리케이션과 데이터가 그 어느 때보다 연결되면서 통합은 애플리케이션 빌드의 핵심 부분이 되었습니다. Azure Integration Services는 고객이 모든 것을 빠르고 쉽게 연결할 수 있도록 370개가 넘는 커넥터 및 RPA(로봇 프로세스 자동화)를 사용하는 UI 자동화를 통해 애플리케이션, 데이터 및 AI를 아우르는 포괄적이고 응집력 있는 통합 기능 집합을 제공합니다. Azure, 에지, 온-프레미스 및 다중 클라우드에서 높은 생산성과 낮은 코드 서버리스 통합 및 자동화를 통해 이러한 기능을 제공합니다.</p>
+
+
+  <h2>글로벌 가용성 및 고객 모멘텀</h2>
+
+
+  <p>Microsoft Azure 전 세계적으로 60개 이상의 지역과 대규모의 활동적인 파트너 커뮤니티를 보유하고 있습니다. Azure Integration Services는 전 세계에 40,000명 이상의 고객을 보유하고 있으며, 포춘지 선정 500대 기업 중 60% 이상이 비즈니스 통합 요구에 AIS를 사용하고 있습니다. <a href="https://customers.microsoft.com/en-us/story/abb-manufacturing-azure" target="_blank">ABB</a>, <a href="https://customers.microsoft.com/en-us/story/843823-rxr-realty-reopens-for-business-using-azure-iot" target="_blank">RXR Realty</a>, <a href="https://customers.microsoft.com/en-us/story/840666-rockefeller-capital-management-banking-and-capital-markets-azure-m365" target="_blank">Rockefeller Capital Management</a> 및 <a href="https://customers.microsoft.com/en-us/story/823135-flexigroup-bizapp-story" target="_blank">Flexigroup</a>과 같은 고객이 Logic Apps, API Management 및 Service Bus 포함한 Azure Integration Services를 사용하여 비즈니스 애플리케이션, 데이터 및 프로세스를 원활하고 더 나은 방식으로 연결하는 방법을 알아봅니다. 우리는 통합 여정에서 고객과 지속적으로 협력할 수 있기를 기대합니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+      <li><strong><a href="https://www.gartner.com/reprints/?id=1-1ZNT008W&amp;ct=200812&amp;st=sb" target="_blank">여기에서 전체 Gartner 보고서를</a> 읽어보세요</strong>. <a href="https://azure.microsoft.com/en-us/product-categories/integration/" target="_blank">Azure Integration Services</a>에 대해 자세히 알아보려면 웹 사이트를 방문하세요.</li>
+      <li><strong>Microsoft Ignite에서 최신 <a href="https://techcommunity.microsoft.com/t5/azure-developer-community-blog/new-logic-apps-runtime-performance-and-developer-improvements/ba-p/1645335" target="_blank">Logic Apps 제품 공지 사항을 확인하세요</a></strong>.&nbsp;</li>
+  </ul>
+
+
+  <hr>
+
+  <p>이 그래픽은 더 큰 연구 문서의 일부로 Gartner, Inc.에 의해 출판되었으며 전체 문서의 컨텍스트에서 평가되어야 합니다. Gartner 문서는 <a href="https://www.gartner.com/doc/reprints?id=1-1ZNT008W&amp;ct=200812&amp;st=sb" target="_blank">요청 시 사용할 수 있습니다</a>.</p>
+
+
+  <p>Gartner는 연구 간행물에 묘사된 공급업체, 제품 또는 서비스를 보증하지 않으며 기술 사용자에게 가장 높은 등급 또는 기타 지정을 가진 공급업체만 선택하도록 권고하지 않습니다. 가트너 연구 간행물은 가트너&rsquo; 연구 조직의 의견으로 구성되며 사실의 진술로 해석되어서는 안됩니다. Gartner는 상업성 또는 특정 목적에의 적합성에 대한 보증을 포함하여 이 연구와 관련한 모든 명시적 또는 묵시적 보증을 부인합니다.</p>

@@ -1,0 +1,56 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 286f85920470976168e1c33898fde593ad13d5bb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898491"
+Slug: asr-disaster-recovery-linux-vmware
+Title: VMware의 Linux에 대한 재해 복구 지원
+Summary: 지난 5년 동안 박스형 오픈 소스보다 많은 이점을 위해 오픈 소스 환경으로 점진적인 변화가 관찰되었습니다. 오픈 소스 운영 체제에 대한 낮은 비용, 유연성, 보안, 성능 및 커뮤니티 지원의 요인으로, 주로 Linux 배포판이 조직 전체에서 이러한 변화를 주도하고 있습니다.
+Content: >-
+  <p>지난 5년 동안 박스형 오픈 소스보다 많은 이점을 위해 오픈 소스 환경으로 점진적인 변화가 관찰되었습니다. 오픈 소스 운영 체제에 대한 낮은 비용, 유연성, 보안, 성능 및 커뮤니티 지원의 요인으로, 주로 Linux 배포판이 조직 전체에서 이러한 변화를 주도하고 있습니다. Microsoft는 이러한 업계 추세를 수용하고 있으며 커뮤니티에 기여하고 강화하기 위해 공급자와 지속적으로 협력하고 있습니다. Linux의 모든 주요 플랫폼 공급자는 개발자에게 지속적인 지원을 제공하는 잦은 릴리스 업그레이드를 목격했습니다. 전 세계적으로 Linux의 채택이 증가함에 따라 많은 조직에서 중요 업무용 워크로드를 Linux 기반 서버 머신으로 이동하고 있습니다.</p>
+
+
+  <p>ASR(Azure Site Recovery)은 항상 재해 복구를 위해 VMware 및/또는 물리적 컴퓨터의 모든 주요 Linux 서버 버전과 함께 <a href="https://docs.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix#replicated-machines" target="_blank">온보딩</a> 되었습니다. 또한 지난 6개월 동안 Red Hat Enterprise Linux(RHEL), CentOS, Ubuntu, Debian, SUSE 및 Oracle과 같은 여러 공급자의 최신 OS 버전 릴리스에 대한 지원을 확장하는 데 계속 집중해 왔다.</p>
+
+
+  <ul>
+   <li>ASR은 <a href="https://support.microsoft.com/en-us/help/4055712/update-rollup-27-for-azure-site-recovery" target="_blank">2018년 7월, 2018년 8월 및 2019년 1</a>월부터 RHEL 7.5, 6.10 및 7.6을 지원하기 시작 <a href="https://support.microsoft.com/en-my/help/4485985/update-rollup-32-for-azure-site-recovery" target="_blank"></a> 했습니다. <a href="https://support.microsoft.com/en-in/help/4460079/update-rollup-28-for-azure-site-recovery" target="_blank"></a></li>
+   <li>SUSE Linux Enterprise Server 12(SP3까지)에 대한 지원은 SP2 및 SP3 릴리스의 성공과 중요한 워크로드에 대한 광범위한 사용 후에 <a href="https://support.microsoft.com/en-us/help/4055712/update-rollup-27-for-azure-site-recovery" target="_blank">2018년 7월에</a> 추가되었습니다.</li>
+   <li>ASR은 <a href="https://support.microsoft.com/en-in/help/4460079/update-rollup-28-for-azure-site-recovery" target="_blank">2018년 8월부터 CentOS 6.10, 2019년 1</a> 월부터 7.6 지원을 시작했습니다.</li>
+   <li>최신 버전의 Oracle Enterprise Linux 버전 6.8, 6.9, 7.0, 7.5 및 UEK 릴리스 5는 <a href="https://support.microsoft.com/en-us/help/4478871/update-rollup-31-for-azure-site-recovery" target="_blank">2018년 11월에 지원을 위해 추가되었으며 2019년 1</a><a href="https://support.microsoft.com/en-my/help/4485985/update-rollup-32-for-azure-site-recovery" target="_blank">월에</a>는 OEL 버전 6.10 및 7.6이 추가되었습니다.</li>
+  </ul>
+
+
+  <p>공급자의 위의 릴리스 업데이트 외에도 파일 시스템 및 분할 방법 측면에서 Linux OS가 향상되었습니다. ASR은 이러한 향상된 기능과 VMware 및 물리적 Linux 머신의 업계 채택을 주시하고 있습니다.</p>
+
+
+  <ul>
+   <li>2018년에는 많은 수의 구현이 GPT(GUID 분할 테이블)로 이동되어 거의 무제한의 파티션을 허용했습니다. 또한 부팅 데이터의 여러 복사본을 저장하여 시스템을 더욱 강력하게 만듭니다. ASR은 <a href="https://support.microsoft.com/en-in/help/4460079/update-rollup-28-for-azure-site-recovery" target="_blank">2018년 8월부터</a> 레거시 BIOS 호환성 모드에서 GPT 파티션 스타일을 지원하기 시작했습니다.</li>
+   <li>Linux의 사용자 지정 사용은 시스템 구조에서도 다양하게 발전했습니다. 일부 특정 시나리오에는 디스크 파티션(및 LVM 볼륨에서 /boot), /(root), /boot, /usr, /usr/local, /var, /etc 디렉터리를 별도의 파일 시스템 및 동일한 시스템 디스크에 있지 않은 별도의 파티션에 포함하는 것이 포함됩니다. ASR은 <a href="https://support.microsoft.com/en-us/help/4478871/update-rollup-31-for-azure-site-recovery" target="_blank">2018년 11월에</a> 이러한 사용자 지정에 대한 지원을 추가했습니다.</li>
+  </ul>
+
+
+  <p>아래 타임라인은 VMware 및 물리적 머신에 대해 2018년 7월부터 ASR에서 확장된 Linux 지원을 캡처합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/27293d43-57b2-492a-82d4-9174847bd806.jpg"><img alt="Linux Timeline Blog" border="0" height="469" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f74cc9d1-0d20-4bd6-91c4-b18afab8cef3.jpg" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="Linux 타임라인 블로그" width="986"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>관련 링크 및 추가 콘텐츠</h2>
+
+
+  <ul>
+   <li><a href="https://support.microsoft.com/en-us/help/4055712/update-rollup-27-for-azure-site-recovery" target="_blank">ASR 업데이트 롤업 27</a></li>
+   <li><a href="https://support.microsoft.com/en-in/help/4460079/update-rollup-28-for-azure-site-recovery" target="_blank">ASR 업데이트 롤업 28</a></li>
+   <li><a href="https://support.microsoft.com/en-us/help/4478871/update-rollup-31-for-azure-site-recovery" target="_blank">ASR 업데이트 롤업 31</a></li>
+   <li><a href="https://support.microsoft.com/en-my/help/4485985/update-rollup-32-for-azure-site-recovery" target="_blank">ASR 업데이트 롤업 32</a></li>
+   <li>VMware 가상 머신 <a href="https://docs.microsoft.com/en-us/azure/site-recovery/vmware-physical-azure-support-matrix#replicated-machines" target="_blank">을 복제하기 위해 지원되는 운영 체제</a> 에 대해 알아봅니다.</li>
+   <li>VMware 머신에 대한 <a href="https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-about-disaster-recovery" target="_blank">재해 복구를 구성</a> 하여 시작합니다.</li>
+   <li>도움이 필요하신가요? <a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=hypervrecovmgr" target="_blank">지원을 위해 ASR 포럼</a>에 문의하세요.</li>
+   <li>새로운 아이디어를 기여하고 기존 아이디어를 투표하여 <a href="https://feedback.azure.com/forums/256299-site-recovery" target="_blank">ASR을 개선할</a> 수 있는 방법을 알려주세요.</li>
+  </ul>

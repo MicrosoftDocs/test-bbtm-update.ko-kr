@@ -1,0 +1,128 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 20938e2db75a15b2458e10f35d0346080eea6a5c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899049"
+Slug: devcon4
+Title: Microsoft @ DevCon4
+Summary: '2015년 DevCon에서 Microsoft Azure Ethereum에 대한 지원을 발표했습니다. 개인 Ethereum 네트워크와 해당 "Hello World" 스마트 계약으로 구성된 겸손한 시작이었습니다. '
+Content: >-
+  <p>2015년 DevCon에서 Microsoft Azure Ethereum에 대한 지원을 발표했습니다. 개인 Ethereum 네트워크와 해당 &ldquo;Hello World&rdquo; 스마트 계약으로 구성된 겸손한 시작이었습니다. 이제 2018년에 Azure는 모든 주요 블록체인 플랫폼을 지원하며 랩 환경에서 프로덕션 워크로드를 대상으로 하는 보다 정교한 컨소시엄 네트워크에 다양한 네트워크 구성을 배포할 수 있습니다.</p>
+
+
+  <p>그 이후로, 우리는 모든 산업과 전 세계의 모든 구석에 걸쳐 고객의 수백에 종사하고있다. 우리는 실행 가능한 비즈니스 시나리오와 종단 간 블록 체인 솔루션을 제공하는 데 진정으로 필요한 것에 대해 많은 것을 배웠습니다.</p>
+
+
+  <p>핵심 학습은 블록체인 네트워크를 빌드하고 설정하는 데 필요한 것입니다. 더 나은 관리 기능, 거버넌스 프레임워크 및 dapp을 빌드하는 데 필요한 클라우드 서비스와의 통합을 통해 이러한 네트워크의 전체 수명 주기를 개선하기 위해 노력하고 있습니다. 광범위한 커뮤니티와 공유한 가장 영향력 있는 관찰 중 하나는 신뢰할 수 없는 네트워크가 참가자 및 잠재적으로 결과에 대한 다양한 신뢰 모델&rsquo; 개인 정보를 사용하여 여러 참가자가 있는 강력한 애플리케이션을 지원해야 한다는 요구 사항입니다.</p>
+
+
+  <p>이전 문은 처음에는 간단해 보일 수 있지만&rsquo; 강력한 여러 참가자, 다른 신뢰 모델 및 개인 정보 보호와 같은 몇 가지 측면을 살펴보면 매우 복잡합니다. 블록체인 기술만으로는 이러한 요구 사항을 해결할 수 없습니다.</p>
+
+
+  <p>이전에 <a href="https://azure.microsoft.com/en-us/blog/scanatomy-2/" target="_blank">Cryptlet 및</a> <a href="https://azure.microsoft.com/es-es/blog/introducing-enterprise-smart-contracts/" target="_blank">Enterprise Smart Contracts</a>(ESC)에 대한 이전 게시물에서 신뢰할 &ldquo;수 있는 오프 체인&rdquo; 컴퓨팅의 필요성에 대해 광범위하게 작성했습니다. 이러한 게시물은 블록체인을 사용하여 고유하게 구현할 수 있는 다자간 암호화 및 증명된 계산을 사용하도록 하기 위해 TEE(신뢰할 수 있는 실행 환경) 또는 enclave를 사용하는 것을 강조했습니다. 그러나 Enclave를 사용하면 블록체인 애플리케이션 스택에서 더 강력한 영역을 향상, 최적화 및 만들 수 있습니다.</p>
+
+
+  <p>예를 들어 기밀 컨소시엄 블록체인 프레임워크는 enclave를 사용하여 네트워크 또는 데이터 계층을 최적화합니다. 프레임워크를 사용하는 블록체인 노드에는 기본에 enclave를 사용하는 강력한 거버넌스, 개인 정보 보호 및 성능 프레임워크가 있습니다. &rsquo;또한 enclave를 사용하여 다중 참가자 계약 및 애플리케이션에 대한 애플리케이션 논리를 최적화하는 방법을 알아본다.</p>
+
+
+  <p>이번 주에 신뢰할 수 있는 컴퓨팅 <a href="https://entethalliance.org/enterprise-ethereum-alliance-releases-trusted-compute-application-programming-interfaces-to-help-enterprises-get-blockchain-applications-to-market/" target="_blank">사양의 V.5</a>를 릴리스할 EEA 신뢰할 수 있는 컴퓨팅 작업 그룹의 활성 참가자로서 분산된 다자간 애플리케이션을 발전시키고 이를 공개 방식으로 플랫폼에 포함하기 위한 기술을 계속 탐색, 공동 작업 및 공유할 것입니다. 해당 줄을 따라&hellip;</p>
+
+
+  <h2>DevCon4에서 Enclave 준비 EVM(eEVM)을 릴리스하게 되어 기쁘게 생각합니다.</h2>
+
+
+  <p>2018년 DevCon4에서는 <a href="https://github.com/Microsoft/eEVM" target="_blank">Enclave 준비 Ethereum Virtual Machine</a>을 출시하게 되어 기쁘게 생각합니다. 특히 이 릴리스는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>운영 체제 종속성이 없고 enclave에서 기본&quot;으로 실행할 수 있는 TEE/enclave 내에서 실행할 수 &ldquo;있는 EVM의 C++ 구현입니다.</li>
+      <li>&ldquo;가스가 없는&rdquo; 경우, 즉 계약 실행 중에는 가스를 계산하지 않습니다.</li>
+      <li>Homestead EVM opcodes를 지원합니다.</li>
+      <li>기존 EVM 바이트 코드를 실행합니다.</li>
+      <li>스토리지 및 복제 엔진/블록체인에서 엄격하게 분리합니다.</li>
+      <li>노드 또는 오프 체인의 enclave에서 실행할 수 있습니다.</li>
+      <li>
+      <div align="left">MIT 라이선스에 따라 릴리스되었습니다.</div>
+      </li>
+  </ul>
+
+
+  <h3>이 EVM은 다음과 같은 것이 아닙니다.</h3>
+
+
+  <ul>
+      <li>새 블록체인.</li>
+      <li>지원되는 제품 제품입니다.</li>
+      <li>구현과 경쟁하기 위한 것입니다.</li>
+  </ul>
+
+
+  <p align="left">이 기여는 <a href="https://software.intel.com/sgx">Intel&reg; SGX 기술과</a> 같은 TE가 기밀성을 통해 EVM을 향상시킬 수 있는 방법을 보여줍니다. 이 코드베이스는 모든 블록체인 또는 오프체인 컴퓨팅 시나리오에서 TEE 지원 EVM 계약 논리가 작동하도록 에코시스템 전반의 프로젝트의 시작점으로 사용될 것으로 기대합니다. 오픈 사양 및 API에 기능을 포함하도록 EEA 신뢰할 수 있는 컴퓨팅 작업 그룹을 계속 공유하고 기여할 것입니다.</p>
+
+
+  <p>eEVM은 EVM이 모든 블록체인에 연결할 수 있는 추상화 인터페이스인 <a href="https://github.com/tendermint/tendermint" target="_blank">ABCI</a>를 통해 교차 블록체인 지원을 통해 <a href="https://sawtooth.hyperledger.org" target="_blank">Sawtooth</a> 및 <a href="https://www.hyperledger.org/projects/hyperledger-burrow" target="_blank">Burrow</a>와 같은 기존 프로젝트와 상호 보완적이고 통합될 수 있다고 믿습니다. eEVM&rsquo; 기능은 또한 최대 상호 운용성을 위해 신뢰할 수 있는 컴퓨팅에 대한 EEA 표준을 형성하는 데 도움이 될 수 있습니다. Intel, <a href="https://truffleframework.com/" target="_blank">Truffle</a>, <a href="https://www.jpmorgan.com/country/US/en/Quorum" target="_blank">Quorum</a> 및 <a href="https://blk.io/" target="_blank">blk.io</a> 같은 파트너는 이미 이 기술을 활용하는 데 관심을 표명했습니다.</p>
+
+
+  <p><em>&ldquo;Intel(R) Software Guard 확장과 같은 오픈 소스 eEVM 및 신뢰할 수 있는 실행 환경은 오프체인 Ethereum 스마트 계약 실행을 사용하도록 설정하여 블록체인 확장성 및 개인 정보를 개선하는 데 도움이 될 수 있습니다. eEVM이 오픈 소스에 릴리스되고 신뢰할 수 있는 컴퓨팅 API의 EEAs&rsquo; 발표로 오프체인 스마트 계약 기능이 <a href="https://software.intel.com/en-us/2018/10/30/a-new-trusted-compute-api-for-ethereum-blockchain-solutions" target="_blank">블록체인 개발자에게 확장</a>되었습니다.&rdquo;</em></p>
+
+
+  <p align="right"><strong>마이크 리드, 인텔&#39;블록체인 프로그램 Office 이사</strong></p>
+
+
+  <p align="left"><em>&ldquo;eEVM을 통해 Microsoft는 이미 인상적인 블록체인 클라우드 인프라의 핵심 구성 요소를 오픈 소싱하고 있습니다. 즉, 개발자는 기존 Ethereum 기반 스마트 계약의 광범위한 배열을 활용하고 기업이 직면한 문제를 해결하는 풍부한 애플리케이션을 빌드할 수 있습니다. Truffle에서는 eEVM이 엔터프라이즈&#39;공간의 미래 플랫폼 및 도구에 대한 강력한 기반을 제공하기 때문에&#39;있습니다. 상호 운용성에 대한 Microsoft&#39;강력한 입장은 이를 쉽게 이길 수 있도록 하며 엔터프라이즈 블록체인 개발자가 프로세스에서 더 쉽게&#39; 수 있도록 도와줍니다.&rdquo;</em></p>
+
+
+  <p align="right"><strong>팀 쿨터, CEO &amp; 설립자, 트러플 스위트</strong></p>
+
+
+  <p><em>&ldquo;Microsoft는 eEVM, Enterprise 스마트 계약 및 Enterprise Ethereum Alliance 사양에 대한 기여와 같은 이니셔티브를 통해 에코시스템에 직접 기여하는 블록체인의 선두에서 일하고 있습니다. Were&rsquo;는 Java 개발자와 Epirus 플랫폼을 위한 web3j를 통해 협업할 수 있는 추가 기회에 대해 자랑스럽게 생각합니다.&rdquo;</em></p>
+
+
+  <p align="right"><strong>코너 스벤슨, CEO &amp; 설립자 blk.io 및 기술 표준 위원장, Enterprise 이더리움 얼라이언스</strong></p>
+
+
+  <p align="left">우리는 eEVM의 사용이 지역 사회에서 진화하기를 기대합니다. 자세한 내용은 <a href="https://github.com/Microsoft/eEVM" target="_blank">eEVM에서 EVM</a> 소스 코드를 검토하세요.</p>
+
+
+  <h2>추가 Ethereum 커뮤니티 투자</h2>
+
+
+  <p>Microsoft는 Ethereum 초기부터 파트너 및 ISV와 함께 구축해 왔습니다. 이러한 통합은 처음에는 블록체인 인프라에 중점을 두었으며, 개발자와 설계자가 애플리케이션 빌드에 집중할 수 있도록 랩용 프라이빗 블록체인을 만들 수 있도록 했습니다. 첫 번째 파트너 관계는 ConsenSys와 함께 Ethereum Azure ARM 템플릿과 Visual Studio 대한 첫 번째 블록체인 확장을 만드는 것이었습니다. 이 확장은 프리미어 개발자 이벤트<a href="https://www.microsoft.com/en-us/build" target="_blank">인 //build</a>에서 릴리스되었습니다.</p>
+
+
+  <p>그 이후로 다양한 블록체인의 간소화된 배포를 허용하도록 파트너 통합을 확장하고 Kubernetes 통합을 통해 컨테이너화된 워크로드를 가장 개방적인 블록체인 클라우드 플랫폼으로 수용하도록 확장했습니다.</p>
+
+
+  <p>개발자 생산성 및 도구는 업계에서 계속 문제가 되고 있으며, 이는 백 엔드 블록체인을 개발자 환경 및 IDE(예: <a href="https://code.visualstudio.com/" target="_blank">VS Code</a> 확장)에 직접 연결하기 위해 <a href="https://truffleframework.com" target="_blank">Truffle</a>과 같은 파트너와 함께 해결하고 있습니다. <a href="https://truffleframework.com/boxes" target="_blank">Truffle 상자는</a> <a href="https://azure.microsoft.com/en-us/features/blockchain-workbench/" target="_blank">Azure Blockchain Workbench</a>에서 실행할 일반적인 애플리케이션 및 샘플을 패키지할 수 있습니다. 이번 주 후반에는 개발자가 <a href="https://marketplace.visualstudio.com/" target="_blank">Dapp</a> 빌드를 더욱 쉽게 시작할 수 있도록 하는 새로운 통합 개발자 환경이 마켓플레이스에서 제공될 예정입니다.&nbsp;</p>
+
+
+  <p>블록체인 인프라 템플릿도 수년에 걸쳐 복잡성이 증가했습니다. 블록체인의 사용은 발전했으며, 이제 고객이 프로덕션을 대상으로 하는 사용 사례에 맞게 원장을 사용자 지정할 수 있는 추가 노브와 다이얼을 제공합니다. 플러그형 컨센서스 같은 기능을 통해 고객은 배포 시 네트워크에 적합한 합의 알고리즘을 선택할 수 있습니다. 최신 <a href="https://aka.ms/quorum-amp" target="_blank">쿼럼</a> 제품에는 RAFT 및 iBFT 모델 모두에 대한 옵션이 포함되어 있으며, 사용자에게 별 <a href="https://github.com/jpmorganchase/constellation" target="_blank">자리</a> (하스켈 기반) 또는 <a href="https://github.com/jpmorganchase/tessera" target="_blank">Tessera</a> (Java 기반)를 사용하여 개인 정보 보호 모델을 선택할 수 있습니다.</p>
+
+
+  <p><em>&quot;Azure 팀은 Ethereum, Quorum 및 EEA에 대한 초기 지원 및 기여를 통해 엔터프라이즈를 위한 블록체인 분야의 선두 주체였습니다. 쿼럼을 EEA의 첫 번째 클라이언트로 배포한 첫 번째 클라이언트였으며, 현재 Azure Quorum 템플릿에 대한 업데이트를&#39;쿼럼에 대한 산업 전반에서 볼 수 있는 채택 및 요구를 반영합니다.&quot;</em></p>
+
+
+  <p style="text-align: right;"><strong>사메르 팔라, 쿼럼 엔지니어링 책임자</strong></p>
+
+
+  <p>또한 고객은 네트워크 설정에서 새 참가자를 초대하여 기존 다중 노드 네트워크에 가입하도록 요청했습니다. 이는 확장된 컨소시엄을 만드는 가장 어려운 측면 중 하나입니다. 네트워크 연결을 위해 Azure의 하이퍼스케일 클라우드 구성 요소를 활용하여 이제 템플릿을 통해 고객은 간단한 사용자 환경으로 새 네트워크 멤버를 선택적으로 프로비전할 수 있으므로 여러 비즈니스 파트너와 실제 컨소시엄을 만들 수 있는 기준이 크게 낮아질 수 있습니다.</p>
+
+
+  <p>이번 주에&rsquo;는 PegaSys의 <a href="https://aka.ms/pantheon-amp" target="_blank">판테온</a> 이 이제 Azure에서 사용할 수 있음을 발표하게되어 기쁩니다. Pantheon은 기업에서 일반적으로 프로비전한 프라이빗 노드가 아닌 공용 노드를 노출하는 새로운 유형의 제품입니다. 프라이빗 체인(폐쇄 컨소시엄)을 사용하는 선도적인 기업은 공용 체인을 포함한 여러 체인에 대한 연결이 중요하다는 것을 깨달았습니다. Pantheon은 엔터프라이즈 친화적인 라이선스를 가진 기업에서 이 옵션을 사용하도록 설정할 수 있는 클라이언트를 제공합니다. Java 기반의 Pantheon은 <a href="https://web3j.io/" target="_blank">web3j</a> (Java 블록체인 통합 라이브러리)에 원활하게 통합되어 엔터프라이즈 개발자가 기존 Java 프로그래밍 기술로 블록체인을 쉽게 수용할 수 있도록 해줍니다.</p>
+
+
+  <p><em>&ldquo;첫날부터 Microsoft Azure 사용할 수 있는 것은 PegaSys&#39; 목표를 최대한 쉽게 배포하는 것이 중요합니다. Azure 팀은 엔터프라이즈 클라우드 개발자에게 블록체인을 도입한 오랜 역사를 가지고 있으며, 프로덕션 환경에서 블록체인을 배포하려는 기업을 위한 새로운 도구를 계속 추가함에 따라 Microsoft와 협력하게 되어 기쁘게&#39;.&rdquo;</em></p>
+
+
+  <p align="right"><strong>롭 도슨, 페가시스의 제품 리드</strong></p>
+
+
+  <p>마지막으로, 템플릿 및 개발자 환경 향상을 넘어 확장하면서 고객은 프라이빗 컨소시엄이 일치하는 분산형 스토리지 도우미를 갖기를 원했습니다. <a href="https://ipfs.io/" target="_blank">IPFS</a> 는 공용 Ethereum을 위한 이 공간에서 명확한 리더이며 이러한 고객을 위한 IPFS의 프라이빗 버전에서 작업하고 있습니다.</p>
+
+
+  <p>이번 주 후반에 사용자가 5분 이내에 다중 노드 스토리지 네트워크를 만들 수 있도록 Azure Marketplace에서 IPFS 솔루션을 사용할 수 있게 될 것이라고 발표하게 되어 기쁩니다. 또한 이 제품을 사용하면 다른 컨소시엄 참가자가 컨소시엄&rsquo; 권한 부여 구성 요소를 준수하면서 이 프라이빗 도우미 네트워크에 더 많은 노드를 추가할 수 있습니다.</p>
+
+
+  <p>프라하에서 멋진 한 주를 고대하고, Azure 부스에서 우리를 만나서 Twitter에서 Azure Blockchain의 최신 뉴스를 확인 <a href="https://twitter.com/MSFTBlockchain" target="_blank">@MSFTBlockchain</a> 하세요.</p>

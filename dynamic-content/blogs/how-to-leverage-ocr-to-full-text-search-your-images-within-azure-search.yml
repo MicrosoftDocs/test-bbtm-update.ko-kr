@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fb270ac35048f76cd75828f5832898a96975cb4d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898964"
+Slug: how-to-leverage-ocr-to-full-text-search-your-images-within-azure-search
+Title: OCR을 활용하여 Azure Search 내에서 이미지 전체 텍스트 검색
+Summary: Azure Search 및 OCR(광학 문자 인식)을 사용하면 이미지 파일의 텍스트에 대한 전체 텍스트 검색을 제공할 수 있습니다.
+Content: >-
+  <p><img align="left" alt="AzureSearchOCR" border="0" height="306" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f531914e-4987-49da-87a3-30b35a09f193.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: left; padding-top: 0px; padding-left: 0px; margin: 0px 10px 10px 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="AzureSearchOCR" width="144">Azure Search를 사용하면 데이터를 통해 정말 훌륭한 검색 애플리케이션을 빌드할 수 있습니다. <a href="https://msdn.microsoft.com/en-us/library/azure/dn946891.aspx">Azure Search 인덱서</a>와 같은 기능을 통해 일반적인 데이터 원본에서 데이터를 편리하게 수집하여 전체 텍스트 검색 지원을 사용하도록 설정하려고 노력했습니다.</p>
+
+
+  <p>최근에 Office, PDF 및 HTML과 같은 일반적인 파일 형식에서 텍스트를 추출할 수 있는 <a href="https://azure.microsoft.com/en-us/documentation/articles/search-howto-indexing-azure-blob-storage/">Azure Blob</a> Storage 대한 Azure Search 인덱서가 출시되었습니다. 아직 지원을 추가하지 않았지만 일반적인 질문인 파일 형식 중 하나는 이미지입니다. 포함된 이미지가 있는 JPG, TIFF 또는 PDF와 같은 파일이 있다는 생각에서 검색 인덱스 향상에 사용할 수 있는 이러한 이미지에서 텍스트를 추출할 수 있습니다. Imagine 의료 이미지, 팩스 또는 스캔한 문서를 가지고 있으며 이를 검색하려고 합니다. 이 기술을 OCR(광학 문자 인식)이라고 하며 Azure Search 인덱스 콘텐츠를 개선하는 데 어떻게 사용할 수 있는지 보여 드리고 싶습니다.</p>
+
+
+  <p>고객과의 대화에서 PDF 문서 내에 이미지를 포함하는 것이 매우 일반적이므로 이미지에 대해 OCR을 실행해야 할 뿐만 아니라 PDF&rsquo;에서 이미지를 추출해야 하기 때문에 이것이 샘플의 주요 초점입니다. 다음 <a href="https://github.com/liamca/AzureSearchOCR">GitHub 리포지토리</a>에서 이 작업을 수행하는 방법의 샘플을 볼 수 있습니다. 다음은 샘플에서 수행되는 작업의 일반적인 흐름입니다.</p>
+
+
+  <p>&nbsp;<img alt="AzureSearch_OCR_Steps" border="0" height="95" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9405ac8-6811-4d07-b7d7-372a437feead.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; margin: 5px; display: inline; padding-right: 0px; border-top-width: 0px" title="AzureSearch_OCR_Steps" width="610"><br>
+
+  이 작업을 수행하는 데 사용한 주요 기술은 다음과 같습니다.</p>
+
+
+  <ol>
+   <li><a href="https://www.nuget.org/packages/iTextSharp/">iTextSharp</a>: PDF 파일의 콘텐츠를 조작할 수 있는 PDF 라이브러리인 iText의 편리한 .NET 포트입니다. 나는 또한 PDF 파일에서 이미지를 추출하는 내 샘플에서 사용한 많은 것을 기반으로 형성 <a href="https://psycodedeveloper.wordpress.com/2013/01/10/how-to-extract-images-from-pdf-files-using-c-and-itextsharp/">자신의 게시물에</a> iTextSharp을 사용하는 방법에 대한 좋은 샘플을 쓴 제롬 Viveiros에 특별한 감사를 지적하고 싶습니다.</li>
+   <li><a href="https://www.projectoxford.ai/vision">Project Oxford Vision API</a>: 이미지에서 텍스트를 추출할 수 있는 여러 가지 방법이 있습니다(예: <a href="https://www.nuget.org/packages/Tesseract/">Tesseract</a>). 나는 Project 옥스포드&rsquo; 비전 APIs&rsquo;를 사용하기로 결정했다. 코드를 사용하기가 매우 간단하고 추출된 텍스트의 품질이 매우 높다는 것을 알게되었습니다. 주요 단점은 현재 5,000개의 API 호출/월로 제한되어 있으며, 문서가 많은 경우 제한될 수 있지만 이 팀의 Program Manager에서 필요한 경우 이 제한을 늘릴 수 있다는 점입니다.</li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/services/search/">Azure Search</a>: OCR 프로세스의 출력이 전송되는 검색 서비스입니다. Azure Search로 보낼 JSON 문서에 서식이 지정된 텍스트는 애플리케이션에서 전체 텍스트를 검색할 수 있게 됩니다.</li>
+  </ol>
+
+
+  <p>이 작업을 수행하는 방법에 대한 전체 개요는 다음 <a href="https://github.com/liamca/AzureSearchOCR">GitHub 리포지토리</a>에서 찾을 수 있습니다. Azure Search 인덱서에 추가된 OCR을 보려면 <a href="https://feedback.azure.com/forums/263029-azure-search/suggestions/11540007-ocr-for-common-image-formats-gif-jpeg-tiff">투표를 하세요</a>.</p>
+
+
+  <h3>다음 단계</h3>
+
+
+  <p>이 샘플은 시작점에 불과합니다. 더 확장하려는 것 이상입니다. 파일의 제목 또는 파일(파일 크기, 마지막 업데이트 등)과 관련된 메타데이터를 추가한 다음, 사용자의 추가 패싯 및 필터링에 사용할 수 있습니다. 사용자가 애플리케이션에서 직접 열 수 있도록 실제 이미지 파일에 URL 참조를 추가할 수도 있습니다.</p>
+
+
+  <p>OCR 기능을 Azure Search 인덱서에 통합할 때까지 이미지에서 Azure Search로 콘텐츠를 가져오는 데 도움이 되기를 바랍니다. 이에 대한 질문이나 피드백이 있는 경우 아래 의견으로 알려주세요.</p>

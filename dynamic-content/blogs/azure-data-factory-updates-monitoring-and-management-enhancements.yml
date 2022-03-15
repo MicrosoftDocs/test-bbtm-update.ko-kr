@@ -1,0 +1,64 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bfd3d9b1e7b10882d6f5302f295c096f7936de71
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902741"
+Slug: azure-data-factory-updates-monitoring-and-management-enhancements
+Title: 'Azure Data Factory 업데이트: 모니터링 및 관리 향상'
+Summary: Azure Data Factory에서 사용자 환경을 향상시키기 위해 강력한 업데이트 집합을 릴리스했습니다.
+Content: >-
+  <h2>활동 보기 - 파이프라인 확대</h2>
+
+  이제 고객은 파이프라인을 마우스 오른쪽 단추로 클릭하고 '파이프라인 열기'를 클릭한 다음 파이프라인 내부로 이동할 수 있습니다. 이렇게 하면 고객은 파이프라인 내의 활동과 해당 입력 및 출력 데이터 세트 간의 연결을 볼 수 있습니다.
+
+
+  이는 고객이 활동이 1개 이상인 파이프라인이 있고 해당 단일 파이프라인에 대한 운영 계보를 확인하려는 경우에 매우 유용합니다.
+
+  <blockquote><strong>예제:</strong> 'AnalyzeMarketingCampaignPipeline'을 마우스 오른쪽 단추로 클릭하여 '파이프라인 열기'를 확인합니다.</blockquote>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/05/26/2015-05-26_15h03_34.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="2015-05-26_15h03_34" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-05-26_15h03_34_thumb.png" alt="2015-05-26_15h03_34" width="614" height="267" border="0" /></a>
+
+  <p align="left">'파이프라인 열기'를 클릭하면 파이프라인의 각 활동에 해당하는 입력 및 출력 데이터 세트와 함께 'AnalyzeMarketingCampaignPipeline' 내의 활동이 표시됩니다. 또한 왼쪽 위 모서리에 'AnalyzeMarketingCampaignPipeline' 내의 활동을 보고 있음을 알리는 이동 경로가 표시됩니다.</p>
+
+  <p align="left"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/05/26/2015-05-26_15h05_57.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="2015-05-26_15h05_57" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-05-26_15h05_57_thumb.png" alt="2015-05-26_15h05_57" width="614" height="272" border="0" /></a></p>
+
+  <p align="left">왼쪽 위 모서리의 이동 경로 탐색에서 '데이터 팩터리'를 클릭하여 '다이어그램 뷰'로 다시 이동할 수 있습니다.</p>
+
+  <p align="left"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/05/26/2015-05-26_15h05_57.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="2015-05-26_15h05_57" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-05-26_15h05_57_thumb.png" alt="2015-05-26_15h05_57" width="614" height="272" border="0" /></a></p>
+
+
+  <h2>준비되지 않은 업스트림 조각:</h2>
+
+  이제 고객은 조각이 '실행 보류 중' 상태로 중단되는 이유를 확인할 수 있습니다. 고객이 현재 조각이 '준비됨'이 아니고 여전히 '실행 보류 중' 상태인 업스트림 종속성을 확인할 수 있는 새로운 기능을 사용하도록 설정했습니다.
+
+
+  이는 Azure Data Factory 워크플로에서 마지막으로 생성된 데이터 세트를 모니터링하고 '실행 보류 중' 상태의 조각을 지속적으로 보는 고객에게 매우 유용합니다.
+
+  <blockquote><strong>예제:</strong> '최근에 업데이트된 조각' 탭에서 조각 항목을 클릭하면 조각 실행에 대한 세부 정보가 열립니다. 여기에는 현재 선택한 조각에 대해 준비되지 않은 모든 업스트림 종속성을 나열하는 '준비되지 않은 업스트림 조각'이라는 새 섹션이 포함됩니다.</blockquote>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/05/26/2015-05-26_15h22_26.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="2015-05-26_15h22_26" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-05-26_15h22_26_thumb.png" alt="2015-05-26_15h22_26" width="614" height="461" border="0" /></a>
+
+  <h2>마지막 업데이트 시간까지 조각 모니터링:</h2>
+
+  이제 고객은 조각 시간 외에 '마지막 업데이트 시간'으로 조각을 볼 수 있습니다.
+
+
+  이는 고객이 과거에 생성된 조각을 다시 실행한 경우에 유용합니다. 이제 다시 실행 조각이 마지막으로 업데이트된 이후 목록 맨 위에 표시됩니다.
+
+  <blockquote><strong>예제:</strong> 2015/05/26/09:00 PM-10:00 PM 조각은 2015년 5월 26일 오후 10:16:03 UTC에 마지막으로 업데이트되었으므로 아래 스크린샷의 목록 맨 위에 있습니다.</blockquote>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/05/26/2015-05-26_15h27_49.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="2015-05-26_15h27_49" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-05-26_15h27_49_thumb.png" alt="2015-05-26_15h27_49" width="493" height="614" border="0" /></a>
+
+
+  '데이터 조각(조각 시간별)'을 클릭하여 조각 시간을 통해 조각을 볼 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/05/26/2015-05-26_15h31_21.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="2015-05-26_15h31_21" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-05-26_15h31_21_thumb.png" alt="2015-05-26_15h31_21" width="497" height="614" border="0" /></a>
+
+
+  &nbsp;
+
+
+  이러한 향상된 기능을 추가하여 고객이 Azure Data Factory 모니터링 및 관리 환경을 쉽게 만들 수 있도록 지속적으로 노력하고 있습니다. 특정 기능이 누락되었거나 문제가 발생하는 경우 <a href="https://feedback.azure.com/forums/270578-azure-data-factory">Azure Data Factory 포럼을</a> 방문하여 피드백을 제공하세요.

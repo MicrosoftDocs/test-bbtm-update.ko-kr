@@ -1,0 +1,170 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d5d706a3ecf071c53e3ae4bbb3be49de6cc79428
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902992"
+Slug: gain-insight-into-your-azure-cosmos-db-data-with-qlik-view-and-qlik-sense
+Title: QlikView 및 Qlik Sense를 사용하여 Azure Cosmos DB 데이터에 대한 인사이트 얻기
+Summary: 통합 보기에서 다양한 원본의 데이터를 연결하면 인간의 눈과 뇌에 보이지 않는 귀중한 인사이트를 얻을 수 있습니다.
+Content: >-
+  <p>통합 보기에서 다양한 원본의 데이터를 연결하면 인간의 눈과 뇌에 보이지 않는 귀중한 인사이트를 얻을 수 있습니다. Azure Cosmos DB를 사용하면 다양한 형식의 다양한 원본에서 데이터를 수집할 수 있으므로 이 데이터를 혼합하고 일치시키는 기능은 비즈니스에 추가적인 지식과 인텔리전스를 부여하는 데 더욱 중요합니다.</p>
+
+
+  <p>Qliks&rsquo; 분석 및 시각화 제품인 QlikView 및 Qlik Sense는 수년 동안 수행할 수 있었고 이제 Azure Cosmos DB를 일류 데이터 원본으로 지원합니다. 다음 표에는 QlikView 및 Qlik Sense에서 Azure Cosmos DB 데이터를 가져오는 데 사용할 수 있는 다양한 연결 옵션이 요약되어 있습니다.</p>
+
+
+  <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 724px; height: 537px;">
+   <tbody>
+    <tr>
+     <td>
+     <p><b>Azure Cosmos</b><b> DB </b><b>API</b></p>
+     </td>
+     <td>
+     <p><b>연결 방법</b></p>
+     </td>
+     <td width="163">
+     <p><b>Qlik </b><b>상세 지침</b></p>
+     </td>
+     <td width="169">
+     <p><b>Qlik 라이브 데모</b></p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p>Core(SQL) API</p>
+     </td>
+     <td>
+     <p>REST</p>
+     </td>
+     <td width="163">
+     <p><a href="https://github.com/Qlik-PE/Qlik-CosmosDB-SQLAPI-REST/blob/master/README.md" target="_blank">기본 제공 REST 커넥터를 사용하여 Qlik Sense에서 Azure CosmosDB SQL API에 연결</a></p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="169">
+     <p align="center">-</p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p>Core(SQL) API</p>
+     </td>
+     <td>
+     <p>ODBC 드라이버</p>
+     </td>
+     <td width="163">
+     <p><a href="https://bit.ly/2RGTWg3" target="_blank">Azure Cosmos DB ODBC 커넥터를 사용하여 Qlik Sense에서 Azure Cosmos DB SQL API에 연결</a></p>
+     </td>
+     <td width="169">
+     <p><a href="https://bit.ly/2pNwjpo" target="_blank">Azure Cosmos DB ODBC &ndash; Video Game Sales</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p>MongoDB API</p>
+     </td>
+     <td>
+     <p>MongoDB Wire 프로토콜</p>
+     </td>
+     <td width="163">
+     <p><a href="https://bit.ly/2S9LVAw" target="_blank">Qlik MongoDB 커넥터를 사용하여 Qlik Sense에서 Azure Cosmos DB Mongo API에 연결</a></p>
+     </td>
+     <td width="169">
+     <p><a href="https://bit.ly/2JcqtXx" target="_blank">Qlik Connector를 사용하여 Mongo DB API를 통한 Azure Cosmos DB</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p>MongoDB API</p>
+     </td>
+     <td>
+     <p>Qlik gRPC 커넥터</p>
+     </td>
+     <td width="163">
+     <p>MongoDB Wire 프로토콜과 동일</p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="169">
+     <p align="center">-</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>Qlik Sense 및 QlikView는 여러 원본의 데이터를 단일 보기로 결합하는 데이터 시각화 도구입니다. Qlik Sense는 데이터의 엔터티 간에 가능한 모든 관계를 인덱싱하여 수동으로 연결하지 않고도 즉시 인사이트를 얻을 수 있습니다. Qlik Sense를 사용하여 Azure Cosmos DB 데이터를 시각화할 수 있습니다.</p>
+
+
+  <p>다음은 Azure Cosmos DB 계정을 설정하고 Qlik Sense에서 ODBC 연결을 구성하는 방법에 대한 단계별 가이드입니다.</p>
+
+
+  <blockquote>
+
+  <p>1.Azure Cosmos DB에서 Core(SQL) API 계정을 만듭니다.</p>
+
+  </blockquote>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ccd2e05-9942-44e4-aa36-410c2c171977.png"><img alt="Create Azure Cosmos DB account screenshot" border="0" height="669" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ba9479b5-8487-4b37-9d3e-1ace5c867a0f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Cosmos DB 계정 만들기 스크린샷" width="750"></a></p>
+
+
+  <blockquote>
+
+  <p>2. 컬렉션이 포함된 데이터베이스를 만듭니다. Azure Cosmos DB를 사용하면 Azure Cosmos DB 문서의 요청 단위로 설명된 대로 데이터베이스 및 컬렉션에 대한 처리량을 프로비전할 수 있습니다.</p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p>3. 데이터를 가져옵니다. Azure Cosmos DB 컬렉션에 데이터를 로드하는 방법은 여러 가지가 있습니다. 가장 간단한 방법은 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/import-data" target="_blank">Azure Cosmos DB 데이터 마이그레이션 도구라는 도구를</a> 사용하는 것입니다. 포털의 키 페이지에서 연결 문자열을 찾을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/981e8df6-8340-4f4b-8d58-3f4204c2f370.png"><img alt="Qlik Cosmos SQL Keys screenshot" border="0" height="462" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/74787add-599f-446d-b397-cb44d9a48b17.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Qlik Cosmos SQL 키 스크린샷" width="1831"></a></p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p>4.다음으로 Qlik Sense에서 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/odbc-driver" target="_blank">Azure Cosmos DB용 ODBC 드라이버를 설치하고 ODBC 드라이버</a>와 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/odbc-driver" target="_blank">함께 BI 분석 도구를 사용하여 Azure Cosmos DB로 커넥트</a> 설명서 &ldquo; 에 제공된 지침에 따라 구성해야 합니다.&rdquo;</p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p>5. Qlik Sense에서 앱을 열고 파일 및 기타 원본에서 <strong>데이터 추가</strong> 를 클릭합니다. ODBC를 선택하고 이전 단계에서 만든 ODBC 연결을 구성합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/121abc74-d132-424b-bde6-63744797cd45.png"><img alt="Create new connection (ODBC) screenshot" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/de74337e-f630-49b6-b9a2-f73657fcd5f6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="새 연결 만들기(ODBC) 스크린샷" width="485"></a></p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p>6. 다음으로 가져온 데이터가 있는 데이터베이스 및 컬렉션을 선택합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/79ac9b6b-bb12-4cc7-b020-e8c41c534338.png"><img alt="Add data to Cosmos DB SQL API - ODBC screenshot" border="0" height="664" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/275d3d57-6e71-4787-b164-785039f8d19d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Cosmos DB SQL API에 데이터 추가 - ODBC 스크린샷" width="1024"></a></p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p>7. 앱에 데이터를 추가하고 데이터 인사이트 시각화를 구성합니다. 다음 그림에서는 결과 보기의 예를 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c12dded3-7a7b-40bc-a6cd-95f42d2e38db.png"><img alt="Video Game Sales Dashboard example screenshot" border="0" height="265" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8f34e8b4-cdaf-400c-9cc6-a945e96969b6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Video Game Sales Dashboard 예제 스크린샷" width="640"></a></p>
+
+  </blockquote>
+
+
+  <p>Qlik 도구 및 Azure Cosmos DB에서 사용하는 방법에 대한 자세한 내용은 다음 리소스를 참조하세요.</p>
+
+
+  <p>설명서를 &ldquo; 사용하여 Qlik Sense를 Azure Cosmos DB에 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/visualize-qlik-sense" target="_blank">커넥트 Qlik Sense를 Azure Cosmos DB에 커넥트 데이터를</a>&rdquo; 시각화하여 안내합니다.</p>
+
+
+  <p>위의 지침과 스크린샷은 Qlik Sense에 적용되지만 QlikView는 비슷한 방식으로 Azure Cosmos DB에 연결할 수도 있습니다. 자세한 내용은 <a href="https://www.qlik.com/us/products/qlik-sense" target="_blank">Qlik Sense, QlikView</a> 및 <a href="https://www.qlik.com/us/try-or-buy/download-qlik-sense" target="_blank">Qlik Desktop</a>의 제품 페이지를 참조하세요. <a href="https://www.qlik.com/us/products/qlikview" target="_blank"></a></p>

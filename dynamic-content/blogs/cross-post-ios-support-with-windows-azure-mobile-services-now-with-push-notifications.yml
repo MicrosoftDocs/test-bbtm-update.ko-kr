@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6a8ae20ee00375c181797c12de565dd690e3ad79
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898672"
+Slug: cross-post-ios-support-with-windows-azure-mobile-services-now-with-push-notifications
+Title: '교차 게시: Windows Azure Mobile Services 사용하여 iOS 지원 – 푸시 알림 사용'
+Summary: 몇 주 전에 Azure Mobile Services Windows 몇 가지 개선 사항을 게시했습니다. 그 중 하나는 iOS 개발자가 모바일을 쉽게 사용할 수 있도록 하는 Objective-C 클라이언트 SDK를 추가한 것입니다.
+Content: <p>몇 주 전에 Azure Mobile Services Windows 여러 가지 개선 사항을 <a href="https://weblogs.asp.net/scottgu/archive/2012/10/16/windows-azure-mobile-services-new-support-for-ios-apps-facebook-twitter-google-identity-emails-sms-blobs-service-bus-and-more.aspx" target="_blank">게시</a>했습니다. 그 중 하나는 iOS 개발자가 데이터 및 인증에 Mobile Services 쉽게 사용할 수 있도록 하는 Objective-C 클라이언트 SDK를 추가한 것입니다. &nbsp;오늘 나는 우리의 iOS SDK에 개선의 숫자를 발표하게되어 기쁘게 생각합니다, 가장 중요한 것은, APNS를 통해 푸시 알림에 대한 우리의 새로운 지원 (애플 푸시 알림 서비스). &nbsp;이렇게 하면 Windows Azure Mobile Service 스크립트에서 iOS 사용자에게 푸시 알림을 쉽게 발생할 수 있습니다.</p>  <p>Apple iOS 프로비저닝 포털에서 푸시하도록 애플리케이션을 구성하는 데 필요한 모든 단계를 포함하여 APNS(Apple Push Notification Services)를 사용하여 Windows Azure Mobile Service 애플리케이션을 사용하도록 설정하는 프로비저닝 및 설정 프로세스를 단계별로 수행하는 두 가지 전체 자습서를 제공하는 블로그에 <a href="https://weblogs.asp.net/scottgu/archive/2012/12/04/ios-support-with-windows-azure-mobile-services-now-with-push-notifications.aspx" target="_blank">자세한 게시물을</a> 작성했습니다. 또한 만료된 디바이스 토큰 및 채널에 대한 피드백 스크립트를 처리하고 iOS 클라이언트 API 로그인 메서드에 대한 개선 사항을 호출하는 코드를 제공하는 방법을 설명합니다. &nbsp;</p>  <p><a href="https://weblogs.asp.net/scottgu/archive/2012/12/04/ios-support-with-windows-azure-mobile-services-now-with-push-notifications.aspx" target="_blank"> 내 공식 블로그</a>에서 전체 게시물을 읽고 자세한 내용과 업데이트를 계속 지켜봐 주시기 바랍니다.&nbsp;</p>  <p>스콧</p>

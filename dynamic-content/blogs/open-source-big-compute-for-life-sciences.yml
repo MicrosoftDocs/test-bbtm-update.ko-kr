@@ -1,0 +1,137 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1452c2eec668109bcd4ee92ccde0dd32d28ab152
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898285"
+Slug: open-source-big-compute-for-life-sciences
+Title: 생명 과학을 위한 오픈 소스 빅 컴퓨팅
+Summary: 빅 데이터와 빅 컴퓨팅 기술의 발전으로 과학적 진보의 놀라운 속도가 점점 더 활성화되고 있습니다.
+Content: >-
+  <p><em>솔루션 설계자이자 기술 관리자인 Microsoft Research의 다데다 겐지 박사와 협업합니다.</em></p>
+
+
+  <p>빅 데이터와 빅 컴퓨팅 기술의 발전으로 과학적 진보의 놀라운 속도가 점점 더 활성화되고 있습니다. Microsoft는 글로벌 과학 커뮤니티와 협력하여 Azure for Research 프로그램을 통해 클라우드 컴퓨팅을 최대한 활용할 수 있게 되어 기쁩니다. &rsquo;컴퓨터 과학, 엔지니어링 및 생명 과학과 같은 모든 도메인의 연구원들이 클라우드를 통해 프로젝트&rsquo; 진행을 가속화할 수 있는 방법을 매일 알아봅니다.</p>
+
+
+  <h1>유전학, 유전체학 및 지구상의 생명</h1>
+
+
+  <p>과학에서 가장 심오한 발전 중 일부는 유전학에 대한 지식을 활용하는 데 중점을 두고 있습니다. 생물학, 의학 및 모든 생명체에 대해 생각하는 방식을 변경합니다. <a href="https://en.wikipedia.org/wiki/DNA_sequencing">DNA 시퀀싱</a> 기술과 생물 정보학을 통해 게놈을 매핑함으로써 우리는 유전학에 대한 이해와 착취에 큰 진전을 이루고 있습니다. 유전자 시퀀싱 비용은 무어&rsquo;스 법보다 빠르게 떨어지고 있으며, 이는 그 어느 때보다 빠른 속도로 더 많은 게놈 데이터를 수집할 수 있다는 것을 의미하지만, 더 많은 데이터에 액세스하는 것은 절반에 불과합니다. 더 많은 데이터는 더 많은 스토리지, 처리 및 분석을 의미합니다. &rsquo;종종 필요한 컴퓨팅 능력을 따라잡기가 어렵습니다. Weve&rsquo;는 전 세계 유전체학 연구원들과 함께 일해 왔으며, 런던 임페리얼 칼리지의 사이먼 오&rsquo;한론 교수와 매튜 피셔 교수의 경험은 Azure Big Compute가 이 생물 정보학 컴퓨팅 과제에 어떻게 도움이 될 수 있는지의 전형입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4b6d7daa-8514-4294-937b-9ab4e766ae4c.jpg"><img alt="Cost per Genome" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/563d13fd-026d-4e3a-80f8-719702af8e5c.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="게놈당 비용" width="640"></a></p>
+
+
+  <h1>과제: 차세대 시퀀싱을 사용하여 연쇄 살인범 헌팅</h1>
+
+
+  <p>차세대 시퀀싱(NGS)은 유전 데이터를 얻기 위한 프로세스를 대규모로 병렬화하는 기술입니다. NGS에 대한 현재 가장 인기 있는 접근 방식은 느리지만 &lsquo;당황스러운 병렬&rsquo; 프로세스인 합성&rsquo;을 통해 시퀀싱을 수행하는 &lsquo;것입니다. 전형적으로 연구원은 작은 파편으로 게놈 DNA를 분할합니다 (긴 뉴클레오티드의 수십에서 수백) 그리고 이 조각의 수백만과 수십억 사이 순서를 동시에. 이 프로세스는 며칠이 걸릴 수 있지만 매우 많은 양의 시퀀스 데이터를 생성합니다.</p>
+
+
+  <p>NGS는 생물 과학 분야에서 작업을 변화시키고 있지만 상당한 계산 과제를 제기합니다. Azure는 연구원들이 <a href="https://news.microsoft.com/features/cloud-computing-contributes-to-individually-tailored-medical-treatments-of-the-future/">암 치료</a> 부터 <a href="https://www.slideshare.net/pmissier/2015-ngs-data-congress">희귀 질환 진단</a>에 이르기까지 NGS 파이프라인의 속도를 높이기 위해 노력하고 있습니다. 인간의 건강에 잘 알려진 위협 이외에 먼저 다른 동물 종에서 유래 많은 질병이있다. &rsquo;에볼라, 조류 독감 및 BSE (광우병)와 같은 질병의 미래 발발을 방지하기 위해 동물에서 인간으로 옮길 수있는 병원균의 이 <a href="https://en.wikipedia.org/wiki/Zoonosis">&lsquo;동물원 풀&rsquo;</a>을 이해하는 것이 중요합니다. 척추 동물에 대 한 가장 악성 병원 체 중 하나는 Batrachochytrium dendrobatidis (Bd), 양서류에서 chytridiomycosis를 일으키는 곰 팡이 감염. Bd는 500종 이상의 양서류를 감염하는 것으로 나타났으며, 이들 중 200종 이상의 감소 또는 멸종에 책임이 있습니다. 2005년 세계보전연맹(IUCN)은 chytridiomycosis &quot;가 영향을 받은 종의 수와 멸종을 유도하는 성향면에서 척추동물 중 기록된 최악의 전염병이라고 선언했습니다.&quot;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b879dca3-c0bd-4f8e-876e-56fa88bafd4b.jpg"><img alt="Bufo_Periglenes" border="0" height="428" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/12c512ea-817e-4c97-92b3-a43ffd868fc7.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Bufo_Periglenes" width="640"></a></p>
+
+
+  <p>임페리얼 칼리지 런던의 매튜와 사이먼은 이 심각한 수륙 양용 위협에 맞서 싸우는 최전선에 있습니다. NGS를 사용하여 Bd의 원본 및 확산을 이해하고 이를 수행하려면 많은 양의 컴퓨팅 성능이 필요합니다. NGS는 빠르지만 다양한 품질의 엄청난 양의 데이터를 생성합니다. NGS 기계에 의해 시퀀싱된 DNA의 작은 파편은 먼저 아주 큰 직소로 꿰뚫는 것과 유사한 프로세스에 있는 완전한 게놈으로 재조립되어야 합니다. 유전 적 변화의 속도에 영향을 미칠 수있는 진화 및 환경 프로세스의 어리둥절한 배열이 있으며 기계 학습과 같은 고급 기술이 가장 이해하기 위해 필요합니다. 전통적으로 생물 정보학자들은 온-프레미스 컴퓨팅을 사용하여 시퀀스를 숫자로 분석하고 검색했지만, NGS는 시퀀스 머신에서 들어오는 데이터의 홍수와 로컬 컴퓨팅 기능을 일치시키는 것이 점점 더 어려워지고 있음을 의미합니다.</p>
+
+
+  <blockquote>
+
+  <p>&ldquo;제국에서 우리는 기관 수준과 부서 수준에서 몇 가지 훌륭한 계산 리소스에 액세스 할 수있을만큼 운이 좋다. 부서별 클러스터는 강력하고 Windows 실행되며, 도구 체인이 해당 환경을 위해 작성된 사람들에게는 환상적이지만 많은 도구가 Unix 기반이므로 Linux 중심 솔루션이 필요했습니다. 중앙 HPC 서비스는 훌륭하지만 계산 리소스에는 제한이 있으며, 물론 동시 사용자가 많을 때 작업을 실행하는 데 소요되는 시간이 있습니다.&rdquo;</p>
+
+  </blockquote>
+
+
+  <h1>경쟁자: 오픈 소스 솔루션용 Azure Big Compute</h1>
+
+
+  <p>전 세계 수천 명의 연구원들이 유전체학을 연구하고 있으며, 선택할 수 있는 도구와 기술의 풍부한 생태계를 만들고 있습니다. 대부분의 경우 Linux를 활용하는 오픈 소스 프레임워크를 사용하며 랩톱에서 슈퍼컴퓨터에 이르기까지 모든 항목에 사용됩니다. Matthews&rsquo;와 같은 Teams 많은 대학 컴퓨팅 리소스에 액세스할 수 있지만 이러한 리소스에 대한 일상적인 경험이 항상 이상적이지는 않습니다. Azure Big Compute는 강력한 Virtual Machines와 대기하지 않는 두 가지 주요 이점을 제공합니다.</p>
+
+
+  <p>16개의 빠른 코어와 112GB RAM을 갖춘 Azures&rsquo;의 강력한 <a href="https://azure.microsoft.com/en-gb/documentation/articles/virtual-machines-a8-a9-a10-a11-specs/">A11 컴퓨팅 인스턴스</a>는 Simon에게 게놈 처리 파이프라인을 통해 실행할 수 있는 진정한 부스트를 제공합니다. 코어가 256개 이상인 개인 Azure 클러스터에 즉시 액세스할 수 있다는 것은 그가 설명한 대로 자신의 작업을 완전히 제어할 수 있다는 것을 의미합니다.</p>
+
+
+  <blockquote>
+
+  <p>&ldquo;나를 위해 Azure는 완벽했다. 현재 계산 요구 사항을 사용하여 컴퓨팅 기능을 확장할 수 있습니다. 또한 좋은 점은 특정 아키텍처에 대한 자본 투자를 능가할 필요가 없었기&rsquo; 때문에 필요에 따라 클러스터의 물리적 구성을 변경할 수도 있다는 것입니다. 예를 들어 일부 문제의 경우 많은 양의 RAM 및 프로세서(예: Azure A11)가 있는 노드가 필요할 수 있습니다. 다른 시간에는 더 빠른 SSD 스토리지와 클러스터의 노드 간에 더 빠른 상호 연결이 필요할 수 있습니다. Azure 웹 포털에서 또는 더 일반적으로 프로그래밍 방식으로 Azure 명령줄 도구를 사용하여 이 모든 작업을 수행할 수 있습니다. 몇 줄의 스크립트 코드만으로 완전히 새로운 클러스터를 설정할 수 있습니다. 클러스터를 설정한 후에는 몇 가지 간단한 스크립트를 실행하여 클러스터 전체에 계산 작업을 배포하는 오픈 소스 그리드 엔진 작업 스케줄러를 쉽게 설정할 수 있었습니다. 하지만 사용자 고유의 클러스터를 보유하는 가장 좋은 점은 큐에 대기 시간이 없다는 것입니다.&rdquo;</p>
+
+  </blockquote>
+
+
+  <h1>솔루션: 게놈 시간 기계, 오후에 일주일&rsquo; 작업 수행</h1>
+
+
+  <p>Simon은 명령줄에서 계산을 실행하는 데 사용되므로 작업 습관을 변경하지 않고 Azure를 빠르게 사용할 수 있었습니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/xplat-cli/">Linux CLI(Command-Line Interface)</a>를 사용하면 워크플로에 대해 구성할 수 있는 가상 머신을 쉽게 설정하고 관리할 수 있습니다. 여기에는 변형 호출을 위해 Azure에서 잘 알려진 <a href="https://www.broadinstitute.org/gatk/">GATK(게놈 분석 Toolkit)</a>를 설정하고 최대 가능성 계산을 위해 <a href="https://sco.h-its.org/exelixis/web/software/raxml/index.html">RaxML</a>과 결합하는 것이 포함되었습니다. 그런 다음, Simon은 Ubuntu 14.04 Azure VM 클러스터에 <a href="https://packages.ubuntu.com/trusty/gridengine-master">그리드 엔진</a> 을 설치하여 A11 컴퓨팅 노드에서 MPI 및 OpenMP를 사용하기 위해 작업 실행을 관리했습니다.</p>
+
+
+  <blockquote>
+
+  <p>&ldquo;Azure VM을 사용하면 임페리얼의 로컬 설정에서 클라우드로 직접 워크플로를 포팅할 수 있으므로 거의 조정이 필요하지 않습니다. Azure 명령줄 도구도 훌륭합니다. 클러스터 설정 및 후속 관리 모두에 대한 워크플로를 관리하는 데 실제로 도움이 되었습니다. 클러스터 사용은 분당 요금이 청구되므로 리소스를 효율적이고 간단하며 안정적으로 가동 및 종료할 수 있는 훌륭한 도구가 있어야 합니다. 물론 클러스터의 관리자이기도 하므로 필요한 도구와 소프트웨어를 즉시 설치하고 업데이트할 수 있는 최고의 유연성을 제공했거나 테스트만 하고 싶었습니다. 나에게 적합한 방식으로 워크플로와 환경을 구성할 수 있었습니다.&quot;</p>
+
+  </blockquote>
+
+
+  <p>겉으로 보기에 이 설정은 이미 사용 가능한 설정과 매우 유사하며, 이것이 포인트입니다. Simon은 익숙한 오픈 소스 도구를 사용하고 다시 설계하지 않고도 Azure에서 복잡한 작업 환경을 쉽게 재현할 수 있었습니다. 이를 통해 그는 이제 주문형으로 사용할 수 있는 엄청난 양의 컴퓨팅에 액세스할 수 있습니다.<br>
+
+  그의 최신 게놈 시퀀싱 데이터 세트에 대 한, 사이먼은 일주일에서 오후까지 솔루션에 그의 시간을 줄일 수 있었다!</p>
+
+
+  <p>많은 연구원의 경우 클러스터의 런타임은 빠를 수 있지만 큐에서 기다리는 것은 시간이 오래 걸릴 뿐만 아니라 예측할 수 없습니다. Azure Big Compute는 빠르고 큰 메모리 VM과 큐 없음의 매력적인 조합을 제공하여 연구원에게 엄청난 시간 절약을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b15bfddb-efda-49b2-b920-b0ef3386b64e.jpg"><img alt="Linux and open-source computing on Azure" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a5911936-e399-49d2-b64d-9d3d24cd43e5.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Azure의 Linux 및 오픈 소스 컴퓨팅" width="587"></a></p>
+
+
+  <h1>학습 내용</h1>
+
+
+  <p>이는 계산 집약적인 Linux 및 OSS 워크로드를 실행하는 데 Azure가 얼마나 능숙한지를 보여주는 좋은 예입니다. 더 큰 VM 및 주문형 확장성을 활용하기 위해 가장 크고 복잡한 프로세스 중 일부를 클라우드로 쉽게 이동할 수 있는 방법을 보여 줍니다. Azure는 실제로 데스크톱의 확장이 되어 표준 OSS 소프트웨어 스택을 원활하게 지원하므로 이 작업을 수행하는 환경은 상상보다 훨씬 더 원활했습니다.</p>
+
+
+  <p>Big Compute가 출시되었을 때 빠른 프로세서와 큰 메모리를 Infiniband QDR 짧은 대기 시간, 높은 대역폭 네트워크 상호 연결과 결합했습니다. 그 후 Simon과 Matthew 같은 사용자는 강력한 컴퓨팅 인스턴스를 원하지만 표준 기가비트 이더넷 네트워킹을 사용하게 되어 기쁩니다. &rsquo;A10 및 A11 인스턴스가 가능한 것 이상으로 이러한 복잡한 워크로드를 가속화할 수 있다는 것을 알 수 있습니다.</p>
+
+
+  <h1>몇 가지 마지막 단어</h1>
+
+
+  <p>Weve&rsquo;는 Azure가 어떻게 그들을 도울 수 있는지 보기 위해 사이먼과 매튜와 함께 일하는 것을 좋아했습니다. 따라서 Azure를 사용하여 워크로드를 가속화하는 방법에 대해 여러분의 의견을 듣고 싶습니다. <a href="mailto:bigcompute@microsoft.com">빅 컴퓨팅 팀과</a> Microsoft Research 모두 지원해 드립니다. Simon에게 는 오후에 일주일&rsquo; 동안 작업을 완료하는 것이 좋으며, 이를 확장하면 한 달 이내에 1년&rsquo; 분량의 컴퓨팅을 실행할 수 있습니다. 그런 종류의 속도 향상이 어떻게 도움이 될 수 있는지 상상해 보십시오.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>Azure의 빅 컴퓨팅 솔루션에 대한 자세한 내용은 다음을 참조하세요.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/solutions/big-compute/">빅 컴퓨팅: HPC 및 Batch</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-a8-a9-a10-a11-specs/">A8, A9, A10 및 A11 계산 집약적인 인스턴스 정보</a></li>
+  </ul>
+
+
+  <p>Azure의 Linux 및 OSS에 대한 자세한 내용은 다음을 참조하세요.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-opensource/">Azure의 오픈 소스 컴퓨팅 및 Linux</a></li>
+  </ul>
+
+
+  <p>Azure for Research에 대한 자세한 내용은 다음을 참조하세요.</p>
+
+
+  <ul>
+   <li><a href="https://research.microsoft.com/en-us/projects/azure/default.aspx">연구를 위한 Microsoft Azure</a></li>
+  </ul>
+
+
+  <p>Microsoft의 Genomics에 대한 자세한 내용은 다음을 참조하세요.</p>
+
+
+  <ul>
+   <li><a href="https://github.com/microsoftgenomics/">GitHub 리포지토리</a></li>
+  </ul>

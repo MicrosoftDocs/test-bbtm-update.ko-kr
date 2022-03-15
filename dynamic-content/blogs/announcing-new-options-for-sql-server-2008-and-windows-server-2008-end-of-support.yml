@@ -1,0 +1,84 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 121f83fae5d5b0c88a2a119d52fca06496821ed5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899134"
+Slug: announcing-new-options-for-sql-server-2008-and-windows-server-2008-end-of-support
+Title: SQL Server 2008 및 Windows Server 2008 지원 종료에 대한 새로운 옵션 발표
+Summary: 기술이 얼마나 빠르게 진화하고 있는지는 믿을 수 없을 만큼 놀랍습니다. Microsoft의 서버 기술도 예외는 아닙니다. 32비트에서 64비트 컴퓨팅, 서버 가상화 및 고급 분석의 초기 버전으로 전환하면서 2008년 릴리스 주기에 들어갔습니다.
+Content: >-
+  <p>&rsquo;기술이 얼마나 빠르게 진화하고 있는지 믿을 수 없을 만큼 놀랍습니다. Microsofts&rsquo; 서버 기술도 예외는 아닙니다. 32비트에서 64비트 컴퓨팅, 서버 가상화 및 고급 분석의 초기 버전으로 전환하면서 2008년 릴리스 주기에 들어갔습니다. 10년 후, 우리는 데이터, 인공 지능 등에서 흥미로운 혁신을 통해 하이브리드 클라우드 컴퓨팅의 본격적인 시대에 살고 있습니다.</p>
+
+
+  <p>비즈니스를 운영하기 위해 SQL Server 및 Windows Server를 선택하고 Microsoft를 기술 파트너로 신뢰해 주신 고객에게 감사드립니다. 또한 미래를 준비하고 오늘날의&rsquo; 기술을 최대한 활용할 수 있도록 고객을 지원하고 싶습니다. 이러한 인기 있는 2008 릴리스에 대한 지원 종료가 빠르게 다가오고 있습니다.</p>
+
+
+  <ul>
+      <li>SQL Server 2008 및 2008 R2에 대한 추가 지원은 2019년 7월 9일에 종료됩니다.</li>
+      <li>Windows Server 2008 및 2008 R2에 대한 추가 지원은 2020년 1월 14일에 종료됩니다.</li>
+  </ul>
+
+
+  <p>지원 종료는 정기적인 보안 업데이트가 종료되는 것을 의미합니다. 사이버 공격이 점점 더 정교해지고 빈약해짐에 따라 지원되지 않는 버전에서 앱과 데이터를 실행하면 상당한 보안 및 규정 준수 위험이 발생할 수 있습니다. 2008년 제품군은 당시에는 훌륭했지만 성능, 효율성 및 정기적인 보안 업데이트를 위해 최신 버전으로 업그레이드하는 것이 좋습니다.</p>
+
+
+  <p>지원 종료 시점은 클라우드 컴퓨팅과 최신 버전의 SQL Server 및 Windows Server를 활용하도록 애플리케이션 및 인프라를 변환할 수 있는 좋은 기회입니다. <a href="https://customers.microsoft.com/en-US/story/allscripts-partner-professional-services-azure" target="_blank">Allscripts</a>와 같은 고객은 수천 개의 가상 머신에서 실행되는 수십 개의 애플리케이션을 Azure로 다시 호스트하여 고급 Azure 서비스를 사용하여 새 애플리케이션을 변환하고 개발할 수 있습니다.</p>
+
+
+  <p>향후 10년 동안 조직을 수행하기 위해 이러한 전환을 관리하는 데 도움이 되는 새로운 옵션과 도구를 공유하게 되어 기쁘게 생각합니다.</p>
+
+
+  <h2>Azure로 마이그레이션, 무료 확장 보안 업데이트 받기</h2>
+
+
+  <p>지원 종료는 클라우드를 사용하여 IT 자산을 변환하는 데 이상적인 시기입니다. 그러나 지원 타임라인이 끝나기 전에 모든 항목을 업그레이드하는 것이 어려울 수 있다는 것을 알고 있습니다. 이러한 요구 사항을 해결하기 위해 Azure에서 2008년 및 2008년 R2 버전의 SQL Server 및 Windows Server에서 확장 보안 업데이트를 무료로 사용할 수 있도록 지원 기한이 종료된 후 3년 동안 워크로드를 보호할 수 있게 되어 기쁘게 생각합니다. 애플리케이션 코드 변경 없이 이러한 워크로드를 Azure로 다시 호스팅할 수 있습니다. 이렇게 하면 SQL Server 2017 또는 Windows Server 2016 같은 최신 버전으로 업그레이드하고 Azure에서 사용할 수 있는 다양한 플랫폼 및 데이터 서비스 집합을 활용하는 등 향후 경로를 계획하는 데 더 많은 시간을 할애할 수 있습니다.</p>
+
+
+  <p>애플리케이션 코드 변경 없이 가동 중지 시간이 거의 없는 SQL Server 2008 및 2008 R2 배포를 Azure SQL Database Managed Instance로 이동할 수도 있습니다. 업계 최고의 SLA를 사용하는 완전 관리형 서비스로서의 데이터베이스 솔루션이며 향후 업그레이드가 필요하지 않습니다. Azure SQL Database Managed Instance는 올해 4분기 초에 일반 공급됩니다.</p>
+
+
+  <p>기존 라이선스 및 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/">Azure 하이브리드 혜택을</a> 사용하여 SQL Server 및 Windows Server 환경을 Azure Virtual Machines로 마이그레이션하거나 Managed Instance를 Azure SQL Database 때 저장할 수 있습니다. 이 혜택을 통해 Software Assurance를 이용하는 고객은 Azure에서 SQL Server 및 Windows Server를 실행하는 데 드는 비용을 최대 55% 절감할 수 있습니다.</p>
+
+
+  <h2>온-프레미스 환경 업그레이드 및 보호 유지</h2>
+
+
+  <p>온-프레미스에서 계속 실행하려는 앱 및 데이터의 경우 최신 버전의 SQL Server 및 Windows Server로 업그레이드하여 가장 강력한 보안 및 최신 혁신을 얻는 것이 좋습니다. SQL Server 2017 및 Windows Server 2016 성능 및 효율성에 대한 새로운 표준이며, 둘 다 플랫폼을 강화하는 데 도움이 되는 기본 제공 보안 기능을 포함합니다. 이제 서버 인프라를 새로 고치는 것도 고려해야 할 때입니다. 오늘날&rsquo; 서버와 하이퍼 컨버지드 솔루션은 중요한 보안 기능을 제공할 뿐만 아니라 성능 및 비용 효율성이 크게 향상됩니다. Microsoft 파트너는 데이터 센터의 요구 사항을 충족하기 위해 다양한 <a href="https://www.microsoft.com/wssd" target="_blank">Windows Server Software 정의</a> 솔루션을 제공합니다. 또는 일관된 하이브리드 클라우드 솔루션을 위해 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/" target="_blank">Azure Stack</a> 을 고려해 보세요.</p>
+
+
+  <p>업그레이드하는 데 더 많은 시간이 필요한 온-프레미스 서버의 경우 3년 동안 확장 보안 업데이트를 구입할 수 있습니다. 이 옵션은 기업계약 등록에 따라 Software Assurance 또는 구독 라이선스를 가진 고객이 사용할 수 있으며 업데이트가 필요한 서버만 포함하도록 매년 구매할 수 있습니다. &rsquo;Azure로 업그레이드하거나 마이그레이션하는 동안 보안 업데이트를 계속 가져오는 것이 좋습니다.</p>
+
+
+  <h2>지원 종료 리소스 센터 방문 시작</h2>
+
+
+  <p>이제 옵션을&rsquo; 알게 되었으므로 시작할 시간입니다. 모든 좋은 마이그레이션 프로젝트는 좋은 계획으로 시작합니다. 먼저 2008 및 2008 R2 버전의 SQL Server 및 Windows Server에서 지원되는 애플리케이션을 식별하고, 워크로드를 인벤토리에 추가하고, 각 애플리케이션에 적합한 마이그레이션 및/또는 업그레이드 경로를 선택합니다. 그런 다음 올바른 리소스를 할당하고 시작합니다. 계획 및 마이그레이션을 돕기 위해 오늘 마이그레이션 도구의 혁신도 <a href="https://aka.ms/juliawhitejulymigrationblog" target="_blank">발표했습니다</a> . 질문이 있거나 도움이 필요한 경우 Microsoft와 파트너는 도움을 줄 준비가 되어 있습니다. 자세한 지침 및 리소스는 <a href="https://www.microsoft.com/2008-eos" target="_blank">2008 지원 종료 리소스 센터를</a> 방문하세요.</p>
+
+
+  <h2>질문과 대답</h2>
+
+
+  <p><strong>2008 및 2008 R2 버전의 SQL Server 및 Windows Server에 대한 지원 종료는 무엇을 의미하나요?</strong></p>
+
+
+  <p>Microsoft 수명 주기 정책은 2008년 및 2008년 R2 버전의 SQL Server 및 Windows Server에 대해 10년 지원(5년 일반 지원 및 5년 추가 지원)을 제공합니다. 정책에 따라 추가 지원 기간이 종료된 후에는 패치 또는 보안 업데이트가 없으므로 보안 위험이 발생할 수 있습니다. <a href="https://support.microsoft.com/en-us/help/14085/microsoft-business-developer-and-desktop-operating-systems-policy" target="_blank">Microsoft 수명 주기 정책</a> 페이지에서 자세히 알아보세요.</p>
+
+
+  <p><strong>확장 보안 업데이트의 가격은 어떻게 됩니까?&nbsp; </strong></p>
+
+
+  <ul>
+      <li><u>Azure: Azure</u> 가상 머신에서 2008 또는 2008 R2 버전의 SQL Server 및 Windows Server를 실행하는 고객은 무료로 확장 보안 업데이트를 받게 됩니다.</li>
+      <li><u>온-프레미스</u>: 활성 Software Assurance 또는 구독 라이선스가 있는 고객은 최신 버전의 SQL Server 또는 Windows Server의 전체 라이선스 비용의 75%에 대해 매년 확장 보안 업데이트를 구매할 수 있습니다. 고객은 커버해야 하는 서버에 대해서만 비용을 지불하므로 환경의 일부를 업그레이드할 때 매년 비용을 절감할 수 있습니다.</li>
+  </ul>
+
+
+  <p><strong>고객은 언제 확장 보안 업데이트를 구매할 수 있나요?</strong></p>
+
+
+  <p>이제 확장 보안 업데이트를 구매할 수 있습니다. 가격 책정 세부 정보는 Microsoft 재판매인에게 문의하세요.</p>
+
+
+  <p>자세한 내용은 확장 보안 업데이트에 대한 <a href="https://aka.ms/eos-offer-faq" target="_blank">질문과 대답</a> 을 참조하세요.</p>

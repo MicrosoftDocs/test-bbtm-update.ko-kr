@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e75ce5cfeba451c6445696a5eaa3d1df7276fbe1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908759"
+Slug: powershell-cloud-shell-ga
+Title: Azure Cloud Shell의 PowerShell의 새로운 기능
+Summary: 'Microsoft Ignite 2018에서는 Azure Cloud Shell의 PowerShell이 일반 공급되었습니다. Azure Cloud Shell은 거의 모든 위치에서 Azure 리소스를 관리하기 위한 대화형 브라우저 액세스 가능 인증 셸을 제공합니다. '
+Content: >-
+  <p>Microsoft Ignite 2018 <a href="https://shell.azure.com/powershell" target="_blank">에서는 Azure Cloud Shell의 PowerShell</a> 이 일반 공급되었습니다. <a href="https://aka.ms/cloudshell/docs" target="_blank">Azure Cloud Shell</a> 은 거의 모든 위치에서 Azure 리소스를 관리하기 위한 대화형 브라우저 액세스 가능 인증 셸을 제공합니다. <a href="https://portal.azure.com/" target="_blank">Azure Portal</a>, <a href="https://shell.azure.com/PowerShell" target="_blank">독립 실행형 환경</a>, <a href="https://docs.microsoft.com/powershell/azure/get-started-azureps" target="_blank">Azure 설명서</a>, <a href="https://azure.microsoft.com/features/azure-portal/mobile-app/" target="_blank">Azure 모바일 앱</a> 및 Visual Studio Code 대한 <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account" target="_blank">Azure 계정 확장을</a> 비롯한 여러 액세스 지점을 사용하면 Cloud Shell의 PowerShell에 쉽게 액세스하여 Azure 리소스를 관리하고 배포할 수 있습니다.</p>
+
+
+  <h2>향상 된 기능</h2>
+
+
+  <p>2017년 9월 <a href="https://azure.microsoft.com/blog/powershell-comes-to-azure-cloud-shell/" target="_blank">공개 미리 보기</a> 이후 빠른 시작 시간,&rsquo; PowerShell Core, Bash를 사용한 일관된 도구, 영구 도구 설정 등을 포함한 커뮤니티의 피드백을 통합했습니다.&nbsp;</p>
+
+
+  <h3>빠른 시작</h3>
+
+
+  <p>Cloud Shells&rsquo; 공개 미리 보기에서 PowerShell이 시작될 때 약 120초 만에 환경이 열렸습니다. 이제 많은 성능 업데이트를 통해 PowerShell 환경을 Bash 환경과 거의 동일한 시간에 사용할 수 있습니다.</p>
+
+
+  <h3>PowerShell Core</h3>
+
+
+  <p><a href="https://github.com/powershell/powershell" target="_blank">PowerShell</a> 은 이제 플랫폼 간 오픈 소스이며 다른 유형의 환경 및 하이브리드 클라우드용으로 빌드되었습니다. PowerShell Core에 대한 <a href="https://docs.microsoft.com/powershell/azure/overview" target="_blank">Azure PowerShell</a> 및 <a href="https://docs.microsoft.com/azure/active-directory/" target="_blank">Azure Active Directory(AAD)</a> 모듈이 모두 미리 보기로 제공되며, 여전히 일관된 방식으로 Azure 리소스를 관리할 수 있습니다. 이제 PowerShell Core로 이동하여 Cloud Shell의 PowerShell 환경을 Linux 컨테이너에서 실행할 수 있습니다.</p>
+
+
+  <h3>일관된 도구</h3>
+
+
+  <p>Linux에서 PowerShell을 실행하면 Bash 및 PowerShell 환경에서 일관된 도구 집합 환경을 얻을 수 있습니다. 또한 <em>홈</em> 디렉터리의 모든 콘텐츠는 <em>클라우드 드라이브</em>의 콘텐츠뿐만 아니라 유지됩니다. 즉, GIT 및 SSH와 같은 도구에 대한 설정은 세션 간에 유지되며 다음에 Cloud Shell을 사용할 때 사용할 수 있습니다.</p>
+
+
+  <h3>Azure VM 원격 cmdlet</h3>
+
+
+  <p><strong>Enable-AzVMPSRemoting, Disable-AzVMPSRemoting</strong>, <strong>Invoke-AzVMCommand</strong> 및 <strong>Enter-AzVM</strong>을 포함하는 4개의 새 cmdlet에 액세스할 수 있습니다. <strong></strong> 이러한 cmdlet을 사용하면 각각 ssh 및 wsman 프로토콜을 사용하여 Linux 및 Windows 가상 머신 모두에서 PowerShell 원격을 쉽게 사용하도록 설정할 수 있습니다. 이렇게 하면 개별 컴퓨터에 대화형으로 연결하거나 PowerShell 원격을 사용하여 자동화된 작업에 대해 일대다로 연결할 수 있습니다.</p>
+
+
+  <p>&ldquo;Azure Cloud Shell의 PowerShell 일반 공급&rdquo; Azure Friday 비디오를 시청하여 이러한 기능의 데모와 향후 기능에 대한 소개를 확인하세요.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="315" scrolling="no" src="https://channel9.msdn.com/Shows/Azure-Friday/PowerShell-in-Azure-Cloud-Shell-GA/player?format=ny" width="560"></iframe></p>
+
+
+  <h2>시작</h2>
+
+
+  <p><a href="https://aka.ms/cloudshell/docs" target="_blank">Azure Cloud Shell</a>은 <a href="https://portal.azure.com/" target="_blank">Azure Portal</a>, <a href="https://shell.azure.com/PowerShell" target="_blank">독립 실행형 환경</a>, <a href="https://docs.microsoft.com/powershell/azure/get-started-azureps" target="_blank">Azure 설명서</a>, <a href="https://azure.microsoft.com/features/azure-portal/mobile-app/" target="_blank">Azure Mobile App</a> 및 Visual Studio Code 대한 <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account" target="_blank">Azure 계정 확장을</a> 통해 사용할 수 있습니다. 사용자 커뮤니티는 항상 Azure 및 Cloud Shell을 구동하는 핵심이 될 것입니다.</p>
+
+
+  <p>Cloud Shell을 형성하고 멋진 환경을 만드는 데 도움이 되는 귀중한 피드백을 제공하는 최종 사용자 및 파트너에게 감사드립니다. <a href="https://aka.ms/cloudshell/feedback" target="_blank">Azure Cloud Shell UserVoice</a>를 통해 더 많은 수신을 기대합니다.</p>

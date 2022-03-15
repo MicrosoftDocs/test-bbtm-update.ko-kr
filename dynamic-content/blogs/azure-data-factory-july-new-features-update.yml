@@ -1,0 +1,46 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f99110232cdd581719593f01ba79932c01d265c7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899348"
+Slug: azure-data-factory-july-new-features-update
+Title: Azure Data Factory 7월 새 기능 업데이트
+Summary: Azure Data Factory는 7월에 데이터 관리 게이트웨이 고가용성 및 확장성을 위한 미리 보기, 복사 중에 호환되지 않는 행을 건너뛰거나 로깅하는 내결함성 기능, 서비스 주체를 사용하여 Azure Data Lake Analytics 액세스하는 인증 지원을 포함하여 더 많은 새로운 기능을 추가했습니다.
+Content: >-
+  <p>Azure Data Factory가 다음을 포함하여 7월에 더 많은 새로운 기능을 추가했음을 발표하게 되어 기쁩니다.</p>
+
+
+  <ul>
+      <li>데이터 관리 게이트웨이 고가용성 및 확장성을 위한 미리 보기</li>
+      <li>내결함성을 위해 복사하는 동안 호환되지 않는 행 건너뛰기 또는 로깅</li>
+      <li>Azure Data Lake Analytics 대한 서비스 주체 인증 지원</li>
+  </ul>
+
+
+  <p>이 블로그 게시물에서 이러한 새로운 각 기능을 하나씩 살펴보겠습니다.</p>
+
+
+  <h2>데이터 관리 게이트웨이 고가용성 및 확장성을 위한 미리 보기</h2>
+
+
+  <p>이제 데이터 관리 게이트웨이가 단일 실패 지점이 되지 않도록 여러 컴퓨터에 설치된 여러 데이터 관리 게이트웨이 노드를 단일 논리 게이트웨이와 연결할 수 있습니다. 또한 이는 더 나은 복사 성능을 달성하기 위해 규모를 확장하는 데 도움이 됩니다. 부하에 따라 각 게이트웨이 노드를 확장하도록 선택할 수도 있습니다. 또한 Azure Data Factory는 이제 Azure Portal에서 게이트웨이 상태 및 리소스 사용률에 대한 보다 풍부한 모니터링 환경을 제공합니다. <a href="https://go.microsoft.com/fwlink/?linkid=852749" target="_blank">데이터 관리 게이트웨이</a> - 고가용성 및 확장성 미리 보기에서 자세히 알아보세요.</p>
+
+
+  <h2>내결함성을 위해 복사하는 동안 호환되지 않는 행 건너뛰기 또는 로깅</h2>
+
+
+  <p>Azure Data Factory 복사 작업을 사용하여 데이터를 복사할 때 원본 및 싱크 데이터 저장소 간에 호환되지 않는 데이터를 처리하는 다양한 옵션이 있습니다. 호환되지 않는 데이터(기본 동작)가 발생할 때 복사 실행을 중단하고 실패하도록 선택하거나 호환되지 않는 행을 건너뛰어 모든 데이터를 계속 복사하도록 선택할 수 있습니다. 또한 실패의 원인을 검토하고 데이터 원본에서 데이터를 수정하여 다시 시도할 수 있도록 Azure Blob에 호환되지 않는 행을 기록하는 옵션도 있습니다. 이 기능은 복사 마법사와 JSON 편집을 통해 사용할 수 있습니다. 설명서 페이지에서 지원되는 시나리오 및 구성에 대해 자세히 알아보세요. <a href="https://docs.microsoft.com/en-us/azure/data-factory/data-factory-copy-activity-fault-tolerance" target="_blank">복사 작업 내결함성은 &ndash; 호환되지 않는 행을 건너뜁니다</a>.</p>
+
+
+  <h2>Azure Data Lake Analytics 대한 서비스 주체 인증 지원</h2>
+
+
+  <p>U-SQL 작업을 사용하기 위해 이제 Azure Data Factory는 기존 사용자 자격 증명 인증 외에도 이전의 Azure Data Lake Store와 마찬가지로 Azure Data Lake Analytics 대한 서비스 주체 인증을 지원합니다. 서비스 주체 인증을 사용하여 특히 예약된 U-SQL 실행의 경우 사용자 자격 증명을 사용하여 주기적인 토큰 만료 동작을 제거하는 것이 좋습니다. Azure Data Lake Analytics <a href="https://docs.microsoft.com/en-us/azure/data-factory/data-factory-usql-activity" target="_blank">U-SQL 스크립트를 실행하여 데이터 변환</a> 설명서에서 지원되는 인증 유형 및 구성에 대해 자세히 알아봅니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>다음은 7월에 도입된 새로운 기능입니다. 질문이나 피드백이 있나요? <a href="https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureDataFactory">Azure Data Factory 포럼</a> 또는 <a href="https://feedback.azure.com/forums/270578-data-factory">피드백 사이트에서</a> 여러분의 의견을 공유하세요.&rsquo;</p>

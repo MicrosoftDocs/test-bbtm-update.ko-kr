@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e842bd7c448ccfa658c061d3ea792efff57f4522
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897068"
+Slug: windows-virtual-desktop-now-in-public-preview-on-azure
+Title: Azure에서 현재 공개 미리 보기로 Virtual Desktop Windows
+Summary: 최근에 Azure에서 Windows Virtual Desktop 서비스의 공개 미리 보기를 공유했습니다.
+Content: >-
+  <p>최근에 Azure에서 <a href="https://aka.ms/WVD" target="_blank">Windows Virtual Desktop</a> 서비스의 공개 미리 보기를 공유했습니다. 이제 고객은 간소화된 관리, 다중 세션 Windows 10, Office 365 ProPlus 최적화 및 Windows RDS(Server Remote Desktop Services) 데스크톱 및 앱에 대한 지원을 제공하는 유일한 서비스에 액세스할 수 있습니다. Windows Virtual Desktop을 사용하면 기본 제공 보안 및 규정 준수를 즐기면서 몇 분 안에 Azure에서 Windows 데스크톱 및 앱을 배포하고 확장할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0962ce64-9dfe-46f6-8ec7-7ff029f5fc1a.jpg"><img alt="Image of women on her desktop in the workplace " border="0" height="427" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/efa1ff1d-4146-4bce-b321-89988472c8b8.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="직장에서 바탕 화면에 여성의 이미지 " width="640"></a></p>
+
+
+  <p>즉, 이제 고객은 다중 세션 Windows 10, Windows 7 및 WINDOWS Server 데스크톱 및 앱(RDS)을 사용하여 가상화하여 Azure를 사용하여 간소화된 관리 및 배포 환경을 위해 Virtual Desktop을 Windows 수 있습니다. 또한 Citrix, Samsung 및 Microsoft CSP(클라우드 솔루션 공급자)를 비롯한 파트너에게 확장 가능한 솔루션으로 Windows Virtual Desktop을 빌드했습니다.</p>
+
+
+  <p>Windows Virtual Desktop에 대한 액세스는 해당 RDS 및 Windows Enterprise 라이선스를 통해 사용할 수 있습니다. 적절한 라이선스를 사용하면 오늘 시작하기 위해 Azure 구독을 설정하기만 하면 됩니다. 환경에 맞게 원하는 가상 머신 및 스토리지 유형을 선택할 수 있습니다. 최대 72% 할인된 예약 인스턴스를 활용하고 다중 세션 Windows 10 사용하여 비용을 최적화할 수 있습니다.</p>
+
+
+  <p><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2019/03/21/windows-virtual-desktop-public-preview/" target="_blank">줄리아 화이트와 브래드 앤더슨</a>에 의해 오늘 게시 된 Microsoft 365 블로그에서 Windows Virtual Desktop에 대한 자세한 내용을 읽을 수 있습니다.</p>
+
+
+  <p>오늘 공개 미리 보기를 <a href="https://docs.microsoft.com/en-us/azure/virtual-desktop/overview" target="_blank">시작하세요</a>.</p>

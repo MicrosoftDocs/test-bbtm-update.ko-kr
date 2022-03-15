@@ -1,0 +1,70 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0145b834e928da373a83e6766b31401e84f2a526
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903232"
+Slug: iot-plug-and-play-is-now-available-in-preview
+Title: IoT 플러그 앤 플레이는 이제 미리 보기에서 사용할 수 있습니다.
+Summary: 오늘 IoT 플러그 앤 플레이가 미리 보기로 제공됩니다. 2019년 5월 Microsoft Build에서 IoT 플러그 앤 플레이를 발표하고 IoT Central과 원활하게 작동하는 방법을 설명했습니다.
+Content: >-
+  <p>오늘 IoT 플러그 앤 플레이가 미리 보기로 제공됩니다. 2019년 5월 Microsoft Build에서 <a href="https://azure.microsoft.com/en-us/blog/build-with-azure-iot-central-and-iot-plug-and-play/" target="_blank">IoT 플러그 앤 플레이를 발표하고 IoT</a> Central과 원활하게 작동하는 방법을 설명했습니다. 솔루션 개발자가 <a href="https://aka.ms/DTDL" target="_blank">디지털 트윈 정의 언어</a>로 정의된 디바이스 기능 모델을 사용하여 IoT 디바이스에 연결하고 상호 작용할 수 있도록 하여 IoT 플러그 앤 플레이가 디바이스 통합을 간소화하는 방법을 <a href="https://mybuild.techcommunity.microsoft.com/sessions/77053?source=sessions#top-anchor" target="_blank">설명</a>했습니다. 또한 IoT 플러그 앤 플레이가 활성화된 디바이스 및 솔루션을 출시한 파트너 집합도 발표했습니다. IoT용 <a href="https://catalog.azureiotsolutions.com/" target="_blank">Azure Certified 디바이스 카탈로그에서 해당 IoT</a> 플러그 앤 플레이 인증 디바이스를 찾을 수 있습니다.</p>
+
+
+  <p>오늘&rsquo; 발표를 통해 솔루션 개발자는 <a href="https://azure.microsoft.com/en-us/services/iot-central/" target="_blank">Azure IoT Central</a> 또는 <a href="https://azure.microsoft.com/en-us/services/iot-hub/" target="_blank">Azure IoT Hub</a>를 사용하여 IoT 플러그 앤 플레이로 사용하도록 설정된 IoT 디바이스와 원활하게 통합되는 솔루션을 빌드할 수 있습니다. 또한 디바이스 인증 제출 프로세스를 간소화하고 디바이스를 Azure IoT 디바이스 카탈로그로 신속하게 가져오는 데 관심이 있는 디바이스 파트너를 <a href="https://aka.ms/acfi" target="_blank">위해 새로운 Azure Certified for IoT 포털</a>을 출시했습니다.</p>
+
+
+  <p>이 문서에서는 솔루션 개발자가 IoT 솔루션에서 IoT 플러그 앤 플레이 디바이스를 사용하는 방법과 디바이스 파트너가 카탈로그에 나열될 제품을 빌드하고 인증하는 방법을 설명합니다.</p>
+
+
+  <h2>솔루션 개발자를 위한 더 빠른 디바이스 통합</h2>
+
+
+  <p>Azure IoT Central은 IoT 디바이스 및 제품을 쉽게 연결, 모니터링 및 관리할 수 있는 완전 관리형 IoT SaaS(Software as a Service) 제품입니다. Azure IoT Central은 IoT 솔루션의 초기 설정을 간소화하고 일반적인 IoT 프로젝트의 관리 부담, 운영 비용 및 오버헤드를 줄입니다. Azure IoT IoT 플러그 앤 플레이와 중앙 통합은 솔루션 개발자가 포함된 코드를 작성하지 않고도 디바이스를 통합할 수 있도록 함으로써 한 단계 더 발전합니다. IoT 솔루션 개발자는 대규모 IoT 플러그 앤 플레이 인증 디바이스 집합에서 디바이스를 선택하여 IoT 솔루션을 엔드투엔드에 빠르게 빌드하고 사용자 지정할 수 있습니다. 솔루션 개발자는 디바이스 카탈로그에서 인증된 디바이스로 시작하고 디스플레이 이름 또는 단위 편집과 같은 디바이스 환경을 사용자 지정할 수 있습니다. 솔루션 개발자는 솔루션 운영자를 위한 대시보드를 추가하여 데이터를 시각화할 수도 있습니다. 이 새 릴리스의 일부로 개발자는 선택할 수 있는 광범위한 시각화 집합을 제공합니다. 대시보드 및 시각화를 자동으로 생성하여 빠르게 시작하고 실행하는 옵션도 있습니다. 대시보드 및 시각화가 만들어지면 솔루션 개발자는 디바이스 카탈로그의 실제 모델을 기반으로 시뮬레이션을 실행할 수 있습니다. 또한 개발자는 IoT 플러그 앤 플레이 기능 모델에서 노출하는 명령 및 속성과 통합하여 운영자가 디바이스 플릿을 효과적으로 관리할 수 있도록 할 수 있습니다. IoT Central은 인증된 디바이스의 기능 모델을 자동으로 로드하여 진정한 플러그 앤 플레이 환경을 가능하게 합니다.</p>
+
+
+  <p>더 많은 사용자 지정과 같은 개발자가 사용할 수 있는&rsquo; 또 다른 옵션은 Azure IoT Hub 및 IoT 플러그 앤 플레이 디바이스를 사용하여 IoT 솔루션을 빌드하는 것입니다. 오늘&rsquo; 릴리스를 통해 Azure IoT Hub는 이제 IoT 플러그 앤 플레이 디바이스 기능 모델 및 인터페이스의 기능을 노출하는 RESTful 디지털 트윈 API를 지원합니다. 개발자는 경보 임계값과 같은 설정을 구성하고, 디바이스 재설정, 원격 분석 라우팅 및 특정 인터페이스를 지원하는 디바이스 쿼리와 같은 작업에 대한 명령을 보내는 속성을 설정할 수 있습니다. 가장 편리한 방법은 <a href="https://aka.ms/iotpnpnodesdk" target="_blank">Node.jsAzure IoT SDK를 </a> 사용하는 것입니다(다른 언어는 곧 제공될 예정). 또한 Azure Certified for IoT 디바이스 카탈로그에서 IoT 플러그 앤 플레이에 사용하도록 설정된 모든 디바이스는 IoT Central에서 작동하는 것처럼 IoT Hub에서 작동합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3fc10bfc-f2dd-442c-8e7e-65baa15c9a03.png"><img alt="An image of the certified device browsing page." border="0" height="538" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/327f7c97-c485-4b66-a849-81c14605d5a0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="인증된 디바이스 검색 페이지의 이미지입니다." width="1024"></a></p>
+
+
+  <h2>디바이스 파트너를 위한 간소화된 인증 프로세스</h2>
+
+
+  <p>Azure Certified for IoT 디바이스 카탈로그를 사용하면 고객이 올바른 Azure IoT 인증된 디바이스를 빠르게 찾아 IoT 솔루션 빌드를 빠르게 시작할 수 있습니다. 디바이스 파트너가 IoT 플러그 앤 플레이 호환으로 제품을 인증할 수 있도록 새 포털 및 제출 프로세스를 시작하여 Azure Certified for IoT 프로그램을 개선 및 간소화했습니다. Azure Certified for IoT 포털을 사용하면 디바이스 파트너가 Azure Certified for IoT 디바이스 카탈로그에 나열할 새 제품을 정의하고 물리적 차원, 설명 및 지역 가용성과 같은 제품 세부 정보를 지정할 수 있습니다. 디바이스 파트너는 회사 모델 리포지토리에서 IoT 플러그 앤 플레이 모델을 관리할 수 있습니다. 이 리포지토리는 자신의 직원 및 선택 파트너뿐만 아니라 공개 모델 리포지토리에 대한 액세스만 제한합니다. 또한 포털을 사용하면 디바이스 파트너가 디지털 트윈 정의 언어 및 필요한 인터페이스 구현의 올바른 구현을 확인하는 자동화된 유효성 검사 프로세스에 제출하여 제품을 인증할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7424172b-4092-4aa4-a5b8-155ba83b1e2f.png"><img alt="An image of the device page for the MXChip-Certified." border="0" height="577" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/657d5519-4439-48f9-b591-9d87bf928727.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="MXChip-Certified에 대한 디바이스 페이지의 이미지입니다." width="1024"></a></p>
+
+
+  <p>또한 디바이스 파트너는 IoT 플러그 앤 플레이를 지원하기 위한 개발자 도구 투자의 혜택을 누릴 수 있습니다. <a href="https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-iot-workbench" target="_blank">VS Code Azure IoT Device Workbench</a> 확장은 IoT Play 및 Play 디바이스 모델을 쉽게 작성할 수 있도록 IntelliSense를 추가합니다. 또한 코드를 생성하여 IoT 플러그 앤 플레이 모델을 구현하고 고객이 IoT 디바이스 SDK를 프로비전하거나 통합하는 것에 대해 걱정할 필요 없이 IoT Central에 연결하는 논리를 제공하는 C 디바이스 코드를 만들 수 있습니다.</p>
+
+
+  <p>또한 새 도구 기능은 디바이스 모델을 원활하게 게시하기 위해 모델 리포지토리 서비스와 통합됩니다. 디바이스 개발자는 Azure IoT Device Workbench 외에도 <a href="https://github.com/Azure/azure-iot-explorer/releases" target="_blank">Azure IoT 탐색기</a> 및 Azure 명령줄 인터페이스용 Azure IoT 확장과 같은 도구를 사용할 수 있습니다. 디바이스 코드는 <a href="https://aka.ms/iotpnpcsdk" target="_blank">C용 Azure IoT SDK</a> 및 <a href="https://aka.ms/iotpnpnodesdk" target="_blank">Node.js</a>사용하여 개발할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/384cec7a-6f7c-411f-bbb0-e110d8063f2a.png"><img alt="An image of the Azure IoT explorer." border="0" height="724" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e664f7c2-9175-4fdf-b10f-b3c7cf9e9cd5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure IoT 탐색기의 이미지입니다." width="1024"></a></p>
+
+
+  <h2>Windows 및 Linux 게이트웨이의 센서를 Azure에 커넥트</h2>
+
+
+  <p>Windows 또는 Linux 게이트웨이 디바이스를 사용하고 게이트웨이에 이미 연결된 센서가 있는 경우 JSON 구성을 편집하기만 하면 이러한 센서를 Azure에서 사용할 수 있습니다. 이 기술을 IoT 플러그 앤 플레이 브리지라고 합니다. 이 브리지를 사용하면 Windows 및 Linux의 센서가 IoT 게이트웨이에서 IoT Central 또는 IoT Hub로 이러한 센서를 브리징하여 Azure와 함께 작동할 수 있습니다. IoT 게이트웨이 디바이스에서 센서 브리지는 OS API 및 OS 플러그 앤 플레이 기능을 활용하여 다운스트림 센서에 연결하고 IoT 플러그 앤 플레이 API를 사용하여 Azure의 IoT Central 및 IoT Hub와 통신합니다. 솔루션 작성기는 IoT 디바이스에 열거된 센서 중에서 쉽게 선택하고 IoT Central 또는 IoT Hub에 등록할 수 있습니다. Azure에서 사용 가능하면 센서에 원격으로 액세스하고 관리할 수 있습니다. Modbus에 대한 기본 지원과 MCU 또는 임베디드 디바이스에서 센서 데이터를 관리하고 가져오기 위한 간단한 직렬 프로토콜이 있으며 MQTT와 같은 다른 프로토콜에 대한 기본 지원을 계속 추가하고 있습니다. Windows OS에서 인식할 수 있는 모든 디바이스(예: USB 주변 장치)에 대한 카메라 및 일반 디바이스 상태 모니터링도 지원합니다. 고유한 어댑터를 사용하여 브리지를 확장하여 다른 유형의 디바이스(예: I2C/SPI)와 통신할 수 있으며, HID와 같은 더 많은 센서 및 프로토콜에 대한 지원을 추가하기 위해 노력하고 있습니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+   <li><a href="https://aka.ms/iotpnpcentraldocs" target="_blank">IoT Central 설명서를 읽고 IoT</a> 플러그 앤 플레이 디바이스를 사용하여 솔루션을 빌드하는 방법을 알아봅니다.</li>
+   <li>Azure IoT 플랫폼을 사용하여 솔루션을 빌드하는 방법을 알아보려면 <a href="https://aka.ms/iotpnpdocs/" target="_blank">IoT 플러그 앤 플레이 설명서를</a> 참조하세요.</li>
+   <li><a href="https://aka.ms/pnpcertdoc" target="_blank">IoT 플러그 앤 플레이 디바이스를 빌드하고 인증하는 방법을 알아봅니다</a>.</li>
+   <li>GitHub <a href="https://aka.ms/dtdl" target="_blank">디지털 트윈 정의 언어 사양</a>을 봅니다.</li>
+   <li>9월 11일에 <a href="https://aka.ms/iotpnpdeepdiveshow" target="_blank">사물 인터넷 쇼 심층 분석을</a> 시청하세요.</li>
+   <li>Azure IoT 디바이스 카탈로그에서 <a href="https://catalog.azureiotsolutions.com/" target="_blank">IoT 플러그 앤 플레이 디바이스를 찾아봅니</a>다.</li>
+   <li>Channel 9 <a href="https://youtu.be/d2r5qZUotFI" target="_blank">IoT Show에서 MODBUS 환경 센서가 있는 IoT 플러그 앤 플레이 브리지</a> 데모를 참조하세요.</li>
+   <li>GitHub <a href="https://github.com/Azure/AzurePnPBridgepreview" target="_blank">IoT 플러그 앤 플레이 브리지를 사용해 보세요</a>.</li>
+   <li>Azure 지도 및 IoT 플러그 앤 플레이 위치 스키마를 사용하여 IoT <a href="https://aka.ms/am-lot-tutorial" target="_blank">공간 분석을 구현하는 방법을</a> 알아봅니다.</li>
+  </ul>

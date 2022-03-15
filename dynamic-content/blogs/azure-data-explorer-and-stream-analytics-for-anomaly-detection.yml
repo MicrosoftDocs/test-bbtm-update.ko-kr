@@ -1,0 +1,184 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f650d66b0a294731f9858ac6925642c14ce4d4d6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899355"
+Slug: azure-data-explorer-and-stream-analytics-for-anomaly-detection
+Title: 변칙 검색을 위한 Azure Data Explorer 및 Stream Analytics
+Summary: 변칙 검색은 금융 산업에 대한 사기 탐지, 병원의 건강 모니터링, 제조, 석유 및 가스, 유틸리티, 운송, 항공 및 자동차 산업의 결함 감지 및 운영 환경 모니터링과 같은 전 세계 많은 산업에서 중요한 역할을 합니다.
+Content: >-
+  <p>변칙 검색은 금융 산업에 대한 사기 탐지, 병원의 건강 모니터링, 제조, 석유 및 가스, 유틸리티, 운송, 항공 및 자동차 산업의 결함 감지 및 운영 환경 모니터링과 같은 전 세계 많은 산업에서 중요한 역할을 합니다.</p>
+
+
+  <p>변칙 검색은 예상 동작을 따르지 않는 데이터에서 패턴을 찾는 것입니다. 의사 결정자는 이를 감지하고 필요한 경우 사전 조치를 취할 수 있어야 합니다. 석유 및 가스 산업을 한 예로 사용하여 다양한 장비가 있는 심해 굴착 장치는 다양한 주파수와 형식으로 측정을 전송하는 수백 개의 센서에 의해 집중적으로 모니터링됩니다. 분석 또는 시각화는 기존 소프트웨어 플랫폼을 사용하기 어려우며, 변칙을 감지하지 못해 심해 석유 굴착 장치 플랫폼에서 비생절적인 시간은 매일 큰 재정적 손실을 의미할 수 있습니다.</p>
+
+
+  <p>기업은 Azure IoT, Azure Stream Analytics, Azure Data Explorer 및 기계 학습과 같은 새로운 기술을 사용하여 데이터를 수집, 처리 및 전략적 비즈니스 인텔리전스로 변환하여 탐사 및 생산을 개선하고 제조 효율성을 개선하며 안전 및 환경 보호를 보장해야 합니다. 또한 이러한 관리형 서비스는 고객이 소프트웨어 개발 시간을 크게 줄이고, 출시 시간을 가속화하고, 비용 효율성을 제공하고, 고가용성 및 확장성을 달성하는 데 도움이 됩니다.</p>
+
+
+  <p>Azure 플랫폼은 변칙 검색을 위한 많은 옵션을 제공하고 고객은 요구 사항에 가장 적합한 기술을 선택할 수 있지만, 고객은 각 솔루션에 가장 적합한 사용 사례에 대해 현장 설계자를 대상으로 질문했습니다. Well&rsquo;은 아래 질문에 대한 답변을 검토하지만, 먼저&rsquo; 몇 가지 정의를 알아야 합니다.</p>
+
+
+  <p><strong>시계열이란?</strong> 시계열은 시간 순서로 인덱싱된 일련의 데이터 포인트입니다. 석유 및 가스 산업에서 대부분의 장비 또는 센서 판독값은 시간 또는 깊이의 연속 지점에서 수행되는 시퀀스입니다.</p>
+
+
+  <p><strong>가산 시계열의 분해란?</strong> 분해는 아래 그래프와 같이 시계열을 구성 요소로 분리하는 작업입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec76de81-7289-4d68-b1ec-acbbbbccb073.jpg"><img alt="Decomposition is the task to separate a time series into components" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1c7c56dc-da3d-4812-92ff-bbc4cec86886.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="분해는 시계열을 구성 요소로 구분하는 작업입니다." width="601"></a></p>
+
+
+  <h2>시계열 예측 및 변칙 검색</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/79020b2b-0486-4808-97e3-89c215c9a3a4.png"><img alt="A graph showing a time series with forecasting." border="0" height="252" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/11ebdd30-471b-4e16-b9f9-6da1a224129a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="예측이 포함된 시계열을 보여 주는 그래프입니다." width="467"></a></p>
+
+
+  <p>변칙 검색은 대부분의 데이터 세트와 크게 다른 관찰을 식별하는 프로세스입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9df88f64-bfa9-409d-b6f4-219207668503.png"><img alt="A graph showing an anomaly detection example." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3c0da8eb-d648-48cd-8a1f-6d6550aa5e98.png" style="border: 0px currentcolor; border-image: none; width: 900px; height: 453px; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="변칙 검색 예제를 보여 주는 그래프입니다."></a></p>
+
+
+  <p style="text-align: center;">Azure Data Explorer의 변칙 검색 예제입니다.</p>
+
+
+  <ul>
+      <li>빨간색 선은 원래 시계열입니다.</li>
+      <li>파란색 선은 기준선(계절 + 추세) 구성 요소입니다.</li>
+      <li>보라색 포인트는 원래 시계열 위에 있는 비정상적인 점입니다.</li>
+  </ul>
+
+
+  <p>변칙을 검색하려면 아래 다이어그램에 설명된 대로 Azure Stream Analytics 또는 Azure Data Explorer를 실시간 분석 및 검색에 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd567ae4-20b5-4f74-926e-9eee15beef81.png"><img alt="A diagram showing an Azure powered pattern for real-time analytics." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a56a296f-ac16-4398-a30d-e2c38e6f5cb4.png" style="border: 0px currentcolor; border-image: none; width: 900px; height: 507px; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="실시간 분석을 위한 Azure 기반 패턴을 보여 주는 다이어그램"></a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/stream-analytics/" target="_blank">Azure Stream Analytics</a> 는 중요 업무용 워크로드용으로 설계된 사용하기 쉬운 실시간 분석 서비스입니다. 단 몇 번의 클릭으로 엔드 투 엔드 서버리스 스트리밍 파이프라인을 빌드하거나, SQL 사용하여 0에서 프로덕션으로 이동하거나, 고급 시나리오를 위해 사용자 지정 코드 및 기본 제공 기계 학습 기능을 사용하여 확장할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/data-explorer/" target="_blank">Azure Data Explorer</a> 는 애플리케이션, 웹 사이트, IoT 디바이스 등에서 대량의 데이터 스트리밍을 거의 실시간으로 분석하기 위한 빠르고 완전히 관리되는 데이터 분석 서비스입니다. 질문을 하고 실시간으로 데이터를 반복적으로 탐색하여 제품을 개선하고, 고객 환경을 개선하고, 디바이스를 모니터링하고, 작업을 강화하고, 데이터의 패턴, 변칙 및 추세를 빠르게 식별할 수 있습니다.</p>
+
+
+  <h2>Azure Stream Analytics 또는 Azure Data Explorer?</h2>
+
+
+  <h3>사용 사례</h3>
+
+
+  <p><b>Stream Analytics</b> 는 연속 또는 스트리밍 실시간 분석을 위한 것이며 집계 함수는 호핑, 슬라이딩, 연속 또는 세션 창을 지원합니다. JavaScript 또는 C#이 아닌 다른 언어로 UDF 또는 UDA를 작성하거나 솔루션이 다중 클라우드 또는 온-프레미스 환경에 있는 경우&nbsp; 사용 사례에 적합하지 않습니다.</p>
+
+
+  <p><b>데이터 탐색기는</b> 주문형 또는 대화형 근 실시간 분석, 대량의 데이터 스트림에 대한 데이터 탐색, 계절성 분해, 임시 작업, 대시보드 및 근 실시간에서 기록까지 데이터에 대한 근본 원인 분석을 위한 것입니다. 에지에 분석을 배포해야 하는 경우 사용 사례에 적합하지 않습니다.</p>
+
+
+  <h3>예측</h3>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-integration-tutorial" target="_blank">Azure Machine Learning Studio와 통합되는 Stream Analyticsjob</a><strong>&nbsp;</strong>을 설정할 수 있습니다.</p>
+
+
+  <p><b>데이터 탐색기는</b> 동일한 분해 모델을 기반으로 시계열을 예측하기 위한 네이티브 함수를 제공합니다. 예측은 예방 유지 관리, 리소스 계획 등과 같은 많은 시나리오에 유용합니다.</p>
+
+
+  <h3>계절성</h3>
+
+
+  <p><b>Stream Analytics</b> 는 슬라이딩 윈도우 크기의 제한과 함께 계절성 지원을 제공하지 않습니다.</p>
+
+
+  <p><b>데이터 탐색기는</b> 시계열의 마침표가 자동으로 검색되는 기능을 제공하거나 메트릭을 알고 있는 경우 메트릭에 특정 고유 기간이 있어야 하는지 확인할 수 있습니다.</p>
+
+
+  <h3>분해</h3>
+
+
+  <p><strong>Stream Analytics는 분해를 </strong>지원하지 않습니다.</p>
+
+
+  <p><strong>데이터 탐색기는</strong> 시계열 집합을 사용하고 각 시계열을 계절, 추세, 잔차 및 기준 구성 요소로 자동으로 분해하는 함수를 제공합니다.</p>
+
+
+  <h3>필터링 및 분석</h3>
+
+
+  <p><strong>Stream Analytics는 </strong>급증 및 급락 또는 변경 지점을 감지하는 함수를 제공합니다.</p>
+
+
+  <p><strong>데이터 탐색기는</strong> 시계열 집합에서 비정상적인 지점을 찾는 <a href="https://docs.microsoft.com/en-us/azure/data-explorer/time-series-analysis" target="_blank">분석</a> 과 변칙이 검색된 후 RCA(근본 원인 분석) 함수를 제공합니다.</p>
+
+
+  <h3>필터링</h3>
+
+
+  <p><strong>Stream Analytics는</strong> 참조 데이터, 느린 이동 또는 정적 필터를 제공합니다.</p>
+
+
+  <p><strong>데이터 탐색기는</strong> 두 가지 제네릭 함수를 제공합니다.<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; 이동 평균, 차별화, 도형 일치에 사용할 수 있는 FIR(유한 임펄스 응답)<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; 지수 평활화 및 누적 합계에 대한 IIR(무한 임펄스 응답)</p>
+
+
+  <h3>이상 감지</h3>
+
+
+  <p><strong>Stream Analytics는 </strong>다음에 대한 <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection" target="_blank">검색을 제공합니다.</a><br>
+
+  &bull;&nbsp;&nbsp;&nbsp; 급증 및 급락(임시 변칙)<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; 변경 지점(수준 또는 추세 변경과 같은 영구적 변칙)</p>
+
+
+  <p><strong>데이터 탐색기는</strong> 다음에 대한 <a href="https://docs.microsoft.com/en-us/azure/data-explorer/anomaly-detection" target="_blank">검색을 제공합니다.</a><br>
+
+  &bull;&nbsp;&nbsp;&nbsp;&amp; 향상된 계절 분해 모델(자동 계절성 검색, 학습 데이터의 변칙에 대한 견고성 지원)을 기반으로 급증합니다.<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; 분할된 선형 회귀별 변경점(수준 변화, 추세 변경)<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; KQL 인라인 Python/R 플러그 인은 Python 또는 R에서 구현된 다른 모델과의 확장성을 지원합니다.</p>
+
+
+  <h2>다음&#39;?</h2>
+
+
+  <div>
+
+  <div>
+
+  <p paraeid="{9250f76e-40bc-49d7-a52a-168c17ed6b03}{214}" paraid="1286605291">일반적으로 Azure Data Analytics는 각 워크로드에 대한 최상의 품종 기술을 제공합니다. 새로운 Real-Time Analytics 아키텍처(위 그림 참조)를 사용하면 변칙 검색을 포함한 스트림 및 시계열 분석을 위해 각 워크로드 유형에 가장 적합한 기술을 활용할 수 있습니다. 다음은 빠르게 시작하는 데 도움이 될 수 있는 리소스 목록입니다.</p>
+
+  </div>
+
+
+  <div>
+
+  <ul role="list">
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="6" role="listitem">
+      <p paraeid="{9250f76e-40bc-49d7-a52a-168c17ed6b03}{239}" paraid="410604765">아직&#39;않은 경우 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fazure-docs%2Fblob%2Fmaster%2Farticles%2Fstream-analytics%2Fstream-analytics-machine-learning-anomaly-detection.md&amp;data=02%7C01%7CJames.Ding%40microsoft.com%7Ca87b26b13a744741bd8108d751819747%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637067489340372085&amp;sdata=613rA9bEChOvz4axK2UNUIC3nQTJUEBjUgUvgIBhTiM%3D&amp;reserved=0" rel="noreferrer" target="_blank">Azure Stream Analytics에서 이 GitHub 리포지토리에서 변칙 검색을 확인하세요.</a></p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-font="Symbol" data-leveltext="" data-listid="6" role="listitem">
+      <p paraeid="{9250f76e-40bc-49d7-a52a-168c17ed6b03}{239}" paraid="410604765"><a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fazure-docs%2Fblob%2Fmaster%2Farticles%2Fdata-explorer%2Fanomaly-detection.md&amp;data=02%7C01%7CJames.Ding%40microsoft.com%7Ca87b26b13a744741bd8108d751819747%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637067489340377063&amp;sdata=ZNw%2B3yXc6H036kVoiEPOte75KHMS9ghRZALPjTamwUY%3D&amp;reserved=0" rel="noreferrer" target="_blank">Azure Data Explorer에서 변칙 검색 및 예측에</a> 대한 GitHub 리포지토리와 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fazure-docs%2Fblob%2Fmaster%2Farticles%2Fdata-explorer%2Ftime-series-analysis.md&amp;data=02%7C01%7CJames.Ding%40microsoft.com%7Ca87b26b13a744741bd8108d751819747%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637067489340382042&amp;sdata=icvuEc6iPQGZ%2FaKxQ%2FcceMxdf3OZ7RgosN6hEdOsk54%3D&amp;reserved=0" rel="noreferrer" target="_blank">Azure Data Explorer의 시계열 분석을 확인하세요</a>.&nbsp;</p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-font="Symbol" data-leveltext="" data-listid="6" role="listitem">
+      <p paraeid="{1d893899-04b1-4ae2-8e41-038f39eca8c0}{11}" paraid="1091938622"><a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fstream-analytics%2Fstream-analytics-machine-learning-anomaly-detection&amp;data=02%7C01%7CJames.Ding%40microsoft.com%7Ca87b26b13a744741bd8108d751819747%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637067489340387019&amp;sdata=xItQdrl%2FLu0CRLb0x1W3r6eCO23shXNNgT4I25qSJOw%3D&amp;reserved=0" rel="noreferrer" target="_blank">Azure Stream Analytics의 변칙 검색</a> 개요</p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Symbol" data-leveltext="" data-listid="6" role="listitem">
+      <p paraeid="{1d893899-04b1-4ae2-8e41-038f39eca8c0}{21}" paraid="1997174529"><a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fdata-explorer%2Fanomaly-detection&amp;data=02%7C01%7CJames.Ding%40microsoft.com%7Ca87b26b13a744741bd8108d751819747%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637067489340391997&amp;sdata=wK%2FzTTqKfPMJJ6D3pMCoTeMD6Q7e%2F1yFN9IW0idMbJg%3D&amp;reserved=0" rel="noreferrer" target="_blank">Azure Data Explorer의 변칙 검색 및 예측</a> 개요</p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Symbol" data-leveltext="" data-listid="6" role="listitem">
+      <p paraeid="{1d893899-04b1-4ae2-8e41-038f39eca8c0}{21}" paraid="1997174529">Azure Data Explorer 및 이 <a href="https://azure.microsoft.com/en-us/blog/time-series-analysis-in-azure-data-explorer/" rel="noreferrer" target="_blank">블로그</a><a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fdata-explorer%2Ftime-series-analysis&amp;data=02%7C01%7CJames.Ding%40microsoft.com%7Ca87b26b13a744741bd8108d751819747%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637067489340396976&amp;sdata=lgdtWcMRwjG%2BQDiqXq8bBdEzUSIrcrVPF4o1SgkWjeE%3D&amp;reserved=0" rel="noreferrer" target="_blank">의 시계열 분석에</a> 대한 설명서</p>
+      </li>
+      <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-font="Symbol" data-leveltext="" data-listid="6" role="listitem">
+      <p paraeid="{1d893899-04b1-4ae2-8e41-038f39eca8c0}{21}" paraid="1997174529">Kusto 쿼리 언어 및 <a href="https://docs.microsoft.com/en-us/azure/kusto/query/machine-learning-and-tsa" rel="noreferrer" target="_blank">시계열 분석에</a> 대한 설명서&nbsp;</p>
+      </li>
+  </ul>
+
+  </div>
+
+  </div>

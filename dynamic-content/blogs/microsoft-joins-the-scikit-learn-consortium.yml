@@ -1,0 +1,24 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a7083b49d6c0585283e760af3a2731da295cc63d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898341"
+Slug: microsoft-joins-the-scikit-learn-consortium
+Title: Microsoft, SciKit-learn 컨소시엄 가입
+Summary: 오픈 및 상호 운용 가능한 인공 지능에 대한 지속적인 노력의 일환으로 Microsoft는 SciKit-Learn 컨소시엄에 플래티넘 회원으로 가입하고 SciKit-Learn 파이프라인의 사용을 늘리기 위한 도구를 출시했습니다.
+Content: >-
+  <p>오픈 및 상호 운용 가능한 인공 지능에 대한 지속적인 노력의 일환으로 Microsoft는 <a href="https://scikit-learn.fondation-inria.fr/en/home/" target="_blank">SciKit-learn 컨소시엄</a> 에 플래티넘 멤버로 가입하고 SciKit-learn 파이프라인의 사용을 늘리기 위한 도구를 출시했습니다.</p>
+
+
+  <p>Python 과학 커뮤니티의 구성원에 의해 2007년에 처음 시작된 SciKit-learn은 사기 감지에서 프로세스 최적화에 이르는 시나리오를 위해 전 세계 많은 회사와 개인이 사용하는 일류 오픈 소스 라이브러리로 전환한 활성 개발자 커뮤니티를 유치했습니다. SciKit-learn&rsquo;이 놀라운 성공을 거둔 후, SciKit-learn 컨소시엄은 2018년 9월 프랑스 국립 컴퓨터 과학 연구 기관인 <a href="https://www.inria.fr/en/" target="_blank">Inria</a>에 의해 시작되어 도서관의 성장과 지속 가능성을 촉진하고 중앙 기여자를 고용하여 높은 기준을 유지하고 새로운 기능을 개발했습니다. 우리는 SciKit-learn 커뮤니티가 지금까지 달성 한 것을 매우 지지하며 계속 번창하고 확장하기를 원합니다. 새로 형성된 SciKit-learn 컨소시엄에 참여함으로써 SciKit-learn이 고품질 프로젝트로 유지되도록 하는 동시에 사용자 및 개발자의 멋진 커뮤니티와 함께 새로운 기능을 다룰 수 있도록 중앙 기여자를 지원할 것입니다.</p>
+
+
+  <p>SciKit-learn 개발을 지원하는 것 외에도 Scikit-learn 사용자가 자체 서비스 및 오픈 소스 프로젝트를 통해 학습 및 프로덕션 시나리오를 학습할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 고성능 플랫폼 간 <a href="https://github.com/microsoft/onnxruntime" target="_blank">ONNX 런타임</a>을 통해 유추 시나리오에서 SciKit-learn 사용에 대한 지원을 발표했습니다. <a href="https://github.com/onnx/sklearn-onnx/" target="_blank">SKlearn-ONNX</a> 변환기는 일반적인 SciKit-learn 파이프라인을 <a href="https://onnx.ai/" target="_blank">ONNX-ML</a> 표준 형식으로 직접 내보냅니다. 이렇게 하면 성능 및 이식성을 향상시키기 위해 ONNX 런타임이 있는 Linux, Windows 또는 Mac에서 이러한 모델을 사용할 수 있습니다.</p>
+
+
+  <p>또한 <a href="https://azure.microsoft.com/en-us/services/machine-learning-service/" target="_blank">Azure Machine Learning</a> SciKit-learn 교육을 강력하게 지원합니다. 이 서비스를 사용하면 기존 Scikit-learn 학습 스크립트를 사용하고, 클라우드로 학습을 확장하고, 하이퍼 매개 변수를 통해 자동으로 반복하여 모델을 조정하고, 최소한의 노력으로 실험을 기록할 수 있습니다. 또한 <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-automated-ml" target="_blank">자동화된 기계 학습</a> 기능은 학습 데이터 및 문제 시나리오에 따라 최상의 SciKit-learn 파이프라인을 자동으로 생성할 수 있습니다.</p>
+
+
+  <p>Microsoft는 개방형 상호 운용 가능한 AI 에코시스템에서 모든 플랫폼, 모든 언어를 사용하여 모든 개발자에게 AI를 발전시키는 것이 AI가 모든 사용자에게 더 접근 가능하고 가치 있게 되도록 하는 데 도움이 될 것이라고 믿습니다. SciKit-learn 컨소시엄의 일원이 되어 기쁘게 생각하고 Scikit-learn 개발자와 사용자의 환상적인 커뮤니티를 지원합니다.</p>

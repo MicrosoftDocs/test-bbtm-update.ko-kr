@@ -1,0 +1,38 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 86f8e0f9273cec49caca3c8f6f59296eb240e9c9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902821"
+Slug: announcing-the-general-availability-of-azure-data-box-disk
+Title: Azure Data Box Disk의 일반 공급 발표
+Summary: 미리 보기 발표 이후 수백 명의 고객이 반복 워크로드, 자동차에서 미디어 캡처, 진행 중인 백업에 대한 증분 전송 및 ROBO(원격/사무실 지점)에서 Microsoft Azure 보관으로 이동했습니다.
+Content: >-
+  <p>미리 보기 발표 이후 수백 명의 고객이 반복 워크로드, 자동차에서 미디어 캡처, 진행 중인 백업에 대한 증분 전송 및 ROBO(원격/사무실 지점)에서 Microsoft Azure 보관으로 이동했습니다. Azure로의 오프라인 데이터 전송을 위한 SSD 기반 솔루션인 <a href="https://aka.ms/databoxdiskga" target="_blank">Azure Data Box Disk</a>의 일반 공급에 대해 발표하게 되어 기쁩니다. Data Box Disk는 이제 미국, EU, 캐나다 및 오스트레일리아에서 사용할 수 있으며 시간이 지남에 따라 더 많은 국가/지역이 추가될 예정입니다. 또한 아래의 Azure Data Box에서 Blob Storage 대한 공개 미리 보기 발표를 놓치지 마세요.</p>
+
+
+  <h2>고객이 Data Box Disk를 사용하는 주요 세 가지 이유</h2>
+
+
+  <ol>
+      <li><strong>간편한 주문 및 사용</strong>: 각 디스크는 8TB SSD입니다. 주문당 총 용량 40TB에 대해 Azure Portal에서 최대 5개의 디스크 팩을 쉽게 주문할 수 있습니다. 작은 폼 팩터는 다양한 사용 사례에서 데이터를 수집하고 전송하기 위한 적절한 용량과 이식성의 균형을 제공합니다. Windows 및 Linux에 대한 지원을 사용할 수 있습니다.</li>
+      <li><strong>빠른 데이터 전송</strong>: 이러한 SSD 디스크는 USB 3.1 속도까지 데이터를 복사하고 SATA II 및 III 인터페이스를 지원합니다. 디스크를 드라이브로 탑재하고 Robocopy와 같은 원하는 도구를 사용하거나 끌어서 놓기만 하면 파일을 디스크에 복사할 수 있습니다.</li>
+      <li><strong>보안</strong>: 디스크는 128비트 AES 암호화를 사용하여 암호화되며 사용자 지정 암호로 잠글 수 있습니다. Azure에 대한 데이터 업로드가 완료되면 NIST 800 88-r1 표준에 따라 디스크가 정리됩니다.</li></ol>
+
+  <h2>지금 시작</h2>
+
+
+  <p>Data Box Disk는 현재 미국, EU, 오스트레일리아 및 캐나다에서 사용할 수 있으며 앞으로도 더 많은 카운티/지역으로 계속 확장할 예정입니다. 시작하려면 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fazure%2Fdatabox%2Fdata-box-disk-deploy-ordered&amp;data=02%7C01%7Cv-jujame%40microsoft.com%7C482b312fe2394ffa774f08d6750589b1%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636825063979962245&amp;sdata=DtTFWAGMv8eGbyMmGoQTkSwCaXkMFKanj3enzgkwmLc%3D&amp;reserved=0" target="_blank">온라인 자습서</a> 를 참조하고 지금 <a href="https://aka.ms/azuredatabox" target="_blank">Data Box Disk를 주문하세요</a> . 지원되는 운영 체제의 전체 목록은 "<a href="https://docs.microsoft.com/en-us/azure/databox/data-box-disk-system-requirements#supported-operating-systems-for-clients" target="_blank">Azure Data Box Disk 시스템 요구 사항</a>" 설명서에서 찾을 수 있습니다. 도구 집합에 대한 자세한 내용은 "<a href="https://docs.microsoft.com/en-us/azure/databox/data-box-disk-deploy-set-up" target="_blank">자습서: Azure Data Box Disk 압축 풀기, 연결 및 잠금 해제</a>" 설명서를 참조하세요.</p>
+
+
+  <h2>Azure Data Box에서 Blob Storage 발표 - 공개 미리 보기 사용 가능 </h2>
+
+
+  <p>또한 Azure Data Box Blob Storage 공개 미리 보기를 시작합니다. 이 기능을 사용하도록 설정하면 Blob 서비스 REST API를 사용하여 Data Box의 Blob Storage 데이터를 복사할 수 있습니다. Microsoft는 사용자가 선호하는 데이터 복사 도구를 사용할 수 있도록 이 공간에서 <a href="https://aka.ms/databox-partners" target="_blank">선도적인 파트너와</a> 협력하고 있습니다.</p>
+
+
+  <p>Data Box에서 Blob Storage 사용하는 방법에 대한 자세한 내용은 "<a href="https://docs.microsoft.com/en-us/azure/databox/data-box-system-requirements-rest" target="_blank">Azure Data Box Blob Storage 요구 사항</a>"에 대한 공식 설명서와 <a href="https://docs.microsoft.com/en-us/azure/databox/data-box-deploy-copy-data-via-rest" target="_blank">Azure Data Box Blob Storage REST API</a>를 통해 데이터를 복사하는 방법에 대한 자습서를 참조하세요.</p>
+
+
+  <p>Azure Data Box Disk 미리 보기에 참여해 주신 모든 분과 Data Box Heavy, Data Box Edge 및 Data Box Gateway를 비롯한 <a href="https://azure.microsoft.com/en-us/services/storage/databox/" target="_blank">Data Box 제품군</a> 의 다른 제품에 대한 미리 보기에 계속 참여해 주셔서 감사합니다. 앞으로 몇 달 안에 귀하의 제안에 따라 많은 향상된 기능을 만들 계획입니다. <a href="https://feedback.azure.com/" target="_blank">Azure 피드백</a>에 게시하여 귀중한 의견을 계속 제공하세요.</p>

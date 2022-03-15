@@ -1,0 +1,46 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a8f1a3d144cc879a928c18778008cef349549ead
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899096"
+Slug: announcing-service-monitor-alliances-for-azure-deployment-manager
+Title: Azure Deployment Manager에 대한 서비스 모니터 동맹 발표
+Summary: Azure Deployment Manager는 배포 기능을 크게 확장하는 Azure Resource Manager의 새로운 기능 집합입니다. 여러 지역에 배포해야 하는 복잡한 서비스가 있는 경우, 리소스가 서로 관련해서 배포되는 시기를 더 자세히 제어하거나 진행 중인 동안 이를 catch하여 잘못된 업데이트에 대한 고객의 노출을 제한하려는 경우 Deployment Manager가 사용자를 위한 것입니다.
+Content: >-
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/74c39475-8f30-4348-bc3c-04b02f97110d.png"><img alt="Stylized image of a cloud." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e0a4d0e0-a2f7-4d9d-9d62-563d3299744a.png" style="border-image: none 100% / 1 / 0 stretch; float: left; display: inline; background-image: none; border-width: 0px; border-style: solid; width: 154px; height: 155px; margin-left: 15px; margin-right: 15px;" title="클라우드의 양식에 일치시키는 이미지입니다."></a> Azure Deployment Manager는 배포 기능을 크게 확장하는 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview" target="_blank">Azure Resource Manager</a> 의 새로운 기능 집합입니다. 여러 지역에 배포해야 하는 복잡한 서비스가 있는 경우&rsquo;, 리소스가 서로 관련하여 배포되는 시기를 보다 세게 제어하거나 진행 중인 동안 고객을 catch하여 잘못된 업데이트에 대한 고객&rsquo; 노출을 제한하려는 경우&rsquo; Deployment Manager가 사용자를 위한 것입니다. Deployment Manager를 사용하면 리소스의 단계적 롤아웃을 수행할 수 있습니다. 즉, 지역별로 순서가 지정된 방식으로 배포됩니다.</p>
+
+
+  <p>Microsoft Build 2019 중에 배포 관리자가 이제 통합 상태 검사를 지원한다고 <a href="https://aka.ms/admhealthblog" target="_blank">발표</a> 했습니다. 즉, 출시가 진행됨에 따라 Deployment Manager가 기존 서비스 상태 모니터와 통합되고 배포 중에 서비스에서 허용되지 않는 상태 신호가 보고되면 배포가 자동으로 중지되고 문제를 해결할 수 있습니다.</p>
+
+
+  <p>건강 통합을 가능한&rsquo; 한 쉽게 만들기 위해 일부 최고 서비스 상태 모니터링 회사와 협력하여 배포와 상태 검사를 통합하는 간단한 복사/붙여넣기 솔루션을 제공했습니다. 상태 모니터를 아직 사용하지 않은 경우&rsquo; 다음을 시작하는 데 유용한 솔루션입니다.</p>
+
+
+  <table align="center" border="1" cellpadding="2" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle; text-align: center;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b67b09a6-7919-4d0f-b94d-aabae2e5f45e.png"><img alt="Datadog's logo." border="0" height="128" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6002a08a-cb51-4b3c-beef-a5d22b7a064d.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Datadog의 로고입니다." width="128"></a></td>
+     <td style="vertical-align: middle; text-align: center;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/abc475c3-d67e-4a20-b860-e4ff01e52fab.png"><img alt="The logo for Site 24x7." border="0" height="128" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53b965c5-e8eb-4cf4-b713-8e0156626b40.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="사이트 24x7의 로고입니다." width="128"></a></td>
+     <td style="vertical-align: middle; text-align: center;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/45855326-354f-43d9-80af-7babedff99ba.png"><img alt="Wavefront's logo." border="0" height="128" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7c7ee3b6-e59f-4d03-87b3-cce89082228a.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="웨이브프론트의 로고입니다." width="128"></a></td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;">최신 클라우드 환경을 위한 선도적인 모니터링 및 분석 플랫폼인 Datadog입니다. <a href="https://www.datadoghq.com/azure-deployment-manager/" target="_blank">Datadog가 Azure Deployment Manager와 통합되는</a> 방법을 알아보세요.</td>
+     <td style="vertical-align: middle;">Site24x7, 올인원 프라이빗 및 퍼블릭 클라우드 서비스 모니터링 솔루션입니다. <a href="https://www.site24x7.com/azure/adm.html" target="_blank">Site24x7이 Azure Deployment Manager와 통합되는</a> 방법을 알아보세요.</td>
+     <td style="vertical-align: middle;">다중 클라우드 애플리케이션 환경을 위한 모니터링 및 분석 플랫폼인 Wavefront. <a href="https://go.wavefront.com/wavefront-adm/" target="_blank">Wavefront가 Azure Deployment Manager와 통합되는</a> 방법을 알아보세요.</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>이러한 서비스 모니터는 Azure Deployment Managers&rsquo; 상태 통합 롤아웃 기능과 통합하는 간단한 복사/붙여넣기 솔루션을 제공하여 잘못된 업데이트가 사용자 기반 전체에 미치는 영향을 쉽게 방지할 수 있습니다. 곧 있을 Azure Monitor 통합&nbsp;에 대해 계속 지켜봐 주시기 바랍니다.</p>
+
+
+  <p>또한 Azure Deployment Manager는 더 이상 사용을 위해 등록할 필요가 없으며 이제 완전히 일반에 공개됩니다.</p>
+
+
+  <p>시작하려면 <a href="https://aka.ms/admtutorial" target="_blank">Resource Manager 템플릿(공개 미리 보기)</a>&rdquo;에서 Azure Deployment Manager 사용 자습서 &ldquo; 또는 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/deployment-manager-overview" target="_blank">Azure Deployment Manager를 사용하여 안전한 배포 사례 사용 설명서(공개 미리 보기)&rdquo;</a>를 확인하세요.&nbsp; &ldquo; 상태 통합 기능을 사용해 보려면 종단 간 연습을 위해 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/deployment-manager-tutorial-health-check" target="_blank">Azure Deployment Manager(공개 미리 보기)</a>&rdquo;에서 상태 검사 사용 자습서 &ldquo; 를 확인하세요.</p>
+
+
+  <p>&rsquo;Azure Deployment Manager에 사용해 볼 수 있게 되어 매우 기쁘고, 언제나처럼 <a href="https://feedback.azure.com/forums/281804-azure-resource-manager?category_id=362680" target="_blank">피드백</a>&nbsp;에 귀를 기울이고 있습니다.</p>

@@ -1,0 +1,123 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c06207eba5242a48e64abe0e9f88aa9f53220a2b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902593"
+Slug: driving-rapid-industry-digital-transformation-with-azure-resources-to-get-you-started
+Title: Azure를 사용하여 업계 혁신 추진 – 시작 – 버전 1
+Summary: Microsoft는 산업 과제를 해결하고, 새로운 기회를 창출하며, 모든 조직을 위한 디지털 트랜스포메이션을 추진하는 데 중점을 갖습니다. Microsoft의 전용 산업 리소스를 통해...
+Content: >-
+  <p>Microsoft는 산업 과제를 해결하고, 새로운 기회를 창출하며, 모든 조직을 위한 디지털 트랜스포메이션을 추진하는 데 중점을 갖습니다. Microsoft 및 프리미어 파트너의 전용 산업 리소스를 통해 새로운 솔루션, 콘텐츠 및 지침이 거의 매일 릴리스됩니다. 이 월간 블로그는 Azure가 일반적인 문제를 해결하고 다양한 산업에서 새로운 기회를 유도하는 방법에 초점을 맞춘 일련의 최신 리소스를 집계합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9081d29-4175-425e-9e7f-94abc66585bd.png"><img alt="image" border="0" height="312" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53dd08d7-4c13-49c2-b4b1-a62dbd55475e.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <h2>은행 및 자본 시장</h2>
+
+
+  <ul>
+   <li><a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Findustries%2Ffinancial%2Fbanking%2Fusecases%2F%3FWT.mc_id%3Dazmeetsaug-acomblog-martydon&amp;data=02%7C01%7C%7Cb75c4364bf8a41dd5bf408d602ecf3a9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636699614049423921&amp;sdata=muGg3MhaZcCbF1qoh5fWnyVFhVYp3Fx2qPNG5iJ%2Bg7c%3D&amp;reserved=0" target="_blank">사기 및 금융 범죄로부터 보호</a><br>
+  새로운 유형의 공격 벡터와 사기가 매일 등장하고 있으며 탐지 시스템은 그 어느 때보다 빠르게&nbsp; 대응해야 합니다. Azure 기계 학습 및 AI 솔루션이 위험으로부터 신속하게 감지하고 보호할 수 있는 방법을 보여주는 재무 리더의 은행 사례 연구 및 정보를 찾아보세요.</li>
+   <li><a href="https://azure.microsoft.com/blog/how-to-upgrade-your-financial-analysis-capabilities-with-azure/?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">Azure를 사용하여 재무 분석 기능을 업그레이드하는 방법</a><br>
+  기업 금융 및 투자 은행에서 위험 분석은 중요한 작업입니다. Azure를 사용하여 위험 평가 솔루션을 구현하는 방법을 읽어 봅니다.</li>
+
+  </ul>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/blog/lessons-from-big-box-retail/?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">빅 박스 소매에서 교훈</a><br>
+  은행 고객은 새로운 선택, 속도 및 맞춤형 권장 사항을 포함하여 서비스에서 더 많은 것을 원합니다. 최신 소매 환경이 어떻게 도움이 되는지 알아보세요.</li>
+
+  </ul>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/blog/microsoft-azure-launches-tamper-proof-azure-immutable-blob-storage-for-financial-services/?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">Microsoft Azure 금융 서비스에 대한 변조 방지 Azure 변경할 수 없는 Blob Storage 시작합니다.</a><br>
+  변경할 수 없는 Blob Storage 이제 금융 기관이 데이터를 삭제할 수 없고 다시 쓸 수 없는 형식 &ndash; 으로 추가 비용 없이 저장하고 보존할 수 있도록 공개 미리 보기 &ndash; 로 제공됩니다. 이제 소프트웨어 공급자와 파트너는 중요한 워크로드가 있는 레코드 보존 및 변경할 수 없는 스토리지를 위한 원스톱 상점 클라우드 솔루션으로 Azure를 사용할 수 있습니다.</li>
+
+  </ul>
+
+
+  <h2>의료 및 생명 과학</h2>
+
+
+  <ul>
+   <li><a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2FAZR311PAL-register&amp;data=02%7C01%7C%7Cb75c4364bf8a41dd5bf408d602ecf3a9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636699614049423921&amp;sdata=xKQH6pQFFuetXtyUf%2FTBtzPXzEj%2FlRRZPTbzQVLkZsQ%3D&amp;reserved=0" target="_blank">Microsoft Azure Blueprints를 사용하여 의료 분야의 AI(가속 AI)에 등록 -- 1부: 웹 세미나 시작</a>!<br>
+  인공 지능은 환자 체류 기간 예측에서 진단 이미징, 사기 방지 및 더 많은 사용 사례에 이르기까지 의료 서비스에 대한 주요 잠재력을 보유하고 있습니다. AI를 성공적으로 사용하려면 의료 분야에 프로젝트가 아닌 솔루션이 필요합니다. Microsoft Azure 청사진을 사용하여&nbsp; 이니셔티브를 가속화하여 의료 솔루션에서 AI에 대한 격차를 줄이는 방법을 알아봅니다. 청사진에는 예제 코드, 테스트 데이터, 보안 및 규정 준수 지원과 같은 리소스가 포함됩니다. 이 세션은 의료 제공자, 지불인, 제약 및 생명 과학 조직을 위한 것입니다.</li>
+   <li><a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Findustries%2Fhealthcare%2Fusecases%2F%3FWT.mc_id%3Dazmeetsaug-acomblog-martydon&amp;data=02%7C01%7C%7Cb75c4364bf8a41dd5bf408d602ecf3a9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636699614049433926&amp;sdata=4WyH0uQHptgpHnKNLejztOFojEuDcdHUb5q0Stt7Rd4%3D&amp;reserved=0" target="_blank">혁신적인 클라우드 기술을 적용하여 의료 개선</a><br>
+  의료 조직이 AI 및 기계 학습을 사용하여 환자 위험을 감지하고 개인 정보를 유지하고 사기로부터 보호하는 동시에 질병을 더 빠르게 식별하는 방법을 알아봅니다.</li>
+
+  </ul>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/blog/blockchain-as-a-tool-for-anti-fraud/?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">사기 방지를 위한 도구로서의 블록체인</a><br>
+  사기는 의료 비용 상승에 크게 기여합니다.&nbsp; 데이터 무결성을 충분히 보호하지 않으며 투명성이 부족하면 사기 행위가 가능합니다. 투명성 및 데이터 무결성을 해결하여 블록체인을 사용하여 사기 행위를 해결하는 방법을 살펴봅니다.</li>
+
+  </ul>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/blog/current-use-cases-for-machine-learning-in-healthcare/?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">의료 분야에서 기계 학습에 대한 현재 사용 사례</a><br>
+  지불인, 공급자 및 제약 회사는 모두 자신의 공간에서 적용 가능성을 보고 있으며 오늘날 ML 활용하고 있습니다. ML 주요 항목과 의료 분야에서 사용되는 방법에 대한 간략한 개요입니다.</li>
+
+  </ul>
+
+
+  <h2>보험</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/blog/iot-the-catalyst-for-better-risk-management-in-insurance/?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">IoT: 보험에서 더 나은 위험 관리를 위한 촉매제</a><br>
+  IoT(사물 인터넷), AI(인공 지능), Machine Learning(ML) 및 빅 데이터와 같은 새로운 기술은 보험사&ldquo;에게 위험을 보다 정확하게 평가하고, 위험을 지속적으로 관리하고, 실시간으로 위험을 완화할 수 있는 초강대국&rdquo;을 제공합니다.</li>
+
+  </ul>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/azure/architecture/example-scenario/ai/intelligent-apps-image-processing?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">Azure에서 보험 청구에 대한 이미지 분류</a><br>
+  이 예제 시나리오는 보험 청구에 대한 텍스트 및 이미지 분석과 같은 이미지를 처리해야 하는 비즈니스에 적용할 수 있습니다.</li>
+
+  </ul>
+
+
+  <h2>제조업</h2>
+
+
+  <ul>
+   <li>
+   <p><a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Findustries%2Fdiscrete-manufacturing%2Fusecases%2F%3FWT.mc_id%3Dazmeetsaug-acomblog-martydon&amp;data=02%7C01%7C%7Cb75c4364bf8a41dd5bf408d602ecf3a9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636699614049433926&amp;sdata=YH0Vwyz%2Bj2N2Ffab9XqiigpX6dfEq0vjdcVUCe1CnNE%3D&amp;reserved=0" target="_blank">IoT를 사용하여 비즈니스 기회 확장</a><br>
+  제조의 IoT는 데이터를 수집하는 것만이 아닙니다&rsquo;. &rsquo;비즈니스 목표를 달성하고 새로운 기회를 창출하는 데 도움이 되는 작업을 알리기 위한 인사이트를 얻는 방법을 설명합니다. 사용 사례, 사례 및 예제를 찾아 Azure IoT 도구가 제조업체가 운영에서 IoT를 최대한 활용하는 데 어떻게 도움이 되는지 알아봅니다.</p>
+   </li>
+   <li><a href="https://azure.microsoft.com/blog/foretell-and-prevent-downtime-with-predictive-maintenance/?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">예측 유지 관리를 사용하여 가동 중지 시간 예측 및 방지</a><br>
+  클라우드 스토리지, 기계 학습, 에지 컴퓨팅 및 사물 &ndash; 인터넷 예측 유지 관리의 발전으로 제조 산업의 다음 단계로 부상하고 있습니다.</li>
+
+  </ul>
+
+
+  <ul>
+   <li><a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Findustry%2Fmanufacturing%2Fcompute-in-manufacturing-overview%3FWT.mc_id%3Dazmeetsaug-acomblog-martydon&amp;data=02%7C01%7C%7C177422c482464c90b65c08d606c00be0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636703819230040126&amp;sdata=YK7Gv95p6i4duNwmSy%2BlJhwgAEpaXYC7EUuj%2FEVWykU%3D&amp;reserved=0" target="_blank">확장성 있는 주문형 고성능 컴퓨팅</a><br>
+  이 문서에서는 대규모 컴퓨팅 성능이 필요한 엔지니어링 및 제조 분야의 인기 있는 영역에 대해 설명하고 Azure 플랫폼이 어떻게 도움이 될 수 있는지 살펴봅니다.</li>
+
+  </ul>
+
+
+  <h2>소매 및 소비재</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/blog/azure-cloud-business-value-for-retail-and-consumer-goods-explained/?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">소매 및 소비재에 대한 Azure 클라우드 비즈니스 가치 설명</a><br>
+  소매점 및 소비자 브랜드가 클라우드로 이동하는 이유를 설명하고 이 여정을 시작하기 위한 권장되는 다음 단계를 제공합니다.</li>
+   <li><a href="https://azure.microsoft.com/blog/how-to-move-e-commerce-infrastructure-to-azure/?WT.mc_id=azmeetsaug-acomblog-martydon" target="_blank">전자 상거래 인프라를 Azure로 이동하는 방법</a><br>
+  이 문서에서는 대부분의 소매업체가 Azure로 마이그레이션을 계획할 때 직면하는 옵션과 결정에 대해 간략하게 설명합니다. 예를 들면 다음과 같습니다. <ul>
+    <li>클라우드에서 애플리케이션을 있는 그대로 다시 호스팅하나요? 인프라 비용을 즉시 절감할 수 있습니다.</li>
+    <li>또는 애플리케이션 리팩터링을 고려하시겠습니까? Azure PaaS(심지어 SaaS)로 전환하면 기능, 성능 및 확장성을 확장하는 새 서비스를 &mdash; 통합하는 기능이 향상됩니다.</li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <p>나는 소셜 미디어에 새로운 발전에 대해 정기적으로 게시합니다. 당신이 나를 따르고 싶다면, 당신은 <a href="https://www.linkedin.com/in/martydonovan/" target="_blank">링크드 인</a>에서 나를 찾을 수 있습니다.</p>

@@ -1,0 +1,114 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 41f6a4eb6d25aee076c15312b14a919a40835aec
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898510"
+Slug: announcing-the-new-and-improved-azure-log-analytics
+Title: 새롭고 향상된 Azure Log Analytics 발표
+Summary: Azure Log Analytics 서비스는 강력한 검색, 스마트 분석 및 더욱 심층적인 인사이트를 제공하는 기존 고객에 대한 업그레이드를 현재 출시하고 있습니다. 이 업그레이드는 Azure Application Insights 유사한 확장성이 뛰어난 데이터 저장소를 통해 제공되는 대화형 쿼리 언어 및 고급 분석 포털을 제공합니다.
+Content: >-
+  <p>Azure Log Analytics 서비스는 강력한 검색, 스마트 분석 및 더욱 심층적인 인사이트를 제공하는 기존 고객에 대한 업그레이드를 현재 &ndash; 출시하고 있습니다. 이 업그레이드는 <a href="https://azure.microsoft.com/en-us/services/application-insights/" target="_blank">Azure Application Insights</a> 유사한 확장성이 뛰어난 데이터 저장소를 통해 제공되는 대화형 쿼리 언어 및 고급 분석 포털을 제공합니다. 이렇게 하면 IT 운영 및 개발자를 위한 일관된 모니터링 환경이 만들어집니다.</p>
+
+
+  <p>출시 이후 가장 큰 업그레이드에서 새롭고 향상된 Azure Log Analytics는 언어 피드백에 요청된 모든 기능을 사용하여 단순하면서도 매우 강력한 쿼리 언어를 제공합니다. 지난 몇 달 동안 업그레이드에 대한 초기 액세스 권한이 있는 60명 이상의 고객과 긴밀히 협력해 왔으며, 새로운 언어의 향상된 경험과 기능에 대한 피드백은 매우 긍정적이었습니다. 여기에 그들의 따옴표의 일부입니다, 나는 당신과 함께 공유하고 싶습니다 :</p>
+
+
+  <p><em>&quot;해안의 마법사는 Azure Log Analytics 업그레이드에 대한 초기 액세스 권한을 얻을 수 있을 만큼 운이 좋았으며, 코드 베이스 및 환경 내에서 문제를 진단하고 전체 성능을 대규모로 볼 수 있는 능력에 중요한 역할을 했습니다. 포털 구현은 직관적이며 쿼리 언어를 매우 쉽게 이해할 수 있으며 IntelliSense 구현은 구체화되고 구현에 매우 유용합니다.&rdquo;&nbsp; </em></p>
+
+
+  <p style="text-align: right">&ndash;스콧 토마스, 인프라 &amp; 플랫폼 설계자, <a href="https://company.wizards.com/" target="_blank">해안의 마법사</a></p>
+
+
+  <p><em>&ldquo;방금 작업 영역을 업그레이드했고 새 쿼리 언어가 굉장합니다(지금까지). 쿼리가 빠르게 실행되고 IntelliSense가 정상적으로 작동하며, 이전에는 수행할 수 없었던 집계를&#39;수 있습니다. 이는 이전 쿼리 엔진보다 몇 년 앞서 있습니다. 브라 보!&rdquo; </em></p>
+
+
+  <p style="text-align: right">&ndash;Microsoft IT</p>
+
+
+  <p>&ldquo;<em>새 쿼리 언어를 사용하면 시각화에 필요한 모든 방식으로 Log Analytics 데이터를 조각화할 수 있습니다. 주요 이점에는 공용 구조체, 조인, 함수 및 변수를 사용하는 기능이 포함됩니다. 원래 쿼리 언어로는 불가능했던 쿼리를 만들 수 있었습니다. 업그레이드 환경이 원활했고 기존 쿼리가 자동으로 변환되었습니다. Log Analytics를 위해 개발한 사용자 지정 솔루션에서도 변환은 매우 간단했습니다.&rdquo; </em></p>
+
+
+  <p style="text-align: right">&ndash;Cameron Fuller, 솔루션 디렉터 &ndash; 출시, <a href="https://www.catapultsystems.com/" target="_blank">투석기 시스템</a></p>
+
+
+  <h2>업그레이드해야 하는 이유는 무엇인가요?</h2>
+
+
+  <p>이 업그레이드는 무한한 가능성을 열어주지만, 업그레이드 직후 사용할 수 있는 새로운 주요 기능 중 일부는 대부분의 경우 몇 초밖에 걸리지 않습니다.</p>
+
+
+  <h3>기본 제공 Smart Analytics를 사용하는 강력한 쿼리 언어</h3>
+
+
+  <p>쿼리 언어는 강력한 검색, 쿼리 시간 필드 추출, 계산 필드, 조인 및 공용 구조체뿐만 아니라 풍부한 <a href="https://docs.loganalytics.io/learn/tutorials/datetime_operations.html" target="_blank">날짜 시간 연산자</a>, <a href="https://docs.loganalytics.io/learn/tutorials/string_operations.html" target="_blank">문자열 연산자</a> 및 <a href="https://docs.loganalytics.io/learn/tutorials/json_and_data_structures.html" target="_blank">네이티브 JSON 지원을</a> 제공합니다. 쿼리 언어는 특히 동료와 쿼리를 공유하거나 라이브 사이트 지원 및 문제 해결을 위해 쿼리를 사용하는 경우 쿼리를 모듈화하는 매우 중요한 기능인 쿼리의 <a href="https://docs.loganalytics.io/queryLanguage/query_language_letstatement.html" target="_blank">let 문, 람다 식</a> 및 주석도 지원합니다. 쿼리 언어는 고객이 데이터에 대한 심층적인 인사이트를 얻을 수 있도록 유연한 <a href="https://docs.loganalytics.io/learn/tutorials/smart_analytics/autocluster.html" target="_blank">기계 학습 구문</a> 및 시계열 함수를 제공합니다. 예를 들어 <a href="https://docs.loganalytics.io/learn/tutorials/smart_analytics/make_series.html" target="_blank">시계열 함수는</a> 수백 대의 컴퓨터에서 CPU 성능을 분석하고 사용량 급증에 따라 상위 N을 선택하는 데 도움이 됩니다. 언어에는 다양한 다른 기능이 포함되어 있으며 <a href="https://docs.loganalytics.io/" target="_blank">, Azure Log Analytics</a> 리소스에서 추가로 탐색할 수 있습니다.</p>
+
+
+  <p>이제 시나리오의 컨텍스트에서 이러한 예제를 살펴보겠습니다&rsquo;. 아래 예제에 표시된 모든 쿼리는 이전 쿼리 언어에서 불가능했습니다.</p>
+
+
+  <p>이 쿼리는 IIS 호출 기간을 기준으로 SLA(서비스 수준 계약)가 충족되었는지 여부를 계산합니다. 직접 시도하려면 <a href="https://portal.loganalytics.io/demo#?q=H4sIAAAAAAAAA21RTU8CQQy9b7L%2FoUfWEBZiPBBdjHIwm2BiAonnOlOXkfkgs0XB8OOdAtFF7W1e3%2Bt77ZRl3YLbQUvx3SgCR8TGN4CwpvgaokOf0Pns7jbPynKKVm0sMgF6AaH2mragdx6dUWjtDpBhdOXAeE4T0bZ5ZomFu4ioVqShgvF4ML7Os%2BfLaV3PZ6HJsz18LCkSLIyjB%2FIUk4WGSQXYhN5IF%2BL9dMwDKnht2ASPNrWbSA3Kq%2F3HeQ%2FtxjmM5vOwwn0kVEvSlQobzz0xW%2BCKPExGw1RFP8%2BgU0nxSPyHfAMnNpzTOTDaqZBPkiKBLzt4Mb53tldfYhZn59Ridrwleg0qBWWS%2FLRlSsBa8TehOgWDCwkyGJY%2FxtCRyO9UnbtLax3DGymGX3G60%2FsHoZBjmkIROHHVEqMM%2FwL1gM4zLQIAAA%3D%3D" target="_blank">클릭하여 쿼리를 실행합니다</a>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f4f9ddd4-95f4-495b-927e-b067198adbfa.png"><img alt="2017-08-06_09h20_46" border="0" height="657" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f7b6ea14-60e4-423c-978a-9179711928c2.png" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="2017-08-06_09h20_46" width="1024"></a></p>
+
+
+  <p style="background: rgb(255,255,254); margin: 0px 0px 11px; line-height: 12pt">조인을 사용하는 이 예제에서는 마지막 날의 심각도 보안 경고 검색이 높은 컴퓨터의 누락된 보안 업데이트 목록을 보여 줍니다. 직접 시도하려면 <a href="https://portal.loganalytics.io/demo#?q=H4sIAAAAAAAAA4WQwUrEMBRF94X%2Bw6WrFpRhPiCCjKALcdPxA2Lzpn0zk6QmqWXEjzdtjVUQzCKQm3sf79zN5pF9gD2gpmZwHC547pUM5KHZezYtDtahsbofAjmPkUOHjtsOnt5oDviUlGdyAYoCNYGt8Xm2zMqzD4wdOcKeNd2TIRdVhRsB2dpyq6rVsSTqEC8IgeKJSJEqJoMftJaO3wlpR6EaO5hQ7jmcqbpK8pIRWp7IU%2FrFywW7L4xp2tGywYmNEmATNxoMvw6EMs8QT2rjLsEs8v8cP123Ux91qmmieYjFFcm08kzybPa7iUcsVBEorbF8fhPNz7%2BwKljzi7J39hgBruUoV982%2BwRracA69wEAAA%3D%3D" target="_blank">클릭하여 쿼리를 실행합니다</a>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/45251f50-4ebc-4ce1-bd34-e5339c0dc220.png"><img alt="2017-08-06_09h24_07" border="0" height="657" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e8a98303-406e-4d9f-a669-7b522d12a18c.png" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="2017-08-06_09h24_07" width="1024"></a></p>
+
+
+  <p>다음은 시계열 분석을 사용하여 여러 컴퓨터의 CPU 성능을 분석하고 가장 관련성이 큰 두 컴퓨터로 축소하는 또 다른 예입니다. 직접 시도하려면 <a href="https://portal.loganalytics.io/demo#?q=H4sIAAAAAAAAA11STUsDMRC9F%2FofHgVhC9svr7IHKSiCaGnVq6S70240m6zJbKvgj3eyW7vQU8LMm7yPyWy2Mo4DuCTcHvZYrl6xcx5GBUahfqAtFvNKDiZ%2FUAbKFmD1Sd0IuxrXyF1VN9IPOGouUTmZzUtl9zQdDgwxyBYvuqLMumMyvulqLAUfMcgWxakWWHnukZj0KEGsyO%2BGg18cS%2FKECLsnK12mAlviI5FFcn5iOj2xjvuZ5%2B0H5fykKiHNMFp5l1MIzo96yNI10eoZc4UzqqVsoZUEMAnktcSgDvtl3WRyJKfZN2UaGqOgnWoMZ3M4e6FWQm1N9WrT%2F4zSGPcY2x9R0qU6HMxmS2XyxshsgNGWsNMs4cRFkcrLuAqLQEbM9Xu53EVkDcbVFB3QNwshkvXmq1Ge0k1spG%2FKa2VzStfn20N0lFPN2tn0UbjvNEuiQNb5fxcp71FT0gXRpt19C%2FHQPotY8kJHvt2nyPE8HPwB0PsNZXsCAAA%3D" target="_blank">클릭하여 쿼리를 실행합니다</a>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/30dbf732-1b8a-4d25-856f-468d773b10c0.png"><img alt="2017-08-06_09h16_26" border="0" height="657" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/594f80f2-c8bd-4570-a1ba-29c23ebe1f1a.png" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="2017-08-06_09h16_26" width="1024"></a></p>
+
+
+  <h3>고급 분석 포털</h3>
+
+
+  <p>Advanced Analytics 포털은 문제 해결, 진단, 추세 분석 또는 빠른 시각화 만들기를 위한 대화형 임시 쿼리 작성에 가장 적합한 환경을 제공합니다. 이 게임 변경 환경은 컨텍스트 인식 구문 강조 표시 및 강력한 기본 제공 시각화가 포함된 여러 줄 편집 기능을 제공합니다. 쿼리를 저장 및 공유하고 데이터를 Excel 내보낼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/91e25c2f-ae0a-4081-a034-41e362a3fa98.png"><img alt="2017-08-06_08h50_49" border="0" height="611" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e85944e8-0831-4488-b044-8712c238f045.png" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="2017-08-06_08h50_49" width="1024"></a></p>
+
+
+  <h3>Azure Portal, Power BI Desktop 및 Microsoft Flow 커넥터 통합</h3>
+
+
+  <p>이제 한 번의 클릭으로 Analytics 포털에서 빠른 시각화를 만들고 시각화를 공유 Azure 대시보드에 고정합니다. 이렇게 하면 여러 작업 영역, Azure 리소스 및 애플리케이션에서 단일 창이 만들어질 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d07525c0-fced-4095-98c2-7d54234ad664.png"><img alt="2017-08-06_08h46_50" border="0" height="657" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ecc400b0-915e-4c90-889d-5841c27b3583.png" style="background-image: none; float: none; margin-left: auto; display: block; margin-right: auto; border-image: none" title="2017-08-06_08h46_50" width="1024"></a></p>
+
+
+  <p>이 업그레이드를 사용하면 애플리케이션 Insights와 동일한 유형의 통합인 <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-powerbi" target="_blank">Power BI Desktop</a> 훨씬 더 강력한 통합이 수행되었습니다. 추가 Power BI 시각화를 활용하고, <a href="https://powerbi.com/" target="_blank">PowerBI.com </a>동료와 게시 및 공유하고, 자동 일일 보고서를 사용하도록 설정할 수 있습니다. 마지막으로, 이제 <a href="https://aka.ms/loganalyticsflowconnector" target="_blank">Microsoft Flow 및 Azure Logic Apps</a> 통합하여 비즈니스 흐름, 알림 등을 만들 수 있습니다.</p>
+
+
+  <h2>업그레이드하는 방법</h2>
+
+
+  <p>이는 아마도 가장 간단한 업그레이드 프로세스입니다&rsquo;. 애플리케이션&rsquo; 내에서 업그레이드하라는 배너가 표시되고 한 번의 클릭으로 저장된 검색, 보기, 경고 및 컴퓨터 그룹과 같은 모든 아티팩트를 자동으로 변환하는 작업 영역 &ndash; 이 향상됩니다. 나중에 업그레이드되지 않은 모든 작업 영역이 새 쿼리 언어 및 플랫폼으로 자동으로 업그레이드됩니다. Azure 설명서에서 <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-log-search-upgrade" target="_blank">업그레이드 프로세스 및 FAQ</a> 에 대해 자세히 알아봅니다.</p>
+
+
+  <h2><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/25330b3e-f861-42a6-b9e7-fb773f1a30d1.png"><img alt="2017-08-04_23h32_24" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/014ba56e-2d83-4c1b-8c77-3963860da83b.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="2017-08-04_23h32_24" width="1024"></a></h2>
+
+
+  <h2>언어 설명서, 학습 도구 및 커뮤니티</h2>
+
+
+  <p>또한 로그 검색 페이지에서는 새 쿼리 언어를 학습하고 강화할 수 있는 이전 쿼리 언어와 함께 사용할 수 있는 환경을 제공합니다. 롤아웃 업그레이드와 자동 업그레이드의 주된 이유는 자신의 속도로 학습하고 진입할 시간을 주기 위해서입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d549a0d-6d06-4d5a-ac5f-915d1d3125ef.png"><img alt="2017-08-06_08h24_10" border="0" height="659" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5f09ac0e-6e9d-4ed7-b209-a7a06e329afe.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="2017-08-06_08h24_10" width="1027"></a></p>
+
+
+  <p><a href="https://docs.loganalytics.io/" target="_blank">언어 설명서 사이트에</a>는 광범위한 언어 참조, <a href="https://docs.loganalytics.io/learn/tutorials/getting_started_with_analytics_portal.html" target="_blank">자습서</a>, <a href="https://docs.loganalytics.io/examples/Log%20Analytics.html" target="_blank">예제</a> 및 <a href="https://docs.loganalytics.io/learn/cheatsheets/oql_to_azure_log_analytics.html" target="_blank">참고 자료가 포함되어 있습니다</a>. 모든 기능을 갖춘 데모 환경을 사용하면 쿼리를 사용해 볼 수 있습니다. 또한 쿼리 언어에 대한 질문과 함께 다른 제품 사용자뿐만 아니라 제품 팀과 상호 작용할 수 있는 <a href="https://aka.ms/azureloganalyticscommunity" target="_blank">커뮤니티 사이트</a> 도 시작됩니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>업그레이드를 통해 다양한 새로운 기능을 사용할 수 있으며 고객은 이미 이를 활용하고 있습니다. 지난 주 반 동안 소프트 출시 기간 동안 수백 명의 고객이 작업 영역을 업그레이드하기로 선택했으며, 총 1,000개 이상의 향상된 작업 영역이 있었습니다. 지금 작업 영역을 업그레이드하고 새로운 강력한 검색 및 쿼리 언어를 사용하여 데이터에 대한 심층적인 인사이트를 얻습니다. <a href="https://aka.ms/azr117pal-register" target="_blank">지금 등록</a> 하여 2017년 8월 17일에 웹 세미나에 참가하세요. 여기서 향상된 환경의 자세한 내용과 데모를 공유합니다.</p>

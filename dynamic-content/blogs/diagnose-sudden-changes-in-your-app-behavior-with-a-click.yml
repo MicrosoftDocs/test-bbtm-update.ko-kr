@@ -1,0 +1,41 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4017fb71d43b0e97ef3ba7f1adb81b135c76bfc8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903323"
+Slug: diagnose-sudden-changes-in-your-app-behavior-with-a-click
+Title: 클릭으로 앱 동작의 갑작스런 변화를 진단합니다.
+Summary: >
+  이제 앱의 원격 분석에서 급증 또는 단계를 쉽게 진단할 수 있습니다. Application Insights Analytics를 사용하여 시간이 지남에 따라 앱 메트릭을 탐색하는 경우 급증 또는 급락과 같은 갑작스런 변경이 강조 표시됩니다. 한 번의 클릭으로 스마트 진단은 변경 내용과 상관 관계가 있는 패턴(일반 값이 있는 일련의 데이터)을 찾고 그 이유를 설명합니다.
+Content: >-
+  <p>이제 앱의 원격 분석에서 급증 또는 단계를 쉽게 진단할 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/application-insights/app-insights-overview">Application Insights</a> <a href="https://docs.microsoft.com/azure/application-insights/app-insights-analytics">Analytics</a>를 사용하여 시간이 지남에 따라 앱 메트릭을 탐색하는 경우 급증 또는 급락과 같은 갑작스런 변경이 강조 표시됩니다. 한 번의 클릭으로 <em>스마트 진단</em> 은 변경 내용과 상관 관계가 있는 패턴(일반 값이 있는 일련의 데이터)을 찾고 그 이유를 설명합니다.</p>
+
+
+  <p>&rsquo;비정상적인 변경 내용이 포함된 시간 차트를 만든 후 강조 표시된 데이터 지점을 클릭합니다. <em>스마트 진단은 </em>불일치가 발생하는 패턴을 식별하는 데이터 불연속성을 &ndash; 설명하는 필터 패턴을 찾고, 격리하고, 필터를 사용 또는 사용하지 않고 결과를 표시합니다.</p>
+
+
+  <p><img alt="image" border="0" height="566" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b9328376-7fe4-4539-9907-4d6d3cef629b.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="888"></p>
+
+
+  <p>이 예제에서 앱의 새 릴리스로 인해 예외 비율이 급격하게 증가했습니다. <em>스마트 진단은</em> 변경의 특징을 나타내는 필터를 찾았습니다. 사용자가 브라우저 버전과 클라이언트 운영 체제의 특정 조합을 통해 특정 URL&nbsp;을 볼 때 추가 오류가 발생합니다. <em>스마트 진단은 </em>필터가 false 및 true인 결과를 표시하므로 필터에 따라 변경 내용이 얼마나 강하게 달라지는지 쉽게 확인할 수 있습니다. 이 경우 URL, 브라우저 또는 OS의 다른 조합과 함께 백그라운드 추세는 이전과 같이 계속되지만 모든 추가 오류는 문제 값에 기인합니다.</p>
+
+
+  <p>이 정보는 문제의 근본 원인에 대한 조사에 집중하는 데 도움이 됩니다.</p>
+
+
+  <p>자세히 알고 싶으세요?</p>
+
+
+  <ul>
+   <li><a href="https://go.microsoft.com/fwlink/?linkid=837671">분석의 <em>스마트 진단</em>에</a> 대해 자세히 알아봅니다.</li>
+   <li><a href="https://analytics.applicationinsights.io/demo?q=H4sIAAAAAAAAA3VSTY%2FTQAy991dYPXWlLf0QIO2KIiGWA3duiMPsxEnMzhe2p6WIH48nVUsuGylRNPOe3%2FOzN5vFZgPfRhL4VZHPIGM%2BCdgHdESgpMjOKx0RnsgNKYuSF%2BjRaWUE7xKMGIoBgTpMSv2Z0jBxOWc1QBWEPjM4EMUCP2uc0A3x8E5HKMi%2BEQNC7oHRbIgKdJWdUk5vmr9PvdkArildit%2Fcrk0lBDjnyhBzk%2FKVxdTy0QhNY6RhDPYqdlCy9XMV96NjBZc68IH8y6Tzuf01iZxeIZ%2FI5DqMOYmaQQRXNUdz6qGb5WOdSKEXnOozHtEFK%2Bh0qnq5YQzGF9DcoinoqbcigkO0NOZRNGOZaaBkMuat5xznFOtULKhG%2BdrGlVDhy%2B8SMlsETV8dD6gTd0YrbsBrFq6U1v%2Filv4C%2FsJpRJuwUrQTZ0P7eIDOHLeD1X67e7%2Fe7dbbB9htH%2Ffbu4vQDfvhFez%2B8a1h%2F1f3VSy%2BJ4Ol1oN8X4qN0qMZWv44HJanzKFLeJIltKcRpcbomP7gbHNkdV2Xe1uqO3g%2BwzOl1c3PvbmMlC7KjKlry2GX0w4s%2FgFoo5%2BhBAMAAA%3D%3D&amp;timespan=PT24H">샘플 데이터에 대한 <em>스마트 진단</em> 데모를 참조하세요</a>.</li>
+   <li>스마트 진단 짧은 비디오를 시청하세요.</li>
+  </ul>
+
+
+  <p><em>스마트 진단</em>은 현재 미리 보기로&rsquo; 제공되며, 스마트 <em>진단</em> 결과 탭 또는 분석 창의 오른쪽 위에서 웃는 얼굴 아이콘을 클릭하기만 하면 피드백을 &ndash; 얻을 수 있습니다.</p>

@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4928887f359c4e5a41385f429cab9df39a33b089
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898774"
+Slug: azure-analysis-services-adds-firewall-support
+Title: Azure Analysis Services는 방화벽 지원을 추가합니다.
+Summary: 고객은 새 방화벽 기능을 사용하여 원하는 원본에서만 네트워크 트래픽을 허용하도록 Azure AS(Azure Analysis Services) 서버를 잠글 수 있습니다. 방화벽 설정은 ...에서 사용할 수 있습니다.
+Content: >-
+  <p>Azure Analysis Services에 대한 방화벽 지원을 도입하게 되어 기쁘게 생각합니다. 고객은 새 방화벽 기능을 사용하여 원하는 원본에서만 네트워크 트래픽을 허용하도록 Azure AS(Azure Analysis Services) 서버를 잠글 수 있습니다. 방화벽 설정은 Azure AS 서버 속성의 Azure Portal에서 사용할 수 있습니다. 고객이 마찰 없이 Power BI 대시보드 및 보고서를 계속 사용할 수 있도록 <i>Power BI&rdquo; 액세스 허용</i>이라는 &ldquo; 미리 구성된 규칙이 기본적으로 사용하도록 설정됩니다. 방화벽 기능을 사용하도록 설정하고 구성하려면 Analysis Services 관리자의 권한이 필요합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e264b18b-723b-4d19-9161-239b7275dd1c.png"><img alt="Azure Analysis Services firewall support" border="0" height="956" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b1946949-7c0e-452f-ac9b-78c3d1baf125.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Azure Analysis Services 방화벽 지원" width="1614"></a></p>
+
+
+  <p>방화벽 설정에 IPv4 주소 목록과 IPv4 주소 범위를 추가하여 모든 클라이언트 컴퓨터에 액세스 권한을 부여할 수 있습니다. Azure PowerShell, AZURE CLI(명령줄 인터페이스), Azure Portal 또는 Resource Manager REST API와 함께 Resource Manager 템플릿을 사용하여 프로그래밍 방식으로 방화벽을 구성할 수도 있습니다. <a href="https://azure.microsoft.com/en-us/blog/">Microsoft Azure 블로그</a>의 향후 문서에서는 Azure Analysis Services 방화벽을 구성하는 방법에 대한 자세한 정보를 제공합니다.</p>
+
+
+  <p><a href="https://feedback.azure.com/forums/556165">피드백 포럼</a>에서 기능에 대한 고유한 아이디어를 제출하고 <a href="https://docs.microsoft.com/azure/analysis-services/analysis-services-overview">Azure Analysis Services</a>에 대해 자세히 알아보세요.</p>

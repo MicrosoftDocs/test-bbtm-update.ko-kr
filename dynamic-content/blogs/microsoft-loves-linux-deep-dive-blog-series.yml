@@ -1,0 +1,62 @@
+### YamlMime:Yaml
+ms.openlocfilehash: def71024dc33e953278ad70837be257692bc1406
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908863"
+Slug: microsoft-loves-linux-deep-dive-blog-series
+Title: Microsoft는 Linux를 좋아합니다. 심층 분석 블로그 시리즈
+Summary: 최근에 온-프레미스 데이터 센터에서 Linux 및 FreeBSD를 실행하고 관리하는 방법에 대한 12부로 구성된 블로그 게시물 시리즈를 완료했습니다.
+Content: >-
+  <p>Weve&rsquo;는 최근 온-프레미스 데이터 센터에서 Linux 및 FreeBSD를 실행하고 관리하는 방법에 대한 12부로 구성된 블로그 게시물 시리즈를 완료했습니다. 이 게시물은 Azure 블로그이지만 다음 두 영역에서 사용자와 관련이 있을 수 있습니다.</p>
+
+
+  <ol>
+   <li>Azure 퍼블릭 클라우드에서 실행되는 일부 요소와 데이터 센터 또는 호스트 데이터 센터에서 실행되는 다른 요소가 있는 하이브리드 환경이 있을 수 있습니다. Microsoft가 온-프레미스에서 Linux 워크로드를 사용하도록 설정하는 방법을 이해하는 것은 Azure에서 실행하는 Linux 워크로드에 유용한 도우미입니다.</li>
+   <li>Linux 및 FreeBSD 온-프레미스를 실행하고 관리하기 위한 많은 핵심 기능도 Azure에 표시됩니다. Azure는 Hyper-V를 기반으로 하기 때문에 Hyper-V에서 Linux를 실행하는 것은 Azure에서 Linux를 실행하는 데 기본 사항입니다. Hyper-V의 Linux 네트워킹 성능과 같은 측면은 Azure의 Linux 네트워크 성능에 직접 반영됩니다. Linux용 PowerShell DSC와 같은 관리 기술은 Azure Automation과 같은 Azure 제품에 표시됩니다. 이러한 핵심 기능을 이해하면 Azure 기능이 작동하는 방식을 알 수 있습니다.</li>
+  </ol>
+
+
+  <p>아래 시리즈를 확인하세요.</p>
+
+
+  <h2>개요</h2>
+
+
+  <ul>
+   <li><a href="https://blogs.technet.com/b/windowsserver/archive/2015/05/06/microsoft-loves-linux.aspx">Microsoft에서 Linux를 좋아합니다.</a></li>
+  </ul>
+
+
+  <h2>Hyper-V에서 게스트 운영 체제로 Linux 및 FreeBSD 실행</h2>
+
+
+  <ul>
+   <li>Microsoft에서 Linux 심층 분석 #1:&nbsp; Hyper-V의 Linux 및 FreeBSD 소개</li>
+   <li>Microsoft에서 Linux 심층 분석 #2:&nbsp; Linux 및 FreeBSD Integration Services 핵심 기능</li>
+   <li>Microsoft에서 Linux 심층 분석 #3:&nbsp; Linux 동적 메모리 및 라이브 백업 사용</li>
+   <li>Microsoft에서 Linux 심층 분석 #4:&nbsp; Linux 네트워크 기능 및 성능을 좋아합니다.</li>
+   <li>Microsoft는 Linux 심층 분석 #5:&nbsp; FreeBSD 개요 및 상태를 좋아합니다.</li>
+  </ul>
+
+
+  <h2>System Center 및 PowerShell DSC를 사용하여 Linux 및 UNIX 관리</h2>
+
+
+  <ul>
+   <li>Microsoft에서 Linux 심층 분석 #6:&nbsp; Linux 및 UNIX 시스템 관리 개요</li>
+   <li>Microsoft에서 Linux 심층 분석 #7:&nbsp; System Center Virtual Machine Manager Linux 관리</li>
+   <li>Microsoft에서 Linux 심층 분석 #8:&nbsp; Operations Manager를 사용한 Linux 및 UNIX 모니터링을 좋아합니다.</li>
+   <li>Microsoft에서 Linux 심층 분석 #9:&nbsp; 오픈 소스 미들웨어 모니터링을 좋아합니다.</li>
+   <li>Microsoft에서 Linux 심층 분석 #10:&nbsp; Linux 및 UNIX 서버에서 소프트웨어 구성 관리</li>
+   <li>Microsoft에서 Linux 심층 분석 #11:&nbsp; PowerShell DSC를 사용한 Linux 구성 관리 사용</li>
+  </ul>
+
+
+  <h2>요약</h2>
+
+
+  <ul>
+   <li>Microsoft에서 Linux 심층 분석 #12: 데이터 센터에서 Linux 및 FreeBSD 실행 및 관리 요약</li>
+  </ul>

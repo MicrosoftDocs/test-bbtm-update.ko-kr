@@ -1,0 +1,53 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fefcb7ba0c57e1fbbf34645c00241edcd02267e3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898920"
+Slug: integral-analytics-moves-to-azure-sql-data-warehouse-from-aws-redshift
+Title: 고성능을 위해 Integral Analytics가 AWS에서 Azure SQL Data Warehouse로 이동
+Summary: 태양 에너지의 공간에서 새로운 형태의 에너지와 기술 적 진보에 더 큰 초점을 맞추고, 전통적인 전력 유틸리티가 작동하는 세계는 상당한 변화를 겪고있다....
+Content: >-
+  <p>태양 에너지의 공간에서 새로운 형태의 에너지와 기술 적 진보에 더 많은 초점을 맞추고, 전통적인 전력 유틸리티가 운영되는 세계는 상당한 변화를 겪고있다. 정수 분석 기능을 통해 전력 유틸리티는 에코노메트릭 및 고객 소유 전력 자산과 같은 다른 데이터 원본을 활용하여 고객이 현재 전력을 사용하는 방법과 시간이 지남에 따라 사용량이 어떻게 변경될 수 있는지를 파악할 수 있도록 지원합니다. 이를 통해 전력 유틸리티는 적절한 수준의 리소스를 계획하고 미래를 위해 잘 배치할 수 있습니다. 예를 들어, 에코노메트릭 데이터를 기존 부하 데이터와 융합하면 유틸리티는 더 나은 계획을 위해 향후 전기 부하 증가에 대한 귀중한 통찰력을 얻을 수 있습니다.</p>
+
+
+  <p>Integral Analytics가 제공하는 솔루션의 핵심 부분에는 미터, 변압기 및 변전소의 텍스트 데이터 &ndash; 및 집계를 포함하여 최대 25TB의 데이터를 실행할 수 있는 엄청난 양의 데이터 워크로드에서 지능형 인사이트를 추출하는 작업이 포함됩니다.</p>
+
+
+  <p>IA(정수 분석)는 Amazon Redshift에 솔루션의 첫 번째 버전을 배포했지만 제품 및 비용과 관련된 제한 사항이 발생했습니다. IA의 경우 사용하지 않을 때 인스턴스를 일시 중지할 수 없는 것이 번거로움으로 판명되었습니다. IA는 백업을 위해 데이터의 스냅샷을 생성한 다음 전체 인스턴스를 제거해야 했습니다. 비용을 절감하기 위해 IA 팀은 Azure의 전체 제품을 훨씬 더 매력적으로 발견했습니다. IA가 Azure SQL Data Warehouse를 선택한 주요 이유 중 일부는 인스턴스 크기 조정의 용이성, 비용 최적화를 위해 인스턴스 일시 중지, .NET 도구 지원, 컴퓨팅 크기 조정의 유연성 및 스토리지를 개별적으로 지원하기 때문입니다. 또한 IA는 Azure Machine Learning 같은 고급 분석 도구의 간편한 통합에 깊은 인상을 받았습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/Xzg0sE8eoKU" width="560"></iframe></p>
+
+
+  <p>AWS에서 <a href="https://customers.microsoft.com/en-US/story/integral-analytics-switches-to-azure-for-high-performance-and-cost-effective-data-warehousing">Azure로의 정수 분석 스위치에</a> 대해 자세히 알아봅니다.</p>
+
+
+  <p>정보 기술, 정수 분석의 전무 이사 인 Bill Sabo의 말에 따르면, <em>&ldquo;SQL 데이터 웨어하우스의 일시 중지 및 재개 기능과 Azure Machine Learning 및 Data Factory와 같은 통합 서비스에 대해 알게되었을 때, 우리는 Amazon Redshift에서 전환하여 비용을 절감하고 보다 간단하게 사용하는 간단한 이유로 일주일 동안 7TB 이상의 압축되지 않은 데이터를 마이그레이션했습니다.  고급 분석을 위한 구현입니다. 비즈니스 인텔리전스 요구 사항을 충족하기 위해 한 달에 한두 번 데이터를 로드한 다음 고객을 위한 보고서를 작성합니다. 데이터 웨어하우스 서비스를 항상 실행하지 않는 것이 비즈니스와 수익의 핵심입니다.&rdquo;</em></p>
+
+
+  <p>IA는 Azure SQL Data Warehouse가 제공하는 차별화된 기능뿐만 아니라 Azure 내의 다양한 제품과 통합되어 데이터 스토리지 및 처리에서 고급 분석 및 지능형 인사이트에 이르는 전체 엔드-엔드 솔루션을 &ndash; 제공하기 때문에 Azure를 선택했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/add294bf-b1a3-4e74-b24e-28b68dea32e0.png"><img alt="Case Study AI Image" border="0" height="732" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1359adf2-c7ce-4491-9af4-c5493c4946f8.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="사례 연구 AI ImageQuoting" width="1341"></a> Kevin Kushman, COO, Integral Analytics &ndash; <em>&quot;Azure SQL Data Warehouse는 IT 에코시스템의 기본 부분입니다. Azure와 같은 클라우드 기반 데이터 솔루션은 Microsoft와 같은 데이터 집약적 회사에 매우 중요합니다.&quot;</em></p>
+
+
+  <p><a href="https://customers.microsoft.com/en-US/story/integral-analytics-switches-to-azure-for-high-performance-and-cost-effective-data-warehousing">Integral Analytics</a>에서 Azure SQL Data Warehouse를 사용하는 방법에 대해 자세히 알아봅니다.</p>
+
+
+  <p>완전 관리형 페타바이트 규모의 클라우드 데이터 웨어하우스 서비스를 아직 살펴보지 않은 경우 아래 링크에서 자세히 알아보세요.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p><a href="https://azure.microsoft.com/documentation/articles/sql-data-warehouse-overview-what-is/">Azure SQL Data Warehouse란?</a><br>
+
+  <a href="https://azure.microsoft.com/documentation/articles/sql-data-warehouse-best-practices/">데이터 웨어하우스 모범 사례 SQL</a><br>
+
+  <a href="https://azure.microsoft.com/documentation/videos/index/?services=sql-data-warehouse">비디오 라이브러리</a><br>
+
+  <a href="https://social.msdn.microsoft.com/Forums/en-US/home?forum=AzureSQLDataWarehouse">MSDN 포럼</a><br>
+
+  <a href="https://stackoverflow.com/questions/tagged/azure-sqldw">Stack Overflow 포럼</a></p>

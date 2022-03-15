@@ -1,0 +1,80 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 05144ae79d6e259f438b439526ddde9a6d5e51cf
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903008"
+Slug: ensuring-customer-success-introducing-the-azure-migration-program
+Title: '고객의 성공 보장: Azure 마이그레이션 프로그램 소개'
+Summary: 지난 7월에는 고객이 Azure로 마이그레이션할 수 있도록 돕는 방법을 공유했습니다. 현재는 기존 애플리케이션 및 시스템을 Azure로 마이그레이션하기 위한 모범 사례 기반 전체적인 환경을 통합하고 있습니다.
+Content: >-
+  <p>지난 7월에는 <a href="https://azure.microsoft.com/en-us/blog/announcing-new-offers-and-capabilities-that-make-azure-the-best-place-for-all-your-apps-data-and-infrastructure/">고객이 Azure로 마이그레이션할 수 있도록 돕는</a> 방법을 공유했습니다. 그 이후로 <a href="https://customers.microsoft.com/en-us/story/allscripts-partner-professional-services-azure" target="_blank">Allscripts</a>,&rsquo; <a href="https://customers.microsoft.com/en-us/story/chevron-mining-oil-gas-azure" target="_blank">Chevron</a>, <a href="https://customers.microsoft.com/en-us/story/jbhunt-travelandtransportation-azure" target="_blank">J.B. Hunt</a> 및 <a href="https://customers.microsoft.com/en-us/story/carlsberg-consumer-goods-azure" target="_blank">Carlsberg Beers</a>와 같은 조직과 함께 작업하는 엄청난 고객 응답을 살펴보며&rsquo; 고객의 요구에 대한 귀중한 통찰력을 얻었습니다. 현재는 기존 애플리케이션 및 시스템을 Azure로 마이그레이션하기 위한 모범 사례 기반 전체적인 환경을 통합하고 있습니다.&nbsp;</p>
+
+
+  <h2>Azure 마이그레이션 프로그램&nbsp;&nbsp;</h2>
+
+
+  <p>Azure 마이그레이션 프로그램에는 고객이 처음부터 끝까지 클라우드에 대한 성공적인 경로에 필요한 규범적인 조언, 리소스 및 도구가 포함되어 있습니다. 검증된 클라우드 채택 방법론, 도구, 리소스 및 모범 사례를 사용하여 고객은 Azure로의 이동이 성공하도록 보장할 수 있습니다. 이 프로그램을 통해 고객은 Microsoft 전문가 및 전문 마이그레이션 파트너와 협력하여 다음을 받습니다.</p>
+
+
+  <ul>
+      <li>검증된 Azure 방법론에 대한 <a href="https://azure.microsoft.com/en-us/cloud-adoption-framework/" target="_blank">클라우드 채택 프레임워크</a>를 기반으로 하는 Microsoft 전문가 및 <a href="https://www.microsoft.com/en-us/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e" target="_blank">전문 마이그레이션 파트너</a>의 <strong>큐레이팅된 단계별 지침</strong>입니다.</li>
+      <li>새로운 Azure 기술을 개발하고 장기적인 조직 준비 상태를 이어가기 위한 기본 및 역할별 과정으로 기술 <strong>기술 빌드</strong></li>
+      <li>워크로드를 평가하고 마이그레이션하는 <a href="https://azure.microsoft.com/en-us/services/azure-migrate/" target="_blank">Azure Migrate를 포함한 무료 Azure</a> <strong>마이그레이션 도구</strong>입니다. 또한 비용을 최적화하기 위해 <a href="https://azure.microsoft.com/en-us/pricing/details/cost-management/" target="_blank">Azure Cost Management</a> 를 무료로 제공합니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">Azure 하이브리드 혜택</a>, Windows Server 2008용 무료 <a href="https://www.microsoft.com/en-us/cloud-platform/extended-security-updates" target="_blank">확장 보안 업데이트</a> 및 SQL Server 2008을 포함한 <strong>마이그레이션 비용을 줄이기 위한 제품</strong>입니다.</li>
+  </ul>
+
+
+  <blockquote>
+
+  <p><em>&quot;AMP 프로그램은 특히 일반적으로 더 많은 시간이 걸리는 부분을 통해 마이그레이션의 초기 단계를 통해 고객을 더 빠르게 &ndash; 안내하고, 사람들이 클라우드 속도로 운영에 적응할 수 있도록 돕고, 기존의 온-프레미스 운영 모델과는 매우 다른 자동화된 프로세스 집합을 통해 고객을 얻을 수 있도록 도와줄 것입니다.&rdquo; &nbsp;&nbsp;</em></p>
+
+  </blockquote>
+
+
+  <p style="text-align: right;">&ndash; 알렉스 브라운, CEO, 10번째 진도</p>
+
+
+  <blockquote>
+
+  <p><em>&ldquo;우리는 다년간의 변환 과정을 진행 중이며 클라우드 마이그레이션은 중요한 첫 번째 단계입니다. Azure Migration Program은 요구 사항을 가장 잘 충족할 수 있도록 적절한 학습, 모범 사례 지침, 도구 및 전문 파트너를 제공했습니다. 중요한 것은 Microsoft는 우리와 함께 일할 준비가 되어 있었고 성공에 대한 깊은 헌신을 보여주었습니다.&rdquo;</em></p>
+
+  </blockquote>
+
+
+  <p style="text-align: right;">&ndash; 마크 건터, 캐나다 임페리얼 뱅크 오브 커머스, CIBC 인프라, 계획 및 엔지니어링 부사장</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>프로그램에 대해 자세히 알아보려면 이 <a href="https://youtu.be/wotqE1XQwn0">비디오를</a> 시청하여 혜택을 볼 수 있습니다. 자세한 내용은 2019년 7월 24일에 <a href="https://info.microsoft.com/ww-landing-move-to-the-cloud-with-the-azure-migration-program.html" target="_blank">웹 세미나에 등록</a> 할 수도 있습니다. &rsquo;지금 시작할 준비가 되면 <a href="https://azure.com/AMP" target="_blank">참가 요청을 제출할</a> 수 있습니다.</p>
+
+
+  <h2>Windows Server를 실행하고 다른 곳에서 SQL Server 이유는 무엇인가요?</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/thanks-for-10-years-and-welcome-to-a-new-chapter-in-sql-innovation/" target="_blank">SQL Server 2008년 지원 종료는 2019년 7월 9일이고</a> Windows Server 2008 지원 종료는 2020년 1월 14일입니다. 대부분의 고객은 여러 가지 이유로 Windows Server 및 SQL Server 워크로드의 대상으로 Azure를 선택합니다.</p>
+
+
+  <ul>
+      <li><strong>탁월한 혁신.</strong> Azure는 앱, 데이터 및 인프라에서 혁신적이고 완전히 관리되는 기능을 제공합니다. <a href="https://azure.microsoft.com/en-us/services/app-service/" target="_blank">Azure App Service</a>는 고급 DevOps 기능을 갖춘 인기 있는 앱 프레임워크를 지원하여 고객에게 생산성이 높은 앱 마이그레이션 환경을 제공합니다. <a href="https://azure.microsoft.com/en-us/services/sql-database/" target="_blank">Azure SQL Database 관리되는 인스턴스</a>는 상록 SQL 제공하며, 고객이 코드를 변경하지 않고도 SQL Server 워크로드를 마이그레이션할 수 있도록 포괄적인 SQL Server 엔진 호환성과 함께 패치하거나 업그레이드할 필요가 없습니다. 마지막으로, <a href="https://azure.microsoft.com/en-us/overview/what-is-azure/iaas/" target="_blank">Azure IaaS</a> 는 54개 지역의 글로벌 범위를 사용하여 마이그레이션된 워크로드에 대한 모든 인프라 요구를 충족할 수 있습니다.</li>
+      <li><strong>타의 추종을 불허하는 보안. </strong> Azure를 사용하면 다른 환경보다 구현하기 쉽고 훨씬 포괄적인 <a href="https://azure.microsoft.com/en-us/blog/customers-get-unmatched-security-with-windows-server-and-sql-server-workloads-in-azure/" target="_blank">보안 태세</a>&rsquo;를 구현할 수 있으므로 마이그레이션된 워크로드를 안전하고 잘 관리할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">Azure Security Center</a>를 사용하면 고객은 하이브리드 환경에서 기본 제공 보호를 받을 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/blueprints/" target="_blank">Azure Blueprints를</a> 사용하면 고객이 워크로드 전체에서 보안 정책을 빠르고 대규모로 쉽게 정의하고 적용할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/azure-sentinel/" target="_blank">Azure Sentinel</a> 을 사용하면 엔터프라이즈 전체에서 고급 보안 위협 헌팅 및 완화를 수행할 수 있습니다.</li>
+      <li><strong>타의 추종을 불허하는 제안.</strong> AWS는 Windows Server 및 SQL Server Azure보다 <a href="https://azure.microsoft.com/en-us/overview/azure-vs-aws/cost-savings/" target="_blank">5배 더 비쌉다</a>. 고객은 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">Azure 하이브리드 혜택 및 무료</a> 확장 보안 업데이트와 같은 고유한 제품을 Azure에서만 활용하여 상당한 절감 <a href="https://www.microsoft.com/en-us/cloud-platform/extended-security-updates" target="_blank">액을 실현하고 있습니다</a> .</li>
+  </ul>
+
+
+  <h2>Azure Migrate &ndash; 모든 마이그레이션 요구 사항에 대한 단일 대상</h2>
+
+
+  <p>Azure Migrate 도구 집합은 Azure 및 파트너 마이그레이션 도구에서 통합된 통합 환경을 제공하므로 고객은 마이그레이션 시나리오에 적합한 도구를 식별할 수 있습니다. 서버 평가, 서버 마이그레이션, 데이터베이스 마이그레이션 서비스 및 App Service Migration Assistant 같은 Azure 도구는 이제 Azure Migrate의 일부입니다. Carbonite, Cloudamize, Corent, Device42, Turbonomic 및 UnifyCloud와 같은 Azure 파트너 도구는 이제 추가 통합을 통해 <a href="https://aka.ms/NewAzureMigrate" target="_blank">Azure Migrate와 통합</a> 됩니다. 또한 에이전트 없는 마이그레이션을 사용하도록 설정하고 Hyper-V 평가에 대한 지원을 추가했습니다. <a href="https://aka.ms/NewAzureMigrate" target="_blank">자세한 내용을 알아보</a> 고 새 <a href="https://youtu.be/wFfq3YPxYHE" target="_blank">Azure Migrate 비디오를</a> 시청하세요.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <p>우리 앞에 놓여있는 집단적 기회에 대해 더 흥분할 수 없었고&rsquo; 고객이 자신있게 계획하고 Azure로 마이그레이션할 수 있도록 돕기를 기대합니다.</p>
+
+
+  <p>오늘 시작하려면 <a href="https://azure.com/migrate" target="_blank">Azure 마이그레이션 센터를</a> 방문하세요.</p>

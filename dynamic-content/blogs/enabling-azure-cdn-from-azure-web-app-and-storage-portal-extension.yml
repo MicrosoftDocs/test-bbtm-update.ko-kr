@@ -1,0 +1,46 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 12605a2ecde3f1ed3b5ca104e810b4bd126a2147
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899000"
+Slug: enabling-azure-cdn-from-azure-web-app-and-storage-portal-extension
+Title: Azure 웹앱 및 스토리지 계정 포털 확장에서 Azure CDN 사용
+Summary: Azure CDN
+Content: >-
+  <p>Azure 워크플로에 CDN 사용하도록 설정하면 이 새로운 통합이 그 어느 때보다&nbsp; 쉬워집니다&nbsp;. 이제 포털 환경을 벗어나지 않고 Azure 웹앱 서비스&nbsp;자 Azure Storage 계정에 대해 CDN 사용하도록 설정하고 관리할&nbsp; 수 있습니다.</p>
+
+
+  <p>미디어 이벤트에 대한 스트리밍 엔드포인트를 다운&nbsp;로더용 스토리지 계정인 웹 사이트가 있는 경우 확장성과 향상된 성능을 위해 솔루션에 CDN 추가하여 이러한 Azure 워크플로에 대한 CDN 사용 환경을 쉽게 만들 수 있습니다&nbsp;. Azure Portal CDN 확장에서 CDN 엔드포인트를 만들 때 구독 내에서 사용 가능한 모든 Azure 웹앱, 스토리지 계정 및 클라우드 서비스를 나열하는 원본 유형을&quot; 선택할 &quot;수 있습니다. 통합을 향상시키기 위해 <a href="https://azure.microsoft.com/en-us/blog/standardstreamingendpoint/">먼저Azure 미디어 서비스와</a> CDN 통합&nbsp;을 시작&nbsp;했습니다. Azure Media Services 포털 확장에서 한 번의 클릭으로 스트리밍 엔드포인트에 대한 CDN 사용하도록 설정할 수 있습니다. 이제 이 통합을 웹앱 및 스토리지 계정으로 확장했습니다.</p>
+
+
+  <p>&nbsp;<a href="https://portal.azure.com">Azure Portalweb</a>&nbsp; <u>앱 서비스</u> 또는 <u>스토리지 계정</u> 확장으로 이동하여 리소스를 선택한 다음 메뉴에서 CDN&quot; 검색&quot;하고 CDN 사용하도록 설정합니다. CDN&nbsp; 사용 가능에 대한 정보는 거의 필요하지 않습니다. CDN&nbsp; 사용하도록 설정한 후 엔드포인트를 클릭하여 이 확장에서 직접 구성을 관리&nbsp;합니다.</p>
+
+
+  <p><strong>Azure Storage 계정 포털 확장에서:</strong></p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/528c8ed1-2f8f-4e7f-a4ab-ce6bca7d95de.png"><strong>FromAzure&nbsp; 웹앱&nbsp; 서비스 포털 확장:</strong></p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/31089bad-bf0a-450f-9cc0-80412ed06318.png"></p>
+
+
+  <p><strong>Azure 웹앱 또는 스토리지 포털 확장에서 CDN 직접 관리합니다.</strong></p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b68668b7-018e-4daf-ae83-28d897b63f03.png"></p>
+
+
+  <h2>추가 정보</h2>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint">Azure CDN 사용</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn">Azure CDN Azure Storage 계정 통합</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/app-service-web/cdn-websites-with-cdn?toc=%2fazure%2fcdn%2ftoc.json">웹앱에서 Azure CDN 사용</a></li>
+  </ul>
+
+
+  <p>Azure CDN 보고 싶은 기능이&#39;있나요?&nbsp; 피드백을 보내주세요!</p>

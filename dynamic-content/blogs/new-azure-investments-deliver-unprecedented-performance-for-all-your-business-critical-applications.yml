@@ -1,0 +1,89 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 51ca76fa8175dd03fb93044362fd1e55996dc4a0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908849"
+Slug: new-azure-investments-deliver-unprecedented-performance-for-all-your-business-critical-applications
+Title: 새로운 Azure 투자는 모든 중요 비즈니스용 애플리케이션에 전례 없는 성능을 제공합니다.
+Summary: 고객의 디지털 트랜스포메이션 여정에 더욱 힘을 실어주는 주요 Azure 인프라 개선 사항을 강조하고 있습니다.
+Content: >-
+  <p>경기장에서 극장 운영, 냉장고, 자동차에 이르기까지 우리 삶의 모든 차원에 기술이 주입되고 있으며, 기술은 우리가 하는 모든 일의 중심에 있습니다. 더&rsquo; 이상 디지털 방해 요인인 유니콘이 아닙니다. 모든 비즈니스는 기술을 활용하고 고객 연결, 만족도 및 수익성을 높이려고 합니다. <a href="https://customers.microsoft.com/story/724138-bp-infrastructure-energy-azure" target="_blank">BP</a>, <a href="https://azure.microsoft.com/case-studies/customer-stories-lufthansa/" target="_blank">루프트한자</a> 및 <a href="https://customers.microsoft.com/story/team-rubicon-nonprofit-dynamics-365" target="_blank">Team Rubicon</a>과 같은 조직은 Azure 인프라를 사용하여 비즈니스를 최적화하고 혁신하며, 직원 생산성을 높이고 고객에게 더 나은 서비스를 제공하는 새로운 방식으로 고객 서비스, 물류 및 서비스 제공을 연결하는 새로운 애플리케이션을 구축하고 있습니다.</p>
+
+
+  <p>Microsoft Ignite에서 이번 주에는 고객의&rsquo; 디지털 변환 여정을 더욱 강화하는 주요 Azure 인프라 개선 사항을 다시 강조 표시할&#39;있습니다.</p>
+
+
+  <h2>모든 워크로드에 대한 성능 향상 및 비용 절감</h2>
+
+
+  <p>Azure는 소규모에서 업계&rsquo; 최대 규모의 VM(가상 머신)에 이르기까지, <a href="https://azure.microsoft.com/overview/azure-vmware/" target="_blank">네이티브 VMware 워크로드</a>, <a href="https://azure.microsoft.com/services/netapp/" target="_blank">NetApp에서 제공하는 엔터프라이즈급 파일</a> 및 최대 120TB SAP 스케일 아웃 배포를 지원할 수 있는 용도로 빌드된 하드웨어에 이르기까지 가장 광범위한 컴퓨팅 제품 포트폴리오를 보유하고 있습니다<i>.</i> Coca-Cola Bottler용 서비스 암인 <a href="https://customers.microsoft.com/story/cona-services-partner-professional-services-azure" target="_blank">CONA Services</a>는<a href="https://azure.microsoft.com/solutions/sap/" target="_blank"> Azures에서 가장 큰 SAP HANA 클라우드 배포 중 하나인 특수 목적 SAP HANA 인프라에서&rsquo;</a> 40TB 중요 시스템을 실행합니다. 컴퓨팅 포트폴리오를 보완하기 위해 현재 클라우드에서 가장 빠른 디스크 중 하나인 Azure Ultra Disks를 포함하여 최고 성능 디스크 중 하나를 제공하여 최대 160,000 IOPS를 제공합니다.</p>
+
+
+  <p>고객은 이전에 비용이 많이 들거나 단순히 불가능했던 새로운 고성능 시나리오를 해결하고 있습니다. 새로운 Azure HB 및 HC Virtual Machines를 통해 Azure는 클라우드에서 긴밀하게 결합된 대규모 워크로드에 대해 전례 없는 성능, 확장성 및 비용 효율성으로 고성능 컴퓨팅을 민주화하고 있습니다. InfiniBand 네트워킹은 업계에서 가장 낮은 대기 시간과 가장 높은 대역폭을 제공하며 단일 MPI 기반 애플리케이션에 대해 최대 23,000개의 코어에 대한 고객 워크로드를 지원합니다. 이는 클라우드의 다른 어느 곳에서나 발견되는 것보다 10배 더 높습니다. 200기가비트 InfiniBand를 갖춘 최초의 Azure Virtual Machine인 HBv2를 사용하여 Azure는 작업당 최대 80,000개의 코어 워크로드를 지원합니다.&nbsp;</p>
+
+
+  <p>또한 고객이 더 많은 Windows Server 및 Linux 워크로드를 Azure로 이동하는 것을 볼 수 있습니다. 현재 Azure&rsquo; 컴퓨팅의 50% 이상이 Linux 워크로드를 실행합니다. Windows Server 및 SQL 경우 30% 더 많은 기업이 다음 주요 클라우드 공급업체보다 Azure를 선택합니다. Azure SQL Managed Instance, App Service 및 Windows Virtual Desktop과 타의 추종을 불허하는 보안 및 원활한 하이브리드 기능으로 탁월한 혁신을 제공하여 Azure를 <a href="https://azure.microsoft.com/campaigns/best-on-azure/" target="_blank">Windows 및 SQL Server 워크로드에 가장 적합한 클라우드로 만듭니다</a>. 성능과 관련하여 Azure SQL Database <a href="https://azure.microsoft.com/blog/azure-sql-database-continuous-innovation-and-limitless-scale-at-an-unbeatable-price/" target="_blank">AWS RDS에 비해 최대 86% 더 적은 비용이 들</a>면서 중요 비즈니스용 워크로드의 가격 성능 선두 주자입니다.</p>
+
+
+  <p>Microsoft Ignite에서는 더 광범위한 고객 시나리오에 맞게 컴퓨팅, 스토리지 및 네트워킹 제품을 확장하고 있습니다. 중요 사항은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>&nbsp;메모리 집약적 워크로드를 위한 Ea v4 및 Eas v4 Azure Virtual Machine 시리즈의 일반 공급 및 범용 애플리케이션을 위한 Da v4 및 Das v4 Azure Virtual Machine 시리즈. 이러한 새로운 Azure Virtual Machines는 클라우드에서 가장 먼저 최신 AMD EPYC&trade; 7452 프로세서를 제공합니다.</li>
+      <li>&nbsp;가상 데스크톱 및 HPC 워크로드를 지원하기 위한 NVv4 및 HBv2 VM 시리즈의 미리 보기입니다. 이러한 새로운 Azure Virtual Machines는 최신 AMD EPYC&trade; 7742 프로세서를 제공합니다. NVv4는 시각화 워크로드를 수행하는 가장 비용 효율적인 방법으로 설계되었으며 소수 GPU가 있는 VM(1/8번째 GPU)을 지원합니다. NVv4는 AMD RADEON INSTINCT&trade; GPU를 제공하는 Azures&rsquo; 최초의 시각화 최적화 VM이며, HBv2는 200기가비트 InfiniBand 네트워킹을 제공하는 Azures&rsquo; 최초의 HPC VM입니다.</li>
+      <li>&nbsp;가장 까다로운 기계 학습 모델 및 분산 AI 학습 워크로드를 지원하기 위한 NDv2 VM 시리즈의 미리 보기입니다. 이러한 업데이트된 VM은 각각 32GB 메모리가 있는 8개의 NVIDIA Tesla V100 NVLINK 상호 연결된 GPU를 제공합니다.</li>
+      <li>&nbsp;예측하기 낮은 트래픽 패턴으로 워크로드를 클라우드로 마이그레이션하는 고객에게 더 낮은 비용을 제공하기 위해 Premium SSD, 표준 SSD 및 울트라 디스크에서 새롭고 작은 4, 8 및 16GB 크기의 미리 보기입니다.</li>
+      <li>&nbsp;뾰족한 워크로드에 대해 최대 30배 성능의 적용 가능한 Premium SSD의 새로운 버스팅 기능 미리 보기</li>
+      <li>&nbsp;로깅, 계층화 및 Event Grid 통합을 포함하여 Azure ADLS(Data Lake Storage) Gen2를 사용하여 핵심 Blob 기능을 제공하는 ADLS 다중 프로토콜 액세스의 미리 보기로 엔터프라이즈 통합을 향상합니다.</li>
+      <li>&nbsp;Office 365 같은 Azure 및 SaaS 서비스에 액세스하기 위한 인터넷 우선 네트워크 전략으로 고객을 대상으로 하는 Azure Peering Service의 미리 보기입니다. 이제 고객은 인터넷 서비스 공급자와의 파트너십을 통해 글로벌 네트워크를 활용하여 Microsoft 서비스 안정적이고 최적화된 인터넷 연결을 가능하게 할 수 있습니다.</li>
+      <li>&nbsp;Azure ExpressRoute에 대한 위성 지원을 일반 공급하여 서비스를 산업 전반의 많은 고객에게 중요한 도달하기 어려운 영역으로 확장합니다.</li>
+      <li>&nbsp;Azure Bastion의 일반 공급으로 Azure는 Azure의 인프라에 배스천 호스트를 빠르고 간단하게 배포하여 이 기능을 플랫폼에 통합된 최초의 퍼블릭 클라우드로 만듭니다.<a name="_GoBack"></a></li>
+  </ul>
+
+
+  <h1>모든 워크로드에 대한 타의 추종을 불허하는 보안 및 간소화된 확장성</h1>
+
+
+  <p>전 세계 54개 지역을 통해 6개 대륙의 다른 클라우드 공급자보다 더 많은 지역을 제공합니다. Microsoft는 비즈니스에 중요한 워크로드를 실행할 때 확신할 수 있도록 가장 높은 안정성 및 확장성 표준을 충족하도록 Azure에 지속적으로 투자하고 있습니다. 클라우드 보안과 관련하여 우리는 연간 10억 달러 이상을 투자하고 보안에 초점을 맞춘 3,500명 이상의 직원을 고용합니다. 불과 몇 주 전에 전체 엔터프라이즈를 보호하는 기본 제공 클라우드 네이티브 SIEM인 Azure Sentinel의 일반 공급이 발표되었습니다.</p>
+
+
+  <p>이번 주에는 Azure 확장성, 안정성 및 보안에 대한 몇 가지 향상된 기능을 강조 표시합니다.</p>
+
+
+  <ul>
+      <li>&nbsp;2세대 Azure Virtual Machines의 일반 공급, Intel SGX(Intel Software Guard Extensions) 지원 및 2TB를 초과하는 대규모 VM(최대 12TB) 및 OS 디스크 크기를 제공하는 기능으로 보안을 향상합니다.</li>
+      <li>&nbsp;Windows 및 Linux용 가상 머신 확장 집합에 대한 새로운 기능 미리 보기는 런타임 및 성능 기능을 개선하면서 VM을 보다 쉽게 관리하는 데 도움이 됩니다. 예를 들어 이제 프로비전 시간을 가속화하면서 공유 이미지 갤러리를 사용하여 대규모로 사용자 지정 VM 이미지를 프로비전할 수 있습니다.</li>
+      <li>&nbsp;여러 지역에 대한 고객 제어 Blob 복제를 사용하여 지리적으로 분산된 애플리케이션을 지원하는 개체 복제 서비스의<a> </a>미리 보기입니다.</li>
+      <li>&nbsp;Qualys로 구동되는 VM에 대한 더욱 풍부한 취약성 평가, Kubernetes 컨테이너 지원, Check Point, Tenable 및 CyberArk를 포함한 파트너의 보안 권장 사항 통합을 포함하여 향상된 Azure Security Center 기능을 곧 사용할 수 있습니다.</li>
+      <li>&nbsp;Citrix 및 ZScaler용 커넥터, 의심스러운 URL에 대한 조사 도구 및 보강된 검색을 비롯한 Azure Sentinel의 향상된 기능</li>
+      <li>&nbsp;Azure Managed Disks는 고객 관리형 키를 사용하여 서버 쪽 암호화를 사용하도록 설정하여 규정 준수 요구 사항에 대한 모든 권한을 고객에게 제공하도록 향상되었습니다. 이렇게 하면 고객이 Azure Key Vault를 활용하고 키 사용량을 추적할 수 있습니다. 이 새로운 기능은 Premium SSD(반도체 드라이브), 표준 SSD 및 표준 HDD(하드 디스크 드라이브) 디스크 유형에 대해 미리 보기로 제공됩니다.</li>
+  </ul>
+
+
+  <h2>모든 환경에서 통합 하이브리드 관리</h2>
+
+
+  <p>더 많은 워크로드가 클라우드로 이동하고 에지 컴퓨팅이 증가함에 따라 고객 IT 환경이 진화하고 있습니다. IT 환경은 다양한 유형의 애플리케이션, 하드웨어, 다중 클라우드 및 에지 환경으로 점점 더 복잡해지고 있으며, 기본적으로 IT 리소스를 확장합니다. 고객은 중앙 위치에서 대규모로 IT 리소스를 구성, 관리 및 보호하기 위한 통합된 접근 방식을 찾고 있다고 말합니다.</p>
+
+
+  <p>Microsoft Ignite에서는 온-프레미스 및 다중 가능 환경에서 일관된 관리를 통해 어디서나 클라우드 혁신을 가능하게 하는 하이브리드 기능을 발표합니다. 이러한 주요 사항 중 일부는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>&nbsp;Azure 관리를 확장하고 온-프레미스, 다중 클라우드 및 에지에서 Azure 데이터 서비스를 사용하도록 설정하는 기술 집합인 Azure <a href="https://azure.microsoft.com/services/azure-arc/" target="_blank">Arc</a>의 미리 보기입니다. 이제 고객은 어디서나 Windows 및 Linux 서버, Kubernetes 클러스터 및 Azure 데이터 서비스를 관리하고 관리하는 중앙 통합 접근 방식을 갖게 되었습니다. 또한 Azure Arc는 온-프레미스, 다중 클라우드 및 에지에서 DevOps, Azure 거버넌스 및 Azure 보안과 같은 클라우드 방식의 채택을 확장합니다.</li>
+      <li>&nbsp;Windows 관리 센터 버전 1910의 일반 공급은 실행되는 모든 위치에서 Windows 서버를 관리하는 강력한 하이브리드 기능을 제공합니다. 재해 복구, 백업, 패치 및 모니터링을 위해 온-프레미스 서버와 Azure의 통합을 간소화하고 이제 Azure Security Center와의 통합을 포함합니다.&nbsp; 또한 Windows 관리 센터를 사용하면 고객이 Azure Arc를 사용하여 Azure의 통합 하이브리드 관리를 활용할 수 있습니다.</li>
+      <li>&nbsp;또한 Azure Stack Edge를 포함하도록 Azure Stack 포트폴리오를 확장하고 있습니다. Azure Stack Edge는 모든 에지 위치에서 Azure의 컴퓨팅, 스토리지 및 인텔리전스를 제공하는 Azure 관리 어플라이언스입니다. Azure Portal에서 바로 Azure Stack Edge를 관리할 수 있습니다.</li>
+  </ul>
+
+
+  <p>이러한 모든 새로운 기능은 새로운 서버리스, 컨테이너 및 함수 기능을 포함하여 애플리케이션 현대화의 Azures&rsquo; 최신 개발과 결합될 수 있습니다.</p>
+
+
+  <p>다음은 이번 주 Microsoft Ignite에서 제공하는 주요 내용&rsquo; 중 일부에 불과합니다. 고객이 이러한 기능을 디지털 트랜스포메이션 여정에 통합하는 방법을 기대합니다.</p>
+
+
+  <hr />
+
+  <p><em>Azure. 목적에 따라 발명.</em></p>

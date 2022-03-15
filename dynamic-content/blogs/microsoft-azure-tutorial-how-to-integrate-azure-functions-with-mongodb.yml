@@ -1,0 +1,49 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5fd971784e191b5546c2705edcdef86fc987dcb3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903157"
+Slug: microsoft-azure-tutorial-how-to-integrate-azure-functions-with-mongodb
+Title: 'MongoDB Atlas 무료 계층은 이제 Azure에서 사용할 수 있습니다.  '
+Summary: 이제 팀이 Microsoft Azure 글로벌 클라우드 데이터베이스 MongoDB Atlas를 무료로 사용할 수 있다고 보고하게 되어 기쁩니다. Azure Cloud에서 새로 사용 가능한 무료 계층은 M0이라고 하며 사용자에게 512MB의 스토리지를 부여하며 MongoDB, 프로토타입 생성 및 초기 개발을 학습하는 데 이상적입니다.
+Content: >-
+  <p><em>이 블로그 게시물에 기여해 주신 그레이엄 네레이와 MongoDB 팀에게 특별한 감사를 드립니다.</em>&nbsp;</p>
+
+
+  <p>&rsquo;이제 팀이 글로벌 클라우드 데이터베이스 <a href="https://www.mongodb.com/cloud/atlas/azure-mongodb" target="_blank">MongoDB Atlas</a>를 Microsoft Azure 무료로 사용할 수 있다는 사실을 공유하게 되어 매우 기쁩니다. Azure에서 새로 사용 가능한 무료 계층은 M0이라고 하며 MongoDB, 프로토타입 및 초기 개발을 학습하는 데 이상적인 512MB의 스토리지를 사용자에게 부여합니다.</p>
+
+
+  <p>이 발표는 고객에게 엄청난 선택을 제공하고 전 세계 모든 사용자를 위해 Azure에서 매우 쉽게 시작할 수 있도록 하는 광범위한 목표와는 별개입니다.</p>
+
+
+  <p>Atlas 무료 계층은 지구상에서 가장 인기 있는 데이터베이스 중 하나인 최신 버전의 MongoDB를 실행합니다. 더 큰 MongoDB Atlas 클러스터 유형과 마찬가지로 M0 클러스터는 엔드 투 엔드 암호화, 고가용성 및 완전 관리형 업그레이드를 통해 사용자에게 최적의 보안을 부여할 수 있습니다. 또한 M0 클러스터는 팀이 기본 제공 데이터 탐색기를 통해 브라우저에서 바로 데이터에 대해 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 수행할 수 있도록 하여 더 빠른 개발을 가능하게 합니다.</p>
+
+
+  <p>또한 Azure의 MongoDB Atlas는 <a href="https://www.mongodb.com/blog/post/using-power-bi-to-gain-insight-into-your-mongodb-data" target="_blank">Power BI 및 Microsoft Azure</a> <a href="https://www.mongodb.com/blog/post/mongodb-atlas-connector-for-apache-spark-now-officially-certified-for-azure-databricks" target="_blank">Databricks</a>를 비롯한 주요 Azure 분석 제품과 긴밀하게 통합됩니다.</p>
+
+
+  <p>시작 시 MongoDB Atlas 무료 계층은 세 가지 Azure 지역에서 사용할 수 있습니다.</p>
+
+
+  <ul>
+   <li>미국 동부(버지니아)</li>
+   <li>동아시아(홍콩)</li>
+   <li>서유럽(네덜란드)</li>
+  </ul>
+
+
+  <p>무료 계층을 쉽게 만들 수 있습니다. <a href="https://www.mongodb.com/cloud/atlas/azure-mongodb" target="_blank">MongoDB Atlas에 등록</a>한 후 Azure를 선택한 클라우드로 선택하고 첫 번째 Atlas 클러스터를 빌드할 때 위의 지역 중 하나를 선택합니다&ldquo;&rdquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/20dfa974-eda0-495f-81ec-9bf31cb17a5a.png"><img alt="Cloud provider and region availability table" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/88c13a5b-1a46-4160-8f14-f67b9e707fe6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="클라우드 공급자 및 지역 가용성 테이블" width="800"></a></p>
+
+
+  <p>다음으로 클러스터 계층 드롭다운에서 M0&rdquo;을 선택합니다&ldquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3b8adcd-c541-4cd1-af67-1a2883e8b0e5.png"><img alt="Cluster tier and storage table" border="0" height="175" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/156ba63a-c324-4717-8eeb-73f117c0fe5c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="클러스터 계층 및 스토리지 테이블" width="800"></a></p>
+
+
+  <p>그런 다음 클러스터에 이름을 지정하고 클러스터&rdquo; 만들기 단추를 누릅니&ldquo;다. 무료 MongoDB Atlas 클러스터는 몇 분 안에 배포됩니다.</p>

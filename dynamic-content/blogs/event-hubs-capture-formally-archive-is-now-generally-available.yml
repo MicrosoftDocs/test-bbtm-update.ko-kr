@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e3947369a7ab78c3697dc947a2cc6ce46bbe0ce6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898385"
+Slug: event-hubs-capture-formally-archive-is-now-generally-available
+Title: Event Hubs 캡처(이전의 보관)가 이제 일반 공급됨
+Summary: 이제 Azure Event Hubs 캡처를 일반 공급합니다.  Event Hubs 아카이브로 공개 미리 보기로 릴리스된 이 주요 Event Hubs 기능은 거의 실시간 스트림에 액세스할 수 있으므로 추가 처리를 위해 초당 수백만 개의 이벤트를 패키지하고 전송할 수 있습니다.  일괄 처리 및 거의 실시간 스트림을 결합하도록 설계되었기 때문에 별도의 데이터 파이프라인을 생성할 필요가 없습니다.
+Content: >-
+  <p><strong>현재 Azure Event Hubs 보관</strong>으로 2016년 9월 공개 미리 보기로 출시된 Azure Event Hubs 캡처 <strong>가 이제 일반 공급됩니다</strong>.</p>
+
+
+  <p>이 기능은 초당 수백만 개의 이벤트를 수신하고 처리할 수 있는 확장성이 뛰어난 데이터 스트리밍 플랫폼 및 이벤트 수집 서비스인 Azure Event Hubs에 중요한 차원을 추가합니다. Event Hubs 캡처를 사용하면 코드를 사용하거나 다른 컴퓨팅 서비스를 구성하지 않고도 이 데이터를 영구 스토리지로 쉽게 보낼 수 있습니다. 현재 이를 사용하여 Event Hubs에서 직접 blob으로 Azure Storage 데이터를 푸시할 수 있습니다. 가까운 장래에 Azure Data Lake Store도 지원할 예정입니다. 기타 혜택은 다음과 같습니다.</p>
+
+
+  <p><strong>간단한 설정:</strong> <a href="https://portal.azure.com/" target="_blank">Azure Portal 또는 Azure</a> Resource Manager 템플릿을 사용하여 캡처 기능을 활용하도록 Event Hubs를 구성할 수 있습니다.</p>
+
+
+  <p><strong>총 소유 비용 절감:</strong> Event Hubs는 모든 관리를 처리하므로 사용자 지정 작업 처리 메커니즘을 설정하고 추적하는 데 최소한의 오버헤드가 있습니다.</p>
+
+
+  <p><strong>대상과 통합:</strong> Azure Storage 계정을 선택하면 곧 Azure Data Lake Store와 Event Hubs 캡처가 자동으로 데이터를 리포지토리로 푸시합니다.</p>
+
+
+  <p><strong>거의 실시간 일괄 처리 분석:</strong> 이벤트 데이터는 Event Hubs로 수신한 후 몇 분 내에 사용할 수 있습니다. 이렇게 하면 별도의 데이터 파이프라인을 생성하지 않고도 거의 실시간으로 분석할 수 있는 가장 일반적인 시나리오가 가능합니다.</p>
+
+
+  <p><strong>빅 데이터에 완벽한 온-램프:</strong> 캡처 기능을 사용하도록 설정하면 Event Hubs를 사용하면 단일 스트림이 실시간 및 일괄 처리 기반 파이프라인을 지원할 수 있으므로 Event Hubs를 사용하여 빅 데이터 솔루션을 쉽게 작성할 수 있습니다.</p>
+
+
+  <p>일반 공급으로 전환하면 2017년 8월 1일부터 Event Hubs 캡처에 시간당 $0.10의 요금이 청구됩니다. 자세한 가격 책정은 <a href="https://azure.microsoft.com/pricing/details/event-hubs">Event Hubs 가격 책정</a>을 참조하세요.&nbsp;</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Events Hubs 사용을 바로 시작할 수 있는 몇 가지 추가 리소스가 있습니다. 이 <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-overview">새로운 기능 </a>및 Event Hubs에 대해 더 일반적으로 학습한 후에는 <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-resource-manager-namespace-event-hub-enable-capture">템플릿을 사용하여 </a>이벤트 허브에서 캡처 기능을 사용하도록 설정하는 방법을 살펴볼 수 있습니다. 마지막으로, 최신 싱크 및 최신 serialization 형식에 대해 어떻게 생각하는지 알려 주시기 바랍니다&rsquo;.</p>
+
+
+  <p>질문이나 제안이 있는 경우 아래에 의견을 남겨 주세요.</p>

@@ -1,0 +1,71 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a589b33886741111b6cec4f558c3ba415692b450
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908852"
+Slug: microsofts-project-olympus-delivers-cloud-hardware-innovation-at-scale
+Title: Microsoft의 Project Olympus는 대규모 클라우드 하드웨어 혁신을 제공합니다.
+Summary: 불과 1년 전, Datacenter Dynamics가 주최하는 유럽 디지털 인프라 컨퍼런스인 Zettastructure에서 차세대 하이퍼스케일 클라우드 하드웨어 디자인과 오픈 소스 하드웨어 개발을 위한 새로운 모델인 Microsoft의 Project Olympus를 OCP(Open Compute Project) 커뮤니티와 함께 소개했습니다.
+Content: >-
+  <p>불과 1년 전, Datacenter Dynamics가 주최하는 유럽 디지털 인프라 컨퍼런스인 Zettastructure에서 Microsofts Project Olympus &ndash; 의 차세대 하이퍼스케일 클라우드 하드웨어 디자인과 OCP(Open Compute Project) 커뮤니티를 사용한 오픈 소스 하드웨어 개발을 위한 새로운 모델을 소개&rsquo;했습니다. 현재와 미래의 클라우드에 대한 다양한 워크로드를 수용할 수 있는 유연성과 전 세계 데이터 센터로 쉽게 확장할 수 있는 최첨단 서버 설계를 구상했습니다. 이를 위해, 우리는 빠른 지역 사회 중심의 혁신을 가능하게하기 위해 절반 만 완성 된 디자인을 기여했습니다.</p>
+
+
+  <p>현재 Im&rsquo;은 오픈 소스 소프트웨어와 마찬가지로 하드웨어 디자인을 다운로드, 수정 및 포크하고, 다양하고 광범위한 에코시스템을 부트스트래핑하여 Project Olympus를 차세대 스케일 컴퓨팅을 위한 사실상 오픈 소스 클라우드 하드웨어 디자인으로 만들기 위해 <a href="https://dcd.events/conferences/zettastructure" target="_blank">Zettastructure</a>에서 달성한 엄청난 진전을 공유합니다. 이제 디자인이 100% 완료되었으며 OCP 기여를 통해 오픈 소스로 제공되었습니다. Microsoft Azure 배포를 통해 대규모 프로덕션에서 입증되었으며 솔루션 공급자는 이 디자인의 이점을 보다 광범위한 OCP 에코시스템으로 가져올 준비가 되어 있습니다.</p>
+
+
+  <p>Were&rsquo;는 또한 하드웨어 디자인과 유사한 방식으로 OCP 커뮤니티와 협력적으로 개발될 플랫폼 보안을 위한 새로운 오픈 소스 산업 표준인 Project Cerberus의 도입으로 Project 올림푸스의 다음 단계에 진입했습니다.</p>
+
+
+  <h2>Azure에 배포됨</h2>
+
+
+  <p>Project Olympus 하드웨어는 이제 <a href="https://azure.microsoft.com/en-us/blog/fv2-vms-are-now-available-the-fastest-vms-on-azure/" target="_blank">Fv2 VM(가상 머신) 제품군</a>을 사용하여 볼륨 프로덕션에 배포됩니다. Fv2 제품군은 Azure에서 가장 빠른 VM이며 퍼블릭 클라우드에서 가장 빠른 Intel&reg; Xeon&reg; 확장 가능 프로세서를 제공합니다. 재무 모델링, 과학적 분석, 유전체학, 지열 시각화 및 딥 러닝을 수행하는 고객의 대규모 계산에 대한 수요 증가를 해결합니다.</p>
+
+
+  <p>Fv2 VM 제품군은 Azure에서 제품화된 최초의 Project Olympus 디자인 중 하나입니다. 빅 데이터 분석, 기계 학습 및 AI(인공 지능)와 같은 새로운 클라우드 워크로드에 필요한 클라우드 서비스 및 컴퓨팅 능력의 폭발적인 성장을 지원하기 위해 더 많은 배포와 실리콘 혁신이 뒤따를 것입니다.</p>
+
+
+  <h2>오픈 소스 및 상업적으로 사용 가능</h2>
+
+
+  <p>모든 Project 올림푸스 디자인 사양은 오픈 소스이며 <a href="https://www.opencompute.org/wiki/Server/ProjectOlympus" target="_blank">OCP에 기여했습니다</a>(19개 사양, 8개의 디자인, 섀시 및 관리를 다루는 설명서). 이제 OCP 커뮤니티는 이러한 사양을 활용하여 다양한 데이터 센터 요구 사항을 충족하고 이 기본 플랫폼 아키텍처를 기반으로 혁신을 추진하기 위한 파생 디자인을 만들 수 있습니다.</p>
+
+
+  <p>우리는 또한 Project 올림푸스 하드웨어가 이제 Wiwynn 및 <a href="https://www.ztsystems.com/ocp" target="_blank">ZT Systems</a>를 포함한 OCP 솔루션 공급자를 통해 조달에 상업적으로 사용할 수 있음을 발표하게되어 기쁘게 생각합니다. 이는 오픈 소스 하드웨어의 이점을 더 광범위한 산업으로 가져와서 IT 및 데이터 센터 운영자가 커뮤니티에서 개발한 혁신 및 확장 검증된 하드웨어 설계를 특정 사용 모델에 활용할 수 있도록 하는 중요한 이정표입니다. 또한 솔루션 공급자는 오픈 소스 하드웨어에 대한 광범위한 시장에 도달할 수 있는 기능을 통해 이점을 얻을 수 있습니다.</p>
+
+
+  <h2>계속 발전&hellip; 하는 플랫폼 보안</h2>
+
+
+  <p>오늘날에는 서버 하드웨어 &ndash; 보호,&rsquo; 검색 및 플랫폼 펌웨어 공격으로부터 복구에서 누락된 보안 보호를 위한 중요한 구성 요소를 제공하는 Project Cerberus도 도입되었습니다. Project Cerberus는 호환되지 않는 펌웨어를 사용하여 하드웨어에서 실행되는 its&rsquo;가 있다는 확신을 가지고 클라우드에서 데이터를 처리할 수 있다고 구상합니다.</p>
+
+
+  <p>Project Olympus가 빌드&rsquo;할 수 있는 기본 하드웨어 플랫폼으로 구축됨에 따라 사이버 보안에 관심을 돌리면서 Microsoft와 OCP 커뮤니티 모두에 가치를 계속 확장할 수 있습니다. Microsoft는 사이버 보안에 연간 10억 달러를 지출하고 있으며, 그 중 상당 부분은 Azure를 가장 신뢰할 수 있는 클라우드 플랫폼으로 만듭니다. 엄격한 물리적 데이터 센터 보안, 데이터 개인 정보 보호 보장 작업, 미사용 데이터 암호화 및 전송 중 데이터 암호화, 위협 감지를 위한 기계 학습의 새로운 사용, 엄격한 운영 소프트웨어 개발 무결성 제어 사용 등 Azure는 클라우드 보안 및 개인 정보 보호의 최첨단을 나타냅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4c8871f5-46db-4adf-8066-bf12bd1ea0e4.png"><img align="right" alt="olympus-1" border="0" height="177" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6d30ebb2-6219-448d-9904-594329e4e1f6.png" style="border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="olympus-1" width="259"></a> Project Cerberus는 모든 플랫폼 펌웨어에 강력한 보안을 제공하도록 특별히 설계된 <a href="https://csrc.nist.gov/publications/detail/sp/800-193/draft" target="_blank">NIST 800-193</a> 호환 하드웨어 루트입니다. 사전 부팅에서 엄격한 액세스 제어 및 무결성 확인을 적용하고 런타임을 계속하여 마더보드(UEFI BIOS, BMC, 옵션 ROM)뿐만 아니라 주변 I/O 디바이스의 펌웨어에 대한 신뢰의 하드웨어 루트를 제공합니다.</p>
+
+
+  <p>특히 Project Cerberus는 다음 위협으로부터 플랫폼 펌웨어를 방어하는 데 도움이 될 수 있습니다.</p>
+
+
+  <ul>
+   <li>관리자 권한 또는 하드웨어에 대한 액세스 권한이 있는 악의적인 내부자</li>
+   <li>운영 체제, 애플리케이션 또는 하이퍼바이저에서 버그를 악용하는 해커 및 맬웨어</li>
+   <li>공급망 공격(제조, 어셈블리, 운송 중)</li>
+   <li>손상된 펌웨어 이진 파일</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e004551d-e602-486b-b7fb-fb95912953a1.png"><img align="left" alt="olympus-2" border="0" height="175" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/574c1429-6fa0-4a8d-b6e5-6d4345ca52f6.png" style="margin: 0px 6px 0px 0px; border: 0px currentcolor; border-image: none; float: left; display: inline; background-image: none;" title="olympus-2" width="274"></a> Project Cerberus는 호스트의 액세스를 가로채 SPI 버스(펌웨어가 저장된 위치)를 통해 플래시하는 보안 코드를 실행하는 암호화 마이크로 컨트롤러로 구성되므로 이러한 액세스를 지속적으로 측정하고 증명하여 펌웨어 무결성을 보장하고 무단 액세스 및 악의적인 업데이트로부터 보호할 수 있습니다. 이렇게 하면 시스템의 모든 펌웨어 구성 요소에 대해 강력한 사전 부팅, 부팅 시간 및 런타임 무결성을 구현할 수 있습니다. 이 사양은 CPU 및 I/O 아키텍처에 구애받지 않으며 시간이 지남에 따라 다양한 공급업체 디자인에 쉽게 통합되어 데이터 센터에서 IoT 디바이스에 이르기까지 업계 전반의 모든 플랫폼 유형에서 보다 안전한 펌웨어 구현을 가능하게 합니다. 또한 이 사양은 동일한 아키텍처 원칙을 사용하여 플랫폼 보안을 모든 I/O 주변 장치로 확장할 수 있도록 계층적 신뢰 루트를 지원합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0754dc29-06ef-467f-8c93-7f49dc2332d1.png"><img align="right" alt="olympus-3" border="0" height="292" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1cfd9497-5940-46e8-9d0f-06fbf4f1f7ae.png" style="margin: 0px 0px 0px 6px; border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="olympus-3We" width="368"></a>는 인텔과 협업하여 플랫폼 펌웨어 보안을 위한 최적의 구현 모델을 탐색합니다. 커뮤니티 권한 부여의 정신으로, 우리는 OCP에 Cerberus 사양 (아직 개발 중)Project 초안을 오픈 소싱 할 계획입니다. 또한 NIST 및 Intel과 협력하여 800-193 초안 사양에 대한 피드백을 제공하고 있습니다.</p>
+
+
+  <p>Project Olympus 오픈 소스 모델과 마찬가지로 Project Cerberus 사양에 기여하면 업계 참가자 간의 커뮤니티 개발을 위한 OCP 에코시스템의 강력한 참여가 가능해질 것으로 예상하며, 이러한 공개 협업은 업계에 도움이 될 플랫폼 보안을 위한 보다 안전한 모델로 이어질 것으로 기대합니다. 오늘 <a href="https://github.com/opencomputeproject/Project_Olympus/tree/master/Project_Cerberus" target="_blank">제공되는 초기 초안</a> 은 마더보드 펌웨어(UEFI BIOS, BMC, 옵션 ROM)를 다루며, 비전은 시간이 지남에 따라 HDD, SSD, NIC, FPGA, GPU 등과 같은 모든 주변 I/O 구성 요소를 포함하도록 사양을 확장하기 위해 OCP 커뮤니티와 협력하는 것입니다.</p>
+
+
+  <p>&rsquo;업계가 Project Cerberus와 협력하여 향후 하드웨어 플랫폼에 대한 새로운 수준의 보안을 추진하고, <a href="https://azure.microsoft.com/en-us/blog/ecosystem-momentum-positions-microsoft-s-project-olympus-as-de-facto-open-compute-standard/" target="_blank">에코시스템</a>을 자세히 설명하는 이전 블로그와 <a href="https://www.opencompute.org/wiki/Server/ProjectOlympus" target="_blank">Open Compute Project 기여</a>를 통해 Olympus Project 대해 자세히 알아보도록 권유합니다.</p>

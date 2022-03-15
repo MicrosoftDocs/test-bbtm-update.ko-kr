@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 964d63b845339a20a61074aa75329f5bee66221d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898398"
+Slug: community-spotlight-notifications-for-documentdb-changes-using-logic-apps
+Title: 'Community 스포트라이트: Logic Apps를 사용하여 DocumentDB 변경에 대한 알림'
+Summary: Azure 설명서를 GitHub 배치하는 데 따른 원동력 중 하나는 커뮤니티 구성원이 쉽게 기여할 수 있는 개방형 환경을 조성하는 것이었고, 하워드 에디딘의 최근 추가에 대해 감사하고 강조하고 싶습니다.
+Content: >-
+  <p>GitHub Azure 설명서를 배치하는 데 필요한 요인 중 하나는 커뮤니티 구성원이 Azure 콘텐츠에 쉽게 <a href="https://github.com/Azure/azure-content/blob/master/contributor-guide/contributor-guide-index.md" target="_blank">기여할</a> 수 있는 개방형 환경을 만드는 것이었습니다. 우리는 모든 커뮤니티 콘텐츠 제출에 감사하지만 누군가가 자신의 기사를 쓸 때 정말 좋아합니다. 이를&rsquo; 통해 <a href="https://azure.microsoft.com/documentation/articles/documentdb-change-notification/" target="_blank"><em>Wed는 Logic Apps를 사용하여 신규 또는 변경된 DocumentDB 리소스에 대한 최근 기여 알림에 대해 DocumentDB</em></a> <a href="https://azure.microsoft.com/documentation/articles/documentdb-community/#documentdb-wizards" target="_blank">마법사</a> 및 Azure 솔루션 설계자인 Howard Edidin에게 감사드립니다.</p>
+
+
+  <p>이 문서에서 Howard는 DocumentDB가 수정된 리소스에 대한 알림을 지원하나요?&rdquo; IT 부서가 업데이트된 환자 레코드를 검색하기 위해 사용할 수 있는 비즈니스 모델 및 샘플 솔루션을 탐색하여 질문에 &ldquo;응답합니다. GitHub 대한 그의 오픈 소스 솔루션은 <a href="https://azure.microsoft.com/services/app-service/logic/" target="_blank">Azure Logic Apps</a> 사용하여 지난 1시간 동안 변경된 의료 문서에 대해 DocumentDB를 쿼리합니다. 변경한 경우 수정된 문서가 검토를 위해 <a href="https://azure.microsoft.com/services/storage/" target="_blank">Azure Blog Storage</a> 전송되고 이메일 알림이 전송됩니다.</p>
+
+
+  <p><img alt="main-logic-app-process" border="0" height="211" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/295f53e1-79a8-4bcf-a3bf-9e729d0672af.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="main-logic-app-process" width="610"></p>
+
+
+  <p>Howards&rsquo; 솔루션은 HL7(Health Level Seven International) FHIR(Fast Healthcare Interoperability Resources) 문서를 충족하지만 다른 산업용으로 쉽게 용도가 변경될 수 있습니다. 따라서 Howard의 기여에 감사드리며 각 Azure 문서의 맨 위에 있는 GitHub 링크에서 편집을 클릭하여 <a href="https://azure.microsoft.com/" target="_blank">azure.microsoft.com</a> 문서에 참여하거나 GitHub Azure 콘텐츠 리포지토리로 직접 이동하도록 초대합니다. 모든 콘텐츠에 더 쉽게 액세스할 수 있도록 지속적으로 노력하고 있으며 향후 커뮤니티 기여에 추가 콘텐츠 세트를 열기를 기대합니다.</p>
+
+
+  <p><img alt="edit-on-github" border="0" height="49" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/36bc699c-d4d6-416a-b87e-7e9634b46534.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="github에서 편집" width="360"></p>
+
+
+  <p><a href="https://azure.microsoft.com/services/documentdb/" target="_blank">DocumentDB</a>에 대한 질문이나 피드백이 있는 경우 <a href="https://stackoverflow.com/questions/tagged/azure-documentdb" target="_blank">StackOverflow의 개발자 포럼에</a> 문의하거나 DocumentDB 엔지니어링 팀과 1:1 채팅을 예약하세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/free/" target="_blank">무료 Azure 계정에</a> 등록하여 <a href="https://azure.microsoft.com/documentation/learning-paths/documentdb/" target="_blank">DocumentDB에 대한 학습</a>을 시작하고 Twitter<a href="https://twitter.com/DocumentDB" target="_blank">@DocumentDB</a>에서 팔로우하여 최신 DocumentDB 뉴스 및 기능을 최신 상태로 유지하세요.</p>

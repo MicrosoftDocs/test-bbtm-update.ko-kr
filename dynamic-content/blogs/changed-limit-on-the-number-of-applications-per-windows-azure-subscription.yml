@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e921d607ea64a31b5ede91afe925ede5e1d8343b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902639"
+Slug: changed-limit-on-the-number-of-applications-per-windows-azure-subscription
+Title: Windows Azure 구독당 애플리케이션 수에 대한 제한 변경
+Summary: "                When we launched Windows Azure commercially last month, we allowed customers to deploy twenty applications per subscription. Each application in Windows Azure is mapped to a specific…"
+Content: <meta name="Title" content="">  <meta name="Keywords" content="">  <meta name="ProgId" content="Word.Document">  <meta name="Generator" content="Microsoft Word 2008">  <meta name="Originator" content="Microsoft Word 2008"><link href="file://localhost/Users/chimenestewart/Library/Caches/TemporaryItems/msoclip/0/clip_filelist.xml" rel="File-List" mce_href="file://localhost/Users/chimenestewart/Library/Caches/TemporaryItems/msoclip/0/clip_filelist.xml">  <style>    </style>지난 달 <a href="https://www.microsoft.com/windowsazure/" target="_blank" mce_href="https://www.microsoft.com/windowsazure/">Azure를</a> 상업적으로 Windows 시작했을 때 고객이 구독당 20개의 애플리케이션을 배포할 수 있었습니다. Windows Azure의 각 애플리케이션은 특정 DNS 이름에 매핑되고 Windows Azure IP 범위의 공용 IP 주소가 할당됩니다. 일반적인 사용 패턴을 분석한 후 모든 고객에게 동등하게 서비스를 제공하기 위해 Azure 애플리케이션 Windows 한도를 구독당 6개로 낮추기로 결정했습니다. 이 새로운 정책은 오늘 적용됩니다. <br>  <p>6개 이상의 애플리케이션이 필요한 경우 <a href="https://www.microsoft.com/windowsazure/support/" target="_blank" mce_href="https://www.microsoft.com/windowsazure/support/">Windows Azure 지원에</a> 문의하여 증가를 요청할 수 있습니다. 또한 추가 Windows Azure 구독을 만들 수 있으며, 각 구독을 통해 최대 6개의 애플리케이션을 만들 수 있습니다.<br>&nbsp;<br>6개 이상의 애플리케이션이 있는 기존 Windows Azure 구독이 있는 경우 애플리케이션은 중단 없이 계속 실행됩니다. 그러나 애플리케이션 중 하나를 삭제하는 경우 총 애플리케이션 수가 6개 미만이 될 때까지 새 애플리케이션을 만들 수 없습니다.</p>

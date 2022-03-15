@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2c1a05c6c165ba065693604e56016b1407c369b8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898845"
+Slug: use-ai-to-streamline-healthcare-operations
+Title: AI를 사용하여 의료 운영 간소화
+Summary: 기계 학습(ML)과 AI(인공 지능)의 중대한 영향은 히스 조직이 직면한 많은 과제에 대해 생각하는 방식을 변화시키고 있습니다. 실행 가능한 인사이트를 기반으로 데이터 정보를 바탕으로 의사 결정을 내리는 것은 환자 진단 및 결과에서 운영 효율성에 이르기까지 의료의 여러 측면을 개선하고 있습니다.
+Content: >-
+  <p>기계 학습(ML)과 AI(인공 지능)의 중대한 영향은 히스 조직이 직면한 많은 과제에 대해 생각하는 방식을 변화시키고 있습니다. 실행 가능한 인사이트를 기반으로 데이터 정보를 바탕으로 의사 결정을 내리는 것은 환자 진단 및 결과에서 운영 효율성에 이르기까지 의료의 여러 측면을 개선하고 있습니다.</p>
+
+
+  <h2>데이터 정보에 입각한 의사 결정</h2>
+
+
+  <p>관련 데이터에 대한 깊은 인사이트를 사용하여 의사 결정을 내리는 동안 의료 조직은 이러한 솔루션을 구현하는 방법을 특히 염두에 두어야 합니다. HIPAA 및 HITRUST 규정 준수와 같은 규정은 환자 데이터에 대한 액세스가 필요하지 않은&rsquo; 사용자를 위해 데이터를 안전하게, 비공개 및 익명으로 유지해야 합니다.</p>
+
+
+  <p>또한 IT 직원은 이러한 솔루션을 구현하기 위해 준비되지 않거나 인력이 부족한 경우가 많습니다. 이 때문에 <a href="https://docs.microsoft.com/azure/security/blueprints/azure-health?WT.mc_id=streamline-acomblog-dastarr" target="_blank">Azure Healthcare AI Blueprint</a>는 Microsoft Azure PaaS(Platform as a Service)를 사용하여 의료 조직을 위한 AI 솔루션을 부트스트랩하기 위해 만들어졌습니다. 청사진을 설치한 후 조직은 참조 구현을 통해 학습하고 Azure 서비스를 사용하여 빌드된 전체 솔루션의 구성 요소를 더 잘 이해할 수 있습니다.</p>
+
+
+  <h2>Azure 의료 AI 청사진</h2>
+
+
+  <p>청사진은 PowerShell 스크립트를 통해 Azure에 설치되며 MLS(Azure Machine Learning Studio) 실험을 즉시 실행할 수 있는 완전한 환경을 만듭니다. 사실, 체류의 간단한 환자 길이가있다 (LOS) 실험은 바로 내장.</p>
+
+
+  <p>다른 데모 스크립트도 추가로 살펴보려는 경우에도 사용할 수 있습니다. 10명의 새로운 환자를 인정하고 1명은 2명의 환자를 퇴원시키는 스크립트가 있습니다. 이러한 스크립트 실행은 청사진 설명서에서 설명합니다.</p>
+
+
+  <h2>운영 프로세스 흐름</h2>
+
+
+  <p>케어 라인 관리자는 Power BI 대시보드를 통해 즉시 사용할 수 있지만 LOS 기계 학습 실험에서 처리되는 새로 입원한 환자 데이터를 제출합니다. 환자 데이터는 환자&rsquo; 등록 시스템에 입력됩니다. 시스템은 FHIR(Fast Healthcare Interoperability Resources) 형식의 데이터를 사용하여 <a href="https://docs.microsoft.com/azure/azure-functions/functions-bindings-storage-blob?WT.mc_id=streamline-acomblog-dastarr" target="_blank">Azure 함수</a> 를 호출합니다. <strong>환자 인정</strong> Azure 함수는 Azure SQL 데이터베이스 및 MLS에 데이터를 저장하여 환자&rsquo; LOS를 예측하는 데 사용됩니다. 환자가 시설에서 입원하거나 퇴원하면 다른 Azure 함수가 <a href="https://docs.microsoft.com/azure/sql-database/?WT.mc_id=streamline-acomblog-dastarr" target="_blank">Azure SQL 데이터베이스</a>에 데이터를 씁니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2fcc9e0b-9311-48e6-b797-4c269d6f4bac.png"><img alt="image" border="0" height="415" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0243e302-11e1-4362-a9ee-b5ec5c35f1fc.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="이미지" width="408"></a></p>
+
+
+  <p>전체 솔루션에는 모니터링 및 보안과 같은 다른 많은 서비스가 있습니다. 그러나 MLS는 로스 실험의 마법이 일어나는 곳이며, 인력 및 예상 침대 수와 같은 운영 결정을 내릴 수 있습니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>청사진에는 많은 구성 요소와 서비스가 있으며&rsquo; 단일 LOS 실험에 사용되는 몇 가지 구성 요소만 검토했습니다. 더 복잡한 시나리오에는 보다 정교한 알고리즘과 모델이 사용됩니다.</p>
+
+
+  <h3>권장하는 다음 단계</h3>
+
+
+  <ol>
+   <li><a href="https://docs.microsoft.com/azure/security/blueprints/azure-health?WT.mc_id=streamline-acomblog-dastarr" target="_blank">Azure Healthcare AI Blueprint</a>에 대해 읽어 조직에 적합한지&rsquo; 확인합니다. 이는 조직&rsquo;에서 데이터 정보에 입각한 의사 결정으로 변경하는 촉매제 역할을 할 수 있습니다.</li>
+   <li><a href="https://github.com/Azure/Health-Data-and-AI-Blueprint" target="_blank">GitHub 청사진</a>에 스크립트, 설치 지침 및 기타 아티팩트 다운로드</li>
+  </ol>

@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 44630af875ff65a3b6594cf97fcc894281adab2f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899323"
+Slug: azure-database-migration-service-now-generally-available
+Title: 이제 Azure Database Migration Service 일반 공급
+Summary: 다양한 원본에서 Azure 데이터 플랫폼으로의 가동 중지 시간을 최소화하면서 원활한 데이터베이스 마이그레이션을 사용하도록 설계된 Azure DMS(Database Migration Service)의 일반 공급이 발표됩니다.
+Content: >-
+  <p>Were&rsquo;는 다양한 원본에서 Azure 데이터 플랫폼으로의 가동 중지 시간을 최소화하면서 원활한 데이터베이스 마이그레이션을 사용하도록 설계된 Azure <a href="https://azure.microsoft.com/en-us/campaigns/database-migration/" target="_blank">DMS(Database Migration Service)</a>의 일반 공급에 대해 발표하게 되어 매우 기쁩니다. Azure DMS를 사용하여 IT 인프라를 최적화하기 위한 첫 번째 단계를 수행하고 비즈니스 혁신으로 리디렉션할 수 있는 귀중한 시간과 리소스를 확보합니다.</p>
+
+
+  <p>Azure DMS는 Data Migration Assistant, <a href="https://www.microsoft.com/en-us/download/details.aspx?id=53595" target="_blank">SQL Server Migration Assistant 및 데이터베이스 실험 도우미</a> 같은 검증된 마이그레이션 엔진의 기능을 사용하기 쉬운 하나의 서비스에 통합하여 클라우드 마이그레이션의 복잡성을 줄입니다.<a href="https://docs.microsoft.com/en-us/sql/ssma/sql-server-migration-assistant" target="_blank"></a><a href="https://blogs.msdn.microsoft.com/datamigration/tag/dea/" target="_blank"></a> Azure DMS는 레거시 버전의 Microsoft SQL Server 업그레이드하든, Oracle, Sybase, DB2, MySQL 등의 원본에서 이동하든 최적의 마이그레이션 환경을 보장하기 위해 조정됩니다. 새 서비스는 마이그레이션 작업 중에 가동 중지 시간을&mdash; 최소화하는 마이그레이션 작업을 계속할 수 있도록 하는 단계별 간단한 프로세스로 작업을 간소화합니다.</p>
+
+
+  <p>&rsquo;먼저 잠재적인 차단 또는 기능 패리티 문제에 대해 원본 데이터베이스를 평가하고 필요에 따라 해결 방법을 검토하고 구현합니다. 다음으로,&rsquo; 연결된 모든 단계를 수행하는 Azure DMS를 사용하여 마이그레이션 프로세스를 시작합니다. &rsquo;복원력 있고 완전히 자동화된 워크플로는 Microsoft가 시간이 지남에 따라 테스트하고 가장 성공적이라고 판단한 모범 사례를 활용한다는 사실을 쉽게 알 수 있습니다.</p>
+
+
+  <p>Azure DMS를&rsquo; 사용한 고객 및 파트너는 서비스에 대해 긍정적인 피드백을 제공합니다.</p>
+
+
+  <p><em>Azure Database Migration Service는 데이터베이스를 Azure로 이동하기 위한 생명의 은인이었습니다. 가동 중지 시간 또는 데이터 손실 없이 2개월 동안 DMS 서비스를 사용하여 100개가 넘는 데이터베이스를 Azure로 성공적으로 마이그레이션했습니다. 이 프로세스는 다른 방법을 사용하는 사용자에 대해 6개월 및 며칠/몇 주 동안 가동 중지 시간이 잘 걸렸을 것입니다. DMS 팀과 함께 작업해 주셔서 정말 감사합니다. 그들은 SQL 워크로드를 위해 클라우드로의 여정을 실질적으로 원활하게 만들었습니다.</em></p>
+
+
+  <p align="right"><strong>그렉 마투스코비치, IT 임원 및 서비스 이사, 윌리스 타워스 왓슨</strong></p>
+
+
+  <p><em>Azure Database Migration Service는 여러 가지 면에서 크게 도움이되었습니다. 첫째, 필요한 변경 사항을 경고했습니다. 둘째, 데이터를 신속하게 전송하여 진행 상황을 검토할 수 있습니다. 셋째, 가장 중요한 것은 동적 테이블을 전송하기 전에 정적 테이블에 대한 데이터를 전송할 수 있게 해 주었습니다. 이렇게 하면 클라우드로 이동하는 데 필요한 가동 중지 시간이 크게 감소했습니다. 이 제품의 미리보기의 일부가되는 것은 나와 내 팀에 대한 생명의 은인이었다.</em></p>
+
+
+  <p align="right"><strong>Jeff Schwartz, Hosted Services Manager, 혁신적인 시스템</strong></p>
+
+
+  <p>조직&rsquo; 원본 및 대상 데이터 플랫폼에 따라 마이그레이션 계획을 사용자 지정할 수 있는 <a href="https://aka.ms/datamigration" target="_blank">데이터베이스 마이그레이션 가이드</a>를 사용하여 여정을 시작합니다. 클라우드 마이그레이션에 대한 개요는 <a href="https://azure.microsoft.com/migrate" target="_blank">Azure Migration Center</a>를 방문하세요.</p>
+
+
+  <p>오늘 시작:</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/free/" target="_blank">무료 Azure 계정을</a> 시작하거나 <a href="https://portal.azure.com/" target="_blank">기존 계정에 로그인합니다</a>.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/expressroute/expressroute-introduction" target="_blank">ExpressRoute</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal" target="_blank">VPN</a>을 사용하여 사이트 간 연결을 설정합니다.</li>
+      <li><a href="https://azure.microsoft.com/services/database-migration/" target="_blank">Azure DMS</a>에 대해 자세히 알아보세요.</li>
+      <li>미리 보기 <a href="https://dmspreview.azurewebsites.net/" target="_blank">에서 Azure DMS 제품에 대해</a> 자세히 알아보고 등록하세요.</li>
+  </ul>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <ul>
+      <li>Azure DMS에 대한 <a href="https://docs.microsoft.com/azure/dms/faq" target="_blank">질문과 대답을 검토</a>합니다.</li>
+      <li>데이터를 Azure로 마이그레이션한&rsquo; <a href="https://info.microsoft.com/ww-landing-DBMC-Invest-in-your-data-future-with-the-cloud.html" target="_blank">동료의 의견을 들어보십시오</a>.</li>
+      <li>Azure DMS<a href="https://docs.microsoft.com/azure/dms/pre-reqs" target="_blank">의 필수 구성 요소를 알아봅니</a>다.</li>
+  </ul>

@@ -1,0 +1,201 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d0118688c8a79e3898eed33b47d071c5435a51f7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903074"
+Slug: azure-cost-management-and-billing-2020-year-in-review
+Title: Azure Cost Management 및 청구 2020년 검토
+Summary: 2020년은 우리가 가입한 해가 아니었지만, 그럼에도 불구하고 가득 찼습니다. 최적화된 계정 및 청구서 관리 환경부터 포털 내부 및 외부의 풍부한 보고까지 새로운 비용 절감 및 보다 유연한 예산 경고를 용이하게 하는 새로운 방법으로 엄청난 양의 새로운 비용 최적화 기회를 제공합니다. 올해는 많은 것을 가져왔고 2021년은 모든 전선에서 지속적인 진화와 함께 흥미진진해 보입니다. 무슨 일이 일어날지 엿볼 수 있습니다.
+Content: >-
+  <p>2020년은 흥미로운 한 해였습니다. 우리 중 많은 사람들이 새해와 함께 제공되는 기회에 대해 흥분하여 한 해를 시작했습니다. 우리 중 누구도 우리가 살고 함께&nbsp; 일하는 방식을 근본적으로 변화시킬 글로벌 전염병을 예측하지 못했습니다. 그리고 이 새로운 정상적인 용량 감소로 인해 여러 가지 방법으로 비용을 관리하고 줄이는 것이 그 어느 때보다 중요해졌습니다.</p>
+
+
+  <p>&#39;작년에 본 내용과 다음 해에 어떤&#39;있는지 살펴보겠습니다.</p>
+
+
+  <p><a name="coverage"></a>&nbsp;</p>
+
+
+  <h2>단일 유리 창 뒤에서 간소화된 관리</h2>
+
+
+  <p><a href="https://azure.microsoft.com/blog/azure-cost-management-2019-year-in-review" target="_blank">2019년에는 AZURE</a> Portal의 단일 창 뒤에 AWS 및 Azure 비용을 함께 관리하기 위한 미리 보기 지원뿐만 아니라 EA(기업계약), PAYG(종량제), MCA(Microsoft 고객 계약), CSP(클라우드 솔루션 공급자) 계정에서 Azure Cost Management 및 청구를 위한 토대를 마련했습니다.</p>
+
+
+  <p>2020년 우선 순위의 글로벌 변화로 인해 1월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-updates-january-2020/#exports" target="_blank">MCA에 대한 예정된 수출</a> , 4월 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-april-2020/#budgets" target="_blank">예산에서 예약 및 Marketplace 구매</a> 포함, 8월 수출의 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-august-2020/#exports" target="_blank">분할 상환 비용</a> , 6월 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-june-2020/#azuregov" target="_blank">Azure Government에 대한 프로그래밍 방식 구독 생성</a> 등 기존 기능에 대한 지원을 확대함으로써 이 기반을 더욱 공고히 하는 데 다시 초점을 맞고 있습니다. 4월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-april-2020/#azuregov" target="_blank">FedRAMP High</a> 와 같은 추가 규정 준수 노력을 포함하여 플랫폼을 보다 안전하고 안정적이며 성능 있게 만드는 데 많은 노력을 기울였습니다. 또한 1월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-updates-january-2020/#mg" target="_blank">관리 그룹에 대한 사용자 지정 RBAC(역할 기반 액세스 제어) 역할 지원</a> 및 10월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-october-2020/#subscriptions" target="_blank">ARM(Azure Resource Manager) 배포 템플릿에서 구독 만들기</a> 와 같은 피드백에 따라 격차를 해결했습니다.</p>
+
+
+  <p>또한 3월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-march-2020/#invoices" target="_blank">PAYG에 대한 송장 개선 사항</a> 과 5월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-may-2020/#billing" target="_blank">MCA</a> 가 개선되었습니다. MCA 변경 내용은 조직에서 구독을 별도의 청구서로 그룹화할 수 있게 했기 때문에 특히 흥미롭습니다. 이는 오늘날 EA를 사용하는 기업에 대한 일반적인 요청이었습니다. 물론 이는 클래식 EA, PAYG 및 CSP 계정보다 MCA 계정의 이점 중 하나일 뿐입니다. 많은 사용자가 이미 MCA로의 전환에 대해 논의하고 있을 수 있지만, 그렇지 않은 경우 파트너 또는 Microsoft 담당자에게 문의하여 MCA 및 Azure 플랜에 대해 자세히 알아보세요.</p>
+
+
+  <p>마지막으로, 클라우드 간 제품을 다루지 않으면 연도가 완료되지&#39;것입니다. AWS용 Azure Cost Management <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-september-2020/#aws" target="_blank">커넥터는 이제</a> 9월 현재 일반 공급되며 현재 Azure 및 AWS에서 비용 관리를 시작할 준비가 되었습니다.</p>
+
+
+  <h3><a name="coverage-next"></a>다음&#39;?</h3>
+
+
+  <p>2021년 내내, 특히 안정성 및 성능과 함께 플랫폼이 진화하고 성장하는 것을 계속 볼&#39;있습니다. MCA의 경우 새 기능의 우선 순위가 지정되며, 경우에 따라 클래식 계정에서 사용할 수 없는 경우도 있습니다. 예를 들어 사용량 현황 데이터는 현재 Azure Cost Management 내에서 사용할 수 있는 데 8~24시간이 걸릴 수 있지만 몇 시간 내에 비용을 얻기 위해 Azure의 모든 팀과 함께 작업할&#39;있습니다. MCA에서 먼저 사용할 수 있게 되는 것을 볼&#39;있습니다. 스폰서쉽에 대한 지원은 현재 사용할 수 있는 클래식 스폰서쉽 구독 대신 MCA를 통해 제공됩니다. 마찬가지로 클래식 CSP를 사용하는 모든 조직이 Azure 플랜으로 전환하여 비용을 파악하고 최적화하는 것이 좋습니다. 이는 현재 CSP 공급자가 이미 사용할 수 있습니다. Azure 플랜이 아닌 클래식 CSP 구독에 대한 직접 지원을 추가하는 대신 관리 그룹에 대한 지원 추가와 같은 MCA 기능을 확장하는 데 이 시간이 걸릴&#39;있습니다. 동시에 Azure Government의 PAYG 지원과 같은 클래식 계정의 개선 사항과 Azure Portal 내에서 EA 포털 및 계정 포털 기능에 대한 더 많은 범위를 계속 볼 수 있습니다.</p>
+
+
+  <p>단일 창 뒤에 있는 계정 및 비용 관리와 관련하여 2021의 주요 주제는 현대화와 MCA로의 전환입니다. 이러한 전환은 이미 많은 조직에서 진행 중이며 2021년 내내 계속될 것입니다. 클래식 EA 및 CSP 계정을 사용하는 조직은 이 전환 시기를 주도하지만 클래식 PAYG 및 스폰서쉽 계정에는 자동적이고 원활하게 작동합니다. 자세한 내용은 파트너 또는 Microsoft 담당자에게 문의하세요.</p>
+
+
+  <p><a name="analyze"></a>&nbsp;</p>
+
+
+  <h2>풍부한 비용 보고 및 분석</h2>
+
+
+  <p>올해는 예약 및 Azure <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-february-2020/#powerbi" target="_blank">하이브리드 혜택에 대한 새로운 Microsoft Power BI 보고서와</a> 2월<a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-february-2020/#views" target="_blank">의 리소스별 비용 보기에 대한 자세한 세부 정보</a>부터 시작하여 Azure Portal 안팎에서 새롭고 업데이트된 비용 보기를 가져왔으며, 2월에<a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-february-2020/#not-applicable" target="_blank">는 빈 비용 및 사용 특성에 대한 명확성과</a> 7월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-july-2020/#analyze" target="_blank">빈 특성 및 태그가 지정되지 않은 리소스를 기반으로 필터링</a>하는 기능과 같은 유용성 개선이 이어졌습니다. 한 해를 마무리하면서 11월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-november-2020/#views" target="_blank">리소스 및 예약에 최적화된 새 보기에 대한</a> 미리 보기도 확인했습니다. 이 미리 보기는 Azure Portal 내에서 비용 보고 및 분석을 위한 새롭고 더 유연하고 성능이 좋은 프레임워크를 도입했기 때문에 흥미롭습니다. 우리는 나중에 그것에 대해 더 많은 것을 이야기 할&#39;있습니다.</p>
+
+
+  <p>또한 앞에서 설명한 분할 상환 비용 지원, 9월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-september-2020/#pricing">모든 Azure 제품 및 서비스에 대한 PAYG 요금을 얻기 위한 새로운 API</a>를 포함하여 8월에 수출을 위한 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-august-2020/#exports">고급 일정 옵션을</a> 보았습니다.</p>
+
+
+  <h3><a name="analyze-next"></a>다음&#39;?</h3>
+
+
+  <p>비용 보고 및 분석을 위한 새로운 프레임워크를 언급했습니다. 이는 향상된 테이블과 차트를 사용하여 통합된 인사이트로 차트를 작성하고 저장된 뷰의 이메일 알림을 예약하는 Azure Portal&mdash; 내의 많은 새로운 환경을 위한 기초가 될 것입니다. 대용량 데이터 세트에 대한 더 나은 처리 및 청구 계정에 대한 PAYG 및 할인 가격을 모두 포함하는 새로운 가격 API와 같은 API 개선 사항도&#39;있습니다.</p>
+
+
+  <p><a name="control"></a>&nbsp;</p>
+
+
+  <h2>힘을 손에 넣는 유연한 비용 제어</h2>
+
+
+  <p>조직의 책임을 이끄는 것은 어려울 수 있습니다. 모든 것은 비용을 중앙 집중화하고 조직 또는 재무 계층 구조에 맞추는 것부터 시작합니다. 여러 팀 및 프로젝트에서 공유 서비스를 사용하는 경우 특히 어려울 수 있습니다. 9월 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-september-2020/#costallocation" target="_blank">의 비용 할당 미리 보기</a> 는 이러한 공유 비용을 세분화할 수 있는 첫 번째 큰 단계이며, 각 팀이&#39;이러한 공유 서비스를 포함하여 총 비용을 보고하고 모니터링할 수 있게 해줍니다.</p>
+
+
+  <p>비용을 세분화하고 해당 비용을 발생시키는 팀에 다시 보고한 후에는 비용을 제어하기 위해 잘못된 지출 패턴을 식별하고 중지할&#39;있습니다. 초과분에 대한 알림을 받고 조치를 취하기 위해 예산을 정의할 수 있다는 것을 이미 알고 있습니다. 전자 메일 알림만큼 간단하거나 요금이 청구되지&#39;수 있도록 모든 리소스를 삭제하는 것과 같이 과감하게 수행할 작업을 결정합니다. 2020년은 4월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-april-2020/#budgets" target="_blank">예약 및 Marketplace 구매를 예산에</a> 포함시켜 비용을 보다 완벽하게 파악하고, <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-june-2020/#budgets" target="_blank">예산 시작 월을 사용자 지정하고,</a>&nbsp; 6월에 100퍼센트 &nbsp;이상의 임계값을 설정하여 수행할 작업과 시기를 보다 세밀하게 제어하고,&nbsp; 11월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-november-2020/#budgets">예산 경고 언어를 사용자 지정할</a> 수 있도록 함으로써 이를 개선했습니다.  더 광범위한 대상에 도달하기 위한 것입니다.</p>
+
+
+  <h3><a name="control-next"></a>다음&#39;?</h3>
+
+
+  <p>이전에는&nbsp; 성능 및 안정성에 대한 플랫폼 개선이 계속되었습니다. 또한 2시간 이내에 경고하거나 예산을 초과할 것으로 예상되는 궁극적인 목표를 통해 알림 시간이 크게 개선된 예산으로 확장되는 것을 볼 수&#39;있습니다. 위에서 설명한 대로 MCA 계정으로 시작합니다. 또한 조직에서 필요한 방식으로 비용을 보다 유연하게 관리할 수 있도록 관리 그룹 및 태그에 대한 개선 사항도 살펴볼&#39;있습니다.</p>
+
+
+  <p><a name="optimize"></a>&nbsp;</p>
+
+
+  <h2>더 적은 값으로 더 많은 작업을 저장하고 수행하는 새로운 방법</h2>
+
+
+  <p>클라우드 컴퓨팅에는 유연성과 속도에서 확장성 및 보안에 이르기까지 많은 약속이 제공됩니다. 비용 절감의 약속은 종종 클라우드 마이그레이션의 원동력이지만 달성하기 어려운 요소 중 하나입니다. 다행히 Azure는 거의 매달 새로운 비용 최적화 기회를 제공합니다. 이는 Azure Advisor에서 제공하는 권장 사항을 기반으로 하며, 이 권장 사항은 이미 배포한 리소스에 대한 비용을 절약하기 위해 특별히 조정됩니다. 2020년은 새로운 가격 책정 및 할인 가격 책정에서 현재 비용 절감 옵션의 확장된 지원, 새로운 권장 사항 등에 이르기까지 2019 &ndash; 년에 본 것보다 두 배 이상 많은 비용 최적화 기회 &ndash; 로 로드되었습니다. 다음은 2020년에 새로운 비용 절감 기회를 살 수 있는 몇 가지 서비스입니다.</p>
+
+
+  <ul>
+      <li>AI +&nbsp;기계 학습 <ul>
+          <li><a href="https://azure.microsoft.com/updates/azure-machine-learning-offers-new-capabilities-at-no-added-cost" target="_blank">Azure Machine Learning</a></li>
+      </ul>
+      </li>
+      <li>분석 <ul>
+          <li>Azure Synapse Analytics(<a href="https://azure.microsoft.com/updates/cost-optimization-enhancements-now-available-in-azure-advisor" target="_blank">8월 19일</a>, <a href="https://azure.microsoft.com/blog/how-azure-synapse-analytics-can-help-you-respond-adapt-and-save" target="_blank">8월 24일</a>)</li>
+      </ul>
+      </li>
+      <li>Compute <ul>
+          <li>Azure 하이브리드 혜택(<a href="https://azure.microsoft.com/updates/hbv2series-vms-now-available-in-japan-east" target="_blank">6월 15일</a>, <a href="https://azure.microsoft.com/updates/announcing-extended-term-reservation-for-the-azure-hbv2-virtual-machine" target="_blank">6월 22일</a>)</li>
+          <li><a href="https://azure.microsoft.com/updates/azure-devtest-discounts-are-now-available" target="_blank">Azure DevTestvirtual&nbsp; Machines</a>&nbsp;(VM)</li>
+          <li>Azure 스폿 VM(<a href="https://azure.microsoft.com/updates/azure-spot-virtual-machines-are-now-generally-available" target="_blank">4월</a>, <a href="https://azure.microsoft.com/blog/unlock-cost-savings-and-maximize-value-with-new-azure-infrastructure-innovation" target="_blank">9월</a>)</li>
+          <li>SAP HANA용 VM(<a href="https://docs.microsoft.com/azure/cost-management-billing/reservations/prepay-hana-large-instances-reserved-capacity?toc=/azure/cost-management-billing/reservations/toc.json" target="_blank">8월</a>, <a href="https://azure.microsoft.com/blog/reduce-costs-with-new-memoryoptimized-azure-virtual-machines-certified-for-sap-hana" target="_blank">11월</a>)</li>
+          <li>임시 OS 디스크(<a href="https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations#create-an-ephemeral-os-disk-recommendation" target="_blank">5월</a>, <a href="https://azure.microsoft.com/updates/ephemeral-os-disks-for-azure-vms-now-supports-additional-vm-sizes" target="_blank">6월</a>)</li>
+          <li>Azure 전용 호스트(<a href="https://azure.microsoft.com/updates/azure-dedicated-hosts-now-provide-support-for-azure-reservations" target="_blank">9월 1일 3월</a>, <a href="https://azure.microsoft.com/updates/azure-dedicated-hosts-now-support-new-azure-virtual-machines-series" target="_blank">6월 1</a>일, <a href="https://azure.microsoft.com/updates/new-azure-dedicated-hosts-capabilities" target="_blank">9월 22</a>일, <a href="https://azure.microsoft.com/blog/unlock-cost-savings-and-maximize-value-with-new-azure-infrastructure-innovation" target="_blank">9월 23일</a>) <a href="https://azure.microsoft.com/updates/azure-dedicated-hosts-now-support-additional-azure-virtual-machines" target="_blank"></a></li>
+          <li><a href="https://azure.microsoft.com/updates/azure-spring-cloud-basic-tier-is-now-in-preview" target="_blank">Azure Spring Cloud</a></li>
+          <li><a href="https://azure.microsoft.com/blog/unlock-cost-savings-and-maximize-value-with-new-azure-infrastructure-innovation" target="_blank">Windows Virtual Desktop</a></li>
+      </ul>
+      </li>
+      <li>컨테이너 <ul>
+          <li><a href="https://azure.microsoft.com/updates/public-preview-aks-startstop-cluster-feature" target="_blank">Azure Kubernetes Service</a></li>
+          <li><a href="https://azure.microsoft.com/blog/lower-prices-and-more-flexible-purchase-options-for-azure-red-hat-openshift" target="_blank">Azure Red Hat OpenShift</a>.</li>
+      </ul>
+      </li>
+      <li>데이터베이스 <ul>
+          <li>Azure SQL 데이터베이스(<a href="https://azure.microsoft.com/updates/azure-sql-database-serverless-increases-compute-autoscaling-limits-over-2x" target="_blank">6월</a>, <a href="https://azure.microsoft.com/updates/cost-optimization-enhancements-now-available-in-azure-advisor" target="_blank">8월</a>, <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-september-2020/#optimizationtips" target="_blank">9월</a>, <a href="https://azure.microsoft.com/updates/reserved-capacity-on-azure-sql-database-hyperscale-is-now-available" target="_blank">10월</a>)</li>
+          <li><a href="https://azure.microsoft.com/updates/register-your-azure-sql-virtual-machines-with-sql-server-iaas-agent-extension-today" target="_blank">Virtual Machines의 SQL Server</a></li>
+          <li>Azure Cosmos DB(<a href="https://azure.microsoft.com/blog/build-apps-of-any-size-or-scale-with-azure-cosmos-db" target="_blank">5월</a>, <a href="https://azure.microsoft.com/updates/cost-optimization-enhancements-now-available-in-azure-advisor" target="_blank">8월</a>, <a href="https://azure.microsoft.com/updates/serverless-offer-for-azure-cosmos-db-in-preview-on-all-apis" target="_blank">11월</a>)</li>
+          <li>Azure Database for MariaDB(<a href="https://azure.microsoft.com/updates/azure-database-for-mariadb-reserved-capacity-pricing-is-now-available" target="_blank">3월</a>, <a href="https://azure.microsoft.com/updates/cost-optimization-enhancements-now-available-in-azure-advisor" target="_blank">8월</a>)</li>
+          <li>Azure Database for MySQL(<a href="https://azure.microsoft.com/updates/3-years-reserved-capacity-now-available-mysql" target="_blank">3월</a>, <a href="https://azure.microsoft.com/updates/cost-optimization-enhancements-now-available-in-azure-advisor" target="_blank">8월</a>)</li>
+          <li>Azure Database for PostgreSQL(<a href="https://azure.microsoft.com/updates/one-and-three-year-reserved-capacity-for-azure-database-for-postgresqhyperscale-citus" target="_blank">7월</a>, <a href="https://azure.microsoft.com/updates/cost-optimization-enhancements-now-available-in-azure-advisor" target="_blank">8월</a>, <a href="https://azure.microsoft.com/updates/azure-database-for-postgresql-flexible-server-now-in-preview" target="_blank">9월</a>)</li>
+      </ul>
+      </li>
+      <li>개발자 도구 <ul>
+          <li><a href="https://azure.microsoft.com/updates/pay-for-users-once-across-organizations" target="_blank">Azure DevOps</a></li>
+          <li><a href="https://azure.microsoft.com/updates/azure-devtest-labs-environments-are-now-available-in-azure-government" target="_blank">Azure Government</a>, <a href="https://azure.microsoft.com/updates/azure-devtest-labs-is-now-available-in-switzerland-regions/" target="_blank">스위스</a> 및 <a href="https://azure.microsoft.com/updates/azure-devtest-labs-now-available-in-more-regions" target="_blank">UAE, 독일 및 노르웨이</a>의 DevTest Labs</li>
+      </ul>
+      </li>
+      <li>Storage <ul>
+          <li><a href="https://azure.microsoft.com/updates/cost-optimization-enhancements-now-available-in-azure-advisor" target="_blank">Blob Storage</a></li>
+          <li><a href="https://azure.microsoft.com/updates/archive-tier-for-azure-data-lake-storage-now-generally-available" target="_blank">Data Lake Storage</a></li>
+          <li><a href="https://azure.microsoft.com/updates/achieve-higher-performance-and-cost-savings-on-azure-disk-storage-with-performance-tiers" target="_blank">Disk Storage</a></li>
+          <li><a href="https://azure.microsoft.com/updates/smb-multichannel-preview-is-now-available-on-azure-files-premium-tier" target="_blank">Azure 파일</a></li>
+          <li><a href="https://azure.microsoft.com/updates/public-preview-of-azure-netapp-files-cross-region-replication-crr-capability" target="_blank">Azure NetApp Files</a></li>
+          <li>Azure Backup(<a href="https://azure.microsoft.com/blog/unlock-cost-savings-and-maximize-value-with-new-azure-infrastructure-innovation" target="_blank">9월 23</a>일, <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-september-2020/#optimizationtips" target="_blank">9월 30</a>일, <a href="https://azure.microsoft.com/updates/azure-backup-for-sap-hana-databases-now-supports-incremental-backups-public-preview" target="_blank">11월</a>)</li>
+      </ul>
+      </li>
+      <li>네트워킹 <ul>
+          <li><a href="https://azure.microsoft.com/blog/unlock-cost-savings-and-maximize-value-with-new-azure-infrastructure-innovation" target="_blank">Azure Load Balancer</a></li>
+          <li><a href="https://azure.microsoft.com/blog/unlock-cost-savings-and-maximize-value-with-new-azure-infrastructure-innovation" target="_blank">Azure Private Link</a></li>
+          <li><a href="https://azure.microsoft.com/blog/unlock-cost-savings-and-maximize-value-with-new-azure-infrastructure-innovation" target="_blank">가상 WAN</a></li>
+      </ul>
+      </li>
+      <li>웹 <ul>
+          <li>App Service(<a href="https://azure.microsoft.com/updates/cost-optimization-enhancements-now-available-in-azure-advisor" target="_blank">8월</a>, <a href="https://azure.microsoft.com/updates/app-service-discount-for-premium-plans" target="_blank">10월</a>)</li>
+      </ul>
+      </li>
+  </ul>
+
+
+  <p>이러한 서비스별 비용 최적화 기회 외에도 다음을 확인할 수 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/partner-center/give-customers-permission#give-customers-permission-to-buy-their-own-azure-reservations" target="_blank">CSP 고객이 공급자가</a> 사용하도록 설정한 후 5월에 Azure 예약을 구매할 수 있도록 지원합니다.</li>
+      <li>8월 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-august-2020/#reservations" target="_blank">예약 권장 사항에 대한 자세한 내용</a>.</li>
+      <li>4월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-april-2020/#advisor" target="_blank">Azure Resource Graph</a> Advisor 비용 권장 사항을 사용하는 새로운 방법, 6월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-june-2020/#advisor" target="_blank">전자 메일 다이제스트</a>, 8월<a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-august-2020/#advisor" target="_blank">의 빠른 수정 수정 작업</a>, 10월에 전체 최적화를 정량화하는 새로운 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-october-2020/#advisor" target="_blank">Advisor 점수</a>.</li>
+      <li><a href="https://azure.microsoft.com/blog/unlock-cost-savings-and-maximize-value-with-new-azure-infrastructure-innovation" target="_blank">9월 23일, 9월 30</a>일 및 <a href="https://azure.microsoft.com/blog/how-to-optimize-your-azure-workload-costs-2" target="_blank">11월 12</a>일에 사용할&#39;워크로드를 기반으로 하는 비용 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-september-2020/#optimizationtips" target="_blank"></a>최적화에 대한 광범위한 지침입니다.</li>
+  </ul>
+
+
+  <h3><a name="optimize-next"></a>다음&#39;?</h3>
+
+
+  <p>평소와 같이 2021년 내내 동일한 유형의 비용 최적화 기회를 더 많이 볼&#39;있습니다. 또한&#39;서비스 팀과 계속 협력하여 비용 권장 사항을 제공하고 기존 워크로드를 더 많이 절약할 수 있는 새로운 방법을 찾을 수 있습니다.</p>
+
+
+  <p><a name="use-learn"></a>&nbsp;</p>
+
+
+  <h2>Cost Management 및 청구를 더 쉽게 학습하고 사용할 수 있도록 만들기</h2>
+
+
+  <p>Cost Management 및 Billing을 더 쉽게 사용하고 더 쉽게 학습할 수 있는 방법을 지속적으로 살펴볼&#39;있습니다. 포털의 피드백 및 <a href="https://aka.ms/costmgmt/feedback" target="_blank">피드백 포럼</a> 부터 2020년에 공유한 foursurveys&nbsp;와 같은 사용자 연구에 이르기까지 많은 대화&mdash;가 중요합니다. 올해는 1월에 새로운 <a href="https://azure.microsoft.com/blog/azure-cost-management-updates-january-2020/#labs" target="_blank">미리 보기 시도 명령을</a> 시작하여 포털에서 직접 미리 보기 기능을 탐색할 수 있습니다. 1년 내내 2월 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-february-2020/#labs" target="_blank">의 비용 분석 유용성 업데이트</a> , 5월의 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-may-2020/#labs" target="_blank">간소화된 탐색</a> , <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-september-2020/#labs" target="_blank">대시보드 타일 및 9월에 개선 시작</a> , 10월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-october-2020/#labs" target="_blank">새로운 리소스 및 예약 보기</a> , 11월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-november-2020/#labs" target="_blank">세 번의 탐색 실험을</a> 포함하여 14개의 미리 보기가 있었습니다. 또한 <a href="https://azure.microsoft.com/blog/azure-cost-management-updates-january-2020/#viewcharges" target="_blank">비용(요금 보기)이 비활성화된 이유와 1월에 문제를 해결하는 방법 및</a> 2월에 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-february-2020/#not-applicable" target="_blank">빈 비용 및 사용 특성에</a> 대한 <a href="https://azure.microsoft.com/blog/azure-cost-management-billing-updates-february-2020/#help" target="_blank">새로운 도움말 메뉴</a>와 보다 명확한 설명을 명확히 하는 등 도움이 되는 주요 개선 사항을 살펴보셨습니다. 물론, 이것들은 우리가 이야기한 더 큰 것들일 뿐입니다. 우리는 거의 매주 작은 개선을 지속적으로 배송할&#39;있습니다.</p>
+
+
+  <p>그러나 포털 환경에 대한 모든&#39;아닙니다. 2020년 내내 Microsoft, 파트너 및 커뮤니티의 수백 개의 비디오 및 설명서 업데이트가 있었습니다. 비용 가시성, 책임 및 최적화의 중요성이 얼마나 커졌는지 보는 것은 정말 놀랍습니다. 주요 설명서 업데이트 50개를 기반으로 33개의 비디오,&nbsp; 1개의 웹 세미나 및 5 <a href="https://aka.ms/costmgmt/learn" target="_blank">개의 Microsoft Learn 모듈</a> 을 다루었습니다.</p>
+
+
+  <h3><a name="use-learn-next"></a>다음&#39;?</h3>
+
+
+  <p>2021년에는 미리 보기 및 실험에 대한 초기 액세스를 통해 사용 편의성을 개선하기 위한 지속적인 노력이 필요합니다. 사용했던 마지막 범위 기억, 계정 및 구독을 구성할 때 최적화, Cost Management 및 청구 전체에서 향상된 탐색 개선 사항을 포함한 피드백을 얻을&#39;있습니다. 또한 문제를 보다 쉽게 해결할 수 있도록 오류 메시지 개선 사항을 살펴볼&#39;있으며 비디오 및 설명서와 같은 리소스를 학습하는 데 시간을 할애할 것입니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>또 다른 해를 기대합니다.</h2>
+
+
+  <p>2019 년과 마찬가지로 지난 12 개월은 향상된 기능으로 로드되었습니다. 여기에서 모두 나열하지&#39;수 있지만 한 가지만 제거하면 변경된 내용과&#39;최신&#39;뉴스에 대한 <a href="https://aka.ms/costmgmt/blog" target="_blank">Azure Cost Management 및 청구 월별 업데이트를</a> 확인하고 구독하세요.</p>
+
+
+  <p>이러한 새롭고 업데이트된 기능을 사용할 수 있게 됨에 따라 여러분의 피드백을 기다리고 있습니다. 그리고 최신 기능에 관심이&#39;있는 경우 모든 사용자가 다시 사용할 수&#39;전에 <a href="https://aka.ms/costmgmt/labs" target="_blank">Cost Management Labs</a> 를 확인하고 주저하지 말고&rsquo; 피드백을 제공합니다. Cost Management Labs는 Azure Cost Management 및 청구 엔지니어링 팀에 직접 연결하고 적극적으로 개발 및 조정되는 기능에 영향을 주고 즉각적인 영향을 주는 가장 좋은 방법입니다.</p>
+
+
+  <p>Twitter를 팔로우 <a href="https://twitter.com/azurecostmgmt" target="_blank">@AzureCostMgmt</a> 하고 <a href="https://aka.ms/costmgmt/videos" target="_blank">YouTube 채널을</a> 구독하여 업데이트, 팁 및 요령을 확인하세요! 그리고 언제나처럼, 당신의 아이디어를 공유하고 <a href="https://aka.ms/costmgmt/feedback" target="_blank">비용 관리 피드백 포럼</a>에서 다른 사람을 투표.</p>
+
+
+  <p>우리는 이것이 모두를 위해 노력하는 시간인 것을 알고 있습니다. Azure Cost Management 및 청구 팀에서 최고의 소원을 기원합니다. 안전하게 지내고, 건강을 유지하고, 2021년에 만나보세요!</p>

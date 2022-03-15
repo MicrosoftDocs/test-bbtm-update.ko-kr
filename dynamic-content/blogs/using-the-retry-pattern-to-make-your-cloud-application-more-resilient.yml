@@ -1,0 +1,87 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 841bf5a6dd02f1bcda1646d0084635a205dfeab9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903422"
+Slug: using-the-retry-pattern-to-make-your-cloud-application-more-resilient
+Title: 다시 시도 패턴을 사용하여 클라우드 애플리케이션 복원력 향상
+Summary: 컨테이너 또는 클라우드에서 애플리케이션을 실행해도 애플리케이션의 복원력이 자동으로 회복되지는 않습니다. 제공하는 재시도 논리를 사용하도록 설정하는 기능을 구성하는 것은 사용자의  달려 있습니다.
+Content: >-
+  <p><em>이 게시물은 <a href="https://mvp.microsoft.com/en-us/PublicProfile/5002533">제이슨 헤일리, Microsoft Azure MVP</a>에 의해 작성되었습니다.</em></p>
+
+
+  <p>최근에, 나는 보스턴 코드 캠프에서 몇 가지 오래된 친구를 따라 잡고 컨테이너 또는 컨테이너에서 실행하는 마이크로 서비스 응용 프로그램을 마이그레이션하는 내 현재 프로젝트에서 나를 도울 수있는 아무것도에 대해 배우고 찾고 있었다. 나는 폴리에 세션을 제시 한 친구와 이야기하고 있었다, 그는 내 관심을 얻었다 코멘트를했다. 그는 세션에 참석한 사람 중 한 명이 클라우드를 사용하면 애플리케이션이 본질적으로 복원력이 있고 Polly가 제공하는 기능이 필요하지 않다는 인상을 받았다고 말했습니다.</p>
+
+
+  <p>Polly에 익숙하지 않은 경우 이 라이브러리를 사용하여 다시 시도, 회로 차단기, 시간 초과, 대량 격리 및 대체와 같은 일반적인 패턴을 코드에 쉽게 추가하여 시스템의 복원력을 높일 수 있습니다. Scott Hanselman은 최근 블로그 게시물을 작성했습니다. 폴리<a href="https://www.hanselman.com/blog/AddingResilienceAndTransientFaultHandlingToYourNETCoreHttpClientWithPolly.aspx">와 함께 .NET Core HttpClient에 복원력 및 일시적인 오류 처리를 추가하여 ASP.NET Core</a> 2.1에서 Polly 및 HttpClient를 사용하는 방법을 논의했습니다.</p>
+
+
+  <p>참석자가 언급했을 수 있는 것은 <a href="https://docs.microsoft.com/en-us/azure/architecture/best-practices/retry-service-specific">대부분의 Azure 서비스 및 클라이언트 SDK</a> 에 재시도를 수행할 수 있는 기능(애플리케이션 복원력을 만드는 데 큰 역할을 할 수 있음)이 있지만 경우에 따라 재시도 논리를 구체적으로 설정해야 한다는 것입니다. 또한 타사 클라이언트 SDK는 다양한 방법으로 다시 시도 논리를 설정해야 할 수 있습니다. 애플리케이션을 클라우드에 배치하는 것만으로는 애플리케이션의 복원력이 자동으로 회복되지 않습니다.</p>
+
+
+  <h2>복원력이란?</h2>
+
+
+  <p>복원력은 충돌하지 않고 계속 실행하면서 부분 오류를 처리하는 기능입니다. 최신 애플리케이션 아키텍처 &mdash; 에서는 온-프레미스 컨테이너에서 실행되는 마이크로 서비스이든 클라우드에서 실행되는 애플리케이션이든 간에 오류가 &mdash; 발생합니다. 예를 들어 네트워크를 통해 통신하는 애플리케이션(예: 데이터베이스 또는 API와 통신하는 서비스)은 일시적인 오류가 발생합니다. 이러한 일시적인 오류로 인해 시간 제한, 오버로드된 리소스, 네트워킹 딸결, 그리고 계속 진행되어 재현하기 어려운 기타 문제로 인해 가동 중지 시간이 줄어듭니다. 이러한 오류는 일반적으로 자체 수정입니다.</p>
+
+
+  <p>오류를 방지할 수는&rsquo; 없지만 시스템을 유지하거나 가동 중지 시간을 최소화하는 방식으로 대응할 수 있습니다. 예를 들어 하나의 마이크로 서비스가 실패하면 그 영향으로 인해 시스템이 실패할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fd65ba13-b861-472a-9826-e596a2291ffe.png"><img alt="Block diagram showing system impact due to a failed microservice" border="0" height="218" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b01a151a-96ff-44b4-aa3a-ccee904c47d6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="실패한 마이크로 서비스로 인한 시스템 영향" width="640"></a></p>
+
+
+  <p>모놀리식 애플리케이션에서 마이크로 서비스로 이동하는 최신 애플리케이션 디자인의 경우 서로 통신해야 하는 구성 요소 수가 증가하여 복원력이 더욱 중요해집니다.</p>
+
+
+  <h2>시스템을 보다 복원력 있게 만들려면 어떻게 해야 하나요?</h2>
+
+
+  <p>최근 Ive&rsquo;는 <a href="https://github.com/dotnet-architecture/eShopOnContainers">eShopOnContainers</a>라는 GitHub 참조 마이크로 서비스 애플리케이션이 있는 <a href="https://aka.ms/microservicesebook">컨테이너화된 .NET 애플리케이션용 아키텍처인 .NET 마이크로</a> 서비스를 읽어 왔습니다. .NET Core 2.1로 작성된 eShopOnContainers는 Docker 컨테이너를 사용하는 마이크로 서비스 아키텍처입니다. Ill&rsquo;은 샘플 코드에 대한 참조 애플리케이션을 참조합니다. 여기서는 논의하지 않을&rsquo; 서비스 <a href="https://docs.microsoft.com/en-us/azure/architecture/microservices/interservice-communication#using-a-service-mesh">메시</a>와 같은 코드를 추가하지 않고 서비스 간 통신의 복원력을 높일 수 있는 몇 가지 새로운 기술이 있습니다. 코드에서 사용할 수 있는 형식 패턴을 살펴보고 싶습니다. <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/retry">다시 시도</a> 및 <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker">회로 차단기</a>라는 몇 가지 복원력 패턴의 예를 살펴보겠습니다&rsquo;. <a href="https://docs.microsoft.com/en-us/azure/architecture/">Azure 아키텍처 센터는</a> 애플리케이션에서 사용할 수 있는 몇 가지 <a href="https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency">복원력 패턴을</a> 다룹니다.</p>
+
+
+  <h3>재시도</h3>
+
+
+  <p>재시도는 시스템의 구성 요소 간 통신에서 발생하는 일시적인 오류를 처리하는 효과적인 방법이 될 수 있습니다. 앞서 설명한 것처럼 대부분의 Azure 서비스 및 클라이언트 SDK에는 재시도를 수행하기 위한 기능이 있습니다. 데이터베이스로 작업할 때 한 가지 예는 Entity Framework Core 및 <b>EnableRetryOnFailure</b> 를 사용하여 재시도 전략을 구성하는 것입니다. eShopOnContainers 코드에서 <a href="https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Catalog/Catalog.API/Startup.cs">Catalog.API 프로젝트의 Startup.cs</a> 파일을 확인하여 이 예제를 볼 수 있습니다. CatalogContext를 구성하는 아래쪽에 있는 CustomExtensionsMethods 유틸리티 클래스의 AddCustomDbContext&rsquo; 메서드에서 <b>EnableRetryOnFailure</b>의 사용법을 확인할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6a11d5ec-3943-4392-a7fe-371a3417d0d0.png"><img alt="Code sample: AddCustomDbContext method from Startup.cs" border="0" height="254" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ea198cdf-25c5-4526-9154-707c393e50f1.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Startup.cs의 AddCustomDbContext 메서드" width="827"></a></p>
+
+
+  <p>위의 코드는 Entity Framework Core가 실패하기 전에 데이터베이스 호출을 최대 10번 재시도하고 재시도 &mdash; 사이에 약간의 시간 지연을 추가하지만 30초 이상 지연되지 않음을 보여줍니다. 기본 실행 전략(다른 실행 전략도 있음)을 사용합니다. 실패한 데이터베이스 호출을 자동으로 다시 시도하도록 Entity Framework Core를 구성하는 방법에 대해 자세히 알아보려면 <a href="https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency">연결 복원력</a>에서 세부 정보를 찾을 수 있습니다.</p>
+
+
+  <h3>회로 차단기</h3>
+
+
+  <p>개발자는 종종 회로 차단기와 재시도 패턴을 함께 사용하여 재시도를 중단합니다. 재시도는 작업을 다시 시도하지만 성공&rsquo;하지 못할&rsquo; 때는 항상 한 번 더 시도하거나 문제가 길어질 위험이 있습니다(특히 부하가 많은 서비스로 인해 오류가 발생하는 경우). 회로 차단기 패턴은 설정된 횟수의 재시도에 실패한 후 작업의 모든 재시도를 효과적으로 종료합니다. 이렇게 하면 시스템이 알려진 한도에 도달한 후 실패한 재시도에서 복구할 수 있으며, 캐시된 값으로 되돌리거나 나중에 다시 시도하기 위해 사용자에게 메시지를 반환하는 등 다른 방식으로 반응할 수 있습니다.</p>
+
+
+  <p>올해 초 <a href="https://aka.ms/microservicesebook">.NET 마이크로 서비스: 컨테이너화된 .NET 애플리케이션용 아키텍처</a> 전자책을 읽었을 때 복원력에 대한 챕터에서 <b>ResiliencHttpClient</b> 라는 특히 유용한 HttpClient 래핑 클래스를 발견했습니다. 이 유틸리티 클래스는 GitHub 리포지토리를 복제하고 eShopContainers 코드를 학습하기 시작한 <i>이유</i>입니다. .NET Core 2.1을 사용하기 위한 코드베이스 업데이트 이후 리팩터링 시 동일한 작업을 수행하는 새 기능을 사용하기 위해 해당 유틸리티 클래스가 제거되었습니다. 그러나 궁금하거나 .NET Core 2.1을 아직 사용하지 않는 경우 GitHub <a href="https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/Resilience/Resilience.Http/ResilientHttpClient.cs">ResilientHttpClient.cs</a>에서 코드를 찾을 수 있습니다. HttpInvoker 메서드는 이 유틸리티의 핵심입니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a95f50ec-0092-4b02-b9cb-20377bdfbc4e.png"><img alt="Code sample: HttpInvoker method from ResilientHttpClient.cs" border="0" height="242" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b1a658d6-995e-4883-a5f7-6ceebcb55bba.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="ResilientHttpClient.cs의 HttpInvoker 메서드" width="642"></a></p>
+
+
+  <p>이 메서드는 Polly를 사용하여 <b>기하급수적 백오프 재시도 정책과 회로 차단기 정책을</b> 사용하여 HttpClient를 사용하여 호출합니다. 그러면 지정된 수의 실패한 재시도에 도달한 후 1분 동안 재시도가 중지됩니다. 메서드의 마지막 줄은 전달 작업을 실행하여 호출을 만드는 줄입니다. 이것은 작은 코드 조각에서만 의미가 없을 수도 있지만, <em>복원력 있는 애플리케이션 구현</em> 전자책의 섹션 8은 ResilientHttpClient 유틸리티 클래스의 작동 방식에 대해 자세히 설명합니다. 경찰은 ResilientHttpClientFactory 클래스의 CreateResilientHttpClient 메서드에 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d30facd5-2b66-4292-9e46-90f38bba1c15.png"><img alt="Code Sample: ResilientHttpClientFactory class from .NET Microservices: Architecture for Containerized .NET Applications" border="0" height="718" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8c1718e0-d218-4fd7-940f-48d847b15060.png" style="display: inline; background-image: none;" title=".NET 마이크로 서비스의 ResilientHttpClientFactory 클래스: 컨테이너화된 .NET 애플리케이션에 대한 아키텍처" width="602"></a></p>
+
+
+  <p>정책이 무엇인지 이해할 수 있어야 하지만, 자세한 설명을 위해 전자책을 다시 참조합니다. 또한 .NET Core 2.1을 사용하는 경우 전자책&rsquo; 업데이트에는 새 HTTPClientFactory를 구성하고 사용하여 동일한 작업을 수행하는 방법에 대한 유용한 정보가 있습니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>컨테이너 또는 클라우드에서 애플리케이션을 실행해도 애플리케이션의 복원력이 자동으로 회복되지는 않습니다. &rsquo;제공하는 재시도 논리를 사용하도록 설정하는 기능을 구성하는 것은 사용자에게 달려 있습니다. 시스템에 추가된 재시도 논리가 필요한 경우 Polly와 같은 라이브러리를 사용하여 구현 속도를 향상시켜야 합니다. 또는 코드 없이 복원력을 추가하는 방법을 탐색하는 경우 <a href="https://istio.io/">Istio</a> 및 <a href="https://linkerd.io/">Linkerd</a>와 같은 서비스 메시 제품을 조사해야 합니다.</p>
+
+
+  <p>애플리케이션에서 HttpClient를 사용하여 API를 호출하는 경우 . <a href="https://aka.ms/microservicesebook">NET 마이크로 서비스: 컨테이너화된 .NET 애플리케이션용 아키텍처</a>는 <a href="https://github.com/dotnet-architecture/eShopOnContainers">GitHub 리포지토리</a>를 전자책으로 작성하고 복제합니다. 전자책에서는 마이크로 서비스 아키텍처를 이해하는 데 도움이 되는 참조 아키텍처에 대해 자세히 설명합니다.</p>
+
+
+  <p>&rsquo;또한 e-book 및 eShopOnContainers 프로젝트에 대한 Ignite 2017 브레이크아웃 세션의 이 기록이 있습니다. <a href="https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3317">.NET Core 및 Docker 컨테이너를 사용하여 마이크로 서비스 패턴을 구현합니다</a>.</p>

@@ -1,0 +1,40 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 13819a6b2a414bacf4c15fa9321b5f11d42f213a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898197"
+Slug: avoiding-ip-blacklisting-with-azure-web-sites
+Title: Azure 웹 사이트에서 IP 블랙리스트 방지
+Summary: '고객이 여러 IP 주소를 공유하는 다중 테넌트 환경에서는 한두 사이트에 악의적인 콘텐츠가 있는 것이 드문 일이 아닙니다. 어떤 경우에는 손상의 결과일 수 있으며, 다른 경우에는 의도적일 수 있습니다. '
+Content: >-
+  고객이 여러 IP 주소를 공유하는 다중 테넌트 환경에서는 한두 사이트에 악의적인 콘텐츠가 있는 것이 드문 일이 아닙니다. 어떤 경우에는 손상의 결과일 수 있으며, 다른 경우에는 의도적일 수 있습니다. 어느 쪽이든 웹에 있는 다양한 블랙리스트 서비스의 목록에 하나 이상의 공유 IP 주소가 추가되도록 할 수 있습니다. 공유 IP가 블랙리스트에 추가되면 일반적으로 무고한 사이트에도 영향을 미칩니다.
+
+
+  이러한 일이 발생하면 대부분의 고객의 본능적인 반응은 호스팅 회사에 연락하여 블랙리스트에서 IP를 제거하여 사이트 차단을 해제하라는 요청을 제출하는 것입니다. 그러나 이것은 악의적인 사이트가 결국 (그리고 일반적으로 매우 빠르게) IP가 다시 블랙리스트에 추가될 수 있기 때문에 단지 스톱 갭 조치일 뿐입니다.
+
+  <h2>사이트 보호</h2>
+
+  Azure의 다른 사이트를 제어할 수 없으며 일반적으로 블랙리스트에 추가된 사이트를 알 수 없습니다. 이 문제를 해결하고 되풀이로부터 사이트를 보호하는 유일한 방법은 전용 IP로 사이트를 구성하는 것입니다. 즉, 사이트는 다른 사이트와 공유되지 않는 자체 IP를 사용하게 됩니다. Azure에서는 IP SSL을 구성하여 전용 IP를 쉽게 가져올 수 있습니다. 이 옵션은 표준 계층의 사이트에서만 사용할 수 있지만 사이트에서 사용자 지정 도메인을 사용하는 경우 몇 가지 추가 고려 사항이 있습니다.
+
+
+  사용자 지정 도메인을 사용하고 Azure의 사이트 이름(예: contoso.azurewebsites.net)을 가리키는 CNAME 레코드가 있는 경우 DNS 공급자를 사용하여 레코드를 변경한 다음 IP-SSL을 구성하기만 하면 됩니다.
+
+
+  반면에 A 레코드를 사용하여 호스트 이름을 IP로 확인하는 경우 다음 단계를 수행하는 것이 좋습니다.
+
+  <ol>
+   <li>호스트 이름 매핑(예: www.contoso.com)을 A 레코드에서 Microsoft Azure 웹 사이트를 가리키는 CNAME(예: contoso.azurewebsites.net)으로 변경합니다.동일한 IP를 가리키기 때문에 가동 중지 시간이 없어야 합니다. DNS 복제가 수행될 때까지 잠시 기다립니다.</li>
+   <li>웹 사이트에 www.contoso.com 인증서를 업로드. <b> </b><b>구성</b> 탭의 <b>도메인 이름</b>에서 이 작업을 수행할 수 있습니다. 일반적으로 인증서 공급자에서 인증서를 구입해야 하지만 실제로 SSL을 사용하지 않으려는 경우 생성하기 쉽고 비용이 들지 않는 자체 서명된 인증서를 사용할 수 있습니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-configure-ssl-certificate/">SSL에 대한 가이드</a>에서 <b>자체 서명된 인증서 섹션(선택 사항)</b>을 참조하세요.</li>
+   <li>www.contoso.com 대한 IP 기반 SSL 바인딩을 구성합니다<b>. </b> 이 옵션은 <b>구성</b> 탭<b>의 SSL 바인딩</b>에서 사용할 수 있습니다. <b>SSL</b>에 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-configure-ssl-certificate/">대한 가이드에서 SSL</a> 구성 섹션을 참조하세요.</li>
+  </ol>
+
+  <h2></h2>
+
+  <h2>문제 보고</h2>
+
+  사이트를 전용 IP로 이동하면 문제를 Microsoft에 보고하면 근본 원인을 해결하고 다른 고객을 도울 수 있습니다. 이렇게 하려면 <a href="https://cert.microsoft.com/report.aspx">Cert.Microsoft.com</a> 이동하여 세부 정보를 제공합니다. Microsoft 보안 팀은 조사 결과에 따라 적절한 조치를 검토하고 수행합니다.
+
+
+  보안에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/support/trust-center/security/">Microsoft Azure 보안 센터를</a> 방문하세요.

@@ -1,0 +1,75 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a1423075c48595eed6c894b4d31c0d02cf705571
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899465"
+Slug: announcing-azure-private-link
+Title: Azure Private Link 발표
+Summary: 빠르게 증가하는 Azure 채택을 통해 고객은 네트워크에서 개인적이고 안전하게 데이터 및 서비스에 액세스해야 하며 기하급수적으로 증가합니다. 이를 위해 Azure Private Link의 미리 보기를 발표합니다.
+Content: >-
+  <p>고객은 가용성이 높은 동시에 전 세계로 확장할 수 있는 기능을 제공하는 Azure의 규모를 좋아합니다. 빠르게 증가하는 Azure 채택을 통해 고객은 네트워크에서 개인적이고 안전하게 데이터 및 서비스에 액세스해야 하며 기하급수적으로 증가합니다. 이를&rsquo; 위해 <b><a href="https://azure.microsoft.com/en-us/services/private-link/">Azure Private Link</a>의 미리 보기를 발표합니다.</b></p>
+
+
+  <p>Azure Private Link는 Azure 고객이 Azure VNet(Virtual Network)에서 Azure Storage 또는 SQL, Microsoft 파트너 서비스 또는 자체 서비스와 같은 Azure 서비스를 비공개로 사용할 수 있는 안전하고 확장 가능한 방법입니다. 이 기술은 공급자와 소비자가 모두 Azure에서 호스트되는 공급자 및 소비자 모델을 기반으로 합니다. 연결은 동의 기반 호출 흐름을 사용하여 설정되고 일단 설정되면 서비스 공급자와 서비스 소비자 간에 흐르는 모든 데이터가 인터넷에서 격리되고 Microsoft 네트워크에 유지됩니다. 게이트웨이, NAT(네트워크 주소 변환) 디바이스 또는 공용 IP 주소가 서비스와 통신할 필요가 없습니다.</p>
+
+
+  <p>Azure Private Link는 고객&rsquo; 프라이빗 VNet 내에 Azure 서비스를 제공합니다. VNet의 다른 리소스와 마찬가지로 개인 IP 주소를 사용하여 서비스 리소스에 액세스할 수 있습니다. 이렇게 하면 액세스 규칙을 비공개로 유지하여 네트워크 구성이 크게 간소화됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e179e50a-b5fb-4a7d-809e-b2dbcbaafc28.png"><img alt="Diagram showing the Private Link topology. Starting from services attached to Private Link, then linked and made available in the customer VNet through a Private Endpoint." border="0" height="433" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6436278d-251a-48f0-9846-d9a01f3621b4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>오늘 Azure Private Link 공지에서 가능한 몇 가지 고유한 키 사용 사례를 강조하고자 합니다.</p>
+
+
+  <h2>Azure PaaS 서비스에 대한 프라이빗 연결</h2>
+
+
+  <p>Azure Storage 및 Azure SQL Database 같은 다중 테넌트 공유 서비스는 VNet 외부에 있으며 공용 인터페이스를 통해서만 연결할 수 있습니다. 현재 Microsoft 백본 네트워크 내에서 트래픽을 유지하고 PaaS 리소스를 VNet에만 잠글 수 있도록 하는 VNet <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview">서비스 엔드포인트</a> 를 사용하여 이 연결을 보호할 수 있습니다. 그러나 PaaS 엔드포인트는 여전히 공용 IP 주소를 통해 제공되므로 Azure ExpressRoute 프라이빗 피어링 또는 VPN 게이트웨이를 통해 온-프레미스에서 연결할 수 없습니다. Azure Private Link의 오늘&rsquo; 발표를 통해 VNet에서 프라이빗 엔드포인트를 만들어 PaaS 리소스(Azure Storage 계정 Blob 또는 SQL Database 서버)에 매핑할 수 있습니다. 그런 다음, 이러한 리소스는 VNet의 개인 IP 주소를 통해 액세스할 수 있으므로 온-프레미스에서 Azure ExpressRoute 프라이빗 피어링 및/또는 VPN Gateway를 통해 연결할 수 있으며 공용 IP 주소로 열지 않음으로써 네트워크 구성을 단순하게 유지합니다.</p>
+
+
+  <h2>사용자 고유의 서비스에 대한 프라이빗 연결</h2>
+
+
+  <p>이 새로운 제품은 Azure PaaS 서비스에만 국한되지 않으며 <a href="https://docs.microsoft.com/en-us/azure/private-link/private-link-service-overview">사용자 고유의 서비스에</a> 도 활용할 수 있습니다. 현재 Azure의 서비스 공급자는 Azure에서 실행되는 다른 소비자가 액세스할 수 있도록 공용 인터페이스(IP 주소)를 통해 서비스에 액세스할 수 있도록 해야 합니다. VNet 피어링을 사용하고 소비자&rsquo; VNet에 연결하여 프라이빗으로 만들 수 있지만 확장할 수 없으며 곧 IP 주소 충돌이 발생할 것입니다. 오늘&rsquo; 공지를 통해 Azure <a href="https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-overview">표준 Load Balancer</a> 뒤에 있는 자체 VNet에서 서비스를 완전히 비공개로 실행하고, Azure Private Link에 사용하도록 설정하고, 간단한 클릭 및 승인 호출 흐름을 사용하여 다른 VNet, 구독 또는 AD(Azure Active Directory) 테넌트에서 실행되는 소비자가 서비스에 액세스할 수 있습니다. 서비스 소비자로서 자체 VNet에 프라이빗 엔드포인트를 만들고 ACL(액세스 제어 목록)을 모든 공용 IP 주소 공간에 열지 않고 Azure Private Link 서비스를 완전히 비공개로 사용하는 것만 있으면 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9812a048-be3b-4e1b-a723-6677470e3d18.png"><img alt="Before and after diagram, showing services traditionally exposed through public IPs vs exposed privately in the VNet  through Private Link " border="0" height="368" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6c3f6938-64c1-4b33-8827-632d368275e0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1024"></a></p>
+
+
+  <h2>SaaS 서비스에 대한 프라이빗 연결</h2>
+
+
+  <p>Microsoft&rsquo;의 여러 파트너는 이미 현재 Azure 고객에게 다양한 SaaS(Software-as-a-Service) 솔루션을 제공합니다. 이러한 솔루션은 퍼블릭 엔드포인트를 통해 제공되며 이러한 SaaS 솔루션을 사용하려면 Azure 고객은 공용 인터넷에 대한 프라이빗 네트워크를 열어야 합니다. 고객은 네트워크 내에서 바로 배포되는 것처럼 프라이빗 네트워크 내에서 이러한 SaaS 솔루션을 사용하려고 합니다. 고객&#39;자체 네트워크 내에서 SaaS 솔루션을 비공개로 사용하는 기능은 일반적인 요청이었습니다. Azure Private Link&rsquo;를 사용하면 프라이빗 연결 환경을 Microsoft 파트너로 확장해야 합니다. 이는 Microsoft 파트너가 Azure 고객에게 도달할 수 있는 매우 강력한 메커니즘입니다. Azure Private Link를 통해 향후 많은 Azure Marketplace 제품이 제공될 것이라고 확신할&#39;있습니다.&nbsp;</p>
+
+
+  <h3>Azure Private Link의 주요 하이라이트</h3>
+
+
+  <ul>
+   <li><b>프라이빗 온</b><b>-프레미스 액세스: </b>PaaS 리소스는 고객&rsquo; VNet의 개인 IP 주소에 매핑되므로 Azure ExpressRoute 프라이빗 피어링을 통해 액세스할 수 있습니다. 이는 데이터가 온-프레미스에서 Azure로 완전 프라이빗 경로를 트래버스한다는 것을 의미합니다. 개인 IP 주소에만 액세스할 수 있도록 회사 방화벽 및 경로 테이블의 구성을 간소화할 수 있습니다.</li>
+   <li><b>데이터 반출 보호: </b> Azure Private Link는 다른 클라우드 공급자와 마찬가지로 전체 서비스를 매핑하는 것이 아니라 특정 PaaS 리소스를 개인 IP 주소에 매핑하는 것과 관련하여 고유합니다. 이는 기본적으로 동일한 프라이빗 엔드포인트를 사용하여 다른 계정으로 데이터를 반출하려는 악의적인 의도가 실패하여 기본 제공 데이터 반출 보호를 제공한다는 것을 의미합니다.</li>
+   <li><b>간단한 설정: </b> Azure<b> </b>Private Link는 필요한 최소한의 네트워킹 구성으로 간단하게 설정할 수 있습니다. 연결은 승인 호출 흐름에서 작동하며 PaaS 리소스가 프라이빗 엔드포인트에 매핑되면 경로 테이블 및 Azure NSG(네트워크 보안 그룹)에 대한 추가 구성 없이 연결이 기본으로 작동합니다.</li>
+  </ul>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" src="https://www.microsoft.com/en-us/videoplayer/embed/RE3Mt4Y" width="560"></iframe></p>
+
+
+  <ul>
+   <li><b>겹치는 주소 공간</b>: 일반적으로 고객은 여러 VNet을 연결하는 메커니즘으로 VNet 피어링을 사용합니다. VNet 피어링을 사용하려면 VNet에 겹치지 않는 주소 공간이 있어야 합니다. 엔터프라이즈 사용 사례에서는 IP 주소 공간이 겹치는 네트워크를 찾는 경우가 많습니다. Azure Private Link는 IP 주소 공간이 겹치는 다른 VNet에서 애플리케이션을 개인적으로 연결하는 다른 방법을 제공합니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94cf5814-8552-4e15-aeca-fea07956bf0d.png"><img alt="Simple diagram illustrating services on VMs in one VNet being exposed to users in another VNet across private IP space with Azure Private Link." border="0" height="352" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2d8dad1-1317-435f-9430-c0a076328da2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1024"></a></p>
+
+
+  <h2>로드맵</h2>
+
+
+  <p>&rsquo;현재<a href="https://docs.microsoft.com/en-us/azure/private-link/private-link-overview#availability">는 제한된 지역 집합</a>에서 Azure Private Link 미리 보기를 발표합니다. 우리는 가까운 장래에 더 많은 지역으로 확장 될 것입니다. 또한 Azure Cosmos DB, Azure MySQL, Azure PostgreSQL, Azure MariaDB, Azure Application Service 및 Azure Key Vault 및 파트너 서비스를 포함하여 Azure Private Link에 더 많은 Azure PaaS 서비스를 추가할 예정입니다.</p>
+
+
+  <p>Azure Private Link 미리 보기를 사용해 보고 피드백을 듣고 통합하는 것이 좋습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/private-link">설명서를</a> 참조하세요.</p>

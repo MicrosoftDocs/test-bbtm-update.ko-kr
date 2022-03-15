@@ -1,0 +1,56 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6710ab9a62e1884d44c7c54714c33ca37aad31eb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902976"
+Slug: how-ai-can-supercharge-content-understanding-for-businesses
+Title: AI가 비즈니스에 대한 콘텐츠 이해를 과급하는 방법
+Summary: 조직은 인사이트를 추출하고, 의미를 찾고, 방대한 콘텐츠에서 새로운 기회를 발견할 때 어려움을 겪습니다. 사실, 82%의...
+Content: >-
+  <p>조직은 인사이트를 추출하고, 의미를 찾고, 방대한 콘텐츠에서 새로운 기회를 발견할 때 어려움을 겪습니다. 실제로 최신 <a href="https://aka.ms/HBR-AS-KnowledgeMining" target="_blank">HBR(하버드 비즈니스 검토) 분석 서비스 보고서에서</a> 조사한 조직의 82%는 콘텐츠를 적시에 탐색하고 이해하는 것이 중요한 과제라고 답했습니다. 콘텐츠가 여러 시스템에 분산될 뿐만 아니라 PDF, JPEG, 스프레드시트 및 오디오 파일과 같은 여러 형식으로 분산되기 때문에 이러한 상황이 악화됩니다.</p>
+
+
+  <p>AI(인공 지능)의 첫 번째 물결은 좁은 애플리케이션을 위해 설계되었으며 필기 인식과 같은 특정 작업을 해결하기 위해 단일 모델을 학습합니다. 그러나 어려운 점은&rsquo; 이러한 모델이 다양한 유형의 콘텐츠에 숨겨진 모든 다른 특성을 개별적으로 캡처할 수&rsquo; 없다는 것입니다. 즉, 개발자는 콘텐츠를 완전히 이해하기 위해 서로 다른 구성 요소를 함께 연결해야 합니다.</p>
+
+
+  <p>대신 조직에서는 비전, 음성 및 언어를 아우르는 솔루션이 있어야 모든 콘텐츠 형식의 인사이트를 완전히 활용할 수 있습니다. 조직이 콘텐츠의 가치를 최대화할 수 있도록 지식 마이닝이라는 새로운 AI 범주에 많은 투자를 하고 있습니다.</p>
+
+
+  <h2>Azure Cognitive Search를 사용한 지식 마이닝</h2>
+
+
+  <p>조직은 현재 Azure Cognitive Search를 사용하여 지식 마이닝을 활용할 수 있습니다. 이제 조직은 웹 애플리케이션, 봇 및 Power BI 시각화를 통해 모든 콘텐츠에서 인사이트를 쉽게 수집할 수 있습니다. Azure Cognitive Search를 사용하면 조직은 업계에서&rsquo; 가장 포괄적인 도메인별 모델의 이점을 얻을 수 뿐만 아니라 자체 사용자 지정 모델을 통합할 수 있습니다. 데이터 과학 전문 지식 없이도 몇 달이 걸리는 작업을 몇 시간 만에 실현할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ee2ccfc-af7b-4612-ab30-bf8f78950c0d.jpg"><img alt="Azure Cognitive Search" border="0" height="513" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb71dd42-16c5-46ae-a4b7-ea12f641b093.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Cognitive Search" width="1024"></a></p>
+
+
+  <h2>실제 비즈니스 영향 제공</h2>
+
+
+  <p>동일한 하버드 비즈니스 검토 보고서는 산업 전반의 고객이 이전에는 상상할 수 없었던 방식으로 지식 마이닝의 이점을 활용하는 방법을 설명합니다.</p>
+
+
+  <ul>
+      <li>&nbsp;<b>금융 서비스</b>: &ldquo;한두 명의 분석가가 있는 소규모 펀드의 지식 마이닝에 대한 ROI(투자 수익률)는 30%에서 58%입니다. 50명 이상의 분석가가 있는 훨씬 더 큰 펀드의 경우 500% 이상입니다.&rdquo;&mdash; 수브라 보스, 금융 패브릭의 CEO.</li>
+      <li>&nbsp;<b>의료</b>: &ldquo;신뢰할 수 있는 지식 마이닝 플랫폼은 의료 청구 프로세스에서 비용의 약 3분의 1을 구동할 수 있습니다.&rdquo; &mdash; 램 스와미나단, 버디 헬스의 CEO.</li>
+      <li>&nbsp;<b>제조:</b> &ldquo; 이러한 잠재력을 발휘하면 고객과의 비즈니스 방식과 장비 서비스 방식이 크게 바뀔 것입니다.&rdquo; &mdash;크리스 반 레이븐스와이, 하우든의 글로벌 비즈니스 솔루션 매니저.</li>
+      <li>&nbsp;<b>법적:</b> &ldquo; AI는 계약 내의 내용을 알려줍니다. 또한 계약의 관계가 외부 세계와 무엇인지 알려줍니다.&rdquo; &mdash;모니쉬 다르다, 아이스 티스의 CTO.</li>
+  </ul>
+
+
+  <p>그리고 우리는&rsquo; 이제 막 시작했습니다. 이 과정을 계속 진행하면서 Azure Cognitive Search를 사용하여 빌드된 더 심층적인 통합 및 더 훌륭한 지식 마이닝 환경을 기대할 수 있습니다. 하버드 비즈니스 리뷰&rsquo; 설문 조사 및 조사 결과를 살펴보고 지식 마이닝의 풍경에 대한 그들의 관점을 듣는 것이 좋습니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <ul>
+      <li>하버드 비즈니스 리뷰 분석 서비스 보고서, <a href="https://azure.microsoft.com/en-us/resources/preview/knowledge-mining-the-next-wave-of-artificial-ingelligence-led-transformation/" target="_blank">지식 마이닝: 인공 Intelligence-Led 변환의 다음 물결</a>을 읽어보세요.</li>
+      <li><a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Cognitive Search</a>에 대해 자세히 알아봅니다.</li>
+  </ul>
+
+
+  <p><a name="_msocom_1"></a></p>

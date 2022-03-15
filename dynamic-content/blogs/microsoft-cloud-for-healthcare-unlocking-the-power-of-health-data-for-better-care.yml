@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2f0956570136b34dee47254a1de40c4026a144e8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898886"
+Slug: microsoft-cloud-for-healthcare-unlocking-the-power-of-health-data-for-better-care
+Title: '의료 조직을 위한 Microsoft Cloud: 더 나은 치료를 위해 건강 데이터의 힘 잠금 해제'
+Summary: 의료 서비스 제공자가 전 세계적으로 전례없는 워크로드 (개인 및 제도적)에 직면함에 따라 전염병 대응은 치료가 제공되는 방법, 위치 및 시기에 지진 변화를 계속 일으킵니다. 장기적으로, 그것은 배려 연속체를 통해 근본적인 교대를 위한 필요를 밝혔습니다.
+Content: >-
+  <p><img alt="" height="323" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/808b9a14-e171-4392-a41d-03ee77bccdbd.jpeg" width="775"></p>
+
+
+  <p>의료 서비스 제공자가 전 세계적으로 전례없는 워크로드 (개인 및 제도적)에 직면함에 따라 전염병 대응은 치료가 제공되는 방법, 위치 및 시기에 지진 변화를 계속 일으킵니다. 장기적으로, 그것은 배려 연속체를 통해 근본적인 교대를 위한 필요를 밝혔습니다. 의사로서 저는 적절한 시기에 적절한 형식으로 환자와 정보에 입각한 공유 결정을 내릴 수 있는 올바른 데이터를 갖지 못하는 문제를 직접 보았습니다. 이러한 과제는 새로운 건강 문제를 해결하는 데 도움이 되는 신뢰할 수 있는 파트너 및 솔루션의 긴급성을 증폭합니다.</p>
+
+
+  <p>오늘날 우리는&rsquo; <a href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare?rtc=1" target="_blank">의료 조직을 위한 Microsoft Cloud</a> 일반 공급으로 이러한 문제를 해결하기 위해 큰 걸음을 내디뎠습니다. 의료 조직을 위한 Microsoft Cloud 환자 참여를 강화하고, 건강 팀의 협업을 강화하고, 임상 및 운영 인사이트를 개선하는 신뢰할 수 있는 기능을 고객과 파트너에게 제공합니다. 이를 통해 더 빠르고 쉽게 보다 효율적인 치료를 제공하고, 상태 데이터의 엔드 투 엔드 보안, 규정 준수 및 상호 운용성을 보장하는 데 도움이 됩니다.</p>
+
+
+  <h2>혁신 및 의료 조직을 위한 Microsoft Cloud</h2>
+
+
+  <p>이는 FHIR(Fast Healthcare Interoperability Resources) API를 통해 데이터를 신속하게 교환할 수 있도록 하는 FHIR&reg;<a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">용 Azure API</a>로 시작되며, PaaS(관리형 플랫폼 서비스) 제공을 통해 지원됩니다. 이를 통해 건강 데이터로 작업하는 모든 사용자가 클라우드에서 보호된 상태 정보를 수집, 관리 및 유지할 수 있습니다. 의료 산업은 FHIR을 사용하는 모든 시스템이 함께 작동할 수 있도록 표준화된 의미 체계 및 데이터 교환을 통해 강력하고 확장 가능한 데이터 모델을 가능하게 하는 새로운 FHIR&reg; 표준으로 건강 데이터를 빠르게 변환하고 있습니다. 데이터를 FHIR로 변환하면 전자 의료 기록 시스템 또는 연구 데이터베이스와 같은 기존 데이터 원본을 빠르게 연결할 수 있습니다. 또한 FHIR을 모바일 및 웹 개발의 최신 구현에서 데이터를 빠르게 교환할 수 있습니다. 가장 중요한 것은 FHIR은 데이터 수집을 간소화하고 분석 및 Machine Learning 도구를 사용하여 개발을 가속화할 수 있습니다. 온-프레미스 컴퓨팅에서 의료 분야의 클라우드로의 전환은 최근에 언급한 5개의 메가트렌드 중 하나이며 다른 산업보다 압축된 기간에 발생하는 일회성 이벤트입니다.</p>
+
+
+  <p>의료 조직을 위한 Microsoft Cloud 대한 또 다른 주요 혁신은 Microsoft Hackathon에서 태어나 2019 년에 출시되었지만 전염병 기간 동안 올해 전 세계적으로 사용률을 얻었습니다. <a href="https://blogs.microsoft.com/blog/2020/03/20/delivering-information-and-eliminating-bottlenecks-with-cdcs-covid-19-assessment-bot/" target="_blank">Microsoft Health Bot 서비스는</a> 의료 조직이 프로세스, 셀프 서비스 및 비용 절감 노력을 향상시키는 데 사용할 수 있는 AI 기반 가상 상태 도우미 및 챗봇을 신속하게 빌드하고 배포할 수 있도록 하는 Azure 클라우드 서비스입니다. Health Bot에는 신뢰할 수 있는 산업 원본의 임상 프로토콜 및 의료 콘텐츠와 같은 기본 제공 의료 AI 서비스, 신속한 설계를 위한 의료 템플릿, 의료 및 임상 용어를 이해하도록 조정된 언어 이해 모델, 필요한 경우 라이브 채팅 및 원격 의료에 원활한 핸드오프가 제공됩니다. Health Bot 서비스의 흡수는 믿을 수 없을 만큼 놀랍습니다. 2020년 3월부터 Microsofts&rsquo; Health Bot은 6억 개 이상의 메시지를 심사하고 25개국에 2,300개의 COVID-19 봇을 배포하여 5천만 명 이상의 사용자에게 서비스를 제공했습니다. 콜 센터와 응급 부서가 압도당하는 시기에 이 봇 서비스는 미국 질병 통제 센터를 포함한 많은 병원 시스템, 비정부 기구(NGO) 및 공중 보건 시스템이 최신 지침을 전달하고, 가장 긴급한 환자를 위한 진료의 우선 순위를 정하고, 봇과의 상호 작용에 대한&rsquo; 실시간 데이터를 받는 데 도움을 주었습니다.</p>
+
+
+  <p>의료 조직을 위한 Microsoft Cloud 기능을 계속 확장함에 따라 팀은 계속해서 혁신을 추진하고 있습니다. 원격 환자 모니터링은 기존 의료 설정 외부에서 환자 건강 데이터를 수집하는 기능을 제공합니다. 의료 기관은 <a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-iot-connector-for-fhir-now-in-preview/" target="_blank">Azure IoT Connector for FHIR</a>을 사용하여 원격 디바이스에서 생성된 상태 데이터를 Azure API for FHIR로 가져올 수 있습니다. 이 데이터는 환자 상태를 면밀히 추적하고, 치료 계획에 대한 환자 준수를 모니터링하고, 맞춤형 치료를 제공하는 데 사용할 수 있습니다.</p>
+
+
+  <p>최근 오픈 소스에서 출시된 <a href="https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/introducing-the-medical-imaging-server-for-dicom/ba-p/1694397" target="_blank">DICOM용 의료 이미징 서버</a> 는 클라우드에서 의료 이미징 데이터를 수집하는 프로세스를 간소화합니다. Azure API for FHIR 또는 다른 FHIR 서비스와 함께 DICOM용 의료 이미징 서버를 사용하면 FHIR의 이미징 데이터와 임상 데이터 간에 데이터 참조가 생성되어 오늘날의&rsquo; 온-프레미스 시스템에서 실행하기 어렵고 비용이 많이 드는 여러 시나리오에 대한 단계를 설정합니다. 방사선 전문의로서 Microsofts&rsquo; 이미징 서버의 개발을 보게 되어 기쁩니다. 이미징 데이터는 모든 의료 데이터의 74%를&nbsp; 차지하며 환자 중심 치료에 대한 우리의 탐구에서 이 이미징 데이터는 종종 질병 감지의 점을 연결하고 가장 효과적인 예방 및 치료 전략을 안내하는 단서를 제공합니다.&nbsp;</p>
+
+
+  <p>Microsoft Azure <a href="https://techcommunity.microsoft.com/t5/azure-ai/introducing-text-analytics-for-health/ba-p/1505152" target="_blank">Text Analytics의 기능인 Health용 Text Analytics</a>는 현재 미리 보기로 제공되는 AI 서비스로, 구조화되지 않은 의료 데이터에서 인사이트를 추출하는 프로세스를 가능하게 하고 간소화합니다. 다양한 형식의 임상 노트, 임상 시험 프로토콜 및 더 많은&mdash; 건강 기능을 포함하는 다양한 의료 데이터&mdash; 검색에 대해 학습된 이 기능은 시간이 많이 걸리는 사용자 지정 모델의 수동 개발 없이 광범위한 데이터 형식 및 작업을 처리할 수 있습니다. 오늘날&rsquo; 의료 데이터의 대부분은 의사&rsquo; 노트, 의료 간행물, 전자 건강 기록, 임상 시험 프로토콜, 의료 만남 녹취록 등과 같은 구조화되지 않은 텍스트의 형태로 제공됩니다. 의료 기관, 공급자, 연구원, 제약 회사 등은 모든 정보에서 인사이트를 식별하고 파악하는 데 엄청난 어려움을 겪습니다. 이 데이터에서 인사이트를 잠금 해제하면 의료 서비스 및 환자 결과를 개선할 수 있는 엄청난 잠재력이 있습니다.</p>
+
+
+  <p>의료 조직을 위한 Microsoft Cloud 향후 개선 사항에는 정밀 의학에 대한 솔루션이 포함됩니다. 개별&rsquo; 게놈에 있는 정보를 디코딩하는 것은 개별에 걸쳐 질병 진행 및 처리 반응에 있는 가변성의 더 중대한 이해로 이끌어 냅니다.&nbsp; 개별과 인구 수준에서 이 유전 변이의 더 나은 이해를 얻는 것은 질병을 방지, 진단 및 취급하기 위하여 정밀 의학 전략의 발달에 열쇠입니다.&nbsp; <a href="https://www.microsoft.com/en-us/genomics/#:~:text=%20Microsoft%20Genomics%20%201%20Workflow%20management.%20Design,curated%20public%20datasets%20easily%20accessible%20from...%20More%20" target="_blank">Microsoft Genomics</a>&nbsp; 오픈 소스 솔루션(<a href="https://github.com/microsoft/CromwellOnAzure" target="_blank">Azure의 Cromwell</a>, <a href="https://github.com/microsoft/genomicsnotebook" target="_blank">Genomics Notebooks</a>)을 사용하면 생물 의학 연구원이 확장 가능한 워크플로를 오케스트레이션하고 Azure 클라우드의 기능을 사용하여 게놈 파이프라인 및 분석을 효율적으로 관리할 수 있습니다. 우리의 목표는 최신 유전체학 기술로 생성된 데이터를 분석하고 해석하여 게놈 데이터를 실행 가능하게 만드는 것입니다.&nbsp;</p>
+
+
+  <p>의료 조직을 위한 Microsoft Cloud 사용하여 건강 데이터의 힘을 잠금 해제하고 향상된 기능의 확장 파이프 라인을 통해 치료 제공자는 통찰력과 보다 정보에 입각한 맞춤형 치료 관리를 위한 실행 가능한 다음 단계를 통해 환자의 전체적인 시각을 얻을 수 있습니다.</p>
+
+
+  <p>오늘&rsquo; 출시와 함께 의료 조직을 위한 Microsoft Cloud 고객과 파트너가 혁신적인 솔루션을 구축할 수 있는 토대를 마련하여 환자와 공급자 모두에게 더 나은 경험과 결과를 제공합니다. 이러한 혁신을 실현하기 위해 파트너와 협력하는 것은 전 세계적으로 건강의 미래를 재구상할 때 활력을 불어넣는 작업입니다.</p>

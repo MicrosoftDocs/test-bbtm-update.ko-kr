@@ -1,0 +1,107 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9d5ec931040c98d1e200d8e6ea63e226941a682a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902874"
+Slug: advancing-application-reliability-with-the-azure-wellarchitected-framework
+Title: Azure Well-Architected Framework를 사용하여 애플리케이션 안정성 향상
+Summary: 워크로드의 품질을 개선하는 데 도움이 되는 Azure Well-Architected Framework를 만들었으며 안정성은 5가지 핵심 핵심 요소 중 하나이므로 이 시리즈의 최신 게시물에서 Cloud Advocate David Blank-Edelman 프레임워크를 사용하여 대화 및 디자인 결정을 안내하는 가장 좋은 방법을 실행해 달라고 요청했습니다.
+Content: >-
+  <p>&ldquo;<em>2년 동안 진행 중인 <a href="https://www.aka.ms/AdvancingReliability" target="_blank">고급 안정성 블로그 시리즈는</a> Azure 플랫폼 및 서비스의 안정성을 계속 개선하기 위해 진행 중인 이니셔티브와 투자를 강조했습니다. 하지만 자체&mdash; 아키텍처의 안정성을 설정하고 개선하는 방법에 대해 어떻게 생각해야 할까요? 워크로드의 품질을 개선하는 데 도움이 되는 Azure Well-Architected Framework를 만들었으며 안정성은 5가지 핵심 핵심 요소 중 하나이므로 이 시리즈의 최신 게시물에서 Cloud Advocate <strong>David Blank-Edelman</strong> 에게 프레임워크를 사용하여 대화 및 디자인 결정을 안내하는 가장 좋은 방법을 실행해 달라고 요청했습니다.</em>&rdquo;&mdash; Mark Russinovich, CTO, Azure</p>
+
+
+  <hr>
+
+  <p>&nbsp;</p>
+
+
+  <p>직장에서 안정성에 대한 좋은 토론이나 논쟁을 시작하려면 동료에게 이 질문을 하십시오.</p>
+
+
+  <p style="margin-left: 40px;"><em>&quot;서비스, 제품 또는 애플리케이션의 안정성에 아키텍처가 더 중요한 시기는 언제인가요? 프로덕션에 배포하기 전에 또는 나중에 배포하시겠습니까?&quot;</em></p>
+
+
+  <p>안정성을 &ldquo;&rdquo;&mdash;&mdash;&ldquo;염두에 두고 서비스를 빌드하지 않으면&rsquo; 안정성을 높이기 위해 적절한 구성 요소가 포함되지 않을 수 있습니다. 내결함성을 개선하기 위한 중복성이 없을 수 있습니다. 신뢰할 수 있는 시스템에 대한 강력한 재시도 논리, 회로 차단기 또는 기타 알려진 패턴을 제외했을 수 있습니다.&rdquo;</p>
+
+
+  <p>하지만 어쩌면 당신의 동료 카운터, &ldquo;글쎄, 난 시도하고 처음부터 바로 일을 구축하려고하는 것이 중요하다는 것을 부인 할 수&rsquo; 없다. 그러나 Ive&rsquo;가 안정성에 대해 배운 한 가지는 처음 돌아다닐 때 거의 달성되지 못했다는 것입니다. 화이트보드에서 실패를 염두에 두고 디자인하는 놀라운 일을 했더라도 여전히 중단이 있을 것입니다. 중단을 좋아하지는 않지만 중단을 처리하고 후속 인시던트 후 검토를 올바르게 처리하면 장기적으로 서비스를 보다 안정적으로 만드는 데 도움이 되는 많은 것을 배울 수 있습니다. 또한 실행 중인 시스템에 대해 자세히 알아볼 때 측정하고 모니터링하는 항목을 변경하는 반복적인 프로세스라는 것에 동의하지 않겠&rsquo;습니까? 이 모든 것들은 생산&#39; 지혜를 &#39;존 리스와 닐 머피라는 맨틀 아래에 떨어질 것입니다. 그리고 이러한 모든 것들은 우리가 이 권리를 위해 해야 할 모든 아키텍처 기술을 갖추기 위해 반드시 필요합니다.&rdquo;</p>
+
+
+  <p>당신이 정말 좋은 토론을하는 경우, 이것은 적어도 몇 번 테이블을 가로 질러 앞뒤로 간다. 한 쪽은 사실&rdquo; 이후에 안정성에 대한 볼트는 사실 이후에&rdquo; 보안에 대한 볼트뿐만 아니라 &ldquo;작동한다는 것을 지적&ldquo;합니다 (즉, 전혀 잘되지 않음). 다른 쪽에서는 개발 또는 스테이징 환경에 대한 실험이 매우 유용할 수 있다는 것을 보여주는 카오스 엔지니어링에서 배운 교훈을&rsquo; 가져올 수 있지만 프로덕션 환경에서 테스트할 때 얻을 수 있는 고유한 결과 중 일부를 항상 산출하지는 않습니다&rsquo;.</p>
+
+
+  <p>&ldquo;그러나 프로덕션에 도착하기 전에 안정성 문제를 파악하기 위한 안정성&mdash; 시도에 대한 CI/CD(지속적인 통합 및 지속적인 업데이트)의 가치는 어떨까요?&rdquo; 이에 대한 응답으로 &ldquo;CI/CD는 매우 유용하지만 대규모 분산 시스템에 대한 테스트가 제대로 실행되기 어렵기 때문에 마지막 문제를 포착하지 못했습니다&rsquo;.&rdquo; 등등.</p>
+
+
+  <p>지금까지 당신은&rsquo; 아마이 인수의 사람들이 도달 할 수밖에 같은 결론에 도달. 아키텍처는 사전 프로덕션 및 사후 프로덕션 수명 주기 단계에서 모두 중요합니다. 그러나 그 결론은 우리가 일반적으로 건축이나 뭔가가 지어진 후 건축가의 역할에 대해 생각하지 않기&rsquo; 때문에 여전히 독특한 자리에 우리를 떠난다. 우리는 우리가 우리 집을 짓는 데 도움을 준 건축가가 1 년 후에 문앞에 나타나 OK라고&rsquo; 말하기&ldquo;를 기대하지 않습니다&rsquo;.&rdquo;</p>
+
+
+  <p>실행할 애플리케이션을 빌드(또는 구매)하면 상황이 다릅니다. 여기서 소프트웨어가 훨씬 더 빠른 속도로 변경될 것이라는 기대가 있습니다. 리팩터링되고, 향상되고, 업그레이드됩니다. 이러한 각 지점에서 결과가 신뢰할 수 있을 것으로 예상하는 경우 아키텍처 영역에서 알고 있는 모든 것을 적용해야 합니다. 그래서 내가 토론 을 해결&rsquo; 하는 한 가지 방법에 대해 알려 드리겠습니다., 그리고 또한 우리가 그 원을 제곱 하는 동안 당신의 신뢰성에 도움이 될 수 있는 도구를 보여 주세요.</p>
+
+
+  <h2>The Azure Well-Architected Framework</h2>
+
+
+  <p><a href="https://aka.ms/wellarchitected/framework" target="_blank">잘 설계된 프레임워크</a>는 <em>워크로드의 품질을 개선하는 데 사용할 수 있는 일련의 안내 테넌트입니다. 이 프레임워크는 비용 최적화, 운영 우수성, 성능 효율성, 안정성 및 보안이라는 5가지 아키텍처 우수성의 핵심 요소로 구성됩니다. 이러한 기둥을 통합하면 고품질의 안정적이며 효율적인 클라우드 아키텍처를 생성할 수 있습니다.</em></p>
+
+
+  <p>&rsquo;그러나 그 단어 &ldquo;아키텍처&rdquo;는 다시, 기본적으로 이름의 중간에 앉아서 수명 주기의 시작 부분에만 참여하는 건축가의 이미지로 우리를 조롱.</p>
+
+
+  <p>이 수수께끼의 잠금을 해제하는 열쇠는 다음과 같습니다&rsquo; <strong>: 안정성 (및 다른 네 가지 기둥)을 위해 목표는 잘 설계 된 상태로 유지하는 &ldquo;것입니다.&rdquo;</strong></p>
+
+
+  <p>이는&rsquo; 모범 사례와 Well-Architected Framework에 세심하게 포함된 아키텍처의 모든 축적된 지식을 구현하고 활용하기 위해 노력하는 상태입니다. 이 지침은 클라우드 솔루션의 모든 단계에서 유용하게 사용할 수 있습니다. 워크로드를 디자인할 때 처음에는 유용합니다. 리팩터링, 크기 조정, 강화 또는 업그레이드 프로세스의 일부로 워크로드에 대한 정기적인 검토를 시작할 때 유용합니다. 마지막으로 다음 주 버전의 워크로드에 대해 주기가 새로 시작될 때 도움이 될 수 있습니다.</p>
+
+
+  <h3>거기에 도착하는 방법</h3>
+
+
+  <p>잠시 동안 안정성 공간에서 일한 사람은 누구나 Well-Architected Framework와 같은 많은 지침이 훌륭하지만 까다로운 부분은 해당 지식을 특정 워크로드 및 진행 중인 노력에 적용하는 것입니다. Well-Architected Framework와 같은 큰 문서 집합을 탐색하고 시작할 위치를 결정하는 것만으로도 문제가 될 수 있습니다. Id&rsquo;는 당신의 지상 진리와 우리가 제공하는 지침을 연결할 수 있다고 믿는 도구를 소개하고 싶습니다. 그것은이 자료에 우리의 나침반 역할을 할 수 있습니다.</p>
+
+
+  <p><a href="https://aka.ms/wellarchitected/review" target="_blank">Azure Well-Architected 검토</a>라고 하는 도구의 스크린샷은 다음과 같습니다&rsquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ffeee08-6a08-4012-a444-23f3eddabc24.png"><img alt="Well Architected Review (img1)" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e8d37bf3-6588-40a9-8462-cf1eae99c496.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="잘 설계 검토 (img1)" width="662"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>Well-Architected 검토는 Well-Architected Framework 안정성 핵심 요소와 다른 4개의 Well-Architected Framework 핵심 요소에 대해 안내하는 자체 기반 평가 도구입니다. 이는 친숙한 지역 클라우드 솔루션 설계자 또는 지원 파트너와 함께 직접 수행할 수 있는 훌륭한 프로세스입니다. 응답에 따라 안정성 노력에&mdash; 대한 일련의 질문을 하게 되며, 해당 영역에 대한 WAF 설명서에 대한 직접 링크를 통해 집중할 수 있는 영역에 대한 제안을 제공합니다.</p>
+
+
+  <p>결과의 예제 집합은 다음과 같습니다&rsquo;.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/44ba60aa-edf9-42dc-8a12-254374556233.png"><img alt="Recommendations for your workload (img 2)" border="0" height="674" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fab5e3c9-7f74-4ad3-91c9-b1b72c84bed8.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="워크로드에 대한 권장 사항(img 2)" width="1024"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>Well-Architected 검토를 최대한 활용하기 위해 처음에는 명확하지 않을 수 있는 몇 가지 팁을 제공하겠습니다.</p>
+
+
+  <p>1. <b>질문에 주의하세요.</b> 검토 결과가 가장 큰 보상이라고 생각할 수도 있지만&rsquo;, 리뷰에서 벗어날 수 있는 가장 가치 있는 것은 질문이라고 말할 수 있습니다. 안정성은 작업을 시작할 수 있는 방법이 너무 많기 때문에 해결해야 할 까다로운 영역이 될 수 있습니다. 어떤 질문을 해야 할지 아는 것만으로는 어려울 수 있습니다. Well-Architected 검토는 이러한 질문을 제공할 수 있습니다.</p>
+
+
+  <p>2. <b>다시 검토로 돌아갑니다</b> . Microsoft 자격 증명을 사용하여 검토 플랫폼에 로그인하는 경우 결과를 저장할 수 있습니다. 즉, 6개월 후 또는 다른 검토를 수행할 준비가 되면 새 검토를 이전 정보와 비교할 수 있습니다. 이는 각 기둥에서 진행 상황을 판단하는 데 매우 유용할 수 있습니다.</p>
+
+
+  <p>3. <b>결과를 팀과 공유합니다</b>. 많은 사람들이&rsquo; Well-Architected 검토에 대해 모르는 한 가지는 로그인한 경우(위의 팁 번호 2 참조) 결과를 Microsoft PowerPoint 프레젠테이션으로 내보낼 수 있다는 것입니다. 이 초안을 작성하고 사용자 지정하면 이제 모든 사용자가 안정성을 위해 다음 팀 모임에 참석할 수 있는 준비된 프레젠테이션이 제공됩니다.</p>
+
+
+  <h2>작동 중인 Well-Architected Framework</h2>
+
+
+  <p>안정성에 대한 몇 가지 훌륭한 세션을 포함하여 Well-Architected Framework의 몇 가지 예제를 확인하려면 <a href="https://channel9.msdn.com/Shows/Azure-Enablement" target="_blank">Azure Enablement 쇼의</a> <a href="https://channel9.msdn.com/Tags/well-architected-series" target="_blank">잘 설계된 시리즈에서</a> 비디오를 확인하는 것이 좋습니다. &rsquo;<a href="https://docs.microsoft.com/learn/paths/azure-well-architected-framework/" target="_blank">Microsoft Learn</a>의 주제에 대한 좋은 온라인 과정 자료와 <a href="https://docs.microsoft.com/azure/architecture/framework/resiliency/overview" target="_blank">설명서의 지침 원칙이 있습니다</a>. Well-Architected의 아키텍처 측면을 자세히 알아보려면 <a href="https://docs.microsoft.com/azure/architecture/" target="_blank">Azure 아키텍처 센터를</a> 확인하는 것이 좋습니다.</p>
+
+
+  <p>안정성&nbsp;과 아키텍처에 대한 논의가 어떻게 진행되는지 듣기를 기대합니다.</p>

@@ -1,0 +1,118 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 490430f93a7cedb13384c50a0a6da72fcf258590
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898215"
+Slug: accessibility-and-array-support-with-azure-blockchain-workbench-1-4-0
+Title: Azure Blockchain Workbench 1.4.0을 사용한 접근성 및 배열 지원
+Summary: 몇 달 전 공개 미리 보기에서 Azure Blockchain Workbench를 처음 도입한 이후 제공해 주신 피드백에 매우 감사드립니다. 여러분의 피드백은 계속해서 업무의 필수적이고 영향력 있는 부분입니다. 이 릴리스에서는 모든 사용자가 Workbench에 더 쉽게 액세스할 수 있도록 하는 데 집중했습니다.
+Content: >-
+  <p>Weve&rsquo;는 몇 달 전 공개 미리 보기에서 <a href="https://aka.ms/abcworkbench">Azure Blockchain Workbench</a>를 처음 도입한 이래로 제공된 피드백&rsquo;에 매우 감사했습니다. 여러분의 피드백은 계속해서 업무의 필수적이고 영향력 있는 부분입니다. 이 릴리스에서는 모든 사용자가 Workbench에 더 쉽게 액세스할 수 있도록 하는 데 집중했습니다. 접근성은 모든 사람과 모든 조직이 더 많은 성과를 거둘 수 있도록 하는 비전의 핵심 핵심 요소입니다. 접근성을 염두에 두고 개선된&rsquo; 몇 가지 사항을 공유하게 되어 기쁩니다.</p>
+
+
+  <p>1.4를 사용하려면 Azure Portal을 통해 Workbench의 새 인스턴스를 배포하거나 <a href="https://github.com/Azure-Samples/blockchain/tree/master/blockchain-workbench/scripts">업그레이드 스크립트</a>를 사용하여 기존 배포를 1.4.0으로 업그레이드할 수 있습니다. 이 업데이트는 다음 향상된 기능을 포함합니다.</p>
+
+
+  <h2>화면 읽기 프로그램 및 키보드 탐색에 대한 접근성 향상</h2>
+
+
+  <p>Azure Blockchain Workbench는 클라이언트 앱 내의 UI보다 훨씬 더 많은 것입니다. Workbench는 엔터프라이즈 내에서 블록체인 솔루션을 개발하고 통합할 수 있는 풍부한 개발자 스캐폴드를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe037ba3-9720-4b1f-b89d-1e52d3a2f8cd.png"><img alt="architecture" border="0" height="874" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4c85e710-2d61-4b27-8803-2fd068641791.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="아키텍처" width="1565"></a></p>
+
+
+  <p>웹 클라이언트를 사용하면 환경을 쉽게 사용하여 블록체인 애플리케이션의 유효성을 검사, 테스트 및 볼 수 있습니다. 애플리케이션 인터페이스는 스마트 계약 메타데이터를 기반으로 동적으로 생성되며 모든 사용 사례를 수용할 수 있습니다. 클라이언트 애플리케이션은 Blockchain Workbench에서 생성된 전체 블록체인 애플리케이션에 사용자 지향 프런트 엔드를 제공합니다.</p>
+
+
+  <p>버전 1.4.0에서는 이제 웹 클라이언트가 탐색 및 정보 읽기 측면에서 화면 읽기 프로그램을 완전히 지원합니다. 또한 바로 가기 키 및 탐색을 더 잘 지원하도록 웹 클라이언트를 업데이트했습니다. 이러한 개선으로 Workbench에서 블록체인 애플리케이션을 만들 때 생산성을 높일 수 있기를 바랍니다.</p>
+
+
+  <h2>스마트 계약 테이블 열 사용자 지정</h2>
+
+
+  <p>Workbench는 스마트 계약 및 애플리케이션 구성에 따라 웹 클라이언트 UI를 동적으로 만듭니다. Workbench는 애플리케이션 구성에 지정된 속성을 기반으로 스마트 계약 인스턴스를 웹 클라이언트의 테이블로 요약합니다. 블록체인 시나리오에 따라 개발자는 지정된 애플리케이션에 대해 많은 속성을 지정할 수 있습니다. 아쉽게도 속성이 지정된 경우 테이블의 크기 및 열 수로 인해 웹 클라이언트 UI 내의 스마트 계약 테이블을 읽기가 어려워집니다. 아래 이미지를 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/78295d81-2345-42fd-9f1b-54c1e18c3dd2.png"><img alt="one" border="0" height="1040" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/22135e0e-479d-49a4-9a6b-5577ccc3a829.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="하나" width="1920"></a></p>
+
+
+  <p>경우에 따라 속성은 사용자 환경 관점보다는 보고 관점에서 더 유용할 수 있습니다. 스마트 계약 테이블의 가독성을 돕기 위해 사용자가&rsquo; 표시되는 열 및 열 순서 측면에서 스마트 계약 테이블을 사용자 지정할 수 있는 새로운 기능이 도입되었습니다.</p>
+
+
+  <p>다음은 사용자 지정된 테이블 창의 스크린샷으로, 각 사용자가 테이블 열의 표시 유형을 전환하고 테이블 내의 열 순서를 조정할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4d9cd580-f217-4f04-a56b-8a93ea295e30.png"><img alt="two" border="0" height="1040" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c9782712-920c-4452-aef7-e4d6eeff65e9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="두" width="1920"></a></p>
+
+
+  <p>스마트 계약 테이블 보기는 사용자 지정 테이블 창을 통해 적용된 모든 변경 내용을 반영합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4c625ace-f4a1-48d8-b398-f93b9c892f29.png"><img alt="three" border="0" height="1040" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1d811143-5847-4530-9601-811a44646593.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="3개" width="1920"></a></p>
+
+
+  <h2>지원되는 새 데이터 형식 &ndash; 배열</h2>
+
+
+  <p>1.4.0을 사용하면 이제 생성자 및 함수 매개 변수의 일부로 배열 데이터 형식과 스마트 계약 속성을 지원합니다. 배열을 사용하면 숫자 또는 값 목록과 같이 강력한 형식의 콘텐츠 목록을 입력하고 나타낼 수 있는 블록체인 앱을 만들 수 있습니다.</p>
+
+
+  <p>Workbench는 현재 정적 및 동적 정수, 부울, 비용 및 시간의 배열을 지원합니다. Workbench는 문자열을 포함하여 열거형 배열 또는 배열 배열을 아직 지원하지 않습니다. 문자열 지원의&rsquo; 경우 Solidity 기능이 미리 보기에서 벗어날 때까지 대기합니다. 이러한 제한 사항이 방해 요소인지 알려주세요.</p>
+
+
+  <p>배열 형식은 다음과 같이 구성 파일을 통해 지정됩니다.</p>
+
+
+  <pre>
+
+  &quot;Properties&quot;: [
+
+  {
+     {
+              &quot;Name&quot;: &quot;PropertyType&quot;,
+              &quot;DisplayName&quot;: &quot;Property Type&quot;,
+              &quot;Type&quot;: {
+              &quot;Name&quot;: &quot;array&quot;,
+                  &quot;ElementType&quot;: {
+                       &quot;Name&quot;: &quot;int&quot;
+                  }
+               }
+        }
+  },</pre>
+
+
+  <p>배열과 관련된 공용 속성의 경우 견고성이 제한됩니다. 배열 형식의 공용 상태 변수가 있는 경우 Solidity를 사용하면 자동 생성된 getter 함수를 사용하여 배열의 단일 요소만 검색할 수 있습니다. 이 제한을 해결하려면 배열을 반환하는 적절한 함수를 제공해야 합니다. 예를 들면 다음과 같습니다.</p>
+
+
+  <pre>
+
+  function <strong>GetPropertyTypes</strong>() public constant returns (int[]) {
+           return PropertyType;
+  }</pre>
+
+
+  <p>이 함수가 Solidity 코드의 일부가 아닌 경우 블록체인 애플리케이션을 업로드할 때 오류가 표시됩니다.</p>
+
+
+  <h2>최대 4k자까지 문자열 지원</h2>
+
+
+  <p>Workbench의 제한 사항 중 하나는 데이터 형식 문자열이 256자일 수 있다는 것입니다. Weve&rsquo;는 제한을 늘리기를 원하는 사람들로부터 피드백을 받았습니다. 1.4.0의 새 제한은 4,000자입니다. 더 많은 문자를 사용하면 트랜잭션을 처리할 때 더 많은 가스가 사용됩니다. 스마트 계약을 빌드할 때는 블록 가스 제한을 인식하고 해당 제한을 염두에 두고 스마트 계약을 구축하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6db431b7-75c0-43eb-9134-fccdbc410a51.png"><img alt="four" border="0" height="1040" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/85ef1cf4-8f2e-4a3d-9d26-fd64da3356e2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="4개" width="1920"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9513fbc-4d5d-4918-850f-cd8eab8171c3.png"><img alt="five" border="0" height="1040" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3cf1ad0a-1e3e-473c-9643-35ce5d2f6d58.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="5개" width="1920"></a></p>
+
+
+  <h2>더 빠르고 안정적인 트랜잭션 처리</h2>
+
+
+  <p>1.4.0&rsquo;을 사용하면 DLT Watcher 마이크로 서비스에 대한 안정성이 추가로 향상되었습니다. 이 구성 요소에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/blockchain-workbench/blockchain-workbench-architecture">Blockchain Workbench 아키텍처 문서를</a> 참조하세요. 감시자는 다시 작성되었으며 훨씬 빠른 속도로 블록을 처리할 수 있습니다.</p>
+
+
+  <p><a href="https://aka.ms/blockchainuservoice">Blockchain User Voice</a>를 사용하여 피드백을 제공하고 Workbench에 대한 기능/아이디어를 제안하세요. 입력은 이 서비스를 훌륭한 서비스로 만드는 데 도움이 됩니다.&nbsp; 우리는 당신에게서 듣기를 기대합니다.</p>

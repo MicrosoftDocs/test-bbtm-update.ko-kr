@@ -1,0 +1,75 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 233430d28865e68bdd3bc4e88ff21affa56834fc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898558"
+Slug: modernize-alerting-using-arm-storage-accounts
+Title: Azure Resource Manager 스토리지 계정을 사용하여 경고 현대화
+Summary: 'Azure Monitor의 클래식 경고는 오는 6월에 사용 중지됩니다. 특히 새 경고 플랫폼을 사용하여 경고 기능을 유지하려는 경우 스토리지 계정에 정의된 클래식 경고 규칙을 마이그레이션하는 것이 좋습니다. '
+Content: >-
+  <p>Azure Monitor의 클래식 경고는 오는 6월에 사용 중지됩니다. 특히 새 경고 플랫폼을 사용하여 경고 기능을 유지하려는 경우 스토리지 계정에 정의된 클래식 경고 규칙을 마이그레이션하는 것이 좋습니다. 클래식 스토리지 계정에 클래식 경고 규칙이 구성된 경우 경고 규칙을 마이그레이션하기 전에 계정을 ARM(Azure Resource Manager) 스토리지 계정으로 업그레이드해야 합니다.</p>
+
+
+  <p>새 Azure Monitor 서비스 및 클래식 경고 사용 중지에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/updates/classic-alerting-monitoring-retirement/" target="_blank">2019년 6월에 사용 중지할 Azure Monitor의 클래식 경고</a> 문서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <h2>클래식 경고 규칙 식별</h2>
+
+
+  <p>마이그레이션하기 전에 먼저 모든 클래식 경고 규칙을 찾아야 합니다. 다음 스크린샷은 Azure Portal에서 클래식 경고 규칙을 식별하는 방법을 보여 줍니다. 각 리소스를 별도로 확인하지 않고 모든 클래식 경고 규칙을 찾을 수 있도록 구독별로 필터링할 수 있습니다.</p>
+
+
+  <p><img alt="Check classic alert rules" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/find_classic_alert_rules.png" style="width: 800px; height: 419px; margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <h2>클래식 스토리지 계정을 ARM으로 마이그레이션</h2>
+
+
+  <p>새 경고는 클래식 스토리지 계정을 지원하지 않으며 ARM 스토리지 계정만 지원합니다. 클래식 스토리지 계정에 클래식 경고 규칙을 구성한 경우 ARM 스토리지 계정으로 마이그레이션해야 합니다.&nbsp; Azure Portal의 Storage 계정\개요 페이지로 이동하여 계정 종류&quot; 정보를 확인할 &quot;수 있습니다. Storage(클래식)&quot;&#39;&quot;경우 스토리지 계정은 클래식 스토리지 계정입니다.</p>
+
+
+  <p>ARM&quot;으로 마이그레이션을 사용하여 &quot;클래식 스토리지 계정의 스토리지 메뉴를 사용하여 마이그레이션할 수 있습니다. 아래 스크린샷은 이 예제를 보여줍니다. 계정 마이그레이션을 수행하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/migration-classic-resource-manager-overview" target="_blank">클래식에서 Azure Resource Manager로 laaS 리소스의 플랫폼 지원 마이그레이션</a> 설명서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/migrate_to_arm.png" style="width: 800px; height: 482px; margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <h2>새 경고 플랫폼에서 경고 규칙 다시 만들기</h2>
+
+
+  <p>스토리지 계정을 ARM으로 마이그레이션한 후 경고 규칙을 다시 만들어야 합니다. 새 경고 플랫폼은 새 스토리지 메트릭을 사용하여 ARM 스토리지 계정에 대한 경고를 지원합니다. Azure Monitor의 메트릭 Azure Storage 설명서 &ldquo; 에서 새 스토리지 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-metrics-in-azure-monitor">메트릭 정의에</a> 대해 자세히 확인할 수 있습니다.&rdquo; 스토리지 블레이드에서 메뉴 이름은 새 경고 플랫폼에 대한 경고&quot;입니다&quot;.</p>
+
+
+  <p>스토리지 계정에 대한 새 경고로 경고 규칙을 다시 만들기 전에 클래식 메트릭과 새 메트릭 간의 차이점과 매핑 방법을 이해해야 할 수 있습니다. 자세한 매핑은 설명서, &ldquo;<a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-metrics-migration">Azure Storage 메트릭 마이그레이션</a>에서 찾을 수 있습니다.&rdquo;</p>
+
+
+  <p>다음 스크린샷은 UsedCapacity를 기반으로 &ldquo;경고를 만드는 방법을 보여줍니다.&rdquo;</p>
+
+
+  <p><img alt="Create alert rule on UsedCapacity" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/create_alert_rule_usedcapacity.png" style="width: 800px; height: 496px; margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p>일부 메트릭에는 다양한 차원 값 형식을 보고 사용할 수 있는 차원이 포함됩니다. 예를 들어 트랜잭션 메트릭에는 ResponseType&rdquo;이라는 &ldquo;차원이 있으며 값은 다양한 유형의 오류와 성공을 나타냅니다. ResponseType을 사용하여 ServerBusyError 또는 ClientOtherError&rdquo;&rdquo;&ldquo;와 같은 &ldquo;특정 오류에 대한 트랜잭션을 모니터링하는 경고를 만들 수 있습니다&rdquo;.&ldquo;</p>
+
+
+  <p>다음 스크린샷은 ClientOtherError를 사용한 트랜잭션 &ldquo;을 기반으로 경고를 만드는 방법을 보여 줍니다.&rdquo;</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/create_alert_rule_transaction_clientothererror.png" style="width: 800px; height: 479px; margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p>차원 값 목록에서 기본적으로 지원되는 모든 값이 표시되지&#39;. 실제 요청에 의해 트리거된 값만 표시됩니다. 발생하지 않은 조건을 모니터링하려는 경우 경고를 만드는 동안 사용자 지정 차원 값을 추가할 수 있습니다. 예를 들어 스토리지 계정에 대한 익명 요청이 아직 없는 경우에도 경고를 미리 설정하여 예정된 요청에서 이러한 활동을 모니터링할 수 있습니다.</p>
+
+
+  <p>다음 스크린샷은 예정된 익명 트랜잭션을 모니터링하기 위해 사용자 지정 차원 값을 추가하는 방법을 보여 줍니다.</p>
+
+
+  <p><img alt="Add dimension value for alert" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/create_alert_rule_transaction_adddimensionvalue.png" style="width: 800px; height: 479px; margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p>먼저 새 경고 규칙을 만들고, 의도한 대로 작동하는지 확인한 다음, 클래식 경고를 제거하는 것이 좋습니다.</p>
+
+
+  <p>Azure Monitor는 경고 및 기타 모니터 기능을 포함하는 통합 모니터링 서비스입니다. <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/" target="_blank">자세한 내용은 Azure Monitor 설명서를</a> 참조 &ldquo; 하세요.&rdquo;</p>

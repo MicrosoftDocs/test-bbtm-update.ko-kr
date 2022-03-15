@@ -1,0 +1,72 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1e3520de499e6638e96a7ab909a194ead7fd41f0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903434"
+Slug: using-text-analytics-in-call-centers
+Title: 콜 센터에서 Text Analytics 사용
+Summary: Azure Cognitive Services는 자연어 처리 및 기계 학습을 사용하여 텍스트 데이터에서 정보 추출을 간소화하는 Text Analytics API를 제공합니다. 이러한 API는 감정 분석, 핵심 구 추출, 엔터티 인식 및 언어 감지와 같이 미리 빌드된 언어 처리 기능을 래핑합니다.
+Content: >-
+  <p>Azure Cognitive Services는 자연어 처리 및 기계 학습을 사용하여 텍스트 데이터에서 정보 추출을 간소화하는 <a href="https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/" target="_blank">Text Analytics API</a> 를 제공합니다. 이러한 API는 감정 분석, 핵심 구 추출, 엔터티 인식 및 언어 감지와 같이 미리 빌드된 언어 처리 기능을 래핑합니다.</p>
+
+
+  <p>Text Analytics를 사용하여 기업은 고객과의 상호 작용에서 더 깊은 인사이트를 얻을 수 있습니다. 이러한 인사이트를 사용하여 관리 보고서를 만들고, 비즈니스 프로세스를 자동화하고, 경쟁력 있는 분석 등을 수행할 수 있습니다. 이러한 인사이트를 제공할 수 있는 한 가지 영역은 필요한 데이터를 제공할 수 있는 기록된 고객 서비스 호출입니다.</p>
+
+
+  <ul>
+   <li>고객 만족도 측정 및 개선</li>
+   <li>콜 센터 및 에이전트 성능 추적</li>
+   <li>다양한 서비스 영역의 성능 살펴보기</li>
+  </ul>
+
+
+  <p>이 블로그에서는 Azure Cognitive Services를 사용하여 이러한 기록된 고객 호출에서 인사이트를 얻는 방법을 살펴보겠습니다.</p>
+
+
+  <p>Text Analytics 및 Speech API와 같은 이러한 서비스의 조합을 사용하여 고객 및 에이전트 대화의 콘텐츠에서 정보를 추출할 수 있습니다. 그런 다음 결과를 시각화하고 추세와 패턴을 찾을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e1394d5a-9826-4c43-bcaf-70c751b1ea56.png"><img width="624" height="190" title="Cognitive Services의 조합으로 정보를 추출하는 방법을 보여 주는 다이어그램" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" alt="Diagram showing how combination of Cognitive Services can extract information" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/07da016f-e9f1-44cf-b86e-755bc76041e5.png" border="0"></a></p>
+
+
+  <p>순서는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>Azure Speech API를 사용하여 기록된 호출을 텍스트로 변환할 수 있습니다. 텍스트 전사를 통해 Text Analytics API를 실행하여 대화 내용에 대한 자세한 정보를 얻을 수 있습니다.</li>
+   <li>감정 분석 API는 긍정, 중립 및 부정의 세 가지 범주로 된 텍스트의 전반적인 감정에 대한 정보를 제공합니다. 에이전트와 고객 간의 대화의 각 턴에서 다음을 수행할 수 있습니다. <ul>
+    <li>고객 감정이 어떻게 개선되고, 동일하게 유지되거나, 감소하는지 확인합니다.</li>
+    <li>통화, 에이전트 또는 서로 다른 시간 동안 고객 불만 처리의 효과에 대해 평가합니다.</li>
+    <li>에이전트가 지속적으로 부정적인 대화를 긍정적 또는 그 반대로 전환하고 학습 기회를 식별할 수 있는 경우를 확인합니다.</li>
+   </ul>
+   </li>
+   <li>핵심 구 추출 API를 사용하여 대화의 핵심 구를 추출할 수 있습니다. 이 데이터는 감지된 감정과 함께 호출 중에 주요 구 집합에 범주를 할당할 수 있습니다. 이 데이터를 사용하여 다음을 수행할 수 있습니다. <ul>
+    <li>부정적 또는 긍정적인 감정을 전달하는 구를 확인합니다.</li>
+    <li>시간이 지남에 따라 또는 제품 및 서비스 발표 중에 감정의 변화를 평가합니다.</li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3d841d83-0a9c-48e7-a38c-ff9c0713d963.png"><img width="1411" height="633" title="세 가지 텍스트 범주의 전체 감정을 보여 주는 테이블" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" alt="Table showing overall sentiment in three text categories" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/12791b5b-e79e-4a77-a83a-a16dea7280c3.png" border="0"></a></p>
+
+
+  <ul>
+   <li>엔터티 인식 API를 사용하여 사람, 조직, 위치, 날짜 시간 등과 같은 엔터티를 추출할 수 있습니다. 예를 들어 이 데이터를 사용하여 다음을 수행할 수 있습니다. <ul>
+    <li>통화 감정을 특정 영역의 제품 출시 또는 매장 오픈과 같은 특정 이벤트에 연결합니다.</li>
+    <li>경쟁사에 대한 고객 멘션을 사용하여 경쟁 인텔리전스 및 분석을 할 수 있습니다.</li>
+   </ul>
+   </li>
+   <li>마지막으로 Power BI 인사이트를 시각화하고 패턴과 추세를 전달하여 작업을 수행할 수 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/09bc7139-3603-4228-9c48-d8a25d22875d.png"><img width="974" height="582" title="Power BI 그래프는 인사이트를 시각화하고 패턴과 추세를 전달합니다." style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" alt="Power BI graph visualizing the insights and communicating the patterns and trends" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac7d40b1-726f-493b-83d0-2ec9d8c155fb.png" border="0"></a></p>
+
+
+  <p>Azure Cognitive Services Text Analytics를 사용하여 고객 상호 작용에 대한 심층 인사이트를 얻고 간단한 고객 설문 조사를 넘어 대화 내용으로 이동할 수 있습니다.</p>
+
+
+  <p>위의 워크플로의 샘플 코드 구현은 <a href="https://github.com/rlagh2/callcenteranalytics" target="_blank">GitHub</a> 찾을 수 있습니다.</p>

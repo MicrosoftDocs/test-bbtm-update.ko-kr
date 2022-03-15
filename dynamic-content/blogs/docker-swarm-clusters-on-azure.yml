@@ -1,0 +1,78 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 693a38c0a61569cb2bbdcbefb0e847273bfc08be
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899018"
+Slug: docker-swarm-clusters-on-azure
+Title: Azure의 Docker Swarm 클러스터
+Summary: 몇 번의 클릭만으로 Azure에서 Docker Swarm 클러스터를 간단하게 만들게 된 것을 발표하게 되어 기쁩니다. Azure Resource Manager 템플릿의 표현력을 통해 거의 모든 크기의 Docker Swarm 클러스터를 몇 분 안에 Azure에 배포할 수 있습니다.
+Content: >-
+  <p>몇 번의 클릭만으로 Azure에서 <a href="https://www.docker.com/docker-swarm">Docker Swarm</a> 클러스터를 간단하게 만들게 된 것을 발표하게 되어 기쁩니다. <a href="https://azure.microsoft.com/documentation/templates/">Azure Resource Manager 템플릿</a>의 표현력을 통해 거의 모든 크기의 Docker Swarm 클러스터를 몇 분 안에 Azure에 배포할 수 있습니다.</p>
+
+
+  <p><a href="https://www.docker.com/docker-swarm">Docker Swarm</a> 은 여러 <a href="https://www.docker.com/docker-engine">Docker</a> 엔진을 클러스터로 전환하고 단일 Docker 엔진처럼 보이게 하여 클러스터를 만드는 Docker용 네이티브 클러스터링 도구입니다. &#39;다른 컨테이너 오케스트레이터보다 설치하기가 더 쉽습니다. 이렇게 하면 컨테이너 호스트인 Virtual Machines 풀을 만들고 단일 VM을 사용하는 것처럼 Docker를 사용하여 애플리케이션을 스케일 아웃할 수 있습니다.</p>
+
+
+  <p>이러한 의미에서 Docker Swarm은 컨테이너 오케스트레이션 문제에 대한 매우 실용적이고 쉬운 솔루션이며 이미 익숙한 명령줄 도구를 사용하여 클러스터 <code>docker</code> 에 컨테이너를 배포할 수 있습니다.</p>
+
+
+  <p>Azure에서 컨테이너화된 애플리케이션을 지원하기 위한 광범위한 계획에 대해 자세히 알아보려면 지난 주 Azure <a href="https://azure.microsoft.com/blog/azure-container-service-now-and-the-future/"><strong>Container Service</strong> 공</a>지 사항을 확인<strong> </strong> 하세요.</p>
+
+
+  <h2>Docker Swarm ARM 템플릿</h2>
+
+
+  <p>Docker Swarm 클러스터를 Azure에 배포하기 위해 Azure에서 Swarm 클러스터를 구성하는 다양한 리소스를 프로비전하는 Azure <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/docker-swarm-cluster">Resource Manager 템플릿</a>을 개발했으며 GitHub 오픈 소스로 사용할 수 있게 되었습니다.</p>
+
+
+  <p>이 템플릿을 사용하면 템플릿 <a href="https://azure.microsoft.com/en-us/documentation/templates/docker-swarm-cluster/">갤러리</a>에서 템플릿을 배포하거나 GitHub 다운로드한 다음 개발 머신에서 <a href="https://azure.microsoft.com/documentation/articles/xplat-install/">Azure CLI</a> 또는 Azure PowerShell 모듈을 사용하여 5~10분 내에 Docker Swarm 클러스터 <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/docker-swarm-cluster"></a> 를 프로비전할 수 있습니다.</p>
+
+
+  <p>Swarm 클러스터를 배포하고 사용하는 방법에 대한 자세한 내용은 GitHub 리포지토리의 <a href="https://github.com/Azure/azure-quickstart-templates/blob/master/docker-swarm-cluster/README.md">지침을</a> 참조하세요.</p>
+
+
+  <h2>작동 방식</h2>
+
+
+  <p><a href="https://github.com/Azure/azure-quickstart-templates/tree/master/docker-swarm-cluster">Docker Swarm ARM 템플릿</a>은 고정 개인 IP 주소를 사용하여 3개의 Swarm 관리자 VM을 만듭니다. 이렇게 하면 컨테이너를 배포하고 관리하는 컨트롤 플레인을 고가용성 상태로 유지할 수 있습니다. 이러한 관리자 VM은 사용자 워크로드를 실행하지 않고 클러스터 관리자 역할을 하기 때문에 가장 작은 크기 &ldquo;인 Standard_A0&rdquo; .</p>
+
+
+  <p>Swarm 관리자 노드는 Swarm 에이전트와 <a href="https://consul.io/">Consul</a>이라는 두 개의 컨테이너를 실행하여 <a href="https://github.com/docker/swarm">Swarm</a> 작업자 노드를 검색합니다. VM을 프로비전한 후 이러한 컨테이너를 체계적으로 실행하기 위해 Virtual Machines에 <a href="https://azure.microsoft.com/blog/a-brand-new-docker-extension/">Azure Docker 확장을</a> 추가합니다. 개별 Swarm 작업자 노드는 고정 개인 IP 주소를 사용하여 Swarm 관리자에게 문의하여 클러스터에 가입합니다. 모든 Swarm 관리자 및 작업자 노드는 서로 통신할 수 있도록 동일한 Azure Virtual Network에 있습니다. 관리자 노드와 작업자 노드는 최대 가용성 및 가동 시간을 보장하기 위해 별도의 Azure 가용성 집합 뒤에 있습니다. Swarm 작업자 노드는 공용 인터넷에 직접 노출되지 않습니다. 그러나 트래픽을 컨테이너로 라우팅하도록 구성할 수 있는 Azure Load Balancer 뒤에 있습니다. 컨테이너 워크로드를 수락하는 작업자 노드의 크기 &ldquo;는 Standard_A2.&rdquo;</p>
+
+
+  <p>클러스터의 네트워크 토폴로지 모양은 다음과 같습니다.</p>
+
+
+  <p><img alt="Docker Swarm Cluster on Azure Network Topology" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cluster-network.png" style="height: auto; width: auto"></p>
+
+
+  <p>클러스터에 대해 프로비전된 가상 머신은 호스트 운영 체제로 설치된 Docker와 함께 제공되는 최소 Linux 배포인 CoreOS를 실행합니다. 이렇게 하면 클러스터를 신속하게 프로비전하고 구성하는 데 도움이 됩니다.</p>
+
+
+  <p>이 템플릿을 사용하여 50노드 Swarm 클러스터는 일반적으로 5-10분 이내에 프로비전되며 컨테이너 워크로드를 수락할 준비가 됩니다.</p>
+
+
+  <p>또한 템플릿을 사용하면 TLS를 사용하지 않고 SSH 터널을 설정하여 Docker Swarm 엔드포인트에 액세스할 수 있도록 하여 Docker 인증서를 관리하는 문제를 줄일 수 있습니다.</p>
+
+
+  <p>클러스터 토폴로지에 대한 자세한 내용을 보려면 GitHub 리포지토리에 대한 <strong><a href="https://github.com/Azure/azure-quickstart-templates/blob/master/docker-swarm-cluster/README.md">지침을</a> 참조하세요&nbsp;</strong>.</p>
+
+
+  <h2>데모</h2>
+
+
+  <p>아래 비디오에서는 Azure Portal에서 Swarm 클러스터를 만드는 것이 얼마나 쉬운지 보여 줍니다.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="315" src="https://channel9.msdn.com/Blogs/Regular-IT-Guy/Docker-Swarm-Clusters-on-Azure/player" width="560"></iframe></p>
+
+
+  <h2>기능 직접 사용해 보기</h2>
+
+
+  <p>Docker Swarm은 완전한 컨테이너 오케스트레이터를 설치하지 않고도 VM을 컨테이너 호스트 풀로 전환할 수 있는 유용한 도구입니다. 소규모 및 중형 분산 워크로드를 쉽게 설정하고 관리할 수 있습니다.</p>
+
+
+  <p>Docker Swarm 클러스터를 사용하여 Azure에서 타이어를 끄려면 <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/docker-swarm-cluster">ARM 템플릿</a> 을 확인하고 몇 분 내에 클러스터를 배포하세요.</p>

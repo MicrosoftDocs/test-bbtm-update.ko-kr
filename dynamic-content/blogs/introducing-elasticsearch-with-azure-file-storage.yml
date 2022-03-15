@@ -1,0 +1,133 @@
+### YamlMime:Yaml
+ms.openlocfilehash: efb770fc7ef6529449bd6d929eec93af52746fb9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902539"
+Slug: introducing-elasticsearch-with-azure-file-storage
+Title: '소개: Azure File Storage를 사용하는 Elasticsearch'
+Summary: 최근에 Azure File Storage에 데이터를 저장하는 미리 구성된 Elasticsearch 클러스터를 만들 수 있도록 Elasticsearch 템플릿을 일부 개선했으며 Sense, Marvel 및 Kibana와 같은 플러그 인을 몇 분 만에 설치하는 옵션을 제공합니다.
+Content: >-
+  <p><a href="https://github.com/Azure/azure-quickstart-templates" target="_blank">Azure 빠른 시작 템플릿은 Elasticsearch</a>를 비롯한 다양한 기술에 대한 템플릿 기반 배포를 시작하기 위한 훌륭한 리소스입니다. 최근에 Azure File Storage에 데이터를 저장하는 미리 구성된 Elasticsearch 클러스터를 만들고 Sense, Marvel 및 Kibana와 같은 플러그 인을 몇 분 만에 설치하는 옵션을 제공하는 Elasticsearch 템플릿을 몇 가지 개선했습니다.</p>
+
+
+  <p>Azure Files에 익숙하지 않은 경우 이 서비스는 탑재된 공유를 통해 SMB 프로토콜을 사용하여 공유 스토리지를 제공합니다. 이 스토리지는 동일한 지역에서 임의의 수의 가상 머신 또는 역할에 액세스할 수 있으며 Windows 및 Linux 모두에서 지원됩니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-files/#what-is-azure-file-storage" target="_blank">Azure File Storage에 대한 이 소개를</a> 참조하세요.</p>
+
+
+  <p>탑재 및 탑재 해제 공유는 빠르고 시스템이 라이브 상태인 동안 수행할 수 있으므로 Azure Files는 <strong>컴퓨팅 및 스토리지를 쉽게 분리</strong>할 수 있는 방법을 제공하므로 Elasticsearch와 같은 기술로 많은 흥미로운 가능성을 열어줍니다. 특히 <a href="https://www.elastic.co/guide/en/elasticsearch/reference/2.2/indices-shadow-replicas.html" target="_blank">섀도 복제본 인덱스를</a> 사용하면 다음과 같은 몇 가지 매력적인 최적화를 통해 이 공유 파일 시스템을 사용할 수 있습니다.</p>
+
+
+  <ul>
+   <li>데이터의 단일 복사본만 인덱싱됩니다. 복제본이 섀도 복제본으로 대체됨</li>
+   <li>복구는 다른 복사본을 만드는 대신 분할된 데이터베이스의 소유권을 가져오는 다른 노드로 구성됩니다.</li>
+   <li>더 많거나 적은 노드에서 데이터 재조정 또는 재배포는 간단한 작업이 됩니다.</li>
+  </ul>
+
+
+  <p>이 새로운 기능을 사용해보는 것은 개선된 Azure Resource Manager 템플릿에서 간단하게 사용할 수 있습니다. 이 문서에서는 Azure File Storage에서 Elasticsearch를 시작하고 실행하는 간단한 예제를 살펴봅니다.</p>
+
+
+  <h2>배포</h2>
+
+
+  <p><a href="https://github.com/Azure/azure-quickstart-templates/blob/master/elasticsearch/README.md" target="_blank">Elasticsearch 템플릿</a>에서 <strong>Azure에 배포</strong>를 선택한 후 배포에 몇 가지 매개 변수를 제공해야 합니다. 확실하지 않은 경우 기본값을 사용하여 시작합니다.</p>
+
+
+  <p><img alt="Introducing: Elasticsearch with Azure File storage" border="0" height="54" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/503c5bc3-2499-48a4-902b-d75de5f32977.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="소개: Azure File Storage를 사용하는 Elasticsearch" width="351"></p>
+
+
+  <p align="left"><img alt="Introducing: Elasticsearch with Azure File storage" border="0" height="217" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/778d74a2-771f-4de1-b4a7-ebe4aa2af0c9.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="소개: Azure File Storage를 사용하는 Elasticsearch" width="289"></p>
+
+
+  <p align="left">일부 매개 변수는 아래에 자세히 설명되어 있습니다.</p>
+
+
+  <ul>
+   <li><strong>운영 체제:</strong> 템플릿의 Azure 파일 지원은 현재 <strong>Ubuntu</strong>에만 있지만 곧 Windows 사용할 수 있습니다.</li>
+   <li><strong>리소스 그룹:</strong> 관련 리소스 컬렉션에 대한 구독 내의 논리적 그룹화 일반적으로 여기서 기억에 남는 이름을 제공합니다.</li>
+   <li><strong>Jumpbox:</strong> ssh(Ubuntu) 또는 rdp(Windows)를 통해 클러스터에 진입점을 제공합니다. <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank">ExpressRoute</a> 구독에 배포하지 않는 한 이 항목을 사용합니다.</li>
+   <li><strong>노드 크기:</strong> 기본 크기는 시작하기에 좋은 옵션이지만 워크로드에 충분한 코어를 배포해야 합니다.</li>
+   <li><strong>버전:</strong> Azure 파일 지원에 사용 가능한 최신 버전(현재 <strong>2.2.0</strong>)을 사용하는 것이 좋습니다.</li>
+   <li><strong>AFS:</strong> Azure File Storage에 대해 이 옵션을 선택합니다. 이 옵션은 현재 Ubuntu 및 Elasticsearch 2.x에만 유효합니다.</li>
+   <li><strong>템플릿 기반:</strong> Azure 리포지토리에서 배포하는 경우 변경할 필요가 없습니다. 고유한 포크에서 배포하는 경우 리포지토리 URI로 업데이트합니다.</li>
+   <li><strong>키바나 및 센스:</strong> 이 두 가지를 모두 선택하면 공용 IP를 통해 클러스터에 쉽게 액세스하고 상호 작용할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>클러스터 액세스</h2>
+
+
+  <p>배포가 완료되면 <a href="https://portal.azure.com" target="_blank">Azure</a> Portal에서 지정된 리소스 그룹에 대한 <strong>배포 출력</strong>에서 Kibana URL 및 Jumpbox IP를 찾을 수 있습니다. 리소스 그룹을 선택한 다음 Essentials에서 <strong>마지막 배포</strong> 링크를 선택하여 Kibana 및 Jumpbox 배포 출력을 찾습니다.</p>
+
+
+  <p><img alt="Introducing: Elasticsearch with Azure File storage" border="0" height="225" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/da44fff4-e46b-4899-8bfa-04424a01e075.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="소개: Azure File Storage를 사용하는 Elasticsearch" width="262"></p>
+
+
+  <p>오른쪽 단추를 사용하여 Kibana URL을 클립보드에 복사하고 브라우저 창에 붙여넣어 Kibana를 표시합니다. 배포 시 Sense 옵션을 선택한 경우 Kibana 인터페이스를 통해 Sense 앱으로 전환할 수 있습니다.</p>
+
+
+  <p><img alt="Introducing: Elasticsearch with Azure File storage" border="0" height="101" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/19aad440-4049-438e-8c7e-01e140843984.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="소개: Azure File Storage를 사용하는 Elasticsearch" width="540">Sense 명령을 실행하려면 올바른 IP를 설정해야 합니다. 마스터 노드는 정적 IP를 사용하므로 localhost를 <strong>10.0.0.10</strong> 또는 클러스터의 다른 개인 IP로 바꿉니다. 이 IP는 포털의 리소스 목록에서 찾을 수 있습니다.</p>
+
+
+  <p><img alt="Introducing: Elasticsearch with Azure File storage" border="0" height="288" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aee05f43-d3a1-4208-867f-a14cf028d225.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="소개: Azure File Storage를 사용하는 Elasticsearch" width="348"></p>
+
+
+  <h2>섀도 복제본 인덱스 만들기</h2>
+
+
+  <p>템플릿에서 AFS 옵션을 사용하는 경우 <strong>elasticsearch.yml</strong> 설정에는 다음이 포함됩니다.</p>
+
+
+  <blockquote>
+
+  <pre class="prettyprint">
+
+  node.enable_custom_paths: true
+
+  node.add_id_to_custom_path: false
+
+  path.shared_data: /datadisks/esdata00
+
+  </pre>
+
+  </blockquote>
+
+
+  <p>즉, 로컬 스토리지의 데이터가 기본 위치에 저장되고 공유 파일 시스템 데이터는 <strong>/datadisks/esdata00</strong> 경로 아래에 저장되어야 합니다. 따라서 섀도 복제본 인덱스 생성 시 다음과 같은 인덱스 설정을 사용해야 합니다.</p>
+
+
+  <blockquote>
+
+  <pre class="prettyprint">
+
+  put my-shared-index
+
+  {
+    &quot;index&quot;: {
+      &quot;data_path&quot;: &quot;/datadisks/esdata00&quot;,
+      &quot;shadow_replicas&quot;: true,
+      &quot;shared_filesystem.recover_on_any_node&quot;: true
+    }
+  }</pre>
+
+  </blockquote>
+
+
+  <p>이러한 설정을 사용하면 인덱스가 올바른 위치(공유 데이터 경로 아래)에 만들어지고 인덱스에 섀도 복제본이 있습니다. 공유 파일 시스템의 분할된 데이터베이스를 복구하기 전에 노드가 클러스터에 다시 참가할 때까지 기다리지 않도록 Elasticsearch에 지시하므로 모든 노드에서 분할된 데이터베이스를 복구하는 설정이 중요합니다. <a href="https://www.elastic.co/guide/en/elasticsearch/reference/2.2/indices-shadow-replicas.html" target="_blank">Elasticsearch 설명서</a>에서 섀도 복제본에 대한 자세한 정보를 찾을 수 있습니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>이 문서에서는 Marvel, Sense 및 Kibana와 같은 선택적 도구를 포함하여 완전히 미리 구성된 Elasticsearch 클러스터를 빠르고 쉽게 배포하는 방법을 알아보았습니다. 또한 Azure Files에서 제공하는 공유 스토리지에서 이 클러스터에 액세스하고 섀도 복제본 기반 인덱스 만들기 방법을 알아보았습니다. 개발 단계에서 프로덕션 배포로 이동하려면 다음 항목에 관심이 있을 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-authoring-templates/" target="_blank">사용자 고유의 Azure Resource Manager 템플릿을 작성하여</a> 배포 사용자 지정</li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/guidance-elasticsearch/" target="_blank">Azure의 Elasticsearch</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/storage-how-to-use-files-linux/" target="_blank">Linux에서 Azure File Storage</a> 사용</li>
+  </ul>
+
+
+  <p>또한 Elastic 팀과 긴밀히 협력하여 Azure File Storage에서 Elasticsearch에 대한 도구와 지침을 대규모로 제공하고 있습니다. 가까운 장래에 이에 대한 자세한 정보를 게시할 예정이므로 계속 지켜봐 주시기 바랍니다!</p>

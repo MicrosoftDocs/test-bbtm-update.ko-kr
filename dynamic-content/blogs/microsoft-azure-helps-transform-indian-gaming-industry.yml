@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ea81bff50bd3eac5ada0bbc27375565722fbc9c0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898903"
+Slug: microsoft-azure-helps-transform-indian-gaming-industry
+Title: Microsoft Azure 인도 게임 산업을 변화시키는 데 도움이 됩니다.
+Summary: 비디오 게임은 오랫동안 일본과 미국과 같은 국가의 포르테로 간주되었습니다. 그러나 지난 몇 년 동안 인도의 신생 게임 산업이 기하급수적으로 성장하면서 상황이 조용히 변화하고 있습니다.
+Content: >-
+  비디오 게임은 오랫동안 일본과 미국과 같은 국가의 포르테로 간주되었습니다. 그러나 지난 몇 년 동안 인도의 신생 게임 산업이 기하급수적으로 성장하고 8억 9천만 달러의 가치가 있는 상황이 조용히 변화하고 있습니다. 2010년에는 인도에 25개 이상의 게임 회사가 있었고, 최근 집계는 약 250개 기업에 불과하며, 그 중 일부는 신생 기업이 되었습니다. 업계 매출은 올해 약 2억 4,400만 달러에 이를 것으로 예상되며, 지난 회계 연도에 약 40개의 인도 원주민 게임 타이틀이 플랫폼 간에 출시되었다는 점에 주목하는 것도 인상적입니다.
+
+
+  이 분야의 스타트업이 직면한 주요 과제는 인기 있는 국제 게임의 높은 기술 품질과 복잡한 특성과 일치하는 것입니다. 게임 개발자와 게임 퍼블리싱 회사가 직면해야 하는 다른 과제는 여러 플랫폼 및 디바이스를 지원하고, 다양한 시나리오에서 인스턴트 알림을 받을 것으로 기대하는 플레이어, 며칠 만에 소수의 사용자에서 바이러스 성으로 이동하고, 여러 지역에서 대상에게 도달하려는 게임입니다.
+
+
+  Microsoft Azure 이러한 문제를 해결하기 위한 다양한 대안을 제공하므로 게임 개발자는 인증, 컴퓨팅, 데이터 또는 미디어 요구 사항을 지원하기 위해 인프라를 프로비전하는 방법이 아니라 게임 빌드에 완전히 집중할 수 있습니다. Microsoft Azure 원활한 환경과 수익 창출을 위한 참여를 촉진하는 데 필요한 데이터 기반 인사이트를 제공합니다. Microsoft Azure 장치, 플랫폼 및 게임별 사용자 계정, ID 관리, 도전 과제 및 기본 설정, 개인 설정, 지역화 등과 같은 게임 서비스에 전원을 공급할 수 있습니다. 플랫폼 간, 다중 플레이어 턴 기반 시나리오에서 게임 세션 관리와 같은 복잡한 계산에 효과적으로 사용할 수 있습니다. DAU(일일 활성 사용자)에 따라 최적화 및 크기를 조정하는 데 도움이 될 수 있습니다. 또한 게임 AI(인공 지능) 및 서버 쪽 게임 논리에 사용할 수 있습니다. 또한 Azure는 게시자가 앱 구매 및 수익 창출에 대한 단일 지점을 만드는 데 도움을 줄 수 있습니다.
+
+
+  플랫폼 간 게임의 내부가 Azure에서 구동되는 모습을 보고 싶으신가요? 아래 다이어그램을 확인하세요.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/05/12/End-Users.png"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="최종 사용자" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/End-Users_thumb.png" alt="End Users" width="610" height="409" border="0" /></a>
+
+
+  &nbsp;
+
+
+  Azure는 다음과 같은 게임 시나리오에서 효과적으로 사용할 수 있습니다.
+
+
+  <b>1. </b><b>DevOps</b> – Visual Studio Online이 Visual Studio 및 Eclipse IDE와 강력하고 원활한 통합 환경을 제공하므로 게임 스튜디오 또는 인디 개발자 DevOps Azure에 의존할 수 있습니다. Azure를 사용하면 민첩한 개발 및 테스트 시나리오를 포함하여 플랫폼 간 개발자 작업을 수행할 수 있습니다.<b></b>
+
+
+  <strong>2.</strong> <b>컴퓨팅 및 크기 조정</b> – VM 및 클라우드 서비스를 사용하는 IAAS 및 PAAS는 강력한 컴퓨팅 및 탄력적 확장성 옵션을 제공합니다. 게임 개발자는 턴 기반, 비동기 게임 플레이, 게임 상태 관리, 타이머, 스케줄러, 게임 AI(인공 지능) 및 논리에 Azure를 활용할 수 있습니다.
+
+
+  <strong>3.</strong> <b>Game Services -</b>Identity, 최종 사용자 계정 관리 및 인증은 Azure 기본 제공 서비스를 사용하여 플랫폼 간 게임에 대해 쉽게 관리할 수 있습니다. <a href="https://azure.microsoft.com/en-in/marketplace/partners/sendgrid/sendgrid-azure/">Sendgrid</a> 는 전자 메일을 사용하도록 설정하고, <a href="https://azure.microsoft.com/en-in/documentation/articles/partner-twilio-mobile-services-how-to-use-voice-sms/">Twilio</a> 는 SMS 및 음성 통화를 통합하는 데 도움을 줄 수 있습니다. Facebook, Twitter, Microsoft 계정 및 Google 계정과 같은 소셜 네트워크는 <a href="https://azure.microsoft.com/en-in/services/app-service/mobile/">Azure Mobile Apps Services</a>를 통해 관리할 수도 있습니다. 사용자 지정 계정 관리는 위에서 언급한 서비스를 통해서도 가능합니다. 점수 관리, 순위표, 매치 메이킹, 도전 과제, 게임 아티팩트 Storage, 로밍 데이터는 <a href="https://azure.microsoft.com/en-in/services/app-service/">Azure App Services</a>, 작업자 및 웹 역할 및 사용자 지정 API 관리 서비스를 사용하여 구현할 수 있는 몇 가지 데이터일 뿐입니다.
+
+
+  채팅, 도전 또는 친구 초대, 알림 보내기와 같은 게임 내 통신 기능은 <a href="https://azure.microsoft.com/en-in/services/app-service/mobile/">Azure Mobile Apps Services</a> 및 <a href="https://azure.microsoft.com/en-in/services/notification-hubs/">알림 허브</a>에서 구동할 수도 있습니다.
+
+
+  <strong>4. Publisher Services – </strong>게임 분석 및 원격 분석은 게임 수익을 창출하는 퍼블리셔의 가장 친한 친구입니다.   <a href="https://azure.microsoft.com/en-us/services/application-insights/">애플리케이션 Insights</a> 게임 분석에 대한 큰 지원을 제공하며, 개발자가 게임에 큰 영향을 미치기 전에 문제를 해결하고  <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-overview-usage/">사용 패턴을 분석</a>하여 플레이어가 게임을 플레이하는 방법을 파악하고 중요한 통찰력을 수집할 수 있도록 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-windows-crashes/">충돌을 진단</a>할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/event-hubs/">Azure Event Hubs</a> 및 <a href="https://www.microsoft.com/en-in/server-cloud/internet-of-things.aspx">Microsoft Azure IoT 서비스를</a> 사용하면 Microsoft Azure 사용하여 게임 원격 분석을 사용할 수 있습니다.  <a href="https://azure.microsoft.com/en-in/services/hdinsight/"> HDInsight는</a> 구조화되지 않은 원시 게임 데이터로부터 새로운 인사이트를 제공할 수 있습니다. <a href="https://azure.microsoft.com/en-in/services/machine-learning/">Azure Machine Learning</a> 사용하면 선호하는 게임 모드, 게임 길이 등을 포함하여 매일 수백만 개의 데이터가 풍부한 개체를 분석하고 고급 최종 사용자 환경을 위한 학습된 예측 모델로 처리할 수 있습니다.
+
+  <h2>게임 개발을 위한 클라우드 디자인 패턴 및 아키텍처</h2>
+
+  Microsoft Patterns Practices &amp; 는 최근 각 아키텍처가 해결하려는 다양한 클라우드 아키텍처 및 문제 영역을 설명하는 "클라우드 <a href="https://msdn.microsoft.com/en-us/library/dn568099.aspx">디자인 패턴</a>: 클라우드 애플리케이션에 대한 규범적 아키텍처 지침"이라는 책을 발표했습니다. 이러한 설명된 패턴은 모두 게임 시나리오에서 유용하며 고려해야 합니다.
+
+
+  <a href="https://www.playblazer.com/">Playblazer</a>, 그들의 베스트 셀러 게임의 일부를 구축 하 고 확장 하 여 최고의 게임 스튜디오와 함께 일 하는 회사, 인프라에 대 한 주로 Microsoft Azure 사용 하고있다. <strong>Playblazer의 CEO인 니킬 소만(Nikhil Soman</strong>)은 지난해 11월 헝거 게임: 모킹제이 파트 1의 출시와 함께 자신의 경험을 공유했습니다. 이 게임은 출시 당일 2,50,000 다운로드를 보았고 바로 다음 날 최대 반 만 다운로드로 뛰어 올랐습니다. Azure는 이러한 종류의 도약을 원활하게 전환하는 데 도움을 주었으며, 자체 서버를 사용했다면 불가능했던 확장성이 매우 뛰어난 것으로 입증되었습니다.
+
+
+  모바일 게임 개발의 종단 간 서비스 제공업체인 <a href="https://dumadu.com/">두마두 게임의</a> <strong>최고 마케팅 책임자인 Sangram Patil</strong>은 2년 이후 Microsoft Azure 사용한 경험에 대해 이야기했습니다. Dumadu는 최근 멀티 플레이어 게임으로 전환했으며 이 전환에 필요한 높은 연결 수준을 감안할 때 Azure 서버가 매우 지원된다는 것을 알게 되었습니다.
+
+
+  우리는 Azure가 기술 및 인프라 측면에서 게임 회사에 미칠 수 있는 영향을 확인하여 더 나은 품질과 그로 인하여 수익 창출을 이끌어 보았습니다. Microsoft Azure 위에서 설명한 대로 여러 다양한 게임 시나리오에서 효과적으로 사용할 수 있습니다. 따라서 이러한 Azure 클라우드 컴퓨팅의 출현으로 인도 게임 산업은 시대가 도래하고 있으며 국제 게임 회사들에게 돈을 위해 출마할 것으로 예상됩니다. 이 나라에서 엄청난 창조적 인 재능이 존재하고 IT, 테스트 및 디자인에 걸쳐 기술이 분산되어 있으므로 인도 게임 산업을 멈추지 않는 것처럼 보입니다.

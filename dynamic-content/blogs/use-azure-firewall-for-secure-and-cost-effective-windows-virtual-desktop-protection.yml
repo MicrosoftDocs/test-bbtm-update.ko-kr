@@ -1,0 +1,90 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a3725fc642aff3710e82db40b7c9c027feb51560
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898834"
+Slug: use-azure-firewall-for-secure-and-cost-effective-windows-virtual-desktop-protection
+Title: 안전하고 비용 효율적인 Windows Virtual Desktop 보호를 위해 Azure Firewall 사용
+Summary: 홈 정책에서 작업하려면 많은 IT 조직이 용량, 네트워크, 보안 및 거버넌스의 근본적인 변화를 해결해야 합니다.
+Content: >-
+  <p><em>이 게시물은 Pavithra Thiruvengadam, 프로그램 관리자, Windows Virtual Desktop에 의해 공동 저술되었습니다.</em></p>
+
+
+  <p>홈 정책에서 작업하려면 많은 IT 조직이 용량, 네트워크, 보안 및 거버넌스의 근본적인 변화를 해결해야 합니다. 대부분의 직원은 집에서 작업하는 동안 온-프레미스 서비스와 연결된 계층화된 보안 정책으로 보호되지 않습니다. Azure에서 VDI(가상 데스크톱 인프라) 배포를 통해 조직은 이러한 변화하는 환경에 신속하게 대응할 수 있습니다.&nbsp; 그러나 이러한 VDI 배포에 대한 인바운드 또는 아웃바운드 인터넷 액세스를 보호하는 방법이 필요합니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/virtual-desktop/overview" target="_blank">Windows Virtual Desktop</a>은 Azure에서 실행되는 포괄적인 데스크톱 및 애플리케이션 가상화 서비스입니다. Office 365 대한 간소화된 관리, 다중 세션 Windows 10 및 최적화를 제공하는 유일한 VDI입니다. 몇 분 내에 Azure에서 Windows 데스크톱 및 앱을 배포하고 스케일링할 수 있으며 기본 제공 보안 및 규정 준수 기능을 이용할 수 있습니다. 이 게시물에서는 안전하고 비용 효율적인 Windows Virtual Desktop 보호를 위해 <a href="https://docs.microsoft.com/en-us/azure/firewall/overview" target="_blank">Azure Firewall</a>을 사용하는 방법을 알아봅니다.</p>
+
+
+  <h2>Windows Virtual Desktop 구성 요소</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/425fff46-c9ad-4dde-abfa-fb0f63a325e8.png"><img width="1024" height="366" title="" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt=" Windows Virtual Desktop high level architecture" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a177079-5ce9-44bd-97bb-ebcc6c30eaa0.png" border="0"></a></p>
+
+
+  <p>Windows Virtual Desktop 서비스는 공유 책임 모델로 제공됩니다.</p>
+
+
+  <ul>
+      <li><strong>고객 관리형 RD 클라이언트는</strong> 인터넷 어디에서나 즐겨 찾는 클라이언트 디바이스에서 Windows 데스크톱 및 애플리케이션에 연결합니다.</li>
+      <li><strong>Microsoft에서 관리하는 Azure 서비스는</strong> <strong>RD 클라이언트</strong>와 Azure의 <strong>Windows Virtual Machines</strong>(Windows 10 다중 세션 포함) 간의 연결을 처리합니다.</li>
+      <li>Azure 호스트의 <strong>고객 관리</strong>형 가상 네트워크는 호스트 풀의 <strong>다중 세션 가상 머신을 Windows 10</strong>.</li>
+  </ul>
+
+
+  <p>Windows Virtual Desktop을 사용하여 가상 네트워크에 대한 인바운드 액세스를 열 필요는 없습니다. 그러나 고객 관리형 가상 머신과 서비스 간의 플랫폼 연결을 보장하려면 호스트 풀 가상 네트워크에 대해 아웃바운드 네트워크 연결 집합을 사용하도록 설정해야 합니다. 이러한 종속성은 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/security-overview">네트워크 보안 그룹을</a> 사용하여 구성할 수 있지만 이 구성은 네트워크 수준 트래픽 필터링으로만 제한됩니다. 애플리케이션 수준 보호를 위해 <a href="https://docs.microsoft.com/en-us/azure/firewall/overview" target="_blank">Azure Firewall</a> 또는 타사 NVA(네트워크 가상 어플라이언스)를 사용할 수 있습니다. NVA를 배포하기 전에 고려해야 할 모범 사례는 <a href="https://azure.microsoft.com/en-us/blog/best-practices-to-consider-before-deploying-a-network-virtual-appliance/" target="_blank">네트워크 가상 어플라이언스를 배포하기 전에 고려해야 할 모범 사례를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/709d8fec-a9ea-40e0-b49b-0c9b0b738497.jpg"><img width="1024" height="528" title="" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="Azure Firewall protecting Windows Virtual Desktop " src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fa02da88-6429-4d22-90a7-1e7926d5a311.jpg" border="0"></a></p>
+
+
+  <h2>Windows Virtual Desktop에 대한 호스트 풀 아웃바운드 액세스</h2>
+
+
+  <p>Azure Firewall은 클라우드 네이티브 FWaaS(Firewall as a Service) 제품으로, DevOps 방법을 사용하여 모든 트래픽 흐름을 중앙에서 제어하고 기록할 수 있습니다. 이 서비스는 애플리케이션 및 네트워크 수준 필터링 규칙을 모두 지원하며 알려진 악성 IP 주소 및 도메인을 필터링하기 위해 Microsoft 위협 인텔리전스 피드와 통합됩니다. Azure Firewall은 기본 제공 자동 크기 조정을 통해 고가용성입니다.</p>
+
+
+  <p>Azure Firewall은 Windows Virtual Desktop FQDN 태그를 제공하여 Windows Virtual Desktop에 대한 호스트 풀 아웃바운드 액세스를 간소화합니다. 아웃바운드 플랫폼 트래픽을 허용하려면 다음 단계를 사용합니다.</p>
+
+
+  <ul>
+      <li>Azure Firewall을 배포하고 Azure Firewall을 통해 모든 트래픽을 라우팅하도록 Windows Virtual Desktop 호스트 풀 UDR(사용자 정의 경로)을 구성합니다.</li>
+      <li>애플리케이션 규칙 컬렉션을 만들고 <strong>WindowsVirtualDesktop</strong> FQDN 태그를 사용하도록 설정하는 규칙을 추가합니다. 원본 IP 주소 범위는 호스트 풀 가상 네트워크이고, 프로토콜은 https이고, 대상은 <strong>WindowsVirtualDesktop</strong>입니다.</li>
+  </ul>
+
+
+  <blockquote>
+
+  <p><br>&nbsp;&nbsp;&nbsp; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5994c121-772a-4268-a2d6-dff01835b778.jpg"><img width="1024" height="499" title="" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" alt="Windows Virtual Desktop FQDN Tag in Azure Firewall " src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/78abb68f-803b-4738-a7ed-c85c56002a4e.jpg" border="0"></a></p>
+
+  </blockquote>
+
+
+  <ul>
+      <li>Windows Virtual Desktop 호스트 풀에 필요한 스토리지 및 서비스 버스 계정 집합은 배포별이며 아직 WindowsVirtualDesktop FQDN 태그에 캡처되지 않습니다. 또한 ADDS(Active Directory Domain Services) 배포에서 DNS 액세스를 허용하고 가상 머신에서 Windows 활성화 서비스에 대한 액세스를 KMS 네트워크 규칙 컬렉션이 필요합니다. 이러한 추가 종속성에 대한 액세스를 구성하려면 <a href="https://docs.microsoft.com/en-us/azure/firewall/protect-windows-virtual-desktop" target="_blank">Azure Firewall을 사용하여 Windows Virtual Desktop 배포를 보호하세요</a>.</li>
+  </ul>
+
+
+  <h2>인터넷에 대한 호스트 풀 아웃바운드 액세스</h2>
+
+
+  <p>조직의 요구 사항에 따라 최종 사용자에 대해 안전한 아웃바운드 인터넷 액세스를 사용하도록 설정할 수 있습니다. Windows Virtual Desktop 세션은 고객 관리형 가상 머신에서 실행되므로 가상 네트워크 보안 제어의 적용을 받습니다. 허용되는 대상 목록(예: <a href="https://docs.microsoft.com/Office365/Enterprise/office-365-ip-web-service">Office 365 액세스</a>)이 잘 정의된 경우 Azure Firewall 애플리케이션 및 네트워크 규칙을 사용하여 필요한 액세스를 구성할 수 있습니다. 그러면 최상의 성능을 위해 최종 사용자 트래픽을 인터넷으로 직접 라우팅합니다.</p>
+
+
+  <p>기존 온-프레미스 보안 웹 게이트웨이를 사용하여 아웃바운드 사용자 인터넷 트래픽을 필터링하려는 경우 명시적 프록시 구성을 사용하여 Windows Virtual Desktop 호스트 풀에서 실행되는 웹 브라우저 또는 기타 애플리케이션을 구성할 수 있습니다. 예를 들어 <a href="https://docs.microsoft.com/deployedge/edge-learnmore-cmdline-options-proxy-settings" target="_blank">Microsoft Edge 명령줄 옵션을 사용하여 프록시 설정을 구성하는 방법</a>을 참조하세요. 이러한 프록시 설정은 최종 사용자 인터넷 액세스에만 영향을 미치며, Azure Firewall을 통해 직접 아웃바운드 트래픽을 허용합니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>위에서 설명한 모든 항목에 대한 자세한 내용은 다음 블로그, 설명서 및 비디오를 참조하세요.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-desktop/overview" target="_blank">Windows Virtual Desktop이란</a>?</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/firewall/" target="_blank">Azure Firewall 설명서</a>.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/firewall/protect-windows-virtual-desktop" target="_blank">Azure Firewall을 사용하여 Windows Virtual Desktop 배포를 보호합니다</a>.</li>
+      <li>Azure Firewall 2020년 2월 블로그: <a href="https://azure.microsoft.com/en-us/blog/new-azure-firewall-certification-and-features-in-q1-cy2020/" target="_blank">1분기 CY2020의 새로운 Azure Firewall 인증 및 기능</a></li>
+  </ul>

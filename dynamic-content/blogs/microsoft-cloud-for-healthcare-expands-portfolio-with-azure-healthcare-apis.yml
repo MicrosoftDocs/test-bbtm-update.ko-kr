@@ -1,0 +1,77 @@
+### YamlMime:Yaml
+ms.openlocfilehash: da6cde4547494eba84019810063f67ef81013353
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898890"
+Slug: microsoft-cloud-for-healthcare-expands-portfolio-with-azure-healthcare-apis
+Title: 의료 조직을 위한 Microsoft Cloud Azure Healthcare API를 사용하여 포트폴리오 확장
+Summary: 오늘날 의료 조직을 위한 Microsoft Cloud 상호 운용성 데이터 서비스의 포트폴리오를 확장하고 있습니다. 2019년 10월, Microsoft는 FHIR용 Azure API를 사용하여 네이티브 FHIR(Fast Healthcare Interoperability Resource) 형식으로 구조화된 의료 데이터를 수집, 유지 및 관리하는 완전 관리형 자사 서비스를 갖춘 최초의 클라우드가 되었으며, 현재는 건강 및 생명 과학 산업용 FHIR 형식으로 여러 데이터 형식을 교환할 수 있도록 의료 데이터 서비스를 확장하고 있습니다. 이러한 이유로 서비스의 이름을 Azure Healthcare API로 변경합니다.
+Content: >-
+  <h2>Azure Healthcare API 발표</h2>
+
+
+  <p>오늘날 의료 조직을 위한 Microsoft Cloud 보건 및 생명 과학 산업을 위한 상호 운용성 데이터 서비스 포트폴리오를 확장하고 있습니다. 2019년 10월, Microsoft는 <a href="https://azure.microsoft.com/en-us/blog/azure-api-for-fhir-moves-to-general-availability/" target="_blank">Azure API for FHIR</a>을 사용하여 네이티브 FHIR 형식으로 구조적 의료 데이터를 수집, 유지 및 관리하는 완전 관리형 자사 서비스를 갖춘 최초의 클라우드가 되었습니다.&nbsp; &rsquo;현재는 여러 데이터 형식을 FHIR 형식으로 교환할 수 있도록 상태 데이터 서비스를 확장하고 있습니다. 이러한 이유로&rsquo; Azure Healthcare API로 서비스 이름을 변경해야 합니다.</p>
+
+
+  <p>PHI(보호된 상태 정보)의 고유한 요구 사항을 위해 특별히 구축된 <a href="https://azure.microsoft.com/services/healthcare-apis/" target="_blank">Azure Healthcare API</a>를 통해 고객은 의료 조직을 위한 Microsoft Cloud 데이터를 수집, 관리 및 유지할 수 있습니다. 상태 데이터로 작업하는 모든 사용자는 의료 API를 활용하여 서로 다른 PHI 집합을 함께 가져오고 기계 학습, 분석 및 AI용 도구와 엔드투엔드에 연결할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1947e492-75ac-4aaf-9ac0-ffc81fc1f435.png"><img alt="Microsoft Cloud for Healthcare, introdcuing Azure Healthcare APIs" border="0" height="478" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/12344a12-b9b7-4c8f-b165-6afb4b7b3af8.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="의료 조직을 위한 Microsoft Cloud" width="1024"></a></p>
+
+
+  <h2>실제 데이터에 액세스할 수 있도록 만들기</h2>
+
+
+  <p><em>&ldquo;나에게 처방 된 모든 약물과 모든 CT 스캔 문서와 지난 2 년 동안 골육종의 진단을했다 45 세 이상의 환자에 대한 관련 방사선 보고서를 제공합니다.&rdquo;</em></p>
+
+
+  <p>위의 문은 상태 데이터 관리자에 대한 일반적인 요청입니다. 그것은 임상 연구 또는 데이터 과학자를 하 고 의사에서 올 수 있습니다., 하지만 우리는 요청의이 유형을 채우는 많은 들었어요, 특히 큰 데이터베이스에 걸쳐, 개월 걸릴 수 있습니다. 그 이유는 무엇일까요? 대부분의 상태 시스템은 동일한 언어를 사용하지 않는&rsquo; 여러 데이터 저장소를 쿼리한 다음, 데이터 파일을 추출하고 마지막으로 사용자에 대한 일괄 처리로 통합하기 위해 작업해야 하기 때문입니다. 약물, 진단 및 환자 특성과 같은 구조화된 데이터는 제약 또는 EHR 데이터베이스에 저장되고 CT 검사는 DICOM 형식으로 저장되며 방사선 보고서는 구조화되지 않은 텍스트로 저장될 수 있습니다. 모든 데이터를 끌어올 때까지 정보가 부실합니다.</p>
+
+
+  <p>Azure Healthcare API를 사용하면 위의 쿼리와 같은 검색 및 사용자 지정 가능한 쿼리를 몇 분 안에 채울 수 있습니다. Azure Healthcare API를 통해 레코드 시스템에서 데이터를 수집하고 변환하는 경우 데이터는 통합되어 여러 유형의 건강 데이터에 대한 일반적인 상태 데이터 표준에 따라 일관된 방식으로 수집 및 유지되는 실시간 데이터로 세로 환자 레코드를 만듭니다.&nbsp;</p>
+
+
+  <ul>
+      <li>HL7 또는 C-CDA의 임상 기록, 의료 기기의 데이터, HealthKit 및 Google Fit과 같은 서비스 또는 유전체학 데이터베이스와 같은 구조화된 입력은 수집, 변환 및 FHIR에 매핑될 수 있습니다.</li>
+      <li>구조화되지 않은 데이터는 <a href="https://techcommunity.microsoft.com/t5/azure-ai/text-analytics-for-health-now-generally-available-unlocks/ba-p/2531955" target="_blank">Text Analytics for Health</a> 와 같은 자연어 처리 알고리즘에 매핑하여 임상 노트 또는 텍스트 문서의 데이터에 주석을 달고 구조화된 임상 데이터와 함께 볼 수 있도록 FHIR로 구조화할 수 있습니다.</li>
+      <li><a href="https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/introducing-the-medical-imaging-server-for-dicom/ba-p/1694397" target="_blank">DICOM 형식</a>의 이미징 데이터는 API 게이트웨이를 통해 수집할 수 있으며, DICOMCast 기술은 이미지에서 관련 메타데이터를 추출하여 FHIR의 환자 레코드에 매핑합니다.</li>
+      <li>디바이스의 생체 인식 데이터는 Azure IoT Connector for FHIR을 통해 수집할 수 있으며, 적시에 개입하고 원격 치료를 수행할 수 있도록 의료 팀에 건강 동향에 대한 중요한 정보를 제공할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>실제 데이터에 힘을 실어주어 실제 증거에 연료를 공급합니다.</h2>
+
+
+  <p>의료 산업의 미래를 살펴보면 기록 시스템에서 검색 가능성을 가능하게 하는 것은 강력한 시작점이지만 Azure Healthcare API는 데이터 수집 및 관리를 넘어 클라우드의 데이터로 수행할 수 있는 작업을 가속화합니다. 임상 입력은 건강의 사회적 결정자와 같은 그밖 환자 기반 &ldquo;빅 데이터&rdquo; 세트와 혼합될 수 있습니다. 실제 데이터가 의료 의사 결정에서 점점 더 많은 역할을 하게 됨에 따라 Azure Healthcare API는 데이터에서 보장 의사 결정 지원, 임상 시험 파이프라인 및 관찰 연구와 같은 실제 증거 파이프라인을 지원할 수 있는 권한을 부여합니다.</p>
+
+
+  <p>Azure Healthcare API를 사용하면 데이터의 위치와 역할 기반 액세스 제어를 통해 데이터에 액세스하는 방법을&rsquo; 제어할 수 있습니다. 간소화된 커넥터를 사용하면 <a href="https://azure.microsoft.com/en-us/services/virtual-machines/data-science-virtual-machines/" target="_blank">Azure Data Science VM 또는 Azure</a> <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/?OCID=AID2200277_SEM_dc25ff0e3e5918af65af9e0e789ae6b8:G:s&amp;ef_id=dc25ff0e3e5918af65af9e0e789ae6b8:G:s&amp;msclkid=dc25ff0e3e5918af65af9e0e789ae6b8" target="_blank">Synapse</a>에서 딥 러닝 및 AI 프레임워크에 대한 데이터를 빠르게 내보낼 수 있습니다. 보조 사용을 위해 데이터를 준비하는 경우 <a href="https://microsoft.github.io/health-architectures/Azure-FHIR-Export-with-Anonymization.html" target="_blank">익명화를 위한 도구를</a> 사용하면 혼합된 데이터 집합을 신속하게 식별 해제하고 연구를 위해 작업 영역을 빠르게 스핀업할 수 있습니다. 데이터 과학 워크로드는 암호화, 대체, 암호화 해시, 혼란, 날짜 이동 및 일반화를 위한 자동화된 방법으로 간소화되며, 템플릿을 사용하여 전문가의 결정을 적용할 수 있습니다.</p>
+
+
+  <h2>실제 작업을 통해 조직 변환</h2>
+
+
+  <p>&rsquo;건강 데이터를 사용하여 AI를 더 쉽게 개발할 수 있게 되어 매우 기쁘지만, 의료의 미래에 더욱 중요한 것은 의료 조직을 위한 Microsoft Cloud 어떻게 확장할 수 있는지입니다. 데이터를&rsquo; 사용하여 새로운 인사이트를 조명할 때 FHIR API 또는 SMART on FHIR을 통해 데이터 및 AI 출력을 팀이 최전선에서 사용하는 시스템에 쉽게 연결하거나 연결할 수 있습니다. 즉&rsquo;, 새로운 경로를 조명하고, 새로운 혁신을 만들고, 건강을 제공하는 방식을 변화시키는 실제 작업을 제공하기 위해 팀의 손에 데이터를 배치해야 합니다.</p>
+
+
+  <h2>파트너 및 고객 역량 강화</h2>
+
+
+  <p>오늘&rsquo; 발표에서 가장 흥미로운 점은&rsquo; 혁신의 속도이며 파트너와 고객이 Azure Healthcare API 기술에서 찾는 데 미치는 영향입니다.&nbsp; Slawek Kierner, Enterprise Data &amp; Analytics의 SVP 및 휴머나와 존 홉킨스 대학의 케이시 테일러 박사의 수석 제품 매니저 인 Cille Kissel은 이번 주에 HIMSS에 합류하여 조직에서 운전하는 강력한 변환과 Azure Healthcare API와의 연구를 공유할 예정입니다.</p>
+
+
+  <h2>클라우드에서 상태 데이터로 더 많은 작업 수행</h2>
+
+
+  <p>간단히 말해서, 의료 조직을 위한 Microsoft Cloud 의료 조직이 데이터로 더 많은 작업을 수행할 수 있도록 합니다. &rsquo;환자 환경을 혁신하거나, 연구 팀을 위한 공동 작업 영역을 만들거나, 강력한 분석 및 시각화 도구에 빠르게 연결하든, 모두 Azure Healthcare API로 시작합니다.<br>
+
+  의료 혁신의 미래를 위해 데이터를 사용하도록 설정합니다.</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/services/healthcare-apis/" target="_blank">Azure Healthcare API</a>에 대해 자세히 알아보고 이 <a href="https://www.himsslearn.org/microsoft-cloud-healthcare-empowering-health-data-and-ai-cloud?source=MS2" target="_blank">HIMSS21 사전 이벤트 웨비나</a>를 시청하세요.</li>
+      <li><a href="https://aka.ms/cloudforhealthcare" target="_blank">의료 조직을 위한 Microsoft Cloud</a> 대해 자세히 알아보기</li>
+      <li>의료 회사가 Azure를 사용하여 더 나은 <a href="https://azure.microsoft.com/en-us/industries/healthcare/" target="_blank">건강 결과를</a> 이끌어 내는 방법에 대해 자세히 알아보기</li>
+  </ul>

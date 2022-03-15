@@ -1,0 +1,81 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2c92eb3324dc788fa0b0d88448ecf8ae04adf384
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898993"
+Slug: exploring-azure-documentdb-in-visual-studio
+Title: Visual Studio Azure DocumentDB 탐색
+Summary: Azure DocumentDB 팀은 Visual Studio 클라우드 탐색기와의 DocumentDB 통합을 발표하게 되어 기쁘게 생각합니다. 이제 즐겨찾는 IDE 내에서 DocumentDB 리소스를 탐색할 수 있습니다.
+Content: >-
+  <p>Azure DocumentDB 팀은 Visual Studio&rsquo; s Cloud Explorer와 DocumentDB 통합을 발표하게 되어 기쁘게 생각합니다. 이제 즐겨찾는 IDE 내에서 DocumentDB 리소스를 탐색할 수 있습니다. 이 통합을 통해 동일한 Visual Studio 환경 내에서 애플리케이션을 빌드하는 동안 DocumentDB 데이터를 보고 수정할 수 있습니다.</p>
+
+
+  <p><img alt="image" border="0" height="389" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e9e8bab0-b722-438a-b8fd-795915eb49f7.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="610"></p>
+
+
+  <p>시작</p>
+
+
+  <ul>
+   <li>&rsquo;<a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" target="_blank">Visual Studio 2013</a> 사용하거나 <a href="https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx" target="_blank">2015년 Visual Studio</a> 확인합니다.</li>
+   <li>VS 2013 또는 VS 2015용 Azure SDK 2.8.1을 다운로드합니다.</li>
+  </ul>
+
+
+  <p>완료되었습니다. Visual Studio 클라우드 탐색기는 Visual Studio 로드할 때 자동으로 열립니다.</p>
+
+
+  <p>Azure 구독이 다른 Windows 라이브 ID에 연결된 경우 오른쪽 위 모서리에서 <em>계정 설정을 </em>클릭합니다.</p>
+
+
+  <p><img alt="image" border="0" height="190" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3e06e7c4-f610-4b17-a796-547a143ec1e7.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="360"></p>
+
+
+  <p>계정 설정 창에서 <em>계정 추가를</em> 클릭하고 Windows 라이브 ID 자격 증명을 입력합니다.</p>
+
+
+  <p><img alt="image" border="0" height="357" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/329aa03e-711b-4a33-98fe-8598eb56d3af.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="360"></p>
+
+
+  <p>탐색</p>
+
+
+  <p>Visual Studio&rsquo; 클라우드 탐색기에서 모든 DocumentDB 계정, 데이터베이스, 컬렉션 및 문서를 볼 수 있습니다.</p>
+
+
+  <p><img alt="image" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bf2cde56-df51-4538-8a4d-4e6b19c579f3.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="161"></p>
+
+
+  <p>새 애플리케이션을 시작할 때 계정&rsquo; 속성에서 DocumentDB 엔드포인트 및 키를 가져옵니다.</p>
+
+
+  <p><img alt="image" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f7146e67-2dd7-47eb-88fd-32083f4fa143.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="197"></p>
+
+
+  <p>Visual Studio JSON 편집기 내에서 직접 문서를 보고 수정합니다.</p>
+
+
+  <p><img alt="image" border="0" height="425" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0187fc6a-00c3-4f31-9d68-ab9705f568f8.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="610"></p>
+
+
+  <p>문서 편집은 DocumentDB 데이터베이스에 직접 저장됩니다.</p>
+
+
+  <p><img alt="image" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3b2558e4-33c3-40ea-9348-a9a849e02e5e.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="474"></p>
+
+
+  <p><img alt="image" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7596fb5-d719-49be-af71-ae86cea3db2d.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="472"></p>
+
+
+  <p>다음 단계</p>
+
+
+  <p><a href="https://azure.microsoft.com/pricing/free-trial/" target="_blank">무료 평가판</a>에 등록하고 <a href="https://azure.microsoft.com/documentation/articles/documentdb-create-account" target="_blank">DocumentDB 계정을 만들어 오늘 DocumentDB</a>를 사용해 보세요. 도움이 필요하거나 질문이 있는 경우 <a href="https://stackoverflow.com/questions/tagged/azure-documentdb" target="_blank">StackOverflow의 개발자 포럼</a> 을 통해 문의하거나 DocumentDB 엔지니어링 팀과 1:1 채팅을 예약하세요.</p>
+
+
+  <p>클라우드 탐색기에서 더 많은 기능을 보고 싶으신가요? <a href="https://feedback.azure.com/forums/263030-documentdb" target="_blank">사용자 음성</a>에 대한 피드백을 제공해 주세요.</p>
+
+
+  <p>Twitter <a href="https://twitter.com/DocumentDB" target="_blank">@DocumentDB</a>에서 팔로우하여 최신 DocumentDB 뉴스 및 기능을 최신 상태로 유지하세요.</p>

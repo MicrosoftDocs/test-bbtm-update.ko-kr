@@ -1,0 +1,15 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a20ef104f7a9ef877051f1041dca5df3321f82b3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903309"
+Slug: enabling-client-certificate-authentication-for-an-azure-web-app
+Title: Azure Web App에 대해 클라이언트 인증서 인증 사용
+Summary: Azure Web App에 대해 클라이언트 인증서 인증(TLS 상호 인증)을 사용하도록 설정하는 방법입니다.
+Content: >-
+  이전에는 <a href="https://azure.microsoft.com/blog/2014/10/27/using-certificates-in-azure-websites-applications/">Azure Web Apps에서 인증서를 사용하여</a> 아웃바운드 클라이언트 인증서 인증과 같은 작업을 수행하는 방법을 설명했지만 Azure Web App에 대한 인바운드 클라이언트 인증서 인증(TLS 상호 인증)을 사용하도록 설정할 수 없었습니다. 이제 인증을 위해 웹앱에 TLS 클라이언트 인증서가 필요한 기능이 있다고 말하게 되어 기쁩니다.
+
+
+  자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-web-configure-tls-mutual-auth/">Azure 설명서</a> 의 지침에 따라 현재 Azure Web App에 사용하도록 설정하세요.

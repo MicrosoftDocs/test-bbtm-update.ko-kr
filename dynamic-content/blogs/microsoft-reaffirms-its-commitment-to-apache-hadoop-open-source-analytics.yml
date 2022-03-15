@@ -1,0 +1,62 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2e3c43ec9490c87fbbeaa28edb8a23ebc8e020db
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898327"
+Slug: microsoft-reaffirms-its-commitment-to-apache-hadoop-open-source-analytics
+Title: Microsoft는 Apache Hadoop 및 오픈 소스 분석에 대한 노력을 강화합니다.
+Summary: Microsoft는 수년 동안 Hadoop 및 Spark 커뮤니티를 오랫동안 지원해 왔습니다. 클러스터 및 관련 인프라를 관리하는 대신 분석 프로젝트에 집중하는 것을 선호하는 고객은 Azure HDInsight를 채택했습니다.
+Content: >-
+  <p><strong>데이터웍스 서밋, 산호세, 캘리포니아, 2018년 6월 18</strong> &ndash; 일 오늘 초, Microsoft Corporation은 Apache Hadoop 에코시스템에 대한 헌신과 최고의 Apache Hadoop 및 오픈 소스 빅 데이터 분석을 클라우드로 가져온 Hortonworks와의 파트너십을 심화시켰습니다. 약 6년 전 파트너십이 시작된 이래 수백 개의 대기업이 Azure HDInsight 및 Hortonworks를 사용하여 Azure에서 Hadoop, Spark 및 기타 오픈 소스 분석 워크로드를 실행하기로 결정했습니다. 또한 이 기간 동안 Microsoft는 오픈 소스 커뮤니티와 함께 지구상에서 가장 큰 데이터 레이크 중 하나를 실행한 경험을 공유하면서 Apache 프로젝트의 선도적인 커밋자 중 하나가 되었습니다.</p>
+
+
+  <h2>Azure HDInsight</h2>
+
+
+  <p>Azure HDInsight는 고객이 <strong>Hadoop, Spark, Hive, HBase, Kafka, Storm 및 분산 R</strong>을 사용하여 대량의 데이터를 처리하고 인사이트를 얻을 수 있도록 하는 <strong>완전 관리형 클러스터 서비스</strong>입니다. Azure HDInsight는 Linux OS에서 최신<strong> HDP(Hortonworks Data Platform)</strong> 배포 및 관련 오픈 소스 프로젝트를 제공합니다. 이 서비스는 미국과 독일의 26개 공용 지역 및 Azure Government 클라우드에서 사용할 수 있습니다.<br>
+
+  &nbsp;<br>
+
+  빅 데이터와 Hadoop 커뮤니티는 지난 몇 년 동안 빠르게 진화해 왔습니다. Azure HDInsight는 이러한 혁신을 지원했으며 Apache Spark, Apache Kafka(확장 가능한 데이터 수집용) 및 Hive LLAP(데이터 웨어하우징 및 대화형 쿼리용)와 같은 프로젝트에 대한 지원을 서비스에 추가하여 엔터프라이즈 고객에게 제공할 수 있도록 했습니다.</p>
+
+
+  <p>온-프레미스 Hadoop 및&rdquo; Spark 워크로드를 <strong>Azure HDInsight</strong>로 전환하려는 &ldquo;기업은 <strong>99.9%의 가용성 SLA</strong>, Azure Log Analytics, Active Directory 및 <strong>자동화된 자가 복구 서비스와</strong>의 통합을 선도하는 업계 가치를 제공합니다. Azure HDInsight는 <strong>VNET(Virtual Network) 기반 네트워크 격리</strong>, 투명한 <strong>데이터 암호화</strong> 및 다양한 <strong>산업 표준 인증(GDPR 포함)</strong>에 대한 지원을 통해 의료, 금융, 은행 등 규제가 높은 산업에서 가장 보안 및 규정 준수 중심 기업 중 일부에 적합합니다.</p>
+
+
+  <p>빅 데이터 애플리케이션의 핵심인 개발자, 데이터 과학자 및 분석가를 위해 Azure HDInsight는 원하는 도구로 풍부한 개발 및 디버깅 기능을 제공합니다. <strong>IntelliJ, Eclipse, VSCode, Jupyter</strong> 및 <strong>Zeppelin</strong> Notebook 등&nbsp;</p>
+
+
+  <p>Hadoop 세계는 항상 많은 상용 소프트웨어 공급자가 지원하는 프로젝트 및 애플리케이션의 풍부하고 다양한 에코시스템을 가지고 있습니다. Azure HDInsight는 간단한 원클릭 설치 환경을 통해 고객에게 Azure Marketplace에서 <a href="https://azure.microsoft.com/en-us/services/hdinsight/partner-ecosystem/">가장 인기 있는 빅 데이터 애플리케이션</a> 을 제공하여 이 에코시스템을 지원합니다.</p>
+
+
+  <p><em>&ldquo;오픈 소스 분석 솔루션은 Microsofts&rsquo; 분석 전략&rdquo;의 핵심이라고</em> Azure 빅 데이터 분석 이사 인 Ryan Waite는 말했습니다. <em>&ldquo;고객이 Azure에서 Hadoop을 더 쉽고 효율적으로 채택할 수 있도록 Azure HDInsight에 계속 투자하고 있습니다. 2017년 12월에 Azure HDInsight에서 최대 52% 가격 인하를 발표했으며, 오늘 Hadoop 커뮤니티에 대한 우리의 약속을 재확인하게 되어 기쁩니다. Microsoft 내에서 내부 데이터 레이크에 Apache YARN을 채택했을 뿐만 아니라 확장 및 효율성 요구 사항을 충족하기 위해 Apache YARN을 개선했습니다. 이러한 모든 개선 사항은 가장 최근에 Apache YARN 2.9 릴리스에서 오픈 소스 커뮤니티에 다시 기여했습니다.&rdquo;</em></p>
+
+
+  <h2>IaaS의 Hadoop</h2>
+
+
+  <p>Azure HDInsight는 애플리케이션에 집중할 수 있는 PaaS와 유사한 서비스 제품을 찾는 고객에게 가장 적합하지만, 일부 고객은 자신의 Hadoop/Spark 배포를 실행하거나 클러스터 운영 방식을 더 자세히 제어하려고 할 수 있습니다.<br>
+
+  &nbsp;<br>
+
+  Azure는 여전히 DIY(Do-it-yourself) 고객에게 가장 적합한 플랫폼입니다. 매우 광범위한 VM SKU 집합, 성능을 위한 디스크 Premium, 비용 제어를 위한 예약 인스턴스 또는 낮은 우선 순위 VM에 액세스하면 고객은 동일한 Azure 환경 내에서 성능과 비용의 균형을 맞출 수 있습니다.</p>
+
+
+  <h2>Microsoft가 Hadoop에 기여하고 있습니다.</h2>
+
+
+  <p>일반적으로 Apache 프로젝트와 Hadoop 및 Spark에 대한 Microsofts&rsquo;의 약속은 이러한 서비스를 Azure에서 사용할 수 있도록 하는 것 이상입니다. Azure Data Lake Analytics 및 가장 큰 내부 데이터 레이크와 같은 서비스는 이제 Apache Hadoop 및 YARN에서 실행됩니다. 7명의 커밋자는 YARN에 거의 200,000줄의 코드를 추가하여 데이터 센터 확장 클러스터(노드 1000개 중 10개)에서 YARN을 효율적이고 안정적으로 실행하는 데 필요한 모든 학습 및 개선 사항을 적극적으로 지원했습니다. 여기에는 Microsoft가 YARN 페더레이션(규모 처리), 기회 토큰(클러스터 사용률 향상), 최종 기한 기반 일정 및 리소스 예측(SLA 바인딩된 작업 사용)과 같은 새로운 기능과 수많은 큰 수정 및 성능 향상을 제공하는 Apache Hadoop 2.9 릴리스가 포함됩니다.</p>
+
+
+  <h2>오늘 Azure HDInsight 시작</h2>
+
+
+  <p><em>&quot;Johnson Controls에서는 전 세계에 배포된 6,000개 이상의 연결된 산업용 냉각기에서 수집하는 센서 데이터의 실시간 및 일괄 처리 분석을 수행하기 위해 Azure HDInsight를 사용합니다. Azure HDInsight는 고객에게&quot; 지속적으로 가치를 제공하기 위해 프로덕션 인프라에 필요한 확장성, 안정성, 고가용성, 성능, 보안 및 배포 용이성을 제공합니다</em>. Vaidhyanathan Venkiteswaran, 플랫폼 엔지니어링 관리자, Data Enabled Business, Johnson Controls는 말했습니다.</p>
+
+
+  <p>이미 Azure에서 Hadoop 및 Spark를 사용하고 있는 많은 기업에 가입하여 일괄 처리, ETL, 데이터 웨어하우징, Machine Learning, IoT 등 다양한 애플리케이션을 빌드합니다.</p>
+
+
+  <p>오늘&rsquo; 공지 사항을 최대한 활용하고 Azure를 사용하여 빌드할 내용을 확인하게 되어 기쁩니다. Azure HDInsight에서 빅 데이터 파이프라인 및 아키텍처를 구현하는 방법에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/blog/azure-hdinsight-training-resources-learn-about-big-data-using-open-source-technologies/">이 개발자 가이드를 참조</a>하세요. Twitter <a href="https://twitter.com/search?q=%23HDInsight&amp;src=typd">#HDInsight</a> 및 에서 팔로우하여 최신 Azure HDInsight 뉴스 및 <a href="https://twitter.com/AzureHDInsight">@AzureHDInsight</a>기능을 최신 상태로 유지하세요. 질문과 피드백 &ndash; 은 문의하세요 AskHDInsight@microsoft.com.</p>

@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 94785e90d34b4fae9d466453f6ab473b7ed1483a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898840"
+Slug: use-azure-data-lake-analytics-to-query-avro-data-from-iot-hub
+Title: Azure Data Lake Analytics 사용하여 IoT Hub에서 AVRO 데이터 쿼리
+Summary: 최근에 한 고객이 Azure IoT Hub의 라우팅 기능에서 생성된 Blob 데이터를 읽는 방법을 물었습니다. 이 고객에게 완전한 답변을 제공하기 위해 아래 비디오에서 여러분과 공유하게 되어 기쁩니다.
+Content: >-
+  <p>최근에 한 고객이 Azure IoT Hub의 라우팅 기능에서 생성된 Blob 데이터를 읽는 방법을 물었습니다. 이 고객에게 완전한 답변을 제공하기 위해 아래 비디오에서 여러분과 공유하게 되어 기쁩니다.</p>
+
+
+  <p>사물 인터넷 애플리케이션의 일반적인 패턴 중 하나는 콜드 경로&rdquo;라고 &ldquo;하며 이후 처리를 위해 IoT 디바이스에서 생성된 모든 데이터를 클라우드에 저장하는 것으로 구성됩니다. 이러한 구현을 간단하게 만들기 위해 Azure IoT Hub는 디바이스에서 클라우드 스토리지 서비스로 직접 들어오는 메시지의 <a href="https://azure.microsoft.com/en-us/blog/iot-hub-message-routing-now-with-routing-on-message-body/" target="_blank">라우팅을 지원</a>합니다. IoT Hub는 두 속성 모두에 따라 간단한 규칙을 적용할 수도 있으며 메시지 본문은 선택한 다양한 사용자 지정 엔드포인트로 메시지를 라우팅할 수 있습니다. IoT Hub는 메시지 본문과 메시지 속성을 모두 포함하는 AVRO 형식으로 Blob 콘텐츠를 작성합니다. 데이터/메시지 보존에 적합한 AVRO는 데이터를 쿼리하고 처리하는 데 어려울 수 있습니다. 이 데이터를 처리하는 데 권장되는 솔루션은 다음과 같습니다.</p>
+
+
+  <p>대부분의 빅 데이터 패턴은 사용자 지정 파일 형식의 비관계형 데이터 파일을 처리하는 데 사용할 수 있습니다. 비용 및 배포 단순성을 중점으로 Azure Data Lake Analytics(ADLA)는 쿼리&rdquo; 빅 데이터 패턴당 유일한 &ldquo;지불 중 하나입니다. ADLA 사용하면 가상 머신,&rsquo; 데이터베이스, 네트워크 또는 스토리지 계정을 설정할 필요가 없습니다. U-SQL, 쿼리 언어 및 AVRO &ldquo;<a href="https://github.com/Azure/usql/tree/master/Examples/AvroExamples" target="_blank">추출기를</a>&rdquo; 사용하여 IoT Hub 데이터를 구문 분석, 변환 및 쿼리할 수 있습니다.</p>
+
+
+  <p>다음 비디오에서는 Azure IoT Hub에서 표준 파일 형식으로 데이터를 변환, 쿼리 및 내보내는 프로세스를 안내합니다. 이 프로세스는 다른 리포지토리 또는 관계형 저장소에 데이터를 배치하도록 조정할 수도 있습니다.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="540" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Using-Azure-Data-Lake-to-analyze-IoT-Data/player" width="960"></iframe></p>
+
+
+  <p><a href="https://aka.ms/adla-query-avro-from-iothub-route">설명서</a>에서 자세한 단계별 프로세스를 읽을 수 있습니다.</p>

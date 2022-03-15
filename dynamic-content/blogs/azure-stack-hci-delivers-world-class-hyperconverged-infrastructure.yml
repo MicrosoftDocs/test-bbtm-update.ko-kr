@@ -1,0 +1,83 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 45b6a380e7223532b0f7813b38aba01844f62348
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902676"
+Slug: azure-stack-hci-delivers-world-class-hyperconverged-infrastructure
+Title: Azure Stack HCI는 세계적 수준의 하이퍼컨버지드 인프라를 제공합니다.
+Summary: 올해 전 세계적인 전염병 및 경제 변화에 의해 새로운 정상이 정의됨에 따라 기업은 점점 더 원격 작업 환경에서 상품 및 서비스 제공을 최적화하고 IT 비용 효율성을 높이는 새로운 방법을 모색해 왔습니다.
+Content: >-
+  <p>올해 전 세계적인 전염병 및 경제 변화에 의해 새로운 정상이 정의됨에 따라 기업은 점점 더 원격 작업 환경에서 상품 및 서비스 제공을 최적화하고 IT 비용 효율성을 높이는 새로운 방법을 모색해 왔습니다.</p>
+
+
+  <p>원격 작업, 하이퍼 컨버지드 인프라의 토대를 마련하는 기술은 조직이 VDI(가상 데스크톱 인프라), 원격 사무실 및 지점(ROBO)을 위한 IT 및 기업이 데이터 센터 현대화를 추진할 수 있는 주요 워크로드를 제공하는 이상적인 방법이었습니다. Azure Stack HCI는 Azure 통합의 혁신을 통해 이러한 고객 요구를 충족합니다. 클라우드 네이티브 접근 방식을 통해 고객이 유연한 Azure 구독 가격 책정을 통해 친숙한 관리 및 도구를 활용하는 빠른 배포 및 통합을 통해 더 높은 가치의 HCI를 실현할 수 있도록 돕는 것이 목표입니다.</p>
+
+
+  <h2>고객과 파트너는 현재 Azure Stack HCI 혁신의 혜택을 누릴 수 있습니다.</h2>
+
+
+  <p>현재 Azure Stack HCI의 일반 공급으로, Microsoft는 중앙 집중식 관리, 스트레치 클러스터링, 기본 제공 하이브리드 기능 및 Azure Arc 통합을 포함하는 모든 기능을 갖춘 제품을 제공하기 위해 미리 보기에서 제공하는 훌륭한 피드백을&#39;. 우리의 접근 방식은 통합 시스템 파트너&nbsp;DataON, Dell Technologies 및 Lenovo를 포함하여 고객 및 파트너 모두에게 공감을 불러일으킵니다. Benenden Schools, Bradley Legal, 체로키 카운티 교육구, 플로리다 주립 의과 대학 및 헨드릭 모터스포츠를 포함한 여러 분야의 고객은 미리 보기 참여를 통해 Azure Stack HCI에서 이미 성공을 거두었으며 ROBO, 데이터베이스 워크로드를 포함한 여러 사용 사례에 대한 초기 프로덕션 배포를 추진하는 데 Azure Stack HCI의 비즈니스 가치를 달성했습니다.  및 데이터 센터 현대화를 일반적으로 사용합니다. <a href="https://aka.ms/hcicustomerblog" target="_blank">고객 환경 블로그</a>를 읽어보세요.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0f3d8c37-5955-42db-bec5-3699b33d2f9a.jpg"><img alt="#21167" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eaa3932a-ea2d-4ce1-bc84-10ed1384c95f.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="#21167" width="138"></a></p>
+
+
+  <h2>새 Azure Stack HCI 및 통합 시스템으로 더 많은 작업 수행</h2>
+
+
+  <p>Azure Stack HCI에서 제공하는 혁신은 광범위한 고객&nbsp; 세나리오를 엽니다. 예를 들어 네이티브 Azure 통합을 사용하여 하이브리드를 단순화하면 하이브리드 관리를 위해 Azure Portal에서 클러스터의 가시성을 제공합니다. 또 다른 주요 혁신은 고객 재해 복구 전략을 쉽게 향상시키기 위한 새로운 기본 제공 확장 클러스터링 기능입니다.&nbsp; 자세한 내용은 이 <a href="https://aka.ms/stretchclustervideo" target="_blank">기술 비디오를</a> 참조하세요.</p>
+
+
+  <p>고객이 새 인프라를 배포할 때 가치 창출 시간을 최소화하고자 함에 따라 Microsoft는 파트너와 협력하여 사용 가능한 폼 팩터 중 하나로 Azure Stack HCI에 대한 새로운 통합 시스템 환경을 제공했습니다. 이러한 통합 시스템은 소프트웨어&nbsp;, 하드웨어 및 펌웨어가 미리 설치되고 간단한 배포 GUI를 사용하여 aspre-racked로 배송&nbsp;됩니다. 새 Azure Stack HCI <em>전체 스택 업데이트</em>&nbsp;는 각 파트너 시스템과 통합되어 새 기능 또는 보안 업데이트를 클러스터에 적용해야 할 때 클릭 한 번 오케스트레이션을 가져옵니다. 시스템 관리자는 항상 제어하며 항상 최신 기능과 유효성이 검사된 전체 스택 업데이트를 가져옵니다.</p>
+
+
+  <h2>파트너 에코시스템</h2>
+
+
+  <p>오늘날의&rsquo; 일반 공급은 DataON, Dell Technologies 및 Lenovo와 같은 신뢰할 수 있는 파트너의 여러 통합 시스템을 표시합니다. 이러한 Azure Stack HCI 통합 시스템은 엔터프라이즈 지원 안정성 및 단순성을 위해 공동 엔지니어링되었습니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&ldquo;Microsoft를 선택한&rdquo; 파트너&ldquo;로서 우리는 Azure Stack HCI 통합 시스템이 고객에게 제공하는 새로운 단순성과 사용 편의성에 대해 강세를 보이고 있습니다.&nbsp; Microsoft는 Microsoft와 협력하여 새로운 DataON AZS 제품 라인에서 DataON MUST Pro Windows 관리 센터에서 원활한 환경을 제공하기 위해 노력했습니다. Pro 하이브리드 클라우드 인프라에 대한 중단을 최소화하면서 Azure Stack HCI의 배포 및 업데이트를 간소화해야 합니다. 우리는 모든 산업 분야가 이러한 시스템에서 제공하는 혁신의 혜택을 누릴 수 있다고 믿습니다.&rdquo;&nbsp; </em>&mdash;Howard Lo, Sales &amp; Marketing, DataON 부사장</p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&ldquo;Microsoft와 함께 제품을 출시한 오랜 역사를 가진 Microsoft는 신뢰할 수 있는 Dell EMC PowerEdge 서버 기술을 기반으로 구축된 Microsoft Azure Stack HCI용 Dell EMC 통합 시스템을 <a href="https://www.delltechnologies.com/en-us/blog/new-challenges-demand-new-hybrid-it-solutions/" target="_blank">도입</a>했습니다. 업계 최고의 하이퍼 컨버지드 포트폴리오의 일환으로, 이 올인원 공동 엔지니어링 시스템은 통합 배포 및 전체 스택 자동화 수명 주기 관리를 통해 고객을 위한 Azure 하이브리드 클라우드 소비 환경을 제공합니다.</em>&rdquo; &mdash;Jon Siegal, Dell Technologies 제품 마케팅 담당 부사장</p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&ldquo;Lenovo는 lenovos&rsquo;에서 가장 인기 있는 서버와 Edge 서버 라인업에 Microsoft Azure Stack HCI 통합 폼 팩터를 도입하기를 고대하고 있습니다. Microsoft와의 공동 파트너십은 상호 고객이 클라우드 여정을 가속화하는 데 도움이 되는 새로운 하이퍼컨버지드 인프라 솔루션을 제공합니다. 하이브리드 기능과 Azure와의 원활한 통합은 Lenovo ThinkAgile MX 제품 라인을 완벽하게 보완합니다.&rdquo;</em>&nbsp;&mdash; Kamran Amini, Lenovo Data Center 그룹, 서버, Storage 및 소프트웨어 정의 인프라 부사장 겸 총괄 관리자</p>
+
+  </blockquote>
+
+
+  <p>Azure Stack HCI를 배포하는 또 다른 좋은 방법은 많은 유연성을 제공하는 Intel Select Solution 제품을 사용하는 것입니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&ldquo;Azure Stack HCI는 온-프레미스 또는 클라우드에 관계없이 비즈니스에 적합한 것을 기반으로 IT가 Azure 서비스에 액세스하는 방법에 대한 새로운 단순성으로 엔터프라이즈용 하이브리드 클라우드를 재구상합니다. Azure Stack HCI용 Intel Select 솔루션은 다양한 파트너가 제공하는 시장 지원 솔루션으로, 배포를 더욱 간소화하는 동시에 고객에게 비즈니스를 발전시키기 위해 최신 인프라에 필요한 규모와 효율성을 제공하기 위해 광범위하게 테스트되고 성능이 검증되었습니다.&rdquo;</em> &mdash;제이슨 그레브( Jason Grebe) 인텔 클라우드 Enterprise 솔루션 그룹 총괄 매니저 부사장.</p>
+
+  </blockquote>
+
+
+  <p>또한 오늘날의&rsquo; 일반 공급은 Altaro Software, Commvault, Datadog, Veeam 및 Veritasnow&mdash;를 통해 Azure Stack HCI에 대한 새로운 독립 소프트웨어 공급업체 지원을 제공하여 고객에게 더욱 광범위한 도구를 제공하기 위해 Azure Stack HCI와 함께 완벽하게 작동합니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+      <li><a href="https://www.azure.com/hci" target="_blank">무료 30일 평가판을</a> 포함하여 Azure Stack HCI 소프트웨어에 등록합니다.</li>
+      <li>비디오 데모를 사용하여 <a href="https://aka.ms/hci-launch-technical-blog" target="_blank">기술 블로그</a> 를 읽어보세요.</li>
+      <li>2021년 2월 23일에 <a href="https://azurestackhcishowcase.eventcore.com/" target="_blank">Azure Stack HCI 파트너 솔루션 쇼케이스</a> 에 등록합니다.</li>
+  </ul>

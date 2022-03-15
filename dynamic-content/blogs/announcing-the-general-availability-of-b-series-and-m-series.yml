@@ -1,0 +1,166 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 49b40d733e436e24362ae567ea42fda0fa8b7389
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899408"
+Slug: announcing-the-general-availability-of-b-series-and-m-series
+Title: B 시리즈 및 M 시리즈 일반 공급 발표
+Summary: 오늘 이전의 새로운 Lv2 크기 발표 외에도 오늘 사용할 수있는 두 개의 GA 크기를 공유하게 되어 기쁩니다.
+Content: >-
+  <p>오늘 이전의 새로운 Lv2 크기 발표 외에도 오늘 사용할 수있는 두 개의 GA 크기를 공유하게 되어 기쁩니다.</p>
+
+
+  <ul>
+      <li>&rsquo;B 시리즈 VM의 GA(일반 공급)를 발표했습니다.</li>
+      <li>최대 4TB의 RAM을 사용하는 가장 큰 CPU 및 메모리 크기를 가진 VM 제품군인 Azure M 시리즈 GA를 발표합니다.</li>
+  </ul>
+
+
+  <h2>B 시리즈 일반 공급</h2>
+
+
+  <p>9월 초, 우리는 B 시리즈라는 버스트 가능한 크기의 미리보기를 발표했다. 이제 B 시리즈가 일반 공급된다는 것을 공유하게 되어 기쁩니다. B 시리즈 VM은 유연한 vCPU 요구 사항이 있는 고객에게 가장 낮은 비용 옵션을 제공합니다. 이는 웹 서버, 소규모 데이터베이스, 개발 또는 테스트 환경과 같은 워크로드에 유용하며 CPU 사용률은 대부분의 시간이 낮지만 짧은 기간 동안 급증합니다. B 시리즈 VM은 일관된 기준 CPU 성능을 제공하며 최대 CPU 사용량에 사용할 수 있는 크레딧을 빌드할 수 있습니다. 이러한 크기는 매우 비용 유연성과 유연한 가치를 제공합니다.</p>
+
+
+  <p>B 시리즈 VM은 다음과 같은 크기로 사용할 수 있습니다.</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="1119">
+      <tbody>
+          <tr>
+              <td valign="top" width="66"><strong>크기</strong></td>
+              <td valign="top" width="66"><strong>vCPUs&rsquo;</strong></td>
+              <td valign="top" width="97"><strong>메모리: GiB</strong></td>
+              <td valign="top" width="135"><strong>로컬 SSD: GiB</strong></td>
+              <td valign="top" width="272"><strong>VM의 기준 CPU 성능</strong></td>
+              <td valign="top" width="481"><strong>VM의 최대 CPU 성능</strong></td>
+          </tr>
+          <tr>
+              <td valign="top" width="66">Standard_B1s</td>
+              <td valign="top" width="66">1</td>
+              <td valign="top" width="97">1</td>
+              <td valign="top" width="135">4</td>
+              <td valign="top" width="272">10%</td>
+              <td valign="top" width="481">100%</td>
+          </tr>
+          <tr>
+              <td valign="top" width="66">Standard_B1ms</td>
+              <td valign="top" width="66">1</td>
+              <td valign="top" width="97">2</td>
+              <td valign="top" width="135">4</td>
+              <td valign="top" width="272">20%</td>
+              <td valign="top" width="481">100%</td>
+          </tr>
+          <tr>
+              <td valign="top" width="66">Standard_B2s</td>
+              <td valign="top" width="66">2</td>
+              <td valign="top" width="97">4</td>
+              <td valign="top" width="135">8</td>
+              <td valign="top" width="272">40%</td>
+              <td valign="top" width="481">200%</td>
+          </tr>
+          <tr>
+              <td valign="top" width="66">Standard_B2ms</td>
+              <td valign="top" width="66">2</td>
+              <td valign="top" width="97">8</td>
+              <td valign="top" width="135">16</td>
+              <td valign="top" width="272">60%</td>
+              <td valign="top" width="481">200%</td>
+          </tr>
+          <tr>
+              <td valign="top" width="66">Standard_B4ms</td>
+              <td valign="top" width="66">4</td>
+              <td valign="top" width="97">16</td>
+              <td valign="top" width="135">32</td>
+              <td valign="top" width="272">90%</td>
+              <td valign="top" width="481">400%</td>
+          </tr>
+          <tr>
+              <td valign="top" width="66">Standard_B8ms</td>
+              <td valign="top" width="66">8</td>
+              <td valign="top" width="97">32</td>
+              <td valign="top" width="135">64</td>
+              <td valign="top" width="272">135%</td>
+              <td valign="top" width="481">800%</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>B 시리즈 VM 기능 및 가격 책정에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/b-series-burstable">Azure B 시리즈 설명서를</a> 참조하세요.</p>
+
+
+  <p>이러한 크기는 미국 동부, 미국 동부 2, 미국 중서부, 미국 중북부, 미국 중남부, 북유럽, 서유럽, 동남 아시아, 일본 서부, 오스트레일리아 동부, 오스트레일리아 남동부, 인도 중부, 캐나다 중부, 캐나다 동부, 미국 서부 2, 영국 남부, 영국 서부 및 한국 중부에서 사용할 수 있습니다. 앞으로 몇 달 동안 지역을 계속 추가할 예정입니다.</p>
+
+
+  <h2>M 시리즈 GA 및 새로운 4TB 크기</h2>
+
+
+  <p>현재 Azure에서 가장 큰 VM 크기를 제공하는 M 시리즈 GA를 릴리스하고 있습니다. M 시리즈를 사용하면 이제 단일 VM에 최대 3.8TiB(4TB)의 RAM을 배포할 수 있습니다. 이러한 VM은 Intel&reg; Xeon&reg; 2.5GHz E7-8890 v3 프로세서로 구동되는 최대 128개의 하이퍼 스레드 vCPU를 제공합니다. 이 새로 출시된 M 시리즈 크기는 모든 퍼블릭 클라우드에서 가장 많이 제공하는 최대 20TB의 메모리를 제공하는 용도로 제작된 SAP HANA 대규모 인스턴스를 포함하여 많은 양의 메모리를 제공하는 이미 인상적인 크기 집합에 추가됩니다.&nbsp;</p>
+
+
+  <p>Azure M 시리즈는 SAP HANA 및 SQL Hekaton과 같은 대규모 메모리 내 워크로드에 완벽하게 적합합니다. M 시리즈로 이러한 데이터베이스는 대량의 데이터 세트를 메모리에 로드하고 엄청난 양의 vCPU 병렬 처리로 빠른 메모리 액세스를 활용하여 쿼리 속도를 향상시키고 실시간 분석을 가능하게 할 수 있습니다. 이러한 대규모 워크로드를 몇 분 안에 배포하고 주문형으로 배포하여 사용량 요구에 따라 탄력적으로 확장할 수 있습니다. 가용성 집합의 경우 99.95%, 단일 노드의 경우 99.9%, GA 가용성 영역의 경우 99.99%의 가용성 SLA를 사용하면 HA 및 스케일 아웃 구성 모두에 대해 사용자에게 애플리케이션 수준 SLA 보장을 제공할 수 있습니다. 모든 Azure VM과 마찬가지로 초당 요금이 청구되고(가장 가까운 분으로 반올림됨) 플랫폼에서 자동화를 설정하여 이러한 VM을 자동으로 종료하고 크기를 조정하여 더 많은 비용을 절감할 수 있습니다.&nbsp;</p>
+
+
+  <p>M 시리즈 VM은 다음과 같은 크기로 사용할 수 있습니다.</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="728">
+      <tbody>
+          <tr>
+              <td valign="top" width="80"><strong>크기</strong></td>
+              <td valign="top" width="80"><strong>vCPUs&rsquo;</strong></td>
+              <td valign="top" width="121"><strong>메모리(GiB)</strong></td>
+              <td valign="top" width="129"><strong>로컬 SSD(GiB)</strong></td>
+              <td valign="top" width="316"><strong>최대 데이터 디스크 수</strong></td>
+          </tr>
+          <tr>
+              <td valign="top" width="80">M64s</td>
+              <td valign="top" width="80">64</td>
+              <td valign="top" width="121">1024</td>
+              <td valign="top" width="129">2048</td>
+              <td valign="top" width="316">32</td>
+          </tr>
+          <tr>
+              <td valign="top" width="80">M64ms</td>
+              <td valign="top" width="80">64</td>
+              <td valign="top" width="121">1792</td>
+              <td valign="top" width="129">2048</td>
+              <td valign="top" width="316">32</td>
+          </tr>
+          <tr>
+              <td valign="top" width="80">M128s</td>
+              <td valign="top" width="80">128</td>
+              <td valign="top" width="121">2048</td>
+              <td valign="top" width="129">4096</td>
+              <td valign="top" width="316">64</td>
+          </tr>
+          <tr>
+              <td valign="top" width="80">M128ms</td>
+              <td valign="top" width="80">128</td>
+              <td valign="top" width="121">3800</td>
+              <td valign="top" width="129">4096</td>
+              <td valign="top" width="316">64</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-memory">M 시리즈 VM 크기에</a> 대한 자세한 내용은 여기에서 확인할 수 있습니다. M 시리즈에 대한 액세스를 요청하려면 지원되는 지역에서 <a href="https://docs.microsoft.com/en-us/azure/azure-supportability/resource-manager-core-quotas-request">요청 할당량</a> 을 제출합니다. 할당량이 승인되면 Azure Portal 또는 API&rsquo;를 사용하여 배포할 수 있습니다.&nbsp;</p>
+
+
+  <p>Azure에서 SAP 지원을 실행하는 방법에 대한 자세한 내용은 다음을 참조하세요 <a href="https://azure.com/sap/">https://azure.com/sap/</a>.</p>
+
+
+  <p>다음 지역에서 M 시리즈를 출시할 예정이며, 향후 몇 달 안에 미국 서부 2, 미국 동부 2 및 서유럽에서 더 많은 지역을 사용할 수 있습니다.</p>
+
+
+  <p>주변을 둘러보십시오.</p>
+
+
+  <p>코리</p>

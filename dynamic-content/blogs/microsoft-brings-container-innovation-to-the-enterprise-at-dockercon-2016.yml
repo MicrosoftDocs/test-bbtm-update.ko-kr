@@ -1,0 +1,65 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5336219786a88429083f1931d819b256878c1b71
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903149"
+Slug: microsoft-brings-container-innovation-to-the-enterprise-at-dockercon-2016
+Title: Microsoft는 DockerCon 2016에서 엔터프라이즈에 컨테이너 혁신을 제공합니다.
+Summary: Microsoft는 지난 2년 동안 Microsoft에서 Windows 및 Linux 에코시스템에 컨테이너 혁신을 신속하게 릴리스하여 기업이 클라우드 속도와 규모로 애플리케이션을 빌드하고 배포하는 데 도움이 되는 컨테이너 솔루션을 제공해 왔습니다.
+Content: >-
+  <p></p>
+
+
+  <p>지난 몇 년 동안&#39;살펴보았듯이 Microsoft Weve&rsquo;는 Docker 및 Mesosphere와 같은 업계 리더와 협력하여 플랫폼 또는 도구의 선택에 관계없이 기업이 클라우드 속도와 규모로 애플리케이션을 빌드하고 배포하는 데 도움이 되는 컨테이너 솔루션을 제공하기 위해 Windows 및 Linux 에코시스템 &ndash; 에 컨테이너 혁신을 빠르게 출시했습니다.</p>
+
+
+  <p>작년에는 더 넓은 범위의 고객/업계 요구를 지원하기 위해 코드에 대한 추가 경계를 실행 &ndash; 하려는 경우 기존 VM을 격리하여 컨테이너의 고밀도 환경을 제공하도록 설계된 최초의 혁신인 <a href="https://azure.microsoft.com/en-us/blog/microsoft-unveils-new-container-technologies-for-the-next-generation-cloud/">Hyper-V 컨테이너</a>를 도입했습니다. 또한 Docker와 협력하여 Docker 및 Windows 에코시스템을 Windows Server Containers &ndash; 와 결합하여 가장 광범위한 개발자 집합이 처음으로 컨테이너를 사용할 수 있도록 했습니다.</p>
+
+
+  <p>Weve&rsquo;는 Windows Server 컨테이너와 Linux 컨테이너를 결합하는 최초의 다중 플랫폼 컨테이너 애플리케이션 데모를 포함하여 Linux 및 Windows 에코시스템에 이 약속을 확장하기 위해 지속적으로 파트너 관계를 맺고 있습니다. Microsoft 내에서 오픈 소스의 전반적인 채택은 계속해서 빠르게 증가하고 있습니다. 불과 1년&#39;Linux를 실행하는 Azure 가상 머신 4대 중 1대에서 3명 중 1명으로&#39;. 또한 Weve&rsquo;는 플랫폼 간 <a href="https://code.visualstudio.com/">Visual Studio Code</a> 편집<a href="https://azure.com/tools">기와 같은 도구 및 확장</a>에 Docker 지원을 구축하여 모든 개발자를 위한 Docker 환경을 향상했습니다.</p>
+
+
+  <p>엔터프라이즈용 클라우드인 Microsoft Azure 지난 몇 달 동안 기업이 비용 절감과 비즈니스 민첩성 컨테이너의 이점을 실현하면서 가설 &quot;&quot; 에서 &quot;현실&quot;로 이동하는 컨테이너 기술을 &ndash; 채택하기 시작하면서 큰 상승세를 보였습니다. 노스 브리지 파트너스에 의해 오픈 소스 소프트웨어의 미래에 대한 최근 설문 조사에 따르면, 1400 기업의 76 %는 2016 년에 컨테이너를 사용할 계획과 40 %는 이미 있었다.</p>
+
+
+  <p>자체 고객 데이터를 살펴보면 2016년 첫 달에만 컨테이너 소비량이 두 배로 증가한 컨테이너 고객의 4배를 볼&#39;있습니다. 이 데이터 중 25% 이상이 금융 서비스, 소매 및 제조와 같은 업무상 중요한 애플리케이션이 일반적인 &ndash; 가장 전통적인 기업 부문의 포춘지 선정 500대 기업입니다.</p>
+
+
+  <p>이러한 기업의 경우 컨테이너를 대규모로 채택하고 관리하는 데 있어 다음 세 가지 핵심 우선 순위를 중심으로 대화를 진행합니다.</p>
+
+
+  <ul>
+   <li><strong>오픈 소스:</strong> Forrester에 따르면 CIO의 40% 이상은 주로 저렴한 비용, 공급업체 잠금 방지 및 민첩성으로 인해 내년에 &ndash; 오픈 소스 기술을 채택하는 것이 중요하다고 생각합니다. 그리고 같은 노스 브리지 연구는 OSS의 사용이 전년 대비 조사 같은 회사에 비해 65 % 증가 보았다.</li>
+   <li><strong>선택:</strong> Were&rsquo;는 항상 고객으로부터 선택과 유연성이 중요하다는 것을 듣습니다. 이미 사용하고&#39;도구, 기술 및 플랫폼에서 벗어나고 싶지 않으며&rsquo;, 이미 있는 클라우드에서 기존 투자와 기술을 활용하려고 합니다.</li>
+   <li><strong>하이브리드:</strong> 기업은 여전히 온-프레미스 인프라에 수백만 달러의 투자를 하고 있으며 클라우드의 이점을 보면서 애플리케이션의 일부 요소를 해당 인프라에 유지하는 비즈니스 이유가 있는 경우가 많습니다. 온-프레미스 및 클라우드 인프라에서 컨테이너 기반 애플리케이션을 관리할 수 있는 하이브리드 클라우드 솔루션은 매력적인 제안입니다.</li>
+  </ul>
+
+
+  <p>엔터프라이즈에 대한 이러한 우선 순위의 정신으로 현재 DockerCon에서 클라우드에서 컨테이너를 실행하고 관리하기 위한 새로운 기능을 시연했습니다.</p>
+
+
+  <ul>
+   <li><strong>Docker Datacenter는 이제 Azure Marketplace에서 사용할 수</strong> 있으며, Docker에서 지원되고 방화벽 뒤에서 로컬로 호스트되는 프로덕션 지원 플랫폼을 사용하여 엔터프라이즈에 컨테이너 관리 및 배포 서비스를 제공합니다. 미리 정의된 ARM(<a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/">Azure Resource Manager</a>) 템플릿을 사용하여 <a href="https://azure.microsoft.com/en-us/marketplace/">Azure Marketplace</a>에서 배포하면 Docker Datacenter를 설치하고 생산성을 높이는 시간을 간소화하고 줄일 수 있습니다.</li>
+   <li><strong>Azure 및 처음으로 Azure Stack 온-프레미스에 분산된 하이브리드 컨테이너 기반 애플리케이션을 관리하는 Docker 데이터 센터입니다.</strong> <a href="https://azure.microsoft.com/en-us/overview/azure-stack/">Azure Stack</a>은 일관성 및 연결을 통해 데이터 센터에서&rdquo; Azure를 &ldquo;제공하는 Microsofts&rsquo; 고유 제품입니다. Well&rsquo;은 Docker Datacenter가 진정한 하이브리드 모드에서 퍼블릭 및 프라이빗 Azure 클라우드에서 작동하는 방식을 보여 줍니다. 이를 통해 고객은 Azure 및 온-프레미스에서 Azure Stack을 사용하여 구성 요소를 사용하여 하이브리드 애플리케이션을 관리할 수 있습니다.</li>
+  </ul>
+
+
+  <p><img alt="Azure Stack_DockerCon 2016" border="0" height="342" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dba32321-7448-4b55-aa9c-39c290285585.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Stack_DockerCon 2016" width="610"></p>
+
+
+  <ul>
+   <li><strong>Microsoft Azure 및 Azure Stack 온-프레미스에서 컨테이너를 관리하는 OMS(Operations Management Suite)입니다.</strong> OMS(<a href="https://www.microsoft.com/en-us/server-cloud/operations-management-suite/overview.aspx">Operations Management Suite</a>)는 Azure, AWS, WS 또는 Linux, VMWare 또는 OpenStack을 비롯한 모든 하이브리드 클라우드에 대한 Microsoft&#39;클라우드 IT 관리 솔루션입니다.</li>
+   <li>Docker Swarm을 사용하여 Docker 호스트를 단일 가상 호스트로 전환하는 네이티브 클러스터링 기능을 제공하는 Windows Server 컨테이너에 대한 지원을 추가하는 <strong>Azure Container Service의 미리 보기</strong>입니다. <a href="https://azure.microsoft.com/en-us/services/container-service/">Azure Container Service</a> 는 몇 번의 클릭 템플릿을 통해 구성 및 배포를 간소화하기 위해 Docker Swarm을 비롯한 다양한 오픈 소스 오케스트레이터 기술을 기반으로 합니다. 이를 통해 Azure Container Service는 이제 Linux 및 Windows Server를 지원하므로 대상 운영 체제에 관계없이 개발자가 서비스를 사용할 수 있습니다.</li>
+   <li><strong>SQL Server Docker 컨테이너의 Linux에서 실행됩니다.</strong> 우리가 3 월에 다시 발표 한 바와 같이, <a href="https://www.microsoft.com/en-us/server-cloud/sql-server-on-linux.aspx">SQL Server on Linux</a> 지금 비공개 미리 보기로 사용할 수 있습니다. 현재&nbsp; <a href="https://www.microsoft.com/en-us/server-cloud/sql-server-on-linux.aspx">비공개 미리 보기 참가자</a>&nbsp;는 Ubuntu &ndash; 에서 Docker 이미지로 SQL Server on Linux. 기업이 프로덕션 워크로드에 컨테이너를 사용하므로 SQL Server 같은 업계 표준 워크로드도 최대 이식성 및 민첩성을 위해 컨테이너에서 실행해야 합니다. 이는 특히 SQL Server&#39;중요 업무용 성능, 업계 최고의 TCO 및 Stretch Database와 같은 하이브리드 클라우드 혁신을 통해 온-프레미스 또는 클라우드에서 데이터에 액세스하는 경우 컨테이너가 계속 확산 &ndash; 됨에 따라 주목할 만합니다.</li>
+  </ul>
+
+
+  <p>기업은 점점 더 컨테이너를 채택하고 있습니다. 점점 더 복잡해지는 시나리오에 사용하고 대규모로 관리함에 따라 Microsoft는 심층 하이브리드 클라우드 기능, 유연성 및 개방성에 대한 헌신을 도울 수 있는 고유한 위치에 있습니다. 컨테이너 전략과 Azure 전략은 오픈 소스 기술에 대한 깊은 헌신으로 차별화되어 고객에게 선호도 및 투자에 맞게 가장 광범위한 선택을 제공합니다.</p>
+
+
+  <p>Docker와 같은 다른 업계 리더와의 파트너십을 계속 성장함에 따라, 우리의 원칙은 고객에게 최고의 선택을 제공하여 시장을 선도하는 혁신 &ndash; 에 액세스하고 궁극적으로 혁신이 클라우드 속도와 규모로 비즈니스를 발전시키는 데 사용할 수 있도록 하는 것입니다.</p>
+
+
+  <p>라이브 스트림&rsquo;을 놓친 경우 DockerCon 웹 사이트에서 내 키노트 및 기타 세션의 기록을 catch할 수 있습니다.</p>

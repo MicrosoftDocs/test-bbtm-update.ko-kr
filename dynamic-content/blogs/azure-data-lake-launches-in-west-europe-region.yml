@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 672c660c3e338b60ce807603636a7bee625a33b8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903062"
+Slug: azure-data-lake-launches-in-west-europe-region
+Title: 서유럽 지역에서 Azure Data Lake 시작
+Summary: Azure Data Lake Store 및 Azure Data Lake Analytics 이제 서유럽 지역뿐만 아니라 이전에 발표된 다른 지역에서도 일반 공급됩니다. 이 업데이트는 서양의 고객이 ...
+Content: >-
+  <p>Azure Data Lake Store 및 Azure Data Lake Analytics 이제 미국 동부 2, 미국 중부 및 북유럽의 <a href="https://azure.microsoft.com/en-us/regions/services/" target="_blank">이전에 발표된</a> 지역 외에도 서유럽 지역에서 일반 공급됩니다.</p>
+
+
+  <p>Azure Data Lake Store는 클라우드의 하이퍼스케일 엔터프라이즈 데이터 레이크로, 안전하고 확장성이 있으며 개방형 HDFS 표준에 맞게 빌드됩니다. 모든 분석이 한 곳에서 실행될 수 있도록 서로 다른 데이터 원본의 데이터를 단일 데이터 레이크로 가져올 수 있습니다. AAD 첫 번째 클래스 통합부터 세분화된 액세스 제어에 이르기까지 기본 제공 엔터프라이즈급 보안을 통해 가장 큰 조직에서도 보안을 쉽게 관리할 수 있습니다. 데이터 크기와 대규모 병렬 분석을 실행할 수 있는 기능에 제한이 없으므로 이제 모든 분석 데이터의 가치를 초고속 속도로 잠금 해제할 수 있습니다.</p>
+
+
+  <p>Azure Data Lake Analytics 분산 인프라를 관리하는 것이 아니라 비즈니스 목표를 달성하는 데 집중할 수 있도록 동적으로 확장되는 분산 주문형 분석 작업 서비스입니다. 분석 서비스는 작업의 크기를 조정할 수 있는 병렬 컴퓨팅 리소스 수를 선택하여 모든 규모의 작업을 처리할 수 있습니다. 실행할 때 작업 기준으로 비용이 부과되므로 비용 효과적일 수 있습니다. 이 서비스는 C#, Python 또는 R 등 원하는 언어로 작성된 사용자 지정 코드를 확장하기 위해 SQL 선언적 특성을 사용하는 간단하고 확장 가능하며 확장성이 뛰어난 언어 프레임워크로 U-SQL 제공합니다.&nbsp;</p>
+
+
+  <p>이러한 서비스 사용을 시작하려면 <a href="https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-get-started-portal" target="_blank">Azure Data Lake Store</a>를 방문하여 시작 페이지를 <a href="https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-get-started-portal" target="_blank">Azure Data Lake Analytics</a>.</p>
+
+
+  <p>지역 가격 책정에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/data-lake-store/" target="_blank">Azure Data Lake Store</a> 및 <a href="https://azure.microsoft.com/en-us/pricing/details/data-lake-analytics/" target="_blank">Azure Data Lake Analytics</a> 가격 책정 페이지를 참조하세요.</p>
+
+
+  <p>기존 Azure Data Lake Store를 서유럽 지역으로 마이그레이션하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-migration-cross-region" target="_blank">마이그레이션 지침 페이지를</a> 참조하세요.&nbsp;&nbsp;</p>

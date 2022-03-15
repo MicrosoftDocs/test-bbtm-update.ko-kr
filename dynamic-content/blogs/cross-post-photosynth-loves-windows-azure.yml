@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1b5eeac03668f80c1ee6fafdc4bc1bef2f9a1b63
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898652"
+Slug: cross-post-photosynth-loves-windows-azure
+Title: '교차 게시물: Photoynth는 Azure를 Windows 사랑합니다.'
+Summary: Photoynth를 사용하면 동일한 장면이나 개체의 여러 사진을 찍고 웹의 모든 사람과 공유 할 수있는 하나의 크고 대화 형 3D 보기 환경으로 모두 스티치 할 수 있습니다. 이...
+Content: '<p>Photoynth를 사용하면 동일한 장면이나 개체의 여러 사진을 찍고 웹의 모든 사람과 공유 할 수있는 하나의 크고 대화 형 3D 보기 환경으로 모두 스티치 할 수 있습니다. 이는 100만 개 이상의 신디사이저와 파노, 100개 이상의 테라픽셀을 나타내는 40TB(테라바이트) 이상의 데이터 등 저장된 많은 데이터로 변환됩니다.</p>  <p>Photoynth가 3년 전에 출시했을 때 Windows Azure가 존재하지 않았기&rsquo; 때문에 파트너를 사용하여 스토리지 및 콘텐츠 배포 네트워크 서비스를 제공했습니다. 블로그 게시물에 따르면, <a href="https://blogs.msdn.com/b/photosynth/archive/2011/10/18/photosynth-moving-to-windows-azure.aspx" target="_blank">&ldquo;Photoynth 사랑 Windows Azure&rdquo;</a>,&nbsp; 최근 <a href="https://blogs.msdn.com/b/photosynth/" target="_blank">Photoynth 블로그</a>에 게시, Photosynth 팀은 지금 <a href="https://www.microsoft.com/windowsazure/?WT.mc_id=cmp_pst001_blg_post0002" target="_blank">Windows Azure</a>에 모든 마지막 Photoynth 픽셀을 이동.</p>  <p>게시물에 따르면 마이그레이션은 이달 초에 시작되었으며, 완료되면 모든 업로드가 Azure에 Windows 전달되고&nbsp; Content Delivery Network(CDN)을 통해 전 세계적으로 제공됩니다. &nbsp;게시물에서 설명한 대로 모든 &ldquo;것이 잘 진행되면 며칠 내에 이 값을 100%로 증가시키고 파트너&rsquo; 데이터 센터에서 Windows Azure로 기존 콘텐츠 40TB를 마이그레이션하기 시작합니다.&rdquo;</p>  <p>Photoynth는 워싱턴 대학교와 Microsoft Research의 <a href="https://phototour.cs.washington.edu" target="_blank">사진 관광</a> 에 대한 획기적인 연구에서 영감을 받아 영화적이고 몰입형 경험을 위해 사진 측량 사용을 개척했습니다.&nbsp;&nbsp; 저명한 &ldquo;신디사이저는&rdquo; 내셔널 지오그래픽, NASA, 오바마 취임식을 포함한다.</p>  <p style="text-align: center;"><iframe src="https://photosynth.net/embed.aspx?cid=66fc546a-5f21-4daf-9cee-240711304016&amp;delayLoad=true&amp;slideShowPlaying=false" frameborder="0" height="350" width="100%"></iframe> <em>내셔널 지오그래픽:&nbsp; 타지마할 - 프론트</em></p>  <p>전체 <a href="https://blogs.msdn.com/b/photosynth/archive/2011/10/18/photosynth-moving-to-windows-azure.aspx" target="_blank">블로그 게시물을</a> 읽어보세요.&nbsp; Photoynth에 대해 자세히 알아보세요.</p>'

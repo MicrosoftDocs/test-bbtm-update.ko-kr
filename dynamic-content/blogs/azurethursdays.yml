@@ -1,0 +1,452 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2f3c0a5f8264de2c1b85e3ceb70db29d8d8ace2f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902652"
+Slug: azurethursdays
+Title: Azure 목요일 모임 요약
+Summary: Azure 목요일 웨비나의 모임 요약입니다.  Azure Thursdays는 이미 Azure를 사용하거나 탐색 중인 Microsoft 고객을 위한 되풀이 웨비나 시리즈입니다.  웹 세미나는 Azure 기술 전문가에 의해 촉진되며 각 세션 동안 Azure 뉴스를 공유하고, Azure 관련 토픽을 제시하고, 도구에 & Azure 팁을 제공하고, 질문에 답변합니다.
+Content: >-
+  <p><em>이 블로그 게시물은 동부 지역 Azure TSP 팀에서 작성했습니다. (업데이트 7/14/17)</em></p>
+
+
+  <h2><strong>중요</strong>:&nbsp; Azure 목요일은 여름 방학을 마치고 몇 달 후에 돌아올 것입니다.&nbsp;</h2>
+
+
+  <h2>업데이트는 2017년 8월 중순에 다시 확인하세요!</h2>
+
+
+  <p>&nbsp;</p>
+
+
+  <h5>Azure 목요일 연결 정보:</h5>
+
+
+  <h5><a href="https://meet.lync.com/microsoft/jhanson/QGYDJL26">웹 모임 </a>&amp; 전화: +1866-679-9995 컨퍼런스 #: 51668325 | <a href="https://azurethursdays.blob.core.windows.net/webinar/AzureThursdays.ics">약속 다운로드(ics) </a></h5>
+
+
+  <h5>다음 모임:&nbsp; <strong>TBD </strong></h5>
+
+
+  <p>&nbsp;</p>
+
+
+  <hr>
+
+  <h3><strong>7월 13일 - Azure 목요일 모임 요약 - 마이크로 서비스 및 Azure Service Fabric</strong></h3>
+
+
+  <h4>모임 주제: Azure News, 마이크로 서비스 프레젠테이션, 도구 &amp; 팁, 질문</h4>
+
+
+  <h4>발표자: Kyle Wilson(Azure TSP) &amp; Rahul Marathe(Azure TSP) &amp; Chris Santaniello(Azure TSP)</h4>
+
+
+  <h4>토론 노트 &amp; 주요 링크:</h4>
+
+
+  <ol>
+   <li>뉴스 - Azure 관련 뉴스 &amp; 공지 요약 <ol>
+    <li><a href="https://azure.microsoft.com/en-us/blog/topics/storage-backup-and-recovery/">Azure Site Recovery 업데이트 - Ubuntu 지원, 4TB 디스크 및 Windows Server 2016 저장소 공간 </a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/storsimple8000-newportal-ga/">새 Azure Portal에서 StorSimple 8000 시리즈 관리의 GA</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/microsoft-announces-project-olympus-support-for-new-intel-xeon-scalable-processors/">Intel Xeon 확장 가능 프로세서를 지원하는 Project 올림푸스</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/linux-and-windows-networking-performance-enhancements-accelerated-networking/">Windows 및 Linux VM에 대한 네트워크 향상</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-stack-is-ready-to-order-now/">Azure Stack을 주문할 준비가 완료되었습니다!</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/azure-managed-applications/">Azure Marketplace 미리 보기의 관리되는 애플리케이션</a></li>
+   </ol>
+   </li>
+   <li>토픽 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20July%2013.pdf">(슬라이드)</a>
+   <ol>
+    <li>
+    <p>마이크로 서비스 접근 방식인 이유는 무엇인가요?</p>
+    </li>
+    <li>
+    <p>마이크로 서비스란?</p>
+    </li>
+    <li>
+    <p>Azure Service Fabric이란?</p>
+    </li>
+    <li>
+    <p>Azure Service Fabric 이점</p>
+    </li>
+   </ol>
+   </li>
+   <li>
+   <p>금주의 도구 &amp; 설명</p>
+
+   <ol>
+    <li>
+    <p>도구 = <a href="https://www.cloudberrylab.com/explorer/microsoft-azure.aspx">Cloudberry Lab Azure Storage Explorer</a> Azure Blob Storage(파일 이동, 속성 등)를 사용하기 위한 FTP와 같은 도구입니다.</p>
+    </li>
+    <li>
+    <p>팁</p>
+
+    <ol>
+     <li>
+     <p><a href="https://github.com/tripdubroot/ContainerCamp">컨테이너 캠프 랩</a> - Azure CLI를 사용하여 Azure의 VM에 컨테이너를 배포하는 방법을 학습하기 위해 GitHub 호스트되는 일련의 랩</p>
+     </li>
+     <li>
+     <p><a href="https://channel9.msdn.com/Events/Build/2017/B8106">Azure Service Fabric Build Session</a> - 2017년 5월 빌드에서 서비스를 검토하고, 몇 가지 로드맵 업데이트를 제공하고, 몇 가지 규모 데모를 보여 주는 훌륭한 세션</p>
+     </li>
+    </ol>
+    </li>
+   </ol>
+   </li>
+   <li>필드의 질문이 제공되었습니다. 자세한 내용은 이 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20July%2013.pdf">슬라이드를 확인하세요. </a></li>
+  </ol>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3><strong>6월 29일 - Azure 목요일 모임 요약 - Azure의 컨테이너</strong></h3>
+
+
+  <h4>모임 주제: Azure News, 컨테이너 프레젠테이션, 도구 &amp; 팁, 질문</h4>
+
+
+  <h4>발표자: Chris Santaniello(Azure TSP) &amp; Rahul Marathe(Azure TSP) &amp; Kyle Wilson(Azure TSP)&nbsp;</h4>
+
+
+  <h4>토론 노트 &amp; 주요 링크:</h4>
+
+
+  <ol>
+   <li>뉴스 - Azure 관련 뉴스 &amp; 공지 요약 <ol>
+    <li><a href="https://azure.microsoft.com/en-us/blog/secure-transfer-required-is-available-in-azure-storage-account/">Azure Storage 컨테이너에 사용할 수 있는 보안 전송 필수 설정</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/event-hubs-capture-formally-archive-is-now-generally-available/">Event Hubs 캡처 지금 GA</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/business-continuity-for-ubuntu-workloads-with-asr/">Azure Site Recovery는 Ubuntu Linux 지원을 추가합니다.</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/snapshot-debugger-for-azure/">미리 보기로 시작된 Azure App Services에 대한 스냅샷 디버거</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/text-analytics-api-sentiment-16-languages/">Text Analytics Cognitive Services API는 이제 16개 언어로 감정 분석을 지원합니다.</a></li>
+   </ol>
+   </li>
+   <li>토픽 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20June%2029.pdf">(슬라이드)</a>
+   <ol>
+    <li>
+    <p>컨테이너란?</p>
+    </li>
+    <li>
+    <p>컨테이너 및 컨테이너 레지스트리 사용</p>
+    </li>
+    <li>
+    <p>Azure 컨테이너 서비스</p>
+    </li>
+    <li>
+    <p>Azure Service Fabric</p>
+    </li>
+   </ol>
+   </li>
+   <li>
+   <p>금주의 도구 &amp; 설명</p>
+
+   <ol>
+    <li>
+    <p>도구 = <a href="https://github.com/Azure/migAz">migAz</a> 는 한 Azure 구독에서 다른 구독으로 리소스를 마이그레이션하는 데 도움이 되는 오픈 소스 도구입니다(자세한 내용은 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20June%2029.pdf">슬라이드 </a>참조).</p>
+    </li>
+    <li>
+    <p>팁 = 스토리지 계정에 대한 사용자 지정 도메인을 활용하여 액세스 스토리지 개체(파일, Blob 등)에 매력적인/허영 URL을 제공합니다.</p>
+    </li>
+   </ol>
+   </li>
+   <li>필드의 질문이 제공되었습니다. 자세한 내용은 이 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20June%2029.pdf">슬라이드를 확인하세요. </a></li>
+  </ol>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3><strong>6월 15일 - Azure 목요일 모임 요약 - Azure App Services &amp; App Service Environment 설명</strong></h3>
+
+
+  <h4>모임 항목: Azure News, Azure App Services 프레젠테이션, 도구 &amp; 팁, 질문</h4>
+
+
+  <h4>발표자: Rahul Marathe(Azure TSP) &amp; Kyle Wilson(Azure TSP) &amp; Chris Santaniello(Azure TSP)</h4>
+
+
+  <h4>토론 노트 &amp; 주요 링크:</h4>
+
+
+  <ol>
+   <li>뉴스 - Azure 관련 뉴스 &amp; 공지 요약 <ol>
+    <li><a href="https://azure.microsoft.com/en-us/blog/announcing-storage-service-encryption-with-customer-managed-keys-limited-preview-for-azure-blob-storage/?v=17.23h">고객 관리형 키를 사용한 Storage 서비스 암호화 미리 보기</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/new-azure-vpn-gateways-now-6x-faster/">새 Azure VPN Gateway 및 성능 향상</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/azure-managed-disks-sse/">Managed Disks에 대한 Storage 서비스 암호화 지원</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/announcing-disaster-recovery-for-azure-iaas-vms-using-asr/">다른 Azure 지역 미리 보기로 Azure VM용 Azure Site Recovery</a></li>
+   </ol>
+   </li>
+   <li>토픽 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20June%2015.pdf">(슬라이드)</a>
+   <ol>
+    <li>
+    <p>App Service란?</p>
+    </li>
+    <li>
+    <p>App Service 계획이란 무엇인가요?</p>
+    </li>
+    <li>
+    <p>App Service Environment란?</p>
+    </li>
+    <li>
+    <p>데모를 사용하여 설명된 Logic Apps &amp; Functions 앱</p>
+    </li>
+    <li>App Service &amp; 의 장단점은 어떻게 조정하나요?</li>
+   </ol>
+   </li>
+   <li>
+   <p>금주의 도구 &amp; 설명</p>
+
+   <ol>
+    <li>
+    <p>Visual Studio Code - App Services 및 기타 많은 Azure 서비스, 훌륭한 경량 IDE(<a href="https://code.visualstudio.com">https://code.visualstudio.com</a>)를 지원합니다.</p>
+    </li>
+    <li>
+    <p>팁 = Azure WebApps의 ModSecurity, Azure Web App&nbsp; 에 WAF 기능 빌드(<a href="https://azure.microsoft.com/en-us/blog/modsecurity-for-azure-websites/">Azure 블로그 문서</a>)&nbsp;</p>
+    </li>
+   </ol>
+   </li>
+   <li>필드의 질문이 제공되었습니다. 자세한 내용은 이 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20June%2015.pdf">슬라이드를 확인하세요. </a></li>
+  </ol>
+
+
+  <h3>&nbsp;</h3>
+
+
+  <h3><strong>6월 1일 - Azure 목요일 모임 요약 - Azure Active Directory</strong></h3>
+
+
+  <h4>모임 주제: Azure News, Azure Active Directory 프레젠테이션, 도구 &amp; 팁, 질문</h4>
+
+
+  <h4>발표자: Chris Hanson, (Azure TSP) &amp; Chris Santaniello(Azure TSP)</h4>
+
+
+  <h4>토론 노트 &amp; 주요 링크:</h4>
+
+
+  <ol>
+   <li>뉴스 - Azure 관련 뉴스 &amp; 공지 요약 ( <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursdays%20-%20June%201%20Understanding%20Azure%20AD.pdf">슬라이드</a>의 링크):
+
+   <ol>
+    <li>Azure VM의 더 큰 디스크 크기</li>
+    <li>Windows 서버 시스템 상태용 Azure Backup</li>
+    <li>Azure Backup Server에 대한 vCenter/ESXi 6.5 지원</li>
+    <li>Azure SQL 표준 탄력적 풀에서 DB당 더 높은 DTU 제한</li>
+    <li>Cloud Shell preveiw의 PowerShell</li>
+    <li>NV 시리즈 VM의 NVIDIA Grid</li>
+   </ol>
+   </li>
+   <li>토픽 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursdays%20-%20June%201%20Understanding%20Azure%20AD.pdf">(슬라이드)</a>
+   <ol>
+    <li>
+    <p>Azure AD란?</p>
+    </li>
+    <li>
+    <p>Azure AD 커넥트 동기화 &amp; 인증 옵션</p>
+    </li>
+    <li>
+    <p>ID 보호 및 Privileged Identity Management</p>
+    </li>
+    <li>
+    <p>Azure AD 기능 비교</p>
+    </li>
+   </ol>
+   </li>
+   <li>
+   <p>금주의 도구 &amp; 설명</p>
+
+   <ol>
+    <li>
+    <p>Azure 속도 테스트(www.azurespeed.com)</p>
+    </li>
+    <li>
+    <p>팁 = Azure AD용 Azure Preview 서비스(<a href="https://azure.microsoft.com/en-us/services/preview/">https://azure.microsoft.com/en-us/services/preview/</a>)&nbsp;</p>
+    </li>
+   </ol>
+   </li>
+   <li>필드의 질문에서 자세한 내용은 이 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursdays%20-%20June%201%20Tool%20of%20the%20Week%20and%20Questions.pdf">슬라이드를 확인하세요. </a></li>
+  </ol>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3><strong>5월 18일 - Azure 목요일 모임 요약 - Azure에서 데이터베이스 플랫폼 분류</strong></h3>
+
+
+  <h4>모임 항목: Azure News, Azure Data Platform Services, 질문</h4>
+
+
+  <h4>발표자: Kyle Wilson(Azure TSP), Daniel Sheehan(Azure DSA) &amp; Chris Santaniello(Azure TSP)</h4>
+
+
+  <h4>토론 노트 &amp; 주요 링크:</h4>
+
+
+  <ol>
+   <li>뉴스 - Azure 관련 빌드 컨퍼런스 공지 사항을 요약합니다. 예를 들면 다음과 같습니다. <ol>
+    <li><a href="https://azure.microsoft.com/en-us/blog/announcing-public-preview-of-azure-batch-low-priority-vms/">Batch 컴퓨팅에 대한 낮은 우선 순위 VM</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/introducing-azure-functions-runtime-preview/">Azure Functions 런타임</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/public-preview-of-azure-cloud-shell/">Azure Cloud Shell</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/azure-app-preview/">Azure 모바일 앱</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/microsoft-extends-azure-managed-database-services-with-introduction-of-mysql-and-postgresql/">MySQL 및 Postgres 관리 DB</a></li>
+    <li><a href="https://azure.microsoft.com/en-us/blog/azure-cosmos-db-microsofts-globally-distributed-multi-model-database-service/">Cosmos DB</a></li>
+    <li><a href="https://blogs.msdn.microsoft.com/uk_faculty_connection/2017/05/10/quick-review-of-key-azure-announcement-at-build-2017/">빌드 2017의 주요 Azure 공지 사항 목록</a></li>
+   </ol>
+   </li>
+   <li>토픽 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20May%2018.pdf">(슬라이드)</a>
+   <ol>
+    <li>
+    <p>Data Services를 3가지 범주로 요약:&nbsp; 데이터베이스 | 데이터 웨어하우스, 분석 &amp; Machine Learning 솔루션 | 데이터 처리 서비스 &amp; 도구</p>
+    </li>
+    <li>
+    <p>솔루션 선택 요소:&nbsp;&nbsp; SMP 및 MPP 아키텍처, 데이터 형식, 볼륨, 데이터의 속도 &amp; 위치</p>
+    </li>
+    <li>
+    <p>잠재적 솔루션이 무엇인지 식별하는 데 사용하는 데이터 플랫폼 진단 질문</p>
+    </li>
+    <li>
+    <p>Azure SQL Data Warehouse를 검토하고 Azure Data Lake와 비교하고 Azure Data Lake Analytics 제공하는 내용을 설명했습니다.</p>
+    </li>
+   </ol>
+   </li>
+   <li>
+   <p>금주의 도구 &amp; 팁</p>
+
+   <ol>
+    <li>
+    <p><a href="https://azureplatform.azurewebsites.net/en-us">Azure 플랫폼 탐색기 웹 사이트</a> - Azure에서 서비스에 대한 요약 및 세부 정보 링크를 공유하는 클릭 가능한 그래픽이 있는 편리한 참조 웹 사이트입니다.</p>
+    </li>
+    <li>
+    <p><a href="https://www.microsoft.com/en-us/download/details.aspx?id=53595">Microsoft Data Migration Assistant 3.1 도구</a> - 이 도구를 사용하면 Azure SQL 마이그레이션하기 위해 기존 데이터베이스를 분석할 수 있습니다.</p>
+    </li>
+    <li>
+    <p>팁 = <a href="https://www.microsoft.com/cloudessentials/en-US">Cloud Essentials</a> 는 다음을 제공하는 쿨 무료 서비스입니다.</p>
+
+    <ol>
+     <li>자가 진행형 랩</li>
+     <li>강사가 이끄는 가상 클래스(Pluralsight의 일부)</li>
+     <li>클라우드 모니터 도구</li>
+     <li>소량의 개별 Azure 크레딧(개별 재생/탐색용)</li>
+     <li>기능 개요 비디오</li>
+     <li>다양한 클라우드 서비스에 대한 평가판에 대한 액세스</li>
+     <li>경력 지침</li>
+     <li>커뮤니티 포럼</li>
+    </ol>
+    </li>
+   </ol>
+   </li>
+   <li>필드에서 질문이 논의되었다 자세한 내용은 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20May%2018.pdf">슬라이드 </a>를 확인</li>
+  </ol>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3><strong>5월 5일 - Azure 목요일 모임 요약: Azure에서 개발 워크로드 관리 테스트 &amp;</strong></h3>
+
+
+  <h4>모임 항목: Azure News, Azure에서 개발 워크로드 관리 테스트 &amp; , 질문</h4>
+
+
+  <h4>발표자: Rahul Marathe(Azure TSP) &amp; Chris Santaniello(Azure TSP)</h4>
+
+
+  <h4>토론 참고 &amp; 키 링크:</h4>
+
+
+  <ol>
+   <li>
+   <p>DEV/테스트 구독 제품 - 비프로덕션 워크로드에 대해 개발/테스트 구독을 사용하여 Azure 사용량을 최적화합니다. 이 <a href="https://channel9.msdn.com/blogs/EA.Azure.com/Enabling-and-Creating-EA-DevTest-Subscriptions-through-the-EA-Portal">Channel 9 비디오 </a>는 프로세스의 연습을 제공합니다.</p>
+   </li>
+   <li>
+   <p>DEV/TEST Labs Service - 클라우드에서 환경을 빠르게 만들기 위해 Azure의 <a href="https://azure.microsoft.com/en-us/services/devtest-lab/">Dev/Test Labs 서비스에 </a>대해 설명했습니다. 이 항목의 비디오는 <a href="https://channel9.msdn.com/Search?term=DevTest%20labs#pubDate=year&amp;ch9Search&amp;lang-en=en">채널 9</a>를 체크 아웃합니다.</p>
+   </li>
+  </ol>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3><strong>4월 20일 - Azure 목요일 모임 요약:&nbsp; Azure Backup &amp; Azure Site Recovery</strong></h3>
+
+
+  <h4>모임 항목: Azure News, Azure Backup 및 Azure Site Recovery, 질문</h4>
+
+
+  <h4>발표자: Kyle Wilson(Azure TSP) &amp; Chris Hanson(Azure TSP)</h4>
+
+
+  <h4>토론 참고 &amp; 키 링크:</h4>
+
+
+  <ol>
+   <li>뉴스 - 크리스 산타니엘로(뉴욕 메트로)와 라훌 마라테(보스턴/북동부)를 포함한 광범위한 Azure TSP 팀 소개</li>
+   <li>토픽 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20April%2020.pdf">(슬라이드) </a>
+   <ol>
+    <li>
+    <p>Azure 블록 Blob Storage - 백업 및 보관 콘텐츠를 저장하기 위한 가장 낮은 비용 옵션입니다. 테이프에서 블록 스토리지로 이동하면 비용 절감 및 비즈니스 가치 혜택(복구 시간, 복원력 등)이 될 수 있습니다. 기존 백업 소프트웨어 공급업체가 Azure Block Blob을 스토리지 대상으로 지원하는지 물어봅니다.</p>
+    </li>
+    <li>
+    <p>Azure Backup - 온-프레미스 및 Azure에서 워크로드를 지원하는 Azure Backup이라는 서비스 솔루션으로 백업을 제공합니다. 이는 VM 또는 하드웨어 없이 로컬로 Azure에 직접 백업할 수 있는 지점의 경우 특히 매력적입니다.</p>
+    </li>
+    <li>
+    <p>Azure Site Recovery - 비즈니스 연속성을 위해 컴퓨팅 워크로드를 Azure에 복제하기 위한 솔루션입니다. (VMWare, HyperV 또는 Physical).</p>
+    </li>
+   </ol>
+   </li>
+   <li>질문 요약 <a href="https://azurethursdays.blob.core.windows.net/webinar/Azure%20Thursday%20-%20April%2020.pdf">(답변은 슬라이드 참조) </a>
+   <ol>
+    <li>
+    <p>온-프레미스 SQL Server Azure SQL Service로 데이터를 복제하려면 어떻게 해야 할까요?</p>
+    </li>
+    <li>
+    <p>Power BI Embedded(Azure)와 Power BI 서비스의 차이점은 무엇인가요?</p>
+    </li>
+    <li>
+    <p>많은 양의 데이터를 Azure로 이동하려는 경우 옵션은 무엇인가요?</p>
+    </li>
+   </ol>
+   </li>
+   <li>
+   <p>금주의 도구 - Azure CLI(명령줄 인터페이스) 팀은 Azure CLI 명령을 검색하는 데 도움이 되는 Azure CLI 셸 도구를 릴리스했습니다. 미리 보기 상태이지만 Azure CLI 명령 및 인수를 학습하려고 할 때 매우 유용합니다. <a href="https://azure.microsoft.com/en-us/blog/welcome-to-azure-cli-shell/">Azure CLI Shell</a></p>
+   </li>
+  </ol>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3><strong>4월 7일 - Azure 목요일 모임 요약: Azure Managed Disks &amp; Azure Enterprise 계정 포털</strong></h3>
+
+
+  <h4>모임 항목: Azure News, Azure Managed Disks, Azure EA Portal, Azure 거버넌스 및 구성 모범 사례 리소스.</h4>
+
+
+  <h4>발표자: Chris Hanson, Azure TSP 및 Kyle Wilson, Azure TSP</h4>
+
+
+  <h4>토론 참고 &amp; 키 링크:</h4>
+
+
+  <ol>
+   <li><strong>Azure 뉴스:</strong> <a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview">Azure Monitor</a> &amp; <a href="https://docs.microsoft.com/en-us/azure/advisor/advisor-overview">Azure Advisor</a> 는 모두 일반 공급용으로 릴리스되었습니다. 서비스 업데이트 피드에 따라, 높은 수준의 공지 사항을 확인하고, 핵심 Azure 블로그(일반적으로 더 자세한 설명)를 읽어 Azure 서비스 뉴스를 추적할 수 있습니다.</li>
+   <li><strong>Azure Managed Disks:</strong> 구현 및 관리가 더 간단하고 더 나은 규모와 복원력을 제공하는 VM 디스크를 만드는 새로운 방법입니다. 다음은 짧은 <a href="https://channel9.msdn.com/Search?term=Tuesdays%20with%20corey#pubDate=year&amp;ch9Search&amp;lang-en=en">개요 비디오</a> 와 더 긴 <a href="https://channel9.msdn.com/Shows/Cloud+Cover/Episode-223-Azure-Managed-Disks-with-Chetan-Agarwal">개요 비디오</a> (27분)입니다. 또한 기존 스토리지 계정 및 페이지 Blob에서 <a href="https://channel9.msdn.com/Shows/Cloud+Cover/Episode-223-Azure-Managed-Disks-with-Chetan-Agarwal">관리 디스크로 변환하기 위한 가이드</a> 를 게시했습니다.</li>
+   <li><strong>Azure EA Portal: </strong> EA Portal에서 여러 구독을 관리하고 리소스 태그, 프로젝트 비용 추적을 사용하여 사용 현황을 보고하는 이점에 대해 간략하게 설명했습니다. EA Portal의 다양한 역할과 해당 기능을 사용하는 방법을 설명하는 좋은 <a href="https://channel9.msdn.com/Niners/EnterpriseAzure">비디오 시리즈</a> 가 있습니다.</li>
+   <li><strong>Azure 구성 모범 사례:</strong> <a href="https://docs.microsoft.com/en-us/azure/advisor/advisor-overview">Azure Advisor</a>와 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-subscription-governance">Azure Enterprise 스캐폴드 설명서</a>가 결합된 방식이 모범 사례 및 거버넌스를 위한 좋은 리소스인 방법에 대해 설명했습니다.</li>
+  </ol>
+
+
+  <hr>
+
+  <h5>&nbsp;</h5>
+
+
+  <h4>Azure 목요일 배경:</h4>
+
+
+  <p>Azure Thursdays는 이미 Azure를 사용하거나 탐색 중인 Microsoft 고객을 위한 되풀이 웨비나 시리즈입니다.&nbsp; 웹 세미나는 Azure 기술 전문가에 의해 촉진되며 각 세션 동안 Azure 뉴스를 공유하고, Azure 관련 토픽을 제공하고, Azure 팁 &amp; 도구를 제공하고, 질문에 답변합니다.</p>
+
+
+  <p><a href="https://meet.lync.com/microsoft/jhanson/QGYDJL26">웹 모임 </a>&amp; 전화: +18666799995 회의 ID: 51668325 | <a href="https://azurethursdays.blob.core.windows.net/webinar/AzureThursdays.ics">일정 약속(ics)</a></p>

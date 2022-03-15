@@ -1,0 +1,90 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f10c65959d0a27a4e2944a6f46262d86a05737f6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898941"
+Slug: in-case-you-missed-it-10-of-your-questions-from-our-gdpr-webinars
+Title: '누락된 경우: GDPR 웨비나에서 10가지 질문'
+Summary: 지난 몇 달 동안 저는 직접 및 온라인에서 EU의 일반 데이터 준수를 위한 2018년 5월 25일 마감일을 준비하는 방법에 대해 많은 Azure 고객과 이야기를 나눴습니다...
+Content: >-
+  <p>지난 몇 달 동안 Ive&rsquo;는 EUS GDPR(일반 데이터 보호 규정)을 준수&rsquo;하기 위해 2018년 5월 25일 최종 기한을 준비하는 방법에 대해 직접 및 온라인에서 많은 Azure 고객과 이야기를 나눴습니다. GDPR은 회사, 정부 기관, 비영리 단체 및 기타 EU(유럽 연합)의 사용자에게 상품 및 서비스를 제공하거나 EU 거주자와 연결된 데이터를 수집하고 분석하는 조직에 새 규칙을 적용합니다. GDPR은 귀하가 어디에 있든 관계없이 적용됩니다. GDPR은 GDPR에 따라 일반적인 많은 관행이 금지되고 기업이 노출 및 준수 방법을 평가하는 데 주의를 기울여야 하기 때문에 데이터 수집 및 분석의 환경을 크게 변화시킬 것입니다.</p>
+
+
+  <p>저는 최근에 GDPR 및 IT 팀 및 클라우드 컴퓨팅에 미치는 영향에 대한 Microsoft 일련의 웨비나에 참여했습니다. 이 웨비나에서 많은 질문을 받았기 때문에 주문형 웨비나에 대한 링크와 함께 도움이 될 수 있다고 생각되는 가장 자주 묻는 질문 중 일부에 응답할 것이라고 생각했습니다.</p>
+
+
+  <p><strong>Q: GDPR을 통해 EU 외부로 데이터를 보낼 수 있나요? </strong></p>
+
+
+  <p>A: GDPR은 전 세계적으로 적용되므로 회사가 EU 내에서 개인 데이터를&mdash; 저장하거나 처리하는 위치에 관계없이 GDPR 지침을 준수해야 합니다.</p>
+
+
+  <p><strong>Q: GDPR은 회사 인트라넷과 같은 내부 사이트에도 적용됩니까?</strong></p>
+
+
+  <p>A: 예. &rsquo;소비자 또는 직원에 대한 개인 데이터를 저장하든 관계없이 GDRP 지침을 준수해야 합니다.</p>
+
+
+  <p><strong>Q: 데이터 분류와 관련된 GDPR 요구 사항은 무엇인가요? </strong></p>
+
+
+  <p>A: GDPR은 데이터 분류를 명시적으로 요구하지 않지만&rsquo; EU 시민에게 부여하는 권리와 시민&rsquo; 개인 데이터를 저장하는 모든 회사의 요구 사항을 감안할 때 데이터 분류는 실질적으로 협상할 수 없습니다. 예를 들어 회사는 파일에 있는 모든 개인 데이터에 대해 개인에게 알려야 하며 이를 처리하기 전에 동의를 얻어야 합니다. 또한 회사는 해당 데이터를 보호하기 위해 적절한 조치를 취하고 있는지 확인해야 하며, 개인이 동의한 규정된 목적과 기간 동안만 저장할 수 있습니다.</p>
+
+
+  <p>&rsquo;따라서 데이터를 카탈로그화하고 GDPR 관할권에 속하는 개인 데이터의 위치를 알지 못하면 이러한 요구 사항과 책임을 준수할 수 있는 방법이 없습니다.</p>
+
+
+  <p><strong>Q: GDPR에 암호화가 필요한가요?</strong></p>
+
+
+  <p>A: 규범적인 문제가 아닙니다. 대신, 지침을 제공하고 암호화를 강력하게 제안합니다.</p>
+
+
+  <p><strong>Q: EU가 규정을 준수하는 것이 무엇을 의미하는지에 대한 모범 사례를 수립한 적이 있습니까?</strong></p>
+
+
+  <p>A: EU는 지침을 발표했지만 GDPR은 초기 계획&mdash; 국가일 뿐이며 추가 요구 사항을 포함할 권한이 있음을 명심하세요. 그리고 GDPR은 매우 규범적인 지침을 제공하는 것이 아니라 지침을 제공하는 것에 더 중요합니다.</p>
+
+
+  <p><strong>Q: 브렉시트는 이에 어떤 영향을 미치나요? </strong></p>
+
+
+  <p>A: 불행히도 영국은 더 이상 EU 회원국과 같은 수준에 있는 것으로 간주되지 않습니다. 따라서 영국은 더 이상 데이터 보호법을 준수할 수 있는 적절한 것으로 간주되지 않습니다. 그러나 영국은 GDPR을 준수하기 위해 그 역할을 다하고 있습니다.</p>
+
+
+  <p><strong>Q: 공식 GDPR 인증이 있나요? </strong></p>
+
+
+  <p>A: 결국에는 GDPR이 구현된 후 최소 몇 달 동안 완료되지 않습니다&rsquo;. 그동안 ISO 27001을 기반으로 빌드할 수 있으며, Microsoft는 회사가 규정을 준수하는 방법을 파악할 수 있도록 자체 GEP 분석을 제공합니다.</p>
+
+
+  <p><strong>Q: 독립 그룹이 평가를 제공합니까? </strong></p>
+
+
+  <p>A: CISPE라고 하는 클라우드 인프라 서비스 공급자 연합은 기업의 시작을 돕기 위한 자체 행동 강령&rsquo;을 개발했습니다. 12월, 클라우드 보안 얼라이언스는 평가 중인 행동 강령을 발표했습니다. 한편, 우리는 ISO 27001을 고수하고 EUS&rsquo; 데이터 보호 당국과 연락을 유지하고 있습니다.</p>
+
+
+  <p><strong>Q: 데이터 보존 요구 사항이 개인&rsquo;에게 데이터를 삭제할 권리를 재정의합니까?</strong></p>
+
+
+  <p>A: 예, 비즈니스를 운영하기 위해 세금 또는 법적 이유로 개인 데이터를 보관해야 하는 몇 가지 예외가 있습니다. 그러나 데이터를 수집하고 보관할 수 있는 카르테 블랑쉬 권한을 가진 기업의 전체 개념은 제거되었습니다.</p>
+
+
+  <p><strong>Q: IP가 데이터 주체 권한 범위에 있나요? </strong></p>
+
+
+  <p>A: 예. 실제로 IP는 EU&rsquo;의 기존 DPA 규정과 관련이 있지만 GDPR은 알려진 사람과 연결할 수 있는 모든 정보를 포함하도록 개인 데이터의 정의를 크게 확대합니다. 예를 들어 브라우저 기록 및 소셜 미디어 활동이 있습니다.</p>
+
+
+  <p>또한 유전 및 생체 인식 데이터와 같은 신체적&rsquo;, 정신적 건강과 관련된 정보에 대한 특별한 조항을 만듭니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이러한 질문을 통해 GDPR을 준비하기 위해 무엇을 할 수 있는지 생각해 볼 수 있기를 바랍니다. Azure <a href="https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx" target="_blank">GDPR</a> 페이지, 백서, Microsoft Azure 조직이 EU <a href="https://www.microsoft.com/en-us/TrustCenter/CloudServices/Azure/GDPR" target="_blank">GDPR</a>을 <a href="https://gallery.technet.microsoft.com/How-Azure-Can-Help-788a4979" target="_blank"><em>준수하는 데 도움이 되는 방법</em></a>, <a href="https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted" target="_blank"><em>시작: GDPR 책임 리소스 집합 지원 등 주요 GDPR</em></a> 사이트에서 사용할 수 있는 GDPR 정보가 훨씬 더 많습니다.&nbsp;&nbsp;</p>
+
+
+  <p>물론 위의 어떤 것도 법률 자문으로 간주되어서는 안되며, 회사&#39;법률 고문에게 우려 사항을 제기하는 것이 좋습니다.&nbsp;</p>

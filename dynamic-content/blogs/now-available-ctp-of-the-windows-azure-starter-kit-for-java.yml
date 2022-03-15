@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 36daf109c1a752b4af8b2382b87edce1b815511e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898289"
+Slug: now-available-ctp-of-the-windows-azure-starter-kit-for-java
+Title: '지금 사용 가능: Java용 Windows Azure Starter Kit의 CTP'
+Summary: 'Windows Azure 개발자는 빌드에 사용할 언어(예: .NET, PHP, Ruby 또는 Java) 및 개발 도구(예: Visual Studio 또는 Eclipse)에 대해 항상 옵션을 사용했습니다.'
+Content: '<p><a target="_blank" href="https://azure.microsoft.com/">Windows Azure</a> 개발자는 Windows Azure 플랫폼에서 애플리케이션을 빌드하는 데 사용할 언어(예: .NET, PHP, Ruby 또는 Java) 및 개발 도구(예: Visual Studio 또는 Eclipse)에 대해 항상 옵션을 사용할 수 있습니다.&nbsp; 오늘, 상호 <a target="_blank" href="https://blogs.msdn.com/b/interoperability/">운용성 @ Microsoft 블로그</a>에 지난 수요일에 <a target="_blank" href="https://blogs.msdn.com/b/interoperability/archive/2011/02/23/improving-experience-for-java-developers-with-windows-azure.aspx">발표 된</a> &nbsp;Java용 Windows Azure 스타터 키트의 Community 기술 미리 보기 (CTP)의 가용성과 함께 또 다른 선택이 있습니다.</p>  <p>이 CTP의 목표는 Java 개발자로부터 피드백을 받고, 특히 Azure에 대한 구성, 패키징 및 배포가 일반적인 사례와 잘 통합되도록 하기 위해 Java 개발자에게 올바른 환경을 제공하는 Windows 것입니다. </p>  <p>간단한 명령줄 빌드 도구 또는 Eclipse IDE(통합 개발 환경)에서 작동하도록 설계된 시작 키트는 Apache 2.0 라이선스로 릴리스된 오픈 소스 프로젝트이며 <a target="_blank" href="https://wastarterkit4java.codeplex.com/">여기에서</a> 다운로드할 수 있습니다.<span style="text-decoration: underline;"></span></p>  <p>CTP에 대해 자세히 알아보려면 상호 운용성 @ <a target="_blank" href="https://blogs.msdn.com/b/interoperability/archive/2011/02/23/improving-experience-for-java-developers-with-windows-azure.aspx">Microsoft 블로그에서</a> 이 공지 사항에 대한 전체 블로그 게시물을 읽어보세요.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href=https://blogs.msdn.com/b/windowsazure/archive/2011/02/28/now-available-ctp-of-the-windows-azure-starter-kit-for-java.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗  <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>  </p>'

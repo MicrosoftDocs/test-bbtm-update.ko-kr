@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 91a3918adbd29635b718840988ed053315fe9664
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902543"
+Slug: introducing-a-new-way-to-purchase-azure-monitoring-services
+Title: Azure 모니터링 서비스를 구입하는 새로운 방법 소개
+Summary: 오늘날 고객은 Azure의 애플리케이션, 인프라 및 네트워크 모니터링 기능을 사용하여 중요한 워크로드가 항상 작동 및 실행되도록 합니다. 이들의 성장을 보는 것은 흥미 롭습니다 ...
+Content: >-
+  <p>오늘날 고객은 Azures&rsquo; 애플리케이션, 인프라 및 네트워크 모니터링 기능을 사용하여 중요한 워크로드가 항상 작동 및 실행되도록 합니다. &rsquo;이러한 서비스의 성장을 보고 고객이 여러 모니터링 서비스를 사용하여 문제에 대한 가시성을 확보하고 더 빠르게 해결하는 것을 볼 수 있습니다. Azure 모니터링 서비스를 더욱 쉽게 채택할 수 있도록 현재 모니터링 서비스 전반에 걸쳐 새로운 일관된 구매 환경을 발표하고 있습니다. 이 새 가격 책정 모델의 세 가지 주요 특성은 다음과 같습니다.</p>
+
+
+  <h3>1. 종량제 가격 책정</h3>
+
+
+  <p>모니터링 서비스의 전체 포트폴리오에서 간단한 &ldquo;종량제&rdquo; 모델을 채택하고 있습니다. 당신은 모든 제어 및 투명성을 가지고, 그래서 당신은 당신이 사용하는 것에 대해서만 지불.&nbsp;</p>
+
+
+  <h3>2. 데이터 수집을 위한 GB(기가바이트) 계량당 일관성</h3>
+
+
+  <p>데이터 수집에 대한 가격 책정 모델을 노드&rdquo;당에서 &ldquo;GB&rdquo;당으로 변경하고 &ldquo;있습니다. 고객은 모니터링의 가치가 수신된 데이터의 양과 노드 수가 아닌 그 위에 구축된 인사이트에서 비롯되었다고 말했습니다. 또한 이 새 모델은 노드 정의가 명확하지 않은 컨테이너 및 마이크로 서비스의 미래에 가장 적합합니다. &ldquo;GB&rdquo; 당 데이터 수집은 애플리케이션, 인프라 및 네트워킹 모니터링에서 가격 책정을 위한 새로운 기반입니다.</p>
+
+
+  <h3>3. 기존 고객을 위한 가격 책정 모델 선택</h3>
+
+
+  <p>기존 고객 중 일부는 노드&rdquo;당 현재 &ldquo;모델에 최적화된 사용 사례를 가지고 있으며, 이러한 변경으로 인해 사용자에게 방해가 되지 않도록 하고자 합니다. <em>기존 고객은 노드당 현재 가격 책정 모델을 계속 사용할 수 있습니다.</em> 대부분의 경우 Operations Management Suite 라이선스 고객은 새 가격 책정 모델로 이동하는 대신 해당 자격을 활용하기 위해 노드당 가격 책정 모델에 남아 있어야 합니다. 올바른 모델을 선택하는 방법에 대한 자세한 지침은 <a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs#new-pricing-model">설명서 페이지를 참조하세요</a>.</p>
+
+
+  <p>새로운 가격 책정 모델은 현재 모든 고객이 사용할 수 있습니다. 이러한 변경 내용 중 상당수는 Microsoft와 커뮤니티 간의 공동 작업의 직접적인 결과입니다. 인프라, 애플리케이션 및 네트워크를 포괄하는 Azure에서 모니터링을 빌드하기 위해 협력하는 지속적인 피드백에 감사드립니다.</p>
+
+
+  <p>업데이트된 <a href="https://azure.com/e/62d7295ef8a944a58d1c32aa2227660a" target="_blank">가격 계산기</a> 또는 <a href="https://azure.microsoft.com/en-us/pricing/details/log-analytics/" target="_blank">Log Analytics</a>, <a href="https://azure.microsoft.com/en-us/pricing/details/network-watcher/" target="_blank">Network Watcher</a>, <a href="https://azure.microsoft.com/en-us/pricing/details/monitor/" target="_blank">Azure Monitor</a> 및 <a href="https://azure.microsoft.com/en-us/pricing/details/application-insights/" target="_blank">애플리케이션 Insights</a> 대한 개별 제품 가격 책정 페이지를 방문하여 새 가격 책정 모델에 대해 자세히 알아봅니다.&nbsp;</p>
+
+
+  <p>데이터 수집 관리에 대한 지침은 <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-manage-cost-storage" target="_blank">Log Analytics</a> 및 <a href="https://docs.microsoft.com/en-us/azure/application-insights/app-insights-pricing" target="_blank">애플리케이션 Insights</a> 대한 설명서 페이지를 참조하세요. Azure Backup, Azure Security Center 및 Azure Site Recovery를 포함한 <a href="https://azure.microsoft.com/en-us/services/virtual-machines/secure-well-managed-iaas/" target="_blank">Azure 보안 및 관리 포트폴리오</a> 의 다른 모든 서비스에 대한 가격 책정은 동일하게 유지됩니다.</p>

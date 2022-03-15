@@ -1,0 +1,249 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8953299350c473c53b9a8b57ade646760cb7e93d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898543"
+Slug: monitoring-on-azure-hdinsight-part-2-cluster-health-and-availability
+Title: 'Azure HDInsight 모니터링 2부: 클러스터 상태 및 가용성'
+Summary: '고가용성 서비스인 Azure HDInsight는 클러스터의 가용성에 대해 걱정하지 않고 워크로드에 초점을 맞춘 시간을 보낼 수 있도록 합니다. '
+Content: >-
+  <p><em>Azure HDInsight의 모니터링에 대한 4부로 구성된 시리즈의 두 번째 블로그 게시물입니다. &quot;<a href="https://azure.microsoft.com/en-in/blog/monitoring-on-hdinsight-part-1-an-overview/">Azure HDInsight 1부 모니터링: 개요</a>&quot; 에서는 클러스터 상태 및 가용성, 리소스 사용률 및 성능, 작업 상태 및 로그의 세 가지 주요 모니터링 범주에 대해 설명합니다. 이 블로그에서는 이러한 항목 중 첫 번째 항목, 클러스터 상태 및 가용성에 대해 자세히 설명합니다.</em></p>
+
+
+  <hr>
+
+  <p>고가용성 서비스인 Azure HDInsight는 클러스터의 가용성에 대해 걱정하지 않고 워크로드에 초점을 맞춘 시간을 보낼 수 있도록 합니다. 이를 위해 HDInsight 클러스터에는 두 개의 헤드 노드, 2개의 게이트웨이 노드 및 3개의 ZooKeeper 노드가 장착되어 클러스터에 대한 단일 실패 지점이 없는지 확인합니다. 그럼에도 불구하고 Azure HDInsight는 클러스터 노드의 상태와 클러스터&rsquo; 노드에서 실행되는 구성 요소를 종합적으로 모니터링하는 여러 가지 방법을 제공합니다. HDInsight 클러스터에는 한눈에 상태 정보 및 미리 정의된 경고를 제공하는 Apache Ambari와 구성 가능한 경고뿐만 아니라 메트릭 및 로그를 쿼리할 수 있는 Azure Monitor 로그 통합이 모두 포함됩니다.</p>
+
+
+  <h2>Apache Ambari&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+
+
+  <p>모든 HDInsight 클러스터에 포함된 Apache Ambari는 사용하기 쉬운 웹 UI 및 REST API를 통해 클러스터 관리 및 모니터링 클러스터를 간소화합니다. 현재 Ambari는 단일 HDInsight 클러스터의 상태 및 가용성을 심층적으로 모니터링하는 가장 좋은 방법입니다.</p>
+
+
+  <h3>대시보드</h3>
+
+
+  <p>Ambari 대시보드에는 HDInsight 클러스터&rsquo; 상태에 대한 빠른 개요를 제공하는 몇 가지 메트릭을 보여 주는 위젯이 포함되어 있습니다. 이러한 위젯은 라이브 DataNodes(작업자 노드), JournalNodes(ZooKeeper 노드), NameNode(헤드 노드) 가동 시간 등의 메트릭뿐만 아니라 Spark 및 Hadoop 클러스터에 대한 YARN ResourceManager 가동 시간과 같은 특정 클러스터 유형과 관련된 메트릭을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15bf1078-8b0b-41e0-8648-3c5e6929d4d3.png"><img alt="ambari_dashboard" border="0" height="817" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e6c3e495-9551-4ff8-9cd2-a4d995b6561b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ambari_dashboard" width="1174"></a></p>
+
+
+  <p align="center"><em>모든 Azure HDInsight 클러스터에 포함된 Ambari 대시보드입니다.</em></p>
+
+
+  <h3>&ndash; 호스트 개별 노드 상태 보기</h3>
+
+
+  <p>호스트 탭을 사용하면 클러스터의 개별 노드에 대한 상태 정보를 자세히 드릴다운하고 볼 수 있습니다. 현재 노드에 대한 활성 경고가 있는지 여부와 노드에서 실행되는 각 개별 구성 요소의 상태/가용성을 보여 주는 보기를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/104d195d-7a42-4bd6-a736-3e95b7921e2d.png"><img alt="ambari_hosts" border="0" height="884" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/055dd39f-382d-49f6-b759-fdbeac56086d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ambari_hosts" width="1160"></a></p>
+
+
+  <p align="center"><em>Ambari 호스트 보기에는 클러스터의 개별 노드에 대한 자세한 상태 정보가 표시됩니다.</em></p>
+
+
+  <h3>Ambari 경고</h3>
+
+
+  <p>또한 Ambari는 특정 이벤트에 대한 알림을 제공할 수 있는 몇 가지 구성 가능한 경고를 제공합니다. 현재 활성 경고의 수는 경고 수가 포함된 빨간색 배지로 Ambari의 왼쪽 위 모서리에 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a4edd111-73b7-408f-aba0-adcf93ba139b.png"><img alt="ambari_alerts" border="0" height="76" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9c37a47-391d-4712-b229-59f53ebd6254.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ambari_alerts" width="618"></a></p>
+
+
+  <p>Ambari는 다음을 포함하여 가용성과 관련된 미리 정의된 많은 경고를 제공합니다.</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="width: 312px;">
+     <p><strong>경고 이름</strong></p>
+     </td>
+     <td style="width: 312px;">
+     <p><strong>설명</strong></p>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 312px;">
+     <p>DataNode 상태 요약</p>
+     </td>
+     <td style="width: 312px;">
+     <p>이 서비스 수준 경고는 비정상 DataNode가 있는 경우 트리거됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 312px;">
+     <p>NameNode 고가용성 상태</p>
+     </td>
+     <td style="width: 312px;">
+     <p>이 서비스 수준 경고는 Active NameNode 또는 Standby NameNode가 실행되고 있지 않은 경우 트리거됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 312px;">
+     <p>사용 가능한 JournalNodes 백분율</p>
+     </td>
+     <td style="width: 312px;">
+     <p>이 경고는 클러스터에서 다운된 JournalNodes 수가 구성된 위험 임계값을 초과하는 경우 트리거됩니다. JournalNode 프로세스 검사 결과를 집계합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 312px;">
+     <p>사용 가능한 DataNodes 백분율</p>
+     </td>
+     <td style="width: 312px;">
+     <p>이 경고는 클러스터에서 다운된 DataNodes 수가 구성된 위험 임계값을 초과하는 경우에 트리거됩니다. DataNode 프로세스 검사 결과를 집계합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>클러스터의 가용성을 모니터링하는 데 도움이 되는 Ambari 경고의 전체 목록은 <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-high-availability-linux?toc=%2Fen-us%2Fazure%2Fhdinsight%2Fkafka%2FTOC.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json#ambari-web-ui" target="_blank">HDInsight의 Apache Hadoop 클러스터의 가용성 및 안정성</a> 설명서 &ldquo; 에서 찾을 수 있습니다.&rdquo;</p>
+
+
+  <p>각 경고에 대한 자세한 보기에는 경고에 대한 설명, 경고 또는 중요 경고를 트리거하는 특정 조건 또는 임계값, 조건에 대한 확인 간격이 표시됩니다. 임계값 및 검사 간격은 개별 경고에 대해 구성할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/49bf8623-5e1d-475f-bdbf-baaa8a868f7f.png"><img alt="ambari_alerts_detail" border="0" height="863" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1c633c8d-e1b8-47d6-9e96-4f9949c7a39d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ambari_alerts_detail" width="1185"></a></p>
+
+
+  <p align="center"><em>Ambari 상세 경고 보기는 경고에 대한 설명과 경고가 실행될 수 있는 검사 간격 및 임계값을 보여줍니다.</em></p>
+
+
+  <h3>전자 메일 알림</h3>
+
+
+  <p>또한 Ambari는 이메일 알림 구성을 지원합니다. Ambari 전자 메일 알림은 많은 HDInsight 클러스터를 관리할 때 경고를 모니터링하는 좋은 방법이 될 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d6d9c3af-d7df-476d-b968-4f2d687403f1.png"><img alt="ambari_email" border="0" height="314" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/177ecf69-f5a9-4ed7-8285-256d98ead353.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ambari_email" width="1677"></a></p>
+
+
+  <p align="center"><em>Ambari 전자 메일 알림을 구성하는 것은 클러스터에 대한 경고를 알리는 유용한 방법이 될 수 있습니다.</em></p>
+
+
+  <h2>Azure Monitor 로그 통합</h2>
+
+
+  <p>Azure Monitor 로그를 사용하면 HDInsight 클러스터와 같은 여러 리소스에서 생성된 데이터를 한 곳에서 수집 및 집계하여 통합 모니터링 환경을 구현할 수 있습니다.</p>
+
+
+  <p>필수 조건으로 수집된 데이터를 저장하려면 Log Analytics 작업 영역이 필요합니다. 아직 만들지 않은 경우 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/learn/quick-create-workspace" target="_blank">Log Analytics 작업 영역을 만들기</a> 위한 지침을 따를 수 있습니다.</p>
+
+
+  <p>그런 다음, Spark/Hadoop 클러스터에 대한 YARN ResourceManager 정보, Broker 토픽 및 Kafka 클러스터에 대한 컨트롤러 메트릭과 같은 많은 워크로드별 메트릭을 Log Analytics에 보내도록 HDInsight 클러스터를 쉽게 구성할 수 있습니다. 동일한 Log Analytics 작업 영역에 메트릭을 보내도록 여러 HDInsight 클러스터를 구성하여 모든 클러스터를 한 곳에서 모니터링할 수도 있습니다. Azure Monitor 로그를 사용하여 HDInsight 클러스터를 모니터링하는 방법에 대한 설명서를 방문하여 <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-oms-log-analytics-tutorial#enable-azure-monitor-logs-by-using-the-portal">HDInsight 클러스터에서 Azure Monitor 로그 통합을</a> 사용하도록 설정하는 방법을 알아보세요.</p>
+
+
+  <h3>로그 블레이드에서 메트릭 테이블 쿼리</h3>
+
+
+  <p>몇 분 정도 걸릴 수 있는 Log Analytics 통합을 사용하도록 설정하면 로그/메트릭 테이블 쿼리를 시작할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c80a24a9-aa1c-4302-8bb7-3e570ce2b531.png"><img alt="la_logs" border="0" height="745" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d3ba7c52-d139-4ee9-9f4f-71e1a3096a0d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="la_logs" width="1425"></a></p>
+
+
+  <p align="center"><em>Log Analytics 작업 영역의 로그 블레이드를 사용하면 여러 클러스터에서 수집된 메트릭 및 로그를 쿼리할 수 있습니다.</em></p>
+
+
+  <p>Log Analytics 작업 영역의 로그 블레이드에 있는 컴퓨터 가용성 탭에는 다음과 같은 가용성과 관련된 여러 샘플 쿼리가 나열됩니다.</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="width: 312px;">
+     <p><strong>쿼리 이름</strong></p>
+     </td>
+     <td style="width: 312px;">
+     <p><strong>설명</strong></p>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 312px;">
+     <p>오늘의 컴퓨터 가용성</p>
+     </td>
+     <td style="width: 312px;">
+     <p>매시간 로그를 보내는 컴퓨터 수를 차트로 표시합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 312px;">
+     <p>하트비트 목록</p>
+     </td>
+     <td style="width: 312px;">
+     <p>지난 1시간 동안의 모든 컴퓨터 하트비트를 나열합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 312px;">
+     <p>각 컴퓨터의 마지막 하트비트</p>
+     </td>
+     <td style="width: 312px;">
+     <p>각 컴퓨터에서 보낸 마지막 하트비트를 표시합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 312px;">
+     <p>사용할 수 없는 컴퓨터</p>
+     </td>
+     <td style="width: 312px;">
+     <p>지난 5시간 동안 하트비트를 보내지&#39;알려진 모든 컴퓨터를 나열합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="width: 312px;">
+     <p>가용성 비율</p>
+     </td>
+     <td style="width: 312px;">
+     <p>연결된 각 컴퓨터의 가용성 속도를 계산합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h3>Azure Monitor 경고</h3>
+
+
+  <p>메트릭 값 또는 쿼리 결과가 특정 조건을 충족할 때 트리거되는 Azure Monitor 경고를 설정할 수 있습니다.</p>
+
+
+  <p>일부 임계값보다 크거나 작은 값으로 레코드를 반환하는 쿼리 또는 쿼리에서 반환된 결과 수에 대해 조건을 지정할 수 있습니다. 예를 들어 하나 이상의 노드가 1시간 안에 하트비트를 보내지 않은&rsquo; 경우(즉, 사용할 수 없는 것으로 추정됨) 이메일을 보내는 경고를 만들 수 있습니다. 경고를 발생시키기 위해 충족해야 하는 여러 조건을 만들 수 있습니다.</p>
+
+
+  <p>경고가 발생할 때 트리거하도록 선택할 수 있는 몇 가지 유형의 작업(예: 이메일, SMS, 푸시, 음성, Azure 함수, LogicApp, 웹후크, ITSM 또는 Automation Runbook)이 있습니다. 단일 경고에 대해 여러 작업을 설정할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups#action-specific-information" target="_blank">Azure Portal에서 작업 그룹 만들기 및 관리</a> 설명서를 &ldquo; 방문하여 이러한 다양한 유형의 작업에 대한 자세한 정보를 확인하세요.&rdquo;</p>
+
+
+  <p>마지막으로, 이름 외에 경고의 심각도를 지정할 수 있습니다. 심각도를 지정하는 기능은 여러 경고를 만들 때 사용할 수 있는 강력한 도구입니다. 예를 들어 단일 헤드 노드를 사용할 수 없게 되면 경고(Sev 1) 경고를 발생시키고, 두 헤드 노드가 모두 다운되는 경우 위험(Sev 0) 경고를 발생시키는 또 다른 경고를 발생시킬 수 있습니다. 경고는 나중에 볼 때 심각도별로 그룹화할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e862a1e4-6411-4954-a95a-27b7e3cb7ce9.png"><img alt="la_alerts" border="0" height="1558" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe4c692d-a584-4481-b17a-adc3f06b68a7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="la_alerts" width="1426"></a></p>
+
+
+  <p align="center"><em>Azure Monitor 경고는 특정 이벤트에 대한 경고를 수신하는 매우 사용자 지정 가능한 방법입니다.</em></p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>고가용성을 위해 설계된 HDInsights&rsquo; 중복 아키텍처는 단일 오류가 클러스터의 기능에 영향을 주지 않는다는 것을 의미하지만, HDInsight는 항상 잠재적인 가용성 문제에 대한 정보를 제공하므로 초기에 완화할 수 있습니다. Azure Monitor 로그 통합을 사용하는 Apache Ambari와 Azure Log Analytics 통합을 사용하는 Apache Ambari 간에 Azure HDInight는 클러스터를 심층적으로 모니터링하거나 여러 클러스터를 한눈에 모니터링하는 포괄적인 솔루션을 제공합니다. <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-cluster-availability" target="_blank">Ambari 및 Azure Monitor 로그를 사용하여 클러스터 가용성을 모니터링하는 방법</a> 설명서 &ldquo; 에서 자세한 내용을 확인하고 구체적인 예제를 확인할 수 있습니다.&rdquo;</p>
+
+
+  <h2>지금 HDInsight 사용해 보기</h2>
+
+
+  <p>HDInsight에서 모니터링을 최대한 활용할 수 있기를 바랍니다. Azure HDInsight를 사용하여 빌드할 항목을 확인하게 되어 기쁩니다. <a href="https://azure.microsoft.com/en-us/blog/get-up-to-speed-with-azure-hdinsight-the-comprehensive-guide/" target="_blank">이 개발자 가이드를 읽고</a> <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-linux-tutorial-get-started" target="_blank">빠른 시작 가이드</a> 에 따라 Azure HDInsight에서 이러한 파이프라인 및 아키텍처를 구현하는 방법에 대해 자세히 알아보세요. Twitter <a href="https://twitter.com/search?q=%23AzureHDInsight&amp;src=typd" target="_blank">#AzureHDInsight</a> 및 에서 팔로우하여 최신 Azure HDInsight 뉴스 및 <a href="https://twitter.com/search?q=%40AzureHDInsight&amp;src=typd" target="_blank">@AzureHDInsight</a>기능을 최신 상태로 유지하세요. 질문과 피드백을 보려면 문의하세요 <a>AskHDInsight@microsoft.com</a>.</p>
+
+
+  <h2>HDInsight 정보</h2>
+
+
+  <p>Azure HDInsight는 고객이 Apache Hadoop, Spark, Kafka 등을 비롯한 인기 있는 오픈 소스 프레임워크를 쉽게 실행할 수 있도록 하는 오픈 소스 분석을 위한 쉽고 비용 효율적인 엔터프라이즈급 서비스입니다. 이 서비스는 36개 공용 지역 및 Azure Government 및 국가별 클라우드에서 사용할 수 있습니다. Azure HDInsight는 다양한 분야에서 중요 업무용 애플리케이션을 지원하며 ETL, 스트리밍 및 대화형 쿼리를 비롯한 광범위한 사용 사례를 지원합니다.</p>

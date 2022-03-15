@@ -1,0 +1,152 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cc96ca12158ca48e88ae2cb6eee9ba8c772349d3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898255"
+Slug: optimize-database-performance-using-index-advisor-7
+Title: 인덱스 관리자를 사용하여 Azure SQL 데이터베이스의 성능 향상
+Summary: Index Advisor는 데이터베이스 인덱스 디자인 및 레이아웃을 최적화하여 데이터베이스의 성능을 개선하는 데 도움이 되는 새로운 Azure SQL Database 기능입니다.
+Content: >-
+  <p>Index Advisor는 데이터베이스 인덱스 디자인 및 레이아웃을 최적화하여 데이터베이스의 성능을 개선하는 데 도움이 되는 새로운 Azure SQL Database 기능입니다.</p>
+
+
+  <p>인덱스 관리자를 사용하면 분석 및 최적화를 직접 수행하는 데 많은 시간과 노력을 들이지 않고도 주요 쿼리에 대한 성능을 향상시키고 데이터베이스의 전체 DTU 사용률을 줄일 수 있습니다.</p>
+
+
+  <h2><a><font color="#000000">Index Advisor는 어떻게 작동하나요?</font></a></h2>
+
+
+  <p>Index Advisor는 데이터베이스 워크로드를 지속적으로 모니터링하고, 분석을 수행하고, DB 성능을 더욱 향상시킬 수 있는 새 인덱스를 권장합니다.</p>
+
+
+  <ul>
+   <li>권장 사항 항상 최신 상태로 유지됩니다. DB 워크로드 및 스키마가 발전함에 따라 Index Advisor는 변경 내용을 모니터링하고 그에 따라 권장 사항을 조정합니다.</li>
+   <li>각 권장 사항은 DB 워크로드 성능에 미치는 예상 영향과 함께 제공됩니다. 먼저 이 정보를 사용하여 가장 영향력 있는 권장 사항의 우선 순위를 지정할 수 있습니다.</li>
+  </ul>
+
+
+  <p>또한 Index Advisor는 권장 인덱스를 만드는 매우 쉽고 강력한 방법을 제공합니다.</p>
+
+
+  <ul>
+   <li>새 인덱스를 만들려면 몇 번의 클릭만 필요합니다.</li>
+   <li>인덱스 관리자는 새로 만든 인덱스의 영향을 측정하고 사용자에게 인덱스 영향에 대한 보고서를 제공합니다.</li>
+  </ul>
+
+
+  <p>다음 간단한 단계를 사용하여 Index Advisor를 시작하고 데이터베이스 성능을 향상시킬 수 있습니다. 인덱스 관리자&rsquo;의 간단하고 직관적인 사용자 인터페이스에 익숙해지려면 문자 그대로 5분이 걸립니다. 이제 시작해 보겠습니다.</p>
+
+
+  <h2><a><font color="#000000">1단계: Index Advisor 미리 보기에 등록</font></a></h2>
+
+
+  <p>Index Advisor 미리 보기에 등록하는 것은 매우 쉽고 빠릅니다.</p>
+
+
+  <ul>
+   <li><a href="https://portal.azure.com/">Azure Portal</a>에서 데이터베이스 블레이드로 이동합니다.</li>
+   <li>데이터베이스 블레이드에서 인덱스 관리자 파트를 찾습니다(찾으려면 아래로 스크롤해야 할 수 있음).</li>
+   <li>등록 대화 상자를 열려면 클릭합니다.</li>
+   <li>미리 보기 조건에 동의하려면 확인란을 선택하고 확인을 클릭합니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/55de7f7c-ec9a-4b9c-9ac5-e75e98c3d2f9.png"><img alt="Improve the performance of your Azure SQL Databases using Index Advisor" border="0" height="440" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6c708e0a-2260-495d-8e73-1c2852f82aed.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="그림 1 - 인덱스 관리자에 등록" width="484"></a></p>
+
+
+  <p>이제 Index Advisor에 등록되었습니다. 사용 중인 각 Azure 구독에 대해 한 번만 등록하면 됩니다. &rsquo;이 구독의 모든 DB에 대해 인덱스 권장 사항을 즉시 사용할 수 있게 됩니다.</p>
+
+
+  <h2>2단계: 권장 인덱스 검토</h2>
+
+
+  <p>Index Advisor 미리 보기에 등록한 후 데이터베이스 블레이드의 <a><font color="#000000">Index Advisor 파트</font></a><font color="#000000">에 이 데이터베이스에 대한 새 인덱스 권장 사항이 있는지 표시됩니다. </font> 인덱스 관리자 부분을 클릭하면 <font color="#000000">인덱</font>스 <font color="#000000">관리자 </font> 주 블레이드가 <a><font color="#000000">열립니다</font></a>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5550ae38-caa8-43e0-801e-5416ceb64a2c.png"><img alt="Improve the performance of your Azure SQL Databases using Index Advisor" border="0" height="338" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/96ae71f2-c35d-4e9b-b669-5d0f83bc4084.png" style="border-width: 0px; margin: 0px auto; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: none; display: block; background-image: none;" title="사진 2 - 인덱스 관리자 기본 블레이드" width="614"></a></p>
+
+
+  <p>인덱스 관리자의 주 블레이드<font color="#000000"> 는 </font><a><font color="#000000">두 부분으로 분할됩니다</font></a><font color="#000000">.</font> 블레이드의 위쪽 부분에는 이 데이터베이스에 권장되는 인덱스가 포함되며, 아래쪽 부분은 인덱스 관리자에 대한 진행 중이고 완료된 인덱싱 작업의 로그입니다(블레이드를 처음 열 때 비어 있음).</p>
+
+
+  <p>권장 인덱스는 워크로드 성능에 미치는 예상 영향을 기준으로 정렬됩니다. 권장되는 인덱스를 클릭하여 권장 사항 세부 정보를 봅니다.</p>
+
+
+  <h2>3단계: 인덱스 세부 정보를 검토하고 권장 인덱스 만들기</h2>
+
+
+  <p>인덱스 세부 정보 블레이드는 인덱스에 포함될 정확한 열과 생성 후 예상 인덱스 크기를 포함하여 권장되는 인덱스에 대한 세부 정보를 보여 줍니다. 스크립트 보기&rdquo; 단추를 클릭하여 인덱스용 Transact-SQL 스크립트를 &ldquo;볼 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/74b41954-c49c-4e1d-a4c0-ba06a3d2a585.png"><img alt="Improve the performance of your Azure SQL Databases using Index Advisor" border="0" height="414" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/846411f7-8ce7-4584-a97a-009904682ce6.png" style="border-width: 0px; margin: 0px auto; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: none; display: block; background-image: none;" title="그림 3 - 인덱스 세부 정보 블레이드 및 인덱스 만들기 단추" width="614"></a></p>
+
+
+  <p>인덱스 관리자를 사용하면 인덱스 만들기를 클릭하여 권장 인덱스를 만들 수 있습니다 &ldquo;.&rdquo; 이렇게 하면 다음과 같은 오케스트레이션된 인덱스 만들기 워크플로가 시작됩니다.</p>
+
+
+  <ol>
+   <li>워크로드 성능의 기준을 수집합니다.</li>
+   <li><font color="#000000">인덱스 만들기</font></li>
+   <li><a><font color="#000000">워크로드 성능을 측정하고 인덱스가 생성되기 전의 기준 성능과 비교하여 인덱스 영향의 유효성을 검사</font></a>합니다.</li>
+   <li>인덱스가 성능에 부정적인 영향을 미치는 경우 Index Advisor는 자동화된 되돌리기 작업을 수행합니다.</li>
+  </ol>
+
+
+  <p>볼 수 있듯이 인덱스 관리자는 인덱스 생성과 관련된 모든 작업을 수행하며 시간이 지남에 따라 워크로드 성능이 향상될 수 있다는 것을 안심할 수 있습니다.</p>
+
+
+  <p>#1 및 #3 단계는 완료하는 데 다소 시간이 걸리므로(일반적으로 &lt;1일) 종단 간 인덱스 만들기 워크플로를 완료하는 데는 일반적으로 약 2일이 걸리지만 완전히 자동화되며 감독할 필요가 없습니다.</p>
+
+
+  <p>Index Advisor는 모든 작업을 <a href="https://msdn.microsoft.com/en-us/library/ms191261.aspx">ONLINE 작업</a>으로 수행하므로 데이터베이스를 항상 사용할 수 있습니다.</p>
+
+
+  <h2>4단계: 생성된 인덱스에 대한 인덱스 영향 보고서 검토</h2>
+
+
+  <p>인덱스가 성공적으로 만들어지면 작업 로그에서 인덱스 항목을 클릭하여 인덱스 영향에 대한 보고서에 액세스할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eae61ee1-5a22-4b3d-9541-63aecb03acf4.png"><img alt="Improve the performance of your Azure SQL Databases using Index Advisor" border="0" height="455" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/32138696-fa8a-4ab6-a649-c5a28390ce75.png" style="border-width: 0px; margin: 0px auto; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: none; display: block; background-image: none;" title="그림 4 - 작업 로그 및 인덱스 영향 보고서" width="614"></a>&nbsp;</p>
+
+
+  <p>이 예제에서는 새로 만든 인덱스가 데이터베이스에 대한 전체 DTU 사용률을 42% 감소시켜 워크로드 처리량(및 쿼리 대기 시간도 가능)을 크게 개선했음을 확인할 수 있습니다. 또한 성능이 향상된 두 개의 쿼리가 있었고 성능이 저하된 쿼리가 없음을 확인할 수 있습니다. <a><font color="#000000"> 따라서 이 인덱스를 유지하는 것이 좋습니다(하지만 원하는 경우 새 인덱스를 수동으로 되돌릴 수 있는 옵션이 여전히 있을 수 있음). </font></a></p>
+
+
+  <h2><font color="#000000">&rsquo;내 DB &ndash; 에 사용할 수 있는 인덱스 권장 사항이 없습니다.</font></h2>
+
+
+  <p><font color="#000000"> 지정된 시간에 DB에 대한 </font> <a><font color="#000000">인덱스 권장 사항이 없는 몇 가지 이유가 있습니다</font></a>.</p>
+
+
+  <ul>
+   <li><font color="#000000">이 DB에 대한 높은 신뢰도 인덱스 권장 사항을 제공하기에는 사용 기록이 충분하지 않습니다&rsquo;. 이는 일반적으로 DB가 최근에 만들어졌거나 잠시 동안 적극적으로 사용되지 않는 경우에&rsquo; 발생합니다.</font></li>
+   <li><font color="#000000">문제의 DB는 최근에 데이터베이스 스키마 및/또는 쿼리 워크로드에 상당한 변화가 있었습니다. 이 DB에 대한 높은 신뢰도 인덱싱 권장 사항을 제공하려면 추가 관찰 시간이 필요합니다.</font></li>
+   <li><a><font color="#000000">인덱스 관리자에는 DB 성능을 크게 향상시키는 인덱스가 표시되지 않습니다&rsquo;. </font></a> <font color="#000000">이는 일반적으로 현재 이 DB에 필요한 모든 인덱스가 이미 있음을 의미</font>합니다.</li>
+  </ul>
+
+
+  <p><font color="#000000">낙담할 이유가 없습니다. 인덱스 관리자는 데이터베이스를 계속 모니터링하고 새로운 권장 사항이 있는 경우 알려 줍니다.</font></p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Index Advisor를 사용하여 데이터베이스의 성능을 개선하는 것이 얼마나 쉬운지 확인했습니다.</p>
+
+
+  <ul>
+   <li>관찰된 워크로드에 따라 데이터베이스에 대한 인덱스 권장 사항을 제공합니다.</li>
+   <li>워크로드 성능 기반 라이닝, 인덱스 영향 측정 및 자동 롤백(필요한 경우)을 수행하여 권장 인덱스를 쉽게 구현할 수 있는 방법을 제공합니다.</li>
+  </ul>
+
+
+  <p><b></b><b>오늘 Try Index Advisor를 사용하여 인덱스 관리자</b> 기본 블레이드의 피드백 단추를 사용하여 <b>피드백을 공유하세요</b>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fc7f003a-dc80-4973-9f1f-aa4ece83ae5c.png"><img alt="Improve the performance of your Azure SQL Databases using Index Advisor" border="0" height="186" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c251062-3702-42cd-85e4-38404f77acf1.png" style="border-width: 0px; margin: 0px auto; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: none; display: block; background-image: none;" title="그림 5 - 피드백 단추" width="305"></a></p>
+
+
+  <p>인덱스 관리자에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-index-advisor/">온라인 설명서</a> 및 <a href="https://channel9.msdn.com/Shows/Data-Exposed/Azure-SQL-DB-Index-Advisor">Channel 9 비디오 및 토론을</a> 확인하세요.</p>

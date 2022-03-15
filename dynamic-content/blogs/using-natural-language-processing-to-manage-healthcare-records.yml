@@ -1,0 +1,71 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 653003d7acb3b606131411e0414ce99adf2bf1b4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903441"
+Slug: using-natural-language-processing-to-manage-healthcare-records
+Title: 자연어 처리를 사용하여 의료 기록 관리
+Summary: 다음에 의사를 볼 때 종이 양식을 작성하는 시간을 고려하십시오. 그것은 사소한 보일 수 있습니다., 하지만 정보는 더 나은 진단을 만들기 위해 중요 한 수 있습니다. 이제 여러분의 삶에 스며들어 있는 다른 형태의 의료 데이터와 환자 번영을 위해 일하는 의사, 간호사 및 임상의를 고려합니다.
+Content: >-
+  <p>다음에 의사를 볼 때 종이 양식을 작성하는 시간을 고려하십시오. 그것은 사소한 보일 수 있습니다., 하지만 정보는 더 나은 진단을 만들기 위해 중요 한 수 있습니다. 이제 당신의 생명&mdash;에 스며드는 다른 형태의 의료 데이터를 고려하고 의사, 간호사 및 임상의가 환자가 번성할 수 있도록 노력합니다. 양식 및 진단 보고서는 두 가지 예에 불과합니다. 이러한 정보의 양이 엄청나지만 이 데이터를 완전히 활용하는 것은 의료 비용을 절감하고 환자 결과 및 기타 의료 우선 순위를 개선하는 데 핵심입니다. 이제 AI(인공 지능)를 사용하여 상황을 도울 수 있다고 상상해 보십시오.</p>
+
+
+  <p><em>Azure 플랫폼은 파트너가 산업 솔루션을 향상, 확장 및 빌드할 수 있는 다양한 서비스를 제공합니다. 여기서는 의료 분야에 중점을 둔 Microsoft 파트너 SyTrue가 Azure를 사용하여 의료 조직이 효율성을 개선하고 비용을 절감하며 환자 결과를 개선할 수 있도록 하는 방법을 설명합니다.</em></p>
+
+
+  <h2>수십억 개의 레코드</h2>
+
+
+  <p>중요한 인사이트는 사람이 읽을 수 있지만 필요한 자동화 및 분석에 큰 장애물을 제공하는 PDF 형식의 스캔된 문서와 같은 구조화되지 않은 의료 기록에 잠겨 있습니다. 매년 40억 개 이상의 의료 메모가 만들어집니다. 이러한 레코드 내에서 구현된 임상 및 재무 인사이트는 레코드 생성의 평균 20개 이상의 역할 및 프로세스 다운스트림에 필요합니다. 현재 의료 서비스 제공자와 지불인은 매일 생성되는 임상 문서의 홍수에서 의료 데이터를 읽고, 이해하고, 추출하는 전문가 군대를 요구합니다. 그러나 성공은 어려웠습니다.</p>
+
+
+  <p>그것은 시도의 부족에 대 한&#39;. 지난 10년 동안 EHR(전자 건강 기록) 시스템에 데이터를 축적하고 업로드하기 위한 노력이 이루어졌습니다. <a href="https://www.cdc.gov/ehrmeaningfuluse/introduction.html" target="_blank">의미 있는 사용</a> 은 하드 카피 제출 시스템에서 전자 건강 기록으로의 이동을 가속화하는 것을 목표로하는 정부 주도의 인센티브 프로그램입니다. 여전히 문제는 볼륨과 대량의 데이터를 동화시키는 시간과 리소스의 부족과 관련이 있습니다.</p>
+
+
+  <p><strong>참고:</strong> 의미 있는 사용 프로그램에는 여러 가지 목표가 있습니다. 중요한 것은 &ldquo;개인 건강 정보에 대한 적절한 개인 정보 보호 및 보안 보호입니다.&rdquo; 데이터 보안은 Azure 서비스의 주요 가치입니다. Azure SQL Database 같은 데이터 서비스는 미사용 및 전송 중인 데이터를 암호화합니다.</p>
+
+
+  <h2>의료에 바늘 이동</h2>
+
+
+  <p>이 노력만큼 비용이 많이 들고 광범위했던 것처럼, 많은 사람들은 의료 데이터의 디지털화에서 치료의 품질이나 비용에 이르기까지 중요한 영향의 증거를 아직 보지 못했다고 믿습니다. 이를 근본적으로 개선하는 한 가지 방법은 특히 NLP(자연어 처리)&mdash;에 AI를 사용하여 문서 읽기를 자동화하는 것입니다. 이를 통해 후속 분석을 통해 문서의 산에서 의료 전문가까지 거의 실시간으로 가장 관련성이 높은 실행 가능한 정보를 얻을 수 있습니다. 이를 통해 더 낮은 비용으로 더 나은 품질의 치료를 보다 효율적으로 제공할 수 있습니다.</p>
+
+
+  <h2>예제</h2>
+
+
+  <p>Microsoft 파트너인 <a href="https://sytrue.com/" target="_blank">SyTrue</a> 가 선두를 달리고 있습니다. SyTrue의 창립자이자 CEO인 카일 실베스트로(Kyle Silvestro &ldquo;)의 말에 따르면, 다음으로 큰 과제는 이 방대한 누적 환자 데이터 풀에 서비스 가능한 방식으로 액세스하는 것입니다. Weve&rsquo;는 의료 설명서를 실행 가능한 정보로 변환하는 플랫폼을 만들었습니다. 초점은 속도, 컨텍스트 및 적응성의 세 가지 주요 기능에 있습니다. 우리의 기술은 몇 초 안에 천 페이지로 된 의료 기록을 소비합니다. 이 혁신은 여러 유형의 임상 및 금융 의료 조직에서 데이터를 수집할 수 있는 정보 모델을 기반으로 합니다. 이를 통해 다양한 의료 관련자가 이 시스템을 사용할 수 있습니다. 이 기술의 주요 목표는 폐기물을 줄이고 임상 결과를 개선하기 위해 의료 이해 관계자에게 주요 임상 및 재무 인사이트를 제시하는 것입니다.&rdquo;</p>
+
+
+  <h2>자연어 처리 및 기계 학습으로 정보 제공</h2>
+
+
+  <p>SyTrue는 NLP 및 기계 학습(ML)을 기본 기술로 사용합니다. 자체 소유 메서드를 사용하여 컨텍스트 기반 정보 추출을 수행 &ldquo;합니다.&rdquo; 즉, 점을 연결합니다. 아래 그래픽은 해당 프로세스를 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/45004237-11d0-47c0-a4c5-181d6ed94f8d.png"><img alt="Diagram displaying context-driven information extraction" border="0" height="469" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/56582596-4492-4dcf-878d-5184d233a0c9.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="컨텍스트 기반 정보 추출" width="1114"></a></p>
+
+
+  <h2>의료 개선</h2>
+
+
+  <p>SyTrues&rsquo;는 의료를 위한 <a href="https://sytrue.com/nlp-os-healthcare/" target="_blank">NLP OS(운영 체제)</a> 를 제공합니다. 그것은 여러 가지 방법으로 도움이 됩니다.</p>
+
+
+  <ul>
+      <li>의료 기록의 잠금을 해제하고 의료 전문가가 의료 기록 데이터 및 임상 및 재정적 영향과 상호 작용할 수 있습니다. 특히, 전문가가 동일한 주요 관찰을 사냥할 필요가 없습니다. 이를 통해 전문가는 환자 치료에 더 많은 시간을 할애할 수 있습니다.</li>
+      <li>NLP OS는 또한 공유 환자의 치료에 관한 전문 공급자와 1 차 배려 의사 사이의 통신을 연결합니다. 이 시스템은 환자&rsquo; 치료 팀 내에서 생성된 치료 권장 사항의 연속성을 추출하고 강조합니다.</li>
+      <li>대규모 의료 조직은 SyTrue NLP OS를 통해 의료 차트 검토 프로세스의 맨 앞에 <a href="https://sytrue.com/syaudit-medical-record-audits/" target="_blank">SyAudit</a>를 설치했습니다. 차트가 간호사 검토자에게 도달하기 전에 이 솔루션을 통해 처리됩니다. 시스템은 설명서를 해석하여 간호사 검토가 실제로 필요한지 또는 설명서에 실행 가능한 정보가 없는지 확인합니다. 이로 인해 간호사 검토자가 보낸 시간이 감소할 수 있습니다.</li>
+      <li>의료 공급자는 SyTrue NLP OS에서 제공하는 또 다른 SyTrue 솔루션인 <a href="https://sytrue.com/syreview-medical-record-reviews/" target="_blank">SyReview</a>를 품질 캡처 및 보고 프로세스에 사용했습니다. 특정 프로세스는 메디케어 지불에 품질을 직접 연결하는 인센티브 프로그램과 관련이 있습니다. 품질 캡처 프로세스를 자동화하면 개선 사항을 표시하는 데 필요한 공급자에 대한 피드백 루프가 강화됩니다. 또한 조직은 느리고 비용이 많이 들며 종종 부정확한 수동 품질 캡처 프로세스를 제거했습니다.</li>
+  </ul>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>의료 업계의 Azure에 대한 자세한 내용은 <a href="https://azure.microsoft.com/industries/healthcare/?WT.mc_id=ptx-azblog-dahouldi" target="_blank">Azure for Health를</a> 참조하세요.</p>
+
+
+  <p>이 솔루션에 대해 자세히 알아보려면 <a href="https://appsource.microsoft.com/product/web-apps/sytrue.nlpos?tab=Overview" target="_blank">NLP OS&trade; for Healthcare</a> 에 대한 Azure Marketplace 목록으로 이동하여 <strong>연락처</strong>를 클릭합니다.</p>

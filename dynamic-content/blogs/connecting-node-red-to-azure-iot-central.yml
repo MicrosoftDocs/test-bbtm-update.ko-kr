@@ -1,0 +1,160 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1fb8ad92b436fda312e5c33b628884cf24ee40ad
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903029"
+Slug: connecting-node-red-to-azure-iot-central
+Title: Node-RED를 Azure IoT Central에 연결
+Summary: 오늘은 Raspberry Pi 및 Node-RED를 사용하여 온도/습도 센서를 Azure IoT Central에 연결하는 것이 얼마나 간단한지 보여주고 싶습니다.
+Content: >-
+  <p>오늘은 Raspberry Pi 및 Node-RED를 사용하여 온도/습도 센서를 Azure IoT Central에 연결하는 것이 얼마나 간단한지 보여주고 싶습니다.</p>
+
+
+  <p>많은 사람들이 알다시피, Raspberry Pi는 작은 단일 보드 컴퓨터입니다. 저비용, 저전력 특성으로 인해 IoT 프로젝트에 자연스럽게 적합합니다. Node-RED는 IoT용으로 설계된 흐름 기반 끌어서 놓기 프로그래밍 도구입니다. 이를 통해 웹 브라우저에서 강력한 자동화 흐름을 만들어 IoT 프로젝트 개발을 간소화할 수 있습니다.</p>
+
+
+  <p>예를 들어 Raspberry Pi 3 모델 B와 간단한 DHT22 온도 및 습도 센서를 사용하는 Im&rsquo;이지만 Pi의 다른 모델과 함께 작동해야 합니다. 다른 종류의 센서가 있는 경우 Node-RED를 센서에 연결할 수 있다면 아래 가이드를 사용하여 사용할 수 있어야 합니다.</p>
+
+
+  <h2>Azure IoT Central 구성</h2>
+
+
+  <ol>
+   <li>앱 만들기</li>
+   <li>새 디바이스 템플릿을 만듭니다.
+   <ul>
+    <li>Temp(temp)</li>
+    <li>습도(습도)</li>
+   </ul>
+   </li>
+   <li>실제 디바이스를 만들고 DPS 연결 정보를 가져옵니다.</li>
+   <li><a href="https://github.com/Azure/dps-keygen" target="_blank">dps-keygen</a>을 사용하여 디바이스를 프로비전하고 디바이스 연결 문자열을 가져옵니다.
+   <ul>
+    <li>결과 연결 문자열의 세 부분을 식별하고 나중에 저장합니다.</li>
+   </ul>
+   </li>
+  </ol>
+
+
+  <h2>DHT22 센서 연결</h2>
+
+
+  <p>DHT22 센서에서 데이터를 가져오기 전에 pi에 연결해야 합니다. DHT22에는 일반적으로 세 개의 핀이 나뉘어 있지만 그 중 일부는 4 개의 핀이 있습니다. 4개가 있는 핀이 있는 경우 데이터시트를 확인하여 전압(+, VCC 또는 VDD로 표시될 수 있음), 데이터(또는 신호) 및 접지 핀을 확인합니다.</p>
+
+
+  <p>Pi 전원이 꺼진 상태에서 점퍼 와이어를 사용하여 아래와 같이 DHT22를 연결합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9ab3a4a0-6f00-4072-88b9-794a38bed6c0.png"><img alt="Use jumper wires to connect your DHT22" border="0" height="256" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a2fc8f9d-9125-42e5-9faf-905fed14a68c.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="점퍼 와이어를 사용하여 DHT22 연결" width="595"></a></p>
+
+
+  <p>참고: 파워 점퍼(빨간색)는 3.3V로 이동해야 하고, 데이터 점퍼(노란색)는 GPIO4로 이동해야 하며, 그라운드 점퍼(검은색)는 지면으로 이동해야 합니다. 일부 보드는 다르므로 연결을 다시 확인하세요!</p>
+
+
+  <h4>필수 소프트웨어 설치</h4>
+
+
+  <p><a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank">가이드</a>를 사용하여 Raspbian Lite를 설치하는 것으로 시작했습니다. 그런 다음 <a href="https://nodered.org/docs/hardware/raspberrypi" target="_blank">Node-RED를 설치했습니다</a>. 이 시점에서 브라우저를 열고 방문하여 <a href=""></a> Node-RED 인터페이스를 볼 수 있어야 합니다. 다음으로 <a href="https://flows.nodered.org/node/node-red-contrib-azure-iot-hub" target="_blank">Node-RED에 대한 Azure IoT Hub 노드를 설치합니다</a>. 이 작업을 수행하는 가장 쉬운 방법은 팔레트 관리 명령을 사용하는 Node-RED 인터페이스입니다.</p>
+
+
+  <p><a href="https://flows.nodered.org/node/node-red-contrib-dht-sensor" target="_blank">DHT22</a> 노드를 설치합니다. 아쉽게도 이 노드에는 몇 가지 하위 수준의 하드웨어 요구 사항이 있으므로 팔레트 관리 명령을 통해 설치할 수&rsquo; 없습니다. 위의 링크를 사용하여 지침을 따르세요.</p>
+
+
+  <h2>흐름 구성</h2>
+
+
+  <p>이제 Pi&rsquo;에서 Node-RED를 실행했으므로 흐름을 만들 준비가 되었습니다. 기본적으로 Node-RED에는 이미 Flow 1&rdquo;이라는 &ldquo;흐름이 있어야 하지만 캔버스 위에 <strong>있는 (+) </strong>아이콘을 선택하여 새 흐름을 쉽게 만들 수 있는 경우입니다.</p>
+
+
+  <h3>삽입 노드를 사용하여 흐름 시작</h3>
+
+
+  <p>이 흐름에 추가할 첫 번째 노드는 입력 노드입니다. 이 예제에서는 임의 JSON 문서를 흐름에 삽입하는 <b>삽입</b> 노드를 사용합니다. 팔레트의 입력 섹션에서 왼쪽 팔레트에서 캔버스로 노드를 끌어옵니다. 그런 다음 두 번 선택하여 구성 창을 엽니다. 아래와 같이 노드 속성을 설정합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4b3428ec-6d72-4480-b4ad-370a39d74ea2.png"><img alt="Starting the flow with the inject node" border="0" height="460" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9dd2418-9879-4058-9ee2-cdeab7146e1b.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="삽입 노드를 사용하여 흐름 시작" width="448"></a></p>
+
+
+  <p>이 노드는 페이로드가 타임스탬프로 설정된 JSON 개체를 삽입하기만 하면 됩니다. 우리는 그 가치에 대해 정말로 신경 쓰지 않습니다&rsquo;. 이것은 흐름을 시작하는 간단한 방법입니다.</p>
+
+
+  <h3>DHT22에서 데이터 가져오기</h3>
+
+
+  <p>Node-RED 팔레트에서 <b>rpi dht22 </b>노드를 찾아 캔버스로 끌어옵니다. 두 번 클릭하여 구성 창을 열고 아래와 같이 노드 속성을 설정합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e020214a-99f4-4565-b8a4-00068aaa5b08.png"><img alt="The rpi dht22 node configuration window" border="0" height="439" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a0fb6d0-e922-42d7-b89a-c2cae4e314e1.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="rpi dht22 노드 구성 창" width="457"></a></p>
+
+
+  <p>작은 핸들을 다른 핸들로 끌어 <b>rpi dht22</b> 노드에 <b>삽입</b> 노드를 커넥트.</p>
+
+
+  <h3>메시지 서식 다시 지정</h3>
+
+
+  <p>DHT22<b> </b>노드에서 생성된 JSON 메시지는 Azure IoT 보내기 위해 올바르게 형식이 지정되지&rsquo; 않으므로 이를 수정해야 합니다. <b>변경</b> 노드를 사용하여 이 작업을 수행하므로 팔레트에서 캔버스로 끌어서 DHT22 노드에 연결합니다. 구성 창을 열고 아래와 같이 노드 속성을 설정하려면 두 번 클릭합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/47ea1db5-c4c1-4468-91b0-5d2cb32567e6.png"><img alt="How to edit the change node" border="0" height="406" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/467424cd-bc79-4c11-9f75-514e41a63ea5.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="변경 노드를 편집하는 방법" width="432"></a></p>
+
+
+  <p>이 노드의 기능 부분에 대해 JSON 문서에 대한 쿼리 및 변환 언어인 JSONata를 사용합니다. 선택기에서 JSONata 형식을 선택한 후 <b></b> <b>[&hellip;] </b>단추를 선택하여 편집기를 열고 다음을 입력합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/194f33a4-40c0-4377-88cc-0a8e7ea992a9.png"><img alt="Expression editor" border="0" height="436" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a29d0cd-39db-424b-a509-d024a955ee97.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="식 편집기" width="417"></a></p>
+
+
+  <p>여기서는 입력 JSON 메시지에서 온도 및 습도 값을 추출하고 결과 JSON 메시지의 데이터 요소 내에 배치합니다. &rsquo;또한 이전에 디바이스 연결 문자열에서 얻은 디바이스 ID 및 공유 액세스 키를 추가합니다.</p>
+
+
+  <h3>Azure IoT Central에 데이터 보내기</h3>
+
+
+  <p>이제 JSON&rsquo; 메시지를 준비했으므로 팔레트에서 <b>Azure IoT Hub 노드</b>를 찾아 캔버스로 끌어옵니다. 다시 한 번 두 번 클릭하여 구성 창을 열고 다음과 같이 속성을 설정합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aa3b5383-e944-4edf-8bfe-5b79867b9c8e.png"><img alt="Azure IoT Hub node" border="0" height="249" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f221ad22-3b56-45ef-9966-2b6301efd801.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="Azure IoT Hub 노드" width="449"></a></p>
+
+
+  <h3>메시지 확인 및 디버깅</h3>
+
+
+  <p>흐름에 추가할 최종 노드는 <b>디버그</b> 노드로, 노드-RED의 디버그 패널에 제공된 메시지를 출력하기만 하면 됩니다. Azure IoT 후 흐름의 끝에 커넥트 이름을 허브 응답으로 &ldquo;설정합니다.&rdquo;</p>
+
+
+  <p>흐름의 어느 지점에서든 JSON 메시지를 보는 데 관심이 있는 경우&rsquo; 원하는 위치에 <b>더 많은 디버그</b> 노드를 추가할 수 있습니다. 노드의 오른쪽에 있는 작은 상자를 선택하여 디버그 노드의 출력을 사용하거나 사용하지 않도록 설정할 수 있습니다.</p>
+
+
+  <h3>흐름</h3>
+
+
+  <p>흐름은 다음과 같습니다. Ive&rsquo;는 이 흐름을 개발하는 동안 몇 개의 추가 <b>디버그 </b>노드를 추가했지만 허브 응답 노드만 사용하도록 설정되어 있음을 알 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a484c5a-08a6-416f-8705-cdf552be2e41.png"><img alt="The flow" border="0" height="304" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cbc4537d-c6b3-482c-bc1a-df2fabf33dc5.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="흐름" width="1039"></a></p>
+
+
+  <p>흐름을 실행하려면 작업 영역에서 배포해야 합니다. 이렇게 하려면 Node-RED 화면의 오른쪽 위에 있는 빨간색 <strong>배포</strong> 단추를 선택합니다. 그런 다음 <strong>1분마다</strong> 노드 왼쪽에 있는 작은 상자를 선택하면 시작됩니다. 1분마다 실행되도록 해당 노드를 구성했으므로 흐름을 사용하지 않도록 설정하거나 다시 배포하여 중지할 때까지 Azure IoT Central에 메시지를 계속 보냅니다.</p>
+
+
+  <p>IoT Central 앱으로 다시 팝업하면 1분 이내에 데이터가 표시되어야 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b039b57b-636e-47d7-bdc0-b0abd753c90a.png"><img alt="IoT Central App" border="0" height="632" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/69d42621-2d8b-4597-ac82-d50bdb1593dd.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="IoT Central 앱" width="1171"></a></p>
+
+
+  <p>보듯이 Node-RED를 Azure IoT Central에 연결하는 것은 매우 간단합니다. 코드를 작성하지 않고도 다양한 센서 및 메시지 페이로드를 사용하여 신속하게 프로토타입을 제작하고 실험할 수 있는 좋은 방법입니다. 게이트웨이 또는 프로토콜 번역기를 만드는 데 이 방법을 사용하면 거의 모든 항목을 Azure IoT Central에 쉽게 연결할 수 있습니다.</p>
+
+
+  <h2>부록: Flow 원본</h2>
+
+
+  <p>직접 빌드하는 대신 모든 항목을 복사하여 붙여넣으려면 다음 JSON을 Node-RED로 가져오고 디바이스 연결 문자열에서 세 가지 값을 업데이트하면 됩니다(위의 지침 참조).</p>
+
+
+  <pre>
+
+  [{&quot;id&quot;:&quot;9e47273a.f12738&quot;, &quot;type&quot;:&quot;tab&quot;, &quot;label&quot;:&quot;DHT22-IoTC&quot;, &quot;disabled&quot;:false, &quot;info&quot;:&quot;&quot;}, {&quot;id&quot;:&quot;b3d8f5b6.a243b8&quot;, &quot;type&quot;:&quot;debug&quot;, &quot;z&quot;:&quot;9e47273a.f12738&quot;, &quot;name&quot;:&quot;Hub Response&quot;, &quot;active&quot;:true, &quot;tosidebar&quot;:true, &quot;console&quot;:false, &quot;tostatus&quot;:false, &quot;complete&quot;:&quot;true&quot;, &quot;x&quot;:740, &quot;y&quot;:340, &quot;wires&quot;:[]}, {&quot;id&quot;:&quot;117b0c09.6b3a04&quot;, &quot;type&quot;:&quot;azureiothub&quot;, &quot;z&quot;:&quot;9e47273a.f12738&quot;, &quot;name&quot;:&quot;Azure IoT Hub&quot;, &quot;protocol&quot;:&quot;mqtt&quot;, &quot;x&quot;:520, &quot;y&quot;:340, &quot;wires&quot;:[[&quot;b3d8f5b6.a243b8&quot;]]}, {&quot;id&quot;:&quot;ee333823.1d33a8&quot;, &quot;type&quot;:&quot;inject&quot;, &quot;z&quot;:&quot;9e47273a.f12738&quot;, &quot;name&quot;:&quot;&quot;, &quot;topic&quot;:&quot;&quot;, &quot;payload&quot;:&quot;&quot;, &quot;payloadType&quot;:&quot;date&quot;, &quot;repeat&quot;:&quot;60&quot;, &quot;crontab&quot;:&quot;&quot;, &quot;once&quot;:false, &quot;onceDelay&quot;:&quot;&quot;, &quot;x&quot;:210, &quot;y&quot;:120, &quot;wires&quot;:[[&quot;38f14b0d.96eb14&quot;]]}, {&quot;id&quot;:&quot;38f14b0d.96eb14&quot;, &quot;type&quot;:&quot;rpi-dht22&quot;, &quot;z&quot;:&quot;9e47273a.f12738&quot;, &quot;name&quot;:&quot;&quot;, &quot;topic&quot;:&quot;rpi-dht22&quot;, &quot;dht&quot;:22, &quot;pintype&quot;:&quot;0&quot;, &quot;pin&quot;:4, &quot;x&quot;:400, &quot;y&quot;:120, &quot;wires&quot;:[[&quot;f0bfed44.e988b&quot;]]}, {&quot;id&quot;:&quot;f0bfed44.e988b&quot;, &quot;type&quot;:&quot;change&quot;, &quot;z&quot;:&quot;9e47273a.f12738&quot;, &quot;name&quot;:&quot;&quot;, &quot;rules&quot;:[{&quot;t&quot;:&quot;set&quot;, &quot;p&quot;:&quot;payload&quot;, &quot;pt&quot;:&quot;msg&quot;, &quot;to&quot;:&quot;{\t \&quot;deviceId\&quot;:\&quot;{YOUR DEVICE ID} \&quot;, \t \&quot;key\&quot;:\&quot;{YOUR KEY}\&quot;, \t \&quot;protocol\&quot;:\&quot;mqtt\&quot;, \t \&quot;data\&quot;: {\t \&quot;temp\&quot;: $number(payload), \t \&quot;humidity\&quot;: $number(humidity)\t \t }\t\t}&quot;, &quot;tot&quot;:&quot;jsonata&quot;}], &quot;action&quot;:&quot;&quot;, &quot;property&quot;:&quot;&quot;, &quot;from&quot;:&quot;&quot;, &quot;to&quot;:&quot;&quot;, &quot;reg&quot;:false, &quot;x&quot;:280, &quot;y&quot;:340, &quot;wires&quot;:[[&quot;117b0c09.6b3a04&quot;, &quot;db5b70be.81e2a&quot;]]}, {&quot;id&quot;:&quot;db5b70be.81e2a&quot;, &quot;type&quot;:&quot;debug&quot;, &quot;z&quot;:&quot;9e47273a.f12738&quot;, &quot;name&quot;:&quot;Payload&quot;, &quot;active&quot;:true, &quot;tosidebar&quot;:true, &quot;console&quot;:false, &quot;tostatus&quot;:false, &quot;complete&quot;:&quot;payload&quot;, &quot;x&quot;:500, &quot;y&quot;:420, &quot;wires&quot;:[]}]</pre>

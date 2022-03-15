@@ -1,0 +1,95 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4c6632c09787c45262fd36785f06bc2ae1afd678
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898753"
+Slug: azure-hdinsight-apache-phoenix-now-supports-apache-zeppelin
+Title: 'Azure #HDInsight Apache Phoenix는 이제 Zeppelin을 지원합니다.'
+Summary: HDInsight 팀은 Apache Phoenix에 대한 Apache Zeppelin 지원을 발표하게 되어 기쁩니다.
+Content: >-
+  <p><em>HDInsight 팀은 Apache Phoenix에 대한 Apache Zeppelin 지원을 발표하게 되어 기쁩니다.</em></p>
+
+
+  <h2>Azure HDInsight의 Phoenix</h2>
+
+
+  <p><a href="https://phoenix.apache.org/" target="_blank">Apache Phoenix</a> 는 HBase에 빌드된 오픈 소스 대규모 병렬 관계형 데이터베이스 계층입니다. Phoenix를 사용하면 <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-overview" target="_blank">HBase</a>를 통해 쿼리와 같은 SQL 사용할 수 있습니다. Phoenix는 아래의 JDBC 드라이버를 사용하여 사용자가 SQL 테이블, 인덱스, 뷰 및 시퀀스를 만들고, 삭제하고, 변경하고, 행을 개별적으로 및 대량으로 변경할 수 있도록 합니다. Phoenix는 MapReduce 사용하여 쿼리를 컴파일하는 대신 NOSQL 네이티브 컴파일을 사용하여 HBase를 기반으로 대기 시간이 짧은 애플리케이션을 만들 수 있습니다.</p>
+
+
+  <p>Apache Phoenix는 두 세계의 최고를 결합하여 짧은 대기 시간 애플리케이션에 대한 Hadoop의 OLTP 및 운영 분석을 지원합니다. Azure HDInsight Apache Phoenix는 1급 오픈 소스 프레임워크로 제공됩니다.</p>
+
+
+  <h2>Azure HDInsight에서 Apache Phoenix를 사용하는 이유는 무엇인가요?</h2>
+
+
+  <p>HDInsight는 Apache Phoenix 및 기타 오픈 소스 빅 데이터 애플리케이션을 실행하는 데 가장 적합한 장소입니다. HDInsight는 다음과 같은 방법으로 Apache Phoenix를 더욱 효율적으로 만듭니다.</p>
+
+
+  <h3>기본적으로 고도로 조정된 Apache Phoenix 클러스터(분)</h3>
+
+
+  <p>Azure에서 여러 대규모 고객은 업무상 중요한 HBase/Phoenix 워크로드를 실행하며, 일정 기간 동안 서비스는 HBase 워크로드를 가능한 한 효율적으로 실행하기 위한 올바른 구성에 대해 점점 더 지능화됩니다. 이 인텔리전스는 요구 사항을 충족하는 고도로 조정된 클러스터의 형태로 제공되는 것보다 더 많은 정보를 제공합니다. Azure Portal을 사용하여 몇 분 내에 수동으로 또는 Azure JSON 템플릿, Powershell, REST 기반 API 또는 Azure 클라이언트 SDK를 사용하여 만들기 워크플로를 자동화하여 클러스터를 만들 수 있습니다.</p>
+
+
+  <h3>분리된 Storage 및 CPU</h3>
+
+
+  <p>HDInsight는 컴퓨팅과 CPU가 분리되는 매우 강력한 클라우드 구문으로 간단해 보이지만 게임을 변경합니다. 이 기능은 가장 작은 HBase 클러스터에 탑재할 수 있는 저렴한 풍부한 클라우드 스토리지를 가지고 있기 때문에 매우 강력합니다. 읽기/쓰기가 필요하지&#39;경우 클러스터를 완전히 삭제하고 데이터를 계속 유지할 수 있습니다. 이러한 유연성은 고객이 최상의 가격/성능을 달성하는 데 도움이 됩니다.</p>
+
+
+  <h3>서비스로 제공되지만 제어에 손상되지 않음</h3>
+
+
+  <p>HDInsight는 Phoenix를 서비스로 제공하므로 설정, 패치, 업그레이드, 유지 관리 등에 대해 걱정할 필요가&#39;없습니다. 또한, 당신은 재정적으로 지원 SLA를 얻을 99.9% 뿐만 아니라 지원, 아직 그것은 어떤 제어를 빼앗을&#39;하지 않습니다. 클러스터를 추가로 미세 조정하고 추가 구성 요소를 설치하고 추가 사용자 지정을 수행할 수 있는 옵션이 있습니다.</p>
+
+
+  <h3>중요 업무용 프로덕션 워크로드에 가장 적합</h3>
+
+
+  <p>Microsoft&#39;엔터프라이즈에 뿌리를 두고 있으므로 HDInsight Phoenix가 엔터프라이즈 아키텍처에 매우 잘 어울리게 됩니다. 중요한 데이터를 보호하기 위해 프라이빗 가상 네트워크에서 Phoenix 클러스터를 호스트할 수 있습니다. Azure 인프라를 활용하여 고가용성 및 재해 복구를 달성할 수 있습니다. 또한 Azure 및 HDInsight가 규정 준수 상태 <a href="https://www.microsoft.com/en-us/TrustCenter/Compliance/default.aspx" target="_blank">@Azure 보안 센터를</a> 지속적으로 업데이트하는 것을 확인할 수 있습니다.</p>
+
+
+  <h2>Apache Zeppelin이란?</h2>
+
+
+  <p>Apache Zeppelin은 SQL, Scala 및 기타 여러 언어를 사용하여 데이터 기반의 대화형 데이터 분석 및 공동 작업을 지원하는 오픈 소스 웹 기반 Notebook입니다. 데이터 개발자가 명령줄을 &amp; 참조하거나 클러스터 세부 정보를 필요로 하지 않고 데이터 코드를 개발, 구성, 실행 및 공유하고 결과를 시각화하는 데 도움이 됩니다.</p>
+
+
+  <h2>Apache Phoenix와 통합</h2>
+
+
+  <p>이제 HDInsight 고객은 Apache Zeppelin을 사용하여 Phoenix 테이블을 쿼리할 수 있습니다. Apache Zeppelin은 HDInsight 클러스터와 통합되며 이를 사용하는 추가 단계가 없습니다.</p>
+
+
+  <p>JDBC 인터프리터를 사용하여 Zeppelin Notebook을 만들고 Phoenix SQL 쿼리 작성을 시작하기만 하면 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8134695d-0c9f-4b5c-9898-0d8fb0c4f4a6.png"><img alt="image_thumb[2]" border="0" height="363" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b30a28fc-cfbf-43a4-b9af-267a4e5a3db1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="image_thumb[2]" width="772"></a></p>
+
+
+  <h2>지금 HDInsight 사용해 보기</h2>
+
+
+  <p>Apache Phoenix와 함께 Apache Zeppelin을 최대한 활용할 수 있기를 바랍니다. Azure HDInsight를 사용하여 빌드할 내용을 확인하게 되어 기쁩니다. <a href="https://azure.microsoft.com/en-us/blog/azure-hdinsight-training-resources-learn-about-big-data-using-open-source-technologies/" target="_blank">이 개발자 가이드를 읽고</a> 빠른 시작 가이드에 따라 Azure HDInsight에서 이러한 파이프라인 및 아키텍처를 구현하는 방법에 대해 자세히 알아보세요. Twitter <a href="https://twitter.com/search?q=%23HDInsight&amp;src=typd" target="_blank">#HDInsight</a> 및 <a href="https://twitter.com/AzureHDInsight" target="_blank">@AzureHDInsight</a>에서 팔로우하여 최신 Azure HDInsight 뉴스 및 기능을 최신 상태로 유지하세요. 질문 및 피드백은 다음으로 <a>AskHDInsight@microsoft.com</a>문의하세요.</p>
+
+
+  <h2>HDInsight 정보</h2>
+
+
+  <p>Azure HDInsight는 Azure에서 오픈 소스 워크로드를 실행하기 위한 Microsofts&rsquo; 프리미엄 관리형 제품입니다. Azure HDInsight는 제조, 소매 교육, 비영리, 정부, 의료, 미디어, 은행, 통신, 보험 및 ETL에서 데이터 웨어하우징에 이르는 다양한 산업, Machine Learning IoT 등 다양한 분야에서 중요 업무용 애플리케이션을 지원합니다.</p>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-phoenix-in-hdinsight?toc=%2Fen-us%2Fazure%2Fhdinsight%2Fhbase%2FTOC.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json" target="_blank">HDInsight의 Apache Phoenix</a>.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-phoenix-squirrel-linux" target="_blank">HDInsight Phoenix에서 SQLLine을 사용합니다</a>.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/" target="_blank">Azure HDInsight에 대해 자세히 알아봅니다</a>.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-component-versioning#hadoop-components-available-with-different-hdinsight-versions" target="_blank">HDInsight의 오픈 소스 구성 요소 가이드</a>입니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes" target="_blank">HDInsight 릴리스 정보</a>입니다.</li>
+   <li><a href="https://social.msdn.microsoft.com/forums/azure/en-us/home?forum=hdinsight" target="_blank">Msdn 포럼에서 HDInsight에 질문합니다</a>.</li>
+   <li><a href="https://stackoverflow.com/questions/tagged/hdinsight" target="_blank">스택 오버플로에 대해 HDInsight에 질문</a>합니다.</li>
+  </ul>

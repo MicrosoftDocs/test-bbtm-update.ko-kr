@@ -1,0 +1,64 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fd794eae8e17b42f0271d330a46d1a27792cbd7f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898521"
+Slug: operationalize-azure-databricks-notebooks-using-data-factory
+Title: Azure Databricks 및 Data Factory를 사용하여 수집, 준비 및 변환
+Summary: Azure Databricks 일반 공급은 2018년 3월 22일에 발표되었습니다. 이제 Azure Databricks는 ADF(Azure Data Factory)와 완전히 통합됩니다.
+Content: >-
+  <p>오늘날의&rsquo; 비즈니스 관리자는 복잡한 ETL/ELT 워크플로(데이터 추출, 변환/로드 및 로드/변환)를 실행하는 신뢰할 수 있는 데이터 통합 시스템에 크게 의존합니다. 이러한 워크플로를 통해 기업은 다양한 온-프레미스/클라우드 데이터 원본의 다양한 형태와 모양으로 데이터를 수집할 수 있습니다. 중요한 비즈니스 의사 결정을 내리기 위해 데이터를 변환/셰이프화하고 데이터에 대한 실행 가능한 인사이트를 얻습니다.</p>
+
+
+  <p>Azure Databricks의 <a href="https://azure.microsoft.com/en-us/blog/azure-databricks-industry-leading-analytics-platform-powered-by-apache-spark/">일반 공급</a> 으로 Azure Data Factory에서 ETL/ELT를 수행할 <a href="https://azure.microsoft.com/en-us/services/data-factory">수</a> 있습니다.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="540" src="https://channel9.msdn.com/Shows/Azure-Friday/Ingest-prepare-and-transform-using-Azure-Databricks-and-Data-Factory/player" width="960"></iframe></p>
+
+
+  <p>이 통합을 통해 다음을 수행하는 데이터 팩터리 파이프라인을 사용하여 ETL/ELT 워크플로(Azure Databricks의 분석 워크로드 포함)를 운영할 수 있습니다.</p>
+
+
+  <ol>
+   <li>70개 이상의 온-프레미스/클라우드 데이터 원본을 사용하여 대규모로 데이터 <a href="https://docs.microsoft.com/en-us/azure/data-factory/copy-activity-overview" target="_blank">수집 </a></li>
+   <li>Azure Databricks에서 수집된 데이터를 데이터 팩터리 파이프라인의 <a href="https://docs.microsoft.com/en-us/azure/data-factory/transform-data-databricks-notebook" target="_blank">Notebook</a> 작업 단계로 준비 및 변환(정리, 정렬, 병합, 조인 등)</li>
+   <li>E2E 워크플로 <a href="https://docs.microsoft.com/en-us/azure/data-factory/monitor-visually">모니터링 및 관리</a></li>
+  </ol>
+
+
+  <p><img alt="image" border="0" height="321" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/29515ffa-a917-4ebb-b326-f6655cab3bda.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+
+  <p>Amazon S3에서 Azure Blob으로 데이터를 수집하고, Azure Databricks에서 실행되는 Notebook을 사용하여 수집된 데이터를 처리하고, Azure SQL Datawarehouse에서 처리된 데이터를 이동하는 샘플 데이터 팩터리 파이프라인을 살펴보세요.</p>
+
+
+  <p><img alt="image" border="0" height="365" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/59dffc8c-ffee-4198-a5d0-a056c93fb19f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+
+  <p>풍부한 <a href="https://docs.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions" target="_blank">식 지원을</a> 사용하여 전체 워크플로(폴더 이름, 파일 이름 등)를 매개 변수화하고 데이터 팩터리에서 <a href="https://docs.microsoft.com/en-us/azure/data-factory/how-to-create-schedule-trigger" target="_blank">트리거</a> 를 정의하여 운영할 수 있습니다.</p>
+
+
+  <h2>오늘 시작하세요!</h2>
+
+
+  <p>Azure Databricks 및 Azure Data Factory 통합을 시도하고 피드백을 알려드리게 되어 기쁩니다.</p>
+
+
+  <p>프로비전된 v2 데이터 팩터리 블레이드에서 <strong>Author &amp; Monitor</strong> 타일을 클릭하여 시작합니다.</p>
+
+
+  <p><img alt="image" border="0" height="477" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4f457049-78f6-4aa9-a866-163db29b4ce9.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+
+  <p>Azure Databricks를 사용하여 데이터 변환 자습서를 클릭하고 Azure Data Factory를 사용하여 Azure Databricks의 분석 워크로드를 포함하여 ETL/ELT 워크로드를 운영하는 방법을 단계별로 알아봅니다.</p>
+
+
+  <p><img alt="image" border="0" height="392" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6679559a-6e3d-459f-b447-e780b75e5929.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+
+  <p>고객 피드백에 따라 새로운 기능을 추가하기 위해 지속적으로 노력하고 있습니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/transform-data-using-databricks-notebook">Azure Databricks 및 Data Factory 통합</a>을 사용하기 위한 자세한 정보와 단계를 확인하세요.</p>
+
+
+  <p>Azure Data Factory를 사용하여 파이프라인 빌드를 쉽고 빠르게 <a href="https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-portal">시작</a>합니다. 기능 요청이 있거나 피드백을 제공하려는 경우 <a href="https://feedback.azure.com/forums/270578-azure-data-factory">Azure Data Factory 포럼</a>을 방문하세요.</p>

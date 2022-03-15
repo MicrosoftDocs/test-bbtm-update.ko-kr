@@ -1,0 +1,104 @@
+### YamlMime:Yaml
+ms.openlocfilehash: dd19f0d6dbb46dbf66c549b60a177d43d0299ae7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908790"
+Slug: optimize-your-network-infrastructure-for-microsoft-cloud
+Title: Microsoft 클라우드에 대한 네트워크 인프라 최적화
+Summary: Microsoft 클라우드 플랫폼 및 서비스에 대한 성능이 좋은 액세스를 위해 네트워크를 최적화합니다.
+Content: >-
+  <p>조직에서 클라우드 기반 세계를 위한 네트워킹 인프라를 발전시키는 방법에 대한 핸들을 가져오려고 하고 있나요? Azure에서 실행되는 워크로드에 대한 현재 및 미래의 최적 액세스를 보장하기 위해 마스터해야 하는 새로운 패러다임 및 기술 세트는 무엇인가요?</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://aka.ms/cloudarchnetworking"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac13f157-1999-463d-88e4-21da4c68e3d3.png"></a></p>
+
+
+  <p>새로운 microsoft Cloud Networking for Enterprise Architects 포스터()는<a href="https://aka.ms/cloudarchnetworking">https://aka.ms/cloudarchnetworking</a> IT 의사 결정자와 설계자가 다음을 수행할 수 있도록 도와줍니다.</p>
+
+
+  <ul>
+   <li>클라우드 및 향후 네트워킹 투자 영역에 대한 네트워킹 인프라의 근본적인 변화를 이해합니다.</li>
+   <li>모든 Microsoft 클라우드 플랫폼 및 서비스에 대한 네트워크의 공통 요소를 최적화합니다.</li>
+   <li>ExpressRoute 서비스와 조직을 Microsoft&#39;클라우드 제품에 연결하는 방법을 이해합니다.</li>
+   <li>Azure 인프라 서비스에서 실행되는 Azure 기반 <a href="https://azure.microsoft.com/en-us/overview/what-is-paas">PaaS</a> 애플리케이션 및 IT 워크로드에 대한 인트라넷 및 네트워크 에지를 디자인합니다.</li>
+   <li>가상 머신을 호스트하도록 Azure 가상 네트워크를 디자인합니다.</li>
+  </ul>
+
+
+  <p>이 다중 페이지 포스터&nbsp; <a href="https://download.microsoft.com/download/A/9/3/A93DBAC9-E6DE-479C-A62B-A460633F84DB/MSFT_cloud_architecture_networking.pdf">aPDF</a>&nbsp; 또는 <a href="https://download.microsoft.com/download/A/9/3/A93DBAC9-E6DE-479C-A62B-A460633F84DB/MSFT_cloud_architecture_networking.vsd">Visio</a> 파일을 다운로드하거나 <a href="https://docs.com/officeitpro/4131/microsoft-cloud-networking-for-enterprise?c=ca4UTZ">찾아보기 쉬운</a> 새로운 형식으로 볼 수 있습니다. 타블로이드 서식 용지(11x17, 원장 또는 A3라고도 함)에 이 포스터의 페이지를 인쇄할 수도 있습니다.</p>
+
+
+  <p>microsoft Cloud for Enterprise Architects Series의 다른 포스터를 확인하세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top" width="101">
+     <p><img alt="CloudArchitecture_PlatformOptions_80" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9ed55dee-9ff3-4c94-a90d-817c7758d9dc.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="CloudArchitecture_PlatformOptions_80" width="80"></p>
+     </td>
+     <td valign="top" width="522">
+     <p>Microsoft Cloud Services 및 플랫폼 옵션</p>
+
+     <p><a href="https://aka.ms/cloudarchoptions">https://aka.ms/cloudarchoptions</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="101">
+     <p><img alt="CloudArchitecture_Identity_80" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a4c47d6-9129-4367-b955-25dae3aebbd3.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="CloudArchitecture_Identity_80" width="80"></p>
+     </td>
+     <td valign="top" width="522">
+     <p>엔터프라이즈 설계자용 Microsoft Cloud Identity</p>
+
+     <p><a href="https://aka.ms/cloudarchidentity">https://aka.ms/cloudarchidentity</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="101">
+     <p><img alt="CloudArchitecture_Security_80" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/966f1d7d-dd4c-4f6d-a6a9-462aa00f016d.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="CloudArchitecture_Security_80" width="80"></p>
+     </td>
+     <td valign="top" width="522">
+     <p>엔터프라이즈 설계자용 Microsoft Cloud Security</p>
+
+     <p><a href="https://aka.ms/cloudarchsecurity">https://aka.ms/cloudarchsecurity</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="101">
+     <p><img alt="CloudArchitecture_Storage_80" border="0" height="80" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/52ede3a8-91bc-423d-ba4c-03ae5990abae.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="CloudArchitecture_Storage_80" width="80"></p>
+     </td>
+     <td valign="top" width="522">
+     <p>엔터프라이즈 설계자용 Microsoft Cloud Storage</p>
+
+     <p><a href="https://aka.ms/cloudarchstorage">https://aka.ms/cloudarchstorage</a></p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="101">
+     <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94e33f52-61ff-4382-b50d-d1c159839a4e.png"></p>
+     </td>
+     <td valign="top" width="522">
+     <p>엔터프라이즈 설계자용 Microsoft Hybrid Cloud</p>
+
+     <p><a href="https://aka.ms/cloudarchhybrid">https://aka.ms/cloudarchhybrid</a></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>Microsoft 클라우드 플랫폼 및 서비스에 대한 모든 리소스를 보려면 Microsofts&rsquo; Enterprise Cloud 로드맵을 참조하세요<a href="https://aka.ms/cloudarchitecture">https://aka.ms/cloudarchitecture</a>.</p>
+
+
+  <p>Twitter 사용자에 대한 참고 사항: 이 포스터 또는 시리즈의 다른 사용자에 대해 트윗하는 경우 #mscloudarch 해시태그를 사용하세요. 감사합니다.</p>

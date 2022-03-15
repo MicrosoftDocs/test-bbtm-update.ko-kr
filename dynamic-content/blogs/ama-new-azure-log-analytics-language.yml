@@ -1,0 +1,38 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 48e1ee301e7ea0c2e6b2b2e9390b6aec6d96a67f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902861"
+Slug: ama-new-azure-log-analytics-language
+Title: 새 Azure Log Analytics 언어에 대해 문의하세요.
+Summary: 일정을 표시하고 첫 번째 AMA 세션인 9월 21일 오전 9-10시 PST에 참가합니다.
+Content: >-
+  <p><strong>2017년 9월 21일 목요일 오전 9:00~오전 10:00 태평양 표준시에서 첫 번째 AMA 세션에 참가합니다. 일정에 이벤트를 추가합니다.</strong></p>
+
+
+  <p>지난 달, 고급 검색 및 분석 기능, 직선 구문 및 다양한 새로운 기능을 제공하는 Azure Log Analytics에 대한 새로운 쿼리 언어를 발표했습니다. 이러한 기능에는 조인, 검색 시간 계산 필드, 풍부한 날짜/시간 및 문자열 조작, 기계 학습 연산자 등이 포함됩니다. 또한 Weve&rsquo;는 짧은 업그레이드 프로세스와 새 언어를 기반으로 제공하는 새로운 환경을 검토하는 <a href="https://aka.ms/azr117pal-register" target="_blank">웨비나</a>를 개최했습니다.</p>
+
+
+  <p>Weve&rsquo;는 많은 사용자가 작업 영역을 업그레이드하고 다양한 채널을 통해 언어에 익숙해지도록 했습니다.</p>
+
+
+  <ol>
+   <li><a href="https://portal.loganalytics.io/demo" target="_blank">Advanced Analytics 플레이그라운드</a>: 이미 데모 데이터를 포함하고 있으며 새 언어 및 포털을 사용하려는 모든 사용자에게 열려 있는 무료 분석 환경입니다. 또한 시작하기 위한 몇 가지 기본 예제도 제공합니다.</li>
+   <li><a href="https://docs.loganalytics.io" target="_blank">새 언어 사이트</a>: 새 언어에 대해 알아야 할 모든 것 - 언어 참조, 이미 SQL 익숙한 사용자에 대한 참고 자료 또는 Log Analytics 레거시 언어, 비디오, 자습서 및 쿼리 작성 및 분석 포털 사용에 대한 가이드 및 많은 예제!</li>
+   <li><a href="https://github.com/MicrosoftDocs/LogAnalyticsExamples" target="_blank">공유 예제에 대한 개방형 git-hub 리포지토리</a>: 사용자 고유의 예제를 우리와 공유하도록 초대됩니다. 언어 사이트에도 게시할 예정입니다.</li>
+   <li>마지막으로 - 실제 행동이 일어나는 곳 - 우리의 새로운 <a href="https://aka.ms/AzureLogAnalyticsCommunity" target="_blank">커뮤니티 공간</a> : 이것은 질문을 게시하고 대답하고, 발표를 확인하고, 연락을 유지하는 장소입니다.</li>
+  </ol>
+
+
+  <p><strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/29d0409b-e027-42de-9b9a-76298e5611e2.png"><img alt="Slide1" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c9c01261-cbf0-4e74-b445-8345a5c729f1.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Slide1" width="640"></a></strong></p>
+
+
+  <p><strong>&rsquo;2017년 9월 21일 목요일 오전 9시~오전 10시 00분 태평양 표준시에서 개최할 라이브 AMA(Microsoft 무엇이든 질문)&#39;세션에 초대하게 되어 매우 기쁩</strong>니다.&amp; 제품 팀과 함께! 새로운 언어 기능과 원하는 것을 들을 수 있는 기회에 대해 질문할 수 있는 기회입니다.</p>
+
+
+  <p>AMA 세션에 참가하려면 먼저 <a href="https://techcommunity.microsoft.com/" target="_blank">Microsoft Tech Community</a> 참가하고 <a href="https://techcommunity.microsoft.com/t5/Azure-Log-Analytics/bd-p/AzureLogAnalytics" target="_blank">Azure Log Analytics 공간에</a> 익숙해지세요. AMA 세션은 <a href="https://techcommunity.microsoft.com/t5/Azure-AMA/bd-p/azure-ama" target="_blank">Azure AMA 공간에서</a> 진행됩니다.</p>
+
+
+  <p>다음 단원에서 뵙겠습니다!</p>

@@ -1,0 +1,71 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 418a7979388b472139529869b4add15877dea150
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903133"
+Slug: announcing-storsimple-cloud-appliance-model-8020
+Title: StorSimple Cloud Appliance 8020 발표
+Summary: Application DR, 개발/테스트 시나리오 및 고성능 워크로드용 새로운 StorSimple Cloud Appliance 8020은 이전 모델보다 대부분의 벤치마크에서 용량과 성능이 두 배 이상 향상됩니다.
+Content: >-
+  <p>차세대 StorSimple 클라우드 어플라이언스(이전의 StorSimple 가상 어플라이언스라고 함)를 발표하게 되어 기쁩니다. StorSimple 클라우드 어플라이언스는 Azure에서 실행되는 Virtual Machine 형식의 StorSimple 솔루션의 소프트웨어 버전입니다.</p>
+
+
+  <p>새로운 StorSimple Cloud Appliance인 8020은 8010 모델(이전에는 1100이라고 함)보다 대부분의 벤치마크에서 용량과 성능이 두 배 이상 향상되었습니다. 8020은 Azure Premium Storage 로컬 계층으로 사용하여 최대 프로비저닝된 용량을 64TB로 늘리고 성능을 향상합니다. Azure Premium Storage 사용하면 사용자가 Azure에서 VM에 대해 짧은 대기 시간 및 고성능 SSD 드라이브를 프로비전할 수 있습니다. 이 모델을 통해 고객은 Azure에서 더 큰 볼륨 크기 및 더 높은 처리량이 필요한 시나리오를 사용할 수 있습니다.</p>
+
+
+  <p>StorSimple 클라우드 어플라이언스는 재해 복구를 위한 비용 효율적인 주문형 대안이었습니다. 최대 용량이 높을수록 모든 StorSimple 워크로드에 대한 Azure의 주문형 재해 복구 사이트로 사용량이 확대됩니다.</p>
+
+
+  <p>8020은 이전 버전과 동일한 가격 책정 정책을 가지며, 기본 VM 및 디스크의 VM 및 스토리지 구성 요소에 대해서만 요금이 청구됩니다. Azure Compute 가격 책정은 DS3 Virtual Machine 가격 책정을 기반으로 하며 디스크 가격은 Premium Storage 디스크 가격 책정을 기반으로 합니다.</p>
+
+
+  <p>8020은 8010과 함께 제공됩니다. 아래 표에서는 두 모델 간의 차이점을 간략하게 설명합니다.</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="699">
+      <tbody>
+          <tr>
+              <td valign="top" width="149">&nbsp;</td>
+              <td valign="top" width="275"><strong>8020</strong></td>
+              <td valign="top" width="273"><strong>8010(이전에는 1100이라고 함)</strong></td>
+          </tr>
+          <tr>
+              <td valign="top" width="149"><strong>최대 용량</strong></td>
+              <td valign="top" width="275">64TB</td>
+              <td valign="top" width="273">30TB</td>
+          </tr>
+          <tr>
+              <td valign="top" width="149"><strong>Azure VM</strong></td>
+              <td valign="top" width="275">Standard_DS3(4코어, 14GB 메모리)</td>
+              <td valign="top" width="273">Standard_A3(4코어, 7GB 메모리)</td>
+          </tr>
+          <tr>
+              <td valign="top" width="149"><strong>StorSimple 버전 호환성</strong></td>
+              <td valign="top" width="275">업데이트 1 이상을 실행하는 버전</td>
+              <td valign="top" width="273">모든 버전</td>
+          </tr>
+          <tr>
+              <td valign="top" width="149"><strong>지역 가용성</strong></td>
+              <td valign="top" width="275">Premium Storage를 지원하는 <a href="https://azure.microsoft.com/regions/#services">지역</a></td>
+              <td valign="top" width="273">모든 Azure 지역</td>
+          </tr>
+          <tr>
+              <td valign="top" width="149"><strong>SVA 내부 Storage 형식</strong></td>
+              <td valign="top" width="275">Azure Premium Storage</td>
+              <td valign="top" width="273">Azure 표준 스토리지</td>
+          </tr>
+          <tr>
+              <td valign="top" width="149"><strong>워크로드 지침</strong></td>
+              <td valign="top" width="275">클라우드 개발/테스트 시나리오; 짧은 대기 시간, 더 높은 성능 워크로드; 재해 복구를 위한 보조 디바이스</td>
+              <td valign="top" width="273">백업에서 항목 수준 검색</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>8010과 8020 간의 배포 및 차이점에 대한 자세한 내용은 <a href="https://go.microsoft.com/fwlink/?LinkId=671907">StorSimple 설명서 페이지를</a> 참조하세요.</p>
+
+
+  <p>또한 StorSimple 및 Azure Site Recovery가 함께 작동하여 StorSimple에서 호스트되는 워크로드에 대한 포괄적인 보호를 제공할 수 있음을 발표하게 되어 기쁩니다. 자세한 내용은 <a href="https://download.microsoft.com/download/7/7/5/775B1D68-BF20-4B3E-AD54-D12846CCDB38/StorSimple DR Solution using ASR 2015-12-07.pdf">Azure에 파일 서버 DR 자동화를 다운로드합니다</a>.</p>

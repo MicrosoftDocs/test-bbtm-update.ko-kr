@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bb7d1f97a4553802877b8bd8b088bb4022a6a721
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898466"
+Slug: azure-blockchain-update-8
+Title: 'Azure Blockchain as a Service 업데이트 #8'
+Summary: Microsoft는 디지털 상거래 상공 회의소, BaaS 업데이트 및 새로운 Microsoft 블로거에 합류합니다.
+Content: >-
+  <address class="p1">이 게시물은 요크 로즈, 글로벌 비즈니스 전략가, DX - 글로벌 신흥 파트너 팀, 제이슨 앨버트, CELA - 규제 담당 보조 법률 고문과 공동으로 공동 저술되었습니다.</address>
+
+
+  <h2>Microsoft, 디지털 상거래 상공회의소 가입</h2>
+
+
+  <p class="p4">Microsoft는 <a href="https://www.digitalchamber.org/" target="_blank">디지털 상거래 상공회의소</a>에 가입했다고 발표하게 되어 기쁘게 생각합니다. 디지털 챔버는 분산 원장의 가능성과 잠재력에 초점을 맞춘 새로운 무역 협회입니다.</p>
+
+
+  <p class="p4">크고 작은 기업들은 블록체인이라고도 하는 분산 원장의 잠재력을 점점 더 탐구하고 있습니다. 분산 원장은 이름에서 설명한 대로 트랜잭션을 기록할 수 있는 여러 온라인 레지스터로 구성됩니다. 각 트랜잭션은 이전 트랜잭션에 연결되고 암호화 사용을 통해 확인됩니다. 이 일련의 트랜잭션은 블록체인으로 구성됩니다. 블록체인은 여러 당사자가 확인된 트랜잭션 및 소유권 시스템을 만드는 데 동의할 수 있는 변조 방지 원장을 제공합니다.</p>
+
+
+  <p class="p4">분산 원장에는 여러 가지 잠재적인 용도가 있습니다. 가상 통화 비트 코인은 현재 가장 유명하다, 소유권과 비트 코인의 공급은 제어 및 분산 원장을 통해 확인. 그러나, 그것은 빙산의 일각에 불과합니다. Imagine 실시간 즉각적인 직접 송금, 온라인 또는 탈중앙화 환자 기록 관리에 입력, 확인 및 수행할 수 있는 스마트 계약입니다. 분산 원장 기술은 이러한 모든 기능과 다른 형태의 분산 애플리케이션을 가능하게 할 수 있습니다.</p>
+
+
+  <p class="p4">Microsoft&rsquo;에서는 분산 원장에게 최상의 플랫폼과 홈을 제공하고, Azure KeyVault, 다단계 인증 등과 같은 Azure의 기능과 블록체인에 대한 기술적 약속을 결합하는 데 집중했습니다. 우리는 지난해 11월에 Ethereum과 <a href="https://azure.microsoft.com/en-us/blog/ethereum-blockchain-as-a-service-now-on-azure/" target="_blank">함께 Blockchain as</a> a Service를 출시했으며 그 이후로 40개 이상의 파트너를 추가했습니다. 가장 최근에는 40개 이상의 주요 은행의 R3 컨소시엄이 <a href="https://blogs.wsj.com/moneybeat/2016/04/04/microsoft-signs-r3-blockchain-consortium-up-for-azure/" target="_blank">Microsoft Blockchain as a Service</a> 를 선호하는 플랫폼으로 선택하여 새로운 블록체인 관련 제품을 실험하고 개발했습니다.</p>
+
+
+  <p class="p4">우리는 이 기술의 약속을 탐구하기 위해 업계의 다른 사람들과 협력할 때, 분산 원장에 대해 생각할 때 규제 기관 및 정책 입안자와 협력하는 것이 똑같이 중요합니다. 가상 통화는 이미 미국뿐만 아니라 전 세계 다른 시장에서 주 및 연방 수준 모두에서 규제 관심의 초점입니다. 우리는 사용자를 보호하고 가상 통화가 범죄 활동의 피난처가되지 않는 것이 중요하기 때문에 이를 환영합니다. 그러나 분산 원장의 이러한 특정 적용이 규제되더라도 다른 용도가 여전히 진화하거나 초기화되고 있으며 개발 및 성장의 자유가 필요하다는 것을 인식하는 것이 중요합니다.</p>
+
+
+  <p class="p4">디지털 챔버는 규제 프레임워크가 발전함에 따라 중요하고 필요한 음성을 제공합니다. 디지털 챔버는 업계 최전선에 있는 회사를 모아 경험과 계획을 공유함으로써 분산 원장 기술의 사용과 대중을 보호하면서 번창할 수 있는 방법에 대한 중요한 공개 토론에 대한 의견을 제시할 수 있습니다. 디지털 챔버는 또한 새로운 참가자를 지원하기 위해 교육, 교육 및 자율 규제 계획을 수립하여 업계 전반의 혁신을 성장시키는 데 도움을 주고 있습니다. 우리는 분산 원장의 사용이 성장하고 진화함에 따라 디지털 챔버 및 회원과 협력하기를 기대합니다.</p>
+
+
+  <h2>Blockchain as a Service 업데이트</h2>
+
+
+  <p class="p5">업데이트를 게시한 지 얼마 되지 않았지만, 그렇다고 해서 바쁘지 않았다는&rsquo; 뜻은 아닙니다&rsquo;. 우리는 에코시스템에 몇 가지 새로운 파트너뿐만 아니라 기존 파트너의 업데이트를 환영합니다. 새로운 파트너로는 Jumbucks, Bitswift, Storj, Vcash, Shadow, Blocknet, Blitz, Gamecredits 및 Okcash가 있습니다. 모두 <a href="https://github.com/Azure/azure-blockchain-projects/tree/master/baas-artifacts">Azure DevTest 랩</a>에서 테스트할 수 있습니다.</p>
+
+
+  <p class="p5"><a href="https://github.com/Azure/azure-quickstart-templates/tree/master/ethereum-studio-docker-standalone-ubuntu" target="_blank">Ether.camp Ethereum Studio</a> Solidity 계약을 작성하고 컴파일하고 샌드박스에서 함께 플레이한 다음 실제 그물에 계약을 보낼 수 있는 IDE도 사용할 수 있습니다.</p>
+
+
+  <p class="p6">Emercoin은 또한 <a href="https://azure.microsoft.com/en-us/documentation/templates/emercoin-ubuntu/" target="_blank">Emercoin 클라이언트, Emercoin SSH 서비스, Emercoin WEB Wallet</a>을 게시했습니다.</p>
+
+
+  <h2>새로운 BaaS 블로거</h2>
+
+
+  <p>파트너 블록체인 에코시스템에 초점을 맞춘 글로벌 비즈니스 전략가 <b>요크 로즈(Yorke Rhodes</b>)는 신규 및 기존 파트너(BaaS 업데이트)를 위한 업데이트와 업계 비즈니스 인사이트를 제공할 예정입니다.</p>
+
+
+  <p><b>법률</b>, 규정 및 규정 준수 관점에서 분산 원장에 초점을 맞춘 Microsoft의 제이슨 앨버트(Jason Albert) 법률 고문은 이 공간에서 디지털 상공회의소, 법률, 규정 및 규정 준수 문제와 관련된 활동에 대해 블로그를 만들 것입니다.</p>
+
+
+  <p class="p5">그것은&rsquo; 지금, 더 빨리 올 모든 것입니다.</p>

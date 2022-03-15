@@ -1,0 +1,86 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 28404cfbd6d48a32b6027b19eee47bc361eeb1c3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902758"
+Slug: azure-cosmos-developer-experience-updates-december-2018
+Title: Azure Cosmos DB 개발자 환경 업데이트 2018년 12월
+Summary: .NET SDK 버전 3.0은 현재 미리 보기로 제공됩니다! 새 "흐름" 스타일 API 표면을 사용하고 스트림을 지원하며 GitHub 오픈 소스로 개체 모델을 다시 디자인했습니다. 또한 새 SDK는 .NET Standard 2.0을 대상으로 하므로 .NET Framework 4.6.1 이상 및 .NET Core 2.0 이상 애플리케이션 모두에서 SDK를 사용할 수 있습니다.
+Content: >-
+  <p>Azure Cosmos DB 팀은 개발자를 위한 새로운 기능 및 개선 사항을 발표하게 되어 기쁩니다.</p>
+
+
+  <ul>
+   <li><a href="#dotnet-sdk">.NET SDK 버전 3.0 미리 보기</a></li>
+   <li><a href="#db-level-throughput">데이터베이스 수준 처리량에 대한 25배 낮은 진입점</a></li>
+   <li><a href="#cors-support">CORS 지원</a></li>
+   <li><a href="#js-changefeed">JavaScript SDK에 대한 변경 피드 지원</a></li>
+   <li><a href="#cassandra-emulator">Emulator Cassandra API 지원</a></li>
+  </ul>
+
+
+  <h2 id="dotnet-sdk">NET SDK 버전 3.0 미리 보기</h2>
+
+
+  <p>.NET SDK <a href="https://aka.ms/CosmosDotnetSDKV3" target="_blank">버전 3.0</a>은 현재 미리 보기로 제공됩니다! Weve&rsquo;는 새 &ldquo;흐름&rdquo; 스타일 API 표면을 사용하도록 개체 모델을 다시 디자인하고, 스트림 및 기타 성능 향상에 대한 지원을 추가했으며, <a href="https://github.com/Azure/azure-cosmos-dotnet-v3" target="_blank">GitHub</a> 오픈 소스입니다. 또한 새 SDK는 <a href="https://docs.microsoft.com/en-us/dotnet/standard/net-standard" target="_blank">.NET Standard 2.0</a>을 대상으로 하므로 .NET Framework 4.6.1 이상 및 .NET Core 2.0 이상 애플리케이션 모두에서 SDK를 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/18368672-43f6-4fc1-8973-c55dfeceb83a.png"><img alt="NET SDK Version 3.0 preview" border="0" height="631" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f227f5ca-77c9-4564-8f3f-02b554649908.png" style="margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="NET SDK 버전 3.0 미리 보기" width="1352"></a></p>
+
+
+  <p>&rsquo;여러분의 의견을 듣고 기뻐합니다. 블로그 게시물, &quot;<a href="https://azure.microsoft.com/en-us/blog/azure-cosmos-dotnet-sdk-version-3-0-now-in-public-preview/" target="_blank">Azure Cosmos DB .NET SDK 버전 3.0에 대한 자세한 내용은 현재 공개 미리 보기</a>&quot;에서 블로그의 업데이트를 참조하고 <a href="https://aka.ms/CosmosDotnetSDKV3GetStarted" target="_blank">자습서</a>를 시작하세요.</p>
+
+
+  <h2 id="db-level-throughput">데이터베이스 수준 처리량에 대한 새로운 25배 낮은 진입점</h2>
+
+
+  <p>Weve&rsquo;는 <a href="https://aka.ms/CosmosDBLevelThroughput" target="_blank">데이터베이스 수준 처리량</a> 의 진입점을 10,000RU/s에서 400RU/s로 25배 낮췄습니다. 데이터베이스 수준 처리량을 사용하면 데이터베이스의 모든 컨테이너가 데이터베이스의 처리량을 공유합니다. 처음 4개의 컨테이너 후에는 각 추가 컨테이너에 최소 100RU/s가 필요합니다. <a href="https://aka.ms/CosmosDBLevelThroughput" target="_blank">Cosmos DB 수준 처리량</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/93f14404-8625-4b2f-99e0-fa1437b33731.png"><img alt="Database-level throughput" border="0" height="327" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bc4cfe37-d5c2-4d5c-b63c-ebe7fe089b6e.png" style="margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="데이터베이스 수준 처리량" width="1031"></a></p>
+
+
+  <p>또한 전용 처리량을 사용하여 분할된 새 컨테이너를 만들 때 이제 1000RU/s에서 400RU/s부터 처리량을 프로비전할 수 있습니다. 이렇게 하면 포털에서 제거된 고정&rdquo; 컨테이너를&rsquo; 만들 &quot;필요가 없습니다. 컨테이너를 만들 때 파티션 키가 제공되는 한, 워크로드 스토리지 및 요청 볼륨이 증가함에 따라 컨테이너의 크기를 조정할 수 있습니다.</p>
+
+
+  <p>&rsquo;많은 작은 컨테이너를 사용하여 데이터베이스를 더 쉽게 만들고 <a href="https://feedback.azure.com/forums/263030-azure-cosmos-db/suggestions/19466308-azure-cosmosdb-is-too-expensive-for-small-but-mult" target="_blank">상위 사용자 의견</a> 항목 중 하나를 처리할 수 있게 되어 매우 기쁩니다.</p>
+
+
+  <h2 id="cors-support">CORS 지원</h2>
+
+
+  <p>이제 Azure Cosmos DB에서 <a href="https://developer.mozilla.org/docs/Web/HTTP/CORS" target="_blank">CORS</a>를 지원합니다. 이제 <a href="https://github.com/Azure/azure-cosmos-js" target="_blank">JavaScript SDK</a>를 사용하여 프록시 없이 Azure Cosmos DB와 직접 통신하는 브라우저 기반 앱을 작성할 수 있습니다. 계정 수준에서 Azure Cosmos DB가 요청을 수락할 허용 원본을 설정할 수 있습니다. 이 원본은 계정의 모든 데이터베이스 및 컨테이너에 적용됩니다. 블로그 &ldquo; 에서 자세히 알아보면 <a href="https://aka.ms/cosmosCORSblog" target="_blank">Azure Cosmos DB에서 CORS(원본 간 리소스 공유)를 지원합니다</a>.&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1e0f1fd0-3438-4b5f-9077-0676f86257c0.png"><img alt="CORS dashboard" border="0" height="512" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8affaafe-f652-41ec-bb35-25043e062bcd.png" style="margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CORS 대시보드" width="1371"></a></p>
+
+
+  <h2 id="js-changefeed">JavaScript SDK에 대한 변경 피드 지원</h2>
+
+
+  <p>이제 Azure Cosmos DB JavaScript SDK에서 <a href="https://docs.microsoft.com/azure/cosmos-db/change-feed" target="_blank">변경 피드</a>를 지원합니다. 변경 피드를 사용하면 컨테이너의 변경 내용을 수신 대기하고 해당 레코드가 만들어지거나 업데이트된 레코드의 증분 피드를 가져올 수 있습니다. 변경 피드는 이벤트 소싱 아키텍처, 스트림 처리 또는 데이터 이동 시나리오에서 일반적으로 사용됩니다. 시작하려면 <a href="https://github.com/Azure/azure-cosmos-js/tree/master/samples" target="_blank">샘플을</a> 참조하세요.</p>
+
+
+  <h2 id="cassandra-emulator">Emulator Cassandra API 지원</h2>
+
+
+  <p>Weve&rsquo;는 <a href="https://docs.microsoft.com/azure/cosmos-db/local-emulator" target="_blank">Azure Cosmos DB Emulator</a> <a href="https://docs.microsoft.com/azure/cosmos-db/cassandra-introduction" target="_blank">Cassandra API</a> 지원을 추가했습니다. Azure Cosmos DB Emulator 개발 목적으로 Azure Cosmos DB 서비스를 에뮬레이트하는 로컬 환경을 제공합니다. 이제 Cassandra API에 대해 이를 사용하여 Azure Cosmos DB 서비스에 대한 비용을 발생시키지 않고 로컬에서 애플리케이션을 개발하고 테스트할 수 있습니다.</p>
+
+
+  <p>사용해 보려면 <a href="https://aka.ms/cosmosdb-emulator" target="_blank">최신 버전의</a> 에뮬레이터를 설치합니다. Cassandra API를 사용하도록 설정하는 플래그를 사용하여 관리자 명령 프롬프트에서 에뮬레이터를 시작합니다. 다른 API 모드에서 에뮬레이터에서 사용하는 디렉터리와의 충돌을 방지하려면 별도의 데이터 경로를 지정하는 것이 좋습니다.</p>
+
+
+  <pre>
+
+  CosmosDB.Emulator.exe /EnableCassandraEndpoint /DataPath=&rdquo;C:/path/to/directory&rdquo;</pre>
+
+
+  <h2>시작</h2>
+
+
+  <p>이러한 새로운 기능을 사용해 보고 의견을 <a href="mailto:askcosmosdb@microsoft.com">askcosmosdb@microsoft.com</a>보내주세요. Azure Cosmos DB를 새로 사용하는 경우&rsquo; 30일 동안 <a href="https://aka.ms/trycosmosdb" target="_blank">DB를 무료로 Cosmos 수</a> 있습니다.</p>
+
+
+  <p>Twitter<a href="https://twitter.com/azurecosmosdb" target="_blank">@AzureCosmosDB</a>에서 팔로우하여 최신 Azure <a href="https://twitter.com/search?q=%23cosmosdb" target="_blank">#CosmosDB</a> 뉴스 및 기능을 최신 상태로 유지하세요. Azure Cosmos DB를 사용하여 빌드할 항목을 확인하게 되어 정말 기쁩니다!</p>

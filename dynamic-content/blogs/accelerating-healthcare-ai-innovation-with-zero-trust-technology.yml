@@ -1,0 +1,123 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 67f9f4fa1d49ced033f47a1500a90571906c76e4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899171"
+Slug: accelerating-healthcare-ai-innovation-with-zero-trust-technology
+Title: 제로 트러스트 기술을 사용하여 의료 AI 혁신 가속화
+Summary: 연구에서 진단, 치료에 이르기까지 AI는 일부 치료에 대한 결과를 30~40%까지 개선하고 비용을 최대 50%까지 줄일 수 있는 잠재력을 가지고 있습니다. 일반화, 투명성 및 바이어스 감소에 필요한 큰 데이터 집합을 얻는 것은 역사적으로 어렵고 시간이 많이 소요되었습니다. 그래서 캘리포니아 대학교, 샌프란시스코(UCSF)는 Microsoft, Fortanix 및 Intel과 협력하여 BeeKeeperAI를 만들었습니다.
+Content: >-
+  <p>연구에서 진단, 치료에 이르기까지 AI는 일부 치료에 대한 결과를 30~40%까지 개선하고 비용을 최대 50%까지 줄일 수 있는 잠재력을 가지고 있습니다. 의료 알고리즘은 2026년까지 $42.5B 시장을 나타낼 것으로 예상되지만, 35개 미만의 알고리즘이 FDA의 승인을 받았으며, 그 중 2개만이 진정한 새로운 것으로 분류됩니다. <sup>1</sup> 일반화, 투명성 및 편견을 줄이는 데 필요한 큰 데이터 집합을 얻는 것은 환자 데이터 프라이버시를 보호하기 위해 제정된 규제 제한으로 인해 역사적으로 어렵고 시간이 많이 소요되었습니다. 그래서&rsquo; 캘리포니아 대학교, 샌프란시스코(UCSF)는 Microsoft, Fortanix 및 Intel과 협력하여 BeeKeeperAI를 만들었습니다. 이 기능을 사용하면 제로 트러스트 환경(예: 정상 시스템 등)에서 알고리즘 소유자와 데이터 관리자 간의 안전한 협업을 가능하게 하며( <a href="https://aka.ms/AzureCC" target="_blank">Azure 기밀 컴퓨팅</a>에서 사용하도록 설정), 데이터가 표시되지 않거나 노출되지 않으므로 PHI(보호된 상태 정보)를 식별하거나 익명화할 필요가 없는 방식으로 알고리즘 IP(지적 재산권)&mdash;와 데이터를 보호할 수 있습니다.</p>
+
+
+  <h2>AI를 사용하여 더 나은 의료 지원</h2>
+
+
+  <p>방대한 양의 정보에서 강력한 인사이트를 발견함으로써 AI 및 기계 학습은 의료 제공자가 의료 서비스를 개선하고 효율성을 높이며 비용을 절감하는 데 도움이 될 수 있습니다. 예를 들면 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>흉부 엑스레이의 AI 분석은 정확도가 높은 COVID-19 환자에서 중요한 질병의 진행을 예측했습니다. <sup>2개</sup></li>
+      <li>MIT에서 개발된 이미지 기반 딥 러닝 모델은 최대 5년 전에 유방암을 예측할 수 있습니다. <sup>3</sup></li>
+      <li>캘리포니아 대학에서 개발된 알고리즘인 샌프란시스코는 CT 검사에서 니모토호락스(폐 붕괴)를 감지하여 생명을 위협하는 이 조건으로&mdash; 환자의 우선 순위를 지정하고 치료하는 데 도움을 줍니다. FDA 승인을 얻기 위해 의료 기기에 포함된 첫 번째 알고리즘입니다.<sup> 4</sup></li>
+  </ul>
+
+
+  <p>동시에 임상 AI의 도입이 느려졌습니다. 2019년에만 12,000개 이상의 생명 과학 논문이 AI와 기계 학습에 대해 설명했습니다. <sup>5</sup> 그러나 미국 식품의약국(FDA)은 현재까지 30개가 넘는 AI 및 기계 학습 기반 의료 기술만 승인했습니다. <sup>6</sup> 데이터 액세스는 임상 승인의 주요 장벽입니다. FDA는 모델이 일반화 될 수 있다는 증거를 필요로하며, 이는 환자, 환경 또는 장비에 관계없이 일관되게 수행된다는 것을 의미합니다. 이 표준은 알고리즘이 실제 환경에서 직면하게 될 모든 변수에 대해 학습할 수 있도록 매우 다양한 실제 데이터에 액세스해야 합니다. 그러나 개인 정보 보호 및 보안 문제로 인해 이러한 데이터에 액세스하기가 어렵습니다.</p>
+
+
+  <h2>모델 승인에 대한 장벽 뚫기</h2>
+
+
+  <p>AI 혁신가이자 의료 데이터 관리자인 UCSF는 이러한 과제를 해결하려고 했습니다. &ldquo;UCSF의 디지털 건강 혁신 센터(CDHI)의 전무 이사 인 Michael Blum 박사는 데이터 소유자와 알고리즘 개발자가 더 큰 데이터 세트, 더 대표적인 데이터 세트를 개발할 수 있을 뿐만 아니라 [데이터 소유자]가 데이터의&rdquo; 프라이버시를 위험에 빠뜨리지 않고 알고리즘 개발자에게 노출될 수 있도록 허용하는 방법을 찾아야 했습니다.<sup> 7</sup></p>
+
+
+  <p>UCSF는 Microsoft, Intel 및 Fortanix의 지원을 받아 BeeKeeperAI라는 플랫폼을 만들었습니다. 이를 통해 데이터 관리자와 알고리즘 개발자는 데이터를 이동하거나 공유하거나 알고리즘을 공개하지 않고도 AI 모델의 유효성을 검사하고 테스트하는 여러 기관의 매우 다양한 실제 데이터 세트에 대한 액세스를 제공하는 방식으로 안전하게 공동 작업할 수 있습니다. 그 결과 임상 AI의 개발 및 승인을 획기적으로 가속화할 수 있는 제로 트러스트 환경이 생성되었습니다.</p>
+
+
+  <p>BeeKeeperAI는 <a href="https://azure.microsoft.com/en-us/solutions/confidential-compute/" target="_blank">Azure 기밀 컴퓨팅</a>을 통해 사용할 수 있는 소프트웨어와 하드웨어의 고유한 조합에 의존합니다. 이 솔루션은 Intel SGX( <a href="https://intel.com/sgx" target="_blank">Software Guard Extensions</a> )를 사용하는 특수 Intel 프로세서에서 실행되는 VM(가상 머신)을 사용합니다. Intel SGX는 Enclave라고 &ldquo;&rdquo; 하는 하드웨어&rsquo; 프로세서 및 메모리의 보안 부분을 만들어 코드 및datainside&nbsp;를 암호화하고&nbsp; 격리합니다. <a href="https://aka.ms/fortanixmarketplace02" target="_blank">Fortanix의 소프트웨어</a> 는 암호화, 키 관리 및 워크플로를 처리합니다.</p>
+
+
+  <h2>제로 트러스트 모델 증명</h2>
+
+
+  <p>2021년 6월, BeeKeeperAI 플랫폼은 Azure 기밀 컴퓨팅 환경을 통해 두 개의 데이터 관리자 환경에 알고리즘 모델을 보내는 기능을 보여 줍니다. 확인 시 모델과 데이터는 Intel SGX 보안 Enclave에 들어갔고, 여기서 모델은 PHI 데이터 집합에 대해 유효성을 검사할 수 있었습니다. 프로세스 전체에서 알고리즘 소유자가 데이터를 볼 수 없었고, 데이터 관리자가 알고리즘 모델을 볼 수 없었으며, BeeKeeperAI는 데이터나 모델을 볼 수 없었습니다.&nbsp; 이 플랫폼은 타사 HIPAA 보안 감사를 완료하고 통과했으며 첫 번째 제품 릴리스인 EscrowAI는 2022년 3월에 Azure Marketplace에서 상업적으로 사용할 수 있습니다.</p>
+
+
+  <p>BeeKeeperAI는 현재 프랑스에 본사를 둔 Microsoft 파트너인 aiScreenings와 협력하여 망막병증 식별을 위한 aiScreenings 알고리즘의 유효성 검사를 용이하게 하므로 플랫폼&rsquo; 글로벌 적용 가능성을 입증하고 있습니다. &ldquo;BeeKeeperAIs&rsquo; 제로 트러스트 환경의 중요한 이점은 EU 일반 데이터 보호 규정 데이터 보안 표준을 준수하는 것이라고 aiScreenings&rdquo; 의 CEO 인 Arnaud Lambert는 말합니다. &ldquo;BeeKeeperAI는 미국 환자 데이터에 대한 알고리즘의 성능을 확인하기 위해 역사적으로 소비한 노력을 줄여 출시 시간을 단축합니다.&rdquo; aiScreenings는 BeeKeeperAI를 사용하여 중요한 암 기반 병리학에 대한 알고리즘을 평가할 계획입니다.</p>
+
+
+  <h2>더 나은 치료를 위한 공동 작업</h2>
+
+
+  <p>이는 다중 사이트 및 희귀 데이터 세트에 대한 액세스가 개선되어 치료를 개선하고 비용을 절감하며 생명을 구할 수 있는 새로운 알고리즘을 개발할 수 있는 기회를 열어주는 한 가지 예일 뿐입니다. 또한 BeeKeeperAI 팀은 이 기술이 출시 시간을 최대 12개월 단축하고 일반적인 프로젝트에 대한 개발 비용으로 $1M에서 $3M까지 절약할 수 있을 것으로 예상합니다.</p>
+
+
+  <p>&ldquo;Microsoft는 의료용 도구를 만드는 데 많은 투자를 했으며 BeeKeeperAI가 Azure 마켓플레이스에서&rdquo;&rsquo; 직접 배포될 제로 트러스트 플랫폼에 필요한 기능을 조립할 수 있도록 했습니다. &ldquo;또한 Azure는 제로 트러스트 플랫폼의 중요한 구성 요소인 Intel SGX 기술에 액세스하는 데 사용할 수 있는 유일한 클라우드입니다.&rdquo;</p>
+
+
+  <p>&ldquo;연구원들이 환자 결과를 개선할 수 있는 혁신적인 알고리즘을 만들 때, 우리는 그들이 이 목표를 달성하고 개인 데이터의 프라이버시를 보호하기 위해 믿을 수 있는 클라우드 인프라를 갖출 수 있기를 바랍니다.&rdquo; &ldquo;Microsoft는 이러한 중요한 프로젝트와 연결되고 전 세계 의료 조직에 Azure 기밀 컴퓨팅 인프라를 제공하는 것을 자랑스럽게 생각합니다.&rdquo; <sup>8</sup></p>
+
+
+  <h2>하드웨어 및 소프트웨어 보안 통합</h2>
+
+
+  <p>데이터 관리자는 Intel SGX 보안 Enclave 내에서 종료되는 암호화된 연결을 사용하여 암호화된 데이터를 클라우드 환경에 업로드합니다. 그런 다음 알고리즘 개발자는 암호화된 컨테이너화된 AI 모델을 제출합니다. 이 모델은 Intel SGX 보안 enclave로도 종료됩니다. 키 관리 시스템을 사용하면 컨테이너가 Enclave 내의 데이터에 대해 모델을 인증하고 실행할 수 있습니다. 데이터 관리자는 컨테이너 내의 알고리즘을 볼 수 없으며 데이터는 알고리즘 개발자에게 표시되지 않습니다. 두 구성 요소 모두 enclave를 벗어나지 않습니다.&nbsp; 악의적인 관리자나 맬웨어로 손상된 시스템 구성 요소조차도 알고리즘 또는 데이터에 액세스할 수 없습니다.</p>
+
+
+  <p>모델을 실행한 후 개발자는 데이터 특성에 대한 요약과 함께 알고리즘&rsquo; 성능 값에 대한 성능 보고서를 받습니다. 마지막으로 알고리즘 소유자는 유효성 검사 결과에 대한 정보를 포함하는 암호화된 아티팩트가 규정 준수를 위해 저장되도록 요청할 수 있습니다. 그런 다음, 데이터와 알고리즘이 시스템에서 초기화됩니다. &ldquo;혁신가이자 알고리즘 개발자로서 저는 이제 몇 년이 걸렸을 큰 데이터 세계에 액세스할 수 있고, 제가 할 수 있는 누적&mdash;에 수백만 달러의 비용이 들었습니다. 나는 더 이상 내가 개발하기 위해 고군분투 한 IP [지적 재산]이 더 이상 악용 될 위험이 있다는 것을 걱정할 필요가&#39;&#39;없습니다. 이제 알고리즘을 개발하고 유효성을 검사하는 데 필요한 데이터에 액세스할 수 있으며 안전한 방법으로 이 작업을 수행할 수 있다는 것을 알고 있습니다. 그&#39;우리가 지금 어디에 있는 것보다 헬스케어와 기술 관점에서 훨씬 더 나은 세계입니다.&rdquo;, 블룸은 말합니다.<sup> 9개</sup></p>
+
+
+  <p><strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7e54536f-f18d-4575-b535-7badbeeb5527.png"><img alt="Graphic summary of information presented in the Bringing together hardware and software security section of the BeeKeeperAI blog. Image depicts the step-by-step process of how BeeKeeperAI works and utilizes hexagon style visuals to evoke a honeycomb style with icons representing the different steps of the process." border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f91858d1-a3a3-4e76-8543-32fa605f702f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="BeeKeeperAI 작동 방식" width="1024"></a></strong></p>
+
+
+  <h2>전체 의료 AI 에코시스템의 혜택</h2>
+
+
+  <p>BeeKeeperAI를 사용하면 개발자가 데이터 관리자에 대한 개인 정보 보호 또는 보안 위험을 만들지 않고 필요한 데이터에 액세스할 수 있습니다. &ldquo;이러한 기술을 결합하면 실제 환경에서&rdquo; AI 배포를 가속화할 수 있는 전례 없는 기회가 생깁니다.<sup> 10</sup></p>
+
+
+  <p>BeeKeeperAI를 통해 과학 혁신을 발전시키는 임무를 맡은 데이터 관리자는 개인 정보 보호 및 보안에 대한 헌신을 유지하면서 알고리즘 소유자와 함께 공동 작업할 수 있는 능력을 얻게 됩니다.</p>
+
+
+  <p>이 솔루션을 사용하면 혁신가가 더 많은 장소에서 더 많은 사용자에게 혜택을 주는 AI 알고리즘을 쉽게 만들고 더 빠르고 저렴한 비용으로 공급자와 환자에게 AI를 배포할 수 있습니다. 다음&rsquo; 전염병과 싸우거나, 질병을 일찍 진단하거나, 더 개인화 된 약을 사용하도록 설정하든, 환자는 궁극적으로이 기술적 도약의 가장 중요한 수혜자가 될 것입니다.</p>
+
+
+  <p><a href="https://aka.ms/AzureCC" target="_blank">Azure 기밀 컴퓨팅 및 Intel SGX</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <p><a href="https://fortanix.com/products/confidential-computing-manager/" target="_blank">Fortanix 기밀 컴퓨팅 관리자</a>에 대해 자세히 알아봅니다.&nbsp;</p>
+
+
+  <hr>
+
+  <p><sup>1</sup> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6779111/#:~:text=The%20health%20care%20market%20for,Frost%20%26%20Sullivan%2C%202016).&amp;text=The%20research%20firm%20Frost%20%26%20Sullivan,%25%20(Hsieh%2C%202017a" target="_blank">의학에서 인공 지능이 의사의 미래 역할에 미치는 영향</a>, NCBI, 2019</p>
+
+
+  <p><sup>2</sup> <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00039-X/fulltext" target="_blank">흉부 엑스레이 및 임상 데이터를 기반으로 인공 지능을 사용하여 COVID-19 환자의 진단 : 회고 연구</a>, Lancet, 2021</p>
+
+
+  <p><sup>3</sup> <a href="https://news.mit.edu/2019/using-ai-predict-breast-cancer-and-personalize-care-0507" target="_blank">AI를 사용하여 유방암 예측 및 개인 관리</a>, MIT, 2019</p>
+
+
+  <p><sup>2020</sup><a href="https://www.ucsf.edu/news/2019/09/415406/artificial-intelligence-reads-chest-x-rays-approved-fda" target="_blank">년 UCSF FDA에 의해 흉부 엑스레이를 읽는 4차원 지능이 승인되었습니다</a>.</p>
+
+
+  <p><sup>5</sup> <a href="https://www.nature.com/articles/s41746-020-00324-0" target="_blank">인공 지능 기반 FDA 승인 의료 기기 및 알고리즘의 상태: 온라인 데이터베이스</a>, 자연, 2020</p>
+
+
+  <p><sup>6</sup> <a href="https://www.nature.com/articles/s41746-020-00324-0" target="_blank">인공 지능 기반 FDA 승인 의료 기기 및 알고리즘의 상태: 온라인 데이터베이스</a>, 자연, 2020</p>
+
+
+  <p><sup></sup><a href="https://www.healthleadersmedia.com/innovation/ucsf-joins-forces-tech-companies-eliminate-data-sharing-risks" target="_blank">7UCSF는 Data-Sharing 위험을 제거하기 위해 기술 회사와 힘을 합</a>친다, HealthLeaders 미디어</p>
+
+
+  <p><sup>8</sup> Microsoft Azure 의료, 적중 인프라<a href="https://hitinfrastructure.com/news/microsoft-azure-forms-collaboration-to-enhance-ai-in-healthcare" target="_blank">에서 AI를 향상시키기 위한 협업을 형성</a>합니다.</p>
+
+
+  <p><sup></sup><a href="https://www.healthleadersmedia.com/innovation/ucsf-joins-forces-tech-companies-eliminate-data-sharing-risks" target="_blank">9UCSF는 Data-Sharing 위험을 제거하기 위해 기술 회사와 힘을 합</a>친다, HealthLeaders 미디어</p>
+
+
+  <p><sup>10</sup> Microsoft Azure 의료, 적중 인프라<a href="https://hitinfrastructure.com/news/microsoft-azure-forms-collaboration-to-enhance-ai-in-healthcare" target="_blank">에서 AI를 향상시키기 위한 협업을 형성</a>합니다.</p>

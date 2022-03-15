@@ -1,0 +1,18 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 819cedd9b591c50892d6f267344e5f42b4efdc02
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899209"
+Slug: a-sample-application-for-pulling-data-from-sql-into-an-azure-event-hub
+Title: SQL Azure Event Hub로 데이터를 끌어옵니다.
+Summary: Dinar Gainitdinov에서 생성한 최근 문서 및 코드 샘플에서는 복잡한 조인 및 쿼리를 실행한 다음 업데이트된 레코드를 Azure Event Hub에 푸시하는 간단한 애플리케이션을 빌드하는 방법을 보여 줍니다.
+Content: >-
+  <p>제어하는 디바이스에서 Azure로 데이터를 푸시하고 다른 스트리밍 또는 정적 데이터와 함께 분석하는 방법에 대한 <a href="https://azure.microsoft.com/en-us/documentation/articles/?suite=iot-suite">문서 문서</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/samples/?service=iot-hub">코드 샘플</a> 이 많이 있습니다. 최근에 <a href="https://azure.microsoft.com/en-us/documentation/articles/event-hubs-pulling-public-data/" target="_blank">퍼블릭 웹 피드에서 데이터를 가져와</a> Azure로 푸시하는 방법에 대한 예제도 게시했습니다.</p>
+
+
+  <p>세 번째 시나리오는 SQL Azure 테이블에서 데이터를 끌어와서 해당 데이터를 Azure Event Hub로 푸시하는 시나리오입니다. 예를 들어 일부 복잡한 조인 및 쿼리를 실행한 다음 업데이트된 레코드를 Azure Event Hub에 푸시할 수 있도록 원래 스트리밍 원본의 데이터를 SQL Azure 푸시해야 하는 경우가 많습니다. Dinar Gainitdinov에서 만든 최근 문서 및 코드 샘플은 이를 수행하기 위해 간단한 애플리케이션을 빌드하는 방법을 보여 줍니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/event-hubs-pulling-sql-data/">기술 설명서</a> 및 <a href="https://github.com/Azure-Samples/event-hubs-dotnet-import-from-sql" target="_blank">SqlToEventHub</a> 솔루션 코드를 확인하여 테스트합니다.</p>

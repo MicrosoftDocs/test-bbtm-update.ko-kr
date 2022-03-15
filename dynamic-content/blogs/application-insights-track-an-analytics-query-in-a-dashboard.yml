@@ -1,0 +1,109 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 019da7eb5e0ea57372d47b4dee7639d03392a116
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903342"
+Slug: application-insights-track-an-analytics-query-in-a-dashboard
+Title: '애플리케이션 Insights: 대시보드에서 분석 쿼리 추적'
+Summary: 이제 Visual Studio Application Insights 원격 분석에서 계산된 분석 쿼리를 지속적으로 모니터링하고 Azure 공유 대시보드에 결과를 표시할 수 있습니다.
+Content: >-
+  <p>이제 <a href="https://azure.microsoft.com/services/application-insights/">Visual Studio Application Insights</a> 원격 분석에서 계산된 <a href="https://azure.microsoft.com/documentation/articles/app-insights-analytics/">분석</a> 쿼리를 지속적으로 모니터링하고 <a href="https://azure.microsoft.com/documentation/articles/app-insights-dashboards/#share-dashboards-with-your-team">Azure 공유 대시보드</a>에 결과를 표시할 수 있습니다. 즉, 웹 서비스의 성능 또는 사용량을 모니터링하는 데 도움이 되는 대시보드를 함께 배치하면 다른 메트릭과 함께 매우 복잡한 분석을 포함할 수 있습니다.</p>
+
+
+  <p><img alt="Track an Analytics query in a dashboard" border="0" height="286" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a158934f-07a6-4960-ab65-02c48eabde6e.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="대시보드에서 분석 쿼리 추적" width="610"></p>
+
+
+  <p>예를 들어 2초 이내에 웹 사이트가 완료하는 요청의 백분율을 추적하려는 경우&rsquo;를 가정해 보겠습니다&rsquo;. 당신은&rsquo; 가장 인기있는 페이지에만 관심이 있습니다. 분석 쿼리로 작성하는 것은 어렵지 않지만 표준 메트릭 중 하나로 제공되지는 않습니다&rsquo;. 최근까지 분석 창에서만 쿼리를 실행할 수 있었고&rsquo; 차트를 최신 상태로 유지하려면 간격으로 이동을 클릭해야 합니다. 하지만 이제 시스템 원격 분석의 포괄적인 대시보드에 포함할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/documentation/articles/app-insights-dashboards/">대시보드는</a> 특히 시스템의 여러 앱에서 메트릭을 동시에 보려는 경우 가장 중요한 차트(&rsquo;이미 검색된 것처럼)를 함께 가져오는 데 적합합니다. 또한 여러 대시보드를 만들 수 있습니다. 개발 팀 룸은 모든 프런트 및 백 엔드 앱의 성능을 주시할 수 있으며, 경영진은 시스템 사용량을 매주 검토할 수 있습니다.</p>
+
+
+  <h2>1. 대시보드 공유</h2>
+
+
+  <p>분석 차트를 <a href="https://azure.microsoft.com/documentation/articles/app-insights-dashboards/#share-dashboards-with-your-team">공유 대시보드</a>에만 고정할 수 있으므로 하나 이상의 대시보드를 공유하는 것이 중요한 예비 단계입니다.</p>
+
+
+  <p><img alt="Share a dashboard" border="0" height="351" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/60eb5d71-d8ad-473f-94c8-69b9cf408af8.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="대시보드 공유" width="610"></p>
+
+
+  <h2>2. 분석 쿼리 작성</h2>
+
+
+  <p>이제 앱에 대한 애플리케이션 Insights 리소스를 엽니다.</p>
+
+
+  <p>그런 다음, 분석을 클릭합니다.</p>
+
+
+  <p><img alt="Click through to Analytics" border="0" height="83" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b09d42d1-4e81-4329-953b-050da0c0071a.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="분석을 클릭합니다." width="610"></p>
+
+
+  <p>쿼리를 작성하고 테스트합니다. 앞에서 설명한 예제를 살펴보겠습니다&rsquo;.</p>
+
+
+  <p><img alt="Write an Analytics query" border="0" height="341" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d471d9be-9c45-484e-80c5-763b0d0eff82.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="분석 쿼리 작성" width="610"></p>
+
+
+  <h2>3. 대시보드에 고정</h2>
+
+
+  <p>고정 아이콘을 클릭하고 대시보드를 선택합니다. 구독의 <a href="https://azure.microsoft.com/documentation/articles/app-insights-dashboards/#share-dashboards-with-your-team">공유 대시보드</a> 만 목록에 표시됩니다. 이 기능을 켜려면 <a href="https://azure.microsoft.com/documentation/articles/app-insights-pricing/">계정을 업그레이드</a> 해야 할 수 있습니다.</p>
+
+
+  <p><img alt="Pin it to the dashboard" border="0" height="272" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b27d6b50-8f86-40b5-89b3-5b813f7f2f0c.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="대시보드에 고정" width="360"></p>
+
+
+  <h2>4. 대시보드에서 차트 조정</h2>
+
+
+  <p>이제 Azure Portal에서 대시보드로 돌아갑니다. 일반적인 방법으로 차트의 위치와 제목을 조정할 수 있습니다.</p>
+
+
+  <p><img alt="Adjust the chart on the dashboard" border="0" height="421" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2c555947-851a-4f39-82c4-854a3413236a.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="대시보드에서 차트 조정" width="610"></p>
+
+
+  <p>반시간마다 쿼리를 다시 실행하여 차트를 새로 고칩니다.</p>
+
+
+  <h2>자동 그룹화</h2>
+
+
+  <p>대시보드에 차트를 고정하면 경우에 따라 약간 간소화된 디스플레이가 표시됩니다.</p>
+
+
+  <p>예를 들어 Weve가 국가별로 요약된&rsquo; 분석의 차트는 다음과&rsquo; 같습니다.</p>
+
+
+  <p>요청 | 요약 count_search = count() by client_CountryOrRegion</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cf7825d4-f388-4983-93e8-0717ae3db965.png" style="border-width: 0px; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; width: 610px; height: 219px; background-image: none;" title=""></p>
+
+
+  <p>그러나 대시보드에 고정하면 다음과 같습니다.</p>
+
+
+  <p><img alt="Automatic grouping on dashboard" border="0" height="327" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d05fbdc8-8097-4e2d-915c-a88007ef45c6.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="대시보드의 자동 그룹화" width="610"></p>
+
+
+  <p>긴 꼬리가 어떻게 (기타)로 &ldquo;그룹화되었는지 알 수 있습니까&rdquo;? Y축의 불연속 빈으로 구분된 값 개수의 가로 막대형 차트를 고정하면 작은 항목이 자동으로 그룹화됩니다.</p>
+
+
+  <h2>다음 단계는 무엇인가&rsquo;요?</h2>
+
+
+  <p>이는 Azure 대시보드에 인사이트를 추가하여 인사이트를 운영하기 위한 첫 번째 단계일 뿐입니다. 원형 차트 시각화 지원, 대시보드 차트 편집, 대시보드 파트를 원하는 대로 정확하게 설정하는 데 도움이 되는 기타 작은 설정 등 제공할 수 있는 다른 기능이 있습니다.</p>
+
+
+  <p>언제나처럼 다음 채널 중 하나를 사용하여 질문이나 피드백을 자유롭게 보내주세요.</p>
+
+
+  <ul>
+   <li><a href="https://visualstudio.uservoice.com/forums/357324-application-insights/category/161991-analytics">아이디어 제안 및 애플리케이션 Insights 아이디어 투표</a></li>
+   <li><a href="https://social.msdn.microsoft.com/Forums/vstudio/home?forum=ApplicationInsights">애플리케이션 Insights Community 대화 참가</a></li>
+   <li><a href="https://analytics.applicationinsights.io/demo">애플리케이션 Insights 분석 사용해 보기</a></li>
+  </ul>

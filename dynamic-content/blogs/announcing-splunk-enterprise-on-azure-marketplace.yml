@@ -1,0 +1,88 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 784d11bc3df3c5f72bbef92ce730a2774ceb16ae
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899094"
+Slug: announcing-splunk-enterprise-on-azure-marketplace
+Title: Azure Marketplace에서 Splunk Enterprise 발표
+Summary: 'Azure Marketplace에서 Splunk 독립 실행형 및 클러스터 배포 가용성을 발표하게 되어 기쁩니다. 이제 Azure Marketplace에서 단일 Ubuntu Virtual Machine 또는 클러스터를 배포할 수 있습니다. '
+Content: >-
+  <p><a href="https://na01.safelinks.protection.outlook.com/?url=https%3a%2f%2fazure.microsoft.com%2fen-us%2fmarketplace%2f%3fterm%3dsplunk&amp;data=01%7c01%7cmurtazac%40microsoft.com%7c261c11d8908d48cb0ad508d347b58157%7c72f988bf86f141af91ab2d7cd011db47%7c1&amp;sdata=Lc%2fxTFtjpOTPmZ2yk4s%2fBZyrdTNUuI5NyMClabkqsdg%3d">Azure Marketplace</a>에서 <a href="https://na01.safelinks.protection.outlook.com/?url=http%3a%2f%2fwww.splunk.com%2f&amp;data=01%7c01%7cmurtazac%40microsoft.com%7c261c11d8908d48cb0ad508d347b58157%7c72f988bf86f141af91ab2d7cd011db47%7c1&amp;sdata=XxuTwv2AR6LvUn5hnQJVqK3yulg6C%2foLOQNknFdU9As%3d">Splunk</a> 독립 실행형 및 클러스터 배포 가용성을 발표하게 되어 기쁩니다. 이제 Azure Marketplace에서 단일 Ubuntu Virtual Machine 또는 클러스터를 배포할 수 있습니다.</p>
+
+
+  <h2>Splunk 정보:</h2>
+
+
+  <p>Splunk 소프트웨어는 웹 사이트, 애플리케이션, 서버, 네트워크, 센서 및 모바일 디바이스에서 들어오는 컴퓨터 생성 빅 데이터를 검색, 모니터링, 분석 및 시각화합니다. Splunk Enterprise 실시간 운영 인텔리전스를 위한 선도적인 플랫폼으로, 조직에서 컴퓨터 데이터를 검색, 모니터링 및 분석하여 보안, IT 운영, 애플리케이션 배달, 산업 데이터 및 IoT 사용 사례 전반에 걸쳐 강력한 인사이트를 검색할 수 있도록 합니다.</p>
+
+
+  <h2>Azure Marketplace를 통한 Splunk Enterprise 배포:</h2>
+
+
+  <p>Azure Portal에서 Marketplace로 이동하고 Splunk를 검색하여 Azure Marketplace에서 Splunk Enterprise 제품을 찾을 수 있습니다. 제품을 선택한 후에는 만들기 프로세스를 거치고 VM 사용자 이름, VM 사용자 암호, 구독, 리소스 그룹 이름 및 Splunk Enterprise 실행할 위치를 포함하는 배포에 대한 기본 구성을 입력하세요.</p>
+
+
+  <p>인프라 정보 섹션에서 가상 머신의 크기, 주소 공간이 있는 Virtual Network의 이름을 선택하고 서브넷을 구성합니다. Splunk 설정 섹션에서 공용 IP 이름, 도메인 이름, 배포 유형(단일 노드 또는 클러스터), 관리자 암호, SSH 간 IP 범위 및 데이터를 받을 IP 범위를 선택합니다.</p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/803336d7-9811-4e42-a142-cc274634d9df.png"><img alt="clip_image003[4]" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7a82112b-56a5-4b21-bb4c-56fbc014367c.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="clip_image003[4]" width="223"></a></p>
+
+
+  <p>Marketplace는 완료되면 요약을 제공하며, 이 시점에서 Splunk Enterprise 프로비전하는 데 사용할 ARM 템플릿을 다운로드할 수도 있습니다. 이렇게 하면 Azure CLI/PowerShell을 통해 Splunk 배포를 계속 시작하려는 고객에게 도움이 될 수 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/611338d5-a3f2-4f44-b8f2-bf5d20917623.png"><img alt="clip_image004[4]" border="0" height="194" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db2f7e21-305b-4138-acec-865f2c8629b5.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="clip_image004[4]" width="240"></a></p>
+
+
+  <p>마지막으로 방금 구성한 배포를 구매합니다. 일단 구매하면 리소스가 프로비전되기 시작합니다. 또한 법적 조건 및 개인 정보 취급 방침을 검토할 수 있는 기회를 제공합니다.</p>
+
+
+  <p>Splunk ARM 템플릿 및 실제 Splunk 배포 토폴로지에 대한 자세한 내용은 원래 <a href="https://blogs.splunk.com/2016/02/18/announcing-splunk-enterprise-in-microsoft-azure-marketplace/">Splunk 블로그 게시물을</a> 참조하세요.</p>
+
+
+  <p>Azure Marketplace 이미지 작업에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/blog/working-with-marketplace-images-on-azure-resource-manager/">이 문서를</a> 참조하세요.</p>
+
+
+  <h2>Azure에서 Splunk Enterprise 사용하는 방법:</h2>
+
+
+  <p>배포가 완료되면 Azure에서 실행되는Splunk Enterprise 서비스를 시작할&nbsp; 수 있습니다. Splunk Enterprise URL을 모르는 경우 Splunk Enterprise 배포한 리소스 그룹을 검색하고 리소스 그룹 이름을 클릭한 다음 마지막 배포 아래의 날짜 링크를 클릭합니다. splunk.splunk-enterprisebyol을 클릭하고 SPLUNKURL을 복사합니다. 복사한 URL을 브라우저&#39;주소 표시줄에 붙여넣고 템플릿을 배포하기 전에 사용자가 제공한 대로 사용자 이름을 관리자&quot; 및 암호로 &quot;입력합니다.</p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ddfebf6-b056-4946-8961-f3f7ec1dcda5.png"><img alt="clip_image006[4]" border="0" height="115" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/00857557-eb6c-45a9-ad47-46bc37873e06.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="clip_image006[4]" width="240"></a></p>
+
+
+  <p>이제 Microsoft Azure Splunk 추가 기능을 설정할 준비가 되었습니다.</p>
+
+
+  <p>Splunk는 Azure IaaS 및 PaaS에서 진단 및 성능 데이터를 수집하고 분석 및 인사이트를 위해 미리 작성된 시각화를 제공하는 Microsoft Azure 대한 플랫폼 간 추가 기능을 출시했습니다. 또한 추가 기능은 Azure 감사 데이터를 수집하여 Azure 구독 및 기본 Azure 리소스에 대한 변경 내용을 추적합니다. <a href="https://blogs.splunk.com/2016/03/15/splunking-microsoft-azure-data/">Azure용 추가 기능에 대한 자세한 내용은 Splunk 블로그를</a> 참조하세요.</p>
+
+
+  <p>여기에서 추가 기능을 다운로드 <a href="https://splunkbase.splunk.com/app/3084/">합니다</a>.</p>
+
+
+  <p>Splunk Enterprise 앱 관리 기어를 클릭하고 파일&quot;에서 앱 설치를 클릭한 &quot;다음 Splunk 추가 기능을 다운로드한 위치로 이동하여 Microsoft Azure 업로드. 서비스가 다시 시작되면 Splunk를 다시 시작하고 Splunk Enterprise 데이터 추가를 클릭해야 합니다. 모니터를 클릭하면 탐색 패널이 표시되고 왼쪽 패널에서 Azure Diagnostics를 선택하여 다른 필드와 함께 모니터링하려는 Azure Storage 계정의 계정 액세스 키 Storage Azure Storage 계정 이름을 입력할 수 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/407319a6-854b-4f44-bf37-b3300a119f0d.png"><img alt="clip_image013[4]" border="0" height="119" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3549127b-a4f2-4c4d-a066-c5c41a8eca75.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="clip_image013[4]" width="240"></a></p>
+
+
+  <p>완료되면 데이터 검색 및 분석을 시작할 수 있습니다. 추가 기능과 함께 제공되는 미리 빌드된 패널을 사용하여 사용자 고유의 대시보드를 쉽게 빌드할 수도 있습니다. <a href="https://docs.splunk.com/Documentation/Splunk/latest/Viz/AddPanels">미리 빌드된 패널 사용에</a> 대한 자세한 내용은 Splunk 문서를 참조하세요.</p>
+
+
+  <p>다음은 <a href="https://www.youtube.com/watch?v=IFgf3yS8X8w">Splunk의 비디오 데모</a>입니다.</p>
+
+
+  <p>Azure에서 행복한 스플렁킹!</p>
+
+
+  <h2>FAQ</h2>
+
+
+  <ul>
+   <li>클러스터를 프로비전하는 데 문제가 발생하는 경우 만든 리소스 그룹을 확인하여 자세한 도움말을 볼 수 있습니다.</li>
+   <li>배포 중 충돌, 오류 &ldquo;작업으로 인해 Core의 할당량 한도를 초과합니다.&rdquo; 배포에는 현재 할당량보다 더 많은 리소스가 필요합니다. 추가 할당량 증가를 요청할 수 있습니다. <a href="https://na01.safelinks.protection.outlook.com/?url=https%3a%2f%2fazure.microsoft.com%2fen-us%2fdocumentation%2farticles%2fresource-group-deploy-debug%2f%23authentication-subscription-role-and-quota-issues&amp;data=01%7c01%7cmurtazac%40microsoft.com%7c261c11d8908d48cb0ad508d347b58157%7c72f988bf86f141af91ab2d7cd011db47%7c1&amp;sdata=TltMWjddeljTr8s3lt0%2fIbNP8kVsyFnTEJ8zbC%2fbgbY%3d">자세한 내용은 여기</a>를 참조하세요.</li>
+   <li>배포에 성공했습니다. 그러나 Splunk Enterprise 사용하는 데 도움이 필요합니다. 기술 개요는 <a href="https://docs.splunk.com/Documentation/Splunk/latest/Overview/Whatsinthismanual">Splunk Enterprise 설명서를 참조하세요</a>. Splunk 지원은 다음 <a href="mailto:support@splunk.com.%20For%20feature%20requests%20and%20feedback%20">support@splunk.com으로 문의하세요. </a>Azure Marketplace 솔루션의 Splunk에 대한 기능 요청 및 피드백은 에 문의하세요. <a href="mailto:azure-marketplace@splunk.com">azure-marketplace@splunk.com</a></li>
+  </ul>

@@ -1,0 +1,72 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 99f29ae8841285dfe1397f24032377d1268865d9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903035"
+Slug: boost-your-client-performance-with-azure-files-smb-multichannel
+Title: Azure Files SMB 다중 채널로 클라이언트 성능 향상
+Summary: 프리미엄 계층에서 SMB(서버 메시지 블록) 다중 채널을 사용하여 클라이언트 성능을 향상하면서 배포 비용을 낮춥니다.
+Content: >-
+  <p>프리미엄 계층에서 SMB(서버 메시지 블록) 다중 채널을 사용하여 클라이언트 성능을 향상하면서 배포 비용을 낮춥니다.</p>
+
+
+  <p>오늘 프리미엄 계층에서 Azure Files SMB 다중 채널의 미리 보기를 발표합니다. SMB 3.0은 Windows Server 2012 및 Windows 8 클라이언트에 SMB 다중 채널 기술을 도입했습니다. 이 기능을 사용하면 SMB 3.x 클라이언트가 여러 네트워크 어댑터 및 RSS(수신측 크기 조정)를 사용하도록 설정된 네트워크 어댑터를 통해 성능을 높이기 위해 SMB 3.x 서버에 여러 네트워크 연결을 설정할 수 있습니다. 이 미리 보기 릴리스를 통해 Azure Files SMB 클라이언트는 이제 클라우드의 프리미엄 파일 공유를 통해 SMB 다중 채널 기술을 활용할 수 있습니다.</p>
+
+
+  <h2>이점</h2>
+
+
+  <p>SMB 다중 채널은 최적의 네트워크 경로를 통해 여러 연결을 허용하여 병렬 처리에서 성능을 향상할 수 있습니다. 향상된 성능은 여러 NIC에 대한 대역폭 집계 또는 여러 CPU 및 동적 부하 분산에서 분산 IO를 가능하게 하는 RSS(수신면 크기 조정)에 대한 NIC 지원을 통해 달성됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fbe93c88-4abb-4af2-8385-9fc8bb215064.jpg"><img alt="SMB MC Blog pic" border="0" height="258" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7b36fc4f-fc98-42d0-9d6f-daf34e7c9fe0.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="SMB MC 블로그 사진" width="1024"></a></p>
+
+
+  <h3>Azure Files SMB 다중 채널의 이점은 다음과 같습니다.</h3>
+
+
+  <ul>
+      <li><strong>높은 처리량</strong>: 이 기능은 콘텐츠 생성/코드 변환, 게놈 및 금융 서비스 위험 분석을 위한 미디어 &amp; 엔터테인먼트와 같은 큰 IO가 있는 큰 파일이 있는 애플리케이션에 적합합니다.</li>
+      <li><strong>IOPS 증가</strong>: 데이터베이스 애플리케이션과 같은 작은 IO 시나리오에 특히 유용합니다.</li>
+      <li><strong>네트워크 내결함성</strong>: 네트워크 연결 손실에도 불구하고 여러 연결이 중단될 위험을 완화합니다.</li>
+      <li><strong>자동 구성</strong>: 동적 검색 및 여러 네트워크 경로 만들기</li>
+      <li><strong>비용 최적화</strong>: 전체 VM 제한을 활용하여 단일 VM(가상 머신) 클라이언트에서 더 높은 규모를 달성합니다. Azure Files 프리미엄 대역폭 및 IOPS 규모에 도달하려면 이제 애플리케이션에서 필요한 규모를 달성하기 위해 더 적은 수의 VM 클라이언트가 필요합니다.</li>
+  </ul>
+
+
+  <p>다음은 SMB 다중 채널 기능을 사용하도록 설정하여 최대 3배의 성능 향상을 보여 주는 샘플 테스트 결과입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/522b9cb0-5dae-415d-b164-80fcc71a2892.jpg"><img alt="Placeholder" border="0" height="303" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4f892a43-c5a2-4cb6-92dc-0ce1fefc2e6b.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>위의 샘플 테스트 결과는 프리미엄 파일 공유에 연결된 단일 RSS 사용 NIC가 있는 단일 가상 머신 클라이언트(Standard_D32s_v3)를 사용하여 임의 IO 부하를 생성하여 수행된 내부 테스트를 기반으로 합니다. Diskspd 도구는 공유의 여러 파일에 대해 여러 스레드 워크로드 패턴을 시뮬레이션하기 위해 큐 깊이가 64인 10개 파일에 대한 부하를 생성하는 데 사용되었습니다. IOPS 결과는 4KiB 읽기 및 쓰기 IO 크기를 기반으로 하며, 처리량 테스트는 성능을 최적화하기 위해 512KiB 읽기 및 쓰기 IO 크기를 기반으로 합니다. 읽기 처리량에 비해 쓰기 처리량에서 더 큰 백분율 증가가 관찰되었습니다.</p>
+
+
+  <p>이 기능에 대한 자세한 내용은 Windows 설명서에서 <a href="https://docs.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel" target="_blank">SMB 다중 채널 관리</a> 가이드를 참조하세요.</p>
+
+
+  <h2>가격 책정 및 가용성</h2>
+
+
+  <p>Azure Files Premium Storage 계정에 대한 SMB 다중 채널은 추가 비용이 전혀 들지 않습니다. 또한 워크로드에 가장 비용 효율적인 파일 스토리지를 제공하기 위한 지속적인 노력의 일환으로 최근 <strong>Azure Files 프리미엄 계층에서</strong> <strong>33% 이상의</strong> 가격 인하를 <a href="https://aka.ms/pfs/lowerpricing" target="_blank">발표</a>했습니다. 프리미엄 계층 <a href="https://azure.microsoft.com/en-us/pricing/details/storage/files/" target="_blank">가격 책정</a> 에 대한 자세한 내용은 가격 책정 페이지를 참조하세요.</p>
+
+
+  <p>현재 프리미엄 공유의 SMB 다중 채널 미리 보기는 Windows SMB 3.x 클라이언트의 제한된 지역에서 사용할 수 있습니다. 프리미엄 계층을 사용하여 모든 <a href="https://azure.microsoft.com/en-us/updates/azure-files-premium-tier-is-now-available-in-more-regions-with-lrs-zrs-and-nfs-support/" target="_blank">Azure 지역으로</a> 범위를 빠르게 확장하고 있습니다. Azure Files 설명서를 방문하여 SMB 다중 채널의 <a href="https://aka.ms/AzureFiles/SMBMultichannel/regions" target="_blank">지역 가용성</a> 을 최신 상태로 유지합니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>Azure Files 설명서에서 기능 기능 및 <a href="https://aka.ms/AzureFiles/SMBMultichannel/docs" target="_blank">SMB 다중 채널 성능</a> 에 대해 자세히 알아봅니다. 시작하려면 SMB 다중 채널 기능 미리 보기에 대한 구독을 등록해야 합니다. 등록이 완료되면 단추를 클릭하여 <a href="https://aka.ms/AzureFiles/SMBMultichannel/regions" target="_blank">지원되는 지역</a> 중 하나에서 Premium Storage 계정(<em>FileStorage</em>)에서 SMB 다중 채널을 사용하거나 사용하지 않도록 설정할 수 있습니다. 미리 보기 프로그램에 등록하는 방법에 대한 <a href="https://aka.ms/AzureFiles/SMBMultichannel/setup" target="_blank">단계별 지침을</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8ec20214-c7ab-49d1-a8e5-bb893e406296.png"><img alt="Placeholder" border="0" height="507" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/00689dfa-88ce-4cc1-9e1a-670cec879a64.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>미리 보기를 사용해 보고 이메일을 <a href="mailto:AzureFiles@microsoft.com">AzureFiles@microsoft.com</a>보내 피드백을 공유하세요. 피드백 포럼에 Azure Storage 대한 아이디어와 제안을 게시할 수도 있습니다<a href="https://feedback.azure.com/forums/217298-storage" target="_blank">.</a></p>
+
+
+  <p>행복한 공유.</p>

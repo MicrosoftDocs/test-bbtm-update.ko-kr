@@ -1,0 +1,24 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f4dacb072035a0750dd6a0090f2034c39ef211c3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897069"
+Slug: windows-virtual-desktop-is-now-generally-available-worldwide
+Title: Windows Virtual Desktop은 이제 전 세계적으로 일반 공급됩니다.
+Summary: 지난 3월 Windows Virtual Desktop의 미리 보기를 발표한 이후 수천 명의 고객이 서비스를 파일럿하여 Microsoft가 통합할 수 있는 귀중한 피드백과 인사이트를 제공했습니다.
+Content: >-
+  <p>지난 3월 <a href="https://aka.ms/WVD" target="_blank">Windows Virtual Desktop</a>의 <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2019/03/21/windows-virtual-desktop-public-preview/" target="_blank">미리 보기를 발표한</a> 이후 수천 명의 고객이 서비스를 파일럿하여 Microsoft가 서비스에 통합할 수 있도록 귀중한 피드백과 통찰력을 제공했습니다. 오늘 Windows Virtual Desktop의 전 세계 일반 공급에 대해 발표하게 되어 기쁩니다. 간소화된 관리, 다중 세션 Windows 10 환경, Office 365 ProPlus 최적화 및 Windows SERVER RDS(원격 데스크톱 서비스) 데스크톱 및 앱에 대한 지원을 제공하는 유일한 서비스입니다. Windows Virtual Desktop을 사용하면 몇 분 안에 Azure에서 Windows 데스크톱 및 앱을 배포하고 확장할 수 있습니다.</p>
+
+
+  <p>이제 모든 지역에서 사용할 수 있는 고객은 최대 3년 동안 무료 확장 보안 업데이트가 있는 Windows 10 다중 세션, Windows Server 및 Windows 7개의 데스크톱을 비롯한 다양한 운영 체제로 확장 가능한 Azure 기반 가상화 솔루션을 배포할 수 Windows 10 있습니다.&nbsp;  또한 고객이 가상화 투자를 최대한 활용할 수 있도록 Windows Virtual Desktop의 이점과 기능을 확장할 수 있는 광범위한 파트너 에코시스템을 구축하기 위해 긴밀히 협력하고 있습니다.</p>
+
+
+  <p><a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fpricing%2Fdetails%2Fvirtual-desktop%2F&amp;data=02%7C01%7Cv-jegodw%40microsoft.com%7C4ae6f476104e487390ec08d742c02b1e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637051265449199753&amp;sdata=1x3lak64x9OPmb6pePOrgCYGEdQGYCSuPdd9MFDE2jc%3D&amp;reserved=0" target="_blank">적절한 라이선스</a>를 사용하여 <a href="https://aka.ms/WVDGetStarted" target="_blank">오늘 시작</a>하도록 Azure 구독을 설정하기만 하면 됩니다. <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fpricing%2Freserved-vm-instances%2F&amp;data=02%7C01%7Cv-jegodw%40microsoft.com%7C4ae6f476104e487390ec08d742c02b1e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637051265449209747&amp;sdata=AxUdgw9ubGWIEUQk%2FunW2qiFe7yolAp94wkNfsdE3Jc%3D&amp;reserved=0" target="_blank">Azure Virtual Machine Reserved Instances</a>를 활용하여 최대 80%까지 비용을 절감하여 환경에 맞는 가상 머신 및 스토리지 유형을 선택하고 비용을 최적화할 수 있습니다. 새 <a href="https://aka.ms/WVDPricing" target="_blank">Windows Virtual Desktop 가격 계산기를</a> 사용하여 Azure에서 환경을 운영하는 비용을 예측합니다.</p>
+
+
+  <p>오늘 &nbsp;<a href="https://aka.ms/WVDGABlog" target="_blank">게시 된 우리의 Microsoft 365 일반 공급 블로그</a>에서 발표에 대해 자세히 읽어 브래드 앤더슨과 누모토 다키.</p>
+
+
+  <p>Windows Virtual Desktop에 대해 <a href="https://aka.ms/WVD" target="_blank">자세히 알아보</a>고 <a href="https://aka.ms/WVDGetStarted" target="_blank">오늘 시작</a>하세요.</p>

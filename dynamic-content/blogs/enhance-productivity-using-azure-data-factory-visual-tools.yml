@@ -1,0 +1,182 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6eab76769a6e920c2f12cd6f7306eb4e74d94c35
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903275"
+Slug: enhance-productivity-using-azure-data-factory-visual-tools
+Title: Azure Data Factory Visual Tools를 사용하여 생산성 향상
+Summary: ADF(Azure Data Factory) 시각적 도구를 사용하여 피드백을 듣고 풍부한 대화형 시각적 작성 및 모니터링 환경을 사용하도록 설정했습니다. 이를 통해 마찰 없이 데이터 통합 파이프라인을 반복적으로 만들고, 구성하고, 테스트하고, 배포하고, 모니터링할 수 있습니다.
+Content: >-
+  <p>ADF(Azure Data Factory) 시각적 도구를 사용하여 피드백을 듣고 풍부한 대화형 시각적 작성 및 모니터링 환경을 사용하도록 설정했습니다. 이를 통해 마찰 없이 데이터 통합 파이프라인을 반복적으로 만들고, 구성하고, 테스트하고, 배포하고, 모니터링할 수 있습니다. ADF 시각적 도구의 주요 목표는 한 줄의 코드를 작성하지 않고도 파이프라인을 빠르게 시작하고 실행하여 ADF에서 생산성을 높일 수 있도록 하는 것입니다.</p>
+
+
+  <p>직관적인 환경을 갖춘 신규 및 고급 사용자 모두의 생산성과 효율성을 높이기 위해 계속해서 새로운 기능을 추가합니다. 프로비전된 v2 데이터 팩터리 블레이드에서 <strong>작성자 및 모니터</strong> 타일을 클릭하여 시작할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/69e338b5-6d80-4a5a-a75f-cf5b055b98dc.png"><img alt="image" border="0" height="425" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4426a4b3-debf-4d01-b52c-a61dfa1fb2fd.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="이미지" width="342"></a></p>
+
+
+  <p>공개 미리 보기(2018년 1월) 이후 데이터 팩터리 시각적 도구에서 사용할 수 있는 흥미로운 새로운 기능 중 일부를 확인하세요.</p>
+
+
+  <h2>최신 데이터 팩터리 업데이트</h2>
+
+
+  <p>데이터 팩터리 서비스에 대한 흥미로운 새 업데이트를 따릅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/54c7a8ab-cb2e-4b9c-9fd2-2f69c6f05ac8.png"><img alt="Enhance 1" border="0" height="449" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f887c075-a3f0-41c4-872c-639cb35fbdf9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 1" width="749"></a></p>
+
+
+  <p>Data Factory 배포 지역 및 리소스 그룹을 봅니다. 그런 다음 액세스 권한이 있는 다른 데이터 팩터리로 전환합니다.</p>
+
+
+  <h3><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d5ab721e-37a4-4431-a101-4ca1f2a3467a.png"><img alt="Enhance 2" border="0" height="451" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/facf93f5-dad9-48a0-a9af-7308a7a9760c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 2" width="762"></a></h3>
+
+
+  <h2>시각적 개체 작성</h2>
+
+
+  <h3>더 많은 데이터 커넥터</h3>
+
+
+  <p>서버리스 방식으로 70개 이상의 온-프레미스/클라우드 데이터 원본에서 대규모로 데이터를 수집합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/36500a9e-51d0-4ba9-8b78-a30687117314.png"><img alt="Enhance 4" border="0" height="458" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ce254fce-b967-48a8-836d-cd56db1b4ca4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="개선 4" width="774"></a></p>
+
+
+  <h3>도구 상자의 새 활동</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/resources/videos/azure-friday-ingest-prepare-and-transform-using-azure-databricks-and-data-factory/">노트북</a> 작업: 70개 이상의 온-프레미스/클라우드 데이터 원본을 사용하여 대규모로 데이터를 수집하고 Azure Databricks에서 수집된 데이터를 데이터 팩터리 파이프라인의 Notebook 작업 단계로 준비/변환합니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/data-factory/control-flow-filter-activity">필터 작업</a>: 70개 이상의 데이터 원본에서 수집된 데이터를 필터링합니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/data-factory/how-to-invoke-ssis-package-ssis-activity">SSIS 패키지 실행</a>: 데이터 팩터리의 Azure SSIS Integration Runtime에서 SSIS 패키지를 실행합니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/data-factory/control-flow-lookup-activity">조회 작업</a>: 조회 작업은 이제 70개 이상의 ADF 지원 데이터 원본 중 하나에서 데이터 세트 검색을 지원합니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac3f13e9-9ec1-4591-b396-9bc8eef400d4.png"><img alt="Enhance 5" border="0" height="464" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2f1dad6-73c2-4de3-87e8-e99efcfe8808.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 5" width="779"></a></li>
+  </ul>
+
+
+  <h3>Azure Key Vault 통합</h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/secure-credential-management-for-etl-workloads-using-azure-data-factory-and-azure-key-vault/">Azure Key Vault의 Azure Data Factory 파이프라인</a>에 참조된 데이터 저장소 및 컴퓨팅에 대한 자격 증명을 저장합니다. Azure Key Vault 연결된 서비스를 만들고 데이터 팩터리 파이프라인의 Key Vault에 저장된 비밀을 참조하기만 하면 됩니다.</p>
+
+
+  <h3><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c93ea777-e169-4d2b-bd9c-b89f56738318.png"><img alt="Enhance 6" border="0" height="463" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ba9e3ba-336b-4932-889c-152b46ff9b29.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 6" width="788"></a></h3>
+
+
+  <h3>반복 개발 및 디버깅</h3>
+
+
+  <p>데이터 팩터리 시각적 도구를 사용하여 ETL/ELT 파이프라인을 <a href="https://azure.microsoft.com/en-us/blog/iteratively-develop-and-debug-your-etl-elt-workflows-using-data-factory/">반복적으로 개발하고 디버그</a>합니다. 테스트 실행을 수행하여 파이프라인을 디버그하거나 중단점을 배치하여 파이프라인의 일부를 디버그합니다.</p>
+
+
+  <h3>작업 노드에서 테스트 실행(디버그) 상태 보기</h3>
+
+
+  <p>이제 파이프라인 캔버스의 작업 노드에서 마지막 테스트 실행 상태를 볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ed25b471-daa1-418a-b898-f4b148fd12e0.png"><img alt="Enhance 7" border="0" height="469" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/91195952-7d8f-4ac1-848a-32dcc5880ffd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 7" width="792"></a></p>
+
+
+  <h3>파이프라인 및 활동 복제</h3>
+
+
+  <p>이제 파이프라인 캔버스에서 전체 파이프라인 또는 작업을 복제할 수 있습니다. 이렇게 하면 전체 파이프라인의 동일한 복사본 또는 설정을 포함한 파이프라인 캔버스에 작업이 생성됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f3bf6ca2-293a-466e-9e3e-18ae19a097ee.png"><img alt="Enhance 8" border="0" height="463" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dcd02522-e1ba-4e8a-9c80-aa0a33c7fa98.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 8" width="788"></a></p>
+
+
+  <h3>새 리소스 탐색기 작업</h3>
+
+
+  <p>이제 단추를 클릭하여 모든 리소스 탐색기 엔터티(파이프라인, 데이터 세트)를 확장/축소할 수 있습니다. 리소스 탐색기를 왼쪽/오른쪽으로 끌어 리소스 탐색기의&rsquo; 너비&lsquo;를 조정할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d51d25f7-8e9c-45b1-928c-25966358013b.png"><img alt="Enhance 9" border="0" height="469" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3c4e4871-a806-4025-96a0-f6abaf4bd530.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 9" width="782"></a></p>
+
+
+  <h3>데이터 팩터리 파이프라인에 대한 코드 보기/편집</h3>
+
+
+  <p>이제 데이터 팩터리 파이프라인에 대한 JSON을 보고 편집할 수 있습니다. 코드 아이콘을 &lsquo;클릭하여 JSON을 보고 JSON을 직접 편집한 다음 마침을 클릭합니다&lsquo;.&rsquo;&rsquo; 그런 다음 &lsquo;변경 내용을 데이터 팩터리 서비스에 게시&rsquo;할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/30e68cb3-10a4-4add-beee-6e05da176cb9.png"><img alt="Enhance 10" border="0" height="472" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8372272c-4593-4ef6-8c03-db0bfc8a64ec.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 10" width="785"></a></p>
+
+
+  <h3>데이터 팩터리에 게시할 보류 중인 변경 내용 보기</h3>
+
+
+  <p>파이프라인, 트리거, 데이터 세트, 연결된 서비스, 통합 런타임을 추가/편집/삭제하고 데이터 팩터리 서비스에 게시할 보류 중인 변경 내용 수를 확인합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/36f5c83d-2124-436d-8d18-b350367dd1b0.png"><img alt="Enhance 11" border="0" height="464" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ec8eaa0-baad-47a7-abde-fe7ae3682e9d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 11" width="778"></a></p>
+
+
+  <h3>GIT 리포지토리의 모든 분기로 데이터 팩터리 리소스 가져오기</h3>
+
+
+  <p>이제 협업 분기(일반적으로 &lsquo;마스터&rsquo;)를 선택하거나, 새 분기를 만들거나, 기존 분기를 사용하여 VSTS GIT 리포지토리를 설정하는 동안 데이터 팩터리 리소스를 가져올 수 있습니다. 협업 분기에 액세스할 수 없으며&rsquo; 다른 개발/기능 분기에서 데이터 팩터리 리소스를 가져오려는 경우에 매우 유용합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/09f26900-c25a-41a5-974d-38556ff75b72.png"><img alt="Enhance 12" border="0" height="460" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0ad6891-04a9-4b72-8b0f-75897aecfe4a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 12" width="777"></a></p>
+
+
+  <h2>시각적 모니터링</h2>
+
+
+  <h3>실시간 복사 진행률 모니터링</h3>
+
+
+  <p>세부 정보&rsquo; 아이콘을 &lsquo;클릭하여 복사 작업의 지속적인 진행률을 확인합니다. 새로 고침&rsquo;을 클릭하여 &lsquo;최신 통계를 가져오기만 하면 됩니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4f63b55a-8e48-4555-b007-affe5c179e59.png"><img alt="Enhance 13" border="0" height="300" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/77a99a44-ba94-4792-a30b-19ea94e8603d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 13" width="720"></a><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/258e77e4-8b50-4e4f-a023-7a9d926dfb8f.png"><img alt="Enhance 14" border="0" height="390" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f8c9cff5-8a82-4851-9fa5-97758cfefde6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 14" width="720"></a></p>
+
+
+  <h3>경고</h3>
+
+
+  <p>다른 데이터 팩터리 메트릭에 알림을 받을 <a href="https://docs.microsoft.com/en-us/azure/data-factory/monitor-using-azure-monitor#alerts">경고를 만듭니</a>다. 예를 들어 파이프라인, 작업, 트리거 오류 실행. &lsquo;경고를&rsquo; 클릭하면 Azure Portal의 &lsquo;모니터&rsquo; 탭으로 이동하여 데이터 팩터리 메트릭에 대한 경고를 만들 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9770d71a-046c-433d-88c9-6d5077ca7b7b.png"><img alt="Enhance 15" border="0" height="218" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a3e73b6-1eff-46ed-9786-8abfbfe22560.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 15" width="717"></a></p>
+
+
+  <h3>메트릭</h3>
+
+
+  <p>간단한 그래픽 인터페이스에서 <a href="https://docs.microsoft.com/en-us/azure/data-factory/monitor-using-azure-monitor#metrics">데이터 팩터리 메트릭을</a> 시각화하고 일, 월 등의 패턴을 확인합니다. 메트릭&rsquo;을 &lsquo;클릭하면 Azure Portal의 &lsquo;모니터&rsquo; 탭으로 이동하여 데이터 팩터리 메트릭을 시각화할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2553a9f4-818e-4afd-b949-646a267d57a8.png"><img alt="Enhance 16" border="0" height="225" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/873021dc-403d-4751-949c-ab9068472b7d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 16" width="711"></a></p>
+
+
+  <h3>자식 파이프라인의 실행 상태 보기</h3>
+
+
+  <p>파이프라인이 데이터 팩터리에서 파이프라인&rsquo; 실행 작업을 사용하여 &lsquo;다른 자식 파이프라인을 트리거하는 경우 이제 부모 파이프라인에서 자식 파이프라인의 상태를 볼 수 있습니다. 작업 열 아래의 &lsquo;출력&rsquo; 아이콘을 &lsquo;클릭하고 pipelineRunId&rsquo; 필드를 클릭&lsquo;하기만 하면 됩니다.&rsquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec180379-a721-4ba3-9115-19cb650c3f33.png"><img alt="Enhance 17" border="0" height="422" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3c8b92c1-ae1b-4fe5-a46e-53319edc9b45.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 17" width="709"></a></p>
+
+
+  <h3>디버깅을 위해 runid&rsquo;를 쉽게 복사 &lsquo;</h3>
+
+
+  <p>이제 파이프라인의 runid&rsquo;를 &lsquo;복사할 수 있으며, 작업은 디버깅을 위해 쉽게 실행됩니다. 디버깅을 위해 Azure 지원에 제공해야 하는 경우를 선택하여 복사하기만 하면 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/37679527-4d90-4ebc-9531-091770aefcb5.png"><img alt="Enhance 18" border="0" height="230" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4cbab81d-d4b0-4530-afc7-b99055a21aa4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 18" width="708"></a></p>
+
+
+  <p>우리의 목표는 기능을 계속 추가하고 Data Factory 도구의 유용성을 향상시키는 것입니다. Azure Data Factory<a href="https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-portal">를 사용하여 파이프라인 빌드</a>를 쉽고 빠르게 시작합니다. 기능 요청이 있거나 피드백을 제공하려는 경우 <a href="https://feedback.azure.com/forums/270578-azure-data-factory">Azure Data Factory 포럼</a>을 방문하세요.</p>

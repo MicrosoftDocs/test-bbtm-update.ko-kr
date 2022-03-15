@@ -1,0 +1,74 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e28be2885572a01b1b255d3148927c317b5e33e5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898565"
+Slug: klas-recognizes-microsofts-momentum-in-healthcare-ai
+Title: KLAS는 의료 AI에서 Microsoft의 모멘텀을 인식합니다.
+Summary: 임상 의사 결정 개선에서 COVID-19 전염병 관리 개선에 이르기까지 건강과 의약품에 적용되는 AI(인공 지능)의 이점은 부인할 수 없습니다. 2021년은 의료 시스템이 AI에 전례 없는 투자를 하여 품질을 개선하고 비용을 절감하며 환자와 건강 소비자 모두에게 맞춤형 환경을 조성하는 해가 될 것으로 예상됩니다.
+Content: >-
+  <p><em>이 블로그 게시물은 Microsoft Healthcare용 클라우드 &amp; AI 디렉터인 John Doyle이 공동 저술했습니다.</em></p>
+
+
+  <p>임상 의사 결정 개선에서 COVID-19 전염병 관리 개선에 이르기까지 건강과 의약품에 적용되는 AI(인공 지능)의 이점은 부인할 수 없습니다. 2021년은 의료 시스템이 AI에 전례 없는 투자를 하여 품질을 개선하고 비용을 절감하며 환자와 건강 소비자 모두에게 맞춤형 환경을 조성하는 해가 될 것으로 예상됩니다.</p>
+
+
+  <p>이러한 배경에서 KLAS Research는 최근 Microsoft를 업계 간 대규모 기업들 사이에서 가장 강력하게 인식된 의료 AI 제품을 보유하고 있다고 명명했습니다. 보고서에서 <a href="https://azure.microsoft.com/en-us/resources/klas-decision-insights-healthcare-ai-report/" target="_blank">Decision Insights&mdash; Healthcare AI</a>, Microsoft에 대한 인식을 공유한 응답자의 절반은 강력한 의료 AI 제품이 있다고 믿습니다. 이 보고서는 또한 에픽, 헬스 촉매, Jvion 및 KenSci를 포함한 AI 제품의 일환으로 Microsoft Azure 활용하는 다른 데이터 및 AI 회사에 높은 점수를 줍니다. 이 보고서는 의료 조직이 Microsoft가 다른 산업 간 공급업체보다 더 많은 의료 전문 지식을 보유하고 있다고 생각하며, Azure AI 인프라 및 플랫폼이 Microsoft Dynamics365&nbsp; 및 Microsoft Teams 같은 다른 고도로 채택된 Microsoft 제품과 통합되는 이점을 지적합니다.</p>
+
+
+  <p>KLAS Research는 전 세계 공급자 및 지불인이 사용하는 소프트웨어 및 서비스에 대한 정확하고 정직하며 공정한 연구를 업계에 제공하는 의료 IT 데이터 및 인사이트 회사입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e421e161-10f9-483c-a1ab-b119af6707f1.jpg"><img alt="Care provider leveraging technology to uncover health insights." height="524" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/311027c6-ed4e-4b3f-8fcc-6fa5bf01bce6.jpg" style="margin-right: auto; margin-left: auto; display: block;" title="" width="1024"></a></p>
+
+
+  <p>KLAS Research의 이러한 인정은 Frost와 Sullivan의 애널리스트 회사가 Microsoft를 <a href="https://azure.microsoft.com/en-us/blog/better-health-outcomes-with-ai-frost-sullivan-names-microsoft-the-leading-ai-platform-for-healthcare-it/" target="_blank">프로스트 레이더&trade;</a>의 HCIT(Healthcare IT) 부문 글로벌 AI 플랫폼의 확실한 선두 주&rdquo;체로 &ldquo;인정한 데 따른 것입니다. 200명 이상의 글로벌 산업 참가자가 참여한 분야에서 Frost와 Sullivan은 성장과 혁신을 나타내는 다양한 매개 변수에 대해 상위 20개 기업을 독립적으로 계획했습니다. Frost와 Sullivan에 따르면 Microsoft &ldquo;는 차세대 AI 인프라를 통합하여 정밀 의학 워크플로를 주도하고, 인구 건강 분석을 돕고, 증거 기반 임상 연구를 추진하며, 약물 및 치료 발견을 신속하게 수행하려는 업계 최고의 노력으로 인해 1위를 차지했습니다.&rdquo;</p>
+
+
+  <p>이는 KLAS 보고서에 소개된 주목할 만한 파트너를 포함하여 Microsofts&rsquo; 건강 파트너가 공유하는 감정입니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><i>&nbsp;&ldquo;Azure는 클라우드에 대한 자체 경로를 정의하는 데 필요한 유연성을 유지하면서 의료 고객이 요구하는 안전성과 안정성을 제공합니다. Microsoft를 통해 클라이언트는 온-프레미스 및 클라우드 구현 모두에 대한 통합 프로그래밍 모델, ID 모델, 보안 모델 및 관리 모델에 액세스할 수 있습니다.&quot;&nbsp;</i>&mdash; John Showalter 박사,&nbsp;Jvion</p>
+
+  </blockquote>
+
+
+  <p>Microsoft는 데이터 및 AI 플랫폼의 장점을 바탕으로 최근 <a href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare?rtc=1" target="_blank">의료 조직을 위한 Microsoft Cloud</a> 일반 공급한다고 발표했습니다. 의료 조직을 위한 Microsoft Cloud 환자 참여를 강화하고, 건강 팀 협업을 강화하고, 임상 및 운영 인사이트를 개선하는 신뢰할 수 있는 기능을 고객과 파트너에게 제공합니다. 이를 통해 더 빠르고 쉽게 보다 효율적인 치료를 제공할 수 있으며, 상태 데이터의 엔드 투 엔드 보안, 규정 준수 및 상호 운용성을 보장하는 데 도움이 됩니다.</p>
+
+
+  <p>인텔리전트 상태별 클라우드 제품의 일부 기능 및 이점은 다음과 같습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">Azure API for FHIR</a> 을 사용하면 FHIR&reg;(Fast Healthcare Interoperability Resources) API를 통해 PHI(보호된 상태 정보) 데이터를 신속하게 교환할 수 있으며, PaaS(관리형 PaaS) 제품을 통해 지원됩니다. 이를 통해 전자 의료 기록 및 연구 데이터베이스와 같은 건강 데이터를 사용하는 모든 사용자가 클라우드에서 정보를 수집, 관리 및 유지하여 분석, 기계 학습 및 실행 가능한 인텔리전스를 통해 새로운 기회를 창출할 수 있습니다.</p>
+
+
+  <p>Azure Health Bot 서비스는 의료 조직이 프로세스, 셀프 서비스 및 비용 절감 노력을 향상시키는 데 사용할 수 있는 AI 기반 가상 상태 도우미 및 챗봇을 신속하게 빌드하고 배포할 수 있도록 지원합니다. Health Bot에는 신뢰할 수 있는 산업 원본의 임상 프로토콜 및 의료 콘텐츠와 같은 기본 제공 의료 AI 서비스, 신속한 설계를 위한 의료 템플릿, 의료 및 임상 용어를 이해하도록 조정된 언어 이해 모델, 필요한 경우 실시간 채팅 및 원격 의료에 원활하게 전달됩니다.</p>
+
+
+  <p><a href="https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/introducing-the-medical-imaging-server-for-dicom/ba-p/1694397" target="_blank">DICOM용 의료 이미징 서버</a> 는 클라우드에서 의료 이미징 데이터를 수집하는 프로세스를 간소화하며 DICOM과 FHIR을 결합한 최초의 클라우드 기술입니다. DICOM용 의료 이미징 서버를 Azure API for FHIR 또는 <a href="https://github.com/microsoft/fhir-server" target="_blank">AZURE용 FHIR 서버(OSS)</a>와 함께 사용하면 이미징 데이터와 FHIR의 임상 데이터 간에 데이터 참조가 생성되며, 이는 오늘날의&rsquo; 온-프레미스 시스템에서 실행하기 어렵고 비용이 많이 드는 여러 시나리오에 대한 단계를 설정하는 환자의 더 나은 세로 보기를 만드는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://techcommunity.microsoft.com/t5/azure-ai/introducing-text-analytics-for-health/ba-p/1505152" target="_blank">Text Analytics for Health</a> 는 구조화되지 않은 의료 데이터에서 인사이트를 추출하는 프로세스를 가능하게 하고 간소화합니다. 이 AI 서비스는 현재 Microsoft Azure Text Analytics의 일부로 미리 보기로 제공되며 다양한 형식의 임상 노트, 임상 시험 프로토콜 등을 다루는 다양한 의료 데이터를 학습합니다. 이 상태 기능은 시간이 많이 걸리는 사용자 지정 모델을 수동으로 개발할 필요 없이 광범위한 데이터 형식 및 작업을 처리할 수 있습니다. 오늘날의&rsquo; 의료 데이터의 대부분은 의사&rsquo; 노트, 의료 간행물, 전자 건강 기록, 임상 시험 프로토콜, 의료 만남 성적 증명서 등과 같은 구조화되지 않은 텍스트의 형태로 제공됩니다.</p>
+
+
+  <p>Microsoft가 의료 조직을 위한 Microsoft Cloud 전체 출시와 결합된 당사의 AI in Health 제품에 대한 찬사를 받은 것은 건강 고객과 파트너가 혁신적인 솔루션을 구축할 수 있는 토대를 마련하여 더 나은 경험, 더 나은 인사이트 및 더 나은 치료로 이어집니다.&nbsp;</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <ul>
+      <li><a href="https://www.microsoft.com/en-us/ai/innovation-in-health" target="_blank">건강의 AI 혁신</a></li>
+      <li><a href="https://www.microsoft.com/en-us/ai/ai-for-health" target="_blank">건강을 위한 AI</a></li>
+      <li><a href="https://www.microsoft.com/en-us/industry/health/pharmaceuticals" target="_blank">제약 및 생명 과학을 위한 비즈니스 전환</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/overview/ai-platform/" target="_blank">Azure AI 플랫폼</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">FHIR용 Azure API</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/industries/healthcare/" target="_blank">의료 산업용 Azure</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/health-and-life-sciences/" target="_blank">건강 및 생명 과학을 위한 Azure</a></li>
+      <li><a href="https://github.com/microsoft/dicom-server" target="_blank">Medical Imaging Server for DICOM</a></li>
+      <li><a href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" target="_blank">Microsoft Cloud for Healthcare</a></li>
+  </ul>

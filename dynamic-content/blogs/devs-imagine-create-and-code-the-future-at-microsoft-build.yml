@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3047a9cd1d58140fc140b5502ef3afa41829a503
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903329"
+Slug: devs-imagine-create-and-code-the-future-at-microsoft-build
+Title: 개발자는 Microsoft Build에서 미래를 상상하고, 만들고, 코딩합니다.
+Summary: 5월 7일 월요일, 70개국 이상에서 온 6,000명 이상의 개발자들이 Microsoft Build를 위해 워싱턴 주 시애틀에 있는 워싱턴 주 컨벤션 센터로 내려왔습니다. 숙련된 코더에서...
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8617bf88-dbed-49f8-a5d1-5a0db78bb2ca.png"><img alt="Microsoft Build" border="0" height="590" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0545e3dc-021d-437d-973a-abbb19fe1a6d.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Microsoft Build" width="2001"></a></p>
+
+
+  <p>5월 7일 월요일, 70개국 이상에서 온 6,000명 이상의 개발자들이 Microsoft Build를 위해 워싱턴 주 시애틀에 있는 워싱턴 주 컨벤션 센터로 내려왔습니다. 숙련된 코더부터 8살 짜리 신동에 이르기까지 참석자들은 인텔리전트 클라우드용 앱을 빌드하는 열정으로 하나가 되었습니다. 놓친 세션을 따라잡으려면 <a href="https://mybuild.microsoft.com/sessions?icid=azure_blog_post_event_recap" target="_blank">주문형 콘텐츠를</a> 확인하세요.</p>
+
+
+  <p>CEO 사티아 나델라(Satya Nadella)는 지능형 클라우드가 우리 삶의 모든 측면에 어떻게 혁명을 일으킬 지에 대해 이야기함으로써 일을 시작했습니다. Nadella는 <a href="https://azure.microsoft.com/en-us/blog/new-azure-innovations-are-helping-developers-write-code-today-for-tomorrow-s-technology-challenges/" target="_blank">클라우드 및 Enterprise 그룹 스콧 거스리 수석 부사장</a>, Windows Joe Belfiore의 기업 부사장과 함께 개발자들에게 Microsoft Azure 및 Microsoft 365 사용하여 혁신적인 멀티센스 및 다중 서비스 환경을 만드는 방법을 보여주었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aee9ce35-484d-489e-9799-6958d15920d4.jpg"><img alt="Scott Guthrie at Microsoft Build" border="0" height="427" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/711964d7-70a1-44fd-812b-f642d7fefbcc.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Microsoft Build의 Scott Guthrie" width="640"></a></p>
+
+
+  <p>한 가지 키노트 데모에서 참석자들은 Microsoft 365 및 AI 서비스를 사용하는 오디오 비디오 장치가 일반적인 비즈니스 모임을 어떻게 변화시킬 수 있는지 알아보았습니다. 얼굴 인식을 사용하여 각 참석자는 방에 들어갈 때 이름으로 인사했습니다. 디바이스는 실시간으로 음성을 전사하여 텍스트를 올바른 스피커에 자동으로 할당했습니다. Power BI 데이터를 시각화하는 데 사용되었습니다. Cortana Microsoft Graph 함께 언급된 파일을 자동으로 첨부하여 작업 항목의 요약을 만들었습니다.</p>
+
+
+  <p>많은 일이 일어나고 있는 가운데, 올해&rsquo; 참석자들로부터 들었던 몇 가지 주요 사항 중 일부는 다음과 같습니다.</p>
+
+
+  <h2>1. 새로운 기술을 쌓을 수 있는 기회</h2>
+
+
+  <p>참석자들은 소규모 세션, 워크샵 및 데모에 모여 경력을 풍요롭게 하고 발전시킬 수 있는 기술을 배우고 실습 랩 및 강사 주도 워크샵에서 전문 지식을 연마했습니다. 그리고 최신 기술에 열광하고자하는 사람을 위해, 전시 홀은 될 수있는 장소였다. 개발자는 수많은 다른 활동과 아이디어 속에서 HoloLens 경험하고, 자체 <a href="https://azure.microsoft.com/en-us/blog/train-an-iot-equipped-drone-and-compete-to-win-at-microsoft-build/" target="_blank">AI 기반 드론</a>을 프로그래밍하고, 최첨단 IoT 솔루션을 탐색했습니다.</p>
+
+
+  <h2>2. 솔루션 및 경력을 구축할 수 있는&mdash; 풍부한 기회</h2>
+
+
+  <p>API 게이트웨이에서 XAML에 이르기까지 Microsoft Build는 개발자가 획기적인 클라우드 기반 솔루션을 만드는 데 필요한 모든 혁신적인 도구, 플랫폼 및 제품을 제공합니다. Azure Containers, Power BI 및 Cognitive Services와 같은 기술을 심층 분석한 다음, 이러한 제품 및 플랫폼 뒤에 있는 Microsoft 엔지니어와 개념을 논의할 수 있는 많은 기회가 있었습니다.</p>
+
+
+  <p>이벤트에서 발표 된 모든 발표 중 가장 인기있는 것 중 하나는 <a href="https://blogs.windows.com/buildingapps/2018/05/07/a-new-microsoft-store-revenue-share-is-coming/" target="_blank">개발자가 이제 Microsoft Store 판매 된 앱에 대한 수익의 최대 95 %를 유지할 것이라는 뉴스</a>였습니다. 이는 인텔리전트 클라우드가 제공하는 기회에 청중이 이벤트를 흥분하게 한 또 다른 이유였습니다.</p>
+
+
+  <h2>3. 독특한 관계를 구축하기에 좋은 장소</h2>
+
+
+  <p>영감은 브레이크 아웃에 국한되지 않았습니다&rsquo;. 개발자가 팁을 교환하고, 실제 &ldquo;&rdquo; 실제 시나리오를 제안하고, 서로에게 도전하면서 활기찬 논쟁과 브레인스토밍이 홀 전체에 울려 퍼졌습니다. Microsoft Build에 참석하는 것은 시작에 불과하다는 것을 증명했습니다. 아이디어에서 발생하는 혁신적인 솔루션은 진정한 목표가 있습니다. 시애틀 센터에서 열린 <a href="https://azure.microsoft.com/en-us/blog/microsoft-build-come-for-the-tech-stay-for-the-party/" target="_blank">참석자 축하 행사</a> 는 MoPOP의 슈퍼 히어로 및 슈퍼 스타들과의 컨퍼런스 우정, 치훌리 가든 앤 글래스의 날려 버린 유리 조각, 조용한 디스코 및 정통한 게이머들과의 우정을 장식했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/658217be-e504-429c-8f60-b29117abd29f.jpg"><img alt="Microsoft Build attendees" border="0" height="427" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/63d7d294-5c89-4c59-b881-4292685361af.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Microsoft 빌드 참석자" width="640"></a></p>
+
+
+  <h2>감사합니다.</h2>
+
+
+  <p>Microsoft 클라우드는 대규모로 삶을 변화시킬 수 있는 잠재력을 가지고 있습니다. 그 힘은 의무와 함께 제공됩니다. Nadella가 기조 연설에서 우리에게 상기시켰듯이, &ldquo;우리는 이러한 기술이 모든 사람에게 힘을 실어주도록 할 책임이 있습니다.&rdquo; 사용자와 같은 개발자는 이 비전을 현실로 만들므로 Microsoft Build를 재미있고 성공적인 이벤트로 만들어 주셔서 감사합니다. Well&rsquo; see you again next yearand&mdash; while youre&rsquo; waiting, check out the <a href="https://mybuild.microsoft.com/sessions?icid=azure_blog_post_event_recap" target="_blank">on-demand content</a> to catch any sessions you may have you have missed!</p>

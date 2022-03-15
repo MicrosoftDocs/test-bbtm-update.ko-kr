@@ -1,0 +1,453 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b34d9af5c320bc9627f9e0315a622ae38be449f3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898938"
+Slug: in-memory-oltp-in-azure-sql-database
+Title: Azure SQL Database의 메모리 내 OLTP
+Summary: Azure SQL Database In-Memory OLTP는 성능을 향상시키고 트랜잭션 처리, 데이터 수집 및 일시적인 데이터 시나리오에 대한 비용 절감을 도입합니다.
+Content: >-
+  <p>최근에 모든 Premium 데이터베이스에 대해 Azure SQL Database In-Memory OLTP의 <a href="https://azure.microsoft.com/en-us/blog/azure-sql-database-in-memory-performance">일반 공급이 발표</a>되었습니다. In-Memory OLTP는 현재 표준 또는 기본 가격 책정 계층의 데이터베이스에서 사용할 수 없습니다.</p>
+
+
+  <p>In-Memory OLTP는 트랜잭션 처리, 데이터 수집 및 일시적인 데이터 시나리오에 큰 성능 이점을 제공할 수 있습니다. 또한 비용을 절감하는 데 도움이 될 수 있습니다. 데이터베이스의 가격 책정 계층을 늘리지 않고 향후 성장을 위해 헤드룸을 늘리면서 초당 트랜잭션 수를 개선할 수 있습니다.</p>
+
+
+  <p><a href="https://github.com/Microsoft/sql-server-samples/tree/master/samples/features/in-memory/benchmark-order-processing">샘플 주문 처리 워크로드</a>의 경우 Azure SQL Database 단일 데이터베이스에서 <strong>초당 75,000개의 </strong>TPS(트랜잭션 수)를 달성할 수 있습니다. 이는 기존 테이블 및 저장 프로시저에 비해 In-Memory OLTP를 사용하면 <strong>성능이 11배 향상</strong>됩니다. 마일리지는 워크로드마다 다를 수 있습니다. 다음 표에서는 사용 가능한 가장 높은 가격 책정 계층에서 이 워크로드를 실행한 결과를 보여 줍니다. 또한 낮은 가격 책정 계층에서도 In-Memory OLTP의 유사한 이점을 보여 줍니다.*</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="401">
+   <tbody>
+    <tr>
+     <td valign="top" width="59">가격 책정 계층</td>
+     <td valign="top" width="146">In-Memory OLTP용 TPS</td>
+     <td valign="top" width="119">기존 테이블에 대한 TPS</td>
+     <td valign="top" width="75">성능 향상</td>
+    </tr>
+    <tr>
+     <td valign="top" width="59">P15</td>
+     <td valign="top" width="146">75,000</td>
+     <td valign="top" width="119">6,800</td>
+     <td valign="top" width="75">11X</td>
+    </tr>
+    <tr>
+     <td valign="top" width="59">P2</td>
+     <td valign="top" width="146">8,900</td>
+     <td valign="top" width="119">1,000</td>
+     <td valign="top" width="75">9X</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><br>
+
+  <em>표 1: 샘플 주문 처리 워크로드에 대한 성능 비교</em></p>
+
+
+  <blockquote>
+
+  <p><em>*P15에서 실행하기 위해 클라이언트가 400개인 100개의 배율 인수를 사용했습니다. P2 실행에는 200개의 클라이언트가 있는 배율 5를 사용했습니다. 배율 인수는 메모리 최적화 테이블을 사용할 때 100이 15GB 데이터베이스 크기로 변환되는 데이터베이스 크기의 측정값입니다. 워크로드에 대한 자세한 내용은 <a href="https://github.com/Microsoft/sql-server-samples/tree/master/samples/features/in-memory/benchmark-order-processing">SQL Server 샘플 GitHub 리포지토리</a>를 참조하세요.</em></p>
+
+  </blockquote>
+
+
+  <p>이 블로그 게시물에서는 기술의 작동 방식, 성능 혜택이 제공되는 위치 및 애플리케이션의 성능 향상을 실현하기 위해 기술을 가장 잘 활용하는 방법을 자세히 살펴봅니다.</p>
+
+
+  <p>In-Memory OLTP는 트랜잭션 처리, 데이터 수집, 데이터 로드 및 변환 및 일시적인 데이터 시나리오를 위한 것입니다. 분석 쿼리의 성능을 향상시키려면 Columnstore 인덱스를 대신 사용합니다. 이 블로그뿐만 아니라 <a href="https://msdn.microsoft.com/library/gg492088.aspx">설명서</a> 에 있는 내용에 대한 자세한 내용은 다음 주에 확인할 수 있습니다.</p>
+
+
+  <h1>In-Memory OLTP는 어떻게 작동하나요?</h1>
+
+
+  <p>메모리 내 OLTP는 올바른 워크로드에 대해 상당한 성능 향상을 제공할 수 있습니다. 고객 중 하나인 Quorum Business Solutions는 <a href="https://customers.microsoft.com/en-US/story/quorum-doubles-key-databases-workload-while-lowering-dtu-with-sql-database">DTU를 70% 줄이면서 데이터베이스&rsquo; 워크로드를 두 배로</a> 늘릴 수 있었습니다. Azure SQL Database DTU는 지정된 데이터베이스에서 활용할 수 있는 리소스 양에 대한 측정값입니다. 리소스 사용률을 줄임으로써 Quorum Business Solutions는 데이터베이스의 가격 책정 계층을 늘리지 않고도 향후 성장에 사용할 수 있는 헤드룸을 늘리면서 더 큰 워크로드를 지원할 수 있었습니다.</p>
+
+
+  <p>이제 이 성능 향상 및 리소스 효율성은 어디에서 비롯됩니까? 본질적으로 In-Memory OLTP는 데이터 액세스 및 트랜잭션 실행을 보다 효율적으로 만들고 동시에 실행되는 트랜잭션 간의 잠금 및 래치 경합을 제거하여 트랜잭션 처리 성능을 향상시킵니다. 메모리 내 <em>이므로 </em>빠르지 않습니다. 메모리에 있는 데이터를 중심으로 <em>최적화되어</em> 있으므로 속도가 빠릅니다. 메모리 내 및 높은 동시성 컴퓨팅의 최신 개선 사항을 활용하기 위해 데이터 스토리지, 액세스 및 처리 알고리즘이 처음부터 다시 설계되었습니다.</p>
+
+
+  <p>이제 데이터가 단지 메모리 내에 있다고 해서 오류 시 손실되는 것을 의미하는 것은 아닙니다. 기본적으로 모든 트랜잭션은 완전 내구성이 있으므로 Azure SQL Database 다른 테이블에 대해 동일한 내구성을 보장합니다. 트랜잭션 커밋의 일부로 모든 변경 내용이 디스크의 트랜잭션 로그에 기록됩니다. 트랜잭션 커밋 후 언제든 오류가 발생한 경우 데이터베이스가 다시 온라인 상태로 전환되면 데이터가 그대로 유지됩니다. Azure SQL Database 고가용성을 관리하므로&rsquo; 데이터 센터에서 내부 오류가 발생하고 데이터베이스가 다른 내부 노드로 장애 조치되는 경우 커밋한 모든 트랜잭션의 데이터가 있습니다. 또한 In-Memory OLTP는 특정 시점 복원, 지역 복원, 활성 지역 복제 등 Azure SQL Database 모든 고가용성 및 재해 복구 기능과 함께 작동합니다.</p>
+
+
+  <p>데이터베이스에서 메모리 내 OLTP를 활용하려면 다음과 같은 유형의 개체 중 하나 이상을 사용합니다.</p>
+
+
+  <ul>
+   <li><em>메모리 최적화 테이블 </em>은 사용자 데이터를 저장하는 데 사용됩니다. 메모리 최적화되도록 할 테이블은 만들 때 선언합니다.</li>
+   <li><em>비지속성 테이블 </em>은 임시 데이터(캐싱 또는 중간 결과 집합)에 사용됩니다(기존 임시 테이블 대체). 비영구 테이블은 DURABILITY=SCHEMA_ONLY로 선언된 메모리 최적화 테이블입니다. 이러한 테이블의 변경 내용은 IO를 유발하지 않습니다. 따라서 내구성이 중요하지 않은 경우 로그 IO 리소스 소모를 방지할 수 있습니다.</li>
+   <li><em>메모리 액세스에 최적화된 테이블 형식</em> 은 TVP(테이블 반환 매개 변수) 및 저장 프로시저의 중간 결과 집합에 사용됩니다. 기존 테이블 형식 대신 사용할 수 있습니다. 메모리 최적화 테이블 형식을 사용하여 선언된 테이블 변수 및 TVP는 비영구 메모리 최적화 테이블의 이점(효율적인 데이터 액세스 및 IO 없음)을 상속합니다.</li>
+   <li><em>고유하게 컴파일된 T-SQL 모듈</em> 은 작업을 처리하는 데 필요한 CPU 주기를 줄여 개별 트랜잭션에 소요되는 시간을 더 단축하는 데 사용됩니다. 고유하게 컴파일할 TRANSACT-SQL 모듈은 만들 때 선언합니다. 이 시점에서 고유하게 컴파일할 수 있는 T-SQL 모듈은 저장 프로시저, 트리거 및 사용자 정의 스칼라 함수입니다.</li>
+  </ul>
+
+
+  <p>In-Memory OLTP는 Azure SQL Database 기본 제공되므로 모든 Premium 데이터베이스에서 이러한 모든 개체를 사용할 수 있습니다. 또한 이러한 개체는 기존 개체와 매우 유사하게 동작하기 때문에 데이터베이스 및 애플리케이션에 대한 최소한의 변경으로 성능 이점을 얻을 수 있습니다. 이 게시물의 끝부분에 있는 이러한 각 개체 유형에 대한 예제를 보여 주는 Transact-SQL 스크립트를 찾을 수 있습니다.</p>
+
+
+  <p>각 데이터베이스에는 데이터베이스 또는 탄력적 풀의 DTU 수와 연결된 메모리 최적화 테이블의 크기에 대한 상한이 있습니다. 작성 시 125개 DTU 또는 eDTU마다 1GB의 스토리지를 얻을 수 있습니다. OLTP 스토리지 사용 In-Memory 모니터링 및 변경에 대한 자세한 내용은 다음을 참조<a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-in-memory-oltp-monitoring/">하세요. In-Memory Storage 모니터링</a>.</p>
+
+
+  <h1>In-Memory OLTP를 언제 어디서 사용합니까?</h1>
+
+
+  <p>In-Memory OLTP는 Azure SQL Database 새로운 것일 수 있지만 2014년부터 SQL Server 있습니다. Azure SQL Database SQL Server 동일한 코드 베이스를 공유하므로 Azure SQL DB의 In-Memory OLTP는 SQL Server In-Memory OLTP와 동일합니다. 이 기술은 한동안 사용되어 왔으므로 In-Memory OLTP의 이점을 실제로 볼 수 있는 사용 시나리오 및 애플리케이션 패턴에 대해 많은 것을 배웠습니다.</p>
+
+
+  <h2>데이터베이스의 리소스 사용률</h2>
+
+
+  <p>애플리케이션 사용자가 1초마다 지원할 수 있는 요청 수(즉, 워크로드 처리량) 또는 단일 요청(즉, 트랜잭션 대기 시간)을 처리하는 데 걸리는 시간에 관계없이 애플리케이션 사용자에 대해 향상된 성능을 달성하는 것이 목표인 경우 성능 병목 상태의 위치를 이해해야 합니다. In-Memory OLTP는 데이터베이스에 있으므로 데이터베이스에서 발생하는 작업의 성능이 향상됩니다. 애플리케이션 코드 또는 애플리케이션과 데이터베이스 간의 네트워크 통신에 대부분의 시간이 소요되는 경우 데이터베이스의 최적화는 전체 성능에 제한된 영향을 줍니다.</p>
+
+
+  <p>Azure SQL Database Azure Portal 및 sys.dm_db_resource_stats 같은 시스템 보기를 통해 노출되는 리소스 모니터링 기능을 <a href="https://msdn.microsoft.com/library/dn800981.aspx">제공합니다.</a> 데이터베이스가 있는 가격 책정 계층의 한도에 근접한 리소스가 있는 경우 이는 데이터베이스가 병목 상태임을 나타냅니다. OLTP를 최적화하는 데 실제로 도움이 In-Memory 주요 리소스 유형은 CPU 및 로그 IO 사용률입니다.</p>
+
+
+  <p>&rsquo;모든 센서가 100초마다 새 판독값을 내보내는 총 100만 개의 센서가 포함된 <a href="https://github.com/Microsoft/sql-server-samples/tree/master/samples/applications/iot-smart-grid">샘플 IoT 워크로드</a>*를 살펴보겠습니다. 이는 1초마다 데이터베이스에 수집해야 하는 10,000개의 센서 판독값으로 변환됩니다. 아래에서 실행된 테스트에서는 P2 가격 책정 계층이 있는 데이터베이스를 사용합니다. 첫 번째 테스트는 기존 테이블 및 저장 프로시저를 사용합니다. Azure Portal의 스크린샷인 다음 그래프는 이러한 두 가지 주요 메트릭에 대한 리소스 사용률을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2f52fcce-dd59-4bc1-9c0e-1873025f1b7f.png"><img alt="image" border="0" height="386" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9fad8231-9794-413b-aa9d-fdd31d6f50f5.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="583"></a><br>
+
+  <em>그림 1: In-Memory OLTP가 없는 P2 데이터베이스의 초당 10K 센서 판독값</em></p>
+
+
+  <p>CPU가 매우 높고 로그 IO 사용률이 상당히 높습니다. 여기서 백분율은 데이터베이스의 가격 책정 계층에 대한 DTU 수와 연결된 리소스 한도를 기준으로 합니다.</p>
+
+
+  <p>이러한 숫자는 데이터베이스에 성능 병목 현상이 있음을 시사합니다. 가격 책정 계층을 늘려 데이터베이스에 더 많은 리소스를 할당할 수 있지만 In-Memory OLTP를 활용할 수도 있습니다. 다음과 같이 리소스 사용률을 줄일 수 있습니다.</p>
+
+
+  <ul>
+   <li>CPU: <ul>
+    <li>보다 효율적인 데이터 액세스를 활용하려면 테이블 및 테이블 변수를 메모리 최적화 테이블 및 테이블 변수로 바꿉니다.</li>
+    <li>트랜잭션 처리에 사용되는 핵심 성능에 민감한 저장 프로시저를 고유하게 컴파일된 저장 프로시저로 바꿔 보다 효율적인 트랜잭션 실행을 활용할 수 있습니다.</li>
+   </ul>
+   </li>
+   <li>로그 IO: <ul>
+    <li>메모리 최적화 테이블은 일반적으로 인덱스 작업이 기록되지 않기 때문에 기존 테이블보다 로그 IO가 적습니다.</li>
+    <li>비내구성 테이블과 메모리 최적화 테이블 변수 및 TVP는 일시적인 데이터 시나리오에 대한 로그 IO를 완전히 제거합니다. 기존의 임시 테이블 및 테이블 변수에는 일부 관련 로그 IO가 있습니다.</li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <h2>In-Memory OLTP를 사용한 리소스 사용률</h2>
+
+
+  <p>&rsquo;P2 데이터베이스에서 초당 수집된 10,000개의 센서 판독값을 In-Memory OLTP를 사용하여 위와 동일한 워크로드를 살펴보겠습니다.</p>
+
+
+  <p>메모리 최적화 테이블, 메모리 최적화 테이블 형식 및 고유하게 컴파일된 저장 프로시저를 구현한 후 다음과 같은 리소스 사용률 프로필이 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aa9c9f65-9d39-432c-9f3e-5b583ba58161.png"><img alt="image" border="0" height="399" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/325961b7-2306-4233-b800-f1f3ce03ac67.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="603"></a><br>
+
+  <em>그림 2: In-Memory OLTP를 사용하는 P2 데이터베이스의 초당 10K 센서 판독값</em></p>
+
+
+  <p>여기서 볼 수 있듯이 이러한 최적화로 인해 이 워크로드에 대해 로그 IO가 2배 이상 감소하고 CPU 사용률이 8배 이상 감소했습니다. 이 워크로드에서 In-Memory OLTP를 구현하면 다음을 비롯한 다양한 이점이 제공됩니다.</p>
+
+
+  <ul>
+   <li>향후 성장을 위한 헤드룸이 증가했습니다. 이 예제 워크로드에서 P2 데이터베이스는 100초마다 새 판독값을 내보내는 각 센서와 함께 100만 개의 센서를 수용할 수 있습니다. In-Memory OLTP를 사용하면 동일한 P2 데이터베이스가 센서 수의 두 배 이상을 수용하거나 센서 판독값이 내보내는 빈도를 늘릴 수 있습니다.</li>
+   <li>센서 판독값을 분석하거나 데이터베이스에서 다른 작업을 수행하는 쿼리를 실행하기 위해 많은 리소스가 확보됩니다. 메모리 최적화 테이블은 잠금 및 래치 해제이므로 쓰기 작업과 쿼리 간에 경합이 없습니다.</li>
+   <li>이 예제에서는 몇 가지 추가 헤드룸을 사용하여 데이터베이스를 P1로 다운그레이드하고 동일한 워크로드를 유지할 수도 있습니다. 이는 데이터베이스 운영 비용을 절반으로 줄이는 것을 의미합니다.</li>
+  </ul>
+
+
+  <p>메모리 최적화 테이블의 데이터는 데이터베이스의 가격 책정 계층과 연결된 In-Memory OLTP 스토리지 한도에 맞아야 합니다. 이 워크로드에 대해 In-Memory OLTP 스토리지 사용률이 어떻게 표시되는지 살펴보겠습니다&rsquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ccc224f6-4f77-4640-87df-071ed02b2beb.png"><img alt="image" border="0" height="401" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eb15cd17-cd17-49f2-886e-6c0b8eed3bd3.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="602"></a><br>
+
+  <em>그림 3: OLTP 스토리지 사용률 In-Memory</em></p>
+
+
+  <p>In-Memory OLTP 스토리지 사용률(녹색 선)은 평균 약 7%입니다. 이는 순수 데이터 수집 워크로드이므로 데이터베이스에 센서 판독값을 지속적으로 추가하므로 시간이 지남에 따라 In-Memory OLTP 스토리지 사용률이 어떻게 증가하지 않는지 궁금 &ldquo;할 것입니다.&rdquo;</p>
+
+
+  <p>메모리 <a href="https://msdn.microsoft.com/library/mt590207.aspx">최적화 임시 테이블을</a> 사용하고 있습니다. 즉, 자체 기록을 유지 관리하는&rsquo; 테이블이 디스크에 있습니다. Azure SQL Database 내부 메모리와 디스크 간의 이동을 처리합니다. 본질적으로 일시적인 데이터 수집 워크로드의 경우 메모리 내 스토리지 공간을 관리하는 데 유용한 솔루션입니다.</p>
+
+
+  <blockquote>
+
+  <p><em>*이 실험을 복제하려면 <a href="https://github.com/Microsoft/sql-server-samples/tree/master/samples/applications/iot-smart-grid">샘플 앱</a>의 app.config 다음과 같이 변경합니다. commandDelay=1 및 enableShock=0; 또한 이전&rdquo; 그림을 다시 만들&ldquo;려면 테이블 및 테이블 형식을 디스크 기반(즉, MEMORY_OPTIMIZED=OFF)으로 변경하고 저장 프로시저에서 NATIVE_COMPILATION 및 ATOMIC을 제거합니다.</em></p>
+
+  </blockquote>
+
+
+  <h2>In-Memory OLTP에 대한 사용 시나리오</h2>
+
+
+  <p>이 게시물의 맨 위에 설명된 것처럼 In-Memory OLTP는 빠른 매직 버튼이 아니며 모든 워크로드에 적합하지 않습니다. 예를 들어 대부분의 쿼리가 광범위한 데이터 &ndash; Columnstore에 대한 집계를 수행하는 경우 메모리 최적화 테이블은 CPU 사용률을 실제로 저하시키지 않습니다.</p>
+
+
+  <p>다음은 메모리 내 OLTP를 성공적으로 사용한 고객의 시나리오 및 애플리케이션 패턴 목록입니다. 기본 기술은 동일하므로 SQL Server 및 Azure SQL Database 동일하게 적용됩니다.</p>
+
+
+  <h3><strong>높은 처리량 및 낮은 대기 시간의 트랜잭션 처리</strong></h3>
+
+
+  <p>이는 실제로 메모리 내 OLTP를 구축한 핵심 시나리오입니다. 개별 트랜잭션에 대해 일관성 있게 낮은 대기 시간으로 대량의 트랜잭션을 지원합니다.</p>
+
+
+  <p>일반적인 워크로드 시나리오는 금융 상품 거래, 스포츠 베팅, 모바일 게임, 광고 전달 등입니다. 또 다른 일반적인 패턴&rsquo;은 &ldquo;자주 읽거나 업데이트하는 카탈로그&rdquo; 입니다. 예를 들어 대용량 파일이 있고 각 파일이 클러스터의 여러 노드에 분산된 경우 메모리 최적화 테이블에서 각 파일의 분할 위치에 대한 카탈로그를 작성합니다.</p>
+
+
+  <p><em>구현 고려 사항</em></p>
+
+
+  <p>핵심 트랜잭션 테이블, 즉 성능이 가장 중요한 트랜잭션이 있는 테이블에 메모리 최적화 테이블을 사용합니다. 비즈니스 트랜잭션과 관련된 논리 실행을 최적화하려면 고유하게 컴파일된 저장 프로시저를 사용합니다. 데이터베이스에 저장 프로시저로 푸시할 수 있는 논리가 많을수록 메모리 내 OLTP에서 더 많은 이점을 얻을 수 있습니다.</p>
+
+
+  <p>기존 애플리케이션에서 시작하려면 <a href="https://msdn.microsoft.com/en-us/library/dn205133.aspx">트랜잭션 성능 분석 보고서를</a> 사용하여 마이그레이션할 개체를 식별하고 <a href="https://msdn.microsoft.com/en-us/library/dn284308.aspx">메모리 최적화</a> 및 <a href="https://msdn.microsoft.com/en-us/library/dn358355.aspx">네이티브 컴파일</a> 관리자를 사용하여 마이그레이션을 지원합니다.</p>
+
+
+  <h3><strong>IoT(사물 인터넷)를 비롯한 데이터 수집</strong></h3>
+
+
+  <p>메모리 내 OLTP는 다양한 원본에서 동시에 많은 양의 데이터를 수집하는 데 매우 유용합니다. SQL 데이터에 대한 쿼리를 매우 빠르게 실행하고 실시간 인사이트를 얻을 수 있기 때문에 다른 대상에 비해 SQL 데이터베이스로 데이터를 수집하면 도움이 되는 경우가 많습니다.</p>
+
+
+  <p>일반적인 애플리케이션 패턴은, 센서 판독값 및 이벤트를 수집하여 알림 및 기록 분석을 지원하는 것입니다. 동시 읽기 워크로드에 대한 영향을 최소화하면서 여러 원본에서 일괄 처리 업데이트를 관리합니다.</p>
+
+
+  <p><em>구현 고려 사항</em></p>
+
+
+  <p>메모리 최적화 테이블을 데이터 수집에 사용합니다. 수집이 업데이트보다 주로 삽입으로 구성되고 메모리 내 OLTP 스토리지의 데이터 공간이 중요한 경우 다음 중 하나를 수행합니다.</p>
+
+
+  <ul>
+   <li>작업을 사용하여 <a href="https://msdn.microsoft.com/library/gg492088.aspx">클러스터형 Columnstore 인덱</a>스가 있는 디스크 기반 테이블에 데이터를 정기적으로 일괄 처리 오프로드합니다. 또는</li>
+   <li><a href="https://msdn.microsoft.com/library/mt590207.aspx">임시 메모리 최적화 테이블을</a> 사용하여 이 모드에서 기록 데이터를 &ndash; 관리하고, 기록 데이터가 디스크에 저장되고, 데이터 이동이 시스템에서 관리됩니다.</li>
+  </ul>
+
+
+  <p>다음 샘플은 임시 메모리 최적화 테이블, 메모리 최적화 테이블 형식 및 고유하게 컴파일된 저장 프로시저를 사용하여 데이터 수집 속도를 높이기 위해 센서 데이터의 In-Memory OLTP 스토리지 공간을 관리하는 스마트 그리드 애플리케이션입니다. <a href="https://github.com/Microsoft/sql-server-samples/releases/tag/iot-smart-grid-v1.0">릴리스</a> 및 <a href="https://github.com/Microsoft/sql-server-samples/tree/master/samples/applications/iot-smart-grid">소스 코드</a>.</p>
+
+
+  <h3><strong>캐싱 및 세션 상태</strong></h3>
+
+
+  <p>메모리 내 OLTP 기술은 SQL의 세션 상태 유지 관리(예: ASP.NET 애플리케이션) 및 캐싱 기능을 크게 향상시킵니다.</p>
+
+
+  <p>ASP.NET 세션 상태는 메모리 내 OLTP의 매우 성공적인 사용 사례입니다. 한 고객은 SQL Server를 사용하여 초당 120만 요청을 달성하려고 했습니다. 그 동안 엔터프라이즈의 모든 중간 계층 애플리케이션의 캐싱 요구 사항에 In-Memory OLTP를 사용하기 시작했습니다. 세부 정보: <a href="https://blogs.msdn.microsoft.com/sqlcat/2016/10/26/how-bwin-is-using-sql-server-2016-in-memory-oltp-to-achieve-unprecedented-performance-and-scale/">https://blogs.msdn.microsoft.com/sqlcat/2016/10/26/how-bwin-is-using-sql-server-2016-in-memory-oltp-to-achieve-unprecedented-performance-and-scale/</a></p>
+
+
+  <p><em>구현 고려 사항</em></p>
+
+
+  <p>varbinary(max) 열에 BLOB을 저장하여 영구 메모리 최적화 테이블을 간단한 키-값 저장소로 사용할 수 있습니다. 또는 Azure SQL Database <a href="https://azure.microsoft.com/blog/json-support-is-generally-available-in-azure-sql-database/">JSON 지원을</a> 사용하여 반구조화된 캐시를 구현할 수 있습니다. 마지막으로, 다양한 데이터 형식 및 제약 조건 등 완전한 관계형 스키마를 사용하여 비영구 테이블을 통해 완전한 관계형 캐시를 만들 수 있습니다.</p>
+
+
+  <p>GitHub <a href="https://github.com/Microsoft/sql-server-samples/tree/master/samples/applications/aspnet-session-state">게시된 스크립트</a>를 활용하여 기본 제공 세션 상태 공급자가 만든 개체를 대체하여 메모리 최적화 ASP.NET 세션 상태를 시작합니다.</p>
+
+
+  <h3>Tempdb 개체 대체</h3>
+
+
+  <p>비지속성 테이블 및 메모리 최적화 테이블 형식을 활용하여 기존의 tempdb 기반 #temp 테이블, 테이블 변수 및 테이블 반환 매개 변수를 대체합니다.</p>
+
+
+  <p>메모리 액세스에 최적화된 테이블 변수 및 비영구 테이블은 일반적으로 기존 테이블 변수 및 #temp 테이블과 비교할 때 CPU를 줄이고 로그 IO를 완전히 제거합니다.</p>
+
+
+  <p>Azure SQL Database 메모리 최적화 테이블 반환 매개 변수의 이점을 보여 주는 사례 연구:<a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/04/07/a-technical-case-study-high-speed-iot-data-ingestion-using-in-memory-oltp-in-azure/">https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/04/07/a-technical-case-study-high-speed-iot-data-ingestion-using-in-memory-oltp-in-azure/</a></p>
+
+
+  <p><em>구현 고려 사항</em></p>
+
+
+  <p>시작하려면 <a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/03/21/improving-temp-table-and-table-variable-performance-using-memory-optimization/">메모리 최적화를 사용하여 임시 테이블 및 테이블 변수 성능 향상</a>을 참조하세요.</p>
+
+
+  <h3><strong>ETL(추출, 변환, 로드)</strong></h3>
+
+
+  <p>ETL 워크플로에는 종종 준비 테이블로 데이터 로드, 데이터 변환 및 최종 테이블에 로드가 포함됩니다.</p>
+
+
+  <p><em>구현 고려 사항</em></p>
+
+
+  <p>데이터 준비에 비영구 메모리 최적화 테이블을 사용합니다. 모든 IO가 완전히 제거되고 데이터 액세스 효율성이 향상됩니다.</p>
+
+
+  <p>워크플로의 일환으로 준비 테이블에서 변환을 수행하는 경우 고유하게 컴파일된 저장 프로시저를 사용하여 이러한 변환을 가속화할 수 있습니다. 이러한 변환을 동시에 수행할 수 있으면 메모리 최적화에서 추가적인 확장 이점을 얻을 수 있습니다.</p>
+
+
+  <h1>시작</h1>
+
+
+  <p>다음 스크립트는 데이터베이스에서 In-Memory OLTP 개체를 만드는 방법을 보여 줍니다.</p>
+
+
+  <div style="background: rgb(238, 238, 238); padding: 5px 10px; border: 1px solid rgb(204, 204, 204); border-image: none;">-- 메모리 최적화 테이블<br>
+
+  CREATE TABLE dbo.table1<br>
+
+  (c1 INT IDENTITY PRIMARY KEY NONCLUSTERED,<br>
+
+  &nbsp; c2 NVARCHAR(MAX))<br>
+
+  WITH(MEMORY_OPTIMIZED=ON)<br>
+
+  이동<br>
+
+  -- 비지속성 테이블<br>
+
+  CREATE TABLE dbo.temp_table1<br>
+
+  (c1 INT IDENTITY PRIMARY KEY NONCLUSTERED,<br>
+
+  &nbsp; c2 NVARCHAR(MAX))<br>
+
+  WITH(MEMORY_OPTIMIZED=ON,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DURABILITY=SCHEMA_ONLY)<br>
+
+  이동<br>
+
+  -- 메모리 최적화 테이블 형식<br>
+
+  CREATE TYPE dbo.tt_table1 AS TABLE<br>
+
+  ( c1 INT IDENTITY,<br>
+
+  &nbsp; c2 NVARCHAR(MAX),<br>
+
+  &nbsp; is_transient BIT NOT NULL DEFAULT(0),<br>
+
+  &nbsp; INDEX ix_c1 HASH(c1) WITH(BUCKET_COUNT=1024))<br>
+
+  WITH(MEMORY_OPTIMIZED=ON)<br>
+
+  이동<br>
+
+  -- 고유하게 컴파일된 저장 프로시저<br>
+
+  CREATE PROCEDURE dbo.usp_ingest_table1<br>
+
+  &nbsp;@table1 READONLY dbo.tt_table1<br>
+
+  WITH NATIVE_COMPILATION, SCHEMABINDING<br>
+
+  AS<br>
+
+  BEGIN ATOMIC<br>
+
+  &nbsp;&nbsp;&nbsp; WITH(TRANSACTION ISOLATION LEVEL=SNAPSHOT,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LANGUAGE=N&#39;us_english&#39;)<br>
+
+  <br>
+
+  &nbsp; DECLARE @i INT = 1<br>
+
+  <br>
+
+  &nbsp; WHILE @i &gt; 0<br>
+
+  &nbsp; 시작<br>
+
+  &nbsp;&nbsp;&nbsp; INSERT dbo.table1<br>
+
+  &nbsp;&nbsp;&nbsp; SELECT c2<br>
+
+  &nbsp;&nbsp;&nbsp; 보낸 사람 @table1<br>
+
+  &nbsp;&nbsp;&nbsp; WHERE c1 = @i AND is_transient=0<br>
+
+  <br>
+
+  &nbsp;&nbsp;&nbsp; IF @@ROWCOUNT &gt; 0<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SET @i += 1<br>
+
+  &nbsp;&nbsp;&nbsp; 다른<br>
+
+  &nbsp;&nbsp;&nbsp; 시작<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INSERT dbo.temp_table1<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT c2<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 보낸 사람 @table1<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE c1 = @i AND is_transient=1<br>
+
+  <br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF @@ROWCOUNT &gt; 0<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SET @i += 1<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 다른<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SET @i = 0<br>
+
+  &nbsp;&nbsp;&nbsp; 끝<br>
+
+  &nbsp; 끝<br>
+
+  <br>
+
+  End<br>
+
+  이동<br>
+
+  -- 절차의 샘플 실행<br>
+
+  DECLARE @table1 dbo.tt_table1<br>
+
+  INSERT @table1 (c2, is_transient) VALUES(N&#39;샘플 지속성&#39;, 0)<br>
+
+  INSERT @table1 (c2, is_transient) VALUES(N&#39;샘플 비지속성&#39;, 1)<br>
+
+  EXECUTE dbo.usp_ingest_table1 @table1=@table1<br>
+
+  dbo.table1의 SELECT c1, c2<br>
+
+  dbo.temp_table1 SELECT c1, c2<br>
+
+  이동</div>
+
+
+  <p>In-Memory OLTP를 활용하고 성능 이점을 보여 주는 보다 포괄적인 샘플은 In-Memory OLTP 샘플</a> 설치에서"><a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-in-memory/#a-install-the-in-memory-oltp-sample" title="https://azure.microsoft.com/en-us/documentation/articles/sql-database-in-memory/#a-install-the-in-memory-oltp-sample 찾을 수 있습니다.</p>
+
+
+  <p>In-Memory OLTP의 리소스 사용률 이점에 대한 위의 그림에 사용되는 스마트 그리드 샘플 데이터베이스 및 워크로드는 <a href="https://github.com/Microsoft/sql-server-samples/releases/tag/iot-smart-grid-v1.0">릴리스</a> 및 <a href="https://github.com/Microsoft/sql-server-samples/tree/master/samples/applications/iot-smart-grid">소스 코드</a>에서 찾을 수 있습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>지금 Azure SQL Database OLTP를 In-Memory 사용해 보세요!</em></p>
+
+
+  <h4>시작할 리소스:</h4>
+
+
+  <ul>
+   <li>
+   <p><a href="https://azure.microsoft.com/documentation/articles/sql-database-in-memory/">SQL Database SQL In-Memory 기술</a></p>
+   </li>
+   <li>
+   <p><a href="https://msdn.microsoft.com/library/mt694156.aspx">빠른 시작 1: 더 빠른 T-SQL 성능을 위한 메모리 내 OLTP 기술</a></p>
+   </li>
+   <li>
+   <p><a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-in-memory-oltp-migration/">기존 Azure SQL 애플리케이션에서 In-Memory OLTP를 사용합니다.</a></p>
+   </li>
+   <li>
+   <p><a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/03/21/improving-temp-table-and-table-variable-performance-using-memory-optimization/">메모리 최적화를 사용하여 임시 테이블 및 테이블 변수 성능 향상</a></p>
+   </li>
+   <li>
+   <p><a href="https://msdn.microsoft.com/library/mt590207.aspx">메모리 액세스에 최적화된 테이블을 포함한 시스템 버전 임시 테이블</a></p>
+   </li>
+  </ul>

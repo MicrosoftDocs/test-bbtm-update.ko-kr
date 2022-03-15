@@ -1,0 +1,95 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 72351332cb39f1de9c7fda34e0c5a7f2b5e98cc2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898688"
+Slug: bring-innovation-anywhere-with-azures-multicloud-multiedge-hybrid-capabilities
+Title: Azure의 다중 클라우드, 다중 에지 하이브리드 기능을 사용하여 어디서나 혁신을 실현
+Summary: 기업이 원격 작업을 사용하도록 설정하고, 클라우드 혁신을 활용하고, 기존 온-프레미스 투자를 최대화하기 위해 우선 순위를 이동함에 따라 효과적인 다중 클라우드, 다중 에지 하이브리드 접근 방식에 의존하는 것이 그 어느 때보다 중요합니다.
+Content: >-
+  <p>기업이 원격 작업을 사용하도록 설정하고, 클라우드 혁신을 활용하고, 기존 온-프레미스 투자를 최대화하기 위해 우선 순위를 이동함에 따라 효과적인 다중 클라우드, 다중 에지 하이브리드 접근 방식에 의존하는 것이 그 어느 때보다 중요합니다.</p>
+
+
+  <p>처음부터 Microsoft Azure 항상 하이브리드로 설계되어 고객이 비즈니스 요구 사항을 충족하고 목적에 맞게 발명할 수 있도록 일관성과 유연성을 제공합니다. 이는 세계&rsquo; 최고의 브랜드가 비즈니스를 Azure에서 운영할 수 있다고 신뢰하는 여러 가지 이유 중 하나입니다. Azure 하이브리드 기능을 확장하면서 고객에게 온-프레미스, 다중 클라우드 및 에지에서 어디서나 앱을 실행하고 관리하기 위한 전체적이고 원활한 접근 방식을 제공합니다. 현재 Azure 하이브리드 포트폴리오에서 더 많은 혁신을 발표하고 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4db23105-182d-44fd-b319-92f5637717fa.png"><img alt="hybrid1" border="0" height="316" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8e3ef0e6-813a-49cd-8632-d1338f7add22.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="hybrid1" width="624"></a></p>
+
+
+  <h2>Azure Arc: 모든 인프라에 Azure 가져오기</h2>
+
+
+  <p>2019년 11월에는 고객에게 Azure를 사용하여 어디서나 혁신할 수 있는 유연성을 제공하기 위해 Azure Arc를 출시했습니다. Azure Arc는 두 가지 주요 작업을 수행합니다. 첫째, 모든 인프라에 Azure 관리 기능을 제공하고, 둘째, Azure 서비스를 어디서나 실행할 수 있도록 합니다. 출시 이후 Azure Arc는 모든 산업에서 엄청난 고객 관심과 채택을 보았습니다. <a href="https://aka.ms/AfricasTalking-Arc" target="_blank">아프리카&rsquo; 토킹</a>, <a href="https://customers.microsoft.com/en-us/story/836305-avanade-partner-professional-services-azure-arc" target="_blank">아바나데</a>, <a href="https://customers.microsoft.com/en-us/story/834111-dexmach-partner-professional-services-azure-arc" target="_blank">덱스마흐</a>, <a href="https://aka.ms/AAFerguson" target="_blank">퍼거슨</a>, <a href="https://aka.ms/Fujitsu-Arc" target="_blank">후지츠</a>, <a href="https://aka.ms/AAkpmg" target="_blank">KPMG</a>, <a href="https://aka.ms/Siemens-Arc" target="_blank">지멘스 헬스니너</a>와 같은 조직은 이미 Azure Arc를 통해 가치를 실현하고 있습니다. Azure Arc를 사용하여 분산 환경에서 리소스를 보다 효율적으로 관리하고 관리하며, Azure Arc를 사용하여 Azure 데이터 서비스를 온-프레미스로 가져옵니다.</p>
+
+
+  <p>오늘 Azure Arc를 사용하여 더 많은 혁신을 발표합니다.</p>
+
+
+  <ul>
+      <li><strong>Azure Arc 지원 데이터 서비스는 현재 미리 보기로 제공됩니다</strong>. 이제 Azure SQL Managed Instance 및 Azure PostgreSQL 하이퍼스케일은 온-프레미스 데이터 센터, 다중 클라우드 및 에지에서 실행할 수 있습니다. 이제 고객은 Azure에서 실행 중이든, 데이터 센터에서 실행하든, 다른 퍼블릭 클라우드에서 실행되는지에&rsquo; 관계없이 상록 SQL, 탄력적 규모 및 통합 데이터 관리 환경을 사용하여 항상 최신 상태를 유지하는 것과 같은 최신 Azure 관리형 데이터베이스 혁신을 활용할 수 있습니다. 또한 이러한 데이터 서비스는 연결된 모드와 연결이 끊긴 모드 모두에서 작동합니다. 고객은 Azure Arc 지원 데이터 서비스를 사용하여 IT 생산성 및 비즈니스 민첩성을 개선하는 데 있어 광범위한 이점을 보고 있습니다. <a href="https://aka.ms/AzureArcData" target="_blank">Azure Arc 지원 데이터 서비스의 미리 보기에 등록합니다</a>.</li>
+      <li><strong>이제 Azure Arc 지원 서버를 일반 공급합니다</strong>. 고객은 Azure Portal에서 모든 다중 클라우드 다중 에지 환경에서 Windows 및 Linux 서버를&mdash; 원활하게 구성하고&mdash; 제어할 수 있습니다. 이제 고객은 Azure 관리 서비스를 사용하여 서버를 모니터링, 보안 및 업데이트하고 다중 클라우드 및 다중 에지 배포에서 동일한 Azure Policy로 감사할 수 있습니다. 또한 고객은 중요한 규정 준수 요구 사항을 충족하기 위해 모든 서버에서 표준화된 역할 기반 액세스 제어를 구현할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/azure-arc/" target="_blank">Azure Arc에 대해 자세히 알아보세요</a>.</li>
+  </ul>
+
+
+  <h2>Azure Stack HCI 및 Azure Stack Hub: 온-프레미스 데이터 센터 현대화</h2>
+
+
+  <p>3년 전에는 고객이 자체 데이터 센터에 클라우드 혁신을 도입하여 규정 준수 요구 사항과 연결이 끊긴 실행 기능을 충족하면서 클라우드 기술을 활용할 수 있도록 Azure Stack을 처음 출시했습니다. 그&rsquo; 이후로 클라우드 일관성 있는 인프라 및 Azure 서비스를 로컬 데이터 센터 내의 다양한 솔루션에 제공하고 에지에서 실행되도록 Azure Stack 포트폴리오를 계속 확장했습니다.</p>
+
+
+  <p>&rsquo;현재 고객이 데이터 센터를 현대화하는 데 도움이 되는 새로운 Azure Stack 기능을 시작합니다.</p>
+
+
+  <ul>
+      <li><strong>Azure Stack HCI에서 AKS(Azure Kubernetes Services)의 미리 보기</strong>. Azure Stack HCI의 AKS를 사용하면 고객이 Azure 내에서 AKS를 실행할 수 있는 것처럼 Azure Stack HCI에서 대규모로 컨테이너화된 앱을 배포하고 관리할 수 있습니다. 이제 데이터 센터 내에서 Azure Stack HCI를 사용하려는 고객을 위해 일관되고 안전하며 완전히 관리되는 Kubernetes 환경을 제공합니다. <a href="https://aka.ms/AKSonHCI" target="_blank">Azure Stack HCI에서 AKS 미리 보기에 등록합니다</a>.</li>
+  </ul>
+
+
+  <ul>
+      <li><strong>이제 GPU에서 Azure Stack Hub를 사용할 수 있습니다</strong>. 시각화에 강력한 앱을&rsquo; 제공하기 위해 AMD와 협력하여 AMD Mi25 GPU를 Azure Stack Hub로 가져와 사용자가 효율적인 방식으로 GPU를 공유할 수 있도록 합니다. NVIDIA V100 Tensor Core GPU를 사용하면 고객은 연결이 끊어지거나 부분적으로 연결된 시나리오에서 강력한 컴퓨팅 기계 학습 워크로드를 실행할 수 있습니다. NVIDIA T4 Tensor Core GPU는 컴퓨팅 집약적 워크로드를 줄이는 시각화, 추론 및 기계 학습을 제공합니다. <a href="https://azure.microsoft.com/en-us/products/azure-stack/hub/" target="_blank">Azure Stack Hub에 대해 자세히 알아봅니다</a>.</li>
+  </ul>
+
+
+  <h2>Azure VMware 솔루션: VMware 워크로드를 Azure로 원활하게 확장 및 마이그레이션</h2>
+
+
+  <p>많은 고객은 기존 VMware 환경을 Azure와 원활하게 통합하는 기능을 원합니다. 현재 <strong>는 Azure VMware Solution을 일반 공급한다고 발표합니다</strong>. Microsoft에서 설계, 빌드 및 지원하는 Azure VMware Solution은 VMware에서 검증된 클라우드이며 고객은 복잡성을 최소화하면서 VMware 워크로드를 클라우드로 마이그레이션할 수 있습니다. Azure 서비스에는 vSphere, NSX-T, HCX 및 vSan과 같은 최신 VMware Cloud Foundation 구성 요소가 포함되어 있으며 다양한 파트너 솔루션 집합과 통합되므로 고객은 기존 도구와 기술을 계속 사용할 수 있습니다. 또한 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">Azure 하이브리드 혜택을</a> 제공하는 라이선스를 통해 Azure는 VMware 또는 다른 곳에서 실행되는지 여부에 관계없이 Windows Server 및 SQL 워크로드를 마이그레이션하는 가장 비용 효율적인 클라우드입니다. <a href="https://azure.microsoft.com/en-us/services/azure-vmware/" target="_blank">Azure VMware Solution에 대해 자세히 알아봅니다</a>.</p>
+
+
+  <h2>Edge에서 컴퓨팅 및 AI를 실행하는 새로운 혁신</h2>
+
+
+  <p>조직은 새로운 비즈니스 시나리오의 잠금을 해제하기 위해 컴퓨팅 및 AI를 네트워크의 가장자리로 확장하고 있습니다. 소매점이 항상 올바른 장소에 적합한 제품을 보유하고 있다는 Imagine, 병원은 환자 치료를 세계에서 가장 외딴 지역으로 확장하거나 공장이 용량에 대비하여 성능 수준을 실시간으로 최적화합니다. &rsquo;지능형 에지라고 부르는 것을 설명합니다. Azure는 고객이 이러한 새로운 사용 사례를 실현할 수 있도록 포괄적인 클라우드 서비스 및 에지 디바이스 지원 포트폴리오를 제공합니다.</p>
+
+
+  <p>현재 새로운 에지 기능을 릴리스하고 있습니다.</p>
+
+
+  <ul>
+      <li><strong>이제 Azure SQL Edge를 일반 공급하여</strong> IoT 게이트웨이 및 에지 디바이스에 가장 안전한 Microsoft SQL 데이터 엔진을 제공합니다. 에지 워크로드에 최적화된 이 작은 공간 컨테이너는 연결되거나 연결이 끊긴 환경에서 기본 제공 데이터 스트리밍, 스토리지 및 AI를 지원합니다. SQL Server 및 Azure SQL Database 동일한 코드베이스를 기반으로 구축된 Azure SQL Edge는 업계 최고의 보안, 친숙한 개발자 환경 및 많은 팀이 이미 알고 신뢰하는 것과 동일한 도구를 제공합니다. <a href="https://azure.microsoft.com/en-us/services/sql-edge/" target="_blank">Azure SQL Edge에 대해 자세히 알아보세요</a>.</li>
+  </ul>
+
+
+  <ul>
+      <li><strong>두 개의 새로운 Azure Stack Edge 러기드 디바이스를 사용할 수 있습니다</strong>. 고객은 NVIDIA&#39;강력한 T4 GPU 및 경량의 이식 가능한 Azure Stack Edge Mini R을 사용하여 Azure Stack Edge Pro R을 실행하여 에지에서 기계 학습을 수행하고 빠른 인사이트를 얻을 수 있습니다. 두 장치 모두 원격 위치에서 가장 가혹한 환경에서 작동하도록 설계되었습니다. 3D에서 증강 현실을 통해 이러한 새 디바이스를 확인하려면 iOS 또는 <a href="https://aka.ms/AA9bj3e" target="_blank">Android</a><a href="https://aka.ms/AA98c7b" target="_blank">에서 Microsoft 하드웨어 환경을 다운로드</a>합니다.</li>
+  </ul>
+
+
+  <ul>
+      <li><strong>이제 GPU에서 Azure Stack Edge를 사용할 수 있습니다</strong>. 고객은 NVIDIA T4 Tensor Core GPU에서 제공하는 Azure Stack Edge Pro 시리즈를 사용하여 에지에서 시각화, 추론 및 기계 학습을 실행할 수 있습니다. 이렇게 하면 효율적인 소매 커브사이드 픽업을 위해 번호판을 자동으로 인식하고 제조 조립 라인의 제품에서 실시간으로 결함을 감지하는 등 광범위한 새로운 에지 시나리오의 잠금을 해제할 수 있습니다. <a href="https://azure.microsoft.com/en-us/products/azure-stack/edge/" target="_blank">Azure Stack Edge에 대해 자세히 알아봅니다</a>.</li>
+  </ul>
+
+
+  <ul>
+      <li><strong>에&amp; T는 Azure Sphere를 사용하여 셀룰러 지원 보호 모듈을 빌드합니다</strong>. ATT&amp; 및 Microsoft는 엔터프라이즈 고객이 Wi-Fi 시스템에 의존하지 않고도 AZURE Sphere 보호 디바이스를 통해 ATTs&amp;&rsquo; 셀룰러 네트워크를 통해 클라우드에 안전하게 컴퓨터 및 장비를 연결할 수 있도록 협력하고 있습니다. 이를 통해 고객은 Wi-Fi 보안 표준을 충족하지 않는 디바이스를 연결할 수 있습니다. 예를 들어 타사 위치에서 프랜차이즈를 운영하는 고객은 타사 소유의 Wi-Fi를 우회하여 컴퓨터를 자신의 클라우드에 직접 연결할 수 있습니다. ATT&amp; 기반 보호 디바이스는 200여 개국에서 작동할 수 있는 ATT&amp; Global SIM을 통해 Azure Spheres&rsquo; 도달 범위를 확장하고 에지에서 클라우드로의 다층 통합 보안을 제공합니다. <a href="https://azure.microsoft.com/en-us/services/azure-sphere/" target="_blank">Azure Sphere에 대해 자세히 알아봅니다</a>.</li>
+  </ul>
+
+
+  <p>이번 주 Microsoft Ignite에서 다중 클라우드, 다중 에지 하이브리드의 혁신에 대한 더 많은 업데이트를 공유하기를 기대합니다! Azure 하이브리드 제품에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/solutions/hybrid-cloud-app/" target="_blank">Azure 하이브리드 솔루션 페이지를 방문하세요</a>. 또한 주요 Azure 하이브리드 제품을 사용하여 사용 사례 시나리오 및 모범 사례를 보여 주는 <a href="https://info.microsoft.com/ww-landing-webinar-miniseries-8-ways-to-optimize-costs-and-maximize-value-with-azure-iaas.html" target="_blank">예정된 웨비나 시리즈에 등록</a> 할 수도 있습니다.</p>
+
+
+  <hr>
+
+  <p><em>Azure. 목적에 따라 발명.</em></p>

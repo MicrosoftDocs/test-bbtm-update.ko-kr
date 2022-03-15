@@ -1,0 +1,73 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 07bde277cfe23787f02690b29b22ec4daccb6531
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899310"
+Slug: azure-virtual-machine-scale-sets-now-provide-simpler-management-during-scalein
+Title: 이제 Azure Virtual Machine Scale Sets는 스케일 인 중에 더 간단한 관리를 제공합니다.
+Summary: Azure Virtual Machine Scale Sets에 대한 세 가지 새로운 기능의 일반 공급으로 이제 스케일 인 중에 가상 머신 인스턴스를 정상적으로 처리할 수 있습니다.
+Content: >-
+  <p>최근에 Azure Virtual Machine Scale Sets에 대한 세 가지 기능의 <a href="https://azure.microsoft.com/en-us/updates/virtual-machine-scale-sets-now-simpler-to-manage/" target="_blank">일반 공급</a> 이 발표되었습니다. 인스턴스 보호, 사용자 지정 스케일 인 정책 및 종료 알림은 스케일 인 중에 가상 머신 인스턴스의 관리를 간소화하는 새로운 기능을 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/" target="_blank">Azure Virtual Machine Scale Sets</a> 는 그룹의 여러 VM(가상 머신) 인스턴스를 집합적으로 배포하고 쉽게 관리하는 방법입니다. 워크로드에 필요한 항목에 따라 인스턴스 수를 동적으로 늘리거나 줄일 수 있도록 확장 집합에 대한 <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview" target="_blank">자동 크기 조정 규칙을</a> 구성할 수도 있습니다.</p>
+
+
+  <p>이러한 새로운 기능을 사용하면 이제 확장 중에 인스턴스 제거를 정상적으로 처리하여 애플리케이션 및 서비스에 대한 더 나은 사용자 환경을 달성할 수 있습니다. 이러한 새로운 기능은 퍼블릭 클라우드 및 소버린 클라우드에 대한 모든 Azure 지역에서 사용할 수 있습니다. Azure Virtual Machine Scale Sets에서 이러한 기능을 사용하는 데 추가 요금이 부과되지 않습니다.</p>
+
+
+  <p>&rsquo;이러한 기능이 스케일 인 중에 더 나은 제어를 제공하는 방법을 살펴보겠습니다.</p>
+
+
+  <h2>인스턴스 보호&mdash; 스케일 인에서 하나 이상의 인스턴스 보호</h2>
+
+
+  <p>확장이 발생할 때 이러한 인스턴스를 삭제하지 않으려면 확장 집합의 하나 이상의 인스턴스에 확장 <em>에서 보호</em> 정책을 적용할 수 있습니다. 이 기능은 확장 집합의 다른 인스턴스를 동적으로 확장하거나 확장하면서 유지하려는 몇 가지 특수 인스턴스가 있는 경우에 유용합니다. 이러한 인스턴스는 확장 집합의 다른 인스턴스와 다른 특정 특수 작업을 수행할 수 있으며 이러한 특수 인스턴스를 확장 집합에서 제거하지 않도록 할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-protection" target="_blank">인스턴스 보호</a> 는 워크로드에 대해 이러한 시나리오를 사용하도록 설정하는 기능을 제공합니다.</p>
+
+
+  <h3>확장 집합 작업으로부터 하나 이상의 인스턴스 보호</h3>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-protection" target="_blank">또한 인스턴스 보호를</a> 사용하면 이미지 다시 설치 또는 업그레이드와 같은 다른 확장 집합 작업 중에 하나 이상의 인스턴스가 수정되는 것을 방지할 수 있습니다. 이 작업은 특정 인스턴스에 <em>확장 집합 작업으로부터 보호</em> 정책을 적용하여 수행할 수 있습니다. 인스턴스에 이 정책을 자동으로 적용하면 확장으로부터 보호됩니다.</p>
+
+
+  <h2>사용자 지정 스케일 인 정책&mdash; 확장 중 인스턴스 제거 순서 구성</h2>
+
+
+  <p>스케일 인하는 동안 확장 집합 형식으로 하나 이상의 인스턴스를 제거해야 하는 경우 해당되는 경우 확장 집합이 가용성 영역 및 장애 도메인 간에 균형을 유지하도록 삭제하도록 인스턴스가 선택됩니다. <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy" target="_blank">사용자 지정 규모 감축 정책을</a> 사용하면 스케일 인 중에 인스턴스를 삭제하도록 선택해야 하는 순서를 추가로 지정하고 제어할 수 있습니다. <em>OldestVM</em> 스케일 인 정책을 사용하여 가장 오래된 만든 인스턴스를 먼저 제거하거나 <em>NewestVM</em> 스케일 인 정책을 사용하여 가장 먼저 만든 인스턴스를 제거할 수 있습니다. 두 시나리오 모두에서 <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-availability-zones#zone-balancing" target="_blank">가용성 영역 간에 분산</a> 이 기본 설정됩니다. 인스턴스에 보호 정책 중 하나를 적용한 경우 스케일 인 중에 삭제하도록 선택되지 않습니다.</p>
+
+
+  <p>다음은 가용성 영역 3개와 초기 인스턴스 수 9가 있는 확장 집합에 대한 확장 순서의 몇 가지 예입니다. 이러한 예제에서는 인스턴스 ID가 가장 작은 VM이 먼저 만들어졌으며 가장 높은 인스턴스 ID와 연결된 VM이 마지막으로 만들어졌다고 가정합니다. 점선 사각형으로 묶인 VM 인스턴스는 인스턴스 보호 정책 중 하나를 사용하여 보호되었음을 나타냅니다. 크로스는 규모 감축 중에 VM 인스턴스가 삭제되도록 선택됨을 나타냅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0caf5371-1017-47d0-84f6-87a30a89d184.jpg"><img alt="Newest VM scale-in policy example. The VM with ID 9 is deleted first during scale-in which is the newest created VM. Next, the VM with ID 7 is deleted during scale-in because the VM with ID 8 is a protected VM." border="0" height="696" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/985df91e-de4d-4c27-a28b-f3ec9be164e3.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="최신 VM 스케일 인 정책 예제입니다. ID가 9인 VM은 가장 새로 만든 VM인 규모 감축 중에 먼저 삭제됩니다. 다음으로, ID가 8인 VM이 보호된 VM이므로 확장 중에 ID가 7인 VM이 삭제됩니다." width="1024"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f20749a0-3c77-4e34-96ea-58980f99c3ab.jpg"><img alt="Oldest VM scale-in policy example. The VM with ID 1 is deleted first during scale-in which is the oldest created VM. Next, the VM with ID 3 is deleted during scale-in because the VM with ID 2 is a protected VM." border="0" height="693" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67bbce4b-c145-44cd-8d0b-4f2428dc2a6b.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="가장 오래된 VM 스케일 인 정책 예제입니다. ID가 1인 VM은 가장 오래된 VM인 규모 감축 중에 먼저 삭제됩니다. 다음으로, ID가 3인 VM은 확장 중에 삭제됩니다. ID가 2인 VM은 보호된 VM이기 때문입니다." width="1024"></a></p>
+
+
+  <h2>인스턴스 삭제에 대한 notificationreceive&mdash; VM 내 알림 종료</h2>
+
+
+  <p>확장 집합에서 인스턴스를 삭제하려고 하는 경우 인스턴스에서 특정 사용자 지정 작업을 수행할 수 있습니다. 이러한 작업의 예로 부하 분산 장치에서 등록을 해제하거나 로그를 복사할 수 있습니다. 예를 들어 확장으로 인해 플랫폼에서 인스턴스 삭제가 트리거되는 경우 애플리케이션이 중단되거나 유용한 로그가 제대로 유지되지 않도록 이러한 작업을 프로그래밍 방식으로 수행해야 합니다. <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-terminate-notification" target="_blank">종료 알림</a> 기능을 사용하면 예정된 인스턴스 삭제에 대한 VM 내 알림을 수신하도록 인스턴스를 구성하고 삭제 작업을 5~15분 동안 일시 중지하여 인스턴스에서 이러한 사용자 지정 작업을 수행할 수 있습니다.</p>
+
+
+  <p>종료 알림은 Azure 메타데이터 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/scheduled-events" target="_blank">serviceScheduled</a>&mdash; 이벤트를 &mdash;통해 전송되며 VM 인스턴스 내에서 액세스할 수 있는 REST 엔드포인트를 사용하여 수신할 수 있습니다. 인스턴스가 구성된 엔드포인트에서 종료 알림을 받을 때 실행되도록 특정 작업 또는 스크립트를 구성할 수 있습니다. 이러한 작업이 완료되고 미리 구성된 일시 중지 시간 제한이 완료되기를 기다리지 않으려면 메타데이터 서비스에 대한 POST 호출을 실행하여 삭제를 승인할 수 있습니다. 이렇게 하면 인스턴스 삭제를 계속할 수 있습니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>REST API, Azure CLI, Azure PowerShell 또는 Azure Portal을 사용하여 확장 집합에 이러한 기능을 사용하도록 설정할 수 있습니다. 자세한 지침에 대한 설명서 페이지의 링크는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-instance-protection" target="_blank">인스턴스 보호</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy" target="_blank">사용자 지정 규모 감축 정책</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-terminate-notification" target="_blank">알림 종료</a></li>
+  </ul>

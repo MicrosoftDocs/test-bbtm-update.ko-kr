@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ab3aef1703f4e36ed69b71c333daece2dc549042
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898292"
+Slug: now-available-azure-sphere-technical-documentation
+Title: '지금 사용 가능: Azure Sphere 기술 설명서'
+Summary: 4월에는 Azure Sphere를 전 세계에 발표했습니다. 그 이후로, 우리는 깊은 고객의 관심과 미디어와의 매력적인 대화에 정말 만족했습니다.
+Content: >-
+  <p>4월에 <a href="https://azure.microsoft.com/en-us/blog/introducing-microsoft-azure-sphere-secure-and-power-the-intelligent-edge/">는 Azure Sphere</a> 를 전 세계에 발표했습니다. 그 이후로, 깊은&rsquo; 고객의 관심과 매력적인 <a href="https://www.microsoft.com/azure-sphere/news">미디어</a> 대화에 만족했습니다. 이 대화는 Microsofts&rsquo; 비전과 엔드투엔드 보안 IoT 플랫폼에 대한 헌신을 공유하고 파트너, 고객 및 소비자의 피드백을 들을 수 있는 기회였습니다. Microsoft는 후속 작업이 아닌 IoT 보안을 지속적으로 옹호할 것입니다.&nbsp; IoT 디바이스에는 디바이스가 디자이너의 마음에서 처음 구상되는 순간부터 실리콘, 소프트웨어 및 클라우드에 걸쳐 있는 보안 조치가 포함되어야 합니다.</p>
+
+
+  <p>Azure Spheres&rsquo;의 목적은 제조업체가 수십&rsquo; 년간의 보안 환경을 통해 알리고 Azure Sphere Security Service에 대한 연결을 통해 보호되는 MCU 기반 디바이스를 쉽고 저렴하게 빌드할 수 있도록 돕는 것입니다. 공개 미리 보기 마일스톤을 통해 Azure Sphere 뒤에 있는 기술에 대해 더 많이 공유하고자 합니다.&nbsp; 이번 주에&nbsp;는 아키텍처(예제는 이 블로그 게시물에 포함됨), 주요 개념, 애플리케이션 개발 및 해당 애플리케이션을 현장의 디바이스에 무선으로 배포하는 등 다양한 주제를 다루는 <a href="https://docs.microsoft.com/azure-sphere/">Azure Sphere 설명서</a>의 릴리스를 살펴보겠습니다.&nbsp; 또한 빠른 시작 가이드, 자습서 및 모든 모범 사례를 &ndash; 선택하면 개발 키트를 빠르게 시작하고 실행하는 데 도움이 됩니다.&nbsp; 우리는 당신의 인내심을 주셔서 감사합니다, 우리는 devkits가 앞으로 몇 주 안에 당신에게 도달하기 시작할 것으로 예상.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cc35f0b8-f980-411f-83d7-51b4825d4b03.png" style="margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p style="text-align: center;"><a href="https://docs.microsoft.com/en-us/azure-sphere/product-overview/architecture">Azure Sphere </a>설명서의 Azure Sphere 아키텍처 예제</p>
+
+
+  <p>더 많은 공개 마일스톤에 접근할 때 자세한 내용과 공지 사항은 여기를 다시 확인하세요. 그때까지 문서를 즐기고 향후 블로그에서 해결할 수 있도록 어떤 질문이 있는지 알려주세요.</p>
+
+
+  <p><a href="https://aka.ms/AzureSpheredevkits">오늘 개발 키트를 선주문</a> 하여 배송을 시작할 때 첫 번째 라인 중 하나입니다.</p>

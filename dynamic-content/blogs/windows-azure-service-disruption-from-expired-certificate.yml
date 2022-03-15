@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9f6febd63bcfc02bcd73cedd83d437afda586d2a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897087"
+Slug: windows-azure-service-disruption-from-expired-certificate
+Title: 만료된 인증서에서 Azure 서비스 중단 Windows
+Summary: Windows Azure Storage 만료된 SSL 인증서로 인해 HTTPS 트래픽에 영향을 주는 전 세계적으로 중단이 발생했습니다.&nbsp; HTTP 트래픽은 영향을 받지 않았지만 이 이벤트는 여러 Windows Azure에 영향을 미쳤습니다...
+Content: <p>Windows Azure Storage 만료된 SSL 인증서로 인해 HTTPS 트래픽에 영향을 주는 전 세계적으로 중단이 발생했습니다.&nbsp; HTTP 트래픽은 영향을 받지 않았지만 이 이벤트는 Storage 종속된 여러 Windows Azure 서비스에 영향을 줍니다.&nbsp; 영향을 받는 클러스터에서 SSL 인증서를 업데이트하는 복구 단계를 실행했으며 가용성은 2월 23일 오전 1:00 PST까지 전 세계 99%로 복원되었습니다&gt;.&nbsp; 2월 23일 오후 8:00 PST에서 복원 작업을 완료하고 전 세계적으로 전체 가용성을 확인했습니다. 중단 범위를 감안할 때 SLA에 따라 영향을 받는 고객에게 사전 예방적으로 지원을 제공할&nbsp; 것입니다. 크레딧은 후속 청구서에 반영됩니다.&nbsp; 우리 팀은 또한 미래의 재발을 방지하는 단계를 포함하여 전체 RCA (근본 원인 분석)에 열심히 노력하고 있습니다.&nbsp; RCA는 사용 가능한 즉시 이 블로그에 게시됩니다.&nbsp; 중단 및 발생한 모든 문제에 대해 진심으로 사과드립니다.<br><br>스티븐 마틴<br>일반 관리자<br>Azure Business &amp; Windows 작업</p>

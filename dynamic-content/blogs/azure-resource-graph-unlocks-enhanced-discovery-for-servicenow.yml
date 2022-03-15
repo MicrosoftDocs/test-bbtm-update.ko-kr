@@ -1,0 +1,35 @@
+### YamlMime:Yaml
+ms.openlocfilehash: be527d829658df87fc2b1df4cbeb780f20cfcb0a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898140"
+Slug: azure-resource-graph-unlocks-enhanced-discovery-for-servicenow
+Title: Azure Resource Graph ServiceNow에 대한 향상된 검색의 잠금을 해제합니다.
+Summary: ServiceNow® ITOM 검색은 이제 Microsoft의 Azure 리소스 Graph 통합되어 운영 워크플로 내에서 조직의 Azure 자산을 더 빠르고 확장 가능한 검색할 수 있도록 합니다.
+Content: >-
+  <p>이제&rsquo; ServiceNow&reg; ITOM Discovery가 Microsofts&rsquo; Azure Resource Graph 통합되어 운영 워크플로 내에서 조직&rsquo; Azure 자산을 더 빠르고 확장 가능한 검색할 수 있게 되었습니다.</p>
+
+
+  <p>Azure용 ServiceNows&rsquo; <a href="https://docs.servicenow.com/bundle/paris-it-operations-management/page/product/it-operations-management/reference/r_ITOMApplications.html" target="_blank">ITOM 검색</a> 및 서비스 매핑은 조직에 Azure에서 실행되는 IT 인프라 및 서비스에 대한 최신 CMDB(구성 관리 데이터베이스) 보기를 제공합니다. 그런 다음 CMDB 내의 이 검색 데이터는 ServiceNow 내의 다양한 워크플로 및 애플리케이션을 지원하여 조직이 운영 민첩성을 높일 수 있도록 합니다. <a href="https://azure.microsoft.com/en-us/features/resource-graph/" target="_blank">Azure Resource Graph</a> Azure <a href="https://azure.microsoft.com/en-us/services/azure-lighthouse/" target="_blank">Lighthouse</a>를 사용하여 여러 구독 및 테넌트 간에 대규모로 쿼리할 수 있는 기능과 함께 Azure 클라우드 리소스의 고성능 탐색을 제공하는 Azure 서비스입니다.</p>
+
+
+  <p>ServiceNows 환경을 통해 Azure 자산에 대한 포괄적인 엔드 투 엔드 보기를 원하는 공동 고객의 경우 ServiceNows&rsquo;&rsquo; ITOM 검색 내에서 Azure Resource Graph API로 전환하면 다음과 같은 이점이 제공됩니다.</p>
+
+
+  <ul>
+      <li>수백 또는 수만 개의 리소스가 포함된 대규모 Azure 환경의 검색을 지원합니다.</li>
+      <li>ServiceNow 벤치마크를 기반으로 Azure 자산을&#39; 고객의 4배 빠른 검색</li>
+      <li>Azure 하이브리드 혜택 라이선스의 비용 절감에 대한 가시성이 향상되었습니다.</li>
+      <li>Azure 태그 데이터를 사용하여 빠르고 자동화된 서비스 맵 만들기</li>
+  </ul>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;더 많은 고객이 Azure로 마이그레이션하고 Azure Arc를 사용하여 Azure를 온-프레미스로 확장함에 따라 기존 워크플로 도구를 일관되게 사용하는 기능이 필수적입니다. 이러한 통합을 통해 고객은&nbsp; ServiceNows&rsquo; ITOM 검색 환경 내에서 가장 풍부한 Azure 자산을 더 풍부하고 빠르게 검색&nbsp;하여 궁극적으로 더 나은 운영 의사 결정을 내릴&rdquo; 수 있다고 Microsoft 프로그램 관리 파트너 이사 인Jeremy Winter는 말&nbsp;했습니다.</em></p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Azure 리소스 Graph 고성능 쿼리 기능을 사용하여 Azure 리소스 데이터를 Now Platform&reg;에 통합하고, IT 서비스 관리, IT 운영 관리, AIOps, CloudOps, DevOps, SecOps, 소프트웨어 자산 관리를 위한 통합된 서비스 인식 플랫폼을 만들 때 고객이 전체 IT 가치 체인에서 ServiceNow 워크플로의 기능을 잠금 해제할 수 있게 되어 매우 기쁩니다.  제프 하우스만(Jeff Hausman) 부사장 겸 총괄 매니저 ITOM, 보안 및 CMDB atServiceNow&nbsp;는 위험 관리 등을&quot;&nbsp; 수행했다. &quot; 궁극적으로 직원 및 고객에게 원활한 환경을 제공할 수 있습니다.&rdquo;</em></p>
+
+
+  <p>이 통합에 대해 자세히 알아보려면 ServiceNow의 블로그 <a href="https://community.servicenow.com/community?id=community_blog&amp;sys_id=435425d4db862c10f21f5583ca9619f4" target="_blank">공지를</a> 참조하세요.</p>

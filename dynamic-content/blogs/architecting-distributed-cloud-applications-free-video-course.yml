@@ -1,0 +1,149 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ec56cb64d58809e5c6911943ef7310a3e9098bb2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898506"
+Slug: architecting-distributed-cloud-applications-free-video-course
+Title: 분산 클라우드 애플리케이션 설계(무료 비디오 과정)
+Summary: 올바른 기술과 최상의 클라우드 패턴을 사용하여 올바른 개발자 사고방식으로 분산 클라우드 애플리케이션을 설계하는 방법을 알아봅니다. 이 기술 중립적인 과정은 불가피한 하드웨어 및 소프트웨어 오류를 처리하면서 비용 효율적인 방식으로 고가용성 및 확장성을 유지하는 데 중점을 둔 분산 클라우드 애플리케이션의 이점을 설명하는 것으로 시작합니다.
+Content: >-
+  <p>올바른 기술과 최상의 클라우드 패턴을 사용하여 올바른 개발자 사고방식으로 분산 클라우드 애플리케이션을 설계하는 방법을 알아봅니다. 이 기술 중립적인 과정은 비용 효율적인 방식으로 고가용성 및 확장성을 유지하는 동시에 불가피한 하드웨어 및 소프트웨어 오류를 처리하는 데 중점을 둔 분산 클라우드 애플리케이션의 이점을 설명하는 것으로 시작합니다.</p>
+
+
+  <p>다룰 주제는 다음과 같습니다.</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top">
+     <p align="center">orchestrators</p>
+     </td>
+     <td valign="top">
+     <p align="center">트랜잭션</p>
+     </td>
+     <td valign="top">
+     <p align="center">자동 크기 조정</p>
+     </td>
+     <td valign="top">
+     <p align="center">백업 및 복원</p>
+     </td>
+     <td valign="top">
+     <p align="center">Cdn</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+     <p align="center">컨테이너</p>
+     </td>
+     <td valign="top">
+     <p align="center">최종 일관성</p>
+     </td>
+     <td valign="top">
+     <p align="center">Saga 패턴</p>
+     </td>
+     <td valign="top">
+     <p align="center">서비스 API 계약</p>
+     </td>
+     <td valign="top">
+     <p align="center">복제본</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+     <p align="center">구성</p>
+     </td>
+     <td valign="top">
+     <p align="center">부하 분산 장치</p>
+     </td>
+     <td valign="top">
+     <p align="center">메시징</p>
+     </td>
+     <td valign="top">
+     <p align="center">버전 관리(코드, API 및 데이터 스키마)</p>
+     </td>
+     <td valign="top">
+     <p align="center">DNS</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+     <p align="center">리더 선거</p>
+     </td>
+     <td valign="top">
+     <p align="center">데이터 캐싱</p>
+     </td>
+     <td valign="top">
+     <p align="center">마이크로서비스</p>
+     </td>
+     <td valign="top">
+     <p align="center">개체 및 파일 서비스</p>
+     </td>
+     <td valign="top">
+     <p align="center">SLA</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+     <p align="center">분할</p>
+     </td>
+     <td valign="top">
+     <p align="center">12단계 앱</p>
+     </td>
+     <td valign="top">
+     <p align="center">이벤트 소싱</p>
+     </td>
+     <td valign="top">
+     <p align="center">관계형 및 비관계형 데이터베이스</p>
+     </td>
+     <td valign="top">
+     <p align="center">CQRS</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top">
+     <p align="center">데이터 일관성</p>
+     </td>
+     <td valign="top">
+     <p align="center">동시성 제어</p>
+     </td>
+     <td valign="top">
+     <p align="center">network</p>
+     </td>
+     <td valign="top">
+     <p align="center">낙관적 동시성</p>
+     </td>
+     <td valign="top">
+     <p align="center">프록시</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>이 과정은 분산 클라우드 애플리케이션을 고려하거나 적극적으로 작업하는 모든 사용자를 위한 것입니다. 이러한 개념, 특정 기술의 다양한 장단점, 분산 클라우드 애플리케이션에서 많이 사용되는 복원력 있는 패턴을 철저히 이해할 수 있도록 설계되었습니다.</p>
+
+
+  <p><strong>무료 </strong>6.5 시간 코스를 찾을 수있는 곳 :</p>
+
+
+  <ul>
+   <li>
+   <ul>
+   </ul>
+   <a href="https://aka.ms/RichterCloudApps" target="_blank">YouTube</a></li>
+   <li>
+   <p><a href="https://aka.ms/edx-devops200_9x-about" target="_blank">edX.org</a> (추가 읽기 자료, 검토 질문 및 실습 랩 포함). 또한 $99에 대해 확인된 인증서(고용주를 표시하기 위해)를 받을 수 있습니다.</p>
+   </li>
+  </ul>
+
+
+  <h2>강사 정보</h2>
+
+
+  <p><a href="https://aka.ms/RichterCloudApps"><img alt="Capture" border="0" height="357" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ab6bc672-4da5-40d0-8884-690f73fe6d8d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="캡처" width="640"></a></p>
+
+
+  <p>Jeffrey Richter는 Microsofts&rsquo; Azure 팀의 소프트웨어 설계자입니다. 또한 소프트웨어 컨설팅 및 교육 회사인 <a href="https://Wintellect.com">Wintellect</a>의 공동 창립자이기도 합니다. 그는 <a href="https://WintellectNOW.com">WintellectNOW</a>에서 사용할 수있는 많은 비디오를 저술하고, 많은 업계 컨퍼런스에서 연설했으며, 여러 베스트 셀러 Windows 및 .NET Framework <a href="https://www.amazon.com/Jeffrey-Richter/e/B000APH134/ref=sr_tc_2_0?qid=1456680389&amp;sr=1-2-ent">프로그래밍 책의</a> 저자입니다.</p>

@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cd9226a28432196f695ce0dc3ee565c4a854db93
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898812"
+Slug: windows-azure-platform-introductory-special-extended-to-march-31-2011
+Title: 2011년 3월 31일까지 확장된 Azure 플랫폼 소개 특별 Windows
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] 좋은 소식 - Windows Azure 플랫폼 소개 특별 제품(SQL Azure 무료 평가판 포함)이 201년 3월 31일까지 연장되었습니다...'
+Content: <p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>좋은 소식 - Windows Azure Platform 소개 특별 제품(<a href="">SQL Azure 무료 평가판</a> 포함)이 2011년 3월 31일까지 연장되었습니다! 이 프로모션 제품을 사용하면 무료로 제한된 양의 <a href="https://www.windowsazure.com">Windows Azure 플랫폼을</a> 사용해 볼 수 있습니다. 구독에는 Azure 컴퓨팅 시간, 스토리지, 데이터 전송, AppFabric Access Control 트랜잭션, AppFabric Service Bus 연결 및 SQL Azure 데이터베이스에 Windows 기본 수준이 무료로 포함됩니다. </p>  <p><b>매월</b> 무료로 포함됩니다.</p>  <ul>   <li>Windows Azure     <ul>       <li>25시간의 작은 컴퓨팅 인스턴스</li>        <li>500MB의 스토리지</li>        <li>스토리지 트랜잭션 10,000개</li>        <li>Azure AppFabric Windows         <ul>           <li>액세스 제어 트랜잭션 100,000개</li>            <li>2개의 Service Bus 연결</li>         </ul>       </li>     </ul>   </li>    <li>SQL Azure     <ul>       <li>1GB Web Edition 데이터베이스(처음 3개월 동안만 사용 가능)</li>     </ul>   </li>    <li>데이터 전송(지역별)     <ul>       <li>500MB</li>        <li>500MB 출력</li>     </ul>   </li> </ul>  <p>위의 금액을 초과하는 월별 사용량은 표준 요금으로 청구됩니다. 이 소개 특별 행사는 2011년 3월 31일에 종료되며 모든 사용량은 표준 요금으로 청구됩니다.</p>  <p>소개 스페셜(무료 평가판이라고도 SQL Azure)과 현재 Windows Azure 플랫폼에서 사용할 수 있는 기타 제품에 대한 자세한 내용을 보려면 방문 <a href=""></a> 하세요.</p>

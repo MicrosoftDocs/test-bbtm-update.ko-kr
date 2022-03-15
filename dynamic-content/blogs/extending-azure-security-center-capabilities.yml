@@ -1,0 +1,159 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 78552dcd0a9da9b6a08edff2cff33c222cb8d181
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903270"
+Slug: extending-azure-security-center-capabilities
+Title: Azure 보안 기능 확장
+Summary: '더 많은 조직이 비즈니스를 클라우드로 전환하여 더 빠르게 혁신을 제공함에 따라 모든 업계에서 보안 강화가 매우 중요합니다. Azure에는 데이터, 애플리케이션, 컴퓨팅, 네트워킹, ID, 위협 방지 및 보안 관리에 대한 기본 제공 보안 제어 기능이 있으므로 보호를 사용자 지정하고 파트너 솔루션을 통합할 수 있습니다. '
+Content: >-
+  <p><em>이 블로그 게시물은 Ron Matchoro, 수석 프로그램 관리자, Ronit Reger, 선임 프로그램 관리자, Miri Landau, 수석 프로그램 관리자 및 Azure Security Center의 수석 PM 관리자인 Devendra Tiwari가 공동 저술했습니다.</em></p>
+
+
+  <p>더 많은 조직이 비즈니스를 클라우드로 전환하여 더 빠르게 혁신을 제공함에 따라 모든 업계에서 보안 강화가 매우 중요합니다. Azure에는 데이터, 애플리케이션, 컴퓨팅, 네트워킹, ID, 위협 방지 및 보안 관리에 대한 기본 제공 보안 제어 기능이 있으므로 보호를 사용자 지정하고 파트너 솔루션을 통합할 수 있습니다.&nbsp;</p>
+
+
+  <p>우리는 보안에 계속 투자하고 우리는 하노버 Messe 2019에서 이번 주에 흥미 진진한 업데이트를 공유하게되어 기쁩니다. 영국, 캐나다 및 오스트레일리아의 전용 HMS(하드웨어 보안 모듈 서비스)에서 VMSS(Virtual Machine Scale Sets)에 대한 Azure 디스크 암호화 지원을 일반적으로 사용할 수 있음을 발표하게 되어 기쁩니다. 또한 이제 Azure Security Center의 일부로 Azure Storage, 규정 준수 대시보드 및 가상 머신 집합에 대한 지원을 위한 Advanced Threat Protection을 사용할 수 있습니다.</p>
+
+
+  <h2>이제 Azure Storage 대한 Advanced Threat Protection을 일반 공급</h2>
+
+
+  <p>Azure Storage 대한 Advanced Threat Protection은 고객이 스토리지 계정에서 발생할 수 있는 잠재적 위협을 감지하고 대응하는 데 도움이 됩니다. 이 보호 계층을 사용하면 보안 전문가가 될 필요 없이 문제를 보호하고 해결할 수 있습니다. 이를 사용하도록 설정하는 것은 빠르고 간단합니다. 사용하도록 설정하면 의심스러운 활동이 발생할 때 보안 경고가 트리거되고 <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">Azure Security Center</a>에 나열된 경고를 볼 수 있습니다. 보안 경고는 검색된 의심스러운 활동에 대한 세부 정보와 잠재적인 위협을 조사하고 완화하기 위해 수행할 권장 조치를 제공합니다.</p>
+
+
+  <p>Azure Storage Advanced Threat Protection의 이점은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>비정상적인 액세스 및 데이터 반출 활동 검색</li>
+   <li>실행 가능한 조사 및 수정 단계를 사용하여 경고를 전자 메일로 보내세요.</li>
+   <li>Azure Security Center를 사용하여 전체 Azure 테넌트에 대한 경고의 중앙 집중식 보기입니다.</li>
+   <li>Azure Portal, Azure Policy 또는 표준 Azure API를 사용하여 많은 스토리지 계정에 쉽게 사용하도록 설정합니다.</li>
+  </ul>
+
+
+  <p>자세한 내용은 설명서, &ldquo; Azure Storage&rdquo; <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-advanced-threat-protection" target="_blank">Advanced Threat Protection</a> 또는 <a href="https://azure.microsoft.com/en-us/pricing/details/security-center/" target="_blank">Azure Security Center 가격 책정 페이지를 참조하세요</a>.</p>
+
+
+  <h2>Azure Security Center의 규정 준수 대시보드는 일반적으로 사용할 수 있습니다.</h2>
+
+
+  <p>이제 Azure Security Center의 규정 준수 대시보드를 일반 공급한다는 사실을 발표하게 되어 기쁘게 생각합니다. 대시보드를 통해 Security Center 고객은 지원되는 일련의 표준 및 규정에 대한 규정 준수 상태에 대한 인사이트를 제공하여 규정 준수 프로세스를 간소화할 수 있습니다.</p>
+
+
+  <p>규정 준수 대시보드는 Azure 및 하이브리드 환경의 지속적인 평가에 따라 특정 규정 준수 요구 사항에 맞게 보안 평가 및 권장 사항을 표시합니다. 또한 대시보드는 권장 사항에 따라 작업하고 사용자 환경의 위험 요소를 줄여 전반적인 규정 준수 상태를 개선하는 방법에 대한 실행 가능한 정보를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/254cd0fb-e13c-4be9-bd60-bb4aa1752f9c.png"><img alt="Regulatory Compliance dashboard in Azure Security Center" border="0" height="818" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a721b74-2538-4fcb-a50d-eff8f9bbcd55.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Security Center의 규정 준수 대시보드" width="1455"></a></p>
+
+
+  <p>규정 준수 대시보드에서 제공하는 정보는 지원되는 표준으로 규정 준수 상태에 대한 내부 및 외부 감사자에게 증거를 제공하는 데 매우 유용할 수 있습니다. 이를 더욱 용이하게 하기 위해 이제 규정 준수 대시보드에서 직접 준수 보고서를 생성하고 다운로드할 수 있습니다. 보고서는 지원되는 특정 규정 준수 표준에 대해 생성될 수 있으며 해당 표준과 관련하여 현재 규정 준수 상태에 대한 대략적인 요약을 보여 줍니다. 또한 이제 프로그래밍 방식 API를 사용하여 규정 준수 프로세스를 자동화하고 대규모로 관리할 수 있습니다.</p>
+
+
+  <p>Azure Security Center의 규정 준수에 대한 자세한 내용은 자습서<a href="https://aka.ms/AscRegulatoryComplianceLearnMore" target="_blank">: 규정 준수 개선</a> 설명서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <h2>이제 Azure Security Center에서 Virtual Machine Scale Sets를 지원합니다.</h2>
+
+
+  <p>이제 Security Center에서 Virtual Machine Scale Sets를 보호할 수 있습니다. 보안 권장 사항으로 VM Scale Sets의 보안 상태를 쉽게 모니터링하여 전반적인 보안을 강화하고, 취약성을 줄이고, Security Centers&rsquo; 고급 위협 탐지 기능을 사용하여 위협을 검색할 수 있습니다.</p>
+
+
+  <p>Security Center는 VM Scales Sets를 자동으로 검색하고 모니터링 에이전트를 설치하여 더 나은 보안 평가를 얻고 이벤트 기반 위협 탐지를 사용하도록 설정하는 것이 좋습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b360ce5a-8b6a-4ba7-9c85-5cb3bdbf7688.png"><img alt="Security Center automatically discovers your VM Scales Sets and recommends that you install the monitoring agent." border="0" height="534" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/99ae22fc-80c0-4eb4-ab60-9bf3cfd3f501.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="VSecurity Center는 VM Scales Sets를 자동으로 검색하고 모니터링 에이전트를 설치하는 것이 좋습니다." width="2079"></a></p>
+
+
+  <p>각 VM 확장 집합의 보안 상태 및 권장 사항을 볼 수 있습니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a5ba8ce-cc73-4fa1-8927-2958950ffc17.png"><img alt="Security health and recommendations of each virtual machine scale set" border="0" height="709" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84f36b93-7ca6-4531-8d16-a19318444629.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="각 가상 머신 확장 집합의 보안 상태 및 권장 사항" width="2149"></a></p>
+
+
+  <p>모든 VM 확장 집합 인스턴스에 대해 다음과 같은 권장 사항 목록을 활용할 수 있습니다.</p>
+
+
+  <ul>
+   <li>모니터링 에이전트 설치&nbsp;</li>
+   <li>보안 구성의 취약성 수정&nbsp;</li>
+   <li>엔드포인트 보호 상태 오류 수정&nbsp;</li>
+   <li>가상 머신 확장 집합에 엔드포인트 보호 솔루션 설치</li>
+   <li>시스템 업데이트 설치&nbsp;</li>
+   <li>Virtual Machine Scale Sets에서 진단 로그 사용&rsquo;</li>
+  </ul>
+
+
+  <p>위협 탐지 경고는 Security Center 표준 계층으로 보호되는 모든 VM에 대한 VM 확장 집합 인스턴스에도 사용할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-virtual-machine-protection#virtual-machine-scale-sets" target="_blank">VM 확장 집합 지원에</a> 대해 자세히 알아보려면</p>
+
+
+  <p><strong>참고:</strong> VM 확장 집합 인스턴스의 가격 책정은 VM과 동일합니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/security-center/" target="_blank">가격 책정 페이지를 참조하세요</a><strong></strong>.</p>
+
+
+  <h2>영국, 캐나다 및 오스트레일리아 지역에서 Azure Dedicated HSM 서비스 가용성 발표</h2>
+
+
+  <p>Azure 전용 HSM(하드웨어 보안 모듈) 서비스는 Azure에서 암호화 키 스토리지를 제공하고 가장 엄격한 고객 보안 및 규정 준수 요구 사항을 충족합니다. 이 서비스는 FIPS 140-2 수준 3 유효성이 검사된 디바이스와 HSM 어플라이언스의 완전하고 독점적인 제어가 필요한 고객에게 이상적인 솔루션입니다. 전용 HSM 서비스는 Gemalto의 <a href="https://safenet.gemalto.com/data-encryption/hardware-security-modules-hsms/safenet-network-hsm/" target="_blank">SafeNet Luna Network HSM 7 디바이스</a> 를 사용합니다. 이 디바이스는 최고 수준의 성능 및 암호화 통합 옵션을 제공하며 HSM으로 보호된 애플리케이션을 Azure로 간단하게 마이그레이션할 수 있습니다. Azure Dedicated HSM은 단일 테넌트 단위로 임대됩니다.</p>
+
+
+  <p>Azure Dedicated HSM 서비스는 원래 2018년 11월 28일에 8개의 Azure 공용 지역에서 발표되었으며 이제 서비스가 영국, 캐나다 및 호주로 확장되었음을 발표하게 되어 기쁘게 생각합니다. 이 새로운 발표를 통해 Dedicated HSM 서비스는 이제 미국 동부, 미국 서부, 미국 중남부, 미국 동부 2, 동남 아시아, 동아시아, 서유럽, 북유럽, 영국 남부, 영국 서부, 캐나다 중부, 캐나다 동부, 오스트레일리아 동부 및 오스트레일리아 남서부 지역 등 14개 지역에서 사용할 수 있습니다. 이 서비스를 다른 Azure 지역으로 계속 확장할 계획입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/69f517ea-ed3b-45e9-bb0d-40fc84614d84.jpg"><img alt="Azure Dedicated Hardware Security Module" border="0" height="125" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c7bb56ef-f18f-44de-9eb3-7c0108803169.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 전용 하드웨어 보안 모듈" width="240"></a></p>
+
+
+  <ul>
+   <li>Dedicated HSM 서비스 가용성 공지 사항에 대해 알아보려면 블로그 게시물, &ldquo;<a href="https://azure.microsoft.com/en-us/blog/announcing-azure-dedicated-hardware-security-module-availability/" target="_blank">Azure Dedicated HSM 가용성 발표를</a> 참조하세요.&rdquo;</li>
+   <li>Azure Dedicated HSM 서비스에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/dedicated-hsm" target="_blank">서비스 설명서를</a> 참조하세요.</li>
+   <li>애플리케이션에 대한 이 서비스의 가격 책정 및 적합성에 대해 알아보려면 Microsoft 계정 담당자에게 문의하세요.</li>
+  </ul>
+
+
+  <h2>Virtual Machine Scale Sets에 대한 Azure Disk Encryption 일반 공급 발표</h2>
+
+
+  <p>오늘 VMSS(Virtual Machine Scale Sets)에 대한 ADE(Azure Disk Encryption)의 일반 공급에 대해 발표하게 되어 기쁩니다. 이 공지 사항을 통해 Azure 공용 지역의 Windows 및 Linux Virtual Machine Scale Sets에 Azure 디스크 암호화를 사용하도록 설정할 수 있습니다. 이를 통해 고객은 업계 표준 암호화 기술을 사용하여 미사용 Virtual Machine Scale Sets 데이터를 보호하고 보호할 수 있습니다.</p>
+
+
+  <p>Azure Disk Encryption은 Windows 및 Linux IaaS Virtual Machine Scale Sets 디스크를 암호화하는 데 도움이 되는 기능입니다. 디스크 암호화는 Windows 업계 표준 <a href="https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview" target="_blank">BitLocker</a> 기능과 Linux의 <a href="https://en.wikipedia.org/wiki/Dm-crypt" target="_blank">DM-Crypt</a> 기능을 활용하여 디스크의 볼륨 암호화를 제공합니다. 이 솔루션은 <a href="https://azure.microsoft.com/documentation/services/key-vault/" target="_blank">Azure Key Vault</a> 와 통합되어 디스크 암호화 키 및 비밀을 제어하고 관리하는 데 도움이 됩니다. 또한 솔루션은 VM 디스크의 모든 데이터가 Azure Storage 미사용 시 암호화되도록 합니다.</p>
+
+
+  <p>솔루션은 모든 Azure 공용 지역에 배포됩니다. 지원되고 지원되지 않는 시나리오, 인터페이스 및 디스크 암호화 기술을 사용하여 Virtual Machine Scale Sets를 암호화하고 시나리오의 유효성을 검사하는 방법에 대한 추가 세부 정보는 아래에 설명되어 있습니다.</p>
+
+
+  <h3>지원되는 시나리오</h3>
+
+
+  <ol>
+   <li>Virtual Machine Scale Sets 암호화는 관리 디스크로 만든 확장 집합에 대해서만 지원되며 네이티브(또는 관리되지 않는) 디스크 확장 집합에는 지원되지 않습니다.</li>
+   <li>Virtual Machine Scale Sets 암호화는 Windows Virtual Machine Scale Sets에 대한 OS 및 데이터 볼륨에 대해 지원됩니다.</li>
+   <li>암호화 사용 안 함은 Windows Virtual Machine Scale Sets에 대한 OS 및 데이터 볼륨에 대해 지원됩니다.</li>
+   <li>Virtual Machine Scale Sets 암호화는 Linux Virtual Machine Scale Sets의 데이터 볼륨에 대해 지원됩니다. Linux Virtual Machine Scale Sets의 데이터 볼륨에 대해 암호화 사용 안 함이 지원됩니다.</li>
+   <li>Virtual Machine Scale Sets 이미지 다시 설치 및 업그레이드 작업이 지원됩니다.</li>
+   <li>암호화를 보호하기 위한 키 자격 증명 모음은 Virtual Machine Scale Sets와 동일한 구독 및 동일한 지역에 올바른 액세스 정책을 사용하여 프로비전되어야 합니다.</li>
+  </ol>
+
+
+  <h3>지원되지 않는 시나리오</h3>
+
+
+  <ol>
+   <li>Virtual Machine Scale Sets 암호화는 네이티브(또는 관리되지 않는) 디스크로 만든 확장 집합에 대해 지원되지 않습니다.</li>
+   <li>Linux Virtual Machine Scale Sets 암호화에 대한 OS 볼륨에는 Virtual Machine Scale Sets 암호화가 지원되지 않습니다.</li>
+  </ol>
+
+
+  <p>Virtual Machine Scale Sets에 대한 Azure Disk Encryption 지원에 대한 자세한 내용은 아래 ADE 설명서를 참조하세요.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-prerequisites" target="_blank">Azure Disk Encryption 필수 구성 요소</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-windows#encrypt-virtual-machine-scale-sets" target="_blank">Virtual Machine Scale Sets 암호화 Windows</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security/azure-security-disk-encryption-linux#encrypt-virtual-machine-scale-sets" target="_blank">Linux Virtual Machine Scale Sets 암호화</a></li>
+  </ul>
+
+
+  <p>Azure 보안에 대한 지속적인 투자를 통해 Microsoft에서 관리하는 매우 안전한 클라우드 기반을 통해 비용과 복잡성을 줄일 수 있습니다. Azure의 다중 계층 기본 제공 보안 제어 및 고유한 위협 인텔리전스를 사용하여 빠르게 진화하는 위협을 식별하고 보호할 수 있습니다. Azure Security에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/overview/security/">Azure Security</a> 홈페이지를 방문하세요. Azure Security Center&rsquo;의 새로운 기능을 사용하려면 <a href="https://azure.microsoft.com/en-us/services/security-center/">Azure Security Center</a> 홈페이지를 방문하세요. 언제나처럼 피드백이나 추가 정보는 당사 팀에 <a href="mailto:SecurityCenter@microsoft.com">SecurityCenter@microsoft.com</a>문의하세요.</p>
+
+
+  <p><a href="https://www.microsoft.com/en-us/enterprise/hannover-messe-2019?activetab=pillars%3aprimaryr3" target="_blank">Microsoft 파트너가 하노버 Messe 2019</a>에서 지속 가능한 미래를 구축하는 방법을 알아봅니다.</p>

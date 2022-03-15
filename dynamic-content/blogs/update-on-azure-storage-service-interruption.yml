@@ -1,0 +1,245 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1f3fad77ffb30ac06fa630ebbffd6ec2e9ce7180
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897110"
+Slug: update-on-azure-storage-service-interruption
+Title: Azure Storage 서비스 중단에 대한 업데이트
+Summary: 어제 저녁 태평양 표준시, Azure Storage 서비스는 미국, 유럽 및 아시아 일부 지역에서 서비스 중단을 경험했으며, 이로 인해 이러한 지역의 여러 클라우드 서비스에 영향을 미쳤습니다.  이로 인해 발생한 혼란에 대해 먼저 진심으로 사과드립니다.
+Content: >-
+  <b>업데이트: 2014/11/22, 오후 12:41 PST</b>
+
+
+  수요일부터, 우리는 고객의 하위 집합이 화요일의 스토리지 서비스 중단에서 완전히 복구하기 위해 최종 조치를 취할 수 있도록 노력하고 있습니다. 이제 인시던트가 해결되었으며 시스템에서 정상적인 활동이 표시됩니다.상태 대시보드 <a href="https://azure.microsoft.com/en-us/status/">https://azure.microsoft.com/en-us/status</a>에서 업데이트를 찾을 수 있습니다. 인시던트로 인해 여전히 문제가 있다고 생각되면 문의 <a href="mailto:azcommsm@microsoft.com">azcommsm@microsoft.com</a>하세요. 지원 계약이 있는지 여부에 관계없이 기꺼이 도움을 드리겠습니다. 이 인시던트에 대한 커뮤니케이션에 대한 피드백을 보내 주셔서 다시 한번 감사드립니다. 우리는 앞으로 계획에 해당 피드백을 통합하기 위해 적극적으로 노력하고 있습니다.
+
+
+  &nbsp;
+
+
+  <strong>2014년 11월 19일 수요일</strong>
+
+
+  Azure Storage 대한 성능 업데이트의 일환으로 Virtual Machines, Visual Studio Online, 웹 사이트, 검색 및 기타 Microsoft 서비스 포함하여 Azure Storage 활용하는 서비스에서 용량이 감소하는 문제가 발견되었습니다. 성능 업데이트를 적용하기 전에 Azure Tables에 대한 고객 지향 스토리지 서비스의 하위 집합에서 몇 주 동안 테스트되었습니다. 일반적으로 업데이트를 광범위하게 배포하기 전에 문제를 식별하기 위해 노력하기 때문에 이 "플라이팅"이라고 합니다. 플라이팅 테스트는 주목할 만한 성능 향상을 보여주었으며 스토리지 서비스에 업데이트를 배포했습니다. 출시 중에 스토리지 Blob 프런트 엔드가 무한 루프로 전환되는 문제를 발견했습니다. 이 루프는 플라이팅 중에 검색되지 않았습니다. 결과적으로 프런트 엔드가 추가 트래픽을 사용할 수 없게 되었으며, 이로 인해 맨 위에 빌드된 다른 서비스가 문제를 경험하게 됩니다.
+
+
+  이 문제가 감지되면 변경 내용이 즉시 롤백되었지만 업데이트를 완전히 실행 취소하려면 스토리지 프런트 엔드를 다시 시작해야 했습니다. 완화 단계가 배포되면 대부분의 고객이 영향을 받는 지역 전체에서 가용성 향상을 보기 시작했습니다. 서비스는 일반적으로 다시 온라인 상태이지만 제한된 하위 집합의 고객은 여전히 일시적인 문제를 겪고 있으며 엔지니어링 및 지원 팀은 이 시간 동안 고객을 돕기 위해 적극적으로 참여하고 있습니다.
+
+
+  이와 같은 인시던트가 있는 경우 주요 초점은 고객을 복구하는 빠른 시간이지만 무엇이 잘못되었는지 면밀히 조사하고 다시는 발생하지 않도록 하기 위해 노력합니다.우리는 지속적으로 우리의 플랫폼에서 고객의 경험을 개선하기 위해 노력할 것입니다.이 블로그를 RCA(근본 원인 분석)로 업데이트하여 고객이 문제를 어떻게 해결했는지와 개선 사항을 이해할 수 있도록 합니다.
+
+  <h2>Azure 고객으로 업데이트:</h2>
+
+  우리는 이 사건의 원인을 계속 조사할 것이며 향후 유사한 상황을 피하기 위해 필요한 개선 사항을 추진할 것입니다. 그 동안, 우리는 우리가 발견 한 상태와 격차에 대한 현재의 이해를 공유하는 것이 중요하다고 생각합니다.
+
+  <table border="0" cellspacing="0" cellpadding="0">
+
+  <tbody>
+
+  <tr>
+
+  <td valign="top" width="623"><strong>인시던트 정보</strong>
+
+  <table border="0" cellspacing="0" cellpadding="0">
+
+  <tbody>
+
+  <tr>
+
+  <td valign="top" width="121"><strong>인시던트 ID</strong></td>
+
+  <td valign="top" width="630">3071402</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="121"><strong>인시던트 제목</strong></td>
+
+  <td valign="top" width="630">Microsoft Azure 서비스 인시던트: 여러 Azure 서비스에 대한 연결 - 부분 서비스 중단</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="121"><strong>영향을 받은 서비스</strong></td>
+
+  <td valign="top" width="630">Azure Storage, Virtual Machines, SQL 지역 복원, SQL 가져오기/내보내기, 웹 사이트, Azure Search, Azure Cache, 관리 포털, Service Bus, Event Hubs, Visual Studio, Machine Learning , HDInsights, Automation, Virtual Network, Stream Analytics, Active Directory, StorSimple 및 Azure Backup Services</td>
+
+  </tr>
+
+  </tbody>
+
+  </table>
+
+  <strong>인시던트 시작 날짜 및 시간</strong>
+
+
+  2014/11/19 오전 00:51:00(UTC)
+
+
+  <strong>복원된 날짜 및 시간 서비스</strong>
+
+
+  2014/11/19 오전 11:45:00(UTC)
+
+
+  <strong>요약</strong>
+
+
+  2014년 11월 19일, Azure Storage 서비스는 아래 "영향을 받는 지역"에 나열된 지역에서 간헐적으로 사용할 수 없었습니다. 영향을 받는 Azure Storage 서비스에 종속된 Microsoft Azure 서비스 및 고객 서비스도 영향을 받았습니다. 여기에는 서비스 상태 대시보드 및 관리 포털이 포함됩니다. 이 중단은 Azure Storage 프런트 엔드 구성 요소의 구성이 변경될 때 트리거된 버그로 인해 Blob Front-Ends 트래픽을 수행할 수 없기 때문입니다.
+
+
+  구성 변경은 성능을 향상시키고 Azure Table 프런트 엔드의 CPU 공간을 줄이기 위한 Azure Storage 업데이트의 일부로 도입되었습니다. 이 변경 내용은 지난 몇 주 동안 일부 프로덕션 클러스터에 배포되었으며 테이블 프런트 엔드에 대해 예상대로 수행되었습니다.
+
+
+  Azure Storage 서비스의 성능을 개선하기 위한 계획의 일환으로 구성 변경을 전체 프로덕션 서비스로 푸시하기로 결정했습니다.
+
+
+  Blob Front-Ends 대한 구성 변경으로 인해 이전에 테이블 프런트 엔드에 대해 예상대로 수행되었던 Blob 프런트 엔드의 버그가 노출되었습니다. 이 버그로 인해 Blob Front-Ends 트래픽을 허용하지 않는 무한 루프로 전환되었습니다.
+
+
+  아쉽게도 증분 일괄 처리에서 프로덕션 변경 내용을 적용하는 표준 프로토콜을 따르는 대신 운영 오류로 인해 짧은 기간 동안 대부분의 지역에서 업데이트가 수행되었기 때문에 문제가 광범위하게 확산되었습니다.
+
+
+  문제가 감지되면 구성 변경 내용이 즉시 되돌아갔습니다. 그러나 Blob Front-Ends 업데이트에 의해 트리거되는 무한 루프에 들어갔으며 다시 시작하지 않고는 구성을 새로 고칠 수 없습니다. 이로 인해 복구 시간이 더 오래 걸립니다. Azure 팀은 완화 단계를 조사하고 유효성을 검사했습니다. 완화 단계가 배포되면 대부분의 고객은 2014년 11월 19일 오전 11:45:00(UTC)에 지역 간 가용성 향상을 보기 시작했습니다. IaaS VM(Virtual Machines)을 사용하는 고객의 하위 집합은 RDP(원격 데스크톱 프로토콜) 및 SSH를 포함하여 VM에 연결할 수 없음을 보고했습니다.
+
+
+  <strong>고객 영향</strong>
+
+
+  Azure Storage Services를 사용하는 고객은 Blob, 테이블 및 큐에 Storage 연결을 시도하는 동안 시간 초과 또는 연결 문제가 발생할 수 있습니다. Storage Services에 대한 종속성이 있는 Azure 서비스도 영향을 받았습니다. 고객은 영향을 받는 서비스 및 IaaS VM(Virtual Machines)에 사용할 수 없는 문제가 발생할 수 있습니다.
+
+
+  <strong>통신 및 지원</strong>
+
+
+  서비스 상태 대시보드를 통해 적시에 업데이트를 제공하는 기능에 영향을 주는 Azure 인프라 문제가 있었습니다. 완화를 위해 Twitter 및 기타 소셜 미디어 포럼을 활용했습니다. 또한 영향을 받는 고객을 위해 관리 포털에 대상 통신을 제공했습니다. 서비스 상태 대시보드에 미치는 영향으로 인해 가동 중단의 처음 3시간 동안 적시에 업데이트가 반영되지 않았습니다.
+
+
+  서비스 상태 대시보드 및 관리 포털에 종속된 다운스트림 지원 도구도 영향을 받아 중단 초기 단계에서 고객이 새로운 지원 사례를 만들 수 있도록 제한했으며, 대/소문자가 많기 때문에 영향을 받은 고객으로 업데이트하는 기능이 지연되었습니다.
+
+
+  <strong>영향을 받는 지역</strong> 다음 지역에 있는 고객의 하위 집합이 영향을 받았습니다.
+
+  <table border="0" cellspacing="0" cellpadding="0">
+
+  <tbody>
+
+  <tr>
+
+  <td valign="bottom" width="149"><b>지역 </b></td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">미국 중부</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">미국 동부</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">미국 동부 2</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">미국 중북부</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">미국 중남부</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">미국 서부</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">북유럽</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">서유럽</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">동아시아</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">동남아시아</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">일본 동부</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="bottom" width="149">일본 서부</td>
+
+  </tr>
+
+  </tbody>
+
+  </table>
+
+  <strong>근본 원인</strong>
+
+
+  성능 향상 업데이트의 일부로 수행한 구성 변경으로 인해 Blob Front-Ends 버그가 표시되어 Blob Front-Ends 무한 루프로 전환됩니다.
+
+
+  <strong>다음 단계</strong>
+
+
+  향후 이러한 인시던트가 발생하지 않도록 Microsoft Azure 플랫폼 및 프로세스를 개선하기 위한 조치를 취하고 있으며, 이 경우 이를 포함하지만 이에 국한되지는 않습니다.
+
+  <ul>
+      <li>배포 도구가 증분 일괄 처리에서 프로덕션 변경 내용을 적용하는 표준 프로토콜을 항상 따르는지 확인합니다.</li>
+      <li>복구 방법을 개선하여 복구 시간을 최소화합니다.</li>
+      <li>프로덕션으로 롤아웃되기 전에 Blob Front-Ends CPU 감소 개선에서 무한 루프 버그를 수정합니다.</li>
+      <li>서비스 상태 대시보드 인프라 및 프로토콜을 개선합니다.</li>
+  </ul>
+
+  이로 인해 발생한 영향과 불편에 대해 사과드립니다.
+
+
+  감사합니다.
+
+
+  Microsoft Azure 팀
+
+
+  <a href="https://go.microsoft.com/fwlink/?LinkID=131004">개인 정보 취급 방침</a></td>
+
+  </tr>
+
+  </tbody>
+
+  </table>

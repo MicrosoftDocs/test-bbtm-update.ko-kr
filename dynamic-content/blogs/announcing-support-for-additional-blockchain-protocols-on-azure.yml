@@ -1,0 +1,52 @@
+### YamlMime:Yaml
+ms.openlocfilehash: afb284b2b38579cc5f3cd5a9a73f0ec7b68d830e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902831"
+Slug: announcing-support-for-additional-blockchain-protocols-on-azure
+Title: Azure에서 추가 블록체인 프로토콜에 대한 지원 발표
+Summary: 컨센서스 2017에 접근함에 따라 HyperLedger Fabric, R3 Corda, Quorum, Chain Core 및 BlockApps를 비롯한 Azure에서 더 많은 블록체인 및 분산 원장 프로토콜에 대한 복잡한 블록체인 네트워크 배포에 대한 지원을 발표하여 목표를 더 발전시키고 고객을 충족할 수 있게 되어 매우 기쁩니다.
+Content: >-
+  <p>지난 1년 동안 우리는 고객 및 파트너와 긴밀히 협력하여 블록체인 애플리케이션 개발을 위한 Microsoft Azure 개방형 블록체인 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/category/blockchain?page=1">에코시스템</a>을 개발했습니다. 우리의 목표는 원하는 원장 및 개발 도구를 사용하여 블록체인 솔루션을 쉽게 빌드할 수 있도록 하는 것이었습니다.&nbsp;</p>
+
+
+  <p>처음에는 개발/테스트 토폴로지 대상으로 R3, Enterprise Ethereum Alliance, Chain 및 BlockApps와 같은 조직과 협력하여 다양한 프로토콜에 대한 개발 및 데모 머신을 제공했습니다. 고객이 고급 시나리오 작업을 시작함에 따라 충분한 긍정적인 피드백을 받고 더 복잡한 토폴로지에 대한 지원을 확장했습니다. 몇 달 전에 Ethereum을 사용하여 첫 번째 컨소시엄 네트워크 솔루션 템플릿 세트를 도입했습니다.</p>
+
+
+  <p>컨센서스 2017에 접근함에 따라 <strong>HyperLedger Fabric, R3 Corda, Quorum, Chain Core 및 BlockApps</strong> 를 비롯한 Azure에서 더 많은 블록체인 및 분산 원장 프로토콜에 대한 복잡한 블록체인 네트워크 배포에 대한 지원을 발표하여 목표를 더 발전시키고 고객을 충족할 수 있게 되어 매우 기쁩니다.</p>
+
+
+  <p>배포를 세 가지 토폴로지로 광범위하게 분류합니다.</p>
+
+
+  <ol>
+   <li><strong>개발/테스트:</strong> 개발자가 프로토콜 및 애플리케이션 개발을 시작할 수 있도록 하는 토폴로지입니다. 일반적으로 단일 Azure 구독의 단일 노드(가상 머신)입니다. BlockApps, Corda, Quorum, Syscoin, Chain 및 Parity(Ethereum)를 비롯한 다양한 프로토콜에 대해 이러한 배포를 이미 지원합니다.</li>
+   <li><strong>단일 멤버: </strong> 단일 조직(단일 구성원) 내의 여러 부서에 대한 프로덕션을 테스트하고 시뮬레이트하는 데 도움이 되는 토폴로지입니다. 이는 일반적으로 여러 지역에 걸쳐 있는 다중 노드 네트워크로 구성됩니다.</li>
+   <li><strong>다중 멤버:</strong>&nbsp; 여러 조직(다중 멤버)에 대한 프로덕션을 테스트하고 시뮬레이션하는 데 도움이 되는 토폴로지입니다. 일반적으로 여러 지역, Azure 구독 및/또는 AAD 테넌트에 걸쳐 있는 다중 노드 네트워크로 구성됩니다.</li>
+  </ol>
+
+
+  <p>다음 주에는 다음을 포함하여 더 많은 단일 멤버 토폴로지에 대한 지원이 표시됩니다.</p>
+
+
+  <p><strong>HyperLedger 패브릭:</strong> 이 솔루션은 다중 노드 <a href="https://github.com/hyperledger/fabric">HyperLedger 패브릭</a> 네트워크를 배포합니다. 네트워크는 멤버 자격 서비스를 실행하는 노드, 정렬 서비스를 실행하는 노드 및 여러 패브릭 피어 노드로 구성됩니다. 자세한 내용은 <a href="https://hyperledger-fabric.readthedocs.io/en/latest/">Hyperledger Fabric 설명서를</a> 참조하세요.&nbsp;</p>
+
+
+  <p><strong>R3 Corda: </strong> 이 솔루션은 다중 노드 <a href="https://www.corda.net/">Corda</a> 네트워크를 배포합니다. 네트워크는 네트워크 맵을 실행하는 단일 노드, 공증 서비스를 실행하는 노드 및 여러 멤버 노드로 구성됩니다. 자세한 내용은 <a href="https://docs.corda.net/">Corda 설명서를</a> 참조하세요.</p>
+
+
+  <p><strong>쿼럼: </strong> 이 솔루션은 다중 노드 <a href="https://www.jpmorgan.com/country/US/en/Quorum">쿼럼</a> 네트워크를 배포합니다. 네트워크는 블록 메이커 노드와 여러 유권자 및 관찰자로 구성됩니다. 자세한 내용은<a href="https://github.com/jpmorganchase/quorum-docs"> Quorum 설명서를</a> 참조하세요.&nbsp;</p>
+
+
+  <p><strong>체인:</strong> 이 솔루션은 다중 노드 및 다중 지역 <a href="https://chain.com/technology/">Chain Core</a> 네트워크를 배포합니다. 네트워크는 단일 블록 생성기 노드와 여러 서명자 및 참가자로 구성됩니다. 자세한 내용은 <a href="https://chain.com/docs/1.2/core/get-started/introduction">Chain Core 설명서를</a> 참조하세요.&nbsp;</p>
+
+
+  <p><strong>BlockApps:</strong> 이 솔루션은 다중 노드 <a href="https://blockapps.net/blockapps-strato-blockchain-application-development/">BlockApps Strato</a> 네트워크를 배포합니다. 네트워크는 단일 블록 작성자 노드와 여러 유효성 검사기 및 참가자로 구성됩니다. 자세한 내용은 BlockApps Strato 설명서를 참조하세요.&nbsp;</p>
+
+
+  <p>다른 많은 <a href="https://azure.microsoft.com/en-us/blog/topics/blockchain/">블록체인 릴리스</a>와 마찬가지로, 블록체인 파일럿을 빌드하는 데 집중할 수 있도록 블록체인 네트워크를 위한 인프라를 빌드하고 구성하는 데 소요되는 시간을 줄이는 데 집중합니다.&nbsp;</p>
+
+
+  <p>이러한 새로운 솔루션을 사용해 볼 기회가 있으면 질문, 피드백 또는 추가 요청으로 Microsoft 및 파트너에게 문의하세요. 블록체인 파트너 커뮤니티와 함께하는 블록체인 여정의 일부가 되어 매우 기쁩니다.</p>

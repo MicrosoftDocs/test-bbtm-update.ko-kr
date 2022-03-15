@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9d504a056b0284f0c3bad84c0bd0b74074051a09
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897109"
+Slug: update-on-net-framework-4-6-and-azure
+Title: .NET Framework 4.6 및 Azure에서 업데이트
+Summary: 이 게시물은 Azure에서 .NET Framework 4.6 가용성에 대한 진행률 및 로드맵에 대한 업데이트를 제공합니다.
+Content: >-
+  <strong>업데이트(2015년 8월 14일) - </strong> .NET Framework 4.6이 Azure App Service에 배포되었음을 발표하게 되어 기쁩니다. 따라서 웹앱 개발자는 이제 .NET Framework 4.6을 실행하는 ASP.NET 애플리케이션을 빌드하고 Azure Web Apps에 배포할 수 있습니다.
+
+  <h2>개발자를 위한 흥미로운 시간</h2>
+
+  몇 주 전에 .NET</a>용 Azure 2.7 SDKAzure" href="https://azure.microsoft.com/blog/2015/07/20/announcing-the-azure-sdk-2-7-for-net/"> 2.7 SDK 공지에서 <a title="Visual Studio 2015 릴리스 공" href="https://www.visualstudio.com/en-us/news/vs2015-vs.aspx">지Visual Studio 2015 RTM</a> 및 최신 버전의 클라우드 개발 도구를 릴리스<a title="했습니다. Visual Studio .NET Framework 4.6 릴리스 공지" href="https://blogs.msdn.com/b/dotnet/archive/2015/07/20/announcing-net-framework-4-6.aspx">.NET Framework 4.6</a>에 대한 <a title="지원이 포함되어 있습니다. Microsoft는 Visual Studio 2015 및 .NET Framework 4.6의 새로운 기능에 대해 기쁘게 생각하고 있으며, 회사 전체의 많은 팀은 최신 버전이 개발자에게 풍부한 도구 에코시스템을 제공하기 위해 끊임없이 협력해 했습니다. 이러한 새로운 도구와 프레임워크는 .NET 개발자 에코시스템에 모든 새로운 기능을 제공하고 있으며, 릴리스 이후 커뮤니티에서 흥미로운 소식을 듣고 있습니다.
+
+  <h2>큰 힘으로 ...</h2>
+
+  도구, 프레임워크 및 Azure 플랫폼 팀은 꿈을 구축하는 데 도움이 되는 강력한 도구가 클라우드에서 계속 실행되어야 한다는 것을 인식하는 책임과 일치하도록 보장하고자 합니다.Visual Studio 및 Azure SDK 2.7 릴리스 당시 Framework 4.6은 Azure 전체에서 광범위하게 지원되지 않았습니다. 이는 많은 팀(또는 그 이상)이 Azure 플랫폼의 지속적인 개발 및 안정성을 책임지고 있다는 사실 때문입니다.
+
+
+  현재 Azure App Service용 .NET Framework 4.6의 가용성에 대한 업데이트와 클라우드 서비스 역할에서 .NET Framework 4.6이 작동하도록 하는 방법을 보여 주는 문서가 있습니다.
+
+  <h3>Azure IaaS</h3>
+
+  Azure의 IaaS(Infrastructure as a Service) 서비스를 사용하는 고객의 경우 .NET Framework 4.6 설치는 수동입니다. Azure IaaS 가상 머신에 .NET Framework 4.6을 설치하기 위해 프로세스는 원격 데스크톱을 사용하여 가상 머신에 로그인하는 것만큼 간단합니다. 컴퓨터<a title="에서 .NET Framework 4.6 설치 관리자" href="https://go.microsoft.com/fwlink/?LinkId=528259"> 다운로드.NET Framework 4.6 설치 관리자를</a> 다운로드하여 가상 머신에 직접 설치할 수 있습니다. Azure 설명서 센터" href="https://azure.microsoft.com/en-us/documentation/services/automation/">Azure Automation</a>에서 Azure Automation을 사용하는 <a title="고객은 PowerShell을 사용하여 Azure 가상 머신에 대한 설치를 자동화하도록 선택할 수도 있습니다.
+
+  <h3>Azure App Service 업데이트</h3>
+
+  Azure App Service 팀은 .NET Framework 4.6에 대한 테스트 단계가 거의 끝나가고 환경에 대한 배포를 계획하고 있습니다. 현재는 2015년 8월 동안 Azure App Service에 업데이트를 배포할 계획입니다.
+
+  <h3>Azure Cloud Services</h3>
+
+  Saurabh Bhatia는 Azure 설명서 센터에서 클라우드 서비스 역할에 .NET Framework 설치하는 방법을 설명하는 문서를 작성했습니다. 콘텐츠는 최근 .NET Framework 4.6과 관련된 해설을 포함하도록 업데이트되었습니다. 업데이트된 문서 <a title="설치 .NET Framework Azure 설명서 센터의 Azure Cloud Service Rolehere" href="https://azure.microsoft.com/en-us/documentation/articles/cloud-services-dotnet-install-dotnet/"></a>에서 찾을 수 있습니다.
+
+  <h2>요약</h2>
+
+  이 문서에서는 Azure에서 새 프레임워크의 가용성에 대한 진행 상황 및 로드맵에 대한 인사이트를 제공하고 고객이 가용성 지연에 대한 우려를 덜어주기를 바랍니다. Microsoft는 애플리케이션의 안정성에 대한 책임을 진지하게 생각하며, 배포 및 호스팅 환경이 개발 환경만큼 보람있는지 확인하기 위해 모든 예방 조치를 취하고 있음을 전달하고자 합니다. 앞으로 몇 주 동안 더 많은 업데이트를 계속 지켜봐 주시기 바랍니다.

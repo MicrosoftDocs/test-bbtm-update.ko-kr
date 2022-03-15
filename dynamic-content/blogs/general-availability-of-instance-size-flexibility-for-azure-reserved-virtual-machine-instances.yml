@@ -1,0 +1,123 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b21bc0bcf3df27dabfb664c6a36422a29f9b6e4a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898621"
+Slug: general-availability-of-instance-size-flexibility-for-azure-reserved-virtual-machine-instances
+Title: Azure Reserved Virtual Machine Instances에 대한 인스턴스 크기 유연성의 일반 공급
+Summary: 동일한 VM 그룹 내의 다른 가상 머신 크기에 예약 할인을 적용하여 예약 인스턴스 구매 및 관리를 더욱 간단하게 만드는 새로운 기능인 Azure Reserved Virtual Machine Instances의 인스턴스 크기 유연성을 발표하게 되어 기쁩니다.
+Content: >-
+  <p><em>이 블로그 게시물은 프리니치팔 엔지니어링 매니저 인Arabinda Mohapatra가 공동 저&nbsp;술한 Microsoft Azure.</em></p>
+
+
+  <p>동일한 <a href="https://aka.ms/VMgroups" target="_blank">VM 그룹</a> 내의 다른 VM(가상 머신) 크기에 예약 할인을 적용하여 예약 인스턴스 구매 및 관리를 더욱 간단하게 만드는 새로운 기능인 Azure Reserved Virtual Machine Instances의 인스턴스 크기 유연성을 발표하게 되어 기쁩니다.</p>
+
+
+  <p>인스턴스 크기 유연성을 사용하면 동일한 VM 그룹 내의 다른 VM 크기도 RI 할인을 받기 때문에 구매한 RI(Azure Reserved Instances)의 이점을 얻기 위해 정확히 동일한 VM 크기를 배포할 필요가 없습니다&rsquo;.</p>
+
+
+  <p>예를 들어 다음 VM 그룹을 고려합니다.</p>
+
+
+  <table border="1" cellpadding="2">
+      <tbody>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>VM 이름</strong></td>
+              <td style="text-align: center;" valign="top"><strong>VM 그룹</strong></td>
+              <td style="text-align: center;" valign="top"><strong>비율</strong></td>
+          </tr>
+          <tr>
+              <td valign="top">
+              <p align="center">Standard_D2s_v3</p>
+              </td>
+              <td valign="top">
+              <p align="center">DSv3 시리즈</p>
+              </td>
+              <td valign="top">
+              <p align="center">1</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top">
+              <p align="center">Standard_D4s_v3</p>
+              </td>
+              <td valign="top">
+              <p align="center">DSv3 시리즈</p>
+              </td>
+              <td valign="top">
+              <p align="center">2</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top">
+              <p align="center">Standard_D8s_v3</p>
+              </td>
+              <td valign="top">
+              <p align="center">DSv3 시리즈</p>
+              </td>
+              <td valign="top">
+              <p align="center">4</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top">
+              <p align="center">Standard_D16s_v3</p>
+              </td>
+              <td valign="top">
+              <p align="center">DSv3 시리즈</p>
+              </td>
+              <td valign="top">
+              <p align="center">8</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top">
+              <p align="center">Standard_D32s_v3</p>
+              </td>
+              <td valign="top">
+              <p align="center">DSv3 시리즈</p>
+              </td>
+              <td valign="top">
+              <p align="center">16</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top">
+              <p align="center">Standard_D64s_v3</p>
+              </td>
+              <td valign="top">
+              <p align="center">DSv3 시리즈</p>
+              </td>
+              <td valign="top">
+              <p align="center">32</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>D2s_v3 VM에 대해 1개의 Azure Reserved Instance를 구매한 경우 동일한 지역에 있는 경우 예약 인스턴스 구매를 통해 다음 VM 인스턴스를 다룰 수 있습니다.</p>
+
+
+  <ol>
+      <li>1 Standard_D2S_v3</li>
+      <li>1/2 Standard_D4s_v3</li>
+      <li>1/4 Standard_D8s_v3</li>
+      <li>1/8 Standard_D16s_v3</li>
+      <li>1/16 Standard_D32s_v3</li>
+      <li>1/32 Standard_D64s_v3</li>
+  </ol>
+
+
+  <p>Azure Reserved Instances의 차별화된 단순성을 더한 인스턴스 크기 유연성은 Windows Server, Linux, RHEL 등을 비롯한 운영 체제에 관계없이 Azure Reserved Instance 혜택을 VM의 인프라 비용에 적용합니다. 해당하는 경우 VM에서 실행되는 추가 소프트웨어에 대한 요금만 청구됩니다.</p>
+
+
+  <p>인스턴스 크기 유연성은 기본적으로 공유 범위가 있는 기존 Azure Reserved Instance에 대해 사용하도록 설정되지만, 단일 범위가 있는 예약 인스턴스의 경우 예약 구성에서 인스턴스 크기 유연성을 사용하도록 설정할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/billing/billing-manage-reserved-vm-instance#change-the-scope-for-a-reserved-instance" target="_blank">Azure Reserved Instance의 범위를 변경하는 방법을</a> 알아보려면 설명서를 읽어보세요.&nbsp;</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>시작하려면 설명서를 참조하여 <a href="https://aka.ms/PurchaseUIInstanceSizeFlex" target="_blank">단일 예약 인스턴스에 대한 인스턴스 크기 유연성 옵션을 토글하는</a> 방법을 알아보세요.</p>

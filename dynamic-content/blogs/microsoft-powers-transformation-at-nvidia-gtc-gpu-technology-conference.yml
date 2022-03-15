@@ -1,0 +1,78 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 81163f51053421657824f6e50b2a8b76e911deb1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898332"
+Slug: microsoft-powers-transformation-at-nvidia-gtc-gpu-technology-conference
+Title: NVIDIA GTC의 Microsoft 전원 변환 — GPU 기술 컨퍼런스
+Summary: 전 세계 고객은 환경, 공중 보건, 에너지 지속 가능성, 날씨 모델링, 경제 성장 등과 관련된 혁신을 추진하기 위해 Microsoft Azure 사용합니다.
+Content: >-
+  <p>전 세계 고객은 환경, 공중 보건, 에너지 지속 가능성, 날씨 모델링, 경제 성장 등과 관련된 혁신을 추진하기 위해 Microsoft Azure 사용합니다. 이러한 중요한 문제에 대한 솔루션을 찾으려면 방대한 양의 집중 컴퓨팅 성능이 필요합니다. 고객은 Azures&rsquo;에서 특별히 빌드한 HPC 및 AI 클라우드 서비스의 민첩성, 규모, 보안 및 선행 성능을 통해 HPC(고성능 컴퓨팅)에 액세스하는 가장 좋은 방법을 점점 더 많이 찾고 있습니다.</p>
+
+
+  <p>HPC 및 AI에 대한 Azures&rsquo; 시장을 선도하는 비전은 검증된 HPC 기술 및 디자인 원칙을 사용하여 클라우드의 최상의 기능으로 향상된 정품 및 인식된 HPC 전문 지식의 핵심을 기반으로 합니다. 그 결과 다른 클라우드와 달리 성능, 규모 및 가치를 제공하는 기능이 생성됩니다. 즉, 애플리케이션은 다른 퍼블릭 클라우드보다 12배 더 높습니다. 노드당 더 높은 애플리케이션 성능을 의미합니다. 이는 세계 상위 5위 안에 들 수 있는 슈퍼컴퓨터 적합성을 가진 한 고객을 위한 AI 워크로드를 구동한다는 것을 의미합니다. 그것은 또한 COVID-19와의 싸움에서 생명을 구하는 혁신을 증명하기 위해 주말 동안 의료 연구원의 손에 대규모 컴퓨팅 능력을 제공하는 것을 의미합니다.</p>
+
+
+  <p>올해 <a href="https://www.nvidia.com/en-us/gtc/?ncid=afm-chs-44270&amp;ranMID=44270&amp;ranEAID=je6NUbpObpQ&amp;ranSiteID=je6NUbpObpQ-JSMo7h5bd7s4xnwXsWdYLQ" target="_blank">NVIDIA GTC 21</a>에서는 에지,&rsquo; 온-프레미스 및 클라우드 컴퓨팅에 대한 우리의 헌신을 강조하는 NVIDIA 가속 컴퓨팅으로 구동되는 가장 혁신적인 애플리케이션 중 일부를 조명합니다. 등록은 무료이므로 <a href="https://nvda.ws/3dVzJkc" target="_blank">등록</a> 하여 Microsoft가 변환을 구동하는 방법을 알아보세요.</p>
+
+
+  <h2>AI 및 슈퍼컴퓨팅 규모</h2>
+
+
+  <p>AI 및 기계 학습 공간은 인터넷 이후 기술 발전의 가장 고무적인 영역 중 하나입니다. 대규모 AI 모델을 사용하여 많은 수의 작업에 전력을 공급하는 추세는 AI 구축 방식을 변화시키고 있습니다. Microsoft Build 2020에서는 Azure의 최신 <a href="https://blogs.microsoft.com/ai/openai-azure-supercomputer/" target="_blank">AI 슈퍼컴퓨팅</a>을 활용하는 대규모 AI에 대한 비전과 차세대 AI를 지원하는 새로운 종류의 대규모 AI 모델을 공유했습니다.<a href="https://innovation.microsoft.com/en-us/ai-at-scale" target="_blank"></a> 대규모 모델의 장점은 AI 슈퍼컴퓨팅을 사용하여 대량의 데이터로 한 번만 학습해야 하므로 훨씬 작은 데이터 세트와 리소스가 있는 다양한 작업 및 도메인에 대해 미세 조정할&rdquo; 수 &ldquo;있다는 것입니다.</p>
+
+
+  <p>이 규모의 학습 모델에는 컴퓨터 내부 및 전체의 높은 대역폭 네트워크에 의해 상호 연결된 특수 AI 가속기가 있는 수백 대의 대규모 클러스터가 필요합니다. Microsoft는 Microsoft 제품 전반에서 새로운 자연어 생성 및 이해 기능을 가능하게 하기 위해 Azure에서 이러한 클러스터를 구축해 왔습니다.<br>
+
+  대규모 컴퓨팅 클러스터, 주요 네트워크 디자인 및 소프트웨어 스택(Azure Machine Learning, ONNX 런타임 및 기타 Azure AI 서비스 포함)에서 수행한 작업은 AI at Scale 전략과 직접 일치합니다.</p>
+
+
+  <h2>에지에서 기계 학습</h2>
+
+
+  <p>Microsoft는 지능형 에지 포트폴리오의 다양한 솔루션을 제공하여 고객이 클라우드뿐만 아니라 에지에서도 기계 학습이 이루어지도록 할 수 있도록 합니다. 솔루션에는 Azure Stack Hub, Azure Stack Edge 및 IoT Edge가 포함됩니다.</p>
+
+
+  <p>에지에서 센서 데이터를 캡처하고 추론하든, Azure에서 모델 학습을 사용하여 엔드투엔드 처리를 수행하든, 향상된 추론 작업을&mdash; 위해 에지에서 학습된 모델을 활용하는지 여부에 관계없이Microsoft는 필요한 모든 곳에서 요구 사항을 지원할 수 있습니다.</p>
+
+
+  <h2>시각화 및 GPU 워크스테이션</h2>
+
+
+  <p>Azure를 사용하면 데스크톱 가상화뿐만 아니라 컴퓨터 지원 디자인, 콘텐츠 만들기 및 대화형 렌더링과 같은 전문 그래픽에도 중요한 다양한 시각화 워크로드를 사용할 수 있습니다. Azure의 시각화 워크로드는 세계적 수준의 시각적 컴퓨팅 플랫폼인 NVIDIAs&rsquo; 세계적 수준의 GPU(그래픽 처리 장치) 및 RTX 기술&rsquo;로 구동됩니다.</p>
+
+
+  <p>Azure 클라우드의 그래픽 워크스테이션에 액세스할 수 있는 아티스트, 디자이너 및 기술 전문가는 원격으로, 어디서나, 연결된 모든 디바이스에서 작업할 수 있습니다. Windows 및 <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/" target="_blank">Linux</a>에 대한 <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/" target="_blank">NV-Series</a> VM(가상 머신)을 참조하세요.</p>
+
+
+  <h2>최신 공지 사항</h2>
+
+
+  <ul>
+      <li>우리는 우리의 GPU 슈퍼 컴퓨팅 포트폴리오에 오는 새로운 높은 메모리 변형을 발표 하는 것을 자랑스럽게 생각합니다., 최신 NVIDIA A100 80 기가바이트 SXM GPU를 갖춘 동일한 NVIDIA InfiniBand HDR 및 PCIe Gen4 기반 빌딩 블록 우리가 오늘, 하지만 물론 고객 워크로드가 이러한 새로운 칩을 최대한 활용할 수 있는지 확인 하기 위해 몇 가지 조정. A100 40GB GPU 인스턴스와 마찬가지로 이러한 인스턴스는 특정 약정 없이 주문형 고객이 대규모로 사용할 수 있습니다. <a href="https://aka.ms/azurea100msignupform" target="_blank">액세스를 요청하려면 이 양식을 작성하세요</a>.</li>
+      <li>NVIDIA 및 Microsoft Azure XR 스트리밍에 대한 기준이 높아지고 있습니다. 오늘 발표된 NVIDIA CloudXR 플랫폼은 Azure 인스턴스 NCv3 및 NCasT4_v3 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>NVIDIA GTC 2021 컨퍼런스에 참여하세요.</h2>
+
+
+  <p>Microsoft Azure <a href="https://www.nvidia.com/en-us/gtc/training/" target="_blank">NVIDIA GTC 2021 컨퍼런스 워크샵 및 교육을 후원하고 있습니다</a>. NVIDIA DLI(Deep Learning Institute)는 AI, 가속 컴퓨팅 및 가속 데이터 과학에 대한 실습 교육을 제공하여 개발자, 데이터 과학자 및 기타 전문가가 가장 어려운 문제를 해결할 수 있도록 지원합니다. 이러한 심층 워크샵은 해당 분야의 전문가에 의해 학습되어 업계 최고의 기술 지식을 제공하여 개인 및 조직에 획기적인 결과를 창출합니다.</p>
+
+
+  <h2>GTC를 사용하는 주문형 Microsoft 세션</h2>
+
+
+  <p>Microsoft 세션 녹음/녹화는 2021년 4월 12일부터 <a href="https://www.nvidia.com/en-us/gtc/" target="_blank">GTC 사이트에서 사용할 수 있습니다</a> . Microsoft 기술 Community 블로그에서 해당 링크와 함께 Microsoft 디지털 세션 목록을 찾을 수 있습니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <ul>
+      <li>Microsoft Azure 후원하는 <a href="https://www.nvidia.com/en-us/gtc/training/" target="_blank">NVIDIA GTC DLI 워크샵 및 교육에</a> 등록합니다.</li>
+      <li><a href="https://techcommunity.microsoft.com/t5/azure-compute/microsoft-sessions-at-nvidia-gtc/ba-p/2259888" target="_blank">NVIDIA GTC 2021에서 Microsoft 세션을</a> 시청하세요.&nbsp;</li>
+      <li>블로그 <a href="https://developer.nvidia.com/blog/nvidia-delivers-high-quality-xr-streaming-on-microsoft-azure/" target="_blank">NVIDIA를 읽고 클라우드에서 High-Quality XR 스트리밍을 제공하는 Microsoft Azure</a>.</li>
+  </ul>

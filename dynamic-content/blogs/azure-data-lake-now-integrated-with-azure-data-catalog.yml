@@ -1,0 +1,18 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cf3445c3f989b8a42a8466ee377152965fd539ef
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903061"
+Slug: azure-data-lake-now-integrated-with-azure-data-catalog
+Title: 이제 Azure Data Lake가 Azure Data Catalog와 통합됨
+Summary: 이제 Azure Data Catalog가 Azure Data Lake와 통합되었음을 발표하게 되어 기쁩니다.
+Content: >-
+  <p>10월에는 기업이 분석 데이터를 어떤 규모로든 쉽게 저장하고 데이터 자산에서 귀중한 인사이트를 얻을 수 있도록 <a href="https://azure.microsoft.com/en-us/solutions/data-lake/">하는 Azure Data Lake</a> 를 발표했습니다. 이제 Azure Data Catalog가 Azure Data Lake와 통합되어 사용자에게 Azure Data Lake에서 빅 데이터를 등록, 보강, 검색, 이해 및 사용할 수 있는 기능을 제공합니다.</p>
+
+
+  <p><img height="362" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/data-lake-in-portal.png" width="610"></p>
+
+
+  <h3>자세한 <em>내용을 </em> 보려면 <a href="https://blogs.msdn.microsoft.com/azuredatalake/2015/12/10/organize-and-discover-your-big-data-in-the-azure-data-lake-with-azure-data-catalog/"><em>Azure Data Lake 블로그</em></a><em>로 이동합니다.</em></h3>

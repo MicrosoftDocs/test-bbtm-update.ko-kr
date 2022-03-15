@@ -1,0 +1,81 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f244c36dbadd10198115b05d6dcb7e69e87770b5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903280"
+Slug: enhance-hdinsight-security-with-service-endpoints
+Title: 서비스 엔드포인트를 사용하여 HDInsight 보안을 강화하는 방법
+Summary: HDInsight 엔터프라이즈 고객은 세계에서 가장 중요한 데이터 중 일부를 사용합니다. 네트워킹 계층에서도 이 데이터에 대한 액세스를 잠글 수 있기를 원합니다. 그러나 서비스 중...
+Content: >-
+  <p align="left">HDInsight 엔터프라이즈 고객은 세계에서 가장 중요한 데이터 중 일부를 사용합니다. 네트워킹 계층에서도 이 데이터에 대한 액세스를 잠글 수 있기를 원합니다. 그러나 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview">서비스 엔드포인트</a> 는 Azure 데이터 원본에서 사용할 수 있었지만 HDInsight 고객은 HDInsight와 다른 데이터 저장소 간의 상호 운용성이 부족하여 빅 데이터 파이프라인에 대해 이 추가 보안 계층을 활용할 수 없었습니다&rsquo;. 최근 <a href="https://azure.microsoft.com/en-us/blog/enterprises-get-deeper-insights-with-hadoop-and-spark-updates-on-azure-hdinsight/">발표한</a> 대로 HDInsight는 이제 <b>Azure Blob Storage, Azure SQL 데이터베이스 및 Azure Cosmos DB</b>에 대한 서비스 엔드포인트를 지원하게 되어 기쁩니다.</p>
+
+
+  <p align="left">네트워킹 계층에서 향상된 보안 수준을 통해 고객은 이제 빅 데이터 스토리지 계정을 지정된 VNET(Virtual Network)에 잠그고 HDInsight 클러스터를 원활하게 사용하여 해당 데이터에 액세스하고 처리할 수 있습니다.</p>
+
+
+  <p align="left">이 게시물의 나머지 섹션에서는 서비스 엔드포인트를 사용하도록 설정하고 Azure Blob Storage, Azure SQL DB 및 Azure CosmosDB에 대한 중요한 HDInsight 구성을 지적하는 방법을 살펴봅니다.</p>
+
+
+  <h2 align="left">Azure Blob Storage</h2>
+
+
+  <p align="left">HDInsight에서 Azure Blob Storage 사용하는 경우 Blob Storage 방화벽 설정에서 선택한 VNET을 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-network-security">구성할</a> 수 있습니다. 이렇게 하면 해당 서브넷의 트래픽만 이 스토리지 계정에 액세스할 수 있습니다.</p>
+
+
+  <p align="left">신뢰할 수 있는 &quot;<strong>Microsoft 서비스 이 스토리지 계정에 액세스하도록 허용하는지</strong> 확인하는 것이 중요합니다.&quot; 이렇게 하면 HDInsight 서비스가 스토리지 계정에 액세스하고 원활한 방식으로 클러스터를 프로비전할 수 있습니다.</p>
+
+
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a2de8424-4750-4815-a10c-cd14b98afbec.jpg"><img alt="blobStorageSE4" border="0" height="757" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/148280ac-94b9-4f2d-ae9d-7a472cb3567d.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="blobStorageSE4" width="990"></a></p>
+
+
+  <p align="left">&nbsp;</p>
+
+
+  <p align="left">스토리지 계정이 HDInsight 클러스터와 다른 구독에 있는 경우 HDInsight 리소스 공급자가 스토리지 구독에 등록되어 있는지 확인하세요. 구독에 리소스 공급자를 등록하거나 다시 등록하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-supported-services">추가 리소스 공급자 및 유형을 참조하세요</a>. HDInsight 리소스 공급자가 제대로 등록되지 않은 경우 리소스 공급자 등록을 통해 해결할 수 있는 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-register-provider-errors">이 오류 메시지가</a> 표시될 수 있습니다.</p>
+
+
+  <p align="left"><strong>참고</strong>: HDInsight 클러스터는 Blob Storage 방화벽에서 허용되는 서브넷 중 하나에 배포되어야 합니다. 이렇게 하면 클러스터 VM의 트래픽이 스토리지에 도달할 수 있습니다.</p>
+
+
+  <h2 align="left">Azure SQL DB</h2>
+
+
+  <p align="left">Hive 또는 Oozie 메타스토어에 대한 외부 SQL DB를 사용하는 경우 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview">서비스 엔드포인트를</a> 구성할 수 있습니다. &ldquo;클러스터가&rdquo; 만들어지고 VM이 VNET에 삽입된 후에 이러한 데이터베이스에 액세스하기 때문에 Azure 서비스에 대한 액세스 허용은 HDInsight 관점에서 필수 단계가 아닙니다.</p>
+
+
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8b28137a-8744-46a2-8555-9a1a84d2648d.png"><img alt="sqlDBSE_thumb1" border="0" height="605" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/70aaead6-58ea-4998-920b-bafca1bd13a0.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="sqlDBSE_thumb1" width="580"></a></p>
+
+
+  <p align="left"><strong>참고</strong>: HDInsight 클러스터는 SQL DB 방화벽에서 허용되는 서브넷 중 하나에 배포해야 합니다. 이렇게 하면 클러스터 VM의 트래픽이 SQL DB에 도달할 수 있습니다.</p>
+
+
+  <h2 align="left">Azure Cosmos DB</h2>
+
+
+  <p align="left"><a href="https://docs.microsoft.com/en-us/azure/cosmos-db/spark-connector">Azure Cosmos DB용 Spark 커넥터</a>를 사용하는 경우 Cosmos DB 방화벽 설정에서 서비스 엔드포인트를 사용하도록 설정하고 HDInsight 클러스터에서 원활하게 연결할 수 있습니다.</p>
+
+
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b156fc1f-d867-4977-a6c3-742ed293759b.png"><img alt="cosmosDBSE_thumb" border="0" height="748" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/702800f9-f05b-4772-8008-b34d3edbe462.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="cosmosDBSE_thumb" width="978"></a></p>
+
+
+  <p align="left">&nbsp;</p>
+
+
+  <p align="left"><strong>참고</strong>: HDInsight 클러스터는 Cosmos DB 방화벽에서 허용되는 VNET 중 하나에 배포되어야 합니다. 이렇게 하면 클러스터 VM의 트래픽이 SQL DB에 도달할 수 있습니다.</p>
+
+
+  <h2 align="left">지금 HDInsight 사용해 보기</h2>
+
+
+  <p align="left">오늘&rsquo; 공지 사항을 최대한 활용하고 Azure HDInsight를 사용하여 빌드할 내용을 확인하게 되어 기쁩니다. <a href="https://azure.microsoft.com/en-us/blog/azure-hdinsight-training-resources-learn-about-big-data-using-open-source-technologies/">개발자 가이드를 읽고</a> 빠른 시작 가이드에 따라 Azure HDInsight에서 이러한 파이프라인 및 아키텍처를 구현하는 방법에 대해 자세히 알아보세요. Twitter <a href="https://twitter.com/search?q=%23HDInsight&amp;src=typd">#HDInsight</a> 및 에서 팔로우하여 최신 Azure HDInsight 뉴스 및 <a href="https://twitter.com/AzureHDInsight">@AzureHDInsight</a>기능을 최신 상태로 유지하세요. 질문과 피드백은 문의하세요 <a href="https://mailto:AskHDInsight@microsoft.com/">AskHDInsight@microsoft.com</a>.</p>
+
+
+  <h2 align="left">HDInsight 정보</h2>
+
+
+  <p align="left">Azure HDInsight는 Azure에서 오픈 소스 워크로드를 실행하기 위한 Microsofts&rsquo; 프리미엄 관리형 제품입니다. 오늘 다양한 OSS 프레임워크에서 몇 가지 새로운 기능을 발표하게 되어 기쁩니다.</p>
+
+
+  <p align="left">Azure HDInsight는 제조, 소매 교육, 비영리, 정부, 의료, 미디어, 은행, 통신, 보험 및 ETL에서 데이터 웨어하우징에 이르는 사용 사례, Machine Learning IoT에 이르는 다양한 산업 등 다양한 분야에 걸친 주요 고객&rsquo; 업무용 애플리케이션을 지원합니다.</p>

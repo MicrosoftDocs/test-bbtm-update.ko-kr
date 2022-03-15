@@ -1,0 +1,152 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4505f8f67a0bc45be35b52e274b73d9172b86ed1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902942"
+Slug: new-diagnostics-and-analytics-capabilities-in-application-insights
+Title: Application Insights 새로운 진단 및 분석 기능
+Summary: Visual Studio Application Insights 흥미로운 새로운 기능을 발표하고, 진단 환경을 보다 지능적으로 만들고, 임시 쿼리에 대한 즉각적인 답변을 제공하고, 기존 DevOps 워크플로와 통합합니다.
+Content: >-
+  <p>오늘 샌프란시스코의 <a href="https://build.microsoft.com/">Build 2016</a>에서는 <a href="https://azure.microsoft.com/services/application-insights/">Visual Studio Application Insights</a> 흥미로운 새로운 기능을 발표하여 진단 환경을 더욱 지능적으로 만들고, 임시 쿼리에 대한 즉각적인 답변을 제공하고, 기존 DevOps 워크플로와 통합했습니다.</p>
+
+
+  <p>다음은 오늘 발표하는 몇 가지 신제품 공지 사항입니다(아래 세부 정보).</p>
+
+
+  <ol>
+   <li>애플리케이션용 분석 Insights</li>
+   <li>거의 실시간 자동 관리 검색</li>
+   <li>라이브 스트림 메트릭</li>
+   <li>애플리케이션 맵</li>
+   <li>Azure 대시보드</li>
+   <li>Visual Studio 예외에서 코드로 이동</li>
+   <li>Visual Studio 자동 로깅 프레임워크 검색</li>
+  </ol>
+
+
+  <p>Application Insights 2분 소개는 다음과 같습니다.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/fX2NtGrh-Y0" width="560"></iframe></p>
+
+
+  <p>애플리케이션 Insights 개발자를 위해 설계된 솔루션으로, 문제를 대화형으로 진단하고 어려운 질문에 대답할 수 있는 빠르고 쉽고 비입력적인 분석 도구를 제공합니다. 플랫폼에 관계없이 웹앱 &amp; 서비스의 문제를 식별, 이해 및 해결하는 데 도움이 됩니다. 개발 환경 내에서 바로 문제를 진단하고 Azure &amp; Visual Studio Team Services 통합을 사용하여 기존 DevOps 워크플로에 통합할 수 있습니다.</p>
+
+
+  <h2>분석: 임시 쿼리를 사용하여 즉각적인 답변</h2>
+
+
+  <p>애플리케이션 Insights 새로운 <a href="https://azure.microsoft.com/documentation/articles/app-analytics/">빅 데이터 분석</a> 기능을 발표했습니다. 분석은 거의 즉각적으로 애플리케이션에 대한 어려운 질문에 대한 답변을 제공합니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/app-analytics-queries/">풍부한 쿼리 언어</a>를 사용하여 분석을 사용하여 애플리케이션 원격 분석 데이터를 탐색할 수 있습니다. 대화형 쿼리를 사용하여 유연한 방식으로 앱의 성능 및 동작에 대한 창의적인 질문을 시작하고 문제를 고정할 때까지 계속 구체화할 수 있습니다.</p>
+
+
+  <p><img alt="1 App Analytics" border="0" height="503" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/962c9efc-872e-4fa1-ab6c-5c6c8cd7b162.png" style="border: 0px currentColor; border-image: none; display: inline;" title="1 App Analytics" width="1024"></p>
+
+
+  <p>Analytics를 사용하면 다양한 관점이 연결되고 비즈니스 메트릭 및 고객 환경과 서비스 성능을 상호 연결하기 위해 올바른 질문을 할 수 있으므로 전체 앱 스택에서 쉽게 진단할 수 있습니다.</p>
+
+
+  <p><img alt="clip_image004" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/87125dbc-8634-4831-9d94-514eaaeabd08.png" style="border-width: 0px; display: inline;" title="clip_image004" width="891"></p>
+
+
+  <p>몇 가지 킥 시작 아이디어를 제공하기 위해 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>애플리케이션&rsquo; 요청 성능 데이터를 고객 계층별로 분할<b></b>하여 환경을 이해합니다.</li>
+   <li>라이브 사이트 조사 중 특정 오류 코드 또는 사용자 지정 이벤트 이름 검색</li>
+   <li>특정 고객의 앱 사용량을 드릴다운하여 기능을 획득하고 채택하는 방법을 이해합니다.</li>
+   <li>특정 사용자에 &amp; 대한 세션 응답 시간을 추적하여 지원 및 운영 팀이 즉각적인 고객 지원을 제공할 수 있도록 합니다.</li>
+   <li>기능 우선 순위 지정 질문에 대답하기 위해 자주 사용되는 앱 기능 확인<b> </b></li>
+   <li>그리고 훨씬 더!</li>
+  </ul>
+
+
+  <h2>지능형 APM: 자동 관리 검색, 진단 심사 &amp;</h2>
+
+
+  <p>최신 애플리케이션 스택은 다양한 모듈 및 타사 서비스에서 종속성이 있는 분산 환경에서 작동하는 경우가 많습니다. 애플리케이션에서 발생하는 작업 및 사용 방법을 이해하고, 사전에 문제를 감지하고, 심각도에 따라 신속하게 심사 및 우선 순위를 지정하고, 사용자에게 영향을 미치기 전에 문제를 해결하려고 합니다. 오늘 발표하는 새로운 기능을 사용하면 최소한의 노력과 훌륭한 수익을 통해 애플리케이션에 대한 더 많은 통찰력을 얻을 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-nrt-proactive-diagnostics/">&lsquo;근 실시간&rsquo; 자동 관리 경고</a> 는 애플리케이션에서 실패한 요청 속도의 비정상적인 증가를 자동으로 감지하고 진단하는 데 도움이 되는 새로운 기능입니다. 상승을 감지하는 즉시 실패한 이벤트를 분석하여 앱 버전, 응답 코드 또는 지리와 같은 일반적인 특성을 찾습니다. 그런 다음, 오류와 관련된 예외, 추적 및 기타 이벤트를 찾습니다. 문제를 신속하게 진단하고 해결할 수 있도록 모든 관련 정보를 경고합니다.</p>
+
+
+  <p><img alt="clip_image006" border="0" height="748" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e761d291-2ca0-40e1-9184-a3b99bf91466.jpg" style="border-width: 0px; display: inline;" title="clip_image006" width="591"></p>
+
+
+  <p>이 기능은 <a href="https://azure.microsoft.com/en-us/blog/application-insights-proactive-detection/">자동 관리 검색</a> 보완합니다. 이전에 발표된 이 기능은 애플리케이션 성능 및 종속성과 관련된 데이터에서 변칙을 검색합니다. 애플리케이션&rsquo; 성능을 조정하고 고객 환경을 개선할 수 있도록 이러한 변칙에 대해 매일 알 수 있습니다.</p>
+
+
+  <p><b>이제 웹후크 콜백</b>을 지원하여 애플리케이션 Insights 경고를 <sup>타사</sup> 경고 관리 시스템에 연결하여 훨씬 더 많은 작업을 수행할 수 있습니다. 새 <b>라이브 스트림 메트릭</b> 은 거의 실시간 대기 시간이 1초인 지금 바로 애플리케이션 메트릭을 보여줍니다. 이 기능은 새 빌드를 릴리스하고 모든 것이 예상대로 작동하는지 확인하거나 실시간으로 인시던트를 조사할 때&rsquo; 매우 유용합니다.</p>
+
+
+  <p><img alt="clip_image008" border="0" height="584" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/368b368a-1d60-4b0e-bcdc-b3a1dd6b585e.jpg" style="border-width: 0px; display: inline;" title="clip_image008" width="823"></p>
+
+
+  <p>새 <b>애플리케이션 맵</b> 은 애플리케이션 토폴로지에서 성능 정보를 자동으로 검색하여 분산 환경 전체에서 성능 병목 상태 및 문제가 있는 흐름을 쉽게 식별할 수 있도록 합니다. Azure 서비스에서 애플리케이션 종속성을 검색할 수도 있습니다. 코드 관련 또는 종속성 관련 여부를 이해하고 단일 위치에서 관련 진단 환경으로 드릴하여 문제를 심사할 수 있습니다. 예를 들어, SQL 계층에서 성능이 저하되어 애플리케이션에 오류가 발생할 수 있습니다. 애플리케이션 맵을 사용하여 시각적으로 보고 SQL Index Advisor 또는 쿼리 Insights 환경을 드릴할 수 있습니다.</p>
+
+
+  <p><img alt="clip_image010" border="0" height="416" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a602e307-5514-4228-8391-59020dd09f14.jpg" style="border-width: 0px; display: inline;" title="clip_image010" width="625"></p>
+
+
+  <p><b>대시보드를</b> 사용하면 여러 Azure 리소스 및 애플리케이션의 데이터를 단일 보기로 매시업할 수 있습니다. 모든 애플리케이션에서 차트, 메트릭 및 KPI를 통합하고 운영 대시보드를 팀 구성원과 쉽게 공유할 수 있습니다.</p>
+
+
+  <p><img alt="clip_image012" border="0" height="477" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe825da9-b8de-4fd5-93eb-e611edac4d1a.png" style="border-width: 0px; display: inline;" title="clip_image012" width="900"></p>
+
+
+  <h2>DevOps: 통합 &amp; 확장성</h2>
+
+
+  <p>애플리케이션 Insights Service Diagnostics에 초점을 맞춘 Microsofts&rsquo; DevOps 솔루션의 일부입니다. Visual Studio 및 Visual Studio Team Services 통합하면 개발 환경 내에서 문제를 쉽게 진단하고 데이터 기반 결정을 기존 DevOps 워크플로에 통합할 수 있습니다.</p>
+
+
+  <p><a href="https://www.visualstudio.com/"><b>Visual Studio</b></a> 개발 환경으로 사용하는 경우 IDE에서 나가서 애플리케이션의 원격 분석 데이터 &amp; 진단 문제를 분석할 필요가 없습니다. Visual Studio 2015를 사용하면 IDE 내에서 <b>이벤트를 검색</b>하고 프로덕션 문제를 바로 발견할 수 있습니다.</p>
+
+
+  <p><img alt="clip_image014" border="0" height="475" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39477355-b499-4a8b-ae6d-ff9594d8552a.jpg" style="border-width: 0px; display: inline;" title="clip_image014" width="842"></p>
+
+
+  <p>이제 Visual Studio 2015 업데이트 2를 사용하면 문제를 드릴다운하고, 원격 분석 정보를 코드 탐색 보좌관으로 사용하고, 예외 스택 추적에서 <b>코드로 이동할</b> 수도 있습니다.</p>
+
+
+  <p><img alt="clip_image016" border="0" height="394" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f058bb29-71ff-470b-adaa-4e4fec43f90f.jpg" style="border-width: 0px; display: inline;" title="clip_image016" width="892"></p>
+
+
+  <p>또한 업데이트 2는 추적을 원활하게 캡처하고 애플리케이션 Insights 보낼 수 있는 <b>자동 로깅 프레임워크 검색</b>을 제공합니다. <b>진단 허브</b>와 통합하면 애플리케이션 Insights 이벤트를 다른 세부 정보와 함께 표시할 수 있는 더 풍부한 디버깅 환경도 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://www.visualstudio.com/products/visual-studio-team-services-vs">Visual Studio Team Services</a> 통합하면 클라우드 부하 테스트를 사용하여 가상 부하로 성능 변경을 조사할 수 있습니다. 애플리케이션 Insights Release Management <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-annotations/">릴리스 주석</a>을 보고 성능 변경 내용을 빌드와 상호 연결할 수도 있습니다.</p>
+
+
+  <p><img alt="clip_image018" border="0" height="406" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b74fb5e8-6137-4cad-b9e8-305c67b2e55f.jpg" style="border-width: 0px; display: inline;" title="clip_image018" width="653"></p>
+
+
+  <p>또한 특정 요구 사항에 맞게 애플리케이션 Insights 쉽게 확장할 수 있습니다. <a href="https://github.com/Microsoft/ApplicationInsights-Home">모든 SDK가 GitHub 오픈 소스</a>로 모든 언어로 빌드되고 모든 플랫폼에서 실행되는 웹 애플리케이션에서 데이터를 수집할 수 있습니다.</p>
+
+
+  <h4>결론</h4>
+
+
+  <p>Microsoft는 애플리케이션 Insights 새로운 기능을 지속적으로 추가하고 고객의 요구를 더 잘 해결하기 위해 학습하고 있습니다. 공개 미리 보기에 있는 동안 데이터가 안전하게 유지되도록 <a href="https://azure.microsoft.com/en-us/support/trust-center/">Azure 개인 정보 표준 및 보안 &amp; 규정 준수 정책에</a> 최선을 다하고 있습니다. 그리고 네, 구독의 일부로 전체 <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade">고객 지원을</a> 받을 수 있으므로 문제가 제대로 작동하지 않는 경우 Microsoft에 문의하세요.</p>
+
+
+  <p>저는 최근에 <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=26308">사례 연구를</a> 발표한 법률 소프트웨어 제공업체인 Cerenade의 고객 중 한 명에게서 영감을 주는 말로 마무리하고 싶습니다.</p>
+
+
+  <blockquote>
+
+  <p align="left">&ldquo;경쟁업체에서 당사로 마이그레이션한 고객으로부터 가동 중지 시간과 성능이 이전에는 큰 고통 포인트였다는 것을 알고 있습니다. 이러한 경쟁업체는 애플리케이션 Insights 얻을 수 있는 정보를 기반으로 최적화를 수행하지 않으며&rsquo;, 이를 통해 이점을 얻을 수 있습니다.&rdquo;</p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p align="right">--필립 야디디안, 세레네이드 사장 겸 공동 창립자</p>
+
+  </blockquote>
+
+
+  <p>Application Insights User Voice에서 새로운 기능 또는 향상된 기능에 대한 아이디어를 공유하고 궁금한 사항은 <a href="https://social.msdn.microsoft.com/Forums/en-US/ApplicationInsights/">애플리케이션 Insights 포럼</a>을 방문하세요.</p>

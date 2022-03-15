@@ -1,0 +1,119 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7a4350f5f166251462c3c67aa55da9658567499c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898416"
+Slug: azure-stack-iaas-part-six
+Title: Azure Stack IaaS – 6부
+Summary: 가상화 일 동안 가능한 가장 큰 크기를 얻기 위해 VM(가상 머신)에 대한 모든 요청을 패딩했습니다. 결정과 요청에 시간이 걸렸기 때문에 더 많은 용량이 필요한 경우 지연이 없을 수 있도록 필요한 것보다 더 많은 것을 요청할 것입니다.
+Content: >-
+  <h2>사용한 항목에 대한 지불</h2>
+
+
+  <p>가상화 일 동안 가능한 가장 큰 크기를 얻기 위해 VM(가상 머신)에 대한 모든 요청을 패딩했습니다. 결정과 요청에 시간이 걸렸기 때문에 더 많은 용량이 필요한 경우 지연이 없을 수 있도록 필요한 것보다 더 많은 것을 요청할 것입니다&rsquo;. 이로 인해 많은 낭비가 발생했고 종종&ndash;VM이 확산되는 것을 들었습니다.</p>
+
+
+  <p>이 동작은 클라우드의 IaaS(Infrastructure-as-a-Service) VM과 다릅니다. 클라우드의 기본 품질은 필요할 때 리소스에서 사용할 탄력적 풀을 제공한다는 것입니다. 사용하는&rsquo; 항목에 대해서만 요금을 지불하므로 프로비저닝을 초과할 필요가 없습니다. 대신 수요에 따라 용량을 최적화할 수 있습니다. Azure 및 Azure Stack에서 실행되는 IaaS VM에 대해 이 작업을 수행할 수 있는 몇 가지 방법을 살펴보겠습니다.</p>
+
+
+  <h2>크기 조정</h2>
+
+
+  <p>&rsquo;VM이 얼마나 커야 하는지 정확히 알기가 어렵습니다. CPU, 메모리, 디스크 및 네트워크와 같이 고려해야 할 차원이 너무 많습니다. 다음 해 또는 한 달 동안 VM에 필요한 항목을 예측하는 대신 추측하고 실행한 다음 기록 데이터가 있으면 크기를 조정하는 것이 좋습니다.</p>
+
+
+  <p>Azure 및 Azure Stack을 사용하면 포털에서 VM의 크기를 쉽게 조정할 수 있습니다. 새 크기를 선택하고 완료했습니다&rsquo;. 인프라 팀에 전화하여 더 많은 용량을 요구할 필요가 없습니다. 사용되지 않는&rsquo; 거대한 VM에 대한 지출을 초과할 필요가 없습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/06b98abc-2f5b-4631-a94b-3ef8806de5d6.png"><img alt="Choose a virtual machine size through the portal in Microsoft Azure Stack" border="0" height="922" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/46aa73e8-3cee-4825-8c89-22f00293b4b6.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Microsoft Azure Stack의 가상 머신 크기" width="1458"></a></p>
+
+
+  <p>자세한 정보:</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/resize-vm" target="_blank">Azure Virtual Machine 크기 조정</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes" target="_blank">Azure Virtual Machine 크기</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-stack/user/azure-stack-vm-sizes" target="_blank">Azure Stack Virtual Machine 크기</a></li>
+  </ul>
+
+
+  <h2>확장</h2>
+
+
+  <p>또 다른 크기 조정 차원은 동일한 VM의 여러 복사본을 단위로 함께 작동하도록 만드는 것입니다. 더 많은 것이 필요한 경우 추가 VM을 만듭니다. 덜 필요한 경우 일부 VM을 제거합니다. Azure에는 Azure Stack에서도 사용할 수 있는 VMSS(Virtual Machine Scale Sets)라는 기능이 있습니다. 마법사를 사용하여 VMSS를 만들 수 있습니다. 사용할 확장 및 VM에 로드할 소프트웨어를 포함하여 VM을 구성하는 방법에 대한 세부 정보를 입력합니다. Azure는 네트워크 배선을 처리하고, 부하 분산 장치 뒤에 VM을 배치하고, VM을 만들고, 게스트 구성에서 실행합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/989e6712-960b-4a38-96e8-e561983f4ac1.png"><img alt="Create a virtual machine scale set in Microsoft Azure Stack" border="0" height="923" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b4e26088-c988-4e47-aa8d-6552753d6d48.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Microsoft Azure Stack의 가상 머신 확장 집합" width="1407"></a></p>
+
+
+  <p>VMSS를 만든 후에는 VMSS를 확장하거나 축소할 수 있습니다. Azure는 모든 것을 자동화합니다. IaaS처럼 제어하지만 PaaS처럼 크기를 조정합니다. 가상화 시대에는 결코 쉽지 않았습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/93573158-1020-45e9-a49d-cd4e33f27847.png"><img alt="Scale a Virtual Machine Scale Set up or down" border="0" height="620" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/52faa66d-4a94-400f-bf44-dabe35a7d53a.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="VMSS(Virtual Machine Scale Set) 크기 조정" width="1247"></a></p>
+
+
+  <p>자세한 정보:</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview" target="_blank">Azure Virtual Machine Scale Sets</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-compute-add-scalesets" target="_blank">Azure Stack의 Virtual Machine Scale Sets</a></li>
+  </ul>
+
+
+  <h2>디스크 추가, 제거 및 크기 조정</h2>
+
+
+  <p>클라우드의 가상 머신과 마찬가지로 스토리지는 사용당 요금을 지불합니다. Azure와 Azure Stack을 모두 사용하면 해당 스토리지에서 실행되는 디스크를 쉽게 관리할 수 있으므로 애플리케이션에 필요한 것만 사용해야 합니다. 데이터 디스크 추가, 제거 및 크기 조정은 셀프 서비스 작업이므로 현재 요구 사항에 따라 VM&rsquo; 스토리지 크기를 조정할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b9ea6f16-d88c-49bb-8267-ec0950e77150.png"><img alt="Add, remove, and resize disk" border="0" height="777" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0feb7e95-d8af-4e0a-a7fb-7154f53f521f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="디스크 추가, 제거 및 크기 조정" width="1489"></a></p>
+
+
+  <p>자세한 정보:</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal" target="_blank">Azure Virtual Machine에 디스크 추가</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/detach-disk" target="_blank">Azure Virtual Machine에서 디스크 제거</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/expand-os-disk" target="_blank">Azure Virtual Machine의 디스크 크기 조정</a></li>
+  </ul>
+
+
+  <h2>사용량 기반 가격 책정</h2>
+
+
+  <p>Azure와 마찬가지로 Azure Stack 가격은 사용량을 기준으로 합니다. 하드웨어 및 운영 비용을 부담하므로 Azure Stack 서비스 요금은 일반적으로 Azure 가격보다 낮습니다. Azure Stack 사용량은 Azure 청구서에 품목으로 표시됩니다. 인터넷과 연결이 끊어진 네트워크에서 Azure Stack을 실행하는 경우 Azure Stack은 연간 용량 모델을 제공합니다.</p>
+
+
+  <p>사용당 지불은 Azure Stack 고객에게 큰 이점을 제공합니다. 예를 들어 한 조직에서 한 달에 한 번 기계 학습 모델을 실행합니다. 계산에 약 1주일이 걸립니다. 이 시간 동안 Azure Stack의 모든 용량을 사용하지만, 나머지 3주 동안 시스템에서 간단한 임시 워크로드를 실행합니다. 이후 블로그에서는 자동화 및 코드로서의 인프라를 통해 이를 신속하게 설정하고 분해하여 필요한 기간&rsquo; 동안 앱에 필요한 것을 사용할 수 있는 방법을 설명합니다. 적절한 크기 조정 및 사용당 지불은 많은 비용을 절약할 수 있습니다.</p>
+
+
+  <p>자세한 정보:</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/mediahandler/files/resourcefiles/5bc3f30c-cd57-4513-989e-056325eb95e1/Azure-Stack-packaging-and-pricing-datasheet.pdf" target="_blank">Microsoft Azure Stack 패키징 및 가격 책정</a></li>
+  </ul>
+
+
+  <h3>이 블로그 시리즈에서</h3>
+
+
+  <p>이 블로그 시리즈의 향후 게시물을 다시 읽어주시기 바랍니다. 다음은 과거와 예정된 몇 가지 항목입니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-one/" target="_blank">Azure Stack의 핵심은 IaaS(Infrastructure-as-a-Service) 플랫폼입니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-laas-part-two/" target="_blank">이미 있는 항목으로 시작</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-3/" target="_blank">IaaS의 기본 사항</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-four/" target="_blank">물건 보호</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-five/" target="_blank">직접 수행</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-seven/" target="_blank">팀이 필요합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-seven-2/" target="_blank">자주 수행하는 경우 자동화합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-nine/" target="_blank">다른 사용자의 성공에 따라 빌드</a></li>
+   <li><a href="https://azure.microsoft.com/en-ca/blog/azure-stack-iaas-part-ten/" target="_blank">PaaS로의 여행</a></li>
+  </ul>

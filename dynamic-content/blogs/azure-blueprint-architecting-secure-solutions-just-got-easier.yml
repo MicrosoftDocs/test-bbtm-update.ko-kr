@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 14a5e9b98ae44cb3b26d1bbc918ba32292ea5fdb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898455"
+Slug: azure-blueprint-architecting-secure-solutions-just-got-easier
+Title: 'Azure Blueprint: 보안 솔루션 설계가 더 쉬워졌습니다.'
+Summary: Azure Government Engineering은 Azure Blueprint 프로그램의 초기 릴리스를 발표하게 되어 기쁘게 생각합니다! 이 프로그램은 정부 기관 및 정부를 대신하여 빌드하는 타사 공급자를 위해 Azure의 안전하고 규정을 준수하는 사용을 용이하게 하기 위해 설계되었습니다.
+Content: >-
+  <p>Azure Government Engineering은 Azure Blueprint 프로그램의 초기 릴리스를 발표하게 되어 기쁘게 생각합니다! 이 프로그램은 정부 기관 및 정부를 대신하여 빌드하는 타사 공급자를 위해 Azure의 안전하고 규정을 준수하는 사용을 용이하게 하기 위해 설계되었습니다.</p>
+
+
+  <p>Azure Government에는 Microsoft 내부 보안 보호 및 프로세스를 기반으로 하는 JAB P-ATO(임시 운영 기관)가 부여되었습니다. 고객은 이 P-ATO를 활용하여 클라우드 기반 시스템에서 보안 책임의 범위를 줄일 수 있습니다. Azure Government에서 보안 제어 구현을 상속하면 고객은 Azure에서 빌드된 IaaS, PaaS 또는 SaaS 환경과 관련된 구현에 집중할 수 있습니다.</p>
+
+
+  <p>ATO 노력에 대해 에이전시 고객과 함께 작업할 때 가장 큰 과제 중 하나는 Azure Government에서 상속할 수 있는 범위 이해입니다. 컨트롤이 전체 스택을 통해 제대로 구현되도록 각 보안 컨트롤에 대한 책임을 정의해야 합니다. 이러한 책임을 정의하지 않으면 ISSO는 클라우드 환경에서 보안 제어를 구현하는 방법을 결정하는 어려운 과제에 직면합니다. 이 과제는 Azure Blueprint 1단계의 초점입니다.</p>
+
+
+  <p>초기 릴리스에는 Azure 고객이 개별 기관 ATO 프로세스의 일부로 보안 제어 구현을 문서화할 수 있도록 지원하는 설명서가 포함되어 있습니다. FedRAMP Moderate 기준 CRM(고객 책임 매트릭스) 및 SSP(시스템 보안 계획) 템플릿은 Azure Cloud 내에서 시스템별 보안 제어를 문서화하는 프로그램 관리자, ISSO(정보 시스템 보안 책임자) 및 기타 보안 담당자가 사용하도록 설계되었습니다.</p>
+
+
+  <p>FedRAMP Moderate CRM 문서는 고객 구현 요구 사항을 포함하는 모든 제어 요구 사항을 명시적으로 나열합니다. 여기에는 Azure Government와 Azure 고객 간의 공동 책임이 있는 컨트롤과 Azure 고객이 완전히 구현하는 컨트롤이 모두 포함됩니다. 이 형식은 보안 제어의 고객 부분에 대한 집중 설명서에 도움이 됩니다.</p>
+
+
+  <p>FedRAMP Moderate SSP 템플릿은 고객 중심이며 Azure Government의 상속 제어뿐만 아니라 고객 구현을 모두 포함하는 SSP를 개발하는 데 사용하도록 설계되었습니다. 고객 책임 섹션에는 철저하고 규정을 준수하는 제어 응답을 작성하는 방법에 대한 지침이 포함되어 있습니다. Azure 상속 섹션에는 고객을 대신하여 Azure Government에서 컨트롤을 구현하는 방법에 대한 정보가 포함되어 있습니다.</p>
+
+
+  <p>질문과 이러한 문서에 액세스하려면 이메일을 보내 <a href="mailto:AzureBlueprint@microsoft.com">AzureBlueprint@microsoft.com</a>주세요.</p>
+
+
+  <p>CRM 및 SSP 템플릿의 향후 반복에는 FedRAMP High, DISA 영향 수준 4 및 DISA 영향 수준 5에 대한 보안 제어 기준이 포함됩니다.</p>
+
+
+  <p>파일럿 단계에서 이러한 문서에 대한 피드백을 제공한 고객 및 파트너에게 많은 감사를 드립니다. 여러분의 피드백을 소중히 여기며, 앞으로 ATO의 노력을 지원할 수 있기를 기대합니다!</p>
+
+
+  <p>Azure Government의 모든 항목을 최신 상태로 유지하려면 Azure <a href="https://blogs.msdn.microsoft.com/azuregov/">Government 블로그</a>에서 <a href="https://blogs.msdn.microsoft.com/azuregov/feed/">RSS 피드</a>를 구독하고 전자 메일로 구독을&rdquo; 클릭하여 &ldquo;이메일을 수신해야 합니다. 조직에 대한 Azure Government의 기능을 사용하려면 <a href="https://azuregov.microsoft.com/trial/azuregovtrial">Azure Government 평가판</a>에 등록합니다.</p>

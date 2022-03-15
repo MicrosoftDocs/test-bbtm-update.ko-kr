@@ -1,0 +1,89 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fae2f8fbc417e09d894072d37d9040d0512c27c5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899314"
+Slug: azure-synapse-analytics-insights-for-all
+Title: 'Azure Synapse Analytics: 모두를 위한 Insights'
+Summary: 11월에는 엔터프라이즈 데이터 웨어하우징과 빅 데이터 분석을 통합하는 무제한 분석 서비스인 Azure Synapse Analytics를 발표했습니다.
+Content: >-
+  <p>11월에는 엔터프라이즈 데이터 웨어하우징과 빅 데이터 분석을 통합하는 <a href="https://azure.microsoft.com/en-us/blog/simply-unmatched-truly-limitless-announcing-azure-synapse-analytics/" target="_blank">Azure Synapse Analyticsa</a>&mdash; 무제한 분석 서비스를 발표했습니다. 최근 몇 달 동안 산업 전반에 걸쳐 엄청난 혼란이 발생했음에도 불구하고, 우리는 이러한 위기 상황에서 분석을 사용하기 위해 프라이빗 미리 보기에 참여하는 것에 대한 높은 수준의 흥분과 열정을 계속 보고 있습니다. 이 획기적인 기술을 중심으로 집결하고, 목적에 따라 혁신을 촉진하기 위해 함께 노력할 때 통찰력 있는 피드백을 제공해 주신 비공개 미리 보기에 참여해 주신 분들께 감사드립니다.</p>
+
+
+  <p>&rsquo;비공개 미리 보기 기간 동안 고객 및 파트너와 긴밀하게 협력하면서 Azure Synapse가 팀, 데이터 및 기술을 함께 제공하는 방법을 목격했습니다. 빌드 키노트에서 발표되었듯이 공개 미리 보기 가용성을 통해 모든 데이터 전문가에게 새로운 기능을 열게 되어 기쁩니다.</p>
+
+
+  <h2>모두에 대한 Insights</h2>
+
+
+  <p>Azure Synapse는 데이터 웨어하우스 및 빅 데이터 분석 시스템에서 데이터를 숨막히게 볼 수 있습니다. 보안, 개인 정보 보호 및 성능과 같이 각 세계에서 다르게 작동하는 유사한 개념을 통합해야 하므로 이러한 두 세계를 단일 서비스로 통합하는 것은 어려운 일입니다. Azure Synapse를 사용하면 데이터 웨어하우징과 빅 데이터의 원활한 통합은 비즈니스&rsquo; 분석 플랫폼을 간소화할 뿐만 아니라 <strong>팀</strong>, <strong>데이터</strong> 및 <strong>기술</strong>로 인해 오늘날 존재하는 사일로를 세분화합니다.</p>
+
+
+  <h3>팀 사일로</h3>
+
+
+  <p>데이터 팀을 한데 모아 원활하고 안전하게 공동 작업, 공유 및 분석할 수 있습니다. 데이터 통합, 데이터 웨어하우징 및 빅 데이터 분석은 모두 단일 창에서 수행할 수 있으므로 기업은 인사이트에 시간을 정체시키는 조직 사일로를 세분화할 수 있습니다.</p>
+
+
+  <h3>데이터 사일로</h3>
+
+
+  <p>모든 유형의 데이터를 관리, 보안 및 분석합니다. 단일 서비스는 데이터 웨어하우징 리소스를 사용하여 구조화되거나 반구조화된 데이터를 쿼리할 수 있으며, 데이터 레이크의 구조화되지 않은 데이터에 대해 서버리스 쿼리를 신속하게 실행할 수도 있습니다. 데이터 전문가가 다양한 서비스를 함께 연결하지 않고도 엔드투엔드 분석 솔루션을 빌드할 수 있도록 합니다.</p>
+
+
+  <p>이제 공개 미리 보기에서 사용할 수 있는 Azure Synapse Linka&mdash; 클라우드 네이티브 HTAP(하이브리드 트랜잭션 분석 처리) 구현을 사용하여 데이터 사일로를 한 단계 더 끌어올릴 수 있습니다. 이 기술은 데이터 이동을 관리하거나 운영 시스템에 부담을 주지 않고 한 번의 클릭으로 운영 데이터베이스에 저장된 라이브 트랜잭션 데이터에서 인사이트를 얻기 위해 Azure 데이터베이스 서비스와 Azure Synapseenabling&mdash; 고객 간의 장벽을 제거합니다.</p>
+
+
+  <p>&nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f658a222-1b03-4385-9557-2890cc5fbc65.gif"><img alt="Get insights from live transactional data stored in operational databases with a single click using the new Azure Synapse Link technology." border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/19cd7b32-501a-4032-8fa8-ed2bd9a28d03.gif" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1024"></a></p>
+
+
+  <h3>기술 사일로</h3>
+
+
+  <p>비즈니스 전반의 모든 기존 기술을 결합하여 데이터로 더 많은 성과를 거둘 수 있습니다. Azure Synapse의 긴밀하게 통합된 Apache Spark 및 SQL 엔진을 통해 친숙한 SQL 선호하는 데이터 전문가는 Sparkand&mdash;를 선호하는 사용자와 원활하게 협업할 수 있습니다. 예를 들어 익숙하거나 SQL 선호하는 사용자는 T-SQL 언어를 사용하여 Spark 테이블을 쿼리할 수 있습니다. 또한 Python, Scala, SparkSQL 또는 C#과 같은 언어를 선호하는 데이터 엔지니어 또는 데이터 과학자는 데이터 파이프라인, 데이터 레이크 및 데이터 웨어하우스를 보관하는 동일한 서비스에서 데이터를 변환하고, 모델을 학습시키고, 개념 증명을 만들 수 있습니다.</p>
+
+
+  <p>이러한 사일로를 해체하는 것은 Neogrid와 같은 회사가 Azure Synapse Analytics를 선택하는 이유입니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&ldquo;Azure Synapse는 자연스럽게 협업을 용이하게 하고 데이터 팀을 하나로 묶습니다. 동일한 분석 서비스에서 작업하면 팀이 고급 분석 솔루션을 더 빠르게 개발할 수 있을 뿐만 아니라 규정을 준수하는 방식으로 데이터에 안전하게 액세스하고 공유할 수 있는 간단하고 빠른 방법을 제공할 수 있습니다.&rdquo; </em></p>
+
+
+  <p align="right" style="margin-left: 40px;"><strong><em>에머슨 토바, CTO, 네오그리드</em></strong></p>
+
+
+  <p align="right" style="margin-left: 40px;"><em><a href="https://customers.microsoft.com/story/816187-neogrid-professional-services-azure-synapse-analytics" target="_blank"><img alt="Logo for the company Neogrid" border="0" height="52" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a15f7d55-998f-4cd8-8e0e-45d724e54a59.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="131"></a></em></p>
+
+  </blockquote>
+
+
+  <h2>업계 최고의 가격 대비 성능으로 비용 절감</h2>
+
+
+  <p>비즈니스 전반에 걸쳐 인사이트를 제공하는 것이 분석의 주요 목적입니다. 그러나 이러한 인사이트를 검색하고 공유하는 데 걸리는 비용도 똑같이 중요합니다.</p>
+
+
+  <p>Azure Synapse Analytics에서 설명했습니다. 작년 초, 우리는 높은 인식 TPC-H 벤치 마크 쿼리를 사용하여 Azure Synapse, 아마존 레드 시프트, 구글 빅 쿼리를 비교 <a href="https://azure.microsoft.com/en-us/blog/analytics-in-azure-is-up-to-14x-faster-and-costs-94-less-than-other-cloud-providers-why-go-anywhere-else/" target="_blank">GigaOm에 의해 독립적 인 연구를</a> 발표했다. Azure Synapse는 최대 <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/compare/" target="_blank">14배 더 빠르</a> 며 다른 클라우드 공급자보다 <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/compare/" target="_blank">94% 더 빠릅니다</a> . 몇 달 후, 우리는 Azure Synapse가 다시 가격 성능의 업계 선두 주자임을 발견 TPC-DS 벤치 마크 쿼리를 사용하는 GigaOm에서 두 번째 벤치 마크 보고서를 발표했다. 그리고 오늘날, 우리는 Azure Synapse를 사용할 때 <a href="https://cdn2.hubspot.net/hubfs/257922/TEI of MSFT analystics - FINAL v3.pdf" target="_blank">평균 ROI가 271%라고</a> 보고하는 기업에서 명실상부한 선두 주자로 남아 있습니다.</p>
+
+
+  <p>새로운 공개 미리 보기 기능을 통해 고객은 프로비전된 워크로드에 대한 업계 최고의 가격 성능을 계속 즐기고 쿼리당 종량제 기능을 제공하는 새로운 서버리스 소비 모델을 활용할 수 있습니다. 데이터를 분석하는 두 가지 방법으로 고객은 각 사용 사례에 대해 가장 비용 효율적인 옵션을 선택할 수 있습니다.</p>
+
+
+  <h2>추가 비용 없이 고급 보안</h2>
+
+
+  <p>데이터에 관해서는 분석을 사용하여 검색된 인사이트가 금만큼 귀중하기 때문에 보안 및 개인 정보 보호가 가장 중요합니다. 고급 보안 및 개인 정보 보호는 Always-On 데이터 암호화와 같은 Azure Synapse의 패브릭에 기본 제공됩니다. 또한 세분화된 액세스 제어를 위해 기업은 열 수준 보안 및 네이티브 행 수준 보안뿐만 아니라 동적 데이터 마스킹을 사용하여 데이터를 안전하고 비공개로 유지하여 중요한 데이터를 실시간으로 자동으로 보호할 수 있습니다. 가장 중요한 것은 이러한 중요한 기능은 추가 비용 없이 모든 Azure Synapse 고객에게 제공됩니다.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <ul>
+      <li>Azure 무료 평가판 계정으로 지금 <a href="https://azure.microsoft.com/en-us/free/synapse-analytics/" target="_blank">새로운 Azure Synapse 기능을</a> 사용해 보세요.</li>
+      <li><a href="https://info.microsoft.com/Virtual-Event-Azure-Synapse-Analytics-How-It-Works-Registration.html?ocid=AID3010796_QSG_EML_410813" target="_blank">예정된 가상 서밋</a>에 등록하고 Azure Synapse 고객이 현재 새로운 미리 보기 기능을 사용하는 방법에 대해 직접 듣습니다.</li>
+      <li><a href="https://aka.ms/Synapse_Partners" target="_blank">Azure Synapse 파트너를</a> 시작합니다.</li>
+  </ul>

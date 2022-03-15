@@ -1,0 +1,281 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 00fdde1644c90c2b6ee1973e93ee4767e351dcd8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903352"
+Slug: answering-whats-happening-whys-happening-and-what-will-happen-with-iot-analytics
+Title: IoT Analytics를 사용하여 설명, 진단 및 예측
+Summary: IoT 데이터에서 실행 가능한 인사이트를 추출하는 이전 블로그 문서에서는 컴퓨터, 자산 및 제품에서 IoT 데이터를 수집하는 가치에 대해 설명합니다. IoT 데이터 수집의 요점은 실행 가능한 인사이트를 추출하는 것입니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/blog/extracting-actionable-insights-from-iot-data-to-drive-more-efficient-manufacturing/?WT.mc_id=iotinsightsblog2-acomblog-ditambur" target="_blank">IoT 데이터에서 실행 가능한 인사이트를 추출하는</a> 이전 블로그 문서에서는 컴퓨터, 자산 및 제품에서 IoT 데이터를 수집하는 가치에 대해 설명합니다. IoT 데이터 수집의 요점은 실행 가능한 인사이트를 추출하는 것입니다. 최적화된 공장 운영, 향상된 제품 품질, 고객 수요에 대한 더 나은 이해, 새로운 수익원 및 향상된 고객 환경과 같은 비즈니스 가치를 유발하는 일종의 작업을 트리거하는 Insights.</p>
+
+
+  <p>이 블로그에서는 스토리의 분석 부분에 집중하여 IoT 데이터에서 가치 추출에 대해 설명합니다.</p>
+
+
+  <p>일반적으로 데이터 분석은 네 가지 유형으로 제공됩니다(그림 1).</p>
+
+
+  <ul>
+   <li>설명, 질문에 대답: 무슨 일이 일어나고 있는가?</li>
+   <li>진단, 질문에 대답: 왜 일어나고 있는가?</li>
+   <li>예측, 질문에 대답하기: 어떻게 될까요?</li>
+   <li>규범적, 질문에 대답하기 위해 : 우리는 어떤 조치를 취해야합니까?</li>
+  </ul>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90c882dc-e118-41e8-a7c5-809f30090501.jpg"><img width="1622" height="635" title="DDPP" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" alt="DDPP" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f4891908-9e54-49c1-b8f8-615e76f2920e.jpg" border="0"></a></p>
+
+
+  <p align="center"><em>그림 1: IoT Analytics 버전</em></p>
+
+
+  <p>IoT 분석은 데이터 분석의 하위 케이스이므로 이러한 형식은 다음과 같이 IoT 분석에 잘 매핑됩니다.</p>
+
+
+  <table border="1" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td width="66" style="vertical-align: middle;">
+     <p><strong>데이터 분석 유형</strong></p>
+     </td>
+     <td width="72" style="vertical-align: middle;">
+     <p><strong>포커스</strong></p>
+     </td>
+     <td width="168" style="vertical-align: middle;">
+     <p><strong>IoT 애플리케이션</strong></p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p><strong>대표 질문</strong></p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p><strong>구현</strong></p>
+     </td>
+    </tr>
+    <tr>
+     <td width="66" style="vertical-align: middle;">
+     <p><strong><em>설명</em></strong></p>
+     </td>
+     <td width="72" style="vertical-align: middle;">
+     <p>이유가 무엇입니까?</p>
+     </td>
+     <td width="168" style="vertical-align: middle;">
+     <p>컴퓨터, 디바이스, 제품 및 자산의 상태를 모니터링합니다.</p>
+
+     <p>계획에 따라 상황이 진행되는지 평가하거나 변칙이 발생하는 경우 사람들에게 경고합니다.</p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p>이 컴퓨터의 처리량 및 사용률은 무엇인가요?</p>
+
+     <p>즉각적인 주의가 필요한 변칙이 있나요?</p>
+
+     <p>이 기계는 얼마나 많은 에너지를 소비하고 있습니까?</p>
+
+     <p>이 도구를 사용하여 얼마나 많은 부품을 생산하고 있나요?</p>
+
+     <p>고객은 제품을 어떻게 사용합니까?</p>
+
+     <p>내 자산은 어디에 있나요?</p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p>일반적으로 현재 및 기록 센서 데이터, 통계, KPI 및 경고를 표시하는 대시보드 형식입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="66" style="vertical-align: middle;">
+     <p><strong><em>진단</em></strong></p>
+     </td>
+     <td width="72" style="vertical-align: middle;">
+     <p>왜 무슨 일이 일어나고 있는가?</p>
+     </td>
+     <td width="168" style="vertical-align: middle;">
+     <p>여러 각도에서 데이터를 검사하여 어떤 일이 발생하는지 파악합니다.</p>
+
+     <p>목표는 문제(프로세스, 서비스 또는 제품)를 수정하거나 개선하기 위해 문제의 근본 원인을 찾는 것입니다.</p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p>이 컴퓨터의 OEE가 왜 그렇게 낮습니까?</p>
+
+     <p>왜 이 기계는 다른 기계보다 결함이 있는 부품을 더 많이 생산하고 있는가?</p>
+
+     <p>이 기계가 왜 그렇게 많은 에너지를 소비하는가?</p>
+
+     <p>이 도구를 사용하여 부품을 거의 생산하지 않는 이유는 무엇인가요?</p>
+
+     <p>왜 우리는이 제품의 너무 많은 반환을 받고 있다?</p>
+
+     <p>왜 우리는 우리의 유럽 고객에서 너무 많은 제품 수익을 받고 있다?</p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p>진단 기능은 종종 사용자가 데이터를 드릴인하고, 여러 가지 방법으로 피벗하고, 비교하고, 추세 및 상관 관계를 임시 방식으로 시각화할 수 있는 대시보드 확장입니다.</p>
+
+     <p>데이터에서 진단을 수행하는 사용자는 일반적으로 순수 데이터 과학자가 아닌 <i>도메인 </i>전문가(즉, 특정 컴퓨터, 프로세스, 디바이스, 제품에 대한 전문가)입니다. 데이터 과학자는 도메인 전문가가 인사이트를 추출할 수 있도록 <i>지원하는</i> 역할을 합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="66" style="vertical-align: middle;">
+     <p><strong><em>예측</em></strong></p>
+     </td>
+     <td width="72" style="vertical-align: middle;">
+     <p>어떻게 될까요?</p>
+     </td>
+     <td width="168" style="vertical-align: middle;">
+     <p>기록 데이터를 기반으로 특정 기간 내에 어떤 일이 발생할 확률을 계산합니다.</p>
+
+     <p>목표는 어떤 일이 발생하기 전에 사전에 일종의 정정 조치를 취하거나 위험을 완화하거나 경쟁 우위를 확보할 기회를 식별하는 것입니다.</p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p>다음 24시간 동안 이 컴퓨터가 실패할 확률은 무엇인가요?</p>
+
+     <p>이 도구의 예상 남은 유용한 수명은 무엇인가요?</p>
+
+     <p>이 컴퓨터에 대한 서비스를 계획해야 하는 경우는 언제인가요?</p>
+
+     <p>이 제품 또는 기능에 대한 수요는 무엇인가요?</p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p>일반적으로 기록 데이터를 사용하여 학습되고 최종 사용자 애플리케이션에서 사용할 수 있도록 클라우드에 배포되는 기계 학습 모델을 통해 구현됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="66" style="vertical-align: middle;">
+     <p><strong><em>처방적</em></strong></p>
+     </td>
+     <td width="72" style="vertical-align: middle;">
+     <p>어떤 작업을 수행해야 하나요?</p>
+     </td>
+     <td width="168" style="vertical-align: middle;">
+     <p>진단 또는 예측의 결과로 작업을 권장하거나 적어도 진단 또는 예측 뒤에 있는 추론에 대한 가시성을 제공합니다.</p>
+
+     <p>종종 권장 사항은 문제를 해결하거나 최적화하는 방법에 관한 것입니다.</p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p>이 컴퓨터는 향후 24시간 동안 실패할 가능성이 90%입니다. 이를 방지하기 위해 어떻게 해야 하나요?</p>
+
+     <p>이 컴퓨터의 OEE가 낮습니다. 개선하려면 어떻게 해야 하나요?</p>
+
+     <p>이 기계는 결함이 있는 부품을 너무 많이 생산하고 있습니다. 이 문제를 방지하려면 어떻게 해야 하나요?</p>
+
+     <p>이 디자인으로 인해 많은 제조 문제가 발생합니다. 설계를 개선하여 축소하려면 어떻게 해야 하나요?</p>
+     </td>
+     <td width="156" style="vertical-align: middle;">
+     <p>규범적 분석은 아직 초기 단계에 있습니다.</p>
+
+     <p>종종 예측 분석의 확장입니다. 여기서 사용자는 기계 학습 모델이 결론이나 예측에 도달하기 위해 취한 단계를 제공합니다. 권장 사항은 아니지만 권장 사항에 대한 힌트를 제공하는 ML 알고리즘의 추론에 대한 인사이트를 제공할 수 있습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>IoT Analytics에서 Machine Learning 역할</h2>
+
+
+  <p>기계 학습(ML)은 IoT 분석에서 점점 더 중요한 역할을 하고 있습니다. 최근 제조업에서 ML 실제 애플리케이션이 등장한 것은 데이터가 급증했기 때문이라고 주장할 수 있으며, 그 중 대부분은 IoT에 기인할 수 있습니다. 다른 요인으로는 더 나은 ML 알고리즘의 가용성과 클라우드의 컴퓨팅 성능이 있습니다.</p>
+
+
+  <p>제조 ML 대한 심층적인 논의는 향후 블로그의 초점이 될 것입니다. 현재 중요한 점은 선택할 수 있는 많은 ML 알고리즘이 있으며 올바른 알고리즘을 선택하는 것은 다음에 따라 달라집니다.</p>
+
+
+  <ul>
+   <li>무엇을 하려고 합니까? (값 예측, 범주 예측, 비정상적인 데이터 요소 찾기 등)</li>
+   <li>특정 시나리오는 무엇인가요?</li>
+   <li>원하는 정확도는 무엇인가요?</li>
+   <li>원하는 학습 시간은 얼마인가요?</li>
+   <li>데이터는 얼마나 선형인가요?</li>
+   <li>매개 변수는 몇 개입니까?</li>
+   <li>몇 가지 기능이 있나요?</li>
+  </ul>
+
+
+  <p>더 나은 아이디어를 얻으려면 <a href="https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet#download-machine-learning-algorithm-cheat-sheet?WT.mc_id=iotinsightsblog2-acomblog-ditambur" target="_blank">Azure Machine Learning 알고리즘 치트 시트</a>를 참조하세요.</p>
+
+
+  <p>특정 사용 사례의 경우에도 여러 알고리즘을 선택할 수 있습니다. 예를 들어 예측 유지 관리:</p>
+
+
+  <table border="1" cellspacing="0" cellpadding="0">
+   <tbody>
+    <tr>
+     <td width="234" style="vertical-align: middle;">
+     <p><strong>원하는 경우...</strong></p>
+     </td>
+     <td width="246" style="vertical-align: middle;">
+     <p><strong>다음 ML 알고리즘을 선택할 수 있습니다.</strong></p>
+     </td>
+    </tr>
+    <tr>
+     <td width="234" style="vertical-align: middle;">
+     <p>향후 기간 내에 장비 조각이 실패할 확률을 예측합니다.</p>
+     </td>
+     <td width="246" style="vertical-align: middle;">
+     <p>이진 분류</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="234" style="vertical-align: middle;">
+     <p>자산의 남은 유용한 수명을 계산합니다.</p>
+     </td>
+     <td width="246" style="vertical-align: middle;">
+     <p>회귀</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="234" style="vertical-align: middle;">
+     <p>자산에 대한 실패 시간 범위를 예측합니다.</p>
+
+     <p>여러 근본 원인 중 하나로 인해 향후 기간에 오류가 발생할 가능성을 계산합니다.</p>
+
+     <p>지정된 오류의 가장 가능성이 높은 근본 원인 예측</p>
+     </td>
+     <td width="246" style="vertical-align: middle;">
+     <p>다중 클래스 분류</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>한 가지 중요한 점은 ML 일반적으로 이러한 유형의 분석과 연결되어 있지만 예측 및 규범적 분석을 위한 것이 아니라는 것입니다. ML 설명 및 진단 분석에도 사용할 수 있습니다. 예를 들어 컴퓨터에서 비정상적인 경우 경고를 발생시키는 것은 설명이 포함된 분석 시나리오이며 변칙 검색 ML 알고리즘으로 사용하도록 설정할 수 있습니다.</p>
+
+
+  <h2>IoT Analytics 솔루션 개요</h2>
+
+
+  <p>상위 수준에서 IoT 분석 솔루션에는 다음 구성 요소가 포함됩니다(그림 2).</p>
+
+
+  <ul>
+   <li>데이터 수집: 디바이스 또는 필드 게이트웨이에 연결하여 스트리밍하는 데이터 레코드를 수집합니다. IoT에서 데이터 레코드는 이벤트, 메시지, 경고 또는 원격 분석(센서 측정)일 수 있습니다. 그들은 일반적으로 타임스탬프와 다른 주파수에 올 수 있습니다. 서로 다른 형식으로 제공되며 서로 다른 통신 프로토콜을 사용할 수 있습니다. 이 데이터는 클라우드 게이트웨이를 통해 클라우드로 수집됩니다.</li>
+   <li>스트림 처리: 일부 애플리케이션에서는 데이터가 스트리밍될 때 라이브로 분석됩니다. 이 작업은 일반적으로 시각화, 라이브 쿼리 및 작업의 조합으로 수행됩니다.&nbsp; 예를 들어 대시보드는 일정 기간 동안 디바이스의 온도를 표시할 수 있습니다. 라이브 쿼리는 지난 5분 동안의 평균 온도가 90 F를 초과하지 않는지 지속적으로 확인할 수 있습니다. 또한 이러한 쿼리는 일부 작업(예: 머신 종료 및/또는 경고 보내기)을 실행할 수 있습니다. 스트림 처리 데이터는 저장되거나 저장되지 않을 수 있습니다.</li>
+   <li>데이터 스토리지: 수집 중인 IoT 데이터 레코드를 저장하는 위치입니다. IoT 솔루션은 솔루션에 있는 디바이스 수, 데이터 전송 빈도 및 디바이스에서 보낸 데이터 레코드의 페이로드 크기에 따라 상당한 양의 데이터를 생성할 수 있습니다. 데이터는 종종 타임스탬프를 찍어 추가 처리를 위해 액세스할 수 있는 위치에 저장해야 하며 시각화 및 보고에 사용됩니다. IoT 데이터를 "웜" 및 "콜드" 데이터 저장소로 분할하는 것이 일반적입니다. </li><ul>
+    <li>웜 스토리지: 보고 및 시각화에 즉시 사용할 수 있어야 하는 데이터의 경우 웜 스토리지는 짧은 대기 시간, 높은 처리량 및 전체 쿼리 기능으로 액세스해야 하는 최근 데이터를 보유합니다.</li>
+    <li>콜드 스토리지: 더 오래 저장되고 일괄 처리에 사용되는 데이터의 경우 콜드 스토리지에 저장된 데이터는 일반적으로 보고, 분석, 기계 학습 모델 학습 등을 위해 나중에 액세스해야 하는 기록 데이터입니다. 선택한 콜드 스토리지 데이터베이스 기술은 대부분 비용이 저렴하지만 웜 데이터베이스 솔루션보다 더 적은 쿼리 및 보고 기능을 제공합니다.</li></ul></ul><blockquote><p>스토리지에 대한 일반적인 구현은 원격 분석 데이터의 최근 범위(예: 마지막 날, 주 또는 월)를 웜 스토리지에 유지하고 기록 데이터를 콜드 스토리지에 저장하는 것입니다. 이 방식으로 구현하면 애플리케이션이 가장 최근 데이터에 액세스하여 최근 원격 분석 데이터 및 추세를 빠르게 확인할 수 있습니다. 콜드 스토리지로는 디바이스에 필요한 기록 정보를 가져오는 작업을 처리할 수 있으며, 이 경우 웜 스토리지에 있는 데이터보다 대기 시간이 높아집니다.</p></blockquote>
+
+  <ul>
+   <li>데이터 변환: 클라우드 게이트웨이 서비스에서 수신하기 전이나 후에 원격 분석 스트림을 조작하거나 집계하는 작업이 포함됩니다. 조작에는 프로토콜 변환, 데이터 포인트 결합 등이 포함될 수 있습니다.</li>
+   <li>기계 학습: 콜드 스토리지에 저장된 고도로 구조화된 데이터는 일반적으로 ML 모델을 학습시키는 데 사용됩니다. 일단 만들어지면 ML 모델이 배포되고 애플리케이션에서 사용(사용)될 수 있습니다.</li>
+   <li>사용자 인터페이스 &amp; 보고 도구: IoT 데이터를 시각화하고 분석하는 데 사용되는 최종 사용자 애플리케이션입니다.<br>
+  다른 시스템에 통합: IoT 솔루션에서 추출된 인사이트는 일반적으로 일종의 동작을 초래합니다. 종종 이 작업은 CRM, PLM 또는 ERP와 같은 외부 기간 업무 시스템에서 수행됩니다. 예를 들어 예측 유지 관리 기계 학습 모델이 머신이 실패할 것으로 예측하는 경우 CRM 시스템에서 작업을 트리거하여 서비스를 예약할 수 있습니다.</li>
+
+  </ul>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/08f5e346-289b-4cf9-9cea-4e3534f4d521.jpg"><img width="1880" height="1001" title="ddpp3" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" alt="ddpp3" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9b3982a3-19dc-46f6-a2ff-d8e77f40ad62.jpg" border="0"></a></p>
+
+
+  <p align="center"><em>그림 2: IoT Analytics 솔루션의 구성 요소</em></p>
+
+
+  <h2>결론</h2>
+
+
+  <p>이 블로그 문서에서는 IoT 솔루션의 분석 부분에 중점을 둡니다. 4가지 유형의 분석(설명, 진단, 예측 및 규범적)과 IoT에 매핑하는 방법에 대해 설명합니다. 또한 IoT 분석에서 기계 학습의 역할에 대해서도 설명했습니다. 마지막으로, IoT 분석과 관련하여 제공되는 IoT 솔루션의 구성 요소를 강조 표시하기 위해 개략적인 솔루션 아키텍처를 간략하게 설명했습니다.</p>
+
+
+  <h2>권장하는 다음 단계</h2>
+
+
+  <p>IoT <a href="https://azure.microsoft.com/industries/discrete-manufacturing/usecases/?WT.mc_id=iotinsightsblog2-acomblog-ditambur" target="_blank">데이터에서 실행 가능한 인사이트를 추출하여 IoT 분석에</a> 대해 자세히 알아봅니다.</p>

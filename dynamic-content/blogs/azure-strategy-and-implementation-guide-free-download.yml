@@ -1,0 +1,40 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cd2d6120fc09a50bd9c3461d07a99a50dc0df9fd
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903037"
+Slug: azure-strategy-and-implementation-guide-free-download
+Title: Azure 전략 및 구현 가이드 - 무료 다운로드
+Summary: Azure를 처음 사용하거나 클라우드 마이그레이션을 계획하는 시작 단계에 있는 사용자를 위해 무료 전자책을 제공하게 되어 기쁘게 생각합니다.
+Content: >-
+  <p><em>이 블로그 게시물은 클라우드 솔루션 설계자 인 요아킴 하프너 (Joachim Hafner) Microsoft Azure 공동 저술했습니다.</em></p>
+
+
+  <p>Were&rsquo;는 Azure를 처음 접하는 사용자 또는 클라우드 마이그레이션 계획의 시작 단계인 <a href="https://azure.microsoft.com/en-us/resources/azure-strategy-and-implementation-guide/en-us/" target="_blank">IT 조직을 위한 Azure 전략 및 구현 가이드를 위한</a> 무료 전자책을 제공하게 되어 기쁘게 생각합니다. 클라우드 솔루션 설계자는 클라우드 구현 프로세스에 대해 생각하기 시작한 고객으로부터 동일한 질문을 많이 듣습니다. 이를 통해 고객이 클라우드 전략을 형성하는 데 도움을 줄 수 있는 청사진 형식의 지침을 제공하는 이 전자책을 작성하게 된 동기가 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/087977fc-3d2d-4b18-8bc0-fdae41abbb30.png"><img alt="image" border="0" height="228" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/01bdc168-c48f-416e-b7b8-1ee73ce10d0c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="174"></a></p>
+
+
+  <p>Azure를 시작하든, IT 팀이 클라우드 구현을 탐색하는 방법에 대한 보다 일반적인 연구를 수행하든, 이 가이드에서는 광범위하게 적용 가능한 조언과 고려해야 할 Azure 세부 사항의 균형을 제공합니다. 다음은 다루는 내용에 대한 개요입니다.</p>
+
+
+  <ul>
+   <li><strong>1장: 거버넌스</strong> &ndash; 이 장에서는 열망적인 &ldquo;디지털 변환&rdquo; 부터 관리 및 리소스 명명 규칙의 중요한 전술적 단계에 이르기까지 시작점에 대해 설명합니다. 클라우드 준비, 관리, 보안 표준 및 정책에 대한 구상과 같은 항목에 대한 개요를 확인합니다.</li>
+   <li><strong>2장: 아키텍처</strong> &ndash; 이 섹션에서는 보안을 더 길게 살펴보고, 클라우드 디자인 패턴을 다루며, 네트워크 디자인을 이해하는 데 도움이 되는 몇 가지 시각적 표현을 제공합니다.</li>
+   <li><strong>3장: 애플리케이션 개발 및 운영</strong> &ndash; 여기서는 백업 및 재해 복구뿐만 아니라 IT 운영 및 관리 관점에서 애플리케이션 개발을 다룹니다. &rsquo;IaC(Monitoring and Infrastructure as Code)뿐만 아니라 DevOps 문화권에 대해 알아봅니다.</li>
+   <li><strong>4장: 서비스 관리</strong> &ndash; 아니요, 조직이 클라우드로 이동할 때 IT는 사용되지 않습니다. 이 장에서는 서비스 관리 및 최적화와 함께 Azure 로드맵, 업데이트 및 지원이 필요할 때 어디로 가야 하는지에 대한 최신 정보를 제공합니다.</li>
+  </ul>
+
+
+  <p>이 가이드의 대상은 엔터프라이즈 설계자, 클라우드 롤아웃 이니셔티브의 프로젝트 관리자, 솔루션 설계자 및 IT 팀 리더입니다. 도움이 되기를 바랍니다!</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/resources/azure-strategy-and-implementation-guide/en-us/" target="_blank">지금 무료 전자책 사본을 받으세요</a>.</p>
+
+
+  <ul>
+
+  </ul>

@@ -1,0 +1,50 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d275644fd6318cdd9e692410871308beb3ba3bf6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902620"
+Slug: create-an-office-365-dev-test-environment-in-azure
+Title: Azure에서 Office 365 개발/테스트 환경 만들기
+Summary: Office 365 및 디렉터리 동기화를 사용하여 엔터프라이즈 조직을 시뮬레이션하는 개발/테스트 환경을 만듭니다.
+Content: >-
+  <p><a href="https://technet.microsoft.com/library/mt750650.aspx">Azure의 Office 365 개발/테스트 환경을</a> 사용하면 단계별 지침에 따라 Azure 인프라 서비스에서 간소화된 인트라넷, Office 365 Enterprise E5 구독 및 AD(Azure Active Directory 대한 디렉터리 동기화)를 구성할 수 있습니다. 이 새로운 개발/테스트 환경을 사용하면 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>엔터프라이즈 조직을 시뮬레이션하는 환경에서 Office 365 애플리케이션 개발 및 테스트를 수행합니다.</li>
+   <li>조직&rsquo; 인프라 및 Office 365 구독 및 개인용 컴퓨터와는 별개인 결과 없는 구성에서 E5 기능을 경험하는 Office 365 Enterprise 대해 알아봅니다.</li>
+   <li>Windows Server AD 포리스트와 Office 365 구독의 Azure AD 테넌트 간에 디렉터리 동기화를 설정하는 경험을 얻을 수 있습니다.</li>
+  </ul>
+
+
+  <p>Office 365 Enterprise E5 및 Azure 평가판 구독을 사용하여 이 모든 작업을 무료로 수행합니다.</p>
+
+
+  <p>다음 단계를 사용하여 Office 365 개발/테스트 환경을 빌드합니다.</p>
+
+
+  <ol>
+   <li><a href="https://technet.microsoft.com/library/mt771177.aspx">Azure 인프라 서비스에서 시뮬레이션된 인트라넷을 만듭니다</a>.</li>
+   <li><a href="https://technet.microsoft.com/library/mt736406.aspx">Office 365 Enterprise E5 구독을 추가합니다</a>.</li>
+   <li>시뮬레이션된 인트라넷의 Windows Server AD 포리스트와 Office 365 구독 간에 <a href="https://technet.microsoft.com/library/mt750650.aspx">디렉터리 동기화</a>를 구성하고 테스트합니다.</li>
+  </ol>
+
+
+  <p>진행은 다음과 같습니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e2a4a7ee-7286-4d2e-90d4-fcf6a14365fd.png"></p>
+
+
+  <p>완료되면 원격 데스크톱 연결을 사용하여 시뮬레이션된 인트라넷의 컴퓨터에 연결하여 관리, 앱 개발 및 앱 설치 및 테스트를 수행할 수 있습니다.</p>
+
+
+  <p>이 개발/테스트 환경은 <a href="https://technet.microsoft.com/library/mt763975.aspx">EMS(Enterprise Mobility Suite) 평가판 구독으로 확장&nbsp;</a>될 수도 있으므로 다음과 같습니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3bdb6e4-3c4d-4e1e-ba61-7931e321685d.png"></p>
+
+
+  <p>Office 365 및 EMS 개발/테스트 환경을 사용하면 Office 365 및 EMS를 모두 사용하는 시뮬레이션된 엔터프라이즈에 대한 시나리오를 테스트하거나 애플리케이션을 개발할 수 있습니다.</p>

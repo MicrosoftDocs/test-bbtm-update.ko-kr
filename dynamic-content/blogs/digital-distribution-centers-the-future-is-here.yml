@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 19864de1ffadde430426ed0dd1de564dd47d2902
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898636"
+Slug: digital-distribution-centers-the-future-is-here
+Title: 디지털 배포 센터 - 미래는 다음과 같습니다.
+Summary: '변화의 속도는 지금만큼 빠르지 않았습니다. 전 세계적으로 인구는 점점 더 도시화되고 있으며 소득 수준은 증가하고 있습니다. 2050년까지 전 세계 인구의 약 70%가 60억 명에 달하는 도시 또는 도시 지역에 거주하게 될 것입니다. '
+Content: >-
+  <p>변화의 속도는 지금만큼 빠르지 않았습니다. 전 세계적으로 인구는 점점 더 도시화되고 있으며 소득 수준은 증가하고 있습니다. 2050년까지 전 세계 인구의 약 70%가 60억 명에 달하는 도시 또는 도시 지역에&mdash;&rsquo; 거주할 것입니다. 소비자 행동도 지난 10년 동안 실질적으로 변화했으며, 옴니채널 소매, 개인 설정 및 당일 배송에 대한 수요가 증가하고 있습니다. 변화하는 환경에 맞게 대도시 내에서 사용자에게 더 가까운 제품을 준비하는 도시 유통 센터는 더 빠른 배달 및 더 큰 사용자 지정을 가능하게하기 위해 증가하고 있습니다.</p>
+
+
+  <p>물류 센터의 4개 벽 안에는 웨어하우징 작업의 총 인건비의 50% 이상이 선택 및 포장 작업이 있습니다. 특히 도심에서 노동에 대한 접근은 점점 더 어려워지고 있으며, 인력 수준은 연휴 기간 동안 정상 수준의 5~10배까지 증가하고 있습니다. 공간 제약과 인력 의 어려움으로 인해 기업들은 인건비를 절감하고 제품의 흐름을 최적화하며 이러한 센터의 생산성과 활용도를 향상시키는 유통 센터 기술을 채택하도록 강요하고 있습니다.</p>
+
+
+  <p>작년에 업계 최고의 IoT(사물 인터넷) 플랫폼을 개발하기 위한 Microsofts&rsquo; $5B의 약속을 발표한 이후,&rsquo; Weve는 이러한 문제를 해결하기 위한 솔루션을 구축하기 위해 에코시스템 파트너와 계속 협력했습니다. Microsoft Build의 &ldquo;IoT Vision 및 로드맵&rdquo; 세션에서는 Lenovo 및 NVIDIA와의 파트너십을 발표하여 Azure IoT Edge에 고급 AI(인공 지능)를 도입했습니다. 시연된 솔루션은 단일 SE350 Edge Server인 Lenovo 하드웨어가 <a href="https://developer.nvidia.com/deepstream-sdk" target="_blank">NVIDIA DeepStream</a>과 함께 Azure IoT Edge 런타임을 실행하여 1080P/30FPS H265 비디오 스트림의 여러 채널을 실시간으로 처리하고 카메라를 물리적 환경을 이해하고 비전 알고리즘을 사용하여 선반에서 누락된 제품을 찾거나 손상된 제품을 감지하는 스마트 센서로 변환하는 것으로 나타났습니다. 이러한 Azure IoT Edge 기술 애플리케이션을 통해 고객은 물류 운영을 최적화하는 소매 솔루션을 빠르고 비용 효율적으로 배포할 수 있습니다.</p>
+
+
+  <p>오늘 이 여정의 다음 이정표인 Lenovos&rsquo; DDC(디지털 배포 센터) 솔루션의 미리 보기를 발표하게 되어 기쁩니다. Lenovos&rsquo; DDC는 NVIDIA 및 Microsoft와 공동으로 개발된 IoT 솔루션입니다. DDC는 실시간 확장성 있는 패키지 검색, 추적 및 유효성 검사를 통해 소매, 제조 및 물류 운영을 위한 배포 센터의 최적화 및 사용률을 향상합니다. 이 솔루션은 인공 지능 및 기계 학습 유추를 통해 다중 비디오 스트림 분석을 사용하여 자체 학습, 최적화 및 크기를 조정합니다. 추가 릴리스에는 지오펜싱 경고, 팔레트화, 삭제 해제 및 마지막 마일 정렬이 포함됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/537be7a4-17f0-4c28-a349-2b761a409d2f.png"><img alt="Start your supply chain transformation with the Digital Distribution Center. Automate redundant, manual processes, increase employee productivity and safety, and maximize distribution center effectiveness" border="0" height="720" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8b8c0def-eff6-44a8-bcab-e2588e5ee165.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="디지털 배포 센터를 사용한 유연한 체인 변환" width="1280"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3e4cbcad-3e3f-46f5-8a88-091d02fb7395.png"><img alt="Start your supply chain transformation with the Digital Distribution Center. Automate redundant, manual processes, increase employee productivity and safety, and maximize distribution center effectiveness" border="0" height="720" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/91e03766-25fe-4c0a-95e9-d7b078e25b99.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="배포 센터" width="1280"></a></p>
+
+
+  <p>DDC는 Azure IoT Central, Microsofts&rsquo; 완전 관리형 IoT 앱 플랫폼으로 빌드되어 IoT 디바이스 및 제품을 쉽게 연결, 모니터링 및 관리할 수 있습니다. Azure IoT Central은 IoT 솔루션의 초기 설정을 단순화하고 일반적인 IoT 프로젝트의 관리 부담, 운영 비용 및 오버헤드를 줄입니다. 이를 통해 솔루션 빌더는 글로벌 IoT 솔루션의 운영, 관리, 보안 및 크기 조정을 해결하는 대신 고객의 요구를 해결하고 비즈니스 가치를 창출하는 데 에너지 및 고유한 도메인 전문 지식을 적용할 수 있습니다. Lenovo 및 NVIDIA와 같은 파트너는 사람, 장소 및 환경을 구성하는 일반적인 산업 계층 구조를 포함하여 DDC와 같은 업계 솔루션과 관련된 스키마를 통해 고유한 가치를 추가합니다.</p>
+
+
+  <p>Microsoft InspireJuly&mdash; 14-18, 2019, 네바다 주 라스베이거스에서 열린 Microsoft 파트너 부스에서 솔루션 데모에 참여하세요. 솔루션에 대한 미리 보기 프로그램에 참여하려면 문의하세요. IoTSolutions@lenovo.com&nbsp;&nbsp;</p>

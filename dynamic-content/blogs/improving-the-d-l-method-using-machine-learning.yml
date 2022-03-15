@@ -1,0 +1,35 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ba8d8287c6ad1cec4827153bd5fe5f4028a66384
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898945"
+Slug: improving-the-d-l-method-using-machine-learning
+Title: Machine Learning 사용하여 D/L 메서드 개선
+Summary: 기술은 스포츠에서 필수적인 역할을 계속하고 있습니다. 크리켓에도 기술을 사용할 수 있는 많은 영역이 있습니다. 기계 학습은 스포츠 분석에서 중요한 역할을 할 것입니다.
+Content: >-
+  <p>기술은 스포츠에서 필수적인 역할을 계속하고 있습니다. 크리켓에도 기술을 사용할 수 있는 많은 영역이 있습니다. 기계 학습은 스포츠 분석에서 중요한 역할을 할 것입니다.</p>
+
+
+  <p>우리는 Machine Learning 사용하여 역사적인 크리켓 게임을 분석하고 이를 사용하여 비가 내리는 경기에서 대상 점수를 계산하는 덕워스 루이스 (D/L) 방법을 지속적으로 향상시킬 수 있다고 믿습니다.</p>
+
+
+  <p>현재 D/L 방법은 통계학자 프랭크 덕워스와 토니 루이스가 발명한 통계 메서드입니다.&nbsp; 두 번째 타격 팀(비가 내리는 경기에서)이 달성해야 하는 목표 점수(또는 PAR 점수)를 계산하도록 설계되었습니다. 오늘날 크리켓 커뮤니티에는 Standard Edition 및 Professional Edition이라는 두 가지 D/L 모델/버전이 있습니다. Standard Edition ICC가 아닌 일치 및 로컬 일치에 사용되는 차트 기반 모델입니다.&nbsp; Professional 버전은 소프트웨어 기반 블랙 박스 모델이며, 모든 공식 경기에 대한 ICC에 의해 사용된다.&nbsp;</p>
+
+
+  <p>덕워스와 루이스가 은퇴한 후, 스티븐 스턴 교수(퀸즐랜드 공과대학 출신)가 이 방법의 관리인이 되었고, 이 방법은 덕워스-루이스 스턴 방법(또는 D/L/S 방법)으로 이름이 바뀌었습니다. 공존하는 문헌의&nbsp; 많은&nbsp; 조각에서, 그것은 D&nbsp;&nbsp;/L 메서드로 계속 불립니다.</p>
+
+
+  <h2>D/L 메서드 개선</h2>
+
+
+  <p>D/L 테이블은 정적이며 최신 게임 통계(예: 이번 시즌 더 좋은 성적을 내는 팀, 선수 순위 등)를 고려하지 않습니다.<br>
+
+  기록 Twenty20 데이터를 사용하여 이러한 최신 통계를 사용하는 항상 최신 D/L 테이블을 파생시킬 수 있다고 생각합니다. Azure Machine Learning 사용하여 운영할 수 있으며 항상 업데이트된 D/L 테이블을 생성하기 위해 자주 실행할 수 있습니다.</p>
+
+
+  <p>이를 위해 국제 및 IPL 크리켓 경기에 볼 바이 볼 데이터를 제공하는 T20 데이터를 <a href="https://cricsheet.org/">https://cricsheet.org/</a>분석합니다. T20 기록 데이터는 약 620경기의 볼 바이 볼과 153K 행의 볼 바이 볼 데이터를 캡처합니다.</p>
+
+
+  <p><a href="https://aka.ms/t20cricket">Jupyter Notebook</a>을 사용하여 T/20 데이터를 사용하는 제약 조건 기술에 이차 곡선 맞춤을 적용하여 더 나은 D/L 테이블을 파생시키는 방법에 대한 데이터 탐색을 보여 줍니다. 이 Jupyter 노트북은 이제 데이터 과학 및 크리켓 커뮤니티에서&nbsp; 사용할 수 있습니다&nbsp;&nbsp;.</p>

@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0cd0517f7a6f7013ec8f9d9b82c8c812f3770fab
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899136"
+Slug: announcing-new-offers-and-capabilities-that-make-azure-the-best-place-for-all-your-apps-data-and-infrastructure
+Title: Azure를 모든 앱, 데이터 및 인프라에 가장 적합한 위치로 만드는 새로운 제품 및 기능 발표
+Summary: 불과 몇 달 전, 저는 회사가 유연한 하이브리드 접근 방식과 비용 효율적인 Azure 경로로 클라우드로 이동할 수 있도록 돕는 방법에 대해 썼습니다. 고객이 더 큰 것을 실현할 수 있도록 돕기 위해...
+Content: >-
+  <p>불과 몇 달 전, 저는 회사가 유연한 하이브리드 접근 방식과 비용 효율적인 Azure 경로로 클라우드로 이동할 수 있도록 돕는 방법에 대해 <a href="https://azure.microsoft.com/en-us/blog/migrating-your-apps-data-and-infrastructure-to-azure-is-easier-than-ever/" target="_blank">썼습니다</a> . 고객이 더 많은 비용을 절감하고 Azure로의 마이그레이션을 간소화할 수 있도록 Im&rsquo;은 이러한 고객의 요구를 해결하기 위해 흥미로운 업데이트를 공유하게 되어 기쁘게 생각합니다.</p>
+
+
+  <h2>무료 Windows Server 및 SQL Server 2008 확장 보안 업데이트를 사용하여 Azure로 마이그레이션</h2>
+
+
+  <p>Windows Server 및 SQL Server 2008/2008 R2는 거의 10년 전에 출시되어 전 세계 수백만 개의 인스턴스에 배포되었을 때 큰 인기를 받았습니다. 고객은 이러한 서버에서 많은 비즈니스 애플리케이션을 계속 실행합니다. 10주년을 맞이한 이 두 버전은 2019년 7월에 SQL Server 2008년 지원이 종료되고 2020년 1월에 Windows Server 2008 지원이 종료됩니다. 우리는 많은 고객이 이러한 서버를 계속하기를 원한다는 것을 알고 있으며, 모든 고객이 훌륭한 옵션을 사용할 수 있도록 돕기 위해 여기에 있습니다.</p>
+
+
+  <p>오늘 Azure에서 실행할 때 지원 날짜가 종료된 후 3년 동안 추가 보안 업데이트를 무료로 제공할 것이라고 발표했습니다. 즉, 고객은 추가 비용 없이 Azure에서 서버를 실행하는 효율성과 3년 이상의 보안 업데이트를 사용할 수 있습니다.</p>
+
+
+  <p>특히 SQL Server 고객의 경우, 올해 4분기 초에 일반적으로 제공되는 Azure SQL Database Managed Instance는 SQL Server 완전한 호환성을 갖춘 훨씬 더 비용 효율적인 데이터베이스를 제공합니다. 그것은&rsquo; 진정으로 두 세계의 최고입니다. 마이그레이션 외에도 Azure로의 이동과 함께 최신 서버 버전 온-프레미스로 업그레이드하거나 업그레이드하는 데 도움이 될 수 있습니다. <a href="https://aka.ms/takeshieosblog" target="_blank">이</a> 모든 옵션에 대해 자세히 알아보세요.</p>
+
+
+  <p>모든 버전의 Windows Server 또는 SQL Server 실행하는 고객의 경우 Azure 하이브리드 혜택을 사용하면 다른 클라우드가 할 수 없는 것처럼 Azure로 비용을 절감할 수 있습니다. Azure 하이브리드 혜택은 azure에서 Windows Server 또는 SQL Server &ndash; 실행하는 데 최대 55% 절감된 Windows Server를 실행하거나 다른 곳에서 SQL Server 이유는 무엇인가요?</p>
+
+
+  <h2>모든 워크로드를 Azure &ndash; Linux, MySQL, PostgreSQL 및 NoSQL로 마이그레이션</h2>
+
+
+  <p>현재 Azure의 Linux에서 VM 코어의 40% 이상을 사용하는 Azure는 RedHat Enterprise Linux, SUSE Enterprise Server, Ubuntu, CentOS 및 Debian을 비롯한 모든 인기 있는 배포판에 대한 지원을 제공합니다. Azure 마이그레이션 도구를 사용하면 이러한 Linux 배포판도 평가하고 마이그레이션할 수 있습니다.</p>
+
+
+  <p>Ive&rsquo;는 고객이 Azure로 마이그레이션하면서 놀라운 비즈니스 결과를 실현하는 것을 보았습니다. 한 가지 예는 J.B입니다. 사냥, 트럭 및 운송 제공 업체. 중요 물류 애플리케이션을 Azure로 마이그레이션하여 비즈니스를 디지털화하면서 온-프레미스 공간을 유지했습니다.</p>
+
+
+  <p><em>&ldquo;Azure로 전환하면 비즈니스 성장과 고객의 기대치를 높이는 데 도움이 되었습니다. Azure 하이브리드 기능 덕분에 여러 중요한 Linux, Windows 및 Java 애플리케이션을 Azure로 마이그레이션하고 현대화하는 동시에 온-프레미스 작업을 계속 실행할 수 있었습니다. J.B. 기술 담당 부사장인 제이 데이비슨(Jay Davidson)은 Microsoft가 몇 년&rdquo; 동안이 아닌 몇 달 만에 중요한 비즈니스 혁신을 달성하는 데 도움을</em> 주었습니다. 헌팅&nbsp;</p>
+
+
+  <p>또한 완전히 관리되는 Azure Database 서비스로 마이그레이션되는 MySQL 및 PostgreSQL 온-프레미스 데이터베이스와 NoSQL 데이터베이스를 Azure Cosmos DB로 마이그레이션하는 엄청난 모멘텀을 보고 있습니다. 이 작업을 더 쉽고 빠르게 하기 위해 이달 말까지 Azure Database for MySQL 및 PostgreSQL에 대한 지원을 <a href="https://dmspreview.azurewebsites.net/" target="_blank">Azure Database Migration Service</a> 에 추가할 예정입니다.</p>
+
+
+  <p>선도적인 글로벌 자문, 중개 및 솔루션 회사인 Willis Towers Watson은 Azure Database Migration Service를 사용하여 가동 중지 시간 없이 여러 데이터베이스를 Azure로 마이그레이션하고 있습니다.</p>
+
+
+  <p><em>&ldquo;Azure Database Migration Service는 데이터베이스를 Azure로 이동하기 위한 생명의 보호기였습니다. 가동 중지 시간 또는 데이터 손실 없이 2개월 동안 서비스를 사용하여 100개가 넘는 데이터베이스를 Azure로 성공적으로 마이그레이션했습니다. 이 프로세스는 사용자가 다른 방법을&rdquo; 사용하는 데 6개월 및 며칠/몇 주 동안 가동 중지 시간이 걸렸을 것이라고</em> IT 임원 및 서비스 디렉터인 윌리스 타워스 왓슨(Willis Towers Watson)은 말합니다.</p>
+
+
+  <p>마지막으로 고객이 대량의 데이터를 Azure로 안전하게 이동할 수 있도록 총 용량이 40TB인 <a href="https://aka.ms/AnnouncingDataBoxDisk" target="_blank">Data Box Disk의 공개 미리 보기를</a> 통해 <a href="https://azure.microsoft.com/en-us/services/storage/databox/" target="_blank">Azure Data Box</a>에 대한 투자를 확장하고 있습니다. 이렇게 하면 매우 많은 양의 데이터를 Azure로 더 쉽고 항상 안전하게 이동할 수 있습니다.</p>
+
+
+  <p>Azure로 마이그레이션할 수 있는 새로운 기능이 무료 확장 보안 업데이트 및 Azure 하이브리드 혜택의 비교할 수 없는 거래와 결합되어 Azure로 이동하는 데 더 좋은 시기는 없었습니다.</p>
+
+
+  <p><a href="https://azure.com/migrate" target="_blank">Azure 마이그레이션 센터를</a> 방문하여 자세한 내용을 알아보고 오늘 Azure 마이그레이션을 시작하세요.&nbsp;&nbsp;</p>

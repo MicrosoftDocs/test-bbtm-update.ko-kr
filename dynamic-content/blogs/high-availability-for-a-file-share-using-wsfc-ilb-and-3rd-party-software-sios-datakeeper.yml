@@ -1,0 +1,329 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3f10a8c6b214f8ce397436ede93c5523d6a18f86
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902575"
+Slug: high-availability-for-a-file-share-using-wsfc-ilb-and-3rd-party-software-sios-datakeeper
+Title: WSFC, ILB 및 타사 소프트웨어 SIOS Datakeeper를 사용하는 파일 공유에 대한 고가용성
+Summary: Windows "공유 디스크 장애 조치(failover) 클러스터"는 Microsoft Azure Virtual Machines에 아직 지원되지 않지만 타사 소프트웨어 SIOS Datakeeper를 대안으로 사용할 수 있습니다. 샘플 사용 사례인 이 게시물에서는 파일 공유를 고가용성으로 만드는 방법을 설명합니다.
+Content: >-
+  Windows "공유 디스크 장애 조치(failover) 클러스터"는 Microsoft Azure Virtual Machines에 아직 지원되지 않지만 타사 소프트웨어 SIOS Datakeeper를 대안 <a href="https://us.sios.com/products/datakeeper-cluster/" target="_blank">https://us.sios.com/products/datakeeper-cluster/</a> 으로 사용할 수 있습니다.
+
+
+  샘플 사용 사례인 이 게시물에서는 파일 공유를 고가용성으로 만드는 방법을 설명합니다. 설정하는 데 필요한 모든 정보는 기본적으로 인터넷에서 사용할 수 있습니다. 이 게시물의 아이디어는 단순히 모든 것을 함께 넣어하는 것입니다. 세부 정보로 들어가기 전에 접근 방식에 대한 개략적인 개요로 시작하고 싶습니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="overview_01b" alt="overview_01b" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/overview_01b.jpg" width="920" height="608" border="0" />
+
+  <p align="center">그림 1</p>
+
+
+  <h3 align="left">테스트된 솔루션 설정의 주요 구성 요소는 다음과 같습니다.</h3>
+
+  <ul>
+   <li>장애 조치(failover) 클러스터를 나타내는 도메인 컨트롤러 VM 및 두 개의 VM</li>
+   <li>도메인 컨트롤러에 대한 HA는 이 게시물의 일부가 아닙니다! 전체 클러스터 엔드 투 엔드가 아닌 파일 공유에 대한 고가용성 구현에만 초점을 맞춥니다.</li>
+   <li>간단히 하기 위해 도메인 컨트롤러 VM의 간단한 파일 공유 감시가 클러스터 쿼럼 구성으로 사용되었습니다. 위에서 언급했듯이 DC VM에는 HA가 없으므로 DC VM이 중지되면 파일 공유 감시가 사라집니다.</li>
+   <li>세 VM은 모두 하나의 Azure Vnet에 속합니다. 도메인 컨트롤러 VM과 두 개의 클러스터 노드 VM은 클라우드 서비스 수준에서 수행되는 내부 Load Balancer 구성을 완전히 분리하기 위해 서로 다른 두 클라우드 서비스에 속합니다.</li>
+   <li>파일 공유에 대한 고가용성을 보장하려면 두 VM이 동시에 중단되는 것을 방지하기 위해(예: Azure 유지 관리 중) 두 클러스터 노드를 모두 Azure 가용성 집합에 배치해야 합니다.</li>
+   <li>WSFC는 두 클러스터 노드 VM 간에 공유 디스크 장애 조치(failover) 클러스터를 구성하고 마지막으로 고가용성 파일 공유를 제공하는 데 사용되었습니다.</li>
+   <li>Azure ILB(내부 부하 분산 장치)를 사용하면 장애 조치(failover) 클러스터에서 만든 파일 서버 역할의 가상 이름을 통해 파일 공유에 액세스할 수 있습니다.</li>
+   <li>"트릭"은 파일 서버 역할의 IP 주소를 ILB의 IP 주소로 바꾸는 것입니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  이제 문제는 물론입니다. Hyper-V 온-프레미스와 마찬가지로 Azure Virtual Machines에 사용할 수 있는 공유 디스크가 없으므로 이 모든 작업이 어떻게 작동해야 하나요? 대답은 SIOS Datakeeper입니다.
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="overview_02" alt="overview_02" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/overview_021.jpg" width="610" height="399" border="0" />
+
+  <p align="center">그림 2</p>
+
+
+  <h3>SIOS Datakeeper 하나를 사용하면 동기 복제를 통해 두 볼륨(VM에 연결된 데이터 디스크) 간에 소위 "미러"를 만들 수 있습니다.</h3>
+
+  <ul>
+   <li>두 볼륨(Azure 데이터 디스크) 간에 미러를 만들 때 SIOS Datakeeper는 이 미러를 클러스터 구성에 스토리지로 추가합니다.</li>
+   <li>클러스터 장애 조치(failover) 관리자에게 공유 디스크처럼 보입니다.</li>
+   <li>앞에서 설명한 대로 – ILB는 파일 서버 역할 이름을 통해 파일 공유에 액세스할 수 있으며 항상 활성 클러스터 노드로 라우팅됩니다.</li>
+  </ul>
+
+  <h2>필수 조건:</h2>
+
+  <ul>
+   <li>모든 테스트는 Windows 2012 R2로 수행되었습니다.</li>
+   <li>SIOS Datakeeper 버전은 8.2였습니다.</li>
+   <li>SIOS Datakeeper를 설치하려면 .NET Framework 3.5가 필요합니다. 테스트할 때 다음 KB 문서에서 <a href="https://support2.microsoft.com/kb/3005628" target="_blank">https://support2.microsoft.com/kb/3005628</a>다운로드한 약간의 exe를 실행하는 형식의 수정이 필요한 문제가 발생했습니다. 최근 테스트에서는 10월의 최신 WS2012 R2 Azure Gallery 이미지에서 더 이상 문제가 되지 않는 것으로 나타났습니다.</li>
+   <li>또한 .NET Framework 3.5를 설치할 때 VM이 vnet에 있으면 안 됩니다. 인터넷의 문서에서 찾을 수 있는 몇 가지 문제가 있습니다. 원본 파일 및 DNS 설정 찾기와 관련이 있습니다. 해결 방법으로 VM 내의 DNS 항목으로 8.8.8.8을 추가할 수 있습니다. 다음 두 예제와 같이 특정 버그 수정이 필요할 수도 있는 다른 경우도 있을 수 있습니다. <a title="https://blogs.technet.com/b/askcore/archive/2013/01/14/error-in-failover-cluster-manager-after-install-of-kb2750149.aspx" href="https://blogs.technet.com/b/askcore/archive/2013/01/14/error-in-failover-cluster-manager-after-install-of-kb2750149.aspx">https://blogs.technet.com/b/askcore/archive/2013/01/14/error-in-failover-cluster-manager-after-install-of-kb2750149.aspx</a>
+  <a href="https://support.microsoft.com/kb/2804526">https://support.microsoft.com/kb/2804526</a></li>
+   <li>내부 테스트를 위해 .NET Framework 3.5와 위의 세 번째 항목의 수정 사항을 설치한 자체 OS WS2012 R2 이미지를 만들었습니다. 다른 두 버그 수정 예제는 필요하지 않거나 적용할 수 없습니다. 프라이빗 OS 이미지를 만들려면 아래 지침을 따랐습니다. 그런 다음 이 프라이빗 이미지 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-capture-image-windows-server/">https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-capture-image-windows-server/</a> 에서 모든 테스트 VM을 만들었습니다.버그 수정이 필요하지 않은 경우 표준 Azure Gallery OS 이미지만 사용하는 것이 좋습니다.</li>
+   <li>테스트 환경에 전용 vnet을 사용했습니다. ILB가 작동하도록 올바른 방법으로 vnet을 만들기 위해 주의해야 합니다. 과거에는 vnet이 선호도 그룹과 연결되었습니다. 더 이상 <a href="" target="_blank"></a> 그렇지 않습니다. ILB를 설정하려면 새 지역 유형이 필요합니다. 새로 만든 vnet의 경우 모든 것이 괜찮습니다.</li>
+   <li>포털을 통해 vnet을 만들 때 위치(Azure 지역)를 입력해야 합니다. 기존 vnet의 경우 네트워크 구성을 수정하여 vnet 설정을 선호도 그룹에서 지역별로 변경하는 옵션이 있습니다. VNET에 VM이 있는 동안에는 이 테스트가 직접 테스트되었으며 불가능합니다. 테스트를 위해 VM(모든 디스크 유지)을 제거하고 VM 구성을 내보낸 다음 다시 가져왔습니다. 이 구성 변경에 대한 문서는 다음과 같습니다. <a href="https://azure.microsoft.com/blog/2014/05/14/regional-virtual-networks/" target="_blank">https://azure.microsoft.com/blog/2014/05/14/regional-virtual-networks/</a></li>
+   <li>그런 다음 두 개의 서로 다른 클라우드 서비스에서 도메인 컨트롤러 VM과 두 개의 클러스터 노드 VM을 설정했습니다. ILB가 클라우드 서비스별로 구성되므로 ILB 구성과 관련된 모든 종류의 잠재적 부작용을 방지하는 정리된 설정입니다.</li>
+   <li>SIOS는 프로세스를 설명하는 몇 가지 단계별 가이드도 제공합니다. WS 2012 R2에도 도움이 되는 WS2012를 사용하는 방법은 다음과 같습니다. <a href="https://clusteringformeremortals.com/2012/12/31/windows-server-2012-clustering-step-by-step/" target="_blank">https://clusteringformeremortals.com/2012/12/31/windows-server-2012-clustering-step-by-step/</a>
+  <a href="" target="_blank"></a></li>
+
+  </ul>
+
+  &nbsp;
+
+  <h3>다음과 같이 표시됩니다.</h3>
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_00" alt="a_details_00" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_00.jpg" width="920" height="444" border="0" />
+
+  <p align="center">그림 3</p>
+
+  개요 섹션에 설명된 대로 도메인 컨트롤러 VM이 만들어졌습니다. DNS 및 AD 항목은 다음을 표시합니다.
+
+  <ul>
+   <li>이름이 "fsha-cln1"인 클러스터 노드 1 VM("fsha"는 파일 공유 고가용성을 의미함)입니다.</li>
+   <li>이름이 "fsha-cln2"인 클러스터 노드 2 VM</li>
+   <li>이름이 "fsha-dc"인 도메인 컨트롤러 VM</li>
+   <li>도메인 "fshadomain.com"</li>
+   <li>클러스터 이름 "fshacl"</li>
+   <li>이름이 "fshafsrole"인 클러스터의 파일 서버 역할</li>
+  </ul>
+
+  &nbsp;
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_01" alt="a_details_01" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_01.jpg" width="920" height="464" border="0" />
+
+  <p align="center">그림 4</p>
+
+
+  <ul>
+   <li>"미러"는 SIOS 데이터 키퍼 "작업"을 통해 만들어졌으며 이름이 "fshajob"입니다.</li>
+   <li>미러는 두 클러스터 노드 VM 간에 볼륨 S(Azure VM에 연결된 5GB 데이터 디스크)의 동기 복제를 정의합니다.</li>
+   <li>Datakeeper 화면에는 주(원본)가 현재 클러스터 노드 1이고 보조(대상)가 클러스터 노드 2임을 보여 줍니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_02" alt="a_details_02" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_02.jpg" width="920" height="485" border="0" />
+
+  <p align="center">그림 5</p>
+
+
+  <ul>
+   <li>클러스터 노드 1의 파일 시스템을 살펴보면 볼륨 S에 파일 공유가 표시됩니다.</li>
+   <li>이는 고가용성이 되어야 하는 공유입니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_03" alt="a_details_03" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_03.jpg" width="920" height="485" border="0" />
+
+  <p align="center">그림 6</p>
+
+
+  <ul>
+   <li>Datakeeper 볼륨은 장애 조치(failover) 클러스터 관리자에 표시되며 파일 서버 역할을 만들 수 있습니다.</li>
+   <li>파일 서버 역할 내의 "공유"에서 그림 5에서 파일 탐색기 수준에서 살펴본 파일 공유를 볼 수 있습니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_04" alt="a_details_04" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_04.jpg" width="920" height="515" border="0" />
+
+  <p align="center">그림 7</p>
+
+
+  <ul>
+   <li>두 번째 클러스터 노드를 확인하면 복제된 볼륨 S: 예를 들어 파일 탐색기 수준에서 볼 수 있지만 액세스는 불가능합니다.</li>
+   <li>SIOS Datakeeper는 복제된 볼륨이 현재 소유자 노드에서만 액세스할 수 있는지 확인합니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_05" alt="a_details_05" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_05.jpg" width="920" height="440" border="0" />
+
+  <p align="center">그림 8</p>
+
+
+  <ul>
+   <li>클러스터 역할에서 만든 파일 공유는 가상 이름 "\\fshafsrole\fsha_share"에서 예상대로 도메인 컨트롤러에서 액세스할 수 있습니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_06" alt="a_details_06" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_06.jpg" width="920" height="485" border="0" />
+
+  <p align="center">그림 9</p>
+
+
+  <ul>
+   <li>이제 클러스터 노드 1에서 클러스터 노드 2로 파일 서버 역할의 수동 장애 조치(failover)를 시작합니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_07" alt="a_details_07" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_07.jpg" width="920" height="515" border="0" />
+
+  <p align="center">그림 10</p>
+
+
+  <ul>
+   <li>두 번째 노드의 장애 조치(failover) 클러스터 관리자(Azure VM fsha-cln2)는 소유자 노드가 fsha-cln2로 변경되었음을 보여 줍니다.</li>
+   <li>SIOS Datakeeper는 원본 및 대상 서버도 전환했습니다.</li>
+   <li>이제 이전에 작동하지 않았던 두 번째 노드의 파일 탐색기 수준에서 파일 공유에 액세스할 수 있습니다.</li>
+   <li>도메인 컨트롤러 VM에서의 액세스도 여전히 예상대로 작동합니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_08" alt="a_details_08" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_08.jpg" width="920" height="515" border="0" />
+
+  <p align="center">그림 11</p>
+
+
+  <ul>
+   <li>장애 조치(failover) 클러스터 관리자 내에서 파일 서버 역할을 마우스 오른쪽 단추로 클릭하여 파일 공유 액세스에 대한 적절한 권한을 설정할 수 있습니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_09" alt="a_details_09" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_09.jpg" width="920" height="398" border="0" />
+
+  <p align="center">그림 12</p>
+
+
+  <ul>
+   <li>개요 섹션에서 설명한 것처럼 장애 조치(failover) 클러스터에 대한 공유 디스크처럼 Datakeeper 미러를 사용하는 것만으로는 충분하지 않습니다.</li>
+   <li>파일 서버 역할의 이름을 통해 파일 공유에 액세스하는 것과 관련하여 또 다른 "해결 방법"이 필요합니다.</li>
+   <li>Azure 내부 Load Balancer – ILB의 도움으로 구현되었습니다.</li>
+   <li>스크린샷은 "ilbfsha"라는 이름의 내부 Load Balancer가 클러스터 노드의 클라우드 서비스에 생성되었음을 보여줍니다.</li>
+   <li>Load Balancer의 IP 주소는 10.0.0.99입니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_10" alt="a_details_10" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_10.jpg" width="920" height="537" border="0" />
+
+  <p align="center">그림 13</p>
+
+
+  <ul>
+   <li>장애 조치(failover) 관리자에서 "리소스" 탭을 확인하면 파일 서버 역할에 실제로 ILB – 10.0.0.99의 IP 주소가 있음을 알 수 있습니다.</li>
+   <li>이것은 전체 설정이 마침내 작동하도록하는 "트릭"입니다. 파일 서버 역할은 원래 다른 IP 주소로 만들어졌습니다.</li>
+   <li>파일 서버 역할이 만들어지면 해당 IP 주소가 Powershell 명령을 통해 ILB의 IP 주소로 대체되었습니다. ILB 구성 섹션의 PS 명령 예제를 참조하세요.
+  장애 조치(failover) 관리자 GUI에서 수행할 수 있는 간단한 IP 주소 변경만이 아닙니다.</li>
+
+  </ul>
+
+  &nbsp;
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; padding-right: 0px; border-width: 0px;" title="a_details_11" alt="a_details_11" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a_details_11.jpg" width="920" height="574" border="0" />
+
+  <p align="center">그림 14</p>
+
+
+  <ul>
+   <li>PS 명령 "get-azureendpoint"는 ILB와 관련된 클러스터 노드 1(클러스터 노드 2의 경우 동일)에 대해 두 개의 엔드포인트가 생성되었음을 보여 줍니다.</li>
+   <li>로컬 포트는 443 및 445이고 소위 "프로브 포트"는 59999입니다.</li>
+  </ul>
+
+  &nbsp;
+
+  <h3>ILB 구성:</h3>
+
+  도메인 컨트롤러 VM 또는 Azure의 장애 조치(failover) 클러스터 설정과 마찬가지로 Azure 내부 Load Balancer ILB를 구성하는 방법에 대한 정보는 인터넷에서 찾을 수 있습니다. ILB와 관련하여 고가용성 파일 공유에 필요한 것은 실제로 SQL Server AlwaysOn에 필요한 것과 동일합니다. 아래 링크를 참조하세요.
+
+
+  Azure 클라우드 서비스에 ILB를 추가하고 Azure Powershell을 통해 VM에 엔드포인트 443 및 445를 추가하는 것은 SQL Server AlwaysOn과 거의 동일합니다. 약간의 주의가 필요한 유일한 부분은 파일 서버 역할 IP 주소의 설정입니다. 랩 환경에서 파일 서버 역할은 원래 IP 주소 10.0.0.100으로 만들어졌습니다. 결국 ILB IP 주소 10.0.0.99로 바꿔야 했습니다. 이 작업은 SQL AlwaysOn 그룹 수신기에 대한 아래 블로그에서 찾을 수 있는 것과 동일한 set-clusterparameter 명령을 통해 수행할 수 있습니다. 다음은 파일 공유 랩 설정에서 수행된 방법에 대한 샘플입니다.
+
+
+  명령은 온-프레미스에서 로컬로 Azure Powershell을 통해 실행됩니다.
+
+  <pre class="prettyprint">$probeport="59999"
+
+  add-azureInternalLoadBalancer -internalloadbalancername ilbfsha -ServiceName fsha-cscl -Subnetname Subnet-1 -StaticVnetIPaddress 10.0.0.99
+
+  Get-AzureVM -ServiceName fsha-cscl -Name fsha-cln1 | Add-AzureEndpoint -Name "fsep1" -LBSetName "ilbsetfsha" -Protocol tcp -LocalPort 443 -PublicPort 443 -ProbePort $ProbePort -ProbeProtocol tcp -ProbeIntervalInSeconds 10 -InternalLoadBalancerName ilbfsha | Update-AzureVM
+
+  Get-AzureVM -ServiceName fsha-cscl -Name fsha-cln1 | Add-AzureEndpoint -Name "fsep2" -LBSetName "ilbsetfsha2" -Protocol tcp -LocalPort 445 -PublicPort 445 -ProbePort $ProbePort -ProbeProtocol tcp -ProbeIntervalInSeconds 10 -InternalLoadBalancerName ilbfsha | Update-AzureVM
+
+  Get-AzureVM -ServiceName fsha-cscl -Name fsha-cln2 | Add-AzureEndpoint -Name "fsep1" -LBSetName "ilbsetfsha" -Protocol tcp -LocalPort 443 -PublicPort 443 -ProbePort $ProbePort -ProbeProtocol tcp -ProbeIntervalInSeconds 10 -InternalLoadBalancerName ilbfsha | Update-AzureVM
+
+  Get-AzureVM -ServiceName fsha-cscl -Name fsha-cln2 | Add-AzureEndpoint -Name "fsep2" -LBSetName "ilbsetfsha2" -Protocol tcp -LocalPort 445 -PublicPort 445 -ProbePort $ProbePort -ProbeProtocol tcp -ProbeIntervalInSeconds 10 -InternalLoadBalancerName ilbfsha | Update-AzureVM</pre>
+
+  &nbsp;
+
+
+  명령은 위의 ILB를 설정한 후 클러스터 노드 VM 내의 Powershell을 통해 실행됩니다.
+
+  <pre class="prettyprint">$ProbePort="59999"
+
+  $fileserverresource = get-clusterresource | Where-Object { ($_.name -like "IP*10.0.0.100*" ) }
+
+  $fileserverresource | set-clusterparameter -Multiple @{"Address"="10.0.0.99";"ProbePort"=$ProbePort;"Subnetmask"="255.255.255.255";"Network"="Cluster Network 1";"OverrideAddressMatch"=1;"EnableDhcp"=0}</pre>
+
+  &nbsp;
+
+
+  Azure ILB 구성과 관련된 몇 가지 샘플 링크:
+
+
+  <a href="https://azure.microsoft.com/blog/2014/05/20/internal-load-balancing/" target="_blank">https://azure.microsoft.com/blog/2014/05/20/internal-load-balancing/</a>
+
+
+  <a href="https://azure.microsoft.com/blog/2014/10/01/sql-server-alwayson-and-ilb/" target="_blank">https://azure.microsoft.com/blog/2014/10/01/sql-server-alwayson-and-ilb/</a>
+
+
+  <a title="https://blogs.msdn.com/b/sqlalwayson/archive/2013/08/06/availability-group-listener-in-windows-azure-now-supported-and-scripts-for-cloud-only-configuration.aspx" href="https://blogs.msdn.com/b/sqlalwayson/archive/2013/08/06/availability-group-listener-in-windows-azure-now-supported-and-scripts-for-cloud-only-configuration.aspx">https://blogs.msdn.com/b/sqlalwayson/archive/2013/08/06/availability-group-listener-in-windows-azure-now-supported-and-scripts-for-cloud-only-configuration.aspx</a>
+
+  <h2>기타</h2>
+
+  <ul>
+   <li>SIOS 홈페이지에 연결: <a href="https://us.sios.com/" target="_blank">https://us.sios.com/</a></li>
+   <li>Azure Powershell을 통해 랩에서 설치 테스트</li>
+  </ul>
+
+  &nbsp;
+
+
+  테스트 환경 설정과 관련하여 내 인생을 더 쉽게 만들기 위해 도메인 컨트롤러 VM 및 도메인 가입을 포함한 두 개의 클러스터 노드 VM을 만드는 데 도움이 되는 Azure PS 스크립트를 만들었습니다. 공식 Microsoft 유틸리티가 아닙니다. 프로그래밍 스타일이나 보안에 중점을 두지 않았습니다. SIOS Datakeeper의 기능 테스트에 관한 것이었습니다. 이 아이디어는 SIOS Datakeeper를 가능한 한 많이 설치해야 하는 지점까지 모든 단계를 자동화하는 것이었습니다. 극복해야 할 몇 가지 과제가 있었고 결과와 PS 코드를 공유하기로 결정했습니다.
+
+
+  전체 SIOS Datakeeper 프로젝트는 Azure Virtual Machines의 SAP HA와 관련이 있습니다. 따라서 Microsoft SAP 엔지니어링 팀 블로그:   <a href="https://blogs.msdn.com/b/saponsqlserver/" target="_blank">Microsoft 플랫폼에서 SAP 애플리케이션 실행</a>에 약 2주 후에 이 Azure PS 샘플을 게시합니다.

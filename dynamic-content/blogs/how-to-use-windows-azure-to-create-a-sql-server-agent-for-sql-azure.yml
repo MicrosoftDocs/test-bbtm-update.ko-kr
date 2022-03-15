@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 77a22a322936a5dc04c48fb71037ad3a76e4d3b7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898365"
+Slug: how-to-use-windows-azure-to-create-a-sql-server-agent-for-sql-azure
+Title: Windows Azure를 사용하여 SQL Azure SQL Server 에이전트를 만드는 방법
+Summary: Windows Azure 작업자 역할 및 사용자 지정 코드를 사용하여 SQL Azure SQL Server 에이전트 유형 기능을 만들 수 있다는 것을 알고 계셨나요?&nbsp; 방법을 알고 싶으신가요?&nbsp; 그런 다음 블로그를 읽어야 합니다...
+Content: <p><a target="_blank" href="https://azure.microsoft.com/">Windows Azure</a> 작업자 역할 및 사용자 지정 코드를 사용하여 SQL Azure SQL Server 에이전트 유형 기능을 만들 수 있다는 것을 알고 계셨나요?&nbsp; 방법을 알고 싶으신가요?&nbsp; 그럼 당신은 SQL Azure 블로그에 블로그 게시물 시리즈를 읽어야한다, <a target="_blank" href="https://blogs.msdn.com/b/sqlazure/archive/2010/07/30/10044271.aspx">"나는 당신을 그리워 SQL Server 에이전트"</a>, 웨인 월터 베리에 의해.&nbsp; 이 세 부분으로 구성된 시리즈에서 Wayne은 Windows Azure 역할을 사용하여 SQL Server 에이전트에 대한 간단한 대체를 만드는 프로세스를 단계별로 안내하며, 오류 처리에 이르기까지 모든 것을 다룹니다.&nbsp;  그것은 좋은 읽기 그래서 그것을 체크 아웃 하 고 웨인 또는 SQL Azure 팀에 대 한 의견 또는 제안 하는 경우 <a target="_blank" href="https://blogs.msdn.com/b/sqlazure/">SQL Azure 블로그</a>에 코멘트를 게시.&nbsp; </p>

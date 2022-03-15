@@ -1,0 +1,162 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 733345883da8155ee1c39decf52e08b48b137a65
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898180"
+Slug: azure-event-hubs-and-service-bus-vnet-service-endpoints-in-preview
+Title: Azure Event Hubs 및 Service Bus VNET 서비스 엔드포인트 공개 미리 보기
+Summary: Azure Event Hubs 및 Azure Service Bus VNET 서비스 엔드포인트 미리 보기
+Content: >-
+  <p><i>이 블로그는 </i><em>Anitha Adusumilli</em><i>, 수석 프로그램 관리자, Azure 네트워킹 및 Sumeet Mittal, 프로그램 관리자, Azure 네트워킹</i>에 의해 공동 작성되었습니다.</p>
+
+
+  <p>Azure Event Hubs는 가용성 <a href="https://azure.microsoft.com/en-us/blog/azure-event-hubs-is-now-offering-support-for-availability-zones-in-preview/" target="_blank">영역</a> 과 같은 새로운 기능과 <a href="https://azure.microsoft.com/en-us/blog/azure-event-hubs-for-kafka-ecosystems-in-public-preview/" target="_blank">Apache Kafka에 대한 지원을</a> 가능하게 하는 오픈 소스에 대한 대규모 투자로 올해 매우 안정적이고 쉽게 확장할 수 있는 PaaS(데이터 스트리밍 플랫폼 as a Service) 제품입니다. <a href="https://azure.microsoft.com/en-us/blog/azure-service-bus-is-now-offering-support-for-availability-zones-in-preview/" target="_blank">가용성 영역에</a> 대한 지원을 방금 제공한 기능 클라우드 메시징 PaaS 제품인 Azure Service Bus 사용 중입니다. 현재 두 서비스 모두 Virtual Network 서비스 엔드포인트의 공개 미리 보기를 발표하고 있습니다.</p>
+
+
+  <p>이 새로운 기능은 현재 워크로드 환경에 대한 Azure 고객의 보안 및 제어를 추가합니다. 이제 VNET에서 Premium Service Bus 네임스페이스 및 표준 또는 전용 Azure Event Hubs 네임스페이스로의 트래픽을 공용 인터넷 액세스로부터 안전하게 유지하고 Azure 백본 네트워크에서 완전히 비공개로 유지할 수 있습니다.</p>
+
+
+  <p>Azure Event Hubs 및 Service Bus <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview" target="_blank">Virtual Network 서비스 엔드포인트를 사용하도록 설정한 Azure 서비스의</a> 증가하는 목록에 조인하고 있습니다.</p>
+
+
+  <h2>중요한 정보</h2>
+
+
+  <ul>
+   <li>전용 및 표준 Event Hubs 가격 책정 계획과 Premium Service Bus 함께 제공됩니다.</li>
+   <li>이 기능은 일반적인 Event Hubs 및 Service Bus 비용을 제외하고 비용 없이 제공됩니다.</li>
+   <li>모든 공용 Azure 지역에서 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <p>이 기능을 사용하려면 Azure Portal의 Virtual Network 섹션을 방문하여 가상 네트워크에 서브넷을 추가할 수 있습니다.</p>
+
+
+  <p><img alt="EH_SB_ServiceEndpoints" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/EH_SB_SE-2.png" style="width: 750px; height: 350px; margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p>그런 다음 Microsoft.EventHub 서비스 엔드포인트 또는 Microsoft.ServiceBus 엔드포인트를 사용하도록 설정할 수 있습니다.</p>
+
+
+  <p><img alt="EH_SB_ServiceEndpoints" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/EH_SB_SE1.png" style="width: 559px; height: 154px; margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p>Event Hubs 또는 Service Bus 네임스페이스 개요 블레이드에서 새 가상 네트워크 및 가상 네트워크 규칙을 만들 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b2f0a7a-076c-46ea-8635-bb75c133c805.png"><img alt="VNET1" border="0" height="646" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b9a722c-a023-4620-b55b-1a99026749bf.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="VNET1" width="1395"></a></p>
+
+
+  <p>ARM 템플릿을 사용하여 VNET 규칙을 만들 수도 있습니다. 예를 들어 VNET 규칙을 만들기 위한 Service Bus 템플릿은 다음과 같습니다.</p>
+
+
+  <pre>
+
+  {
+
+
+  &quot;$schema&quot;:&quot;https://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#&quot;,
+
+
+  &quot;contentVersion&quot;:&quot;1.0.0.0&quot;,
+
+
+  &quot;parameters&quot;:{
+
+
+  &quot;namespaceName&quot;:{
+
+
+  &quot;type&quot;:&quot;string&quot;,
+
+
+  &quot;metadata&quot;:{
+
+
+  &quot;description&quot;:&quot;Name of the namespace&quot;
+
+
+  }
+
+
+  },
+
+
+  &quot;vnetRuleName&quot;:{
+
+
+  &quot;type&quot;:&quot;string&quot;,
+
+
+  &quot;metadata&quot;:{
+
+
+  &quot;description&quot;:&quot;Name of the Authorization rule&quot;
+
+
+  }
+
+
+  },
+
+
+  &quot;virtualNetworkSubnetId&quot;:{
+
+
+  &quot;type&quot;:&quot;string&quot;,
+
+
+  &quot;metadata&quot;:{
+
+
+  &quot;description&quot;:&quot;subnet ARM Id&quot;
+
+
+  }
+
+
+  }
+
+
+  },
+
+
+  &quot;resources&quot;: [
+
+
+  {
+
+
+  &quot;apiVersion&quot;: &quot;2018-01-01-preview&quot;,
+
+
+  &quot;name&quot;: &quot;[concat(parameters(&#39;namespaceName&#39;), &#39;/&#39;, parameters(&#39;vnetRuleName&#39;))]&quot;,
+
+
+  &quot;type&quot;:&quot;Microsoft.ServiceBus/namespaces/VirtualNetworkRules&quot;,
+
+
+  &quot;properties&quot;: {
+
+
+  &quot;virtualNetworkSubnetId&quot;: &quot;[parameters(&#39;virtualNetworkSubnetId&#39;)]&quot;
+
+
+  }
+
+
+  }
+
+
+  ]
+
+
+  }</pre>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-service-endpoints" target="_blank">Service Bus 서비스 엔드포인트 및 Event Hubs 서비스 엔드포인트</a>에 대한 설명서를 참조<a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-service-endpoints" target="_blank">하세요</a>.</p>

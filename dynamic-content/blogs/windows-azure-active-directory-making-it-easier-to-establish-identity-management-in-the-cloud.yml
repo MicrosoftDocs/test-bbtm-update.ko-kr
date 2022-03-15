@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d10efd35497d5f0718f3fefff4719a706672fe1c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898227"
+Slug: windows-azure-active-directory-making-it-easier-to-establish-identity-management-in-the-cloud
+Title: 'Windows Azure Active Directory: 클라우드에서 ID 관리를 보다 쉽게 설정할 수 있도록 만들기'
+Summary: ID 관리 및 액세스 제어는 거의 모든 중요한 프로세스, 공동 작업 및 트랜잭션에 대한 앵커입니다. 이를 위해 액세스 제어가 첫 번째 중 하나라는 것은 우연이 아니었습니다...
+Content: <p>ID 관리 및 액세스 제어는 거의 모든 중요한 프로세스, 공동 작업 및 트랜잭션에 대한 앵커입니다. 이를 위해 Access Control이 Windows Azure 내에서 제공하는 최초의 클라우드 서비스 중 하나라는 것은 우연이 아니었습니다.&nbsp; 이후 몇 년 동안 고객은 매우 안정적이고 사용하기 쉬운 것 외에도 전 세계 모든 비즈니스에서 사용할 수 있는 클라우드 디렉터리에서 ID 관리를 제공해야 한다는 사실을 상기시켰습니다.</p>  <p>Windows Server Active Directory(기업의 95%가 온-프레미스 컴퓨팅 환경에서 ID를 관리하는 ID 관리 시스템)에서 수년간 얻은 고객 인사이트를 바탕으로 구축된 Windows Azure Active Directory 비즈니스용으로 빌드되고 클라우드용으로 빌드됩니다.<br><br>클라우드의 ID 관리를 전 세계의 모든 비즈니스 및 조직에서 액세스 가능하고 사용할 수 있도록 하기 위해 <strong>오늘 Windows Azure Active Directory 두 가지 주요 기능을 무료로 사용할 수 있다고 발표했습니다.</strong></p>  <ul>  <li><strong>액세스 제어</strong>는 Facebook과 같은 소비자 ID 공급자와 통합하거나 온-프레미스 Windows Server Active Directory 사용하여 중앙 집중식 인증 및 권한 부여를 제공합니다.&nbsp; Access Control을 사용할 수 있게 함으로써 사용자가 Windows Azure AD 또는 Windows Server AD 저장된 조직 자격 증명으로 로그인하거나 Microsoft 계정, Facebook, Google 또는 Twitter와 같은 인기 있는 소비자 서비스 ID 서비스를 사용하여 로그인할 수 있는 단일 애플리케이션을 만들 수 있습니다.&nbsp; 지금까지 Access Control은 트랜잭션 수에 따라 가격이 책정되었습니다. 우리는 지금 그것을 무료로 만들고 있습니다. <strong></strong></li>  <li><strong>핵심 디렉터리 &amp; 인증</strong> 을 사용하면 Single Sign-On, 사용자 및 그룹 관리, 디렉터리 동기화 및 디렉터리 페더레이션과 같은 기능을 사용할 수 있습니다. 이러한 기능은 현재 Windows Azure AD 개발자 미리 보기에서 무료이며 일반 공급에 도달한 후에도 무료로 유지됩니다. <strong></strong></li>  </ul>  <p>이러한 변경으로 Microsoft는 다른 공급업체보다 클라우드에서 ID 관리를 더 쉽게 시작할 수 있습니다.&nbsp; 현재 <a href="https://activedirectory.windowsazure.com/Signup/QuickSignup.aspx?ru=https://activedirectory.windowsazure.com&amp;ali=1" target="_blank">Windows Azure Active Directory</a> 사용해 보시고 조직의 ID를 만드는 것이 얼마나 쉬운지 경험해 보세요.</p>  <p>Active Directory에 대한 자세한 기술 정보는 Windows Azure Active Directory&rsquo;&rsquo; Preview에 향상된 기능을 게시하고 Azure에서 Windows Server Active Directory 페더레이션을 지원하는 Windows 확인하세요.</p>  <p>나는 아래 당신의 생각과 질문을 기대합니다.</p>  <p>감사합니다.</p>  <p>스티븐 마틴<br>일반 관리자<br>Azure Business Planning Windows</p>

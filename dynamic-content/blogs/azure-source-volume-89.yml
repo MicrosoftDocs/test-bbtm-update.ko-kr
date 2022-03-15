@@ -1,0 +1,175 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 830bfd5952f94564942cb285dc3b29a67a14de60
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902685"
+Slug: azure-source-volume-89
+Title: Azure.Source–Volume 89
+Summary: Azure 프리미엄 파일, Azure Blockchain, Azure Machine Learning 등의 뉴스 및 업데이트
+Content: >-
+  <p>Azure 팬 여러분, Azure.Source는 계속 진행됩니다. 매주 읽어 주셔서 감사합니다 및 업데이트 및 자세한 내용을 배울 수있는 새로운 방법을 따라 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2FAzure&amp;data=02%7C01%7CJenny.Erie%40microsoft.com%7C6bf3e7fc687b4ceadf6908d6fc308cdc%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636973682781172393&amp;sdata=KsydCnwMuaE4Z%2BFwR%2Fe0UbmPnIuDZr4K%2F6ViHGCH1NQ%3D&amp;reserved=0">@Azure</a> 해야합니다.</p>
+
+
+  <h2>지금 사용 가능</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-premium-files/">Azure 프리미엄 파일의 일반 공급 발표</a></h3>
+
+
+  <p>Azure에서 클라우드 기반 파일 공유를 최적화하는 고객을 위해 Azure 프리미엄 파일의 일반 공급에 대해 발표하게 되어 기쁩니다. Premium 파일은 Azure에서 완전히 관리되는 파일 서비스를 위해 SSD(반도체 드라이브)를 기반으로 하는 더 높은 수준의 성능을 제공합니다.</p>
+
+
+  <p>Premium 계층은 높은 처리량과 짧은 대기 시간이 필요한 IO 집약적 워크로드에 일관된 성능을 제공하도록 최적화되어 있습니다. Premium 파일 공유는 최신 SSD에 데이터를 저장하므로 데이터베이스, 컨테이너용 영구 볼륨, 홈 디렉터리, 콘텐츠 및 공동 작업 리포지토리, 미디어 및 분석, 높은 변수 및 일괄 처리 워크로드 및 성능이 중요한 엔터프라이즈 애플리케이션과 같은 다양한 워크로드에 적합합니다. 기존 표준 계층은 성능 가변성에 덜 민감한 워크로드에 대해 저렴한 비용으로 안정적인 성능을 계속 제공하며, 짧은 대기 시간이 필요하지 않은 범용 파일 스토리지, 개발/테스트, 백업 및 애플리케이션에 적합합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/leveraging-complex-data-to-build-advanced-search-applications-with-azure-search/">Azure Search를 사용하여 고급 검색 애플리케이션을 빌드하기 위해 복잡한 데이터 활용</a></h3>
+
+
+  <p>데이터는 거의 간단하지 않습니다. 모든 데이터가 행과 열의 단일 Excel 워크시트에 잘 맞을 수 있는 것은 아닙니다. 데이터에는 단일 고객의 여러 위치 및 전화 번호 또는 단일 책의 여러 저자 및 장르와 같은 다양한 관계가 있습니다. 물론 관계는 일반적으로 이보다 훨씬 더 복잡하며, AI를 활용하여 데이터를 이해하기 시작하면 관계의 복잡성에 추가되는 추가 학습이 추가됩니다. 이러한 이유로 고객이 데이터를 검색하고 탐색할 수 있도록 데이터를 평면화해야 한다고 기대하는 것은 종종 비현실적입니다. 이를 자주 들었으며 빠르게 <a href="https://feedback.azure.com/forums/263029-azure-search/suggestions/6670910-modelling-complex-types-in-indexes">가장 많이 요청된 Azure Search 기능 중 하나가</a> 되었습니다. 이 때문에 Azure Search에서 복잡한 형식 지원의 일반 공급에 대해 발표하게 되어 기뻤습니다. 이 게시물에서는 Azure Search에 추가되는 복잡한 형식과 이 기능을 사용하여 빌드할 수 있는 항목의 종류에 대해 설명합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-blockchain-workbench-1-7-0-integration-with-azure-blockchain-service/">Azure Blockchain Service와 Azure Blockchain Workbench 1.7.0 통합</a></h3>
+
+
+  <p>Microsoft Azure Blockchain Workbench 1.7.0 릴리스는 새로운 <a href="https://azure.microsoft.com/en-us/services/blockchain-service/">Azure Blockchain Service</a>와 함께 블록체인 개발 및 프로젝트를 더욱 향상시킬 수 있습니다. Azure Portal을 통해 Blockchain Workbench의 새 인스턴스를 배포하거나 <a href="https://github.com/Azure-Samples/blockchain/tree/master/blockchain-workbench/scripts">업그레이드 스크립트</a>를 사용하여 기존 배포를 1.7.0으로 업그레이드할 수 있습니다. 이 업데이트에는 Azure Blockchain Service와의 통합과 같은 향상된 기능과 Quorum과의 호환성이 향상됩니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/new-pci-dss-azure-blueprint-makes-compliance-simpler/">새로운 PCI DSS Azure Blueprint는 규정 준수를 더 간단하게 만듭니다.</a></h3>
+
+
+  <p>PCI-DSS v3.2.1 청사진의 릴리스와 함께 중요한 규정 준수 표준에 대한 두 번째 Azure Blueprint를 발표합니다. 새 청사진은 PCI(결제 카드 산업) DSS(데이터 보안 표준) 규정 준수에 대한 핵심 정책 집합을 Azure 배포 아키텍처에 매핑하여 소매업체와 같은 기업이 Azure 인프라에 기본 제공되는 규정 준수를 사용하여 새 환경을 신속하게 만들 수 있도록 합니다. <a href="https://aka.ms/getblueprints">Azure Blueprints</a> 는 고객이 표준, 패턴 및 요구 사항을 구현하고 준수하는 반복 가능한 Azure 리소스 집합을 정의할 수 있는 무료 서비스입니다. Azure Blueprints를 사용하면 고객이 대규모 마이그레이션을 위한 프로덕션 구현을 지원하도록 확장할 수 있는 관리되는 Azure 환경을 설정할 수 있습니다.</p>
+
+
+  <h2>이제 미리 보기로</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/event-driven-analytics-with-azure-data-lake-storage-gen2/">Azure Data Lake Storage Gen2를 사용하는 이벤트 기반 분석</a></h3>
+
+
+  <p>Azure Data Lake Storage Gen2와 Azure Event Grid의 통합이 미리 보기로 제공됩니다. 즉, 이제 Azure Data Lake Storage Gen2는 Event Grid에서 사용하고 웹후크, <a href="https://azure.microsoft.com/services/event-hubs/">Azure Event Hubs, Azure Functions</a> 및 Logic Apps를 엔드포인트로 사용하여 구독자로 라우팅할 수 있는 이벤트를 생성할 수 있습니다. 이 기능을 사용하면 Azure Data Lake Storage Gen2의 파일 및 디렉터리에 대한 개별 변경 내용을 자동으로 캡처하고 데이터 엔지니어가 이벤트 기반 아키텍처를 사용하는 풍부한 빅 데이터 분석 플랫폼을 만들 수 있습니다.</p>
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://blog.educative.io/how-to-deploy-your-machine-learning-model/">Azure Machine Learning 사용하여 기계 학습 모델을 배포하는 방법</a></h3>
+
+
+  <p>Azure Machine Learning Service는 클라우드에서 제공하는 광범위한 모든 규모에서 머신 러닝(Machine Learning) 모델을 학습, 배포, 자동화 및 관리하는 데 사용할 수 있는 클라우드 서비스입니다. 이 서비스는 PyTorch, TensorFlow, scikit-learn 같은 오픈 소스 기술을 완벽하게 지원하며 클래식 ML부터 딥 러닝 및 자율 학습까지 모든 종류의 기계 학습에 사용할 수 있습니다. 이 문서에서는 Azure Machine Learning 사용하여 기계 학습 모델을 배포하는 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e40714b0-cb5c-4d77-b200-9439035237e3.png"><img alt="Illustration of a cloud" border="0" height="290" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b15b963-57a3-414d-8d25-b9cee185e683.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="클라우드 그림" width="640"></a></p>
+
+
+  <h3><a href="https://dev.to/azure/azure-cloud-shell-tips-for-sysadmins-part-ii-using-the-cloud-shell-tools-to-migrate-3ka8">SysAdmins 파트 II용 Azure Cloud Shell 팁 - Cloud Shell 도구를 사용하여 마이그레이션</a></h3>
+
+
+  <p>마지막 블로그 게시물에서 <a href="https://dev.to/azure/azure-cloud-shell-tips-for-sysadmins-bash-4h2e">SysAdmins(bash)에 대한 Azure Cloud Shell 팁</a> 작성자는 <a href="https://docs.microsoft.com/azure/cloud-shell/quickstart?WT.mc_id=devto-blog-jagord">Bash용 Azure Cloud Shell</a>이 이미 빌드한 몇 가지 도구에 대해 설명했습니다.&nbsp; 이번에는 더 자세히 알아보고 도구 조합을 활용하여 UbuntuLTS Linux 서버를 만드는 방법을 보여 줍니다.&nbsp; 서버가 프로비전되면 Ansible을 사용하여 <a href="https://github.com/nodesource/distributions">nodesource 이진 리포지토리</a>에서 Node.js 배포하는 방법을 보여 줍니다.</p>
+
+
+  <h3><a href="https://techcommunity.microsoft.com/t5/ITOps-Talk-Blog/Step-By-Step-Migrating-The-Active-Directory-Certificate-Service/ba-p/697674">단계별: Active Directory 인증서 서비스를 Windows Server 2008 R2에서 2019로 마이그레이션</a></h3>
+
+
+  <p>Windows Server 2008 R2에 대한 지원 종료는 Microsoft에서 2020년 1월 14일로 예정되어 있습니다.&nbsp; 2008 R2 이전 서버 버전에서 Active Directory 인증서 서비스 마이그레이션에 대한 <a href="https://techcommunity.microsoft.com/t5/ITOps-Talk-Blog/Step-By-Step-Migrating-The-Active-Directory-Certificate-Service/ba-p/306931?WT.mc_id=ITOPSTALK-blog-abartolo">이전 게시물</a> 세부 단계에 대한 관심이 증가했다고 발표했습니다.&nbsp; ITOpsTalk.com 많은 구독자가 2008 R2에서 2016/2019로 Active Directory 인증서 서비스 마이그레이션을 반영하는 단계의 업데이트를 요청했으며 물론 우리 팀은 기꺼이 의무를 다합니다.</p>
+
+
+  <h3><a href="https://dev.to/azure/home-grown-iot-local-dev-246b">Home Grown IoT - 로컬 개발</a></h3>
+
+
+  <p>&rsquo;이제 <a href="https://dev.to/aaronpowell/home-grown-iot-data-downloader-56nc">IoT 애플리케이션</a>을 빌드하기 시작했으므로 애플리케이션&rsquo;에 대한 로컬 개발 환경에 대해 이야기할 시간을 줍니다. 하루가 끝나면 <a href="https://docs.microsoft.com/en-us/azure/iot-edge/?WT.mc_id=devto-blog-aapowell">IoT Edge</a>를 사용하여 디바이스에 배포하고 <a href="https://docs.microsoft.com/en-us/azure/iot-hub/?WT.mc_id=devto-blog-aapowell">IoT Hub</a>와의 통신을 관리하며 <a href="https://docs.microsoft.com/en-us/azure/iot-edge/how-to-vs-code-develop-module?WT.mc_id=devto-blog-aapowell">Visual Studio Code 및 Visual Studio</a> <a href="https://docs.microsoft.com/en-us/azure/iot-edge/how-to-visual-studio-develop-module?WT.mc_id=devto-blog-aapowell">2019</a>에 대한 매우 포괄적인 개발 가이드가 있습니다. 이 워크플로는 새 IoT Edge 프로젝트를 만들고, 머신에 IoT Edge를 설치하고, 이러한 방식으로 배포를 수행하는 것입니다. 이것은 Id&rsquo;가 프로덕션 및 로컬 개발의 최상의 복제를 제공하기 때문에 직접 진행하는 것이 좋습니다.</p>
+
+
+  <h3><a href="https://microsoft.github.io/AzureTipsAndTricks/blog/tip203.html">Azure CDN | 통해 정적 콘텐츠 제공 Azure Friday</a></h3>
+
+
+  <p>이전 에피소드 중 하나에서 <a href="https://microsoft.github.io/AzureTipsAndTricks/blog/tip138.html">Azure&#39;Blob Storage&lt;에서 정적 웹 사이트를 제공하는 방법을 알아보았습니다. XML:NAMESPACE PREFIX = &quot;[default] https://www.w3.org/2000/svg&quot; NS = &quot;https://www.w3.org/2000/svg&quot; /&gt; </a>. 이는 볼륨이 낮은 웹 사이트에 적합합니다. 사이트에서 더 많은 적중이 시작되면 콘텐츠를 최종 사용자에게 더 가깝게 전달하려고 했습니다. 이 에피소드에서는 Azure Content Delivery Network(CDN)를 통해 정적 콘텐츠를 제공하는 방법을 알아봅니다. Azure CDN 전 세계에 전략적으로 배치된 실제 노드에서 콘텐츠를 캐싱하여 사용자에게 높은 대역폭 콘텐츠를 신속하게 제공하기 위한 글로벌 솔루션을 개발자에게 제공합니다.</p>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3>Azure App <a href="https://channel9.msdn.com/Shows/Azure-Friday" target="_blank">ServiceAzure</a> |  금요일에 <a href="https://channel9.msdn.com/Shows/Azure-Friday/Deploy-your-Web-App-in-Windows-Containers-on-Azure-App-Service" target="_blank">Windows 컨테이너에 웹앱 배포</a></h3>
+
+
+  <p>Windows 컨테이너 지원은 Azure App Service에서 미리 보기로 제공됩니다. Azure App Service에서 Windows 컨테이너를 통해 애플리케이션을 배포하면 컨테이너 내에 종속성을 설치하고, 현재 Azure App Service 샌드박스에 의해 차단된 API를 호출하고, 컨테이너의 기능을 사용하여 더 이상 소스 코드가 없는 애플리케이션을 마이그레이션할 수 있습니다. 이 모든 기능을 통해 자동 크기 조정, 배포 슬롯 및 향상된 개발자 생산성과 같은 Azure App Service에서 사용하도록 설정된 멋진 기능 집합을 계속 사용할 수 있습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" src="https://channel9.msdn.com/Shows/Azure-Friday/Deploy-your-Web-App-in-Windows-Containers-on-Azure-App-Service/player?format=ny" width="480"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/The-Open-Source-Show/Using-Open-Data-to-Build-Family-Trees" target="_blank">열려 있는 데이터를 사용하여 패밀리 트리</a> |  빌드 <a href="https://channel9.msdn.com/Shows/The-Open-Source-Show" target="_blank">오픈 소스 쇼</a></h3>
+
+
+  <p>에리카 조이는 애슐리 맥나마라와 함께 계보 정보를 열고 쿼리할 수 있고 쉽게 구문 분석할 수 있는 비밀이 아닌 개인적인 사명을 공유합니다. 그녀는 이것이 왜 그렇게 중요하고, 일반적인 과제이며, 자신의 가계도를 다시 건설하기 위한 팁인지, 아니면 공개 데이터를 사용하여 개인적인 사명에 필요한 정보를 파악하는 데 필요한지 에 대해 조금 공유합니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" src="https://channel9.msdn.com/Shows/The-Open-Source-Show/Using-Open-Data-to-Build-Family-Trees/player?format=ny" width="480"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/On-NET/Supporting-Windows-Forms-and-WPF-in-NET-Core-3" target="_blank">.NET Core 3On .NET에서 Windows 양식 및 WPF 지원</a><a href="https://channel9.msdn.com/Shows/On-NET" target="_blank"></a> | </h3>
+
+
+  <p>.NET Core 3.0에서 데스크톱 애플리케이션을 실행하기 위한 지원을 추가하기 위해 상당한 노력을 기울이고 있습니다. 이 에피소드에서 Jeremy는 Mike Harsh와 인터뷰를 통해 Windows Forms 및 WPF 애플리케이션이 .NET Core 3.0 이상에서 잘 실행될 수 있도록 하는 일부 작업과 결정 사항에 대해 설명합니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" src="https://channel9.msdn.com/Shows/On-NET/Supporting-Windows-Forms-and-WPF-in-NET-Core-3/player?format=ny" width="480"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/5-Things/Five-Things-About-RxJS-and-Reactive-Programming" target="_blank">RxJS 및 반응형 프로그래밍</a> | 에 대한 5가지 사항 <a href="https://channel9.msdn.com/Shows/5-Things" target="_blank">5가지</a></h3>
+
+
+  <p>RxJS, 반응형 프로그래밍 및 Redux 패턴은 개발자 워크플로에 적합한 위치는 어디인가요? 지역 사회 리더를 형성하는 방법을 어디에서 배울 수 있습니까? 후드를 착용하면 더 나은 개발자가 됩니까? 아, 기억, RxJS 라이브로 이동하고 음료는 아론에 있습니다!</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" src="https://channel9.msdn.com/Shows/5-Things/Five-Things-About-RxJS-and-Reactive-Programming/player?format=ny" width="480"></iframe></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=nZ7WwTZcQbo&amp;list=PLLasX02E8BPBKgXP4oflOL29TtqTzwhxR&amp;index=2&amp;t=0s">Azure Portal | Global Search를 사용하는 방법 Azure Portal 시리즈</a></h3>
+
+
+  <p>Azure Portal &ldquo;How To&rdquo; Series의 이 비디오에서는 Azure Portal에서 Global Search를 사용하여 Azure 서비스, 리소스, 설명서 등을 찾는 방법을 알아봅니다.</p>
+
+
+  <h3><a href="https://azpodcast.azurewebsites.net/">에피소드 285 &ndash; Azure JourneyThe</a> |  <a href="https://azpodcast.azurewebsites.net/">Azure 팟캐스트</a></h3>
+
+
+  <p>Sujit, Kendall 및 신시아는 리처드 캠벨과 함께 클라우드 스토리를 전달하는 방법, 클라우드에 진입할 때 고객과의 대화, 고려해야 할 글로벌 분산 클라우드의 영향에 대해 이야기합니다. 아마 우리가 좋아하는 쇼 중 하나.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode285.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h3>산업 및 파트너</h3>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/solving-the-problem-of-duplicate-records-in-healthcare/">의료 분야에서 중복 레코드 문제 해결</a></h3>
+
+
+  <p>미국 의료 시스템이 종이에서 더 디지털화된 생태계로 계속 전환함에 따라 개인&rsquo; 의료 데이터를 올바르게 연결하는 능력은 점점 더 어려워지고 있습니다. 환자는 이동, 결혼, 이혼, 이름을 변경하고 자신의 일생 동안 여러 공급자를 방문, 각 방문은 새로운 기록을 만드는, 일관성 또는 중복 정보에 대한 가능성이 증가. 중복 의료 레코드는 여러 이름 변형, 데이터 입력 오류 및 상호 운용성&mdash; 통신&mdash; 시스템 부족으로 인해 발생하는 경우가 많습니다. 잘못된 환자 식별 및 중복 기록으로 인해 진단 오류, 중복 의료 검사, 왜곡된 보고 및 분석 및 청구 부정확성으로 이어질 수 있습니다. Azure 플랫폼은 파트너가 업계 솔루션을 향상, 확장 및 빌드할 수 있는 풍부한 서비스를 제공합니다. 여기서는 한 Microsoft 파트너 <a href="https://nextgate.com/">Nextgate</a>가 Azure를 사용하여 고유한 문제를 해결하는 방법을 설명합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/992bdc6a-e108-4cd2-93ae-73d58982fe45.png"><img alt="Diagram image of Sunlight's solution using static elements and letting user configure with dynamic parts " border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/020a7c60-d59f-4ff0-b821-ffc7acfc932e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="정적 요소를 사용하고 사용자가 동적 파트를 사용하여 구성할 수 있도록 하는 Sunlight 솔루션의 다이어그램 이미지 " width="584"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/a-solution-to-manage-policy-administration-from-end-to-end/">정책 관리를 처음부터 끝까지 관리하는 솔루션</a></h3>
+
+
+  <p>레거시 시스템은 모든 비즈니스에서 유지 관리하는 데 악몽이 될 수 있습니다. 보험 업계에서 항공사는 이러한 시스템을 유지 관리할 뿐만 아니라 새로운 비즈니스 이니셔티브를 지원하기 위해 시스템을 수정하고 확장하는 데 어려움을 겪고 있습니다. 보험 사업은 복잡하며 모든 주와 국가에는 고유한 규칙, 규정 및 인구 통계가 있습니다. 자동차 정책과 같은 신제품을 만들려면 전통적으로 다양한 프로세스, 시스템 및 인력의 조정이 필요했습니다. 일반적으로 신제품을 만드는 데 사용되는 이러한 모놀리식 시스템은 융통성이 없으며 신제품을 만드는 것은 비용이 많이 드는 제안일 수 있습니다. Azure 플랫폼은 파트너가 업계 솔루션을 향상, 확장 및 빌드할 수 있는 풍부한 서비스를 제공합니다. 여기서는 Microsoft 파트너인 <a href="https://www.sunlightsolutions.com/">Sunlight Solutions</a>가 Azure를 사용하여 고유한 문제를 해결하는 방법을 설명합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/using-natural-language-processing-to-manage-healthcare-records/">자연어 처리를 사용하여 의료 기록 관리</a></h3>
+
+
+  <p>Azure 플랫폼은 파트너가 업계 솔루션을 향상, 확장 및 빌드할 수 있는 풍부한 서비스를 제공합니다. 여기서는 의료 분야에 중점을 둔 Microsoft 파트너 SyTrue가 Azure를 사용하여 의료 조직이 효율성을 개선하고 비용을 절감하며 환자 결과를 개선할 수 있도록 하는 방법을 설명합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-cosmos-db-a-competitive-advantage-for-healthcare-isvs/">Azure Cosmos DB: 의료 ISV의 경쟁 우위</a></h3>
+
+
+  <p>CitiusTech는 고객이 의료 분야의 혁신을 가속화하는 데 도움이 되는 의료 기술 서비스의 전문 공급자입니다. CitiusTech는 Azure Cosmos DB를 사용하여 다양한 원본에서 보안된 방식으로 의료 데이터의 실시간 수집 및 이동을 간소화했습니다. 확립 된 현재 소스에서 환자 정보의 확산과 함께, 세심한 규정과 함께, 의료 시스템은 점차 거의 실시간 데이터 통합으로 이동하고있다.</p>

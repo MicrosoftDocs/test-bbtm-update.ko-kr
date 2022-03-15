@@ -1,0 +1,49 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d693030a46b2c43ce13fab4fb4e89c4a628001b0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902562"
+Slug: how-skype-modernized-its-backend-infrastructure-using-azure-cosmos-db-part-1
+Title: Skype Azure Cosmos DB를 사용하여 백 엔드 인프라를 현대화하는 방법 - 1부
+Summary: 2003년에 설립된 Skype 세계 최고의 커뮤니케이션 서비스 중 하나로 성장하여 어디서나 다른 사람들과 경험을 쉽게 공유할 수 있습니다. 2010년 Microsoft를 인수한 이후 Skype 총 사용자 40억 명, 월간 활성 사용자 3억 명 이상, 동시 사용자 4천만 명 이상으로 성장했습니다.
+Content: >-
+  <p><em>이는 조직이 실제 요구 사항을 충족하기 위해 Azure Cosmos DB를 사용하는 방법과 이러한 요구 사항에 미치는 차이&rsquo;에 대한 3부로 구성된 블로그 게시물 시리즈입니다. 이 게시물(3부 중 1부)에서는 Skype 직면한 과제에 대해 살펴봅니다. <a href="https://azure.microsoft.com/en-us/blog/how-skype-modernized-its-backend-infrastructure-using-azure-cosmos-db-part-2/">2</a>&rsquo;부에서는 Skype Azure Cosmos DB를 구현하여 백 엔드 인프라를 현대화하는 방법을 살펴봅니다. <a href="https://azure.microsoft.com/en-us/blog/how-skype-modernized-its-backend-infrastructure-using-azure-cosmos-db-part-3/"> 3</a>&rsquo;부에서는 이러한 노력으로 인한 결과를 다룹니다.</em></p>
+
+
+  <p><strong>참고:</strong> 기울임꼴/괄호 안의 주석은 작성자&#39;.</p>
+
+
+  <h2>40억 명의 사용자로 스케일링하는 것은 쉽지 않습니다&rsquo;.</h2>
+
+
+  <p>2003년에 설립된 Skype 세계&rsquo; 최고의 커뮤니케이션 서비스 중 하나로 성장하여 어디에 있든 경험을 쉽게 공유할 수 있습니다. 2010년 Microsoft를 인수한 이후 Skype 총 사용자 40억 명, 월간 활성 사용자 3억 명 이상, 동시 사용자 4천만 명 이상으로 성장했습니다.</p>
+
+
+  <p>핵심 내부 Skype 서비스 중 하나인 PCS(People Core Service)는 각 Skype 사용자에 대해 연락처, 그룹 및 관계가 저장되는 위치입니다. 이 서비스는 Skype 클라이언트가 시작될 때 호출되고, 대화를 시작할 때 사용 권한을 확인하며, 사용자&rsquo; 연락처, 그룹 및 관계가 추가되거나 변경되면 업데이트됩니다. PCS는 Microsoft Graph, Cortana, 봇 프로비저닝 및 기타 타사 서비스와 같은 다른 외부 시스템에서도 사용됩니다.</p>
+
+
+  <p>2017년 이전에는 PCS가 미국의 3개 데이터 센터에서 실행되었으며, 서비스 중&rsquo; 3분의 1에 해당하는 40억 명의 사용자가 각 데이터 센터에 표시됩니다. 각 위치에는 대규모 모놀리식 SQL Server 관계형 데이터베이스가 있었습니다. 몇 년 동안 제자리에 있었기 때문에 이러한 데이터베이스는 나이를 보여주기 시작했습니다. 특정 문제 및 통증 포함:</p>
+
+
+  <ul>
+      <li><strong>유지 관리:</strong> 데이터베이스에는 수정 및 디버그하기 어려운 긴 저장 프로시저와 함께 복잡하고 긴밀하게 결합된 거대한 코드 베이스가 있었습니다. 데이터베이스가 별도의 팀이 소유하고 가장 큰 사용자인 Skype 이상의 데이터를 포함했기 때문에 많은 상호 종속성이 있었습니다. 또한 사용자 데이터가 세 개의 서로 다른 위치에 있는 세 가지 시스템으로 분할되므로 Skype 검색하거나 업데이트하는 데 필요한 사용자&rsquo; 데이터에 따라 자체 라우팅 논리를 유지 관리해야 했습니다.</li>
+      <li><strong>과도한 대기 시간:</strong> 모든 PCS 데이터가 미국에서 제공됨에 따라 다른 지역의 Skype 클라이언트와 이를 지원하는 로컬 인프라(예: 호출 컨트롤러)는 PCS 데이터를 쿼리하거나 업데이트할 때 허용할 수 없는 대기 시간을 경험했습니다. 예를 들어 Skype 호출을 설정할 때 내부 SLA(서비스 수준 계약)가 1초 미만입니다. 그러나 사용자 A가 사용자 B를 호출할 수 있는 권한이 있는지 확인하기 위해 PCS에서 데이터를 읽는 유럽의 로컬 호출 컨트롤러가 수행한 권한 검사에 대한 왕복 시간은 필요한 1초 이내에 유럽의 두 사용자 간에 통화를 설정할 수 없습니다.</li>
+      <li><strong>안정성 및 데이터 품질:</strong> PCS에서 사용하는 데이터가 다른 시스템과 공유되었기 때문에 데이터베이스 교착 상태가 문제&mdash;였고 악화되었습니다. 데이터 품질은 사용자가 누락된 연락처, 연락처의 잘못된 데이터 등에 대해 불평하는 문제이기도 했습니다.</li>
+  </ul>
+
+
+  <p>이러한 모든 문제는 사용량이 증가함에 따라 악화되었고, 2017 년까지 고통은 받아 들일 수 없게되었습니다. 데이터베이스 트래픽이 증가함에 따라 교착 상태가 점점 더 보편화되어 서비스 중단이 발생했으며 주간 백업으로 인해 일부 데이터를 사용할 수 없게 되었습니다. &ldquo;데이터베이스 요청을 제한하는 추가 코드와 같은 모든 교착 상태를 처리하기 위한 많은 해결 방법을 마련하여 최선을 다했으며,&rdquo; Skype 팀의 수석 .NET 개발자인 Frantisek Kaduk를 회상합니다. &ldquo;문제가 계속 악화되면서 우리는 다른 일을 해야 한다는 것을 깨달았습니다.&rdquo;</p>
+
+
+  <p>또한 팀은 <a href="https://www.microsoft.com/en-us/TrustCenter/CloudServices/Azure/GDPR" target="_blank">GDPR(일반 데이터 보호 규정)</a>과 관련된 기한에 직면했습니다. 시스템이 GDPR 요구 사항을 충족하지 않았기&rsquo; 때문에 서버를 종료하기 위한 최종 기한이 있었습니다.</p>
+
+
+  <p>팀은 호환되지 않는 사용자 환경을 제공하기 위해 자체 데이터 저장소가 필요하다고 결정했습니다. 요구 사항에는 높은 처리량, 짧은 대기 시간 및 고가용성이&mdash; 포함되었으며, 이 중 사용자가 전 세계에 있는 위치에 관계없이 충족되어야 했습니다.</p>
+
+
+  <p>이벤트 기반 아키텍처는 자연스러운 적합성이지만 현재 데이터를 저장한 기본 구현 이상이어야 합니다. &ldquo;우리는 더 나은 감사 흔적이 필요했는데, 이는 또한 국가 변경&rdquo; 으로 이어지는 모든 이벤트를 저장하는 것을 의미했다고 Kaduk는 설명합니다. &ldquo;예를 들어 잘못된 클라이언트를 처리하려면 해당 일련의 이벤트를 재생할 수 있어야 합니다. 마찬가지로 서비스 간/분할 간 트랜잭션 및 기타 사후 처리 작업을 처리하려면 이벤트 기록이 필요합니다. 이벤트는 상태 변경의 시작자, 해당 변경 의도 및 그 결과를 캡처합니다.&rdquo;</p>
+
+
+  <p><em><a href="https://azure.microsoft.com/en-us/blog/how-skype-modernized-its-backend-infrastructure-using-azure-cosmos-db-part-2/">2부를 계속</a> 진행하여 Skype Azure Cosmos DB를 구현하여 백 엔드 인프라를 현대화하는 방법을 살펴봅니다.</em></p>

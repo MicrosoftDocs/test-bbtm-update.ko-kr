@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5d92416a03d86e35574f5a880febc3bc1541c0ca
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898162"
+Slug: azure-hpc-cache-reducing-latency-between-azure-and-on-premises-storage
+Title: 'Azure HPC Cache: Azure와 온-프레미스 스토리지 간의 대기 시간 감소'
+Summary: 현재는 조직이 Azure에서 크고 복잡한 HPC(고성능 컴퓨팅) 워크로드를 보다 쉽게 실행할 수 있도록 지원하는 새로운 Azure 제품인 Azure HPC Cache 서비스를 미리 봅니다.
+Content: >-
+  <p>&rsquo;오늘날 조직에서 Azure에서 크고 복잡한 HPC(고성능 컴퓨팅) 워크로드를 보다 쉽게 실행할 수 있는 새로운 Azure 제품인 Azure <a href="https://azure.microsoft.com/services/hpc-cache">HPC Cache</a> 서비스를 미리 봅니다. Azure HPC Cache는 데이터 세트 크기 및 운영 규모로 인해 기존 데이터 센터 인프라에 데이터를 테더링할 수 있는 애플리케이션의 대기 시간을 줄입니다.</p>
+
+
+  <p>온-프레미스 또는 Azure에 저장된 데이터를 사용하여 HPC 파이프라인의 크기를 조정합니다. Azure HPC Cache는 페타바이트 단위의 데이터를 이동하거나, 새 코드를 작성하거나, 기존 애플리케이션을 수정하지 않고도 Azure에서 가장 까다로운 파일 기반 HPC 워크로드를 실행할 수 있어야 하는 성능이 좋은 데이터 액세스를 제공합니다.</p>
+
+
+  <p>Microsoft Azure Marketplace를 통해 사용할 수 있는 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-avere.vfxt-template?tab=Overview">Avere vFXT for Azure</a> 애플리케이션에 익숙한 사용자를 위해 Azure HPC Cache는 Azure Portal 및 API 도구를 통해 더욱 간편한 데이터 액세스 및 간편한 관리를 통해 보다 원활한 환경에서&mdash; 유사한 기능을 제공합니다. 서비스는 Azure API를 사용하여 구동할 수 있으며 Azure HPC Cache 지원 팀에서 백 엔드에서 사전에 모니터링하고 Azure 서비스 엔지니어가 유지 관리합니다. 순 혜택이란? Azure HPC Cache 서비스는 Avere vFXT 캐싱 기술의 모든 성능 이점을 더 낮은 총 소유 비용으로 제공합니다.</p>
+
+
+  <p>Azure HPC Cache는 온-프레미스 및 Azure에 있는 Azure에서 활성 데이터를 자동으로 캐싱하여 Azure NetApp Files 또는 Azure Blob Storage 사용하여 온-프레미스 NAS(네트워크 연결 스토리지), Azure 기반 NAS 환경에 대한 대기 시간을 효과적으로 숨기는 방식으로 작동합니다. 캐시는 POSIX(이식 가능한 운영 체제 인터페이스) 호환 디렉터리 구조의 파일에 대한 NFSv3(고성능 원활한 네트워크 파일 시스템) 액세스를 제공합니다. 캐시는 여러 데이터 원본을 집계된 이름 공간으로 집계하여 클라이언트에 단일 디렉터리 구조를 표시할 수도 있습니다. 그러면 Azure 컴퓨팅 클라이언트는 모두 단일 NAS 파일러에서 시작된 것처럼 데이터에 액세스할 수 있습니다.</p>
+
+
+  <p>클라우드 버스팅 애플리케이션 또는 하이브리드 NAS 환경에 이상적인 Azure HPC Cache를 사용하면 기존 데이터 센터에 상주하는 Azure NetApp 또는 Dell EMC Isilon 배열에 데이터를 유지할 수 있습니다. 보안 및 규정 준수를 위해 클라우드 전략을 개발하는 동안 온-프레미스에 데이터를 저장해야 하는지, 아니면 단순히 온-프레미스에 너무 많은 데이터가 있기 때문에 데이터를 이동하지 않으려는&rsquo; 경우 Azure 컴퓨팅 서비스를 최대한 활용하고 나중에 수행하는 대신 더 빨리 수행할 수 있습니다. 데이터를 Azure Storage 리소스로 이동할 준비가 되거나 이동되면 파일 기반 워크로드를 쉽게 실행할 수 있습니다. Azure HPC Cache는 파이프라인을 리프트 앤 시프트하는 데 필요한 성능을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a06a7287-7eda-491d-8c98-9033480a916f.png"><img alt="Azure HPC Cache provides high-performance file caching for HPC workloads running in Azure. " border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d1d16a74-89e3-4764-b9cc-cafb3fc941a4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1023"></a>&nbsp;</p>
+
+
+  <h2>몇 달이 아닌 며칠 안에 클라우드로</h2>
+
+
+  <p>HPC 및 Azure <a href="https://azure.microsoft.com/en-us/features/azure-cyclecloud/">CycleCloud</a> HPC 워크로드 관리자용 Azure HB 및 HC 시리즈 <a href="https://azure.microsoft.com/en-us/services/virtual-machines/">VM(가상 머신)</a>과 같은 다른 Azure 서비스와 결합된 Azure HPC Cache를 사용하면 대규모 마이그레이션을 커밋하지 않고도 클라우드에서 온-프레미스 환경을 신속하게 재현하고 온-프레미스 데이터에 액세스할 수 있습니다. 또한 온-프레미스 인프라와 유사한 성능 수준에서 Azure에서 HPC 워크로드를 실행할 수 있습니다.</p>
+
+
+  <p>Azure HPC Cache 서비스는 Azure Portal에서 쉽게 시작하고 관리할 수 있습니다. 네트워크가 설정되고 온-프레미스 환경이 Azure에 IP로 연결되면 일반적으로 약 10분 안에 Azure HPC Cache 서비스를 켤 수 있습니다. Imagine IT 팀이 데이터 마이그레이션 전략을 미세 조정하고 필요한 모든 데이터 이동 및 동기화 프로세스를 완료하는 동안 몇 달을 기다리지 않고 며칠 동안 HPC 작업을 수행할 수 있습니다.</p>
+
+
+  <h2>버스트에서 올인까지: 선택, 속도</h2>
+
+
+  <p>고성능 Azure HPC Cache는 금융에서 정부, 생명 과학, 제조, 미디어, 석유 및 가스에 이르기까지 다양한 산업에서 HPC 애플리케이션에 필요한 스케일 아웃 파일 액세스를 제공합니다. 이 서비스는 1,000~50,000개의 컴퓨팅 코어에서 실행되는 읽기 작업이 많은 워크로드에 이상적으로 적합합니다. Azure HPC Cache는 Azure 청구서에 사용 요금이 포함된 요금제 서비스이므로 이를 해제&mdash;하고 측정을 중지&mdash;&rsquo;할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8ad87741-ad2a-4217-afb7-f65b0e7ef268.png"><img alt="In demanding workloads, Azure HPC Cache provides efficient file access to data stored on-premises or in Azure Blob and can be used with cloud orchestration technologies for management." border="0" height="678" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8e1dbb88-4cc7-43a0-ab13-8172427ea107.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>Azure HPC Cache를 사용하면 HPC 사용자가 Azure 리소스에 보다 간단하고 경제적으로 액세스할 수 있습니다. 수요를 충족하기 위해 계산 집약적인 워크로드에 필요한 성능을 정확하게 제공할 수 있습니다. 단기 수요에 Azure 용량을 사용하고 하이브리드 NAS 환경을 사용하도록 설정하거나 모든 클라우드로 이동하여 Azure를 영구 IT 인프라로 만듭니다. Azure HPC Cache는 고유한 비즈니스 요구 사항 및 사용 사례에 맞는 속도로 클라우드 리소스를 활용하는 데 필요한 원활한 데이터 액세스를 제공합니다.</p>
+
+
+  <h2>Azure 전문가가 유지 관리하는 입증된 기술</h2>
+
+
+  <p>Azure HPC Cache 서비스는 Avere Systems FXT Edge Filer 기본 기술을 기반으로 하는 고성능 캐싱 솔루션의 연속체에서 최신 혁신입니다. Who 이 기술을 사용합니까? 영국의 포스트 프로덕션 스튜디오 아티스트, 폴란드의 기상 연구원, 토론토의 애니메이터, 뉴욕시의 투자 은행가, 케임브리지와 스위스의&rsquo; 생물 정보학자, 그리고 가장 까다로운 HPC 사용자를 포함한 다양한 글로벌 커뮤니티. Azure HPC Cache는 이 가장 인기 있는 기술과 Microsoft Azure 팀의 기술 전문 지식 및 딥 벤치 지원을 결합합니다.</p>
+
+
+  <h2>그것을 시도 하기 위해 기다릴 수 없어&rsquo;?</h2>
+
+
+  <p>부업에서 벗어나 Azure에서 HPC 워크로드 실행을 시작할 준비가 되셨나요? 고객이 Azure HPC Cache를 미리 볼 수 있는 몇 가지 기회가 있습니다. <a href="https://aka.ms/onboard-hpc-cache">간단한 설문 조사를</a> 완료하고&rsquo; 제출을 검토하여 적합성을 검토합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/services/hpc-cache">Azure HPC Cache</a> 팀은 모든&rdquo; 임무를 위해 Microsofts&rsquo;&ldquo; Cloud를 제공하기 위해 최선을 다하고 있으며, 아이디어를 솔루션으로 신속하게 전환하는 데 사용할 수 있는 클라우드를 설계하기 위해 사용자와 협력할 것입니다. 질문이 있으세요? 전자 메일을 보내 드립니다 <a href="mailto:AzureHPCCache@microsoft.com" style="font-size: 13px;">AzureHPCCache@microsoft.com</a>.</p>

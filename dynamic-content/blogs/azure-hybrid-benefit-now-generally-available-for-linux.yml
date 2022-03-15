@@ -1,0 +1,51 @@
+### YamlMime:Yaml
+ms.openlocfilehash: daf69977d7b2712c71262c548b9729a209cab0a7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898159"
+Slug: azure-hybrid-benefit-now-generally-available-for-linux
+Title: 이제 Linux에 일반 공급된 Azure 하이브리드 혜택
+Summary: 이번 주 Kubecon 및 Open Azure Day 가상 이벤트와 동시에, 오늘 Linux 고객을 위한 Azure 하이브리드 혜택 기능의 일반 공급이 발표되어 온-프레미스 Windows Server 및 SQL Server 라이선스와 RHEL(Red Hat Enterprise Linux) 또는 SUSE Linux Enterprise 둘 다 가져올 수 있습니다.  Azure에 대한 SLES(서버) 구독
+Content: >-
+  <p>이번 주&rsquo; Kubecon 및 <a href="https://aka.ms/OpenAzureDay" target="_blank">Open Azure Day</a> 가상 이벤트와 일치하여, 오늘&rsquo; Linux 고객을 위한 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">Azure 하이브리드 혜택</a> 기능의 일반 공급에 대해 발표하여 온-프레미스 Windows Server 및 SQL Server 라이선스뿐만 아니라 RHEL(Red Hat Enterprise Linux) 또는 SUSE Linux Enterprise  Azure에 대한 SLES(서버) 구독</p>
+
+
+  <p>미리 보기 기간 동안 1,500개 이상의 Linux 가상 머신이 이미 새로운 Azure 하이브리드 혜택 기능을 사용하여 Azure로 마이그레이션되어 Azure에서 엔터프라이즈 Linux 워크로드를 실행하는 비용을 크게 줄일 수 있었습니다.</p>
+
+
+  <p>Red Hat 및 SUSE 고객이 사용할 수 있는 이전 Bring-Your-Own-Subscription 클라우드 마이그레이션 옵션을 통해 기존 RHEL 및 SLES 구독을 클라우드에서 사용할 수 있었지만, Azure 하이브리드 혜택은 Azure에 고유한 몇 가지 기능으로 이를 개선하고 엔터프라이즈 Linux 클라우드 마이그레이션을 이전보다 훨씬 쉽게 만듭니다.</p>
+
+
+  <ul>
+      <li>Azure Marketplace 또는 Azure Portal에서 사용할 수 있는 모든 Red Hat Enterprise Linux 및 SUSE Linux Enterprise Server 종량제 이미지에 적용됩니다. &rsquo;사용자 고유의 이미지를 제공할 필요가 없습니다.</li>
+      <li>원활한 배포 후 변환으로 시간을 절약할 수 있습니다.&mdash;&rsquo; 프로덕션 재배포가 필요하지 않습니다. 개념 증명 테스트 중에 사용한 종량제 이미지를 사용자 고유의 구독 요금 청구로 변환할 수 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4aff1393-14be-41ad-86a2-47b108a87f43.png"><img alt="Azure Hybrid Benefit allows for seamless subscription conversion of RHEL and SLES images with no need for downtime or redeployment." border="0" height="475" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/edd45894-9196-4676-984c-fd60fc313244.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <ul>
+      <li>자동 이미지 유지 관리, 업데이트 및 patchesMicrosoft&mdash;는 변환된 RHEL 및 SLES 이미지를 유지 관리하여 지속적인 운영 비용을 절감합니다.</li>
+      <li>Azure CLI와 통합된 사용자 인터페이스 통합의 편의를 통해 다른 Azure 가상 머신과 동일한 UI를 제공하고 확장 가능한 일괄 처리를 제공합니다.</li>
+      <li>하나의 티켓으로 Azure, Red Hat 및 SUSE에서 공동 배치된 기술 지원을 받으세요.</li>
+      <li>Azure <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disks-shared" target="_blank">공유 디스크</a> 에 대해 최근에 발표된 Red Hat 및 SUSE 지원과 결합하여 장애 조치(failover) 클러스터 및 병렬 파일 시스템&mdash;(예: 글로벌 파일 시스템)을 리프트 앤 시프트합니다.</li>
+      <li>Azure Arc와 완벽하게 호환되며, 하나의 솔루션에서 Windows, RHEL 및 SLES 서버에 대한 엔드 투 엔드 하이브리드 클라우드 운영 관리를 제공합니다.</li>
+  </ul>
+
+
+  <p><em>&ldquo;Were&rsquo;는 Red Hat Enterprise Linux를 Azure 하이브리드 Enterprise 혜택&rdquo;으로 가져오기 위해 Microsoft와 긴밀히 협력한 것을 기쁘게 생각합니다</em>. <em>&ldquo;조직이 동적 글로벌 조건에 대응하여 디지털 변환 이니셔티브를 발전함에 따라 고객이 전 세계를&rsquo; 선도하는 엔터프라이즈 Linux 플랫폼과 하이브리드 클라우드 포트폴리오의 기초를 실행하는 위치와 방법에 대한 더 많은 선택과 선택을 제공하는 것은 오늘날 특히 유용합니다.&rdquo; </em></p>
+
+
+  <p><em>&ldquo;SUSE Linux Enterprise Server용 Azure 하이브리드 혜택은 Azure&rdquo;에서 SUSE Linux를 실행할 때 공동 고객에게 향상된 유연성과 사용 편의성을 제공할 것이라고 </em>SUSE의 SVP 글로벌 채널 &amp; 클라우드 레이첼 캐시디(Rachel Cassidy)는 말했습니다.<em> &quot; SUSE Linux의 SAP와 같은 중요 업무용 워크로드 또는 고성능 컴퓨팅과 함께 사용하든 관계없이 SUSE Linux용 Azure 하이브리드 혜택은 고객이 인프라를 단순화, 현대화 및 가속화하고 Azure에서 SUSE Linux를 실행하는 데 그 어느 때보다 비용 효율적입니다.&rdquo;</em></p>
+
+
+  <p>Azure 하이브리드 혜택의 데모와 Red Hat 및 SUSE의 작동 방식을 확인하려면 다음 비디오를 확인하세요.</p>
+
+
+  <p><a href="https://www.youtube.com/watch?v=AsG4P-C07z4&amp;feature=emb_title" target="_blank"><img alt="Clickable link to the video for a demo on Azure Hybrid Benefit. This link will open in a new page. " border="0" height="409" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2f23f64c-ac36-4040-88ee-e45575fb94b4.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="724"></a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">Azure 하이브리드 혜택</a>에 대해 자세히 알아봅니다. Linux에 Azure 하이브리드 혜택이 적용되는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/azure-hybrid-benefit-linux" target="_blank">여기를 참조하세요</a>.</p>

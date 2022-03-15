@@ -1,0 +1,35 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7a28ebaa986b93e0c9cb253809aa25c105579029
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902925"
+Slug: preview-available-for-next-generation-of-azure-sql-database
+Title: 최신 버전의 Azure SQL Database 사용할 수 있는 미리 보기
+Summary: 이전에 11월에 발표된 새로운 미리 보기의 가용성은 SQL Database 서비스의 차세대를 나타내는 거의 완전한 SQL Server 엔진 호환성과 더 많은 Premium 성능을 도입합니다.
+Content: >-
+  이전에 <a href="https://azure.microsoft.com/blog/2014/11/05/preview-for-greater-sql-server-compatibility-coming-soon-to-azure-sql-database/">11월에 발표된</a> 새로운 미리 보기의 가용성은 SQL Database 서비스의 차세대를 나타내는 거의 완전한 SQL Server 엔진 호환성과 더 많은 Premium 성능을 도입합니다. 6억 개 이상의 데이터 행에 대한 내부 테스트는 현재 Premium SQL Database 비해 새 미리 보기에서 약 5배, 메모리 내 columnstore 기술을 적용할 때 최대 100배의 쿼리 성능 향상을 Premium 보여줍니다. 오늘 미리 보기의 기능은 이 새로운 서비스 아키텍처에서 고객에게 흥미로운 새로운 기능을 제공하기 위한 첫 번째 단계입니다.
+
+
+  이 미리 보기는 확장성 있는 성능, 기본 제공 지역 복제 및 복구 기능을 제공하고 첫 번째 클라우드 데이터베이스 99.99% 가동 시간 SLA를 도입하는 새로운 서비스 계층인 Basic, Standard 및 Premium 일반 공급의 모멘텀을 계속 유지합니다. 또한 9월부터 <a href="https://azure.microsoft.com/blog/2014/12/09/auditing-for-azure-sql-database-generally-available-and-with-more-troubleshooting-features/">감사를 일반 공급</a> 하고 고급 스케일 아웃을 크게 간소화하는 <a href="https://azure.microsoft.com/blog/2014/10/02/introducing-elastic-scale-preview-for-azure-sql-database/">Elastic Scale</a> 기술을 도입했습니다. 오늘날 고객은 스케일 아웃 접근 방식을 사용하여 중요 업무용 애플리케이션을 실행하는 서비스의 기능을 증명하고 있습니다. 한 고객은 최대 2,000개의 데이터베이스에서 거의 90TB의 데이터를 보유하고 있으며, 하루에 최대 380,000개의 로그인을 처리하는 반면, 다른 고객은 하루에 200만 개 이상의 로그인을 처리하는 225,000개 이상의 데이터베이스에서 20TB 이상의 데이터로 다중 테넌트 애플리케이션을 실행하고 있습니다.
+
+
+  오늘날의 미리 보기는 업계 최고의 메모리 내 기술을 클라우드로 가져오고 SQL Server 데이터베이스 애플리케이션을 Azure로의 이동을 간소화하고 고객이 더 무거운 데이터베이스 워크로드로 작업할 수 있는 기능을 크게 개선하는 새로운 기능을 제공하기 위한 여정을 계속 진행합니다. 미국 최고의 풀 서비스 부동산 제공업체 중 하나인 Weichert는 새로운 미리 보기를 적극적으로 사용하고 있습니다.
+
+  <blockquote>"우리는 ROI에 깊은 영향을 받고 중요 업무용 앱을 Azure로 마이그레이션하기 위해 최선을 다하고 있습니다. 작년에 부동산 검색 엔진인 weichert.com Azure로 이동한 후 60%의 비용 절감을 보았습니다. 전략 관점에서 볼 때, 이러한 SQL Database 서비스 업데이트는 온라인 인덱스 다시 작성 및 분할과 같은 기능을 활용하여 대규모 데이터 형식을 마이그레이션하고 사용하는 데 대한 우리의 해답입니다."<i> 간단히 말해서, 지금까지의 결과는 환상적이었습니다. &gt;2배 더 나은 성능과 이전에 SQL Server만 사용할 수 있었던 고급 기능이 이제는 중요 업무용 앱을 Azure로 계속 마이그레이션할 때 애플리케이션을 더 쉽게 작업할 수</i> 있게 되었습니다."</blockquote>
+
+  이 미리 보기의 자세한 개선 사항은 <a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-preview-whats-new/">미리 보기 시작 페이지에서</a> 사용할 수 있지만 주요 하이라이트는 다음과 같습니다.
+
+  <ul>
+      <li>병렬 쿼리(<i>Premium만 해당),</i> 테이블 분할, 온라인 인덱싱 및 걱정 없는 대규모 인덱스를 사용하여 2GB 크기 제한이 제거된 대규모 인덱스를 다시 빌드하고<i> </i>데이터베이스 명령을 변경하여 더 무거운 워크로드를 지원하도록 대규모 데이터베이스를 <b>보다 쉽게 관리할 </b>수 있습니다.</li>
+      <li>CLR, T-SQL Window 함수, XML 인덱스 및 변경 내용 추적을 사용하여 보다 강력한 애플리케이션 디자인을 구동하는 <b>주요 프로그래밍 기능 지원 </b></li>
+      <li>데이터 마트 및 소규모 분석 워크로드에 대한 메모리 내 columnstore 쿼리<i>(Premium만 해당)</i>를 지원하여 <b>최대 100배 성능 향상 </b></li>
+      <li><b>향상된 모니터링 및 문제 해결:</b> 확장된 DMV(데이터베이스 관리 뷰) 집합을 통해 확장 이벤트(XEvents) 및 100개가 넘는 새 테이블 뷰에 대한 가시성</li>
+      <li><b>새로운 S3 성능 수준: </b>표준과 Premium 간에 더 많은 가격 책정 유연성을 제공합니다. S3은 100개의 DTU와 표준 계층에서 사용할 수 있는 모든 기능을 <a href="https://azure.microsoft.com/en-us/pricing/details/sql-database/">$0.2016/시간</a> (미리 보기 중 $0.1008/시간)에 제공합니다.</li>
+  </ul>
+
+  이 미리 보기를 사용하려면 <a href="https://azure.microsoft.com/en-us/services/preview/">Azure Preview 기능 페이지</a> 또는 새 Azure Portal을 통해 등록하세요. 이 미리 보기에 등록된 데이터베이스의 가격 책정은 기본, 표준 및 Premium 일반 공급 <a href="https://azure.microsoft.com/en-us/pricing/details/sql-database/">가격 책정</a>에서 50% 할인됩니다. 하나 이상의 기본, 표준 또는 Premium 데이터베이스(웹 또는 비즈니스 없음)가 혼합된 SQL Database 서버만 이 새 미리 보기로 업그레이드할 수 있습니다.
+
+
+  Azure에서 더 강력한 SQL 기반 애플리케이션을 보다 쉽게 빌드하거나 마이그레이션하는 동시에 서비스로서의 데이터베이스 관리 이점을 얻는 데 도움이 되는 이 미리 보기를 사용해 볼 수 있어서 매우 기쁩니다.

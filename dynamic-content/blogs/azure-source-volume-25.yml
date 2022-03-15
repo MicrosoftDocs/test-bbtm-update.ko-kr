@@ -1,0 +1,204 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9e5b5830b73e2b12a5f79658a723be977056db1a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898418"
+Slug: azure-source-volume-25
+Title: Azure.Source - 볼륨 25
+Summary: 현재 미리 보기 상태, 일반 공급, 뉴스 & 업데이트 등을 포함하여 Azure에서 발생하는 작업을 최신 상태로 유지합니다.
+Content: >-
+  <p>지난 주 중 가장 큰 뉴스 항목 중 하나는 모든 글로벌 지역에서 공개 미리 보기에서 Virtual Machine 직렬 콘솔 액세스의 도착이었다. 이것은 고객이 몇 시간 동안 원했던 것이고 팀은 마침내 그것을 전달하는 것이 황홀했습니다. 아래, 당신은&#39;모든 세부 사항에 가서 작동 방식을 보여 코리와 Azure 금요일과 화요일의 블로그 게시물과 에피소드를 찾을 수 있습니다.</p>
+
+
+  <h2>이제 미리 보기로</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/virtual-machine-serial-console-access/">Virtual Machine 직렬 콘솔 액세스</a> - 가상 머신 직렬 콘솔을 사용하면 가상 머신에 양방향 직렬 콘솔에 액세스할 수 있습니다. 미리 보기는 글로벌 Azure 지역에서 사용할 수 있습니다. 이를 시도하려면 가상 머신의 <b>지원+문제 해결</b> 섹션에서 <b>직렬 콘솔(미리 보기)</b>을 찾습니다. 직렬 콘솔 액세스를 사용하려면 가상 머신에 대한 VM 기여자 이상의 권한이 있어야 합니다. 이렇게 하면 콘솔에 대한 연결이 시스템을 보호하기 위해 최고 수준의 권한으로 유지됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/transparent-data-encryption-with-azure-key-vault-configuration-checklist/">미리 보기: Azure Key Vault 구성 검사 목록</a> - Azure SQL Database 및 Data Warehouse를 사용하는 SQL Database 투명한 데이터 암호화 데이터베이스, 로그 파일 및 백업을 포함하여 디스크에 기록된 모든 데이터에 대한 TDE(투명한 데이터 암호화)를 제공하여 미사용 암호화를 제공합니다. TDE 보호기는 기본적으로 완전히 투명한 방식으로 서비스에서 관리되며, 90일마다 회전하며 백업에 액세스할 수 있도록 보관에 유지 관리됩니다. 필요에 따라 더 많은 제어를 위해 TDE 보호기의 관리를 가정할 수 있습니다. 그러나 Azure Key Vault에서 고객 관리형 키를 사용하여 Azure SQL Database TDE를 설정하기 전에 지침에 대한 이 게시물을 읽어야 합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/soft-delete-for-azure-storage-blobs-now-in-public-preview/">공개 미리 보기에서 Azure Storage Blob에 대한 일시 삭제</a> - Azure Storage Blob에 대한 일시 삭제는 공용 및 프라이빗의 모든 지역에서 사용할 수 있습니다. 일시 삭제를 설정하면 Blob 또는 Blob 스냅샷이 삭제되는 데이터를 저장하고 복구할 수 있습니다. 이 보호는 덮어쓰기의 결과로 삭제되는 Blob 데이터로 확장합니다. 애플리케이션 또는 다른 스토리지 계정 사용자가 실수로 데이터를 수정하거나 삭제할 가능성이 있는 경우 일시 삭제를 설정하는 것이 좋습니다. 일시 삭제는 데이터 보호 전략의 한 부분이며 의도하지 않은 데이터 손실을 방지할 수 있습니다.</p>
+
+
+  <h3>미리 보기로도 제공됩니다.</h3>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/updates/event-hubs-go-preview/">공개 미리 보기: Go용 Event Hubs</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/public-preview-soft-delete-for-azure-storage-blobs/">공개 미리 보기: Azure Storage Blob에 대한 일시 삭제</a></li>
+  </ul>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/announcing-azure-service-health-general-availability-configure-your-alerts-today/">Azure Service Health 일반 공급 발표 &ndash; 오늘</a> - 경고 구성 Azure Service Health는 Azure 서비스의 문제가 영향을 줄 때 지침과 지원을 제공하는 개인 설정된 대시보드입니다. 일반적인 상태 정보를 제공하는 공개 상태 페이지와 달리 Azure Service Health는 리소스에 대한 맞춤형 정보를 제공합니다. 또한 계획된 유지 관리 및 리소스의 가용성에 영향을 줄 수 있는 기타 변경 사항을 준비하는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-files-share-snapshot/">Azure Files 공유 스냅샷</a> - 의 일반 공급 발표 Azure Files 공유 스냅샷은 모든 Azure 클라우드에서 전역적으로 사용할 수 있습니다. 공유 스냅샷은 Azure Files에서 SMB(서버 메시지 블록) 공유를 증분 백업하는 방법을 제공합니다. Storage 관리자는 스냅샷을 직접 사용할 수 있으며 백업 공급자는 이제 이 기능을 활용하여 Azure Files 백업 및 복원 기능을 제품에 통합할 수 있습니다./p&gt;</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-monitor-general-availability-of-multi-dimensional-metrics-apis/">Azure Monitor&ndash; 다차원 메트릭 API</a> - 의 일반 공급은 해당 차원을 통해 Azure 메트릭을 탐색하고 심층적인 인사이트를 제공합니다. 차원은 메트릭을 추가로 분할하는 데 사용할 수 있는 이름 값 쌍 또는 특성입니다. 이러한 추가 특성은 메트릭 탐색을 보다 의미 있게 만드는 데 도움이 될 수 있습니다. 또한 Azure Monitor는 메트릭 보존 기간을 30일에서 93일로 늘려 데이터에 더 오래 액세스하고 수개월에 걸쳐 의미 있는 비교를 수행할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-sql-data-warehouse-now-generally-available-in-all-azure-regions-worldwide/">Azure SQL Data Warehouse는 이제 전 세계 모든 Azure 지역에서 일반 공급됩니다.</a> - Azure SQL Data Warehouse는 이제 일본 서부, 오스트레일리아 동부 및 인도 서부의 3개 추가 지역에서&mdash; 사용할 수 있습니다. 이러한 추가 위치는 다른 주요 클라우드 데이터 웨어하우스 공급자보다 33개 &ndash; 지역 모두에 제품 전 세계 가용성 수를 제공합니다. SQL Data Warehouse는 데이터 전반에서 SQL 기반 보기 및 빠르고 완전 관리형 페타바이트 규모의 클라우드 솔루션을 제공하는 고성능, 보안 및 규정 준수 SQL 분석 플랫폼입니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-availability-zones-now-available-for-the-most-comprehensive-resiliency-strategy/">이제 가장 포괄적인 복원력 전략에 사용할 수 있는 Azure 가용성 영역</a> - 가용성 영역의 가용성은 미국과 유럽의 일부 지역에서 시작됩니다. 가용성 영역은 Azure 지역 내에서 물리적으로 떨어진 위치입니다. 각 가용성 영역은 독립적인 전원, 냉각 및 네트워킹을 갖춘 하나 이상의 데이터 센터로 구성됩니다. 가용성 영역이 도입되면서 이제 가상 머신의 가동 시간에 대해 99.99%의 SLA(서비스 수준 계약)를 제공합니다.</p>
+
+
+  <h3>일반 공급</h3>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/updates/global-vnet-peering-general-availability/">일반 공급: 글로벌 VNet 피어링</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-azure-network-watcher-connection-monitor-in-all-public-regions/">일반 공급: 모든 공용 지역의 Azure Network Watcher 연결 모니터</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/applicationsecuritygroupsga/">일반 공급: 모든 Azure 지역의 애플리케이션 보안 그룹 </a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/azure-zrs/">일반 공급: 영역 중복 스토리지</a></li>
+  </ul>
+
+
+  <h2>뉴스 &amp; 업데이트</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/announcing-the-support-for-tags-in-cost-management-apis/">이제 비용 관리 API의 태그에 대한 지원을 사용할 수 있습니다</a>-. &rsquo;Azure 사용량 및 요금에 대한 자세한 보고를 위해 사용량 세부 정보 API 및 예산 API 모두에서 태그에 대한 지원을 발표합니다. 이 릴리스는 EA(Enterprise 계약)의 구독에 대한 태그만 지원하며, 향후 릴리스에서는 다른 구독 유형도 지원할 계획입니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/the-new-azure-load-balancer-10x-scale-increase/">새로운 Azure Load Balancer &ndash; 10배 확장 증가</a> - Azure Load Balancer TCP 및 UDP 부하 분산에서 높은 확장성, 처리량 및 짧은 대기 시간을 제공하는 네트워크 부하 분산 장치입니다. 표준 SKU는 기존 기본 SKU보다 더 심층적인 진단 기능과 함께 10배 배율의 더 많은 기능을 추가합니다. 새 제품은 초당 수백만 개의 흐름을 처리하도록 설계되었으며 더 높은 부하를 확장하고 지원하도록 빌드되었습니다. 표준 및 기본 Load Balancer 옵션은 API를 공유하며 고객에게 요구 사항에 가장 적합한 옵션을 선택하고 선택할 수 있는 몇 가지 옵션을 제공합니다.</p>
+
+
+  <p>입력에 따라 <a href="https://azure.microsoft.com/en-us/blog/create-service-fabric-clusters-visual-studio/">사용할 수</a> - 있는 Visual Studio Service Fabric 클러스터를 만들 수&#39;프로세스를 단순화하고 신속하게 처리하기 위해 Visual Studio 직접 보안 클러스터를 만드는 기능을 추가했습니다. 이 업데이트는 Visual Studio 2015용 Service Fabric 도구의 최신 릴리스와 Azure 워크로드의 일부로 Visual Studio 2017과 함께 제공되었습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/bigdl-spark-deep-learning-library-vm-now-available-on-microsoft-azure-marketplace/">이제 Microsoft Azure Marketplace에서 사용할 수 있는 BigDL Spark 딥 러닝 라이브러리 VM</a> - BigDL 딥 러닝 라이브러리는 대규모 딥 러닝 모델을 만들고 배포하기 위한 Spark 기반 프레임워크입니다. 이전에 Azure HDInsight 및 데이터 과학 VM에 배포되었지만 이제는 Azure Marketplace에서도 고정 VM 이미지로 사용할 수 있습니다. 이는 배포 복잡성을 줄이는 추가 단계를 나타냅니다.</p>
+
+
+  <h3>추가 뉴스 &amp; 업데이트</h3>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/updates/azure-sdk-go-v15/">Go용 Azure SDK v15를 사용할 수 있습니다.</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/iot-edge-march-update/">Azure IoT Edge에 대한 3월 업데이트</a></li>
+  </ul>
+
+
+  <h2>기술 콘텐츠 &amp; 교육</h2>
+
+
+  <p>Azure - <a href="https://azure.microsoft.com/en-us/blog/implementation-patterns-for-big-data-and-data-warehouse-on-azure/">에서 빅 데이터 및 데이터 웨어하우스에 대한 구현 패턴</a> 고객이 빅 데이터 및 데이터 웨어하우징 워크로드를 위해 Azure 서비스를 채택할 수 있도록 최신 데이터 웨어하우스, 빅 데이터에 대한 고급 분석 및 실시간 분석(Lambda)의 성공을 위한 참조 아키텍처인 몇 가지 일반적인 채택 패턴을 확인했습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/how-to-get-support-for-azure-iot-sdk/">Azure IoT SDK Azure IoT SDK</a> - 를 지원하면 개발자가 Azure IoT Hub 및 Azure IoT Hub Device Provisioning Service용 애플리케이션 코딩 및 배포를 쉽게 시작할 수 있습니다. SDK는 User Voice, Stack Overflow, Azure 지원 및 GitHub 문제 제출을 통해 Microsoft의 지원을 받는 프로덕션 품질 오픈 소스 프로젝트입니다.</p>
+
+
+  <p>모바일 앱을 - <a href="https://azure.microsoft.com/en-us/blog/essential-tools-and-services-for-building-mobile-apps/">빌드하기 위한 필수 도구 및 서비스</a> Azure, Visual Studio, Xamarin 및 Visual Studio App Center는 사용자가 좋아할 Android 및 iOS 앱을 빌드, 테스트, 배포 및 지속적으로 개선할 수 있는 유연하면서도 강력한 도구와 서비스를 제공합니다. 선호하는 언어 및 도구를 사용하여 강력한 클라우드 서비스를 활용하고 주문형 수백만 명의 사용자로 빠르게 확장하는 방법을 알아봅니다.</p>
+
+
+  <h2>고객 사례</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/how-catania-secures-public-data-with-azure-sql-data-warehouse/">Catania가 Azure SQL Data Warehouse를 사용하여 공용 데이터를 보호하는 방법</a> - 100만 명이 넘는 사람들에게 서비스를 제공하는 이탈리아의 카타니아 지방자치단체는 공공 서비스 운영 데이터의 간소화된 관리 및 스토리지를 구축하고자 했습니다. 또한 물리적 데이터 센터의 잠재적 손상으로부터 보호하고 서비스 연속성을 보장하고자 했습니다. Azure와 Softjam은 Commune di Catania가 자동 복구 및 사이트간 복구를 통해 지원되는 모든 보고 요구 사항에 대한 유연한 데이터 웨어하우스를 빌드하기 위해 SQL Server 및 Azure SQL DW(Azure Data Warehouse)를 사용하는 하이브리드 솔루션을 빌드하는 데 도움을 주었습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/using-artificial-intelligence-to-analyze-roads/">인공 지능을 사용하여 도로</a> - 분석 독일 가이메르스하임에 본사를 둔 EFS는 섀시 개발에서 아우디의 1위 파트너입니다. 자율 주행을 포함하여 미래 지향적인 기술을 검사하고 구현하는 데 도움이 됩니다. 이 회사는 연구 노력의 일환으로 NVIDIA Tesla P100 GPU가 제공하는 Azure NC 시리즈 가상 머신을 사용하여 도로의 고해상도 2차원 이미지를 분석하는 딥 러닝 AI 솔루션을 추진했습니다. 그 목적은 자율 주행 차량에 이러한 도로를 더 잘 이해하는 것입니다. EFS는 이 개념이 효과가 있음을 입증했으며, 이제 회사는 제품 개발을 진행할 수 있습니다. EFS에는 Azure Blob Storage에 몇 테라바이트의 데이터가 있었습니다. NVIDIAs&rsquo; Tesla P100 GPU로 구동되는 NC 시리즈 가상 머신은 해당 데이터를 빠르게 작업했습니다. 또한 Azure의 탄력성을 통해 EFS는 작업을 효과적으로 수행하는 데 필요한 유연성을 제공했습니다.</p>
+
+
+  <h2>이벤트</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/learn-from-experts-and-play-with-emerging-tech-at-microsoft-build/">전문가로부터 알아보고 Microsoft Build</a> - 에서 신흥 기술로 플레이 Microsofts&rsquo; 최대 규모의 개발자 컨퍼런스인 Microsoft Build가 모퉁이를 돌고 있으며&rsquo; 등록할 시간이 아직 있습니다. 프로그래머와 Microsoft 엔지니어들은 5월 79&ndash;일 워싱턴 주 시애틀에 모여 클라우드, AI, 혼합 현실 등에 대해&rsquo; 논의할 예정입니다. 이 행사는 놀라운 기술 세션, 영감을 주는 스피커 및 대화형 워크샵&mdash;뿐만 아니라 연결하고 축하할 충분한 시간을 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/globalazure-bootcamp-2018/">#GlobalAzure Bootcamp 2018</a> - 글로벌 Azure Bootcamp(#GlobalAzure)는 Azure에 대한 전 세계 1일 기술 학습 이벤트 시리즈입니다. 글로벌 클라우드 개발자 커뮤니티의 리더가 만들고 호스팅합니다. 이것은 최고의, 순수하고 간단한 지역 사회입니다. 그리고 당신도 가입 할 수 있습니다!</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/secure-your-backups-not-just-your-data/">세계 백업의 날: 데이터뿐만 아니라 백업을 보호하세요!</a> - 지난 주는 세계 백업의 날이었습니다. 이 게시물을 참조하여 고객이 진화하는 랜섬웨어 공격으로부터 백업을 보호하기 위해 방어를 구축할 때 백업 제품에서 찾아야 하는 주요 고려 사항과 Azure가 어떻게 도움이 될 수 있는지 살펴봅니다.</p>
+
+
+  <h2>개발자 스포트라이트</h2>
+
+
+  <p><a href="https://aka.ms/lwia/data-01">응답성이 뛰어나고 유연한 트랜잭션 앱</a> - 빌드 MyExpenses는 프런트 엔드에 AngularJS를 사용하고, 백 엔드에 Node.js, SQL Server 2017을 데이터베이스 서버로 사용합니다. 이 애플리케이션을 Azure SQL DB로 이동하고 새 기능을 활용하여 애플리케이션&#39;데이터 성능 및 보안을 개선합니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/data-02">개발을 위한 데이터: 소프트웨어에서 SaaS</a> - 로 SQL 워크로드 진화 Azure 데이터베이스 서비스(Azure SQL Database)를 사용하여 전자 상거래 소매 기반 SaaS(Software as a Service) 애플리케이션을 실습하고 빌드합니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/data-03">SQL Server Data Tools 및 Team Services</a> - 를 사용한 데이터베이스 DevOps 2017년 Visual Studio SQL Server Data Tools 사용하여 어디서나 Azure를 실행하는 SQL Server 데이터베이스를 신속하게 개발하는 방법을 알아보려면 이 세션을 시청하세요. 데이터베이스를 SQL. Visual Studio Team Services 사용하여 애플리케이션 및 데이터베이스 CI/CD 파이프라인을 자동화하는 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/gaming-07">핀볼 도마뱀(샘플 게임)</a> - 핀볼 도마뱀은 도전으로 시작했다. 새로운 Windows Mixed Reality 헤드셋의 게임 플레이 가능성과 Microsoft Azure, PlayFab 및 Unity를 사용하여 이러한 가능성을 이끌어낼 수 있는 방법을 알아보고자 했습니다. 소스 코드는 이제 GitHub 사용할 수 있습니다. 우리는 당신이 그것으로 재생, 그것을 확장하고, 그것을 자신의 만들 수 있기를 바랍니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/gaming-08">핀볼 도마뱀 게임 매뉴얼</a> - 기본 게임 아키텍처, 혼합 현실에 따른 게임 플레이 결정, Azure와 Unity 간의 통신을 설정하는 방법 또는 Mixer 및 PlayFab 서비스가 gameyoull&mdash;&rsquo;에 통합되는 방법을 확인하려는 경우 여기에 설명된 접근 방식을 찾을 수 있습니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/gaming-09">게임, 플레이&#39;모든 방법: GDC 2018의 PlayFab(실시간 분석)</a> - PlayFab의 개발자 성공 책임자인 Brendan Vanous는 라이브 게임을 위한 클라우드의 PlayFab&#39;백 엔드 플랫폼의 Real-Time Analytics에 대한 개요를 제공합니다.</p>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/KQweh7N17UQ?rel=0" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://www.youtube.com/watch?v=KQweh7N17UQ">코리 | 화요일 Azure 직렬 콘솔</a> </strong> - Corey Sanders, 회사 VP - Microsoft Azure 컴퓨팅 팀은 Azure Linux 팀의 수석 PM인 Hariharan Jayaraman과 함께 Linux 및 Windows VM에 대한 직렬 콘솔의 프라이빗 미리 보기에 대해 이야기했습니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Virtual-Machine-Serial-Console/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Virtual-Machine-Serial-Console">Azure Friday #395 | Azure Virtual Machine 직렬 콘솔</a> </strong> - Hariharan Jayaraman이 Scott Hanselman에 합류하여 Azure VM에 대한 콘솔 액세스를 허용하는 Azure Virtual Machine 직렬 콘솔에 대해 논의합니다. 이렇게 하면 OS 또는 구성 문제로 인해 중단된 상태에 있는 VM을 연결하고 복구할 수 있습니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Visual-Studio-Xamarin-Great-mobile-apps/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Visual-Studio-Xamarin-Great-mobile-apps">Azure Friday #396| Azure + Visual Studio + Xamarin = Great Mobile Apps</a> </strong> - James Montemagno는 Scott Hanselman과 함께 프런트 엔드 및 백 엔드에서 하나의 도구 집합 및 개발 언어(C#)를 사용하여 Visual Studio 및 Xamarin과 함께 클라우드에 연결된 모바일 앱을 만들어 Android, iOS 및 Windows 위한 클라우드 연결 모바일 앱을 만드는 방법을 보여 줍니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" valign="middle" width="300">
+              <p>
+              <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode222.mp3">HTML5 오디오가 지원되지 않음</audio>
+              </p>
+              </td>
+              <td>
+              <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-222-Azure-Portal-Update">Azure 팟캐스트: 에피소드 222 - Azure Portal 업데이트</a> </strong> - Azure Portal 팀의 선임 PM인 Sean Watson은 포털 디자인에 대한 생각에 대해 이야기하고 포털을 최대한 활용하기 위한 팁 &#39;팁을 공유합니다.</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td width="300">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/QWi6HvyKeAc?rel=0" width="240"></iframe></p>
+
+              <p><strong><a href="https://www.youtube.com/watch?v=QWi6HvyKeAc">Azure 팁 및 요령 - 타일을 끌어서 Azure 대시보드 사용자 지정</a></strong></p>
+              </td>
+              <td width="300">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/ZM1An0HMdHM?rel=0" width="240"></iframe></p>
+
+              <p><strong><a href="https://www.youtube.com/watch?v=ZM1An0HMdHM">Azure 팁 및 요령 - Azure 대시보드에 차트 사용자 지정 및 고정</a></strong></p>
+              </td>
+          </tr>
+      </tbody>
+  </table>

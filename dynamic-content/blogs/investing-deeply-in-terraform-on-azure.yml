@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8acf5c606b262b5d738bb2bbac1379ff7f73b646
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898582"
+Slug: investing-deeply-in-terraform-on-azure
+Title: Azure의 Terraform에 깊이 투자
+Summary: 고객이 Azure에서 배포된 애플리케이션을 늘리면서 Azure에서 DevOps 도구에 대한 관심이 증가하고 있습니다. 여러 애플리케이션에 애플리케이션을 배포하려는 고객도 있습니다.
+Content: >-
+  <p>고객이 Azure에서 배포된 애플리케이션을 늘리면서 Azure에서 DevOps 도구에 대한 관심이 증가하고 있습니다. 또한 동일한 도구를 사용하고 동일한 DevOps 환경을 사용하도록 설정하면서 하이브리드 및 다중 클라우드 배포를 포함하여 여러 환경에 애플리케이션을 배포하려는 고객도 확인합니다. 이러한 증가하는 요구를 충족하기 위해 DevOps 및 클라우드 인프라 관리 공간에서 잘 알려진 목소리인 HashiCorp와 긴밀히 협력하여 <a href="https://azure.microsoft.com/en-us/solutions/devops/terraform/" target="_blank">Terraform</a>에 대한 투자를 크게 늘리고 있음을 발표하게 되어 기쁩니다.</p>
+
+
+  <p>HashiCorp와의 파트너십은 2016년 초로 거슬러 올라가며, Packer 및 Terraform을 포함한 HashiCorps&rsquo; 포트폴리오의 여러 도구에서 Azure Resource Manager에 대한 전폭적인 지원을 제공하는 계획을 공동으로 발표했습니다. 그 이후로 고객은 Azure의 HashiCorp 지원에서 상당한 가치를 발견했습니다.</p>
+
+
+  <p>현재 파트너 관계를 확장하며 <a href="https://docs.microsoft.com/en-us/azure/container-instances/container-instances-overview" target="_blank">Azure Container</a> Instances,&rsquo; Azure <a href="https://docs.microsoft.com/en-us/azure/container-service/kubernetes/container-service-intro-kubernetes" target="_blank">Container Service</a>, <a href="https://docs.microsoft.com/en-us/azure/storage/storage-managed-disks-overview" target="_blank">Managed Disks</a>, <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-overview" target="_blank">Virtual Machine Scale Sets</a> 등을 포함하여 Terraform에서 직접 지원하는 서비스의 수가 늘어나고 있습니다. 추가적인 유연성을 제공하여 코드로서의 인프라를 표현하고 더 많은 네이티브 Microsoft Azure 서비스를 Terraform을 통해 직접 쉽게 배포할 수 있도록 합니다. <a href="https://aka.ms/terraform" target="_blank">Terraform용 Azure 공급자</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/65c02111-14d9-49a5-ae6c-4584df1c1631.png"><img alt="Screenshot_2" border="0" height="100" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b291c245-47c2-40c0-9ad6-d6034f7d1c2e.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Screenshot_2" width="369"></a></p>
+
+
+  <p>HashiCorp와의 파트너십에 대해 정말 기쁘게 생각합니다. 이 공간의 복잡성과 다양성을 지원하기에 적합합니다. 또한 고객이 Azure 및 여러 환경에서 인프라 관리를 자동화하기 위해 DevOps 원칙을 채택하는 데 도움이 되는 풍부한 제품 포트폴리오를 제공합니다.</p>
+
+
+  <p><a href="https://aka.ms/terraformdocs" target="_blank">시작</a>하려는 경우&rsquo; 오늘 Azure에서 Terraform을 사용해 보세요! 이 향상된 지원을 제공하기 위해 오픈 소스 프로젝트에서 함께 작업하면서 추가 업데이트를 계속 지켜봐 주시기 바랍니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>주변을 둘러보십시오.</p>
+
+
+  <p>코리</p>

@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4fcf31785e3075b5cc22f86020b3749d1cf41737
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902954"
+Slug: microsoft-and-citus-data-providing-the-best-postgresql-service-in-the-cloud
+Title: 'Microsoft 및 Citus 데이터: 클라우드에서 최상의 PostgreSQL 서비스 제공'
+Summary: 오늘, 기존 애플리케이션을 다시 설계할 필요 없이 PostgreSQL 데이터베이스를 확장하기 위한 혁신적인 오픈 소스 확장인 Citus Data를 인수한다고 발표했습니다. Citus Data는 여러 노드에 데이터 및 쿼리를 지능적으로 분산하여 탁월한 성능과 확장성을 제공하므로 분할이 간단해집니다.
+Content: >-
+  <p>오늘, 기존 애플리케이션을 다시 설계할 필요 없이 PostgreSQL 데이터베이스를 확장하기 위한 혁신적인 오픈 소스 확장인 Citus Data를 인수한다고 <a href="https://blogs.microsoft.com/?p=52558034">발표</a> 했습니다. Citus Data는 여러 노드에 데이터 및 쿼리를 지능적으로 분산하여 탁월한 성능과 확장성을 제공하므로 분할이 간단해집니다. Citus 데이터는 PostgreSQL에 대한 확장(포크 아님)으로 패키지되므로 고객은 PostgreSQL의 독점 구현에 비해 훨씬 더 빠른 쿼리를 통해 커뮤니티 PostgreSQL의 모든 혁신을 활용할 수 있습니다.</p>
+
+
+  <p>이 블로그에서는 Citus Data와 긴밀히 협력하여 고객에게 차별화된 PostgreSQL 제품을 제공하는 방법을 공유하고 싶습니다. PostgreSQL 데이터베이스를 Microsoft Azure 도입하는 여정의 시작부터 목표는 고객에게 클라우드에서 최고의 엔터프라이즈급 관리 PostgreSQL 서비스를 제공하는 것이었습니다. <a href="https://azure.microsoft.com/en-us/services/postgresql/">Azure Database for PostgreSQL</a>의 혁신(예: 다른 클라우드에 비해 비용의 절반 이상을 절약할 수 있는 기본 제공 고가용성) 및 컴퓨팅을 몇 초 만에 스케일 업 또는 다운할 수 있는 기능을 제공하여 고객이 워크로드 요구 사항의 변화에 쉽게 적응할 수 있도록 지원합니다. 또한 자동 튜닝과 같은 기본 제공 지능형 기능은 PostgreSQL 데이터베이스의 성능을 최대화하기 위해 사용자 지정 권장 사항 및 인사이트를 사용하여 고객이 TCO를 더욱 낮출 수 있도록 도와줍니다. 이러한 이점은 기본 제공 보안 및 규정 준수, Azure&rsquo; <a href="https://azure.microsoft.com/en-us/global-infrastructure/regions/">글로벌 도달률</a> 및 <a href="https://azure.microsoft.com/en-us/overview/azure-ip-advantage/">Azure IP 이점</a>과 함께 고객이 비즈니스 및 애플리케이션에 집중할 수 있는 더 많은 시간을 확보합니다. 이 모든 값을 커뮤니티 기반 엔진 모델과 페어링하므로 고객이 잠기지 않습니다.</p>
+
+
+  <p>Azure에서 오픈 소스 관계형 데이터베이스가 성장함에 따라 디지털 마케팅을 위한 복잡한 분석 애플리케이션부터 기계 학습 기반 IoT 애플리케이션에 이르기까지 다양하고 중요 업무용 애플리케이션 패턴을 제공하는 다양한 업계 분야의 고객으로부터 채택이 가속화되고 있습니다. 이러한 애플리케이션은 짧은 대기 시간과 높은 쿼리 처리 처리량을 요구하며 Citus Data에 대한 투자는 고성능 및 확장성 있는 분산 데이터베이스를 제공하는 강력한 가속기입니다.</p>
+
+
+  <p>PostgreSQL은 엔터프라이즈 개발자가 사랑하고 수용하는 가장 빠르게 성장하는 오픈 소스 관계형 데이터베이스 엔진 중 하나입니다. Citus Data는 PostgreSQL을 기반으로 하는 혁신적인 오픈 소스 확장으로 커뮤니티 PostgreSQL에 대한 Microsofts&rsquo; 접근 방식을 보완합니다. Citus Data 기술을 통해 Microsoft는 혁신적이고 지능적이며 안전한 Azure Database for PostgreSQL을 기반으로 고객에게 탁월한 성능을 제공하고 PostgreSQL 데이터베이스를 확장할 수 있습니다.</p>
+
+
+  <p>Microsoft에 Citus Data 팀을 환영하고 오픈 소스 커뮤니티에 기여하는 문화를 구축하게 되어 매우 기쁩니다! 우리는 개방형 PostgreSQL을 가속화하기를 기대하며, 이 기술이 고객의&rsquo; 비즈니스 요구를 어떻게 발전시키는지 확인하는 방법을 기다릴 수 없습니다&rsquo;.</p>
+
+
+  <p>이 흥미로운 개발에 대해 자세히 알아보려면 CVP Azure Data 그룹 <a href="https://blogs.microsoft.com/?p=52558034">인 Rohan Kumar의 다음 블로그 게시물을</a> 확인하세요.</p>

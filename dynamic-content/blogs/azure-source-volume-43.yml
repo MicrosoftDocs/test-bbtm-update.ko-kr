@@ -1,0 +1,226 @@
+### YamlMime:Yaml
+ms.openlocfilehash: af63e06f49e545db28d18698eef888cfd644a271
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898716"
+Slug: azure-source-volume-43
+Title: Azure.Source – 볼륨 43
+Summary: 현재 미리 보기 상태, 일반 공급, 뉴스 & 업데이트 등을 포함하여 Azure에서 발생하는 작업을 최신 상태로 유지합니다.
+Content: >-
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/announcing-public-preview-of-azure-iot-hub-manual-failover-feature/">Azure IoT Hub 수동 장애 조치(failover) 기능</a> - 의 공개 미리 보기 발표 IoT Hub 클라우드 서비스 수동 장애 조치(failover)를 통해 고객은 10분&ndash; 2시간의 RTO(복구 시간 목표)를 사용하여 IoT Hub 인스턴스를 기본 Azure 지역에서 해당 지역 쌍으로 장애 조치(failover)할 수 있습니다. IoT Hub 서비스는 지역 전체 오류 또는 확장된 중단에 대한 기본 완화로 지역 간 자동 재해 복구를 제공하며 RTO는 226 &ndash; 시간입니다. Microsoft에서 시작한 장애 조치(failover)가 제공하는 RTO에 의해 비즈니스 가동 시간 목표가 충족되지 않는 경우 수동 장애 조치(failover)를 사용하여 장애 조치(failover) 프로세스를 직접 트리거하는 것이 좋습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-monitor-aad-activity-logs-using-diagnostic-settings/">Azure Monitor: 진단 설정을</a> - 사용하여 AAD 활동 로그 라우팅 Azure Monitor 진단 설정을 사용하면 Azure 서비스에서 Azure Storage 계정, Event Hubs 네임스페이스 및/또는 Log Analytics 작업 영역의 세 가지 대상으로 로그 데이터를 스트리밍할 수 있습니다. 이렇게 하면 모든 Azure 서비스에서 데이터 보관, SIEM 도구 또는 사용자 지정 로그 처리 도구로 로그를 쉽게 라우팅할 수 있습니다. 이제 AAD 감사 및 로그인 로그를 동일한 대상으로 라우팅하여 하나의 파이프라인에서 모든 Azure 서비스 로그를 중앙 집중화할 수 있습니다.</p>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/general-availability-of-instance-size-flexibility-for-azure-reserved-virtual-machine-instances/">Azure Reserved Virtual Machine Instances에 대한 인스턴스 크기 유연성의 일반 공급</a> - Azure Reserved Virtual Machine Instances의 인스턴스 크기 유연성은 동일한 VM 그룹 내의 다른 VM(가상 머신) 크기에 예약 할인을 적용하여 예약 인스턴스 구매 및 관리를 더욱 간단하게 만드는 새로운 기능입니다. 인스턴스 크기 유연성을 사용하면 동일한 VM 그룹 내의 다른 VM 크기도 RI 할인을 받기 때문에 구매한 AZURE RI(Reserved Instances)의 이점을 얻기 위해 정확히 동일한 VM 크기를 배포할 필요가 없습니다&rsquo;.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-management-groups-now-in-general-availability/">이제 Azure 관리 그룹이 일반 공급됩니다.</a> - Azure 관리 그룹을 사용하면 구독을 구성하고 관리 그룹에 Azure Policy 및 RBAC(Role-Based Access Controls)와 같은 거버넌스 컨트롤을 적용할 수 있습니다. 관리 그룹 내의 모든 구독은 관리 그룹에 적용된 컨트롤을 자동으로 상속합니다. 기업계약, 인증 솔루션 파트너, 종량제 또는 다른 유형의 구독이 있는 경우 이 서비스는 모든 Azure 고객에게 추가 비용 없이 대규모로 엔터프라이즈급 관리를 제공합니다. 관리 그룹을 사용하면 구독을 그룹화할 수 있습니다. 또한 다른 관리 그룹을 그룹화하여 계층 구조를 구성할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/484d2c5c-d6ad-4102-981f-d36361893175.png"><img alt="Diagram showing a sample hierarchy of Azure management groups" height="343" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/484d2c5c-d6ad-4102-981f-d36361893175.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="Azure 관리 그룹의 샘플 계층 구조" width="640"></a></p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/appserviceteam/2018/07/30/linuxasega/">App Service Environment의 Linux 일반 공급 발표</a> - App Service Environment의 Linux는 Linux의 App Service와 App Service Environment의 기능을 결합합니다. Linux 고객은 App Service Environment에서 Linux 및 컨테이너화된 앱을 배포하는 이점을 활용할 수 있습니다. 이 앱은 보안 네트워크 액세스 또는 대규모로 실행되는 앱을 위해 VNet에 애플리케이션을 배포하는 데 적합합니다.</p>
+
+
+  <h3>또한 일반 공급</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-start-stop-vms-during-off-hours-in-azure-automation/">일반 공급: Azure Automation에서 근무 시간 외 VM 시작/중지</a></li>
+  </ul>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/ansible-2-6-what-s-new-for-azure/">Ansible 2.6: Azure의 새로운 기능&rsquo;</a> - Ansible 2.6의 Azure에는 가상 머신 및 네트워킹 개체의 배포 및 관리를 위한 다양한 시나리오를 지원하는 기존 모듈에 대한 17가지 이상의 향상된 기능 외에 4개의 새로운 Azure 모듈이 포함되어 있습니다. Microsoft 및 Red Hat 엔지니어링 팀은 Ansible 커뮤니티를 통해 Azure 모듈을 계속 개발하고 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/automatic-intelligent-insights-to-optimize-performance-with-sql-data-warehouse/">SQL Data Warehouse를 사용하여 성능을 최적화하는 자동 지능형 인사이트</a> - Azure SQL Data Warehouse(SQL DW)는 이제 Azure Portal 내에서 지능형 성능 인사이트를 제공합니다. 데이터 기울이기 및 최적이 아닌 테이블 통계는 선택하지 않은 상태로 두면 데이터 웨어하우스의 성능을 저하시킬 수 있는 일반적인 문제입니다. 추가 비용 없이 SQL DW는 모든 Gen2 데이터 웨어하우스에 대한 지능형 인사이트를 표시하고 Azure Advisor와 긴밀하게 통합되어 모범 사례 권장 사항을 제공합니다.</p>
+
+
+  <p>이제 Azure - Portal<a href="https://azure.microsoft.com/en-us/blog/managed-disks-migration-portal/">에서 Managed Disks 마이그레이션 사용 가능</a> PowerShell 또는 CLI 스크립트 없이 Azure Portal에서 관리되지 않는 디스크가 있는 VM을 Managed Disks로 변환합니다. Azure Managed Disks는 VM 디스크와 연결된 스토리지 계정을 관리하여 Azure IaaS VM의 디스크 관리를 간소화합니다. 필요한 디스크의 유형(표준 HDD, 표준 SSD 또는 프리미엄 SSD)과 크기만 지정하면 Azure가 알아서 디스크를 만들고 관리해줍니다.</p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/data-factory-azure-cosmos-db-connector-now-supports-upsert/">Azure Data Factory/Azure Cosmos DB 커넥터는 이제 UPSERT를 지원합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-api-management-update-aug-3/">Azure API Management 업데이트 8월 3일</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/php-minor-version-update-for-september-2018/">2018년 9월 PHP 부 버전 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/system-center-operations-manager-management-pack-to-configure-operations-management-suite/">Operations Manager 관리 팩을 System Center Operations Management Suite 구성</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/power-bi-embedded-available-in-china-cloud/">Azure 중국 클라우드에서 사용할 수 있는 Power BI Embedded</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/visual-header-control-api-power-bi-embedded/">시각적 헤더의 프로그래밍 방식 제어를 위한 Power BI Embedded API</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/log-analytics-workspaces-must-be-created-in-azure-portal/">Azure Portal에서 Log Analytics 작업 영역을 만들어야 합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/site-recovery-rollup-27/">Azure Site Recovery 업데이트 롤업 27</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/oms-linux-agent-july-2018-release-now-available/">OMS Linux 에이전트 2018년 7월 릴리스 사용 가능</a></li>
+  </ul>
+
+
+  <h2>Azure 팟캐스트</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" valign="middle" width="300">
+     <p>
+     <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode240.mp3">HTML5 오디오가 지원되지 않음</audio>
+     </p>
+     </td>
+     <td>
+     <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-240-Extreme-Azure-Automation">Azure 팟캐스트: 에피소드 240 - 익스트림 Azure Automation</a> </strong> - 응용 정보 과학을 사용하는 Azure 설계자 인 Gautam Shah는 엔터프라이즈에서 Azure Automation을 사용하여 거의 모든 것을 자동화하는 방법에 대해 설명합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>기술 콘텐츠 및 교육</h2>
+
+
+  <p>Azure 보안 - <a href="https://azure.microsoft.com/en-us/blog/experts-tips-on-hardening-security-with-azure-security/">으로 보안 강화에 대한 전문가 팁</a> Microsoft 위협 인텔리전스 센터가 Azure 및 글로벌 보안 환경을 보호하는 데 어떻게 도움이 되는지 알아봅니다. 또한 팀은 여러 지역에 걸쳐 광범위한 시각을 가지며 Azure에서 실행되는 서비스에 대한 보기를 제공합니다. 이 인사이트를 통해 팀은 일반적인 공격 패턴을 볼 수 있습니다. 이러한 패턴은 네트워크 수준, 서비스 수준, 앱 수준 또는 OS 수준에 있을 수 있습니다. 악용이 감지되는 즉시 Microsoft 위협 인텔리전스 센터는 Microsoft의 다른 팀과 협력하여 제품 및 서비스에 대한 완화를 구축합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/getting-started-with-iot-what-do-you-do-with-all-that-data/">IoT 시작: 모든 데이터로 무엇을 합니까?</a> -IoT 디바이스가 Azure IoT Hub를 통해 배포, 보안 및 프로비전되면 문제는 남아 있습니다. 모든 데이터를 어디에 보내나요? Azure IoT Hub의 역할은 각 데이터 패킷의 우선 순위를 지정하는 방법과 전송 위치를 결정하는 것입니다. 생성하는 정보를 처리하는 방법 및 라우팅 위치를 아는 것은 어려울 수 있습니다. 그러나 연결 설정이 시작되면 IoT가 비즈니스를 혁신할 수 있는 가능성을 이해하기 시작할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/real-world-example-of-optimizing-an-r-model-in-azure/">실제 예제: 정확도 향상, 기존 R 코드베이스</a> - 에 대한 학습 시간 단축 소매점은 수년 동안 제품 추천 시스템을 구축해 왔으며, 그 중 상당수는 프로그래밍 언어 R을 사용하여 구축되었습니다. 추천 시스템의 이전 구현의 경우 이러한 시스템을&rsquo; Azure로 이동하여 성능 및 확장성을 개선하는 것을 고려해야 합니다. Microsoft Machine Learning Server 기본 제공되는 MicrosoftML 및 RevoScaleR 라이브러리의 병렬 처리를 사용하여 R로 작성된 기존 권장 사항 시스템을 성공적으로 최적화하고 다시 사용하는 프로세스를 알아봅니다.</p>
+
+
+  <h2>Azure Friday</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Automate-Azure-Resources-with-Ansible/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Automate-Azure-Resources-with-Ansible">Azure Friday | Ansible Kylie Liang을 사용하여 Azure 리소스 자동화</a> </strong> 는 Lara Rubbelke와 함께 Azure에서 클라우드 프로비저닝, 구성 관리 및 애플리케이션 배포를 자동화하기 위한 오픈 소스의 간단한 IT 자동화 엔진인 Ansible을 사용하는 방법을 시연합니다.- 카일리는 또한 Azure에서 Ansible에 대한 로드맵을 공유합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/HDInsight-Fast-Interactive-Queries-with-Hive-on-LLAP/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/HDInsight-Fast-Interactive-Queries-with-Hive-on-LLAP">Azure Friday | HDInsight: LLAP Murali Krishnaprasad에서 Hive를 사용하는 빠른 대화형 쿼리</a> </strong> 는 Lara Rubbelke와 함께 Azure HDInsight 클러스터 유형인 대화형 쿼리(Hive LLAP 또는 짧은 대기 시간 분석 처리 또는 Live Long and Process라고도 함)에 대해 논의합니다.-</p>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Execute-Jars-and-Python-scripts-on-Azure-Databricks-using-Data-Factory/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Execute-Jars-and-Python-scripts-on-Azure-Databricks-using-Data-Factory">Azure Friday | Data Factory Gaurav Malhotra를 사용하여 Azure Databricks에서 Jar 및 Python 스크립트를 실행</a> </strong> 하면 Lara Rubbelke가 조인되어 Azure Databricks에서 실행되는 Jar 및 Python 스크립트를 Data Factory 파이프라인의 작업 단계로 운영할 수 있는 방법을 설명합니다.-</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>이벤트</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-data-welcomes-data-platform-summit-attendees/">Microsoft Azure Data는 Data Platform Summit 참석자를 환영합니다.</a> - 데이터 플랫폼 서밋 2018은 이번 주 방갈로르에서 열립니다. Data Platform Summit 2018은 아시아에서 유일하게 Microsoft Data Platform 및 오픈 소스에 초점을 맞춘 데이터 플랫폼 컨퍼런스입니다. 로한 쿠마르(Rohan Kumar) 기업 부사장인 Azure Data는 기조 연설을 제공하고 Microsoft의 Azure Data 팀에서 발생하는 작업을 공유하기 위해 그곳에 있을 것입니다. 이 게시물에서 Rohan은 데이터 관리의 진화를 정의하고 형성하는 주요 추세와 Microsoft가 모든 애플리케이션 및 데이터에 대해 하이브리드 클라우드에 최적화된 일관되고 글로벌 플랫폼을 제공하는 방법에 대해 설명합니다.</p>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center">
+     <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/pKG0PSNnMUE?rel=0" width="240"></iframe></p>
+
+     <p>PowerShell을 사용하여 프로덕션 사이트의 테스트에 논리 추가</p>
+     </td>
+     <td valign="top">
+     <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/FDBfGrOEWnM?rel=0" width="240"></iframe></p>
+
+     <p>Azure App Service에서 리소스 변경 방지</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/responsibilities-of-a-partner-system-integrator-in-managing-azure-cosmos-db/">Azure Cosmos DB 관리에 대한 파트너/시스템 통합자의 책임</a> - 전 세계 많은 고객이 Azure Cosmos DB를 사용하고 있습니다. 이 문서에서는 보안, 성능 관리 등과 같은 Azure Cosmos DB의 여러 영역에서 파트너가 수행할 수 있는 작업을 나열합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-consulting-offers-april/">Azure Marketplace 컨설팅 제품: 4월</a> - 올해 초, Azure Marketplace 에코시스템은 증가하는 소프트웨어 공급자 라인업에 컨설팅 제품을 추가했습니다. 4월에는 온보딩 기준을 충족하는 73개의 새로운 제품을 게시했습니다.</p>
+
+
+  <h2>The IoT Show</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-In-Action-Powering-Energy-Efficiency-with-Azure-IoT/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-In-Action-Powering-Energy-Efficiency-with-Azure-IoT">IoT 쇼 | IoT In Action - Azure IoT</a> </strong> Microsoft가 Azure IoT - 통해 스마트 에너지 및 디지털 변환 이니셔티브를 선도하는 방법에 대해 궁금한 Azure IoT 에너지 효율에 힘을 실어주시나요? 곧 출시될 Microsoft&#39;IoT In Action Webinar에서 에너지 산업이 소비자 수준과 산업 수준 모두에서 수많은 IoT 사용 사례로부터 어떻게 혜택을 받는지 알아보겠습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Inception-and-Vision/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Inception-and-Vision">IoT 쇼 | Azure IoT 시작 및 비전</a> </strong> - Azure IoT 프로그램 관리 파트너 디렉터인 Sam George는 Azure IoT 시작과 비전에 대해 모두 알려줍니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>산업</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/how-to-upgrade-your-financial-analysis-capabilities-with-azure/">금융 서비스 | Azure를 사용하여 재무 분석 기능을 업그레이드하여</a> 위험을 평가하고, 분석가가 연구를 검토하고, 경제 및 사회 상황을 모니터링하고, 규정에 대한 정보를 유지하고, 투자 환경에 대한 모델을 만드는 방법입니다.- 한마디로 분석에 입력하면 매우 복잡하고 동적인 계산을 수행하므로 엄청난 컴퓨팅 성능이 필요합니다. 권장 시스템 및 고급 아키텍처를 포함하여 은행에서 위험 그리드 컴퓨팅을 지원하고 향상시키기 위해 Microsoft Azure 사용하는 기술 개요를 알아 보세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-cloud-business-value-for-retail-and-consumer-goods-explained/">소매 | 소매 및 소비재에 대한 Azure 클라우드 비즈니스 가치는</a> 클라우드 기술이 새로운 기능을 가능하게 하고 있으며 이러한 새로운 힘이 전통적인 소매점 및 소비재 판매자의 비즈니스 모델을 방해하고 있다고 설명 - 했습니다. 클라우드는 디지털 트랜스포메이션의 핵심입니다. 더 이상 대부분의 브랜드에 &ldquo;대한 클라우드로 이동하는 시기 &ldquo;&rdquo;&rdquo; 와 &ldquo;방법은&rdquo; 더 이상 문제가 되지 않습니다. 전자 상거래 솔루션을 클라우드로 이동하는 것은 의사 결정자가 이해해야 하는 비용을 포함하는 중요한 작업입니다. 소매업이 기존 인프라를 Azure로 마이그레이션하기 위해 수행할 수 있는 경로를 살펴보세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/improve-collaborative-care-and-clinical-data-sharing-with-blockchain/">건강 및 생명 과학 | 블록체인을 통한 공동 관리 및 임상 데이터 공유</a> 개선은 건강 정보 교환을 크게 개선하는 새로운 기능을 제공합니다.- Microsoft는 환자 결과를 개선하고, 의료 비용을 절감하고, 환자 및 의료 근로자의 경험을 향상시킬 수 있는 솔루션의 이점을 극대화하기 위해 노력하고 있습니다. 블록체인을 사용하고 Microsoft Azure 실행되는 더 나은 상태 정보 교환을 위한 새로운 파트너 솔루션 및 파일럿에 대해 알아봅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9f9e8716-07b9-4103-83bb-d45fec7fdd0c.png"><img alt="Diagram showing the use of multiple blockchains for tracking data provenance" height="277" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9f9e8716-07b9-4103-83bb-d45fec7fdd0c.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="데이터 출처 추적을 위해 여러 블록체인 사용" width="640"></a></p>
+
+
+  <h2>클라우드 전문가 - 이번 주 Azure</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/VnsxXfSS7_E?rel=0" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://www.youtube.com/watch?v=VnsxXfSS7_E">Azure 이번 주 - 2018년 8</a> </strong> - 월 3일 이번 주 Azure의 Java 테마 에피소드에서 Lars는 Azure 플랫폼에 대한 네 가지 새로운 서비스인 Azure App Services의 Linux에서 실행되는 Java SE 지원, Java용 비동기 Azure Storage SDK, Azure Advisor의 새로운 권장 사항 및 Azure Blockchain Workbench에 대한 몇 가지 새로운 기능을 살펴봅니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

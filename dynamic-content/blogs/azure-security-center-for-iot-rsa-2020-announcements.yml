@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2b5a0180781dd13bb12359e39d20542522c41a1b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902696"
+Slug: azure-security-center-for-iot-rsa-2020-announcements
+Title: IoT RSA 2020용 Azure Security Center 공지 사항
+Summary: '2019년 7월에 IoT용 Azure Security Center의 일반 공급이 발표되었습니다. 그 이후로 우리는 고객과 파트너 모두에게 많은 관심을 보였습니다. '
+Content: >-
+  <p>2019년 7월에 <a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-for-the-azure-security-center-for-iot/" target="_blank"> IoT용 Azure Security Center의</a> <a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-for-the-azure-security-center-for-iot/">일반</a> 공급이 발표되었습니다. 그 이후로 우리는 고객과 파트너 모두에게 많은 관심을 보였습니다. 우리 팀은 고객에게 IoT 솔루션을 보호하기 위해 제공하는 기능을 향상시키기 위해 노력하고 있습니다. 우리 팀은 다음 주에 RSA 컨퍼런스에 참석할 준비를 하면서 Azure Security Center for IoT에 있는 새로운 기능을 공유하고 있습니다.</p>
+
+
+  <p>조직에서 중요한 장비를 연결하거나 새로운 연결된 제품을 만들어 디지털 변환을 추구함에 따라 IoT 배포는 점점 더 커지고 더 흔해질 것입니다. 실제로 <a href="https://www.idc.com/getdoc.jsp?containerId=prUS45197719" target="_blank">IDC(International Data Corporation) </a>는 IoT 지출이 2022년에 1조 달러를 초과할 때까지 IoT가 두 자릿수 속도로 계속 증가할 것으로 예상합니다. 이러한 IoT 배포가 온라인 상태가 되면 새로 연결된 디바이스는 공격자가 사용할 수 있는 공격 노출 영역을 확장하여 IoT에서 생성된 중요한 데이터를 대상으로 지정할 수 있는 기회를 만듭니다. 조직은 디바이스에서 애플리케이션 및 데이터로의 IoT 배포를 엔드투엔드 보호해야 하며, 두 배포 간의 연결도 포함해야 합니다.</p>
+
+
+  <h2>IoT용 Azure Security Center를 지정하는 이유</h2>
+
+
+  <p>IoT용 Azure Security Center는 Microsoft 및 타사 디바이스를 비롯한 전체 IoT 배포를 보호하기 위해 설계된 위협 방지 및 보안 태세 관리를 제공합니다. IoT용 Azure Security Center는 조직이 작은 센서로 IoT 배포&mdash;를 구성하는 모든 다른 구성 요소, 에지 컴퓨팅 디바이스 및 게이트웨이, Azure IoT Hub 및 컴퓨팅, 스토리지, 데이터베이스에 대한 잠재적 공격을 방지, 감지 및 수정할 수 있도록 지원하는 주요 클라우드 공급자의 첫 번째 IoT 보안 서비스입니다.  조직에서 IoT 배포에 연결하는 AI 또는 기계 학습 워크로드 이 엔드투엔드 보호는 IoT 배포를 보호하는 데 필수적입니다.</p>
+
+
+  <h2>Azure RTOS 운영 체제에 대한 지원이 추가됨</h2>
+
+
+  <p>Azure RTOS는 다중 제어 장치(MCU) 디바이스에서 포함된 실시간 IoT 애플리케이션을 개발하기 위한 포괄적인 RTOS(실시간 운영 체제) 및 라이브러리 제품군입니다. 여기에는 대부분의 주요 칩 아키텍처 및 임베디드 개발 도구에 대한 최신 지원을 제공하는 선도적인 RTOS인 Azure RTOS ThreadX가 포함되어 있습니다. IoT용 Azure Security Center는 Linux(Ubuntu, Debian) 및 Windows 10 IoT 핵심 운영 체제 외에도 Azure RTOS 운영 체제에 대한 지원을 확장합니다. Azure RTOS는 실시간 운영 체제 디바이스에 대한 일반적인 위협을 다루는 기본 제공 보안 모듈과 함께 제공됩니다. 이 제품에는 악의적인 네트워크 활동 감지, 사용자 지정 경고를 기반으로 하는 디바이스 동작 기준 조정 및 디바이스의 보안 예방 조치를 개선하는 데 도움이 되는 권장 사항이 포함됩니다.</p>
+
+
+  <h2>새 Azure Sentinel 커넥터</h2>
+
+
+  <p>정보 기술, 운영 기술 및 사물 인터넷이 수렴됨에 따라 고객은 증가하는 위협에 직면해 있습니다.</p>
+
+
+  <p>IoT용 Azure Security Center는 Azure IoT Hub 관리형 배포에서 Sentinel로 IoT 데이터 워크로드를 온보딩하는 Azure Sentinel 커넥터의 가용성을 발표합니다. 이 통합은 보안 전문가가 인공 지능 또는 고급 분석을 위해 조직 전체의 데이터와 IoT 보안 데이터를 결합할 수 있도록 Azure Sentinel의 IoT 자산에 대한 조사 기능을 제공합니다. Azure Sentinel 커넥터를 사용하면 이제 모든 IoT Hub 배포에서 경고를 모니터링하고, 잠재적 위험에 대해 조치를 수행하고, IoT 인시던트를 검사 및 심사하고, 조사를 실행하여 네트워크 내에서 공격자&#39;횡적 이동을 추적할 수 있습니다.</p>
+
+
+  <p>이 새로운 발표를 통해 Azure Sentinel은 네이티브 IoT를 지원하는 최초의 SIEM(보안 정보 및 이벤트 관리)이며, SecOps 및 분석가가 복잡한 수렴형 네트워크에서 위협을 식별할 수 있도록 합니다.</p>
+
+
+  <h2>IoT 보안 공급업체를 위한 Microsoft 지능형 보안 협회 파트너 관계 프로그램</h2>
+
+
+  <p><a href="https://www.microsoft.com/en-us/security/business/intelligent-security-association" target="_blank">Microsoft는 Microsoft 지능형 보안 협회</a>의 구성원과 협력하여 방대한 기술 풀을 활용하여 엔터프라이즈, 의료, 제조, 에너지, 건물 관리 시스템, 교통, 스마트 도시, 스마트 홈 등에서 증가하는 IoT 위협의 세계를 방어할 수 있습니다. Azure Security Center for IoT&#39;간단한 온보딩 흐름은 Attivo Networks, CyberMDX, CyberX, Firedome 및 SecuriThingsenabling&mdash;과 같은 솔루션을 연결하여 관리 및 관리되지 않는 IoT 디바이스를 보호하고, 모든 보안 경고를 보고, 보안 태세 권장 사항으로 공격 노출 영역을 줄이고, 단일 창에서 통합 보고서를 실행합니다.</p>
+
+
+  <p>IoT 보안 공급업체를 위한 <a href="https://techcommunity.microsoft.com/t5/internet-of-things/microsoft-intelligent-security-association-partnership-program/ba-p/1149719" target="_blank">Microsoft</a><a href="https://techcommunity.microsoft.com/t5/internet-of-things/microsoft-intelligent-security-association-partnership-program/ba-p/1149719" target="_blank"> 지능형 보안 협회</a> 파트너십 프로그램에 대한 자세한 내용은 <a href="https://techcommunity.microsoft.com/t5/internet-of-things/microsoft-intelligent-security-association-partnership-program/ba-p/1149719" target="_blank">기술 커뮤니티 블로그</a>를 참조하세요.</p>
+
+
+  <h2>정부 지역의 가용성</h2>
+
+
+  <p>2020년 3월 1일부터 IoT용 Azure Security Center는 USGov 버지니아 및 USGov 애리조나 지역에서 사용할 수 있습니다.</p>
+
+
+  <p>조직은 전체 IoT 솔루션을 모니터링하고, 진화하는 위협에 앞서 나가고, 위협이 되기 전에 구성 문제를 해결할 수 있습니다. Microsofts&rsquo; 보안 설계 디바이스, 서비스 및 Microsoft가 사용자 및 파트너와 공유하는 전문 지식을 결합하면 IoT용 Azure Security Center는 비즈니스 목표를 달성하는 동안 IoT의 위험을 줄이는 중요한 방법을 제공합니다.</p>
+
+
+  <p>IoT용 Azure Security Center에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/asc-for-iot/" target="_blank">설명서 페이지를</a> 참조하세요. 새로운 파트너 관계에 대해 자세히 알아보려면 <a href="https://www.microsoft.com/en-us/security/business/intelligent-security-association" target="_blank">Microsoft 지능형 보안 협회 페이지를</a> 방문하세요. IoT 보안을 활용하려면 Azure Security Center 표준으로 업그레이드합니다.</p>

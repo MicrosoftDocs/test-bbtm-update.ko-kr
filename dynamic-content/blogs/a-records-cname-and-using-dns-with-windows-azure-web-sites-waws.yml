@@ -1,0 +1,112 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a1ea6c71a5ead421200e26d108fd1257cf74d880
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899212"
+Slug: a-records-cname-and-using-dns-with-windows-azure-web-sites-waws
+Title: 레코드, CNAME 및 WINDOWS AZURE 웹 사이트(WAWS)에서 DNS 사용
+Summary: 웹 사이트를 설정할 때 게임의 중요한 부분은 사이트가 사용자 고유의 도메인 이름으로 실행되는 것입니다. 아시다시피 Windows Azure 웹 사이트에서 사이트를 호스팅하면 공유된 웹 사이트 모두에 대해 이 작업을 수행할 수 있습니다.
+Content: >-
+  웹 사이트를 설정할 때 게임의 중요한 부분은 사이트가 사용자 고유의 도메인 이름으로 실행되는 것입니다. 아시다시피, Windows Azure 웹 사이트에서 사이트를 호스팅하면 공유 계층과 표준 계층 모두에 대해 이 작업을 수행할 수 있지만, 특히 도메인 등록 기관이 매우 협조적이지 않은 경우 노련한 네트워크 엔지니어가 아닌 사용자에게는 DNS를 구성하는 것이 약간 까다로울 수 있습니다. 에 대 한 $10 년, 당신은 정말 그들이 모든 것을 드롭 하 고 당신의 집에 드라이브 기대할 수 없습니다., 오른쪽?). 이제 웹 사이트에 대한 DNS를 구성할 때 실행할 몇 가지 주요 용어 및 메커니즘을 살펴보고 모든 항목을 원활하게 실행하는 방법을 알아보세요. 다음과 같은 사항에 대해 살펴보겠습니다.
+
+  <ul>
+   <li>DNS 영역</li>
+   <li>DNS 서버</li>
+   <li>DNS 항목</li>
+   <li>CNAME 레코드</li>
+   <li>A-레코드</li>
+   <li>DNS가 업데이트하기를 기다릴 때 시간을 날아갈 수 있는 가장 좋은 종류의 피자입니다.</li>
+  </ul>
+
+  <strong><span style="text-decoration: underline;">DNS 기본 사항</span></strong>
+
+
+  도메인 이름 확인 또는 짧은 DNS는 이름을 IP 주소로 확인하는 메커니즘으로, IP 주소를 기억하지 않고 이름을 입력하여 웹 사이트로 이동할 수 있는 기능을 제공합니다. 웹 사이트가 설정되면 65.55.58.201 또는 2607:f8b0:400a:0803:0000:0000:0000:0000:0000:1006과 같은 숫자 IP 주소가 할당되지만 기억하고 입력하기 어렵기 때문에 특히 실용적이지 않습니다. DNS는 수천 대의 서버에서 제공하는 전 세계 서비스로, 방문하려는 웹 사이트의 IP를 제공하기 위해 브라우저에서 주소를 입력할 때 작동합니다. 이 프로세스를 DNS 확인이라고 합니다.
+
+
+  일반적으로 이 프로세스는 브라우저를 인식하지 않고 백그라운드에서 수행되지만 원하는 경우 수동으로 실행하고 직접 확인할 수 있습니다. 이렇게 하려면 시작 메뉴에서 CMD 창을 열고 PING 명령을 입력한 다음 웹 사이트 이름을 입력합니다. 사이트가 있는 경우 다음과 같이 해당 IP 주소가 표시됩니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2086.1.png-550x0.png"><img class="alignnone size-full wp-image-133891" alt="2086.1.png-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2086.1.png-550x0.png" width="550" height="237" /></a>
+
+
+  (표시되는 네 개의 회신이 반드시 모든 사이트에서 반환되는 것은 아닙니다. 일부는 보안 메커니즘으로 회신을 차단하지만 대괄호에 표시된 IP는 항상 기존 웹 사이트에 대해 표시됩니다.)
+
+
+  Windows Azure 웹 사이트에서 웹 사이트를 설정하는 경우(프로세스는 다른 웹 사이트 호스팅 공급자와 다를 수 있지만 지금은 핀을 배치할 예정임) Azure에서 IP 주소를 자동으로 지정하고 <strong>Azurewebsites.net</strong> 도메인에서 이름을 선택하라는 메시지가 표시됩니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/02/1108.2.png-550x0.png"><img class="alignnone size-medium wp-image-133881" alt="1108.2.png-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1108.2.png-550x0-464x369.png" width="464" height="369" /></a>
+
+
+  마법사가 완료되면 선택한 이름이 이 사이트의 IP로 확인되어야 하며 이 일치 항목이 <strong>DNS ZONE</strong>이라는 특수 데이터베이스에 저장된다는 "전달"을 받습니다. 전 세계의 모든 도메인에는 영역이 있으며 사이트의 항목은 Microsoft가 관리하는 Azurewebsites.net 영역에 저장됩니다.
+
+
+  Azure 영역에서 기본 이름을 사용하는 것은 일반적으로 테스트 및 개발에 충분하지만 사이트를 프로덕션으로 이동하면 사용자 고유의 도메인을 원할 수 있습니다. 여러 글로벌 DNS 공급자 중 하나에서 도메인 이름을 구입하여 이 프로세스를 시작합니다. 예를 들어 GoDaddy는 북미에서 더 잘 알려진 공급자 중 하나입니다... 모두 그들의 좋은 가격과 니카 패트릭 주연의 멋진 광고에 대한, 바 레파엘리와 ... 제시 헤이먼.
+
+
+  도메인 공급자에서 도메인을 구입하는 경우 해당 서버에서 DNS 영역을 만들고 DNS가 도메인을 IP로 확인해야 하므로 IP가 있는 웹 사이트가 이미 있는지 묻습니다. 그렇지 않은 경우 일반적으로 도메인에 아무 것도 없는 일부 서버의 IP 주소 또는 일부 일반 방문 페이지를 가리키는 도메인을 "주차"하는 옵션이 있습니다(도메인 공급자는 일반적으로 호스트하는 주차된 도메인을 서비스하도록 지정된 특수 서버가 있음). 이미 사이트가 있는 경우 도메인 공급자는 DNS 영역을 해당 IP로 가리킵니다(이 프로세스의 일부로 제공해야 합니다). 공급자가 IP에서 도메인을 가리키는 프로세스를 "<strong>DNS 레코드 만들기</strong>"라고 하며, 이 작업이 완료되면 레코드를 <strong>A 레코드</strong> 또는 <strong>호스트 레코드</strong>라고 합니다.
+
+
+  <strong><span style="text-decoration: underline;">Site Dynamics</span></strong>
+
+
+  Azure 웹 사이트에서 웹 사이트를 만들 때 사이트에 IP 주소가 할당됩니다. 이 문서의 앞부분에서 제공한 예제에 따라 선택한 호스트 이름에 대해 PING 명령을 실행하여 해당 IP를 식별할 수 있습니다. 원하는 경우 도메인을 구입하고 이 IP를 가리키는 A-레코드를 만들 수 있지만 새 도메인에 대해서도 Azure에 알려야 합니다. 웹 사이트가 클라우드에 저장되는 복잡한 방식 때문에 상황이 복잡해집니다.
+
+
+  기존 웹 호스팅에 비해 클라우드에 대해 매우 유용한 점은 사이트가 하나의 특정 서버에 저장되지 않는다는 것입니다. 클라우드는 동적 환경이므로 IP가 변경될 수 있으므로 DNS 처리는 다소 다릅니다. 즉, 사이트에 IP가 있고 쉽게 찾을 수 있더라도... 해당 IP에 대한 도메인 지점이 없어야 합니다. 명확히 하려면... DNS 항목을 해당 IP를 가리키도록 하드 코딩할 수 있지만 IP가 변경될 수 있으며, 이 경우 도메인은 더 이상 서버에 할당되지 않은 IP를 가리킵니다. 이러한 상황에서는 사용자가 사이트를 방문하려고 할 때 사이트에 연결할 수 없습니다. 전혀 재미 없어! 이것이 바로 CNAME이 그림에 나오는 곳입니다.
+
+
+  <strong><span style="text-decoration: underline;">CNAME 레코드</span></strong>
+
+
+  사이트의 IP가 언제든지 변경될 수 있는 이와 같은 상황에서는 DNS에 정식 <strong>이름</strong> 또는 <strong>CNAME</strong> 이라는 다소 다른 메커니즘이 있습니다. 도메인 공급자가 방금 도메인을 구입한 고객에 대한 DNS 영역을 만들 때 앞에서 설명한 대로 일반적으로 A-레코드를 만들지만 대신 CNAME 레코드를 만드는 옵션도 있습니다. CNAME 레코드는 DNS 서비스에 사이트의 도메인이 IP를 가리키지 않고 다른 URL을 가리키도록 지시합니다. 이것은 누군가가 저 알레르기 고무 오리를 얻기 위해 식료품점에 오는 것과 같고, 점원은 "기, 나는 dunno,하지만 길 건너편 바에서 도니에게 물어 ... 알 것"이라고 말했다.
+
+
+  Azure에서 사이트의 IP를 변경할 수 있으므로 CNAME을 사용하는 것이 이상적입니다. 이는 IP만큼 동적인 DNS 확인 프로세스에 미들맨을 추가하기 때문입니다. 사용자가 사용자 지정 도메인에 입력할 때 IP 대신 azurewebsites.net URL로 확인하도록 DNS에 지시합니다. 그런 다음 Azure 서버는 AZUREWEBSITES.NET URL을 IP로 확인합니다. 프로세스는 다음과 같습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/02/5224.name_.JPG-550x0.jpg"><img class="alignnone size-medium wp-image-133871" alt="5224.name.JPG-550x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5224.name_.JPG-550x0-475x369.jpg" width="475" height="369" /></a>
+
+
+  클라우드의 이름 확인 프로세스에는 더 많은 단계가 있지만 프로세스가 백그라운드에서 즉시 발생하기 때문에 사용자 또는 웹 사이트 방문자에게 영향을 주지 않습니다. 유일한 차이점은 도메인을 구매할 때 도메인에 대해 DNS를 구성해야 하는 방식입니다.
+
+
+  설정의 주요 과제는 많은 도메인 공급자가 여전히 클라우드를 사용하기 위해 이동하는 엄청난 양의 사람들과 그립에 오고 있다는 사실 때문입니다. 더 큰 공급자는 필요한 구성을 변경할 수 있도록 마법사 또는 영리한 편집 도구를 만들기 위해 이미 이동했습니다.
+
+
+  공급자에 이미 셀프 서비스 인터페이스가 있는 경우 상황이 정말 간단할 수 있습니다. 예를 들어 앞에서 언급한 GoDaddy에는 사용하기 쉬운 도메인 편집기가 있습니다. 도메인에 대한 CNAME을 추가하려면 다음 단계를 수행합니다.
+
+  <ol>
+   <li>계정에 로그인</li>
+   <li>도메인 페이지로 이동</li>
+   <li><strong>DNS 영역 파일</strong> 탭으로 전환<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5621.3.png-400x0.png"><img class="alignnone size-full wp-image-133861" alt="5621.3.png-400x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5621.3.png-400x0.png" width="399" height="338" /></a></li>
+   <li> <strong>ClickEdit</strong>:<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3542.4.png-400x0.png"><img class="alignnone size-full wp-image-133851" alt="3542.4.png-400x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3542.4.png-400x0.png" width="399" height="361" /></a></li>
+   <li>영역 편집기가 새 탭에서 열립니다. <strong>CNAME</strong> 블록 아래에서 빠른 추가를 클릭합니다 <strong>. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5037.5.png-400x0.png"><img class="alignnone size-full wp-image-133841" alt="5037.5.png-400x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5037.5.png-400x0.png" width="400" height="227" /></a>
+  </strong></li>
+   <li>별칭 www 및 Azurewebsites.net URL의 이름을 입력합니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3858.6.png-400x0.png"><img class="alignnone size-full wp-image-133831" alt="3858.6.png-400x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3858.6.png-400x0.png" width="400" height="81" /></a></li>
+   <li>화면 오른쪽 위에 있는 <strong>영역 파일 저장</strong> 을 클릭합니다. <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8473.7.png-150x0.png"><img class="alignnone size-full wp-image-133821" alt="8473.7.png-150x0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8473.7.png-150x0.png" width="150" height="47" /></a></li>
+   <li>
+  <ol>
+   <li>완료했습니다. 일반적으로 DNS가 업데이트되는 데 약 1시간이 걸리며, 업데이트가 완료되면 PING 명령을 사용하여 사용자 지정 도메인을 ping하는 경우 Azure 서버 중 하나의 이름 및 IP로 확인되는 것을 볼 수 있습니다.</li>
+  </ol>
+
+  </li>
+
+  </ol>
+
+  <strong>자세히 알아보기</strong>
+
+
+  일반적으로 사이트로 이동하려는 경우 <a href="https://www.createhive.com/">www.createhive.com</a> 같은 URL을 입력합니다. 그러나 때때로 WWW 접두사로 시작하지 않는 사이트를 볼 수 있습니다. 실제로 대부분의 사이트에서는 "createhive.com" 같은 도메인을 입력하기만 하면 사이트에 연결할 수 있습니다. 이와 같은 요청을 서비스하려면 도메인에 사이트의 "루트"를 가리키는 특수 DNS 레코드가 있어야 합니다(예: 접두사 없이 해당 이름). 아쉽게도 이와 같은 CNAME 레코드를 가질 수 없으며 이를 위해 특별한 조치를 취해야 합니다. <a href="https://azure.microsoft.com/en-us/develop/net/common-tasks/custom-dns-web-site/">이 내용은 이 문서의</a> <strong>도메인 이름에 대한 A 레코드 구성에서</strong> 설명합니다. 이 내용은 향후 블로그 게시물에서 좀 더 자세히 설명하겠습니다. 기대해 주세요.
+
+
+  <strong>요약</strong>
+
+
+  위에서 설명한 프로세스는 대부분의 사람들이 도메인을 구입하거나 매일 사이트를 이동하지 않기 때문에 거의 수행하지 않는 프로세스입니다. 이후 참조를 위해 이 가이드를 저장하는 것이 좋습니다. 앞서 설명한 것처럼 도메인 공급자는 CNAME 레코드를 설정하기 위한 다른 메커니즘이나 절차를 사용할 수 있으므로 이를 탐색하고 잘 알아두는 것이 좋습니다.
+
+
+  &nbsp;

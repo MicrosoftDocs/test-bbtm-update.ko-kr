@@ -1,0 +1,74 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 35bf4d890bb06597463eea59b527efb168000899
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898698"
+Slug: best-practices-in-migrating-sap-applications-to-azure-part-2
+Title: SAP 애플리케이션을 Azure로 마이그레이션하는 모범 사례 – 2부
+Summary: SAP 고객이 Azure 플랫폼의 속도와 민첩성을 경험할 수 있는 일반적인 시나리오는 온-프레미스에서 실행되는 SAP Business Suite에서 클라우드의 SAP S/4HANA로 마이그레이션하는 기능입니다.
+Content: >-
+  <p><em>SAP를 Azure로 마이그레이션하는 모범 사례에 대한 3부로 구성된 블로그 게시물 시리즈의 두 번째 블로그입니다.</em></p>
+
+
+  <h2>SAP Business Suite에서 SAP S/4HANA로의 여정</h2>
+
+
+  <p>SAP 고객이 Azure 플랫폼의 속도와 민첩성을 경험할 수 있는 일반적인 시나리오는 온-프레미스에서 실행되는 SAP Business Suite에서 클라우드의 SAP S/4HANA로 마이그레이션하는 기능입니다. 이 시나리오는 2단계 프로세스입니다. 첫 번째 단계는 ERP(엔터프라이즈 리소스 계획) 온-프레미스에서 Azure의 HANA의 Suite로 마이그레이션한 다음 HANA의 Suite에서 S/4HANA로 변환하는 것입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1c547a05-60e4-41d1-a600-aeae4ac5d301.png"><img alt="Diagram of the journey to SAP on Azure " border="0" height="1100" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2d1bcd26-ded9-4807-946f-428fbed95c2b.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure에서 SAP로의 여정 " width="2122"></a></p>
+
+
+  <p>이러한 마이그레이션 프로젝트의 대상으로 클라우드를 사용하면 인프라 장비에 대한 수백만 달러의 선불 비용을 절감할 수 있으며, 인프라의 가장 복잡한 구성 요소가 이미 설치되어 있고 필요할 때 쉽게 프로비전할 수 있으므로 프로젝트 일정에서 약 12~16주 정도 면도할 수 있습니다. RFP(제안 요청) 프로세스를 거치거나, 메모리가 큰 고가의 서버를 조달하거나, 잠재적으로 스토리지 배열, 네트워크 스위치, 백업 어플라이언스 및 기타 데이터 센터 개선 사항과 같은 5년 수명만 있는 전용 어플라이언스를 조달하는 데 걸리는 시간을 살펴보면 이러한 시간 절감이 어디에서 오는지 확인할 수 있습니다. SAP에서 요구하는 대로 맞춤형 TDI(데이터 센터 통합) 표준을 기반으로 S4/HANA를 배포할 수 있는 전문 교육 팀과 관련된 시간과 비용은 말할 것도 없습니다. 이는 컨설팅 회사인 Alegri가 Azure에서 S/4HANA로 마이그레이션하는 동안 겪은 것과 동일한 장애물입니다. 그들의 경험에 대한 자세한 내용은 Alegri&#39;고객 이야기, &ldquo;<a href="https://customers.microsoft.com/en-us/story/alegri-azure-virtual-machine-storage-security-center-germany" target="_blank">부담없이 현대 기업 관리를</a> 참조하세요.&rdquo;</p>
+
+
+  <p>마이그레이션을 계획하는 동안 모든 작업, 마일스톤, 종속성 및 이해 관계자가 식별되는 견고한 프로젝트 계획을 수립하려고 합니다. 또한 정의된 거버넌스 모델 및 어떤 그룹이 어떤 작업을 소유하는지 보여주는 RACI 차트를 원할 것입니다. 이 크기의 프로젝트에는 여러 내부 및 외부 팀 간에 움직이는 부분과 종속성이 너무 많습니다. 거버넌스의 제자는 반드시 해야 합니다.</p>
+
+
+  <p>실제 실행을 시작할 때는 일반적으로 현재 사용 중인 버전과 관련된 모든 SAP 필수 구성 요소를 식별하려고 합니다. 대규모 SAP 마이그레이션 프로젝트는 일반적으로 동시에 여러 병렬 작업이 진행됩니다. Azure의 인프라 디자인이 SAPs&rsquo; 지원 매트릭스를 완벽하게 준수하는지 확인하려고 합니다. 이렇게 하려면 먼저 Azure,&nbsp; <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/sap-deployment-checklist" target="_blank">Azure&#39;SAP 배포 검사 목록</a> 및 PAM(<a href="https://support.sap.com/en/release-upgrade-maintenance.html" target="_blank">제품 가용성 매트릭스</a>)<a href="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/sap/sap-s4hana" target="_blank">에 대한 SAP 설명서</a> 및 배포 가이드를 검토합니다. 초기 가로 디자인 작업을 수행하는 동안&rsquo; 기본 관리자는 SAP Business Suite 시스템, S/4HANA 크기 조정 및 업그레이드를 시작하기 전에 필요한 기타 S/4 필수 구성 요소에서 레거시 사용자 지정 코드의 영향을 확인하는 준비 검사를 실행할 수 있기 때문에 좋은 시작점입니다. &rsquo;디자인을 완료하기 전에 발견된 새 항목을 함께 그룹화합니다.</p>
+
+
+  <p>다음은 Azure의 인프라 배포입니다. 초기 배포는 최소이며 초기 샌드박스 및 개발 계층을 지원하기에 충분한 인프라입니다. 이 상태의 요구 사항은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>Azure 구독</li>
+   <li>설정된 VPN 연결 또는 Express 경로</li>
+   <li>배포된 Azure 네트워크(<a href="https://docs.microsoft.com/en-us/cli/azure/network/vnet?view=azure-cli-latest" target="_blank">VNet 및 서브넷</a>) 및 보안 구성(<a href="https://docs.microsoft.com/en-us/cli/azure/network/nsg?view=azure-cli-latest" target="_blank">네트워크 보안 그룹</a>)</li>
+   <li>가상 <a href="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/sap/sap-s4hana" target="_blank">또는</a> <a href="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/sap/hana-large-instances" target="_blank">운영 체제 미설치</a> 서버 및 관련 스토리지의 필수 수</li>
+  </ul>
+
+
+  <p>위의 요구 사항은 새 대상 환경으로 구성됩니다. ExpressRoute는 중간 데이터베이스에서 큰 데이터베이스로 마이그레이션하기에 충분한 대역폭을 제공해야 합니다. 기본 관리자는 HANA 데이터베이스 및 초기 애플리케이션 서버에 Suite 설치를 시작할 수 있습니다. 이렇게 하면 더 넓은 프로젝트 팀에게 문제를 해결하는 데 필요한 만큼의 마이그레이션 실행을 통해 실행하는 데 필요한 모든 작업 영역을 제공합니다.</p>
+
+
+  <p>SAP를 온-프레미스에서 Azure로 마이그레이션할 때 사용할 수 있는 최상의 마이그레이션 방법에 대한 많은 질문이 있습니다. 백업/복원, 내보내기/가져오기, SUM 및 DMO 등의 옵션 수를 고려할 때 이해할 수 있습니다. AZURE에서 SAP Business Suite를 S/4HANA로 마이그레이션하는 경우&rsquo; SAP의 SUM 및 DMO 옵션을 사용하여 데이터베이스 마이그레이션을 처리하고 Azure에 새 애플리케이션 서버를 설치하는 것이 더 쉽습니다. 또한 최적의 기능, 성능 및 지원을 위해 지원되는 최신 운영 체제 버전에 대한 Azure의 새로운 환경을 제공할 수 있습니다. 내 동료 Azure 동료 Kiran Musunuru는 최근에 SAP Business Suite를 S/4HANA로 마이그레이션하는 SUM 및 DMO 옵션을 사용하는 방법과 도구, 옵션, 개별 단계 및 마이그레이션의 전체 프로세스를 간략하게 설명하는 Azure &rdquo; 의 SAP용 마이그레이션 <a href="https://azure.microsoft.com/en-us/resources/migration-methodologies-for-sap-on-azure/">방법론에 대한</a> 백 &ldquo; 서를 작성했습니다.</p>
+
+
+  <p>다음은 Ive&rsquo;가 마이그레이션 경험을 통해 배운 몇 가지 팁으로, 마지막 순간의 놀라움을 피할 수 있도록 도와줍니다.</p>
+
+
+  <ul>
+   <li>전체 환경에서 필요한 최소 SAP 버전 및 릴리스 수준을 확인합니다.</li>
+   <li>Java 구성 요소에 대한 PAM을 확인하여 S/4HANA 배포에 필요한지 확인합니다.</li>
+   <li>DMO 벤치마크 도구를 사용하여 시스템에 대한 현실적인 마이그레이션 시간을 가져옵니다. 이렇게 하면 마이그레이션에 가장 적합한 ExpressRoute 크기를 결정하는 데 도움이 되며 필요한 가동 중지 시간에 대한 기대치를 설정합니다.</li>
+   <li>S/4HANA로 업그레이드하기 위한 유니코드 요구 사항을 알고 있습니다.</li>
+   <li>이중 스택 시스템 수정을 알고 있습니다.</li>
+   <li>OS 버전과 버전이 기존 내부 IT 표준과 다를 수 있습니다.</li>
+   <li>Fiori 배포를 계획합니다.</li>
+   <li>복잡하거나 매우 큰 환경에 대해 여러 마이그레이션 모의 실행을 수행할 준비를 합니다.</li>
+  </ul>
+
+
+  <p>온-프레미스 시스템에서 Azure 환경으로의 마이그레이션이 완료되면 HANA의 SAP Business Suite에서 S/4HANA로의 변환을 시작할 수 있습니다. 시작하기 전에 업그레이드할 S/4HANA 버전에 대한 SAPs&rsquo; 변환 가이드를 검토합니다. 예를 들어 S <a href="https://help.sap.com/doc/2b87656c4eee4284a5eb8976c0fe88fc/1809.000/en-US/CONV_OP1809.pdf" target="_blank">/4HANA 1809에 대한 변환 가이드</a>는 다음과 같습니다.</p>
+
+
+  <p>새 S/4HANA 환경을 배포하는 작업은 모두 기본 팀에서 Azure에서 수행할 수 있으며 기존 온-프레미스 환경에서 배포하는 데 필요한 많은 내부 IT 팀에 대한 종속성을 제거할 수 있습니다. 대부분의 고객은 HANA 시스템에서 새로 마이그레이션된 제품군의 시스템 복사본에서 간단한 샌드박스 또는 새 개발 시스템으로 시작할 가능성이 높습니다. 이렇게 하면 모든 간소화 검사, 사용자 지정 코드 마이그레이션 및 실제 S/4 변환 모의 실행을 실행할 수 있는 준비 영역이 제공됩니다. 병렬로, 기본 팀은 Fiori에 대한 새 VM&rsquo; 및 구성을 포함하여 QAS 및 프로덕션 계층 배포를 시작할 수 있습니다. 필요한 검사 및 변환이 완료되면 프로세스는 단순히 QAS 및 프로덕션에 대해 반복됩니다.</p>
+
+
+  <p>이 블로그 게시물은 프로세스의 일반적인 개요를 의미하며 Azure 플랫폼에 연결된 항목에 집중하고 싶었기 때문에 기능 영역을 건드리지 않았습니다&rsquo;. 또한 Azure에 S/4HANA 환경을 배포하는 방법에 대한 다양한 스크립팅 및 자동화 옵션도 있습니다. 개요는 Azure Compute 엔지니어링 팀의 Tobias Niekamp<a href="https://azure.microsoft.com/en-us/blog/automating-sap-deployments-in-microsoft-azure-using-terraform-and-ansible/" target="_blank">가 작성한 Terraform 및 Ansible</a>&rdquo;을 사용하여 Microsoft Azure SAP 배포 자동화 블로그 게시물을 &ldquo; 참조하세요.</p>
+
+
+  <p>다음 주, 내 동료 트로이 셰인은 SAP BW / 4HANA의 마이그레이션을 다룰 것입니다. 또한 새로운 Azure NetApp Files가 SAP HANA 워크로드에 일반 공급될 때 현재와 가까운 장래에 스케일 아웃 아키텍처에서 SAP BW/4HANA를 배포하는 가장 좋은 방법을 다룹니다.</p>

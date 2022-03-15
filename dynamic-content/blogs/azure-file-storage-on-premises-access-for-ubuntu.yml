@@ -1,0 +1,92 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 417993be4619a1587a189b49c0f60d988d18a15e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898165"
+Slug: azure-file-storage-on-premises-access-for-ubuntu
+Title: Azure File Storage Ubuntu 17.04에 대한 온-프레미스 액세스
+Summary: Azure File Storage 지원되는 SMB 프로토콜을 구현하는 모든 OS에 대해 공유 파일 Storage 제공하는 서비스입니다. GA 이후 Windows Linux를 모두 지원했습니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/services/storage/files/">Azure File Storage</a> 지원되는 SMB 프로토콜을 구현하는 모든 OS에 대해 공유 파일 Storage 제공하는 서비스입니다. GA 이후 Windows Linux를 모두 지원했습니다. 그러나 온-프레미스 액세스는 Windows만 사용할 수 있었습니다. Windows 고객은 이 기능을 광범위하게 사용하지만 Linux 고객이 원하는 피드백을 받았습니다. 이 기능을 통해 Linux 액세스는 스토리지 계정 영역을 넘어 지역 간 및 온-프레미스로 확장됩니다. <a> </a>오늘 첫 번째 Linux 배포판인 Ubuntu 17.04를 위해 모든 지역에서 온-프레미스 액세스를 Storage Azure File을 발표하게 되어 기쁩니다. 이 지원은 바로 시작되며 추가 설정이 필요하지 않습니다.</p>
+
+
+  <h2>온-프레미스 Ubuntu 17.04에서 Azure 파일 공유에 액세스하는 방법</h2>
+
+
+  <p>온-프레미스 Ubuntu 17.04 또는 Azure Linux VM에서 Azure 파일 공유에 액세스하는 단계는 동일합니다.</p>
+
+
+  <p><b>1단계:</b> 방화벽을 통해 TCP 445에 액세스할 수 있는지 확인합니다. 다음 명령을 사용하여 포트가 열려 있는지 테스트할 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  nmap &lt;azure storage account&gt;.file.core.windows.net
+
+  </pre>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/463fdacf-534f-452f-bdd6-53d9d13a6a8d.png"><img alt="image" border="0" height="516" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e5eb298d-714b-4ed1-a7f1-91d3d6683b9f.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="1470"></a></p>
+
+
+  <p><b>2단계</b>: Azure Portal에서 명령을 복사하거나 아래 탑재 명령의 <b>스토리지 계정 이름&gt;, &lt;파일 공유 이름&gt;, &lt;탑재 지점&gt; 및 &lt;스토리지 계정 키를&gt;</b> 바꿉 &lt; 니다. Linux에서&nbsp; <a href="https://docs.microsoft.com/en-us/azure/storage/storage-how-to-use-files-linux">Azure File을 사용하는 방법에</a> 대해 자세히 알아봅니다.</p>
+
+
+  <pre class="prettyprint">
+
+  sudo mount -t cifs //&lt;storage account name&gt;.file.core.windows.net/&lt;file share name&gt; &lt;mountpoint&gt; -o vers=3.0,username=&lt;storage account name&gt;,password=&lt;storage account key&gt;,dir_mode=0777,file_mode=0777,sec=ntlmssp
+
+  </pre>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><b>3단계:</b> 탑재되면 파일 작업을 수행할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a223bb18-05a6-42d3-9fdd-a54a6da8a65f.png"><img alt="clip_image001[8]" border="0" height="333" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a1d8c029-c47c-4dac-a25b-542b33a0cd71.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image001[8]" width="1470"></a></p>
+
+
+  <h2>기타 Linux 배포</h2>
+
+
+  <p>Ubuntu 16.04 및 16.10에 대한 이러한 향상된 기능의 백포팅이 진행 중이며 <a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1670508">CIFS: SMB3에 암호화를 사용하도록 설정</a>하여 여기에서 추적할 수 있습니다. RHEL도 진행 중입니다. RHEL의 다음 릴리스와 함께 전체 지원이 릴리스될 예정입니다.</p>
+
+
+  <h2>요약 및 다음 단계</h2>
+
+
+  <p>Azure File Storage 엄청난 채택을 보게 되어 기쁩니다. 5분 안에 시작하여 Azure File Storage를 사용해 볼 수 있습니다. 자세한 정보 및 자세한 설명서 링크는 아래에 제공됩니다.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/storage/storage-how-to-use-files-linux">Linux에서 Azure 파일 사용</a></li>
+   <li><a href="https://azure.microsoft.com/documentation/videos/azurecon-2015-azure-files-storage-a-frictionless-cloud-smb-file-system-for-windows-and-linux/">Azure File Storage: Windows 및 Linux을 위한 원활한 클라우드 SMB 파일 시스템</a></li>
+   <li><a href="https://azure.microsoft.com/blog/inside-azure-file-storage/">Azure 파일 Storage 내부</a></li>
+  </ul>
+
+
+  <p>사용자 의견에 따라 Azure 파일 Storage 계속 향상할 것입니다. 의견, 요청 또는 문제가 있는 경우 다음 채널을 사용하여 연락할 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://stackoverflow.com/questions/tagged/windows-azure-storage+or+windows-azure-storage+or+azure-storage-blobs+or+azure-storage-tables+or+azure-table-storage+or+windows-azure-queues+or+azure-storage-queues+or+azure-storage-emulator+or+azure-storage-file">스택 오버플로</a></li>
+   <li><a href="https://social.msdn.microsoft.com/Forums/windowsazure/en-US/home?forum=windowsazuredata">MSDN</a></li>
+   <li><a href="https://feedback.azure.com/forums/217298-storage">User Voice</a></li>
+  </ul>

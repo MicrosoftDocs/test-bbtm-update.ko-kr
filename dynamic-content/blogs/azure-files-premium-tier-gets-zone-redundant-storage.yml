@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4382c3b85196e8837f0376d50b8c84586b736289
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903334"
+Slug: azure-files-premium-tier-gets-zone-redundant-storage
+Title: Azure Files 프리미엄 계층은 영역 중복 스토리지를 가져옵니다.
+Summary: 오늘 Azure Files 프리미엄 계층에 대한 ZRS(영역 중복 스토리지)의 일반 공급에 대해 살펴보겠습니다. ZRS 복제를 사용하는 Azure Files 프리미엄 계층을 사용하면 SSD(반도체 드라이브)를 기반으로 하는 고성능의 고가용성 파일 서비스를 사용할 수 있습니다.
+Content: >-
+  <h2>Azure Files 프리미엄 계층은 이제 영역 중복입니다!</h2>
+
+
+  <p>Azure Files 프리미엄 계층에 대한 ZRS(영역 중복 스토리지)의 일반 공급이 발표되는 것을 기쁘게&#39;. ZRS 복제를 사용하는 Azure Files 프리미엄 계층을 사용하면 SSD(반도체 드라이브)를 기반으로 하는 고성능의 고가용성 파일 서비스를 사용할 수 있습니다.</p>
+
+
+  <p>Azure Files ZRS 프리미엄 계층은 비즈니스에 성능 및 지역 가용성이 중요한 관리되는 파일 서비스에 대해 고려해야 합니다. ZRS는 세 개의 서로 다른 Azure <a href="https://docs.microsoft.com/en-us/azure/availability-zones/az-overview" target="_blank">가용성 영역에</a> 데이터의 복제본 3개를 동기적으로 작성하여 클러스터, 데이터 센터 또는 전체 영역 중단으로부터 데이터를 보호함으로써 고가용성을 제공합니다. 영역 중복성을 사용하면 가용성 영역 중 하나를 사용할 수 없는 경우에도 데이터를 읽고 쓸 수 있습니다.</p>
+
+
+  <p>Azure Files용 ZRS 프리미엄 계층 릴리스를 통해 프리미엄 계층은 이제 스토리지 요구 사항을 충족하는 두 가지 내구성 옵션 집합, 지역 내 고가용성을 위한 ZRS(영역 중복 스토리지) 및 저비용 단일 지역 지속성 스토리지를 위한 LRS(로컬 중복 스토리지)를 제공합니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>Azure Portal, Azure CLI 또는 Azure PowerShell 통해 ZRS Azure 프리미엄 파일 계정을 만들 수 있습니다.</p>
+
+
+  <p>Azure Files 프리미엄 계층에는 계정 종류로 <em>FileStorage</em> 가 필요합니다. Azure Portal에서 ZRS 계정을 만들려면 다음 속성을 설정합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dc9160ca-e663-45fd-8feb-1d23c43470b5.png"><img alt="An image showing the account settings." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cae166aa-a00e-462a-adec-3ba225237db2.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none; width: 756px; height: 768px;" title="740 블로그"></a></p>
+
+
+  <p>현재 Azure Files 프리미엄 계층에 대한 ZRS 옵션은 <strong>서유럽</strong> 에서 사용할 수 있으며 지역 적용 범위를 점진적으로 확장할 예정입니다. Azure 설명서를 통해 프리미엄 계층 ZRS <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy-zrs#support-coverage-and-regional-availability" target="_blank">지역 가용성</a> 을 최신 상태로 유지합니다.</p>
+
+
+  <p>LRS 프리미엄 파일 계정에서 ZRS 프리미엄 파일 계정으로 마이그레이션하려면 기존 LRS 계정에서 새 ZRS 계정으로 데이터를 수동으로 복사하거나 이동해야 합니다. 요청에 따른 라이브 계정 마이그레이션은 아직 지원되지 않습니다. 최신 정보는 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy-zrs#converting-to-zrs-replication" target="_blank">배포</a> 설명서를 참조&nbsp;하세요.</p>
+
+
+  <p>최신 <a href="https://azure.microsoft.com/en-us/pricing/details/storage/files/" target="_blank">가격 책정 정보는 가격 책정 페이지를</a> 참조하세요.</p>
+
+
+  <p>프리미엄 계층에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/files/storage-files-planning#file-share-performance-tiers" target="_blank">Azure Files 프리미엄 계층</a> 설명서를 참조하세요. Azure Storage <a href="https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata" target="_blank">포럼</a>에서 의견을 공유하거나 이메일을 보내<a href="mailto:azurefiles@microsoft.com" target="_blank">azurefiles@microsoft.com</a>주세요.</p>
+
+
+  <p>행복한 공유!</p>

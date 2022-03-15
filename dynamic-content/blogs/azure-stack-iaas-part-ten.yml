@@ -1,0 +1,198 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2c268a3d01c3bc15f816a8e8297eeff23c2084bc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898415"
+Slug: azure-stack-iaas-part-ten
+Title: Azure Stack IaaS – 10부
+Summary: Azure 또는 Azure Stack에서 VM을 실행하는 가장 좋은 방법 중 하나는 클라우드에서 제공하는 서비스를 활용하여 VM(가상 머신)을 중심으로 현대화를 시작할 수 있다는 것입니다.
+Content: >-
+  <p><em>이 블로그는 Azure Stack의 수석 프로그램 관리자인 Andrew Westgarth가 공동 저술했습니다.&nbsp;</em></p>
+
+
+  <h2>PaaS로의 여행</h2>
+
+
+  <p>Azure 또는 Azure Stack에서 VM을 실행하는 가장 좋은 방법 중 하나는 클라우드에서 제공하는 서비스를 활용하여 VM(가상 머신)을 중심으로 현대화를 시작할 수 있다는 것입니다. PaaS(Platform as a Service)는 이러한 기능을 직접 빌드하고 유지 관리하는 부담 없이 애플리케이션에서 사용할 수 있는 기능에 적용되는 용어입니다. 실제로 클라우드-IaaS 자체는 기본 하이퍼바이저, 소프트웨어 정의 네트워크 및 스토리지 또는 셀프 서비스 API 및 포털을 빌드하거나 유지 관리할 필요가 없으므로 PaaS입니다. 또한 Azure 및 Azure Stack은 애플리케이션을 현대화하는 데 사용할 수 있는 PaaS 서비스를 제공합니다.</p>
+
+
+  <p>애플리케이션을 현대화해야 하는 경우 클라우드 플랫폼에서 제공하는 클라우드 네이티브 기술 및 미리 빌드된 서비스를 활용할 수 있습니다. 많은 팀에서 기존 앱에 새로운 기능 또는 기능을 추가할 때 이러한 기능을 활용하도록 선택합니다. 이렇게 하면 새 코드를 위해 클라우드의 편의를 활용하면서 VM에서 애플리케이션의 완성도를 유지할 수 있습니다.</p>
+
+
+  <p>이 문서에서는 PaaS로의 여정의 일환으로 웹앱, 서버리스 함수, Blob Storage 및 Kubernetes를 사용하여 애플리케이션을 현대화하는 방법을 살펴봅니다.</p>
+
+
+  <h2>Azure App Services를 사용하는 웹앱</h2>
+
+
+  <p>가상화 시절에는 VM 스프롤이 있었습니다. 많은 VM이 단일 목적을 수행하기 위해 리소스를 차지했습니다. 가장 일반적인 것은 웹 사이트를 호스트하는 전체 VM이었습니다. 전체 VM을 사용하는 것은 리소스 관점에서뿐만 아니라 진행 중인 관리에서 낭비됩니다. Azure App Services는 새로운 옵션을 제공합니다. VM을 만들고 웹 서버를 설치하는 대신 플랫폼에서 직접 웹 사이트를 만들 수 있습니다. Azure Stack 포털에서 웹앱을 쉽게 만들 수 있습니다. 실제로 제공해야 하는 중요한 것은 Azure에서와 마찬가지로 전체 DNS 이름의 일부가 되는 웹 사이트 이름이지만 네트워크에서는 Azure Stack을 설치했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/254b8a4b-dab0-4a83-9e73-bf9ea1cb12d1.png"><img alt="Screenshot showing how to create a web app in the Azure Stack portal" border="0" height="632" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2daf7a9-7b4e-4512-9cf8-c865092e95bc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Stack 포털에서 웹앱을 만드는 방법을 보여 주는 스크린샷" width="800"></a></p>
+
+
+  <p>웹앱이 배포되면 FTP 또는 웹 배포를 사용하거나 리포지토리에서 웹 사이트를 푸시할 수 있습니다. 웹앱의 배포 옵션에 액세스하기만 하면 이 옵션에 액세스할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/63a8a630-34a5-4171-8c8e-e3e19e6c1227.png"><img alt="Screenshot showing how to access the deployment options of the web app" border="0" height="425" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bde55dec-f867-482e-a5ac-7486f7dd469e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="웹앱의 배포 옵션에 액세스하는 방법을 보여 주는 스크린샷" width="800"></a></p>
+
+
+  <p>사용자가 보다 인식 가능한 이름으로 웹 사이트에 액세스할 수 있도록 웹앱에 대한 사용자 지정 도메인을 만들 수도 있습니다. 따라서 <strong>timecard.appservice.midwest.azurestack.corp.contoso.com</strong> 같은 URL은 완전히 <strong>timecard.contoso.com</strong> 또는 다른 도메인이 될 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0a73310-62af-4b18-b0a8-e242be64a6c9.png"><img alt="Screenshot showing how to create a custom domain" border="0" height="420" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3641b862-aee9-4dc7-b078-6e0800c73b9d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="사용자 지정 도메인을 만드는 방법을 보여 주는 스크린샷" width="800"></a></p>
+
+
+  <p>Azure Stack의 Azure App Services에 대해 자세히 알아볼 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-app-service-overview" target="_blank">Azure Stack의 App Services(운영자용)</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/Azure/app-service/app-service-web-tutorial-custom-domain#map-your-domain" target="_blank">App Service 사용자 지정 도메인</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/app-service/" target="_blank">App Service 설명서</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-html" target="_blank">App Services에 대한 빠른 시작 가이드</a></li>
+  </ul>
+
+
+  <h2>Azure Functions를 사용하는 서버리스 함수</h2>
+
+
+  <p>웹 사이트보다 더 작은 항목이 있는 경우 전체 VM을 만드는 이유는 무엇인가요? Azure Functions를 사용하면 VM이 필요하지 않고 플랫폼으로 코드를 호스트할 수 있습니다. Azure Functions의 예제 후보는 일정에 따라 실행해야 하는 스크립트 또는 웹 요청에 의해 트리거되는 스크립트입니다. Ive&rsquo;는 함수를 사용하여 리소스 사용량을 주기적으로 측정하거나, 무언가가 제대로 응답하고 있는지 확인하거나, 조건이 충족되었음을 다른 시스템에 알리는 것을 보았습니다. Azure Stack은 CSharp, JavaScript, FSharp, PowerShell, *Python,* TypeScript *, PHP* 및 Batch*(*는 실험적 언어를 나타낸다)로 작성된 함수를 지원합니다.</p>
+
+
+  <p>함수는 포털에서 직접 쉽게 만들 수 있습니다. 함수의 이름을 입력한 다음, 시작할 시나리오 템플릿을 선택하기만 하면 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2470d891-8f79-4508-804e-e51ec6cafedf.png"><img alt="Screenshot showing how to create functions directly into the poral" border="0" height="492" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4b84419f-fc4b-4682-b929-1c06ba1306db.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="함수를 포랄에 직접 만드는 방법을 보여 주는 스크린샷" width="800"></a></p>
+
+
+  <p>Azure Stack 포털에서 직접 함수를 테스트하고 실행할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/352707cf-7c8d-4418-84bb-189b330c809f.png"><img alt="Screenshot showing how to test and run functions directly in the Azure Stack portal" border="0" height="423" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/24a5430e-b32d-41c5-999e-be36f57cbad7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Stack 포털에서 직접 함수를 테스트하고 실행하는 방법을 보여 주는 스크린샷" width="800"></a></p>
+
+
+  <p>자세한 정보:</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview" target="_blank">Azure Functions 개요</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function" target="_blank">Azure Portal에서 첫 번째 함수 만들기</a></li>
+  </ul>
+
+
+  <h2>Azure Storage 사용하여 서비스로 Storage</h2>
+
+
+  <p>가상화 시대에 VM을 자주 사용하지만 낭비하는 또 다른 용도는 스토리지였습니다. Teams 웹앱&rsquo; 이미지 또는 문서 공유를 위해 자체 파일 서버를 설정합니다. Azure Stack을 사용하는 경우 기본 제공 플랫폼 스토리지 기능을 활용할 수 있습니다. Azure Stack의 Azure Storage 4가지 스토리지 옵션을 제공합니다.</p>
+
+
+  <ul>
+   <li>파일 시스템 개체 대신 코드 친화적인 URL로 액세스할 수 있는 웹 이미지, 파일 및 로그와 같은 구조화되지 않은 데이터에 대한 Blob입니다.</li>
+   <li>웹 친화적인 REST API를 통해 액세스할 수 있는 지속성 메시지 큐에 대한 큐입니다.</li>
+   <li>OData 기반 쿼리를 사용하는 JSON과 같은 반구조화된 XML 데이터에 대한 테이블입니다.</li>
+   <li>Azure Virtual Machines를 지원하기 위한 영구 스토리지용 디스크입니다.</li>
+  </ul>
+
+
+  <p>Azure Storage 시작하려면 Azure Stack 구독에서 스토리지 계정을 만듭니다. 스토리지 계정을 만든 후에는 Blob, 테이블 또는 큐를 만들 수 있습니다. 여기에 나는 그들이 그것을 가져 가입 할 때 큐를 해제 할 수있는 피크닉을 가지고 내 팀에 대한 항목의 큐를 만들었습니다 :</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3bf6be49-fea3-4231-8c10-d280b36ec6ac.png"><img alt="Screenshot of an example storage account creating queues" border="0" height="441" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a319c2d0-3edb-4e3d-8842-ea3080ee8138.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="큐를 만드는 예제 스토리지 계정의 스크린샷" width="800"></a></p>
+
+
+  <p>Azure Table Storage 사용하면 유연한 데이터 스키마가 필요한 앱에 대해 반구조화된 데이터를 저장하고 쿼리할 수 있습니다. Azure Storage SDK를 통해 이 데이터에 액세스하거나 <a href="https://www.storageexplorer.com/" target="_blank">Azure Storage Explorer 또는 Microsoft Excel</a> 같은 도구를 사용하여 데이터를 보고 편집할 수 있습니다. 다음은 Azure Storage Explorer 볼 수 Storage Azure Table에 저장된 야구 명단입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2257bc29-1f16-453e-9763-421ff1c5f688.png"><img alt="Screenshot of a baseball roster stored in Azure Table Storage viewed from Azure Storage Explorer" border="0" height="549" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1a3d3837-6883-4a96-9808-64ae1db8efc8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Storage Explorer 볼 수 Storage Azure Table에 저장된 야구 선수 명단의 스크린샷" width="800"></a></p>
+
+
+  <p>다음은 Microsoft Excel 액세스하는 것과 동일한 데이터입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5ed3e697-80c8-421c-a59d-60178653d51a.png"><img alt="Screenshot of a baseball roster in Microsoft Excel" border="0" height="483" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8ff8c9c-86b2-4cae-abc7-30d3903dae60.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Microsoft Excel 야구 선수 명단의 스크린샷" width="800"></a></p>
+
+
+  <p>구조화되지 않은 데이터를 쉽게 공유할 수 있습니다. 다음은 내 IoT 디바이스가 만드는 모든 로그입니다. 포털 또는 코드에서 Blob URL을 통해 로그를 다운로드하거나 업로드할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/54b23865-b8c7-4a86-b230-e42da1a24231.png"><img alt="Screenshot of sharing unstructured data" border="0" height="474" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/62715daf-dc27-4b75-9bc1-a439ee97d275.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="구조화되지 않은 데이터 공유 스크린샷" width="800"></a></p>
+
+
+  <p>자세한 정보:</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/services/storage/blobs/" target="_blank">Azure Blob Storage</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/services/storage/disks/" target="_blank">Azure Disk Storage</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/services/storage/tables/" target="_blank">Azure Table Storage</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/services/storage/queues/" target="_blank">Azure Queue Storage</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-storage-connect-se" target="_blank">Azure Stack에 커넥트 Azure Storage Explorer</a></li>
+   <li><a href="https://support.office.com/en-us/article/Connect-to-Microsoft-Azure-Table-Storage-Power-Query-4ba56e50-2c4c-468e-887c-8de9b49fd22e" target="_blank">Azure Table Storage 커넥트 Microsoft Excel</a></li>
+  </ul>
+
+
+  <h2>KeyVault를 사용하여 비밀</h2>
+
+
+  <p>가상화 시대에 암호와 인증서를 비밀로 유지하려면 어떻게 해야 할까요? 항상 모범 사례가 아니라 그것을 인정하십시오. KeyVault는 비밀을 유지할 수 있는 안전한 장소를 제공하는 기본 제공 Azure 플랫폼 서비스입니다. KeyVault에 보관된 비밀을 사용하여 Azure Stack에서 VM을 만들 수 있습니다. 이렇게 하면 VM을 배포하는 데 사용하는 템플릿에서 암호 또는 기타 비밀을 명확한 텍스트로 배치할 필요가&#39;.&nbsp; 이는 Azure 플랫폼 서비스를 활용하여 VM을 현대화하는 방법의 또 다른 예일 뿐입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0966e5ee-21f8-49ae-83cf-3e343a6943d9.png"><img alt="Screenshot example of how you can modernize your VMs by taking advantage of the Azure platform services" border="0" height="502" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6cf9fc2f-76f1-4191-a538-ca39356c2a63.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 플랫폼 서비스를 활용하여 VM을 현대화하는 방법의 스크린샷 예제" width="800"></a></p>
+
+
+  <p>자세한 정보:</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/services/key-vault/" target="_blank">Azure KeyVault 개요</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-key-vault-deploy-vm-with-secret" target="_blank">KeyVault에서 보안 암호를 사용하여 Azure Stack에서 VM 만들기</a></li>
+  </ul>
+
+
+  <h2>Kubernetes를 사용하는 컨테이너</h2>
+
+
+  <p>애플리케이션을 현대화하는 또 다른 좋은 방법은 컨테이너를 활용하는 것입니다. Azure Stack은 Kubernetes 클러스터에서 컨테이너를 호스트하는 옵션을 제공합니다. 이 Kubernetes 클러스터는 AKS(Azure Kubernetes Service) 엔진을 사용하여 만들어지므로 Azure의 AKS와 Azure Stack의 Kubernetes 클러스터 간에 애플리케이션을 쉽게 이동할 수 있습니다. Azure Stack에서는 Kubernetes 클러스터를 쉽게 만들 수 있으며 포털&rsquo; 마켓플레이스에서 배포하기만 하면 됩니다.<br>
+
+  Azure Stack Kubernetes 클러스터는 현재 공개 미리 보기로 제공됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/647ddd28-4f7a-4378-b84d-0c614a59d9e8.png"><img alt="Screenshot of a Kubernetes Cluster preview" border="0" height="628" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ad681e7-223e-4dd4-990d-9e9e5a35a179.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Kubernetes 클러스터 미리 보기의 스크린샷" width="800"></a></p>
+
+
+  <p>자세한 정보:</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-solution-template-kubernetes-deploy" target="_blank">Azure Stack에서 컨테이너를 사용하도록 Kubernetes 배포</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-solution-template-kubernetes-cluster-add" target="_blank">Azure Stack Marketplace에 Kubernetes 추가(운영자용)</a></li>
+   <li><a href="https://github.com/Azure/aks-engine" target="_blank">Azure AKS 엔진</a></li>
+  </ul>
+
+
+  <h2>VM뿐만 아니라 앱용 플랫폼</h2>
+
+
+  <p>가상화 플랫폼의 주요 초점은 인프라 팀의 수명을 개선하는 데 도움이 됩니다. 그러나 클라우드 플랫폼을 사용하면 사업부와 개발자의 수명을 개선하는 데 중점을  두고 있습니다. 가상화 VM은 지금까지만 사용할 수 있습니다. 그러나 Azure 또는 Azure Stack에서 VM을 cloud-IaaS로 이동하면 이제 클라우드 주기가 예상되는 사용자와 최신 상태를 유지하도록 앱을 현대화할 수 있습니다. 네이티브 PaaS 서비스를 활용하면 인프라 비즈니스에서 벗어나 앱의 비즈니스로 전환할 수 있습니다.</p>
+
+
+  <h3>이 블로그 시리즈에서</h3>
+
+
+  <p>이 블로그 시리즈의 향후 게시물을 다시 읽어주시기 바랍니다. 다음은 과거 항목 중 몇 가지입니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-one/" target="_blank">Azure Stack의 핵심은 IaaS(Infrastructure-as-a-Service) 플랫폼입니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-laas-part-two/" target="_blank">이미 있는 항목으로 시작</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-3/" target="_blank">IaaS의 기본 사항</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-four/" target="_blank">물건 보호</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-five/" target="_blank">직접 수행</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-six/" target="_blank">사용한 항목에 대한 지불</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-seven/" target="_blank">팀이 필요합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-seven-2/" target="_blank">자주 수행하는 경우 자동화합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-stack-iaas-part-nine/" target="_blank">다른 사용자의 성공에 따라 빌드</a></li>
+  </ul>

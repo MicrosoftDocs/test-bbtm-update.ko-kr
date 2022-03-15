@@ -1,0 +1,62 @@
+### YamlMime:Yaml
+ms.openlocfilehash: da20bd763cbbb5a11e1324474fe86c66048e98e9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899011"
+Slug: documentdb-emulator-for-local-development-and-dotnet-core-support
+Title: DocumentDB Emulator 및 .NET Core 지원을 사용한 무료 로컬 개발
+Summary: Azure DocumentDB 서비스에 대한 로컬 개발 환경을 제공하는 DocumentDB Emulator 공개 미리 보기를 도입하게 되어 기쁩니다.
+Content: >-
+  <p style="margin: 0in 0in 8pt; text-align: justify;">Azure DocumentDB는 99.99%의 가용성을 보장하는 엔터프라이즈급 SLA를 통해 지원되는 완전히 관리되고 전역적으로 분산된 NoSQL 데이터베이스 서비스입니다. DocumentDB는 10ms 읽기 대기 시간을 &lt;보장하고 99번째 백분위수에서 15ms 쓰기 대기 시간을 보장하여 최신 애플리케이션의 &lt;대규모 및 짧은 대기 시간 요구에 적합한 클라우드 기반 데이터베이스입니다. 단일 DocumentDB 컬렉션은 처리량을 10-100초의 수백만 요청/초로 탄력적으로 확장할 수 있으며, 단추를 클릭하여 무제한 크기 조정을 위해 여러 지역에 스토리지를 복제할 수 있습니다. 유연한 데이터 모델 및 풍부한 쿼리 기능과 함께 DocumentDB는 테넌트 제어 및 자동 지역 장애 조치(failover), 투명한 멀티 호밍 API 및 개발자가 선택할 수 있도록 잘 정의된 4가지 일관성 모델을 모두 제공합니다.</p>
+
+
+  <p>유연한 스키마, 풍부한 쿼리 기능 및 여러 SDK 플랫폼의 가용성으로 인해 DocumentDB를 사용하면 최신 애플리케이션을 쉽게 개발, 발전 및 확장할 수 있습니다. 커넥트() 컨퍼런스&nbsp; 주간에는 DocumentDB에서 애플리케이션을 더욱 쉽게 빌드할 수 있도록 새로운 개발자 도구의 가용성을 발표했습니다.</p>
+
+
+  <ul>
+   <li>Azure DocumentDB 서비스에 대한 로컬 개발 환경을 제공하는 <a href="https://aka.ms/documentdb-emulator-docs" target="_blank">DocumentDB Emulator</a> 공개 미리 보기를 소개할&#39;있습니다. DocumentDB Emulator 사용하여 인터넷 연결 없이, Azure 구독을 만들지 않고, 비용을 발생시키지 않고 로컬에서 애플리케이션을 개발하고 테스트할 수 있습니다. 이 기능은 오랫동안 사용자 음성 사이트에서 가장 많이 요청된 기능이므로&#39;투표한 모든 사용자를 출시하게 되어 기쁩니다.</li>
+   <li>또한 빠른 플랫폼 간 .NET 웹 애플리케이션 및 서비스를 빌드할 수 있는 <a href="https://aka.ms/documentdb-dotnetcore" target="_blank">DocumentDB .NET Core SDK</a>의 가용성을 발표하게 되어 기쁘게 생각합니다.</li>
+  </ul>
+
+
+  <p><img alt="Azure DocumentDB Emulator" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Local%20emulator%20300-1.png" style="width: 640px; height: 431px;"></p>
+
+
+  <h2>DocumentDB Emulator 정보</h2>
+
+
+  <p>DocumentDB 에뮬레이터는 DocumentDB 서비스의 충실도 높은 에뮬레이션을 제공합니다. JSON 문서 만들기 및 쿼리, 컬렉션 프로비전 및 확장, 저장 프로시저 및 트리거 실행을 비롯하여 Azure DocumentDB으로 동일한 기능을 지원합니다. DocumentDB Emulator 사용하여 애플리케이션을 개발 및 테스트하고, 단일 구성 변경만으로 전역 규모로 Azure에 배포할 수 있습니다.</p>
+
+
+  <p>지원되는 DocumentDB SDK 또는 DocumentDB REST API를 사용하여 에뮬레이터뿐만 아니라 DocumentDB 데이터 마이그레이션 도구 및 DocumentDB 스튜디오와 같은 기존 도구와 상호 작용할 수 있습니다.&nbsp; DocumentDB 에뮬레이터와 Azure DocumentDB 서비스 간에 데이터를 마이그레이션할 수도 있습니다.</p>
+
+
+  <p>실제 DocumentDB 서비스의 고화질 로컬 에뮬레이션을 만들었지만 DocumentDB 에뮬레이터의 구현은 서비스의 구현과 다릅니다. 예를 들어 DocumentDB 에뮬레이터는 로컬 파일 시스템(지속성) 및 HTTPS 프로토콜 스택(연결성)과 같은 표준 OS 구성 요소를 사용합니다. 따라서 전역 복제, 한 자리 밀리초 읽기/쓰기 대기 시간, 튜닝 가능한 일관성 수준 등 Azure 인프라를 기반으로 하는 일부 기능은 DocumentDB 에뮬레이터를 통해 사용할 수 없습니다.</p>
+
+
+  <p><a href="https://aka.ms/documentdb-emulator" target="_blank">DocumentDB Emulator Windows 데스크톱에 다운로드하여</a> 지금 시작합니다.</p>
+
+
+  <h2>DocumentDB .NET Core SDK 정보</h2>
+
+
+  <p style="background: white; margin: 9pt 0in; text-align: justify; line-height: normal;">새 DocumentDB .NET Core SDK를 사용하여 Windows, Mac 및 Linux에서 실행되는 빠른 플랫폼 간 웹앱 및 서비스를 빌드할 수 있습니다. <a href="https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core" target="_blank">Nuget</a>을 통해 최신 버전의 .NET Core SDK를 다운로드할 수 있습니다. <a href="https://aka.ms/documentdb-dotnetcore" target="_blank">DocumentDB .NET Core SDK 설명서 페이지에서</a> 릴리스 정보 및 추가 정보를 찾을 수 있습니다.</p>
+
+
+  <h2 style="background: white; margin: 9pt 0in; text-align: justify; line-height: normal;"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DocumentDBDotNetCoreOnMac.png" style="width: 640px; height: 373px;"></h2>
+
+
+  <h2 style="background: white; margin: 9pt 0in; text-align: justify; line-height: normal;">다음 단계</h2>
+
+
+  <p>이 블로그 게시물에서는 DocumentDB Emulator 및 DocumentDB .NET Core SDK를 포함하여 DocumentDB에 도입된 새로운 개발자 도구 중 일부를 살펴보았습니다.</p>
+
+
+  <ul>
+   <li><a href="https://aka.ms/documentdb-emulator-docs" target="_blank">이제 데스크톱에 DocumentDB Emulator</a> 다운로드하여 코딩을 시작하세요!</li>
+   <li>새 <a href="https://aka.ms/documentdb-dotnetcore" target="_blank">DocumentDB .NET Core SDK</a>를 사용하여 빠른 플랫폼 간 웹앱 빌드 시작</li>
+   <li><a href="https://portal.azure.com/#create/Microsoft.DocumentDB" target="_blank">Azure Portal에서 새 DocumentDB 계정</a> 만들기</li>
+   <li>Twitter <a href="https://twitter.com/DocumentDB" target="_blank">@DocumentDB</a> 에서 팔로우하여 최신 DocumentDB 뉴스 및 기능을 최신 상태로 유지하거나 <a href="https://stackoverflow.com/questions/tagged/azure-documentdb" target="_blank">Stack Overflow의 개발자 포럼에</a> 문의하세요.</li>
+  </ul>

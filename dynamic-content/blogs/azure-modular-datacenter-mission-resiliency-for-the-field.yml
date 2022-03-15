@@ -1,0 +1,97 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 280a5ec4b1d9ac10a9dab5ef9c38cfa3f82ac35a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902708"
+Slug: azure-modular-datacenter-mission-resiliency-for-the-field
+Title: Azure 모듈식 데이터 센터 – 필드에 대한 미션 복원력
+Summary: 국방 및 국가 안보 임무는 종종 본부와 현장에서 발생하며, 상황이 신속하고 신속한 의사 결정은 성공 또는 실패로 이어질 수 있습니다.
+Content: >-
+  <h2><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b2b38ef-ae7b-4cfd-83db-65704d32418b.png"><img alt="Helicopter lowering items for Microsoft Modular Datacenter." height="732" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6783e665-a6af-4bb4-9d04-a3904bb97c30.png" style="margin-right: auto; margin-left: auto; display: block;" title="" width="1024"></a></h2>
+
+
+  <h2>중요 업무용 컴퓨팅의 필요성</h2>
+
+
+  <p>국방 및 국가 안보 임무는 종종 본부와 현장에서 발생하며, 상황이 신속하고 신속한 의사 결정은 성공 또는 실패로 이어질 수 있습니다.</p>
+
+
+  <p>MdC( <a href="https://www.youtube.com/watch?v=x2IVXLoLSro&amp;feature=youtu.be" target="_blank">Azure Modular Datacenter</a> )를 통해 Microsoft는 Azure 클라우드의 주요 측면을 에지로 가져와 업무에 필요한 모든 곳에서 엔터프라이즈급 컴퓨팅, 스토리지 및 Azure 서비스를 제공할 준비가 되었습니다.</p>
+
+
+  <h2>필드용으로 빌드</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9212018b-edbf-456c-8a42-55b544bbe29f.png"><img alt="Person in wooded field walking towards remote Microsoft Modular Datacenter" height="683" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3f47f2ea-d360-4786-9be2-82159599d4e5.png" style="margin-right: auto; margin-left: auto; display: block;" title="" width="1024"></a></p>
+
+
+  <p>현장에서 IT 솔루션을 제공하는 기존의 방법은 다음과 같은 몇 가지 어려움을 겪습니다.</p>
+
+
+  <ul>
+      <li>제한된 네트워크 연결, 간헐적 또는 존재하지 않는 네트워크 연결</li>
+      <li>하드웨어 제한 사항 및 비용 제약 조건</li>
+      <li>다양한 네트워크 조건에서 애플리케이션 통합, 오케스트레이션 및 클라우드 서비스 제공</li>
+  </ul>
+
+
+  <p>Azure Modular Datacenter는 완전히 연결이 끊긴 상태로 실행되거나 연결이 끊긴 모드로 원활하게 전환하여 네트워크 가용성에 관계없이 모든 위치에서 배포를 용이하게 할 수 있으므로 현장의 IT 솔루션에 대한 기존 과제를 해결합니다.</p>
+
+
+  <p>또한 Azure MDC의 하드웨어 구성을 통해 사용자는 단일 모듈에서 최대 3개의 분류 수준으로 데이터를 저장하고 네트워크에 연결할 수 있습니다. 이렇게 하면 관리, 운영 및 인텔리전스 워크로드를 지원하기 위해 여러 인프라 집합을 설정하는 데 필요한 하드웨어 양과 비용이 크게 줄어듭니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/83fd4e6d-ffcc-4444-8a39-9d0c9b996847.png"><img alt="Microsoft Modular Datacenter in airplane hanger." height="683" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1569023b-6b21-4d0f-824d-9c0c0988f4be.png" style="margin-right: auto; margin-left: auto; display: block;" title="" width="1024"></a></p>
+
+
+  <h2>Azure 모듈식 데이터 센터 사양</h2>
+
+
+  <p>Azure Modular Datacenter는 다양한 정부 임무를 지원할 수 있는 유연성과 성능을 제공합니다. 여러 하드웨어 랙에 걸쳐 수천 코어의 컴퓨팅 능력과 많은 페타바이트(PB)의 삼중 중복 스토리지를 고객에게 제공합니다. 랙은 서로 다른 수준의 데이터 및 워크로드에 대한 Enclave를 분리하도록 구성할 수 있으며, 각 Enclave는 연결이 끊긴 모드에서 실행되거나, Azure 클라우드에 연결하거나, 고객 로컬 영역 네트워크에 연결할 수 있습니다.</p>
+
+
+  <p>하드웨어는 고객이 가장 필요로 하는 모든 곳에서 안전하고 쉽게 배포할 수 있는 견고하고 휴대용 40피트 컨테이너 내에 보관됩니다. Azure 소프트웨어와 필드 준비 컨테이너를 결합하면 Azure MDC는 국방 및 국가 안보 임무를 위한 다른 시장에서와는 달리 엔터프라이즈급 데이터 센터 솔루션이 됩니다.</p>
+
+
+  <h2>임무 복원력</h2>
+
+
+  <p>Azure MDC는 고객이 오프라인 또는 부분적으로 연결이 끊긴 시나리오에서 복잡한 소프트웨어 워크로드를 실행하고 주권을 위해 데이터를 제어하고 관리할 수 있는 견고한 독립 실행형 데이터 센터입니다. Microsoft는 중요 업무용 컴퓨팅에서 시스템 복원력의 중요도를 이해합니다.</p>
+
+
+  <p>고가용성을 위한 고객의 요구를 충족하기 위해 Microsoft는 AZURE MDC의 복원력을 개선하기 위해 HA(네트워크 고가용성) 모듈 및 고가용성 모듈<em></em>을 추가 기능으로 제공합니다.</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" src="https://www.microsoft.com/en-us/videoplayer/embed/RE4KyNT" width="560"></iframe></p>
+
+
+  <h2>네트워크 고가용성 모듈</h2>
+
+
+  <p>고객이 원하는 수준의 연결을 달성하고 유지 관리할 수 있도록 네트워크 고가용성 모듈은 여러 궤도에서 작동하는 위성 통신 파트너를 선택하여 네트워크 복원력을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a43a59c7-9941-4ca5-b46b-89e3315ed581.jpg"><img alt="Microsoft’s network high availability module provides SATCOM for resiliency through partnered satellite operators." height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/33fc9c2c-cd79-4a51-a9e0-9b3031d18703.jpg" style="margin-right: auto; margin-left: auto; display: block;" title="" width="1024"></a></p>
+
+
+  <p>Azure MDC의 추가 기능인 네트워크 고가용성 모듈은 SATCOM(네트워크 및 위성 통신) 장비를 지원하는 환경적으로 제어되고 모니터링되는 야외 인클로저입니다. 이를 통해 Azure MDC는 지상파 네트워크가 없는 경우에도 Azure 하이퍼스케일 클라우드의 데이터 및 컴퓨팅 자산에 대한 연결을 보장할 수 있습니다. Microsoft는 고객과 협력하여 위성 운영자의 에코시스템에서 최적의 통합 안테나 솔루션을 결정하여 포괄적인 위성 연결 솔루션을 제공합니다.</p>
+
+
+  <p>완전히 연결된 시나리오에서 필드의 자산에 대한 통신 손실은 중요한 작업을 위태롭게 할 수 있습니다. 네트워크 고가용성 모듈은 파이버 장애 조치(failover) 중에 작업을 연속하기 위해 SpaceX 및 SES와 같은 SATCOM 파트너의 지속적으로 성장하는 에코시스템을 통해 SATCOM 링크를 통해 네트워크 복원력을 제공할 수 있습니다.</p>
+
+
+  <p>네트워크 고가용성 모듈을 사용하면 Azure MDC가 지상파 연결에 액세스할 수 없거나 원하는 영역에서 완전히 연결이 끊긴 상태로 실행할 수 있습니다. 이 모듈은 SATCOM 네트워크를 활용하여 클라우드 백업 활용 또는 기계 학습 모델 새로 고침과 같은 Azure 하이퍼스케일 클라우드의 리소스에 대한 기본 연결 역할을 할 수 있습니다.</p>
+
+
+  <h2>HA(고가용성) 모듈</h2>
+
+
+  <p>고가용성 모듈은 Azure MDC처럼 전송 가능하고 배포 가능한 폼 팩터에 추가 전원 안정성 리소스를 추가하는 주문형 방법을 제공합니다. 고가용성 모듈은 전원 변동 또는 정전이 발생하는 경우 Azure MDC를 계속 실행하도록 하는 UPS(무정전 전원 공급 장치)를 제공하며, 더 긴 가동 중단 시 발전기 또는 제어된 장치 종료로 원활하게 전환할 수 있습니다.</p>
+
+
+  <p>이 모듈은 냉각 및 내부 전력 분배가 포함된 자체 포함되며 네트워크 고가용성 모듈에 해당하는 위성 연결 장비를 포함할 수 있으며 이를 전원 및 통신 복원 모듈로 전환할 수 있습니다. 고가용성 모듈은 장기 배치를 위해 Azure MDC와 함께 배포되도록 설계되었으며, 필요한 재배치 시 Azure MDC와 함께 이동할 수 있습니다.</p>
+
+
+  <p>Azure MDC의 고가용성에 대한 자세한 내용은 로컬 Microsoft 담당자에게 문의하세요.</p>

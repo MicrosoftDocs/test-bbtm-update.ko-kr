@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b127373f8373a65861e205d5690ccce12b773e15
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903025"
+Slug: continuous-integration-and-deployment-using-data-factory
+Title: Data Factory를 사용한 지속적인 통합 및 배포
+Summary: ADF(Azure Data Factory) 시각적 도구 공개 미리 보기는 2018년 1월 16일에 발표되었습니다. 시각적 도구를 사용하면 빅 데이터 파이프라인을 반복적으로 빌드, 디버그, 배포, 운영 및 모니터링할 수 있습니다.
+Content: >-
+  <p>ADF(<a href="https://azure.microsoft.com/en-us/services/data-factory/">Azure Data Factory</a>) 시각적 도구 공개 미리 보기는 2018년 1월 16일에 <a href="https://azure.microsoft.com/en-us/blog/adf-v2-visual-tools-enabled-in-public-preview/">발표되었습니다</a>. 시각적 도구를 사용하면 빅 데이터 파이프라인을 반복적으로 빌드, 디버그, 배포, 운영 및 모니터링할 수 있습니다. 이제 업계 최고의 모범 사례를 따라 ETL(추출 변환/로드) 및 ELT(추출 부하/변환) 워크플로를 개발, 테스트, Prod 등과 같은 여러 환경으로 연속 통합 및 배포할 수 있습니다. 기본적으로 코드베이스 변경에 대한 테스트 사례를 통합하고 테스트된 변경 내용을 테스트 또는 Prod 환경에 자동으로 푸시할 수 있습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" scrolling="no" src="https://channel9.msdn.com/Shows/Azure-Friday/Continuous-integration-and-deployment-using-Azure-Data-Factory/player" width="480"></iframe></p>
+
+
+  <p>이제 ADF 시각적 인터페이스를 사용하여 모든 데이터 팩터리를 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authoring-templates">ARM</a> (Azure Resource Manager) 템플릿으로 내보낼 수 있습니다. <strong>ARM 템플릿 내보내</strong>기를 클릭하여 팩터리에 해당하는 템플릿을 내보낼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2e09295d-eb6d-44ac-a7ca-fa8db8c31b7f.png"><img alt="UxDemo Factory" border="0" height="1125" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ef5fe03b-ec0c-41ea-88e8-85dfca0890c4.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="UxDemo Factory" width="1886"></a></p>
+
+
+  <p>그러면 2개 파일이 생성됩니다.</p>
+
+
+  <ul>
+   <li><strong>템플릿 파일</strong>: 데이터 팩터리에 해당하는 모든 데이터 팩터리 메타데이터(파이프라인, 데이터 세트 등)를 포함하는 템플릿입니다.</li>
+   <li><strong>구성 파일</strong>: Storage 연결, Azure Databricks 클러스터 연결 등과 같이 각 환경(Dev, Test, Prod 등)에 대해 서로 다른 환경 매개 변수를 포함합니다.</li>
+  </ul>
+
+
+  <p>환경별로 별도의 데이터 팩터리를 만듭니다. 그런 다음 각 환경에 대해 동일한 템플릿 파일을 사용하고 환경당 하나의 구성 파일을 갖습니다. <strong>ARM 템플릿 가져오기</strong> 단추를 클릭하면 템플릿 파일을 선택하고 내보낸 템플릿 파일을 선택하고 데이터 팩터리로 가져올 수 있는 Azure Portal의 Azure 템플릿 배포 서비스로 이동합니다.</p>
+
+
+  <p>또한 ADF 시각적 도구를 사용하면 원본 제어, 버전 관리 및 공동 작업을 위해 <a href="https://docs.microsoft.com/en-us/vsts/git/gitquickstart?view=vsts&amp;tabs=visual-studio">VSTS GIT 리포지토리</a> 를 데이터 팩터리에 연결할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/author-visually">VSTS GIT 통합</a>을 사용하도록 설정하면 다음 수명 주기를 사용하여 연속 통합 및 배포를 수행할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/099aab19-c3b3-44d8-a086-ed71da2c412b.jpg"><img alt="Git to Azure" border="0" height="585" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2dbec9df-260b-4267-ad56-8b2494e7ccca.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Git에서 Azure로" width="529"></a></p>
+
+
+  <ul>
+   <li>모든 개발자가 파이프라인, 데이터 세트 등과 같은 ADF 리소스를 작성할 수 있는 VSTS를 사용하여 개발 ADF를 설정합니다.</li>
+   <li>개발자는 Pipelines 같은 리소스를 수정할 수 있습니다. <strong>디버그</strong> 단추를 사용하여 변경 내용을 디버그하고 테스트 실행을 수행할 수 있습니다.</li>
+   <li>변경 내용에 만족하면 개발자는 분기에서 마스터 또는 협업 분기로 PR을 만들어 피어에서 변경 내용을 검토할 수 있습니다.</li>
+   <li>마스터 분기에 변경 내용이 있으면 <strong>게시</strong> 단추를 사용하여 개발 ADF에 게시할 수 있습니다.</li>
+   <li>팀이 <strong>Test </strong>및 <strong>Prod</strong> ADF에 대한 변경 내용을 승격할 준비가 되면 마스터가 Live Development ADF 뒤에 있는 경우 <strong>마스터</strong> 분기 또는 다른 분기에서 ARM 템플릿을 내보낼 수 있습니다.</li>
+   <li>내보낸 ARM 템플릿은 다른 환경 매개 변수 파일을 사용하여 <strong>Test</strong> 및<strong> Prod</strong> 환경에 배포할 수 있습니다.</li>
+  </ul>
+
+
+  <p>여러 환경에 데이터 팩터리 배포를 자동화하도록 VSTS 릴리스 정의를 설정할 수도 있습니다. <a href="https://go.microsoft.com/fwlink/?linkid=871138" target="_blank">데이터 팩터리와 지속적인 통합 및 배포</a>를 수행하기 위한 자세한 정보와 단계를 확인하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6f8637f8-0886-43ca-824a-4e6b53f31430.png"><img alt="Data Factory Prod Deployment" border="0" height="829" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e355b735-a5e7-4038-a19e-9cfe3d15f18e.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Data Factory Prod 배포" width="1562"></a></p>
+
+
+  <p>고객 피드백에 따라 새로운 기능을 추가하기 위해 지속적으로 노력하고 있습니다. Azure Data Factory를 사용하여 파이프라인 빌드를 쉽고 빠르게 <a href="https://docs.microsoft.com/en-us/azure/data-factory/">시작</a>합니다. 기능 요청이 있거나 피드백을 제공하려는 경우 <a href="https://feedback.azure.com/forums/270578-azure-data-factory">Azure Data Factory 포럼</a>을 방문하세요.</p>

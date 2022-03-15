@@ -1,0 +1,51 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b953eb4fc2489766379e3dc37300ed1276915672
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902803"
+Slug: accelerate-your-insights-with-performance-counters
+Title: 애플리케이션 Insights 성능 카운터를 사용하여 인사이트 가속화
+Summary: 이제 Visual Studio Application Insights 사용하여 Azure Web Apps에 대한 성능 카운터를 모니터링할 수 있습니다.
+Content: >-
+  <p>이제 <a href="https://azure.microsoft.com/services/application-insights/">Visual Studio Application Insights</a> 사용하여 <a href="https://azure.microsoft.com/services/app-service/web/">Azure Web Apps</a>에 대한 성능 카운터를 모니터링할 수 있습니다. 최근까지 앱을 모니터링할 때 <a href="https://portal.azure.com">Azure</a> Portal에서 CPU 및 네트워크 사용량과 같은 성능 카운터를 사용할 수 없었습니다&rsquo;. 이는 Azure Web Apps가 자체 머신에서 실행되지 않기&rsquo; 때문입니다. 새 <a href="https://github.com/Microsoft/ApplicationInsights-SDK-Labs/tree/master/AggregateMetrics">집계 메트릭 패키지는</a> 이 원격 분석을 추가하므로 이제 워크로드가 달라짐에 따라 앱&rsquo;에서 리소스 사용을 모니터링할 수 있습니다.</p>
+
+
+  <p>시작하려면 앱에 <a href="https://www.myget.org/gallery/applicationinsights-sdk-labs">집계 메트릭 시험판 NuGet 패키지를</a> 설치하기만 하면 됩니다. 이 패키지는 이제 <a href="https://github.com/Microsoft/ApplicationInsights-SDK-Labs/blob/master/README.md">SDK Labs 피드에 있습니다</a>. 그런 다음 <a href="https://portal.azure.com">Azure</a> Portal 내의 <a href="https://azure.microsoft.com/documentation/articles/app-insights-metrics-explorer/">애플리케이션 Insights 메트릭 탐색기</a>에서 아래 성능 차트를 볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1efe9490-4e85-416e-8268-7ea260827e6b.png"><img alt="Performance Counters in action" border="0" height="387" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1d1ad430-4c8e-48e5-9dcb-9e28d6d7c1f2.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="인사이트 가속화" width="556"></a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/app-service/web/">Azure Web Apps</a>는 계속해서 Azure 클라우드에서 웹앱, 웹 사이트 및 API를 호스트하는 동시에 Visual Studio 통합, 배포 용이성 및 민첩성과 같은 다양한 기능을 유지 관리할 수 있습니다. 간단히 말해서 Azure Web Apps는 배포 및 실행이 간단합니다.</p>
+
+
+  <p>그러나 클라우드에서 실행되는 동안 Azure Web Apps&rsquo; 성능을 모니터링하는 데는 제한이 있습니다. 웹 페이지와 앱은 샌드박스 환경에서 실행되어 동일한 컴퓨터에서 실행되는 다른 앱과 분리됩니다. 개발자에게 이 샌드박스는 궁극적으로 Azure Web Apps를 사용하는 저렴한 비용의 절충입니다. 샌드박스를 사용하면 앱이 성능 카운터에 액세스하고 <a href="https://technet.microsoft.com/library/cc749249(v=ws.11).aspx">성능 모니터</a>를 사용할 수 없게 됩니다. 데스크톱에서 성능 모니터는 시각화를 해석하기 쉬운 포괄적인 메트릭 선택을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/843a8133-b517-4c64-93af-ad78a2b0e7e9.png"><img alt="perfMon" border="0" height="438" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6c41dda2-c1c0-443e-a707-34a3719361fc.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Perfmon" width="610"></a></p>
+
+
+  <p>지금까지는 Azure Web App의 성능에 대한 인사이트를 얻는 데 사용할 수 있는 <a href="https://azure.microsoft.com/documentation/articles/web-sites-monitor/">메트릭이 거의</a> 없었고, 사용 가능한 몇 가지 메트릭은 성능 모니터의 종합성에 근접하지 않았습니다.</p>
+
+
+  <p>애플리케이션 Insights 팀은 웹앱 성능에 대한 보다 완전한 피드백이&rsquo; 필요했으며&rsquo;, 성능 카운터를 수집하고 애플리케이션 Insights 통해 Azure Portal에서 시각화하는 <a href="https://github.com/Microsoft/ApplicationInsights-SDK-Labs">솔루션을 Application Insights&rsquo; SDK Labs</a>에 추가했다고 발표하게 된 것을 자랑스럽게 생각합니다. <a href="https://github.com/Microsoft/ApplicationInsights-SDK-Labs/tree/master/AggregateMetrics">집계 메트릭</a> 솔루션에는 사용 중인 메모리 및 사용 중인 CPU&rsquo; 프로세서의 백분율과 같은 여러 가지 성능 카운터가 포함되어 있습니다.&nbsp; 현재 성능 카운터는 향후 개발을 위해 계획된 <a href="https://azure.microsoft.com/blog/live-metrics-stream/">라이브 메트릭 스트림</a> 구현과 함께 기록 데이터를 제공합니다.</p>
+
+
+  <h2>사용자 지정 성능 카운터</h2>
+
+
+  <p>또한 앱 성능에 대한 보다 자세한 인사이트를 제공하기 위해 스레드 및 핸들 수와 같은 사용자 지정 성능 카운터를 구현했습니다. 이러한 카운터는 구체적이며 앱&rsquo; 요구 사항에 따라 프로젝트에 독립적으로 추가할 수 있습니다. 현재 Azure Web Apps 팀의 제공된 콘텐츠에 의해 가용성이 제한되기 때문에 사용자 지정 카운터는 거의 없습니다. 사용자 지정 카운터 <a href="https://github.com/Microsoft/ApplicationInsights-SDK-Labs/blob/master/AggregateMetrics/README.md">를 시작</a> 하려면 <a href="https://azure.microsoft.com/documentation/articles/app-insights-web-monitor-performance/#system-performance-counters">다른 성능 모니터와 마찬가지로</a> ApplicationInsights.config 파일만 조정하면 됩니다.</p>
+
+
+  <h2>Microsoft 인턴 프로그램</h2>
+
+
+  <p>성능 카운터는 응용 프로그램 Insights&rsquo; 여름 인턴의 두 가지에 의해 개발 된 지속적인 프로젝트되었습니다 : 나 자신, <a href="https://github.com/frackleton">매켄지 프랙레톤,</a> <a href="https://github.com/mateoatr">마테오 토레스 루이스</a>. GitHub 프로필을 클릭하여 최신 개발을 확인합니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>이제 성능 카운터를 사용하여 Azure Web App 원격 분석에 대한 메트릭을 제공할 수 있습니다. 항상 피드백을 듣고 싶으므로 문제 또는 기능 요청은 <a href="https://github.com/Microsoft/ApplicationInsights-SDK-Labs/issues">여기</a>의 Application Insights SDK Labs 리포지토리를 방문하세요. 애플리케이션 Insights 팀 전체가 개발자에게 양질의 도구를 제공하기 위해 최선을 다하고 있습니다. 추가 <a href="https://visualstudio.uservoice.com/forums/357324">피드백 또는 새로운 기능 권장 사항을</a> 환영합니다.</p>

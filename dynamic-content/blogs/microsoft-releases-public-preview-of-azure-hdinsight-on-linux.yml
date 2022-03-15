@@ -1,0 +1,75 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b837cd03982a447c73f93d4ab483219d76a16402
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898325"
+Slug: microsoft-releases-public-preview-of-azure-hdinsight-on-linux
+Title: Linux에서 Azure HDInsight의 Microsoft 릴리스 공개 미리 보기
+Summary: 어제 Strata+Hadop World 컨퍼런스에서 Linux에서 사용할 수 있는 첫 번째 Microsoft Azure 관리 서비스인 HDInsight를 발표했습니다. 이 게시물은 이 새로운 제품의 기능과 아웃을 제공합니다.
+Content: >-
+  어제 Strata+Hadop World 컨퍼런스에서 <a href="https://go.microsoft.com/fwlink/?LinkId=526156">Linux에서 사용할 수 있는 첫 번째 Microsoft Azure 관리 서비스인 HDInsight를 발표했습니다</a>. 이 게시물은 이 새로운 제품의 기능과 아웃을 제공합니다.
+
+  <h2>Azure HDInsight란?</h2>
+
+  Azure HDInsight는 Microsoft의 Hadoop-as-a-service 제품입니다. HDP(Hortonworks Data Platform)를 기반으로 하며 Azure 클라우드용으로 설계되었습니다. HDInsight는 고객에게 다음과 같은 이점을 제공합니다.
+
+  <ul>
+   <li><strong><span style="text-decoration: underline;">실시간으로 제공되는 대규모 비관계형 데이터 세트를 바꿉니다.</span></strong> Hadoop의 핵심 값은 관계형이든 비관계형이든 관계없이 거의 실시간으로 대량의 데이터를 처리하는 기능입니다.</li>
+   <li><strong><span style="text-decoration: underline;">빠른 값 시간</span>:</strong> Hadoop-as-a-service는 누구나 몇 번의 클릭으로 몇 분 이내에 노드 수에 따라 Hadoop을 스핀업할 수 있습니다.</li>
+   <li><strong><span style="text-decoration: underline;">하드웨어 계획 또는 유지 관리가 필요하지 않은 최소한의 배포 전문 지식</span>:</strong> 주문형 클러스터를 스핀업할 수 있으므로 하드웨어 유지 관리, 튜닝, 패치, 업그레이드 및 용량 계획을 수행할 필요가 없습니다.</li>
+   <li><strong><span style="text-decoration: underline;">Microsoft의 안정성 SLA에 의해 뒷받침됩니다</span></strong> . Azure의 99.9% 안정성 보장을 통해 Microsoft는 안심할 수 있도록 클러스터 24x7을 모니터링합니다.</li>
+  </ul>
+
+  <h2>Linux의 Azure HDInsight란?</h2>
+
+  이 공지 사항을 통해 고객은 Azure Portal에서 HDInsight를 배포할 때 Windows 또는 Linux를 선택할 수 있습니다. 두 옵션 모두 Hadoop에서 운영 체제에 이르기까지 전체 스택에 대한 간단한 배포, SLA, 기술 지원을 제공하는 일류 시민입니다.
+
+
+  Linux 온-프레미스에서 Hadoop을 배포한 경험이 있는 고객의 경우 기존 기술 세트 및 도구(설명서, 샘플 및 템플릿)를 활용하여 HDInsight에서 작업할 수 있습니다. 이제 SSH 및 Ambari와 같은 친숙한 도구를 사용할 수 있습니다.
+
+  <ul>
+   <li>HDInsight 클러스터에 대한 SSH 연결은 Linux 클러스터의 모든 HDInsight에 대해 기본적으로 사용하도록 설정됩니다.선택한 SSH 클라이언트를 사용하여 클러스터에 연결할 수 있습니다.또한 SSH 터널링을 활용하여 브라우저에서 모든 Hadoop 웹 애플리케이션으로 트래픽을 전달할 수 있습니다.</li>
+  </ul>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/02/17/clip_image002.jpg"><img style="padding-top: 0px; padding-left: 0px; margin: 0px 0px 0px 33px; padding-right: 0px; border-width: 0px;" title="clip_image002" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image002_thumb.jpg" alt="clip_image002" width="611" height="325" border="0" /></a>
+
+  <ul>
+   <li>Ambari는 빅 데이터 클러스터의 관리 및 모니터링을 위한 프로젝트입니다. Azure Portal에서 찾아볼 때 클러스터에 배포된 것을 확인할 수 있습니다.Ambari는 Hadoop 클러스터의 성능 및 상태에 대한 단일 보기를 제공할 뿐만 아니라 구성 설정을 사용자 지정하고 추가 Hadoop 앱을 클러스터에 배포하는 기능을 제공합니다.Ambari는 클러스터에 호스트된 웹앱에서 구성할 수 있는 HDInsight 클러스터 내에서 모니터링 및 경고를 제공합니다.<a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/02/17/clip_image004.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="clip_image004" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image004_thumb.jpg" alt="clip_image004" width="598" height="439" border="0" /></a></li>
+  </ul>
+
+  <h2>시작하려면 어떻게 해야 하나요?</h2>
+
+  Linux의 Azure HDInsight에서 시작하려면 미리 보기 기능 페이지에서 미리 보기에 등록해야 합니다. 이렇게 하려면 Azure Portal로 이동하여 HDInsight에서 옵션을 선택하여 등록합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/02/17/clip_image006.jpg"><img style="padding-top: 0px; padding-left: 0px; margin: 0px 0px 0px 33px; padding-right: 0px; border-width: 0px;" title="clip_image006" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image006_thumb.jpg" alt="clip_image006" width="602" height="279" border="0" /></a>
+
+
+  미리 보기에 등록한 후 채널 9 비디오를 시청하여 자세한 내용을 확인하세요.
+
+
+  <a href="https://channel9.msdn.com/Shows/Data-Exposed/HDInsight-on-Linux"><img style="padding-top: 0px; padding-left: 0px; margin: 0px 0px 0px 30px; padding-right: 0px; border-width: 0px;" title="clip_image008" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image008.jpg" alt="clip_image008" width="601" height="298" border="0" /></a>
+
+
+  Strata에서 발표한 공지 사항에 대한 자세한 내용은 <a href="https://blogs.microsoft.com/?p=47793">공식 Microsoft 블로그</a> 및 <a href="https://azure.microsoft.com/blog/2015/02/18/microsoft-continues-vision-for-broad-big-data-adoption-while-showing-more-love-for-linux">Azure 블로그</a>를 참조하세요. 마지막으로 Linux의 Azure HDInsight에 대한 자세한 내용은 아래를 참조하세요.
+
+  <ul>
+   <li><a href="https://channel9.msdn.com/Shows/Data-Exposed/HDInsight-on-Linux">채널 9 비디오: Linux의 HDInsight</a></li>
+   <li>Windows 또는 Linux를 사용하는 경우 권장 사항을 제공하는 <a href="https://go.microsoft.com/fwlink/?LinkId=522026">HDInsight 소개</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-linux-get-started/">Linux에서 HDInsight 사용 시작</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-linux-information/">Linux의 HDInsight에 대한 팁</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-streaming-python/">Linux의 Azure HDInsight에 대한 Python MapReduce 작업 개발</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-hadoop-linux-use-ssh-unix/">HDInsight에서 Linux 기반 Hadoop과 함께 SSH 키 사용</a></li>
+   <li><a href="https://azure.microsoft.com/blog/2015/02/18/the-first-azure-hosted-service-that-runs-on-linux/">블로그: HDInsight는 Linux에서 실행할 첫 번째 Azure 서비스입니다.</a></li>
+  </ul>
+
+  <strong>HDInsight에 대한 일반 정보:</strong>
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/services/hdinsight/">설명서 읽기</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/hdinsight-learn-map/">Learning 맵</a></li>
+   <li><a href="https://www.microsoftvirtualacademy.com/training-courses/getting-started-with-microsoft-big-data">Microsoft Virtual Academy</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/pricing/free-trial/">30일 평가판 사용해 보기</a></li>
+  </ul>

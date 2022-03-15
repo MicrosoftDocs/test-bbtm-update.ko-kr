@@ -1,0 +1,37 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7da440a01e5495ac01d36e6760f235a2011b3599
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899054"
+Slug: building-cross-platform-apps-with-xamarin-and-azure-mobile-services
+Title: Xamarin 및 Azure Mobile Services 사용하여 플랫폼 간 앱 빌드
+Summary: >-
+  Azure Mobile Services 팀은 애틀랜타의 Xamarin Evolve에서 부스와 미니 해커톤을 후원하고 있습니다!우리는 또한 목요일에 진화에서 Mobile Services 세션을 발표 할 예정입니다.
+
+
+  Xamarin 및 Mobile...
+Content: >-
+  Azure Mobile Services 팀은 애틀랜타의 Xamarin Evolve에서 부스와 미니 해커톤을 후원하고 있습니다!우리는 또한 목요일에 진화에서 Mobile Services 세션을 발표 할 예정입니다.
+
+
+  Xamarin 및 Mobile Services 적합합니다. Xamarin을 사용하면 네이티브 환경으로 플랫폼 간 앱을 쉽게 빌드할 수 있으며 Azure Mobile Services 푸시 알림, 인증 및 오프라인 데이터 동기화와 같은 다양한 앱 서비스를 제공합니다. 또한 Azure Mobile Services 인증을 위한 Azure Active Directory 및 온-프레미스 데이터 및 서비스에 대한 보안 액세스를 위한 하이브리드 연결과 같은 엔터프라이즈 기능을 제공합니다.
+
+
+  <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=8874">3M</a>은 최근에 Xamarin 및 Azure Mobile Services 사용하여 클라우드와 동기화되고 여러 모바일 디바이스에서 실행되는 모바일 자산 추적 앱을 신속하게 제공했습니다. 이 앱은 3M 영업 사원에게 고객 관계를 개선하고 비즈니스 확장을 허용하는 실시간 인사이트를 제공합니다.3M 개발 팀은 3M 장비 및 기타 원본의 데이터를 쉽게 통합하고 저장할 수 있는 안전하고 확장 가능한 플랫폼을 위해 Azure Mobile Services 선택했습니다. 3M의 모바일 애플리케이션 설계자 인 Jason Fox는 "우리는 처음부터 백 엔드를 구축 할 수있는 사내 인재를 가지고 있지만 Azure Mobile Services 없이 합리적인 시간 내에 모든 백 엔드 서비스로 모바일 앱을 만들 수있는 방법은 없었습니다." Xamarin Studio 및 Visual Studio 통합은 기본 제공 기능과 함께 Azure Mobile Services 모바일 서비스 백 엔드에 가장 적합한 선택으로 만들었습니다." "이틀 안에 안정적이고 견고하며 기능적인 솔루션을 함께 배치할 수 있는 적절한 도구와 기능을 갖추는 것은 훌륭한 이야기입니다."
+
+
+  주말 동안 앱을 성공적으로 빌드한 후 3M 사업부는 회사 내의 다른 비즈니스 그룹에 대해 유사한 추적 앱을 만들 수 있는 기회를 찾고 있습니다. 3M의 제품 개발 매니저인 Jason Rivera는 "이 플랫폼은 전체 솔루션을 신속하게 확장하고 매우 짧은 응답 시간 내에 업데이트를 제공할 수 있는 기회를 제공합니다."Azure Mobile Services 플랫폼의 이점은 개발 팀의 손에 힘을 주세요."
+
+
+  3M에서 Xamarin 및 Azure Mobile Services 사용하는 방법에 대한 자세한 내용은 <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=8874">사례 연구를</a> 참조하세요. Xamarin 앱에 Mobile Services 백 엔드를 쉽게 추가하는 방법을 알아보려면 아래 자습서 및 리소스를 참조하세요.
+
+
+  리소스:
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-services-dotnet-backend-xamarin-ios-get-started/">Xamarin에서 Mobile Services 시작</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-services-xamarin-ios-get-started-offline-data/">Xamarin에서 오프라인 데이터 동기화 사용</a></li>
+      <li><a href="https://channel9.msdn.com/Shows/Cloud+Cover/Episode-155-Offline-Storage-with-Donna-Malayeri">클라우드 커버 에피소드: 오프라인 데이터 동기화 Mobile Services</a></li>
+  </ul>

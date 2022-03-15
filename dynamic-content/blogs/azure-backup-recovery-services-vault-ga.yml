@@ -1,0 +1,103 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2f46ec3bcc6cc9762a961f1f00719c8e903ffe12
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902814"
+Slug: azure-backup-recovery-services-vault-ga
+Title: Recovery Services 자격 증명 모음의 일반 공급 – ARM VM에 대한 Azure Backup 지원
+Summary: Azure Backup Recovery Services 자격 증명 모음은 Resource Manager VM의 백업을 지원하며 이제 일반 공급됩니다.
+Content: >-
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">현재는 클라우드에서 백업 및 재해 복구 요구 사항을 관리하기 위한 Recovery Services 자격 증명 모음, anAzure&nbsp; <a href="https://azure.microsoft.com/en-in/documentation/articles/resource-group-overview/" style="font-size: 13px;" target="_blank">Resource Managerresource</a>&nbsp;의 일반 공급에 대해 발표하게 되어 기쁩니다. Recovery Services 자격 증명 모음은 새 Azure Portal의 통합 자격 증명 모음으로, Backup 자격 증명 모음 및 Site Recovery 자격 증명 모음을 대체합니다. 이 공지 사항에는&nbsp; ARM VM 백업용<a href="https://aka.ms/azurebackup_landingpage" style="font-size: 13px;" target="_blank">Azure Backupsupport</a>&nbsp;,즉 v2 VM 백업 일반 공급,&nbsp; 지원클라우드 솔루션 공급자구독<a href="https://partnercenter.microsoft.com/en-us/partner/home" style="font-size: 13px;" target="_blank">,</a>&nbsp; Premium Storage VM 공개 미리 보기 및&nbsp; 온-프레미스 Windows  서버, SCDPM 및 Azure Backup Server를 <a href="https://portal.azure.com" style="font-size: 13px;" target="_blank">새로운 Azure Portal</a>의 Recovery Services 자격 증명 모음에&nbsp; 연결합니다.</p>
+
+
+  <h2 style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-style: normal;">가치 제안</h2>
+
+
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">Azure Backupscloud&rsquo;&nbsp; <a href="https://blogs.technet.microsoft.com/systemcenter/2016/05/04/a-tour-of-operations-management-suite-backup/" style="font-size: 13px;">우선 백업 전략</a>&nbsp;:</p>
+
+
+  <ul style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">
+   <li style="font-size: 13px;">VM을 종료할 필요 없이 Linux Azure VM에 대한 Windows Azure VM 및 파일 시스템 일치 백업에 대한 애플리케이션 일치 백업입니다.</li>
+   <li style="font-size: 13px;">백업에 대한 스토리지 관리 복잡성을 제거하기 위한 바닥이 없는 Recovery Services 자격 증명 모음입니다.</li>
+   <li style="font-size: 13px;">클라우드 및 클라우드에 대한 효율적이고 신뢰할 수 있는 백업</li>
+   <li style="font-size: 13px;">백업 인프라 유지 관리가 없습니다.</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><img alt="Backup to the cloud and in the cloud" border="0" height="344" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9fcce9db-b01b-4c78-9c8c-a7e305e52798.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Recovery Services 자격 증명 모음 - Azure Backup" width="360"></p>
+
+
+  <h2 style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-style: normal;">기능</h2>
+
+
+  <h4 style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-style: normal;">Resource Manager VM 지원</h4>
+
+
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">몇 달 전에 클래식 <a href="https://azure.microsoft.com/en-us/blog/general-availability-of-backup-for-azure-iaas-vms/" style="font-size: 13px;" target="_blank">VMswhich</a>&nbsp; Azure Backup GA&rsquo;에 대한 백업 지원 외에도&nbsp; Recovery Services 자격 증명 모음은 Azure Resource Manager VM에 대한 백업도 지원합니다. 이 지원은 클래식 VM에 대한 백업과 동일한 혜택 집합을 제공합니다.</p>
+
+
+  <h4 style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-style: normal;">Premium Storage VM의 공개 미리 보기</h4>
+
+
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">Azure Premium Storage I/O 집약적 워크로드에 대해 고성능 및 짧은 대기 시간 스토리지를 제공합니다. Premium Storage 실행되는 VM에 대한 Azure Backup 지원은 실수로 인한 삭제 및 VM 손상 시나리오로부터 이러한 VM을 보호합니다.</p>
+
+
+  <h4 style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-style: normal;">Recovery Services 자격 증명 모음에 대한 PowerShell 지원</h4>
+
+
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">Azure VM에 대한 백업 환경을 자동화하는 것 외에도 Recovery Services 자격 증명 모음용 Azure Backup PowerShell cmdlet을 사용하면 Windows 서버, Windows 클라이언트, System Center Data Protection Manager 및 Azure Backup Server와 같은 온-프레미스 자산에 대한 백업을 클라우드에 자동으로 관리할 수 있습니다.</p>
+
+
+  <h4 style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-style: normal;">새 Azure Portal의 간소화된 환경</h4>
+
+
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">단순성은 Recovery Services 자격 증명 모음의 디자인 목표이며, in-line with <a href="https://portal.azure.com" style="font-size: 13px;">thenewAzure&nbsp;</a>&nbsp; <a href="https://portal.azure.com" style="font-size: 13px;" target="_blank">Portal</a>입니다. VM 집합에 백업을 사용하도록 설정하는 작업은 이제 3단계 단계별 마법사입니다. 두 가지 간단한 단계를 사용하여 백업된 VM을 특정 시점으로 복원할 수도 있습니다(Azure Backup은 업계 표준 GFS 스키마를 사용하여 장기 보존 지원).</p>
+
+
+  <h4 style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-style: normal;">클라우드 솔루션 파트너 구독 지원</h4>
+
+
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">Azure는 CSP 프로그램을 사용하는 파트너에게 매력적인 가치 제안을 제공합니다. 이제 새 Azure Portal에서 Recovery Services 자격 증명 모음을 만들기 위한 ARM 리소스 모델을 사용하여 CSP 구독에서 백업을 지원할 수 있습니다. 파트너는 단일 솔루션을 사용하여 온-프레미스에서 실행되는 애플리케이션 및 Windows 서버/클라이언트의 파일 및 폴더를 포함하여 온-프레미스 데이터뿐만 아니라 클라우드의 IaaS VM을 보호할 수 있습니다.</p>
+
+
+  <h2 style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-style: normal;">시작</h2>
+
+
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;"><a href="https://azure.microsoft.com/en-in/documentation/articles/backup-azure-vms-first-look-arm/" style="font-size: 13px;" target="_blank">Azure VM의 복구</a>를 시작&nbsp;하려면 아래 세 단계를 수행합니다.</p>
+
+
+  <ul>
+   <li style="font-size: 13px;">Recovery Services 자격 증명 모음을 만듭니다.</li>
+   <li style="font-size: 13px;">백업 보호 정책(예: 일정 및 백업 복사본을 보존할 기간)을 지정합니다.</li>
+   <li style="font-size: 13px;">백업할 가상 머신을 지정합니다.</li>
+  </ul>
+
+
+  <p style="font-size: 13px;">&nbsp;</p>
+
+
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">또한 Azure Backup에서 코리 샌더스가 아래의 멋진 비디오를 시청하세요.&gt;&nbsp;</p>
+
+
+  <p style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">&nbsp;</p>
+
+
+  <p><iframe allowfullscreen="" autostart="0" frameborder="0" height="315" src="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Tuesdays-with-Corey-Azure-VM-Backup-and-Oh-Canada-eh/player#time=0h1m18s:paused" width="560"></iframe></p>
+
+
+  <h2 style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-style: normal;">관련 링크 및 추가 콘텐츠</h2>
+
+
+  <ul style="font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;">
+   <li style="font-size: 13px;"><a href="https://azure.microsoft.com/en-us/services/backup/" style="font-size: 13px;" target="_blank">Azure Backup</a>에 대해&nbsp; 자세히 알아봅니다.</li>
+   <li style="font-size: 13px;">자세한 내용을 원하십니까? OutAzure&nbsp; <a href="https://azure.microsoft.com/en-us/documentation/services/backup/" style="font-size: 13px;" target="_blank">Backup 설명서를 확인하세요</a>.</li>
+   <li style="font-size: 13px;"><a href="https://azure.microsoft.com/en-us/pricing/free-trial/" style="font-size: 13px;" target="_blank">Azure 평가판 구독</a>에&nbsp; 등록합니다.</li>
+   <li style="font-size: 13px;">도움이 필요하신가요? 지원을 위해&nbsp;<a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=windowsazureonlinebackup" style="font-size: 13px;" target="_blank">Azure Backup 포럼</a>&nbsp;에 문의하세요.</li>
+   <li style="font-size: 13px;"><a href="https://feedback.azure.com/forums/258995-azure-backup" style="font-size: 13px;" target="_blank">Azure Backupby</a>&nbsp;가 새로운 아이디어를 기여하고 기존 아이디어를 투표하는 방법을&nbsp; 알려주세요.</li>
+   <li style="font-size: 13px;">Twitterfor&nbsp;<a href="https://twitter.com/azurebackup" style="font-size: 13px;" target="_blank">@AzureBackup</a>&nbsp;에서 최신 뉴스 및 업데이트를 팔로우하세요.</li>
+  </ul>

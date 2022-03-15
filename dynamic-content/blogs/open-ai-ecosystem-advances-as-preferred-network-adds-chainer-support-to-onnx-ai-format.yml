@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bf8cf44d7ecb8a624506c121c2802f30d986c885
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908799"
+Slug: open-ai-ecosystem-advances-as-preferred-network-adds-chainer-support-to-onnx-ai-format
+Title: 기본 설정 네트워크가 ONNX AI 형식에 Chainer 지원을 추가함에 따라 개방형 AI 에코시스템이 발전
+Summary: '9월에는 상호 운용성을 높이고 AI 개발 및 배포를 위한 마찰을 줄이기 위해 Microsoft가 공동으로 만든 ONNX(Open Neural Network Exchange) 형식을 도입했습니다. '
+Content: >-
+  <p align="left"><em>이 게시물은 비즈니스 AI 엔지니어링의 기업 부사장인 Steven Guggenheimer가 작성했습니다.</em></p>
+
+
+  <p align="left">9월에는 상호 운용성을 높이고 AI 개발 및 배포를 위한 마찰을 줄이기 위해 Microsoft가 공동으로 만든 <a href="https://azure.microsoft.com/en-us/blog/microsoft-and-facebook-create-open-ecosystem-for-ai-model-interoperability">ONNX(Open Neural Network Exchange)</a> 형식을 도입했습니다. 가을까지 비전을 공유하는 많은 회사가 ONNX 에코시스템 및 <a href="https://azure.microsoft.com/en-us/blog/announcing-onnx-1-0-an-open-ecosystem-for-ai/">ONNX v1에</a> 대한 <a href="https://azure.microsoft.com/en-us/blog/support-for-open-ai-ecosystem-grows-as-amazon-web-services-joins-onnx-ai-format/">지원을</a> 12월에 발표했습니다.<a href="https://azure.microsoft.com/en-us/blog/microsoft-and-facebook-call-for-open-ai-ecosystem-gaining-broader-industry-momentum/"></a></p>
+
+
+  <p align="left">오늘 우리는 PFN (Preferred Networks)이 Chainer에서 ONNX 지원을 추가하는 것을 공유하게되어 기쁩니다. ONNX는 PFN에 전략적으로 중요합니다. 이는 체인서&rsquo;의 강력하고 유연하며 직관적인 특징을 정의별 접근 방식과 다양한 디바이스에 배포의 용이성에서 비롯된 솔루션이 될 수 있기 때문입니다. PFN은 또한 ONNX 개방형 에코시스템의 이점을 인식하여 딥 러닝을 수행하는 개발자가 도구 간에 쉽게 이동할 수 있도록 하여 현재 작업에 가장 적합한 도구를 선택할 수 있습니다. ONNX &mdash; Caffe2, PyTorch, Microsoft Cognitive Toolkit, MXNet 및 현재 Chainer에 대한 더 많은 프레임워크 지원을 포함하는 것이&rsquo; 좋습니다.</p>
+
+
+  <p align="left">Microsoft는 개방형 AI 에코시스템을 통해 모든 플랫폼에서 모든 플랫폼에서 AI의 발전을 통해 AI가 모든 사용자에게 더 접근 가능하고 가치 있게 되도록 할 것이라고 믿습니다. 5월에는 <a href="https://blogs.msdn.microsoft.com/stevengu/2017/05/22/decode-2017-in-tokyo-japan/">Preferred Networks와 글로벌 제휴 파트너십을 발표</a>하고, 마찰 없는 배포, Chainer 및 Azure Batch AI 통합을 위해 128 Azure InfiniBand GPU 클러스터/<a href="https://github.com/azmigproject/ChainerMN/tree/master">Azure Resource Manager 템플릿</a>에서 Azure <a href="https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/dsvm-deep-learning-ai-frameworks">DSVM Chainer 사전 설치</a>, Chainer x100 성능과 같은 Chainer 및 <a href="https://docs.microsoft.com/en-us/azure/batch-ai/overview">Microsoft AI</a> 서비스 통합을 공동으로 진행했습니다. Chainer에 대한 ONNX 지원을 통해 개발자, 데이터 과학자 및 연구원은 새롭고 흥미로운 AI 혁신을 더 빠르게 제공할 수 있습니다.</p>
+
+
+  <p align="left">커뮤니티의 다른 사람들이 방문하여 <a href="https://onnx.ai">https://onnx.ai</a> 자세히 알아보고 ONNX 활동에 참여하도록 초대합니다.  <a href="https://www.facebook.com/onnxai/">또한 페이스 북</a> 과 <a href="https://twitter.com/onnxai">@onnxai 트위터에</a> ONNX 업데이트를 얻을 수 있습니다.</p>
+
+
+  <p align="left"><a href="https://chainer.org/general/2018/01/17/onnx-support-by-chainer.html">기본 설정 네트워크 블로그</a>에 대해 자세히 읽어보세요.</p>

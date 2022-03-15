@@ -1,0 +1,69 @@
+### YamlMime:Yaml
+ms.openlocfilehash: eed9ac63f44c6959f0ae4e87d394618c3aa73721
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908843"
+Slug: new-configuration-experience-sql-server-virtual-machines
+Title: Azure Virtual Machines에서 SQL Server 대한 간소화된 구성 환경 소개
+Summary: VM을 훨씬 쉽게 설정할 수 있도록 SQL Server Virtual Machines에 대한 새로운 구성 환경을 발표합니다.
+Content: >-
+  <p>&rsquo;Azure Virtual Machine에서 SQL Server 위한 새롭고 간소화된 구성 환경을 도입하게 되어 매우 기쁩니다. 이제 <a href="https://portal.azure.com/">Azure Portal</a>에서 SQL Server VM을 만들 때 SQL Server 연결, 성능, 보안 및 고가용성을 구성할 수 있습니다. 기본 권장 설정을 적용하거나 원하는 대로 수정합니다. 설치 후 수동 구성에 더 이상 시간이 소요되지 않습니다.</p>
+
+
+  <p>이 새로운 간소화된 구성 환경은 SQL Server 구성 속도를 높이기 위해 이전 기능을 기반으로 합니다. <a href="https://blogs.technet.com/b/dataplatforminsider/archive/2015/03/06/sql-automated-backup-and-patching-support-in-existing-sql-server-virtual-machines.aspx">자동화된 패치</a>, <a href="https://blogs.technet.com/b/dataplatforminsider/archive/2015/03/06/sql-automated-backup-and-patching-support-in-existing-sql-server-virtual-machines.aspx">자동화된 백업</a>, <a href="https://blogs.technet.com/b/dataplatforminsider/archive/2015/03/06/sql-automated-backup-and-patching-support-in-existing-sql-server-virtual-machines.aspx">Azure Key Vault 통합</a>. <i>Virtual Machine 포털 만들기</i> 환경의 새로운 &ldquo;SQL Server 구성&rdquo; 섹션에서 이러한 SQL Server 특정 기능을 통합하고, 대상 워크로드에 대한 SQL Server 및 VM 스토리지를 구성하고, SQL Server 연결을 구성하고, SQL Server 구성하는 기능을 추가했습니다.  Azure Key Vault에 암호화 키를 저장합니다.</p>
+
+
+  <h1>새 환경을 사용하여 SQL Server Virtual Machines 구성</h1>
+
+
+  <p>SQL Server Virtual Machines에 대한 새 구성 환경을 사용해 보려면 <a href="https://portal.azure.com">Azure Portal</a>로 이동합니다. Azure <em>Marketplace</em>에서 원하는 SQL Server 버전을 찾을 수 있습니다. 새 <em>Resource Manager</em> 배포 모델을 선택하고 만들기를 클릭합니다. <em>Virtual Machine 만들기</em> 블레이드에서 새 SQL Server 구성 섹션에서 모든 SQL Server 특정 기능을 찾을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/43e65001-9e3e-4a5e-889f-58e028d9f5cc.png"><img alt="Introducing a simplified configuration experience for SQL Server in Azure Virtual Machines" border="0" height="424" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4cd68df5-5825-45ea-ac53-71676c62cb79.png" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-image: none" title="프로 비전" width="610"></a></p>
+
+
+  <h3>SQL Server 연결 구성</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/59bc81ac-a697-4542-b7b6-8b7af416bd33.png"><img align="right" alt="Introducing a simplified configuration experience for SQL Server in Azure Virtual Machines" border="0" height="151" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/137df1c2-3916-4ffc-83e7-0e1cf6f55d12.png" style="background-image: none; float: right; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="SQL 연결" width="213"></a> 과거에는 SQL Server 연결을 구성하는 것이 간단하지 않았습니다. 예를 들어 원격 데스크톱에서 VM으로 SQL Server Management Studio(SSMS)를 사용하여 온-프레미스에서 연결하려면 VM 방화벽에서 SQL Server 포트를 열고 SSMS 열고 SQL Server 인증을 사용하도록 설정하고 VM에 대한 공용 Azure 엔드포인트를 만듭니다.</p>
+
+
+  <p>이제 인터넷을 통해 SQL 연결을 선택하고 포털에서 SQL Server 인증을 사용하도록 설정할 수 있습니다. 또한 Azure Virtual Network 내에서 SQL 연결을 선택하거나 VM 내에서만 허용할 수 있습니다.</p>
+
+
+  <h3>대상 워크로드에 대한 구성 SQL Server 및 VM 스토리지</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1332e864-e3b3-470d-8e5e-7df2fd4122d5.png"><img align="right" alt="Introducing a simplified configuration experience for SQL Server in Azure Virtual Machines" border="0" height="289" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6e31e54c-b35b-46f7-ad5e-e069b42156d1.png" style="background-image: none; float: right; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="Storage 구성" width="180"></a> 과거에는 SQL Server VM을 프로비전한 후 원하는 수의 IOP 또는 처리량(MB/s)을 제공하도록 적절한 수의 데이터 디스크를 수동으로 연결하고 구성해야 했습니다. 그런 다음 디스크에 SQL 파일을 스트라이프하거나 Storage 풀을 만들어 IOP 또는 처리량을 나누어야 합니다. 마지막으로 Azure&rsquo; <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-sql-server-performance-best-practices/">VM에 대한 성능 모범 사례</a>에 따라 SQL Server 구성해야 합니다.</p>
+
+
+  <p>Weve&rsquo;는 이제 프로비저닝 환경의 이 부분을 만들었습니다. 선택한 VM 크기의 제한 내에서 원하는 IOP, 처리량 및 스토리지 크기뿐만 아니라 최적화할 대상 워크로드(온라인 트랜잭션 처리 또는 데이터 웨어하우징)를 쉽게 구성할 수 있습니다. IOP, 처리량 및 스토리지 크기를&rsquo; 변경하면 VM에 연결할 디스크 수를 자동으로 선택합니다. VM 프로비전 중에 지정된 설정에 둘 이상의 디스크가 필요한 경우 모든&rsquo; 디스크에 하나의 Windows 스토리지 공간(가상 드라이브)을 자동으로 만듭니다.</p>
+
+
+  <h3>자동화된 패치 및 자동화된 백업</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0599427c-705d-46d1-ab96-86ad1b605a5f.png"><img align="right" alt="Introducing a simplified configuration experience for SQL Server in Azure Virtual Machines" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/635e4047-5cac-4377-932c-bbb11c7b2682.png" style="background-image: none; float: right; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="자동화된 패치" width="182"></a><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f6bdc9bb-a827-45b8-bf61-57dac7d9ce96.png"><img align="right" alt="Introducing a simplified configuration experience for SQL Server in Azure Virtual Machines" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f552d26c-6f3c-4f20-8236-5b194bc05d3f.png" style="background-image: none; float: right; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="자동화된 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-sql-server-automated-patching/">BackupAutomated</a>" width="181"></a> 패치를 사용하면 Windows 패치하고 SQL Server 기간을 지정할 수 있습니다. 이렇게 하면 워크로드에 영향을 주지 않고 예측 가능한 시간 동안 이 작업을 수행할 수 있습니다. 이 기능을 요청하는 고객이 너무 많아서 일요일 오전 2시에서 기본적으로 60분까지 사용하도록 설정했습니다. 물론 이러한 값을 원하는 대로 변경할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-sql-server-automated-backup/">자동화된 백업</a>을 사용하면 워크로드에 따라 SQL Server 모든 데이터베이스를 자동으로 백업하고 보존 시간을 지정할 수 있습니다. 기본적으로 모든 사용자가 서로 다른 요구 사항을 가지고 있으므로 백업을 사용하도록 설정하지 않습니다&rsquo;.</p>
+
+
+  <h3>Azure Key Vault와 통합<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/348f6f5e-ac20-493b-bd28-20c55d1095ac.png"><img align="right" alt="Introducing a simplified configuration experience for SQL Server in Azure Virtual Machines" border="0" height="269" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d8797afb-07b8-4a3f-b933-9f79dcd029db.png" style="background-image: none; float: right; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="Azure Key Vault 통합" width="174"></a></h3>
+
+
+  <p>올해 초 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-sql-server-azure-key-vault-integration/">Azure Key Vault 통합</a> 기능을 발표했습니다. 이 기능은 Azure Key Vault에 암호화 키를 저장하도록 SQL Server 구성을 간소화합니다. 또한 이 옵션을 포털 환경에 추가하여 이를 더욱 간소화했습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>Azure Virtual Machine에서 SQL Server 위한 간소화된 새로운 구성 환경을 도입했습니다. 설치 후 수동 구성에 더 이상 시간이 소요되지 않습니다.</p>
+
+
+  <p>오늘 <a href="https://portal.azure.com/">Azure Portal</a>에서 이 새로운 환경을 사용해 보세요. 자세한 내용은 <a href="https://azure.microsoft.com/documentation/articles/virtual-machines-sql-server-provision-resource-manager/">설명서를 확인하세요</a>.</p>

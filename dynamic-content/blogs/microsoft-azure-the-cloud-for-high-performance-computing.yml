@@ -1,0 +1,84 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7c5b401cfdf8ac8673a2bb5da0006dd8698cf257
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903160"
+Slug: microsoft-azure-the-cloud-for-high-performance-computing
+Title: Microsoft Azure, 고성능 컴퓨팅을 위한 클라우드
+Summary: 오늘날 우리는 고객이 Azure를 활용하여 고성능 및 가속 컴퓨팅의 새로운 경계를 통과하는 것을 계속 보고 있습니다. 파킨슨 병과 알츠하이머 병에 대한 약물 발견을 가속화하려는 신경학의 탐구에서부터 EFS의 자율 주행 자동차 기술 구축에 이르기까지 많은 고객이 획기적인 혁신을 위해 Azure를 활용하고 있습니다.
+Content: >-
+  <p>오늘날 우리는 고객이 Azure를 활용하여 고성능 및 가속 컴퓨팅의 새로운 경계를 통과하는 것을 계속 보고 있습니다. 파킨슨병과 알츠하이머 병에&rsquo;&rsquo; 대한 약물 발견을 가속화하기 위한 <a href="https://customers.microsoft.com/en-in/story/neuroinitiative-health-provider-azure" target="_blank">신경&rsquo;</a>학적 탐구에서부터 자율 주행 자동차 기술의 <a href="https://customers.microsoft.com/en-gb/story/efs-professionalservices-azure" target="_blank">EFSS&rsquo;</a> 구축에 이르기까지 수많은 고객이 획기적인 혁신을 위해 Azure를 활용하고 있습니다.</p>
+
+
+  <p>퍼블릭 클라우드에서 가장 광범위한 HPC(가속 및 고성능 컴퓨팅) 기능을 제공하기 위해 계속 투자하고 있습니다. 인공 지능 및 HPC용 InfiniBand 지원 Virtual Machine 제품군에서 Cray 슈퍼컴퓨팅과 같은 하이퍼스케일 서비스에 이르기까지 Azure를 통해 고객은 AI 및 기계 학습 애플리케이션의 전체 스펙트럼을 제공할 수 있습니다.</p>
+
+
+  <h2>Azure CycleCloud &ndash; 에서 HPC를 실행하는 가장 간단한 방법</h2>
+
+
+  <p>Azure에서 모든 규모의 HPC 클러스터를 생성, 관리, 운영 및 최적화하기 위한 도구인 Azure <a href="https://azure.microsoft.com/en-us/features/azure-cyclecloud/" target="_blank">CycleCloud</a>의 일반 공급에 대해 발표하게 되어 기쁩니다.</p>
+
+
+  <p>Azure CycleCloud를 사용하면 모든 사용자가 HPC 버스트, 하이브리드 또는 클라우드 전용 클러스터를 더 쉽게 배포, 사용 및 최적화할 수 있습니다. SLURM, PBS Pro, Grid Engine, LSF, HPC Pack 또는 HTCondor를 비롯한 스케줄러를 사용하여 기존 HPC 클러스터를 실행하는 사용자의 경우 클라우드에서 클러스터를 가동 및 실행하고 시간이 지남에 따라 HPC 워크로드에 대한 컴퓨팅/데이터 워크플로, 사용자 액세스 및 비용을 관리하는 가장 쉬운 방법입니다.</p>
+
+
+  <p>몇 번의 클릭으로 HPC IT 관리자는 Azure에서 컴퓨팅, 스토리지, 파일 시스템 및 애플리케이션 기능의 고성능 클러스터를 배포할 수 있습니다. Azure CycleClouds&rsquo; 역할 기반 정책 및 거버넌스 기능을 통해 조직은 런어웨이 비용을 방지하면서 필요한 경우 하이브리드 컴퓨팅 성능을 쉽게 제공할 수 있습니다. 사용자는 Azure CycleCloud를 사용하여 이러한 클러스터에서 작업 및 데이터 워크플로를 오케스트레이션할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ae22a42-3f04-45ec-960c-53a6f00bf7b7.png"><img alt="CycleCloud" border="0" height="973" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd9eb97e-5a0f-4a5c-97d0-40fa509f2c12.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CycleCloud" width="1599"></a></p>
+
+
+  <p>GE, Johnson &amp; Johnson 및 Ramboll을 포함한 고객은 CycleCloud 기술을 활용하여 HPC 클러스터를 배포하고, 액세스 및 비용을 제어하며, 클라우드에서 컴퓨팅 및 데이터 워크로드에 대한 관리를 간소화합니다. 혁신적인 HPC 시뮬레이션 및 AI 워크로드의 예로, 실리콘 테라피는 Azure CycleCloud를 사용하여 GPU를 사용하여 대규모 Slurm HPC 클러스터를 오케스트레이션하여 이러한 단백질이 약물 설계 프로젝트에서 어떻게 표적으로 삼을 수 있는지와 어떻게 평가할 수 있는지 평가하기 위해 많은 수의 단백질을 시뮬레이션합니다.</p>
+
+
+  <h2>양자 물리학 및 &ndash; 기계 학습을 사용한 실리콘 치료제 차세대 약물 발견</h2>
+
+
+  <p>실리콘 테라퓨틱스는 기존의 접근법에 어려운 것으로 여겨졌던 질병과 싸우기 위해 표적을 식별하고 약물을 설계하는 독특한 양자 물리학 시뮬레이션 기술을 만들었습니다. 이 도전적인 단백질 표적은 전형적으로 그들의 생물학 기능과 관련되었던 그들의 모양 &ldquo;규칙 변경&rdquo; 에 있는 큰 변경을 관련시킵니다.</p>
+
+
+  <p>이 회사는&rsquo; 독점적 인 플랫폼이 새로운 질병 목표를 식별하기 위해 단백질의 동적 특성과 생물학적 데이터를 결합합니다. 실험적 데이터와 물리학 기반 시뮬레이션 및 기계 학습의 통합은 게놈 규모로 수행될 수 있으며, 이는 컴퓨팅이 매우 까다롭지만 최신 컴퓨팅 시대에는 관장할 수 있습니다. 일단 표적이 확인되면, 플랫폼은 실험실에서 합성하고 시험하는 새롭고 더 나은 약 후보자의 디자인을 안내하는 데 사용되는 통찰력을 얻기 위해 원자 수준에서 분자의 수천을 연구하는 데 사용됩니다.</p>
+
+
+  <p>여기에서 실리콘 테라피는 유연성을&rdquo; 탐구&ldquo;하고 새로운 의약품을 설계하기위한 잠재적 인 &ldquo;핫스팟&rdquo;을 식별하기 위해 targetsboth&mdash;의 수천에 분자 역학 시뮬레이션을 실행했다. 시뮬레이션에는 수만 개의 원자 간의 상호 작용을 계산하는 수백만 단계가 수반되었으며, 수천 개의 단백질에서 실행되었습니다.</p>
+
+
+  <p>계산은 5년간의 GPU 컴퓨팅 시간을 사용했지만 Azure의 2048 NCv1 GPU 인스턴스에서 20시간 만에 실행되었습니다. Azure CycleCloud의 자동 크기 조정 기능은 전체 성능 NVIDIA K80 GPU와 BeeGFS 파일 시스템이 있는 Azures&rsquo; NCv1 VM을 사용하여 Slurm 클러스터를 만들었습니다. 이 환경은 내부 클러스터를 미러링하므로 Azure에서 병목 현상 없이 온-프레미스 작업이 원활하게 실행될 수 있습니다. 이 검색은 약 후보가 50TB 이상의 데이터를 생성하여 질병과 싸울 수 있는 잠재적인 단백질 &ldquo;핫스팟&rdquo; 을 검색합니다. 최대 2048K80 GPU는 BeeGFS와 컴퓨팅 노드 간에 25GB/초 이상의 대역폭을 사용했습니다.</p>
+
+
+  <p>CycleCloud를 사용하여 실리콘 치료제는 사내에서 실행한 동일한 플랫폼을 실행하고 우선 순위가 낮은 GPU 실행 노드와 80TB BeeGFS 병렬 파일 시스템을 사용하여 분자 역학 시뮬레이션 및 기계 학습 워크로드를 실행하여 잠재적인 신약 후보를 검색하는 Slurm HPC 클러스터를 확장할 수 있습니다.</p>
+
+
+  <p>&ldquo;시뮬레이션이 의사 결정의 핵심인 작업에서 솔루션에 대한 시간은 매우 중요합니다. 중요한 내부 컴퓨팅 리소스에도 불구하고 Microsoft Azure 클라우드는 최소한의 노력으로 리소스를 확장할 수 있는 기회를 제공합니다. 이 작업에서와 같이 수천 개의 GPU를 실행하는 것은 원활한 과정이었고 Azure 지원 팀은 우수&rdquo; 했다고 실리콘 테라피의 CSO 우디 셔먼(Woody Sherman)은 말합니다.</p>
+
+
+  <p>Azure CycleCloud는 간편한 관리 및 비용 제어를 통해 Azure에서 실행되는 것과 같은 혁신적인 HPC 워크로드를 다운로드하고 사용할 수 있습니다. Azure&rsquo; 특수 컴퓨팅 기능을 활용하여 답변을 더 빨리 되돌려야 하는 HPC 및 AI 워크로드가 있는 경우 <a href="https://azure.microsoft.com/en-us/features/azure-cyclecloud/" target="_blank">지금 무료로 사용해 보세요</a>!</p>
+
+
+  <h2>Azure를 사용하여 NVIDIA GPU Cloud</h2>
+
+
+  <p>GPU는 AI 및 HPC에 뛰어난 성능을 제공하므로 Microsoft Azure NVIDIA GPU를 사용하도록 설정된 다양한 가상 머신을 제공합니다. 오늘부터 Azure 사용자와 클라우드 개발자는 Azure에서 지원되는 NVIDIA GPU를 최대한 활용하는 강력한 GPU 최적화 소프트웨어를 사용하여 AI 및 HPC 워크플로를 가속화할 수 있는 새로운 방법을 제공합니다.</p>
+
+
+  <p><a href="https://www.nvidia.com/en-us/gpu-cloud/" target="_blank">NVIDIA GPU Cloud</a>(NGC) 컨테이너 레지스트리의 컨테이너는 이제 NVIDIA Volta 및 Pascal 기반 Azure NCv3, NCv2 및 ND에서 지원됩니다. 이를 통해 Azure 클라우드 인프라의 NVIDIA GPU와 NGC의 딥 러닝 및 HPC 컨테이너에 대한 포괄적인 라이브러리가 함께 제공됩니다.</p>
+
+
+  <p>NGC 컨테이너 레지스트리에는 Microsoft Cognitive Toolkit, TensorFlow, PyTorch 및 NVIDIA TensorRT와 같은 딥 러닝 소프트웨어용 NVIDIA 조정, 테스트 및 인증된 컨테이너가 포함되어 있습니다. 광범위한 통합 및 테스트를 통해 NVIDIA는 필요한 운영 체제 패치, NVIDIA 딥 러닝 라이브러리 및 NVIDIA CUDA Toolkit &ndash; 포함하여 각 프레임워크 &ndash; 에 대해 최적의 소프트웨어 스택을 만들어 컨테이너가 NVIDIA GPU를 최대한 활용할 수 있도록 합니다. NGC의 딥 러닝 컨테이너는 최신 소프트웨어 및 구성 요소 업데이트로 매월 새로 고쳐집니다.</p>
+
+
+  <p>또한 NGC는 NAMD, GROMACS, LAMMPS, ParaView 및 VMD와 같은 HPC에 대해 완전히 테스트된 GPU 가속 애플리케이션 및 시각화 도구를 제공합니다. 이러한 컨테이너는 배포를 간소화하고 최신 기능을 사용하여 빠르게 시작하고 실행할 수 있도록 합니다.</p>
+
+
+  <p>Azure에서 NGC 컨테이너를 쉽게 사용할 수 있도록 Azure Marketplace에서 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nvidia.ngc_azure_17_11?tab=Overview" target="_blank">NVIDIA GPU Cloud Image for Deep Learning 및 HPC</a>라는 새 이미지를 사용할 수 있습니다. 이 이미지는 Azure의 NGC에서 컨테이너를 사용하기 위해 미리 구성된 환경을 제공합니다. Azure NCv2, NCv3 및 ND 가상 머신의 NGC 컨테이너는 다음 <a href="https://github.com/Azure/BatchAI/blob/master/documentation/using-nvidia-dgx-container-registry.md" target="_blank">GitHub 지침</a>에 따라 <a href="https://azure.microsoft.com/en-us/services/batch-ai/" target="_blank">Azure Batch AI</a>를 사용하여 실행할 수도 있습니다.</p>
+
+
+  <p>이 이미지에서 NGC 컨테이너에 액세스하려면 <a href="https://ngc.nvidia.com/" target="_blank">무료 계정에 등록</a> 한 다음 컨테이너를 Azure 인스턴스로 끌어오기만 하면 됩니다. Azure 및 NGC를 사용하여 HPC 및 AI 프로젝트를 가속화하는 방법을 알아보려면 10월 2일에 <a href="https://info.nvidia.com/nvidia-gpu-cloud-azure-webinar_reg-page.html" target="_blank">웨비나에 등록 </a>합니다.</p>
+
+
+  <h2>Azure: 클라우드에서 HPC, AI 및 GPU를 쉽게 만들기 위한 투자</h2>
+
+
+  <p>Microsoft는 Azure를 HPC의 클라우드로 만들기 위해 최선을 다하고 있습니다. Azure CycleCloud 및 NVIDIA GPU는 통합 및 관리 및 크기 조정 기능을 용이하게 합니다. Avere vFXT를 사용한 하이브리드 클라우드 성능에 대한 단기 개발은 Azure CycleCloud 및 Azure Batch 워크로드와 함께 온-프레미스 NAS 또는 Azure Blob Storage를 활용하여 대기 시간을 최소화하는 기능을 향상시킵니다. 이 HPC 솔루션 포트폴리오를 통해&rsquo; 새로 만든 혁신을 보게 되어 매우 기쁩니다!</p>

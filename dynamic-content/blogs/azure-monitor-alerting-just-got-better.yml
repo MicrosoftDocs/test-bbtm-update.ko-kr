@@ -1,0 +1,78 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ac3ca93c0a2e2a3653ca20a1e9c1d41eb387a9fb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902702"
+Slug: azure-monitor-alerting-just-got-better
+Title: Azure Monitor 경고가 개선되었습니다!
+Summary: 2018년 3월에 Azure에서 차세대 경고를 발표했습니다. 그 이후로, 우리는 새로운 기능을 감사하고 향상된 다음 세트에 대한 요청을 제공하는 당신에게서 압도적 인 피드백을 받았습니다. 오늘 Azure Monitor 경고에서 흥미로운 새로운 개발을 발표하게 되어 기쁩니다.
+Content: >-
+  <p>2018년 3월에 Azure에서 <a href="https://azure.microsoft.com/en-gb/blog/the-next-generation-of-azure-alerts-has-arrived/">차세대 경고를 발표했습니다</a> . 그 이후로, 우리는 새로운 기능을 감사하고 향상된 다음 세트에 대한 요청을 제공하는 당신에게서 압도적 인 피드백을 받았습니다. 오늘 Azure Monitor 경고에서 흥미로운 새로운 개발을 발표하게 되어 기쁩니다.</p>
+
+
+  <h2>하나의 경고 환경</h2>
+
+
+  <p>Azure Monitor의 통합 경고 환경이 개선되었습니다! 이러한 기능에 빠르게 액세스할 수 있도록 Azure의 모든 주요 서비스에서 통합된 환경을 소개하고 One 메트릭 및 One Logs 환경을 보완합니다.</p>
+
+
+  <p>경고 환경의 일환으로 경고를&rsquo; 시각화하고 관리하는 새로운 방법을 소개하고, 심각도별로 구독 전체의 모든 경고에 대한 조&rsquo;감도 보기, 모든 경고에 대한 드릴다운 보기 및 각 경고를 검사하는 자세한 보기를 제공합니다. 고급 AI 기술을 사용하여 여러 경고를 단일 그룹으로 자동으로 통합하는 <a href="https://azure.microsoft.com/en-us/blog/azure-monitor-alerting-just-got-better/">스마트 그룹</a> (미리 보기)으로 보완됩니다. 이러한 기능을 사용하여 환경의 문제를 신속하게 해결할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7b6ff3da-4b8f-476a-8513-9cde46389085.png"><img alt="Screenshot_1" border="0" height="661" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/72442b2d-9584-455b-8ff8-0d8eb2b62588.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_1" width="1525"></a></p>
+
+
+  <h2>&nbsp;</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cd5f2d22-0e07-4809-a21e-44de678355ee.png"><img alt="Screenshot_2" border="0" height="654" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3fd322d5-f313-44c6-8e26-fbd14f00611f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_2" width="1525"></a></p>
+
+
+  <h2>확장된 적용 범위</h2>
+
+
+  <p>웹앱, 함수 및 슬롯, <a href="https://aka.ms/AzureMonitor/CustomMetricsAnnouncement">사용자 지정 메트릭</a>, Azure Monitor 애플리케이션 Insights 대한 표준 및 웹 테스트 등 <a href="https://aka.ms/metricalertresourcetypes">더 많은 Azure 서비스를</a> 포함하도록 경고 범위를 확장하고 있습니다.</p>
+
+
+  <p>이제 경고 환경은 Azure Monitor, SCOM, Nagios 또는 Zabbix를 사용하여 환경을 관리하는지 여부에 관계없이 환경 전체에서 열거하기 위해 발생한 경고를 볼 수 있는 단일 창도 제공합니다. 이 환경은 프로그래밍 방식으로 사용하여 사용하는 다른 도구와 통합할 수 있는 경고를 열거하기 위한 <a href="https://aka.ms/alert-management-api">새로운 통합 API</a> 를 통해 지원됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a0e9d6ff-6780-44d5-9a3d-3e7d907e3fcb.png" target="_blank"><img alt="Screenshot_3" border="0" height="632" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac386d9b-4833-4fe8-92ca-a2a21dbe3767.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_3" width="1525"></a></p>
+
+
+  <p>또한 Weve&rsquo;는 스택 전체에서 복잡한 조건을 모니터링해야 한다는 소식을 들었습니다. App Insights 및 Log Analytics에서 생성된 로그에서 경고를 사용하도록 설정하고 있습니다. 이 기능을 사용하면 여러 작업 영역 또는 앱 또는 경고 규칙 둘 다에 걸쳐 있는 쿼리를 정의하여 인프라/PaaS 서비스 및 앱에서 생성된 로그 간에 경고 규칙을 만들 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84a23104-856c-493b-8b18-ee1ddaead75c.png" target="_blank"><img alt="Screenshot_4" border="0" height="798" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5c384d17-32a4-47bd-a31b-e8409b8f8905.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_4" width="1525"></a></p>
+
+
+  <h2>대규모 규칙 정의</h2>
+
+
+  <p>사용자로부터 받은 일관된 피드백&rsquo; 중 하나는 <a href="https://aka.ms/metricalertsconceptsdoc">여러 리소스를 대상으로 하는 단일 경고 규칙을 정의할 수 있도록 하는 것입니다</a>. 현재는 이러한 작업을 수행할 수 있도록 다중 리소스 메트릭 경고 규칙을 도입하고 있습니다. 규칙의 일부로 리소스 목록, 리소스 그룹 또는 구독을 대상으로 지정할 수 있습니다. 모든 리소스는 규칙에 지정된 조건에 대해 개별적으로 모니터링됩니다. 규칙을 사용하여 경고 규칙을 정의할 수도 있습니다. 이 규칙을 &ldquo;*&rdquo;사용하면 규칙의 대상이 되는 환경에 리소스가 추가될 때 자동으로 증가 및 축소할 수 있습니다. 현재 Virtual Machines에 대해서만 이 기능을 지원하지만 곧 다른 리소스 유형으로 확장될 예정입니다. 자세한 내용을 보려면 이 공간을 시청하세요!</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a46ed9ac-8e5d-4ed5-ade0-0377b5ead3e2.png" target="_blank"><img alt="Screenshot_5" border="0" height="865" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8be0fd9e-520c-4a83-9c18-562fb57b0aee.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_5" width="1524"></a></p>
+
+
+  <p>여러 차원에 대해 경고하시겠습니까? Weve&rsquo;도 그 덮여있어! 대규모 경고의 일환으로 단일 경고 규칙을 사용하여 모니터링해야 하는 여러 차원을 정의할 수 있습니다. 이 시나리오에서도 규칙에서 새로 추가되거나 제거된 차원 값을 포함하도록 *를 지원합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/33cacc44-0a8e-4c7c-a04b-85694f8d79a8.png"><img alt="Screenshot_7" border="0" height="591" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f3d81647-c447-4ab5-9ca6-54ec9aed3070.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_7" width="1525"></a></p>
+
+
+  <h2>이제 더 빠른 로그 경고가 일반 공급됩니다.</h2>
+
+
+  <p>오늘&rsquo; 공지 사항의 일환으로 <a href="https://azure.microsoft.com/en-in/blog/faster-metric-alerts-for-logs-now-in-limited-public-preview/">로그에 대한 메트릭 경고</a>의 GA도 선언합니다. 이 기능을 사용하면 로그 분석(하트비트, 성능 카운터, 이벤트 및 업데이트)의 특정 로그 형식을 메트릭으로 변환하고 이러한 메트릭에 대한 경고 규칙을 만들 수 있습니다. 이렇게 하면 로그 경고를 생성하는 대기 시간이 5분 미만으로 감소합니다.</p>
+
+
+  <p>로그에 대한 메트릭 경고에도 여러 차원에 대한 경고가 지원되므로 단일 경고 규칙으로 로그 분석 작업 영역의 여러 컴퓨터를 모니터링할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a768686-b762-4b62-a31f-bd6ad75479d1.png" target="_blank"><img alt="Screenshot_6" border="0" height="637" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4268535b-a633-4574-9564-444d78729f4d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_6" width="1525"></a></p>
+
+
+  <p>Azure Monitor 경고 팀은 이러한 새로운 향상된 기능을 제공합니다. 사용자 환경에 이러한 기능을 배포할 때 여러분의 의견을 듣고 싶습니다. 당신은에서 <a href="mailto:azurealertsfeedback@microsoft.com">azurealertsfeedback@microsoft.com</a>우리에게 도달 할 수 있습니다. 여러분의 의견을 기다리겠습니다.</p>

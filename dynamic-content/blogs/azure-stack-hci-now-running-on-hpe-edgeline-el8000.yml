@@ -1,0 +1,86 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1bf6ffc5b5cb63c2f4992817d85669e881cae442
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902674"
+Slug: azure-stack-hci-now-running-on-hpe-edgeline-el8000
+Title: 이제 HPE Edgeline EL8000에서 실행되는 Azure Stack HCI
+Summary: Microsoft와 HPE는 협력하여 Microsoft의 Azure Stack HCI 프로그램에 대한 HPE Edgeline EL8000 Converged Edge 시스템의 유효성을 검사했습니다. 공간 제약이 있는 환경을 위해 특별히 설계된 HPE Edgeline EL8000 Converged Edge 시스템에는 다른 x86 시스템에 비해 너무 작은 제한된 인프라에 맞는 고유한 17인치 깊이 폼 팩터가 있습니다. 섀시는 8.7인치 너비로 통신 환경, 모바일 차량 또는 제조 현장에 있든 관계없이 깊은 가장자리에 배치할 수 있는 유연성을 제공합니다. 이 NEB 규격 시스템은 안전한 확장성을 제공합니다.
+Content: >-
+  <p>지점 및 에지 워크로드를 실행하기 위해 견고하고 소형 크기의 HCI(하이퍼 컨버지드 인프라) 사용 서버가 필요한가요? 컨테이너 기술을 사용하여 애플리케이션 및 IoT 함수를 현대화하시겠습니까? 백업, 재해 복구, 업데이트 관리, 모니터링 및 보안 규정 준수와 같은 Azure&#39;하이브리드 서비스를 활용하시겠습니까?&nbsp;</p>
+
+
+  <p>Microsoft와 HPE는 Microsoft&#39;<a href="https://azure.microsoft.com/en-us/overview/azure-stack/hci/" target="_blank">Azure Stack HCI</a> 프로그램에 대한 HPE Edgeline EL8000 Converged Edge 시스템의&nbsp; 유효성을 검사하기 위해 협력했습니다.&nbsp; 공간 제약이 있는 환경을 위해 특별히 설계된 HPE Edgeline EL8000 Converged Edge 시스템에는 다른 x86 시스템에 비해 너무 작은 제한된 인프라에 맞는 고유한 17인치 깊이 폼 팩터가 있습니다. 섀시는 8.7인치 너비로 통신 환경, 모바일 차량 또는 제조 현장에 있든 관계없이 깊은 가장자리에 배치할 수 있는 유연성을 제공합니다. 이 네트워크 Equipment-Building 시스템&nbsp;(NEB) 규격 시스템은 안전한 확장성을 제공합니다.</p>
+
+
+  <h2>HPE Edgeline EL8000 Converged Edge 시스템은 다음을 제공합니다.</h2>
+
+
+  <ul>
+      <li>기존 x86 컴퓨팅은 컴퓨팅 성능을 희생하지 않고 기존 데이터 센터와는 거리가 먼 에지 배포에 최적화되어 있습니다.</li>
+      <li>Redfish 산업 표준을 기반으로 하는 무선 기능을 사용하여 에지 최적화 원격 시스템 관리.</li>
+      <li>간결한 폼 팩터( 짧은 깊이 및 반자 옵션 포함)</li>
+      <li>NEB 수준 3 및 미국 난방, 냉장 및 Air-Conditioning 엔지니어&nbsp;(ASHRAE) 수준 3&nbsp;/4 규정 준수를 포함한 에지 및 적대적인 환경에서의 안전한 확장성 및 서비스성을 위한 견고한 모듈식 폼 팩터입니다.</li>
+      <li>필드 프로그래밍 가능한 게이트 배열 또는 그래픽 처리 단위에 대한 새로운 AI(인공 지능) 사용 사례에 대한 광범위한 가속기 지원.</li>
+      <li>임베디드 네트워크를 사용하여 클러스터를 사용할 수 있는 최대 4개의 독립 컴퓨팅 노드</li>
+  </ul>
+
+
+  <h3>광범위한 구성 가능성을 제공하는 모듈식 디자인</h3>
+
+
+  <p>HPE Edgeline EL8000 Converged Edge 시스템은 컴퓨팅 밀도 또는 입력/출력 확장에 대해 유연하게 선택할 수 있습니다. 이러한 컴팩트하고 견고한 시스템은 미디어 스트리밍, IoT, AI 및 비디오 분석을 포함하여 가장 중요한 사용 사례를 지원하는 고성능 용량을 제공합니다. HPE Edgeline EL8000은 사용 사례 요구 사항이 변경됨에 따라 시스템&#39;유연하고 모듈식 아키텍처가 이를 충족하도록 확장할 수 있도록 에지 컴퓨팅 변환을 가능하게 하는 다재다능한 플랫폼입니다.</p>
+
+
+  <h3>HPE Edgeline Chassis Manager를 사용하여 원활한 관리 및 보안 기능</h3>
+
+
+  <p>HPE Edgeline EL8000 Converged Edge 시스템에는 시스템 수준 상태 모니터링 및 경고를 제공하여 가동 중지 시간을 제한하는 HPE Edgeline 섀시 관리자가 있습니다. 전원 공급 장치 상태 및 상태를 모니터링하는 것 외에도 설치된 각 서버 블레이드의 섀시 팬 속도를 관리하여 효율성과 안정성을 높입니다. HPE Edgeline Chassis Manager를 사용하여 펌웨어 업그레이드 관리 및 구현을 간소화합니다.</p>
+
+
+  <h2>Microsoft Azure Stack HCI:</h2>
+
+
+  <p>Azure Stack HCI 솔루션은 업계 표준 x86 서버 및 구성 요소에서 고도로 가상화된 컴퓨팅, 스토리지 및 네트워킹을 통합합니다. 동일한 클러스터에서 리소스를 결합하면 배포, 관리 및 확장이 용이해집니다. 원하는 명령줄 자동화 또는 Windows Admin Center를 사용하여 관리합니다.</p>
+
+
+  <p>Microsoft 클라우드의 기본 하이퍼바이저 기술인 Hyper-V 및 NVMe(비휘발성 메모리 express&nbsp;), 영구 메모리 및 RDMA(원격 직접 메모리 액세스) 네트워킹을 기본적으로 지원하는 저장소 공간 Direct 기술을 사용하여 서버 애플리케이션에 업계 최고의 가상 머신 성능을 달성합니다.</p>
+
+
+  <p>보호된 가상 머신, 네트워크 마이크로 세이그멘션 및 네이티브 암호화를 사용하여 앱과 데이터를 안전하게 유지하는 데 도움이 됩니다.</p>
+
+
+  <p>퍼블릭 클라우드의 하이퍼 컨버지드 인프라 플랫폼과 함께 작동하는 클라우드 및 온-프레미스를 활용할 수 있습니다. 팀은 다음을 비롯한 Azure 인프라 관리 서비스에 기본 제공 통합을 통해 클라우드 기술 구축을 시작할 수 있습니다.</p>
+
+
+  <ul>
+      <li>
+      <p>Azure Site Recovery - 고가용성과 DRaaS(Disaster Recovery as a Service)를 수행합니다.</p>
+      </li>
+      <li>
+      <p>AZURE Monitor는 AI를 기반으로 하는 고급 분석을 사용하여 애플리케이션, 네트워크 및 인프라 &ndash; 에서 발생하는 작업을&rsquo; 추적하는 중앙 집중식 허브입니다.</p>
+      </li>
+      <li>
+      <p>Cloud Witness - Azure를 클러스터 쿼럼에 대한 경량 타이 브레이커로 사용합니다.</p>
+      </li>
+      <li>
+      <p>Azure Backup - 오프 사이트 데이터를 보호하고 랜섬웨어로부터 보호합니다.</p>
+      </li>
+      <li>
+      <p>Azure 및 온-프레미스에서 실행되는 Windows VM(가상 머신)에 대한 업데이트 평가 및 업데이트 배포를 위한 Azure 업데이트 관리입니다.</p>
+      </li>
+      <li>
+      <p>지점 및 사이트 간의 VPN(가상 사설망)을 통해 Azure의 VM과 온-프레미스 리소스를 연결하는 Azure 네트워크 어댑터입니다.</p>
+      </li>
+      <li>
+      <p>Azure 파일 동기화를 사용하여 파일 서버를 클라우드에 동기화합니다.</p>
+      </li>
+      <li>
+      <p>Azure Arc for Servers는 Azure Portal에서 역할 기반 액세스 제어, 거버넌스 및 규정 준수 정책을 관리합니다.</p>
+      </li>
+  </ul>
+
+
+  <p>Microsoft 및 HPE HCI 솔루션을 배포하면 Azure Stack HCI 지점 및 에지 솔루션에 기본 제공되는 Azure 하이브리드 서비스를 사용하도록 설정하여 비즈니스 자산을 보호하면서 고성능 및 복원력으로 지점 및 에지 요구를 신속하게 해결할 수 있습니다.&nbsp;&nbsp;</p>

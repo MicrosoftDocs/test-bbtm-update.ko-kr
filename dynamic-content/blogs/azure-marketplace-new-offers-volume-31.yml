@@ -1,0 +1,575 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3eda25146146720c90bb5df68482c0e465d32f39
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902734"
+Slug: azure-marketplace-new-offers-volume-31
+Title: Azure Marketplace 새 제품 – 볼륨 31
+Summary: Azure Marketplace 에코시스템을 계속 확장합니다. 2019년 1월 1일부터 1월 15일까지 67개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다.
+Content: >-
+  <p>Azure Marketplace 에코시스템을 계속 확장합니다. 2019년 1월 1일부터 1월 15일까지 67개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다. 아래의 새로운 제품에 대한 세부 정보를 참조하세요.</p>
+
+
+  <h2>가상 머신</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/akumo-software.akumo_cloud_2_1" target="_blank"><img alt="Akumo Software" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/09e1c26e-bb58-49f3-9017-d10004a39fba.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Akumo Software" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/akumo-software.akumo_cloud_2_1" target="_blank">Akumo Software</a>: Akumo Software&#39;플랫폼은 가상화된 인프라 또는 클라우드 기반 인프라 간에 데이터 센터 환경을 확장합니다. 주문형 데이터 센터를 비용 효율적으로 관리하는 일관되고 간단한 방법을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.blogengine-windows-server-2016?tab=Overview" target="_blank"><img alt="BlogEngine.NET on Windows Server 2016" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2447ce88-b644-46e1-80e7-7f3b4ca584e7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2016 BlogEngine.NET" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.blogengine-windows-server-2016?tab=Overview" target="_blank">Windows Server 2016 BlogEngine.NET</a> : BlogEngine.NET WordPress에 대한 훌륭한 대안이 될 수있는 가볍고 간단하고 사용자에게 친숙한 블로그 엔진입니다. 쉽게 수정하고 확장할 수 있으며,.NET 개발자를 위해 특별히 설계되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.blogengine-windows-server-2019?tab=Overview" target="_blank"><img alt="BlogEngine.NET on Windows Server 2019" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a949f24e-2c5d-45ad-a750-0263a6291577.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2019의 BlogEngine.NET" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.blogengine-windows-server-2019?tab=Overview" target="_blank">Windows Server 2019의 BlogEngine.NET</a>: BlogEngine.NET WordPress에 대한 훌륭한 대안이 될 수 있는 가볍고 간단하고 사용자에게 친숙한 블로그 엔진입니다. 쉽게 수정하고 확장할 수 있으며,.NET 개발자를 위해 특별히 설계되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/enterpriseworx-it.c4sql_central_v1" target="_blank"><img alt="Conductor4SQL Central Server" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/14e507c3-562a-4943-a525-f3e9f06518bc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Conductor4SQL 중앙 서버" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/enterpriseworx-it.c4sql_central_v1" target="_blank">Conductor4SQL Central Server</a>: 이 가상 머신에는 Windows Server 2016, Microsoft SQL Server 2017, Microsoft Power BI Desktop 및 Conductor4SQL을 포함하여 Conductor4SQL을 사용하는 데 필요한 모든 구성 요소가 함께 제공됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dellemc.dellemc-networker-virtual-edition" target="_blank"><img alt="Dell EMC NetWorker Virtual Edition 18.2" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3fe2ddd1-2d22-4b7c-a2b5-a443cb781d38.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Dell EMC NetWorker Virtual Edition 18.2" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dellemc.dellemc-networker-virtual-edition" target="_blank">Dell EMC NetWorker Virtual Edition 18.2</a>: Dell EMC NetWorker 소프트웨어는 엔터프라이즈 애플리케이션 및 데이터베이스에 빠르고 효율적인 백업 및 복구를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/f5-networks.f5-big-ip-cloud-edition" target="_blank"><img alt="F5 BIG-IP Cloud Edition" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ae1582b2-fbae-4da3-84f5-8b5f5f602b5f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="F5 BIG-IP Cloud Edition" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/f5-networks.f5-big-ip-cloud-edition" target="_blank">F5 BIG-IP Cloud Edition</a>: 이 버전은 앱별 VE 및 BIG-IQ 중앙 집중식 관리로 구성됩니다. 전자는 지능형 트래픽 관리 및 웹 애플리케이션 방화벽 보안을 제공하는 반면, 후자는 배포 자동화, 관리 및 가시성을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.guncash-windows-server-2016?tab=Overview" target="_blank"><img alt="GnuCash on Windows Server 2016" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95f8ba71-fb0b-4293-8d56-46ac3b27cd8d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2016 GnuCash" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.guncash-windows-server-2016?tab=Overview" target="_blank">Windows Server 2016 GnuCash</a>: GnuCash는 은행 계좌, 소득, 주식, 지출 등을 추적하는 데 도움이 됩니다. 사용자는 소프트웨어를 자유롭게 실행하고, 복사하고, 배포하고, 연구하고, 변경하고, 개선할 수 있습니다. 모바일 운영 체제에서도 작동합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.guncash-windows-server-2019?tab=Overview" target="_blank"><img alt="GnuCash on Windows Server 2019" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9756c15-a06b-44b5-a0f6-ca5082fd53b0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2019의 GnuCash" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.guncash-windows-server-2019?tab=Overview" target="_blank">Windows Server 2019의 GnuCash</a>: GnuCash는 은행 계좌, 소득, 주식, 지출 등을 추적하는 데 도움이 됩니다. 사용자는 소프트웨어를 자유롭게 실행하고, 복사하고, 배포하고, 연구하고, 변경하고, 개선할 수 있습니다. 모바일 운영 체제에서도 작동합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.iis-on-windows-server-2019" target="_blank"><img alt="IIS on Windows Server 2019" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5bfff6ee-097a-422f-af18-00f851d9743f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2019의 IIS" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.iis-on-windows-server-2019" target="_blank">Windows Server 2019의 IIS</a>: Windows Server 2019의 IIS 주요 기능에는 와일드카드 호스트 헤더, IIS 관리 PowerShell cmdlet, 중단 없이 올바르게 암호화된 검색 환경을 제공하기 위한 향상된 연결 병합이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/incorta.incorta_free_trial" target="_blank"><img alt="Incorta Free Trial" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9528b57-2076-4323-9820-ad223cc0ef57.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Incorta 무료 평가판" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/incorta.incorta_free_trial" target="_blank">Incorta 무료 평가판</a>: Incortas&rsquo; 직접 데이터 매핑 엔진을 사용하면 데이터 웨어하우스 없이도 크고 복잡한 비즈니스 데이터를 실시간으로 집계할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intersystems.intersystems-iris-community?tab=Overview" target="_blank"><img alt="InterSystems IRIS Community Edition" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e7930611-3413-4ec5-9c26-e7799bd40a6b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="InterSystems IRIS Community Edition" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intersystems.intersystems-iris-community?tab=Overview" target="_blank">InterSystems IRIS Community Edition</a>: InterSystems IRIS는 개발자가 애플리케이션을 빠르게 개발하는 데 가장 적합한 언어 및 데이터 모델을 자유롭게 선택할 수 있는 완벽한 데이터 플랫폼입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intersystems.intersystems-iris-express" target="_blank"><img alt="InterSystems IRIS Express Edition" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/23cd59a9-6802-437a-b15a-583972f9c135.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="InterSystems IRIS Express Edition" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intersystems.intersystems-iris-express" target="_blank">InterSystems IRIS Express Edition</a>: InterSystems IRIS는 개발자가 애플리케이션을 빠르게 개발하는 데 가장 적합한 언어 및 데이터 모델을 자유롭게 선택할 수 있는 완벽한 데이터 플랫폼입니다. 이 버전에 대한 추가 가격 책정 옵션을 참조하세요.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/neo4j.neo4j-enterprise-3_5" target="_blank"><img alt="Neo4j Enterprise VM Version 3.5" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8bec0014-46bd-4ffe-a5a9-2758a8ce9056.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Neo4j Enterprise VM 버전 3.5" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/neo4j.neo4j-enterprise-3_5" target="_blank">Neo4j Enterprise VM 버전 3.5</a>: Neo4j&#39;그래프 데이터베이스 플랫폼은 조직에서 사람, 프로세스, 위치 및 시스템이 상호 연관되는 방식을 공개하여 데이터를 이해하는 데 도움이 됩니다. 이 접근 방식은 AI, 사기 행위 감지, 마스터 데이터 및 권장 사항을 다루는 앱을 지원합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/citrix.netscaler-130-ma-service-agent" target="_blank"><img alt="NetScaler MA Service Agent 13.0" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec46d047-7a61-4e71-b95e-490e8143ad89.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="NetScaler MA 서비스 에이전트 13.0" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/citrix.netscaler-130-ma-service-agent" target="_blank">NetScaler MA 서비스 에이전트 13.0</a>: NetScaler MA 서비스 에이전트 소프트웨어는 NetScaler Management 및 Analytics Service와 Microsoft Azure 내의 NetScaler 인스턴스 간의 중개자로 작동합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.nginx-on-windows-2016" target="_blank"><img alt="Nginx on Windows Server 2016" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6948006e-b418-44c8-8d2b-9d819642b845.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Nginx on Windows Server 2016" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.nginx-on-windows-2016" target="_blank">Windows Server 2016 Nginx</a>: Windows Server 2016 Nginx의 기능에는 캐싱을 사용하는 역방향 프록시, IPv6, 부하 분산, 캐싱을 사용한 FastCGI 지원, WebSockets, SNI를 사용한 TLS/SSL, 정적 파일, 인덱스 파일 및 자동 인덱싱 처리가 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.opencart-windows-server-2016?tab=Overview" target="_blank"><img alt="OpenCart on Windows Server 2016" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/525c5f24-336c-4c02-b9d4-9e007181cf05.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2016 OpenCart" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.opencart-windows-server-2016?tab=Overview" target="_blank">Windows Server 2016 OpenCart</a>: PHP로 작성된 OpenCart는 GNU 일반 퍼블릭 라이선스로 사용할 수 있는 무료 오픈 소스 전자 상거래 플랫폼으로, 최종 사용자가 소프트웨어를 수정할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.opencart-windows-server-2019?tab=Overview" target="_blank"><img alt="OpenCart on Windows Server 2019" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9eb4f877-9521-48c0-b559-4aa80cc5759e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2019의 OpenCart" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.opencart-windows-server-2019?tab=Overview" target="_blank">Windows Server 2019의 OpenCart</a>: PHP로 작성된 OpenCart는 최종 사용자가 소프트웨어를 수정할 수 있는 GNU 일반 퍼블릭 라이선스에서 사용할 수 있는 무료 오픈 소스 전자 상거래 플랫폼입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/puppet.puppet-enterprise-201815-azure" target="_blank"><img alt="Puppet Enterprise" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f1bb858c-21e2-4b21-8d3f-e982adfc9eca.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Puppet Enterprise" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/puppet.puppet-enterprise-201815-azure" target="_blank">Puppet Enterprise</a>: Puppet Enterprise 사용하면 초기 프로비저닝부터 애플리케이션 배포까지 Azure 인프라의 전체 수명 주기를 간단하고 안전하게 자동화할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pyramidanalytics.pyramid2018" target="_blank"><img alt="Pyramid 2018 - Windows Server" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/172a8f4e-1f71-4bc6-8d33-6ccfeac9f79b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="피라미드 2018 - Windows 서버" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pyramidanalytics.pyramid2018" target="_blank">Pyramid 2018 - Windows Server</a>: Pyramid 2018을 사용하면 비즈니스 사용자가 IT 도움말 없이도 모든 브라우저 또는 디바이스에서 고급 분석 및 데이터 과학을 수행할 수 있습니다. 거버넌스를 사용하는 차세대 셀프 서비스 분석이&#39;.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.sql-2017-enterprise-edition-er-builder" target="_blank"><img alt="SQL 2017 Enterprise Edition w ER Builder" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4097fed2-4d61-495e-beb5-f2a72b59b393.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL 2017 Enterprise Edition w ER Builder" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.sql-2017-enterprise-edition-er-builder" target="_blank">SQL 2017 Enterprise Edition/ER/Builder</a>: Windows Server 2016 SQL 2017용 ER/Builder 데이터 모델링기를 사용하여 무제한의 테이블을 관리할 수 있습니다. 인덱스, 트리거, 키, 저장 프로시저, 뷰, 생성기 및 도메인을 만들 수도 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.sql-2017-standard-edition-er-builder" target="_blank"><img alt="SQL Server 2017 Standard Edition w ER Builder" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/121a95e5-00b3-44c6-9f63-c54a2c5c57bf.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2017 Standard Edition w ER Builder" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.sql-2017-standard-edition-er-builder" target="_blank">SQL Server 2017 Standard Edition/ER/Builder</a>: Windows Server 2016 SQL 2017용 ER/Builder 데이터 모델러를 사용하여 무제한의 테이블을 관리할 수 있습니다. 인덱스, 트리거, 키, 저장 프로시저, 뷰, 생성기 및 도메인을 만들 수도 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.sql-2017-web-edition-er-builder" target="_blank"><img alt="SQL Server 2017 Web Edition w ER Builder" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/efbfe43c-1258-4453-860f-2e4ce71dc63c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2017 Web Edition w ER Builder" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.sql-2017-web-edition-er-builder" target="_blank">SQL Server ER/Builder를 사용하는 2017 Web Edition</a>: Windows Server 2016 SQL 2017용 ER/Builder 데이터 모델링기를 사용하여 무제한의 테이블을 관리할 수 있습니다. 인덱스, 트리거, 키, 저장 프로시저, 뷰, 생성기 및 도메인을 만들 수도 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/adgs.strokkwebdemo?tab=Overview" target="_blank"><img alt="Strokk Webservices Demo" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9881b09b-8fb9-4fec-ae55-c3f7b8a5b1f6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Strokk Webservices 데모" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/adgs.strokkwebdemo?tab=Overview" target="_blank">Strokk Webservices 데모</a>: 암호가 웹 양식 또는 내부 애플리케이션에서 사용되는 경우 키 입력 역학이라는 동작 생체 인식 2단계를 사용하여 해당 기술 기반 인증 부분을 거의 투명하게 강화할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/untangle.untangle_ngfirewall" target="_blank"><img alt="Untangle NG Firewall" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ef61c999-fbc8-4368-832d-a6bd4ca483b3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="NG 방화벽 얽힘 해제" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/untangle.untangle_ngfirewall" target="_blank">NG 방화벽 얽힘 해제</a>: NG 방화벽을 사용하여 원격 위치를 연결하고 데이터, 애플리케이션 및 사용자에 대한 보호를 제공하면서 안전성, 안정성 및 성능을 보장합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/varnish.varnish-enterprise" target="_blank"><img alt="Varnish Enterprise 6" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a34410ce-1194-4bc6-b666-58564cc14110.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="바니시 Enterprise 6" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/varnish.varnish-enterprise" target="_blank">바니시 Enterprise 6</a>: 이전에 바니쉬 플러스로 알려진 바니시 Enterprise(VE)는 인기 있는 오픈 소스 HTTP 엔진/역방향 HTTP 프록시 바니시 캐시(VC)의 상업용/엔터프라이즈 버전입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentriumsl.vyos-1-2-lts-on-azure" target="_blank"><img alt="VyOS 1.2 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/072c02e5-9582-4f9f-8869-dc5dd48f5499.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="VyOS 1.2 LTS" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentriumsl.vyos-1-2-lts-on-azure" target="_blank">VyOS 1.2 LTS</a>: VyOS는 라우터 및 방화벽용 Linux 기반 오픈 소스 네트워크 운영 체제입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.windows2016vdi" target="_blank"><img alt="Windows Virtual Desktop" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/273d9f8d-1617-48d4-95f2-14c434020158.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Virtual Desktop" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.windows2016vdi" target="_blank">Windows Virtual Desktop</a>: Windows Virtual Desktop을 사용하면 규정 준수 및 기본 제공 보안을 포함하여 몇 분 안에 Azure에서 Microsoft Office 및 Windows 배포하고 확장할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloud-infrastructure-services.wordpress-windows-2016" target="_blank"><img alt="WordPress on Windows Server 2016" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3278fb6-a80c-474e-932b-a7a71521d542.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2016 WordPress" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloud-infrastructure-services.wordpress-windows-2016" target="_blank">Windows Server 2016 WordPress</a>: 기본 제공 MySql 및 phpMyAdmin을 사용하여 Windows 2016에 WordPress를 신속하게 배포합니다. 필요한 만큼 웹 사이트 또는 애플리케이션을 호스트합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.xeams-centos" target="_blank"><img alt="Xeams on CentOS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d10a0495-bc0b-416c-a9a6-fb427d25efbc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CentOS의 Xeams" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.xeams-centos" target="_blank">CentOS의 Xeams: CentOS</a>에서 강력한 정크 필터링 엔진을 사용하여 이 안전하고 강력한 메일 서버를 가져옵니다. Xeams Community Edition은 여러 플랫폼 및 스마트 호스트 기능이 있는 모든 메일 서버를 지원하는 무료 소프트웨어로 사용할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.xeams-ubuntu" target="_blank"><img alt="Xeams on Ubuntu" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/17fa3913-184c-420a-b693-a06af3a3f0a2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu의 Xeams" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.xeams-ubuntu" target="_blank">Ubuntu의 Xeams: Ubuntu</a>에서 강력한 정크 필터링 엔진을 사용하여 이 안전하고 강력한 메일 서버를 가져옵니다. Xeams Community Edition은 여러 플랫폼 및 스마트 호스트 기능이 있는 모든 메일 서버를 지원하는 무료 소프트웨어로 사용할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.xeams-windows-server-2016" target="_blank"><img alt="Xeams on Windows Server 2016" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fbeec020-81b1-43f8-a0c5-6afbc6317864.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2016 Xeams" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.xeams-windows-server-2016" target="_blank">Windows Server 2016 Xeams: Windows Server 2016</a> 강력한 정크 필터링 엔진을 사용하여 이 안전하고 강력한 메일 서버를 가져옵니다. Xeams Community Edition은 여러 플랫폼 및 스마트 호스트 기능이 있는 모든 메일 서버를 지원하는 무료 소프트웨어로 사용할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.xeams-windows-server-2019?tab=Overview" target="_blank"><img alt="Xeams on Windows Server 2019" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94537570-6d1d-4278-945e-59126f373284.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Windows Server 2019의 Xeams" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.xeams-windows-server-2019?tab=Overview" target="_blank">Windows Server 2019의 Xeams: Windows Server 2019</a>에서 강력한 정크 필터링 엔진을 사용하여 이 안전하고 강력한 메일 서버를 가져옵니다. Xeams Community Edition은 여러 플랫폼 및 스마트 호스트 기능이 있는 모든 메일 서버를 지원하는 무료 소프트웨어로 사용할 수 있습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>웹 애플리케이션</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/aggregion-ltd.agr_blockchain_node" target="_blank"><img alt="Aggregion Blockchain Node" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53b694b7-732a-44fd-a626-1bef385cffa8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Aggregion Blockchain Node" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/aggregion-ltd.agr_blockchain_node" target="_blank">Aggregion Blockchain Node</a>: Aggregion은 주요 저작권 소유자가 글로벌 엔드투엔드 배포 네트워크 및 디지털 콘텐츠 라이선스를 완전히 제어할 수 있는 블록체인 에코시스템을 운영합니다. Microsoft Azure 제품은 Aggregion 블록체인 플랫폼을 향상시킵니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/paperlesstrailinc-1769309.archiveone" target="_blank"><img alt="Archive One" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b4e5aa4-9bb1-4653-a8ad-3be46c89d949.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="보관 1" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/paperlesstrailinc-1769309.archiveone" target="_blank">보관 1</a>: 보관 1은 문서 관리자가 필수 회사 레코드를 분류, 저장, 보안, 검색 및 검색할 수 있도록 설계된 문서 관리 시스템입니다. Archive One을 사용하여 규정 준수 및 감사를 쉽게 수행할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.multi-tier-manageddb-drupal" target="_blank"><img alt="Drupal with Azure Database for MariaDB" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ca1b18d6-c994-4eac-b0ae-e31459c49d7f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Database for MariaDB를 사용하여 Drupal" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.multi-tier-manageddb-drupal" target="_blank">Azure Database for MariaDB를 사용하는 Drupal</a>: 이 솔루션은 애플리케이션 프런트 엔드에 대한 가상 머신과 애플리케이션 데이터에 대한 Azure Database for MariaDB 서비스를 사용합니다. Drupal은 웹 사이트 및 앱을 만드는 데 사용되는 오픈 소스 콘텐츠 관리 시스템입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lavellenetworksprivatelimited-5039075.scaleaon_sd_wan" target="_blank"><img alt="Lavelle Networks ScaleAon SD-WAN" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8672db41-e169-4c0a-ac1e-39703325fe21.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Lavelle Networks ScaleAon SD-WAN" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lavellenetworksprivatelimited-5039075.scaleaon_sd_wan" target="_blank">Lavelle Networks ScaleAon SD-WAN</a>: Lavelle Networks ScaleAon SD-WAN은 하이브리드 WAN입니다. ScaleAon SD-WAN은 물리적 및 가상 리소스에 걸쳐 WAN(광역 네트워크)을 원활하게 확장하여 엔터프라이즈의 클라우드 채택을 가속화합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/hashhub.lightning-network-for-azure-by-hashhub-alpha1" target="_blank"><img alt="Lightning Network for Azure" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a12e1917-2d6e-4a47-bef9-fc83cccfcdb8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure용 Lightning Network" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/hashhub.lightning-network-for-azure-by-hashhub-alpha1" target="_blank">Azure용 Lightning Network</a>: 이 배포판은 Bitcoin(btcd), Litecoin(ltcd) 및 Lightning Network(lnd 또는 c-lightning)를 실행하는 가상 머신 인스턴스를 제공합니다. 노드 네트워크에 대한 샘플 애플리케이션으로 BTCPayServer를 실행할 수도 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.multi-tier-mariadb-galera" target="_blank"><img alt="MariaDB Galera Cluster" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f0d14a63-4dda-4d5d-ab0f-3c146c226ca8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="MariaDB Galera 클러스터" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.multi-tier-mariadb-galera" target="_blank">MariaDB Galera 클러스터</a>: MariaDB Galera는 동기 복제 및 고가용성을 위한 다중 마스터 데이터베이스 클러스터 솔루션입니다. 이 솔루션은 여러 가상 머신을 사용하여 구성 가능한 수의 노드로 데이터를 복제합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/audiocodes.mediant_ve_sbc" target="_blank"><img alt="Mediant VE Session Border Controller (SBC)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61750c48-6902-4956-8c56-6b816eb09690.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="중앙값 VE 세션 테두리 컨트롤러(SBC)" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/audiocodes.mediant_ve_sbc" target="_blank">SBC(중앙값 VE 세션 테두리 컨트롤러)</a>: Microsoft Teams 직접 라우팅을 사용하도록 설정하거나 SIP 트렁크를 비즈니스용 Skype 서버 연결합니다. AudioCodes&rsquo; Mediant 세션 테두리 컨트롤러를 사용하면 배포가 더 쉬워지고 사용자가 다중 SBC 네트워크 인터페이스를 설정할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/spanningcloudappsllc.spanningbackupforoffice365" target="_blank"><img alt="Spanning Backup For Office 365" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d2a5f830-75dd-4769-9cb1-c4bef791b984.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Office 365 백업에 대한 스패닝" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/spanningcloudappsllc.spanningbackupforoffice365" target="_blank">Office 365 백업: Office 365</a> 대한 스패닝 백업은 Office 365 메일, 일정, OneDrive 및 SharePoint 대한 자동 일일 백업 및 복구를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/onenebulaptyltd-1973161.surgeidentity_saas" target="_blank"><img alt="Surge Identity (SaaS)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6b1f13af-8cc1-4791-a8e0-6849b1b605a1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SaaS(서지 ID)" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/onenebulaptyltd-1973161.surgeidentity_saas" target="_blank">SaaS(서지 ID)</a>: 서지 ID는 신뢰할 수 있는 ID 및 소셜 공급자를 사용하여 보안 로그인을 가능하게 하는 클라우드 기반 ID 솔루션이며, 최신 업계 보안 표준을 사용하여 앱 간 통신을 보호합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tidal-migrations.tidal_mg_src" target="_blank"><img alt="Tidal Migrations -Premium Insights for Source Code" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/91dee68b-fb2b-474f-b285-9e9771f74999.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="소스 코드에 대한 조석 마이그레이션 -Premium Insights" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tidal-migrations.tidal_mg_src" target="_blank">조석 마이그레이션 - 소스 코드용 Premium Insights</a>: 조석 마이그레이션은 간단하고 빠르고 비용 효율적인 클라우드 마이그레이션 관리 솔루션을 팀에 제공합니다. 이 추가 기능은 리팩터링하거나 Azure로 플랫폼을 다시 배포하려는 앱에 대한 실행 가능한 인사이트를 팀에 부여합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/timextender.timextender_disocveryhub_vm" target="_blank"><img alt="TimeXtender Discovery Hub" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a8a6a92-fb16-46ac-b3f1-4f5c7825aa9b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="TimeXtender 검색 허브" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/timextender.timextender_disocveryhub_vm" target="_blank">TimeXtender 검색 허브</a>: 이 가상 머신은 Windows Server 2016 및 TimeXtender 검색 허브를 실행합니다. Azure용 Discovery Hub 애플리케이션 서버를 사용하면 고객이 엔터프라이즈급 분석 아키텍처를 빌드, 배포 및 관리할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vnomicinc.vnomic-solution" target="_blank"><img alt="Vnomic Management for SAP Workloads" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/48937064-b3f7-4b04-868a-e0a4776323a0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SAP 워크로드용 Vnomic Management" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vnomicinc.vnomic-solution" target="_blank">SAP 워크로드용 Vnomic Management</a>: 기본 기술 세부 정보를 걱정하지 않고 SAP HANA 워크로드 요구 사항을 선택합니다. Vnomic은 완전하고 검증된 SAP HANA 워크로드를 자동으로 컴퓨팅 및 프로비전하고 몇 분 안에 Azure에 제공합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>컨설팅 서비스</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pikselinc-645320.piksel-extended-support-workshop?search=Piksel%20Inc&amp;page=1" target="_blank"><img alt="2008 Windows SQL End of Support Workshop - 2 days" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c3100998-71a1-4408-a648-a4766312c635.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2008년 Windows SQL 지원 종료 워크샵 - 2일" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pikselinc-645320.piksel-extended-support-workshop?search=Piksel%20Inc&amp;page=1" target="_blank">2008년 Windows/SQL 지원 종료 워크샵 - 2일</a>: 2008년 Windows 및 SQL Server 2008년 지원 종료가 다가오고 있으며, Piksel Group&#39;워크샵은 옵션을 이해하고 행동 계획을 수립하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/flatrocktechnology.azure_migration_briefing?search=Flat%20Rock%20Technology&amp;page=1" target="_blank"><img alt="2-Hour Azure Migration Briefing" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c06a0663-3436-430e-9862-be412dc91479.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2시간 Azure 마이그레이션 브리핑" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/flatrocktechnology.azure_migration_briefing?search=Flat%20Rock%20Technology&amp;page=1" target="_blank">2시간 Azure 마이그레이션 브리핑</a>: Flat Rock Technology의 이 브리핑은 클라우드로 마이그레이션하고 특히 Microsoft Azure 데 필요한 사항에 대한 개략적인 정보를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/popcornapps.airlines_chatbot?search=PopcornApps%20Inc.&amp;page=1" target="_blank"><img alt="Airlines ChatBot- 3 week implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cbff59b5-6687-47e4-b0d5-b2902466ec47.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="항공사 ChatBot- 3주 구현" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/popcornapps.airlines_chatbot?search=PopcornApps%20Inc.&amp;page=1" target="_blank">항공사 ChatBot: 3주 구현:</a> 여러 채널을 지원하고 항공편 예약, 상태, 중단 알림, 체크인, 탑승권, FAQ 등을 다루는 Amadeus/Sabre를 통해 항공사를 위한 대화형 AI 구현입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pythian-3541155.kickaaas-assessment-canada?search=PYTHIAN&amp;page=1" target="_blank"><img alt="Azure Analytics 5-Day Readiness Assessment (UK)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7c170fe5-ff0e-43e6-8fc8-ff3925e8d5a9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Analytics 5일 준비 평가(영국)" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pythian-3541155.kickaaas-assessment-canada?search=PYTHIAN&amp;page=1" target="_blank">Azure Analytics 5일 준비 평가</a>: Pythian Kick Analytics-as-a-Service는 데이터 분석의 기능을 비즈니스 사용자의 손에 맡기고 데이터 사일로 문제를 해결합니다. 이 5일 평가는 캐나다 고객을 위한 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pythian-3541155.kickaaas-assessment-uk?search=PYTHIAN&amp;page=1" target="_blank"><img alt="Azure Analytics 5-Day Readiness Assessment (USA)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cc0fec37-6582-49b2-a60c-fa9948e34396.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Analytics 5일 준비 평가(미국)" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pythian-3541155.kickaaas-assessment-uk?search=PYTHIAN&amp;page=1" target="_blank">Azure Analytics 5일 준비 평가(영국)</a>: Pythian Kick Analytics-as-a-Service는 데이터 분석의 기능을 비즈니스 사용자의 손에 맡기고 데이터 사일로 문제를 해결합니다. 이 5일간의 평가는 영국용입니다. 고객.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pythian-3541155.kickaaas-assessment-usa?search=PYTHIAN&amp;page=1" target="_blank"><img alt="Azure Analytics 5-Day Readiness Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/643e85e6-c909-4956-9ad5-56582910d69a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Analytics 5일 준비 평가" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pythian-3541155.kickaaas-assessment-usa?search=PYTHIAN&amp;page=1" target="_blank">Azure Analytics 5일 준비 평가(미국)</a>: Pythian Kick Analytics-as-a-Service는 데이터 분석의 기능을 비즈니스 사용자의 손에 맡기고 데이터 사일로 문제를 해결합니다. 이 5일 평가는 미국 고객을 위한 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_design_assessment?search=CDW&amp;page=1" target="_blank"><img alt="Azure Design Assessment 4-Day Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f748a2eb-abf4-4ac2-9c3a-3d9d89f46c95.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 디자인 평가 4일 평가" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_design_assessment?search=CDW&amp;page=1" target="_blank">Azure 디자인 평가: 4일 평가</a>: CDW는 Microsoft Azure 환경을 검토하여 구성을 확인하고 모범 사례에 따라 권장 사항을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_architecture_workshop" target="_blank"><img alt="Azure Governance Workshop 5-Day Workshop" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0e09babb-2424-4eae-9ae4-f4a54a33984a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 거버넌스 워크샵 5일 워크샵" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_architecture_workshop" target="_blank">Azure 거버넌스 워크샵: 5일 워크샵</a>: CDW는 현재 현재 있는 사람, 프로세스 및 기술을 심층적으로 살펴보고 IT 전문가가 비즈니스 요구를 효과적으로 지원할 수 있도록 하는 거버넌스 계획을 문서화합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_jumpstart_3_day_implmentation?search=CDW&amp;page=1" target="_blank"><img alt="Azure Jumpstart 3-Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ee478b6a-1c77-4b88-bcfc-6f5aa21f887f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Jumpstart 3일 구현" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_jumpstart_3_day_implmentation?search=CDW&amp;page=1" target="_blank">Azure Jumpstart: 3일 구현</a>: CDW는 조직에서 가상 네트워킹 기술을 선택하고 구현하는 데 도움이 됩니다. 연결된 클라우드 서비스 및 스토리지 계정을 포함하여 가상 머신을 배포하는 가장 좋은 방법을 알아봅니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pikselinc-645320.azure-migration-transformation-workshop?search=Piksel%20Inc&amp;page=1" target="_blank"><img alt="Azure migration and transformation two-day workshop" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2797d5d5-472f-4ca7-b5f5-a06572e81b7b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 마이그레이션 및 변환 2일 워크샵" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pikselinc-645320.azure-migration-transformation-workshop?search=Piksel%20Inc&amp;page=1" target="_blank">Azure 마이그레이션 &amp; 변환 2일 워크샵</a>: 이 Azure 마이그레이션 및 변환 워크샵에서 Piksel Group은 후보 클라우드 서비스와 Azure로의 이동의 이점을 식별합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pikselinc-645320.azure-migration-and-transformation?search=Piksel%20Inc&amp;page=1" target="_blank"><img alt="Azure migration and transformation briefing (3h)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a6ff1c43-93b8-4f8b-bf8a-cfce86732621.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 마이그레이션 및 변환 브리핑(3시간)" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pikselinc-645320.azure-migration-and-transformation?search=Piksel%20Inc&amp;page=1" target="_blank">Azure 마이그레이션 및 변환 브리핑(3h)</a>: 클라우드 브리핑 및 초기 클라우드 준비 평가부터 시작하여 다양한 Azure 마이그레이션 및 변환 컨설팅, 구현 및 관리 서비스 중에서 선택합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_migration_assessment?search=CDW&amp;page=1" target="_blank"><img alt="Azure Migration Assessment 2-Day Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/051e7d1d-3867-45a7-be1d-9248766b818a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 마이그레이션 평가 2일 평가" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_migration_assessment?search=CDW&amp;page=1" target="_blank">Azure 마이그레이션 평가: 2일 평가</a>: CDW는 사용자 환경에 평가 도구를 배포하고, 도구가 제대로 구성되었는지 확인하고, 도구를 실행하고, 결과를 검토하고 해석하는 데 도움을 줍니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pikselinc-645320.azure-migration-transformation-poc?search=Piksel%20Inc&amp;page=1" target="_blank"><img alt="Azure transformation five-day proof of concept" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/124e65c9-d44a-4858-8e64-5ae7937c6676.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 변환 5일 개념 증명" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pikselinc-645320.azure-migration-transformation-poc?search=Piksel%20Inc&amp;page=1" target="_blank">Azure 변환 5일 개념 증명</a>: Piksel Group의 이 Azure 마이그레이션 및 변환 브리핑, 평가, 계획 및 개념 증명 활동은 후보 서비스 및 혜택을 식별하고 유효성을 검사합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/objektkultursoftwaregmbh.objektkultursoftwaregmbh_cloudoperations" target="_blank"><img alt="Cloud Operations and Monitoring 3-day Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/75b8b7e0-bf0b-4016-a691-afc8ce4024ba.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="클라우드 운영 및 모니터링 3일 평가" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/objektkultursoftwaregmbh.objektkultursoftwaregmbh_cloudoperations" target="_blank">클라우드 운영 &amp; 모니터링: 3일 평가</a>: Objektkultur Software는 클라우드로 마이그레이션하기 위한 전략을 계획하고 변경 관리 프로세스에서 지원하여 시스템 환경으로 통합되는 변환을 지원합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.connecting_with_expressroute_2_day_implementation?search=CDW&amp;page=1" target="_blank"><img alt="Connecting with ExpressRoute 2 Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ff10f7d7-e0f0-466d-a10c-467c8938fba7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ExpressRoute 2일 구현을 사용하여 연결" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.connecting_with_expressroute_2_day_implementation?search=CDW&amp;page=1" target="_blank">ExpressRoute와 연결: 2일 구현</a>: 조직에서는 먼저 ExpressRoute 연결을 지원하는 WAN 공급자와 협력해야 합니다. CDW는 가상 네트워크 및 게이트웨이를 구성하고 ExpressRoute 연결을 설정하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bui.buipentesting" target="_blank"><img alt="Cyber Security PEN Testing 4 Week Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d4237d8e-47a4-4dbb-bf8d-39d84465ab1c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="사이버 보안 PEN 테스트 4주 평가" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bui.buipentesting" target="_blank">사이버 보안 PEN 테스트: 4주 평가</a>: 네트워크는 매일 공격을 받고 있으며, 이러한 공격은 비즈니스를 방해하고, 혼란을 일으키고, 평판 손상을 일으킬 수 있습니다. 침투 테스트를 통해 위협 행위자가 네트워크에 침투하는 방법을 이해할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/tharavu-technologies-pvt-ltd.thedatateam_intellegion?search=TheDataTeam&amp;page=1" target="_blank"><img alt="Envisioning AI for IoT data 2-day Workshop" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac9a0bb1-c5ec-4d20-a7e1-be2f7ad94a5a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IoT용 AI 데이터 2일 워크샵 구상" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/tharavu-technologies-pvt-ltd.thedatateam_intellegion?search=TheDataTeam&amp;page=1" target="_blank">IoT 데이터용 AI 구상: 2일 워크샵:</a> TheDataTeam의 이 제안은 Azure 및 TheDataTeam&#39;Intellegion 플랫폼을 사용하여 엄청난 비즈니스 가치와 해결 가능한 사용 사례를 검색하기 위해 클라이언트&#39;사이트에서 진행되는 AI 구상 워크샵을 위한 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/new-signature.eos_appfactory?search=New%20Signature&amp;page=1" target="_blank"><img alt="EOS Migration Pilot 8-Wk Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c33a5159-da7d-4b9e-89e4-3a1279527512.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="EOS 마이그레이션 파일럿 8-Wk 구현" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/new-signature.eos_appfactory?search=New%20Signature&amp;page=1" target="_blank">EOS 마이그레이션 파일럿: 8-Wk 구현</a>: 검색 및 컨테이너화 도구를 모두 사용하여 레거시 Windows Server 워크로드를 Azure로 파일럿 마이그레이션합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/convergence-consulting-group.leadership_development_solution" target="_blank"><img alt="Leadership Development Solution" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aebd4e6f-feb8-4079-8744-a25fa2d733d8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="리더십 개발 솔루션" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/convergence-consulting-group.leadership_development_solution" target="_blank">리더십 개발 솔루션</a>: 리더십 개발 솔루션은 K-12 조직이 정보에 입각한 결정을 내릴 수 있도록 도와줍니다. Azure 데이터 웨어하우스 및 시각화와 함께 전략적 교육 서비스를 제공하여 리더십 배치 프로세스를 개선합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/netenrich-2118967.azure-migrate?search=NetEnrich&amp;page=1" target="_blank"><img alt="Migrate to Azure at 20 Percent of Consumption 8-wk Impl" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c11d1c9-dc4e-41e4-a9ff-90dc1e26d40b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="사용량 8주 Impl의 20%에서 Azure로 마이그레이션" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/netenrich-2118967.azure-migrate?search=NetEnrich&amp;page=1" target="_blank">사용량 8주 임플의 20%에서 Azure</a>로 마이그레이션: 첫 해에 Azure 사용량의 20%에 불과하여 워크로드 및 앱을 Azure로 마이그레이션합니다. NetEnrich의 이 패키지는 도구 전문 지식과 데이터 센터 및 앱 마이그레이션에 대한 지식을 결합합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/msritservicesllp.saponazure-free-sandbox-offering?search=MSR%20IT%20Services%20LLP&amp;page=1" target="_blank"><img alt="Free SAP Sandbox to Azure MIgration 2-Week POC" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/54bed316-bfd7-418c-9019-d8358cc8268f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure MIgration 2주 POC에 대한 무료 SAP 샌드박스" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/msritservicesllp.saponazure-free-sandbox-offering?search=MSR%20IT%20Services%20LLP&amp;page=1" target="_blank">Azure/QAS 마이그레이션 서비스의 SAP: 2주 POC:</a> 이 개념 증명에는 무료 Azure 사용 크레딧 및 SAP QAS/샌드박스 환경을 다루는 MSR IT 서비스에서 제공하는 마이그레이션 서비스가 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/green-house-data.spotlite-azure-msp" target="_blank"><img alt="SpotLITE Discovery for Azure MSP 2 WKS Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c391b58a-6901-44d5-afcd-553bb6a8f8f8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure MSP 2 WKS 평가를 위한 SpotLITE 검색" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/green-house-data.spotlite-azure-msp" target="_blank">Azure MSP용 SpotLITE 검색: 2 WKS 평가</a>: Green House Datas&rsquo; SpotLITE 검색 프로세스는 IT 시스템의 전반적인 상태를 확인하고 운영 성능을 개선하고 Azure를 포함하는 계획을 간략하게 설명하도록 설계되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.sso_using_adfs_2_day_implementation?search=CDW&amp;page=1" target="_blank"><img alt="SSO Using ADFS and ADConnect 3-Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/50333185-e7ae-413d-b8a8-b37454e2001a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ADFS 및 ADConnect 3일 구현을 사용하는 SSO" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.sso_using_adfs_2_day_implementation?search=CDW&amp;page=1" target="_blank">ADFS 및 ADConnect를 사용하는 SSO: 3일 구현:</a> 온-프레미스 디렉터리를 Azure Active Directory 통합하여 클라우드 및 온-프레미스 리소스에 액세스하기 위한 공통 ID를 제공하여 최종 사용자를 위한 작업을 간소화합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

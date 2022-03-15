@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ef637f616e660909f09ea1cd9fe277aad99a0887
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903286"
+Slug: end-to-end-cloud-experiences-for-developers-at-node-js-interactive-north-america
+Title: Node.js 대화형 북미의 개발자를 위한 엔드 투 엔드 클라우드 환경
+Summary: 700명 이상의 개발자, DevOps 엔지니어 및 기타 Node.js 애호가들이 이달 초 오스틴에서 Node.js 대화형 북미를 위해 만났습니다. Microsoft는 플래티넘 스폰서가 된 것을 자랑스럽게 생각하며...
+Content: >-
+  <p>700명 이상의 개발자, DevOps 엔지니어 및 기타 Node.js 애호가들이 지난달 오스틴에서 Node.js 대화형 북미를 위해 만났습니다. Microsoft는 플래티넘 스폰서&rsquo;로 활동한 것을 자랑스럽게 생각하며, 모임부터 워크샵, 디버깅부터 로봇 및 TypeScript 또는 <a href="https://blogs.windows.com/msedgedev/2016/11/29/node-chakracore-vm-neutrality/">Node-Chakracore</a>와 같은 기술 분야의 작업을 강조하는 콘텐츠에 이르기까지 커뮤니티 참여의 좋은 주를 시작하면서 이 행사를 기조연설하게 되어 매우 기쁩니다.</p>
+
+
+  <p>Microsoft에서 Node.js 함께 작업하는 사람들에게 이 이벤트는 우리 자신의 Node.js 여정에서 중요한 이정표입니다. 현재는 Microsoft Azure Node.js 광범위하게 지원하며, 개발자에게 VM 확장 집합 및 <a href="https://channel9.msdn.com/Blogs/Open/From-MEAN-to-DEAN-in-Azure-with-Bitnami-VM-Scale-Sets-and-DocumentDB">Linux 기반 Node.js 스택</a>, 컨테이너 인프라, <a href="https://azure.microsoft.com/en-us/blog/azure-container-service-the-cloud-s-most-open-option-for-containers/">Azure Container Service</a>, PaaS, 웹, IoT, 모바일 또는 서버리스 애플리케이션에 대한 Node.js 지원, Azure의 <sup>타사</sup> Node.js IaaS 및 PaaS 솔루션을 통해 애플리케이션을 빌드할 수 있는 아키텍처 선택을 제공합니다.</p>
+
+
+  <p>어떤 선택을 하든 <a href="https://azure.microsoft.com/en-us/develop/nodejs/"> DocumentDB의 MongoDB</a> <a href="https://docs.microsoft.com/en-us/azure/documentdb/documentdb-protocol-mongodb">프로토콜 지원을</a> 포함하여 많은 데이터 솔루션에 대해 여러 Azure 서비스 및 클라이언트 드라이버에Node.js SDK를 제공하여 이러한 투자에 가치를 더합니다. &rsquo;또한 사용자가 선택한 플랫폼에서 개발자 생산성을 중시하는 것이 더 중요 &ndash; 하며&rsquo;, 이러한 이유로 우리는 뛰어난 DevOps 도구와 <a href="https://code.visualstudio.com">Visual Studio Code</a> 대한 재정의된 코딩 환경에 계속 투자하여 IntelliSense &amp; 디버깅, 강력한 확장성 및 모든 곳에서 작동하는 기본 제공 Azure 지원을 제공합니다.</p>
+
+
+  <p>Node.js 대화형 북미의 <a href="https://www.youtube.com/watch?v=kLSEMJF-FFQ">기조연설</a>에서 저는 참석자들에게 Azure App Service에서 Docker 지원과 같은 솔루션을 사용하여 클라우드의 Node.js 개발자에게 이러한 환경이 어떻게 보이고 어떤 느낌인지를 안내하고 이벤트에 참석할 수&rsquo; 없더라도 디버깅 사용 사례를 다루는 등 Node.js 대한 비전과 진행 상황에 대한 몇 가지 관점을 제공했습니다.  GitHub)에 따라 수행할 수 있습니다<a href="https://github.com/lostintangent/node-e2e-nina2016/blob/master/README.md">.</a></p>
+
+
+  <p>전 세계 개발자들은 오픈 소스, Node.js 및 클라우드의 강력한 조합을 빠른 속도로 채택하고 있습니다. Enterprise 채택은 <a href="https://medium.com/@nodejs/what-you-missed-at-nodeinteractive-33bb23f6ccb5#.plrxi0ek4">계속 증가하고</a> 있으며 <a href="https://customers.microsoft.com/pages/AdvancedSearch.aspx?SearchText=node.js">Microsoft 고객을</a> 포함한 여러 가지 시나리오에서 이미 인기가 있습니다.</p>
+
+
+  <p><a href="https://www.youtube.com/watch?v=kLSEMJF-FFQ"><img alt="clip_image002" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8378622d-01dc-4478-9c9b-d56097c063a3.jpg" style="border: 0px currentColor; border-image: none; width: 450px; height: 205px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="clip_image002"></a></p>
+
+
+  <p>실제로, 기조 연설에서 저는 마켓플레이스 솔루션의 60% 이상이 오픈 소스를 통합하는 개방적이고 유연한 글로벌 클라우드 플랫폼으로서의 경험을 바탕으로 조직이 클라우드에서 Node.js 채택하는 방법과 이유에 대한 우리의 관점을 커뮤니티와 공유했습니다. 여기서 3개의 VM 중 거의 1개는 Linux를 실행하며 컨테이너를 실행하는 고객의 수는 4배에 달하며 <a href="https://azure.microsoft.com/en-us/marketplace/?term=node.js">Marketplace</a>에는 12개의 Node.js 솔루션이 공존합니다.  Azure에서 Node.js 증가가 계속될 것으로 예상할 수 있습니다.</p>
+
+
+  <p>Node.js 비전은 <b>개발자 생산성</b>, <b>유연하고 강력한 클라우드 배포</b> 및 엔터프라이즈 비즈니스 요구를 지원하는 <b>프로덕션 운영 &amp; 진단</b> 에 중점을 둡니다. TypeScript, Visual Studio 또는 Microsoft Azure 같은 일부 제품은 고객이 이 비전을 현실로 만들 수 있도록 돕고 있으며, 개발자가 클라우드에서 Node.js 더 많은 작업을 수행할 수 있도록 하는 학습 루프를 유지할 수 있도록 커뮤니티 및 에코시스템뿐만 아니라 이 포트폴리오에 계속 투자할 것입니다.</p>
+
+
+  <p>예를 들어 Microsoft는 <a href="https://nodejs.org/en/foundation/">Node Foundation</a> (입력을 <a href="https://www.surveymonkey.com/r/Node16">찾고</a> 있습니다)의 일부이며 CTC의 활성 참가자이며, TSC &amp; 는 <a href="https://www.typescriptlang.org/">TypeScript</a>, <a href="https://github.com/microsoft/ChakraCore">Chakra</a> 등과 같은 영역에 기여하는 여러 WG를 제공하며, Node.js 포함한 오픈 소스 환경에 초점을 맞춘 <a href="https://blogs.msdn.microsoft.com/azureossds/">개발자 지원</a> 팀을 통해 많은 것을 배웁니다.</p>
+
+
+  <p>클라우드에서 Node.js 모멘텀의 좋은 한 해를 마무리하면서 <a href="https://www.youtube.com/playlist?list=PLfMzBWSH11xYaaHMalNKqcEurBH8LstB8">YouTube</a>에서 Node.js 대화형 북미의 모든 콘텐츠를 확인하고, <a href="https://github.com/lostintangent/node-e2e-nina2016/blob/master/README.md">엔드투엔드 Node.js 데모를</a> 탐색하고, <a href="https://azure.com/node"> Azure에서Node.js</a> 시작하세요.</p>

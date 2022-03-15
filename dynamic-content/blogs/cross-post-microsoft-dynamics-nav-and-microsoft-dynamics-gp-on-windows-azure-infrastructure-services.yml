@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e610876d5f8d2f7981040066522cbb0a0c9935d9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898660"
+Slug: cross-post-microsoft-dynamics-nav-and-microsoft-dynamics-gp-on-windows-azure-infrastructure-services
+Title: '교차 게시: Windows Azure Infrastructure Services에서 Microsoft Dynamics NAV 및 Microsoft Dynamics GP!'
+Summary: Windows Azure Infrastructure Services - Virtual Machines 및 Virtual Network는 변화하는 비즈니스 요구 사항에 맞게 확장 및 조정되는 주문형 인프라를 제공합니다. 새로 만드는지 여부...
+Content: <p class="p1">Windows Azure Infrastructure Services - Virtual Machines 및 Virtual Network는 변화하는 비즈니스 요구 사항에 맞게 확장 및 조정되는 주문형 인프라를 제공합니다. 새 애플리케이션을 만들거나 Virtual Machines에서 기존 애플리케이션을 실행하는 경우 최소 사용 요구 사항 없이 분당 청구를 통해 최상의 클라우드 경제성을 제공합니다. 클라우드 규모와 경제성을 활용하는 기존 워크로드의 좋은 예는 Dynamics입니다. Microsoft Dynamics 팀은 오늘 고객이 Dynamics GP 2013 및 Dynamics NAV 2013을 사용할 수 있는 새로운 방법을 발표했습니다. &nbsp;Dynamics GP 2013 및 NAV 2013은 이제 Dynamics 파트너 에코시스템을 통해 제공되고 서비스되는 Windows Azure Infrastructure Services에서 호스트됩니다.</p>  <p class="p1"><a href="https://community.dynamics.com/b/theedge/archive/2013/06/18/microsoft-dynamics-nav-and-microsoft-dynamics-gp-now-available-on-windows-azure.aspx" target="_blank"><span class="s1">Dynamics 팀의 블로그에서</span></a> 자세히 알아보고 초기 어댑터 고객 및 파트너에 대해 알아볼 수 있습니다.&nbsp;</p>

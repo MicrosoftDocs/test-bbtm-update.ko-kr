@@ -1,0 +1,28 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 46e18e547ca96d15596b0137fecf48ea2d712f7a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902557"
+Slug: hybrid-cloud-just-got-easier-new-azure-migration-resources-and-tools-available
+Title: 하이브리드 클라우드가 더 쉬워졌습니다. 새 Azure 마이그레이션 리소스 및 도구를 사용할 수 있음
+Summary: 대부분의 고객은 하이브리드 클라우드 접근 방식을 사용하여 클라우드와 기존 애플리케이션 및 인프라를 활용하고 있습니다. 고려하고 있는지 여부...
+Content: >-
+  <p>대부분의 고객&nbsp;들은 <a href="https://aka.ms/hybridmomentumblog">하이브리드 클라우드 접근 방식을</a> 사용하여 클라우드와 기존 애플리케이션 및 인프라를 활용하고 있습니다. &rsquo;일부 또는 모든 애플리케이션을 클라우드로 마이그레이션하는 것을 고려하든 온-프레미스에서 전환하려면 신중한 계획이 필요합니다. 비용이 얼마나 드는지, 환경 크기를 조정하는 방법, 선택할 가상 머신 옵션 등을 이해해야 하며 &ndash; 가능한 가장 스마트하고 비용 효율적인 방법으로 이 모든 작업을 수행하려고 합니다.</p>
+
+
+  <p>이 점을 염두에 두고 현재는 하이브리드 클라우드의 기능을 활용하여 비즈니스를 최적화하는 데 도움이 되는 새로운 도구와 리소스를 제공하고 있습니다.</p>
+
+
+  <ul>
+      <li>IT 환경에서 서버를 검색하고, 하드웨어 구성을 분석하고, Microsoft Azure 이동 시 예상되는 비용 이점을 포함한 자세한 보고서를 제공하는 무료 <a href="https://aka.ms/cloudmigrationassessment">클라우드 마이그레이션 평가</a>입니다.</li>
+      <li>오늘부터 Azure 관리 포털에서 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/">직접 Azure 하이브리드 사용 혜택을</a> 활성화하여 가능한 가장 비용 효율적인 방법으로 클라우드 경로를 간소화할 수 있습니다. Azure 하이브리드 사용 혜택을 사용하면 Software Assurance를 포함하는 Windows Server 라이선스를 사용하여 최대 40%를 절약할 수 있습니다.&nbsp; 모든 고객은 이 쉬운 프로비저닝 환경을 사용하여 Azure의 Windows Server 가상 머신에 대한 비용을 절감할 수 있습니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/services/site-recovery/">Azure Site Recovery</a> 는 클라우드로의 여정을 가능한 한 쉽게 만드는 또 다른 도구입니다. 이 도구는 가상 머신을 Azure로 마이그레이션하는 데 사용할 수 있는 도구이며&rsquo;, 애플리케이션이 AWS, VMware, Hyper-V 또는 물리적 서버에서 실행 중인지 여부에 관계없이 애플리케이션을 이동할 수 있는 좋은 방법입니다. PowerShell에서 하이브리드 사용 혜택을 사용하도록 ASR을 이미 구성할 수 있으며, 오늘&rsquo; Azure Portal 자체 내에서 가상 머신에 태그를 지정할 수 있는 몇 주 안에 Azure Site Recovery에서 사용할 수 있는 새로운 환경을 발표합니다. 이 기능을 사용하면 Windows Server 가상 머신을 그 어느 때보다 쉽게 마이그레이션할 수 있습니다.&nbsp;</li>
+  </ul>
+
+
+  <p>Azure를 사용하면 클라우드 및 온-프레미스 환경에서 진정으로 일관된 하이브리드 기능을 얻을 수 있으며, 비즈니스 요구 사항에 따라 각 애플리케이션에 대한 최적의 위치를 유연하게 선택할 수 있으며 클라우드로 이동하는 복잡성을 줄일 수 있습니다. 가상 머신을 클라우드로 마이그레이션하는 것은 조직에서 클라우드 경험에서 수행하는 첫 번째 단계 중 하나이며 하이브리드 클라우드 전략의 자연스러운 부분입니다.</p>
+
+
+  <p><a href="https://aka.ms/azuremigrate">Azure Migration 페이지를</a> 방문하여 현재 사용할 수 있는 도구 및 리소스에 대해 자세히 알아봅니다. Wed&rsquo;는 클라우드로의 경로를 쉽고 효과적으로 만드는 방법에 대해 여러분의 의견을 듣고 싶어합니다.</p>

@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b9c4502ef2baced6df8c66b6687def494189fa79
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898794"
+Slug: windows-azures-use-of-non-us-ipv4-address-space-in-us-regions
+Title: Microsoft Azure 미국 지역에서 미국 이외의 IPv4 주소 공간을 사용합니다.
+Summary: 일부 Azure 고객은 미국 지역에 배포된 VM의 경우 웹 브라우저에서 지역화된 페이지를 시작할 때 국제 사이트로 리디렉션할 수 있음을 알아차렸을 수 있습니다. 이 게시물에서는 이런 일이 발생하는 이유를 설명합니다.
+Content: >-
+  <strong>업데이트(2014년 6월 13일)</strong>
+
+
+  아래 블로그는 미국 지역에서 Microsoft Azure IPv4 주소 공간과 관련된 상황을 잘못 설명했습니다. 현재 Microsoft는 미국 지역에 IPv4 공간을 보유하고 있습니다. 즉, 재고 공간은 동적 상황입니다. 과거에 일부 고객에게는 제한된 인벤토리의 결과로 미국 이외의 IPv4 주소가 할당되었습니다.
+
+
+  고객이 나중에 혼동을 겪지 않도록 많은 주요 지리적 위치 데이터베이스를 이미 업데이트했습니다. 이로 인해 불편을 드려 죄송합니다.
+
+
+  &nbsp;
+
+
+  일부 Azure 고객은 미국 지역에 배포된 VM의 경우 웹 브라우저에서 지역화된 페이지를 시작할 때 국제 사이트로 리디렉션할 수 있음을 알아차렸을 수 있습니다. 다음은 이런 일이 발생하는 이유를 설명합니다.
+
+
+  <strong>잠재적 원인</strong>
+
+
+  IPv4 주소 공간은 미국에서 완전히 할당되었으므로 사용 가능한 추가 IPv4 주소 공간이 없습니다. 이를 위해서는 Microsoft가 새 서비스의 주소 지정을 위해 전 세계적으로 사용할 수 있는 IPv4 주소 공간을 사용해야 합니다. 그 결과 미국 이외의 지역에 할당된 IPv4 주소 공간을 사용하여 미국 지역에 있을 수 있는 서비스를 처리해야 합니다.IP 공간이 인터넷 할당 번호 기관에 의해 등록 기관에 할당되므로 등록을 전송할 수 없습니다.
+
+
+  때때로 서비스는 미국 이외의 위치에서 호스트되는 <b>것처럼 보일</b> 수 있습니다.
+
+
+  <b>서비스 및 데이터는 배포된 위치에 있습니다.</b>
+
+
+  IP 주소 등록 기관은 IP 주소 물리적 위치와 동일시되지 않는다는 점에 유의해야 합니다( 즉, 브라질에 등록되어 있지만 버지니아에 물리적으로 있는 디바이스 또는 서비스에 할당된 IP 주소를 가질 수 있음).따라서 미국 지역에 배포하는 경우 서비스는 여전히 미국에서 호스트되며 고객 데이터는 보안 센터에 자세히 설명된 대로 미국에 유지됩니다.  <a href="https://azure.microsoft.com/en-us/support/trust-center/privacy/">https://azure.microsoft.com/en-us/support/trust-center/privacy/</a>
+
+
+  현재 몇 가지 주요 IP 지리적 위치 데이터베이스 회사와 협력하여 이러한 IP의 위치를 업데이트하고 있으며, 이로 인해 발생할 수 있는 문제를 완화하는 데 도움이 됩니다.

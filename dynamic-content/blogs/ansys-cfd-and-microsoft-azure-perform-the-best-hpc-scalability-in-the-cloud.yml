@@ -1,0 +1,50 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3dbcb43b40e4255d80c32c2735e4933e5259acf4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903351"
+Slug: ansys-cfd-and-microsoft-azure-perform-the-best-hpc-scalability-in-the-cloud
+Title: ANSYS CFD 및 Microsoft Azure 클라우드에서 최고의 HPC 확장성을 수행합니다.
+Summary: 오늘 우리는이 생태계에 ANSYS 계산 유체 역학 (CFD) 솔버의 추가를 발표하게되어 기쁩니다.
+Content: >-
+  <p>지난 몇 달 동안 우리는 시뮬레이션 에코시스템의 여러 파트너와 함께 <a href="https://azure.microsoft.com/en-us/solutions/big-compute">Microsoft Azure 빅 컴퓨팅</a>에 대한 다양한 솔버 기술의 전반적인 성능에 대해 발표했습니다. 오늘 우리는이 생태계에 ANSYS 계산 유체 역학 (CFD) 솔버의 추가를 발표하게되어 기쁩니다.</p>
+
+
+  <p>ANSYS CFD와 같은 ISV(독립 소프트웨어 공급업체) 애플리케이션은 CFD 시뮬레이션의 핵심입니다. &ldquo;Microsoft Azure Big Compute&rdquo;는 ANSYS 고객에게 요청 시 수천 개의 코어를 제공하여 복잡한 CFD 시뮬레이션 프로젝트를 실행할 수 있습니다.&nbsp; 이러한 시뮬레이션은 Linux 및 Windows 모두 사용할 수 있는 RDMA 및 InfiniBand 기술을 통해 사용하도록 설정된 Azure의 HPC 인프라에서 지원됩니다.</p>
+
+
+  <p>ANSYS CFD 소프트웨어를 사용하면 엔지니어가 유체 힘, 열 효과, 구조적 무결성 및 전자기 방사선을 포함한 다중 물리학 분석을 수행하여 제품을 평가하고 완벽하게 최적화할 수 있습니다.</p>
+
+
+  <blockquote>
+
+  <p>&quot;ANSYS 및 Microsoft Azure Azure&rdquo;에서 ANSYS CFD 워크로드를 실행하기 위해 대규모 고객과 함께 POC(개념 증명)에 긴밀히 협력하고 있다고 ANSYS의 엔터프라이즈 솔루션 담당 부사장인 Ray Milhem은 말했습니다. &ldquo;POC는 매우 성공적이었으며 데이터는 최대 1024개 코어까지 ANSYS CFD를 실행하는 뛰어난 확장성을 보여주었습니다.&rdquo;</p>
+
+  </blockquote>
+
+
+  <p>지난 몇 개월 동안 ANSYS의 CFD 해 찾기 팀과 긴밀히 협력하여 ANSYS CFD 코드가 Azure Linux RDMA 스택에서 성공적으로 실행되고 수천 개의 코어까지 확장되도록 했습니다. Azure는 RDMA(원격 직접 메모리 액세스) 및 Infiniband 기술을 사용하는 전용 고속 짧은 대기 시간 네트워크 패브릭으로 인해 ANSYS CFD를 통해 높은 수준의 확장성과 성능을 제공할 수 있습니다. 이 기술은 A8 및 A9 인스턴스에서만 사용할 수 있습니다. RDMA 컴퓨팅은 3 마이크로초 및 32Gbps 대역폭에 가까운 매우 짧은 대기 시간을 제공합니다. 따라서 Azure 클라우드에서 대규모 컴퓨팅 CFD 작업을 실행하는 뛰어난 스케일링 성능이 발생합니다.&nbsp;&nbsp;</p>
+
+
+  <p>Azure A9 인스턴스(Intel E5-2670at 2.6GHz, 메모리 112GB, 1600MHz&nbsp; DDR3, QDR InfiniBand)에서 Intel MPI를 사용하여 CentOS 6.5의 ANSYS CFD 버전 16.2에서 여러 시뮬레이션 모델을 실행했습니다. 우리가 실행한 세 가지 모델은 각각 연소기(7,100만 셀), F1 레이스카(1억 4천만 셀), 오픈 레이스카(2억 8천만 셀)였습니다. 이러한 시뮬레이션에서 최대 1024개의 코어에 대해 아래의 아주 좋은 크기 조정 숫자를 명확하게 볼 수 있습니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/77129585-f25c-4c29-b22b-80c627d03daa.png" style="border: 1px solid currentColor; border-image: none;"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/581d7545-7c5c-440b-99a8-f15d643b2209.png" style="border: 1px solid currentColor; border-image: none;"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2d5801c-482a-4b30-8a8f-027c561fc9c1.png"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e078a42b-d15b-4521-9982-d8c49e75b591.png" style="border: 1px solid currentColor; border-image: none;"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e2b50024-09bb-447f-bb9b-43eb26e4eddb.png" style="border: 1px solid currentColor; border-image: none;"></p>
+
+
+  <p>HPC 워크로드를 클라우드로 이동하는 고객의 가장 일반적인 요청 중 하나는 ISV 라이선스 모델을 클라우드에 맞게 조정하는 것입니다.&nbsp; ANSYS는 클라우드에 대한 라이선스의 엄청난 배열을 수행했습니다. ANSYS에서 발표한 변경 사항으로 인해 라이선스 모델이 클라우드에 더 친숙합니다.</p>
+
+
+  <blockquote>
+
+  <p>&ldquo;이는 고객이 다양한 퍼블릭 클라우드 배경에서 실행할 수 있도록 하는 ANSYS 오픈 클라우드 전략의 일부입니다. ANSYS와 Microsoft Azure 팀은 다양한 프로젝트에&quot; 협력하면서 가까운 장래에 더 많은 발표를 할 것이라고 밀헬름은 말했다.</p>
+
+  </blockquote>
+
+
+  <p>자세한 내용은 <a href="https://ansys.com/Solutions/Solutions-by-Role/IT-Professionals/Licensing/Licensing-for-Cloud-Computing">ANSYS </a>웹 사이트를 참조하세요.</p>
+
+
+  <p>무료 평가판 <a href="https://azure.microsoft.com/en-us/free/">계정을</a> 열어 Microsoft Azure 해보는 것이 좋습니다. 자세한 내용은 <a href="https://simulation.azure.com/">웹 사이트를</a> 방문할 수도 있습니다.</p>

@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 54a3171f51deb95ad91266814686e1bf28096d0a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898305"
+Slug: new-hpc-architecture-blueprint-batch-and-data-factory
+Title: '새 아키텍처 청사진: Batch 및 Data Factory를 사용한 HPC 및 데이터 오케스트레이션'
+Summary: 몇 달 전에 Large-Scale Computing of Financial Services 워크로드에 대한 Azure 아키텍처 청사진을 공유했습니다. 이제 단계별 연습과 해당 아키텍처 다이어그램을 포함하는 예제 솔루션의 형태로 해당 시나리오의 압축된 버전을 게시했습니다.
+Content: >-
+  <p>몇 달 전, Large-Scale Computing of Financial Services 워크로드에 대한 Large-Scale Computing of Financial Services"> 워크로드Azure 아키텍처 청사진을 Azure 아키텍처 청사진과 공유<a href="https://download.microsoft.com/download/2/6/3/263F01FB-4B0C-4262-8E2E-7906EC81B973/MS_Arch_Financial_Svcs_SEC.pdf" target="_blank" title="했습니다</a>. Azure Data Factory를 사용하여 복잡한 데이터 흐름을 관리하고 모니터링하는 한편, Batch, HDInsight, Machine Learning 및 기타 Azure 서비스 및 솔루션을 비롯한 Azure 빅 컴퓨팅, 빅 데이터 및 인프라 서비스를 활용하는 실제 시나리오를 보여 줍니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이제 단계별 연습을</a> 포함하는 단계별 연습"> 솔루션과 해당 <a href="https://go.microsoft.com/fwlink/?LinkId=717686" target="_blank" title="아키텍처 다이어그램 다이어그램 다이어그램"></a>을 포함하는 예제 솔루션의 <a href="https://azure.microsoft.com/en-us/documentation/articles/data-factory-data-processing-using-batch/" target="_blank" title="형태로 해당 시나리오의 압축된 버전을 게시했습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://go.microsoft.com/fwlink/?LinkId=717686" target="_blank" title="새 아키텍처 청사진"><img alt="Azure HPC: New architecture blueprint" border="0" height="388" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cba43451-e112-41e9-9fee-9f4f7807a1a5.png" style="margin: 0px auto; border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; float: none; display: block; background-image: none;" title="Azure HPC: 새 아키텍처 청사진" width="610"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이 예제 솔루션의 목적은 모든 유형의 워크로드를 실행하는 모든 산업 분야의 고객이 Azure Data Factory와 Azure Batch 간에 제공하는 훌륭한 통합을 활용할 수 있도록 돕는 것입니다.</p>
+
+
+  <p>또한 이러한 청사진을 좋아하는 경우 <a href="https://msdn.microsoft.com/dn630664" target="_blank">시나리오 기반 아키텍처 청사진 컬렉션을</a> 체크 아웃할&nbsp; 수 있습니다.</p>
+
+
+  <p>마지막으로, 언제나처럼, 우리는 당신에게서 듣고 싶습니다. 이 게시물에 언급된 솔루션과 같은 예제 솔루션이 유용한지 알려주세요. Azure에서 다음 솔루션을 빌드하는 데 도움이 되도록 제공할 수 있는 사항에 대한 아이디어를 Microsoft와 공유하세요.</p>

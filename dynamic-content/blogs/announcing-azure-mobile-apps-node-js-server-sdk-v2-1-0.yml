@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cc49236bc6734ba3f16f8954c229ca730b9ffdce
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899479"
+Slug: announcing-azure-mobile-apps-node-js-server-sdk-v2-1-0
+Title: Azure Mobile Apps Node.js Server SDK v2.1.0 발표
+Summary: 서버 SDK의 v2.1.0 릴리스는 서버에서 SQLite에 대한 지원을 추가합니다. 이렇게 하면 여러 가지 중요한 시나리오에 사용할 수 있는 새 데이터 저장소가 제공됩니다.
+Content: >-
+  <p>Azure Mobile Apps Node.js Server SDK의 v2.0.0 GA 릴리스를 릴리스했을 때 처리해야 할 미완성 비즈니스가 있었습니다.&nbsp; 고객의 요청 중 가장 주목할 만한 것은 SQL Server 필요 없이 서버의 로컬 개발 버전을 실행하는 기능이었습니다. 서버 SDK의 v2.1.0 릴리스는 서버에서 SQLite에 대한 지원을 추가합니다. 이렇게 하면 여러 가지 중요한 시나리오에 사용할 수 있는 새 데이터 저장소가 제공됩니다.</p>
+
+
+  <h2>로컬 개발</h2>
+
+
+  <p>SQLite 데이터 공급자는 OS X 및 Linux를 비롯한 모든 플랫폼에 매우 간소화된 로컬 개발 환경을 제공합니다. SQLite는 모든 node.js 버전 및 플랫폼에서 실행되며 외부 데이터베이스가 필요하지 않으며 메모리에서 완전히 실행할 수 있습니다.</p>
+
+
+  <p>데이터 공급자는 구성 없이 작동하며 기본 공급자로 구성되므로 로컬 개발 환경과 Azure 프로덕션 환경 간의 코드 변경 없이 SQL Azure 인스턴스를 사용하도록 전환할 수 있는 구성 로컬 개발이 0개입니다.</p>
+
+
+  <h2>단위/통합 테스트 도구 모음</h2>
+
+
+  <p>주요 항목 중 하나는 Mocha, Jasmine 또는 다른 테스트 프레임워크를 기반으로 단위 및 통합 테스트를 사용하여 서비스를 로컬로 테스트하는 기능입니다. 여기서 주요 문제는 테스트로 인해 데이터베이스가 잘못된 상태로 유지되어 데이터베이스가 아닌 SQL 상태로 인해 오류가 발생할 수 있다는 것입니다. SQLite 데이터베이스를 사용하면 모든 단일 테스트 실행 전에 알려진 양호한 상태로 새로 고쳐진 메모리 내 공급자를 사용하여 테스트를 실행할 수 있습니다. 이를 통해 다양한 연속 통합 솔루션을 통해 테스트를 자동화할 수 있습니다.</p>
+
+
+  <h2>AAD 그룹 지원</h2>
+
+
+  <p>Azure Mobile Apps는 Facebook, Twitter, Google+, Microsoft 및 Azure Active Directory 통해 인증을 지원합니다. 이 후자의 메커니즘은 엔터프라이즈 모바일 애플리케이션을 지원합니다. 이제 AAD 그룹 멤버 자격을 포함하는 AAD 클레임의 전체 디코딩을 지원합니다. 그룹을 클레임으로 제공하도록 AAD 구성한 경우 호출을 <code>getIdentity()</code>통해 사용할 수 있습니다.</p>
+
+
+  <h2>설명서의 지속적인 개선 사항</h2>
+
+
+  <p>위의 기능 외에도 <a href="https://github.com/Azure/azure-mobile-apps-node/tree/master/samples" target="_blank">샘플</a> 및 <a href="https://azure.github.io/azure-mobile-apps-node/" target="_blank">API 참조</a>를 좀 더 개선한&#39;. 샘플 및 설명서를 지속적으로 개선할&#39;있으므로 이 영역에서 무언가를 확인하려면 알려주세요.</p>
+
+
+  <p>여기에서 변경 내용의 전체 목록을 찾을 수 <a href="https://github.com/Azure/azure-mobile-apps-node/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+milestone%3A2.1.0+" target="_blank">있습니다</a>.&nbsp; 모든 SDK는 오픈 소스이며 기여를 환영합니다.</p>
+
+
+  <h2>팀에 문의</h2>
+
+
+  <p>Azure Mobile Apps 팀은 다음 메커니즘 중 하나를 통해 연락할 수 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://stackoverflow.com/questions/tagged/azure-mobile-app" target="_blank">스택 오버플로</a></li>
+      <li><a href="https://social.msdn.microsoft.com/Forums/en-US/home?forum=azuremobile&amp;filter=alltypes&amp;sort=lastpostdesc" target="_blank">Azure 포럼</a></li>
+      <li><a href="https://feedback.azure.com/forums/216254-mobile-apps" target="_blank">Azure 피드백</a></li>
+      <li><a href="https://github.com/azure?utf8=%E2%9C%93&amp;query=azure-mobile-apps" target="_blank">GitHub 문제</a></li>
+      <li><a href="https://twitter.com/AzureMobile" target="_blank">Twitter</a></li>
+      <li><a href="https://gitter.im/Azure/azure-mobile-apps-node" target="_blank">Gitter</a></li>
+  </ul>

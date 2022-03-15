@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0ea575abe02b546d1b53a14c0921de4fd6791f96
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902621"
+Slug: content-update-developing-a-vm-role-in-windows-azure
+Title: '콘텐츠 업데이트: Windows Azure에서 VM 역할 개발'
+Summary: VM 역할 사용에 대한 MSDN 라이브러리 콘텐츠가 수정, 재구성 및 확장되어 VM 역할 사용 프로세스를 보다 명확하게 설명합니다. Windows Azure에서 VM 역할 개발 시 각각...
+Content: '<p>VM 역할 사용에 대한<a href="https://msdn.microsoft.com/en-us/library/ms123401.aspx">  MSDN 라이브러리</a> 콘텐츠가 수정, 재구성 및 확장되어 VM 역할 사용 프로세스를 보다 명확하게 설명합니다. Windows Azure에서 VM 역할 개발에서 서버 이미지를 개발하는 방법, Windows <a target="_blank" href="https://azure.microsoft.com/">Azure</a>에 VHD를 업로드하는 방법 및 VM 역할로 사용할 이미지를 구성하는 방법을 포함하여 프로세스의 각 단계에 대해 자세히 설명합니다.&nbsp; 또한 새 콘텐츠에는 Windows Azure VM 역할에 대한 비디오, 블로그 게시물, 도구 및 포럼 토론에 대한 액세스를 제공하는 요약 페이지가 포함되어 있습니다. 페이지 등급/피드백을 사용하거나 전자 메일 <a target="_blank" href="mailto:azuresitefeedback@microsoft.com">azuresitefeedback@microsoft.com을 보내서 의견을 알려주세요.  </a></p>  <p><iframe style="overflow: hidden; width: 300px; height: 50px;" src="https://www.facebook.com/plugins/like.php?href=https://blogs.msdn.com/b/windowsazure/archive/2011/03/24/content-update-developing-a-vm-role-in-windows-azure.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" frameborder="0" scrolling="no"></iframe><br>트윗  <script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>  </p>'

@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3db468f2e1cae0335a4d1acf45290a2b24310c50
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898468"
+Slug: azure-application-architecture-guide
+Title: Azure 애플리케이션 아키텍처 가이드
+Summary: Azure 애플리케이션 아키텍처 가이드는 클라우드 애플리케이션, 기술 선택, 디자인 원칙, 소프트웨어 품질 및 클라우드 디자인 패턴의 5가지 핵심 요소에 대한 아키텍처 스타일을 안내합니다.
+Content: >-
+  <p>&#39;Azure가 거의 8년 전에 출시된 이래로 많은 고객과 이야기를 나눴습니다. 당시 Azure에는 몇 가지 서비스만 있었습니다. 이제&#39;엄청나게 성장하고 계속 확장되고 있습니다. 클라우드 컴퓨팅 자체도 고객의 요구를 수용하도록 진화했습니다. 예를 들어 대부분의 소비자 지향 앱은 경쟁사와 차별화하기 위해 이전보다 훨씬 빠른 업데이트 속도가 필요합니다. 마이크로&rsquo; 서비스와 같은 새로운 아키텍처 스타일이 오늘날 주목을 받고 있는 이유 중 일부입니다. 컨테이너 기반 및 서버리스 워크로드는 사실상 사용되고 있습니다. 우리는 이러한 새로운 서비스와 업계 동향을 모두 좋은 기회로 생각하지만 동시에 고객에게 혼란의 원인이 될 수 있습니다. 고객에게는 다음과 같은 많은 질문이 있습니다.</p>
+
+
+  <ul>
+   <li>어떤 아키텍처를 선택해야 하나요? 마이크로 서비스? N 계층? 어떻게 결정합니까?</li>
+   <li>나에게 가장 적합한 스토리지 선택 항목이 여러 개 있습니다.</li>
+   <li>서버리스 아키텍처는 언제 사용해야 하나요? 이점은 무엇입니까&rsquo;? 제한 사항이 있나요?</li>
+   <li>복원력뿐만 아니라 확장성을 향상시키면 어떻게 해야 하나요?</li>
+   <li>DevOps 문화는 무엇입니까&rsquo;? 조직에 어떻게 소개할 수 있나요?</li>
+  </ul>
+
+
+  <p>이러한 질문에 답하기 위해 AzureCAT <strong>패턴 &amp; 사례</strong> 팀은 <a href="https://docs.microsoft.com/azure/architecture/guide/">Azure 애플리케이션 아키텍처 가이드</a>를 게시했습니다.&nbsp; 이 가이드는 클라우드용 애플리케이션을 설계하는 설계자 및 애플리케이션 개발자를 위한 시작점을 제공하기 위한 것입니다. 독자가 아키텍처 스타일을 선택한 다음 적절한 기술을 선택하고 관련 디자인 패턴 및 입증된 사례를 적용하도록 안내합니다. 또한 사이트의 기존 콘텐츠 대부분을 함께 연결합니다. 다음 다이어그램에서는 관련 항목과 함께 가이드의 단계를 보여 줍니다.</p>
+
+
+  <p style="text-align: center;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f0820450-3ff8-4565-88c9-081ef37255e0.png"><img alt="Architecture guide steps" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39312a3b-8ae8-4fdb-bbea-1d483cb73df1.png" style="border: 0px currentColor; border-image: none; display: inline; background-image: none;" title="아키텍처 가이드 단계" width="469"></a></p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/architecture/guide/architecture-styles">아키텍처 스타일</a>입니다. 첫 번째 의사 결정이 가장 근본적인 지점입니다. 어떤 아키텍처를 구축하시겠습니까? 마이크로 서비스 아키텍처, 전통적인 n 계층 애플리케이션 또는 빅 데이터 솔루션 등을 생각할 수 있습니다. 아키텍처 스타일에는 뚜렷이 구분되는 7가지가 있습니다. 여기에는 각각 이점과 어려운 점이 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-overview">기술 선택</a>. 2가지 기술에 대한 선택은 전체 아키텍처에 영향을 미치기 때문에 초기에 결정해야 합니다. 컴퓨팅 기술 및 스토리지 기술에 대한 선택이 여기에 해당됩니다. 컴퓨팅이라는 용어는 애플리케이션이 실행되는 컴퓨팅 리소스의 호스팅 모델을 말합니다. 스토리지는 데이터베이스뿐만 아니라 메시지 큐, 캐시, IoT 데이터, 비구조적 로그 데이터 및 애플리케이션이 스토리지에 유지할 수 있는 모든 것을 포함합니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/architecture/guide/design-principles">디자인 원칙.</a> 디자인 프로세스 전반에서 10가지 기본 설계 원칙을 염두에 둘 필요가 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/architecture/guide/pillars">기둥.</a> 성공적인 클라우드 애플리케이션은 확장성, 가용성, 복원력, 관리 및 보안이라는 5가지 소프트웨어 품질 핵심 요소에 중점을 둡니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/architecture/patterns/index?toc=/azure/architecture/guide/toc.json">클라우드 디자인 패턴.</a> 이러한 디자인 패턴은 Azure에서 안정적이고 확장 가능하며 안전한 애플리케이션을 빌드하는 데 유용합니다. 각 패턴은 문제, 문제를 해결하는 패턴 및 Azure를 기반으로 하는 예를 설명합니다.</p>
+
+
+  <p>이 가이드는 <a href="https://azure.microsoft.com/campaigns/cloud-application-architecture-guide/">전자책</a>으로 다운로드할 수도 있습니다.</p>
+
+
+  <p>Azure 애플리케이션 보관 가이드가 유용하기를 바랍니다. 마지막으로, 피드백과 제안을 소중히 생각합니다. 콘텐츠에 누락된 내용, 개선에 대한 제안 또는 고객에게 잘 작동하고 더 많은 대상에게 승격될 수 있는 정보를 공유하려는 경우 문의 <a href="mailto:arch-center-feedback@microsoft.com">arch-center-feedback@microsoft.com</a>하세요.</p>

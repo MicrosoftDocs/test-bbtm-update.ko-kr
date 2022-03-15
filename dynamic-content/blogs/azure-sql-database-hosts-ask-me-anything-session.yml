@@ -1,0 +1,67 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cfa6f94257149b0b54f1b628712290bb6992e008
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903042"
+Slug: azure-sql-database-hosts-ask-me-anything-session
+Title: Azure SQL Database 호스트가 무엇이든 물어보세요 세션
+Summary: Azure SQL Database 팀은 레딧에서 AMA 세션을 개최하고 있습니다.
+Content: >-
+  <p>Azure SQL Database 팀은 <strong>2015년 11월 18일 수요일</strong> <strong>오전 10:00</strong>부터<strong> 오후 4:00 PDT</strong>까지 특별 Ask Me Anything 세션&nbsp; <a href="https://reddit.com/r/Azure">/r/Azure</a>를 개최합니다.</p>
+
+
+  <h4>AMA 세션은 어떤&#39;?</h4>
+
+
+  <p>&#39;Azure SQL Database 엔지니어링 팀의 사람들이 질문에 답할 수 있도록 할 것입니다. 제품, 서비스 또는 우리 팀에 대해 무엇이든 물어볼 수 있습니다!</p>
+
+
+  <h4>AMA를 수행하는 이유는 무엇인가요?</h4>
+
+
+  <p>우리는 고객과 지역 사회에서 손을 내밀고 배우는 것을 좋아합니다. Azure 및 Azure SQL Database 사용하는 방법과 환경이 어떻게 사용되었는지 알고 싶습니다. 여러분의 질문&nbsp;으로 서비스를 더 좋게 만드는 방법에 대한 인사이트를 얻을 수 있습니다. 이 AMA 세션이 유용한 것으로 판명되면 일정에 따라 이 작업을 시작할 수 있습니다.</p>
+
+
+  <h4>Who 있을 것인가?</h4>
+
+
+  <p>당신, 물론! 또한&#39;Azure SQL Database 엔지니어링 팀의&nbsp;&nbsp; PM 및 개발자도 참여하게 될 것입니다.</p>
+
+
+  <p>다음 항목에 대한 질문이 있으십니까? AMA로 가져옵니다.</p>
+
+
+  <ul>
+      <li>Azure SQL Database</li>
+      <li>Azure Virtual Machine의 SQL Server</li>
+      <li>SQL Server</li>
+      <li>Azure SQL Data Warehouse</li>
+  </ul>
+
+
+  <h4>StackOverflow, MSDN 또는 Twitter 대신 질문해야 하는 이유는 무엇인가요? 난 정말 아무것도 물어 수 있습니까?</h4>
+
+
+  <p>AMA는 우리에게 무엇이든 물어볼 수있는 좋은 장소입니다. StackOverflow 및 MSDN에는 질문을 할 수 있는 제한이 있지만 Twitter는 140자만 허용합니다. AMA&rsquo;를 사용하면 팀에서 직접 답변을 얻고 이러한 제품 및 서비스를 빌드하는 사람들과 대화를 나눌 수 있습니다.</p>
+
+
+  <p>다음은 몇 가지 질문 아이디어입니다.</p>
+
+
+  <ul>
+      <li>Azure SQL Database란?</li>
+      <li>애플리케이션 아키텍처에 대한 VM에서 Azure SQL Database 및 SQL Server 중에서 어떻게 선택해야 하나요?</li>
+      <li>내 SQL Server 호스팅할 때 Azure SQL Database 사용할 경우의 이점은 무엇인가요?</li>
+      <li>온-프레미스 SQL Server Azure SQL Database 마이그레이션하려면 어떻게 해야 하나요?</li>
+      <li>어디서나 Azure SQL Database 데이터를 복사하는 옵션은 무엇인가요?</li>
+      <li>Singleton 데이터베이스를 통해 탄력적 풀을 선택하는 이유는 무엇인가요?</li>
+      <li>대부분의 고객이 알고 있다고 생각하지&#39;멋진 트릭은&#39;무엇입니까?</li>
+  </ul>
+
+
+  <p>계속, 우리의 공공 제품 또는 팀에 대해 우리에게 아무것도 물어.&nbsp; &nbsp;릴리스되지 않은 기능 및 향후 계획에 대해서는 언급할 수 없습니다.</p>
+
+
+  <h4>참여하세요. 우리는 당신과 대화를 기대하고&#39;!</h4>

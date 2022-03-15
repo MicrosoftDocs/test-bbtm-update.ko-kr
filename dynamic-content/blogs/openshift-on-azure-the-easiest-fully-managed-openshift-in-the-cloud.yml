@@ -1,0 +1,51 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ae9d7e69dfee8bc4055ee7e7835e2ab10d884ff6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898272"
+Slug: openshift-on-azure-the-easiest-fully-managed-openshift-in-the-cloud
+Title: 'Azure의 OpenShift: 클라우드에서 가장 쉽고 완전히 관리되는 OpenShift'
+Summary: '오늘 샌프란시스코에서 열리는 Red Hat Summit 2018에서 Microsoft와 Red Hat은 클라우드에서 OpenShift 버전을 사용하기에 가장 쉬운 최초의 완전 관리형 Azure 제품인 OpenShift on Azure 제품을 공동으로 시연합니다. '
+Content: >-
+  <p>오늘 샌프란시스코에서 열리는 Red Hat Summit 2018에서 Microsoft와 Red Hat은 클라우드에서 OpenShift 버전을 사용하기에 가장 쉬운 최초의 완전 관리형 Azure 제품인 OpenShift on Azure 제품을 공동으로 시연합니다.&nbsp;</p>
+
+
+  <p>작년&rsquo;부터 고객 피드백에 따라 Azure의 OpenShift Dedicated에 대한 <a href="https://news.microsoft.com/2017/08/22/red-hat-and-microsoft-simplify-containers-for-the-enterprise/" target="_blank">발표</a> 이후 Microsoft와 Red Hat은 원래 개념보다 고객에게 훨씬 더 많은 것을 제공하는 제품을 만들었습니다. Azure에서 더 쉽고 빠르게 사용할 수 있도록 완전히 관리되고 엔지니어링됩니다.</p>
+
+
+  <p>완전 관리형으로 무엇을 의미합니까? Azure의 OpenShift는 Red Hat과 Microsoft에서 공동으로 엔지니어링, 운영 및 지원됩니다. 완전 관리형 서비스로서 단일 통합 청구서, 통합 지원 환경 및 모든 면에서 네이티브 Azure 서비스를 사용하여 최신 상태로 유지됩니다. 고객들은 이 &ldquo;목이 질식&rdquo; 하는 것이 매우 중요하고 다른 클라우드 기반 OpenShift 제품에서 누락되었다고 말했기 때문에&rsquo; 이러한 요구를 충족할 수 있어서 기쁩니다.</p>
+
+
+  <p>고객은 현재 많은 클라우드 환경에서 OpenShift를 사용할 수 있지만 새로 발표된 Azure의 OpenShift를 사용하면 네이티브 Azure 통합을 더 쉽게 설정하고 사용할 수 있으며 Azure Kubernetes Service를 지원하는 동일한 Kubernetes 기술을 활용할 수 있습니다.</p>
+
+
+  <p>새 OpenShift 클러스터&rsquo;를 만들려는 경우 서비스 요청을 만들고 노드가 나타날 때까지 몇 시간을 기다릴 필요가 없습니다(다른 클라우드에서 발생할 수 있듯이). 대신 Azure CLI를 사용하여 다음과 같은 작업을 실행할 수 있습니다.</p>
+
+
+  <pre>
+
+  az openshift create -n oscluster -g osrg `
+   &ndash;node-vm-size Standard_DS4_v3`
+   --l eastus</pre>
+
+  <p>몇 분&rsquo; 내에 새 클러스터가 있으며, 현재 사용 가능한 다른 퍼블릭 클라우드 제품보다&rsquo; 더 빠르고 쉽게 사용할 수 있습니다.</p>
+
+
+  <p>OSBA(Open Service Broker for Azure)는 Azure용 OpenShift(및 Azure Stack)에서도 작동합니다. 이 서비스는 Cosmos DB, Azure KeyVault 등과 같이 사용할 수 있는 Azure 서비스를 자동으로 검색하고 열거합니다. OSBA는 다른 Azure 투자를 쉽게 통합할 수 있도록 하여 Azure 배포의 OpenShift에 가치를 더합니다.&nbsp; &rsquo;이 기능은 Azure에서 이미 사용하거나 빌드할 계획인 다른 프로젝트에 연결할 뿐만 아니라 빠르게 실행되도록 하는 또 다른 유용한 사용 편의성 기능입니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aa5b15bf-0998-4c16-8046-dcc06df6b19f.png"><img alt="Open Shift" border="0" height="832" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b4b435dc-4278-4f6f-b6f5-6ad81cc7f559.png" style="border: 0px currentColor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Shift 열기" width="1403"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이 모든 것을 새로 발표된 Azure Stack 및 <a href="https://blog.openshift.com/red-hat-openshift-and-microsoft-windows-containers" target="_blank">온-프레미스 OpenShift Container Platform</a>&rsquo;에 대한 Windows 컨테이너 지원과 결합하면 RHEL 및 Windows 모두용으로 설계된 하이브리드 클라우드 컨테이너 플랫폼을 찾는 엔터프라이즈 고객에게 적합합니다. 현재 <a href="https://aka.ms/azsopenshiftcp" target="_blank">Azure Stack에 OpenShift Container Platform을 배포하는</a> 방법을 알아봅니다.&nbsp;&nbsp;</p>
+
+
+  <p>Azure에서 완전히 관리되는 새로운 OpenShift를 사용해 보려는 경우&rsquo; <a href="https://aka.ms/openshiftazureinterest" target="_blank">연락처 세부 정보를 제출</a> 하고&rsquo; 공개 미리 보기를 발표하는 즉시 연락해 주세요.</p>

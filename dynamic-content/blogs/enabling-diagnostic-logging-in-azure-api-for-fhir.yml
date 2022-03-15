@@ -1,0 +1,136 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 44931f6d5313fbc346b00a4b513b61525f75ca26
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903292"
+Slug: enabling-diagnostic-logging-in-azure-api-for-fhir
+Title: Azure API for FHIR®에서 진단 로깅 사용
+Summary: '진단 로그에 대한 액세스는 규정 요구 사항(예: HIPAA)을 준수해야 하는 모든 의료 서비스에 필수적입니다. 이를 가능하게 하는 Azure API for FHIR의 기능은 Azure Portal UI의 진단 설정입니다.'
+Content: >-
+  <p>진단 로그에 대한 액세스는 규정 요구 사항(예: HIPAA)을 준수해야 하는 모든 의료 서비스에 필수적입니다. 이를 가능하게 하는 Azure API for FHIR의 기능은 Azure Portal UI의 <strong>진단 설정</strong> 입니다. Azure 진단 로그의 작동 방식에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview" target="_blank">Azure 진단 로그 설명서를</a> 참조하세요.</p>
+
+
+  <p>현재 서비스는 감사 로그에서 다음 필드를 내보냅니다.&nbsp;</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0">
+      <tbody>
+          <tr>
+              <td valign="top">
+              <p style="text-align: center;"><strong>필드 이름</strong>&nbsp;</p>
+              </td>
+              <td valign="top">
+              <p style="text-align: center;"><strong>Type</strong>&nbsp;&nbsp;</p>
+              </td>
+              <td style="text-align: center;" valign="top"><strong style="font-family: tahoma, &quot;Helvetica Neue&quot;, arial, helvetica, sans-serif; font-size: 13px; font-style: normal;">참고</strong></td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>TimeGenerated</strong></td>
+              <td style="text-align: center;" valign="top">DateTime</td>
+              <td style="text-align: center;" valign="top">이벤트의 날짜 및 시간입니다.</td>
+          </tr>
+          <tr>
+              <td valign="top">
+              <p style="text-align: center;"><strong>OperationName&nbsp;&nbsp;&nbsp; </strong></p>
+              </td>
+              <td style="text-align: center;" valign="top">문자열</td>
+              <td style="text-align: center;" valign="top">&nbsp;</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>Correlationid&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">문자열</td>
+              <td style="text-align: center;" valign="top">&nbsp;</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>RequestUri&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">문자열</td>
+              <td style="text-align: center;" valign="top">요청 URI입니다.</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>FhirResourceType&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">문자열</td>
+              <td style="text-align: center;" valign="top">작업이 실행된 리소스 유형입니다.</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>StatusCode&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">Int&nbsp;&nbsp;</td>
+              <td style="text-align: center;" valign="top">HTTP 상태 코드(예: 200)입니다.</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>ResultType&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">String&nbsp;&nbsp;</td>
+              <td style="text-align: center;" valign="top">현재 사용 가능한 값은 &lsquo;시작됨&rsquo;, &lsquo;성공&rsquo; 또는 &lsquo;실패입니다.&rsquo;</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>OperationDurationMs</strong></td>
+              <td style="text-align: center;" valign="top">Int&nbsp;&nbsp;</td>
+              <td style="text-align: center;" valign="top">요청을 완료하는 데 걸린 시간(밀리초)입니다.</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>LogCategory&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">String</td>
+              <td style="text-align: center;" valign="top">로그 범주 현재 값에 &#39;AuditLogs&#39; 내보내고 있습니다.</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>CallerIPAddress&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">문자열</td>
+              <td style="text-align: center;" valign="top">호출자가 IP 주소를&#39;.</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>CallerIdentityIssuer&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">String&nbsp;&nbsp;</td>
+              <td style="text-align: center;" valign="top">발급자</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>CallerIdentityObjectId&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">String&nbsp;&nbsp;</td>
+              <td style="text-align: center;" valign="top">Object_id</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>CallerIdentity&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">동적&nbsp;&nbsp;</td>
+              <td style="text-align: center;" valign="top">ID 정보를 포함하는 제네릭 속성 모음입니다.</td>
+          </tr>
+          <tr>
+              <td style="text-align: center;" valign="top"><strong>위치&nbsp;&nbsp; </strong></td>
+              <td style="text-align: center;" valign="top">문자열</td>
+              <td style="text-align: center;" valign="top">요청을 처리한 서버의 위치입니다(예: 미국 중남부).</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>감사 로그에 어떻게 도착하나요?</h2>
+
+
+  <p>Azure API for FHIR에서 진단 로깅을 사용하도록 설정하려면 Azure Portal에서 <strong>진단 설정</strong> 으로 이동합니다. 여기서는 모든 서비스가 진단 로깅을 내보내는 데 사용하는 표준 UI를 볼 수 있습니다.</p>
+
+
+  <p><img alt="Diagnostic Settings" border="0" height="681" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bf041372-c5c8-4b71-b2d6-52ed8fcf03d0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1155"></p>
+
+
+  <p>진단에 대한 세 가지 방법이 있습니다.</p>
+
+
+  <ul>
+      <li>감사 또는 수동 검사를 위해 <strong>Storage 계정에</strong> 보관합니다.</li>
+      <li>타사 서비스 또는 사용자 지정 분석 솔루션(예: Power BI)에 의한 수집을 위해 <strong>Event Hub</strong>로 스트리밍합니다.</li>
+      <li>Azure Monitor에서 <strong>Log Analytics</strong> 작업 영역으로 스트리밍합니다.</li>
+  </ul>
+
+
+  <p>Log Analytics에 첫 번째 로그가 표시되는 데 최대 15분이 걸릴 수 있습니다.</p>
+
+
+  <p>진단 로그를 사용하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-logs-overview" target="_blank">진단 로그 설명서를</a> 참조하세요.</p>
+
+
+  <h2>결론</h2>
+
+
+  <p>진단 로그에 액세스하는 것은 서비스를 모니터링하고 규정 준수 보고서를 제공하는 데 필수적입니다. Azure API for FHIR을 사용하면 진단 로그를 통해 이 작업을 수행할 수 있습니다.</p>
+
+
+  <p>FHIR&reg;은 HL7의 등록 상표로써, HL7의 허가를 받고 사용하였습니다.</p>

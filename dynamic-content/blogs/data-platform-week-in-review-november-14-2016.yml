@@ -1,0 +1,416 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 48a9d3ceaeff2e90a502d7519493d6c77d4fda09
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899307"
+Slug: data-platform-week-in-review-november-14-2016
+Title: 검토 중인 데이터 플랫폼 주 - 2016년 11월 14일
+Summary: Cortana Intelligence Suite, SQL Server 및 R Server를 다루는 첫 번째 Data Platform Week 버전입니다.
+Content: >-
+  <p>Cortana Intelligence Suite<a href="https://www.microsoft.com/en-us/sql-server/sql-server-2016" target="_blank">,</a> <a href="https://gallery.cortanaintelligence.com/" target="_blank">SQL Server</a> 및 <a href="https://www.microsoft.com/en-us/cloud-platform/r-server" target="_blank">R Server</a>를 다루는 첫 번째 Data Platform Week 버전입니다.</p>
+
+
+  <p><strong><u>예정된 이벤트:</u></strong></p>
+
+
+  <p><a href="https://connectevent.microsoft.com/">커넥트();</a>는 3년 연속 으로 돌아왔으며 11월 16일부터 뉴욕시에서 전 세계적으로 <a href="https://connectevent.microsoft.com/">생중계</a>될 예정입니다.</p>
+
+
+  <p><strong><u>블로그:</u></strong></p>
+
+
+  <p>Microsoft는 Microsoft 데이터 플랫폼 제품의 풍부한 포트폴리오를 다루기 위해 Azure, MSDN 및 TechNet의 데이터 플랫폼에 대한 25개 블로그 사이트에 최근 30개 이상의 블로그를 게시했습니다.</p>
+
+
+  <table border="0" cellpadding="0" cellspacing="0" width="1923">
+      <tbody>
+          <tr>
+              <td valign="top" width="79">
+              <p>#</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><strong>블로그 제목</strong></p>
+              </td>
+              <td valign="top" width="372">
+              <p><strong>Products &amp; Services</strong></p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>1</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.technet.microsoft.com/machinelearning/2016/11/11/reddit-ask-me-anything-session-on-big-data-analytics/">레딧&lsquo;은 빅 데이터 &amp; 분석에 나에게 아무것도&rsquo; 세션을 물어</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>빅 데이터 &amp; 분석</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>2</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.technet.microsoft.com/machinelearning/2016/11/04/9-things-you-should-do-to-optimize-hbase-performance-in-hdinsight-hadoop/">HDInsight에서 HBase 성능을 최적화하기 위해 수행해야 하는 9가지 사항</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>빅 데이터: HDInsight</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>3</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.technet.microsoft.com/machinelearning/2016/11/03/announcing-the-winners-womens-health-risk-assessment-competition/">수상자 &ndash; 여성&rsquo; 건강 위험 평가 대회 발표</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>Azure Machine Learning</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>4</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.technet.microsoft.com/machinelearning/2016/11/02/connected-drones-3-powerful-lessons-we-can-all-take-away/">연결된 드론: 우리 모두가 빼앗을 수 있는 3가지 강력한 교훈</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>Azure Deep Learning</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>5</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.technet.microsoft.com/machinelearning/2016/11/02/new-additions-to-the-data-science-virtual-machine-test-drive-community-forums-deep-learning/">데이터 과학 Virtual Machine &ndash; 시험 사용, Community 포럼, 심층 Learning 새로 추가</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>데이터 과학 VM</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>6</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.technet.microsoft.com/machinelearning/2016/11/01/introducing-custom-modules-in-the-cortana-intelligence-gallery/">Cortana Intelligence 갤러리에서 사용자 지정 모듈 소개</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>Cortana Intelligence</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>7</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://azure.microsoft.com/en-us/blog/azure-documentdb-updates-new-quick-start-experience-preview-of-backup-restore-and-firewall/">Azure DocumentDB 업데이트: 빠른 시작 환경, 백업 및 복원 및 방화벽 지원</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>Azure Document DB</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>9</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlreleaseservices/net-4-6-2-framework-client-driver-for-always-encrypted-resulting-in-intermittent-failures-to-decrypt-individual-rows/">.Net 4.6.2. Always Encrypted에 대한 프레임워크 클라이언트 드라이버로 인해 개별 행의 암호를 해독하는 데 간헐적으로 오류가 발생합니다.</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>10</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://azure.microsoft.com/en-us/blog/azure-sql-database-in-memory-performance/">Microsoft Azure SQL Database In-Memory 기술을 통해 탁월한 성능을 제공합니다.</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>Azure SQL DB</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>11</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlcat/2016/11/10/oops-recovery-with-temporal-tables/">임시 테이블을 사용하는 Oops 복구</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>12</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlcat/2016/10/26/how-bwin-is-using-sql-server-2016-in-memory-oltp-to-achieve-unprecedented-performance-and-scale/">bwin이 SQL Server 2016 In-Memory OLTP를 사용하여 전례 없는 성능과 규모를 달성하는 방법</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>13</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/11/07/columnstore-index-why-do-i-need-to-create-clustered-columnstore-index-on-in-memory-oltp-tables-for-analytics/">Columnstore 인덱스: 분석용 In-Memory OLTP 테이블에 클러스터형 columnstore 인덱스를 만들어야 하는 이유는 무엇인가요?</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>14</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/11/07/in-memory-oltp-is-your-database-just-in-memory-or-actually-optimized-for-memory/">메모리 내 OLTP: 데이터베이스가 메모리에만 있거나 실제로 메모리에 최적화되어 있나요?</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>15</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/11/07/columnstore-index-which-columnstore-index-is-right-for-my-workload/">Columnstore 인덱스: 내 워크로드에 적합한 Columnstore 인덱스는 무엇인가요?</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>16</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/11/07/columnstore-index-why-do-we-refer-to-it-as-in-memory-analytics/">Columnstore 인덱스: 이 인덱스를 In-Memory Analytics라고 하는 이유는 무엇인가요?</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>17</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlrsteamblog/2016/11/07/community-contributions-to-the-powershell-scripts-for-reporting-services/">Reporting Services용 PowerShell 스크립트에 대한 기여 Community</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>18</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlrsteamblog/2016/10/31/introducing-list-view-for-managing-your-reports/">보고서 관리를 위한 목록 보기 소개</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server Reporting Services</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>19</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/saponsqlserver/2016/11/11/sql-server-2016-improvements-for-sap-bw/">SQL Server 2016년 SAP(BW) 개선 사항</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>20</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sql_server_team/migrating-sap-workloads-to-sql-server-just-got-2-5x-faster/">2.5x배 더 빠르게 SQL Server로 SAP 워크로드 마이그레이션</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>21</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlreleaseservices/net-4-6-2-framework-client-driver-for-always-encrypted-resulting-in-intermittent-failures-to-decrypt-individual-rows/">.Net 4.6.2. Always Encrypted에 대한 프레임워크 클라이언트 드라이버로 인해 개별 행의 암호를 해독하는 데 간헐적으로 오류가 발생합니다.</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>22</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.msdn.microsoft.com/sqlreleaseservices/announcing-sql-server-management-studio-16-5-release/">SQL Server Management Studio -16.5 릴리스 발표</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>SQL Server 2016</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>23</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/11/because-its-friday-current-status.html">금요일이&#39;때문에: 현재 상태</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>24</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/11/deep-learning-mona-lisa.html">컴퓨터 비전 과제: 모나리자에서 보트 찾기</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>25</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/11/airbnb-growth.html">데이터 과학자 지식을 공유하여 에어비앤비가 성장합니다.</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>26</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.technet.microsoft.com/machinelearning/2016/11/09/how-did-the-pollsters-get-it-so-wrong/">여론조사기관들은 어떻게 그렇게 잘못을 얻었는가?</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>27</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blogs.technet.microsoft.com/machinelearning/2016/11/08/data-manipulation-at-scale-with-spark-on-azure-hdinsight/">Azure HDInsight에서 Microsoft R Server &amp; Spark를 사용하여 대규모로 데이터 조작</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>28</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/11/rstudio-v10-released.html">RStudio v1.0 릴리스됨</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>29</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/11/because-its-friday-we-went-all-the-way.html">그것은 금요일을&#39;때문에 : 우리는 모든 방법을 갔다!</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>30</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/11/update-to-dplyrxdf.html">dplyrXdf로 업데이트: subsetting, 열 추출 연산자</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>31</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/11/a-look-back-at-the-cubs-and-indians-performance.html">컵스와 인디언스의 퍼포먼스를 되돌아보세요.</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>32</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/11/a-bayesian-election-forecast.html">R과 스탠으로 구현된 베이지안 선거 예측</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>33</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/11/glmnetutils.html">glmnetUtils: glmnet을 사용한 탄력적 순 회귀를 위한 삶의 질 향상</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="79">
+              <p>34</p>
+              </td>
+              <td valign="top" width="1470">
+              <p><a href="https://blog.revolutionanalytics.com/2016/10/r-332-now-available.html">이제 R 3.3.2 사용 가능</a></p>
+              </td>
+              <td valign="top" width="372">
+              <p>R Server</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>모든 플랫폼, 온-프레미스 및 클라우드의 모든 개발자 &ndash; 가 데이터 플랫폼 제품 및 혁신에 보다 쉽게 액세스할 수 있도록 하고 있습니다.</p>
+
+
+  <p>커넥트();의 <a href="https://connectevent.microsoft.com/">라이브 방송</a>은 11월 16일 오전 9시 45분(EST)에 시작되며 대화형 QA&amp; 및 몰입형 주문형 콘텐츠를 계속 진행합니다. 이러한 놀라운 혁신에 대해 자세히 알아보려면 우리와 함께하세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>아난드</p>

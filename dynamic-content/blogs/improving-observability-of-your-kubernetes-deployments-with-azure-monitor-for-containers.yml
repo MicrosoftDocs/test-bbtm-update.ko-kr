@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 18dda3ec6318065a8a255108b2170a2cb0e55bac
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898948"
+Slug: improving-observability-of-your-kubernetes-deployments-with-azure-monitor-for-containers
+Title: 컨테이너용 Azure Monitor를 사용하여 Kubernetes 배포의 가시성 향상
+Summary: '지난 몇 년 동안, 특히 컨테이너 채택 및 기존 모놀리식 애플리케이션에서 마이크로 서비스 애플리케이션으로의 이동으로 애플리케이션을 생각하고 개발하는 방식이 크게 변경되었습니다. '
+Content: >-
+  <p>지난 몇 년 동안,&rsquo; 특히 컨테이너 채택 및 기존 모놀리식 애플리케이션에서 마이크로 서비스 애플리케이션으로의 이동과 함께 애플리케이션을 생각하고 개발하는 방법에 상당한 변화를 보았습니다. 이러한 변화는 오픈 소스 기술을 더 많이 채택하고 관찰 가능성 개념을 도입하면서 최신 애플리케이션 모니터링에 대해 생각하는 방식에도 영향을 줍니다.</p>
+
+
+  <p>과거에 공급업체는 애플리케이션 및 인프라를 소유했으며, 그 결과 모니터링할 메트릭을 알고 있습니다. 오픈 소스 제품의 수가 증가함에 따라 공급업체는 모든 메트릭을 소유하지 않으며 사용자 지정 메트릭은 현재 모니터링 도구에서 매우 필요합니다. 단순 상태가 정상인지 아닌 단일 배포 단위인 모놀리식 애플리케이션과 달리 최신 애플리케이션은 소수 n개 상태의 수십 가지 마이크로 서비스로 구성됩니다. 이는 고객이 프로덕션, 특히 Kubernetes에서 동일한 서비스의 다른 버전을 실행할 수 있는 정교한 배포 전략 및 롤백 때문입니다. 따라서 이러한 변화를 수용하는 것은 모니터링에 필수적입니다.</p>
+
+
+  <p><img alt="Visualizing flow on how application creation has changed from monolithic application into a microservices with containers" border="0" height="470" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e158f2a9-5381-4aa3-baf3-801efdb70c5a.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="780"></p>
+
+
+  <p>사용자 지정 메트릭 및 오픈 소스 기술은 애플리케이션의 특정 구성 요소에 대한 가시성을 개선하는 데 도움이 되지만 전체 스택도 모니터링해야 합니다. 컨테이너용 Azure Monitor는 <a href="https://azure.microsoft.com/en-in/blog/azure-monitor-for-containers-now-generally-available/">라이브 데이터를 통한 관찰 가능성</a> 과 <a href="https://azure.microsoft.com/en-in/blog/azure-monitor-for-containers-with-prometheus-now-in-preview/">Prometheus를 사용하여 사용자 지정 메트릭</a>을 수집하여 노드에서 Kubernetes 인프라, 워크로드에 이르는 전체 스택 엔드투엔드 모니터링을 제공합니다.</p>
+
+
+  <p><img alt="full Kubernetes stack from platform (node) to workloads running on Kubernetes. " border="0" height="365" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/21100c88-3e74-403a-a9ea-fc7414dbbd3d.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1201"></p>
+
+
+  <h2>Grafana 대시보드를 사용하여 Prometheus 메트릭 수집 및 보기</h2>
+
+
+  <p>Prometheus SDK를 워크로드에 계측하여 컨테이너용 Azure Monitor는 Prometheus 엔드포인트에서 노출된 메트릭을 스크래핑하여 실패율, 초당 응답 및 대기 시간을 신속하게 수집할 수 있습니다. Prometheus를 사용하여 컨테이너화된 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-agent-config#prometheus-scraping-settings">에이전트</a>를 구성하여 Azure Monitor에서 기본적으로 제공되지 않는 Kubernetes 인프라 메트릭 중 일부를 수집할 수 있습니다.</p>
+
+
+  <p>Log Analytics에서 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/query-language" target="_blank">KQL(Kusto Query Language)</a> 쿼리를 쉽게 실행하고 Azure Portal 대시보드에서 사용자 지정 대시보드를 만들 수 있습니다. Grafana를 사용하여 대시보드 요구 사항을 지원하는 많은 고객의 경우 Grafana 대시보드에서 컨테이너 및 Prometheus 메트릭을 시각화할 수 있습니다.</p>
+
+
+  <p>다음은 엔드투엔드 AKS(Azure Kubernetes Service) 클러스터 개요, 노드 성능, Kubernetes 인프라 및 워크로드를 제공하는 대시보드의 예입니다.<br>
+
+  &nbsp;&nbsp; <img alt="Grafana default dashboard which Azure Monitor for Container published." border="0" height="517" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e4449cc8-ca00-4ef1-9c49-ddf2417ceef8.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></p>
+
+
+  <p>모든 워크로드 라이브 사이트 목록 또는 작업자 노드의 시끄러운 인접 문제와 같은 다른 시나리오를 모니터링하거나 문제를 해결하려면 항상 컨테이너용 Azure Monitor로 전환하여 오른쪽 위 모서리에 있는 <strong>Azure Monitor &ndash; 컨테이너 Insights</strong> 클릭하여 Grafana 대시보드에서 포함된 시각화를 볼 수 있습니다.</p>
+
+
+  <p><img alt="on the right hand side there is a red brackets highlighting the url link to go to the native Azure Monitor for Containers " border="0" height="238" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ef17aa2d-8c9b-45e5-9be4-f214bb7cb0b0.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1273"><br>
+
+  &nbsp;&nbsp; <img alt="shows Azure Monitor for Containers panel and the red square is showing observability. " border="0" height="548" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c8be24d0-554f-41bf-a462-accd032c1b80.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1208"><br>
+
+  컨테이너용 Azure Monitor는 위에서 본 것처럼 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-live-logs">관찰 가능성을</a> 제공하기 위해 컨테이너 로그 및 Kubernetes 이벤트 로그의 실시간 데이터를 제공합니다. 배포를 즉시 확인하고 라이브 데이터를 사용하여 변칙을 관찰할 수 있습니다.</p>
+
+
+  <p>컨테이너용 Azure Monitor를 사용하려는 경우 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-overview">설명서를</a> 확인하세요. 모니터링을 사용하도록 설정하고 Grafana 템플릿을 사용하려면 <a href="https://grafana.com/grafana/dashboards/10956">Grafana 갤러리</a>로 이동하세요. 이 템플릿은 컨테이너용 Azure Monitor에서 수집된 기본 제공 데이터를 사용하여 밝아집니다. 수집된 다른 메트릭을 보기 위해 차트를 더 추가하려는 경우 <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-log-search">설명서를</a> 확인하여 차트를 추가할 수 있습니다.</p>
+
+
+  <p>Prometheus 데이터 수집 및 Grafana는 AKS 엔진에도 지원됩니다.</p>
+
+
+  <p>피드백 또는 제안 사항은 <a href="https://azure.microsoft.com/en-us/support/community/?product=monitor">Azure Community 지원</a> 또는 스택 오버플로를 통해 문의하세요.</p>

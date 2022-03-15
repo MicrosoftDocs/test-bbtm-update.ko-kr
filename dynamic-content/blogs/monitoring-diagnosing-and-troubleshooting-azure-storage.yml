@@ -1,0 +1,79 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 55820cd51f893d0a159764a67d9a36ade8c33383
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898549"
+Slug: monitoring-diagnosing-and-troubleshooting-azure-storage
+Title: 모니터링, 진단 및 문제 해결 Azure Storage
+Summary: 온라인 서비스의 상태를 관리하는 방법을 알아보기 위해 Storage 모니터링, 진단 및 문제 해결 가이드를 개발했습니다.
+Content: >-
+  최신 온라인 애플리케이션의 문제를 진단하고 해결하는 것은 다음을 포함하기 때문에 기존 클라이언트 서버 애플리케이션보다 더 복잡합니다.
+
+  <ul>
+   <li>PaaS 또는 IaaS 인프라, 온-프레미스, 모바일 디바이스 또는 이러한 일부 조합을 실행하는 구성 요소가 있는 복잡한 토폴로지</li>
+   <li>공용 및 프라이빗 네트워크를 트래버스하는 네트워크 트래픽 예기치 않은 연결이 있는 디바이스 포함</li>
+   <li>관계형 데이터베이스와 같은 다른 데이터 저장소 외에도 Microsoft Azure Storage 테이블, Blob, 큐 또는 파일과 같은 여러 스토리지 기술</li>
+  </ul>
+
+  Azure Storage 서비스에는 이러한 문제를 관리하는 데 도움이 되는 정교한 기능이 포함되어 있습니다. 이러한 기능에는 스토리지 서비스 및 스토리지 클라이언트 라이브러리로 개발된 클라이언트 애플리케이션 모두에서 애플리케이션이 예기치 않은 동작 변경(예: 일반적인 응답 시간보다 느림)에 대해 사용하는 Storage 서비스를 <i>모니터링</i>할 수 있는 기능과 광범위한 <i>로깅</i> 기능이 포함됩니다. 모니터링 및 로깅 모두에서 얻은 정보는 문제를 <i>진단</i> 및 <i>해결하고</i> 문제를 해결하기 위해 수행할 수 있는 적절한 단계를 결정하는 데 도움이 됩니다. Storage Services 모니터링 및 로깅 기능은 작업의 성능에 영향을 미치지 않도록 설계되었으며 사용된 스토리지 양을 관리하기 위한 보존 정책을 정의하는 기능도 포함합니다.
+
+
+  온라인 서비스의 상태를 관리하는 방법을 알아보기 위해 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/">Storage 모니터링, 진단 및 문제 해결 가이드를</a> 개발했습니다. 여기에는 상태, 가용성, 성능 및 용량과 관련된 문제 모니터링 및 진단에 대한 규범적인 지침뿐만 아니라 고객과 함께 작업할 때 우리 자신과 지원 팀이 직면하는 주요 문제에 대한 실행 가능한 문제 해결 지침이 포함됩니다. Storage 기반 애플리케이션을 빌드하는 모든 사용자에게 이 가이드는 필수 읽기라고 생각합니다! 아래 그림에서는 애플리케이션의 성능을 관리하는 방법에 초점을 맞춘 각 섹션의 추출을 보여 줍니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/09/24/Steps.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="단계" alt="Steps" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Steps_thumb.png" width="1304" height="846" border="0" /></a>
+
+  <h4>예제 시나리오 – 애플리케이션의 성능 저하 조사</h4>
+
+  가이드를 통해 도움이 되는 방법을 설명하기 위해 자주 표시되는 시나리오를 살펴보겠습니다. 여기서 고객은 애플리케이션의 성능이 정상보다 느리다는 것을 보고합니다. 고객에게 모니터링 전략이 없는 경우 이 문제의 근본 원인을 파악하는 데 어렵고 시간이 오래 걸릴 수 있습니다.
+
+
+  가이드의 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#monitoring-your-storage-service"><i>모니터링</i></a> 섹션에서는 지속적으로 캡처하고 모니터링해야 하는 몇 가지 주요 메트릭을 안내하며, 이러한 값의 예기치 않은 변경 내용을 조사해야 하는 문제가 있을 수 있음을 나타내는 지표로 찾습니다. 이 특정 시나리오와 관련된 두 가지 메트릭은 <strong>AverageE2ELatency</strong> 및 <strong>AverageServerLatency</strong> 메트릭입니다. <strong>AverageE2ELatency</strong> 는 요청을 처리하는 데 걸린 시간 외에도 클라이언트에서 요청을 읽고 응답을 클라이언트로 다시 보내는 데 걸린 시간을 포함하는 엔드 투 엔드 대기 시간의 측정값입니다(따라서 요청이 스토리지 서비스에 도달하면 네트워크 대기 시간 포함). <strong>AverageServerLatency</strong> 는 서비스의 처리 시간만 측정하므로 클라이언트와 통신하거나 클라이언트 애플리케이션과 연결된 대기 시간과 관련된 네트워크 대기 시간을 제외하고 송신 및 응답 버퍼를 채웁니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/09/24/Latency.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="대기 시간" alt="Latency" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Latency_thumb.png" width="939" height="129" border="0" /></a>
+
+
+  포털에서 메트릭 데이터를 살펴보면(위의 그림 참조) AverageE2Elatency가 AverageServerLatency보다 훨씬 높습니다. 이제 가장 먼저 해야 할 일은 서비스의 지속적인 모니터링을 통해 설정해야 하는 기준 메트릭과 비교하고, 처음에는 애플리케이션의 성능 테스트 및 프로덕션으로 제한된 릴리스를 수행하는 것입니다. 지금은 이 불일치가 실제로 Azure Storage 서비스 외부의 문제라고 가정합니다. 이 시점에서 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#troubleshooting-guidance">문제 해결 의사 결정 트리를</a> 사용하여 "<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#metrics-show-high-AverageE2ELatency-and-low-AverageServerLatency">메트릭이 AverageE2ELatency가 높고 AverageServerLatency가 낮</a>습니다."라는 섹션으로 이동될 수 있습니다. 그런 다음, 이 섹션에서는 탐색할 수 있는 다양한 가능성에 대해 설명합니다.
+
+  <ul>
+   <li><strong>클라이언트 성능 문제 -</strong> 클라이언트가 느리게 응답하는 가능한 이유는 사용 가능한 연결 또는 스레드 수가 제한되거나 CPU, 메모리 또는 네트워크 대역폭과 같은 리소스가 부족하기 때문입니다. 클라이언트 코드를 보다 효율적으로 수정(예: 스토리지 서비스에 대한 비동기 호출 사용) 또는 더 큰 Virtual Machine(더 많은 코어 및 더 많은 메모리 포함)을 사용하여 문제를 해결할 수 있습니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#metrics-show-high-AverageE2ELatency-and-low-AverageServerLatency">여기</a> 를 참조하십시오.</li>
+   <li><strong>네트워크 대기 시간 문제 -</strong> 일반적으로 네트워크로 인한 엔드투엔드 대기 시간이 긴 것은 일시적인 조건 때문입니다. Wireshark 또는 Microsoft Message Analyzer와 같은 도구를 사용하여 일시적인 네트워크 문제와 영구적인 네트워크 문제(예: 패킷 삭제)를 모두 조사해야 합니다. Wireshark를 사용하여 네트워크 문제를 해결하는 방법에 대한 자세한 내용은 “<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#appendix-2">부록 2: Wireshark를 사용하여 네트워크 트래픽 캡처</a>”를 참조하세요. Microsoft Message Analyzer를 사용하여 네트워크 문제를 해결하는 방법에 대한 자세한 내용은 "<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#appendix-3">부록 3: Microsoft Message Analyzer를 사용하여 네트워크 트래픽 캡처</a>"를 참조하세요. ... 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#metrics-show-high-AverageE2ELatency-and-low-AverageServerLatency">여기</a> 를 참조하십시오.</li>
+  </ul>
+
+  클라이언트 성능 섹션을 읽고 AverageE2ELatency와 AverageServerLatency 간의 불일치가 큐 작업에 대해서만 발생했으며 Blob 작업이 아닌지 확인한 후 가이드는 Nagle 알고리즘에 대한 문서와 작은 요청에 대해 친숙하지 않은 방법을 읽도록 지시합니다. 적절한 테스트 후 문제가 되는 것으로 확인되었고 코드가 Nagle의 알고리즘을 해제하도록 업데이트되었습니다. 이렇게 하고 변경 후 AverageE2ELatency를 모니터링하면 AverageE2ELatency가 현저히 향상되었습니다.
+
+
+  응답 시간에 일시적인 변동을 일으킬 수 있는 다른 문제로는 열악한 네트워크 조건 및 서버 쪽 오류가 있습니다. 이러한 경우 중 하나에서 클라이언트 애플리케이션은 작업을 다시 시도하여 특정 작업에 대해 인식된 대기 시간을 늘릴 수 있습니다. 이러한 경우 AverageE2ELatency와 AverageServerLatency가 모두 낮아질 수 있습니다. 이 경우 문제 해결 의사 결정 트리는 "<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#metrics-show-low-AverageE2ELatency-and-low-AverageServerLatency">메트릭이 AverageE2ELatency가 낮고 AverageServerLatency가 낮지만 클라이언트에 높은 대기 시간이 발생</a>함" 섹션으로 이동하며, 적절한 문제 해결 기술을 안내합니다. "<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#end-to-end-tracing">엔드 투 엔드 추적</a>"에 대한 섹션에서는 클라이언트 및 서버 요청 상관 관계가 이러한 유형의 문제를 해결하는 데 어떻게 도움이 될 수 있는지에 대한 추가 정보도 제공합니다.
+
+
+  이 시나리오는 서비스를 사전에 모니터링하고 문제가 발생할 때 도움을 줄 수 있는 다양한 도구를 잘 이해하는 것이 중요하다는 것을 보여 주기를 바랍니다.
+
+  <h4>요약 및 작업 호출</h4>
+
+  온라인 서비스의 상태를 관리하는 방법을 알아보기 위해 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/">Storage 모니터링, 진단 및 문제 해결 가이드를</a> 개발했습니다. 여기에는 상태, 용량, 가용성 및 성능과 관련된 문제 모니터링 및 진단에 대한 규범적인 지침과 우리 자신과 지원 팀이 고객과 함께 작업할 때 직면하는 주요 문제를 해결하기 위한 실행 가능한 제안이 포함됩니다.
+
+
+  또한 관련 지침을 살펴보고 다음과 관련된 콘텐츠를 생성/업데이트했습니다.
+
+  <ul>
+   <li>Azure Portal, PowerShell 또는 API를 통해 메트릭 및 로그 사용 설정: <a href="https://go.microsoft.com/fwlink/?linkid=510865&amp;clcid=0x409">Storage 메트릭 사용 및 메트릭 데이터 보기</a> 및 <a href="https://msdn.microsoft.com/en-us/library/dn782840.aspx">Storage 로깅 및 로그 데이터 액세스 사용</a></li>
+   <li>.NET 및 Java 클라이언트 라이브러리 내에서 로깅을 사용하도록 설정 - 클라이언트 연결과 같은 애플리케이션 관련 문제를 진단할 때 특히 유용합니다. 참조: <a href="https://msdn.microsoft.com/en-us/library/dn782839.aspx">.NET Storage 클라이언트 라이브러리를</a> 사용한 <a href="https://msdn.microsoft.com/en-us/library/dn782844.aspx">클라이언트 쪽 로깅 및 Java용 Microsoft Azure Storage SDK를 사용한 클라이언트 쪽 로깅</a></li>
+   <li>네트워킹 도구를 사용하여 네트워크 연결 문제를 진단하기 위한 지침입니다. 참조: <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#appendices">네트워크 분석 도구를 사용하여 네트워크 트래픽 분석</a> 및</li>
+   <li>스토리지 로그, 네트워크 로그 및 클라이언트 라이브러리의 데이터 상관 관계를 지정하기 위한 지침입니다. 참조: <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/#end-to-end-tracing">엔드 투 엔드 추적</a></li>
+  </ul>
+
+  다음 단계의 관점에서 다음을 권장합니다.
+
+  <ul>
+   <li>기본적으로 사용하도록 설정되지 않으므로 프로덕션 스토리지 계정에서 <a href="https://go.microsoft.com/fwlink/?linkid=510865&amp;clcid=0x409">메트릭</a> 및 <a href="https://msdn.microsoft.com/en-us/library/dn782840.aspx">로깅</a>을 사용하도록 설정합니다.</li>
+   <li>관리 정책을 업데이트할 수 있도록 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/">가이드</a> 의 모니터링 및 진단 섹션을 읽습니다.</li>
+   <li>문제가 발생할 때 문제를 해결하는 데 도움이 되도록 가이드를 책으로 표시합니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  이 지침을 통해 온라인 서비스를 훨씬 더 간단하게 관리할 수 있기를 바랍니다!

@@ -1,0 +1,144 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0d0a88c889143e6f123f7edd7daa3dfb0ff61017
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139899327"
+Slug: azure-data-factory-updates-execute-adf-custom-net-activities-using-azure-batch
+Title: 'Azure 데이터 팩터리 업데이트: Azure 배치를 사용하여 ADF 사용자 지정 .NET 작업 실행'
+Summary: '이번 주 초에는 고객이 Azure Batch를 컴퓨팅 리소스로 사용하여 사용자 지정 .NET 활동을 실행할 수 있는 새로운 기능을 출시했습니다. '
+Content: >-
+  <span style="font-size: medium;">여러분의 의견을 지속적으로 경청하고 Azure Data Factory 서비스에 새로운 개선 사항을 추가하고 있습니다. 오늘 초에는 고객이 Azure Batch를 컴퓨팅 리소스로 <strong>사용하여 사용자 지정 .NET 작업을 실행할</strong> 수 있는 새로운 기능을 출시했습니다. </span>
+
+
+  <span style="font-size: medium;">고객은 자체 Azure Batch 풀을 만들고 다른 구성과 함께 VM 수를 지정해야 합니다. Azure Batch 풀은 고객에게 다음과 같은 기능을 제공합니다.</span>
+
+  <ol>
+   <li><span style="font-size: medium;">수천 개의 코어에 대한 단일 코어를 포함하는 풀을 만듭니다. </span></li>
+   <li><span style="font-size: medium;">수식에 따라 VM 수 자동 크기 조정 </span></li>
+   <li><span style="font-size: medium;">모든 크기의 VM 지원 </span></li>
+   <li><span style="font-size: medium;">VM당 구성 가능한 작업 수 </span></li>
+   <li><span style="font-size: medium;">무제한 작업 큐에 대기</span></li>
+  </ol>
+
+  &nbsp;
+
+
+  <span style="font-size: medium;">Azure Batch를 사용하여 ADF 사용자 지정 .Net 작업을 실행하려면 <span style="text-decoration: underline;">다음 단계를 수행</span>합니다.</span>
+
+  <ul>
+   <li><span style="font-size: medium;">사용자 고유의 Azure Batch 풀을 만듭니다. </span>
+  <ul>
+   <li>다음 <span style="font-size: medium;">단계에 따라 Azure Batch 계정을 만듭니</span><a href="https://azure.microsoft.com/en-us/documentation/articles/batch-technical-overview/#BKMK_Account" target="_blank"><span style="font-size: medium;">다</span></a><span style="font-size: medium;">. </span></li>
+   <li><span style="font-size: medium;">Azure Batch 계정이 만들어지면 Azure Portal에서 'Batch 서비스'를 클릭하여 Batch 계정 키를 가져옵니다(스토리지 계정에 대한 키를 가져오는 것과 동일한 프로세스). </span></li>
+   <li><span style="font-size: medium;">사용자 고유의 Azure Batch 풀을 만듭니다. 이 단계를 수행하려면 이 위치에서 Azure Batch Explorer를 다운로드 </span><a href="https://github.com/Azure/azure-batch-samples/tree/master/CSharp/BatchExplorer" target="_blank"><span style="font-size: medium;"></span></a><span style="font-size: medium;"> 합니다. C# 솔루션을 열고 빌드합니다. 'BatchExplorer.exe' 시작 </span></li>
+   <li><span style="font-size: medium;">Batch 탐색기 인터페이스를 사용하여 위에서 만든 'Azure Batch 계정'을 추가합니다.</span></li>
+  </ul>
+
+  </li>
+
+  </ul>
+
+  &nbsp;
+
+  <blockquote><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/30/2015-04-28_15h54_0513_thumb4.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="2015-04-28_15h54_0513_thumb4" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-04-28_15h54_0513_thumb4_thumb.png" alt="2015-04-28_15h54_0513_thumb4" width="484" height="202" border="0" /></a>
+
+  <p align="center">그림 1: 'Azure Batch 계정' 추가</p>
+
+  </blockquote>
+
+  <ul>
+
+  <ul>
+   <li><span style="font-size: medium;">Azure Batch 계정에 커넥트.</span></li>
+  </ul>
+
+  </ul>
+
+  &nbsp;
+
+  <blockquote><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/30/2015-04-28_16h06_01_thumb3.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="2015-04-28_16h06_01_thumb3" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-04-28_16h06_01_thumb3_thumb.png" alt="2015-04-28_16h06_01_thumb3" width="614" height="197" border="0" /></a>
+
+  <p align="center">그림 2: Azure Batch 계정 커넥트</p>
+
+  </blockquote>
+
+  <ul>
+
+  <ul>
+   <li><span style="font-size: medium;">다른 구성과 함께 VM 수를 지정하여 Batch 풀을 만듭니다. 도구 -&gt; 풀을 만듭니다. <span style="font-size: medium;"><span style="text-decoration: underline;">참고</span>: <a href="https://azure.microsoft.com/en-us/documentation/articles/batch-dotnet-get-started/" target="_blank">.Net용</a> Azure Batch 라이브러리를 사용하여 풀을 만들 수도 있습니다.</span></span></li>
+  </ul>
+
+  </ul>
+
+  &nbsp;
+
+  <blockquote><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/30/2015-04-28_22h50_59.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="2015-04-28_22h50_59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-04-28_22h50_59_thumb.png" alt="2015-04-28_22h50_59" width="350" height="364" border="0" /></a>
+
+  <p align="center">그림 3: Azure Batch 풀 만들기</p>
+
+  </blockquote>
+
+  &nbsp;
+
+  <ul>
+   <li><span style="font-size: medium;">이전 단계에서 만든 'Batch 계정 이름', '액세스 키', 'Batch 풀 이름'을 사용하여 ADF 'Azure Batch 연결된 서비스'를 만듭니다.</span></li>
+  </ul>
+
+  &nbsp;
+
+  <blockquote>
+
+  <pre class="prettyprint">{
+      "name": "MyAzureBatchLinkedService",
+      "properties":
+      {
+          "type": "AzureBatchLinkedService",
+          “accountName”: “&lt;batch account name&gt;”,
+          “accessKey”: “&lt;access key&gt;”,
+          “poolName”: “&lt;batch pool name&gt;”,
+          “linkedServiceName”: “&lt;Storage Linked Service Name&gt;”
+      }
+  }
+
+  </pre>
+
+  </blockquote>
+
+  <blockquote>
+
+  <p align="left">그림 4: ADF - Azure Batch 연결된 서비스 샘플</p>
+
+  </blockquote>
+
+  &nbsp;
+
+  <ul>
+   <li><span style="font-size: medium;"></span><span style="font-size: medium;">이 연결된 서비스를 사용자 지정 작업으로 Associate합니다. 이렇게 하려면 파이프라인 JSON의 작업 정의에서 연결된 서비스를 linkedServiceName 속성의 값으로 지정합니다. 자세한 내용은 '<a href="https://azure.microsoft.com/en-us/documentation/articles/data-factory-use-custom-activities/" target="_blank">Azure Data Factory 파이프라인에서 사용자 지정 활동 사용</a>'을 참조하세요.</span></li>
+  </ul>
+
+  &nbsp;
+
+  <blockquote><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/30/2015-04-28_17h27_51.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="2015-04-28_17h27_51" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-04-28_17h27_51_thumb.png" alt="2015-04-28_17h27_51" width="614" height="413" border="0" /></a>
+
+  <p align="center">그림 5: ADF 사용자 지정 .Net 작업에서 Azure Batch 연결된 서비스 사용</p>
+
+  </blockquote>
+
+  <ul>
+   <li><span style="font-size: medium;">Azure Data Factory에서 Azure Batch Compute를 사용하여 사용자 지정 .Net 작업이 실행되면 Azure </span><a href="https://portal.azure.com/" target="_blank"><span style="font-size: medium;">Portal</span></a><span style="font-size: medium;"> 또는 Azure PowerShell 사용하여 데이터 세트를 모니터링합니다.</span></li>
+  </ul>
+
+  &nbsp;
+
+  <blockquote><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/04/30/downloadlogsfromcustomactivity_thumb.png"><img style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="downloadlogsfromcustomactivity_thumb" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/downloadlogsfromcustomactivity_thumb_thumb.png" alt="downloadlogsfromcustomactivity_thumb" width="1424" height="524" border="0" /></a>
+
+  <p align="center">그림 6: Azure Batch Compute를 사용하여 생성된 'OutputTableForCustom' 데이터 세트에 대한 ADF 모니터링 뷰</p>
+
+  </blockquote>
+
+  &nbsp;
+
+
+  <span style="font-size: medium;">이제 Azure Batch를 컴퓨팅 리소스로 추가하여 Azure Data Factory에서 사용자 지정 .NET 작업을 실행하기 위해 Azure Batch와 HDInsight를 모두 지원합니다. 특정 기능이 누락되었거나 문제가 발생하는 경우 </span><a href="https://feedback.azure.com/forums/270578-azure-data-factory"><span style="font-size: medium;">Azure Data Factory 포럼을</span></a> 방문하여 <span style="font-size: medium;"> 피드백을 제공하세요.</span>

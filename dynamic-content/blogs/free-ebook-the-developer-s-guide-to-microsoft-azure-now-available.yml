@@ -1,0 +1,41 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4146a94dfb1c3682b077d4aa749d2c1d3b0a9757
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902988"
+Slug: free-ebook-the-developer-s-guide-to-microsoft-azure-now-available
+Title: 무료 전자책 – 이제 Microsoft Azure 개발자 가이드를 사용할 수 있습니다.
+Summary: 오늘, 우리는 "Microsoft Azure 개발자 가이드"라는 제목의 무료 전자 책을 소개하게되어 기쁘게 생각합니다. 이 책은 마이클 크럼프와 배리 루이지브레그츠에 의해 작성되었습니다 ...
+Content: >-
+  <p>오늘, 우리는 두 <em> 번째 버전을</em> Microsoft Azure 개발자 가이드라는 제목의 <a href="https://aka.ms/azuredevebook"><em>&rsquo;</em></a> 무료 전자 책을 소개하게되어 기쁘게 생각합니다. 이 책은 <a href="https://twitter.com/mbcrump" target="_blank">마이클 크럼프</a> 와 <a href="https://twitter.com/AzureBarry" target="_blank">배리 루이브레그츠</a> 에 의해 작성되었습니다, 당신이&rsquo; 단지 이동을 고려하든, 클라우드로의 여행에 당신을 돕기 위해, 또는 당신은&rsquo; 이미 결정하고 진행하고있다. 이 전자책은 개발자를 위해 작성되었습니다. 특히 Azure의 모든 내용, Azure가 사용자와 조직에 제공하는 내용 및 이 모든 것을 활용하는 방법에 대한 기본 지식을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a8840382-56e0-4f04-b294-37db8ee38618.png"><img alt="The Developer's Guide to Microsoft Azure " border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a61a3694-4789-459f-b7df-046b0703b1a5.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Microsoft Azure 개발자 가이드 " width="372"></a></p>
+
+
+  <h3>지금 <a href="https://aka.ms/azuredevebook" target="_blank">다운로드할 수 있는 무료 전자책</a> !</h3>
+
+
+  <p>eBook에서는 다음 항목을 다룹니다.</p>
+
+
+  <ul>
+   <li>1장: Microsoft 개발자&rsquo; 가이드</li>
+   <li>2장: Microsoft Azure 시작</li>
+   <li>3장: 애플리케이션에 인텔리전스 추가</li>
+   <li>4장: 애플리케이션 보안</li>
+   <li>5장: Microsoft Azure 서비스를 배포하는 위치 및 방법</li>
+   <li>6장: Microsoft Azure 연습</li>
+   <li>7장: Microsoft Azure Marketplace 사용</li>
+  </ul>
+
+
+  <p>배리와 나는 또한 지역 사회가 묻는 주제를 고려했다. Azure Portal 둘러보기 및 가상 머신 만들기와 같은 시나리오를 안내합니다. 또한 Node.js 및 MongoDB를 사용하는 웹 애플리케이션 개발 및 배포에 대해서도 설명합니다. CI/CD(연속 통합 및 지속적인 배포), 스테이징 환경, 크기 조정, 로깅 및 모니터링과 같은 일반적인 작업을 다룹니다. 인증 및 오프라인 동기화를 포함하는 모바일 애플리케이션에 대한 백 엔드를 만들어 마무리합니다.</p>
+
+
+  <p>또한 모든 범주에서 <a href="https://aka.ms/awsazureguide" target="_blank">Azure 및 AWS 서비스의 클라우드 기능을 빠르게 비교할 수 있는 AWS 및 Azure용 클라우드 서비스 맵</a> 의 다운로드 가능한 PDF가 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/blog/" target="_blank">블로그</a>를 팔로우하거나 Twitter<a href="https://twitter.com/Azure" target="_blank">@Azure</a>에서 Azure에 대해 자세히 알아볼 수 있다는 점을 읽고 기억해 주셔서 감사합니다. 또한 트위터에이 게시물의 저자에 도달 할 수 있습니다 <a href="https://twitter.com/mbcrump" target="_blank">@mbcrump</a>.</p>

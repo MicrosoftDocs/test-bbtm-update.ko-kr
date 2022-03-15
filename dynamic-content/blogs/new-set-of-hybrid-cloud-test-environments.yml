@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 88775a7f8a9c3504560d350c36e63b30ff14c095
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908833"
+Slug: new-set-of-hybrid-cloud-test-environments
+Title: 하이브리드 클라우드 토픽의 새로운 시뮬레이션된 LOB(기간 업무) 애플리케이션
+Summary: Azure 구독만 사용하면 간소화된 인트라넷과 다른 Azure 가상 네트워크에 대한 VNet 간 연결을 통해 하이브리드 클라우드의 LOB(기간 업무) 애플리케이션을 시뮬레이션할 수 있습니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/documentation/articles/virtual-machines-windows-ps-hybrid-cloud-test-env-lob/">웹 기반 LOB(기간 업무) 애플리케이션을 테스트하기 위한</a> 시뮬레이션된 하이브리드 클라우드 환경을 만드는 단계를 테스트하기 위해 하이브리드 클라우드에서 웹 기반 LOB 애플리케이션을 설정합니다. 이 환경에서는 시뮬레이션된 온-프레미스 네트워크와 Azure 가상 네트워크에서 실행되는 서버 간에 VNet&nbsp; 간 연결을 사용합니다. 다음은 결과 구성입니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4299a1d5-ec28-4f64-b9bd-3592d7330f9a.png"></p>
+
+
+  <p>서버를 설정하고 LOB1에서 LOB 애플리케이션을 로드하면 CLIENT1 컴퓨터에서 액세스 실험을 시작할 수 있습니다.</p>
+
+
+  <p>이 환경을 사용하여 프로덕션 환경에 배포하기 전에 Azure 가상 네트워크에서 실행되는 웹 기반 LOB 애플리케이션을 만들고 테스트하는 경험을 얻을 수 있습니다.</p>

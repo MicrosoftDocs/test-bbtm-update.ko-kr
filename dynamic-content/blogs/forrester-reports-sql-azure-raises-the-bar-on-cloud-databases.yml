@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: dead1a5788aaaaacb62de09f1a793af2a31a4044
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902578"
+Slug: forrester-reports-sql-azure-raises-the-bar-on-cloud-databases
+Title: 'Forrester 보고서: SQL Azure 클라우드 데이터베이스에 대한 기준을 높입니다.'
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] 지난 1년 동안 SQL Azure 릴리스 이후 클라우드에서 최고 품질의 데이터베이스를 제공하는 데 주력해 왔습니다. SQL Azure 빌드...'
+Content: <p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>지난 1년 동안 SQL Azure 릴리스 이후 클라우드에서 최고 품질의 데이터베이스를 제공하는 데 주력해 왔습니다. SQL Azure 이미 강력한 SQL Server 플랫폼을 기반으로 하지만 시장에서 진정으로 고유한 다중 테넌트 클라우드 기반 관계형 데이터베이스를 제공합니다. </p>  <p>독립 리서치 회사인 Forrester Research, Inc.는 2010년 11월 2일에 SQL Azure 이 &#160; 기록해 두었다. Forrester는 지난 6개월 동안 Microsoft SQL Azure 사용하는 26개 회사를 인터뷰했습니다. 또한 고객의 의견을 들어보면 SQL Azure 백업, 재해 복구, 테스트 및 협업과 같은 다른 데이터 관리 요구 사항뿐만 아니라 다양한 중소 규모의 애플리케이션을 지원하는 신뢰할 수 있는 클라우드 데이터베이스 플랫폼을 제공한다는 설명이 대부분 있습니다. 보고서에서 수석 분석가 인 Noel Yuhanna는 클라우드 데이터베이스의 급속한 신흥 범주에서 리더로 SQL Azure 주요 개선 사항이 이루어졌다고 말하고 "가장 혁신적이고 통합되고 유연한 솔루션을 제공합니다"라고 기록합니다. </p>  <p><b>식별된 주요 이점은 다음과 같습니다.</b></p>  <ul>   <li>저렴한 구입 및 사용</li>    <li>관리 및 구성을 위한 최소한의 노력</li>    <li>프로비전하기 쉬운 주문형 용량</li>    <li>추가 작업 또는 비용 없이 고가용성</li>    <li>분할된 데이터 플랫폼을 통한 스케일 아웃 용량 증가</li>    <li>애플리케이션 및 도구에 대한 투명한 데이터 액세스</li> </ul>  <p>다음과 같은 훌륭한 고객 평가도 있습니다.</p>  <ul>   <li>"클라우드 ROI 분석을 수행했으며, 데이터베이스 플랫폼을 매력적인 가격으로 제공하는 데 있어 SQL Azure 명확하게 눈에 띄어 줍니다. 이제 SQL Azure"에서 더 많은 앱을 고려하고 있습니다. (앤디 라핀, 엔터프라이즈 아키텍처 디렉터, 켈리 블루 북)</li>    <li>"덜 중요한 애플리케이션에 대해서만 비용의 일부로 24x7인 데이터베이스를 얻는 것이 꿈입니다. 이전에는 복원력이 높은 서버 및 데이터베이스에 대한 예산이 없기 때문에 덜 중요한 앱이 너무 자주 중단되었습니다. SQL Azure 확실히 게임을 변경합니다." (데이터베이스 관리자, 통신)</li> </ul>  <p>여기서 그의 연구를 확인하는 것이 좋습니다. SQL Azure 클라우드 데이터베이스에 대한 기준을 높입니다. </p>

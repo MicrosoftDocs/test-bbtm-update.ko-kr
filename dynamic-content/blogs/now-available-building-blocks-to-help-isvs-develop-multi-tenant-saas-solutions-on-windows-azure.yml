@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d46a3346379722b5ef687ba165bf301655adf64f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898291"
+Slug: now-available-building-blocks-to-help-isvs-develop-multi-tenant-saas-solutions-on-windows-azure
+Title: '지금 사용 가능: ISV가 Windows Azure에서 다중 테넌트 SaaS 솔루션을 개발하는 데 도움이 되는 구성 요소'
+Summary: 최근 시장 조사에 따르면 SaaS(Software-as-a-Service)는 시장 성장 측면에서 기존 패키지 소프트웨어를 앞지르고 있습니다.&nbsp; 새로운 ISV가 SaaS 솔루션 또는 기존 솔루션을 개발함에 따라...
+Content: '<p>최근 시장 조사에 따르면 SaaS(Software-as-a-Service)는 시장 성장 측면에서 기존 패키지 소프트웨어를 앞지르고 있습니다.&nbsp; 새로운 ISV가 SaaS 솔루션을 개발하거나 기존 ISV가 비즈니스를 SaaS 모델로 전환함에 따라 서비스 크기 조정, 관리 및 계량이 포함된 핵심 SaaS 프레임워크를 구축하는 측면에서 몇 가지 과제에 직면해 있습니다. &nbsp;</p>  <p>SaaS 솔루션을 빌드할 때 다중 테넌시는 ISV가 리소스 사용률을 최적화하고 COGS(판매 상품) 비용을 낮출 수 있도록 도와줍니다.&nbsp; ISV가 성공적인 다중 테넌트 SaaS 솔루션을 빌드하려면 모니터링, 계량 및 크기 조정의 형태로 서비스의 작업 요구를 해결해야 합니다. Microsoft의 Windows Azure ISV 팀은 ISV가 이러한 작업을 수행할 수 있도록 일련의 구성 요소를 개발했습니다.</p>  <p>이 구성 요소 샘플은 전체 및 테넌트별 계량(데이터베이스, 스토리지, 대역폭, 컴퓨팅 서로게이트), 크기 조정(시간 기반 및 KPI 기반)을 처리하는 기능뿐만 아니라 시스템 상태를 시각적으로 표현하기 위해 KPI 집합을 모니터링하고 차트로 작성할 수 있는 기능을 개발자에게 제공합니다.&nbsp; 구성 요소에는 다중 테넌트 환경에서 셀프 서비스 프로비저닝 및 ID 관리도 포함됩니다. 이러한 패싯은 모든 다중 테넌트 솔루션의 핵심이며, 샘플은 ISV가 이러한 기능을 앱에 통합하는 데 도움이 되는 훌륭한 시작점을 제공합니다.</p>  <p>게시된 프로젝트 @ <a target="_blank" href="https://cloudninja.codeplex.com/">Codeplex</a>를 확인합니다. 프로젝트는 다음 아티팩트를 포함합니다.</p>  <ul>  <li>소스 코드(전체 소스 코드이며 쉽게 사용할 수 있는 구성 요소화됨)</li>  <li>설명서(여기서는 구성 요소의 핵심 기능, 솔루션의 설계 결정 및 기술 측면, 각 구성 요소에 대한 높은 수준 및 자세한 아키텍처 등에 대해 자세히 설명합니다.)</li>  <li>사용자 가이드(프로젝트 설정 및 구성)</li>  <li>연습(기능 안내를 통해 설정된 앱 기능에 대한 세부 정보 제공)</li>  </ul>  <p>이 샘플에 대한 피드백과 질문을 <a target="_blank" href="https://cloudninja.codeplex.com/discussions">여기에</a> 제출하세요.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href= https://blogs.msdn.com/b/windowsazure/archive/2011/07/07/now-available-building-blocks-to-help-isvs-develop-multi-tenant-saas-solutions-on-windows-azure.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗  <script type="text/javascript"></script>  </p>'

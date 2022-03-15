@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cc1ea63d9637978419aafa2fc52688d697d39fac
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898269"
+Slug: opt-for-detailed-analysis-in-abnormal-rise-in-failure-rate-alert
+Title: "\"실패율의 비정상적인 증가\" 경고에서 자세한 분석 선택"
+Summary: Visual Studio 애플리케이션 Insights 스마트 검색에 대한 통합 보기를 도입했습니다.
+Content: >-
+  <h3>통합 스마트 검색 보기</h3>
+
+
+  <p><a href="https://azure.microsoft.com/documentation/articles/app-insights-overview/">Visual Studio 애플리케이션 Insights</a> 자동 관리 검색에 대한 통합 보기를 도입했습니다. 애플리케이션 Insights 메트릭을 자동으로 분석하고 메트릭을 설정할 필요 없이 알림을 제공합니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-nrt-proactive-diagnostics/#configure-alerts">실패한 요청 속도</a> 및 <a href="https://azure.microsoft.com/en-us/blog/azure-diagnostics-integration-with-application-insights/">Azure 클라우드 서비스 문제의</a> 비정상적인 증가에 대한 경고는 문제가 발생하는 즉시 알 수 있습니다. 또한 일일 날짜 표시줄에 대한 심층 분석을 수행하여 특정 페이지, 브라우저, 서버 인스턴스, 지리적 영역 또는 기타 매개 변수와 관련된 문제를 나타낼 수 있는 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-proactive-detection/">변칙을 검색</a> 합니다. Weve&rsquo;는 이러한 기능의 사용자 환경을 결합하여 더 쉽게 볼 수 있도록 했습니다.</p>
+
+
+  <p>다음은 포털에서 샘플 검색을&#39;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2c0e56a5-6004-4f90-84ce-a1a6ae44a1b3.png"><img alt="image" border="0" height="430" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bb89ece1-0982-418f-9a5d-92fa2671e57d.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="640"></a></p>
+
+
+  <p>또한 모든 메일 알림의 형식을 통합했습니다. 여기에는 검색에 대한 기본 정보와 자세한 정보와 추가 조사를 위해 포털에 대한 링크가 포함됩니다.</p>
+
+
+  <h3>전자 메일 경고에서 자세한 분석을 받으려면 어떻게 해야 하나요?</h3>
+
+
+  <p>기본적으로 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-nrt-proactive-diagnostics/#configure-alerts">실패한 요청 속도의 비정상적인 증가에</a> 대한 이메일 알림에는 경고에 대한 간단한 요약만 포함됩니다. 전체 세부 정보를 얻으려면 단추를 클릭하여 포털에서 경고를 엽니다. 이러한 방식으로 수행하는 한 가지 이유는 예를 들어 예외 메시지 또는 추적에 포함될 수 있는 중요한 정보를 전자 메일에 포함할 위험을 방지하기 위해서입니다.</p>
+
+
+  <p>이에 대한 균형은 전자 메일에서 모든 진단 데이터를 보는 편의성입니다. 매우 자주 이러한&rsquo; 세부 정보를 확인하여 문제를 식별할 수 있습니다.</p>
+
+
+  <p>따라서 사용자의 피드백에 따라 전자 메일에서 전체 오류 분석을 가져올 수 있는 옵션을 만들었습니다. 요약 경고를 받으면 구성을 클릭하고 알림 메일에서 자세한 분석을 수신하는 옵션을 선택합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f1ddbec0-0c68-4331-80be-d893184f970f.png"><img alt="image" border="0" height="336" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fa099282-dcad-4d99-a815-3b4ea26e2e3a.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="640"></a></p>
+
+
+  <p>또는 애플리케이션 Insights 포털의 경고 타일에서 시작합니다. 자동 관리 진단 규칙을 열고 확인란을 선택하고 저장합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/36b3236f-49c5-414c-939e-f19ec560b223.png"><img alt="image" border="0" height="459" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/358d0593-17f8-4f19-aaf8-52cf2e4228e2.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="640"></a></p>

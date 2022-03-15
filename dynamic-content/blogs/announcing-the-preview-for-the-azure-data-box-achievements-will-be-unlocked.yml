@@ -1,0 +1,79 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e94f60c109fceec36f5a302448abdd63c516d0be
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903375"
+Slug: announcing-the-preview-for-the-azure-data-box-achievements-will-be-unlocked
+Title: 'Azure Data Box에 대한 미리 보기 발표: 도전 과제가 잠금 해제됩니다.'
+Summary: 함께 작업하는 모든 조직은 클라우드의 기능을 사용하여 데이터를 인사이트로 전환하고 IT 효율성을 개선하는 방법을 적극적으로 찾고 있습니다. 고객으로부터 들은 것은 데이터를 ...로 이동하는 것입니다.
+Content: >-
+  <p>함께 작업하는 모든 조직은 클라우드의 기능을 사용하여 데이터를 인사이트로 전환하고 IT 효율성을 개선하는 방법을 적극적으로 찾고 있습니다. &rsquo;고객이 들은 바에 따르면 네트워크를 통해 클라우드로 데이터를 이동하는 것은&rsquo; 항상 빠르 &ndash; 더라도 테라바이트 및 페타바이트 단위로 측정된 데이터를 이동하는 데 몇 달이 걸릴 수 있다는 것입니다. 고객은 대규모 데이터 세트를 Azure 클라우드로 오프라인으로 전송할 수 있는 안전하고, 사람이 이식 가능하고, 가져오기 쉬운 Microsoft 어플라이언스라는 또 다른 옵션을 요구하고 있습니다.</p>
+
+
+  <h2>Azure Data Box 미리 보기 발표</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8de2897d-8b66-4c32-af42-b6b337e099c0.png"><img alt="azure-data-box" border="0" height="206" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e82c2cf9-627c-4137-bae4-c88a5715fd77.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="azure-data-box" width="640"></a></p>
+
+
+  <p>그래서 오늘&rsquo; Azure Data Box에 대한 미리 보기 프로그램을 발표하게 되어 매우 기쁩니다. Azure Data Box는 조직이 생산성을 차단하고 혁신을 느리게 할 수 있는 데이터 전송 장벽을 극복하는 데 도움이 되는 45파운드의 견고한 변조 방지 및 사람이 관리할 수 있는 어플라이언스입니다. 고객의 다음 요구 사항을 충족하기 위해 처음부터 Data Box를 빌드했습니다.</p>
+
+
+  <ul>
+   <li><strong>보안</strong> &ndash; 데이터에 대한 256비트 AES 암호화를 지원하는 변조 방지 어플라이언스</li>
+   <li><strong>힘든</strong> &ndash; 외부 포장을 요구하지 않고 운송 중에 피할 수없는 충돌과 타박상을 처리하기 위해 가장 힘든 재료를 사용하여 제작되었습니다.</li>
+   <li><strong>사용하기</strong> &ndash; 쉬운 네트워크에 바로 연결하고 약 100TB를 저장할 수 있으며 NAS 프로토콜(SMB/CIFS)을 사용합니다.</li>
+   <li><strong>간단한</strong> &ndash; 주문하고, 채우고, 반환합니다. 모두 Azure Portal에서 추적됩니다.</li>
+   <li><strong>지원되는</strong> &ndash; 파트너 업계 최고의 Azure 파트너의 글로벌 배열과 통합</li>
+  </ul>
+
+
+  <h2>Azure Data Box가 이미 작동 중입니다!</h2>
+
+
+  <p>지난 몇 달 동안&rsquo; 모든 산업 및 규모의 고객과 직접 협력하여 데이터를 Azure로 가져왔습니다. 이러한 고객 중 한 명인 <a href="https://www.oceaneering.com/" target="_blank">Oceaneering International</a>은 Azure Data Box의 초기 프로토타입을 채택한 사람이었습니다. 원래 시간의 일부분에서 바다의 깊이에서 Azure로 데이터를 가져오는 데 사용하는 방법을 알아봅니다.&nbsp;</p>
+
+
+  <p align="center">&nbsp;<iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/y0nGRHw3Zqc" width="560"></iframe></p>
+
+
+  <p align="left"><em>워크로드를 클라우드로 이동하는 평가에서 Xerox는 Azure Data Box를 사용하여 온-프레미스 서버에서 Azure로 테라바이트의 데이터베이스 백업을 빠르고 효율적으로 로드했습니다. 데이터 센터에 쉽게 통합할 수 있었고 몇 분 안에 Data Box에 데이터를 복사할 수 있었습니다. 배달에서 반송 배송까지 전체 프로세스가 간단했고 상당한 시간과 노력을 절약했습니다!</em> &ndash;<strong>데니스 스크르틱, 제록스 코퍼레이션의 시스템 컨설턴트 교장</strong></p>
+
+
+  <h2 align="left">파트너 친화적</h2>
+
+
+  <p align="left">또한 고객은 수많은 애플리케이션 및 솔루션과 함께 데이터를 저장한다는 것을 알고 있습니다. &rsquo;따라서 Azure Data Box가 제품과 직접 통합되어 클라우드로의 오프라인 전송을 원활하게 활용할 수 있도록 많은 파트너와 긴밀히 협력하고 있습니다.</p>
+
+
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fc6d76fd-6761-4b2d-8c21-a73248ca3722.png"><img alt="logos-2" border="0" height="134" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ed39f78a-bc4a-48b7-b799-08599ab8782a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="logos-2" width="640"></a></p>
+
+
+  <p align="left"><strong>Randy DeMeno, Commvault 수석 기술자 - Microsoft 제품 &amp; 파트너 관계에</strong> 따르면 <em>&ldquo;다른 Azure 통합 지점&lsquo;과 마찬가지로 Data Box&rsquo; 팀은 Commvault가 Data Box&rsquo; 솔루션으로 &lsquo;쉽게 작업할 수 있도록 하여 Commvault Data Management 소프트웨어를 공동으로 사용하여 사용하기 쉬운 Azure Data Box&rsquo; 하드웨어를 통해 많은 양의 데이터를 Azure&lsquo;에 시드할 수 있도록 했습니다. 이렇게 하면 다른 유형의 백업 및 데이터 관리뿐만 아니라 Commvault 및 Microsoft 소프트웨어를 사용하여 보관, E-Discovery/Search, AI 및 분석을 위해 이 데이터를 인덱싱할 수 있습니다.&rdquo;</em></p>
+
+
+  <p align="left"><strong>Veeam의 글로벌 클라우드 그룹 부사장인 Paul Mattes</strong><em>는 Data Box&rdquo;를 지원하여 Microsoft Azure 걸쳐 Veeam 기능을 더욱 확장할 수 있게 되어 기쁩니다.&ldquo;</em> <em>&ldquo;이를 통해 고객은 대규모 Veeam 데이터 세트를 Azure로 효율적으로 전송하여 클라우드 환경에서 데이터 보호를 가속화할 수 있습니다.&rdquo;</em></p>
+
+
+  <h2 align="left">미리 보기에 오늘 등록</h2>
+
+
+  <p align="left">미리 보기는 현재 미국에서만 사용할 수 있지만 앞으로 몇 달 안에 더 많은 시장으로 확장될 예정입니다. 우리는 이미 높은 수요로 인해 어플라이언스 공급이 제한될 것으로 예상하지만&rsquo;, 지속적으로 확장하고 더 많은 시스템을 선단에 추가합니다. 관심이 있다면, 우리는 당신에게서 듣고 싶습니다.</p>
+
+
+  <ul>
+   <li>
+   <div align="left">고객은 미리 보기에 <a href="https://aka.ms/azuredatabox" target="_blank">지금 등록</a> 할 수 있습니다.</div>
+   </li>
+   <li>
+   <div align="left">ISV 파트너는 오늘 미리 보기에 <a href="https://aka.ms/databoxpartnersignup" target="_blank">등록</a> 할 수도 있습니다.</div>
+   </li>
+  </ul>
+
+
+  <h3 align="left"><a href="https://aka.ms/azuredatabox" target="_blank"><img alt="Button" border="0" height="61" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b7e1a648-94bf-45a8-8b73-c916686ea218.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="단추" width="339"></a></h3>
+
+
+  <p align="left">클라우드로 데이터를 가져오기 위한 장벽을 낮추기 위해 혁신적인 솔루션을 지속적으로 제공하기 위해 최선을 다하고 있습니다. 아래&ndash;&rsquo;의 주석에서 새로운 Azure Data Box 미리 보기에 대해 어떻게 생각하는지 알려주세요.</p>

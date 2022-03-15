@@ -1,0 +1,118 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e9e044cacb7c14f9bba83d1e972b085f75862b70
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903128"
+Slug: azure-gpus-with-riskfuels-technology-offer-20-million-times-faster-valuation-of-derivatives
+Title: Riskfuel의 기술을 사용하는 Azure GPU는 파생상품의 2천만 배 빠른 평가를 제공합니다.
+Summary: '최근 AI를 기반으로 하는 빠른 파생상품 모델을 개발하는 스타트업인 Riskfuel과 협업하여 기존 CPU 기반 메서드에 대해 NVIDIA GPU가 구동하는 Azure ND40rs_v2 Virtual Machine 인스턴스에서 Riskfuel 가속 모델을 실행하여 얻은 성능을 측정했습니다. '
+Content: >-
+  <p>Exchange 거래된 금융 상품&mdash;과 같은 주식, 국채 및 통화&mdash; 해시는 지난 20년 동안 기술 혁신의 엄청난 물결의 혜택을 누렸으며, 그 결과 보다 효율적인 시장, 낮은 거래 비용 및 투자자의 투명성이 향상되었습니다.</p>
+
+
+  <p>그러나 자본 시장의 상당 부분은 뒤처졌습니다. 금리 스왑, 신용 기본 스왑 및 구조화된 productslack&mdash;&mdash;과 같은 수준의 즉각적인 명확성을 제공하는 OTC(over-the-counter) 파생상품에서 5,000조 달러 규모의 대규모 시장을 구성하는 상품의 평가.</p>
+
+
+  <p>변동성이 증가하는 시기에 트레이더와 관리자는 적절한 조치를 취하기 위해 하루가 전개됨에 따라 시장 상황이 특정 기기에 미치는 영향을 알아야 합니다. 이전 종가의 상황을 반영하는 보고서는 차분한 시장에서만 가치가 있으며, 그럼에도 불구하고 빠른 평가 및 위험 민감도 계산에 액세스 할 수있는 기업은 시장에서 상당한 우위를 점하고 있습니다.</p>
+
+
+  <p>계측이 거래될 때마다 값을 관찰할 수 있는 교환 거래 상품과 달리 OTC 파생상품의 값은 복잡한 재무 모델을 사용하여 계산해야 합니다. 이를 수행하는 기존의 수단은 기존의 몬테카를로&mdash;아 단순하지만 계산적으로 비용이 많이 드는 확률적 스윕을 통해 다양한 시나리오와 결과 또는 유한한 차이 분석을 통해 수행됩니다.</p>
+
+
+  <p>은행은 OTC 파생상품 포트폴리오의 가치를 대규모 야간 일괄 처리로 계산하기 위해 매년 수천만 달러를 지출합니다. 이러한 당황스러운 병렬 워크로드는 메인프레임 일에서 직접 발전하여 지정된 날에 좋은 결과 집합을 제공하는 기존의 CPU 바인딩된 작업자&mdash;의 온-프레미스 클러스터에서 실행되었습니다.</p>
+
+
+  <p>기존 알고리즘, 실시간 가격 책정 및 위험 관리를 사용할 수 없습니다. 그러나 기계 학습의 영향이 프로덕션 워크로드로 확장됨에 따라 기존 시뮬레이션에 의존하는 시나리오와 산업에서 강력한 패턴이 나타나고 있습니다. 계산되면 기존 시뮬레이션의 출력을 사용하여 GPU 가속을 도입하여 거의 실시간으로 평가할 수 있는 DNN 모델을 학습시킬 수 있습니다.</p>
+
+
+  <p>최근 AI(인공 지능)를 기반으로 하는 빠른 파생상품 모델을 개발하는 스타트업인 <a href="https://riskfuel.com/" target="_blank">Riskfuel</a> 과 협업하여 NVIDIA GPU가 기존의 CPU 기반 메서드에 대해 구동하는 현재 일반 공급되는 NDv2 시리즈(Azure ND40rs_v2) Virtual Machine 인스턴스에서 Riskfuel 가속 모델을 실행하여 얻은 성능을 측정했습니다.</p>
+
+
+  <p>Riskfuel은 심층 신경망을 사용하여 OTC 파생상품의 가치를 파악하는 데 사용되는 복잡한 가격 책정 기능을 개척하고 있습니다. 우리의 연구를 위해 선택된 금융 상품은 외환 장벽 옵션이었습니다.</p>
+
+
+  <p>이 평가판의 첫 번째 단계는 학습 데이터에 사용할 대규모 샘플 풀을 생성하는 것으로 구성되었습니다. 이 경우 기존 CPU 기반 작업자를 사용하여 Riskfuel 모델에서 근사치로 전체 도메인을 포함하는 입력으로 기존 모델을 반복적으로 실행하여 100,000,000개의 학습 샘플을 생성했습니다. 기존 모델은 각 평가를 생성하는 데 평균 2250밀리초(밀리초)가 걸렸습니다. 기존 모델을 사용하면 밸류에이션 시간이 거래 성숙도에 따라 달라집니다.</p>
+
+
+  <p>그림 1의 히스토그램은 기존 모델에 대한 평가 시간 분포를 보여줍니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9fee0d74-0186-4095-8caa-c0b5f8596c6c.png"><img alt="Histogram showing the distribution of valuation times for traditional models." border="0" height="547" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92863a5b-f0af-49c8-b487-e797b7dbccb0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="기존 모델에 대한 평가 시간 분포를 보여 주는 히스토그램입니다." width="671"></a></p>
+
+
+  <p align="center"><i>그림 1: 기존 모델에 대한 평가 시간 분포입니다.</i></p>
+
+
+  <p>Riskfuel 모델이 학습되면 개별 거래를 평가하는 것이 평균 3ms 미만인 경우 훨씬 더 빠르며 더 이상 거래 성숙도에 의존하지 않습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/20115d08-9c1f-4552-b171-e632e8022cf8.png"><img alt="Histogram showing how valuing individual trades is much faster with a mean under 3 milliseconds." border="0" height="607" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/45cdefd0-c3a7-414b-b1b1-6036d752bdad.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="개별 거래를 평가하는 방법을 보여주는 히스토그램은 평균이 3밀리초 미만인 경우 훨씬 더 빠릅니다." width="696"></a></p>
+
+
+  <p align="center"><i>그림 2: 평균이 3ms 미만인 평가 시간을 보여주는 Riskfuel 모델입니다.</i></p>
+
+
+  <p>이러한 결과는 개별 평가용이며 일괄 처리 유추 시나리오에서 포화 상태일 때 Azure ND40rs_v2 Virtual Machine이 제공할 수 있는 대규모 병렬 처리를 사용하지 않습니다&rsquo;. 일반적인 거래 장부에 있는 것과 같이 거래 포트폴리오를 가치 있게 평가하도록 요청하면 혜택이 훨씬 더 큽니다. 이 연구에서는 Riskfuel 가속 버전의 외환 장벽 옵션 모델과 Azure ND40rs_v2 Virtual Machine의 조합으로 기존 모델에 비해 20M 이상의 성능 향상을 보였습니다.</p>
+
+
+  <p>그림 3에서는 가속되지 않은 Azure Virtual Machine에서 실행되는 기존 모델의 초당 밸류에이션으로 측정된 처리량과 Azure ND40rs_v2 Virtual Machine에서 실행되는 Riskfuel 모델(파란색)을 보여 줍니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1e3bd8e0-e5c7-4037-b247-a36501574913.png"><img alt="Line graph showing the throughput, measured in valuations per second for the traditional model running on a non-accelerated Azure Virtual Machine versus the Riskfuel model running on an Azure ND40rs_v2 Virtual Machine. " border="0" height="558" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/10e37e83-4fd9-4640-a0b6-62e2d339527b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="가속화되지 않은 Azure Virtual Machine에서 실행되는 기존 모델과 Azure ND40rs_v2 Virtual Machine에서 실행되는 Riskfuel 모델의 초당 밸류에이션으로 측정된 처리량을 보여 주는 선 그래프입니다. " width="679"></a></p>
+
+
+  <p align="center"><i>그림 3: 실행 중인 기존 모델과 Riskfuel 모델의 모델 비교입니다.</i></p>
+
+
+  <p>32,768개의 거래가 있는 포트폴리오의 경우 Azure ND40rs_v2 Virtual Machine의 처리량은 초당 915,000,000의 밸류에이션인 반면 CPU 기반 VM에서 실행되는 기존 모델은 초당 32개의 밸류에이션으로 처리량이 있습니다. 이는 28,000,000배 이상의 향상된 기능입니다.</p>
+
+
+  <p>여기서는 Riskfuel 모델에서 발생하는 속도 향상이 <b>정확도를 희생하지 않는다는</b> 점을 지적하는 것이 중요합니다. 위험 연료 모델은 매우 빠를 뿐만 아니라 그림 4와 같이 기존 모델에서 생성한 결과와 효과적으로 일치합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/029a7558-ff75-4b6f-b462-8142937c2ed9.png"><img alt="Line graph showing the accuracy of the Riskfuel model versus the traditional model." border="0" height="501" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2a0d66bf-ea8c-41c0-9bf1-d3f2acde9803.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Riskfuel 모델의 정확도와 기존 모델의 정확도를 보여 주는 선 그래프입니다." width="524"></a></p>
+
+
+  <p align="center"><em>그림 4: 위험 연료 모델의 정확도입니다.</em></p>
+
+
+  <p>이러한 결과는 기존 온-프레미스 HPC(고성능 컴퓨팅) 시뮬레이션 워크로드를 하이브리드 접근 방식으로 대체할 가능성을 명확하게 보여줍니다. 클라우드의 기존 메서드를 방법론으로 사용하여 DNN을 학습시키는 데 사용되는 데이터 세트를 생성하여 거의 실시간으로 동일한 함수 집합을 평가할 수 있습니다.</p>
+
+
+  <p>Azure ND40rs_v2 Virtual Machine은 NVIDIA GPU 기반 Azure Virtual Machines 제품군에 새로 추가되었습니다. 이러한 인스턴스는 가장 까다로운 GPU 가속 AI, 기계 학습, 시뮬레이션 및 HPC 워크로드의 요구 사항을 충족하도록 설계되었으며, Azure ND40rs_v2 Virtual Machine을 사용하기로 한 결정은 유추 단계에 가장 높은 일괄 처리 지향 성능과 모델 학습을 위해 가능한 최대 처리량을 달성하기 위해 제공하는 대규모 부동 소수점 성능을 최대한 활용하는 것이었습니다.</p>
+
+
+  <p>Azure ND40rs_v2 Virtual Machine은 각각 32GB의 GPU 메모리와 NVLink 고속 상호 연결을 사용하는 8개의 NVIDIA V100 Tensor Core GPU로 구동됩니다. 이러한 GPU를 결합하면 FP16 컴퓨팅의 페타플롭스 1개를 제공합니다.</p>
+
+
+  <p>Riskfuels&rsquo; 설립자이자 CEO인 Ryan Ferguson은 Riskfuel 가속 밸류에이션 모델과 Azure의 NVIDIA GPU 기반 VM 인스턴스의 조합이 OTC 시장을 변화시킬 것이라고 예측합니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;현재 시장 변동성은 OTC 파생 상품에 대한 실시간 평가 및 위험 관리의 필요성을 보여줍니다. 야간 배치의 시대가 끝납니다. &rsquo;또한 Azure ND40rs_v2 Virtual Machine의 빠른 추론뿐만 아니라 모델 학습 작업도 매우 소중히 여깁니다. 이 빠른 GPU 인스턴스에서는 학습 시간을 48시간에서 4시간 미만으로 단축했습니다. 주문형 가용성과 함께 모델을 학습하는 시간이 단축되어 AI 엔지니어링 팀의 생산성이 극대화됩니다.&rdquo;</em></p>
+
+
+  <p>Scotiabank는 최근 NVIDIA GPU 기반 Azure Virtual Machine 인스턴스를 사용하여 Azure GPU 플랫폼에 이미 상주하는 최첨단 파생상품 플랫폼에 Riskfuel 모델을 구현했습니다. 카린 버거론, 스코샤 뱅크에서 XVA 거래의 전무 이사 및 머리, 스코샤&rsquo;스 새로운 플랫폼의 혜택을 본다 :</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;클라우드로 마이그레이션하면 추가 시나리오 분석이 필요한 경우 추가 VM을 스핀업할 수 있습니다. 이전에는 이러한 종류의 주문형 컴퓨팅에 액세스할 수 없었습니다&rsquo;. 그리고 분명히 성능 향상은 매우 환영합니다. 주문형 컴퓨팅에 대한 이러한 액세스는 우리 팀이 고객에게 더 나은 가격 책정을 제공하는 데 도움이 됩니다.&rdquo;</em></p>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/ndv2-series" target="_blank">Azure NDv2-Series Virtual Machines</a>에 대해 자세히 알아봅니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/" target="_blank">Azure HPC</a>를 탐색합니다.</li>
+      <li><a href="https://riskfuel.com/" target="_blank">Riskfuel 솔루션</a>에 대해 자세히 알아보세요.</li>
+  </ul>

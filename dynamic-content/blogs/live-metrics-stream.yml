@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b116ccadca7dee25822ab6588008d330fb007712
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902963"
+Slug: live-metrics-stream
+Title: 애플리케이션 Insights 라이브 메트릭 스트림
+Summary: 새 버전의 웹앱을 배포하는 경우 성능에 대한 즉각적인 영향을 확인하는 것이 좋습니다. 응답 시간이 개선되거나 악화되었나요? 아니면 실패가 표시되나요?
+Content: >-
+  <p>새 버전의 웹앱을 배포하는 경우 성능에 대한 즉각적인 영향을 확인하는 것이 좋습니다. 응답 시간이 개선되거나 악화되었나요? 아니면 실패가 표시되나요? 배포가 진행되는 동안 애플리케이션 Insights 라이브 메트릭 스트림을 시청하면&rsquo; 즉시 효과를 볼 수 있습니다. 문제가 있는 경우에는 너무 많은 사용자가 영향을 받기 전에 배포를 중단할 수 있습니다.</p>
+
+
+  <p>또 다른 시나리오는 브로드캐스트를 따라 엄청난 사용자 유입을 기대하는 경우&rsquo;입니다.</p>
+
+
+  <p>메트릭 탐색기를 피드하는 파이프라인과 달리 라이브 메트릭은 대기 시간을 최소화하도록 설계되었습니다. 그러나 데이터를 저장하거나 검색 기능을 제공하지 않습니다&rsquo;.</p>
+
+
+  <p><img alt="live_metrics_stream3.PNG" border="0" height="466" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eb333181-e0a1-4a55-970f-1b89ebb51183.gif" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="live_metrics_stream3.PNG" width="610"></p>
+
+
+  <p>이러한 차트를 살펴보면 애플리케이션의 현재 성능에 대한 빠른 아이디어를 얻을 수 있습니다. 사용자에게 오류가 발생하는 경우를 인식하고 나머지 애플리케이션이 동시에 어떻게 작동하는지 확인합니다.</p>
+
+
+  <h2>데모</h2>
+
+
+  <p>여기에서 데모된 라이브 메트릭 스트림을 참조하세요.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/zqfHf1Oi5PY" width="560"></iframe></p>
+
+
+  <h2>환경</h2>
+
+
+  <p>라이브 메트릭 스트림은 추가 구성 없이 바로 사용할 수 있습니다. 이 기능은 이제 .NET용 SDK 웹 애플리케이션 <a href="https://www.nuget.org/packages/Microsoft.ApplicationInsights.Web/2.1.0-beta2">2.1.0-beta2</a> 이상에서 사용할 수 있습니다.</p>
+
+
+  <h2>알려주세요.&hellip;</h2>
+
+
+  <p>문제 또는 기능 요청은 .NET 웹 애플리케이션 <a href="https://github.com/Microsoft/ApplicationInsights-dotnet-server/issues">리포지토리</a>용 애플리케이션 Insights 방문하세요.</p>
+
+
+  <p>애플리케이션 Insights 팀은 개발자를 위한 고품질 도구를 제공하기 위해 최선을 다하고 있습니다. <a href="https://visualstudio.uservoice.com/forums/357324">피드백 또는 새로운 기능 권장 사항에</a> 감사드립니다.</p>

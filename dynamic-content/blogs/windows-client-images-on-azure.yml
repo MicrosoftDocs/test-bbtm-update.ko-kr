@@ -1,0 +1,219 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f99cb17bb357f8695f381d250c1ba2811e2bc066
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898793"
+Slug: windows-client-images-on-azure
+Title: MSDN 구독자를 위한 클라이언트 이미지 Windows
+Summary: 이 블로그 게시물에서는 Azure에서 Windows 클라이언트 이미지를 기반으로 가상 머신을 만드는 방법을 설명합니다. 또한 이러한 이미지에 대한 몇 가지 라이선스 영향에 대해서도 설명합니다.
+Content: >-
+  지난 몇 달 동안 Microsoft Azure Windows 클라이언트 이미지를 사용할 수 있도록 고객으로부터 많은 피드백을 받았습니다. 일부 고객은 소프트웨어가 대상으로 하는 운영 체제에서 소프트웨어를 개발하고 테스트해야 합니다. 또한 많은 고객이 이러한 유형의 애플리케이션에 대해 온-프레미스 개발/테스트 환경을 유지 관리하는 대신 클라이언트 OS에서 실행되는 레거시 앱에 대한 개발/테스트 환경을 신속하게 스핀업하는 기능을 원했습니다.
+
+
+  이러한 피드백의 결과와 소중한 MSDN 구독자의 개발/테스트 환경을 개선하기 위한 지속적인 노력의 일환으로 최근 Windows 7 Enterprise 및 Windows 8.1 Enterprise 기본 이미지를 Visual Studio 개발자 이미지, <a href="https://blogs.msdn.com/b/biztalk_server_team_blog/archive/2014/05/27/biztalk-server-2013-developer-edition-is-now-available-in-microsoft-azure-for-msdn-subscribers.aspx">BizTalk Developer 이미지</a> 및 <a href="https://community.dynamics.com/gp/b/gpteamblog/archive/2014/03/24/microsoft-dynamics-gp-2013-image-available-in-the-azure-gallery.aspx">Windows 8.1 Enterprise 컬렉션에 추가했습니다. Microsoft Azure Microsoft Dynamics GP 이미지</a>
+
+
+  이 블로그 게시물에서는 Windows 클라이언트 이미지에서 가상 머신을 만드는 다양한 옵션을 살펴보고, 몇 가지 제한 사항에 대해 논의하고, MSDN 구독자에 대한 라이선스 영향의 일부에 대해 설명합니다.
+
+
+  실제로 Microsoft Azure 관리 포털, Visual Studio 및 PowerShell을 통해 가상 머신을 만드는 세 가지 방법이 있습니다.
+
+
+  포털 접근 방식부터 시작해 보겠습니다. Windows 클라이언트 이미지를 프로비전하는 단계는 활성 MSDN 구독과 연결된 Microsoft 계정으로 로그인하고 MSDN Azure 혜택을 사용하여 설정한 Azure 구독을 사용해야 한다는 점을 제외하고는 다른 가상 머신을 만드는 단계와 다르지 않습니다. <a href="https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-b/">MSDN</a> Azure 혜택을 사용하도록 설정하는 방법에 대한 자세한 지침은 여기를 참조하세요.
+
+
+  먼저 포털에서 가상 머신을 만드는 방법을 살펴보겠습니다. 첫 번째 단계는 MSDN Azure 혜택을 사용하여 설정한 Azure 구독을 사용하고 있는지 확인하는 것입니다. 로그인한 후에는 New-Compute-Virtual&gt; Machine-From&gt; 갤러리를 클릭하여 새 가상 머신을&gt; 만들 수 있습니다. 그러면 Azure Virtual Machine 갤러리로 이동합니다. MSDN 이미지 목록을 가져오는 가장 쉬운 방법은 아래와 같이 작은 MSDN 필터링 확인란을 확인하는 것입니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="Azure 이미지 갤러리의 클라이언트 이미지 Windows" alt="Windows Client images in Azure image gallery" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CreateVMMSDN_1.jpg" width="614" height="375" border="0" />
+
+
+  다음으로 가상 머신 만들기 마법사에 따라 Virtual Machine 이름, 계층, 크기(권장 크기 미리 선택), 사용자 이름 및 암호와 같은 추가 정보를 입력해야 합니다. 여기에 입력한 사용자는 컴퓨터에 대한 원격 데스크톱 연결을 포함하여 서버를 관리하는 데 사용할 관리 계정을 나타냅니다. 나중에 RDP에 사용할 Microsoft 계정을 추가하는 방법에 대해 설명합니다. 아래 이미지는 가상 머신 만들기 마법사의 첫 번째 단계를 보여 줍니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="Windows 클라이언트 VM 만들기 1단계" alt="Create Windows Client VM Step 1" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CreateVMMSDN_2.jpg" width="614" height="375" border="0" />
+
+
+  두 번째 단계에서는 클라우드 서비스 DNS 이름, 사용하려는 구독, 가상 머신을 프로비전해야 하는 지역/선호도 그룹 또는 Virtual Network와 스토리지 계정 및 가용성 집합에 가상 머신을 추가할지 여부에 대한 정보를 입력해야 합니다. 참고: 가상 머신에서 가상 네트워크를 사용하려면 가상 머신을 만들 때 가상 네트워크를 지정해야 합니다. 자세한 내용은 <a href="https://go.microsoft.com/fwlink/p/?linkid=294063&amp;clcid=0x409">Azure Virtual Network 개요</a>(영문)를 참조하세요. 다음 단계에서는 VM에 엔드포인트를 추가하고 아래와 같이 내부 및 외부 포트 번호를 지정할 수 있습니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="Windows 클라이언트 VM 만들기 2단계" alt="Create Windows Client VM Step 2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CreateVMMSDN_3.jpg" width="614" height="393" border="0" />
+
+
+  마지막 단계에서는 VM에서 Puppet 또는 Chef 및 맬웨어 방지와 같은 확장을 사용하도록 설정할 수 있습니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="Windows 클라이언트 VM 만들기 3단계" alt="Create Windows Client VM Step 3" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CreateVMMSDN_4.jpg" width="614" height="393" border="0" />
+
+
+  확인을 누르면 가상 머신이 프로비전됩니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="포털의 가상 머신 프로비전 상태" alt="Virtual machine provisioning status in the Portal" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CreateVMMSDN_5.jpg" width="614" height="551" border="0" />
+
+
+  컴퓨터가 프로비전되면 원격 데스크톱을 사용하여 VM에 간단히 연결할 수 있습니다. 원격 데스크톱 계정은 가상 머신 만들기 마법사의 첫 번째 페이지에 입력한 계정입니다.
+
+
+  Windows 클라이언트 이미지에 대한 질문과 대답을 살펴보기 전에 다른 만들기 옵션도 간단히 살펴보겠습니다.
+
+
+  Visual Studio 서버 탐색기에서 직접 또는 새 웹 애플리케이션의 파일/새 환경에서 MSDN Windows 클라이언트 이미지를 기반으로 가상 머신을 만들 수 있습니다. 포털과 마찬가지로 MSDN Azure 혜택을 사용하여 설정된 Azure 구독을 사용하고 있는지 확인해야 합니다. Azure에 로그인하려면 아래와 같이 서버 탐색기에서 Microsoft Azure 아이콘을 클릭할 수 있습니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="Visual Studio Server Explorer에서 Azure로 커넥트" alt="Connect to Azure in Visual Studio Server Explorer" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ServerExplorerConnect.jpg" width="183" height="484" border="0" />
+
+
+  그러면 자격 증명을 입력할 수 있는 로그인 대화 상자가 나타납니다. 로그인하면 서버 탐색기로 이동하여 Virtual Machine 노드를 마우스 오른쪽 단추로 클릭하고 가상 머신 만들기를 선택할 수 있습니다. 이렇게 하면 Visual Studio 전체 Virtual Machine 환경 만들기가 제공됩니다. 아래 이미지와 같이 MSDN 범주를 선택하고 Windows 클라이언트 이미지를 선택할 수 있습니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="Visual Studio 서버 탐색기에서 Virtual Machine 만들기" alt="Create Virtual Machine from Visual Studio Server Explorer" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CreateVMMSDN_7.jpg" width="614" height="435" border="0" />
+
+
+  나머지 단계는 포털 환경과 거의 동일합니다.
+
+
+  Visual Studio 가상 머신을 만드는 또 다른 방법은 새 웹 애플리케이션 만들기 환경의 일부입니다. File-New-Project-Web-ASP.NET&gt;&gt;&gt;&gt; 애플리케이션은 새 ASP.NET 프로젝트 대화 상자를 표시합니다. Visual Studio 2013 업데이트 2를 사용하여 Azure에서 웹 사이트 또는 가상 머신을 대상 환경으로 만드는 기능을 추가했습니다. 대화 상자의 Windows Azure 섹션에서 해당 항목을 선택할 수 있습니다. Virtual Machine을 선택한 경우 아래와 같이 Microsoft Azure 대화 상자에 가상 머신 만들기가 표시됩니다.
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="새 웹 애플리케이션에서 Virtual Machine 만들기" alt="Create Virtual Machine from New Web Application" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CreateVMMSDN_8.jpg" width="614" height="326" border="0" />
+
+
+  이 만들기 옵션은 서버 탐색기의 만들기 옵션과 약간 다릅니다. 빠른 만들기 옵션으로 간주합니다. 이름에서 설명한 대로 개발자는 너무 많은 사용자 입력이나 구성 없이 Azure에서 개발/테스트 VM을 빠르게 회전할 수 있습니다. 따라서 구독, 클라우드 서비스의 DNS 이름, 이미지, 크기, 사용자 이름, 암호 및 위치와 같은 기본 사용자 입력만 필요합니다. 빠른 만들기에서 한 가지 지적할 점은 기본적으로 IIS 및 웹 배포를 사용하도록 설정하는 옵션도 포함되어 있다는 것입니다. 이는 <a href="https://azure.microsoft.com/blog/2014/04/11/vm-agent-and-extensions-part-1/">확장을</a> 기반으로 하며 웹 개발자가 추가 구성 없이 웹 서버 환경을 신속하게 스핀업할 수 있도록 하기 위한 것입니다.
+
+
+  <b>중요 참고 사항: </b> 웹 배포 확장은 Windows 클라이언트 VM에 원격 웹 게시를 사용할 수 없습니다. 원격 웹 게시를 사용하도록 설정하려면 웹 배포의 "IIS 배포 처리기" 및 "원격 에이전트 서비스" 기능을 설치해야 합니다. "프로그램 및 기능"을 열고 Microsoft Web Deploy 3.5에 대해 "변경"을 선택하여 설치할 수 있습니다.
+
+
+  가상 머신을 프로비전한 후에는 서버 탐색기에서 가상 머신의 상황에 맞는 메뉴에서 "원격 데스크톱을 사용하는 커넥트" 기능을 사용하여 VM에 연결할 수 있습니다.
+
+
+  다른 Azure 가상 머신과 마찬가지로 Windows 클라이언트 가상 머신을 만드는 마지막 옵션은 Windows PowerShell 사용합니다. 아래 스크립트는 Windows 8.1 Enterprise 이미지를 기반으로 새 가상 머신을 만듭니다.
+
+  <pre class="prettyprint"># Sign in azure account
+
+  Add-AzureAccount
+
+
+  # Select MSDN subscription if the account has multiple subscriptions
+
+  $subscriptionName = "Windows Azure MSDN - Visual Studio Ultimate"
+
+  Select-AzureSubscription $subscriptionName
+
+
+  # Find the latest Windows 8 images
+
+  $imageFamlyName = "Windows 8.1 Enterprise (x64)"
+
+  $win8image = Get-AzureVMImage | ? {$_.ImageFamily -eq $imageFamlyName} | Sort PublishedDate -Descending | Select-Object -First 1
+
+
+  # Create a new storage account
+
+  $location = "West US"
+
+  $storageAccountName = "MyWindows8Svc"
+
+  New-AzureStorageAccount -StorageAccountName $storageAccountName -Location $location -Verbose
+
+  Set-AzureSubscription -SubscriptionName $subscriptionName -CurrentStorageAccountName $storageAccountName
+
+
+  # Create a new cloud service
+
+  $serviceName = "MyStorageAccount"
+
+  New-AzureService -ServiceName $serviceName -Location $location -Verbose
+
+
+  # Create a Windows 8 VM
+
+  $vmName = "MyWindows8VM"
+
+  $credential = Get-Credential -Message "Enter username and password for the virtual machine administrator"
+
+  $username = $credential.UserName
+
+  $password = $credential.GetNetworkCredential().Password
+
+  New-AzureQuickVM -Windows -ServiceName $serviceName -name $vmName -ImageName $win8image.ImageName -AdminUsername $username -Password $password -WaitForBoot -Verbose</pre>
+
+  이제 Azure에서 Windows 클라이언트 이미지를 만드는 다양한 방법을 확인했으므로 Windows 개발 관점뿐만 아니라 라이선스 관점에서도 어떻게 할 수 있는지 궁금할 수 있습니다.
+
+
+  이러한 이미지에 대한 가장 일반적인 질문을 수집했으며 제공된 답변이 열려 있는 질문에 도움이 되기를 바랍니다.
+
+
+  <b>이러한 VM을 Windows 스토어 개발에 사용할 수 있나요?</b>
+
+
+  예, Windows 스토어 개발에 VM을 사용할 수 있지만 프로비전에 사용되는 계정이 기본 제공 관리자로 설정되므로 관리자 그룹의 일부인 새 로컬 도메인 계정을 만들어야 합니다.
+
+
+  <b>이러한 VM을 Windows Phone 개발에 사용할 수 있나요?</b>
+
+
+  현재는 이러한 VM에서 Windows Phone 개발을 지원하지 않습니다.
+
+
+  <b>TechEd에서 공지한 대로 다중 디바이스 개발(Cordova)에 이러한 VM을 사용할 수 있나요?</b>
+
+
+  사용 중인 <sup>타사</sup> 소프트웨어에 대한 사용 조건을 항상 준수해야 하지만 가능합니다.
+
+
+  <b>Microsoft 계정을 사용하여 VM에 원격 데스크톱을 사용하려면 어떻게 해야 하나요?</b>
+
+
+  1. 기본 빌드인 관리자 계정을 사용하여 컴퓨터에 원격으로 연결합니다. 모든 클라이언트를 허용하도록 원격 데스크톱 연결 변경(강조 표시 옵션 선택 취소)
+
+
+  <img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border: 0px;" title="원격 데스크톱용 Microsoft 계정 추가" alt="Add Microsoft Account for Remote Desktop" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/SystemProperties.jpg" width="330" height="364" border="0" />
+
+
+  2. rdp 파일을 다운로드하고 메모장에서 편집합니다. <b>자격 증명에 대한 프롬프트 바꾸기:i:1</b><b>을 enablecredsspsupport:i:0</b>으로 바꿉니다.
+
+
+  &nbsp;
+
+
+  <b>이를 활용할 수 있는 MSDN 수준은 무엇인가요?</b>
+
+
+  다음 수준의 모든 활성 MSDN 구독자는 <a href="https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits/">MSDN Azure 혜택 구독</a> 또는 <a href="https://azure.microsoft.com/en-us/offers/ms-azr-0023p/">MSDN 개발 및 테스트 종량제 구독</a>을 설정한 다음 개발 및 테스트를 위해 Windows 클라이언트 VM을 실행할 수 있습니다.
+
+
+  · MSDN을 사용하여 Visual Studio Ultimate
+
+
+  · MSDN을 사용하여 Visual Studio Premium
+
+
+  · MSDN 플랫폼
+
+
+  · MSDN을 사용하여 Visual Studio Test Professional
+
+
+  · MSDN을 사용하여 Visual Studio Professional
+
+
+  <b>프로덕션 워크로드에 이러한 VM을 사용할 수 있나요?</b>
+
+
+  아니요, 이러한 이미지 및 MSDN Azure 구독에서 제공되는 모든 서비스는 개발 및 테스트용입니다.
+
+
+  <b>MSDN Azure 혜택 구독 이외의 Azure 구독에서 이러한 VM을 사용할 수 있나요?</b>
+
+
+  아니요, 그럴 수 없습니다.
+
+
+  <b>VM에 무엇을 설치할 수 있나요?</b>
+
+
+  MSDN 구독에 포함된 모든 소프트웨어를 설치할 수 있습니다. 예를 들어 MSDN 구독자를 사용하는 Visual Studio Premium 개발 또는 테스트를 위해 VM에 Visual Studio Premium 설치하고 Office 수 있습니다.

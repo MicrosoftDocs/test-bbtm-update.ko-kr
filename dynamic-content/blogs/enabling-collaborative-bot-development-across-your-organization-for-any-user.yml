@@ -1,0 +1,62 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fc27d1cc515702f49be1d551fb390a698bf25341
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903307"
+Slug: enabling-collaborative-bot-development-across-your-organization-for-any-user
+Title: 모든 사용자에 대해 조직 전체에서 공동 작업 봇 개발 사용
+Summary: AI(대화형 인공 지능)를 통해 조직은 가장 일반적으로 요청되는 서비스 중 일부를 자동화하여 고객 서비스 및 직원 참여와 같은 영역에서 비즈니스를 개선할 수 있으며, 이를 통해 직원들은 더 많은 부가 가치 활동을 수행할 수 있습니다. 대화형 AI의 이점은 잘 확립되어 있지만 조직에서 이러한 솔루션을 빌드해야 하는 사용자를 결정하는 것이 항상 명확하지는 않습니다.
+Content: >-
+  <p><em>이 게시물은 Power Virtual Agents 프로그램 관리 파트너 디렉터인 Omar Aftab이 공동 저술했습니다.</em></p>
+
+
+  <p>AI(대화형 인공 지능)를 통해 조직은 가장 일반적으로 요청되는 서비스 중 일부를 자동화하여 고객 서비스 및 직원 참여와 같은 영역에서 비즈니스를 개선할 수 있으며, 이를 통해 직원들은 더 많은 부가 가치 활동을 수행할 수 있습니다. 대화형 AI의 이점은 잘 확립되어 있지만 조직에서 이러한 솔루션을 빌드해야 하는 사용자를 결정하는 것이 항상 명확하지는 않습니다.</p>
+
+
+  <p>많은 애플리케이션과 마찬가지로 SaaS(Software-as-a-Service) 또는 PaaS(Platform-as-a-Service) 제품을 사용하여 대화형 AI 솔루션(또는 봇)을 빌드할 수 있습니다. 따라서 조직은 비즈니스 문제에 가장 가까운 비즈니스 사용자에게 권한을 부여하거나 코딩 환경을 갖춘 개발자가 이러한 솔루션을 빌드하는 방법을 완전히 제어할 수 있도록 하는 것 중에서 차이를 메우고 둘 간의 협업을 허용할 수 있는 많은 옵션 없이 결정해야 합니다. 그러나 Bot Framework Skills의 Microsoft Power Virtual Agents 통합(<a href="https://powervirtualagents.microsoft.com/en-us/blog/microsoft-power-virtual-agents-is-now-generally-available/">현재 일반 공급</a>되는 봇을 만드는 비즈니스 사용자를 위한 그래픽 인터페이스 제공)을 통해 Microsoft는 비즈니스 사용자와 개발자가 대화형 AI 솔루션을 빌드하는 데 원활하게 협업할 수 있도록 고유하게 권한을 부여합니다.</p>
+
+
+  <p>봇 빌드 과정에서 조직 전체의 봇 빌더는 사일로에서 작동하지 않아야 합니다. 비즈니스 사용자가 봇을 빌드하고 있지만 미묘한 시나리오를 추가하려는 경우 봇을 추가로 사용자 지정할 수 있는 개발자와 협업할 수 있어야 합니다. 마찬가지로 봇을 빌드하는 개발자는 비즈니스 사용자가 빌드한 봇을 기술로 활용할 수도 있습니다.</p>
+
+
+  <p>Microsoft는 Power Virtual Agents 및 Bot Framework를 사용하여 엔드투엔드, 절벽 없는 봇 빌드 환경을 제공합니다.</p>
+
+
+  <ul>
+      <li><strong>Power Virtual Agents</strong> 봇 개발 &ndash; 의 기술적 측면에 대해 걱정할 필요 없이 비즈니스 사용자 및 도메인 전문가가 봇을 쉽게 빌드할 수 있는 이상적인 봇 개발을 위한 코드 없는 환경을 제공합니다.</li>
+      <li><strong>Bot Framework</strong> 는 코드 환경을 사용하여 봇을 빌드하고 언어 모델 소유권 및 시각적 디자인을 비롯한 봇 개발 &ndash; 의 기술적 측면을 완전히 제어하려는 개발자에게 이상적인 봇 개발을 위해 특별히 빌드된 오픈 소스 SDK 및 도구입니다. 또한 Azure Bot Service를 통해 개발자는 사용자가 봇과 상호 작용하는 Teams 및 기타 메시징 플랫폼과 같은 인기 있는 채널에 봇을 호스트하고 배포할 수 있습니다.</li>
+      <li><strong>Bot Framework 기술을</strong> 사용하면 시작 지점에 관계없이 봇 &ndash; 을 확장할 수 있습니다. Bot Framework Skills를 사용하면 Power Virtual Agents 사용자가 Bot Framework 개발자와 협업하여 사용자 지정 기능으로 봇을 확장할 수 있으므로 봇 빌드 환경이 없습니다. 마찬가지로, Bot Framework 개발자는 봇을 기술로 확장하고 주제 전문가가 봇 대화를 업데이트할 수 있도록 할 수 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a81e5f4-b6dd-4784-8475-7ccd061a9aac.png"><img alt="An image showing how Power Virtual Agents and Microsoft Blot Frameworks expand on each other for ease of collaboration between developers and business users." border="0" height="720" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/366d837a-36e5-4531-8c56-d242f0026053.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="개발자와 비즈니스 사용자 간의 공동 작업을 쉽게 위해 Power Virtual Agents 및 Microsoft Blot Framework가 서로 확장되는 방식을 보여 주는 이미지입니다." width="1280"></a></p>
+
+
+  <p>예를 들어 조직에서 Power Virtual Agents 사용하여 여행 봇을 만들고 있다고 가정합니다. 비즈니스 사용자는 봇이 <b>마일 및 보상 확인</b>, <b>항공편 상태 확인</b>, <b>계정 정보 업데이트</b> 및 <b>항공편 예약</b>과 같은 고객의&rsquo; 의도를 처리할 수 있는 UI 기반 환경으로 대화 상자를 빌드합니다.</p>
+
+
+  <p><img alt="A screenshot showing a test chat with an example travel bot." border="0" height="2517" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9fbb164f-d229-4ab8-b6ee-859dd2e885a7.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="예제 여행 봇이 있는 테스트 채팅을 보여 주는 스크린샷." width="4408"></p>
+
+
+  <p>그러나 조직의 누군가가 아래 그림과 같이 Bot Framework 및 Language Understanding 서비스를 사용하여 사용자 지정 언어 모델로 <strong>비행 예약</strong> 기술을 이미 빌드한 경우 어떻게 해야 할까요?</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/706f2892-3cde-4647-94a7-0401bc20cc93.png"><img alt="A screenshot showing the already built Book a Flight skill" border="0" height="1268" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f7e784e1-f442-4792-a942-db68a1987ba8.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="이미 빌드된 비행 기술 예약을 보여 주는 스크린샷" width="2256"></a></p>
+
+
+  <p>이 시나리오에서 비즈니스 전문가는 Power Virtual Agents 작업으로 선택하여 이 항공편 예약 기술을 구축한 개발자와 협업할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6bbf153d-57ab-4658-a888-9fa33f14f8e7.png"><img alt="A screenshot showing a test chat with an example bot using the Book a Flight skill" border="0" height="2517" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5f61ab24-ab61-46b5-9ff8-38d74ab5c4be.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="비행 기술 예약을 사용하는 예제 봇이 있는 테스트 채팅을 보여 주는 스크린샷" width="4408"></a></p>
+
+
+  <p>대화형 AI 채택이 계속 증가함에 따라 조직에서 봇 개발에 대한 학제 간 팀 접근 방식을 취하는 것이 중요하다고 생각합니다. 이러한 이유로 Microsoft는 비즈니스 주제 전문가와 개발자가 공동 작업할 수 있는 엔드투엔드 봇 빌드 환경을 제공합니다.</p>
+
+
+  <ul>
+      <li><a href="https://powervirtualagents.microsoft.com/" target="_blank">Power Virtual Agents 시작합니다</a>.</li>
+      <li><a href="https://github.com/Microsoft/botframework#microsoft-bot-framework" target="_blank">Bot Framework를 시작</a>합니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/power-virtual-agents/advanced-use-skills" target="_blank">Bot Framework 기술을 사용하여 Power Virtual Agents 봇을 확장하는 방법에 대해 자세히 알아봅니</a>다.</li>
+  </ul>

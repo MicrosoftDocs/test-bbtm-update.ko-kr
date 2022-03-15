@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 866001b15eddc4046d2a7c5654da8f677d034776
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898458"
+Slug: azure-blockchain-workbench-1-7-0-integration-with-azure-blockchain-service
+Title: Azure Blockchain Service와 Azure Blockchain Workbench 1.7.0 통합
+Summary: '새로운 Azure Blockchain Service와 함께 블록체인 개발 및 프로젝트를 더욱 개선할 수 있는 Microsoft Azure Blockchain Workbench 1.7.0 릴리스를 공유하게 되어 기쁩니다. '
+Content: >-
+  <p>&rsquo;새로운 <a href="https://azure.microsoft.com/en-us/services/blockchain-service/" target="_blank">Azure Blockchain Service</a>와 함께 블록체인 개발 및 프로젝트를 더욱 개선할 수 있는 Microsoft Azure Blockchain Workbench 1.7.0 릴리스를 공유하게 되어 매우 기쁩니다. Azure Portal을 통해 Blockchain Workbench의 새 인스턴스를 배포하거나 <a href="https://github.com/Azure-Samples/blockchain/tree/master/blockchain-workbench/scripts" target="_blank">업그레이드 스크립트</a>를 사용하여 기존 배포를 1.7.0으로 업그레이드할 수 있습니다.&nbsp;</p>
+
+
+  <p>이 업데이트는 다음 향상된 기능을 포함합니다.</p>
+
+
+  <h2>Azure Blockchain Service와 통합</h2>
+
+
+  <p>Azure Blockchain Service를 미리 보기로 사용하면 Azure Blockchain Service의 Blockchain Workbench를 기본 블록체인으로 직접 개발할 수 있습니다. Microsoft에서 이 블록체인 경험을 해온 사용자를 위해 이제 Azure에 프라이빗 블록체인 네트워크를 더 빠르게 구성하고 배포할 수 있는 템플릿이 있지만&rsquo;, 새 버전으로 업그레이드, 보안 패치 설치 등을 포함하여 블록체인 노드를 유지 관리하고 실행하는 것은 여전히 사용자에게 달려 있습니다. Azure Blockchain Service는 완전히 관리되는 블록체인 노드를 실행하여 기본 블록체인 네트워크의 유지 관리를 간소화합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/da59eebd-cd9c-4778-ae1d-cf52c01c8f63.png"><img alt="Azure Blockchain Service overview page" border="0" height="1036" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd8794cc-15af-4c77-94e1-668d8b77ffbe.png" style="border-image: none; display: inline; background-image: none;" title="Azure Blockchain Service 개요 페이지" width="2818"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>Blockchain Workbench는 블록체인 네트워크를 기반으로 필요한 스캐폴딩을 빌드하여 블록체인 솔루션을 신속하게 반복하고 개발하는 데 도움이 됩니다. Workbench 1.7.0을 사용하면 Workbench를 사용하여 Azure Blockchain Service를 직접 쉽게 배포할 수 있습니다. Azure Marketplace에서 Workbench를 배포하려면 <strong>고급 설정 </strong>블레이드로 이동하고<strong> 블록체인 설정</strong>에서 새 블록체인 네트워크 <strong>만들기</strong>를 선택합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/35a594b3-ced1-42aa-9333-78a5b10090d3.png"><img alt="Azure Blockchain Service settings from Azure Blockchain Workbench deployment experience" border="0" height="373" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/28ecfbfb-8192-4ab8-8a21-4246d693a1ff.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Blockchain Service 설정" width="585"></a></p>
+
+
+  <p>이 옵션을 선택하면 Azure Blockchain Service 노드가 자동으로 배포됩니다. Azure Blockchain Service의 기본 트랜잭션 노드에서 기본 API 키를 회전하는 경우 Blockchain Workbench에서 구성된 RPC 엔드포인트의 키를 변경해야 합니다. Key Vault를 새 키로 업데이트하고 VM을 다시 부팅합니다.</p>
+
+
+  <h2>쿼럼과의 향상된 호환성</h2>
+
+
+  <p>고객의 요청이 많은 기능 중 하나는 추가 블록체인 네트워크 프로토콜에 대한 호환성을 추가하는 것입니다. Blockchain Workbench의 이전 릴리스에서 구성된 기본 블록체인 네트워크는 Ethereum PoA(인증 증명) 블록체인 네트워크입니다. Blockchain Workbench 1.7.0을 사용하여 <a href="https://news.microsoft.com/2019/05/02/j-p-morgan-and-microsoft-announce-strategic-partnership-to-drive-enterprise-adoption-of-quorum/" target="_blank">Quorum 블록체인 네트워크와의 호환성을</a> 추가했습니다.</p>
+
+
+  <p>Quorum을 기반으로 블록체인 애플리케이션을 빌드하려는 고객의 경우 이제 Blockchain Workbench를 사용하여 쿼럼 기반 애플리케이션을 직접 개발하고 빌드할 수 있습니다.</p>
+
+
+  <p>Twitter @MSFTBlockchain의 팀에 따라 Azure Blockchain Service를 최신 상태로 유지할 수 있습니다. <a href="https://aka.ms/blockchainuservoice" target="_blank">Blockchain UserVoice</a>를 사용하여 피드백을 제공하고 기능 및 아이디어를 제안하세요. 여러분의 입력은 이 서비스를 훌륭한 서비스로 만드는 데 도움이 됩니다. 여러분의 의견을 기다리겠습니다.</p>

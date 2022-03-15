@@ -1,0 +1,110 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d34094f19b382ce91156a1d4337888b8d338c1a5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898627"
+Slug: do-more-for-the-national-security-mission-with-azure
+Title: Azure를 사용하여 국가 안보 임무를 위해 더 많은 작업 수행
+Summary: 우리는 정부에 가장 광범위한 상업적 혁신을 제공하겠다는 약속을 계속 이행하면서 국가 안보 임무를 위한 새로운 역량을 빠르게 발전시키고 있습니다.
+Content: >-
+  <p>정부에&rsquo; 가장 광범위한 상업적 혁신을 제공하겠다는 약속을 계속 이행함에 따라 국가 안보 임무를 위한 새로운 역량이 빠르게 발전하고 있습니다. Azure를 사용하면 미션 팀이 어디서나 보안 수준&mdash; 데이터를&mdash; 통해 인사이트를 얻을 수 있습니다. 예를 들어 고객은 Windows WVD(<a href="https://azure.microsoft.com/en-us/services/virtual-desktop/" target="_blank">Virtual Desktop</a>)를 최대한 활용하여 국가 안보 고객이 COVID-19 전염병 중에 원격으로 운영할 수 있도록 합니다. WVD를 통해 고객은 고유한 보안 환경에서 중요한 애플리케이션 및 데이터에 액세스할 수 있습니다. 우리 팀은 2021년 1월부터 Azure Government에 66개의 새로운 서비스와 28개의 새로운 서비스를 Azure Government 비밀에 릴리스함으로써 입증된 대로 새로운 기능을 지속적으로 제공하기 위해 최선을 다하고 있습니다.</p>
+
+
+  <p>인력이 주 지역이든 원격 또는 불우한 위치에 배포되든 관계없이 Azure는 가장 진보된 기술 플랫폼&mdash;에 액세스하여 전투원에게 컴퓨팅, 스토리지 및 고급 분석 기능을 제공하고 거의 실시간으로 실행 가능한 인텔리전스를 제공합니다. 이로 인해 에지에서 더 높은 인텔리전스, 가장 중요하고 중요한 데이터를&rsquo; 보호하기 위한 통합 보안, 전 세계에서 작업하는 분석가 및 전방 배포 팀을 위한 안전한 원격 협업을 지원하는 탄력적 용량으로 이어집니다.</p>
+
+
+  <h2>에지에서 미션 인텔리전스 제공</h2>
+
+
+  <p>고객이 전략적 우위를 유지할 수 있도록 당사의 기술은 언제 어디서나 중요 업무용 데이터에 안전하게 액세스할 수 있는 기능을 제공합니다. Microsoft Azure 고유하게 온-프레미스에서 클라우드로의 컴퓨팅 연속체를 사용하여 임무가 분류되지 않은 도메인 또는 분류된 도메인으로 이동합니다. 센서, 고급 주변 장치, 전방 배치 전술 유닛, 차량, 텐트, 극장에서 데이터를 수집하는 것부터 명령 포스트 또는 본사 유닛&mdash;에 전달하는 것까지Azure는 데이터를 수집하고, 분석을 학습시키고, 필요에 따라 이벤트에 가까운 데이터를 배포할 수 있는 안전하고 균일한 방법을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a747a04c-759b-49b2-8f62-b4876a6cfddf.png"><img alt="Diagram for delivering a continuum of compute from cloud to edge" border="0" height="574" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eae12abd-56df-409c-b1f7-6563651b6507.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>또한 엄격한 위치의 통신 인프라는 신뢰할 수 없으므로 고객이 매우 비싸고 대기 시간이 높고 대역폭이 낮은 통신 기술을 활용해야 하는 경우가 많습니다. 고객은 Azure Stack Edge를 사용하여 운영자가 제어하는 에지 스토리지 및 처리 기능을 유연하게 설정하여 임무 작업을 지원할 수 있습니다. 예를 들어 운영자는 5G 극장 내 연결 및 위성 통신을 활용하여 현장의 에지 디바이스를 연결할 수 있습니다. 이러한 디바이스는 모두 안전하게 연결되며, 모든 분류 수준에서&mdash; 양방향으로 데이터를 클라우드로 릴레이하여 업무 상태를 거의 실시간으로 리더십으로 전달합니다.</p>
+
+
+  <h2>임무 요구 사항을 위한 특수 기능 제공</h2>
+
+
+  <p>임무 사용 사례를 지원하는 데이터 시스템에 대한 요구 사항은 매우 복잡하기 때문에 지구상에서 가장 큰 워크로드 중 일부에 대해 안정적인 성능을 제공하는 특수 도구가 필요합니다. Azure에서 업무 성공을 보장하기 위해 고객과 협력하면서 이러한 핵심 요구 사항과 이러한 솔루션을 대규모로 재사용할 수 있는 가장 좋은 방법에 대해서도 깊이 생각합니다.</p>
+
+
+  <p>&rsquo;미션 고객이 Azure에서 자체 보안 데이터 자산을 빌드하는 데 도움이 되는 도구를 빌드합니다. 엔지니어링 팀은 현재 많은 고객&rsquo; 데이터 인프라의 핵심을 구성하는 Apache Accumulo 및 Apache NiFi를 포함한 오픈 소스 프로젝트에 상당한 기여를 했습니다. 이러한 기술은 Apache Accumulo에서 판도를 바꾸는 보안 기능(예: 특성 기반 액세스 제어)을 제공하고, 데이터 액세스를 제어하며, Apache NiFi를 사용하여 여러 플랫폼에서 데이터를 원활하게 이동합니다.</p>
+
+
+  <p>현재 Apache Accumulo 및 Apache NiFi는 페타스케일 클라우드만 제공할 수 있는 보안, 접근성, 개인 정보 보호 및 규모로 Azure에서 원활하게 배포, 관리, 모니터링 및 운영될 수 있습니다. 그런 다음 고급 분석 및 엔터프라이즈 데이터 저장소와의 통합을 위해 Azure Synapse Analytics에 데이터를 통합하여 업무 및 엔터프라이즈 데이터를 일관되고 일관되게 통합할 수 있습니다. 웹의 <a href="https://github.com/apache/accumulo" target="_blank">Apache Accumulo</a> 및 <a href="https://nifi.apache.org/quickstart.html" target="_blank">Apache NiFi</a> 를 방문하여 Azure에서 고유한 배포를 시작하세요.</p>
+
+
+  <p>Were&rsquo;는 또한 <a href="https://newsroom.intel.com/news/intel-collaborate-microsoft-darpa-program/#gs.vbcfh0" target="_blank">인텔 및 DARPA(Defense Advanced Research Projects Agency)와 다년간의 협력을</a> 발표하여 FHE(완전 동형 암호화)의 상용화를 주도하여 고객이 스토리지, 전송 또는 사용에서 데이터를 완전히 안전하고 비공개로 유지함으로써 데이터 기밀성의 마지막 마일 격차를 해소할 수 있도록 지원합니다. FHE를 사용하면 사용자가 항상 암호화된 데이터 또는 암호화를 계산할 수 있습니다. FHE를 사용하면 데이터의 암호를 해독할 필요가 없으므로 사이버 공격의 가능성이 줄어듭니다.</p>
+
+
+  <h2>어디서나 학습할 수 있는 데이터 활용</h2>
+
+
+  <p>어디서나 데이터를 활용하는 것은 임무를 위한 통합 데이터 전략을 구축하는 데 중요한 부분입니다. 여기에는 우주의 데이터가 포함되며, 최근에 발표된 Azure Space 솔루션을 통해 미션 팀은 엄격하고 연결이 끊긴 환경에서도 데이터를 분석하고 정보에 입각한 결정을 내릴 수 있습니다. 예를 들어 Azure Orbital은 여러 궤도, 여러 주파수 대역 및 SATCOM(여러 위성 통신) 공급업체와 안정적이고 안전하게 통신할 수 있는 기능을 제공합니다. 정부 고객은 극장, 연합 및 운영 요구에 가장 적합한 서비스를 선택할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67b70866-19cc-4911-95e9-77115f64deaf.jpg"><img alt="Diagram of Azure space solutions to enable mission teams to analyze data in disconnected environments" border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2e67d842-2259-4acc-99c8-dacd5652db8c.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>Weve&rsquo;는 Azure Orbital Ground Station 및 Edge Connectivity 제품을 사용하여 전 세계 리소스 배열을 통해 우주에서 생성된 데이터를 지상 네트워크와 긴밀하게 통합할 수 있음을 보여주었습니다. 이러한 솔루션에서 Azure Space는 위성을 가상으로 학습시키고, 해당 모델을 사용하여 로컬 또는 클라우드에서 이벤트 인식을 자동화하고, 전 세계 어디서나 해당 데이터를 수집할 수 있는 고유한 기능을 제공합니다.</p>
+
+
+  <p>데이터가 지상으로 가져온 후 Azure는 더 나은 의사 결정을 위해 해당 데이터를 활용하는 도구를 제공합니다. 이 도구에는 모든 기술 수준에 대한 AI(인공 지능) 및 기계 학습이 포함되며, 운영 효율성, 거버넌스 및 규모를 개선하기 위해 데이터에서 새로운 학습 시대를 맞이합니다. 또한 Power Platform(Power BI, PowerApps 및 Power Automate)을 사용하면 사용자가 인사이트를 파악하고 안전하게 공유하고, AI 애플리케이션을 개발하고, 로우 코드, 포인트 앤 클릭 환경을 통해 워크플로를 자동화할 수 있습니다.</p>
+
+
+  <p>AI는 미국의 지속적인 리더십을 위한 중요한 성장 영역으로 꼽고 있습니다. 지난해 국방부(DoD)는 AI 사용을 관리하기 위한 윤리적 원칙을 채택하여 안정성, 안전, 투명성 및 편견의 중요성을 해결하는 데 중요한 한 걸음을 내디뎠습니다. Azure AI 및 기계 학습 솔루션은 책임 있는 AI에 대한 원칙적 접근 방식을 중심으로 구축되었으며, Microsoft 팀은 지식 마이닝에서 자율 시스템에 이르기까지 다양한 주제를 다루는 클래스 및 사용자 지정 학습 경로를 통해 기술을 제공합니다.</p>
+
+
+  <h2>빠른 업무에 맞게 애플리케이션 개발 현대화</h2>
+
+
+  <p>오늘 우리는&rsquo; 당신이 당신의 임무 시스템을 현대화하고 보안 소프트웨어 개발을 통해 더 큰 민첩성을 달성하는 데 도움이 몇 가지 새로운 기능을 발표. 이는 ATO(Application Authority to Operation) 프로세스를 대폭 가속화하도록 설계된 대규모 DevSecOps(통합 개발, 보안 및 운영) 이니셔티브의 일부이므로 고객은 운영자 및 분석가의 손에 새로운 기능을 신속하게 가져올 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c18d9671-ea1f-4d70-a14b-28b0a7c6c35d.png"><img alt="Infographic for Azure for Enterprise DevSecOps" border="0" height="598" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e9188de5-3b78-4389-9f1f-e061ab4780a5.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>Enterprise DevSecOps&rsquo; were 제공의 세 가지 주요 구성 요소는 다음과 같습니다.</p>
+
+
+  <ol>
+      <li>보안 환경입니다.</li>
+      <li>보안 파이프라인.</li>
+      <li>권한 부여를 위한 증거의 자동화된 생성.</li>
+  </ol>
+
+
+  <p>이 모든 작업은 자동화된 제어, 유효성 검사 및 지속적인 모니터링이 기본 제공되어 있습니다. 이러한 기능을 통해 고객은 ATO 타임라인을 크게 줄이고 새로운 임무 시스템 제공을 가속화할 수 있습니다.</p>
+
+
+  <p>규격 앱 개발을 위한 보안 환경을 만들기 위한 솔루션의 예로, 오늘날 Azure&rsquo;용 DoD 클라우드 IaC 환경 개발에서 DISA 클라우드 컴퓨팅 프로그램 Office(CCPO)를 지원하는 CRADA(공동 연구 개발 계약)를 발표했습니다. DoD 클라우드 채택을 가속화하기 위해 Azure에서 표준 환경을 빌드하는 코드 템플릿으로서의 인프라 세트입니다. 이 솔루션은 EMASS에서 DISA 위험 관리 경영진(RME)의 권한 부여 및 일반적인 제어 상속과 함께 제공되는 미리 구성된 사전 인증된 PaaS(Platform as a Service) 환경을 제공하여 AO(권한 부여 관리)와 함께 애플리케이션 평가 및 권한 부여를 신속하게 수행합니다.</p>
+
+
+  <p>Azure용 DoD 클라우드 IaC 환경은 실시간 연속 모니터링 및 규정 준수를 제공하고 모든 영향 수준 및 데이터 분류에서 아키텍처 표준화를 지원하면서 배포 타임라인을 30주에서 2시간으로 줄일 것으로 예상됩니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><em>&ldquo;네트워크, ID 및 운영 체제에 대해 걱정하지 않고, Azure용 Department of Defense Cloud Infrastructure as Code Environment를 사용하면 Sustainment Management System 팀이 애플리케이션에 집중하고 파트너&rsquo; 에게 기능을 제공할 수 있습니다.&rdquo; </em>- Eric R. Mixon, 컴퓨터 과학자, 미국 육군 엔지니어 연구 개발 센터(ERDC), 건설 공학 연구소(CERL)</p>
+
+  </blockquote>
+
+
+  <p>이를 통해 정부는&rsquo; 공급망을 보호하고 방어 산업 기반(DIB) 기업이 최근 DFA 업데이트 및 CMMC(사이버 보안 완성도 모델) 인증 요구 사항을 준수하도록 환경을 강화할 수 있습니다. 자세한 내용은 <a href="https://www.meetup.com/DCAzureGov/events/276011156/" target="_blank">3월 31일에 Azure Government DC 사용자 커뮤니티 가상 모임에</a> 참여하세요.</p>
+
+
+  <p>&rsquo;또한 강력한 보안 권장 사항에 따라 Azure 서비스를 보호할 수 있도록 Azure Blueprints의 기능을 빌드합니다. 최근에 안전하고 규정을 준수하는 Azure 환경을 빌드하는 데 도움이 되는 일련의 기준 인프라 패턴을 제공하는 새로운 샘플 청사진인 Azure <a href="https://docs.microsoft.com/en-us/azure/governance/blueprints/samples/azure-security-benchmark-foundation/" target="_blank">Security Benchmark Foundation</a>을 출시했습니다. 이 청사진은 Azure Security Center, Network Watcher, Azure Firewall, Azure Bastion 및 Azure DDoS Protection을 포함하여 안전하고 모니터링되는 엔터프라이즈 지원 기반을 제공하는 여러 Azure 서비스를 배포합니다.</p>
+
+
+  <p>DISA STIG(보안 기술 구현 가이드) 규정 준수를 유지해야 하는 조직의 경우 Azure는 클라우드 속도로 자동화 및 규정 준수 대시보드 기능을 제공하고, 규정 준수 유지 관리와 관련된 가장 많은 비용을 절감할 수 있도록 고객을 확장&mdash;합니다. <a href="https://aka.ms/AAakti2" target="_blank">STIG Automation GitHub 리포지토리</a>에서 사용할 수 있는 STIG 자동화 및 규정 준수 보고를 제공하기 위해 자사 Azure 도구를 사용하여 샘플 솔루션을 만들었습니다.</p>
+
+
+  <h2>국가 안보의 사명 제공</h2>
+
+
+  <p>Microsoft는 40년 이상 연방 정부의 헌신적인 기술 파트너였습니다. 현재 육군, 해군, 해병대 및 공군은 모두 업무상 중요한 작업에 Azure Government를 사용하고 있습니다. 우리는 모든 데이터 분류에서 임무 요구 사항을 지원하고 미국에서&rsquo; 가장 복잡한 과제를 해결하기 위해 새로운 Azure 기능의 신속한 제공에 계속 투자하고 있습니다.</p>

@@ -1,0 +1,83 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5c8208c00526848a247542cd7586f3673c17142d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139903373"
+Slug: announcing-the-preview-of-azure-shared-disks-for-clustered-applications
+Title: 클러스터형 애플리케이션에 대한 Azure 공유 디스크 미리 보기 발표
+Summary: 이 Azure 전용 기능을 사용하면 고객이 장애 조치(failover) 및 고가용성을 위해 잘 알려진 배포 패턴을 손상시키지 않고 가장 많은 IO 집약적 워크로드를 실행할 수 있습니다.
+Content: >-
+  <div style="background:#eee;border:1px solid #ccc;padding:5px 10px;"><strong>2020년 7월 17일에 업데이트</strong>됨: 이제 Azure 공유 디스크를 일반 공급합니다. 자세한 내용은 블로그 <a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-shared-disks-and-new-azure-disk-storage-enhancements/" target="_blank">postAnnouncing Azure Shared Disks의 일반 공급 및 새로운 Azure Disk Storage 향상을</a> 참조하세요.&nbsp;</div>
+
+
+  <p>오늘 업계 최초의 공유 클라우드 블록 스토리지인 Azure Shared Disks <b>&rsquo;</b> 의 제한된 미리 보기를 발표합니다. Azure Shared Disks를 사용하면 가장 까다로운 엔터프라이즈 애플리케이션을 포함하여 클라우드로 마이그레이션하는 블록 스토리지 워크로드의 다음 물결이 가능하며, 현재 SAN(Storage Area Networks)에서 온-프레미스로 실행되고 있습니다. 여기에는 클러스터형 데이터베이스, 병렬 파일 시스템, 영구 컨테이너 및 기계 학습 애플리케이션이 포함됩니다. 이 고유한 기능을 통해 고객은 빠른 장애 조치(failover) 및 고가용성을 위해 잘 알려진 배포 패턴을 손상시키지 않고 대기 시간에 민감한 워크로드를 실행할 수 있습니다. 여기에는 GFS2(<a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/global_file_system_2/ch-overview-gfs2" target="_blank">Global File System 2</a>)와 같은 Windows 또는 Linux 기반 클러스터형 파일 시스템을 위해 빌드된 애플리케이션이 포함됩니다.</p>
+
+
+  <p>이제 고객은 Azure 공유 디스크를 사용하여 Windows Server 2008(<a href="https://www.microsoft.com/cloud-platform/windows-server-2008">지원 종료</a>)을 포함하여 Windows Server에서 실행되는 클러스터된 환경을 Azure로 유연하게 마이그레이션할 수 있습니다. 이 기능은 <a href="https://docs.microsoft.com/en-us/sql/sql-server/failover-clusters/windows/always-on-failover-cluster-instances-sql-server?view=sql-server-ver15#Overview" target="_blank">SQL Server FCI(장애 조치(failover) 클러스터 인스턴스)</a>, <a href="https://docs.microsoft.com/en-us/windows-server/failover-clustering/sofs-overview" target="_blank">SoFS(스케일 아웃 파일 서버)</a>, <a href="https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-plan-high-availability" target="_blank">RDS(원격 데스크톱 서버)</a> 및 Windows Server에서 실행되는 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/sap-high-availability-guide-wsfc-shared-disk" target="_blank">SAP ASCS/SCS</a>를 지원하도록 설계되었습니다.</p>
+
+
+  <p>이 <a href="https://aka.ms/AzureSharedDiskPreviewSignUp" target="_blank">양식을</a> 작성하여 액세스를 시작하고 요청하는 것이 좋습니다.</p>
+
+
+  <h2>Azure 공유 디스크 활용</h2>
+
+
+  <p>Azure 공유 디스크는 클러스터형 환경에서 현재 실행되는 애플리케이션에 일관된 환경을 제공합니다. 즉, 현재 <a href="https://www.t10.org/members/w_spc3.htm" target="_blank">SCSI PR(영구 예약)</a> 을 활용하는 애플리케이션은 잘 알려진 이 명령 집합을 사용하여 클러스터의 노드를 디스크에 등록할 수 있습니다. 그러면 애플리케이션에서 하나 이상의 노드에 대해 지원되는 다양한 액세스 모드 중에 선택하여 디스크를 읽거나 쓸 수 있습니다. 이러한 애플리케이션은 가용성이 높은 구성으로 배포할 수 있으며, Azure 디스크 내구성을 활용할 수도 있습니다.</p>
+
+
+  <p>아래 다이어그램에서는 한 노드에서 다른 노드로 장애 조치(failover)를 오케스트레이션하는 샘플 2노드 클러스터형 데이터베이스 애플리케이션을 보여 줍니다.<br>
+
+  &nbsp;&nbsp; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3cbaf477-16c9-40c2-80a4-f985f85d7058.png"><img alt="2-node failover cluster" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c75bf54-5409-4ebf-b3c0-83b4f8b7cd14.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="다이어그램" width="907"></a><br>
+
+  흐름은 다음과 같습니다.</p>
+
+
+  <ol>
+      <li>Azure VM 1과&nbsp; Azure VM 2 모두에서 실행되는 클러스터형 애플리케이션은 디스크를 읽거나 쓰려는 의도를 등록합니다.</li>
+      <li>그런 다음 Azure VM 1의 애플리케이션 인스턴스는 단독 예약을 사용하여 디스크에 씁니다.</li>
+      <li>이 예약은 Azure Disk에 적용되며 데이터베이스는 이제 디스크에만 쓸 수 있습니다. Azure VM 2에 있는 애플리케이션 인스턴스의 모든 쓰기는 성공하지 않습니다.</li>
+      <li>Azure VM 1의 애플리케이션 인스턴스가 다운되면 이제 Azure VM 2의 인스턴스가 데이터베이스 장애 조치(failover)를 시작하고 디스크를 인수할 수 있습니다.</li>
+      <li>이 예약은 이제 Azure Disk에 적용되며 더 이상 Azure VM 1의 애플리케이션에서 쓰기를 허용하지 않습니다. 이제 Azure VM 2의 애플리케이션에서 쓰기만 허용합니다.</li>
+      <li>클러스터형 애플리케이션은 데이터베이스 장애 조치(failover)를 완료하고 Azure VM 2의 요청을 처리할 수 있습니다.</li>
+  </ol>
+
+
+  <p>아래 다이어그램에서는 병렬 작업(예: Machine Learning 모델 학습)을 실행하기 위해 디스크에서 데이터를 읽는 여러 노드로 구성된 또 다른 일반적인 워크로드를 보여 줍니다.<br>
+
+  &nbsp;&nbsp; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0e465e7-1d9d-400d-be5f-6d61e1f55dac.png"><img alt="n-node cluster with multiple readers" border="0" height="760" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5e54ca2a-6f17-4a4a-833a-1646cb98caef.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="다이어그램" width="1024"></a><br>
+
+  흐름은 다음과 같습니다.</p>
+
+
+  <ol>
+      <li>애플리케이션은 디스크에 등록된 모든 Virtual Machines를 등록합니다.</li>
+      <li>그런 다음 Azure VM 1의 애플리케이션 인스턴스는 다른 Virtual Machines에서 읽기를 여는 동안 단독 예약을 사용하여 디스크에 씁니다.</li>
+      <li>이 예약은 Azure Disk에 적용됩니다.</li>
+      <li>이제 클러스터의 모든 노드에서 디스크의 데이터를 읽을 수 있습니다. 하나의 노드만 클러스터의 모든 노드를 대신하여 디스크에 결과를 다시 씁니다.</li>
+  </ol>
+
+
+  <h2>디스크 유형, 크기 및 가격 책정</h2>
+
+
+  <p>Azure 공유 디스크는 Premium SSD에서 사용할 수 있으며 P15(예: 256GB)를 포함하여 디스크 크기를 지원합니다. Azure Ultra Disk에 대한 지원은 곧 제공될 예정입니다. Azure Shared Disks는 데이터 디스크로만 사용하도록 설정할 수 있습니다(OS 디스크는 아님). Azure 공유 디스크(Premium SSD)에 대한 각 추가 탑재는 디스크 크기에 따라 요금이 청구됩니다. 제한된 미리 보기 가격 책정에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/managed-disks/" target="_blank">Azure Disks 가격 책정 페이지를</a> 참조하세요.</p>
+
+
+  <h2>Azure Shared Disks 및 Azure Files</h2>
+
+
+  <p>Azure Shared Disks는 여러 가상 머신에서 활용할 수 있는 블록 스토리지에 대한 공유 액세스를 제공합니다. 노드 간 통신을 위해 <a href="https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview" target="_blank">Windows WSFC(서버 장애 조치(failover) 클러스터)</a>, <a href="https://wiki.clusterlabs.org/wiki/Pacemaker" target="_blank">Pacemaker</a> 또는 <a href="https://corosync.github.io/corosync/">Corosync</a>와 같은 공통 Windows 및 Linux 기반 클러스터 관리자를 사용하고 쓰기 잠금을 사용하도록 설정해야 합니다. SMB(서버 메시지 블록) 또는 NFS(네트워크 파일 시스템) 프로토콜을 사용하여 액세스할 수 있는 Azure에서 완전히 관리되는 파일 서비스를 찾고 있는 경우 <a href="https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-premium-fileshare" target="_blank">Azure Premium Files</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-quickstart-set-up-account-create-volumes?tabs=azure-portal" target="_blank">Azure NetApp Files</a>를 확인하세요.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>Azure Resource Manager 템플릿을 사용하여 Azure 공유 디스크를 만들 수 있습니다. 미리 보기에서 Azure 공유 디스크를 시작하고 사용하는 방법에 대한 자세한 내용은 <a href="https://aka.ms/azureshareddiskdocs" target="_blank">설명서 페이지를</a> 참조하세요. 지역 가용성 및 Ultra Disk 가용성에 대한 업데이트는 <a href="https://aka.ms/azurediskfaq" target="_blank">Azure Disks FAQ</a>를 참조하세요. 다음은 Azure 공유 디스크를 다루는 Microsoft Ignite 2019의 Mark Russinovich <a href="https://myignite.techcommunity.microsoft.com/sessions/82058" target="_blank">비디오</a> 입니다.</p>
+
+
+  <p>앞으로 몇 주 안에 포털 및 SDK 지원을 사용하도록 설정할 예정입니다. Azure Backup 및&nbsp; Azure Site Recovery에 대한 지원은 현재 사용할 수 없습니다. 모든 디스크 작업에 대한 자세한 지침은 <a href="https://aka.ms/azuredisksdocs" target="_blank">Managed Disks 설명서를</a> 참조하세요.</p>
+
+
+  <p>미리 보기에 참여하려는 경우 이제 <a href="https://aka.ms/AzureSharedDiskPreviewSignUp" target="_blank">액세스를 요청하여</a> 시작할 수 있습니다.</p>

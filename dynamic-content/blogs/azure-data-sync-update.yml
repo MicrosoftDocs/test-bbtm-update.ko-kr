@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a3f1fcaea916966a076368ad332fbcd89e74296f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898447"
+Slug: azure-data-sync-update
+Title: Azure 데이터 동기화 업데이트
+Summary: Azure SQL 데이터 동기화 사용자는 여러 Azure SQL 데이터베이스 및/또는 온-프레미스 SQL 데이터베이스 간에 양방향으로 데이터를 쉽게 동기화할 수 있습니다. 이 서비스는 현재 공개 미리 보기로 제공되며...
+Content: >-
+  <p>Azure SQL 데이터 동기화 사용자는 여러 Azure SQL Database 및/또는 온-프레미스 SQL Database 간에 양방향으로 데이터를 쉽게 동기화할 수 있습니다. 이 서비스는 현재 공개 미리 보기로 제공되며 이전 Azure Portal에서만 사용할 수 있습니다. 현재 서비스를 개선하고 GA(일반 공급)로 전환하기 위해 노력하고 있습니다. 이 블로그에서는 Azure 데이터 동기화 현재 로드맵을 공유하겠습니다.</p>
+
+
+  <p>Azure 데이터 동기화 향후 몇 개월 내에 <a href="https://portal.azure.com/" target="_blank">새 Azure Portal</a>에서 사용할 수 있습니다. PowerShell 및 REST API 지원, 보안 및 개인 정보 보호 개선, 향상된 모니터링 및 문제 해결을 포함하여 서비스에 대한 몇 가지 개선 사항이 제공됩니다.</p>
+
+
+  <h2>PowerShell 프로그래밍 기능 및 REST API</h2>
+
+
+  <p>이전에 데이터 동기화 동기화 그룹을 만들고 변경하려면 UI를 통해 수동으로 수행해야 했습니다. 이는 특히 많은 멤버 데이터베이스 또는 동기화 그룹이 있는 복잡한 동기화 토폴로지에서 지루하고 시간이 많이 걸리는 프로세스일 수 있습니다. 이제 개발자가 이러한 작업을 더 빠르고 쉽게 만들기 위해 활용할 수 있는 PowerShell 및 REST API를 지원합니다.</p>
+
+
+  <h2>더 나은 보안, 더 나은 개인 정보 보호, 더 나은 복원력</h2>
+
+
+  <p>이전에는 데이터 동기화 공유 데이터베이스를 사용하여 모든 사용자의 동기화 메타데이터 및 작업을 관리했습니다. 이제 각 사용자에게 전용 동기화 데이터베이스가 있습니다. 동기화 데이터베이스는 동기화 그룹과 동일한 지역에 있는 고객 소유 Azure SQL Database. 동일한 지역의 많은 동기화 그룹에 하나의 동기화 데이터베이스를 사용할 수 있습니다. 공유 동기화 데이터베이스를 고객 소유 동기화 데이터베이스로 바꿔 더 나은 개인 정보 보호 및 보안을 제공합니다. 또한 필요에 따라 동기화 데이터베이스의 성능 계층을 늘리거나 줄일 수 있는 유연성을 제공합니다.</p>
+
+
+  <h2>향상된 모니터링 및 문제 해결</h2>
+
+
+  <p>모니터링 및 문제 해결에 몇 가지 주요 개선 사항이 있습니다. 이제 사용자는 PowerShell 및 REST API를 사용하여 프로그래밍 방식으로 동기화 상태를 모니터링할 수 있습니다. 또한&rsquo; 몇 가지 오류 메시지가 개선되어 보다 명확하고 실행 가능합니다.</p>
+
+
+  <h2>더 많은 지역의 가용성</h2>
+
+
+  <p>이전에는 데이터 동기화 <a href="https://azure.microsoft.com/en-us/regions/services/">제한된 Azure 지역에서</a>만 사용할 수 있었습니다. 이제 대부분의 지역에서 서비스를 사용할 수 있습니다. Azure 중국, 독일 및 정부 지역에 대한 지원도 곧 제공됩니다.</p>
+
+
+  <p>기존 데이터 동기화 고객을 사용할 수 있게 되면 새 Azure Portal로 마이그레이션합니다. 온-프레미스 데이터베이스에서 데이터 동기화 사용하는 경우 마이그레이션을 완료하려면 새 동기화 에이전트를 다운로드하고 구성해야 합니다. 자세한 마이그레이션 지침은 마이그레이션 시간에 더 가깝게 제공됩니다.</p>
+
+
+  <p>데이터 동기화 서비스는 GA까지 무료로 유지됩니다. 유일한 새 비용은 모든 서비스 계층에 있을 수 있는 동기화 데이터베이스에 대한 것입니다. 여러 지역에서 데이터 동기화 사용하는 경우 각 지역에 대해 하나의 동기화 데이터베이스가 필요합니다.</p>
+
+
+  <p>Azure 데이터 동기화 서비스에 대한 <a href="https://feedback.azure.com/forums/217535-sql-data-sync" target="_blank">피드백</a>이 있는 경우 Wed&rsquo;는 여러분의 의견을 환영합니다. Azure 데이터 동기화 최신 업데이트를 받으려면 <a href="https://aka.ms/sqladvisors" target="_blank">SQL Advisor Yammer 그룹에</a> 가입하거나 Twitter에서 팔로우 <a href="https://twitter.com/AzureSQLDB" target="_blank">@AzureSQLDB</a> 하세요.</p>

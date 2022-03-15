@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 98a0a08ebd2b92a077e8685646d9e6b27b774256
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898761"
+Slug: azure-container-service-now-and-the-future
+Title: 'Azure Container Service: 현재 및 미래'
+Summary: Azure Container Service는 Docker 및 Mesosphere와의 작업을 기반으로 컨테이너화된 애플리케이션을 배포, 오케스트레이션 및 관리할 수 있는 호스트 머신의 확장 가능한 클러스터를 만들고 관리합니다.
+Content: >-
+  <p>오늘 AzureCon에서는 Azure에서 컨테이너화된 애플리케이션에 대한 지원의 다음 단계를 발표했습니다. Azure Container Service는 Docker 및 Mesosphere와의 작업을 기반으로 컨테이너화된 애플리케이션을 배포, 오케스트레이션 및 관리할 수 있는 호스트 머신의 확장 가능한 클러스터를 만들고 관리합니다.</p>
+
+
+  <h2>우리는 오늘 무엇을 발표했는가?</h2>
+
+
+  <p>오늘 두 가지를 발표했습니다. 첫째, <a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-authoring-templates/">ARM(Azure Resource Manager)용 Azure</a> Container Service 리소스 공급자를 제공하고, 둘째, Azure 빠른 시작 템플릿 형식으로 이 서비스의 초기 프로토타입 구현을 제공했습니다. &rsquo;먼저 Azure Container Service 공지 사항을 살펴보겠습니다.</p>
+
+
+  <p>ARM을 활용하여 Azure Container Service를 사용하면 Docker, Apache Mesos, Marathon 및 Docker Swarm으로 미리 구성된 호스트 클러스터를 쉽게 만들고 관리할 수 있습니다. 이 작업은 Azure&#39;하이퍼스케일 및 엔터프라이즈급 클라우드를 <a href="https://mesos.apache.org/documentation/latest/powered-by-mesos/">입증된 오픈 소스 기술과</a> 결합하여 컨테이너 앱을 빌드하는 모든 팀이 필요로 하는 컨테이너 배포, 오케스트레이션 및 관리 서비스의 토대를 제공합니다.</p>
+
+
+  <p>컨테이너 애플리케이션 관리에 대한 이 개방형 접근 방식은 선호하는 기술을 선택하고 Azure Container Service를 기반으로 계층화할 수 있습니다. 또한 서비스의 모든 수준에서 커뮤니티 정의 API를 지원하여 개발자 워크스테이션, 온-프레미스 프라이빗 클라우드 및 Azure로 코드의 이식성을 유지할 수 있습니다. Azure Container Service는 Azure 인프라의 생성 및 관리를 간소화하는 반면, Docker는 애플리케이션 코드가 Docker가 지원되는 모든 환경에 이식 가능한 상태로 유지되도록 합니다.</p>
+
+
+  <h2>당신은 오늘 무엇을 시도 할 수 있습니까?</h2>
+
+
+  <p>여러분의 의견을 기다리고 있습니다. 이를 위해 릴리스의 &ldquo;오픈 소스 원칙을 조기에 채택하기로 결정했습니다.&rdquo; <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/mesos-swarm-marathon">현재 Azure 빠른</a> 시작 프로젝트에서 Docker 지원 Apache Mesos 클러스터를 배포할 수 있습니다(아직 Azure 계정이&#39;없는 경우 <a href="https://azure.microsoft.com/en-us/pricing/free-trial/?WT.mc_id=AA4C1C935">무료 평가판</a> 은 몇 번의 클릭으로 진행됩니다). 이 Azure 빠른 시작 템플릿은 올해 말에 릴리스될 최종 Azure Container Service의 기초 역할을 하므로 사용할 수 있기 전에 Azure Container Service 환경의 미리 보기를 제공합니다.</p>
+
+
+  <p>이 템플릿을 배포하면 아래 그림과 같은 아키텍처가 프로비전됩니다. 이 완벽하게 작동하는 Mesos 클러스터를 사용하면 채택된 API&rsquo;를 준수하는 모든 도구를 사용하여 Docker 기반 애플리케이션을 빌드하고 배포할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8db2db15-49b2-48af-a042-60867ca5a517.png"><img alt="Mesos cluster" border="0" height="241" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b42915a4-c362-4691-9263-96b6659121d5.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="Mesos 클러스터" width="583"></a></p>
+
+
+  <p>Docker를 접하는 경우 Mark Russinovichs&rsquo; 블로그 게시물, <a href="https://azure.microsoft.com/en-us/blog/containers-docker-windows-and-trends/">Containers: Docker, Windows 및 Trends</a>를 읽어보세요. 재료에 손을 코리 샌더스&#39; <a href="https://channel9.msdn.com/Events/Microsoft-Azure/AzureCon-2015/ACON311">Docker에 대한 소개</a> 와 내 <a href="https://channel9.msdn.com/Events/Microsoft-Azure/AzureCon-2015/ACON203">깊은 다이빙</a>을 살펴. 이 세션에서는 Docker 설치부터 컨테이너 개발자 워크플로, 전체 컨테이너화된 애플리케이션의 배포/크기 조정에 이르기까지 모든 것을 다룹니다. Azure에서 Docker에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-vms-containers/">Azure 설명서 사이트를</a> 확인하세요. 앞으로 몇 주 및 몇 달 안에 Azure Container Service에 대한 자세한 내용을 블로깅할 예정입니다.</p>
+
+
+  <h2>Azure Container Service 제목은 어디에 있나요?</h2>
+
+
+  <p>현재 사용할 수 있는 템플릿은 Azure Container Service의 작동하는 프로토타입입니다. 결과 인프라에서 워크로드를 배포하고 실행할 수 있지만 더 많은 기능이 계획되어 있습니다. Azure Container Service의 첫 번째 목표는 클러스터 만들기 및 구성을 간소화하는 것입니다. 이 클러스터의 기본 구성에는 코드 이식성을 위한 Docker 및 Docker Swarm과 Marathon, Chronos 및 Apache Mesos가 포함되어 이러한 애플리케이션을 수천, 심지어 수만 개의 컨테이너로 확장할 수 있습니다.</p>
+
+
+  <p>ARM용 Azure Container Service 리소스 공급자를 통해 사용자는 표준 ARM API를 사용하여 결과 클러스터를 정의하고 관리할 수 있습니다. 현재 이 구성에는 관련 기술에 대한 심층적인 이해는 물론 수천 줄의 코드가 필요합니다. 리소스 공급자는 이러한 복잡성의 대부분을 추상화합니다. 이러한 수천 줄은 기본 구성에 대해 수십 줄로 줄어듭니다. 이 간소화는 이러한 복잡한 클러스터를 배포하고 관리할 때 구성 오류가 더 적다는 것을 의미합니다.</p>
+
+
+  <p>또한 이 새로운 리소스 공급자를 사용하면 리소스의 통합 태그 지정, RBAC(액세스 제어) Role-Based 및 Azure 관리 포털과 같은 Azure 기능을 활용할 수 있습니다. 그 결과 오케스트레이션 계층에서 코드 이식성을 유지하면서 Azure의 엔터프라이즈급 기능을 활용할 수 있습니다.</p>
+
+
+  <p>진정으로 확장 가능한 애플리케이션에서는 하드웨어와 소프트웨어 구성 요소의 크기를 조정해야 합니다. 이러한 이유로 또 다른 목표는 Azures&rsquo;의 새 VMSS(Virtual Machine Scale Sets)를 활용하는 것입니다. VMSS는 단일 API 호출을 통해 동일한 VM 그룹에 대한 만들기/삭제/업데이트와 같은 작업을 사용하도록 설정하는 예정된 서비스입니다. Azure Container Service의 경우 동일한 VM은 컨테이너가 호스트되는 에이전트입니다. VMSS의 모든 VM은 동일한 구성을 갖기 때문에 VMSS는 VM의 신속한 자동 크기 조정을 지원합니다.</p>
+
+
+  <p>하지만 Windows 서버 컨테이너는 어떨까요? 명백한 설명의 위험에 우리는 완전히 서비스에 Windows 서버 컨테이너를 통합 할 계획이다. 핵심 조각은 <a href="https://blog.docker.com/2015/08/tp-docker-engine-windows-server-2016/">Windows 서버 TP3 Docker 엔진에 대 한 지원</a> 하 고, 8 월에 발표 된 대로 Mesosphere와 마이크로소프트 사이 공동 노력 <a href="https://mesosphere.com/blog/2015/08/20/mesos-everywhere-apache-mesos-for-windows-server/">Apache Mesos Windows 서버에 포트</a> 합니다. 이 작업을 통해 Windows Server Container 지원을 Azure Container Service에 도입하여 요구 사항에 가장 적합한 운영 체제에서 컨테이너를 관리할 수 있습니다.</p>
+
+
+  <h2>그것을 시도하고 당신이 어떻게 생각하는지 알려주세요</h2>
+
+
+  <p>위에서 설명한 대로 Marathon, Mesos, Docker, Compose, Swarm 등으로 미리 구성된 클러스터를 이미 배포할 수 있습니다. <a href="https://feedback.azure.com/forums/34192--general-feedback">Azure Container Service에서 보려는 내용을</a> 알려주세요.</p>

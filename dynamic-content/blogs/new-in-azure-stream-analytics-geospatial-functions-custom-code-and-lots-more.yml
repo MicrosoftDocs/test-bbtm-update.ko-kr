@@ -1,0 +1,97 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 64e176d3f2646df9cb7bffabeecb678de72384bd
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898304"
+Slug: new-in-azure-stream-analytics-geospatial-functions-custom-code-and-lots-more
+Title: 'Azure Stream Analytics의 새로운 기능: 지리 공간적 함수, 사용자 지정 코드 등!'
+Summary: 오늘 Azure Stream Analytics에서 몇 가지 강력한 기능의 출시를 발표하게 되어 기쁩니다. 여기에는 지리 공간적 함수에 대한 기본 지원, JavaScript를 사용한 사용자 지정 코드, Power BI 있는 짧은 대기 시간 대시보드 및 Visual Studio 통합 및 작업 진단 로그 미리 보기가 포함됩니다. 또한 오늘날에는 더 이상 수신 데이터 제한이 없습니다.
+Content: >-
+  <p>오늘 <a href="https://azure.microsoft.com/en-us/services/stream-analytics/">Azure Stream Analytics</a>에서 몇 가지 강력한 기능의 출시를 발표하게 되어 기쁩니다. 여기에는 지리 공간적 함수에 대한 기본 지원, JavaScript를 사용한 사용자 지정 코드, Power BI 있는 짧은 대기 시간 대시보드 및 Visual Studio 통합 및 작업 진단 로그 미리 보기가 포함됩니다. 또한 오늘날에는 더 이상 수신 데이터 제한이 없습니다.</p>
+
+
+  <h2>지리 공간적 함수에 대한 네이티브 지원</h2>
+
+
+  <p>오늘부터 고객은 Azure Stream Analytics를 사용하여 커넥티드 카, 차량 관리 및 모바일 자산 추적과 같은 시나리오에 대한 솔루션을 쉽게 빌드할 수 있습니다. 이제 개발자는 스트림 처리 논리에서 강력한 기본 제공 <a href="https://msdn.microsoft.com/library/mt778980(Azure.100).aspx">지리 공간적 기능을</a> 활용하여 지리적 영역을 정의하고 들어오는 지리 공간적 데이터를 억제, 근접성, 겹침 및 경고 생성 또는 필요한 워크플로 등을 쉽게 시작할 수 있습니다. 이러한 지리 공간적 기능은 GeoJSON 사양과 일치합니다.</p>
+
+
+  <p>우리는 NASCAR을 포함하여 미리 보기에서 이러한 지리 공간적 기능을 사용하는 100명 이상의 고객이 있었습니다. 1947년에 설립된 NASCAR는 최고의 모터스포츠 조직이 되었습니다. 현재 NASCAR은 미국 30개 이상의 주, 캐나다, 멕시코 및 유럽에서 1,200개 이상의 인종을 제재하고 있습니다. NASCAR은 Azure Stream Analytics에서 지리 공간적 기능을 사용하는 선구자였습니다.</p>
+
+
+  <blockquote>
+
+  <p>&ldquo;우리는 경주 도중 그리고 후에 경주 원격 분석을 분석하기 위해 Azure Stream Analytics와 실시간 지리 공간적 분석을 사용합니다,&rdquo; 기술 개발의 NASCARs&rsquo; 전무 이사, Betsy Grider는 말했습니다</p>
+
+  </blockquote>
+
+
+  <h2>JavaScript 사용자 정의 함수를 사용하는 사용자 지정 코드</h2>
+
+
+  <p>Azure Stream Analytics를 통해 고객은 이제 JavaScript의 기능을 SQL 단순성과 보급성을 결합할 수 있습니다. 지금까지 Azure Stream Analytics를 통해 개발자는 언어와 같은 매우 간단한 SQL 사용하여 실시간 쿼리 논리를 표현할 수 있습니다. 즉, 고객은 고급 시나리오를 구현하기 위해 보다 표현적인 사용자 지정 코드를 지원하도록 요청했습니다. 이제 더 풍부한 사용자 지정 코드 지원을 제공하기 위해 Azure Stream Analytics에서 JavaScript를 사용하여 <a href="https://docs.microsoft.com/azure/stream-analytics/stream-analytics-javascript-user-defined-functions">사용자 정의 함수</a> 에 대한 지원을 발표하게 되어 기쁩니다. 이 새로운 기능을 통해 고객은 이제 JavaScript에서 사용자 지정 코드를 작성하고 실시간 스트림 처리 쿼리의 일부로 쉽게 호출할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/538778d4-1d91-4547-be59-f81227b7cf80.png"><img alt="Java Script Image 1" border="0" height="256" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8028fb3-b0d9-4c23-9cd6-7471e8597a49.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Java 스크립트 이미지 1" width="640"></a></p>
+
+
+  <p align="center"><em>Stream Analytics 쿼리에서 JavaScript UDF 호출</em></p>
+
+
+  <h2 align="left">Azure Stream Analytics용 Visual Studio 도구</h2>
+
+
+  <p align="left">Stream Analytics 작업 작성, 테스트 및 디버깅에서 엔드 투 엔드 개발자 생산성을 최대화하기 <a href="https://docs.microsoft.com/azure/stream-analytics/stream-analytics-tools-for-visual-studio">위해 Visual Studio Azure Stream Analytics 도구</a>의 공개 미리 보기를 배포하고 있습니다. 진정한 오프라인 쿼리 빌드 및 테스트 환경을 사용하도록 클라이언트 컴퓨터의 로컬 테스트는 사용할 수 있는 주요 기능 중 하나입니다. 또한 IntelliSense(코드 완성), 구문 강조 표시, 오류 표식 및 소스 제어 통합과 같은 기능은 클래스 개발자 환경에서 최상의 기능을 제공하도록 설계되었습니다.</p>
+
+
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95d0de8a-6630-4c57-9add-6b042f2c9219.png"><img alt="Stream Analytics jobs in Visual Studio" border="0" height="448" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ea5b7d3b-b613-4cab-8ea6-8c832f46e6df.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Visual Studio Stream Analytics 작업" width="640"></a></p>
+
+
+  <p align="center"><em>Visual Studio Stream Analytics 작업</em></p>
+
+
+  <h2 align="left">Power BI 사용하여 짧은 대기 시간 대시보드</h2>
+
+
+  <p align="left">고객 요구를 개선하기&rsquo; 위해 성능 및 대기 시간의 경계를 지속적으로 테스트하기 위해 Power BI 엔지니어링 팀과 긴밀히 협력하여 Azure Stream Analytics를 사용하여 빌드된 솔루션에 대한 대시보드 환경을 개선했습니다. 이제 Azure Stream Analytics 작업이 새 Power BI 스트리밍 데이터 세트로 출력할 수 있습니다. 이렇게 하면 지금까지 가능했던 것보다 훨씬 짧은 대기 시간으로 <a href="https://docs.microsoft.com/azure/stream-analytics/stream-analytics-power-bi-dashboard">풍부한 시각적 개체 및 동적 대시보드를 사용할 </a>수 있습니다.</p>
+
+
+  <p align="left"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/720bc39c-2bc7-40c7-84a5-616c19f424f7.png"><img alt="Dashboards powered from Azure Stream Analytics" border="0" height="377" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/708fb881-a5b8-4afa-b3a6-eaa473ed561f.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Stream Analytics에서 구동되는 대시보드" width="640"></a></p>
+
+
+  <p align="center"><em>Azure Stream Analytics에서 데이터를 스트리밍하여 구동되는 대시보드</em></p>
+
+
+  <h2 align="left">작업 진단 로그</h2>
+
+
+  <p>셀프 서비스 문제 해결 환경을 개선하기 위해 설계된 일련의 지속적인 투자를 기반으로, 오늘 <a href="https://docs.microsoft.com/azure/stream-analytics/stream-analytics-job-diagnostic-logs">Azure Monitoring과</a> Azure Stream Analytics&rsquo; 통합의 미리 보기를 발표합니다. 이를 통해 고객에게 손실, 지연 또는 잘못된 형식의 데이터를 처리하는 체계적인 방법을 제공하는 동시에 효율적인 메커니즘을 통해 잘못된 데이터로 인한 오류를 조사할 수 있습니다.</p>
+
+
+  <p>오류를 발생시키는 실제 데이터에 즉시 액세스하면 고객이 문제를 신속하게 해결할 수 있습니다. 사용자는 데이터에서 오류가 발생할 때 작업의 작동 방식을 제어하고 관련 이벤트 데이터 및 운영 메타데이터(예: Azure Storage 또는 Azure Event Hubs의 발생 시간 및 개수) 이 데이터는 오프라인에서 진단 및 문제 해결에 사용할 수 있습니다. 또한 azure Log Analytics의 풍부한 시각화 및 분석 기능을 사용하여 Azure Storage 라우팅된 데이터를 분석할 수 있습니다.</p>
+
+
+  <p>데이터 처리 오류의 주요 예는 다음과 같습니다. 스키마가 일치하지 않는 경우 데이터 변환 및 직렬화 오류; 호환되지 않는 형식 및 제약 조건(예: allow null, duplicates; 변환 중에 문자열 잘림 및 전체 자릿수 문제</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d642c5be-0f12-4371-ac63-58b5be931ee0.png"><img alt="Link to Diagnostics logs on Azure portal" border="0" height="348" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ba17ce4c-ca72-49f9-b07f-4e2bc00bf250.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Portal에서 진단 로그에 연결" width="500"></a></p>
+
+
+  <p align="center"><em>Azure Portal에서 진단 로그에 연결</em></p>
+
+
+  <h2 align="left">피드백 및 아이디어가 계속 제공될 예정</h2>
+
+
+  <p>Azure Stream Analytics 팀은 사용자 의견을 경청하고 사용자 의견으로 향후 투자를 지시할 수 있도록 최선을 다하고 있습니다. 대화에 참여하고 <a href="https://feedback.azure.com/forums/270577-stream-analytics/filters/top">UserVoice</a>를 통해 음성을 들을 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/pricing/details/stream-analytics/">최신 가격을 검토하려면 가격 책정 페이지를</a> 방문하세요.</p>
+
+
+  <p align="left">&nbsp;</p>
+
+
+  <p align="left">&nbsp;</p>

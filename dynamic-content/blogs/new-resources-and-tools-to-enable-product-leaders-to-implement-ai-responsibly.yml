@@ -1,0 +1,89 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9d219986bf893d6763a8140c3291084550c8e6fa
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902496"
+Slug: new-resources-and-tools-to-enable-product-leaders-to-implement-ai-responsibly
+Title: 제품 리더가 AI를 책임감 있게 구현할 수 있도록 하는 새로운 리소스 및 도구
+Summary: AI가 일상 생활에 더욱 깊숙이 포함됨에 따라, 사람과 사회에 혜택을 주기 위해 AI를 적용하는 방법에 대해 사려 깊고 책임감을 가지는 것은 우리 모두에게 달려 있습니다. 제품 리더를 위한 새로운 지침과 데이터 과학자 및 개발자를 위한 책임 있는 AI 대시보드를 포함하여 이러한 업데이트에 대해 자세히 알아보려면 디지털 이벤트인 책임 있는 AI를 연습에 참여하세요.
+Content: >-
+  <p>AI가 일상 생활에 더욱 깊숙이 포함됨에 따라, 사람과 사회에 혜택을 주기 위해 AI를 적용하는 방법에 대해 사려 깊고 책임감을 가지는 것은 우리 모두에게 달려 있습니다. 책임 있는 AI에 대한 원칙적인 접근 방식은 이 기술이 성숙함에 따라 모든 조직에 필수적입니다. 기술 및 제품 리더가 책임 있는 AI 사례 및 도구를 채택하려고 할 때 조직, 제품 및 시장에 가장 적합한 접근 방식을 식별하는 등 몇 가지 과제가 있습니다.</p>
+
+
+  <p>오늘 Azure 이벤트인 <a href="https://info.microsoft.com/ww-put-responsible-ai-into-practice.html" target="_blank">책임 있는 AI를 실천에</a> 투입하여 Microsoft와 BCG(보스턴 컨설팅 그룹)가 공동 개발한 제품 리더에 대한 지침을 포함하여 이 여정에서 고객을 지원하기 위한 새로운 리소스와 도구를 공유하게 되어 기쁘게 생각합니다. 이러한 지침은 Microsoft&rsquo; 자체 책임 AI 원칙 및 프로세스와는 별개이지만 제품 수명 주기를 통해 책임 있는 AI 개발을 위한 지침을 제공하기 위한 것입니다. 또한 데이터 과학자 및 개발자를 위한 새로운 책임 있는 AI 대시보드를 도입하고 Novartis와 같은 고객이 책임 있는 AI를 어떻게 작동시키는지에 대한 보기를 제공하고 있습니다.</p>
+
+
+  <h2>AI를 책임감 있게 구현하기 위한 제품 리더를 위한 10가지 지침 소개</h2>
+
+
+  <p>대다수의 사람들이 책임 있는 AI의 중요성을 믿고 있지만, 많은 회사들은&rsquo; 원칙과 실질적인 행동 간의 책임 있는 AI 격차&rdquo;라고 &ldquo;하는 것을 어떻게 교차해야 할지 잘 모르고 있습니다. 실제로 많은 기업들이 <a href="https://www.bcg.com/publications/2021/the-four-stages-of-responsible-ai-maturity" target="_blank">책임 있는 AI 완성도를 과대 평가</a>합니다. 이는 원칙을 운영하는 방법에 대한 명확성이 부족하기 때문입니다.</p>
+
+
+  <p>이러한 요구 사항을 해결하기 위해 MICROSOFT는 BCG와 협력하여 <a href="https://aka.ms/RAITenGuidelines" target="_blank">AI Responsiblya</a>&rdquo;&mdash; 새 리소스를 구현하기 위한 제품 리더를 위한 10가지 지침을 개발 &ldquo; 하여 기술 리더가 조직 내에서 책임 있는 AI 시스템을 평가하고 설계하고 유효성을 검사할 때 제품 팀을 안내할 수 있도록 명확하고 실행 가능한 지침을 제공합니다.</p>
+
+
+  <p><em>&ldquo;윤리적 AI 원칙은 필요하지만 충분하지 않습니다. BCG GAMMA의 최고 AI 윤리 책임자 인 Steve Mills는 기업이 AI 제품을 설계하고 구축하는&rdquo; 방법에 실질적인 변화를 만들기 위해 더 나아가야 한다고</em> 말합니다. <em>&ldquo;Microsoft와 협력하여 만든 자산은 제품 리더가 책임 있는 개발로 팀을 안내하고 위험과 위협을 사전에 식별하고 완화할 수 있도록 지원합니다.&rdquo;</em></p>
+
+
+  <p>10가지 지침은 다음 세 단계로 그룹화됩니다.</p>
+
+
+  <ol>
+      <li><strong>평가 및 준비:</strong> 제품&rsquo; 혜택, 기술, 잠재적 위험 및 팀을 평가합니다.</li>
+      <li><strong>디자인, 빌드 및 문서:</strong>&nbsp; 영향, 고유한 고려 사항 및 설명서 사례를 검토&nbsp;합니다.</li>
+      <li><strong>유효성 검사 및 지원:</strong> 테스트 절차 및 지원을 선택하여 제품이 의도한 대로 작동하는지 확인합니다.</li>
+  </ol>
+
+
+  <p>이 새로운 리소스를 통해 산업 전반에 걸쳐 더 많은 기업이 자체 조직 내에서 책임 있는 AI를 수용하기를 기대합니다.</p>
+
+
+  <h2>데이터 과학자 및 개발자를 위한 새로운 책임 있는 AI 대시보드 시작</h2>
+
+
+  <p>AI 시스템 내의 공정성 및 투명성과 같은 윤리적 원칙을 운영하는 것은 AI를 확장하는 데 있어 가장 큰 장애물 중 하나입니다. 따라서 엔지니어링 팀은 책임 있는 AI 기능을 <a href="https://azure.microsoft.com/en-us/services/machine-learning/" target="_blank">Azure Machine Learning</a> 같은 Azure AI 서비스에 도입했습니다. 이러한 기능은 기업이 공정성, 개인 정보 보호, 보안 및 기타 책임 있는 AI 우선 순위로 AI 시스템을 빌드할 수 있도록 설계되었습니다.</p>
+
+
+  <p>&rsquo;오늘날 데이터 과학자와 개발자가 AI 데이터 및 모델을 보다 쉽게 이해하고, 보호하고, 제어할 수 있도록 <a href="https://aka.ms/raidashboardblog" target="_blank">RAI(책임 있는 AI) 대시보드를 도입</a>하게 되어 매우 기쁩니다. 이 대시보드에는 해석 가능성, 오류 분석, 반대 사실 및 캐주얼 추론과 같은 책임 있는 AI 기능 컬렉션이 포함되어 있습니다. 이제 오픈 소스에서 일반 공급되고 Azure Machine Learning 실행되는 <a href="https://aka.ms/ResponsibleAIdashboard" target="_blank">RAI 대시보드</a>는 가장 많이 사용되는 책임 있는 AI 도구를 단일 워크플로 및 시각적 캔버스로 결합하여 오류를 쉽게 식별, 진단 및 완화할 수 있도록 합니다.</p>
+
+
+  <p><strong><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a214fafa-5e27-40a8-a41f-5e5cb3bb1c8f.gif"><img alt="Figure 1: The Responsible AI dashboard" height="684" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a2deb3b-438c-4517-8ab4-7b4fb079d7c7.gif" style="display: inline;" title="그림 1: 책임 있는 AI 대시보드" width="1478"></a></strong></p>
+
+
+  <p><em><strong>그림 1: </strong> 책임 있는 AI 대시보드</em></p>
+
+
+  <h2>책임 있는 AI를 실행</h2>
+
+
+  <p>산업 전반의 조직은 책임 있는 AI 대시보드의 일부인 많은 책임 있는 AI 도구를 포함하여 이미 Azures&rsquo; AI 기능을 사용하여 작업하고 있습니다.</p>
+
+
+  <p>한 가지 예로, 올해 초 <a href="https://www.novartis.com/about/strategy/data-and-digital/artificial-intelligence/our-commitment-ethical-and-responsible-use-ai" target="_blank">AI의 윤리적 사용에 대한 8가지 원칙</a>을 발표한 선도적이고 집중적인 의약품 회사인 Novartis가 있습니다. Novartis는 이미 AI를 동료의 워크플로에 포함시키고 있으며 일상적인 작업에서 AI가 사용되는 가치 체인 전반에 걸쳐 많은 인스턴스가 있습니다. AI가 디지털 전략을 사용하도록 설정하는 데 중요한 역할을 하는 상황에서 Microsofts&rsquo; 책임 있는 AI는 AI 모델을 책임감 있게 빌드하고 사용할 수 있도록 하는 필수 요소입니다.</p>
+
+
+  <p><em>&ldquo;이 AI 대시보드를 통해 팀은 AI 시스템의&rsquo; 정확도와 안정성을 평가하고, AI의 윤리적 사용을 위한 프레임워크에 부합하며, 의도한 컨텍스트와 목적에 적합한지, 그리고 인간 인텔리전스와 가장 잘 통합하는 방법을 확인할&rsquo; 수 있습니다.&rdquo;</em>&mdash; Nimit Jain, 노바티스 데이터 과학 책임자</p>
+
+
+  <p>또 다른 예로 Azure 및 Fairlearn 도구 키트를 사용하여 기계 학습 모델의&rsquo; 전반적인 공정성을 개선하고 편견을 완화하여 입원 환자 복지 및 관리를 개선하는&nbsp; 선도적인 건강 기술 회사인 Philips가 있습니다. 또한 Azure Machine Learning 고객인 스칸디나비아 항공은 사기 감지 단위의 해석성에 의존하여 모델 예측을 이해하고 의심스러운 행동 패턴을 식별하는 방법을 개선합니다.</p>
+
+
+  <h2>디지털 이벤트를 놓쳤나요? 지침 및 도구 다운로드</h2>
+
+
+  <p>우리 모두는 여전히 이 여정을 탐색하고 있지만, 이러한 새로운 리소스는 책임 있는 AI를 구현하기 위한 신중한 조치를 취하는 데 도움이 될 것이라고 믿습니다. 이벤트를 놓친 경우 <a href="https://info.microsoft.com/ww-put-responsible-ai-into-practice.html" target="_blank">기록을 보고 사용 가능한 리소스를 다운로드해야 합니다</a> . Microsoft와 함께 책임 있는 AI를 구현할 수&rsquo; 있습니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <ul>
+      <li><a href="https://info.microsoft.com/ww-put-responsible-ai-into-practice.html" target="_blank">책임 있는 AI를 연습 이벤트에 배치</a></li>
+      <li><a href="https://aka.ms/RAITenGuidelines" target="_blank">AI를 책임감 있게 구현하기 위한 제품 리더를 위한 10가지 지침</a></li>
+      <li><a href="https://aka.ms/ResponsibleAIdashboard" target="_blank">책임 있는 AI 대시보드</a></li>
+      <li><a href="https://aka.ms/RAIandInnovation" target="_blank">리서치에서 연습 블로그로 책임 있는 AI 빌드</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/services/machine-learning/responsibleml/" target="_blank">책임 있는 기계 학습</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/overview/ai-platform/" target="_blank">Azure AI</a></li>
+  </ul>

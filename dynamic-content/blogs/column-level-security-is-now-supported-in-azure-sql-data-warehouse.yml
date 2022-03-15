@@ -1,0 +1,49 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a9e8e0a2f1e18a3f5ca0263f8e49a0b200491753
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902622"
+Slug: column-level-security-is-now-supported-in-azure-sql-data-warehouse
+Title: 이제 Azure SQL Data Warehouse에서 Column-Level 보안이 지원됩니다.
+Summary: Column-Level 보안은 이제 Azure SQL Data Warehouse에서 기본적으로 지원됩니다.
+Content: >-
+  <p style="margin: 0in 0in 8pt;">오늘 중요한&rsquo; 데이터에 대한 보안을 관리하기 위한 추가 기능인 Azure SQL Data Warehouse용 CLS(Column-Level Security)를 발표했습니다. Azure SQL Data Warehouse는 페타바이트 단위의 데이터를 빠르고 빠르게 실행하기 위해 조정된 빠르고 유연하며 안전한 클라우드 데이터 웨어하우스입니다.</p>
+
+
+  <p style="margin: 0in 0in 8pt;">데이터를 클라우드로 이동하면 데이터 자산의 보안을 유지하는 것이 고객 및 파트너와의 신뢰를 구축하는 데 중요합니다. CLS가 도입되면 데이터 웨어하우스를 다시 디자인하지 않고도 테이블의 특정 열에 대한 사용자 액세스를 제한하여 중요한 데이터를 볼 수 있는 권한을 조정할 수 있습니다. 이렇게 하면 액세스 제한 논리가 다른 애플리케이션의 데이터에서 벗어나지 않고 데이터베이스 계층 자체에 있으므로 전반적인 보안 구현이 간소화됩니다. CLS를 사용하면 액세스 제어 관리를 위해 열을 필터링하기 위해 뷰를 도입할 필요가 없습니다.</p>
+
+
+  <p style="margin: 0in 0in 8pt;">현재 이 방법을 사용하는 방법에 대한 몇 가지 예는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>금융 서비스 회사는 계정 관리자만 고객 SSN(사회 보장 번호), 전화 번호 및 기타 PII(개인 식별 정보)에 액세스할 수 있도록 허용합니다.</li>
+   <li>의료 공급업체는 청구 부서의 구성원은 이 데이터를 볼 수 없는 반면, 의사와 간호사만 중요한 의료 기록에 액세스할 수 있도록 허용합니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/30741127-11ee-4da8-80d1-79c237cc5214.png"><img alt="CLS-blog" border="0" height="283" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/18fe3553-dc8f-4638-8c5f-c04aafe397a1.png" style="border: 0px currentColor; border-image: none; width: 462px; height: 208px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CLS 블로그" width="600"></a></p>
+
+
+  <p>테이블 열에 대한 액세스는 사용자&#39;실행 컨텍스트 또는 표준 <a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/column-level-security">GRANT</a> T-SQL 문을 사용하는 그룹 멤버 자격에 따라 제어할 수 있습니다. 데이터를 보호하려면 GRANT 문을 통해 테이블 열에 대한 보안 정책을 정의하기만 하면 됩니다. 예를 들어 고객 테이블의 PII 데이터에 대한 액세스를 제한하려는 경우 ContractEmp 역할에 특정 열에 대한 SELECT 권한을 부여하기만 하면 됩니다.</p>
+
+
+  <pre>
+
+  GRANT SELECT ON dbo.Customers (CustomerId, FirstName, LastName) TO ContractEmp;</pre>
+
+
+  <p>이 기능은 이제 추가 비용 없이 모든 Azure 지역에서 사용할 수 있습니다. Azure SQL Data Warehouse는 보안, 규정 준수, 개인 정보 보호 및 감사 분야에서 계속해서 선두를 달리고 있습니다. 자세한 내용은 <a href="https://www.microsoft.com/en-us/trustcenter">Microsoft 보안 센터의</a> <a href="https://aka.ms/gdprsqlwhitepaper">이 백서</a>에서 참조하세요.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+   <li>Azure SQL Data Warehouse의 열 수준 보안에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/column-level-security">온라인 설명서를 참조하세요</a>.</li>
+   <li>기능 요청의 경우 <a href="https://feedback.azure.com/forums/307516-sql-data-warehouse">UserVoice</a>에 투표하세요.</li>
+   <li>오늘 시작하려면 <a href="https://docs.microsoft.com/azure/sql-data-warehouse/create-data-warehouse-portal">Azure SQL Data Warehouse를 만듭니다</a>.</li>
+   <li>최신 Azure SQL Data Warehouse 뉴스 및 기능을 최신 상태로 유지하려면 Twitter<a href="https://twitter.com/AzureSQLDW">@AzureSQLDW</a>에서 팔로우하세요.</li>
+  </ul>
