@@ -1,0 +1,151 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9b15415e27427f07b5e788757d2c22a16f582d68
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901451"
+Slug: app-aware-asr
+Title: 가상 머신뿐만 아니라 애플리케이션에 대한 클라우드 마이그레이션 및 재해 복구
+Summary: Azure Site Recovery는 여러 네이티브 애플리케이션 수준 복제 기술을 사용하고 기본 제공 복제를 제공하는 애플리케이션에 대한 Microsoft의 단일 재해 복구 제품입니다. 단일 및 다중 계층 애플리케이션 일관성, 가까운 연속 복제, 풍부한 자동화를 지원하는 확장 가능한 복구 계획 및 고급 네트워크 관리와 같은 기능을 통해 Azure Site Recovery는 가상 머신 부팅뿐만 아니라 전체 애플리케이션 복구를 보장하는 애플리케이션을 함께 연결하는 복잡한 작업을 수행합니다. 이를 위해 Microsoft는 많은 인기 있는 자사 및 타사 애플리케이션을 테스트 및 인증하고 자세한 Azure Site Recovery 솔루션 지침을 제공합니다.
+Content: >-
+  <p align="left">&#39;CIO가 하루 <em>&quot;동안 멈추고 내일 예기치 않은 재해로 인해 타격을 입으면 어떨까요? 복구 사이트에서 중요한 애플리케이션을 실행하고 사용자가 평소처럼 앱에 연결하고 비즈니스를 수행할 수 있다는 확신을 갖고 있나요?</em>&quot; CIO는 서버 또는 가상 머신을 복구하는 것에 대해 묻지 않을 것이며, 문제는 항상 <strong>애플리케이션</strong> 을 성공적으로 복구하는 것입니다. 그렇다면 많은 클라우드 마이그레이션 및 재해 복구 제품이 서버 부팅을 중지하고 실제 종단 간 애플리케이션 복구를 약속하지 않는 이유는 무엇일까요? 비즈니스 연속성 소유자가 더 잘 자는 데 사용할 수 있는 Azure Site Recovery의 이유는 무엇인가요?</p>
+
+
+  <p align="left">이에 대한 답변을 위해 먼저 애플리케이션이 구성하는 항목을 이해합니다&rsquo;.</p>
+
+
+  <ul>
+   <li>
+   <div align="left">일반적인 엔터프라이즈 애플리케이션은 여러 애플리케이션 계층에 걸쳐 있는 여러 가상 머신으로 구성됩니다.</div>
+   </li>
+   <li>
+   <div align="left">이러한 다양한 애플리케이션 계층은 데이터 정확성에 대한 쓰기 순서 충실도를 요구합니다.</div>
+   </li>
+   <li>
+   <div align="left">애플리케이션은 적절한 작동을 위해 특정 시퀀스에서 가상 머신을 부팅해야 할 수도 있습니다.</div>
+   </li>
+   <li>
+   <div align="left">단일 계층에는 중복 및 부하 분산을 위해 둘 이상의 가상 머신이 있을 수 있습니다.</div>
+   </li>
+   <li>
+   <div align="left">애플리케이션에는 DHCP를 사용하거나 고정 IP 주소가 필요한 IP 주소 요구 사항이 다를 수 있습니다.</div>
+   </li>
+   <li>
+   <div align="left">최종 사용자 인터넷 액세스를 위해 공용 IP 주소 또는 DNS 라우팅이 필요한 가상 머신은 거의 없습니다.</div>
+   </li>
+   <li>
+   <div align="left">일부 가상 머신은 특정 포트를 열어야 하거나 보안 인증서 바인딩이 필요할 수 있습니다.</div>
+   </li>
+   <li>
+   <div align="left">애플리케이션은 Active Directory와 같은 ID 서비스를 통해 사용자 인증에 의존할 수 있습니다.</div>
+   </li>
+  </ul>
+
+
+  <p align="left">재해 발생 시 애플리케이션을 복구하려면 위의 모든 작업을 용이하게 하고, 장애 조치(failover) 또는 마이그레이션 후 더 많은 애플리케이션별 사용자 지정을 수행할 수 있는 유연성을 제공하고, 비즈니스 요구 사항을 충족하는 RPO 및 RTO에서 모든 작업을 수행할 수 있는 솔루션이 필요합니다. 기존 백업 솔루션을 사용하여 진정한 애플리케이션 재해 복구를 달성하는 것은 매우 번거롭고 오류가 발생하기 쉬우며 확장할 수 없습니다. 많은 복제 기반 소프트웨어가 개별 가상 머신만 복구하고 작동하는 엔터프라이즈 애플리케이션을 가져오는 복잡성을 처리할 수 없습니다.</p>
+
+
+  <p><a href="https://aka.ms/asr-cio-article">Azure Site Recovery</a> 는 고유한 클라우드 우선 디자인과 간단한 사용자 환경을 결합하여 재해 발생 시 <strong>전체 애플리케이션을 복구</strong> 할 수 있는 강력한 솔루션을 제공합니다. 이를 어떻게 달성할 수 있을까요?</p>
+
+
+  <p><strong>단일 및 다중 계층 애플리케이션 일관성</strong> 및 <strong>거의 지속적인 복제</strong>에 대한 <a href="https://aka.ms/asr-replication">지원을</a> 통해 Azure Site Recovery는 실행 중인 애플리케이션, 축소 래핑 또는 자체 생성 애플리케이션에 관계없이 장애 조치(failover) 또는 마이그레이션이 실행될 때 작업 중인 애플리케이션을 보장합니다.</p>
+
+
+  <p>많은 공급업체에서 크래시 일관성 재해 복구 솔루션이 있으면 충분하다고 말할 수 있지만 실제로는 그렇지 않을까요? 크래시 일관성을 사용하면 대부분의 경우 운영 체제가 부팅됩니다. 그러나 크래시 일관성 복구 지점이 애플리케이션 데이터의 정확성을 보장하지 않으므로 가상 머신에서 실행되는 애플리케이션이 작동한다는 보장은 없습니다. 예를 들어 트랜잭션 로그에 데이터베이스에 없는 항목이 있는 경우 데이터베이스 소프트웨어는 RPO를 크게 늘리는 프로세스에서 데이터가 일관될 때까지 롤백해야 합니다. 이로 인해 SharePoint 같은 다중 계층 애플리케이션의 RTO가 매우 높아지고 긴 대기 후에도 애플리케이션의 모든 기능이 제대로 작동하는지 여전히 불확실합니다.</p>
+
+
+  <p>이러한 문제를 방지하기 위해 Azure Site Recovery는 단일 가상 머신(애플리케이션 경계는 단일 가상 머신)에 대한 애플리케이션 일관성을 지원할 뿐만 아니라 애플리케이션을 구성하는 여러 가상 머신에서 애플리케이션 일관성을 지원합니다.</p>
+
+
+  <p>대부분의 다중 계층 실제 애플리케이션에는 종속성이 있습니다. 예를 들어 데이터베이스 계층은 앱 및 웹 계층 앞에 와야 합니다. Azure Site Recovery 애플리케이션 복구 약속의 핵심과 핵심은 확장 <strong>가능한 복구 계획</strong>이며, 이를 통해 전체 애플리케이션을 모델링하고 애플리케이션 인식 복구 워크플로를 구성할 수 있습니다. <a href="https://aka.ms/asr-recovery-plans">복구 계획은</a> 다음과 같은 강력한 구문으로 구성됩니다.</p>
+
+
+  <ul>
+   <li>n 계층 애플리케이션의 올바른 복구 순서를 보장하기 위해 가상 머신 부팅의 병렬 처리 및 시퀀싱</li>
+   <li>복구된 가상 머신 외부 및 내부에서 필요한 작업을 자동화하는 Azure Automation Runbook과 통합합니다.</li>
+   <li>수동 작업을 수행하여 자동화할 수 없는 복구된 애플리케이션 측면의 유효성을 검사하는 기능입니다.</li>
+  </ul>
+
+
+  <p>복구 계획은 큰 빨간색 단추를 누르고 필요한 경우 단일 클릭 스트레스 없는 엔드투엔드 애플리케이션 복구를 트리거할 때 낮은 RTO로 사용할 것입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f76a6f94-9bee-4b9b-9163-5e4c667017f0.jpg"><img alt="Azure Site Recovery - Recovery Plan" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a993ed0b-24d5-4469-b351-4ae3ae353f9e.jpg" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Site Recovery - 복구 계획" width="450"></a></p>
+
+
+  <p>이러한 여러 다중 계층 애플리케이션이 제대로 작동하기 위한 또 다른 주요 과제는 복구 후 <a href="https://aka.ms/asr-networking">네트워크</a> 구성입니다. 고정 IP 주소를 제공하거나, 부하 분산 장치를 구성하거나, 트래픽 관리자를 사용하여 낮은 RTO를 달성하는 <strong>고급 네트워크 관리</strong> 옵션을 통해 Azure Site Recovery는 장애 조치(failover) 또는 마이그레이션 시 애플리케이션에 대한 사용자 액세스가 원활하게 수행되도록 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c4c3058b-bb55-4992-8c8d-674d3893bb19.png"><img alt="Capture" border="0" height="270" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/01f4be52-9506-46bf-91f2-94f3289ad4df.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="캡처" width="745"></a></p>
+
+
+  <p>애플리케이션 보호와 관련된 일반적인 오해는 많은 애플리케이션이 기본 제공 복제 기술을 사용한다는 사실입니다. 따라서 Azure Site Recovery가 필요한 이유는 무엇인가요?</p>
+
+
+  <p>간단한 대답은 다음과 같습니다.</p>
+
+
+  <p><em>복제 != 재해 복구</em></p>
+
+
+  <p><strong>Azure Site Recovery는 Microsofts&rsquo; 단일 클라우드 마이그레이션 및 재해 복구 제품으로, 네이티브 복제 </strong>구문이 없거나 네이티브 복제가 요구 사항을 충족하지 않는 애플리케이션에 대해 기본 제공 복제 솔루션을 제공하면서 다양한 자사 및 타사 복제 기술을 사용할 수 있는 옵션을 제공합니다. 앞에서 설명한 것처럼 애플리케이션 데이터 및 가상 머신을 복구 사이트로 가져오는 것은 작동하는 애플리케이션을 가져오는 데 필요한 부분일 뿐입니다. Azure Site Recovery는 데이터를 복제하든 애플리케이션에 기본 제공 기능을 사용&rsquo;하든 관계없이 부팅 시퀀스,<b> </b>네트워크 구성 등을 포함하여 애플리케이션을 연결하는 복잡한 작업을 수행하므로 한 번의 클릭으로 장애 조치(failover)하거나 마이그레이션할 수 있습니다. 또한 Azure Site Recovery를 사용하면 프로덕션 가동 중지 시간 또는 복제 영향 없이 테스트 장애 조치(failover)(재해 복구 훈련 또는 모의 마이그레이션)를 수행하고 원래 위치로 장애 복구(failback)할 수 있습니다. 이러한 모든 기능은 Azure Site Recovery 복제와 애플리케이션 수준 복제 기술 모두에서 작동합니다. 다음은 Azure Site Recovery가 통합하는 애플리케이션 수준 복제 기술의 몇 가지 예입니다.</p>
+
+
+  <ul>
+   <li>
+   <div>Active Directory 복제</div>
+   </li>
+   <li>
+   <div>SQL Server Always On 가용성 그룹</div>
+   </li>
+   <li>
+   <div>Exchange 데이터베이스 가용성 그룹</div>
+   </li>
+   <li>
+   <div>Oracle 데이터 가드</div>
+   </li>
+  </ul>
+
+
+  <p>그래서, 당신은 물어, 이것은 정말 무엇을 의미합니까? Azure Site Recovery는 모든 애플리케이션 계층에 기본 제공 복제를 사용하든, 특정 계층에 대한 네이티브 애플리케이션 수준 복제 기술(예: Active Directory 또는 SQL Server)을 혼합하고 일치시킬지 여부에 관계없이 강력한 재해 복구 애플리케이션 오케스트레이션을 제공합니다. 기업에서는 데이터 손실 없음과 비용 간의 절충, 활성-활성 대기 배포의 오버헤드와 같이 하나 또는 다른 복제를 선택할 수 있는 다양한 이유가 있습니다. 다음에 메시지가 표시될 때 Always On 가용성 그룹에 이미 SQL Server 경우 Azure Site Recovery가 필요한 이유는 무엇인가요? 애플리케이션 데이터를 복제하는 것이 필요하지만 재해 복구에 충분하지 않다는 것을 명확히 하고, Azure Site Recovery는 네이티브 애플리케이션 수준 복제 기술을 보완하여 완전한 종단 간 재해 복구 솔루션을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3c0d3f82-bfae-439f-b7ba-05be57988bb4.png"><img alt="App Level" border="0" height="255" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6d428676-6230-40a9-a625-1c92c32c16de.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="앱 수준" width="479"></a></p>
+
+
+  <p>Azure Site Recovery를 사용하여 수백 개의 애플리케이션을 보호하는 기업 고객으로부터 가장 일반적인 배포 패턴과 인기 있는 애플리케이션 토폴로지가 무엇인지 알아봅니다. 따라서 Azure Site Recovery는 모든 애플리케이션에서 작동할 뿐만 <strong>아니라 Microsoft는</strong> 지속적으로 증가하는 <a href="https://aka.ms/asr-apps">목록</a>인 <strong>인기 있는 자사 및 타사 애플리케이션 제품군을 테스트하고 인증합니다</strong>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd51089f-a8a2-4bd2-8434-7d35b8a19ed1.png"><img alt="Azure Site Recovery Certified Applications" border="0" height="166" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8f1bbc6-8c19-4815-abe0-9b387174ab47.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Site Recovery 인증 애플리케이션" width="640"></a></p>
+
+
+  <p>다양한 애플리케이션에 대한 Azure Site Recovery 솔루션 가이드를 테스트하고 제공하기 위한 노력의 일환으로 Microsoft는 엔터프라이즈에서 애플리케이션 복구 계획에 필요한 가장 일반적인 자동화 작업을 위해 프로덕션 준비가 완료된 애플리케이션별 및 일반 <a href="https://aka.ms/asr-runbooks">Runbook</a>이 포함된 <strong>풍부한 Azure Automation 라이브러리를 제공합니다</strong>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ee8499f-2c52-4e15-b6a6-b81cf89dc18b.png"><img alt="Azure Site Recovery Automation Gallery" border="0" height="675" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/70c4d640-6b4e-4fa7-894d-238eb293fd1e.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Site Recovery Automation 갤러리" width="504"></a></p>
+
+
+  <p align="left">&rsquo;몇 가지 예제를 사용하여 닫습니다.</p>
+
+
+  <ul>
+   <li>
+   <div><a href="https://aka.ms/asr-sharepoint-server">SharePoint</a> 같은 애플리케이션에는 일반적으로 올바른 순서로 수행해야 하는 여러 가상 머신이 있는 3개의 계층이 있으며 모든 기능이 제대로 작동하려면 가상 머신 간에 애플리케이션 일관성이 필요합니다. Azure Site Recovery는 복구 계획 및 다중 계층 애플리케이션 일관성을 제공하여 이 문제를 해결합니다.</div>
+   </li>
+   <li>
+   <div>애플리케이션 가상 머신에서&rsquo; 포트 열기/공용 IP 추가/DNS 업데이트, 중복성 및 부하 관리를 위한 가용성 집합 및 부하 분산 장치가 있는 경우는 모든 엔터프라이즈 애플리케이션에 대한 일반적인 질문의 예입니다. Microsoft는 복구 계획에 사용할 수 있는 풍부한 자동화 스크립트 라이브러리를 제공하고 복구 후 복잡한 네트워크 구성을 설정하여 RTO를 줄이는 기능(예: <a href="https://aka.ms/asr-atm">Azure Traffic Manager</a> 설정)을 제공하여 이를 해결합니다.</div>
+   </li>
+   <li>
+   <div>대부분의 애플리케이션에는 <a href="https://aka.ms/asr-ad-dns">배포된 Active Directory/DNS</a>가 필요하며 SQL Server 같은 종류의 데이터베이스를 <a href="https://aka.ms/asr-sql-server">사용합니다.</a> Microsoft는 Active Directory 복제 및 SQL Server Always On 가용성 그룹을 사용하여 Azure Site Recovery 솔루션을 테스트하고 인증합니다.</div>
+   </li>
+   <li>
+   <div>기업에는 항상 많은 독점적인 중요 비즈니스용 애플리케이션이 있습니다. Azure Site Recovery는 기본 제공 복제를 통해 이를 보호하고 프로덕션 가동 중지 시간 또는 복제 영향 없이 <a href="https://aka.ms/asr-test-failover">테스트 장애 조치(failover</a>) 기능을 사용하여 복구 사이트에서 애플리케이션&rsquo; 성능 및 네트워크 구성을 테스트할 수 있습니다.</div>
+   </li>
+  </ul>
+
+
+  <p align="left">전체 애플리케이션 복구를 성공적으로 수행할 수 있도록 끊임없이 집중하면서 Azure Site Recovery는 모든 마이그레이션 및 재해 복구 요구 사항을 충족하는 원스톱 상점입니다. Microsoft의 임무는 Microsoft Azure 기능을 사용하여 재해 복구를 민주화하고, 엘리트 계층 1 애플리케이션이 비즈니스 연속성 계획을 수립할 수 있도록 하는 것뿐만 아니라 조직의 100% IT 애플리케이션에 대한 종단 간 재해 복구 계획을 설정할 수 있는 강력한 솔루션을 제공하는&#39;.</p>
+
+
+  <p align="left"><a href="https://aka.ms/asr-info">추가 제품 정보를</a> 확인하고 현재 Azure Site Recovery를 사용하여 워크로드를 보호하거나 Microsoft Azure 마이그레이션할 수 있습니다. VMware 또는 Hyper-V에서 실행 중이든 복제하는 모든 새 물리적 서버 또는 가상 머신에 대해 31일 동안 Azure Site Recovery의 강력한 복제 기능을 무료로 사용할 수 있습니다. Azure Site Recovery에 대해 자세히 알아보려면 <a href="https://aka.ms/asr-videos">방법 비디오를</a> 확인하세요. <a href="https://aka.ms/asr-forums">MSDN의 Azure Site Recovery 포럼을</a> 방문하여 추가 정보를 확인하고 다른 고객과 소통하거나 <a href="https://aka.ms/asr-uservoice">Azure Site Recovery 사용자 음성</a>을 사용하여 다음에 사용하도록 설정할 기능을 알려주세요.</p>

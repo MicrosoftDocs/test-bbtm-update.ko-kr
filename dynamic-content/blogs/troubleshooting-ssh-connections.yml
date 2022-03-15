@@ -1,0 +1,43 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d81810bc784ad2765d5684b29cc60ec098e34a6f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908004"
+Slug: troubleshooting-ssh-connections
+Title: 새 문제 해결 SSH 연결
+Summary: 프로세스를 단계별로 진행하여 Azure 기반 Linux 서버에 대한 SSH 연결 문제를 격리하고 수정합니다.
+Content: >-
+  온-프레미스 Linux 컴퓨터에 대한 SSH(Secure Shell) 연결을 만드는 것은 매우 간단할 수 있습니다. 그러나 Azure 기반 Linux 컴퓨터에 SSH를 연결하는 경우 SSH 클라이언트와 서버 간에 추가 중간 시스템 및 보안 설정이 있습니다.
+
+
+  <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-troubleshoot-ssh-connections/">Linux 기반 Azure Virtual Machine에 대한 새로운 SSH(Secure Shell) 연결 문제 해결</a> 문서에서는 문제의 원인을 확인하는 프로세스를 단계별 안내하고 많은 문제를 해결하기 위한 조언을 제공합니다.
+
+
+  Azure Virtual Machines에 대한 SSH 연결에 대한 주요 문제의 원인은 다음과 같습니다.
+
+  <ol>
+   <li>SSH 클라이언트</li>
+   <li>네트워크 가장자리의 방화벽, 프록시 또는 NAT</li>
+   <li>가상 머신이 포함된 클라우드 서비스의 엔드포인트 및 ACL(Azure 시스템 관리 기반 가상 머신의 경우)</li>
+   <li>네트워크 보안 그룹</li>
+   <li>Azure Virtual Machine의 설정 및 상태</li>
+  </ol>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/06/24/SSH-Client.jpg"><img style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="SSH 클라이언트" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/SSH-Client_thumb.jpg" alt="SSH Client" width="1033" height="614" border="0" /></a>
+
+
+  <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-troubleshoot-ssh-connections/">Linux 기반 Azure Virtual Machine에 대한 SSH(Secure Shell) 연결 문제 해결</a> 은 문제를 확인하고 수정할 수 있도록 이러한 각 원본을 순서대로 격리합니다.
+
+
+  보고 싶은 Azure 인프라 서비스에 대한 추가 문제 해결 문서가 있는 경우 아래에 의견을 남겨주세요.
+
+
+  감사합니다.
+
+
+  조 데이비스
+
+
+  수석 콘텐츠 개발자

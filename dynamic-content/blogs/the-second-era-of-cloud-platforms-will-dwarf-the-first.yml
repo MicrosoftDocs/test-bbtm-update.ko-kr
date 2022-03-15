@@ -1,0 +1,49 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d74858d941880b52652cf136f8a06ac2312f12ef
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907575"
+Slug: the-second-era-of-cloud-platforms-will-dwarf-the-first
+Title: 클라우드 플랫폼의 두 번째 시대는 첫 번째 시대를 난장판으로 합니다.
+Summary: 2015년에 클라우드에서 앱을 빌드한 회사의 사용자 수는 몇 명입니까? 그 숫자가 극적으로 점프 할 준비를하십시오. 이제 클라우드 컴퓨팅의 두 번째 시대에 있으며 모든 클라우드 사용자를 환영합니다.
+Content: >-
+  <p>2015년에 클라우드에서 앱을 빌드한 회사의 사용자 수는 몇 명입니까? 그 숫자가 극적으로 점프 할 준비를하십시오. &rsquo;클라우드 컴퓨팅의 두 번째 시대에 Were를 사용하고 모든 클라우드 사용자를 환영합니다.</p>
+
+
+  <p>지난 주 내 동료와 Microsoft Azure CTO, 마크 Russinovich, 우리가 시장에 반영보고있는 클라우드에서 자신의 <a href="https://azure.microsoft.com/en-us/blog/cloud-innovation-for-the-year-ahead-from-infrastructure-to-innovation/">최고 마음 주요 동향</a>에 대해 이야기했다. 이러한 추세 중 하나인 DevOps 기술이 필요하지&#39;애플리케이션 플랫폼의 등장은 시장에 큰 영향을 미치며, 가장 중요한 것은 회사의&rsquo; 민첩성과 혁신 능력에 큰 영향을 미칠 것입니다.</p>
+
+
+  <p>클라우드 추세의 시작을 다시 생각해 보면 개발자부터 시작하지도 않고 서비스로서의 인프라로 시작하지도 않았습니다&rsquo;. 틀렸습니다. 1990년대 후반에는 SaaS(Software as a Service)를 활용하는 비즈니스 전문가와 함께 시작했습니다. 솔직히 클라우드의 거의 첫 10년은 DropBox, Salesforce, Box.net 및 기타 많은 SaaS 애플리케이션을 회사에 도입한 비즈니스 라인과 평균적인 비 IT 직원이 주도하는 섀도 IT 활동이었습니다. 이러한 도구는 솔루션에 더 빠른 시간을 제공하고 기술 세트에 맞춰 자동화된 비즈니스 프로세스와 민첩한 발전을 제공했기 때문에 이 작업을 수행했습니다.</p>
+
+
+  <p>현재 거의 모든 회사에는 30개 이상의 SaaS 애플리케이션이 하나 이상 사용되고 있습니다. <a href="https://azure.microsoft.com/en-us/blog/the-key-to-improving-the-it-lob-relationship/">얼마나 많은 사용자가 있는지 알아보고 싶으신가요?</a> <a href="https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx">Enterprise Mobility Suite</a> &ndash; 에서 <a href="https://channel9.msdn.com/Series/EMS/Azure-Cloud-App-Discovery">Cloud App Discovery 도구를</a> 사용하면 숫자가 확실히 놀랍습니다.</p>
+
+
+  <p>SaaS 애플리케이션이 보류되기 시작한 직후, 이러한 SaaS 애플리케이션을 기존 비즈니스 프로세스에 통합하고 SaaS와 비 SaaS를 함께 연결하는 새로운 워크플로를 빌드하려는 욕구가 생겼습니다. 그러나 이것은 SaaS를 사용하는 것만큼 간단하지 않았습니다&rsquo;. 코딩, 구성 및 보안 기술이 필요했습니다. 진정한 네이티브 클라우드 애플리케이션을 빌드하려면 다음에 등장한 인프라 as a Service가 필요했습니다. 또한 매우 자동화되고 확장 가능하며 코딩 및 IT 운영 기술 또는 DevOps 혼합된 고도로 기술적인 개발자 사용자의 &ndash; 기술에 맞춰 조정되었습니다. IaaS가 조직에&rsquo; 힘을 실어주고 있는 만큼, 지금까지 누가 사용할 수 있는지를 제한하는 데 필요한 기술의 깊이가 여전히 존재합니다.</p>
+
+
+  <p>Azure App Service와 같은 애플리케이션 플랫폼 및 Cloud Foundry와 같은 오픈 소스 작업이 들어오는 곳입니다. IaaS의 기초 위에 계층화하여 이러한 도구는 추상화 계층을 추가하고 모범 사례의 자동화를 추가하여 다른 사용자가 클라우드 &ndash; 에서 기존 코더의 생산성을 높일 수 있도록 합니다. Forrester가 지적했듯이 DevOps 전문가는 개발자 커뮤니티의 작은 하위 집합입니다. 대부분의 개발자는 서비스를 주요 애플리케이션 패턴과 관련시키는 프레임워크 및 플랫폼을 선호하므로 해당 애플리케이션을 더 쉽게 제공할 수 있습니다*.</p>
+
+
+  <p>초기 애플리케이션 플랫폼은 단일 SaaS 솔루션(예: Force.com)을 사용자 지정하고 확장하도록 설계되었거나 단일 프로그래밍 언어 또는 모델(예: 엔진 야드 및 Google 앱 플랫폼의 초기 버전)을 사용하여 코더의 역량을 강화하도록 설계되었습니다. 그러나 이러한 모델은 너무 제한적이었고 잠금이 너무 많았기 때문에 이륙하지 않았습니다. 이제 여러 언어를 지원하고, SaaS 및 하이브리드 리소스 컬렉션을 함께 연결하고, 컨테이너 및 VM 아키텍처를 계층화하고, 빌드할 수 있는 애플리케이션 유형을 넓히는 애플리케이션 플랫폼을 확인했습니다. 2018년까지 Gartner &ldquo;는 5개 주요 공급업체 중 최소 4개가 포괄적인 다목적 PaaS 서비스 제품군을 제공할 것으로 예상하고 있습니다.&rdquo;**&nbsp; Microsoft <a href="https://blogs.microsoft.com/blog/2015/11/30/introducing-microsoft-powerapps/">PowerApps</a>와 같은 도구를 사용하여 현재 미리 보기로 제공되며,&rsquo; 애플리케이션 개발은 비 코더에도 적용됩니다. PowerPoint 기술이 있는 경우 PowerApps를 사용하여 앱을 빌드할 수 있습니다.</p>
+
+
+  <p>데이터 과학자는 대상 고객이 애플리케이션을 빌드하기 위해 PPT 파일을 코딩하거나 만드는 방법만 알아야 할 때 시장 기회가 얼마나 커질 수 있는지 파악하지 못합니다&rsquo;. 이것이 클라우드 컴퓨팅의 미래입니다. 그리고 그것은&rsquo; 이미 시작했다. 코더가 아직 Azure App Service를 탭하지 않는&rsquo; 경우 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/">오늘 시작합니다</a>.</p>
+
+
+  <p>또한 클라우드 컴퓨팅의 두 번째 시대의 핵심은 지능형 애플리케이션, 센서 통합, 사물 인터넷 및 기계 학습 인사이트로의 전환입니다. 이러한 추세가 향후 게시물에서 두 번째 물결을 이끄는 방법에 대해 논의할&#39;있습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <blockquote>
+
+  <p><em>*Forrester, Azure App Service는 개발자가 웹앱에서 최신 앱으로 원활하게 이동할 수 있도록 지원합니다( 2015년 6월 3일).</em></p>
+
+
+  <p><em>**가트너, 파스 주 가트너: 최근 연구, 2015년 11월 9일.</em></p>
+
+  </blockquote>

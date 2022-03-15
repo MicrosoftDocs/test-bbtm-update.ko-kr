@@ -1,0 +1,241 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3ff2d4b75e1e6f095c317e0c461af99a63183b78
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901249"
+Slug: experimentation-using-azure-machine-learning
+Title: Azure Machine Learning 사용하여 실험
+Summary: Azure Machine Learning(AML) 서비스의 공개 미리 보기 새로 고침을 발표하게 되어 기쁘게 생각합니다. 새로 고침에는 데이터 과학자의 생산성을 높이는 많은 새로운 개선 사항이 포함되어 있습니다.
+Content: >-
+  <p>Azure Machine Learning(AML) 서비스의 공개 미리 보기 새로 고침을 발표하게 되어 기쁘게 생각합니다. 새로 고침에는 데이터 과학자의 생산성을 높이는 많은 새로운 개선 사항이 포함되어 있습니다.</p>
+
+
+  <p>이 게시물에서는 기계 학습 모델을 개발, 학습 및 최적화하는 프로세스인 기계 학습 실험과 관련하여 개선된 몇 가지 사항을 강조하고 싶습니다. 또한 실험에는 종종 감사, 관리, 공유, 반복, 이해 및 기타 엔터프라이즈 수준 함수가 포함됩니다. <a href="https://aka.ms/aml-blog-overview" target="_blank">Azure Machine Learning 서비스 전략 및 방향</a>에 대한 이 개략적인 개요에 대해 자세히 알아보세요.</p>
+
+
+  <h2>Machine Learning 실험</h2>
+
+
+  <p>프로덕션용 기계 학습 모델을 개발하는 프로세스에는 여러 단계가 포함됩니다. 먼저 데이터 과학자는 모델 아키텍처 및 데이터 기능화를 결정해야 합니다.&nbsp; 다음으로, 이러한 모델을 학습하고 조정하려고 시도해야 합니다. 이를 위해서는 컴퓨팅 리소스를 관리하여 학습을 실행하고 스케일 아웃하고, 학습 데이터를 수집하고, 대상 컴퓨팅 리소스에서 사용할 수 있도록 해야 합니다. 또한 이 과정에서 사용되는 다양한(hyper-) 매개 변수 조합 및 모델 버전과 결과도 추적해야 합니다. 전처리 쪽에서 데이터를 획득 및 준비하고 다른 쪽에서 모델을 사후 처리 및 배포하는 데 필요한 복잡한 데이터 흐름에 포함되는 경우가 많습니다.</p>
+
+
+  <p>이러한 모든 단계를 수행할 때 데이터 과학자의 생산성을 높이기 위해 Azure Machine Learning 간단한 사용이 가능한 Python API를 제공하여 간편한 엔드 투 엔드 기계 학습 실험 환경을 제공합니다. Azure Cloud에서 지원하는 단일 제어 평면 API를 제공하여 기계 학습 워크플로의 단계를 원활하게 실행합니다. 이러한 워크플로는 Jupyter Python Notebook, Visual Studio Code, 기타 Python IDE 또는 자동화된 CI/CD 파이프라인을 비롯한 다양한 개발자 환경 내에서 작성할 수 있습니다. AML 다음과 같은 기능을 사용할 수 있는 매우 간단하지만 강력한 환경을 제공합니다.</p>
+
+
+  <ul>
+   <li><strong>클라우드</strong> &ndash; 에서 학습 사용자는 인증, 작업 영역 만들기, 데이터 원본 관리 및 모델 학습을 모두 한 곳에서 처리하여 최소한의 온보딩 마찰로 Azure 제품의 기능을 활용할 수 있습니다.<br>
+  데이터 과학자는 재현 가능한 데이터 과학을 위한 학습 코드 및 라이브러리 종속성을 Docker 컨테이너에 쉽게 패키징하고 결과 모델 아티팩트에서 프로덕션 배포를 위해 DevOps 수 있습니다.</li>
+   <li><strong>확장성이 뛰어나고 유연한 모델 학습</strong> &ndash; 사용자는 몇 줄의 Python으로 컴퓨팅을 프로비전하고 병렬 및 분산 학습으로 쉽게 확장할 수 있습니다. 기존 학습 코드를 수정하지 않고도 AML 기능을 활용할 수 있습니다.</li>
+   <li>모델의 &ndash; <strong>신속한 반복 및 추적 기능</strong> 실행 기록, 하이퍼 매개 변수 튜닝 사용자는 AML 하이퍼 매개 변수 최적화 서비스를 사용하여 모델의 하이퍼 매개 변수를 조정하고, AML&rsquo; 통해 시작된 모든 학습 작업의 실행 기록을 확인하고, 배포 시나리오에 가장 적합한 모델을 선택할 수 있습니다. 각 학습 실행과 배포되는 각 모델을 추적하여 AML 감사 내역을 제공하고 기계 학습 활동의 추적 가능성을 가능하게 합니다.</li>
+   <li>데이터를 &ndash; <strong>기반으로 알고리즘 및 연결된 파이프라인을 자동으로 찾습니다</strong>. 사용자가 모델을 빌드하려는 지정된 레이블이 지정된 데이터 세트에 따라 AML&rsquo; 자동화된 기계 학습은 알고리즘 및 데이터 파이프라인/기능화 단계 선택을 자동으로 수행하고 고품질 모델을 생성합니다.</li>
+   <li><strong>반복성 및 공유를 위한 파이프라인으로 실험 단계 설명</strong> &ndash; &rsquo;예를 들어 AML 파이프라인 기능을 사용하면 사용자가 모델을 재학습 및 배포하는 다양한 단계를 캡처하고 실행 그래프에서 정의하여 반복적으로 실행하고 동료 또는 커뮤니티와 공유할 수 있습니다.</li>
+  </ul>
+
+
+  <p>AML 실험으로 기계 학습 개발 프로세스를 가속화하는 방법을 설명하기 위해 SDK 예제를 살펴보겠습니다&rsquo;. <a href="https://en.wikipedia.org/wiki/MNIST_database" target="_blank">MNIST 데이터 세트</a>에 대한 TensorFlow 모델의 매우 일반적인 예제부터 시작합니다. 요약이 <strong>포함된 MNIST</strong>이며 <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/mnist/mnist_with_summaries.py" target="_blank">TensorFlow github 리포지토리의 TensorFlow 자습서 스크립트</a> 입니다. 자습서는 간단한 신경망을 학습시키고 프로세스 전반에 걸쳐 다양한 통계를 기록합니다.</p>
+
+
+  <h2>작업 영역 설정</h2>
+
+
+  <p>AML 데이터 과학자는 작업 영역을 사용하여 실험을 관리하고 수행합니다. 작업 영역은 팀이 공동 작업할 수 있는 중앙 위치이며 컴퓨팅 대상, 데이터 스토리지, 생성된 모델, 생성된 Docker 이미지, 배포된 웹 서비스에 대한 액세스를 관리하며, 이를 통해 수행된 모든 실험 실행을 추적합니다. 데이터 과학자는 Python SDK에서 작업 영역 및 실험의 권한 부여 및 생성을 관리할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/abdf8b42-5930-4796-85c9-28f013cb37e6.png"><img alt="image" border="0" height="463" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a4f4ebaa-1c8f-452b-a2a2-ec20e07fbd86.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="749"></a></p>
+
+
+  <p>아래 코드 조각에서는 지정된 구독에 상주하는 리소스 그룹 <strong>Contoso</strong>에서 <strong>Demo</strong>라는 작업 영역을 만듭니다. 작업 영역은 Azure 지역 <strong>eastUS2</strong>에 만들어집니다.</p>
+
+
+  <pre>
+
+  from azureml.core import Workspace
+
+  ws = Workspace.create(name=&#39;Demo&#39;,
+                        subscription_id=&#39;12345678-1234-1234-a0e3-b1a1a3b06324&#39;,
+                        resource_group=&#39;Contoso&#39;,
+                        location=&#39;eastus2&#39;)</pre>
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#workspace" target="_blank">AML 작업 영역에</a> 대한 자세한 내용을 찾습니다.</p>
+
+
+  <h2>클라우드에서 모델 학습</h2>
+
+
+  <p>일반적으로 기계 학습에서 가장 시간이 많이 걸리는 단계 중 하나는 학습입니다. 계산 집약적인 경우가 많으며 많은 양의 컴퓨팅 리소스가 필요할 수 있습니다. AML SDK는 학습 작업이 단일 코어에서 실행되는지 아니면 수백 개의 GPU로 확장되든 관계없이 컴퓨팅을 관리하고 프로비전하는 프로세스를 몇 가지 API 호출로 증류합니다. SDK를 사용하면 사용자 고유의 컴퓨터, Azure VM(Virtual Machine), Azure BatchAI 클러스터 또는 Azure에서 연결할 수 있는 Linux 머신에서 로컬로 학습할 수 있습니다.</p>
+
+
+  <p>여기서는 VM 기능 1 Nvidia Tesla K80 GPU를 STANDARD_NC6 작업 영역에 &ndash; STANDARD_NC6&rdquo; VM의 &ldquo;Azure BatchAI 클러스터를 프로비전하고 연결<a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes" target="_blank">합니다. Azure VM 크기 목록은</a> 여기를 참조하세요. 만드는 클러스터는 0개 노드에서 최대 10개의 노드로 자동 크기 조정되도록 설정되므로 클러스터에서 작업이 실행되는 동안 컴퓨팅에 대해서만 비용을 지불합니다.</p>
+
+
+  <pre>
+
+  from azureml.core.compute import ComputeTarget, BatchAiCompute
+
+  provisioning_config = BatchAiCompute.provisioning_configuration(vm_size = &quot;STANDARD_NC6&quot;,
+                                                                  autoscale_enabled = True,
+                                                                  cluster_min_nodes = 0,
+                                                                  cluster_max_nodes = 10)
+
+  nc6_cluster = ComputeTarget.create(ws,
+                                     name = &quot;nc6_cluster&quot;,
+                                     provisioning_configuration=provisioning_config)</pre>
+
+  <p>다음 코드는 tensorFlow 추정기 클래스의 인스턴스를 만듭니다. 이 클래스는 AML TensorFlow 작업을 구성하는 편리한 래퍼를 제공합니다. 여기서는 현재 디렉터리(&lsquo;.&rsquo;)를 컴퓨팅 대상으로 보낼 source_directory 지정합니다. 이 폴더의 모든 파일 및 하위 폴더를 컴퓨팅 대상으로 &ndash; nc6_cluster 시작하기 전에 프로세스에서 사용할 수 있게 됩니다. 호출될 스크립트는 처음에 &ndash; 다운로드한 mnist_with_summaries.py 스크립트로, 나열된 스크립트 매개 변수는 로컬 실행과 마찬가지로 스크립트에 전달됩니다. 마지막으로 GPU docker 지원을 사용하여 이 작업을 실행하도록 지정합니다.</p>
+
+
+  <p>다음 줄에서는 위의 사양에 따라 실행을 위한 스크립트를 제출하고 mnist&rsquo;라는 &lsquo;실험에서 추적합니다. 실험은 편리한 검색을 위해 단일 이름으로 그룹화된 스크립트 제출의 컬렉션일 뿐입니다. 제출 호출의 결과로 AML Azure에서 최적의 Docker GPU 성능을 위해 필요한 Nvidia 드라이버와 함께 GPU용 TensorFlow를 설치하는 작업의 &ndash; 요구 사항을 충족하는 Docker 이미지를 만듭니다. Docker 이미지가 빌드되면 나중에 실행하기 위해 캐시된 다음 제공된 Batch AI 클러스터의 선택한 컴퓨팅 노드에 스테이징됩니다. 단일 노드 작업이므로 작업을 실행하기 위해 하나의 노드만 프로비전됩니다.</p>
+
+
+  <pre>
+
+  from azureml.train.dnn import TensorFlow
+
+  from azureml.core import Experiment
+
+  tf_estimator = TensorFlow(source_directory=&#39;.&#39;,
+                            compute_target=nc6_cluster,
+                            entry_script=&#39;mnist_with_summaries.py&#39;,
+                            script_params={&#39;--max_steps&#39;:5000, &#39;--log_dir&#39;: &#39;./logs&#39;,},
+                            use_gpu=True)
+
+  run = Experiment(ws, &#39;mnist&#39;).submit(tf_estimator)</pre>
+
+
+  <h2>학습 실행 모니터링</h2>
+
+
+  <p>Azure ML Jupyter Notebook과 통합되어 데이터 과학자가 Notebook 내에서 실행된 실행 상태를 볼 수 있습니다. 위젯은 실행 중 스크립트에 의해 기록된 메트릭 및 출력 로그와 함께 실행의 메타 정보를 표시합니다. 메트릭이 두 번 이상 보고될 때마다 위젯은 여러 단계에 걸쳐 메트릭을 시각화하는 플롯을 표시합니다. 여기서는 테스트 집합을 통해 모델의 정확도를 <strong>Accuracy_test</strong> 기록하는 로깅 코드를 스크립트에 추가했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/917d29bf-593b-4b89-be99-ed6fc6ca25d3.png"><img alt="image" border="0" height="555" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cadeed68-79ee-469a-af43-b776379f52f8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="788"></a></p>
+
+
+  <p>학습 스크립트가 Tensorboard 로그 출력을 생성하고 컴퓨팅 대상의 ./logs&rsquo; 디렉터리에 기록하는 &rsquo;경우 AML s Tensorboard 다운로더 클래스를 실행&rsquo;하여 컴퓨팅 대상에서 로컬 컴퓨터로 쉽게 전송할 수 있습니다. 편의를 위해 로그 파일 위치를 가리키는 Tensorboard 인스턴스를 시작하고 탐색할 로컬 URL을 제공합니다. 작업이 계속 실행되는 동안 로그가 스트리밍됩니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b51188aa-4b30-464d-9b19-86814802d325.png"><img alt="image" border="0" height="306" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95ee9286-5354-4cf8-b9ff-fd04a3be53c9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="524"></a></p>
+
+
+  <p>여러 노드에서 학습을 수행할 수도 있습니다. TensorFlow를 사용한 분산 학습에 대한 자세한 내용은 이 문서를 참조하세요.</p>
+
+
+  <h2>모델의 하이퍼 매개 변수 조정</h2>
+
+
+  <p>기계 학습의 중요한 측면은 하이퍼 매개 변수 튜닝입니다. 데이터 과학자는 일반적으로 다양한 하이퍼 매개 변수 조합을 구성하고 테스트하여 모델 정확도를 향상시킵니다. AML Random, Grid 및 Bayesian 매개 변수 샘플링을 제공하고, 조기 종료를 지원하고, 사용자에 대한 작업 생성 및 모니터링 프로세스를 관리하는 하이퍼 매개 변수 튜닝 서비스를 제공합니다.</p>
+
+
+  <p>아래 코드에서는 Python SDK를 사용하여 하이퍼 매개 변수 튜닝 실행을 시작합니다. 임의 매개 변수 샘플링 전략을 선택하고 RandomParameterSampling 개체의 학습 속도 및 드롭아웃 하이퍼 매개 변수에 대한 범위를 제공합니다. 그런 다음, BanditPolicy &ndash; 로 사용할 초기 종료 정책을 정의합니다. 그러면 성능이 좋지 않고 결국 좋은 모델을 생성할 가능성이 없는 작업이 종료됩니다. 구체적으로, 이 구성은 10단계마다 작업을 평가하고 해당 특정 단계에서 가장 성과가 좋은 작업의 15% 여유 내에 있지 않은 작업을 종료합니다. 더 큰 모델에서 이 전략은 일반적으로 학습된 최상의 모델의 성능에 영향을 주지 않고 컴퓨팅 시간의 약 50%를 절약합니다.</p>
+
+
+  <p>마지막으로 위에서 정의한 tf_estimator, 매개 변수 샘플링 및 제공된 초기 종료 정책을 사용하여 하이퍼 매개 변수 실행을 구성합니다. 또한 최적화 프로그램에서 살펴볼 메트릭(Accuracy_test)과 최대화해야 하는 메트릭을 알려야 합니다. 마지막으로 수행할 실행 수를 100으로 설정하고 동시에 10을 실행합니다. 그런 다음 실행을 제출합니다.</p>
+
+
+  <pre>
+
+  from azureml.train.hyperdrive import *
+
+
+  # define hyperparameter sampling space
+
+  ps = RandomParameterSampling(
+       {
+           &#39;--learning_rate&#39;: uniform(0.000001, 0.1),
+           &#39;--dropout&#39;: uniform(0.5, 0.95)
+       }
+  )
+
+
+  # define early termination policy
+
+  early_termination_policy = BanditPolicy(slack_factor = 0.15, evaluation_interval=10)
+
+
+  # configure the run
+
+  hyperdrive_run_config = HyperDriveRunConfig(estimator = tf_estimator,
+                                              hyperparameter_sampling = ps,
+                                              policy = early_termination_policy,
+                                              primary_metric_name = &quot;Accuracy_test&quot;,
+                                              primary_metric_goal = PrimaryMetricGoal.MAXIMIZE,
+                                              max_total_runs = 100,
+                                              max_concurrent_runs = 10)
+
+  # start the run
+
+  hd_run = Experiment(ws,&#39;mnist&#39;).submit(hyperdrive_run_config)
+
+
+  # launch the widget to view the progress and results
+
+  RunDetails(hd_run).show()</pre>
+
+
+  <p>다시 말하지만, 하이퍼 드라이브 스윕의 상태는 여기서 Jupyter Notebook &ndash; 에서 추적할 수 있습니다. 여기서는 실행 목록 및 해당 상태와 함께 하이퍼 매개 변수 스윕에 대한 모든 메타 정보를 볼 수 있습니다. 아래에는 함께 그려진 모든 실행에 대한 대상 메트릭이 표시됩니다. 당신이 볼 수 있듯이, 가난한 실행은 초기에 종료되었다, 더 유망한 실행은 취소되지 않은 동안.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a2040e55-029c-46e5-a5dc-b4bbb2b05345.png"><img alt="image" border="0" height="366" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7a282220-8765-4895-90a5-a3f87f41bfbb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bd564491-7269-4a6d-bc22-01d0da60a235.png"><img alt="image" border="0" height="301" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/33bb8334-fec9-470f-8307-94504c7b7021.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-tune-hyperparameters" target="_blank">하이퍼 매개 변수 튜닝</a>에 대한 자세한 내용을 찾습니다.</p>
+
+
+  <h2>자동화된 Machine Learning</h2>
+
+
+  <p>위의 예제에서는 데이터 과학자가 수정한 다음 조정하는 지정된 모델로 시작했습니다. 그러나 지정된 문제에 대해 좋은 결과를 얻을 모델 유형이 명확하지 않은 경우가 많습니다. 따라서 데이터 과학자는 여러 ML 학습 작업을 실행하여 올바른 모델을 찾습니다. 예를 들어 기계 학습 분류 문제의 경우 데이터 과학자는 SVM, 로지스틱 회귀, 향상된 의사 결정 Tress 등과 같은 다양한 분류자를 통해 데이터를 실행할 수 있습니다. 또한 사용자는 각 알고리즘에 대해 다양한 기능화 파이프라인을 시도하고 있습니다. 어떤 분류자 &amp; 기능화를 실제로 알 수 있는 유일한 방법은 여전히 다양한 조합을 시도해야 하는 가장 좋은 방법입니다. 수동으로 수행하면 많은 학습 작업을 실행하고 추적할 수 있습니다. AML&rsquo; 자동화된 기계 학습을 사용하면 AML 알고리즘과 기능화의 여러 조합을 시도하여 데이터 세트에 대한 모델을 학습시킬 수 있으므로 사용자는 자동으로 고품질 모델을 빌드할 수 있습니다.</p>
+
+
+  <p>다시 AML SDK를 사용하면 사용자가 Jupyter Notebook에서 실행을 쉽게 시작하고 모니터링할 수 있습니다. 여기서는 위에서 만든 nc6 클러스터에서 실행할 분류 작업을 구성합니다. 20개의 다른 알고리즘이 동시에 10개 시도됩니다.</p>
+
+
+  <pre>
+
+  from azureml.train.automl import AutoMLConfig
+
+  from azureml.train.automl.constants import Metric
+
+  from get_data import get_data
+
+
+  automl_config = AutoMLConfig(task = &#39;classification&#39;,
+                               path=&#39;.&#39;,
+                               compute_target = nc6_cluster,
+                               data_script =  &quot;get_data.py&quot;,
+                               max_time_sec = 600,
+                               iterations = 20,
+                               n_cross_validations = 5,
+                               primary_metric = Metric.AUCWeighted,
+                               concurrent_iterations = 10)
+
+  remote_run = Experiment(ws,&#39;mnist&#39;).submit(automl_config)
+
+
+  RunDetails(remote_run).show()</pre>
+
+
+  <p>다시 한 번 Jupyter 위젯은 데이터 과학자가 실행이 진행되는 방식을 모니터링하는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ccb89c2a-853f-4370-a66b-e9e0aa2b9cd8.png"><img alt="image" border="0" height="568" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d3f8e187-21fb-4218-b2eb-0344f13d2bac.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="605"></a></p>
+
+
+  <p>또한 사용자는 생성된 각 개별 모델의 메트릭을 검사할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/984cdbb3-c9dd-4235-a0c0-e3618ad6e787.png"><img alt="image" border="0" height="677" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7af60836-4725-4a98-b6c9-a9c5b57c1e8c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="592"></a></p>
+
+
+  <p>자동화된 기계 학습에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-automated-ml" target="_blank">이 문서</a> 와 <a href="https://aka.ms/aml-blog-automl" target="_blank">이 블로그 게시물을</a> 참조하세요.</p>
+
+
+  <p>이 Azure Machine Learning 서비스 공개 미리 보기 새로 고침에는 더 많은 개선 사항이 있으며, 사용자가 이 새로 고침을 사용할 때까지 기다릴 수&rsquo; 없습니다. 기계 학습 모델을 더 생산적이고 더 재미있게 빌드, 학습 및 조정하는 데 도움이 될 것이라고 확신합니다. <a href="https://aka.ms/aml-blog-whats-new" target="_blank">이 새로 고침의 변경 내용</a>에 대한 자세한 내용을 알아보고 <a href="https://docs.microsoft.com/azure/machine-learning/service/quickstart-get-started" target="_blank">시작 가이드</a>를 방문하여 Azure Machine Learning 사용하여 고유한 모델 빌드를 시작하세요.</p>

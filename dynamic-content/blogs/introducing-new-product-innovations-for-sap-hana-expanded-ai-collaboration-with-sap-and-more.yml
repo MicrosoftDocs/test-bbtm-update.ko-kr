@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 51b11442b14d51254fb46abc1e835caff6e6daf6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908362"
+Slug: introducing-new-product-innovations-for-sap-hana-expanded-ai-collaboration-with-sap-and-more
+Title: SAP HANA를 위한 새로운 제품 혁신 소개, SAP와의 AI 협업 확장 등
+Summary: 'SAP와 협력하여 SAPPHIRE NOW에서 Azure의 SAP에 대한 여러 향상된 기능을 발표하게 되어 매우 기쁩니다. '
+Content: >-
+  <p>많은 기업에서 ERP 시스템을 현대화하는 것이 디지털 변환 목표를 달성하는 데 핵심적입니다. Microsoft에서는 SAP HANA에 대해 존재하는 <a href="https://azure.microsoft.com/en-us/solutions/sap/" target="_blank">최상의 인프라 선택</a> 항목인 막대 없음을 제공하여 고객을 지원하기 위해 최선을 다하고 있습니다.&nbsp;</p>
+
+
+  <p>원시 기능 측면에서 가장 많은 수의 SAP HANA 인증 제품(192GB에서 24TB까지 가상 머신 및 특수 제작 운영 체제 미설치 인스턴스에 걸쳐 있는 25개 구성)뿐만 아니라 SAP HANA 인증 인프라가 있는 지역에서 가장 넓은 공간(26개는 2019년 말까지 8개 추가 출시 계획)을 보유하고 있습니다. 또한 <a href="https://customers.microsoft.com/en-us/story/cona-services-partner-professional-services-azure" target="_blank">CONA Services</a>와 같은 퍼블릭 클라우드에서 SAP HANA의 가장 큰 배포 중 일부를 지원합니다.</p>
+
+
+  <p>SAP와 협력하여 SAPPHIRE NOW에서 Azure의 SAP에 대한 여러 향상된 기능을 발표하게 되어 매우 기쁩니다. 우리는 고객에게 더 큰 VM 메모리를 제공하는 인프라에서 더 많은 선택 사항을 제공 할 것이며, 운영 체제 미설치 인스턴스 및 비즈니스 연속성에 대한 더 많은 옵션을 제공 할 것입니다.</p>
+
+
+  <p>이 외에도 AI, 데이터 보호 및 ID 통합을 중심으로 SAP와 Azure 간의 심층 통합을 발표합니다. 이러한 통합은 공동 고객이 클라우드의 힘으로 디지털 변환을 가속화하는 데 도움이 됩니다.</p>
+
+
+  <p>새로운&rsquo; 기능&rsquo;:</p>
+
+
+  <ul>
+      <li><strong>SAP HANA용 6TB 및 12TB VM</strong>: Azures&rsquo; Mv2 VM 시리즈는 5월 13일에 사용할 수 있으며 단일 VM에 최대 6TB RAM이 있는 가상 머신을 제공합니다. 이는 퍼블릭 클라우드의 모든 가상 머신에서 제공되는 가장 큰 메모리 SAP HANA 인증 구성입니다. 6TB Mv2 VM은 미국 동부 및 미국 동부 2 지역에서 일반 공급되고 프로덕션 인증을 받게 됩니다. 미국 서부 2, 유럽 서부, 유럽 북부 및 동남 아시아 지역은 앞으로 몇 달 안에 사용할 수 있습니다.<br>
+      <br>
+  또한 2019년 3분기 SAP HANA에 대해 12TB Mv2 VM을 사용할 수 있고 프로덕션 인증을 받게 됩니다. 이를 통해 대규모 SAP HANA 배포를 사용하는 고객은 Azure Virtual Machines에서 제공하는 민첩성을 활용하여 몇 분 안에 개발/테스트 시스템을 회전시켜 SAP 릴리스 주기를 가속화하고 자동화된 패치, 모니터링, 백업 및 재해 복구를 위한 Azures&rsquo; 통합 도구를 사용하여 운영 프로세스를 간소화할 수 있습니다.</li>
+      <li><strong>SAP HANA용 Intel Optane을 사용하는 가장 큰 운영 체제 미설치 인스턴스</strong>: 2019년 4분기에는 4개 소켓의 일반 공급, 9TB 메모리 인스턴스 및 8개 소켓, 18TB 메모리 인스턴스 미리 보기를 포함하여 Azure 큰 인스턴스의 SAP HANA를 사용하여 클라우드에서 가장 큰 Intel Optane 최적화 운영 체제 미설치 인스턴스를 출시할 계획입니다. 이러한 인스턴스를 통해 고객은 재시작 시 SAP HANA 데이터의 로드 시간을 단축하여 RTO(복구 시간 목표)를 줄이고 TCO를 줄일 수 있습니다. 자세한 내용은 Microsoft 담당자에게 문의하세요.</li>
+      <li><strong>SAPs&rsquo; 디지털 플랫폼에서 Azure AI 통합</strong>: SAPs&rsquo; 기계 학습 기능은 얼굴 인식 및 텍스트 인식을 위해 미리 보기에서 Azure Cognitive Services 컨테이너를 활용합니다. 컨테이너에 Cognitive Services를 배포하면 SAP는 데이터가 상주하는 실제 세계에 더 가까운 정보를 분석하고 응답성이 높고 컨텍스트적으로 인식되는 실시간 인사이트와 몰입형 환경을 제공할 수 있습니다.<br>
+      <br>
+  &ldquo;<em>SAP&rsquo; Machine Learning 팀은 Microsoft Azure Cognitive Services 팀과 협력하여 ID 유효성 검사 및 텍스트 이해 사용 사례를 해결하기 위해 컨테이너화된 비전 및 텍스트 인식 서비스를 활용하여 자체적으로 성장한 홈 및 파트너 서비스 포트폴리오를 보강하고 있습니다.&rdquo; - SAP 레오나르도의 부사장인 Sebastian Wieczorek 박사 Machine Learning Foundation</em></li>
+      <li><strong>Microsoft Azure SAP Data Custodian을 사용할 수 있습니다</strong>. 2018년 9월에 SaaS 제품인 SAP Data Custodian을 <a href="https://azure.microsoft.com/en-us/blog/sap-at-microsoft-ignite-announcing-sap-data-custodian-for-azure/">Microsoft Azure 사용할 수</a> 있도록 하겠다는 의사를 발표했습니다. 우리는 오늘 그 약속을 이행합니다. SAP와 Microsoft는 공동 고객을 위해 전례 없는 수준의 데이터 거버넌스 및 규정 준수를 제공합니다. 또한 Microsoft는 Azure에서 SAP SuccessFactors를 구현하기 위한 SAP Data Custodian의 베타 고객이 될 것입니다. 자세한 내용은 SAP에서 <a href="https://news.sap.com/2019/05/sap-data-custodian-microsoft-azure-general-availability/">이 블로그를 참조</a> 하세요.</li>
+      <li><strong>SAP HANA용 Azure Backup을 사용한 관리되는 비즈니스 연속성</strong>: SAP HANA 데이터베이스에 대한 Azure Backup 지원은 이제 공개 미리 보기로 제공됩니다. 이를 통해 고객은 백업을 위한 인프라 없이 대규모 SAP HANA 구현을 관리할 수 있습니다. 자세한 내용은 SAP HANA용 Azure Backup 설명서를 참조하세요.</li>
+      <li><strong>SAP용 Logic Apps 커넥터와의 간소화된 통합:</strong> 현재 SAP ECC 및 SAP S/4HANA용 Logic Apps 커넥터는 일반적으로 모든 고객에게 제공됩니다. Azure Logic Apps 250개 이상의 애플리케이션 및 SaaS 서비스에 대한 커넥터를 제공하는 서비스로서의 통합 플랫폼입니다. 이를 통해 고객은 SAP와 동급 최고의 SaaS 애플리케이션 간의 통합을 위해 출시 시간을 크게 줄일 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-using-sap-connector">Logic Apps SAP 커넥터 설명서를 확인하세요</a>.</li>
+      <li><strong>Azure Active Directory 및 SAP Cloud Platform을 사용하여 생산성 향상 및 보안 강화</strong>: 오늘날 Azure Active Directory SAP Cloud Platform 간의 표준 기반 통합은 미리 보기로 제공되며, 향상된 비즈니스 보안 및 환경을 지원합니다. 예를 들어 SAP Cloud Platform Identity Provisioning 및 Identity Authentication Services를 사용하는 경우 고객은 SAP SuccessFactors를 Azure Active Directory 통합하고 SAP S/4HANA와 같은 SAP 애플리케이션에 원활하게 액세스하여 엔터프라이즈 보안 요구 사항을 충족하면서 최종 사용자 생산성을 향상시킬 수 있습니다.</li>
+  </ul>
+
+
+  <h2>Azure의 SAP 혜택을 받는 고객</h2>
+
+
+  <p>Microsoft Azure 및 SAP를 사용하는 포춘지 선정 500대 기업 중 90% 이상이 SAP와의 25년 파트너십은 항상 상호 고객 성공에 관한 것이었습니다. 오늘 발표된 발표가 Azure에서 SAP를 사용하는 고객이 기존보다 훨씬 더 성장하고 혁신하는 데 도움이 될 것이라고 확신합니다. <a href="https://azure.microsoft.com/en-us/resources/sap-on-azure-forrester-tei/" target="_blank">Forresters&rsquo; Total Economic Impact Study</a> 는 Azure의 SAP 고객이 평균적으로 클라우드 투자로부터 9개월 만에 102%의 ROI를 실현할 수 있다고 밝혔습니다.</p>
+
+
+  <p>SAP 고객이 디지털 변환을 위해 Azure를 점점 더 선택하는 다섯 가지 이유와 혜택을 받는 일부 고객은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><strong>비즈니스 민첩성:</strong> Azure&rsquo; 주문형 SAP 인증 인프라를 사용하면 고객은 개발/테스트 프로세스를 가속화하고, SAP 릴리스 주기를 단축하고, 최대 비즈니스 사용량을 충족하기 위해 주문형으로 즉시 확장할 수 있습니다. <a href="https://customers.microsoft.com/en-us/story/daimler-manufacturing-azure" target="_blank">다임러 AG</a> 는 온-프레미스 환경에서 가능했던 것보다 몇 달 더 빠르게 조달 프로세스를 제공했습니다. AzureS&rsquo; M 시리즈 가상 머신의 SAP S/4HANA로 이전하여 전 세계 400,000개 공급업체를 지원합니다.</li>
+      <li><strong>효율적인 인사이트:</strong> <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcustomers.microsoft.com%2Fen-us%2Fstory%2Fdfa-consumer-goods-azure&amp;data=02%7C01%7Caziari%40we-worldwide.com%7Ce70606285bb34269137a08d6cf33a081%7C3ed60ab455674971a5341a5f0f7cc7f5%7C0%7C0%7C636924217990609296&amp;sdata=5qYFLw%2BYjF6rF5FUvlE2JhJVHbfbEOGX71OTkA%2FULPU%3D&amp;reserved=0" target="_blank">미국의 낙농가들은</a> 중요 업무용 SAP 시스템을 포함하여 18개 데이터 센터에 분산된 조각화된 IT 애플리케이션 환경을 Azure로 마이그레이션했습니다. Azure Data Services 및 PowerBI를 활용하여 원격 사용자가 간단하고 안전한 방식으로 SAP 데이터에 쉽게 액세스할 수 있도록 합니다.</li>
+      <li><strong>IoT를 사용한 실시간 작업:</strong> 산업 스레드의 세계적인 선두 주자인 <a href="https://customers.microsoft.com/en-us/story/coats" target="_blank">Coats</a>는 몇 년 전 Oracle의 SAP에서 Azure의 SAP HANA로 마이그레이션하여 Coats가 최신 IoT 기반 프로세스로 작업을 최적화할 수 있도록 했습니다. IoT 모니터링을 통해 Coats는 이제 재고, 제조 및 판매 추세를 이전보다 더 정확하게 예측합니다.</li>
+      <li><strong>AI로 혁신:</strong> 맥주 양조의 세계적인 선두 주자인 <a href="https://customers.microsoft.com/en-us/story/carlsberg-consumer-goods-azure" target="_blank">Carlsberg</a>는 중요 업무용 SAP 앱을 포함하여 엔터프라이즈 애플리케이션의 80%를 Microsoft Azure 마이그레이션했습니다. 덴마크의 연구 대학의 Azure AI 및 센서를 활용하여 Carlsbergs&rsquo; 맥주 지문 Project 통해 각 샘플에 대한 맛 지문을 매핑하고 맛 조합과 프로세스를 연구하는 데 걸리는 시간을 최대 3분의 1까지 줄여 회사가 더 뚜렷한 맥주를 더 빠르게 출시할 수 있도록 지원했습니다.</li>
+      <li><strong>중요 업무용 인프라:</strong> Coca-Cola 보틀러를 위한 서비스 팔인 <a href="https://customers.microsoft.com/en-us/story/cona-services-partner-professional-services-azure" target="_blank">CONA Services</a>는 Azure에서 24TB의 중요 업무용 SAP BW를 Azures&rsquo; 전용 SAP HANA 인프라의 HANA 시스템에서 실행하도록 선택했으며, 이는 연간 21B의 순 판매 가치를 나타내는 160,000개의 주문에 전력을 공급합니다.</li>
+  </ul>
+
+
+  <p>지난 몇 년 동안 Azure에서 중요 업무용 SAP 워크로드를 실행하는 모든 산업 및 지리적 위치의 고객을 확인했습니다. <a href="https://customers.microsoft.com/en-us/story/co-op-intelligent-customer-experience-with-sap-on-azure" target="_blank">Co-op</a>, 코카콜라, <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcustomers.microsoft.com%2Fen-us%2Fstory%2Faccenture-partner-professional-services-azure&amp;data=02%7C01%7Cbrandell%40we-worldwide.com%7C44d31fed28494c76be9108d6d00947f6%7C3ed60ab455674971a5341a5f0f7cc7f5%7C0%7C0%7C636925135621094191&amp;sdata=8n5Gu2QchMfWhs7kNAPGep76Ci7h96H%2FHj2rkeKlDKA%3D&amp;reserved=0" target="_blank">액센츄어</a>, <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcustomers.microsoft.com%2Fen-us%2Fstory%2Fmalaysia-airlines-berhad&amp;data=02%7C01%7Cbrandell%40we-worldwide.com%7C44d31fed28494c76be9108d6d00947f6%7C3ed60ab455674971a5341a5f0f7cc7f5%7C0%7C0%7C636925135621114206&amp;sdata=Zco8obSjxJrwlRjvn5MZGXrB3vYpZ9VeeOlvdIu9%2Bb8%3D&amp;reserved=0" target="_blank">말레이시아 항공</a>과 같은 소매 업종의 고객이든, 제약, <a href="https://customers.microsoft.com/en-us/story/rio-tinto-mining-azure" target="_blank">리오 틴토</a>, 데본 에너지 &amp; 의 아스<a href="https://customers.microsoft.com/en-us/story/astellas-pharma-azure-japan" target="_blank">텔라스 제약</a> 및 <a href="https://www.t-systems.com/gb/en/newsroom/press-releases/detail/t-systems-builds-sap-hana-public-cloud-for-zuellig-pharma-864412" target="_blank">젤리그 제약</a>의 고객이든&rsquo;, Azure의 SAP는 디지털 트랜스포메이션을 통해 전 세계 기업에 도움을 줍니다.</p>
+
+
+  <p>SAPPHIRE NOW에 있는 경우 <a href="https://aka.ms/SAPSAPPHIRENOW2019" target="_blank">Microsoft 부스</a> #729에서 이러한 제품 향상에 대해 알아보고 이러한 시나리오에 대한 실습 데모를 경험하세요.</p>

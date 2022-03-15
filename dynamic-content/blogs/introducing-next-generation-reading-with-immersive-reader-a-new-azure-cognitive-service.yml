@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: de7e571d6741a9b8fd7358909a2ae9d0e9da7934
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908361"
+Slug: introducing-next-generation-reading-with-immersive-reader-a-new-azure-cognitive-service
+Title: 새로운 Azure Cognitive Service인 몰입형 리더 사용하여 차세대 읽기 소개
+Summary: '오늘 언어 범주의 새로운 Azure Cognitive Service인 몰입형 리더 미리 보기를 공개합니다. 이제 개발자는 이 서비스를 사용하여 연령이나 능력에 관계없이 사용자에 대한 텍스트 읽기 및 이해력을 향상시키기 위해 앱에 포괄 기능을 포함할 수 있습니다. 기계 학습 전문 지식이 필요하지 않습니다. '
+Content: >-
+  <p><em>이 블로그 게시물은 Azure Marketing의 수석 제품 마케팅 관리자인 Tina Coll이 작성했습니다. </em></p>
+
+
+  <p>&rsquo;현재 언어 범주의 새로운 Azure Cognitive Service인 <a href="https://aka.ms/IRproductpage" target="_blank">몰입형 리더</a> 미리 보기를 공개합니다. 이제 개발자는 이 서비스를 사용하여 연령이나 능력에 관계없이 사용자에 대한 텍스트 읽기 및 이해력을 향상시키기 위해 앱에 포괄 기능을 포함할 수 있습니다. 기계 학습 전문 지식이 필요하지 않습니다. 포용성 및 접근성에 대한 광범위한 연구를 기반으로 몰입형 리더&rsquo; 기능은 텍스트를 소리 내어 읽고, 번역하고, 사용자 주의를 집중하도록 설계되었습니다. 몰입형 리더 사용자가 텍스트에서 지식을 잠금 해제하고 교실과 사무실에서 이익을 얻을 수 있도록 도와줍니다.</p>
+
+
+  <p>1,500만 명 이상의 사용자가 Microsoft&rsquo; Learning Tools, Word, Outlook 및 Teams 포함한 18개 앱 및 플랫폼에서 Microsofts 몰입형 읽기 기술을 사용합니다. 이제 개발자는 이 검증된 문해력 향상 환경을 사용자에게도 제공할 수 있습니다.</p>
+
+
+  <p>난독증이 있는 어린이인 Andrzej와 같은 사람들은 Microsoft Learning Tools와 같은 앱에 포함된 몰입형 리더 경험을 통해 읽는 법을 배웠습니다. 그의 어머니 미트라는 그들의 이야기를 들려줍니다.</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" scrolling="no" src="https://www.microsoft.com/en-us/videoplayer/embed/RE3auL9" width="560"></iframe></p>
+
+
+  <p>문해력은 지식을 잠금 해제하고 하나의&rsquo; 잠재력을 실현하는 열쇠입니다. 교육자들은 매일 교실에서 이러한 현실을 보지만, 난독증, ADHD 또는 시각 장애를 가진 사람들뿐만 아니라 신흥 독자, 비 원어민 및 기타 사람들에게는 읽기의 장애물이 일반적입니다. 모든 사람이 더 많은 것을 성취할 수 있도록 힘을 실어주는 정신으로, 몰입형 리더 기능은 독자가 이러한 어려움을 극복하는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eb0fba89-38cd-426d-aefa-6774328a2027.gif"><img alt="Immersive Reader Cognitive Services GIF" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5977754c-9718-4833-b2fb-770c7da22d5d.gif" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="cognitive Services GIF 몰입형 리더" width="640"></a></p>
+
+
+  <p>Azure는 사용하기 쉬운 AI 서비스로 이러한 유형의 환경을 제공하는 유일한 주요 클라우드 공급자입니다. Skooler, 더 나은 교육 기술을 할 임무에 ISV&ldquo;,&rdquo; 통합 몰입형 리더. Tor Henriksen, Skoolers&rsquo; CEO 및 CTO 발언으로, &ldquo;소프트웨어 개발의 27 년에서, 이것은 지금까지 수행 한 가장 쉬운 통합 weve&rsquo;이었다.&rdquo; 현재까지 여러 기업이 다음을 포함하여 앱에 몰입형 리더 포함하기 시작했습니다.<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eac1a2c4-dfab-4d39-99ee-cd1fb0d10a55.png"><img alt="Logos of businesses embedding Immersive Reader into their apps" border="0" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/44f31e6c-718b-45ba-a74d-12427826f330.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="몰입형 리더 사용하는 비즈니스 로고" width="640"></a></p>
+
+
+  <p>Andrzej와 같은 수백만 명의 사용자가 몰입형 리더 함께 쓴 단어의 힘을 발견했기 때문에, 우리는 사람들이 당신이 구축 한 것을 통해 달성 할 수있는 것을 기대합니다.</p>
+
+
+  <p>앱에 몰입형 리더 포함하기 시작하려면 <a href="https://aka.ms/IRproductpage" target="_blank">몰입형 리더 제품 페이지를</a> 방문하세요. 이 서비스는 미리 보기로 제공되는 동안 무료로 사용할 수 있습니다.</p>

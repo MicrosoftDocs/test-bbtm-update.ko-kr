@@ -1,0 +1,37 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3210edea011f8bdc75f91d985f9b675e3aaf9ed3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900957"
+Slug: project-nami-wordpress-for-azure-sql-database-sql-server
+Title: 'Project 나미: Azure SQL Database/SQL Server용 WordPress'
+Summary: WordPress가 Azure SQL Database 대해 일한다면 좋지 않을까요? 글쎄, 더 이상 기다리지.
+Content: >-
+  <p>WordPress는 인터넷에서 가장 인기 있는 웹 애플리케이션입니다. 블로깅 및 콘텐츠 관리 시스템으로 WordPress는 웹에서 상위 1,000만 개 웹 사이트의 23.3% 이상에서 사용되며 총 6천만 개 이상의 웹 사이트를 보유하고 있습니다.</p>
+
+
+  <p>WordPress가 Azure SQL Database 대해 일한다면 좋을까&rsquo;요? 글쎄, 더 이상 기다리지.</p>
+
+
+  <p><a href="https://projectnami.org/how-did-we-get-here/">Project Nami</a>는 Azure SQL Database 위해 특별히 빌드된 오픈 소스 WordPress 배포입니다. Azure SQL Database 실행하도록 설계되고 최적화된 Project Nami는 WordPress의 용이성과 Azure SQL Database V12의 성능 및 관리 용이성을 통합합니다. 인기 있는 플러그 인 모델을 기반으로 하는 Project Nami용 전체 텍스트 검색 플러그 인을 사용하면 텍스트 검색을 쉽게 개선하고 WordPress 사이트에 대한 작성자 검색을 사용할 수 있습니다.</p>
+
+
+  <p>앱에서 Project Nami WordPress 사이트에 더 많은 성능이 필요한 경우 <a href="https://projectnami.org/blob-cache/">Blob Cache</a> 플러그 인을 고려합니다. Blob Cache 플러그 인은 WordPress 또는 Project Nami 사이트의 출력을 Azure Blob Storage 저장하여 저렴한 가격대에서 캐싱 솔루션을 제공합니다.</p>
+
+
+  <p>Azure SQL Database 팀은 Project 나미의 창립자인 패트릭 베이츠&nbsp;앤드 스펜서 카메론-모린과 함께 일하는 즐거움을 누렸습니다. 패트릭&rsquo;은 자신의 단어에서 :</p>
+
+
+  <blockquote>
+
+  <p><i>Azure 플랫폼은 클라우드에서 새롭고 흥미로운 다양한 워크로드를 지원합니다. PHP&rsquo; 및 WordPress 환경에서 Microsoft 기술을 활용하는 방법을 계속 탐색하면서 이 작업의 일부가 된 것을 기쁘게 생각합니다. 사용자를 위한 SQL 전체 텍스트 검색의 기능을 활용하는 것이 처음부터 목표였으며, Azure SQL DB V12 weve&rsquo; 덕분에 이를 실현했습니다. 또한 Web Apps를 Blob Cache 시스템과 결합할 때 가장 작은 사이트와 예산조차도 단일 소형 서버와 기본 DB로 분당 수천 개의 요청을 처리할 수 있습니다.</i></p>
+
+  </blockquote>
+
+
+  <p>Project 나미에 대한 자세한 내용은 <a href="https://projectnami.org/">projectnami.org</a> 방문하거나 트위터에서 <a href="https://twitter.com/projectnami">@ProjectNami</a>팔로우하세요.</p>
+
+
+  <p>WordPress를 시작하고 Azure에서 Azure SQL Database 시작하려면 <a href="https://projectnami.org/download/">projectnami.org/download</a> 방문하여 Azure에 배포를 클릭합니다.</p>

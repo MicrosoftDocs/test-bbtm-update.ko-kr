@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9930cb584c18db5ac1e92b51b03750d8e97a13fc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901452"
+Slug: apis-are-you-missing-a-critical-piece-of-your-cloud-strategy
+Title: 'API: 클라우드 전략의 중요한 부분이 누락되었나요?'
+Summary: 디지털 자산을 제품에서 플랫폼으로 쉽게 변환할 수 있다는 것을 알고 계셨나요?
+Content: >-
+  <p>디지털 자산을 제품에서 플랫폼으로 쉽게 변환할 수 있다는 것을 알고 계셨나요? 그리고 이 과정에서 이전에는 없었던 비즈니스 모델&rsquo;에서 수익원을 만들어 새로운 방식으로 수익을 창출할 수 있나요? &ndash; 바로&rsquo; 당신은 테이블에 돈을 떠날 수 있습니다.</p>
+
+
+  <p>API&rsquo;에 대한 모든 것을 설명합니다.</p>
+
+
+  <p><img align="right" alt="" border="0" height="79" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ea6cc726-f22f-467a-83a7-8989fc6a4f74.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: right; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="" width="240">여기&rsquo; 스포츠 정보 제공 업체 <a href="https://fantasydata.com/default.aspx">인 FantasyData</a> 가 한 일 : 개인에서 신생 기업, 다양한 장치의 과다에서 스포츠 데이터에 대한 급성장하는 수요를 인식, 각각 하나 이상의 스포츠의 다른 측면에 관심이, 그들은 고객을 위해 최선을 다했다. 데이터를 열고 API를 통해 안전하게 &ndash; 사용할 수 &ndash; 있도록 했습니다. 개발자는 <a href="https://developer.fantasydata.com/documentation">API</a>를 통해 특정 스포츠(미식 축구, 야구, 농구, 하키, 축구, 프로 골프 및 대학 농구)의 통계에 액세스할 수 있습니다.</p>
+
+
+  <p>따라서 판타지 sporta에서 승리할 수 있도록 고유한 앱을 작성하려는 경우 FantasyData에는 필요한 과거 및 실시간 게임 &ndash; 내 데이터와 통계 &ndash; 가 있습니다.</p>
+
+
+  <p>그리고 이러한 API를 인증, 추적 및 관리할 수 있는 방식으로 어떻게 노출하나요? Azures&rsquo; <a href="https://azure.microsoft.com/en-us/services/api-management/">API Management 서비스를 통해.</a></p>
+
+
+  <p>Azures&rsquo; API Management Service를 사용하면 클라우드에 있든 사용자 고유의 데이터 센터에 있든 관계없이 애플리케이션 &ndash; 에 대한 RESTful API 인터페이스를 빠르게 만들고 게시할 수 있습니다. 이러한 API를 보안 인증으로 래핑하므로 허용된 사용자만 <a href="https://azure.microsoft.com/en-us/services/active-directory/">Azure Active Directory</a> 또는 다양한 <a href="https://azure.microsoft.com/en-us/marketplace/active-directory/">인터넷 인증 메커니즘</a>(Facebook, Google, Microsoft ID 및 기타 수십 개)을 사용하여 호출할 수 있습니다. 팀은 거의 실시간으로 사용량을 모니터링하고 할당량을 부과하여 과용을 방지할 수 있습니다. 이를 사용하는 사용자&rsquo;와 사용료를 첨부할 수 있는 정도를 &ndash; 알고 있으므로 새로운 수익원을 제공합니다.</p>
+
+
+  <p><img align="left" alt="" border="0" height="23" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9e4d411e-ebc3-4d5f-9220-8386f16459bf.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: left; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="" width="240">&nbsp;API의 값은 거의 과장될 수 없습니다. <a href="https://amadeus-hospitality.com/">아마데우스 호스피탈리티</a>&nbsp; 글로벌 아마데우스 IT 그룹의 일부인 (이전의 Newmarket, Inc)는 호스피탈리티 솔루션을 제공합니다. API가 Azure API Management Service를 통해 노출되면서 Amadeus Hospitality는 호텔 업계의 여행 파트너와 신속하게 통합할 수 있었습니다. 고객은 거의 모든 디바이스를 사용하여 Amadeus Hospitalitys&rsquo;의 다양한 데이터 원본에 액세스할 수 있습니다.</p>
+
+
+  <p>API에는 많은 사용 사례가 있습니다. Microsoft는 자사 Microsoft 제품과 업계 최고의 타사 솔루션을 모두 제공하여 API에 대한 강력한 옵션 에코시스템을 제공합니다. <a href="https://azure.microsoft.com/en-us/marketplace/partners/apigee/apigee-edgeapigee-edge/">Apigee</a>의 CTO인 Anant Jhingran은 API를 통해 코드와 데이터를 개발자 친화적으로 만들므로 보다 쉽게 관리 가능하고 확장 가능하며 간편하게 통합할 수 있습니다. <a href="https://www.huffingtonpost.com/anant-jhingran/youre-thinking-cloud-but-_b_10135076.html"></a> 또한 API 사용 자산(사용자가 작성하는 앱 또는 고객이 작성하는 앱)에 액세스하기 위해 완전히 새로운 애플리케이션을 만들어 기본적으로 비용 없이 자산에 가치를 추가할 수 있습니다.</p>
+
+
+  <p>많은 사람들이 클라우드가 API 경제라고 불리는 &ldquo;것을 가능하게 한다고 말했으며,&rdquo; 실제로 원래 작성자가 상상하지 못했던 방식으로 데이터와 서비스가 소비됨에 따라 API는 기존 투자에서 새로운 가치 스트림을 추출할 수 있는 메커니즘이 됩니다.</p>
+
+
+  <p>고객 또는 잠재 고객이 필요하거나 원하는 자산 &ndash; 서비스, 사용자 지정 코드, 큐레이팅된 데이터가 &ndash; 있지만&nbsp; 앱을 제공할 리소스가 없&rsquo;나요? API를 사용하여 래핑해 보세요.</p>
+
+
+  <p>API를 사용하여 애플리케이션 및 데이터 자산에서 더 많은 가치를 얻고 있나요? Wed&rsquo; love to hear from you from the comments section!</p>

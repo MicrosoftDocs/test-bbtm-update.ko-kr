@@ -1,0 +1,294 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 28676558760629115b68b0ca2ea05f82e51dc69f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901788"
+Slug: azure-media-redactor
+Title: Azure Media Analytics의 얼굴 편집 발표
+Summary: 제한된 시간 동안 무료 공개 미리 보기로 자동 얼굴 편집을 위한 Azure Media Redactor의 공개 미리 보기를 발표합니다.
+Content: >-
+  <p>Azure Media Redactor는 Azure Media Analytics의 일부이며 클라우드에서 확장 가능한 편집 기능을 제공합니다. 이 MP(미디어 프로세서)는 선택한 개인의 얼굴을 흐리게 하여 익명화를 수행하며 공공 안전 및 뉴스 미디어 시나리오에서 사용하기에 이상적입니다. 치안 및 공공 장소에서 신체 착용 카메라의 사용은 일반화되고있다, 이는 정보의 자유 또는 공공 기록 행위를 통해 공개를 요청할 때 이러한 부서에 더 큰 부담을 배치. 미성년자 나 방관자의 얼굴이 흐리게되어야하기 때문에 이러한 요청에 응답하는 데 시간과 돈이 걸립니다.</p>
+
+
+  <p>얼굴이 여러 개 있는 비디오는 몇 분 분량의 영상을 수동으로 수정하는 데 몇 시간이 걸릴 수 있습니다. 이 서비스는 수동 수정의 노동 집약적 작업을 몇 가지 간단한 터치업으로 줄일 수 있습니다.</p>
+
+
+  <h2>Azure 미디어 분석</h2>
+
+
+  <p>Azure Media Analytics는 엔터프라이즈 규모, 규정 준수, 보안 및 글로벌 범위에서 제공되는 음성 및 비전 서비스의 컬렉션입니다. Azure에서 제공하는 다른 Media Analytics 프로세서는 Milan Gadas 블로그 게시물 <a href="https://azure.microsoft.com/en-us/blog/introducing-azure-media-analytics">소개 Azure Media Analytics를 참조하세요</a>.</p>
+
+
+  <p>새 Azure Portal, 아래 사전 설정이 있는 API를 통해 또는 무료 Azure Media Services 탐색기 도구를 사용하여 이러한 기능에 액세스할 수 있습니다.</p>
+
+
+  <p>수정은 제한된 시간 동안 무료 공개 미리 보기가 되며, 9월 중순 경부터 모든 공용 데이터 센터에 제공됩니다<strong>. </strong> 중국과 US Gov 데이터 센터는 GA 릴리스에 포함됩니다.</p>
+
+
+  <h2>얼굴 편집</h2>
+
+
+  <p>얼굴 편집은 동일한 개인이 다른 각도에서도 흐리게 표시될 수 있도록 동영상의 모든 프레임에서 얼굴을 감지하고 앞뒤 시간의 얼굴 개체를 추적합니다.</p>
+
+
+  <p>편집은 여전히 컴퓨터에서 해결하기 어려운 문제입니다. 특히 조명이 낮거나 빠른 이동이 있는 어려운 비디오에서는 몇 가지 가양성 및 거짓 부정을 보는 것이 정상입니다.</p>
+
+
+  <p>자동화된 편집 결과가 100% 적용되지 않을 수 있으므로 전체 편집을 달성하기 위해 최종 출력을 수정하는 방법을 제공합니다.</p>
+
+
+  <p>완전 자동 모드 외에도 ID 목록을 통해 찾은 얼굴을 선택/선택 해제하고 JSON 형식의 메타데이터 파일을 사용하여 프레임당 임의로 조정할 수 있는 두 가지 패스 워크플로가 있습니다. 이 워크플로는 분석 및 수정 모드뿐만 아니라 한 작업에서 모두 실행되는 단일 패스 &lsquo;결합&rsquo; 모드로 분할&lsquo;됩니다.&rsquo; &lsquo;&rsquo;</p>
+
+
+  <h3>결합된 모드</h3>
+
+
+  <p>이 모드는 수동 입력 없이 자동으로 편집된 mp4를 생성합니다.</p>
+
+
+  <p>미디어 프로세서 이름: &ldquo;Azure Media Redactor&rdquo;</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="799">
+      <tbody>
+          <tr>
+              <td valign="top" width="129"><strong>단계</strong></td>
+              <td valign="top" width="175"><strong>파일 이름</strong></td>
+              <td valign="top" width="493"><strong>참고</strong></td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">입력 자산</td>
+              <td valign="top" width="175">foo.bar</td>
+              <td valign="top" width="493">WMV, MOV 또는 MP4 형식의 동영상</td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">입력 구성</td>
+              <td valign="top" width="175">작업 구성 사전 설정</td>
+              <td valign="top" width="493">{&#39;버전&#39;:&#39;1.0&#39;, &#39;옵션&#39;: {&#39;모드&#39;:&rsquo;combined&rsquo;}}</td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">출력 자산</td>
+              <td valign="top" width="175">foo_redacted.mp4</td>
+              <td valign="top" width="493">흐리게 표시하기가 적용된 동영상</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>입력 예:</p>
+
+
+  <p><iframe align="center" autoplay="allowfullscreen" frameborder="no" height="420" name="azuremediaplayer" scrolling="no" src="//aka.ms/ampembed?url=http%3A%2F%2Freferencestream-samplestream.streaming.mediaservices.windows.net%2Fed99001d-72ee-4f91-9fc0-cd530d0adbbc%2FDancing.mp4&amp;format=video%2Fmp4&amp;autoplay=false" width="750"></iframe></p>
+
+
+  <p>출력 예제:</p>
+
+
+  <p><iframe align="center" allowfullscreen="" frameborder="no" height="420" name="azuremediaplayer" scrolling="no" src="//aka.ms/ampembed?url=http%3A%2F%2Freferencestream-samplestream.streaming.mediaservices.windows.net%2Fc6608001-e5da-429b-9ec8-d69d8f3bfc79%2Fdance_redacted.mp4&amp;format=video%2Fmp4&amp;autoplay=false" width="750"></iframe></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3>분석 모드</h3>
+
+
+  <p>두 패스 워크플로의 분석&rdquo; 패스는 &ldquo;비디오 입력을 받아 얼굴 위치의 JSON 파일과 감지된 각 얼굴의 jpg 이미지를 생성합니다.</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="927">
+      <tbody>
+          <tr>
+              <td valign="top" width="129"><strong>단계</strong></td>
+              <td valign="top" width="478"><strong>파일 이름</strong></td>
+              <td valign="top" width="318"><strong>참고</strong></td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">입력 자산</td>
+              <td valign="top" width="478">foo.bar</td>
+              <td valign="top" width="318">WMV, MPV 또는 MP4 형식의 동영상</td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">입력 구성</td>
+              <td valign="top" width="478">작업 구성 사전 설정</td>
+              <td valign="top" width="318">{&#39;버전&#39;:&#39;1.0&#39;, &#39;옵션&#39;: {&#39;모드&#39;:&rsquo;analyze&rsquo;}}</td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">출력 자산</td>
+              <td valign="top" width="478">foo_annotations.json</td>
+              <td valign="top" width="318">얼굴 위치의 주석 데이터(JSON 형식). 사용자가 흐리게 표시하는 테두리 상자를 수정하기 위해 편집할 수 있습니다. 아래 샘플을 참조하세요.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">출력 자산</td>
+              <td valign="top" width="478">foo_thumb%06d.jpg [foo_thumb000001.jpg, foo_thumb000002.jpg]</td>
+              <td valign="top" width="318">검색된 각 얼굴을 잘라낸 jpg(숫자는 얼굴의 레이블 ID)</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p><b>출력 예제:</b></p>
+
+
+  <p><a href="https://referencestream-samplestream.streaming.mediaservices.windows.net/3ce00098-1f60-4b8f-a888-fda0cac0d92f/dance.json">전체 다운로드</a></p>
+
+
+  <p>{<br>
+
+  &nbsp;&quot;버전&quot;: 1,<br>
+
+  &nbsp;&quot;timescale&quot;: 50,<br>
+
+  &nbsp;&quot;offset&quot;: 0,<br>
+
+  &nbsp;&quot;framerate&quot;: 25.0,<br>
+
+  &nbsp;&quot;width&quot;: 1280,<br>
+
+  &nbsp;&quot;높이&quot;: 720,<br>
+
+  &nbsp;&quot;&quot;조각: [<br>
+
+  &nbsp;&nbsp;&nbsp; {<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;start&quot;: 0,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;기간&quot;: 2,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;간격&quot;: 2,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;events&quot;: [<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [&nbsp;<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;id&quot;: 1,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;x&quot;: 0.306415737,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;y&quot;: 0.03199235,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;width&quot;: 0.15357475,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;height&quot;: 0.322126418<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;id&quot;: 2,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;x&quot;: 0.5625317,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;y&quot;: 0.0868245438,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;width&quot;: 0.149155334,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;height&quot;: 0.355517566<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]<br>
+
+  &nbsp;&nbsp;&nbsp; },</p>
+
+
+  <p>&hellip; 잘린</p>
+
+
+  <h3>편집 모드</h3>
+
+
+  <p>워크플로의 두 번째 단계에서는 하나의 자산으로 결합해야 하는 여러 입력을 사용합니다.</p>
+
+
+  <p>여기에는 흐리게 표시할 ID 목록, 원본 동영상 및 주석 JSON이 포함됩니다. 이 모드에서는 주석을 사용하여 입력 동영상에 흐리게 표시를 적용합니다.</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="1166">
+      <tbody>
+          <tr>
+              <td valign="top" width="129"><strong>단계</strong></td>
+              <td valign="top" width="350"><strong>파일 이름</strong></td>
+              <td valign="top" width="685"><strong>참고</strong></td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">입력 자산</td>
+              <td valign="top" width="350">foo.bar</td>
+              <td valign="top" width="685">WMV, MPV 또는 MP4 형식의 동영상. 1단계와 동일한 동영상입니다.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">입력 자산</td>
+              <td valign="top" width="350">foo_annotations.json</td>
+              <td valign="top" width="685">1단계의 주석 메타데이터 파일 및 수정 사항(선택 사항)</td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">입력 자산</td>
+              <td valign="top" width="350">foo_IDList.txt(선택 사항)</td>
+              <td valign="top" width="685">줄로 구분된 편집할 얼굴 ID의 새 목록(선택 사항). 비워 두면 모든 얼굴이 흐리게 표시됩니다.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">입력 구성</td>
+              <td valign="top" width="350">작업 구성 사전 설정</td>
+              <td valign="top" width="685">{&#39;버전&#39;:&#39;1.0&#39;, &#39;옵션&#39;: {&#39;모드&#39;:&rsquo;redact&rsquo;}}</td>
+          </tr>
+          <tr>
+              <td valign="top" width="129">출력 자산</td>
+              <td valign="top" width="350">foo_redacted.mp4</td>
+              <td valign="top" width="685">주석을 기반으로 흐리게 표시하기가 적용된 동영상</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h3>&nbsp;</h3>
+
+
+  <h3>예제 출력</h3>
+
+
+  <p>IDList에서 하나의 ID가 선택된 출력입니다.</p>
+
+
+  <p><iframe align="center" allowfullscreen="" frameborder="no" height="420" name="azuremediaplayer" scrolling="no" src="//aka.ms/ampembed?url=http%3A%2F%2Freferencestream-samplestream.streaming.mediaservices.windows.net%2Fad6e24a2-4f9c-46ee-9fa7-bf05e20d19ac%2Fdance_redacted1.mp4&amp;format=video%2Fmp4&amp;autoplay=false" width="720"></iframe></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3>주석 이해</h3>
+
+
+  <p>편집 MP는 한 동영상 프레임 내에서 최대 64명의 얼굴을 검색할 수 있는 고정밀도 얼굴 위치 검색 및 추적을 제공합니다. 정면이 최상의 결과를 제공하며 측면 또는 작은 얼굴(24x24 픽셀보다 작거나 같음)의 경우에는 어려울 수 있습니다.</p>
+
+
+  <p>감지되고 추적된 얼굴은 얼굴의 위치를 나타내는 좌표&nbsp; 와 해당 개인의 추적을 나타내는 얼굴 ID 번호와 함께 반환됩니다. 얼굴 ID 번호는 프레임 안에 정면 얼굴이 없거나 겹쳐진 상황에서 재설정될 가능성이 크므로 결과적으로 일부 사용자에게 여러 ID가 할당될 수 있습니다.</p>
+
+
+  <p>각 특성에 대한 자세한 설명은 <a href="https://azure.microsoft.com/en-us/blog/face-and-emotion-detection/">Face Detector 블로그</a>를 참조하세요.</p>
+
+
+  <h3>시작</h3>
+
+
+  <p>이 서비스를 사용하려면 azure 구독 내에서 Media Services 계정을 만들고 <a href="https://azure.microsoft.com/en-us/develop/media-services/">REST API/SDK</a> 또는&nbsp; <a href="https://aka.ms/amse">Azure Media Services 탐색기</a>(v3.44.0.0 이상)를 사용합니다.</p>
+
+
+  <p>샘플 코드의 경우 <a href="https://azure.microsoft.com/en-us/documentation/articles/media-services-face-and-emotion-detection/">설명서 페이지에서</a> 샘플 코드를 확인하고 사전 설정을 위의 코드와 미디어 프로세서 이름 &ldquo;Azure Media Redactor&rdquo;로 바꿉니다.</p>
+
+
+  <h3>문의처</h3>
+
+
+  <p>얼굴 감지 미디어 프로세서 및 Media Analytics 이니셔티브에 대한 추가 업데이트를 들으려면 <a href="https://azure.microsoft.com/en-us/blog/topics/media-services-2/">Azure Media Services 블로그</a>를 계속 진행하세요!</p>
+
+
+  <p>사용자 의견 및 기능 요청을 <a href="https://feedback.azure.com/forums/169396-azure-media-services/category/146181-media-analytics">UserVoice 페이지</a>로 보냅니다.</p>
+
+
+  <p>Media Analytics 제품에 대한 질문이 있는 경우 전자 메일을 <a href="mailto:toamsanalytics@microsoft.com">amsanalytics@microsoft.com</a>보냅니다.</p>

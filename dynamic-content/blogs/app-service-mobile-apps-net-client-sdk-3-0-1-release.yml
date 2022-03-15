@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5f0de2c01444a60aa2db1734a78845a4affe2f37
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901438"
+Slug: app-service-mobile-apps-net-client-sdk-3-0-1-release
+Title: App Service Mobile Apps .NET 클라이언트 SDK 3.0.1 릴리스
+Summary: 방금 .NET Mobile Client SDK 3.0.1 및 Mobile SQLiteStore 3.0.1을 출시했습니다. 베타 버전을 사용하고, Android SQLiteStore 종속성 문제를 해결했으며, .NET 클라이언트 SDK 버전을 통합했습니다.
+Content: <p><a href="https://www.nuget.org/packages/Microsoft.Azure.Mobile.Client/3.0.1">방금 Azure Mobile Client SDK 3.0.1</a> 및 <a href="https://www.nuget.org/packages/Microsoft.Azure.Mobile.Client.SQLiteStore/3.0.1">AzureMobile SQLiteStore 3.0.1</a>을 출시했습니다.<a href="https://www.nuget.org/packages/Microsoft.Azure.Mobile.Client.SQLiteStore/3.0.1">&nbsp;</a> 베타 버전이 부족하고, Android SQLiteStore 종속성 문제가 해결되었으며, .NET 클라이언트 SDK 버전이 통합되었습니다.&nbsp; <a href="https://blogs.msdn.microsoft.com/appserviceteam/2016/10/06/app-service-mobile-apps-net-client-sdk-3-0-1-release/">App Service 팀 블로그</a>에서 업데이트에 대해 자세히 알아봅니다.</p>

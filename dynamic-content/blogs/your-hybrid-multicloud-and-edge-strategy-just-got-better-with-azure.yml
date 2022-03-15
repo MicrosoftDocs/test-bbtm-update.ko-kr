@@ -1,0 +1,100 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ef8143f162f0cc0e99d104a61239d94d7babb338
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907425"
+Slug: your-hybrid-multicloud-and-edge-strategy-just-got-better-with-azure
+Title: Azure에서 하이브리드, 다중 클라우드 및 에지 전략이 개선되었습니다.
+Summary: 이번 주 Microsoft Ignite에서는 하이브리드, 다중 클라우드 및 에지 컴퓨팅의 최신 기능과 혁신을 강조합니다. 엔드 투 엔드 데이터 기능 및 클라우드 네이티브 애플리케이션에서 기능 간 협업에 이르기까지 Microsoft 클라우드 기술은 고객이 빠르게 변화하는 고객의 요구를 충족하기 위해 솔루션과 서비스를 더 빠르게 제공할 수 있도록 지원합니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ca2a6ff-7335-48f9-9d76-51811c49e576.png"><img alt="A white image filled with pink, red, organge, and blue squares" border="0" height="427" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0d253bf-0831-40e8-9009-8358c418e1c8.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="125594_MS_InnovateAnywhere_MulticloudEdge_Theme2_HeroBlog_4800x2000" width="1024"></a></p>
+
+
+  <p>Azure 팀에 있는 것에 대해 가장 좋아하는 것 중 하나는 새로운 혁신에 대한 흥분과 고객이 이를 사용하여 새로운 기회를 포착하는 방법입니다. 지난 몇 년 동안, 우리는&rsquo; 모두 우리가 일하는 방식과 디지털 트랜스포메이션에 대한 생각을 바꾸어 겪은 예기치 않은 도전에 직면했습니다. 이제 그 어느 때보다도 디지털 기술은 고객이 비즈니스를 수행하는 방식을 해결하는 핵심입니다. 이것이&rsquo; 제가 Azure 팀에 합류하기를 열망했던 이유 중 하나이며, Im&rsquo;이 올해&rsquo; <a href="https://myignite.microsoft.com/home" target="_blank">Microsoft Ignite</a>에 대해 매우 흥분한 이유 중 하나입니다. 클라우드 컴퓨팅이 보편화됨에 따라 Microsoft는 고객이 비즈니스 전반에서 혁신을 주도하고 고객&rsquo; 환경을 개선할 수 있는 엄청난 기회를 보고 있습니다.</p>
+
+
+  <p><a href="https://www.microsoft.com/microsoft-cloud" target="_blank">Microsoft Cloud</a>는 이러한 혁신과 혁신을 실현하기 위해 가장 신뢰할 수 있고 포괄적인 클라우드를 제공하기 위해 노력하고 있습니다. 그래서&rsquo; 모든 유형의&mdash; 조직이 중소기업, 정부 및 비영리 단체를 포춘 지 선정 500대 기업에&mdash; 기술 공급자로 선정합니다. 올해 초 팀에 합류한 이후 Im&rsquo;은 고객이 불과 몇 년 전에도 상상할 수 없는 도달 범위를 벗어난 제품과 서비스를 개발하는 것을 보면서 매일 영감을 받았습니다.</p>
+
+
+  <p>이번 주 Microsoft Ignite에서는 하이브리드,&rsquo; <a href="https://azure.microsoft.com/en-us/solutions/hybrid-cloud-app/" target="_blank">다중 클라우드 및 에지 컴퓨팅</a>의 최신 기능과 혁신을 강조 표시합니다. 엔드 투 엔드 데이터 기능 및 클라우드 네이티브 애플리케이션에서 기능 간 협업에 이르기까지 Microsoft 클라우드 기술은 고객이 빠르게 변화하는 요구 사항을 충족하기 위해 솔루션과 서비스를 더 빠르게 제공할 수&rsquo; 있도록 지원합니다.</p>
+
+
+  <p>오늘이 블로그에서, 나는이 영역의 모든 하나에 걸쳐 공지 사항을 공유하는 즐거움을 가지고있다. 오늘날 새로운 기능&rsquo;과 Microsoft Cloud 및 Azure가 어떻게 고객이 혁신을 혁신&mdash;하고 가장 필요로 하는 곳에서 혁신을 실현할 수 있도록 역량을 강화하는지에 대해 자세히 알아보세요.</p>
+
+
+  <h2>Azure Arc를 사용하여 하이브리드 및 다중 클라우드 환경에 포괄적인 Azure 기능 제공</h2>
+
+
+  <p>고객은 온-프레미스, 에지 및 다중 클라우드 환경에 분산된 여러 위치에 수십, 수백 또는 수천 개의 서버, 다양한 애플리케이션 및 데이터베이스를 보유하고 있습니다. 주요 과제 중 하나는 분산 환경을 일관되게 보호 및 관리하고 클라우드 네이티브 기술을 사용하여 혁신적인 애플리케이션을 구축하는 것입니다.</p>
+
+
+  <p>Azure Arc를 사용하면 고객은 데이터 센터, 에지 또는 다중 클라우드의 Windows, Linux, SQL Server 및 Kubernetes 배포에 대한 Azures&rsquo; 포괄적인 보안, 거버넌스 및 관리 기능을 활용할 수 있습니다. 또한 Azure Arc를 사용하면 고객이 자사 Azure 애플리케이션, 데이터 및 기계 학습 서비스를 사용하여 모든 환경에서 혁신적이고 지능적인 애플리케이션을 빌드할 수 있습니다.</p>
+
+
+  <p>오늘날 수천 명의 고객이 다양한 시나리오에서 Azure Arc를 사용하게 되어 기쁩니다. 캐나다 최대 은행인 <a href="https://aka.ms/rbccanadastory" target="_blank">캐나다 왕립 은행은</a> <a href="https://azure.microsoft.com/en-us/services/azure-arc/hybrid-data-services/" target="_blank">Azure Arc 지원 데이터 서비스를</a> 사용하여 항상 최신 클라우드 네이티브 데이터 서비스를 활용하여 대규모 데이터 자산을 현대화하고 있습니다. 5개 대륙에 있는 <a href="https://www.mapfre.com/" target="_blank">글로벌 보험 회사인 MAPFRE</a>는 전 세계 데이터 센터에 분산된 수천 개의 Windows 및 Linux 서버를 보호하고 관리하기 위해 Azure Arc를 선택했습니다.</p>
+
+
+  <p>Microsoft Ignite&rsquo;에서는 하이브리드 및 다중 클라우드 제품에 대한 몇 가지 새로운 기능을 발표했습니다.</p>
+
+
+  <ul>
+      <li><strong>VMware vSphere 및 Azure Stack HCI의 Azure Arc:</strong> VMware vSphere 및 Azure Stack HCI 시스템을 사용하는 고객은 Azure Arc를 사용하여 기존 VM(가상 머신) 및 Kubernetes를 보호하고 제어할 수 있습니다. 현재 Azure&rsquo; Portal에서 온-프레미스에서 VMware vSphere 및 Azure Stack HCI 배포의 <a href="https://aka.ms/arc-vmware-blog" target="_blank">VM 수명 주기 관리</a> 미리 보기를 발표했습니다. 즉, 온-프레미스 배포를 Azure VMware Solutions로 마이그레이션하는 고객은 Azure Portal에서 VM의 수명 주기 관리를 수행할 수도 있습니다.</li>
+      <li><strong>Azure Arc 지원 Machine Learning 기능 업데이트: </strong>고객은 Azure Arc에서 사용하도록 설정된 Azure Machine Learning 사용하여 어디서나 기계 학습 모델을 학습시킬 수 있습니다. &rsquo;이제 미리 보기에서 추론을 수행하여 어디서나 ML 모델을 사용하여 예측을 사용하도록 설정하는 기능을 추가했습니다.</li>
+      <li><strong>Azure Arc 지원 SQL Managed Instance 업데이트: </strong>&rsquo;고객이 Azure에서 데이터베이스를 배포, 관리 및 보호하는 데 도움이 되도록 Azure Arc를 통해 <a href="https://aka.ms/ArcTCArcDataDirectMode-Ignite2021-Blog" target="_blank">직접 연결된 모드</a>를 일반적으로 사용할 수 있도록 합니다. 이를 통해 고객은 연결 및 연결이 끊긴 모드에서 Azure Arc 지원 데이터베이스를 유연하게 실행할 수 있습니다.</li>
+      <li><strong>Azure Stack HCI용 Azure Virtual Desktop:</strong> 대기 시간 또는 규정상의 이유로 최신 클라우드 기반 데스크톱 및 앱 가상화 솔루션을 온-프레미스에 원하는 고객의 경우 <a href="https://aka.ms/AVD-Ignite2021-BlogPost" target="_blank">Azure Stack HCI용 Azure Virtual Desktop</a>의 미리 보기를 발표하게 되어 기쁘게 생각합니다.</li>
+      <li><strong>다중 클라우드용 Microsoft Defender 시나리오:</strong> 이제 <a href="https://aka.ms/DefenderForCloudIgnite21" target="_blank">클라우드용 Microsoft Defender</a> 는 CSPM(Cloud Security Posture Management) 및 워크로드 보호 기능을 AWS(Amazon Web Services)로 확장하여 고객이 단일 위치에서 다중 클라우드 환경을 보호할 수 있도록 합니다.</li>
+      <li><strong>Azure Arc 시나리오를 지원하는 AMMP(Azure 마이그레이션 및 현대화 프로그램) : </strong> 수천 명의 고객이 <a href="https://azure.microsoft.com/en-us/migration/migration-modernization-program/" target="_blank">AMMP를 사용하여 클라우드 여정</a>을 가속화했으며, <a href="https://aka.ms/IgniteNov21/MigrateModernizeBlog" target="_blank">이 프로그램은 Azure Arc가 지원되는 시나리오가 될 것이라고 발표했습니다</a>.</li>
+  </ul>
+
+
+  <h2>포괄적인 Azure 데이터 기능을 사용하여 비즈니스 혁신 및 미래 준비</h2>
+
+
+  <p>Azure는 어디서나 혁신을 강화하고 모든 비즈니스를 혁신할 수 있는 엔드 투 엔드 데이터 기능을 제공합니다. 이번 주에는 고객이 미래를 준비하고 혁신적 성공을 보장할 수 있도록 몇 가지 공지 사항이 있습니다.</p>
+
+
+  <ul>
+      <li><strong>Azure Synapse 내에서 향상된 기능(미리 보기):</strong> Azure Synapse Link for Dataverse의 일반 공급으로, 높은 가치의 Microsoft Dynamics 365 데이터로 <a href="https://powerplatform.microsoft.com/en-us/dataverse/?ef_id=c7f95cbc45f311e670a53dd2b860337d:G:s&amp;OCID=AID2200053_SEM_c7f95cbc45f311e670a53dd2b860337d:G:s&amp;msclkid=c7f95cbc45f311e670a53dd2b860337d" target="_blank">즉각적인 인사이트를 얻을 수</a> 있으며, SQL Server 2022년 Azure Synapse Link의 미리 보기를 사용할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-connect-azure-data-explorer" target="_blank">Azure Synapse Data Explorer</a> 는 이제 Azure Synapse&#39;통합 분석 플랫폼의 일부이므로 고객은 머신 및 사용자 데이터에 쉽게 액세스하여 비즈니스 의사 결정을 개선할 수 있습니다.</li>
+      <li><strong>통합 데이터 거버넌스를 위한 Azure Purview: </strong> 포괄적인 데이터 거버넌스 서비스에 대한 증가하는 요구를 충족하기 위해 Azure Purview는 조직이 어디에 있든 데이터를 완전히 이해할 수&rsquo; 있도록 지원합니다. Azure Purview는 일반 공급 이후 고객이 이미 570억 개 이상의 데이터 자산을 검색하는 데 도움을 주었습니다.&nbsp;</li>
+      <li><strong>SQL Server 2022(제어 미리 보기):</strong> 가장 유연하고 확장 가능하며 클라우드에 연결된 SQL Server 릴리스인 2022년 SQL Server 이제 제어된 미리 보기에서 사용할 수 있습니다. SQL Server 2022는 그 어느 때보다 간편한 클라우드 통합을 제공하며 Linux, Windows 및 Kubernetes를 비롯한 언어 및 플랫폼 전반에서 선택과 유연성을 제공합니다.</li>
+  </ul>
+
+
+  <h2>클라우드에서 에지로 복원 가능하고 확장성이 뛰어난 혁신적인 애플리케이션 빌드</h2>
+
+
+  <p>Microsoft 기술을 통해 개발자는 아이디어에서 가치로 시간을 단축하는 동급 최고의 도구와 플랫폼을 사용하여 고객과 비즈니스의 실제 요구 사항을 해결할 수 있습니다. 클라우드 네이티브 개발은 클라우드 및 에지에서 이식성을 가능하게 하면서 복원력이 뛰어나고 동적으로 확장 가능한 분산 애플리케이션을 용이하게 합니다. <a href="https://azure.microsoft.com/en-us/services/kubernetes-service/" target="_blank">AKS(Azure Kubernetes Service)</a>, <a href="https://azure.microsoft.com/en-us/free/cosmos-db/search/?OCID=AID2200277_SEM_4b66c6ca94281043d2c8a79105c0c3dc:G:s&amp;ef_id=4b66c6ca94281043d2c8a79105c0c3dc:G:s&amp;msclkid=4b66c6ca94281043d2c8a79105c0c3dc" target="_blank">Azure Cosmos DB</a> 및 흥미로운 새로운 클라우드 네이티브 <a href="https://aka.ms/containerapps/ignite-blog" target="_blank">Azure Container Apps</a> 서비스를 통해 대규모 혁신을 추진할 수 있습니다.</p>
+
+
+  <p>예를 들어, 월마트&rsquo; 전자 상거래 플랫폼은 연간 매출에서 수십억 달러를 창출하고 작년에 79% 성장했습니다. 이 회사는 페타바이트 규모로 밀리초 대기 시간을 제공하고 바쁜 휴가 기간 동안 5개의 99개(99.999%)의 가용성으로 수십억 개의 일일 요청을 처리할 수 있는 클라우드 네이티브 데이터베이스가 필요했습니다. Walmart.com 온라인 트랜잭션에 Azure Cosmos DB를 사용했으며, 매우 높은 가용성 및 10ms 미만의 대기 시간을 위해 다중 지역 쓰기를 활용하여 수백만 명의 고객에게 원하는 항목과 예상되는 환경을 제공했습니다.</p>
+
+
+  <h2>부서간 협업을 강화하고 앱을 더 빠르게 제공하는 Fusion 팀 만들기</h2>
+
+
+  <p>IT 조직 내에서 앱 및 서비스를 효율적으로 제공하는 것이 가장 중요합니다. 이러한 앱을 개발하는 속도와 비용은 전달되는 항목과 그렇지 않은&rsquo; 항목에 대한 절차 결정을 강제로 내릴 수 있습니다. 조직에 퓨전 팀을 도입하면 앱 격차 문제를 해결하고 사용자가 원하는 앱과 필요한 앱을 얻을 수 있습니다. Fusion 팀은 IT 전문가를 비즈니스의 프로 개발자 및 제조업체와 연결하여 기존 개발보다 더 빠르게 코드가 낮은 앱을 빌드합니다.</p>
+
+
+  <p>퓨전 팀을 사용하도록 설정하기 위해 <a href="https://aka.ms/IgniteNov21/PowerPlatformBlog" target="_blank">이제 Microsoft Power Platform의 주요 새로운 기능을</a> 사용하여 제조업체와 개발자 간의 협업을 강화하고, Microsoft Power Fx를 통해 코드를 가속화하고, Power Apps 앱 스토어에 브랜드 앱을 배포하고, 고객이 선불 라이선스를 획득하지 않고도 Azure 구독을 사용하여 Power Apps 배포할 수 있습니다.</p>
+
+
+  <p>Power Platform을 Microsoft Teams 및 주요 Azure 서비스&mdash; 같은 Functions 및 API Managementcan&mdash;과 함께 사용하면 조직이&rsquo; 더 빠른 ROI, 출시 시간 단축 및 <a href="https://info.microsoft.com/ww-forresterTEI-microsoft-power-apps-and-azure.html" target="_blank">전반적인 개발 비용 절감</a>을 통해 <a href="https://azure.microsoft.com/en-us/solutions/low-code-application-development/" target="_blank">낮은 코드 애플리케이션 개발 가치를</a> 높일 수 있습니다.</p>
+
+
+  <h2>가상 Microsoft Ignite 환경에 참여하세요.</h2>
+
+
+  <p>Im&rsquo;은 이번 주&rsquo; 업데이트가 하이브리드, 멀티 클라우드 및 에지에 걸쳐 고객에게 가져올 가능성과 미래의 혁신에 대해 기쁘게 생각합니다.</p>
+
+
+  <p>&rsquo;이미 <a href="https://myignite.microsoft.com/home" target="_blank">Microsoft Ignite</a>에 등록되어 있으며 이번 주에 가상 환경에 참여하여 Microsoft 클라우드 전문가와 연결하고 참여할 계획입니다. 그리고 Scott Guthries&rsquo; 테마 세션을 시청하여 멀티 클라우드에서 에지&rsquo;까지 혁신하는 방법에 대해 알아보고 놀라운 고객 이야기를 듣고 이러한 발표에 대해 자세히 알아보세요. 또한 <a href="https://azure.microsoft.com/en-us/solutions/hybrid-cloud-app/" target="_blank">Azure 하이브리드 및 다중 클라우드 솔루션을</a> 방문하여 고유한 전략을 발전시키고 혁신이 필요한 곳에서 워크로드를 원활하게 빌드, 배포 및 관리하는 데 도움이 되는 것이 좋습니다.</p>
+
+
+  <p>가상 세션의 좋은 주를 가지고!</p>
+
+
+  <hr>
+
+  <p><em>Azure. 목적에 따라 발명.</em></p>

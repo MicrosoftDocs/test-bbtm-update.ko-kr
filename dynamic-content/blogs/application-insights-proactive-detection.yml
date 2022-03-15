@@ -1,0 +1,70 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e5e3dff4823d90115a7888ae3faa865593d0b14d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907921"
+Slug: application-insights-proactive-detection
+Title: 애플리케이션 Insights 자동 관리 검색
+Summary: 이제 애플리케이션 Insights 자동 관리 검색 사용하여 원격 분석을 자동으로 분석하고 성능 문제가 발견되면 알려 줍니다.
+Content: >-
+  <p>&rsquo;현재<a href="https://azure.microsoft.com/services/application-insights/">는 Visual Studio 애플리케이션 Insights</a> 성능 분석을 다음 단계로 끌어올리고 있습니다. 자동 관리 검색 애플리케이션 Insights 원격 분석에서 비정상적인 패턴을 자동으로 검색하는 새로운 기능입니다. 설정이나 구성이&rsquo; 없습니다. 애플리케이션에서 충분한 원격 분석을 보내면 매일 자동으로 분석됩니다.</p>
+
+
+  <p>예를 들어 앱이 일부 OS 버전에서 느리게 로드되거나 특정 지리적 위치에서&rsquo; 응답이 느린 경우 이에 대한 전자 메일을 받게 됩니다. 자동 관리 검색 기계 학습 및 데이터 마이닝은 감지 &ndash; 하기 어렵고 고객이 불만을 제기할 때만 검색되는 문제를 찾는 데 도움이 됩니다.</p>
+
+
+  <p>다음은&rsquo; 받을 수 있는 전자 메일의 예입니다.</p>
+
+
+  <p><img alt="blog1" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/85442e50-963c-45b9-96fb-ae929257a333.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="blog1" width="444"></p>
+
+
+  <p>이와 같은 문제는 생각보다 더 일반적이며 고객이 불만을 제기할 때만 표시되는 경우가 많습니다. 그 때까지, 그것은&rsquo; 너무 늦게: 그들은 이미 당신의 경쟁자로 전환, 또는 더 나쁜, 나쁜 리뷰를 작성!</p>
+
+
+  <h2>구성 필요 없음</h2>
+
+
+  <p>애플리케이션이 애플리케이션 Insights 충분한 성능 원격 분석을 보내는 경우 자동 관리 검색 매일 자동으로 분석합니다. 애플리케이션에서 비정상적인 성능을 감지하면 사용자에게 알립니다. &rsquo;이를 사용하도록 설정하거나 임계값 또는 규칙을 설정할 필요가 없습니다.</p>
+
+
+  <p>현재 자동 관리 검색 <a href="https://azure.microsoft.com/documentation/articles/app-insights-javascript/">페이지 보기</a> 로드 시간, 서버의 요청 응답 시간(애플리케이션 Insights <a href="https://azure.microsoft.com/documentation/articles/app-insights-asp-net/#selector1">SDK</a> 또는 <a href="https://azure.microsoft.com/documentation/articles/app-insights-monitor-performance-live-website-now/">상태 모니터</a>를 사용하여 수집됨) 및 <a href="https://azure.microsoft.com/documentation/articles/app-insights-asp-net-dependencies/#selector1">종속성 응답 시간을</a> 분석합니다(추가 작업 포함).</p>
+
+
+  <p>자동 관리 검색 블레이드의 설정 사용하여 리소스 관리자가 기본값으로 사용하는 전자 메일 받는 사람 목록을 구성할 수 <a href="https://azure.microsoft.com/documentation/articles/app-insights-resources-roles-access-control/">있습니다</a>.</p>
+
+
+  <p>볼륨 요구 사항으로 인해 서비스/앱에 트래픽이 적거나, 개발 중인 디버깅이 있거나,&rsquo; 전반적으로 실제로 잘 수행되는 경우 자동 관리 검색 표시되지 않을&rsquo; 것입니다.</p>
+
+
+  <h2>자동 관리 검색 발견한 문제 조사</h2>
+
+
+  <p>&rsquo;애플리케이션 Insights&rsquo; 문제를 정의하는 속성에서 필터링되므로 알림에서 관련 보고서 및 이벤트로 쉽게 가져올 수 있습니다.</p>
+
+
+  <p>이메일(또는 서비스 개요 블레이드)에서 Azure Portal에서 자동 관리 검색 블레이드를 엽니다.</p>
+
+
+  <p><img alt="blog2" border="0" height="286" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b2766a6f-a26e-4945-a7bf-352e9c073e9f.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="blog2" width="610"></p>
+
+
+  <p>여기에서 각 알림을 클릭하여 관련 차트를 확인하여 문제를 심사하고 진단하는 데 도움이 됩니다. 예를 들어 느린 페이지 로드에 대한 알림에서 페이지 로드 메트릭 또는 개별 이벤트에 연결할 수 있습니다. 문제를 정의하는 속성(지리적 위치, OS 버전 등)으로 필터링됩니다.</p>
+
+
+  <p>다음은 자동 관리 검색 감지하는 데 도움이 될 수 있는 문제의 몇 가지 예입니다.</p>
+
+
+  <ul>
+   <li>웹 애플리케이션의 페이지 로드 시간이 느린 브라우저 버전은 이 브라우저 버전에서 &ndash; 예상대로 수행하지 않는&rsquo; 일부 기능을 나타낼 수 있습니다.</li>
+   <li>애플리케이션의 작업은 사용자 환경에 영향을 미치는 작업을 실행하는 데 너무 오래 걸립니다.</li>
+   <li>웹 사이트의 &ndash; 다른 페이지보다 페이지를 로드하는 데 시간이 훨씬 오래 걸리면 특정 페이지에 너무 많은 콘텐츠가 로드되어 발생할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>요약</h2>
+
+
+  <p>자동 관리 검색 애플리케이션에서 문제를 감지하는 새로운 사전 예방적이고 자동화된 방법을 소개합니다. &rsquo;여러분의 의견을 듣고 싶어 하므로 자동 관리 검색 도움이 되는 방법, 개선할 수 있는 방법 또는 추가하려는 추가 기능을 알려주세요. 아래의 의견 섹션이나 팀 이메일을 <a href="mailto:AppInsightsML@microsoft.com">AppInsightsML@microsoft.com</a>통해 피드백을 제공할 수 있습니다.</p>

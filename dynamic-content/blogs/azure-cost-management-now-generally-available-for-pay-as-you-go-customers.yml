@@ -1,0 +1,77 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d694a493c344e2f37cf39a1a5398e29a135a7875
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908657"
+Slug: azure-cost-management-now-generally-available-for-pay-as-you-go-customers
+Title: Azure Cost Management는 이제 종량제 고객에게 일반 공급됩니다.
+Summary: '클라우드 비용을 분석하고 사전에 관리하는 기능을 크게 향상시킬 모든 종량제 및 Azure Government 고객에 대한 Azure Cost Management 기능의 일반 공급에 대해 발표하게 되어 기쁩니다. '
+Content: >-
+  <p>클라우드 비용을 분석하고 사전에 관리하는 기능을 크게 향상시킬 모든 종량제 및 Azure Government 고객에 대한 Azure Cost Management 기능의 일반 공급에 대해 발표하게 되어 기쁩니다. 이러한 기능을 사용하면 비용 데이터를 분석하고, 클라우드 비용에 대한 책임을 추진하도록 예산을 구성하고, 미리 구성된 보고서를 일정에 따라 내보내 사용자 고유의 시스템 내에서 심층적인 데이터 분석을 지원할 수 있습니다. 또한 종량제 고객에 대한 이 릴리스는 청구서에 적용되는 모든 요금의 사용량 csv 다운로드를 통해 Azure Portal에서 청구서 조정 지원을 제공합니다.</p>
+
+
+  <h2>새로운 기능</h2>
+
+
+  <h3>청구서 조정을 위한 Azure 사용량 다운로드</h3>
+
+
+  <p>종량제 고객을 위한 이 일반 공급의 일환으로, 이제 Azure Portal에서 사용량 다운로드 기능을 제공하고 있습니다. 이 다운로드 가능한 csv 파일을 사용하여 월별 청구서와 요금을 조정할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/014ca6f4-bee1-4614-bca6-1306f45fc678.png"><img alt="Azure Usage Download for invoice reconciliation" border="0" height="566" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/288ed90f-b973-4305-a178-a4487bf0226c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="청구서 조정을 위한 Azure 사용량 다운로드" width="1193"></a></p>
+
+
+  <p>이제 개발자가 사용할 수 있는 새 API에서 사용량 다운로드 파일에 액세스할 수도 있습니다. 사용량 다운로드를 포함하여 API를 기반으로 개발하는 방법에 대한 자세한 내용은 Azure REST API 설명서를 참조하세요.</p>
+
+
+  <h2>일반 공급 기능</h2>
+
+
+  <p>이제 아래 기능은 Azure Portal 내에서 종량제 및 Azure Government 고객에게 일반 공급됩니다. Azure Portal에 로그인하여 지금 테스트하세요! 정부 고객인 경우 Azure Government 포털에 로그인합니다.</p>
+
+
+  <h3>비용 분석</h3>
+
+
+  <p>이 기능을 사용하면 한 달 동안 비용을 추적할 수 있으며 데이터를 분석하는 다양한 방법을 제공합니다. 비용 분석을 사용하는 방법에 대한 자세한 내용은 설명서인 &ldquo;<a href="https://docs.microsoft.com/en-us/azure/cost-management/quick-acm-cost-analysis" target="_blank">빠른 시작: 비용 분석을 사용하여 비용 탐색 및 분석</a> 설명서를 참조하세요.&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c37678b3-b114-403f-b0c0-f3070e873deb.png"><img alt="Cost analysis dashboard in Azure Cost Management" border="0" height="823" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cec0c994-58de-45a8-886e-41ad16c62540.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Cost Management의 비용 분석 대시보드" width="1342"></a></p>
+
+
+  <h3>예산</h3>
+
+
+  <p>예산을 사용하여 비용을 사전에 관리하고 조직 내에서 책임을 추진합니다. Azure 예산 사용에 대한 자세한 내용은 자습서<a href="https://docs.microsoft.com/en-us/azure/cost-management/tutorial-acm-create-budgets" target="_blank">: Azure 예산 만들기 및 관리</a> 설명서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9d30756d-6254-445f-843e-5943d9cc5fd6.png"><img alt="Budgets in Azure Cost Management" border="0" height="581" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/422eecf8-e6f1-43a4-9d5b-a5711a3f8791.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Cost Management의 예산" width="1823"></a></p>
+
+
+  <h3>내보내기</h3>
+
+
+  <p>새 내보내기 기능을 사용하여 모든 비용 데이터를 Azure Storage 계정으로 내보냅니다. 외부 시스템에서 이 데이터를 사용하고 사용자 고유의 데이터와 결합하여 비용 관리 기능을 최대화할 수 있습니다. Azure 내보내기 사용에 대한 자세한 내용은 자습서<a href="https://docs.microsoft.com/en-us/azure/cost-management/tutorial-export-acm-data" target="_blank">: 내보낸 데이터 만들기 및 관리</a> 설명서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b57a1d1d-75db-4a2d-a04e-77f4111468aa.png"><img alt="Export of cost data to an Azure storage account using the export feature" border="0" height="819" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6535f930-9569-4a33-b387-a82306b25255.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Cost Management의 내보내기 " width="1352"></a></p>
+
+
+  <h3>GA 데이터 제한 사항</h3>
+
+
+  <p>위에서 식별한 기능의 GA 릴리스에는 아래에서 식별되는 몇 가지 제한 사항이 있습니다. 이러한 많은 기능이 곧 제공될 예정이므로 향후 릴리스에 대한 공지 사항을 계속 지켜봐 주시기 바랍니다!</p>
+
+
+  <ul>
+   <li>종량제 고객에 대한 기능 지원은 네이티브 Azure 리소스에만 사용할 수 있습니다. 반복 요금을 포함하여 Azure Marketplace를 통해 사용할 수 있는 리소스는 향후 릴리스에서 지원됩니다.</li>
+   <li>종량제 고객의 비용 관리 데이터는 현재 2018년 9월 이상에서만 사용할 수 있습니다. 이 날짜 이전의 데이터는 <a href="https://docs.microsoft.com/en-us/rest/api/consumption/usagedetails/list" target="_blank">사용량 세부 정보 API</a>를 통해 액세스할 수 있습니다.</li>
+   <li>Azure Reserved Instances에 대한 기능 지원은 현재 종량제 또는 Azure Government 고객에게 제공되지 않으며 향후 릴리스에 통합될 예정입니다.</li>
+   <li>Power BI 콘텐츠 팩에 대한 기능 지원은 현재 종량제 고객에게 제공되지 않으며 향후 릴리스에 통합될 예정입니다.</li>
+  </ul>
+
+
+  <p>흥미로운 비용 관리 업데이트를 위해 Twitter <a href="https://twitter.com/AzureCostMgmt" target="_blank">@AzureCostMgmt</a> 에서 우리를 따르세요.</p>

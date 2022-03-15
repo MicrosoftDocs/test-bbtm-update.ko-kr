@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4c263b45d117300d6a52c0f0bbb8baea220acd3e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907789"
+Slug: fully-managed-hashicorp-consul-service-generally-available-on-azure-today
+Title: 완전 관리형 HashiCorp Consul Service는 현재 Azure에서 일반 공급됩니다.
+Summary: 'Azure의 HCS(HashiCorp Consul Service)를 사용하면 Azure 사용자가 Azure Marketplace를 통해 지원되는 모든 Azure 지역에서 Consul 서버를 직접 프로비전할 수 있습니다. '
+Content: >-
+  <p><a href="https://www.hashicorp.com/products/consul/service-on-azure" target="_blank">Azure에서 HCS(HashiCorp Consul Service)</a>의 일반 공급에 대해 HashiCorp 및 Microsoft Azure 팀을 축하하고 싶습니다. 이는 클라우드 기반 서비스를 실행하는 HashiCorp의 첫 번째 성과입니다. Azure 내에서는 신생 기업부터 대기업에 이르는 모든 사람이 Azure 플랫폼을 보강하고 고객에게 혜택을 주는 안정적이고 매력적인 서비스를 제공할 수 있는 플랫폼을 구축하려는 심층적인 노력을 기울이고 있습니다.</p>
+
+
+  <p>이 서비스를 프로덕션 수준의 가용성으로 가져오는 과정 내내 HashiCorp 팀은 멋진 파트너였습니다. 우리는 함께 많은 것을 배웠고,&rsquo; 우리 관계의 힘에 감사드립니다. Azure에서 HCS 출시를 보는 것은 굉장하며 공동 고객에게 서비스를 제공하기 위한 공동 작업과 헌신의 깊이를 잘 나타내는 좋은 예입니다.</p>
+
+
+  <p>Azure의 HCS를 사용하면 Azure 사용자가 Azure Marketplace를 통해 지원되는 모든 Azure 지역에서 Consul 서버를 직접 프로비전할 수 있습니다. Consul은 Azure가 기본 인프라, VM(가상 머신) 및 네트워크를 관리하는 동안 Consul 서버 자체가 HashiCorp SRE에서 관리 및 작동하는 서비스&quot;로 제공됩니다&ldquo;. 이를 통해 고객은 빌드하는 애플리케이션 및 비즈니스 논리&rsquo;에 집중할 수 있으며 업그레이드 관리, 패치 관리 및 기술 지원 제공을 포함하여 HashiCorp의 전문가에게 Consul을 실행하는 운영 오버헤드를 오프로드할 수 있습니다.</p>
+
+
+  <p>Consul과 같은 오픈 소스 기술을 채택하는 주요 과제 중 하나는 직접 운영하는 방법을 배우는 것입니다. 이 새로운 HCS 서비스는 이러한 장벽을 제거합니다. 오픈 소스 솔루션을 사용하여 실험 및 프로토타입을 만들고 관리되는 서비스 제품의 신뢰도를 가지고 프로덕션으로 진행할 수 있습니다.</p>
+
+
+  <p>Consul은 특히 <a href="https://azure.microsoft.com/en-us/services/kubernetes-service/" target="_blank">AKS(Azure Kubernetes Service)</a> 를 VM 또는 온-프레미스 환경에서 실행되는 레거시 서비스에 연결하는 하이브리드 환경에서 서비스 검색 및 서비스 메시에 적합한 옵션입니다. 구성 요소 간의 트래픽을 보호하고, 상태 검사를 수행하고, Kubernetes에서 실행되는 최신 클라우드 네이티브 서비스와 통합되는 단일 솔루션을 사용하여 온-프레미스 리소스에 대한 액세스 제어를 구현할 수도 있습니다.</p>
+
+
+  <p>HCS는 Azure 관리형 애플리케이션으로 제공되므로 모든 네이티브 Azure 환경과 통합됩니다. Azure Portal에서 푸시 단추 환경을 사용하여 클러스터를 만들고, 중앙 집중식 Azure 청구 및 지출 약정을 사용하여 서비스에 대한 요금을 지불하고, ID 관리를 Azure Active Directory(Azure AD)와 통합할 수 있습니다. 네이티브 플랫폼 통합&rsquo;으로 인해 Helm 및 서비스 메시 인터페이스를 통해 HashiCorp Consul을 AKS와 통합하기가 매우 쉽습니다. 동일한 <a href="https://registry.terraform.io/providers/hashicorp/template/latest/docs" target="_blank">HashiCorp Terraform 템플릿</a>을 사용하여 AKS 및 Consul을 배포할 수도 있습니다.</p>
+
+
+  <p>저는 항상 Kubernetes 또는 Azure에 관계없이 플랫폼의 성공을 지원하는 개방형 에코시스템이라고 말했습니다. 오늘&rsquo; 출시는 HashiCorp와 같은 환상적인 파트너와 함께 그 비전을 현실로 만드는 방법&rsquo;의 좋은 예입니다.&nbsp; 많은 축하와 HashiCorp와 Azure 팀에 감사드립니다!</p>
+
+
+  <p>자세히 알아보고 시작하려면 <a href="https://www.hashicorp.com/products/consul/service-on-azure/" target="_blank">Azure의 HashiCorp Consul Service를</a> 방문하세요.</p>

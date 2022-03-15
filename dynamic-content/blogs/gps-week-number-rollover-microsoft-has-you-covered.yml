@@ -1,0 +1,18 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 85a177b887c558892a8cd556e39b9e0304657ed8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908402"
+Slug: gps-week-number-rollover-microsoft-has-you-covered
+Title: GPS 주간 번호 롤오버 – Microsoft에서 적용했습니다!
+Summary: Microsoft는 Microsoft 시간 원본 사용자가 영향을 받지 않도록 예정된 GPS 주간 번호 롤오버에 대한 준비를 완료했습니다.
+Content: >-
+  <p>1990년대 후반, 프로그래머들은 마지막 두 자리까지 4자리 연도의 간단한 약어가 2000년으로 롤오버되는 치명적인 결함이 &ndash; 있다는 것을 깨달았기 때문에 컴퓨터 시스템의 시간과 날짜 기능은 모든 비즈니스에 큰 관심을 갖게 되었습니다. 그러나 초기 준비 및 수정은 예측된 Y2K 재해가 발생하지 않도록 했습니다. 거의 동일한 방식으로 Microsoft는 Microsoft 시간 원본 사용자가 영향을 받지 않도록 예정된 <a href="https://www.gps.gov/cgsic/meetings/2017/powers.pdf">GPS 주간 번호 롤오버</a> 에 대한 준비를 완료했습니다.</p>
+
+
+  <p>금융 서비스 업계에서는 시간을 조정하고 보고하는 것이 중요합니다. A 지점에서 B 지점까지 매일 사용하는 동일한 GPS(글로벌 포지셔닝 시스템)는 정확하고 정확한 UTC(협정 세계시)를 금융 시장에 제공합니다. 수신자에게 현재 주와 현재 주의 현재 시간(초)을 제공하여 올바른 날짜와 시간을 전송합니다. 주 번호는 10비트 필드로 데이터 스트림으로 인코딩됩니다.&nbsp; 이진 10비트 단어는 최대 1,024주(약 19.7년 또는 epoch)를 나타낼 수 있습니다. 각 Epoch의 끝에서 수신기는 주 번호를 0으로 다시 설정하고 다시 계산을 시작합니다. 새 Epoch가 시작되는 경우입니다. GPS 위크 제로는 1980년 1월 6일에 시작되었으며, 두 번째 Epoch는 2019년 4월 6일에 다시 설정됩니다. 이론적으로 이로 인해 GPS 수신기가 오작동할 수 있습니다. 전 세계 금융 기관은 GPS를 사용하여 금융 거래 타임스탬프를 만드는 데 사용되는 내부 시계를 설정하는 정확한 시간을 얻기 때문에 이 GPS 주간 롤오버로 인한 오작동은 매일 발생하는 수십억 개의 금융 거래에 대한 정확한 거래 타이밍에 영향을 미칠 수 있습니다. 부정확한 타임스탬프는 금융산업규제당국(FINRA) 및 금융 계측 지침(MiFID II)과 같은 규정을 준수하지 않는 결과를 초래할 수 있습니다.&nbsp;</p>
+
+
+  <p>Microsoft는 이 예정된 전환을 알고 있으며 준비 상태를 보장하기 위해 디바이스 및 절차를 검토했습니다. GPS 타이밍 디바이스에 의존하는 Azure 제품 및 서비스는 디바이스 제조업체로부터<a href="https://www.gps.gov/technical/icwg/IS-GPS-200J.pdf"> IS-GPS-200</a> 준수 선언을 받아 Microsoft 시간 원본 사용자에게 위험을 완화했습니다.</p>

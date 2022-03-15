@@ -1,0 +1,392 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b4efff03f6645dcbc3350cf490d4608e93f78d82
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908618"
+Slug: azure-source-volume-58
+Title: Azure.Source - 볼륨 58
+Summary: 'Azure Blockchain Development Kit 소개, 공개 미리 보기에서 Azure Sphere용 업데이트 18.11, 몇 분 안에 시작: 사용자 고유의 엔터프라이즈급 가상 도우미 빌드 등'
+Content: >-
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/update-18-11-for-azure-sphere-in-public-preview/">공개 미리 보기에서 Azure Sphere용 업데이트 18.11</a></h3>
+
+
+  <p>Azure Sphere 운영 체제, Azure Sphere 보안 서비스 및 Visual Studio 개발 환경에 대한 업데이트입니다. 이 릴리스에는 보안 인프라 및 연결 솔루션에 대한 상당한 투자가 포함되며 일부 피드백이 통합되어 있습니다. 공개 미리 보기 상태인 Azure Sphere는 인터넷에 연결된 디바이스에 대한 기본 제공 통신 및 보안 기능을 갖춘 보안이 강화된 고급 애플리케이션 플랫폼입니다. Azure Sphere는 Azure Sphere MCU(마이크로 컨트롤러 장치), 도구, 애플리케이션 개발용 SDK, 그리고 애플리케이션이 클라우드와 웹에 안전하게 연결할 수 있게 만드는 Azure Sphere Security Service로 구성됩니다.</p>
+
+
+  <p align="center"><img alt="Photograph of an Azure Sphere device" border="0" src="https://azurecomcdn.azureedge.net/cvt-cba244cabba1e2c8d7ceb8f3389d4c7eb8a97d1eacae2cdce17d73dc686a476b/images/page/services/azure-sphere/get-started/azure-sphere.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Azure Sphere"></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-kubernetes-service-now-in-private-preview-in-azure-china/">Azure Kubernetes Service는 현재 Azure 중국의 프라이빗 미리 보기로 제공됩니다.</a></h3>
+
+
+  <p>Azure는 중국 본토 내에서 관리되는 Kubernetes 서비스를 제공하는 최초의 클라우드 공급자입니다. 전 세계적으로 서비스를 사용할 수 있는 다른 지역과 마찬가지로 중국의 AKS는 사용자에게 Azure 인프라에서 Kubernetes 클러스터를 빠르고 쉽게 만든 다음, 간단하고 직관적인 도구 집합으로 클러스터를 확장, 업그레이드 및 모니터링할 수 있는 방법을 제공합니다. 미리 보기에 참여하려면 Azure 중국 구독이 있어야 합니다.</p>
+
+
+  <h3><a href="https://api.playfab.com/blog/public-preview-of-multiplayer-servers-2-0">멀티 플레이어 서버의 공개 미리 보기</a></h3>
+
+
+  <p>PlayFab 멀티 플레이어 서버는 PlayFab 및 Azure의 전문 지식과 확장성을 제공하며, 게임에 집중하는 동안 클라우드 컴퓨팅을 사용하여 멀티 플레이어 게임을 빠르게 시작하고 실행할 수 있습니다. 다시 엔지니어링된 멀티 플레이어 서버 솔루션은 클라우드 리소스 관리를 간소화하여 주문형 동적 확장 기반 게임 서버를 사용하도록 설정합니다. 서비스 및 서버를 운영하므로&rsquo; 전용 온-프레미스 서버 하드웨어를 관리할 필요가 없습니다. PlayFab 멀티 플레이어 서버는 전용 게임 서버를 호스팅하는 비용과 복잡성을 줄이기 위해 Azure 컴퓨팅 리소스를 오케스트레이션합니다. 모든 PlayFab Indie, Pro 및 Enterprise 계층 고객은 서비스에 액세스하고 제품 평가 및 테스트를 위해 멀티 플레이어 서버의 제한된 무료 할당량을 사용할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/thunderhead_table.png"><img alt="Screenshot of updated PlayFab Multiplayer Servers tab" height="348" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/thunderhead_table.png" title="업데이트된 PlayFab 멀티 플레이어 서버 탭" width="640"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/protect-linux-containers-running-in-iaas-with-azure-security-center/">Azure Security Center로 IaaS에서 실행되는 Linux 컨테이너보호</a></h3>
+
+
+  <p>이제 Azure Security Center는 IaaS Linux 머신에서 호스트되는 컨테이너에 대한 가시성을 포함하여 컨테이너를 보호하는 데 도움이 되는 몇 가지 새로운 기능을 제공합니다. Docker에 대한 CIS 벤치마크를 기반으로 하는 보안 권장 사항 및 실시간 컨테이너 위협 탐지 컨테이너 보안을 시작하기 위해 퍼블릭 클라우드 고객은 Security Center의 표준 계층에서 이 기능의 공개 미리 보기를 활용할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/bringing-ai-to-the-edge/">AI를 에지로 가져오기</a></h3>
+
+
+  <p>Azure Cognitive Services 컨테이너는 이제 미리 보기로 제공되며 클라우드와 에지에 걸쳐 있는 지능형 애플리케이션을 빌드할 수 있습니다. Azure Cognitive Services를 사용하면 개발자가 직접 AI 또는 데이터 과학 기술이나 지식 없이도 애플리케이션에 대한 개체 감지, 시력 인식 및 언어 이해&mdash;로 인식 기능을&mdash; 쉽게 추가할 수 있습니다. 컨테이너에 Cognitive Services를 배포하면 데이터가 상주하는 실제 세계와 가까운 정보를 분석하여 응답성이 뛰어나고 컨텍스트적으로 인식되는 실시간 인사이트와 몰입형 환경을 제공할 수 있습니다. Cognitive Services 컨테이너를 사용하면 강력한 클라우드 기능과 에지 지역성을 모두 활용하도록 최적화된 하나의 애플리케이션 아키텍처를 빌드할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/get-started-in-minutes-build-your-own-enterprise-grade-virtual-assistant/">몇 분 안에 시작: 고유한 엔터프라이즈급 가상 도우미 빌드</a></h3>
+
+
+  <p>Virtual Assistant 솔루션 가속기는 가상 도우미를 위한 오픈 소스 봇 솔루션 가속기이며 브랜드 가상 도우미 만들기를 간소화하여 개발자가 몇 분 안에 시작할 수 있도록 합니다. Bot Framework SDK 및 도구 버전 4.1은 일반적으로 사용 가능하므로 개발자가 봇 개발에서 생산성을 높일 수 있습니다. 가상 도우미는 다중 언어의 기본 대화 의도, 디스패치, QnA 및 대화 인사이트를 포함하여 대화형 환경에 필요한 기본 기능을 제공하는 엔터프라이즈 템플릿 기능을 기반으로 합니다. 또한 이 게시물에서 다루는 Microsoft는 대화형 AI 및 봇 개발 기능으로 가장 잘 알려진 소프트웨어 제품 디자인 스튜디오인 XOXCO를 인수하는 계약을 체결했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7b998686-c760-4e65-abeb-207acfc3b74c.png"><img alt="Diagram visualizing the capabilities of the Virtual Assistant solution accelerator" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5f5754b7-8c73-410a-b82a-1aeffca2c487.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Virtual Assistant 솔루션 가속기"></a></p>
+
+
+  <h3>미리 보기로도 제공됩니다.</h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/updates/?status=inpreview">최신 업데이트 가져오기: 미리 보기</a></p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/private-preview-azure-kubernetes-service-in-azure-china/">프라이빗 미리 보기: Azure 중국의 Azure Kubernetes Service</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/new-h-series-azure-vms-for-hpc-workloads-are-in-preview/">HPC 워크로드용 새 H 시리즈 Azure VM은 미리 보기로 제공됩니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-bot-service-enforcing-transport-layer-security-tls-1-2/">TLS(전송 계층 보안) 1.2를 적용하는 Azure Bot Service</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-cognitive-services-containers-are-in-preview/">Azure Cognitive Services 컨테이너는 미리 보기로 제공됩니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/announcing-bot-framework-sdk-and-tools-4-1-release/">Bot Framework SDK 및 도구 4.1 릴리스 발표</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-event-grid-event-domains-are-in-preview/">Azure Event Grid, 이벤트 도메인은 미리 보기로 제공됩니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/virtual-assistant-solution-accelerator-is-in-preview/">Virtual Assistant 솔루션 가속기가 미리 보기로 제공됩니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-sdk-js-preview/">Azure JavaScript 라이브러리 미리 보기 릴리스</a></li>
+  </ul>
+
+
+  <h3>개발 중</h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/updates/?status=indevelopment">최신 업데이트 가져오기: 개발 중</a></p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/in-development-azure-service-fabric-mesh-fall-2018-refresh/">개발 중: Azure Service Fabric Mesh 2018년 가을 새로 고침</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/in-development-azure-service-fabric-runtime-version-6-4-sdk-updates/">개발 중: Azure Service Fabric 런타임 버전 6.4 &amp; SDK 업데이트</a></li>
+  </ul>
+
+
+  <h2>지금 사용 가능</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/introducing-the-azure-blockchain-development-kit/">Azure Blockchain Development Kit 소개</a></h3>
+
+
+  <p>Microsofts 서버리스 기술을 기반으로 구축되고 최고의 Microsoft&rsquo; 및 타사 SaaS와 블록체인을 원활하게 통합하는 Azure Blockchain Development Kit의 초기 릴리스를 사용할 수 있습니다. 이 키트는 주요 관리, 오프체인 ID 및 데이터, 모니터링 및 메시징 API를 위한 Azure 서비스를 블록체인 기반 애플리케이션을 신속하게 빌드하는 데 사용할 수 있는 참조 아키텍처로 통합하는 블록체인 개발자 템플릿 및 Azure Blockchain Workbench의 기능을 확장합니다. 솔루션은 온라인 시각적 워크플로 디자이너 및 Visual Studio Code 사용하여 작성되며, Windows, Mac 및 Linux에서 통합 개발 환경을 제공하는 무료 다운로드입니다. 이 초기 릴리스는 인터페이스 연결, 데이터 및 시스템 통합, 스마트 계약 및 블록체인 네트워크 배포의 세 가지 주요 테마와 관련된 기능의 우선 순위를 지정합니다. <a href="https://aka.ms/bcdevopspaper">블록 체인 스마트 계약</a> 및 새로운 채널 9 쇼, <a href="https://channel9.msdn.com/shows/blocktalk">블록 토크</a>에 대한 DevOps 새로운 백서, 체크 아웃해야합니다 :</p>
+
+
+  <p><strong><a href="https://channel9.msdn.com/Shows/Blocktalk/Genesis-Episode-This-is-Block-Talk">창세기 에피소드 : 이것은 블록 토크 | 통화 차단</a></strong></p>
+
+
+  <p>마크 머큐리, 케일 티터, 코디 보른은 Azure Blockchain 엔지니어링 팀의 블록체인 및 클라우드에 대한 주간 쇼인 블록 토크를 소개합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Blocktalk/Genesis-Episode-This-is-Block-Talk/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-tutorial-how-to-integrate-azure-functions-with-mongodb/">MongoDB Atlas 무료 계층은 이제 Azure에서 사용할 수 있습니다.</a></h3>
+
+
+  <p>이제 Microsoft Azure 글로벌 클라우드 데이터베이스 MongoDB Atlas를 무료로 사용할 수 있습니다. Azure에서 새로 사용 가능한 무료 계층은 M0이라고 하며 MongoDB, 프로토타입 및 초기 개발을 학습하는 데 이상적인 512MB의 스토리지를 사용자에게 부여합니다. 아틀라스 무료 계층은 지구상에서 가장 인기 있는 데이터베이스 중 하나인 최신 버전의 MongoDB를 실행합니다. 더 큰 MongoDB Atlas 클러스터 유형과 마찬가지로 M0 클러스터는 엔드 투 엔드 암호화, 고가용성 및 완전 관리형 업그레이드를 통해 사용자에게 최적의 보안을 부여할 수 있습니다. 또한 M0 클러스터는 팀이 기본 제공 데이터 탐색기를 통해 브라우저에서 바로 데이터에 대해 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업을 수행할 수 있도록 하여 더 빠른 개발을 가능하게 합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-toolkit-for-intellij-spark-interactive-console/">IntelliJ &ndash; Spark 대화형 콘솔용 Azure Toolkit</a></h3>
+
+
+  <p>이제 IntelliJ용 Azure Toolkit Spark 대화형 콘솔을 사용할 수 있습니다. 이 새 구성 요소는 Spark 작업 작성을 용이하게 하고 IntelliJ 내의 셸과 같은 환경에서 대화형으로 코드를 실행할 수 있도록 합니다. Spark 콘솔에는 Spark 로컬 콘솔 및 Spark Livy 대화형 세션이 포함되어 있으며 Scala 프로그래밍을 위한 기본 제공 언어 서비스가 있습니다. Spark 콘솔의 추가는 일괄 처리 작업 처리 이외의 확장 기능으로 인해 Azure Toolkit 중요한 단계입니다. 또한 이 업데이트는 로컬 및 개발/테스트 클러스터에서 대화형 쿼리를 지원합니다.</p>
+
+
+  <h3>일반 공급</h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/updates/?status=nowavailable">최신 업데이트 가져오기: 이제 사용 가능</a></p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-azure-availability-zones-in-southeast-asia/">일반 공급: 동남 아시아의 Azure 가용성 영역</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-azure-kubernetes-service-in-south-india/">일반 공급: 인도 남부의 Azure Kubernetes Service</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/mysql-read-replicas-azure-cli/">Azure Database for MySQL 읽기 복제본에 대한 Azure CLI 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-monitor-log-support-for-sql-data-warehouse/">Azure SQL Data Warehouse에 대한 Azure Monitor 로그 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/additional-workload-insights-for-advanced-performance-tuning-for-sql-data-warehouse/">SQL Data Warehouse를 사용하여 고급 성능 조정을 위한 추가 워크로드 인사이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-network-watcher-will-be-enabled-by-default-for-subscriptions-containing-virtual-networks/">가상 네트워크를 포함하는 구독에 대해 기본적으로 사용하도록 설정된 Azure Network Watcher</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-event-hubs-for-apache-kafka-is-now-available/">이제 Apache Kafka용 Azure Event Hubs를 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-functions-2-0-available-in-iot-edge/">IoT Edge에서 사용할 수 있는 Azure Functions 2.0</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-cognitive-services-new-enhancements/">Azure Cognitive Services의 새로운 향상된 기능</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-network-watcher-network-security-group-flow-logging-enhancements-are-now-available-in-the-west-central-us-region/">Azure Network Watcher에 대한 NSG 흐름 로그에 대한 향상된 기능</a></li>
+  </ul>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/deploy-develop-and-troubleshoot-faster-with-azure-blockchain-workbench-1-5-0/">Azure Blockchain Workbench 1.5.0을 사용하여 더 빠르게 배포, 개발 및 문제 해결</a></h3>
+
+
+  <p>이번 달&#39;Azure Blockchain Workbench 1.5.0 릴리스에서는 두 가지 주요 테마에 중점을 두어 Workbench를 보다 쉽게 배포하고 종단 간 블록체인 솔루션을 개발하고 테스트하는 프로세스를 간소화할 수 있습니다. 기본값과 더 쉬운 Azure Active Directory(AAD) 통합으로 배포 템플릿을 간소화했습니다. 또한 애플리케이션 Insights 사용하여 문제를 해결하는 방법에 대한 지침을 추가하고, 강력한 원격 분석 및 더 많은 대상 오류 메시지를 추가하여 문제를 더 빠르게 파악할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-is-now-certified-to-host-sensitive-health-data-in-france/">Microsoft Azure 이제 프랑스에서 중요한 건강 데이터를 호스팅하도록 인증되었습니다.</a></h3>
+
+
+  <p>최근 파리에서 열린 Microsoft Experiences18 컨퍼런스에서 Microsoft Azure, Microsoft Office 365 및 Microsoft Dynamics에 HDS(상태 데이터 호스팅) 인증이 부여되었다고 공유했습니다. 따라서 Microsoft는 프랑스에 위치한 데이터 센터 및 2018년 6월에 시작된 새로운 인증 프로세스에 따라 상태 데이터를 저장하고 처리하는 엄격한 표준을 충족할 수 있는 최초의 주요 클라우드 공급자가 됩니다. Azure France에는 파리에 본사를 둔 프랑스 중부 지역과 마르세유의 프랑스 남부 지역이 포함됩니다. 프랑스 중부는 이제 가용성, 복원력 및 비즈니스 연속성을 높이기 위해 세 가지 가용성 영역을 제공합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/let-ai-help-you-be-more-productive-with-azure-command-line-interface/">AI가 MICROSOFT AZURE CLI를 통해 생산성을 높일 수 있도록 지원</a></h3>
+
+
+  <p>Azure Aladdin을 사용하면 Azure를 더 쉽게 사용할 수 있습니다. 첫 번째 인터페이스는 사용자에게 콘텐츠 권장 사항을 제공하는 Microsoft 문서 확장이었습니다. Aladdin 기술 자료에 대한 다음 인터페이스는 다른 사용자가 Microsoft Azure 사용하여 성공을 거둔 방법에 따라 인사이트와 예제를 제공하는 실험적 Azure CLI(명령줄 인터페이스) 확장(az find)입니다. 확장을 추가하고(az extension add -n find) 체크 아웃합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7b998686-c760-4e65-abeb-207acfc3b74c.png"><img alt="Diagram showing sources of information for Azure Aladdin KB, including Azure Docs, Product Code, Azure CLI Usage, GitHub Issues, and ARM Usage" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7b998686-c760-4e65-abeb-207acfc3b74c.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Azure Aladdin KB"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/microsoft-and-intel-donate-azure-hardware-ai-services-to-advance-intelligent-edge-research-at-carnegie-mellon-university/">Microsoft와 Intel은 카네기 멜론 대학의 지능형 에지 연구를 발전시키기 위해 Azure Hardware, AI Services를 기부합니다.</a></h3>
+
+
+  <p>Microsoft는 카네기 멜론 대학교&rsquo; 리빙 에지 연구소에 클라우드 하드웨어 및 서비스를 기부하고 있습니다. 카네기 멜론 대학은 선도적 인 글로벌 연구 기관 중 하나로 인식된다. 올해 초, 대학은 클라우드에 에지 장치를 연결하는 2,750 만 달러 반도체 연구 이니셔티브를 발표했다. Living Edge Laby는 대규모 데이터 볼륨을 생성하고 거의 즉각적인 응답 시간을 사용하여 강렬한 처리가 필요한 애플리케이션을 탐색하기 위한 테스트베드입니다. Microsoft는 Azure Data Box Edge, Intel과 Azure Stack 파트너 관계를 맺고 Azure 크레딧을 기부하여 에지에서 고급 기계 학습 및 AI를 수행할 것입니다.</p>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3><a href="https://azpodcast.azurewebsites.net/post/Episode-255-Chatbots">에피소드 255 - 챗봇 | Azure 팟캐스트</a></h3>
+
+
+  <p>모든 공동 호스트는 변화를 위해 집에 있으며, 헝가리 Microsoft의 Azure AppDev 컨설턴트인 Pter&eacute; Bozs&oacute;와 매혹적인 토론을 합니다. 팁과 요령, 수행하지 않는 작업 등을 포함하여 Azure에서 챗봇 작성을 시작하는 방법에 대한 모든 정보를 제공합니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode255.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Whats-new-with-Azure-VM-Disk-Images">Azure VM 디스크 이미지 | 새로운 기능 코리와 화요일</a></h3>
+
+
+  <p>Corey Sanders, 회사 부사장 - Microsoft Azure 컴퓨팅 팀은 Azure 컴퓨팅 팀의 수석 PM인 Kay Singh와 함께 디스크 이미지에 대해 이야기했습니다! 이미지 버전 관리, 수명 종료 메타데이터 등이 포함된 공유 이미지 갤러리 소개</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Whats-new-with-Azure-VM-Disk-Images/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Azure-Friday/Faster-more-accessible-edge-HPC-with-Avere-vFXT-for-Azure">Avere vFXT for Azure | 사용하여 더 빠르고 접근성이 좋은 에지 HPC Azure Friday</a></h3>
+
+
+  <p>Scott Jeschonek은 Azure Friday 및 Lara Rubbelke에 합류하여 HPC(고성능 컴퓨팅) 환경에 큰 가능성을 가진 새로운 Azure Marketplace 제품인 Avere vFXT for Azure를 소개합니다. Avere vFXT for Azure는 읽기가 많은 처리에 내재된 예상 대기 시간 또는 스토리지 병목 현상 없이 온-프레미스 스토리지 또는 Azure Blob을 활용하여 클라우드에서 NFS 백 엔드가 필요한 성능이 까다로운 워크로드를 실행하는 핵심 문제를 해결합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Faster-more-accessible-edge-HPC-with-Avere-vFXT-for-Azure/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Azure-Friday/Azure-HDInsight-New-Spark-UI-extensions-for-better-job-performance-analysis">Azure HDInsight: 더 나은 작업 성능 분석을 위한 새로운 Spark UI 확장 | Azure Friday</a></h3>
+
+
+  <p>Maxim Lukiyanov와 Scott Hanselman은 Apache Spark 작업이 프로덕션에서 실패할 수 있는 복잡한 방법과 Azure HDInsight에서 사용할 수 있는 새로운 진단 도구가 어떻게 새로운 직관적인 방식으로 이러한 문제를 시각화하고 언뜻 보기에 이를 검색하고 이해하는 데 도움이 되는지에 대해 설명합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-HDInsight-New-Spark-UI-extensions-for-better-job-performance-analysis/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Role-Based-Access-Control-in-Azure-IoT-solution-accelerators">Azure IoT 솔루션 가속기 | 역할 기반 액세스 제어 사물 인터넷 쇼</a></h3>
+
+
+  <p>IoT 솔루션에 대한 액세스를 제한하는 것의 중요성과 역할 기반 액세스 제어를 구현하는 방법에 대해 알아봅니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Role-Based-Access-Control-in-Azure-IoT-solution-accelerators/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/How-to-use-Time-Series-Insights-in-Azure-IoT-solution-accelerators">Azure IoT 솔루션 가속기에서 시계열 Insights 사용하는 방법 | 사물 인터넷 쇼</a></h3>
+
+
+  <p>Azure IoT 솔루션 가속기 및 Azure Time Series Insights 새로 릴리스된 통합을 사용하여 데이터에 대한 숨겨진 인사이트를 찾아보세요.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/How-to-use-Time-Series-Insights-in-Azure-IoT-solution-accelerators/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/AI-Show/Taking-a-Look-at-Computer-Visions-Object-Detection">Computer Visions&rsquo; 개체 감지 | 살펴보기 AI Show</a></h3>
+
+
+  <p>컴퓨터 비전을 빠르게 둘러보고 사용자 지정 비전, 개체 감지 모델을 사용하여 재미있는 사용 사례를 해결하는 방법의 예를 알아봅니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/AI-Show/Taking-a-Look-at-Computer-Visions-Object-Detection/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/AI-Show/Why-Should-I-Care-About-Data-Preparation">데이터 준비에 관심이 있어야 하는 이유는 무엇인가요? | AI Show</a></h3>
+
+
+  <p>데이터 준비는 일반적으로 고급 분석 프로젝트에 리소스의 80%를 차지하는 것으로 간주되지만 실제로 수행합니다. 왜 그렇게 어렵습니까? 준비와 모델링의 차이점은&#39;? 기능화란 무엇이며 어떻게 적합합니까? 이 모든 질문과 더 많은 쇼에서 대답 할 것이다, 우리는 심지어 충격과 몇 가지 데모와 함께 세스를 와우 것입니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/AI-Show/Why-Should-I-Care-About-Data-Preparation/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=ejVtdb57Y5Y">Xamarin 및 Azure Functions | 사용하여 사진 공유 모바일 앱을 빌드하는 방법 Azure Makers 시리즈</a></h3>
+
+
+  <p>Xamarin 및 Azure용 Visual Studio Tools 사용하여 고유한 사진 공유 소셜 미디어 플랫폼을 만듭니다. 서버리스 백 엔드 및 사진 스토리지를 사용하여 iOS, Android 및 Windows 실행되는 모바일 앱을 빌드하는 방법을 알아봅니다. 콘텐츠를 조정하고, 사진 캡션을 추가하는 등의 AI 기능을 추가할 수도 있습니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=ejVtdb57Y5Y"><img alt="Thumbnail from How to build a photo sharing mobile app using Xamarin and Azure Functions on YouTube" border="0" height="270" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/da6d4e9a-f5d3-4c6c-b154-2d61a305e0fe.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Xamarin 및 Azure Functions를 사용하여 사진 공유 모바일 앱을 빌드하는 방법" width="480"></a></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=oIwDgJPmVCg">Azure Logic Apps | 사용하여 HTTP 트리거를 만드는 방법 Azure 팁 및 트릭</a></h3>
+
+
+  <p>Azure Logic App 내에 있는 HTTP 요청 트리거를 만드는 방법을 알아봅니다. 또한 JSON 스키마를 적용하여 HTTP 요청의 유효성을 검사하는 방법도 알아봅니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=oIwDgJPmVCg"><img alt="Thumbnail from How to create a HTTP Trigger with Azure Logic Apps - Azure Tips and Tricks on YouTube" border="0" height="269" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ebdd3a7-8988-4c0c-b0b8-7fb56ded7e7f.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Logic Apps | 사용하여 HTTP 트리거를 만드는 방법 Azure 팁 및 트릭" width="480"></a></p>
+
+
+  <h3>Microsoft Ignite 이벤트 2018 - 에피소드 010 | Azure DevOps 이야기 Azure DevOps 팟캐스트</h3>
+
+
+  <p>이 에피소드 제프리 팔레르모는 Microsoft Ignite 이벤트에서 라이브 녹음을 제공합니다. 현재는&rsquo; Azure MVP 및 클라우드 설계자인 Greg Leonardo를 비롯한 여러 사용자와 이야기를 나누고 있습니다. 애플리케이션 수명 주기 관리의 MVP이자 10번째 크기의 선임 애플리케이션 설계자인 Josh Gaverick; 중소기업을 위한 웹 속성을 구축하는 ASP.NET Microsoft MVP인 롭 리처드슨과 ALM MVP이자 클라우드 솔루션 설계자인 콜린 뎀보프스키(Colin Dembovsky)가 10위를 차지했다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://traffic.libsyn.com/preview/azuredevops/ADP_010.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/getting-started-with-azure-cognitive-services-in-containers/">컨테이너에서 Azure Cognitive Services 시작</a></h3>
+
+
+  <p>AI를 에지로 가져오기에서 위에서 설명한 것처럼 Azure Cognitive Services 컨테이너는 이제 미리 보기로 제공됩니다. 컨테이너화는 개발자가 더 나은 데이터 거버넌스를 지원하는 방식으로 대규모, 안정적 및 일관되게 실행되는 큰 AI 시스템을 빌드하는 데 도움이 됩니다. 이 게시물을 확인하여 오늘 사용을 시작하는 방법을 알아보세요.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b72ed2e-1b9c-48c6-8ff9-a35c6455ce65.png"><img alt="Screenshot of training images for identifying the Microsoft logo" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b72ed2e-1b9c-48c6-8ff9-a35c6455ce65.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Azure Cognitive Services"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/developing-hybrid-applications-with-azure-stack/">Azure Stack을 사용하여 하이브리드 애플리케이션 개발</a></h3>
+
+
+  <p>어디서나 하이브리드 애플리케이션을 빌드하고 배포하는 클라우드 컴퓨팅의 혁신을 제공하는 Azure의 확장인 Azure Stack을 사용하여 하이브리드 애플리케이션을 개발하는 개요를 확인하세요. 함께 작동하는 리소스 종류, API 버전 및 클라우드를 조사하는 대신 솔루션에 대한 코드를 만드는 데 집중하는 방법을 알아봅니다. API 프로필을 사용하여 코드가 특정 프로필을 지원하는 Azure 클라우드에서 작동할 수 있도록 합니다. Azure Stack 개발자 키트를 다운로드하고 이 블로그 게시물에 나열된 리소스를 확인하여 시작합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/holiday-season-is-ddos-season/">연말연시 시즌은 DDoS 시즌입니다.</a></h3>
+
+
+  <p>연말연시 시즌은 해커를 탐지에서 위장하는 데 도움이되는 전자 상거래의 상승과 직원 감소로 인해 증가 된 트래픽 볼륨의 조합으로 인해 해커에게 매혹적인 시간입니다. 이 모든 것은 사이버 범죄자가 통과하기에는 올해의 이 시간을 너무 매력적으로 만듭니다. Azure DDoS Protection이 가장 정교한 DDoS 위협에 대한 대책을 제공하는 방법을 알아봅니다. 또한 이 서비스는 가상 네트워크에 배포된 애플리케이션 및 리소스에 대해 향상된 DDoS 완화 기능을 제공합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/four-operational-practices-microsoft-uses-to-secure-the-azure-platform/">Microsoft가 Azure 플랫폼을 보호하는 데 사용하는 4가지 운영 사례</a></h3>
+
+
+  <p>Microsoft Azure 운영 모범 사례 및 3,500명 이상의 사이버 보안 전문가로 구성된 글로벌 팀을 통해 추가 투자 없이 보안 전문 지식을 얻는 데 어떻게 도움이 되는지 알아봅니다. 이 게시물에서는 보안 전문가가 데이터를 안전하게 보호하는 데 도움이 되는 네 가지 운영 사례인 보안 개발 사례를 살펴봅니다. 제한된 Just-In-Time 관리자 액세스 및 보안 액세스 워크스테이션; 위협에 대한 빠르고 전문가의 대응과 사이버 보안 전문가 팀을 구성합니다.</p>
+
+
+  <h3>추가 기술 콘텐츠</h3>
+
+
+  <ul>
+   <li><a href="https://github.com/gloveboxes/Turn-a-Command-Line-tool-into-a-REST-API-with-Azure-Functions">Azure Functions를 사용하여 명령줄 도구를 REST API로 전환</a></li>
+   <li><a href="https://www.webexpo.net/prague2018/talk?id=creative-problem-solving-using-machine-learning-and-serverless">Machine Learning 및 서버리스를 사용하여 창의적인 문제 해결</a></li>
+   <li><a href="https://medium.freecodecamp.org/how-to-build-a-serverless-report-server-with-azure-functions-and-sendgrid-3c063a51f963">Azure Functions 및 SendGrid를 사용하여 서버리스 보고서 서버를 빌드하는 방법</a></li>
+   <li><a href="https://www.oreilly.com/ideas/lessons-learned-while-helping-enterprises-adopt-machine-learning">기업이 기계 학습을 채택할 수 있도록 지원하면서 배운 교훈</a></li>
+   <li><a href="https://medium.com/microsoftazure/debugging-multiple-azure-functions-apps-at-the-same-time-c1040c8ab51c">여러 Azure Functions 앱을 동시에 디버깅</a></li>
+   <li><a href="https://techcommunity.microsoft.com/t5/ITOps-Talk-Blog/Azure-Monitor-Detecting-and-Alerting-on-File-Changes/ba-p/286327">Azure Monitor: 파일 변경 내용 검색 및 경고</a></li>
+   <li><a href="https://techcommunity.microsoft.com/t5/ITOps-Talk-Blog/Step-By-Step-Enabling-Advanced-Security-Audit-Policy-via/ba-p/282452">단계별: 디렉터리 서비스 액세스를 통해 고급 보안 감사 정책 사용</a></li>
+  </ul>
+
+
+  <h2>이벤트</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/join-azure-at-supercomputing-2018/">Supercomputing 2018에서 Azure 가입</a></h3>
+
+
+  <p>매년 슈퍼컴퓨팅에서 12,000명 이상의 연구원과 실무자들이 모여 고성능 컴퓨팅의 최첨단을 추진합니다. Microsoft는 이번 주 SC18에서 댈러스의 글로벌 HPC 커뮤니티에 합류했습니다. 이 게시물에는 다양한 프레젠테이션 및 활동에 대한 링크가 포함되어 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/start-asking-your-questions-for-the-azure-monitor-ama-now/">Azure Monitor AMA에 참여하는 방법!</a></h3>
+
+
+  <p>11월 15일 목요일, Azure Monitor 팀은 트위터에서 AMA 세션을 주최했습니다. <a href="https://twitter.com/search?q=%23AzureMonitorAMA">Twitter에서 #AzureMonitorAMA 검색</a>하여 질문과 답변을 읽을 수 있습니다.</p>
+
+
+  <h2>산업 및 정부</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/five-lessons-for-building-your-roadmap-to-a-secure-hybrid-cloud-future/">안전한 하이브리드 클라우드 미래를 위한 로드맵 빌드를 위한 5가지 단원</a></h3>
+
+
+  <p>Microsoft&rsquo;는 클라우드로 전환하고 정부 기관과 광범위하게 협력한 경험을 통해 CIO 및 IT 리더에게 다중 클라우드 및 하이브리드 IT 세계에 대한 성공적인 로드맵을 개발하기 위한 몇 가지 유용한 교훈을 제공합니다. 이러한 경험을 바탕으로 Microsoft Federal의 Susie Adams 최고 기술 책임자는 성공적인 로드맵에 대한 이 게시물의 5가지 권장 사항을 다룹니다. 여기에는 앱 합리화; 견고한 기초를 구축; 기본 제공 서비스 사용 ID 계층을 설정하고 위반 가정 전략을 채택합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/three-surprising-iot-trends-in-smart-buildings/">스마트 빌딩의 세 가지 놀라운 IoT 추세</a></h3>
+
+
+  <p>&rsquo;건물 소유자, 관리자 및 임차인에게 여러 가지 이점을 제공하는 스마트 빌딩에 대한 수요가 증가하고 있습니다. 추세, 시나리오 및 보수 중 일부는 당신을 놀라게 할 수 있습니다. IoT 및 스마트 빌딩에 대한 애플리케이션은 무한해 보입니다. 스마트 건물을 자세히 살펴보려면 2018년 11월 29일에 IoT in Action 웹 세미나인 <a href="https://iotinactionwebinars.com/en-us/event/smart-buildings/?ocid=MSFT_WW_EN_IOTSW_SMRTB_ISYB_EA_BL_MSE_MSG_NA">IoT Is Smart for Your Buildings</a> 에 등록하여 IoT를 활용하여 건물 성능에 혁명을 일으킬 수 있는 방법을 살펴보세요. 이 게시물에서 Action Virtual Bootcamp에서 2일 간의 IoT를 포함하여 더 많은 리소스에 대한 링크를 찾습니다.</p>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/power-bat-how-spektacom-is-revolutionizing-the-game-of-cricket-with-microsoft-ai/">파워 배트 : Spektacom은 마이크로 소프트 AI와 크리켓의 게임을 혁명하는 방법</a></h3>
+
+
+  <p>Spektacom은 크리켓 박쥐에 비관입 센서 기술을 사용하여 클라우드 기반 데이터 분석, 기계 학습 및 인공 지능에서 구동되는 인사이트를 사용하여 파워 배트&rdquo; 스티커의 &ldquo;데이터 수렴을 활용하고 전력을 공급하는 아이디어로 탄생했습니다. Spektacom&#39;&quot;파워 배트는&quot; 무선 센서 기술 및 클라우드 분석을 통해 데이터를 캡처하고 영향 특성을 분석하여 플레이어의&rsquo; 품질을 측정하는 혁신적인 센서 기반 스티커입니다. 무게가 5g 미만인 이 독특한 비관입 센서 플랫폼은 박쥐의 품질, 속도, 트위스트 및 스윙을 측정하기 위한 스티커로 박쥐 뒤에 붙어 있으며, 충격 시 공에서 박쥐로 전달되는 파워를 측정합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c007e6f-cd00-41dc-9225-a33b6a7dc3db.gif"><img alt="Animated GIF showing how &quot;power bats&quot; track performance data" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c007e6f-cd00-41dc-9225-a33b6a7dc3db.gif" style="border: 0px currentcolor; border-image: none; background-image: none;" title="스펙타콤의 &quot;파워 배트&quot;"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/view-chooses-microsoft-azure-iot-to-accelerate-development-of-smart-building-applications/">보기에서 스마트 빌딩 애플리케이션 개발을 가속화하는 Microsoft Azure IoT를 선택합니다.</a></h3>
+
+
+  <p>스마트 빌딩을 위한 혁신적인 애플리케이션을 개발하기 위해 Microsoft와 View 간의 새로운 파트너십을 발표합니다. 이 파트너십의 일환으로 View는 스마트 빌딩에 대한 전문 지식을 활용하고 Azure IoT 플랫폼의 여러 측면을 활용하여 솔루션 개발을 가속화할 것입니다. 예를 들어 View는 액세스 제어 및 기타 스마트 빌딩 애플리케이션뿐만 아니라 창 및 바닥 컨트롤러 디바이스에 대한 Azure IoT Edge 및 Azure Sphere에 Azure Digital Twins를 활용합니다. 첫 번째 솔루션인 SmartProtect 보기가 오늘 발표됩니다. View SmartProtect는 유리 파손을 자동으로 즉시 감지하는 스마트 창 기반 빌드 보안 솔루션입니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/taboola-improves-customer-experiences-with-azure-data-explorer/">Azure Data Explorer를 사용하여 고객 환경을 개선합니다.</a></h3>
+
+
+  <p>검색 플랫폼인 Taboola는 PASS Summit 2018에서 수십억 줄의 로그 데이터를 가져와서 데이터 탐색에 최적화된 번개 빠른 서비스인 Azure Data Explorer의 도움을 받아 숨겨진 정보 보석을 식별하고 조치를 취하는 과제를 해결하는 방법을 공유했습니다. Azure Data Explorer를 사용하면 사용자가 거의 실시간으로 매우 큰 원시 데이터 세트에 대한 즉각적인 가시성을 확보하여 성능을 분석하고, 추세 및 변칙을 식별하고, 문제를 진단할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/monitor-your-azure-open-source-databases-postgresql-and-mysql-using-azure-monitor/">Azure Monitor를 사용하여 Azure 오픈 소스 데이터베이스(PostgreSQL 및 MySQL) 모니터링</a></h3>
+
+
+  <p>Azure Database for PostgreSQL 및 MySQL 서비스는 성능 메트릭 및 원격 분석 로그를 Azure Monitor 서비스에 내보내는 완전 관리형 엔터프라이즈 지원 클라우드 서비스입니다. Datadog는 클라우드 애플리케이션에 필수적인 모니터링 플랫폼입니다. Datadogs&rsquo; 공급업체는 Azure Database for MySQL 및 Azure Database for PostgreSQL과의 통합을 지원하여 Azure Monitor 및 Azure Resource Manager에서 시계열 메트릭, 메타데이터 및 사용자 지정 태그를 수집하여 유연한 대시보드, 경고 및 분석을 허용합니다. 또한 Datadog에는 더 깊고 세분화된 데이터베이스 메트릭 및 로그를 수집하는 에이전트 수준 PostgreSQL 및 MySQL 통합이 있습니다.</p>
+
+
+  <hr>
+
+  <h3><a href="https://www.youtube.com/watch?v=cuQTPWq7VBY">2018년 11월 16일 Azure | 이번 주 클라우드 전문가&rsquo;</a></h3>
+
+
+  <p>이번 주 Azure에서 Lars는 Azure SQL Data Warehouses&rsquo;의 새로운 생산성 및 보안 기능에 대해 설명합니다. 또한 Azure SQL Database 및 SQL Server 대한 정적 데이터 마스킹에 대해서도 설명합니다. 마지막으로, 그는 Azure SQL Database R 지원을 통해 Machine Learning 서비스의 미리 보기에 대해 이야기합니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=cuQTPWq7VBY"><img alt="Thumbnail from A Cloud Guru's This Week in Azure for 16 November 2018 on YouTube" border="0" height="266" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b7950740-d5c4-463e-bb79-df4f56e26969.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="2018년 11월 16일 Azure에서 클라우드 전문가의 이번 주" width="480"></a></p>

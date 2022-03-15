@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4b5c434f9cf41ac6502f9b53a78dbab794e89bc1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902303"
+Slug: azure-functions-now-supported-as-a-step-in-azure-data-factory-pipelines
+Title: Azure Functions는 이제 Azure Data Factory 파이프라인의 단계로 지원됩니다.
+Summary: Azure Functions는 인프라를 명시적으로 프로비전 또는 관리하지 않고도 필요 시 코드를 실행할 수 있는 서버리스 컴퓨팅 서비스입니다. Azure Functions를 사용하면 다양한 이벤트에 대한 응답으로 스크립트 또는 코드 조각을 실행할 수 있습니다.
+Content: >-
+  <p>Azure Functions는 인프라를 명시적으로 프로비전 또는 관리하지 않고도 필요 시 코드를 실행할 수 있는 <a href="https://azure.microsoft.com/solutions/serverless/">서버리스</a> 컴퓨팅 서비스입니다. Azure Functions를 사용하면 다양한 이벤트에 대한 응답으로 스크립트 또는 코드 조각을 실행할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/data-factory/">ADF(Azure Data Factory)</a> 는 ETL(추출 변환 로드) 워크플로를 반복적으로 빌드, 오케스트레이션 및 모니터링할 수 있는 Azure의 관리되는 데이터 통합 서비스입니다. 이제 Azure Functions가 ADF와 통합되어 데이터 팩터리 파이프라인에서 한 단계로 Azure 함수를 실행할 수 있습니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="315" src="https://channel9.msdn.com/shows/azure-friday/Run-Azure-Functions-from-Azure-Data-Factory-pipelines/player?format=ny" width="560"></iframe></p>
+
+
+  <p>시작하려면 Azure Function 작업을&rdquo; 활동 도구 상자의 <strong>일반</strong> 섹션으로 끌어&ldquo;다 놓기만 하면 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c7c053ae-4266-4160-810a-9b2a90922591.png"><img alt="2018-12-03_12h14_00" border="0" height="1605" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0e82e36a-bb66-44a0-bf45-852c3be079b7.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="2018-12-03_12h14_00" width="2999"></a></p>
+
+
+  <p>Azure Function 앱에 대한 연결을 만들려면 ADF에서 Azure Function 연결된 서비스를 설정해야 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7fc3bc6a-5171-4481-bb69-de5f41415a1f.png"><img alt="2018-12-03_12h16_20" border="0" height="1756" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/017ea630-7ee8-4d43-8ebb-20e739c5d8b7.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="2018-12-03_12h16_20" width="2986"></a></p>
+
+
+  <p>데이터 팩터리 파이프라인 내의 Azure Function 작업에서 Azure 함수 이름, 메서드, 헤더 및 본문을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/55103a72-08b2-48db-93f9-844c8a57f583.png"><img alt="2018-12-03_12h19_14" border="0" height="1608" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/392baffc-7c3f-43de-a986-0cefd3277353.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="2018-12-03_12h19_14" width="2994"></a></p>
+
+
+  <p>ADF에서 풍부한 <a href="https://docs.microsoft.com/en-us/azure/data-factory/control-flow-expression-language-functions">식 지원을</a> 사용하여 함수 이름을 매개 변수화할 수도 있습니다. <a href="https://go.microsoft.com/fwlink/?linkid=2047822">Azure Data Factory 파이프라인에서 Azure Functions</a>를 사용하는 방법에 대한 자세한 정보와 단계를 확인합니다.</p>
+
+
+  <p>우리의 목표는 기능을 계속 추가하고 Data Factory 도구의 유용성을 향상시키는 것입니다. Azure Data Factory<a href="https://docs.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-portal">를 사용하여 파이프라인 빌드</a>를 쉽고 빠르게 시작합니다. 기능 요청이 있거나 피드백을 제공하려는 경우 <a href="https://feedback.azure.com/forums/270578-azure-data-factory">Azure Data Factory 포럼</a>을 방문하세요.</p>

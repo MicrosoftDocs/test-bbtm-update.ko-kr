@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1b10899f6bb865f4ab6c8c82debb62bab0c6ac68
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901082"
+Slug: microsoft-virtual-academy-security-in-a-cloud-enabled-world
+Title: 'Microsoft Virtual Academy: 클라우드 지원 환경에서 보안'
+Summary: Microsoft 클라우드 제품에 대한 클라우드 기반 자산을 보호하고 방어하기 위한 보안 전략 및 공동 책임에 대한 심층적인 이해를 얻을 수 있습니다.
+Content: >-
+  <p>퍼블릭 또는 하이브리드 클라우드에서 IT 자산을 보호하시겠습니까? 사이버 보안 위협 증가에 대해 우려? 당신이 있다면, 당신은&rsquo; 올바른 과정을 발견! 고객 사이버 보안 인시던트에 대응하고 고객이 클라우드 자산을 방어하고 클라우드 서비스에 대한 공유 보안 책임을 관리하는 데 도움을 줌으로써 Microsoft 학습에 대한 인사이트를 얻습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/433f0b09-320f-49df-89e4-abd51dfa93ab.png"><img alt="Mark Simos and Tim Rains" border="0" height="257" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/11a33e8f-da9a-4424-a3e7-2cdc69d17aef.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="마크 시모스와 팀 레인즈" width="625"></a></p>
+
+
+  <p>Microsoft 사이버 보안 설계자인 Mark Simos와 Microsoft의 수석 보안 고문인 Tim Rains는 Cloud-Enabled 세계에서 새로운 MVA(Microsoft Virtual Academy) 과정인 <a href="https://mva.microsoft.com/en-us/training-courses/security-in-a-cloudenabled-world-12725?l=CfLHobAcB_3904300474" target="_blank">Security를</a> 만들었습니다.</p>
+
+
+  <p>과정 모듈:</p>
+
+
+  <ol>
+   <li>소개 및 개요</li>
+   <li>신뢰할 수 있는 클라우드 공급자</li>
+   <li>로드맵 1: 보안 전략, 거버넌스 및 운영화</li>
+   <li>로드맵 2: 관리 제어</li>
+   <li>로드맵 3: 정보 및 데이터 보안</li>
+   <li>로드맵 4: 사용자 ID 및 디바이스 보안</li>
+   <li>로드맵 5-8: 애플리케이션, 네트워크, OS 및 패브릭 보안</li>
+   <li>요약</li>
+  </ol>
+
+
+  <p>이 새로운 과정은 <a href="https://aka.ms/securecustomer">Enterprise Architects용 Microsoft Cloud Security 포스터용</a>으로 개발된 자료를 기반으로 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fc332c31-ec41-40f4-a1ea-c6b928227fa2.png"><img alt="Microsoft Cloud Security for Enterprise Architects poster" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/41e4c57c-fb93-4813-94d3-81c742ac053d.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="Enterprise 설계자를 위한 Microsoft Cloud Security 포스터" width="312"></a></p>
+
+
+  <p>여러 페이지 포스터&nbsp; <a href="https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf">aPDF</a>&nbsp; 또는 <a href="https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.vsdx">Visio</a> 파일을 다운로드하거나 <a href="https://docs.com/officeitpro/5658/microsoft-cloud-security-for-enterprise-architects">찾아보기 쉬운 </a>새로운 형식으로 볼 수 있습니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2bacbbf6-5efa-4d41-8a60-1db2f1ec4483.png"></p>
+
+
+  <p><a href="https://technet.microsoft.com/library/dn919927.aspx" target="_blank">여기에서</a> 전체 Microsoft 클라우드 IT 아키텍처 포스터 세트를 확인하세요.</p>

@@ -1,0 +1,78 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4a7ad2672b10d99e3239ce87f9aa9cfb6940188b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908462"
+Slug: data-driven-troubleshooting-of-azure-stream-analytics-jobs
+Title: Azure Stream Analytics 작업의 데이터 기반 문제 해결
+Summary: '오늘, Azure Stream Analytics 작업의 데이터 기반 모니터링 및 문제 해결을 위해 작업 다이어그램에서 메트릭의 공개 미리 보기를 발표합니다. '
+Content: >-
+  <p>오늘, Azure Stream Analytics 작업의 데이터 기반 모니터링 및 문제 해결을 위해 작업 다이어그램에서 메트릭의 공개 미리 보기를 발표합니다. 이 새로운 기능을 사용하면 입력, 출력 및 처리 논리의 각 단계에 대한 메트릭을 사용하여 특정 구성 요소 및 쿼리 단계에 대한 문제를 빠르고 쉽게 격리할 수 있습니다.</p>
+
+
+  <p>예를 들어 Azure Stream Analytics 작업이 예상 출력을 생성하지 않는 경우 작업 다이어그램의 메트릭을 사용하여 입력을 수신하지만 문제를 식별하고 격리하는 출력을 생성하지 않는 쿼리 단계를 식별할 수 있습니다. 또한 Steam Analytics 작업에 대한 하나 이상의 입력이 이벤트 생성을 중지하는 경우 새로운 기능을 통해 관련 진단 메시지가 보류 중인 입력 및 출력을 식별하는 데 도움이 될 수 있습니다.</p>
+
+
+  <p>이 기능에 액세스하려면 Stream Analytics 작업의 설정&rdquo; 블레이드에서 &ldquo;작업 다이어그램&rdquo; 단추를 클릭합니다&ldquo;. 기존 작업의 경우 작업을 먼저 다시 시작해야 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9e51249-346a-4d6e-8ec2-434477a83c4f.png"><img alt="Job Diagrams Setting" border="0" height="652" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c6253f2c-19ef-4109-8cf2-3b567f24f250.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="작업 다이어그램 설정" width="949"></a></p>
+
+
+  <p>모든 입력 및 출력은 해당 구성 요소의 현재 상태를 나타내기 위해 색으로 코딩됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67678546-3000-4b93-8ec4-68e021a83bb9.png"><img alt="Color coded input output" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/999d6206-1c27-45da-b5cf-70e72d57dadc.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="색으로 코딩된 입력 출력" width="776"></a></p>
+
+
+  <p>Stream Analytics 내의 데이터 흐름 패턴을 이해하기 위해 중간 쿼리 단계를 확인하려는 경우 시각화 도구는 쿼리를 구성 요소 단계 및 흐름 순서로 분석한 보기를 제공합니다. 각 논리 노드는 포함된 파티션 수를 표시합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0bdbfff6-0aa5-45b1-9274-483c93863c24.png"><img alt="Visualization tool" border="0" height="535" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a3b40ef3-36df-4247-978c-b23e69ecfdc9.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="시각화 도구" width="1024"></a></p>
+
+
+  <p>각 쿼리 단계를 클릭하면 그림과 같이 쿼리 편집 창에 해당 섹션이 표시됩니다. 단계에 대한 메트릭 차트도 아래쪽 창에 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1497a314-28c1-4cdf-8555-2b13819bc088.png"><img alt="Metrics chart" border="0" height="420" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f9b0f3ba-c94e-416c-8a46-bef3273d8028.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="메트릭 차트" width="966"></a></p>
+
+
+  <p>&hellip; 클릭하면 입력 합병 외에도 이벤트 허브 입력의 파티션을 표시하는 파티션을 확장할 수 있는 상황에 맞는 메뉴가 나타납니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e2986f3e-ad26-4819-b47d-6f2fcc6cce0c.png"><img alt="Expand partitions" border="0" height="322" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/af92278a-5298-4970-a130-71a80be66b64.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="파티션 확장" width="931"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>단일 파티션 노드를 클릭하면 맨 아래에 있는 해당 파티션에 대한 메트릭 차트만 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15dc0885-46b6-440a-9fc5-4764ada6ba7b.png"><img alt="Single partition node" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fee4d2d9-0398-47aa-8c81-7e51e2841399.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="단일 파티션 노드" width="1024"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>합병 노드를 선택하면 합병에 대한 메트릭 차트가 표시됩니다. 아래 차트는 이벤트가 삭제되거나 조정되지 않음을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/23af6302-dd76-4523-97c8-7702b623e285.png"><img alt="No events got dropped or adjusted" border="0" height="608" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f30d754e-53bc-438c-adab-94af07ed9c48.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이벤트가 삭제되거나 조정되지 않음" width="988"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>차트에서 마우스 포인터를 가리키면 메트릭 값 및 시간의 세부 정보가 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/178d7d56-6e0e-4b31-b76d-3599947fb2ae.png"><img alt="Metric value and time" border="0" height="496" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fd7d0ec4-2ca9-4fff-847f-e8e92a360b72.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="메트릭 값 및 시간" width="988"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>여러분의 의견을 듣게 되어 매우 기쁩니다. 시도해 보시고 어떻게 생각하시는지 알려주세요.</p>

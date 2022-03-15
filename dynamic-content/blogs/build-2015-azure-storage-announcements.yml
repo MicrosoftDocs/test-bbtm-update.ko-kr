@@ -1,0 +1,126 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3067c59a6cdba3bbdf7107e7dae48ca4c57eec83
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907863"
+Slug: build-2015-azure-storage-announcements
+Title: '빌드 2015: Azure Storage 알림!'
+Summary: '빌드 2015가 준비되었으며, Azure Storage 팀에는 몇 가지 흥미로운 발표가 있습니다. 이러한 새로운 기능을 통해 Azure Storage 사용하여 더 강력한 애플리케이션을 작성할 수 있기를 바랍니다. '
+Content: >-
+  빌드 2015가 준비되었으며, Azure Storage 팀에는 몇 가지 흥미로운 발표가 있습니다. 이러한 새로운 기능을 통해 Azure Storage 사용하여 더 강력한 애플리케이션을 작성할 수 있기를 바랍니다. 이 블로그 게시물은 새로운 GA 공지 사항, 미리 보기 프로그램에 대한 업데이트 및 작업 중인 다른 모든 항목에 대한 인사이트에 대한 개요를 제공합니다.
+
+  <h2><strong>일반 공급 공지 사항</strong></h2>
+
+  <h3>Premium Storage 일반 공급</h3>
+
+  Azure Premium Storage 최근에 일반 공급되었습니다. Premium Storage SSD(반도체 드라이브)에 데이터를 저장하여 Azure Virtual Machines에서 실행되는 I/O 집약적 워크로드에 대해 대기 시간이 짧은 고성능 디스크 지원을 제공합니다. Premium Storage 통해 애플리케이션은 VM당 최대 32TB의 스토리지를 프로비전하고 읽기 작업에 대한 대기 시간이 매우 짧은 VM당 64,000 IOPS(초당 입력/출력 작업)를 달성할 수 있습니다.
+
+
+  Premium Storage 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage-preview-portal/">Premium Storage 소개를</a> 확인하세요.
+
+  <h3>C++ 1.0.0 일반 공급</h3>
+
+  <strong>C++용 Microsoft Azure Storage 클라이언트 라이브러리의 GA 버전(v1.0.0)을 출시했습니다.</strong>
+
+
+  C++용 Azure Storage 클라이언트 라이브러리는 다음 기능을 포함하여 Azure Storage 사용하기 위한 포괄적인 C++ API를 제공합니다.
+
+  <ul>
+      <li>Blob 컨테이너, 테이블 및 큐를 만들고, 읽고, 삭제하고, 나열합니다.</li>
+      <li>Blob을 만들고, 읽고, 삭제하고, 나열하고, 복사하고, Blob 범위를 읽고 씁니다.</li>
+      <li>Azure 테이블에 엔터티를 삽입, 삭제, 교체, 병합 및 쿼리합니다.</li>
+      <li>Azure 큐에서 메시지를 큐에 넣고 큐에서 제거합니다.</li>
+      <li>컨테이너, Blob, 테이블 및 큐를 지연 나열하고 지연 쿼리 엔터티(<em>버전 1.0.0의 새로운</em> 기능)</li>
+  </ul>
+
+  <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability.aspx">C++ v1.0.0(일반 공급) 블로그에 Microsoft Azure Storage 클라이언트 라이브러리</a>를 방문하여 이 새 릴리스에 대해 자세히 알아보세요.
+
+  <h2><strong>미리 보기 프로그램 공지 사항</strong></h2>
+
+  <h3>이제 Azure Files에 사용할 수 있는 기술 지원</h3>
+
+  이제 기술 지원 구독이 있는 적격 고객이 기술 지원 전문가 팀을 활용하여 Azure Files에 대한 지원을 받을 수 있음을 발표하게 되어 기쁘게 생각합니다.
+
+
+  Azure Files를 새로 사용하시겠습니까? 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-dotnet-how-to-use-files/">Azure Files 시작</a> 에 대해 알아봅니다.
+
+  <h3>Client-Side 암호화 미리 보기</h3>
+
+  고객으로부터 자주 받은 요청은 데이터를 Azure Storage 보내기 전에 쉽게 암호화할 수 있는 방법을 제공하는 것입니다<strong>. 귀기울여 들었습니다. .NET용 Azure Storage 클라이언트 라이브러리에서 클라이언트 쪽 암호화의 공개 미리 보기를 발표하게 되어 기쁩니다</strong>. 클라이언트 쪽 암호화를 사용하여 Blob 데이터, 테이블 데이터(암호화할 속성 선택) 및 큐 메시지를 암호화할 수 있습니다. 또한 클라이언트 쪽 암호화는 Azure Key Vault와 통합되며 원하는 경우 다른 키 관리 시스템과 통합할 수 있습니다.
+
+
+  클라이언트 쪽 암호화는 봉투 암호화 방법을 사용하여 뛰어난 성능을 유지합니다. 대부분의 경우 애플리케이션에 몇 줄의 코드만 추가하여 클라이언트 쪽 암호화를 활용할 수 있습니다. 서버 쪽 암호화와 달리 이 새로운 기능은 사용자가 암호화에 사용되는 키를 완전히 제어할 수 있도록 합니다. Azure Storage 키를 볼 수 없으므로 데이터의 암호를 해독할 수 없습니다.
+
+
+  클라이언트 쪽 암호화 <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2015/04/28/client-side-encryption-for-microsoft-azure-storage-preview.aspx">블로그 게시물을 방문하여 클라이언트 쪽 암호화</a> 사용을 시작합니다.
+
+  <h3>Xamarin 클라이언트 라이브러리 미리 보기</h3>
+
+  <a href="https://xamarin.com/"><strong>Xamarin</strong></a><strong>에 대한 Azure Storage 클라이언트 라이브러리 미리 보기를 발표하게 되어 기쁘게 생각합니다</strong><strong>. </strong>
+
+
+  Xamarin을 사용하면 개발자가 공유 C# 코드베이스를 사용하여 네이티브 사용자 인터페이스를 사용하여 iOS, Android 및 Windows 스토어 앱을 만들 수 있습니다.
+
+
+  Xamarin 자습서에서 Azure Storage 시작에 따라 지금 <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2015/04/29/getting-started-with-azure-storage-on-xamarin.aspx">Azure Storage 사용하는 Xamarin 앱 빌드를 시작</a>합니다.
+
+  <h3>Azure Resource Manager: Azure 리소스를 관리하는 새롭고 강력한 방법</h3>
+
+  앞으로 Azure 리소스 프로비저닝은 템플릿, RBAC, 리소스 그룹 등과 같은 다양한 새로운 기능을 제공하는 새로운 ARM( <a href="https://msdn.microsoft.com/en-us/library/azure/dn790568.aspx">Azure Resource Manager</a> )을 기반으로 합니다. ARM은 "리소스 공급자"를 통해 리소스를 노출합니다. 여기서 관리되는 각 리소스는 자체 리소스 공급자에 의해 수행됩니다. <strong>ARM용 SRP(Storage Resource Provider)를 발표하게 되어 기쁘게 생각합니다.</strong>
+
+
+  SRP를 사용하면 ARM 프로비저닝 스택 사용의 이점을 상속하면서 스토리지 계정(스토리지 계정 만들기/삭제/업데이트/읽기, 키 가져오기/설정 등)을 관리할 수 있습니다.
+
+
+  Azure Powershell용 <a href="https://msdn.microsoft.com/en-us/library/azure/mt163683.aspx">SRP REST API</a> 및 <a href="https://msdn.microsoft.com/en-us/library/azure/mt125979.aspx">SRP Cmdlet에</a> 대해 자세히 알아보려면 설명서를 확인하세요.
+
+
+  Azure Resource Manager에 대한 자세한 내용은 다음 <a href="https://azure.microsoft.com/blog/2015/04/29/iaas-just-got-easier-again/">블로그 게시물을</a> 참조하세요.
+
+  <h2><strong>근거리 로드맵</strong></h2>
+
+  또한 이 기회를 통해 Blob 추가, 빠른 추가 작업에 최적화된 새 Blob 유형, 새 iOS 스토리지 클라이언트 라이브러리 및 다양한 SAS 개선 사항을 포함하여 작업 중인 몇 가지 로드맵 항목을 공유하고자 했습니다. 또한 Azure Import/Export 서비스 제품을 일본과 호주로 확장하고 있습니다.
+
+  <h3>새 Blob 유형: Blob 추가</h3>
+
+  추가 Blob은 빠른 추가 작업에 최적화된 새 Blob 유형(기존 블록 및 페이지 Blob과 함께)이므로 로깅 및 감사와 같이 해당 Blob의 기존 콘텐츠를 수정하지 않고 기존 Blob에 데이터를 추가하는 시나리오에 적합합니다. 자세한 내용은 <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2015/04/13/introducing-azure-storage-append-blob.aspx">Azure Storage 추가 Blob</a> 블로그 소개를 참조하세요. 2015년 여름에 추가 Blob을 릴리스할 계획입니다.
+
+  <h3>iOS 클라이언트 라이브러리 미리 보기</h3>
+
+  <strong>iOS용 새 Azure Storage 클라이언트 라이브러리에서 작업 중입니다.</strong> 고객은 2015년 여름에 블록 Blob에 대한 공개 미리 보기를 기대할 수 있습니다. 자세한 내용을 알아보거나 제한된 미리 보기에 참여하려는 경우 <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2015/04/01/help-us-shape-the-azure-storage-ios-library.aspx">자세한 내용은 여기</a> 를 참조하세요.
+
+  <h3>SAS 개선 사항</h3>
+
+  Storage 팀은 SAS(공유 액세스 서명)를 개선하기 위해 열심히 노력하고 있습니다. <strong>피드백에 따라 2015년 여름에 세 가지 주요 개선 사항이 제공될 예정입니다.</strong>
+
+  <ul>
+      <li>Storage 계정 SAS – 이제 하나의 SAS 토큰이 단일 개체 또는 컨테이너 대신 전체 계정에 대한 액세스를 제공할 수 있습니다.</li>
+      <li>프로토콜 SAS – 이제 SAS 토큰을 HTTPS로만 제한할 수 있습니다. 사용자가 스토리지 클라이언트 라이브러리를 사용하는 경우 프로토콜이 클라이언트 쪽에 적용되므로 SAS 토큰이 HTTP를 통해 전송되지 않습니다.</li>
+      <li>IP 제한된 SAS – 이제 SAS 토큰이 단일 IP 또는 범위를 지정할 수 있습니다. 해당 주소 또는 범위 외부에서 시작된 요청은 실패합니다.</li>
+  </ul>
+
+  이러한 향상된 기능을 통해 SAS는 광범위한 시나리오에서 개발자 및 관리자의 요구를 충족해야 하므로 계정의 공유 키를 사용할 필요가 크게 줄어듭니다.
+
+  <h3>Azure Import/Export</h3>
+
+  <strong>Azure Import/Export 2015년 여름에 일본과 호주에 출시될 예정입니다. </strong> Azure Import/Export 현재 모든 공용 Azure 지역에 대해 제공됩니다. 일본 또는 오스트레일리아에 스토리지 계정이 있는 경우 이제 다른 지역으로 배송하는 대신 일본 또는 오스트레일리아 내의 국내 주소로 디스크를 배송할 수 있습니다. 이제 Import/Export 최대 6TB 하드 드라이브도 지원합니다.
+
+
+  Azure Import/Export 대한 자세한 내용은 여기를 참조<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-import-export-service/">하세요</a>.
+
+
+  마지막으로, Azure Storage 새로운 사용자를 위해 Storage, Premium Storage 및 파일에 대한 5 분 시작 비디오를 포함하여 새로운 Azure Storage <a href="https://azure.microsoft.com/en-us/documentation/services/storage/">설명서 페이지를 </a>확인하세요.
+
+
+  감사합니다!
+
+
+  Azure Storage 팀
+
+
+  &nbsp;
+
+
+  &nbsp;

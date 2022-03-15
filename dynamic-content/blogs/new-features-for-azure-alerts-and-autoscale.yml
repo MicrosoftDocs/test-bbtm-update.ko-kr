@@ -1,0 +1,195 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0a0873ce515a0fdeb542118b88860ed34698f0b9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908242"
+Slug: new-features-for-azure-alerts-and-autoscale
+Title: Azure 경고 및 자동 크기 조정에 대한 새로운 기능
+Summary: Azure 경고 및 자동 크기 조정 알림에 대한 새로운 기능에 대해 알아봅니다.
+Content: >-
+  <p>지난 가을 메트릭에 <a href="https://azure.microsoft.com/en-us/blog/webhooks-for-azure-alerts/">대한 Azure Alerts에 대한 웹후크를</a> 도입하여 경고에 대한 사용자 지정 알림 및 자동화된 작업을 사용하도록 설정했습니다. 우리는 빠른 채택과 긍정적 인 피드백을 보고 매우 기쁘게 생각합니다. 또한 이 기능을 광범위한 사용 사례로 확장하기 위한 몇 가지 우수하고 실행 가능한 피드백을 제공했습니다. 오늘, 더 많은 알림 및 자동화된 작업을 구성하고 관리할 수 있는 핵심 Azure 플랫폼의 기능 집합을 발표하게 되어 기쁩니다.</p>
+
+
+  <p>또한 Microsoft 및 파트너 솔루션을 통해 Azure 리소스의 데이터에 대한 고급 경고 기능에 대한 정보를 공유할&#39;있습니다. 여기에는 여러 Azure 구독의 데이터에 대한 로그 검색 기반 경고뿐만 아니라 사용자 지정 메트릭 경고를 만드는 기능이 포함됩니다.</p>
+
+
+  <h3>Azure 자동 크기 조정 작업에 대한 이메일 및 웹후크 알림</h3>
+
+
+  <p>많은 사용자가 자동 크기 조정 이벤트에 대한 알림을 받을 수 있는 기능을 요청했습니다. Web Apps, Cloud Services 및 Virtual Machine Scale Sets에 대한 확장 작업에 대한 이메일 및 웹후크 알림을 구성하는 기능을 발표하게 되어 기쁩니다. 이메일 및 웹후크 구성은 메트릭에 대한 Azure 경고와 동일하게 작동합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/847f7b0c-2fcc-41c9-882e-9f2d4341f9a6.jpg"><img alt="Autoscale_Notifications_Build_Image" border="0" height="610" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d0565ce5-b18f-4048-979e-7fda3d6b91c4.jpg" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="Autoscale_Notifications_Build_Image" width="382"></a></p>
+
+
+  <p>자동 크기 조정 엔진은 크기 조정 오류뿐만 아니라 크기 조정 작업에 대한 메트릭 데이터의 사용 불가/복구에 대해 알릴 수 있습니다. 이 새로운 기능을 사용하면 성공적인 스케일 아웃 및 작업에 대한 전자 메일 알림을 수신하도록 옵트인할 수 있습니다. 또한 새 인스턴스 수와 이전 인스턴스 수를 포함하여 크기가 조정된 리소스에 대한 키 메타데이터를 라우팅하여 성공적인 크기 조정 작업 시 트리거되도록 웹후크 Uri를 구성할 수도 있습니다.</p>
+
+
+  <p>Web Apps 및 Cloud Services용 Azure Portal 및 REST API(<a href="https://resources.azure.com/">Azure 리소스 탐색기</a>), <a href="https://go.microsoft.com/fwlink/?LinkId=784793">Azure Insights PowerShell</a> 및 Web Apps, Cloud Services 및 VM Scale Sets용 <a href="https://go.microsoft.com/fwlink/?LinkId=784794">Azure Insights CLI</a>를 통해 구성할 수 있습니다.</p>
+
+
+  <p>알림 및 웹후크 알림 페이로드(JSON) 스키마 구성에 대한 자세한 내용은 <a href="https://go.microsoft.com/fwlink/?LinkId=746685">여기에서</a> 확인할 수 있습니다.</p>
+
+
+  <h3>Azure 감사 로그에 대한 경고 미리 보기(이벤트에 대한 경고)</h3>
+
+
+  <p>새로운 기능은 감사 로그에 대한 경고이며, 이는 기본적으로 Azure의 운영 이벤트에 대한 경고입니다. 이는 초기 <b>미리 보기</b> 릴리스이며 현재 Azure PowerShell 및 Azure CLI를 통해서만 지원됩니다.</p>
+
+
+  <p>많은 사용자가 지원하려는 핵심 시나리오 중 하나는 Azure의 리소스에 대한 특정 작업과 자동화된 작업을 수행할 수 있는 기능을 경고하는 것이었습니다. 이벤트에 대한 이 새로운 경고를 사용하면 VM 시작/중지/삭제 등과 같은 컨트롤 플레인 작업에 대한 이메일 및 웹후크를 통해 알림을 받을 수 있습니다.</p>
+
+
+  <p>다음은 VM:ca의 이벤트에 대한 경고를 만드는 PowerShell 스크립트의 예입니다.</p>
+
+
+  <table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(216, 216, 216);">
+   <tbody>
+    <tr>
+     <td valign="top" width="1565">
+     <p><span style="font-family: courier new,courier,monospace;"># 시나리오: 내 구독의 리소스 그룹 &quot;myrg1&quot; 에서 VM이 성공적으로 시작되면 전자 메일 보내기 및 웹후크 트리거</span></p>
+
+     <p><span style="font-family: courier new,courier,monospace;"># 전자 메일 작업 만들기</span></p>
+
+     <p><span style="color: rgb(51, 153, 255);"><span style="font-family: courier new,courier,monospace;">$actionEmail = New-AzureRmAlertRuleEmail -CustomEmail myname@company.com</span></span></p>
+
+     <p><span style="font-family: courier new,courier,monospace;"># 웹후크 작업 만들기</span></p>
+
+     <p><span style="font-family: courier new,courier,monospace;"><span style="color: rgb(51, 153, 255);">$actionWebhook = New-AzureRmAlertRuleWebhook -ServiceUri </span><a href="https://example.com?token=mytoken"><span style="color: rgb(51, 153, 255);">https://example.com?token=mytoken</span></a></span></p>
+
+     <p><span style="font-family: courier new,courier,monospace;"># 규칙을 만들고 전자 메일 및 웹후크 작업을 구성합니다.</span></p>
+
+     <p><span style="color: rgb(51, 153, 255);"><span style="font-family: courier new,courier,monospace;">Add-AzureRmLogAlertRule -Name superalert1 -Location &quot;East US&quot; -ResourceGroup myrg1 -OperationName Microsoft.ClassicCompute/virtualmachines/start/action -Status Succeeded -TargetResourceGroup myrg1 -Actions $actionEmail, $actionWebhook</span></span></p>
+
+     <p><span style="font-family: courier new,courier,monospace;"># 규칙 검색</span></p>
+
+     <p><span style="color: rgb(51, 153, 255);"><span style="font-family: courier new,courier,monospace;">Get-AzureRmAlertRule -Name superalert1 -ResourceGroup myrg1 -DetailedOutput</span></span></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>이벤트에 대한 경고에 대한 자세한 내용 및 샘플은 <a href="https://go.microsoft.com/fwlink/?LinkId=784793">PowerShell</a> 및 <a href="https://go.microsoft.com/fwlink/?LinkId=784794">Azure CLI</a>에 대한 Azure Insights 문서에서 확인할 수 있습니다.</p>
+
+
+  <p>이 경고가 활성화되면 페이로드에서 중요한 이벤트 메타데이터를 전달하는 웹후크를 트리거할 수 있습니다. 이벤트에 대한 경고에 대한 웹후크 알림 페이로드 스키마(JSON 형식)는 <a href="https://go.microsoft.com/fwlink/?LinkId=784795">여기에서</a> 찾을 수 있습니다.</p>
+
+
+  <p>이 기능은 아직 <b>미리 보기</b> 상태이며 이벤트에 대한 경고는 15분 지연될 수 있습니다. 앞으로 몇 달 동안 이벤트에 대한 경고 엔진의 성능이 크게 향상될 것이며, 이러한 경고를 구성하고 관리하기 위해 Azure Portal에서 사용자 인터페이스 지원을 릴리스할 예정입니다.</p>
+
+
+  <h3>사용자 지정 메트릭 및 웹 테스트에 대한 이메일 및 웹후크 알림이 포함된 경고</h3>
+
+
+  <p>사용자 지정 메트릭을 생성하고 해당 메트릭에 대한 알림을 받는 기능은 많은 사용자에게서 가장 많이 묻는 질문이었습니다. 사용자 지정 메트릭 및 이벤트를 생성하는 기능은 <a href="https://azure.microsoft.com/en-us/services/application-insights/">Application Insights</a> 내에 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-api-custom-events-metrics/">이미 있습니다</a>. 오늘 이러한 경고에 대한 웹후크 알림을 발표하게 되어 기쁩니다. 애플리케이션 Insights 기반 사용자 지정 메트릭의 웹후크는 표준 메트릭과 동일하게 작동하며 <a href="https://azure.microsoft.com/en-us/documentation/articles/insights-webhooks-alerts/">웹후크 페이로드에 대해 동일한 JSON 스키마를</a> 공유합니다.</p>
+
+
+  <p>애플리케이션 Insights 사용하여 최소한의 코드 줄로 모든 숫자 값을 어디서나 사용자 지정 메트릭으로 내보낼 수 있습니다(데스크톱 앱, 온-프레미스 머신 또는 다른 클라우드 플랫폼에서 실행되는 스크립트). 또한 Application Insights Azure Portal 내에서 시각화, 경고 및 알림을 관리할 수 있습니다. 애플리케이션 Insights 선택할 수 있는 다양한 SDK가 있습니다(C#, Java, PowerShell, Python, Ruby에서 몇 가지 이름을 지정).</p>
+
+
+  <p>다음은 Azure Storage 큐의 길이를 검색하고 해당 값을 사용자 지정 메트릭으로 Application Insights 보내는 <a href="https://code.msdn.microsoft.com/Custom-Metric-Alerts-for-c9ed3f85">샘플 C# 애플리케이션</a>입니다. 이 데이터는 애플리케이션 Insights 라우팅되면 다른 메트릭과 마찬가지로 볼 수 있습니다. 숫자 임계값을 설정하여 경고를 만들고 이메일 &amp; 웹후크 알림을 구성할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/030aecca-629f-41c3-a37e-032cac1ec115.png"><img alt="App_Insights_Custom_Metric_and_Console_App_Code" border="0" height="948" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2f910a6-1424-4cba-989f-db9da6ef3ea2.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="App_Insights_Custom_Metric_and_Console_App_Code" width="1235"></a></p>
+
+
+  <p>애플리케이션 Insights C#, Java, PowerShell, Python, Ruby 등의 <a href="https://github.com/Microsoft?utf8=%E2%9C%93&amp;query=applicationInsights">SDK와 함께</a> 제공되므로 온-프레미스 또는 클라우드 호스팅 서버의 거의 모든 애플리케이션 및 스크립트에서 사용자 지정 메트릭을 생성할 수 있습니다. Application Insights 사용하여 사용자 지정 메트릭 및 이벤트에 대해 자세히 알아보려면 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-api-custom-events-metrics/">여기를 클릭하세요</a>.</p>
+
+
+  <p>또한 애플리케이션 Insights 팀은 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-monitor-web-app-availability/">웹</a> 테스트 경고에 대한 웹후크 알림 지원을 확장했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90b1676c-791f-454e-9ebe-aabd5455e151.jpg"><img alt="App_Insights_Web_Test" border="0" height="814" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5d449368-6d85-4788-831a-6a432d229a14.jpg" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="App_Insights_Web_Test" width="1086"></a></p>
+
+
+  <h3>PagerDuty와 추가 경고 통합</h3>
+
+
+  <p style="margin: 0in 0in 0pt;">선도적인 인시던트 관리 솔루션 중 하나인 <a href="https://www.pagerduty.com">PagerDuty</a>는 메트릭에 대한 Azure Alerts에 대한 최고 수준의 지원을 제공합니다. 현재 PagerDuty는 자동 크기 조정 작업, 애플리케이션 Insights 사용자 지정 메트릭 및 감사 로그 이벤트에 대한 알림에 대한 Azure 경고에 대한 인시던트 지원을 확장하고 있습니다.</p>
+
+
+  <p>아래 이미지는 PagerDuty에서 알림을 트리거할 때 사용자 지정 메트릭 기반 경고가 어떻게 표시되는지 보여 줍니다. 이 경고는 이벤트를 보강, 집계 및 실행 가능한 것으로&nbsp; 상호 연결합니다. 이러한 방식으로 PagerDuty는 노이즈 및 해결 시간을 줄여 인시던트 관리를 간소화합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/38c10b0c-845f-4be8-ae3f-99594c124ccf.jpg"><img alt="PagerDuty_Alert_Build" border="0" height="704" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4969cfe3-c91e-4e10-bfa6-7d93bcdbb467.jpg" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="PagerDuty_Alert_Build" width="1420"></a></p>
+
+
+  <p>몇 번의 클릭만으로 Azure Alerts를 PagerDuty와 통합하여 메트릭, 자동 크기 조정 작업 및 감사 로그&nbsp; 이벤트에 대한 Azure 경고에 대한 SMS, 음성, 전자 메일을 수신하고 에스컬레이션을 관리할 수 있습니다. PagerDuty 통합에 대해 자세히 알아보려면 <a href="https://www.youtube.com/watch?v=AIck_eKTX_8">이 비디오를</a> 확인하세요.</p>
+
+
+  <p>여기에서 PagerDuty에서 Azure 통합 공지에 대해 자세히 확인할 수 <a href="https://go.microsoft.com/fwlink/?LinkId=784799">있습니다</a>.</p>
+
+
+  <h3>v2 VM의 경고에 대한 Azure Automation Runbook 통합 미리 보기</h3>
+
+
+  <p>지난 가을, <a href="https://azure.microsoft.com/en-us/documentation/articles/automation-webhooks/">Azure Automation Runbook을 트리거</a>하도록 메트릭 기반 경고에서 웹후크를 구성하는 기능을 발표했습니다. Azure Alerts와 Automation Runbook 간의 Azure Portal 내에서 더 나은 통합을 통해 이 환경을 훨씬 개선할 수 있다는 피드백을 제공했습니다. Azure Automation 팀은 VM에서 경고에 대해 이를 사용하도록 설정하여 <b>미리 보기</b> 기능을 릴리스하기 위해 이 작업을 수행했습니다. 현재 v2 VM(Azure Resource Manager 기반 VM)에 대해서만 지원됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d92d4d6a-17d7-47d6-9d5a-27feff8dfa77.jpg"><img alt="Alert_Automation_Build" border="0" height="970" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94c09e23-3bcd-48e6-89d1-20138b219559.jpg" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="Alert_Automation_Build" width="671"></a></p>
+
+
+  <p>이제 메트릭 트리거에 따라 VM 다시 시작, 시작, 중지 또는 업데이트와 같은 일반적인 작업에 대한 작업을 수행하도록 Azure Automation Runbook을 직접 구성할 수 있습니다. 팀은 <a href="https://feedback.azure.com/">피드백을</a> 받고자 하며 이 기능을 다른 Azure 서비스에 대한 경고로 확장할 계획입니다.</p>
+
+
+  <p>이 새 기능에 대한 자세한 연습은 Azure Automation 팀의 이 <a href="https://go.microsoft.com/fwlink/?LinkId=784860">문서를</a> 확인하세요.</p>
+
+
+  <h3>Azure 경고 및 Azure Automation을 사용하여 VM 크기 조정(수직 크기 조정)</h3>
+
+
+  <p>VM 및 자동 크기 조정 팀에서 받은 또 다른 일반적인 피드백은 트리거를 기반으로 VM에서 수직 확장 작업(VM 또는 VMSS 크기 조정 또는 축소)을 수행하는 기능에 관한 것이었습니다. 아직 플랫폼에서 빌드된 기능은 아니지만 Azure Alert 웹후크와 Azure Automation을 사용하여 현재 가능한 기능에&rsquo; 대한 몇 가지 샘플을 공유하려고 했습니다.</p>
+
+
+  <p>Azure Automation 갤러리에서 메트릭 경고를 통해 트리거할 수 있는 Scale-Up 및 Scale-Down Runbook의 샘플을 찾을 수 있습니다. 이러한 Runbook을 사용하면 경고에 설정된 임계값에 따라 VM을 확장 또는 축소(크기 조정)할 수 있습니다. 예를 들어 지정된 기간 동안 활동이 없음을 나타내는 경고가 트리거될 때 VM을 자동으로 축소(A2에서 A1로 크기 변경)할 수 있습니다(예: CPU%가 오랜 시간 동안 2% 미만임).</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4ed26e6c-028b-4564-ac94-4b672136ba5f.jpg"><img alt="Vertical_Scale_runbooks" border="0" height="581" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3182145f-52df-40f2-93c1-54e802590a15.jpg" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="Vertical_Scale_runbooks" width="906"></a></p>
+
+
+  <p>단일 VM에 대한 이러한 샘플 스케일 업/다운 Runbook에 대한 VM 팀의 자세한 <a href="https://go.microsoft.com/fwlink/?LinkId=784796">연습을</a> 확인하세요.</p>
+
+
+  <p>[업데이트, 2016/4/15] Azure Automation Runbook과 경고 통합을 사용하여 VM 확장 집합을 수직으로 자동 크기 조정할 수도 있습니다.</p>
+
+
+  <p>수직 자동 크기 조정 VMSS에 대한 이 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machine-scale-sets-vertical-scale-reprovision/">연습을</a> 따르세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3557a58-e022-4479-8a85-6af44b5feb48.png"><img alt="vmss-runbooks-gallery" border="0" height="763" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/57b07316-12a8-4833-8b80-18eb6253e245.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="vmss-runbooks-gallery" width="898"></a></p>
+
+
+  <h3>Log Analytics(OMS)를 사용하여 Azure VM 진단 데이터에 대한 고급 경고</h3>
+
+
+  <p>더 큰 OMS(Operations Management Suite)의 일부인 Log Analytics는 Azure Portal에서 액세스할 수 있으며 하나 이상의 구독에서 Azure 서버의 데이터를 보고 분석할 수 있습니다. OMS는 IIS 로그, syslog 데이터, ETW 로그, Azure Diagnostics 에이전트 카운터, 애플리케이션 로그 및 Azure 구독 전체에서 더 많은 데이터 형식과 같은 Windows 및 Linux VM에서 수집한 진단 데이터를 수집할 수 있습니다. 그런 다음 온-프레미스 및 Azure 서버에서 로그에 대한 사용자 지정 검색을 만들 수 있으며 이러한 검색 결과에 대해 경고를 받을 수 있습니다. 메일을 보내거나 WebHook을 실행하거나 Automation Runbook을 실행하도록 경고를 구성할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/953a3246-5d52-4af2-aca1-ea0190ba15f9.jpg"><img alt="OMS_Log_Alerts_Build" border="0" height="567" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/166af242-4857-4375-a7ac-bb154b8a13b8.jpg" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="OMS_Log_Alerts_Build" width="1248"></a></p>
+
+
+  <p>Type=Alert SourceSystem=OMS 쿼리를 실행하여 모든 경고를 볼 수 있습니다. 또한 OMS에는 모든 경고를 간소화하고, 분류하고, 집계된 수와 기록을 모니터링하는 풍부한 경고 관리 팩이 함께 제공됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac0eeb4c-9c44-4089-8157-913855b9e47e.jpg"><img alt="OMS_Alerts_Summary" border="0" height="496" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/371b0a39-35f0-4c25-b3c3-d462f7617ea9.jpg" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="OMS_Alerts_Summary" width="1062"></a></p>
+
+
+  <p>Log Analytics는 모든 경고 기능을 포함하는 무료 계층과 함께 제공됩니다.</p>
+
+
+  <p>Azure 진단에 대한 OMS 구성에 대해 자세히 알아보려면 <a href="https://technet.microsoft.com/en-US/library/mt484114.aspx">여기</a>를 클릭하세요.</p>
+
+
+  <p>OMS 경고에 대한 자세한 내용은 <a href="https://technet.microsoft.com/en-us/library/mt614775.aspx">여기에서</a> 확인할 수 있습니다. 웹후크를 사용하여 OMS 경고를 구성하는 방법에 대해 자세히 알아보려면 <a href="https://technet.microsoft.com/en-us/library/mt668400.aspx">여기</a>를 클릭하십시오.</p>
+
+
+  <h3>요약</h3>
+
+
+  <p>이러한 새로운 기능을 사용하면 이제 메트릭, 자동 크기 조정 작업 및 감사 로그 이벤트에 대한 경고를 더 많이 제어할 수 있습니다. 또한 Application Insights 및 OMS를 사용하는 Azure 리소스의 고급 경고 기능에 대해서도 자세히 알고 있습니다. Azure 경고에 대한 SMS, 푸시 알림 및 추가 사용자 지정 알림을 받도록 PagerDuty를 구성할 수 있습니다.</p>
+
+
+  <p>앞으로 몇 달 안에 위에서 언급한 미리 보기 기능을 개선할 예정입니다. 한편, 스핀을 위해 이러한 알림을 받아서 웹후크 알림으로 경고를 발생시키고 <a href="https://feedback.azure.com/">피드백을</a> 공유합니다.</p>

@@ -1,0 +1,139 @@
+### YamlMime:Yaml
+ms.openlocfilehash: be06dea35edfccec8d435a6a06733ea4057e7994
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908538"
+Slug: build-more-accurate-forecasts-with-new-capabilities-in-automated-machine-learning
+Title: 자동화된 기계 학습의 새로운 기능을 사용하여 보다 정확한 예측 빌드
+Summary: 자동화된 기계 학습의 기능 릴리스를 사용하여 보다 정확한 예측을 빌드합니다. 학습 데이터에 차이가 있거나 예측을 개선하기 위해 상황에 맞는 데이터를 적용해야 하거나 기능에 지연을 적용해야 하는 시나리오가 있나요? 도움이 될 수 있는 새로운 기능에 대해 자세히 알아보세요.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/services/machine-learning-service/" target="_blank">Azure Machine Learning 서비스의</a> 시계열 예측과는 다른 새로운 기능을 발표하게 되어 기쁩니다. <a href="https://azure.microsoft.com/en-us/blog/new-automated-machine-learning-capabilities-in-azure-machine-learning-service/" target="_blank">2018년 12월에 예측 미리 보기를</a> 시작했으며, 강력한 고객 관심에 흥분하고 있습니다. 우리는 고객의 의견을 경청하고 모든 피드백을 주셔서 감사합니다. 여러분의 응답은 이 이정표에 도달하는 데 도움이 되었습니다. 감사합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0e79cc1c-043c-47f2-af02-98fde52844e2.png"><img alt="Featured image, general availability for Automated Machine Learning Time Series Forecasting" border="0" height="300" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8ef4e358-f953-41d2-9d02-0c6121df3d8f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="주요 이미지, 자동화된 Machine Learning 시계열 예측의 일반 공급" width="960"></a></p>
+
+
+  <p>건물 예측은 수익, 재고, 판매 또는 고객 수요에 관계없이&rsquo; 모든 비즈니스에서 필수적인 부분입니다. 기계 학습 모델을 빌드하는 것은 시간이 많이 걸리고 복잡하며 알고리즘을 반복하고 하이퍼 매개 변수 및 기능 엔지니어링을 조정하는 등 고려해야 할 많은 요소가 있습니다. 이러한 선택 항목은 추세, 계절성, 휴일 및 효과적으로 학습 데이터를 분할하는 추가 고려 사항과 함께 시계열 데이터를 곱합니다.</p>
+
+
+  <p>자동화된 기계 학습(ML) 내의 예측에는 이제 권장 모델의 정확도와 성능을 향상시키는 새로운 기능이 포함됩니다.</p>
+
+
+  <ul>
+   <li>새 예측 함수</li>
+   <li>롤링 원본 교차 유효성 검사</li>
+   <li>구성 가능한 지연 시간</li>
+   <li>롤링 창 집계 기능</li>
+   <li>휴일 검색 및 기능화</li>
+  </ul>
+
+
+  <h2>확장된 예측 함수</h2>
+
+
+  <p>예측 작업 유형에 대한 예측 값을 검색하는 새로운 방법을 소개합니다. 시계열 데이터를 처리할 때 예측 시 더 신중한 고려가 필요한 몇 가지 고유한 시나리오가 발생합니다. 예를 들어 각 예측에 대해 모델을 다시 학습할 수 있나요? 미래를 위한 예측 드라이버가 있나요? 기록 데이터의 간격이 있을 때 어떻게 예측할 수 있나요? 새 예측 함수는 이러한 모든 시나리오를 처리할 수 있습니다.</p>
+
+
+  <p>&rsquo;새 예측 함수를 사용할 때 학습 및 예측 데이터 시나리오의 일반적인 구성을 자세히 살펴보겠습니다. 자동화된 ML 경우 예측 원점은 예측 값의 예측이 시작되는 시점으로 정의됩니다. 예측 지평선은 예측이 미래로 얼마나 멀리 가야 하는지입니다.</p>
+
+
+  <p>대부분의 경우 학습 및 예측에는 시간 간격이 없습니다. 모델이 사용 가능한 가장 최신 데이터에 대해 학습되기 때문에 이상적입니다. 예측 간격에서 재학습 시간을 허용하는 경우(예: 과거 수익 또는 알려진 주문 볼륨을 사용하는 재무 예측 속도 또는 공급망 애플리케이션과 같은 더 고정된 데이터 상황에서) 이러한 방식으로 예측을 설정하는 것이 좋습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/13028d3f-575d-44b4-9bc0-abfb83665b98.png"><img alt="Ideal use case when training and prediction data have no gaps in time." border="0" height="538" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/616f2d9f-eb6a-4f3b-af56-cc82197db001.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="학습 및 예측 데이터에 시간 간격이 없는 경우 이상적인 사용 사례입니다." width="964"></a></p>
+
+
+  <p>예측하는 경우 미래의 값을 미리 알 수 있습니다. 이러한 값은 예측의 정확도를 크게 향상시킬 수 있는 상황별 정보 역할을 합니다. 예를 들어 식료품 품목의 가격은 판매 목표 변수에 크게 영향을 주는 몇 주 전에 알려져 있습니다&ldquo;&rdquo;. 또 다른 예는 환율과 같은 드라이버의 미래 값을 실험하면서 what-if 분석을 실행하는 경우입니다. 이러한 시나리오에서 예측 인터페이스를 사용하면 예측(Xfuture)을 원하는 기간을 설명하는 예측 드라이버를 지정할 수 있습니다.&nbsp;</p>
+
+
+  <p>학습 및 예측 데이터에 시간 간격이 있으면 학습된 모델이 부실해집니다. 예를 들어 IoT와 같은 고주파 애플리케이션에서는 다른 디바이스 또는 외부 요인(예: 날씨)에 종속된 센서에서 높은 속도의 변화로 인해 모델을 지속적으로 재학습하는 것은 실용적이지 않습니다. 예측 컨텍스트에 대상(ypast) 및 드라이버(Xpast)의 최근 값을 제공하여 예측을 개선할 수 있습니다. 예측 함수는 간격을 정상적으로 처리하여 필요한 경우 학습 및 예측 컨텍스트의 값을 표시합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f22189d0-2856-4972-b8ea-d2320f0727ce.png"><img alt="Using contextual data to assist forecast when training and prediction data have gaps in time." border="0" height="517" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1e82c9bf-d100-42da-a66a-03e77f391703.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="상황별 데이터를 사용하여 학습 및 예측 데이터에 시간 간격이 있는 경우 예측을 지원합니다." width="1395"></a></p>
+
+
+  <p>판매, 수익 또는 고객 보존과 같은 다른 시나리오에서는 향후 기간 동안 상황에 맞는 정보를 사용할 수 없을 수 있습니다. 이러한 경우 예측 함수는 제로 가정 예측을 대상&rdquo; 시간으로 만들도록 &ldquo;지원합니다. 예측 대상은 예측 수평선의 끝점입니다. 모델 최대 수평선은 모델이 예측하도록 학습된 기간의 수이며 예측 수평선 길이를 제한할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dba37f49-119f-47b0-a7cc-5e4ec5dc02db.png"><img alt="Use case when no gap in time exists between training and prediction data and no contextual data is available." border="0" height="538" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c4488fef-651e-4613-9e64-f3d7734bb48e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="학습 데이터와 예측 데이터 사이에 시간 간격이 없고 상황에 맞는 데이터를 사용할 수 없는 경우 사용 사례입니다." width="964"></a></p>
+
+
+  <p>예측 모델은 입력 데이터(예: 휴일 기능 추가)를 보강하고 누락된 값을 표시합니다. 보강되고 대체된 데이터는 예측과 함께 반환됩니다.</p>
+
+
+  <p><a href="https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/forecasting-orange-juice-sales/auto-ml-forecasting-orange-juice-sales.ipynb" target="_blank">판매 예측</a>, <a href="https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/forecasting-bike-share" target="_blank">자전거 수요</a> 및 <a href="https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/forecasting-energy-demand/auto-ml-forecasting-energy-demand.ipynb" target="_blank">에너지 예측</a>에 대한 Notebook 예제는 <a href="https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/automated-machine-learning" target="_blank">GitHub</a> 찾을 수 있습니다.</p>
+
+
+  <h2>롤링 원본 교차 유효성 검사</h2>
+
+
+  <p>CV(교차 유효성 검사)는 모델의 샘플 외 오류를 예측하고 줄이기 위한 중요한 절차입니다. 시계열 데이터의 경우 테스트 데이터의 과거 값을 사용하여 학습만 수행되도록 해야 합니다. 시간에 관계없이 데이터를 분할하는 것은 프로덕션에서 데이터를 사용할 수 있게 되는 방법과 일치하지 않으며 예측&rsquo; 일반화 오류의 잘못된 추정으로 이어질 수 있습니다.</p>
+
+
+  <p>올바른 평가를 위해 시계열 데이터에서 기계 학습 모델을 평가하는 표준 방법으로 ROCV(롤링 원본 교차 유효성 검사)를 추가했습니다. 원본 시점을 사용하여 계열을 학습 및 유효성 검사 데이터로 나눕니다. 원본을 시간에 따라 슬라이딩하여 교차 유효성 검사 겹을 생성합니다.</p>
+
+
+  <p>예를 들어 ROCV를 사용하지 않는 경우 40개의 관찰을 포함하는 가상의 시계열을 고려합니다. 시리즈를 미래까지 최대 4개의 시간 포인트로 예측하는 모델을 학습하는 작업이 있다고 가정해 보겠습니다. 아래 이미지에는 표준 10배 CV(교차 유효성 검사) 전략이 나와 있습니다. 이미지의 y축은 학습 지점(파란색)과 유효성 검사 지점(주황색)을 구분하는 동안 만들어지는 CV 접기를 나타냅니다. 아래 10배 예제에서는 1~9개의 접기를 통해 향후 날짜에 모델 학습을 수행하여 부정확한 학습 및 유효성 검사 결과를 초래하는 유효성 검사 집합을 포함시키는 방법을 확인합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4c398bce-20e3-48e3-b5a5-862fca0e6091.png"><img alt="Cross validation showing training points spread across folds and distributed across time points causing data leakage in validation" border="0" height="212" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/950ab0dd-763b-439f-959c-a313b104c545.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="접기 간에 분산되고 시간 지점에 분산된 학습 지점을 보여 주는 교차 유효성 검사로 인해 유효성 검사에서 데이터 누출이 발생합니다." width="380"></a></p>
+
+
+  <p>이 시나리오는 시계열에 대해 피해야 합니다. 아래와 같이 ROCV 전략을 사용하는 경우 시계열 데이터 무결성을 유지하고 데이터 유출 위험을 제거합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bcda3a46-c4f6-4c75-99b1-470796416f47.png"><img alt="Rolling-Origin Cross Validation (ROCV) showing training points distributed on each fold at the end of the time period to eliminate data leakage during validation" border="0" height="212" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/83321f30-17b1-468f-9822-18ef801af949.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="유효성 검사 중 데이터 누출을 제거하기 위해 기간의 끝에 각 접기에 분산된 학습 지점을 보여 주는 ROCV(교차 유효성 검사) Rolling-Origin" width="380"></a></p>
+
+
+  <p>ROCV는 예측에 자동으로 사용됩니다. 단순히 학습 및 유효성 검사 데이터를 함께 전달하고 교차 유효성 검사 폴드 수를 설정합니다. 자동화된 기계 학습(ML)은 실험에서 정의한 시간 열 및 그레인 열을 사용하여 시간 범위를 존중하는 방식으로 데이터를 분할합니다. 또한 자동화된 ML 결합된 학습 및 유효성 검사 집합에서 선택한 모델을 다시 학습하여 가장 최근의 가장 유익한 데이터를 활용합니다. 이 데이터는 롤링-원본 분할 방법에서 유효성 검사 집합으로 끝납니다.</p>
+
+
+  <h2>지연 및 롤링 창 집계</h2>
+
+
+  <p>종종 예측자가 보유할 수 있는 최상의 정보는 대상의 최신 값입니다. 대상의 지연 및 누적 통계를 만들면 예측의 정확도가 높아집니다.</p>
+
+
+  <p>자동화된 ML 이제 대상 지연을 모델 기능으로 지정할 수 있습니다. 지연 길이를 추가하면 시간 간격에 따라 지연할 행 수를 식별합니다. 예를 들어 두 단위로 지연하려는 경우 지연 길이 매개 변수를 2로 설정합니다.</p>
+
+
+  <p>아래 표에서는 2의 지연 길이를 처리하는 방법을 보여 줍니다. 녹색 열은 1일 및 2일의 판매 지연으로 엔지니어링된 기능입니다. 파란색 화살표는 학습 데이터에 의해 각 지연이 생성되는 방식을 나타냅니다. 해당 지연 기간 동안 샘플 데이터가 없는 경우 숫자(Nan)가 생성되지 않습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d5a15865-3df6-441a-84df-0136c9b0f68c.png"><img alt="Table illustrating how a lag length og two would be treated" border="0" height="269" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6690a165-f602-4c2e-ba5d-24437505ef69.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="지연 길이 og 2를 처리하는 방법을 보여 주는 표" width="664"></a></p>
+
+
+  <p>지연 외에도 데이터 값의 롤링 집계를 기능으로 추가해야 하는 경우가 있을 수 있습니다. 예를 들어 에너지 수요를 예측할 때 가열된 공간의 열 변화를 고려하여 3일의 롤링 창 기능을 추가할 수 있습니다. 아래 표에서는 창 집계가 적용될 때 발생하는 기능 엔지니어링을 보여 줍니다. 최솟값, 최댓값 및 합계에 대한 열은 정의된 설정에 따라 3의 슬라이딩 윈도우에서 생성됩니다. 각 행에는 2017년 1월 4일의 경우 최대값, 최소값 및 합계 값이 2017년 1월 1일, 2017년 1월 2일 및 2017년 1월 3일에 대한 임시 값을 사용하여 계산되는 새로운 계산 기능이 있습니다. 나머지 행에 &ldquo;&rdquo; 대한 데이터를 채웁니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61a5506e-89c0-4478-bef3-d4835854cc8a.png"><img alt="Table showing feature engineering that occurs when window aggregation is applied." border="0" height="329" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d03d6941-a7b8-4023-a4ab-d8f56751bfe4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="창 집계가 적용될 때 발생하는 기능 엔지니어링을 보여 주는 표입니다." width="1048"></a></p>
+
+
+  <p>이러한 추가 기능을 추가 컨텍스트 데이터로 생성하고 사용하면 학습된 모델의 정확도에 도움이 됩니다. 이 모든 것은 실험 설정에 몇 가지 매개 변수를 추가하여 가능합니다.</p>
+
+
+  <h2>휴일 기능</h2>
+
+
+  <p>많은 시계열 시나리오에서 휴일은 모델링된 시스템의 작동 방식에 큰 영향을 줍니다. 특히 판매 및 제품 수요와 같은 시나리오에서 휴일 전, 도중 및 이후에 시리즈&rsquo; 패턴을 수정할 수 있습니다. 자동화된 ML 일일 데이터 세트에 대한 모델 학습을 위한 입력으로 추가 기능을 만듭니다. 각 휴일은 학습자가 효과를 할당할 수 있는 기존 데이터 세트에 대한 창을 생성합니다. 이 업데이트를 통해 110개국 이상에서 2,000개 이상의 휴일을 지원할 예정입니다. 이 기능을 사용하려면 시계열 설정의 일부로 국가 코드를 전달하기만 하면 됩니다. 아래 예제에서는 왼쪽 테이블의 입력 데이터를 보여 줍니다. 오른쪽 표에는 휴일 기능화가 적용된 업데이트된 데이터 세트가 표시됩니다. 정확도 향상을 위해 모델을 학습할 때 컨텍스트를 더 추가하는 추가 기능 또는 열이 생성됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe595ae7-8906-4129-a352-e7c4e197391d.png"><img alt="Training data on left shows without holiday features applied, table on the right shows." border="0" height="193" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/80748202-8fef-4d74-b8b1-bdd27e6838aa.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="왼쪽의 학습 데이터는 휴일 기능이 적용되지 않고 오른쪽 테이블이 표시됩니다." width="1217"></a></p>
+
+
+  <h2>자동화된 ML 시계열 예측 시작</h2>
+
+
+  <p>이러한 새로운 기능을 통해 자동화된 ML 증가는 더 복잡한 예측 시나리오를 지원하고, 지연 및 창 집계를 사용하여 학습 데이터를 구성하는 더 많은 제어를 제공하며, 새로운 휴일 기능화 및 ROCV를 사용하여 정확도를 향상시킵니다. Azure Machine Learning 모든 기술 수준의 데이터 과학자가 프로세스를 간소화하고 학습 모델에 소요되는 시간을 줄이는 강력한 기계 학습 기술을 사용할 수 있도록 하는 것을 목표로 합니다. <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-automated-ml" target="_blank">설명서를</a> 방문하여 시작해 보세요. 자동화된 ML 더 나은 제품으로 만들기 위해 최선을 다하고 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/machine-learning-service/" target="_blank">Azure Machine Learning 서비스에</a> 대해 자세히 알아보고 <a href="https://azure.microsoft.com/en-us/trial/get-started-machine-learning/" target="_blank">무료 평가판을 시작</a>하세요.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-automated-ml" target="_blank">자동화된 기계 학습에 대해 자세히 알아보기</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-auto-train-forecast" target="_blank">방법 가이드: 시계열 예측 모델 자동 학습</a></li>
+   <li>자동화된 ML <a href="https://github.com/Azure/MachineLearningNotebooks/tree/master/how-to-use-azureml/automated-machine-learning" target="_blank">GitHub 샘플</a></li>
+  </ul>

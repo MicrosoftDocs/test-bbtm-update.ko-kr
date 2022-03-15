@@ -1,0 +1,15 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e691bdb2f7464fbc63caf6c0b575543419309cc1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901989"
+Slug: updated-azure-sql-database-elastic-database-pool-minimum-size
+Title: 탄력적 데이터베이스 풀 최소 크기 Azure SQL Database 업데이트됨
+Summary: '열정적인 고객 피드백에 따라 Azure SQL Database 표준 탄력적 데이터베이스 풀의 최소 크기를 낮추고 있습니다. '
+Content: >-
+  빌드 2015에서는 SaaS(Software-as-a-Service) 애플리케이션을 빌드하는 개발자가 관리해야 하는 예측할 수 없는 데이터베이스 요구를 지원하기 위해 <a href="https://azure.microsoft.com/blog/2015/04/29/azure-sql-database-previews-major-updates-for-build/">SQL Database Elastic Databases의 미리 보기를 발표</a>했습니다. 열정적인 고객 피드백에 따라 Azure SQL Database 표준 탄력적 데이터베이스 풀의 최소 크기를 100 eDTU(이전의 200 eDTU)로 낮추고 있습니다. 이렇게 변경하면 탄력적 데이터베이스 풀을 만들고 사용하기 위해 최소 엔트리 가격이 50% 낮아지게 됩니다.
+
+
+  모든 피드백에 감사드리며 SaaS 개발을 위한 최상의 관계형 데이터베이스 백 엔드를 만들기 위해 서비스를 계속 경청하고 개선할 것입니다. 추가 제안 및 피드백을 제공하려면 <a href="https://feedback.azure.com/forums/217321-sql-database">피드백</a> 페이지로 이동하여 SQL Database Elastic Databases에 대한 자세한 내용을 보려면 <a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-elastic-pool/">이 설명서 페이지를 읽고 비디오를 확인</a>하세요.

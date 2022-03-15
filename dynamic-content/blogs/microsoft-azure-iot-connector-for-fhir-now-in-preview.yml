@@ -1,0 +1,93 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e70efda6bbabdbe565099e4521eb886c685a83e5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908318"
+Slug: microsoft-azure-iot-connector-for-fhir-now-in-preview
+Title: FHIR용 Microsoft Azure IoT Connector 현재 미리 보기로 제공됩니다.
+Summary: 이제 Azure API for FHIR의 완전 관리 및 규격 기능인 FHIR용 Azure IoT Connector의 미리 보기를 사용할 수 있습니다. 이 커넥터는 FHIR API의 보안을 사용하여 디바이스에서 PHI(보호된 상태 정보) 데이터를 수집, 변환 및 관리할 수 있는 확장 가능한 엔드투엔드 파이프라인을 위한 기술로 상태 팀에 권한을 부여합니다.
+Content: >-
+  <p>오늘 Microsoft는 FHIR용 Azure API의 FHIR&mdash;용 Azure IoT 커넥터 완전 관리 기능의 미리 보기를 릴리스했습니다. 이 커넥터는 FHIR<b>&reg;</b> API의 보안을 사용하여 디바이스에서 PHI(보호된 상태 정보) 데이터를 수집, 변환 및 관리할 수 있는 확장 가능한 엔드투엔드 파이프라인을 위한 기술로 상태 팀에 권한을 부여합니다.</p>
+
+
+  <p>원격 통신 및 원격 모니터링. 그것은&rsquo; 오랫동안 헬스케어의 납품에 관하여 말하고, 건강의 몇몇 지역은 지난 몇 년 동안 표적으로 한 사용 케이스를 만드는 동안, 다중 장치 및 스키마에 걸쳐 있을 수 있는 확장 가능한 텔레헬스 플랫폼의 가용성은 장벽이었습니다. 그러나 몇 달 만에 COVID-19는 논의를 가속화했습니다. 우리는 원격 모니터링 플랫폼을 제공하고 가정 환경에서 환자에게 서비스를 확장할 수있는 안전하고 확장 가능한 방법을 찾기 위해 치료 팀이 시급히 필요합니다.</p>
+
+
+  <p>가상 설정에서 일반 비디오 서비스 및 데이터 전송을 사용할 수 있는 다른 서비스와 달리, 의료 서비스의 원격 의료 방문 및 원격 모니터링에는 PHI(보호된 상태 정보)를 안전하게 관리할 수 있는 데이터 파이프라인이 필요합니다. 진정으로 효과적이려면 전자 의료 기록 플랫폼과 같은 기존 건강 소프트웨어와의 상호 운용성을 위해 설계되어야 합니다. 원격 모니터링 시나리오와 관련하여 개인 정보 보호, 보안 및 신뢰할 수 있는 데이터 교환은 필수 항목입니다. Microsoft는 건강 고객이 신뢰하는 에코시스템을 갖출 수 있도록 FHIR용 Azure IoT 커넥터와 같은 FHIR 기반 건강 기술에 적극적으로 투자하고 있습니다.</p>
+
+
+  <h2>의료 사물 인터넷의 연료를 공급하는 FHIR</h2>
+
+
+  <p>FHIR(Fast Healthcare 상호 운용성 리소스)은 이제 건강 데이터의 보안 및 개인 교환을 위한 상호 운용성 표준입니다. FHIR은 임상 데이터를 위한 오픈 소스 프레임워크로 시작되었지만&rsquo;, 채택이 증가함에 따라 증가하는 &ldquo;IoMT(의료 사물&rdquo; 인터넷)의 데이터를 통합하고 원격 모니터링 시나리오에서 의료 서비스를 확장하는 데 이상적인 기술입니다.</p>
+
+
+  <p>오늘날 원격 데이터 캡처에는 종종 디바이스별 플랫폼이 필요하므로 새 프로세스가 추가되거나 환자가 여러 디바이스를 사용하는 경우 크기를 조정하기가 어렵습니다. 개발자는 자체 보안 파이프라인을 처음부터 빌드해야 합니다. Microsofts&rsquo; <a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">클라우드 기반 FHIR 서비스에서</a>&rsquo; 기능으로 사용할 수 있는 Azure IoT 커넥터를 사용하면 이제 상태 개발자가 IoT 디바이스에서 PHI를 관리하도록 보안을 위해 설계된 수집 파이프라인을 빠르고 쉽게 설정할 수 있습니다. FHIR용 Azure IoT 커넥터는 수집 계층의 생체 인식 데이터에 중점을 둡니다. 즉, 디바이스-클라우드 또는 클라우드-클라우드 워크스트림에서 연결할 수 있습니다. 상태 데이터는 Event Hub, Azure IoT Hub 또는 Azure IoT Central으로 전송될 수 있으며, 의료 팀이 FHIR의 임상 기록과 컨텍스트에서 IoT 디바이스에서 캡처한 환자 데이터를 볼 수 있는 FHIR 리소스로 변환됩니다.</p>
+
+
+  <p>FHIR용 Azure IoT 커넥터의 주요 기능은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>연결된 디바이스에서 FHIR 리소스로 생체 인식 데이터(예: 혈당, 심박수 또는 펄스 옥스)를 변환합니다.</li>
+      <li>확장성 및 실시간 데이터 처리.</li>
+      <li>Azure IoT 솔루션 및 <a href="https://azure.microsoft.com/en-us/services/stream-analytics/" target="_blank">Azure Stream Analytics</a>와 원활하게 통합됩니다.</li>
+      <li>RBAC(역할 기반 액세스 제어)를 사용하면 Azure API for FHIR에서 대규모로 디바이스 데이터에 대한 액세스를 관리할 수 있습니다.</li>
+      <li>데이터 흐름에 대한 감사 로그 추적</li>
+      <li>클라우드의 규정 준수 지원: ISO 27001:2013 인증, HIPAA 및 GDPR 지원, HITRUST 인증 Azure 플랫폼 기반.</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cc58bd5c-3b6c-4a8e-a2bb-eacf44629c96.png"><img alt="Ingest IoMT data from devices using Azure IoT Connector for FHIR." border="0" height="411" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e5a083c8-5be0-4b4a-8878-bf65fbf877f9.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure IoT Connector for FHIR을 사용하여 디바이스에서 IoMT 데이터를 수집합니다." width="735"></a></p>
+
+
+  <h2>Microsoft 고객은 이미 차세대 의료 서비스를 안내하고 있습니다.</h2>
+
+
+  <p>의료 서비스 제공이 시험실 외부로 이동함에 따라 새로운 FHIR 지원 기술은 Microsofts&rsquo; 고객의 에코시스템 전반에 걸쳐 IoT 시나리오를 촉진하고 있습니다.<br>
+
+  다음은 이미 진행 중인 몇 가지 훌륭한 솔루션입니다.</p>
+
+
+  <h3>Humanas&rsquo; Conviva Care Centers는 IoT 및 FHIR을 사용하여 만성 질환에 대한 치료를 변환합니다.</h3>
+
+
+  <p>휴머나&rsquo; 시니어 중심의 1차 치료 자회사인 Conviva Care Centers는 휴머나가 만성 질환을 앓고 있는 환자를 위한 원격 모니터링 프로그램을 가속화함에 따라 올 가을 FHIR용 Azure IoT 커넥터를 사용할 예정입니다. 집에서 체중과 혈압을 모니터링하는 혼잡 한 심부전 환자는 치료 팀과 데이터를 쉽게 공유 할 수있는 새로운 플랫폼을 사용할 수 있습니다. 비늘 및 혈압 커프스와 같은 가정용 디바이스의 데이터는 FHIR용 Azure IoT 커넥터를 통해 전송할 수 있으며, 의사와 간호사에게 매우 안전하고 프라이빗 파이프라인에서 관리되는 실시간 데이터를 제공하고 사전 예방적 가상 터치포인트를 허용합니다. Humanas&rsquo; 유연한 원격 모니터링 플랫폼은 환자가 클리닉 방문 사이에 필요한 지원을 받을 뿐만 아니라 사용자 중심 치료의 미래를 가속화할 것입니다.</p>
+
+
+  <p><em>&ldquo;FHIR용 Azure IoT 커넥터를 사용하면 만성 질환을 앓고 있는 환자를 위한 새로운 원격 치료 경로가 열립니다. 홈 디바이스에서 실시간으로 제공되는 데이터로 결정을 내릴 수 있는 것은 환자 치료의 품질과 타임라인을 개선하기 위한 게임 체인저가 될 것입니다</em>.&rdquo; &mdash;마크 윌라드, 휴머나 디지털 헬스 및 분석 수석 부사장</p>
+
+
+  <h3>Sensoria Healths&rsquo; Motus Smartpowered&mdash; by Sensoriais&mdash;는 원격 모니터링을 통해 당뇨병 재활을 가능하게 하는 새로운 골드 표준입니다.</h3>
+
+
+  <p>Sensoria에 의해 구동되는 Motus Smart는 당뇨병 발 궤양을 가진 환자를 관리하고 절단 위험을 줄이기 위해 원격 환자 모니터링 정량화 환자 준수 및 활동 데이터를 제공하는 데 사용되는 최첨단 장치입니다. Sensoria는 Motus 장치에서 환자, 의사 및 치료 원 내의 다른 사람들에게 매우 안전한 데이터 교환을 가능하게하기 위해 FHIR용 Azure IoT 커넥터를 배포 할 수있었습니다. Rancho Los Amigos 국립 재활 센터의 임상의는 엔터프라이즈급 애플리케이션을 사용하여 실시간 데이터를 보고, 사전에 환자에게 연락하고, 적절한 치료를 방해할 수 있는 문제를 해결하고 있습니다.</p>
+
+
+  <h3>Centene 연결된 건강 데이터 플랫폼은 만성 질환을 관리하는 데 도움이 됩니다.</h3>
+
+
+  <p>Centene은 웨어러블 및 기타 의료 기기의 확산으로 인해 끊임없이 확장되는 개인 생체 메트릭 데이터를 더 잘 관리하기 위해 FHIR용 Azure IoT 커넥터를 사용하고 있습니다. 이 회사는 커넥터를 활용하여 회원의 건강을 개선하고, 스스로를 더 잘 돌볼 수 있도록 하고, Centene이 제공하는 지역 사회의 건강을 개선하기 위한 실행 가능한 통찰력을 갖춘 관리 관리 직원을 지원하는 데 있어 전반적인 우선 순위의 일환으로 거의 실시간 모니터링 및 경고의 사용을 탐구하고 있습니다. 앞으로 Centene은 커넥터를 사용하여 혼잡한 심부전, 당뇨병 및 고혈압과 같은 만성 질환을 모니터링하고 관리할 계획입니다. Centene은 확장 가능한 개방형 Microsofts&rsquo; 플랫폼을 활용하여 Centene Health Plan 구성원의 결과를 개선하는 데 더 많은 진전을 이룰 수 있습니다.</p>
+
+
+  <h2>자세히 알아보고 시작</h2>
+
+
+  <p>고객이&rsquo; FHIR 기술로 혁신적인 치료를 수용하고 제공하는 방식에 대해 매우 기쁘게 생각됩니다. 새로운 FHIR 기반 도구와의 상호 운용성의 장벽을 허물면서 의료를 발전시킬 수 있는 방법에 대한 미래의 비전이 전개되기 시작하고 고무적일&#39;있습니다.</p>
+
+
+  <p>Microsoft는 IoT 파이프라인을 포함하도록 FHIR 에코시스템의 도구를 확장하여 고객이 환자 건강 데이터를 책임감 있게 관리하기 위해 상호 연결된 도구를 쉽게 사용할 수 있도록 했습니다. &rsquo;임상 애플리케이션, 분석 엔진을 빌드하든, 원격 의료 및 원격 모니터링을 사용하여 AI(인공 지능)를 개발하든, 보안을 염두에 두고 PHI 데이터에 대한 파이프라인이 있는지 확인하려고 합니다. 오늘 시작하려면 <a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">Azure IoT Connector for FHIR 및 Azure API for FHIR</a>을 확인하세요!</p>
+
+
+  <p>FHIR 도구와 같은 통합된 기능을 의료 산업의 고객 및 파트너에 한정된 강력한 클라우드 기능과 함께 제공하는 <a href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" target="_blank">의료 조직을 위한 Microsoft Cloud</a> 대해 자세히 알아보세요. 이 의료 조직을 위한 Microsoft Cloud 환자 참여를 강화하고 의료 팀을 연결하여 공동 작업, 의사 결정 및 운영 효율성을 개선합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><i>FHIR&reg; 은 HL7의 등록 상표이며 HL7의 사용 권한으로 사용됩니다.</i></p>

@@ -1,0 +1,80 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 64ccd8b53d14bea382de84921a692b122793ee3d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900900"
+Slug: scale-cloud-adoption-with-modular-designs-for-enterprisescale-landing-zones
+Title: 엔터프라이즈 규모 랜딩 존을 위한 모듈식 디자인을 사용하여 클라우드 채택 크기 조정
+Summary: Tailwind Traders는 처음부터 완전히 통합된 거버넌스, 보안 및 운영을 사용하여 랜딩 존을 초기 구현해야 합니다. 엔터프라이즈 규모 아키텍처는 주로 Microsoft 설계자와 광범위한 클라우드 솔루션 단위 기술 커뮤니티에서 개발한 Azure 모범 사례와 결합된 규범적인 지침을 제공합니다.
+Content: >-
+  <p><em>이 게시물은 Azure의 수석 콘텐츠 엔지니어인 Sarah Lean이 공동 저술했습니다.</em></p>
+
+
+  <p>Tailwind <sup>Traders1</sup> 은 IT 전략의 일환으로 Azure를 채택하려는 소매 회사입니다. IT 팀은 온-프레미스 인프라를 배포하는 데 익숙하며, 이제 Azure에서 워크로드를 실행하기 위해 수행해야 하는 작업을 연구하고 있습니다. 이 블로그 게시물에서는 Tailwind Traders&#39; 환경을 안내하여 <a href="https://docs.microsoft.com/azure/cloud-adoption-framework?WT.mc_id=modinfra-20324-thmaure" target="_blank">클라우드 채택 프레임워크</a>&nbsp; 및 <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone?WT.mc_id=modinfra-20324-thmaure" target="_blank">Azure 랜딩 존 지침을 사용하여 Azure</a>에서 워크로드를 실행합니다.</p>
+
+
+  <h2>엔터프라이즈 규모 랜딩 존이란?</h2>
+
+
+  <p>이전 <a href="https://azure.microsoft.com/en-us/blog/accelerate-your-cloud-adoption-with-the-start-small-and-expand-landing-zone/" target="_blank">블로그 게시물</a>에서는 Tailwind Traders 및 해당 클라우드 채택 과정을 따라 클라우드 채택 프레임워크 및 Azure 랜딩 존에 대해 알아보았습니다. 다양한 랜딩 존 옵션을&mdash; 조사한 후 <a href="https://channel9.msdn.com/Shows/Azure-Enablement/Start-small-and-expand-Azure-landing-zones-approach--Landing-zones-Ep3--Cloud-Adoption-Framework?WT.mc_id=modinfra-20324-thmaure" target="_blank">규모가 작고 확장된</a> <a href="https://channel9.msdn.com/Shows/Azure-Enablement/Create-an-enterprise-scale-architecture-in-Azure--Landing-zones-Ep4--Cloud-Adoption-Framework?WT.mc_id=modinfra-20324-thmaure" target="_blank">엔터프라이즈 규모</a> 및 <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone?WT.mc_id=modinfra-20324-thmaure" target="_blank">파트너 랜딩 존인</a>&mdash;Tailwind Traders는 엔터프라이즈 규모 아키텍처로 시작하기로 결정했습니다.</p>
+
+
+  <p>Tailwind Traders는 처음부터 완전히 통합된 거버넌스, 보안 및 운영을 사용하여 랜딩 존을 초기 구현해야 합니다. 엔터프라이즈 규모 아키텍처는 주로 Microsoft 설계자와 광범위한 클라우드 솔루션 단위 기술 커뮤니티에서 개발한 Azure 모범 사례와 결합된 규범적인 지침을 제공합니다. 엔터프라이즈 등록, ID, 네트워크 토폴로지, 리소스 조직, 거버넌스, 운영, BCDR(비즈니스 연속성 및 재해 복구) 및 배포 옵션과 같은 조직&#39;Azure 환경의 중요한 디자인 영역에서 디자인 원칙을 따릅니다.</p>
+
+
+  <p>엔터프라이즈 규모 아키텍처는 Tailwind Traders Azure 환경에 대한 전략적 디자인 경로 및 대상 상태를 제공하며, Azure 플랫폼의 새로운 기능 및 변경 내용으로 발전할 것입니다. Azure 네이티브 플랫폼 서비스 및 기능을 사용하고 Azure 플랫폼 로드맵과 일치하여 환경 내에서 새로운 기능을 사용할 수 있도록 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0cceac0a-083f-4c3e-9849-249414e8910f.png"><img alt="Enterprise-Scale with hub and spoke architecture" border="0" height="503" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a0d056e-14fe-4f5f-873c-aa6ad7a67c69.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p style="text-align: center;"><em>그림 1: 허브 및 스포크 아키텍처를 사용하여 Enterprise-Scale</em></p>
+
+
+  <p>Tailwind Traders는 클라우드로 마이그레이션하는 기존 애플리케이션과 새로운 그린필드 워크로드를 지원하는 Azure 랜딩 존을 위한 훌륭한 기반을 갖춘 Azure 환경을 설정하려고 합니다. 엔터프라이즈 규모 아키텍처의 모듈식 설계를 통해 Tailwind Traders는 애플리케이션이 온-프레미스 인프라에서 마이그레이션되거나 새로 개발되더라도 애플리케이션을 지원하는 기본 랜딩 존으로 시작할 수 있습니다.</p>
+
+
+  <h2>모듈식 디자인</h2>
+
+
+  <p>모듈식 디자인을 사용하면 기존 애플리케이션과 새 애플리케이션을 간단하게 배포할 수 있을 뿐만 아니라 Tailwind Traders는 비즈니스 요구 사항에 따라 더 가벼운 배포 구현으로 시작하고 크기를 조정할 수 있습니다. 현재 엔터프라이즈 규모는 요구 사항 변경&nbsp; 시간 시 리팩터링하지 않고 모두 확장할 수 있는 <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/implementation?WT.mc_id=modinfra-20324-thmaure" target="_blank">세 가지 참조 구현</a>을&nbsp; 제공합니다.</p>
+
+
+  <ul>
+      <li><strong>Enterprise 규모 기반:</strong> 이 참조 아키텍처를 사용하면 조직에서 기본 랜딩 존을 시작할 수 있습니다. Tailwind Traders와 같은 조직은 필요에 따라 시작하고 비즈니스 요구 사항에 따라 나중에 확장할 수 있습니다. 이 참조 구현은 Azure에서 랜딩 존으로 시작하고 처음에는 하이브리드 연결&nbsp;이 필요하지&#39;온-프레미스 환경에 필요한 조직에 적합합니다. 엔터프라이즈 규모의 모듈식 디자인을 통해 고객은 Azure 환경 디자인을 리팩터링하지 않고도 비즈니스 요구 사항이 변경되는 이후 단계에서 하이브리드 연결을 추가할 수 있습니다.</li>
+      <li><strong>Enterprise 규모 Virtual WAN:</strong> 엔터프라이즈 규모 기반에 Virtual WAN 네트워크 모듈을 추가합니다. 이 참조 구현은 엔터프라이즈 규모 기반 구현으로 시작하지만 온-프레미스 데이터 센터, 지사, 공장, 소매점 또는 기타 에지 위치에 대한 하이브리드 연결이 필요한 조직에 적합합니다.</li>
+      <li><strong>Enterprise 규모 허브 및 스포크:</strong> 이 참조 구현에는 엔터프라이즈 규모 기반, 하이브리드 연결뿐만 아니라 기존 허브 및 스포크 네트워크 토폴로지 기반의 네트워크 아키텍처가 포함됩니다.</li>
+  </ul>
+
+
+  <h2>Enterprise 크기 조정 구현</h2>
+
+
+  <p>이러한 참조 구현에는 엔터프라이즈 규모 아키텍처뿐만 아니라 자동화 및 엔터프라이즈 규모 구현을 쉽게 배포하고 관리할 <a href="https://docs.microsoft.com/azure/azure-resource-manager/templates/overview?WT.mc_id=modinfra-20324-thmaure" target="_blank">수 있는 Azure Resource Manager 템플릿</a> 이 포함되어 있습니다. 이를 통해 Tailwind Traders는 Azure Portal 또는 IaC(Infrastructure as Code)를 활용하여 환경을 설정하고 구성할 수 있습니다. 이 방법을 사용하면 Tailwind Traders가 포털을 시작하고 조직이 준비되는 즉시 코드로 인프라로 전환할 수도&#39;있습니다. Azure는 모든 Azure 리소스 및 정책 기반 컨트롤에서 통합되고 일관된 제어 평면을 제공하므로 Tailwind Traders는 <a href="https://docs.microsoft.com/en-us/azure/governance/policy/overview?WT.mc_id=modinfra-20324-thmaure" target="_blank">Azure 정책</a> 및 컨트롤 집합을 사용하여 전체 클라우드 환경을 제어할 수 있습니다.</p>
+
+
+  <p>Enterprise 규모는 Tailwind Traders와 같은 조직에서 클라우드 여정을 시작하고<a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/design-guidelines?WT.mc_id=modinfra-20324-thmaure" target="_blank">, 중요한 디자인 영역을</a> 포함하는 랜딩 존을 배포하고, 향후 확장할 수 있는 좋은 옵션입니다.</p>
+
+
+  <p>향후 블로그 게시물에서 엔터프라이즈 규모 아키텍처를 사용하여 Tailwind Traders 및 클라우드 채택 과정을 살펴보겠습니다. 그러나 클라우드 채택 프레임워크 및 클라우드 채택 과정을 가속화하는 방법에 대해 자세히 알아보려면 <a href="https://channel9.msdn.com/Shows/Azure-Enablement?WT.mc_id=modinfra-20324-thmaure" target="_blank">Azure Enablement Show</a> 를 시작하는 것이 좋습니다.&nbsp;</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>Azure 및 <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/?WT.mc_id=modinfra-10032-salean" target="_blank">Azure 랜딩 존</a>용 클라우드 채택 프레임워크에서 제공하는 Tailwind Traders <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/?WT.mc_id=modinfra-10032-salean" target="_blank">클라우드 채택</a> 시리즈의 추가 블로그 게시물을 확인하세요.&nbsp;</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/blog/choose-the-landing-zone-for-your-cloud-adoption-journey/" target="_blank">클라우드 채택 경험</a>의 랜딩 존 선택&nbsp;</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/accelerate-your-cloud-adoption-with-the-start-small-and-expand-landing-zone/" target="_blank">소규모 시작 및 랜딩 존 확장</a>으로 클라우드 채택 가속화&nbsp;</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/deploy-key-design-principles-with-enterprise-scale-architecture/" target="_blank">엔터프라이즈 규모 아키텍처를 사용하여 주요 디자인 원칙</a> 배포</li>
+      <li>클라우드 채택 <a href="https://azure.microsoft.com/en-us/blog/leverage-enterprisescale-reference-implementations-for-your-cloud-adoption/" target="_blank">을 위한 엔터프라이즈 규모 참조 구현</a> 활용</li>
+  </ul>
+
+
+  <hr>
+
+  <p><sup>1</sup> Tailwind Traders는 회사가 실제 시나리오에서 클라우드 채택 프레임워크를 활용하는 방법을 설명하기 위해 이 블로그 게시물에서 참조하는 가상의 회사입니다.</p>

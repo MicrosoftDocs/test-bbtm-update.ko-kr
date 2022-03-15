@@ -1,0 +1,64 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1df05503fa3fb737535981c51589312ca7c47441
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907580"
+Slug: the-santa-cloud
+Title: 산타 클라우드
+Summary: 산타와 그의 엘프가 Microsoft Azure 및 기타 Microsoft 클라우드 제품을 사용하여 연간 배송을 하는 방법을 알아보세요.
+Content: >-
+  <p>우리 모두는 산타 클로스가 도움을 얻는다는 것을 알고 있지만, 아마도 당신은 어디에서 얼마나 많은 것을 깨닫지 못했을&rsquo; 것입니다.&hellip;</p>
+
+
+  <p><em>&lsquo;트와스는 거의 10 월과 극에서 위로</em></p>
+
+
+  <p><em>부지런한 엘프들이 목표를 달성하지 못했습니다.</em></p>
+
+
+  <p><em>IT 부서가 논스톱으로 작업하고 있었습니다.</em></p>
+
+
+  <p><em>도움 요청은 상단에있는 사람에게 날아갔다.</em></p>
+
+
+  <p><a href="https://aka.ms/santacloud"><u>산타 클라우드 포스터는</u></a> 산타와 그의 엘프가 12월 24일 저녁에 연례 선물 배달을 위해 Microsoft Azure 및 기타 Microsoft 클라우드 제품을 사용하는 방법을 보여줍니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd4a0566-9474-461c-8022-eb1d6252f15e.png"></p>
+
+
+  <p>이러한 작업을 수행하려면 다음과 같은 작업을 수행하려면 대량의 컴퓨팅 및 스토리지 리소스와 소프트웨어가 필요합니다.</p>
+
+
+  <ul>
+   <li>
+   <p>여러 원본(Azure Data Lake, SQL Data Warehouse 및 Stream Analytics)의 현재 및 기록 데이터 및 요청 수집 및 분석</p>
+   </li>
+   <li>
+   <p>제조 프로세스의 다양한 부분에서 공급업체 및 파트너와 협력</p>
+   </li>
+   <li>
+   <p>누가 장난 꾸러기이고 누가 좋은지 최종 결정 수행 (SQL 데이터 웨어하우스 및 Machine Learning)</p>
+   </li>
+  </ul>
+
+
+  <p>이러한 리소스는 배달 날짜까지 모든 전 세계&rsquo; 자식에 대한 데이터 처리 요구를 처리하도록 크기를 조정해야 합니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/73c90b3a-cff9-4584-b885-3f404f74dcd4.png"></p>
+
+
+  <p>Microsoft Azure 가장 큰 중 일부를 해결할 수있는 방법을 참조하고, 세계&rsquo; 어린이를위한, 가장 중요한 처리 작업.</p>
+
+
+  <p><a href="https://download.microsoft.com/download/1/D/6/1D683EF3-9318-426A-B5E9-56E2651582F4/SantaCloud_ANSI_D.pdf">Poster-sizedPDF&nbsp;(34x22)</a></p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e6c8478d-5245-47a1-8212-be74e62e28a3.png"></p>
+
+
+  <p>즐길.</p>

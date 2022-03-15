@@ -1,0 +1,73 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a9af65379b1080059bb65ca2c4c09ee6b1c8bc00
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908485"
+Slug: cross-region-restore-crr-for-azure-virtual-machines-using-azure-backup
+Title: Azure Backup을 사용하여 Azure Virtual Machines에 대한 CRR(지역 간 복원)
+Summary: 오늘은 Azure Backup을 사용하는 Microsoft Azure VM(Virtual Machines) 지원에 대한 CRR(지역 간 복원)의 미리 보기를 표시합니다.
+Content: >-
+  <p>현재 Microsoft Azure Backup을 사용하는 <b>Microsoft Azure VM(Virtual Machines) 지원에 대한 CRR(지역 간 복원</b><strong>)</strong>의 미리 보기를 소개할&#39;있습니다.</p>
+
+
+  <p>Azure Backup은 Recovery Services 자격 증명 모음을 사용하여 고객&rsquo; 백업 데이터를 보관하고 로컬 및 지역 중복성을 모두 제공합니다. 백업된 데이터의 <strong>내구성 </strong>을 보장하기 위해 Azure Backup은 스토리지 설정을 지역 중복성으로 기본 설정하며 주 지역의 백업 데이터는 <a href="https://docs.microsoft.com/en-us/azure/best-practices-availability-paired-regions#azure-regional-pairs" target="_blank">Azure 쌍을 이루는 보조 지역에</a> 지역 복제됩니다. 그러나 보조 지역에 복제된 데이터는 Azure가 주 지역에서 재해를 선언하는 경우에만 보조 지역에서 복원할 수 있습니다. 이 새로운 기능이 도입되면 이 기능을 옵트인하는 고객은 언제든지 보조 지역에서 복원을 시작할 수 있습니다.</p>
+
+
+  <p>이제 고객은 다음 시나리오에서 주 지역 백업 데이터에서 복제되는 보조 지역 데이터를 활용할 수 있습니다.</p>
+
+
+  <ul>
+      <li><strong>주 지역을 사용할 수 있는 경우</strong>: 이전에는 고객이 감사 또는 규정 준수를 위해 보조 지역에서 백업된 데이터를 테스트할 수 있는 프로비저닝이 없었습니다. 이 새로운 기능을 통해 고객은 주 지역을 계속 사용할 수 있는 경우에도 보조 지역에서 백업된 데이터를 복원할 수 있습니다.</li>
+      <li><strong>주 데이터베이스를 사용할 수 없는 경우</strong>: 이전에는 고객이 보조 지역의 백업 데이터에 액세스할&#39;없었고 Azure가 주 지역에서 재해를 선언할 때까지 기다려야 했습니다. 이 새로운 기능을 통해 고객은 Azure 주 지역을 부분적으로 사용할 수 없거나 대기 시간 없이 완전히 사용할 수 없는 경우에도 보조 지역에서 백업된 데이터의 복원을 트리거할 수 있습니다.</li>
+  </ul>
+
+
+  <p>Azure Backup은 스토리지 계정&rsquo; <a href="https://docs.microsoft.com/en-us/archive/blogs/windowsazurestorage/windows-azure-storage-redundancy-options-and-read-access-geo-redundant-storage#introducing-read-only-access-to-geo-redundant-storage-ra-grs" target="_blank">RA-GRS(읽기 액세스 지역 중복 스토리지) 기능을</a> 활용하여 보조 지역의 복원을 지원합니다. 기본에서 보조로 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy#redundancy-in-a-secondary-region" target="_blank">의 스토리지 복제 지연</a> 으로 인해 보조 지역의 복원에 사용할 수 있는 백업 데이터의 대기 시간이 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5ebad741-fe82-4bac-a7fb-85372bf8ad3a.jpg"><img alt="“The graphic shows that cross region restore has dramatically improved the ability to flexibly restore from secondary regions. Customers now have control on what, where and when they restore their resources, no matter the outage scenario." border="0" height="374" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6222fcc2-8726-40ff-9e67-42026c78af33.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="" width="727"></a></p>
+
+
+  <p>미리 보기에서 사용할 수 있는 주요 기능은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>보조 지역에서 보조 백업 데이터의 셀프 서비스 복구.</li>
+      <li>언제든지 감사 및 규정 준수를 위해 DR(재해 복구) 훈련을 수행할 수 있습니다.</li>
+      <li>Azure 지역을 사용할 수 없게 되면 백업 데이터의 고가용성입니다.</li>
+  </ul>
+
+
+  <p>이 미리 보기를 통해 Azure Backup은 보조 지역의 디스크뿐만 아니라 Azure Virtual Machines 복원을 지원합니다.</p>
+
+
+  <h2>이 기능에 온보딩하는 방법</h2>
+
+
+  <p>지역 중복 스토리지 중복 설정으로 Recovery Services 자격 증명 모음에 대한 지역 간 복원 설정을 켜서 Recovery Services 자격 증명 모음에서 지역 간 복원을 사용하도록 설정할 수 있습니다. 이 기능은 LRS(로컬 중복 스토리지) 중복 설정이 있는 자격 증명 모음뿐만 아니라 클래식 가상 머신의 복원을 지원하지 않습니다. 지역 중복 스토리지 설정으로 사용하도록 설정된 Recovery Service 자격 증명 모음만 이 기능에 온보딩할 수 있습니다. 이제 모든 Azure 공용 지역에서 지역 간 복원을 사용할 수 있습니다. 이 기능이 지원되는 지역은 이 <a href="https://docs.microsoft.com/en-us/azure/backup/backup-create-rs-vault#set-cross-region-restore" target="_blank">지역 간 복원 설명서</a>에서 업데이트됩니다.</p>
+
+
+  <h3>앞으로의 길</h3>
+
+
+  <p>Azure Backup은 향후 몇 개월 내에 Azure Virtual Machines를 제외한 다른 모든 워크로드에 대한 지원을 확장할 예정입니다. <a href="https://docs.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms#cross-region-restore" target="_blank">지역 간 복원</a> 및 미리 보기 등록에 대해 자세히 알아봅니다.</p>
+
+
+  <h3>가격 책정</h3>
+
+
+  <p>지역 간 복원 <a href="https://azure.microsoft.com/en-us/pricing/details/backup/" target="_blank">가격 책정</a> 에 대한 자세한 내용은 Azure Backup 가격 책정을 참조하세요. 가격 책정과 관련된 추가 쿼리는 <a href="mailto:mailto:AskAzureBackupTeam@microsoft.com">AskAzureBackupTeam</a>에 문의하세요.</p>
+
+
+  <h2>지역 간 복원 시작</h2>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/backup/backup-azure-security-feature" target="_blank">지역 간 복원</a>에 대해 자세히 알아봅니다.</li>
+      <li><a href="https://azure.microsoft.com/documentation/articles/backup-azure-arm-vms-prepare/" target="_blank">Recovery Services 자격 증명 모음</a> 시작</li>
+      <li>도움이 필요하신가요? <a href="https://aka.ms/azure-backup-support-forum" target="_blank">지원을 위해 Azure Backup 포럼</a>에 문의하세요.</li>
+      <li>새로운 아이디어를 제공하고 기존 아이디어를 투표하여 <a href="https://aka.ms/azure-backup-user-voice" target="_blank">Azure Backup을 개선할</a> 수 있는 방법을 알려주세요.</li>
+      <li>최신 뉴스 및 업데이트에 대한 트위터에 <a href="https://twitter.com/azurebackup" target="_blank">@AzureBackup</a> 우리를 따르십시오.</li>
+  </ul>

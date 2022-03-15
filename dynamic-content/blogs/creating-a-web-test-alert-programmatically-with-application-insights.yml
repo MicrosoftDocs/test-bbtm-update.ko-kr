@@ -1,0 +1,275 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 44399af750a5ced6a98200374ff62834502eec4c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907843"
+Slug: creating-a-web-test-alert-programmatically-with-application-insights
+Title: 프로그래밍 방식으로 애플리케이션 Insights 웹 테스트 및 경고 만들기
+Summary: 애플리케이션 Insights 웹 테스트는 가용성을 확인하기 위해 여러 위치에서 애플리케이션을 ping한 다음 작동이 중단되면 경고합니다. 이 게시물에서는 웹 테스트를 자동으로 배포하는 방법을 설명합니다.
+Content: >-
+  <p>가용성 검사 및 경고는 애플리케이션 Insights 기능입니다. Application Insights&rsquo; 웹 테스트는 가용성을 확인하기 위해 여러 위치에서 애플리케이션을 ping한 다음, 애플리케이션이 중단되면 경고합니다. 오늘날&rsquo; 고도로 연결된 세계에서 중단 비용은 매우 높고 눈에 띄습니다. 사용자는 100% 가용성과 고성능을 기대합니다. Azure Portal에서 <a href="https://azure.microsoft.com/documentation/articles/app-insights-monitor-web-app-availability/">웹 테스트를 수동으로 설정할</a> 수 있습니다. 그러나 애플리케이션을 자동으로 배포하는 경우 수동 구성은 옵션이 아닐 수 있습니다. 이 게시물에서는 웹 테스트를 자동으로 배포하는 방법을 설명합니다.</p>
+
+
+  <p>Well&rsquo;은 수동으로 만든 웹 테스트에서 템플릿을 만든 다음, 이를 사용하여 향후 웹 테스트 만들기를 자동화합니다.&nbsp; &rsquo;따라서 웹 테스트를 수동으로 만들어 시작합니다.</p>
+
+
+  <h1>웹 테스트 만들기</h1>
+
+
+  <p>Azure Portal에서 애플리케이션 리소스로 이동하여 가용성 타일을 클릭한 다음 웹 테스트 추가를 클릭합니다. 그런 다음 테스트의 모든 세부 정보를 지정합니다. <a href="https://azure.microsoft.com/documentation/articles/app-insights-monitor-web-app-availability/">웹 테스트에 대해 자세히 알아보세요</a>.</p>
+
+
+  <p><img alt="1" border="0" height="392" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61676d03-e10b-4b60-84ff-db295c7c48a3.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="1" width="640"></p>
+
+
+  <h1>경고 및 웹 테스트 리소스 내보내기</h1>
+
+
+  <p><a href="https://resources.azure.com/">Azure Resource Explorer</a>로 이동하여 웹 테스트를 만들 때 생성된 리소스를 포함하여 구독의 모든 리소스를 볼 수 있습니다. 리소스 탐색기에서 구독 및 리소스 그룹을 연 다음 <strong>공급자, Microsoft Insights</strong>. &rsquo;웹 <strong>테스트</strong>와 <strong>alertrules</strong>라는 두 개의 폴더가 표시됩니다.</p>
+
+
+  <p><img alt="2" border="0" height="347" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/42ade874-4961-4e75-b0a8-3d19f6727e63.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="2" width="640"></p>
+
+
+  <p>웹 테스트를 수동으로 만들 때 웹 테스트 리소스와 경고 리소스라는 두 개의 리소스가 만들어졌습니다. 이러한 리소스는 Azure Resource Explore에서 JSON 파일로 표시됩니다.</p>
+
+
+  <p>웹 테스트를 자동으로 생성하는 템플릿을 준비할 수 있도록 이러한 파일을 로컬로 저장합니다.</p>
+
+
+  <h3>경고 규칙 리소스</h3>
+
+
+  <p><img alt="3" border="0" height="470" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/862f597b-edd7-47ac-a94a-91d96ac55f53.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="3" width="640"></p>
+
+
+  <h3>웹 테스트 리소스</h3>
+
+
+  <p><img alt="4" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3b996ee0-cc34-488d-8752-03f657a9f981.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin: 0px auto; display: block; padding-right: 0px; border-top-width: 0px" title="4" width="579"></p>
+
+
+  <h1>Azure Resource Manager</h1>
+
+
+  <p>ARM( <a href="https://azure.microsoft.com/documentation/articles/powershell-azure-resource-manager/">Azure Resource Manager</a> )을 사용하면 Azure 리소스 그룹을 함께 배포할 수 있습니다. 가용성 테스트에 필요한 모든 리소스를 포함하는 리소스 그룹의 템플릿을 만들 수 있습니다. 리소스 그룹을 만든 후 전체 그룹을 관리하고 논리 단위로 배포할 수 있습니다. 웹 테스트를 포함한 모든 애플리케이션 Insights 자산은 ARM에서 관리할 수 있습니다.</p>
+
+
+  <h1>JSON 파일에서 템플릿 만들기</h1>
+
+
+  <p>두 리소스를 별도의 JSON 파일로 저장한 후에는 몇 가지 조정을 수행해야 합니다. Azure Resource Manger에 대한 설명서 페이지를 보면 <a href="https://azure.microsoft.com/en-us/documentation/articles/powershell-azure-resource-manager/#create-your-template">예제 템플릿</a>을 볼 수 있습니다. 이 예제 템플릿과 두 개의 JSON 파일을 사용하여 마스터 템플릿을 만듭니다.</p>
+
+
+  <p>새 JSON 파일에 다음 개요를 입력합니다.</p>
+
+
+  <pre class="prettyprint">
+
+  {
+      &quot;$schema&quot;: &quot;https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#&quot;,
+      &quot;contentVersion&quot;: &quot;1.0.0.0&quot;,
+      &quot;parameters&quot;: {
+          &quot;webTestName&quot;: { &quot;type&quot;: &quot;string&quot; },
+          &quot;appName&quot;: { &quot;type&quot;: &quot;string&quot; },
+          &quot;URL&quot;: { &quot;type&quot;: &quot;string&quot; }
+      },
+      &quot;variables&quot;: {
+          &quot;alertRuleName&quot;: &quot;[concat(parameters(&#39;webTestName&#39;), &#39;-&#39;, toLower(parameters(&#39;appName&#39;)), &#39;-&#39;, subscription().subscriptionId)]&quot;
+      },
+      &quot;resources&quot;: [
+          {
+              //web test JSON file contents
+          },
+          {
+              //alert rule JSON file contents
+          }
+          //Don&#39;t forget to close your brackets
+      ]
+  }</pre>
+
+
+  <p>또한 애플리케이션에 따라 템플릿에서 변경해야 하는 여러 항목이 있을 수 있습니다. 템플릿에는 URL, 애플리케이션 이름 및 웹 테스트 이름을 매개 <strong>변수</strong> 로 JSON 템플릿에 전달할 수 있는 매개 변수 섹션이 있습니다. 매개 변수 및 변수를 사용하면 여러 이름 설정을 자동화할 수 있습니다.</p>
+
+
+  <p>이러한 매개 변수를 사용하여 변경해야 하는 몇 가지 항목을 다룹니다. 특정 사례에 따라 매개 변수 및 변수 추가를 포함할 수 있는 다른 항목을 변경해야 할 수 있습니다.</p>
+
+
+  <ul>
+   <li>ID: 두 리소스 모두에 대한 ID&rdquo;를 설정&ldquo;해야 합니다. 여기서는 파일 맨 위에 정의된 webTestName 매개 변수를 사용하여 대체되는 긴 경로를 만드는 resourceId 도우미 함수를 사용합니다.</li>
+  </ul>
+
+
+  <pre class="prettyprint">
+
+  &quot;id&quot;: &quot;[resourceId(&#39;Microsoft.Insights/webtests&#39;, parameters(&#39;webTestName&#39;))]&quot;,</pre>
+
+
+  <pre class="prettyprint">
+
+  &quot;id&quot;: &quot;[resourceId(&#39;Microsoft.Insights/alertrules&#39;, variables(&#39;alertRuleName&#39;))]&quot;,</pre>
+
+
+  <ol>
+
+  </ol>
+
+
+  <ul>
+   <li>웹 테스트 이름: 웹 테스트 리소스에는 이름이&rdquo; 설정된 여러 위치가 &ldquo;있습니다.&nbsp;</li>
+  </ul>
+
+
+  <blockquote>
+
+  <pre class="prettyprint">
+
+  &quot;name&quot;: &quot;[parameters(&#39;webTestName&#39;)]&quot;,</pre>
+
+
+  <pre class="prettyprint">
+
+  &quot;SyntheticMonitorId&quot;: &quot;[parameters(&#39;webTestName&#39;)]&quot;</pre>
+
+  </blockquote>
+
+
+  <ul>
+   <li>경고 규칙 이름: 경고 규칙 리소스에는 이름이&rdquo; 설정된 여러 위치가 &ldquo;있습니다.&nbsp;</li>
+  </ul>
+
+
+  <blockquote>
+
+  <pre class="prettyprint">
+
+  &quot;name&quot;: &quot;[variables(&#39;alertRuleName&#39;)]&quot;,</pre>
+
+  </blockquote>
+
+
+  <ul>
+   <li>숨겨진 링크: 숨겨진 링크를 도우미 함수로 바꿔야 합니다. 이렇게 하면 매개 변수화할 수 있습니다.</li>
+  </ul>
+
+
+  <blockquote>
+
+  <pre class="prettyprint">
+
+  &quot;tags&quot;: {
+                  &quot;[concat(&#39;hidden-link:&#39;, resourceId(&#39;Microsoft.Insights/components&#39;, parameters(&#39;appName&#39;)))]&quot;: &quot;Resource&quot;
+              },</pre>
+
+  <pre class="prettyprint">
+
+  &quot;tags&quot;: {
+                  &quot;[concat(&#39;hidden-link:&#39;, resourceId(&#39;Microsoft.Insights/components&#39;, parameters(&#39;appName&#39;)))]&quot;: &quot;Resource&quot;,
+                  &quot;[concat(&#39;hidden-link:&#39;, resourceId(&#39;Microsoft.Insights/webtests&#39;, concat(parameters(&#39;webTestName&#39;), &#39;-&#39;, toLower(parameters(&#39;appName&#39;)))))]&quot;: &quot;Resource&quot;
+              },</pre>
+  </blockquote>
+
+
+  <ul>
+   <li>webtest.json 구성에서{} <ul>
+    <li>Configuration.WebTest 문자열을 concat 함수로 변환합니다. 이렇게 하면 하드 코딩된 값 대신 변수와 매개 변수를 포함할 수 있습니다.&nbsp; 예를 들어 URL과 이름을 바꾸려면 다음과 같습니다.</li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <blockquote>
+
+  <pre class="prettyprint">
+     &quot;WebTest&quot;: &quot;[concat(&#39;&lt;WebTest ... Name=\&quot;&#39;, parameters(&#39;webTestName&#39;) , &#39;\&quot; ... Url=\&quot;&#39;, parameters(&#39;URL&#39;), &#39;\&quot; ...&gt;&#39;)]&quot; </pre>
+  </blockquote>
+
+
+  <ul>
+   <li>
+   <ul>
+    <li>종속 요청 구문 분석 및 예상 Http 상태 코드도 이 문자열에 설정됩니다. 비슷한 방식으로 매개 변수화할 수 있습니다.</li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-authoring-templates/">여기에서</a> 매개 변수 및 변수에 대해 자세히 알아봅니다.</p>
+
+
+  <p><strong>전체 목록은 전체 목록이 아니라 애플리케이션에 따라 달라집니다. </strong></p>
+
+
+  <p>마지막으로 모든 리소스에서 이름 태그 뒤에 apiVersion을 삽입합니다.</p>
+
+
+  <p>내 템플릿에서는 다음과 같습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  &quot;id&quot;: &quot;[resourceId(&#39;Microsoft.Insights/webtests&#39;, parameters(&#39;webTestName&#39;))]&quot;,
+
+  &quot;name&quot;: &quot;[parameters(&#39;webTestName&#39;)]&quot;,
+
+  <strong>&quot;apiVersion&quot;: &quot;2014-04-01&quot;,</strong></pre>
+
+
+  <h1>Microsoft Azure PowerShell 사용하여 웹 테스트 만들기</h1>
+
+
+  <p>리소스를 JSON 파일로 저장한 후 Microsoft Azure PowerShell 엽니다.</p>
+
+
+  <ul>
+   <li>Azure 계정에 로그인합니다.</li>
+   <li>Azure 계정에 로그인하려면 <strong>Login-AzureRmAccount</strong> cmdlet을 사용합니다. 1.0 미리 보기 이전 버전의 Azure PowerShell <strong>Add-AzureAccount</strong> 명령을 사용합니다.</li>
+  </ul>
+
+
+  <pre class="prettyprint">
+
+  PS C:\&gt; Login-AzureRmAccount</pre>
+
+
+  <ul>
+   <li>Azure Resource Manager 모드에 있는지 확인합니다.</li>
+   <li>템플릿을 기반으로 새 배포를 만듭니다.</li>
+  </ul>
+
+
+  <pre class="prettyprint">
+
+  PS C:\temp&gt; New-AzureRMResourceGroupDeployment -ResourceGroupName&nbsp; Default-ApplicationInsights-CentralUS -webTestName myWebTest -appName WebApplication4 -URL https://WebApplication4.azurewebsites.net -templatefile .\webTestTemplate.json</pre>
+
+
+  <p>매개 변수는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>ResourceGroupName: 웹 테스트를 만들 리소스 그룹의 이름입니다. 애플리케이션을 이미 모니터링하고 있는 경우 애플리케이션&rsquo; Insights 리소스와 동일한 그룹을 사용하려고 합니다.</li>
+   <li>webTestName: 새 웹 테스트를 제공하려는 이름입니다.</li>
+   <li>appName: 웹 테스트를 적용할 웹 애플리케이션의 이름입니다.</li>
+   <li>URL: 웹 애플리케이션의 URL입니다.</li>
+   <li>templatefile: 방금 만든 JSON 파일의 이름입니다.</li>
+  </ul>
+
+
+  <p><strong>참고:</strong> webTestName, appName 및 URL은 PowerShell에서 자동으로 구문 분석되고 사용되는 JSON 파일에서 만든 매개 변수입니다.</p>
+
+
+  <p>이제 <a href="https://portal.azure.com/">Azure Portal</a>에서 새 웹 테스트를 볼 수 있습니다.</p>
+
+
+  <h1>템플릿 사용</h1>
+
+
+  <p>PowerShell 및 <a href="https://blogs.msdn.com/b/webdev/archive/2015/09/16/deploy-to-azure-from-github-with-application-insights.aspx">GitHub 통합</a>에서 템플릿을 사용할 수 있습니다.</p>
+
+
+  <h1>알려주세요.&hellip;</h1>
+
+
+  <p>애플리케이션 Insights 팀은 개발자를 위한 고품질 도구를 제공하기 위해 최선을 다하고 있습니다. 피드백이나 새로운 기능 권장 사항에 감사드립니다.</p>

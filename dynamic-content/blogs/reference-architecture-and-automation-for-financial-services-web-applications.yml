@@ -1,0 +1,40 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7d3001150afb3926a212cbf6c99c8e5ff4d54b74
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908048"
+Slug: reference-architecture-and-automation-for-financial-services-web-applications
+Title: 금융 서비스 웹 애플리케이션에 대한 참조 아키텍처 및 자동화
+Summary: '오늘 새로운 Azure 보안 및 규정 준수 청사진 - FFIEC 금융 서비스 규제 워크로드의 릴리스를 발표하게 되어 기쁘게 생각합니다. '
+Content: >-
+  <p>오늘 새로운 <a href="https://aka.ms/fsiblueprint">Azure Security and Compliance Blueprintfor&nbsp; FFIEC Financial Services 규제 워크로드</a>의 릴리스를 발표하게 되어 기쁘게 생각합니다.&nbsp;</p>
+
+
+  <p>Azure 보안 및 규정 준수 청사진 프로그램은 몇 주에서 몇 시간까지 특정 규정 요구 사항을 충족하는 Azure 서비스의 신속한 배포를 위한 자동화된 솔루션 및 지침을 제공합니다. 새로운 FFIEC 금융 서비스 규제 워크로드 청사진은 Azure에서 결제 데이터와 같은 중요한 재무 정보를 저장하고 관리하는 데 도움이 되는 자동화된 솔루션을 제공합니다. FFIEC 금융 서비스 규제 워크로드 청사진은 고객이 AICPA(미국 공인 회계사 협회) SOC 1 및 SOC 2 표준, PCI DSS(Payment Card Industry Data Security Standard) 버전 3.2, FFIEC(Federal Financial Institutions Examination Council) 및 Gramm-Leach-Bliley Act(GLBA)에 설명된 규정 준수 요구 사항을 충족할 수 있도록 설계되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/460fb216-7e01-48dd-b789-712327645251.png"><img alt="image" border="0" height="226" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3b63f545-0be7-4080-bae6-c75b1ed97d87.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="578"></a></p>
+
+
+  <p>FFIEC 금융 서비스 규제 워크로드 청사진을 사용하여 ASE(Azure App Service Environment), WAF(웹 애플리케이션 방화벽) 및 ASC(Azure Security Center)와 같은 보안 서비스로 보호되는 웹 애플리케이션인 Azure SQL Database 배포하고 안전하게 구성할 수 있습니다. 자동화된 템플릿 및 참조 아키텍처는 신뢰할 수 있고 보다 안전한 종단 간 호환 배포를 달성하는 데 필요한 기술 컨트롤을 구현하는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3e511226-3603-4a17-97d2-e172b982b007.png"><img alt="image" border="0" height="279" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aa431672-8624-4ddc-aced-96e68dd68016.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="555"></a></p>
+
+
+  <p>FFIEC 금융 서비스 규제 워크로드 청사진에는 FFIEC 위험 평가 도구를 사용하는 <a href="https://aka.ms/fsiblueprintcrm">새로운 고객 책임 매트릭스</a> 도 포함되어 있습니다. 또한 청사진에 포함된 통합 문서는 19개 제어 도메인의 컨트롤에 대한 고객 실행 가능한 답변을 제공하고 PCI DSS, FFIEC, GLBA 및 SOC를 비롯한 규정 준수 체제와의 제어 조정을 제공합니다.&nbsp;</p>
+
+
+  <ul>
+   <li>스크립트 및 Azure Resource Manager 템플릿에 대한 링크가 포함된 솔루션을 <a href="https://aka.ms/fsiblueprint">https://aka.ms/fsiblueprint</a> 살펴봅니다.</li>
+   <li>고객 책임 매트릭스를 검토하여 다양한 요구 사항을 충족하는 데 도움이 되도록 구현된 보안 제어 방법을 이해합니다.</li>
+   <li>솔루션을 논의하고 배포 프로세스를 설명하는 <a href="https://aka.ms/fsiblueprintvideo">8분 분량의 비디오를</a> 시청하세요.</li>
+  </ul>
+
+
+  <p>질문과 이러한 문서에 액세스하려면 이메일을 보내 <a href="mailto:AzureBlueprint@Microsoft.com">AzureBlueprint@microsoft.com</a>주세요.</p>
+
+
+  <p>Azure 보안 및 규정 준수 청사진 프로그램 환경을 지속적으로 개선하는 데 도움이 되는 의견과 제안을 환영합니다.</p>

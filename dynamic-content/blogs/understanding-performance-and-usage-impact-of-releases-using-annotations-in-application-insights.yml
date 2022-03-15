@@ -1,0 +1,48 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 12d0b7bdfdafa8666038509c5f13e83c16e584d4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907514"
+Slug: understanding-performance-and-usage-impact-of-releases-using-annotations-in-application-insights
+Title: 애플리케이션 Insights 주석을 사용하여 릴리스의 성능 및 사용량 영향 이해
+Summary: 약 1년 전, 애플리케이션 Insights 팀은 사용자가 앱 및 서비스 릴리스의 발생을 APM과 상호 연결할 수 있도록 릴리스 주석을 다시 도입했습니다.
+Content: >-
+  <p>약 1년 전, 애플리케이션 Insights 팀은 사용자가 앱 및 서비스 릴리스의 발생을 APM 데이터와 상호 연결할 수 있도록 <a href="https://azure.microsoft.com/en-us/blog/application-insights-announces-availability-of-release-annotations/" target="_blank">릴리스 주석</a>을 다시 도입했습니다. VSTS 사용자는 단순히 릴리스 스크립트에 단계를 추가하여 주석을 만들 수 있으며, 타사 릴리스 엔진을 활용하는 사용자는 <a href="https://azure.microsoft.com/en-us/blog/application-insights-powershell-script-available-for-creating-release-annotations/" target="_blank">Powershell 스크립트</a>를 호출하기만 하면 릴리스 주석을 애플리케이션 Insights 푸시할 수 있습니다.</p>
+
+
+  <p>그동안 VSTS 팀은 VSTS 릴리스 도구에서 <a href="https://www.visualstudio.com/en-us/docs/build/get-started/aspnet-4-ci-cd-azure-automatic" target="_blank">지속적인 통합/배포</a> 기능을 완성하고 해당 기능을 <a href="https://www.visualstudio.com/en-us/docs/build/overview" target="_blank">다른 많은 플랫폼</a>으로 확장하기 위해 열심히 노력해 왔습니다. CI/CD의 개념이 전 세계 개발 상점에서 계속 추진력과 인기를 얻고 있기 때문에 관련 엄격한 릴리스 주기에 대한 주석 생성의 가치가 크게 증가합니다.</p>
+
+
+  <h2>간단한 예</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ea6dd9e-2f9c-43ba-b63b-2c8c00ef7961.png"><img alt="image" border="0" height="574" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7d6fe873-038f-4474-a42e-a45e4cc77c3e.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="이미지" width="969"></a></p>
+
+
+  <p>위의 그림에서는 지속적인 배포를 통해 정기적으로 배포되는 MyEnterpriseApp이라는 앱이 있습니다. 여기서는 사용자 및 브라우저 페이지 로드 시간의 두 가지 통계가 선택되었습니다. 주석이 릴리스 스크립트에 추가되었으므로 릴리스가 발생하는 시기와 해당 주석이 성능 또는 사용량에 미치는 영향을 명확하게 확인할 수 있습니다. 차트의 이전 부분에서, 우리는 사용자의 매우 정상적인 흐름을 참조하십시오 : 황금 시간대 시간 동안 매일 스파이크, 밤에 계곡, 주말에 사용자의 낮은 수 다음에. 페이지 로드 시간은 지속적으로 약 2초 이하이므로 사용자 기반은 동일하게 유지됩니다.</p>
+
+
+  <p>그러나 다음 주(이 차트에서 4월 17일 경)에 발생하는 릴리스를 살펴보면 문제가 명확하게 발생합니다. 페이지 로드 시간은 최대 8초까지 진행되며, 활성 사용자 수는 이 수준의 성능을 용인하는 사용자 수가 주말에 일반적으로 볼 수 있는 것보다 낮아질 때까지 크게 감소합니다. 이러한 이벤트에 따라 4월 19일 경에 또 다른 릴리스가 표시되며, 릴리스 후에 페이지 로드 시간이 정상 범위를 삭제하고 활성 사용자 수가 반등하여 성능이 다시 허용 가능한 상태로 돌아옴에 따라 상황에 대한 일종의 수정 사항이 포함되어 있다고 안전하게 가정할 수 있습니다.</p>
+
+
+  <p>어떤 결과가 나왔나요? 릴리스가 제대로 테스트되지 않았나요? 테스트에 존재하지 않는&rsquo; 환경 요인이 생산에 존재했습니까? 자연스러운 다음 단계는 문제를 조사하여 다시 발생하지 않도록 하는 것입니다&rsquo;. 다시 말하지만 릴리스 주석을 활용하여 문제를 해결하기 위해 드릴링을 더 자세히 시작할 수 있습니다. 주석을 마우스로 가리키면 릴리스에 대한 정보가 제공됩니다.</p>
+
+
+  <p style="text-align: center;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/40bb1abd-b7ee-4ea5-9885-2f663f1b0d47.png"><img alt="image" border="0" height="135" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/10c4eed9-44a0-4572-be7b-21f6dae77fc7.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px; display: inline; padding-right: 0px" title="이미지" width="240"></a></p>
+
+
+  <p>정보 풍선을 클릭하면 릴리스를 설명하는 세부 정보 블레이드가 열리고, Powershell 스크립트를 통해 주석을 만들 때 제공된 경우 VSTS(또는 타사 시스템)의 릴리스 스크립트에 대한 링크가 완성됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/57e22df5-250d-4054-be76-60971f0be108.png"><img alt="image" border="0" height="610" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2293c38a-9e41-4ed3-aaf6-a3db47d60de2.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="이미지" width="799"></a></p>
+
+
+  <p>이러한 방식으로 릴리스에 대해 연락해야 하는 사용자를 신속하게 확인하고 개별 단계 또는 배포된 구성 요소를 조사할 수 있습니다(코드 오류가 발생한 것으로 의심되는 경우).</p>
+
+
+  <p>메트릭 탐색기 결과를 즐겨찾기로 저장할 수 있으므로 나중에 사용할 수 있도록 이러한 중요한 통계의 보기를 유지할 수 있습니다. 이렇게 하면 다음 날에 다시 돌아와서 릴리스를 매우 신속하게 파악하여 오류가 반복되지 않도록 하거나 오류가 있는 경우 즉시 조사할 수 있습니다. 릴리스 주석을 사용하여 릴리스를 성능 및 사용량 데이터와 상호 연결할 수 있으면 확인 또는 조사에 필요한 시간이 크게 줄어듭니다.</p>
+
+
+  <p>언제나처럼 <a href="https://visualstudio.uservoice.com/forums/357324-application-insights">애플리케이션 Insights UserVoice 페이지에서</a> 새로운 기능 또는 향상된 기능에 대한 아이디어를 공유하세요. 질문이 있으면 <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=ApplicationInsights">애플리케이션 Insights 포럼</a>을 방문하세요.</p>

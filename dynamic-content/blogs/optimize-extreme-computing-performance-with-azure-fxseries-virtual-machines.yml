@@ -1,0 +1,69 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 71ef5683406263f150868a7e0c9bb8bcc3b36b87
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907626"
+Slug: optimize-extreme-computing-performance-with-azure-fxseries-virtual-machines
+Title: Azure FX 시리즈 Virtual Machines를 사용하여 극단적인 컴퓨팅 성능 최적화
+Summary: 오늘 4개 지역에서 사용할 수 있는 Azure FX 시리즈 Virtual Machines의 일반 공급이 발표됩니다. 2세대 Intel Xeon 확장 가능 프로세서를 기반으로 하는 Azure FX 시리즈 Virtual Machines는 단일 코어당 최대 4GHz(모든 코어 터보), vCPU당 21GB 메모리 및 로컬 임시 SSD 디스크당 고성능 CPU(중앙 처리 장치) 클록 속도를 제공합니다.
+Content: >-
+  <p>오늘 세 지역에서 사용할 수 있는 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/fx-series" target="_blank">Azure FX 시리즈 Virtual Machines</a> 의 일반 공급이 발표됩니다. 2세대 Intel Xeon 확장성 프로세서&mdash; 기반의 Azure FX 시리즈 Virtual Machines&mdash;는 최대 4GHz(모든 코어 터보), vCPU당 21GB 메모리 및 로컬 임시 SSD 디스크의 단일 코어당 고성능 CPU(중앙 처리 장치) 클록 속도를 제공합니다. FX 시리즈 Virtual Machines의 고주파 CPU 및 메모리 용량은 EDA(전자 디자인 자동화)와 같이 매우 높은 단일 스레드 및 가볍게 스레드된 성능을 요구하는 워크로드를 위해 설계되었습니다.</p>
+
+
+  <p>Azure FX 시리즈 Virtual Machines는 이제 미국 서부 2, 서유럽 및 일본 동부 지역에서 일반 공급되며 고객 수요를 충족하기 위해 더 많은 Azure 지역에 제공될 예정입니다.</p>
+
+
+  <h2>EDA 워크로드를 위한 빠르고 비용 효율적인 FX 가상 머신</h2>
+
+
+  <p>EDA는 반도체 통합 회로를 설계하는 복잡한 소프트웨어 도구 및 워크플로의 컬렉션입니다. EDA 고객에게는 다음과 같은 몇 가지 주요 과제가 있습니다.</p>
+
+
+  <ul>
+      <li>EDA 시뮬레이션은 디자인의 복잡성에 따라 몇 시간에서 며칠까지 실행되는 각 시뮬레이션과 함께 계산 집약적인 작업입니다. 또한 일부 EDA 프로세스는 단일 스레드입니다. 따라서 고객은 실리콘 설계를 제작 및 테스트로 가속화하기 위해 빠른 CPU 클록 속도와 큰 메모리 공간이 필요합니다.</li>
+      <li>EDA 소프트웨어 라이선스 비용은 인프라 비용의 몇 배일 수 있으며 CPU 코어당 라이선스가 부여되는 경우가 많습니다. 따라서 EDA 사용자는 각 CPU 코어의 성능을 최대화하여 더 적은 수의 CPU 코어를 사용할 수 있도록 하여 라이선스 비용을 절감하려고 합니다.</li>
+      <li>EDA 디자인은 일반적으로 더 큰 디자인의 작은 하위 집합에서 작업하는 여러 그룹으로 시작합니다. 그런 다음 프로세스 전체의 여러 지점에서 추가 확인 확인을 위해 작은 하위 집합과 블록을 병합해야 합니다. 특히 백 엔드 디자인에서 검증을 실행하려면 높은 메모리 공간이 필요합니다.</li>
+  </ul>
+
+
+  <p>Azure FX 시리즈 Virtual Machine은 이러한 EDA 워크로드 문제를 해결하도록 설계되었습니다. 이 시리즈는 최대 4.1GHz의 단일 코어 주파수, 기본 주파수 3.4GHz 및 4.0GHz의 모든 코어 터보 주파수를 갖춘 Intel Xeon 확장 가능 프로세서에 의해 구동됩니다. 현재 세대 컴퓨팅 최적화 Virtual Machines보다 CPU 코어당 최대 19% 더 나은 성능을 제공합니다. 고객은 추가 CPU당 코어 성능이 필요한 경우 고객 지원 팀에 문의하여 하이퍼 스레딩을 해제할 수 있습니다. 총 메모리 1TB와 가상 CPU 코어당 21GB RAM을 사용하는 FX 시리즈 Virtual Machines는 대부분의 프런트 엔드 및 백 엔드 디자인 요구 사항을 충족할 수 있습니다. 또한 메모리가 느린 NFS(네트워크 파일 시스템)에 액세스하는 대신 로컬로 데이터를 읽을 수 있도록 모든 FX 시리즈 Virtual Machine 크기에 로컬 SSD가 함께 제공됩니다.</p>
+
+
+  <p>실제 EDA 워크로드에서 FX 시리즈 Virtual Machine 성능을 시연하기 위해 E48sv4 및 F48mds에서 EDA 백 엔드 물리적 확인 작업을 별도로 실행했습니다. E48sv4의 워크로드를 완료하는 데 12.7시간이 걸렸고 F48mds Virtual Machine에서는 11.5시간이 걸렸습니다. 즉, FX 시리즈 Virtual Machines는 EDA 시뮬레이션 시간을 10% 단축합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92628b1e-3c9b-4c18-9cb5-08fe973adf9d.png"><img alt="EDA Backend Physical Verification benchmark chart for FX VM" height="614" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6ae7d1ab-a68b-4e5d-b731-f05fce192011.png" style="display: inline;" title="EDA 백 엔드 물리적 확인" width="1024"></a></p>
+
+
+  <h2>다른 계산 집약적 워크로드에 대한 FX</h2>
+
+
+  <p>빠른 CPU 빈도 및 높은 메모리 용량이 필요한 대부분의 워크로드는 새로운 FX 시리즈 Virtual Machine의 성능 이점을 얻을 수 있습니다. 아래 차트는 새로운 FX 시리즈 Virtual Machine과 Fsv2를 비교하는 Coremark CPU 벤치마크 결과를 보여 줍니다(둘 다 48vCPU). FX 시리즈 Virtual Machine은 벤치마크 점수가 19% 더 높았습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/633cb1cc-73d2-4b30-96e8-7fa64fee6b85.png"><img alt="EDA Coremark CPU benchmark results chart for FX VM" height="614" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b06149db-fdd6-4542-9d4d-e5af53de7175.png" style="display: inline;" title="CPU Coremark 벤치마크 결과" width="1024"></a></p>
+
+
+  <h2>고객에게 상당한 성능 향상을 제공할 수 있습니다.</h2>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;가장 작은 프로젝트에서 가장 큰 프로젝트에 이르기까지 Azures&rsquo; FX 가상 머신 제품군에서 Redhawk-SC의 성능은 우리의 관심을 사로 잡았습니다. 고객은 이 작업에 유연한 HPC를 활용하고자 하며, Microsoft는 이를 제공하는 데 있어 환상적인 파트너였습니다.&rdquo;&mdash;</em> John Lee, Ansys, Inc.의 반도체 사업부 총괄 매니저 겸 부사장</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Intel은 EDA 인스턴스에서 Microsoft Azure 파트너 관계를 맺고 있습니다. Intel&reg; Xeon Scalable Processor를 통해 고객에게 디자인 주기를 단축하는 고주파 솔루션을 제공하는 이 새로운 EDA 인스턴스입니다.&quot;&mdash;</em> Intel Corporation 고성능 컴퓨팅의 Trish Damkroger 부사장 겸 총괄 관리자</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>&bull;&nbsp;&nbsp;&nbsp;<a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/" target="_blank">Azure의 고성능 컴퓨팅에</a> 대해 자세히 알아보세요.<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; FX 시리즈 Virtual Machine <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/fx-series" target="_blank">제품 사양</a>입니다.<br>
+
+  &bull;&nbsp;&nbsp;&nbsp; FX 시리즈 Virtual Machine <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/" target="_blank">가격 책정 페이지</a>입니다.<br>
+
+  &bull;&nbsp;&nbsp; <a href="https://techcommunity.microsoft.com/t5/azure-compute/how-azure-fx-vm-makes-ansys-redhawk-sc-run-faster-the-less-you/ba-p/2464023" target="_blank">FX 시리즈 Virtual Machinehelps&nbsp; Ansys</a> 방법에 대한 추가 세부 정보를 읽어 보겠습니다.<br>
+
+  &bull;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=9M7mGiC6W9Q" target="_blank">FX 시리즈 공지 비디오를</a> 시청하세요.</p>

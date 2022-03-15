@@ -1,0 +1,221 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1daa2b4acb47dc987ae05f021c5d66fdd3dfec83
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901397"
+Slug: automating-azure-analysis-services-processing-with-azure-functions
+Title: Azure Functions를 사용하여 Azure Analysis Services 처리 자동화
+Summary: 이 게시물에서는 Azure Analysis Services 테이블을 처리하도록 Azure Functions를 설정하는 방법에 대한 간단한 예제를 살펴보겠습니다.  Azure 함수는 ...에서 작은 코드 조각을 실행하는 데 적합합니다.
+Content: >-
+  <p>이 게시물&rsquo;에서는 Azure Analysis Services 테이블을 처리하도록 Azure Functions를 설정하는 방법에 대한 간단한 예제를 살펴봅니다.</p>
+
+
+  <p>Azure 함수는 클라우드에서 작은 코드 조각을 실행하는 데 적합합니다. Azure Functions에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview">Azure Functions 개요</a> 및 <a href="https://azure.microsoft.com/en-us/pricing/details/functions/">Azure Functions 가격 책정을 참조하세요</a>.</p>
+
+
+  <h2>Azure Function 만들기</h2>
+
+
+  <p>시작하려면 먼저 Azure 함수를 만들어야 합니다.</p>
+
+
+  <p>1. 포털로 이동하여 새 <a href="https://ms.portal.azure.com/#create/Microsoft.FunctionApp">함수 앱을</a> 만듭니다.</p>
+
+
+  <p>2. 새 함수 앱의 고유한 <strong>이름을</strong> 입력하고 <b>리소스 그룹</b> 및 <b>위치를</b> 선택합니다. <b>호스팅 계획의</b> 경우 <b>App Service 계획을</b> 사용합니다.</p>
+
+
+  <p><b>참고</b>: Analysis Services 테이블 및 모델을 처리하는 기간이 다를 수 있으므로 <b>기본</b> 또는 <b>표준</b> App Service 계획을 사용하고 <b>Always On</b> 설정이 켜져 있는지 확인합니다. 그렇지 않으면 처리 시간이 더 오래 걸리면 함수가 시간 초과할 수 있습니다.</p>
+
+
+  <p><strong>만들기</strong><strong>를 클릭하여 함수 앱을 배포합니다</strong>.</p>
+
+
+  <p>3.<strong>빠른 시작</strong> 탭에서 <strong>타이머</strong> 및 <strong>C#</strong>을 클릭한 다음 <strong>이 함수 만들기</strong>를 클릭합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e9a16009-559f-403e-a13c-c9efe708f311.jpg"><img alt="clip_image002" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/36354f96-de09-4a5e-b371-baee4aea39da.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image002" width="903"></a></p>
+
+
+  <h2>타이머 설정 구성</h2>
+
+
+  <p>이제 weve&rsquo;가 새 함수를 만들었으므로 몇 가지 설정을 구성해야 합니다. 먼저 일정을 구성할 수&rsquo; 있습니다.</p>
+
+
+  <p>1.<b>타이머</b> &gt;<b>Schedule</b> <b>통합</b> &gt; 으로 이동합니다.</p>
+
+
+  <p>기본 일정에는 5분마다 CRON 식이 있습니다.</p>
+
+
+  <p>원하는 설정으로 변경합니다. 아래 예제에서는 식을 사용하여 매일 오전 3시에 함수를 트리거했습니다. <b>설명서를</b> 클릭하여 CRON 식에 대한 설명 및 몇 가지 예제를 확인합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d39ca596-4ae1-4908-8c41-059c093e4fb2.jpg"><img alt="clip_image004" border="0" height="522" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c626e25d-a9de-478a-ad8a-9dd582bb6797.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image004" width="1217"></a></p>
+
+
+  <p>2.<b>저장</b>을 클릭합니다.</p>
+
+
+  <h2>애플리케이션 설정 구성</h2>
+
+
+  <p>코드 작성을 시작하기 전에 애플리케이션을 구성해야 합니다.</p>
+
+
+  <p><b>중요:</b> 컴퓨터에 최신 데이터 공급자가 설치되어 있는지 확인합니다. 자세한 정보를 얻고 다운로드하려면 <a href="https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-data-providers">Azure Analysis Services에 연결하기 위한 데이터 공급자를 참조하세요</a>.</p>
+
+
+  <p>공급자&rsquo;를 설치한 후 다음 단계에서 다음 두 파일이 필요합니다.</p>
+
+
+  <p>C:\Program Files\Microsoft SQL Server\130\SDK\Assemblies\Microsoft.AnalysisServices.Core.dll<br>
+
+  C:\Program Files\Microsoft SQL Server\130\SDK\Assemblies\Microsoft.AnalysisServices.Tabular.dll</p>
+
+
+  <p>1. 새 Azure Function에서 <b>함수 앱 설정 </b>&gt; 으로 <b>이동하여 Kudu로 이동하여</b> 디버그 콘솔을 엽니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f08a2c1f-c50c-49e0-80db-572d8d781650.jpg"><img alt="clip_image006" border="0" height="934" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b4db8fab-f36d-4064-af22-5b132e1bd08a.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image006" width="1019"></a></p>
+
+
+  <p>2.<b>D:\home\site\wwwroot\yourfunctionname</b>에서 함수로 이동한 다음 <b>bin</b>이라는 폴더를 만듭니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ee40482-f1ca-4b62-a14f-c571401f372e.jpg"><img alt="clip_image008" border="0" height="898" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/789ff825-67e1-4508-8d3a-f3051c4c735f.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image008" width="1232"></a></p>
+
+
+  <p>3. 새로 만든 bin 폴더로 이동한 다음 미리 보기 지점에 지정된 두 개의 파일을 삭제합니다. 다음과 같이 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b8373b7-163e-42b1-8b80-448f05e78da7.jpg"><img alt="clip_image010" border="0" height="847" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e775177b-49f5-448e-a7e4-6fbc5e2514a6.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image010" width="1263"></a></p>
+
+
+  <p>4. 브라우저를 새로 고칩니다. <b>개발</b> &gt; <b>빈</b>에 두 개의 파일이 표시됩니다(파일 구조가 표시되지 않으면&rsquo; <b>파일 보기를</b> 클릭).</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1e453271-68c6-4b91-8d25-c239d334ba7e.jpg"><img alt="clip_image012" border="0" height="756" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1a9a02d8-b7b3-4440-9550-e458ac90911f.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image012" width="1278"></a></p>
+
+
+  <p>5. 코드를 작성하기 전에 연결 문자열을 만들어야 합니다. <b>함수 앱 설정</b>에서 <b>앱 설정 구성</b>을 클릭합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0b58146-6d4f-4082-8c92-ca877b70e89a.jpg"><img alt="clip_image014" border="0" height="879" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a7c9ab8-2eee-476f-b7d0-a207ca5ff07c.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image014" width="1335"></a></p>
+
+
+  <p>6.<b>애플리케이션 설정</b> 보기의 끝으로 스크롤하여 <b>연결 문자열</b> 섹션으로 이동한 다음 <b>사용자 지정</b> 연결 문자열을 만듭니다.</p>
+
+
+  <p>Provider=MSOLAP;Data Source=asazure://region.asazure.windows.net/servername; 초기 Catalog=dbname; 사용자 ID=user@domain.com; Password=pw</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/def1522f-19b7-4391-9ef3-7255c42d6c5c.jpg"><img alt="clip_image016" border="0" height="435" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db7b0c26-43d2-4e97-ab0b-2c36c0cf6e9d.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image016" width="1393"></a></p>
+
+
+  <h3>코드 추가</h3>
+
+
+  <p>이제 함수&rsquo; 구성 설정이 현재 위치에 있으므로 코드를 입력할 수 있습니다. 업로드&rsquo;한 DLL을 참조해야 하지만 다른 .Net 코드와는 다른 DLL을 참조해야 합니다.</p>
+
+
+  <p><b>참고:</b> 이 예제에서는 테이블 또는 모델만 처리하는 주석이 추가된 줄을 포함시켰습니다.</p>
+
+
+  <p>#r &quot;Microsoft.AnalysisServices.Tabular.DLL&quot;</p>
+
+
+  <p>#r &quot;Microsoft.AnalysisServices.Core.DLL&quot;</p>
+
+
+  <p>#r &quot;System.Configuration&quot;</p>
+
+
+  <p>using System;</p>
+
+
+  <p>System.Configuration을 사용합니다.</p>
+
+
+  <p>Microsoft.AnalysisServices.Tabular 사용</p>
+
+
+  <p>public static void Run(TimerInfo myTimer, TraceWriter 로그)</p>
+
+
+  <p>{</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp; 로그. Info($&quot;C# 타이머 트리거 함수 시작: {DateTime.Now}&quot;);&nbsp;&nbsp;</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp; 시도</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Microsoft.AnalysisServices.Tabular.Server asSrv = new Microsoft.AnalysisServices.Tabular.Server();</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var connStr = ConfigurationManager.ConnectionStrings[&quot;AzureASConnString&quot;]. ConnectionString;</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;asSrv. 커넥트(connStr);</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Database db = asSrv.Databases[&quot;AWInternetSales2&quot;];</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 모델 m = db. 모델;</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Db. Model.RequestRefresh(RefreshType.Full);&nbsp;&nbsp;&nbsp;&nbsp; 새로 고침을 위해 모델 표시</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m.RequestRefresh(RefreshType.Full);&nbsp;&nbsp;&nbsp;&nbsp; 새로 고침을 위해 모델 표시</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; m.Tables[&quot;Date&quot;]. RequestRefresh(RefreshType.Full);&nbsp;&nbsp;&nbsp;&nbsp; 새로 고침을 위해 테이블 하나만 표시</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Db. Model.SaveChanges();&nbsp;&nbsp;&nbsp;&nbsp; 새로 고침을 실행할 커밋&nbsp;</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; asSrv.Disconnect();</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch(Exception e)</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 로그. Info($&quot;C# 타이머 트리거 함수 예외: {e.ToString()}&quot;);</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
+
+
+  <p>&nbsp;&nbsp;&nbsp; 로그. Info($&quot;C# 타이머 트리거 함수가 {DateTime.Now}&quot;에서 완료됨);&nbsp;</p>
+
+
+  <p>}</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><b>저장</b>을 클릭하여 변경 내용을 저장한 다음 <b>실행을</b> 클릭하여 코드를 테스트합니다. &rsquo;로그 정보 및 예외를 볼 수 있는 출력 창이 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/830e82f2-c9c3-4c1a-bf6f-391617ba3bec.jpg"><img alt="clip_image002[6]" border="0" height="1157" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7362b1d1-3d4b-4513-a6c0-737c1a5e0138.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="clip_image002[6]" width="1577"></a></p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/analysis-services/">Azure Analysis Services 및 Azure Functions</a>에 대해 자세히 알아봅니<a href="https://docs.microsoft.com/en-us/azure/azure-functions/">다</a>.</p>

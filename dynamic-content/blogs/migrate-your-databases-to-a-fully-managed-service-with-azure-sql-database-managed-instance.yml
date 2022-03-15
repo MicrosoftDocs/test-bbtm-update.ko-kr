@@ -1,0 +1,119 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 515262cb23416e72554352f189a4fe9af5b66d71
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907692"
+Slug: migrate-your-databases-to-a-fully-managed-service-with-azure-sql-database-managed-instance
+Title: Azure SQL Database Managed Instance를 사용하여 완전히 관리되는 서비스로 데이터베이스 마이그레이션
+Summary: SQL Server 워크로드를 완전 관리형으로 마이그레이션하는 SQL Database 새로운 배포 옵션인 Azure SQL Database Managed Instance의 미리 보기를 발표하게 되어 기쁩니다.
+Content: >-
+  <p><em>이 블로그 게시물은 CADD &amp; AI의 수석 제품 마케팅 관리자인 Eric Hudson이 공동 저술했습니다.</em></p>
+
+
+  <p><em>2018년 7월 업데이트! &rsquo;Were는 범용 성능 계층의 2018년 3월 미리 보기 발표에 이어 Azure SQL Database Managed Instance에서 중요 비즈니스용 성능 계층의 미리 보기를 발표하게 되어 기쁩니다. 중요 비즈니스용은 가장 높은 IO 요구 사항이 있는 애플리케이션용으로 빌드됩니다. 격리된 여러 Always On 복제본을 사용하여 오류에 대한 최상의 복원력을 제공합니다. 프리미엄 IO 성능 및 고가용성 외에도 중요 비즈니스용은 </em><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-in-memory" target="_blank"><em>메모리 내</em></a><em> OLTP 및 1개의 추가 읽기 전용 복제본(</em><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-read-scale-out" target="_blank"><em>읽기 확장</em></a>)과 같은 추가 기능을 제공합니다<em>. 자세한 내용은 </em><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance#business-critical-service-tier" target="_blank"><em>중요 비즈니스용 서비스 계층</em></a><em> 설명서 페이지를 참조하세요.</em></p>
+
+
+  <p><em>또한 이 7월 업데이트를 통해 범용 및 중요 비즈니스용 성능 계층은 이제 8개, 16개, 24개, 32개 및 40개 vCore 외에도 64개 및 80개의 vCore가 있는 인스턴스를 지원합니다. 데이터베이스를 </em> 동일한 지역 내의 <a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2018/06/07/cross-instance-point-in-time-restore-in-azure-sql-database-managed-instance/" target="_blank"><em>다른 인스턴스</em></a>와 <em> 지원되는 백업 보존 기간 내의 특정 시점으로</em> 쉽게 복원할 수 있는 기능으로 비즈니스 연속성도 향상되었습니다.&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/040d1180-7c37-435b-bd65-64c952036c4d.png"><img alt="Business Critical service tier" border="0" height="385" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1bec14f3-95d9-45d0-be01-bb199e664b2b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="중요 비즈니스용 서비스 계층" width="419"></a></p>
+
+
+  <p>Managed Instance는 SQL Server 워크로드를 완전 관리형 데이터베이스 서비스로의 마이그레이션을 간소화하는 SQL Database 새로운 배포 옵션입니다. 전체 SQL Server 엔진 호환성 및 네이티브 VNET(가상 네트워크) 지원을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ea3f9c1e-1221-4542-81c7-617f5be6ed10.png"><img alt="Managed Instance" border="0" height="348" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e4424dfb-5c5e-4f12-9172-93b789aa1204.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Managed Instance" width="1750"></a></p>
+
+
+  <blockquote>
+
+  <p>&ldquo;SQL Managed Instance는 우리가 찾고 있던 행복한 매체입니다. SQL Server 전원과 호환성이 필요했지만 VM 24x7을 실행하는 데 따른 관리 오버헤드와 비용이 없었습니다. Microsoft는 이러한 기능과 관리&rsquo; 용이성을 얻을 뿐만 아니라 Azure 하이브리드 혜택을 사용할 수 있으며, 이를 통해 Software Assurance를 통해 기존 SQL Server 라이선스를 사용할 수 있습니다. 애플리케이션 개발, 배포 및 관리는 Azure 및 SQL Managed Instance를 통해 훨씬 더 쉽고 저렴해지고 있습니다.&rdquo;</p>
+
+  </blockquote>
+
+
+  <p align="right">Robert Shurbet, 수석 소프트웨어 개발 Professional, 피벗 기술 솔루션</p>
+
+
+  <h2>데이터베이스를 완전 관리형 서비스로 마이그레이션</h2>
+
+
+  <p>Azure SQL Database 완전히 관리되는 데이터베이스 서비스입니다. 즉, Microsoft는 SQL Server 운영하며 가용성과 성능을 보장합니다. SQL Database 이전에는 경험하지 못했던 수준으로&rsquo; 보안 및 비즈니스 연속성을 향상시킬 수 있는 혁신적인 기능도 포함되어 있습니다. 예를 들어 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-high-availability" target="_blank">기본 제공 HA(고가용성</a> ), <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-recovery-using-backups" target="_blank">자동화된 백업 및 특정 시점 복원을</a> 사용하여 비즈니스 연속성을 보장할 수 있습니다. 포괄적인 보안 포트폴리오를 사용하면 데이터베이스에 대한 경보 시스템처럼 동작하는 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-threat-detection" target="_blank">위협 탐지</a>와 같은 지능형 기능을 구현할 수 있으며, 잠재적인 악의적인 활동에&mdash; 대한 사전 경고를 제공하여 수백에서 수천 개의 SQL Server 데이터베이스에 대해 사실상 핸즈프리 관리를 구현할 수 있습니다.</p>
+
+
+  <p>Managed Instance는 완전 관리형 서비스의 이점 외에도 온-프레미스 SQL Server(2005~현재 버전)와 높은 호환성을 제공하는 인스턴스 범위 프로그래밍 모델을 사용하여 애플리케이션을 다시 설계하고 클라우드에 있는 후에 해당 데이터베이스를 관리할 필요가 없도록 합니다. Managed Instance를 사용하면 클라우드에서 수년&mdash; 동안 사용하고 사랑했던 것과 동일한 SQL Server 도구를&rsquo; 계속 사용할 수 있습니다. 여기에는 <strong>네이티브 데이터베이스 복원, SQL 에이전트, 데이터베이스 메일, Service Broker, CLR(공용 언어 런타임)</strong> 및 <strong>변경 데이터 캡처</strong>와 같은 기능이 포함됩니다. 생산성을 높이고 총 소유 비용을 낮추기 위해 SQL Server Integration Services(SSIS) 패키지를 ADF(Azure Data Factory) 환경의 관리되는 SSIS로 전환하여 Managed Instance에서 호스트하고 <a href="https://docs.microsoft.com/en-us/azure/data-factory/tutorial-deploy-ssis-packages-azure-powershell">Azure-SSIS Integration Runtime</a>에서 실행되는 SSISDB에 저장합니다.</p>
+
+
+  <p>클라우드로의 마이그레이션을 간소화하기 위해 Microsoft는 Managed Instance에 대한 Azure DMS(Azure Database Migration Services) 지원의 일반 가용성을 <a href="https://blogs.msdn.microsoft.com/datamigration/2018/05/07/announcing-general-availability-of-the-azure-database-migration-service/">발표 </a>했습니다. 이렇게 하면 SQL Server 고객이 워크로드를 SQL Database Managed Instance로 보다 쉽게 마이그레이션할 수 있습니다. Azure DMS는 포괄적인 단일 서비스를 통해 클라우드 마이그레이션의 복잡성을 줄입니다. 이 서비스는 동종/이종 소스 대상 쌍의 마이그레이션을 지원하며, 단계별 마이그레이션 프로세스는 쉽게 이해하고 구현할 수 있습니다.&nbsp; DocuSign과 같은 고객은 Managed Instance가 생산성 및 규모 이니셔티브에 제공하는 SQL Database 가치를 압도적으로 봅니다.</p>
+
+
+  <blockquote>
+
+  <p>&ldquo;플랫폼에서 하루에 110만 개의 트랜잭션을 처리하며 트랜잭션 볼륨은 매년 약 두 배로 증가합니다. Azure에서 가져올 수 있는 최상의 작업으로 데이터 센터에서 최선을 다하기를 원했습니다. 우리에게 우리는 Azure SQL Database 그것을 할 수있는 가장 좋은 방법이었다는 것을 발견했습니다. 기본적으로 기존 인프라를 선택하고 몇 초 내에 Azure에 배포할 수 있었습니다. 이를 통해 최소한의 노력으로 비즈니스를 매우 빠르게 확장할 수 있습니다. 이와 같은 움직임의 성배는 기존 플랫폼을 들어 올리고, 작업을 다시 설계하지 않고도 상당한 양의 작업 없이 Azure로 이동할 수 있습니다.&rdquo;</p>
+
+  </blockquote>
+
+
+  <p align="right">에릭 플리쉬만, 다쿠사인 수석 건축가 부사장 &amp;</p>
+
+
+  <p>자세한 내용은 <a href="https://azure.microsoft.com/en-us/services/database-migration/" target="_blank">Database Migration Service 페이지를 방문하세요</a>.</p>
+
+
+  <h2>궁극적인 격리 및 보안 보장</h2>
+
+
+  <p>Managed Instance는 가상 네트워크에 완전히 포함되어 있으므로 데이터에 대한 최상의 격리 및 보안 수준을 제공합니다. 이제 공용 인터넷에서 격리된 환경을 유지하면서 퍼블릭 클라우드의 이점을 얻을 수 있습니다.</p>
+
+
+  <p>다음 다이어그램에서는 프런트 엔드 애플리케이션에 대해 완전히 관리되는 서비스 또는 호스팅된 모델을 선택했는지 여부에 관계없이 다양한 애플리케이션 토폴로지를 Azure 또는 하이브리드 환경에 완전히 배포하는 몇 가지 옵션을 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9853a64e-cecb-4523-ba94-2ddd5939e8de.png"><img alt="Image 2" border="0" height="1026" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9971c29b-83bb-4b5d-92dc-872a410a7b50.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="이미지 2" width="1812"></a></p>
+
+
+  <p>이러한 옵션 중에서 개인 IP 주소를 통해서만 SQL 엔드포인트(TDS &ndash; 테이블 형식 데이터 스트림)에 연결할 수 있으므로 데이터에 대한 최적의 격리 수준을 보장합니다. 자세한 내용은 <a href="https://go.microsoft.com/fwlink/?linkid=869248" target="_blank">애플리케이션을 Managed Instance에 연결하는 방법을 참조하세요</a>.</p>
+
+
+  <h2>클라우드에서 온-프레미스 워크로드의 크기를 조정합니다.</h2>
+
+
+  <p>Managed Instance는 적절한 수준의 리소스(스토리지 및 컴퓨팅)를 유연하게 선택할 수 있는 vCore(가상 코어)를 기반으로 하는 가격 책정 모델을 사용하므로 온-프레미스의 물리적 코어와 비교하여 워크로드 크기를 쉽게 지정할 수 있습니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/sql-database/managed/" target="_blank">SQL Database 가격 책정 페이지를 참조하세요</a>.</p>
+
+
+  <h2>온-프레미스 SQL Server 라이선스를 활용하여 최대 55%* 저장</h2>
+
+
+  <p>Weve&rsquo;는 SQL Server Azure <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/#sql-ahb-calculator" target="_blank">하이브리드 혜택</a>에 대한 지원을 제공하여 Managed Instance를 경제적인 선택으로 만들었습니다. 이 혜택을 통해 현재 SQL Server 라이선스 투자의 가치를 최대화하고 클라우드로의 마이그레이션을 가속화할 수 있습니다. SQL Server 대한 Azure 하이브리드 혜택은 Software Assurance와 함께 SQL Server 라이선스를 사용하여 Managed Instance에서 할인된 요금을 지불할 수 있는 Azure 전용 혜택입니다. 또한 Azure 하이브리드 혜택을 사용하여 할인된 속도로 SSIS(SQL Server Integration Services) 라이선스를 Azure Data Factory로 마이그레이션할 수 있습니다. SQL Server Enterprise Edition 또는 Standard Edition 고객이고 SA(Software Assurance)가 있는 경우 SQL Server 대한 Azure 하이브리드 혜택을 통해 Managed Instance에서 최대 55%*를 절약할 수 있습니다.</p>
+
+
+  <h2>현재 19개 Azure 지역에서 사용 가능</h2>
+
+
+  <p>이 발표 당시 Managed Instance는 오스트레일리아 동부, 오스트레일리아 남동부, 캐나다 중부, 미국 중부, 동아시아, 미국 동부, 미국 동부 2, 일본 동부, 한국 중부, 한국 남부, 미국 중북부, 북유럽, 미국 중남부, 인도 남부, 동남 아시아, 서유럽, 인도 서부, 미국 서부 2 등 19개 Azure 지역에서 처음 사용할 수 있습니다. Managed Instance는 미리 보기 과정을 통해 더 많은 Azure 지역에서 사용할 수 있습니다.</p>
+
+
+  <h2>오늘 시작하세요!</h2>
+
+
+  <p>지금 Managed Instance를 사용해 보시고 여러분이 어떻게 생각하는지 알려주세요! &rsquo;완전 관리형 데이터베이스 서비스로 마이그레이션할 준비가 되면 <a href="https://portal.azure.com/#create/Microsoft.SQLManagedInstance" target="_blank">Azure Portal</a>에서 미리 보기에 등록하고 미리 보기 조건에 동의합니다.</p>
+
+
+  <p>수요가 많은 경우 고객에게 최상의 환경을 보장하기 위해 미리 보기에 대한 수용을 관리하고 있습니다. 포털에 등록하면 영업일 기준 3일 이내에 상태를 확인하는 것이 목표입니다. 수락&rsquo;되면 Azure Portal로 돌아가 프로비전 프로세스를 완료할 수 있습니다. 그렇지 않으면&rsquo; 나중에 다시 등록하도록 초대됩니다.</p>
+
+
+  <p>미리 보기가 완료되면 <a href="https://go.microsoft.com/fwlink/?linkid=869132" target="_blank">SQL Database Managed Instance 빠른 시작 만들기</a> 문서를 확인하여 첫 번째 인스턴스를 만들고 <a href="https://aka.ms/migratetoMIusingDMS" target="_blank">Azure DMS</a>를 사용하여 SQL Database Managed Instance로 쉽게 마이그레이션하는 방법을 알아봅니다. Managed Instance 및 작동 방식에 대해 자세히 알아보려면 Lara Rubbelke의 이 5분 짜리 비디오를 시청하세요.</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" scrolling="no" src="https://www.youtube.com/embed/W8feSZXm2Ec" width="560"></iframe></p>
+
+
+  <p>사용자 시나리오 및 기능 목록에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance" target="_blank">Managed Instance 설명서 페이지를 참조하세요</a>.</p>
+
+
+  <p>&rsquo;Managed Instance를 SQL Database 모든 SQL Server 데이터베이스에서 사실상 핸즈프리 관리를 경험하게 되어 매우 기쁩니다!</p>
+
+
+  <p><em>*매월 730시간을 실행하는 미국 동부 지역에서 8개의 vCore Managed Instance 중요 비즈니스용으로 절감. 절감액은 기본 요금(SQL Server Azure 하이브리드 혜택 적용)에 대해 전체 가격(라이선스 포함)으로 계산되며, EA 계약에 따라 달라질 수 있는 SQL Server Enterprise 버전의 Software Assurance 비용은 제외됩니다. 실제 절감액은 지역, 인스턴스 크기 및 성능 계층에 따라 달라질 수 있습니다. 2017년 12월 현재 가격, 변경될 수 있습니다.</em></p>

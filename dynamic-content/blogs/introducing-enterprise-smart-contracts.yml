@@ -1,0 +1,156 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 60d50de4236d6d271294718c7216b12f44c2bf4e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908380"
+Slug: introducing-enterprise-smart-contracts
+Title: Enterprise 스마트 계약 소개
+Summary: Enterprise 스마트 계약은 "계약"과 기술 진화를 모두 반영하여 "공공 스마트 계약" 접근 방식을 분해하여 기업에서 블록체인의 약속을 이행하기 위한 모델을 제공합니다.
+Content: >-
+  <h2>소개</h2>
+
+
+  <h4><a href="https://github.com/Azure/azure-blockchain-projects/blob/master/bletchley/EnterpriseSmartContracts.md" target="_blank"><em>Enterprise 스마트 계약 - 전체 백서</em></a></h4>
+
+
+  <p>Project Bletchley를 발표한 지 1년이 조금 넘었으며, 그 이후로 우리는 파트너 및 고객과 직접 협력하여 개발자가 블록체인을 핵심 데이터 계층으로 사용하여 새로운 세대의 최신 애플리케이션을 빌드하는 데 어떻게 도움이 되는지 이해했습니다.</p>
+
+
+  <p>Blockchain as a Service&rdquo;의 &ldquo;초기 목표는 개발자가 더 쉽게 랩 환경을 설정하고, 손을 더럽게 하고, 블록체인을 사용하여 엔터프라이즈에 유용한 항목을 빌드할 수 있도록 하는 것이었습니다. Microsoft Azure Ethereum, Quorum(EEA), Hyperledger Fabric, R3 Corda 및 Chain Core &ndash;&rsquo;weve와 같은 주요 플랫폼을 포함하여 원하는 블록체인을 쉽게 스핀업할 수 있습니다.</p>
+
+
+  <p>이러한 &ldquo;배관의 배포를 완화하면&rdquo; 이러한 새 환경에 대한 애플리케이션을 빌드하는 방법이라는 더 큰 과제가 드러날 수 있습니다. 우리의 고객과 파트너는 종종 우리에게 말한다, &ldquo;좋아, 당신은&rsquo; 내가 이러한 블록 체인 네트워크를 서 쉽게 만든, 하지만 난 지금 무엇을해야합니까?&rdquo;</p>
+
+
+  <p>이는 1990년대 중반에서 후반까지 인터넷에 연결되었을 때 TCP/IP 및 웹 서핑&rdquo;을 위한 &ldquo;운영 체제에 포함된 웹 브라우저로 훨씬 더 쉬워졌을 때를 반영합니다. 그러나 초기 &ldquo;서핑&rdquo; 환경은 작은 정적 웹 페이지 및 기본 전자 메일 세트로 제한되었습니다. 초기 소프트웨어 개발 플랫폼과 도구가 단순히 웹용으로 설계되지 않았기 때문에 Windows 95에서 .com 열풍으로 가는 데는 먼 길이 있었습니다. 그 결과, 실행 가능한 전자 상거래 사이트를 만들기 전에 많은 학습과 반복적인 혁신이 이루어졌습니다. 블록체인 플랫폼은 현재 비슷한 위치에 있습니다.&nbsp; Azure를 사용하면 네트워크에&rdquo; 쉽게 연결할 &ldquo;수 있지만 아직 많은 작업을 수행할 수&rsquo; 없습니다.</p>
+
+
+  <p>그래서 우리는 고객이 진정으로 구축하고자 하는 것을 고려하기 위해 한 걸음 뒤로 물러났습니다. 우리는 산업 전반의 얼리 어답터로부터 블록체인에 가장 흥미로운 비즈니스 프로세스가 공유되었다는 것을 배웠습니다. 조직과 트러스트 경계를 모두 넘어가는 프로세스입니다. 반신탁 당사자와의 상호 작용을 관리하는 것은 각 당사자의&rsquo; 의무, 이를 충족하는 방법에 대한 규칙 및 이를 충족하지 못한 것에 대한 처벌을 명확하게 명시하는 것을 의미합니다. 요컨대, 계약.</p>
+
+
+  <p>2015년 스마트 계약의 도입은 블록체인을 위한 기업에 대한 관심이 폭발적으로 커진 데 큰 역할을 했습니다. 그러나 첫 번째 버전의 &ldquo;Public Smart Contracts&rdquo; 는 엔터프라이즈용으로 설계되지 않았으며 기업의 요구 사항에 따라 제공할 수 없습니다.</p>
+
+
+  <blockquote>
+
+  <p><em>Enterprise 스마트 계약은 블록체인 혁명의 다음&rdquo; 단계입니다.&ldquo;&rsquo;</em></p>
+
+  </blockquote>
+
+
+  <p>스마트 계약을 &ldquo; Enterprise 기업에서 블록체인의 약속을 이행하기 위한 모델을 제공하기 위해 계약&rdquo;과 기술 발전을 모두 &ldquo;반영하는 공공 스마트 계약&rdquo; 접근 방식입니다. 중요한 첫 번째 단계는 구현에서 문제 분리를 도입하여 데이터, 논리, 계약 참가자 및 외부 종속성을 모듈화하는 것이었습니다. 스마트 계약에서 제공하는 Enterprise 것은 실행할 때 기업에서 예상되는 개인 정보 보호, 규모, 성능 및 관리 기능을 제공하는 계약 템플릿을 만들기 위해 결합할 수 있는 구성 요소 집합입니다.</p>
+
+
+  <h2>스마트 계약 구성 요소 Enterprise</h2>
+
+
+  <p>Enterprise 스마트 계약은 정확히 무엇인가요? &rsquo;주요 구성 요소를 살펴보겠습니다.</p>
+
+
+  <ul>
+   <li>상대방 간의 계약 의무 실행 및 이행에 필요한 데이터 요소와 감사자 또는 규제 기관과 같은 상대방 및 관찰자 간의 무결성과 신뢰를 유지하는 데 필요한 암호화 증명을 스키마 &ndash; 합니다.</li>
+   <li>스키마에 정의되고 대응 및 관찰자가 동의한 논리 &ndash; 비즈니스 규칙입니다. 코드와 해당 결과의 실행, 버전 관리 및 무결성에 필요한 암호화 증명은 스키마에 정의된 대로 블록체인에 유지됩니다.</li>
+   <li>&ndash; 계약 조건 및 실행에 동의하는 참가자(사람, 조직 및 사물)의 대응 ID이며 디지털 서명과 같은 암호화 기본 형식을 통해 인증됩니다.</li>
+   <li>외부 원본은 &ndash; 계약의 실행 요구 사항을 충족하는 데 필요한 데이터 또는 트리거의 외부 입력입니다. 상호 작용을 위한 이러한 외부 원본 및 조건은 대응 및 관찰자에 의해 합의됩니다.&nbsp; 다른 사용자와 마찬가지로, 인증을 증명하고 외부 원본에 대한 신뢰를 설정하려면 암호화 증명이 필요합니다.</li>
+   <li>&ndash; 모든 계약 활동 및 증명을 기록하기 위해 스키마의 데이터 항목을 포함하는 분산 원장(블록체인)에서 변경할 수 없는 계약의 인스턴스를 원장합니다. 퍼블릭 &ldquo;분산 신뢰할 수 없는 데이터베이스&rdquo; 또는 &ldquo;공유, 사용 권한, 반자율, 임의 프라이빗 데이터베이스일 수 있습니다.&rdquo;</li>
+   <li>계약 바인딩 - Enterprise 스마트 계약 바인딩은 Enterprise 스마트 계약의 고유한 인스턴스를 만드는 이러한 파트의 구성입니다. 계약이 상대방 간의 협상을 시작하고 각 상대방이 계약에 서명할 때 버전이 지정되고 잠기면 만들어집니다. Enterprise 서명하고 잠그면 스마트 계약이 이행으로 이어지는 사용 약관의 실행을 시작합니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2fed8045-1ff2-4a49-841d-938ff2bb259f.png"><img alt="EntSmartContract" border="0" height="529" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9777e603-06de-4ea0-ba52-3cfbe2b0fbbe.png" style="border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="EntSmartContract" width="610"></a></p>
+
+
+  <h2>Enterprise 스마트 계약 구현</h2>
+
+
+  <p>이제 Enterprise 스마트 계약을&rsquo; 구성하는 항목을 정의했으므로 이를 구현할 시간이 있습니다. 클라우드는 Enterprise 스마트 계약을 구현하는 분산 원장 시스템의 완벽한 동반자입니다. 블록체인은 데이터베이스를 유지하는 분산 노드로 구성되므로 전역적으로 분산되고 고가용성 퍼블릭 클라우드는 이러한 네트워크를 지원하는 서비스를 위한 훌륭한 도우미 플랫폼을 제공합니다.</p>
+
+
+  <p>&ldquo;공용 스마트 계약은&rdquo; 네트워크의 모든 단일 컴퓨터에서 모든 단일 트랜잭션을 실행하거나 실행합니다. 이는 신뢰할 수 없는 네트워크에 설계되어 필요합니다.&nbsp; 그러나 이는 엔터프라이즈에 해당할 필요가 없습니다. Enterprise Smart Contracts의 이점 중 하나는 사용 약관&ldquo;을 오프체인으로 실행하여 훨씬 더 유연한 성능,&rdquo; 확장성, 개인 정보 보호, 버전 관리 및 엔터프라이즈 친화적인 아키텍처 및 개발 환경을 가능하게 하는 기능입니다. 클라우드는 스마트 계약을 대규모로 Enterprise 공유 논리 실행 플랫폼을 제공하는 동시에 해당 기관 간에만 실행하는 실제 비용을 공유할 수 있습니다. 나는 수 &ldquo;표를 분할 호출합니다.&rdquo; 두 명 이상의 사람들이 서로 계약(저녁 식사)을 공유하면 청구서가 도착하면 수표를 분할하기만 하면 됩니다. 사실, 우리는 그보다 더 분별 할 수 있지만, 당신은 그림을 얻을. 해당 상대와 클라우드 리소스를 공유하면 &ldquo;계약에 대한 논리가 실행되는 데이터 센터에 빠져 있지 않으면서 검사를&rdquo; 분할할 수 있습니다.</p>
+
+
+  <p>언더링 블록체인에 따라 트랜잭션은 비공개일 수도 있고 그렇지 않을 수도 있습니다. 즉, 블록체인이 특정 ID만 특정 데이터 속성을 읽을 수 있도록 허용하는 권한 부여 프레임워크를 지원하거나 특정 ID만 데이터의 암호를 해독할 수 있도록 데이터를 암호화하지 않는 한 데이터는 명확합니다.&nbsp; 암호화를 사용하여 데이터를 암호화하고 블록체인에서 스마트 계약 논리를 실행하는 경우 해당 네트워크의 모든 노드가 해당 데이터에 대해 컴퓨팅할 수 있도록 해당 데이터의 암호를 해독할 수 있어야 합니다.&nbsp; Quorum 및 Hyperledger Fabric과 같은 일부 플랫폼은 다양한 방법으로 이러한 플랫폼을 지원합니다.</p>
+
+
+  <p>그러나 Enterprise 스마트 계약에서 논리를 실행한다는 것은 해당 항목 간에 데이터를 비공개로 유지할 뿐만 아니라 논리도 유지할 수 있음을 의미합니다.&nbsp; 논리의 결과 출력은 원장에 게시하기 전에 암호화하여 보다 불연속적이고 유연한 개인 정보 보호 모델을 만들 수 있습니다.</p>
+
+
+  <p>또한 Enterprise 스마트 계약에서 특정 블록체인에 사용할 수 있는 개인 정보 보호 기능을 활용하여 아래 블록체인에 따라 다양한 개인 정보 보호 조치를 구현할 수 있는 다중 신뢰 모델을 만듭니다.&nbsp; Enterprise 스마트 계약이 없으면 블록체인 플랫폼의 신뢰 모델로만 제한됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fbcb731a-93fd-4ada-a03d-05cef6ab9bb7.png"><img alt="cloud blockchain" border="0" height="302" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4fb8c683-19b5-4378-aff4-e8c4d7247195.png" style="border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="클라우드 블록체인" width="610"></a></p>
+
+
+  <h2>Azure &ndash; The Enabler</h2>
+
+
+  <p>Microsoft Azure 플랫폼은 Enterprise 스마트 계약을 구현하기 위한 핵심 기술 기능을 제공하는 데 필요한 구성 요소를 제공합니다. 그러나 이를 함께 구성하는 것은 복잡한 작업입니다. 작년에 Cryptlet 개념이 도입되었을 때 블록체인의 동일한 암호화 속성을 사용하는 동안 데이터에서 논리를 분리하는 이점이 주요 초점이었습니다. 그러나 블록체인과 동일한 암호화 기본 형식을 공유하는 것만으로는 충분하지 않습니다. Enterprise 스마트 계약을 만들기 위한 인프라를 제공하는 플랫폼과 프레임워크가 필요합니다. 네트워크의 각 대응이 빌드 및 유지 관리해야 하는 것은 아닙니다. 스마트 계약 또는 PaaS를 Enterprise 빌드하기 위한 공유 플랫폼 및 프레임워크는 다음과 같은 어려운 작업을 수행합니다.</p>
+
+
+  <ul>
+   <li>키 관리</li>
+   <li>트랜잭션을 대신하여 허용 &ldquo;하도록 비밀/프라이빗 키에 엔터프라이즈 ID의&rdquo; 보안 통합</li>
+   <li>암호화 도구 모음(ECC, RSA 등)에서 암호화 증명 생성 및 제로 지식 증명, 링 서명 및 임계값 또는 동형 암호화와 같은 비용이 많이 드는 작업을 위한 공유 인프라</li>
+   <li>모든 블록체인 또는 분산 원장에 추상화된 통합을 통해 플랫폼 간에 논리를 이식할 수 있습니다.</li>
+   <li>프라이빗 트랜잭션에 대한 공용 네트워크에서 트랜잭션 증명을 기록하는 것과 같이 동시에 여러 블록체인을 사용하는 Enterprise 스마트 계약과 같은 블록체인 간 상호 운용성 시나리오를 사용하도록 설정합니다.&nbsp; 또한 한 네트워크에서 다른 네트워크로 자산 전송을 수행할 수 있는 Enterprise 스마트 계약을 만들 수 있습니다.</li>
+   <li>기본 블록체인을 추상화하여 Enterprise 스마트 계약을 호출하고 블록체인 이벤트 및 데이터를 외부 시스템에 표시하기 위한 개방형 API입니다.</li>
+   <li>.NET 및 Java(CLR, JVM) 및 최신 기능 언어 및 DSL과 같은 일반적인 엔터프라이즈 개발 환경.</li>
+   <li>Extensible Data Services는 데이터 레이크, 웨어하우스, BI/분석 및 AI/Machine Learning 사용하여 블록체인 트랜잭션을 소화하고 이해하도록 플러그 인합니다.</li>
+   <li>Enterprise 운영 및 관리 도구</li>
+  </ul>
+
+
+  <p>나중에 자세히 설명할 코드 증명 엔진과 함께 Key Vault 및 Azure Active Directory 같은 Azure 클라우드에서 기술을 사용하도록 설정하는 조합을 사용하여 이 개발 프레임워크의 기반이 마련되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b2429ba6-fa99-44d3-9747-4c666a3523f9.png"><img alt="buildingblocks" border="0" height="345" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/914781f7-e5ad-46c1-80e1-6d64d793eec0.png" style="border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="buildingblocks" width="610"></a></p>
+
+
+  <h2>스마트 계약 Enterprise - 프레임워크</h2>
+
+
+  <p>Enterprise 스마트 계약 프레임워크는 인프라 및 개발 기술에 대한 기존 엔터프라이즈 투자를 활용할 수 있도록 이 플랫폼에서 빌드할 인프라와 도구를 제공합니다. 이 프레임워크는 네 가지 주요 구성 요소로 구성됩니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9ab38d82-196a-422d-a1cd-bf4b0d23bff8.png"><img alt="4parts" border="0" height="338" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8814b709-8ccc-41bb-bec5-b4679c0d22f3.png" style="border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="4파트" width="610"></a></p>
+
+
+  <ul>
+   <li>비밀, 제어 및 구성 &ndash; 은 Azure Active Directory 통해 인증된 특정 ID(사람, 암호화, IoT 디바이스 등)에 대해 Azure Key Vault에 저장된 비밀에 대한 액세스 권한을 부여합니다. Enterprise Smart Contracts에 대한 바인딩을 관리합니다.</li>
+   <li>런타임 환경 서비스는 &ndash; Cryptlet에 대해 증명된 실행을 제공하고 기본 ID 매핑 및 키 관리를 추상화합니다. 이를 통해 개발자는 기본 인프라가 아닌 Enterprise 스마트 계약 논리에 초점을 맞춘 원하는 언어로 Cryptlet을 작성할 수 있습니다&ldquo;.&rdquo; 서비스는 Cryptlet이 실행될 수 있도록 증명된 실행 환경을 동적으로 만들고, 이러한 환경에 비밀을 안전하게 프로비전하고, 암호화 증명을 자동으로 생성합니다.</li>
+   <li>트랜잭션 작성기 및 라우터는 &ndash; Cryptlet 메시지를 블록체인 특정 형식으로 마샬링하고 형식을 지정하고 신뢰할 수 있는 배달을 통해 이러한 트랜잭션을 적절한 블록체인으로 라우팅합니다.</li>
+   <li>API &ndash; 는 대규모로 Enterprise Smart Contracts에서 메시지를 보내고 받기 위한 안전하고 인증된 메시지 기반 API를 노출합니다.</li>
+  </ul>
+
+
+  <h2 align="left">요약</h2>
+
+
+  <p>Enterprise 스마트 계약 및 Microsoft Azure 블록체인 네트워크를 기반으로 하는 실제&rdquo; 엔터프라이즈 애플리케이션을 안내하는 데 필요한 &ldquo;인프라를 제공합니다. Cryptlet 및 프레임워크는 설계자와 개발자에게 기존 기술, 도구 및 구성 요소를 통합할 수 있는 중간 계층 플랫폼을 제공합니다.</p>
+
+
+  <p>이 프레임워크를 통해 기업은 다양한 기능을 갖춘 블록체인 기반 애플리케이션을 빌드할 수 있습니다.</p>
+
+
+  <ul>
+   <li>증명된 데이터를 외부 원본과 주고받은 데이터를 게시합니다.</li>
+   <li>ERP 및 CRM과 같은 기존 엔터프라이즈 시스템의 통합 지점입니다.</li>
+   <li>모든 유형의 계약, 금융 상품에 대한 논리 및 동작: 파생상품, 채권, 보험 정책.</li>
+   <li>라이선스 계약에 대한 논리: 정부에서 발급한 비즈니스 라이선스, 인증 등</li>
+   <li>Azure IoT 제품군을 통한 IoT 통합</li>
+   <li>블록체인 간 조정: 서로 다른 네트워크와 플랫폼 간에 자산 또는 토큰 전송(예: Hyperledger Fabric에서 Ethereum을 Enterprise 공용 블록체인에 프라이빗 증명 기록).</li>
+   <li>오프 체인 통합, 증명 및 고급 코인 &quot;베이스 동작을 사용하는 토큰 또는 Coin minter&quot; .</li>
+   <li>사용 사례를 대신하여&quot; 개인 봇 에이전트&quot;.</li>
+   <li>블록체인과 기타 엔터프라이즈 시스템 간의 분산 트랜잭션 지원, 원장 리소스 보정, 2단계 커밋 등</li>
+  </ul>
+
+
+  <p>Enterprise 스마트 계약은 기본적으로 여러 블록체인과 통합되는 암호화 증명 시스템을 사용하여 공유 비즈니스 논리를 실행하기 위한 안전한 기밀 분산 다자간 애플리케이션 플랫폼을 제공하여 이러한 기능을 지원합니다. Enterprise 스마트 계약 및 Azure는 차세대 분산 애플리케이션을 빌드하기 위해 비용, 위험, ID 등을 분산할 수 있는 이 플랫폼을 제공합니다. 이러한 기능은 최신 엔터프라이즈 환경에서 작동하는 방식으로 클라우드의 유연성과 기능을 활용하면서 블록체인 기반 애플리케이션의 기능을 잠금 해제하는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://github.com/Azure/azure-blockchain-projects/blob/master/bletchley/EnterpriseSmartContracts.md">기술 백서</a>에서 Enterprise Smart Contract 프레임워크에 대해 자세히 알아볼 수 있습니다.</p>

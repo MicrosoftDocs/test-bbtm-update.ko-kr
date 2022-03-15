@@ -1,0 +1,65 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6852cc3f87ffee2b7c4b7fdda83a1a53f364636b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902225"
+Slug: azure-site-recovery-privacy-security-part1
+Title: 'Azure Site Recovery: 데이터를 안전하게 유지하기 위한 노력'
+Summary: 작년에 Microsoft 법률 &amp; 기업 업무의 법률 고문 &amp; 부사장인 Brad Smith는 고객 데이터와 관련하여 개인 정보 보호의 중요성을 표명했습니다. Azure Site Recovery 서비스는 Microsoft의 개인 정보 보호 약정에 맞게 두 클라우드 &amp; 온-프레미스 구성 요소로 구성된 하이브리드 IT 서비스로 처음부터 설계되었습니다.
+Content: >-
+  <a href="https://aka.ms/asrsecurityblog_landingpage">Azure Site Recovery</a> 를 사용하면 사용하기 쉬운 24/7 Azure 기반 서비스에서 복구 작업을 안전하게 오케스트레이션하여 재해 발생 시 애플리케이션을 보호할 수 있습니다. 작년에 <em>Microsoftclearly의 법률 &amp; 기업 업무 담당 법률 고문 &amp; 부사장인 Brad Smith</em>는 자신의 블로그에 <a href="https://aka.ms/asrsecurityblog_bradblog">고객 데이터의 개인 정보 보호에 대한 Microsoft의 약속을</a> 밝혔습니다.  Azure Site Recovery는 Microsoft의 개인 정보 보호 약정에 부합하는 두 클라우드 &amp; 온-프레미스 구성 요소로 구성된 하이브리드 IT 서비스로 설계되었습니다. 구체적으로는 다음과 같습니다.
+
+  <ul>
+   <li>전송 중 및 미사용 고객 데이터 암호화</li>
+   <li>동급 최고의 업계 암호화를 사용하여 퍼펙트 포워드 비밀 및 2048비트 키 길이를 포함한 모든 채널을 보호합니다.</li>
+  </ul>
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/08/asr_scenerio.png"><img style="float: none;margin-left: auto;margin-right: auto;border: 0px" title="asr_scenerio" alt="asr_scenerio" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/asr_scenerio_thumb.png" width="644" height="363" border="0" /></a>
+
+
+  Azure Site Recovery는 세 가지 주요 구성 요소로 구성된 서비스 지향 아키텍처를 따릅니다.
+
+  <ol>
+   <li>Azure Site Recovery 보호 &amp; 복구 환경은 모든 위치에서 24/7 액세스를 통해 여러 재해 복구 사이트에서 모든 Azure 자산을 관리하는 고객을 위한 단일 관리 인터페이스를 제공하는 <a href="https://aka.ms/asrsecurityblog_azuremgmtportal">Azure 관리 포털</a>에 있습니다.</li>
+   <li><em>Azure Site Recovery 공급자</em>는 System Center Virtual Machine Manager(VMM) 서버에 설치되고 아웃바운드 연결<em>만</em> 수행하여 Azure Site Recovery 서비스에 연결하는 온-프레미스 구성 요소입니다. 공급자는 인터넷에 연결해야 하며 온-프레미스 프록시 서버를 활용하여 VMM 서버에서 직접 인터넷 연결이 필요하지 않도록 할 수 있습니다.</li>
+   <li><em>Azure Recovery Service Agent</em>는 온-프레미스에서 Azure 보호를 위한 가상 머신을 호스팅하는 각 Windows Hyper-V Server에 설치된 온-프레미스 구성 요소입니다. 에이전트는 인터넷에 연결해야 하며 온-프레미스 프록시 서버를 활용하여 Hyper-V 서버에서 직접 인터넷 연결이 필요하지 않도록 할 수 있습니다.</li>
+  </ol>
+
+  &nbsp;
+
+
+  고객의 온-프레미스 구성 요소가 Azure Site Recovery 클라우드 기반 서비스와 상호 작용하는 주요 채널은 다음과 같습니다.
+
+  <ul>
+   <li>통신 채널</li>
+  </ul>
+
+  <blockquote>Hyper-V 호스트에 설치된 VMM 서버 &amp; Azure Recovery Services 에이전트에 설치된 Azure Site Recovery 공급자는 장애 조치, 상태 모니터링 등과 같은 모든 운영 활동을 위해 Azure의 Azure Site Recovery 서비스와 통신합니다. 이 채널이 안전한지 확인하는 것이 중요합니다.
+
+
+  이를 위해 온-프레미스에서 Azure Site Recovery 서비스로의 모든 통신 채널은 443(HTTPS)를 통해 발생하며, 모든 요청은 업계 표준 <em>X.509 인증서</em> 를 사용하여 인증되므로 Azure로 <em>전송</em> 하는 동안 완전한 데이터 보안을 제공합니다.
+
+
+  보안 통신 채널의 맨 위에서 VMM을 등록하는 동안 수집된 고객별 키인 자격 증명 모음 <em>키</em>는 온-프레미스 공급자가 Azure에서 <em>작업 무결성</em> 을 보장하는 데 사용됩니다.Azure <a title="Aure Multi-Factor <em><strong>Authenticationmulti-factor</strong></em>" href="https://aka.ms/asrsecurityblog_azuremfa"> Authentication </a> 은 Azure Site Recovery 관리를 위해 Azure Portal에 액세스하려는 Azure 관리자를 위한 추가 보안 계층을 추가합니다.</blockquote>
+
+  <ul>
+   <li>복제 채널</li>
+  </ul>
+
+  <blockquote>Hyper-V 호스트 컴퓨터의 Azure Recovery Services 에이전트는 가상 머신을 지정된 <em>고객의 스토리지 계정에 복제합니다</em>. 이 채널을 통해 전송된 모든 데이터가 안전한지 확인하는 것이 중요하므로 Azure에서 고객의 지역 중복 스토리지 계정으로 복제하기 전에 고객 관리<em>형 X.509 암호화 인증서</em>를 사용하여 온<em>-프레미스</em>에서 데이터를 암호화한 다음 위에서 언급한 보안 통신 채널을 통해 전송됩니다. Azure에서 미사용 <em>데이터 보안을 완벽하게</em> 제공합니다.
+
+
+  고객의 <em>미사용 머신 데이터 암호화</em> 는 AES-256을 사용합니다. 고객은  <em>가상</em> 머신이 Azure의 사용자  <em>구독</em>에서 인스턴스화될 수 있도록 고객이 고객 <em>관리</em>형 암호화 인증서를 제공해야 하며 <em>실제 재해 복구 작업 중 또는 모의 DR 훈련 중에만 </em>보안 위치에 관리되는 암호화 인증서가 저장되도록 해야 합니다.</blockquote>
+
+  또한 Azure Site Recovery는 데이터 센터 간에 이동하는 고객 콘텐츠를 암호화합니다. 당사는 보안 및 개인 정보 보호 약속에 100% 전념하고 있으며, <em><strong>운송</strong></em> <em>중 및</em> <em><strong>미사</strong></em>용 고객의 데이터를 보호하기 위해 동급 최고의 업계 암호화를 계속 사용할 것입니다.
+
+
+  추가 정보는 MSDN</a>의 <a title="MDSNAzure" href="https://aka.ms/asrsecurityblog_asrforum"> Site Recovery 포럼에서 Azure Site Recovery 포럼을 방문하여 다른 고객과 소통할 수도 있습니다.
+
+
+  ASR이 수행할 수 있는 작업을 확인할 준비가 되면 가격 정보" href="https://aka.ms/asrsecurityblog_asrpricing"> 가격 책정 정보를</a> 확인<a title="하거나, <a title="평가판에 무료 평가</a>판" href="https://aka.ms/asrsecurityblog_freetrial">에 등록하거나<a title=", 제품 사양에 대한 자세한 정보 제공을 통해 제품 사양" href="https://aka.ms/asrsecurityblog_landingpage">에 대해 자세히 알아볼 수 있습니다</a>.

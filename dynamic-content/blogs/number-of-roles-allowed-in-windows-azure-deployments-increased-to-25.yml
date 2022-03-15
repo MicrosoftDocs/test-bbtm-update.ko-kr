@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 538d829d3cd4f78fb5dbe583183fe889184dfa6a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900987"
+Slug: number-of-roles-allowed-in-windows-azure-deployments-increased-to-25
+Title: Windows Azure 배포에서 허용되는 역할 수가 25개로 증가했습니다.
+Summary: Windows Azure는 배포에 허용되는 최대 역할 수를 5개에서 25개로 늘렸습니다. 이 변경을 통해 고객은 웹 역할과 혼합될 수 있는 최대 25개의 고유한 역할을 배포할 수 있습니다,...
+Content: <p><a target="_blank" href="https://azure.microsoft.com/">Windows Azure</a>는 배포에 허용되는 최대 역할 수를 5개에서 25개로 늘렸습니다. 이 변경을 통해 고객은 단일 배포의 일부로 웹 역할, 작업자 역할 및 가상 머신 역할이 혼합될 수 있는 최대 25개의 고유한 역할을 배포할 수 있습니다. 이러한 증가로 애플리케이션 개발자는 이러한 25개의 각 역할을 독립적으로 확장 및 <a target="_blank" href="https://msdn.microsoft.com/en-us/library/ee517255.aspx">업데이트</a> 할 수 있으므로 배포의 다양한 측면의 수명 주기를 보다 세부적으로 제어할 수 있습니다.</p>  <p>또한 Windows Azure는 엔드포인트를 사용하는 방식을 변경했습니다. 이전에는 배포가 역할당 최대 5개의 내부 엔드포인트로 제한되었습니다. 이제 배포에는 모든 조합의 역할에 할당된 총 25개의 내부 엔드포인트가 있을 수 있습니다(동일한 역할의 모든 25개 포함).</p>  <p>이는 입력 엔드포인트를 할당할 수 있는 방법과 일치합니다. Windows Azure는 이제 25개의 내부 엔드포인트와 25개의 입력 엔드포인트를 지원하며, 모든 조합에서 25개의 역할에 할당됩니다.</p>  <p>역할 통신을 사용하도록 설정하는 자세한 내용은 여기에서 확인할 수 있습니다.&nbsp;&nbsp;&nbsp;</p>  <p><em>Corey Sanders는 Windows Azure의 패브릭 컨트롤러 팀에서 근무하는 수석 프로그램 관리자입니다.</em></p>

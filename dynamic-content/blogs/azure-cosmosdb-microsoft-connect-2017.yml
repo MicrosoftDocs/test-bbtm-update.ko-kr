@@ -1,0 +1,40 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3c45f472025b651730b34d7d27b4476e63cef360
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901380"
+Slug: azure-cosmosdb-microsoft-connect-2017
+Title: 'Azure #CosmosDB @ Microsoft 커넥트(); 2017'
+Summary: 오늘 몇 가지 Azure Cosmos DB 공지 사항을 발표하게 되어 기쁩니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b41d9013-b9fb-4c1e-947e-76042b9235ad.png"><img alt="image" border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/79372d87-b2f4-430c-aa67-5587bfcf7c71.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="1024"></a></p>
+
+
+  <p>오늘,&rsquo; 몇 가지 <a href="https://azure.microsoft.com/en-us/services/cosmos-db/">Azure Cosmos DB</a> 발표를 하게 되어 기쁩니다. Azure Cosmos DB는 <a href="https://azure.microsoft.com/en-us/support/legal/sla/cosmos-db/v1_1/">업계에서 가장 포괄적인 SLA</a>를 통해 지원되는 짧은 대기 시간, 고가용성 및 일관성 &ndash; 을 보장하면서 모든 지역에서 처리량 및 스토리지를 탄력적으로 확장할 수 있는 <a href="https://azure.microsoft.com/en-us/blog/azure-cosmos-db-microsofts-globally-distributed-multi-model-database-service/">최초의 전역 분산 데이터베이스 서비스</a>입니다. Azure Cosmos DB는 오늘날의&rsquo; IoT 및 모바일 앱과 AI&rsquo;에 굶주린 미래를 지원하도록 빌드되었습니다.</p>
+
+
+  <p>Azure Cosmos DB는 <a href="https://channel9.msdn.com/Shows/Azure-Friday/Introducing-Azure-Cosmos-DB?term=cosmos%20db">다양한 데이터 모델과 인기 있는 쿼리 API</a>를 기본적으로 지원하는 최초의 클라우드 데이터베이스이며, 지속적인 양의 데이터를 수집할 수 있는 <a href="https://azure.microsoft.com/en-us/blog/a-technical-overview-of-azure-cosmos-db/">새로운 데이터베이스 엔진</a>을 기반으로 하며 스키마 또는 인덱스 &ndash; 관리를 처리할 필요 없이 빠르게 쿼리를 제공합니다. 또한 5 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels">개의 잘 정의된 일관성 모델을</a> 제공하는 최초의 클라우드 데이터베이스이므로 앱에 적합한 모델만 선택할 수 있습니다.</p>
+
+
+  <p>오늘 뉴욕에서 열린 <a href="https://www.microsoft.com/en-us/connectevent/default.aspx">연례 Microsoft 커넥트(); 2017</a> 행사에서 우리는 멀티 모델 및 다중 API 기능의 확장, 서비스의&nbsp; 추가 발전 및 SLA 향상을 발표함으로써 모든 개발자에게 지속적인 헌신을 공유하게 되어 기쁩니다. 이러한 공지 사항은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><strong>Azure Cosmos DB Cassandra API</strong>: <em>Azure Cosmos DB에서 제공하는 Cassandra as-a-Service</em>를 제공하는 Apache Cassandra API &ndash; 에 대한 기본 지원 미리 보기를 시작하게 되어 기쁩니다. 이제 즐겨 찾는 Cassandra SDK 및 도구 체인에 익숙한 관리 서비스로 <a href="https://azure.microsoft.com/en-us/blog/a-technical-overview-of-azure-cosmos-db/">Azure Cosmos DB 플랫폼</a>의 기능을 경험할 수 있습니다. <a href="https://aka.ms/cassandraapiblog">여기에서 자세히 알아보</a>고 Azure Cosmos DB Cassandra API에 액세스하여 행성 규모의 Cassandra 앱을 쉽게 빌드할 수 있도록 <a href="https://aka.ms/cosmosdb-cassandra">오늘 등록</a>하세요.</li>
+   <li><strong>Azure Cosmos DB SLA 업데이트 - 글로벌 규모에서 99.999% 읽기 가용성</strong>: 스택을 지속적으로 개선해 왔으며, 현재 Azure Cosmos DB에 대한 더 강력한 SLA를 발표하게 된 것을 자랑스럽게 생각합니다. 이제 여러 지역에 걸친 데이터베이스의 읽기 가용성은 99.999%입니다. <a href="https://azure.microsoft.com/en-us/support/legal/sla/cosmos-db/v1_1/">Azure Cosmos DB SLA 페이지를</a> 읽어 자세히 알아보세요.</li>
+   <li><strong>Azure Cosmos DB Table API의 일반 공급: Table API</strong>의 일반 공급에 대해 발표하게 되어 기쁩니다. Azure Cosmos DB <a href="https://docs.microsoft.com/azure/cosmos-db/table-introduction">Table API</a>를 사용하여 Azure Table Storage용으로 작성된 애플리케이션은 이제 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/distribute-data-globally">턴키 글로벌 배포</a>, <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/introduction">짧은 대기 시간 읽기/쓰기</a>, <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/indexing-policies">자동 보조 인덱싱</a>, <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/request-units">전용 처리량</a> 등 Azure Cosmos DB의 프리미엄 기능을 활용할 수 있습니다. <a href="https://aka.ms/Tableapiblog">이에 대한 자세한 내용은 여기 블로그를 참조하세요</a>.</li>
+   <li><strong>Azure Cosmos DB Gremlin API의 일반 공급</strong>: 2017년 말에 제공될 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/gremlin-support">Azure Cosmos DB Gremlin(Graph API)</a>의 일반 공급도 미리 발표하게 되어 기쁩니다. 이 업데이트는 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/graph-introduction">그래프 작업의 성능</a> 향상, 새 도구를 통한 향상된 가져오기 및 백업 시나리오, Python 클라이언트 지원을 포함하여 <a href="https://tinkerpop.apache.org/providers.html">Apache Tinkerpop</a>에서 권장하는 오픈 소스 프레임워크에 대한 향상된 지원을 제공합니다. GA를 사용하면 TitanDB, Neo4j 등과 같은 인기 있는 데이터베이스 엔진에서의 마이그레이션도 간소화할 것입니다. <a href="https://aka.ms/GraphAPIBlog">여기에서 자세히 알아보세요</a>.</li>
+   <li><strong>Azure Cosmos DB for MongoDB API 확장 기능</strong>: 오늘 Azure Cosmos DB 개발자가 Azure Cosmos DB for MongoDB API를 사용하여 단일 쿼리 내에서도 다단계 파이프라인에서 데이터 조작을 수행할 수 있도록 하는 고유한 인덱스 및 집계 <a href="https://aka.ms/cosmosdb-aggpipeline">파이프라인</a> 지원의 공개 미리 보기를 발표하게 되어 기쁘게 생각합니다. 이제 고유 인덱스 기능이 일반 공급되며 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/indexing-policies">Azure Cosmos DB에서 이미 자동 인덱싱된</a> 모든 문서 필드에 고유성 제약 조건을 도입할 수 있습니다. 이제 Azure Cosmos DB는 MongoDB 3.4 유선 프로토콜을 구현하여 이를 사용하는 도구 및 애플리케이션을 사용할 수 있습니다. <a href="https://aka.ms/MongoDBAPIblog">여기에서 자세히 알아보세요</a>.</li>
+   <li><strong>Azure Cosmos DB Spark 커넥터의 일반 공급</strong>: 전역적으로 분산된 운영 데이터를 통해 Spark를 실행하려는 고객을 위해 오늘 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/spark-connector">Azure Cosmos DB용 Spark 커넥터</a>의 일반 공급이 발표됩니다. Azure Cosmos DB용 Spark 커넥터를 사용하면 Apache Spark에 연결하여 Azure Cosmos DB에서 전 세계적으로 분산된 데이터를 실시간 데이터 과학, 기계 학습, 고급 분석 및 탐색할 수 있습니다. 커넥터는 네이티브 Azure Cosmos DB 관리형 인덱스를 효율적으로 활용하고 분석을 수행할 때 업데이트 가능한 열을 사용하도록 설정합니다.&nbsp; 또한 다양한 <a href="https://github.com/Azure/azure-cosmosdb-spark/wiki">IoT, 데이터 과학 및 분석 시나리오</a> 집합을 해결하는 빠르게 변화하는 글로벌 분산 데이터에 대한 푸시다운 조건자 필터링을 활용합니다. Azure Cosmos DB <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/change-feed">변경 피드</a>를 사용하는 Spark 구조화된 스트림 지원, 쿼리 성능 향상 및 최신 Spark 버전에 대한 지원도 포함됩니다. <a href="https://aka.ms/SparkAPIBlog">자세한 내용은 여기를 참조하세요</a>.</li>
+  </ul>
+
+
+  <p>Azure Cosmos DB를 <a href="https://azure.microsoft.com/en-us/blog/azure-cosmos-db-microsofts-globally-distributed-multi-model-database-service/">사용하면 전 세계&rsquo; 개발자가 놀랍도록 강력하고 우주 규모가 큰 앱을 더 쉽게 빌드할 수 있도록</a> 하는 것이 우리의 임무입니다. &rsquo;매일 Azure Cosmos DB를 사용하여 빌드되는 모든 애플리케이션을 확인하게 되어 기쁩니다. 앱은 제품(추가할 기능, 지원할 API 및 다른 제품 및 서비스와 통합하는 방법)을 정의하는 데 도움을 줍니다. 모든 것이 데이터베이스 서비스를 더욱 향상시킵니다. Azure Cosmos DB는 이미 전자 상거래, 은행, 자동차 산업, 전문 서비스, 기술 회사 및 제조업체, 신생 기업, 교육 및 건강 솔루션을 지원합니다. 전 세계 어디에서나 사용됩니다. Microsoft 내에서 광범위하게 사용한 후 외부 고객과 개발자가 Azure Cosmos DB &ndash; 를 정말 사랑하고 있다는 사실에 흥분하고 겸손해집니다. 수천 명의 개발자가 Azure Cosmos DB를 수용하도록 이끄는 혁명은 이제 막 시작되었으며 제품 기능보다 훨씬 더 깊은 무언가를 기반으로 합니다. 개발자가 최신 애플리케이션을 빌드하는 방법을 크게 개선할 수 있는 제품을 빌드하려면 개발자와 개발자에 대한 사려 깊은 태도, 장인정신 및 공감이 필요합니다. 우리는 우리 자신이 개발자이기 때문에 동료 개발자가 Azure Cosmos DB로 빌드할 것을 매우 기쁘게 생각합니다. 이제 막 시작됩니다.&hellip;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&mdash;Azure Cosmos DB(<a href="https://twitter.com/AzureCosmosDB">@AzureCosmosDB</a><a href="https://twitter.com/search?q=%23CosmosDB&amp;src=typd">#CosmosDB</a>)의 친구</p>

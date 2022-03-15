@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b913ca6ea35ecbf803b962c866713848052e4342
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902236"
+Slug: azure-site-recovery-is-now-available-in-central-us-north-central-us-south-central-us-east-us2
+Title: Azure Site Recovery는 이제 미국 중부, 미국 중북부, 미국 중남부, 미국 동부 2에서 사용할 수 있습니다.
+Summary: ASR(Azure Site Recovery)은 지속적인 고객 수요에 맞게 미국의 모든 비정부 지역으로 확장되었습니다.
+Content: >-
+  ASR(Azure Site Recovery)의 가용성을 미국의 모든 비정부 지역으로 확장했다고 발표하게 되어 기쁩니다.
+
+
+  고객의 지속적인 수요를 수용하기 위해 대부분의 Azure 지역을 커버하기 위해 전 세계에서 지속적으로 서비스를 성장시켜 왔습니다. 이 확장을 통해 Azure Site Recovery는 이제 전 세계 17개 지역(오스트레일리아 동부, 오스트레일리아 남동부, 브라질 남부, <strong>미국 중부</strong>, 동아시아, 미국 동부, 미국 <strong>동부 2</strong>, 일본 동부, 일본 서부, 북유럽, <strong>미국 중북부</strong>, 동남 아시아,<strong> 미국 중남부</strong>, 서유럽, 미국 서부, 중국 동부, 중국 동부)에서 사용할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/08/18/ASR_Region_Availibility.png"><img class="aligncenter size-medium wp-image-331634" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ASR_Region_Availibility-636x318.png" alt="ASR Regions" width="636" height="318" /></a>
+
+
+  이제 고객은 위의 지역을 선택하여 ASR을 배포할 수 있습니다. 배포하도록 선택한 지역에 관계없이 ASR은 ASR<a href="https://aka.ms/asr_sla" target="_blank"> SLA</a>에 명시된 것과 동일한 안정성 및 성능 수준을 보장합니다.
+
+
+  Azure Site Recovery에 대한 자세한 내용은 <a href="https://aka.ms/asrazureupdateblog_asrlandingpage" target="_blank">Azure Site Recovery 시작</a> 참조
+
+
+  서비스의 지역 가용성에 대한 자세한 내용은 <a href="https://aka.ms/asr_regions" target="_blank">Azure 지역</a> 페이지를 참조하세요.

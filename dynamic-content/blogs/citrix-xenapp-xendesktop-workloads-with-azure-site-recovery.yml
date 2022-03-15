@@ -1,0 +1,53 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 23258ba4144402dd622da8dede78a93c1eaac6da
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901734"
+Slug: citrix-xenapp-xendesktop-workloads-with-azure-site-recovery
+Title: Azure Site Recovery를 사용하여 Citrix XenDesktop 및 XenApp의 보호 및 복구
+Summary: Azure ASR(Site Recovery)을 사용하여 Azure에서 Citrix XenDesktop 및 XenApp 환경의 보호 및 복구에 대한 지원을 발표하게 되어 기쁩니다.
+Content: >-
+  <p>AZURE ASR(Site Recovery)을 사용하여 Azure에서 <strong>Citrix XenDesktop 및 XenApp 환경</strong> 의 보호 및 복구에 대한 지원을 발표하게 되어 기쁩니다.&nbsp; Microsoft는 Citrix와 긴밀히 협력하여 ASR을 활용하여 VMware/Hyper-V에서 실행되는 온-프레미스 XenDesktop 및 XenApp 환경의 Azure로 복구하기 위한 <strong>강력한 엔터프라이즈급 DR 솔루션을</strong> 빌드하기 위한 지침을 제공하고 있습니다.</p>
+
+
+  <p>ASR을 사용하면 다음을 포함하여 온-프레미스 XenDesktop 및 XenApp 환경에서 필수 구성 요소를 보호하고 복구할 수 있습니다.</p>
+
+
+  <ul>
+      <li><em>Citrix 배달 컨트롤러 </em></li>
+      <li><em>StoreFront Server</em></li>
+      <li><em>XenApp 마스터 VDA(가상 배달 에이전트) </em></li>
+      <li><em>XenApp 라이선스 서버 </em></li>
+      <li><em>AD DNS 서버 </em></li>
+      <li><em>SQL Database Server</em></li>
+  </ul>
+
+
+  <p>또한 ASR은 다음을 수행할 수 있는 기능을 제공합니다.</p>
+
+
+  <ul>
+      <li>애플리케이션 일치 시점으로 복구합니다. 이는 다중 계층 Citrix VDI 환경을 애플리케이션 일치 상태로 복구하는 데 유용합니다.</li>
+      <li>유연한 복구 계획을 사용하여 장애 조치(failover)해야 하는 컴퓨터를 그룹화하고, 자동화 스크립트를 추가하고, 장애 조치(failover)에서 실행할 수동 작업을 그룹화하여 복구 순서를 사용자 지정합니다.</li>
+      <li>진행 중인 복제 또는 프로덕션 환경의 성능에 영향을 주지 않고 Citrix VDI 팜의 장애 조치(failover)를 Azure로 테스트할 수 있는 무중단 복구 테스트를 수행합니다.</li>
+  </ul>
+
+
+  <p>다음 사항에 유의하세요.</p>
+
+
+  <ul>
+      <li>서버 OS 컴퓨터를 사용하여 XenApp 게시 앱 및 XenApp 게시 데스크톱을 전달하는 온-프레미스 배포의 보호 및 복구는 지원됩니다.</li>
+      <li>데스크톱 OS 컴퓨터를 사용하여 클라이언트 가상 데스크톱용 Desktop VDI(Windows 10 포함)를 전달하는 온-프레미스 배포의 보호 및 복구는 지원되지 않습니다. ASR은 데스크톱 OS&rsquo;를 사용하는 컴퓨터의 복구를 지원하지 않기 때문입니다.&nbsp; 또한 일부 클라이언트 가상 데스크톱 맛(예: Windows 7)는 Azure에서 아직 라이선스가 지원되지 않습니다. Azure에서 <a href="https://azure.microsoft.com/en-us/pricing/licensing-faq/">클라이언트/서버 데스크톱의 라이선스</a> 에 대해 자세히 알아봅니다.</li>
+  </ul>
+
+
+  <p>ASR을 사용하여 재해 복구 솔루션을 빌드하기 위한 자세한 단계별 지침은 Citrix와의 긴밀한 공동 작업에서 설명되었습니다. 동일한 내용을 자세히 설명하는 Citrix의 <strong><a href="https://aka.ms/citrix-xenapp-xendesktop-with-asr">백서를</a> </strong>다운로드할 수 있습니다.</p>
+
+
+  <p>ASR 사용을 시작할 준비가 되셨나요? 오늘 Azure Site Recovery를 사용하여 워크로드를 Microsoft Azure 복제를 시작하려면 <a href="https://aka.ms/asr_vmware_to_azure_enhanced_landingpage">추가 제품 정보를 확인</a>하세요. 복제하는 모든 새 물리적 서버 또는 가상 머신에 대해 31일 동안 Site Recovery의 강력한 복제 기능을 무료로 사용할 수 있습니다.</p>
+
+
+  <p>Microsoft Operations Management Suite의 일부인 Azure Site Recovery를 사용하면 비용 효율적인 올인원 클라우드 IT 관리 솔루션으로 워크로드가 실행되는 위치(Azure, AWS, Windows Server, Linux, VMware 또는 OpenStack)를 제어하고 관리할 수 있습니다. 기존 System Center 고객은 Microsoft Operations Management Suite 추가 기능을 활용하여 현재 투자를 활용하여 더 많은 작업을 수행할 수 있습니다. 모든 기존 System Center 고객에게 편리한 스텝업 가격으로 OMS에서 제공하는 모든 새 서비스에 액세스할 수 있습니다. 또한 필요한 IT 관리 서비스만 액세스할 수 있으므로 사용하는 기능에 대해서만 비용을 지불하여 신속하게 온보딩하고 즉시 가치를 가질 수 있습니다.</p>

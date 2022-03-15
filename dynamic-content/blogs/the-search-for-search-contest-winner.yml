@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 02b3273b5744628f8f9d64896a25896e0726919b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907579"
+Slug: the-search-for-search-contest-winner
+Title: 검색 콘테스트 우승자 검색
+Summary: '작년 말, 우리는 독자들에게 도전했습니다: Azure Search의 기능을 사용하여 멋진 것을 빌드합니다. 우리는 결과가 들어오는 것을 보는 것을 좋아했습니다. 우승자를 발표하게 되어 기쁩니다!'
+Content: >-
+  <p align="center"><img alt="-Search4SearchWinner-banner@2x" border="0" height="214" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7554aa1-15e2-4c6a-8e25-c45a9fbfd042.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="-Search4SearchWinner-banner@2x" width="610"></p>
+
+
+  <p align="center"><strong>&ldquo;저는 클라우드를 좋아합니다. Azure PaaS 제품을 사용하면 인프라를 빌드하고 유지 관리하는 복잡성 없이 애플리케이션을 개발, 실행 및 관리할 수 있습니다.&rdquo; </strong>&nbsp;</p>
+
+
+  <p>작년 말, 우리는 독자들에게 <a href="https://azure.microsoft.com/en-us/blog/azure-search-search-for-search-contest/" target="_blank">도전</a> 했습니다: <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a> 의 기능을 사용하여 멋진 것을 빌드합니다. 우리는 결과가 들어오는 것을 보는 것을 좋아했습니다. 우리는 첫 번째 #SearchForSearch 대회의 우승자가 브리즈번 호주의 로버트 치우임을 발표하게되어 기쁩니다.</p>
+
+
+  <p>Robert는 주로 백 엔드 개발자로 일하고 있으며, 현재 호주에서 여러 복권 웹 사이트를 지원하고 관리하는 디지털 복권 팀의 일원입니다. Robert는 자기 설명 가능한 할 수있는 사람이며 UI 경험이 부족한 것을 방해보다 더 많은 도전으로 보았습니다. 그의 말에 따르면, &ldquo;새로운 영토에서 일하는 것은 실습 접근 방식과 많은 시행 착오를 포함합니다. 나는 우리가 더 많은 시도 (또는 실패) 우리가 될 더 나은 믿습니다, 물론 주어진 시간 프레임과 예산 내에서.&rdquo;</p>
+
+
+  <p>로버트가 이 과제를 해결했을 때, 가스 가격은 여전히 상대적으로 높았습니다. 가격은 몇 도시 블록 내에서 크게 다를 수 있으며 가격 변동은 갑작스럽고 예측할 수 없습니다. 그의 주요 불만은 가솔린 가격이 매우 복잡하고 불투명하다는 것이었고 &ldquo;, 운전자는 종종 연료에 대한 최상의 거래를 얻는 데 필요한 정보를 가지고 있지&#39;.&rdquo; 이 데이터를 쉽고 편리한 방식으로 액세스할 수 있도록 하는 것이 이 문제를 해결하는 가장 좋은 방법입니다.<img alt="-Search4SearchWinner-gasprices@2x" border="0" height="258" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b86f067d-9b91-44dd-8bf3-0c80bc5b52d1.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="-Search4SearchWinner-gasprices@2x" width="610"></p>
+
+
+  <p>전국 주유소를 매핑하는 것은 엄청난 노력이며 개인이 수동으로 수행하는 것은 거의 불가능합니다. 로버트는 처음부터 이를 알고 가스 가격 데이터를 크라우드 소싱할 수 있는 플랫폼을 만들기로 결정했습니다. 크라우드소싱은 풀오프하기 어렵습니다. 모든 크라우드 소싱 데이터 세트는 중요하게 많은 기여자가 가치 있고 자립적이 되도록 요구하지만, 기여는 값이 설정된 경우에만 쏟아지기 시작합니다. Azure의 도움으로 Robert는 기술적 세부 사항을 제쳐두고 현재 닭고기/계란 문제에 집중할 수 있었습니다.</p>
+
+
+  <p>Robert는 사용자가 호주 전역에서 가격 및 스테이션 데이터를 기여할 수 있도록 <a href="https://azure.microsoft.com/en-us/services/app-service/web/" target="_blank">Azure Web App</a> 에서 제공하는 업로드 페이지를 작성했습니다. 이 업로드 페이지는 항목을 주 저장소로 사용했던 <a href="https://azure.microsoft.com/en-us/services/documentdb/" target="_blank">DocumentDB</a> 데이터베이스에 직접 커밋했습니다. 또한 DocumentDB의 변경 내용을 감지하고 자동으로 검색할 수 있도록 Azure Search <a href="https://msdn.microsoft.com/en-us/library/azure/dn946891.aspx" target="_blank">인덱서를</a> 구성했습니다. 세 가지 서비스를 통해 Robert는 쉽게 유지 관리가 가능한 크라우드소싱 플랫폼을 설정하여 사용자가 서로 공유함으로써 실질적인 무언가를 만들 수 있도록 했습니다.</p>
+
+
+  <p><img alt="-Search4SearchWinner-datapipeline@2x" border="0" height="258" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c5fb3b83-93ec-471c-b6ed-5757a43392c5.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="-Search4SearchWinner-datapipeline@2x" width="610"></p>
+
+
+  <p>그러나 데이터를 갖는 것만으로는 충분하지 않으므로&rsquo; 사용하기 쉬운 방식으로 제시되어야 합니다. &rsquo;당신이 차에 거의 가스에서 찢어 때, 당신은 검색을 수행하기 위해 복잡한 양식을 작성할 시간이 없습니다&rsquo;. Robert는 사용자의 위치를 감지하고 가까운 가격을 바로 제공하는 아름답게 간단한 Google 지도 검색 인터페이스를 만들었습니다. 이 위치 기반 검색을 수행하기 위해 지리 공간적 데이터에 대한 Azure Search&rsquo; 기본 <a href="https://azure.microsoft.com/en-us/documentation/videos/azure-search-and-geospatial-data/" target="_blank">제공 지원을</a> 사용하여 다각형 또는 거리 쿼리를 실행합니다.</p>
+
+
+  <p><img alt="mapviewcropped" border="0" height="313" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92a11aae-1820-4c72-a58d-14405510904b.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="mapviewcropped" width="610"></p>
+
+
+  <p>그리고 당신은&rsquo; 도로의 측면에 당신과 함께 노트북을 가질 가능성이 없기 때문에, 로버트뿐만 아니라 부드러운 모바일 경험을 가지고 있는지 확인했다. 모바일 친화적인 웹앱은 단일 코드베이스를 유지 관리하는 데 큰 장점이 있으며 하나의 언어만 유지 관리합니다. 이것은 각도 및 트위터 부트스트랩을 사용하여 수행되었습니다.</p>
+
+
+  <p><img alt="-Search4SearchWinner-devices@2x" border="0" height="258" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/024c7525-ba6b-4926-a32e-c8d3acbc7bf9.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="-Search4SearchWinner-devices@2x" width="610"></p>
+
+
+  <p>Robert는 또한 고급 검색 인터페이스가 필요하다는 것을 알았습니다. 당신이&rsquo; 진정으로 정통한 쇼핑객을 좋아하는 경우, 당신은 절대 가장 저렴한 가스를 얻기 위해 여행을 계획 할 수 있습니다, 또는 당신은 단지 당신의 지역에서 동향을 검색 할 수 있습니다. 아래의 고급 검색 인터페이스를 사용하면 주, 교외 및 연료 공급업체에 따라 데이터를 <a href="https://azure.microsoft.com/en-us/documentation/articles/search-faceted-navigation/" target="_blank">조각화하고 필터링</a> 할 수 있습니다. Azure Search를 사용하여 이러한 종류의 패싯 및 필터링을 구성하는 것은 확인란을 확인하는 것만큼 쉽습니다.</p>
+
+
+  <p><img alt="advanceviewcropped" border="0" height="363" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/22f31e4a-a31d-4926-83c9-cdc079e56573.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="advanceviewcropped" width="610"></p>
+
+
+  <p>로버트는 자신의 삶에 영향을 주는 문제를 발견하고 그것을 해결하기로 결정했습니다. Search, DocumentDB 및 Web Apps와 같은 Azure 서비스의 도움으로 그는 프로토 타입을 한 번에 빌드할 수 있었습니다. 그러나 나는 로버트가 가장 잘 말한다 생각합니다 :</p>
+
+
+  <p align="center"><strong>&ldquo;저는 클라우드를 좋아합니다. Azure PaaS 제품을 사용하면 인프라를 빌드하고 유지 관리하는 복잡성 없이 애플리케이션을 개발, 실행 및 관리할 수 있습니다.&rdquo; </strong></p>
+
+
+  <p>앞으로 Robert는 IoT를 이 프로젝트의 다음 큰 단계로 보고 있습니다. &ldquo;데이터의 정확성과 무결성을 유지하기 위해 원본에서 가져와야 했습니다. 이 데이터를 최신 상태로 유지하는 것은 호주의 5,000개 이상의 스테이션과 스테이션&rsquo; 가격 보드와의 IoT 통합이 실제로 도움이 될 수 있는 과제입니다.&rdquo;</p>
+
+
+  <p>다시 한번 우리는 로버트와 다른 모든 참가자들에게 감사드리고 싶습니다, 당신이 모두 Azure의 힘으로 구축 한 것을 보는 것은 놀랍습니다.</p>

@@ -1,0 +1,95 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 966b849b34655fe0bcc3020645ad43ff27cc6cef
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908602"
+Slug: azure-sql-data-warehouse-reserved-capacity-and-software-plans-now-generally-available
+Title: 이제 Azure SQL Data Warehouse 예약된 용량 및 소프트웨어 계획을 일반 공급
+Summary: Azure 비용을 최적화하는 더 많은 방법을 공유하게 되어 기쁩니다. 현재 RedHat Enterprise Linux 및 SUSE에 대한 Azure SQL Data Warehouse 예약 용량 및 소프트웨어 계획의 일반 공급이 출시되었습니다.
+Content: >-
+  <p>&rsquo;Azure 비용을 최적화하는 더 많은 방법을 공유하게 되어 매우 기쁩니다. 현재 RedHat Enterprise Linux 및 SUSE에 대한 Azure SQL Data Warehouse 예약 용량 및 소프트웨어 계획의 일반 공급이 출시되었습니다.</p>
+
+
+  <h2>Azure SQL Data Warehouse 워크로드에 최대 65% 절감</h2>
+
+
+  <p>오늘부터 Azure SQL Data Warehouse에 대한 예약된 용량을 구매하고 종량제 요금보다 최대 65% 할인받을 수 있습니다. 1년 또는 3년 전 커밋 옵션 중에서 선택합니다.</p>
+
+
+  <p>예약된 용량은 100 cDWU 단위로 구매됩니다. 동일한 지역의 여러 웨어하우스는 단일 예약 용량 풀을 사용할 수 있습니다. 서비스의 완전 탄력적 속성은 그대로 유지되며 예약된 용량을 초과하는 작업은 종량제 가격을 사용하여 요금이 청구됩니다. 언제나처럼 스토리지는 컴퓨팅과 별도로 청구되며 예약된 용량을 구매할 때 별도로 요금이 계속 청구됩니다.</p>
+
+
+  <h3>교환 및 환불을 통해 유연성 더 높아집니다.</h3>
+
+
+  <p>Weve&rsquo;를 사용하면 <a href="https://docs.microsoft.com/azure/billing/billing-azure-reservations-self-service-exchange-and-refund" target="_blank">예약된 용량</a> 을 쉽게 교환하고 지역 또는 용어와 같은 다른 변경을 수행할 수 있습니다. 언제든지 예약된 용량을 취소하고 환불을 받을 수도 있습니다(약관 적용).</p>
+
+
+  <h3>다음 단계</h3>
+
+
+  <ul>
+   <li>Azure SQL Data Warehouse <a href="https://azure.microsoft.com/pricing/details/sql-data-warehouse/gen2/" target="_blank">가격 책정</a>에 대해 자세히 알아보려면 가격 책정 페이지를 방문하세요.</li>
+   <li><a href="https://portal.azure.com/#blade/Microsoft_Azure_Reservations/CreateBlade" target="_blank">Azure</a> Portal에서 SQL Data Warehouse 예약 용량을 구매하거나 <a href="https://docs.microsoft.com/en-us/azure/billing/billing-prepay-sql-data-warehouse-charges-with-reserved-capacity" target="_blank">구매에 대한 자세한 내용을 읽어보세요</a>.</li>
+  </ul>
+
+
+  <h2>RedHat Enterprise Linux 비용을 최대 18% 절감</h2>
+
+
+  <p>이제 RedHat Enterprise Linux에 대한 플랜을 구매하고 최대 18%를 절약할 수 있습니다. 플랜은 Red Hat Enterprise Linux VM(가상 머신)에만 사용할 수 있으며, RedHat Enterprise Linux SAP HANA VM 또는 RedHat Enterprise Linux SAP Business Apps VM에는 할인이 적용되지 않습니다.</p>
+
+
+  <p>RedHat 플랜 할인은 구매할 때 선택한 VM 크기에만 적용됩니다. RHEL 플랜은 구매 후 환불하거나 교환할 수&rsquo; 있습니다.</p>
+
+
+  <h3>다음 단계</h3>
+
+
+  <p><a href="https://portal.azure.com/#blade/Microsoft_Azure_Reservations/CreateBlade" target="_blank">Azure</a> Portal을 통해 RHEL 플랜을 구입하거나 설명서인 &ldquo;<a href="https://go.microsoft.com/fwlink/?linkid=2087413" target="_blank">Azure 소프트웨어 요금제 선불을 참조하세요</a>.&rdquo;</p>
+
+
+  <h2>SUSE Linux 비용을 최대 64% 절감</h2>
+
+
+  <p>SUSE 계획을 사용하면 SUSE 소프트웨어 비용을 최대 64% 절감할 수 있습니다. SUSE 계획은 자동 맞춤 혜택을 얻을 수 있으므로 SUSE VM 크기를 강화하거나 축소할 수 있으며 예약이 계속 적용됩니다. SUSE 계획은 다음 SUSE 이미지에 사용할 수 있습니다.</p>
+
+
+  <ul>
+   <li>SUSE Linux Enterprise Server for SAP 우선 순위</li>
+   <li>SUSE Linux Enterprise Server for HPC 우선 순위</li>
+   <li>SUSE Linux Enterprise Server for HPC Standard</li>
+   <li>SUSE Linux Enterprise Server Standard</li>
+  </ul>
+
+
+  <p>SUSE 플랜은 구매 후 환불 또는 교환할 수&rsquo; 없는 경우</p>
+
+
+  <h3>다음 단계</h3>
+
+
+  <p>Azure Portal을 통해 SUSE 플랜을 구입하거나 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Reservations/CreateBlade" target="_blank">Azure</a> <a href="https://go.microsoft.com/fwlink/?LinkId=873468" target="_blank">Reservations에서 SUSE 소프트웨어 요금제에 대한 선불</a> 설명서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <h2>예약 및 소프트웨어 요금제 구매를 위한 새로운 환경 및 API</h2>
+
+
+  <p>Were&rsquo;는 또한 예약 및 소프트웨어 플랜을 구매하는 새로운 환경을 시작하게 되어 기쁩니다. 이제 카트에 여러 제품을 추가하고 함께 구입할 수 있습니다. 또한 이 환경에서는 지난 30일 동안 일관된 사용량이 있는 VM 크기에 대한 구매 권장 사항을 보여 주며, 적절한 VM 크기를 선택하는 데 도움이 됩니다.</p>
+
+
+  <p>카트의 각 제품은 별도의 트랜잭션으로 처리됩니다. 한 번의 구매에 실패하면 카트의 다른 제품은 영향을 받지 않으며 계속 구매됩니다.</p>
+
+
+  <h2><img alt="New purchase experience" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/NewUISmall.gif" style="width: 728px; height: 450px; margin-right: auto; margin-left: auto; float: none; display: block;"></h2>
+
+
+  <p>이제 REST API를 사용하여 Azure 예약 및 소프트웨어 플랜을 구매할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/rest/api/reserved-vm-instances/reservationorder/purchase" target="_blank">예약 API 설명서를</a> 참조하세요.</p>
+
+
+  <h2>기업계약 관리자만 예약을 구매할 수 있도록 설정</h2>
+
+
+  <p>이 새로운 기능을 사용하면 조직에서 모든 구독 소유자가 예약을 구매하도록 허용하는 대신 예약 구매를 중앙 집중화할 수 있습니다. EA(기업계약) 등록에서 <strong>예약 인스턴스 추가</strong> 설정을 사용하지 않도록 설정하면 하나 이상의 Azure 구독 소유자인 EA 관리자만 예약을 구매할 수 있습니다. 예약을 구매하고 소유자 액세스 권한이 없는&rsquo; 구독으로 예약 할인 범위를 지정하려는 경우 해당 구독에 대한 소유자 액세스 권한이 있는 사용자를 예약에 추가합니다. 그러면 사용자가 예약 범위를 업데이트할 수 있습니다.</p>

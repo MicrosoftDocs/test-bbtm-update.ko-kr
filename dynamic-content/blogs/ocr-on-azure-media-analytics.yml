@@ -1,0 +1,316 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3ad82e7cf4c8e267700a89eef360d9d5a79d9841
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900986"
+Slug: ocr-on-azure-media-analytics
+Title: Azure Media Analytics에서 비디오 OCR 프라이빗 미리 보기 발표
+Summary: 지난 몇 년 동안 Azure Media Services Microsoft Research의 팀과 협력하여 Microsoft의 가장 놀라운 미디어 기술을 제작해 왔습니다.
+Content: >-
+  <p><i><strong>참고:</strong> 다음 블로그 게시물에서는 Azure Media Analytics의 구성 요소에 대해 설명합니다. 자세한 내용을 알아보고 시작하는 방법을 알아보려면 <a href="https://azure.microsoft.com/en-us/blog/introducing-azure-media-analytics" target="_blank">Azure Media Analytics의 소개 블로그 게시물을</a> 참조하세요.</i></p>
+
+
+  <p><em>비디오 OCR은 이제 공개 미리 보기로 제공됩니다. &nbsp;자세한 내용은 후속 블로그를 참조 <a href="https://azure.microsoft.com/en-us/blog/announcing-video-ocr-public-preview-new-config/">하세요</a>.</em></p>
+
+
+  <h2>비디오 OCR</h2>
+
+
+  <p>OCR(광학 문자 인식)은 <em>시각적</em> 텍스트를 비디오에서 편집 가능하고 검색 가능한 <em>디지털</em> 텍스트로 변환하는 것입니다. Video OCR은 비디오 파일에서 텍스트 콘텐츠를 검색하고 사용할 텍스트 파일을 생성합니다.&nbsp; 이렇게 하면 미디어의 비디오 신호에서 의미 있는 메타데이터의 추출을 자동화할 수 있습니다.&nbsp;</p>
+
+
+  <p>검색 엔진과 함께 사용하면 미디어를 텍스트로 쉽게 인덱싱하고 콘텐츠 검색 기능을 향상시킬 수 있습니다.&nbsp; 이는 비디오 녹화 또는 슬라이드 쇼 프레젠테이션의 화면 캡처와 같은 매우 텍스트가 많은 비디오에서 매우 유용합니다. Azure OCR 미디어 프로세서는 디지털 텍스트에 최적화되어 있습니다.</p>
+
+
+  <p>오늘 Azure Media Analytics의 일부로 프라이빗 미리 보기용 Azure OCR 미디어 프로세서를 발표하게 된 것을 자랑스럽게 생각합니다.</p>
+
+
+  <h3>Oceaneering의 샘플 비디오</h3>
+
+
+  <p>엔지니어링 회사인 Oceaneering은 잠수함 석유 및 가스 운영을 정기적으로 조사하고 매핑합니다.&nbsp; 따라서 GPS 좌표, 깊이 및 기타 의미 있는 태그와 &ldquo;같이 비디오 스트림에 번 인 오버레이된&rdquo; 대량의 비디오 데이터가 있는 경우가 많습니다.&nbsp; 대규모 비디오 라이브러리를 효율적으로 인덱싱하고 구성하기 위해 Oceaneering 엔지니어는 텍스트 오버레이를 추출하려고 하며, Azure Media OCR은 엔터프라이즈 규모로 클라우드에서 대규모 비디오 콘텐츠를 처리할 수 있는 기능을 제공합니다.</p>
+
+
+  <p>&rsquo;Oceaneering의 실제 샘플 비디오를 살펴보겠습니다.</p>
+
+
+  <p><iframe align="center" allowfullscreen="" frameborder="no" height="280" name="azuremediaplayer" scrolling="no" src="//aka.ms/ampembed?url=https%3A%2F%2Fmanlingtest-samplescdn.streaming.mediaservices.windows.net%2F39ff7ef5-3e07-4e5a-acef-95e953998b7d%2FRiser%2520Inspection.ism%2Fmanifest&amp;autoplay=false" width="500"></iframe></p>
+
+
+  <p>특히 텍스트는 비디오 프레임의 위쪽 부분에 오버레이됩니다.&nbsp; 이 섹션은 비디오 및 해당 콘텐츠에 대한 중요한 데이터 태그 지정 및 레이블 지정으로 구성됩니다.&nbsp; Azure Media OCR 미디어 프로세서를 사용하여 이 비디오 파일에서 이 텍스트 기반 정보를 추출할 수 있습니다.&nbsp; 전체 XML 출력을 다운로드하거나 위의 샘플 비디오의 첫 번째 프레임(타임스탬프 0:00)에 대한 기본 설정에서 생성된 아래 잘린 결과를 볼 수 있습니다.</p>
+
+
+  <h4>잘린 출력</h4>
+
+
+  <pre class="prettyprint">
+      &lt;FrameTextData time=&quot;0.00&quot;&gt;
+        &lt;TextRegion left=&quot;15&quot; top=&quot;4&quot; width=&quot;705&quot; height=&quot;50&quot;&gt;
+          &lt;TextData&gt;  MD-13  Mad Dog  cp -148&lt;/TextData&gt;
+          &lt;TextLine left=&quot;15&quot; top=&quot;4&quot; width=&quot;51&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; MD-13&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;15&quot; top=&quot;4&quot; width=&quot;51&quot; height=&quot;13&quot; confidence=&quot;464&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;MD-13&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+          &lt;TextLine left=&quot;15&quot; top=&quot;38&quot; width=&quot;68&quot; height=&quot;16&quot;&gt;
+            &lt;TextData&gt; Mad Dog&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;15&quot; top=&quot;38&quot; width=&quot;30&quot; height=&quot;14&quot; confidence=&quot;494&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;Mad&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+            &lt;TextBlob left=&quot;53&quot; top=&quot;38&quot; width=&quot;30&quot; height=&quot;16&quot; confidence=&quot;698&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;Dog&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+          &lt;TextLine left=&quot;659&quot; top=&quot;38&quot; width=&quot;61&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; cp -148&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;659&quot; top=&quot;38&quot; width=&quot;19&quot; height=&quot;13&quot; confidence=&quot;424&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;cp&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+            &lt;TextBlob left=&quot;685&quot; top=&quot;38&quot; width=&quot;35&quot; height=&quot;13&quot; confidence=&quot;603&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;-148&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+        &lt;/TextRegion&gt;
+        &lt;TextRegion left=&quot;332&quot; top=&quot;4&quot; width=&quot;54&quot; height=&quot;47&quot;&gt;
+          &lt;TextData&gt;  Drilling  33&lt;/TextData&gt;
+          &lt;TextLine left=&quot;332&quot; top=&quot;4&quot; width=&quot;54&quot; height=&quot;16&quot;&gt;
+            &lt;TextData&gt; Drilling&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;332&quot; top=&quot;4&quot; width=&quot;54&quot; height=&quot;16&quot; confidence=&quot;594&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;Drilling&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+          &lt;TextLine left=&quot;333&quot; top=&quot;38&quot; width=&quot;18&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; 33&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;333&quot; top=&quot;38&quot; width=&quot;18&quot; height=&quot;13&quot; confidence=&quot;355&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;33&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+        &lt;/TextRegion&gt;
+        &lt;TextRegion left=&quot;394&quot; top=&quot;4&quot; width=&quot;38&quot; height=&quot;13&quot;&gt;
+          &lt;TextData&gt;  Riser&lt;/TextData&gt;
+          &lt;TextLine left=&quot;394&quot; top=&quot;4&quot; width=&quot;38&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; Riser&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;394&quot; top=&quot;4&quot; width=&quot;38&quot; height=&quot;13&quot; confidence=&quot;606&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;Riser&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+        &lt;/TextRegion&gt;
+        &lt;TextRegion left=&quot;885&quot; top=&quot;4&quot; width=&quot;83&quot; height=&quot;47&quot;&gt;
+          &lt;TextData&gt;  8/12/2012  59&lt;/TextData&gt;
+          &lt;TextLine left=&quot;885&quot; top=&quot;4&quot; width=&quot;83&quot; height=&quot;15&quot;&gt;
+            &lt;TextData&gt; 8/12/2012&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;885&quot; top=&quot;4&quot; width=&quot;83&quot; height=&quot;15&quot; confidence=&quot;524&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;8/12/2012&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+          &lt;TextLine left=&quot;940&quot; top=&quot;38&quot; width=&quot;18&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; 59&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;940&quot; top=&quot;38&quot; width=&quot;18&quot; height=&quot;13&quot; confidence=&quot;333&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;59&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+        &lt;/TextRegion&gt;
+        &lt;TextRegion left=&quot;1004&quot; top=&quot;4&quot; width=&quot;112&quot; height=&quot;47&quot;&gt;
+          &lt;TextData&gt;  E 2528185.  79  N 9875573.57&lt;/TextData&gt;
+          &lt;TextLine left=&quot;1004&quot; top=&quot;4&quot; width=&quot;88&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; E 2528185.&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;1004&quot; top=&quot;4&quot; width=&quot;8&quot; height=&quot;13&quot; confidence=&quot;562&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;E&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+            &lt;TextBlob left=&quot;1019&quot; top=&quot;4&quot; width=&quot;73&quot; height=&quot;13&quot; confidence=&quot;603&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;2528185.&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+          &lt;TextLine left=&quot;1096&quot; top=&quot;4&quot; width=&quot;17&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; 79&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;1096&quot; top=&quot;4&quot; width=&quot;17&quot; height=&quot;13&quot; confidence=&quot;317&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;79&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+          &lt;TextLine left=&quot;1004&quot; top=&quot;38&quot; width=&quot;112&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; N 9875573.57&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;1004&quot; top=&quot;38&quot; width=&quot;10&quot; height=&quot;13&quot; confidence=&quot;566&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;N&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+            &lt;TextBlob left=&quot;1021&quot; top=&quot;38&quot; width=&quot;95&quot; height=&quot;13&quot; confidence=&quot;669&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;9875573.57&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+        &lt;/TextRegion&gt;
+        &lt;TextRegion left=&quot;1140&quot; top=&quot;4&quot; width=&quot;82&quot; height=&quot;48&quot;&gt;
+          &lt;TextData&gt;  H 2.13  D 2245.90&lt;/TextData&gt;
+          &lt;TextLine left=&quot;1140&quot; top=&quot;4&quot; width=&quot;51&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; H 2.13&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;1140&quot; top=&quot;4&quot; width=&quot;10&quot; height=&quot;13&quot; confidence=&quot;608&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;H&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+            &lt;TextBlob left=&quot;1157&quot; top=&quot;4&quot; width=&quot;34&quot; height=&quot;13&quot; confidence=&quot;608&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;2.13&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+          &lt;TextLine left=&quot;1140&quot; top=&quot;39&quot; width=&quot;82&quot; height=&quot;13&quot;&gt;
+            &lt;TextData&gt; D 2245.90&lt;/TextData&gt;
+            &lt;TextBlob left=&quot;1140&quot; top=&quot;39&quot; width=&quot;11&quot; height=&quot;12&quot; confidence=&quot;536&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;D&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+            &lt;TextBlob left=&quot;1158&quot; top=&quot;39&quot; width=&quot;64&quot; height=&quot;13&quot; confidence=&quot;427&quot; language=&quot;6&quot;&gt;
+              &lt;TextData&gt;2245.90&lt;/TextData&gt;
+            &lt;/TextBlob&gt;
+          &lt;/TextLine&gt;
+        &lt;/TextRegion&gt;
+      &lt;/FrameTextData&gt;
+  </pre>
+
+
+  <p>이 XML 파일을 사용하면 Oceaneering은 처리 후 파이프라인을 통해 이 오버레이 데이터를 전달하는 데 필요한 재정의에 투자하지 않고 멀티미디어의 태그 지정을 자동화할 수 있습니다.&nbsp; 카메라 피드의 오버레이된 위치 데이터를 기반으로 특정 깊이 또는 특정 지리적 부근에서 보기를 나타내는 비디오(또는 비디오 세그먼트)를 쉽게 인덱싱할 수 있습니다.</p>
+
+
+  <h3>샘플 엔터프라이즈 비디오</h3>
+
+
+  <p>그러나 Oceaneering은 Video OCR에 대한 틈새 시나리오를 나타냅니다.&nbsp; 더 일반적인 사용 사례는 녹음된 강의에서 PowerPoint 슬라이드에서 텍스트 데이터를 추출하는 것입니다.</p>
+
+
+  <p>//Build에서 Azure Media Services 프레젠테이션의 다음 클립을 확인하세요.</p>
+
+
+  <p><iframe align="center" allowfullscreen="" frameborder="no" height="280" name="azuremediaplayer" scrolling="no" src="//aka.ms/ampembed?url=https%3A%2F%2Fmanlingtest-samplescdn.streaming.mediaservices.windows.net%2F0b8e8199-63c0-4b98-9c51-0b6eb92ba9cf%2Fmartin_trim2.ism%2Fmanifest&amp;autoplay=false" width="500"></iframe></p>
+
+
+  <p>이를 통해 모든 텍스트(//Build 로고 제외)를 추출할 수 있었습니다.&nbsp;</p>
+
+
+  <pre>
+
+  Digital media landscape is always changing
+
+  Huge capital investment required Delivering video is hard, expensive, time - consuming, with a need for high scale and high availability especially hard and costly as both audience sizes and content libraries grow and shrink and grow again.
+
+  Delivering video is hard, expensive, time - consuming, with a need for
+
+  high scale and high availability especially hard and costly as both
+
+  audience sizes and content libraries grow and shrink and grow
+
+  Video is the new currency Audiences of all kinds are changing and demanding content on their own devices, wherever they are.That isn &#39;t easy: So many different device profiles and different delivery technologies.
+
+  Audiences of all kinds are changing and demanding content
+
+  on their own devices, wherever they are.That isn &#39;t easy: So
+
+  many different device profiles and different delivery
+
+  Azure Media Services Microsoft&#39;s cloud platform enables on demand and live streaming video solutions for consumer and enterprise scenarios.
+
+  Microsoft&#39;s cloud platform enables on
+
+  demand and live streaming video solutions
+
+  for consumer and enterprise scenarios.
+
+  </pre>
+
+
+  <p>슬라이드 쇼 프레젠테이션을 처리할 때 Video OCR의 기능을 보여 줍니다.&nbsp; 이상적으로 모든 기업 또는 교육 기관은 프레젠테이션 녹음/녹화에 포함된 중요한 데이터를 인덱싱하여 검색 및 검색을 쉽게 수행할 수 있어야 합니다.</p>
+
+
+  <p>이 프라이빗 미리 보기 버전의 Video OCR에 대한 구성 사전 설정에는 다음이 포함됩니다.</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="521">
+   <tbody>
+    <tr>
+     <td valign="top" width="106">TimeInterval</td>
+     <td valign="top" width="413">0보다 크거나 같은 정수입니다.<br>
+     <br>
+     OCR의 샘플링 빈도를 지정합니다.&nbsp; 값 1.5는 1.5초마다 하나의 프레임을 샘플링합니다.<br>
+     <br>
+     기본값은 0입니다(프레임마다 샘플).</td>
+    </tr>
+    <tr>
+     <td valign="top" width="106">언어</td>
+     <td valign="top" width="413">Key, Input, Predict, PredictOnly, None
+     <p>아랍어, 중국어 간체, 중국어 간체, 중국어 번체, 체코어, 덴마크어, 네덜란드어, 영어, 핀란드어, 프랑스어, 독일어, 그리스어, 헝가리어, 이탈리아어, 일본어, 한국어, 노르웨이어, 폴란드어, 포르투갈어, 루마니아어, 러시아어, 세르비아어 키릴 자모, 세르비아어 라틴어, 슬로바키아어, 스페인어, 스웨덴어 및 터키어입니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>시작</h2>
+
+
+  <p><s>OCR의 프라이빗 미리 보기에 액세스하려면 여기에서 Azure 웹 사이트에 등록 <a href="https://azure.com/services/preview/video-optical-character-recognition/" target="_blank">하세요</a>.</s></p>
+
+
+  <p><s>프라이빗 미리 보기에 대한 액세스 권한이 인정되면 다음 구성 및 미디어 프로세서 이름으로 <a href="https://azure.microsoft.com/en-us/documentation/articles/media-services-dotnet-encode-with-media-encoder-standard/#example">작업을 </a>제출할 수 있습니다.</s></p>
+
+
+  <p>참고: 이 블로그 게시물은 최신 상태가 아닙니다. &nbsp;가장 정확한 정보는 Azure Media OCR 또는&nbsp; 최신 설명서 <a href="https://docs.microsoft.com/en-us/azure/media-services/media-services-video-optical-character-recognition">페이지에&nbsp; 대한 설명</a>서를 확인하세요.</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="400">
+   <tbody>
+    <tr>
+     <td valign="top" width="200">작업 구성</td>
+     <td valign="top" width="200">
+     <p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</p>
+
+     <p>&lt;구성 버전=&quot;2.0&quot;&gt;<br>
+  &nbsp;&lt;입력&gt;<br>
+
+  &nbsp;&nbsp;&nbsp;&lt;metadata key=&quot;title&quot; value=&quot;&quot; /&gt;<br>
+
+  &nbsp;&nbsp;&nbsp;&lt;metadata key=&quot;description&quot; value=&quot;&quot; /&gt;<br>
+
+  &nbsp;&lt;/input&gt;<br>
+
+  &nbsp;&lt;기능&gt;<br>
+
+  &nbsp;&nbsp;&nbsp;&lt;feature name=&quot;ocr&quot;&gt;<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;설정&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;키 추가=&quot; OutputFormats&quot; value=&quot;txt|xml&quot; /&gt;<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;키 추가=&quot; 언어&quot; 값=&quot;영어&quot;/&gt;<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;키 추가=&quot; TimeInterval&quot; value=&quot;5&quot;/&gt;<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/settings&gt;<br>
+
+  &nbsp;&nbsp;&nbsp;&lt;/feature&gt;<br>
+
+  &nbsp;&lt;/features&gt;<br>
+
+  &nbsp;&lt;설정&gt;</p>
+
+     <p>&nbsp;&lt;/settings&gt;<br>
+  &lt;/configuration&gt;</p>
+
+     <pre class="prettyprint">
+
+  &nbsp;</pre>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="200">미디어 프로세서 이름</td>
+     <td valign="top" width="200">&ldquo;Azure 미디어 OCR&rdquo;</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em style="line-height: 20px; font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 13px; font-weight: normal;">비디오 OCR은 이제 공개 미리 보기로 제공됩니다. &nbsp;자세한 내용은&nbsp; 후속 블로그를 참조<a href="https://azure.microsoft.com/en-us/blog/announcing-video-ocr-public-preview-new-config/" style="font-size: 13px;">하세요</a>.</em></p>
+
+
+  <p>Azure Media Analytics에 대해 자세히 알아보려면 소개 블로그 게시물을 확인하세요.</p>
+
+
+  <p>Media Analytics 제품에 대한 질문이 있는 경우 전자 메일을 <a href="mailto:amsanalytics@microsoft.com">amsanalytics@microsoft.com</a>보냅니다.</p>

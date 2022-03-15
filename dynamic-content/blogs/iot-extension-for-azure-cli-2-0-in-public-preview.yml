@@ -1,0 +1,125 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cb2776f57ebfd77173913d82705da2f0fe6ba17c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901654"
+Slug: iot-extension-for-azure-cli-2-0-in-public-preview
+Title: Azure CLI 2.0용 IoT 확장 발표
+Summary: 최근에 Azure CLI 2.0의 기능을 추가하는 새 오픈 소스 IoT 확장을 출시했습니다. Azure CLI 2.0에는 Azure Resource Manager 및 관리 엔드포인트와 상호 작용하기 위한 명령이 포함되어 있습니다...
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/89f41ac5-38d8-4167-954c-ba20d1661f39.jpg"><img alt="cli2.0" border="0" height="548" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4d4b5751-8983-449b-a6c6-9fd44759cba6.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="cli2.0" width="807"></a></p>
+
+
+  <p>최근에 <a href="https://docs.microsoft.com/en-us/cli/azure/iot?view=azure-cli-latest">Azure CLI 2.0</a>의 기능을 추가하는 새 오픈 소스 <a href="https://github.com/Azure/azure-iot-cli-extension/blob/master/README.md">IoT 확장을</a> 출시했습니다. Azure CLI 2.0에는 Azure Resource Manager 및 관리 엔드포인트와 상호 작용하기 위한 명령이 포함되어 있습니다. 예를 들어 Azure CLI 2.0을 사용하여 Azure VM 또는 IoT Hub를 만들 수 있습니다. CLI 확장을 사용하면 Azure 서비스가 Azure CLI를 보강하여 추가 서비스 관련 기능에 액세스할 수 있습니다. IoT 확장은 개발자에게 IoT Hub, IoT Edge 및 IoT Hub Device Provisioning Service 기능에 대한 명령줄 액세스를 제공합니다.</p>
+
+
+  <p>Azure CLI 2.0을 사용하면 Azure IoT Hub 리소스, 디바이스 프로비전 서비스 인스턴스 및 연결된 허브를 즉시 관리할 수 있습니다. 새로운 IoT 확장은 디바이스 관리 및 전체 IoT Edge 같은 기능으로 Azure CLI 2.0을 강화합니다.</p>
+
+
+  <p>이 IoT 확장이 시작되면 버전 CLI 1.0 및 <a href="https://github.com/Azure/iothub-explorer">iot-hub-explorer</a> 도구가 사용 중지됩니다. Azure CLI 1.0 및 CLI 2.0은 완전한 기능 패리티입니다. Iot-hub-explorer 및 CLI 2.0은 현재 누락된 이벤트 모니터링 명령 CLI 2.0을 제외하고 기능 패리티에 있습니다. 2018년 3월 초에 이벤트 모니터링 명령을 제공하는 것을 목표로 합니다. 2018년 6월 30일까지 Azure CLI 1.0 및 <a href="https://github.com/Azure/iothub-explorer">iot-hub-explorer</a> 에 대한 IoT 확장은 더 이상 사용되지 않습니다.&nbsp;</p>
+
+
+  <p>엔지니어&rsquo; 가 Azure CLI 2.0용 IoT 확장을 자세히 살펴보세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" scrolling="no" src="https://www.youtube.com/embed/EqVKcoVD4uM" width="560"></iframe></p>
+
+
+  <h2>설치</h2>
+
+
+  <p><strong>1단계 - Python 설치</strong></p>
+
+
+  <p>Python 2.7x 또는 Python 3.x가 필요합니다.</p>
+
+
+  <p><strong>2단계 - Azure CLI 2.0 설치</strong></p>
+
+
+  <p><a href="https://github.com/Azure/azure-cli">GitHub</a> 또는 <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest">Microsoft Docs</a>의 설치 지침에 따라 사용자 환경에서 Azure CLI 2.0을 설정합니다. Azure CLI 2.0 버전이 2.0.24 이상이어야 합니다. az &ndash;버전을&rdquo; 사용하여 &ldquo;유효성을 검사합니다. 이 버전은 <b>az</b> extension 명령을 지원하고 Knack 명령 프레임워크를 소개합니다. Windows에 설치하는 간단한 방법 중 하나는 <a href="https://aka.ms/InstallAzureCliWindows">MSI</a>를 다운로드하여 설치하는 것입니다.</p>
+
+
+  <p><strong>3단계 - IoT 확장 설치</strong></p>
+
+
+  <p><a href="https://github.com/Azure/azure-iot-cli-extension/blob/master/README.md">IoT 확장 추가 정보</a>에는 확장을 설치하는 여러 가지 방법이 설명되어 있습니다. 가장 간단한 방법은 az extension add --name azure-cli-iot-ext를 실행하는 &ldquo;것입니다&rdquo;. 설치 후 az extension list&rdquo;를 사용하여 현재 설치된 확장의 유효성을 검사하거나 &ldquo;az extension show --name azure-cli-iot-ext&rdquo;를 사용하여 &ldquo;IoT 확장에 대한 세부 정보를 볼 수 있습니다. 확장을 제거하려면 az extension remove --name azure-cli-iot-ext&rdquo;를 사용할 &ldquo;수 있습니다.</p>
+
+
+  <p><strong>4단계 - 로그인</strong></p>
+
+
+  <p>az login&rdquo;을 실행&ldquo;하여 로그인합니다. 구독 세부 정보는 대상 리소스와 상호 작용하는 데 사용됩니다. 대화형으로 로그인하거나, 계정 자격 증명을 전달하거나, 암호/인증서 옵션으로 서비스 주체를 사용할 수 있습니다.</p>
+
+
+  <h2>예제</h2>
+
+
+  <p>다음은 디바이스 ID를 만들고 디바이스 쌍을 보는 예제입니다. 이 예제에서는 Azure 계정에 로그인하고, Azure 리소스 그룹(Azure 솔루션에 대한 관련 리소스를 보유하는 컨테이너)을 만들고, IoT Hub를 만들고, 새 디바이스 ID를 만든 다음, 디바이스 쌍을 보는 방법을 보여 줍니다. 시작하기 전에 앞에서 설명한 설치 단계를 완료하세요. Azure 계정이 아직&#39;경우 지금 <a href="https://azure.microsoft.com/en-us/free/?v=17.39a">체험 계정을 만들</a> 수 있습니다.</p>
+
+
+  <p><strong>1단계 - Azure 계정에 로그인</strong></p>
+
+
+  <p>명령: az login</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/65f33e8d-17d7-481e-8c98-3e09ffe8f78d.jpg"><img alt="1" border="0" height="243" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8b800745-0744-4d35-b299-41be92de231b.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="1" width="710"></a></p>
+
+
+  <p><br>
+
+  <strong>2단계 - 새 리소스 그룹 &ldquo;IoTHubBlogDemo 만들기&rdquo;</strong></p>
+
+
+  <p>명령: az group create &ndash;l eastus &ndash;n IoTHubBlogDemo</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/03e9e530-1666-41dc-abb4-67f1d50e1c49.jpg"><img alt="2" border="0" height="238" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5cc7a88d-0937-48e0-9204-bae3ab8419e8.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="2" width="714"></a><br>
+
+  <strong>3단계 - 리소스 그룹 &ldquo;IoTHubBlogDemo에서 새 IoT Hub &ldquo;blogDemoHub&rdquo; 만들기&rdquo;</strong></p>
+
+
+  <p>명령: az iot hub create --name blogDemoHub --resource-group IoTHubBlogDemo</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f5381034-139c-43d4-8e7d-7bc3595585c8.jpg"><img alt="3" border="0" height="256" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d4d3bd04-c67a-4d4b-83f8-61534d471215.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="3" width="706"></a><br>
+
+  <strong>스트렙 4 - IoT Hub &ldquo;BlogDemoHub에서 새 디바이스 만들기&rdquo;</strong></p>
+
+
+  <p>명령: az iot hub device-identity create --hub-name BlogDemoHub --device-id testDevice</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39df206f-b726-4d5a-bb44-0e8076dd6df4.jpg"><img alt="4" border="0" height="257" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/528aa292-117b-40fb-af01-e41fd88191dc.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="4" width="710"></a><br>
+
+  <strong>5단계 - 디바이스 쌍 보기</strong></p>
+
+
+  <p>명령: az iot hub device-twin show --hub-name blogDemoHub --device-id testDevice</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/309497e6-f9a4-4434-b757-579693a0c2cb.png"><img alt="Capture" border="0" height="256" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b38a3018-f5bf-4466-9c5a-63b55248f8b1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="캡처" width="706"></a></p>
+
+
+  <h2>기여</h2>
+
+
+  <p>이 프로젝트에 대한 기여와 제안을 환영합니다. 대부분의 경우 기여하려면 권한을 부여하며 실제로 기여를 사용할 권한을 당사에 부여한다고 선언하는 CLA(기여자 라이선스 계약)에 동의해야 합니다. 자세한 내용은 <a href="https://cla.microsoft.com/">https://cla.microsoft.com</a>을 방문하세요.</p>
+
+
+  <p>끌어오기 요청을 제출하면 CLA 봇이 CLA를 제공하고 PR을 적절하게 데코레이팅해야 하는지 여부를 자동으로 결정합니다(예: 레이블, 주석). 봇에서 제공하는 지침을 따르기만 하면 됩니다. 이 작업은 CLA를 사용하여 모든 리포지토리에서 한 번만 수행하면 됩니다.</p>
+
+
+  <p>이 프로젝트에는 <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>(Microsoft 오픈 소스 준수 사항)가 적용됩니다. 자세한 내용은 <a href="https://opensource.microsoft.com/codeofconduct/faq/">행동 강령 FAQ</a>를 참조하거나 추가 질문이나 의견을 문의 <a>opencode@microsoft.com</a> 하세요.</p>
+
+
+  <h2>피드백</h2>
+
+
+  <p>모든 도구 및 SDK와 마찬가지로 CLI 확장은 문제 형태로 피드백을 환영하고 <a href="https://github.com/Azure/azure-iot-cli-extension/blob/master/README.md">리포지토리</a>와 <a href="https://feedback.azure.com/forums/321918-azure-iot">피드백 포럼</a>에서 직접 요청을 끌어옵니다.</p>

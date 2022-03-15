@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e70d8c4016859c06b2c2a2a1208cc2121585861a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908185"
+Slug: phone-support-for-sles-11-sp3
+Title: SLES 11 SP3에 대한 전화 지원
+Summary: 이달 초 우리는 SLES 11 SP3에 대한 전화 및 이메일 지원을 제공하기 위해 SUSE와 제휴했다고 발표했습니다. 이 게시물은 Microsoft Azure 실행되는 SLES에 대한 지원을 받는 프로세스를 설명합니다.
+Content: >-
+  이달 초 우리는 SLES 11 SP3에 대한 전화 및 이메일 지원을 제공하기 위해 SUSE와 제휴했다고 발표했습니다. 이 발표까지 Microsoft는 Azure-Endorsed 배포에서 Linux용 Azure 가상화된 인프라(컴퓨팅, 네트워킹 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/linux-endorsed-distributions/">Storage)에 대한</a> 지원을 제공했습니다. Linux 게스트 운영 체제를 사용하는 경우 게스트 운영 체제에서 완전히 발생한 인시던트가 Microsoft에서 지원되지 않았습니다. 이제 Azure 이미지 갤러리에서 SLES Premium 이미지를 사용하면 Azure용 Microsoft의 지원과 SLES 11 SP3 게스트 운영 체제에 대한 SUSE의 지원을 받을 수 있습니다.
+
+
+  Azure를 통해 SLES 게스트 운영 체제 지원을 받으려면 전화 및 전자 메일 지원을 포함하는 Azure 이미지 갤러리의 Premium 이미지에서 프로비전된 VM을 실행해야 하며 <a href="https://azure.microsoft.com/en-us/support/plans/">Microsoft Azure 지원 계획이</a> 있어야 합니다. Premium 이미지를 사용하여 VM을 프로비전하려면 포털의 Azure 이미지 갤러리에서 Premium 이미지를 선택하거나(아래 그림 참조) PowerShell 또는 플랫폼 간 명령줄 인터페이스에서 배포할 때 Premium 이미지를 선택해야 합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/05/SUSE-Premium.png"><img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border-width: 0px;" title="SLES-Premium" alt="SLES Premium Image in Azure Portal" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/SUSE-Premium_thumb.png" width="610" height="427" border="0" /></a>
+
+
+  &nbsp;
+
+
+  Premium 이미지에서 배포된 VM에 대한 지원을 받으려면 먼저 Azure 지원을 통해 지원 요청을 시작해야 합니다. 일반적으로 <b>Microsoft 지원 문의<i> </i></b>옵션에 따라 Azure Portal을 통해 시작됩니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/05/Contact-Support.png"><img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border-width: 0px;" title="Contact-Microsoft-Support" alt="Contact Microsoft Support" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Contact-Support_thumb.png" width="264" height="361" border="0" /></a>
+
+
+  지원 환경은 Azure 지원 팀의 전문가부터 시작하며, 이 문제에 SUSE 지원 전문가의 지원이 필요한 경우 해당 전문가가 논의됩니다.
+
+
+  Microsoft Azure Linux 지원에 대한 자세한 내용은 다음 문서를 참조하세요. <a href="https://support.microsoft.com/kb/2941892">KB 2941892</a>.

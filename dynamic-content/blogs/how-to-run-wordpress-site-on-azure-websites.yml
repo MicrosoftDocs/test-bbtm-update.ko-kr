@@ -1,0 +1,253 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 89e3fe72803315b8976314a016ba069a39c26804
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907764"
+Slug: how-to-run-wordpress-site-on-azure-websites
+Title: Azure Websites에서 Enterprise Grade WordPress 사이트를 실행하는 방법
+Summary: Azure App Service Web Apps는 프로덕션 등급 WordPress 사이트에 대해 확장 가능하고 안전하고 사용하기 쉬운 환경을 제공합니다. 이 블로그 게시물에서는 다음을 만들고 구성하고 최적화하는 방법을 안내합니다.
+Content: >-
+  <p>AzureApp&nbsp; Service Web Appsprovides&nbsp;는 프로덕션 등급 WordPress 사이트에 대해 확장 가능하고 안전하고 사용하기 쉬운 환경을 제공합니다. 이 블로그 게시물에서는 많은 양의 방문자를 처리할 수 있는 진정한 클라우드 기반 WordPress 사이트를 만들고 구성하고 최적화하는 방법을 안내합니다.</p>
+
+
+  <h2>학습&rsquo;할 내용:</h2>
+
+
+  <ol>
+   <li>Azure Websites에 WordPress를 설치하는 방법</li>
+   <li>웹 사이트를 구성하는 방법</li>
+   <li>웹 사이트에 대한 모니터링을 설정하는 방법</li>
+   <li>Azure Websites에서 WordPress를 실행하기 위한 모범 사례</li>
+   <li>기존 WordPress 사이트를 마이그레이션하는 방법</li>
+   <li>성능을 향상시키는 방법</li>
+   <li>WordPress 사이트를 고가용성으로 만드는 방법</li>
+  </ol>
+
+
+  <h2>Azure 웹 사이트에 WordPress를 설치하는 방법</h2>
+
+
+  <p>Azure 웹 사이트 갤러리는 웹 사이트에 WordPress를 빠르고 쉽게 설치할 수 있는 방법을 제공하지만, 이 워크플로에서 만든 데이터베이스는 애플리케이션을 사용해 보기 위한 무료 <b>MySQL 데이터베이스 </b>이며 프로덕션 환경에서 WordPress 사이트를 실행하는 데 적합하지 않습니다. 이 제약 조건을 해결하려면 먼저 Azure Store에서 확장 가능한 MySQL 데이터베이스 서비스를 구매해야 합니다.</p>
+
+
+  <p><a href="https://manage.windowsazure.com">Azure 관리 포털</a>에 로그인하고 <b>스토어(미리 보기)</b>를 클릭하여 새 MySQL 데이터베이스를 구입합니다.</p>
+
+
+  <p><img alt="figure1" class="alignnone size-medium wp-image-142411" height="206" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/figure1-636x206.png" width="636"></p>
+
+
+  <p>저장소에서 <b>ClearDB</b> 서비스를 선택합니다.</p>
+
+
+  <p><img alt="image2" class="alignnone size-medium wp-image-142421" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image2-563x369.png" width="563"></p>
+
+
+  <p>&lsquo; 고성능 데이터베이스 서비스에 대한 <b>Jupiter</b>&rsquo; 계획을 선택하고 원하는 데이터베이스 이름을 입력합니다. ClearDB 계획에 대한 자세한 내용은 <a href="https://www.cleardb.com/store/azure">Azure 요금제에 대한 ClearDB</a> 를 참조하고 필요에 따라 적절한 계획을 선택합니다<b>.</b></p>
+
+
+  <p><img alt="image3" class="alignnone size-medium wp-image-142431" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image3-564x369.png" width="564"> <b><i> </i></b></p>
+
+
+  <p>Azure 관리 포털에서 프리미엄 ClearDB 데이터베이스를 프로비전할 수 있도록 구매를 확인합니다.</p>
+
+
+  <p><img alt="image4" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image4-563x369.png" width="563"></p>
+
+
+  <p>Azure 웹 사이트 갤러리는 웹 사이트에 대한 새로운 WordPress 설치를 쉽게 만들 수 있는 방법을 제공합니다. <strong>새 <i>TabComputeWeb&mdash;&gt;</i><i>&mdash;&gt;</i> <i>SiteFrom&mdash;&gt;</i></strong> <i><strong>갤러리 </strong>&nbsp;</i> 를 클릭합니다.<img alt="image5" class="alignnone size-medium wp-image-142451" height="194" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image5-636x194.png" width="636">&nbsp;&nbsp;</p>
+
+
+  <p>갤러리 마법사에서 <b>WordPress </b>애플리케이션을 선택합니다.</p>
+
+
+  <p><img alt="image6" class="alignnone size-medium wp-image-142461" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image6-565x369.png" width="565"></p>
+
+
+  <p>사이트 URL, 배포 설정을 입력합니다. 배포 설정에 대한 키를 생성하려면 임의 문자열 집합을 생성하는 <a href="https://api.wordpress.org/secret-key/1.1/salt/">이 스크립트</a> (WordPress.org)를 실행할 수 있습니다. <b>기존 MySQL 데이터베이스</b>&rdquo; 사용을 선택 &ldquo; 해야 합니다.</p>
+
+
+  <p><img alt="image7" class="alignnone size-medium wp-image-142471" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image7-558x369.png" width="558"></p>
+
+
+  <p>이전에 Azure Store에서 만든 데이터베이스를 선택하고 설치 마법사를 완료합니다.</p>
+
+
+  <p><img alt="image8" class="alignnone size-medium wp-image-142481" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image8-558x369.png" width="558"></p>
+
+
+  <h2>웹 사이트를 구성하는 방법</h2>
+
+
+  <p>사이트 크기를 조정하면 일관된 성능, 확장성 및 내결함성이 가능합니다. 시작하려면 <a href="https://manage.windowsazure.com">Azure 관리 포털</a> 에 로그인하고 웹 사이트&rsquo; 대시보드에 액세스합니다. 크기 조정을 클릭하고 이 웹 사이트에 대해서만 <b>표준</b> 모드를 선택합니다. <b>표준 </b>모드를 사용하면<b> 무료</b> 또는 <b>공유</b> 웹 사이트보다 고가용성과 일관된 성능을 제공할 수 있습니다.</p>
+
+
+  <p>표준 웹 사이트 모드에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-scale/#standardmode">표준 웹 사이트 모드</a>를 참조하세요. Azure 웹 사이트는 SMALL, MEDIUM 및 LARGE의 세 가지 인스턴스 크기를 제공합니다. 인스턴스 크기를 선택하면 웹 사이트의 부하가 얼마나 잘 수행되는지를 결정하며, 웹 사이트에서 수신하는 트래픽 양(일반적으로 초당 요청 수 또는 RPS로 측정됨)을 알면 최상의 인스턴스 크기를 선택하는 데 도움이 됩니다. RPS에 대한 자세한 내용은 <a href="https://priocept.com/2009/08/21/calculating-http-server-load/">HTTP 서버 부하를 계산하는 방법을</a> 참조하세요. 이 문서를 위해 이 웹 사이트의 SMALL 인스턴스로 설정합니다.</p>
+
+
+  <p><img alt="image9" class="alignnone size-medium wp-image-142491" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image9-606x369.png" width="606"> <b><i> </i></b></p>
+
+
+  <p>아래와 같이 자동 크기 조정을 설정하면 서버 CPU가 고정되거나 미리 정의된 일정에 따라 여러 인스턴스로 스케일 아웃할 수 있습니다. <b>저장</b>을 클릭하여 구성을 설정합니다. &nbsp; <img alt="image10" class="alignnone size-medium wp-image-142501" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image10-599x369.png" width="599"></p>
+
+
+  <p>기본적으로 전자 메일 서비스는 WordPress에서 구성되지 않습니다. 전자 메일 기능을 사용하려면 SendGrid와 같은 타사 전자 메일 서비스가 필요합니다. <a href="https://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-mobile-services-send-email-scripts/">Azure Store에서 SendGrid 계정을</a> 구성하는 방법을 알아봅니다. 이 Add-On 서비스를 구매한 후에는 <a href="https://wordpress.org/plugins/sendgrid-email-delivery-simplified/">WordPress용 SendGrid 플러그 인을</a> 설치하고 새로 만든 SendGrid 계정으로 구성해야 합니다.</p>
+
+
+  <h2>웹 사이트에 대한 모니터링을 설정하는 방법</h2>
+
+
+  <p>Azure 관리 포털은 웹 사이트를 쉽게 모니터링할 수 있는 방법을 제공합니다. 다음을 수행할 수 있습니다. - CPU 시간, 초당 요청, HTTP 오류 코드 등과 같은 다양한 메트릭을 추가합니다. - 웹 사이트 메트릭에서 경고 받기 - 사용 할당량 보기 - 웹 사이트에 대한 진단 및 다운로드 로그를 구성하여 자세히 알아보려면, 벤치마킹 테스트 중에 <b>Azure 웹 사이트에서 WordPress를 실행하기 위한 Azure 웹 사이트 모범 사례를 </b> <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-monitor/">모니터링하는 방법을</a> 참조하세요. Azure 웹 사이트에서 실행되는 WordPress의 성능 및 확장성을 크게 향상시키는 몇 가지 구성 변경 사항이 발견되었습니다. 해당 항목은 다음과 같습니다.</p>
+
+
+  <p><strong>1. 기본 및 표준 웹 사이트 모드 </strong></p>
+
+
+  <p>Azure 웹 사이트는 웹 사이트에 대한 공유 및 전용 인스턴스를 제공합니다. 전용 모드를 사용하여 사이트 실행에 필요한 리소스에 영향을 미치는 동일한 공유 인스턴스에서 실행되는 다른 사이트가 없는 웹 사이트에 격리를 제공하는 것이 좋습니다. 전용으로 <b>기본 웹 사이트 모드 및 표준 웹 사이트 모드 </b> 가 있습니다. 두 모드 모두 SSL, 웹 소켓 등과 같은 다양한 기능 집합을 제공합니다. 요구 사항을 충족하는 기능을 이해하려면 <strong>기본</strong> 및 <strong>표준 </strong>WebSite 모드에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/web-sites/">계층별 기능을</a> 참조하세요. 웹 호스팅 계획을 표준 모드로 전환하기 전에 Microsoft Azure 웹 사이트 구독에 대한 지출 한도를 제거해야 합니다. 그렇지 않으면 청구 기간이 끝나기 전에 한도에 도달하면 사이트를 사용할 수 없게 될 위험이 있습니다. Microsoft Azure 웹 사이트 구독에 대한 옵션을 보거나 변경하려면 <a href="https://go.microsoft.com/fwlink/?linkid=235288&amp;clcid=0x409">Microsoft Azure 구독을 참조하세요</a>.</p>
+
+
+  <p><b>2. </b><b>영구 데이터베이스 연결 사용 </b></p>
+
+
+  <p>WordPress는 비영구 데이터베이스 연결을 사용합니다. 즉, 데이터베이스에 대한 모든 호출이 새 연결로 처리됩니다. Azure 웹 사이트에서 MySQL 데이터베이스에 100개 이상 연결한 후 Azure 플랫폼은 호출을 제한하기 시작하여 연결을 제한하고 성능을 저하합니다. 이 문제를 방지하려면 WordPress 사이트와 영구 연결을 사용하는 것이 좋습니다.&nbsp; 이 작업은 WordpressPersistent"> 연결 어댑터 플러그 인용 영구 연결 어댑터를 </a>사용하여&nbsp; <a href="https://wordpress.org/plugins/persistent-database-connection-updater/" target="_blank" title="수행할 수 있습니다. ClearDB premiumClearDB"> MySQL 전용 클러스터</a>를 사용하는 <a href="https://azure.microsoft.com/en-us/blog/announcing-new-mysql-premium-tiers-from-cleardb/" target="_blank" title="경우 영구 연결은 사이트의 속도를 개선하는 데 도움이 될 수 있습니다. <a href="https://azure.microsoft.com/en-us/marketplace/partners/cleardb/databases/" target="_blank">ClearDB 다중 테넌트 MySQL 서비스를</a> 사용하는 경우에는 도움이 되지 않습니다.</p>
+
+
+  <p><b>3. </b><b>ARR 쿠키 사용 안 함 </b></p>
+
+
+  <p>Azure Websites는 <a href="https://www.iis.net/learn/extensions/planning-for-arr">애플리케이션 요청 라우팅</a> IIS 확장을 사용하여 활성 인스턴스 간에 연결을 분산합니다. ARR은 Azure Websites가 동일한 사용자의 이전 요청을 처리한 서버 인스턴스를 후속 요청에 알 수 있도록 하는 특수 쿠키(선호도 쿠키라고 함)를 제공하여 사용자를 추적하는 데 도움이 됩니다. 이렇게 하면 클라이언트가 특정 서버 인스턴스를 사용하여 세션을 설정하면 세션이 활성 상태인 한 동일한 서버와 계속 통신할 수 있습니다. 이는 세션에 민감한 애플리케이션(즉, 상태 전체 애플리케이션). WordPress는 기본적으로 상태 비 상태이며 데이터베이스에 모든 세션 정보를 저장하므로 클라이언트가 동일한 웹 서버 인스턴스에 연결할 필요가 없습니다. ARR 쿠키를 사용하지 않도록 설정하면 여러 인스턴스에서 WordPress 사이트를 실행할 때 성능이 향상됩니다. ARR 쿠키를 사용하지 않도록 설정하는 방법 참조</p>
+
+
+  <p><b>4. </b><b>미디어 콘텐츠용 Azure Blob Storage</b></p>
+
+
+  <p>WordPress 사이트가 비디오 및 이미지 콘텐츠로 많은 경우 Blob Storage를 사용하여 모든 미디어 콘텐츠를 저장하는 것이 좋습니다. Azure Storage 계정을 만드는 방법을 알아보려면 Azure Storage <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account/">계정을 만드는&nbsp; 방법을 참조하세요</a>. 계정을 만든 후에는 WordPress 웹 <em></em> 사이트의 <a href="https://wordpress.org/plugins/windows-azure-storage/">WordPress 플러그 인에 대한 Windows Azure Storage</a> 활성화하고&nbsp; 구성합니다. <b>5. </b><b>&nbsp;</b> 관리자용 사용자 지정 사용자 이름을 사용하고 기본&nbsp;<code>admin</code>&nbsp;값으로 WordPress를 설치한 경우&rsquo; 관리자 <b>사용자&nbsp;</b><b> </b> 이름을 변경하여 WordPress 사이트 보안을 유지합니다. <b>기존 WordPress 웹 사이트를 마이그레이션하는 방법</b> 많은 사용자 지정 없이 간단한 WordPress 블로그를 실행하는 경우 모든 기존 WordPress 콘텐츠를 WXR(WordPress 확장 RSS) XML 피드로 내보낼 수 있는 WordPress 기존 <a href="https://en.support.wordpress.com/export/">내보내기 기능을</a> 사용할 수 있습니다. Azure 웹 사이트로 이동하고 모든 콘텐츠를 WXR 피드로 내보낼 기존 WordPress 사이트에 로그인합니다. 이제 Azure Websites에서 WordPress 사이트에 로그인하고 플러그 인 &ndash;&gt; 새로 추가를 클릭합니다. <b>WordPress Importer </b>플러그 인 검색</p>
+
+
+  <p><img alt="image11" class="alignnone size-medium wp-image-142511" height="276" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image11-636x276.png" width="636"></p>
+
+
+  <p><b><i>&nbsp;</i></b>WordPress 가져오기 플러그 인 선택 및 설치</p>
+
+
+  <p><img alt="image12" class="alignnone size-medium wp-image-142521" height="145" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image12-636x145.png" width="636"></p>
+
+
+  <p>이제 <b>ToolsImport</b> <b>&mdash;&gt;</b> 를 클릭하고 <b>WordPress</b><i>를 선택하여 WordPress 가져오기 플러그 인</i>을 사용합니다.</p>
+
+
+  <p><img alt="image13" class="alignnone size-medium wp-image-142531" height="301" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image13-636x301.png" width="636"></p>
+
+
+  <p><b><i>&nbsp;</i></b>기존 WordPress 사이트에서 다운로드한 WXR 파일을 업로드 아래와 같이 콘텐츠를 가져옵니다. <img alt="image14" class="alignnone size-medium wp-image-142541" height="270" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image14-636x270.png" width="636">&nbsp;&nbsp;</p>
+
+
+  <p><b>다운로드를 선택하고 파일 첨부 파일을 가져와</b> 이전 WordPress 웹 사이트에서 미디어 콘텐츠를 가져옵니다. <img alt="image15" class="alignnone size-medium wp-image-142551" height="235" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image15-636x235.png" width="636"></p>
+
+
+  <p>가져오기에 성공했음을 묻는 메시지가 표시됩니다.</p>
+
+
+  <p><img alt="image16" class="alignnone size-medium wp-image-142561" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image16-513x369.png" width="513"></p>
+
+
+  <p><b><i>&nbsp;</i></b>아래 나열된 대로 새 WordPress 사이트의 몇 가지 추가 구성 변경이 필요합니다.</p>
+
+
+  <ul>
+   <li>이전 웹 사이트에서 <a href="https://codex.wordpress.org/Using_Permalinks">Permalinks</a>를 사용하고 있습니다. 그런 다음 웹 사이트 대시보드로 이동하여 <b>설정-&gt;</b><b>Permalinks</b> 패널을 클릭하고 구조가 기본값이 아닌 경우 Permalink 구조를 파일로 업데이트합니다.</li>
+   <li>업로드된 기존 이미지/미디어 링크는 이전 폴더를 참조하며 새 위치로 업데이트해야 합니다. <a href="https://wordpress.org/extend/plugins/velvet-blues-update-urls/">이 작업은 벨벳 블루스 업데이트 URL</a> 플러그 인을 사용하거나 <a href="https://interconnectit.com/124/search-and-replace-for-wordpress-databases/">검색 및 바꾸기</a> 도구를 사용하거나 데이터베이스에서 수동으로 수행할 수 있습니다.</li>
+   <li>가져오기 플러그 인은 WordPress 사이트의 테마를 업데이트하지 않습니다. <strong>모양 테마&gt;</strong>로 이동하여 필요에 따라 웹 사이트 테마를 업데이트합니다.</li>
+   <li>테마가 메뉴를 지원하는 경우 홈 페이지에 대한 링크에 이전 하위 디렉터리가 포함되어 있을 수 있습니다. <strong>모양 메뉴로&gt;</strong> 이동하여 업데이트합니다.</li>
+   <li>이러한 모든 단계를 완료한 후에는 <a href="https://manage.windowsazure.com">Azure 관리 포털</a>의 웹 사이트 대시보드에서 웹 사이트를&rsquo; 다시 시작합니다.</li>
+  </ul>
+
+
+  <p><b>다른 서버에서 사용자 지정 가능한 WordPress 사이트 마이그레이션 </b> 사이트가 사용자 지정되고 플러그 인이 많은 경우 위의 방법은 지루할 수 있습니다. 이 경우 다음 단계에 따라 사이트를 마이그레이션할 수 있습니다.</p>
+
+
+  <ul>
+   <li>기존 사이트에서 WordPress 사이트 및 데이터베이스를 백업하려면 <a href="https://codex.wordpress.org/WordPress_Backups">WordPress 백업</a> 및 <a href="https://codex.wordpress.org/Backing_Up_Your_Database">데이터베이스 백업</a> 을 참조하세요.</li>
+   <li><b>New-WebSite-Custom&gt;</b><b>&gt;</b> <b>Create</b>를 사용하여 데이터베이스를 사용하여 <a href="https://manage.windowsazure.com">Azure 관리 포털</a>에서 새 웹 사이트 만들기 [ 이 단계를 수행하기 전에 위에서 설명한 대로 저장소에서 데이터베이스를 구입해야 합니다.]</li>
+   <li>도메인을 새 azure 웹 사이트 도메인( <b>예: mywordpres.azurewebsites.net) </b> 으로 업데이트합니다. <a href="https://interconnectit.com/124/search-and-replace-for-wordpress-databases/">WordPress 데이터베이스 스크립트 검색 및 바꾸기</a> 를 사용하여 모든 인스턴스를 안전하게 변경합니다.</li>
+   <li>새 데이터베이스/사용자 정보로 <b>wp-config.php</b> 를 편집하고 GIT 또는 FTP를 사용하여 모든 것을 새 서버에 업로드해야 합니다. <a href="https://github.com/Azure/azure-content/blob/master/articles/web-sites-deploy.md">Azure 웹 사이트에 배포하는 방법</a> 참조</li>
+   <li><a href="https://www.mysql.com/products/workbench/">MySQL Workbench와 같은 MySQL</a> 클라이언트를 사용하여 Azure에서 새로 만든 데이터베이스에 액세스하고 WordPress 데이터베이스를 가져옵니다.</li>
+  </ul>
+
+
+  <h2>성능을 향상시키는 방법</h2>
+
+
+  <p>Azure Websites에서 WordPress 성능을 개선하기 위한 몇 가지 팁은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>대량의 사용자 트래픽(수십만~수백만 개의 페이지 보기 및 고유 방문자)을 수신하는 웹 사이트는 Memcached 또는 Redis Cache와 같은 분산 캐싱 서버를 사용하면 도움이 됩니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-connect-to-redis-using-memcache-protocol/">memcache 프로토콜과 함께 Azure redis Cache를 사용하는 방법과</a> <a href="https://blogs.msdn.microsoft.com/azureossds/2015/05/14/connect-to-microsoft-azure-redis-cache-from-wordpress-site/">WordPress용 Redis Cache를 구성하는 방법을</a> 참조하세요.&nbsp;</li>
+   <li>웹 사이트에 많은 트래픽&rsquo;이 없는 경우 Memcached를 사용할 필요가 없습니다. 이 경우 <a href="https://wordpress.org/plugins/wp-optimize/">WP 최적화</a> 또는 <a href="https://yoast.com/wordpress/plugins/optimize-db/">Yoast Optimize DB</a>와 같은 플러그 인을 사용하여 WordPress 데이터베이스를 최적화하는 것이 좋습니다.</li>
+   <li>Azure Websites에는 기본적으로 최신 버전의 Wincache가 사용하도록 설정되어 있습니다. <a href="https://ruslany.net/2010/03/make-wordpress-faster-on-iis-with-wincache-1-1/">Wincache를 사용하여 WordPress 사이트를 더 빠르게 만드는 방법</a> 보기</li>
+   <li><a href="https://wordpress.org/plugins/wp-optimize/">WP 최적화 플러그 인</a>을 사용하여 데이터베이스 정리 및 최적화</li>
+   <li><a href="https://wordpress.org/plugins/autoptimize/">Autoptimizeor</a>&nbsp;<a href="https://wordpress.org/plugins/bwp-minify/"> Better WordPress minify</a>와 같은 플러그 인을 사용하여 Javascript 및 CSS 파일 최소화</li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/enabling-cdn-for-azure-websites/">azure 웹앱에서 Azure CDN 사용</a></li>
+  </ul>
+
+
+  <h2>&nbsp;WordPress 사이트를 고가용성으로 만드는 방법</h2>
+
+
+  <p>Azure Websites는 3개의 9&#39;s(99.9%)의 SLA를 제공하며, 이는 웹 사이트에서 가동 중지 시간이 발생하지 않는다는 것을 의미하지는 않습니다. 웹 사이트에 영향을 미칠 수 있는 웹 사이트 서비스 또는 데이터베이스에 예기치 않은 중단이 발생할 수 있습니다. 이 문제를 해결하는 방법은 별도의 구성 요소를 사용하고 각 구성 요소를 고가용성으로 만드는 것입니다. 이렇게 하면 모든 서비스 관련 중단에 대한 시스템의 확장성과 복원력을 높일 수 있는 이점이 있습니다.</p>
+
+
+  <h3>웹 사이트 크기 조정</h3>
+
+
+  <p>Azure 웹 사이트에서 강화하려면 웹 호스팅 계획 모드를 더 높은 수준의 서비스로 변경하고 더 높은 수준의 서비스로 전환한 후 특정 설정을 구성하는 두 가지 관련 작업이 포함됩니다. 두 항목 모두 이 문서에서 다룹니다. 표준 모드와 같은 더 높은 서비스 계층은 Azure에서 리소스를 사용하는 방법을 결정할 때 더 큰 견고성과 유연성을 제공합니다. 자세한 내용은 Azure 웹 사이트의 크기를 조정하는 방법을 참조하세요. Azure Traffic Manager를 사용하면 지정된 웹 사이트 엔드포인트에 대한 사용자 트래픽 배포를 제어할 수 있을 뿐만 아니라 지정된 데이터 센터에서 서비스 중단 시 최종 사용자에게 미치는 영향을 크게 줄이는 자동 장애 조치(failover)도 지원합니다. 2개 이상의 다른 데이터 센터에서 웹 사이트를 복제하고 Traffic Manager 장애 조치(<strong>failover</strong>) 방법을 사용하여 웹 사이트를 고가용성 상태로 유지합니다.&nbsp; 웹 사이트에 대한 Azure Traffic Manager 엔드포인트를 만드는 방법에 대한 자세한 내용은 <a href="https://azure.microsoft.com/blog/2014/03/27/azure-traffic-manager-can-now-integrate-with-azure-web-sites/">thisarticle</a>&nbsp;&nbsp;을 참조하세요.</p>
+
+
+  <h3>데이터베이스 크기 조정</h3>
+
+
+  <p>데이터베이스는 완벽하게 작동하는 WordPress 웹 사이트의 핵심 구성 요소입니다. 데이터베이스를 고가용성으로 만들려면 다음 옵션 중 하나를 시도해 볼 수 있습니다.</p>
+
+
+  <ul>
+   <li>Azure에<a href="https://www.cleardb.com/store/azure"> Clear DBMySQL 서비스를</a> 사용하는 경우 <a href="https://www.cleardb.com/developers/cdbr/introduction">CDBR(ClearDB 고가용성 라우팅)을 </a>구성&nbsp;해야 합니다. Clear DB는 지역 쌍(예: 미국 동부 및 미국 서부)에서 데이터베이스 복제를 제공하지만 Azure Web Jobs를 사용하여 데이터베이스를 복제하기 위한 고유한 도구를 만들 수도 있습니다.</li>
+   <li>Azure Virtual Machine에서 <a href="https://www.mysql.com/products/cluster/">MySQL 클러스터</a> 를 관리하는 모든 도구를 제공하는 MySQL 클러스터 CGE를 설정할 수도 있습니다. 이 경우 모든 MySQL 클러스터, 데이터베이스 복제 및 크기 조정 작업을 수동으로 관리합니다. <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fazure-quickstart-templates%2Fmaster%2Fmysql-replication%2Fazuredeploy.json">이 템플릿</a>을 사용하여 Azure에서 MySQL 마스터 슬레이브 복제 클러스터를 설정합니다.</li>
+  </ul>
+
+
+  <h3>추가 구성 요소 크기 조정</h3>
+
+
+  <p>미디어 콘텐츠에 Azure Blob Storage 사용 중이거나 Memcached Server를 사용하는 경우 단일 실패 지점이 되는 것을 방지하는 솔루션을 찾습니다. 예를 들어 Azure Storage 장애 조치(failover)를 사용하도록 지역 중복으로 구성하거나 콘텐츠 배달 네트워크(Azure CDN)와 함께 사용할 수 있습니다. CDN을 사용하여 Azure 데이터를 캐시할 경우의 혜택은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>콘텐츠 원본과는 거리가 멀고 많은 &#39;인터넷 여행&#39; 콘텐츠를 로드해야 하는 애플리케이션을 사용하는 최종 사용자를 위한 향상된 성능 및 사용자 환경</li>
+   <li>즉, 제품 출시와 같은 이벤트가 시작될 때 웹 사이트&#39;미디어 콘텐츠에 대해 만든 Storage 계정에 대한 Azure CDN 계정을 만듭니다.</li>
+  </ul>
+
+
+  <h5>WordPress 플러그 인에서 CDN 사용</h5>
+
+
+  <p>이<a href="https://azure.microsoft.com/en-us/documentation/articles/cdn-how-to-use/"> 문서에</a> 설명된 대로 미디어 콘텐츠를 제공하는 데 사용한 Azure Storage 계정에 대한 CDN 만듭니다. 플러그 인 설정 페이지에서&rsquo; 예를 들어&nbsp; Azure CDN 이름을 입력해야 하는 <b>CNAME</b> 속성 설정이 표시됩니다.</p>
+
+
+  <p><img alt="cname" class="alignnone size-full wp-image-153731" height="545" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cname.png" style="width: 671px; height: 424px;" width="1055"></p>
+
+
+  <p><b>변경 내용 저장을 클릭해야 합니다. &nbsp;</b> &nbsp;CDN 대한DNS 전파는 생성 시간 이후 60분이 걸립니다. 이제 미디어 콘텐츠에 Azure CDN &nbsp;사용하도록 설정되었습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>추가 정보</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-monitor/">Azure 웹 사이트를 모니터링하는 방법</a></li>
+   <li><a href="https://channel9.msdn.com/Shows/Windows-Azure-Friday/Auto-Scaling-Azure-Web-Sites-CPU-or-Scheduled-with-Stefan-Schackow">Azure Websites 자동 크기 조정</a></li>
+   <li><a href="https://codex.wordpress.org/Main_Page">WordPress 설명서</a></li>
+  </ul>

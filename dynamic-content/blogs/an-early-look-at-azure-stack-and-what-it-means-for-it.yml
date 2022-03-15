@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3463534ea9b3b44b37467a0c6846b32e06051dbf
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902359"
+Slug: an-early-look-at-azure-stack-and-what-it-means-for-it
+Title: Azure Stack 및 IT에 대한 의미에 대한 초기 보기
+Summary: 현재 Microsoft Mechanics에서 Enterprise Cloud의 수석 설계자인 Jeffrey Snover는 IT 사용자에 대한 Azure Stack의 특정 장점을 보여 줍니다.
+Content: >-
+  <p>지난 주에<a href="https://azure.microsoft.com/en-us/overview/azure-stack/try/">는 Azure Stack용 Technical Preview</a>를 하이브리드 클라우드 전략의 최신 단계로 제공했으며, 서비스 공급자처럼 데이터 센터를 실행하는 Microsoft Azure 서비스를 처음으로 제공합니다. 어제&rsquo; <a href="https://azure.microsoft.com/en-us/overview/azure-stack/webcast/">Mark Russinovich 및 Jeffrey Snover를 사용한 웹캐스트</a>에서 설명한 대로 Azure와 Azure Stack은 동일한 포털, 통합 애플리케이션 모델 및 일반적인 DevOps 도구를 비롯한 표준화된 아키텍처를 공유합니다. 이렇게 하면 기술로 제한되지 않고 애플리케이션 및 워크로드가 있는 위치를 자유롭게 결정할 수 있습니다.</p>
+
+
+  <p>현재 Microsoft Mechanics에서 Enterprise Cloud의 수석 설계자인 Jeffrey Snover는 IT 사용자에 대한 Azure Stack의 특정 장점을 보여 줍니다.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/YaT81RLYHok" width="560"></iframe></p>
+
+
+  <p>Azure Stack의 주요 아이디어는 모든 사용자가 승리하고, 개발자가 더 이상 IT를 통해 Azure를 사용하여 앱에 필요한 리소스를 빠르게 가져올 필요가 없고, 기업이 원하는 서비스를 더 빠르게 얻고, IT가 사실 이후에 작업을 정리하는 데 더 적은 시간을 소비하는 것입니다.</p>
+
+
+  <p>AZURE Stack을 사용하면 IT 전문가로서 애플리케이션 요구 사항에 맞게 온-프레미스 데이터 센터 리소스를 Azure IaaS/PaaS 서비스로 변환할 수 있습니다. 이 쇼에서 설명한 것처럼 플랜이라고 하는 항목을 만들어 스토리지, 네트워크 대역폭 및 컴퓨팅과 같은 서비스에 대한 특정 할당량 제한을 설정할 수 있습니다. 정책 컨트롤을 적용하면 플랜에 액세스할 수 있는 사용자, 액세스 권한이 있는 사용자를 결정하고 규정 준수 및 비즈니스 요구 사항에 따라 애플리케이션이 온-프레미스 또는 클라우드에 배포되는지 여부를 제어할 수도 있습니다.</p>
+
+
+  <p>다양한 사용 사례를 지원하도록 계획을 개발할 수 있습니다. 예를 들어 개발 테스트 환경의 요구 사항이 프로덕션 환경의 요구 사항과 다릅니다. 중요한 것은 플랜은 IT Professional 개발자와 개발자 간의 계약이 되며 Jeffrey가 쇼에서 보여 주듯이 제품을 만들어 개발자가 계획을 사용할 수 있게 됩니다.</p>
+
+
+  <p>제품은 단일 또는 여러 계획을 구성할 수 있으며 개발자가 애플리케이션에 대한 제품을 사용할 때 IT는 Microsoft에서 Azure를 운영하는 데 사용하는 것과 동일한 관리 및 자동화 도구를 사용하여 리소스 사용률을 완전히 파악할 수 있습니다. 예를 들어 여러 서버에서 용량의 집계 보기를 신속하게 가져올 수 있습니다.</p>
+
+
+  <p>실제로 IT는 올바른 계획을 설계하는 데 집중함으로써 올바른 제어 및 감독을 관리하는 동시에 온-프레미스 또는 퍼블릭 클라우드에 배포되는 항목 간의 적절한 균형을 보장하는 데 중요한 역할을 합니다.</p>
+
+
+  <p>이를 가능하게 하는 데 도움이 되는 것은 Azure 및 Azure Stack에 대한 API가 동일하다는 것입니다. 통합 애플리케이션 모델은 Azure Resource Manager( <a href="https://www.youtube.com/watch?v=DevCgPFbiS8">Corey Sanders와 함께 이전 Microsoft Mechanics 쇼에서</a> 다루었던)를 기반으로 합니다. 이 템플릿 기반 접근 방식을 통해 개발자는 Azure 또는 Azure Stack에서 실행되는지 여부에 관계없이 애플리케이션에 동일한 선언적 방법을 사용할 수 있습니다. 도구 측면에서 개발자는 Visual Studio, PowerShell 및 기타 오픈 소스 DevOps 도구를 사용하여 Azure와 동일한 최종 사용자 환경을 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://www.youtube.com/watch?v=YaT81RLYHok">이 쇼에서</a> Jeffrey는 개발자가 Azure Resource Manager 템플릿을 사용하여 SharePoint 앱을 정의하고 IT에서 정의한 계획 내에서 할당된 지정된 리소스 및 서비스로 구성된 제품을 사용하는 방법을 보여 줍니다.</p>
+
+
+  <p>쇼를 더 자세히 알아보려면 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/try/">직접 사용해 보고</a> <a href="https://azure.microsoft.com/en-us/documentation/azure-stack/">기술 가이드</a>를 확인하세요.</p>

@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7ebd3b375baf4131e2fbfc0d76276701e7ee0601
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901038"
+Slug: new-channel-9-video-interview-with-intergrid-discusses-building-on-windows-azure
+Title: InterGrid와의 새로운 채널 9 비디오 인터뷰에서 Windows Azure에서 빌드에 대해 설명합니다.
+Summary: Windows Azure에서 빌드하는 것에 대한 개발자 관점을 찾고 있다면 InterGrid의 수석 개발자인 Peter Soukalopoulos와의 새로운 Channel 9 비디오 인터뷰를 확인해야 합니다....
+Content: '<p>Windows Azure에서 빌드하는 방법에 대한 개발자 관점을 찾고 있다면 <a target="_blank" href="https://www.greenbutton.net/pages/about">InterGrid</a>의 수석 개발자인 Peter Soukalopoulos와의 새로운 Channel 9 <a target="_blank" href="https://channel9.msdn.com/Shows/Inside+Out/Building-on-Azure-InterGridGreen-Button">비디오 인터뷰를</a> 확인해야 합니다. 이 문서에서는 InterGrid가 <a target="_blank" href="https://www.microsoft.com/windowsazure">Windows Azure</a> 플랫폼을 사용하는 방법과 이유를 설명합니다. &nbsp;</p>  <p>InterGrid는 Windows Azure를 사용하여 복잡하고 집중적인 컴퓨팅 프로세스에 대한 주문형 컴퓨팅 성능을 고객에게 제공합니다. 클라우드가 완료되기까지 일반적으로 며칠이 걸리는 컴퓨팅 프로세스는 이제 Windows Azure를 사용하여 몇 분 안에 완료할 수 있습니다. InterGrid 솔루션의 일반적인 사용 시나리오에는 자동차 프로토타입, 유전 DNA 가닥 시퀀싱 또는 애니메이션 3차원 영화 프레임과 같은 시각적으로 풍부한 이미지의 렌더링이 수반됩니다. </p>  <p>고객이 이 서비스를 활용할 수 있도록 회사는 타사 소프트웨어 애플리케이션에 포함할 <a target="_blank" href="https://www.greenbutton.net/">GreenButton</a> 이라는 API를 만들었습니다. GreenButton은 특허받은 작업 예측 알고리즘을 사용하여 사용자에게 작업 실행을 위한 시간과 비용 대안을 제공합니다. <a target="_blank" href="https://www.greenbutton.net/integrate">GreenButton SDK</a>를 사용하면 ISV 및 개발자가 고객에 대한 클라우드 컴퓨팅 리소스에 빠르고 쉽게 액세스할 수 있도록 자체 애플리케이션에 GreenButton API를 포함할 수 있습니다. 여기에서 GreenButton에 대해 자세히 알아볼 수 <a target="_blank" href="https://www.greenbutton.net/">있습니다</a>.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href=https://blogs.msdn.com/b/windowsazure/archive/2011/02/25/new-channel-9-video-interview-with-intergrid-discusses-building-on-windows-azure.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗  <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>  </p>'

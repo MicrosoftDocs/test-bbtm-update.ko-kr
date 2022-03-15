@@ -1,0 +1,49 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d5398cfe3a3ef0f13ceeee3a577df24f86c7f0ed
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902029"
+Slug: new-connectors-available-in-azure-data-factory-v2
+Title: Azure Data Factory V2에서 사용할 수 있는 새 커넥터
+Summary: Azure Data Factory가 V2의 복사 작업을 사용하여 여러 데이터 저장소에서 데이터를 복사하도록 새로 사용하도록 설정되었음을 발표하게 되어 기쁩니다.
+Content: >-
+  <p>고객이 최신 데이터 웨어하우스 솔루션 또는 데이터 기반 SaaS 애플리케이션을 빌드할 때 다양한 데이터 원본의 데이터를 Azure로 수집할 수 있도록 Azure Data Factory의 광범위한 연결을 계속 보강합니다. 오늘 Azure Data Factory가 V2의 복사 <a href="https://docs.microsoft.com/en-us/azure/data-factory/copy-activity-overview">작업을</a> 사용하여 다음 데이터 저장소에서 데이터를 새로 사용하도록 설정했다고 발표하게 되어 기쁩니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/copy-activity-overview#supported-data-stores-and-formats">지원되는 데이터 저장소</a>에서 지원되는 전체 커넥터 목록을 항상 찾고, 여기에서 각 커넥터 항목을 클릭하여 자세한 내용을 알아볼 수 있습니다.</p>
+
+
+  <ul>
+      <li>Amazon Marketplace 웹 서비스(베타)</li>
+      <li>Azure Database for PostgreSQL</li>
+      <li>Concur(베타)</li>
+      <li>Couchbase(베타)</li>
+      <li>드릴(베타)</li>
+      <li>Google BigQuery(베타)</li>
+      <li>Greenplum(베타)</li>
+      <li>HBase</li>
+      <li>Hive</li>
+      <li>HubSpot(베타)</li>
+      <li>Impala(베타)</li>
+      <li>Jira(베타)</li>
+      <li>Magento(베타)</li>
+      <li>MariaDB</li>
+      <li>Marketo(베타)</li>
+      <li>Oracle Eloqua(베타)</li>
+      <li>Paypal(베타)</li>
+      <li>Phoenix</li>
+      <li>Presto(베타)</li>
+      <li>QuickBooks(베타)</li>
+      <li>SAP Cloud for Customer(C4C)</li>
+      <li>ServiceNow(베타)</li>
+      <li>Shopify(베타)</li>
+      <li>Spark</li>
+      <li>Square(베타)</li>
+      <li>Xero(베타)</li>
+      <li>Zoho(베타)</li>
+  </ul>
+
+
+  <p>PowerShell 또는 .NET/Python SDK를 사용하여 작성하는 경우 이러한 새 기능을 사용하도록 12월 버전으로 업그레이드해야 합니다. 하이브리드 복사 시나리오의 경우 자체 호스팅 Integration Runtime 버전 3.2부터 이러한 커넥터가 지원됩니다.</p>
+
+
+  <p>당신은 그들에게 시도를 제공하고 우리에게 피드백을 제공하도록 초대됩니다. 시나리오에서 도움이 되기를 바랍니다. <a href="https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureDataFactory">Azure Data Factory 포럼</a>에 질문을 게시하거나 <a href="https://feedback.azure.com/forums/270578-data-factory">Data Factory 피드백 사이트에서</a> 의견을 공유하세요.</p>

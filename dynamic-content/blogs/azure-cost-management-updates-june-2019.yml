@@ -1,0 +1,278 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0cfd095b2547484f4414ab487a6139c538b35528
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908645"
+Slug: azure-cost-management-updates-june-2019
+Title: Azure Cost Management 업데이트 – 2019년 6월
+Summary: Azure Cost Management를 사용하면 클라우드에서 비용을 발생시키는 방법과 위치를 이해하고, 잘못된 지출 패턴을 식별 및 방지하며, 비용을 최적화하여 더 적은 비용으로 더 많은 작업을 수행할 수 있습니다. 클라우드 비용을 한 곳에서 관리할 수 있는 최신 개선 사항을 살펴보겠습니다.
+Content: >-
+  <p>&#39;새로운 학생이든, 스타트업이든, 가장 큰 기업이든, 재정적 제약이 있으며, 지출할&#39;, 위치 및 미래를 계획하는 방법을 알아야 합니다. 이 법안에 관해서 아무도 놀라움을 원하지 않으며, Azure Cost Management가 들어오는 곳입니다.</p>
+
+
+  <p>Microsoft&#39;는 항상 과제에 대해 자세히 알아보는 방법과 Cost Management를 통해 클라우드에서 비용을 다시 발생시킬&#39;있는 위치를 더 잘 이해하고, 잘못된 지출 패턴을 식별 및 방지하고, 비용을 최적화하여 더 적은 비용으로 더 많은 작업을 수행할 수 있도록 하는 방법을 찾고 있습니다.</p>
+
+
+  <p>피드백에 따라 오늘 살펴볼&#39;개선 사항은 다음과 같습니다.</p>
+
+
+  <ul type="disc">
+   <li><a href="#reservations">Enterprise 계약 및 AWS에 대한 예약 및 마켓플레이스 구매</a></li>
+   <li><a href="#forecast">Azure 및 AWS 비용 예측</a></li>
+   <li><a href="#terms">Enterprise 계약 및 Microst 고객 계약에 대한 비용 및 사용 용어 표준화</a></li>
+   <li><a href="#budgets">관리 그룹 예산을 사용하여 구독 전체의 비용을 주시</a></li>
+   <li><a href="#dashboard">대시보드 타일 업데이트</a></li>
+   <li><a href="#tags">비용 보고에서 리소스 태그의 가용성 확장</a></li>
+   <li><a href="#videos">새로운 Cost Management YouTube 채널</a></li>
+  </ul>
+
+
+  <p>&#39;세부 사항을 자세히 살펴보겠습니다.</p>
+
+
+  <p><a name="reservations"></a>&nbsp;</p>
+
+
+  <h2>Enterprise 계약 및 AWS에 대한 예약 및 마켓플레이스 구매</h2>
+
+
+  <p>효과적인 비용 관리는 <em>단일 </em>분류를 사용하여 모든 비용을 <em>단일 </em>위치로 가져오는 것부터 시작합니다. 이제 예약 및 마켓플레이스 구매가 추가되면서 Azure 및 <a href="https://docs.microsoft.com/en-us/azure/cost-management/aws-integration-manage">AWS</a> 비용에 대한 EA(Enterprise 계약)를 보다 완벽하게 파악하고 예약 혜택을 사용하여 팀에 대한 대규모 예약 비용을 다시 추적할 수 있습니다. 예약 구매를 중단하면 비용 할당 작업이 간소화되어 내부 차지백을 관리하기가 그 어느 때보다 쉬워졌습니다.</p>
+
+
+  <p style="margin-left: 40px;"><img alt="Showing amortized costs of $243M for the same period above which showed just under $50K of actual costs. Virtual machines are now showing costs based on a pre-purchased reservation." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9ee5f27a-ea3c-4294-a65d-d664c4628293.png" style="border: 0px currentcolor; display: inline; background-image: none; width: 640px; height: 382px;" title="위의 동일한 기간 동안 $243M의 분할 상환 비용을 보여주는 실제 비용은 $50K 미만인 것으로 나타났습니다. 이제 가상 머신에서 미리 구매한 예약에 따라 비용이 표시됩니다."></p>
+
+
+  <p>먼저 비용 분석을 열고 EA 청구 계정, AWS 통합 계정 또는 둘 다에 걸쳐 있는 관리 그룹으로 범위를 변경합니다. 다음 네 가지 새로운 그룹화 및 필터링 옵션을 사용하여 비용을 세분화하고 드릴다운할&#39;있습니다.</p>
+
+
+  <ul>
+   <li><strong>요금 유형 </strong>은 사용량, 구매 및 환불에서 발생한 비용을 나타냅니다.</li>
+   <li><strong>Publisher 유형</strong>은 Azure, AWS 및 Marketplace의 비용을 나타냅니다. Marketplace 비용에는 모든 클라우드가 포함됩니다. 공급자를 사용하여 총 Azure 및 AWS 비용과 자사 및 타사 비용을 구분합니다.</li>
+   <li><strong>예약 </strong>은 해당하는 경우 예약 비용과 관련된 비용을 지정합니다.</li>
+   <li><strong>빈도 </strong>는 사용량 기반, 일회성 요금 또는 반복 요금인 비용을 나타냅니다.</li>
+  </ul>
+
+
+  <p>기본적으로 비용 분석은 청구서에 있는 실제 비용을 보여 줍니다. 이는 청구서를 조정하는 데 이상적이지만 대량 구매에서 눈에 띄는 급증이 발생합니다. 즉, 예약에 대한 사용량은 선불이므로 비용이 표시되지 않으며 구독 및 리소스 그룹 읽기 권한자는 유효 비용에 대한 가시성을 갖지&#39;. 이것이 바로 상각이 시작되는 곳입니다.</p>
+
+
+  <p>분할 상환 비용 보기로 전환하여 예약 구매를 일일 청크로 분할하고 예약 기간 동안 분산합니다. 예를 들어 1월에 $365를 구매하는 대신 1월 1일부터 12월 31일까지 매일 $1 구매가 표시됩니다. 기본 분할 상환 외에도 이러한 비용은 재할당되고 예약을 사용한 특정 리소스와 연결됩니다. 예를 들어 매일 1달러의 요금이 두 가상 머신 간에 분할되는 경우 하루에 두 개의 $0.50 요금이&#39;. 예약의 일부가 하루 동안 활용되지 않는 경우 해당 가상 머신과 연결된 $0.50의 요금 하나와 새 요금 유형&nbsp;인<strong>UnusedReservation</strong>으로 0.50달러의 요금이 표시될&#39;있습니다.</p>
+
+
+  <p>추가 보너스 구독으로, 리소스 그룹 및 AWS 연결된 계정 읽기 권한자는 분할 상환 비용을 확인하여 유효 비용을 확인할 수도 있습니다. 청구 계정에만 표시되는 구매를 볼 수&#39;획득했지만 예약에 따라 할인된 비용을 볼 수 있습니다.</p>
+
+
+  <p>간단한 차지백 보고서를 작성하려면 분할 상환 비용으로 전환하고, 기간의 총 비용을 보고, 리소스 그룹별로 그룹화하고, 테이블 보기로 변경하는 세분성을 선택하지 않습니다. 그런 다음 오프라인 분석을 위해 Excel 또는 CSV에 데이터를 다운로드하거나 사용자 고유의 데이터와 병합합니다.</p>
+
+
+  <p style="margin-left: 40px;"><img alt="An image of the amortized cost page, table view." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/068be91a-4332-4da8-b3ba-56538af86eb2.png" style="width: 1024px; height: 243px;" title="분할 상환 비용 페이지, 테이블 뷰의 이미지입니다."></p>
+
+
+  <p>비용 데이터 가져오기를 자동화해야 하는 경우 두 가지 옵션이 있습니다. 동적 필터링, 그룹화 및 집계를 통해 풍부한 분석을 위해 쿼리 API를 사용하거나 집계되지 않은 전체 비용 및 사용량 데이터에 UsageDetails API를 사용합니다. UsageDetails는 Azure 범위에서만 사용할 수 있습니다. 이러한 API의 GA(일반 공급) 버전은 2019-01-01이지만 예약 및 Marketplace 구매를 포함하려면 <strong>2019-04-01-preview</strong> 를 사용할&#39;있습니다.</p>
+
+
+  <p>예를 들어,&#39;청구 유형, 게시자 유형, 구매에 대해 비어 있는 리소스 groupleft&mdash; 및 해당되지 않는 경우 reservationleft&mdash;를 비워 두어 분할 상환된 비용에 대한 집계된 보기를 가져옵니다.</p>
+
+
+  <pre>
+
+  <code>POST https://management.azure.com/{scope}/providers/Microsoft.CostManagement/query?api-version=2019-04-01-preview
+
+  Content-Type: application/json</code>
+
+
+  <code>{
+    &quot;type&quot;: &quot;AmortizedCost&quot;,
+    &quot;timeframe&quot;: &quot;Custom&quot;,
+    &quot;timePeriod&quot;: { &quot;from&quot;: &quot;2019-06-01&quot;, &quot;to&quot;: &quot;2019-06-30&quot; },
+    &quot;dataset&quot;: {
+      &quot;granularity&quot;: &quot;None&quot;,
+      &quot;aggregation&quot;: {
+        &quot;totalCost&quot;: { &quot;name&quot;: &quot;PreTaxCost&quot;, &quot;function&quot;: &quot;Sum&quot; }
+      },
+      &quot;grouping&quot;: [
+        { &quot;type&quot;: &quot;dimension&quot;, &quot;name&quot;: &quot;ChargeType&quot; },
+        { &quot;type&quot;: &quot;dimension&quot;, &quot;name&quot;: &quot;PublisherType&quot; },
+        { &quot;type&quot;: &quot;dimension&quot;, &quot;name&quot;: &quot;Frequency&quot; },
+        { &quot;type&quot;: &quot;dimension&quot;, &quot;name&quot;: &quot;ResourceGroup&quot; },
+        { &quot;type&quot;: &quot;dimension&quot;, &quot;name&quot;: &quot;SubscriptionName&quot; },
+        { &quot;type&quot;: &quot;dimension&quot;, &quot;name&quot;: &quot;SubscriptionId&quot; },
+        { &quot;type&quot;: &quot;dimension&quot;, &quot;name&quot;: &quot;ReservationName&quot; },
+        { &quot;type&quot;: &quot;dimension&quot;, &quot;name&quot;: &quot;ReservationId&quot; }
+      ]
+    }
+  }</code></pre>
+
+
+  <p>집계가 필요하지&#39;Azure 범위에 대한 전체 원시 데이터 세트를 선호하는 경우:</p>
+
+
+  <pre>
+
+  <code>GET https://management.azure.com/{scope}/providers/Microsoft.Consumption/usageDetails?metric=AmortizedCost&amp;$filter=properties/usageStart+ge+&#39;2019-06-01&#39;+AND+properties/usageEnd+le+&#39;2019-06-30&#39;&amp;api-version=2019-04-01-preview</code></pre>
+
+
+  <p>청구서에 표시된 대로 구매를 표시하는 데 실제 비용이 필요한 경우 유형 또는 메트릭을 ActualCost로 변경하기만 하면 됩니다. 이러한 API에 대한 자세한 내용은 <a href="https://aka.ms/costanalysis/api" target="_blank">Query</a> and <a href="https://docs.microsoft.com/rest/api/consumption/usagedetails" target="_blank">UsageDetails</a> API 설명서를 참조하세요. 게시된 문서에는 GA 버전이 표시되지만 둘 다 새 형식/메트릭 특성 이외의 2019-04-01-preview API 버전에서 동일하게 작동합니다.</p>
+
+
+  <p>Cost Management API는 리소스 위의 모든 범위에서 작동합니다. 즉, 리소스 그룹, 구독, <a href="https://aka.ms/azurerbac" target="_blank">Azure RBAC(롤 기반 액세스 제어)</a>&nbsp; 액세스를 통한 관리 그룹, EA 청구 계정(등록), 부서, EA 포털 액세스를 통한 등록 계정, AWS 통합 및 Azure RBAC를 통한 연결된 계정. 범위 ID를 확인하거나 액세스를 관리하는 방법을 포함하여 범위에 대한 자세한 내용은 설명서 <a href="https://aka.ms/costmgmt/scopes">이해 및 범위 작업</a> 설명서를 &quot; 참조하세요.&quot;</p>
+
+
+  <p>예약 및 마켓플레이스 구매에 대한 지원은 현재 <a href="https://aka.ms/costmgmt/preview" target="_blank">Azure Portal</a>에서 미리 보기로 제공되지만 앞으로 몇 주 안에 전 세계에 출시될 예정입니다. 그 동안, 그것을 체크 아웃 하 고 어떤 피드백이 있는지 알려 주시기 바랍니다.</p>
+
+
+  <p><a name="forecast"></a>&nbsp;</p>
+
+
+  <h2>Azure 및 AWS 비용 예측</h2>
+
+
+  <p>역사는 우리에게 많은 것을 가르쳐 주며,&#39;위치를 아는 것은&#39;당신이 어디로 가고 있는지 이해하는 데 매우 중요합니다. 이는 비용 관리에 있어 그다지 사실이 아닙니다. 애플리케이션 및 조직 추세를 이해하기 위해 기록 비용으로 시작할 수 있지만 실제로 정상적이고 최적화된 상태로 전환하려면 미래를 계획해야 합니다. 이제 Cost Management 예측을 사용할 수 있습니다.</p>
+
+
+  <p>비용 분석에서 예측된 비용을 확인하여 비용 추세를 예측 및 시각화하고, 모든 범위에서 예산 또는 신용 초과를 방지하기 위한 조치를 사전에 수행합니다. 리소스 그룹의 단일 애플리케이션에서 전체 구독 또는 청구 계정, Azure 및 AWS 리소스에 걸쳐 있는 상위 수준 관리 그룹에 이르기까지. <a href="https://azure.microsoft.com/blog/azure-cost-management-updates-may-2019/#aws" target="_blank">여기에서 래핑할&#39;지난 달에</a> AWS 계정을 연결하는 방법을 알아봅니다.</p>
+
+
+  <p style="margin-left: 40px;"><img alt="Cost analysis showing accumulated costs of $14.7M with a forecast of $17.9M and a warning note on the budget, which is set at $17.5M." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f4e5cec7-8f5f-44a9-a2a9-b18eeae3f5ca.png" style="border: 0px currentcolor; display: inline; background-image: none; width: 900px; height: 563px;" title="$17.9M의 예측과 $17.5M로 설정된 예산에 대한 경고 메모가 있는 $14.7M의 누적 비용을 보여주는 비용 분석."></p>
+
+
+  <p>Cost Management 예측은<a href="https://aka.ms/costmgmt/preview" target="_blank"> Azure Portal</a>에서 미리 보기로 제공되며 앞으로 몇 주 안에 전 세계에 출시될 예정입니다. 이를 확인하고 다음에 보고 싶은&#39;알려주세요.</p>
+
+
+  <p><a name="terms"></a>&nbsp;</p>
+
+
+  <h2>기업계약 및 Microsoft 고객 계약에 대한 비용 및 사용 용어 표준화</h2>
+
+
+  <p>종량제(PAYG), EA(기업계약), CSP(클라우드 솔루션 공급자) 또는 <a href="https://www.microsoft.com/Licensing/how-to-buy/microsoft-customer-agreement" target="_blank">MCA(Microsoft 고객 계약)</a> 계정을 사용하는지 여부에 따라 다른 용어에 사용할 수 있습니다. 이러한 차이는 미미하며 청구서를 이해하고 세울 수 있는 능력에 영향을 미치지&#39;수 있지만, 조직이 성장하고 여러 계정 유형에 걸쳐 보다 전체적인 비용 관리 솔루션이 필요함에 따라 문제가 발생합니다. AWS를 추가하고 PAYG, EA 및 CSP 계정을 MCA로 최종 마이그레이션하면 더욱 중요해집니다. 다음 EA 갱신 시 MCA로의 전환을 간소화하기 위해 Cost Management는 이제 새 열 또는 속성 이름을 사용하여 MCA 용어에 맞춥니다.&nbsp; EA 계정에 대해 예상할 수 있는 주요 차이점은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><strong>EnrollmentNumber &rarr; BillingAccountId/BillingProfileId</strong>
+
+   <ul>
+    <li><strong></strong>EA 등록은 현재 Azure Portal 내에서 청구 계정&quot;으로 &quot;표시되며 비용 및 사용량 데이터 내에서 BillingAccountId에 계속 매핑됩니다. 거기에 변화가 없습니다. MCA는 청구 계정 내에서 여러 청구서를 만드는 기능도 소개합니다. 이러한 청구서의 구성을 청구 프로필&quot;이라고 &quot;합니다. EA는 단일 청구서만 가질 수 있으므로 등록은 청구 프로필에 효과적으로 매핑됩니다. 해당 개념적 모델에 따라 등록 번호는 BillingAccountId 및 BillingProfileId로 모두 사용할 수 있습니다.</li>
+   </ul>
+   </li>
+   <li><strong>DepartmentName &rarr; InvoiceSectionName </strong>
+   <ul>
+    <li><strong></strong>MCA에는 EA 부서와 유사한 개념이 있으므로 청구서 내에서 구독을 그룹화할 수 있습니다. 이를 청구서 섹션&quot;이라고 &quot;하며 청구 프로필 아래에 중첩됩니다. EA 청구서는 이러한 노력의 일환으로 변경되지&#39;있지만 EA 부서는 일관성을 위해 비용 데이터 내에서 InvoiceSectionName으로 표시됩니다.</li>
+   </ul>
+   </li>
+   <li><strong>ProductOrderName(신규)</strong>
+   <ul>
+    <li><strong></strong>Azure 구독 제품과 같이 요금이 적용되는 더 큰 제품을 식별하는 새 속성입니다.</li>
+   </ul>
+   </li>
+   <li><strong>PublisherName(신규)</strong>
+   <ul>
+    <li><strong></strong>제품의 게시자를 나타내는 새 속성입니다.</li>
+   </ul>
+   </li>
+   <li><strong>ServiceFamily(신규)</strong>
+   <ul>
+    <li><strong></strong>관련 미터 범주를 그룹화할 새 속성입니다.</li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <p>EA 등록을 새 MCA로 갱신하려는 조직은 향후 마이그레이션 작업을 최소화하기 위해 이러한 새 속성을 기반으로 키 기반 EA API(예: consumption.azure.com)에서 최신 <a href="https://docs.microsoft.com/rest/api/consumption/usagedetails">UsageDetails API</a> (버전 2019-04-01-preview)로 전환하는 것을 강력하게 고려해야 합니다. 키 기반 API는 MCA 청구 계정에 대해 지원되지 않습니다.</p>
+
+
+  <p>새 용어에 대한 자세한 내용은 <a href="https://docs.microsoft.com/azure/billing/billing-understand-your-usage" target="_blank">Azure 사용량 및 요금 파일의 용어 이해</a> 설명서를 &quot; 참조하세요.&quot;</p>
+
+
+  <p><a name="budgets"></a>&nbsp;</p>
+
+
+  <h2>관리 그룹 예산을 사용하여 구독 전체의 비용을 주시</h2>
+
+
+  <p>모든 조직에는 결론이 있습니다. Cost Management 예산은&#39;적중하지 않도록 하는 데 도움이 됩니다. 이제 관리 그룹을 사용하여 Azure 및 AWS 리소스에 걸쳐 있는 예산을 만들 수 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><img alt="Management group budgets" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8811ba44-1d38-4c7b-a354-3daf7a280337.png" style="border: 0px currentcolor; display: inline; background-image: none; width: 640px; height: 237px;" title="관리 그룹 예산"></p>
+
+
+  <p>구독을 관리 그룹으로 구성하고 필터를 사용하여 팀에 적합한&#39;예산을 완벽하게 조정합니다.</p>
+
+
+  <p>자세한 내용은 자습서 &quot;<a href="https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets" target="_blank">예산 만들기 및 관리를 참조하세요</a>.&quot;</p>
+
+
+  <p><a name="dashboard"></a>&nbsp;</p>
+
+
+  <h2>대시보드 타일 업데이트</h2>
+
+
+  <p>비용 분석의 사용자 지정된 보기를 대시보드에 고정할 수 있다는 것을 이미 알고 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><img alt="Pin cost analysis to the dashboard using the pin icon at the top-right of the blade" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0754c18f-6775-48b3-9211-7edfaca96c89.png" style="border: 0px currentcolor; display: inline; background-image: none; width: 900px; height: 490px;" title="블레이드의 오른쪽 위에 있는 핀 아이콘을 사용하여 대시보드에 비용 분석 고정"></p>
+
+
+  <p>이러한 타일이 고정할 때 선택한 특정 날짜 범위로 잠겨 있는 것을 확인할 수 있습니다. 예를 들어 1월에 이번 달&#39;비용을 보기로 선택한 경우 타일은 2월, 3월 등에도 항상 1월을 표시합니다. 더 이상 그렇지 않습니다.</p>
+
+
+  <p>비용 분석 타일은 이제 날짜 선택기에서 선택한 기본 제공 범위를 유지 관리합니다. 이번 달에&quot; 고정&quot;하면 항상 현재 달력 월을 가져올&#39;있습니다. 지난 7일을 고정 &quot;하면 지난 7일&quot; 의 롤링 보기가&#39;. 그러나 사용자 지정 날짜 범위를 선택하면 타일에 항상 특정 날짜 범위가 표시됩니다.</p>
+
+
+  <p>업데이트된 동작을 얻으려면 고정된 타일을 업데이트하세요. 타일에서 차트를 클릭하여 비용 분석을 열고 원하는 날짜 범위를 선택한 다음 대시보드에 다시 고정하기만 하면 됩니다. 새 타일은 항상 선택한 정확한 보기를 유지합니다.</p>
+
+
+  <p>비용 대시보드를 빌드하는 데 도움이 되는 다른 항목은 무엇인가요? 다른 날짜 범위가 필요한가요? 저희에게 알려주세요.</p>
+
+
+  <p><a name="tags"></a>&nbsp;</p>
+
+
+  <h2>비용 보고에서 리소스 태그의 가용성 확장</h2>
+
+
+  <p>태그 지정은 기본 제공 관리 그룹, 구독 및 리소스 그룹 계층 구조 외부에서 리소스를 구성하고 분류하는 가장 좋은 방법으로, 비용 분석을 사용하여 고유한 메타데이터를 추가하고 사용자 지정 보고서를 빌드할 수 있습니다. <a href="https://docs.microsoft.com/azure/azure-resource-manager/tag-support" target="_blank">대부분의 Azure 리소스는 태그를 지원</a>하지만 일부 리소스 유형은 지원하지 않습니다. 태그를 지원하는 최신 리소스 유형은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>App Service 환경</li>
+   <li>Data Factory 서비스</li>
+   <li>Event Hub 네임스페이스</li>
+   <li>부하 분산 장치</li>
+   <li>Service Bus 네임스페이스</li>
+  </ul>
+
+
+  <p>태그는 모든 사용량 레코드의 일부이며 태그가 적용된 후에만 Cost Management 보고에서 사용할 수 있습니다. 기록 비용은 태그가 지정되지 않으므로 최상의 비용 보고를 위해 오늘 리소스를 업데이트합니다.</p>
+
+
+  <p><a name="videos"></a>&nbsp;</p>
+
+
+  <h2>새로운 Cost Management YouTube 채널</h2>
+
+
+  <p>지난 달, Cost Management를 빠르게 시작하고 실행할 수 있도록 8개의&nbsp; <a href="https://azure.microsoft.com/blog/azure-cost-management-updates-may-2019/#videos" target="_blank">새로운 빠른 시작 비디오에</a> 대해 이야기했습니다. 새 <a href="https://aka.ms/costmgmt/videos" target="_blank">Azure Cost Management YouTube 채널을</a> 구독하여 새 동영상이 다시 릴리스될&#39;루프를 유지합니다. 다음은 비용 최적화 컬렉션의 최신 비디오를&#39;.</p>
+
+
+  <ul>
+   <li><a href="https://www.youtube.com/watch?v=mI8oDgrWGeA" target="_blank">Azure를 사용하여 비용을 절감하고 비용을 관리하는 데 도움이 되는 5가지 팁</a></li>
+  </ul>
+
+
+  <p>&#39;다루는 다른 항목을 알려주세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>다음&#39;?</h2>
+
+
+  <p>이들은 지난 달에서 큰 업데이트의 단지 몇 가지. 피드백에 따라 항상 경청하고 지속적으로 개선할&#39;있으므로 피드백을 계속 보내주세요!&nbsp;</p>
+
+
+  <p>Twitter를 팔로우 <a href="https://twitter.com/azurecostmgmt" target="_blank">@AzureCostMgmt</a> 하고 <a href="https://aka.ms/costmgmt/videos" target="_blank">YouTube 채널</a> 에 업데이트, 팁 및 요령을 구독하세요. 그리고 언제나처럼, 당신의 아이디어를 공유하고 <a href="https://aka.ms/costmgmt/feedback" target="_blank">Cost Management 피드백 포럼</a>에서 다른 사람을 투표.</p>

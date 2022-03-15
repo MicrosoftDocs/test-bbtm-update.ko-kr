@@ -1,0 +1,192 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c075507fe9b08fd6125482ed62f763711d07d47b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901060"
+Slug: near-real-time-analytics-in-azure-sql-data-warehouse
+Title: Azure SQL Data Warehouse의 근 실시간 분석
+Summary: IoT 시나리오 및 데이터 스트림을 통해 데이터 생성 속도가 증가함에 따라 분석을 위해 데이터에 더 빠르게 액세스해야 하는 수요가 증가하고 있습니다.
+Content: >-
+  <p>IoT 시나리오 및 데이터 스트림을 통해 데이터 생성 속도가 증가함에 따라 분석을 위해 데이터에 더 빠르게 액세스해야 하는 수요가 증가하고 있습니다. 실시간에 가까운 분석에 대한 이러한 수요는 소매 업체에서 실시간 가격 변경을 하는 모든 산업 부문, 변칙 검색을 사용하여 조립 라인에서 잠재적인 문제를 결정하기 위한 제조 공장, 첨단 드릴 센서 판독값을 사용하여 지구&#39;표면 아래 수백 피트에서 무슨 일이 일어나고 있는지 정확하게 알기 위해 광산 및 가스 회사에&#39;. 우리는 모든 고객에 걸쳐 근 실시간 분석의 이점이 엄청나게 될 수 있음을 보았습니다.</p>
+
+
+  <p>오늘 <a href="https://azure.microsoft.com/en-us/services/sql-data-warehouse/" target="_blank">Azure SQL Data Warehouse</a>에서 거의 실시간에 가까운 분석 기능을 발표하게 되어 기쁩니다. 이 아키텍처는 Azure Databricks 스트리밍 데이터 프레임에서 SQL DW로 스트리밍 수집의 공개 미리 보기를 통해 가능합니다.</p>
+
+
+  <h2>Azure Databricks의 구조적 스트리밍</h2>
+
+
+  <p>Azure Databricks는 Databricks 런타임을 실행하는 Microsoft의 완전 관리형 클라우드 서비스입니다. 이 서비스는 Azure에서 엔터프라이즈급 Apache Spark 구현을 제공합니다. Apache Spark의 <a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#overview" target="_blank">구조적 스트리밍</a>을 사용하면 사용자가 확장 가능하고 내결함성 있는 방식으로 데이터 스트림을 통해 쿼리를 정의할 수 있습니다.</p>
+
+
+  <p>구조적 스트리밍은 데이터 스트림을 통해 쿼리를 실행하는 확장 가능하고 내결함성이 뛰어난 방법입니다. 스트리밍 데이터 프레임은 언바운드 테이블이며 스트림의 새 데이터가 테이블에 추가됩니다. 쿼리는 추가된 섹션과 테이블 전체에서 실행할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0647a5fe-034a-4729-87cd-31019e84c648.jpg"><img alt="Data stream" border="0" height="874" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/be25da76-35cb-477a-b996-75ca8bed5854.jpg" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="데이터 스트림" width="1821"></a></p>
+
+
+  <h2>Azure SQL Data Warehouse를 출력 싱크로</h2>
+
+
+  <p>스트리밍 쿼리는 시간에 따른 평균, 최소, 최대 값과 같은 데이터 스트림에 대한 명백한 질문에 답변하는 데 적합하지만 다운스트림 분석가가 거의 실시간 데이터에 액세스할 수 있는 것은 아닙니다. 이를 위해 분석가가 PowerBI와 같은 도구를 사용하여 근 실시간 데이터를 쿼리, 시각화 및 해석할 수 있도록 데이터를 최대한 빨리 SQL 데이터 웨어하우스로 가져올 수 있습니다.</p>
+
+
+  <h2>예: 스트림을 SQL DW로 평가 예제</h2>
+
+
+  <p>다음은 기능의 작동 방식을 설명하는 간단한 예제입니다. 구조적 스트림에는 타임스탬프와 값을 초당 지정된 속도로 생성하는 데이터 생성기가 있습니다. 이 메커니즘을 사용하여 간단한 스트리밍 예제를 만듭니다.</p>
+
+
+  <p>가장 먼저 해야 할 일은 SQL Data Warehouse에 싱크 테이블을 만드는 것입니다. 위에서 설명한 것처럼 속도 스트림은 타임스탬프와 값을 생성하므로 이를 테이블의 스키마로 사용할 수 있습니다. 이렇게 하려면 즐겨 찾는 데이터베이스 관리 도구를 열고 다음 표를 만듭니다.</p>
+
+
+  <pre>
+
+  ```sql
+
+  CREATE TABLE [dbo].[Stream_CI]
+
+  (
+     [timestamp] DATETIME NULL,
+     [Value] BIGINT NULL
+  )
+
+  WITH
+
+  (
+     DISTRIBUTION = ROUND_ROBIN,
+     CLUSTERED INDEX ([timestamp])
+  )
+
+  ```
+
+  A table with a ROUND_ROBIN distribution and a CLUSTERED INDEX on Timestamp provides the best compromise between ingestion speed and query performance for streaming data in a SQL Data Warehouse. </pre>
+
+
+  <p>이제 싱크 테이블이 SQL DW에 있으므로&#39;Azure Databricks 부분을 살펴보겠습니다. 아래 코드를 모두 Python으로 작성했지만 R, Python 및 Scala에서도 동일한 기능을 사용할 수 있습니다.</p>
+
+
+  <p>가장 먼저 해야 할 일은 테이블과 Azure Storage 계정을 방금 만든 SQL DW에 대한 연결을 설정하는 것입니다.</p>
+
+
+  <pre>
+
+  ```python
+
+  # SQL DW related settings (used to setup the connection to the SQL DW instance)
+
+  dwDatabase = &lt;databaseName&gt;
+
+  dwServer = &lt;servername&gt;
+
+  dwUser = &lt;sqlUser&gt;
+
+  dwPass = &lt;sqlUserPassword&gt;
+
+  dwJdbcPort =  &quot;1433&quot;
+
+  dwJdbcExtraOptions = &quot;encrypt=true;trustServerCertificate=true;loginTimeout=30;&quot;
+
+  sqlDwUrl = &quot;jdbc:sqlserver://&quot; + dwServer + &quot;.database.windows.net:&quot; + dwJdbcPort + &quot;;database=&quot; + dwDatabase + &quot;;user=&quot; + dwUser+&quot;;password=&quot; + dwPass + &quot;;&quot;+dwJdbcExtraOptions
+
+  # Blob Storage related settings (used for temporary storage)
+
+  # The value is the storage account url in the format of &lt;accountName&gt;.blob.core.windows.net
+
+  blobStorage = &lt;blobStorageAccount&gt;
+
+  blobContainer = &lt;storageContainer&gt;
+
+  blobAccessKey =  &lt;accessKey&gt;
+
+  # Set up the Blob storage account access key in the notebook session conf.
+
+  spark.conf.set(
+     &quot;fs.azure.account.key.&quot;+blobStorage ,
+     blobAccessKey)
+  ```</pre>
+
+
+  <p>이 코드 블록에서는 단순성과 배달 속도를 위해 사용자 이름과 암호를 사용하지만 모범 사례는 아닙니다. <a href="https://docs.azuredatabricks.net/user-guide/secrets/secret-scopes.html" target="_blank">비밀 범위를</a> 사용하여 Azure Key Vault에 비밀을 안전하게 저장하는 것이 좋습니다.</p>
+
+
+  <p>이제 SQL DW와 Azure Databricks의 Storage 계정에 모두 연결할 수 있으므로&#39;읽기 스트림을 만들고 출력을 SQL DW에 쓸 수 있습니다.</p>
+
+
+  <p>속도 스트림에 대한 가장 중요한 매개 변수는 rowsPerSecond 및 numPartitions입니다. rowsPerSecond는 시스템에서 만들려는 초당 이벤트 수를 지정합니다. numPartitions는 행을 만드는 데 할당되는 파티션 수를 지정합니다. rowsPerSecond가 높고 시스템에서 충분한 데이터를 생성하지 않는 경우 더 많은 파티션을 사용해 보세요.</p>
+
+
+  <pre>
+
+  ```python
+
+  # Prepare streaming source
+
+  df = spark.readStream \
+     .format(&quot;rate&quot;) \
+     .option(&quot;rowsPerSecond&quot;, &quot;10000&quot;) \
+     .option(&quot;numPartitions&quot;, &quot;5&quot;) \
+     .load()
+  ```</pre>
+
+
+  <p>readStream을 SQL DW에 쓰려면 com.databricks.spark.sqldw&quot; 형식을 사용해야 &quot;합니다. 이 형식 옵션은 DataBricks 런타임에 기본 제공되며 Databricks 4.3 이상을 실행하는 모든 클러스터에서 사용할 수 있습니다.</p>
+
+
+  <pre>
+
+  ```python
+
+  # Structured Streaming API to continuously write the data to a table in SQL DW.
+
+  df.writeStream \
+     .format(&quot;com.databricks.spark.sqldw&quot;) \
+     .option(&quot;url&quot;, sqlDwUrl) \
+     .option(&quot;tempDir&quot;, &quot;wasbs://&quot;+blobContainer+ &quot;@&quot; + blobStorage + &quot;/tmpdir/stream&quot;) \
+     .option(&quot;forwardSparkAzureStorageCredentials&quot;, &quot;true&quot;) \
+     .option(&quot;dbTable&quot;, &quot;Stream_CI&quot;) \
+     .option(&quot;checkpointLocation&quot;, &quot;/checkpoint&quot;) \
+     .trigger(processingTime=&quot;30 seconds&quot;) \
+     .start()
+  ```</pre>
+
+
+  <p>이 문은 30초마다 rateStream을 처리합니다. 데이터는 스트림에서 가져와 tempDir 매개 변수로 정의된 임시 스토리지 위치에 기록됩니다. 파일이 이 위치에 도착하면 SQL DW는 PolyBase를 사용하여 지정된 테이블에 데이터를 로드합니다. 로드가 완료되면 스토리지 위치의 데이터가 삭제되어 데이터를 한 번만 읽을 수 있습니다.<br>
+
+  스트림이 데이터를 생성하고 SQL DW에 쓰고 있으므로 SQL DW에서 데이터를 쿼리하여 확인할 수 있습니다.</p>
+
+
+  <pre>
+
+  ```sql
+
+  SELECT COUNT(Value), DATEPART(mi,[timestamp]) AS [event_minute]
+
+  FROM Stream_ci
+
+  GROUP BY DATEPART(mi,[timestamp])
+
+  ORDER BY 2
+
+  ```</pre>
+
+
+  <p>마찬가지로 SQL DW에서 스트리밍 데이터 쿼리를 시작할 수 있습니다.</p>
+
+
+  <h2>결론</h2>
+
+
+  <p>이 블로그에서는 Azure Databricks&#39; 구조적 스트리밍 기능 및 SQL Data Warehouse를 사용하여 거의 실시간 분석을 사용하도록 설정하는 방법에 대한 간단한 예제를&#39;. 이 예제에서는 단순성을 위해 rateStream 및 간단한 쓰기 명령을 사용했지만 Kafka 스트림을 데이터 원본으로 쉽게 사용하고 비즈니스별 연속 창 집계를 사용할 수 있습니다.</p>
+
+
+  <p>자세히 알아보려면 다음을 수행합니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/blog/redefine-data-analytics-with-modern-data-warehouse-on-azure/" target="_blank">Azure SQL DW가 최신 서비스 업데이트로 데이터 분석을 재정의하는</a> 방법 읽기</li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/seamless-access-to-management-insights-for-sql-data-warehouse-with-data-studio/" target="_blank">이제 사용자 제어 유지 관리 기간이 Azure SQL DW 고객에게 더 큰 제어를 제공하는</a> 방법을 읽어보십시오.</li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/azure-sql-data-warehouse-now-supports-maintenance-scheduling/" target="_blank">고객이 Azure SQL DW 통합 및 SQL Studio를 사용하여 더 큰 인사이트를 얻는</a> 방법 읽기</li>
+  </ul>

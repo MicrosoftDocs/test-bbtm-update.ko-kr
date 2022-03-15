@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d879d6c21d3e5e9efb4c2bef1d8756e8a27fd119
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907877"
+Slug: bing-custom-search-build-a-customized-search-experience-in-minutes
+Title: 'Bing 사용자 지정 검색: 몇 분 안에 사용자 지정된 검색 환경 빌드'
+Summary: 일반 공급에 대한 Bing Custom Search를 시작한 지 5개월이 조금 지났으며, 현재 Bing Custom Search를 통해 구동되는 전 세계 많은 웹 사이트를 보게 되어 기쁩니다. 사이트 검색을 지원하거나 여러 관련 도메인을 통해 수직 검색 환경을 구축하는 데 Bing Custom Search 제품을 사용할 수 있습니다.
+Content: >-
+  <p>&rsquo;일반 공급에 대한 Bing Custom Search를 출시한 지 5개월이 조금 넘었으며, 현재&#39;Bing Custom Search를 통해 제공되는 전 세계 많은 웹 사이트를 보게 되어 기쁩니다. 사이트 검색을 지원하거나 여러 관련 도메인을 통해 수직 검색 환경을 구축하는 데 Bing Custom Search 제품을 사용할 수 있습니다.</p>
+
+
+  <p>Bing Custom Search는 사용자가 특정 사이트 또는 직접 선택한 웹 사이트 또는 도메인 집합에서 검색 환경을 빌드하고 콘텐츠를 쿼리할 수 있는 사용하기 쉬운 광고 없는 검색 솔루션입니다. 사용자가 원하는 결과를 표시할 수 있도록 Bing Custom Search는 사용자가 순위 세부 정보를 제어하고 요구 사항에 맞게 응답을 고정하거나 차단할 수 있는 간단한 웹 인터페이스를 제공합니다.</p>
+
+
+  <p>Bing API 팀&rsquo; 목표는 개발자와 비 개발자가 모두 사용자 지정된 검색 엔진 환경을 빌드할 수 있도록 하여 웹의 기능을 활용할 수 있도록 하는 것입니다. 사용자 지정 검색 인스턴스를 설정하는 것은 쉽고 빠릅니다. 개발 작업에 투자할 리소스가 없는&rsquo; 고객을 위해 추가 비용 없이 사용하기 쉬운 호스트된 UI 솔루션을 제공합니다.</p>
+
+
+  <p>사용자를 기쁘게 생각하고 사용자 지정 검색 AI 기능을 애플리케이션에 통합하려는 경우 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblogs.bing.com%2FDevelopers-Blog%2F2018-04%2Fbing-custom-search-build-a-customized-site-search-experience-in-just-a-few-minutes&amp;data=02%7C01%7Cv-jujame%40microsoft.com%7C56a0c870bc664f60841008d5a6efe3de%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C1%7C636598471628865345&amp;sdata=ZRE7try4qoVkpb3WMGz5KnC8H3LXTxN6iuWR6rSqZZg%3D&amp;reserved=0" target="_blank">Bing 개발자 블로그</a>의 전체 블로그 게시물을 읽어보세요. 거기서 사용자 지정 검색이 작동하는 Bing 방법을 확인하고, 몇 분 안에 검색 인스턴스를 만드는 방법에 대한 단계별 지침을 확인하고, AI: Channel 9에서 호스트되는 <em>쇼(The Show</em>)에서 작동하는 사용자 지정 검색을 확인할 수 있습니다.</p>

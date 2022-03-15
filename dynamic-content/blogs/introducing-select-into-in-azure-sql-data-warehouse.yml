@@ -1,0 +1,125 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ec620e37d40a306c16fab1d9566bc420b9fc466b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908340"
+Slug: introducing-select-into-in-azure-sql-data-warehouse
+Title: SELECT 비교. Azure SQL Data Warehouse의 INTO 및 CTAS 사용 사례
+Summary: 이제 Azure SQL Data Warehouse 사용자에게 단일 문으로 테이블을 만들고 채우는 두 가지 옵션이 있습니다. 첫 번째 옵션은 CREATE TABLE AS SELECT 또는 CTAS를 사용하는 것입니다. 두 번째는 SELECT를 사용하는 것입니다. 에. 이 게시물에서는 두 방법 간의 차이점을 요약합니다.
+Content: >-
+  <p>팀은 최근에 SELECT를 도입했습니다. Azure SQL Data Warehouse의 SQL 언어로 INTO합니다. 선택.. INTO를 사용하면 SELECT 문의 결과 집합에 따라 새 테이블을 만들고 채울 수 있습니다. 이제 사용자는 단일 문을 사용하여 테이블을 만들고 채우는 두 가지 옵션을 사용할 수 있습니다. 이 게시물에서는 CTAS 및 SELECT 모두에 대한 사용 시나리오를 요약합니다. INTO 및 두 방법 간의 차이점을 요약합니다.</p>
+
+
+  <p>SELECT의 예를 살펴보십시오. 아래로:</p>
+
+
+  <p><code>SELECT *</code></p>
+
+
+  <p><code>INTO [dbo].[FactInternetSales_new] </code></p>
+
+
+  <p><code>FROM [dbo].[FactInternetSales]</code></p>
+
+
+  <p><code>;</code></p>
+
+
+  <p>이 쿼리의 결과는 dbo라는 새로운 라운드 로빈 분산 클러스터형 columnstore 테이블이기도 합니다. FactInternetSales_new. 모두 완료되고 세 줄의 코드로 먼지가 쌓입니다. 좋습니다!</p>
+
+
+  <p>이제 아래의 해당 CTAS 문과 대조해 보겠습니다&rsquo;.</p>
+
+
+  <p><code>CREATE TABLE [dbo].[FactInternetSales_new] </code></p>
+
+
+  <p><code>WITH </code></p>
+
+
+  <p><code>( DISTRIBUTION = HASH(Product_key) </code></p>
+
+
+  <p><code>, HEAP</code></p>
+
+
+  <p><code>) </code></p>
+
+
+  <p><code>AS </code></p>
+
+
+  <p><code>SELECT * </code></p>
+
+
+  <p><code>FROM [dbo].[FactInternetSales]</code></p>
+
+
+  <p><code>;</code></p>
+
+
+  <p>이 쿼리의 결과는 dbo라는 새로운 해시 분산 힙 테이블입니다. FactInternetSales_new. CTAS를 사용하면 배포 키 및 테이블의 조직을 완전히 제어할 수 있습니다. 그러나 코드는 결과적으로 더 자세한 정보입니다. SELECT를 사용하여 INTO 코드는 크게 줄어들며 더 친숙할 수도 있습니다.</p>
+
+
+  <p>SELECT를 사용할 때 염두에 두어야 할 몇 가지 중요한 차이점이 있습니다. 에. 테이블 조직 또는 배포 방법을 제어하는 옵션은 없습니다. 선택.. 또한 INTO는 항상 라운드 로빈 분산 클러스터형 columnstore 테이블을 만듭니다. 또한 SQL Server 및 SQL Database 비교할 때 동작에 작은 차이가 있음을 주목할 가치가 있습니다. SQL Server SELECT를 SQL Database. INTO 명령은 힙 테이블(기본 테이블 만들기 구조)을 만듭니다. 그러나 SQL Data Warehouse에서 기본 테이블 형식은 클러스터형 columnstore이므로 기본 테이블 형식을 만드는 패턴을 따릅니다.</p>
+
+
+  <p>다음은 CTAS와 SELECT 간의 차이점에 대한 요약 테이블입니다. 에:</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0" width="827">
+      <tbody>
+          <tr>
+              <td valign="top" width="174">&nbsp;</td>
+              <td valign="top" width="305">CTAS</td>
+              <td valign="top" width="346">SELECT INTO</td>
+          </tr>
+          <tr>
+              <td valign="top" width="174">분산 키</td>
+              <td valign="top" width="305">모든(모든 권한)</td>
+              <td valign="top" width="346">ROUND_ROBIN</td>
+          </tr>
+          <tr>
+              <td valign="top" width="174">테이블 유형</td>
+              <td valign="top" width="305">모든(모든 권한)</td>
+              <td valign="top" width="346">클러스터형 COLUMNSTORE 인덱스</td>
+          </tr>
+          <tr>
+              <td valign="top" width="174">자세한 정도</td>
+              <td valign="top" width="305">상위(WITH 섹션 필요)</td>
+              <td valign="top" width="346">아래쪽(기본값이 수정되어 추가 코딩이 없음)</td>
+          </tr>
+          <tr>
+              <td valign="top" width="174">익숙도</td>
+              <td valign="top" width="305">하위(Microsoft 고객에게 최신 구문)</td>
+              <td valign="top" width="346">더 높음(Microsoft 고객에게 매우 친숙한 구문)</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이러한 약간의 차이와 변형에도 불구하고 SELECT를 포함하는 데는 여전히 몇 가지 이유가 있습니다. 코드의 INTO입니다.</p>
+
+
+  <p>제 생각에는 세 가지 주요 이유가 있습니다.</p>
+
+
+  <ol>
+      <li>대규모 코드 마이그레이션 프로젝트</li>
+      <li>대상 개체는 라운드 로빈 클러스터형 columnstore 인덱스입니다.</li>
+      <li>테이블의 단순 복제입니다.</li>
+  </ol>
+
+
+  <p>고객이 SQL Data Warehouse로 마이그레이션하는 경우 종종 기존 솔루션을 플랫폼으로 마이그레이션합니다. 이러한 경우 비즈니스의 첫 번째 순서는 SQL Data Warehouse에서 기존 솔루션을 가동하고 실행하는 것입니다. 이 경우 SELECT.. INTO는 충분히 좋을 수 있습니다. 두 번째 시나리오는 압축 코드 시나리오입니다. 여기서 round_robin 클러스터형 columnstore 테이블이 원하는 옵션일 수 있습니다. 이 경우 SELECT.. INTO는 구문적으로 훨씬 더 컴팩트합니다. 선택.. INTO를 사용하여 원본 테이블의 정의를 미러링하는 간단한 샌드박스 테이블을 만들 수도 있습니다. WHERE 1=2와 쌍을 이루면 빈 테이블도 만들어 행이 이동되지 않도록 할 수 있습니다. 파티션 전환 패턴을 구현할 때 빈 테이블을 만드는 데 유용한 기술입니다.</p>
+
+
+  <p>마지막으로 고객은 SELECT가 필요하다는 것을 깨닫지 못할 수도 있습니다. INTO 지원. 많은 고객이 SELECT에 대한 지원이 필요한 기성 ISV 솔루션을 사용합니다. 에. SELECT를 사용하여 자체 요약 테이블을 생성하는 롤업 비즈니스 인텔리전스 도구가 좋은 예입니다. 즉석에서 INTO. 이 경우 고객은 SELECT를 발급할 수 있습니다. 심지어 그것을 실현하지 않고 INTO 쿼리.</p>
+
+
+  <p>자세한 내용은 주요 차이점이 캡처되는 <a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-develop-ctas">CTAS에 대한 제품 설명서를</a> 참조하세요.</p>

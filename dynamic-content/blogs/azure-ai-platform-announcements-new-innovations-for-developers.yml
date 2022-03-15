@@ -1,0 +1,132 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 95576b5eebea2a5d65feb020816d42ba20249f52
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901813"
+Slug: azure-ai-platform-announcements-new-innovations-for-developers
+Title: 'Azure AI 플랫폼 발표: 개발자를 위한 새로운 혁신'
+Summary: 현재 Microsoft Build 2018에서는 100만 명이 넘는 개발자, 고객 및 파트너와 디지털 트랜스포메이션에 관한 대화를 나누면서 Azure AI Platform에서 가장 흥미로운 최신 혁신을 공유하게 되어 기쁩니다.
+Content: >-
+  <p>AI(인공 지능)는 디지털 트랜스포메이션에서 가장 강력한 힘 중 하나로 부상했습니다. Microsoft는 개발자, 데이터 과학자 및 기업이 <a href="https://news.microsoft.com/futurecomputed/" target="_blank">고유하고 차별화된 방식으로 인간의 독창성을 보강</a>하는 시스템을 구축할 수 있도록 AI의 힘에 쉽게 액세스할 수 있어야 한다고 믿습니다. 현재 Microsoft Build 2018에서는 100만 명이 넘는 개발자, 고객 및 파트너와 디지털 트랜스포메이션에 관한 대화를 나누면서 <a href="https://www.azure.com/ai" target="_blank">Azure AI Platform</a>에서 가장 흥미로운 최신 혁신을 공유하게 되어 기쁩니다.</p>
+
+
+  <p>Azure AI 플랫폼은 다음과 같은 세 가지 주요 기능 집합으로 구성됩니다.</p>
+
+
+  <p>1. <strong>AI 서비스</strong>(그림 1): 이러한 기능은 Azure Cognitive Services 및 Cognitive Search(Azure Search + 통합 Cognitive Services), Azure Bot Service와 대화형 AI, Azure Machine Learning(AML)를 사용한 사용자 지정 AI 개발과 같은&nbsp; 미리 빌드된 AI 기능에 걸쳐 있습니다.</p>
+
+
+  <p><img alt="AI_BUILD_1" border="0" height="531" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0cd4916a-5f9d-470e-a419-bff6f56c8b34.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AI_BUILD_1" width="1024"></p>
+
+
+  <p align="center"><em><strong>그림1: Azure의 AI 서비스</strong></em></p>
+
+
+  <p>2. <strong>AI 도구 &amp; 프레임워크</strong>: AI, Azure Notebooks, Data Science VM, <a href="https://studio.azureml.net/" target="_blank">Azure Machine Learning Studio 및 Azure IoT</a> Edge용 AI Toolkit 대한 Visual Studio <a href="https://aka.ms/aml-preview-page" target="_blank">도구</a>에 걸쳐 있습니다.</p>
+
+
+  <p>3. <strong>AI 인프라</strong>: <a href="https://azure.microsoft.com/en-us/product-categories/databases/" target="_blank">Azure Data Services</a>, <a href="https://azure.microsoft.com/en-us/services/container-service/" target="_blank">AKS(Azure Kubernetes Services)</a> 를 비롯한 컴퓨팅 서비스 및 GPU 및 FPGA를 포함한 AI 실리콘 지원에 걸쳐 있습니다.</p>
+
+
+  <p><strong>Cognitive Services</strong> 는 개발자가 음성 인식, 음성 합성, 비전, 언어 이해, 번역, 지식 및 검색과 같은 AI 기능을 쉽게 추가할 수 있도록 하는 클라우드 호스팅 API입니다. 오늘 Cognitive Services에서 몇 가지 흥미로운 새로운 혁신을 공개합니다.</p>
+
+
+  <ul>
+   <li>이제 <strong>비전 서비스는</strong> 사용자 고유의 데이터로 개체 검색을 사용자 지정하는 기능을 포함하여 크게 확장된 개체 검색 기능으로 업데이트됩니다. 이제 OCR 기능이 크게 향상되었으며 <a href="https://aka.ms/acombvs" target="_blank">Bing Visual Search</a>는 이제 이미지를 쿼리로 검색할 수 있는 API를 제공합니다(그림 2). 또한 비디오 스트림을 이해하고 인덱싱할 수 있는 강력한 기능인 Video Indexer의 공개 미리 보기를 발표합니다.</li>
+   <li>학습 가능한 사용자 지정 음성 인식, 사용자 지정 음성 합성 및 사용자 지정 음성 번역기와 같은 새로운 사용자 지정 기능이 포함된 통합 음성 <a href="https://aka.ms/acomspeech" target="_blank"><strong>서비스를</strong></a> <strong>시작 </strong> 합니다.</li>
+   <li><strong>또한&rsquo;</strong> Edge 및 모바일 디바이스에서 배포를 지원하기 위해 Custom Vision 모델을 내보내는 기능을 사용하여 에지 AI 기능을 추가했습니다.</li>
+  </ul>
+
+
+  <p><img alt="AI_BUILD2018_2" border="0" height="701" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/33b99af3-6b68-4279-a94a-5c6494321c55.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AI_BUILD2018_2" width="1024"></p>
+
+
+  <p align="center"><strong><em>그림2: Bing Visual Search와 유사한 이미지 결과, Bing</em></strong></p>
+
+
+  <p>현재까지 100만 명 이상의 개발자가 주요 자동차 보험 제공업체 <a href="https://progressive.mediaroom.com/2017-10-17-Want-to-chat-with-Flo-Progressive-Announces-New-Auto-Insurance-Bot" target="_blank">인 프로그레시브</a>, <strong>브리티시 텔레콤, Box.com, KPMG 및 빅 피쉬 게임을</strong> 포함한 Cognitive Services를 이미 발견하고 시도했습니다. 자세히 알아보고 AI가 주입된 앱을 바로 빌드하려면 <a href="https://azure.com/cognitive" target="_blank">Azure의 Cognitive Services 사이트</a> 와 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services" target="_blank">설명서 페이지를</a> 방문하세요.</p>
+
+
+  <h2>모든 개발자를 위한 검색 기능 활용</h2>
+
+
+  <p>AI 투자의 또 다른 주요 영역은 인터넷에서 세계&rsquo; 지식을 검색하든, 사용자 고유의 회사 데이터 리포지토리를 검색하든 검색 &ndash; 을 중심으로 진행되었습니다. 이제 간단한 Bing Search API 집합을 통해 모든 개발자는 웹 페이지, 비디오, 이미지, 뉴스 등에 대한 인터넷을 쿼리하는 기능을 추가할 수 있습니다.&nbsp; 이러한 API를 몇 줄의 코드로 모든 앱에 포함할 수 있으며 사용자가 지구의 지식에서 올바른 정보를 실시간으로 찾을 수 있도록 도와줍니다. 업로드, 인덱싱 및 검색하려는 비공용 데이터의 경우 <a href="https://azure.microsoft.com/en-us/services/search/" target="_blank">Azure Search</a> 는 관리되는 탄력적 클라우드 검색 서비스를 제공합니다.</p>
+
+
+  <p>오늘 Azure Search와 긴밀하게 통합된 콘텐츠 이해에 대한 AI 우선 접근 방식인 <a href="https://azure.microsoft.com/en-us/blog/announcing-cognitive-search-azure-search-cognitive-capabilities/" target="_blank">Cognitive Search</a><strong>(그림 3)</strong>라는 새로운 기능을 발표합니다. Azure Portal에서 사용할 수 있는 개발자는 몇 분 안에 검색 인덱스에서 0부터 AI 보강 콘텐츠로 이동할 수 있습니다. 기본 제공 파일 판독기(PDF, Office 형식 등) 및 OCR(필기 및 인쇄 텍스트), 엔터티 인식, 핵심 구 추출, 언어 감지, 태그를 반환하는 이미지 분석, 설명 및 얼굴 등에 대한 인식 기술을 지원합니다. 웹후크를 기반으로 하는 확장성이 기본 제공되어 개발자가 Cognitive Search 프레임워크 내에 머무르는 동안 기능을 추가할 수 있습니다. 다양한 Azure 데이터 원본에서 데이터를 가져오고, 인지 기술로 지식을 추출한 다음, 검색 인덱스에 이 지식을 구성하고 저장하여 데이터를 탐색할 수 있는 새로운 환경을 구현할 수 있습니다.</p>
+
+
+  <p>다음은 고객이 Cognitive Search를 활용하는 방법에 대한 몇 가지 예입니다.</p>
+
+
+  <ul>
+   <li><strong>의료</strong> 기관은 인지 검색을 적용하여 대량의 텍스트를 지능적으로 인덱싱합니다. 여기에는 연결되고 관련되어야 하는 일반 엔터티(예: 병원 이름) 및 도메인별 엔터티(예: 약물 및 질병 이름)에 대한 참조가 포함됩니다.</li>
+   <li><strong>금융 서비스는</strong> 인지 검색을 적용하여 직원과 고객에게 스캔한 문서를 포함한 정보 자산에 대한 글로벌 보기를 제공합니다.</li>
+   <li><strong>기름 &amp; 가스</strong> 회사는 장소, 사람(도메인 전문가), 이벤트, 이미지를 연결하고 이 모든 정보를 탐색하여 주요 결정을 내릴 수 있습니다.</li>
+  </ul>
+
+
+  <p><img alt="AI_BUILD2018_3" border="0" height="634" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c6f05b73-0168-4419-bff4-b0e7f60ff903.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AI_BUILD2018_3" width="1024"></p>
+
+
+  <p align="center"><strong><em>그림3: 콘텐츠 이해에 대한 AI 우선 접근 방식인 Cognitive Search</em></strong></p>
+
+
+  <p>자세한 내용을 알아보고 빌드를 시작하려면 Azure Portal로 이동하여 <a href="https://portal.azure.com/" target="_blank">Azure Search 서비스를</a>&rsquo; 만들고 데이터 가져오기 흐름에서 &ldquo;Cognitive Search&rdquo; 단계를 확인합니다. <a href="https://docs.microsoft.com/en-us/azure/search" target="_blank">설명서를</a> 확인하여 더 많은 인지 기술을 사용하는 방법과 사용자 고유의 데이터로 보강 프로세스를 확장하는 방법을 알아봅니다. 공용 데이터 세트에 Cognitive Search를 적용한 시나리오를 살펴보려면 <a href="https://ailab.microsoft.com/experiments/7d6b0652-51dc-440d-a12a-481f28525143" target="_blank">AI.lab에서 JFK 파일 데모를</a> 확인하세요. 빌드하려는 항목의 시작점으로 사용하려는 경우 <a href="https://jfk-demo.azurewebsites.net/" target="_blank">JFK Files 애플리케이션의 라이브 버전을</a> 게시하고 <a href="https://github.com/Microsoft/AzureSearch_JFK_Files" target="_blank">GitHub 코드를</a> 게시했습니다.</p>
+
+
+  <p><strong>대화형 AI</strong> 는 컴퓨팅에서 다음 사용자 인터페이스 웨이브를 예고하고 있습니다. Weve&rsquo;는 컴퓨터를 배우고 적응해야 하는 세계에서 컴퓨터가 대화형으로 우리를 이해하고 상호 작용하는 법을 배울 수 있는 세계로 발전했습니다. 이러한 상호 작용은 언어, 음성 및 의미 체계 이해로 시작되며, 이제 제스처를 포함한 다양한 다중 모달 상호 작용으로 확장되고 있습니다.</p>
+
+
+  <p>현재 <a href="https://azure.com/bots" target="_blank">는 Azure Bot Service</a>, <a href="https://github.com/Microsoft/botbuilder" target="_blank">Bot Builder SDK v4</a>에 대한 업데이트를 포함하여 대화형 AI 도구와 관련된 주요 업데이트를 발표합니다. 공개 미리 보기, QnAMaker의 일반 공급 및 <a href="https://labs.cognitive.microsoft.com/en-us/project-gesture" target="_blank">Project 제스처, Project</a> <a href="https://go.microsoft.com/fwlink/?linkid=872337&amp;clcid=0x409" target="_blank">성격 채팅</a> 및 Project <a href="https://go.microsoft.com/fwlink/?linkid=872337&amp;clcid=0x409" target="_blank">Conversation Learner</a>와 같은 <a href="https://labs.cognitive.microsoft.com/" target="_blank">Cognitive Services 랩</a>의 새로운 실험 프로젝트 릴리스. 성격 채팅은 작은 대화를 처리하고 덜 맛 있는 대체 응답을 줄임으로써 지능형 에이전트를 보다 완전하고 대화형으로 만드는 데 도움이 됩니다. 당신은 당신의 에이전트가 Professional 세 가지 성격 &ndash; 중 하나의 맛에 작은 이야기를 할 수 있습니다, 친절, 유머. <a href="https://labs.cognitive.microsoft.com/en-us/project-personality-chat" target="_blank">Personality Chat Cognitive Labs</a>에서 데모를 사용해 보고 응답 생성 기술에 대해 알아봅니다. 가장 일반적인 100가지 소규모 대화 시나리오의 사용자 지정 가능한 편집 라이브러리를 <a href="https://github.com/Microsoft/botbuilder" target="_blank">Bot Builder SDK v4</a>와 통합할 수 있습니다. 이 <a href="https://azure.microsoft.com/en-us/blog/microsoft-empowers-developers-with-new-and-updated-cognitive-services" target="_blank">블로그 게시물</a> 은 모든 대화형 AI 공지 사항에 대한 자세한 내용을 제공하고 새로 업데이트된 서비스 중 일부를 설명합니다.</p>
+
+
+  <h2>Azure Machine Learning 업데이트(Azure ML)</h2>
+
+
+  <p>오늘 Azure ML 대한 강력한 새로운 기능 집합도 발표합니다.</p>
+
+
+  <ul>
+   <li><strong>Python용 Azure ML SDK(미리 보기)</strong>: 이 SDK는 데이터 과학자에게 단일 컨트롤 플레인 API를 제공하여 Python에서 프로비전 컴퓨팅, 모델 학습, 모델 배포 및 점수 매기기의 주요 AML 워크플로를 실행합니다. TensorFlow, CNTK, Scikit-learn 등을 비롯한 모든 Python 호환 프레임워크를 지원하는 다양한 CPU/GPU 구성을 지원하는 서버리스 패브릭에서 크기 조정 작업을 간단하고 원활하게 디스패치하고 관리할 수 있습니다. SDK는 모든 팀&rsquo; 실험을 보고, 빠르게 나란히 비교하고, 배포하려는 모델을 선택할 수 있는 단일 창을 제공하는 AML 실험 서비스에 완전히 통합되어 있습니다. </li>
+   <li><strong>Computer Vision, 재무 예측 및 텍스트 분석용 Azure ML 패키지(그림 4)(미리 보기).</strong> Microsoft의 데이터 과학 팀은 여러 데이터 및 고객 시나리오에 대해 수년간 작업해 왔습니다. 이 과정에서 모든 조직이 직면하고 있는 문제를 해결하는 일반적인 접근 방식을 파악하고 이러한 인사이트에서 특정 패키지 알고리즘을 개발했습니다. <strong>Azure ML 패키지는</strong> 딥 러닝 시나리오를 가속화하고 데이터 과학자가 매우 정확하고 효율적인 모델을 쉽게 빌드, 학습, 미세 조정 및 배포할 수 있도록 하는 다양한 Python pip 설치 가능 확장 집합을 Azure ML 나타냅니다. 자세한 내용을 알아보고 시작하려면 AML 패키지 개요 - <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/reference-python-package-overview?branch=release-build-2018-aml" target="_blank">Azure Machine Learning 및 AML</a> <a href="https://review.docs.microsoft.com/en-us/python/api/overview/azure-machine-learning/" target="_blank">패키지용 Python 패키지 Python 참조 API</a>를 방문하세요.</li>
+  </ul>
+
+
+  <p><img alt="AI_BUILD2018_4" border="0" height="512" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0e7a6d94-69f2-4bad-b73c-0d6945f7143a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AI_BUILD2018_4" width="1024"></p>
+
+
+  <p align="center"><strong><em>그림 4: Computer Vison, 재무 예측 및 Text Analytics용 Azure ML 패키지</em></strong></p>
+
+
+  <ul>
+   <li><strong>ML.NET(그림 5)</strong>은 현재 미리 보기로 제공되며. .NET 개발자를 위한 플랫폼 간 오픈 소스 ML Framework입니다. Microsoft에서 Machine Learning 최신의 최고의 혁신을 위한 엔터프라이즈급 소프트웨어 라이브러리입니다. Bing, Office 및 Windows 팀은 데이터 수집, 기능화, 변환, 모델 학습, 자동 ml 및 파이프라인 배포를 포함하여 데이터 과학 파이프라인의 모든 단계에 걸쳐 있는 여러 데이터 및 고객 시나리오에서 수년 동안 ML.NET을 사용해 왔습니다. 자세한 내용을 알아보고 시작하려면 방문하세요 <a href="https://github.com/dotnet/machinelearning">https://github.com/dotnet/machinelearning</a>.</li>
+  </ul>
+
+
+  <p><img alt="AI_BUILD2018_5" border="0" height="525" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ac8e7ab-c317-4639-9658-7c186e342f20.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AI_BUILD2018_5" width="1024"></p>
+
+
+  <p align="center"><strong><em>그림 5: .NET용 플랫폼 간 오픈 소스 기계 학습 프레임워크인 ML.NET</em></strong></p>
+
+
+  <p><strong>Project Brainwave를 사용한 Azure ML</strong>: Azure ML 통합된 <strong>Project Brainwave의 미리 보기를</strong> 다시 발표할&#39;있습니다(그림 6). Brainwave는 하드웨어 가속을 통해 초고속 AI를 가능하게 하는 심층 신경망 처리를 위한 아키텍처입니다. 처음에는 매우 짧은 대기 시간 추론 및 전송 학습을 위해 Intel FPGA 하드웨어의 ResNet50 기반 신경망을 지원합니다. 내부 성능 메트릭에 따라 Project Brainwaves&rsquo; 약속은 특히 단일(일괄 처리 크기 1) 유추의 경우 업계에서 실시간 AI에 대한 가장 낮은 대기 시간 및 최저 비용입니다.</p>
+
+
+  <p><img alt="AI_BUILD2018_6" border="0" height="504" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/915150b2-7a46-4082-8132-2e2a3e320b0a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AI_BUILD2018_6" width="1024"></p>
+
+
+  <p align="center"><strong><em>그림 6: 클라우드 규모에서 Real-Time AI 추론을 위한 AML 및 Project Brainwave</em></strong></p>
+
+
+  <p>이러한 공지 사항은 전 세계의 모든 개발자와 모든 조직에 AI를 제공하고 기업이 독특하고 차별화된 방식으로 인간의 독창성을 보강하는 데 도움이 되는 지속적인 임무의 일부입니다. <a href="https://www.microsoft.com/ai" target="_blank">www.azure.com/ai</a> 및 <a href="https://aischool.microsoft.com/" target="_blank">AI School</a>을 방문하여 AI가 디지털 트랜스포메이션 노력을 보강하고 역량을 강화하는 방법에 대해 자세히 알아보겠습니다.</p>
+
+
+  <p><img alt="AI_BUILD2018_7" border="0" height="399" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c316f56-a91d-4b2b-9450-cbcabc2315a6.png" style="margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="AI_BUILD2018_7" width="1028"></p>
+
+
+  <p>조셉<br>
+
+  @josephsirosh</p>

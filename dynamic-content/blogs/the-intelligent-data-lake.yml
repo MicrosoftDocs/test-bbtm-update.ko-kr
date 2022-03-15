@@ -1,0 +1,158 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b55813ee2b43f48a7de791ae151e4eb8dc21862f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908736"
+Slug: the-intelligent-data-lake
+Title: 인텔리전트 데이터 레이크
+Summary: Azure Data Lake의 일반 공급은 빅 데이터 개발자와 과학자를 위한 새로운 생산성 시대를 안내합니다.
+Content: >-
+  <h2>Azure Data Lake를 사용하여 페타바이트 크기의 파일 및 수조 개의 개체에 대한 고급 분석 및 Cognitive Intelligence</h2>
+
+
+  <p>오늘 Azure Data Lake의 일반 공급이 발표되어 빅 데이터 개발자와 과학자를 위한 새로운 생산성 시대가 시작됩니다. 오늘날의&rsquo; 클러스터 기반 솔루션과 근본적으로 다른 Azure Data Lake 서비스를 사용하면 모든 데이터를 중앙에 안전하게 저장하여 제한 없는&rdquo; 데이터 레이크에 &ldquo;저장하고 요구 사항에 맞게 즉시 확장되는 주문형 분석을 실행할 수 있습니다. Microsoft의 최첨단 개발 환경과 풍부하고 확장 가능한 U-SQL 언어를 사용하면 기존 솔루션의 시간의 일부에 불과한 대규모 병렬 분석 프로그램을 작성, 디버그 및 최적화할 수 있습니다.</p>
+
+
+  <h2>Azure Data Lake 이전</h2>
+
+
+  <p>빅 데이터 분석에 대한 기존의 접근 방식은 기본 도구를 사용하여 코드를 작성하고, 디버깅하고, 최적화하는 &amp; 데 소요된 시간으로 인해 데이터 개발자와 과학자의 생산성을 제한합니다. 또한 키 구 추출, 감정 분석, 이미지 태그 지정, OCR, 얼굴 감지 및 감정 분석과 같은 풍부한 기본 제공 인식 기능이 부족합니다. 기본 스토리지 시스템은 또한 해결 방법을 빌드해야 하는 파일 및 계정 크기에 대한 인위적인 제한과 관련된 문제를 부과합니다. 또한 개발자&rsquo;는 시스템을 최적화하는 데 귀중한 시간을 보내거나 사용하지 않는 클러스터 용량에 대해 초과 지불하게 됩니다. 이러한 기존 시스템의 마찰이 너무 높기 때문에 기업은 빅 데이터에서 약속하는 비즈니스 변환을 효과적으로 실현할 수 없습니다.</p>
+
+
+  <h2>Azure Data Lake 사용</h2>
+
+
+  <p>수천 명의 고객을 보유하고 있는 Azure Data Lake는 가장 빠르게 성장하는 Azure 서비스 중 하나가 되었습니다. <strong>Azure Data Lake Analytics</strong> 및 <strong>Azure Data Lake Store</strong>의 <strong>일반 공급</strong>으로 빅 데이터 생산성 및 확장성의 새로운 시대를 시작할 수 있습니다.</p>
+
+
+  <ul>
+   <li><strong>Azure Data Lake Store</strong> &ndash; 안전하고 대규모로 확장 가능하며 개방형 HDFS 표준으로 빌드된 엔터프라이즈를 위한 첫 번째 클라우드 Data Lake입니다.&nbsp; 데이터 크기와 대규모 병렬 분석을 실행할 수 있는 기능에 제한이 없으므로 이제 모든 비정형, 반구조화 및 구조화된 데이터에서 값을 잠금 해제할 수 있습니다.</li>
+   <li><strong></strong> &ndash; Azure Data Lake Analytics 페타바이트 단위의 데이터를 통해 U-SQL, R, Python 및 .NET에서 대규모 병렬 데이터 변환 및 처리 프로그램을 쉽게 개발하고 실행할 수 있는 최초의 클라우드 분석 작업 서비스입니다. 이미지 태그 지정, 감정 감지, 얼굴 감지, 텍스트에서 의미 파생, 모든 유형의 분석으로 확장할 수 있는 감정 분석과 같은 풍부한 기본 제공 인식 기능이 있습니다. Azure Data Lake Analytics 사용하면 관리할 인프라가 없으며 주문형 데이터를 처리하고 즉시 크기를 조정하며 작업당 지불만 할 수 있습니다.</li>
+   <li><strong>Azure HDInsight</strong> &ndash; 99.9% SLA를 통해 지원되는 Spark, Hive, Map Reduce, HBase, Storm, Kafka 및 R-Server에 최적화된 오픈 소스 분석 클러스터를 제공하는 유일한 완전 관리형 클라우드 Hadoop 제품입니다. 오늘, R+Spark를 사용하여 고급 분석 및 예측 모델링을 수행하는 HDInsight용 R Server의 일반 공급이 발표됩니다. 또한 Kafka를 사용한 실시간 수집을 위한 클라우드의 첫 번째 관리형 클러스터 솔루션인 HDInsight용 Kafka의 공개 미리 보기를 소개합니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/134d5808-d70b-4db2-97f8-1061211cd82f.png"><img alt="Azure Data Lake_2" border="0" height="343" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/571f2d03-6e94-43ad-b02c-5ec6b337a3d0.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="Azure Data Lake_2" width="610"></a></p>
+
+
+  <h2>Data Lake Store - 빅 데이터 분석을 지원하는 제한 없음 Data Lake</h2>
+
+
+  <h3>페타바이트 크기의 파일 및 수조 개의 개체</h3>
+
+
+  <p>이제 Azure Data Lake Store를 사용하면 조직에서 인위적인 제약 없이 중앙 위치의 모든 데이터를 안전하게 캡처하고 분석하여 비즈니스 성장을 제한할 수 있습니다. 단일 파일 크기가 페타바이트보다 클 수 있는 수조 개의 파일을 관리할 수 있습니다. 이는 다른 클라우드 개체 저장소보다 <strong>200배 더 큰</strong> 파일 크기입니다. 다른 클라우드 제품을 제한하는 제한이 없으면 Data Lake Store는 모든 유형의 데이터를 관리하는 데 적합합니다. 에는 고해상도 비디오, 게놈 및 지진 데이터 세트, 의료 데이터 및 다양한 산업의 데이터와 같은 대규모 데이터 세트가 포함됩니다. Data Lake Store는 현재와 미래의 분석을 구동할 수 있는 엔터프라이즈 데이터 레이크입니다.</p>
+
+
+  <p><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/173319ba-d80c-4b13-8e79-a79f428c87b0.png"><img align="left" alt="DS-IQ2" border="0" height="57" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2e09ca69-dda7-4cac-ae62-9de66eed1cf5.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: left; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="DS-IQ2DS-IQ" width="214"></a>&ldquo;는 날씨, 건강, 트래픽 및 경제 추세와 같은 다량의 비관계형 원본에서 데이터를 큐레이팅하여 동적 쇼퍼 인텔리전스를 제공하므로 고객에게 가장 효과적인 마케팅 및 서비스 통신을 추진하기 위한 실행 가능한 인사이트를 제공할 수 있습니다. Azure Data Lake는 주문형으로 몇 분 내에 페타바이트 단위의 데이터로 탄력적으로 확장할 수 있으므로 완벽했습니다. 이러한 확장성과 성능은 우리에게 깊은 인상을 주며, 현재 처리해야 하는 데이터의 양을 처리할 수 있다는 확신을 주며, 앞으로는 클라이언트에게 더욱 가치 있고 역동적인 컨텍스트 인식 환경을 제공할 수 있습니다.&rdquo;</em> -윌리엄 우, DS-IQ의 최고 기술 책임자</p>
+
+
+  <h3>대규모 병렬 분석을 위한 확장성</h3>
+
+
+  <p>Data Lake Store는 수백 테라바이트의 데이터를 효율적으로 읽고 쓰는 수천 개의 동시 실행기를 사용하여 분석 작업을 실행하는 데 엄청난 처리량을 제공합니다. Data Lake Store는 모든 워크로드 크기를 지원하기 위해 처리량을 조정하므로 더 이상 애플리케이션을 다시 디자인하거나 데이터를 다시 분할할 필요가 없습니다. Data Lake Analytics, HDInsight 또는 HDFS 규격 애플리케이션과 같은 여러 서비스는 동일한 데이터를 동시에 효율적으로 분석할 수 있습니다.</p>
+
+
+  <p><em><img align="left" alt="Ecolab" border="0" height="38" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ad4c11ff-9c19-464f-ae65-c87f9f755908.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: left; padding-top: 0px; padding-left: 0px; margin: 0px 12px 12px 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="EcolabEcolab" width="191">&ldquo;은 깨끗한 물, 안전한 음식, 풍부한 에너지 및 건강한 환경에 가장 큰 도전과제 &ndash; 중&rsquo; 일부에 대한 해결책을 찾는 야심 찬 임무를 가지고 있습니다.&nbsp; &ldquo; Azure Data Lake는 IoT 디바이스에서 실시간 데이터를 수집하는 수자원 부서에 배포되어 고객이 물을 줄이고, 재사용하고, 재활용하는 방법을 이해하고, 세계에서&rsquo; 가장 시급한 지속 가능성 문제 중 하나를 해결하는 데 도움을 줄 수 있습니다. Weve&rsquo;는 필요한 양의 데이터를 저장할 수 있고 기존 기술을 사용하여 데이터를 분석할 수 있으므로 Azure Data Lake에 깊은 인상을 받았습니다. 현재는 HDInsight의 Spark와 같은 오픈 소스 기술을 사용하여 분석을 수행하는 그룹과 U-SQL 사용하는 다른 그룹을 두 그룹 모두 SQL 간소화하여 C#의 확장성을 활용합니다.&rdquo;</em> -Kevin Doyle, IT 부사장, 이콜랩의 글로벌 산업 솔루션</p>
+
+
+  <h2>Data Lake Analytics - 지능형 작업을 구동하는 주문형 분석 작업 서비스</h2>
+
+
+  <h3>몇 초 만에 시작, 즉시 크기 조정, 작업당 지불</h3>
+
+
+  <p>주문형 서비스에는 데이터 개발자와 과학자가 빅 데이터 작업을 처리하여 몇 초 만에 지능형 작업에 전력을 공급할 수 있습니다. 대기, 관리 또는 튜닝할 서버, VM 또는 클러스터가 없으므로 걱정할 인프라가 없습니다. 각 작업에 대해 분석 단위(처리 능력)를 즉시 1개에서 수백 또는 수천 개까지 적용하거나 조정합니다. 작업당 사용되는 처리에 대해서만 비용을 지불하면 중요한 개발자가 몇 주에서 몇 달까지 걸릴 수 있는 클러스터 기반 시스템에 필요한 용량 계획 및 최적화를 수행할 수 있습니다.</p>
+
+
+  <p><em><img align="left" alt="devicedesk" border="0" height="46" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/320258ea-17cc-499b-997e-e8516f8bf8c1.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: left; padding-top: 0px; padding-left: 0px; margin: 0px 12px 12px 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="devicedeskAzure" width="147">&ldquo; Data Lake는 Insightcentr가 PC에서 실시간으로 IoT 규모의 원격 분석을 수집하고 빅 데이터 클러스터를 처음부터 구축하는 데 수백만 달러를 지출하지 않고도 고객에게 자세한 분석을 제공하는 데 도움이 되므로 중요한 역할을 합니다. Azure Data Lake는 고객에게 이러한 귀중한 인사이트를 비즈니스에 제공할 수 있는 가장 빠르고 확장 가능한 방법으로 보았습니다.&rdquo;</em> -앤서니 스티븐스, CEO 호주 스타트업 디바이스데스크</p>
+
+
+  <h3>단순성을 사용하여 대규모 병렬 분석 프로그램 개발</h3>
+
+
+  <p>U-SQL 사용하기 쉽고 표현력이 뛰어나며 확장 가능한 언어로, 코드를 한 번 작성하고 필요한 규모에 맞게 자동으로 병렬화할 수 있습니다. 개발자는 클러스터, 노드, 매퍼 및 리듀서 등을 다루는 하위 수준 코드를 작성하는 대신 선언적 기술 및 명령적 기술을 원하는 대로 사용하여 비즈니스를 위해 데이터를 변환하는 방법에 대한 간단한 논리적 설명을 작성합니다. U-SQL 데이터 처리 시스템은 개발자가 슬라이더의 단순성으로 병렬 계산에 전념하는 리소스의 양을 제어할 수 있도록 코드를 &ndash; 자동으로 병렬 처리합니다. U-SQL 언어는 확장성이 뛰어나며 .NET 언어, R 또는 Python과 같은 다양한 언어로 작성된 기존 라이브러리를 다시 사용할 수 있습니다. ETL, 기계 학습, 기능 엔지니어링, 이미지 태그 지정, 감정 감지, 얼굴 감지, 텍스트에서 의미 파생 및 감정 분석과 같은 다양한 워크로드 범주에 대해 페타바이트 단위의 데이터를 처리하는 코드를 대규모로 병렬 처리할 수 있습니다.</p>
+
+
+  <p><em><img align="left" alt="PureCars" border="0" height="62" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c20ae55-bb27-4010-addb-a3b5899e257d.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: left; padding-top: 0px; padding-left: 0px; margin: 0px 12px 12px 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="PureCarsAzure" width="62">&ldquo; Data Lake를 사용하면 현재 개발자 전문 지식을 통해 대규모 데이터 집합을 빠르게 개발할 수 있습니다. 우리는 Azure Data Lake Analytics 활용하여 동적 마케팅 플랫폼에 대한 대규모 마케팅 대상을 포착하고 처리할 수 있었습니다.&quot;</em> -McPherson White, PureCars 개발 이사</p>
+
+
+  <h3>페타바이트 스케일에서 빅 인식 실행</h3>
+
+
+  <p>또한 weve&rsquo;는 U-SQL 내에서 <a href="https://www.microsoft.com/cognitive-services/en-us/apis" target="_blank">Cognitive Services API</a> 뒤에 있는 기술을 직접 통합했습니다. 이제 Azure Data Lake를 사용하여 구조화되지 않은 데이터(예: 텍스트, 이미지)를 처리하고 감정, 연령 및 모든 종류의 기타 인지 기능을 추출하고 콘텐츠별로 쿼리를 수행할 수 있습니다. 이미지 콘텐츠의 감정을 다른 유형의 데이터와 조인할 수 있으며, 이를 통해 매우 강력한 분석 및 인텔리전스를 수행할 수 있습니다. 이것이 우리가 <strong><em>큰 인식&rsquo;이라고 부르는&lsquo;</em></strong> 것입니다. 감정&rsquo; 이해 또는 이미지에 개체가 있는지 여부&rsquo;뿐만 아니라 추출된 모든 인지 데이터를 다른 유형의 데이터와 조인하는 것이 아니라&rsquo; 한 번에 하나의 인지 정보를 추출하는 것뿐만 아니라 실제로 강력한 분석을 수행할 수 있습니다. <a href="https://channel9.msdn.com/Events/Machine-Learning-and-Data-Sciences-Conference/Data-Science-Summit-2016" target="_blank">Microsoft Ignite</a> 및 PASS Summit에서는 Azure Data Lake Analytics 내부의 U-SQL 사용하여 <a href="https://blogs.msdn.microsoft.com/azuredatalake/2016/08/18/introducing-image-processing-in-u-sql/" target="_blank">100만 개의 이미지를 처리</a>하고 해당 이미지 내의 내용을&rsquo; 이해하는 Big Cognition 데모를 보여 줌으로써 이 기능을 입증했습니다. <a href="https://www.youtube.com/watch?v=UUulQYalpxU&amp;feature=youtu.be&amp;t=2268" target="_blank">여기에서</a> 이 데모를 시청하고 <a href="https://github.com/Azure/usql/tree/master/Examples/ImageApp" target="_blank">GitHub 샘플 프로젝트를</a> 사용하여 직접 사용해 볼 수 있습니다.</p>
+
+
+  <h3>빅 데이터 프로그램을 쉽게 디버그 및 최적화</h3>
+
+
+  <p>오늘날의&rsquo; 도구를 통해 개발자는 분산 프로그램을 디버깅하는 데 심각한 어려움을 겪습니다. Azure Data Lake는 Visual Studio 내의 강력한 도구를 사용하여 개인 환경에서 프로그램을 디버깅하는 것처럼 클라우드 분산 프로그램의 디버깅 오류를 쉽게 만듭니다. 개발자는 더 이상 각 컴퓨터에서 오류를 검색하는 수천 개의 로그를 검사할 필요가 없습니다. U-SQL 작업이 실패하면 로그가 자동으로 배치, 구문 분석 및 오류와 관련된 정확한 구성 요소로 필터링되고 시각화로 사용할 수 있습니다. 개발자는 클라우드에 작업을 다시 전송하는 데 시간과 비용을 낭비하지 않고도 자체 로컬 워크스테이션에 실패한 U-SQL 작업의 특정 부분을 디버그할 수도 있습니다. Microsoft 서비스는 빅 데이터 개발자가 불균형 데이터 분할과 같이 발생하는 일반적인 성능 문제를 감지하고 분석할 수 있으며, Microsofts&rsquo; Data Lake에서 10억 개 이상의 작업을 분석하는 데 수집된 인텔리전스&rsquo; 웹을 사용하여 프로그램을 수정할 수 있는 제안을 제공합니다.</p>
+
+
+  <p>개발자는 빅 데이터 시스템을 최적화할 때 많은 작업을 수행하고 사용되지 않는 클러스터 용량에 대해 자주 초과 지불합니다. 개발자는 데이터 변환을 수동으로 최적화해야 하며, 데이터를 단계별로 변환하는 방법을 신중하게 조사해야 하며, 종종 개선을 위해 수동으로 단계를 주문해야 합니다. 성능 및 규모 병목 현상을 이해하는 것은 어려운 일이며 분산 컴퓨팅 및 인프라 전문가가 필요합니다. 예를 들어 성능을 향상시키려면 개발자는 클러스터 간에 데이터 이동의 시간 &amp; 비용을 신중하게 고려하여 쿼리를 다시 작성하거나 데이터를 다시 분할해야 합니다. Data Lakes&rsquo; 실행 환경은 프로그램을 실행할 때 적극적으로 분석하고 성능을 향상시키고 비용을 절감하기 위한 권장 사항을 제공합니다. 예를 들어 프로그램에 대해 1000개의 AU를 요청했고 50개의 AU만 필요한 경우 시스템에서는 50개의 AU만 사용하여 20배의 비용을 절감하는 것이 좋습니다.</p>
+
+
+  <p><em><img align="left" alt="Plexure" border="0" height="62" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ff7c9ed4-ae4f-471c-9fec-75b728af2d46.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: left; padding-top: 0px; padding-left: 0px; margin: 0px 12px 12px 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="PlexureWe" width="107">&ldquo;는 모바일, 웹, IoT 및 소매 트랜잭션에서 대량의 라이브 데이터를 수집합니다. Data Lake는 모든 것을 쉽고 비용 효율적으로 저장하고 필요할 때 필요한 것을 분석할 수 있는 기능을 제공합니다. U-SQL 쿼리에서 병렬 처리를 간단하게 진행하면 데이터와의 싸움의 기술적 복잡성이 제거되고 팀이 비즈니스 결과에 집중할 수 있습니다. 이제 한 단계 더 나아가 강력한 Data Lake 도구를 소프트웨어의 클라이언트에 직접 노출하여 이러한 도구를 사용하여 데이터를 보다 쉽게 탐색할 수 있습니다.&rdquo;</em> -David Inggs, CTO at Plexure</p>
+
+
+  <p>오늘, 우리는 또한 사용자가 Windows, Mac OS X 및 Linux에서 사용할 수있는 무료 플랫폼 간 코드 편집기에서 이러한 유형의 생산성을 가질 수 있도록 Visual Studio Code 빅 데이터 생산성 환경의 가용성을 발표하고 있습니다.</p>
+
+
+  <h2>Azure HDInsight는 실시간 분석을 위한 완전 관리형 Kafka 및 고급 분석을 위한 R Server를 도입했습니다.</h2>
+
+
+  <p>Strata + Hadoop World New York에서는 엔터프라이즈급 클라우드 Hadoop을 위한 Azure HDInsights&rsquo; 리더십을 기반으로 하는 새로운 보안, 성능 및 ISV 솔루션을 <a href="https://azure.microsoft.com/en-us/blog/new-security-performance-and-isv-solutions-build-on-azure-hdinsight-s-leadership-to-make-hadoop-enterprise-ready-for-the-cloud/" target="_blank">발표</a>했습니다. 오늘 HDInsight용 Kafka의 공개 미리 보기를 발표합니다. 이 서비스를 사용하면 대량의 실시간 데이터를 수집하고 HDInsight 및 Azure IoT Hub용 Storm, Spark에 통합된 데이터를 분석하여 엔드투엔드 IoT, 사기 감지, 클릭 스트림 분석, 재무 경고 또는 소셜 분석 솔루션을 빌드할 수 있습니다.</p>
+
+
+  <p>또한 HDInsight용 R Server의 일반 공급도 발표합니다. Apache Spark를 기반으로 Microsoft R Server 서비스로 실행하면 개발자는 오픈 소스 R 언어와 Spark의 친숙함을 결합한 코드로 전례 없는 규모와 성능을 달성할 수 있습니다. R Server의 다중 스레드 수학 라이브러리 및 투명한 병렬 처리를 사용하면 오픈 소스 Rhelping&mdash;보다 최대 1,000배 더 많은 데이터와 최대 50배 빠른 속도를 처리할 수 있으므로 이전보다 더 나은 예측을 위해 보다 정확한 모델을 학습할 수 있습니다. GA에서 새로 사용할 수 있는 것은 R Studio Server Community Edition 기본 제공을 포함하므로 데이터 과학자가 빠르게 시작할 수 있습니다.</p>
+
+
+  <p><em><img align="left" alt="Milliman" border="0" height="61" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94f8dff5-e545-4b92-a565-473e8fdfdbaa.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: left; padding-top: 0px; padding-left: 0px; margin: 0px 12px 12px 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="MillimanMilliman" width="160">&ldquo;은 전 세계 주요 도시에 지사를 두고 있는 세계&rsquo; 최대의 보험 통계 및 관련 제품 및 서비스 제공업체 중 하나입니다. HDInsight용 R Server는 클라이언트가 이전보다 훨씬 더 큰 데이터 세트에 대한 위험을 예측할 수 있는 기능을 제공하여 비용 효율적인 방식으로 예측의 정확도를 향상합니다. 사용자에 대한 R 프로그래밍 언어의 친숙함과 전례없는 규모와 성능으로 실행되는 몇 분 내에 Hadoop 및 Spark 클러스터를 스핀업하는 기능은 HDInsight용 R Server에 대해 매우 흥분하게 됩니다.&rdquo;</em> -Paul Maher, Milliman의 생명 기술 솔루션 실무 최고 기술 책임자</p>
+
+
+  <h2>Enterprise 등급 보안, 감사 및 지원</h2>
+
+
+  <p>Enterprise 등급 빅 데이터 솔루션은 가동 시간 보장, 엄격한 보안, 거버넌스 &amp; 규정 준수 요구 사항을 충족하고 기존 IT 투자와 통합되어야 합니다. Data Lake 서비스(Store, Analytics 및 HDInsight)는 업계 최고의 가동 시간 SLA 99.9%와 모든 Data Lake 서비스에 대한 24/7 지원을 보장합니다. 중요한 회사 데이터 및 지적 재산을 저장하고 분석할 때 안심할 수 있도록 인증, 권한 부여, 감사 및 암호화를 위한 최고 수준의 보안으로 빌드됩니다. 데이터는 항상 암호화됩니다. SSL을 사용하여 이동 중이며, Azure Key Vault에서 서비스 또는 사용자 관리형 HSM 지원 키를 사용하여 미사용 시. SSO(Single Sign-On), 다단계 인증 및 온-프레미스 ID &amp; 액세스 관리의 원활한 관리와 같은 기능은 Azure Active Directory 통해 기본 제공됩니다. 스토어의 모든 데이터에 대해 세분화된 POSIX 기반 ACL을 사용하거나 HDInsight의 Apache Ranger를 사용하여 역할 기반 액세스 제어를 사용하도록 사용자 및 그룹에 권한을 부여할 수 있습니다. 모든 액세스 또는 구성 변경은 보안 및 규정 준수 요구 사항에 대해 자동으로 감사됩니다.</p>
+
+
+  <h2>오픈 소스 및 오픈 표준 지원</h2>
+
+
+  <p>Microsoft는 Apache <a href="https://azure.microsoft.com/en-us/blog/behind-the-scenes-of-azure-data-lake-bringing-microsoft-s-big-data-experience-to-hadoop/" target="_blank">Hadoop</a>, <a href="https://azure.microsoft.com/en-us/blog/apache-spark-for-azure-hdinsight-now-generally-available/" target="_blank">Spark</a>, Apache <a href="https://reef.apache.org/" target="_blank">REEF</a> 및 Jupyter Notebook 작업에 대한 기여를 반영하여 오픈 소스 커뮤니티와 계속 협력하고 있습니다. Azure Data Lake의 경우에도 해당됩니다.</p>
+
+
+  <p>Azure Data Lake Analytics Apache Hadoop의 중앙 부분인 Apache YARN을 사용하여 리소스 관리를 관리하고 일관된 작업을 제공합니다. YARN에 대한 혁신을 이끌기 위해 Microsoft는 성능 향상, 규모 확장 및 보안 혁신의 주요 기여자였습니다.</p>
+
+
+  <p><em><img align="left" alt="Hortonworks" border="0" height="51" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fd6df004-1318-4427-8419-a8a171a82331.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: left; padding-top: 0px; padding-left: 0px; margin: 0px 12px 12px 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="HortonworksHortonworks" width="121">&ldquo;와 Microsoft는 YARN, Hive 및 기타 Apache 프로젝트에 대한 기여를 포함하여 빅 데이터 분석을 위한 Hadoop 플랫폼을 발전하기 위해 지난 5년 동안 긴밀하게 협력해 왔습니다.&nbsp; Azure HDInsight 및 Azure Data Lake Store를 비롯한 Azure Data Lake 서비스는 모든 사람이 개방적이고 공동 작업 방식으로 빅 데이터로 쉽게 작업할 수 있도록 하기 위한 공동의 노력을 보여줍니다.&rdquo;</em> -숀 코놀리, 호튼웍스의 최고 전략 책임자</p>
+
+
+  <p>Data Lake Store는 개방형 Apache Hadoop HDFS(분산 파일 시스템) 표준을 지원합니다. Microsoft는 OAuth 2.0 프로토콜 지원과 같은 HDFS 개선에도 기여했습니다.</p>
+
+
+  <p><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d138ba9c-ede0-4a8e-8878-dbbee622d06f.png"><img align="left" alt="Cloudera" border="0" height="23" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aa22628a-9c5a-4539-a463-c8eab2fb8ca9.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: left; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="ClouderaCloudera" width="126"></a>&ldquo;는 Microsoft와 긴밀히 협력하여 Cloudera Enterprise Azure Data Lake Store와 통합하고 있습니다. Azure의 Cloudera는 엔터프라이즈 데이터 허브의 모든 데이터에 대한 클라우드 기반 랜딩 존 역할을 하는 Data Lake Store의 이점을 누릴 수 있습니다.&nbsp; Cloudera는 Data Lake를 활용하고 향후 고객에게 안전하고 유연한 빅 데이터 솔루션을 제공할 것입니다.&rdquo;</em> - 마이크 올슨, Cloudera의 설립자 겸 최고 전략 책임자</p>
+
+
+  <h2>리더십</h2>
+
+
+  <p>업계 분석가와 고객 모두 빅 데이터에서 Microsofts&rsquo; 기능을 인식합니다. Forrester는 최근 빅 데이터 Hadoop 클라우드 솔루션의 선두 주자로서 Microsoft Azure <a href="https://www.forrester.com/report/The+Forrester+Wave+Big+Data+Hadoop+Cloud+Solutions+Q2+2016/-/E-RES126541#figure4" target="_blank">인정</a>했습니다. Forrester는 리더가 가장 포괄적이고 확장 가능하며 통합된 플랫폼을 가지고 있다고 지적합니다. Microsoft는 특히 클라우드 우선 전략을 갖기 위해 호출되었습니다.</p>
+
+
+  <h2>Data Lake 시작</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/data-lake-analytics/" target="_blank">Data Lake Analytics</a> 및 <a href="https://azure.microsoft.com/en-us/services/data-lake-store/">Store</a> 는 현재 일반 공급됩니다. <a href="https://azure.microsoft.com/en-us/services/hdinsight/r-server/" target="_blank">HDInsight용 R 서버</a> 도 현재 일반 공급됩니다. <a href="https://azure.microsoft.com/en-us/services/hdinsight/apache-kafka/" target="_blank">HDInsight용 Kafka</a> 는 공개 미리 보기로 제공됩니다. 현재 개별적으로 또는 <a href="https://www.microsoft.com/en-us/cloud-platform/cortana-intelligence-suite" target="_blank">Cortana Intelligence Suite</a> 일부로 데이터를 지능형 작업으로 변환해 보세요.</p>
+
+
+  <ul>
+   <li>Data Lake Analytics의 <a href="https://azure.microsoft.com/en-us/services/data-lake-analytics/" target="_blank">개요</a>, <a href="https://azure.microsoft.com/en-us/pricing/details/data-lake-analytics/" target="_blank">가격 책정</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/services/data-lake-analytics/" target="_blank">시작</a> 페이지를 읽거나 <a href="https://mva.microsoft.com/en-US/training-courses/introducing-azure-data-lake-16910?l=hydSToaDD_9306218965" target="_blank">무료 강좌</a>에 참석하세요.</li>
+   <li>Data Lake Store의 <a href="https://azure.microsoft.com/en-us/services/data-lake-store/" target="_blank">개요</a>, <a href="https://azure.microsoft.com/en-us/pricing/details/data-lake-store/" target="_blank">가격 책정</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/services/data-lake-store/" target="_blank">시작</a> 페이지 읽기</li>
+   <li>HDInsight의 <a href="https://azure.microsoft.com/en-us/services/hdinsight/r-server/" target="_blank">R Server</a>, <a href="https://azure.microsoft.com/en-us/services/hdinsight/apache-kafka/" target="_blank">Kafka</a> 개요 및 <a href="https://azure.microsoft.com/en-us/pricing/details/hdinsight/" target="_blank">가격 책정</a> 페이지 읽기</li>
+  </ul>
+
+
+  <p>@josephsirosh</p>

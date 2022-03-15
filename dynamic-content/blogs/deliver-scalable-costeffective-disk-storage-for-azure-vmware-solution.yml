@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 15810ef225989a43f6bbca581579e2252c1117bb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907842"
+Slug: deliver-scalable-costeffective-disk-storage-for-azure-vmware-solution
+Title: Azure VMware Solution에 대한 확장 가능하고 비용 효율적인 디스크 Storage 제공
+Summary: 오늘 Azure VMware Solution에 대한 영구 스토리지 옵션으로 Azure Disk Storage 사용하도록 설정하는 디스크 풀의 미리 보기를 발표합니다. 이 공지 사항을 통해 Azure에서 실행되는 VMware 워크로드에 대해 확장 가능하고 비용 효율적인 클라우드 스토리지를 통해 데이터 요구 사항에 대한 유연성을 얻을 수 있습니다.
+Content: >-
+  <p><em>이 게시물은 Azure Dedicated의 수석 PM 관리자인 Ashwin Kabadi가 공동 저술했습니다.</em></p>
+
+
+  <p>오늘 Azure VMware Solution에 대한 영구 스토리지 옵션으로 <a href="https://azure.microsoft.com/en-us/services/storage/disks/" target="_blank">Azure Disk Storage</a> 사용하도록 설정하는 디스크 풀의 미리 보기를 발표합니다. 이 공지 사항을 통해 Azure에서 실행되는 VMware 워크로드에 대해 확장 가능하고 비용 효율적인 클라우드 스토리지를 통해 데이터 요구 사항에&nbsp; 대한 유연성을 얻을 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/azure-vmware/" target="_blank">Azure VMware Solution은 Azure</a> 에서 실행되는 포괄적인 VMware 환경을 제공하며 전용 SDDC(소프트웨어 정의 데이터 센터) 내에서 스토리지 가상화를 위한 <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/concepts-storage" target="_blank">VMware vSAN</a> 을 포함합니다. 점점 더 많은 고객이 즉각적인 마이그레이션 요구를 지원하기 위해 Azure VMware Solution을 고려함에 따라 다른 Azure 서비스를 활용하여 이러한 애플리케이션의 효율성을 현대화하고 추진할 수 있는 기회를 기대하고 있습니다. 오늘날 스토리지 요구는 전 세계&rsquo; 총 데이터가 2019년 45ZB에서 20251년까지 175ZB로 증가할 것으로 <sup>예상됨에 따라</sup>&mdash; 기하급수적으로&mdash; 증가하는 것을 볼 수 있으며, 클라우드를 사용하는 리소스 확장성과 유연성은 모든 기업에서 필수품이 되었습니다. Azure VMware Solution과 디스크 풀의 새로운 통합은 Azure에서 실행되는 친숙한 VMware 기술의 기능을 효율적인 Azure Disk Storage 결합합니다.</p>
+
+
+  <h2>Azure VMware Solution용 디스크 풀 소개</h2>
+
+
+  <p>디스크 풀은 스토리지 대상으로 추가된 모든 기본 디스크에 대한 iSCSI(Internet Small Computer Systems Interface) 엔드포인트를 표시하는 Azure 서비스로, 고성능의 지속성 블록 스토리지를 위해 Azure Disk Storage 액세스할 수 있습니다. Azure VMware Solution을 디스크 풀에 연결하고 온-프레미스 SAN 어플라이언스에 노출된 iSCSI 엔드포인트에VMware를&nbsp; 연결하는 것처럼&nbsp; 디스크를 VMware 데이터 저장소&mdash;로 추가할 수 있습니다.&nbsp; 이렇게 하면 컴퓨팅 리소스와 관계없이 Azure VMware Solution 환경의 스토리지 크기를 조정하여 전체 TCO(총 소유 비용)를 낮출 수 있습니다. 추가 용량을 비용 효율적으로 확보하는 것 외에도 성능 계층, 동적 크기 조정 및 성능을 확장하고 비용을 최적화할 수 있는 버스팅을 비롯한 고유한 Azure Disk Storage 기능을 활용할 수 있습니다.</p>
+
+
+  <p>디스크 풀은 Azure의 스토리지 차단에 대한 액세스를 제공하는 것 외에도 Azure VMware Solution과 통합됩니다. Azure VMware Solution 관리자를 대신하여 최소한의 노력이 필요한 Azure에서 완전히 관리됩니다. 새롭거나 기존 Azure Ultra Disk Storage 또는 Azure Premium SSD를 디스크 풀에 추가하고, 디스크에서 iSCSI LUN 및 Azure VMware Solution 데이터 저장소로 간단하고 직접 매핑할 수 있도록 Azure VMware Solution 환경에 연결하기 위한 개별 LUN(논리 단위 번호)으로 노출할 수 있습니다. RAID(독립 디스크 중복 배열)와 같은 디스크 풀&nbsp;에 스토리지 가상화 계층을 적용하지 않습니다. 이 계층은 데이터의 배치 논리를 변경하여 데이터가 항상 구독과 연결된 디스크에 있는지 확인합니다.</p>
+
+
+  <p>Azure VMware Solution에서 스토리지 집약적 워크로드를 호스트하려는 고객의 경우 하이퍼 수렴형 인프라는 확장이 컴퓨팅 및 스토리지 리소스 둘 다에 있음을 나타냅니다. 이제 고객은 디스크 풀을 통해 개별적으로 스토리지 크기를 독립적으로 조정하고 필요에 따라 전체 노드만 SDDC 클러스터에 추가할 수 있습니다.&nbsp;</p>
+
+
+  <h2>일반적인 사용 사례 및 시나리오</h2>
+
+
+  <ul>
+      <li><strong>Storage 집약적 워크로드: </strong>Azure VMware Solution에서 실행되는 스토리지 집약적 워크로드의 경우 Azure VMware Solution 노드를 기반으로 구축된 vSAN의 스토리지 용량 및 성능 제한에 쉽게 도달할 수 있습니다. 디스크 풀을 사용하면 스토리지를 확장하여 Ultra Disk Storage 사용하여 활성 데이터 세트를 호스트하거나 쿨러 데이터를 계층화하여 영구 스토리지용 SSD를 Premium 수 있습니다. 이렇게 하면 새 Azure VMware Solution 호스트를 사용하여 스케일 아웃하는 것에 비해 코어 또는 메모리가 좌초되지 않습니다.</li>
+      <li><strong>재해 복구:</strong> Azure VMware Solution을 DR(재해 복구) 사이트로 사용하려는 고객은 디스크 풀&nbsp;을 사용하여 3&nbsp;개의 노드로 구성된 최소 클러스터를 배포할 수 있습니다. 디스크 풀이 설정되고 Azure VMware Solution 클러스터에 연결되면 고객은 vSphere 복제와 함께 VMware Site Recovery Manager 같은 DR 제품을 사용하여 온-프레미스 VMware SDDC에서 클러스터에 연결된 디스크 풀로 보호된 워크로드의 스토리지를 복제할 수 있습니다. 워크로드 보호 요구 사항이 변경될 때 필요한 스토리지를 조정할 수 있습니다. Azure VMware Solution SDDC가 활성 사이트 역할을 하는 DR 이벤트의 경우 워크로드&rsquo; 컴퓨팅 요구 사항에 맞게 노드를 추가하여 Azure VMware Solution 클러스터를 스케일 아웃할 수 있습니다. 이 방법은 전체 DR 총 소유 비용을 낮게 유지하는 데 도움이 됩니다.</li>
+  </ul>
+
+
+  <h2>시작</h2>
+
+
+  <p>몇 단계만 수행하여 디스크 풀을 시작합니다.</p>
+
+
+  <ul>
+      <li>리소스 공급자에 대한 구독을 등록하고 네트워킹 및 디스크 리소스를 준비합니다.</li>
+      <li>디스크 풀을 만들고 디스크 풀에 디스크를 추가합니다.</li>
+      <li>디스크 풀을 Azure VMware Solution에 커넥트.</li>
+  </ul>
+
+
+  <p>단계별 설정에 대한 <a href="https://aka.ms/diskpoolsetup" target="_blank">이 자세한 지침을</a> 따를 수 있습니다. 성능 및 확장성 목표에 대한 최적화에 대한 자세한 고려 사항은 <a href="https://aka.ms/diskpoolplanning" target="_blank">계획 지침을</a> 참조하세요. 가격 책정에 대한 자세한 내용은<a href="https://azure.microsoft.com/en-us/pricing/details/managed-disks/" target="_blank">Azure Disk Storage 가격 책정 페이지에서</a> 확인할 수 있습니다&nbsp;.</p>
+
+
+  <p>Azure VMware Solution에 온보딩과 함께 디스크 풀을 사용하여 평가하려는 경우 <a href="https://docs.microsoft.com/en-us/azure/azure-vmware/" target="_blank">자세한 내용은 Azure VMware Solution 설명서를</a> 참조하세요.</p>
+
+
+  <p>디스크 풀의 미리 보기에 대한 피드백을 기다리고 있습니다. 이메일을 보내 <a href="mailto:azdiskpool@microsoft.com">azdiskpool@microsoft.com</a>주세요.</p>
+
+
+  <hr>
+
+  <p><sup>1</sup> 출처: IDC 백서: 에지에서 코어로 세계의 디지털화</p>

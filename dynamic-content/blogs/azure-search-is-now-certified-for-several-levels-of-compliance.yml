@@ -1,0 +1,35 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e621c18d5f51258f7e81675b43318aa0072655bd
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902247"
+Slug: azure-search-is-now-certified-for-several-levels-of-compliance
+Title: Azure Search는 이제 여러 수준의 규정 준수에 대한 인증을 받았습니다.
+Summary: '규정 준수는 전 세계 규제 산업 및 시장에서 자체 규정 준수 의무를 충족하기 위해 소프트웨어 및 서비스를 볼 때 고객에게 중요한 요소입니다. '
+Content: >-
+  <p>규정 준수는 전 세계 규제 산업 및 시장에서 자체 규정 준수 의무를 충족하기 위해 소프트웨어 및 서비스를 볼 때 고객에게 중요한 요소입니다. 예를 들어 ISO 27001 인증은 다른 많은 국제 표준 및 규정에 대한 요구 사항의 기준 집합을 제공하는 보안 표준이며 HIPAA(건강 보험 이식성 및 책임법)는 PHI(보호된 건강 정보)의 사용, 공개 및 보호에 대한 요구 사항을 설정하는 미국 법률입니다.</p>
+
+
+  <p>이러한 이유로 Azure Search가 다음을 비롯한 여러 수준의 규정 준수에 대한 인증을 받았다고 발표하게 되어 기쁩니다.</p>
+
+
+  <ul>
+      <li>ISO 27001:2013</li>
+      <li>SOC 2 형식 2</li>
+      <li>GxP(21 CFR Part 11)</li>
+      <li>HIPAA 및 HITECH 법</li>
+      <li>HITRUST</li>
+      <li>PCI DSS 수준 1</li>
+      <li>Australia IRAP Unclassified</li>
+  </ul>
+
+
+  <p>이러한 인증 및 증명을 통해 솔루션 내에서 주요 국제 및 산업별 규정 준수 표준을 충족하고 달성하려는 고객을 위한 실행 가능한 옵션으로 Azure Search를 사용할 수 있기를 바랍니다.</p>
+
+
+  <p>Azure 규정 준수 제품은 전역적으로 적용 가능한 미국 정부, 산업별 및 지역/국가별 네 가지 세그먼트로 그룹화됩니다. Azure Search 및 기타 Microsoft Azure 규정 준수 제품에 대한 개요를 보려면 <a href="https://www.microsoft.com/en-us/TrustCenter/Compliance/default.aspx">Microsoft 보안 센터를</a> 방문하세요. 또한 평가 범위에 있는 Azure 고객 지향 서비스를 나타내는 최신 범위 명세서를 제공하는 문서와 고객이 자체 규정 준수 의무를 준수할 수 있도록 다운로드 가능한 리소스에 대한 링크를 직접 <a href="https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942">다운로드</a> 할 수 있습니다.</p>
+
+
+  <p>다른 규정 준수 영역이 있는 경우 지원을 확인하려면 <a href="https://twitter.com/liamca">알려</a>주세요.</p>

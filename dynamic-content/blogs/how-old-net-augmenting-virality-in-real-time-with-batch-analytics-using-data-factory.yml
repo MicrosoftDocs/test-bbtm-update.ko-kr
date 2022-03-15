@@ -1,0 +1,34 @@
+### YamlMime:Yaml
+ms.openlocfilehash: eb451609300a27558f54fee4e6f5194efc336a3c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901211"
+Slug: how-old-net-augmenting-virality-in-real-time-with-batch-analytics-using-data-factory
+Title: 'How-old.net: Data Factory를 사용하여 Batch Analytics를 사용하여 실시간으로 바이럴리티 보강'
+Summary: Microsoft는 Build2015에서 키노트 프레젠테이션의 일부로 How-old.net 데모를 시작했습니다. 50명의 사용자를 위한 테스트로 데모를 시작했지만 1주일 이내에 3,300만 명 이상의 사용자와 2억 3,600만 개의 이미지가 입소문을 탔습니다. 곧 빅 데이터 질문으로 밝혀졌고, 역사적인 데이터 분석을 통해 실시간으로 보강하기로 결정했습니다.
+Content: >-
+  <p>Microsoft는 <a href="/"></a> <a href="https://www.buildwindows.com/">Build2015 개발자 컨퍼런스에서</a> 기조 연설의 일환으로 데모를 시작했습니다. 이 데모를 사용하면 누구나 사진을 업로드하고 Azure ML 얼굴 감지 APIs&rsquo;에서 해당 그림에 인식된 얼굴의 연령과 성별을 예측하도록 할 수 있습니다. 개발자가 새로 릴리스된 <a href="https://gallery.azureml.net/MachineLearningAPI/b0b2598aa46c4f44a08af8891e415cc7?share=1" target="_blank">얼굴 감지 Machine Learning API&rsquo;</a>를 사용하여 스마트 애플리케이션을 쉽고 빠르게 빌드하고, <a href="https://azure.microsoft.com/en-us/services/stream-analytics/" target="_blank">Azure Stream Analytics</a>를 사용하여 실시간으로 데이터를 분석하고, <a href="https://powerbi.microsoft.com/" target="_blank">PowerBI</a>에서 데이터를 시각화하는 방법을 소개하고자 했습니다. 50명의 사용자를 위한 테스트로 데모를 시작했지만 1주일 이내에 <strong>3,300만 명 이상의 사용자</strong> 와 <strong>2억 3,600만 개의 이미지가</strong> 입소문을 탔습니다. 곧 빅 데이터 질문으로 밝혀졌고, 역사적인 데이터 분석을 통해 실시간으로 보강하기로 결정했습니다. 실시간 및 일괄 처리 분석을 통해 우리는 현재 일어나고 있는 일에 대한 맥박을 가질 수 있을 뿐만 아니라 이미 일어난 일을 파악할 수 있었습니다. 이는 거의 실시간 인사이트(예: 지난 60초 동안 성공한 얼굴 인식의 #)를 얻으려고 하지만 더 큰 기간 동안 데이터를 분석하려는 모든 사용자를 위한 클래식 사용 사례 패턴입니다(예: 사용량이 월별로 어떻게 변경되었는지 등).</p>
+
+
+  <h2>Batch Analytics: 어떻게 했나요?</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/data-factory/">Azure Data Factory</a> 및 <a href="https://azure.microsoft.com/en-us/services/hdinsight/">Azure HDInsight</a>를 사용하여 Azure Blob에 덤프되는 원시 얼굴 데모 데이터를 가져와 일괄 처리(HDInsight/Hadoop 사용)를 수행하여 데이터에 대한 인사이트를 얻을 수 있는 파이프라인을 신속하게 빌드했습니다. Azure Data Factory 파이프라인(아래 스크린샷 참조)은 이제 매일 실행되며 사진을 업로드하고 시도하는 <a href=""></a> 사용자로부터 캡처되는 데이터를 처리합니다. 처리된 데이터는 SQL Azure 데이터베이스에 덤프되고 PowerBI 대시보드에서 사용됩니다. 전체 데이터 팩터리와 파이프라인은 4시간 이내에 빌드되고 운영되었습니다.</p>
+
+
+  <blockquote><strong>참고</strong>: 수집되는 데이터는 실제 사진 자체가 아니라 기간당 요청 수, 요청을 보낸 디바이스 유형 등과 같은 메타데이터입니다. 이러한 파이프라인에서 개인 식별 정보를 수집하거나 분석하지 않습니다.</blockquote>
+
+
+  <p><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/06/11/2015-06-11_12h55_51.png"><img alt="2015-06-11_12h55_51" border="0" height="292" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-06-11_12h55_51_thumb.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="2015-06-11_12h55_51" width="614"></a> Azure Stream Analytics를 사용하여 생성된 실시간 분석을 보여주는 PowerBI 대시보드(아래 스크린샷 참조)(Photos-Last 60초 수, Browser-Last 2분 기준 얼굴 수, Second-By 날짜별 사진)를 보여주는 PowerBI 대시보드가 이제 Azure Data Factory를 사용하여 생성된 일괄 처리 분석을 소개하기 위해 보강되었습니다. 캡처되는 일괄 처리 분석 중 일부는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>일별 사용자</li>
+   <li>일별 사진</li>
+   <li>플랫폼별 사용자</li>
+  </ul>
+
+
+  <p><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/06/29/2015-06-29_13h56_19.png"><img alt="2015-06-29_13h56_19" border="0" height="354" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-06-29_13h56_19_thumb.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="2015-06-29_13h56_19" width="614"></a> 이 사용 사례는 고객이 빅 데이터 처리를 위한 일괄 처리 분석을 사용하여 실시간 분석을 빠르고 쉽게 보강하는 방법을 보여줍니다. 직접 사용해 보세요 <a href="&nbsp;"> </a>(<a href="https://twitter.com/hashtag/HowOldRobot?f=realtime&amp;src=hash">#HowOldRobot</a>)&ndash;. Azure 서비스 및 <a href="https://gallery.azureml.net/">ML 갤러리</a>에서 사용할 수 있는 API를 사용하여 사용자 고유의 솔루션을 만들도록 영감을 드립니다. Azure Data Factory를 사용해 보려면 <a href="https://azure.microsoft.com/en-us/documentation/services/data-factory/">여기</a> 를 방문하여 데이터 팩터리를 사용하여 일괄 처리 파이프라인을 쉽고 빠르게 빌드하여 시작하세요. 기능 요청이 있거나 데이터 팩터리에 대한 피드백을 제공하려는 경우 <a href="https://feedback.azure.com/forums/270578-azure-data-factory">Azure Data Factory 포럼을</a> 방문하세요.</p>

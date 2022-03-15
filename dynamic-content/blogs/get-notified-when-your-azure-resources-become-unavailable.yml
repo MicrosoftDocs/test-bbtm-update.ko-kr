@@ -1,0 +1,51 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c20c7cce8e41b12490cf9e9a57fa01b64c08f575
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901698"
+Slug: get-notified-when-your-azure-resources-become-unavailable
+Title: Azure 리소스를 사용할 수 없게 되면 알림 받기
+Summary: Azure Service Health는 Azure 리소스의 가용성에 대한 정보를 유지하는 데 도움이 되는 기능을 확장하고 있습니다. 오늘부터 중단이 선언되기 전에 Azure 플랫폼 문제로 인해 리소스를 사용할 수 없게 될 때 즉시 알리도록 리소스 상태 경고를 구성할 수 있습니다.
+Content: >-
+  <p><a href="https://docs.microsoft.com/en-us/azure/service-health/" target="_blank">Azure Service Health는 Azure</a> 리소스의 가용성에 대한 정보를 유지하는 데 도움이 되는 기능을 확장하고 있습니다. 오늘부터 중단이 선언되기 전에 Azure 플랫폼 문제로 인해 리소스를 사용할 수 없게 될 때 즉시 알리도록 리소스 상태 경고를 구성할 수 있습니다.</p>
+
+
+  <p>리소스 상태 경고는 Azure 활동 로그 및 리소스 상태 데이터를 활용하여 이러한 이벤트가 발생함에 따라 프롬프트 알림을 제공합니다. 이 비디오를 확인하여 개요를 확인하고 이러한 새 리소스 상태 경고의 빠른 데모를 확인하세요.</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="315" src="https://www.microsoft.com/en-us/videoplayer/embed/RE2DlF7" width="560"></iframe></p>
+
+
+  <h2>리소스 상태 경고를 사용하여 리소스 가용성에 대한 정보 유지</h2>
+
+
+  <p>&rsquo;리소스&rsquo; 가용성에 대한 정보를 분 단위로 유지하고 발생한 문제가 사용자 또는 Azure의 문제로&rsquo; 인한 것인지 확인하는 것이 그 어느 때보다 쉽습니다.</p>
+
+
+  <p>이제 리소스 상태 경고를 구성하여 리소스를 모니터링하고 리소스를 사용할 수 없게 되면 알리거나, 복구하거나, 상태 전환을 진행할 수 있습니다. 또한 Azure VM(Virtual Machine) 다시 시작과 같은 사용자 시작 작업으로 인해 발생하는 이벤트를 무시하여 플랫폼 수준 문제에 집중할 수 있습니다. 이러한 방식으로 가동 중단이 공식적으로 선언되기 전에 플랫폼 이벤트에 대해 알아볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4528b15d-f47c-420a-949d-5e4d8a530fa2.png"><img alt="Resource health alerts" border="0" height="663" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8cf64c63-e815-45db-ad91-b6c8ef79275a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="리소스 상태 경고" width="1119"></a></p>
+
+
+  <p>이러한 경고는 SMS, 전자 메일 또는 푸시 알림을 보내도록 구성하여 사용자에게 알리는 방법을 관리할 수 있습니다. Service Now, PagerDuty, OpsGenie 등과 같은 다운스트림 서비스를 사용하여 웹후크를 설정할 수도 있습니다. 이러한 경고를 프로그래밍 방식으로 만들고 <a href="https://aka.ms/resourcehealthalerts" target="_blank">Azure Service Health 설명서</a>의 요구에 맞게 구성하는 방법에 대한 자세한 지침을 제공합니다.</p>
+
+
+  <h2>Azure 활동 로그에서 리소스 상태 이벤트에 액세스</h2>
+
+
+  <p>이제 리소스 상태 이벤트는 <a href="https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs" target="_blank">Azure 활동 로그</a>를 통해 저장되고 액세스할 수 있습니다. 즉, Log Analytics, Splunk 등과 같은 다운스트림 서비스에 이 데이터를 자동으로 수집하기 시작할 수 있습니다. 다른 활동 로그 이벤트와 마찬가지로 이제 <a href="https://docs.microsoft.com/en-us/rest/api/monitor/activitylogs/list" target="_blank">ARM Insights API</a>를 사용하여 프로그래밍 방식으로 리소스 상태에 액세스할 수 있습니다. 리소스 상태는 현재 <a href="https://docs.microsoft.com/en-us/azure/service-health/resource-health-checks-resource-types" target="_blank">30가지 이상의 다양한 리소스 유형을</a> 지원하며 시간이 지남에 따라 추가될 예정입니다. <a href="https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-activity-log-schema#resource-health">리소스 상태 활동 로그 스키마</a>에 대해 자세히 알아봅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/169b1c78-5096-4cd8-9ea3-8913c8c9ccb9.png"><img alt="Accessing resource health events in Azure Activity Log" border="0" height="663" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/57cb8703-c82a-4db3-bfbd-46838b06efe1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 활동 로그에서 리소스 상태 이벤트 액세스" width="1117"></a></p>
+
+
+  <h2>오늘 리소스 상태 경고로 예기치 않은 작업 준비</h2>
+
+
+  <p>리소스의 가용성에 대한 정보를 유지하는 것이 얼마나 중요한지 알고 있으며, 이러한 새로운 기능이 Azure 환경의 상태를 인식하고 제어하는 데 도움이 되기를 바랍니다. 시작하려면 <a href="https://aka.ms/ash-acom" target="_blank">Azure Service Health 웹 페이지를</a> 방문하여 오늘 <a href="https://aka.ms/servicehealth-docs" target="_blank">Azure Service Health 설명서를 검토</a> 하세요.</p>
+
+
+  <p>여기서는 여러분의 경험에 대한 피드백을 좋아할 것입니다. 에 우리에게 손을 내밀어 <a href="mailto:servicehealth@microsoft.com">servicehealth@microsoft.com</a>.</p>

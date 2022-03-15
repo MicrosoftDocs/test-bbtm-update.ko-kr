@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f858ea19c48e3d5dd8149ea0feff6c652acf08bf
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908399"
+Slug: hdinsight-tools-for-vscode-simplifying-cluster-spark-job-configuration-management
+Title: 'Visual Studio Code 위한 HDInsight 도구: 클러스터 및 Spark 작업 구성 관리 간소화'
+Summary: 이제 HDInsight Tools for Visual Studio Code(VS Code)가 VS Code 기본 제공 사용자 설정 및 작업 영역 설정을 활용하여 HDInsight 클러스터 및 Spark 작업 제출을 관리한다는 사실을 발표하게 되어 기쁩니다.
+Content: >-
+  <p>이제 HDInsight Tools for Visual Studio Code(VS Code)가 VS Code 기본 제공 사용자 설정 및 작업 영역 설정을 활용하여 HDInsight 클러스터 및 Spark 작업 제출을 관리한다는 사실을 발표하게 되어 기쁩니다. 이 기능을 사용하면 연결된 클러스터를 관리하고 VS Code 사용자 설정을 사용하여 선호하는 Azure 환경을 설정할 수 있습니다. 기본 클러스터를 설정하고 VS Code 작업 영역 설정을 통해 작업 제출 구성을 관리할 수도 있습니다.</p>
+
+
+  <p>hdInsight Tools for VS Code 전 세계 Azure 지역의 HDInsight 클러스터에 액세스할 수 있습니다. HDInsight 클러스터에 보다 유연한 액세스 권한을 부여하려면 Ambari 사용자 이름 및 암호를 사용하여 HDInsight 클러스터에 연결하거나 도메인 이름과 암호를 통해 HDInsight Enterprise 보안 패키지 클러스터에 연결하여 Azure 구독을 통해 클러스터에 액세스할 수&nbsp; 있습니다. 모든 Azure 설정 및 연결된 HDInsight 클러스터는 나중에 사용할 수 VS Code 사용자 설정에 보관됩니다. Spark 작업 제출은 최대 100개의 매개 변수를 지원하여 클러스터 컴퓨팅 리소스 사용량을 최대화할 수 있는 유연성을 제공하고 Spark 작업 성능을 최적화하기 위한 올바른 매개 변수를 지정할 수 있습니다. VS Code 작업 영역 설정을 활용하여 JSON 형식의 매개 변수를 유연하게 지정할 수 있습니다.</p>
+
+
+  <h2>새 기능 요약</h2>
+
+
+  <ul>
+   <li>VS Code 사용자 설정을 활용하여 클러스터 및 환경을 관리합니다.
+   <ul>
+    <li><strong>Azure 환경 설정:</strong> <strong>HDInsight 명령 선택: Azure 환경 설정</strong> 지정된 Azure 환경은 클러스터 탐색, 데이터 쿼리 및 작업 제출을 위한 기본 Azure 환경이 됩니다.</li>
+    <li><strong>클러스터 연결:</strong> <strong>HDInsight 명령 선택: 클러스터 연결</strong> 연결된 클러스터 정보는 사용자 설정에&nbsp; 저장됩니다.</li>
+   </ul>
+   </li>
+   <li>VS Code 작업 영역 설정을 사용하여 PySpark 작업 제출을 관리합니다.
+   <ul>
+    <li><strong>기본 클러스터 설정:</strong>&nbsp; <strong>HDInsight 명령 선택: 기본 클러스터 설정</strong> 지정된 클러스터는 PySpark 또는 Hive 데이터 쿼리 및 작업 제출에 대한 기본 클러스터가 됩니다.</li>
+    <li><strong>구성 설정:</strong>&nbsp; <strong>HDInsight 명령 선택: 구성을 설정</strong> 하여 Spark 작업 Livy 구성에 대한 매개 변수 값을 지정합니다.</li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <h2>설치 또는 업데이트 방법</h2>
+
+
+  <p>먼저 Visual Studio Code 설치하고 Mono 4.2.x(Linux 및 Mac용)를 다운로드합니다. 그런 다음 VSCode 확장 리포지토리 또는 VSCode Marketplace로 이동하여 VSCode <strong>용 HDInsight 도구를 검색하여 최신 HDInsight 도구를</strong> 가져옵니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/de06da16-d4c2-4f2f-a8cf-5ab29ef2278e.png"><img alt="image" border="0" height="210" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3bf4b3a1-2dfb-4d8f-93bd-4e6a975116c6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="image" width="420"></a> VSCode용 HDInsight 도구에 대한 자세한 내용은 다음 리소스를 사용하세요.</p>
+
+
+  <ul>
+   <li>사용자 설명서: <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-for-vscode">VSCode용 HDInsight 도구</a></li>
+   <li>사용자 설명서: <a href="https://docs.microsoft.com/en-us/azure/hdinsight/set-up-pyspark-interactive-environment?branch=pr-en-us-26060">PySpark 대화형 환경 설정</a></li>
+   <li>데모 비디오: <a href="https://youtu.be/RLjVNP8ufuw">VSCode용 HDInsight 비디오</a></li>
+   <li>Hive LLAP: <a href="https://docs.microsoft.com/en-us/azure/hdinsight/interactive-query/apache-interactive-query-get-started">HDInsight에서 대화형 쿼리 사용</a></li>
+  </ul>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/azuredatalake">빅 데이터 블로그</a>에서 오늘&rsquo; 공지 사항에 대해 자세히 알아보세요. <a href="https://azure.microsoft.com/en-us/updates/">Azure 서비스 업데이트 페이지에서 자세히 알아보기</a></p>
+
+
+  <p>질문, 피드백, 메모 또는 버그 보고서가 있는 경우 아래 의견을 사용하거나 메모를 <a href="mailto:hdivstool@microsoft.com">hdivstool@microsoft.com</a>보내주세요.</p>

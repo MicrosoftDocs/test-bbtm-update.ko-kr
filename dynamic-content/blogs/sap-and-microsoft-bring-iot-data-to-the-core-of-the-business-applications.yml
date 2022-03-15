@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4a2367f8cb0e5b24e0a91424eb02efafd35f5986
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900949"
+Slug: sap-and-microsoft-bring-iot-data-to-the-core-of-the-business-applications
+Title: SAP 및 Microsoft는 IoT 데이터를 비즈니스 애플리케이션의 핵심으로 가져옵니다.
+Summary: 'IoT 클라우드 에코시스템의 선두 주자인 Microsoft는 지능형 에지 및 인텔리전트 클라우드 전반에 걸쳐 다양한 산업 내에서 전체 비즈니스 애플리케이션 스택을 지원합니다. IoT 산업의 지속적인 성장은 모든 조직에서 변혁적인 힘이 될 것입니다. '
+Content: >-
+  <p>IoT 클라우드 에코시스템의 선두 주자인 Microsoft는 지능형 에지 및 인텔리전트 클라우드 전반에 걸쳐 다양한 산업 내에서 전체 비즈니스 애플리케이션 스택을 지원합니다. IoT 산업의 지속적인 성장은 모든 조직에서 변혁적인 힘이 될 것입니다. Microsoft와 SAP는 엔터프라이즈 SAP 솔루션을 배포할 수 있도록 2년 이상 협력해 왔으며, 이 파트너십은 <a href="https://www.iiconsortium.org/index.htm" target="_blank">산업용 인터넷 컨소시엄</a>, <a href="https://opcfoundation.org/" target="_blank">OPC 재단</a> 및 <a href="https://www.plattform-i40.de/PI40/Navigation/EN/Home/home.html" target="_blank">플랫폼 인더스트리 4.0</a>에서 확장되었습니다.</p>
+
+
+  <p>지난 2월 모바일 월드 콩그레스에서 SAP와 Microsoft는 IoT(사물 인터넷) 공간에서 물리적 자산에 대한 확장된 협업을 <a href="https://azure.microsoft.com/blog/microsoft-and-sap-extend-partnership-to-internet-of-things/" target="_blank">발표</a> 했습니다. 오늘 Azure IoT <a href="https://azure.microsoft.com/services/iot-hub/" target="_blank">Hub</a>와 <a href="https://www.sap.com/products/leonardo/iot.html" target="_blank">SAP Leonardo IoT</a> 통합의 일반 공급에 대해 발표하게 되어 기쁩니다.</p>
+
+
+  <p>SAP Leonardo IoT는 고객에게 SAP 비즈니스 데이터로 IoT 데이터를 컨텍스트화하고 보강하여 새로운 비즈니스 결과를 이끌어낼 수 있는 기능을 제공하는 Azure IoT 서비스와 통합됩니다. Azure IoT Hub 및 Azure IoT Edge를 활용하여 대규모 보안 연결, 강력한 디바이스 관리 기능 및 업계 최고의 에지 컴퓨팅 지원에 액세스할 수 있습니다. SAP 비즈니스 애플리케이션에서 사용하는 산업용 IoT 기능 및 서비스를 제공하기 위해 비즈니스 데이터를 지능적으로 결합하는 기능을 통해 고객은 이제 물리적 자산에서 비즈니스 프로세스, 고객 관계에 이르는 데이터에 대한 전체 보기를 확보하고 전체 디지털 피드백 루프를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ca26537-680f-495e-97eb-9cde7ac6f089.png"><img alt="Microsoft intelligent edge diagram" border="0" height="1169" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b527a629-ce76-4b0f-968c-e94dea9bbbf7.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Microsoft 지능형 에지 다이어그램" width="2511"></a></p>
+
+
+  <p>SAP 및 Microsofts&rsquo;의 공통 목표는 고객이 데이터 사일로를 제거하고 인텔리전트 클라우드 및 인텔리전트 에지에 걸쳐 전체 디지털 피드백 루프를 실현할 수 있도록 물리적 자산에서 비즈니스 프로세스에 이르는 360개의 데이터 보기를 제공하는 것입니다. 고객은 Microsoft Azure IoT Edge에서 SAP Essential Business Functions를 실행하여 가장 중요한 자산에 가장 가까운 S4/Hana 및 C4/Hana 비즈니스 프로세스를 확장하여 에지에서 비즈니스 요청 및 거버넌스 기능을 제공할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/resources/videos/sap-bef-edge-demo/" target="_blank">Azure IoT 및 SAP Leonardo IoT 상호 운용성에</a> 대해 자세히 살펴봅니다.</p>

@@ -1,0 +1,25 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a7fec28ed1c8d3d6846abd22aeb03f7bfb4b1a59
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901081"
+Slug: microsoft-virtual-academy-presents-developing-solutions-with-azure-documentdb
+Title: Microsoft Virtual Academy, Azure DocumentDB를 사용하여 솔루션 개발 발표
+Summary: 이론적 개념에서 코드 데모 &amp; 실습 랩에 이르기까지 스키마가 없는 JSON 문서 데이터베이스인 Microsoft Azure DocumentDB를 살펴봅니다. DocumentDB를 사용하여 웹앱, 모바일 앱 등을 빌드합니다.
+Content: >-
+  <p>무료 교육! 무료 교육! Microsoft Azure DocumentDB로 시작하고 실행하는 것이 얼마나 쉬운지 놀랄 수 있습니다. 자체 인프라를 갖거나 환경을 유지 관리할 필요가&#39;있습니다. 연결 &amp; 만 하면 됩니다. 4월 7일에 무료 하루 종일 Microsoft Virtual Academy 이벤트 - &ldquo;Azure DocumentDB를 사용하여 솔루션 개발과 함께 모든 세부 정보를 확인하세요.&rdquo; 무료 훈련이라고 언급했나요? 이론적 개념에서 코드 데모 및 실습 랩에 이르기까지 DocumentDB를 살펴보려면 전문가 팀에 합류하세요. 메트릭 및 차트를 설정하고, 데이터 모델을 최적화하고, 컴퓨터에서 스케일 아웃하는 방법을 알아봅니다. 또한 DocumentDB에서 서버 쪽 프로그래밍을 살펴보고, 웹앱을 빌드하는 방법을 살펴보고, Azure Search에서 DocumentDB를 통합하는 방법을 살펴봅니다. ASP.NET 이상의 MVC를 사용하여 Azure Mobile Services 포함하여 더 큰 Azure 에코시스템에 어떻게 적합한지 확인합니다. DocumentDB에서 시작하고 실행해야 하는 사항에 대해 알아봅니다. 를 포함하여 많은 작업을 수행하는 방법을 알아봅니다(제한되지 않음).</p>
+
+
+  <ul>
+      <li>메트릭, 차트 및 경고 설정</li>
+      <li>데이터 모델을 최적화하고, 매우 큰 볼륨을 수용할 수 있도록 여러 컬렉션에서 데이터베이스를 확장합니다.</li>
+      <li>DocumentDB에서 서버 쪽 프로그래밍 연습</li>
+      <li>다른 언어로 웹앱을 빌드하는 방법 보기(결국 Azure는 .NET에 관한 것이 아님)</li>
+      <li>DocumentDB와 Azure Search를 통합하는 방법을 알아보세요.</li>
+      <li>또한 ASP.NET 이상의 MVC를 사용하여 DocumentDB가 Azure Mobile Apps를 비롯한 더 큰 Azure 에코시스템에 어떻게 적합한지 확인합니다.</li>
+  </ul>
+
+
+  <p>그것은&rsquo; 당신이 하루에서 기대할 수있는 것의 단지 작은 맛입니다. DocumentDB에서 시작하고 실행하는 데 필요한 모든 것을 알아보세요! 재미 있게 들리나요? Microsoft Virtual Academy로 이동하여 등록하세요 <a href="https://aka.ms/documentdb-deep-dive">https://aka.ms/documentdb-deep-dive</a> . 그런 다음 당신이 막대기를 흔들 수있는 것보다 더 재미로 가득 하루 동안 당신을 가입 오늘 자신의 현재 데이터베이스 시스템과 투쟁 할 수있는 모든 친구를 말해 이동합니다.</p>

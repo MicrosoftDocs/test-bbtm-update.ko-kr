@@ -1,0 +1,91 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 41b6f547480e8bb3cf6da0d1bf4aa80863e2f865
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907449"
+Slug: welcome-to-nab-show-2019-from-microsoft-azure
+Title: Microsoft Azure NAB 쇼 2019에 오신 것을 환영합니다!
+Summary: 이야기는 우리를 즐겁게하고, 웃고 울게하며, 우리가 세상을 인식하는 렌즈입니다. 그 세상에서, 점점 더 정보로 과부하, 그들은 우리의 관심을 끌고, 그들은 우리의 마음을 잡을 경우, 우리는 참여.
+Content: >-
+  <p><em>콘텐츠 작성자, 소유자 및 스토리텔러를 위해 지능형 클라우드를 작동하도록 합니다.</em></p>
+
+
+  <p>이야기는 우리를 즐겁게하고, 웃고 울게하며, 우리가 세상을 인식하는 렌즈입니다. 그 세상에서, 점점 더 정보로 과부하, 그들은 우리의 관심을 끌고, 그들은 우리의 마음을 잡을 경우, 우리는 참여. 이것은 이야기를 강력하게 만들고,&rsquo; 많은 대형 기술 회사가 콘텐츠를 만들고 판매하는 데 &ndash; 많은 투자를하는 이유입니다.</p>
+
+
+  <p>Microsoft에서는&rsquo; 콘텐츠 만들기를 지원하지 않습니다.</p>
+
+
+  <p>그 이유는 무엇일까요? 우리의 임무는 지구상의 모든 사람과 조직이 더 많은 것을 성취하도록 돕는 것입니다. 따라서 콘텐츠를 만들거나 소유하는 대신, 인텔리전트 클라우드에서 인텔리전트 에지까지, 업계 최고의 AI(인공 지능)를 통해 콘텐츠 제작자와 소유자가 더 많은 &ndash; 성과를 거둘 수 있도록 플랫폼을 제공하고자 합니다. Were&rsquo;는 Endemol Shine, Multichoice, RTL, Ericsson 및 Avid, Akamai, Haivision, Pipeline FX 및 Verizon Digital Media Services 같은 파트너를 통해 미션이 실현되는 것을 보고 기뻤습니다. NAB Show 2019에서 더 많은 성과를 거둘 수 있도록 새로운 Azure 렌더링, Azure Media Services, Video Indexer 및 Azure 네트워킹 기능을 발표하게 되어 기쁩니다. 큐 장면입니다.</p>
+
+
+  <h2>더 높은 해상도, 더 적은 시간 : 게시물에서 수정합니다.</h2>
+
+
+  <p>HD가 등장하면서 디지털 콘텐츠가 폭발적이되었습니다. 오늘날, 심지어 4K 해상도에 만족하지, 업계는 8K 이상으로 용서 할 수없는 이동. 360도/3D 콘텐츠를 구동하는 몰입형 스토리텔링이 급증하고, 프레임 속도가 높고, 수많은 에피소드와 대본이 없는 빠른 릴리스 주기와 시각적으로 멋진 영화 기능이 등장하면서 데이터 볼륨이 기하급수적으로 증가하고 있습니다.</p>
+
+
+  <p>Microsoft Azure 스토리지 가속 및 용량으로 가장 광범위한 프로젝트를 수락할 준비가 되어 있습니다. <strong><a href="https://azure.microsoft.com/en-us/blog/hybrid-storage-performance-comes-to-azure/">새로운 </a><a href="https://azure.microsoft.com/en-us/services/fxt-edge-filer/">Azure FXT Edge Filer </a><a href="https://azure.microsoft.com/en-us/blog/hybrid-storage-performance-comes-to-azure/">캐싱 어플라이언</a>스는 고속 메모리, SSD 및 Azure Blob Storage에 대한 지원을 통해 그 어느 때보다 높은 확장성 및 성능을 제공합니다</strong>. &rsquo;온-프레미스 스토리지와 클라우드 컴퓨팅 용량 간에 초고속 연결이 필요한 렌더링과 같이 처리량이 높고 대기 시간이 짧은 애플리케이션에 적합합니다. Microsoft는 Edge Filer 어플라이언스가 고객을 위한 주요 차별화 요소라고 믿고 있으며, <a href="https://azure.microsoft.com/en-us/services/storage/avere-vfxt/" target="_blank">Avere vFXT</a> for Azure가 시각 효과 스튜디오 Mr. X가 최근 Azure에서 장편 필름을 렌더링할 수 있게 했다는 데 동의합니다&ndash;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/56718df0-c42d-4066-8b62-e967d8c5ce71.png"><img alt="Azure FXT Edge Filer" border="0" height="292" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/12fce7b2-1c94-487f-a032-e4cd15312b01.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure FXT Edge Filer" width="566"></a></p>
+
+
+  <p align="center"><em>Azure FXT Edge Filer </em></p>
+
+
+  <p>또한 <strong>새로운 Azure Render Farm Manager 포털 미리 보기를</strong> 사용하면 고객이 <a href="https://github.com/Azure/azure-render-farm-manager" target="_blank">PipelineFX Qube</a>와 같은 일반적으로 사용되는 렌더링 팜 관리자를 지원하여 네트워킹 설정 및 Azure 스토리지 옵션을 포함하여 Azure에서 하이브리드 또는 클라우드 전용 렌더링 환경을 훨씬 빠르고 쉽게 설정할 수 있습니다.</p>
+
+
+  <p>렌더링, 시각 효과 또는 편집에 관계없이&rsquo; 필요한 가격과 성능 조합을 제공합니다. 또한 Avid와의 파트너십은 계속 확장되고 있으며, 회사는 <a href="https://www.avid.com/press-room/2019/04/avid-nexis-cloudspaces">Avid NEXIS: cloudspaces on Microsoft Azure</a> 발표하여 공동 고객이 클라우드에서 콘텐츠를 수집, 관리, 편집 및 만들 수 있도록 합니다.</p>
+
+
+  <h2>콘텐츠가 있나요? 스토리지를 가져옵니다. AI를 추가합니다.</h2>
+
+
+  <p>페타바이트 단위의 콘텐츠 + Azure Data Box 또는 Data Boxy Heavy(미리 보기) = 안전하고 엔터프라이즈급의 비용 효율적인 대규모 수집입니다. 그냥 촬영을 하차하고 테라 바이트의 10s&rsquo;가? Data Box Disk를 충족합니다. 소규모 콘텐츠 저장소의 이식 가능한 폼 팩터에서도 동일한 이점이 있습니다. 설정된 사용자를 위해 미디어를 사전 처리하고(예: 빈 푸티지 제거) Dejero와 같은 파트너 또는 Azure <a href="https://azure.microsoft.com/en-us/services/expressroute/" target="_blank">ExpressRoute</a> Direct 100Gbps를 사용한 프라이빗 고대역폭 연결을 통해 클라우드로 효율적으로 전송할 수 있는 Data Box Edge가 있습니다. 또한 <strong>Azure 백본에서 WAN을 효과적으로 빌드할 수 있는 Azure ExpressRoute Global Reach를 통해</strong> <a href="https://azure.microsoft.com/en-us/blog/fast-and-optimized-connectivity-and-delivery-solutions-on-azure/" target="_blank">글로벌 네트워크를 사용할 수 있도록 하고</a> 있습니다.&ndash; ExpressRoute Direct 100Gbps 및 Global Reach는 NAB를 기준으로 일반 공급됩니다.</p>
+
+
+  <p>클라우드에서 <strong>수상 경력에 빛나는 Video Indexers&rsquo; AI 기능을 사용하여 심층 인사이트를 효율적으로 추출할 수 있습니다</strong>. NAB에 맞춰 Weve&rsquo;는 몇 분 안에 새로운 콘텐츠를 생성하고, 사용자 지정 얼굴 및 언어 모델을 개선하고, ISO 27001에서 FedRAMP로의 추가 인증을 생성하는 데 도움이 되는 AI 기반 편집기를 추가했습니다. 이러한 새로운 기능과 더 많은 기능을 기존 MAM과 쉽게 통합할 수 있으며 모든 애플리케이션과 함께 사용하여 접근성을 높이거나 새로운 OTT 및 수익 창출 환경을 만들 수 있습니다.</p>
+
+
+  <p>VI(Video Indexer)는 대규모 엔터프라이즈급 생산적인 미디어 워크플로 솔루션인 AMS(Azure Media Services)의 일부입니다. NAB에서는 Just-In-Time 미디어 패키지러에 대한 Dolby Atmos 지원과 사용자 지정 논리를 적용하고 광범위한 계산 분석 없이 지정된 해상도에 대한 최적의 비트 전송률을 검색할 수 있는 새로운 <a href="https://aka.ms/ams-cae">콘텐츠 인식 인코딩 사전 설정을</a> 발표합니다.</p>
+
+
+  <p>수집 및 트랜스코딩에서 패키징 및 배포에 이르기까지 Media Services &ndash; 파트너 &ndash; 에게 문의해 드립니다. 이러한 흥미로운 업데이트 및 애니메이션, 다국어 전사 및 라이브 전사에 대한 새로운 비공개 미리 보기에 대해 자세히 알아볼 수 <a href="https://azure.microsoft.com/en-us/blog/azure-media-services-the-latest-video-indexer-updates-from-nab-show-2019/">있습니다</a>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/267a6128-4974-468c-aa27-fabd7116ead5.png"><img alt="Video Indexer Scene segmentation model" border="0" height="728" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8a5917e-8173-4496-baa6-8ebc377f3f81.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Video Indexer 장면 구분 모델" width="1024"></a></p>
+
+
+  <p align="center"><em>Video Indexer</em></p>
+
+
+  <h2>점점 더 많은 전 세계 대상에게 더 많은 콘텐츠를 더 쉽게 스트리밍</h2>
+
+
+  <p>대상 그룹 증가, 폼 팩터 및 세계화는 점점 더 복잡해지고 있는 비디오 워크플로를 의미합니다. 파트너는 이 작업을 더 쉽게 수행할 수 있도록 열심히 노력하고 있으며, 다음은 몇 가지 주요 공지 사항입니다.</p>
+
+
+  <ul>
+   <li><strong>하모닉</strong>은 <a href="https://www.harmonicinc.com/news-insights/press-releases/harmonic-adds-microsoft-azure-support-expands-partnership-akamai-vos360-saas/">Microsoft Azure VOS360 SaaS 솔루션을 사용할 수 있도록 할</a> 것이라고 발표했다.</li>
+   <li><strong>Akamai</strong> 는 <a href="https://www.akamai.com/us/en/about/news/press/2019-press/akamai-expands-partnership-with-microsoft-azure.jsp" target="_blank">ExpressRoute를 통해 에지 네트워크를 Azure와 직접 연결</a> 하여 고객에게 더 높은 성능과 예측 가능한 비용을 제공합니다. 또한 Azure Media Services 및 상호 파트너와 함께 라이브 및 주문형 워크플로의 제공을 향상시킬 계획입니다.</li>
+   <li><strong>Verizon Digital Media Services</strong> 비디오 워크플로를 향상시키기 위해 Microsoft Azure <a href="https://www.verizondigitalmedia.com/blog/2019/04/vdms-and-microsoft-partner-to-deliver-global-streaming-platform/" target="_blank">엔터프라이즈급 스트리밍 플랫폼을 제공하고</a> 있습니다.</li>
+   <li><strong>Haivisions&rsquo; </strong>새 미디어 라우팅 클라우드 서비스인 <a href="https://www.haivision.com/products/srthub/" target="_blank">SRTHub</a>는 브로드캐스터가 라이브 비디오를 전 세계적으로 보다 안전하고 안정적으로 전송하는 데 도움이 됩니다. <a href="https://www.haivision.com/about/press-releases/haivision-announces-srthub-for-microsoft-azure/" target="_blank">또한 Azure를 기반으로 하는 SRTHub</a>는 Avid, Wowza 및 Epic Labs를 비롯한 업계 최고의 파트너의 개방형 Hublet 에코시스템을 사용하여 워크플로 오케스트레이션을 간소화합니다.</li>
+   <li><strong>Telestream</strong> 은 <a href="https://www.telestream.net/company/press/2019-04-02-VCP-MSAzure.htm" target="_blank">업계 최고의 트랜스코딩 솔루션을 Azure에 도입할</a> 예정입니다.</li>
+   <li>앞으로 Microsoft와 파트너 <strong>고조닉</strong> 에서 더 많은 것을 지켜봐 주시기 바랍니다.</li>
+  </ul>
+
+
+  <p>고품질의 고가용성 콘텐츠 및 애플리케이션을 제공하려면 전 세계적으로 확장 가능한 네트워크 솔루션이 필요합니다. 고객이 우수한 글로벌 애플리케이션&rsquo;을 가속화하고 제공할 수 있도록 <strong> AFD(</strong><a href="https://azure.microsoft.com/en-us/services/frontdoor/" target="_blank"><strong>Azure Front Door Service</strong></a>)의 <a href="https://azure.microsoft.com/en-us/blog/fast-and-optimized-connectivity-and-delivery-solutions-on-azure/" target="_blank">GA를 발표</a>합니다. AFD는 웹 애플리케이션에 최적화된 사용자 환경을 제공하는 글로벌 단일 진입점을 제공합니다. AFD에는 네트워크 에지에서 해당 애플리케이션을 보호하기 위한 WAF(통합 웹 애플리케이션 방화벽) 및 DDoS 보호도 포함되어 있습니다.&nbsp;&nbsp;</p>
+
+
+  <h2>다음 국경</h2>
+
+
+  <p>NAB&rsquo;에서는 Zone TV 및 Nexx.TV 같은 파트너가 Microsoft AI 및 Azure Cognitive Services를 사용하여 보다 개인화된 콘텐츠를 만들고 기존 미디어 자산의 수익 창출을 개선하는 방법을 보여 줍니다.&nbsp; Microsoft에서 데이터 &ndash; 와 인사이트를 &ndash; 활용하기 위해 Microsoft에서 작업할 때 이 공간에서 더 많은 것을 지켜봐 주시기 바랍니다.</p>
+
+
+  <p>NAB Show 2019 &ndash; 부스 #SL6716 &ndash; 방문하여 자세한 내용을 알아보고 팀과 만나 파트너가 제공해야 하는 사항을 확인하세요. 저는 여러분이 실제 세계에서 &ndash; 여러분을 &ndash; 만나고 Azure가 어떻게 당신을 위해 일할 수 있는지 듣기를 기대합니다.</p>

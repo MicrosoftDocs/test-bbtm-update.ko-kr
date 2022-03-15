@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1f860efe490c04c9d6984e152578ffd93fd04915
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902404"
+Slug: wiki-inside-sql-azure
+Title: 'Wiki: 내부 SQL Azure'
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] SQL Azure 내부에서 어떻게 작동하는지에 관심이 있으신가요?&nbsp; SQL Azure 팀은 TechNet의 위키 섹션에 다음과 같은 백서를 게시했습니다.'
+Content: <p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p class="MsoNormal">SQL Azure 내부에서 어떻게 작동하는지에 관심이 있으신가요?<span>&nbsp; </span> SQL Azure 팀은 TechNet &ldquo; 의 위키 섹션인 <a href="https://social.technet.microsoft.com/wiki/contents/articles/inside-sql-azure.aspx">Inside SQL Azure</a>&rdquo; 백서를 방금 게시했습니다.<span>&nbsp; </span> 이 문서에서는 친숙한 SQL Server 개발 환경에서 고가용성과 즉각적인 확장성을 제공하기 위해 SQL Azure 데이터베이스의 내부와 Microsoft 데이터 센터에서 데이터베이스를 관리하는 방법을 살펴봅니다.</p>  <p class="MsoNormal">&nbsp;</p>  <p class="MsoNormal"><a href="https://social.technet.microsoft.com/wiki/contents/articles/inside-sql-azure.aspx">내부 읽기 SQL Azure</a></p>

@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: aaff16e9b23d41d3f3adf4dfff63467ef560957f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902228"
+Slug: azure-site-recovery-now-offers-disaster-recovery-for-any-physical-or-virtualized-it-environment-with-inmage-scout-2
+Title: 이제 Azure Site Recovery는 InMage Scout를 사용하여 물리적 또는 가상화된 IT 환경에 대한 재해 복구를 제공합니다.
+Summary: 지난 주, 다케시 누모토, 기업 부사장, 클라우드 및 Enterprise 마케팅, 마이크로 소프트는 InMage 시스템을 인수했다 공식 마이크로 소프트 블로그에 발표, Inc., 혁신의 혁신...
+Content: >-
+  <p align="justify">지난 주, 다케시 누모토( Takeshi Numoto) 클라우드 및 Enterprise 마케팅 부사장은 공식 Microsoft 블로그에서 Microsoft가 클라우드 기반 비즈니스 연속성의 신흥 영역에서 혁신가인 <a href="https://blogs.microsoft.com/blog/2014/07/11/microsoft-acquires-inmage-better-business-continuity-with-azure/">InMage Systems, Inc.를 인수했다고</a> 발표했습니다. 이 인수는 Windows 또는 Linux, Hyper-V, VMware 또는 기타에서 물리적 또는 가상화된 <i>모든 고객 IT</i> 환경에 하이브리드 클라우드 비즈니스 연속성 솔루션을 제공하기 위한 전략을 가속화할 것입니다.</p>
+
+  <p align="justify">Azure Site Recovery는 이미 온-프레미스 Hyper-V 클라우드 간 또는 온-프레미스 Hyper-V 클라우드에서 Microsoft Azure 재해 복구를 지원하므로 엔터프라이즈 프라이빗 클라우드, 호스트된 클라우드 또는 Microsoft Azure 워크로드 간에 일관된 사용자 환경을 사용할 수 있습니다. InMage 인수를 통해 Azure Site Recovery는 모든 클라우드에서 호스트되는 Microsoft 클라우드 및 Microsoft 워크로드에서 실행되는 모든 워크로드에 대해 동급 최고의 비즈니스 연속성 솔루션을 사용하도록 설정하겠다는 Microsoft의 약속을 추가로 제공합니다.</p>
+
+  <p align="justify">오늘 Azure Site Recovery 구독 라이선스 제품의 일부로 Windows 및 Linux용 InMage Scout의 가용성을 발표합니다. Azure Site Recovery 구독 라이선스를 사용하면 고객이 InMage Scout 소프트웨어 및 Azure Site Recovery 클라우드 서비스를 사용하는 인스턴스에 대한 연간 보호를 구매할 수 있습니다. Azure Site Recovery는 가상 또는 보호된 물리적 인스턴스당 라이선스가 부여됩니다.</p>
+
+  <p align="justify">Azure Site Recovery 구독 라이선스는 2014년 8월 1일부터 Microsoft 기업계약 통해 사용할 수 있으며 InMage Scout 사용량을 현재 구매할 수 있는 유일한 제품입니다. 고객은 기존 소비 기반 제품을 통해 Azure Site Recovery 클라우드 서비스로 인스턴스를 계속 보호할 수 있습니다. 2014년 7월 16일부터 2014년 8월 1일까지 Azure Portal에서 사용할 수 있는 InMage Scout 소프트웨어는 <b><span style="text-decoration: underline;">무료로 평가판</span>으로 사용할 수 있습니다.</b></p>
+
+  <p align="justify">비즈니스 연속성 계획을 생각하는 기업이든 고객을 위해 재해 복구를 서비스로 제공하는 호스팅 서비스 공급자이든 관계없이 Azure Site Recovery 포트폴리오에 InMage Scout를 포함하면 Microsoft 재해 복구가 다른 유형의 환경에 대한 원스톱 비즈니스 연속성 솔루션을 제공합니다.</p>
+
+  <p align="justify">Azure Site Recovery를 시작하고 물리적 및 가상 워크로드를 보호하는 것은 쉽습니다. Azure Site Recovery 포털에서 InMage Scout를 다운로드하여 설치하기만 하면 됩니다. 방법은 다음과 같습니다.</p>
+
+  <p align="justify">Microsoft Azure Site Recovery 포털 빠른 시작 페이지의 SETUP RECOVERY에서 이제 "두 개의 온-프레미스 VMware 사이트 간"이라는 새 드롭다운 옵션이 표시됩니다. 이는 이미 "두 개의 온-프레미스 Hyper-V 사이트 간" 및 "온-프레미스 Hyper-V 사이트와 Microsoft Azure 사이"가 있는 두 가지 옵션에 추가됩니다.</p>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/07/image.png"><img style="border-width: 0px;" title="이미지" alt="image" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/image_thumb.png" width="618" height="354" border="0" /></a>
+
+  <p align="justify">두 온-프레미스 VMware 사이트 간에 복구를 설정하는 옵션을 선택하면 InMage Scout를 다운로드할 수 있습니다.</p>
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/07/clip_image004.jpg"><img style="border-width: 0px;" title="clip_image004" alt="clip_image004" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/clip_image004_thumb.jpg" width="617" height="152" border="0" /></a>
+
+  <p align="justify">다운로드한 InMage Scout 패키지에는 빠른 설치 가이드 및 기타 자세한 설명서가 함께 제공됩니다.</p>
+
+  <p align="justify">우리는 하이브리드 클라우드 재해 복구 솔루션의 우리의 포트폴리오에 InMage Scout를 환영하고 더 뒤에 남아 있지 워크로드의 우리의 약속을 제공 매우 기쁘게 생각하고 <i>- 물리적 또는 가상!</i></p>
+
+  <p align="justify">Azure Site Recovery에서 제공하는 이점을 경험하려면 <a href="https://azure.microsoft.com/en-us/services/site-recovery/">제품 페이지를 확인</a> 하여 시작하세요. <a href="https://social.msdn.microsoft.com/Forums/windowsazure/en-US/home?forum=hypervrecovmgr">MSDN의 Azure Site Recovery 포럼을</a> 방문하여 추가 정보를 확인하고 다른 고객과 소통할 수도 있습니다.</p>

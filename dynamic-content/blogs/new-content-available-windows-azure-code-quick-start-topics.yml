@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 57a4ba26bd9d3fe26a1a4511c5392cf57abb6408
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907653"
+Slug: new-content-available-windows-azure-code-quick-start-topics
+Title: '사용 가능한 새 콘텐츠: Azure Code 빠른 시작 항목 Windows'
+Summary: Windows 이제 MSDN에서 Azure Code 빠른 시작 토픽을 사용하여 Windows Azure와 상호 작용하는 기본적인 방법을 보여 주는 C# 코드 샘플을 확인할 수 있습니다. 코드와 자세한 내용을 확인할 수 있습니다.
+Content: '<p>Windows 이제 MSDN에서 Azure Code 빠른 시작 토픽<b></b>을 사용하여 Windows Azure와 상호 작용하는 기본 방법을 보여 주는 C# 코드 샘플을 확인할 수 있습니다. Windows Azure Storage에 파일을 저장하고, WCF 서비스를 만들고 배포하고, WCF 서비스를 사용하는 클라이언트 애플리케이션을 만들기 위한 코드 및 자세한 단계별 지침을 찾을 수 있습니다. 각 코드 조각의 중요한 측면이 설명되고 호출되므로 몇 가지 변경 내용으로 코드를 있는 그대로 복사하고 사용할 수 있습니다. </p>  <p>빠른 시작 항목을 완전히 진행하려면 Microsoft Visual Studio 2010 버전과 Microsoft Visual Studio용 Windows Azure Tools가 필요합니다. 클라우드에서 작동하는 코드를 보려면 Windows Azure에 대한 활성 구독도 필요합니다. 그러나 개발 환경만 사용하여 몇 가지 빠른 실행 항목을 해결할 수 있습니다.  시작하기 위해  <a target="_blank" href="">  </a> 필요한 항목을 다운로드합니다.</p>  <p>모든 코드 빠른 시작을 확인하고 Windows Azure에서 코드가 작동하는 방식을 알아보세요. 그리고 더 빠른 시작이 곧 출시될지 지켜보세요.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href=https://blogs.msdn.com/b/windowsazure/archive/2011/04/04/new-content-available-windows-azure-code-quick-start-topics.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗</p>'

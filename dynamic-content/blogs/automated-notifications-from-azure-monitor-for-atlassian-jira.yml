@@ -1,0 +1,89 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 679791c04c23f226e1b596bdcbe0e8c2d6cf2408
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901415"
+Slug: automated-notifications-from-azure-monitor-for-atlassian-jira
+Title: Atlassian JIRA용 Azure Monitor의 자동화된 알림
+Summary: Azure Monitor의 공개 미리 보기는 지난 달 Ignite에서 발표되었습니다. 이 새로운 플랫폼 서비스가 기존 모니터링 기능을 기반으로 빌드되는 방법에 대해 자세히 알아봅니다.
+Content: >-
+  <p>Azure Monitor의 공개 미리 보기는 최근&nbsp; Ignite에서 <a href="https://azure.microsoft.com/en-us/blog/announcing-the-public-preview-of-azure-monitor/">발표되었습니다</a>. 이 새로운 플랫폼 서비스는 모든 Azure 사용자에게 통합되고 빌드된 모니터링 환경을 제공하기 위해 일부 기존 모니터링 기능을 기반으로 합니다.</p>
+
+
+  <p>Azure Portal 내에서 Azure Monitor를 사용하여 활동 로그, 메트릭 및 진단 로그를 쿼리할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/application-insights/">애플리케이션 Insights</a>, <a href="https://azure.microsoft.com/en-us/services/log-analytics/">Azure Log Analytics</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/">OMS(Operations Management Suite)</a>와 같은 고급 모니터링 및 분석 도구가 필요한 경우 Azure Monitor 블레이드에 빠른 링크가 포함되어 있습니다. 포털에서 대시보드 환경을 활용하여 모니터링 데이터를 시각화하고 팀의 다른 사용자와 공유할 수도 있습니다.</p>
+
+
+  <p>포털의 통합 Azure Monitor 블레이드를 사용하면 다음 원본의 경고를 빠르고 중앙 집중식으로 관리할 수 있습니다.</p>
+
+
+  <ul>
+   <li>메트릭</li>
+   <li>이벤트(예: 자동 크기 조정 이벤트)</li>
+   <li>위치(애플리케이션 Insights 웹 테스트)</li>
+   <li>자동 관리 진단(애플리케이션 Insights)</li>
+  </ul>
+
+
+  <p>이러한 경고는 이메일을 보내도록 구성할 수 있으며 메트릭 및 웹 테스트 POST의 경우에도 웹후크에 보낼 수 있습니다. 이렇게 하면 외부 플랫폼과 쉽게 통합할 수 있습니다.</p>
+
+
+  <p><img alt="Azure Monitor - List of Alerts" border="0" height="322" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e454949c-ffc1-487c-a62d-4b269ef97b82.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="610"></p>
+
+
+  <h2>Azure Monitor와 Atlassian JIRA 통합</h2>
+
+
+  <p><a href="https://www.atlassian.com/software/jira">Atlassian JIRA</a> 는 많은 IT, 소프트웨어 및 비즈니스 팀에 친숙한 솔루션입니다. &#39;메트릭 및 웹 테스트 경고에서 JIRA 문제를 만들기 위해 웹후크 메커니즘을 통해 Azure Monitor 서비스에 연결할 수 있는 이상적인 후보입니다.</p>
+
+
+  <blockquote>
+
+  <p>&quot;JIRA를 사용한 Azure 알림은 JIRA 문제와 중요한 운영 이벤트를 결합하여 팀이 앱 성능을 유지하고, 더 빠르게 이동하고, DevOps 프로세스를&quot; 간소화할 수 있도록 지원한다고 Atlassian의 제품 파트너십 및 통합 책임자인 Bryant Lee는 말했습니다.</p>
+
+  </blockquote>
+
+
+  <p>기능을 확장하기 위해 JIRA, Confluence, HipChat 및 BitBucket용 추가 기능을 빌드할 수 있습니다. 추가 기능을 가능한 한 쉽게 배포하는 프로세스를 만들기 위해 <b>JIRA 관리</b> 화면의 추가 기능 관리를 통해 JIRA 인스턴스에 연결된 Azure Web App에서 배포 및 호스팅되도록 이 Azure <b>Notifications 추가</b> 기능을 빌드한&#39;. 추가 기능은 JIRA를 사용하여 비밀, 키 교환 및 기타 개인 세부 정보를 설정합니다. 이 세부 정보는 둘 간의 향후 모든 통신을 보호, 서명 및 확인하는 데 사용됩니다. 이 모든 보안 정보는 Azure Key Vault에 저장됩니다.</p>
+
+
+  <p>추가 기능은 다양한 경고 메커니즘에 대해 노출된 웹후크에 대해 Azure Monitor에서 구성할 수 있는 토큰 보안 엔드포인트를 노출합니다. 경고는 Azure Monitor에서 토큰 보안 엔드포인트로 흐릅니다. 그런 다음 추가 기능은 Azure Monitor 경고에서 페이로드를 변환하고 JIRA에서 적절한 문제를 안전하게 만듭니다.</p>
+
+
+  <p><img alt="Atlassian-Architecture" border="0" height="322" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b332c03c-619b-433f-b06c-71307e955797.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Atlassian-Architecture" width="610"></p>
+
+
+  <p>관련 정보는 Azure Monitor 경고에서 추출되고 문제에서 강조 표시됩니다. 참조를 위해 전체 Azure Monitor 경고 페이로드가 포함됩니다.</p>
+
+
+  <p><img alt="Atlassian JIRA Issue" border="0" height="593" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ecd3dfcb-a722-48e4-9f12-69ad4e9532ac.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="610"></p>
+
+
+  <h2>추가 기능 배포</h2>
+
+
+  <p><b>Atlassian JIRA용 Azure 알림 추가</b> 기능은 현재 <a href="https://bitbucket.org/atlassianlabs/azure-notifications-for-jira-addon">Bitbucket</a>에서 JIRA 인스턴스 및 Azure Monitor 경고를 배포하고 연결할 수 있습니다. 추가 기능&#39;리포지토리의 개요 섹션에서는 추가 기능 및 설치 방법 및 Azure에 연결된 모든 인프라에 대한 설명서를 제공합니다.</p>
+
+
+  <p>설치되면 추가 기능이 JIRA의 추가 기능 목록에 표시됩니다. 그런 다음, 추가 기능에 경고를 보내도록 Azure Monitor 경고를 구성할 수 있습니다.</p>
+
+
+  <p><img alt="Atlassian JIRA - add-on installed" border="0" height="161" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0dca18c5-243a-4950-9128-1923b26dea3c.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="610"></p>
+
+
+  <p>Azure에 배포된 리소스가 있고 JIRA를 사용하는 경우 이 추가 기능을 사용하면 오늘 Azure Monitor 경고에서 문제를 쉽게 만들 수 있습니다.</p>
+
+
+  <h2>참조 항목</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/blog/announcing-the-public-preview-of-azure-monitor/">Azure Monitor의 공개 미리 보기 발표</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/monitoring-get-started/">Azure Monitor를 사용하여 시작</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/">OMS(Operations Management Suite)</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/services/log-analytics/">Azure Log Analytics</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/services/application-insights/">Application Insights</a></li>
+   <li><a href="hhttps://developer.atlassian.com/jiradev/jira-apis/jira-rest-apis">JIRA REST API 설명서</a></li>
+   <li><a href="https://docs.atlassian.com/jira/REST/cloud/">JIRA REST API 참조</a></li>
+  </ul>

@@ -1,0 +1,72 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 23804e7f8d77d75189cd3c4c95d9f0f0fa759882
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901373"
+Slug: azure-defender-for-app-service-introduces-dangling-dns-protection
+Title: Azure Defender for App Service는 현수 DNS 보호를 도입합니다.
+Summary: Azure App Service에서 호스트되는 리소스는 공격자가 웹 애플리케이션의 취약성을 지속적으로 경계하기 때문에 최전선에 있습니다. 휴면 도메인은 기회적 공격자와 대상 지향 공격자 모두의 검사 목록에 상주합니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/services/app-service/" target="_blank">Azure App Service</a>에서 호스트되는 리소스는 공격자가 웹 애플리케이션의 취약성을 지속적으로 경계하기 때문에 최전선에 있습니다. 휴면 도메인은 기회적 공격자와 대상 지향 공격자 모두의 검사 목록에 상주합니다. 잠재적인 공격 노출 영역을 줄이기 위해 <a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover#use-azure-app-services-custom-domain-verification" target="_blank">Azure App Service는 사용자 지정 도메인을 App Service 리소스에 바인딩할 때 도메인 확인을 적용</a> 합니다.</p>
+
+
+  <p>이 블로그에서는 App Service 웹 사이트를 서비스 해제&mdash;할 때 Azure Defender for App Service가 DNS 등록 기관에 남아 있는 DNS(도메인 이름 시스템) 항목을 식별하는 방법을 설명합니다. 웹 사이트를 제거하고 DNS 등록 기관에서 사용자 지정 도메인을 제거하지&#39;경우 DNS 항목은 존재하지 않는 리소스를 가리키고 하위 도메인은 인수에 취약합니다. 현수 DNS 항목을 방지하고 하위 도메인 인수를 방지하는 프로세스를 구현하는 것이 좋습니다.</p>
+
+
+  <h2>일반 소개: 현수 DNS</h2>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover" target="_blank">현수 DNS</a> 는 도메인&#39;DNS 영역의 사용자 지정 DNS가 더 이상 프로비저닝되지 않은 Azure 리소스의 DNS CNAME 레코드에 매핑되어 연결된 도메인 &quot;이 매달려&quot; 있을 때 시작됩니다. 현수 도메인이라고도 하는 이 현수 DNS 항목은 <a href="https://www.securityweek.com/subdomain-official-joe-biden-campaign-website-defaced-turkish-hacker" target="_blank">도메인을 하위 도메인 인수</a>라고 하는 악의적인 작업에 취약하게 만듭니다.</p>
+
+
+  <p>하위 도메인 인수가 발생하면 악의적인 행위자가 이전에 프로비전 해제된 Azure 리소스와 연결된 도메인을 제어합니다. 제어를 확보하면 악의적인 행위자가 해당 엔드포인트에 대한 트래픽을 가로채거나 해당 엔드포인트에서 악성 금지 콘텐츠를 제공할 수 있습니다. 잠재적인 영향은 애플리케이션의 아키텍처에 따라 달라질 수 있습니다.</p>
+
+
+  <h2>App Service용 Azure Defender</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/azure-defender/" target="_blank">Azure Defender</a> for App Service는 클라우드의 규모를 사용하여 App Service를 통해 실행되는 애플리케이션을 대상으로 하는 공격을 식별합니다. 공격자는 웹 애플리케이션을 검색하여 약점을 찾아 악용합니다. 특정 환경으로 라우팅되기 전에 Azure에서 실행되는 애플리케이션에 대한 요청은 여러 게이트웨이를 통해 다시 검사되고 기록될&#39;있습니다. 그런 다음, 이 데이터는 악용 및 공격자를 식별하고, 나중에 사용할 새 패턴을 학습하는 데 사용됩니다.</p>
+
+
+  <p>Azure가 클라우드 공급자로 보유하고 있는 가시성을 활용하여 Azure Defender for App Service는 App Service 내부 로그를 분석하여 여러 대상에서 공격을 식별합니다. 예를 들어 분산 원본에서 시작된 광범위한 검사를 보여 주는 공격 방법론을 생각해 보세요. 이러한 유형의 공격은 일반적으로 광범위한 IP 집합에서 발생하며 크롤러 패턴을 보여 주며 공격자는 취약한 페이지 또는 플러그 인을 검색합니다. 이 유형의 공격은 단일 호스트의 관점에서 식별할 수 없습니다.</p>
+
+
+  <h2>현수 DNS 보호</h2>
+
+
+  <p>App Service용 Azure Defender는 이전에 사용자 지정 도메인을 App Service 호스팅 애플리케이션에 바인딩한 고객을 위해 현수 DNS에 대한 보호를 도입합니다. 이 작업은 Azure DNS 관리되는 도메인과 외부 도메인 등록자를 통해 관리되는 도메인을 모두 다룹니다. 현수 상태인 CNAME 자체가 아니라 서비스 서비스가 존재하지 않는&rsquo; 서비스 서비스를 가리키는 경우에도 현수 DNS를 감지합니다. 예를 들어 삭제된 웹 사이트를 가리키는 기존 Azure Traffic Manager 가리키는 사용자 지정 도메인이 있습니다.</p>
+
+
+  <p>Azure Defender for App Service는 웹 사이트의 프로비전 해제를 모니터링하고 별칭 레코드가 남아 있지 않은지 확인합니다. 잘못된 도메인 구성이 발견되면 보안 경고가 발생&nbsp;합니다. 사용자가 새로 만든 취약성을 신속하게 수정할 수 있습니다. App Service용 Azure Defender는 다음 두 가지 유형의 경고를 제공합니다.</p>
+
+
+  <ol>
+      <li>최근에 서비스 해제된 App Service 리소스&nbsp;에 대해 <strong>검색된 현수 DNS 레코드</strong>에는 유효한 DNS 포인터(현수 DNS&quot; 항목이라고&quot;도 함)가 있습니다. 이로 인해 사용자는 하위 도메인 인수에 취약합니다.</li>
+      <li>유효한 DNS 포인터(현수 <strong>DNS</strong> 항목이라고도 함&quot;)가 있는 최근에 서비스 해제된 App Service 리소스에 대해 잠재적인 현수 DNS&quot; 레코드가 검색되었습니다. 이 경우 도메인 확인 ID가 있는 TXT 레코드가 발견되었습니다. 현재 하위 도메인 인수의 즉각적인 위험은 없지만 서비스 해제된 App Service 리소스에 대한 CNAME 포인터를 제거하는 것이 좋습니다.</li>
+  </ol>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f7d99aa2-894a-4e99-86c8-2917997201d7.png"><img alt="Figure 1. Sample of an Azure Defender alert raised in response to a Dangle DNS record has been detected." border="0" height="438" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4220130a-232c-45f1-8354-5391ad537b92.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <h2>현수 DNS 항목 방지</h2>
+
+
+  <p>조직에서 현수 DNS 항목 및 결과 하위 도메인 인수를 방지하기 위한 프로세스를 구현했는지 확인하는 것은 보안 전략의 중요한 부분입니다.</p>
+
+
+  <p>일부 Azure 서비스는 예방 조치를 구현하는 데 도움이 되는 기능을 제공하며 아래에 자세히 설명되어 있습니다. 이 문제를 방지하는 다른 방법은 조직의&rsquo; 모범 사례 또는 표준 운영 절차를 통해 설정해야 합니다.</p>
+
+
+  <p>현수 DNS 및 하위 도메인 인수의 위협에 대해 자세히 알아보<a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/subdomain-takeover" target="_blank">고 중단된 DNS 항목에서</a>&nbsp; 하위 도메인 인수&nbsp;를 방지합니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/security-center/defender-for-app-service-introduction" target="_blank">App Service용 Azure Defender 및 App Service</a><a href="https://azure.microsoft.com/en-in/blog/azure-security-center-can-identify-attacks-targeting-azure-app-service-applications/" target="_blank">를 대상으로 하는 공격 식별에</a> 대해 자세히 알아봅니다.</li>
+      <li>Azure App Service 경고 목록은 <a href="https://docs.microsoft.com/en-us/azure/security-center/alerts-reference#alerts-azureappserv" target="_blank">경고의 참조 테이블을 참조하세요</a>.</li>
+  </ul>

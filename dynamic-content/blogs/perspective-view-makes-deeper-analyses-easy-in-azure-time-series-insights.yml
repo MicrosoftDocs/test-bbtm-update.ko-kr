@@ -1,0 +1,72 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3f8d538699dd5f124ed57fb4efa6e554e773d0ba
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907600"
+Slug: perspective-view-makes-deeper-analyses-easy-in-azure-time-series-insights
+Title: 큐브 뷰를 사용하면 Azure 시계열 Insights 심층 분석을 쉽게 수행할 수 있습니다.
+Summary: 큐브 뷰를 사용하면 분석가와 엔지니어가 다단계 분석, 여러 환경에서 데이터 보기, 검사점 또는 시간 기반 저장 및...
+Content: >-
+  <p><strong>큐브 뷰</strong> 를 사용하면 분석가와 엔지니어가 다중 단계 분석, 여러 사이트의 데이터 보기, 검사점 저장 또는 시간 기반 및 패턴 기반 데이터 비교와 같은 복잡한 작업을 효율적으로 수행할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/time-series-insights/" target="_blank">Azure Time Series Insights</a> 통해 고객은 데이터를 추가로 활용하여 분석을 심화하기 위한 새로운 욕구를 개발했습니다. 지금까지는 이 작업을 수행하는 데 비용이 많이 들고 시간이 많이 걸리는 집에서 재배한 해결 방법이 필요했습니다. 이 게시물은 몇 단계만에 데이터에서 얻을 수 있는 인사이트를 쉽게 높일 수 있도록 큐브 뷰&rsquo;의 &lsquo;전체 기능을 활용하는 몇 가지 일반적인 방법을 보여 줍니다.</p>
+
+
+  <p>큐브 뷰를 시작하려면 시계열 Insights 포털에서 환경을 선택한 후 오른쪽 위 모서리에 있는 네 개의 사각형 단추를 클릭합니다.</p>
+
+
+  <h2>몇 단계로 다단계 분석을 수행하는 방법</h2>
+
+
+  <p>거의 모든 데이터 조사 및 분석에는 결함이 있는 디바이스, 임계값, 전반적인 영향 등과 같은 실제 답변을 찾기 위한 여러 단계가 포함됩니다. 큐브 뷰를 사용하여 검사점 또는 중간 단계를&rsquo; 저장하면 이제 전체 스토리를 훨씬 쉽게 검색할 수 있습니다.&nbsp;</p>
+
+
+  <p>시계열 Insights 팀은 서비스의 성능을 추적하고 모니터링하기 위해 제품을 도그푸딩하는 것에 대해 종교적입니다. 나는 끊임없이 내 엔지니어에게 실시 조사 Ive&rsquo;의 전체 시퀀스와 전체 이야기를 보여주기 위해이 기능을 사용하여 자신을 찾을 수 있습니다! 가장 좋은 점은 내 팀과 조직 전체의 다른 사람들이 내 전체 조사를 신속하게 볼 수 있도록 큐브 뷰를 저장할 수 있다는 것입니다.&nbsp;</p>
+
+
+  <p>아래 그림은 다단계 조사 스토리를 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d57c0528-636c-45cb-9b8f-1b6a8d6ee7cf.png"><img alt="Multistep analysis" border="0" height="760" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d21122e5-b8d6-427e-87f2-7cd2c586500f.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="다단계 분석" width="1371"></a></p>
+
+
+  <h2>오늘의&rsquo; 추세를 어제&rsquo; 추세와 비교</h2>
+
+
+  <p>데이터 분석의 일반적인 사례는 비교입니다. 사용자는 현재 기간에 비해 이전 기간 동안 상황이 어떻게 진행되었는지 찾고자 합니다. 큐브 뷰를 사용하면 다음 두 가지 간단한 단계를 사용하여 시간 기반 비교를 매우 쉽게 수행할 수 있습니다.</p>
+
+
+  <ol>
+   <li>큐브 뷰&rdquo;로 &ldquo;이동하여 현재 보기를 복제합니다.</li>
+   <li>복제된 보기에서 현재 시간을 필요한 시간 창으로 변경합니다.</li>
+  </ol>
+
+
+  <p>즉&rsquo;, 이제 데이터를 시각적으로 비교할 수 있습니다.</p>
+
+
+  <p>시간 기반 비교는 중요하지만 많은 고객이 시간에 바인딩되지 않지만 예상 동작을 참조하고 유효성을 검사하는 데 중요한 흥미로운 패턴 또는 다양한 비즈니스 조건에 대한 쿼리를 저장했습니다. 큐브 뷰를 사용하면 저장된 쿼리를 열고 현재 또는 필요한 데이터와 비교하여 상태를 신속하게 확인하고 분석 또는 조사를 신속하게 수행할 수 있습니다.</p>
+
+
+  <p>아래 그림은 시간 기반 및 저장된 쿼리 비교를 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1a8f77f1-19e8-47e5-a9b7-b97f5638b567.png"><img alt="Time-based comparison" border="0" height="747" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9c58d2b-eb96-47d0-bc8f-89b360a7691b.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="시간 기반 비교" width="1335"></a></p>
+
+
+  <h2>전역 보기</h2>
+
+
+  <p>전 세계 여러 위치에 제조 공장 또는 배포가 있는 경우 데이터는 일반적으로 단일 위치에서 나란히 사일로되거나 중단됩니다. 따라서 거의 실시간으로 다양한 지리적 위치에서 모든 데이터를 시각화하고 분석하기가 매우 어렵습니다. 큐브 뷰에서는 여러 환경의 데이터를 볼 수 있으므로 공장 또는 위치당 글로벌 추세 또는 데이터를 쉽게 분석할 수 있습니다. 예를 들어, 고객 중 한 명이 전 세계에 제조 공장을 보유하고 있으며 시계열이 Insights 전에 각 공장에서 생산되는 부품 수, 속도, 에너지 소비량 등을 실시간으로 관찰하기가 매우 어려웠습니다. 큐브 뷰 기능을 사용하여 식물 간의 몇 가지 통찰력 있는 차이점을 발견했습니다. 그들은 지금 가장 높은 성능의 공장에서 모범 사례를 사용하여 전반적인 생산성을 개선하기 위해 노력하고 있습니다.</p>
+
+
+  <p>아래 그림은 미국과 유럽 공장의 데이터를 비교합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/261f37ad-e589-4a61-9105-8c8940116d9b.png"><img alt="Global view" border="0" height="736" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e076221a-21a5-4e21-952b-c6d5ab837004.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="전역 보기" width="1390"></a></p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <p>현재 큐브 뷰에는 4개의 타일로 제한됩니다. 우리는 더 많은 기능을 추가하기 위해 노력하고 있으며 앞으로 출시 될 기능에&rsquo; 대해 기쁘게 생각하므로 곧 더 많은 제품 뉴스를 찾아보십시오! 또한 시계열 Insights 살펴보고 무료 <a href="https://insights.timeseries.azure.com/demo" target="_blank">데모 환경을</a>&rsquo; 사용하여 시험 사용에 대한 최근 개선 사항을 확인할 수 있습니다. 시작하려면 Azure.com 계정이 필요합니다. <a href="https://twitter.com/MSFTAzureTSI" target="_blank">또한 트위터에서</a> 우리를 팔로우하여 시계열 Insights 모든 것을 최신 상태로 유지할 수 있습니다.</p>

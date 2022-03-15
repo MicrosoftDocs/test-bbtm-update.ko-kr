@@ -1,0 +1,108 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bd94af6f2d006e060de3dc5aafb654e924bd6211
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908375"
+Slug: introducing-microsoft-migration-accelerator
+Title: Microsoft Migration Accelerator 소개
+Summary: Azure용 MA(마이그레이션 가속기)의 제한된 미리 보기를 발표하게 되어 기쁩니다.  InMage 인수 기술에서 생성된 MA는 물리적, VMware, Amazon Web Services 및 Microsoft Hyper-V 워크로드를 Azure로 원활하게 마이그레이션하도록 설계되었습니다.
+Content: >-
+  Azure용 MA(마이그레이션 가속기)의 제한된 미리 보기를 발표하게 되어 기쁩니다.<a href="https://blogs.microsoft.com/blog/2014/07/11/microsoft-acquires-inmage-better-business-continuity-with-azure/">InMage 인수</a> 기술에서 생성된 MA는 물리적, VMware, Amazon Web Services 및 Microsoft Hyper-V 워크로드를 Azure로 원활하게 마이그레이션하도록 설계되었습니다.원본 워크로드 검색, 원격 에이전트 설치, 네트워크 적응 및 엔드포인트 구성을 포함하여 마이그레이션의 모든 측면을 자동화합니다. MA를 사용하면 마이그레이션 프로젝트의 비용과 위험을 줄일 수 있습니다.
+
+
+  MA는 다음을 제공하여 클라우드 마이그레이션 패러다임을 변경합니다.
+
+  <ul>
+   <li><strong>다른 유형</strong>: MA를 사용하면 환경 내의 VMware, Microsoft Hyper-V, Amazon Web Services 및/또는 물리적 서버와 같은 광범위한 플랫폼에서 실행되는 워크로드를 마이그레이션할 수 있습니다. MA는 Windows Server 2008 R2 sp1, Windows Server 2012 및 Windows Server 2012 R2 운영 체제에서 실행되는 워크로드를 지원할 수 있습니다.</li>
+   <li><strong>간단하고 자동화된 마이그레이션</strong>: MA 포털을 사용하면 클라우드에서 원격으로 엔터프라이즈 워크로드를 자동으로 검색할 수 있습니다.클릭 몇 번으로 엔드 투 엔드 마이그레이션 시나리오를 구성할 수 있습니다.MA를 사용하면 중단이 수행되기 전에 워크로드 기능의 유효성을 검사하는 기능을 제공하는 기존 온-프레미스 프로덕션 워크로드에 영향을 주지 않고 클라우드에서 워크로드를 테스트할 수 있습니다.</li>
+   <li><strong>다중 계층 애플리케이션 마이그레이션</strong>: MA는 계층 간에 오케스트레이션된 애플리케이션 수준 일관성을 사용하여 다중 계층 프로덕션 시스템을 마이그레이션하는 고유한 기능을 자랑합니다. 이렇게 하면 다중 계층 애플리케이션이 원본에서 실행된 대로 Azure에서 동일하게 실행됩니다. 수동 구성 없이도 애플리케이션 시작 순서가 적용됩니다.</li>
+   <li><strong>연속 복제, 최소 중단 시간</strong>: Azure용 MA는 OS 및 애플리케이션 데이터를 포함한 전체 시스템 복제를 제공합니다.이 연속 복제 및 메모리 내 변경 내용 추적은 중단 시간을 단 몇 분으로 줄여 제품 워크로드에 미치는 영향을 최소화합니다.</li>
+  </ul>
+
+  <h2>MA 작동 방식</h2>
+
+  MA는 아래와 같이 여러 구성 요소를 사용하여 마이그레이션 프로젝트를 오케스트레이션합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/08/MArch.png"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="월" alt="MArch" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/MArch_thumb.png" width="470" height="253" border="0" /></a>
+
+  <ol>
+   <li>모바일 서비스: Azure의 대상 가상 머신으로 마이그레이션할 원본 서버(온-프레미스 물리적 또는 가상)에 설치되는 경량(게스트 기반) 중앙 배포 에이전트입니다.선택한 원본 서버 볼륨을 대상 서버로 실시간 데이터 캡처 및 동기화를 담당합니다.</li>
+   <li>PS(프로세스 서버): 온-프레미스3에 설치된 물리적 또는 가상 서버입니다. Azure에서 모바일 서비스와 대상 가상 머신 간의 통신을 용이하게 합니다. 캐싱, 큐, 압축, 암호화 및 대역폭 관리를 제공합니다.</li>
+   <li>CS(구성 서버): 마스터 대상과 MA 포털 간의 통신을 관리합니다. Azure 구독의 전용 Azure VM에 설치됩니다. CS와 MA 포털 간에 정기적인 동기화가 수행됩니다.</li>
+   <li>MT(마스터 대상): 온-프레미스 서버의 디스크를 복제하기 위한 대상입니다. Azure 구독의 전용 Azure VM 내에 설치됩니다.중복 복사본을 유지하기 위해 디스크가 MT에 연결됩니다.</li>
+   <li>MA 포털: 보호를 검색, 구성하고 온-프레미스 워크로드를 Azure로 마이그레이션하는 다중 테넌트 포털입니다.</li>
+  </ol>
+
+  MA는 Enterprise 내의 원본 워크로드를 Azure Cloud로 마이그레이션하는 데 필요한 모든 중요한 프로세스를 자동화합니다. ESX/Hyper-V, AWS 또는 물리적 서버에서 실행되는 온-프레미스 워크로드를 검색할 수 있습니다. 워크로드는 MA 포털에 연결된 프로세스 서버를 사용하여 검색됩니다. 검색된 인스턴스는 아래와 같이 MA 포털에 나열됩니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/08/MMADisc.png"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="MMADisc" alt="MMADisc" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/MMADisc_thumb.png" width="398" height="321" border="0" /></a>
+
+
+  마이그레이션을 위해 검색된 워크로드 목록에서 특정 인스턴스를 선택할 수 있습니다. 다음 단계는 원본 서버에 모바일 서비스(에이전트)를 설치하는 것입니다. 아래와 같이 '모바일 서비스 설치' 옵션을 선택하여 MA 포털에서 원격으로 오케스트레이션할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/08/MMAinstallagent.png"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="MMAinstallagent" alt="MMAinstallagent" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/MMAinstallagent_thumb.png" width="397" height="156" border="0" /></a>
+
+
+  모바일 서비스를 설치한 후 선택한 서버에 대한 복제를 구성하여 보호 옵션을 선택할 수 있습니다.MA는 보호된 원본 서버에 대한 검색 프로세스에서 얻은 구성 세부 정보를 사용하여 Azure 내에서 환경에 가장 적합한 크기를 결정하고 프로비전합니다. 또한 대상 VHD는 마스터 대상에 프로비전됩니다. 복제가 설정되면 온-프레미스 서버 디스크를 Azure 클라우드의 대상 VHD에 동기화하기 시작합니다.
+
+
+  이제 초기 동기화를 구성했으므로 초기 복제가 완료될 때까지 기다립니다. 초기 복제 후 Cloud Services 메뉴에서 마이그레이션 옵션을 선택합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/08/MMAmigrate.png"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="MMAmigrate" alt="MMAmigrate" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/MMAmigrate_thumb.png" width="396" height="207" border="0" /></a>
+
+
+  보호된 애플리케이션 아래에 표시되는 보호된 서버 목록에서 마이그레이션할 보호 계획을 선택합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/08/MMAprotect.png"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="MMAprotect" alt="MMAprotect" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/MMAprotect_thumb.png" width="403" height="283" border="0" /></a>
+
+
+  보호 계획을 선택하면 마이그레이션 &gt; 선택한 호스트 아래에 표시됩니다. 마이그레이션을 클릭하여 마이그레이션 프로세스를 시작합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/08/MMAcutover.png"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="MMAcutover" alt="MMAcutover" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/MMAcutover_thumb.png" width="405" height="129" border="0" /></a>
+
+
+  이제 마이그레이션 시나리오 마이그레이션 상태에서 마이그레이션 진행률을 모니터링할 수 있습니다 &gt; .
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/08/MMAstatus.png"><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="MMAstatus" alt="MMAstatus" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/MMAstatus_thumb.png" width="409" height="163" border="0" /></a>
+
+
+  마이그레이션에 성공하면 Azure Cloud에서 Virtual Machines가 만들어집니다.이제 마이그레이션된 VM에 로그온하여 클라우드에서 실행 중인 인스턴스가 원본 서버와 동일한지 확인할 수 있습니다.
+
+  <h2>요약</h2>
+
+  요약하면 MA는 다른 유형의 자산을 Azure로 원활하게 마이그레이션할 수 있는 전례 없는 수준의 자동화를 제공합니다.
+
+
+  주요 주요 사항:
+
+  <ul>
+   <li>자동화된 자산 검색 및 마이그레이션 – MA 포털은 단일 창에서 워크로드의 검색 및 마이그레이션을 오케스트레이션합니다.</li>
+   <li>Azure로의 마이그레이션 중단(분) – 연속 복제 및 메모리 내 변경 추적은 중단 시간을 크게 줄입니다.</li>
+   <li>자체 프로비전된 대상 Azure VM - 대상 VM은 동기화 중에 휴면 상태이며 컴퓨팅 비용을 절감하고 중단 중에 자동으로 프로비전됩니다.</li>
+   <li>다른 유형의 플랫폼 지원 – 광범위한 환경 및 플랫폼에 대한 지원.</li>
+   <li>연속 복제 – 원본 서버의 경량 에이전트는 마이그레이션 중에 가동 중지 시간이 거의 0에 가까운지 확인하여 대상에 대한 모든 변경 내용을 지속적으로 복제합니다.</li>
+   <li>다중 계층 애플리케이션 지원 – 계층 간에 오케스트레이션된 애플리케이션 수준 일관성을 사용하여 다중 계층 프로덕션 시스템을 마이그레이션합니다.</li>
+   <li>대상 VM 네트워크 및 엔드포인트 적응 – 자동화된 네트워크 적응 및 엔드포인트 재구성을 지원합니다.</li>
+   <li>통합 압축, 암호화 및 대역폭 관리.</li>
+  </ul>
+
+  시작하려면 <a href="https://aka.ms/malanding">Microsoft Migration Accelerator</a> 를 방문하여 미리 보기에 등록하세요.
+
+
+  추가 리소스:
+
+  <ul>
+   <li><a title="Microsoft Migration Accelerator 설치에 대한 단계별 가이드 Microsoft Migration AcceleratorStep-by-Step" href="https://blogs.technet.com/b/srinathv/archive/2014/09/18/step-by-step-guide-on-installing-microsoft-migration-accelerator.aspx"> 가이드</a></li>
+   <li><a href="https://blogs.technet.com/b/srinathv/archive/2014/09/17/prerequisite-and-support-matrix-microsoft-migration-accelerator-for-azure.aspx">필수 구성 요소 및 지원 매트릭스 – Microsoft Migration Accelerator(Azure용)</a></li>
+   <li><a href="Migration Accelerator Ports and Protocols">배포: 마이그레이션 가속기 포트 및 프로토콜</a></li>
+   <li><a href="Troubleshooting Migration Accelerator Deployment ">마이그레이션 가속기 배포 문제 해결</a></li>
+  </ul>

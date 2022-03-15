@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 66204109b2da5848a4ba0d221182738103d8401f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901337"
+Slug: cleaning-up-the-ganges-river-with-help-from-iot
+Title: IoT의 도움을 받아  Ganges River 청소
+Summary: '히말라야 산맥에서 솟아나고 벵골 만으로 흐르는 징게스는 수세기 동안 인도의 거룩한 강이었습니다. '
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c1e0bd7e-04b2-4e37-b8f2-c5368e001e59.png"><img alt="Cleaning-up-the-Ganges India using IoT" border="0" height="682" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8d5f503-313e-4116-9dad-effa0f4ca44b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="클리닝업 더 강지스 인도" width="1024"></a></p>
+
+
+  <p>히말라야 산맥에서 솟아나고 벵골 만으로 흐르는 징게스는 수세기 동안 인도의 거룩한 강이었습니다. 여신 가가(Gagá)로 인격화된 곤지족은 힌두교도들이 유골을 바다에 담아 잃어버린 친척을 축하하고, 강에서 목욕을 하면 죄를 면제하고 삶과 죽음의 주기에서 해방을 일으킨다고 믿는 힌두교도들의 숭배를 받습니다.</p>
+
+
+  <p>거의 1,600 마일에 걸쳐 뻗어, 징지스는 또한 경제 강국과 국가의 중요한 생명선입니다. 이 강은 11개 주에서 인도&rsquo; 인구의 약 40%에 물을 제공하여 약 7억 명에게 물을 제공합니다. 그것은 적어도 150 종의 동물과 해양 생물의 고향이며, 분지에서만 1억 4천만 에이커 이상의 경작지를 관개하고 인도&rsquo; 국내 총생산의 54 %를 지원합니다.</p>
+
+
+  <p>그러나 수십 년 동안  Ganges는 위험에 있었습니다. 그 길에 있는 도시와 인구는 극적으로 확장되어 강에서 더 많은 것을 요구하면서 도시 쓰레기의 재앙이 증가하고 있습니다. 시민들이 매일 사용하는 징게는 플라스틱 병에서 하수, 산업 폐기물, 심지어 인간의 유해에 이르기까지 모든 종류의 오염 물질 &mdash; 로 오염됩니다. 농업 유출도 증가하고 있으며, 더 많은 댐과 점점 더 건조한 환경은 강&rsquo;이 담수의 흐름을 갱신하는 속도를 늦추고 있습니다.</p>
+
+
+  <p>상황을 바꾸기 위한 노력의 일환으로 3년 전 인도 정부는 강이족을 복원, 관리 및 감시하기 위한 헌장이 있는 새로운 사역을 만들었습니다. <a href="https://cpcb.nic.in/">중앙 오염 통제 위원회</a> (CPCB)는 고대 강을 청소할뿐만 아니라 수로를 따라 각 인도 국가에 대한 요구 사항을 시행하기 위해 수질 수준을 모니터링하는 거대한 과제를 맡았습니다.</p>
+
+
+  <p>오염에 대처하고  Ganges에 대한 균형을 복원하기 위해 CPCB는 IoT로 전환했습니다. 디지털 인도 이니셔티브의 일환으로 정부는 인도 ISV <a href="https://www.techspaneng.com/">TechSpan Engineering</a>과 협력하여 오스트리아 회사가 제공하는 센서를 사용하여 Azure IoT 플랫폼에 구축된 모니터링 시스템을 구현하고 <a href="https://www.s-can.at/en/">있습니다</a>.</p>
+
+
+  <p>TechSpans&rsquo; EnLite 수질 모니터링 애플리케이션 및 HydroQ+ 포털이 프로젝트에 맞게 사용자 지정되었습니다. 클라우드, IOT 및 빅 데이터의 기능을 사용하여 솔루션은 CPCB에서 이미 사용 중인 강력한 s::can 센서를 활용하여 염화물 및 불소 수준에서 온도 및 색상에 이르는 17개 매개 변수 &mdash; 에 대한 측정값을 제공합니다.</p>
+
+
+  <p>클라우드 및 Azure 데이터 처리의 모든 기능을 솔루션에 제공하기 위해 TechSpan은 SQL Server, 테이블/블로그 스토리지 통합 등과 함께 Azure Stream Analytics와 같은 Azure IoT 기능을 사용합니다.</p>
+
+
+  <p>이 솔루션에는 현재 36개의 모니터링 스테이션이 포함되어 있으며, 2,500킬로미터에 걸쳐 있으며 인도 4개 주에 걸쳐 있습니다. 15분마다 스테이션은 라이브 수질 측정값을 캡처하는 Azure IoT Hub로 데이터를 보냅니다. 앞으로 몇 주 안에 이사회는 200개의 최종 목표를 가지고 24개의 스테이션을 더 출시할 계획입니다.</p>
+
+
+  <p>이 데이터는 처음에 대강의 해안이 있는 인도 주에 적용되는 환경 정책을 시행하는 데 사용되고 있습니다. 이 접근 방식은 국가가 정기적으로 오염에 대해 서로를 비난한 집행과 관련된 오랜 정치적 문제를 해결하는 것입니다.</p>
+
+
+  <blockquote>
+
+  <p>CPCB는 캡처되는 실시간 정보를 통해 강에서 가장 많은 오염을 겪고 있는 지역과 각 모니터링 스테이션에 존재하는 오염 유형을 명확하게 확인할 수 있습니다. 수질 수준이 설정된 임계값을 벗어나는 국가는 수질 규정을 준수하기 위해 막대한 벌금이나 기타 인센티브에 직면할 수 있습니다.</p>
+
+  </blockquote>
+
+
+  <p>그 과정에서 인도 정부는 오염 동향, 출처, 화학 성분 등에 대한 방대한 데이터를 수집하고 있습니다. 그리고 이사회가 데이터 수집 기능을 계속 구축함에 따라 분석, 기계 학습 및 봇 기반 솔루션을 &mdash; 통해 시스템&rsquo; 정확도와 효율성을 개선 &mdash; 하여 오염과의 싸움에서 장기적인 승리를 거둘 수 있는 잠재력을 높일 수 있습니다.</p>
+
+
+  <p>이러한 목표를 염두에 두고 TechSpan의 <a href="https://azure.microsoft.com/en-us/overview/iot/">Azure 기반</a> 솔루션은 s::canthe&mdash; 오스트리아 회사가 전 세계적으로 기술을 제공하기 시작했기 때문에 다른 회사들은 Ganges의 고대 해안을 따라 일어나는 혁신의 혜택을 누릴 수 있습니다.</p>
+
+
+  <p>&rsquo;IoT의 거의 무제한 적응을 사용하여 세계에서&rsquo; 가장 복잡한 문제를 해결하는 방법의 모든 부분을 설명합니다. 수백 킬로미터에 걸쳐 강 생태계의 상태를 모니터링하는 것은 불과 몇 년 전에 불가능한 작업처럼 보였지만 오늘날 IoT는 국가가 대체 할 수없는 자원을 돌볼 수있는 실용적인 방법을 만들고 있습니다.</p>
+
+
+  <p>&nbsp;</p>

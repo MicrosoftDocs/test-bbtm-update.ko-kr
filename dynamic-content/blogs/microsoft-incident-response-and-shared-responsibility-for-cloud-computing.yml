@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a92beb27a34986650d438535e4b266495bb361c7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901616"
+Slug: microsoft-incident-response-and-shared-responsibility-for-cloud-computing
+Title: 클라우드 컴퓨팅에 대한 Microsoft 인시던트 대응 및 공유 책임
+Summary: 고객이 자주 묻는 일반적인 주제를 다루는 두 가지 새로운 논문을 소개하게 되어 기쁩니다. 두 문서 모두 Microsoft가 Azure Cloud Services를 채택할 수 있도록 복잡한 프로세스를 해결하는 방법을 이해하는 데 도움이 되도록 설계되었습니다.
+Content: >-
+  <p>고객 기반 및 업계 공간이 확장됨에 따라 Azure를 활용하여 고객&rsquo; 비즈니스 및 핵심 IT 기능을 운영할 수 있는 가능성과 이점을 계속 모색하고 있습니다. 오늘날 Im&rsquo;은 고객이 자주 묻는 일반적인 주제를 다루는 두 개의 새로운 논문을 소개하게 되어 기쁩니다.</p>
+
+
+  <h3>공동 책임</h3>
+
+
+  <p>보안 제어는 기능과 보안이 성공적으로 공존하도록 기술 솔루션을 빌드하고 유지 관리하도록 설계되었습니다. 이 이상은 Azure에서 보안 컨트롤의 구현을 지속적으로 검사하고 모니터링하고 서비스 팀이 클라우드 환경에서 새로운 기능을 계속 혁신하는 것을 감시하는 강력한 기능입니다. 즉, 클라우드는 고객이 사용할 수 있는 서비스 및/또는 기능에 따라 다양한 책임을 제공합니다. 이는 대부분의 경우 보안이 동일한 소유자에 의해 구현되는 기존의 온-프레미스 정보 시스템과는 다릅니다.</p>
+
+
+  <p><a href="https://aka.ms/sharedresponsibility"><em><u>클라우드 컴퓨팅에 대한 공유 책임</u></em></a> 문서는 이 패러다임을 분석하여 Azures 보안 제어 구현이 종료되고 시작되는 위치와 고객 책임도 시작 및 종료되는 잠재 Azure&rsquo; 고객에게&rsquo; 명확하게 설명합니다. 이 문서에서는 세 가지 주요 클라우드 서비스 제공 모델인 IaaS, PaaS 및 SaaS를 검사하는 것 외에도 클라우드 서비스를 채택할 때 주요 보안 계층에서 고려해야 할 문제를 살펴봅니다.</p>
+
+
+  <p>클라우드&rsquo;로의 여정에서는 데이터 보안 및 데이터가 제대로 분류되었는지 확인하는 등 클라우드 고객이 해결해야 하는 책임을 식별하는 것이 중요합니다. 이 논문은 또한 책임 모델을 이해하는 간단한 방법을 고려합니다.</p>
+
+
+  <h3>보안 응답</h3>
+
+
+  <p>클라우드 백서<a href="https://aka.ms/SecurityResponsepaper"><em><u>의 Microsoft Azure 보안 응답</u></em></a>은 Azure가 보안을 조사, 관리 및 대응하는 방법을 검토합니다. Azure 보안 인시던트 관리 프로그램은 Microsoft에 대한 중요한 책임이며 Microsoft Online Services를 사용하는 모든 고객이 의지할 수 있는 투자를 나타냅니다. 제시된 5단계 프로세스는 수년 동안 진화해 왔으며 계속 발전하고 있습니다. 여기에는 Microsoft 고객 보호에 전념하는 숙련된 전문가 팀이 포함됩니다.</p>
+
+
+  <p>두 문서 모두 Microsoft가 복잡한 프로세스를 해결하는 방법을 이해하여 Azure Cloud Services를 보다 효과적으로 채택할 수 있도록 설계되었습니다. 추가 문서 및 지침은 <a href="https://www.microsoft.com/TrustCenter/Security/default.aspx"><u>Microsoft 보안 센터에서</u></a> 찾을 수 있습니다.</p>

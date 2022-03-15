@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ca99f8867d7ba450dd5ed0ec741289e53add89ef
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908522"
+Slug: check-out-all-the-azure-sessions-planned-for-microsoft-ignite
+Title: Microsoft Ignite에 대해 계획된 모든 Azure 세션 확인
+Summary: Microsoft Ignite에서 Azure 팀에 합류할 준비가 되셨나요? 자세히 알아보려는 주제, 문제 및 아이디어를 정확히 계획하세요!
+Content: >-
+  <p>Microsoft Ignite에서 Azure 팀에 합류할 준비가 되셨나요? 이제 자세히 알아보려는 주제, 문제 및 아이디어를 정확히 계획할 수 있습니다. 전체 세션 카탈로그는 라이브 상태이며, Azure 토픽에 전념하는 75개 이상의 세션을 포함하여 440개 이상의 세션 중에서 선택할 수 있습니다. &rsquo;또한 쉽게 검색하고 필터링할 수 있으므로 요구 사항에 맞는 과정만 찾을 수 있습니다.</p>
+
+
+  <p>찾을 Azure 토픽의 샘플은 다음과&rsquo; 같습니다&rsquo;.&hellip;</p>
+
+
+  <h3><a href="https://myignite.microsoft.com/sessions/3113">제프리 스노버와 마크 루시노비치와 함께 Microsoft Azure 스택 검토</a></h3>
+
+
+  <p>기술 펠로우 Jeffrey Snover 및 Azure CTO Mark Russinovich에서 Azure Stack에 대한 개요를 알아 보세요. Theyll&rsquo;은&mdash; 고객이 데이터 센터의 서버에서 Azure를 실행할 수 있도록 하는 방법 및 이점을 설명&mdash;합니다.</p>
+
+
+  <h3><a href="https://myignite.microsoft.com/sessions/3172">Azure App Service를 사용하여 Enterprise 대한 최신 PaaS 마스터</a></h3>
+
+
+  <p>보안. 크기 조정. 하이브리드. 현대. 이는 단순히 유행어가 아닙니다&rsquo;.&mdash; 모든 항목은 최신 PaaS 플랫폼이 제공해야 하는 기능을 설명합니다. Azure App Service는 최신 엔터프라이즈 애플리케이션을 위한 전투에서 테스트된 PaaS 플랫폼입니다. Azure App Service를 통해 온-프레미스 및 클라우드에서 데이터를 원활하게 작성하고, 모바일 클라이언트와 기존 브라우저를 모두 지원하며, 엔터프라이즈에서 요구하는 보안 및 제어를 유지하면서 전 세계의&mdash; 앱을 스케일링하는 방법을 알아봅니다.</p>
+
+
+  <h3><a href="https://myignite.microsoft.com/sessions/2674">Azure DevTest Labs 사용하여 한 번에 하나의 환경을 더 쉽게 만들 수 있습니다.</a></h3>
+
+
+  <p>이 세션에서는 팀이 Microsoft Azure DevTest Labs를 사용하여 재사용 가능한 템플릿 및 아티팩트를 사용하여 몇 번의 클릭으로 환경을 신속하게 만드는 동시에 정책 및 자동화된 종료를 설정하여 낭비를 최소화하고 비용을 제어하는 방법을 설명합니다. 또한 Labs API를 직접 사용하여 지속적인 배달 파이프라인을 만드는 방법의 예제도 보여 줍니다.</p>
+
+
+  <p>그리고 그것은&rsquo; 단지 시작에 불과합니다.&hellip;</p>
+
+
+  <p>선택할 수 있는 Azure 세션이 75개 이상인 경우 어떤 세션이 참석할까요?</p>
+
+
+  <p>&gt;<a href="https://myignite.microsoft.com/sessions?f=%5B%7B%22name%22:%22Azure%22,%22facetName%22:%22products%22%7D%5D">Azure 세션 탐색</a> &lt;</p>
+
+
+  <p>기억하세요: 2630&ndash;년 9월이 빠르게 다가오고 있습니다. 우리는&rsquo; 곧&mdash; 모든 사람을보고 흥분하고 아직 등록하지 않은&rsquo; 경우, 지연하지 마십시오&rsquo;! <a href="https://register.ignite.microsoft.com/">Microsoft Ignite에 등록합니다</a>.</p>

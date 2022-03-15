@@ -1,0 +1,94 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 489b97dd5fd0078b6d4d9ea5850f1a0aaab68eac
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901807"
+Slug: azure-blob-storage-lifecycle-management-now-generally-available
+Title: Azure Blob Storage 수명 주기 관리 일반 공급
+Summary: 데이터 집합에는 고유한 수명 주기가 있습니다. 어떤 데이터는 수명 주기의 초기 단계에서 자주 액세스되다가 데이터가 오래될수록 액세스 빈도가 떨어집니다.
+Content: >-
+  <p>데이터 집합에는 고유한 수명 주기가 있습니다. 어떤 데이터는 수명 주기의 초기 단계에서 자주 액세스되다가 데이터가 오래될수록 액세스 빈도가 떨어집니다. 어떤 데이터는 클라우드에서 유휴 상태로 유지되고 저장된 후에는 어쩌다 한 번씩 액세스됩니다. 일부 데이터는 생성 후 며칠 또는 몇 달이 지나면 만료되는 반면, 다른 데이터 세트는 수명 동안 적극적으로 읽고 수정합니다.</p>
+
+
+  <p>오늘 사용자 지정 정의 규칙을 사용하여 Blob 계층화 및 보존을 자동화할 수 있도록 Blob Storage 수명 주기 관리의 일반 가용성을 공유하게 되어 기쁩니다. 이 기능은 모든 Azure 퍼블릭 지역에서 사용할 수 있습니다.</p>
+
+
+  <h2>수명 주기 관리</h2>
+
+
+  <p>Azure Blob Storage 수명 주기 관리는 데이터를 최상의 액세스 계층으로 전환하고 수명 주기가 끝날 때 데이터를 만료하는 데 사용할 수 있는 풍부한 규칙 기반 정책을 제공합니다.</p>
+
+
+  <p>수명 주기 관리 정책으로 다음과 같은 일을 할 수 있습니다.</p>
+
+
+  <ul>
+      <li>성능 및 비용을 최적화하기 위해 Blob을 핫에서 쿨로, 핫에서 보관으로 또는 보관으로 쿨과 같은 쿨 스토리지 계층으로 전환</li>
+      <li>수명 주기가 끝나면 BLOB 삭제</li>
+      <li>최대 100 규칙 정의</li>
+      <li>하루에 한 번 자동으로 규칙 실행</li>
+      <li>규칙당 최대 10개의 접두사로 컨테이너 또는 Blob의 특정 하위 집합에 규칙 적용</li>
+  </ul>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-lifecycle-managment-concepts" target="_blank">Azure Blob Storage 수명 주기 관리</a> 설명서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <h2>예제</h2>
+
+
+  <p>첫 달 동안 자주 액세스되고, 다음 2개월 동안만 가끔 필요하고, 이후에 거의 액세스되지 않으며, 7년 후에 만료되어야 하는 데이터 집합을 고려합니다. 이 시나리오에서 핫 스토리지는 처음에 사용하기에 가장 적합한 계층이고, 쿨 스토리지는 가끔 액세스에 적합하며, 보관 스토리지는 몇 달 후와 7년 후에 삭제되기 전에 가장 적합한 계층입니다.</p>
+
+
+  <p>다음 샘플 정책은 이러한 데이터의 수명 주기를 관리합니다. 컨테이너 &ldquo;foo&rdquo;의 블록 Blob에 적용됩니다.</p>
+
+
+  <ul>
+      <li>마지막으로 수정한 후 30일 후에 Blob을 쿨 스토리지로 계층화</li>
+      <li>마지막으로 수정한 후 90일 후에 스토리지를 보관하도록 Blob 계층화</li>
+      <li>마지막으로 수정한 후 Blob 2,555일(7년) 삭제</li>
+      <li>스냅샷을 생성한 시점으로부터 90일 후 Blob 스냅샷 삭제</li>
+  </ul>
+
+
+  <pre>
+
+  {
+     &quot;rules&quot;: [
+       {
+         &quot;name&quot;: &quot;ruleFoo&quot;,
+         &quot;enabled&quot;: true,
+         &quot;type&quot;: &quot;Lifecycle&quot;,
+         &quot;definition&quot;: {
+           &quot;filters&quot;: {
+             &quot;blobTypes&quot;: [ &quot;blockBlob&quot; ],
+             &quot;prefixMatch&quot;: [ &quot;foo&quot; ]
+           },
+           &quot;actions&quot;: {
+             &quot;baseBlob&quot;: {
+               &quot;tierToCool&quot;: { &quot;daysAfterModificationGreaterThan&quot;: 30 },
+               &quot;tierToArchive&quot;: { &quot;daysAfterModificationGreaterThan&quot;: 90 },
+               &quot;delete&quot;: { &quot;daysAfterModificationGreaterThan&quot;: 2555 }
+             },
+             &quot;snapshot&quot;: {
+               &quot;delete&quot;: { &quot;daysAfterCreationGreaterThan&quot;: 90 }
+             }
+           }
+         }
+       }
+     ]
+  }</pre>
+
+
+  <h2>가격 책정</h2>
+
+
+  <p>수명 주기 관리는 무료입니다. 이 기능에서 시작한 <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/list-blobs" target="_blank">Blob 목록</a> 및 &ldquo;<a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-tier" target="_blank">Set Blob</a>&rdquo; 계층 &rdquo; API 호출에 대한 &ldquo; 일반 작업 비용이 고객에게 청구됩니다. 가격 책정에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/storage/blobs/" target="_blank">블록 Blob 가격 책정</a> 페이지를 참조하세요.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Azure Blob Storage 수명 주기 관리 정책은 클라우드 스토리지 관리 및 비용 최적화 전략을 간소화할 것이라고 확신합니다. 이 기능에 대한 피드백과 이메일을 통해 향후 개선 사항에 대한 제안을 기다리고 있습니다 <a href="mailto:DLMFeedback@microsoft.com">DLMFeedback@microsoft.com</a>. 미리 알림으로 Azure Storage <a href="https://feedback.azure.com/forums/217298-storage" target="_blank">피드백 포럼</a>에서 게시할 수 있는 Azure Storage 대한 모든 아이디어와 제안을 듣는 것을 좋아합니다.</p>

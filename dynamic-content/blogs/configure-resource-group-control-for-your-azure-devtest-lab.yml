@@ -1,0 +1,70 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b7c17c5564d59eaccd99938eba1d76cb9a7eeecc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901730"
+Slug: configure-resource-group-control-for-your-azure-devtest-lab
+Title: Azure DevTest Lab에 대한 리소스 그룹 제어 구성
+Summary: 이제 랩 소유자로서 단일 리소스 그룹에 만들 모든 랩 VM(가상 머신)을 구성할 수 있습니다. 이렇게 하면 Microsoft Azure 구독의 리소스 그룹 제한에 도달하지 못하게 됩니다.
+Content: >-
+  <p>이제 랩 소유자로서 단일 리소스 그룹에 만들 모든 랩 VM(가상 머신)을 구성할 수 있습니다. 이 기능은 다음 시나리오에서 도움이 됩니다.</p>
+
+
+  <ul>
+   <li>구독의 랩에서 더 적은 리소스 그룹을 만들도록 합니다.</li>
+   <li>랩이 구성된 고정 리소스 그룹 세트 내에서 작동하도록 합니다.</li>
+   <li>Azure 구독 내에서 리소스 그룹을 만드는 데 필요한 승인 및 제한을 해결합니다.</li>
+   <li>단일 리소스 그룹 내에서 모든 랩 리소스를 통합하여 리소스 추적을 간소화하고 리소스 그룹 수준에서 리소스를 관리하는 <a href="https://docs.microsoft.com/en-us/azure/governance/policy/overview" target="_blank">정책을</a> 적용합니다.</li>
+  </ul>
+
+
+  <p>이 문서에서는 DevTest Lab Azure Portal을 통해 또는 자동화를 사용하여 이 기능을 사용하는 방법을 설명합니다.</p>
+
+
+  <h2>Azure DevTest Lab 포털 사용</h2>
+
+
+  <p>랩 소유자는 가상 머신에 대한 <strong>구성 및 정책</strong>, <strong>랩 설정</strong> 및 <strong>리소스 그룹 할당</strong>으로 이동하여 랩에 대해 이 설정을 구성할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c6c9170-9580-421c-856c-7fe37ed17ff6.png"><img alt="Screenshot of Resource Group allocation for virtual machines" border="0" height="720" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2d3f9e4-34b9-4bf5-bef3-d1ab3870c9df.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="가상 머신에 대한 리소스 그룹 할당 스크린샷" width="2354"></a></p>
+
+
+  <p>설정은 기본값으로 기존 동작(예: 리소스 그룹 할당에 변경 없음)으로 설정됩니다. 기존 동작을 계속하도록 선택하거나 앞으로 하나의 리소스 그룹에 모든 머신을 만들도록 옵션을 선택할 수 있습니다. 후자를 선택하면 다음 두 가지 옵션이 있습니다.</p>
+
+
+  <p>1. 액세스할 수 있는 리소스 그룹의 미리 채워진 드롭다운에서 기존 리소스 그룹을 선택합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/99235ec2-2fc3-4a64-8cb1-47872483378c.png"><img alt="Screenshot of exsiting resource groups from a pre-populated dropdown menu" border="0" height="782" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe999b02-14db-4d4e-b451-cc46aa1e54ea.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="미리 채워진 드롭다운 메뉴에서 리소스 그룹을 삭제하는 스크린샷" width="2354"></a></p>
+
+
+  <p>2. 앞으로 가상 머신을 만들 수 있도록 서비스가 사용자를 대신하여 만들 새 리소스 그룹을 입력합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3f8abf5-df25-4bd3-9a00-4b8526aa1323.png"><img alt="Screenshot of entering a new resource group" border="0" height="810" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a306b580-05be-4b77-be2f-5e1853492b79.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="새 리소스 그룹 입력 스크린샷" width="2354"></a></p>
+
+
+  <h2>자동화 사용</h2>
+
+
+  <p>스크립트를 사용하여 만들 모든 랩 VM에 대해 Azure 구독 내에 새 리소스 그룹 또는 기존 리소스 그룹을 지정할 수도 있습니다. &rsquo;이제 이 API를 사용하는 동안 랩 소유자로서 사용할 수 있는 옵션을 살펴보겠습니다.</p>
+
+
+  <ul>
+   <li>앞으로 만들 모든 VM에 대한 랩&rsquo; 리소스 그룹을 선택할 수 있습니다.</li>
+   <li>앞으로 만들 모든 VM에 대해 랩&#39;리소스 그룹 이외의 기존 리소스 그룹을 선택할 수 있습니다.</li>
+   <li>앞으로 만들 모든 VM에 대한 새 리소스 그룹 이름을 입력할 수 있습니다.</li>
+   <li>기존 동작을 계속할 수도 있습니다.</li>
+  </ul>
+
+
+  <p>이 설정은 랩에서 만든 새 VM에 적용됩니다. 즉, 자체 리소스 그룹에 생성된 랩의 이전 VM은 계속 영향을 받지 않습니다. 랩에서 만든 ARM 환경은 자체 리소스 그룹에 계속 유지되며 이 기능을 사용하는 동안 선택한 옵션의 영향을 받지 않습니다.</p>
+
+
+  <p>Azure DevTest Labs 랩 <a href="https://aka.ms/RGControl" target="_blank">가상 머신에 대한 리소스 그룹 지정</a> 설명서를 &ldquo; 방문하여 예제 스크립트와 함께 이 기능을 사용하는 방법에 대해 자세히 알아볼 수도 있습니다.&rdquo; 이 기능을 유용하게 사용할 수 있기를 바랍니다!</p>
+
+
+  <p>더 잘 작동할 수 있도록 하는 아이디어가 있나요? 사용자 의견과 아이디어를 제출하거나 <a href="https://feedback.azure.com/forums/320373-azure-devtest-labs" target="_blank">Azure DevTest Labs UserVoice 포럼</a>에서 다른 사용자에게 투표하세요. 질문이 있나요? 답변을 확인하거나  <a href="https://social.msdn.microsoft.com/Forums/en-US/home?forum=AzureDevTestLabs" target="_blank">MicrosoftMSDN 포럼</a>에서 새 답변을 요청하세요.</p>

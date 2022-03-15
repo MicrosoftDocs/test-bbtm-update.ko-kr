@@ -1,0 +1,86 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 994fcf0a5d16b3df466c6aaa91e21e32e4d44602
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902012"
+Slug: thanks-for-10-years-and-welcome-to-a-new-chapter-in-sql-innovation
+Title: 10 년 동안 감사하고 SQL 혁신의 새로운 장을 환영합니다
+Summary: '2019년 7월 9일 내일은 SQL Server 2008년과 2008년 R2에 대한 추가 지원이 종료됩니다. 이러한 릴리스는 데이터베이스 플랫폼의 모든 핵심 구성 요소를 다른 데이터베이스 비용의 일부로 기본 제공하면서 데이터베이스 산업을 변화시켰습니다. '
+Content: >-
+  <p><strong>2019년 7월 9일 내일은 SQL Server 2008년과 2008년 R2에 대한 추가 지원이 종료됩니다.</strong> 이러한 릴리스는 데이터베이스 플랫폼의 모든 핵심 구성 요소를 다른 데이터베이스 비용의 일부로 기본 제공하면서 데이터베이스 산업을 변화시켰습니다. 애플리케이션, 데이터 마트, 데이터 웨어하우징 및 비즈니스 인텔리전스 전반에 걸쳐 광범위하게 채택되었습니다. 함께 했던 10년의 놀라운 세월&rsquo;을 주셔서 감사합니다.</p>
+
+
+  <p>그러나 이제 SQL Server 2008 및 R2 버전에 대한 지원이 종료됩니다. 패치 또는 업그레이드할 필요가 없는 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-index" target="_blank">Azure SQL Database 관리형 인스턴스</a>의 상록 SQL 선호하든, 3년간의 <a href="https://download.microsoft.com/download/A/3/F/A3F0908A-0FD8-494C-82BC-E75F313F3FAD/Extended_Security_Updates_for_Windows_Server_2008_and_SQL_Server_2008_End_of_Service.pdf" target="_blank">무료 확장 보안 업데이트</a>로 <a href="https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/" target="_blank">Azure Virtual Machine에서 호스트되는 SQL Server</a> 유연성과 구성성이 필요한 경우 Azure는 데이터베이스를 보호하고 현대화하는 가장 적합한 대상을 제공합니다.</p>
+
+
+  <h2>고객은 중요한 SQL Server 워크로드를 Azure로 이동하고 있습니다.</h2>
+
+
+  <p><a href="https://customers.microsoft.com/en-us/story/allscripts-partner-professional-services-azure" target="_blank">Allscripts</a>, <a href="https://customers.microsoft.com/en-us/story/komatsu-australia-manufacturing-azure" target="_blank">Komatsu</a>, <a href="https://customers.microsoft.com/en-us/story/paychex-azure-sql-database-us" target="_blank">Paychex</a> 및 <a href="https://customers.microsoft.com/en-us/story/willis-towers-watson-partner-professional-services-azure" target="_blank">Willis Towers Watson</a>과 같은 고객은 이러한 혁신적인 대상을 활용하고 SQL Server 데이터베이스를 Azure로 마이그레이션하고 있습니다. 덴마크 IT 솔루션 공급자 KMD는 클라우드에서 레거시 SQL Server 위한 홈이 필요했습니다. 8테라바이트 프로덕션 데이터베이스를 서비스를 중단하지 않고 신속하게 클라우드로 마이그레이션해야 했습니다. Azure SQL Database 관리되는 인스턴스를 통해 KMD는 가동 중지 시간을 최소화하고 코드 변경 없이 프로덕션 데이터를 전송할 수 있었습니다.</p>
+
+
+  <p><em>&ldquo;2008년 SQL Server 관리되는 인스턴스를 Azure SQL Database 이동했으며, 이는 매우 큰 움직임이었습니다. 유지 관리에 더 적은 시간을 소비할 뿐만 아니라 업그레이드 및 패치 없이 항상 최신인 SQL 버전을 실행합니다.&rdquo;</em></p>
+
+
+  <p align="right">&ndash;샬롯 린달, Project 매니저, KMD</p>
+
+
+  <p>Azure SQL Database 다음을 포함하여 고객에게 차별화된 가치를 제공합니다.</p>
+
+
+  <ul>
+   <li><strong>상록 SQL 있는 유일한 클라우드를 선택합니다.</strong> Azure SQL Database 호환성 수준은 애플리케이션 호환성 또는 성능 변경에 대한 걱정 없이 온-프레미스 워크로드를 관리되는 SQL 이동할 수 있음을 의미합니다. SQL Database 이동하는 고객은 패치, 업그레이드 또는 지원 종료에 대해 다시 걱정할 필요가 없습니다.</li>
+   <li><strong>Azure SQL Database 하이퍼스케일을 사용하여 다른 클라우드보다 더 큰 SQL 데이터베이스를 호스트합니다. <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tier-hyperscale" target="_blank">하이퍼스케일</a></strong> 는 워크로드&#39;요구에 맞게 주문형으로 조정되는 SQL 데이터베이스에 대한 확장성이 뛰어난 서비스 계층입니다. 하이퍼스케일을 사용하면 데이터베이스가 크기 및 규모가 무제한인 워크로드에 대해 최상의 성능을 얻을 수 있습니다.</li>
+   <li><strong>인공 지능의 기능을 활용하여 워크로드를 모니터링하고 보호합니다. </strong> 수백만 개의 데이터베이스에 대해 학습된 Azure SQL Database 지능형 보안 및 성능 기능은 일관되고 예측 가능한 워크로드 성능을 의미합니다. 지능형 성능 외에도 SQL 데이터베이스 고객은 비정상적인 로그인 시도 또는 잠재적인 SQL 삽입 공격을 식별하는 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-threat-detection" target="_blank">자동 위협 탐지</a>를 통해 안심할 수 있습니다.</li>
+   <li><strong>SQL Server Azure SQL Database 관리되는 인스턴스를 위한 가장 경제적인 클라우드 데이터베이스로 이동합니다. </strong> 온-프레미스 SQL Server 데이터베이스 엔진의 전체 노출 영역과 <a href="https://azure.microsoft.com/en-us/resources/forrester-tei-sql-database-managed-instance/en-us/" target="_blank">212%의 예상 ROI 및 6개월의 회수 기간이</a><sup></sup> 있는 경우 SQL Database 관리되는 인스턴스만이 클라우드에서 SQL 실행하기 위한 가장 비용 효율적인 서비스로서의 지위를 확고히 합니다. SEB는 그룹 혜택 솔루션 및 의료 청구 처리를 관리하는 전문 소프트웨어, 솔루션 및 서비스를 제공하는 기술 회사입니다. 온-프레미스에 비해 비용 절감뿐만 아니라 90개 이상의 규정 준수 제품에서도 Azure를 선택했습니다.</li>
+  </ul>
+
+
+  <p><em>&quot;SQL Server 2008년 지원이 종료되면 SEB는 중요한 상태 및 PII 정보를 포함하는 두 개의 중요한 비즈니스 애플리케이션을 마이그레이션해야 했습니다. Azure에서는 애플리케이션 VM에 대한 3년간의 확장 보안 업데이트를 받고 데이터를 Azure SQL Database 이동하여 관리 및 인프라 지출을 크게 줄일 수 있었습니다. HIPAA, PCI 및 ISO-27k에 대한 Azure&#39;규정 준수 인증과 캐나다의 데이터 상주는 규정 요구 사항을 충족하는 데 매우 중요했습니다.&rdquo;</em></p>
+
+
+  <p align="right">&ndash; 마리오 코레이아, SEB Inc.의 최고 기술 책임자</p>
+
+
+  <p>Azure SQL Database 하이퍼스케일이 어떻게 고객 혁신을 가능하게 하는지 알아보세요.</p>
+
+
+  <p><a href="https://youtu.be/Z9AFnKI7sfI" target="_blank"><img alt="Hyperscale video thumbnail with small play button" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e33397e0-ab62-4f4a-9408-0e365394d593.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="작은 재생 단추가 있는 하이퍼스케일 비디오 축소판 그림" width="640"></a></p>
+
+
+  <h2>SQL 혁신은 현재와 미래에 우리의 초점으로 남아 있습니다.</h2>
+
+
+  <p>Microsoft는 SQL Server 2019 및 <a href="https://techcommunity.microsoft.com/t5/Azure-SQL-Database/Check-out-what-s-new-in-June-2019-version-of-Azure-SQL-Database/ba-p/742054">Azure SQL Database</a> 통해 혁신에 계속 투자하고 있습니다. 우리의 우선 순위는 나중에 데이터베이스 워크로드를 증명하는 것입니다. 오늘 온-프레미스 및 클라우드에서 새로운 혁신을 발표하게 되어 기쁩니다.</p>
+
+
+  <ul>
+   <li><strong>Azure의 SQL 데이터베이스에 대한 간소화된 포털 환경인 Azure SQL 미리 보기: </strong>Azure SQL Azure Virtual Machines에서 Azure SQL 데이터베이스 및 SQL Server 관리할 수 있는 단일 창이 제공됩니다. 또한 현재 사용할 수 있는 고객은 <a href="https://techcommunity.microsoft.com/t5/SQL-Server/Benefit-from-Resource-Provider-registration-when-self-installing/ba-p/742794" target="_blank">리소스 공급자</a>를 사용하여 자체 설치(사용자 지정 이미지) SQL VM을 등록하여 자동 패치, 자동 백업 및 새 라이선스 관리 옵션과 같은 이점에 액세스할 수 있습니다.</li>
+   <li><strong>SQL Server 2019 빅 데이터 클러스터의 미리 보기: </strong>이달 말 제공되는 SQL Server 2019 빅 데이터 클러스터 미리 보기는 모든 데이터, 관계형 및 비관계형 데이터에서 분석 및 AI(인공 지능)를 지원하는 통합 데이터 플랫폼에 대한 Apache Spark 및 Hadoop 분산 파일 시스템과 SQL Server 결합합니다. Startup Systems Imagination Inc.와 같은 초기 채택 프로그램 참가자는 이미 빅 데이터 클러스터를 사용하여 어려운 AI 및 기계 학습 문제를 해결하고 있습니다.&nbsp;&nbsp;</li>
+  </ul>
+
+
+  <p><em>&ldquo;SQL Server 2019 빅 데이터 클러스터를 사용하여 주문형 빅 데이터 실험을 해결할 수 있습니다. 수십 개의 다양한 데이터 원본에서 제공되는 암 연구 데이터를 분석하고, 흥미로운 그래프 기능을 마이닝하고, 대규모 분석을 수행할 수 있습니다.&rdquo; </em></p>
+
+
+  <p align="right">&ndash; Pieter Derdeyn, 지식 엔지니어, 시스템 상상력 Inc.</p>
+
+
+  <h2>Azure에서 SQL 시작</h2>
+
+
+  <p>SQL Server 2008 및 2008 R2에 대한 지원이 종료되고 <a href="https://cloudblogs.microsoft.com/windowsserver/2019/07/08/six-months-left-to-transform-your-windows-server-2008-apps-and-infrastructure/" target="_blank">Windows Server 2008 및 2008 R2</a>&rsquo;에 대한 지원이 종료될 때까지 6개월밖에 되지 않았기 때문에 이전 워크로드를 Azure로 이동하여 이러한 이전 워크로드를 보호하고 현대화하는 데 더 좋은 시기는 없었습니다. 최신 데이터 및 AI 기능을 사용하여 SQL Server 워크로드를 보호, 관리 및 변환합니다.</p>
+
+
+  <ul>
+   <li><a href="https://www.microsoft.com/en-us/sql-server/sql-server-2008" target="_blank">SQL Server 2008 및 2008 R2</a>에 가장 적합한 목적지를 찾습니다.</li>
+   <li><a href="https://datamigration.microsoft.com/" target="_blank">데이터 마이그레이션 가이드</a>를 사용하여 Azure 마이그레이션을 시작합니다.&nbsp;</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><sup>1</sup> 포레스터 컨설팅 연구인 Microsoft Azure SQL Database Managed Instance의 총 경제적 영향&trade;, 2018/10/25. <a href="https://azure.microsoft.com/en-us/resources/forrester-tei-sql-database-managed-instance/en-us/">https://azure.microsoft.com/en-us/resources/forrester-tei-sql-database-managed-instance/en-us/</a></p>

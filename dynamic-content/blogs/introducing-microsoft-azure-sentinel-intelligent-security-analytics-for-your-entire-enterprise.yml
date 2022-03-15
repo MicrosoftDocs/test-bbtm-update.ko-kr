@@ -1,0 +1,81 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6831d080226a143e6bb3eeccb8422a584d23abe1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908378"
+Slug: introducing-microsoft-azure-sentinel-intelligent-security-analytics-for-your-entire-enterprise
+Title: 전체 엔터프라이즈를 위한 Microsoft Azure Sentinel, 지능형 보안 분석 소개
+Summary: 보안은 점점 더 정교해지는 공격, 경고 볼륨, 그리고 오늘날의 SIEM(보안 정보 및 이벤트 관리) 제품이 속도를 유지할 수 없는 긴 해결 기간의 연대기인 끝없는 무용담이 될 수 있습니다.
+Content: >-
+  <p>보안은 점점 더 정교해지는 공격, 경고 볼륨 및 오늘날의&rsquo; SIEM(보안 정보 및 이벤트 관리) 제품이 속도를 유지할 수 없는 긴 해결 기간의 끝없는 사가&mdash; 연대기가 될 수 있습니다&rsquo;.</p>
+
+
+  <p>SecOps 팀은 매우 많은 양의 경고로 넘쳐나고 인프라 설정 및 유지 관리와 같은 작업에 너무 많은 시간을 소비합니다. 결과적으로 여러 합법적 위협이 눈에 띄지 않고 넘어갑니다. 2021년까지 <a href="https://cybersecurityventures.com/jobs/" target="_blank">3.5M 보안 전문가가</a> 부족할 것으로 예상되면 보안 운영 팀의 과제가 더욱 커질 것입니다. 기존 SecOps 팀이 위협을 더 명확하게 확인하고 방해 요소를 제거할 수 있는 솔루션이 필요합니다.</p>
+
+
+  <p>따라서 SIEM 도구를 Microsoft Azure Sentinel이라는 새로운 클라우드 네이&rsquo;티브 솔루션으로 다시 디자인했습니다. Azure Sentinel은 전체 엔터프라이즈를 위한 클라우드 규모로 지능형 보안 분석을 제공합니다. Azure Sentinel을 사용하면 디바이스, 사용자, 앱, 모든 클라우드의 서버에 이르기까지 전체 하이브리드 조직에서 보안 데이터를 쉽게 수집할 수 있습니다.&nbsp; 인공 지능의 기능을 사용하여 실제 위협을 신속하게 식별하고 인프라 설정, 유지 관리 및 크기 조정에 시간을 할애할 필요가 없으므로 기존 SIEM의 부담을 덜어줍니다. Azure를 기반으로 구축되었으므로 보안 요구 사항을 해결하기 위해 거의 무제한 클라우드 규모와 속도를 제공합니다. 기존 IEM은 소유 및 운영 비용이 많이 드는 것으로 입증되었으며, 종종 인프라 유지 관리 및 데이터 수집을 위해 선불로 커밋해야 하며 높은 비용이 발생합니다. Azure Sentinel을 사용하면 선불 비용이 없으며 사용하는 비용을 지불합니다.</p>
+
+
+  <p>많은 기업이 Office 365 사용하고 있으며 Microsoft 365 포함된 고급 보안 및 규정 준수 제품을 점점 더 많이 채택하고 있습니다. 전체 공격을 이해하기 위해 사용자 및 엔드포인트 애플리케이션의 보안 데이터를 인프라 환경 및 타사 데이터의 정보와 결합하려는 경우가 많습니다.</p>
+
+
+  <p>단일 클라우드 공급자의 규정 준수 경계 내에서 이 모든 작업을 수행할 수 있다면 이상적입니다. 오늘 Office 365 활동 데이터를 Azure Sentinel로 무료로 가져올 수 있다고 발표했습니다. 몇 번의 클릭만으로 Microsoft 클라우드 내에서 데이터를 유지합니다.</p>
+
+
+  <p><em>&ldquo;Microsoft Azure Sentinel을 사용하면 데이터 상주 및 GDPR 문제를 간소화하는 작업과 함께 고객에 대한 주요 SIEM 환경 문제를 더 잘 해결할 수 있습니다.&rdquo;</em></p>
+
+
+  <p align="right">Andrew Winkelmann, Global Security Consulting Practice Lead, Accenture</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b6489d6a-94aa-4516-9054-b4b926254186.png"><img alt="Azure Sentinel overview dashboard" border="0" height="766" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/780762c0-c2b5-4cc6-ab95-8782a0eeddbf.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Sentinel 개요 대시보드" width="1363"></a></p>
+
+
+  <p>&rsquo;Azure Sentinel이 클라우드 네이티브 보안 작업을 제공하는 데 어떻게 도움이 되는지 살펴보겠습니다.</p>
+
+
+  <p><strong>기업 전체에서 쉽게</strong> &ndash; 데이터 수집 Azure Sentinel을 사용하면 기본 제공 커넥터, Microsoft 신호의 네이티브 통합 및 일반적인 이벤트 형식 및 syslog와 같은 업계 표준 로그 형식에 대한 지원을 사용하여 모든 보안 데이터를 집계할 수 있습니다. 몇 번의 클릭만으로 Microsoft Office 365 데이터를 무료로 가져오고 분석을 위해 다른 보안 데이터와 결합할 수 있습니다. Azure Sentinel은 매일 10페타바이트 이상을 수집하고 수백만 개의 레코드를 몇 초 안에 정렬할 수 있는 매우 빠른 쿼리 엔진을 제공하는 검증되고 확장 가능한 로그 분석 데이터베이스를 기반으로 하는 Azure Monitor를 사용합니다.</p>
+
+
+  <p><a href="https://www.microsoft.com/en-us/security/partnerships/intelligent-security-association" target="_blank">Microsoft 지능형 보안 협회</a>의 많은 파트너와 계속 협력하고 있습니다. Azure Sentinel은 Palo Alto Networks, F5, Symantec, Fortinet 및 Check Point를 비롯한 인기 있는 솔루션에 연결합니다. 또한 Azure Sentinel은 Microsoft Graph Security API와 통합되어 고유한 위협 인텔리전스 피드를 가져오고 위협 탐지 및 경고 규칙을 사용자 지정할 수 있습니다. 특정 사용 사례에 최적화된 보기를 제공하는 사용자 지정 대시보드가 있습니다.</p>
+
+
+  <p>Palo Alto Networks의 SaaS, 가상화 및 클라우드 제공 보안 담당 수석 부사장인 Adam Geller는<em> Microsoft&rsquo;와의 지속적인 협업과 공동 고객을 위한 더 큰 보안 오케스트레이션을 제공하기 위해 우리가 하는 작업에&rsquo; 만족한다고 말&ldquo;했습니다. 이 최신 통합을 통해 고객은 물리적 및 가상화된 차세대 방화벽 로그를 Azure Sentinel에 전달하고 사용자 지정 대시보드 및 인공 지능을 사용하여 잠재적인 보안 인시던트 문제를 신속하게 파악할 수 있습니다. Palo Alto Networks 고객은 MineMeld와 Microsoft Graph Security API 간의 새로운 통합을 통해 AutoFocus 및 기타 타사 위협 인텔리전스를 Azure Sentinel로 확장할 수도 있습니다.&rdquo;</em></p>
+
+
+  <p>측면 &ndash; <strong>의 AI를 사용하여 위협을 빠르게 분석 및 검색</strong> 보안 분석가는 경고의 바다를 선별하고 다른 제품의 경고를 수동으로 또는 기존 상관 관계 엔진을 사용하여 상호 연결하면서 심사해야 하는 큰 부담에 직면해 있습니다. 따라서&rsquo; Azure Sentinel은 최신의 확장 가능한 기계 학습 알고리즘을 사용하여 수백만 개의 낮은 충실도 변칙을 상호 연결하여 분석가에게 몇 가지 고화질 보안 인시던트를 제공합니다. ML 기술은 수집하는 대량의 보안 데이터에서 신속하게 가치를 얻고 점을 연결하는 데 도움이 됩니다. 예를 들어 클라우드 애플리케이션에서 랜섬웨어를 배포하는 데 사용된 손상된 계정을 빠르게 볼 수 있습니다. 이는 노이즈를 크게 줄이는 데 도움이 되며, 실제로 평가 중에 경고 피로가 최대 90%까지 감소했습니다. 얼리어답터는 AI를 사용한 위협 탐지의 이점을 보고 있습니다. 새로운 서명의 CTO인 Reed M. Wiedower는 <em>다양한 인프라에서 인사이트를 생성하는 기능 때문에 Azure Sentinel에서 엄청난 가치를 보고 있다고 말&ldquo;했습니다.&rdquo;</em></p>
+
+
+  <p>이러한 기본 제공 기계 학습 모델은 고객&rsquo; 클라우드 자산을 수년간 방어해 온 Microsoft 보안 팀의 학습을 기반으로 합니다. 이러한 이점을 활용하기 위해 데이터 과학자가 될 필요는 없습니다. 물론 데이터 과학자이고 검색을 사용자 지정하고 보강하려는 경우 기본 제공 Azure Machine Learning 서비스를 사용하여 사용자 고유의 모델을 Azure Sentinel로 가져올 수 있습니다. 또한 Azure Sentinel은 다른 원본과 결합하여 전체 공격 순서에 대한 가시성을 제공할 수 있는 Microsoft 365 보안 제품의 사용자 활동 및 동작 데이터에 연결할 수 있습니다.</p>
+
+
+  <p><strong>의심스러운 활동</strong> &ndash; 조사 및 검색 그래픽 및 AI 기반 조사를 통해 공격의 전체 범위와 그 영향을 이해하는 데 걸리는 시간을 줄일 수 있습니다. 공격을 시각화하고 동일한 대시보드에서 빠른 작업을 수행할 수 있습니다.&nbsp;&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7373e0e9-2332-48de-a32d-eefc08fb428a.png"><img alt="Graphical and AI-based investigation workflow" border="0" height="713" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6648a5aa-86bc-434f-bd4a-9177958d2f2a.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="그래픽 및 AI 기반 조사 워크플로" width="1024"></a></p>
+
+
+  <p>의심스러운 활동의 사전 예방적 헌팅은 보안 분석가에게 또 다른 중요한 작업입니다. SecOps에서 데이터를 수집하고 분석하는 프로세스는 종종 자동화할 수 있는 반복 가능한 프로세스입니다. 현재 Azure Sentinel은 Jupyter Notebook을 기반으로 하는 헌팅 쿼리와 Azure Notebook을 빌드하여 분석을 자동화할 수 있는 두 가지 기능을 제공합니다. Microsofts&rsquo; 인시던트 대응 및 위협 분석가 팀이 수행하는 사전 대응 헌팅을 기반으로 일련의 쿼리 및 Azure Notebooks를 개발했습니다. 위협 환경이 발전함에 따라 쿼리 및 Azure Notebook도 마찬가지입니다. Azure Sentinel GitHub 커뮤니티를 통해 새 쿼리 및 Azure Notebook을 제공합니다.</p>
+
+
+  <p><strong>일반적인 작업 및 위협 대응</strong> &ndash; 자동화 AI는 문제를 찾는 데 초점을 맞추지만, 문제를 해결한 후에는 이러한 문제에&rsquo; 대한 응답을 자동화하려는 경우 계속해서 동일한 문제를 &ndash; 계속 찾으려고 합니다. Azure Sentinel은 반복적인 작업을 해결하고 위협에 신속하게 대응할 수 있도록 미리 정의된 또는 사용자 지정 플레이북이 포함된 기본 제공 자동화 및 오케스트레이션<b></b>을 제공합니다. Azure Sentinel은 최고의 보안 제품, 자체 개발 도구 및 HR 관리 애플리케이션 및 ServiceNow와 같은 워크플로 관리 시스템과 같은 기타 시스템을 포함하여 기존 엔터프라이즈 방어 및 조사 도구를 보강할 것입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ed086f8-7bbf-452b-96e1-60e1d678df43.png"><img alt="Built-in automation with pre-defined or custom playbooks in Azure Sentinel" border="0" height="660" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/344b0579-a6c0-4b6e-823c-aed8eb7e5ce6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Sentinel에서 미리 정의되거나 사용자 지정 플레이북을 사용하는 기본 제공 자동화" width="1194"></a></p>
+
+
+  <p>매일 6.5조 개의 신호를 분석하고 클라우드 규모에서 수십 년간 보안 전문 지식을 분석하여 정보를 제공하는 Microsofts&rsquo;의 탁월한 위협 인텔리전스는 보안 운영을 현대화하는 데 도움이 됩니다.</p>
+
+
+  <p><em>&ldquo;Azure Sentinel은 고객이 보안 작업을 간소화하고 성장함에 따라 크기를 조정하는 데 도움이 되는 사전 예방적이고 응답성이 뛰어난 클라우드 네이티브 SIEM을 제공합니다.&rdquo;</em></p>
+
+
+  <p align="right">Richard Diver, Cloud Security Architect, Insight Enterprises</p>
+
+
+  <p>보안은 끝없는 무용담이 될 필요가 없습니다&rsquo;. 대신 클라우드 및 대규모 인텔리전스가 작동하도록 합니다. 인공 지능을 사용하여 위협 방지를 더 스마트하고 빠르게 만듭니다. 보안 분석을 위해 Microsoft Office 365 데이터를 무료로 가져옵니다. <a href="https://aka.ms/azuresentinel" target="_blank">Microsoft Azure Sentinel</a>을 시작합니다.</p>
+
+
+  <p><strong>Microsoft Azure Sentinel은 현재 Azure Portal에서 미리 보기로 제공됩니다</strong><a href="https://aka.ms/microsoftazuresentinel" target="_blank"><strong></strong></a><strong>. </strong></p>

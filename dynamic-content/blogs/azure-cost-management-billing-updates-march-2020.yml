@@ -1,0 +1,179 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d087e19a7d80c88e132fdd7aa434baf517058412
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902309"
+Slug: azure-cost-management-billing-updates-march-2020
+Title: Azure Cost Management + 청구 업데이트 – 2020년 3월
+Summary: 우리는 당신이 당신의 비용을 관리하고 최적화하는 방법을 배울 수 있도록 새로운, 빠른 비디오의 풍부한 비용을 절약 할 수있는 4 가지 새로운 방법과 새로운, 빠른 비디오에 모든 종량제 (PAYG) 청구서의 상단에 머물 수 있도록 개선에서 이번 달 스펙트럼을 커버하고 있습니다.
+Content: >-
+  <p>새로운 학생이든, 스타트업이든, 대기업이든&#39;재정적 제약이 있으며, 지출할&#39;, 미래 계획 위치 및 방법을 알아야 합니다. 아무도 청구서에 관해서 놀라움을 원하지 않으며, Azure Cost Management + 청구가 들어오는 곳입니다.</p>
+
+
+  <p>Microsoft&#39;는 항상 과제에 대해 자세히 알아볼 수 있는 방법과 Azure Cost Management + Billing을 통해 클라우드에서 비용을 다시 발생시킬&#39;있는 위치를 더 잘 이해하고, 잘못된 지출 패턴을 식별하고 방지하며, 비용을 최적화하여 더 적은 비용으로 더 많은 작업을 수행할 수 있는 방법을 찾고 있습니다. 피드백에 따른 몇 가지 최신 개선 사항 및 업데이트는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><a href="#invoices">PAYG(종량제) 청구서 개선 사항</a>.</li>
+      <li><a href="#survey">보고 목표에 대해 알려주세요</a>.</li>
+      <li><a href="#labs">Cost Management Labs의 새로운&#39;.</a></li>
+      <li><a href="#optimize">Azure를 사용하여 비용을 절감하는 새로운 방법입니다</a>.</li>
+      <li><a href="#usage">Azure 사용량 현황 데이터에 대한 향후 변경 내용</a>입니다.</li>
+      <li><a href="#learn">새로운 비디오 및 학습 기회</a>.</li>
+      <li><a href="#docs">설명서 업데이트</a></li>
+  </ul>
+
+
+  <p>&#39;세부 사항을 자세히 살펴보겠습니다.</p>
+
+
+  <p><a name="powerbi"></a>&nbsp;</p>
+
+
+  <h2>종량제(PAYG) 청구서 개선 사항</h2>
+
+
+  <p>PayG(종량제) 구독에 대한 몇 가지 주요 개선 사항으로 Azure 송장을 관리하고 최신 상태로 유지하는 것이 훨씬 향상되었습니다.</p>
+
+
+  <ul>
+      <li>이제 Azure Portal에서 지원 플랜 청구서를 보고 다운로드하여 모든 청구서에 대한 원스톱 대상을 제공할 수 있습니다.</li>
+      <li>지원 플랜 청구서에 대한 전자 메일 알림을</a>&nbsp; 옵트인하여 PDF 복사본을 받은 편지함으로 직접 보낼 수 <a href="https://docs.microsoft.com/en-us/azure/cost-management-billing/understand/download-azure-invoice#get-your-subscriptions-invoices-in-email" target="_blank" title="https://docs.microsoft.com/azure/cost-management-billing/understand/download-azure-invoice#get-your-subscriptions-invoices-in-email">있습니다. Azure Portal의 모든 PAYG 청구서에 사용할 수 있습니다.</li>
+      <li>새 결제 상태 열을 사용하여 모든 청구서의 결제 <strong>상태를</strong> 한눈에 확인할 수 있습니다.</li>
+      <li>또한 신용 카드로 결제하는 경우 신용 카드 명세서의 요금을 새 <strong>청구서 ID</strong> 열과 포털로 다시 연결할 수도 있습니다. 비용 분석에서 요금을 세분화하기 위해 이 기능을 사용할 수도 있습니다.</li>
+  </ul>
+
+
+  <p>이러한 항목은 모두 사용자 의견을 기반으로 하므로 계속 제공해 주세요. 우리의 목표는 그 어느 때보 다 쉽게 관리하고 청구서를 지불하는 것입니다. 다음에 무엇을 보고 싶습니까?</p>
+
+
+  <p><a name="survey"></a>&nbsp;</p>
+
+
+  <h2>보고 목표에 대해 알려주세요.</h2>
+
+
+  <p>아시다시피, 우리는 항상 당신의 요구와 기대에 대해 자세히 배울 수있는 방법을 찾고&#39;. 이번 달에는 비용을 관리하고 최적화할 때 가장 중요한 보고 작업 및 목표에 대해 알아보고자&#39;. 이 설문 조사의 입력을 사용하여 향후 몇 달 동안 Cost Management + 청구 환경 내에서 보고 개선 사항의 우선 순위를 지정할&#39;있습니다. 12개 질문의 설문 조사에는 약 10분이 소요됩니다.</p>
+
+
+  <p><a href="https://aka.ms/costmgmt/survey/b" target="_blank">설문 조사를 수행하세요</a>.</p>
+
+
+  <p><a name="labs"></a>&nbsp;</p>
+
+
+  <h2>Cost Management Labs의 새로운&#39;</h2>
+
+
+  <p><a href="https://azure.microsoft.com/blog/azure-cost-management-updates-july-2019/#labs" target="_blank">Cost Management Labs</a>를 사용하면 Azure Cost Management에서 제공되는&#39;파악할 수 있으며, 피드백을 공유하고 서비스를 사용하는 방법을 더 잘 이해할 수 있도록 Microsoft와 직접 협력하여 더 많은 튜닝 및 최적화된 환경을 제공할 수 있습니다. Cost Management Labs에서 볼 수 있는 몇 가지 기능은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>리소스 보기 &mdash; <strong><a href="#views">별 비용에 대한 자세한 내용</a></strong> <em>이제 공용 포털에서 사용할 수 있습니다.</em><br>
+  리소스 비용을 드릴인하여 미터별로 분석합니다. 행을 확장하여 자세한 내용을 확인하거나 링크를 클릭하여 리소스를 열고 작업을 수행합니다.</li>
+      <li><em>공용 포털에서 사용할 수</em> <strong><a href="#not-applicable">있는&quot; 해당 없음 meansNow &quot;</a></strong>&mdash; 설명<br>
+  &quot;특정 속성에 비용 분석 내에 값이&quot; 없는&#39;이유를 설명하는 데는 적용되지 않습니다.</li>
+
+  </ul>
+
+
+  <p>물론, 그&#39;전부는 아닙니다. Azure Cost Management의 모든 변경 내용은 전체 Azure Portal에서&#39;일주일 전에 Cost Management Labs에서 사용할 수 있습니다. 여러분의 생각을 듣고 다음에 보고 싶은 것을 이해하고&#39;&#39;. 무엇을 망설이고 계신가요? 지금 <a href="https://aka.ms/costmgmt/labs" target="_blank">Cost Management Labs를</a> 사용해 보세요.</p>
+
+
+  <p><a name="optimize"></a>&nbsp;</p>
+
+
+  <h2>Azure를 사용하여 비용을 절감하는 새로운 방법</h2>
+
+
+  <p>지난 한 달 동안 많은 비용 최적화 개선 사항. 다음은 관심 있는 몇 가지 사항입니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/azure/azure-cache-for-redis/cache-reserved-pricing" target="_blank">Azure Cache for Redis를 선불로 결제</a>할 때 더 많이 저장합니다.</li>
+      <li><a href="https://azure.microsoft.com/updates/cosmos-db-multi-master-promo" target="_blank">Cosmos DB 다중 마스터 계정에</a> 최대 33%를 저장합니다.</li>
+      <li><a href="https://azure.microsoft.com/updates/azure-cosmos-db-free-tier-is-now-available" target="_blank">Cosmos DB 무료 계층</a>을 사용하여 소규모 워크로드를 개발, 테스트 및 실행합니다.</li>
+      <li>미리 보기 상태인 동안 <a href="https://azure.microsoft.com/updates/event-grid-premium-tier-is-now-in-preview" target="_blank">EventGrid Premium 계층</a>을 무료로 활용하세요.</li>
+  </ul>
+
+
+  <p><a name="usage"></a>&nbsp;</p>
+
+
+  <h2>Azure 사용량 현황 데이터에 대한 예정된 변경 내용</h2>
+
+
+  <p>많은 조직에서는 전체 Azure 사용량 및 요금을 사용하여 사용 중인&#39;파악하고, 내부적으로 어떤 팀이 어떤 요금을 청구해야 하는지 식별하거나, Azure 예약 및 Azure 하이브리드 혜택으로 비용을 최적화할 수 있는 기회를 찾습니다. 분석을 수행할&#39;있거나 사용량 현황 데이터의 제품 세부 정보를 기반으로 통합을 설정하는 경우 다음 서비스에 대한 논리를 업데이트하세요.</p>
+
+
+  <p>다음 변경 내용은 4월 1일부터 시작됩니다.</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/updates/virtual-machines-nvv4-series-meter-name-changes" target="_blank">VM NVv4 미터 이름이 변경됩니다</a>.</li>
+      <li>Azure Government에 대한 <a href="https://azure.microsoft.com/updates/public-ip-prefix-static-ip-addresses-meter-id-changes" target="_blank">IP 접두사 미터 ID 변경</a></li>
+  </ul>
+
+
+  <p>또한 EA(키 기반 기업계약) 청구 API가 새 Azure Resource Manager API로 대체되었음을 기억하세요. 키 기반 API는 등록이 끝날 때까지 계속 작동하지만 Microsoft 고객 계약으로 갱신하고 전환할 때 더 이상 사용할 수 없습니다. 다음 갱신 시 Microsoft 고객 계약으로 쉽게 전환할 수 있도록 최신 버전의 <a href="https://docs.microsoft.com/rest/api/consumption/usagedetails/list" target="_blank">UsageDetails API</a> 로 마이그레이션을 계획하세요.</p>
+
+
+  <p><a name="learn"></a>&nbsp;</p>
+
+
+  <h2>새로운 비디오 및 학습 기회</h2>
+
+
+  <p>이러한 시각적 학습자를 위해 이번 달에는 다양한 새로운 비디오가 제공됩니다.</p>
+
+
+  <ul>
+      <li><a href="https://www.youtube.com/watch?v=15DzKPMBRxM" target="_blank">Azure Cost Management 및 Cloudyn에 대한 간략한 개요</a> (6분).&nbsp;</li>
+      <li><a href="https://www.youtube.com/watch?v=cSNPoAb-TNc" target="_blank">Azure Cost Management에서 클라우드 투자 최적화</a> (6분)</li>
+      <li><a href="https://www.youtube.com/watch?v=kQkXXj-SmvQ" target="_blank">Azure Cost Management에서 보기 공유 및 저장</a> (4분)</li>
+      <li><a href="https://www.youtube.com/watch?v=XQnwfYsEu_g" target="_blank">ACM(7분)의 예산을 통해 책임을 달성</a> 합니다.</li>
+      <li><a href="https://www.youtube.com/watch?v=zIURBPVJ128" target="_blank">Azure Cosmos DB를 사용하여 비용 및 성능을 최적화하는 도구 및 팁</a>(9분).&nbsp;</li>
+      <li>Azure Cosmos DB(14분)를 사용하여 <a href="https://www.youtube.com/watch?v=KlXhee6R0rE" target="_blank">비용 및 성능에 적합한 파티션 키를 선택합니다</a>.</li>
+      <li><a href="https://www.youtube.com/watch?v=FmOA5oufedQ" target="_blank">Azure Cosmos DB 무료 계층 및 Autopilot</a>(14분).</li>
+      <li><a href="https://www.youtube.com/watch?v=0KEfaUfolVs" target="_blank">Azure 무료 계정은 정말 무료인가요?</a> (5분).&nbsp;</li>
+  </ul>
+
+
+  <p><a href="https://aka.ms/costmgmt/videos" target="_blank">Azure Cost Management + 청구 YouTube 채널을</a> 따라 새 동영상이 다시 릴리스될&#39;루프를 유지하고 다음에 보고 싶은&#39;알려주세요.</p>
+
+
+  <p>좀 더 안내적인 환경을 원하십니까? <a href="https://aka.ms/costmgmt/learn" target="_blank">비용 예측부터 시작하여 Azure에 대한 지출을 최적화합니다</a>.</p>
+
+
+  <p><a name="docs"></a>&nbsp;</p>
+
+
+  <h2>설명서 업데이트</h2>
+
+
+  <p>관심 있는 몇 가지 설명서 업데이트는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>Cost Management + 청구에서 <a href="https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/understand-cost-mgt-data#cost-rounding" target="_blank">반올림이 처리되는 방법을</a> 문서화했습니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/link-partner-id" target="_blank">링크 파트너 ID 문서에</a> Azure Lighthouse에 대한 세부 정보가 추가되었습니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations" target="_blank">사용 가능한 예약 유형</a> 목록이 업데이트되었습니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/cost-management-billing/cloudyn/overview" target="_blank">2020년 말에 Cloudyn의 사용 중단이</a> 언급되었습니다.</li>
+  </ul>
+
+
+  <p>모든 설명서 업데이트를 주시하고 싶으신가요? GitHub <strong>azure-docs</strong> 리포지토리에서 <a href="https://github.com/MicrosoftDocs/azure-docs/commits/master/articles/cost-management-billing" target="_blank">Cost Management + 청구 문서 변경 기록을</a> 확인합니다. 누락된 항목이 표시되면 문서 맨 위에서 <strong>편집</strong> 을 선택하고 빠른 끌어오기 요청을 제출합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>다음&#39;?</h2>
+
+
+  <p>이들은 지난 달에서 큰 업데이트의 단지 몇 가지. 피드백에 따라 항상 의견을 경청하고 지속적으로 개선할&#39;있으므로 피드백을 계속 보내주세요.</p>
+
+
+  <p>Twitter를 팔로우 <a href="https://twitter.com/azurecostmgmt">@AzureCostMgmt</a> 하고 <a href="https://aka.ms/costmgmt/videos" target="_blank">YouTube 채널을</a> 구독하여 업데이트, 팁 및 요령을 확인하세요. 그리고 언제나처럼, 당신의 아이디어를 공유하고 <a href="https://aka.ms/costmgmt/feedback" target="_blank">비용 관리 피드백 포럼</a>에서 다른 사람을 투표.</p>

@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 64b80fa4f972cf4aeeb1eb40131d4896b6309d9b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901962"
+Slug: wiki-sql-azure-vs-sql-server
+Title: 'Wiki: SQL Azure vs. SQL Server'
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] TechNet의 위키 섹션에 있는 이 문서에서는 SQL Azure 데이터베이스를 논리적 관리와 물리적 관리 측면에서 SQL Server 비교합니다.'
+Content: <p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>TechNet의 위키 섹션에 있는 이 문서에서는 SQL Azure Database와 논리적 관리, 프로비전, Transact SQL 지원, 데이터 스토리지, SSIS 및 기타 기능과 관련된 SQL Server 비교합니다.</p>  <p>여기에서 읽어보세요. <a href="https://social.technet.microsoft.com/wiki/contents/articles/comparing-sql-server-with-sql-azure.aspx" target="_blank">SQL Azure 대 SQL Server</a></p>

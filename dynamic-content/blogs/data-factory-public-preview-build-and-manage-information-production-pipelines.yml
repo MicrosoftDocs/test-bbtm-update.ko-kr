@@ -1,0 +1,45 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6b9cb7ee9e24abf8c4ccecd95a8389cf7ceaf6a0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908460"
+Slug: data-factory-public-preview-build-and-manage-information-production-pipelines
+Title: Data Factory 공개 미리 보기 - 정보 프로덕션 파이프라인 빌드 및 관리
+Summary: '데이터 스토리지, 처리 및 이동 서비스를 관리되는 데이터 프로덕션 파이프라인으로 구성하는 관리형 서비스인 새 Data Factory 서비스의 미리 보기를 릴리스하게 되어 기쁩니다. '
+Content: >-
+  데이터 처리 환경은 그 어느 때보다 다양합니다. 지리적 위치, 온-프레미스 및 클라우드, 다양한 데이터 형식 및 데이터 볼륨에서 데이터를 처리합니다. 개발자는 이 모든 데이터와 처리를 관리하고 조정할 수 있는 정보 프로덕션 시스템을 제공하기 위해 많은 양의 사용자 지정 논리를 작성해야 합니다.
+
+
+  데이터 스토리지, 처리 및 이동 서비스를 관리되는 데이터 프로덕션 파이프라인으로 구성하는 관리형 서비스인 새 Data Factory 서비스의 미리 보기를 릴리스하게 되어 기쁩니다.지금 Data Factory 사용을 시작할 수 있습니다. Azure Portal에서 몇 번의 클릭 또는 명령줄 작업을 통해 새 데이터 팩터리를 만들고 데이터 및 처리 리소스에 연결할 수 있습니다.Azure Blob의 SQL Server 및 클라우드 데이터의 온-프레미스 데이터에 대한 액세스, Table &amp; Database 서비스는 이 미리 보기 릴리스에 포함되어 있습니다.Data Factory의 미리 보기 단계를 통한 피드백에 따라 추가 원본이 추가됩니다.온-프레미스 데이터에 대한 액세스는 데이터 관리 게이트웨이를 통해 제공되므로 온-프레미스 SQL 서버에 대한 연결을 쉽게 구성하고 관리할 수 있습니다.
+
+
+  데이터 처리는 처음에 Hive, Pig 및 사용자 지정 C# 활동을 통해 사용하도록 설정됩니다. 이러한 활동을 사용하여 데이터를 정리하고, 데이터 필드를 마스킹하고, 다양한 복잡한 방법으로 데이터를 변환할 수 있습니다. Hive 및 Pig 작업은 사용자가 만든 HDInsight 클러스터에서 실행하거나 Data Factory가 사용자를 대신하여 Hadoop 클러스터 수명 주기를 완전히 관리하도록 허용할 수 있습니다.작업을 작성하고, 파이프라인에 결합하고, 실행 일정을 설정하고, 완료했습니다( Hadoop 클러스터 설정 또는 관리 없음).Data Factory는 또한 즉시 모니터링 대시보드를 제공합니다. 즉, 데이터 파이프라인을 배포하고 모니터링 대시보드의 일부로 즉시 보기를 시작할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/10/28/ADF_Walkthrough_variation-v2.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="ADF_Walkthrough_variation v2" alt="ADF_Walkthrough_variation v2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ADF_Walkthrough_variation-v2_thumb.png" width="1817" height="918" border="0" /></a>
+
+
+  &nbsp;
+
+
+  Data Factory에 파이프라인을 만들고 배포한 후에는 엔드 투 엔드 데이터 파이프라인 상태를 신속하게 평가하고, 문제를 파악하고, 필요에 따라 수정 작업을 수행할 수 있습니다. Azure Preview 포털 내에서 모든 파이프라인과 데이터 입력 및 출력의 시각적 레이아웃을 가져옵니다. 모든 원본에서 데이터 파이프라인의 모든 관계 및 종속성을 볼 수 있으므로 데이터가 어디에서 오고 어디로 가는지 항상 알 수 있습니다. 단일 모니터링 대시보드에서 작업 실행, 데이터 프로덕션 상태 및 시스템 상태에 대한 기록적인 회계를 얻을 수 있습니다.
+
+
+  마지막으로 데이터 파이프라인을 사용하여 클라우드에서 온-프레미스 SQL Server 데이터베이스로 변환된 데이터를 자동으로 전달하거나 BI 및 분석 도구 및 애플리케이션에서 사용할 수 있도록 클라우드 스토리지 원본에 보관합니다.
+
+
+  시작하려면 ...
+
+  <ul>
+   <li><a href="https://go.microsoft.com/fwlink/?LinkId=516910">단계별 연습을</a> 수행하여 첫 번째 파이프라인 빌드</li>
+   <li><a href="https://go.microsoft.com/fwlink/?LinkId=516909">제품 설명서를</a> 탐색하여 자세히 알아보기</li>
+   <li><a href="https://go.microsoft.com/fwlink/?LinkId=516903">Data Factory GitHub 리포지토리</a>에서 다양한 샘플 가져오기, 개선 또는 사용자 고유 추가</li>
+   <li><a href="https://go.microsoft.com/fwlink/?LinkID=513457">Data Factory 포럼</a>을 사용하여 질문하기</li>
+  </ul>
+
+  &nbsp;
+
+
+  최종적으로 Data Factory를 사용해 보고 피드백을 기다리고 있습니다. 사용해 보고 싶은 생각과 <a href="https://go.microsoft.com/fwlink/?LinkId=517842">아이디어를 제출하여 Data Factory에 추가/변경된</a> 내용을 알려주세요.

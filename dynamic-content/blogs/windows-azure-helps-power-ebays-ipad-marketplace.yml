@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 56af8305eed7f0f8408bf32adff1c8c167b85509
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901880"
+Slug: windows-azure-helps-power-ebays-ipad-marketplace
+Title: Windows Azure는 Power eBay의 iPad Marketplace를 돕습니다.
+Summary: 2009년 이베이에서 판매되는 상품의 가치는 거의 600억 달러에 이르렀으며, 이는 초당 약 2,000달러의 매출로 이어집니다. 지원하는 데 필요한 대규모 기술 인프라 유지 관리...
+Content: '<p>2009년 <a target="_blank" href="https://www.ebay.com/">이베이</a> 에서 판매되는 상품의 가치는 거의 600억 달러에 이르렀으며, 이는 초당 약 2,000달러의 매출로 이어집니다. 이러한 판매량을 지원하는 데 필요한 대규모 기술 인프라를 유지 관리한다는 것은 eBay가 항상 IT 효율성 및 서비스 향상을 촉진하는 방법을 찾고 있다는 것을 의미합니다. 2010년, 이베이와 Microsoft는 <a target="_blank" href="https://www.avanade.com/">Avanade</a> 및 <a target="_blank" href="https://www.accenture.com/">Accenture</a>와 협력하여 <a target="_blank" href="https://azure.microsoft.com/">Windows Azure</a> 플랫폼을 통해 eBay가 이베이의 고도로 사용자 지정된 Java 기반 환경에서 애플리케이션을 보다 빠르고 비용 효율적으로 배포하고 확장할 수 있는 방법을 살펴보기 시작했습니다. </p>  <p>이 프로젝트는 이베이의 Apple iPad 마켓플레이스 사이트를 Windows Azure로 마이그레이션하는 데 초점을 맞췄습니다. 이 iPad 사이트는 eBay가 추가 인프라 비용에 투자할 필요 없이 상당한 수요와 고도로 사용자 지정된 페이지를 신속하게 실험할 수 있도록 했기 때문에 선택되었습니다. Accenture와 Avanade는 Microsoft 기술 전문가 및 이베이 인프라 담당자의 소규모 팀과 협력하여 프로젝트를 완료했습니다.</p>  <p>이베이의 결과는 세 가지였다:</p>  <ul class="unIndentedList">  <li> 이 프로젝트는 eBay가 애플리케이션 개발 서비스를 프로비전하고 퍼블릭 클라우드에서 마켓플레이스 애플리케이션을 호스트할 수 있음을 확인했습니다. </li>  <li> ipad.ebay.com 마켓플레이스를 통해 eBay는 플랫폼의 유연성, 확장성, 비용 이점 및 출시 속도를 직접 경험했습니다. </li>  <li> 이 프로젝트는 클라우드 컴퓨팅을 eBay의 장기 인프라 비전에 통합하여 상당한 비용 절감을 촉진하고 새로운 고객 환경을 빠르고 효율적으로 구동하는 방법에 대한 귀중한 통찰력을 제공했습니다. </li>  </ul>  <p>Windows Azure에서 iPad 마켓플레이스를 보려면 여기를 클릭하세요.&nbsp; 다른 고객이 Windows Azure 플랫폼을 사용하는 방법에 대해 자세히 알아보려면 Windows Azure 고객 사례 연구 페이지를 방문하세요.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href=https://blogs.msdn.com/b/windowsazure/archive/2011/04/04/windows-azure-helps-power-ebay-s-ipad-marketplace.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗</p>'

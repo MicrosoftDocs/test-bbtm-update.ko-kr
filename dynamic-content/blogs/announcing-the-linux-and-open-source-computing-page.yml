@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 13233dec1a72b24a5212abc4926f1b38ec8e8b51
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901840"
+Slug: announcing-the-linux-and-open-source-computing-page
+Title: Linux 및 Open-Source 컴퓨팅 페이지 발표
+Summary: 새 Linux 및 Open-Source 컴퓨팅 페이지가 라이브 상태입니다. 이 페이지는 Azure에서 Linux 및 오픈 소스 워크로드를 실행하기 위한 포괄적인 설명서 및 자습서 모음입니다.
+Content: >-
+  새 <a href="https://azure.microsoft.com/documentation/articles/virtual-machines-linux-opensource/" target="_blank">Linux 및 Open-Source 컴퓨팅 페이지</a> 가 라이브 상태입니다. 이 페이지는 Azure에서 Linux 및 오픈 소스 워크로드를 실행하기 위한 포괄적인 설명서 및 자습서 모음입니다. 새 콘텐츠를 추가하고 최신 상태로 유지하기 위해 열심히 노력하고 있지만 누락된 내용이 있는 경우 의견으로 알려주세요. 문서의 위쪽 표시줄에 있는 "GitHub 편집" 링크를 따라 GitHub 문서를 직접 편집할 수도 있습니다.
+
+
+  아래 동영상에는 편집 프로세스에 대한 빠른 연습과 GitHub 리포지토리인 <a href="https://github.com/Azure/azure-content/" target="_blank">Azure/azure-content/</a>를 탐색하는 방법이 포함되어 있습니다. 또한 몇 주 전에 참석했던 내부 문서 해커톤과 같이 Azure 팀의 Linux가 지금까지 수행해 온 재미있는 것들 중 일부를 강조합니다.
+
+
+  <iframe src="//channel9.msdn.com/Blogs/Regular-IT-Guy/Linux-Hack-a-Doc-event/player" width="610" height="343" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+
+  이를 확인하고 설명서 환경을 개선할 수 있는 방법을 알려주세요!

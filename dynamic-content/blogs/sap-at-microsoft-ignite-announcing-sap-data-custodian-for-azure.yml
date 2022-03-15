@@ -1,0 +1,24 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 63e84a3cccff082881a389e5ba070bf598e4e8ec
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900946"
+Slug: sap-at-microsoft-ignite-announcing-sap-data-custodian-for-azure
+Title: 'Microsoft Ignite의 SAP: Azure용 SAP Data Custodian 발표'
+Summary: 기업은 디지털 트랜스포메이션을 가속화하고 있습니다. 지난 1년 동안 중요 업무용 SAP 애플리케이션을 Azure로 이동한 고객이 증명한 바와 같이 이러한 모멘텀을 확인했습니다.
+Content: >-
+  <p>기업은 디지털 트랜스포메이션을 가속화하고 있습니다. 지난 1년 동안 중요 업무용 SAP 애플리케이션을 Azure로 이동한 고객이 증명한 바와 같이 이러한 모멘텀을 확인했습니다. 이 디지털 변환은 Azure에서 제공하는 민첩한 클라우드 인프라에서 실행되는 SAPs&rsquo; 인텔리전트 ERP, S/4HANA의 채택에 의해 구동됩니다. 예를 들어 <a href="https://customers.microsoft.com/en-us/story/daimler-manufacturing-azure" target="_blank">Daimler AG</a> 는 S/4HANA를 사용하여 중요 업무용 조달 시스템을 혁신하고 있으며 민첩성, 비용 절감 및 배포 속도에 대해 Azure를 선택했습니다.</p>
+
+
+  <p>작년 11월부터 Microsoft와 SAP는 모두 Azure에서 내부 SAP S/4HANA 시스템을 실행하기 위한 자체 여정을 시작했습니다. SAPs&rsquo; <a href="https://azure.microsoft.com/en-us/blog/offering-the-largest-scale-and-broadest-choice-for-sap-hana-in-the-cloud/" target="_blank"><strong>Sapphire NOW</strong></a> 에서 Azure는 Azure <a href="https://azure.microsoft.com/en-us/blog/azure-m-series-vms-are-now-sap-hana-certified/" target="_blank">M 시리즈 VM</a> 및 BareMetal 제품을 포함하여 SAP HANA에 가장 크고 광범위한 선택을 지원한다고 발표했습니다. 이 외에도 Azure에서 SAP&rsquo; <a href="https://www.sap.com/cmp/dg/crm-ya18-bhe-hecazlp/index.html" target="_blank">HANA Enterprise Cloud</a>를 사용하는 고객을 위한 관리형 서비스 옵션을 시작했으며, Azure에서 <a href="https://azure.microsoft.com/en-us/blog/agile-sap-development-with-sap-cloud-platform-on-azure/" target="_blank">SAPs Cloud Platform의 일반 공급으로 SAP&rsquo;</a> 개발자 생산성을 지원했습니다.</p>
+
+
+  <p>Microsoft와 SAP는 고객이 이 과정에서 안전하고 규정을 준수하는 솔루션을 빌드할 수 있도록 하는 공통의 목표를 공유합니다. Microsoft는 클라우드에서 고객 데이터를 보호하는 선두 주체이며, Microsoft Azure 고객이 GDPR <a href="https://www.microsoft.com/en-us/trustcenter" target="_blank">규정 준수</a>를 충족하는 데 도움이 되는 도구 및 서비스를 포함하여 <strong>85</strong>개의 규정 준수 제품과 함께 포괄적인 <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">보안</a> 및 <a href="https://www.microsoft.com/en-us/trustcenter/Privacy/GDPR" target="_blank">규정 준수</a> 도구 집합을 제공합니다. SAP는 또한 GRC(거버넌스, 위험 및 규정 준수) 솔루션을 제공하는 오랜 역사를 가지고 있습니다.</p>
+
+
+  <p>오늘 Im&rsquo;은 SAP의 SaaS 제품인 <a href="https://www.sap.com/products/data-custodian.html" target="_blank">SAP Data Custodian</a>이 곧 <a href="https://news.sap.com/?p=147914">Azure에서 사용할 수 있게</a> 될 것이라고 발표하게 되어 기쁩니다. SAP Data Custodian은 Azure&rsquo;의 기본 제공 규정 준수 제어 및 SAP의 심층 전문 지식을 결합하여 고객에게 Azure의 SAP 데이터에 대한 종단 간 가시성과 사용하기 쉬운 데이터 거버넌스 제어 집합을 제공합니다. 이를 통해 고객은 데이터 거버넌스, 감독 의무 분리에 대한 책임을 이행하고 독립적인 검증을 달성할 수 있습니다.</p>
+
+
+  <p>Azure에서 SAP 솔루션을 실행하는 방법과 SAP와의 파트너 관계에 대해 자세히 알아보려면 <a href="https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222018-09-23T08%253A00%253A00-04%253A00%2522%252C%2522to%2522%253A%25222018-09-28T19%253A00%253A00-04%253A00%2522%257D&amp;q=SAP" target="_blank">Azure 세션에서 이러한 SAP 세션에</a> 참석하거나 엑스포 홀의 Azure에서 SAP 부스에 들러 SAP HANA 및 Azure의 SAP Data Custodian 데모를 시청하세요.</p>

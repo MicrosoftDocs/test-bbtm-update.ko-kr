@@ -1,0 +1,108 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1f700d337175d13e61de3fd7d794615108525186
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901300"
+Slug: cloud-services-extended-support-is-generally-available-migration-tool-in-preview
+Title: Cloud Services(추가 지원)는 일반적으로 사용할 수 있으며 마이그레이션 도구는 미리 보기로 제공됩니다.
+Summary: 오늘 Azure Cloud Services에 대한 ARM(Azure Resource Manager) 기반 배포 모델인 Cloud Services(추가 지원)의 일반 공급이 발표되었습니다. 기존 클라우드 서비스를 Cloud Services로 마이그레이션하기 위한 플랫폼 지원 도구(추가 지원)도 현재 미리 보기로 제공됩니다.
+Content: >-
+  <p><em>이 게시물은 Altaf Tambawala, PrincipalProgram&nbsp; Manager, Azure에서 공동 저술했습니다.</em></p>
+
+
+  <p>오늘 Azure Cloud Services에 대한 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/" target="_blank">ARM(Azure Resource Manager) 기반 배포 모델</a> 인 Cloud Services(추가 지원)의 일반 공급이 발표되었습니다. 기존 클라우드 서비스를 Cloud Services로 마이그레이션하기 위한 플랫폼 지원 도구(추가 지원)도 현재 미리 보기로 제공됩니다.</p>
+
+
+  <p>Cloud Services(추가 지원)는 ASM(Azure Service Manager)을 사용하여 배포된 Azure Cloud Services와 기능 패리티와 함께 지역 복원력을 제공하는 주요 이점이 있습니다. 또한 RBAC(역할 기반 액세스 및 제어), 태그, 정책, 프라이빗 링크 지원 및 배포 템플릿 사용과 같은 일부 ARM 기능을 제공합니다.</p>
+
+
+  <p>Cloud Services용 ASM 기반 배포 모델 이름이 Cloud Services(클래식)로 바뀌었습니다. 고객은 웹 및 클라우드 애플리케이션 및 서비스를 빌드하고 신속하게 배포할 수 있는 기능을 유지합니다. 고객은 현재 수요에 따라 클라우드 서비스 인프라를 확장하고 애플리케이션의 성능을 유지하면서 동시에 비용을 절감할 수 있도록 할 수 있습니다. ARM으로 마이그레이션하면 고객은 애플리케이션에 대한 강력한 인프라 플랫폼을 설정할 수 있습니다.</p>
+
+
+  <h2>사용 가능한 마이그레이션 경로</h2>
+
+
+  <p>Cloud Services(추가 지원)는 고객이 ASM에서 ARM으로 마이그레이션할 수 있는 두 가지 경로를 제공합니다.</p>
+
+
+  <ol>
+      <li><strong>다시 배포</strong>: 고객은 ARM에서 직접 새 클라우드 서비스를 배포한 다음 철저한 유효성 검사 후 ASM에서 이전 클라우드 서비스를 삭제할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/cloud-services-extended-support/overview" target="_blank">Cloud Services의 일반 공급(추가 지원)</a>은 99.95%의 <a href="https://azure.microsoft.com/en-us/support/legal/sla/cloud-services/v1_5/" target="_blank">SLA(서비스 수준 계약)</a>와 함께 제공됩니다.</li>
+      <li><strong>현재 위치 마이그레이션</strong>: 클라우드 서비스(추가 지원)로 기존 Cloud Services(클래식) 배포의 원활한 플랫폼 오케스트레이션 마이그레이션을 가능하게 하는 <a href="https://aka.ms/cs-migration-overview" target="_blank">마이그레이션 도구</a> 입니다.</li>
+  </ol>
+
+
+  <h2>주요 강조 표시</h2>
+
+
+  <ul>
+      <li>Cloud Services(추가 지원)는 <a href="https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-choose-me" target="_blank">웹 및 작업자</a>의 두 가지 역할 유형도 지원합니다. 웹 및 작업자 역할의 설계, 아키텍처 또는 구성 요소에는 변경 사항이 없습니다.</li>
+      <li>데이터 평면은 클라우드 서비스와 동일하기 때문에 런타임 코드를 변경할 필요가 없습니다.</li>
+      <li>Azure GuestOS 릴리스 및 관련 업데이트는 Cloud Services(클래식)에 맞춰 조정됩니다.</li>
+      <li>업데이트 도메인과 관련된 기본 업데이트 프로세스는 업데이트 중에 업그레이드 진행, 롤백 및 허용되는 서비스 변경 방법이 변경되지 않습니다&nbsp;.</li>
+      <li>고객은 <a href="https://docs.microsoft.com/en-us/azure/key-vault/general/overview" target="_blank">Azure Key Vault</a>를 사용하여 <a href="https://docs.microsoft.com/en-us/azure/cloud-services-extended-support/certificates-and-key-vault" target="_blank">Cloud Services(추가 지원)에서 인증서를 관리</a>해야 합니다. Azure Key Vault를 사용하면 중앙 및 보안 클라우드 리포지토리에 비밀, 키 및 인증서와 같은 애플리케이션 자격 증명을 안전하게 저장하고 관리할 수 있습니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview" target="_blank">Azure Resource Manager</a>를 통해 배포된 모든 리소스는 가상 네트워크 내에 있어야 합니다.</li>
+      <li>각 클라우드 서비스(추가 지원)는 단일 독립 배포입니다. <a href="https://docs.microsoft.com/en-us/azure/cloud-services-extended-support/swap-cloud-service" target="_blank">VIP 스왑</a> 기능은 두 Cloud Services(추가 지원) 간에 교환하는 데 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>고객과 협업하여 요구 사항 충족</h2>
+
+
+  <p style="margin-left: 40px;">&quot;<em>Cloud Services(추가 지원)는 Azure 얼리 어답터 고객이 ARM으로 마이그레이션하기 위해 오랫동안 기다려온 플랫폼 지원입니다. 동일한 VNET에서 다른 컴퓨팅 및 데이터 워크로드와 함께 클라우드 서비스를 실행하는 기능을 통해 유연한 아키텍처 옵션을 사용할 수 있습니다. 또 다른 이점은 이전에 암시적으로 정의된 Load Balancer와 같은 네트워킹 구성 요소로 모니터링하기 위한 추가 가시성 및 메트릭입니다. 추가 이점에는 Azure Key Vault에 저장되고 참조되는 SSLcertificates&nbsp;가 있는 향상된 보안 태세가 포함됩니다. DevOps 팀은 ARM 템플릿을 중심으로 RBAC 기술과 기존 CI/CD 파이프라인을 활용할 수 있었고 더 이상 서비스 관리 인증서를 관리하고 PowerShell 및 golang으로 작성된 오래된 SDKsand&nbsp; 스크립트를 사용할 필요가 없을 때 흥분했습니다. 새 배포 모델로 마이그레이션하는 것은 DevOps 팀의 작업량이 적당했습니다.&quot;&mdash;</em> 니킬 샴푸르, 환경 시스템 연구소</p>
+
+
+  <p style="margin-left: 40px;"><em>&quot;Cloud Services(추가 지원)의 미리 보기에 참여했으며 코드 변경 없이 서비스를 성공적으로 배포하고 실행할 수 있었습니다.&nbsp; 클라우드 서비스 리소스 및 서비스를 배포하기 위한 ARM 템플릿을 개발한 다음, 클라우드 서비스 구성을 일부 구성 변경하기만 하면 됩니다. 특정 C/C++ 런타임 라이브러리의 설치 관리자 및 작업에 필요한 타사 Windows 서비스와 같이 필요한 여러 클라우드 서비스 시작 작업에는 문제가 없었습니다.&nbsp; 추가적인 이점은 Service Fabric 서비스와 일치하는 ARM 템플릿 배포를 사용하고 Service Fabric 서비스와 함께 Virtual Network에 배포를 포함할 수 있다는 것입니다. 전반적으로 Cloud Services로의 전환(추가 지원)은 상대적으로 고통이 없는 것으로 입증되고 있습니다.&quot;&mdash;</em> Chris Donovan, Instec(보험 정보 기술)</p>
+
+
+  <h2>현재 위치 마이그레이션 세부 정보</h2>
+
+
+  <p>이제 마이그레이션 도구를 미리 보기로 사용할 수 있으며 다음과 같은 추가 이점을 제공합니다.</p>
+
+
+  <ul>
+      <li>대부분의 시나리오에서 가동 중지 시간 없이 원활한 플랫폼 오케스트레이션 마이그레이션을 사용하도록 설정합니다. <a href="https://aka.ms/cs-migration-supported-scenarios" target="_blank">지원되는 시나리오</a>에 대해 자세히 알아봅니다.&nbsp;&nbsp;</li>
+      <li>유효성 검사, 준비, 커밋(또는 중단)의 세 가지 간단한 단계로 기존 클라우드 서비스를 마이그레이션합니다. <a href="https://aka.ms/cs-migration-steps" target="_blank">마이그레이션 도구의 작동</a> 방식에 대해 자세히 알아봅니다.</li>
+      <li>성공적인 준비 후에 마이그레이션된 배포를 테스트하는 기능을 제공합니다. 중단이 마이그레이션을 롤백하는 동안 마이그레이션을 커밋하고 종료합니다.</li>
+      <li>기존 배포 및 관련 배포 파일은 사소한 변경과 함께 다시 사용할 수 있습니다.</li>
+      <li>마이그레이션의 일부로 Cloud Services IP 주소 및 DNS(도메인 이름 시스템) 레이블을 유지합니다. 클라이언트 쪽 변경이 필요하지 않습니다.</li>
+  </ul>
+
+
+  <h2>마이그레이션은 두 가지 방법으로 호출할&nbsp; 수 있습니다.</h2>
+
+
+  <ol>
+      <li><strong>가상 네트워크 마이그레이션</strong> 은 고객이 구성한 명시적 가상 네트워크(클래식) 내에 있는 모든 Cloud Services(클래식) 배포를 마이그레이션합니다.</li>
+      <li><strong>클라우드 서비스 배포 마이그레이션</strong> 은 가상 네트워크 내에 없는 적격 클라우드 서비스(클래식) 배포에만 사용할 수 있습니다. validateAPI&quot;&nbsp; 응답은 &quot;마이그레이션을 위한 클라우드 서비스의 자격을 확인합니다.</li>
+  </ol>
+
+
+  <h2>가격 책정</h2>
+
+
+  <p>두 배포 모델(확장 지원 및 클래식)은 비슷한 <a href="https://azure.microsoft.com/en-us/pricing/details/cloud-services/" target="_blank">가격 구조</a>에서 사용할 수 있습니다. Cloud Services(추가 지원)에는 Azure Key Vault 및 Basic(ARM) 공용 IP 주소가 사용됩니다. <a href="https://azure.microsoft.com/pricing/details/key-vault/" target="_blank">Azure Key Vault 가격 책정</a> 및 <a href="https://azure.microsoft.com/pricing/details/ip-addresses/" target="_blank">공용 IP 주소 가격 책정</a>에 대해 자세히 알아봅니다. 미리 보기와 일반 공급 간의 가격 책정은 변경되지 않습니다.</p>
+
+
+  <h2>ARM으로 마이그레이션하기 위해 고려할 추가 Azure 서비스</h2>
+
+
+  <p>Cloud Services(클래식)에서 Cloud Services(추가 지원)로의 마이그레이션 계획을 평가할 때 고객은 <a href="https://azure.microsoft.com/en-us/services/virtual-machine-scale-sets/" target="_blank">Virtual Machine Scale Sets</a>, <a href="https://azure.microsoft.com/en-us/services/app-service/" target="_blank">App Service</a>, <a href="https://azure.microsoft.com/en-us/services/kubernetes-service/" target="_blank">Azure Kubernetes Service</a> 및 <a href="https://azure.microsoft.com/en-us/services/service-fabric/" target="_blank">Azure Service Fabric</a> 같은 추가 Azure 서비스를 활용할 기회를 조사할 수 있습니다. 이러한 서비스는 계속해서 추가 기능을 제공하는 반면 Cloud Services(추가 지원)는 기본적으로 Cloud Services(클래식)와 동일한 기능 패리티를 유지합니다.</p>
+
+
+  <p>애플리케이션에 따라 Cloud Services(추가 지원)는 다른 옵션에 비해 ARM으로 이동하는 데 훨씬 적은 노력이 필요할 수 있습니다. 애플리케이션이 발전하지 않는 경우 Cloud Services(추가 지원)는 빠른 마이그레이션 경로를 제공하므로 고려할 수 있는 실행 가능한 옵션입니다. 반대로 애플리케이션이 지속적으로 발전하고 최신 기능 집합이 필요한 경우 다른 Azure 서비스를 탐색하여 현재 및 미래의 요구 사항을 더 잘 처리합니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>고객이 Cloud Services(추가 지원)에 대해 자세히 알아보는 데 사용할 수 있는 몇 가지 리소스가 있습니다.</p>
+
+
+  <ul>
+      <li>이제 Cloud Services(추가 지원)를 시작하려면 설명&nbsp;<a href="https://aka.ms/cses-overview-steps" target="_blank">서를</a> 참조하세요.</li>
+      <li>현재 위치 마이그레이션 경로를 사용하여 시작&nbsp;하려면 이제 미리 보기로 제공된 <a href="https://aka.ms/cs-migration-overview" target="_blank">설명서를</a> 참조하세요.</li>
+      <li>고객은 Cloud Services(클래식) <a href="https://docs.microsoft.com/en-us/azure/cloud-services/cloud-services-choose-me" target="_blank">설명서</a>에서도 자세한 정보를 찾을 수 있습니다.</li>
+  </ul>

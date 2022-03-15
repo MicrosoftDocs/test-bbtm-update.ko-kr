@@ -1,0 +1,174 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 32144703c46b5e12b4c9b2a7f5c7dbd3917f43a2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901622"
+Slug: last-week-in-azure-week-of-2018-01-29
+Title: 'Azure의 지난 주: Event Grid GA, Cloud Shell의 Ansible 등'
+Summary: '지난 주 Azure: Event Grid가 일반 공급되고, Ansible이 Cloud Shell에 사전 설치된 등에서 어떤 일이 일어났는지 확인하세요.'
+Content: >-
+  <p>지난 주 Azure Event Grid에서는 완전 관리형, 확장 가능하고 유연한 이벤트 라우팅 서비스가 일반 공급되었습니다. Event Grid를 사용하면 게시-구독 모델을 사용하여 완전 관리형 이벤트 라우팅 서비스를 사용하여 반응형 이벤트 기반 앱을 빌드하여 데이터 원본 및 이벤트 처리기를 연결하고, 작업을 자동화하고, 애플리케이션을 통합할 수 있습니다.</p>
+
+
+  <p>또한 Ansible은 이제 Cloud Shell의 Bash에 미리 설치됩니다. Ansible은 클라우드 프로비저닝, 구성 관리 및 애플리케이션 배포를 자동화하는 오픈 소스 제품입니다. Ansible을 사용하여 가상 머신, 컨테이너 및 클라우드 인프라를 프로비전할 수 있습니다. Ansible을 사용하여 사용자 환경에서 리소스의 배포 및 구성을 자동화할 수도 있습니다.</p>
+
+
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <p>SIEM 솔루션 - <a href="https://azure.microsoft.com/en-us/blog/integrate-azure-security-center-alerts-into-siem-solutions/">에 Azure Security Center 경고 통합</a> Splunk 및 IBM QRadar와 같은 인기 있는 SIEM 솔루션으로 Azure Security Center 경고를 내보낼 수 있는 새로운 기능인 SIEM Export의 공개 미리 보기를 발표합니다.</p>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-event-grid/">Azure Event Grid</a> - 의 일반 공급 발표 반응형 이벤트 기반 애플리케이션 개발을 간소화하는 완전 관리형 이벤트 라우팅 서비스인 Azure Event Grid가 이제 일반 공급됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/network-watcher-connection-troubleshoot-now-generally-available/">Network Watcher 연결 문제 해결 이제 일반 공급</a> - 이전에 연결 확인으로 미리 보기로 제공되었던 Azure Network Watcher 연결 문제 해결은 이제 Network Watcher 네트워킹 도구 및 기능 제품군에서 일반 공급되므로 Azure에서 네트워크 성능 및 연결 문제를 해결할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-storage-sdks-for-python-ruby-and-php-now-generally-available/">이제 Python, Ruby 및 PHP용 SDK Azure Storage 일반 공급</a> - 이제 Python, Ruby 및 PHP용 Azure Storage SDK를 일반 공급할 수 있습니다. 라이브러리의 공간을 줄이고 개발자가 관심 있는 패키지만 사용할 수 있도록 하기 위해 각 Storage SDK는 Blob, 테이블, 큐 및 파일에 각각 하나씩 네 개의 패키지로 분할되었습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/new-in-stream-analytics-general-availability-of-sub-streams-query-compatibility-and-more/">Stream Analytics의 새로운 기능: 하위 스트림의 일반 공급, 쿼리 호환성 등</a> - 하위 스트림 지원, Azure 함수로 송신 및 쿼리 호환성 수준 등 Azure Stream Analytics의 여러 기능의 일반 공급에 대해 발표합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/three-new-reasons-to-love-the-tsi-explorer/">TSI 탐색기를 좋아해야 하는 세 가지 새로운 이유</a> - 세 가지 새로운 TSI(시계열 Insights) 탐색기를 발표합니다. 이제 TSI 탐색기가 일반 공급되고, 접근성을 개선하기 위해 개선되었으며, 집계 이벤트 데이터를 다른 분석 도구(예: Microsoft Excel)로 더 쉽게 내보낼 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/virtual-network-service-endpoints-and-firewalls-for-azure-storage-now-generally-available/">이제 Azure Storage 대한 Virtual Network 서비스 엔드포인트 및 방화벽을 일반 공급</a> - 모든 Azure 퍼블릭 클라우드 지역 및 Azure Government에서 네트워크 기반 액세스 제어를 사용하는 Virtual Network 서비스 엔드포인트와 함께 Azure Storage 대한 방화벽 및 VNet(Virtual Network)의 일반 공급에 대해 발표합니다.</p>
+
+
+  <h2>&amp; 헤드라인 업데이트</h2>
+
+
+  <p>Ansible - <a href="https://azure.microsoft.com/en-us/blog/a-great-developer-experience-for-ansible/">을 위한 훌륭한 개발자 환경</a> 이제 Ansible을 사용할 수 있고, 미리 설치되었으며, Azure Cloud Shell의 모든 Azure 사용자에 사용할 준비가 되었습니다. 또한 Ansible 플레이북을 더 빠르게 개발 및 테스트할 수 있는 Visual Studio Code 대한 Ansible 확장도 출시했습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-expressroute-updates-new-partnerships-monitoring-and-simplification/">Azure ExpressRoute 업데이트 &ndash; 새로운 파트너십, 모니터링 및 간소화</a> - Cisco &amp; Microsoft 간의 확장된 파트너십에 대한 최신 소식을 통해 Azure ExpressRoute에 대한 Cisco 솔루션 지원을 제공하는 새로운 네트워크 사례를 빌드하고, ExpressRoute에 대한 새로운 모니터링 옵션을 이달 말에 일반 공급할 예정이며, 간소화된 ExpressRoute 피어링 및 새로운 ExpressRoute 위치를 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/full-meity-accreditation-enables-indian-public-sector-to-deploy-on-azure/">완전한 MeitY 인증을 통해 인도 공공 부문이 Azure에 배포할 수 있습니다</a>. - Microsoft는 최근 인도 정부의 전자 정보 기술부(MeitY)의 완전한 인증을 받은 최초의 글로벌 클라우드 서비스 공급자 중 하나가 되었습니다. 전체 MeitY 인증은 업계 최대 규모인 70개 이상의 제품으로 구성된 Azure 규정 준수 포트폴리오에 추가되며, 전 세계 지역 및 국가에 한정된 30개 이상의 제품이 있습니다.</p>
+
+
+  <p>UI - <a href="https://azure.microsoft.com/en-us/blog/new-azure-data-factory-self-paced-hands-on-lab-for-ui/">용 새 Azure Data Factory 자체 진행 실습 랩</a> Azure Data Factory를 사용하여 스케일 아웃 데이터 통합 프로젝트를 빌드하는 방법과 새로운 실습 랩에서 ADF V2를 사용하여 데이터 통합 패턴을 빌드하는 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/how-azure-backup-helped-customers-russell-reynolds/">Azure Backup의 고객 성공 사례: 러셀 레이놀즈</a> - IT 및 데이터 센터 비용을 줄이기 위해 Azure로 이전한 글로벌 리더십 및 임원 검색 회사인 Russell Reynolds는 테이프 백업 대신 Azure Backup을 채택하여 번거롭고 비용이 많이 듭니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/jenkins-on-azure-from-zero-to-hero/">Azure의 Jenkins: 0에서 영웅</a> - 으로 Microsoft는 Linux(Ubuntu) VM에서 Jenkins 마스터의 업데이트를 게시했는데, 이 업데이트는 Microsoft Azure Jenkins에 대한 지원의 다음 단계로, 안전하고 안정적이며 프로덕션이 준비된 버전의 Jenkins를 출시합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/enhancements-to-azure-budgets-api-supporting-resource-groups-and-usage-budgets/">리소스 그룹 및 사용 예산을 지원하는 Azure 예산 API의 향상된 기능</a> - 구독 수준 예산 외에도 지원 리소스 그룹 및 리소스 수준 예산을 포함하여 사용량 및 비용 예산에 대한 지원뿐만 아니라 필터를 사용하여 보다 세분화된 예산의 범위를 지원하는 예산 API에 추가 기능 릴리스를 발표합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/enhancements-to-cost-management-apis/">Cost Management API</a> - 의 향상된 기능 ARM API에는 이제 제한 사항과 Enterprise 고객에 대한 가격표 API에 설명된 몇 가지 예외가 있는 Enterprise 및 Web Direct 고객에 대한 Marketplace 요금 API가 포함됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-cosmosdb-and-microsoft-s-project-olympus-honored-in-infoworld-s-2018-technology-of-the-year-awards/">Azure #CosmosDB 및 Microsofts&rsquo; Project Olympus는 InfoWorlds&rsquo; 2018 올해의 기술 어워드</a> - IDG&#39;InfoWorld에서 최근 튜링 어워드 수상자 레슬리 램포트의 작품을 활용하여 여러 일관성 모델을 제공하는 인정을 포함하여 올해의 InfoWorld 기술 어워드에서 Azure Cosmos DB를 인정받았습니다. Azure Cosmos DB는 전 세계 어디서나 사용자가 위치에 관계없이 동일한 버전의 데이터를 볼 수 있는 전역 분산 시스템을 제공하는 것으로 인정되었습니다.</p>
+
+
+  <h2>기술 문서</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/using-explain-to-profile-slow-queries-in-azure-database-for-mysql/">EXPLAIN을 사용하여 Azure Database for MySQL</a> - 에서 느린 쿼리 프로파일 Azure Database for MySQL에서 EXPLAIN 문을 사용하여 클라이언트 쿼리를 프로파일로 작성하여 느린 쿼리의 근본 원인을 식별하는 방법을 알아봅니다. EXPLAIN 문을 사용하여 SQL 문이 실행되는 방법에 대한 정보를 가져올 수 있습니다. 이 정보를 사용하면 느리게 실행되는 쿼리와 그 이유를 프로파일할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/using-the-mysql-sys-schema-to-optimize-and-maintain-a-database/">MySQL sys 스키마를 사용하여 데이터베이스</a> - 최적화 및 유지 관리 Azure Database for MySQL에서 MySQL sys 스키마를 사용하여 성능 문제를 해결하고 리소스를 효율적으로 관리하는 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/managing-azure-secrets-on-github-repositories/">GitHub 리포지</a> - 토리에서 Azure 비밀 관리 Azure는 자격 증명 스캐너(즉, CredScan)를 실행하여 GitHub 들어오는 모든 커밋을 모니터링합니다. 이 커밋은 Azure 구독 관리 인증서 및 Azure SQL 연결 문자열과 같은 특정 Azure 테넌트 비밀을 확인합니다. 초기 미리 보기의 Visual Studio 확장용 지속적인 업데이트 도구는 개발자가 코드에서 잠재적인 비밀을 검색하기 위한 인라인 환경을 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/lambda-architecture-using-azure-cosmosdb-faster-performance-low-tco-low-devops/">Azure #CosmosDB 사용하는 람다 아키텍처: 더 빠른 성능, 낮은 TCO, 낮은 DevOps</a> - Azure Cosmos DB가 일괄 처리 및 실시간 수집 및 쿼리를 모두 처리할 수 있는 확장 가능한 데이터베이스 솔루션을 제공하고 개발자가 대규모 데이터 집합의 효율적인 데이터 처리를 가능하게 하는 람다 아키텍처를 구현할 수 있도록 하는 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/how-is-ai-for-video-different-from-ai-for-images/">비디오용 AI는 이미지에 대한 AI와 어떻게 다른</a>가요? - Azure Video Indexer가 서버 비디오 관련 알고리즘을 구현하는 방법과 이미지와 마찬가지로 개별 비디오 프레임을 처리하는 접근 방식의 단점을 알아봅니다.</p>
+
+
+  <h2>개발자 추천: 서버리스</h2>
+
+
+  <p><a href="https://aka.ms/lwia/serverless-06">Azure - Azure Event Grid를 사용하여 클라우드의 Event-Driven 아키텍처</a> - 이 MSDN Magazine 문서에서는 Azure Event Grid의 유연성을 살펴보고 엔터프라이즈 애플리케이션에서 익숙한 문제를 해결하는 데 사용할 수 있는 방법을 보여 줍니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/serverless-07">Azure 서버리스 컴퓨팅 쿡북</a> - 325페이지 분량의 무료 서버리스 컴퓨팅 전자책을 다운로드하고 서버리스 앱을 빠르게 빌드하기 위한 수십 가지 단계별 레시피에 액세스할 수 있습니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/serverless-08">서버리스, CosmosDB 및 Teams</a> - 사용하여 StackOverflow의 모니터링 문제 이 블로그 게시물에서 Azure의 개발자 옹호자인 Shayne Boyer는 팀이 Stack Overflow에 대한 Azure 개발자 질문을 모니터링하는 데 사용하는 서버리스 함수(GitHub 코드)를 다룹니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/serverless-09">Logic Apps 소개</a> - Azure 문서에서 이 문서의 Azure Logic Apps 대한 개요를 확인합니다.</p>
+
+
+  <p><a href="https://aka.ms/lwia/serverless-10">Azure Cosmos DB</a> - 에서 트리거되는 함수 만들기 Azure Cosmos DB에서 데이터가 추가되거나 변경될 때 트리거되는 함수를 만드는 방법을 알아봅니다.</p>
+
+
+  <h2>서비스 업데이트</h2>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/updates/openssh-now-available-in-powershell-in-cloud-shell/">이제 Cloud Shell의 PowerShell에서 OpenSSH를 사용할 수 있습니다.</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/alter-database-scoped-credential-now-supported-sqldw/">SQL Data Warehouse: 스토리지 키를 회전하기 위한 ALTER DATABASE SCOPED CREDENTIAL 명령</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/ansible-now-available-in-bash-in-cloud-shell/">이제 Cloud Shell의 Bash에서 Ansible 사용 가능</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-vnet-service-endpoints-and-firewalls-for-azure-storage/">일반 공급: Azure Storage 위한 Virtual Network 서비스 엔드포인트 및 방화벽</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/net-core-2-0-support-for-app-service-on-linux/">Linux의 App Service에 대한 .NET Core 2.0 지원</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-azure-network-watcher-in-microsoft-azure-germany/">일반 공급: Microsoft Azure 독일의 Azure Network Watcher</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-azure-network-watcher-in-microsoft-azure-government/">일반 공급: Microsoft Azure Government의 Azure Network Watcher</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/updates/azure-devtest-labs-set-expiry-date-to-a-lab-announcement/">Azure DevTest Labs: 랩 공지의 만료 날짜 설정</a></li>
+  </ul>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <table>
+      <tbody>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Running-Ansible-on-Azure/player" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p>Azure - <strong><a href="https://azure.microsoft.com/en-us/resources/videos/azure-friday-running-ansible-on-azure/">에서 Ansible 실행</a> </strong> Kylie Liang은 Azure에서 클라우드에서 호스팅되는 브라우저 기반 셸 환경인 Cloud Shell을 사용하여 Ansible 플레이북을 실행하는 방법을 도노반 브라운에게 보여줍니다. 또한 VS Code Ansible 확장을 사용하여 자동 완성 및 코드 조각을 사용하여 Ansible 플레이북 개발을 가속화한 다음 Docker 또는 Cloud Shell 내에서 실행하는 방법을 보여 줍니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/Uu7HeWpqgDY?rel=0" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://www.youtube.com/watch?v=Uu7HeWpqgDY">Azure Functions 및 LogicApps&nbsp;</a> </strong> - Microsoft Azure Compute 팀의 프로그램 관리 책임자인 코리 샌더스(Corey Sanders)는 Azure Functions/Azure Logic Apps PM Jeff Hollan과 함께 Azure의 서버리스 공간에서&#39;새로운 기능을 확인했습니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/Z35kRztCro4?rel=0" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://www.youtube.com/watch?v=Z35kRztCro4">Cloud Tech 10 - 2018년 1월 29일 - 영역 중복 확장 집합 및 Storage 등!</a></strong> -Microsoft UK의 클라우드 솔루션 설계자인 Mark Whitby는 매주 10분 이내에 Microsoft Azure 발생하는&#39;다룹니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" width="300">
+              <p><iframe allowfullscreen="" frameborder="0" src="https://www.youtube-nocookie.com/embed/0etdkZfu_5E?rel=0" width="240"></iframe></p>
+              </td>
+              <td valign="top">
+              <p><strong><a href="https://www.youtube.com/watch?v=0etdkZfu_5E">Cloud Tech 10 - 2018년 2월 5일 - Event Grid, Jenkins, Ansible 등! </a></strong> - Microsoft UK의 클라우드 솔루션 설계자인 Mark Whitby는 매주 10분 이내에 Microsoft Azure&#39;문제를 다룹니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td align="center" valign="middle" width="300">
+              <p>
+              <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode213.mp3">HTML5 오디오가 지원되지 않음</audio>
+              </p>
+              </td>
+              <td>
+              <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-213-Azure-Dev-using-Windows-Subsystem-for-Linux">Azure 팟캐스트: 에피소드 213 - Linux용 Windows 하위 시스템</a> </strong> - 사용하는 Azure Dev 이전에 쇼에 참여한 PM 인 Tara Raj는 그녀의 최신 노력, Linux용 Windows 하위 시스템 및 Azure Development를 포함한 다양한 작업에 어떻게 사용할 수 있는지에 대해 이야기합니다!</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>

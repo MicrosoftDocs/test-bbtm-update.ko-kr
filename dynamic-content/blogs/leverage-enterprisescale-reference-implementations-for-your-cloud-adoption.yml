@@ -1,0 +1,142 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b83900c10ded0bb6c573a3c002e362793b76cbc0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908320"
+Slug: leverage-enterprisescale-reference-implementations-for-your-cloud-adoption
+Title: 클라우드 채택을 위한 엔터프라이즈 규모 참조 구현 활용
+Summary: Tailwind Traders는 엔터프라이즈 규모 아키텍처를 사용하여 Azure 컨트롤 플레인에 대한 모범 사례와 결합된 규범 지침을 활용합니다.
+Content: >-
+  <p><em>이 게시물은 Azure의 수석 콘텐츠 엔지니어인 Sarah Lean이 공동 저술했습니다.</em></p>
+
+
+  <p>지난 몇 개의 블로그 게시물에서 Tailwind <sup>Traders1on</sup>&nbsp;의 클라우드 여정과 IT 팀이 IT 전략의 일환으로 Azure를 채택하려는 방법을 살펴보게 됩니다. Azure 내에서 워크로드를 실행하기 위해 수행해야 하는 작업을 조사한 후 Azure 및 <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone?WT.mc_id=modinfra-22439-thmaure" target="_blank">Azure 랜딩 존</a><a href="https://docs.microsoft.com/azure/cloud-adoption-framework?WT.mc_id=modinfra-22439-thmaure" target="_blank">용 Microsoft 클라우드 채택 프레임워크</a>를 사용하기 시작했습니다. 이 블로그에서는 Tailwind Traders의 IT 팀과 빌드하는 클라우드 환경에 엔터프라이즈 규모 참조 구현을 활용하는 방법에 대해 설명합니다.</p>
+
+
+  <p>Enterprise 규모 랜딩 존 아키텍처는 배포 옵션뿐만 아니라 엔터프라이즈 등록, ID, 네트워크 토폴로지, 리소스 조직, 거버넌스, 운영, 비즈니스 연속성 및 재해 복구(BCDR)를 포함하여 Azure 환경에 대한 전략적 디자인 경로 및 대상 기술 상태를 제공합니다. 이러한 랜딩 존은 조직의 중요한 디자인 영역&#39;Azure 환경의 디자인 원칙을 따르고 Azure 플랫폼 로드맵과 일치하여 새로운 기능을 통합할 수 있도록 합니다.</p>
+
+
+  <p>Tailwind Traders는 엔터프라이즈 규모 아키텍처를 사용하여 Azure 컨트롤 플레인에 대한 모범 사례와 결합된 규범 지침을 활용합니다.</p>
+
+
+  <h2>클라우드 채택 프레임워크 엔터프라이즈 규모 랜딩 존 아키텍처</h2>
+
+
+  <p>엔터프라이즈 랜딩 존 아키텍처는 모듈식 디자인을 제공하므로 기존 애플리케이션과 새 애플리케이션을 간단하게 배포할 수 있을 뿐만 아니라 Tailwind Traders는 비즈니스 요구에 따라 더 가벼운 배포 구현과 규모로 시작할 수 있습니다.</p>
+
+
+  <p>이 아키텍처는 다음과 같은 여러 디자인 영역을 고려합니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/enterprise-enrollment-and-azure-ad-tenants/?WT.mc_id=modinfra-22439-thmaure" target="_blank">EA(Enterprise 계약) 등록 및 Azure Active Directory 테넌트</a></li>
+      <li><a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/identity-and-access-management/?WT.mc_id=modinfra-22439-thmaure" target="_blank">ID 및 액세스 관리</a></li>
+      <li><a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-group-and-subscription-organization/?WT.mc_id=modinfra-22439-thmaure" target="_blank">관리 그룹 및 구독 조직</a></li>
+      <li><a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/network-topology-and-connectivity/?WT.mc_id=modinfra-22439-thmaure" target="_blank">네트워크 토폴로지 및 연결</a></li>
+      <li><a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring/?WT.mc_id=modinfra-22439-thmaure" target="_blank">관리 및 모니터링</a></li>
+      <li><a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/business-continuity-and-disaster-recovery/?WT.mc_id=modinfra-22439-thmaure" target="_blank">비즈니스 연속성 및 재해 복구</a></li>
+      <li><a href="https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/security-governance-and-compliance?WT.mc_id=modinfra-22439-thmaure" target="_blank">보안, 거버넌스 및 규정 준수</a></li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/platform-automation-and-devops?WT.mc_id=modinfra-22439-thmaure" target="_blank">플랫폼 자동화 및 DevOps</a></li>
+  </ul>
+
+
+  <p>엔터프라이즈 규모 랜딩 존 아키텍처의 구현을 간단한 프로세스로 만들기 위해 엔터프라이즈 규모는 참조 구현을 제공합니다. 참조 구현은 Azure Portal 또는 IaC(Infrastructure as Code)를 사용하여 배포하여 환경을 설정하고 구성할 수 있습니다. 이를 통해 자동화 및 <a href="https://docs.microsoft.com/azure/azure-resource-manager/templates/overview?WT.mc_id=modinfra-22439-thmaure" target="_blank">Azure Resource Manager 템플릿</a> 또는 <a href="https://docs.microsoft.com/en-us/azure/developer/terraform/overview" target="_blank">Terraform</a> 을 사용하여 엔터프라이즈 규모 구현을 쉽게 배포하고 관리할 수 있습니다.</p>
+
+
+  <p>현재 엔터프라이즈 규모는 시간에 따라 요구 사항이 변경될 때 리팩터링하지 않고 모두 확장할 수 있는 세 가지 <a href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/implementation?WT.mc_id=modinfra-22439-thmaure" target="_blank">참조 구현</a>을 제공합니다.</p>
+
+
+  <h2>Enterprise 규모 기반</h2>
+
+
+  <p>엔터프라이즈 규모 기반 참조 아키텍처를 사용하면 조직에서 Azure 랜딩 존을 시작할 수 있습니다. Tailwind Traders와 같은 조직은 필요에 따라 시작하고 비즈니스 요구 사항에 따라 나중에 확장할 수 있습니다. 이 참조 구현은 Azure에서 랜딩 존으로 시작하고 처음에는 온-프레미스 인프라에 하이브리드 연결이 필요하지&#39;조직에 적합합니다. 그러나 엔터프라이즈 규모의 모듈식 디자인을 통해 고객은 Azure 환경 디자인을 리팩터링하지 않고도 비즈니스 요구 사항이 변경될 때 이후 단계에서 하이브리드 연결을 추가할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe023e6b-1670-42f3-913a-34f30a01f4d8.png"><img alt="Enterprise-scale foundation architecture" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1289ec56-767b-4276-ad35-db2681317878.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="823"></a></p>
+
+
+  <p style="text-align: center;"><em>그림 1: Enterprise 규모 기반 아키텍처</em></p>
+
+
+  <p>이 아키텍처는 다음을 포함하고 배포합니다.</p>
+
+
+  <ul>
+      <li>핵심 플랫폼 기능에 맞게 조정된 확장 가능한 관리 그룹 계층 구조를 통해 중앙에서 관리되는 AZURE RBAC(역할 기반 액세스 제어) 및 플랫폼과 워크로드가 명확하게 분리된 Azure Policy를 사용하여 대규모로 운영할 수 있습니다.</li>
+      <li>플랫폼 및 랜딩 존에 대한 자율성을 사용하도록 설정하는 Azure 정책.</li>
+      <li>관리 전용 Azure 구독으로, Log Analytics, Automation 계정, Azure Security Center 및 Azure Sentinel과 같은 Azure Policy를 사용하여 대규모로 핵심 플랫폼 기능을 사용할 수 있습니다.</li>
+      <li>Azure 네이티브, 인터넷 연결 애플리케이션 및 리소스 및 특정 워크로드 Azure Policies에 대한 랜딩 존 구독입니다.</li>
+  </ul>
+
+
+  <h2>Enterprise 규모 허브 및 스포크</h2>
+
+
+  <p>엔터프라이즈 규모 허브 및 스포크 참조 아키텍처에는 엔터프라이즈 규모 기반이 포함되며, 기존 허브 및 스포크 네트워크 토폴로지 기반의 네트워크 아키텍처뿐만 아니라 Azure ExpressRoute 또는 VPN(가상 사설망)과의 하이브리드 연결을 추가합니다. 이를 통해 Tailwind Traders는 기본 랜딩 존을 활용하고 기존 허브 및 스포크 네트워크 아키텍처를 사용하여 온-프레미스 데이터 센터 및 지점 연결을 추가할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ebed1961-86ba-4bb9-a2e8-2cf7c15f1c1d.png"><img alt="Enterprise-scale with hub and spoke architecture" border="0" height="503" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/27e51a2d-f362-4332-add4-24387ffb48e1.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p style="text-align: center;"><em>그림 2: 허브 및 스포크 아키텍처를 사용하여 Enterprise 크기 조정</em></p>
+
+
+  <p>이 아키텍처에는 엔터프라이즈 규모 기반이 포함되며, 또한 다음과 같은 배포가 포함됩니다.</p>
+
+
+  <ul>
+      <li>허브 가상 네트워크, Azure Firewall(선택 사항), Azure ExpressRoute 게이트웨이(선택 사항), VPN 게이트웨이(선택 사항) 및 Private Link용 Azure 프라이빗 도메인 이름 시스템(DNS) 영역과 같은 핵심 Azure 네트워킹 리소스를 배포하는 연결 전용 Azure 구독입니다.</li>
+      <li>조직에서 전용 구독에 Azure Active Directory 도메인 컨트롤러가 필요한 경우 ID 전용 Azure 구독(선택 사항).</li>
+      <li>온-프레미스, 다른 랜딩 존 또는 허브 가상 네트워크에 제공된 인터넷을 통해&nbsp; 공유된 서비스에 연결해야 하는 회사 연결 애플리케이션에 대한 랜딩 존 관리 그룹입니다.</li>
+      <li>가상 네트워크가 선택 사항이며 하이브리드 연결이 필요하지 않은 인터넷 연결이 될 온라인 애플리케이션에 대한 랜딩 존 관리 그룹입니다.</li>
+      <li>Azure 네이티브 및&nbsp; 인터넷 연결 온라인 애플리케이션 및 리소스에 대한 랜딩 존 구독.</li>
+      <li>VNet 피어링을 통해&nbsp; 허브에 연결될 가상 네트워크를 포함하여 회사 연결 애플리케이션 및 리소스에 대한 랜딩 존 구독.</li>
+      <li>온라인 및 회사 연결 랜딩 존에 대한 Azure 정책.</li>
+  </ul>
+
+
+  <h2>Enterprise 크기 조정 가상 WAN</h2>
+
+
+  <p>Enterprise 규모의 WAN(가상 광역 네트워크) 참조 구현에는 Azure Virtual WAN, Azure ExpressRoute 및 VPN뿐만 아니라 기초도 포함됩니다. 이를 통해 Tailwind Traders 및 기타 조직은 온-프레미스 데이터 센터, 지점, 공장, 소매점 또는 기타 에지 위치에 하이브리드 연결을 추가하고 글로벌 대중교통 네트워크를 활용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1a5ccf08-29fe-40f7-9105-48cec91a3651.png"><img alt="Enterprise-scale Virtual WAN architecture" border="0" height="517" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e48141a2-8eb6-42e9-a050-21d03e5992a2.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p style="text-align: center;"><em>그림 3: Enterprise 규모 Virtual WAN 아키텍처</em></p>
+
+
+  <p>이 아키텍처에는 엔터프라이즈 규모 기반이 포함되며, 또한 다음과 같은 배포가 포함됩니다.</p>
+
+
+  <ul>
+      <li>Azure Virtual WAN, Azure Firewall 및&nbsp;policies 등과 같은 핵심 네트워킹 리소스를 배포하는 연결 전용 Azure 구독입니다.</li>
+      <li>고객이 환경에 필요한 Azure Active Directory 도메인 컨트롤러를 배포할 수 있는 ID 전용 Azure 구독입니다.</li>
+      <li>하이브리드 연결이 필요한 회사 연결 애플리케이션에 대한 랜딩 존 관리 그룹입니다. 여기서는 회사 연결 워크로드를 호스트할 구독을 만듭니다.</li>
+      <li>하이브리드 연결이 필요하지&#39;인터넷 연결이 될 온라인 애플리케이션에 대한 랜딩 존 관리 그룹입니다. 여기서 온라인 워크로드를 호스트할 구독을 만듭니다.</li>
+  </ul>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>Azure 및 Azure 랜딩 존용 클라우드 채택 프레임워크에서 제공하는 Tailwind Traders 클라우드 채택 시리즈의 추가 블로그 게시물을 확인하세요.</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/blog/choose-the-landing-zone-for-your-cloud-adoption-journey/?WT.mc_id=modinfra-22439-thmaure" target="_blank">클라우드 채택 경험</a>의 랜딩 존 선택</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/accelerate-your-cloud-adoption-with-the-start-small-and-expand-landing-zone/?WT.mc_id=modinfra-22439-thmaure" target="_blank">소규모 시작 및 랜딩 존 확장</a>으로 클라우드 채택 가속화</li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/scale-cloud-adoption-with-modular-designs-for-enterprisescale-landing-zones/?WT.mc_id=modinfra-22439-thmaure" target="_blank">엔터프라이즈 규모 랜딩 존을 위한 모듈식 디자인을 사용하여 클라우드 채택 크기 조정</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/blog/deploy-key-design-principles-with-enterprise-scale-architecture/" target="_blank">엔터프라이즈 규모 아키텍처를 사용하여 주요 디자인&nbsp;</a> 요소 배포</li>
+  </ul>
+
+
+  <p>Tailwind Traders 및 클라우드 채택 여정을 살펴보면서 참여해 주셔서 감사합니다. 엔터프라이즈 규모 랜딩 존에 대해 자세히 알아보고 싶&#39;으면 2021년 4월 7일 오전 8:00 PTor&nbsp; 3:00 GMT( <a href="https://docs.microsoft.com/learn/tv?WT.mc_id=modinfra-22439-thmaure" target="_blank">LearnTV</a> 에서 GMT)에 Sarah Lean과 함께 QA&amp;를 수행하고 엔터프라이즈 규모 랜딩 존을 라이브로 배포하세요.</p>
+
+
+  <hr>
+
+  <p><i><sup>1</sup> Tailwind Traders는 회사가 실제 시나리오에서 클라우드 채택 프레임워크를 활용하는 방법을 설명하기 위해 이 블로그 게시물에서 참조하는 가상의 회사입니다.</i></p>

@@ -1,0 +1,125 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7d15a2866bd567b8f8c23c8f8da0018451d37f26
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907607"
+Slug: performance-updates-and-tuning-best-practices-for-using-azure-database-for-postgresql
+Title: Azure Database for PostgreSQL 사용을 위한 성능 업데이트 및 튜닝 모범 사례
+Summary: 2018년 3월, Microsoft는 Azure Database for PostgreSQL의 일반 공급에 대해 발표했습니다. 인프라 관리, 데이터 가용성, 보호 및 규모에 대한 복잡성을 제거하는 PostgreSQL용 간단하고 완전히 관리되는 데이터베이스 서비스입니다.
+Content: >-
+  <p>2018년 3월 Microsoft는 인프라 관리, 데이터 가용성, 보호 및 규모와 관련된 복잡성을 제거하는 PostgreSQL용 간단하고 완전 관리형 데이터베이스 서비스인 Azure Database for PostgreSQL의 일반 공급에 대해 발표했습니다. 이 서비스는 계속해서 엄청난 성장을 보이고 있으며, Amit Banerjee&#39;블로그에서 <a href="https://azure.microsoft.com/en-us/blog/performance-best-practices-for-using-azure-database-for-postgresql/" target="_blank">Azure Database for PostgreSQL 사용에 대한 성능 모범 사례를</a> 게시한 이후 몇 달 동안 서비스에 더 많은 성능 향상을 추가했습니다. 또한 워크로드를&#39; 고객과의 실습 경험을 통해 워크로드 튜닝에 대한 몇 가지 모범 사례를 결정했습니다. 이 게시물에서는 워크로드의 특성에 따라 고려할 서비스 성능 향상 및 성능 조정 모범 사례를 설명합니다.&nbsp; 각 모범 사례와 관련된 잠재적인 절충 때문에 이러한 모든 모범 사례를 테스트하는 것이 좋습니다.</p>
+
+
+  <h2>서비스 개선 사항</h2>
+
+
+  <p>최근 서비스 개선은 스토리지 및 CPU 최적화와 관련되어 더 빠른 IO 대기 시간 및 CPU 효율성을 초래합니다. <strong>I/O 집약적인 워크로드</strong> 및 <strong>읽기 작업이</strong> 이러한 개선의 가장 큰 이점을 경험하게 될 것입니다.</p>
+
+
+  <h2>튜닝 모범 사례</h2>
+
+
+  <p>더 나은 성능을 위해 PostgreSQL 데이터베이스 및 애플리케이션을 최적화하는 방법에는 여러 가지가 있습니다. 이 게시물에서는 최적화에 대한 아이디어를 공유합니다.</p>
+
+
+  <ul>
+   <li>Autovacuum</li>
+   <li>대량 삽입</li>
+   <li>클라이언트 애플리케이션</li>
+  </ul>
+
+
+  <h3>자동 진공 최적화</h3>
+
+
+  <p>PostgreSQL은 MVCC를 사용하여 데이터베이스 동시성을 높일 수 있도록 합니다. 모든 업데이트에서 삽입 및 삭제가 수행되고, 모든 삭제에서 행이 삭제되도록 소프트 표시됩니다. 이로 인해 나중에 제거해야 하는 데드 튜플이 생성됩니다. PostgreSQL은 진공 작업을 실행하여 이를 달성합니다.</p>
+
+
+  <p>진공 작업은 수동 또는 자동으로 트리거될 수 있습니다. 데이터베이스에 많은 업데이트 또는 삭제 작업이 발생하고 유휴 상태일 때 더 적은 수의 데드 튜플이 있으므로 부하 상태에서 진공을 더 자주 실행해야 합니다. 따라서 진공 작업을 수동으로 실행하는 것이 불편합니다.</p>
+
+
+  <p>반면 자동 진공은 구성할 수 있으며 튜닝의 이점을 얻을 수 있습니다. PostgreSQL에서 함께 제공하는 기본값은 Raspberry Pi를 포함한 모든 종류의 디바이스에서 제품이 작동되는지 확인하려고 하며, 이상적인 구성 값은 다음과 같은 여러 가지 요소에 따라 달라집니다.</p>
+
+
+  <ul>
+   <li>사용 가능한 총 리소스 크기 - SKU 및 스토리지 크기</li>
+   <li>리소스 사용량</li>
+   <li>개별 개체 특성</li>
+  </ul>
+
+
+  <p>자동 진공 비용 사용, 구성, 모니터링 및 평가에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/postgresql/howto-optimize-autovacuum" target="_blank">Azure Database for PostgreSQL 서버</a>&quot;의 자동 진공 최적화를 참조 &quot; 하세요.</p>
+
+
+  <h4>참조</h4>
+
+
+  <p>PostgreSQL 설명서 &ndash; <a href="https://www.postgresql.org/docs/9.5/static/runtime-config-autovacuum.html" target="_blank">챕터 18, 서버 구성</a>.</p>
+
+
+  <p>PostgreSQL 설명서 &ndash; <a href="https://www.postgresql.org/docs/9.6/static/routine-vacuuming.html" target="_blank">24장, 일상적인 데이터베이스 유지 관리 작업</a></p>
+
+
+  <h3>대량 삽입 최적화</h3>
+
+
+  <p><strong>일시적인 데이터가</strong> 포함되거나 <strong>대량으로 큰 데이터 세트를 삽입</strong>하는 워크로드 작업이 있는 고객의 경우 <strong>기록되지 않은 테이블을</strong> 사용하는 것이 좋습니다.</p>
+
+
+  <p>기록되지 않은 테이블 <a href="https://docs.microsoft.com/en-us/azure/postgresql/howto-optimize-bulk-inserts" target="_blank">사용에 대한 자세한 내용은 Azure Database for PostgreSQL 서버에서 대량 삽입 최적화 및 임시 데이터 사용을</a> 방문 &quot; 하세요.&quot;</p>
+
+
+  <h4>참조</h4>
+
+
+  <p>PostgreSQL 설명서 &ndash; <a href="https://www.postgresql.org/docs/current/static/sql-createtable.html" target="_blank">테이블 SQL 명령 만들기</a></p>
+
+
+  <h3>클라이언트 애플리케이션 최적화</h3>
+
+
+  <h4>TCP_NODELAY</h4>
+
+
+  <p>기본적으로 TCP는 나가는 패킷을 일괄 처리하여 최적화하는 Nagle&#39;알고리즘을 사용합니다. 즉, 전송 수가 줄어들고 애플리케이션이 패킷을 자주 보내고 대기 시간이 가장 높은 우선 순위가 아닌 경우 잘 작동합니다. TCP_NODELAY 옵션을 사용하도록 설정하여 만든 소켓을 보내 대기 시간 향상을 실현할 수 있습니다. 이로 인해 대기 시간이 짧아지지만 전송이 늘어나게 됩니다.&nbsp; TCP_NODELAY 클라이언트 VM(Virtual Machine)에서 고려해야 하는 클라이언트 쪽 설정입니다. TCP_NODELAY 옵션을 사용하는 애플리케이션은 일반적으로 자주 발생하지 않는 쓰기를 수행하는 경향이 있으며 특히 대기 시간에 민감합니다. 예를 들어 이 설정을 사용하여 대기 시간을 15-40ms에서 2-3ms로 줄일 수 있습니다.</p>
+
+
+  <h4>CPU 소모</h4>
+
+
+  <p>Azure Database for PostgreSQL 서버의 CPU 사용량/CPU 비율이 100%로 포화된 경우 먼저 PostgreSQL의 <strong>pg_stat_statements</strong> 사용하여 가장 오래 걸리는 쿼리를 결정합니다. 장기 실행 쿼리를 최적화한 후에도 CPU 사용량이 여전히 높은 경우 다음 vCore 계층으로 확장하는 것이 좋습니다. 예를 들어, CPU 사용량이 범용 4 vCore에 대해 일관되게 100%를 유지하는 경우 범용 8 vCore로 확장합니다.</p>
+
+
+  <p>높은 CPU 사용률이 CPU 병목 상태 때문만은 아닙니다. 단일 스레드 애플리케이션은 또한 한 CPU의 CPU 성능을 모두 사용하면서 다른 CPU는 적게 사용할 수 있습니다. 사용 가능한 모든 vCore를 활용하려면 워크로드를 병렬화하는 것이 좋습니다.</p>
+
+
+  <h4>pg_stat_statements 최적화</h4>
+
+
+  <p>pg_stat_statemetns 및 쿼리 저장소 사용에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/postgresql/howto-optimize-query-stats-collection" target="_blank">Azure Database for PostgreSQL 서버</a>&quot;의 쿼리 통계 컬렉션 최적화를 방문 &quot; 하세요.</p>
+
+
+  <h4>알림 테이블 스토리지 전략을 사용하여 쿼리 시간 최적화</h4>
+
+
+  <p>압축 및 아웃오브 라인 스토리지 간의 다양한 조합을 나타내는 디스크에 알림 가능한 열을 저장하는 네 가지 다른 전략이 있습니다. 전략은 데이터 형식 수준 및 열 수준에서 설정할 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/postgresql/howto-optimize-query-time-with-toast-table-storage-strategy" target="_blank">Toast Table Storage 전략에 대한 자세한 내용은 TOAST Table Storage 전략을</a>&quot; 사용하여 쿼리 시간 최적화를 방문 &quot; 하세요.</p>
+
+
+  <h4>참조</h4>
+
+
+  <p>PostgreSQL 설명서 &ndash; <a href="https://www.postgresql.org/docs/10/static/storage-toast.html" target="_blank">챕터 66, Database Physical Storage</a>.</p>
+
+
+  <h2>감사의 말</h2>
+
+
+  <p>사이카트 센, 수닐 카마스, 페이디 세드락, 레이몬드 마틴, 사메르 아로라, 카밀 케지아, 레이첼 아게메그, 하리니 굽타, 얀 엥겔스버그, 바빈 간디, 아룬 순다람, 미샬 프림케에게 특별히 감사드립니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/postgresql/" target="_blank">Azure Database for PostgreSQL 서비스를</a> 활용하기를 바랍니다. 다음에 보려는 <a href="https://feedback.azure.com/forums/597976-azure-database-for-postgresql" target="_blank">기능과 기능에 대한 피드백을</a> 계속 제공하세요. 지금 시작하려면 <a href="https://azure.microsoft.com/en-us/free/" target="_blank">무료 Azure 계정을</a> 만든 다음 Azure <a href="https://ms.portal.azure.com/#create/Microsoft.PostgreSQLServer" target="_blank">Database for PostgreSQL 인스턴스를 만듭니</a>다. 도움이 필요하거나 질문이 있는 경우 <a href="https://docs.microsoft.com/en-us/azure/postgresql/" target="_blank">Azure Database for PostgreSQL 설명서를</a> 확인하세요. PostgreSQL용 Azure DB 요청 별칭을 사용하여 연락할 수도 있으며, Twitter <a href="https://twitter.com/AzureDBPostgres" target="_blank">@AzureDBPostgres</a> 및 <a href="https://twitter.com/search?q=%23PostgreSQL&amp;f=images&amp;src=tyah" target="_blank">postgresql에서 최신 뉴스 및#</a> 공지 사항을 확인하세요.</p>

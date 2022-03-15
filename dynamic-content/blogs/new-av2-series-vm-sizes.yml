@@ -1,0 +1,419 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 24f56775a75f81584bf82b523fc99eafd7428d52
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902035"
+Slug: new-av2-series-vm-sizes
+Title: 새 A_v2-Series VM 크기
+Summary: A 시리즈 VM의 새 버전에 대한 Azure 공지 사항입니다.  디스크 속도를 개선하고 메모리 비율을 높입니다.
+Content: >-
+  <p>현재 7개의 새로운 범용 컴퓨팅 VM 크기를 릴리스하고 있습니다.&nbsp;&nbsp; 이 새로운 버전의 A 시리즈 VM&rsquo;에서는 vCPU당 RAM 양을 vCPU당 1.75GiB 또는 7GiB에서 vCPU당 2GiB 또는 8GiB로 올렸습니다.&nbsp; 또한 로컬 디스크 임의 IOPS를 기존 A 버전 1 크기보다 2-10배 더 빠르게 개선했습니다.&nbsp;</p>
+
+
+  <p>이러한 새 크기는 VM 패밀리 문자와 VM의 vCPU&rsquo; 수인 새 VM 명명 스키마를 사용합니다.&nbsp; &lsquo;vCPU 개수 뒤의 m&rsquo; 식별자는 높은 메모리 제품(8GiB/vCPU)을 나타냅니다.&nbsp; (예: Standard_A8m_v2)</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0" width="779">
+      <tbody>
+          <tr>
+              <td width="255">
+              <p align="center"><b>크기</b></p>
+              </td>
+              <td width="125">
+              <p align="center"><b>vCPU</b></p>
+              </td>
+              <td width="129">
+              <p align="center"><b>RAM(GiB)</b></p>
+              </td>
+              <td width="116">
+              <p align="center"><b>임시 디스크(SSD)</b></p>
+              </td>
+              <td width="152">
+              <p align="center"><b>최대 네트워크 대역폭</b></p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="255">
+              <p align="center"><b>Standard_A1_v2</b></p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">1</p>
+              </td>
+              <td valign="top" width="129">
+              <p align="center">2</p>
+              </td>
+              <td valign="top" width="116">
+              <p align="center">10GB</p>
+              </td>
+              <td valign="top" width="152">
+              <p align="center">보통</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="255">
+              <p align="center"><b>Standard_A2_v2</b></p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">2</p>
+              </td>
+              <td valign="top" width="129">
+              <p align="center">4</p>
+              </td>
+              <td valign="top" width="116">
+              <p align="center">20GB</p>
+              </td>
+              <td valign="top" width="152">
+              <p align="center">보통</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="255">
+              <p align="center"><b>Standard_A4_v2</b></p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">4</p>
+              </td>
+              <td valign="top" width="129">
+              <p align="center">8</p>
+              </td>
+              <td valign="top" width="116">
+              <p align="center">40GB</p>
+              </td>
+              <td valign="top" width="152">
+              <p align="center">높음</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="255">
+              <p align="center"><b>Standard_A8_v2</b></p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">8</p>
+              </td>
+              <td valign="top" width="129">
+              <p align="center">16</p>
+              </td>
+              <td valign="top" width="116">
+              <p align="center">80GB</p>
+              </td>
+              <td valign="top" width="152">
+              <p align="center">높음</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="255">
+              <p align="center"><b>Standard_A2m_v2</b></p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">2</p>
+              </td>
+              <td valign="top" width="129">
+              <p align="center">16</p>
+              </td>
+              <td valign="top" width="116">
+              <p align="center">20GB</p>
+              </td>
+              <td valign="top" width="152">
+              <p align="center">보통</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="255">
+              <p align="center"><b>Standard_A4m_v2</b></p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">4</p>
+              </td>
+              <td valign="top" width="129">
+              <p align="center">32</p>
+              </td>
+              <td valign="top" width="116">
+              <p align="center">40GB</p>
+              </td>
+              <td valign="top" width="152">
+              <p align="center">높음</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="255">
+              <p align="center"><b>Standard_A8m_v2</b></p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">8</p>
+              </td>
+              <td valign="top" width="129">
+              <p align="center">64</p>
+              </td>
+              <td valign="top" width="116">
+              <p align="center">80GB</p>
+              </td>
+              <td valign="top" width="152">
+              <p align="center">높음</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>새 VM 명명 체계&rsquo;를 사용하면 이전 Standard_A8 A8_v2 아닌 새 Standard_H8 성공한다는 것을 깨닫는 것이 중요합니다. 새로운 A8_v2 크기는 이전 A4 및 A7에 성공합니다.&nbsp; v1과 v2의 매핑을 더 잘 이해하기 위해 아래 표를 제공했습니다.</p>
+
+
+  <h3>비교: 표준 및 A_v2</h3>
+
+
+  <div align="center">&nbsp;</div>
+
+
+  <table border="1" cellpadding="2" cellspacing="0">
+      <tbody>
+          <tr>
+              <th valign="top" width="62">
+              <p align="center"><b>크기</b></p>
+              </th>
+              <td valign="top" width="72">
+              <p align="center"><b>vCPU</b></p>
+              </td>
+              <td valign="top" width="126">
+              <p align="center"><b>RAM(GiB)</b></p>
+              </td>
+              <td valign="top" width="153">
+              <p align="center"><b>디스크 크기</b></p>
+              </td>
+              <th valign="top" width="61">
+              <p><b>&nbsp;</b></p>
+              </th>
+              <td valign="top" width="95">
+              <p align="center"><b>크기</b></p>
+              </td>
+              <td valign="top" width="90">
+              <p align="center"><b>vCPU</b></p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center"><b>RAM(GiB)</b></p>
+              </td>
+              <td valign="top" width="151">
+              <p align="center"><b>디스크 크기</b></p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="62">
+              <p align="center"><b>A1</b></p>
+              </td>
+              <td valign="top" width="72">
+              <p align="center">1</p>
+              </td>
+              <td valign="top" width="126">
+              <p align="center">1.75</p>
+              </td>
+              <td valign="top" width="153">
+              <p align="center">20GB(HDD)</p>
+              </td>
+              <td valign="top" width="61">
+              <p align="center">&rarr;</p>
+              </td>
+              <td valign="top" width="95">
+              <p align="center"><b>A1_v2</b></p>
+              </td>
+              <td valign="top" width="90">
+              <p align="center">1</p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">2</p>
+              </td>
+              <td valign="top" width="151">
+              <p align="center">10GB(SSD)</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="62">
+              <p align="center"><b>A2</b></p>
+              </td>
+              <td valign="top" width="72">
+              <p align="center">2</p>
+              </td>
+              <td valign="top" width="126">
+              <p align="center">3.50</p>
+              </td>
+              <td valign="top" width="153">
+              <p align="center">70GB(HDD)</p>
+              </td>
+              <td valign="top" width="61">
+              <p align="center">&rarr;</p>
+              </td>
+              <td valign="top" width="95">
+              <p align="center"><b>A2_v2</b></p>
+              </td>
+              <td valign="top" width="90">
+              <p align="center">2</p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">4</p>
+              </td>
+              <td valign="top" width="151">
+              <p align="center">20GB(SSD)</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="62">
+              <p align="center"><b>A3</b></p>
+              </td>
+              <td valign="top" width="72">
+              <p align="center">4</p>
+              </td>
+              <td valign="top" width="126">
+              <p align="center">7</p>
+              </td>
+              <td valign="top" width="153">
+              <p align="center">285GB(HDD)</p>
+              </td>
+              <td valign="top" width="61">
+              <p align="center">&rarr;</p>
+              </td>
+              <td valign="top" width="95">
+              <p align="center"><b>A4_v2</b></p>
+              </td>
+              <td valign="top" width="90">
+              <p align="center">4</p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">8</p>
+              </td>
+              <td valign="top" width="151">
+              <p align="center">40GB(SSD)</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="62">
+              <p align="center"><b>A4</b></p>
+              </td>
+              <td valign="top" width="72">
+              <p align="center">8</p>
+              </td>
+              <td valign="top" width="126">
+              <p align="center">14</p>
+              </td>
+              <td valign="top" width="153">
+              <p align="center">605GB(HDD)</p>
+              </td>
+              <td valign="top" width="61">
+              <p align="center">&rarr;</p>
+              </td>
+              <td valign="top" width="95">
+              <p align="center"><b>A8_v2</b></p>
+              </td>
+              <td valign="top" width="90">
+              <p align="center">8</p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">16</p>
+              </td>
+              <td valign="top" width="151">
+              <p align="center">80GB(SSD)</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="62">
+              <p align="center"><b>A5</b></p>
+              </td>
+              <td valign="top" width="72">
+              <p align="center">2</p>
+              </td>
+              <td valign="top" width="126">
+              <p align="center">14</p>
+              </td>
+              <td valign="top" width="153">
+              <p align="center">135GB(HDD)</p>
+              </td>
+              <td valign="top" width="61">
+              <p align="center">&rarr;</p>
+              </td>
+              <td valign="top" width="95">
+              <p align="center"><b>A2m_v2</b></p>
+              </td>
+              <td valign="top" width="90">
+              <p align="center">2</p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">16</p>
+              </td>
+              <td valign="top" width="151">
+              <p align="center">20GB(SSD)</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="62">
+              <p align="center"><b>A6</b></p>
+              </td>
+              <td valign="top" width="72">
+              <p align="center">4</p>
+              </td>
+              <td valign="top" width="126">
+              <p align="center">26</p>
+              </td>
+              <td valign="top" width="153">
+              <p align="center">285GB(HDD)</p>
+              </td>
+              <td valign="top" width="61">
+              <p align="center">&rarr;</p>
+              </td>
+              <td valign="top" width="95">
+              <p align="center"><b>A4m_v2</b></p>
+              </td>
+              <td valign="top" width="90">
+              <p align="center">4</p>
+              </td>
+              <td valign="top" width="125">
+              <p align="center">32</p>
+              </td>
+              <td valign="top" width="151">
+              <p align="center">40GB(SSD)</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="62">
+              <h3 align="center">A7</h3>
+              </td>
+              <td valign="top" width="72">
+              <h3 align="center">8</h3>
+              </td>
+              <td valign="top" width="126">
+              <h3 align="center">52</h3>
+              </td>
+              <td valign="top" width="153">
+              <h3 align="center">605GB(HDD)</h3>
+              </td>
+              <td valign="top" width="61">
+              <h3 align="center">&rarr;</h3>
+              </td>
+              <td valign="top" width="95">
+              <h3 align="center">A8m_v2</h3>
+              </td>
+              <td valign="top" width="90">
+              <h3 align="center">8</h3>
+              </td>
+              <td valign="top" width="125">
+              <h3 align="center">64</h3>
+              </td>
+              <td valign="top" width="151">
+              <h3 align="center">80GB(SSD)</h3>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h3>지리적 가용성</h3>
+
+
+  <p>현재 A_v2-Series 대부분의 지역에서 사용할 수 있으며 곧 모든 지역에서 사용할 수 있습니다.</p>
+
+
+  <h3>자세한 정보</h3>
+
+
+  <p>A_v2-Series 및 Azure에서 사용할 수 있는 다양한 VM 옵션에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-sizes">가상 머신에 대한 Azure 크기 설명서를</a> 참조하세요.</p>

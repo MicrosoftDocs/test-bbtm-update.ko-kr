@@ -1,0 +1,153 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 25f259804d5f50bcb62b060100c23a800aac5a05
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901320"
+Slug: cloud-innovations-empowering-it-for-business-transformation
+Title: 비즈니스 혁신을 위한 IT 역량 강화 클라우드 혁신
+Summary: Ignite에서 이번 주에는 많은 새로운 Azure 기능을 공개하고 있으며, 클라우드 인프라, 보안 기능, 전체론적 관리 및 오픈 소스에 대한 세계적 수준의 지원을 통해 IT를 가능하게 하는 이러한 기능에 대한 일반적인 밈을 확인할 수 있습니다.
+Content: >-
+  <p>지난 몇 년 동안 Azure 엔지니어링 조직을 이끄는 것은 놀라운 경험이었고, 저에게 많은 것을 가르쳐 주었습니다. 기업 고객과의 논의를 통해 IT 팀(우리 팀 포함)이 오늘날 &ndash; 직면하고 있는 과제에 대해 자세히 이해하게 되었으며, 더 민첩하고 더 빠른 시장 출시 시간으로 혁신하려면 어떻게 해야 할까요? 앱 포트폴리오를 현대화하려면 어떻게 해야 하나요? 내가 가진 것을 유지 관리하고 최적화하려면 어떻게 해야 하나요? 이 모든 것을 관리하고 보호하려면 어떻게 해야 하나요? 그러나 이러한 모든 과제 가운데 IT를 비즈니스 전략에 맞출 수 있는 특별한 기회가 있습니다. 그리고 클라우드는 그 어느 때보다 이 기능을 가능하게 하는 기술입니다.</p>
+
+
+  <p>Azure는 <strong>글로벌</strong>, <strong>신뢰할 수</strong> 있는 <strong>하이브리드</strong>의 기본 원칙을 가진 기업을 위해 설계된 클라우드 플랫폼입니다. 34개 글로벌 지역에 걸쳐 있는 Azure 인프라를 통해 애플리케이션을 실행하기 위해 AWS보다 두 배의 지역을 선택할 수 있을 뿐만 아니라 고유한 데이터 주권 기능을 제공합니다. 47개의 규정 준수 인증 및 증명을 통해 Azure는 지구상에서 가장 규정을 준수하는 하이퍼 스케일 클라우드입니다. 하이브리드 IT 깊이는 온-프레미스 투자가 Azure와 일관되게 작동하도록 하는 것을 의미합니다. 하이브리드 IT는 데이터 센터와 클라우드 간의 연결뿐만 아니라 전체 환경에서 진정한 일관성을 의미하기 때문입니다. &rsquo;그러나 흥미롭고 겸손한 것은 고객이 Azure에 베팅하여 얻고 있는 엄청난 가치를 보는 것입니다. 월마트, BMW, 에코랩 등 포춘지 선정 500대 기업부터 솔루토, 리쿠리 와 같은 스타트업에 이르기까지 고객들은 비용을 절감하고 민첩하며 비즈니스를 혁신할 수 있습니다.</p>
+
+
+  <p>Ignite에서 이번 주에는 많은 새로운 Azure 기능을 공개하고 클라우드 인프라,&rsquo; 보안 기능, 전체론적 관리 및&rsquo; 오픈 소스에 대한 세계적 수준의 지원을 통해 IT를 가능하게 하는 이러한 &ndash; 기능에 대한 공통된 밈을 볼 수 있습니다.</p>
+
+
+  <h2>IT 혁신을 위한 인프라</h2>
+
+
+  <p>Azures&rsquo; 글로벌 데이터 센터에는 활용할 수 있는 놀라운 컴퓨팅 용량이 있습니다. 실행 중인 작업에 관계없이 필요한 모든 성능 및 규모를 의미하는 모든 워크로드 &ndash; 를 실행할 수 있도록 합니다. 이를 위해 오늘 몇 가지 발표를 하고 있습니다.</p>
+
+
+  <h3>새로운 컴퓨팅 제품 &ndash; 스토리지 최적화, 가장 빠른 CPU, SAP HANA</h3>
+
+
+  <p>SAP HANA용 특수 용도의 대규모 인스턴스의 L 시리즈, H 시리즈 및 일반 공급이 필요한 고유한 애플리케이션을 &ndash; 해결하기 위한 새로운 Virtual Machine 및 컴퓨팅 제품을 도입하고 있습니다. 이는 미리 보기로 제공되며 동급 최고의 GPU 컴퓨팅 VM을 제공하는 최근에 출시된 N 시리즈로 확장됩니다.</p>
+
+
+  <ul>
+   <li><strong>L 시리즈</strong> &ndash; L 시리즈는 짧은 대기 시간, 높은 처리량, NoSQL 데이터베이스(예: Cassandra, MongoDB, Cloudera 및 Redis) 및 데이터 웨어하우징과 같은 대규모 로컬 디스크 스토리지가 필요한 애플리케이션을 위해 특별히 설계된 스토리지 최적화 VM입니다. Intel Haswell 프로세서(Intel&reg; Xeon&reg; 프로세서 E5 v3)를 기반으로 하는 L 시리즈는 최대 6TB의 로컬 SSD를 지원하며 타의 추종을 불허하는 스토리지 성능을 제공합니다. 앞으로 몇 주 안에 L 시리즈가 출시될 예정입니다.</li>
+   <li><strong>H 시리즈</strong> - H <a href="https://azure.microsoft.com/en-us/blog/availability-of-h-series-vms-in-microsoft-azure/" target="_blank">시리즈는</a> 최고의 성능을 갖춘 기술을 시장에 제공하겠다는 우리의 약속에 따라 퍼블릭 클라우드에서 가장 빠른 CPU와 InfiniBand의 RDMA를 지원하므로 계산 유체 역학, 자동차 충돌 테스트, 게놈 및 분자 연구와 같은 HPC(고성능 컴퓨팅) 애플리케이션을 실행할 수 있습니다. H 시리즈 VM은 고객에게 주문형 HPC 인프라를 쉽게 가져와 더 빠른 인사이트를 위해 사용할 수 있는 기능을 제공합니다.</li>
+   <li><strong>SAP HANA </strong>- 용 대규모 인스턴스 가장 큰 엔터프라이즈 애플리케이션을 실행할 수 있도록 계속 노력하면서 SAP HANA 워크로드용으로 특별히 설계된 <a href="https://azure.microsoft.com/services/virtual-machines/sap-hana/" target="_blank">대규모 인스턴스</a> 의 일반 공급에 대해 발표하게 되어 기쁩니다. 이러한 용도로 빌드된 하드웨어 구성은 퍼블릭 클라우드에서 가장 큰 SAP HANA 워크로드를 실행할 수 있습니다. 최대 3TB의 SAP HANA OLTP 시나리오와 최대 32TB RAM에 대한 대규모 스케일 아웃 OLAP 배포를 수용합니다.</li>
+   <li><strong>N 시리즈</strong> &ndash; 8월 초, 새로운 GPU 기반 <a href="https://azure.microsoft.com/en-us/blog/azure-n-series-preview-availability/">N 시리즈</a> VM 크기의 미리 보기 릴리스를 발표했습니다. 시각화 SKU와 컴퓨팅 중심 SKU를 모두 사용하는 이러한 VM 크기는 데스크톱 그래픽 모델링/렌더링 및 딥 러닝 계산 모델에 탁월한 성능을 제공합니다.</li>
+  </ul>
+
+
+  <h3>더 많은 개방성 옵션</h3>
+
+
+  <p>Azure는 오픈 소스 지원을 선도하기 위해 최선을 다하고 있는 오픈 플랫폼입니다. 현재 Azure에 배포된 VM 3개 중 거의 1개가 Linux를 실행합니다. Linux 및 Azure의 오픈 소스에 대한 강력한 모멘텀은 지속적인 혁신과 입증된 헌신에 의해 주도됩니다. <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=29617" target="_blank">Johnson Controls</a> 및 <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=28906" target="_blank">KPMG</a>와 같은 고객은 오픈 소스 워크로드에 Azure를 사용하고 컨테이너 및 빅 데이터 솔루션을 비롯한 최신 애플리케이션 아키텍처를 빌드합니다. 2주 전에 확장성이 뛰어난 클라우드 네이티브 애플리케이션을 만들기 위해 <a href="https://azure.microsoft.com/en-us/blog/service-fabric-on-linux-support-available-this-month/" target="_blank">Linux에서 Service Fabric</a> 마이크로 서비스 플랫폼의 미리 보기를 출시했습니다. 이제 고객은 Linux를 호스트 OS로 사용하여 Azure에서 Service Fabric 클러스터를 프로비전하고 이러한 클러스터에 Java 애플리케이션을 배포할 수도 있습니다.</p>
+
+
+  <p>이번 주에는 Azure Government의 주문형 Red Hat Enterprise Linux(Linux)를 포함하여 Linux 및 오픈 소스 솔루션의 추가 지역 가용성을 통해 오픈 소스 지원을 확장하고 있습니다. 또한 SAP 애플리케이션(NetWeaver 및 HANA)에 대한 RHEL 지원을 추가하고 있습니다. 개발자 및 시스템 관리자를 위한 훌륭한 환경을 제공하고 플랫폼 스택에서 관리 도구에 이르기까지 고객을 만나기 위해 최선을 다하고 있습니다.</p>
+
+
+  <h3>새로운 네트워킹 기능</h3>
+
+
+  <p>Azure는 다양한 네트워킹 기능을 제공하므로 애플리케이션에 가장 성능이 뛰어난 네트워크와 다양한 옵션 집합을 제공합니다. 이를 위해 현재 몇 가지 <a href="https://aka.ms/whatsnewazurenetworking" target="_blank">새로운 기능을 도입하고 있습니다</a>.</p>
+
+
+  <ul>
+   <li><strong>IPv6 지원</strong> - IoT(사물 인터넷), 규정 준수 규정 및 향후 교정 애플리케이션에 대한 필요성으로 인해 IPv6에 대한 필요성이 그 어느 때보다 현실화되었습니다. &rsquo;현재 Azure의 가상 머신 내 애플리케이션에 대한 IPv6 지원이 도입되었습니다.</li>
+   <li><strong>Azure DNS</strong> - 애플리케이션 및 클라우드 인프라에 가까운 DNS 서비스를 호스트하는 속도, 안정성 및 편의를 제공하기 위해 Azure DNS를 도입했습니다. 오늘 이 네트워킹 서비스를 일반 공급하게 되어 기쁩니다.</li>
+   <li><strong>가속화된 네트워킹</strong> &ndash; 애플리케이션이 이전보다 더 빠른 성능을 요구함에 따라 VM이 놀라운 네트워크 성능(최대 25Gbps)을 활용할 수 있는 기능을 미리 봅니다. FPGA를 통해 제공되는 이 기능에서 제공하는 네트워크 처리량과 짧은 대기 시간은 현재 퍼블릭 클라우드에서 비교할 수 없습니다.</li>
+   <li><strong>WAF(웹 애플리케이션 방화벽)</strong> &ndash; Application Gateway 서비스에&rsquo; WAF 기능이 추가되면 애플리케이션 보안을 관리하는 기능이 크게 향상됩니다.</li>
+   <li>피어링, 활성-활성 VPN 게이트웨이 및 ExpressRoute용 <strong>새로운 초고성능 게이트웨이</strong>와 같은 <strong>새로운 Virtual Network</strong> 기능은 모두 네트워크 토폴로지 정의 및 다양한 네트워크 환경을 강력한 방식으로 연결하는 방식을 크게 개선합니다.</li>
+  </ul>
+
+
+  <h3>하이브리드 클라우드 사용</h3>
+
+
+  <p>현재 기업의 80% 이상이 하이브리드 클라우드 전략을 &ndash; 가지고 있습니다. 수십 년 동안 엔터프라이즈와 긴밀하게 협력해 온 경험을 통해 전체 IT 자산에 일관되고 포괄적인 접근 방식을 제공하는 진정한 하이브리드의 중요성을 잘 알고 있습니다. 오늘, Azure Stack Technical Preview 2 릴리스를 통해 데이터 센터에서 Azure의 기능을 제공하는 다음 단계를 발표했으며, Azure Marketplace 및 Key Vault와 같은 보안 기능과 같은 검증된 클라우드 혁신을 데이터 센터에 직접 도입했습니다.</p>
+
+
+  <p>또한 Windows <a href="https://azure.microsoft.com/en-us/blog/azure-service-fabric-for-windows-server-now-ga/">Server에 대한 Service Fabric 일반 공급</a>으로 온-프레미스 데이터 센터 및 기타 클라우드에 클라우드 우선 혁신을 제공하고 있습니다. 이 릴리스에서는 마이크로 서비스 기반 Service Fabric 애플리케이션이 이식성과 유연성을 가질 수 있도록 합니다. 이 독립 실행형 제품은 Windows Server 온-프레미스 또는 다른 클라우드에도 설치할 수 있는 런타임을 제공합니다.</p>
+
+
+  <p>많은 고객이 기업 전체에서 백업 및 재해 복구를 위해 Azure로 전환합니다. 풍부한 <a href="https://azure.microsoft.com/en-us/marketplace/" target="_blank">스토리지 파트너</a> 에코시스템의 제품과 Azure 통합 외에도 이제 원격 및 지점용 Azure StorSimple 가상 배열과 데이터 센터에 대한 기존 Azure StorSimple 8000 시리즈 하이브리드 클라우드 스토리지 제품이 있습니다. 또한 Blob 및 디스크와 같은 네이티브 Azure 형식으로 StorSimple을 사용하여 데이터를 백업할 수 있도록 하는 데이터 변환 서비스를 제공하고 있습니다. 이를 통해 고객은 Media Services, 검색, 분석 및 사용자 지정 애플리케이션과 같은 서비스를 통해 비즈니스 요구 사항을 쉽게 해결할 수 있습니다.</p>
+
+
+  <h3>새 Azure SQL 데이터베이스 향상</h3>
+
+
+  <p>Azure SQL Database 임시 테이블 기능의 일반 공급이 발표되었습니다.<strong> 임시 테이블</strong>은 애플리케이션을 개발할 때 생산성을 향상하도록 설계되었습니다. 특정 시점에 데이터 분석을 집중하고 선언적 정리 정책을 사용하여 기록 데이터의 보존을 제어할 수 있습니다. 또한 사용자 지정 코딩 없이 Azure SQL DB에서 데이터 변경 내용의 전체 기록을 추적할 수 있습니다.</p>
+
+
+  <h2>인프라 보안</h2>
+
+
+  <p>보안은 클라우드를 수용하는 고객의 주요 채택 문제입니다. 우리는 정교하고 끊임없이 진화하는 사이버 위협보다 앞서가는 것은 도전적이고 지속적인 과정이라는 것을 알고 있습니다. 신뢰와 보안이 Azure 플랫폼의 초석이라고 굳게 말할 수 있습니다. 우리는 가장 큰 규정 준수 포트폴리오를 가지고 있으며, 금융 서비스와 같은 규제가 높은 산업의 조직은 Azure를 사용할 수 있습니다. 세계&rsquo; 최대 은행의 약 85%가 Azure 고객입니다. Microsoft는 신뢰할 수 있는 클라우드를 구축하는 데 많은 투자를 하고 있으며, 현재 플랫폼의 보안을 더욱 강화하는 주요 개선 사항을 발표하고 있습니다.</p>
+
+
+  <h3>규정 준수 포트폴리오 확장</h3>
+
+
+  <p>우리는 이러한 새로운 추가를 통해 강력한 규정 준수 포트폴리오를 더욱 강화하고 있습니다.</p>
+
+
+  <ul>
+   <li><strong>ISO 22301 인증</strong> - Azure는 비즈니스 연속성 관리에 대한 공식 인증을 받은 유일한 하이퍼 스케일 클라우드 서비스 공급자로, 중단 인시던트 방지, 대응 및 복구에 대한 포괄적인 내부 지침을 보여 줍니다.</li>
+   <li><strong>EU-미국 개인 정보 보호 프레임워크</strong> - Microsoft는 또한 EU 시민의 개인 데이터를 보호하기 위해 새로운 EU-미국 개인 정보 보호 프레임워크에 따라 인증을 받은 최초의 클라우드 공급업체이며 개인 정보 보호에 대한 회사의&rsquo; 최신 예입니다.</li>
+   <li><strong>IT-Grundschutz 통합 문서</strong> - 또한 Azure는 독일 BSI(Federal Office for Information Security) 정보 보호 표준의 적용을 받는 사용자를 위해 새로운 보안 및 규정 준수 통합 문서인 IT-Grundschutz를 제공했습니다.</li>
+  </ul>
+
+
+  <h3>Azure Security Center의 향상된 기능</h3>
+
+
+  <p>올해 초 <a href="https://azure.microsoft.com/en-us/blog/azure-security-center-now-generally-available-proven-to-improve-security/" target="_blank">일반 공급</a> 이후 클라우드 리소스에 대한 타의 추종을 불허하는 보안 모니터링 및 관리를 제공하는 <a href="https://azure.microsoft.com/en-us/blog/strengthen-your-cloud-security-posture-with-new-capabilities-from-azure-security-center/" target="_blank">Azure Security Center</a>를 지속적으로 개선하고 있습니다.</p>
+
+
+  <ul>
+   <li>Security Center를 사용하여 고객은 지속적인 보안 연구를 통해 내부자 위협을 탐지하고, 손상된 시스템 내에서 유지하려고 시도하고, 손상된 시스템을 사용하여 DDoS 및 무차별 암호 대입(Brute Force)과 같은 추가 공격을 탑재하도록 설계된 <strong>새로운 분석을</strong> 오늘 릴리스했습니다.</li>
+   <li>현재 미리 보기로 제공되는 <strong>보안 인시던트가</strong> 연결된 파트너 솔루션의 경고를 포함하여 다양한 원본의 경고를 상호 연결하도록 보강되었습니다.</li>
+   <li>이제 <strong>위협 특성 보고서가</strong> 기본 제공되어 공격자에 대한 중요한 정보를 제공하므로 위협을 보다 신속하게 해결하는 데 사용할 수 있습니다.</li>
+   <li>Security Center는 또한 Web Apps 및 Storage 계정에 대한 보안 평가와 함께 Qualys와 같은 파트너의 <strong>통합 취약성</strong> 평가에 대한 지원을 발표했습니다.</li>
+  </ul>
+
+
+  <h3>인증서에 대한 Azure Key Vault 지원</h3>
+
+
+  <p>클라우드 리소스 및 데이터를 더 안전하게 보호하기 위해 Azure Key Vault는 이제 SSL/TLS 인증서와 관련된 작업을 간소화하는 데 도움이 되는 <a href="https://aka.ms/kvcert" target="_blank">인증서에 대한 지원을</a> 확장합니다. 이 서비스는 고객이 지원되는 타사 인증 기관에서 인증서를 등록하고 자동으로 갱신하는 동시에 동일한 환경 내에서 감사 내역을 제공하는 데 도움이 됩니다. 업계 파트너와 협력하기 위한 우리의 접근 방식에 맞게 GA에서 지원되는 인증 기관은 Digicert, Globalsign 및 WoSign입니다.</p>
+
+
+  <h3>암호화 서비스의 일반 공급</h3>
+
+
+  <p>다음 암호화 서비스의 일반 공급으로 고객은 데이터를 보호 및 보호하고 조직의 보안 및 규정 준수 요구 사항을 충족할 수 있습니다.</p>
+
+
+  <ul>
+   <li>고객은 Windows 및 Linux 표준 VM 모두에 Azure <strong>Disk Encryption</strong>을 사용할 수 있으므로 업계 표준 암호화 기술을 사용하여 REST에서 OS 디스크 및 데이터 디스크를 보호하고 보호할 수 있습니다.</li>
+   <li>2주 전에 Azure Blob <strong>Storage 대한 Storage 서비스 암호화</strong>의 <a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-storage-service-encryption-for-data-at-rest/" target="_blank">일반 공급</a>이 발표되었습니다. 암호화를 사용하도록 설정된 계정의 경우 업계 최고의 암호화 알고리즘인 256비트 AES-256(Advanced Encryption Standard)을 사용하여 Microsoft 관리형 키를 사용하여 데이터를 암호화합니다.</li>
+  </ul>
+
+
+  <h2>클라우드에서 관리</h2>
+
+
+  <p>클라우드 인텔리전스 및 클라우드 규모는 관리와 관련하여 새로운 옵션을 제공합니다. Azure의 민첩성을 활용할 때는 Azure 리소스의 사용률과 성능을 면밀히 모니터링하고 분석해야 합니다. 오늘 <a href="https://azure.microsoft.com/en-us/blog/announcing-the-public-preview-of-azure-monitor/" target="_blank">Azure Monitor</a>의 미리 보기를 발표했습니다. Azure 리소스에서 성능 및 사용률 데이터, 활동 및 진단 로그 및 알림을 수집할 수 있도록 하여 더 나은 인사이트를 제공합니다. 온-프레미스 워크로드를 사용하거나 Azure에서 또는 둘 다에 걸쳐 있으면 필요할 때 심층적으로 드릴다운할 수 있는 통합 보기 및 도구가 필요합니다. Azure에서 제공되는 Operations Management Suite는 포괄적인 하이브리드 클라우드 관리 플랫폼을 제공합니다. Azure Monitor 및 Operations Management Suite Insight &amp; Analytics를 사용하면 Azure, 온-프레미스, AWS 및 VMware의 워크로드 및 애플리케이션의 모든 데이터가 이제 손쉽게 확인할 수 있습니다.</p>
+
+
+  <h2>IT 클라우드 경험 강화</h2>
+
+
+  <p>&rsquo;세계 최고의 클라우드 플랫폼을 제공하기 위해 지속적인 혁신을 약속하지만, 빠르게 변화하는 기술을 계속 유지하는 것은 어려울 수 있습니다. 따라서 Microsoft는 경력 경로 계획부터 Azure 시작, 최신 클라우드 기술 실습에 이르기까지 클라우드 경력 경험을 통해 IT 전문가를 도울 수 있는 무료 리소스를 제공하고 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://www.microsoft.com/itprocloudessentials" target="_blank">Microsoft IT Pro Cloud Essentials</a> 프로그램은 $300 Azure 크레딧, 무료 지원 인시던트, 무료 Pluralsight 과정 및 인증 할인을 시작하는 데 도움이 됩니다. 현재 Microsoft IT Pro Cloud Essentials 및 IT Pro 커리어 센터 프로그램의 가용성을 25개 언어로 확장하고 있습니다.</li>
+   <li><a href="https://www.microsoft.com/itprocareercenter" target="_blank">Microsoft IT Pro 커리어 센터는</a> 클라우드 역할로 전환하는 데 필요한 기술을 탐색하는 데 도움이 될 수 있습니다.&nbsp;</li>
+   <li><a href="https://techcommunity.microsoft.com/" target="_blank">Microsoft Tech Community</a> 질문을 하고 아이디어를 교환하며 MVP(Microsoft Valued Professionals), Microsoft 엔지니어 및 동료와의 연결을 구축할 수 있는 최신 디지털 커뮤니티를 제공합니다.&nbsp; 마지막으로 최신 Microsoft 클라우드 기술을 최신 상태로 유지하려면 주간 IT 중심 비디오를 위해 <a href="https://www.microsoft.com/mechanics" target="_blank">Microsoft Mechanics</a> YouTube 채널을 구독합니다.</li>
+  </ul>
+
+
+  <p>저는 Azure에 대한 이러한 투자와 혁신이 비즈니스 전환에 중요한 방식으로 기여하고 있다고 강력히 믿습니다. Azures&rsquo;의 놀라운 성장의 일부가 되어 주셔서 감사드리며, Azure에&nbsp; 있는 새 릴리스에 대한 피드백을 듣는 데 매우 관심이 있습니다!</p>

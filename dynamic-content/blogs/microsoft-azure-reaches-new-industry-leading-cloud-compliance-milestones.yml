@@ -1,0 +1,55 @@
+### YamlMime:Yaml
+ms.openlocfilehash: aab3832c2682bca2f7be5570cf091c86989aae86
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908294"
+Slug: microsoft-azure-reaches-new-industry-leading-cloud-compliance-milestones
+Title: Microsoft Azure 새로운 Industry-Leading 클라우드 규정 준수 마일스톤에 도달
+Summary: 현재 국제, 시장 및 업계 요구 사항에 대한 Azure 규정 준수 적용 범위와 관련하여 공유할 몇 가지 업데이트가 있습니다.
+Content: >-
+  최근에 저는 Redmond에서 Azure 보안, 개인 정보 보호 및 규정 준수 자문 위원회를 주최했으며, 고객으로부터 직접 들을 수 있는 기회를 가졌습니다. 표현된 주요 욕구는 복잡성을 줄이고 Azure와 협력하여 규정 준수 의무를 이행하는 기능을 개선하는 것이었습니다. 또 다른 요청은 입증된 표준 및 제어에 대해 테스트하는 독립적인 감사자로부터 증명을 활용하여 위험 기반 결정을 가능하게 하는 것이었습니다. Azure 고객은 규정 준수 비용을 절감하고 Azure에서 실행되는 시스템에 대한 인증을 가속화하고 있다고 보고했습니다.
+
+
+  현재 국제, 시장 및 업계 요구 사항에 대한 Azure 규정 준수 적용 범위와 관련하여 공유할 몇 가지 업데이트가 있습니다.
+
+  <h3>국제 표준화 기구(ISO) ISO 27001</h3>
+
+  Azure는 최근 포괄적인 정보 보안 및 위험 관리를 위한 ISO 27002 모범 사례에 따라 2013 버전의 표준에 대한 ISO 27001 갱신 감사를 완료했습니다. 다시 한번, 영국 표준 연구소 (BSI) 아메리카는 독립적 인 감사를 수행. 또한 새 Azure 서비스 및 구성 요소에 대한 적용 범위를 확장하는 것 외에도 BSI에 공용 클라우드에서 PII(개인 식별 정보)를 보호하기 위한 <a href="https://www.iso.org/iso/catalogue_detail.htm?csnumber=61498">ISO 27018</a> 사례 코드에 맞는 컨트롤을 통합했는지 확인하도록 요청했습니다. 이러한 컨트롤에서 사용할 수 있는 세 가지 큰 약정이 있습니다. Azure는 "무료 광고"이므로 고객은 데이터가 광고 또는 마케팅 목적으로 사용되는 것을 걱정할 필요가 없습니다. Azure는 PII의 반환, 전송 및 보안 처리에 대한 정책을 정의했습니다. Azure는 하위 프로세서의 ID를 사전에 공개합니다. BSI 감사자의 최종 보고서가 완료되었으며 업데이트된 인증서는 <a href="https://www.bsigroup.com/en-US/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=standard=ISO/IEC+27001:2005&amp;licence=577753&amp;company=microsoft&amp;scope=management&amp;licencenumber=IS%20577753">BSI 웹 사이트에서</a> 사용할 수 있습니다.
+
+  <h3>SOC(Service Organization Controls) 1 및 2</h3>
+
+  Azure는 3년 동안 SOC 1 및 2 보고서의 <a href="https://azure.microsoft.com/en-us/support/trust-center/services/">범위에서 서비스를</a> 확장하여 컨트롤의 디자인(Type I) 및 운영(형식 II) 효율성을 테스트하고 보고하는 기능을 보여 줍니다. 주요 컨트롤에는 보안, 가용성 및 처리 무결성의 신뢰 원칙에 대한 SOC 1/SSAE16(재무 보고 제어) 및 SOC 2(보안 제어)가 포함됩니다. 각 원칙은 테스트가 설계 및 운영 효율성을 입증했다는 감사자의 의견을 생성하기 위해 컨트롤이 충족해야 하는 정의된 조건으로 구성됩니다. SOC 보고서에는 서비스 공급자의 컨트롤이 각 원칙을 충족하는 방법에 대한 세부 정보가 포함되어 있습니다. 현재 Azure는 SOC 2 처리 무결성에 대한 보고서가 있는 유일한 글로벌 클라우드 서비스 공급자로, 시스템 처리가 완료되고, 정확하고, 시기 적절하게, 권한이 부여되었음을 보여줍니다.
+
+  <h3>FedRAMP</h3>
+
+  최근, HHS(보건 복지부) Office(OIG) 감찰관(OIG)은 ID 관리 서비스에 대한 Azure Active Directory(AD)를 포함하여 Microsoft Office 365 위해 FedRAMP 기관(ATO)에게 권한을 부여했습니다. Azure AD는 디렉터리 서비스, 고급 ID 거버넌스 및 애플리케이션 액세스 관리를 결합하여 FedRAMP Moderate 표준을 충족합니다. Azure Government Cloud의 발표를 통해 전용 환경에서 특수 심사를 통해 미국 시민이 제공하는 클라우드 서비스를 필요로 하는 고객을 위한 서비스 제공을 통해 FedRAMP 범위를 확장하고 있습니다.
+
+  <h3>미국 형사 사법 정보 서비스 (CJIS)</h3>
+
+  <a href="https://azure.microsoft.com/en-us/features/gov/">Azure Government</a>는 주 및 지방 정부에 대한 미국 CJIS 인증 요구 사항을 충족하는 최초의 상용 인프라 클라우드 플랫폼 중 하나이며, CJIS 워크로드에 이미 Microsoft Office 365 사용하고 있는 주 기관에 적용 범위가 확장되었습니다. CJIS 인증은 형사 사법 정보를 보호하고 특별히 심사 된 직원과 서비스를 제공하기 위한 엄격한 요구 사항이 있기 때문에 공공 부문에 많은 관심을 불러 일으켰습니다. 우리는 범위를 확장하기 위해 주 CJIS 임원과 적극적으로 협력하고 있습니다.
+
+  <h3>호주 정부 정보 보안 IRAP(등록 평가자 프로그램)</h3>
+
+  IRAP 인증은 2014년 10월 호주에서 Azure를 출시하면서 발표되었습니다. Azure가 글로벌 입지를 확장함에 따라 심층적이고 초기 참여로 지역 규정 준수 범위를 강화하고 있습니다. 우리의 목표는 고유한 정부 또는 데이터 주권 요구 사항을 충족하는 고객의 기능을 지원하고 공인된 클라우드 서비스에 주요 워크로드의 배포를 가속화하는 것입니다.
+
+  <h3>싱가포르 MTCS(다중 계층 클라우드 보안)</h3>
+
+  MTCS 인증은 2014년 10월 말 Microsoft 클라우드 인프라 및 운영 데이터 센터, Office 365 및 Azure에 대한 첫 번째 수준 1 인증 엔드투엔드 클라우드 서비스 제품으로 발표되었습니다. 클라우드 제품에 진입할 때 사용되는 서비스에 관계없이 고객은 인프라, 플랫폼 및 소프트웨어 서비스를 통한 전체 스택이 MTCS 기준을 충족한다는 확신을 갖게 됩니다.
+
+  <h3>식품의약품안전청 21 CFR 11부</h3>
+
+  의료 분야의 전문 수직 솔루션은 특히 약물 검사 또는 장치 모니터링과 같은 생명 및 사망 문제에 관한 복잡한 인증 노력이 필요할 수 있습니다. Azure는 생명 과학 분야의 고객 및 파트너와 협력하여 Azure에서 실행되는 애플리케이션 및 서비스를 21 CFR 11부로 한정했습니다. Microsoft Azure 대한 자격 지침은 <a href="https://azure.microsoft.com/en-us/case-studies/">사례 연구에서</a> 경험을 공유한 고객 및 파트너에게 입증된 리소스입니다.
+
+
+  2015를 시작할 때 우리 팀은 감사자 Neohapsis와 협력하여 Azure PCI DSS 수준 1 감사를 PCI 표준 버전 3으로 마무리하고 있습니다. 연간 Azure SOC 감사 기간은 1월 1일에 시작되었으며, Azure Compute, Web &amp; Mobile, Data &amp; Storage, Analytics, 네트워킹, 하이브리드 통합, ID &amp; 액세스, Media Services, 개발자 서비스 및 관리에 걸쳐 새 서비스에 대한 적용 범위를 확장하는 주기를 시작했습니다. 감사 보고서 및 지침에 대한 업데이트는 <a href="https://azure.microsoft.com/en-us/support/trust-center/resources/">보안 센터를 확인</a>하세요. 고객은 추가 지원 또는 리소스에 대한 지원 요청을 열 수도 있습니다.
+
+
+  나는 또한 트위터에 당신에게서 듣고 싶어요 : @msftlori
+
+
+  새해 복 많이 받으세요
+
+
+  리

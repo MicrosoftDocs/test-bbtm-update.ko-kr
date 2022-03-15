@@ -1,0 +1,157 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 33b3918f5c9b9bad0ff5499cfc50644b3c426df7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901239"
+Slug: general-availability-of-azure-site-recovery-deployment-planner-vmware-and-hyper-v
+Title: VMware 및 Hyper-V에 대한 Azure Site Recovery Deployment Planner 일반 공급
+Summary: 이제 ASR(Azure Site Recovery) Deployment Planner가 GA입니다. 이제 ASR 고객은 Deployment Planner를 사용하여 VMware vSphere 가상 머신에 대한 기존 지원 외에도 Hyper-V 가상 머신에 대한 Azure 재해 복구를 계획할 수 있습니다.
+Content: >-
+  <p>VMware 및 Hyper-V에 대한 Azure Site Recovery Deployment Planner GA(일반 공급)를 발표하게 되어 기쁩니다. 이 도구를 사용하면 VMware 및 Hyper-V 엔터프라이즈 고객이 온-프레미스 네트워킹 요구 사항을 이해하고, 성공적인 Azure Site Recovery 복제를 위한 컴퓨팅 및 스토리지 요구 사항을 Microsoft Azure, 애플리케이션의 장애 조치(failover) 또는 장애 조치(failover)를 테스트할 수 있습니다.</p>
+
+
+  <p>인프라 요구 사항을 이해하는 것 외에도 고객은 Azure에 대한 총 DR(재해 복구) 비용을 예측하는 방법도 필요했습니다. 이 GA 릴리스에서는 환경에 대한 자세한 예상 DR 비용을 Azure에 추가했습니다. 구독, 구독과 연결된 제품 및 지정된 통화에 대한 대상 Azure 지역에 따라 최신 Azure 가격으로 보고서를 생성할 수 있습니다. Deployment Planner 보고서는 컴퓨팅, 스토리지, 네트워크 및 Azure Site Recovery 라이선스에 대한 비용을 제공합니다.</p>
+
+
+  <h2>도구의 주요 기능</h2>
+
+
+  <ul>
+   <li>온-프레미스 환경에 Azure Site Recovery 구성 요소를 설치하지 않고도 Deployment Planner를 실행할 수 있습니다.</li>
+   <li>이 도구는 직접 연결되지 않으므로 프로덕션 서버의 성능에 영향을 주지 않습니다. 모든 성능 데이터는 프로덕션 가상 머신을 호스트하는 Hyper-V 서버 또는 VMware vCenter Server/VMware vSphere ESXi Server에서 수집됩니다.</li>
+  </ul>
+
+
+  <h2>Azure Site Recovery Deployment Planner 어떤 측면을 다루나요?</h2>
+
+
+  <p>개념 증명에서 Azure Site Recovery의 프로덕션 롤아웃으로 전환할 때 Deployment Planner를 실행하는 것이 좋습니다. 이 도구는 다음과 같은 세부 정보를 제공합니다.</p>
+
+
+  <h3>호환성 평가</h3>
+
+
+  <ul>
+   <li>Site Recovery를 사용하여 Azure로 보호하기 위한 VM 자격 평가</li>
+  </ul>
+
+
+  <h3>네트워크 대역폭 필요 및 RPO 평가</h3>
+
+
+  <ul>
+   <li>델타 복제에 필요한&#39;예상 네트워크 대역폭</li>
+   <li>Site Recovery를 통해 온-프레미스에서 Azure로 가져올 수 있는 처리량</li>
+   <li>지정된 대역폭에서 수행할 수 있는 RPO</li>
+   <li>낮은 대역폭을 프로비전하는 경우 원하는 RPO에 미치는 영향</li>
+  </ul>
+
+
+  <h3>Microsoft Azure 인프라 요구 사항</h3>
+
+
+  <ul>
+   <li>각 가상 머신에 대한 스토리지 유형(표준 또는 Premium Storage 계정) 요구 사항</li>
+   <li>복제를 위해 설정해야 할 표준 및 Premium Storage 계정의 총 수</li>
+   <li>모든 가상 머신에 대한 스토리지 계정 배치</li>
+   <li>테스트 장애 조치 또는 구독에 대한 장애 조치 이전에 설정해야 할 Azure 코어의 수</li>
+   <li>각 온-프레미스 VM에 대한 Azure VM 권장 크기</li>
+  </ul>
+
+
+  <ul>
+
+  </ul>
+
+
+  <h3>온-프레미스 인프라 요구 사항</h3>
+
+
+  <ul>
+   <li>성공적인 초기 복제 및 델타 복제를 위해 각 Hyper-V 스토리지 볼륨에 필요한 무료 스토리지</li>
+   <li>Hyper-V 복제에 설정할 최대 복사 빈도</li>
+   <li>VMware를 위해 온-프레미스에서 Azure 시나리오에 배포하는 데 필요한 구성 서버 및 프로세스 서버 수</li>
+  </ul>
+
+
+  <h3>초기 복제 일괄 처리 지침</h3>
+
+
+  <ul>
+   <li>초기 복제를 완료하기 위해 병렬로 Azure에 복제할 수 있는 가상 머신 수</li>
+  </ul>
+
+
+  <h3>Azure로 DR에 대한 예상 비용</h3>
+
+
+  <ul>
+   <li>Azure로 DR에 대한 총 예상 비용: 컴퓨팅, 스토리지, 네트워크 및 Azure Site Recovery 라이선스 비용</li>
+   <li>가상 머신당 세부 비용 분석</li>
+   <li>복제 비용 및 DR-Drill 비용을 지정합니다.</li>
+  </ul>
+
+
+  <h3>미래 성장 고려</h3>
+
+
+  <ul>
+   <li>위의 모든 요인은 사용량이 증가하는 온-프레미스 워크로드의 향후 증가를 고려한 후 영향을 줍니다.</li>
+  </ul>
+
+
+  <h2>Deployment Planner는 어떻게 작동하나요?</h2>
+
+
+  <p>Deployment Planner에는 세 가지 주요 작업 모드가 있습니다.</p>
+
+
+  <ul>
+   <li>프로파일링</li>
+   <li>보고서 생성</li>
+   <li>처리량 계산</li>
+  </ul>
+
+
+  <h3>프로파일링</h3>
+
+
+  <p>이 모드에서는 며칠 동안 보호하려는 모든 온-프레미스 서버(예: 30일)를 프로파일링합니다. 이 도구는 Hyper-V 서버 또는 가상 머신이 호스트되는 VMware vCenter Server/VMware vSphere ESXi 서버에 연결하여 R/W IOPS, 쓰기 IOPS 및 데이터 변동과 같은 다양한 성능 카운터뿐만 아니라 코어 수, 디스크 수/크기, NIC 수, ect.와 같은 다른 가상 머신 특성을 저장합니다.</p>
+
+
+  <h3>보고서 생성</h3>
+
+
+  <p>이 모드에서 도구는 프로파일된 데이터를 사용하여 배포 계획 보고서를 Microsoft Excel 형식으로 생성합니다. 보고서에는 가상화 유형에 따라 6~8개의 시트가 있습니다.</p>
+
+
+  <ul>
+   <li>온-프레미스 요약</li>
+   <li>권장 사항</li>
+   <li>가상 머신에서 스토리지 배치로</li>
+   <li>호환되는 VM</li>
+   <li>호환되지 않는 VM</li>
+   <li>온-프레미스 스토리지 요구 사항(Hyper-V에만 해당)</li>
+   <li>초기 복제 일괄 처리(Hyper-V에만 해당)</li>
+   <li>비용 예측</li>
+  </ul>
+
+
+  <p>기본적으로 이 도구는 프로파일된 모든 성능 메트릭의 95번째 백분위수를 사용하고 30%의 증가율을 포함합니다. 백분위수 계산 및 증가율 매개 변수는 모두 구성할 수 있습니다.</p>
+
+
+  <p><img alt="" height="1504" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/77cc9dc0-1adc-4dc5-b7ea-efde62e89804.png" width="792"></p>
+
+
+  <h3>처리량 계산</h3>
+
+
+  <p>이 모드에서 도구는 온-프레미스 환경에서 복제를 위해 Microsoft Azure 수 있는 네트워크 처리량을 찾습니다. 이렇게 하면 복제를 위해 프로비전해야 하는 추가 대역폭을 결정하는 데 도움이 됩니다.</p>
+
+
+  <p>Azure Site Recoverys&rsquo;는 Microsoft Azure 전체 애플리케이션 복구를 약속하므로 배포 계획을 통해 재해 복구에 매우 중요합니다. Deployment Planner를 사용하면 새로운 배포와 기존 배포가 모두 Microsoft Azure 실행할 때 최상의 복제 환경과 애플리케이션 성능을 얻을 수 있습니다.</p>
+
+
+  <p><a href="https://aka.ms/asr-dp-hyperv-doc">Hyper-V에서 Azure Deployment Planner로,</a> <a href="https://aka.ms/asr-deployment-planner-doc">VMware에서 Azure Deployment Planner로 가는 방법에</a> 대해 자세히 알아봅니다.</p>

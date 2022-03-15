@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0f768d64521de4a7c34954d25926dc379be14bb7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902379"
+Slug: accelerate-iomt-on-fhir-with-new-microsoft-oss-connector
+Title: 새 Microsoft OSS 커넥터를 사용하여 FHIR에서 IoMT 가속화
+Summary: Microsoft는 클라우드의 IoMT 디바이스에서 PHI(보호된 상태 정보)를 안전하게 수집, 정규화 및 유지하기 위한 새로운 도구를 사용하여 개발자를 위한 FHIR® 에코시스템을 확장하고 있습니다. 의료에서 상호 운용성의 장벽을 제거하려는 노력을 계속하면서 HL7 FHIR 표준(빠른 의료 상호 운용성 리소스)을 지원하기 위해 OSS(오픈 소스 소프트웨어) 포트폴리오를 확장하게 되어 기쁩니다.
+Content: >-
+  <p><strong>Microsoft는 클라우드의 IoMT 디바이스에서 PHI(보호된 상태 정보)를 안전하게 수집, 정규화 및 유지하기 위한 새로운 도구를 사용하여 개발자를 위한 FHIR&reg; 에코시스템을 확장하고 있습니다.&nbsp;&nbsp; </strong></p>
+
+
+  <p><strong>의료에서 상호 운용성의 장벽을 제거하려는 노력을 계속하면서 HL7 FHIR 표준(빠른 의료 상호 운용성 리소스)을 지원하기 위해 OSS(오픈 소스 소프트웨어) 포트폴리오를 확장하게 되어 기쁩니다. Azure용 새 IoMT FHIR 커넥터 릴리스는 현재 GitHub 제공됩니다.</strong></p>
+
+
+  <hr>
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1df8ef3b-1256-4c34-b899-c1b0bdf3845d.png"><img alt="An illustration of medical data being connected to FHIR with IoMT FHIR Connector for Azure" border="0" height="672" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/73f2b9a8-5914-4b16-9750-60a30871fe2e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure용 IoMT FHIR 커넥터를 사용하여 FHIR에 연결되는 의료 데이터의 그림" width="1216"></a></p>
+
+
+  <p><strong>IoMT(의료 사물 인터넷)</strong>는 환자 건강 데이터를 캡처하고 전송하는 IoT 디바이스의 하위 집합입니다. 이는 우리가 의료를 제공하는 방식을 바꾸는 가장 큰 기술 혁명 중 하나이지만 IoMT는 데이터 관리에 큰 도전과제이기도 합니다.</p>
+
+
+  <p>IoMT 디바이스의 데이터는 종종 빈도가 높고 볼륨이 높으며 초 미만의 측정이 필요합니다. 개발자는 신체에 착용하는 센서, 주변 데이터 캡처 디바이스, 환자가 보고한 결과를 문서화하는 애플리케이션, 센서의 몇 미터 이내여야 하는 장치까지 다양한 디바이스와 스키마를 처리해야 합니다.</p>
+
+
+  <p>전통적인 의료 서비스 제공자, 혁신가, 심지어 제약 및 생명 과학 연구원조차도 IoMT 디바이스에서 기계 학습 및 분석을 활용하는 새로운 의료 시대를 열고 있습니다. 대부분은 일상 생활에서 환자를 모니터링하는 장치가 비용 절감을 제공하고, 의사&rsquo; 사무실 밖에서 환자 가시성을 개선하고, 환자 치료에 대한 새로운 통찰력을 창출하기 위한 표준 접근법으로 사용될 미래를 봅니다. 그러나 새로운 IoMT 앱과 솔루션이 개발됨에 따라 두 가지 일관된 장벽이 이러한 솔루션의 광범위한 확장성을 방지하고 있습니다. 즉, 임상 또는 제약 기록과 같은 나머지 의료 데이터와 IoMT 디바이스 데이터의 상호 운용성, 클라우드에서 이러한 디바이스의 보호된 건강 정보(PHI)의 보안 및 개인 교환.</p>
+
+
+  <p>지난 몇 년 동안 공급자 에코시스템은 상호 운용성을 위한 솔루션으로 FHIR의 오픈 소스 표준을 수용하기 시작했습니다. FHIR은 전자 형식으로 의료 정보를 교환하고 관리하는 데 선호되는 표준이 되고 있으며 임상 건강 기록을 교환하는 데 가장 성공했습니다. 에코시스템을 확장하고 IoMT 디바이스를 사용하는 개발자가 FHIR에서 데이터 출력을 정규화할 수 있도록 돕고자 했습니다. FHIR의 강력하고 확장 가능한 데이터 모델은 의료 데이터의 의미 체계를 표준화하고 교환 표준을 정의하므로 데이터 시스템 간의 상호 운용성을 촉진합니다. 여러 디바이스 입력 및 임상 상태 데이터 세트의 데이터가 FHIR을 중심으로 신속하게 정규화되고 몇 분 만에 함께 작동할 수 있는 세상을 상상했습니다. 추가 비용 및 엔지니어링 작업 없이도 사용자 지정 구성을 관리하고 각 디바이스 및 앱 인터페이스와의 통합을 관리할 수 있습니다. 개발자가 혁신에 집중할 수 있도록 신뢰할 수 있는 기본 기술을 제공하고자 했습니다. 그리고 현재&rsquo; <a href="https://github.com/Microsoft/iomt-fhir" target="_blank">Azure용 IoMT FHIR 커넥터</a>를 릴리스합니다<u>.</u></p>
+
+
+  <p>이 OSS 릴리스는 의료 데이터 관리를 위한 흥미로운 새로운 지평을 엽니다. 디바이스의 데이터로 작업하는 애플리케이션 개발자와 기술 전문가가 해당 데이터를 신속하게 수집하고 FHIR로 변환할 수 있는 간단한 도구를 제공합니다. 개발자는 <a href="https://azure.microsoft.com/en-us/services/azure-api-for-fhir/" target="_blank">Azure API for FHIR에</a> 연결하여 클라우드의 IoMT 디바이스에서 데이터를 관리하는 강력하고 안전한 파이프라인을 설정할 수 있습니다.</p>
+
+
+  <p>Azure용 IoMT FHIR 커넥터를 사용하면 몇 분 안에 쉽게 배포할 수 있으므로 개발자는 최신 R4 버전의 FHIR을 지원하는 FHIR 서버에서 IoMT 데이터 관리를 시작할 수 있습니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+      <li>클라우드에서 PHI 데이터의 보안, 프라이빗 및 규격 지속성을 위해 지정된 FHIR 서버에 대한 IoMT 데이터 수집 및 연결에 대한 신속한 프로비전</li>
+      <li>HL7 FHIR R4 표준으로 데이터를 변환하는 정규화 및 통합 매핑</li>
+      <li>Azure Stream Analytics와의 원활한 연결로 실시간 IoMT 데이터 쿼리 및 구체화</li>
+      <li>간소화된 IoMT 디바이스 관리 및 Azure IoT 서비스(<a href="https://azure.microsoft.com/en-us/services/iot-hub/" target="_blank">Azure IoT Hub</a> 또는 <a href="https://apps.azureiotcentral.com/" target="_blank">Azure IoT Central</a> 포함)를 통해 확장하는 기능</li>
+      <li>클라우드의 PHI 데이터에 대한 보안 관리, AZURE용 IoMT FHIR 커넥터는 HIPAA, HITRUST 및 GDPR 규정 준수를 위해 개발되었으며 PHI(보호된 상태 정보)에 대한 요구 사항을 전폭히 지원합니다.</li>
+  </ul>
+
+
+  <p>디바이스 데이터를 수집하는 일반적인 환자용 플랫폼과의 확장 및 연결을 향상시키기 위해 Weve&rsquo;는 IoMT FHIR 커넥터와 작동하는 <a href="https://github.com/Microsoft/healthkit-on-fhir" target="_blank">FHIR HealthKit 프레임워크</a> 도 만들었습니다. 환자가 Apple Health 애플리케이션을 통해 여러 디바이스의 데이터를 관리하는 경우 개발자는 IoMT FHIR 커넥터를 사용하여 HealthKit API를 통해 모든 디바이스에서 데이터를 신속하게 수집하고 FHIR 서버로 내보낼 수 있습니다.</p>
+
+
+  <p><strong>FHIR로 재생</strong><br>
+
+  Microsoft Health 엔지니어링 팀은 이 오픈 소스 프로젝트를 완전히 지원하고 있지만, 모든 오픈 소스와 마찬가지로 커뮤니티&#39;피드백과 기여에 따라 성장하고 개선될 수 있게 되어 기쁩니다. 다음 주에&rsquo;는 암스테르담에서 <a href="https://www.devdays.com/amsterdam/" target="_blank">FHIR Dev Days</a> 를 위해 전 세계 개발자들과 함께 <a href="https://github.com/Microsoft/iomt-fhir" target="_blank">Azure용 새로운 IoMT FHIR 커넥터</a>를 사용할 예정입니다. IoMT FHIR 커넥터의 아키텍처 및 <a href="https://github.com/Microsoft/iomt-fhir" target="_blank">GitHub 페이지에서</a> 프로젝트에 기여하는 방법에 대해 자세히 알아봅니다.</p>
+
+
+  <hr align="center" size="0" width="100%">
+
+  <p><i>FHIR&reg; 은 HL7의 등록 상표이며 HL7의 사용 권한으로 사용됩니다. </i></p>

@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a481e2ffe3111a2ba864218f333bc29b4c04c0e0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908440"
+Slug: debian-images-now-available-on-azure
+Title: Azure Marketplace에서 Debian GNU/Linux의 보증 배포로 가용성 발표
+Summary: Azure 팀은 Credativ와 긴밀히 협력하여 Azure 갤러리 및 Marketplace에 대한 공식 Debian 이미지를 큐레이팅하고 있으며, 오늘 Credativ와 공동으로 Azure Marketplace의 보증 배포로 Debian GNU/Linux의 가용성을 발표하게 되어 기쁘게 생각합니다.
+Content: >-
+  <p>오늘 Microsoft는 <a href="https://www.credativ.de/" target="_blank">Credativ</a>와 공동으로 Azure Marketplace의 보증 배포판으로 Debian GNU/Linux의 가용성을 발표합니다.</p>
+
+
+  <p>Debian은 43,000개가 넘는 패키지와 함께 제공되는 무료 운영 체제로, 많은 아키텍처와 다른 커널에서 실행됩니다. 64비트 버전의 Debian GNU/Linux for Intel 아키텍처는 개발자, 정부, 기업, 애플리케이션 설계자 및 파생 개발자가 사용하는 시장에서 가장 인기 있는 Linux 배포판 중 하나입니다.</p>
+
+
+  <p>이 발표를 통해 고객은 credativ에서 빌드한 Debian 7(코드 이름 &ldquo;wheezy&rdquo;) 및 Debian 8(코드 이름 &ldquo;제시&rdquo;)의 최신 지점 버전을 선택하여 Microsoft Azure Debian 기반 가상 머신을 프로비전할 수 있습니다.</p>
+
+
+  <p>credativ는 1999년에 설립된 독립 컨설팅 및 서비스 회사로, 포괄적인 오픈 소스 서비스 및 기술 지원을 제공하며 이를 사용, 지원 및 개발을 통해 오픈 소스 소프트웨어를 홍보하기 위해 최선을 다하고 있습니다. credativ는 영국, 독일, 네덜란드, 북미 및 인도에서 존재합니다.</p>
+
+
+  <p>&ldquo;Microsoft는 주류 Linux 배포판 중 하나인 Debian을 Microsoft Azure&rdquo;&rsquo; 보증되고 지원되는 오픈 소스 솔루션 제품군에 도입하게 되어 매우 기쁩니다. &ldquo;이 발표를 통해 커뮤니티 및 credativ와 같은 파트너를 포함하여 오픈 소스 에코시스템과 긴밀한 관계를 구축하고 있습니다.&rdquo;</p>
+
+
+  <p>Azure Marketplace에서 제공되는 Debian 이미지는 2015년 7월에 발표된 <a href="https://azure.microsoft.com/en-us/blog/expanding-linux-and-oss-support-on-azure/" target="_blank">지원 정책에</a> 설명된 대로 Microsoft Azure&rsquo; s Linuxand&nbsp; 오픈 소스 개발자 지원 팀에서 지원됩니다. Microsoft와 credativ는 함께 작동하여 가장 업데이트된 버전의 Debian을 Marketplace 이미지로 제공하고 이미지를 빌드하기 위한 투명한 커뮤니티 지향 프로세스를 유지합니다.</p>
+
+
+  <p>&ldquo;이제 Microsoft Azure 모든 사용자가 Debian을 사용할 수 있게 되어 기쁩니다. credativ와 오픈 소스 지원 센터는 Microsoft Azure&#39;Linuxand&nbsp; 오픈 소스 개발자 지원 팀과 협력하여 현재와 미래의 Debian 버전을 Microsoft Azure 제공하고 사용자와 커뮤니티&rdquo; 간의 연락 역할을 할 것이라고 credativ의 CEO 인 Michael Meskes 박사는 말했습니다.</p>
+
+
+  <p>Hyper-V 2012 R2에서 Microsoft는 이미 많은 Debian 릴리스를 지원하며, 이 발표를 통해 Microsoft는 System Center 제품군, PowerShell Desired State Configuration(DSC), Azure Site Recovery 및 Operations Management Suite를 포함하여 온-프레미스 및 퍼블릭 클라우드 플랫폼에서 Debian GNU/Linux를 지원하겠다는 약속을 갱신합니다.</p>
+
+
+  <p>&ldquo;오늘&rsquo; 발표와 함께, 우리는 클라우드&rdquo;에서 고객의 선택과 유연성에 대한 우리의 약속을 계속, 니콜 Herskowitz말했다, 제품 마케팅의 수석 이사, Microsoft Azure. &ldquo;Debian은 Linux 및 오픈 소스 기술을 사용하는 고객과 파트너에게 흥미로운 커뮤니티와 에코시스템 및 중요한 기술 스택을 Azure에 제공합니다.&rdquo;</p>
+
+
+  <p>&rsquo;Azure에서 Debian을 쉽게 시작할 수 있습니다. Azure Marketplace에서 Debian을 선택하거나 Azure Resource Manager 템플릿의 이미지를 참조하기만 하면 됩니다. Azure 구독이 없나요&rsquo;? <a href="https://azure.microsoft.com/trial/free-trial-open-source/" target="_blank">30일 무료 평가판</a>에 등록하여 시작하세요.</p>
+
+
+  <p><img alt="Debian GNU/Linux on Microsoft Azure" border="0" height="324" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/219c6b90-d507-4efd-81f5-462828c387ea.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Microsoft Azure Debian GNU/Linux" width="588"></p>

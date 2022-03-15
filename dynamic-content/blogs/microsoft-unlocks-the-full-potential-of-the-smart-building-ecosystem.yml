@@ -1,0 +1,155 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7bd4b44ea158e50fc35d2bf9a1edb03264c7b13f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901090"
+Slug: microsoft-unlocks-the-full-potential-of-the-smart-building-ecosystem
+Title: Microsoft는 스마트 빌딩 에코시스템의 잠재력을 최대한 발휘합니다.
+Summary: 2020년 이벤트가 부동산 산업에 미친 중대한 영향을 과소 평가하는 것은 불가능합니다. 상업 사무실에서 소매, 병원, 제조 공장 등에 이르기까지 모든 종류의 건물은 직원들이 안전하게 직장으로 돌아갈 수 있도록 하는 혁신적인 솔루션이 여전히 필요합니다. 위기의 시기에 도전을 기회로 바꾸는 것은 혁신입니다.
+Content: >-
+  <p>2020년 의 사건이 부동산 산업에 미친 중대한 영향을 과소 평가하는 것은 불가능합니다. 상업 사무실에서 소매, 병원, 제조 공장 등에 이르기까지 모든 종류의 건물은 직원들이 안전하게 직장으로 돌아갈 수 있도록 하는 혁신적인 솔루션이 여전히 필요합니다. 위기의 시기에 도전을 기회로 바꾸는 것은 혁신입니다.</p>
+
+
+  <p>Microsoft는 파트너와 기업 고객의 에코시스템이 건물 재개를 허용할 뿐만 아니라 부동산 소유자, 관리자, 테넌트 및 거주자에게 지속적인 가치를 제공하는 새로운 스마트 빌딩 시나리오를 만들 수 있도록 하는 새로운 기술 혁신을 제공하기 위해 꾸준히 초점을 맞추고 있습니다.</p>
+
+
+  <p><a href="https://www.realcomm.com/ibcon-2020/" target="_blank">Realcomm | IBcon</a>, &ldquo;스마트, 커넥티드, 고성능 인텔리전트 빌딩 컨퍼런스&rdquo; 는 상업용 부동산 산업의 기술 발전을 축하하는 동시에 앞으로의 과제에 대한 창의적인 솔루션을 논의하기 위한 연례 기회입니다.</p>
+
+
+  <p>작년에 Microsoft가 <a href="https://azure.microsoft.com/blog/accelerating-smart-building-solutions-with-cloud-ai-and-iot/" target="_blank">클라우드, AI 및 IoT에 대한 투자를 통해 스마트 빌딩 솔루션을 가속화하는</a> 방법을 강조했습니다. 그 이후로 우리는 인텔리전트 클라우드 및 인텔리전트 에지 기능과 파트너 에코시스템을 완성하여 복잡한 시나리오를 해결하고 이전에 이질적인 사일로를 통합하는 등 추진력을 계속 이어오고 있습니다. 올해 Microsoft는 세계&rsquo; 최대의 부동산 소유자 및 관리자와 함께 솔루션 개발자, 디바이스 제조업체, 시스템 통합자 및 서비스 공급자의 번성하는 에코시스템에서 개발된 업계 최고의 스마트 빌딩에 어떻게 힘을 실어주는지 보여줄 수 있게 되어 기쁩니다.</p>
+
+
+  <h2>Microsoft와 파트너의 혁신</h2>
+
+
+  <p>지난 1년 동안 Microsoft는 부동산 업계의 파트너 및 고객의 요구와 피드백을 해결하기 위해 특별히 구축된 새로운 기술과 경험을 추진해 왔다. <a href="https://azure.microsoft.com/en-us/blog/azure-digital-twins-powering-the-next-generation-of-iot-connected-solutions/" target="_blank">Azure Digital Twins는</a> 개방형 모델링 언어(Digital Twins 정의 언어), 그래프 기반 관계 및 고급 실행 환경, 입력 원본 및 출력 대상에 대한 원활한 통합을 포함한 새로운 기능을 도입했습니다. <a href="https://azure.microsoft.com/en-us/blog/azure-maps-creator-now-available-in-preview/" target="_blank">Azure 지도 Creator</a>를 출시하여 실내 지도 및 평면도의 컨텍스트에서 데이터를 시각화하고 분석하기 위해 CAD(컴퓨터 지원 드로잉)를 수집하는 솔루션을 지원했습니다. <a href="https://techcommunity.microsoft.com/t5/azure-ai/computer-vision-for-spatial-analysis-at-the-edge/ba-p/1666313" target="_blank">Computer Vision 공간 분석 모델은</a> 공중 보건 규정 준수를 보장하기 위해 해당 영역 사이의 거리를 계산하면서 지정된 영역의 사용자 수를 안전하게 계산할 수 있습니다. 또한 <a href="https://insights.office.com/workplace-analytics/the-human-side-of-business-continuity/" target="_blank">Workplace Analytics 비즈니스 연속성 대시보드</a>와 같은 특수한 도구는 원격 작업 및 협업의 영향을 평가하고 개선 사항을 식별하는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/de3a58ac-b0b7-4a94-9b0a-542e226c601b.png"><img alt="On the left, a picture of an indoor map with stylized floorplan for room types.  On the right, a picture of an indoor map with style overlays for current room temperature. " border="0" height="463" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ab0444a-0df7-4672-a9ea-74857e3070d6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="왼쪽에는 객실 유형에 대한 스타일이 매겨진 평면도가 있는 실내 지도 그림이 있습니다.  오른쪽에는 현재 실온에 대한 스타일 오버레이가 있는 실내 지도 그림이 있습니다. " width="1024"></a></p>
+
+
+  <p align="center"><em>Azure 지도 Creator는 CAD에서 수집한 평면도의 스타일과 레이블을 자동으로 지정하고(왼쪽) Azure Digital Twins와 통합하여 실시간 데이터 시각화(오른쪽)를 구동할 수 있습니다.</em></p>
+
+
+  <p>파트너도 이러한 Microsoft 서비스 사용하여 혁신적인 솔루션을 만드는 데 어려움을 지고 있습니다. 예를 들어, 전염병 <a href="https://customers.microsoft.com/en-ca/story/830377-citizen-care-pod-health-provider-azure-canada" target="_blank">PCL 건설 및 WZMH 설계자가</a> 협력하여 Azure IoT, Azure Cognitive Services 및 Azure Machine Learning 구동되는 자체 포함 COVID-19 테스트 유닛을 제공하여 의료 전문가와 환자를 안전하게 분리했습니다. 또한 <a href="https://customers.microsoft.com/en-us/story/790031-bosch-building-technologies-smart-spaces-azure" target="_blank">Bosch Building Technologies</a> 는 Azure Digital Twins를 사용하여 연결된 건물 서비스 제품에 전력을 공급하여 건물의 성능 및 탄소 발자국을 개선하는 환경을 제공합니다. <a href="https://edge.tech/article/press/introducing-edge-next-the-company-set-to-revolutionise-office-spaces-everywhere" target="_blank">EDGE Next</a> 는 또한 Azure Digital Twins를 활용하여 플랫폼&rsquo; 모델링 및 그래프 기능을 활용하여 관리 시스템, 센서 및 기타 원본을 빌드하여 데이터를 수집하고 분석하여 지속 가능성, 공간 효율성 및 웰빙 메트릭에 대한 실행 가능한 인사이트를 제공합니다.</p>
+
+
+  <h2>RXR 부동산은 안전한 직장 복귀를 가능하게 합니다.</h2>
+
+
+  <p><a href="https://rxrrealty.com/" target="_blank">RXR 부동산</a>, 트라이 스테이트 지역에 걸쳐 공간의 2,500 만 평방 피트 이상의 포트폴리오와 뉴욕시에서 세 번째로 큰 부동산 소유자, COVID-19 히트 때 건물에 대한 디지털 변환의 비전에 이미 진행되었다. RXR은 microsofts&rsquo; 파트너 네트워크를 활용하는 동시에 Azure IoT 클라우드 및 에지 제품의 유연성과 기능을 활용하여 전염병에서 발생하는 요구 사항을 신속하게 해결할 수 있었습니다.</p>
+
+
+  <p>결과 솔루션인 <a href="https://rxwell.rxrrealty.com/" target="_blank"><sup>RxWellTM</sup></a>은 물리적 자산과 디지털 자산을 병합하여 직원들이 직장으로 돌아오는 길에 정보를 제공하고 지원하도록 돕는 포괄적인 공중 보건 기반 데이터 기반 프로그램입니다. RxWell은 공기 질, 온도 스캔, 사람 수, 소셜 거리 감지, 얼굴 마스크 감지 및 청소 추적과 같은 통찰력을 결합하여 건물 웰빙 지수를 도출하여 부동산 관리자, 세입자 및 거주자에게 중요한 관점을 제공합니다. RxWell 솔루션은 작업 공간으로의 안전한 복귀를 용이하게 하기 위한 많은 요구 사항을 해결할 뿐만 아니라 전염병을 지나서 견뎌낼 진정한 장수로 시나리오를 캡처했습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encrypted-media" allowfullscreen="" frameborder="0" height="540" src="https://www.microsoft.com/en-us/videoplayer/embed/RE4FRIh" width="960"></iframe></p>
+
+
+  <p style="margin-bottom:11px">Microsofts&rsquo;의 광범위한 에지 및 클라우드 기능 세트뿐만 아니라 광범위한 에코시스템 파트너는 RxWell의 핵심 지원자였습니다. 기본 아키텍처를 설계하고 구현하는 데 중요한 요소는 차세대 디지털 서비스 및 컨설팅 분야의 글로벌 리더인 <a href="https://www.infosys.com/">Infosys</a>로, 스마트 빌딩 및 공간 솔루션에서 Microsoft와 전략적 협력자로서 풍부한 경험을 제공합니다. RXR은 공기 질 모니터와 같은 맞춤형 센서와 통합하는 하이브리드 에지 클라우드 아키텍처뿐만 아니라 화장실, 회의실, 청소 관리 및 안전 간판과 같은 공동 구역에서 점유 감지를 위해 플러그 앤 플레이 인증 인프라 및 장치를 Azure IoT 제공하는 <a href="https://www.rigado.com/" style="color:#0563c1; text-decoration:underline" target="_blank">Rigado</a>와 같은 Microsoft 파트너 솔루션과 통합됩니다. 모든 데이터를 통합하기 위해 Azure IoT Hub는 Azure Stack Edge, 다양한 디바이스 및 센서 및 파트너 솔루션에서 수집된 데이터에 대한 강력한 수집 계층을 제공합니다.</p>
+
+
+  <p>RXRs&rsquo; <a href="https://www.youtube.com/watch?v=4SWNTqgjjyU">Microsoft Mechanics 아키텍처 심층 분석을</a> 시청하고, <a href="https://customers.microsoft.com/en-us/story/843823-rxr-realty-reopens-for-business-using-azure-iot">고객 스토리</a>에서 RXRs&rsquo; 여정에 대해 알아보고, <a href="https://appsource.microsoft.com/en-us/product/web-apps/rxrrealty1595946161652.rxwell_by_rxr">AppSource</a>에서 RxWell 솔루션을 찾아보세요.</p>
+
+
+  <h2>브룩필드 프로퍼티, 쇼케이스 빌딩 원 맨해튼 웨스트에 디지털 트윈 소개</h2>
+
+
+  <p><a href="https://brookfieldproperties.com/" target="_blank">Brookfield Properties</a> 는 업계 최고의 포트폴리오 관리 및 개발 기능을 제공하는 완전히 통합된 글로벌 부동산 서비스 회사입니다. 5억 평방피트 이상의 상업용 부동산을 관리하는 세계에서 가장 큰 투자자&#39;중 하나인 Brookfield는 세계에서 가장 역동적인 시장을&#39;상징적인 부동산을 소유하고 운영하고 있습니다. 글로벌 포트폴리오에는 사무실, 소매, 다가구, 물류, 호스피탈리티, 셀프 스토리지, 트리플 순 임대, 제조 주택 및 5개 대륙의 학생 주택 자산이 포함됩니다.</p>
+
+
+  <p>가장 최근의 프로젝트 중 하나인 뉴욕시의 원 맨해튼 웨스트(One Manhattan West)는 67층에 위치한 쇼케이스 건물로, 210만 평방피트에 이루어져 있으며, 역동적인 디자인, 흥미진진한 소매, 최첨단 사무실 공간을 결합하고 있습니다. 원 맨해튼 웨스트에서 브룩필드는 현대적이고 안전하며 생산적이고 개인화된 테넌트 환경을 제공하면서 운영을 최적화하기 위해 노력했으며, 비전을 실현하기 위해 주요 파트너로 Microsoft와 Willow에 빠르게 착륙했습니다.</p>
+
+
+  <p><a href="https://www.willowinc.com/" target="_blank">Willow</a> 는 뛰어난 민첩성과 혁신을 통해 Microsofts&rsquo; 기술을 활용하는 스마트 빌딩 업계의 디지털 네이티브 플레이어입니다. <sup>WillowTwinTM</sup> 제품은 데이터를 수집, 구성 및 분석하기 위해 빌드된 세계를 위한 디지털 트윈을 배포하는 소프트웨어 솔루션입니다. WillowTwin을 사용하면 건물 운영자가 건물의 실시간 및 과거 인사이트를 쉽게 모니터링, 시각화 및 수행할 수 있습니다. 또한 WillowTwins&rsquo;의 강력한 확장성 기능을 통해 One Manhattan West와 같은 건물은 다른 솔루션과 브라운필드 및 그린필드 데이터 원본(예: BMS(건물 관리 시스템), Microsoft Dynamics 365 Field Service와 작업 순서 흐름 등을 통합할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/59d4deef-da25-4980-84d9-32ec0a0fa0f0.png"><img alt="On the left, pictures of Brookfield’s One Manhattan West building.  On the right, pictures of Willow’s WillowTwin solution experience." border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e35f803e-547b-4b22-a50c-2ec4ecfe6d08.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="왼쪽에는 브룩필드의 맨해튼 웨스트 빌딩 사진이 있습니다.  오른쪽에는 윌로우의 WillowTwin 솔루션 환경 사진이 있습니다." width="1024"></a></p>
+
+
+  <p align="center"><em>브룩필드&#39;원 맨해튼 웨스트 빌딩에서 윌로우트윈&#39;경험(오른쪽)의 이미지(왼쪽).</em></p>
+
+
+  <p>WillowTwin의 핵심 기반은 개발자가 전체 환경의 포괄적인 디지털 모델을 만들 수 있게 해주는 <a href="https://azure.microsoft.com/services/digital-twins/" target="_blank">Azure Digital Twins</a>입니다. Willow는 플랫폼을 사용하여 수만 개의 자산을 모델링하고 공간, 디바이스의 실시간 데이터 및 이들 간의 관계를 기반으로 라이브 실행 환경을 설정하기 위해 Azure Digital Twins를 핵심으로 솔루션을 기본적으로 설계했습니다.</p>
+
+
+  <p>Azure Digital Twins는 나머지 Azure IoT 플랫폼 서비스와 함께 WillowTwin과 같은 확장성이 뛰어나고 안전하며 규정을 준수하는 제품을 빌드하는 데 필요한 강력한 기능을 제공합니다. 예를 들어 WillowTwin은 One Manhattan Wests&rsquo; 건물 정보 모델을 사용하여 Azure Digital Twins 공간 그래프를 만든 다음 BACnet 게이트웨이를 통해 건물 관리 시스템에서 들어오는 라이브 데이터와의 관계를 만듭니다. Azure Digital Twins&rsquo; 모델링, 관계 및 라이브 실행 환경은 WillowTwins&rsquo; 오류 규칙 엔진을 통해 사무실 공간에서 문제를 해결해야 하는 경우 또는 유지 관리를 위해 기계 빌드를 오프라인으로 전환해야 하는 시기를 결정합니다. 그 결과, Willow는 최종 고객에게 제공하는 가치에 집중할 수 있었고, 궁극적으로 Brookfield는 모든 데이터 스트림을 One Manhattan West의 디지털 모델로 결합하고 복잡한 건물 시스템의 운영을 최적화하고 에너지 사용 비용을 절감하고 지속 가능성 목표를 달성하며 테넌트 환경을 차별화할 수 있었습니다.</p>
+
+
+  <p><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-Digital-Twins-for-smart-buildings-A-look-into-WillowTwin-solution" target="_blank">예정된 IoT 쇼에서</a> Azure Digital Twins를 사용한 Willows&rsquo; 스마트 빌딩 솔루션 및 개발 환경에 대해 자세히 알아보세요.</p>
+
+
+  <h2>RealEstateCore, Idun PropTechOS, Vasakronan 및 YIT는 DTDL을 사용하여 업계 최고의 모델링 및 솔루션을 제공합니다.</h2>
+
+
+  <p>Azure Digital Twins&rsquo; 오픈 모델링 언어인 <a href="https://docs.microsoft.com/en-us/azure/digital-twins/concepts-models" target="_blank">DTDL(Digital Twins Definition Language)</a> 을 사용하면 개발자가 상태 속성, 원격 분석 이벤트, 명령, 구성 요소 및 관계 측면에서 트윈을 설명할 수 있습니다. 결과에 대한 시간을 가속화하기 위해 모든 개발자가 사용할 수 있는 DTDL을 사용하여 스마트 빌딩 온톨로지 개발을 위한 심층적인 산업 전문 지식을 갖춘 <a href="https://www.realestatecore.io/" target="_blank">RealEstateCore</a>와 협력했습니다.</p>
+
+
+  <p>RealEstateCore 도메인 온톨로지와 일치하는 오픈 소스 Smart Buildings DTDL 리포지토리를 출시할 예정입니다. RealEstateCore는 건물을 모델링하고 제어하는 데 사용되는 공용 언어로, 새로운 서비스 개발을 간소화합니다. 온톨로지는 풍부하고 완전하며 입증된 업계 솔루션 및 파트너십에 단순하고 실제 적용 가능성을 제공합니다. RealEstateCore는 특히 새로운 표준이 되는 것을 목표로 하지 않고, 벽돌, Project Haystack 등과 같은 다른 산업 표준과 공통 분모와 다리를 제공합니다. DTDL 기반 RealEstateCore 온톨로지는 빈 페이지에서&rdquo; 개발자를 가속화할 뿐만 아니라 스마트 빌딩의 &ldquo;공급업체 간에 비즈니스 간 통합을 용이하게 합니다. DTDL 기반 온톨로지는 오픈 소스로 제공되므로 개발자는 자체 도메인 전문 지식을 제공하면서 기존 모델에 쉽게 주석을 달 수 있습니다.</p>
+
+
+  <p>RealEstateCore에서 제공하는 한 가지 솔루션은 부동산 소유자가 건물의 지속 가능성, 복지 및 생산성을 분석하고 최적화할 수 있도록 하는 <a href="https://idunrealestate.com/proptechos/?utm_source=blog&amp;utm_medium=article&amp;utm_campaign=Microsoft" target="_blank">Idun ProptechOS</a>입니다. ProptechOS는 174 개의 부동산과 2,470 만 평방 피트의 부동산으로 구성된 스웨덴&rsquo; 최대의 부동산 회사 인 <a href="https://customers.microsoft.com/en-us/story/806971-vasakronan-azure-powerbi-sweden" target="_blank">바사크로난 (Vasakronan</a>)과 핀란드 최대의 핀란드인 및 중요한 북유럽 건설 회사 및 도시 개발자 인 <a href="https://www.yit.fi/en" target="_blank">YIT</a>를 포함하여 대규모의 많은 고객이 사용합니다.</p>
+
+
+  <h2>옥스포드는 표준화된 디지털 트윈 모델링을 사용하여 자산 가치를 창출합니다.</h2>
+
+
+  <p><a href="https://www.oxfordproperties.com/corp" target="_blank">옥스포드</a> 는 4개 대륙, 5개 부문, 1억 평방피트 이상의 부동산에 걸쳐 세계에서&rsquo; 가장 혁신적인 장소에 투자, 개발 및 관리합니다. 옥스포드는 고유한 연령 범위, 산업, 인프라 및 기타 변수로 구성된 고유한 자산 폭을 통해 디지털 트윈을 포함한 다양한 건물 및 플랫폼 기술을 수용하는 것의 중요성을 인식했습니다. 현대화된 건물이 더 가치 있는 자산이라는 강한 믿음에 힘입어 옥스포드는 윌로우가 있는 디지털 트윈 파일럿과 스위치 자동화를 사용한 실시간 건물 성능 최적화를 포함하여 디지털 트랜스포메이션 여정을 계속하고 있습니다.</p>
+
+
+  <p>옥스포드와 같은 다양한 포트폴리오를 갖춘 건물 소유자와 관리자가 건물을 모델링하고 온보딩하는 방식을 간소화하고 표준화하는 것이 중요합니다. DTDL 기반 RealEstateCore 온톨로지는 옥스포드와 윌로우가 목표를 달성할 수 있게 해 줍니다. Willow는 새로운 DTDL 기반 버전의 RealEstateCore 온톨로지 개발에 대한 핵심 협력자였으며 Willow는 WillowTwin 솔루션에서 이러한 모델을 활용하여 한 달에 200시간 이상의 개발자 시간을 절약했습니다.</p>
+
+
+  <p>Oxford는 이미 포트폴리오의 일부에 <a href="https://info.switchautomation.com/hubfs/Switch_Oxford_Case%20Study.pdf" target="_blank">Switch Automation을 배포</a> 하여 건물 시스템, 센서 및 디바이스를 스캔하여 연결을 지속적으로 평가하고 네트워크 무결성을 제어합니다. 성능 데이터 구축에 대한 실시간 인사이트를 통해 Oxford는 운영 및 에너지 비용을 피할 수 있는 연간 100만 달러에 육박하고 있습니다. WillowTwin은 온톨로지용 DTDL 기반 RealEstateCore 모델을 사용하므로 이러한 파트너는 건물의 디지털 트윈 인프라와 원활하게 통합할 수 있습니다.</p>
+
+
+  <p>DTDL 기반 RealEstateCore 통합은 Oxfords&rsquo; 프로젝트에 관련된 여러 다른 Microsoft 파트너를 통해 구현됩니다. 예를 들어 옥스포드는 <a href="https://news.microsoft.com/2020/07/13/samsung-and-microsoft-transform-real-estate-and-smart-property-management/" target="_blank">Microsoft가 삼성과 최근 파트너십을 맺고 상업용 부동산 가치 체인 전반에 걸쳐 의미 있는 새로운 통찰력을 제공할 수 있게&rsquo;</a> 되어 기쁘게 생각하고 있으며, DTDL을 기본 모델링 언어로 사용하여 Samsungs&rsquo; HVAC 시스템, 어플라이언스 및 기타 SmartThings 디바이스의 데이터를 사용합니다. 이 데이터는 Dynamics 365 Field Service와 통합되어 Oxfords&rsquo; 건물 운영 및 유지 관리를 간소화합니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Digital Twins는 스마트하고 연결된 건물의 잠재력을 최대한 발휘하는 열쇠로 입증되었습니다. Microsoft는 IoT를 단순화하고 스마트 빌딩 산업을 위한 파트너 및 솔루션의 시너지 에코시스템을 육성하는 것이 목표이므로 인텔리전트 클라우드 및 인텔리전트 에지 플랫폼에 대한 업계 최고의 기능을 계속 개발할 것입니다. Well&rsquo;은 또한 디지털 <a href="https://www.digitaltwinconsortium.org/" target="_blank">트윈 컨소시엄</a> 의 창립 멤버로서의 역할을 통해 디지털 트윈 사용 사례, 모범 사례 및 온톨로지의 증폭 및 민주화를 모색합니다.</p>
+
+
+  <p>Realcomm | IBcon, 업계의 나머지 부분으로, 확실히 올해 다르게 보이지만 마이크로 소프트는 일어날 발표와 토론에 대한 열정적이다. 수많은 업계 파트너와 함께 2020년 10월 26일부터 28일까지 컨퍼런스&rsquo; 가상 트랙에 참여할 예정입니다. 가상 부스에 들러 매력적인 주제에 대한 발표자 세션에 참석하고 Microsoft에서 제공하는 파트너&rsquo; 성공 사례 연구에 대해 자세히 알아보세요.</p>
+
+
+  <h3>추가 리소스</h3>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/overview/iot/" target="_blank">Azure IoT(사물 인터넷)</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/overview/internet-of-things-iot/iot-technology-protocols/" target="_blank">IoT 기술 및 프로토콜</a></li>
+  </ul>
+
+
+  <h3>사례 연구</h3>
+
+
+  <ul>
+      <li><a href="https://customers.microsoft.com/en-us/story/843823-rxr-realty-reopens-for-business-using-azure-iot" target="_blank">RXR 부동산은 테넌트 안전을 강화하기 위해 Azure IoT 및 지능형 가장자리를 사용하여 비즈니스를 위해 다시 열립니다.</a></li>
+      <li><a href="https://customers.microsoft.com/en-ca/story/830377-citizen-care-pod-health-provider-azure-canada" target="_blank">다학제 팀은 Azure에서 제공하는 COVID-19용 스마트하고 안전한 테스트 Pod를 빌드합니다.</a></li>
+      <li><a href="https://customers.microsoft.com/en-us/story/806971-vasakronan-azure-powerbi-sweden" target="_blank">선도적인 부동산 회사가 에너지 사용을 제어합니다.</a></li>
+      <li><a href="https://customers.microsoft.com/en-us/story/806028-bentley-systems-partner-professional-services-azure" target="_blank">Bentley Systems는 Azure Digital Twins와의 글로벌 생산성 격차를 해소하는 데 도움이 됩니다.</a></li>
+      <li><a href="https://customers.microsoft.com/en-us/story/795283-ansys-partner-professional-services-azure" target="_blank">엔지니어링 시뮬레이션 거대 기업인 Ansys는 Azure Digital Twins를 사용하여 가치와 기회를 창출합니다.</a></li>
+      <li><a href="https://customers.microsoft.com/en-us/story/790031-bosch-building-technologies-smart-spaces-azure" target="_blank">Bosch는 Azure Digital Twins를 사용하여 연결된 빌드 솔루션을 사용하여 에너지 효율 제품을 확장합니다.</a></li>
+      <li><a href="https://customers.microsoft.com/story/steelcase-manufacturing-azureiot-en" target="_blank">Steelcase는 새로운 IoT-Powered 솔루션을 사용하여 스마트하고 연결된 작업 공간을 보여 줍니다.</a></li>
+      <li><a href="https://customers.microsoft.com/story/pcl-construction-professional-services-azure" target="_blank">PCL Construction은 Azure와 함께 IoT를 사용하여 건설 산업에 혁명을 일으켰습니다.</a></li>
+      <li><a href="https://customers.microsoft.com/story/iconics-partner-professional-services-azure-iot" target="_blank">ICONICS는 Azure Digital Twins를 사용하여 스마트 빌딩을 더욱 스마트하게 만듭니다.</a></li>
+      <li><a href="https://customers.microsoft.com/en-us/story/thyssenkrupp-manufacturing-azure-iot" target="_blank">thyssenkrupp는 디지털 트윈 기술을 갖춘 지능형 건물의 토대를 마련합니다.</a></li>
+      <li><a href="https://customers.microsoft.com/en-us/story/essity-professional-services-azure" target="_blank">청소 및 위생 리더 Essity는 Azure Digital Twins를 사용하여 고객이 뛰어난 서비스를 제공할 수 있도록 지원합니다.</a></li>
+      <li><a href="https://customers.microsoft.com/en-us/story/macdonald-miller-professional-services-dynamics-365-azure-powerbi-blog" target="_blank">클라우드를 사용하여 스마트 빌딩 빌드 및 유지 관리</a></li>
+      <li><a href="https://customers.microsoft.com/en-us/story/sagegreenlife-smart-spaces-azure-cradlepoint" target="_blank">Sagegreenlife는 사용하기 쉬운 IoT 솔루션으로 살아있는 벽을 녹색으로 유지합니다.</a></li>
+  </ul>
+
+
+  <h3>백서 및 문서</h3>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/resources/creating-intelligent-spaces/" target="_blank">스마트 빌딩 변환을 가속화하는 지능형 SpacesFive</a>&mdash; 전략 만들기</li>
+      <li>하버드 비즈니스 <a href="https://azure.microsoft.com/resources/create-smart-spaces-with-azure-digital-twins/" target="_blank">ReviewData 기반 작업 공간&mdash; IoT 및 AI 스마트 빌딩의 약속을 확장</a>&mdash;</li>
+  </ul>

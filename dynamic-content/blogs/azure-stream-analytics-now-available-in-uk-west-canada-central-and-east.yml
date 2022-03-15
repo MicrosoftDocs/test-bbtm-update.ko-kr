@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 160afe3998a007f59fa80c80e08f536104faffde
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901358"
+Slug: azure-stream-analytics-now-available-in-uk-west-canada-central-and-east
+Title: 이제 영국 서부, 캐나다 중부 및 동부에서 Azure Stream Analytics를 사용할 수 있습니다.
+Summary: 더 높은 성능을 가능하게 하고 데이터 위치에 대한 고객 요구 사항을 지원하기 위한 지속적인 노력의 일환으로, 이제 영국 서부, 캐나다 중부 및 캐나다 동부의 3개 추가 지역에서 Azure Stream Analytics를 사용할 수 있음을 발표하게 되어 기쁘게 생각합니다.
+Content: >-
+  <p>더 높은 성능을 구현하고 데이터 위치에 대한 고객 요구 사항을 지원하기 위한 지속적인 노력의 일환으로, 이제 영국 서부,&rsquo; 캐나다 중부 및 캐나다 동부의 3개 추가 지역에서 Azure Stream Analytics를 사용할 수 있음을 발표하게 되어 기쁘게 생각합니다.</p>
+
+
+  <p>이 발표를 통해 Stream Analytics는 이제 전 세계 26개 Azure 지역에서 사용할 수 있습니다. 로컬 가격 책정에 대한 자세한 내용은 <a href="https://azure.microsoft.com/pricing/details/stream-analytics/">Azure Stream Analytics</a> 가격 책정 웹 페이지를 참조하세요.</p>
+
+
+  <p>Azure Stream Analytics는 고객이 언어와 같은 간단한 SQL 사용하여 여러 데이터 스트림에서 대규모 병렬 실시간 분석을 쉽게 개발하고 실행할 수 있도록 구축된 서버리스 스케일 아웃 작업 서비스입니다. 예를 들어, 최근의 <a href="https://customers.microsoft.com/story/sky-alert">사례 연구는</a> SkyAlert가 다른 Azure 서비스와 함께 Azure Stream Analytics를 활용하여 자연 재해가 발생할 경우 많은 소중한 생명을 구할 수 있는 최대 2분 전에 임박한 지진에 대해 시민들에게 경고하는 조기 경고 시스템을 구축하는 방법을 보여줍니다.</p>
+
+
+  <p>Azure Stream Analytics를 새로운 기능으로 사용하시겠습니까? 이 단계별 <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-build-an-iot-solution-using-stream-analytics">가이드</a>에 따라 첫 번째 Stream Analytics 애플리케이션을 빌드하는 방법을 알아봅니다.</p>

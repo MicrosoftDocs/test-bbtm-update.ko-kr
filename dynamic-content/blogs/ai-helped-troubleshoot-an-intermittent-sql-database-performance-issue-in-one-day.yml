@@ -1,0 +1,123 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 610bc363a6876c164d0c41c739b54301c88624e0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902360"
+Slug: ai-helped-troubleshoot-an-intermittent-sql-database-performance-issue-in-one-day
+Title: AI는 하루 만에 일시적인 SQL Database 성능 문제를 해결하는 데 도움이 됩니다.
+Summary: '이 블로그 포스트에서는 인텔리전트 Insights Azure SQL Database 지능형 성능 기능이 고객이 하루만에 6개월 간헐적인 데이터베이스 성능 문제를 해결하는 데 어떻게 도움이 되었는지 알아봅니다. '
+Content: >-
+  <p>이 블로그 포스트에서는 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-intelligent-insights" target="_blank">인텔리전트</a> Insights Azure SQL Database 지능형 성능 기능이 고객이 하루만에 6개월 간 간헐적인 데이터베이스 성능 문제를 해결하는 데 어떻게 도움이 되었는지 알아봅니다. 지능형 Insights ISV가 데이터베이스 함대에서 관련 성능 문제를 식별하여 60,000개의 데이터베이스를 운영하는 데 어떻게 도움이 되는지 알아보세요. 또한 인텔리전트 Insights 대규모 35TB 데이터베이스 플릿에서 성능 저하 문제를 해결하기 어려운 문제를 원활하게 식별하는 데 어떻게 도움이 되었는지도 알아봅니다.</p>
+
+
+  <p>가장 지능적인 클라우드 데이터베이스인 Azure SQL Database 중소기업과 대기업이 뛰어난 애플리케이션을 작성하는 데 집중할 수 있도록 하는 한편, 최소한의 인간 상호 작용 또는 고급 기술 세트가 필요한 상태에서 Azure에서 실행, 크기 조정 및 최고 성능을 자율적으로 처리하도록 위임합니다.</p>
+
+
+  <p>인텔리전트 Insights AI(인공 지능)의 기능을 활용하여 정확한 정확도로 Azure SQL Database 성능 문제를 지속적으로 모니터링하고 해결하는 새로운 파괴적인 지능형 성능 기술입니다. 수백만 개의 Azure SQL Database의 대규모 워크로드 풀에서 학습을 기반으로 미세 조정되고 고급화된 솔루션에 대한 성능 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-intelligent-insights-troubleshoot-performance" target="_blank">문제 해결 모델</a>입니다.</p>
+
+
+  <p>2017년 9월 공개 프리뷰 데뷔 이후, 인텔리전트 Insights 함께 공유하려는 놀라운 고객 성공 사례를 목격했습니다.</p>
+
+
+  <h2>찾기 어려운 간헐적인 SQL Database 성능 문제 해결</h2>
+
+
+  <p><a href="https://neworbit.co.uk/" target="_blank">NewOrbit</a> 은 직원 및 테넌트의 신원 조회 시스템을 포함하여 신생 기업 및 기업을 위해 Azure에서 소프트웨어를 빌드하고 실행하는 영국에 본사를 둔 ISV입니다. 수천 명의 고객이 매년 400,000명 이상의 사용자를 확인하고 시스템은 다양한 서비스의 정보를 통합하여 이를 수행합니다. NewOrbit는 Azure에서 전적으로 실행되며 약 200개의 SQL 데이터베이스를 사용합니다. NewOrbit에는 개발자 및 고객 계정 관리자로만 구성된 평평한 조직 구조가 있습니다. NewOrbit CTO Frans Lytzen이 Azure를 가지고&rdquo; 있다고 말&ldquo;하므로 SQL Database 기본 제공 인텔리전스를 사용하여 데이터베이스 성능을 자동으로 조정하고 문제를 해결하기 때문에 DevOps 팀 또는 DBA를 사용하지 않습니다.</p>
+
+
+  <p>NewOrbit은 약 6개월 동안 지속되는 일시적인 성능 문제를 경험하여 프로덕션 환경에서 실행되는 기존 시스템에 대한 시간 제한을 증가시켰습니다. 그들의 첫 번째 반응은 더 많은 용량을 가진 Azure에서 더 높은 가격 책정 계층으로 업그레이드하는 것이었습니다. 그러나 이것은 도움이되지 않았고 그들에게 매우 이상한 것처럼 보였습니다. &rsquo;Azure 구독에서 충분한 예비 DTU를 보았을 때 NewOrbit는 용량을 전화 걸면 문제가 사라지지 않는다는 것을 즉시 이해했습니다.</p>
+
+
+  <p>NewOrbit는 지능형 Insights 시도하기로 결정했습니다. 솔루션을 실행하자마자 데이터베이스에 메모리 압력이 있는 것으로 나타났습니다. 이것은 즉시 명확하지 않았고 NewOrbit는 메모리 압력이 원인이 아니라 다른 근본적인 문제의 영향일 가능성이 높다는 것을 이해했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d383494b-e8f2-4b32-a450-1eb5755f174d.png"><img alt="image_000" border="0" height="622" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fba91a9f-1d3b-458b-a937-9e8eab00676a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="image_000" width="977"></a></p>
+
+
+  <p>지능형 Insights 켜진 지 하루 만에 메모리 압력의 근본 원인으로 의심되는 여러 쿼리가 있음을 지적했습니다. NewOrbit은 즉시 수정하고 다음 날 메모리 압력이 즉시 감소하는 것을 목격하는 새 쿼리를 프로덕션에 배포했습니다.</p>
+
+
+  <p><em>&ldquo;이전에는 약 6개월 동안 성능 문제가 발생했습니다. 지능형 Insights 이전에는 문제 해결을 시작할 위치를 파악할 방법이 없었습니다. 지능형 Insights 할 일 목록을 제공했습니다. Intelligent Insight가 하는 일은 문제가 있는 위치를 정확히 파악하고 24시간 내에 수정 사항을 배포할 수 있다는 것입니다.&rdquo;</em></p>
+
+
+  <p align="right">Frans Lytzen, CTO, NewOrbit.</p>
+
+
+  <p>NewOrbit이 서비스로 성장함에 따라 데이터베이스와 쿼리가 점점 더 커지고 복잡성이 증가합니다. 이제 지능형 Insights 사용하여 애플리케이션의 최상의 성능을 위해 데이터베이스 쿼리를 정기적으로 검토하고 최적화하는 지속적인 개선 프로그램을 구현했습니다.</p>
+
+
+  <h2>60,000개의 SQL 데이터베이스에서 성능 문제 식별</h2>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-implementation-snelstart" target="_blank">SnelStart</a> 는 부기, 청구서 및 회계와 같은 금융 온라인 서비스를 제공하는 중소기업을 위한 SaaS 서비스를 개발하고 실행하는 네덜란드 ISV입니다. SnelStart는 Azure를 사용하여 약 64,000명의 고객에게 서비스를 제공합니다. 기본 인프라는 주로 탄력적 풀에서 60,000개 이상의 SQL 데이터베이스를 사용합니다. 대규모로 대량의 데이터베이스를 유지 관리하고 특히 서비스 성능 저하 또는 중단의 경우 고객 문제에 신속하게 대응하는 것은 SnelStart에 필수적입니다.</p>
+
+
+  <p>이러한 많은 양의 데이터베이스를 유지 관리하려면 일반적으로 대규모 DBA 및 DevOps 팀이 포함됩니다. 고객이 서비스가 느리거나 사용할 수 없다고 불평하는 전화를 받으면 SnelStart 팀은 신속하게 문제를 식별하고 해결에 대해 조치를 취해야 합니다. 이 회사는 고객의 성능 또는 사용 불가 문제에 대해 먼저 알게 될 수 있는 여러 사례를 가지고 있었습니다. 응답 시간을 개선하기 위해 SnelStart는 지능형 Insights 성능 모니터링 도구로 사용하기로 결정했습니다.</p>
+
+
+  <p>SnelStart는 매일 솔루션을 사용하여 CPU 제한에 도달하는 탄력적 풀을 식별합니다. 기본 제공 인텔리전스를 통해 회사는 사용량이 많은 탄력적 풀에서 가장 많이 사용되는 데이터베이스를 식별하여 핫 데이터베이스를 이동할 수 있는 충분한 용량의 다른 탄력적 풀에 대한 제안을 제공합니다. SnelStart는 DevOps 전략으로 사용량이 많은 데이터베이스를 이동하는 각 논리 서버에 별도의 탄력적 풀을 만들었습니다. 이를 통해 회사는 복구될 때까지 <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-azure-sql" target="_blank">Azure SQL Analytics</a>의 도움을 받아 실행 속도가 느린 쿼리 및 기타 데이터베이스 문제를 연구할 수 있습니다. 핫 데이터베이스의 성능이 향상되면 SnelStart는 일반적으로 원래 탄력적 풀로 다시 반환합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb074cfc-683d-47f4-af35-603cf729ef2b.png"><img alt="image_002" border="0" height="448" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a8d922da-0a18-4afb-9252-19f42d316f7a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="image_002" width="1085"></a></p>
+
+
+  <p>인텔리전트 Insights 도움을 받아 SnelStart는 인스턴스 중 하나에서 개발자가 문제의 근본 원인을 수동으로 해결하기 훨씬 전에 데이터베이스 잠금을 유발하는 애플리케이션 쿼리를 신속하게 식별할 수 있었습니다. 문제에 대한 핫픽스는 몇 분 내에 배포되었고 고객이 대규모로 영향을 받았습니다. 더 나은 아직, 서비스 성능에 대해 수신 된 고객 전화 통화가 없었다.</p>
+
+
+  <p>서비스 모니터링이 반응형에서 SQL Database 기본 제공 지능형 성능에 대한 사전 대응으로 전환됨에 따라 이는 회사에 완전히 새로운 유형의 기능이었습니다.</p>
+
+
+  <p><em>&ldquo;지능형 Insights 보다 효율적이고 훨씬 빠르게 데이터베이스 성능 문제를 사전에 찾습니다. 이를 통해 문제에 대한 수정이 있을 때까지 고객을 사전에 도울 수 있습니다.&rdquo;</em></p>
+
+
+  <p align="right">Bauke Stil, Application Manager, SnelStart.</p>
+
+
+  <p>SnelStart는 60,000개의 SQL 데이터베이스에서 데이터베이스 성능 문제를 자동으로 감지하는 효율성에 깊은 인상을 받았습니다. 모든 고객 데이터베이스가 동일한 구조를 가지기 때문에 회사는 솔루션을 사용하여 전체 데이터베이스에서 일반적인 성능 문제를 식별하고 해결합니다. 한 데이터베이스에서 문제가 확인되면 모든 SnelStart 고객에게 즉시 혜택을 주는 핫픽스가 모든 데이터베이스에 배포됩니다.</p>
+
+
+  <h2>대규모 35TB SQL Database 플릿에서 잠금 문제 찾기</h2>
+
+
+  <p><a href="https://visualstudio.microsoft.com/tfs/" target="_blank">Microsoft TFS</a> 는 개발자 커뮤니티 및 고객을 지원하는 온라인 서비스를 제공합니다. 고객 기반에서 수조 줄의 코드를 처리하는 복잡한 시스템입니다. 이 서비스는 정교한 보고, 빌드, 랩, 테스트, 티켓팅, 릴리스 자동화 관리 및 프로젝트 관리를 &ndash; 제공합니다. TFS에는 24/7/365 서비스를 전역적으로 최고 성능으로 제공하는 것이 중요합니다. 코드를 체크 인하려면 클릭하거나 TFS 티켓을 만드는 경우 서비스의 프롬프트 응답이 예상됩니다. TFS 대규모 인프라는 35TB의 데이터가 저장된 약 900개의 SQL 데이터베이스에서 실행됩니다.</p>
+
+
+  <p>TFS는 이전에 느린 쿼리와 지속적인 높은 CPU 기간을 관찰할 수 있는 자체 모니터링 및 경고 솔루션을 사용했습니다. 한 가지 경우에서 기존 도구는 데이터베이스에 과도한 잠금이 있다는 얕은 분석만 제공하는 성능 문제를 확인했지만 다른 것은 없습니다. 추가 문제 해결을 통해 잠금 범위가 테이블로 지정되었으며 잠금 분할과 관련이 있는 것으로 나타났습니다. 즉, 통계에서 표시되는 영향을 받는 느린 쿼리는 일반적으로 잠금의 근본 원인이 아니라 잠금을 유발하는 다른 차단 쿼리의 표면 효과일 뿐입니다. 이러한 경우 워크로드는 계속 쌓여 있으므로 더 큰 리소스 풀로 업그레이드하는 것은 수명이 짧은 솔루션일 뿐입니다. 이 문제를 해결하는 유일한 방법은 차단 쿼리를 찾고 수정하는 것이었습니다.</p>
+
+
+  <p>이와 같은 경우의 문제 해결은 일반적으로 매우 어렵기 때문에 상당한 DBA 기술이 필요하고 시간이 많이 걸리기 때문에 문제가 해결됩니다. TFS는 성능 문제 해결 자동화에 도움이 되도록 지능형 Insights 설정했습니다. 이 특별한 경우 시스템은 워크로드가 쌓이는 애플리케이션 관련 증가를 식별하고 영향을 받는 쿼리 및 차단 쿼리 목록을 제공했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c6bb9ff-07bc-40b6-a0d5-abbb8f7a85ae.png"><img alt="image_003" border="0" height="382" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/63f54d00-ffce-4beb-b91c-9be439ad05c1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="image_003" width="974"></a></p>
+
+
+  <p>차단 쿼리를 분석한 결과 사용하지 않는 첨부 파일을 제거하기 위해 주기적으로 예약된 유지 관리 쿼리임을 확인했습니다. 코드를 추가로 분석한 결과 삭제 일괄 처리의 크기가 너무 커서 문제가 발생한 것으로 확인되었습니다. 일괄 처리 크기가 줄어드는 새 쿼리가 즉시 배포되어 과도한 잠금을 해결하고 워크로드 압력을 점진적으로 완화할 수 있습니다.</p>
+
+
+  <p>TFS 요구 인프라를 유지 관리하려면 작업에 가장 적합한 Microsoft 엔지니어가 필요합니다. Microsoft에서 최고의 SQL 성능 문제 해결사 중 하나인 TFS의 수석 소프트웨어 엔지니어인 Remi Lemarchand와 함께 바를 만났습니다.</p>
+
+
+  <p><em>&ldquo;지능형 Insights 데이터베이스 성능 문제를 찾는 데 큰 도움이 됩니다. 나는 항상 바로 그 자리에서 찾을 수 있습니다!&rdquo;</em></p>
+
+
+  <p align="right">Remi Lemarchand, 수석 소프트웨어 엔지니어, Microsoft TFS.</p>
+
+
+  <p>Remi는 제공된 깊이 수준 및 필요한 수동 DBA 문제 해결 시간을 상당히 줄이면서 다른 도구로 이동하기 전에 먼저 데이터베이스 성능 문제를 해결하는 데 지능형 Insights 사용하는 것을 선호한다고 결론을 내립니다. 차단 쿼리에 수정 사항을 적용했기 때문에 데이터베이스가 잘 정리되고 있습니다!</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>AI와 Azure SQL Database 결합하면 이전에는 불가능했던 지능형 성능의 새로운 기능이 중단되었습니다. 이제 중소기업은 소규모 승무원을 통해 대규모로 Azure를 사용하여 더 많은 작업을 수행할 수 있으며 자체적으로 인프라를 실행하는 데 비해 훨씬 낮은 비용으로 더 많은 작업을 수행할 수 있습니다. 대기업과 기업은 DBA의 부담이 적고 DBA 및 DevOps 대한 압박을 완화할 수 있습니다. SQL Database 지능형 성능은 경우에 따라 수개월에 비해 하루에 수만 개의 데이터베이스에서 운영 문제를 식별하는 데 도움이 될 수 있습니다.</p>
+
+
+  <p>성능 문제를 해결하기 위해 SQL Database Intelligent Insights 사용하기 시작하려면 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-intelligent-insights" target="_blank">Log Analytics를 사용하여 지능형 Insights 설정을 참조하세요</a>.</p>
+
+
+  <p>관련 SQL Database 지능형 성능 제품은 <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-azure-sql" target="_blank">Azure SQL Analytics를 사용하여 Azure SQL 데이터베이스 모니터링</a> 및 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automatic-tuning" target="_blank">Azure SQL Database 자동 조정을</a> 참조하세요.</p>
+
+
+  <p>인텔리전트 성능을 어떻게 구상할 SQL Database 알려주세요.</p>

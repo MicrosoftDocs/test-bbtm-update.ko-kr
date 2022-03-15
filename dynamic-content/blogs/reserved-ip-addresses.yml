@@ -1,0 +1,133 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2daed2c8e7392a064b70fb06f64f1b683ed7329e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908015"
+Slug: reserved-ip-addresses
+Title: Cloud Services & Virtual Machines에 대한 예약된 IP 주소
+Summary: 이 블로그 게시물에서는 Cloud Services Virtual Machines를 사용하여 예약된 IP 기능의 활기를 안내합니다 &amp; .
+Content: >-
+  안녕하세요 모두!
+
+
+  2014년 5월 12일부터 Cloud Services &amp; Virtual Machines에 대한 예약된 IP 주소의 일반 공급에 대해 발표하게 되어 매우 기쁩니다. 이 블로그 게시물에서는 예약된 IP를 관리하고 Cloud Services/Virtual Machines와 연결하여 지원되지 않는 몇 가지 시나리오의 가격 책정 환경을 &amp; 안내합니다. 예약 IP에 대한 기술 설명서는 여기에서 확인할 수 있습니다.
+
+  <h2>예약된 IP 주소란 무엇이며 언제 필요합니까?</h2>
+
+  최신 PowerShell 릴리스에서는 Microsoft Azure Azure 구독에서 공용 IPv4 주소를 예약할 수 있습니다. 구독에서 원하는 만큼 이러한 IP 주소를 소유하고 예약된 IP 주소 지역의 클라우드 서비스 배포와 연결할 수도 있습니다. 이 새로운 발표는 특히 공용 IP 주소에 초점을 맞추고 있습니다. 플랫폼은 <a href="https://azure.microsoft.com/blog/2014/04/22/static-internal-ip-address-for-virtual-machines/">이미 여기에</a> 설명된 대로 내부 IP 예약을 지원합니다.
+
+
+  예약된 IP 주소가 필요한 몇 가지 이유가 있습니다.
+
+  <ul>
+   <li><b>쉬운 A-레코드 DNS: </b> VM을 삭제하고 종료한 후 동일한 공용 IP를 유지 관리하므로 다시 시작할 때 IP에 따라 DNS 또는 다른 애플리케이션을 새로 할당된 IP로 다시 프로그래밍할 필요가 없습니다.</li>
+   <li><b>온-프레미스 연결 보안:</b> 이제 공용 IP를 활용하지만 프록시/방화벽 온-프레미스를 통해 액세스를 제어하고 ACL로 제어하여 엔터프라이즈 네트워크에서 Azure 서비스에 대한 액세스를 제공할 수 있습니다. 이제 VM을 시작하고 중지할 때마다 다시 프로그래밍하는 것에 대해 걱정할 필요가 없습니다.</li>
+  </ul>
+
+  다음 이미지는 VIP(예약된 IP)에 대한 IP 예약의 IP 예약이 작동하는 방법을 보여 줍니다. Azure는 지역 범위에서 예약된 IP를 제공합니다. 즉, 예약된 IP는 역할 인스턴스 크기를 사용하는 클라우드 서비스와의 연결에 사용할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/05/reservedip.png"><img style="float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; padding-right: 0px; margin-right: auto; border-width: 0px;" title="reservedip" alt="reservedip" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/reservedip_thumb.png" width="472" height="480" border="0" /></a>
+
+  <h2>Microsoft Azure IP 주소를 예약하는 방법</h2>
+
+  이번 주부터 Azure <a href="https://azure.microsoft.com/en-us/documentation/articles/install-configure-powershell/">PowerShell cmdlet</a> 또는 <a href="https://msdn.microsoft.com/en-us/library/azure/dn722420.aspx">REST API</a> 를 사용하여 Azure 구독에서 예약된 IP 주소를 만들 수 있습니다. 다음을 제외한 모든 지역에서 IP 주소를 예약할 수 있습니다. 곧 이러한 지역에서 지원을 추가할 예정입니다.
+
+  <ul>
+   <li>브라질(미리 보기)</li>
+   <li>중국 동부</li>
+   <li>중국 북부</li>
+  </ul>
+
+  플랫폼은 관리 포털을 통해 예약된 IP 주소 만들기를 지원하지 않습니다. PowerShell cmdlet을 사용하여 예약된 IP 주소를 만드는 샘플은 다음과 같습니다.
+
+  <div align="left">
+
+  <pre class="prettyprint">New-AzureReservedIP – ReservedIPName “MyWebsiteIP” –Label “WebsiteIP” –Location “Japan West”</pre>
+
+  </div>
+
+  플랫폼은 기존 Cloud Services 또는 가상 머신의 IP 주소 예약을 지원하지 않습니다. 우리는 가까운 장래에 이것에 대한 지원을 발표 할 것으로 예상된다.
+
+  <h2>Virtual Machines에서 예약된 IP 주소를 사용하려면 어떻게 하나요?</h2>
+
+  구독에 예약된 IP가 만들어지면 예약된 IP를 사용하여 Virtual Machine 배포를 만들 수 있습니다. 다음은 New-AzureVM PowerShell cmdlet에서 예약된 IP를 사용하는 방법의 샘플입니다.
+
+  <pre class="prettyprint">New-AzureVMConfig -Name "WebAppVM" -InstanceSize Small -ImageName $images[130].ImageName | Add-AzureProvisioningConfig -Windows -AdminUsername $username -Password $password | New-AzureVM -ServiceName "MaheshWebApp" -ReservedIPName "MyWebSiteIP" -Location "Japan West"</pre>
+
+  강조 표시하려는 두 가지 주요 시나리오가 있습니다.
+
+  <ul>
+   <li><b>VM 종료 -</b> 이전에는 모든 Virtual Machine 인스턴스가 종료 상태로 이동되면 공용 IP가 해제되고 Virtual Machines 인스턴스 중 하나가 시작될 때 새 공용 IP가 할당됩니다. 그러나 이 릴리스에서는 VM에 예약된 IP가 사용되면 VM을 재배포할 때 예약된 IP가 사용될 수 있습니다.</li>
+   <li><b>VM </b>- 삭제 예약된 IP를 사용하던 모든 Virtual Machines를 삭제하면 예약된 IP는 해당 지역의 향후 VM 배포에 사용할 수 있도록 구독에서 계속 예약됩니다.</li>
+  </ul>
+
+  여기에서 Virtual Machine REST API 설명서를 참조할 수 <a href="https://msdn.microsoft.com/en-us/library/azure/jj157194.aspx">있습니다</a>.
+
+  <h2>Cloud Services(웹/작업자 역할)에서 예약된 IP 주소를 사용하려면 어떻게 하나요?</h2>
+
+  또한 동시에 클라우드 서비스(웹/작업자) 배포에서 예약된 IP를 사용하기 위한 지원을 발표하고 있습니다.Cloud Services에서 예약된 IP를 사용하려면 SDK 2.3 버전(2014년 4월 릴리스)을 다운로드해야 합니다. 다음은 CSCFG(서비스 구성 스키마)에서 예약된 IP를 참조하는 방법에 대한 샘플입니다.
+
+  <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+
+  &lt;ServiceConfiguration serviceName="ReservedIPSample" xmlns="" osFamily="4" osVersion="*" schemaVersion="2014-01.2.3"&gt;
+    &lt;Role name="WebRole1"&gt;
+      &lt;Instances count="1" /&gt;
+      &lt;ConfigurationSettings&gt;
+        &lt;Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" /&gt;
+      &lt;/ConfigurationSettings&gt;
+    &lt;/Role&gt;
+    &lt;NetworkConfiguration&gt;
+      &lt;AddressAssignments&gt;
+        &lt;ReservedIPs&gt;
+         &lt;ReservedIP name="MyWebSiteIP"/&gt;
+        &lt;/ReservedIPs&gt;
+      &lt;/AddressAssignments&gt;
+    &lt;/NetworkConfiguration&gt;
+  &lt;/ServiceConfiguration&gt;</pre>
+
+  웹/작업자 역할 배포가 삭제되면 배포와 연결된 예약 IP를 구독에서 사용할 수 있으며 동일한 지역의 향후 배포에 사용할 수 있습니다.
+
+  <h2>구독에서 예약된 IP 주소를 해제하려면 어떻게 하나요?</h2>
+
+  배포와 연결되지 않은 예약된 IP 주소(VM 및 클라우드 서비스 모두)에는 청구 비용이 발생하므로 필요하지 않은 IP 주소를 해제하는 것이 좋습니다. 예약 IP 청구에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/reserved-ip-addresses/">여기에서</a> 확인할 수 있습니다. 구독에서 예약된 IP를 해제하는 방법을 보여 주는 PowerShell cmdlet은 다음과 같습니다.
+
+  <div align="left">
+
+  <pre class="prettyprint">Remove-AzureReservedIP -ReservedIPName "MyWebSiteIP" -Force</pre>
+
+  </div>
+
+  <h2>예약된 IP 주소 및 선호도 그룹 기반 가상 네트워크</h2>
+
+  현재 Microsoft Azure 예약된 IP와 연결된 클라우드 서비스 또는 Virtual Machine을 '선호도 그룹 기반 Virtual Network'에 배포하는 것을 지원하지 않습니다. 다음 코드 조각에서는 예약된 IP를 사용하여 Virtual Machine 배포를 '선호도 그룹 기반 VNET'에 배포하려고 할 때 얻을 수 있는 샘플 오류 메시지를 보여 줍니다.
+
+  <pre class="prettyprint">New-AzureVM : BadRequest : The deployment contains VirtualNetwork DemoVNET that belongs to an Affinity Group and ReservedIP that belongs to a region. This combination is not allowed.</pre>
+
+  <h2>예약된 IP 주소 및 지역 가상 네트워크</h2>
+
+  이 릴리스에서는 지역(위치 기반) Virtual Network에 대한 지원도 발표합니다. <a href="https://azure.microsoft.com/blog/2014/05/14/regional-virtual-networks/">자세한 내용은 블로그</a>에서 확인할 수 있습니다. Microsoft Azure 예약된 IP와 연결된 클라우드 서비스 또는 Virtual Machine을 위치 기반 Virtual Network에 배포하는 것을 지원합니다.
+
+  <h2>예약된 IP 주소 가격 책정</h2>
+
+  IPv4 주소는 리소스가 매우 부족하므로 Microsoft Azure 몇 가지 상황에서 IP 주소에 대한 명목 가격을 청구합니다. 예약된 IP 가격 책정 및 청구 FAQ에 대한 자세한 내용은 여기를 참조 <a href="https://azure.microsoft.com/en-us/pricing/details/reserved-ip-addresses/">하세요</a>. 클라우드 서비스에는 하나 이상의 실행 중인 웹/작업자 또는 Virtual Machine 인스턴스가 있어야 합니다.
+
+
+  청구서에 예약 IP와 관련된 두 엔터티가 표시됩니다.
+
+  <ul>
+   <li>예약된 IP 주소 시간 – 구독의 예약 IP가 있는 총 시간
+  <ul>
+   <li>실행 중인 인스턴스와 배포(VM 또는 클라우드 서비스)와 연결되지 않음(또는)</li>
+   <li>구독에서 추가 예약 IP 주소를 사용하고 있었습니다.</li>
+  </ul>
+
+  </li>
+   <li>예약된 IP 다시 매핑 – IP 주소가 새 클라우드 서비스와 연결될 때마다 다시 매핑으로 간주됩니다. 예약된 IP 가격 책정 페이지에서 다시 매핑 가격 책정에 대한 자세한 내용은 여기를 참조 <a href="https://azure.microsoft.com/en-us/pricing/details/reserved-ip-addresses/">하세요</a>.</li>
+  </ul>
+
+  <h2>예약된 IP 주소 구독 제한</h2>
+
+  모든 Azure 구독은 5개의 예약 IP를 사용할 권한이 있습니다. 그러나 여기에서 지원 요청을 로깅하여 구독에 대한 예약된 IP 제한 증가를 요청할 수 <a href="https://azure.microsoft.com/en-us/support/faq/">있습니다</a>. Azure 구독 제한 설명서는 <a href="https://azure.microsoft.com/en-us/documentation/articles/azure-subscription-service-limits/">여기</a>를 참조하세요.

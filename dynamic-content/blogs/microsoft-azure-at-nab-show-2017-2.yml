@@ -1,0 +1,99 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fd20d987ca49de4a730d124329ae2b7d2d5bee0e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907720"
+Slug: microsoft-azure-at-nab-show-2017-2
+Title: NAB 쇼 2017에서 Microsoft Azure
+Summary: 클라우드 컴퓨팅은 전 세계를 변화시키고 있으며 미디어 산업의 디지털 혁신에 힘을 실어주고 있습니다.
+Content: >-
+  <p>클라우드 컴퓨팅은 전 세계를 변화시키고 있으며 미디어 산업의 디지털 혁신에 힘을 실어주고 있습니다. 대규모 및 소규모 기업이 새로운 OTT(Over-The-Top) 비디오 서비스, 풍부한 미디어가 있는 웹 및 모바일 애플리케이션을 출시하든, 최신 미디어 AI 기술을 사용하여 콘텐츠 검색을 향상시키고 더 심층적인 사용자 참여를 유도하는 인사이트를 활용하든, 디지털 변환 요구 사항에 맞게 Azure를 선택하는 중요한 모멘텀을 보게 되어 기쁩니다.</p>
+
+
+  <p>올해 NAB Show 2017에서는 Microsoft Azure 미디어 산업&rsquo; 요구 사항을 충족하는 신뢰할 수 있는 글로벌 규모의 클라우드인 이유를 소개하고 있습니다. 그 핵심은 고객이 끊임없이 진화하는 요구를 충족하기 위해 지난 몇 개월 동안 출시하거나 출시한 새로운 혁신과 향상된 기능입니다.</p>
+
+
+  <h2>인코딩 서비스 향상</h2>
+
+
+  <p>고객 피드백에 응답하기 위해 다음을 포함하는 인코딩 서비스를 크게 개선했습니다.</p>
+
+
+  <ul>
+      <li><strong>할인된 가격 책정 및 분당 청구:</strong> 일반적인 경우 가격을 절반으로 줄이는 처리된 GB&rsquo; 대신 출력 분을 기반으로 하는 새로운 가격 책정 모델을 시작했습니다. 이제 고객은 <a href="https://docs.microsoft.com/en-us/azure/media-services/media-services-autogen-bitrate-ladder-with-mes">콘텐츠 적응형 인코딩</a>에 서비스를 사용할 수 있습니다. 여기서 인코더는 각 입력 비디오에 최적화된 비트 전송률 사다리&rsquo;를 생성&lsquo;합니다. <a href="https://azure.microsoft.com/en-us/blog/encoding-with-media-services-everything-you-need-to-know-about-new-pricing-model/">새 가격 책정 모델에</a> 대해 자세히 알아보세요.</li>
+      <li><strong>자동 크기 조정 용량:</strong> 이제 서비스는 워크로드를 모니터링하고 리소스를 자동으로 확장 또는 축소하여 필요할 때 향상된 동시성/처리량을 제공할 수 있습니다. Azure Functions 및 Azure Logic Apps 결합하여 대규모로 사용자 지정 미디어 워크플로를 신속하게 빌드, 테스트 및 배포할 수 있습니다. 이 기능은 미리 보기로 제공됩니다. 자세한 내용은 문의 amsved@microsoft.com 하세요.</li>
+      <li>이제 <strong>DTS-HD</strong> 서라운드 사운드를 Premium 인코더에서 콘텐츠 만들기 및 연결된 디바이스로 스트리밍 배달할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>미디어 분석</h2>
+
+
+  <p>얼굴 및 감정 감지, 동작 감지, 비디오 OCR, 비디오 요약, 콘텐츠 조정 및 오디오 인덱싱을 포함하는 미디어 분석 제품군이 늘어나면서 다음과 같은 새로운 기능을 추가하게 되어 기쁩니다.</p>
+
+
+  <ul>
+      <li><strong>Azure Media Video Annotator의 프라이빗 미리 보기: 비디오의</strong> 개체(예: 자동차, 집 등)를 식별합니다. Annotator의 정보를 사용하여 심층 검색 애플리케이션을 빌드할 수 있습니다. 이 정보를 다른 <a href="https://azure.microsoft.com/en-us/services/media-services/media-analytics/">Media Analytics</a> 프로세서에서 가져온 데이터와 결합하여 사용자 지정 워크플로를&nbsp; 빌드할 수도 있습니다.</li>
+      <li><strong>Azure Media Face Redactor의 공개 미리 보기:</strong> Azure Media Face Redactor를 사용하면 고객이 비공개 비디오를 공개하기 전에 사람들의 ID를 보호할 수 있습니다. 브로드캐스트 뉴스에서 많은 사용 사례 시나리오를 보고 고객이 이 새로운 서비스를 어떻게 사용할 수 있는지 기대합니다. <a href="https://azure.microsoft.com/en-us/blog/azure-media-redactor/">Azure Media Face Redactor</a>에 대해 자세히 알아봅니다.</li>
+  </ul>
+
+
+  <h2>스트리밍 서비스 향상</h2>
+
+
+  <p>스트리밍 원본 구성에 대한 고객의 결정을 간소화하기 위해 다음 사항에 대해 기쁘게 생각하고 있습니다.</p>
+
+
+  <ul>
+      <li><strong>원본 자동 크기 조정:</strong> Premium 스트리밍 단위와 동일한 기능을 제공하지만 아웃바운드 대역폭에 따라 자동으로 스케일링되는 새로운 표준 스트리밍 단위 제품을 도입했습니다. Premium 스트리밍 단위(엔드포인트)는 고급 워크로드에 적합하며 확장 가능한 확장성 있는 전용 대역폭 용량을 제공하며, 표준 스트리밍 단위는 공유 풀에서 작동하면서 확장 가능한 대역폭을 제공합니다. <a href="https://azure.microsoft.com/en-us/blog/standardstreamingendpoint/">새로운 자동 크기 조정 표준 스트리밍 엔드포인트 및 향상된 Azure CDN 통합</a> 블로그 게시물을 &quot; 참조하여 자세히 알아보세요.&quot; 또한 스트리밍 팀은 다음과 같은 향상된 기능을 제공했습니다.
+
+      <ul>
+          <li><strong>CMAF 지원</strong> &ndash; Microsoft와 Apple은 CMAF(Common Media Application Format) 표준을 정의하고 MPEG에 제출하기 위해 긴밀히 협력했습니다. 새로운 표준은 다양한 디바이스에 암호화되고 적응 가능한 단일 멀티미디어 프레젠테이션을 사용하여 스트리밍 콘텐츠를 저장하고 제공하기 위한 것입니다. 업계는 상호 운용성 및 배포 효율성을 개선하기 위해 MPEG 표준으로 구현된 이러한 일반적인 형식의 이점을 크게 활용할 것입니다.</li>
+          <li><strong>DTS-HD</strong> 서라운드 사운드 스트리밍은 이제 모든 프로토콜(HLS, DASH 및 부드러운)에서 동적 패키저 및 스트리밍 서비스와 통합되었습니다.</li>
+          <li><strong>FairPlay HLS 오프라인 재생</strong> - Apple FairPlay DRM 시스템을 사용하여 HLS 콘텐츠의 오프라인 재생에 대한 새로운 지원.</li>
+          <li><strong>RTMP 수집 개선 사항</strong> &ndash; FFmpeg, OBS, Xsplit 등과 같은 오픈 소스 라이브 인코더와의 통합을 향상할 수 있도록 RTMP 수집 지원을 업데이트한&#39;.</li>
+          <li><strong>Azure Functions &amp; Azure Logic Apps 사용하는 서버리스 미디어 워크플로:</strong> Azure는 Azure의 이벤트(예: 미디어가 폴더에 업로드되거나 Aspera와 같은 파트너를 통해 업로드되는 경우)를 기반으로 코드를 쉽게 트리거할 수 있는 서버리스 컴퓨팅 플랫폼을 제공합니다. Weve&rsquo;는 개발자가 Azure Functions 및 Logic Apps를 사용하여 코드리스 및 사용자 지정된 미디어 워크플로 빌드를 시작할 수 있도록 Github에 통합 미디어 워크플로 컬렉션을 게시했습니다. <a href="https://github.com/Azure-Samples/media-services-dotnet-functions-integration/tree/master/media-functions-for-logic-app">사용해 보세요</a>!</li>
+      </ul>
+      </li>
+  </ul>
+
+
+  <h2>Azure Media Player</h2>
+
+
+  <p>주문형 비디오에 대한 Azure Media Player의 광고 기능은 이제 GA입니다. 이를 통해 VAST 규격 광고 서버에서 사전, 중간 및 포스트 롤 광고를 삽입하여 콘텐츠 소유자가 스트림으로 수익을 창출할 수 있습니다. VOD 광고 삽입에 대한 GA 발표 외에도 라이브 광고 삽입 미리 보기를 발표하게 되어 기쁩니다. 또한 향상된 접근성 기능을 갖춘 새로운 플레이어 스킨이 있습니다.</p>
+
+
+  <h2>Azure CDN</h2>
+
+
+  <p>퍼블릭 클라우드 플랫폼의 고유한 다중 CDN 제품을 기반으로 사용자 지정 도메인 SSL 및 스트리밍 원본, 스토리지 &amp; 웹앱과 &ldquo;CDN 원클릭&rdquo; 통합을 비롯한 새로운 기능을 추가하게 되어 기쁩니다.</p>
+
+
+  <ul>
+      <li><strong>사용자 지정 도메인 SSL:</strong> 이제 Azure CDN 전송 중인 데이터의 보안을 강화하기 위해 사용자 지정 도메인 SSL을 지원합니다. HTTPS 프로토콜을 사용하면 전송 중에 웹 사이트와 교환된 데이터가 암호화됩니다. Azure CDN Azure 제공 도메인에 대해 이미 지원되는 HTTPS입니다(예: <a href="https://contoso.azureedge.net)">https://contoso.azureedge.net)</a> 기본적으로 사용하도록 설정됨). 이제 사용자 지정 도메인 HTTPS를 사용하여 사용자 지정 도메인(예: <a href="https://www.contoso.com)">https://www.contoso.com)</a> 너무)에 대해 보안 배달을 사용하도록 설정할 수 있습니다. <a href="https://azure.microsoft.com/en-us/blog/announcing-custom-domain-https-support-with-azure-cdn/">사용자 지정 도메인 SSL</a>에 대해 자세히 알아봅니다.</li>
+      <li>&nbsp;<strong>&ldquo;한 번의 클릭&rdquo; CDN 스트리밍 엔드포인트와 통합, Storage &amp; Web Apps:</strong> CDN 구성을 간소화하기 위해 여러 Azure 서비스와 Azure CDN 더 심층적인 통합을 추가했습니다. 스트리밍 엔드포인트에 대해 Content Delivery Network 사용하도록 설정되면 스트리밍 엔드포인트에서 CDN 대한 네트워크 전송 요금이 면제됩니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/blog/standardstreamingendpoint/">Azure 블로그</a>를 참조하세요.</li>
+  </ul>
+
+
+  <h2>성장하는 파트너 에코시스템</h2>
+
+
+  <p>NAB에서 Avid가 클라우드에서 비즈니스를 구동하기 위해 <a href="https://www.avid.com/press-room/2017/04/cloud-partnership">선호하는 파트너로 Microsoft Azure 선택했음</a>을 발표하게 되어 기쁩니다. <a href="https://enterprise.microsoft.com/en-us/articles/industries/media-and-cable/siemens-convergence-creators-showcases-smart-video-engine-microsoft-cognitive-services/"><strong>Siemens</strong> 는 스마트 비디오 엔진 제품을 향상시키기 위해 Azure 미디어 분석에 대한 심층 통합을 통해 Azure 통합을 확장</a> 했습니다. 또한 <a href="https://www.verizondigitalmedia.com/blog/2017/04/verizon-digital-media-services-now-offers-integrated-microsoft-azure-storage/">Verizon Digital Media Services와의 파트너십을 확장하여</a> CDN 서비스를 Azure Storage와 더 심층 통합했습니다. <strong>Ooyala</strong> 는 미디어 물류 플랫폼을 향상시키기 위해 Azure 미디어 분석 기능을 포함하도록 Azure와의 통합을 확장했습니다.</p>
+
+
+  <p>제품 및 서비스를 출시하는 것은 흥미롭지만, 우리가 추구하는 목표는 고객을 성공으로 만드는 것입니다. 우리가 <a href="https://customers.microsoft.com/en-us/story/nbcolympics">리우 2016 올림픽과 랍스터 잉크의 NBCS&rsquo; 스트리밍</a> 에 발표 한 최근 사례 연구의 일부 <a href="https://customers.microsoft.com/en-us/story/lobsterink">에서</a>이 볼 좋은.</p>
+
+
+  <p>미디어 워크플로를 빌드하기 위해 Azure를 채택하는 이유에 대한 고객의 일반적인 주제 중 하나는 간단하고 확장 가능하며 유연한 엔터프라이즈급 전투 테스트 미디어 클라우드 플랫폼을 제공한다는 것입니다.</p>
+
+
+  <h2>NAB에서 우리를 만나러 오세요</h2>
+
+
+  <p>NAB Show 2017에 참석하는 경우&rsquo; Microsofts 클라우드 미디어 서비스에 대해&rsquo; 자세히 알아보고 Microsoft 및 여러 파트너의 데모를 보려면 부스 SL6710에 들러보는 것이 좋습니다. 또한, 스티브 Guggenheimers&rsquo; <a href="https://blogs.microsoft.com/?p=52540392">블로그 게시물</a>&nbsp;과 회의실 N262/N264에서 라스베이거스 컨벤션 센터에서 미디어의 디지털 변환에 대한 그의 기조 연설을 확인하고 패널 토론을 하는 것을 잊지 마세요&rsquo;.</p>
+
+
+  <p>컨퍼런스에 참석하지 않지만 미디어 서비스에 대해 자세히 알아보려면 <a href="https://www.azure.com/blog">Azure 블로그</a> 에 따라 새 공지 사항을 최신 상태로 말하세요.</p>

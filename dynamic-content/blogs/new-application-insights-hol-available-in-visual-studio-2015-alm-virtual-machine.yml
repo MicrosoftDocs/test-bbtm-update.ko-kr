@@ -1,0 +1,61 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4ce5afe44ddd252edd76b0eadd0a0c5e28255645
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908263"
+Slug: new-application-insights-hol-available-in-visual-studio-2015-alm-virtual-machine
+Title: Visual Studio 2015 ALM Virtual Machine에서 사용할 수 있는 새 애플리케이션 Insights HOL
+Summary: 이 새로운 랩은 애플리케이션 Insights 모든 주요 구성 요소를 빠르게 탐색할 수 있도록 돕기 위한 것이지만, 실제 라이브 프로젝트에 배운 내용을 적용하는 방법을 충분히 자세히 확인할 수 있습니다.
+Content: >-
+  <p abp="709">아직 인식하지 못한 사용자를 위해 2015 ALM 가상 머신의 최신 Visual Studio 게시되었으며 모든 곳에서 개발자, 테스터 및 프로젝트 관리자가 타이어를 걷어차도록 준비되었습니다!</p>
+
+
+  <p abp="709">모든 기존 실습 랩이 새로운 콘텐츠로 업데이트되었으며 5개의 새로운 랩이 추가되었습니다. <a abp="711" href="https://azure.microsoft.com/en-us/services/application-insights/">애플리케이션 Insights</a> ALM 기능을 담당하는 프로그램 관리자로서 Id&rsquo;는 애플리케이션 Insights 사용하여 <a abp="712" href="https://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Monitoring%20Applications%20with%20Application%20Insights.docx">애플리케이션 모니터링</a>이라는 새로운 랩 중 하나에 주의를 기울이고 싶습니다. 애플리케이션 Insights VS2015 ALM 가상 머신에 랩을 갖춘 최초의 순수 서비스 기반 제품입니다.</p>
+
+
+  <h2 abp="715">HOL: 애플리케이션 Insights 대한 빠른(하지만 철저한) 개요</h2>
+
+
+  <p abp="716">이 새로운 랩은 애플리케이션 Insights 모든 주요 구성 요소를 빠르게 탐색할 수 있도록 돕기 위한 것이지만, 실제 라이브 프로젝트에 학습한 내용을&rsquo; 적용하는 방법을 충분히 자세히 확인할 수 있습니다. &rsquo;애플리케이션 Insights 기능을 바로 사용할 수 있도록 랩에서 기존 프로젝트로 시작합니다. HOL은 다음 5가지 연습으로 나뉩니다.</p>
+
+
+  <blockquote abp="717">
+
+  <p abp="718">1: Project 애플리케이션 Insights 추가</p>
+
+
+  <p abp="719">2: 웹앱 및 웹 페이지에 대한 원격 분석 가져오기</p>
+
+
+  <p abp="720">3: 추가 계측 및 사용자 지정 이벤트</p>
+
+
+  <p abp="721">4: 프로덕션 환경에서 웹앱 게시 및 이벤트 모니터링</p>
+
+
+  <p abp="722">5: 가용성, 경고 및 데이터 내보내기 모니터링</p>
+
+  </blockquote>
+
+
+  <p abp="723">애플리케이션 Insights 시각적으로 초점을 맞춘 제품이므로 랩은 각 연습의 모든 단계에서 이 스크린샷과 대표 스크린샷을 반영합니다.</p>
+
+
+  <p abp="724"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3535228f-4c9e-48eb-b183-e7f912c69e3b.jpg"><img alt="App Health" border="0" height="501" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7fc067bb-950f-4a59-8b20-aff66a0dc5f4.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="App Health" width="839"></a></p>
+
+
+  <p abp="732">계측 및 사용자 지정 이벤트 추가와 같은 &ldquo;연습에는 일부 코딩이 필요하지만,&rdquo; 입력하는 대신 원격 분석을 탐색하는 데 시간을 할애할 수 있도록 프로젝트에 붙여넣기 위해 필요한 코드가 제공됩니다.</p>
+
+
+  <p abp="735">이 연습을 처음 진행하는 데 30-40분이 소요되어야 합니다.&nbsp; 새로 고침으로 사용하거나 동료에게 데모를 위해 사용하려는 후속 실행은 20-25분만 필요할 수 있습니다.</p>
+
+
+  <h2 abp="738">피드백</h2>
+
+
+  <p abp="739">Ive&rsquo;는 수년 동안 브라이언 켈러(원래 VM의 저자)와 동료였기 때문에 Ive&rsquo;는 이 VM에 포함된 많은 HOL을 실행하고 고객을 위한 개념을 시연하는 데 많은 시간을 보냈습니다.&nbsp; 그리고, Ive&rsquo;는 확실히 개인 / 전문 용도로 된 꽤 많은 데모 랩을 작성했습니다.&nbsp; 그러나 퍼블릭 사용을 위해 내 HOL을 작성하는 것은 이번이 처음이기 때문에 모든 피드백에 크게 감사드립니다.&nbsp; 이 특정 랩은 특히 애플리케이션 Insights 계속 성장하고 발전함에 따라 향후 고급 토픽을 다루기 위해 추가 랩(또는 이 섹션의 선택적 섹션)을 추가할 계획인 개요 &ndash; 입니다.&nbsp; 랩 문서의 맨 아래에 VS2015 ALM VM 팀에 직접 피드백을 제공하는 링크가 있습니다.&nbsp; 모든 입력에 대해 미리 감사드립니다.</p>
+
+
+  <p abp="742">이제 해당 VM을 실행하고 랩을 열고 Application Insights 원격 분석에서 제공하는 놀라운 기능을 직접 확인하세요.</p>

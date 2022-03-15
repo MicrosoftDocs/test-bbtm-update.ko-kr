@@ -1,0 +1,62 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 432e271582b410eff02434127a15601d9426bf13
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908281"
+Slug: microsoft-mpi-v6-release
+Title: Microsoft MPI v6 릴리스
+Summary: 최근에 Microsoft MPI의 최신 버전 릴리스를 발표했습니다. Microsoft 다운로드 센터로 이동하여 오늘 MS-MPI v6의 복사본을 다운로드합니다.
+Content: >-
+  MICROSOFT MPI(MS-MPI)의 최신 버전 릴리스를 발표하게 되어 기쁩니다. MS-MPI v6은 Microsoft MPI v5 재배포 가능 패키지(2014년 11월에 릴리스됨)의 후속 버전입니다. MICROSOFT 다운로드 센터에서 MS-MPI v6의 복사본을 다운로드할 수 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=47259">있습니다</a>.
+
+
+  MS-MPI v6에는 다음과 같은 기능, 향상된 기능 및 수정 사항이 포함되어 있습니다.
+
+  <h2>비차단 집단 작업</h2>
+
+  이 릴리스에서는 비동기 집단에 대한 초기 지원을 추가하여 <b>MPI_Ibcast, MPI_Ireduce</b>, <b>MPI_Igather</b> 및 <b>MPI_Ibarrier</b> 제공합니다.<b></b> 이러한 API에 대한 자세한 내용은 <a href="https://www.mpi-forum.org/docs/mpi-3.0/mpi30-report.pdf">여기에서</a> MPI 3.0 표준 설명서를 참조하세요.
+
+  <h2>다중 작업 선호도 지원</h2>
+
+  다중 작업 선호도 지원은 여러 선호도 MPI 작업이 실행되는 코어와 겹치지 않고 단일 머신에 공존할 수 있도록 설계되었습니다. 이제 mpi 런타임은 코어에 고정된 기존 작업이 있음을 감지하고 현재 사용되지 않는 코어에서 후속 작업을 시작합니다.
+
+
+  이 기능은 mpiexec, <b>-affinity_auto</b> 또는 <b>–aa</b> 에 대한 새로운 옵션으로 노출되며 Microsoft HPC 팩과 같은 작업 스케줄러와 독립 실행형 SDK 모드에서 모두 작동하도록 설계되었습니다.
+
+
+  예를 들어 단일 16개 코어 컴퓨터에서 두 개의 8코어 작업을 실행하려면 다음 명령줄을 사용할 수 있습니다.
+
+  <blockquote><em>mpiexec –cores 8 –affinity_auto –affinity_layout 순차적 myapp.exe</em></blockquote>
+
+  또는 더 간결하게
+
+  <blockquote><em>mpiexec –c 8 –aa –al seq myapp.exe</em></blockquote>
+
+  <h2>다중 스레드 애플리케이션 지원</h2>
+
+  이 버전의 MS-MPI는 MPI_Init_thread 호출할 때 <b>MPI_THREAD_MULTIPLE </b>사용하도록 설정하여 다중 스레드 애플리케이션에 대한 지원을 제공합니다. 이는 OMP 또는 다른 스레딩 모델을 사용하는 하이브리드 애플리케이션이 MPI 런타임을 보다 쉽게 활용할 수 있도록 설계되었습니다.
+
+
+  이 기능에 대해 지원되는 최소 서버는 Windows Server 2012.이 기능에 대해 지원되는 최소 클라이언트는 Windows 8.
+
+  <h2>MPI 3.0 표준의 새로운 기능</h2>
+
+  또한 이 릴리스는 MPI 3.0 표준의 여러 기능을 추가합니다. 이에 대한 자세한 내용은 <a href="https://www.mpi-forum.org/docs/mpi-3.0/mpi30-report.pdf">여기</a>의 MPI 표준 설명서를 참조하세요.
+
+  <ul>
+      <li>MPI_Mprobe, MPI_Mrecv, MPI_Improbe 및 MPI_Imrecv 지원</li>
+      <li>MPI_STATUS 구조에서 큰 데이터 형식을 제대로 나타낼 수 있도록 MPI_COUNT 지원합니다.</li>
+      <li>MPI_Type_create_hindexed_block 지원</li>
+      <li>MPI_Dist_graph_create, MPI_Dist_graph_create_adjacent, MPI_Dist_graph_neighbours 및 MPI_Dist_graph_neighbours_count 지원</li>
+  </ul>
+
+  &nbsp;
+
+  <blockquote><b>참고:</b> MS-MPI(헤더 및 라이브러리)에 대한 SDK 구성 요소는 재배포 가능 패키지 이진 파일과 별도로 제공됩니다.</blockquote>
+
+  MS-MPI에 대한 자세한 내용은 MSDN의 <a href="https://go.microsoft.com/fwlink/?LinkId=510089">Microsoft MPI </a>또는 자세한 질문 또는 향후 기능 요청을 참조하세요. <a href="mailto:askmpi@microsoft.com">askmpi@microsoft.com</a>
+
+
+  <a href="https://social.microsoft.com/Forums/en-US/home?forum=windowshpcmpi">Windows HPC MPI 포럼</a>에서 유용한 정보를 찾고 고유한 질문을 할 수도 있습니다.

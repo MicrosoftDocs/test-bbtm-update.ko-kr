@@ -1,0 +1,75 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ea9c5bca5c40712ea18dbbd754119ab9e3b2e48f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902410"
+Slug: what-i-wish-i-knew-manufacturing-leaders-offer-firsthand-iot-adoption-advice
+Title: '내가 알았으면 하는 것: 제조 리더가 직접 IoT 채택 조언을 제공합니다.'
+Summary: '기업이 효율성을 개선하고 일반적인 공장 문제를 해결하기 위해 IoT(사물 인터넷) 기술 사용을 늘리면서 제조 산업의 디지털 전환이 가속화되고 있습니다. '
+Content: >-
+  <p style="margin-bottom:11px"><img alt="" height="442" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3e1e4ca7-92ca-4a83-8474-29c0198ee8bc.png" width="1134"></p>
+
+
+  <p style="margin-bottom:11px">기업이 효율성을 개선하고 일반적인 공장 문제를 해결하기 위해 IoT(사물 인터넷) 기술 사용을 늘리면서 제조 산업&rsquo; 디지털 전환이 가속화되고 있습니다. 그러나 회사에서 첨단 제품을 만들고 상당한 규모의 IT 팀을 보유하고 있더라도 프로세스 또는 서비스를 실제로 개선하는 IoT 솔루션을 설계하고 배포하는 것은 작은 작업이 아닙니다&rsquo;.&nbsp;</p>
+
+
+  <p style="margin-bottom:11px">이를 지원하기&rsquo; 위해 제조 비즈니스 리더가 성공적인 IoT 솔루션&mdash;의 설정 및 배포를 탐색하는 동안 피해야 할 모범 사례 및 일반적인 문제에 대한 직접적인 인사이트를 공유하고 Microsoft Azure <a href="https://aka.ms/Azure-IoT-Overview" target="_blank">IoT 기술을</a> 사용하여 프로세스를 간소화하는 방법을&rsquo; 공유하는 What <a href="https://aka.ms/AAbrtrl" target="_blank">I Wish I Knew</a> 비디오 시리즈를 시작했습니다.&nbsp;</p>
+
+
+  <p style="margin-bottom:11px">제조 또는 산업 운영에 IoT 기술을 추가하고 즉각적인 결과를 기대하는 것은 철저한 계획 없이는 발생하지 않습니다&rsquo;. <a href="https://aka.ms/AAbrz1s" target="_blank">Attabotics</a>의 CEO 겸 최고 기술 책임자인 Scott Gravelle의 말에 따르면 특정 전문 지식을 한데 모아 올바른 기술을 작업에 통합하는 작업은 오케스트레이션의 복잡성이 필요합니다&ldquo;.&rdquo; 아래 비즈니스 리더는 제조에서 IoT를 사용하기 위해 존재하는 가능성에 대한 인사이트와 적절한 연구, 의사 결정 및 기술 전문 지식을 통해 일반적인 과제를 탐색하기 위한 조언을 공유합니다.&nbsp;</p>
+
+
+  <h2 style="margin-bottom: 11px;">제조 IoT의 새로운 추세</h2>
+
+
+  <p style="margin-bottom:11px">IoT는 제조업체에서 경쟁의 필요성으로 점점 더 많이 보고 있습니다. <a href="https://www.gartner.com/doc/reprints?id=1-2434LPHV&amp;ct=200903&amp;st=sb" target="_blank">Gartner</a>에 따르면 2025년까지 50%의&nbsp; 산업 기업이 IIoT(산업 사물 인터넷) 플랫폼을 사용하여 공장 운영을 개선할 것이며, 이 플랫폼은 2020년 10%&nbsp;에서 증가합니다. 최신 <a href="https://azure.microsoft.com/en-us/resources/iot-signals/" target="_blank">Microsoft IoT Signals 보고서에 </a>대해 조사한 제조업체는 산업 자동화, 프로덕션 계획, 일정, 품질 및 규정 준수가 IoT 솔루션을 채택하는 가장 큰 이유라고 말합니다. 불연속 제조업체 중에서 프로덕션 흐름 모니터링이 가장 많은 것으로 보고됩니다.</p>
+
+
+  <p style="margin-bottom:11px">원격 모니터링 및 예측 유지 관리는 제조에서 IoT 디바이스의 가장 일반적인 용도로 남아 있지만, COVID-19의 시작은 원격 작업 및 자동화를 허용하는 IoT 및 연결된 도구를 사용하는 경우를 더욱 입증했습니다. IoT 네트워크는 운영자가 공장이나 사무실 건물에서 수 마일 떨어진 곳에 있어도&rsquo; 더 많은 데이터를 수집하고 작업을 수행할 수 있는 연결된 에코시스템으로 발전하고 있습니다.</p>
+
+
+  <p>AI(인공 지능), 스마트 에지 컴퓨팅 및 디지털 트윈과 같은 새로운 기술을 IoT 솔루션의 필수적인 부분으로 사용할 수 있게 되면서 기업은 혁신적인 솔루션을 설계할 수 있는 새로운 기회를 창출하고 있습니다. <a href="https://azure.microsoft.com/en-us/overview/iot/" target="_blank">Azure IoT</a> 운영자가 3D 디지털 모델을 통해 건물 시스템, 장비 등을 원격으로 제어할 수 있도록 이러한 기술을 제공합니다. 지능형 에지 컴퓨팅 및 AI&rsquo; 기능과 결합하여 많은 양의 정보와 이미지를 분석하고, 음성을 이해하고, 자동화된 의사 결정 및 예측을 수행할 수 있으며,&rsquo; 작업을 최대화하기 위해 학습하고 조정하는 민첩하고 연결된 팩터리 시스템을 만들 수 있습니다.</p>
+
+
+  <h2>다른&rsquo; IoT 채택의 귀중한 교훈</h2>
+
+
+  <p>더 큰 기능과 효율성, 그리고 IoT 솔루션을 통해 고객에게 새로운 서비스를 제공할 수 있다는 약속은 실재하지만 디지털 트랜스포메이션을 향한 여정은 처음부터 올바른 단계를 수행해야 합니다. <a href="https://aka.ms/AAbrtrl" target="_blank">내가 알고 싶은 비디오 시리즈에서</a> 공유 된 학습은 기술 의사 결정자가 초기 단계에서 고려해야 할 것을 포함합니다.</p>
+
+
+  <h3>현실적인 목표와 기대가 있음</h3>
+
+
+  <p>처음부터 <a href="https://aka.ms/AAbrts4" target="_blank">Buhler Group</a>의 디지털 책임자인 스튜어트 배시포드(Stuart Bashford)는 이 작업을 수행하는 이유와 달성하려는 작업을&#39;매우 명확하게 이해해야 한다고 &ldquo;말합니다.&rdquo; 플랫폼 및 솔루션을 결정하기 전에 IoT가 작업을 개선하는 방법에 대한 구체적인 아이디어가 있어야 합니다. 해당 단계에 이하려면 비즈니스에 적합한 사용 사례에 대해 전문가 및 잠재적 파트너와 연구하거나 이야기해야 합니다.</p>
+
+
+  <p>IoT 파일럿 프로젝트가 실패하고, 학습하고, 빠르게 진행할 경우 <a href="https://aka.ms/AAbrz1l" target="_blank">, Siemens Gamesa</a>의 수석 제품 관리자인 Finn Mainstone에게 조언합니다. &ldquo;당신이&rsquo; 진정으로 최첨단이며 전에 수행되지 않은&rsquo; 무언가를 개발할 때, 당신은 그것이&rsquo; 어떻게 밝혀질지 정확히 알지 못합니다&rsquo;.&rdquo;</p>
+
+
+  <h3>기본 표준 및 기술 요구 사항에 동의</h3>
+
+
+  <p><a href="https://aka.ms/AAbrz0z" target="_blank">스탠리 블랙 &amp; 데커</a>의 글로벌 운영을 위한 CTO인 수디 방갈로르(Sudhi Bangalore)는 IoT 솔루션에 필요한 표준과 기본 기술에 대해서도 논의하는 것이 매우 중요하다고 말합니다. &ldquo;나는 우리가 그 표준을 더 잘 계획하는 데 더 많은 시간을 보냈으면 좋겠다. 왜냐하면 어떤 경우에는 weve&rsquo;가 해야 할 일은 긴장을 풀고 돌아가서 표준이 제대로 설정되지 않았기 때문에 문제를 해결하는 것입니다.&rdquo;</p>
+
+
+  <p>마찬가지로 Mainstone은 솔루션 개발 시작부터 기술 세부 정보를 잠그면 장기적으로 시간과 비용을 절약할 수 있다고 덧붙였습니다.</p>
+
+
+  <h3>리더와 직원으로부터 구매 받기</h3>
+
+
+  <p>최고 경영진에서 공장 현장으로 사람들을 참여시키는 것은 새로운 기술만큼이나 중요합니다. &ldquo;Weve&rsquo;는 이러한 인간 관계를&rdquo; 관리하는 데 동등한 노력을 기울이지 않으면 디지털 솔루션으로 아무 데도 가지 않는다는&rsquo; 것을 이해하고 실현&rsquo;하기 위해 성장했다고 Bashford는 말합니다. &ldquo;나는 상단에 지원을하지 않고 디지털 변환을 통해 이동하려고 기업의 이야기를 듣고, 그것은 매우 어려울 수 있어야합니다.&rdquo;</p>
+
+
+  <p><a href="https://aka.ms/AAbrtsf" target="_blank">Fermax</a>의 CIO인 프란시스코 산체스(Francisco Sanchez)는 IoT 기술 채택에 관심이 있고 흥분되는 모든 수준에서 직원을 교육하고 가져오는 데 투자할 것을 권장합니다. 많은 기술 팀 구성원이 솔루션 계획을 시작할 때 IoT 및 클라우드 기능에 대한 깊은 지식을 갖지 못했지만&rsquo;, 기꺼이 배울 의향이 있는지 알게 되어 기뻤다고 그는 말합니다.</p>
+
+
+  <h2>Azure IoT 채택 및 솔루션에 대해 자세히 알아보기</h2>
+
+
+  <p><a href="https://aka.ms/AAbrtrl" target="_blank">I Wish I Knew 비디오 시리즈는</a> IoT 채택 간소화, 잠재적인 과제 및 디지털 트랜스포메이션이 연결된 공장을 만드는 것에서부터 공급망 가시성 향상, 새로운 방식으로 고객 참여에 이르기까지 제조 운영을 개선하는 방법에 대한 수많은 인사이트를 제공합니다. 제조를 변화시킬 수 있는 Azure IoT 제품 및 서비스에 대한 자세한 내용은 2021년 4월 12일부터 16일까지 열리는 <a href="https://cloudblogs.microsoft.com/industry-blog/manufacturing/2021/04/01/top-5-things-to-see-and-do-at-hannover-messe-digital-edition/" target="_blank">연례 하노버 메세 행사에서</a>&nbsp; Microsoft가 강조 표시합니다.</p>
+
+
+  <p style="margin-bottom:11px">또한 <a href="https://aka.ms/Manufacturing-IoT" rel="noreferrer noopener" target="_blank">Azure 산업용 IoT 페이</a>&nbsp;저는 IoT 플랫폼이 제조 관련 솔루션에 전력을 공급하는 방법에 대한 인사이트를 제공하는 반면, <a href="https://aka.ms/Azure-IoT-Overview" target="_blank">Azure IoT 개요</a>는 기술&rsquo; 가능성을 더 폭넓게 볼 수 있습니다.&nbsp;</p>

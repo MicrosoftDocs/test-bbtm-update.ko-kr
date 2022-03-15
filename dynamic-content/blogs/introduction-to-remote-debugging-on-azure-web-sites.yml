@@ -1,0 +1,150 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5e437660a2ce283e738f56c2e3d897cee196bae9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901155"
+Slug: introduction-to-remote-debugging-on-azure-web-sites
+Title: Azure 웹 사이트의 원격 디버깅 소개
+Summary: >-
+  이 게시물은 Azure 웹 사이트 팀의 프로그램 관리자인 Jaime Espinosa가 작성했습니다.
+
+
+  원격 디버깅의 가용성을 통해 Microsoft는 응집력 있고 통합된 웹 개발 환경을 제공합니다.
+Content: >-
+  이 게시물은 Azure 웹 사이트 팀의 프로그램 관리자인 Jaime Espinosa가 작성했습니다.
+
+
+  원격 디버깅의 가용성을 통해 Microsoft는 처음부터 끝까지 응집력 있고 통합된 웹 개발 환경을 제공합니다.Microsoft Visual Studio 전체 클라우드가 책상 바로 아래에 있는 것처럼 클라우드에 연결하고 상호 작용할 수 있습니다.웹 개발자는 단일 개발 환경에서 Azure 호스팅 웹 사이트를 모두 만들고 게시하고 디버그할 수 있습니다.Visual Studio 및 Azure Websites의 통합은 개발 속도를 향상시키고 버그를 줄이는 데 도움이 됩니다.
+
+
+  Microsoft Visual Studio 2013에는 개발자가 디버거와 상호 작용하는 방법에 대한 많은 개선 사항이 포함되어 있습니다.디버깅은 개발 학습이든 수년간의 경험을 쌓든 전반적인 디자인 흐름에서 중요한 부분입니다. 웹 사이트 원격 디버깅은 Visual Studio 2012에서 수행할 수 있지만 Visual Studio 2013 사용하여 디버깅하는 데 많은 개선 사항이 있습니다. 자세한 내용은  <a href="https://www.visualstudio.com/">Visual Studio 제품 페이지를 참조하세요</a>.
+
+
+  Azure Websites 원격 디버깅은 Microsoft의 가장 강력한 기술인 Azure 클라우드 및 Visual Studio 연결합니다.Visual Studio 고유한 Azure 웹 사이트에 연결하고 모든 권한을 얻을 수 있습니다.중단점을 설정하고, 메모리를 직접 조작하고, 코드를 단계별로 실행하고, 코드 경로를 변경할 수도 있습니다.웹 사이트가 야생에서 어떻게 작동하는지 진정으로 볼 수있는 유일한 방법입니다.
+
+
+  원격 디버깅을 수행하는 기능은 빠른 개발에 큰 차이를 만듭니다. 유지 관리를 용이하게 하고 사람들이 더 나은 사이트를 만들 수 있습니다.이 원격 디버깅을 위한 도구로서 Visual Studio 많은 힘과 유연성이 있습니다.모든 것이 어떻게 작동하는지에 대한 몇 가지 배경 컨텍스트를 통해 도구와 기능을 최대한 활용할 수 있기를 바랍니다.
+
+  <h4>Azure 웹 사이트의 원격 디버깅</h4>
+
+  Azure 웹 사이트의 원격 디버거 세션에 연결하는 방법에는 수동 또는 자동으로 두 가지가 있습니다.
+
+
+  모든 도구와 특히 디버깅 도구를 최대한 활용하려면 모든 도구가 어떻게 작동하는지 아는 것이 좋습니다. 이 <sup>시리즈의 2</sup> 부에서 원격 디버거가 작동하는 방식에 대한 자세한 내용을 살펴보겠습니다. 나중에 3부에서는 웹 사이트를 확장하여 여러 인스턴스로 스케일 아웃하고 GIT를 사용하여 웹 사이트를 배포하고 유지 관리하는 사용자를 다룹니다.
+
+
+  일반적으로 Visual Studio 원격 디버거를 사용하는 방법에 대한 수많은 추가 문서, 블로그 및 자습서가 있습니다.탐색하고, 실험하고, 공유하는 것이 좋습니다.
+
+  <h4>다음 단계</h4>
+
+  우리가 본 고객 질문에 따라 언급 할 가치가있는 몇 가지가 있습니다.디버그되는 인스턴스에서 트래픽을 수동으로 또는 자동으로 라우팅하는 방법을 제공할 계획입니다. 시작 시 프로세스에 연결하고 한 단계씩 실행하는 기능은 조사 중이지만 결정적이지는 않습니다.Windows 사용자 이름 제한이 수정되었습니다. 이 제한은 20자로 제한되었습니다&lt;.)
+
+  <h4>계층 제한</h4>
+
+  원격 디버깅은 모든 계층에서 사용할 수 있습니다. 그러나 계층에 따라 몇 가지 제한 사항이 있습니다.분석 결과는 다음과 같습니다.  <strong>FreeandShared</strong>  <strong></strong> (기본) 계층은 지정된 시간에 한 번의 연결이 허용됩니다. <strong>TheStandardtier</strong> 는 5개의 동시 연결을 허용합니다.
+
+  <h4>경고 스티커</h4>
+
+  아쉽게도 경고 스티커를 붙여야 합니다. 그러나, 우리는 그것을 제거하기 위해 노력하고 있습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/8713.warning-sticker.png"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/8713.warning-sticker.png" border="0"></a>
+
+  <h1>Azure 웹 사이트에 Visual Studio 원격 디버거 연결</h1>
+
+  수동 및 자동으로 두 가지 방법으로 Visual Studio 원격 디버거 연결할 수 있습니다.수동 절차는 Visual Studio 2012 및 2013에서 작동합니다(Express 버전에서는 사용할 수 없음).자동 프로시저는 훨씬 간단하지만 클라이언트 머신에 <a href="https://azure.microsoft.com/en-us/downloads/">Azure SDKinstalled</a> 가 있고 구독 프로필이 다운로드되어야 합니다.
+
+
+  원격 디버거를 임의 프로세스에 수동으로 연결할 수 있다는 것은 많은 이점이 있습니다.W3WP(웹 사이트 프로세스)를 디버그할 수 있을 뿐만 아니라 Azure 웹 사이트에서 실행된 다른 종류의 프로세스도 <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-create-web-jobs/">WebJobsor</a>에서 프로세스를 디버그할 수 있습니다.Visual Studio 및 해당 디버거는 .NET용으로 빌드되었지만 VS는 추가 도구로 확장되는 많은 유연성을 제공합니다.
+
+
+  반면에 <a href="https://azure.microsoft.com/en-us/downloads/">, TheAzure SDK</a>는 더 응집력 있는 웹 사이트 개발 및 유지 관리 스토리를 제공합니다.단일 도구(Visual Studio)에서 최소한의 노력으로 웹 사이트를 작성, 배포 및 원격 디버그할 수 있습니다.이는 빠른 개발 및/또는 많은 수의 웹 사이트를 관리할 때 매우 유용합니다.SDK는 간단하고 응집력 있는 환경을 제공하기 위해 항상 진화하고 있습니다.
+
+
+  어떤 방법을 선택하든 서버 쪽에서 알아야 할 몇 가지 사항이 있습니다.원격 디버깅 기능을 켜야 하며 Azure의 웹 사이트 구성에서 Visual Studio 버전을 정의해야 합니다.이 모든 것이 어떻게 작동하는지 더 잘 이해하려면 "<em>Azure 웹 사이트의 원격 디버거 내부(Azure 웹 사이트)"에</em> 대한 블로그를 참조하세요.<em> </em>
+
+  <h4>자동으로 연결하기 위한 단계</h4>
+
+  Azure Websites 원격 디버깅에는 이 기능을 가져온 개발자의 비디오를 포함하여 체크 아웃할 수 있는 여러 블로그가 있습니다.다른 예제를 제공하는 대신 다음 자료를 참조하겠습니다.
+
+  <ul>
+   <li>Azure 설명서에서는 Visual Studio  <a href="https://azure.microsoft.com/en-us/develop/net/tutorials/troubleshoot-web-sites-in-visual-studio">Azure 웹 사이트 Windows 문제 해결</a>이라는 훌륭한 예제를 안내합니다.</li>
+   <li>.NET 웹 개발 및 도구 블로그는 Visual Studio 2013 사용하여 Windows Azure 웹 사이트를 원격으로 디버깅하는 연습도 제공합니다.</li>
+   <li>개발자가 처음 9분 동안 예제를 안내하는 동영상이  <a href="https://channel9.msdn.com/Shows/Web+Camps+TV/Securing-ASPNET-Web-APIs">있습니다</a>.</li>
+  </ul>
+
+  다음과 같은 방법으로 게시 프로필을 다운로드할 수 있습니다.
+
+  <ol>
+   <li>보낸 사람 <a title="https://windows.azure.com/download/publishprofile.aspx" href="https://windows.azure.com/download/publishprofile.aspx">https://windows.azure.com/download/publishprofile.aspx</a></li>
+   <li>PowerShell 명령 사용: Get-AzurePublishSettingsFile</li>
+  </ol>
+
+  <div><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/0363.Jaime-Espinosa_2D00_FIGURE-1_2E00_.PNG"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/0363.Jaime-Espinosa_2D00_FIGURE-1_2E00_.PNG" border="0"></a></div>
+
+  <div></div>
+
+  <div>
+
+  <h4>수동으로 연결하기 위한 단계</h4>
+
+  1-6단계에서는 Visual Studio WebDeploy를 설정하는 방법을 보여 줍니다.또는  <a href="https://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/">원본 제어에서 Azure 웹 사이트를 Windows, Azure 웹 사이트에서</a>  <em>GIT 배포를 사용하여 원격 디버거를 사용하는 데</em> 필요한 변경을 수행할 수 있습니다.
+
+
+  <strong>1단계.</strong>  배포 자격 증명 설정: 사용자 이름 및 암호
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/5504.Jaime-Espinosa_2D00_FIGURE-2_2E00_.PNG"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/5504.Jaime-Espinosa_2D00_FIGURE-2_2E00_.PNG" border="0"></a>
+
+
+  <strong>2단계.</strong>  게시 프로필 다운로드
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/4162.Jaime-Espinosa_2D002900_-FIGURE-3_2E00_.PNG"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/4162.Jaime-Espinosa_2D002900_-FIGURE-3_2E00_.PNG" border="0"></a>
+
+
+  <strong>3단계</strong><strong>.</strong>  원격 디버깅을 사용하도록 설정하고 Visual Studio 버전을 지정합니다.이러한 설정을 저장하면 현재 저장된 배포 자격 증명을 사용하여 원격 디버깅을 활성화합니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/6866.Jaime-Espinosa_2D00_FIGURE-4_2E00_.PNG"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/6866.Jaime-Espinosa_2D00_FIGURE-4_2E00_.PNG" border="0"></a>
+
+
+  <strong>4단계</strong><strong>.</strong>  게시 프로필을 가져옵니다.이 캡처에서는 SDK가 설치되었기 때문에 "Windows Azure Website에서 가져오기" 섹션이 있습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/6332.Jaime-Espinosa_2D00_-FIGURE-5_2E00_.PNG"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/6332.Jaime-Espinosa_2D00_-FIGURE-5_2E00_.PNG" border="0"></a>
+
+
+  <strong>5단계.</strong>    <em>웹 사이트에</em> 게시 구성
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/5282.Jaime-Espinosa_2D00_-FIGURE-6_2E00_.PNG"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/5282.Jaime-Espinosa_2D00_-FIGURE-6_2E00_.PNG" border="0"></a>
+
+
+  <strong>6단계</strong><strong>.</strong>  원격 프로세스에 Visual Studio 디버거 연결
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/7318.Jaime-Espinosa_2D00_-FIGURE-7_2E00_.png"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/7318.Jaime-Espinosa_2D00_-FIGURE-7_2E00_.png" border="0"></a>
+
+
+  <strong>7단계</strong><strong>.</strong>  프로세스가 상주하는 위치 및 연결 방법 지정
+
+
+  한정자: &lt;<em>웹 사이트의 URL(http*제외)&gt; </em>사용자 및 암호<strong>:</strong><strong> </strong>1단계에서 만든 자격 증명을 사용합니다. <em>TheDot back-slashthat</em> 는 자격 증명 앞에 있습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/1234.Jaime-Espinosa_2D00_-FIGURE-8_2E00_.PNG"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/1234.Jaime-Espinosa_2D00_-FIGURE-8_2E00_.PNG" border="0"></a>
+
+
+  <strong>8단계.</strong>  디버그할 프로세스를 선택합니다.게시된 웹 사이트는 <em>W3WPprocess</em>입니다.둘 이상이 있는 경우 사이트를 파악하기 위해 실험해야 합니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/4048.Jaime-Espinosa_2D00_-FIGURE-9_2E00_.PNG"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1798/4048.Jaime-Espinosa_2D00_-FIGURE-9_2E00_.PNG" border="0"></a>
+
+
+  이제 기본 사항을 살펴보았으므로 이 지식 적용을 시작할 수 있습니다. 그러나 이것은 빙산의 일각에 불과합니다. 이 시리즈의 다음 게시물에서는 원격 디버깅, 다중 인스턴스 환경 및 GIT 배포 디버깅에 대한 내부 조사를 포함하여 추가 항목을 다룹니다.
+
+
+  </div>

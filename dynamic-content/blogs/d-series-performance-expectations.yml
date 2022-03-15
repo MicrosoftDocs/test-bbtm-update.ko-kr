@@ -1,0 +1,202 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 324b800b16772867d48ab8d6e0d1cac399ff09f9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908480"
+Slug: d-series-performance-expectations
+Title: D 시리즈 성능 기대치
+Summary: 이 게시물에서는 D 시리즈 VM 크기의 성능 기대치에 대해 설명합니다.
+Content: >-
+  새로운 <a href="https://azure.microsoft.com/blog/2014/09/22/new-d-series-virtual-machine-sizes/">D 시리즈 VM은</a> 빠르고 로컬(임시) 스토리지 또는 더 빠른 CPU가 필요한 애플리케이션에 뛰어난 성능을 제공합니다. 그러나 최적의 환경을 얻기 위해 시스템을 구성하는 방법에 대해 조금 이해해야 합니다.
+
+
+  클라우드는 공유 환경이므로 대부분의 VM은 하나 이상의 다른 VM과 서버를 공유합니다. 하나의 VM이 공유 리소스의 공평한 공유를 초과하지 않도록 VM 유형에 따라 VM에서 사용할 수 있는 가상 CPU, RAM, 로컬 디스크 용량 및 IO 처리량 수에 제한을 적용합니다. 이러한 제한은 모든 사용자가 시스템에서 보다 일관되고 예측 가능한 성능을 볼 수 있도록 하는 데 도움이 됩니다.
+
+
+  새 D 시리즈의 경우 코어 수 및 RAM 할당뿐만 아니라 VM 유형별 로컬 SSD에 대한 용량 및 성능 기대치는 다음과 같습니다.
+
+  <table border="0" cellspacing="0" cellpadding="0">
+
+  <tbody>
+
+  <tr>
+
+  <td width="101"><b>이름</b></td>
+
+  <td width="53"><b>코어 수</b></td>
+
+  <td width="97"><b>메모리(GB)</b></td>
+
+  <td width="79"><b>로컬 SSD </b><b>크기(GB)</b></td>
+
+  <td width="76"><b>로컬 SSD 최대 IOPS </b></td>
+
+  <td width="111"><b>로컬 SSD </b><b>최대 읽기 MB/s</b></td>
+
+  <td width="114"><b>로컬 SSD </b><b>최대 쓰기 MB/s</b></td>
+
+  </tr>
+
+  <tr>
+
+  <td width="101"><b>Standard_D1</b></td>
+
+  <td width="53">1</td>
+
+  <td width="97">3.5</td>
+
+  <td width="79">50</td>
+
+  <td width="76">3,000</td>
+
+  <td width="111">48</td>
+
+  <td width="114">24</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="101"><b>Standard_D2</b></td>
+
+  <td width="53">2</td>
+
+  <td width="97">7</td>
+
+  <td width="79">100</td>
+
+  <td width="76">6,000</td>
+
+  <td width="111">96</td>
+
+  <td width="114">48</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="101"><b>Standard_D3</b></td>
+
+  <td width="53">4</td>
+
+  <td width="97">14</td>
+
+  <td width="79">200</td>
+
+  <td width="76">12,000</td>
+
+  <td width="111">192</td>
+
+  <td width="114">96</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="101"><b>Standard_D4</b></td>
+
+  <td width="53">8</td>
+
+  <td width="97">28</td>
+
+  <td width="79">400</td>
+
+  <td width="76">24,000</td>
+
+  <td width="111">384</td>
+
+  <td width="114">192</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="101"><b>Standard_D11</b></td>
+
+  <td width="53">2</td>
+
+  <td width="97">14</td>
+
+  <td width="79">100</td>
+
+  <td width="76">6,000</td>
+
+  <td width="111">96</td>
+
+  <td width="114">48</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="101"><b>Standard_D12</b></td>
+
+  <td width="53">4</td>
+
+  <td width="97">28</td>
+
+  <td width="79">200</td>
+
+  <td width="76">12,000</td>
+
+  <td width="111">192</td>
+
+  <td width="114">96</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="101"><b>Standard_D13</b></td>
+
+  <td width="53">8</td>
+
+  <td width="97">56</td>
+
+  <td width="79">400</td>
+
+  <td width="76">24,000</td>
+
+  <td width="111">384</td>
+
+  <td width="114">192</td>
+
+  </tr>
+
+  <tr>
+
+  <td width="101"><b>Standard_D14</b></td>
+
+  <td width="53">16</td>
+
+  <td width="97">112</td>
+
+  <td width="79">800</td>
+
+  <td width="76">48,000</td>
+
+  <td width="111">768</td>
+
+  <td width="114">384</td>
+
+  </tr>
+
+  </tbody>
+
+  </table>
+
+  IO 작업은 최대 IOP 또는 최대 읽기/쓰기 처리량(MB/s)에 의해 제한됩니다. 둘 중 하나를 먼저 적중합니다(혼합 워크로드의 경우 쓰기는 읽기 제한에 대해 효과적으로 두 배로 계산됨). 작은 IO 크기는 대역폭 제한에 도달하기 전에 일반적으로 IOPS에서 최대로, 큰 IO 크기는 일반적으로 IOPS 제한에 도달하기 전에 대역폭에서 최대로 출력됩니다.
+
+
+  최대 IOPS 및 최대 디스크 처리량 제한은 로컬 SSD에만 적용됩니다. OS, 데이터 디스크 및 Azure File 영구 스토리지 성능 수준은 <a href="https://msdn.microsoft.com/en-us/library/azure/dn249410.aspx">Azure Storage 확장성 및 성능 목표 문서에 설명되어 있습니다</a>.
+
+
+  짧은 대기 시간이 필요하지만 높은 IOPS 또는 대역폭을 푸시하지 않는 애플리케이션은 더 작은 SKU 중 하나에서 잘 할 수 있습니다. 대기 시간이 짧고 IOPS가 높거나 대역폭이 높은 애플리케이션은 더 큰 SKU를 사용하는 것이 좋습니다.
+
+
+  로컬 SSD는 동적 VHD로 구현되므로 VHD 파일이 확장되면 이러한 디스크의 섹터에 대한 초기 쓰기 속도가 느려집니다. 최적의 성능을 위해 활성 워크로드에 사용하기 전에 파일/디스크를 미리 작성합니다.
+
+
+  특히 애플리케이션이 전체 용량을 활용하기에 충분한 병렬 워크로드를 구동할 수 없는 경우 성능이 저하될 수 있습니다.

@@ -1,0 +1,35 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d5e1cf2c53e5236d464a08abf2d0ef295db217af
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908484"
+Slug: cross-subscription-dr
+Title: Azure 가상 머신에 대한 구독 간 재해 복구
+Summary: 오늘 ASR(Azure Site Recovery)을 사용하여 Azure 가상 머신에 대한 DR(구독 간 재해 복구) 지원을 발표하게 되어 기쁩니다. 이제 가상 머신에 대한 DR을 동일한 Azure Active Directory 테넌트에 있는 다른 구독으로 구성할 수 있습니다.
+Content: >-
+  <p>오늘 ASR(Azure Site Recovery)을 사용하여 Azure 가상 머신에 대한 DR(구독 간 재해 복구) 지원을 발표하게 되어 기쁩니다. 이제 Azure IaaS 애플리케이션용 DR을 동일한 Azure Active Directory 테넌트에 있는 다른 구독으로 구성할 수 있습니다.</p>
+
+
+  <p>Azure 구독은 모든 Azure 리소스가 포함된 기본 단위입니다. 또한 Azure 내에서 코어 수, 리소스 등과 같은 몇 가지 제한을 정의합니다. 많은 조직에서 청구 또는 관리 목적으로 Azure 계정에서 여러 Azure 구독을 사용합니다. 예를 들어 일부 조직에서는 관리가 용이하고 구독 할당량 제한을 준수하기 위해 프로덕션, 스테이징 및 재해 복구 환경에 서로 다른 구독을 사용합니다. 새 기능을 사용하면 여러 구독의 <a href="https://aka.ms/a2asupportedregion">지리적 클러스터</a> 내에서 원하는 다른 Azure 지역으로 가상 머신을 복제할 수 있습니다. 이렇게 하면 Azure 환경의 구독 토폴로지 변경 없이 IaaS 애플리케이션에 대한 비즈니스 연속성 및 재해 복구 요구 사항을 충족할 수 있습니다.</p>
+
+
+  <p>구독 간에 DR을 구성하는 것은 매우 간단합니다. 기본적으로 대상 구독은 원본 가상 머신&#39;구독과 동일합니다. 선택한 대상 구독을 사용자 지정하고 선택할 수 있으며 리소스 그룹 및 가상 네트워크와 같은 다른 모든 설정은 선택한 대상 구독에서 자동으로 채워집니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fb386892-c2ff-41fb-816b-83e226b776b2.png" style="font-family: tahoma, &quot;Helvetica Neue&quot;, arial, helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: 400; text-decoration-line: underline;"><img alt="cross-sub-blog" border="0" height="465" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fbba04e1-96d3-4294-8f53-62c184034358.png" style="border: 0px currentcolor; border-image: none; font-size: 13px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="크로스 하위 블로그" width="975"></a></p>
+
+
+  <p>Azure 지역 간의 재해 복구는 ASR을 사용할 수 있는 <a href="https://aka.ms/a2a-supported-regions" target="_blank">모든 Azure 지역에서</a> 사용할 수 있습니다. 지금 Azure Site Recovery<a href="https://aka.ms/a2a-getting-started" target="_blank">를 시작하세요</a>.</p>
+
+
+  <h2>관련 링크 및 추가 콘텐츠</h2>
+
+
+  <ul>
+   <li>Azure VM에 대한 재해 복구를 구성하여 <a href="https://aka.ms/a2a-getting-started" target="_blank">시작</a></li>
+   <li>Azure VM 복제에 <a href="https://aka.ms/a2a-support-matrix" target="_blank">지원되는 구성</a> 에 대해 자세히 알아보기</li>
+   <li>도움이 필요하신가요? <a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=hypervrecovmgr" target="_blank">지원을 위해 Azure Site Recovery 포럼</a>에 문의</li>
+   <li>새 아이디어를 기여하고 기존 아이디어를 투표하여 <a href="https://feedback.azure.com/forums/256299-site-recovery" target="_blank">Azure Site Recovery를 개선할</a> 수 있는 방법을 알려주세요.</li>
+  </ul>

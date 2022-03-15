@@ -1,0 +1,80 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ef40556d48cc7bff4e35c8c0c318f6993ba64802
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902024"
+Slug: new-innovations-at-microsoft-build-2017-helping-developers-achieve-more
+Title: 'Microsoft Build 2017의 새로운 혁신: 개발자가 더 많은 성과를 거둘 수 있도록 지원'
+Summary: 그 어느 때보다도 조직은 개발자에 의존하여 획기적인 환경을 만들고 있습니다.  신생 기업에서 기업, 정부 기관에 이르기까지 개발자는 조직을 재정의하여 우리 모두에게 권한을 부여하는 새로운 디지털 환경을 만들고 있습니다.
+Content: >-
+  <p><em>이 게시물은 스콧 거스리, 수석 부사장, 클라우드 및 Enterprise 그룹, 마이크로 소프트에 의해 작성되었습니다.</em></p>
+
+
+  <p>그 어느 때보다도 조직은 개발자에 의존하여 획기적인 환경을 만들고 있습니다. 신생 기업에서 기업, 정부 기관에 이르기까지 개발자는 조직을 재정의하여 우리 모두에게 권한을 부여하는 새로운 디지털 환경을 만들고 있습니다. 클라우드는 전 세계 개발자들에게 강력하고 새로운 기술을 제공하는 이 시대의 핵심 지원자입니다. 그러나 클라우드는 전례 없는 기술 릴리스 속도를 제공하며 개발자가 항상 획기적인 환경을 제공할 것이라는 기대를 높입니다. 이러한 이해는 Microsoft Azure 빌드하고 제공하는 방법을 형성합니다.</p>
+
+
+  <p>오늘 아침, 시애틀에서 열린 Microsoft Build 컨퍼런스에서 성공을 안내하는 데 도움이 되는 Azure &ndash; 의 핵심 디자인 원칙에 대해 이야기했습니다. 강력한 기술과 많은 새로운 기능을 제공하는 것이 필요하지만, 가장 중요한 클라우드에서 성공을 거두는 방법은 충분하지 &ndash; 않습니다. 클라우드는 더 이상 더 많은 기능을 가진 사용자에 관한 것이 아닙니다. 는 클라우드를 얼마나 성공적으로 수행할 수 있는지에 대한 정보&rsquo;입니다. 이 원칙을 이행하기 위해 Microsoft는 모든 개발자에게 최첨단 기술을 적용하고 Azure가 엔터프라이즈 시나리오를 고유하게 충족할 수 있도록 많은 작업을 수행하는 요구 사항에 &ndash; Azure 혁신을 집중합니다. 신뢰는 우리의 핵심 가치 중 하나이며, 우리는 보안, 규정 준수, 개인 정보 보호 및 책임에 대한 우리의 작업에서 업계를 선도할 것입니다. 또한 Azure는 결과를 위해 설계되어 입증된 지침, 전문가의 조언 및 지원을 보장합니다. 이러한 핵심 신조를 사용하면 모든 개발자가 Azure &ndash; 에서 성공할 수 있습니다. 이 목표는 Azure 팀이 매일 제공하는 데 중점을 둔 목표입니다.</p>
+
+
+  <p>성공하려면 클라우드와 개발 도구도 원활하게 함께 작동해야 하므로 Azure 및 Visual Studio 제품군에서 훌륭한 환경을 보장합니다. Visual Studio Enterprise, Visual Studio Team Services Visual Studio Code &ndash; 가장 생산적인 개발자 환경을 엔드 투 엔드(end-to-end)로 제공하기 위해 최선을 다하고 있습니다. 이를 위해 오늘 <a href="https://www.visualstudio.com/vs/visual-studio-mac/" target="_blank"><strong>Mac용 Visual Studio</strong></a> 일반 공급 방법을 발표했습니다.</p>
+
+
+  <p>Mac용 Visual Studio 수백만 명의 사랑을 받는 IDE(통합 개발 환경)를 Mac에 제공합니다. 개발자는 모바일 및 웹앱에서 게임에 이르는 엔드 투 엔드 솔루션에서 작업할 뿐만 아니라 Azure와 통합하고 배포할 수 있는 훌륭한 IDE 및 단일 환경을 제공합니다. C#, F#, .NET Core, ASP.NET Core, Xamarin 또는 Unity를 사용하든 관계없이 기본적으로 Mac용으로 설계된 동급 최고의 개발 환경을 얻을&#39;있습니다.</p>
+
+
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b4dd9975-2834-418c-8c08-5439884b21d8.png"></p>
+
+
+  <p><em>Mac용 Visual Studio 시작: <a href="https://aka.ms/vs4mac">aka.ms/vs4mac</a></em></p>
+
+
+  <p>IDE 및 Azure Portal을 보완하기 위해 명령줄에서 Azure로 작업하는 환경을 간소화했습니다. 새 <a href="https://aka.ms/cloudshell"><strong>Azure Cloud Shell은 Azure</strong></a> 에서 호스팅되는 인증된 브라우저 기반 셸 환경을 제공하며 어디서나 액세스할 수 있습니다. Azure는 일반적으로 사용되는 명령줄 도구를 사용하여 Cloud Shell을 관리하고 업데이트하고 여러 인기 있는 프로그래밍 언어를 지원하므로 생산성을 유지할 수 있습니다. 각 Cloud Shell 세션은 Azure에 저장된 $Home 디렉터리에 자동으로 동기화되는 즉시 사용할 수 있는 환경을 제공하여 즐겨 찾는 자동화 스크립트와 같은 파일을 유지할 수 있도록 합니다. Azure Cloud Shell은 다재다능함과 생산성을 최대화합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bb95832d-d090-4395-a644-0e2815c76130.gif"><img alt="AzureCloudShell" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/924c5c12-13eb-4329-837a-7a9e9bebebd3.gif" style="display: inline;" title="AzureCloudShell" width="1024"></a></p>
+
+
+  <p>데이터는 개발자가 현재 제공하는 모든 앱 및 경험의 핵심 부분입니다. 나는 모든 개발자가 자신의 데이터베이스 기본 설정 &ndash; 이 일부 사랑 SQL Server 알고, 일부는 MySQL과 PostgreSQL을 사랑. 점점 더 많은 개발자가 생산성을 최대화하기 위해 서비스로서의 데이터베이스 옵션으로 전환하려고 합니다. Azure는 원하는 모든 데이터베이스를 사용하여 개발하고 서비스로 사용할 수 있도록 합니다. 오늘, 애플리케이션 가동 중지 시간이 거의 없는 Azure SQL Database 타사 및 SQL Server 데이터베이스를 <strong>원활하게 마이그레이션하는 새로운 서비스를</strong> 발표했습니다. 또한 개발자가 Azure에서 즐겨 찾는 데이터베이스를 사용할 수 있도록 <strong>Azure에서 Azure Database for MySQL</strong> 및 <strong>Azure Database for PostgreSQL</strong> 옵션의 가용성을 발표했습니다. 이러한 새 Azure 데이터베이스 제품은 서비스로 실행되므로 고가용성, 데이터 보호 및 복구를 제공하고 가동 중지 시간 &ndash; 없이 추가 비용 또는 구성 없이 모든 기본 제공을 확장합니다.</p>
+
+
+  <p>그러나 데이터는&rsquo; 점점 더&rsquo; 중요한 업무상 중요한 측면이 되고 지능형 앱 개발의 기본이 되는 앱 &ndash; 의 핵심 부분에 불과합니다. 클라우드 기반 애플리케이션이 점점 더 확장되고, 글로벌 사용자에게 도달하고, AI 환경을 강화함에 따라, 우리는 지구 규모로 데이터가 필요한 곳으로 왔습니다. 오늘, 99번째 백분위수에서 가동 시간 및 밀리초 대기 시간이 보장된 턴키 글로벌 배포를 제공하는 최초의 글로벌 분산 다중 모델 데이터베이스 서비스인 <strong>Azure Cosmos DB</strong>를 발표했습니다. 대부분의 데이터베이스 서비스는 강력한 일관성 또는 최종 일관성 중에서 선택해야 하지만 Azure Cosmos DB는 <a href="https://aka.ms/cosmosdbconsistency" target="_blank">5가지 잘 정의된 직관적인 일관성 선택을</a> &ndash; 제공하는 유일한 전역 분산 데이터베이스 서비스이므로 앱에 적합한 데이터베이스만 선택할 수 있습니다. 이러한 획기적인 기능은 <a href="https://youtu.be/Yfmw7swCtZs" target="_blank">레슬리 램포트</a>, 튜링 어워드 수상자 및 Microsoft 연구원의 기초 작업을 통해 가능하게 됩니다.</p>
+
+
+  <p>Azure Cosmos DB를 사용하면 가용성, 대기 시간, 처리량 및 일관성에 걸쳐 재정적으로 지원되는 데이터베이스 SLA만 업계&rsquo;에 제공하면서 여러 지리적 지역에 걸쳐 탄력적으로 확장할 수 있습니다. 첫 번째이자 유일한 스키마 독립적 데이터베이스인 Azure Cosmos DB는 데이터를 자동으로 인덱싱하므로 전역적으로 분산된 설정에서 스키마 및 인덱스 관리 또는 스키마 마이그레이션의 복잡성을 처리하지 않고도 빠른 쿼리를 수행할 수 있습니다. Jet.com 포함한 고객은 Azure Cosmos DB를 사용하여 하루에 100조 개의 트랜잭션으로 확장하고 여러 지역에 걸쳐 성장하고 있습니다. Azure Cosmos DB를 활용하면 행성 규모가 확장되므로 비즈니스 성장에 계속 집중할 수 있습니다.</p>
+
+
+  <p>데이터 외에도 기존 애플리케이션 현대화의 과제에 대해 개발자와 계속 이야기를 나눴습니다. 새로운 컨테이너 및 마이크로 서비스 기술은 놀라운 이점을 제공하지만 대부분의 개발자가 가지고 있지 않은&rsquo; 고급 앱을 &ndash; 다시 작성해야 할 수 있습니다. Weve&rsquo;는 Azure에서 이러한 요구 문제를 해결하기 위해 열심히 노력하고 있습니다. 현재 Azure Container Service에서 Kubernetes, Docker Swarm 및 Mesos DC/OS를 비롯한 선택한 컨테이너 오케스트레이션 기술을 사용할 수 있으므로 필요한 정확한 방법을 사용하여 컨테이너를 유연하게 사용할 수 있습니다.</p>
+
+
+  <p>&rsquo;또한 Weve는 기존 .NET 앱을 컨테이너화하고 Azure에 배포하는 데 도움을 주기 위해 열심히 노력하고 있습니다. &rsquo;현재 이 시나리오를 Azure Service Fabric 확장합니다. Service Fabric Windows 및 Linux 기반 컨테이너를 모두 실행하는 기능을 지원하는 강력한 마이크로 서비스 플랫폼입니다. 현재 Service Fabric 다중 컨테이너 애플리케이션을 배포하기 위한 Docker Compose를 기본적으로 지원하도록 Service Fabric 업데이트하고 있습니다. 이렇게 하면 기존 코드를 쉽게 사용하면서 Windows 에코시스템의 최고와 Linux 기반 에코시스템 &ndash; 을 활용할 수 있는 마이크로 서비스 기반 솔루션을 쉽게 빌드할 수 있습니다. Were&rsquo;는 <a href="https://aka.ms/servicefabric56"><strong>5.6 런타임 및 2.6 SDK 릴리스를 사용하여 Azure Service Fabric Windows</strong></a> Server 컨테이너에 대한 컨테이너 지원의 일반 공급에 대해 발표했습니다. &rsquo;또한 컨테이너화된 앱을 배포하기 <strong>위한 Docker Compose에 대한 Service Fabric 지원을</strong> 미리 봅니다. 또한 Visual Studio Team Services 통합을 통해 이러한 컨테이너화된 애플리케이션 통합의 지속적인 통합 및 배포를 실현할 수 있습니다.</p>
+
+
+  <p>이러한 발전 외에도 Azure Functions 및 Azure Logic Apps 사용하여 완전히 관리되는 환경에서 &ndash; 서버리스 컴퓨팅 &ndash; 이벤트 기반 프로그래밍을 혁신할 수 있도록 지속적으로 지원합니다. Microsofts&rsquo; 서버리스 제품에는 Visual Studio 풍부한 도구 지원, 원활한 워크플로 및 시스템 통합, Visual Studio Team Services, GitHub 및 Bitbucket을 사용한 기본 제공 DevOps 포함됩니다. 오늘, Im&rsquo;은 <a href="https://aka.ms/serverlessbuild2017">지구상에서 가장 생산적인 서버리스 개발 환경을</a> 제공하는 다음 단계를 발표하게 되어 기쁩니다. Visual Studio 2017 확장으로 제공되는 <strong>Azure Functions Visual Studio 도구</strong> 미리 보기는 통합된 개발자 환경을 만듭니다. 이러한 도구를 사용하면 타사 확장, 테스트 프레임워크 및 지속적인 통합 시스템을 활용하여 개발 흐름에 Azure Functions 개발을 원활하게 통합할 수 있습니다. <strong>Azure Functions 미리 보기에 대한 Azure 애플리케이션 Insights 지원</strong>은 Azure Functions 코드에 대한 더 나은 인텔리전스를 제공하여 팀이 성능을 측정하고, 문제를 검색하고, 서버리스 앱에서 문제의 원인을 진단할 수 있도록 합니다. 또한 어디서나 코드를 배포할 수 있는 유연성을 원한다는 것을 알고 있습니다. <strong>Azure Functions 런타임</strong> 미리 보기는 Azure Functions의 혁신을 온-프레미스 또는 Azure 클라우드 외부의 모든 곳으로 확장합니다. 개발자는 서버리스 프로그래밍 모델 및 바인딩 온-프레미스를 활용하는 동시에 코드 자산을 미래 지향할 수 있습니다. 이러한 기능은 함께 타의 추종을 불허하는 개발자 환경을 제공하여 모든 개발자가 서버리스 솔루션을 성공적으로 효율적으로 빌드할 수 있도록 지원합니다.</p>
+
+
+  <p>개발자의 성공은 물론 기술에서 설립되었지만, 중요한 것은 이러한 개발자 솔루션에 대한 비즈니스 성장입니다. 이는 SaaS 솔루션을 제공하는 회사에서 특히 그렇습니다. Azure는 SaaS 기반 제품을 위한 환상적인 클라우드 플랫폼을 제공하지만, 이 외에도 Microsoft는 이러한 SaaS 공급자가 비즈니스를 성장시키는 데 도움을 줄 수 있습니다. 최근 Office 365 월간 활성 사용자 수는 1억 명에 달한다고 발표했습니다. Azure는 SaaS 솔루션이 Office 365 통합하고 1억 명의 활성 사용자에게 도달하고 비즈니스를 성장시키는 가장 쉬운 방법을 제공합니다. SaaS 공급자는 Azure Active Directory, Microsoft Power BI 및 Microsoft PowerApps 통합하여 고객에게 원활하고 통합된 환경을 만들어 더욱 가치 있게 만들 수 있습니다. Microsoft의 주요 기능 중 하나는 가장 큰 글로벌 영업 인력입니다. Azure에서 빌드된 SaaS 공급자의 경우 이제 엔터프라이즈 고객이 추가 비용 없이 사용할 수 있는 PowerApps 및 Office 365 Flow 커넥터를 게시하여 솔루션을 생산성 워크플로에 통합할 수 있습니다. 또한 Microsoft AppSource를 사용하고 공동 판매 프로그램에 대한 자격이 있는 공급자의 경우 Microsoft 영업 담당자가 이러한 SaaS 솔루션을 해당 계정으로 판매할 수 있도록 보상됩니다. <strong>SaaS 회사에 대한 이러한 투자의 조합은</strong> 비즈니스를 성장시킬 수있는 놀라운 기회를 제공하고 모든 개발자가 성공하도록 안내하기 위해 열심히 노력하는 방법&rsquo;의 또 다른 예를 제공합니다.</p>
+
+
+  <p>무대에서 설명한 이러한 흥미로운 발전 외에도 모든 개발자가 Azure를 사용하여 혁신적인 환경을 만들 수 있도록 돕기 위해 개발자 &ndash; 도구 및 클라우드 전반에 걸쳐 더 많은 혁신을 출시했습니다.</p>
+
+
+  <ul>
+   <li>.NET Core 2.0 미리 보기를 사용하면 개발자가 XML, 직렬화, 네트워킹, IO 등을 &ndash; 포함한 .NET Standard 2.0s&rsquo; 확장된 API &ndash; 집합을 사용하여 한 번 작성하고 여러 .NET 런타임(.NET Framework, .NET Core, Xamarin 및 유니버설 Windows Platform)에서 실행할 수 있습니다.</li>
+   <li>ASP.NET Core 2.0 미리 보기&rsquo;의 새로운 기능에는 서버 코드를 HTML과 결합하는 간단한 구문인 Razor Pages, 간소화된 시작, 더 많은 성능 향상 &ndash; 및 ASP.NET Core 2.0 웹앱이 이제 개발자가 코드를 작성하거나 애플리케이션을 다시 게시할 필요 없이 자동 Azure 진단 및 모니터링을 활용할 수 있습니다.</li>
+   <li><a href="https://www.visualstudio.com/downloads/" target="_blank">Visual Studio 2017 버전 15.2delivers</a>  버그 수정 및 Python 워크로드 및 데이터 과학 워크로드(R, Python 및 F#포함)의 반환을 포함하여 이전 릴리스에서 이전에 사용할 수 없었던 새로운 기능과 Typescript 2.2에 대한 지원이 추가되었습니다.</li>
+   <li><a href="https://www.visualstudio.com/vs/preview/" target="_blank">Visual Studio 2017 버전 15.3 Preview</a> 는 버그 수정, 접근성 향상 및 새로운 기능, 특히 .NET Core 2.0 미리 보기 지원, .NET Core 프로젝트용 Live Unit Testing, 더 많은 C++ 표준 규칙, ASP.NET 및 ASP.NET Core 지속적인 업데이트 향상을 차단합니다.  Azure App Services를 대상으로 하는 프로젝트와 컨테이너 개발 도구의 개선 사항</li>
+   <li>새로운 클라우드 디버깅 환경인 <a href="https://www.visualstudio.com/vs/snapshot-debugger/">스냅샷 디버거를 Visual Studio</a> 개발자는 광범위한 로깅 문이나 예외 처리 코드를 작성하지 않고도 예외 발생 시 클라우드 프로덕션 코드 동작에 대한 심층적인 인사이트를 제공합니다.</li>
+   <li><a href="https://rendering.azure.com/">Azure Batch Rendering</a> 은 Autodesk 3ds Max 및 Maya와 같은 시장을 선도하는 애플리케이션을 사용하여 렌더링 작업의 크기를 조정하는 데 도움이 되는 쉬운 방법을 제공합니다.&nbsp; Autodesk와 협력하는 Azure는 클라이언트 애플리케이션, 라이선스, 오케스트레이션 및 인프라 전반에 걸쳐 원활한 통합을 제공하는 최초의 퍼블릭 클라우드입니다.</li>
+   <li>Linux 및 Windows VM에 대한 <a href="https://azure.microsoft.com/en-us/blog/announcing-public-preview-of-azure-batch-low-priority-vms/">우선 순위가 낮은 Batch</a>는 Azure Batch를 사용하여 잉여 용량에 대한 액세스를 도입합니다. 우선 순위가 낮은 Batch는 최대 80%의 할인을 통해 대규모 워크로드에 대한 유연성과 비용 제어를 향상하여 우선 순위가 낮은 VM과 주문형 VM을 혼합하고 일치시킬 수 있습니다.</li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/get-started-with-scheduled-events/">예약된 이벤트</a> 및 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-instancemetadataservice-overview">인스턴스 메타데이터 API</a>를 포함한 VM 유지 관리 및 가용성에 대한 새로운 기능은 이제 공개 미리 보기로 제공됩니다. 이 새로운 기능을 사용하면 VM에서 실행되는 애플리케이션에서 향후 업데이트에 대해 알아볼 수 있습니다.유지 관리에서 VM을 다시 부팅하거나 다시 배포해야 하는 드문 경우, 이제 고객이 유지 관리를 예약하기 위해 30일 기간 내에 기간을 선택할 수 있는 기능을 제공합니다. 이제 일부 임박한 하드웨어 오류를 감지하고 예측하고, 중단을 방지하기 위해 다른 서버로 VM 실시간 마이그레이션을 수행할 수도 있습니다.</li>
+   <li>추가 비용 없이 사용 가능한 모든 LRS 및 GRS(Azure Files)에 대한 서비스 암호화를 Storage Azure Files에 저장되는 모든 데이터가 AES-256을 사용하여 암호화되도록 합니다.</li>
+   <li>조직이 조직에서 사용하도록 승인된&rsquo; 관리형 애플리케이션을 패키지하고 큐레이팅할 수 있도록 하는 새로운 Azure 서비스 카탈로그입니다.</li>
+   <li>관리 디스크는 스토리지 및 비용 관리를 더 쉽게 만드는 VM OS 디스크, 데이터 디스크 및 사용자 지정 이미지를 비롯한 Azure DevTest Labs 지원합니다.</li>
+   <li><a href="https://powerapps.microsoft.com/en-us/blog/preview-of-azure-functions-for-the-common-data-service">Common Data Service를 사용하는 Azure Functions</a> 는 미리 보기로 제공되며, CDS(Common Data Service)와 함께 Azure Functions를 만들고 사용하여 앱의 기능을 확장할 수 있습니다.</li>
+   <li>VNET, SQL 에이전트, 3부로 구성된 이름 및 CDC와 같은 SQL Server 인스턴스 수준 호환성을 제공하는 Managed Instance 프라이빗 미리 보기를 비롯한 향상된 기능을 Azure SQL Database SQL Server 앱을 Azure SQL Database 마이그레이션하는 것이 훨씬 더 쉽습니다. 또한 Graph 지원 및 위협 탐지에 대한 일반 공급에 대한 미리 보기도 곧 발표되었습니다.</li>
+   <li>엔터프라이즈급 SLA에서 지원되는 Azure HDInsight 3.6의 일반 공급. HDInsight 3.6은 Apache Hadoop &amp; Spark 에코 시스템의 다양한 오픈 소스 구성 요소의 최신 버전을 클라우드에 제공하므로 쉽게 배포하고 엔터프라이즈급 플랫폼에서 안정적으로 실행할 수 있습니다.</li>
+   <li>VM 네트워크 인터페이스를 FPGA로 오프로드하여 네트워크 대기 시간 및 VM 오버헤드를 줄이기 위한 <a href="https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-accelerated-networking-portal" target="_blank">Azure Accelerated Network</a> 의 새로운 미리 보기입니다.</li>
+   <li>CDN App Services 및 Storage 향상된 통합을 통해 해당 포털 환경을 벗어나지 않고 Azure 웹앱 서비스 또는 Azure Storage 계정에 CDN 추가할 수 있습니다.&nbsp;</li>
+  </ul>

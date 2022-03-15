@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 003a4b26614859f8352cb2ef23bb7fcde31e0014
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901261"
+Slug: empowering-developer-velocity-and-efficiency-with-kubernetes
+Title: Kubernetes를 사용하여 개발자 속도 및 효율성 강화
+Summary: KubeCon 북아메리카에 오신 것을 환영합니다. 어제만 샌디에이고에 함께 있었던 것 같습니다. 우리는 올해 물리적으로 더 멀리 떨어져 있지만, Kubernetes 커뮤니티는 계속 강합니다.
+Content: >-
+  <p>KubeCon 북미에 오신 것을 환영합니다!&nbsp; 어제만 샌디에이고에 함께 있었던 것 같습니다. &rsquo;올해는 육체적으로 더 멀리 떨어져 있지만 Kubernetes 커뮤니티는 계속 강합니다. Azure에서 오픈 소스 노력과 Azure Kubernetes Service를 통해 <a href="https://customers.microsoft.com/en-us/story/822002-finxact-banks-on-azure-for-core-financial-services" target="_blank">Finxact</a>,&rsquo; <a href="https://customers.microsoft.com/en-gb/story/815549-pet-care-leader-turns-monolith-app-into-a-global-distributed-solution-on-azure" target="_blank">Mars Petcare</a> 및 <a href="https://customers.microsoft.com/en-us/story/784791-mercedes-benz-r-and-d-creates-container-driven-cars-powered-by-microsoft-azure" target="_blank">Mercedes Benz</a>와 같은 사람과 회사가 COVID-19 전염병에 대응하여 스케일링하고 변환할 수 있게 된 것을 보고 매우 기쁩니다.</p>
+
+
+  <p>오늘날의&rsquo; 환경에서 고객은 Azure 및 Kubernetes를 통해 새 애플리케이션을 더 빠르게 빌드하고 이미 빌드한 애플리케이션을 더 쉽게 반복할 수 있는 애플리케이션&rsquo; 플랫폼 및 패턴을 사용할 수 있습니다. <a href="https://aka.ms/k8sonazure" target="_blank">Azure의 Kubernetes</a> 는 이 클라우드 네이티브 애플리케이션 개발을 위한 안정적이고 안전한 기반입니다. 동시에 현재 환경의 압력은 가능한 한 효율적이어야 한다는 것을 의미하며 <a href="https://azure.microsoft.com/en-us/services/kubernetes-service/" target="_blank">, Azure Kubernetes Service</a> 가 운영 및 리소스 효율성을 개선할 수 있는 권한을 부여한 방법을 확인하게 되어 기쁩니다. 지난 몇 개월 동안 Microsoft 팀은 고객이 더 효율적으로 작업할 수 있도록 놀라운 기술을 구축했으며, 오늘 여러분과 그 중 일부를 공유하게 되어 기쁩니다.</p>
+
+
+  <h2>Azure Kubernetes Service를 사용하여 사용자 지원&nbsp;</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/solutions/modern-application-development/" target="_blank">최신 애플리케이션 개발에</a> 대해 생각할 때 가장 인기 있는 방법 중 하나는 FaaS(Function as a Service) 및 이벤트 기반 프로그래밍입니다. 이러한 접근 방식의 첫 번째 개발은 클라우드 기반 플랫폼의 컨텍스트에 있었지만 지난 몇 년 동안 Kubernetes에서 Functions as a Service의 개발이 증가하고 있습니다. 이 혁신의 큰 부분은 <a href="https://keda.sh/" target="_blank">Kubernetes KEDA(이벤트 기반 자동 크기 조정기</a> ) 프로젝트였습니다. KEDA는 Microsoft와 Red Hat 간의 공동 프로젝트로 시작했지만, 진정한 커뮤니티 프로젝트로 빠르게 성장했습니다. 커뮤니티 구성원이 이벤트 기반 프로그래밍을 Apache Airflow 및 Alibaba Cloud와 연결하기 위해 KEDA가 확장된 것을 보고 매우 기뻤습니다. 최근 KEDA 커뮤니티는 ScaledObject KEDA 리소스의 개선 사항과 KEDA를 여러 워크플로에 쉽게 통합할 수 있는 새로운 스칼라를 포함하여 <a href="https://keda.sh/blog/keda-2.0-release/" target="_blank">2.0 릴리스</a> 를 발표했습니다. KEDA 2.0은 일반적으로 사용 가능하며 프로덕션 이벤트 기반 워크로드에 대해 준비됩니다.</p>
+
+
+  <p>혁신을 가능하게 하는 것은 Azure의 클라우드 네이티브 팀의 핵심 테넌트이지만 Kubernetes는 중요 업무용 인프라의 중추이기도 합니다. 따라서 대기 시간이 중요한 워크로드를 활성화하기 위해 기본 사항에 많은 투자를 하고 있습니다. 지난 9월 15일, Microsoft는 Xbox Game Pass 스트리밍 서비스를 통해 게임의 미래를 제공했습니다. 처음부터 팀 Xbox와 협력하여 Azure Kubernetes Service를 사용하여 Project xCloud 전원을 공급할 수 있게 해 줍니다. 이러한 중요 업무용 워크로드를 지원하기 위해 Kubernetes 버전 1.19를 일반 공급으로 가져오고 Microsoft 보안 기준에 부합하고 Linux 및 Kubernetes CIS 벤치마크를 준수하는 강화된 이미지를 추가하고 있습니다. 또한 AKS(Azure Kubernetes Service)에 컨테이너화된 통합을 통해 개방형 혁신을 지속적으로 지원하고 있습니다. 게임과 같은 많은 유명 워크로드는 대기 시간이 매우 중요하므로 AKS에서 임시 디스크에 대한 지원을 추가하여 클러스터 생성 시간을 단축하고 대기 시간을 단축할 수 있습니다. 그리고 이것은 이번 달의 개선 사항일 뿐입니다. 솔직히 매달 AKS에서 안정성, 성능 및 규모를 지원하는 새로운 기능을 제공합니다.</p>
+
+
+  <p>AKS 개선에 대해 생각하면서 고객의 운영 효율성을 개선하고자 합니다. 우리는 고객이 자신의 요구에 맞게 자신의 경험을 조정할 수 있도록 AKS에 유연성을 구축하기 위해 최선을 다하고 있습니다. 이를 위해 최근에 업그레이드 최대 서지 기능을 일반 공급으로 가져왔습니다. maxSurge를 사용하면 여러 개의 새 버퍼 노드를 활용하여 이전 노드를 동시에 대체하여 더 빠르게 업그레이드할 수 있습니다. 이제 사용자는 한 번에 단일 노드를 교체하는 대신 노드 풀당 최대 서지 값을 사용자 지정하여 동시 교체의 수를 정의할 수 있습니다.&nbsp; 업그레이드에 대한 최대 서지를 늘리면 중단이 증가하는 비용으로 업그레이드 대기 시간이 크게 줄어듭니다. 기본적으로 AKS 업그레이드는 느리고 신중하므로 클러스터에서 실행되는 애플리케이션의 중단을 최소화합니다. 그러나 고객이 더 많은 클라우드 네이티브 및 중단 내성 애플리케이션 패턴을 채택함에 따라 최대 급증을 사용하여 업그레이드를 가속화할 수도 있습니다.</p>
+
+
+  <h2>KubeCon에서 커넥트</h2>
+
+
+  <p>이러한 개선을 가능하게 한 Microsoft의 모든 팀에 축하드립니다. KubeCon 또는 그 너머에서 고객과 만날 때마다 이 노력이 모든 고객이 더 많은 일을 할 수 있도록 어떻게 힘을 실어 주었는지 보는 것은 정말 기쁜 일입니다. 가상이므로 Im&rsquo;은 11월 18일 수요일 태평양 표준시 2:30에 여러 Microsoft 엔지니어링 리드와 함께 <a href="https://www.meetup.com/Microsoft-Reactor-Redmond/events/274071532/" target="_blank">Ask Me Anything 패널 세션을</a> 주최하여 질문에 답합니다. Kubernetes 커뮤니티의 모든 사용자에게 훌륭한 KubeCon을 가지고 있습니다. 나는 내년에 직접 당신을 보고 (손가락이 교차) 기대하고있다.</p>

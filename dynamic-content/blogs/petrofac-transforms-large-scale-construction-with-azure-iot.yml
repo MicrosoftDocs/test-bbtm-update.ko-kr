@@ -1,0 +1,90 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 302924a5ac8accd684b009c8aa768ad6d86d14f3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907599"
+Slug: petrofac-transforms-large-scale-construction-with-azure-iot
+Title: 페트로팩은 Azure IoT 사용하여 대규모 건설을 변환합니다.
+Summary: Petrofac은 석유, 가스 및 재생 가능 에너지 자산을 설계, 구축, 운영 및 유지 관리합니다. 이 회사는 디지털 트랜스포메이션에 전념하고 있습니다. AI(인공 지능), IoT(사물 인터넷), 자동화, 기계 학습, 예측 분석, 디지털 트윈 및 Edge 컴퓨팅과 같은 기술을 사용하여 자체 및 해당 클라이언트에 대한 가치를 잠금 해제할 것으로 보입니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bb58d7d7-b428-4591-a69e-99ff72e87935.jpg"><img alt="A Petrofac engineer working, surrounded by pipes. " border="0" height="702" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1919d141-1ee3-4d9d-8c45-b9deedf7b975.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="멕시코 타바스코에서 페트로팩 운영" width="1024"></a></p>
+
+
+  <p align="center">그림 1. <em> Petrofac은 선도적인 유전 서비스 회사입니다.</em></p>
+
+
+  <h2>Petrofac은 에너지 고객의 가치를 실현합니다.</h2>
+
+
+  <p>Petrofac은 석유, 가스 및 재생 가능 에너지 자산을 설계, 구축, 운영 및 유지 관리합니다. 이 회사는 디지털 트랜스포메이션에 전념하고 있습니다. AI(인공 지능), IoT(사물 인터넷), 자동화, 기계 학습, 예측 분석, 디지털 트윈 및 Edge 컴퓨팅과 같은 기술을 사용하여 자체 및 해당 클라이언트에 대한 가치를 잠금 해제할 것으로 보입니다.</p>
+
+
+  <p>&ldquo;페트로팩&rdquo; 의 최고 디지털 책임자인 페이디 슬레이먼(Fady Sleiman)은 페트로팩에게 흥미로운 시기라고 설명한다. &ldquo;우리는 비즈니스 내에 디지털 플랫폼을 통합하고 이를 엔지니어링 및 운영 노하울과 결합하여 시장에서의 경쟁력을 뒷받침하고 역량과 효율성을 개선하기 위해 노력하고 있습니다.&rdquo;</p>
+
+
+  <h2>대규모 구조 변환을 위한 파트너</h2>
+
+
+  <p>페트로팩은 건설 활동 내에서 디지털 기술의 영향을 고려할 때 <a href="https://www.accenture.com/us-en/insights/industry-x-0-index?c=us_us_industryxo_10290183&amp;n=psgs_generic_0618&amp;gclid=Cj0KCQjwp5_qBRDBARIsANxdcilGhSRF9pSNYIDR2kxpPA0NcZ1zq8bNLFw-uvo7IVORZp8NECTa1qAaAvwKEALw_wcB" target="_blank">Accenture Digitals&rsquo; Industry X.0 팀으로</a> 전환하여 중요한 건설 및 시운전 단계에서 프로젝트 현장에서 안전, 생산성 및 효율성을 높이는 솔루션을 만들었습니다.</p>
+
+
+  <p>Petrofacs 프로젝트 감독관&ldquo;은 오늘 사용 가능한 작업 전선에 용접기가 잘 분산되어 있습니까?&rdquo; 또는 &ldquo;콘크리트 믹서가 도착했나요?&rdquo; 아니면&rsquo;&lsquo; 보일러&rsquo; 지역에서 적절한 안전 감독을 가지고 있습니까?&rsquo;&rsquo;&rsquo;  및 중장비 이동. Accenture Digital은 Petrofac과 협력하여 이러한 인사이트를 제공하기 위해 <a href="https://azure.microsoft.com/en-us/overview/iot/" target="_blank">Azure IoT</a> 사용하여 연결된 건설 솔루션을 개발했습니다.</p>
+
+
+  <p>&ldquo;Azure IoT Edge 분석 및 PaaS 클라우드 구성 요소를 사용하여 솔루션을 빌드할 수 있게 해 주었습니다. 이러한 솔루션은 프로젝트의&rdquo; 크기 조정 요구 사항을 충족할 수 있도록 다양한 연결 솔루션을 사용하여 계측되었다고 Accenture Digital &ndash; Industry X.0의 전무 이사 Yen-Sze Soon은 말했습니다.</p>
+
+
+  <p>Accenture는 작업자 및 장비의 태그에서 데이터를 수집하고 전송하는 솔루션을 설계했습니다. 사이트 데이터는 중요 시점, 생산성, 계획, 허용, 날씨 및 문서뿐만 아니라 기록 데이터와 같은 프로젝트 데이터와 통합되어 실시간 원스톱 대시보드를 제공합니다.&nbsp; 대시보드는 한 곳에서 액세스되는 프로젝트의 정확한 세부 정보에 대한 운영 가시성을 제공합니다(그림 2 참조).</p>
+
+
+  <p>&ldquo;라이브 대시보드에는 프로젝트 KPI, 빌드 진행률, 현장의 총 사용자 및 장비 수 및 날씨 경고가 표시됩니다. 심지어 편차 일정과 계획된 생산 규정 준수에 플래그를 지정합니다,&rdquo; 다니엘 Atbir, 부사장, 건설, 페트로 팩말했다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/da5b6086-eb10-422c-be75-390636561d49.png"><img alt="Figure 2 one stop view" border="0" height="580" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9f33b179-9469-46a2-abcd-23dec2fae125.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="그림 2 원스톱 보기" width="1024"></a></p>
+
+
+  <p align="center">그림 2. 건설 프로젝트의 원스톱 보기 예</p>
+
+
+  <h2>생산성 향상을 위한 Project 추적</h2>
+
+
+  <p>새 대시보드를 사용하여 현장 감독자는 건설 구역 또는 건설 승무원 내에서 생산성을 추적합니다(그림 3 참조). 병목 상태와 편차를 정확히 파악하고 적절한 수정 작업을 수행할 수 있습니다.</p>
+
+
+  <p>초기 시험 기간 동안, 팀은 점심 식사 전후에 생산성이 크게 떨어졌다는 것을 관찰했습니다. 작업자 열 지도를 살펴보면 작업자가 건설 현장을 떠났기 때문에 생산성이 느려지고 있다는 것을 깨달았습니다. 그들은 점심을 먹기 위해 거리를 운전하고 있었습니다. 페트로팩은 현장 식당을 짓는 것으로 반응했다. 생산성과 복지가 증가했습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8d92f95c-52fe-40d4-ac46-13e9b27fbd12.png"><img alt="Figure 3 map of manpower" border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/710bfa4b-31a8-407b-888b-ea46cac62215.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="그림 3 인력 지도" width="1024"></a></p>
+
+
+  <p align="center">그림 3. 건설 구역의 인력 지도 예</p>
+
+
+  <h2>작업자 안전을 위한 더 나은 결과 추구</h2>
+
+
+  <p>작업자가 작업에 대한 지원이 필요한 경우 각 작업자가 착용하는 디지털 태그에서 경보 신호를 활성화할 수 있습니다. 사이트 감독자 및 HSE(상태, 안전 및 환경) 팀은 경고를 받고 즉각적인 지원을 제공할 수 있습니다. &ldquo;실시간 경고와 작업자&rsquo;의 정확한 위치를 알고 있는 우리 팀은 더 나은 결과를 위해 더 신속하게 대응한다고 Daniel은 설명합니다&rdquo; .</p>
+
+
+  <h2>고부가가치 장비 사용 최적화</h2>
+
+
+  <p>장비의 위치를 아는 것은 간단합니다. 그러나 대규모 인프라 프로젝트에서는 어려울 수 있습니다. 고부가가치 장비에 태그를 지정하고 위치를 실시간으로 전송하고 알려면 Connected Construction을 통해 Petrofac은 하청업체를 지원하여 보다 협력적인 방식으로 장비 사용을 최적화할 수 있습니다. 생산성을 높이고, 따라서 건설 진행 상황을 높이기 위해 장비가 최적으로 할당됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f031715b-0ac8-40d1-9522-ec412eb58850.jpg"><img alt="An engineer at a large scale construciton facility." border="0" height="683" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/997c008f-4de0-4ccd-bd22-c1c69c2a01c0.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="petrofaclargescaleconstruction.jpg" width="1024"></a></p>
+
+
+  <p align="center">그림 4.&nbsp; <em> Petrofac은 연결된 건설에서 귀중한 인사이트를 얻습니다</em>.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>Petrofac 및 Accenture Digital은 생산성, 안전성 및 효율성을 높이기 위해 대규모로 연결된 건설 솔루션을 구현했습니다. Accenture와 Avanade는 Petrofac 프로젝트에 참여하고&nbsp; Azure IoT 대한 헌신을 바탕으로 올해의 Microsoft 사물 인터넷 파트너 상을 수상했습니다. &ldquo;Accentures&rsquo; 산업 혁신과 Microsoft Azure IoT 플랫폼 덕분에 연결된 건설 이니셔티브는 Petrofac&rdquo;에 대한 귀중한 통찰력을 제공하고 있다고 Fady는 덧붙였습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/overview/iot/" target="_blank">Azure IoT</a> 및 <a href="https://azure.microsoft.com/en-us/services/iot-edge/" target="_blank">Azure IoT Edge</a>에 대해 자세히 알아보세요.</p>

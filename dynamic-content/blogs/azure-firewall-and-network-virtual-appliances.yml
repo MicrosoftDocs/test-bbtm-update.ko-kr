@@ -1,0 +1,186 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 77e7115c0a4646b550409e70be43fbdcb464e3a7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908640"
+Slug: azure-firewall-and-network-virtual-appliances
+Title: Azure Firewall 및 네트워크 가상 어플라이언스
+Summary: 네트워크 보안 솔루션은 클라우드에서 실행되는 NVA(네트워크 가상 어플라이언스) 또는 클라우드 네이티브 제품(firewall-as-a-service라고 함)으로 온-프레미스의 어플라이언스로 제공할 수 있습니다.
+Content: >-
+  <p>네트워크 보안 솔루션은 클라우드에서 실행되는 NVA(네트워크 가상 어플라이언스) 또는 클라우드 네이티브 제품(방화벽-서비스로 알려진)으로 온-프레미스의 어플라이언스로 제공할 수 있습니다.</p>
+
+
+  <p>고객은 종종 Azure Firewall이 네트워크 가상 어플라이언스와 어떻게 다른지, 이러한 솔루션과 공존할 수 있는지, 뛰어난 위치, 누락된 내용&rsquo; 및 예상되는 TCO 이점을 물어봅니다. 이 블로그 게시물에서 이러한 질문에 답변합니다.</p>
+
+
+  <h2>NVA(네트워크 가상 어플라이언스)</h2>
+
+
+  <p>타사 네트워킹 제품은 Azure에서 중요한 역할을 하므로 이미 알고 있는 브랜드 및 솔루션을 사용하고 신뢰할 수 있으며 관리할 기술을 갖습니다. 대부분의 타사 네트워킹 제품은 현재 NVA로 제공되며 방화벽, WAN 최적화 프로그램, 애플리케이션 배달 컨트롤러, 라우터, 부하 분산 장치, 프록시 등 다양한 기능을 제공합니다. 이러한 타사 기능을 통해 많은 하이브리드 솔루션을 사용할 수 있으며 일반적으로 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/category/networking?page=1" target="_blank">Azure Marketplace</a>를 통해 사용할 수 있습니다. NVA를 배포하기 전에 고려해야 할 모범 사례는 <a href="https://azure.microsoft.com/en-us/blog/best-practices-to-consider-before-deploying-a-network-virtual-appliance/" target="_blank">네트워크 가상 어플라이언스를 배포하기 전에 고려해야 할 모범 사례를</a> 참조하세요.</p>
+
+
+  <h2>클라우드 네이티브 네트워크 보안</h2>
+
+
+  <p>클라우드 네이티브 네트워크 보안 서비스(방화벽-a-a-service라고 함)는 기본적으로 고가용성입니다. 사용량에 따라 자동으로 크기가 조정되며, 사용량에 따라 비용을 지불합니다. 지원은 특정 수준에 포함되며 게시되고 커밋된 SLA가 있습니다. 배포를 위한 DevOps 모델에 적합하며 클라우드 네이티브 모니터링 도구를 사용합니다.</p>
+
+
+  <h2>Azure Firewall이란?</h2>
+
+
+  <p>Azure Firewall은 클라우드 네이티브 네트워크 보안 서비스입니다. VNet 리소스에 대한 완전한 상태 저장 네트워크 및 애플리케이션 수준 트래픽 필터링을 제공하며, 기본 제공 고가용성 및 클라우드 확장성이 서비스로 제공됩니다. 아웃바운드, 인바운드, 스포크-스포크, VPN 및 ExpressRoute 트래픽을 필터링하여 VNet을 보호할 수 있습니다. 연결 정책 적용은 여러 VNet 및 Azure 구독에서 지원됩니다. Azure Monitor를 사용하여 모든 이벤트를 중앙에서 기록할 수 있습니다. 로그를 스토리지 계정에 보관하거나, 이벤트를 이벤트 허브로 스트리밍하거나, Log Analytics 또는 선택한 SIEM(보안 정보 및 이벤트 관리) 제품으로 보낼 수 있습니다.</p>
+
+
+  <h2>Azure Firewall이 조직 보안 아키텍처에 적합한가요?</h2>
+
+
+  <p>조직에는 다양한 보안 요구 사항이 있습니다. 경우에 따라 동일한 조직도 서로 다른 환경에 대해 서로 다른 보안 요구 사항을 가질 수 있습니다. 위에서 설명한 것처럼 타사 제품은 Azure에서 중요한 역할을 합니다. 현재 대부분의 차세대 방화벽은 NVA(네트워크 가상 어플라이언스)로 제공되며 특정 환경/조직에 꼭 필요한 보다 풍부한 차세대 방화벽 기능 집합을 제공합니다.&nbsp; 나중에 추가 검사를 위해 타사 제품에 트래픽을 전부 또는 일부 보내는 옵션을 사용하여 특정 트래픽 유형에 Azure Firewall을 사용할 수 있도록 체인 시나리오를 사용하도록 설정할 예정입니다. 이 타사 제품은 NVA 또는 클라우드 네이티브 솔루션일 수 있습니다.</p>
+
+
+  <p>많은 Azure 고객은 Azure Firewall 기능 집합이 적합하다는 것을 알게 되며 클라우드 네이티브 관리 서비스로서 몇 가지 주요 이점을 제공합니다.</p>
+
+
+  <ul>
+   <li>DevOps 통합 &ndash; 은 Azure Portal, 템플릿, PowerShell, CLI 또는 REST를 사용하여 쉽게 배포됩니다.</li>
+   <li>클라우드 규모로 HA에서 빌드됩니다.</li>
+   <li>유지 관리 서비스 모델 없음 - 업데이트 또는 업그레이드가 없습니다.</li>
+   <li>Azure 특수화&mdash; (예 <a href="https://docs.microsoft.com/en-us/azure/firewall/service-tags" target="_blank">: 서비스 태그</a> 및 <a href="https://docs.microsoft.com/en-us/azure/firewall/fqdn-tags" target="_blank">FQDN 태그</a>).</li>
+   <li>대부분의 고객에게 상당한 총 소유권 절감 비용.</li>
+  </ul>
+
+
+  <p>그러나 일부 고객에게는 타사 솔루션이 더 적합합니다.</p>
+
+
+  <p>다음 표에서는 Azure Firewall과 NVA에 대한 개략적인 기능 비교를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/19aaaa62-5bac-4569-b39f-6ab97082502f.jpg"><img alt="Table comparison of Azure Firwal versus NVAs" border="0" height="659" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db42c2a2-321c-4ce0-85cd-2c3ab44ddf91.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Firwal과 NVA의 테이블 비교" width="993"></a></p>
+
+
+  <p align="center"><em>그림 1: Azure Firewall과 네트워크 가상 어플라이언스</em> &ndash; 비교 기능 비교</p>
+
+
+  <h2>Azure Firewall이 비용 효율적인 이유</h2>
+
+
+  <p>Azure Firewall 가격 책정에는 고정 시간당 비용($1.25/방화벽/시간)과 자동 크기 조정을 지원하기 위해 처리된 GB당 가변 비용이 포함됩니다. 관찰에 따라 대부분의 고객은 NVA 배포 모델에 비해 30% &ndash; 50%를 절약합니다. <strong>높은 처리량 고객이 비용 효율성을 유지할 수 있도록 GB당 방화벽 비용을 $0.016/GB(-46.6%)로 2019년 5월 1일부터 적용하는 가격 인하를 발표</strong>합니다. 고정 시간당 비용은 변경되지 않습니다. 최신 가격 책정 정보는 Azure Firewall <a href="https://azure.microsoft.com/en-us/pricing/details/azure-firewall/" target="_blank">가격 책정 페이지</a>로 이동하세요.</p>
+
+
+  <p>다음 표에서는 전체 HA(활성/활성) 배포를 사용하는 NVA에 대한 개념적 TCO 뷰를 제공합니다.</p>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="top" width="208">
+     <p><b>비용</b></p>
+     </td>
+     <td valign="top" width="208">
+     <p><b>Azure Firewall</b></p>
+     </td>
+     <td valign="top" width="208">
+     <p><b>NVA</b></p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="208">
+     <p>Compute</p>
+     </td>
+     <td colspan="1" rowspan="4" style="text-align: center; vertical-align: middle;" width="208">
+     <p>$1.25/방화벽/시간</p>
+
+     <p>$0.016/GB 처리됨</p>
+
+     <p>(30%-50% 비용 절감)</p>
+
+     <p>&nbsp;</p>
+
+     <p>&nbsp;</p>
+
+     <p>&nbsp;</p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="208">
+     <p>최대 요구 사항을 충족하는 두 개의 더하기 VM</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="208">
+     <p>라이선스</p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="208">
+     <p>NVA 공급업체별 청구 모델</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="208">
+     <p>표준 공용 Load Balancer</p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="208">
+     <p>처음 5개 규칙: 시간당 $0.025<br>
+  추가 규칙: $0.01/규칙/시간<br>
+
+  처리된 GB당 $0.005</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="208">
+     <p>표준 내부 Load Balancer</p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="208">
+     <p>처음 5개 규칙: 시간당 $0.025<br>
+  추가 규칙: $0.01/규칙/시간<br>
+
+  처리된 GB당 $0.005</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="text-align: left; vertical-align: middle;" width="208">
+     <p>진행 중/유지 관리</p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="208">
+     <p>포함</p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="208">
+     <p>고객 책임</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="208">
+     <p>지원</p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="208">
+     <p>Azure 지원 계획에 포함됨</p>
+     </td>
+     <td style="text-align: center; vertical-align: middle;" width="208">
+     <p>NVA 공급업체별 청구 모델</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p align="center"><em>그림 2: Azure Firewall과 네트워크 가상 어플라이언스 &ndash; 비용 비교</em></p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/firewall/" target="_blank">Azure Firewall 설명서</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/blog/announcing-new-capabilities-in-azure-firewall/" target="_blank">3월 블로그: Azure Firewall의 새로운 기능 발표</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/pricing/details/azure-firewall/" target="_blank">가격</a></li>
+   <li>Azure Firewall 관리 파트너: <ul>
+    <li><a href="https://www.algosec.com/azure/" target="_blank">AlgoSec</a>&nbsp;</li>
+    <li><a href="https://www.barracuda.com/programs/azure" target="_blank">Barracuda</a></li>
+    <li><a href="https://www.tufin.com/supported-devices-and-platforms/microsoft-azure" target="_blank">Tufin</a></li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <ul>
+
+  </ul>

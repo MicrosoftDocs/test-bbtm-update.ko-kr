@@ -1,0 +1,105 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 218a0b2c8fd05380ad38026e0c71a69ba41e4310
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907702"
+Slug: migrate-mission-critical-sql-workloads-to-the-most-economical-cloud-destination
+Title: 중요 업무용 SQL 워크로드를 가장 경제적인 클라우드 대상으로 마이그레이션
+Summary: Azure SQL Database Managed Instance에서 중요 비즈니스용 서비스 계층의 GA(일반 공급)를 발표하게 되어 기쁩니다.
+Content: >-
+  <p><em>이 블로그 게시물은 CADD &amp; AI의 수석 제품 마케팅 관리자인 Eric Hudson이 공동 저술했습니다.</em></p>
+
+
+  <p>Azure SQL Database Managed Instance에서 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance#business-critical-service-tier-preview" target="_blank">중요 비즈니스용 서비스 계층</a>의 GA(일반 공급)를 발표하게 되어 기쁩니다. Managed Instance는 SQL Database 새로운 배포 옵션으로, 온-프레미스에서 클라우드로 SQL Server 워크로드의 마이그레이션을 간소화하고 최상의 SQL Server 완전 관리형 데이터베이스 서비스의 모든 이점을 결합합니다.</p>
+
+
+  <p style="border-bottom-color: currentColor; border-bottom-style: none; border-bottom-width: 0px; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: currentColor; border-left-style: none; border-left-width: 0px; border-right-color: currentColor; border-right-style: none; border-right-width: 0px; border-top-color: currentColor; border-top-style: none; border-top-width: 0px; color: rgb(67, 67, 67); font-family: inherit; font-size: 100%; font-style: inherit; font-variant: normal; font-weight: inherit; letter-spacing: normal; line-height: 1.53em; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 0px; orphans: 2; outline-color: invert; outline-style: none; outline-width: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: baseline; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;"><em style="border-bottom-color: currentColor; border-bottom-style: none; border-bottom-width: 0px; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: currentColor; border-left-style: none; border-left-width: 0px; border-right-color: currentColor; border-right-style: none; border-right-width: 0px; border-top-color: currentColor; border-top-style: none; border-top-width: 0px; font-family: inherit; font-size: 100%; font-style: italic; font-weight: inherit; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; outline-color: invert; outline-style: none; outline-width: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; vertical-align: baseline;">&ldquo;장기적인 성공을&#39; 데카르트는 물류 솔루션을 통해&#39; 고객에게 지속적으로 가치를 제공할 수 있는 능력에 의해 주도되었습니다. Microsofts&rsquo; Azure SQL Database Managed Instance를 사용하면 고객&rsquo; 문제를 해결하고 데이터베이스 서버 및 기타 데이터 센터 인프라 관리에 대해 걱정할 필요가 없습니다.&rdquo; </em></p>
+
+
+  <p style="border-bottom-color: currentColor; border-bottom-style: none; border-bottom-width: 0px; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: currentColor; border-left-style: none; border-left-width: 0px; border-right-color: currentColor; border-right-style: none; border-right-width: 0px; border-top-color: currentColor; border-top-style: none; border-top-width: 0px; color: rgb(67, 67, 67); font-family: inherit; font-size: 100%; font-style: inherit; font-variant: normal; font-weight: inherit; letter-spacing: normal; line-height: 1.53em; margin-bottom: 1em; margin-left: 0px; margin-right: 0px; margin-top: 0px; orphans: 2; outline-color: invert; outline-style: none; outline-width: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; text-align: right; text-decoration: none; text-indent: 0px; text-transform: none; vertical-align: baseline; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">&ndash; 라이몬드 디에데릭, EVP 정보 서비스, 데카르트</p>
+
+
+  <p>중요 비즈니스용 계층은 성능 및 가용성 요구 사항이 가장 높은 애플리케이션을 위해 빌드되며 중요 업무용 워크로드에 가장 적합한 선택입니다. 이러한 성능 및 가용성 기능은 격리된 여러 Always On 복제본과 초고속 로컬 SSD 스토리지를 통해 제공되어 대기 시간을 최소화하고 가장 높은 IO 처리량을 제공합니다. 프리미엄 IO 성능 및 고가용성 외에도 중요 비즈니스용은 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-in-memory" target="_blank">메모리 내 OLTP</a>, 추가 읽기 전용 복제본(<a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-read-scale-out" target="_blank">읽기 확장</a>) 및 SQL Server 데이터베이스 엔진의 파일 제한에 도달하는 유연한 데이터베이스 레이아웃(데이터베이스당 최대 32,767개 파일)과 같은 기능을 지원합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/64a75760-0bdf-49ab-bca2-9ae93aa73cd1.png"><img alt="Business Critical service tier diagram" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4d6971bb-18cb-4d29-ab5c-284f7cff0bdc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="중요 비즈니스용 서비스 계층 다이어그램" width="522"></a></p>
+
+
+  <p>범용 및 중요 비즈니스용 서비스 계층 간의 자세한 비교는 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-resource-limits#service-tier-characteristics" target="_blank">설명서 페이지를</a> 참조하세요.</p>
+
+
+  <p>미국의 블랙 <a href="https://xbox.playblackdesert.com/" target="_blank"><em>데저트 콘솔과 러시아의 블랙 데저트</em></a> <a href="https://www.blackdesertonline.com" target="_blank"><em>온라인</em></a><em>용 4TB 스토리지가 있는 Managed Instance Business Critical를 사용하기 시작했습니다.&ldquo; </em><em> </em><em> &nbsp; 이전에 사용한 온-프레미스 SQL Server 비해 Managed Instance는 완전한 호환성으로 더 나은 성능과 가용성을 보여줍니다.&nbsp; 온-프레미스 SQL Server Managed Instance로 이동하는 것이 매우 쉽고 코드 변환이 필요하지 않으므로 다음 게임 출시 시 이를 사용하는 것이 좋습니다.&rdquo;</em></p>
+
+
+  <p align="right">지희환, CTO, 펄라비스</p>
+
+
+  <h2>SQL Server 마이그레이션을 더욱 &ndash; 쉽게 만들기 새로운 기능 소개</h2>
+
+
+  <p>또한 Managed Instance 서비스 계층인 범용 및 중요 비즈니스용 둘 다에서 SQL Server 마이그레이션을 간소화하는 새로운 기능을 도입하게 되어 기쁩니다. 이제 미리 보기에서 사용할 수 있습니다. <strong>인스턴스 수준 데이터 정렬 및 Azure Active Directory(AAD) 로그인</strong>.&nbsp;</p>
+
+
+  <p><a href="https://aka.ms/managed-instance-collation" target="_blank">인스턴스 수준 데이터 정렬</a>을 사용하면 시스템 데이터베이스(카탈로그 메타데이터)에 대한 데이터 정렬을 선택하고 사용자 데이터베이스와 tempdb 간에 데이터 정렬을 정렬하여 추가 코딩 없이 지역화된 SQL 애플리케이션을 Managed Instance로 마이그레이션할 수 있습니다.</p>
+
+
+  <p><a href="https://aka.ms/managed-instance-aadlogins" target="_blank">AAD 로그인</a>을 사용하면 데이터베이스 간 쿼리를 포함하여 인스턴스 수준 작업을 수행할 수 있는 실제 인스턴스 범위 보안 주체로 Azure Active Directory 테넌트에서 사용자 및 그룹을 사양할 수 있습니다. AAD 로그인 지원 및 온-프레미스 Active Directory와 Azure Active Directory 간의 페더레이션을 사용하면 Windows 보안 주체를 완전히 매핑하고 대상 Managed Instance로 마이그레이션할 수 있습니다. Azure의 중앙 집중식 사용자 관리는 Single Sign-On 환경을 사용하여 보안을 최적화합니다.</p>
+
+
+  <p>이러한 기능은 네이티브 데이터베이스 복원, 사용자 시작 백업, 데이터베이스 간 쿼리 및 트랜잭션, SQL 에이전트, 데이터베이스 메일, Service Broker, CLR(공용 언어 런타임), 변경 데이터 캡처, 인스턴스 범위 SQL 감사, 카탈로그 뷰 및 DMV와 같은 다른 기능을 포함하는 인스턴스 범위 SQL Server 모델을 기반으로 계속 빌드됩니다.</p>
+
+
+  <h2>Managed Instance를 사용하여 비즈니스 연속성이 향상되었습니다.</h2>
+
+
+  <p>또한 워크로드가 마이그레이션되면 원활한 프로덕션 환경을 보장하기 위해 SQL Database 플랫폼 기능을 Managed Instance로 더 확장했습니다.</p>
+
+
+  <p>PITR(지정 시간 복원)을 사용하여 데이터베이스 수준에서 <a href="https://aka.ms/managed-instance-configurable-backup-retention" target="_blank">백업 보존을 구성</a> 하여 사용자 또는 애플리케이션 오류로부터 데이터를 복구하는 데 필요한 시간 간격을 7일에서 35일 단위로 제어합니다.</p>
+
+
+  <p>중요 업무용 애플리케이션에는 신뢰할 수 있는 지역 간 재해 복구 솔루션이 필요합니다. 이제 서로 다른 Azure 지역에서 실행되는 두 개의 관리되는 인스턴스 간에 <a href="https://aka.ms/managed-instance-failover-groups" target="_blank">자동 장애 조치(failover) 그룹을</a> 쉽게 구성할 수 있습니다. 자동 장애 조치(failover) 그룹은 보조 지역의 관리되는 인스턴스에서 호스트되는 모든 사용자 데이터베이스를 자동으로 복구할 수 있는 활성 지역 복제의 확장입니다. 이렇게 하면 치명적인 오류 또는 기타 계획되지 않은 이벤트로 인한 데이터의 전체 또는 부분 손실을 크게 완화할 수 있습니다. 또한 DR 지역의 읽기 가능한 보조 데이터베이스를 사용하여 읽기 전용 쿼리 워크로드를 오프로드할 수 있습니다.</p>
+
+
+  <h2>새로운 보안 기능으로 중요한 데이터에 대한 액세스 제어</h2>
+
+
+  <p>Managed Instance용 TDE(투명한 데이터 암호화)는 이제 Azure 클라우드 기반 외부 키 관리 시스템인 <a href="https://docs.microsoft.com/azure/key-vault/key-vault-secure-your-key-vault" target="_blank">Azure Key Vault</a>&rsquo;와의 통합을 통해 <a href="https://aka.ms/managed-instance-tde-byok" target="_blank">BYOK(Bring Your Own Key)</a> 시나리오를 지원합니다. 키 회전, 키 자격 증명 모음 사용 권한, 키 삭제, Azure Key Vault 기능을 사용하는 모든 TDE 보호기에 대한 감사/보고를 비롯한 중요한 관리 작업은 이제 BYOK 지원을 통해 제어할 수 있습니다.</p>
+
+
+  <p>이제 <a href="https://aka.ms/managed-instance-built-in-firewall">기본 제공 방화벽</a>이 도입되면서 네트워킹 보안이 크게 강화되었습니다. 방화벽은 관리되는 인스턴스 배포의 일부로 자동으로 구성되며 <strong>전체 인바운드 보호를</strong> 제공합니다. 가상 <em>네트워크 외부에서 실행되는 Microsoft 관리 및 배포 서비스에 속하는 IP 범위에 대해 서브넷에 배포된 관리 엔드포인트에 대한 액세스를 최소화할 수 있습니다.</em> Microsoft는 관리 서비스 IP 범위에 대한 변경 내용을 반영하기 위해 인스턴스 배포 후에 이 방화벽을 자동으로 유지 관리합니다.&nbsp;</p>
+
+
+  <h2>변화하는 워크로드&rsquo; 요구 사항을 충족하는 새로운 확장성 및 유연성</h2>
+
+
+  <p>Managed Instance에서 호스트되는 애플리케이션은 <strong>온라인 업데이트 서비스 계층 작업을</strong> 통해 Azure 플랫폼 탄력성을 활용할 수 있으며, 이를 통해 각각 8~80개 vCore 및 32GB에서 8TB에 이르는 컴퓨팅 및 스토리지를 독립적으로 스케일링할 수 있습니다. 중요 비즈니스용 일반 공급은 선택한 서비스 계층 내에서 확장 및 축소를 허용할 뿐만 아니라 워크로드&rsquo; 요구 사항에 따라 애플리케이션 가동 중지 시간 없이 서비스 계층을 범용에서 중요 비즈니스용으로, 그 반대로 변경할 수 있습니다.</p>
+
+
+  <h2>SQL Server 데이터에 가장 경제적인 클라우드 대상</h2>
+
+
+  <p>비용이 많이 드는 코드 재작성 없이 완전 관리형 지능형 데이터베이스 서비스로 데이터를 마이그레이션하면 상당한 자본 및 운영 비용을 절감할 수 있습니다. Forrester Consultings&rsquo; <a href="https://azure.microsoft.com/en-us/resources/forrester-tei-sql-database-managed-instance/en-us/" target="_blank">Total Economic</a> <sup>ImpactTM </sup>연구에 따르면 Managed Instance는 최대 212%의 3년 ROI, 피할 수 있는 하드웨어, 스토리지, 연간 최대 $800k의 네트워킹 비용 및 사내 DBA의 경우 최대 40%의 생산성 향상 및 IT 팀<sup>1</sup>의 생산성 20% 향상으로 CAPEX 절감을 제공합니다.</p>
+
+
+  <p>이러한 이점 외에도 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">Azure 하이브리드 혜택</a> 및 새로운 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-reserved-capacity" target="_blank">예약된 용량</a> 가격 책정을 통해 비용을 최대 80%까지 추가로 절감할 수 있으며, 이는 이제 중요 비즈니스용 서비스 계층에 사용할 수 있습니다. 개발 테스트 워크로드의 경우 라이선스 포함 요금을 최대 55% 할인하려면 <a href="https://azure.microsoft.com/en-us/offers/ms-azr-0148p/" target="_blank">Enterprise 개발 테스트</a> 또는 <a href="https://azure.microsoft.com/en-us/offers/ms-azr-0023p/" target="_blank">종량제 개발 테스트</a> 가격 책정을 권장합니다.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <p>Managed Instance를 빠르게 시작하려면 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-index" target="_blank">설명서 홈페이지</a> 를 방문하여 <a href="https://docs.microsoft.com/en-us/azure/sql-database/#5-minute-quickstarts" target="_blank">5분 빠른 시작을</a> 사용하여 Managed Instance에 대한 Azure 네트워크를 쉽게 구성하거나 포털, PowerShell, Azure 명령줄 및 ARM 템플릿에서 Managed Instance를 만들거나 크기를 조정합니다.&nbsp; 워크로드에 최적의 성능이 필요한 경우 중요 비즈니스용 서비스 계층을 배포하고 프리미엄 IO 성능, 고가용성 및 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-in-memory" target="_blank">메모리 내</a> OLTP 또는 추가 읽기 전용 복제본(<a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-read-scale-out" target="_blank">읽기 확장</a>)과 같은 기능을 활용합니다.</p>
+
+
+  <p>환경을 최적화하려면 <a href="https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017" target="_blank">SSMS 18.0(미리 보기 5)</a>을 설치하여 최근 추가된 기능인 AAD 로그인 및 트랜잭션 복제를 활용하고 자격 증명 및 감사를 위한 향상된 스크립팅 및 UI를 활용합니다. Managed Instance 데이터베이스의 성능을 모니터링하고, 자동화된 경고를 설정하며, 인공 지능을 사용하여 Azures 네이티브 클라우드 모니터링 솔루션인 Azure&rsquo; <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-azure-sql" target="_blank">SQL Analytics</a>의 성능 문제를 자동으로 해결합니다.</p>
+
+
+  <p>&rsquo;Managed Instance를 SQL Database 모든 SQL Server 데이터베이스에서 가장 낮은 TCO에서 사실상 핸즈프리 관리를 경험하게 되어 매우 기쁩니다. 지금 Managed Instance를 사용해 보시고 어떻게 생각하시는지 알려주세요!</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><sup>1</sup> <em>&ldquo;2018년 10월,&rdquo; 포레스터 컨설팅이 Microsoft Corporation을 대신하여 실시한 의뢰된 연구인 Microsoft Azure SQL Database Managed Instance의 총 경제적 영향&trade;.</em></p>

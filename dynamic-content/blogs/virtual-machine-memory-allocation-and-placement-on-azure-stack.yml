@@ -1,0 +1,116 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 23a5f24ff07c096c7ecc2185cb442d5393f7bc99
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907475"
+Slug: virtual-machine-memory-allocation-and-placement-on-azure-stack
+Title: Azure Stack의 가상 머신 메모리 할당 및 배치
+Summary: '고객은 다양한 방법으로 Azure Stack을 사용하고 있습니다. 연결 및 연결이 끊긴 시나리오에서 사용되는 Azure Stack을 온-프레미스와 Azure에 모두 배포하는 애플리케이션을 빌드하기 위한 플랫폼으로 계속 확인합니다. '
+Content: >-
+  <p>고객은 다양한 방법으로 Azure Stack을 사용하고 있습니다. 연결 및 연결이 끊긴 시나리오에서 사용되는 Azure Stack을 온-프레미스와 Azure에 모두 배포하는 애플리케이션을 빌드하기 위한 플랫폼으로 계속 확인합니다. 많은 고객이 하이브리드 또는 에지 경험의 시작점으로 기존 애플리케이션을 Azure Stack으로 마이그레이션하려고 합니다.</p>
+
+
+  <p>Azure Stack&rsquo;을 시작한 후에&rsquo; 어떤 작업을 하기로 결정하든, 어떤 시나리오에서든 일부 함수는 여기에서 다르게 수행된다는 점에 유의해야 합니다. 이러한 기능 중 하나는 용량 계획입니다. Azure Stack의 운영자는 시스템에 추가 용량을 추가해야 하는 시기를 정확하게 계획해야 합니다. 이를 계획하려면 시스템에서 메모리를 용량 함수로 사용하는 방법을 이해하는 것이 중요합니다. 이 게시물의 목적은 용량 계획에 사용 가능한 메모리를 결정할 때 재생되는 다양한 구성 요소에 중점을 두고 Azure Stack에서 VM(Virtual Machine) 배치가 작동하는 방식을 자세히 설명하는 것입니다.</p>
+
+
+  <p>Azure Stack은 컴퓨팅 및 스토리지의 하이퍼 수렴형 클러스터로 빌드됩니다. 수렴을 통해 배율 단위라고 하는 하드웨어를 공유할 수 있습니다. Azure Stack에서 배율 단위는 리소스의 가용성 및 확장성을 제공합니다. 배율 단위는 호스트 또는 노드라고 하는 Azure Stack 서버 집합으로 구성됩니다. 인프라 소프트웨어는 VM 집합 내에서 호스트되며 테넌트 VM과 동일한 물리적 서버를 공유합니다. 모든 Azure Stack VM은 서버 클러스터링 기술 및 개별 Hyper-V 인스턴스를 Windows 배율 단위&rsquo;로 관리됩니다. 배율 단위는 Azure Stack 획득 및 관리를 간소화합니다. 또한 배율 단위를 사용하면 Azure Stack, 테넌트 및 인프라에서 모든 서비스의 이동 및 확장성을 구현할 수 있습니다.</p>
+
+
+  <p>관리 포털에서 아래와 같이 Azure Stack에서 사용 가능한 메모리와 사용된 메모리를 보여 주는 원형 차트를 검토할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e77053a3-6337-48b3-8b5e-2d7b93f5b40c.png"><img alt="Capacity Chart on the Azure Stack Administrator Portal" border="0" height="304" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/806c7795-5296-47d8-9b60-feba9db7f4c6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Stack 관리자 포털의 용량 차트" width="566"></a></p>
+
+
+  <p align="center"><em>그림 1: Azure Stack 관리자 포털의 용량 차트</em></p>
+
+
+  <p>다음 구성 요소는 원형 차트의 사용된 섹션에서 메모리를 사용합니다.</p>
+
+
+  <ol>
+   <li><strong>호스트 OS 사용량 또는 예약</strong> &ndash; 호스트의 운영 체제(OS), 가상 메모리 페이지 테이블, 호스트 OS에서 실행되는 프로세스 및 공간 다이렉트 메모리 캐시에 사용되는 메모리입니다. 이 값은 호스트에서 실행되는 여러 Hyper-V 프로세스에서 사용하는 메모리에 따라 달라지므로 변동될 수 있습니다.</li>
+   <li><strong>인프라 서비스</strong> &ndash; Azure Stack을 구성하는 인프라 VM입니다. 1904년 릴리스 버전의 Azure Stack을 기준으로 242GB + (4GB x 노드 수)의 메모리를 구성하는 약 31개의 VM이 필요합니다. 인프라 서비스의 확장성과 복원력을 향상하는 동안 인프라 서비스 구성 요소의 메모리 사용률이 변경됩니다.</li>
+   <li><strong>복원력 예약</strong> &ndash; Azure Stack은 단일 호스트 실패 시 및 패치 및 업데이트 중에 테넌트 가용성을 허용하도록 메모리의 일부를 예약하여 VM의 성공적인 실시간 마이그레이션을 허용합니다.</li>
+   <li><strong>테넌트 VM</strong> &ndash; Azure Stack 사용자가 만든 테넌트 VM입니다. VM을 실행하는 것 외에도 패브릭에 착륙한 모든 VM에서 메모리를 사용합니다. 즉, 만들기&rdquo; 또는 실패 상태의 &ldquo;VM &ldquo;또는 게스트 내에서 종료된&rdquo; VM은 메모리를 사용합니다. 그러나 포털, powershell 및 cli에서 할당 취소 중지 옵션을 사용하여 할당을 취소한 VM은 Azure Stack의 메모리를 사용하지 않습니다.</li>
+   <li><strong>추가 기능 RP</strong> &ndash; SQL, MySQL, App Service 등과 같은 추가 기능 RP용으로 배포된 VM</li>
+  </ol>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/48ec644d-522a-409d-9b28-c15d1975130c.png"><img alt="Capacity usage on a 4-node Azure Stack" border="0" height="193" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2f8375c4-d31b-44fe-95f2-e447e2735edf.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="4노드 Azure Stack의 용량 사용량" width="404"></a></p>
+
+
+  <p align="center"><em>그림 2: 4노드 Azure Stack의 용량 사용량</em></p>
+
+
+  <p>Azure Stack에서 테넌트 VM 배치는 사용 가능한 호스트에서 배치 엔진에 의해 자동으로 수행됩니다. VM을 배치할 때 고려해야 할 두 가지 고려 사항은 해당 VM 유형에 대한 호스트에 <strong>충분한 메모리</strong> 가 있는지 여부와 VM이 <a href="https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-overview#providing-high-availability" target="_blank">가용성 집합</a> 의 일부인지 아니면 <a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview" target="_blank">VM 확장 집합</a>인지 여부입니다.&nbsp; Azure Stack은 메모리를 과도하게 커밋하지&#39;. 그러나 물리적 코어 수를 과도하게 커밋할 수 있습니다. 배치 알고리즘은 기존 가상에서 실제 코어 오버 프로비저닝 비율을 요소로 볼&#39;없으므로 각 호스트의 비율은 다를 수 있습니다.</p>
+
+
+  <h2>메모리 고려 사항: 가용성 집합/VM 확장 집합</h2>
+
+
+  <p>Azure Stack에서 다중 VM 프로덕션 시스템의 고가용성을 달성하려면 VM을 여러 장애 도메인, 즉 Azure Stack 호스트에 분산하는 가용성 집합에 배치해야 합니다. 호스트 오류가 발생하면 실패한 장애 도메인의 VM이 다른 호스트에서 다시 시작되지만 가능하면 동일한 가용성 집합의 다른 VM과 별도의 장애 도메인에 유지됩니다. 호스트가 다시 온라인 상태가 되면 VM의 균형을 다시 조정하여 고가용성을 유지합니다. VM 확장 집합은 백 엔드에서 가용성 집합을 사용하고 각 확장 집합 VM 인스턴스가 다른 장애 도메인에 배치되었는지 확인합니다. 배치를 시도하기 전에 다양한 수준에서 Azure Stack 호스트를 채울 수 있으므로 VM/VMSS 인스턴스를 별도의 Azure Stack 호스트에 배치할 수 있는 용량이 부족하여 가용성 집합 또는 VMSS의 VM을 만들 때 실패할 수 있습니다.</p>
+
+
+  <h2>메모리 고려 사항: Azure Stack 복원력 리소스</h2>
+
+
+  <p>Azure Stack은 성공적으로 프로비전된 VM을 계속 실행하도록 설계되었습니다. 하드웨어 오류로 인해 호스트가 오프라인 상태가 되거나 다시 부팅해야 하거나 Azure Stack 호스트의 패치 및 업데이트가 있는 경우 해당 호스트에서 실행되는 VM을 솔루션의 다른 사용 가능한 호스트로 실시간 마이그레이션하려고 시도합니다.&nbsp;</p>
+
+
+  <p>이 실시간 마이그레이션은 다시 시작 또는 마이그레이션이 수행될 수 있도록 예약된 메모리 용량이 있는 경우에만 수행할 수 있습니다. 따라서 전체 호스트 메모리의 일부는 예약되어 있으며 테넌트 VM 배치에 사용할 수 없습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-capacity-planning-compute#azure-stack-memory" target="_blank">복원력 예약</a> 계산에 대해 자세히 알아봅니다. 다음은 이 계산에 대한 간략한 설명입니다.</p>
+
+
+  <p><strong>VM 배치에 사용 가능한 메모리</strong> = 테넌트 VM을 실행하는 데 사용되는 총 호스트 메모리 &ndash; 복원력 예약 &ndash; 메모리 - Azure Stack 인프라 오버헤드</p>
+
+
+  <p>복원력 예약 = H + R * ((N-1) * H) + V * (N-2)</p>
+
+
+  <p>여기서 다음이 적용됩니다.</p>
+
+
+  <ul>
+   <li>H = 단일 호스트 메모리 크기</li>
+   <li>N = 배율 단위 크기(호스트 수)</li>
+   <li>R = 호스트 OS에서 사용하는 운영 체제 예약/메모리(이 수식의 .15)입니다.</li>
+   <li>V = 배율 단위에서 가장 큰 VM</li>
+  </ul>
+
+
+  <p>Azure Stack 인프라 오버헤드 = 242GB + (노드 4GB x #) 약 31개의 VM에 대한 이 계정은 Azure Stack&#39;인프라를 호스트하는 데 사용됩니다.</p>
+
+
+  <p>호스트 OS에서 사용하는 메모리 = 호스트 메모리의 15%(0.15)입니다. 운영 체제 예약 값은 예상값이며 호스트의 실제 메모리 용량 및 일반 운영 체제 오버헤드에 따라 달라집니다.</p>
+
+
+  <p>배율 단위에서 가장 큰 VM인 값 V는 배포된 가장 큰 테넌트 VM을 기반으로 동적으로 설정됩니다. 예를 들어 가장 큰 VM 값은 7GB 또는 112GB이거나 Azure Stack 솔루션에서 지원되는 다른 VM 메모리 크기일 수 있습니다. 이 대규모 VM의 실시간 마이그레이션이 실패하지 않도록 충분한 메모리를 예약할 수 있도록 여기에서 가장 큰 VM의 크기를 선택합니다. Azure Stack 패브릭에서 가장 큰 VM을 변경하면 VM 자체의 메모리 증가 외에도 복원력 예약이 증가합니다.</p>
+
+
+  <p>그림 3은 호스트당 메모리가 384GB인 12개 호스트 Azure Stack의 그래프이며, Azure Stack에서 가장 큰 VM의 크기에 따라 사용 가능한 메모리 양이 어떻게 달라지는지 설명합니다. 이 예제에서 가장 큰 VM은 Azure Stack에 배치된 유일한 VM입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5becd364-1028-4274-88bc-1efb4dca7493.png"><img alt="image" border="0" height="320" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f8f11061-e41a-4961-aacc-50228b8ffbf9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="515"></a></p>
+
+
+  <p align="center"><em>그림 3: 최대 VM 크기가 변경된 사용 가능한 메모리</em></p>
+
+
+  <p>복원력 예약은 호스트 크기의 함수이기도 합니다. 아래 그림 4에서는 가능한 가장 큰 VM 메모리 크기가 지정된 다른 호스트 메모리 크기 Azure Stack에서 사용 가능한 메모리를 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4d821dc9-5758-4557-8fab-59c8aacdfcf9.png"><img alt="image" border="0" height="325" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/275b7a34-9c25-4ecb-bb54-3ef4e0562600.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="520"></a></p>
+
+
+  <p align="center"><em>그림 4: 다양한 호스트 메모리에 대해 가장 큰 VM이 서로 다른 사용 가능한 메모리</em></p>
+
+
+  <p>위의 계산은 예측값이며 현재 버전의 Azure Stack에 따라 변경될 수 있습니다. 테넌트 VM 및 서비스를 배포하는 기능은 배포된 솔루션의 세부 정보를 기반으로 합니다. 이 예제 계산은 VM을 배포하는 기능에 대한 절대적인 대답이 아니라 가이드일 뿐입니다.</p>
+
+
+  <p>Azure Stack에 대한 용량을 계획하는 동안 위의 고려 사항에 유의하세요. 용량 계획 요구 사항을 완화하는 데 도움이 되는 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fazure-stack%2Fcapacity-planning-spreadsheet&amp;data=02%7C01%7Ckivenkat%40microsoft.com%7Cf1f1b0dbfb2e4fb386c408d6e5e8055f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636949182022565887&amp;sdata=%2F7Lvl3bU6VTAwMDBQCk1DDGU69%2BxzxmtnVaFHrmrEKg%3D&amp;reserved=0" target="_blank">Azure Stack Capacity Planner</a> 도 게시했습니다. <a href="https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-capacity-planning-compute" target="_blank">몇 가지 질문과 대답</a>을 확인하여 자세한 정보를 찾을 수 있습니다.</p>

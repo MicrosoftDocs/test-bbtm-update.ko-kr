@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 209ed50b80647a9b937019c8ee8a5a2e5e820917
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901079"
+Slug: model-comparison-and-merging-for-azure-analysis-services
+Title: Azure Analysis Services에 대한 모델 비교 및 병합
+Summary: 관계형-데이터베이스 스키마 비교 및 병합은 잘 설정된 시장입니다. 주요 제품에는 Visual Studio 부분적으로 통합된 SSDT 스키마 비교 및 Redgate SQL Compare가 포함됩니다.
+Content: >-
+  <p>관계형-데이터베이스 스키마 비교 및 병합은 잘 설정된 시장입니다. 주요 제품에는 부분적으로 Visual Studio 통합된 SSDT 스키마 비교 및 Redgate SQL Compare가 포함됩니다. 이러한 도구는 빌드 및 배포 프로세스를 자동화하고 중요 업무용 시스템의 안정성과 반복성을 높이기 위해 DevOps 문화를 채택하려는 조직에서 사용됩니다.</p>
+
+
+  <p>BI 모델의 비교 및 병합은 셀프 서비스와 IT 소유 &ldquo;회사 BI&rdquo; 간의 격차를 해소할 수 있는 기회도 제공합니다. 이를 통해 조직에서는 이중 모달 BI&rdquo; 전략을 채택&ldquo;하여 충돌하는 정의와 중복 솔루션을 제공하는 IT 소유 및 비즈니스 소유 모델의 경쟁 위험을 완화할 수 있습니다.</p>
+
+
+  <p>이러한 기능은 Analysis Services 테이블 형식 모델에 사용할 수 있습니다. 자세한 사용 시나리오, 지침 및 워크플로는 <strong>Analysis Services에 대한 모델 비교 및 병합 </strong><strong><a href="https://github.com/Microsoft/Analysis-Services/blob/master/BismNormalizer/Model%20Comparison%20and%20Merging%20for%20Analysis%20Services.pdf">백서를</a></strong><em> </em>참조하세요.</p>
+
+
+  <p>Azure Analysis Services 웹 디자이너에서 PBIX 가져오기(자세한 내용은 <a href="https://azure.microsoft.com/en-us/blog/introducing-the-azure-analysis-services-web-designer" target="_blank">이 게시물</a> 참조) 및 BISM Normalizer를 사용하여 이 작업을 수행할 수 있습니다. 이제 Analysis Services Git <a href="https://github.com/Microsoft/Analysis-Services">리포지토리</a>에 상주하는 것을 알려드립니다. BISM Normalizer는 Azure Analysis Services 및 SQL Server Analysis Services에서 작동하는 인기 있는 오픈 소스 도구입니다. 새 1400 호환성 수준을 포함한 모든 테이블 형식 모델 개체 및 호환성 수준이 지원됩니다. Visual Studio 확장은 소스 제어 시스템, 빌드 및 배포 프로세스 및 모델 관리 워크플로와 긴밀하게 통합됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4cf9423e-038a-4755-bad1-48940f7bac9c.png"><img alt="Azure AS Schema Diff" border="0" height="1594" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c3b2cd1f-acad-48d2-9f31-b6b3165eac5f.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="Azure AS 스키마 차이" width="1844"></a></p>
+
+
+  <p>하비에르 길렌(블루 그래나이트), 크리스 웹(크로스조인 컨설팅), 마르코 루소(SQLBI), 크리스 울더링크(테이블 형식), 빌 안톤(아편 솔루션) 덕분에 백서에 기여했습니다.</p>

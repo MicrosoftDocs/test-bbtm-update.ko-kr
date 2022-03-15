@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 46046f8786e889f3d8ac0151620c454feefc8bf9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901770"
+Slug: azure-s-iot-hub-global-expansion-newly-available-in-8-regions
+Title: 'Azure의 IoT Hub 글로벌 확장: 8개 지역에서 새로 사용 가능'
+Summary: 전 세계적으로 더 많은 고객과 조직이 더 많은 성과를 거둘 수 있도록 하는 Microsoft의 사명의 일환으로 Azure IoT Hub는 현재 Azure 영국 남부, 영국 서부, 캐나다 중부, 캐나다 동부, 인도 중부, 인도 남부, 미국 동부 2 및 미국 중부에 있는 3개 대륙의 4개 국가 내에서 확장되고 있습니다.
+Content: >-
+  <p>전 세계적으로 더 많은 고객과 조직이 더 많은 성과를 거둘 수 있도록 하는 Microsofts&rsquo; 임무의 일환으로 <strong>Azure IoT Hub</strong>는 3개 대륙의 4개 국가 내에서 확장되고 있으며, 현재 Azure UK South, UK West, Canada Central, Canada East, 인도 중부, 인도 남부, 미국 동부 2 및 미국 중부에서 가용성을 제공하고 있습니다. 이러한 새로운 지역에서는 업무, 열정, 창의적인 포부 및 비즈니스에 가장 적합한 지리적 위치에서 IoT 솔루션을 구현하기 위한 더 많은 옵션을 제공합니다.<br>
+
+  &nbsp; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/16177249-dd84-470c-9a2c-7f48b482cfdd.png"><img alt="azure-iot-hub" border="0" height="331" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eb00ecd4-6333-4ecf-b263-2fa0f0663ffc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="azure-iot-hub" width="512"></a><br>
+
+  Azure IoT Hub는 수백만 개의 IoT 디바이스와 솔루션 백 엔드 간에 안정적이고 안전한 양방향 통신을 가능하게 하는 완전 관리형 서비스입니다.</p>
+
+
+  <p><strong>Azure IoT Hub는 다음을 제공합니다.</strong></p>
+
+
+  <ul>
+   <li>디바이스별 보안 자격 증명 및 액세스 제어를 사용하여 통신 보호</li>
+   <li>여러 디바이스-클라우드 및 클라우드-디바이스 하이퍼스케일 통신 옵션</li>
+   <li>디바이스별 상태 정보 및 메타 데이터의 쿼리 가능한 스토리지</li>
+   <li>가장 인기 있는 언어 및 플랫폼용 디바이스 라이브러리를 사용하여 간편한 디바이스 연결</li>
+  </ul>
+
+
+  <p>IoT Hub는 디바이스와 클라우드의 솔루션 간의 브리지로, 해당 데이터를 실시간으로 저장, 분석 및 작업할 수 있습니다.&nbsp;</p>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/iot-hub/" target="_blank">IoT Hub 설명서를 참조하세요</a>.</p>

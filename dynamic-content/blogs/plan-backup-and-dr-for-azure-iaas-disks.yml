@@ -1,0 +1,41 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bd966be0b7f89b3dfffdc386ae425614d4c56f9d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908179"
+Slug: plan-backup-and-dr-for-azure-iaas-disks
+Title: Azure IaaS 디스크에 대한 백업 및 재해 복구 계획
+Summary: 이 문서에서는 Azure의 IaaS VM 및 디스크에 대한 백업 및 재해 복구 고려 사항의 기본 사항을 설명합니다.
+Content: >-
+  <p>최근에 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-backup-and-disaster-recovery-for-azure-iaas-disks">Azure Disks용 Backup 및 DR</a>을 설명하는 문서를 게시했습니다. Azure IaaS 사용자는 디스크에 적합한 DR(Backup 및 재해 복구) 방법론을 계획하기 위해 이 문서를 참조하는 것이 좋습니다. 다음은 몇 가지 고려 사항입니다.</p>
+
+
+  <h2>Azure Disks의 내구성</h2>
+
+
+  <p>Azure가 업계 최고의 0% <a href="https://en.wikipedia.org/wiki/Annualized_failure_rate">연간 실패율</a>로 IaaS 디스크에 대한 엔터프라이즈급 내구성을 지속적으로 제공하고 있다는 사실을 보고하게 되어 기쁩니다. 즉, Azure에서 IaaS 디스크에 영구적으로 오류가 발생한 적이 없습니다. Azure 고객의 경우 Azure에서 실행되는 중요한 애플리케이션에 대한 더 낮은 비용, 더 나은 안정성 및 원활한 작업으로 직접 변환됩니다. 예를 들어 Azure는 로컬에 저장된 세 개의 중복 복사본으로 데이터를 보호하므로 대부분의 경우 중복성이 있는 비용이 많이 드는 RAID 솔루션을 빌드할 필요가 없습니다&rsquo;. 디스크를 보관하는 두 개의 다른 하드웨어 구성 요소가 동시에 실패하더라도 데이터의 내구성이 보호되고 Azure는 손실된 복사본을 대체하기 위해 백그라운드에서 새 복제본을 자동으로 생성합니다. 데이터를 보호하는 것이 모든 스토리지 플랫폼에 매우 중요하다는 것을 핵심 고려 사항으로 Azure 디스크 플랫폼을 빌드했습니다. Azure 디스크를&rsquo; 사용하면 클라우드에서 디스크 손실에 대해 지속적으로 걱정할 필요가 없습니다.</p>
+
+
+  <p>하드웨어 오류로 인해 VM 가용성을 위해 <a href="https://azure.microsoft.com/en-us/support/legal/sla/virtual-machines/v1_6/">Azure SLA</a> 에서 적용되는 VM을 일시적으로 사용할 수 없게 될 수 있습니다. 또한 Azure는 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-premium-storage-performance">Premium Storage 디스크</a>를 사용하는 단일 VM 인스턴스에 업계 최고의 SLA를 제공합니다.</p>
+
+
+  <h2>Backup 및 재해 복구</h2>
+
+
+  <p>플랫폼에는 지역화된 하드웨어 오류에 대한 기본 제공 보호 기능이 있지만 대규모 중단을 일으킬 수 있는 주요 인시던트를 보호하기 위해 백업 및 재해 복구를 계획해야 합니다. 여기에는 허리케인, 지진, 화재 등과 같은 치명적인 이벤트가 포함됩니다. DR의 경우 데이터의 정기적인 백업을 다른 지리적 위치로 계획해야 합니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-backup-and-disaster-recovery-for-azure-iaas-disks">Azure Disks용 Backup 및 DR</a> 문서를 참조하세요.</p>
+
+
+  <p>디스크 백업에 대해 고려해야 할 중요한 사항은 일관된 백업을 수행하는 &ldquo;것입니다&rdquo;. 백업은 VM에 있는 모든 디스크의 일관되고 조정된 상태로 수행해야 합니다. 가능하면 애플리케이션 일치&rdquo; 백업을 생성&ldquo;하기 위해 애플리케이션과도 조정해야 합니다. 복구 시 VM 및 애플리케이션을 유효한 상태로 복원할 수 있는지 확인하는 데 필요합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/backup/">Azure Backup 서비스는</a> 디스크에 대한 Backup 솔루션으로 사용할 수 있으며 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-managed-disks-overview">관리</a> <a href="https://docs.microsoft.com/en-us/azure/storage/storage-about-disks-and-vhds-windows#unmanaged-disks">디스크 및 관리되지 않는 디스크</a>에서 작동합니다. Backup 서비스는 일관된 백업을 위해 디스크의 조정을 처리하고 DR의 다른 지리적 지역에 백업을 복제하는 자격 증명 모음에 대한 GRS 옵션을 제공합니다.</p>
+
+
+  <p><img alt="" src=""><br>
+
+  또 다른 해결 방법은 디스크에 대한 일관된 스냅샷을&rdquo; 만드는 &ldquo;것입니다. 이 경우 일관된 백업을 만들기 위한 디스크 조정 및 다른 지리적 위치에 대한 백업 복제를 처리해야 합니다.</p>
+
+
+  <p><img alt="" src="https://docs.microsoft.com/en-us/azure/storage/media/storage-backup-and-disaster-recovery-for-azure-iaas-disks/backup-and-disaster-recovery-for-azure-iaas-disks-2.pngarticle for more details.</p>

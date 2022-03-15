@@ -1,0 +1,65 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f5847bce0f4bf84f803939d965b43f1b7ec994ff
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908003"
+Slug: troubleshooting-microsoft-azure-storage-with-message-analyzer
+Title: Message Analyzer를 사용하여 Microsoft Azure Storage 문제 해결
+Summary: Microsoft Message Analyzer를 사용하여 Azure Storage, 클라이언트 애플리케이션 및 네트워크 추적에서 로그를 가져오고 상관 관계를 지정하여 Azure Storage 애플리케이션의 진단을 간소화합니다. 이 블로그에서는 모니터링, 진단 및 문제 해결 가이드를 기반으로 스토리지 기반 애플리케이션 문제를 해결하는 데 도움이 되도록 설계된 다양한 쿼리 및 규칙을 사용하는 방법을 보여 줍니다.
+Content: >-
+  <h2>개요</h2>
+
+  클라우드 스토리지 애플리케이션의 문제 진단 및 해결은 특히 미리 고려되지 않는 경우 복잡할 수 있습니다. 문제가 발생하면 여러 로그 파일(Azure Storage Analytics, Azure Storage 클라이언트 라이브러리의 클라이언트 쪽 로그 및 네트워크 추적)을 구문 분석하고 분석하여 문제를 완전히 이해하고 완화할 수 있습니다. 이를 지원하기 위해 파서, 색 규칙, 차트, 필터 및 보기 레이아웃을 포함하여 Microsoft Message Analyzer에서 Azure Storage 특정 자산 집합을 릴리스했습니다. 이 블로그는 간략한 개요를 제공하지만 전체 실습 자습서는 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-e2e-troubleshooting/">Azure Storage 메트릭 및 로깅, AzCopy 및 Message Analyzer를 사용한 엔드 투 엔드 문제 해결</a>을 참조하세요.
+
+  <h2>샘플 시나리오 - Storage 서비스 버전에 대한 Storage 로그 검색</h2>
+
+  이 블로그 게시물의 경우 고객이 클라이언트 애플리케이션이 현재 사용 중인 REST 버전을 확인하려는 시나리오를 검토하여 이전 서비스 버전 중 몇 가지의 계획된 <a href="https://azure.microsoft.com/blog/2014/08/04/microsoft-azure-storage-service-version-removal/">Azure Storage 서비스 제거</a>를 준비할 수 있습니다(필요한 경우).
+
+
+  자세한 내용은 Azure Storage 자산이 설치되고 Azure Storage 로깅 및 메트릭이 사용하도록 설정된 Message Analyzer가 있다고 가정합니다. 자세한 내용은 전체 실습 자습서를 참조하세요.
+
+  <h3>1단계: AzCopy를 사용하여 Azure Storage 서버 쪽 로그 다운로드</h3>
+
+  AzCopy는 <a href="https://azure.microsoft.com/en-us/downloads/">Azure 다운로드</a> 페이지에서 다운로드할 수 있습니다. AzCopy 사용에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/">Microsoft Azure Storage AzCopy를 사용하는 방법을</a> 참조하세요. 예를 들어 다음 명령은 2015년 1월 2일에 일어난 Blob 작업에 대한 로그 파일을 C:\Temp\Logs\Server 폴더에 다운로드합니다. storageaccountname을 스토리지 계정의 이름으로 바꾸고 <strong>storageaccountkey&lt;&gt;</strong>를 계정 액세스 키로 바꿉<strong>&lt;니다.&gt;</strong>
+
+  <pre class="prettyprint">AzCopy.exe /Source:https://&lt;storageaccountname&gt;.blob.core.windows.net/$logs /Dest:C:\Temp\Logs\Server /Pattern:"blob/2015/01/02" /SourceKey:&lt;storageaccountkey&gt; /S /V</pre>
+
+  <b>참고: </b> 스토리지 서비스가 로그 기록기를 플러시하는 빈도 때문에 로그 데이터를 사용할 수 있게 되는 데 최대 1시간이 걸릴 수 있습니다.
+
+  <h3>2단계: Message Analyzer로 서버 쪽 로그 가져오기</h3>
+
+  1. Microsoft Message Analyzer의 <b>파일</b> 메뉴에서 <b>새 세션 </b>&gt; <b>파일</b> &gt; <b>파일 추가 파일을</b> 클릭하여 서버 쪽 로그를 다운로드한 위치로 이동합니다. 서버 쪽 로그를 선택하고 <strong>열기 </strong>단추를 클릭합니다.
+
+
+  2. <b>세션 세부 정보</b> 패널에서 각 서버 쪽 로그 파일에 대한 <b>텍스트 로그 구성</b> 드롭다운을 <b>AzureStorageLog</b>(아직 설정되지 않은 경우)로 설정하여 Microsoft Message Analyzer가 로그 파일을 올바르게 구문 분석할 수 있도록 하고 <b>시작</b> 단추를 클릭합니다.
+
+  <h3>3단계: Analysis Grid에 RequestVersionHeader 열 추가</h3>
+
+  Microsoft Message Analyzer의 <b>열 선택기 &gt; Azure Storage 로그 &gt; Azure Storage 로그 항목</b>에서 <strong>RequestVersionHeader</strong>를 마우스 오른쪽 단추로 클릭하고 "열로 추가"를 선택하여 Analysis Grid에 표시되도록 합니다.
+
+  <h3>4단계: 이전 REST 버전 검색</h3>
+
+  다음 세션 필터를 추가하여 제거하도록 예약된 Azure Storage 서비스 버전을 사용하는 요청이 있는지 확인합니다.
+
+  <pre class="prettyprint">AzureStorageLog.RequestVersionHeader &lt; "2012-02-12"</pre>
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="Microsoft Message Analyzer" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2015-01-25_15h41_10.png" alt="Microsoft Message Analyzer" width="610" height="213" border="0" />
+
+
+  Analysis Grid에서 각 행(있는 경우)을 두 번 클릭하여 개별 요청에 대한 자세한 정보를 가져올 수 있습니다. "어떻게 해야 하나요?"를 읽을 수도 있습니다. 을 <a href="https://azure.microsoft.com/blog/2014/08/04/microsoft-azure-storage-service-version-removal/">참조</a>하세요.
+
+
+  <b>성능 팁:</b> Message Analyzer는 로그 파일을 메모리에 로드합니다. 로그 데이터 집합이 많은 경우 Message Analyzer에서 최상의 성능을 얻기 위해 데이터를 로드하기 전에 세션 필터를 적용해야 합니다.
+
+  <h2>요약</h2>
+
+  위의 시나리오에서는 AzCopy와 함께 Message Analyzer를 사용하여 여전히 이전 REST 버전을 사용하는 클라이언트를 식별하는 방법을 설명했습니다. Azure Storage 작업할 때 고유한 디버깅 및 분석에 동일한 도구 조합을 사용할 수 있습니다.
+
+  <h2>다음 단계</h2>
+
+  여기서 전체 실 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-e2e-troubleshooting/#mma-analyze-data">습 자습서를</a> 수행하여 스토리지, 네트워크 및 클라이언트 쪽 로그의 상관 관계를 비롯한 고급 시나리오를 통해 성능 문제를 해결합니다.
+
+
+  자세한 내용은 다음 리소스를 참조하세요. •    <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-e2e-troubleshooting/">Azure Storage 메트릭 및 로깅을 사용하여 E2E 문제 해결, AzCopy 및 Message Analyzer</a> •    <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-monitoring-diagnosing-troubleshooting/">Microsoft Azure Storage 모니터링, 진단 및 문제 해결</a> •    <a href="https://azure.microsoft.com/blog/2014/08/04/microsoft-azure-storage-service-version-removal/">Microsoft Azure Storage 서비스 버전 제거</a>

@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9d73ea6f733c6f574828b49deba4af82f6407645
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907937"
+Slug: application-insights-connector-for-microsoft-flow-and-azure-logic-apps
+Title: Flow 및 Logic Apps용 커넥터를 사용하여 애플리케이션 Insights 프로세스 자동화
+Summary: Azure Application Insights 원격 분석 데이터에서 인사이트를 쿼리하고 가져오는 강력한 검색 기능을 제공합니다. 종종 동일한 쿼리를 반복적으로 실행하여 서비스가 제대로 작동하는지 확인하거나 추세 및 변칙을 찾을 수 있습니다. 시간을 절약하고 이러한 인사이트를 작업으로 전환할 수 있도록 반복적인 쿼리를 사용자 고유의 워크플로로 전환하는 것이 좋지 않을까요?
+Content: >-
+  <p><a href="https://azure.microsoft.com/services/application-insights/" target="_blank">Azure Application Insights</a> 원격 분석 데이터에서 인사이트를 쿼리하고 가져오는 강력한 검색 기능을 제공합니다.</p>
+
+
+  <p>종종 동일한 쿼리를 반복적으로 실행하여 서비스가 제대로 작동하는지 확인하거나 추세 및 변칙을 찾을 수 있습니다. 시간을 절약하고 이러한 인사이트를 작업으로 전환할 수 있도록 반복적인 쿼리를 사용자 고유의 워크플로로 전환하는 것이 좋을까&rsquo;요? 이제 자동화된 워크플로를 시각적으로 만들 수 있으므로 <a href="https://flow.microsoft.com/services/shared_applicationinsights/?slug=azure-application-insights" target="_blank">Microsoft Flow</a> 및 <a href="https://docs.microsoft.com/azure/logic-apps/logic-apps-what-are-logic-apps" target="_blank">Azure Logic Apps 애플리케이션 Insights</a> 커넥터를 사용할 수 있습니다.</p>
+
+
+  <p>이제 미리 보기로 제공되는 Application Insights 커넥터를 사용하여 애플리케이션 Insights 작업을 사용하여 원격 분석 데이터를 쿼리하거나 시각화하는 워크플로를 만들 수 있습니다. 선택한 다른 후속 작업과 함께 자동으로 실행&nbsp;되도록 할 수 있습니다. 전자 메일 알림 보내기, Visual Studio Team Services 버그 만들기 또는 Slack 또는 Microsoft Teams 메시지 게시와 같은 수백 가지 사용 가능한 작업이 있습니다.</p>
+
+
+  <p>다음은 Microsoft Flow 통합의 샘플 스크린샷입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/625f2b9b-4061-4129-92be-11f0d546da74.png"><img alt="Azure Application Insights connector for Microsoft Flow" border="0" height="469" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/02937edb-3fef-43ab-ad75-21639e85e16a.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Microsoft Flow 대한 Azure Application Insights 커넥터" width="610"></a></p>
+
+
+  <p>다음은 Azure Logic Apps 통합의 샘플 스크린샷입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eb57aebe-05ae-46f2-8334-37fde075a332.png"><img alt="Azure Application Insights connector for Azure Logic Apps" border="0" height="610" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3102cf7b-4682-4769-b84a-33571c34dbd5.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Azure Logic Apps Azure Application Insights 커넥터" width="573"></a></p>
+
+
+  <p>Microsoft Flow <a href="https://docs.microsoft.com/en-us/azure/application-insights/automate-with-logic-apps" target="_blank">또는 Azure Logic Apps</a> <a href="https://docs.microsoft.com/en-us/azure/application-insights/app-insights-automate-with-flow" target="_blank">커넥터를</a> 사용하여 Azure 애플리케이션 Insights 프로세스를 자동화하는 방법에 대해 자세히 알아봅니다.</p>
+
+
+  <p>오늘 사용해 보고 피드백을 <a href="mailto:aiflowfb@microsoft.com">aiflowfb@microsoft.com</a>공유하세요.</p>
+
+
+  <p>Wed&rsquo; love to hear from you!</p>

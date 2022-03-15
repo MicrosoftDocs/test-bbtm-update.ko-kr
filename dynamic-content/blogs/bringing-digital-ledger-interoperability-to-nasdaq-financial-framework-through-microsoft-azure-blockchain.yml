@@ -1,0 +1,52 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 744af4c016bfa69b3ca17ace0facfd0ccf4a4c43
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907871"
+Slug: bringing-digital-ledger-interoperability-to-nasdaq-financial-framework-through-microsoft-azure-blockchain
+Title: Microsoft Azure 블록체인을 통해 나스닥 파이낸셜 프레임워크에 디지털 원장 상호 운용성 가져오기
+Summary: >
+  나스닥은 1971년 세계 최초의 전자 증권 거래소를 통해 수백만 명의 개인 투자자를 개방함으로써 금융 시장에 혁명을 일으켰다. 그 이후, 회사의 혁신적인 정신은 자본 시장에서 기술 발전의 선두 주자에 그들을 유지하고있다, 강국 기술 제공 업체로 브랜드를 변환하는 동안.
+Content: >-
+  <p>나스닥은 1971년 세계&rsquo; 최초의 전자 증권 거래소를 통해 수백만 명의 개인 투자자를 개방함으로써 금융 시장에 혁명을 일으켰다. 그 이후, 회사의&rsquo; 혁신적인 정신은 자본 시장에서 기술 진화의 선두 주자에 그들을 유지하고있다, 강국 기술 제공 업체로 브랜드를 변환하는 동안.</p>
+
+
+  <p>나스닥&rsquo; 상업 기술 팔, <a href="https://business.nasdaq.com/market-tech" target="_blank">시장 기술</a>, 50 개국에 걸쳐 <a href="https://business.nasdaq.com/market-tech" target="_blank">100 개 이상의 거래소, 클리어링 하우스 및 중앙 증권 예금</a> 에서 중요 업무에 중요한 자본 시장 인프라를 구동한다.</p>
+
+
+  <p>나스닥은 글로벌 고객에게 더 나은 서비스를 제공하기 위해 기업 제품을 재설계하고 2016년 <a href="https://business.nasdaq.com/market-tech" target="_blank">나스닥 파이낸셜 프레임워크(NFF)</a> 를 출시했습니다. 프레임워크&rsquo; 모듈식 디자인은 거래 수명 주기 전반에 걸쳐 방대한 비즈니스 애플리케이션 및 서비스 포트폴리오를 지원하는 단일 운영 코어를 활용하여 나스닥 고객이 모놀리식 인프라 시스템과 관련된 비용과 복잡성 없이 중요 업무용 기술 스택을 쉽게 추가, 제거 및 수정할 수 있도록 합니다.</p>
+
+
+  <p>NFF는 또한 새로운 기술의 이점을 활용하여 고객에게 주요 전략적 이점을 제공하도록 설계되었습니다.</p>
+
+
+  <p>&ldquo;우리의 [자본 시장] 산업은 클라우드, 블록체인, 기계 인텔리전스 등의 출현과 발전으로 그 어느 때보다 빠르게 진화하고 있습니다. 나스닥&rsquo; 시장 기술 비즈니스의 수석 부사장 겸 제품 관리 책임자인 매그너스 하글린드(Magnus Haglind)는 업계의 주요 기업들이 이러한 기술을 통해 어떻게 더 효과적이고 효율적일 수 있는지 알아보고 경쟁 우위를 점&rdquo;하기를 기대하고 있다고 말합니다.</p>
+
+
+  <p>수요 증가에&rsquo; 맞춰 나스닥&rsquo; 블록체인 기능을 가속화하기 위해 이 회사는 나스닥 파이낸셜 프레임워크를 Microsoft Azure Blockchain과 통합하여 다중 원장 전략을 지원하는 원장 독립적 블록체인 기능을 구축하고 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/50390808-4bd2-4a19-9a11-d7af9c756c51.jpg"><img alt="Nasdaq" border="0" height="1333" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1c19b37a-ce83-4f36-b3cd-f709c42c420a.jpg" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="나스닥" width="2000"></a></p>
+
+
+  <p>Azure는 혁신적인 블록체인 마이크로 서비스 제품군을 사용하여 트랜잭션 및 계약을 실행하여 Nasdaq Financial Framework 핵심 인프라, 에코시스템 미들웨어 및 고객 기술 간에 매우 안전한 상호 운용 및 통신을 제공할 것입니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이러한 제품은 다양한 기술이 안전하고 확장 가능한 방식으로 함께 작동할 수 있는 정교한 블록체인 시스템을 만들고 Nasdaq이 여러 프로젝트에서 고객 요구 사항을 충족할 수 있도록 합니다.</p>
+
+
+  <p>Nasdaq은 블록체인이 다른 결제 메커니즘을 사용하여 여러 블록체인에 상주할 수 있는 트랜잭션의 배달, 지불 및 결제를 관리할 수 있는 즉각적인 기회를 봅니다. &ldquo;다양한 업계 참가자가 사용하는 여러 블록체인을 통해 NFF와 Microsofts&rsquo; 블록체인 기술의 조합으로 이 영역에&rdquo; 존재하는 프로젝트 복잡성 중 일부를 제거할 수 있다고 나스닥의 Enterprise 아키텍처 수석 부사장 톰 페이(Tom Fay)는 말합니다. &ldquo;또한 더 많은 산업이 자본 시장 기술 및 구조로 이동함에 따라 블록 체인이 구매자와 판매자의 안전하고 마찰없고 즉각적인 매칭에서 가치를 제공 할 수있는 잠재력을 봅니다.&rdquo;</p>
+
+
+  <p>또한 이러한 기능을 통해 자본 시장 조직은 원장 관련 기술이나 지식 없이도 블록체인 기술을 통합하는 NFF 기반 애플리케이션을 사용할 수 있으며, 이는 업계가 분산 원장 기술에 대한 새로운 사용 사례를 추구함에 따라 매우 중요합니다.</p>
+
+
+  <p>Fay &ldquo;는 Azure의 관점에서 블록체인의 기능을 잠금 해제하면서 주요 복잡성을 제거합니다. NFF와 블록체인 서비스를 통합하면 추상화 계층이 제공되므로 원장에 구애받지 않으며 안전하고 확장성이 뛰어나며 궁극적으로 블록체인에 대한 훨씬 광범위한 고객 사용 사례를 계속 탐색할 수 있습니다. 원장 통신, 보안, 배포 및 오케스트레이션의 모든 의미 체계를 처리하기 위해 블록체인 공간에서 &ndash; 최고의 엔터프라이즈 품질 파트너이자 리더로서 Microsoft &ndash; 에 위임하면 핵심 비즈니스 외부에 속하는 구성 요소를 빌드하는 데 리소스를 소비하는 대신 대규모로 고객 과제 및 솔루션에 집중할 수 있습니다.&rdquo;</p>
+
+
+  <p>Microsoft는 나스닥과 협력하여 혁신적인 시장 지원 기술을 발전시키는 것을 영광으로 드립니다. 선도적인 엔터프라이즈 플랫폼 회사로서 우리는 기본적으로 고객의 성공에 전념하고 있습니다. 우리는 나스닥과 협력하여 클라우드 및 블록체인 기술을 그들이 깊이 이해하고 있는 업계 문제에 적용하고 지속적인 성공을 거둘 수 있게 되어 기쁩니다.</p>

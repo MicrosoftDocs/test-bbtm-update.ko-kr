@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 05f31c08f457f8c4d28a305fdc3d5aef9e80eaae
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901297"
+Slug: custom-speech-code-free-automated-machine-learning-for-speech-recognition
+Title: '사용자 지정 음성: 음성 인식을 위한 코드 없는 자동화된 기계 학습'
+Summary: 음성은 앰비언트 컴퓨팅을 구동하는 새로운 인터페이스입니다. 이 말씀은 지금보다 더 사실 적이있다. 음성 인식은 디지털 도우미에서 전자 메일 및 문서 받아쓰기, 강의 및 회의 전사로 일상 생활을 변화시키고 있습니다.
+Content: >-
+  <p>음성은 앰비언트 컴퓨팅을 구동하는 새로운 인터페이스입니다. 이 말씀은 지금보다 더 사실 적이있다. 음성 인식은 디지털 도우미에서 전자 메일 및 문서 받아쓰기, 강의 및 회의 전사로 일상 생활을 변화시키고 있습니다. 이러한 시나리오는 인공신경망에서 사용하도록 설정된 음성 인식 및 기술 점프에 대한 수년간의 연구 덕분에 오늘날 가능합니다. Microsoft는 연구 결과를 통해 음성 인식의 최전선에 있으며 <a href="https://www.microsoft.com/en-us/research/blog/microsoft-researchers-achieve-new-conversational-speech-recognition-milestone/" target="_blank">스위치보드 연구 벤치마크에서 인간 패리티에 도달</a>했습니다.</p>
+
+
+  <p>우리의 목표는 개발자가 AI 발전에 대한 역량을 강화하여 고객을 위한 새롭고 혁신적인 환경을 구축할 수 있도록 하는 것입니다. 개발자가 직면하는 다양한 시나리오와 상황을 해결하기 위한 다양한 API를 제공합니다. Cognitive Services Speech API는 개발자에게 최신 음성 모델에 대한 액세스 권한을 제공합니다. Premium 시나리오는 도메인별 어휘 또는 복잡한 음향 조건을 사용하여 개발자가 특정 요구 사항에 맞게 음성 인식 모델을 자동으로 조정할 수 있도록 <a href="https://cris.ai/" target="_blank">하는 Custom Speech Service</a>를 제공합니다. 우리의 서비스는 고객과 시나리오의 넓은 범위에서 미리 보기되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ded78285-b8b0-4a71-91c4-9d3b47784112.png"><img alt="image" border="0" height="327" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6461181c-a107-4ebf-8570-c980dc0ba227.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p>음성 인식 시스템은 여러 구성 요소로 구성됩니다. 가장 중요한 구성 요소는 음향 및 언어 모델입니다. 애플리케이션에 일상적인 언어에서 거의 발생하지 않는 어휘 항목이 포함되어 있으면 언어 모델을 사용자 지정하면 인식 정확도가 크게 향상됩니다. 고객은 대상 도메인의 단어 및 문장과 같은 텍스트 데이터를 업로드하여 Speech API를 통해 모든 디바이스에서 배포하고 액세스할 수 있는 언어 모델을 빌드할 수 있습니다.</p>
+
+
+  <p>대학 강의는 도메인별 용어를 포함하는 일반적인 예입니다. 예를 들어 생물학 강의에서 우리는 매우 구체적이지만 올바르게 전사하는 것이 중요한 네로디아 에리스로가스터&quot;와 같은 &ldquo;용어를 만날 수 있습니다. <a href="https://translator.microsoft.com/help/presentation-translator/" target="_blank">슬라이드</a> 콘텐츠에 따라 언어 모델을 사용자 지정하는 PowerPoint 추가 기능인 프레젠테이션 번역기 도메인별 오디오에 대해 매우 정확한 전사 결과를 제공하는 강의 또는 프레젠테이션 시나리오를 다룹니다. <a href="https://www.youtube.com/watch?v=6Pmtl5j5C3A" target="_blank">프레젠테이션 번역기 시작하는 방법에</a> 대한 이 비디오에서는 더 자세한 설명을 제공하며, 이 비디오에서<a href="https://youtu.be/VFdjVJxJWwE?t=53m27s" target="_blank">는 프레젠테이션 번역기 추가 기능을 보여</a> 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/303c38b1-c23e-423a-9c95-5ba04f1f351c.png"><img alt="image" border="0" height="392" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d11c772c-9e6e-44bd-8ffe-907b86abb116.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="624"></a></p>
+
+
+  <p>마찬가지로 음향 모델을 사용자 지정하면 음성 인식 시스템이 특정 환경에서 정확할 수 있습니다. 예를 들어 음성 지원 앱이 웨어하우스 또는 팩터리에서 사용하기 위한 경우 사용자 지정 음향 모델은 큰 소리 또는 지속적인 배경 노이즈가 있는 상태에서 음성을 정확하게 인식할 수 있습니다. 고객은 함께 제공되는 대본과 함께 오디오 데이터를 업로드하여 음향 모델을 빌드할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4c1a9826-430c-4ab8-bc72-346094ebd87b.png"><img alt="image" border="0" height="161" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ab789148-daa7-42f2-9256-d267b56c2dd1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="622"></a></p>
+
+
+  <p>Custom Speech Service를 사용하면 코딩이 0인 음향 및 언어 모델 적응이 가능합니다. 사용자 인터페이스는 단어 오류율 측정 및 향상된 추적을 통해 데이터 가져오기, 모델 적응, 평가 및 최적화를 안내합니다. 또한 대규모 모델 배포를 안내하므로 모든 디바이스에서 애플리케이션에서 모델에 액세스할 수 있습니다.</p>
+
+
+  <p>모델을 만들고 업데이트하고 배포하는 데 몇 분밖에 걸리지 않으므로 애플리케이션을 쉽게 빌드하고 반복적으로 개선할 수 있습니다. 사용자 고유의 음성 인식 모델을 학습하고 빌드하려면 <a href="https://cris.ai/" target="_blank">Custom Speech Service</a> 및 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/custom-speech-service/cognitive-services-custom-speech-get-started" target="_blank">Custom Speech Service 설명서 페이지를 방문하세요</a>.</p>

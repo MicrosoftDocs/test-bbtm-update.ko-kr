@@ -1,0 +1,28 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 736cdd4bea73202bc04f0688448e5cd86eb7f5f4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908599"
+Slug: azure-sql-database-named-among-the-top-3-databases-of-2020
+Title: 2020년 상위 3개 데이터베이스 중에서 명명된 Azure SQL Database
+Summary: '최근 DBMS 올해의 상을 발표한 DB-Engines에 따르면 Azure SQL Database 2020년 가장 인기 있는 데이터베이스 중 하나라는 것을 공유하게 되어 기쁩니다. '
+Content: >-
+  <p>최근 DBMS 올해의 상을 <a href="https://db-engines.com/en/blog_post/85" target="_blank">발표한</a> DB-Engines에 따르면 <a href="https://azure.microsoft.com/services/sql-database/" target="_blank">Azure SQL Database</a> 2020년 가장 인기 있는 데이터베이스 중 하나라는 것을 공유하게 되어 기쁩니다. DB-Engines 데이터베이스 관리 시스템에 대한 정보를 수집하고 데이터베이스 관리 시스템의 널리 허용되는 인기 순위를 제공합니다. &rsquo;Azure SQL Database 인기도 점수는 2020년까지 253% 증가하여 9년 만에 클라우드 데이터베이스 서비스에서 1&mdash;년 동안 상위 3개 데이터베이스 시스템에 DB-Engines 순위를 발표했습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/services/azure-sql/" target="_blank">Azure SQL</a> 기존 애플리케이션을 마이그레이션 및 현대화하거나 클라우드에서 새 애플리케이션을 빌드하기 위한 유연한 옵션을 제공합니다. &rsquo;온-프레미스에서 사용할 수 있는 동일한 SQL Server 엔진을 기반으로 구축되어 전체 포트폴리오에서 일관되고 통합된 환경을 제공합니다. 이를 통해 데이터베이스 관리자와 개발자는 클라우드에서 기존 SQL 기술을 사용하여 현대화하고 혁신할 수 있습니다.</p>
+
+
+  <p>이러한 인정과 지속적인 지원을 DB-Engines 고객에게 감사드립니다. 이러한 열정적인 사용자 커뮤니티가 있어서 감사하며 Azure SQL 투자하기를 기대합니다.</p>
+
+
+  <p>Azure SQL 대해 자세히 알아보려면 다음 리소스를 확인하세요.</p>
+
+
+  <ul>
+      <li>Azure SQL <a href="https://azure.microsoft.com/free/sql-on-azure/" target="_blank">무료 평가판을</a> 사용하여 오늘 시작하세요.</li>
+      <li><a href="https://azure.microsoft.com/services/azure-sql/" target="_blank">Azure SQL</a> 웹 페이지에서 최신 뉴스 및 정보를 확인하세요.</li>
+      <li>초보자를 위한 Azure SQL 다루는 <a href="https://www.youtube.com/playlist?list=PLlrxD0HtieHi5c9-i_Dnxw9vxBY-TqaeN" target="_blank">비디오 시리즈를</a> 봅니다.</li>
+  </ul>

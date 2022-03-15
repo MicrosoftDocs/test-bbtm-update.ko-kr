@@ -1,0 +1,53 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9ba72ba8080d10ee741c4116d90a802846e8b14c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902378"
+Slug: achieve-operational-excellence-in-the-cloud-with-azure-advisor
+Title: Azure Advisor를 사용하여 클라우드에서 운영 우수성 달성
+Summary: 많은 고객이 클라우드 운영 관리와 관련하여 질문이 있습니다. 실시간 클라우드 거버넌스를 대규모로 구현하는 방법 클라우드 워크로드를 모니터링하는 가장 좋은 방법은 무엇인가요? 필요할 때 어떻게 도움을 받을 수 있나요?
+Content: >-
+  <p>많은 고객이 클라우드 운영 관리와 관련하여 질문이 있습니다. 실시간 클라우드 거버넌스를 대규모로 구현하는 방법 클라우드 워크로드를 모니터링하는 가장 좋은 방법은 무엇인가&rsquo;요? 필요할 때 어떻게 도움을 받을 수 있나요?</p>
+
+
+  <p>Azure는 클라우드 운영 최적화와 관련하여 많은 지침을 제공합니다. 조직 수준에서 <a href="https://aka.ms/adopt" target="_blank">Azure용 Microsoft 클라우드 채택 프레임워크</a> 는 클라우드의 관리 및 거버넌스에 대한 접근 방식을 설계하고 구현하는 데 도움이 될 수 있습니다. 클라우드 리소스 수준에서 Azure Advisor는 사용량 및 구성에 기반한 비용 절감, 보안, 성능 및 가용성&mdash;을 포함하는 다양한 목표를&mdash; 위해 Azure 워크로드를 최적화하는 데 도움이 되는 개인 설정된 권장 사항을 제공합니다.</p>
+
+
+  <p>최근 Advisor는 프로세스 및 워크플로 효율성, 리소스 관리 효율성 및 배포에 대한 모범 사례를 따르는 데 도움이 되는 새로운 권장 사항 범주&mdash; 운용 우수성&mdash;을 도입했습니다.</p>
+
+
+  <h2>새로운 Azure Advisor 권장 사항 범주 소개: 운영 우수성</h2>
+
+
+  <p>이제 <a href="https://aka.ms/azureadvisorpage" target="_blank">Azure Advisor</a>는 클라우드 프로세스 및 워크플로 효율성, 리소스 관리 효율성 및 배포 사례를 최적화하는 데 도움이 되는 새로운 범주의 권장 사항을&mdash;&mdash; 제공합니다. Advisor 대시보드의 운영 우수성 탭에서 Advisor에서 이러한 권장 사항을 얻을 수 있습니다. 또한&rsquo; Advisors&rsquo; <a href="https://docs.microsoft.com/en-us/cli/azure/advisor?view=azure-cli-latest" target="_blank">CLI</a> 및 <a href="https://docs.microsoft.com/en-us/rest/api/advisor/" target="_blank">API</a>를 통해 사용할 수 있습니다.</p>
+
+
+  <p><img alt="Screenshot of Azure Advisor in the Azure portal, showing the new operational excellence category." border="0" height="1006" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1511c7b1-2016-4ef4-b421-9b6c745d9e6f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1702"><br>
+
+  운영 우수성 범주는 9가지 권장 사항으로 시작되며, 그 중 더 많은 권장 사항이 있습니다. 예를 들어 Azure 서비스 문제가 영향을 받을 때 알림을 받을 Azure Service Health 경고를 만드는 것이 포함됩니다. 잘못된 로그 경고 규칙 복구 태그 관리, 지역 규정 준수 요구 사항, 배포에 허용되는 VM(가상 머신) SKU 지정과 같은 Azure 정책을 사용하는 모범 사례를 따릅니다. 이러한 권장 사항을 함께 사용하면 클라우드 운영 사례를 최적화하는 데 도움이 됩니다.</p>
+
+
+  <h2>새로운 운영 우수성 권장 사항</h2>
+
+
+  <p>출시&rsquo; 시 Advisor의 새로운 운영 우수성 권장 사항을 빠르게 정리합니다.</p>
+
+
+  <ul>
+      <li>Azure 서비스 문제가 영향을 받을 때 알림을 받을 Azure Service Health 경고를 만듭니다.</li>
+      <li>최대 구독 제한에 도달하지 않도록 스토리지 계정을 디자인합니다.</li>
+      <li>필요할 때 Azure 클라우드 전문가에게 액세스할 수 있는지 확인합니다.</li>
+      <li>잘못된 로그 경고 규칙을 복구합니다.</li>
+      <li>관리 디스크에 대한 태그 관리, 지역 규정 준수 요구 사항 및 VM 감사를 포함하여 Azure Policy를 사용하는 모범 사례를 따릅니다.</li>
+  </ul>
+
+
+  <p>Advisors&rsquo; 운영 우수성 권장 사항에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/advisor/advisor-operational-excellence-recommendations" target="_blank">설명서를 참조하세요</a>. 새 권장 사항을 지속적으로 추가하므로 정기적으로&rsquo; 다시 확인해야 합니다.</p>
+
+
+  <h2>오늘 운영 우수성 권장 사항 검토</h2>
+
+
+  <p>운영 우수성을 위해 클라우드 워크로드 최적화를 시작하려면 <a href="https://aka.ms/advisor-one-stop-blog" target="_blank">여기</a> Azure Portal의 Advisor를 방문하세요. 자세한 지침은 <a href="https://aka.ms/azureadvisordocs" target="_blank">설명서를 참조하세요</a>. <a href="https://aka.ms/advisorfeedback">여기에</a> 아이디어를 제출하여 Advisor에 대한 제안이 있는지 알려주세요.</p>

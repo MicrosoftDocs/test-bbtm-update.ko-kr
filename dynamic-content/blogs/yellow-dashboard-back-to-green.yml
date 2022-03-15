@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ed12134d09bb6acf12f14f3200e75f4bdfb2429a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907436"
+Slug: yellow-dashboard-back-to-green
+Title: 노란색 대시보드를 다시 녹색으로
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] 어제 오후에 간헐적인 연결 문제를 보고했으며 문제가 확인되고 해결되었다고 보고하게 되어 기쁩니다. Tthe...'
+Content: <p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>어제 오후에 간헐적인 연결 문제를 보고했으며 문제가 확인되고 해결되었다고 보고하게 되어 기쁩니다. 이 문제는 컴퓨터 중 하나에서 Kerberos 암호화 정책의 외부로 추적되었습니다. </p>  <p>추가 머리로, 오늘 SQL Azure 서비스는 계획된 업그레이드를 겪고있을 것입니다 (SU2), 몇 주 전에 MIX 컨퍼런스에서 발표. 이는 전 세계 모든 데이터 센터에 배포되는 롤링 배포이며, 주말(4월 9일)까지 가용성에 영향을 주지 않고 완료될 것으로 예상됩니다. 배포가 완료되면 자세한 내용은 여기를 다시 확인하세요. <i> </i></p>  <p>감사합니다.</p>

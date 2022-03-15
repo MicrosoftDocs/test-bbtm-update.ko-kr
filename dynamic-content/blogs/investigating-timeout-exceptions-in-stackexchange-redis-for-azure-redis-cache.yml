@@ -1,0 +1,218 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bb4ad9048ec55ff80ae141a35d993de284d1f98b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901150"
+Slug: investigating-timeout-exceptions-in-stackexchange-redis-for-azure-redis-cache
+Title: Azure Redis Cache에 대한 StackExchange.Redis의 시간 초과 예외 조사
+Summary: StackExchange.Redis는 동기 작업에 "synctimeout"이라는 구성 설정을 사용합니다.
+Content: >-
+  <p>StackExchange.Redis는 동기 작업에 synctimeout&quot;이라는 &quot;구성 설정을 사용하며, 기본값은 1000ms입니다. 이 설정은 지정된 시간에 동기 호출이 완료되지 않으면&rsquo; 시간 제한 오류가 발생한다는 것을 의미합니다. throw된 오류는 다음과 같습니다. System.TimeoutException: MGET 2728cc84-58ae-406b-8ec8-3f962419f641을 수행하는 시간 제한 inst: 1,mgr: 비활성, 큐: 73, qu=6, qs=67, qc=0, wr=1/1, in=0/0<br />
+
+  IOCP: (Busy=6, Free=999, Min=2,Max=1000), WORKER(Busy=7,Free=8184,Min=2,Max=8191)</p>
+
+
+  <p>다음은 오류 코드에 대한 설명입니다.</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0" width="675">
+      <tbody>
+          <tr>
+              <td valign="top" width="202"><strong>오류 코드</strong></td>
+              <td valign="top" width="471"><strong>세부 정보</strong></td>
+          </tr>
+          <tr>
+              <td valign="top" width="204">inst</td>
+              <td valign="top" width="470">마지막 시간 조각에서: 0개의 명령이 실행되었습니다.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="205">mgr</td>
+              <td valign="top" width="469">소켓 관리자가 socket.select&quot;를 수행&quot;합니다. 즉, OS에 할 일이 있는 소켓을 나타내도록 요청하고 있습니다. 기본적으로 판독기는 수행할 작업이 없다고 생각하지&#39;때문에 네트워크에서 적극적으로 읽지 않습니다.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="206">queue</td>
+              <td valign="top" width="469">총 73개의 진행 중인 작업이 있습니다.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="206">qu</td>
+              <td valign="top" width="469">그 중 6개는 아직 아웃바운드 네트워크에 기록되지 않은 큐에 있습니다.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="206">qs</td>
+              <td valign="top" width="469">그 중 67개는 서버로 전송되었지만 응답을 아직 사용할 수 없습니다.&nbsp; 응답은 다음과  같습니다. <ul>
+                  <li>서버에서 아직 전송되지 않음</li>
+                  <li>서버에서 전송되지만 클라이언트에서 아직 처리되지 않았습니다.</li>
+              </ul>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="206">qc</td>
+              <td valign="top" width="469">그 중 0개는 회신을 보았지만 완료 루프 대기로 인해 아직 완료로 표시되지 않았습니다.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="206">wr</td>
+              <td valign="top" width="469">활성 작성기가 있습니다(즉, 6개의 보내지 않은 기록기는 무시되지 않음) 바이트/활성 작성기가 있습니다.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="206">in</td>
+              <td valign="top" width="469">활성 판독기가 없고 NIC 바이트/activereaders에서 0바이트를 읽을 수 있습니다.</td>
+          </tr>
+          <tr>
+              <td valign="top" width="206">&nbsp;</td>
+              <td valign="top" width="469">
+              <p>자세한 내용은 이 <a href="https://gist.github.com/JonCole/db0e90bedeb3fc4823c2"><u>링크를</u></a> 참조하세요.</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h3>조사할 단계:</h3>
+
+
+  <p>시간 제한을 수신할&#39;이유를 조사하기 시작하려면 첫 번째 단계는&nbsp; 동기화 시간 제한 시간에 작업이 완료되지 않도록 유지하는&#39;결정하는 것입니다. <strong>다음은 시작하는 몇 가지 단계입니다.</strong> &nbsp;</p>
+
+
+  <ol>
+      <li><strong>모범 사례로 StackExhange Redis 클라이언트를 연결하는&nbsp; 데 다음 패턴을 사용하고&nbsp; 있는지 확인합니다.</strong>
+
+      <p style="text-align: left;">private static LazyConnectionMultiplexer&lt;&gt; lazyConnection = new LazyConnectionMultiplexer&gt;&lt;(() =&gt; { return ConnectionMultiplexer.커넥트 (&quot;cachename.redis.cache.windows.net,ssl=true,abortConnect=false,password=password&quot;); });</p>
+
+      <p style="text-align: left;">public static ConnectionMultiplexer Connection { get { return lazyConnection.Value; } }</p>
+      </li>
+      <li><strong>Azure Redis Cache 및 Azure의 동일한 지역에 있는 클라이언트인지 확인합니다</strong>. 예를 들어 캐시가 미국 동부에 있지만 클라이언트가 미국 서부에 있고 요청이 동기화 시간 제한 시간에 완료되지&#39;또는 로컬 개발 머신에서 디버깅할 때 시간 제한이 발생할 수 있습니다.
+      <ol>
+          <li>&rsquo;캐시와 클라이언트를 동일한 Azure 지역에 두는 것이 좋습니다. 지역 간 호출을 수행하는 시나리오가 있는 경우 synctimeout을 더 높은 값으로 설정하려고 합니다.</li>
+      </ol>
+      </li>
+      <li><strong>최신 버전의 StackExchange.Redis NuGet 패키지를 사용하고 있나요? </strong> 최신 버전의 StackExchange.Redis<a href="https://www.nuget.org/packages/StackExchange.Redis/">https://www.nuget.org/packages/StackExchange.Redis/</a>를 사용하고 있는지 확인하려면 여기를 확인하세요. 코드에서 지속적으로 수정되는 버그가 있어 시간 제한에 더 강력해지므로 최신 버전을 사용하는 것이 도움이 됩니다.</li>
+      <li><strong>서버에 네트워크에 바인딩되어 있나요? </strong> 다음은 다양한 크기의 Redis 캐시를 테스트하는 동안 얻은 최대 대역폭입니다. (다음 숫자는 보장되지 않으며 Azure Redis Cache 엔드포인트에 대해 Iaas VM에서 실행되는 redis-benchmark.exe 사용하여 테스트하는 동안 얻은 것입니다. 대역폭으로 바인딩되는 요청이 있는 경우 완료하는 데 시간이 오래 걸리고 이로 인해 시간 초과가 발생합니다. 더 많은 대역폭을 얻으려면 더 높은 캐시 크기로 이동하는 것이 좋습니다. 대역폭 번호에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/cache-faq/#cache-performance">여기</a> 를 참조하세요.
+      <table border="1" cellpadding="2" cellspacing="0" width="481">
+          <tbody>
+              <tr>
+                  <td valign="top" width="101"><strong>캐시 이름</strong></td>
+                  <td valign="top" width="101"><strong>캐시 크기</strong></td>
+                  <td valign="top" width="148"><strong>GET/초(1KB 값의 단순 GET 호출)</strong></td>
+                  <td valign="top" width="129"><strong>대역폭(Mbits/초)</strong></td>
+              </tr>
+              <tr>
+                  <td valign="top" width="101">C0</td>
+                  <td valign="top" width="101">250MB</td>
+                  <td valign="top" width="147">610</td>
+                  <td valign="top" width="129">5</td>
+              </tr>
+              <tr>
+                  <td valign="top" width="101">C1</td>
+                  <td valign="top" width="101">1 GB</td>
+                  <td valign="top" width="147">12,200</td>
+                  <td valign="top" width="129">100</td>
+              </tr>
+              <tr>
+                  <td valign="top" width="101">C2</td>
+                  <td valign="top" width="101">2.5GB</td>
+                  <td valign="top" width="147">24,300</td>
+                  <td valign="top" width="129">200</td>
+              </tr>
+              <tr>
+                  <td valign="top" width="101">C3</td>
+                  <td valign="top" width="101">6GB</td>
+                  <td valign="top" width="147">48,875</td>
+                  <td valign="top" width="129">400</td>
+              </tr>
+              <tr>
+                  <td valign="top" width="101">C4</td>
+                  <td valign="top" width="101">13GB</td>
+                  <td valign="top" width="147">61,350</td>
+                  <td valign="top" width="129">500</td>
+              </tr>
+              <tr>
+                  <td valign="top" width="101">C5</td>
+                  <td valign="top" width="101">26GB</td>
+                  <td valign="top" width="147">112,275</td>
+                  <td valign="top" width="129">1000</td>
+              </tr>
+              <tr>
+                  <td valign="top" width="101">C6</td>
+                  <td valign="top" width="101">53GB</td>
+                  <td valign="top" width="147">153,219</td>
+                  <td valign="top" width="130">1000+</td>
+              </tr>
+          </tbody>
+      </table>
+  &nbsp;</li>
+      <li><strong>클라이언트에 네트워크 바인딩을 받고 있나요? </strong> 클라이언트에서 네트워크에 바인딩되지 않는지 확인합니다. 클라이언트에 네트워크를 바인딩하면 병목 현상이 발생하고 시간 초과가 발생합니다. 캐시의 크기/속도와 함께 줄 지어지도록 클라이언트에서 더 높은 VM 크기로 이동하면 최적의 결과를 얻을 수 있습니다. <a href="https://github.com/JonCole/SampleCode/tree/master/BandWidthMonitor">대역폭 Monitorprogramto</a>&nbsp;&nbsp;를 사용하여 클라이언트에서 가져오는 대역폭을 확인할 수 있습니다.</li>
+      <li><strong>서버 또는 클라이언트에 CPU가 바인딩되어 있나요? </strong> 클라이언트에서 CPU에 바인딩되어 Syntimeout 설정에서 요청이 처리되지 않아 시간 초과가 발생할 수 있는지 확인합니다. 더 높은 컴퓨터 크기로 이동하거나 부하를 분산하면 이를 제어하는 데 도움이 됩니다. 포털에서 서버에 CPU가 바인딩되는지 확인합니다. Redis가 CPU에 바인딩된 동안 들어오는 요청으로 인해 해당 요청이 시간 초과됩니다. 수행할 수 있는 한 가지 작업은 데이터를 여러 캐시에 분할하여 부하를 분산하는 것입니다.</li>
+      <li><strong>서버에서 처리하는 데 시간이 오래 걸리는 명령이 있나요? </strong> redis-server에서 처리하는 데 시간이 오래 걸리는 명령이 있을 수 있으며 이로 인해 요청이 시간 초과될 수 있습니다. 장기 실행 명령의 몇 가지 예는 많은 수의 키, 키 * 또는 잘못 작성된 lua 스크립트가 있는 mget입니다. redis-cli 클라이언트를 사용하여 Azure Redis Cache에 연결하고 SlowLog 명령을 실행하여 예상보다 오래 걸리는 요청이 있는지 확인할 수 있습니다. 명령에 대한 자세한 내용은 Redis Server 및 StackExchange.Redis에서 보다 적은 수의 큰 요청이 아닌 많은 작은 요청에 최적화되어 있습니다 <a href="https://redis.io/commands/slowlog">https://redis.io/commands/slowlog</a>.&nbsp; 데이터를 더 작은 청크로 분할하면 여기서 개선될 수 있습니다. <a href="https://blogs.msdn.com/b/webdev/archive/2014/05/12/announcing-asp-net-session-state-provider-for-redis-preview-release.aspx">이 </a>블로그 게시물에서 stunnel과 함께 redis-cli.exe 사용하여 SSL 엔드포인트에 연결하는 방법을 확인하세요.</li>
+      <li><strong>Redis-server 서버 부하가 높나요? </strong> Redis-cli 클라이언트 도구를 사용하여 Redis 엔드포인트에 연결하고 INFO CPU&quot;를 실행&quot;하여 server_load 값을 확인할 수 있습니다. 100(최대 값)의 서버 로드는 redis 서버가 요청을 처리하는 동안 항상 사용 중(유휴 상태가 아님)되었음을 나타냅니다. redis-cli에서 Slowlog를 실행하여 서버 로드가 최대로 중단되도록 처리하는 데 더 많은 시간이 걸리는 요청이 있는지 확인합니다.</li>
+      <li><strong>클라이언트 쪽에서 네트워크 블립을 일으킬 수 있는 다른 이벤트가 있었나요? </strong> 클라이언트 인스턴스 수를 확장 또는 축소하거나 새 버전의 클라이언트 또는 자동 크기 조정을 사용하도록 설정하는 것과 같은 이벤트가 있는지 클라이언트(웹, 작업자 역할 또는 Iaas VM)를 확인하세요. 테스트에서는 자동 크기 조정 또는 확장/축소로 인해 몇 초 동안 아웃바운드 네트워크 연결이 손실될 수 있음을 발견했습니다. StackExchange.Redis 코드는 이러한 이벤트에 복원력이 있어 다시 연결합니다. 이 시간 동안 다시 연결하는 동안 큐의 모든 요청은 시간이 초과될 수 있습니다.</li>
+      <li><strong>시간이 초과된 Redis Cache에 대한 몇 가지 작은 요청 앞에 큰 요청이 있었나요? </strong> 오류 메시지의 매개 변수 &ldquo;qs&rdquo; 는 클라이언트에서 서버로 전송된 요청 수를 알려주지만 아직 응답을 처리하지 않았습니다.&nbsp; StackExchange.Redis는 단일 TCP 연결을 사용하고 한 번에 하나의 응답만 읽을 수 있기 때문에 이 값은 계속 증가합니다.&nbsp; 첫 번째 작업이 시간 초과되었지만 서버에서 전송되는 데이터를 중지하지 않으며 이 작업이 완료될 때까지 다른 요청이 차단됩니다. 이로 인해 시간 초과가 발생합니다. 한 가지 해결 방법은 캐시가 워크로드에 충분히 큰지 확인하고 큰 값을 더 작은 청크로 분할하여 시간 초과 가능성을 최소화하는 것입니다. 또 다른 가능한 해결 방법은 클라이언트에서 ConnectionMultiplexer 개체 풀을 사용하고 새 요청을 보낼 때 로드되지 않은&quot; ConnectionMultiplexer를 선택하는 &quot;것입니다.&nbsp; 이렇게 하면 단일 시간 제한으로 인해 다른 요청도 시간 초과가 발생하지 않도록 해야 합니다.</li>
+      <li><strong>RedisSessionStateprovider를 사용하고 있으며 재시도 시간 제한을 올바르게 설정했나요? </strong> RedisSessionStateProvider에 대한 설정은 다음과 같습니다. retrytimeoutInMilliseconds는 operationTimeoutinMilliseonds보다 높아야 합니다. 그렇지 않으면 다시 시도하지&#39;. 예를 들어 다음 설정의 경우 시간이 초과되기 전에 적어도 3번 다시 시도합니다. 설정에 대한 자세한 내용은 여기에서 확인할 수 <a href="https://github.com/Azure/aspnet-redis-providers/wiki/Configuration">있습니다</a>.
+      <pre class="prettyprint">
+  &lt;add
+
+
+  name=&quot;AFRedisCacheSessionStateProvider&quot;
+
+
+  type=&quot;Microsoft.Web.Redis.RedisSessionStateProvider&quot;
+
+
+  host=&quot;enbwcache.redis.cache.windows.net&quot;
+
+
+  port=&quot;6380&quot;
+
+
+  accessKey=&quot;&hellip;&quot;
+
+
+  ssl=&quot;true&quot;
+
+
+  databaseId=&quot;0&quot;
+
+
+  applicationName=&quot;AFRedisCacheSessionState&quot;
+
+
+  connectionTimeoutInMilliseconds = &quot;5000&quot;
+
+
+  operationTimeoutInMilliseconds = &quot;1000&quot;
+
+
+  retryTimeoutInMilliseconds=&quot;3000&quot;/&gt;
+
+
+  </pre>
+      </li>
+      <li><strong>used_memory_rss used_memory 보다 높은가요? </strong> redis-cli.exe 사용하여 캐시에 연결하고 메모리 allocationused_memory_rss 관련된 redis INFO 명령을 실행할 수 있습니다. 운영 체제에서 볼 수 있듯이 Redis가 할당한 바이트 수(즉, 상주 집합 크기).used_memory. 할당자를 사용하여 Redis에서 할당한 총 바이트 수(표준 libc, malloc,  jemalloc 등) 캐시 크기: 생성된 캐시의 크기(이 경우 26GB). 제거 정책 집합을 사용하면 Used_Memory 캐시 크기에 도달하면 Redis에서 키 제거를 시작합니다. 이상적으로 used_memory_rss 값은 used_memory 약간 더 높아야 합니다. rss를 &gt;&gt; 사용하는 경우 큰 차이는 메모리 조각화(내부 또는 외부)가 있음을 의미합니다. rss를 사용하는 &gt;&gt; 경우 Redis 메모리의 일부가 운영 체제에서 교환되었음을 의미합니다. 몇 가지 상당한 대기 시간이 필요합니다. Redis는 할당이 메모리 페이지에 매핑되는 방식을 제어할 수 없으므로 높은 used_memory_rss 종종 메모리 사용량이 급증한 결과입니다. Redis가 메모리를 놓아주면, 메모리는 할당자에게 돌아가고, 할당자는 메모리를 시스템에 돌려주거나 그러지 않을 수 있습니다. 운영 체제에서 보고한 used_memory 값과 메모리 사용량 간에 불일치가 있을 수 있습니다. Redis가 메모리를 사용되고 사용하고 놓아줬지만 시스템으로 돌려지지 않았습니다. 자세한 내용은 <a href="https://www.redis.io/commands/info">https://www.redis.io/commands/info</a> 현재 조각화가 있고 아직 롤아웃되지 않은 경우 시스템이 더 나은 동작을 갖도록 하기 위해 끝부분에서 몇 가지 변경 사항을 테스트하고 있습니다. 한편, 이를 완화하기 위해 수행할 수 있는 작업은 다음과 같습니다. <ul>
+          <li>캐시를 더 큰 크기로 업그레이드하여 시스템에서 메모리 제한을 겪지 않도록 합니다.</li>
+          <li>키에 만료 시간을 설정하여 이전 값이 사전에 제거되게 합니다.</li>
+          <li><a href="https://redis.io/commands/info">Redis &ldquo;정보&rdquo; 명령</a>, 특히 used_memory_rss 값을 모니터링합니다.&nbsp; 해당 값이 캐시 크기에 가까워지면 성능 문제가 표시되기 시작할 수 있습니다. 메모리 사용률이 낮거나 더 큰 캐시로 업그레이드하도록 여러 캐시에 데이터를 분할하면 도움이 될 수 있습니다.</li>
+      </ul>
+  &nbsp;</li>
+      <li><strong>문의:</strong> 그래도 해결할 수 없는 경우 이 페이지에서 <a href="https://azure.microsoft.com/en-us/support/options/">https://azure.microsoft.com/en-us/support/options/</a> 지원 받기를 클릭하여 지원 티켓을 여세요. 조사에 도움이 되도록 다음 세부 정보가 필요합니다. <ol>
+          <li>캐시 이름</li>
+          <li>캐시 크기</li>
+          <li>오류 날짜 및 시간(표준 시간대 포함)</li>
+          <li>전체 스택 추적이 있는 예외 메시지</li>
+          <li>클라이언트 인스턴스의 수 및 유형(예: 웹 사이트, 웹 역할, 작업자 역할, VM)</li>
+          <li>클라이언트 배포의 VIP(공용 가상 IP) 주소</li>
+          <li>StackExchange.Redis 버전(해당하는 경우 Microsoft.Web.RedisSessionStateProvider)</li>
+          <li>ConnectionMultiplexer 개체를 구성하고 사용하는 방법을 보여 주는 코드 조각입니다. 전체 클라이언트 프로세스에서 ConnectionMultiplexer의 단일 인스턴스를 공유하고 있나요?</li>
+          <li>캐시 서비스 및 클라이언트는 어떤 지역에 있나요?</li>
+          <li>오류 발생 시 클라이언트에서 변경된 내용이 있나요? 클라이언트 인스턴스 수를 확장 또는 축소하거나 새 버전의 클라이언트를 배포하고 있나요? 클라이언트가 자동 크기 조정을 사용하도록 설정했나요?</li>
+          <li>인시던트 전과 도중에 클라이언트의 CPU 사용률은 어떻게 되었나요?</li>
+          <li>모든 요청이 인시던트 당시 대기 시간이 높거나 시간 제한이 발생했나요? 아니면 일부 요청만 발생하나요?</li>
+          <li>오류는 어떻게 클라이언트에 분산되었나요? 균등하게 분할하거나 단일 클라이언트에서 모두 분할하시겠습니까?</li>
+          <li>캐시에서 가져오거나 캐시에 넣는 값의 크기는 어떻게 됩니까?</li>
+          <li>동기화 시간 제한 및 연결 시간 제한에 대해 클라이언트에서 설정되는 시간 제한 값은 무엇인가요?</li>
+      </ol>
+      </li>
+  </ol>
+
+
+  <p>문의: 그래도 해결할 수 없는 경우 <a href="https://azure.microsoft.com/en-us/support/options/">지원 받기</a>를 클릭하여 지원 티켓을 여세요. 이 링크에 설명된 대로 세부 정보를 제공해 주세요.</p>

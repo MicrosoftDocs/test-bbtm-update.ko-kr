@@ -1,0 +1,41 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6db069c1649589efb9b23d8cecf9c1d5d4a743b9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901268"
+Slug: deploying-pivotal-cloud-foundry-on-azure-with-a-click-of-a-button
+Title: 단추를 클릭하여 Azure에 Pivotal Cloud Foundry 배포
+Summary: '이제 Azure에서 오픈 소스 PaaS 플랫폼인 Pivotal Cloud Foundry를 한 번의 클릭으로 Azure Marketplace 솔루션 템플릿으로 배포할 수 있습니다. '
+Content: >-
+  <p>//Build 2016에서는 Azure에서 <a href="https://pivotal.io/microsoft">Pivotal Cloud Foundry </a>의 가용성을 한 번의 클릭으로 <a href="https://azure.microsoft.com/en-us/marketplace/partners/pivotal/pivotal-cloud-foundryazure-pcf/">Azure Marketplace 솔루션 템플릿</a>으로 발표했습니다. 이 블로그 게시물은 이 Marketplace 솔루션 및 시작 정보에 대한 개요를 제공합니다.</p>
+
+
+  <p>모르는 사용자를 위해 Pivotal은 Java 기반 마이크로 서비스를 실행하는 가장 좋은 장소 중 하나로 Enterprise Java 개발자와 함께 빠르게 추진력을 얻고 있는 오픈 소스 클라우드 네이티브 플랫폼인 <a href="https://www.cloudfoundry.org/">Cloud Foundry</a> 뒤에 있는 회사입니다. Cloud Foundry는 IaaS에 구애받지 않으며 여러 언어를 지원합니다. 이전에 <a href="https://azure.microsoft.com/en-us/blog/general-availability-of-cloud-foundry-and-preview-access-of-pivotal-cloud-foundry/">Azure에서 Cloud Foundry의 일반 공급에 대해 발표했습니다</a>.</p>
+
+
+  <p>Pivotal Cloud Foundry의 미리 보기를 발표한 이후 짧은 시간 동안 많은 고객의 관심을 보았습니다. Pivotal은 초기 설치를 획기적으로 간소화하는 솔루션을 제공하기 위해 Microsoft와 긴밀히 협력해 왔으며, 더 많은 Azure 고객이 Pivotal Cloud Foundry를 사용해도 됩니다. 작업 세션 중 하나는 2 월에 레드몬드에있는 캠퍼스에 피벗과 공동 hackfest이었다. 그 일환으로 배포 환경을 거치면서 이 단일 클릭 템플릿의 가치 제안이 매우 명확해졌습니다.</p>
+
+
+  <p>오늘 발표하는 이 템플릿은 다음을 수행합니다.</p>
+
+
+  <ul style="list-style-type: square;">
+   <li>53개의 VM(PCF용 35개 및 유효성 검사를 위한 나머지), IP 주소 및 스토리지 계정으로 구성된 Azure의 Pivotal Cloud Foundry를 쉽고 빠르게 배포합니다.</li>
+   <li>클라우드에서 보안 점프 상자를 만들어 Bosh 및 Cloud Foundry VM을 관리합니다.</li>
+   <li><a href="https://docs.pivotal.io/pivotalcf/installing/pcf-docs.html">Elastic Runtime</a>, <a href="https://docs.pivotal.io/pivotalcf/console/index.html">Apps Manager</a>, <a href="https://docs.pivotal.io/redis/">Redis</a>, <a href="https://docs.pivotal.io/p-mysql/index.html">MySQL</a>, <a href="https://docs.pivotal.io/rabbitmq-cf/index.html">Rabbit MQ</a> 및 <a href="https://docs.pivotal.io/spring-cloud-services/">Spring Cloud Services</a> 는 모두 배포의 일부로 설치되고 사용할 준비가 된 것입니다.</li>
+   <li>배포 초기에 오류를 catch하기 위한 실행 전 검사로 할당량을 확인하는 기본 제공 메커니즘(53개의 VM에는 많은 코어가 필요합니다.)</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/31c3ab25-7e58-43d5-8bbf-917da5c5a6bc.png"><img alt="PCFBlog" border="0" height="514" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c14ba535-627d-4c43-a167-92598dd52853.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="PCFBlog" width="610"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이 통합을 통해 고객이 Azure에 Pivotal Cloud Foundry를 더 쉽게 배포하고 PCF에서 기본적으로 지원되는 Spring Boot 및 기타 마이크로 서비스 프레임워크의 이점을 쉽게 활용할 수 있도록 하는 것이 목표입니다.</p>
+
+
+  <p>시작하시겠습니까? <a href="https://docs.pivotal.io/pivotalcf/customizing/pcf_azure.html">여기에 링크입니다</a>, 그것을 시도 제공! 여러분의 의견을 듣고 싶으므로 제안과 피드백을 보내주세요.</p>

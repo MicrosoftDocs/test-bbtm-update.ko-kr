@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8e11ec8e19a852a9513d33a7c5b9b17d7cf656a3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902215"
+Slug: azure-storage-static-web-hosting-public-preview
+Title: 현재 공개 미리 보기에서 Azure Storage 위한 정적 웹 사이트 호스팅
+Summary: 오늘 Azure Storage 정적 웹 사이트 호스팅의 공개 미리 보기를 발표하게 되어 기쁩니다.
+Content: >-
+  <div style="background:#eee;border:1px solid #ccc;padding:5px 10px;">2018년 12월 12일부터 Azure Storage 정적 웹 사이트를 일반적으로 사용할 수 있습니다. 자세한 내용은 블로그 게시물, &ldquo;<a href="https://azure.microsoft.com/blog/static-websites-on-azure-storage-now-generally-available/">Azure Storage 정적 웹 사이트를</a> 참조하세요.&rdquo;</div>
+
+
+  <p>오늘 우리는 <strong>Azure Storage 대한 정적 웹 사이트 호스팅</strong>의 공개 미리 보기를 발표하게되어 기쁩니다! 이 기능 집합은 정부 및 소버린 클라우드가 곧 지원되는 <strong>모든 퍼블릭 클라우드 지역에서 </strong>사용할 수 있습니다<strong>.</strong></p>
+
+
+  <p>이 새로운 스토리지 기능 집합을 사용하면 Azure에서 통합된 최신 웹 애플리케이션을 호스팅하기 위한 비용 효율적이고 확장 가능한 솔루션을 사용할 수 있습니다. 정적 웹 사이트에서 웹 페이지는 정적 콘텐츠 및 JavaScript 또는 기타 클라이언트 쪽 코드를 포함합니다. 반면 동적 웹 사이트는 서버 쪽 코드에 따라 다르며 <a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-web-overview" target="_blank">Azure Web Apps</a>를 사용하여 호스팅할 수 있습니다. 배포는 탄력적이고, 비용 효율적인 모델을 향해 이동하므로 서버 관리의 필요 없이 웹 콘텐츠를 제공하는 능력은 중요합니다. Azure Storage 정적 웹 사이트 호스팅이 도입되어 <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview" target="_blank">Azure Functions</a> 및 기타 Paas Services를 활용하는 서버리스 아키텍처를 통해 풍부한 백 엔드 기능을 사용할 수 있습니다.</p>
+
+
+  <h2>작동 방식</h2>
+
+
+  <p style="border-image: none;">스토리지 계정에서 정적 웹 사이트를 사용하도록 설정하면 새 웹 서비스 엔드포인트가 양식으로 만들어집니다.</p>
+
+
+  <p style="border-image: none;"><code>&lt;account-name&gt;.&lt;zone-name&gt;.web.core.windows.net</code>.</p>
+
+
+  <p>웹 서비스 엔드포인트는 항상 익명 읽기 액세스를 허용하고, 서비스 오류에 대한 응답으로 서식이 지정된 HTML 페이지를 반환하고, 개체 읽기 작업만을 허용합니다. 웹 서비스 엔드포인트는 루트 및 모든 하위 디렉터리에 대한 요청된 디렉터리에서 인덱스 문서를 반환합니다. 스토리지 서비스에서 404 오류를 반환할 때 웹 엔드포인트는 구성한 경우 사용자 지정 오류 문서를 반환합니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>이 기능 집합은 <a href="https://portal.azure.com" target="_blank">Azure Portal</a>의 최신 릴리스에서 지원됩니다. <a href="https://www.nuget.org/packages/WindowsAzure.Storage" target="_blank">.Net 클라이언트 라이브러리</a>(버전 9.3.0), <a href="https://github.com/azure/azure-storage-java" target="_blank">Java 클라이언트 라이브러리</a>(버전 8.0.0), <a href="https://github.com/Azure/azure-storage-python/tree/master/azure-storage-blob" target="_blank">Python 클라이언트 라이브러리</a>(버전 1.3.0), <a href="https://azure.github.io/azure-storage-node/" target="_blank">Node.js 클라이언트 라이브러리</a>(버전 2.10.0), <a href="https://github.com/Microsoft/vscode-azurestorage#preview-features" target="_blank">Visual Studio Code 확장</a>(버전 0.4.0) 및 <a href="https://github.com/Azure/azure-cli-extensions/tree/master/src/storage-preview" target="_blank">CLI 2.0</a>(확장 버전 0.1.3). <a href="https://azure.microsoft.com/features/storage-explorer/" target="_blank">Storage Explorer</a> 및 <a href="https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps" target="_blank">Powershell</a>에 대한 지원이 곧 제공될 예정입니다. Storage <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/Versioning-for-the-Azure-Storage-Services" target="_blank">Services REST API를</a> 언제나처럼 직접 사용할 수도 있습니다. 정적 웹 사이트는 REST API 버전 2018-03-28 이상에서 지원됩니다. 일반적으로 이 기능을 사용하는지 여부에 관계없이 항상 최신 버전을 사용하는 것이 좋습니다.</p>
+
+
+  <p>Azure Storage 웹 애플리케이션 호스팅을 시작하려면 아래 스크린샷과 같이 <a href="https://portal.azure.com" target="_blank">Azure Portal</a>을 사용하여 기능을 구성할 수 있습니다. Azure Portal에서 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-quickstart-create-account" target="_blank">GPv2 스토리지 계정을 만들</a>거나 기존 GPv2 계정을 사용하고 왼쪽 탐색 모음의 <strong>설정 </strong>아래에서 <strong>정적 웹 사이트(미리 보기)</strong>를 클릭합니다. <strong>[사용]을</strong> 클릭하고 인덱스 문서의 이름과 선택적 사용자 지정 오류 문서 경로를 입력합니다.</p>
+
+
+  <p><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/storage-blob-static-website-portal-config-1.PNG" style="width: 810px; height: 373px; margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p>정적 웹 사이트 사용의 일부로 만들어진<strong> $web</strong> 컨테이너에 웹 자산을 업로드. Azure Portal에서 직접 이 작업을 수행하거나 <a href="https://github.com/Microsoft/vscode-azurestorage#preview-features" target="_blank">Visual Studio Code 확장을</a> 활용하여 전체 디렉터리 구조를 업로드할 수 있습니다. $web 컨테이너를 마우스 오른쪽 <strong>단추</strong><strong>로 클릭하고 정적 웹 사이트에 배포를 </strong>선택하고 업로드할 디렉터리를 찾습니다. 구성한 이름으로 인덱스 문서를 포함해야 합니다. 이 예제에서는 문서&#39;이름이 <strong>index.html</strong>.</p>
+
+
+  <p>마지막으로 웹 엔드포인트로 이동하여 웹 사이트를 테스트합니다. 또한 웹 사이트에 더 풍부한 기능을 추가하는 방법에 대한 지침을 위해 <a href="https://docs.microsoft.com/en-us/azure/functions/tutorial-static-website-serverless-api-with-database" target="_blank">자체 서버리스 웹앱을 빌드</a> 하는 방법에 대한 이 단계별 자습서를 확인할 수 있습니다.</p>
+
+
+  <h2>그것을 얻고, 사용하고, 그것에 대해 알려주세요.</h2>
+
+
+  <p>Azure Storage 정적 웹 사이트 호스팅 지원은 추가 비용 없이 제공됩니다. 기능 집합에 대한 자세한 내용은 <a href="https://docs.microsoft.com/azure/storage/blobs/storage-blob-static-website" target="_blank">정적 웹 사이트 설명서를 확인하세요</a>.</p>
+
+
+  <p>이 기능에 대한 피드백은 에서 <a href="mailto:AzureStorageFeedback@microsoft.com">AzureStorageFeedback@microsoft.com</a>전자 메일을 통해 들을 수 있기를 기대합니다. 우리는 Azure Storage <a href="https://feedback.azure.com/forums/217298-storage" target="_blank">피드백 포럼</a>에서 게시 할 수있는 Azure Storage 대한 모든 아이디어와 제안을 듣는 것을 좋아합니다.</p>

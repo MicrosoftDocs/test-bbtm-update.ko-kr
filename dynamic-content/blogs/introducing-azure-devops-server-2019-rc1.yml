@@ -1,0 +1,62 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 948f215098292a3caf79e70dbd7d6dd6e6f02edb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901169"
+Slug: introducing-azure-devops-server-2019-rc1
+Title: Azure DevOps Server RC1 소개
+Summary: 오늘 우리는 Azure DevOps Server 2019의 첫 번째 릴리스 후보 (RC)를 공유하게 되어 기쁩니다. Azure DevOps Server 2019는 자체 호스팅을 선호하는 고객을 위해 최적화되는 동시에 Microsoft Azure DevOps 코드베이스를 제공합니다.
+Content: >-
+  <p>오늘&#39;Azure DevOps Server RC(첫 번째 릴리스 후보)를 공유하게 되어 기쁩니다. Azure DevOps Server 2019는 자체 호스팅을 선호하는 고객을 위해 최적화되는 동시에 Microsoft Azure DevOps 코드베이스를 제공합니다. 일부 고객은 온-프레미스에서 Azure DevOps 실행해야 하거나, 격리된 Azure DevOps 인스턴스가 필요하거나, 호스트된 버전의 Azure DevOps 사용할 수 없는 지역에서 실행하려고 하기 때문일 수 있습니다.</p>
+
+
+  <p>지금 <a href="https://azure.microsoft.com/services/devops/server" target="_blank">Azure DevOps Server RC1을 다운로드</a>할 수 있습니다.</p>
+
+
+  <p>Team Foundation Server(TFS)의 진화와 마찬가지로 Azure DevOps Server 다양한 새로운 기능이 포함된 <a href="https://azure.microsoft.com/services/devops/server" target="_blank">새롭고 빠르고 깨끗한 Azure DevOps 사용자 인터페이스</a>를 포함합니다. Well&rsquo;은 아래 고객에게 가장 유익한 몇 가지 기능에 대해 설명하지만, 이 초기 릴리스에 포함된 <a href="https://aka.ms/Connect2018-AzureDevOpsServerReleaseNotes" target="_blank">모든 기능 및 정보에 대한 광범위한 릴리스 정보를</a> 확인할 수 있습니다.</p>
+
+
+  <h2>Azure SQL 대한 지원이 추가됨</h2>
+
+
+  <p>Azure DevOps Server 기존 SQL Server 지원 외에도 Azure SQL 대한 지원이 포함됩니다. 이를 통해 기업은 온-프레미스 SQL Server 사용하여 자체 데이터 센터에서 Azure DevOps 자체 호스팅할 수 있습니다. 이제 고객은 클라우드에서 Azure DevOps 자체 호스팅하고 모든 환상적인 Azure SQL 기능 및 성능을 활용할 수 있습니다. 이 릴리스를 통해 Azure DevOps 이제 고객이 온-프레미스, 클라우드에서 자체 호스트를 설치하거나, 전역적으로 사용 가능한 Microsoft 호스팅 서비스를 사용하여 자동 업데이트 및 자동 크기 조정을 활용할 수 있는 동급 하이브리드 클라우드 개발 공동 작업 기능을 제공합니다.</p>
+
+
+  <h2>릴리스 관리 개선 사항</h2>
+
+
+  <p>Azure DevOps Server 2019를 사용하면 새 릴리스 관리 인터페이스를 사용할 수 있으므로 배포가 어떻게 진행되고 있는지 보다 쉽게 확인할 수 있습니다. Azure DevOps 고유한 엔드 투 엔드 추적 기능을 사용하면 어떤 비트가 어떤 환경에 배포되고 그 이유를 쉽게 이해할 수 있습니다. 온-프레미스 및 Windows, Mac 또는 Linux의 모든 클라우드에서 에이전트를 혼합하고 일치시킬 수도 있습니다. 온-프레미스 인프라뿐만 아니라 Azure의 IaaS 또는 PaaS에 쉽게 배포할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a456f39f-73bb-4994-a673-e2726dc4458a.png"><img alt="Screenshot of the improved Azure Pipelines interface while tracking a release to production using progressive exposure" border="0" height="653" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7c6a6f49-9851-4c79-ab76-c042337c2a08.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="점진적 노출을 사용하여 프로덕션으로 릴리스를 추적하는 동안 향상된 Azure Pipelines 인터페이스의 스크린샷" width="876"></a></p>
+
+
+  <p>Azure DevOps 새로운 탐색 및 향상된 사용자 환경은 호스팅된 서비스에서 상당한 테스트 및 피드백을 받았지만, 자체 호스팅 고객의 경우 새 탐색 모델에 내부 설명서 및 교육을 업데이트해야 할 수 있습니다. 따라서 업그레이드를 수행하면 모든 Azure DevOps Server 사용자에게 새 UI가 표시되므로 그에 따라 계획을 세워야 합니다. 이전 버전의 Team Foundation Server 이전 사용자 인터페이스에 유지됩니다.</p>
+
+
+  <h2>업그레이드 및 라이선스</h2>
+
+
+  <p>자세한 내용은 자체 호스팅 설치에 필요한 종속성을 확인하려면 <a href="https://go.microsoft.com/fwlink/?LinkId=809018" target="_blank">Azure DevOps Server 요구 사항 및 호환성</a> 페이지를 참조하세요. TFS 2018을 실행할 수 있는 경우 이 릴리스에서 모든 운영 체제 및 SQL Server 지원을 계속 진행하므로 Azure DevOps Server 쉽게 업그레이드할 수 있습니다.</p>
+
+
+  <p>Azure DevOps Server 대한 직접 업그레이드는 Team Foundation Server 2012 이상 버전을 포함하는 모든 버전의 TFS에서 지원됩니다. TFS 배포가 TFS 2010 이하에 있는 경우 Azure DevOps Server 2019로 업그레이드하기 전에 몇 가지 중간 단계를 수행해야 합니다. 자세한 내용은 <a href="https://docs.microsoft.com/tfs/server/install/get-started?view=vsts" target="_blank">설치 페이지를</a> 참조하세요.</p>
+
+
+  <p>Azure DevOps Server 2019 RC1에는 현재 프로덕션에 적합한 라이브 라이선스가 포함되어 있지만, 온-프레미스 또는 클라우드에서 자체 호스팅 구성으로 실행되는 Azure DevOps 대한 피드백을 받고자 합니다. 또한 Wed&rsquo;는 TFS 인스턴스를 Azure DevOps Server 업그레이드하는 사용자로부터 피드백을 받는 것을 좋아합니다.</p>
+
+
+  <p>질문이나 피드백이 있는 경우 <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="_blank">Azure DevOps 개발자 커뮤니티 사이트를</a> 통해 알려주세요.</p>
+
+
+  <h2>리소스</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/services/devops/server" target="_blank">자세한 정보 및 2019 RC1 Azure DevOps Server 다운로드</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/tfs/release-notes/azuredevops2019" target="_blank">릴리스 정보</a></li>
+   <li><a href="https://go.microsoft.com/fwlink/?LinkId=809018" target="_blank">Azure DevOps Server 요구 사항 및 호환성</a></li>
+   <li><a href="https://docs.microsoft.com/tfs/server/install/get-started?view=vsts" target="_blank">설치 설명서</a></li>
+  </ul>

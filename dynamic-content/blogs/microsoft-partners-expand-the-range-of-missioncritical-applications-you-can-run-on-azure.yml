@@ -1,0 +1,328 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 92b0003ff9516da819a90689b34a6da62f6357f1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901602"
+Slug: microsoft-partners-expand-the-range-of-missioncritical-applications-you-can-run-on-azure
+Title: Microsoft 파트너는 Azure에서 실행할 수 있는 중요 업무용 애플리케이션 범위를 확장합니다.
+Summary: 지난 몇 년 동안 IT 조직은 비즈니스에 중요한 애플리케이션을 클라우드로 전환할 때 강력한 이점을 실현하여 동일한 애플리케이션을 온-프레미스에서 실행하는 데 직면하는 주요 과제를 해결할 수 있었습니다.
+Content: >-
+  <p><strong>Microsoft Azure 파트너 에코시스템의 깊이와 폭을 통해 수천 개의 조직이 중요 업무용 애플리케이션을 Azure로 가져오는 방법</strong></p>
+
+
+  <p>지난 몇 년 동안 IT 조직은 비즈니스에 중요한 애플리케이션을 클라우드로 전환할 때 강력한 이점을 실현하여 동일한 애플리케이션을 온-프레미스에서 실행하는 데 직면하는 주요 과제를 해결할 수 있었습니다. 점점 더 많은 기업들이 디지털 트랜스포메이션 여정에 착수함에 따라 기술이 혁신과 성장을 촉진하기 때문에 업무 및 비즈니스에 중요한 애플리케이션의 범위가 계속 확장되고 있습니다. 이는 지난 몇 달 동안 더욱 가속화되었으며, 이는 급변하는 세계 경제에 의해 부분적으로 촉발되었습니다.</p>
+
+
+  <p>결과적으로 중요 업무용 애플리케이션의 정의는 진화하고 있으며 많은 비즈니스에서 기록 시스템을 능가합니다. &rsquo;<a href="https://azure.microsoft.com/en-us/blog/run-your-core-applications-on-azure/" target="_blank">Azure에서 실행되는 핵심 애플리케이션</a>의 가용성, 보안, 확장성 및 성능을 높일 수 있도록 플랫폼 간 투자를 중단하지 않은 이유 중 일부입니다. 중요 업무용 앱의 확장은 AI, IoT, 분석 및 새로운 기능이 더욱 보급됨에 따라 가속화될 뿐입니다.</p>
+
+
+  <p>&rsquo;Microsoft 내에서 그리고 많은 고객&rsquo; 산업 부문에서 중요 업무용 시나리오의 범위가 넓어지고 있습니다. 예를 들어, Eric Boyd는 <a href="https://azure.microsoft.com/en-us/blog/azure-ai-build-missioncritical-ai-apps-with-new-cognitive-services-capabilities/" target="_blank">자신의 블로그</a>에서 의료, 보험, 지속 가능한 농업 및 기타 분야의 기업이 비즈니스를 혁신하기 위해 Microsoft Azure AI를 선택한 방법을 설명했습니다. 많은 조직이 원격 인력을 지원해야 했기 때문에 Microsoft Teams 같은 애플리케이션은 이제 중요 업무에 중요해졌습니다. 이것은 또한 <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/09/remote-work-trend-report-meetings/" target="_blank">Teams 일어나는 회의의</a> 깎아 지른듯한 수에 의해 반영됩니다.</p>
+
+
+  <h2>Azure 서비스 및 기능을 넘어</h2>
+
+
+  <p>함께 작업하는 많은 조직은 자신의 비즈니스에 중요한 애플리케이션에 대한 무수한 이점을 실현하고자 하지만, 먼저 다음과 같은 클라우드 여정에 대한 질문을 해결해야 합니다.</p>
+
+
+  <ul>
+      <li>온-프레미스에서 사용하는 핵심 애플리케이션이 Azure에서 인증되고 지원되는지 여부</li>
+      <li>Azure로 이동하면서 온-프레미스에서 수년 동안 빌드한 것과 동일한 수준의 애플리케이션 사용자 지정을 유지할 수 있나요?</li>
+      <li>내 사용자가 내 애플리케이션의 성능에 영향을 주나요?</li>
+  </ul>
+
+
+  <p>본질적으로, 그들은 핵심 비즈니스 프로세스를 클라우드로 전환할 때 파트너 및 ISV와 함께 위조한 전략적 협업&rsquo;을 계속 활용할 수 있기를 원합니다. 온-프레미스를 사용자 지정하고 최적화하는 데 몇 년 동안 사용한 것과 동일한 애플리케이션을 계속 사용하려고 합니다.</p>
+
+
+  <p>Microsoft는 Azure에서 비즈니스를 실행하는 것이 모든 플랫폼에서 제공할 수 있는 서비스 및 기능을 넘어서는 것을 이해합니다. 포괄적인 에코시스템이 필요합니다. Azure는 항상 파트너 지향적이며 많은 ISV 및 기술 파트너와의 협업을 계속 강화하여 Azure에서 비즈니스 운영의 성공에 중요한 애플리케이션을 실행할 수 있습니다.</p>
+
+
+  <h2>중요 업무용 애플리케이션의 증가하는 스펙트럼에 대해 자세히 살펴보기</h2>
+
+
+  <p>현재 <a href="https://azuremarketplace.microsoft.com/en-us/marketplace/" target="_blank">Azure에서 수천 개의 타사 ISV 애플리케이션을</a> 실행할 수 있습니다. 이러한 ISV의 대부분은 소프트웨어 솔루션 및 서비스를 제공하기 위해 Azure에 의존합니다. Azure는 파트너 커뮤니티와 고객을 위한 중요 업무용 플랫폼이 되었습니다.</p>
+
+
+  <p>대부분의 사람들이 중요 업무용 애플리케이션, ERP(엔터프라이즈 리소스 계획 시스템), SCM(공급망 관리), PLM(제품 수명 주기 관리) 및 CRM(고객 관계 관리) 애플리케이션을 생각할 때 가장 먼저 떠오르는 예입니다.</p>
+
+
+  <p>그러나 중요 업무용 에코시스템의 깊이와 폭을 설명하기 위해 전 세계 수천 개의 비즈니스에 중요한 애플리케이션의 고유하고 매우 다른 범주를 고려합니다.</p>
+
+
+  <ul>
+      <li>ERP(리소스 계획) 시스템을 Enterprise.</li>
+      <li>데이터 관리 및 분석 애플리케이션.</li>
+      <li>백업 및 비즈니스 연속성 솔루션.</li>
+      <li>퍼블릭 클라우드 인프라를 사용하는 중요 비즈니스용 애플리케이션의 확대를 예로 들 수 있는 HPC(고성능 컴퓨팅) 시나리오입니다.</li>
+  </ul>
+
+
+  <p>Azure&rsquo; 심층 에코시스템은 이러한 모든 범주 등에서 고객의 요구를 해결합니다.</p>
+
+
+  <h2>ERP 시스템</h2>
+
+
+  <p>대부분의 사람들이 중요 업무용 애플리케이션 ERP, SCM, PLM 및 CRM 애플리케이션을 생각할 때 가장 먼저 떠오르는 예입니다. Azure의 몇 가지 예는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/solutions/sap/" target="_blank">SAP</a>&mdash; Microsoft는 엔터프라이즈 고객이 Azure에서 가장 중요 업무용 SAP 워크로드를 실행할 수 있도록 지원하여 Azure의 인텔리전스, 보안 및 안정성을 SAP 애플리케이션 및 데이터에 제공합니다.</li>
+      <li><a href="https://aka.ms/ViewpointBlogMC1" target="_blank">Viewpoint, Trimble 회사</a>&mdash; Viewpoint는 40년 이상 통합 건설 관리 소프트웨어 및 솔루션을 통해 건설 산업의 혁신을 지원해 왔습니다. Viewpoint와 고객 모두의 확장성 및 유연성 요구를 충족하기 위해 클라이언트의 상당 부분이 이제 <a href="https://aka.ms/ViewpointBlogMC1" target="_blank">Azure에서 소프트웨어 제품군을 실행하고</a> 실질적인 이점을 경험하고 있습니다.</li>
+  </ul>
+
+
+  <h2>데이터 관리 및 분석</h2>
+
+
+  <p>데이터는 기업의 생명선입니다. 고객은 클라우드에서 에지까지 중요 업무용 데이터 원본이 급증하고 있으며, 분석이 클라우드의 데이터 가치를 실현하는 데 핵심적인 요소입니다. AI는 핵심 요소이며 Azure에서 핵심 앱을 현대화하는 또 다른 강력한 이유입니다.</p>
+
+
+  <ul>
+      <li><a href="https://aka.ms/DatastaxBlogMC1" target="_blank">DataStax</a>&mdash; Azure와 함께 Apache Cassandra&trade;를 기반으로 구축된 스케일 아웃 하이브리드 클라우드 네이티브 NoSQL 데이터베이스인 DataStax Enterprise 개인 설정된 실시간 확장 가능한 애플리케이션을 위한 기반을 제공할 수 있습니다. 이 조합을 통해 기업이 중요 업무용 워크로드를 실행하여 규정 준수 및 데이터 거버넌스를 손상시키지 않고 비즈니스 민첩성을 높일 <a href="https://aka.ms/DatastaxBlogMC1" target="_blank">수 있는 방법을 알아봅니</a>다.</li>
+      <li><a href="https://aka.ms/InformaticaBlogMC1" target="_blank">Informatica</a>&mdash; Informatica는 Microsoft와 협력하여 기업에서 고객 및 비즈니스 의사 결정의 원동력이 되는 데이터를 신뢰할 수 있고, 인증하고, 안전하게 보호할 수 있도록 지원해 왔습니다. 특히 Informatica는 중요 업무용 애플리케이션을 구동하는 데이터의 품질에 중점을 두며 <a href="https://aka.ms/InformaticaBlogMC1" target="_blank">기존 투자에서 최대 가치를 도출하는 데 도움이 될 수 있습니다</a>.</li>
+      <li><a href="https://aka.ms/SASBlogMC1" target="_blank">SAS</a>&reg;&mdash; Microsoft 및 SAS를 사용하면 고객이 클라우드에서 SAS 워크로드를 쉽게 실행할 수 있으므로 디지털 변환 이니셔티브에서 중요한 가치를 실현할 수 있습니다. 공동 작업의 일환으로 SAS는 분석 제품 및 산업 솔루션을 SAS 클라우드의 기본 클라우드 공급자로 Azure로 마이그레이션하고 있습니다. <a href="https://aka.ms/SASBlogMC1" target="_blank">중요 업무용 분석이 클라우드에서 홈을 찾는 방법을 알아봅니</a>다.</li>
+  </ul>
+
+
+  <h2>백업 및 재해 복구 솔루션</h2>
+
+
+  <p>RTO(복구 시간 목표) 및 RPO(복구 지점 목표)를 최소화하는 가동 시간 및 재해 복구 계획은 중요 업무용 환경과 관련하여 IT 의사 결정자가 주의해야 하는 주요 메트릭입니다. 중요한 데이터를 백업하는 것은 강력한 비즈니스 연속성 계획을 수립하는 핵심 요소입니다. Azure는 기본 제공 백업 및 재해 복구 기능을 제공하며, Commvault, Rubrik, Veeam, Veritas, Zerto 등과 같은 업계 리더와도 협력하여 데이터가 어디에 있든 기존 애플리케이션을 계속 사용할 수 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://aka.ms/CommvaultBlogMC1" target="_blank">Commvault</a>&mdash; Microsoft는 고객&rsquo; 하이브리드 환경에서 중요 비즈니스용 워크로드 및 데이터에 대해 더 높은 복원력, 가시성 및 민첩성을 가능하게 하는 데이터 관리 솔루션을 제공하기 위해 Commvault와 계속 협력하고 있습니다. Azure VMware Solution<a href="https://aka.ms/CommvaultBlogMC1" target="_blank">에 대한 Commvaults&rsquo;</a>&mdash; 최신 제품 지원 및 해당 금속 SaaS 제품군이 Azure에만 의존하는 이유에 대해 알아봅니다.</li>
+      <li><a href="https://aka.ms/RubrikBlogMC1" target="_blank">Rubrik</a>&mdash; Rubrik을 통해 기업이 낮은 RTO, 대규모 셀프 서비스 자동화 및 가속화된 클라우드 채택을 달성하는 <a href="https://aka.ms/RubrikBlogMC1" target="_blank">방법을 알아봅니</a>다.</li>
+      <li><a href="https://aka.ms/VeeamBlogMC1" target="_blank">Veeam</a>&mdash; Veeams&rsquo; 솔루션 포트폴리오를 사용하여 중요 업무용 워크로드를 Azure로 백업, 복구 및 마이그레이션하는 <a href="https://aka.ms/VeeamBlogMC1" target="_blank">방법을 읽어 보세요</a>.</li>
+      <li><a href="https://aka.ms/VeritasBlogMC1" target="_blank">Veritas</a>&mdash; <a href="https://aka.ms/VeritasBlogMC1" target="_blank">Veritas InfoScale</a>이 Azure와 고급 통합을 통해 클라우드에서 중요 업무용 애플리케이션의 배포 및 관리를 간소화하는 방법을 알아보세요.</li>
+      <li><a href="https://aka.ms/ZertoBlogMC1" target="_blank">체르토 주</a>&mdash; Zertos 플랫폼의 광범위한 기능이 Azure에서 중요 업무용 애플리케이션을 보호하는 데 <a href="https://aka.ms/ZertoBlogMC1" target="_blank">어떻게 도움이 되는지 알아보세요</a>.&rsquo;</li>
+      <li><a href="https://aka.ms/TeradiciBlogMC1" target="_blank">테라디치</a>&mdash; 주 마지막으로, Teradici는 중요 업무와 업무상 중요한 경계가 어떻게 모호해지는지 강조합니다. 장기 시나리오를 포함하도록 <a href="https://aka.ms/TeradiciBlogMC1" target="_blank">비즈니스 연속성 계획을 조정하는 방법을 읽</a>습니다.</li>
+  </ul>
+
+
+  <h2>HPC 시나리오</h2>
+
+
+  <p>HPC 애플리케이션은 종종 회사에서 가장 집약적이고 가장 가치 있는 워크로드이며 금융 서비스, 생명 과학, 에너지, 제조 등을 비롯한 많은 산업에서 비즈니스에 중요합니다. COVID-19와의 싸움에서 5G 반도체 설계에 이르기까지 가장 크고 대담한 혁신; 항공 우주 엔지니어링 설계 프로세스에서 자율 주행 차량 개발에 이르기까지 훨씬 더 많은 것이 HPC에 의해 주도되고 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://aka.ms/AnsysBlogMC1" target="_blank">Ansys</a>&mdash; Azure의 <a href="https://aka.ms/AnsysBlogMC1" target="_blank">Ansys Cloud</a> 가 전례 없는 시기에 비즈니스 연속성에 매우 중요한 것으로 입증된 방법을 살펴봅니다.</li>
+      <li><a href="https://aka.ms/RescaleBlogMC1" target="_blank">크기 조정 다시 조정</a>&mdash; Rescale이 엔지니어와 연구원이 Azure HPC 리소스에 빠르게 액세스하여 중요 비즈니스용 애플리케이션을 클라우드로 전환하는 데 필요한 <a href="https://aka.ms/RescaleBlogMC1" target="_blank">턴키 플랫폼을 제공하는</a> 방법을 알아 보세요.</li>
+  </ul>
+
+
+  <h2>파트너 커뮤니티의 전문 지식에 의존할 수 있습니다.</h2>
+
+
+  <p>많은 조직에서는 Accenture, Avanade, Capgemini, Wipro 등과 같은 글로벌 시스템 통합자를 포함하여 광범위한 파트너 커뮤니티와 협력하여 실질적이고 측정 가능한 가치를 실현하여 핵심 애플리케이션의 클라우드 마이그레이션을 계속 가속화하고 있습니다. 예를 들어 <a href="https://aka.ms/UnifyCloudBlogMC1" target="_blank">UnifyCloud</a> 는 최근 금융 부문의 대규모 조직이 <a href="https://aka.ms/UnifyCloudBlogMC1" target="_blank">AZURE에서 데이터 자산을 현대화</a> 하는 동시에 IT 비용을 69% 절감하는 데 도움을 주었습니다.</p>
+
+
+  <p>우리는 집단적 상상력의 힘에 힘입어 앞으로의 기회에 대해 기쁘게 생각하고 있습니다.</p>
+
+
+  <p>Azure에서 중요 비즈니스용 애플리케이션을 실행하고 비즈니스 복원력을 높이는 방법에 대해 <a href="https://aka.ms/businesscritical" target="_blank">자세히 알아봅니</a>다. <a href="https://myignite.microsoft.com/sessions/7828f0b8-1425-4f60-a8df-a70b93b219b1" target="_blank">Microsoft Ignite 세션에서</a> 더 심층적인 다이버와 데모를 시청하세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <hr>
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/42c1ab09-a067-4243-beab-0434a12c34c1.png"><img alt="Trimble logo" border="0" height="79" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a38e3df9-3d84-4015-937e-66e35d482707.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Trimble 로고" width="250"></a></p>
+
+
+  <p><i>&ldquo;건설 업계는 Viewpoint에 의존하여 비즈니스를 운영하는 데 사용되는 중요 업무용 기술을 구축하고 호스팅하므로 우리가 제공하는 솔루션에 대해 가능한 가장 높은 표준을 가지고 있습니다. Microsoft와 협력하여 확장성, 유연성 및 안정성 &ndash; 을 모두 높여서 Azure 클라우드에서 이러한 표준을 충족할 수 있게 되었으며, 이를 통해 고객은 자신의 디지털 변환을 가속화하고 더 큰 신뢰도로 비즈니스를 운영할 수 있습니다.&rdquo; </i><i>&mdash;</i> 댄 파너, 제품 개발 수석 부사장, 관점 (트림블 회사)</p>
+
+
+  <p>Microsoft Azure 블로그에서 <a href="https://aka.ms/ViewpointBlogMC1" target="_blank">Viewpoint의 안정성, 확장성 및 고객 만족도 향상을</a> 읽어보세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac944679-e6a4-416e-8189-b6fc921ddf47.png"><img align="left" alt="#27141 2" border="0" height="57" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fa964e97-fb2b-43a7-94b7-487a7637b06d.png" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 2" width="250"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;중요 비즈니스용 애플리케이션에는 스케일 아웃 데이터 및 마이크로 서비스를 기반으로 구축된 변환 데이터 아키텍처가 필요하므로 운영, 개발자 생산성 및 출시 시간이 크게 향상됩니다. 이제 엔터프라이즈는 Azure 및 DataStax를 사용하여 비즈니스 민첩성, 규정 준수, 데이터 주권 및 데이터 거버넌스를 달성하기 위해 글로벌 규모에서 가동 중지 시간이 없는 중요 업무용 워크로드를 실행할 수 있습니다.&rdquo;</em>&mdash; Ed Anuff, DataStax 최고 제품 책임자</p>
+
+
+  <p>Microsoft Azure 블로그에서 <a href="https://aka.ms/DatastaxBlogMC1" target="_blank">DataStax Enterprise 사용하여 Data-Driven 변환을 위한 애플리케이션 현대화를</a> 읽어보세요.</p>
+
+
+  <p><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd4b4529-9d6e-4347-aa65-e17406ac3867.png"><img align="left" alt="#27141 3" border="0" height="91" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ef46c621-03e9-4fe5-8b0c-ac2c56b9f55e.png" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 3" width="250"></a></em></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;Microsoft&rsquo; 2020 Data Analytics 올해의 파트너로서 Informatica는 Azure와 협력하여 전 세계 모든 부문의 공동 고객을 위한 중요 업무상 중요한 과제를 해결합니다. Azure의 Informaticas&rsquo; 업계 최고의 Cloud-Native 데이터 관리 플랫폼과 함께 Azure&rsquo;의 규모, 복원력 및 유연성의 조합은 고객에게 가장 복잡하고 신뢰할 수 있는 플랫폼을 제공합니다.  중요하고 중요한 중요 비즈니스용 워크로드.&rdquo;</em>&mdash; Rik Tamm-Daniels, 전략적 생태계 및 기술 담당 부사장, Informatica</p>
+
+
+  <p>Microsoft Azure 블로그에서 <a href="https://aka.ms/InformaticaBlogMC1" target="_blank">Informatica를 사용하여 Business-Critical 데이터의 신뢰, 사용 가능 및 보안 보장을</a> 읽어보세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b20e3c50-cd9b-4b40-a9af-c8a60075be84.jpg"><img align="left" alt="#27141 4" border="0" height="99" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f5342908-7f77-448a-b9c0-2a47aebf9a8b.jpg" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 4" width="240"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;SAS와 Microsoft는 조직이 고객에게 서비스를 제공하고, 위험을 관리하고, 운영을 개선하기 위해 노력할 때 더 나은 의사 결정을 내릴 수 있도록 돕는 비전을 공유합니다. 조직은 빠른 속도로 클라우드로 전환하고 있습니다. 향후 예정된 디지털 변환 프로젝트에는 이제 2020년 배달 날짜가 지정됩니다. 고객은 디지털 성장 전략을 추진하기 위해 분석 및 클라우드가 중요하다는 것을 인식합니다. 이 파트너 관계를 통해 Microsoft Azure 빠르게 전환할 수 있으므로 신뢰할 수 있고 성능이 높고 비용 효율적인 방식으로 분석 워크로드를 빌드, 배포 및 관리할 수 있습니다.&rdquo;</em>&mdash; 올리버 샤벤버거, SAS 수석 부사장, 최고 운영 책임자 및 최고 기술 책임자</p>
+
+
+  <p><a href="https://aka.ms/SASBlogMC1" target="_blank">중요 업무용 분석을 읽고 클라우드 블로그에서 홈을 찾</a>습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/60df1dc5-ef2e-41c2-a2d1-b08492187ef0.png"><img align="left" alt="#27141 5" border="0" height="49" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7ced7b46-363c-4005-b32d-942804135c7c.png" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 5" width="250"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;Microsoft는 Foundation 파트너이며 메탈릭을 호스트하고 제공하는 플랫폼으로 Microsoft Azure 선택하는 것은 쉬운 결정이었습니다. 이 결정은 Azures&rsquo; 성능, 규모, 안정성, 보안으로 인해 고객의 신뢰를 촉발하고 고객 및 파트너에게 고유한 모범 사례 지침을 제공합니다. Microsoft 고객은 매일 Microsoft 및 Azure 중심 Commvault 솔루션을 사용하여 중요한 애플리케이션과 디지털 변환 전략을 지원하는 데 필요한 데이터를 관리, 마이그레이션 및 보호합니다.&rdquo;</em>&mdash; Randy De Meno, Microsoft Practice &amp; Solutions 부사장/최고 기술 책임자</p>
+
+
+  <p><a href="https://www.commvault.com/blogs/commvault-extends-collaboration-with-microsoft-to-enhance-support-for-mission-critical-workloads" target="_blank">중요 업무용 워크로드에 대한 지원을 강화하기 위해 Microsoft와의 협업을 확장하는 Commvault 블로그를</a> 읽어보세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/934227bc-9cf3-4eb5-83ea-46fc92904657.jpg"><img align="left" alt="#27141 6" border="0" height="96" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c68385e8-d6b3-4bae-b330-f76a6d032488.jpg" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 6" width="250"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;엔터프라이즈는 Rubrik 및 Azure를 사용하여 SAP, Oracle, SQL 및 VMware 환경에서 중요 업무용 애플리케이션을 보호합니다. Rubrik는 Rubriks&rsquo; 자동화 계층을 사용하여 Azure Archive Storage 사용하여 기업이 안전하고 더 빠르고 낮은 TCO로 Azure로 이동할 수 있도록 지원합니다. 보안에 관심이 있는 고객은 Rubrik 및 Microsoft를 사용하면 중요 비즈니스용 데이터가 변경할 수 없어 랜섬웨어 위협이 백업에 액세스하지 못하게 되므로 기업은 온-프레미스 및 Azure에서 정보를 신속하게 검색하고 복원할 수 있습니다.&rdquo;&mdash;</em> Arvind Nithrakashyap, 최고 기술 책임자 및 공동 설립자, Rubrik</p>
+
+
+  <p>기업에서 <a href="https://aka.ms/RubrikBlogMC1" target="_blank">Azure에서 Rubrik를</a> 사용하는 방법을 알아봅니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4ad67480-ed5f-4a6e-a3ea-0f2b81e856a1.png"><img align="left" alt="#27141 7" border="0" height="45" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/16e0ce50-5d16-4151-89e6-bf37292d0efb.png" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 7" width="250"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;Veeam은 375,000명 이상의 글로벌 고객에 걸쳐 비즈니스에 중요한 애플리케이션 및 데이터에 대한 Microsoft Azure 채택이 계속 증가하고 있습니다. 애플리케이션 및 데이터의 마이그레이션은 퍼블릭 클라우드에 대한 주요 장벽으로 남아 있지만, 핵심에서 단순성, 유연성 및 안정성을 제공하는 통합 클라우드 데이터 관리 플랫폼을 통해 이러한 문제를 제거하는 동시에 비용 제어 및 절감을 위한 탁월한 데이터 이식성을 제공하기 위해 최선을 다하고 있습니다. 고유한 Veeam 유니버설 라이선스 &ndash; 의 지원으로 워크로드와 함께 이동하는 이식 가능한 라이선스를 통해 고객이 워크 &ndash; 로드를 Azure로 쉽게 마이그레이션하여 데이터를 제어할 수&#39;수 있도록 한 다음 클라우드에서 계속 보호하고 관리할 수 있습니다.&rdquo;</em>&mdash; 대니 앨런, 최고 기술 책임자 및 제품 전략 수석 부사장, Veeam</p>
+
+
+  <p>Azure 블로그에서 <a href="https://aka.ms/VeeamBlogMC1" target="_blank">중요 업무용 워크로드의 백업, 복구 및 마이그레이션을</a> 읽어보세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5bd6654d-ee93-4042-8ff4-0945666c848c.png"><img align="left" alt="#27141 8" border="0" height="48" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bfda03c0-1a63-43f1-9bef-564116c86f84.png" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 8" width="250"></a></em></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;수천 명의 고객이 온-프레미스와 Azure에서 데이터를 보호하기 위해 Veritas를 사용합니다. Microsoft와의 파트너십을 통해 엔터프라이즈 고객이 중요 비즈니스용 애플리케이션을 최적화하고 즉시 사용할 수 있도록 하는 데 의존하는 데이터 보호 솔루션을 추진할 수 있습니다.&rdquo;</em>&mdash; 필 브레이스, 베리타스 최고 수익 책임자</p>
+
+
+  <p><a href="https://aka.ms/VeritasBlogMC1" target="_blank"> Veritas InfoScale 블로그를 사용하여 Microsoft Azure 중요 업무용 애플리케이션 마이그레이션을 읽고 최적화합니다</a>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5d332526-ce08-41c3-bed5-6f7785296478.png"><img align="left" alt="#27141 9" border="0" height="102" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/44b154d1-d564-4175-a37c-d496d2a7910b.png" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 9" width="250"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;Microsoft는 항상 파트너의 전문 지식을 활용하여 고객에게 가장 혁신적인 기술을 제공하고 있습니다. Zertos&rsquo;는 Microsoft와의 오랜 협업으로 인해 Zetro&#39;IT 복원력 플랫폼은 Azure와 완전히 통합되며 데이터 손실을 초로 줄이고 가동 중지 시간을 몇 분으로 줄이는 강력하고 완전히 오케스트레이션된 솔루션을 제공합니다. Zertos&rsquo; 엔드투엔드, 수렴형 백업, DR 및 클라우드 모바일 플랫폼을 활용하여 고객은 하이브리드 클라우드 환경에서 IT 복원력을 위한 최상의 클라우드 플랫폼인 Azure 클라우드 &ndash; 를 사용하여 랜섬웨어, 하드웨어 오류 및 기타 다양한 시나리오를 포함하는 계획되거나 계획되지 않은 중단 중에 중요 업무용 애플리케이션을 보호할 수 있다는 것을 입증했습니다.&rdquo;&mdash;</em> Gil Levonai, CMO 및 SVP of Product, Zerto</p>
+
+
+  <p><a href="https://aka.ms/ZertoBlogMC1" target="_blank">Zerto Platform 블로그를 사용하여 클라우드에서 중요한 애플리케이션 보호 블로그를</a> 읽어보세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/83af738b-35ae-4a3a-bf2f-e6c671e1d06f.png"><img align="left" alt="#27141 10" border="0" height="59" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f81102f7-f703-4f52-b744-504cc2f6db22.png" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 10" width="250"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;비즈니스가 더 오래 중단될수록 라인이 흐려지고 비즈니스에 중요한 기능이 중요 업무로 전환되기 시작하여 가상 데스크톱 및 워크스테이션이 Microsoft Azure 모든 기능 또는 업계의 원격 인력을 지원하는 IT 관리자에게 매력적인 옵션이 됩니다. Teradici Cloud Access Software는 뛰어난 성능과 충실도로 Microsoft Azure 및 Azure Stack에서 까다로운 비즈니스 중요 업무용 워크로드를 지원하는 유연하고 안전한 솔루션을 제공하여 비즈니스 연속성 전략 내에서 효율성과 복원력을 높일 수 있도록 지원합니다.&rdquo;</em>&mdash; 존 맥베이, 전략동맹 이사, 테라디치</p>
+
+
+  <p><a href="https://aka.ms/TeradiciBlogMC1" target="_blank">비즈니스 중요 우선 순위를 중요 업무용 블로그로 전환하는 더 긴 IT 타임라인을</a> 읽어보세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a1b27037-3ee1-44b3-8fd0-d747297866a8.jpg"><img align="left" alt="#27141 11" border="0" height="128" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b527a7af-6d4c-408d-8369-10317638d0a8.jpg" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 11" width="250"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&quot;Ansys는 고객이 점점 더 복잡해지는 엔지니어링 요구 사항을 추진하기 위해 주문형 고성능 컴퓨팅에 대한 요구 사항을 가속화하는&#39; 지원해야 합니다. Microsoft Azure는 특별히 구축된 HPC와 강력한 시장 진출 역량을 갖춘 자연스러운 선택이었고, 공동 고객이 집에서 작업하는 동안에도 혁신적인 제품을 계속 설계할 수 있도록 하고 있습니다.&rdquo;</em>&mdash; Navin Budhiraja, Ansys 클라우드 및 플랫폼 부사장 겸 총괄 관리자</p>
+
+
+  <p>Microsoft Azure <a href="https://aka.ms/AnsysBlogMC1" target="_blank">Ansys Cloud: 전염병 블로그에서 비즈니스 연속성을 위한 중요한 리소스를</a> 읽어보세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/05463e65-efa1-43f0-ab84-e404b567b206.png"><img align="left" alt="#27141 12" border="0" height="57" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a2a65ec-90aa-4196-a770-cdde43d8564d.png" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 12" width="250"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;강력하고 안정적인 비즈니스 중요 시스템은 성공을 위해 가장 중요합니다. Azure HPC 리소스를 활용하는 고객 크기 조정은 확장성, 유연성 및 인텔리전스를 활용하여 RD&amp;를 개선하고 개발을 가속화하며 고정 인프라로 불가능한 비용을 절감합니다.&rdquo;</em>&mdash; 에드워드 Hsu, 제품 부사장, 리스케일</p>
+
+
+  <p>혁신을 <a href="https://aka.ms/RescaleBlogMC1" target="_blank">주도하는 중요 비즈니스용 시스템</a> 블로그를 읽어보세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9f52609a-4306-4628-9628-e6b5c50c004a.png"><img align="left" alt="#27141 13" border="0" height="58" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/625cf896-3235-44cc-8af1-e671eec5690c.png" style="border-image:none 100% / 1 / 0 stretch; display:inline; background-image:none; float:left" title="#27141 13" width="250"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><em>&ldquo;고객은 중요 비즈니스용 워크로드를 Azure로 전환하고 애플리케이션을 현대화하면서 상당한 비용 혜택을 실현하고 있습니다. Microsoft 솔루션은 고객이 클라우드 전략을 개발하고, 신속하게 현대화하고, 클라우드 환경을 최적화하는 동시에 위험 및 가동 중지 시간을 최소화하는 데 도움이 됩니다.&rdquo;</em>&mdash; 비벡 바트나가르, Co-Founder 및 최고 기술 책임자, UnifyCloud</p>
+
+
+  <p><a href="https://aka.ms/UnifyCloudBlogMC1" target="_blank">중요 업무용 애플리케이션을 클라우드로 이동: 그 어느 때보다 중요한</a> 블로그를 읽어보세요.</p>

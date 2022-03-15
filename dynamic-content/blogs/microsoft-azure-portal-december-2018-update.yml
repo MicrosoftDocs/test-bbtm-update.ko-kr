@@ -1,0 +1,208 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4970c56a0939aea6a61c74bbcd54b8077831bb58
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907719"
+Slug: microsoft-azure-portal-december-2018-update
+Title: Microsoft Azure Portal 2018년 12월 업데이트
+Summary: 이번 달에는 Azure에서 Virtual Machines를 만들고 관리하는 유용성, Security Center에 대한 업데이트 및 리소스에 대한 액세스를 제어하는 향상된 환경을 개선하는 데 도움이 되는 업데이트를 제공합니다.
+Content: >-
+  <p><em>이 게시물은 Microsoft Azure 수석 그룹 PM 관리자 인 <a href="https://azure.microsoft.com/en-us/blog/author/lwelicki/" target="_blank">Leon Welicki</a>가 공동 저술했습니다.</em></p>
+
+
+  <p>이번 달에&rsquo;는 Azure에서 가상 머신을 만들고 관리하는 유용성, Security Center에 대한 업데이트 및 리소스에 대한 액세스를 제어하는 향상된 환경을 개선하는 데 도움이 되는 업데이트를 제공합니다.</p>
+
+
+  <p>이제 <a href="https://portal.azure.com/" target="_blank"><strong>Azure Portal</strong></a><strong>에 로그인 </strong><strong> 하고 새로운 모든 항목을&rsquo; 확인합니다. </strong><a href="https://aka.ms/azuremobileapp" target="_blank"><strong>Azure 모바일 앱을 다운로드합니다</strong></a><strong>.</strong></p>
+
+
+  <h2>Azure Portal에 대한 12월 업데이트 목록은 다음과 같습니다&rsquo;.</h2>
+
+
+  <h3>Compute</h3>
+
+
+  <ul>
+   <li><a href="#Updated experience for Virtual Machine creation and management">가상 머신 만들기 및 관리를 위한 업데이트된 환경</a></li>
+  </ul>
+
+
+  <h3>보안</h3>
+
+
+  <ul>
+   <li><a href="#Security Center network map is now generally available">이제 Security Center 네트워크 맵을 일반 공급</a></li>
+   <li><a href="#Updated Security Policy page">업데이트된 보안 정책 페이지</a></li>
+   <li><a href="#Updated experience for Access control (IAM)">액세스 제어에 대한 업데이트된 환경(IAM)</a></li>
+  </ul>
+
+
+  <h3>관리 도구</h3>
+
+
+  <ul>
+   <li><a href="#Updates to Azure Site Recovery">Azure Site Recovery에 대한 업데이트</a></li>
+  </ul>
+
+
+  <p>&rsquo;이러한 각 업데이트를 자세히 살펴보겠습니다.</p>
+
+
+  <h2>Compute</h2>
+
+
+  <h3><a id="Updated experience for Virtual Machine creation and management" name="Updated experience for Virtual Machine creation and management">가상 머신 만들기 및 관리를 위한 업데이트된 환경</a></h3>
+
+
+  <p>이번 달에는 가상 머신을 만들고 관리하는 유용성을 향상시키는 몇 가지 업데이트가 제공됩니다.</p>
+
+
+  <p>이제 가상 머신을 만들 때 가상 머신 네트워크 매개 변수를 구성할 수 있는 유연성이 더 갖추어지게 되었습니다. 가상 네트워크, 가상 네트워크 서브넷 및 주소 공간을 만드는 방법을 더 자세히 제어할 수 있도록 인터페이스를 수정했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4478cd59-3245-41bf-9c1f-18051f45158e.png"><img alt="Create a virtual machine" border="0" height="554" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/86f3fb34-f74e-45f1-94fa-9a842bb7c6bf.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="가상 머신 만들기" width="1064"></a></p>
+
+
+  <p align="center"><em>새 VM에 대한 가상 네트워크 매개 변수 구성</em></p>
+
+
+  <p>또한 가상 머신을 만드는 동안 새 데이터 디스크의 디스크 유형을 지정하는 기능도 추가되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f7899edc-9b76-4484-8f31-92bcefe7c8bd.png"><img alt="Create a new disk" border="0" height="414" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f8aa09f9-1aff-49ca-b67c-d271a87bfbe1.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="새 디스크 만들기" width="594"></a></p>
+
+
+  <p align="center"><em>디스크 유형 지정</em></p>
+
+
+  <p>마지막으로 페이지 맨 위에 Essentials 영역에서 가장 중요한 정보를 사용하여 디스크 개요 페이지를 표준 Azure 리소스처럼 보이도록 다시 디자인했습니다.</p>
+
+
+  <p>디스크 IOPS, 처리량 및 큐 깊이를 비롯한 주요 디스크 메트릭에 대한 차트도 추가되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d2c349c8-4b2a-405c-991a-16e97cbe710f.png"><img alt="New charts" border="0" height="625" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e6df5b1c-c7d7-47c3-85bb-b388f4306e18.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="새 차트" width="1094"></a></p>
+
+
+  <p align="center"><em>새 차트</em></p>
+
+
+  <p>새 환경을 사용해 보려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li>왼쪽 탐색 메뉴에서 <strong>리소스 만들기를</strong> 선택합니다.</li>
+   <li>원하는 가상 머신 이미지를 선택합니다.</li>
+   <li><strong>가상 머신 만들기</strong> 페이지에서 <strong>네트워킹 탭을</strong> 선택한 다음 <strong>가상 네트워크</strong> 이름 상자에서 <strong>새로 만들기</strong>를 클릭합니다.</li>
+  </ol>
+
+
+  <h2>보안</h2>
+
+
+  <h3><a id="Security Center network map is now generally available" name="Security Center network map is now generally available">이제 Security Center 네트워크 맵을 일반 공급</a></h3>
+
+
+  <p>Security Centers&rsquo; 대화형 네트워크 맵은 네트워크 리소스를 강화하기 위한 권장 사항 및 인사이트를 제공하는 보안 오버레이가 포함된 그래픽 보기를 제공합니다. 맵을 사용하여 Azure 워크로드의 네트워크 토폴로지, 가상 머신과 서브넷 간의 연결, 맵에서 특정 리소스로 드릴다운하는 기능 및 해당 리소스에 대한 권장 사항을 확인할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/azure/security-center/security-center-network-recommendations" target="_blank">Azure Security Center에서 네트워크 리소스 보호</a> 설명서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3c15485d-a4c1-4632-9a0c-4b04e9fdb6bd.png"><img alt="Network Map" border="0" height="639" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/091f7652-53b3-4f15-beea-04314b651ae0.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="네트워크 맵" width="1083"></a></p>
+
+
+  <p align="center"><em>네트워크 맵</em></p>
+
+
+  <p>네트워크 맵을 열려면:</p>
+
+
+  <ol>
+   <li>Security Center의 리소스 보안 위생 아래에서 <strong>네트워킹을</strong> 선택합니다.</li>
+   <li><strong>네트워크 맵</strong>에서 <strong>토폴로지 보기를</strong> 선택합니다.</li>
+  </ol>
+
+
+  <h3><a id="Updated Security Policy page" name="Updated Security Policy page">업데이트된 보안 정책 페이지</a></h3>
+
+
+  <p>보안 정책 페이지는 Azure 정책에서 생성될 때 기본 제공 Azure Security Center 정책을 반영하도록 업데이트되었습니다. Azure Security Center에서 평가하는 각 정책에 대한 매개 변수를 확인하고 선택한 범위(구독 또는 관리 그룹)에 적용되는 기존 보안 정책을 구성할 수 있습니다.</p>
+
+
+  <ol>
+
+  </ol>
+
+
+  <h3><a id="Updated experience for Access control (IAM)" name="Updated experience for Access control (IAM)">액세스 제어에 대한 업데이트된 환경(IAM)</a></h3>
+
+
+  <p>다시 시도해 보겠습니다&rsquo;. RBAC(역할 기반 액세스 제어)를 사용하여 Azure 리소스에 대한 액세스를 제어하는 것은 Azure에서 수행하는 가장 일반적인 작업 중 하나이며, 액세스를 관리하는 환경은 다양한 서비스 유형에 대해 Azure Portal에서 일관됩니다. Weve&rsquo;는 성능을 향상시키고 사용자&#39;액세스를 보다 신속하게 확인하는 것과 같은 중요한 작업을 완료하는 데 도움이 되도록 탭을 기반으로 하는 새 인터페이스로 포털의 액세스 제어(IAM) 블레이드를 업데이트했습니다. IAM 블레이드에서 변경되는 모든 항목&rsquo;은 다음과&rsquo; 같습니다.</p>
+
+
+  <ul>
+   <li>IAM 블레이드의 성능 향상</li>
+   <li>단일 사용자, 그룹, 서비스 주체 또는 관리 ID에 대한 역할 할당을 빠르게 볼 수 있는 액세스 확인 기능</li>
+   <li>일반적인 작업에 연결되는 타일</li>
+   <li>관련된 거부 할당을 볼 수 있는 거부 할당 탭입니다. 거부 할당은 읽기 전용이며 Azure에서만 설정할 수 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8ab839e-40d3-43c1-a358-061465355e6d.png"><img alt="access-control-iam (002)" border="0" height="737" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a5957ed7-42bd-43d9-98ea-2c3e3d022116.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="access-control-iam(002)" width="1082"></a></p>
+
+
+  <p align="center"><em>새 액세스 제어(IAM) 블레이드</em></p>
+
+
+  <p>새 IAM 블레이드를 보려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li><strong>모든 서비스를</strong> 선택하고 보거나 관리할 범위 또는 리소스를 선택합니다. 예를 들어 <strong>관리 그룹</strong>, 구독, <strong>리소스 그룹</strong> 또는 모든 리소스<strong>를</strong> 선택할 수 있습니다.</li>
+   <li>리소스 블레이드의 메뉴에서 액세스 제어(IAM)&rdquo;를 선택합니다&ldquo;.</li>
+  </ol>
+
+
+  <h2>관리 도구</h2>
+
+
+  <h3><a name="Updates to Azure Site Recovery">Azure Site Recovery에 대한 업데이트</a></h3>
+
+
+  <p>이제 Azure Site Recovery는 Azure 가용성 영역에 배포된 Azure 가상 머신에 대한 재해 복구를 지원합니다. 영역 고정 VM을 한 Azure 지역에서 다른 지역으로 복제할 수 있습니다. 대상 지역에서 가용성 영역을 지원하는 경우 대상 VM을 영역 고정 VM으로 구성할 수 있습니다. 그렇지 않은 경우 VM을 단일 인스턴스로 구성하거나 가용성 집합의 일부로 구성할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94ad8d5b-b985-4ba6-b264-c98d50acd5bd.png"><img alt="Configure disaster recovery" border="0" height="648" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/76d7f227-3226-43b9-a584-2f56fa8b7543.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="재해 복구 구성" width="1098"></a></p>
+
+
+  <ol>
+
+  </ol>
+
+
+  <p align="center"><em>가상 머신을 다른 Azure 지역에 복제합니다.</em></p>
+
+
+  <p>이 기능을 사용해 보려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li>가용성 영역에 배포된 가상 머신을 선택합니다.</li>
+   <li>왼쪽 메뉴에서 <strong>재해 복구</strong> 를 선택합니다.</li>
+   <li>기본값을 검토하고 <strong>복제 사용을</strong> 선택합니다.</li>
+  </ol>
+
+
+  <h2>유용한 정보</h2>
+
+
+  <p>당신이 나 같은 경우&rsquo;, 당신은 앞으로 무엇을&rsquo;보고 당신이 그들에 손을 넣을 수있는 즉시 새로운 기능을 즐길 수 있도록 미리 새로운 것들을 테스트하고 싶습니다. Azure Portal을 사용하면 preview.portal.azure.com 방문하여 미리 보기에서 기능을 테스트할 수도 <a href="https://preview.portal.azure.com/" target="_blank">있습니다</a>. 스포일러 경고 : 우리는 12 월에 오는 당신을 위해 정말 중요한 무언가를해야합니다.</p>
+
+
+  <h2>의견 제시</h2>
+
+
+  <p>언제나처럼, 모든 좋은 피드백을 주셔서 감사합니다. Azure Portal은 항상 의견을 듣는 데 관심이 있는 대규모 엔지니어 팀에 의해 빌드됩니다. &rsquo;Azure Portal을 빌드하는 방법에 대해 자세히 알아보려면 세션을 시청하고, &ldquo; Microsoft Ignite 2018에서 제공하는 Azure의 수석 그룹 프로그램 관리자인 Leon Welicki가 <a href="https://www.youtube.com/watch?v=4YOjlIioapw" target="_blank">제공하는 수백만 명의 사용자에게</a>&rdquo; 확장 가능한 솔루션을 빌드해야 합니다.</p>
+
+
+  <p>&rsquo;<a href="https://portal.azure.com/" target="_blank">Azure Portal에 로그인</a>하고 오늘 <a href="https://aka.ms/azuremobileapp" target="_blank">Azure 모바일 앱을</a> 다운로드하여 새로운 모든 것을&rsquo; 확인하고 의견 섹션 또는 <a href="https://twitter.com/azureportal" target="_blank">Twitter</a>에서 피드백을 알려주세요. 다음 달에 만나보세요!</p>

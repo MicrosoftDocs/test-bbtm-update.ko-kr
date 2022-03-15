@@ -1,0 +1,75 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0e25c13ac5881eb0d34c732cfe8cb8937a01829d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907699"
+Slug: migrate-sap-systems-faster-with-cloud-move-for-azure-by-snp
+Title: CLOUD Move for Azure by SNP를 사용하여 SAP 시스템 더 빠르게 마이그레이션
+Summary: 'Azure용 Cloud Move를 사용하면 기존 SAP 시스템의 자세한 분석을 통해 자동화되고 정확한 클라우드 크기 조정을 가능하게 하며, 전체 비용 투명성을 갖춘 Azure의 새 환경에 매핑할 수 있습니다. '
+Content: >-
+  <p data-ccp-props="{&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559683&quot;:0,&quot;335559685&quot;:0,&quot;335559731&quot;:0,&quot;335559737&quot;:0,&quot;335562764&quot;:2,&quot;335562765&quot;:0.9,&quot;335562766&quot;:2,&quot;335562767&quot;:0,&quot;335562768&quot;:2,&quot;335562769&quot;:0}" lang="EN-US" paraeid="{d62ccb2b-c072-492c-b87c-5bec97cae19c}{107}" paraid="0" xml:lang="EN-US"><em>이 블로그 게시물은 Azure의&nbsp; SAP 수석 PM 관리자인Hiren Shah가 공동 저술했습니다.</em></p>
+
+
+  <p>SAP 솔루션은 많은 기업의 디지털 엔터프라이즈 핵심을 지원합니다. 디지털 변환 과정의 일환으로 조직은 업무상 중요한 SAP 워크로드를 Microsoft Azure 마이그레이션하여 하이퍼스케일 클라우드, 민첩성 및 비즈니스 연속성을 활용하고자 합니다. 중요 업무용 SAP 환경을 마이그레이션하려면 위험 및 가동 중지 시간을 최소화하기 위해 신중한 계획과 전문 지식이 필요합니다. 그러나 올바른 자동화 도구와 전문가 팀을 사용하면 마이그레이션이 번거로울 필요가 없습니다&rsquo;. 고객을 위한 마이그레이션을 간소화하고 클라우드 컴퓨팅의 이점을 가속화하기 위해 SNP와 Microsoft는 <a href="https://blog.snpgroup.com/transformation-newsblog/snp-signs-agreement-with-microsoft-to-expand-sap-cloud-migration-solutions" target="_blank">제휴를 확장했습니다</a>. <a href="https://www.snpgroup.com/en/business-partner/microsoft" target="_blank">새로운 AzureProgram</a>&nbsp;용 클라우드 이동을 통해 고객은 이제 자동화 기능을 활용하여 Azure 클라우드의 모든 이점을 통해 SAP 변환 과정을 가속화할 수 있습니다.</p>
+
+
+  <p>Azure용 Cloud Move를 사용하면 기존 SAP 시스템의 자세한 분석을 통해 자동화되고 정확한 클라우드 크기 조정을 가능하게 하며, 전체 비용 투명성을 갖춘 Azure의 새 환경에 매핑할 수 있습니다. 아래에서 자세히 확인할 수 있습니다. SNPs&rsquo; <a href="https://www.youtube.com/watch?v=5kabnQqkHtg" target="_blank">CrystalBridge&reg;</a> 및 SNPs&rsquo; BLUEFIELD&trade; 접근 방식은 비용 효율적이고 안전한 방식으로 복잡한 SAP 환경을 위한 최첨단 자동화 마이그레이션을 제공합니다. SAP S/4HANA&reg; 로의 마이그레이션은 매우 복잡한 작업입니다. 회사가 S/4HANA로 전환할 때는 데이터에 초점을 맞춥니다. 마이그레이션할 데이터와 보관하려는 기록 데이터를 결정해야 합니다. 가동 중지 시간도 문제입니다. 회사가 S/4HANA로 전환하면 일상적인 운영이 원활하게 진행되어야 합니다. SAP S/4HANA에 대한 BLUEFIELD&trade; 접근 방식을 사용하면 중단 없는 단일 라이브 프로젝트에서 기능 및 데이터를 마이그레이션하고 업그레이드할 수 있습니다. SNP BLUEFIELD&trade; 를 사용하면 단일 단계에서 시스템을 병합, 분할, 업그레이드 및 조화시킬 수 있습니다. 또한 SNPs&rsquo; Crystalbridge&reg; 솔루션은 SAP 시스템의 자동화된 기능 분석을 제공하여 복잡한 시스템에 대한 효과적인 우선 순위 지정, 테스트 계획 및 선택적 데이터 마이그레이션을 가능하게 하는 가장 많이 사용되는 영역을 식별합니다. Azure에서 SAP S/4HANA의 후속 자동화된 구현을 통해 고객은 프로젝트를 더 빠르고 비용 효율적으로 구현할 수 있습니다.</p>
+
+
+  <p>SNPS&rsquo; 솔루션 및 기능을 활용하여 고객에게 Azure의 SAP S/4HANA에 대한 간소화되고 가속화된 경로를 제공할 수 있습니다. SAP, SNP, 시스템 통합업체 및 Microsoft 간의 통합된 접근 방식과 긴밀한 계약은 고객에게 매우 신뢰할 수 있는 계획과 고도로 자동화된 솔루션을 제공합니다. 평가, 개념 증명 및 SAP 환경 마이그레이션을 통해 다양한 고객 유형의 특정 요구 사항에 맞게 조정된 미리 정의된 AzurePackage&nbsp;용 클라우드 이동의 간단한 집합은 고객&rsquo; 경험을 투명하게 만들고 가동 중지 시간이 거의 0에 가까운 전환 기간을 단축합니다. Azure 마이그레이션에서 SAP용 Microsofts&rsquo; Preferred Partner로 SNP를 갖게 되어 매우 기쁩니다.&nbsp;</p>
+
+
+  <h2>Azure용 Cloud Move란?</h2>
+
+
+  <p>Azure용 Cloud Move는 대상 시스템의 최적의 크기를 결정하고 Azure 클라우드에서 배포를 자동화합니다.</p>
+
+
+  <h2>빠르고 신뢰할 수 있는</h2>
+
+
+  <p>Azure용 Cloud Move는 시스템을 자동으로 검사하여 비즈니스 및 기술 데이터를 수집하여 시간, 비용 및 리소스를 절약합니다.</p>
+
+
+  <h2>Verified&nbsp;</h2>
+
+
+  <p>솔루션은 Microsoft와 함께 개발되었습니다. 수집된 데이터는 CrystalBridge&reg; 에 저장되며 언제든지 쉽게 확인할 수 있습니다.</p>
+
+
+  <h2>Simulation</h2>
+
+
+  <p>CrystalBridge&reg; 는 사용자가 대화형으로 조정할 수 있는 보고서 및 비교를 사용하여 잠재적인 절감액을 즉시 식별합니다.</p>
+
+
+  <h2>자동화 배포</h2>
+
+
+  <p>Azure용 클라우드 이동은 Azure 클라우드에서 대상 시스템의 배포를 계획할 뿐만 아니라 또한 SAP 및 Microsoft에서 승인한 템플릿을 사용하여 몇 시간 안에 자동으로 실행됩니다.</p>
+
+
+  <h2>위험 수준 낮음</h2>
+
+
+  <p>클라우드에서 대상 솔루션의 고도로 자동화된 분석 및 시뮬레이션은 오류가 발생하기 쉬운 수동 활동을 방지하고 항상 완전한 비용 투명성을 제공합니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p><a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWwEGa" target="_blank">Azure Flyer용 클라우드 이동</a></p>
+
+
+  <p><a href="https://www.snpgroup.com/en/business-partner/microsoft" target="_blank">Azure Webpage용 클라우드 이동</a></p>
+
+
+  <p><a href="https://www.youtube.com/watch?v=5kabnQqkHtg&amp;__hstc=129112147.96a3f8d9731b26b1d04efc5ac85eb225.1585727768464.1600869354788.1600944960944.210&amp;__hssc=129112147.1.1600952724034&amp;__hsfp=1535614116&amp;hsCtaTracking=f153fdd9-a3a3-4a03-af1d-caa9b5472bc8%7Cd0d9499a-b05e-479f-8323-afef7d1e7cd2" target="_blank">Azure용 클라우드 이동 트레일러</a></p>
+
+
+  <h2>Azure에서 SAP를 마이그레이션하는 방법에 대한 자세한 내용은 다음을 참조하세요.</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/solutions/sap/migration/" target="_blank">Azure Migration &ndash; SAP Intelligent Enterprise | SAP Microsoft Azure</a></p>

@@ -1,0 +1,90 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 531e73a76b1fd2f38b3df7a2294d6b20687a7b14
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907952"
+Slug: announcing-the-azure-storage-solution-showcase
+Title: Azure Storage 솔루션 쇼케이스 시작
+Summary: Azure Storage 인프라를 기반으로 솔루션을 구축한 혁신적인 기술 파트너를 보여주는 새로운 웹캐스트 시리즈를 발표하게 되어 기쁩니다. 이러한 모든 솔루션은 고객이 Azure 서비스를 활용하고 비즈니스에 실질적인 이점을 얻을 수 있도록 지원합니다. 그것은 우리의 고객에 관한 모든 당신이 당신의 목표를 달성하는 데 도움이됩니다.
+Content: >-
+  <p>Azure Storage 인프라를 기반으로 솔루션을 구축한 혁신적인 기술 파트너를 보여주는 새로운 웹캐스트 시리즈를 발표하게 되어 기쁩니다. Microsoft는 항상 파트너 에코시스템에 전념해 왔으며, 특히 Azure Storage 팀에서 수행한 작업을 자랑스럽게 생각합니다. 지난 2년 동안 우리는 Azure Storage 기반으로 통합되거나 구축된 솔루션의 수가 인상적인 증가를 목격했습니다. 이러한 모든 솔루션은 고객이 Azure 서비스를 활용하고 비즈니스에 실질적인 이점을 얻을 수 있도록 지원합니다. 그것은 우리의 고객에 관한 모든 당신이 당신의 목표를 달성하는 데 도움이됩니다.</p>
+
+
+  <h3>그렇다면 이 시리즈에서 무엇을 보고 배울 수 있을까요?</h3>
+
+
+  <ul>
+      <li>데이터 센터를 Azure로 확장하고 데이터를 사용하여 클라우드 네이티브 솔루션을 빌드하는 동안 신뢰하는 공급업체에서 이미 가지고 있는 솔루션을 사용하는 방법을 알아봅니다.</li>
+      <li>데이터를 동기화하거나 마이그레이션하여 Azure Storage 다음 주문형 Azure 서비스와 활용하는 방법:
+      <ul style="margin-left: 40px;">
+          <li>VM</li>
+          <li>고성능 컴퓨팅</li>
+          <li>App Services</li>
+          <li>컨테이너</li>
+          <li>Media Services</li>
+          <li>데이터베이스</li>
+          <li>분석</li>
+          <li>Machine Learning</li>
+          <li>Cognitive Services</li>
+      </ul>
+      </li>
+      <li>조직에서 폭발적인 데이터 증가를 관리합니다.</li>
+      <li>GDPR이 걱정되나요? 규정 준수 및 법적 검색 요구 사항을 충족합니다.</li>
+      <li>장비 새로 고침, 데이터 마이그레이션 및 사용할 수 없는 좌초 용량의 주기를 종료합니다.&nbsp;</li>
+  </ul>
+
+
+  <p>이 솔루션은 조직 내에서 Azure Storage 및 Azure 서비스의 운영상의 이점을 소개하는 데 도움이 될 수 있습니다. 각 웹캐스트는 간단한 프레젠테이션, 라이브 데모 및 열린 QA&amp;를 특징으로 합니다. 업계 리더와 신흥 파트너로부터도 들을 수 있습니다! 이 시리즈는 Skype 모임 브로드캐스트 플랫폼을 통해 전달되며, 아래에서 참석자 지침, 시스템 요구 사항 및 문제 해결 지원을 찾을 수 있습니다. 각 세션이 기록되며 모든 디바이스를 사용하여 주문형 시리즈의 이벤트를 볼 수 있습니다.</p>
+
+
+  <h3>언제 시작하고 어떻게 우리와 함께 할 수 있습니까?</h3>
+
+
+  <p>첫 번째 세션에서는 Azure Storage 파트너 PM 관리자 태드 브록웨이의 소개와 Commvault&reg;의 프레젠테이션 데모가 제공됩니다.&nbsp;</p>
+
+
+  <p><strong>취임 일정</strong><br>
+
+  <a href="https://aka.ms/storageshowcaseinvite-commvault" target="_blank">CommvaultFebruary</a>&reg; -  5th at 9am PT&nbsp;</p>
+
+
+  <p>NetApp - <a href="https://aka.ms/storageshowcaseinvite-netapp" target="_blank">2월 12일</a> 오전 9시 PT</p>
+
+
+  <p>베리타스 테크놀로지&trade;&nbsp;슨 <a href="https://aka.ms/storageshowcaseinvite-veritas" target="_blank">2월 19일</a> 오전 9시 PT</p>
+
+
+  <p><a href="https://aka.ms/storageshowcaseinvite-peer" target="_blank">2월 26일</a> 오전 9시(PT)에 피어 소프트웨어&nbsp;</p>
+
+
+  <p>이후 세션, 일정에 대한 해당 항목 및 과거 기록된 세션에 대한 링크는 .에서 <a href="https://azurestorage.cloud/" target="_blank">https://azurestorage.cloud</a>사용할 수 있습니다.</p>
+
+
+  <p>기록된 각 이벤트는 이 사이트를 통해 공유되며, 시리즈의 발표자와 상호 작용하는 수단으로 사용할 수 있는 포럼이 유지됩니다. 일정이 허용되는 경우 라이브 브로드캐스트 또는 주문형 세션을 볼 수 있기를 바랍니다. 시리즈가 진행됨에 따라 의견과 제안은 항상 환영합니다. 귀중하고 유익한 리소스로 만들고자 하며 책임을 묻기 위해 귀하를 찾고 있습니다!&nbsp;&nbsp;</p>
+
+
+  <h3>브로드캐스트 세부 정보 Skype 모임</h3>
+
+
+  <p>Skype 모임 브로드캐스트에 연결하는 방법에 대한 자세한 내용은 아래 리소스를 참조하세요.</p>
+
+
+  <p><a href="https://support.office.com/en-us/article/Join-a-Skype-Meeting-Broadcast-14689da0-821d-48d4-9035-ea762de80ebe#bkmk_attendee" target="_blank">Skype 모임 브로드캐스트 참석자 가이드</a>(세션에서 모두 익명 참석자 허용)<br>
+
+  <a href="https://support.office.com/article/62777bc6-c52b-47ae-84ba-a8905c3b71dc" target="_blank">Skype 모임 브로드캐스트 문제 해결 가이드</a></p>
+
+
+  <p><strong>Skype 모임 브로드캐스트 시스템 요구 사항:</strong><br>
+
+  Edge, Internet Explorer 11, Chrome 35 이상, Firefox, OSX Safari, iOS 8 이상, Android(KitKat)</p>
+
+
+  <p>참고: Adobe Flash는 Windows 7의 Internet Explorer 11, Firefox 버전 41 및 Mac의 Safari에 필요합니다.</p>
+
+
+  <h3>더 많은 스토리지 콘텐츠를 원하십니까?</h3>
+
+
+  <p>글로벌 블랙 벨트 팀에서 Azure Ninjas&rsquo; 팟 캐스트의 <a href="https://www.azureninjas.cloud/episode/storage/" target="_blank">최신 에피소드를</a> 확인하십시오!</p>

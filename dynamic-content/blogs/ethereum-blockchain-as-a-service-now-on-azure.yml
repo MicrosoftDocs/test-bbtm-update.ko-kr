@@ -1,0 +1,88 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 088a3ca513c4a96bf7c2fcbe04d35016bf8802fe
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901702"
+Slug: ethereum-blockchain-as-a-service-now-on-azure
+Title: Azure에서 Ethereum Blockchain as a Service
+Summary: Microsoft와 ConsenSys는 Microsoft Azure EBaaS(Ethereum Blockchain as a Service)를 제공하기 위해 파트너십을 갖기 때문에 Enterprise 클라이언트와 개발자가 한 번의 클릭으로 클라우드 기반 블록체인 개발자 환경을 가질 수 있습니다.
+Content: >-
+  <p>Microsoft와 ConsenSys는 Microsoft Azure EBaaS(Ethereum Blockchain as a Service)를 제공하기 위해 파트너십을 갖기 때문에 Enterprise 클라이언트와 개발자가 한 번의 클릭으로 클라우드 기반 블록체인 개발자 환경을 가질 수 있습니다. 초기 제품에는 SmartContract 기반 애플리케이션의 신속한 개발을 허용하는 두 가지 도구가 포함되어 있습니다. Ether.Camp - 통합 개발자 환경 및 전용 반 프라이빗 Ethereum 블록체인 환경인 BlockApps는 공용 Ethereum 환경에 배포할 수 있습니다.</p>
+
+
+  <h2 align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2eb392fc-dd67-4250-ab0e-23ce700183e2.png"><img alt="ETH_BaaS-150px" border="0" height="150" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/882043a3-e9a0-4da6-972f-6f9d8a61a9d5.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="ETH_BaaS-150px" width="150"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a2bcf4f8-9a5d-4f85-873b-cf94ce537eb0.png"><img alt="EthereumGrey" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/72b13d71-6074-44c3-bdf9-b492f265e4a0.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="EthereumGrey" width="240"></a></h2>
+
+
+  <h2>왜 이더리움인가?</h2>
+
+
+  <p>Microsoft의 Enterprise 파트너 그룹은 가장 큰 고객 중 일부와 함께 최전선에 있습니다.&nbsp; 모든 사람, 특히 금융 서비스는 블록체인 기술에 관심이 있습니다. 비트코인과 같은 플랫폼은 특히 암호화폐로 많은 용도를 사용하지만, Ethereum은 많은 고객이 찾고 있던 유연성과 확장성을 제공합니다.&nbsp; 지난 여름 프론티어 릴리스를 통해 Ethereum은 현실이며 개발자, 매니아 및 기업이 참여하는 활기찬 커뮤니티를 보유하고 있습니다.</p>
+
+
+  <p>특히 금융 서비스에서 블록체인은 일부 핵심 비즈니스의 주요 방해 요소이며, FinTech 회사들은 이 분야에서 혁신을 주도하고 있습니다.&nbsp; Ethereum은 열려 있으며 고객의&rsquo; 요구에 맞게 유연하게 사용자 지정하여 새로운 서비스 및 분산 애플리케이션 또는 을 혁신하고 제공할 수 있습니다. Ethereum을 사용하면 SmartContracts 및 분산 애플리케이션(ĐApps)을 빌드할 수 있으며, 정착과 같은 프로세스를 간소화하는 많은 업계 시나리오에서 미들맨을 잠재적으로 차단할 수 있습니다. 그러나 블록체인의 암호화 보안과 안정성을 Ethereum&rsquo;에 포함된 튜링 전체 프로그래밍 언어와 혼합할 때 수행할 수 있는 작업의 표면을 긁는 것일 뿐입니다.</p>
+
+
+  <p>&ldquo;Microsoft Azure 및 ConsenSys에서 제공하는 Ethereum Blockchain as a Service&rdquo;를 사용하면 금융 서비스 고객과 파트너가 즉시 개발/테스트/프로덕션 환경에서 저렴한 비용으로 플레이, 학습 및 실패할 수 있습니다. 이를 통해 업계 최고의 프레임워크를 사용하여 프라이빗, 퍼블릭 및 컨소시엄 기반 블록체인 환경을 매우 빠르게 만들고, Azures&rsquo; World Wide 분산(프라이빗) 플랫폼으로 블록체인 제품을 배포할 수 있습니다. 따라서 Azure는 블록체인 애플리케이션을 위한 훌륭한 개발/테스트/프로덕션 환경이 됩니다. Cortana Analytics(기계 학습), Power BI, Azure Active Directory, O365 및 CRMOL과 같은 주변 기능을 새로운 세대의 분산 플랫폼 간 애플리케이션을 시작하는 앱에 통합할 수 있습니다.</p>
+
+
+  <p>그것은 흥미 진진한 시간입니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/templates/">템플릿을</a> 확인하고 Ethereum을 검색합니다.</p>
+
+
+  <h2>FAQ</h2>
+
+
+  <h3>Ethereum은 비트 코인과 어떻게 다르거나 동일합니까?</h3>
+
+
+  <p>비트 코인과 이더리움은 매우 밀접하게 관련되어 있습니다. 둘 다 동일한 5가지 기본 기술 클래스에 설립됩니다.</p>
+
+
+  <ol>
+   <li>백 엔드 데이터베이스 역할을 하는 Blockchain이라는 데이터 구조입니다.
+   <ul>
+    <li>블록체인은 시스템의 기록된&nbsp; 전체 기록을 포함하는 타임스탬프를 적용하고 부인할 수 없는 데이터베이스입니다.</li>
+    <li>시스템의 각 트랜잭션 프로세서는 이 데이터베이스의 자체 로컬 복사본을 유지 관리하며, 합의 형성 알고리즘을 사용하면 모든 복사본이 동기화 상태를 유지할 수 있습니다.</li>
+   </ul>
+   </li>
+   <li>암호화 토큰, 비트 코인 프로토콜의 비트 코인 (BTC) 및 Ethereum에 대한 에테르 (ETH).
+   <ul>
+    <li>BTC는 비트 코인 프로토콜 및 암호화 통화로 사용되는 하이브리드 연료 / 통화의 경우 값, 숫자 및 통화의 암호화 보안 단위 역할을합니다.</li>
+    <li>ETH는 Ethereum 프로토콜에 대한 암호화된 보안 값 단위, 숫자 및 하이브리드 연료/통화의 역할을 합니다.</li>
+   </ul>
+   </li>
+   <li>검색 및 통신을 위한 피어 투 피어 네트워크입니다.
+   <ul>
+    <li>이렇게 하면 기존 클라이언트 서버 아키텍처가 모든 노드가 클라이언트 및 서버인 아키텍처로 전환되어 시스템을 분산하고 단일 제어 지점 또는 취약성을 제거합니다.</li>
+   </ul>
+   </li>
+   <li>합의 형성 알고리즘입니다.
+   <ul>
+    <li>비트 코인에서 모든 거래 프로세서 (광부)는 비트 코인 가치 토큰의 전송 및 저장과 관련하여 무슨 일이 있었는지와 시기에 대한 합의에 도달합니다.
+    <ul>
+     <li>이 작업은 약 10분마다 발생합니다.</li>
+     <li>이를 위해서는 정직한 프로세서의 대다수가 필요합니다.</li>
+    </ul>
+    </li>
+    <li>Ethereum에서 모든 트랜잭션 프로세서 (광부)는 Ethereum World Computer의 모든 공유 프로그램에서 수행되는 모든 처리에 대한 합의뿐만 아니라 에테르 값 토큰의 전송 및 저장과 관련하여 발생한 상황과 시기에 대한 합의에 도달합니다.
+    <ul>
+     <li>이 작업은 약 15초마다 발생합니다.</li>
+     <li>이를 위해서는 정직한 프로세서의 대다수가 필요합니다.</li>
+    </ul>
+    </li>
+   </ul>
+   </li>
+   <li>
+   <p>Ethereum의 탈중앙화 애플리케이션과 비트코인의 프로그래밍 가능한 자금을 가능하게 하는 가상 머신입니다.</p>
+   </li>
+  </ol>
+
+
+  <h3>자세한 내용을 알아보려면 어떤 정보를 참조해야 하나요?</h3>
+
+
+  <p>자세한 내용은 <a href="https://www.ethereum.org">ethereum.org</a> 방문하세요.</p>

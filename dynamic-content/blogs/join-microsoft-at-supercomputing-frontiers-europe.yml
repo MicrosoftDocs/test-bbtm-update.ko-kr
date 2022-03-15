@@ -1,0 +1,29 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c91bc7cf40041eec4c0597379d587209a3ea5c72
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901652"
+Slug: join-microsoft-at-supercomputing-frontiers-europe
+Title: 슈퍼컴퓨팅 프론티어 유럽에서 Microsoft 가입
+Summary: '폴란드 바르샤바에 있는 경우 3월 12일부터 15일까지 슈퍼컴퓨팅 프론티어 유럽에서 Microsoft에 가입할 수 있습니다. 이 컨퍼런스는 고성능 컴퓨팅 리더 및 실무자와 함께 할 수 있는 좋은 기회입니다. '
+Content: >-
+  <p>&rsquo;폴란드 바르샤바에서 3월 12일부터 15&rsquo;일까지 슈퍼컴퓨팅 프론티어 유럽에서 Microsoft에 가입하고 싶을 것입니다. 이 컨퍼런스는 고성능 컴퓨팅 리더 및 실무자와 함께 할 수 있는 좋은 기회입니다. Microsoft는 Azure를 통해 고객이 클라우드에서 진정한 HPC 워크로드를 실행할 수 있도록 하는 방법에 대해 설명합니다.</p>
+
+
+  <p>Gliwice에 있는 실레시안 공과 대학의 다리우스 Mroşek 부교수는 Microsoft Azure 클라우드 플랫폼을&rdquo; 사용하여 단백질 생물 정보학에서 과학적 발견을 가속화하는 기&ldquo;조 연설을 할 것입니다. 또한 3월 15일에는 반나절 동안 실습 워크샵을 진행합니다. 워크샵에는 다음이 포함됩니다.</p>
+
+
+  <ul>
+      <li>Azure CLI를 사용하여 Linux RDMA Infiniband 클러스터 배포</li>
+      <li>CycleCloud 템플릿에서 HPC 클러스터 배포</li>
+      <li>Azure Batch AI 교육 랩.</li>
+      <li>Azure Marketplace UberCloud 컨테이너의 OpenFOAM 시뮬레이션.</li>
+  </ul>
+
+
+  <p>워크샵에서는 HPC 작업을 실행하기 위해 Azure를 사용하는 다양한 방법을 보여 줍니다. 강사는 Azure 및 워크샵 환경에서 HPC 서비스의 소개 프레젠테이션으로 시작하고 랩 콘텐츠를 통해 참가자와 단계별로 진행하는 실습 랩 세션으로 시작합니다. 또한 참가자는 무료 Azure 패스를 받게 되며 강사 지침에 따라 또는 자신의 속도로 랩을 실행할 수 있습니다.</p>
+
+
+  <p>컨퍼런스에 참가하는 경우&rsquo; Microsoft 스탠드에 참여하여 Azure의 HPC에 대해 자세히 알아보세요. Well&rsquo;은 우리의 파트너 UberCloud 및 암 센터에 의해 합류됩니다.</p>

@@ -1,0 +1,49 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 42048e2b9ec896fb80c3ebe027383ed783a0048a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901686"
+Slug: gochain-blockchain-launch
+Title: Azure에서 사용할 수 있는 GoChain 블록체인
+Summary: 'GoChain 팀은 Microsoft Azure 위해 확장 가능한 프라이빗 블록체인 제품을 도입하고 있습니다. GoChain은 주로 네트워크의 트랜잭션 속도를 높이기 위해 프로토콜 및 합의 모델로 변경되는 Ethereum을 기반으로 하는 블록체인입니다.  '
+Content: >-
+  <p><a href="https://gochain.io/" target="_blank">GoChain</a> 팀은 Microsoft Azure 위해 확장 가능한 프라이빗 블록체인 제품을 도입하고 있습니다. GoChain은 go-ethereum 코드 포크를 기반으로 하는 스마트 계약 블록체인으로, 주로 네트워크의 트랜잭션 속도를 높이기 위해 프로토콜 및 합의 모델을 <a href="https://gist.github.com/jmank88/8957ea1aec83509af7f4857606df4db4" target="_blank">변경</a> 합니다. 이는 핵심 프로토콜 변경 및 <a href="https://medium.com/gochain/proof-of-reputation-e37432420712" target="_blank">평판 증명</a> 합의 메커니즘의 도입을 통해 달성됩니다. 블록 확인의 현재 인증 기반 모델과 유사한 이 함수는 consoritium에서 합의된 유효성 검사 노드에 의해 제어됩니다.</p>
+
+
+  <div><br>
+
+  <img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/go-chain-topology3.png" style="width: 800px; height: 413px; margin-right: auto; margin-left: auto; float: none; display: block;"></div>
+
+
+  <div>GoChain은 엔터프라이즈 고객과 개발자가 분산형 애플리케이션 및 스마트 계약을 빌드하고 배포할 수 있도록 하는 Ethereum 호환 블록체인입니다. 이러한 호환성을 통해 기존 Ethereum 자산을 반도체 기반 스마트 계약과 같이 약간의 변경이 필요 없는 상태에서 재사용할 수 있습니다.</div>
+
+
+  <p>기업에서는 불변성, 강력한 디지털 서명 및 분산 아키텍처와 같은 핵심 블록체인 특성을 활용할 수 있는 블록체인 솔루션을 찾고 있습니다. 그러나 네트워크에서 참가자를 제어했다는 점에서 퍼블릭 기반 체인과는 다른 요구 사항이 있습니다. GoChain과 같은 솔루션은 이러한 유형의 배포를 허용합니다.</p>
+
+
+  <h2>업그레이드 가능한 스마트 계약</h2>
+
+
+  <p>GoChain 팀이 집중해 온 영역은 기존 스마트 계약을 업그레이드하는 보다 친숙한 옵션을 가능하게 하는 것입니다. 스마트 계약은 프로토콜의 특성에 따라 변경할 수 없습니다. 이로 인해 강력한 보증 및 신뢰 모델이 발생하지만 기업은 기존 배포된 계약을 업그레이드하는 패턴을 요구하고 있습니다. 몇 가지 옵션이 등장했습니다. 그러나 GoChain은 상속된 라이브러리 또는 계약에서 프로토콜 수준으로 스마트 계약을 일시 중지하는 기능과 같은 기능을 이동하는 모델에서 작업하고 있습니다. 또한 투표 메커니즘을 통해 업그레이드 가능성 규칙에 대해 더 나은 거버넌스 모델을 사용하도록 설정하는 것은 팀이 활성화하는 또 다른 향상된 기능입니다. GoChain은 이 업데이트를 위해 2019년 1월을 대상으로 합니다.</p>
+
+
+  <h2>기타 로드맵 항목</h2>
+
+
+  <p>핵심 프로토콜 및 업그레이드 가능한 스마트 계약 외에도 GoChain은 단기 릴리스를 위해 다음 영역에서도 작업하고 있습니다.</p>
+
+
+  <ul>
+   <li>다중 노드 배포 템플릿.</li>
+   <li>권한 있는 서명자에게 우선 순위가 지정된 피어 브로드캐스팅</li>
+   <li>클라우드 스토리지에 대한 오프노드 체인 데이터의 보관/백업</li>
+   <li>WASM 계약 지원.</li>
+  </ul>
+
+
+  <h2>어떻게 시작하나요?</h2>
+
+
+  <p><a href="https://aka.ms/go-chain-marketplace" target="_blank">Azure Marketplace</a>에서 무료 제품을 확인하세요.</p>

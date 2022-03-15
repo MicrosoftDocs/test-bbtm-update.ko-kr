@@ -1,0 +1,47 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d9fb6ef6d37cc92092ed79b0b4637d3ce146bb20
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907741"
+Slug: join-us-at-nafems-world-congress-to-learn-more-about-azure-hpc-and-ai-supercomputing
+Title: NAFEMS World Congress에 참여하여 Azure HPC 및 AI 슈퍼컴퓨팅에 대해 자세히 알아보기
+Summary: HPC(고성능 컴퓨팅) 인프라의 설계 및 배포는 종종 물리적 리소스, 내부 노하우 및 정책에 의해 제한됩니다. 이는 새로운 하드웨어 아키텍처, 프로그래밍 패러다임 및 끊임없이 변화하는 시뮬레이션 소프트웨어의 현재 시대에 어려울 수 있습니다.
+Content: >-
+  <p>HPC(고성능 컴퓨팅) 인프라의 설계 및 배포는 종종 물리적 리소스, 내부 노하우 및 정책에 의해 제한됩니다. 이는 새로운 하드웨어 아키텍처, 프로그래밍 패러다임 및 끊임없이 변화하는 시뮬레이션 소프트웨어의 현재 시대에 어려울 수 있습니다. 클라우드는 산업 시뮬레이션을 실행하기 위한 새로운 패러다임을 제공합니다.</p>
+
+
+  <p>오늘날 가장 까다롭고 까다로운 엔지니어링 프로세스는 가상 프로토타입, 설계 최적화, 파라메트릭 연구 또는 물리학 기반 디지털 트윈 등&rsquo; 클라우드에서 실현될 수 있으며, 모든 워크로드에는 컴퓨팅, 스토리지 및 네트워킹, 민첩성, 규모, 시각화 기능 및 최고 보안 표준을 위한 완전 성능이 필요합니다.</p>
+
+
+  <p><a href="https://www.nafems.org/congress/" target="_blank"></a> 기조 연설에서&rsquo; 온-프레미스 HPC 인프라의 제약 조건과 클라우드로의 이동이 엔지니어에게 더 많은 유연성을 제공할 뿐만 아니라 제한된 리소스보다 디자인 공간의 우선 순위를 지정하고 성능 이식성을 보장하는 방법을 설명합니다.</p>
+
+
+  <p><strong>AMD EPYC,</strong> L. Miroslaw, PhD(HPC 전문가, Microsoft), 볼프강 드 살바도르 박사(RD&amp; 가상화를 위한 RD&amp; 코디네이터, 브리지스톤 EMIA), 10월 27일 오후 3시 25분(CEST, 베를린)에서 제공하는 Microsoft Azure HPC를 활용하여 시뮬레이션 비용을 줄이고 생산성을 높입니다.</p>
+
+
+  <p>파트너의 프레젠테이션을 포함하여 NAFEMS NWC(World Congress) 기술 프로그램 전반에 걸쳐 여러 장소에 참여할 예정입니다.</p>
+
+
+  <ul>
+      <li><strong>매우 큰 CFD 시뮬레이션을 위한 새로운 성능 차원: 올바른 워크플로</strong>인 C. Woll(GNS 시스템)을 사용하여 컴퓨팅 시간을 줄이고 결과 품질을 높입니다. 2021년 10월 26일 오전 08:55(CEST, 베를린).</li>
+      <li><strong>시뮬레이션 거버넌스&mdash; 건물 시뮬레이션 기능</strong>, 이반 크라지노비치, RIMAC Automobili, 10월 26일 오전 9:15 (CEST, 베를린).</li>
+      <li><strong>클라우드에서 AI에서 영감을 받은 디자인 최적화</strong>, P. Baqu&eacute; (신경 개념 회사), L. Miroslaw, A. Jean(Microsoft), 10월 27일 오후 3:30(CEST, 베를린).</li>
+      <li><strong>엔지니어링 시뮬레이션을 클라우드 사용 사례로 마이그레이션: Freudenberg가 인프라 현대화를 위한 클라우드를 포용하는 방법</strong>, W. Gentzsch(TheUberCloud), C. Weis(Freudenberg Group), L. Miroslaw(Microsoft), 10월 26일 오전 11:00 중부 유럽 시간(CEST, 베를린).</li>
+  </ul>
+
+
+  <p>또한 13번 부스에 직접 초대합니다. 엔지니어링 및 고객 관련 역할의 다양한 HPC 전문가가 있습니다. 슬롯을 예약하려면 이 양식을 자유롭게 작성하세요. 또한 오프타임 이벤트 전에 <a href="https://aka.ms/hpccommunity" target="_blank">Discord Group</a> 에 참가할 수 있습니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <ul>
+      <li><a href="https://agenda.nwc21.org/" target="_blank">NWC 안건</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/" target="_blank">Microsoft Azure HPC</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/partners/directory/amd-corporation/#overview" target="_blank">AMD 및 Azure</a></li>
+      <li><a href="https://techcommunity.microsoft.com/t5/azure-compute/optimizing-openfoam-performance-and-cost-on-azure-hbv2-vms/ba-p/2595698" target="_blank">Azure HBv2 Virtual Machines에서 OpenFOAM 성능 및 비용 최적화</a></li>
+      <li><a href="https://azure.microsoft.com/en-us/resources/microsoft-azure-delivers-hpc-now-into-the-future-with-amd/" target="_blank">Microsoft Azure AMD를 사용하여 HPC를 미래로 제공</a></li>
+  </ul>

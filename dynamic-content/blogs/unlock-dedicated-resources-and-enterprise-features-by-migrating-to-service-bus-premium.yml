@@ -1,0 +1,33 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cd782c6ae382ea09cad969787c12139703dc615a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907501"
+Slug: unlock-dedicated-resources-and-enterprise-features-by-migrating-to-service-bus-premium
+Title: Service Bus Premium 마이그레이션하여 전용 리소스 및 엔터프라이즈 기능 잠금 해제
+Summary: Azure Service Bus 엔터프라이즈 고객을 위해 선택한 MaaS(Messaging as a Service) 옵션이었습니다. 고객 기반이 크게 증가하고 기존 네임스페이스가 사용되어 서비스에 더 많은 기능을 제공하게 됩니다.
+Content: >-
+  <p>Azure Service Bus 엔터프라이즈 고객을 위해 선택한 MaaS(Messaging as a Service) 옵션이었습니다. Weve&rsquo;는 고객 기반이 크게 증가하고 기존 네임스페이스를 사용하는 것을 보았으며, 이는 서비스에 더 많은 기능을 도입하도록 영감을 줍니다.</p>
+
+
+  <p>최근에 고객이 복원력 있는 솔루션을 빌드할 수 있도록 가용성 영역이 있는 모든 Azure 지역을 지원하도록 Azure Service Bus 확장했습니다. 또한 Azure Service Bus Premium 계층을 더 많은 지역으로 확장하여 고객이 Azure Service Bus 네임스페이스에서 많은 엔터프라이즈 준비 기능을 활용하는 동시에 고객과 더 가까이 다가갈 수 있도록 했습니다.</p>
+
+
+  <p>Azure Service Bus Premium 계층은 고객이 Azure Service Bus 네임스페이스에 대한 전용 리소스를 프로비전할 수 있도록 하는 비교적 새로운 제품으로, 2015년 9월에 일반 공급됩니다. 그러면 메시징 단위당 고정 가격으로 프로덕션 및 엔터프라이즈 준비 기능과 함께 안정적인 처리량과 예측 가능한 대기 시간을 제공합니다. 이는 종량제 모델을 사용하여 낮은 처리량 시스템에 최적화된 다중 테넌트 시스템인 Azure Service Bus 표준 계층의 주요 개선 사항입니다.</p>
+
+
+  <p>Azure Service Bus Premium 계층 제품은 고객에게 큰 반향을 불러일으켰으며, 고객이 제공하는 가치를 즐기기 위해 온보딩하게 되어 기뻤습니다. 그러나 지금까지는 기존 Azure Service Bus Standard 네임스페이스를 Premium 계층으로 업그레이드할 방법이 없었습니다&rsquo;. 이제 변경하려고 합니다.</p>
+
+
+  <p>오늘 Azure&rsquo; Portal과 명령줄 인터페이스/PowerShell을 통해 고객이 기존 Azure Service Bus 표준 네임스페이스를 Premium 계층으로 업그레이드할 수 있는 도구를 발표하게 되어 기쁩니다. 이 도구를 사용하면 발신자 및 수신자 애플리케이션에 대한 구성 변경이 필요하지 않지만 고객은 가동 중지 시간을 최소화하면서 사용 사례에 가장 적합한 제품을 채택할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3647571a-e549-4802-bdf9-f5e57044b167.png"><img alt="Migrate to premium in Azure Service Bus Standard" border="0" height="992" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5029b259-06ea-43b7-a2ce-a8bb752c00e5.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Service Bus Standard에서 프리미엄으로 마이그레이션" width="1910"></a></p>
+
+
+  <p>이 기능에 대한 자세한 내용과 내부적으로 발생하는 작업에 대한 자세한 내용은 <a href="https://aka.ms/StandardToPremiumMigrationGuide" target="_blank">설명서를 참조</a>하세요.</p>
+
+
+  <p>마이그레이션하려는 Service Bus 표준 네임스페이스 아래의 왼쪽 탐색 창에서 Premium&rdquo; 마이그레이션 메뉴 옵션을 클릭하여 &ldquo;포털 도구에 액세스할 수 있습니다.</p>

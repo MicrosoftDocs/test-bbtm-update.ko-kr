@@ -1,0 +1,55 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f0a1afc937d081597d41d7f6b9ce87e4c87226c5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901555"
+Slug: over-100-azure-services-support-protected-australian-government-data
+Title: 100개가 넘는 Azure 서비스가 PROTECTED 오스트레일리아 정부 데이터를 지원합니다.
+Summary: 오늘 Microsoft는 공식 및 PROTECTED 오스트레일리아 정부 정보를 처리하는 적합성에 대한 113개의 Microsoft Azure 서비스에 대한 독립적인 보안 평가를 발표했습니다.
+Content: >-
+  <p>오늘 Microsoft는 공식 및 PROTECTED 오스트레일리아 정부 정보를 처리하는 적합성에 대한 113개의 Microsoft Azure 서비스에 대한 <a href="https://aka.ms/au-irap">독립적인 보안 평가를</a> 발표했습니다. IRAP(정보 보안 등록 평가자 프로그램)에 따라 수행된 이 평가는 이제 고객과 파트너가 정부에서 클라우드 사용을 늘리려는 계획대로 검토하고 사용할 수 있습니다.</p>
+
+
+  <p>이 이정표는 호주 정부가 Microsoft Azure 활용하여 디지털 트랜스포메이션을 추진할 수 있는 능력을 크게 확장합니다. 이 IRAP 평가의 확장된 범위에는 인식 서비스, 기계 학습, IoT, 고급 사이버 보안, 오픈 소스 데이터베이스 관리, 서버리스 및 애플리케이션 개발 기술이 포함됩니다. 이를 통해 Azure 오스트레일리아 내의 모든 혁신을 정부 애플리케이션에 활용할 수 있으며, 정부 고객의 요구를 충족하기 위해 가장 광범위한 인증 및 보증을 달성하려는 우리의 노력을 더욱 강화할 수 있습니다.</p>
+
+
+  <p>이러한 보증은 빅토리아 정부와 같은 고객이 캔버라 기반 OOBE와 협력하여 ICT 공유 서비스 공급자 Cenitex를 사용하여 정부 고객이 PROTECTED 수준까지 등급이 지정된 애플리케이션 및 데이터를 안전하게 관리할 수 있는 획기적인 매우 안전한 서비스인 <a href="https://news.microsoft.com/en-au/features/cenitex-sets-trust-benchmark-for-victorian-government-data-security/">VicCloud Protect</a>를 배포하는 데 중요합니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><i>&ldquo;VicCloud Protect는 빅토리아 정부의 첫 번째 제품이며, 이제 고객은 플랫폼이 호주 사이버 보안 센터 지침과 빅토리아 보호 데이터 보안 프레임워크를 모두 충족하여 보호된 수준 정보를 처리한다는 점을 염두에 두고 기밀 데이터를 클라우드에 자신 있게 저장할 수</i> 있습니다.&rdquo; -  <em>Nigel Cadywould, Cenitex Service Delivery Director</em></p>
+
+  </blockquote>
+
+
+  <p>이는 정부용 혁신적인 솔루션을 구축하기 위해 Azure의 안전한 기반을 구축하는 호주 정부와 파트너의 많은 예 중 하나일 뿐입니다. Microsoft는 다음을 포함하여 호주 정부 및 국가 중요 인프라의 엄격한 보안 규정 준수 요구 사항을 충족하도록 특별히 설계되고 보호된 캔버라에서 클라우드 지역을 운영하는 유일한 글로벌 클라우드 공급자 중 하나입니다.</p>
+
+
+  <ul>
+      <li>캔버라에 본사를 둔 데이터 센터 공급자인 CDC 내의 데이터 센터 시설은 정부 및 국가 중요 인프라를 전문으로 하며 호주 정부&rsquo; 호스팅 정책에 필요한 엄격한 주권 및 투명한 소유권 제어를 충족합니다.</li>
+      <li>비밀 정부 데이터를 처리하는 더 높은 요구 사항을 위해 설계된 캔버라 시설 내의 선도적 인 물리적 및 인사 보안.</li>
+      <li>향상된 보안 및 성능을 위해 데이터 센터 내에서 연방 정부&rsquo; 정부 내 통신 네트워크(ICON)에 직접 연결합니다.</li>
+      <li>캔버라의 Microsoft Azure 같은 시설에서 중요한 시스템을 배치하고 CDC 내에 배포된 솔루션 공급자의 에코시스템에 액세스할 수 있는 타의 추종을 불허하는 유연성.</li>
+  </ul>
+
+
+  <p>Microsoft는 호주 정부 데이터 및 애플리케이션의 첫 번째이자 최고의 홈으로 캔버라의 Azure 오스트레일리아 중부 지역을 제공합니다. 오늘 발표된 평가는 중부 지역뿐만 아니라 오스트레일리아 동부(시드니) 및 호주 남동부(멜버른)를 포함한 호주의 모든 Microsoft Azure 지역을 다룹니다. 또한 Microsoft가 오스트레일리아 중부 지역에 추가 용량과 기능을 도입함에 따라 고객이 캔버라 지역에 서비스를 배포하는 프로세스를 간소화했습니다. 고객은 더 이상 오스트레일리아 중부 지역에 서비스를 배포하기 위해 수동으로 액세스를 요청할 필요가 없으며 이제 포털에서 직접 배포할 수 있습니다.</p>
+
+
+  <p>호주 정부는 위험 기반 접근 방식을 따르도록 IRAP 프로그램을 설계했기 때문에 각 고객은 PROTECTED 수준에서 해당 서비스를 운영할지 여부를 결정합니다. 고객의 권한 부여 결정을 지원하기 위해 Microsoft는 IRAP 평가 보고서 및 지원 문서를 <a href="https://aka.ms/au-irap">Microsoft 서비스 신뢰 포털의 오스트레일리아 특정 페이지에서</a> 고객과 파트너가 사용할 수 있도록 합니다.</p>
+
+
+  <p>PROTECTED 수준 데이터에&rsquo; 대한 솔루션 빌드를 시작하려는 정부 고객을 위해 위협 모델 및 제어 구현 지침과 함께 IaaS 및 PaaS 웹 애플리케이션에 대한 참조 아키텍처를 사용하여 <a href="https://aka.ms/au-protected">오스트레일리아 PROTECTED Blueprint</a> 지침을 게시했습니다. 이 청사진을 통해 고객은 PROTECTED를 포함하여 분류된 중요한 공식 정보의 처리, 스토리지 및 전송에 적합한 Azure 솔루션을 보다 쉽게 배포할 수 있습니다.</p>
+
+
+  <h4>최신 IRAP 평가에 대해 자세히 알아보기</h4>
+
+
+  <ul>
+      <li>IRAP 평가 보고서 및 지원 문서는 <a href="https://aka.ms/au-irap">Microsoft 서비스 신뢰 포털</a>의 오스트레일리아 특정 페이지에서 확인할 수 있습니다.</li>
+      <li><a href="https://docs.microsoft.com/azure/azure-australia">Azure 오스트레일리아 Microsoft Docs</a> 페이지의 PROTECTED 및 서비스 신뢰 포털의 <a href="https://aka.ms/au-protected">AU-PROTECTED 청사진</a>에서 운영하기 위한 추가 문서 및 구성 지침을 찾습니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/global-infrastructure/australia/">오스트레일리아 중부 및 오스트레일리아 중부 2 지역 및</a> <a href="https://cdcdatacentres.com.au/">CDC 데이터 센터에</a> 대해 자세히 알아보기</li>
+  </ul>

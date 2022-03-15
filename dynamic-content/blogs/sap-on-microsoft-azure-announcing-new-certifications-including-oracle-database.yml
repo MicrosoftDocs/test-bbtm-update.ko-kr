@@ -1,0 +1,15 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b9e6014d886cbc71a4475113496abb17768577fa
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900930"
+Slug: sap-on-microsoft-azure-announcing-new-certifications-including-oracle-database
+Title: Microsoft Azure SAP – Oracle Database를 포함한 새 인증 발표
+Summary: Microsoft와 SAP 간의 파트너십과 고객에 대한 우리의 헌신을 지속하면서 새로운 인증을 발표하게 된 것을 자랑스럽게 생각합니다. 오늘부터 Oracle DB 또는 Azure의 SAP ASE를 사용하여 SAP Business Suite, Business All-In-One 및 NetWeaver 애플리케이션 서버를 실행할 수 있습니다.
+Content: >-
+  Microsoft와 SAP 간의 파트너십과 고객에 대한 우리의 헌신을 지속하면서 새로운 인증을 발표하게 된 것을 자랑스럽게 생각합니다. 이제 Azure의 SAP가 Oracle Database 및 SAP Adaptive Server Enterprise 실행되도록 인증되었습니다. 오늘부터 Oracle DB 또는 Azure의 SAP ASE를 사용하여 SAP Business Suite, Business All-In-One 및 NetWeaver 애플리케이션 서버를 실행할 수 있습니다. 이 새로운 인증은 작년에 발표된 Microsoft와 Oracle의 파트너십을 기반으로 합니다.
+
+
+  이러한 파트너십의 일환으로 Oracle은 고객이 Oracle의 모든 기술 지원을 통해 기존 Oracle Database 라이선스를 Azure로 가져올 수 있도록 했습니다. 사용하려는 기존 Oracle Database 라이선스가 없는 경우 Microsoft에서 제공하고 지원하는 라이선스가 포함된 가상 머신 이미지를 사용하여 비용을 지불할 수 있습니다. 이전과 마찬가지로 고객은 Microsoft Azure 사용하기 위해 SAP 라이선스를 가져올 수 있습니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/campaigns/sap/">Azure에서 SAP</a>를 실행하는 경우 이 페이지를 참조하세요.

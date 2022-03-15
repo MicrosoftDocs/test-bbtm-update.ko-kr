@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d02c0e2e89be1998016e27ab378a34ca261ceb7f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907659"
+Slug: multi-url-performance-test-with-app-service
+Title: App Service를 사용한 다중 URL 성능 테스트
+Summary: 이제 프로덕션 환경에서 다중 URL 테스트를 사용할 수 있습니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/blog/announcing-public-preview-for-performance-test-on-webapps/" target="_blank"><em>웹 및 모바일 앱에서 성능 테스트에 대한 공개 미리 보기를 발표하고</em></a> <a href="https://azure.microsoft.com/en-us/blog/performance-testing-with-app-service-continuous-deployment/" target="_blank"><em>App Service 연속 배포와 성능 테스트를</em></a> 연결하는 기능을 발표한 이후 가장 많이 요청된 기능은 다중 URL 테스트를 실행하는 기능이었습니다.</p>
+
+
+  <p>우리는 Visual Studio 부하 테스트 팀과 계속 협력했으며 Im&rsquo;은 이 기능을 프로덕션에서 사용할 수 있다고 발표하게 되어 기쁩니다. 자세한 내용은 <a href="https://blogs.msdn.microsoft.com/visualstudioalm/2016/05/22/multiple-url-performance-testing-support-for-azure-web-applications/" target="_blank">Visual Studio 팀 블로그</a>를 참조하세요.</p>
+
+
+  <p>다중 URL 테스트를 사용하면 애플리케이션을 탐색하는 사용자의 동작과 더 유사한 성능 테스트를 실행할 수 있습니다. 다중 URL 테스트는 단일 URL을 반복해서 ping하는 대신 순서대로 URL 목록을 ping합니다. 이는 사이트의 기본 페이지에서 검색 결과 목록으로 이동한 다음 사이트&rsquo; 카탈로그의 몇 가지 개별 항목으로 이동 중인 사용자를 나타낼 수 있습니다.</p>
+
+
+  <h2>다중 URL 테스트 설정</h2>
+
+
+  <p>가장 먼저 해야 할 일은 테스트 실행 중에 대상으로 지정할 URL 목록을 정의하는 것입니다. 이 작업을 수행하는 방법에 대한 자세한 지침은 설명서 문서인 <a href="https://www.visualstudio.com/en-us/docs/test/performance-testing/run-performance-tests-app-before-release"><em>Visual Studio 사용하여 웹 테스트 만들기</em></a>에서 찾을 수 있습니다.</p>
+
+
+  <p><strong>.webTest </strong>파일을 생성한 후에는 성능 테스트를 작성해야 합니다. (2) Azure Portal에서 애플리케이션의 <strong>도구 </strong>메뉴에서 (2) <strong>성능 테스트를</strong> 찾을 수 있습니다.</p>
+
+
+  <blockquote>
+
+  <p><img alt="image" border="0" height="343" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/085ffeb2-e908-430c-ad9d-2f2314455cc4.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+  </blockquote>
+
+
+  <p><strong>성능 테스트 </strong>블레이드에서 (1) <strong>새로 </strong>만들기를 클릭하여 새 테스트를 작성하고 (2) 단일 <strong>URL과 다중 URL</strong> 중에서 선택할 수 <strong>있도록 테스트를 구성할 </strong>수 있습니다.</p>
+
+
+  <blockquote>
+
+  <p><img alt="image" border="0" height="343" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9ca94b3-78f9-47c6-a31b-d9469f5533ef.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+  </blockquote>
+
+
+  <p>여기에서 (1) <strong>.webTest </strong>파일을 업로드 (2) 테스트 중에 ping할 URL 목록을 검토할 수 있습니다.</p>
+
+
+  <blockquote>
+
+  <p><img alt="image" border="0" height="343" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a5edbf2b-60f4-4410-9aec-41bc771da14b.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+  </blockquote>
+
+
+  <p>아래의 의견 섹션 또는 <a href="https://feedback.azure.com/forums/169385-web-apps-formerly-websites">UserVoice</a> 피드백 포럼을 통해 여러분의 생각, 질문 및 아이디어가 무엇인지 알려주세요.</p>

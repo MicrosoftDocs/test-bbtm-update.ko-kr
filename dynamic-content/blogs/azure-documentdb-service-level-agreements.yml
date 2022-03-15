@@ -1,0 +1,216 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fd708795ce6dfbcc38b14a2d50ce35fc56006d51
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902304"
+Slug: azure-documentdb-service-level-agreements
+Title: 'Azure #CosmosDB 서비스 수준 계약'
+Summary: 기업이 전 세계적으로 분산된 애플리케이션에 대해 우리를 신뢰하는 이유  Enterprise 애플리케이션 및 대규모 애플리케이션에는 전 세계적으로 분산된 데이터 저장소가 필요하며, 무한한 규모를 제공합니다,...
+Content: >-
+  <p><strong>2017년 5월 10일 현재</strong></p>
+
+
+  <p><strong>Azure Cosmos DB는 전역적으로 분산된 Microsofts&rsquo; 다중 모델 데이터베이스입니다. Azure Cosmos DB는 글로벌 배포 및 수평적 확장을 핵심으로 처음부터 빌드되었습니다. 사용자가 어디에 있든 데이터를 투명하게 스케일링하고 복제하여 모든 수의 Azure 지역에 턴키 글로벌 배포를 제공합니다. 전 세계적으로 처리량 및 스토리지를 탄력적으로 확장하고 필요한 처리량 및 스토리지에 대해서만 비용을 지불합니다. Azure Cosmos DB는 전 세계 어디서나 99번째 백분위수에서 한 자리 밀리초의 대기 시간을 보장하고, 성능을 미세 조정하기 위해 잘 정의된 여러 일관성 모델을 제공하며, 업계 최고의 SLA(서비스 수준 계약)가 지원하는 멀티 호밍 기능으로 고가용성을&mdash; 보장합니다.&nbsp;</strong></p>
+
+
+  <p><strong>Azure Cosmos DB는 스키마에 구애받지 않습니다. 스키마 및 인덱스 관리를 처리할 필요 없이 모든 데이터를 자동으로 인덱싱합니다. &rsquo;또한 문서, 키-값, 그래프 및 열 패밀리 데이터 모델을 기본적으로 지원하는 다중 모델도 제공합니다. Azure Cosmos DB를 사용하면 DocumentDB SQL(문서), MongoDB(문서), Azure Table Storage(키-값) 및 Gremlin(그래프)이 모두 기본적으로 지원되므로 원하는 API를 사용하여 데이터에 액세스할 수 있습니다.</strong></p>
+
+
+  <hr>
+
+  <p><em>기업이 전 세계적으로 분산된 애플리케이션에 대해 우리를 신뢰하는 이유 </em></p>
+
+
+  <p>Enterprise 애플리케이션 및 대규모 애플리케이션에는 전역적으로 분산되고, 무제한 규모, 지리적 도달 범위를 제공하며, 빠르고 성능이 좋은 데이터 저장소가 필요합니다. 엔터프라이즈급 보안 및 규정 준수와 함께 주요 기준은 데이터베이스가 가용성, 성능 및 내구성 측면에서 제공하는 서비스 보장 수준입니다. Azure DocumentDB는 전 세계에 분산된 Microsofts&rsquo; 데이터베이스 서비스로, 다양한 지역에서 처리량과 스토리지를 탄력적으로 확장할 수 있는 행성 규모 애플리케이션을 빌드할 수 있도록 설계되었습니다. 이 서비스는 99번째 백분위수, 99.99%의 고가용성, 예측 가능한 처리량 및 잘 정의된 여러 일관성 모델에서 한 자리 밀리초의 짧은 대기 시간을 보장합니다.</p>
+
+
+  <p>최근에 대기 시간, 가용성, 처리량 및 일관성을 포함하도록 포괄적인 SLA(서비스 수준 계약)를 업데이트했습니다. 기본적으로 DocumentDB는 스키마에 구애받지 않고 쓰기에 최적화된 데이터베이스 엔진을 통해 수집한 모든 데이터를 자동으로 인덱싱할 수 있으며, 확장 독립적 방식으로 SQL, MongoDB 및 JavaScript 언어 통합 쿼리에서 사용할 수 있습니다. Azure의 기본 서비스 중 하나인 DocumentDB는 수년 동안 자사 Microsoft 서비스 대한 백 엔드로 거의 유비쿼터스로 사용되어 왔습니다. DocumentDB는 2015년에 일반 공급된 이후 Azure에서 가장 빠르게 성장하는 서비스 중 하나입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cd98f687-f961-40a9-beec-df4c7e608188.png"><img alt="SLA" border="0" height="200" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/69a09f54-5d38-4f5a-8c73-977924723cea.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SLA" width="364"></a></p>
+
+
+  <h2>업계 최고의 포괄적인 SLA</h2>
+
+
+  <p><a href="https://azure.microsoft.com/services/documentdb/">Azure DocumentDB</a>는 창립 이래 항상 99.99%의 가용성 보장으로 업계 최고의 <a href="https://azure.microsoft.com/support/legal/sla/documentdb/v1_1/">SLA</a>를 제공했습니다. <strong> 이제 다음을 위한 포괄적인 SLA를 제공하는 유일한 클라우드 서비스입니다</strong>.</p>
+
+
+  <ul>
+   <li><strong>가용성:</strong> 가장 클래식 SLA입니다. 시스템은 시간의 99.99 % 이상 사용할 수 있습니다 또는 당신은 환불을받을 수 있습니다.</li>
+   <li><strong>처리량:</strong> 컬렉션 수준에서는 프로비전한 최대 처리량에 따라 데이터베이스 컬렉션의 처리량이 항상 실행되도록 보장합니다.</li>
+   <li><strong>대기 시간이:</strong> 속도가 중요하므로 요청의 99%가 문서 읽기의 경우 10ms 미만, 문서 쓰기 작업의 경우 15ms 미만의 대기 시간이 보장됩니다.</li>
+   <li><strong>일관성:</strong> 요청에 대해 선택한 일관성 수준에 따라 일관성 보장을 준수합니다.</li>
+  </ul>
+
+
+  <p>모든 사람은 가용성 또는 작동 시간에 대한 SLA 개념에 익숙하지만 처리량, 대기 시간 및 일관성에 대한 재정적 보장을 제공하는 것이 업계 최고의 첫 번째 이니셔티브입니다. 이는 구현하기 어려울 뿐만 아니라 사용자에게 투명성을 제공하기도 어렵습니다. Azure Portal 덕분에 <a href="https://docs.microsoft.com/azure/documentdb/documentdb-distribute-data-globally#a-idcustomerfacingslametricsacustomer-facing-sla-metrics">가동 시간, 대기 시간, 처리량 및 요청 및 실패 횟수에 대한 완전한 투명성을 제공합니다</a>. 이러한 SLA를 적용할 수 없는 드문 경우에서는 월별 청구서의 10%에서 25%의 크레딧을 환불으로 제공합니다.</p>
+
+
+  <h2>가용성 SLA &ndash; 99.99%</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b3cd208e-5138-4cef-9a70-85e6f4ba4891.png"><img alt="Availbility SlA" border="0" height="285" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f1760f59-aa6f-4263-8108-6fafaf26cec4.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="가용성 SlA" width="420"></a></p>
+
+
+  <p>다음 수식은 744시간으로 한 달이 지정된 가용성에 대한 SLA 수식을 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5fdb139d-aae4-493a-9c7f-fb686896676d.png"><img alt="Formula1" border="0" height="48" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9ee926ec-c5bc-460d-b6b7-3187371b45fc.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Formula1" width="326"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/272f660b-d14b-493a-8c4c-e6e660b4c81d.png"><img alt="Screenshot_2" border="0" height="52" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61c5b7f6-8959-4895-9f0a-2b7a02a30d1c.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_2" width="347"></a></p>
+
+
+  <p>실패한 요청에는 포털에 표시된 것처럼 HTTP 코드 5xx 또는 408(문서 읽기/쓰기/쿼리 작업용)이 있습니다.</p>
+
+
+  <h2>처리량 SLA &ndash; 99.99%</h2>
+
+
+  <p>다음 수식은 744시간으로 한 달에 지정된 처리량에 대한 SLA 수식을 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/10bb6ff0-6d72-4803-9a28-3a44353f66a6.png"><img alt="Formula3" border="0" height="52" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/46e1402b-dd1d-4472-b3a6-f4110ba2a16b.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="수식3" width="344"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/65710e36-dbb7-4f9d-b1b2-eb5a9a7ef27e.png"><img alt="Screenshot_3" border="0" height="51" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/87e5f8e0-5e82-4d89-acc8-443020b20f4a.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_3" width="371"></a></p>
+
+
+  <p>처리량 실패 요청을&quot; 정의하는 &quot;것은 DocumentDB 컬렉션에 의해 제한되어 오류 코드가 발생하지만 사용된 RU가 지정된 초 동안 컬렉션의 파티션에 대해 프로비전된 RU를 초과한 요청입니다. 오용으로 인해 제한되는 것을 방지하려면 <a href="https://docs.microsoft.com/azure/documentdb/documentdb-partition-data">DocumentDB 분할 및 크기 조정의 모범 사례를</a> 살펴보는 것이 좋습니다.</p>
+
+
+  <h2>일관성 SLA &ndash; 99.99%</h2>
+
+
+  <p>&quot;<a href="https://docs.microsoft.com/azure/documentdb/documentdb-consistency-levels">일관성 수준</a>&quot; 는 일관성 보장을 지원하는 특정 읽기 요청에 대한 설정입니다. Azure Portal을 통해 일관성 SLA를 모니터링할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/926e1087-ef29-4aaf-a9b1-08a5c8329e0e.png"><img alt="Eventual consistency" border="0" height="309" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe7fadff-430c-40f6-b7b7-58f654530505.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="최종 일관성" width="452"></a></p>
+
+
+  <p align="center"><em>참고: 이 스크린샷에서 SLA = 실제</em></p>
+
+
+  <p>다음 표에서는 일관성 수준과 관련된 보장을 캡처합니다. 참고:</p>
+
+
+  <ul>
+   <li>&quot;<strong>K</strong>&quot; 는 읽기가 쓰기보다 지연되는 지정된 문서의 버전 수입니다.</li>
+   <li>&quot;<strong>T</strong>&quot; 는 지정된 시간 간격입니다.</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="999">
+   <tbody>
+    <tr>
+     <td valign="top" width="499"><strong>일관성 수준</strong></td>
+     <td valign="top" width="499"><strong>일관성 보장</strong></td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">강력</td>
+     <td valign="top" width="499">강력</td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">세션</td>
+     <td valign="top" width="499">사용자 고유의 쓰기 읽기</td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">&nbsp;</td>
+     <td valign="top" width="499">단조 읽기</td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">&nbsp;</td>
+     <td valign="top" width="499">일관적인 접두사</td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">제한된 부실</td>
+     <td valign="top" width="499">사용자 고유의 쓰기 읽기(쓰기 지역 내)</td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">&nbsp;</td>
+     <td valign="top" width="499">단조 읽기(지역 내)</td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">&nbsp;</td>
+     <td valign="top" width="499">일관적인 접두사</td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">&nbsp;</td>
+     <td valign="top" width="499">부실 바운드 &lt; K,T</td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">일관적인 접두사</td>
+     <td valign="top" width="499">일관적인 접두사</td>
+    </tr>
+    <tr>
+     <td valign="top" width="499">최종</td>
+     <td valign="top" width="499">최종</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>한 달에 744시간이 있는 경우 일관성을 위한 SLA 수식은 다음과 같습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39719a64-c5de-4f17-a1e4-3d360f187c35.png"><img alt="Formula5" border="0" height="46" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec8c06ef-205f-49b8-bcb8-8d3486c4a8ba.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="수식5" width="409"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/48687df3-3c24-4000-88a9-190c21409819.png"><img alt="Screenshot_4" border="0" height="47" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5147dcaa-e687-4c0c-b54b-553da2e2ac6e.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Screenshot_4" width="490"></a></p>
+
+
+  <h2>대기 시간 SLA &ndash; P99</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d62e7e18-90b6-4cfb-960f-0baeb8d3281a.png"><img alt="Observed read" border="0" height="244" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c36de945-7f7f-4f78-983c-06061075169b.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="관찰된 읽기" width="368"></a></p>
+
+
+  <p>로컬 Azure 지역 내에 배포된 지정된 애플리케이션의 경우 한 달에 애플리케이션에서 제출한 성공적인 요청으로 인해 문서 읽기의 경우 10ms 또는 문서 쓰기 작업의 경우 15ms보다 크거나 같은 P99 대기 시간이 발생하는 1시간 간격의 수를 합산합니다. 이러한 시간을 &ldquo;<strong>과도한 대기 시간</strong>이라고 합니다.&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/04f11c13-9af3-4a73-8631-f93e7f7b3404.png"><img alt="Formula7" border="0" height="39" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b6c3de8f-b985-4c93-a186-1bd53866222b.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Formula7" width="407"></a></p>
+
+
+  <p>월별 P99 대기 시간 달성 %가 99 % 미만인 경우 SLA 위반으로 간주하고 월별 청구서의 최대 25 %를 환불합니다.</p>
+
+
+  <p>이 짧은 블로그를 통해 Enterprise SLA의 큰 범위를 이해하는 데 도움이 되기를 바랍니다.</p>
+
+
+  <h2>중요 업무용 애플리케이션의 홈인 Azure DocumentDB</h2>
+
+
+  <p>Azure DocumentDB는 점점 더 많은 고객 업무용 앱을 호스팅합니다. 우리의 고객은 은행 및 자본 시장, 전문 서비스, 불연속 제조업체, 신생 기업 및 건강 솔루션과 같은 다양한 분야에서 왔습니다. 그러나 속도와 가용성을 손상시키지 않으면서 전역적으로 확장해야 하는 일반적인 특징을 공유합니다. 최상의 아키텍처 중 하나 덕분에 Azure DocumentDB는 이러한 약속을 매우 <a href="https://docs.microsoft.com/azure/documentdb/documentdb-key-value-store-cost">저렴한 비용으로</a> 제공할 수 있습니다.</p>
+
+
+  <h2>첫 번째 전역 분산 애플리케이션 빌드</h2>
+
+
+  <p>우리의 비전은 모든 최신 애플리케이션의 데이터베이스가 되는 것입니다. 개발자가 빌드하는 앱을 통해 우리가 살고 있는 세상을 진정으로 변화시킬 수 있기를 원합니다. 이는 DocumentDB에 적용하는 개별 기능보다 훨씬 더 중요합니다. 애플리케이션 개발은 어렵고, 빠르고, 확장 가능하고, 탄력적이고, 항상 사용 가능하고, 간단하면서도, 지구 규모로 분산 애플리케이션을 개발하는 것은 훨씬 더 어렵습니다. 그러나 그것은 우리의 현대 세계에서 전 세계 사람들에게 도달하는 기본적인 필수 구성 요소입니다. 우리는 매일 고객과 이야기하고 DocumentDB를 조정하여 진정한 뛰어난 경험을 가능하게하는 데 무한한 시간을 보냅니다.</p>
+
+
+  <p>그렇다면 다음 단계는 무엇인가요? 다음은 몇 가지 사항을 염두에 두고 있습니다.</p>
+
+
+  <ul>
+   <li>먼저 Azure DocumentDB의 <a href="https://docs.microsoft.com/azure/documentdb/documentdb-resources">핵심 개념을 이해합니다</a> .</li>
+   <li><a href="https://aka.ms/documentdb-emulator">에뮬레이터를 다운로드</a> 하고 로컬로 개발을 시작하세요!</li>
+   <li>웹/모바일 앱을 쉽게 빌드할 수 있습니다(많은 선택 사항이 있음). <ul>
+    <li><a href="https://docs.microsoft.com/azure/documentdb/documentdb-dotnet-application">.Net 웹앱</a></li>
+    <li><a href="https://docs.microsoft.com/azure/documentdb/documentdb-mongodb-application">Azure Cosmos DB for MongoDB API용 .Net 웹앱</a></li>
+    <li><a href="https://docs.microsoft.com/azure/documentdb/documentdb-mobile-apps-with-xamarin">Xamarin 및 DocumentDB를 사용하여 모바일 애플리케이션 빌드</a></li>
+    <li><a href="https://docs.microsoft.com/azure/documentdb/documentdb-nodejs-application">Node.js 웹앱</a></li>
+    <li><a href="https://docs.microsoft.com/azure/documentdb/documentdb-nodejs-application">Java 웹앱</a></li>
+    <li><a href="https://docs.microsoft.com/azure/documentdb/documentdb-python-application">Python Flask 웹앱</a></li>
+   </ul>
+   </li>
+  </ul>
+
+
+  <p>도움이 필요하거나 질문이나 피드백이 있는 경우 <a href="https://stackoverflow.com/questions/tagged/azure-documentdb">Stack Overflow의 개발자 포럼에</a> 문의하세요. Twitter<a href="https://twitter.com/DocumentDB">@DocumentDB</a>()에서 팔로우하여 최신 DocumentDB 뉴스 및 기능을 최신 상태로 유지하고 <a href="https://www.linkedin.com/groups/13522552">LinkedIn 그룹에</a> 가입하세요.</p>

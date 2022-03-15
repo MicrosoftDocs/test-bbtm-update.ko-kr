@@ -1,0 +1,86 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ad8744aa44493ec53d58c7e4c0d98d8758d6665d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908456"
+Slug: data-management-gateway-2-0-release-cassandra-salesforces
+Title: Apache Cassandra, Salesforce 및 데이터 관리 게이트웨이 2.0 릴리스에서 데이터 수집
+Summary: Azure Data Factory에 대한 광범위한 연결을 보강하기 위해 지속적으로 노력하고 있으며, 현재 Apache Cassandra 및 Salesforce라는 두 개의 새로운 커넥터의 가용성을 발표하게 되어 기쁩니다.
+Content: >-
+  <h2>사용할 수 있는 새 커넥터: Apache Cassandra 및 Salesforce</h2>
+
+
+  <p><strong>Azure Data Factory</strong>에 대한 광범위한 연결을 보강하기 위해 지속적으로 노력하고 있으며, 현재 <strong>Apache</strong> <strong>Cassandra 및 Salesforce</strong>라는 두 개의 새로운 커넥터의 가용성을 발표하게 되어 기쁩니다. 이 릴리스에서는 Azure Data Factory를 활용하여 이러한 두 데이터 저장소의 데이터를 다양한 데이터 저장소로 수집할 수 있습니다. Azure Data Factory의 모든 데이터 원본 및 대상 목록( <a href="https://azure.microsoft.com/en-us/documentation/articles/data-factory-data-movement-activities/#supported-data-stores">지원되는 데이터 저장소</a>)을 참조하세요.</p>
+
+
+  <p>이제 <a href="https://azure.microsoft.com/en-us/blog/simple-and-reliable-data-movement-with-azure-data-factory-copy-wizard/">직관적인 복사 마법사</a> 를 활용하여 Apache Cassandra 및 Salesforce에서 몇 분 안에 데이터 이동을 설정할 수 있습니다.</p>
+
+
+  <p><img alt="image" border="0" height="307" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d4365930-15ad-4736-8761-b12a3a345343.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+
+  <p>두 커넥터에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/data-factory-onprem-cassandra-connector/">Cassandra</a> 및 <a href="https://azure.microsoft.com/en-us/documentation/articles/data-factory-salesforce-connector/">Salesforce</a>를 참조하세요.</p>
+
+
+  <h2>데이터 관리 게이트웨이 2.0 릴리스</h2>
+
+
+  <p>데이터 관리 게이트웨이는 온-프레미스에 설치된 에이전트로, 클라우드와 온-프레미스 환경 간에 하이브리드 데이터 전송을 사용하도록 설정합니다. 이제 데이터 관리 게이트웨이 2.0 릴리스를 발표하게 되어 매우 기쁩니다. 새 커넥터 외에도 이 릴리스에서는 다음과 같은 방법으로 게이트웨이의 문제 해결 환경을 개선했습니다.</p>
+
+
+  <h3>눈에 띄는 위치에 상태 표시</h3>
+
+
+  <p>이제 데이터 관리 게이트웨이는 구성 관리자의 홈페이지에서 눈에 띄는 위치에 해당 상태를 표시하며 게이트웨이를 다시 온라인 상태로 만들기 위해 수행할 수 있는 작업에 대한 직관적인 제안을 제공합니다.</p>
+
+
+  <p>아래 스크린샷에 표시된 것처럼 게이트웨이 호스트 서비스가 중지되고 상태 바로 아래에서 서비스&rdquo; 시작 링크를 클릭하여 &ldquo;호스트 서비스를 시작할 수 있습니다.</p>
+
+
+  <p><img alt="image" border="0" height="330" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7d6fe6de-0954-448d-bb60-3ddcec2e961c.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="480"></p>
+
+
+  <h3>Microsoft로 게이트웨이 로그 보내기</h3>
+
+
+  <p>게이트웨이 문제가 있고 Microsoft 지원에 문의해야 하는 경우 게이트웨이 로그를 공유하라는 메시지가 표시될 수 있습니다. 게이트웨이를 릴리스하면 게이트웨이 구성 관리자에서 두 번의 단추 클릭을 통해 필요한 게이트웨이 로그를 쉽게 공유할 수 있습니다. 이 기능의 기능은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>요청 시 Microsoft에 지난 7일간의 게이트웨이 로그 보내기</li>
+  </ul>
+
+
+  <p><img alt="image" border="0" height="296" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/04f3f9e0-78ed-425c-ad98-e828682d9d27.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="480"></p>
+
+
+  <ul>
+   <li>Microsoft 지원에 문의할 때 신속하게 로그를 찾을 수 있는 보고서 ID를 제공합니다.</li>
+  </ul>
+
+
+  <p><img alt="image" border="0" height="295" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b3830be1-533b-4e85-8a5a-56c0ae512917.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="480"></p>
+
+
+  <h3>게이트웨이 호스트 컴퓨터에 게이트웨이 로그 보관</h3>
+
+
+  <p>게이트웨이에 문제가 있고 게이트웨이 로그를 직접 공유할 수 없는 일부 시나리오가 있습니다.</p>
+
+
+  <ul>
+   <li>사용자가 게이트웨이를 수동으로 설치하고 게이트웨이를 등록하는 경우</li>
+   <li>사용자가 구성 관리자에서 다시 생성된 키를 사용하여 게이트웨이를 등록하려고 할 때</li>
+   <li>사용자가 로그를 보내려고 하지만 게이트웨이 호스트 서비스를 연결할 수 없는 경우</li>
+  </ul>
+
+
+  <p>이러한 경우 게이트웨이 로그를 zip 파일로 저장하고 나중에 Microsoft 지원에 문의할 때 공유할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/data-factory-data-management-gateway/#troubleshoot-gateway-issues">더 알아보세요</a>&nbsp; 기능 및 관련 지침을 사용하는 방법에 대해 설명합니다. 이러한 새로운 문제 해결 기능을 얻으려면 아직 수행하지 않은 경우 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=39717">최신 게이트웨이</a> 를 다운로드하여 설치합니다.</p>
+
+
+  <p>온-프레미스 데이터 원본을 Azure Data Factory와 더 잘 통합하기 위해 더 많은 커넥터를 추가하고 데이터 관리 게이트웨이를 개선할 것입니다. 위의 기능에 대한 피드백이 있는 경우 <a href="https://feedback.azure.com/forums/270578-azure-data-factory">Azure Data Factory 사용자 의견</a> 또는 <a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=AzureDataFactory">MSDN 포럼을</a> 방문하여 의견을 공유하세요. 우리는 당신에게서 듣고 싶어!</p>

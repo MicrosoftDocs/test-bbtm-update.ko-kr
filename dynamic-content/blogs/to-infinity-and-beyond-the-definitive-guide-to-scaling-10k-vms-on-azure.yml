@@ -1,0 +1,85 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2ebeae46308f33f8dde6cd2e5c21d6a85126bbbc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902011"
+Slug: to-infinity-and-beyond-the-definitive-guide-to-scaling-10k-vms-on-azure
+Title: '무한대 이상: Azure에서 10k VM 크기 조정 가이드'
+Summary: 모든 플랫폼에는 제한이 있고, 워크스테이션 및 물리적 서버에는 리소스 경계가 있고, API는 속도가 제한될 수 있으며, 가상 퍼블릭 클라우드의 무한성으로도 플랫폼이 남용되거나 오용되지 않도록 보호하는 제한 사항이 적용됩니다(Azure).
+Content: >-
+  <p>모든 플랫폼에는 제한이 있고, 워크스테이션 및 물리적 서버에는 리소스 경계가 있고, API는 속도가 제한될 수 있으며, 가상 퍼블릭 클라우드의 무한성으로 인식되는 경우에도 플랫폼이 남용되거나 오용되지 않도록 보호하는 제한 사항이 적용됩니다. 설명서, <a href="https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits" target="_blank">Azure 구독 및 서비스 제한,</a>&ldquo; 할당량 및 제약 조건을 방문하여 이러한 제한 사항에 대해 자세히 알아볼 수 있습니다.&rdquo; 플랫폼을 극단적으로 끌어들이는 시나리오를 작업할 때 이러한 한계는 현실이 되므로 이를 극복해야 한다고 생각해야 합니다.</p>
+
+
+  <p>다음 게시물에는 <a href="https://www.linkedin.com/in/mikekiernan1/" target="_blank">마이크 키어넌</a>, 마유르 던데카르, <a href="https://www.linkedin.com/in/idan-shahar/" target="_blank">이단 샤하르</a>와의 작업에서 가져온 필수 노트가 포함되어 있습니다. 또한 Microsoft Azure 실행되는 10K 가상 머신의 제한에 도달하려고 하는 몇 가지 반복을 다루고 다양한 구현의 장단점을 살펴봅니다.</p>
+
+
+  <h2>클라우드 규모로 테스트 로드</h2>
+
+
+  <p>새 버전을 프로덕션으로 이동하기 전에 부하 및 스트레스 테스트는 한편으로는 중요하지만 다른 한편으로는 IT에 심각한 문제가 발생합니다. 이는 릴리스 주기마다 짧은 시간 동안만 상당한 양의 리소스를 사용할 수 있어야 하기 때문입니다. 인프라를 구매한 경우 장기간의 비용이 정당화되지 않으므로&rsquo; 사용량당 결제가 청구되는 퍼블릭 클라우드 플랫폼에 대한 완벽한 사용 사례입니다.</p>
+
+
+  <p>이 게시물은 실제로 고객이&rsquo; 작업해 온 것을 기반으로 하며 우리가 충족한 과제에 대해 설명합니다. 그러나 제공된 솔루션은 다음과 같이 Azure에 대규모 VM 클러스터가 있는 다른 사용 사례에 사용할 수 있을 만큼 일반적입니다.</p>
+
+
+  <ul>
+   <li>단일 VMSS를 초과하는 크기 조정 요구 사항 및 클러스터는 프로비전된 후 크기가 정적입니다(HPC 클러스터).</li>
+   <li>DDoS 시뮬레이션 &ndash; 은 이 경우 윤리를 실행해야 하며 대상 엔드포인트는 사용자가 소유해야 합니다. 그렇지 않으면 손해에 대한 책임을 져야 합니다.</li>
+  </ul>
+
+
+  <h2>프로세스</h2>
+
+
+  <ul>
+
+  </ul>
+
+
+  <p>개략적으로 다음 단계를 수행해야 하는&rdquo; x VM &ldquo;클러스터를 프로비전하고 초기화합니다.</p>
+
+
+  <ul>
+   <li>기본 이미지에서 시작합니다.</li>
+   <li>기본 이미지에서 x VM을 프로비전합니다.</li>
+   <li>각 VM에 필요한 소프트웨어 및 데이터를 다운로드하여 설치합니다.</li>
+   <li>각 VM에서 &ldquo;할 일&rdquo; 프로세스를 시작합니다.</li>
+  </ul>
+
+
+  <p>그러나 대상 하이퍼 스케일을 감안할 때 고려해야 할 중요한 요소가 많이 있습니다. 이러한 시나리오 구현에 대한 우려는 인프라 및 프로비저닝 프로세스와 마찬가지로 관리, 비용 최적화 및 플랫폼 제한 방지에 관한 것입니다.</p>
+
+
+  <ul>
+   <li>10K VM을 어떻게 관리하나요? 어떻게 계산합니까?</li>
+   <li>데이터의 원본은 무엇이며 10K 동시 다운로드의 로드를 처리할 수 있나요?</li>
+   <li>프로세스가 완료되었다는 것을 어떻게 알 수 있나요?</li>
+   <li>클라우드가 한 지역에 10K VM을 제공할 수 있나요?</li>
+   <li>프로비전하고 규모에 도달하는 데 얼마나 걸리나요?</li>
+  </ul>
+
+
+  <p>다음 섹션에서는 다른 서비스를 사용하여 구현된 부하 테스트 시나리오에 대해 설명하고 다음 목표를 가지고 이전에 제기된 질문을 해결합니다.</p>
+
+
+  <ul>
+   <li>Azure의 클라이언트 머신(VM)을 사용하여 다른 데이터 센터에 있는 백 엔드 서비스에 스트레스를 생성합니다.</li>
+   <li>HTTP POST를 사용하여 프로세스를 트리거합니다.</li>
+   <li>시간이 지남에 따라 만료될 수 있는 수동 단계, 필수 구성 요소 및 사용자 지정 이미지를 사용하지 않습니다.</li>
+   <li>본격적인 클러스터에 도달하는 최소 시간입니다.</li>
+  </ul>
+
+
+  <h2>솔루션 개요</h2>
+
+
+  <ul>
+
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e00e3aa5-a240-47e2-b8a2-cf506106d4cd.png"><img alt="Load-test scenario implementaed using various servies flow chart" border="0" height="506" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7fef0484-55d6-4f6f-be63-a809fc0d09b4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="다양한 서비스 흐름도를 사용하여 구현된 부하 테스트 시나리오" width="800"></a><br>
+
+  블로그 게시물, &ldquo;To Infinity and Beyond(또는: Azure에서 10k VM 크기 조정에 대한 최종 가이드)에서 솔루션의 모든 세부 정보에 대해 자세히 알아보세요.&rdquo; <a href="https://github.com/balteravishay/buzz" target="_blank">GitHub 솔루션 코드 및 배포 스크립트를 볼 수도 있습니다</a>.</p>

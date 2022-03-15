@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7448645b333d68a1b3d6d9b4d5328d0f807aa123
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908063"
+Slug: red-hat-openshift-and-microsoft-azure-stack-together-for-hybrid-enterprise-solutions
+Title: 하이브리드 엔터프라이즈 솔루션을 위해 Red Hat OpenShift 및 Microsoft Azure Stack 함께 사용
+Summary: Red Hat과 Microsoft는 파트너십을 확장하여 현재 시장에서 공동으로 지원되는 완전한 하이브리드 클라우드 솔루션을 제공합니다.
+Content: >-
+  <p><strong>Red Hat과 Microsoft는 파트너십을 확장하여 현재 시장에서 공동으로 지원되는 완전한 하이브리드 클라우드 솔루션을 제공합니다.</strong></p>
+
+
+  <p>이번 주 올랜도의 Ignite에서 Microsoft와 Red Hat은 Microsoft Azure Stack용 하이브리드 엔터프라이즈 컨테이너 플랫폼 &ndash; OpenShift Container Platform에 대한 솔루션을 시연했습니다. 이 솔루션은 Microsoft와 Red Hat의 공동 지원을 받고 있으며 <a href="https://www.redhat.com/en/about/press-releases/red-hat-and-microsoft-co-develop-first-red-hat-openshift-jointly-managed-service-public-cloud" target="_blank">올해 5월 초에</a> 처음 발표되었습니다.</p>
+
+
+  <p>Microsoft와 Red Hat은 모두 온-프레미스 및 퍼블릭 클라우드에 걸쳐 있는 고객 솔루션에 최선을 다하고 있습니다.&nbsp; Azure와 Azure Stack은 함께 진정으로 일관되고 포괄적인 하이브리드 클라우드 플랫폼만 업계&rsquo;를 제공하므로 애플리케이션 개발에 대한 통합된 접근 방식을 사용할 수 있습니다. OpenShift Container Platform은 Red Hats&rsquo; 컨테이너 애플리케이션 플랫폼으로, Docker 및 Kubernetes를 엔터프라이즈로 가져오고 온-프레미스와 클라우드 모두에서 일관된 솔루션을 만듭니다.</p>
+
+
+  <p>OpenShift 및 Azure Stack은 Microsoft 및 Red Hat 기술을 사용하고 퍼블릭 클라우드에서 또는 Azure Stack을 사용하여 온-프레미스에서 이러한 솔루션을 실행하고 관리하는 &ndash; 가장 큰 유연성과 일관성을 제공하는 고객을 위한 흥미로운 새로운 옵션을 제공합니다. OpenShift 및 Azure Stack을 사용하면 Azure, Azure Stack, 운영 체제 미설치, Windows 및 RHEL에서 일관된 애플리케이션 환경을 통해 Microsoft&rsquo;와 Red Hats&rsquo; 개발자 프레임워크 및 파트너 에코시스템을 통합할 수 있습니다.</p>
+
+
+  <p>이렇게 하면 Azure 및 Azure Stack의 Red Hat Enterprise Linux(Linux),RHEL에서 실행되는 SQL Server, RHEL의 .NET Core 및 Azure 관리 서비스용 OpenShift 개발이 이미 포함된 파트너 관계가 확장됩니다.</p>
+
+
+  <p>또한 Red Hat Enterprise Linux의 Microsoft SQL Server 컨테이너에서 사용할 수 있고 OpenShift 컨테이너 카탈로그에 포함되므로 SQL 빅 데이터 클러스터를 보다 쉽게 배포, 관리 및 활용할 수 있습니다.&nbsp; SQL 빅 데이터 클러스터는 OpenShift Container Platform과 호환되는 Kubernetes 운영자를 활용합니다.</p>
+
+
+  <p>Azure Stack에서 OpenShift의 오늘&rsquo; 데모를 catch하지 않은&rsquo; 경우 곧 기록을 사용할 수 있습니다.&nbsp; 업데이트를 계속 지켜봐 주시기 바랍니다. 한편, 오늘 Azure Stack에 <a href="https://aka.ms/azsopenshiftcp" target="_blank">OpenShift Container Platform을 배포하는 방법을</a> 알아보세요!</p>

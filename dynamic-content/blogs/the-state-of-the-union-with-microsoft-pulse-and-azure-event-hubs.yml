@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 887be25dbf8c9a55f0231177a9c4f04ccb1f4aec
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907569"
+Slug: the-state-of-the-union-with-microsoft-pulse-and-azure-event-hubs
+Title: Microsoft Pulse 및 Azure Event Hubs를 사용하는 공용 구조체의 상태
+Summary: 오바마 대통령의 올해 연방 국가 연설을 위해, 텔레비전 네트워크 CNN, MSNBC와 Telemundo, 그들의 웹 및 모바일 속성과 함께, 마이크로 소프트 펄스와 사람들의 맥박을했다, Azure Event Hubs에 의해 구동.
+Content: >-
+  <p>미국에서 헌법은 대통령에게 &ldquo;때때로 연방 국가의 정보를 의회에 제공하고 필요하고 신속하다고 판단할 수 있도록 그러한 조치를 고려할 것을 권고합니다.&rdquo;</p>
+
+
+  <p>1월에 일반적으로 열리는 이 &ldquo;연방&rdquo; 의회 연설은 공동 세션에서 두 의회 상공회의소 앞에서 열리며, 많은 미국 텔레비전 네트워크와 라디오 방송국에서 전달되며 웹 및 소셜 미디어에 광범위하게 배포됩니다. 그것은&rsquo; 정치적 미국이 새해에 어떻게 울리는지, 그리고&rsquo; 대통령이 뒤를 돌아보고 앞을 내다보는 곳, 전국의 사람들이 보고 의견을 형성하는 것을 설명합니다. 그리고 분명히, 사람들은 다른 사람들이 연설에 대해 어떻게 생각하는지, 그리고 대통령이 어떻게 자신의 정치적 성향에 부합하고 정렬되지 않았는지에 관심이 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/be459732-50f1-4f27-a30d-5f29f05592e6.png"><img alt="mspulse660" height="454" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/41a51faa-4ddf-4749-96fe-7dfdcf5a540e.png" style="float: none; margin-left: auto; display: block; margin-right: auto" title="mspulse660" width="660"></a></p>
+
+
+  <p>올해&rsquo; 오바마 대통령의 연설, 텔레비전 네트워크 CNN, MSNBC, 텔레문도, 웹 및 모바일 속성과 함께 사람들은&rsquo; 마이크로 소프트 펄스와 함께 펄스를했다.</p>
+
+
+  <p>Microsoft Pulse는 매우 많은 청중의 분위기와 의견을 실시간으로 파악하기 위해 빌드된 확장성이 뛰어난 서비스입니다. 모바일 앱 및 웹 사이트와 통합할 수 있으며 거의 실시간으로 결과를 보고하는 것 외에도 청중으로부터 수십만 개의 투표를 동시에 캡처하고 처리할 수 있습니다.</p>
+
+
+  <p>대통령&rsquo; 연설 1시간 동안 Microsoft Pulse가 나열된 모든 네트워크에서 승인 또는 거부에 대한 600만 개 이상의 의견 투표를 수집하고 집계했습니다. 이 서비스는 실시간 감정 결과 데이터를 라이브 TV 방송뿐만 아니라 네트워크&#39; 웹 속성에 연결된 모든 시청자에게 롤업하고 다시 공급하면서 들어오는 각 투표를 밀리초 만에 수집하고 처리합니다.</p>
+
+
+  <p>이 규모와 처리량을 달성하기 위한 Microsoft Pulses&rsquo;&ldquo; 마술 트릭&rdquo;은 Azure Event Hubs로, Pulse의 현관 역할을 하며 HTTP를 통해 제출된 모든 투표를 직접 수락하여 극단적인 트래픽 급증으로부터 Pulse 서비스 자체를 격리하는 동시에 시청자&rsquo; 투표를 안정적으로 수락합니다.</p>
+
+
+  <p>Microsoft Pulse는 트래픽을 미국 동부, 중부 및 서부 데이터 센터 지역에 위치한 세 개의 Event Hubs에 분산하여 높은 처리량과 고가용성을 제공합니다. 연방 주 주소에서 3개의 Event Hubs의 안정성과 가용성은 100%로 보고되었으며, 이는 600만 표 중 한 표가 결과에 계산되었음을 의미합니다.</p>
+
+
+  <p>Microsoft Pulse가 이 행사를 준비하면서 테스트 로드는 최대 300,000표의 동시 투표를 통해 테스트 실행당 총 1억 4천만 표까지 충분한 안전 마진을 제공했습니다. Azure Event Hubs는 테스트 중에 3개의 Event Hubs에서 최대 2,000만 개 이상의 메시지를 처리하고 완벽한 안정성으로 더 크고 글로벌 대상 그룹 이벤트에 대한 준비 상태를 보여주었습니다.</p>
+
+
+  <p><a href="https://www.microsoft.com/pulse/">microsoft.com/pulse/</a> Microsoft Pulse에 대해 자세히 알아보세요.</p>
+
+
+  <p>대규모 분석 서비스 빌드를 시작하려면 대규모 데이터 수집을 위한 초고속도로인 <a href="https://azure.microsoft.com/services/event-hubs/">Azure Event Hubs</a>와 데이터를 인사이트로 전환하기 위한 <a href="https://www.microsoft.com/en/server-cloud/cortana-analytics-suite/">Cortana Analytics Suite</a>에 대해 알아봅니다.</p>

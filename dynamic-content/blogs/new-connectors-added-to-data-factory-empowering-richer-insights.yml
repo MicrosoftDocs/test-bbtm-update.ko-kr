@@ -1,0 +1,102 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ddf0e065b02e5420af5eaa2a27384fe1403063ef
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902030"
+Slug: new-connectors-added-to-data-factory-empowering-richer-insights
+Title: Azure Data Factory에 추가된 새로운 커넥터를 통해 풍부한 인사이트를 얻을 수 있습니다.
+Summary: Azure Data Factory는 데이터 수집을 위한 새로운 커넥터를 Azure에 추가하여 Cosmos DB MongoDB API, Google Cloud Storage, Amazon S3, MongoDB, REST 등 데이터 웨어하우스 솔루션 및 데이터 기반 SaaS 앱의 역량을 강화합니다.
+Content: >-
+  <p>데이터는 비즈니스에 필수적입니다. 비즈니스 인사이트를 보다 효율적으로 차단 해제하는 기능은 기업의 주요 경쟁 우위가 될 수 있습니다. 볼륨, 다양성 및 속도가 증가함에 따라 조직은 고급 분석을 수행하고 비즈니스 기회를 파악하기 위해 사일로에서 지속적으로 증가하는 다양한 데이터 세트 집합을 함께 가져와야 합니다. 이러한 빅 데이터 분석 솔루션을 구축하는 첫 번째 과제는 다양한 데이터 저장소에서 데이터를 연결하고 추출하는 방법입니다. ADF(<a href="https://docs.microsoft.com/azure/data-factory/" target="_blank">Azure Data Factory</a>)는 Azure의 분석 워크로드를 위한 완전 관리형 데이터 통합 서비스로, 간단한 끌어서 놓기 환경을 통해 <a href="https://docs.microsoft.com/azure/data-factory/copy-activity-overview#supported-data-stores-and-formats" target="_blank">80개 이상의 데이터 원본에서 데이터를</a> 복사할 수 있습니다. 또한 유연한 제어 흐름, 풍부한 모니터링 및 CI/CD 기능을 사용하여 ETL/ELT 흐름을 운영 및 관리하여 SLA를 충족할 수 있습니다.</p>
+
+
+  <p>오늘, 분석 워크로드에 대한 더 많은 시나리오와 가능성을 가능하게 하는 새로운 ADF 커넥터 세트의 릴리스를 발표하게 되어 기쁩니다. 예를 들어 이제 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+      <li>Google Cloud에서 Azure Data Lake Gen2로 Storage 데이터를 수집하고 다른 원본에서 들어오는 데이터와 Azure Databricks를 함께 사용하여 처리합니다.</li>
+      <li>타사 데이터 공급업체에서 사용할 수 있는 S3 호환 데이터 스토리지의 데이터를 Azure로 가져옵니다.</li>
+      <li>MongoDB 및 기타 데이터에서 애플리케이션 사용을 위해 Azure Cosmos DB&#39;API for MongoDB로 복사합니다.</li>
+      <li>RESTful 엔드포인트에서 확장 가능한 지점으로 데이터를 검색하여 수백 개의 SaaS 애플리케이션에 도달합니다.</li>
+  </ul>
+
+
+  <p>자세한 내용은 새 커넥터에 대한 다음 업데이트 및 기존 커넥터에 대한 추가 기능을 참조하세요.</p>
+
+
+  <h2>커넥터 업데이트</h2>
+
+
+  <table border="1" cellpadding="0" cellspacing="0">
+      <tbody>
+          <tr>
+              <td style="vertical-align: middle;" width="211">
+              <p align="left"><b>Azure Cosmos DB&#39;API for MongoDB&nbsp;</b></p>
+              </td>
+              <td style="vertical-align: middle;" width="519">
+              <p>이제 이미 지원되는 SQL API 외에도 Azure Cosmos DB&#39;API for MongoDB에 데이터를 복사할 수 있습니다. 특히 Azure Cosmos DB에 쓰기 위해 커넥터 싱크는 최상의 성능을 제공하기 위해 Azure Cosmos DB 대량 실행기 라이브러리를 기반으로 빌드됩니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-cosmos-db-mongodb-api" target="_blank">Azure Cosmos DB&#39;API for MongoDB에</a> 대해 자세히 알아봅니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle;" width="211">
+              <p align="left"><b>Amazon S3</b></p>
+              </td>
+              <td style="vertical-align: middle;" width="519">
+              <p>ADF는 Amazon S3 커넥터에서 사용자 지정 S3 엔드포인트 구성을 사용하도록 설정합니다. 이제 커넥터를 사용하여 모든 S3 호환 스토리지 공급자에서 데이터를 복사할 수 있으며 더 이상 공식 Amazon S3 서비스로 제한되지 않습니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-amazon-simple-storage-service" target="_blank">Amazon S3 커넥터</a>에 대해 자세히 알아보세요.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle;" width="211">
+              <p align="left"><b>Google Cloud Storage</b></p>
+              </td>
+              <td style="vertical-align: middle;" width="519">
+              <p>Google Cloud Storage S3 호환 상호 운용성을 제공하므로 이제 Google Cloud Storage 데이터를 복사할 수 있습니다. 이는 Google Cloud Storage&rsquo; 해당 S3 엔드포인트와 함께 S3 커넥터를 활용합니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-google-cloud-storage" target="_blank">Google Cloud Storage 커넥터</a>에 대해 자세히 알아보세요.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle;" width="211">
+              <p align="left"><b>MongoDB</b></p>
+              </td>
+              <td style="vertical-align: middle;" width="519">
+              <p>MongoDB 기능 검사, 성능 및 확장성에 대한 피드백을 해결하기 위해 ADF는 새 버전의 MongoDB 커넥터를 릴리스합니다. 연결 옵션이 있는 일반 MongoDB 연결 문자열, 네이티브 MongoDB 쿼리, 계층적 데이터 추출 등을 포함한 포괄적인 네이티브 MongoDB 지원을 제공합니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-mongodb" target="_blank">MongoDB 커넥터</a>에 대해 자세히 알아봅니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle;" width="211">
+              <p align="left"><b>Azure Database for MariaDB</b></p>
+              </td>
+              <td style="vertical-align: middle;" width="519">
+              <p>Azure Database for MariaDB에서 데이터를 복사할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-database-for-mariadb" target="_blank">Azure Database for MariaDB 커넥터</a>에 대해 자세히 알아봅니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle;" width="211">
+              <p align="left"><b>일반 REST</b></p>
+              </td>
+              <td style="vertical-align: middle;" width="519">
+              <p>이제 다양한 RESTful 서비스 및 앱에서 데이터를 검색할 수 있습니다. ADF는 일반 HTTP 커넥터 외에도 더 많은 대상 REST 커넥터를 릴리스합니다. weve가 받은 가장 일반적인 두 가지&rsquo; 요청을 충족하기 위해 이 REST 커넥터는 Azure Active Directory(AAD), 서비스 주체, MSI(Azure 리소스용 관리 ID) 인증 및 페이지 매김 규칙을 지원합니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-rest" target="_blank">REST 커넥터</a>에 대해 자세히 알아봅니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle;" width="211">
+              <p align="left"><b>일반 OData</b></p>
+              </td>
+              <td style="vertical-align: middle;" width="519">
+              <p>ADF는 이제 데이터 양식 OData 엔드포인트를 복사할 때 AAD 서비스 주체 및 MSI(Azure 리소스용 관리 ID) 인증을 지원합니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-odata" target="_blank">OData 커넥터</a>에 대해 자세히 알아봅니다.</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="vertical-align: middle;" width="211">
+              <p align="left"><b>Dynamics AX(미리 보기)</b></p>
+              </td>
+              <td style="vertical-align: middle;" width="519">
+              <p>이제 서비스 주체 인증과 함께 OData 프로토콜을 사용하여 Dynamics AX에서 데이터를 복사할 수 있습니다. 이 커넥터는 Dynamics 365 FO&amp;(Finance and Operations)에서도 작동합니다. <a href="https://docs.microsoft.com/en-us/azure/data-factory/connector-dynamics-ax" target="_blank">Dynamics AX 커넥터</a>에 대해 자세히 알아봅니다.</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>이러한 추가 기능을 사용해 보고 피드백을 제공하는 것이 좋습니다. 시나리오에서 도움이 되기를 바랍니다. <a href="https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureDataFactory" target="_blank">Azure Data Factory 포럼</a>에 질문을 게시하거나 <a href="https://feedback.azure.com/forums/270578-data-factory" target="_blank">Data Factory 피드백 사이트에서</a> 의견을 공유하세요.</p>

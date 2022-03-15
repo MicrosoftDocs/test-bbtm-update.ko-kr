@@ -1,0 +1,44 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 27ec32fb503a8912073782cf53182cb365291be8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901638"
+Slug: join-on-demand-recasts-of-azure-cosmos-db-and-azure-sql-database-webinars
+Title: Azure Cosmos DB 및 Azure SQL Database 웹 세미나의 주문형 리캐스트에 참여하세요!
+Summary: 누락된 경우 주문형 보기를 위해 Azure Cosmos Database 및 Azure SQL Database 웨비나를 게시했습니다.
+Content: >-
+  <p>누락&rsquo;된 경우 주문형 보기를 위해 Azure Cosmos Database 및 Azure SQL Database 웨비나를 게시했습니다. 첫 번째 웨비나에서는 여러 지역에서 확장된 처리량 및 스토리지를 지원하는 전역적으로 분산된 다중 모델 데이터베이스 서비스인 Azure Cosmos DB를 자세히 살펴봅니다.&nbsp; 두 번째 웨비나에서는 Azure SQL Database&#39;기계 학습 기능을 최대한 활용하여 고객에게 지능형 앱을 제공하는 방법을 공유합니다.</p>
+
+
+  <h2>Azure Cosmos DB &ndash; 전역적으로 분산되고 확장성이 뛰어난 애플리케이션을 쉽게 빌드</h2>
+
+
+  <p>성공적인 앱 빌드는 데이터가 저장되는 방법 또는 위치에 대해 잘 인덱싱되고 형식이 지정된 데이터를&mdash; 사용하지 않는 데 따라 달라집니다. Azure Cosmos DB를 사용하면 복잡한 다중 데이터 센터 구성의 번거로움 없이 전역적으로 분산된 애플리케이션을 빌드할 수 있습니다.</p>
+
+
+  <p>이 웨비나를 조정하고 Azure Cosmos DB를 활용하여 다음을 수행할 수 있는 방법을 알아봅니다.</p>
+
+
+  <ul>
+      <li>번개 같은 빠른 글로벌 분산 앱 만들기</li>
+      <li>친숙한 도구 및 API를 사용하여 앱&#39;데이터 모델링</li>
+      <li>여러 지역에 데이터를 쉽게 배포</li>
+      <li>애플리케이션&#39;요구 사항에 따라 성능을 미세 조정합니다.</li>
+  </ul>
+
+
+  <h4><a href="https://info.microsoft.com/getting-started-with-cosmos-db-on-demand.html">요청 시 이 웨비나를 시청하도록 등록합니다.</a></h4>
+
+
+  <h2>Azure SQL Database 사용하여 지능형 앱을 더 빠르게 빌드</h2>
+
+
+  <p>애플리케이션은 성능을 최적화하기 위해 기본 데이터베이스에 기계 학습 인텔리전스를 적용할 때 이점을 얻을 수 있습니다. 지능형 앱은 추세를 파악하고, 비정상적인 이벤트에 대응하며, 유용한 예측 또는 권장 사항을 만들 수 있습니다.</p>
+
+
+  <p>Azure SQL Database 웨비나에서는 개발 팀이 지능형 애플리케이션을 만드는 데 필요한 서비스, 코드 및 데이터를 안내합니다. 이 세션에서는&rsquo; Azure SQL Database 지속적으로 데이터를 평가하여 워크로드에 맞게 성능 향상 권장 사항을 제공하는 방법을 알아보세요. &rsquo;계측 및 원격 분석을 구현하고 사용자 권장 사항 및 성능 인사이트와 같은 인텔리전스를 앱에 추가하는 방법을 알아봅니다.</p>
+
+
+  <h4><a href="https://info.microsoft.com/en-us-landing-build-intelligent-apps-azure-sql-db-on-demand.html">이 주문형 웨비나에 등록합니다.</a></h4>

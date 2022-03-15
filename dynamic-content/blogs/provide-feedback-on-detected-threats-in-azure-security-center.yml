@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d6c0ebf094a82623104c540eed41aaa76e316d3e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907594"
+Slug: provide-feedback-on-detected-threats-in-azure-security-center
+Title: Azure Security Center에서 검색된 위협에 대한 피드백 제공
+Summary: Azure Security Center는 Azure 리소스에서 로그 데이터를 자동으로 수집, 분석 및 통합하여 위협을 감지합니다.
+Content: >-
+  <p>Azure Security Center는 Azure 리소스에서 로그 데이터를 자동으로 수집, 분석 및 통합하여 위협을 감지합니다. 기계 학습 알고리즘은 수집된 데이터에 대해 실행되고 보안 경고를 생성합니다. 보안 센터에는 문제를 신속하게 조사하는 데 필요한 정보와 공격을 해결하는 방법에 대한 권장 사항과 함께 우선 순위가 지정된 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-alerts-type" target="_blank">보안 경고</a> 목록이 표시됩니다.</p>
+
+
+  <p>그러나 위협 환경은 지속적으로 변화하고 있으며, 고객에 따라 요구 사항이 다릅니다. 따라서 고객과 지속적으로 연락하고 위협 탐지 기능을 지속적으로 개선하고 고객에게 보안 위협을 해결하는 데 도움이 되는 올바른 정보를 제공하는 것이 중요합니다. 이를 위해 Azure Security Center에 <strong>경고 고객 피드백을</strong> 추가하여 Security Center 고객에게 받은 경고에 대한 피드백을 제공하는 채널을 제공합니다. 이 기능은 현재 공개 미리 보기에서 사용할 수 있으며 경고 블레이드에서 액세스할 수 있습니다. 경고의 아래쪽 부분에는 아래와 같이 이 기능이 유용하나요?&rdquo;라는 질문이 &ldquo;표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3e2b224-6ee4-4a43-9715-ca43bfc35700.png"><img alt="Alert blade " border="0" height="725" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b49e540e-5024-46cb-93f3-f14dceef80ec.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="경고 블레이드 " width="501"></a></p>
+
+
+  <p>이 시점에서 간단한 사용자 인터페이스를 사용하여 여러 해상도로 피드백을 제공할 수 있습니다. 첫 번째 해결 방법은 경고가 유용한지 여부에 대한 피드백을 제공하는 것입니다. 답변이 제공되면 이유의 드롭다운 목록이 나타납니다. 유용한 경고는 검색된 악의적인 활동(악의적인 참 긍정) 또는 경고를 발생시켜야 하는 악의적이 아닌 활동(무해한 참 긍정)으로 인해 발생할 수 있습니다. 후자는 비정상적인 위치에서 또는 비정상적인 방식으로 리소스에 대한 침투 테스트 활동 또는 양성 로그인과 같은 악의적이 아닌 시도의 결과일 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4fb951d5-b1fe-49e9-b910-8c9436a86529.png"><img alt="Useful alert" border="0" height="611" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a660e583-7b18-45f1-8545-dd874074d79f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="유용한 경고" width="1760"></a></p>
+
+
+  <p>유용하지 않은 경고는 발생되지 않았거나 추가 조사를 위해 더 관련성이 높아야 합니다. 사용 가능한 옵션은 다음과 같습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a4ee10a0-6667-4cd7-9074-8195e3744537.png"><img alt="Not useful alert " border="0" height="599" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fab7c4ab-0256-4dee-9650-5f7b46dc7153.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="유용하지 않은 경고 " width="1501"></a></p>
+
+
+  <p>세 번째 해상도 수준에서 사용자는 경고에 대한 무료 텍스트로 추가 설명을 제공할 수 있습니다.</p>
+
+
+  <p>이 기능을 통해 Security Center는 검색 메커니즘을 개선하는 데 필요한 세심함을 제공하므로 제품 및 지원 그룹이 고객의 요구에 더 밀접하게 귀를 기울일 수 있습니다. 피드백은 또한 고객의 요구를 더 잘 충족하기 위해 경고의 자동화된 튜닝을 위한 토대를 마련합니다.</p>
+
+
+  <p>Security Center의 이점에 대해 자세히 알아보려면 <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">웹 페이지를 방문하세요</a>.</p>

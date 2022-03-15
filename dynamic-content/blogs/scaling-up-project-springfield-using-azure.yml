@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 41372447654310a4a1d8e1d0382e2067f1268821
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900885"
+Slug: scaling-up-project-springfield-using-azure
+Title: Azure를 사용하여 "Project Springfield" 확장
+Summary: 이 게스트 게시물은 Microsoft의 인공 지능 및 연구 그룹의 Project Springfield 팀에서 온 것입니다. Project Springfield는 클라우드 서비스로서 보안 문제를 찾기 위한 선구적인 인공 지능을 제공합니다. 소규모 연구팀이 꽉 찬 타임라인에서 크기 조정 과제를 충족하고 초과하도록 Azure를 어떻게 지원했는지 알아봅니다.
+Content: >-
+  <p><em>이 게스트 게시물은 Microsofts&rsquo; 인공 지능 및 연구 그룹의 <a href="https://www.microsoft.com/en-us/research/project/project-springfield/">Project Springfield 팀에서</a> 온 것입니다. Project Springfield는 클라우드 서비스로서 보안 문제를 찾기 위한 선구적인 인공 지능을 제공합니다. 팀이 Azure를 사용하여 꽉 찬 타임라인에서 크기 조정 문제를 충족하고 초과하는 방법을 알아봅니다.</em></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8d3f1581-2cd7-4d29-bed7-39e1b2706021.jpg"><img alt="Microsoft's Springfield group" border="0" height="310" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/609e542f-ecb0-41b6-8354-6406ad3ec547.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Microsoft의 Springfield 그룹" width="480"></a></p>
+
+
+  <p><a href="https://www.microsoft.com/en-us/research/people/wiblum/">윌리엄 블룸</a>(William Blum)이 이끄는 Project 스프링필드 엔지니어링 팀은 Project Springfield&rdquo;의 첫 번째 릴리스를 구축하여 고객이 Microsoft Research의 &ldquo;선구적&ldquo;인 화이트박스 퍼지 기술을 클라우드의 탄력성과 결합하여 백만 달러&rdquo; 규모의 보안 버그를&rdquo; 찾을 수 &ldquo;있도록 지원했습니다. 고객은 Azure에서 퍼지 랩을 만든 Project Springfield에 소프트웨어를 업로드할 수 있습니다. 각 퍼지 랩은 메서드 포트폴리오를 사용하여 테스트하고 테스트 사례에서 크래시를 찾은 다음 보고할 가장 높은 가치의 문제를 선택했습니다. Azure의 기능을 통해 고객의&rsquo; 요구가 변경됨에 따라 이 계산 집약적 프로세스를 확장 및 축소하는 동시에 모든 실행에서 데이터를 수집하여 서비스를 개선할 수 있습니다. 이를 위해 Project Springfield는 많은 수의 가상 머신 및 네트워크 리소스를 동적으로 만들고 고객을 대신하여 관리해야 했습니다.</p>
+
+
+  <p>클래식 Azure 관리 인터페이스를 사용하여 가상 머신 및 네트워킹 리소스를 동적으로 프로비전하는 Azure에서 초기 제품을 빌드했습니다. 이제 는 규모의 주문으로 서비스를 확장하는 것을 의미하는 고객의 &ndash; 새로운 물결을 준비할 때였습니다. 클래식 Azure를 사용하여 크기를 조정하는 것은 어려운 일입니다. 예를 들어 각 퍼지 랩은 Project Springfield에서 다른 클라우드 서비스를 사용하지만 구독당 클라우드 서비스는 200개에 불과했습니다. 즉, 고객이 한 번에 200개 이상의 소프트웨어를 테스트해야 하는 경우 Project Springfield는 각 구독에 고객에게 서비스를 제공할 수 있는 충분한 가상 머신이 있더라도 구독 간에 퍼지 랩을 분할해야 합니다. 더 나은 방법이 있어야 했습니다.</p>
+
+
+  <p>Microsoft&#39;마이크로 서비스 기반 애플리케이션 플랫폼뿐만 아니라 Service Fabric Azure 관리 인터페이스 Azure Resource Manager를 사용하여 서비스를 다시 설계함으로써 더 나은 방법을 찾았습니다. Azure Resource Manager를 사용하면 가상 머신, 가상 네트워크 및 부하 분산 장치가 모두 다른 리소스로 처리됩니다. 이러한 리소스는 필요한 리소스와 리소스를 함께 맞추는 방법을 정의하는 JSON 개체인 Azure Resource Manager 템플릿에서 결합할 수 있습니다. 보안 테스트 랩에 필요한 Project 모든 리소스는 단일 템플릿으로 지정됩니다. 고객에게 새 랩이 필요한 경우 Azure는 템플릿을 읽은 다음 템플릿에서 필요한 모든 리소스를 동적으로 만들 수 있습니다. Service Fabric 사용하면 백 엔드 작업자 역할을 마이크로 서비스로 쉽게 이식하고 고객 요구에 따라 백 엔드 리소스를 동적으로 스케일 업하고 축소할 수 있습니다. 보수는 단일 융통성 없는 번들에 고정되는 대신 리소스 배포 방식을 동적으로 재구성할 수 있다는 것이었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8c76ba35-3e71-44b2-b7de-5a740d3c58a9.jpg"><img alt="Microsoft's Springfield group" border="0" height="332" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/804af599-65cb-43bb-b56d-45f424693747.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Microsoft의 Springfield 그룹" width="480"></a></p>
+
+
+  <p>ARM에서 도입한 새로운 배포 개념을 중심으로 서비스를 다시 설계하려면 몇 가지 작업이 필요했습니다. Azures&rsquo; 서비스로서의 인프라 기능을 통해 네트워크 및 컴퓨팅 리소스의 구성을 보다 세밀하게 제어하고 세분화할 수 있다는 것을 알게 되면서 작업이 성과를 냈다. 새로운 사고 방식에 적응한 후에는 Project 스프링필드를 더욱 효율적으로 만들고 가치를 제공하는 방법을 볼 수 있습니다. 예를 들어 Azure 네트워크 보안 그룹을 사용하여 각 고객이 엔터프라이즈 사용자의 주요 기능인 Project Springfield 리소스 &ndash; 에 액세스할 수 있는 사용자에 대해 서로 다른 IP 주소 제한을 설정할 수 있음을 깨달았습니다.</p>
+
+
+  <p>더 나은 것은 Azure에 베팅하는 것이 미래의 증거였다는 것입니다&ldquo;.&rdquo; Azure에서 Red Hat Linux 지원, Windows 서버 컨테이너 등과 같은 새로운 기능을 출시함에 따라 Project Springfield가 고객의 요구를 충족하는 방법을 확인할 수 있습니다. Azure Resource Manager를 사용하면 이제 리소스 관리자 템플릿의 리소스 종류가 다릅니다. 이를 통해 팀은 퍼지 랩을 관리할 수 있는 일관된 단일 방법을 제공했으며, 결국 다양한 고객 요구에 맞는 다양한 유형의 퍼지 랩을 제공할 수 있는 토대를 마련했습니다.</p>
+
+
+  <p>Azure Resource Manager와 같은 Azure의 새로운 기능을 사용하여 4개월 만에 규모 목표를 달성했습니다. 즉, 용량이 부족할 것이라는 걱정 없이 최대한 빨리 Project Springfield의 시험을 위해 고객과 파트너를 데려올 수 있습니다. 또한&rsquo; Azure를 기반으로 구축하면 새로운 기능이 온라인 상태가 되면서 팀이 성공을 거둘 수 있습니다. Microsoft Ignite 2016에서 <a href="https://www.youtube.com/watch?v=zMm3sUOm9jw" target="_blank">OSIsoft &amp; Deschutes Brewery</a>, <a href="https://www.ey.com/gl/en/services/advisory/ey-cybersecurity" target="_blank">EY</a> 및 Leviathan Security Group은 무대에 서서 Project 스프링필드에서 본 가치에 대해 전 세계에 말했습니다. 1주일 이내에 1,000명이 넘는 사람들이 재판에 <a href="https://www.microsoft.com/springfield">등록</a> 했습니다! 즉&rsquo;, 어떤 표준에 의해 승리.</p>
+
+
+  <h2>관련 콘텐츠</h2>
+
+
+  <p><a href="https://channel9.msdn.com/Blogs/Seth-Juarez/Security-testing-in-the-cloud-with-F-and-Project-Springfield" target="_blank">F# 및 Project Springfield를 사용하여 클라우드에서 보안 테스트</a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/" target="_blank">Azure Resource Manager 개요</a></p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/dotnet/2016/12/13/project-springfield-a-cloud-service-built-entirely-in-f/" target="_blank">Project Springfield: F에서 완전히 빌드된 클라우드 서비스 #</a></p>
+
+
+  <p><a href="https://www.microsoft.com/springfield" target="_blank">한눈에 보는 Project 스프링필드</a></p>
+
+
+  <p><a href="https://www.microsoft.com/en-us/research/project/project-springfield/" target="_blank">Project 스프링필드 팀</a></p>

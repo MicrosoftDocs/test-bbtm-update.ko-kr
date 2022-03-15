@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f0e2da666940c4bdcd5706edbe0213fda5cc5175
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908047"
+Slug: reference-architecture-for-sap-netweaver-and-sap-hana-on-azure
+Title: Azure의 SAP NetWeaver 및 SAP HANA에 대한 참조 아키텍처
+Summary: AzureCAT 패턴 &amp; 사례 팀은 Azure에서 SAP NetWeaver 및 SAP HANA를 배포하고 실행하기 위한 새로운 참조 아키텍처를 게시했습니다.
+Content: >-
+  <p>Azure CAT 패턴 &amp; 사례 팀은 Azure에서 실행되는 SAP 워크로드를 다루는 <a href="https://docs.microsoft.com/azure/architecture/reference-architectures/sap">SAP NetWeaver 및 Azure의 SAP HANA에</a> 첫 번째 참조 아키텍처를 게시했습니다. 다음 항목을 포함하여 Azure에서 SAP HANA를 실행하는 방법에 대한 규범적인 지침을 제공합니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+   <li>권장 사항을 포함하여 배포에 필요한 아키텍처 리소스입니다.</li>
+   <li>확장성 고려 사항.</li>
+   <li>가용성 고려 사항.</li>
+   <li>관리 효율성 고려 사항.</li>
+   <li>보안 고려 사항</li>
+  </ul>
+
+
+  <p><a href="https://aka.ms/architecture">Azure 아키텍처 센터에서</a> 찾을 수 있는 모든 참조 아키텍처와 마찬가지로 참조 아키텍처를 배포하는 PowerShell 스크립트 및 Azure Resource Manager 템플릿 집합을 제공합니다. 이 배포 시간은 약 2시간이므로 이전에는 며칠이 소요되었던 작업을 간단하게 수행할 수 있습니다.</p>
+
+
+  <p>이 참조 아키텍처는 일반적으로 프로덕션 환경에서 사용되는 <a href="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/vpn">하이브리드 VPN 참조 아키텍처</a> 에서 확장됩니다. 그러나 이 참조 아키텍처는 하이브리드 VPN 리소스를 배포하지 않습니다. 대신 클라우드에서 VPN 게이트웨이를 제외한 모든 항목을 배포합니다. 따라서 프로덕션 환경에서 SAP HANA 참조 아키텍처를 구현하려는 경우 먼저 하이브리드 VPN 참조 아키텍처를 배포하는 것이 좋습니다. 그런 다음 VPN&rsquo;으로 구성된 가상 네트워크에 SAP HANA 참조 아키텍처를 배포할 수 있습니다.</p>
+
+
+  <p>참조 아키텍처를 검토하고, 배포를 시도하며, GitHub 이 아키텍처 및 기타 참조 아키텍처에 기여하도록 초대합니다.</p>
+
+
+  <p><b>참고</b>: SAP에 대한 컴퓨팅 요구 사항은 온-프레미스 또는 클라우드에서 실행되는 많은 워크로드보다 훨씬 높습니다. 이 작업을 배포하는 경우 전체 배포에서 49개의 코어를 사용합니다. 따라서 타이어를 걷어차는 경우&rsquo; 청구서에 대한 놀라움을 피하기 위해 완료되면 가상 머신을 종료해야 합니다.</p>
+
+
+  <p>결과 구성은 다음과 같습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/21e29577-7094-4c28-b0a2-06dc2427d9d9.png"><img alt="image" border="0" height="441" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ccd11075-37eb-4be3-8c21-527a91604087.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="1024"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>배포된 리소스는 다음과 같이 SAP HANA에 맞게 조정되었습니다.</p>
+
+
+  <ul style="margin-left: 40px;">
+   <li>VM SKU는 중소 규모의 SAP 배포에 대해 유효성을 검사했습니다.</li>
+   <li>VM 컴퓨터 이름은 SAP 요구 사항에 따라 설정됩니다.</li>
+   <li>.NET 3.5는 SIOS DataKeeper에 필요한 대로 SCS 머신에 대해 로드됩니다.</li>
+   <li>10초 간격과 30초 유휴 상태로 TCP 59999에 대해 상태 프로브가 설정되었습니다.</li>
+   <li>관리 목적으로 jumpbox가 배포되었습니다.</li>
+  </ul>

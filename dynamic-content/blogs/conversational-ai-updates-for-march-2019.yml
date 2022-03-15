@@ -1,0 +1,189 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cdbfd93347b22f0f37140c35cb5255e46d4275f2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907845"
+Slug: conversational-ai-updates-for-march-2019
+Title: 2019년 3월 대화형 AI 업데이트
+Summary: 'Bot Framework SDK 버전 4.3의 릴리스를 공유하고 이 기회를 사용하여 Microsoft의 대화형 AI 릴리스에 대한 추가 업데이트를 제공할 수 있게 되어 기쁩니다. '
+Content: >-
+  <p>Bot Framework SDK 버전 4.3의 릴리스를 공유하고 이 기회를 사용하여 Microsoft의 대화형 AI 릴리스에 대한 추가 업데이트를 제공할 수 있게 되어 기쁩니다.</p>
+
+
+  <h2>새 LINE 채널</h2>
+
+
+  <p>Microsoft Bot Framework 통해 사용자가 어디에 있든 사용자와 연결할 수 있습니다. Skype, Microsoft Teams, Slack, Facebook Messenger, Telegram, Kik 등과 같은 인기 있는 메시징 앱을 포함하여 13개의 지원되는 채널을 제공합니다. 개발자 커뮤니티의 의견을 듣고 LINE을 새 채널로 추가하는 가장 자주 요청하는 기능 &ndash; 중 하나를 해결했습니다. LINE은 일본, 대만, 태국, 인도네시아 및 기타 국가에서 수억 명의 사용자가 있는 인기 있는 메시징 앱입니다.</p>
+
+
+  <p>새 채널에서 봇을 사용하도록 설정하려면 봇을 &ldquo; LINE &rdquo; 지침<a href="https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-line" target="_blank">에 커넥트</a> 따릅니다. Azure Portal에서 봇으로 이동할 수도 있습니다. 채널 블레이드로 이동하여 LINE 아이콘을 클릭한 다음 해당 지침에 따릅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5f294b94-e530-4390-a189-20de85bd6d24.png"><img alt="Channels blade in the Microsoft Azure portal " border="0" height="958" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f5306a35-7f16-499e-aa03-814032652478.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="채널 블레이드 " width="1418"></a></p>
+
+
+  <h2>SDK 4.3</h2>
+
+
+  <p>4.3 릴리스에서 팀은 메시지 및 활동 처리를 개선하고 단순화하는 데 집중했습니다. <a href="https://github.com/Microsoft/BotBuilder/blob/master/specs/botframework-activity/botframework-activity.md" target="_blank">Bot Framework 활동 스키마</a>는 봇에 대한 상호 작용 모델을 정의하는 데 사용되는 기본 스키마입니다. 4.3 릴리스에서는 Bot Framework 활동 스키마에서 일부 작업 형식의 처리를 간소화하여 간단한 On* 메서드를 노출하여 이러한 활동의 사용을 간소화했습니다. C#의 경우 활동 처리 개선 사항 외에, 개발자가 표준 ASP.NET 핵심 애플리케이션 및 ApiController를 사용할 수 있도록 MVC 지원을 추가했습니다. 릴리스와 마찬가지로 <a href="https://github.com/Microsoft/botbuilder-dotnet/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+label%3A4.2+label%3Abug" target="_blank">여러 버그를</a> 수정하고 LUIS 및 QnA 통합을 계속 개선하며 엔지니어링 사례를 더욱 정리했습니다. 언어, 프롬프트 및 대화 상자, 커넥터 및 어댑터와 같은 다른 영역에서 추가 업데이트가 있었습니다.</p>
+
+
+  <ul>
+   <li>자세한 변경 로그에서 4.3에 들어간 모든 <a href="https://github.com/Microsoft/botbuilder-dotnet/releases/tag/4.3" target="_blank">변경 내용을 검토합니다</a>.</li>
+   <li><a href="https://github.com/Microsoft/botbuilder-dotnet/issues?utf8=%E2%9C%93&amp;q=is%3Aissue+label%3A4.2+label%3Abug" target="_blank">모든 문제의 현재 목록을</a> 최신 상태로 유지합니다.</li>
+  </ul>
+
+
+  <h3>활동 메시지 처리 간소화</h3>
+
+
+  <p>이 릴리스에서는 <strong>ActivityHandler</strong>라는 새 클래스를 통해 들어오는 메시지를 처리하는 새로운 방법을 소개합니다. ActivityHandler는 Bot Framework 활동 스키마에 정의된 대로 들어오는 활동을 수신한 다음, 활동 유형 및 기타 속성에 따라 하나 이상의 처리기 함수에&rsquo; 각 작업의 처리를 위임합니다. 예를 들어 ActivityHandler는 다음과 같은 메서드를 노출합니다.</p>
+
+
+  <ul>
+   <li>들어오는 모든 메시지를 처리하기 위한 OnMessage &ndash;</li>
+   <li>OnMembersAdded &ndash; 추가 중인 멤버를 나타내는 메시지 처리</li>
+   <li>OnEvent &ndash; 일반 이벤트 활동</li>
+  </ul>
+
+
+  <p><a href="https://github.com/Microsoft/botbuilder-js/blob/master/libraries/botbuilder-core/src/activityHandler.ts" target="_blank">ActivityHandler.ts</a>(JavaScript용) 및 <a href="https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/ActivityHandler.cs" target="_blank">ActivityHandler.cs</a>(.NET의 경우)에서 모든 메서드를 찾을 수 있습니다.</p>
+
+
+  <p>개발자는 ActivityHandler를 사용하여 들어오는 메시지, 애플리케이션 이벤트 및 다양한 대화 업데이트 이벤트에 대한 이벤트를 처리할 수 있습니다. 이렇게 하면 인사말을 보내고 사용자를 환영하는 것과 같은 일반적인 봇 동작을 더 쉽게 만들 수 있습니다.</p>
+
+
+  <p>이 클래스는 이벤트 기반 방식으로 들어오는 활동을 처리하기 위한 확장 가능한 기반을 제공합니다. JavaScript 및 TypeScript에서 기본 ActivityHandler 클래스는 아래 예제 코드와 같이 기본 작업 처리기로 직접 사용할 수 있습니다. 개발자는 서브클래스를 파생하여 핵심 기능을 확장할 수도 있습니다.</p>
+
+
+  <p>다음은 작은 JavaScript 코드 조각 예제입니다.</p>
+
+
+  <pre>
+
+  // Import the class from botbuilder sdk
+
+  const { ActivityHandler } = require(&#39;botbuilder&#39;);
+
+  // Create the bot &ldquo;controller&rdquo; object
+
+  const bot = new ActivityHandler();
+
+  server.post(&#39;/api/messages&#39;, (req, res) =&gt; {
+        adapter.processActivity(req, res, async (context) =&gt; {
+            // Route incoming activities to the ActivityHandler via the run() method
+            await bot.run(context);
+        });
+  });
+
+  // bind a handler for all incoming activities of type message
+
+  bot.onMessage(async (context, next) =&gt; {
+        // do stuff
+        await context.sendActivity(`Echo: ${ context.activity.text }`);
+        // proceed with further processing
+        await next();
+  });
+
+  // say hello when new members join
+
+  bot.onMembersAdded(async(context, next) =&gt; {
+
+  await context.sendActivity(&#39;Hello! I am a bot!&#39;);
+
+  await next();
+
+  });
+
+  </pre>
+
+
+  <h3>.NET 개발자를 위한 Web API 통합</h3>
+
+
+  <p>Bot Framework 팀의 핵심 테넌트는 .NET 및 JS 구현에서 패리티를 구동하는 것입니다. 이러한 측면에서 <a href="https://github.com/Microsoft/botbuilder-dotnet/blob/master/libraries/Microsoft.Bot.Builder/ActivityHandler.cs" target="_blank">ActivityHandler.cs</a> 의 .NET 구현은 지정된 특수 프로그래밍 언어 기능과 동일한 기능을 노출합니다. 그러나 ASP.NET Core 봇 개발자가 쉽게 통합하고 사용할 수 있는 Web API를 지원하는 다양한 인프라 집합을 제공합니다. 따라서 C#의 경우 활동 처리 개선 사항 외에도 개발자가 표준 ASP.NET 핵심 애플리케이션 및 ApiController를 사용할 수 있도록 Web API 지원을 추가했습니다.</p>
+
+
+  <p>다음은 ASP.NET Web API 컨트롤러에 대한 간단한 코드 조각입니다.&nbsp;</p>
+
+
+  <pre>
+
+  [Route(&quot;api/messages&quot;)]
+       [ApiController]
+       public class BotController : ControllerBase
+       {
+           private IBotFrameworkHttpAdapter _adapter;
+           private IBot _bot;
+
+          public BotController(IBotFrameworkHttpAdapter adapter, IBot bot)
+           {
+               _adapter = adapter;
+               _bot = bot;
+           }
+
+          [HttpPost]
+           public async Task PostAsync()
+           {
+               // Delegate the processing of the HTTP POST to the adapter.
+               // The adapter will invoke the bot.
+               await _adapter.ProcessAsync(Request, Response, _bot);
+           }
+       }
+  </pre>
+
+
+  <p>_bot _adapter 전달됩니다. ProcesAsync 메서드는 실제 봇 구현이며 위의 JS 샘플과 매우 유사한 코드가 있는 어댑터에서 보낸 모든 작업을 처리합니다.</p>
+
+
+  <h2>QnA Maker 및 Language Understanding</h2>
+
+
+  <p>QnA Maker는 개발자가 실제 사용에 따라 기술 자료를 개선하는 데 도움이 되는 <a href="https://azure.microsoft.com/en-au/blog/qna-maker-simplifies-knowledge-base-management-for-your-q-a-bot/" target="_blank">Active Learning</a> 릴리스했습니다. 활성 학습은 질문에 대한 질문 변형을 식별하고 권장하는 데 도움이 되며 사용자가 기술 자료에 쉽게 추가할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec3bdad8-9564-4b88-8eaf-2d3fb863de99.png"><img alt="QnA Maker Active Learning" border="0" height="390" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac725942-b5c6-4b28-8ccf-c3062c541933.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="QnA Maker Active Learning" width="1429"></a></p>
+
+
+  <p>사용자 쿼리의 경우 QnA Maker가 신뢰도 점수의 차이가 낮은 상위 N개의 답변을 반환하면 활성 Learning 트리거됩니다. 사용자 전체의 집단 피드백에 따라 QnA Maker는 기술 자료에서 대체 질문에 대한 제안을 표시합니다.</p>
+
+
+  <p>QnA Maker Active Learning 작동 방식 및 사용 방법에 대해 자세히 알아보려면 설명서를 &ldquo; 읽고 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/improve-knowledge-base" target="_blank">활성 학습을 사용하여 기술 자료를 개선합니다</a>.&rdquo;</p>
+
+
+  <h2>템플릿 및 Virtual Assistant 솔루션 가속기</h2>
+
+
+  <p>템플릿 및 솔루션 가속기는 대화형 AI, 음성 및 광범위한 Azure 플랫폼에 대한 높은 성장 기회를 식별하는 메커니즘을 제공합니다. 이를 통해 고객과 파트너는 일반적으로 가능한 것으로 보지 않거나 고품질 환경을 제공하기 위해 너무 많은 노력이 필요하지 않은 고급 변환 대화 환경의 전달을 가속화할 수 있습니다.</p>
+
+
+  <p>이 최신 릴리스에서는 템플릿 및 Virtual Assistant 솔루션에 대한 중요한 업데이트를 제공했습니다. 변경 내용에 대한 대략적인 요약은 <a href="https://github.com/Microsoft/AI/releases/tag/0.3" target="_blank">릴리스 정보</a>에서 다룹니다.</p>
+
+
+  <p>Yeoman 생성기와 함께 Enterprise 템플릿의 <a href="https://github.com/Microsoft/AI/tree/master/templates/Enterprise-Template/src/typescript/generator-botbuilder-enterprise" target="_blank">JavaScript(Typescript) 버전의</a> 가용성을 공유하게 되어 기쁩니다. Virtual Assistant 해당하는 작업을 시작했습니다. 또한 Weve&rsquo;는 템플릿에서 만든 모든 봇에 코딩된 단위 테스트를 추가하여 원격 분석 기능 및 관련 PowerBI 대시보드에 대한 향상된 기능과 함께 대화의 단위 테스트를 자동화하는 방법을 제공합니다.</p>
+
+
+  <p>또한 Weve&rsquo;는 기술을 빠르게 만들고 Virtual Assistant 추가할 수 있는 새로운 템플릿을 포함하여 Virtual Assistant 및 기술에 다양한 변경 사항을 제공했습니다. 또한 자동 관리 환경에 대한 새로운 지원이 있어 도우미 및 기술이 사용자에게 사전에 연락하거나 장기 실행 비동기 작업을 수행할 수 있습니다.</p>
+
+
+  <p>또한 이 릴리스에서는 전자 메일, 일정, 할 일&nbsp; 등 생산성 기술에 대한 광범위한 개선 사항과 관심 지점 기술에 FourSquare 지원이 추가되고 WebChat 테스트 환경이 향상되었습니다.</p>
+
+
+  <h2>웹 채팅 4.3</h2>
+
+
+  <p>웹 채팅은 개발자가 웹 사이트 또는 모바일 앱에서 봇에 대한 메시징 인터페이스를 추가할 수 있는 인기 있는 구성 요소입니다. 웹 채팅 4.3 릴리스는 네트워크 연결이 좋지 않은 사용자의 연결 상태를 더 잘 나타내는 등 나머지 접근성 문제 및 인기 있는 기능 요청을 해결합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d073d165-69ae-4e45-a086-d4c17937b433.png"><img alt="Chat box in Web Chat 4.3" border="0" height="73" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c6f35a88-8fff-47a8-87fe-95720528980c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="웹 채팅 4.3" width="359"></a></p>
+
+
+  <p>웹 채팅 4.3을 사용하려면 <a href="https://github.com/Microsoft/BotFramework-WebChat/" target="_blank">GitHub 지침을</a> 따르거나 <a href="https://github.com/Microsoft/BotFramework-WebChat/blob/master/SAMPLES.md" target="_blank">코드 샘플을</a> 탐색합니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>대화형 AI 도구 및 프레임워크를 지속적으로 개선함에 따라 고객을 위해 어떤 대화형 환경을 구축할지 기대합니다. <a href="https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0" target="_blank">오늘 시작</a>하세요!</p>

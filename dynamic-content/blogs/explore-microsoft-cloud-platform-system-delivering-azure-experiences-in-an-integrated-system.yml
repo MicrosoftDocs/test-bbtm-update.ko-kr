@@ -1,0 +1,38 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 292ba587bf37f8713180be49b275fa32b1601ab4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901246"
+Slug: explore-microsoft-cloud-platform-system-delivering-azure-experiences-in-an-integrated-system
+Title: Microsoft Cloud Platform System 살펴보기 - 통합 시스템에서 Azure 환경 제공
+Summary: BRK2260 세션 "Microsoft Cloud Platform System 살펴보기 – 통합 시스템에서 Azure 환경 제공"에 참여하여 하이브리드 클라우드 비전, 새로운 개발 및 IT 조직이 퍼블릭 및 프라이빗 클라우드 인프라를 최대한 활용하도록 지원하는 새로운 가능성에 대해 모두 알아보세요.
+Content: >-
+  <p>예정된 Ignite 여행을 준비하고 있나요? 기존 가상화된 환경의 무결성을 깨뜨리지 않고 CPS(Microsoft Cloud Platform System)를 통해 클라우드를 시작하는 데 어떤 도움을 줄 수 있는지 알아볼 준비가 되셨나요? BRK2260 세션에 참여하여 <a href="https://myignite.microsoft.com/sessions/22109">통합 시스템에서&rdquo; Azure 환경을 제공하는 Microsoft Cloud Platform System &ndash; 을 살펴보고 하이브리드 클라우드 비전, 새로운 개발 및 IT 조직이 퍼블릭 및 프라이빗 클라우드 인프라를 최대한 활용하도록 지원하는 새로운 가능성에 대해 알아봅니다.&ldquo;</a> 또한&nbsp; 현재 Microsoft의 다양한 기술을 활용하여 클라우드 경험을 시작하고 미래에 맞게 투자를 계획하는 방법에 대해서도 알아봅니다. 세션의 일부로, Wed&rsquo;는 CPS뿐만 아니라 모범 사례를 기반으로 하는 몇 가지 실제 고객 예제 및 사용 사례에 대해서도 공유하려고 합니다.</p>
+
+
+  <p>내 이름은 Azure Stack 팀의 프로그램 관리자인 Cheng Wei입니다. 그리고 내 동료 월터 올리버 &amp; 존 해스킨과 함께, 우리는 Ignite에서이 모든 흥미로운 주제에 당신과 함께 공유 기다릴 수&rsquo; 없어 당신의 마음에 뜨거운 무엇을&rsquo; 듣고 싶어요 그리고 당신은이 주제에 대해 우리와 함께 논의하고 싶은 것을 듣고 싶어요.</p>
+
+
+  <p>세션 중에 다음 영역에 대한 의견을 들을 수 있습니다.</p>
+
+
+  <ul>
+   <li>Microsofts&rsquo; 하이브리드 클라우드 비전 설명</li>
+   <li>CPS 제품군(CPS Premium 및 CPS 표준) 소개</li>
+   <li>WAP/CPS 및 Azure Stack의 기존 전략 및 환경 설명</li>
+   <li>WAP를 Azure Stack에 연결한 후 환경 데모</li>
+  </ul>
+
+
+  <p>이 세션의 모든 well&rsquo; 공유는 Technical Preview 2 릴리스에서 사용할 수 없습니다. 따라서 지금 WAP/CPS를 사용하여 클라우드 투자를 계속하고 내년에 출시될 때&rsquo; Azure Stack과 연결하는 방법에 대한 데모를 알아보고 이 기회를 놓치지 마세요&rsquo;!</p>
+
+
+  <p>다시 말하지만, Ignite에 오는 경우&rsquo;, 우리는 당신이보고이 세션에서 듣고 싶은 다른&rsquo; 것이 있는지, 또는 당신이 우리와 함께 논의를 시작하고 싶은 특정 질문이있는 경우, 우리는 당신의&rsquo; 생각을 듣고 싶어요&#39;. 이 항목 및 <a href="https://twitter.com/AzureStack">@AzureStack</a> 기타 Microsoft Azure Stack 세션 항목에 대한 추가 업데이트를 위해 자유롭게 <a href="https://twitter.com/cheng__wei">@cheng__wei</a><a href="https://twitter.com/walterov">@walterov</a>팔로우하세요.</p>
+
+
+  <p>감사하고 여러분 중 일부를 만날 수 있기를 기대합니다 <a href="https://twitter.com/MS_Ignite">@MS_Ignite</a>!</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/840af4ed-c156-4dc2-b5ce-5ff399051cb0.png"><img alt="AzureStack_Ignite" border="0" height="364" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/349d112a-5d4f-45b1-aef0-627b9cb59218.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="AzureStack_Ignite" width="480"></a></p>

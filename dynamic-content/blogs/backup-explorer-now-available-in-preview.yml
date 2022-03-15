@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 24920b017d67acf215fd889bb064097c818a9e33
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908578"
+Slug: backup-explorer-now-available-in-preview
+Title: 이제 미리 보기로 사용할 수 있는 백업 탐색기
+Summary: 오늘 백업 탐색기의 미리 보기를 공유하게 되어 기쁘게 생각합니다. Backup Explorer는 Azure의 전체 백업 자산에서 실시간 모니터링을 수행하기 위한 단일 창을 사용할 수 있는 기본 제공 Azure Monitor 통합 문서입니다. Azure Resource Graph 및 Azure 통합 문서와의 네이티브 통합을 통해 추가 비용 없이 완전히 기본 제공됩니다.
+Content: >-
+  <p>조직에서 IT 및 클라우드 사용을 계속 확장함에 따라 중요한 엔터프라이즈 데이터를 보호하는 것이 매우 중요해집니다. 또한 Microsoft Azure 백업 관리자인 경우 조직에서 마지막 방어선에 약점이 없도록 하기 위해 매일 백업을 효율적으로 모니터링할 수 있어야 합니다.</p>
+
+
+  <p>지금까지 Recovery Services 자격 증명 모음을 사용하여 연결된 작업, 정책 및 경고와 함께 해당 자격 증명 모음 아래에 백업되는 항목의 조&rsquo;감도를 가져올 수 있습니다. 그러나 백업 자산이 구독, 지역 및 테넌트에 걸쳐 여러 자격 증명 모음에 걸쳐 확장됨에 따라 이 자산을 실시간으로 모니터링하는 것은 사소한 작업이 되므로 사용자 지정을 직접 작성해야 합니다.</p>
+
+
+  <p>전체 백업 자산에 걸쳐 정보를 단일 창으로 집계하여 에너지를 어디에 집중할지 정확하게 파악할 수 있는 더 간단한 방법이 있다면 어떨까요?</p>
+
+
+  <p>오늘 백업 탐색기의 미리 보기를<strong> </strong>공유하게 되어 기쁘게 생각합니다. Backup Explorer는 Azure의 전체 백업 자산에서 실시간 모니터링<strong></strong>을 수행하기 위한 단일 창을 사용할 수 있는 기본 제공 Azure Monitor 통합 문서입니다. <a href="https://azure.microsoft.com/features/resource-graph/" target="_blank">Azure Resource Graph</a> 및 <a href="https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks" target="_blank">Azure 통합 문서</a>와의 네이티브 통합을 통해 추가 비용 없이 완전히 기본 제공됩니다.</p>
+
+
+  <h2>주요 이점</h2>
+
+
+  <p>1) 백업 탐색기를 사용하는 대규모 보기 <strong> </strong>&ndash; 에서 모니터링은 더 이상 Recovery Services 자격 증명 모음으로 제한되지 않습니다. 백업 관점에서 전체 공간에 대한 집계 보기를 볼 수 있습니다. 여기에는 백업 항목에 대한 정보뿐만 아니라 백업을 위해 구성되지 않은 리소스도 포함되므로 증가하는 자산에서 중요한 데이터를 보호하는 것을 놓치지 않도록&rsquo; 합니다. <a href="https://azure.microsoft.com/services/azure-lighthouse/">Azure Lighthouse</a> 사용자인 경우 여러 테넌트에서도 이 모든 정보를 볼 수 있으므로 경계가 없는 모니터링이 가능합니다.</p>
+
+
+  <p>2) 심층 드릴다운<strong> </strong>&ndash; 백업 항목, 작업, 경고 또는 정책 등 백업 관련 아티팩트에서 집계된 뷰와 매우 세분화된 데이터 간에 빠르게 전환할 수 있습니다.</p>
+
+
+  <p>3) 빠른 문제 해결 및 실행 가능성<strong> </strong>&ndash; 대규모 보기 및 심층 드릴다운은 백업 관련 문제의 근본 원인을 파악하는 데 도움이 되도록 설계되었습니다. 문제를 식별한 후에는 백업 탐색기에서 바로 백업 항목 또는 Azure 리소스로 원활하게 이동하여 작업을 수행할 수 있습니다.</p>
+
+
+  <p>Backup Explorer는 현재 Azure Virtual Machines에 대해 지원됩니다. 다른 Azure 워크로드에 대한 지원은 곧 추가될 예정입니다.</p>
+
+
+  <p>Azure Backup에서 Backup Explorer는 모든 고객에 대해 엔터프라이즈에서 준비된 대규모 관리 환경을 활성화하는 전체 목표의 한 부분일 뿐입니다.</p>
+
+
+  <h2>시작하기</h2>
+
+
+  <p>Backup 탐색기 사용을 시작하려면 Recovery Services 자격 증명 모음으로 이동하여 빠른 링크 섹션에서 Backup Explorer를 클릭하기만 하면 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9b5c4e3-4d27-46f3-a5e8-7ad8411ba537.jpg"><img alt="Backup Explorer link in Recovery Services Vault" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f68dd946-126d-46ef-a94a-c336a605aa9b.jpg" style="border: 0px; border-image: none; width: 1024px; height: 693px; background-image: none; display: inline;" title="clip_image002"></a></p>
+
+
+  <p>액세스할 수 있는 모든 자격 증명 모음, 구독 및 테넌트에 대한 보기를 제공하는 Backup Explorer로 리디렉션됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/baa73ce9-bbd4-4dc2-b55d-74e6f206a0f2.jpg"><img alt="Summary tab of Backup Explorer" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3c600c69-9e38-4352-bebd-1663788a7220.jpg" style="border: 0px; border-image: none; width: 1024px; height: 471px; background-image: none; display: inline;" title="clip_image004"></a></p>
+
+
+  <h2>추가 정보</h2>
+
+
+  <p>다양한 사용 사례를 해결하기 위해 다양한 탭을 활용하는 방법에 대한 자세한 내용은 <a href="https://aka.ms/AzureBackupExplorerDocs" target="_blank">Backup 탐색기 설명서를</a> 참조하세요.</p>

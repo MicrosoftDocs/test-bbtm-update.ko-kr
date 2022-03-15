@@ -1,0 +1,131 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b40c401feab63e946800318d1fe6348dfeec098c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900929"
+Slug: sap-software-support-on-azure-now-on-bigger-vm-sizes
+Title: 'Azure의 SAP 소프트웨어 지원: 이제 더 큰 VM 크기로'
+Summary: 이제 Microsoft와 SAP는 Azure Virtual Machines의 대규모 VM 크기에 지원을 추가합니다.
+Content: >-
+  올해 초 Microsoft와 SAP는 Azure의 SAP NetWeaver 애플리케이션, 특히 SAP Business Suite 및 SAP HANA(Developer Edition)에 대한 지원을 발표<a href="https://azure.microsoft.com/blog/2014/05/28/sap-applications-certified-on-azure/" target="_blank">했습니다.</a> 지금까지 A5 VM에서만 SAP 애플리케이션을 실행할 수 있습니다. 이러한 제한으로 소규모 SAP 시스템에만 사용이 효과적으로 제한되었습니다. 오늘부터 Microsoft와 SAP는 표준 계층에서 더 크고 증가한 Azure 가상 머신 크기 집합(높은 메모리 및 높은 컴퓨팅 크기 포함)을 지원할 것이라고 발표하게 되어 기쁩니다.
+
+
+  더 다양한 Azure 가상 머신에 대한 제안은 SAP 사용자에게 사용 가능한 모든 VM 크기로 워크로드를 실행할 수 있는 유연성을 제공할 것으로 예상됩니다. <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/" target="_blank">A 시리즈 및 D 시리즈</a> VM에서 Azure Virtual Machines를 지원하면 고객이 Azure에서 실행되는 SAP 시스템에 적합한 솔루션을 찾을 수 있습니다.
+
+
+  아래 표에서는 현재 이러한 크기 중 일부에 대해 게시한 벤치마크 결과와 함께 지원하는 표준 계층 VM 크기의 전체 목록을 보여 줍니다 <a href="https://www.sap.com/benchmark">https://www.sap.com/benchmark</a>. 이러한 VM과 관련된 정확한 SAP 크기 조정 정보는 SAP 참고: 1928533 – Azure의 SAP 애플리케이션: 지원되는 제품 및 Azure VM 유형(SAP 로그온 필요)을 참조하세요.
+
+
+  &nbsp;
+
+  <table width="550" border="1" cellspacing="0" cellpadding="2">
+
+  <tbody>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="131"><strong><span style="text-decoration: underline;">VM 유형</span></strong></td>
+
+  <td style="text-align: center;" valign="top" width="274"><strong><span style="text-decoration: underline;">VM 크기(CPU, 메모리)</span></strong></td>
+
+  <td style="text-align: center;" valign="top" width="143"><strong><span style="text-decoration: underline;">VM 계층</span></strong></td>
+
+  </tr>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="137">A5</td>
+
+  <td style="text-align: center;" valign="top" width="278">2 CPU, 14GB</td>
+
+  <td style="text-align: center;" valign="top" width="147">Standard</td>
+
+  </tr>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="140">A6</td>
+
+  <td style="text-align: center;" valign="top" width="276">2 CPU, 28GB</td>
+
+  <td style="text-align: center;" valign="top" width="150">Standard</td>
+
+  </tr>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="141">A7</td>
+
+  <td style="text-align: center;" valign="top" width="274">8 CPU, 56GB</td>
+
+  <td style="text-align: center;" valign="top" width="152">Standard</td>
+
+  </tr>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="142">A8</td>
+
+  <td style="text-align: center;" valign="top" width="273">8 CPU, 56GB</td>
+
+  <td style="text-align: center;" valign="top" width="153">Standard</td>
+
+  </tr>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="142">A9</td>
+
+  <td style="text-align: center;" valign="top" width="272">16 CPU, 112GB</td>
+
+  <td style="text-align: center;" valign="top" width="154">Standard</td>
+
+  </tr>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="142">D11</td>
+
+  <td style="text-align: center;" valign="top" width="272">2 CPU, 14GB</td>
+
+  <td style="text-align: center;" valign="top" width="155">Standard</td>
+
+  </tr>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="141">D12</td>
+
+  <td style="text-align: center;" valign="top" width="271">4 CPU, 28GB</td>
+
+  <td style="text-align: center;" valign="top" width="155">Standard</td>
+
+  </tr>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="141">D13</td>
+
+  <td style="text-align: center;" valign="top" width="271">8 CPU, 56GB</td>
+
+  <td style="text-align: center;" valign="top" width="155">Standard</td>
+
+  </tr>
+
+  <tr>
+
+  <td style="text-align: center;" valign="top" width="141">D14</td>
+
+  <td style="text-align: center;" valign="top" width="271">16 CPU, 112GB</td>
+
+  <td style="text-align: center;" valign="top" width="155">Standard</td>
+
+  </tr>
+
+  </tbody>
+
+  </table>
+
+  SAP에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/campaigns/sap/" target="_blank">Azure의 SAP 페이지를</a> 방문하세요.

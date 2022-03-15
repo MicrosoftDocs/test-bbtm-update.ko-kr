@@ -1,0 +1,81 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b5ebfe1a73c188d0bc5827dcb1dd08c0be230ff2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907694"
+Slug: migrate-to-the-cloud-with-confidence
+Title: 확신을 가지고 클라우드로 마이그레이션
+Summary: 클라우드 마이그레이션 프로젝트를 지원하기 위해 비용을 최적화하고 효율성을 조정하며 타의 추종을 불허하는 보안 및 규정 준수를 제공하는 솔루션에 최선을 다하고 있습니다.
+Content: >-
+  <p>오늘날 조직은 안전과 효율성을 보장하기 위해 비즈니스를 운영하는 방법을 바꾸고 있습니다. 고객과 긴밀히 협력하면서 비즈니스 비용 최적화, 원격 인력 확장 및 비즈니스 연속성 보장을 최우선 과제로 삼고 있습니다. 따라서 클라우드 마이그레이션은 여전히 우선 순위이며 파트너는 중요한 역할을 합니다.</p>
+
+
+  <p>클라우드 마이그레이션 프로젝트를 지원하기 위해 비용을 최적화하고 효율성을 조정하며 타의 추종을 불허하는 보안 및 규정 준수를 제공하는 솔루션에 최선을 다하고 있습니다. 고객이 비용을 절감할 수 있도록 Azure 하이브리드 혜택, 예약 인스턴스 및 무료 확장 보안 업데이트와 같은 <a href="https://azure.microsoft.com/en-us/overview/cost-optimization/#ways-to-optimize" target="_blank">놀라운 제품이</a> 있습니다. 또한 Azure는 Windows Server 및 SQL Server 워크로드에 대한 총 소유 비용을 가장 낮게 제공하며 AWS(<a href="https://gigaom.com/report/sql-transaction-processing-price-performance-testing/" target="_blank">GigaOm1</a><sup></sup>)보다 성능이 최대 3배 향상됩니다.</p>
+
+
+  <p>또한 고객이 전체 IT 자산을 Azure로 마이그레이션하려고 할 때 Azure VMware Solution과 같은 특수 워크로드의 채택이 증가하고 있습니다. 마지막으로, Azure는 이 모든 작업을 유연하게 유지하면서 수행하므로 고객은 온-프레미스 투자를 확장하고 클라우드로 이동할 때 활용할 수 있습니다. 새로운 <a href="https://aka.ms/AzureStackHCIPreviewblog" target="_blank">Azure Stack HCI 미리 보기</a> 는 방금 발표한 한 가지 예입니다.</p>
+
+
+  <p>오늘날 마이그레이션&rsquo;을 가속화하는 데 도움이 되는 새로운 Azure 서비스를 공유합니다.</p>
+
+
+  <h2>새 Azure 인프라 서비스를 활용하여 워크로드를 효율적으로 마이그레이션</h2>
+
+
+  <p>비즈니스 및 예산 요구 사항을 충족하는 것이 최우선 과제입니다. 새로운 컴퓨팅 기능을 활용하여 고객&rsquo; 업무 및 중요 비즈니스용 워크로드를 자신 있는 상태로 마이그레이션합니다. 예를 들어 범용 및 메모리 집약적 워크로드를 위해 Intel 2세대 Intel Xeon Platinum(Cascade Lake) 프로세서를 갖춘 <a href="https://azure.microsoft.com/en-us/blog/new-general-purpose-and-memoryoptimized-azure-virtual-machines-with-intel-now-available/" target="_blank">새로운 Azure VM</a>을 사용할 수 있습니다. 이러한 VM 시리즈는 이전 세대에 비해 CPU 성능이 최대 20% 향상되고 코어당 전체 가격 성능이 향상됩니다. 또한 미리 보기&mdash;에서 VMscurrently&mdash;의 새 범주를 도입했습니다. 로컬 임시 디스크가 포함되지 않기 때문에 항목 가격을 낮춥니다.</p>
+
+
+  <p>또한 확장성(최대 96vCPU)을 제공하는 AMD EPYC&trade; 기반 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/dav4-dasv4-series" target="_blank">Dav4</a> 및 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/eav4-easv4-series" target="_blank">Eav4 Azure Virtual Machine</a> 시리즈는 이제 추가 지역에서 일반 공급됩니다. 이러한 새로운 VM 크기를 사용하면 기본 프로세서 기술의 범위가 더 넓어질 수 있습니다. 비용 효율성을 높이고 상당한 런타임 가속을 달성하면서 고객에게 가장 적합한 솔루션을 선택합니다.</p>
+
+
+  <p>Azure Virtual Machines와 함께 블록 스토리지의 혁신은 Azure 기능을 더욱 확장하여 고객이 더 많은 워크로드 및 애플리케이션을 원활하게 클라우드로 마이그레이션할 수 있도록 합니다. <a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-shared-disks-and-new-azure-disk-storage-enhancements/" target="_blank">공유 디스크</a>(현재 일반 공급)를 사용하면 파트너가 온-프레미스 Storage SAN(영역 네트워크)에서 실행되는 SQL Server FCI(장애 조치(failover) 클러스터 인스턴스) 및 엔터프라이즈 애플리케이션과 같은 온-프레미스 클러스터형 애플리케이션을 쉽게 마이그레이션&rsquo;할 수 있는 Azure Disk Storage 있습니다. Azure Private Links 통합(미리 보기)을 통해 디스크 스토리지 보안을 강화하여 VPN(가상 사설망)을 통해 데이터를 안전하게 전송할 수 있습니다. 또한 크기(미리 보기)와 관계없이 디스크 성능을 높일 수 있는 향상된 유연성을 통해 워크로드 요구 사항을 충족하고 비용을 절감할 수 있습니다.</p>
+
+
+  <p>파트너 중 하나인 <a href="https://www.purestorage.com/products/cloud-block-storage/azure-beta-program.html" target="_blank">Pure Storage</a> 공유 디스크를 활용하여 고객이 중요 업무용 애플리케이션을 Azure로 마이그레이션할 수 있도록 자체 클라우드 네이티브 솔루션인 <a href="https://www.purestorage.com/products/cloud-block-storage/azure-beta-program.html" target="_blank">Azure용 Cloud Block Store</a>(현재 베타 미리 보기)를 빌드하는 것입니다. 또한 Azure Private Links 통합을 통해 디스크 스토리지 보안을 강화하여 가상 사설망을 통해 데이터를 안전하게 전송할 수 있습니다.</p>
+
+
+  <p>원격 연결의 확장성 최적화 및 해결은 파트너 및 고객에 대한 최우선 순위입니다. 2018년에 퍼블릭 클라우드에서 처음으로 <a href="https://azure.microsoft.com/en-us/services/virtual-wan/" target="_blank">Azure Virtual WAN</a>을 사용하여 전송 기능을 <a href="https://azure.microsoft.com/en-us/blog/announcing-public-preview-of-azure-virtual-wan-and-azure-firewall/" target="_blank">발표한</a> 이후 분기 네트워크를 빌드할 때 Azure를 활용하는 것에 대한 관심이 빠르게 증가했습니다. 고객에게 필요한 유연성을 제공하기 위해 지난 주에는 Virtual WAN 허브 내에서(미리 보기로) 타사 네트워크 가상 어플라이언스를 호스트하는 기능을 <a href="https://azure.microsoft.com/en-us/blog/running-sdwan-virtual-appliances-natively-in-azure-virtual-wan/" target="_blank">발표</a> 했습니다. <a href="https://aka.ms/barracuda-vwan" target="_blank">Barracuda</a> 는 고객이 기존 투자 및 기술을 활용하면서 성능을 개선하기 위해 Software-Defined SDWAN(Wide Area Network)을 활용할 수 있도록 이 심층 통합의 이점을 가져온 최초의 Virtual WAN 파트너입니다.</p>
+
+
+  <p>또한 5G 네트워크에 연결된 최적화되고 확장 가능한 애플리케이션에서 작업하는 ISV(독립 소프트웨어 공급업체)는 이제 매우 낮은 대기 시간 플랫폼, 모바일 및 연결된 시나리오를 빌드하고 실험할 때 <a href="https://azure.microsoft.com/en-us/blog/microsoft-partners-with-the-industry-to-unlock-new-5g-scenarios-with-azure-edge-zones/" target="_blank">ATT&amp;가 있는 Azure Edge Zones</a>의 새로운 로스앤젤레스 미리 보기 위치를 사용할 수 있습니다.&nbsp; 안전한 대역폭 연결을 활용하려면 얼리 어답터 프로그램에 <a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2FEdgeZones&amp;data=01%7C01%7Cliz.wolk%40rationalcx.com%7Cf6d2058d1d134382db6108d82e563e14%7C03f0126b518e456cbac9346c34f95bd9%7C1&amp;sdata=ggYSJxLQOe%2BzsM%2BS5F2v7zehy17AjjIeX9YLGCRzQ80%3D&amp;reserved=0" target="_blank">등록</a>합니다.</p>
+
+
+  <p>Microsoft는 파트너 관계를 계속 활용하여 Azure를 특수 워크로드 및 비즈니스 애플리케이션 마이그레이션을 위한 가장 좋은 선택으로 만들고 있습니다. 새로운 세대의 <a href="https://azure.microsoft.com/en-us/blog/microsoft-announces-next-evolution-of-azure-vmware-solution/" target="_blank">Azure VMware Solution</a>을 통해 Microsoft는 Azure에서 VMware를 기본적으로 실행하기 위한 더 큰 품질, 안정성 및 혁신을 보장하는 자사 서비스를 제공합니다. Azure는 VMware와 Microsofts&rsquo; 파트너십을 통해 Azure와 VMware 애플리케이션 간의 원활한 통합을 구축했습니다. 애플리케이션을 다시 설계하거나 작업을 재정비하는 데 드는 비용, 노력 또는 위험 없이 기존 온-프레미스 VMware 워크로드를 Azure로 확장하거나 마이그레이션합니다. 따라서 고객은 Azure 서비스를 통해 시간이 지남에 따라 클라우드 효율성을 높이고 애플리케이션을 현대화할 수 있습니다.</p>
+
+
+  <h2>고객이 비용을 최적화하고 자신 있게 마이그레이션할 수 있도록 지원</h2>
+
+
+  <p>클라우드 마이그레이션은 거대한 프로젝트가 될 수 있지만&rsquo;, 여정을 간소화하기 위해 여기에 있습니다. Microsoft는 일류 도구 및 지원을 활용할 수 있도록 마이그레이션 서비스를 지속적으로 업그레이드하고 있습니다. 데이터 센터 평가 및 마이그레이션을 위한 도구의 Microsofts&rsquo; 허브인 <a href="https://azure.microsoft.com/en-us/services/azure-migrate/" target="_blank">Azure Migrate</a>의 새로운 기능은 그 어느 때보다 빠른 여정을 가속화하는 데 도움이 됩니다. 간단한 Azure Migrate 어플라이언스를 사용하거나 CSV 업로드를 통해 인벤토리 정보를 가져와 고객&rsquo; 온-프레미스 환경에서 실행되는 가상 및 물리적 서버를 검색합니다. 검색된 서버 간의 종속성을 더 잘 이해하여 마이그레이션 중에 머신을 그룹으로 수집하고 위험을 최소화할 수 있습니다. 그런 다음 Azure Migrate를 사용하여 가동 중지 시간 없이 서버 그룹을 Azure로 마이그레이션합니다.</p>
+
+
+  <p>영국에 본사를 둔 Microsoft 파트너인 Kainos는 고객인 연금 규제 기관(TPR)을 돕기 위한 핵심 도구로 Azure Migrate를 활용하여 서비스 해제에 직면한 레거시 데이터 센터에서 Azure로 신속하게 마이그레이션했습니다. Azure Migrate를 사용하여 전체 검색을 실행하고 TPR&#39;데이터 센터를 평가한 후 Kainos는 TPRs&rsquo; 서버 자산을 통합하고 300개의 서버를 Azure로 마이그레이션했습니다. 포괄적인 평가로 인해 마이그레이션 중에 문제가 발생하지 않았습니다. Kainos는 TPR&#39;호스팅 비용을 크게 줄이는 동시에 레거시 시스템보다 클라우드에서 TPR을 더 효율적으로 제어할 수 있었습니다.</p>
+
+
+  <p>Azure Migrate 등과 같은 마이그레이션 서비스에 대한 지침을 포함하여 추가 마이그레이션 지원을 위해 고객을 <a href="https://azure.microsoft.com/en-us/migration/migration-program/" target="_blank">Azure Migration Program</a>에 추천합니다. 이 프로그램은 Azure Expert MSP 인증 또는 고급 전문화를 통해 Microsoft&#39;<a href="https://azure.microsoft.com/en-us/partners/" target="_blank">검증된 파트너</a>로부터 무료 및 보조금을 지급하는 Azure 기술 교육, 파트너 자금 지원 및 Azure 엔지니어 및 Microsoft 전문가를 위한 FastTrack 공동 작업할 수 있는 기회를 제공합니다. Azure Migration Program은 다양한 고객 요구를 해결하기 위해 인프라, 데이터 및 애플리케이션에서 마이그레이션 시나리오를 지원합니다.</p>
+
+
+  <p>고객의 요구에&rsquo; 따라 프로그램에 두 가지 새로운 시나리오를 추가합니다.</p>
+
+
+  <ul>
+      <li>온-프레미스 Virtual Desktop 인프라를 Windows Virtual Desktop으로 마이그레이션</li>
+      <li>온-프레미스 .NET 웹앱을 Azure App Service/Azure SQL 마이그레이션합니다.</li>
+  </ul>
+
+
+  <p>파트너는 Azure Migration Program이 <a href="https://customers.microsoft.com/en-us/story/820925-tine-manufacturing-azure" target="_blank">Crayon</a>이 프로그램을 통해 Tine&#39;데이터 센터 마이그레이션 노력을 가속화하는 데 어떻게 도움을 주었는지 고객&rsquo; 클라우드 경험을&mdash; 발전시키는 데 진정한 가속기라고 찾습니다.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>Azure 인프라 제품, 워크로드 파트너십 및 서비스를 통해 마이그레이션은 지난 한 해 동안 엄청난 모멘텀을 모았습니다. 업데이트된 리소스 및 모든 마이그레이션 방향에 대한 <a href="https://azure.microsoft.com/en-us/migration/" target="_blank">Azure Migration Center</a> 를 확인하고 오늘 <a href="https://azure.microsoft.com/en-us/migration/migration-program/" target="_blank">Azure Migration Program</a> 에 고객을 추천합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><i><sup>1 Microsoft</sup>가 의뢰하고 2020년 2월 GigaOm이 실시한 연구의 데이터를 기반으로 한 가격 성과 청구. 이 연구는 Azure E32as_v4 인스턴스 유형의 Windows Server 2019 Datacenter 버전에서 2019년 SQL Server Enterprise Edition P30 Premium SSD 디스크와 SQL Server 2019 Enterprise Edition 간의 가격 성능을 비교했습니다. Windows Server 2019 Datacenter Edition in AWS EC2 r5a.8xlarge instance type with General Purpose (gp2) volumes. 벤치마크 데이터는 인식된 업계 표준 TPC 벤치마크&trade; E(TPC-E)에서 파생된 GigaOm 분석 필드 테스트에서 가져옵니다. 필드 테스트는 전체 TPC-E 벤치마크를 구현하지 않으므로 게시된 TPC-E 벤치마크와 비교할 수 없습니다. 가격은 2020년 1월 현재 Azure Virtual Machines 및 AWS EC2용 북부 캘리포니아의 SQL Server 미국 서부에서 공개적으로 사용할 수 있는 미국 가격 책정을 기반으로 합니다. 가격 책정에는 Azure 및 AWS 컴퓨팅 가격 책정에 대한 3년 예약과 SQL Server 대한 Azure 하이브리드 혜택 및 Windows Server에 대한 Azure 하이브리드 혜택 및 AWS의 SQL Server 라이선스 이동성이 통합되어 있으며 Software Assurance 비용은 제외됩니다. 실제 결과 및 가격은 구성 및 지역에 따라 달라질 수 있습니다.</i></p>

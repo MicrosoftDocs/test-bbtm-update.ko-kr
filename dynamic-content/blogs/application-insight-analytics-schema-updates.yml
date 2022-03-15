@@ -1,0 +1,91 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 203a1361da98f0750cc6ab690ab6f85d19326852
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907945"
+Slug: application-insight-analytics-schema-updates
+Title: 'Application Insight Analytics: 스키마 업데이트'
+Summary: 'Visual Studio Application Insights 강력한 쿼리 언어인 Analytics의 스키마가 향상되었습니다. 메트릭을 performanceCounters 및 customMetrics로 구분했으며, 클라이언트 쪽에서 페이지 로드 데이터를 표시하는 browserTimings를 도입했습니다. '
+Content: >-
+  <p>Visual Studio <a href="https://azure.microsoft.com/documentation/articles/app-insights-overview/">Application Insights</a> 강력한 쿼리 언어인 <a href="https://azure.microsoft.com/documentation/articles/app-insights-analytics-tour/">Analytics</a>의 스키마가 향상되었습니다. &rsquo;Weve는 메트릭을 <b>performanceCounters</b> 및 <b>customMetrics</b>로 분리하고&rsquo;, 클라이언트 쪽에서 페이지 로드 데이터를 표시하는 <b>browserTimings</b>를 도입했습니다. 이러한 변경은 데이터의 검색 가능성을 향상시켜 쿼리를 간소화하고 원격 분석의 새 메트릭 및 차원을 노출합니다.</p>
+
+
+  <p><img alt="image" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94e5487d-c409-4c85-bd11-63acb3bfa41b.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="192"></p>
+
+
+  <h2>performanceCounters 스키마</h2>
+
+
+  <p>이 스키마는 애플리케이션에서 보고되는 성능 카운터를 찾아야 하는 단일 위치입니다. 애플리케이션 Insights SDK에서 성능 카운터를 자동으로 수집하거나 <a href="https://azure.microsoft.com/documentation/articles/app-insights-web-monitor-performance/#system-performance-counters">다른 성능 카운터를 보내도록 애플리케이션을 구성</a>했는지 여부에 관계없이 이 스키마에서 데이터를 찾을 수 있습니다.</p>
+
+
+  <p>예를 들어 보고되는 성능 카운터를 확인하려면 다음을 수행합니다.</p>
+
+
+  <p><img alt="image" border="0" height="320" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a76e6c63-0bbb-4905-b919-0f0fd6a75dd7.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="360"></p>
+
+
+  <p>최근 기간 동안 사용 가능한 메모리의 차트를 가져오려면:</p>
+
+
+  <p><img alt="image" border="0" height="275" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9aa9080c-f301-45d5-8b4f-427dabb0166b.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="480"></p>
+
+
+  <p>performanceCounters 스키마는 각 성능 카운터의 <b>범주</b>, <b>카운터</b> 이름 및 <b>인스턴스</b> 이름을 노출합니다. 카운터 인스턴스 이름은 일부 성능 카운터에만 적용할 수 있으며 일반적으로 개수와 관련된 프로세스의 이름을 나타냅니다. 각 애플리케이션에 대한 원격 분석에서 해당 애플리케이션&rsquo;에 대한 카운터만 표시됩니다. 샘플 원격 분석에서 사용할 수 있는 카운터를 확인해 보겠습니다&rsquo;.</p>
+
+
+  <p><img alt="image" border="0" height="211" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bd54ec75-5cac-404c-b81f-d5667178f552.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="480"></p>
+
+
+  <p>다른 원격 분석과 마찬가지로 <b>performanceCounters</b> 에는 앱이 실행 중인 호스트 컴퓨터의 ID를 나타내는 열 <b>cloud_RoleInstance</b> 있습니다. 예를 들어, 서로 다른 컴퓨터에서 앱의 성능을 비교하려면:</p>
+
+
+  <p><img alt="image" border="0" height="292" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6992ca4c-f7dd-4ad7-828a-48899b9ac8d8.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="480"></p>
+
+
+  <h2>customMetrics 스키마</h2>
+
+
+  <p><a href="https://azure.microsoft.com/documentation/articles/app-insights-api-custom-events-metrics/#track-metric">TrackMetric()</a>을 사용하여 사용자 고유의 원격 분석을&rsquo; 보내는 경우 <b>customMetrics</b> 스키마에서 찾을 수 있습니다. 예를 들면 다음과 같습니다.</p>
+
+
+  <p><img alt="image" border="0" height="324" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a18850d9-61b8-4052-9563-44b1efe7a916.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="480"></p>
+
+
+  <h2>browserTimings 스키마</h2>
+
+
+  <p>마침내 클라이언트 쪽 메트릭을 노출합니다. 여러분 중 많은 사람들이 이것을 요청했으며 귀하의 요청을 지원하게되어 기쁩니다.</p>
+
+
+  <p>이러한 메트릭을 보려면 <a href="https://azure.microsoft.com/documentation/articles/app-insights-javascript/">클라이언트쪽 원격 분석을 위해 앱을 설정</a>합니다.</p>
+
+
+  <p>새 스키마에는 <b>networkDuration, sendDuration</b>, <b>receiveDuration</b>, <b>processingDuration</b> 및 <b>totalDuration</b> 메트릭이 포함됩니다. <b></b> 이러한 메트릭은 <a href="https://azure.microsoft.com/documentation/articles/app-insights-javascript/#page-load-performance">페이지 로드 프로세스의 여러 단계 길이를</a> 나타냅니다. (사용자가 페이지를 읽는 기간을 나타내지 않습니다&rsquo;.)</p>
+
+
+  <p><b>이름은</b> 페이지 이름으로 필터링하는 데 사용할 수 있으며 <b>client_OS</b> 및 <b>client_Browser</b> 같은 속성도 있습니다. 또한 클라이언트 쪽 메트릭을 버킷별로 신속하게 분석하고 그룹화할 수 있는 <b>performanceBucket</b> 속성도 제공합니다.</p>
+
+
+  <p>예를 들어 사이트에서 가장 인기 있는 페이지와 로드하는 데 걸리는 시간을 확인하려면 다음을 수행합니다.</p>
+
+
+  <p><img alt="image" border="0" height="265" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f43a6aed-592f-4a45-9769-5989938e71ee.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="480"></p>
+
+
+  <h2>의견을 알려 주세요.</h2>
+
+
+  <p>이러한 변경 내용이 애플리케이션&rsquo; 사용량 및 성능을 더 잘 이해하는 데 도움이 되기를 바랍니다. 데이터가 있습니다 - 쿼리하기만 하면 됩니다.</p>
+
+
+  <p>언제나처럼 다음 채널 중 하나를 사용하여 질문이나 피드백을 자유롭게 보내주세요.</p>
+
+
+  <ul>
+   <li><a href="https://visualstudio.uservoice.com/forums/357324-application-insights/category/161991-analytics">애플리케이션 Insights 아이디어에서 아이디어 제안 및 투표</a></li>
+   <li><a href="https://social.msdn.microsoft.com/Forums/vstudio/home?forum=ApplicationInsights">애플리케이션 Insights Community 대화에 참여</a></li>
+   <li><a href="https://analytics.applicationinsights.io/demo">Application Analytics 사용해 보기</a></li>
+  </ul>

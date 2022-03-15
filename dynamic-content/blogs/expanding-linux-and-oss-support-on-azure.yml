@@ -1,0 +1,104 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 68cc314dae80950c676395d96e088b3a766ca5fa
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908419"
+Slug: expanding-linux-and-oss-support-on-azure
+Title: Azure에서 Linux 및 OSS 지원 확장
+Summary: 7월 15일부터 Azure의 주요 Linux 배포판, 타사 및 오픈 소스 기술에 대한 제한된 지원의 가용성을 발표하게 되어 기쁘게 생각합니다.
+Content: >-
+  Azure는 Linux 및 오픈 소스 기술을 위한 일류 플랫폼으로, 마켓플레이스, Linux 확장 및 Linux에서 실행되는 HDInsight와 같은 Azure 서비스의 OSS 솔루션 목록이 증가하고 있습니다. 하지만 Azure의 고객 지원은 어떨까요?
+
+
+  과거에 Linux 및 기타 오픈 소스 기술에 대한 Azure 고객 지원은 몇 가지 예외를 제외하고 고객 문제가 Azure 플랫폼에 있는지 여부를 결정하는 데 집중했습니다. 예를 들어 Azure VM에 CoreOS를 설치하는 데 문제가 있거나 Azure의 MySQL 애플리케이션에 성능 문제가 발생한 경우 Azure 플랫폼이 문제가 아닌지 확인한 후 Linux 또는 OSS 공급자와 협력하여 솔루션을 찾도록 지시합니다. 즉, 고객이 리디렉션될 때 잠재적으로 간단한 구성 문제 또는 사용 문제를 해결하는 데 시간이 더 오래 걸릴 수 있습니다.
+
+
+  7월 15일부터 Azure의 주요 Linux 배포판, 타사 및 오픈 소스 기술에 대한 제한된 지원의 가용성을 발표하게 되어 기쁘게 생각합니다.
+
+  <h2>Linux 지원</h2>
+
+  이제 Azure에서 다음 Linux 배포판에 대해 제한된 지원을 제공합니다.
+
+
+  <b>지원되는 Linux 배포</b>
+
+  <ul>
+      <li>Ubuntu</li>
+      <li>CentOS(OpenLogic)</li>
+      <li>Oracle Linux</li>
+      <li>SLES(SUSE Linux Enterprise Server)*</li>
+      <li>OpenSUSE</li>
+      <li>CoreOS</li>
+  </ul>
+
+  *SUSE의 Enterprise 수준 지원은 SUSE 프리미엄 이미지에 이미 포함되어 있습니다. Microsoft는 필요에 따라 고객을 직접 지원하기 위해 SUSE를 참여합니다.
+
+
+  <strong>Linux 지원 범위</strong> 근본 원인으로 Azure 플랫폼 및 서비스를 제거하는 것 외에도 Microsoft는 지원되는 Linux 배포판에 대해 다음과 같은 제한된 지원을 제공합니다.
+
+
+  <strong>설치 및 구성</strong>: Azure 플랫폼 및 서비스에서 지원되는 Linux 배포판의 설치 및 구성에 대한 도움말입니다. 경우에 따라 Microsoft에서 문제를 해결할 수 없는 경우 지원되는 Linux 배포판의 공급업체에 직접 문의해야 합니다. 근본 원인을 격리하는 데 도움이 필요한 경우 사용자 또는 공급업체가 Microsoft와 문제 해결 세션을 시작할 수 있습니다.
+
+
+  <strong>성능 및 네트워킹</strong>: 권장 사항 Azure 플랫폼 및 서비스에 적용할 수 있습니다. 고급 문제 해결 및 성능 튜닝을 위해 지원되는 Linux 배포의 공급업체에 직접 문의해야 합니다. 근본 원인을 격리하는 데 도움이 필요한 경우 사용자 또는 공급업체가 Microsoft와 문제 해결 세션을 시작할 수 있습니다.
+
+
+  <strong>예외:</strong>
+
+  - 보안과 관련된 시나리오는 다루지 않습니다.
+
+  - 아래 OSS 범위에서 다루지 않는 한 Microsoft에서 지원하지 않는 시나리오에 대해 공급업체와 직접 협력하세요. 예를 들어 애플리케이션 개발, 사용자 지정 애플리케이션 및 사용자 지정 코드 문제 해결
+
+  - Azure에서 애플리케이션 또는 솔루션의 디자인, 아키텍처 또는 배포에 대한 지원은 포함되지 않습니다.
+
+  <h2>타사 기술 지원</h2>
+
+  Microsoft는 타사 기술에 대한 제한된 지원도 제공할 것입니다.
+
+
+  <strong>지원되는 타사 기술</strong>
+
+  <ul>
+      <li>언어: PHP, Java, Python</li>
+      <li>데이터베이스: MySQL</li>
+      <li>웹 및 애플리케이션 서버: Apache, Tomcat</li>
+      <li>프레임워크: WordPress</li>
+  </ul>
+
+  &nbsp;
+
+
+  <strong>타사 기술 지원 범위</strong>
+
+
+  근본 원인으로 Azure 플랫폼 및 서비스를 제거하는 것 외에도 다음 시나리오에 대해 지원되는 타사 기술에 대한 제한된 지원을 제공합니다.
+
+  <ul>
+      <li>설치 또는 구성 중에 발생한 문제</li>
+      <li>Azure 플랫폼 및 서비스에 애플리케이션을 배포하려고 할 때 발생하는 배포 오류</li>
+      <li>Azure 플랫폼 및 서비스를 사용할 때 발생하는 런타임 오류</li>
+      <li>Azure 플랫폼 및 서비스를 사용할 때 지원되는 타사 기술을 사용하여 빌드된 애플리케이션의 성능 문제</li>
+  </ul>
+
+  이러한 시나리오와 관련하여 지원을 요청하는 고객은 포럼 및/또는 커뮤니티 지원으로 전달됩니다.
+
+  <ul>
+      <li>디자인 지침</li>
+      <li>개발 지원</li>
+  </ul>
+
+  타사 기술 지원은 영어로 제공되며 미국 업무 시간 동안 제공됩니다. 지원되는 Linux 배포판 및 타사 기술 목록도 주기적으로 수요를 다시 평가하므로 시간이 지남에 따라 변경될 수 있습니다.
+
+
+  이 프로그램에 대한 여러분의 의견을 환영합니다. <a href="mailto:LinuxOnAzureSupport@microsoft.com">LinuxOnAzureSupport@microsoft.com</a>
+
+
+  <strong>추가 리소스</strong>
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-endorsed-distributions/">Azure의 Linux 보증 배포판</a></li>
+      <li>지원 문: <a href="https://support.microsoft.com/en-us/kb/2941892">Microsoft Azure Linux 이미지 지원</a></li>
+      <li>설명서: <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-opensource/">Azure에서 Linux 및 Open-Source 컴퓨팅</a></li>
+  </ul>

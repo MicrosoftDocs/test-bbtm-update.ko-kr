@@ -1,0 +1,307 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e61854b1d942311cc87802f735c31cb2612e4e8e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908616"
+Slug: azure-source-volume-60
+Title: Azure.Source - 볼륨 60
+Summary: Azure Functions 및 App Service를 사용하여 서버리스 및 웹앱에 대한 보안 간소화, Azure Dedicated HSM 가용성 발표, 고객은 Azure Stack을 사용하여 새로운 하이브리드 클라우드 혁신의 잠금을 해제하는 등 훨씬 더 많은 작업을 수행하고 있습니다.
+Content: >-
+  <h2>이제 미리 보기로</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/simplifying-security-for-serverless-and-web-apps-with-azure-functions-and-app-service/">Azure Functions 및 App Service를 사용하여 서버리스 및 웹앱에 대한 보안 간소화</a></h3>
+
+
+  <p>Azure App Service 및 Azure Functions에 대한 새로운 보안 기능은 관리 중인 ID 및 비밀로 작업하는 데 필요한 코드의 양을 줄입니다. Linux/Web App for Containers의 App Service에 대한 애플리케이션 설정, 사용자 할당 관리 ID 및 관리 ID에 대한 Key Vault 참조는 공개 미리 보기로 제공됩니다. 또한 Azure Functions에 대한 ClaimsPrincipal 바인딩 데이터와 CORS 구성에서 Access-Control-Allow-Credentials에 대한 지원을 사용할 수 있습니다. 또한 구성 취약성을 파악하고 해결하거나 위협에&rsquo; 대한 노출을 제한하거나 공격을 감지하여 대응할 수 있는 환상적인 방법을 제공하므로 Azure 리소스 전체에서 보안을 위한 기본 허브로 Azure Security Center에 계속 투자해야 합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/efcee7cc-6d48-4100-af8e-f3016a06ee53.png"><img alt="Screenshot of Key Vault references for Application Settings (now in public preview)" height="227" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/efcee7cc-6d48-4100-af8e-f3016a06ee53.png" title="애플리케이션 설정 대한 Key Vault 참조(공개 미리 보기)" width="600"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/python-package-pypi-support-for-azure-artifacts-now-in-preview/">현재 미리 보기로 Azure Artifacts 대한 Python 패키지(PyPI) 지원</a></h3>
+
+
+  <p>Azure DevOps Services 사용하여 Python 패키지를 게시하고 사용하기 위한 Azure Artifacts 내의 Python 패키지 기능은 현재 공개 미리 보기로 제공됩니다. 이제 프로젝트와 연결된 피드를 만들어 패키지를 저장할 수 있습니다. 꼬기를 사용하여 피드에 Python 패키지를 업로드합니다. flit 지원이 테스트 중입니다. pip를 사용하여 피드에서 패키지 끌어오기; 인증을 간소화하고 퍼블릭 인덱스의 패키지를 피드(업스트림)에 포함하는 작업을 사용하여 Python 패키지를 Azure Pipelines CI/CD에 통합합니다. <a href="https://docs.microsoft.com/en-us/azure/devops/artifacts/quickstarts/python-packages?view=vsts&amp;tabs=new-nav">자습서</a>는 Azure Artifacts 사용하여 라이선스 할당 및 설치를 포함하여 Azure DevOps Services 사용하여 Python 패키지를 사용하고 게시하는 데 사용할 수 있습니다.</p>
+
+
+  <h3>미리 보기로도 제공됩니다.</h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/updates/?status=inpreview">최신 업데이트 가져오기: 미리 보기</a></p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-functions-key-vault-integration/">Azure FunctionsKey&mdash; Vault 통합</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/user-assigned-managed-identity-support-for-app-service-on-linux-web-app-for-containers/">Linux/Web App for Containers의 App Service에 대한 사용자 할당 관리 ID 지원 </a></li>
+  </ul>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/updates/general-availability-zone-redundant-sql-single-databases-and-elastic-pools-are-now-generally-available-in-additional-regions/">일반 공급: 추가 지역의 영역 중복 SQL 데이터베이스 및 탄력적 풀</a></h3>
+
+
+  <p>Azure SQL Database Premium 계층은 지역 내의 동일한 데이터 센터에 자동으로 프로비전되는 각 데이터베이스에 대해 여러 중복 복제본을 지원합니다. 단일 데이터베이스 및 탄력적 풀에 SQL 영역 중복은 이제 서유럽과 South-East 아시아라는 두 개의 추가 지역에서 일반 공급됩니다. 지원되는 지역의 전체 목록은 프랑스 중부, 미국 중부, 서유럽 및 South-East 아시아입니다. 영역 중복 구성은 Premium 및 중요 비즈니스용 서비스 계층의 SQL 데이터베이스 및 탄력적 풀에 사용할 수 있습니다.</p>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/announcing-azure-dedicated-hardware-security-module-availability/">Azure Dedicated HSM 가용성 발표</a></h3>
+
+
+  <p>Microsoft Azure 전용 HSM(하드웨어 보안 모듈) 서비스는 Azure에서 암호화 키 스토리지를 제공하고 가장 엄격한 고객 보안 및 규정 준수 요구 사항을 충족합니다. 이 서비스는 HSM 어플라이언스를 완전하고 독점적으로 제어할 수 있는 FIPS 140-2 수준 3 유효성이 검사된 디바이스가 필요한 고객에게 이상적인 솔루션입니다. Azure Dedicated HSM 서비스는 Gemalto의 SafeNet Luna Network HSM 7 디바이스를 사용합니다. 이 디바이스는 최고 수준의 성능 및 암호화 통합 옵션을 제공하며 HSM으로 보호되는 애플리케이션을 Azure로 간단하게 마이그레이션할 수 있습니다. Azure Dedicated HSM은 단일 테넌트 기준으로 임대됩니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/premium-block-blob-storage-a-new-level-of-performance/">Premium 블록 Blob Storage - 새로운 수준의 성능</a></h3>
+
+
+  <p>현재 제한된 공개 미리 보기 상태인 블록 Blob Storage Premium 퍼블릭 클라우드 개체 스토리지에서 새로운 수준의 성능을 제공합니다. 스토리지 클러스터의 반도체 드라이브 조합과 Blob Storage 소프트웨어의 향상된 기능을 사용하여 높은 처리량과 매우 빠른 응답 시간을 제공합니다. 이 블로그 게시물에서는 표준 블로그 Storage 것보다 최대 40배 더 나은 것으로 입증된 낮고 일관된 대기 시간과 같은 성능 향상 기능 중 일부를 자세히 살펴봅니다.</p>
+
+
+  <p align="center"><img alt="Chart comparing latency between Premium and Standard Blog Storage" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9930264e-9da0-4a93-ad4d-6bccdd0084e7.png" title="Premium 표준 Blob Storage 간의 평균 및 99번째 백분위수 대기 시간 비교"></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/sql-server-on-azure-virtual-machine-resource-provider/">Azure Virtual Machines 리소스 공급자의 SQL Server</a></h3>
+
+
+  <p>이 게시물은 Azure VM에서 SQL Server 특정 구성 및 배포를 처리하기 위해 Azure 클러스터에서 내부적으로 실행되는 관리 서비스인 Microsoft.SqlVirtualMachine이라는 새로운 리소스 공급자를 발표했습니다. SQL VM 리소스 공급자는 SQL Server 메타데이터의 동적 업데이트를 사용하도록 설정하고 SQL Server HADR 아키텍처에 필요한 다중 VM 배포를 오케스트레이션합니다. SQL VM 리소스 공급자를 사용하면 특정 찾아보기 및 모니터링 환경을 SQL Server 수 있습니다. SQL VM 리소스 공급자는 Microsoft.SqlVirtualMachine/SqlVirtualMachine, Microsoft.SqlVirtualMachine/SqlVirtualMachineGroup 및 Microsoft.SqlVirtualMachine/Sql Virtual Machine Groups/Availability Group Listener라는 세 가지 새로운 리소스 유형을 소개합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-hybrid-benefit-for-sql-server-on-azure-virtual-machines/">Azure Virtual Machines의 SQL Server 대한 Azure 하이브리드 혜택</a></h3>
+
+
+  <p>SQL Server 대한 AHB(Azure 하이브리드 혜택)를 사용하면 온-프레미스 라이선스를 사용하여 Azure Virtual Machines에서 SQL Server 실행할 수 있습니다. Software Assurance가 있는 경우 새 SQL VM을 배포할 때 AHB를 사용하거나 PAYG(종량제) 라이선스를 사용하여 기존 SQL VM에 대해 SQL Server AHB를 활성화할 수 있습니다. 이제 위의 게시물에 설명된 SQL VM 리소스 공급자를 사용하여 Azure VM에서 SQL Server AHB를 활성화할 수 있습니다. 새 Microsoft를 사용하여. SqlVirtualMachine 리소스 공급자는 Azure VM에서 SQL 서버 구성을 동적으로 관리할 수 있습니다. 유연한 SQL Server 라이선스 유형 구성은 SQL VM 리소스 공급자와 함께 제공하는 첫 번째 기능이며, SQL VM에 대해 즉각적이고 상당한 비용을 절감할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/the-green-team-solves-high-risk-systemic-security-issues-for-azure/">그린 팀은 Microsoft Azure 대한 위험성이 높고 체계적인 보안 문제를 해결합니다. </a></h3>
+
+
+  <p>보안 위반 가정 전략은 보안 위반 방지에만 집중하는 대신 보안 위반이 발생한다고 가정합니다. 2009년부터 Microsoft 내의 두 그룹인 레드 팀(공격자)은 정기적으로 Azure를 공격하여 보안 구멍을 검색하고 블루 팀(수비수)은 꿀 냄비를 설정하고 공격을 탐지하기 위해 노력하고 있습니다. 녹색 팀은 Azure 플랫폼에 대한 위험 수준이 높고 체계적인 보안 취약성의 클래스를 수정하고 해결하는 데 중점을 둔 전용 리소스로 구성됩니다. 녹색 팀은 Red 및 Blue Teams 긴밀하게 협력하여 위반 &ndash; 을 사용하거나 유발하는 문제에 특히 초점을 맞추고 근본 원인 분석을 수행하여 이러한 문제를 대규모로 식별하고 해결함으로써 위험 수준이 높은 시스템 보안 문제를 &ndash; 파악합니다. 팀은 Azure 플랫폼을 보호하고 고객 데이터 및 워크로드를 보호하는 데 도움이 되는 최신 모범 사례를 지속적으로 구현합니다. 이 게시물을 읽어 Green Team이 Simply Secure를 위해 노력하는 동안 Microsofts&rsquo; 보안 위험 가정 진화에 어떻게 기여하는지 알아보세요.</p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-security-center-update-november/">Azure Security Center 업데이트 - 11월</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/your-own-hardware-security-module-in-the-cloud/">클라우드의 고유한 하드웨어 보안 모듈</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-blockchain-development-kit-integrates-blockchain-with-the-best-of-microsoft-and-azure/">Azure Blockchain Development Kit는 최고의 Microsoft 및 Azure와 블록체인을 통합합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/power-bi-desktop-november-update/">Power BI Desktop 11월 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/power-bi-service-update-2/">Power BI 서비스 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-sql-db-managed-instance-recommendation-for-database-migration-assistant/">데이터베이스 Migration Assistant 대한 Azure SQL DB Managed Instance 권장 사항</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-api-management-update-nov-28-2018/">Azure API Management 업데이트 11월 28일</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/data-factory-supports-service-principal-and-msi-authentications-for-adls-gen2-connector/">Data Factory는 Data Lake Storage Gen2에 대한 서비스 주체 및 MSI 인증을 지원합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/japanese-era-update/">일본어 시대 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/move-to-azure-resource-manager-rest-apis-for-azure-sql-database/">Azure SQL Database에 대한 Azure Resource Manager REST API로 이동</a></li>
+  </ul>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3><a href="https://azpodcast.azurewebsites.net/post/Episode-256-Living-in-a-Serverless-world">에피소드 256 - 서버리스 세계에서의 생활 | Azure 팟캐스트</a></h3>
+
+
+  <p>신시아, Cale 및 Evan은 서버리스 컴퓨팅 및 Azure Functions의 사용 사례에 대해 간담회를 갖고 있습니다. 시나리오를 사용하는 것이 좋을 때와 그렇지 않을 때 시나리오에 대해 자세히 설명합니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode256.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Container-Registry-Tasks-Build-and-deploy-to-Azure-App-Service">Azure Container Registry 작업: Azure App Service | 빌드 및 배포 Azure Friday</a> (500번째 에피소드!)</h3>
+
+
+  <p>Steve Lasker는 Scott Hanselman과 함께 ACR(Azure Container Registry) 작업 및 개발의 세 단계인 사전 커밋, 팀 커밋 및 OS &amp; 프레임워크 패치를 위한 개발 후 Azure에서 컨테이너 이미지를 빌드하는 방법에 대해 설명합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Container-Registry-Tasks-Build-and-deploy-to-Azure-App-Service/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Track-my-Pizza-Cat-van-with-Azure-IoT-solution-accelerators">Azure IoT 솔루션 가속기를 사용하여 피자 캣 밴 추적 | 사물 인터넷 표시</a></h3>
+
+
+  <p>저런! 피자 고양이는 자신의 피자가 순수하게 배달되고 있는지 알고 힘든 시간을 보내고있다. 고객들은 차가운 피자가 잘못된 집으로 배달되는 것에 대해 불평하고 있습니다! 피자 캣이 원격 모니터링 솔루션을 사용하여 피자 회사를 저장하는 방법을 알아보세요.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Track-my-Pizza-Cat-van-with-Azure-IoT-solution-accelerators/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/SmartHotel-360-a-demo-powered-by-Azure-Digital-Twins">SmartHotel 360, Azure Digital Twins에서 제공하는 데모 | 사물 인터넷 표시</a></h3>
+
+
+  <p>다음은 Azure Digital Twins를 기반으로 구축된 스마트 호텔 솔루션의 예입니다. IoT Show의 이 에피소드에서 Lyrana Hughes는 Azure Digital Twins의 핵심 공간 인텔리전스 기능이 어떻게 Smart Hotel 360 데모를 구동하고 GitHub 데모 콘텐츠에 액세스할 수 있는 공유를 보여 주므로 사용자 고유의 솔루션 빌드를 시작할 수 있습니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/SmartHotel-360-a-demo-powered-by-Azure-Digital-Twins/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Blocktalk/Introducing-the-Azure-Blockchain-Development-Kit">Azure Blockchain Development Kit | 소개 통화 차단</a></h3>
+
+
+  <p>이 에피소드에서는 사용자, 조직 및 디바이스를 블록체인 솔루션에 커넥트 커넥트 &ndash; IoT, SMS 및 봇을 강조 표시하는 사례 3가지 주요 테마 &ndash; 를 보여 주는 새 샘플을 강조 표시하는 Azure Blockchain Development Kit를 소개합니다. 기존 레거시 시스템 및 프로토콜에 통합 &ndash; 하여 레거시(FTP, 플랫 파일) 및 미디어를 강조 표시합니다. truffle용 Azure DevOps 및 OSS 도구를 사용하여 블록체인용 DevOps 배포 &ndash; 합니다. 개발, 테스트 및 빌드 파이프라인 강조 표시</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Blocktalk/Introducing-the-Azure-Blockchain-Development-Kit/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Blocktalk/Getting-started-with-Key-Management-Concepts">키 관리 개념 | 시작 통화 차단</a></h3>
+
+
+  <p>이 비디오 및 데모에서는 암호화 키 및 키 관리에 대한 핵심 개념과 블록체인 기반 기술에 적용되는 방법을 살펴봅니다. 이 항목에는 Ethereum에서 사용하는 핵심 핵심 기본 사항(비대칭)과 블록체인에 적용되는 방법에 대한 기술 세부 정보를 보여주는 데모가 포함됩니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Blocktalk/Getting-started-with-Key-Management-Concepts/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/AI-Show/Azure-ML-Data-Prep-GUI-Its-Not-Just-About-The-Code">Azure ML Data Prep GUI, 코드 | 대한 것만이 아니라&#39;AI Show</a></h3>
+
+
+  <p>많은 사람들이 코드에서 데이터 준비를 수행하는 것을 좋아하지만 일부 작업은 GUI에서 더 빠르고 쉽게 수행되지만&#39;더 나은 것은 코드에서 작업하는 시기와 방법 및 함께 작동하는 GUI에서 작업할 시기를 선택하고 선택할 수 있는 기능 집합입니다. 이 쇼는 우리가 데이터 준비 측면에서 세스&#39;삶을 더 쉽고 빠르게 만드는 방법을 보여 줍니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/AI-Show/Azure-ML-Data-Prep-GUI-Its-Not-Just-About-The-Code/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=WaNvKtDCHA4">Azure IoT Hub | 홈 자동화 자동 어웨이 지원을 빌드하는 방법 Azure Makers 시리즈</a></h3>
+
+
+  <p>Azure IoT Hub 및 Azure Functions를 사용하여 홈 자동화 설정에서 자세히 알아보세요. 모션 센서, Particle.io 및 Azure를 사용하여 다른 방에 있을 때&rsquo; 스마트 자동 온도 조절기를 알리는 방법을 알아보세요.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=WaNvKtDCHA4"><img alt="Thumbnail from How to build a home automation auto-away assist with Azure IoT Hub from the Azure Makers Series on YouTube" border="0" height="269" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8d6ee635-798e-4805-9ee9-f3c72d796d41.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="YouTube의 Azure Makers 시리즈에서 Azure IoT Hub를 통해 홈 자동화 자동 어웨이 지원을 빌드하는 방법 보기" width="480"></a></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=M99wMqOvRGM">Azure Logic Apps | 사용하여 기존 API 연결을 편집하는 방법 Azure 팁 및 요령</a></h3>
+
+
+  <p>Azure Logic Apps 사용하여 기존 API 연결을 수정하는 방법을 알아봅니다. 기존 API 연결을 편집하려면 API 연결을 입력&quot;하고 시작할 API 연결&quot;&quot; 메뉴 항목을 선택&quot;하기만 하면 됩니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=M99wMqOvRGM"><img alt="Thumbnail from How to edit an existing API Connection with Azure Logic Apps from Azure Tips and Tricks on YouTube" border="0" height="268" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3becd13f-c239-43eb-b6b8-cc372a30d82c.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="YouTube의 Azure 팁 및 트릭에서 Azure Logic Apps 사용하여 기존 API 연결을 편집하는 방법 보기" width="480"></a></p>
+
+
+  <h3>헨리는 DevOps 보안에 있었다 - 에피소드 012 | Azure DevOps 팟캐스트</h3>
+
+
+  <p>제프리는 게스트 헨리 비와 함께 DevOps 보안을 논의하고 있다. Henry는 DevOps 사례에 보안을 구현하는 방법에 대한 조언을 제공하고, 소프트웨어 개발 애플리케이션 수명 주기의 각 단계에서 보안을 강화 하는 방법에 대한 권장 사항을 제시하고, 주의해야 할 가능한 취약성을 강조하고, DevOps 환경에서 보안 문제를 해결하는 데 활용할 수 있는 도구를 제공합니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://traffic.libsyn.com/preview/azuredevops/ADP_012-2.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/running-cognitive-service-containers/">Cognitive Service 컨테이너 실행</a></h3>
+
+
+  <p>최근에 Computer Vision 및 Face에서 Text Analytics에 이르는 초기 컨테이너 집합을 사용하여 Microsoft Azure Cognitive Services에 대한 Docker 지원 미리 보기를 발표했습니다. 이 블로그 게시물은 작업을 시도하고, Cognitive Service 컨테이너를 실행하며, Docker Desktop을 사용하여 수행할 수 있는 작업을 확인하는 데 중점을 둡니다. 이후 블로그 게시물은 Azure Kubernetes Service 및 Azure Service Fabric 사용하여 탐색합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/considering-azure-functions-for-a-serverless-data-streaming-scenario/">서버리스 데이터 스트리밍 시나리오에 대한 Azure Functions 고려</a></h3>
+
+
+  <p>이전 블로그 게시물인 <a href="https://azure.microsoft.com/en-us/blog/a-fast-serverless-big-data-pipeline-powered-by-a-single-azure-function/">단일 Azure Function에서 제공하는 빠르고 서버리스 빅 데이터 파이프라인</a>은 은행 고객에게 전달되는 사기 탐지 솔루션에 대해 설명했습니다. 이 솔루션은 서버리스 아키텍처를 사용하여 실시간으로 원격 분석 데이터에 대한 스트리밍 파이프라인의 완전한 처리가 필요했습니다. 이 블로그 게시물에서는 Azure Functions를 사용하기 위한 평가 프로세스 및 결정에 대해 설명합니다. 이 프로세스는 구성하기 쉽고 몇 분 내에 Azure Event Hubs에서 대량의 원격 분석 데이터를 사용하도록 설정할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c4b40f0-c992-470d-b32d-f59764fc8c0f.png"><img alt="Diagram of the workflow that begins with data streaming into a single instance of Event Hubs, which is then consumed by a single Azure Function" height="194" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0c4b40f0-c992-470d-b32d-f59764fc8c0f.png" title="Azure Function 및 Event Hub 데이터 스트리밍 워크플로 차트" width="600"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-cosmos-db-and-multi-tenant-systems/">Azure Cosmos DB 및 다중 테넌트 시스템</a></h3>
+
+
+  <p>Microsoft Azure 다중 테넌트 PaaS 제품인 Azure Cosmos DB에서 다중 테넌트 시스템을 빌드하는 방법을 알아봅니다. 다른 다중 테넌트 시스템에서 다중 테넌트 시스템을 빌드하는 것은 어려울 수 있지만 Azure는 작업을 쉽게 수행할 수 있는 모든 도구를 제공합니다. 이 솔루션의 핵심 행위자는 소비자가 쉽게 배포하고 운영할 수 있는 클라우드 솔루션을 제공할 수 있는 Azure Managed Application입니다. 관리되는 애플리케이션에서 리소스는 앱 게시자가 관리하는 리소스 그룹에 프로비전됩니다. 리소스 그룹은 소비자&#39;구독에 있지만 게시자&#39;테넌트의 ID는 고객 구독의 리소스 그룹에 액세스할 수 있습니다. 고객 데이터를 관리하는 게시자 애플리케이션은 고객 테넌트 및 데이터와는 별개인 다른 Azure Active Directory 테넌트 및 구독에서&rsquo; 호스팅됩니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/97c5795c-c676-4dba-8c48-3fb57044b52f.png"><img alt="Flow chart showing front-end service interaction with the customer subscription resources" height="404" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/97c5795c-c676-4dba-8c48-3fb57044b52f.png" title="고객 구독 리소스 흐름도와 프런트 엔드 서비스 상호 작용" width="600"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/improving-azure-virtual-machine-resiliency-with-predictive-ml-and-live-migration/">예측 ML 및 실시간 마이그레이션을 사용하여 Azure Virtual Machine 복원력 향상</a></h3>
+
+
+  <p>올해 초부터 Azure는 하드웨어 오류와 같은 다양한 오류 시나리오와 랙 유지 관리 및 소프트웨어/BIOS 업데이트와 같은 정기적인 차량 운영에 대응하여 실시간 마이그레이션을 사용하고 있습니다. 실시간 마이그레이션을 사용하여 오류를 정상적으로 처리함으로써 가용성에 대한 오류의 영향을 50% 줄일 수 있습니다. Microsoft는 MSR(Microsoft Research)과 협력하여 오류가 발생하기 전에 높은 정확도로 오류를 예측하는 ML 모델을 빌드했습니다. 결과적으로,&rsquo; 워크로드가 실패의 징후를 보이기 전에 위험한&rdquo; 머신에서 &ldquo;워크로드를 실시간으로 마이그레이션할 수 있습니다. Azure에서 실행되는 VM이 기본 하드웨어보다 더 안정적일 수 있는 방법에 대해 자세히 알아보려면 이 게시물을 읽어보세요.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/time-series-analysis-in-azure-data-explorer/">Azure 데이터 탐색기에서 시계열 분석</a></h3>
+
+
+  <p>ADX(Azure Data Explorer)는 데이터 탐색에 최적화된 빠른 빠른 서비스입니다. 사용자에게 거의 실시간으로 매우 큰 원시 데이터 세트에 대한 즉각적인 가시성을 제공하므로 성능을 분석하고 추세 및 변칙을 식별하며 문제를 진단할 수 있습니다. 이 블로그 게시물에서는 클라우드 서비스 또는 IoT 디바이스에서 원격 분석 데이터의 진행 중인 수집을 수행하는 Azure Data Explorer의 시계열 분석의 기본 사항을 설명합니다. 서비스 상태 모니터링, 실제 프로덕션 프로세스 및 사용량 추세와 같은 다양한 인사이트를 위해 이 데이터를 분석할 수 있습니다. 일반적인 기준 패턴과 비교해 패턴의 편차를 발견하려면 선택한 메트릭의 시계열에서 분석을 수행합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aeb2b15f-e551-4b28-822f-13c226e3c018.png"><img alt="Screenshot of chart showing the Top 2 periodic decreasing web service traffic" height="152" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aeb2b15f-e551-4b28-822f-13c226e3c018.png" title="상위 2개의 주기적인 웹 서비스 트래픽 차트 감소" width="600"></a></p>
+
+
+  <h3>추가 기술 콘텐츠</h3>
+
+
+  <ul>
+   <li><a href="https://mikecodes.net/2018/11/16/private-packages-with-azure-devops/">Azure DevOps 있는 프라이빗 패키지</a>(블로그 게시물)</li>
+   <li><a href="https://medium.com/microsoftazure/tech-stack-for-your-new-startup-8a405e129b68">Azure를 사용하여 스타트업&rsquo; 기술 스택 빌드</a> (블로그 게시물)</li>
+   <li><a href="https://www.youtube.com/watch?v=aN9nVa8yeBo">Kubernetes 수신 컨트롤러 및 인증서: 연습</a> (비디오)</li>
+   <li><a href="https://medium.com/microsoftazure/azure-pipelines-yaml-2-more-ways-to-learn-what-to-type-211e83174847">YAML 2부 Azure Pipelines: 필요한 내용을 배울 수 있는 더 많은 방법!</a> (블로그 게시물)</li>
+   <li><a href="https://gloveboxes.github.io/Creating-an-Azure-IoT-Central-Application-Hands-on-Lab/">Azure IoT Central 애플리케이션 만들기</a>(실습 랩)</li>
+   <li><a href="https://medium.com/@bbenz/azure-devops-and-jenkins-in-perfect-harmony-8c92ff980723">완벽한 하모니의 Microsoft Azure DevOps 및 젠킨스</a> (블로그 게시물)</li>
+  </ul>
+
+
+  <h2>이벤트</h2>
+
+
+  <h3><a href="https://www.microsoft.com/en-us/connectevent/?ocid=AID750056_QSG_BLOG_287417">Microsoft 커넥트(); 2018</a></h3>
+
+
+  <p>Azure 및 Visual Studio, 기조 연설, 데모 및 전문가와의 실시간 코딩에 대한 개발 중심 업데이트를&mdash; 하루 종일 커넥트 &ndash; 2018년 12월 4일 화요일, 온라인으로 조정할 날짜를 저장합니다. 방금 시작했&rsquo;든&rsquo; 블록체인을 중심으로 하든,&rsquo; 이곳에서 사람들을 찾을 수 있습니다. 그리고 그것은 모두 온라인으로 발생합니다. 편안하고 영감을 얻으십시오.</p>
+
+
+  <p align="center"><a href="https://www.microsoft.com/en-us/connectevent/?ocid=AID750056_QSG_BLOG_287417"><img alt="Save the date for Microsoft Connect(); 2018" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0f0d57ca-b167-47d3-93b5-e506399c2422.jpg" title="Microsoft 커넥트(); 2018 날짜 저장"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/join-us-on-november-28-for-our-next-meetup-adopting-emerging-tech-in-government/">다음 모임을 위해 11월 28일에 우리와 함께하세요: 정부에서 신흥 기술 채택</a></h3>
+
+
+  <p>지난 Microsoft Azure 정부 DC 모임에서 우리는 기관이 블록체인, 인공 지능, 기계 학습 및 증강 현실을 포함한 임무를 위해 혁신하기 위해 신흥 기술을 활용하여 전략, 과제, 사용 사례 및 인력 준비에 접근하는 방법을 포함하여 정부에서 신흥 기술의 선두 주자에 대해 논의했습니다. 이번 주 후반 <a href="https://aka.ms/azuregovmeetupchannel">Microsoft Azure 정부 DC YouTube 채널</a>에서 이 모임과 과거의 주문형 동영상을 확인하세요.</p>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/customers-are-using-azure-stack-to-unlock-new-hybrid-cloud-innovation/">고객은 Azure Stack을 사용하여 새로운 하이브리드 클라우드 혁신의 잠금을 해제하고 있습니다.</a></h3>
+
+
+  <p>&rsquo;여러 산업 &ndash; 제조, 금융 서비스, 의료 및 주 &amp; 지방 정부에서 Azure Stack의 높은 관심과 채택을 보고 있습니다. 이러한 산업에는 가장 엄격한 규제 요구 사항이 있고 인터넷 연결이 제한되거나 없는 지역에서 작업을 수행해야 하며 일반적으로 일부 레거시 애플리케이션이 있기 때문에 완벽한 의미가 있습니다. 이 게시물은 이러한 산업의 고객이 이러한 실제 문제를 해결하기 위해 현재 Azure Stack을 사용하는 몇 가지 방법을 살펴봅니다. 여러 산업의 고객은 Azure Stack을 통해 진정으로 일관된 하이브리드 클라우드의 이점을 실현하고 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/three-reasons-why-windows-server-and-sql-server-customers-continue-to-choose-azure/">Windows 서버 및 SQL Server 고객이 계속해서 Azure를 선택하는 세 가지 이유</a></h3>
+
+
+  <p>지난 25년 동안 모든 규모의 회사는 Windows Server 및 SQL Server 신뢰하여 중요 비즈니스용 워크로드를 실행했습니다. 혁신 및 디지털 변환을 위해 클라우드를 사용하는 고객이 늘어나면서 첫 번째 단계는 종종 기존 Windows Server를 마이그레이션하고 애플리케이션 및 데이터를 클라우드로 SQL Server. 이 게시물은 고객이 클라우드로 전환할 때 Microsoft를 유지하기로 선택하는 세 가지 주요 이유를 살펴봅니다. Azure로 더 적은 비용을 지불하고, Azure는 타의 추종을 불허하는 보안 및 규정 준수를 제공하며, Azure는 유일한 일관된 하이브리드 클라우드입니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/using-ai-and-iot-for-disaster-management/">재해 관리에 AI 및 IoT 사용</a></h3>
+
+
+  <p>기후 변화, 극단적인 날씨, 노후화 및 제대로 설계되지 않은 인프라로 인한 자연 재해는 다른 위험 중에서도 인간의 삶과 지역 사회에 중대한 위험을 나타냅니다. 국가, 주 및 지방 정부 및 조직도 재해 관리 사례를 업데이트하여 계속 관리하는 방법을 고민하고 있습니다. 이 블로그 게시물에서는 IoT(사물 인터넷), AI(인공 지능) 및 기계 학습이 어떻게 도움이 되는지 알아봅니다. 모든 위기를 피할 수 있는 것은 아니지만, 이제 우리는 석유 유출이나 건물 붕괴와 같은 재앙을 예측하고 방지하는 기술을 가지고 있습니다. 예측할 수 없는 자연 재해가 발생하면 응답자는 더 빨리 필요한 곳에 도움을 주는 것을 목표로 하는 실시간 데이터에 액세스하여 추가적인 인명 손실을 줄일 수 있습니다.</p>
+
+
+  <hr>
+
+  <h3><a href="https://www.youtube.com/watch?v=XLdY1cp1_DU">Azure 2018년 11월 30일 이번 주 &ndash; | 클라우드 전문가</a></h3>
+
+
+  <p>이번 주 Azure에서 Lars는 릴리스 후보에서 Azure DevOps 온-프레미스 버전에 대해 설명합니다. 또한 Azure IoT Edge에서 기밀 컴퓨팅을 단순화하는 공개 미리 보기에 대해 설명하고 내일 온라인 Microsoft 커넥트(); 이벤트에 참가하는 방법에 대한 세부 정보를 제공합니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=XLdY1cp1_DU"><img alt="Thumbnail from Azure This Week - 30 November 2018 by A Cloud Guru on YouTube" border="0" height="266" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4b790237-1697-4dea-a914-025fc09de2c3.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="YouTube의 클라우드 전문가가 2018년 11월 30일 Azure를 시청하세요." width="480"></a></p>

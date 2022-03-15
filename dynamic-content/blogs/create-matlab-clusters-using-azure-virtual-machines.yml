@@ -1,0 +1,55 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 029be6008428c22adf78f786da19ab2c7fe8ace0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908515"
+Slug: create-matlab-clusters-using-azure-virtual-machines
+Title: Microsoft Azure Virtual Machines를 사용하여 대규모 병렬 MATLAB 워크로드 실행
+Summary: 이제 Microsoft Azure Resource Manager 템플릿 및 스크립트를 사용하여 MATLAB 분산 컴퓨팅 서버 클러스터를 쉽게 만들고 관리할 수 있습니다.
+Content: >-
+  <p>MATLAB&reg; 은 엔지니어와 과학자들이 시스템과 제품을 분석하고 설계하는 데 사용하는 매우 인기 있는 플랫폼입니다. 대규모 시뮬레이션 및 데이터 분석 작업을 수행하는 사용자는 MathWorks 병렬 컴퓨팅 제품을 사용하여 다중 코어 프로세서, GPU 가속 및 컴퓨팅 클러스터를 활용하여 이러한 워크로드의 속도를 향상시키고 확장할 수 있습니다. 클러스터를 만들기 위해 MATLAB 분산 컴퓨팅 서버&trade; 는 클러스터 노드에서 사용되며 일괄 처리 작업, 병렬 계산 및 분산된 큰 데이터를 지원하는 기본 제공 작업 스케줄러를 포함합니다.</p>
+
+
+  <p>Microsoft Azure 사용하여 MATLAB 분산 컴퓨팅 서버 클러스터를 호스트할 수 있었지만 각 고객이 환경을 만들고 소프트웨어를 구성하며 필요한 클러스터 관리 기능을 제공하기 위해 상당한 작업이 필요했습니다. 이제 Azure Resource Manager 템플릿 및 스크립트 집합을 사용하여 MATLAB 분산 컴퓨팅 서버 클러스터에 대한 Microsoft Azure 훨씬 쉽고 빠르게 사용할 수 있게 되었습니다.</p>
+
+
+  <p>MATLAB 분산 컴퓨팅 서버 클러스터에 대한 온-프레미스 하드웨어 프로비전 및 사용에 비해 Microsoft Azure 사용하면 다음과 같은 많은 이점이 있습니다.</p>
+
+
+  <ul>
+      <li>다양한 VM(가상 머신)을 사용할 수 있습니다. VM은 애플리케이션의 요구 사항 및 완료된 작업이 &ndash; 얼마나 빨리 필요한지에 따라 코어 수, 메모리 양, 프로세서 속도, 네트워크 상호 연결 등을 선택할 수 있습니다.</li>
+      <li>하나 이상의 클러스터를 주문형으로 만들 수 있습니다. 필요한 VM의 수와 유형을 사용하여 필요한 경우 클러스터를 만들고, 워크로드를 실행한 다음, 완료되면 삭제합니다.</li>
+      <li>사용하는 컴퓨팅에 대해서만 비용을 지불합니다. Azure 컴퓨팅은 분당 요금이 청구되므로 1시간 미만이든 며칠이든 상관없이 사용하는 항목에 대해서만 요금을 지불합니다.</li>
+      <li>온-프레미스에 액세스할 수 없었던 규모를 활용합니다. 가장 까다로운 워크로드 또는 시간이 중요한 작업에 대해 많은 수의 VM 및/또는 고성능 VM을 프로비전할 수 있습니다. 필요한 경우에만 클러스터를 만들고 작업이 완료되면 삭제합니다. 더&rsquo; 이상 고정된 수와 서버 유형으로 제한되지 않습니다.</li>
+  </ul>
+
+
+  <blockquote>
+
+  <p align="left">&nbsp;</p>
+
+
+  <p align="left">Azure VM 클러스터에서 MATLAB 분산 컴퓨팅 서버를 실행하면 자체 데이터 센터에 배포된 온-프레미스 서버에 동등한 MATLAB 분산 컴퓨팅 서버 기능을 제공하는 총 소유 비용에 비해 매우 저렴한 비용으로 사용자에게 친숙한 고성능 컴퓨팅을 제공합니다. MATLAB 분산 컴퓨팅 서버 사용자는 몇 가지 간단한 PowerShell 스크립트를 사용하여 Azure 기반 클러스터를 시작 및 중지하거나 일부만 중지하여 Azure 청구 비용을 최소한으로 유지할 수 있습니다.</p>
+
+
+  <p align="right">제임스 만<br>
+
+  솔루션 아키텍처<br>
+
+  애버딘 자산 관리 PLC</p>
+
+
+  <p align="right">&nbsp;</p>
+
+  </blockquote>
+
+
+  <p>새 템플릿 및 스크립트를 사용하여 작업자 VM 수 및 작업자 &ndash; VM의 크기와 같은 작은 구성 매개 변수 집합을 지정하여 하나 이상의 MATLAB 분산 컴퓨팅 서버 클러스터를 만들 수 있습니다. 그러면 네트워크가 구성되고, VM이 생성되고 MATLAB 분산 컴퓨팅 서버가 구성됩니다. 스크립트 명령을 사용하면 클러스터를 나열, 일시 중지, 다시 시작 및 삭제할 수 있습니다. 라이선스는 주문형 라이선스와 영구 또는 연간 라이선스에 대한 지원을 포함하는 MathWorks 호스팅 라이선스 관리자에 의해 처리됩니다.</p>
+
+
+  <p>MATLAB은 MATLAB 분산 컴퓨팅 서버에 포함된 작업 스케줄러 외에도 타사 작업 스케줄러도 지원합니다. 조만간&rsquo; AZURE Batch를 MATLAB에서 작업 스케줄러로 사용할 수 있도록 지원을 추가할 예정입니다.</p>
+
+
+  <p>추가 정보, 템플릿, 스크립트 및 자세한 설명서에 대한 링크는 Windows Virtual Machines <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-matlab-mdcs-cluster/">설명서</a>의 일부로 제공됩니다.</p>

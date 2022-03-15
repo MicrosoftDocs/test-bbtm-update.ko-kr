@@ -1,0 +1,183 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c4589d727888851fb5a574c144b1981ab28e9a99
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908054"
+Slug: reduce-rto-by-using-azure-traffic-manager-with-azure-site-recovery
+Title: Azure Site Recovery에서 Azure Traffic Manager 사용하여 RTO 줄이기
+Summary: 관리자가 재해 복구를 위한 애플리케이션을 설정하는 경우 RTO(복구 시간 목표)를 최대한 낮게 유지하는 것이 주요 목표 중 하나입니다.
+Content: >-
+  관리자가 재해 복구를 위한 애플리케이션을 설정하는 경우 RTO(복구 시간 목표)를 최대한 낮게 유지하는 것이 주요 목표 중 하나입니다. 짧은 시간 동안에도 중요한 애플리케이션을 사용할 수 없는 경우 상당한 비즈니스 손실이 발생할 수 있습니다. <a href="https://aka.ms/atm_drreport">글로벌 재해 복구 준비 상태에 대한 연례 보고서 2014</a> 는 한 시간 동안 중요한 애플리케이션을 손실하는 비용을 $300,000 이상으로 추정합니다.
+
+
+  복구 사이트에서 애플리케이션을 사용할 수 있게 되는 데 필요한 시간에 영향을 주는 중요한 요소는 다음과 같습니다.
+
+  <ol>
+   <li>복구는 번거롭고 오류가 발생하기 쉬우며 수동입니다. Azure Site Recovery는 복구 프로세스를 자동화하기 위한 원클릭 오케스트레이션을 제공합니다. ASR을 사용하면 테스트 장애 조치(failover)를 사용하여 장애 조치(failover)를 테스트할 수도 있습니다.</li>
+   <li>애플리케이션이 지금 실행되는 새 주소의 DNS 업데이트에는 많은 시간이 걸립니다. ASR과 Azure Traffic Manger가 결합되어 이 시간을 줄이는 동급 최고의 솔루션을 제공합니다. 어떻게 보여드리겠습니다.</li>
+  </ol>
+
+  이러한 두 가지 요소 중 먼저 복구하는 애플리케이션의 복잡성과 크기에 따라 달라집니다. 그러나 작업이 조직 및 팀 경계에 걸쳐 있고 수동일 수 있기 때문에 두 번째 요인으로 인해 소요된 시간은 훨씬 더 예측할 수 없습니다. Azure Traffic Manager 두 번째 요소 때문에 시간을 크게 줄입니다. 이 블로그의 뒷부분에서 정량적으로 살펴보겠습니다.
+
+
+  Traffic Manager 사용을 설명하기 위해 현재 기본 사이트에서 온-프레미스에 호스트되고 Azure Site Recovery를 사용하여 보호되는 www.contoso.com 이라는 공개 웹 사이트의 예제를 사용합니다. 복구 사이트가 온-프레미스이고 Azure가 복구 사이트로 사용되는 경우 Traffic Manager 설정하는 방법을 살펴보겠습니다.
+
+  <h2>Azure Traffic Manager 설정</h2>
+
+  1. 공용 DNS 서버에서 다음 항목을 만듭니다.
+
+  <pre class="prettyprint">www.contoso.com     IN     CNAME      contoso.trafficmanager.net</pre>
+
+  2. Azure 관리 포털에서 새 Traffic Manger 프로필을 만듭니다. <a href="https://aka.ms/atm_atmdoc">Azure Traffic Manager 프로필을 만들고 구성하는</a> 방법에 대해 자세히 확인할 수 있습니다. Traffic Manager 프로필 이름을 'contoso'로 지정하고 <i>부하 분산 방법을 </i>'<i>장애 조치(failover)' </i> 로 선택합니다. '<i>장애 조치( failover)' </i>부하 분산 방법은 트래픽이 다음 엔드포인트로 전달되는 비정상으로 발견되지 않는 한 모든 트래픽을 먼저 구성된 Traffic Manager 엔드포인트로 전달합니다.
+
+
+  3. 두 개의 외부 엔드포인트를 사용하여 트래픽 관리자를 구성합니다. <a href="https://aka.ms/atm_atmpgblog">외부 엔드포인트를 사용하여 Azure Traffic Manager를 구성하는</a> 방법에 대해 자세히 확인할 수 있습니다. 다음은 2단계에서 만든 프로필을 구성하는 데 사용할 powershell cmdlet입니다.
+
+  <pre class="prettyprint">$profile = Get-AzureTrafficManagerProfile -Name "contoso"
+
+
+  Add-AzureTrafficManagerEndpoint -TrafficManagerProfile $profile -DomainName "primary.contoso.com" -Status "Enabled" -Type "Any" | Set-AzureTrafficManagerProfile
+
+
+  Add-AzureTrafficManagerEndpoint -TrafficManagerProfile $profile -DomainName "recovery.contoso.com" -Status "Enabled" -Type "Any" | Set-AzureTrafficManagerProfile
+
+  </pre>
+
+  위의 powershell cmdlet은 기본 사이트와 복구 사이트가 모두 온-프레미스일 때 사용할 수 있습니다. Azure를 복구 사이트로 사용하는 경우 다음 cmdlet을 사용하여 보조 엔드포인트를 설치합니다.
+
+  <pre class="prettyprint">Add-AzureTrafficManagerEndpoint -TrafficManagerProfile $profile -DomainName “azureapp.cloudapp.net" -Status "Enabled" -Type "Any" | Set-AzureTrafficManagerProfile</pre>
+
+  다음 두 가지 사항에 유의해야 합니다.
+
+  <ul>
+   <li>ASR은 장애 조치(failover) 시점에만 클라우드 서비스를 만듭니다. 따라서 장애 조치 전에 Traffic Manager 프로필을 구성하는 경우 클라우드 서비스가 존재하지 않습니다. 이 때문에 Azure 엔드포인트도 '<i>외부</i>' 엔드포인트로 설정합니다.</li>
+   <li>ASR은 복구 계획의 이름을 사용하여 클라우드 서비스를 만듭니다. 예를 들어 복구 계획의 이름이 AzureApp인 경우입니다. ASR은 azureapp.cloudapp.net 클라우드 서비스를 만듭니다. 이름을 사용할 수 없는 경우 ASR은 GUID를 추가하여 명확하게 설명합니다. 따라서 다른 사용자가 사용할 가능성이 거의 없는 이름으로 복구 계획을 만들고 높은 신뢰도로 장애 조치(failover) 후 생성된 클라우드 서비스의 이름을 예측할 수 있는 것이 좋습니다.</li>
+  </ul>
+
+  4. 공용 DNS에서 다음 항목 만들기
+
+  <pre class="prettyprint">primary.contoso.com     A    160.220.220.10*
+
+  recovery.contoso.com    A     170.220.220.10*
+
+
+  * The IPs used here are only for representative purpose
+
+  </pre>
+
+  기본 및 복구 사이트의 IP 주소입니다.
+
+
+  Azure가 복구 사이트로 사용되는 경우 '복구'에 해당하는 항목을 만들 필요가 없습니다. Azure는 클라우드 서비스를 만들 때 공용 IP를 클라우드 서비스에 제공합니다.
+
+
+  5. 기본적으로 Traffic Manager 프로필의 TTL은 300초로 구성됩니다. 30초까지 구성할 수 있습니다. 이 TTL은 애플리케이션의 RTO에 기여합니다. 이 내용은 다음 섹션에서 자세히 살펴보겠습니다.
+
+
+  다음은 ASR을 사용한 Traffic Manager 설정의 그림 표현입니다. 장애 조치(failover) 전의 상태를 보여줍니다. 빨간색 화살표는 DNS 쿼리를 나타내고, 점선이 있는 빨간색 화살표는 반환된 DNS 응답의 대상을 나타내고 녹색 화살표는 애플리케이션 액세스를 나타냅니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/03/02/BeforeFO.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="BeforeFO" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/BeforeFO_thumb.jpg" alt="BeforeFO" width="1028" height="588" border="0" /></a>
+
+
+  &nbsp;
+
+
+  아래 그림은 장애 조치(failover) 후의 상태를 보여줍니다. 빨간색 화살표는 DNS 쿼리를 나타내고, 점선이 있는 빨간색 화살표는 반환된 DNS 응답의 대상을 나타내고 녹색 화살표는 애플리케이션 액세스를 나타냅니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/03/02/AfterFO.jpg"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="AfterFO" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AfterFO_thumb.jpg" alt="AfterFO" width="1028" height="588" border="0" /></a>
+
+  <h2>TTL(Time to Live)</h2>
+
+  TTL(Time to Live)은 클라이언트에서 DNS 항목을 캐시하는 값입니다. 특정 레코드의 경우 DNS는 TTL 범위 내에서 두 번 쿼리되지 않습니다.
+
+
+  DNS 레코드마다 TTL이 연결됩니다. 이 경우 세 개의 DNS 레코드를 설정했습니다.
+
+  <ol>
+   <li>www.contoso.com - 이 레코드와 연결된 TTL이 TTL1이라고 가정해 보겠습니다.</li>
+   <li>contoso.trafficmanager.net – 이 레코드와 연결된 TTL이 TTL2라고 가정해 보겠습니다.</li>
+   <li>primary.contoso.com, recovery.contoso.com, azurerp.cloudapp.net – 이러한 레코드와 연결된 TTL이 TTL3이라고 가정해 보겠습니다.</li>
+  </ol>
+
+  첫 번째 레코드는 변경되지 않습니다. www.contoso.com 항상 contoso.trafficmanager.net 가리킵니다. 따라서 높은 TTL1 값을 사용하는 경우 해를 끼치지 않습니다. TTL2는 클라이언트에서 트래픽 관리자를 쿼리하는 빈도를 결정합니다. 3<sup>번째</sup> 지점에 언급된 레코드도 설정되면 변경되지 않을 것으로 예상됩니다. 따라서 TTL3에도 높은 값을 사용할 수 있습니다.
+
+
+  이후 위의 1 <sup>및</sup> 3<sup>점에</sup> 언급된 레코드는 TTL2만 변경되지 않습니다. 애플리케이션의 RTO는 TTL2에만 의존합니다.
+
+
+  Traffic Manager 상태를 새로 고치는 데 약 2분이 걸립니다. Azure Traffic Manager 모니터링에서 자세히 읽을 수 있습니다. 애플리케이션이 복구 사이트로 장애 조치되면 Traffic Manager 이를 확인하는 데 약 2분 정도 걸립니다. 클라이언트가 Traffic Manager 다시 쿼리하지 않는 TTL2에 추가합니다. 이 경우 DNS 변경으로 인해 애플리케이션의 RTO는 2분 + TTL2입니다. TTL2를 30초로 설정하면 <b>RTO는 2.5분이 됩니다</b>.
+
+  <h2>Azure Traffic Manager 사용의 이점</h2>
+
+  이 블로그에 설명된 방식으로 Traffic Manager 설정하면 다음과 같은 이점이 제공됩니다.
+
+
+  1. 대부분의 조직에서 DNS 레코드 추가 또는 수정은 일반적으로 별도의 팀 또는 조직 외부의 누군가가 처리합니다. 이렇게 하면 DNS 레코드를 변경하기가 매우 어렵습니다. DNS 인프라를 관리하는 팀이 약속한 SLA는 조직마다 다를 수 있으며 애플리케이션의 RTO에 영향을 줄 수 있습니다. 대부분의 경우, 약속된 SLA는 몇 분이 아닌 몇 시간 안에 있을 것입니다.
+
+
+  2. DNS와 관련하여 수행해야 하는 모든 작업을 프런트로드합니다. 실제 장애 조치(failover) 시에 수동 작업 또는 스크립트 작업이 필요 없습니다. 이는 두 가지 방법으로 도움이 됩니다.
+
+  <ul>
+   <li>Traffic Manager 없으면 DNS의 변경을 수행해야 한다고 결정하는 데 많은 시간이 소요됩니다. 이렇게 하면 애플리케이션의 RTO가 증가합니다. Traffic Manager 사용하면 이 단계가 자동화됩니다.</li>
+   <li>Traffic Manager 없으면 DNS 업데이트의 스크립션 또는 수동 작업으로 인해 오류가 발생할 위험이 높습니다. Traffic Manager 사용하면 이 위험이 제거됩니다. Traffic Manager 프로필에 정의된 엔드포인트를 계속 모니터링하고 장애 조치(failover)가 완료되면 트래픽을 새 사이트로 전환합니다.</li>
+   <li>Traffic Manager 장애 복구(failback) 단계도 자동화되며, 장애 복구(failback)도 별도로 관리해야 합니다.</li>
+  </ul>
+
+  위의 요인으로 인해 DNS가 2.5분으로 변경되어 RTO에 미치는 영향을 줄일 수 있습니다.
+
+  <h2>DNS 확인자의 영향</h2>
+
+  DNS 쿼리가 만들어지면 항상 신뢰할 수 있는 DNS 서버로 이동하는 것은 아닙니다. 레코드를 캐시하는 사이에 하나 이상의 DNS 확인자가 있을 수 있습니다.
+
+
+  클라이언트와 신뢰할 수 있는 DNS 서버 간의 DNS 확인자 수 때문에 클라이언트에서 경험하는 TTL이 증가하나요?
+
+
+  대답은 안 된다야. DNS 확인자는 TTL을 '카운트 다운'하며 레코드가 캐시된 후에 경과된 시간을 반영하는 TTL 값만 전달합니다.
+
+
+  이를 설명하기 위해 클라이언트와 신뢰할 수 있는 DNS 사이에 DNS 확인자가 있는 예제를 사용합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/02/25/DNSResolver1.jpg"><img class="alignnone size-medium wp-image-257424" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DNSResolver1-636x117.jpg" alt="DNSResolver1" width="636" height="117" /></a>
+
+  <ul>
+   <li>특정 레코드의 DNS가 300초인 경우 T가 DNSResolver1 쿼리 인증 DNS인 경우 TTL을 300초로 가져옵니다.</li>
+   <li>클라이언트가 DNSResolver1을 쿼리하는 경우 시간 = T + 100, TTL을 300 – 100 = 200초로 가져옵니다.</li>
+  </ul>
+
+  체인에 DNS 확인자가 하나 더 추가되더라도 동일한 논리를 확장할 수 있음을 알 수 있습니다.
+
+
+  따라서 체인의 DNS 확인자 수는 TTL에 영향을 주지 않습니다. 체인의 DNS 확인자 수에 관계없이 TTL 이후에 클라이언트에서 레코드가 새로 고쳐집니다.
+
+  <h2>Azure Traffic Manager 사용하여 애플리케이션 모니터링</h2>
+
+  다음은 Sharepoint 및 Exchange OWA의 두 가지 특정 애플리케이션에서 Azure Traffic Manger를 구성하는 방법의 예입니다. ASR을 사용하여 재해 복구를 위해 설정하는 특정 애플리케이션에 따라 달라질 수 있습니다.
+
+  <h4>인증된 Microsoft Sharepoint</h4>
+
+  현재 Traffic Manager 인증된 엔드포인트를 모니터링할 수 있는 기능이 없습니다. 조직에서 Sharepoint 서버를 설치한 경우 해당 서버에 대한 사용자 액세스가 인증될 가능성이 높습니다. Traffic Manager URL이 쿼리된 결과로 HTTP 코드 200이 필요합니다. Sharepoint URL에 인증이 필요한 경우 HTTM 코드 200을 반환하지 않습니다. 이 해결을 위해 Sharepoint 서버의 웹 프런트 엔드를 호스팅하는 동일한 IIS 서버에서 다른 포트(예: 8080)에 더미 웹 사이트를 설정할 수 있습니다. 이 웹 사이트에는 인증이 필요하지 않습니다. 포트 80에서 실행되는 sharepoint를 모니터링하는 대신 더미 웹 사이트가 호스트된 포트에 따라 Traffic Manager 프로필을 적절하게 구성해야 합니다.
+
+  <h4></h4>
+
+  <h4>Microsoft Exchange OWA</h4>
+
+  Exchange 서버에 대해 OWA(Outlook Web Access)를 설정한 경우 일반적으로 www.contoso.com/owa 유사한 URL로 액세스됩니다. 액세스할 때 이 URL은 200이 아닌 HTTP 코드를 반환합니다. 따라서 '/owa' URL을 모니터링하도록 Traffic Manager 프로필을 구성하면 작동하지 않습니다. 따라서 Traffic Manager 사용하여 '/'를 모니터링하는 것이 좋습니다.
+
+
+  요약하자면, 이 블로그에서는 Azure Site Recovery와 함께 Azure Traffic Manager 사용하여 애플리케이션의 복구 시간 목표를 크게 줄이고 중요한 애플리케이션의 가동 중지 시간으로 인해 손실될 수 있는 수백만 달러를 절약하는 방법을 살펴보았습니다.
+
+
+  추가 질문이 있는 경우 <a href="https://aka.ms/atm_forum">MSDN의 Azure Site Recovery 포럼을</a> 방문하여 추가 정보를 확인하고 다른 고객과 소통하세요.
+
+
+  <a href="https://aka.ms/atm_productinfo">추가 제품 정보를 확인하고</a> <a href="https://aka.ms/atm_trial">무료 Azure 평가판에 등록하여 Azure</a> Site Recovery를 사용하여 Microsoft Azure 사용해 볼 수도 있습니다.
+
+  <h2>승인<b></b></h2>
+
+  이 블로그를 완료하는 데 큰 도움을 주신 Azure Traffic Manager 팀의 <a href="https://aka.ms/atm_jonatul">조나단 탈리아니</a>에게 특별한 감사를 드립니다.

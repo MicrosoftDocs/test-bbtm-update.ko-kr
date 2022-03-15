@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0877d9efafef7e400df6e713f481a9e65283c6e4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901289"
+Slug: customer-success-stories-with-azure-backup-metori-capital-management
+Title: 'Azure Backup을 사용한 고객 성공 사례: Metori Capital Management'
+Summary: 지속적인 고객 성공 스토리 시리즈의 일환으로 파리에 본사를 둔 자산 관리 회사인 Metori Capital은 수년 동안 Azure Backup을 사용하여 데이터와 자산을 보호하는 방법에 대한 Azure Backup 이야기를 공유했습니다.
+Content: >-
+  <p>지속적인 고객 성공 스토리 시리즈의 일환으로 파리에 본사를 둔 자산 관리 회사인 Metori Capital은 수년 동안 Azure Backup을 사용하여 데이터와 자산을 보호하는 방법에 대한 Azure Backup 이야기를 공유했습니다.</p>
+
+
+  <h2>고객 배경</h2>
+
+
+  <p><a href="https://customers.microsoft.com/en-us/story/metori-capital-management-financial-services-azure" target="_blank">Metori Capital</a> 은 약 $500M의 자산을 관리하는 체계적인 정량적 전략을 전문으로 하는 순수 플레이 자산 관리 회사입니다. 그들의 일상적인 비즈니스는 시장 데이터를 수집하고 독점 정량적 모델을 실행하여 다양한 금융 상품에 걸쳐 재산의 최적의 할당을 식별하는 것입니다. 그런 다음 전 세계 주요 선물 시장에 수백 개의 주문을 보냅니다. 동시에, 그들은 위험, 수천 거래의 조정을 모니터링하고, 그들이 관리하는 자금의 평가를 수행합니다.</p>
+
+
+  <p>Metori Capital은 정교한 기술 및 독점 알고리즘을 사용하여 엡실론에서 자산을 구매, 판매 및 관리하는 데 도움을 줍니다. 이러한 알고리즘을 지원하고, 규정 준수를 충족하고, 데이터를 보호할 수 있는 엔터프라이즈 플랫폼을 빌드해야 했습니다. 목표와 보조를 맞추기 위해 Metori는 확장성과 안정적인 비즈니스 연속성의 이점을 원했습니다.</p>
+
+
+  <h2>Azure Backup</h2>
+
+
+  <p>가상 머신에서 데이터의 상당 부분을 호스팅하는 Metori Capital은 재해 상태에서 데이터 보호 및 복원력을 위해 Azure Backup에 크게 의존합니다. 비즈니스 요구는 운영 효율성과 확장성을 보장하며 회사는 모든 프로세스를 완전히 자동화하고 간소화했습니다.</p>
+
+
+  <p style="margin-left: 40px;">&quot;<em>이러한 모든 이유로 2016년 시작부터 프로덕션 환경을 100% Azure에 호스트하기로 결정했습니다. 또한 비즈니스에서 운영의 연속성은 하드웨어, 네트워크 또는 서버 중단,</em> Loc&iuml; Guenin, &quot; &mdash; Metori Capital의 Front Office Technologies 글로벌 책임자에 의해서만 소폭 영향을 받을 수 있음을 입증하기 위한 절대적인 필수 조건입니다.</p>
+
+
+  <p>Azure Backup은 재해 상황에서도 데이터 가용성을 약속하며, 이는 불리한 상황에서 Metori Capital에 도움이 된 것입니다. 주기적인 비즈니스 연속성 및 재해 복구 훈련은 모든 단계에서 보안 준수를 보장했습니다.</p>
+
+
+  <p style="margin-left: 40px;">&quot;<em>여기서 Azure Backup은 중요한 서비스입니다. IT 인프라에 대한 화재 훈련&rdquo; 연습을 정기적으로 수행&ldquo;하여 다양한 종류의 중단 이벤트에 대한 복원력을 평가합니다. 이러한 연습의 맥락에서 Azure Backup 덕분에 몇 시간&quot; 만에 다른 인프라에 프로덕션 환경의 작업 클론을 배포할 수 있음을 입증</em>했습니다.&iuml;&mdash;&nbsp;</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>Metori Capital은 Azure Backup이 중요 비즈니스용 워크로드에 대해 간단하고 안전하며 비용 효율적인 보호를 통해 투자 수익을 크게 얻을 수 있다고 믿습니다. 또한 Azure는 시장 및 투자자와 연결 상태를 유지하고, 여러 규정 준수 요구 사항을 충족하고, 데이터를 보존 및 보호하며, 비즈니스 연속성을 보장하는 동시에 소비하는 서비스에 대해서만 지불하는 데 필요한 엔터프라이즈 기능을 제공합니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Azure가 없으면 우리가 기대하는&rdquo; 미래에 대처할 수 있는 환경을 구축하는 데 10배 더 많은 비용이 들 수</em> 있습니다.&mdash;</p>
+
+
+  <p>Azure Backup은 Metori Capitals&rsquo; 중요 워크로드에 대한 완전하고 신뢰할 수 있는 솔루션을 제공합니다. 또한 계속 증가하는 데이터를 Azure에 백업하는 민첩성을 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/backup/" target="_blank">Azure.com</a> Azure Backup에 대해 자세히 알아보기</p>
+
+
+  <p>Ignite에 참석하시겠습니까? <a href="https://myignite.techcommunity.microsoft.com/sessions/81588?source=sessions">백업을 Microsoft Azure 세션을 추가합니다. Azures&rsquo; 기본 제공 데이터 보호에 대한 심층 분석을</a> 일정 작성기에 추가하고 11월 7<sup>일</sup> 목요일 오전 &ndash; 11시 45분부터 오후 12시 30분에 참석합니다.</p>

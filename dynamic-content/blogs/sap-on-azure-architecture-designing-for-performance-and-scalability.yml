@@ -1,0 +1,98 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f1d6722501d9272ffcc15662c7f84c2cef32f892
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139900934"
+Slug: sap-on-azure-architecture-designing-for-performance-and-scalability
+Title: Azure 아키텍처에서의 SAP - 성능과 확장성을 위한 설계
+Summary: Azure 아키텍처에서 훌륭한 SAP 설계에 관한 4부로 구성된 블로그 시리즈의 두 번째 시리즈입니다. 블로그 시리즈의 첫 번째 부분에서는 보안을 위한 디자인에 대한 주제를 다루었습니다.
+Content: >-
+  <p>Azure 아키텍처에서 SAP를 디자인하는 네 부분으로 구성된 블로그 시리즈 중 두 번째입니다. 블로그 시리즈의 첫 번째 부분에서는 <a href="https://azure.microsoft.com/en-us/blog/sap-on-azure-architecture-designing-for-security/" target="_blank">보안을 위한 디자인에 대한</a> 주제를 다루었습니다. Azure 아키텍처의 강력한 SAP는 보안, 성능 및 확장성, 가용성 및 복구 가능성, 효율성 및 운영의 핵심 요소에 기반을 두고 있습니다. 이 블로그는 성능 및 확장성을 위한 디자인에 중점을 줍니다.&nbsp;</p>
+
+
+  <h2>SAP용 네트워크 및 스토리지에서 Microsoft 지원</h2>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ded7d4cc-a491-46ad-a1cd-5ff48c75777e.png"><img align="right" alt="image" border="0" height="340" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f07533ad-ed4a-46d3-a442-ba56e5286e7a.png" style="border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="image" width="441"></a> Microsoft Azure는 SAP 애플리케이션을 실행하기 위한 저명한 퍼블릭 클라우드입니다. 중요 업무용 SAP 애플리케이션은 SAP 자산에 대한 규모, 민첩성 및 비용 절감을 제공하는 하이퍼스케일의 엔터프라이즈 검증 플랫폼인 Azure에서 안정적으로 실행됩니다.</p>
+
+
+  <p><a href="https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure" target="_blank">SAP HANA 인증 IaaS 클라우드 제품의</a> 가장 큰 포트폴리오를 통해 고객은 192GB에서 6TB의 메모리에 이르는 인증된 가상 머신에서 SAP HANA 프로덕션 스케일 업 애플리케이션을 실행할 수 있습니다. 또한 HANA 및 BW/4HANA의 BW와 같은 SAP HANA 스케일 아웃 애플리케이션의 경우 Azure는 최대 32TB의 총 2TB 메모리와 최대 16개의 노드의 가상 머신을 지원합니다. 현재 극단적인 규모가 필요한 고객의 경우 Azure는 SAP HANA 대규모 인스턴스를 최대 20TB(TDIv5가 있는 24TB) 및 SAP HANA 스케일 아웃을 60TB(TDIv5가 있는 120TB)까지 제공합니다.</p>
+
+
+  <p><a href="https://customers.microsoft.com/en-us/story/cona-services-partner-professional-services-azure" target="_blank">CONA Services</a>와 같은 고객은 28TB SAP HANA 스케일 아웃 구현을 사용하여 모든 퍼블릭 클라우드의 가장 큰 SAP HANA 워크로드 중 일부를 실행하고 있습니다.&nbsp;</p>
+
+
+  <h2>성능을 위한 설계</h2>
+
+
+  <p>성능은 비즈니스 프로세스를 디지털화하고 디지털 변환을 가속화하는 핵심 동인입니다. SAP ERP 또는 S/4HANA와 같은 프로덕션 SAP 애플리케이션은 효율성을 최대화하고 긍정적인 최종 사용자 환경을 보장하기 위해 성능을 발휘해야 합니다. 따라서 Azure의 SAP 애플리케이션에 대한 컴퓨팅, 스토리지 및 네트워크에 대한 자세한 크기 조정 연습을 수행해야 합니다.</p>
+
+
+  <h3>성능을 위한 컴퓨팅 디자인</h3>
+
+
+  <p>일반적으로 참조 크기 조정을 사용하거나 SAP 빠른 크기 조정기를 통해 Azure에서 구현할 SAP 시스템의 적절한 크기를 결정하는 두 가지 방법이 있습니다.</p>
+
+
+  <p>기존 온-프레미스 시스템의 경우 시스템 구성 및 리소스 사용률 데이터를 참조해야 합니다. 시스템 사용률 정보는 SAP OS 수집기에서 수집되며, SAP 트랜잭션 OS07N 및 EarlyWatch 경고를 통해 보고할 수 있습니다. 시스템 성능 및 통계 수집 도구를 활용하여 유사한 정보를 검색할 수 있습니다. 새 시스템의 경우 <a href="https://service.sap.com/quicksizer" target="_blank">SAP 빠른 크기 조정기를</a> 사용해야 합니다.</p>
+
+
+  <p>아래 링크 내에서 Azure Virtual Machines 유형당 네트워크 및 스토리지 처리량을 얻을 수도 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes?toc=%2fazure%2fvirtual-n..." target="_blank">Azure에서 Windows Virtual Machines의 크기</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes?toc=%2fazure%2fvirtual-net..." target="_blank">Azure의 Linux Virtual Machines 크기</a></li>
+  </ul>
+
+
+  <h3>고성능 스토리지 디자인</h3>
+
+
+  <p>SAPS 및 메모리 요구 사항에 따라 적절한 데이터베이스 가상 머신을 선택하는 것 외에도 스토리지 구성이 SAP 데이터베이스의 IOPS 및 처리량 요구 사항을 충족하도록 설계되었는지 확인해야 합니다. 선택한 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes?toc=%2fazure%2fvirtual-network%2ftoc.json" target="_blank">가상 머신에는</a> IOPS 및 처리량 요구 사항을 구동할 수 있는 기능이 있습니다. Azure 프리미엄 관리 디스크를 스트라이프하여 IOPS 및 처리량 값을 집계할 수 있습니다. 예를 들어 5 x P30 디스크는 25K IOPS 및 1000MB/s 처리량을 제공합니다.</p>
+
+
+  <p>SAP HANA 데이터베이스의 경우 프로덕션 시나리오와 비용에 민감한 비프로덕션 변형을 다루는 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-vm-operations-storage" target="_blank">스토리지 구성</a> 지침을 게시했습니다. 프로덕션에 대한 권장 사항에 따라 스토리지가 모든 SAP HCMT KPI를 성공적으로 통과하도록 구성되어 있는지 확인합니다. 4KB 및 16KB 블록 크기에 대한 밀리초 미만의 쓰기 대기 시간을 용이하게 하므로 /hana/log 볼륨과 연결된 디스크에서 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/how-to-enable-write-accelerator">쓰기 가속</a> 기를 사용하도록 설정해야 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d8e1917-0dab-4e0a-9ce9-f1d2c58087fd.png"><img align="right" alt="image" border="0" height="264" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/47e253bf-ed68-4bdc-84a5-0b4fa25309e0.png" style="border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="imageUltra" width="603"></a> Disks는 SAP HANA 및 모든 데이터베이스(SQL, Oracle 등)와 같은 I/O 집약적 워크로드에 일관된 성능과 짧은 대기 시간을 제공하도록 설계되었습니다. 울트라 디스크를 사용하면 프리미엄 디스크에 필요한 대로 여러 디스크를 스트라이프하지 않고도 단일 Ultra DISKS를 사용하여 최대 가상 머신 I/O 제한에 도달할 수 있습니다.</p>
+
+
+  <p>2019년 9월에 Azure Ultra Disk Storage 일반적으로 미국 동부 2, 동남 아시아, 북유럽 지역에서 <a href="https://azure.microsoft.com/en-us/blog/announcing-ultra-ssd-the-next-generation-of-azure-disks-technology-preview/" target="_blank">사용할 수</a> 있습니다. DSv3 및 ESv3 VM 유형에서 지원됩니다. Windows 및 Linux OS 호스트 모두에 대해 지원되는 최신 VM 크기에 대한 FAQ를 참조하세요. 이 <a href="https://www.youtube.com/watch?v=D8hMu4jJAwo&amp;feature=youtu.be&amp;t=3558" target="_blank">비디오에서는 Ultra Disk Storage 주요 성능을 보여</a> 줍니다.</p>
+
+
+  <h3>성능을 위한 네트워크 디자인</h3>
+
+
+  <p>Azure 공간이 증가함에 따라 단일 가용성 영역이 여러 물리적 데이터 센터에 걸쳐 있을 수 있으므로 네트워크 대기 시간이 SAP 애플리케이션 성능에 영향을 미칠 수 있습니다. PPG(근접 배치 그룹)는 Azure 컴퓨팅 리소스가 각각 가까이 물리적으로 배치되고 가능한 가장 낮은 네트워크 대기 시간(즉, SAP 애플리케이션 및 데이터베이스 VM의 공동 위치)을 달성하기 위한 논리적 그룹입니다. 자세한 내용은 PPG를 사용하여 SAP 애플리케이션을 배포하기 위한 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/sap-proximity-placement-scenarios" target="_blank">자세한 설명서를</a> 참조하세요.</p>
+
+
+  <p>SAP 배포 아키텍처 내에서PPG를 고려하고 SAP 애플리케이션 및 데이터베이스 VM에서 가속화된 네트워킹을 사용하도록 설정하는 것이 좋습니다. 가속화된 네트워킹을 사용하면 SR-IOV(단일 루트 I/O 가상화)를 가상 머신으로 구현하여 데이터 경로에서 호스트를 우회하여 네트워킹 성능을 향상시킵니다. SAP 애플리케이션 서버 간 서버 대기 시간은 <a href="https://techcommunity.microsoft.com/t5/Running-SAP-Applications-on-the/SAP-on-Azure-General-Update-March-2019/ba-p/377456" target="_blank">ABAPMeter 보고서 /SSA/CAT</a>를 사용하여 테스트할 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/expressroute/expressroute-global-reach" target="_blank">ExpressRoute Global Reach</a> 를 사용하면 온-프레미스에서 다른 지역의 Azure로 ExpressRoute 회로를 연결하여 온-프레미스 네트워크 간에 프라이빗 네트워크를 만들 수 있습니다. 글로벌 도달 범위는 SAP HANA 대규모 인스턴스 배포에 사용하여 온-프레미스에서 다른 지역에 배포된 HANA 대규모 인스턴스 단위로 직접 액세스할 수 있도록 할 수 있습니다. 또한 GlobalReach는 다른 지역에 배포된 HANA 대규모 인스턴스 단위 간의 직접 통신을 사용하도록 설정할 수 있습니다.</p>
+
+
+  <h3>확장성을 위한 디자인</h3>
+
+
+  <p>Azure Mv2 VM을 사용하면 지금 최대 208개 vCPU/6TB, 곧 12TB까지 확장할 수 있습니다. 12TB를 초과하는 데이터베이스의 경우 전용으로 제공되는 전용 운영 체제 미설치 제품인 SAP HANA HLI(대규모 인스턴스)를 제공합니다. 서버 하드웨어는 HANA TDI 인증 컴퓨팅, 네트워크 및 스토리지 인프라를 포함하는 더 큰 스탬프에 포함되며, 36개의 Intel CPU 코어/768GB 메모리에서 최대 480개 CPU 코어 및 24TB 메모리 크기까지 다양한 크기로 포함되어 있습니다.</p>
+
+
+  <h4>하이퍼스케일의 Azure 글로벌 지역</h4>
+
+
+  <p>Azure는 다른 클라우드 공급자보다 더 많은 글로벌 지역을 보유하고 있으며, 전 세계 사용자에게 애플리케이션을 더 가깝게 만들고, 데이터 보존을 유지하고, 고객에게 포괄적인 규정 준수 및 복원력 옵션을 제공하는 데 필요한 규모를 제공합니다. 2019년 3분기 현재 <a href="https://azure.microsoft.com/en-us/global-infrastructure/regions/" target="_blank">Azure는 총 54개 지역에 걸쳐 있으며 140개국에서 사용할 수 있습니다</a>.</p>
+
+
+  <p><a href="https://customers.microsoft.com/en-gb/story/carlsberg-consumer-goods-azure" target="_blank">Carlsberg Group과</a> 같은 고객은 필수 SAP 애플리케이션을 중심으로 Azure로 마이그레이션을 통해 IT를 혁신을 위한 플랫폼으로 탈바꿈시켰습니다. <a href="https://customers.microsoft.com/en-us/story/carlsberg-group-adds-security-lowers-costs-with-azure-migration-including-sap" target="_blank">Carlsberg</a>가 Azure로 마이그레이션하는 데는 700개의 서버와 350개의&mdash; 애플리케이션이 포함되었으며, 기본 SAP 데이터베이스에 대한 8테라바이트 등 1.6페타바이트의 데이터를 포함하는 필수 SAP 애플리케이션&mdash;을 포함했습니다.</p>
+
+
+  <p>이 블로그 내에서 Azure에서 SAP에 대한 성능이 뛰어나고 확장 가능한 아키텍처 디자인과 관련된 몇 가지 항목을 다루었습니다.<br>
+
+  고객이 성능이 뛰어나고 확장 가능한 아키텍처를 체계적으로 배포하기 위해 SAP 간 여정에 착수함에 따라 배포의 다양한 단계에서 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/get-started" target="_blank">SAP on Azure 설명서를</a> 심층 분석하여 SAP 애플리케이션을 호스팅하고 실행하는 데 Azure 사용에 대한 이해를 심화하는 것이 좋습니다. <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/sap-deployment-checklist" target="_blank">Azure 계획 및 배포 검사 목록의 SAP 워크로드</a>를 나침반으로 사용하여 고객의&rsquo; SAP Greenfield 배포 또는 온-프레미스에서 Azure 마이그레이션 프로젝트로의 다양한 단계를 탐색할 수 있습니다.</p>
+
+
+  <p>시리즈의 블로그 #3에서는 가용성 및 복구 가능성을 위한 디자인을 다룹니다.</p>

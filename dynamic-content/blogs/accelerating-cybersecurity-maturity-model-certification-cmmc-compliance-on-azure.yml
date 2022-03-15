@@ -1,0 +1,59 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 518b18f4c56a0144a54a175c1d32356237cf71c1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908683"
+Slug: accelerating-cybersecurity-maturity-model-certification-cmmc-compliance-on-azure
+Title: Azure에서 CMMC(사이버 보안 완성 모델 인증) 규정 준수 가속화
+Summary: "CMMC 요구 사항을 충족하도록 규정 준수 범위를 확장하고 DoD에 서비스를 제공하는 DIB 회사를 위한 새로운 CMMC 가속 프로그램을 발표합니다. \n"
+Content: >-
+  <p>가장 안전하고 규정을 준수하는 클라우드로 사용하겠다는 지속적인 약속을 이행함에 따라,&rsquo; 고객이 규정 준수를 보다 신속하게 달성할 수 있도록 사이버 보안의 진화하는 지형에 지속적으로 적응해야 합니다. 우리의 목표는 고객과 파트너에게 세계적 수준의 사이버 보안 기술, 제어 및 모범 사례를 지속적으로 제공하여 Azure 및 Azure Government뿐만 아니라 Microsoft 365 및 Dynamics 365의 네이티브 기능으로 규정 준수를 더 빠르고 쉽게 만드는 것입니다.</p>
+
+
+  <p>고객과 솔루션을 설계할 때 중요도가 높아지는 기본 구성 요소는 보다 안전하고 신뢰할 수 있는 공급망을 구축하는 것입니다. 많은 고객에게 이 영역은 새로운 도구, 자동화 및 프로세스 완성도가 조직의&rsquo; 보안 상태를 개선하는 동시에 수동 규정 준수 작업을 줄일 수 있는 영역입니다.</p>
+
+
+  <p>국방부(DoD)의 새로운 <a href="https://www.acq.osd.mil/cmmc/docs/CMMC_Model_Main_20200203.pdf" target="_blank">CMMC(사이버 보안 완성 모델 인증)</a> 를 준비하기 위해 많은 고객과 파트너는 2020년 여름에 시작될 예정인 감사를 준비하는 방법에 대한 자세한 정보를 요청했습니다.&nbsp;</p>
+
+
+  <p>DIB(방위 산업 기지)의 보안 태세를 개선하기 위해 설계된 CMMC는 계약자&rsquo; 기술 보안 제어, 프로세스 완성도, 설명서, 정책 및 현재 위치하고 지속적으로 모니터링되는 프로세스에 대한 평가가 필요합니다. 중요한 것은 CMMC는 자체 증명의 역사적 선례와 달리 독립적인 인증된 타사 평가 조직(C3PAO) 감사의 유효성 검사도 요구합니다.</p>
+
+
+  <h2>CMMC 요구 사항을 충족하도록 규정 준수 적용 범위 확장</h2>
+
+
+  <p>고객으로부터 받은 일반적인 질문은&rsquo; 다음과 같습니다 &ldquo;. Azure는 언제 CMMC 인증을 받게 됩니까?&rdquo; 그리고 &ldquo;어떤 Microsoft 클라우드 환경이 인증되나요?&rdquo;</p>
+
+
+  <p>세부 사항은 여전히 DoD 및 CMMC AB(CMMC 인증 기관)에 의해 마무리되고 있지만, 많은 CMMC 보안 컨트롤이 이러한 기존 사이버 보안 프레임워크의 제어에 직접 매핑되기 때문에 FedRAMP, NIST 800-53 및 NIST CSF와 어느 정도 상호 작용할 것으로 예상됩니다.궁극적으로 Microsoft는 사이버 보안 태세를 확신하며, C3PAO 준수를 입증하기 위해 DoD 및 CMMC AB의 지침을 면밀히 따르고 있습니다. C3PAO가 승인되고 평가 수행을 시작하도록 승인되면 신속하게 평가될 것입니다. </p>
+
+
+  <p>Microsofts&rsquo;의 목표는 세계적 수준의 사이버 보안 기술, 제어 및 모범 사례를 통해 DIB 전반에 걸쳐 사이버 보안을 지속적으로 강화하고 클라우드 고객을 Microsofts&rsquo; 보안 제어 및 최종 CMMC 인증을 상속할 수 있는 위치에 두는 것입니다. DIB 고객이 활용하는 Microsoft 클라우드 서비스에 대한 인증을 달성하기 위한 것입니다.</p>
+
+
+  <p><em>참고: 상업용 환경은 FedRAMP High용으로 인증을 받아야 하지만 CMMC 자체는 가장 적합한 환경을 선택하는 결정 요인이 되어서는 안 됩니다. 대부분의 DIB 회사는 제어된 CUI(미분류 정보)의 데이터 처리를 위해 Azure Government 및 Microsoft 365 GCC High에 가장 적합합니다.</em></p>
+
+
+  <h2>더 빠른 인증 경로를 위한 새로운 CMMC 가속 프로그램</h2>
+
+
+  <p>Microsoft CMMC 가속 프로그램은 DoD의 공급업체 역할을 하는 고객과 파트너가 사이버 보안 완성도를 개선하고, CMMC에 필수적인 사이버 비판적 사고 기술을 개발하고, Azure 및 Azure Government에 기본 제공되는 규정 준수 기능을 활용할 수 있도록 설계된 엔드투엔드 프로그램입니다.&nbsp;</p>
+
+
+  <p>이 프로그램은 규정 준수 격차를 해소하고 위험을 완화하며 사이버 보안을 보다 민첩하고 탄력적인 방어 태세로 발전시키고 CMMC 인증을 용이하게 하는 데 도움이 됩니다. 이 프로그램 내에서 사용자는&rsquo; 학습 리소스, 아키텍처 참조 및 인증 여정에 맞게 맞춤화된 자동화된 구현 도구 포트폴리오에 액세스할 수 있습니다.</p>
+
+
+  <p>프로그램에 참여하는 방법에 대한 자세한 내용은 이메일을 보내 하십시오 <a href="mailto:cmmc@microsoft.com">cmmc@microsoft.com</a>.&nbsp;</p>
+
+
+  <h2>CMMC 프레임워크에 대해 자세히 알아보기</h2>
+
+
+  <p>Microsoft 기술 커뮤니티 블로그 <a href="https://aka.ms/CMMCResponse" target="_blank">의 CMMC에 대한 심층 문서를 읽고, CMMC</a> 요구 사항을 준수하기 위해 Azure를 구현하는 방법에 대한 지속적인 지침은 Azure <a href="https://aka.ms/AzureGovBlog" target="_blank">Government 개발자 블로그</a> 를 계속 확인하세요.</p>
+
+
+  <hr>
+
+  <p><em>면책 조항: 고객은 모든 관련 법률 및 규정을 자체적으로 준수할 책임이 있습니다. 이 게시물에 제공된 정보는 법률 자문을 구성하지 않으며, 고객은 법률 또는 규정 준수와 관련된 질문에 대해 법률 고문에게 문의해야 합니다. </em></p>

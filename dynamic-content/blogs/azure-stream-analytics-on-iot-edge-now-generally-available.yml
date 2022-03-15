@@ -1,0 +1,70 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 91a16df4f095c00843944208caef0f0a42abda14
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908584"
+Slug: azure-stream-analytics-on-iot-edge-now-generally-available
+Title: 이제 IoT Edge의 Azure Stream Analytics를 일반 공급
+Summary: 오늘 IoT Edge에서 ASA(Azure Stream Analytics)의 일반 공급이 발표되어 개발자가 IoT 디바이스에 가까운 거의 실시간 분석 인텔리전스를 배포하고 디바이스에서 생성된 데이터의 전체 값을 잠금 해제할 수 있습니다.
+Content: >-
+  <p>오늘 IoT Edge에서 ASA(Azure Stream Analytics)의 일반 공급이 발표되어 개발자가 IoT 디바이스에 가까운 거의 실시간 분석 인텔리전스를 배포하고 디바이스에서 생성된 데이터의 전체 값을 잠금 해제할 수 있습니다. 이 릴리스를 통해 개발자는 Azure Stream Analytics를 사용하여 IoT Edge의 컨테이너에서 디바이스별 또는 사이트별 분석을 실행하고 클라우드에서 실행되는 대규모 디바이스 간 분석을 보완할 수 있는 스트림 처리를 위한 진정한 하이브리드 아키텍처를 빌드할 수 있습니다.</p>
+
+
+  <h2>Edge에서 스트림 분석을 실행하는 이유는 무엇인가요?</h2>
+
+
+  <p>IoT Edge의 Azure Stream Analytics는 다음과 같은 새로운 시나리오에 대한 ASA(Azure Stream Analytics)의 기능과 사용 편의성을 잠금 해제하여 클라우드 제품을 보완합니다.</p>
+
+
+  <ul>
+      <li><strong>짧은 대기 시간 명령 및 제어:</strong> 예를 들어 제조 안전 시스템은 매우 짧은 대기 시간으로 운영 데이터에 응답할 수 있어야 합니다. IoT Edge의 ASA를 사용하면 센서 데이터를 거의 실시간으로 분석하고 명령을 실행하여 변칙을 감지할 때 머신을 중지하거나 경고를 트리거할 수 있습니다.</li>
+      <li><strong>클라우드에 대한 연결 제한: </strong> 원격 마이닝 장비, 연결된 선박 또는 해양 시추와 같은 중요 업무용 시스템은 클라우드 연결이 간헐적인 경우에도 데이터를 분석하고 대응해야 합니다. IoT Edge에서 ASA를 사용하면 스트리밍 논리가 네트워크 연결과 독립적으로 실행되며 추가 처리를 위해 클라우드로 보낼 항목을 선택할 수 있습니다.</li>
+      <li><strong>제한된 대역폭:</strong> 산업용 IoT 장비 또는 연결된 자동차에서 생성된 데이터의 양이 너무 커서 데이터를 필터링하거나 미리 처리해야 클라우드로 전송될 수 있습니다. IoT Edge에서 ASA를 사용하여 클라우드로 전송해야 하는 데이터를 필터링하거나 집계하거나 변경 내용이나 변칙이 검색된 경우에만 데이터를 보낼 수 있습니다.</li>
+      <li><strong>데이터 개인 정보:</strong> 규정 준수를 위해서는 클라우드로 전송되기 전에 일부 데이터를 로컬로 익명화하거나 집계해야 할 수 있습니다. IoT Edge의 ASA를 사용하면 다양한 원본, 디바이스 또는 사용자의 데이터를 집계하고 클라우드로 데이터를 보내기 전에 개인 정보를 제거할 수 있습니다.</li>
+  </ul>
+
+
+  <p>고객은 이미 IoT Edge에서 ASA를 사용하여 이러한 시나리오를 실현하고 긍정적인 피드백을 공유하고 있습니다. NEC Corporation의 IT 플랫폼 부문 이사인 Ochiai 히로유키(Hiroyuki Ochiai)는 IoT Edge의 Azure Stream Analytics는 IoT 솔루션의 응답성을 높이는 동시에 IoT Edge에서 로컬로 데이터를 처리하여 데이터 프라이버시와 주권을 보장한다고 말 &ldquo;했습니다. Microsoft는 자체 IoT 솔루션과 NECS&rsquo; Azure Plus 컨설팅의 혜택을 받는 고객 모두에서 이 서비스를 사용할 수 있는 큰 잠재력을 봅니다.&quot;</p>
+
+
+  <h2>GA 버전의 새로운 기능&rsquo;</h2>
+
+
+  <p>IoT Edge에서 ASA가 일반 공급됨에 따라 Edge에서 프로덕션 워크로드를 지원하는 여러 가지 강력한 향상된 기능이 있습니다.</p>
+
+
+  <ul>
+      <li>안정성 및 성능이 향상되었습니다.</li>
+      <li><strong>오프라인 시나리오에 대한 지원 향상: </strong> 초기 배포 후에는 클라우드 연결 없이 IoT Edge의 ASA를 다시 시작할 수 있습니다.</li>
+      <li><strong>향상된 로깅:</strong> 이제 개발자는 문제 해결을 위해 자세한 디버그 로그를 사용하도록 설정할 수 있습니다.</li>
+      <li><strong>향상된 모니터링:</strong> 예를 들어 입력, 출력, 오류 수 및 OutputWatermarkDelay와 같은 10개의 새 메트릭을 사용하도록 설정했습니다. 또한 이제 모듈 쌍에서 ASA 작업 상태를 쿼리할 수 있습니다.</li>
+      <li><strong>쿼리 논리에 대한 간소화된 업데이트 흐름:</strong> 이전에 IoT Edge 디바이스에 배포된 ASA 작업을 업데이트하는 것이 훨씬 더 간단해졌습니다. ASA에서 작업의 논리를 업데이트한 후 IoT Hub 포털에서 몇 번의 클릭만으로 IoT Edge 배포를 업데이트할 수 있습니다.</li>
+      <li><strong>컨테이너를 다시 시작하지 않고 참조 데이터를 업데이트하는 기능:</strong> 이제 새 IoT Edge 배포를 통해 참조 데이터 위치를 업데이트할 수 있습니다.</li>
+      <li><strong>프로그래밍 방식 배포:</strong> 이제 REST API를 사용하여 ASA on IoT Edge 작업을 만들고 패키징하여&nbsp; CI/CD(지속적인 통합 및 지속적인 업데이트)를 허용할 수 있습니다.</li>
+      <li><strong>클라우드 작업과의 패리티 향상: </strong> 이전에는 클라우드 작업에만 사용할 수 있는 여러 옵션(예: GZIP 압축, JSON 형식 옵션 등)을 추가하여 클라우드와 IoT Edge 간에 작업을 보다 쉽게 이동할 수 있도록 했습니다.</li>
+  </ul>
+
+
+  <h2>기대</h2>
+
+
+  <p>새로운 GA 기능 외에도 현재 미리 보기로 제공되는 IoT Edge의 ASA에 대한 여러 가지 새로운 기능이 있습니다.</p>
+
+
+  <ul>
+      <li><strong>IoT Edge 작업에서 ASA에 대한 Visual Studio 지원:</strong> Visual Studio 사용하여 ASA Edge 작업을 만들 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-tools-for-visual-studio-edge-jobs" target="_blank">Visual Studio 문서를</a> 읽어 자세히 알아보세요.</li>
+      <li><strong>C#의 사용자 정의 함수: </strong> .NET 표준 사용자 정의 함수를 사용하면 스트리밍 파이프라인의 일부로 .NET Standard 코드를 실행할 수 있습니다. 단순 C# 클래스를 작성하거나 전체 프로젝트 및 라이브러리를 가져올 수 있습니다. 전체 작성 및 디버깅 환경은 Visual Studio에서 지원됩니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge-csharp-udf-methods" target="_blank">Azure Stream Analytics Edge 작업에 대한 .NET Standard 사용자 정의 함수 개발</a> 설명서를 &ldquo; 참조하세요.&rdquo;</li>
+      <li><strong>C# 사용자 지정 역직렬 변환기: </strong> 개발자는 C#에서 사용자 지정 역직렬 변환기를 구현하여 ASA에서 받은 이벤트를 역직렬화할 수 있습니다. 역직렬화할 수 있는 형식의 예로는 Parquet, Protobuf, XML 또는 임의의 이진 형식이 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-previews" target="_blank">Azure Stream Analytics 미리 보기 페이지를</a> 참조하세요.</li>
+      <li><strong>변칙 검색을 위한 기본 제공 기계 학습:</strong> IoT Edge의 ASA는 이제 양방향, 느린 긍정 및 느린 음수 추세 검색 외에도 급증 및 급락 검색을 지원하는 기본 제공 기계 학습 모델을 지원합니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-previews" target="_blank">Azure Stream Analytics 미리 보기 페이지를</a> 참조하세요.</li>
+  </ul>
+
+
+  <h2>지금 시작</h2>
+
+
+  <p>시작 설명서 <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-edge" target="_blank">Stream Analytics Edge</a>에 따라 몇 분 안에 시작합니다.</p>
+
+
+  <p>IoT Edge의 ASA는 2019년 2월 1일까지 무료입니다. 새 가격 책정 모델은 2019년 2월 1일 이후에 적용됩니다. 사용자 지정 가격 책정은 대규모 배포(5,000개 이상의 디바이스)에 사용할 수 있습니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/stream-analytics/" target="_blank">ASA 가격 책정 페이지에서</a> 확인할 수 있습니다.</p>

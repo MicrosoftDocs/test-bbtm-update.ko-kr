@@ -1,0 +1,101 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e02c6111c6028a199985da3e857d30b698e3f60e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907836"
+Slug: deploying-your-own-private-docker-registry-on-azure
+Title: Azure에서 자신만의 프라이빗 Docker 레지스트리 배포하기
+Summary: '6월에 Microsoft Azure Docker화된 애플리케이션을 클라우드로 쉽게 배포할 수 있도록 Linux VM의 Docker 컨테이너에 대한 지원을 추가했으며, 불과 2주 전에 Docker Open Orchestration API에 대한 Windows 서버 컨테이너 및 Azure 지원을 발표했습니다. '
+Content: >-
+  <span style="color: #ff0000;">중요 업데이트(2015년 6월 19일): </span> 다음 문서에는 이전 및 지원되지 않는 1.0 버전의 Docker 레지스트리를 배포하는 방법에 대한 오래된 지침이 포함되어 있습니다.
+
+
+   <a title="Azure Blob Storage 사용하여 Docker Registry" href="https://azure.microsoft.com/documentation/articles/virtual-machines-docker-registry-on-azure-blob-storage/"> 2.0 인스턴스를 배포하는 방법에 대한 지침은 AzureDeploying Your Own Private Docker Registry on Azuredocumentation</a>  문서를 참조하세요.
+
+
+  <hr />
+
+
+  Docker에 대한 Microsoft의 기여는 Microsoft Azure 사용자 고유의 Docker 레지스트리를 관리할 수 있는 기능이 추가되면서 빠른 속도로 계속됩니다.
+
+
+  6월에 Microsoft Azure Docker화된 애플리케이션을 클라우드로 쉽게 배포할 수 있도록 Linux VM의 Docker 컨테이너에 대한 지원을 추가했으며, 불과 2주 전에 Docker Open Orchestration API에 대한 Windows 서버 컨테이너 및 Azure 지원을 <a href="https://azure.microsoft.com/blog/2014/10/15/new-windows-server-containers-and-azure-support-for-docker/">발표</a>했습니다. 지난 주 TechEd Europe에서 Azure의 CTO인 Mark Russinovich는 곧 소스를 오픈할 계획인 Windows Docker 클라이언트의 <a href="https://azure.microsoft.com/blog/2014/10/28/new-docker-coreos-topics-linux-on-azure/">라이브 데모를 보여주었</a>습니다.
+
+
+  커뮤니티에서 컨테이너 기술과 Docker를 빠르게 채택하는 것을 보는 것은 매우 흥미롭습니다. 우리는 또한 사람들이 오픈 소스 세계에서 개발하고있는 컨테이너와 멋진 해킹에 대한 놀라운 소식을 듣고 있습니다.
+
+
+  <strong>새로운 docker 레지스트리용 Azure Storage 드라이버는</strong> 두 번째 <a href="https://blog.docker.com/2014/10/announcing-docker-global-hack-day-2/">글로벌 Docker Hack Day</a>에 대한 작업의 결과입니다. 코리 샌더스 <a href="https://azure.microsoft.com/blog/2014/11/03/a-great-week-at-teched-with-docker/">가 여기에 논의한</a> 바와 같이이 이벤트는 Docker가 매우 많이 등장한 TechEd EU와 일치했습니다. Ross Gardler는 또한 Microsoft Open Technologies, Inc. 블로그에서 Azure와 관련된 Docker 커뮤니티 뉴스의 최근 모집에서 이 기능을 설명했습니다. 그러나 블로그 항목은 기술적 세부 정보로 이동하지 않았고 코드를 개발한 날 <a href="https://github.com/ahmetalpbalkan/docker-registry-driver-azure">GitHub</a> 오픈 소스로 사용할 준비가 되었기 때문에 사용하는 방법에 대한 몇 가지 기술 지침을 제공하는 것이 좋을 것이라고 생각했습니다.
+
+  <h2><a href="https://gist.github.com/ahmetalpbalkan/8a1bc8242602d7bf1a16#what-is-a-private-docker-registry" name="user-content-what-is-a-private-docker-registry"></a>"프라이빗 Docker 레지스트리"란?</h2>
+
+  컨테이너화된 애플리케이션을 클라우드로 배송하려면 Docker 도구를 사용하여 Docker 컨테이너 이미지를 생성합니다. 컨테이너 이미지를 생성하고 이를 클라우드에 전달하는 것은 쉽지만 생성한 이미지를 안정적으로 저장하는 것은 까다롭습니다. 이러한 이유로 Docker는 클라우드에 컨테이너 이미지를 저장하는 <a href="https://hub.docker.com">Docker Hub</a> 라는 서비스를 제공하며 이러한 이미지를 사용하여 언제든지 컨테이너를 만들 수 있습니다.
+
+
+  Docker 허브는 개인 이미지를 저장하기 위한 유료 서비스이지만 Docker는 개발자의 요구를 존중하고 Docker 허브를 빌드하는 데 사용되는 오픈 소스 "<a href="https://github.com/docker/docker-registry">Docker 레지스트리</a>" 소프트웨어를 제공합니다. 컨테이너 이미지를 저장하고 제공하도록 설계되었지만 가장 중요한 부분은 사용자 고유의 프라이빗 레지스트리를 호스트할 수 있다는 것입니다. 즉, 선택한 클라우드 스토리지 공급자 또는 온-프레미스에서 호스트하려는 경우 매우 쉽게 호스트할 수 있습니다.
+
+  <h5></h5>
+
+  <h5></h5>
+
+  <h2><a href="https://gist.github.com/ahmetalpbalkan/8a1bc8242602d7bf1a16#what-does-that-mean-for-azure-customers" name="user-content-what-does-that-mean-for-azure-customers"></a>이는 Azure 고객에게 어떤 의미인가요?</h2>
+
+  지금까지는 Microsoft Azure Blob Storage 컨테이너 이미지를 저장하는 플러그 인 지원이 없었습니다. Docker 레지스트리는 기본적으로 가상 머신의 로컬 디스크에 이미지를 저장하는 로컬 파일 스토리지 플러그 인과 함께 제공합니다. 이는 이러한 이진 파일을 저장하는 가장 신뢰할 수 있는(또는 배포 가능한) 방법이 아니며 Azure Blob Storage 적합한 서비스입니다.
+
+
+  여기서 <a href="https://github.com/ahmetalpbalkan/docker-registry-driver-azure"><strong>Azure Storage Driver for Docker Registry가</strong></a> 제공됩니다. Azure Storage 계정을 사용하여 Azure Storage 있는 Docker 이미지를 Blob으로 호스트하고 Azure Storage 보안, 안정성 및 지리적 배포를 쉽게 활용할 수 있는 플러그 인입니다.
+
+  <h2><a href="https://gist.github.com/ahmetalpbalkan/8a1bc8242602d7bf1a16#setting-up-a-private-docker-registry-on-azure" name="user-content-setting-up-a-private-docker-registry-on-azure"></a>Azure에서 프라이빗 Docker 레지스트리 설정</h2>
+
+  Docker가 설치된 클라우드에 가상 머신이 없는 경우 이 자습서에 따라 Microsoft Azure Virtual Machines에서 실행되는 Docker 호스트를 가져올 수 있습니다.
+
+
+  나머지는 다소 쉽습니다. 로컬 개발 컴퓨터에서 다음 내용과 함께 파일이 호출 <code>Dockerfile</code> 된 새 폴더를 만듭니다.
+
+  <pre class="prettyprint">FROM registry
+
+  RUN pip install docker-registry-driver-azureblob</pre>
+
+  이 파일은 Docker 이미지 위에 Azure Storage 플러그 인을 번들로 묶는 새 Docker <code><a href="https://registry.hub.docker.com/u/library/registry/">registry</a></code> 이미지를 만드는 데 사용됩니다. 이 폴더에서 다음 명령을 실행하여 이 Dockerfile을 빌드합니다.
+
+  <pre class="prettyprint">export DOCKER_HOST=tcp://&lt;your-docker-host&gt;.cloudapp.net:4243
+
+  docker --tls build --tag=registry-azure .</pre>
+
+  이미지가 빌드된 후 이 이미지를 사용하여 Docker 레지스트리 서버를 실행하는 컨테이너를 시작해야 합니다. 이를 위해 다음 명령을 실행합니다.
+
+  <pre class="prettyprint">docker run -d -p 5000:5000 \
+      -e SETTINGS_FLAVOR=azureblob \
+      -e AZURE_STORAGE_ACCOUNT_NAME="&lt;account name&gt;" \
+      -e AZURE_STORAGE_ACCOUNT_KEY="&lt;account key&gt;" \
+      -e AZURE_STORAGE_CONTAINER=registry \
+      registry-azure</pre>
+  그러면 가상 머신의 포트 5000에서 수신 대기하는 클라우드에서 컨테이너가 시작되고 지정된 구성을 환경 변수로 컨테이너에 전달합니다. 그러나 새 Docker 이미지 레지스트리는 아직 외부에서 액세스할 수 없습니다.
+
+
+  포트 5000의 기본 Docker 내부 VM 엔드포인트를 포트 80의 외부 클라우드 서비스 엔드포인트에 매핑하는 Docker 호스트 Virtual Machine에 대한 엔드포인트를 만들어야 합니다. 다음을 실행하여 포털 또는 Azure 플랫폼 간 명령줄 인터페이스를 통해 이 작업을 수행할 수 있습니다.
+
+  <pre class="prettyprint">azure vm endpoint create &lt;VMname&gt; 80 5000 -n HTTP</pre>
+
+  업데이트가 완료되면 이제 프라이빗 레지스트리를 사용할 준비가 되었습니다. 사용자 <a href="https://www.youtube.com/watch?v=CAewZCBT4PI">고유의 개인 레지스트리를 사용하는 방법에</a> 대한 Docker 엔지니어 Victor Vieux의 아주 좋은 비디오 녹화가 있습니다. 자체 호스팅 Docker 레지스트리에 대한 인증 및 캐싱과 같은 추가 설정을 구성하는 설명서를 읽을 <a href="https://github.com/docker/docker-registry"><code>docker-registry</code></a> 수도 있습니다.
+
+  <h2><a href="https://gist.github.com/ahmetalpbalkan/8a1bc8242602d7bf1a16#summary" name="user-content-summary"></a>요약</h2>
+
+  지금까지는 기본 제공 또는 커뮤니티 제공 스토리지 드라이버 플러그 인을 사용하여 로컬 파일 시스템, AWS S3 또는 Google Cloud Storage 프라이빗 Docker 레지스트리를 호스트할 수 있었습니다.
+
+
+  Microsoft Open Technologies의 엔지니어인 Jeff Mendoza와 함께 하는 Docker Hack Day 프로젝트는 Azure Blob Storage 프라이빗 Docker 레지스트리를 호스팅할 수 있는 성공적인 기회를 가져왔습니다. 이 프로젝트의 소스 코드는 GitHub <a href="https://github.com/ahmetalpbalkan/docker-registry-driver-azure">오픈 소스</a>이며 Docker 레지스트리 코드베이스의 나머지 부분과 마찬가지로 Python으로 작성됩니다.
+
+
+  Docker 레지스트리 "v2"를 다시 작성하여 Azure Storage 드라이버를 기본 제공 스토리지 드라이버 중 하나로 제공하기 위해 Docker와 더 높은 수준의 Azure Storage 지원을 제공할 것이라고 발표하게 되어 기쁩니다.
+
+
+  더 많은 컨테이너 및 Docker 뉴스를 계속 지켜봐 주시기 바랍니다!
+
+  <blockquote>Azure 팀에서 오픈 소스 및 Linux를 해킹하려는 오픈 소스 애호가 및 자체 초기자를 고용하고 있습니다. 우리와 함께 작업하는 데 관심이 있는 경우 이메일을 보내주세요. <a href="mailto:ahmetb@microsoft.com">ahmetb@microsoft.com</a><em><a href="mailto:ahmetb@microsoft.com">
+
+  </a></em></blockquote>
+
+  Ahmet Alp Balkan 엔지니어, Azure Compute <a href="https://twitter.com/ahmetalpbalkan">@ahmetalpbalkan</a>

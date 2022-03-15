@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6c07a2873a58da3148f38267e939ad9b7cfca045
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902227"
+Slug: azure-site-recovery-powers-veritas-backup-exec-instant-cloud-recovery-for-disaster-recovery
+Title: Azure Site Recovery는 DR용 Veritas Backup Exec 인스턴트 클라우드 복구를 지원합니다.
+Summary: 이제 Azure Site Recovery는 Backup Exec 20.2 릴리스를 사용하여 Veritas Backup Exec ICR(Instant Cloud Recovery)을 지원합니다. ICR을 사용하면 Backup Exec 사용자가 온-프레미스 중단 시 빠른 장애 조치(failover)를 위해 Azure에서 자동으로 업데이트된 가상 머신의 오프사이트 복제본을 쉽게 만들 수 있습니다. Backup Exec 고객은 ICR을 사용하는 동적 재해 복구 플랫폼으로서 Azure의 이점을 실현하는 중요 비즈니스용 애플리케이션에 대해 RPO(복구 지점 목표) 및 RTO(복구 시간 목표)를 최소화할 수 있습니다.
+Content: >-
+  <p>Microsoft <a href="https://azure.microsoft.com/services/site-recovery/" target="_blank">ASR(Azure Site Recovery)은 Azure</a> 및 온-프레미스에서 실행되는 애플리케이션에 대해 DRaaS(재해 복구 as a Service)를 제공합니다. ASR을 사용하면 규정 준수를 손상시키지 않고 IT 중단 중에 애플리케이션 가동 중지 시간을 줄일 수 있습니다. ASR은 Linux, Windows, VMware 및 Hyper-V 가상 머신 및 물리적 서버에서 온-프레미스 애플리케이션에 대한 포괄적인 적용 범위를 제공합니다.</p>
+
+
+  <p>이제 Azure Site Recovery는 <a href="https://aka.ms/be-202-release" target="_blank">Backup Exec 20.2</a> 릴리스를 사용하여 <a href="https://aka.ms/be-landing-page" target="_blank">Veritas Backup Exec</a> ICR(Instant Cloud Recovery)을 지원합니다. ICR을 사용하면 Backup Exec 사용자가 온-프레미스 중단 시 빠른 장애 조치(failover)를 위해 온-프레미스 가상 머신에 대한 연속 복제를 Azure로 쉽게 구성할 수 있습니다. Backup Exec 고객은 ICR을 사용하여 동적 재해 복구 플랫폼으로 Azure의 이점을 실현하는 중요 비즈니스용 애플리케이션에 대해 RPO(복구 지점 목표) 및 RTO(복구 시간 목표)를 최소화할 수 있습니다.</p>
+
+
+  <p>인스턴트 클라우드 복구에는 Azure 구독이 필요하며 VMware 및 Hyper-V Virtual Machines를 지원합니다. ICR은 친숙한 Backup Exec 콘솔에서 직접 요약 보기, 모니터링, 복제 상태 세부 정보 및 주요 작업을 제공합니다. Azure Portal로 이동하여 고급 모니터링 및 장애 조치(failover) 작업을 수행할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5f575b16-a943-46ae-9c62-6ddd4496a8f8.jpg"><img alt="be-console" border="0" height="548" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b99dd5b7-9b56-4602-a36f-bd4459831e78.jpg" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="be-console" width="627"></a></p>
+
+
+  <p>Azure에 대한 Backup Exec 인스턴트 클라우드 복구는 ASR을 사용할 수 있는 모든 <a href="https://aka.ms/asr-supported-regions" target="_blank">Azure 지역에서</a> 사용할 수 있습니다. <a href="https://aka.ms/be-202-download" target="_blank">Backup Exec 20.2 평가판 버전을</a> 다운로드하여 시작합니다.</p>
+
+
+  <h2 style="color: rgb(80, 80, 80); line-height: 1.2; font-family: &quot;Segoe UI&quot;, segoeui, &quot;Segoe WP&quot;, tahoma, arial, sans-serif; font-size: 24px; font-style: normal; font-weight: 600; margin-top: 24px; margin-bottom: 12px; box-sizing: inherit;">관련 링크 및 추가 콘텐츠</h2>
+
+
+  <ul>
+   <li>Veritas <a href="https://aka.ms/backupexec-icr-announcement" target="_blank">Backup Exec 20.2 Insant Cloud Recovery</a> 발표 블로그 게시물</li>
+   <li>Veritas Backup Exec 20.2<a href="https://aka.ms/asr-be-new" target="_blank">의 새로운&#39;</a></li>
+   <li>Backup Exec <a href="https://www.veritas.com/content/support/en_US/doc/59226269-132544165-0/v132005227-132544165">Instant Cloud Recovery 설명서</a></li>
+   <li><a href="https://docs.microsoft.com/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises" target="_blank">VMware 가상 머신에 대한</a> Azure Site Recovery 설명서</li>
+   <li><a href="https://docs.microsoft.com/azure/site-recovery/hyper-v-prepare-on-premises-tutorial" target="_blank">Hyper-V 가상 머신에 대한</a> Azure Site Recovery 설명서</li>
+  </ul>

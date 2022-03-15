@@ -1,0 +1,75 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c600e824b75b7027f8871a4f6f5bbef01f508bc3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901750"
+Slug: azure-service-fabric-at-microsoft-build-2018
+Title: Microsoft Build 2018의 Azure Service Fabric
+Summary: 2년 전 //Build 2016에서는 Service Fabric 일반적으로 사용할 수 있게 했으며, 그 이후로 광범위한 산업에서 기업 고객과 함께 엄청난 성장을 이루었습니다.
+Content: >-
+  <p>2년 전 //Build 2016에서는 <a href="https://azure.microsoft.com/en-us/blog/azure-service-fabric-is-ga/">Service Fabric 일반적으로 사용할 수</a> 있게 했으며,&rsquo; 그 이후로 <a href="https://customers.microsoft.com/en-us/search?sq=service%20fabric&amp;ff=&amp;p=5&amp;so=story_publish_date%20desc">다양한 산업에서 엔터프라이즈 고객</a>들이 Service Fabric&rsquo; 광범위한 기능을 활용하여 <a href="https://customers.microsoft.com/en-us/story/alaska-airlines-improves-services-in-the-cloud-using-containers-and-azure-service-fabric">리프트/시프트 및 현대화</a>, <a href="https://customers.microsoft.com/en-us/story/asos-retail-and-consumer-goods-azure">중요 비즈니스용 SaaS</a> 빌드, <a href="https://customers.microsoft.com/en-us/story/tencent-telecommunications-azure-service-fabric-windows-server-en">게임 앱</a> 변환, 안전한 <a href="https://customers.microsoft.com/en-us/story/societe-generale-complex-financial-simulation-platform-expands-on-azure-service-fabric-architecture">쓰기 기능을 활용했습니다. 금융 플랫폼을 사용하고</a> Azure에서 <a href="https://customers.microsoft.com/en-us/story/honeywell-builds-microservices-based-thermostats-on-azure">확장 가능한 IoT 솔루션을 만듭니다</a>.</p>
+
+
+  <p>현재 Service Fabric Azure Cosmos <a href="https://azure.microsoft.com/en-us/services/cosmos-db/">DB</a>, Azure SQL Database, 비즈니스용 Skype 같은 많은 Azure 및 <a href="https://azure.microsoft.com/en-us/services/sql-database/">Microsoft 서비스</a> 지원하며, 100만 개 이상의 애플리케이션을 호스팅하고 매일 수백만 개의 코어를 실행합니다. 비즈니스에 중요한 애플리케이션을 위한 플랫폼입니다. 2개월도 채 되지 않아 Service Fabric(250만 개 이상의 코드 줄 모두)에 대한 전체 코드 베이스를 <a href="https://blogs.msdn.microsoft.com/azureservicefabric/2018/03/14/service-fabric-is-going-open-source/">오픈 소스</a>로 GitHub 완전히 개방된 개발 프로세스로의 여정을 시작했습니다.</p>
+
+
+  <p>Microsoft Build 2018에서는 앞으로 진행 중인 공지 사항 및 업데이트를 공유하게 되어 기쁩니다.</p>
+
+
+  <h2>Service Fabric 서버리스 기능 추가</h2>
+
+
+  <p>오늘 초, 제품 로드맵을 공유하고 Azure Service Fabric Mesh를 시연했습니다. Azure Service Fabric Mesh는 고객이 Service Fabric 사용하는 것과 동일한 안정성, 중요 업무용 성능 및 규모 조정을 제공하지만 클러스터 관리 및 패치 작업의 오버헤드는 더 이상 발생하지 않습니다. Service Fabric Mesh는 Windows 및 Linux 컨테이너를 모두 지원하여 원하는 프로그래밍 언어와 프레임워크를 사용하여 개발할 수 있습니다.</p>
+
+
+  <p>기존 워크로드를 현대화하든, 상태 저장 서비스를 사용하여 고가용성 클라우드 네이티브 애플리케이션을 빌드하든, Service Fabric Mesh를 사용하면 컨테이너에서 실행되는 마이크로 서비스를 배포하고, Visual Studio 또는 Azure Portal/CLI에서 가장 까다로운 워크로드의 요구 사항을 충족하고 사용하는 항목(초당 청구당)에 대해서만 비용을 지불할 수 있습니다. 또한 Envoy를 사용하여 마이크로 서비스 간에 지능형 라우팅을 제공합니다.</p>
+
+
+  <p>다음은 애플리케이션을 작성하고, Service Fabric 로컬로 테스트 및 디버그하고, 관리할 VM, 스토리지, 네트워크가 없는 Service Fabric Mesh에 게시하는 것이 얼마나 쉬운지 보여주는 화면 캡처입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7ed4926-7404-44f9-a4d8-b5894885225c.gif"><img alt="SeaBreeze_VSTooling_05-04" border="0" height="529" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9cfd4421-423d-4dd8-9087-96e15310bc14.gif" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SeaBreeze_VSTooling_05-04" width="835"></a><br>
+
+  <a href="https://aka.ms/sfmeshpreview"> 비공개 미리 보기</a>에 등록할 수 있으며, 공개 미리 보기는 향후 몇 주 안에 계획되어 있습니다.</p>
+
+
+  <h2>Service Fabric 클러스터에 대한 향상된 기능</h2>
+
+
+  <p>최근에 Linux에서 .NET Core 및 Java 런타임에 대한 일반 공급 기능을 제공하는 Service Fabric <a href="https://azure.microsoft.com/en-us/blog/azure-service-fabric-announcing-reliable-services-on-linux-and-rhel-support/">6.2 릴리스</a>를 출시했으며, WINDOWS 기반 클러스터 제품을 보강하기 위한 운영 체제로서 RHEL에 대한 미리 보기 지원을 제공했습니다.</p>
+
+
+  <p>Well&rsquo;은 선택한 Service Fabric 환경을 대상으로 하는 통합 개발 환경을 제공하는 Service Fabric(v6.3)의 다음 업데이트를 릴리스할 예정이며, azure의 Service Fabric 클러스터를 통해 더 많은 제어를 하고 온-프레미스에서 Service Fabric  독립 실행형 또는 Azure가 Service Fabric Mesh를 통해 인프라 및 오케스트레이션을 완전히 관리하도록 합니다. 이 Service Fabric 릴리스에는 비밀 관리 및 격리된 네트워크를 포함하여 고객이 요청한 많은 향상된 기능도 포함됩니다.</p>
+
+
+  <h2>Azure를 통해 Service Fabric 온-프레미스 클러스터 관리</h2>
+
+
+  <p>전 세계가 하이브리드 유연성을 요구함에 따라 Service Fabric 하이브리드 마이크로 서비스 플랫폼을 제공하여 개발자에게 온-프레미스 배포 옵션을 제공합니다. Microsoft&rsquo;에서 무료로 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-support">지원</a>합니다. &rsquo;이제 어디서나 실행되는 이러한 독립 실행형 클러스터를 더 쉽게 만들고 관리할 수 있습니다.</p>
+
+
+  <p>Azure(포털 및 CLI)를 통한 Service Fabric 독립 실행형 클러스터 만들기 및 관리를 다른 Service Fabric 배포와 함께 지원하여 온-프레미스, Azure 또는 다른 클라우드에서 하이브리드 클러스터 배포를 사용하도록 설정하고 있습니다. 또한&rsquo; Service Fabric 독립 실행형 제품에 Linux 지원(Ubuntu &amp; RHEL)을 추가할 예정입니다.</p>
+
+
+  <h2>Service Fabric 있는 복원력 있는 IoT Edge</h2>
+
+
+  <p>Service Fabric&rsquo; 온-프레미스 지원을 기반으로 IoT Edge 디바이스에 대한 Service Fabric 지원을 확장하는 작업을 진행합니다. IoT Edge 디바이스에 배포된 Service Fabric 사용하여 로컬 클러스터를 만들 수 있습니다. Service Fabric Azure IoT Hub를 통해 관리할 수 있는 매우 신뢰할 수 있는 IoT 에지 애플리케이션을 지원합니다. Mark Russinovichs&rsquo; //Build 세션에서 이 흥미로운 기능의 데모를 볼 수 있습니다. <a href="https://twitter.com/Azure/status/991780623894409220">Azure Datacenter 아키텍처 내부에서 설명합니다</a>.</p>
+
+
+  <h2>와서 우리를 만나</h2>
+
+
+  <p>웨&rsquo;드는 여러분의 의견을 듣는 것을 좋아합니다. //Build에 있는 경우 엑스포 홀의 Service Fabric 부스를 방문하여 피드백을 제공하거나 디자인 토론을 하거나 멋진 데모를 확인하세요. Service Fabric&rdquo; <a href="https://developer.microsoft.com/en-us/events/build">검색</a>&ldquo;하고 세션 스트림 또는 녹음/녹화를 찾을 수도 있습니다. 예를 들어 다음을 알아봅니다.</p>
+
+
+  <ul>
+   <li>BRK2111 Azure Service Fabric Azure Server Fabric Mesh에 대한 자세한 정보: 마이크로 서비스를 위한 길입니다.</li>
+   <li>MICROSOFT AZURE 사용하여 BRK2102 앱 현대화를 통해 현대화 시나리오를 사용하도록 설정하는 방법, BRK2149 컨테이너를 사용하여 Windows Server 애플리케이션 현대화 및 BRK3810 Windows 컨테이너 및 Azure 클라우드를 사용하여 기존 .NET 애플리케이션 현대화</li>
+   <li>THR2034 Accenture를 통해 고객으로부터 직접 Service Fabric 빌드할 수 있는 기능: Service Fabric Windows 컨테이너를 사용하여 애플리케이션 현대화 및 TCO 감소, THR2011 Honeywell이 스마트 자동 온도 조절기 애플리케이션을 Service Fabric 및 THR2513 ASOS.com 마이그레이션한 방법: 클라우드 사용률 향상 Service Fabric.</li>
+  </ul>
+
+
+  <p><a href="https://github.com/Microsoft/service-fabric/">오픈 소스 프로젝트에</a> 참여하여 마이크로 서비스 플랫폼을 다시 상상하고 Service Fabric Mesh의 <a href="https://aka.ms/sfmeshpreview">프라이빗 미리 보기</a>에 등록하도록 초대합니다.</p>

@@ -1,0 +1,113 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a3a95f54ff7ff63a32ec9fc142598d93ded5a17d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907679"
+Slug: migrating-data-to-microsoft-azure-files
+Title: Microsoft Azure 파일로 데이터 마이그레이션
+Summary: Azure Files를 사용하기 시작하면 많은 양의 기존 데이터를 Files 서비스로 이동해야 할 수 있습니다. 데이터를 Azure Files로 효율적으로 이동하기 위한 여러 옵션이 있으며, 선택하는 옵션은 데이터가 원래 있는 위치에 따라 달라집니다. 이 게시물에서는 이러한 옵션과 각 옵션을 사용하여 최상의 성능을 달성하는 방법에 대해 설명합니다.
+Content: >-
+  <h3><strong>Microsoft Azure 파일 정보</strong></h3>
+
+  Microsoft Azure Files는 클라우드에서 SMB2.1 프로토콜 기반 파일 공유를 노출하는 클라우드 기반 스토리지 서비스입니다. Azure에서 실행되는 애플리케이션은 이제 ReadFile 및 WriteFile과 같은 표준 및 친숙한 파일 시스템 API를 사용하여 VM 간에 파일을 쉽게 공유할 수 있습니다. 또한 다양한 하이브리드 시나리오를 여는 REST 인터페이스를 통해 파일에 동시에 액세스할 수도 있습니다. 마지막으로, Azure Files는 Blob, Table 및 Queue Services와 동일한 기술을 기반으로 빌드됩니다. 즉, Azure Files는 플랫폼에 기본 제공되는 기존 가용성, 내구성, 확장성 및 지역 중복성을 활용할 수 있습니다. 서비스는 현재 미리 보기로 제공됩니다. 서비스에 대한 자세한 내용은 <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2014/05/12/introducing-microsoft-azure-file-service.aspx">파일의 블로그 게시물을</a> 참조하세요.
+
+
+  &nbsp;
+
+  <h3>데이터 마이그레이션</h3>
+
+  Azure Files를 사용하기 시작하면 많은 양의 기존 데이터를 Files 서비스로 이동해야 할 수 있습니다. 데이터를 Azure Files로 효율적으로 이동하기 위한 여러 옵션이 있으며, 선택하는 옵션은 데이터가 원래 있는 위치에 따라 달라집니다. 이 게시물의 나머지 부분에는 이러한 옵션과 각 옵션을 사용하여 최상의 성능을 달성하는 방법에 대해 설명합니다.
+
+  <h3>1. 인터넷을 통해 온-프레미스에서 Azure Files로</h3>
+
+  파일을 복사하려면 Microsoft Azure 제공하는 <a href="https://aka.ms/AzCopy">AzCopy</a> 도구를 사용할 수 있습니다. AzCopy는 복사 작업에 가장 적합한 처리량을 보장하기 위해 다양한 최적화를 구현합니다(예: 병렬 업로드, 여러 스레드, 올바른 제한 처리 등).
+
+
+  <strong>AzCopy 명령줄의 형식은 다음과 같습니다.</strong>
+
+  <blockquote><span style="font-family: Lucida Console; font-size: small;"><strong>AzCopy</strong> &lt; <span style="color: #00b050;">원본 경로</span>&gt; &lt;<span style="color: #7030a0;">대상 URL</span>&gt; [<span style="color: #c00000;">선택적 filespec</span>] /S /DestKey:&lt;<span style="color: #0070c0;">YourKey</span>&gt;</span></blockquote>
+
+  <strong>위치</strong>: <span style="color: #00b050;">원본 경로</span> 는 <span style="color: #7030a0;">대상 URL</span> 을 마이그레이션하려는 디렉터리의 경로입니다. <span style="color: #c00000;">파일</span> 로 복사하려는 디렉터리에 대한 http URL은 이동하려는 파일에 대한 파일 필터를 지정합니다(기본값은 *.*). <span style="color: #0070c0;">YourKey</span> 는 대상 스토리지 계정 /S에 대한 스토리지 계정 키로, 원본 디렉터리 AzCopy에서 모든 디렉터리 및 하위 디렉터리를 복사하기 위한 선택적 스위치이며, 다른 명령줄 옵션도 많이 있으며 사용자 사례에 적합한 다른 항목을 사용해야 합니다. 자세한 내용은 <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2012/12/03/azcopy-uploading-downloading-files-for-windows-azure-blobs.aspx">AzCopy의 이 블로그 게시물을 참조하세요</a>.
+
+
+  <strong>다음은 c:\data 디렉터리의 파일을 Azure Files에 복사하는 예제 명령입니다</strong>.
+   <span style="font-family: Lucida Console; font-size: small;">AzCopy c:\data https://myaccount.file.core.windows.net/myshare *.* /S /DestKey:myStorageAccountKey</span>
+
+  &nbsp;
+
+  <h3>2. IaaS VM에서 Azure 파일로의 Azure 디스크</h3>
+
+  Azure의 IaaS VM에서 파일 서버 역할을 실행하는 고객은 파일 서버 자체를 관리할 필요가 없으므로 Azure 파일 서비스를 매우 매력적으로 찾고 있습니다.
+
+
+  <strong>IaaS 디스크에서 공유로 데이터를 마이그레이션하려면 다음을 수행해야 합니다. </strong>
+
+  <ol>
+      <li>VM에 디스크 연결</li>
+      <li>VM에 공유 탑재</li>
+      <li>robocopy를 사용하여 Azure 파일 공유에 데이터 복사</li>
+  </ol>
+
+  <a href="https://technet.microsoft.com/en-us/library/cc733145.aspx">Robocopy</a>는 대용량 파일 복사를 수행하기 위해 Windows 포함된 무료 및 강력한 파일 복사 유틸리티입니다.
+
+
+  <strong>사용할 명령줄 형식은 다음과 같습니다.</strong>
+
+  <blockquote><span style="font-family: Lucida Console; font-size: small;"><strong>Robocopy</strong> &lt; <span style="color: #00b050;">원본 경로</span>&gt; &lt;<span style="color: #7030a0;">dest path</span>&gt; [<span style="color: #c00000;">optional filespec</span>] /MIR /MT:<span style="color: #0070c0;">16</span></span></blockquote>
+
+  <strong>Where:</strong>
+
+  <span style="color: #00b050;">source path</span> 는 <span style="color: #7030a0;">dest 경로를</span> 복사하려는 디렉터리의 경로입니다. 대상 디렉터리 <span style="color: #c00000;">filespec</span> 은 복사하려는 파일에 대한 파일 필터를 지정합니다(기본값은 *.*). <span style="color: #0070c0;">MT </span>는 사용할 스레드 수입니다(아래 설명 참조). robocopy를 사용하는 경우 처리량을 최대화하려면 "/mt" 매개 변수를 선택해야 합니다. 이렇게 하면 복사를 수행하는 병렬 스레드 수를 제어하여 기본적으로 스토리지에 대한 IO 요청의 큐 깊이를 제어할 수 있습니다. 스레드 수가 매우 낮으면 <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2010/12/30/windows-azure-storage-architecture-overview.aspx">클라우드 아키텍처</a>의 고유한 병렬 처리를 활용할 수 있도록 서버에 충분한 요청을 큐에 대기하지 않습니다. 스레드 수가 매우 많을 경우 서버 쪽 제한이 발생할 위험이 있으므로 결국 처리량이 줄어듭니다. 테스트에서는 처리량을 최대화하는 데 가장 적합한 16~32 사이의 큐 깊이를 발견했습니다.
+
+
+  &nbsp;
+
+  <h4>방지할 메서드:</h4>
+
+  xcopy 또는 Windows Explorer를 사용하여 Azure Files에 대용량 파일 복사본을 수행하는 것이 최적이 않은 것으로 나타났습니다. 이러한 도구는 NTFS 파일 시스템에 대한 파일 복사에 적합하지만 Azure Files로 복사하기에 충분한 병렬 처리를 제공하지는 않습니다. Azure Files는 고도로 병렬 IO를 지원하므로 동시 복사본을 수행하는 스레드가 많을수록 성능이 훨씬 향상됩니다. 올바른 스레드 수와 함께 robocopy를 사용하면 복사에 대한 처리량이 훨씬 더 높아져 데이터를 전송하는 총 시간이 짧아질 수 있습니다.
+
+
+  &nbsp;
+
+  <h3>3. Azure Blob에서 Azure 파일로</h3>
+
+  Azure Blob에서 Azure File로 데이터를 이동하는 가장 빠른 방법은 AzCopy를 사용하는 것입니다. 대상 스토리지 계정과 동일한 데이터 센터의 VM에서 AzCopy를 실행해야 합니다.
+
+
+  <strong>이 작업을 수행하기 위한 예제 AzCopy 명령은 다음과 같습니다.</strong>
+
+  <blockquote><span style="font-family: Lucida Console; font-size: small;"><strong>AzCopy</strong> https://myaccount1.blob.core.windows.net/mycontainer Z:\mydirectory *.* /SourceKey:myStorageAccountKey</span></blockquote>
+
+  파일 공유가 Z 드라이브에 매핑된 것으로 가정합니다.
+
+
+  &nbsp;
+
+
+  이 경우 데이터는 VM에 다운로드된 다음 Azure Files에 복사됩니다.
+
+
+  AzCopy를 사용하는 방법에 대한 자세한 내용은 위의 섹션 1에서 논의를 참조하세요. Blob 및 SAS와 같은 다른 Blob 관련 옵션에 대한 명령줄 옵션을 보려면 "<span style="font-family: Lucida Console; font-size: small;">AzCopy /?"를 사용하여 AzCopy</span>를 실행합니다.
+
+
+  &nbsp;
+
+  <h3>4. 클라우드 드라이브에서 Azure Disk로</h3>
+
+  <a href="https://azure.microsoft.com/blog/2010/02/01/beta-release-of-windows-azure-drive/">클라우드 드라이브</a> 는 2010년에 미리 보기로 출시되었습니다. 이를 통해 고객은 Azure Cloud Services를 사용하여 페이지 Blob을 Azure의 웹 및 작업자 역할에 드라이브로 탑재할 수 있습니다. Azure Files 릴리스를 사용하면 이제 Cloud Drive에서 지원하는 모든 시나리오를 Azure Files를 사용하여 더 효율적으로 처리할 수 있습니다. 클라우드 드라이브는 2015년에 더 이상 사용되지 않으므로 여전히 클라우드 드라이브를 사용하여 데이터를 Azure Files로 마이그레이션하는 것이 좋습니다. 데이터를 이동하는 방법은 VHD를 사용하여 Azure VM에서 데이터를 이동하는 것과 매우 유사합니다.
+
+  <ol>
+      <li>클라우드 드라이브를 사용하여 Blob을 디스크로 탑재(대부분의 고객은 웹 또는 작업자 역할 설정의 일부로 이 작업을 수행함)</li>
+      <li>VM에 공유를 탑재합니다. 공유를 만들고 탑재하는 방법에 대한 블로그 <a href="https://blogs.msdn.com/b/windowsazurestorage/archive/2014/05/12/introducing-microsoft-azure-file-service.aspx">게시물을</a> 참조하세요.</li>
+      <li>Robocopy를 사용하여 데이터를 복사합니다. 최대 처리량은 Robocopy 사용에 대한 섹션 3과 "/mt" 매개 변수를 참조하세요.</li>
+  </ol>
+
+  &nbsp;
+
+
+  Azure Files로 데이터를 이동하는 이러한 옵션이 데이터를 파일 서비스로 효율적으로 이동하고 서비스를 사용하여 애플리케이션 및 비즈니스에 대한 새로운 시나리오를 사용하도록 설정하면서 기존 시나리오를 최적화하는 데 도움이 되기를 바랍니다.
+
+
+  &nbsp;

@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0ac4ec1809b8b28dce3e39839c8d5090d29a155d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901029"
+Slug: new-features-in-azure-application-insights-metrics-explorer
+Title: Azure Application Insights 메트릭 탐색기의 새로운 기능
+Summary: 지난 몇 주 동안 애플리케이션 Insights 메트릭 탐색기는 메트릭을 시각화하기 위한 더 많은 옵션을 허용하고 차트 구성을 간소화하는 몇 가지 새로운 기능을 도입했습니다. 여기에는 새 항목이 포함됩니다.
+Content: >-
+  <p>지난 몇 주 동안 <a href="https://docs.microsoft.com/en-us/azure/application-insights/app-insights-metrics-explorer">애플리케이션 Insights 메트릭 탐색기는 메트릭</a>을 시각화하기 위한 더 많은 옵션을 허용하고 차트 구성을 간소화하는 몇 가지 새로운 기능을 도입했습니다. 여기에는 새로운 백분율 집계 차트, 표준 및 사용자 지정 그리드를 대시보드에 고정, 차트의 y축 경계를 제어하는 기능, 차트 설정에서 기본 및 고급 구성 옵션 정렬이 포함됩니다.</p>
+
+
+  <h2>백분율 집계 차트</h2>
+
+
+  <p>대부분의 경우 분할된 메트릭의 실제 값은 그룹의 다른 값과 비교하는 방법만큼 중요하지 않습니다. 예를 들어 실패한 요청과 성공한 요청의 백분율을 시각화할 수 있습니다. 여기서 원시 개수를 보는 대신 최대 100%까지 합산할 수 있습니다. 또는 각 서버 인스턴스에서 처리되는 HTTP 요청의 백분율 수를 확인할 수 있습니다. 이를 가능하게 하기 위해 사용자가 평균과 평균(%), 합계&rdquo; 및 &ldquo;&ldquo;합계(%)&ldquo;&rdquo;&rdquo;를 전환&ldquo;할 수 있는 새로운 백분율 집계 유형을 도입했습니다.&rdquo; 다음은 백분율 집계를 기반으로 하는 샘플 차트입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5280f623-5a5d-48a7-bdf7-a5e57553fd68.png"><img alt="image" border="0" height="330" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d3fcd0be-ec70-458e-b7d0-822c94909236.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="이미지" width="667"></a></p>
+
+
+  <p>백분율 집계를 구성하려면 그룹화를 켜고 차트 설정의 집계 드롭다운 선택기에서 백분율 집계를 선택해야 합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f1d01d6d-37f5-4173-8297-4638349b2605.png"><img alt="Percentage Aggregation and Grouping" border="0" height="628" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3fef6982-c418-40b7-bafd-7be8d91274dd.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="백분율 집계 및 그룹화" width="393"></a></p>
+
+
+  <h2>사용자가 실제로 보고 싶어하지 않는 한 덜 일반적으로 사용되는 고급 설정 숨기기</h2>
+
+
+  <p>새 애플리케이션 Insights 사용자로부터 적발한 일반적인 피드백은 차트 설정 창에 너무 많은 옵션이 있다는 것입니다. 이러한 옵션 중 일부는 고급이지만 숙련된 사용자에게 매우 중요합니다. 기본 및 고급 옵션을 혼합하면 필수 설정을 식별할 수 없으므로 차트를 원하는 방식으로 구성할 수 없는 새 사용자에게 불만이 생겼습니다. 수행한 작업 이제 차트 구성 위에 있는 새 확인란을 사용하여 기본 및 고급 설정을 필터링할 수 있습니다. 새 사용자는 더 간단한 보기를 보고 있습니다. 사용자가 메트릭 탐색기에 더 능숙해지면 차트 세부 정보 대화 상자 위에 있는 확인란을 선택하여 고급 설정을 추가할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1ba37740-6767-4626-b583-4f0017b2f061.png"><img alt="image" border="0" height="517" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/01ce05c1-cf5b-4825-b2c1-aa271ade5628.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px; display: inline; padding-right: 0px" title="이미지" width="331"></a></p>
+
+
+  <h2>Azure 대시보드에 메트릭 탐색기 그리드 고정</h2>
+
+
+  <p>과거에는 메트릭 탐색기 차트를 대시보드에 고정할 수 <a href="https://docs.microsoft.com/en-us/azure/application-insights/app-insights-dashboards">있습니다</a>. 이제 차트 고정 외에도 그리드를 고정할 수도 있습니다. 이 작지만 매우 유용한 아이콘을 사용하면 그리드 형식으로 더 잘 표현되는 메트릭을 사용하여 대시보드를 사용자 지정할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/77822b6a-e89e-4a33-916e-ff20ba8341be.png"><img alt="image" border="0" height="353" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4b377e25-2a96-4b70-9a14-4266dee248b5.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px; display: inline; padding-right: 0px" title="이미지" width="728"></a></p>
+
+
+  <h2>차트에서 y축의 하한 및 상한 경계를 고정하는 기능</h2>
+
+
+  <p>차트의 y축을 고정하는 것은 더 큰 값의 작은 변동을 살펴볼 때 중요합니다. 예를 들어 성공적인 요청 볼륨이 99.99%에서 99.5%로 떨어지면 서비스 품질이 크게 저하될 수 있습니다. 그러나 차트 인식에서 작은 숫자 값 변동을 알아차리는 것은 어렵거나 불가능합니다. 새 옵션을 사용하면 차트의 가장 낮은 경계를 99%로 고정할 수 있으므로 이 작은 드롭이 더 명확하게 표시됩니다. 또 다른 예는 사용 가능한 메모리의 변동일 수 있습니다. 여기서 값은 기술적으로 0에 도달하지 않으므로 범위를 더 높은 값으로 수정하면 사용 가능한 메모리의 감소가 더 쉽게 발견될 수 있습니다. 아래의 두 차트는 동일한 메트릭을 복제하지만 고정된 y축 경계를 포함 또는 사용하지 않습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e93107a2-2c90-4005-bfc3-77d6350aa057.png"><img alt="image" border="0" height="327" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e177f8ca-0ec7-4860-9331-0d25cf016992.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="이미지" width="666"></a></p>
+
+
+  <p>y축 경계를 고정하려면 고급 설정을 확인하고 차트 세부 정보 대화 상자의 Y축 범위 섹션 아래에 원하는 범위를 지정해야 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d485dbc2-8fc9-48e5-9775-6945c289efa4.png"><img alt="Y-axis range settings" border="0" height="801" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/19f60dff-79f4-49ff-9348-9b962fe32ee1.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Y축 범위 설정" width="398"></a></p>

@@ -1,0 +1,260 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ed032f7d72268e6a54fc0df1c83b166adc8c990d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908477"
+Slug: dash-live-streaming-with-azure-media-service
+Title: Azure Media Service를 사용한 DASH 라이브 스트리밍
+Summary: 이 문서에서는 Azure Media Service에서 사용하도록 설정된 라이브 스트리밍 DASH 기능과 라이브 및 주문형 비디오 적응 스트리밍을 모든 유형의 웹 브라우저 및 새 디바이스에 제공하는 방법에 중점을 둡니다. DASH 라이브 스트리밍은 이제 공개 미리 보기에 사용할 수 있으며 미리 보기 기간 이후에 일반 서비스 수준 계약으로 "일반 공급"으로 전환됩니다.
+Content: >-
+  이 문서에서는 Azure Media Service에서 사용하도록 설정된 라이브 스트리밍 DASH 기능과 DASH 표준에 대한 지원을 추가하는 모든 유형의 웹 브라우저 및 새 디바이스에 라이브 및 주문형 적응 스트리밍을 제공하는 데 사용할 수 있는 방법에 중점을 둡니다.DASH 라이브 스트리밍은 이제 공개 미리 보기에 사용할 수 있으며 미리 보기 기간 이후에 일반 서비스 수준 계약으로 "일반 공급"으로 전환됩니다.
+
+
+  DASH 출력은 Azure Media Services 모든 라이브 및 VOD 스트리밍에 대한 런타임 옵션입니다.플레이어는 각 URL 요청에 DASH 형식 태그를 포함하여 DASH 미디어 프레젠테이션 설명 매니페스트 및 호환되는 ISO 기본 미디어 파일 형식 "미디어 세그먼트"를 요청할 수 있습니다.동일한 파일 또는 라이브 스트림은 URL 형식 태그에 해당 형식을 표시하여 Microsoft 부드러운 스트리밍, Apple HLS 또는 Adobe HDS에서 배달할 수 있습니다.이렇게 하면 레거시 플레이어 및 형식과의 호환성을 유지하면서 새 브라우저 및 디바이스에 DASH를 도입할 수 있습니다.짧은 대기 시간 라이브 스트리밍과 효율적인 다중 플랫폼 지원에는 미디어 세그먼트를 실시간으로 동적으로 패키징하는 기능이 필수적입니다.
+
+
+  라이브 채널, 라이브 인코더 및 스트리밍 원본 서버를 사용하여 Azure Media 계정을 설정하는 방법에 대한 자세한 내용은 Jason Suess의 우수한 블로그 <a href="https://azure.microsoft.com/blog/2014/09/10/getting-started-with-live-streaming-using-the-azure-management-portal/" target="_blank">인 "Azure Media Management Portal을 사용하여 라이브 스트리밍 시작"을 참조하세요.</a>  Azure Media 원본 서버는 Azure CDN 포함하여 CDN(Content Delivery Networks)를 사용하여 수백만 개의 동시 스트림을 지원할 수 있습니다.
+
+  <h2>DASH 스트리밍이란?</h2>
+
+  DASH는 "HTTP를 통한 동적 스트리밍"의 약어입니다.DASH는 국제 표준 <a href="https://standards.iso.org/ittf/PubliclyAvailableStandards/c065274_ISO_IEC_23009-1_2014.zip" target="_blank">ISO/IEC 29009-1:2014 "정보 기술 - DASH(HTTP)를 통한 동적 적응 스트리밍 - 1부: 미디어 프레젠테이션 설명 및 세그먼트 형식"</a>에 지정된 적응 스트리밍 프로토콜입니다.DASH는 이동 사진 전문가 그룹(ISO/IEC 연구 그룹 29/작업 그룹 11)인 MPEG에서 표준화되었습니다.여기에는 MPD(미디어 프레젠테이션 설명 매니페스트)에 대한 XML 스키마와 MPEG-2 전송 스트림 대한 일부 특정 프로필 및 MPEG-4 ISO 기본 미디어 파일을 포함하여 미디어를 설명하는 일반적인 옵션이 포함됩니다. ISO 미디어 프로필은 Microsoft 부드러운 스트리밍 및 Adobe HDS와 유사합니다.유사성 때문에 부드러운, 플래시 및 PrimeTime 플레이어는 큰 수정 없이 DASH의 ISO 미디어 프로필에 대한 지원을 추가할 수 있었습니다.
+
+
+  적응 스트리밍은 다양한 비디오 디바이스가 각각 여러 옵션에서 호환되는 오디오 및 비디오 인코딩을 선택할 수 있고 네트워크 및 디바이스가 지원할 수 있는 최고 품질의 연속 비디오를 배달하기 위해 네트워크 조건에 따라 더 높거나 낮은 비트 전송률을 동적으로 선택할 수 있기 때문에 인터넷을 통해 비디오의 폭발적인 증가를 가능하게 했습니다. HTTP 적응 스트리밍은 웹 서버 및 CDN(Content Delivery Network)을 활용하여 추가 서버 및 백본 로드 없이 동일한 캐시된 미디어 세그먼트에서 수백만 개의 동시 스트림을 지원합니다.
+
+
+  DASH 표준은 인터넷 비디오 배달을 위한 단일 형식을 개발하기 위해 참여하는 모든 주요 비디오 사양 조직 및 산업 부문을 포함하는 공동 작업이었습니다. HTTP, PNG, 유니코드, MP3 등과 같은 다른 웹 표준과 유사하게 비비디오 미디어 형식의 웹 페이지를 전역적으로 상호 운용할 수 있게 만들었습니다.Netflix, YouTube 및 기타 대형 비디오 공급자는 ISO Media를 사용하여 DASH로 전환하고 있으며, 모든 주요 브라우저는 DASH 재생을 위한 W3C API를 지원하며, 새로운 모바일 장치, 연결된 TV 및 셋톱 박스는 DASH 재생을 지원합니다.ISO 미디어와 DASH는 인터넷을 통해 TV 콘텐츠를 제공하기 위해 방송사 및 장비 제조 업체에 의해 채택되었습니다. Silverlight 및 Flash와 같은 브라우저 플러그 인은 보안 및 복잡성 이유로 더 이상 사용되지 않으므로 독점 스트리밍 형식을 대체하려면 HTML5 브라우저에서 스크립팅된 DASH 재생에 대한 기본 지원이 필요합니다.
+
+
+  게시자와 브로드캐스터의 목표는 HTML5 브라우저를 사용하는 모든 디바이스에 DASH 및 대화형 웹 환경을 스트리밍하는 단일 HTML5 웹 페이지를 만드는 것입니다.각 유형의 디바이스에 대해 별도의 애플리케이션을 개발하고 지원하는 경우 비용이 많이 들기 때문에 새 HTML5 브라우저가 충분한 시장 점유율에 도달하면 단일 웹 페이지가 여러 앱을 대체할 수 있습니다.
+
+  <h2>DASH 스트리밍은 "그냥 작동"합니까?</h2>
+
+  아니요.
+
+
+  DASH는 기본적으로 프레젠테이션을 설명하지만 미디어 형식, 디코딩, 적응 전환 동작, 플레이어 구현 또는 상호 운용성을 지정하지 않는 "도구 키트"입니다.
+
+
+  DASH 산업 포럼, 3GPP, DVB, EBU, DECE, HbbTV, DLNA 등과 같은 조직은 DASH 표준에 포함된 "ISO 미디어 라이브 프로필" 및 "ISO 미디어 주문형 프로필"에서 파생된 DASH "프로필"을 지정했습니다.DASH가 지정한 ISO 미디어 프로필은 디지털 TV, DVD 등으로 과거에 수행된 것과 유사한 특정 애플리케이션 시나리오와 전문 지식을 갖춘 다른 조직에서 일관된 파생을 가능하게 하기 위한 것이며, 일반 MPEG 표준에서 애플리케이션 사양을 파생합니다. DASH 표준의 프로필은 일반적인 프레젠테이션 타임라인에서 오디오 및 비디오 동영상 조각을 다운로드하고 동기화하기 위해 MPD에서 ISO 미디어 영화 조각이 포함된 ISO 미디어 세그먼트를 설명하는 방법을 일반적으로 지정합니다.DASH는 원활하게 전환할 수 있는 세그먼트, 적응 비트 전송률 스트리밍의 기본 요구 사항 또는 디코딩 가능한지 여부를 지정하지 않습니다.이는 DASH 표준이 지정하지 않는 파서 및 디코더 기능에 따라 달라지므로 인코딩/디코딩 상호 운용성을 위해 애플리케이션 사양이 필요합니다.
+
+
+  DASH-IF 구현 지침과 같은 사양은 DASH 콘텐츠 및 플레이어가 신뢰할 수 있는 재생을 위해 지원 및 식별할 수 있는 잘 정의된 "상호 운용성 지점"을 만들기 위해 다양한 표현, 코덱, 인코딩 매개 변수, 암호화 매개 변수, 적응 집합 제약 조건을 원활하게 전환할 수 있도록 하는 영화 조각 패키징 제약 조건을 정의합니다.
+
+
+  Azure Media Service는 DASH-IF 지침에 따라 DASH MPD 및 미디어 세그먼트를 생성합니다.Azure Media의 특정 기능 하위 집합은 가장 광범위한 배달 시나리오 및 플레이어와의 호환성을 제공하며, 확장성이 뛰어나고 사용 가능한 시스템에서 대상 광고 및 DRM 콘텐츠 보호와 같은 중요한 사용 사례를 지원합니다(즉, 100% 중복성 및 가용성으로 여러 데이터 센터에서 여러 대륙에 올림픽 및 월드컵을 제공하여 대규모로 테스트됨).
+
+  <h2>DASH Live MPD 만들기</h2>
+
+  <strong>자동!</strong>
+
+
+  아래와 유사한 DASH MPD는 RTMP 또는 부드러운 스트리밍 HTTP:(Post)와 같은 업링크 프로토콜을 사용하여 Azure 미디어 채널(수집 URL)에 전달된 오디오 및 비디오 스트림을 기반으로 자동으로 만들어집니다. 채널에서 프로그램이 스트리밍 로케이터(원본 서버)를 할당한 후 미디어 세그먼트가 요청될 때 CSF 영화 조각으로 패키지된 MP4 스트림 또는 다중 비트 전송 인코딩된 영화 조각을 푸시합니다.자세한 내용은 <a href="https://azure.microsoft.com/blog/2014/09/10/getting-started-with-live-streaming-using-the-azure-management-portal/" target="_blank">"Azure Media Management Portal을 사용하여 라이브 스트리밍 시작"을 참조하세요.</a>
+
+
+  AVC 코딩된 비디오 시퀀스의 기간은 비디오 세그먼트 기간을 결정하므로 약 2초여야 하며, 2초 세그먼트는 비디오 코덱 효율성과 균형 잡힌 빠른 비트 전송률 적응에 최적입니다.또한 두 번째 세그먼트는 라이브 인코더에서 비디오 프레임이 도착하는 것과 플레이어에 대한 프레젠테이션 사이에 비교적 짧은 대기 시간을 허용합니다.실제 대기 시간은 각 플레이어의 버퍼링 논리와 네트워크 연결의 안정성에 따라 달라집니다.대기 시간은 일반적으로 몇 초에서 30초까지 어디서나 조정됩니다.Azure Media Service는 "실시간" 세그먼트 주소 지정 및 MPD 세그먼트 타임라인을 사용하기 때문에 플레이어는 아직 사용할 수 없는 세그먼트를 요청할 위험 없이 실시간 스트림의 "라이브 에지"에 조인할 수 있도록 마지막으로 사용할 수 있는 미디어 세그먼트를 확실하게 알고 있습니다.아직 사용할 수 없는 세그먼트를 요청하면 CONTENT DELIVERY NETWORK(CDN) 및 원본 서버 간에 HTTP 404(찾을 수 없음) 오류가 연속되므로 수천 명의 플레이어가 반복하는 경우 서비스 거부 공격과 같은 네트워크를 막을 수 있습니다. 플레이어 클록을 원본 서버 클록으로 동기화하는 데 의존하는 DASH 주소 지정 체계는 최악의 경우 클록 오류를 초과하는 추가 안전 여백으로 "백오프"해야 하지만 세그먼트 타임라인은 추가 대기 시간을 방지합니다.
+
+
+  미리 보기 기간이 시작되면 AAC 오디오 및 AVC 비디오의 간단한 트랙 조합이 지원되지만 일반 공급이 발표되기 전에 여러 트랙 및 추가 코덱의 유효성이 검사됩니다. CEA-608/708 캡션은 플레이어에게 자막 배달을 위해 AVC 스트림의 SEI 메시지에 포함될 수 있습니다.단일 기간 MPD는 DASH, Smooth, HLS 및 HDS에서 동등한 동시 프레젠테이션을 사용하도록 지원됩니다.일관된 이벤트 메시지 형식을 사용하면 브로드캐스트 비디오(예: SCTE-35, VMAP)에 이미 있는 프로그램 삽입 메시지를 모든 플랫폼에 전달하여 플레이어가 DASH 관련 솔루션인 여러 마침표에 의존하지 않고 광고 삽입 등을 수행할 수 있습니다.
+
+
+  수집된 미디어 및 메타데이터는 DASH 형식 태그(format=mpd-time-csf)가 있는 매니페스트가 다음과 같은 스트리밍 로케이터와 함께 요청될 때마다 MPD를 생성하는 데 사용됩니다.
+
+  <blockquote> &lt;https:// your 스트리밍 로케이터 urlyour&lt;&gt;/ presentation name.ism&gt;/manifest(format=mpd-time-csf)</blockquote>
+
+  라이브 프레젠테이션은 MPD를 약간 변경하여 VOD 프레젠테이션에 사용할 수 있는 자산을 생성합니다(예: "정적"으로 변경<a href="mailto:MPD@type">MPD@type</a>, 대신 <a href="mailto:MPD@availabilityStartTime">MPD@availabilityStartTime</a>추가<a href="mailto:MPD@presentationDuration">MPD@presentationDuration</a>, 있는 경우 제한 제거<a href="mailto:MPD@timeshiftBufferDepth">MPD@timeshiftBufferDepth</a>).
+
+
+  DASH 라이브 프로필은 라이브 및 VOD 배달 모두에 편리하지만 DASH "주문형 프로필"은 VOD 배달로 제한되며 동적 광고 삽입 또는 각 ISO Media 파일에 저장된 바이트 범위 인덱스를 무효화하는 기타 런타임 변경용으로 설계되지 않았습니다. Azure Media Service는 라이브 및 주문형 배달 시나리오의 전체 범위에 대한 단일 솔루션을 제공하고, 저장된 미디어 재사용 및 편집을 최적화하고, 단일 프로필의 플레이어 구현 및 테스트를 간소화하기 때문에 DASH "ISO 미디어 라이브 프로필"을 사용합니다.
+
+
+  또한 Azure Media Service는 Mingfei Yan의 블로그 <a href="https://azure.microsoft.com/blog/2014/09/10/announcing-public-availability-of-azure-media-services-content-protection-services/" target="_blank">"Azure Media Services Content Protection Services의 공개 가용성 발표"</a>에 설명된 대로 오디오 및 비디오 스트림 및 PlayReady DRM 라이선스의 일반적인 암호화와 그녀의 블로그에 설명된 조건부 액세스 봉투 암호화를 지원합니다. <a href="https://mingfeiy.com/playready">"PlayReady를 서비스로 발표하고 AES 동적 암호화 Azure Media Services".</a>
+
+  <h2>Azure Media Live 스트리밍 MPD 예제</h2>
+
+  <h3>주목할 만한 기능:</h3>
+
+  <ol>
+   <li>독립 오디오 및 비디오 세그먼트를 사용하여 플레이어 세그먼트 접합 및 독립 트랙 스토리지 및 조합을 간소화하는 DASH "ISO 미디어 라이브 프로필"을 준수합니다.</li>
+   <li>라이브 인코딩 및 업데이트(<a href="mailto:MPD@type=”dynamic">MPD@type="동적</a>").</li>
+   <li>MPD는 시작 시 다운로드해야 하며, 플레이어에게 미디어 세그먼트의 이벤트 메시지 상자('emsg')로 알림을 받을 때만 다운로드할 수 있습니다.업데이트 기간 0(<a href="mailto:MPD@minimumUpdatePeriod=”PTS0S">MPD@minimumUpdatePeriod="PT0S</a>") 및 &lt;InbandEventStream&gt; 요소는 서버가 필요한 경우(예: 라이브 프레젠테이션의 끝에) MPD 업데이트 이벤트를 전송함을 나타냅니다.단순 플레이어는 미디어 스트림에서 업데이트 이벤트를 무시하고 대신 세그먼트 기간(예: 2초마다)과 거의 동일한 빈도로 MPD 업데이트를 다운로드할 수 있지만, 이로 인해 네트워크 효율성이 낮아지고 대기 시간이 더 길어집니다.</li>
+   <li>각 MPD 버전은 이벤트 메시지 MPD 만료 시간과 비교하여 MPD 업데이트가 필요한지 여부를 확인하는 것으로 식별 <a href="mailto:MPD@publishTime">MPD@publishTime</a>됩니다.</li>
+   <li>서버는 이 예제에서 라이브 에지 뒤에서 4분의 PVR 시간 이동 버퍼 깊이를 유지 관리합니다(기본값은 녹화된 모든 비디오에 임의로 액세스할 수 있는 무한 PVR 버퍼임).</li>
+   <li><a href="mailto:MPD@availabilityStartTime">MPD@availabilityStartTime</a> 는 라이브 프레젠테이션이 시작된 UTC 시간이며 모든 미디어 트랙/적응 집합의 동기화를 위한 MPD 프레젠테이션 시간도 0입니다.</li>
+   <li><a href="mailto:AdaptationSet@bitstreamSwitching=”true">AdaptationSet@bitstreamSwitching="true</a>"이므로 시작 시 적응 집합당 하나의 초기화 세그먼트만 처리해야 합니다.비트 전송률 스위치에서는 다시 초기화가 필요하지 않으며 세그먼트의 연속 시퀀스는 유효한 ISO 미디어 CSF(일반 스트리밍 형식) 파일을 형성합니다.DECE DMEDIA <a href="https://www.uvvuwiki.com/doc/sites/default/files/CFFMediaFormat-1.1r1.pdf" target="_blank">"공용 파일 형식 &amp; 미디어 형식 사양"을 참조하세요</a> .이로 인해 기존 디코더를 사용하는 최상의 성능과 다양한 플레이어 간에 가장 원활한 비트 전송률 전환이 발생하며, 그 중 일부는 미디어 파이프라인 및 디코더가 다시 초기화될 때 결함이 발생할 수 있습니다.</li>
+   <li><strong>&lt;SegmentTemplate&gt;</strong> 을 사용하면 플레이어가 새 재생 목록을 다운로드하지 않고 다음 세그먼트 주소를 계산하여 다음 URL을 가져올 수 있습니다.URL은 $Time$ 대체 매개 변수를 각 세그먼트 시작의 미디어 프레젠테이션 시간으로 확인하여 구성됩니다.미디어 프레젠테이션 시간은 ISO 미디어 트랙 시간 표시줄의 정수로 표현되는 타임스탬프인 모든 CSF 미디어 세그먼트의 트랙 조각 디코딩 시간 상자('tfdt')와 <a href="mailto:AdaptationSet@timescale">AdaptationSet@timescale</a> ISO 미디어 트랙 XML 표현에 저장됩니다.Azure Media Service에서 제공하는 형식은 URL 형식 태그(예: "./Fragments(video=$Time$,format=mpd-time-csf)"에 의해 결정됩니다.이 경우 시간 주소 지정을 사용하는 MPD 및 미디어 세그먼트 및 CSF 미디어 세그먼트를 나타냅니다. URL은 문서 상대이므로 편집을 통해 동일한 MPD를 다른 루트 URL(스트림 로케이터 URL)에 배치할 수 있습니다.</li>
+   <li><strong>&lt;SegmentTimeline&gt;</strong> 은 적응 집합의 미디어 타임라인을 유지 관리하며 적응 집합의 각 세그먼트 시작 시간과 기간을 나열하여 스플라이스, 장면 검색, 삭제된 세그먼트 및 기타 라이브 인코딩 현실로 인한 가변 기간 세그먼트를 정확한 타임스탬프에 제공합니다. 정확한 세그먼트 타임라인을 사용하면 동일한 라이브 피드에서 작동하는 독립 인코더와 서버 간에 세그먼트 타임스탬프 및 URL을 동기화하고 광고 삽입과 같은 이벤트의 시간 기반 동기화를 수행할 수도 있습니다.이 특성은 @t UTC @availabilityStartTime와 일치하는 기간의 첫 번째 세그먼트의 미디어 타임스탬프를 식별합니다. 이 경우 단일 마침표가 0부터 시작됩니다.세그먼트 타임라인은 유연한 미디어 시간대 및 시작 지점을 지원하므로 다른 프레젠테이션(예: VOD에 라이브)에 대해 라이브 인코딩된 스트림의 기간, 타임스탬프 및 시간 표시줄을 변경할 필요가 없습니다. 정확한 오디오/비디오 동기화를 위해 비디오는 음수 컴퍼지션 오프셋을 사용하여 첫 번째 샘플 프레젠테이션 시간을 각 세그먼트의 첫 번째 샘플 디코딩 시간과 같게 해야 합니다(첫 번째 샘플 디코딩 시간은 각 세그먼트의 'tfdt' 상자에 저장됨).이 예제의 비디오 SegmentTimeline은 동영상 조각 기간이 정확히 일치하여 120, 2초 세그먼트를 나타내기 때문에 매우 간결합니다(@r=119는 동일한 기간의 119회 반복을 나타낸다).이는 롤링 4분 시프트 버퍼를 채우고 MPD는 게시할 때 사용 가능한 세그먼트보다 더 많이 나열할 필요가 없습니다.</li>
+   <li>이 예제에는 <strong>비디오 적응 집합에 8개의 다른 표현</strong>이 있으며 각 표현은 원본 비트 전송률 및 이미지 크기의 일부인 비트 전송률 및 공간 하위 샘플링으로 인코딩됩니다.AVC 인코딩 및 자르기 매개 변수의 정확한 코딩을 사용하면 비교적 작은 비트 전송률 스위치를 알 수 없도록 정확한 크기 조정 및 픽셀 등록이 가능하며, 비트 전송률 감소에 비례하여 하위 샘플링은 비트 전송률이 감소함에 따라 이미지의 "연화" 이외의 코딩 아티팩트를 방지하여 인식된 시각적 품질을 유지하는 데 도움이 됩니다.</li>
+   <li>오디오 적응 집합에는 단일 표현이 있으며, 10MHz 시간 기준이 오디오 44.1kHz 트랙 시간 기준, 동기화 프레임 기간 및 세그먼트 기간의 짝수 배수가 아니기 때문에 약간 다른 Segment 요소 &lt;S&gt; @d 지속 시간의 비정상적인 패턴이 있습니다.</li>
+  </ol>
+
+  <h3>MPD 예제(DASH 미디어 프레젠테이션 설명 XML 문서)</h3>
+
+  <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+
+  &lt;MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi=<a href="https://www.w3.org/2001/XMLSchema-instance">https://www.w3.org/2001/XMLSchema-instance</a></pre>
+
+  <blockquote>
+
+  <pre class="prettyprint">profiles="urn:mpeg:dash:profile:isoff-live:2011"</pre>
+
+  <pre class="prettyprint">type="dynamic"</pre>
+
+  <pre class="prettyprint">publishTime="2014-09-11T22:16:32Z"</pre>
+
+  <pre class="prettyprint">minimumUpdatePeriod="PT0S"</pre>
+
+  <pre class="prettyprint">timeShiftBufferDepth="PT4M0S"</pre>
+
+  <pre class="prettyprint">availabilityStartTime="2014-09-09T21:36:00Z"</pre>
+
+  <pre class="prettyprint">minBufferTime="PT3S"&gt;</pre>
+
+  <pre class="prettyprint"> &lt;Period start="PT0S"&gt;
+    &lt;AdaptationSet id="1" group="1" profiles="ccff" bitstreamSwitching="true" segmentAlignment="true"</pre>
+  <pre class="prettyprint">                contentType="video" mimeType="video/mp4" codecs="avc1.64001F" maxWidth="1280" maxHeight="720" startWithSAP="1"&gt;</pre>
+
+  <pre class="prettyprint">   &lt;InbandEventStream schemeIdUri="urn:mpeg:dash:event:2012" value="1"/&gt;</pre>
+
+  <pre class="prettyprint">   &lt;SegmentTemplate timescale="10000000"</pre>
+
+  <pre class="prettyprint">                       media="QualityLevels($Bandwidth$)/Fragments(video=$Time$,format=mpd-time-csf)"</pre>
+
+  <pre class="prettyprint">                       initialization="QualityLevels($Bandwidth$)/Fragments(video=i,format=mpd-time-csf)"&gt;
+     &lt;SegmentTimeline&gt;
+      &lt;S t="1749929391643" d="20000000" r="119"/&gt;
+     &lt;/SegmentTimeline&gt;
+     &lt;/SegmentTemplate&gt;
+     &lt;Representation id="1_V_video_3036584097160919574" bandwidth="477000" width="368" height="208"/&gt;
+     &lt;Representation id="1_V_video_1525935660032550912" bandwidth="2962000" width="1280" height="720"/&gt;
+     &lt;Representation id="1_V_video_8768634852038808351" bandwidth="1427000" width="768" height="432"/&gt;
+     &lt;Representation id="1_V_video_7183729080090115923" bandwidth="331000" width="284" height="160"/&gt;
+     &lt;Representation id="1_V_video_5821161055196117281" bandwidth="688000" width="448" height="252"/&gt;
+     &lt;Representation id="1_V_video_11970265954542642125" bandwidth="991000" width="592" height="332"/&gt;
+     &lt;Representation id="1_V_video_12301116055337443231" bandwidth="2056000" width="992" height="560"/&gt;
+     &lt;Representation id="1_V_video_13845503576954141943" bandwidth="230000" width="224" height="128"/&gt;
+    &lt;/AdaptationSet&gt;
+    &lt;AdaptationSet id="2" group="5" profiles="ccff" bitstreamSwitching="true" segmentAlignment="true"</pre>
+  <pre class="prettyprint">                contentType="audio" mimeType="audio/mp4" codecs="mp4a.40.2"&gt;
+     &lt;InbandEventStream schemeIdUri="urn:mpeg:dash:event:2012" value="1"/&gt;
+     &lt;SegmentTemplate timescale="10000000"</pre>
+  <pre class="prettyprint">                       media="QualityLevels($Bandwidth$)/Fragments(audio=$Time$,format=mpd-time-csf)"</pre>
+
+  <pre class="prettyprint">                       initialization="QualityLevels($Bandwidth$)/Fragments(audio=i,format=mpd-time-csf)"&gt;
+      &lt;SegmentTimeline&gt;
+       &lt;S t="1749929389828" d="20201361"/&gt;
+       &lt;S d="19969161" r="5"/&gt;
+       &lt;S d="20201360"/&gt;
+       &lt;S d="19969162"/&gt;
+       &lt;S d="19969161"/&gt;
+       &lt;S d="19969160"/&gt;
+       &lt;S d="19969162"/&gt;
+       &lt;S d="19969161"/&gt;
+       &lt;S d="19969160"/&gt;
+       &lt;S d="19969162"/&gt;
+       &lt;S d="20201360"/&gt;
+       &lt;S d="19969161" r="5"/&gt;
+       &lt;S d="20201361"/&gt;
+       &lt;S d="19969161"/&gt;
+       &lt;S d="19969160"/&gt;
+       &lt;S d="19969162"/&gt;
+       &lt;S d="19969161" r="1"/&gt;
+       &lt;S d="19969160"/&gt;
+       &lt;S d="19969162"/&gt;
+       &lt;S d="20201360"/&gt;
+       &lt;S d="19969161" r="5"/&gt;
+       &lt;S d="20201361"/&gt;
+       &lt;S d="19969161"/&gt;
+       &lt;S d="19969160"/&gt;
+       &lt;S d="19969162"/&gt;
+       &lt;S d="19969161" r="3"/&gt;
+       &lt;S d="20201360"/&gt;
+       &lt;S d="19969161" r="5"/&gt;
+       &lt;S d="20201361"/&gt;
+       &lt;S d="19969161" r="6"/&gt;
+       &lt;S d="20201360"/&gt;
+       &lt;S d="19969161" r="5"/&gt;
+       &lt;S d="20201361"/&gt;
+       &lt;S d="19969161" r="6"/&gt;
+       &lt;S d="20201360"/&gt;
+       &lt;S d="19969161" r="5"/&gt;
+       &lt;S d="20201361"/&gt;
+       &lt;S d="19969161" r="6"/&gt;
+       &lt;S d="20201360"/&gt;
+       &lt;S d="19969161" r="6"/&gt;
+       &lt;S d="20201361"/&gt;
+       &lt;S d="19969161" r="5"/&gt;
+       &lt;S d="20201360"/&gt;
+       &lt;S d="19969161"/&gt;
+       &lt;S d="19969162"/&gt;
+       &lt;S d="19969160"/&gt;
+       &lt;S d="19969161"/&gt;
+       &lt;S d="19969162"/&gt;
+       &lt;S d="19969160"/&gt;
+       &lt;S d="19969161"/&gt;
+       &lt;S d="20201361"/&gt;
+       &lt;S d="19969161" r="5"/&gt;
+      &lt;/SegmentTimeline&gt;
+     &lt;/SegmentTemplate&gt;
+    &lt;Representation id="5_A_audio_10091442596786975675" bandwidth="160000" audioSamplingRate="44100"/&gt;
+    &lt;/AdaptationSet&gt;
+   &lt;/Period&gt;
+  &lt;/MPD&gt;</pre>
+
+  </blockquote>
+
+  <h2>기능 직접 사용해 보기</h2>
+
+  다음 작업을 수행할 수 있습니다.
+
+
+  1. Microsoft, Google 등의 최신 HTML5 브라우저에서 이 <a href="https://dashplayer.azurewebsites.net/" target="_blank">Javascript 플레이어를</a> 사용하여 라이브 스트리밍을 테스트합니다.
+
+
+  이 플레이어는 게시자가 웹 페이지에 DASH.js 스크립트를 추가하여 DASH를 스트리밍할 수 있는DASH.js <a href="https://github.com/Dash-Industry-Forum/dash.js" target="_blank"> 오픈 소스 GitHub 프로젝트를</a> 기반으로 합니다.이 플레이어는 라이브 스트리밍 지원을 통합하는 최신 개발 분기를 사용합니다.
+
+
+  2. 여기에 설명된 대로 인코더, Azure Media 계정 및 라이브 채널을 설정하여 자체 라이브 스트림 인코딩
+
+
+  <a href="https://azure.microsoft.com/blog/2014/09/10/getting-started-with-live-streaming-using-the-azure-management-portal/">"Azure 관리 포털을 사용하여 라이브 스트리밍 시작"</a>
+
+
+   3. 또한 Richard Li의 블로그에 설명된 24 x 7 라이브 스트리밍 테스트 서버를 사용하여 플레이어를 테스트합니다.
+
+
+  <a title="&quot;Live 24/7 참조 스트림 사용 가능&quot;" href="https://azure.microsoft.com/blog/2014/10/07/live-247-reference-streams-available/" target="_blank">"라이브 24/7 참조 스트림 사용 가능"</a>
+
+  <h3>채널 1</h3>
+
+  <ul>
+   <li>속성
+  <ul>
+   <li>지역: 미국 동부</li>
+   <li>timeShiftBufferDepth: 1시간</li>
+   <li>조각 크기: 2초 </li>
+  </ul>
+
+  </li>
+   <li>매니페스트 파일</li>
+   <li><a href="https://b028.wpc.azureedge.net/80B028/Samples/a38e6323-95e9-4f1f-9b38-75eba91704e4/5f2ce531-d508-49fb-8152-647eba422aec.ism/Manifest(format=mpd-time-csf)" target="_blank">MPEG-DASH</a></li>
+  </ul>
+
+  <h3>채널 2</h3>
+
+  <ul>
+   <li>속성
+  <ul>
+   <li>지역: 미국 동부</li>
+   <li>timeShiftBufferDepth: 15분</li>
+   <li>조각 크기: 2초</li>
+  </ul>
+
+  </li>
+   <li>매니페스트 파일</li>
+   <li>MPEG-DASH</li>
+  </ul>
+
+  더 많은 Microsoft DASH 플레이어 옵션은 Cenk Dingiloglu의 블로그에 설명되어 있습니다. <a href="https://blogs.iis.net/cenkd/archive/2014/04/02/announcing-microsoft-smooth-streaming-client-2-5-with-mpeg-dash-support.aspx" target="_blank">"발표: MPEG DASH를 지원하는 Microsoft 부드러운 스트리밍 클라이언트 2.5"</a>부터 시작합니다.그의 다른 블로그에서는 OSMF 플러그 인을 사용하여 Flash에서 DASH 재생, Windows Phone DASH 재생 등을 설명합니다.  Microsoft PlayReady 팀은 Android 및 iOS 시스템에서 <a href="https://www.microsoft.com/playready/features/ClientOptions.aspx" target="_blank">DASH 및 PlayReady 앱용 개발 키트</a>도 제공합니다.Azure Media Services NAB 2014에서 DASH VOD 서비스의 일반 공급과 Microsoft 및 기타 소스의 많은 DASH 플레이어가 이를 지원한다고 발표했지만, 플레이어는 이제 라이브 스트리밍에 대한 안정성을 결정하기 위해 Azure Media Live DASH 스트림으로 테스트해야 합니다.

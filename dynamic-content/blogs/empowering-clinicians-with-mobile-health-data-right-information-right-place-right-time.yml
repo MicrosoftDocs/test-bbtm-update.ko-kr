@@ -1,0 +1,96 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8650612444476a549f838c0198fd3691238a6c4f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908424"
+Slug: empowering-clinicians-with-mobile-health-data-right-information-right-place-right-time
+Title: '모바일 건강 데이터를 사용하여 임상의에게 권한 부여: 올바른 정보, 적절한 장소, 적절한 시간'
+Summary: 환자 결과를 개선하고 의료 비용을 줄이는 것은 의사, 간호사 및 전문 임상의와 같은 의료 제공자가 건강 기록, 실험실 결과 및 프로토콜의 형태로 환자 치료 시점에서 광범위한 데이터에 액세스 할 수있는 능력에 달려 있습니다.
+Content: >-
+  <p>환자 결과를 개선하고 의료 비용을 줄이는 것은 의사, 간호사 및 전문 임상의와 같은 의료 제공자가 건강 기록, 실험실 결과 및 프로토콜의 형태로 환자 치료 시점에서 광범위한 데이터에 액세스 할 수있는 능력에 달려 있습니다. Microsoft 파트너 인 Tactuum은 임상의가 적절한 정보, 적절한 장소에 적시에 액세스 할 수 있도록 하는 Quris 솔루션을 제공하여 효율적이고 오류의 여지가 적은 작업을 수행 할 수 있도록합니다.</p>
+
+
+  <p>Azure 플랫폼은 파트너가 업계 솔루션을 향상, 확장 및 빌드할 수 있는 풍부한 서비스를 제공합니다. 여기서는 한 Microsoft 파트너가 Azure를 사용하여 고유한 문제를 해결하는 방법을 설명합니다.</p>
+
+
+  <h2>정보 조각화로 인해 치료 품질이 저하됩니다.</h2>
+
+
+  <p>환자는 다리에 깊은 상처와 응급 실로 가져온다. 상처는 며칠 이고 환자는 질병의 현상을 전시하고 있습니다, 아마도 감염. 임상의로서, 당신은 병원이 상처 관리 및 가능한 감염에 대한 명확한 프로토콜을 가지고 있다는 것을 알고 있습니다. 이 정보를 빠르게 찾을 수 있는 위치를 알고 계십니까? 위키, 내부 웹 사이트 또는 바인더의 종이에 있습니까? 마지막으로, 최신인가요? 이러한 조건에서 올바른 정보를 찾는 것은 시간이 많이 걸리고 스트레스가 될 수 있습니다. 또는 더 나쁜 것은 부정확하고 오래된 것일 수 있습니다.</p>
+
+
+  <p>오늘날 많은 의료 서비스 공급자 조직에서 EHR(전자 건강 기록), 온라인 타사 사이트, 인트라넷 사이트 및 종이에 정보가 조각화되어 있습니다. 또한 일부 정보는 보안 사이트에 있을 수 있으며 모든 사용자에게 표시되지 않으며 오프라인에서 사용할 수 없는 경우 데이터가 사라집니다. 이 상황은 중요한 데이터가 너무 늦게 또는 전혀 사용할 수 없기 때문에 환자 치료의 품질에 해로울 수 있습니다. 인터넷 액세스가 있더라도 검색 엔진에서 잘못된 정보가 발생할 수 있습니다. 따라서 데이터를 사용할 수 있도록 하는 물류 문제 외에도 올바른 정보만 찾을 수 있도록 하는 것이 중요합니다. 따라서 지속적인 과제는 올바른 사람, 올바른 장소 및 적절한 시기에 올바른 정보를 얻는 것입니다.</p>
+
+
+  <h2>파일 시스템의 검색 가능성 비용</h2>
+
+
+  <p>컴퓨터, 태블릿 또는 특수 기기와 같은 최신 IT 리소스가 있는 시설조차도 정보를 검색하는 데 장애물이 있습니다. 사용자는 네트워크를 탐색하고 폴더로 터널링하여 잘못된 경우 역추적해야 합니다. 일부 폴더는 모든 사용자가 사용할 수 없거나 시간이 가장 중요할 때 사용 권한을 요청해야 할 수 있습니다. 웹 사이트 및 앱에도 권한 부여가 필요할 수 있습니다. 그렇다면 디바이스가 오프라인 상태이면 어떻게 될까요? 컴퓨터 시스템은 빠른 액세스에 고유한 장애물을 제시합니다.</p>
+
+
+  <h2>솔루션</h2>
+
+
+  <p>이 과제는 <a href="https://www.quris.com" target="_blank">Quris 임상 도우미</a>를 만든 한 Microsoft 파트너 <a href="https://www.tactuum.com/" target="_blank">인 Tactuum</a>에 대한 문제 해결이되었습니다. 워싱턴 대학과 미시간 대학을 포함한 일부 주요 병원과 협력하여 의료 문제를 해결하고 있습니다. Tactuum 웹 사이트에서 다음 설명이 제공됩니다.</p>
+
+
+  <p><em>"당사의 주력 제품을 통해 조직은 최신 지침, 프로토콜, 알고리즘, 계산기 및 임상 핸드북을 실시간으로 직원에게 푸시할 수 있습니다. 기존 임상 자원을 임상의의 손에 넣고 최신 최신 정보를 사용하고 있다는 것을 알고 있습니다."</em></p>
+
+
+  <p>Tactuum에는 몇 가지 주목할 만한 목표가 있습니다.</p>
+
+
+  <ul>
+   <li><strong>올바른 정보</strong>: 콘텐츠는 보안 보호와 함께 심사됩니다. 콘텐츠는 사용하기 쉽고 데이터 소비 인사이트가 제공됩니다.</li>
+   <li><strong>올바른 위치</strong>: 모바일 디바이스, 워크스테이션 및 EHR 시스템을 통해 필요한 위치에 사용할 수 있습니다.</li>
+   <li><strong>적절한 시간</strong>: 온/오프라인에서 사용할 수 있습니다. 온라인이 되면 실시간 업데이트가 가능해집니다.</li>
+   <li><strong>적절한 비용</strong>: 최소한의 IT 참여, 낮은 유지 관리 및 종이 또는 인쇄가 필요하지 않습니다.</li>
+  </ul>
+
+
+  <p>아래 그래픽은 시스템의 구성 요소 및 워크플로를 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/945c3402-2d27-4419-922a-ff7cc90d0561.png"><img width="886" height="511" title="CKM(임상 Kowledge Manager)용 인포그래픽" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" alt="Infographic for Clinical Kowledge Manager (CKM)" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4e2f990d-db97-40f3-85a2-7a32d63ca10a.png" border="0"></a></p>
+
+
+  <h2>이점</h2>
+
+
+  <ul>
+   <li>보다 효과적인 의사 결정(더 빠르고 신뢰할 수 있는)으로 인해 치료의 질을 향상시킵니다.</li>
+   <li>인쇄 요구 사항, 보다 쉬운 유지 관리 및 간소화된 배포 비용을 절감할 수 있습니다.</li>
+   <li>강력한 데이터 및 분석을 통한 혁신.</li>
+  </ul>
+
+
+  <p>이 솔루션은 환자 치료 시점에서 중요한 정보를 사용하여 환자 결과를 개선하여 시간과 비용을 절약 할 수 있습니다. 시애틀의 에어리프트 노스웨스트에 등록된 간호사와 Quris 사용자에 따르면 한 가지 예는 다음과 같습니다.</p>
+
+
+  <p>"시간 절약은 헤아릴 수 없습니다. 과거에는 직원, 교육자 및 의료 이사로 구성된 작업 그룹이 하드코피 "Bluebook"을 검토하고 업데이트해야 했습니다. 이것은 매우 비싸고 상당한 시간이 필요했습니다. 이제 더 작은 그룹이 정책 및 리소스를 검토하고, 업데이트를 수행하고, 즉시 사용할 수 있도록 조직의 서버에 직접 업로드합니다."</p>
+
+
+  <h2>Azure 서비스</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/global-infrastructure/regions/" target="_blank">전 세계 Microsoft Azure 및</a> 광범위한 <a href="https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings" target="_blank">규정 준수 포트폴리오</a>는 다음 주요 서비스를 포함하여 Quris 솔루션의 중추를 제공합니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/services/app-service/web/" target="_blank">Web Apps</a>: Windows 및 Linux 지원</li>
+   <li><a href="https://azure.microsoft.com/services/storage/blobs/" target="_blank">Blob Storage</a>: 여러 Blob 유형, 핫, 쿨 및 보관 계층</li>
+   <li><a href="https://azure.microsoft.com/services/active-directory/" target="_blank">Azure Active Directory</a>: 온-프레미스, 클라우드 또는 하이브리드 환경에서 작동하는 ID 서비스</li>
+   <li><a href="https://azure.microsoft.com/services/sql-database/" target="_blank">Azure SQL Database</a>: 컴퓨팅 및 스토리지에 대한 타의 추종을 불허하는 규모 및 고가용성</li>
+   <li><a href="https://azure.microsoft.com/features/xamarin/" target="_blank">Xamarin</a>: 클라우드 또는 온-프레미스의 엔터프라이즈 시스템에 앱 연결</li>
+  </ul>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>의료 업계의 Azure에 대한 자세한 내용은 <a href="https://azure.microsoft.com/industries/healthcare/?WT.mc_id=ptx-azblog-dahouldi" target="_blank">Azure for Health를</a> 참조하세요.</p>
+
+
+  <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tactuum.quris?tab=Overview" target="_blank">Quris</a>에 대한 Azure Marketplace 목록으로 이동하여 <strong>연락처를</strong> 선택합니다.</p>

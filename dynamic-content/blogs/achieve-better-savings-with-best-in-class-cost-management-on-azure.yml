@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6d2262da1d342a5e6266e7f6ccc9353cd99dc0bd
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907974"
+Slug: achieve-better-savings-with-best-in-class-cost-management-on-azure
+Title: Azure에서 동급 최고의 비용 관리를 통해 더 나은 비용 절감 달성
+Summary: 지난 주 Ignite에서 UPS, HSBC, 어니스트 & Young과 같은 고객과 파트너는 개발/테스트 프로세스 개선, 애플리케이션 현대화, SAP와 같은 중요 업무용 워크로드 실행, 기계 학습 및 AI를 통해 클라우드 투자를 한 단계 더 발전시키는 등 AZURE를 통해 IT 및 비즈니스를 어떻게 혁신하고 있는지에 대한 놀라운 이야기를 공유했습니다.
+Content: >-
+  <p>지난 주 Ignite에서 UPS, HSBC, 어니스트 &amp; 영과 같은 고객과 파트너는 Azure &ndash; 의 개발/테스트 프로세스 개선, 애플리케이션 현대화, SAP와 같은 중요 업무용 워크로드 실행, 기계 학습 및 AI를 통해 클라우드 투자를 한 단계 더 발전시키는 방법을 공유했습니다. 또한 최신 Azure 혁신 및 로드맵을 공유할 수 있는 기회도 있었습니다.</p>
+
+
+  <p>고객은 Azure를 사용하여 더 많은 작업을 수행하려고 할 때 클라우드 지출을 낮추고 최적화하고 관리하는 방법을 알고 싶어 합니다. 이러한 요구 사항을 해결하기 위해 기존 청구 모델, 새로운 무료 비용 관리 기능 및 매력적인 제품으로 Azure에서 비용을 절감하기 위해 노력하고 있습니다.</p>
+
+
+  <h2>VM에 대한 초당 청구보다 낫습니다.</h2>
+
+
+  <p>Azure에서는 Linux를 실행하는 모든 VM(가상 머신)에 요금을 청구하고 분 단위로 Windows 가장 가까운 분으로 반올림합니다. 사용하는 전체 시간(분)에 대해서만 요금이 청구됩니다. 이렇게 하면 비용을 절감하고 청구서를 간소화할 수 있습니다. 10분 59초(659초) 동안 실행된 Linux VM 또는 Windows VM을 Imagine. Azure에서는 다른 클라우드 공급자가 659초 동안 요금을 청구하는 동안 600초만 청구합니다. 사실, 우리는 몇 년 동안이 일을하고있다.</p>
+
+
+  <p>또한 Azure는 초당 청구 모델의 실제 가치를 실현하는 <a href="https://azure.microsoft.com/en-us/services/container-instances/" target="_blank">API(Azure Container Instances</a> )라는 새로운 서비스로 업계를 이끌었습니다. ACI는 <strong>몇 초 안에 시작하고</strong> 인프라 관리 없이 <strong>초당 요금이 청구되는</strong> 컨테이너를 제공합니다. 이 혁신적인 서비스에 대한 고객의 관심은 특히 Kubernetes와 같은 컨테이너 오케스트레이션 제품을 확장하는 기능으로 인해 매우 높습니다.</p>
+
+
+  <h2>무료 비용 관리 솔루션</h2>
+
+
+  <p>청구 방법 외에도 클라우드 지출을 쉽게 관리하고 최적화할 수 있습니다. Azure는 추가 비용 없이 강력한 클라우드 비용 관리 및 최적화를 제공하는 유일한 클라우드 공급자입니다. Cloudyn이라고도 하는 <a href="https://azure.microsoft.com/en-us/services/cost-management/" target="_blank">Azure Cost Management</a>를 사용하면 클라우드 지출을 모니터링, 할당 및 최적화할 수 있으므로 리소스 사용률을 최대화하고 비용 절감을 재투자하여 클라우드에서 비즈니스 우선 순위를 더욱 가속화할 수 있습니다. 예를 들어 클라우드 프로젝트를 처음 배포할 때 용량 요구 사항을 반드시 이해하지 못할 수도 있으며, 따라서 필요한 것보다 많은 리소스를 프로비전할 수 있습니다. Azure Cost Management는 Azure 지출을 관리하기 위해 무료로 사용할 수 있습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/10188709-9c84-43cc-904f-d2b95c222eda.png"><img alt="CIO dashboard screenshot v2" border="0" height="730" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8100e53b-2dbf-44ad-9feb-5c827ac11ebe.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CIO 대시보드 스크린샷 v2" width="911"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>Windows Server 워크로드에 대한 최상의 절감</h2>
+
+
+  <p>마지막으로<a href="https://azure.microsoft.com/en-us/overview/microsoft-apps-on-azure/" target="_blank">, Windows Server를 사용하는</a> 경우 Azure는 최대 82%의 비용 절감을 제공합니다. 이 비용 절감은 소프트웨어 보증을 가진 고객이 Azure에서 기존 Windows Server 라이선스를 사용할 수 있도록 하는 Azure <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">하이브리드 혜택</a>과 새로 발표된 Azure Reserved VM Instances(IS)의 조합에서 비롯됩니다. 또한 유사한 Azure 하이브리드 혜택을 SQL Server 추가 Azure 서비스로 확장하기 위해 노력하고 있습니다.</p>
+
+
+  <h2>Azure의 기타 비용 절감</h2>
+
+
+  <p>위의 예는 Azure의 비용 절감 기능의 몇 가지 예에 불과합니다. 또한 최근에 <a href="https://azure.microsoft.com/en-us/roadmap/azure-batch-low-priority-vms/" target="_blank">Azure Batch(우선 순위가 낮은 VM)의 일반 공급</a>, <a href="https://azure.microsoft.com/en-gb/pricing/reserved-vm-instances/" target="_blank">Windows 및 Linux VM용 Azure IS</a>, <a href="https://azure.microsoft.com/en-us/blog/announcing-new-azure-vm-sizes-for-more-cost-effective-database-workloads/" target="_blank">Oracle 및 SQL 라이선스용 부분 코어 크기 및</a> <a href="https://azure.microsoft.com/en-us/blog/introducing-b-series-our-new-burstable-vm-size/" target="_blank">버스트 가능한 VM</a>을 발표했습니다. 이러한 제품은 클라우드 환경을 손상시키지 않으면서 Azure에서의 배포를 보다 비용 효율적으로 만듭니다.</p>
+
+
+  <p>Azure에서 더 많은 작업을 계속할 수 있도록 훌륭한 청구 및 비용 관리 환경을 통해 비용을 절감할 수 있도록 최선을 다하고 있습니다. Azure에 대한 자세한 내용은 다음을 방문 <a href="https://www.azure.com">https://www.azure.com</a>하세요.</p>

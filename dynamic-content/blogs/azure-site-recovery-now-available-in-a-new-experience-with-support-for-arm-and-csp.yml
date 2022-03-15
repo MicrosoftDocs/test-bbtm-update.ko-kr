@@ -1,0 +1,135 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7e90b683ae706c1a866ab9b483a2e444e6adb733
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902229"
+Slug: azure-site-recovery-now-available-in-a-new-experience-with-support-for-arm-and-csp
+Title: 이제 Azure Site Recovery는 간소화된 환경과 ARM 및 CSP에 대한 지원을 제공합니다.
+Summary: '최근 업그레이드를 통해 Azure Site Recovery를 간소화된 환경으로 현재 Azure Portal에서 사용할 수 있으며 ARM(Azure Resource Manager)과 함께 작동한다는 사실을 발표하게 되어 기쁩니다. '
+Content: >-
+  <p>최근 업그레이드를 통해 Azure Site Recovery는 간소화된 환경으로 현재 Azure Portal에서 GA(일반 공급)되며 ARM(Azure Resource Manager)에서 작동한다는 사실을 발표하게 되어 기쁩니다. 이 릴리스에서는 CSP(클라우드 솔루션 공급자) 프로그램에서도 사용할 수 있습니다. 이 단계에서는 재해 복구를 민주화하는 ASR(Azure Site Recoverys&rsquo;) 임무를 추가로 수행합니다. OMS(Operations Management Suite)의 일부인 ASR을 사용하면 많은 조직에서 사용하기 쉽고 비용 효율적인 디자인을 통해 재해로부터 비즈니스를 보호할 수 있습니다.</p>
+
+
+  <p>신뢰할 수 있고 비용 효율적인 DR은 기업 및 서비스 공급자 모두에게 최우선 순위입니다. 기업은 중요 업무용 LOB 앱을 보호하려고 하지만 서비스 공급자는 데이터 센터에서 실행되는 테넌트 워크로드에 대한 추가 보호를 제공하고자 합니다. ASR은 이러한 세그먼트가 직면한 과제를 점진적으로 해결했습니다.</p>
+
+
+  <p>a) 많은 고객이 VMware, Hyper-V 및 물리적을 혼합하여 있기 때문에 다른 유형의 환경 &ndash; , ASR은 Azure 또는 보조 데이터 센터에 대한 이러한 모든 보호 기능을 지원합니다. 또한 Hyper-V의 경우 SC MM이 있거나 SCVMM 외부에서 가상 머신을 관리하는 고객은 ASR을 통해 둘 다 보호할 수 있습니다.</p>
+
+
+  <p>b) 여러 계층에 걸친 애플리케이션을 지원하기 위한 복잡한 애플리케이션 복구 &ndash; , ASR은 애플리케이션 복구를 자동화하는 복구 계획을 제공합니다.</p>
+
+
+  <p>c) 여러 지역에 세계적 수준의 데이터 센터가 있는 보조 데이터 센터가 &ndash; 없는 Azure는 이러한 애플리케이션을 보호하기 위한 이상적인 대상이며 조직이 자본 지출을 투자할 필요가 없도록 합니다.</p>
+
+
+  <h1>환경</h1>
+
+
+  <p>이 릴리스에서는 간단한 위치를 알고 개선된 포털 &ndash; 에서 ASR을 사용하고, 관심 있는 항목을 고정할 수 있으며, 작업을 저장하고 나중에 돌아와서 포털의 모든 기능을 완료 &ndash; 하려는 경우에 대비하여 여정을 저장할 수 있습니다. 이러한 움직임은 비용에 직접적인 영향을 미치고 신뢰성을 높이는 간단한 DR 약속을 향한 큰 진전입니다. <em>관리</em>&rdquo; 섹션 아래의 OMS(Backup 및 Site Recovery) 타일에서 Recovery Services 자격 증명 모음을 &ldquo; 만듭니다.</p>
+
+
+  <p>모든 기존 시나리오를 새로운 환경으로 가져오는 것 외에도 이 향상된 환경의 주요 기능은 다음과 같습니다.</p>
+
+
+  <p>1) 간소화된 &lsquo;시작 환경은&rsquo; 고객이 성공을 위해 설정되도록 설계되었습니다. DR에는 움직이는 부품이 많으며 한 단계를 놓치면 보호 또는 복구에 실패할 수 있습니다. 지금까지 재해 복구 솔루션이 부족한 시장에서 보호되지 않는 많은 워크로드로 제대로 배포되지 않는 주된 이유였습니다. 성공을 위한 설정을 보장하는 단계별 가이드가 중요하므로 시작 환경에 많은 투자를 <em>했습니다</em> .&nbsp;</p>
+
+
+  <p>환경은 먼저 보호 목표를 묻는 것으로 시작한 다음, 그에 맞게 조정된 나머지 환경을 준비합니다. 특히 원본을 준비하고, 대상이 Azure Storage 및 네트워크를 확인할 준비가 &ndash; 되었는지 확인하고, 복제 설정/정책을 서버에 연결하고, 용량 계획 도구를 사용하도록 요청합니다. 이러한 단계는 직접 고객 피드백, 사용량/오류에 대한 서비스 데이터, 성공을 위해 설정하려는 다양한 포럼 &ndash; 과 같은 원본을 기반으로 함께 연결되었으며, 데이터를 보호하기 위한 단계를 놓치지 않도록&rsquo; 포털을 설계했습니다.</p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a33ebf3-581b-4edd-88d8-715033f79046.png"><img alt="image" border="0" height="478" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67c3b76c-fa6b-46a1-8d65-9a0f43fddd82.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="504"></a></p>
+
+
+  <p>2) 맨 위 목록의 다음 항목은 스마트 기본값으로 빌드된 서버 보호를 안내하는 마법사인 보호 환경 &ndash; 입니다. 이 마법사는 원본에 대한 정보를 가져오고 검사를 수행하여 대상이 준비되었는지 확인합니다. 세&nbsp; 번째 블레이드에서 보호하려는 서버를 선택하고 네 번째 단계에서 해당 서버에 대한 정보를 제공합니다. 마지막으로, 주로 사용하려는 복제 설정을 &ndash; 제공합니다.</p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/00f96979-f31a-4b39-bf84-6501278d86d7.png"><img alt="image" border="0" height="420" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9945709-f81f-4000-b394-6d1bdc1f30bc.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="504"></a></p>
+
+
+  <p>ASRs&rsquo; 임무는 재해 복구를 민주화하는 것이며 모든 대상, 성능, 단순화, 진단 등에 대한 모든 원본을 보호하는 데 모든 라운드 투자를 통해 고객이 ASR을 활용하여 더 많은 워크로드를 보호 폴 &ndash; 드로 가져올 것으로 기대하므로 다음 집합을 보호할 때 경험이 더 똑똑해야 한다는 것입니다. 이 마법사는 선택 사항을 기억하여 더 많은 가상 머신을 보호하려는 경우에 좋습니다.</p>
+
+
+  <h1>ARM(Azure Resource Manager)</h1>
+
+
+  <p>이 릴리스에서는 ARM 스토리지 계정으로 가상 머신 및 물리적 컴퓨터를 보호할 수 있습니다. 장애 조치(failover) 시 서버는 ARM 네트워크에 연결된 RM Virtual Machines로 표시됩니다. ARM의 이점은 ASR에 적용되는 몇 가지를 나열하는 이 <a href="https://azure.microsoft.com/en-in/documentation/articles/resource-group-overview/">개요</a>&ndash; 에 자세히 설명되어 있습니다.</p>
+
+
+  <p>a) 클래식<i>을 사용하는 복구 계획 내의 모든 크기 또는 네트워크 구성의 가상 머신이 공존</i>하는 경우, 동일한 클라우드 서비스에는 몇 가지 크기가 존재할 수 없으므로 애플리케이션 복구가 어려워지거나 크기가 손상됩니다.&ndash; 예를 들어 DS 시리즈가 필요한 SQL 있고 프런트 엔드가 표준 A4에 적합하고 복구 계획에 &ndash; 배치한 경우 이러한 두 크기 &ndash; DS와 A4 &ndash; 가 클라우드 서비스에서 공존할 수 없으므로 장애 조치(failover)가 실패할 수 있습니다. 이 경우 복구 계획이 장애 조치 워크플로의&rsquo; 일부로 생성됩니다. NIC 수에 따라 네트워크 구성에 &ndash; 유사한 문제가 있습니다. 이러한 모든 불황은 ARM 아키텍처에서 해결되었습니다.</p>
+
+
+  <p>b) ARM에서 사용할 수 있는 역할 기반 액세스 제어를 사용하여 <i>리소스</i> &ndash; 에 대한 액세스를 제어하면 ARM 리소스에 대한 세분화된 액세스를 얻을 수 있습니다. 적절한 사용자에 대한 액세스 권한으로 다른 리소스 그룹을 만들고 머신이 올바른 리소스 그룹에 있는지 확인할 수 있습니다.</p>
+
+
+  <p>ARM 리소스 사용은 선택 사항입니다. 또는 기존 IaaS 배포가 있고 동일한 항목과 함께 재해 복구가 필요한 경우 클래식 리소스도 사용할 수 있습니다. ARM 및 클래식 옵션은 모든 시나리오 &ndash; VMware, 엔터프라이즈용 Hyper-V(SCVMM 기반 배포), 지점용 Hyper-V, 물리적 컴퓨터 및 AWS에서 Azure로의 마이그레이션에 사용할 수 있습니다. 또한 단일 시나리오 내에서 일부 Virtual Machines에 ARM을 사용하고 다른 가상 머신에 클래식을 사용할 수도 있습니다.</p>
+
+
+  <h1>단일 자격 증명 모음의 백업 및 Site Recovery</h1>
+
+
+  <p>백업 및 DR&nbsp; 솔루션은 조직이 BCDR 및 규정 준수 요구 사항을 충족하는 데 도움이 되는 목표 &ndash; 측면에서 밀접하게 관련되어 있습니다. 많은 고객이 이 두 가지를 모두 사용합니다. 클래식 포털에서 다른 환경뿐만 아니라 더 많은 개체를 &ndash; 관리했을 별도의 자격 증명 모음 Site Recovery 및 Backup 자격 증명 모음 &ndash; 을 만들었을 것입니다. 간소화를 목표로 이러한 환경은 이제 Recovery Services 자격 증명 모음에 병합됩니다. 이제 동일한 자격 증명 모음에서 DR 또는 백업용 서버를 보호할 수 있으며 두 환경 모두에 대해 유사합니다.</p>
+
+
+  <h1>CSP(클라우드 솔루션 공급자)</h1>
+
+
+  <p>CSP는 파트너가 Microsoft 클라우드 기술에서 솔루션 및 비즈니스를 재판매할 수 있도록 하는 제품입니다. CSP를 사용하면 파트너가 고객의&rsquo; 요구 사항에 대한 첫 번째 연락 지점이 될 수 있으며 고객 관계의 중심이 될 수 있습니다. 이를 통해 엔드 투 엔드 환경을 관리하여 고객과 강력한 관계를 구축할 수 있습니다.</p>
+
+
+  <p>비즈니스로서의 DRaaS는 파트너에 의해 널리 주도되고 있으며, DR 컨설팅에서 완전히 관리되는 DR 서비스까지 다양한 서비스를 제공하여 고객에게 상당한 가치를 제공하고 있습니다. 파트너는 UI(사용자 인터페이스)를 통한 완전한 환경 지원을 통해 CSP에서 ASR이 지원되기를 기다리고 있습니다. 현재 업데이트된 모든 ASR 시나리오는 전체 UI 지원을 통해 CSP에서 완전히 사용할 수 있으므로 대기는 확실히 끝났습니다.</p>
+
+
+  <h1>디스크 제외</h1>
+
+
+  <p>고객이 다음과 같은 질문을 &lsquo;하는 경우가 많으며, 이 볼륨을 복제하고 싶지 않은&rsquo; SQL &ndash; 큰 tempDB 볼륨이 있습니다. ASR을 사용할 수 있나요?&rsquo;, &lsquo;Azure로 보호할 때 이를 제외할 수 있는 변동 &ndash; 이 많은 페이지 파일이 있나요?&rsquo; &ldquo; 대역폭 문제가 있지만 서버를 보호하려고 합니다. 어떻게 할 수 있나요?&rdquo; 별도의 디스크 &ndash; 에 넣을 수 있는 임시 파일을 제외하여 대역폭을 저장하려고 합니다. 이 릴리스에서는 복제를 사용하도록 설정하는 동안 복제에서 볼륨을 제외할 수 있습니다. 이 기능은 가까운 장래에 VMware에서 Azure 시나리오 &ndash; 로 보호할 때 사용하도록 설정되었으며 Hyper-V 시나리오에도 이 기능을 도입할 예정입니다.</p>
+
+
+  <p style="margin-left: 40px;">&nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/54e0b02e-022f-49f7-bf37-861c599afee7.jpg"><img alt="Exclude Disk view (002)" border="0" height="216" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/75e7477c-e25a-475d-b888-c5bd9f2789f6.jpg" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="디스크 뷰 제외(002)" width="595"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>이 기능을 활용하려면 모바일 서비스가 서버에 &ndash; 설치되어 모바일 서비스가 볼륨에 대한 정보를 수집하고 ASR 서비스로 전송해야 합니다. 그러면 볼륨 목록이 표시되므로 tempDB, 페이지 파일 디스크, 임시 파일 등 해당 파일이 포함된 볼륨을 제외할 수 있습니다.  등.</p>
+
+
+  <h1>추가 Storage 형식 &ndash; Premium 및 LRS(로컬 중복 Storage) 지원</h1>
+
+
+  <p>피드백을 자주 받는 또 다른 시나리오는 &ndash; &ldquo;내 워크로드에 높은 IOP가 필요하며 Premium Storage 계정에서만 Azure에서 제공되는 시나리오입니다&rdquo;. 높은 변동이 많은 워크로드를 보호할 수 있도록 서버를 Premium Storage 계정으로 보호할 수 있습니다. 이 기능은 VMware에서 Azure로 사용하도록 설정되었으며, 가까운 장래에 이 기능을 Hyper-V 시나리오로 가져올 예정입니다. 이 기능을 사용하려면 장애 조치(failover) 후 최종 서버가 표시되는 Premium Storage 계정과 원본에서 전송된 로그를 수신하는 두 개의 스토리지 계정이 &ndash; 필요합니다.</p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3f5c3702-bca4-4cb8-9eed-71c9a6d2c874.png"><img alt="image" border="0" height="444" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d7891be1-24be-4703-9085-558525088b6a.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="447"></a></p>
+
+
+  <p>이 기능의 디자인 고려 사항을 이해하려면 동료 중 한 명이 제공하는 자세한 블로그를 확인하여 후드 아래에 있는 내용을&rsquo; 보여 줍니다.</p>
+
+
+  <p>데이터 센터 내의 중단을 방지하려면 전역 중복 스토리지를 사용하는 것이 좋습니다. 동시에, 우리는 고객이 더 나은 경제에도 불구하고 덜 중요한 응용 프로그램을 보호하기를 원한다는 것을 알고 있습니다. 이러한 요구를 충족하기 위해 모든 시나리오에서 지원되는 이 릴리스 &ndash; 에서 LRS에 대한 지원을 사용하도록 설정합니다.</p>
+
+
+  <p>요약하자면, 향상된 환경에서 ASR의 일반 공급은 고객과 파트너가 볼륨을 제외하거나 새로운 유형의 스토리지를 사용하여 경제 또는 워크로드 특성을 충족하여 대역폭을 절약하는 새로운 기능과 함께 ARM 리소스와 CSP 구독을 사용할 수 있게 해줍니다.</p>
+
+
+  <p>아래에 짧은 FAQ가 제공됩니다.</p>
+
+
+  <p><strong>Q &ndash;&nbsp; ARM 리소스에서만 이 새로운 환경을 사용할 수 있나요?</strong></p>
+
+
+  <p>기존 배포와 공존하는 경우 ARM 및 클래식/ASM 리소스에 이 환경을 사용할 수 있습니다. 또한 지원되는 모든 시나리오 &ndash; VMware/VMM/Hyper-V에서 Azure로, VMM에서 VMM까지 사용할 수 있습니다.</p>
+
+
+  <p><strong>Q &ndash; 클래식 환경을 사용하는 고객인 경우 새 Azure 환경으로 이동하려면 어떻게 해야 하나요?</strong></p>
+
+
+  <p>새 서버에서 컴퓨터를 보호하기 위해 새 Azure 환경을 사용할 수 있습니다. 클래식 환경의 기존 보호를 위해 가까운 장래에 새로운 Azure 환경으로 마이그레이션할 수 있는 기능을 릴리스할 예정입니다.</p>
+
+
+  <p><strong>Q- 이 새 릴리스와 관련하여 가격 변동이 있나요?</strong></p>
+
+
+  <p>이 릴리스는 가격 책정에 영향을 주지 않습니다. 간소화된 환경과 향상된 진단 기능으로 재해 복구 솔루션을 배포하는 데 드는 전반적인 비용이 절감됩니다.</p>

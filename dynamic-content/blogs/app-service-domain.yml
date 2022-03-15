@@ -1,0 +1,78 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5f5957ef2473a854723ecedbf4e5f74ba7a904f3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901440"
+Slug: app-service-domain
+Title: App Service 도메인의 미리 보기 발표
+Summary: App Service 도메인(미리 보기)은 Azure DNS를 활용하는 Azure 서비스에 대한 도메인을 만들고 관리하는 수명 주기를 간소화합니다.그런 다음 Azure DNS는 도메인을 호스트하는 신뢰할 수 있는 성능 및 보안 옵션을 제공합니다.
+Content: >-
+  <div>프로덕션 웹 앱의 경우 사용자에게 사용자 지정 도메인 이름을 표시할 수 있습니다. 오늘 <a href="https://portal.azure.com/#create/Microsoft.Domain" target="_blank">App Service 도메인의 미리 보기를</a> 발표합니다. App Service 도메인(미리 보기)은 Azure Portal에서 Web Apps, Traffic Manager, Virtual Machines 등과 같은 Azure 서비스에 대해 Azure DNS에서 호스트되는 도메인을 만들고 관리하는 일류 환경을 제공합니다.</div>
+
+
+  <div>&nbsp;</div>
+
+
+  <div><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/291a9f35-a896-4cd4-912e-088044a0bdc2.png"><img alt="image" border="0" height="491" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cc8d9105-b110-4d7b-a155-0be901ecb84a.png" style="background-image: none; display: inline; border-image: none" title="이미지" width="1024"></a></div>
+
+
+  <div>
+
+  <h2 aria-level="2" paraeid="{1c3cc615-5510-451a-b558-83c379a9e136}{32}" paraid="1105612751" role="heading">간소화된 도메인 관리</h2>
+
+  </div>
+
+
+  <div>
+
+  <p paraeid="{1c3cc615-5510-451a-b558-83c379a9e136}{94}" paraid="750539643">App Service 도메인(미리 보기)은 <a href="https://azure.microsoft.com/en-us/services/dns/" rel="noreferrer" target="_blank">Azure DNS</a>를 활용하는 Azure 서비스에 대한 도메인을 만들고 관리하는 수명 주기를 간소화합니다. 그런 다음 Azure DNS는 도메인을 호스트하는 신뢰할 수 있는 성능 및 보안 옵션을 제공합니다. App Service 도메인은 현재 다음 TLLD, com, net, co.uk, org, nl, in, biz, org.uk 및 co.in 제한됩니다. 도메인 만들기를 시작하려면 <a href="https://docs.microsoft.com/en-us/azure/app-service-web/custom-dns-web-site-buydomains-web-app" rel="noreferrer" target="_blank"><em>App Service용 도메인을 구입하는 방법을</em></a> 참조하세요.</p>
+
+
+  <p paraeid="{1c3cc615-5510-451a-b558-83c379a9e136}{94}" paraid="750539643">App Service 도메인을 사용하는 경우의 몇 가지 이점은 다음과 같습니다.</p>
+
+  </div>
+
+
+  <ul>
+   <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="1" data-listid="3" role="listitem">
+   <p paraeid="{1c3cc615-5510-451a-b558-83c379a9e136}{116}" paraid="514249230">하위 도메인 관리 및 할당</p>
+   </li>
+   <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="3" data-listid="3" role="listitem">
+   <p paraeid="{1c3cc615-5510-451a-b558-83c379a9e136}{130}" paraid="1850235675">자동 갱신 기능</p>
+   </li>
+   <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="4" data-listid="3" role="listitem">
+   <p paraeid="{1c3cc615-5510-451a-b558-83c379a9e136}{139}" paraid="1759250580">처음 5일 이내에 무료 취소</p>
+   </li>
+   <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="5" data-listid="3" role="listitem">
+   <p paraeid="{1c3cc615-5510-451a-b558-83c379a9e136}{149}" paraid="1547826086">Azure DNS를 사용하여 향상된 보안, 성능 및 안정성</p>
+   </li>
+   <li aria-setsize="-1" data-aria-level="1" data-aria-posinset="6" data-listid="3" role="listitem">
+   <p paraeid="{1c3cc615-5510-451a-b558-83c379a9e136}{171}" paraid="33452716">&#39;레지스트리에서 .co.in, .co.uk 등의 개인 정보를 지원하지 않는 TLL을 제외하고 &#39;개인 정보 보호&#39; 무료로 포함됩니다.</p>
+   </li>
+  </ul>
+
+
+  <div>
+
+  <p paraeid="{1c3cc615-5510-451a-b558-83c379a9e136}{233}" paraid="978018053">다음 리소스를 확인하여 도메인을 관리합니다.</p>
+
+  </div>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/dns/dns-for-azure-services">Azure 서비스에 대한 도메인 구성</a></li>
+   <li>
+   <div paraeid="{5bc1acb7-d5f5-4358-b930-8a0fd4de154e}{9}" paraid="634895423"><a href="https://docs.microsoft.com/en-us/azure/dns/dns-operations-dnszones-portal" rel="noreferrer" target="_blank">DNS 영역 관리 </a>&nbsp;</div>
+   </li>
+   <li>
+   <div paraeid="{5bc1acb7-d5f5-4358-b930-8a0fd4de154e}{14}" paraid="1616744251"><a href="https://docs.microsoft.com/en-us/azure/dns/dns-operations-recordsets-portal" rel="noreferrer" target="_blank">DNS 레코드 관리</a>&nbsp;</div>
+   </li>
+  </ul>
+
+
+  <p paraeid="{5bc1acb7-d5f5-4358-b930-8a0fd4de154e}{14}" paraid="1616744251"><a href="https://aka.ms/webapps-uservoice">UserVoice</a>에서 아이디어/피드백을 제출합니다. 제목 시작 부분에 [도메인]을 추가하세요.</p>
+
+
+  <div>&nbsp;</div>

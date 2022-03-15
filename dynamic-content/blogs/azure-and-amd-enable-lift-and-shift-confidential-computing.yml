@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7e5e2676f9786b0aae95a1bfdb8e9b689188c280
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908664"
+Slug: azure-and-amd-enable-lift-and-shift-confidential-computing
+Title: 'Azure 및 AMD, 기밀 컴퓨팅 발전의 랜드마크 발표 '
+Summary: 전 세계적으로 디지털 변환이 가속화되기 전에도 Microsoft Azure 제공하는 확장성 및 보안 이점을 통해 크고 작은 조직에서 온-프레미스 데이터 센터에서 클라우드로 데이터, 애플리케이션 및 워크로드를 마이그레이션하도록 유도했습니다.
+Content: >-
+  <p>pandemichasaccelerateddigital&nbsp;&nbsp;&nbsp; 변환은 전 세계적으로&nbsp; 그리고&nbsp;Microsoft Azure&nbsp;제공한&nbsp; 확장성&nbsp; 및 보안 이점은 많은 고객이 앞으로 나아가는 데 도움이 되었습니다.&nbsp; Azure에 있는 한 가지 핵심 원칙은 데이터가 데이터라는&nbsp; 것입니다.&nbsp;&nbsp;&nbsp;</p>
+
+
+  <p>Azure에서는 데이터 보안을 중요하게 생각하며 미사용 데이터와 비행 중인 데이터에 대한 다양한 제어를 구축했습니다.&nbsp; Confidential ComputingConsortium&nbsp;의 창립 멤버로서 Microsoft는 프로세서 자체에서&nbsp; 실행되는 데이터로 이러한 보호를 확장하는 혁신적 <a href="https://azure.microsoft.com/en-us/solutions/confidential-compute/" target="_blank">비신사</a> 컴퓨팅이기도 합니다.&nbsp; 3년&nbsp; 이상 금융 서비스, 정부,&nbsp;&nbsp; 의료&nbsp; 서비스 공급자, 심지어 messagingcompanieshave&nbsp;&nbsp;를 사용하여 다자&nbsp;간 학습과 같은 새로운 시나리오를&nbsp; 차단하고 더 중요한 애플리케이션을 클라우드로 이동했습니다.</p>
+
+
+  <p paraeid="{41a23ea0-aebc-4c7b-8624-87de5ed6d631}{138}" paraid="2128727486">오늘, 나는&nbsp; 우리가 AMD와 함께Azurecustomersthroughourtechnologypartnership&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;에&nbsp; 사용할 수있는 컨피던트 computingoptionsavailable&nbsp;&nbsp;을 더&nbsp; 해외&nbsp;화하고 있습니다, 특히&nbsp;되는&nbsp;thefirstmajor&nbsp;&nbsp; 클라우드 공급자&nbsp;toofferconfidentialvirtual<a href="https://www.youtube.com/watch?v=apx4niGQPiE" target="_blank">&nbsp;</a>&nbsp;&nbsp; machinesonthe&nbsp;&nbsp; newAMDEPYC7003&nbsp;&trade;&nbsp;&nbsp; 시리즈 프로세서.&nbsp; 이 새로운 접근 방식은 Azure Kubernetes Service의 기밀 컨테이너로서 기존 Azure 기밀 컴퓨팅&nbsp;&nbsp;을 보완하고 코드 수정 없이 새 기밀 애플리케이션을 만들 수 있는 가능성을 열어 줍니다. 그러면 기밀 애플리케이션을 만드는 프로세스가 크게 간소화됩니다.&nbsp;</p>
+
+
+  <p paraeid="{41a23ea0-aebc-4c7b-8624-87de5ed6d631}{226}" paraid="1109609068">주요 technologyenablerstothe&nbsp;&nbsp;&nbsp; AMD 중심 solutioninclude&nbsp;&nbsp; advanced security feature called Secure Encrypted Virtualization-Secure Nested Paging, 또는 SEV-SNP.&nbsp; SEV-SNPenables&nbsp;는 가상 머신&nbsp;을&nbsp; 보호하여 createatrustedexecution&nbsp;&nbsp; 환경을&nbsp; 만들고&nbsp; 3RdGen&nbsp; AMD EPYC 프로세서에서 크게 향상&nbsp;되었습니다.&nbsp;</p>
+
+
+  <p paraeid="{41a23ea0-aebc-4c7b-8624-87de5ed6d631}{226}" paraid="1109609068">이러한&nbsp;AMDEPYC-CPUpoweredAzureVM&nbsp;&nbsp;&nbsp;&nbsp;은 런타임&nbsp;에 완전히 암호화되어 itisin&nbsp;&nbsp;을 사용하는 경우에도 기밀 컴퓨팅 byprotectingyourdata&nbsp;&nbsp;&nbsp;의 약속을 충족합니다. EPYCCPU에서 생성된VMencryptionare&nbsp;&nbsp;, andsafeguarded&nbsp;,&nbsp; byadedicatedsecure&nbsp;&nbsp;&nbsp; 프로세서에 사용되는&nbsp; Theencryptionkeys&nbsp;&nbsp;.&nbsp;&nbsp; 이렇게 하면 cloud administratorsand&mdash;를 확장하여 이러한 데이터베이스에 대한 VMshave&mdash; 액세스&nbsp;&nbsp;의 워크로드,&nbsp; 앱 또는 데이터를 보장&nbsp;&nbsp;&nbsp;합니다.&nbsp;&nbsp;</p>
+
+
+  <p paraeid="{5ee4c724-cece-4f66-9584-e2260e9d8cf6}{119}" paraid="177256507">하드웨어 외에도 Azure는 Azure <a href="https://azure.microsoft.com/en-us/services/azure-attestation/" target="_blank">Attestation</a> 서비스 및 신뢰할 수 있는 출시&nbsp;를 포함한 일련의&nbsp;importantservices&nbsp;&nbsp;를 제공하여 고객에게 더 많은 도움을 줍니다.&nbsp; Azure Attestation 서비스는 하드웨어 환경이 올바르다는&nbsp;&nbsp; 증거를 수집하고, 환경이 정상 상태인 경우&nbsp; 가상 머신 이미지&nbsp;에 대한 암호 해독 키를 안전하게 해제하도록 <a href="https://docs.microsoft.com/en-us/azure/key-vault/managed-hsm/overview" target="_blank">Azure Managed HSMto</a>&nbsp;에 암호화 신호를 전송합니다.&nbsp; 그 후, thedecryptedvirtual&nbsp;&nbsp; machine bootprocess&nbsp;는&nbsp;bootkits, rootkits 및 커널 수준 맬웨어를&nbsp; 방어하기 위해&nbsp; 트러스트된 launch&nbsp;를 보호합니다.&nbsp; 이 단계에서&nbsp; 신뢰할 수 있는 launchmeasures&nbsp;&nbsp; the integrity of thevirtual&nbsp; machine imageagainst&nbsp; information stored thevTPMbeforecontinuing&nbsp;&nbsp;&nbsp; boot processes.&nbsp;</p>
+
+
+  <p paraeid="{5ee4c724-cece-4f66-9584-e2260e9d8cf6}{185}" paraid="1637994834">고객 canalsobringa&nbsp;&nbsp;&nbsp; Azure에 완전히 encrypteddisk&nbsp; 이미지,&nbsp; 이미지를 Azure 환경에 일반 텍스트로 사용할 수 없도록 보장.&nbsp; 이 시나리오에서 고객은 자체 키를 사용하여 로컬 환경에서 디스크 이미지를 준비한 다음 Azurewhile&nbsp; placingthekeysinAzure&nbsp;&nbsp;&nbsp;&nbsp;&#39;&nbsp; ssingle 테넌트 FIPS 수준 3 규정 준수&nbsp; 관리 HSM에 이미지를 업로드합니다.&nbsp;&nbsp;</p>
+
+
+  <h2 paraeid="{5ee4c724-cece-4f66-9584-e2260e9d8cf6}{227}" paraid="615937838">요약&nbsp;</h2>
+
+
+  <p paraeid="{5ee4c724-cece-4f66-9584-e2260e9d8cf6}{233}" paraid="1397904804">&nbsp;제3차&nbsp; AMD EPYCCPU&nbsp; 지원 기밀 컴퓨팅 VM을 통해 Azure 기밀 컴퓨팅 nowenablescustomers&nbsp;&nbsp;는 전체 VM을 기밀로 암호화하고&nbsp;, 코드를 다시 컴파일하지 않고 기밀성을 사용하도록 설정하고,&nbsp; Azure 관련 향상된 기능의 호스트 froma froma에서&nbsp;benefit을 사용하도록 설정합니다. 현재는 가상 머신, 컨테이너, SQL 및 그 이후의 리소스뿐만 아니라 가장 광범위한 하드웨어를 사용하여 Azure에서 기밀 워크로드를 배달할 수&nbsp; 있습니다.&nbsp;&nbsp;&nbsp;</p>
+
+
+  <p><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR37R7JFLKbBAml_g6YTMEqtUOUlFNDhFMkFDS08wWjlPREIxMVk5T1BFUy4u&amp;wdLOR=cC0EE192E-837D-4E54-8CB9-FCCD0C7B018D" target="_blank">Azure 기밀 VM의 프라이빗 미리 보기에 등록합니다</a>.</p>

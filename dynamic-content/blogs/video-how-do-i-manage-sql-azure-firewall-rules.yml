@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 19ea018fb2a936ac03adff42054c972e78b1029b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902427"
+Slug: video-how-do-i-manage-sql-azure-firewall-rules
+Title: '비디오: 어떻게 해야 하나요? SQL Azure 방화벽 규칙 관리'
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] TechNet의 Max Adams가 작성한 이 비디오에서는 SQL Azure 내재된 IP 방화벽 규칙에 대해 설명하고 SQL Azure 데이터베이스에 연결하는 방법을 보여 줍니다.'
+Content: <p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>TechNet의 Max Adams가 작성한 이 <a href="https://technet.microsoft.com/en-us/ee957683.aspx">비디오에서</a>는 SQL Azure 내재된 IP 방화벽 규칙에 대해 설명하고 Microsoft SQL Server Management Studio 2008을 사용하여 SQL Azure 데이터베이스에 연결하는 방법을 보여 줍니다.</p>

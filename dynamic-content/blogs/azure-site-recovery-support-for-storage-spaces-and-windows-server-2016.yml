@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 63d3a62d53afd2158ae8e570157220733e626044
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902222"
+Slug: azure-site-recovery-support-for-storage-spaces-and-windows-server-2016
+Title: 저장소 공간 및 Windows Server 2016 대한 Azure Site Recovery 지원
+Summary: Azure 지역의 Windows Server 2016 지원과 저장소 공간 간에 Azure Site Recovery를 발표합니다.
+Content: >-
+  <p>최근에 Azure 지역 간에 애플리케이션을 복제할 수 있는 <a href="https://azure.microsoft.com/en-in/blog/announcing-disaster-recovery-for-azure-iaas-vms-using-asr/">Azure IaaS 머신에 대한 재해 복구의 공개 미리 보기를</a> 발표했습니다. 이 기능은 재해 복구 설정과 관련된 복잡성을 줄이고 재해 발생 시 애플리케이션을 계속 사용할 수 있도록 비즈니스 연속성 계획을 마련하여 규정을 준수하는 데 도움이 됩니다.</p>
+
+
+  <p><strong>이제 Windows Server 2016</strong> 플랫폼에서 실행 중이거나 <strong>저장소 공간</strong> 사용하여 구성된 Azure 가상 머신을 Azure Site Recovery로 보호할 수 있습니다.</p>
+
+
+  <p><b>Windows Server 2016</b></p>
+
+
+  <p>Windows Server 2016 실행되는 Azure 워크로드는 이제 ASR을 사용하여 Azure 지역 간에 복제할 수 있습니다. 이 업데이트를 통해 ASR은 Azure에서 다음과 같은 Windows 및 Linux OS 유형을 지원합니다.</p>
+
+
+  <h4>Windows</h4>
+
+
+  <ul>
+      <li><i>Windows Server 2016(Server Core 및 데스크톱 환경이 있는 서버)</i></li>
+      <li><i>Windows Server 2012 R2</i></li>
+      <li><i>Windows Server 2012</i></li>
+      <li><i>Windows Server 2008 R2 SP1 이상</i></li>
+  </ul>
+
+
+  <h4>Linux</h4>
+
+
+  <ul>
+      <li><em>Red Hat Enterprise Linux 6.7, 6.8, 7.0, 7.1, 7.2, 7.3</em></li>
+      <li><em>CentOS 6.5, 6.6, 6.7, 6.8, 7.0, 7.1, 7.2, 7.3</em></li>
+      <li><em>Ubuntu 14.04 LTS 서버 </em><a href="https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-support-matrix-azure-to-azure#supported-ubuntu-kernel-versions-for-azure-virtual-machines"><em>(지원되는 커널 버전)</em></a></li>
+      <li><em>Ubuntu 16.04 LTS 서버 </em><a href="https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-support-matrix-azure-to-azure#supported-ubuntu-kernel-versions-for-azure-virtual-machines"><em>(지원되는 커널 버전)</em></a></li>
+      <li><em>Red Hat 호환 커널 또는 UEK3(Unbreakable Enterprise Kernel Release 3)을 실행하는 Oracle Enterprise Linux 6.4, 6.5</em></li>
+      <li><em>SUSE Linux Enterprise Server 11 SP3</em></li>
+  </ul>
+
+
+  <p><b>스토리지 공간</b></p>
+
+
+  <p>저장소 공간 디스크를 스트라이프하여 입력/출력 성능을 개선하고 4TB보다 큰 논리 디스크를 만들기 위해 Azure 가상 머신에서 널리 사용되는 구성입니다. 이제 저장소 공간 사용하여 빌드된 4TB 이상의 스토리지가 있는 대규모 SQL 워크로드를 다른 Azure DC로 보호할 수 있습니다.</p>
+
+
+  <p>추가 정보는 <a href="https://aka.ms/asr-hub-asr-forums">MSDN의 Azure Site Recovery 포럼을</a> 방문하여 다른 고객과 소통하거나 <a href="https://aka.ms/asr_vmware_to_azure_enhanced_uservoice">ASR User Voice</a> 를 사용하여 원하는 기능을 알려주세요.</p>

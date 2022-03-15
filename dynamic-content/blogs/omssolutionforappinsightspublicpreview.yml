@@ -1,0 +1,74 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c7a4a0e703e3de3ce9c236484e6721d6fd4fa2ba
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908191"
+Slug: omssolutionforappinsightspublicpreview
+Title: OMS Log Analytics용 Application Insights Connector를 사용하여 개발자/IT 협업 개선
+Summary: '이제 IT 전문가가 모니터링되는 애플리케이션 Visual Studio 애플리케이션 Insights 상태를 확인할 수 있습니다. 애플리케이션 Insights 이제 앱 데이터를 Microsoft OMS(Operations Management Suite)로 전송하여 앱 개발자와 해당 IT Pro 대응하는 앱 개발자가 가장 경험하는 도구에서 중요한 애플리케이션의 상태를 모니터링할 수 있습니다.  '
+Content: >-
+  <p>이제 IT 전문가는 Visual Studio <a href="https://azure.microsoft.com/documentation/articles/app-insights-overview/"><u>Application Insights</u></a> 모니터링되는 애플리케이션의 상태를 확인할 수 있습니다. 이제 애플리케이션 Insights 앱 데이터를 Microsoft OMS(<a href="https://www.microsoft.com/en-us/cloud-platform/operations-management-suite"><u>Operations Management Suite</u></a>)로 전송하여 앱 개발자와 해당 IT Pro 대응하는 앱 개발자가 가장 경험이 많은 도구에서 중요한 애플리케이션의 상태를 모니터링할 수 있습니다.&nbsp; 애플리케이션 Insights 표시되는 동일한 애플리케이션 원격 분석 보기는 OMS에서 사용할 수 있으므로 개발자와 IT 전문가 간의 보다 효과적인 공동 작업을 용이하게 하므로 애플리케이션 및 플랫폼 문제를 감지하고 해결하는 시간을 줄일 수 있습니다.</p>
+
+
+  <p>애플리케이션&rsquo; 상태 및 사용량에 대한 정보는 OMS Log Analytics용 Application Insights&nbsp; Connector의 공개 미리 보기에 의해 OMS에 표시됩니다. 웹 테스트, 페이지 보기, 서버 요청, 예외 및 사용자 지정 이벤트의 원격 분석 스트림이 포함됩니다.</p>
+
+
+  <p>이 기능을 사용하면 OMS 사용자가 인프라 문제를 해당 환경에서 실행되는 애플리케이션에 미치는 영향과 상관 관계를 지정할 수 있습니다. IT 직원은 다른 OMS 솔루션에서 제공하는 인프라 및 구성 관리에서 애플리케이션 Insights 제공하는 애플리케이션 계층 데이터에 이르기까지 전체 스택을 모니터링하는 데 더 많은 기여를 할 수 있습니다.</p>
+
+
+  <h2>다른 애플리케이션으로 드릴 인</h2>
+
+
+  <p style="margin: 0in 0in 8pt;">이 솔루션은 OMS와 통합된 애플리케이션 Insights 리소스에 대한 요약을 제공합니다.</p>
+
+
+  <p style="margin: 0in 0in 8pt;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c66f7b71-094c-49b7-81f7-e1d78bd98785.png"><img alt="Public Preview 01" border="0" height="228" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e29d5562-0fa3-47e4-aeca-48299d1a7b3c.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="공개 미리 보기 01" width="897"></a></p>
+
+
+  <p>요약에서 행을 클릭하여 특정 애플리케이션의 데이터를 표시&nbsp; 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1170cbb9-e137-4f6f-be32-8eb63946ce30.jpg"><img alt="Application Data" border="0" height="543" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cabcd432-96f5-4a66-b2a3-30ea6f9f4d8c.jpg" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="애플리케이션 데이터" width="827"></a></p>
+
+
+  <p style="margin: 0in 0in 8pt;">여기에서 시각화를 OMS 목록 또는 테이블 보기로 변경할 수 있습니다.</p>
+
+
+  <p style="margin: 0in 0in 8pt;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c936dde5-c5a4-4404-87c6-b2dc163b45c2.png"><img alt="Public Preview 03" border="0" height="196" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5f08b297-f6dd-4f01-bda5-031a7172404f.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="공개 미리 보기 03" width="809"></a></p>
+
+
+  <p style="margin: 0in 0in 8pt;">그런 다음 쿼리를 시간 범위 또는 기타 관심 속성으로 미세 조정합니다.</p>
+
+
+  <p style="margin: 0in 0in 8pt;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b3f179cd-d8fe-4bd2-8f3e-c485644671a4.jpg"><img alt="Time Range" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1e640368-fa1c-4a1a-a3f6-fc63ea756a91.jpg" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="시간 범위" width="340"></a></p>
+
+
+  <h2>애플리케이션 Insights 진단하려면 한 번 클릭하세요.</h2>
+
+
+  <p>이 솔루션을 사용하면 애플리케이션 Insights 강력한 개발자 중심 진단 및 분석 도구를 활용하여 문제를 심층적으로 분석하여 애플리케이션 문제의 맨 아래에 도달할 수 있습니다.</p>
+
+
+  <p>&rsquo;OMS 솔루션에서 Azure Portal의 이 애플리케이션&rsquo; 원격 분석 개요로 원클릭 피벗을 만듭니다.</p>
+
+
+  <p style="margin: 0in 0in 8pt;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ca3740c1-ab8d-487b-8f66-704825ed7824.png"><img alt="Public Preview 05" border="0" height="834" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6868f0fb-c853-4982-a559-6d0cf351bf52.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="공개 미리 보기 05" width="636"></a></p>
+
+
+  <h2>시작</h2>
+
+
+  <p style="margin: 0in 0in 8pt;">시작하시겠습니까? OMS 작업 영역 관리자 <a href=" https://go.microsoft.com/fwlink/?LinkId=828042"><u>가 이</u></a> 솔루션을 구성하고 조직&rsquo; 개발자와 IT 전문가 간의 협업을 획기적으로 개선할 수 있는 방법에 대한 세부 정보를 OMS 팀의 Cigdem Kontaci가 작성한 블로그 게시물을 확인하세요.</p>
+
+
+  <p style="margin: 0in 0in 8pt;">이 솔루션을 사용하려면 앱이 <a href="https://azure.microsoft.com/en-us/pricing/details/application-insights/"><u>애플리케이션 Insights 표준 또는 Premium 가격 책정 계층에</u></a> 있어야 합니다.</p>
+
+
+  <p style="margin: 0in 0in 8pt;">조직에서 이 통합을 사용하도록 설정하면 <a href="https://visualstudio.uservoice.com/forums/357324-application-insights/category/162108-integrations"><u>UserVoice</u></a>에서 이 통합에 대한 피드백을 자유롭게 남길 수 있습니다.</p>
+
+
+  <div>
+
+  <hr align="left" size="1" width="33%"></div>

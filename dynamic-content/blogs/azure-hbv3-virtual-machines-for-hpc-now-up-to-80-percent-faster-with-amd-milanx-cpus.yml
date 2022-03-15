@@ -1,0 +1,94 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6a54494cc5edaeac85bafdd49c5145de17be6ebb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901802"
+Slug: azure-hbv3-virtual-machines-for-hpc-now-up-to-80-percent-faster-with-amd-milanx-cpus
+Title: AMD Milan-X CPU를 사용하여 HPC용 Azure HBv3 가상 머신을 최대 80% 더 빠르게
+Summary: 이제 "Milan-X"라는 코드 이름이 지정된 3D v-cache를 사용하는 AMD EPYC 3세대 프로세서에 의해 향상된 Azure HBv3 가상 머신에 대한 프라이빗 미리 보기가 라이브로 제공됩니다. 이러한 프로세서는 CFD, 명시적 유한 요소 분석, 계산 지질 과학, 날씨 시뮬레이션 및 실리콘 디자인 RTL 워크플로와 같은 다양한 메모리 성능 바인딩 워크로드의 성능, 크기 조정 효율성 및 비용 효율성을 크게 향상시킵니다.
+Content: >-
+  <h2>미리 보기 라이브 오늘, 곧 전 세계적으로 사용 가능</h2>
+
+
+  <p>AMD 3D V 캐시, 코드명 Milan-X&rdquo;를 사용하는 3세대 AMD EPYC&trade; 프로세서로 향상된 Azure HBv3 가상 머신에 대한 <a href="https://aka.ms/milanxpreview" target="_blank">미리 보기</a>가 라이브로 &ldquo;제공됩니다. 이러한 프로세서는 CFD, 명시적 유한 요소 분석, 계산 지질 과학, 날씨 시뮬레이션 및 실리콘 디자인 RTL 워크플로와 같은 다양한 메모리 성능 바인딩 워크로드의 성능, 크기 조정 효율성 및 비용 효율성을 크게 향상시킵니다.</p>
+
+
+  <p>퍼블릭 클라우드에서 <a href="https://techcommunity.microsoft.com/t5/azure-compute/hpc-performance-and-scalability-results-with-azure-hbv3-vms/ba-p/2206471" target="_blank">HPC 워크로드에 대해 이미 가장 높은 성능의 VM</a> 인 3세대 AMD EPYC 프로세서가 있는 현재 HBv3 시리즈와 비교하면 고객은 다음을 경험하게 됩니다.</p>
+
+
+  <ul>
+      <li>CFD에 대한 80% 더 높은 성능</li>
+      <li>EDA RTL에 대한 60% 더 높은 성능</li>
+      <li>명시적 FEA에 대한 50% 더 높은 성능</li>
+      <li>날씨 시뮬레이션에 대한 19% 더 높은 성능</li>
+  </ul>
+
+
+  <p>또한 모든 HBv3 시리즈 VM은 곧 Milan-X 프로세서로 업그레이드될 예정입니다. 이 업그레이드는 HBv3 시리즈 VM에 대한 기존 가격 책정 이외의 추가 비용 없이 제공되며 고객 워크로드에는 변경이 필요하지 않습니다. 고객이 이미 알고 있고 중요한 연구 및 비즈니스 워크로드에 의존하는 HBv3 시리즈 VM 크기에 대한 다른 변경 사항은 없습니다. Azure HBv3 시리즈에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/hbv3-series" target="_blank">공식 설명서를</a> 참조하세요.</p>
+
+
+  <h2>메모리 성능에 바인딩된 HPC 워크로드를 터보 충전</h2>
+
+
+  <p>많은 HPC 워크로드는 메모리 성능에 의해 가장 중요합니다. 계산 유체 역학과 같은 일부의 경우 성능은 메모리 대역폭에 의해 직접 구동됩니다. 실리콘 디자인 회사의 핵심 애플리케이션인 RTL 시뮬레이션과 같은 다른 회사의 경우 메모리 대기 시간을 의미합니다. HBv3 시리즈 VM으로의 향후 업그레이드는 L3 캐시 메모리를 가상 머신당 전례 없는 1.5GB로 늘려 두 요구 사항을 모두 해결할 것입니다. 이는 현재 HBv3 <sup>시리즈</sup> VM에 있는 표준 3세대 EPYC 프로세서에 있는 것보다 3배 더 크고, 현재 고객 데이터 센터의 대부분의 HPC 서버에 있는 총 L3 캐시보다 25배 이상 큽니다.</p>
+
+
+  <p>메모리 대역폭 바인딩 워크로드가 적절한 규모로 실행되도록 하려면 더 큰 L3 캐시의 순 효과는 유효 메모리 대역폭의 최대 1.8배 증가입니다. 즉, 현재 350GB/s를 제공하는 HBv3 VM(STREAM-TRIAD로 측정됨)은 곧 메모리 대역폭이 600GB/초보다 큰 VM과 비슷하게 수행됩니다.</p>
+
+
+  <p>메모리 대기 시간 바인딩 워크로드의 경우 Milan-X 프로세서에서 더 큰 L3 캐시의 순 효과는 캐시 적중률이 최대 50% 증가하고 전체 캐시 대기 시간 범위(한 코어에서 가장 가까운 인접 코어까지의 대기 시간)이며, 반대로 <sup>표준 3세대</sup> EPYC 프로세서보다 50% 낮습니다.</p>
+
+
+  <p>다음은 표준 <sup>3세대</sup> EPYC 프로세서를 사용하는 기존 HBv3 시리즈와 비교하여 Milan-X 프로세서로 향상된 Azure HBv3 VM의 대규모 성능 결과 샘플입니다. 테스트는 2~64개의 VM(240개에서 7,680개 CPU 코어)의 다양한 MPI 크기 조정 시나리오에서 수행되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8f36435d-51ad-4613-a4d0-9bb0ff0aec75.png"><img alt="An image of Relative HPC Performance showcasing a bar chart where benchmarks were taken with WRF v. 4.15, OpenFOAM v. 1912, and Ansys Fluent 2021 R1" border="0" height="699" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d531d56e-eba7-4220-b0d4-26e46f376dcc.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="그림 1 - 상대 HPC 성능" width="1024"></a></p>
+
+
+  <p><em><strong>그림 1:</strong> 벤치마크는 WRF v. 4.15, OpenFOAM v. 1912 및 Ansys Fluent 2021 R1에서 사용되었습니다.</em></p>
+
+
+  <p><a href="https://aka.ms/MilanXPerf" target="_blank">성능 및 확장성에</a> 대한 추가 정보를 알아봅니다.</p>
+
+
+  <h2>규모가 더 많을수록 더 적은 비용을 지불하지 &hellip; 않습니다.</h2>
+
+
+  <p>NVIDIA의 파트너로부터 <a href="https://www.nvidia.com/en-us/networking/" target="_blank">NVIDIA Quantum InfiniBand 네트워킹을</a> 사용하는 Azure&rsquo;는 이미 고객이 MPI 워크로드를 <a href="https://azure.microsoft.com/en-us/blog/supercomputing-2020-new-mpi-heights-joining-the-graph500-and-1-tbs-filesystems/" target="_blank">슈퍼컴퓨터 높이</a>로 확장할 수 있도록 합니다. HBv3 시리즈 VM의 Milan-X 프로세서는 다양한 MPI 워크로드 및 모델에서 위의 선형 크기 조정 효율성을 제공하여 다시 한 번 기준을 높입니다. 즉 <strong>, 고객은 훨씬 더 빠른 솔루션 시간 실현의 결과로 Azure 컴퓨팅 비용을 실제로 절감할 수</strong> 있습니다. 다음은 Ansys Fluent 정식 F1_racerar_140m 시뮬레이션과 함께 작동하는 이 기능의 예입니다. Milan-X 프로세서가 있는 HBv3 VM은 64개의 VM에 대해서만 127배 더 높은 성능을 제공하여 거의 200% 크기 조정 효율성을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d3c49ade-f91f-4b39-a2f5-64709d91073c.png"><img alt="An image of line chart with an upward trend showing the measured scaling efficiency from 1 to 64 VMs using ANSYS Fluent 2021 R1" border="0" height="766" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec1f6fff-f737-4f08-8bf3-9141971e1ae6.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="그림 2: 200% 크기 조정 효율성" width="1024"></a></p>
+
+
+  <p><em><strong>그림 2:</strong> ANSYS Fluent 2021 R1을 사용하여 VM 1개에서 64개까지의 크기 조정 효율성 측정</em></p>
+
+
+  <p>다양한 <a href="https://aka.ms/MilanXPerf" target="_blank">애플리케이션, 모델 및 구성</a>에서 성능 및 확장성에 대한 추가 정보를 알아봅니다.</p>
+
+
+  <h2>Azure HPC 고객을 위한 지속적인 개선</h2>
+
+
+  <p>Microsoft와 AMD는 고객에게 가장 중요한 중요한 연구 및 비즈니스 워크로드를 지속적으로 개선하여 정의한 클라우드의 고성능 컴퓨팅의 새로운 시대에 대한 비전을 공유합니다. Azure는 AMD와 협력하여 Azure HB 시리즈 가상 머신의 모든 릴리스에서 제공하는 성능, 확장성 및 가치에 대한 기준을 높여 이러한 비전을 실현했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0b622887-a9df-422d-9b38-36aa638d9a8e.png"><img alt="Azure HPC performance 2019 through 2021" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c96eeb5b-da51-4358-b724-90e33345d08e.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="그림 3 - 상수 Azure HPC 개선" width="1006"></a></p>
+
+
+  <p><em><strong>그림 3:</strong> Azure HPC 성능 2019~2021</em></p>
+
+
+  <p>HBv3 시리즈 가상 머신에서 모든 Azure HPC 고객에게 Milan-X 프로세서를 제공할 수 있기를 기대하며 미리 보기의 모든 사용자를 볼 수 있기를 기대합니다.</p>
+
+
+  <ul>
+      <li><a href="https://aka.ms/milanxpreview" target="_blank">Azure HBv3 시리즈에서 Milan-X 프로세서</a>의 미리 보기에 등록합니다.</li>
+      <li><a href="https://aka.ms/hpc/amdevent" target="_blank">AMD 가속 데이터 센터 프리미어에서 공지 사항을 시청하세요</a>.</li>
+      <li>Milan-X 프로세서를 사용하는 HBv3 시리즈의 <a href="https://aka.ms/MilanXPerf" target="_blank">성능 및 확장성</a></li>
+      <li> <a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/" target="_blank">Azure에서 성능 컴퓨팅</a>에 대해 자세히 알아보세요.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/hbv3-series" target="_blank">HBv3 시리즈 Virtual Machines</a>에 대한 Microsoft 설명서입니다.</li>
+      <li><a href="https://github.com/Azure/azhpc-images" target="_blank">Azure HPC 최적화 OS 이미지</a>.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-hpc" target="_blank">Azure HPC 가상 머신</a>.</li>
+  </ul>

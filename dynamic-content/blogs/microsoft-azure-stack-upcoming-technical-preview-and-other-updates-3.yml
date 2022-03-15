@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 997b2c1edc35569cfb45e4d6556b71c1e7955424
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901619"
+Slug: microsoft-azure-stack-upcoming-technical-preview-and-other-updates-3
+Title: 'Microsoft Azure Stack: 예정된 Technical Preview 및 기타 업데이트'
+Summary: 지난 몇 주 동안 Azure Stack에 대한 많은 피드백과 질문을 받았습니다. 우리는 몇 가지 일반적인 질문과 의견을보고있다, 그래서 우리는 우리의 대화를 계속하는 좋은 시간이 될 것이라고 생각했다.
+Content: >-
+  <p><em>이 게시물은 Microsoft Azure Stack 팀에서 작성했습니다.</em></p>
+
+
+  <p>지난 몇 주 동안 Azure Stack에 대한 많은 피드백과 질문을 계속 받았습니다. 우리는 몇 가지 일반적인 질문과 의견을보고있다, 그래서 우리는 그들을 해결하고 대화를 계속하는 좋은 시간이 될 것이라고 생각했다.</p>
+
+
+  <p>첫째, 많은 고객이 Azure Stack의 다음 기술 미리 보기에 대해 물었습니다. Weve&rsquo;는 &ndash;&rsquo;이번 주에 일부 얼리 어답터 고객에게 Azure Stack TP2(Technical Preview 2)를 출시하기 시작했습니다. 이를 통해 더 광범위하게 배포하는 프로세스가 시작되며, 올해 하반기에 TP2를 공개적으로 출시할 예정입니다.</p>
+
+
+  <p>또한 유연성, 비용 및 크기에 대한 우려와 함께 통합 시스템 하드웨어 전략에 대한 질문도 들었습니다. 그래서 우리는 Vijay Tewari에게 이 <a href="https://channel9.msdn.com/Blogs/azurestack/Microsoft-Azure-Stack-Insights-into-Integrated-Systems">짧은 비디오에서</a> 통합 시스템에 대한 비전과 근거 뒤에 몇 가지 통찰력을 제공하도록 요청했습니다. 이 비디오에서는 최고의 엔지니어링 설계 목표, 특정 하드웨어와 긴밀하게 연결된 소프트웨어의 가치, 그리고 궁극적으로 이 시스템의 수명 주기 관리에 대해 어떻게 생각하는지에 대한 인사이트를 제공합니다. 다시 강조할 만한 한 가지 점은 Dell, HPE 및 Lenovo의 통합 시스템의 우선 순위를 출발점으로 삼는 것입니다. 과거에는 그랬듯이, 인증된 솔루션 카탈로그에서 고객의 선택과 구성을 허용하는 다양한 하드웨어 에코시스템에 대한 지원을 계속 확대할 것입니다.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="315" src="https://channel9.msdn.com/Blogs/azurestack/Microsoft-Azure-Stack-Insights-into-Integrated-Systems/player" width="560"></iframe></p>
+
+
+  <p>마지막으로 고객이 Dell, <a href="https://community.hpe.com/t5/Converged-Data-Center/Cook-up-your-perfect-Cloud-recipe/ba-p/6817455#.V52qBLgrLb2ect-Cloud-recipe/ba-p/6817455#.V52qBLgrLb2">HPE</a> 및 <a href="https://next.nutanix.com/t5/Nutanix-Connect-Blog/Microsoft-Cloud-Platform-System-Standard-on-Nutanix/ba-p/11162">Nutanix</a>의 CPS(턴키 클라우드 플랫폼 시스템)에 대한 투자와 WAP(Windows Azure Pack)의 보다 일반적인 배포를 보호하려고 한다는 것을 알고 있습니다. 사용자가 Azure Stack 포털 내에서 WAP에서 만든 VMM(Virtual Machine Manager) 리소스를 원활하게 관리할 수 있도록 CPS/WAP와 Azure Stack 간의 병렬 통합을 위해 노력하고 있습니다. 이러한 방식으로 고객은 이제 이러한 Azure 일치 클라우드 솔루션을 사용하고 나중에 Azure Stack 배포에서 해당 리소스를 활용할 수 있습니다.</p>
+
+
+  <p>토론을 계속하자&rsquo;!</p>

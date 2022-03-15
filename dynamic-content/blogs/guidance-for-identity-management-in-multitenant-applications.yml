@@ -1,0 +1,62 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 063a67afc16dd0a031ff4c450f81b48a62638511
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901213"
+Slug: guidance-for-identity-management-in-multitenant-applications
+Title: 다중 테넌트 애플리케이션의 ID 관리에 대한 지침
+Summary: Microsoft Patterns & Practices 그룹은 Azure의 다중 테넌트 애플리케이션에 대한 ID 관리에 대한 새로운 지침을 게시했습니다.
+Content: >-
+  <p>Microsoft <strong>Patterns Practices &amp;</strong> 그룹은 <strong><a href="https://azure.microsoft.com/documentation/articles/guidance-multitenant-identity/">Azure의 다중 테넌트 애플리케이션에 대한 ID 관리에 대한</a></strong> 새로운 지침을 게시했습니다.</p>
+
+
+  <p>다중 테넌트 앱을 다시 빌드할&#39;때 첫 번째 과제 중 하나는 이제 모든 사용자가 테넌트에 속하기 때문에 사용자 ID를 관리하는 것입니다.&nbsp; 예를 들어 사용자는 조직 자격 증명으로 로그인할 수 있어야 합니다. Contoso에서 일하는 Alice는 로그인합니다 alice@contoso.com.</p>
+
+
+  <p>Alice가 로그인한 후에는 Contoso 데이터에 &mdash; 액세스할 수 있어야 하며 다른 조직에 속한 데이터에 액세스할 수 없어야 합니다. 따라서 다중 테넌트도 권한 부여 정책에 영향을 줍니다.</p>
+
+
+  <p>기타 고려 사항:</p>
+
+
+  <ul>
+   <li>조직의 모든 사용자가 앱에 로그인할 수 있나요? 또는 조직이 먼저 등록해야 합니까?</li>
+   <li>모든 사용자에게 동일한 권한이 있나요? 또는 사용자가 앱 내에서 관리자, 게시자,&quot; 읽기 권한자&quot; &quot;등과 같은 &quot;할당된 역할을 받나요?&quot; &quot;</li>
+  </ul>
+
+
+  <p><a href="https://azure.microsoft.com/services/active-directory/">Azure Active Directory</a>(Azure AD)에는 이러한 모든 시나리오를 지원하는 몇 가지 훌륭한 기능이 있습니다. (이 지침은 현재 Azure AD의 테넌트만 지원합니다.)</p>
+
+
+  <p>이 프로젝트에는 다중 테넌트 애플리케이션의 구현과 <a href="https://azure.microsoft.com/documentation/articles/guidance-multitenant-identity/">서면 지침</a> 지원이 포함됩니다. Tailspin이라는 가상의 회사를 기반으로 하는 <a href="https://github.com/Azure-Samples/guidance-identity-management-for-multitenant-apps">이 애플리케이션</a>을 사용하면 사용자가 온라인 설문 조사를 만들 수 있습니다. 이 앱은 <a href="https://docs.asp.net/">ASP.NET Core 1.0</a>(이전&quot;의 ASP.NET 5&quot;)을 기반으로 하므로 ASP.NET 최신 인증 및 권한 부여 기능을 사용합니다.</p>
+
+
+  <blockquote>
+
+  <p>참고: 이 프로젝트는 특히 ID 관리에 초점을 맞췄습니다. 데이터 분할과 같은 다른 문제는 살펴볼&#39;없습니다.</p>
+
+  </blockquote>
+
+
+  <p>설문 조사 애플리케이션은 웹앱과 백 엔드 웹 API로 구성됩니다. 다음은&rsquo; 인증 프로세스에 대한 매우 높은 수준의 보기입니다.</p>
+
+
+  <p><img alt="Azure AD" border="0" height="329" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5b483fa1-fb53-40a6-8e5e-d0f9bf52afbd.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="Azure AD" width="360"></p>
+
+
+  <p>애플리케이션은 Tailspins&rsquo; Azure AD 디렉터리에 등록됩니다. 이를 통해 Azure AD는 애플리케이션을 대신하여 사용자를 인증할 수 있습니다. 따라서 Contoso의 Alice가 웹앱에 로그인하면 Azure AD로 리디렉션되고, 여기서 조직 자격 증명을 입력하고 웹앱은 Alice(이름, 이메일)에 대한 클레임 집합을 받습니다. 또한 웹앱은 백 엔드 웹 API를 호출할 수 있는 액세스 토큰을 가져옵니다.</p>
+
+
+  <p>또한 구현에는 보안 및 성능과 같은 교차 커팅 문제를 해결하는 몇 가지 흥미로운 기능이 있습니다.&nbsp;&nbsp;</p>
+
+
+  <ul>
+   <li>OAuth 클라이언트 비밀에 대한 보다 안전한 대안으로 클라이언트 어설션 사용</li>
+   <li>연결 문자열과 같은 중요한 데이터를 보호하기 위해 <a href="https://azure.microsoft.com/services/key-vault/">Azure Key Vault</a>에서 앱 설정을 읽습니다.</li>
+   <li>웹 서버 간에 공유할 수 있는 분산 캐시에 OAuth 토큰 캐싱</li>
+  </ul>
+
+
+  <p><a href="https://azure.microsoft.com/documentation/articles/guidance-multitenant-identity/">이 지침</a>에서는 인증, 애플리케이션 역할, 역할 기반 및 리소스 기반 권한 부여, 백 엔드 Web API 인증을 비롯한 다양한 항목을 다룹니다.</p>

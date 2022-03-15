@@ -1,0 +1,84 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 94ea3f131d4399f5ac6d047819252031614eb2c5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901027"
+Slug: new-in-stream-analytics-output-to-azure-functions-built-in-anomaly-detection-etc
+Title: 'Stream Analytics의 새로운 기능: Azure Functions에 출력, 기본 제공 변칙 검색 등'
+Summary: 오늘 Microsoft Ignite에서 Azure Stream Analytics에서 몇 가지 새롭고 매력적인 기능의 미리 보기를 발표하게 되어 기쁩니다. 여기에는 기본 제공 인라인 기계 학습 기반 변칙이 포함됩니다.
+Content: >-
+  <p>오늘 Microsoft Ignite에서 Azure Stream Analytics에서 몇 가지 새롭고 매력적인 기능의 미리 보기를 발표하게 되어 기쁩니다. 여기에는 기본 제공 인라인 기계 학습 기반 변칙 검색, Azure 함수로 송신, 압축된 데이터 형식 지원, JavaScript 사용자 정의 집계 및 Visual Studio 도구에서 CI/CD에 대한 지원이 포함됩니다. 이러한 새로운 기능은 앞으로 몇 주 동안 출시될 예정입니다. 이번 주에 <a href="https://myignite.microsoft.com/sessions">Microsoft Ignite</a> 컨퍼런스에 참석하는 경우 BRK3302 및 BRK3303 세션에 참석하여 자세히 알아보세요.</p>
+
+
+  <h2>기본 제공 Machine Learning 기반 변칙 검색</h2>
+
+
+  <p>기본 제공 기계 학습 기반 운영자 &lsquo;ANOMALYDETECTION&rsquo; 은 애플리케이션 또는 디바이스의 데이터를 실시간으로 모니터링하고 예상 패턴을 준수하지 않는 이벤트 또는 관찰을 쉽게 감지하는 데 도움이 필요한 Azure Stream Analytics 고객을 지원하도록 설계되었습니다.</p>
+
+
+  <p>지금까지 산업용 IoT 고객 및 스트리밍 데이터를 모니터링하는 다른 사람들은 사용자 지정 기계 학습 모델에 의존했습니다. 구현자는 시나리오 및 문제 도메인에 대해 잘 알고 있어야 합니다. 또한 이러한 모델을 스트림 처리 메커니즘과 통합하려면 복잡한 데이터 파이프라인 엔지니어링이 필요했습니다.</p>
+
+
+  <p>오늘 발표된 새로운 기능을 통해 기계 학습의 복잡성이 기계 학습 모델에 대한 단일 SQL 함수 호출로 간소화되었습니다. 기본 범용 기계 학습 모델은 추상화되고 입력 스트림과 일치하도록 시간이 지남에 따라 지속적으로 학습됩니다. 이 새로운 기능은 숫자 시계열 데이터를 대상으로 하며 고객이 변칙, 긍정 및 부정적인 추세를 감지하는 데 도움이 됩니다. <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-machine-learning-anomaly-detection">자세한 내용은 변칙 검색 설명서</a>에서 찾을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5763f808-1779-49ba-ae28-da4c2ef8eb8e.png"><img alt="Stream Analytics" border="0" height="325" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/16861460-4844-4119-ae5f-d9c59feb4642.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="Stream Analytics" width="640"></a></p>
+
+
+  <p align="center"><em>Stream Analytics 쿼리에서 함수를 사용하는 여러 가지 방법</em></p>
+
+
+  <h2>Azure 함수에 Egress</h2>
+
+
+  <p>Azure Functions는 Azure의 &#39;서버리스&#39; 컴퓨팅 서비스로, 사용자가 인프라를 명시적으로 프로비전하거나 관리할 필요 없이 주문형 코드를 실행할 수 있도록 지원하며, Azure 또는 타사 서비스에서 발생하는 이벤트에 의해 트리거되는 코드를 구현할 수 있습니다. 트리거에 응답하는 Azure Functions의 이러한 기능은 Azure Stream Analytics의 자연스러운 출력 대상입니다.</p>
+
+
+  <p>오늘날 많은 Stream Analytics 고객은 먼저 출력을 Service Bus 큐에 쓴 다음, 여기에서 Azure 함수에 액세스하여 Azure 함수에서 제공하는 풍부한 기능을 활용합니다. Azure Functions와 훨씬 더 직접적인 통합을 제공하기 위해 오늘 Azure Stream Analytics에서 Azure Functions에 대한 출력 어댑터를 발표합니다. 이 출력 어댑터는 사용자가 Stream Analytics를 Azure Functions에 연결하고 스크립트 또는 코드 조각을 실행하여 다운스트림 워크플로를 트리거하고 주요 이벤트에 대한 응답을 가속화할 수 있도록 설계되었습니다.</p>
+
+
+  <p>예를 들어 이제 공장 바닥에서 과열과 같은 미리 정의된 특정 조건이 관찰될 때 개발자가 전자 메일 경고 또는 알림을 보내는 것이 훨씬 쉬워집니다. 개발자는 Azure Stream Analytics가 Azure 에코시스템 외부의 다양한 다른 Azure 서비스 또는 앱에 연결할 수 있도록 하는 사용자 지정 사후 처리 논리를 작성할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5dbd6dc0-d217-4648-a420-209847b56111.png"><img alt="Output details" border="0" height="453" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8aa45bba-5f76-45ac-8a8d-5f643ff4d035.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="출력 세부 정보" width="322"></a></p>
+
+
+  <h2>입력 압축 형식 지원</h2>
+
+
+  <p>대역폭 문제 및 메시지 크기 제한은 고객이 압축 입력 형식을 지원해야 하는 주요 이유입니다. 기존 및 잠재 고객의 요청 수가 증가함에 따라 Azure Stream Analytics가 이제 GZIP 및 Deflate 스트림에 대한 지원을 제공할 것이라고 발표하게 되어 기쁩니다.</p>
+
+
+  <p>오늘 공지는 Azure Stream Analytics가 현재 이러한 제한 사항에 직면한 많은 고객에게 실행 가능한 옵션임을 의미합니다.</p>
+
+
+  <h2>연속 통합 및 배달을 위한 Visual Studio 도구</h2>
+
+
+  <p>가능한 한 빨리 개선 및 코드 업데이트를 촉진하면서 프로덕션 코드의 안정성을 관리해야 한다는 것은 개발 팀이 CI/CD(코드 통합 및 배포) 프로세스를 빌드하는 데 많은 시간을 소비한다는 것을 의미합니다. 이러한 팀을 더 잘 지원하기 위해 <a href="https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-tools-for-visual-studio">Stream Analytics Visual Studio Tools</a> 내에서 CI/CD에 대한 기본 지원을 배포하고 있습니다. 고객은 새로 릴리스된 NuGet <a href="https://www.nuget.org/packages/Microsoft.Azure.StreamAnalytics.CICD/">패키지를</a> 사용하여 자동화된 빌드를 수행하고, 스크립트를 테스트하고, Stream Analytics Visual Studio 프로젝트를 사용하여 배포할 수 있습니다. 이 새로운 기능을 사용하면 개발자&rsquo; 환경뿐만 아니라 다른 자동화된 프로세스 내에서 Stream Analytics 작업에 대한 연속 CI/CD 파이프라인을 쉽게 설정할 수 있습니다.</p>
+
+
+  <h2>JavaScript 사용자 정의 집계</h2>
+
+
+  <p>봄 중반에 JavaScript 사용자 정의 함수가 릴리스된 후 이제 JavaScript UDA(사용자 정의 집계)를 제공할 준비가 되었습니다. 사용자 정의 집계를 사용하면 시간 가중 평균, 누적 밀도, 배열 누적 등과 같은 자체 상태 저장 계산을 실행할 수 있습니다.</p>
+
+
+  <h2>Microsoft Ignite(9월 25<sup>일</sup>&nbsp; &ndash; 29<sup>일</sup>)</h2>
+
+
+  <p>이러한 기능이 작동하는 것을 보고 싶으신가요? 이번 주에 <a href="https://myignite.microsoft.com/sessions">Microsoft Ignite</a> 에 있는 경우 화요일에 다음 세션에 참석하세요. 또한, 엑스포 홀에서 우리 팀을 만나주세요.</p>
+
+
+  <ul>
+   <li>BRK3303 - 실시간 빅 데이터 분석: 지금의 기능 활용</li>
+   <li>BRK3302 - IoT 분석의 미래: 클라우드를 보완하는 Edge</li>
+  </ul>
+
+
+  <p>피드백과 아이디어를 계속 제공하세요!</p>
+
+
+  <p>Azure Stream Analytics 팀은 사용자의 의견을 경청하고 사용자 음성이 향후 투자에 영향을 줄 수 있도록 최선을 다하고 있습니다. 대화에 참여하고 <a href="https://feedback.azure.com/forums/270577-stream-analytics/filters/top">UserVoice</a>를 통해 음성을 들을 수 있게 되어 환영합니다.</p>

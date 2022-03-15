@@ -1,0 +1,84 @@
+### YamlMime:Yaml
+ms.openlocfilehash: eb5cf44a5ca7c2ed91f9b8de73bd53c8fcdf3d0b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907938"
+Slug: application-insights-announces-availability-of-release-annotations
+Title: 애플리케이션 Insights 릴리스 주석의 가용성을 발표합니다.
+Summary: 릴리스 주석(이전의 "배포 표식")이 이제 Application Insights 라이브로 제공됩니다.
+Content: >-
+  <p>그들은&rsquo; <em>바아아ccckkkkk</em>!</p>
+
+
+  <p>릴리스 주석(이전&ldquo;의 배포 표&rdquo;식)이 이제 애플리케이션 Insights 라이브 상태임을 알리는 것이 더 행복할 수 없습니다. 애플리케이션 Insights Visual Studio Online<em>(현재 Visual Studio Team Services</em>)에서 새 Azure Portal로 이동한 이후 가장 많이 요청된 기능 비트 중 하나입니다.</p>
+
+
+  <p>릴리스 주석은 메트릭 탐색기에 표시될 수 있으며, 릴리스가 수행된 시간과 블레이드에서 사용할 수 있는 여러 메트릭의 상관 관계를 지정할 수 있습니다. 이렇게 하면 잘못된(또는 양호한) 배포가 서비스 또는 앱에 부정적인 영향을 미치는지 여부를 이해하는 데 도움이 됩니다.</p>
+
+
+  <h2>릴리스 주석 사용</h2>
+
+
+  <p>메트릭 탐색기에&rsquo; 릴리스 주석을 표시하려면 VSTS에서 빌드에 주석을 추가해야 합니다.&nbsp; 사용할 수 있도록 하려면 <a href="https://marketplace.visualstudio.com/items/ms-appinsights.appinsightsreleaseannotations">Visual Studio Marketplace</a>에서 확장을 추가하기만 하면 됩니다.</p>
+
+
+  <p><img alt="image" border="0" height="468" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8772554f-8eab-47d7-921a-771e1888d91c.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="이미지" width="610"></p>
+
+
+  <p>릴리스 주석 확장에 대한 페이지로 드릴인한 후 설치 단추를 클릭합니다.</p>
+
+
+  <p><img alt="image" border="0" height="186" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/88635e7e-4c44-4faa-af9e-1d683a7281c6.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="이미지" width="480"></p>
+
+
+  <p>&rsquo;그런 다음 VSTS 구독에 확장을 연결하는 권한 부여 창이 표시됩니다.</p>
+
+
+  <p><img alt="image" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84306e3f-ac5f-476d-b5de-65e69069ac88.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="이미지" width="336"></p>
+
+
+  <p>확인한&rsquo; 후에는 VSTS 릴리스에 릴리스 주석 추가를 시작할 준비가 된 것입니다.</p>
+
+
+  <h2>VSTS 릴리스에 릴리스 주석 추가</h2>
+
+
+  <p>이제 릴리스 주석을 사용하도록 설정했으므로 VSTS에서 선택한 구독과 연결된 모든 릴리스에 추가할 수 있습니다.&nbsp; 기존 릴리스를 편집하고 작업 추가를 클릭한 다음 사용 가능한 작업 목록에서 릴리스 주석을 선택합니다(배포 섹션에 나열됨).</p>
+
+
+  <p><img alt="Add Task" border="0" height="286" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ReleaseAnnotationTask.png" style="background-image: none; padding-top: 0px; padding-left: 0px; padding-right: 0px; border-image: none" width="610"></p>
+
+
+  <p>단계가 추가&rsquo;되면 애플리케이션 Insights API 키를 생성하고 추가하여 단계의 특성 작성을 완료해야 합니다. 이 프로세스에 대한 자세한 지침은 <a href="https://azure.microsoft.com/en-us/documentation/articles/app-insights-annotations/">설명서 페이지를</a> 참조하세요. 이 작업이 완료되면 다음에 릴리스가 실행될 때 릴리스 주석이 생성됩니다.</p>
+
+
+  <p>Ive&rsquo;가 이미 꽤 많이 얻은 한 가지 질문은 이 &ldquo;작업을 단계 순서에서 어디에 두는 것이 중요합니까?&rdquo; 대답은 안 된다야. 실제로 원하는 경우&rsquo; 이 작업을 두 번 이상 추가할 수 있습니다. 지금, 정상적인 상황에서, 그렇게 많은 포인트가있을 것입니다&rsquo;. 그러나 실행하는&rsquo; 데 꽤 많은 시간이 걸리는 매우 복잡한 릴리스가 있는 경우 릴리스의 각 &ldquo;단계를&rdquo; 표시할 수 있으며, 이 경우 여러 릴리스 주석 작업으로 끝날 수 있습니다. 관련 주석을 연결하고 기간이 길어질 수 있는 이벤트를 나타내는 방법에 대한 향후 디자인 가능성에 대해 이미 논의하고 있습니다.&nbsp; 이는 VSTS 릴리스 기능의 기능이 증가함에 따라 더욱 중요해질 것입니다.</p>
+
+
+  <h2>주석 보기</h2>
+
+
+  <p>&rsquo;이제 릴리스 주석을 볼 준비가 되었습니다. 모든 메트릭 탐색기 블레이드에서 사용할 수 있습니다. 메트릭 탐색기 블레이드&rsquo;를 열면 이제 릴리스 주석이 사용 가능한 차트의 맨 위에 정보 아이콘으로 표시됩니다. 그 중 한 가지 위로 마우스를 가져가면&rsquo; 릴리스에 대한 몇 가지 세부 정보를 제공하는 정보 풍선이 표시됩니다. 이 정보 및 주석의 상대 위치를 사용하여 릴리스를 사용 가능한 다른 메트릭과 상호 연결하여 릴리스가 리소스에 잠재적으로 영향을 주는지 확인할 수 있습니다.</p>
+
+
+  <h4><img alt="image" border="0" height="328" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/338b578e-cdcd-4624-8135-d2b89685f0d1.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="이미지" width="610"></h4>
+
+
+  <p>유의해야 할 또 다른 중요한 점은 현재 릴리스와 관련된 다양한 데이터를 제공하는 릴리스 주석에 대한 세부 정보 블레이드에서 작업하고 있다는 것입니다. 이 기능은 다음 몇 번의 스프린트에서 사용할 수 있게 됩니다.</p>
+
+
+  <h2>주석의 미래</h2>
+
+
+  <p>현재 주석 기능이 초기 단계에 있음을 이해하는 것이 매우 중요합니다. &rsquo;주석&rdquo;이라는 단어가 &ldquo;언급될 때마다 적절한 대/소문자를 적어둡습니다. 이는 릴리스 주석이 애플리케이션 Insights 사용할 수 있도록 하려는 다양한 종류의 주석 중 첫 번째이기 때문입니다. Were&rsquo;는 현재 이미 내부적으로 주석으로 다양한 운영 이벤트를 테스트하고 있으며, 많은 다른 사용자를 위한 개략적인 개념적 설계를 작성했습니다.</p>
+
+
+  <p>또한 Wed&rsquo;는 사용자에게 수동 주석을 만들 수 있는 기능을 제공하거나 리소스 또는 구독에서 다시 사용할 수 있는 사용자 지정 종류의 주석을 정의하려고 합니다. 애플리케이션 Insights 더 많은 위치에서 주석을 사용할 수 있도록 하고, API를 통해 타사 제품에서 주석을 직접 삽입할 수 있도록 하고, 스윔 레인에서 여러 종류의 주석을 표시하고, 기간(또는 여러 단계)이 있는 이벤트를 나타내는 방법, 동시에 생성된 여러 주석에 대한 그룹화 및 사용자가 생성/보기를 원하는 주석 종류를 선택하는 구독 모델을 만들 계획이 있습니다. &rsquo;주석을 작업 항목과 연결하거나 Visual Studio 직접 데이터를 보는 측면에서 wed&rsquo;가 하고 싶은 일을 언급하지도 않습니다.</p>
+
+
+  <p>우리 팀은 여기에 큰 계획을 가지고 있지만, 우리는&rsquo; 또한 우리가 우선 순위를 지정하고 기능을 진화하는 데 도움이 피드백을 찾고 있습니다. 가장 중요한 것은 상황이 진행됨에 따라 Azure 블로그에서 더 많은 공지 사항을 계속 확인하세요. 이제 막 시작됩니다.</p>
+
+
+  <p>애플리케이션 Insights 사용자 의견 페이지에서 새로운 기능 또는 향상된 기능에 대한 아이디어를 공유하세요. 질문이 있으면 <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=ApplicationInsights"><u>애플리케이션 Insights 포럼</u></a>을 방문하세요.</p>

@@ -1,0 +1,40 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0fb3a570d373cf28c9b9db1da77b7f5a8addd55d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901355"
+Slug: bing-map-v8-available-in-azure-iot-suite-remote-monitoring-preconfigured-solution
+Title: Azure IoT Suite 원격 모니터링 미리 구성된 솔루션에서 사용할 수 있는 Bing Map v8
+Summary: Azure IoT Suite는 고객과 파트너가 간단하고 신뢰할 수 있는 방식으로 디바이스를 신속하게 연결하고 관리하여 IoT 솔루션에서 비즈니스 가치를 실현하도록 설계되었습니다. Bing 맵(...
+Content: >-
+  <p><a href="https://www.microsoft.com/en-us/internet-of-things/azure-iot-suite" target="_blank">Azure IoT Suite</a>는 고객과 파트너가 간단하고 신뢰할 수 있는 방식으로 디바이스를 빠르게 연결하고 관리하여 IoT 솔루션에서 비즈니스 가치를 실현하도록 설계되었습니다. Bing 맵(v7)은 미리 구성된 솔루션 대시보드에서 디바이스 위치 및 상태를 시각화하기 위해 <a href="https://www.microsoft.com/en-us/internet-of-things/solutions" target="_blank">미리 구성된 Azure IoT Suite 원격 모니터링 솔루션</a>의 일부로 통합되었습니다. Azure IoT <a href="https://www.microsoft.com/en-us/internet-of-things/solutions" target="_blank">Suite 원격 모니터링 미리 구성된 솔루션</a>에 대해 2017년 7월 1일부터 고급 버전의 Bing 맵(v8)이 적용되었음을 발표하게 되어 기쁩니다. 고객 및 파트너에게 다음을 제공합니다.</p>
+
+
+  <ul>
+      <li><strong>고성능:</strong> 데이터는 10배 더 빠르게 렌더링됩니다.</li>
+      <li><strong>95개의 새 언어에 대한 확장된 문화권 지원:</strong> Bing 지도 REST 서비스를 사용하여 최대 117개 언어로 지오코드 및 라우팅 요청을 수행합니다.</li>
+      <li><strong>개발자 피드백 기반의 새로운 기능</strong></li>
+  </ul>
+
+
+  <p>새로운 고급 맵 기능을 활용하려면 다음 중 하나를 수행할 수 있습니다.</p>
+
+
+  <ol>
+      <li><strong>새 원격 모니터링 솔루션을 배포</strong> 합니다. 배포된 <a href=""></a> 모든 솔루션은 새 V8 컨트롤을 활용합니다.</li>
+      <li><strong>최신 코드로 업데이트: </strong> 디바이스 관리 및 Bing 맵 v8과 같은 <a href="https://github.com/Azure/azure-iot-remote-monitoring" target="_blank">마스터 분기에서 모든 새로운 기능을 가져옵니다</a>.</li>
+      <li><strong>지도 컨트롤만 업데이트합니다.</strong> <a href="https://github.com/Azure/azure-iot-remote-monitoring/pull/435/files" target="_blank">단일 커밋을 참조하여 지도 컨트롤에 대한 변경 내용만 가져옵니다</a>.</li>
+  </ol>
+
+
+  <p>모든 시나리오에서 계정 아래의 기존 Bing Map API 키는 유효한 상태로 유지되며 마이그레이션으로 인해 고객으로부터 특정 작업이 필요하지 않습니다.</p>
+
+
+  <p><a href="https://github.com/Azure/azure-iot-remote-monitoring/wiki" target="_blank">미리 구성된 기존 원격 모니터링 솔루션을 통해 다시 배포하는 방법을</a> 알아봅니다.</p>
+
+
+  <ul>
+
+  </ul>

@@ -1,0 +1,24 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c4ff0f06b296e1412cb5f6e5a4e45619032db287
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907822"
+Slug: disaster-recovery-of-azure-disk-encryption-v2-enabled-virtual-machines
+Title: Azure 디스크 암호화(V2) 사용 가상 머신의 재해 복구
+Summary: '애플리케이션 및 서비스에 대해 Azure를 선택하면 다양한 보안 도구 및 기능을 활용할 수 있습니다. 이러한 도구와 기능을 사용하면 Azure에서 보안 솔루션을 만들 수 있습니다. '
+Content: >-
+  <p>애플리케이션 및 서비스에 대해 Azure를 선택하면 다양한 보안 도구 및 기능을 활용할 수 있습니다. 이러한 도구와 기능을 사용하면 Azure에서 보안 솔루션을 만들 수 있습니다. 이러한 기능 중에는 조직의 보안 및 규정 준수 약정에 맞게 데이터를 보호하고 보호할 수 있도록 설계된 <a href="https://docs.microsoft.com/azure/security/azure-security-disk-encryption">Azure 디스크 암호화</a>가 있습니다. linux용 Windows 및 DM-Crypt 업계 표준 <a href="https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview" target="_blank">BitLocker 드라이브 암호화</a>를 사용하여 OS 및 데이터 디스크에 볼륨 암호화를 제공합니다. 이 솔루션은 <a href="https://azure.microsoft.com/documentation/services/key-vault/">Azure Key Vault</a>와 통합되어 디스크 암호화 키 및 비밀을 제어하고 관리할 수 있으며, VM(가상 머신) 디스크의 모든 데이터가 전송 중 및 미사용 상태로 암호화되도록 Azure Storage.</p>
+
+
+  <p>애플리케이션을 보호하는 것 외에도 계획되거나 계획되지 않은 중단이 발생할 때 중요 업무용 애플리케이션을 가동 및 실행하도록 재해 복구 계획을 수립하는 것이 중요합니다. <a href="https://docs.microsoft.com/azure/site-recovery/site-recovery-overview" target="_blank">Azure Site Recovery</a> 는 주 지역에 중단이 있는 경우 보조 지역에서 사용할 수 있도록 Azure Virtual Machines에서 실행되는 애플리케이션의 복제, 장애 조치 및 복구를 오케스트레이션하는 데 도움이 됩니다.</p>
+
+
+  <p>이제 Azure Site Recovery는 Azure Active Directory 애플리케이션 없이 Azure 디스크 암호화(V2) 사용 가상 머신의 재해 복구를 지원합니다. 재해 복구를 위해 VM 복제를 사용하도록 설정하는 동안 필요한 모든 디스크 암호화 키와 비밀이 원본 지역에서 사용자 컨텍스트의 대상 지역으로 복사됩니다. 재해 복구를 관리하는 사용자에게 적절한 권한이 없는 경우 사용자는 즉시 사용할 수 있는 스크립트를 보안 관리자에게 전달하여 <a href="https://docs.microsoft.com/azure/site-recovery/azure-to-azure-how-to-enable-replication-ade-vms#copy-disk-encryption-keys-to-the-dr-region-by-using-the-powershell-script" target="_blank">키와 비밀을 복사하고</a> 구성을 진행할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0632e7be-1a49-45c7-93e9-c67d39e6b2df.png"><img alt="Configure disaster recovery for Azure disk encryption (V2) enabled virtual machines" border="0" height="604" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1a0dd5f4-992b-4d9f-ac4e-6c9c82c1fc7a.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure 디스크 암호화(V2)" width="1174"></a></p>
+
+
+  <p>이 기능은 현재 관리 디스크를 사용하는 Windows VM만 지원합니다. 관리 디스크를 사용하는 Linux VM에 대한 지원은 앞으로 몇 주 안에 제공될 예정입니다. 이 기능은 Azure Site Recovery <a href="https://aka.ms/a2a-supported-regions" target="_blank">를</a> 사용할 수 있는 모든 Azure 지역에서 사용할 수 있습니다. 현재 Azure Site Recovery<a href="https://docs.microsoft.com/azure/site-recovery/azure-to-azure-how-to-enable-replication-ade-vms" target="_blank">를 사용하여 Azure 디스크 암호화 사용 가상 머신에 대한 재해 복구를 구성</a>하고 중단으로부터 안전하고 보호됩니다.</p>

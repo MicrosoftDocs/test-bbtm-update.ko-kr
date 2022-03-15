@@ -1,0 +1,160 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0c8b00b6f2364cbbc88b0d64ad5564b4984af01c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901992"
+Slug: town-of-cary-innovates-flood-prediction-with-iot
+Title: IoT를 사용하여 홍수 예측을 혁신하는 Cary의 마을
+Summary: 혁신적인 도시 솔루션의 선두 주자로서 Cary 마을은 기술을 사용하여 홍수 사건을 예측하고 관리할 수 있는 기회를 보았습니다.
+Content: >-
+  <p><em>이 게시물은 Microsoft의 GovernmentSmart&mdash; Infrastructure의 전 세계 산업 이사 인 Daniel Sumner가 공동 저술했습니다.</em></p>
+
+
+  <p><a href="https://www.floodsafety.com/national/life/statistics.htm#biblio" target="_blank">홍수 안전에</a> 따르면, 홍수는 전 세계적으로 자연 재해의 가장 일반적인 유형입니다. 이는 매년 전 세계 수천만 명의 사람들에게 영향을 미치며 평균적으로 2,000억 달러 이상의 손해를 입힙니다. 많은 지역 사회가 홍수 관련 도전에 직면하고 있으며, 미국 노스 캐롤라이나에있는 캐리 마을도 다르지 않습니다. 홍수가 발생하기 쉬운 지역은 매년 대서양 허리케인 시즌에 의해 악화되는 폭우의 영향을 받습니다. 마을이 과도한 강우량을 볼 때, 그 직원은 종종 넘쳐 흐르는 우수 시스템을 해결하기 위해 출격하지만, 심지어 버스트 물 메인은 자발적인 홍수 이벤트를 만들 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/59125a3b-9cac-4a4b-a5df-d804b8a95cf0.jpg"><img alt="Town of Cary parking lot during a flood. Several cars parked in three-foot high flood water." height="670" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61b4a5f1-33bb-4726-872c-760102ea4678.jpg" style="margin-right: auto; margin-left: auto; display: block;" title="홍수 동안 캐리 주차장의 마을. 3피트 높이의 홍수 물에 주차된 여러 대의 차량이 주차되어 있습니다." width="1024"></a></p>
+
+
+  <p align="center"><em>홍수 이벤트 동안 캐리 주차장의 마을.</em></p>
+
+
+  <p>혁신적인 도시 솔루션의 선두 주자로서 Cary는 이미 스마트 기술, 데이터 및 분석을 사용하여 도시 기능을 최적화하고, 경제 성장을 촉진하고, 삶의 질을 개선하기 위해 최선을 다하고 있습니다. 최고 정보 책임자, 니콜 라이문도, 스마트 시티 전략가, 테리 예이츠, 그리고 우수 운영 관리자, 빌리 리, 또 다른 기회를 보았다: 홍수 이벤트를 예측하고 관리하는 기술을 사용.</p>
+
+
+  <h2>홍수 예측 솔루션 구상</h2>
+
+
+  <p>2019년 10월, Carys&rsquo; 리더들은 파트너 Microsoft 및 SAS, IoT 사업부를 만나 새로운 솔루션을 구상했습니다. 팀은 현재 상황을 평가하여 시작했습니다.</p>
+
+
+  <p>폭풍우가 몰아치는 동안 캐리는 강 수위나 물이 얼마나 빨리 솟아오르는지 에 대한 가시성이 없었습니다. 전통적으로, 마을은 전화 통화, 문자 메시지 및 기타 수단을 통해 홍수를 경고하기 위해 시민에 의존했다. 마을 직원은 이러한 요청을 수동으로 파견하여 장벽을 세우고 도로를 폐쇄하고 비상 사태에 대비한 응급 구조대를 파견했습니다.</p>
+
+
+  <p>이 팀은 <a href="https://azure.microsoft.com/en-us/overview/iot/" target="_blank">Azure IoT</a> 및 <a href="https://www.sas.com/en_us/software/analytics-iot.html" target="_blank">SAS Analytics for IoT</a>를 활용하는 홍수 예측 시스템을 빌드하기 위한 비전을 제시했습니다. 라이문도는 변화의 필요성을 설명했다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;우리는 기존 시스템이 홍수가 발생하기 쉬운 지역에서 시민들에게 잘 봉사하고 있지 않다고&rsquo; 강하게 느꼈습니다. 사후 대응에서 사전 대응 및 궁극적으로 예측까지 얻을 수 있는 확장 가능한 솔루션이 필요하다는 것을 알고 있습니다. Azure IoT 플랫폼의 확장성은 IoT 아키텍처의 중요한 구성 요소가 되었습니다. 또한 실시간 데이터와 기록 데이터 모두에서 인사이트를 제공할 수 있는 강력한 분석 도구 집합이 필요했으며 IoT용 SAS Analytics에서 이를 제공했습니다.&rdquo; </em>&mdash;니콜 라이문도, 캐리 타운 최고 정보 책임자</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;홍수와 같은 도시 문제를 해결하기 위한 해결책을 제시하고자 하는 캐리 마을과 비슷한 수천 개의 도시가 있습니다. 이러한 도시는 Azure IoT 플랫폼 및 SAS Analytics for IoT를 활용하여 사후 대응에서 사전 대응 및 궁극적으로 비용 효율적이고 확장 가능한 방식으로 예측으로 전환할 수 있습니다.&rdquo; </em>&mdash; Daniel Sumner, Worldwide Industry Director, GovernmentSmart&mdash; Infrastructure at Microsoft</p>
+
+
+  <h2>프로젝트 목표 정의</h2>
+
+
+  <p>Cary, Microsoft 및 SAS는 아래에 설명된 여러 프로젝트 목표에 동의했습니다.</p>
+
+
+  <ul>
+      <li>마을 직원의 상황 인식을 개선합니다.</li>
+      <li>우수 직원 알림 및 작업 순서 생성을 자동화합니다.</li>
+      <li>시민들에게 홍수 사건을 경고합니다.</li>
+      <li>다운스트림 지역 및 주 엔터티에 데이터를 제공합니다.</li>
+      <li>캡처된 데이터를 분석하고 향후 홍수 이벤트를 예측합니다.</li>
+  </ul>
+
+
+  <p>Cary 타운의 주요 요구 사항은 새로운 홍수 예측 시스템이 기존 비즈니스 시스템과 통합되어야 한다는 것이었습니다. 여기에는 실시간 시각화를 위해 ArcGIS와 통합된 SAS Visual Analytics 대시보드 사용, 경고용 Salesforce, 자동화된 알림 및 작업 주문, 지역 파트너 응답 시스템에 대한 데이터 공유가 포함됩니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Azure IoT 플랫폼은 기술 에코시스템의 중요한 부분이었으며 확장 능력을 가속화합니다.&rdquo; </em>&mdash; 테리 예이츠, 스마트 시티 전략가, 캐리의 마을</p>
+
+
+  <p>팀은 2020년 2월에 파트너와의 일련의 작업 세션을 통해 프로젝트 계획 및 시스템 아키텍처를 만들었습니다. 그런 다음 구현 작업이 시작되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b6fa8d8-1844-4bb3-9a76-f970104d7e46.jpg"><img alt="The Town of Cary team working in a conference room with Microsoft and SAS resources." height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/756a7441-23e0-4701-9364-1ed5dfc0df27.jpg" style="margin-right: auto; margin-left: auto; display: block;" title="Microsoft 및 SAS 리소스를 사용하여 회의실에서 작업하는 Cary의 타운 팀입니다." width="1024"></a></p>
+
+
+  <p align="center"><em>Microsoft 및 SAS 리소스를 사용한 Town of Cary 작업 세션</em></p>
+
+
+  <h2>솔루션 구현</h2>
+
+
+  <p>캐리 마을은 월넛 크릭 스트림 분지를 따라 다양한 지점에 수위 센서를 설치하고 캐리의 여러 타운 소유 시설에 비 게이지를 설치했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d6090e9d-77c5-4f59-9387-580d5f0f1d32.jpg"><img alt="Map of the Walnut River area showing where water sensors and rain gauge sensors were placed." height="631" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/17da85aa-ad96-4256-b876-c5c62ca9d8a6.jpg" style="margin-right: auto; margin-left: auto; display: block;" title="물 센서와 비 계기 센서가 배치 된 위치를 보여주는 월넛 강 지역의지도." width="1024"></a></p>
+
+
+  <p align="center"><em>물 센서는 전략적 위치에 배치되었습니다.</em></p>
+
+
+  <p>다음은 솔루션이 빌드된 방법의 주요 내용입니다.</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/services/iot-hub/" target="_blank">Microsoft Azure IoT Hub</a>는 Firstnet LTE 무선 연결을 통해 우수 수준을 수집하는 매우 안전하고 안정적인 통신을 지원했습니다. 팀은 Azure IoT Hub를 사용하여 센서에 대한 양방향 통신을 프로비전, 인증 및 관리했습니다.</li>
+      <li><a href="https://www.sas.com/en_us/software/analytics-iot.html" target="_blank">IoT용 SAS Analytics</a> 는 실시간 채점, 대시보드 및 기록 보고를 위해 스트리밍 센서 또는 계기 및 날씨 데이터를 결합했습니다.</li>
+      <li><a href="https://www.sas.com/en_us/software/visual-analytics.html" target="_blank">SAS Visual Analytics</a> 는 대화형 대시보드, 보고서, 비즈니스 인텔리전스 및 분석을 제공했습니다. 대시보드는 추가 지리적 분석 및 데이터 시각화를 위해 ESRI ArcGIS와 통합됩니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/services/logic-apps/" target="_blank">Microsoft Azure Logic Apps</a>는 Salesforce 및 기타 타사 애플리케이션과 원활하게 통합됩니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/services/synapse-analytics/">Microsoft Azure Synapse Analytics는</a> 빅 데이터 분석을 위한 데이터 웨어하우징을 제공합니다.</li>
+  </ul>
+
+
+  <h2>결과 평가</h2>
+
+
+  <p>솔루션&rsquo; 초기 단계는 몇 달 동안 실행되어 긍정적인 결과를 보였습니다.</p>
+
+
+  <ul>
+      <li>이제 마을 직원이 홍수 이벤트를 실시간으로 시각화할 수 있습니다.</li>
+      <li>Stormwater 담당자는 알림을 받고 작업 주문을 자동으로 생성할 수 있습니다.</li>
+      <li>지역 파트너와 데이터를 공유하는 메커니즘이 설정되었습니다.</li>
+  </ul>
+
+
+  <p align="left" style="margin-left: 40px;"><em>&ldquo;여전히&rsquo; 일부 점을 연결하지만 이전&rsquo; 수동 프로세스의 자동화에서 실질적인 이점을 이미 보고 있습니다. 이전에는 시민으로부터 전화를 받을 수 있었는데, 이로 인해 홍수 유형에 따라 공공 작업이나 응급 서비스를 파견할 수 있습니다. 이제 데이터는 침수된 지역에 대응하고 해결할 수 있는 우수 담당자에게 자동으로 알리는 경고를 트리거합니다. 그것은&rsquo; 훨씬 더 효율적이며 궁극적으로 생명을 구할 수 있습니다.&rdquo; </em>&mdash; 니콜 라이문도, 캐리 타운 최고 정보 책임자</p>
+
+
+  <p>Lee는 물 흐름을 시각화하고 ESRI ArcGIS와 완전히 통합된 SAS Visual Analytics 대시보드를 사용하는 것이 얼마나 흥미로운지 설명했습니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;이제 실시간으로 폭풍 이벤트를 볼 수 있습니다. 대시보드를 끌어오고 비가 얼마나 내리는&rsquo;지 확인할 수 있습니다. 스트림 수준이 상승하는 것을 보고 이 데이터를 지역 파트너와 공유할 수 있습니다. &rsquo;실시간으로 데이터를 보는 것은 놀라운 일입니다.&rdquo; </em>&mdash; 빌리 리, 스톰워터 운영 매니저, 캐리 타운</p>
+
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/46138b9d-1f7d-4884-a015-a9e4514e2b62.png"><img alt="Town of Cary storm water IoT dashboard." border="0" height="550" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/650c5062-ca25-4f44-9b4d-8f5e381e1926.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Cary Storm Water IoT 대시보드의 마을." width="1024"></a></p>
+
+
+  <p align="center"><em>Cary Storm Water IoT 대시보드의 마을.</em></p>
+
+
+  <h2>분석 적용</h2>
+
+
+  <p>대서양 지역이 허리케인 시즌의 절정에 가까워지면서 Carys&rsquo; 지도자들은 잠재적인 홍수 사건을 더 잘 예측하기를 기대하고 있습니다. IoT 및 <a href="https://www.sas.com/en_us/software/event-stream-processing.html" target="_blank">SAS ESP(이벤트 스트림 처리)용 SAS</a> 분석을 활용하여 Town of Cary는 Azure IoT 새 데이터를 획득 및 관리하고, 예측 모델을 생성 및 배포하고, 시간이 지남에 따라 해당 모델의 수명 주기를 관리하고, 조치를 취할 수 있는 더 큰 통찰력을 얻을 수 있는 기능을 향상시켰습니다.</p>
+
+
+  <p style="margin-left: 40px;">&ldquo;<em>물 센서 데이터, Azure 지도 Accuweather 데이터 및 SAS 분석을 통합하는 기능과 Microsoft Azure IoT를 사용하여 유역의 디지털 트윈을 만들 수 있습니다. 이를 통해 캐리 마을은 홍수 문제를 사전에 해결할 수 있으므로 폭풍이나 홍수 사건에 앞서 조치를 취할 수 있습니다.&rdquo; </em>&mdash;Brad Klenz, 고유 IoT Analytics 설계자, SAS</p>
+
+
+  <p>홍수 감지 및 관리 솔루션의 경우 Cary 마을은 일기 예보 데이터, 물과 비 수준을 측정하는 실시간 센서 데이터 통합을 통해 상승하는 물과 같은 변칙을 더 잘 식별하여 Cary 마을 내의 홍수 이벤트와 주변 지방 자치 단체에 홍수 이벤트에 대한 향후 예측을 제공할 수 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;캐리는 여러 비 분지 위에 앉아 있다. 이제 홍수를 예측하고 이 정보를 지역 이웃과 공유할 수 있습니다. 이 데이터와 예측 가능성은 캐리 마을뿐만 아니라 지역 기업과 시민을 포함한 많은 지방 자치 단체에서 큰 경제적 영향을 미칠 것입니다.&rdquo; </em>&mdash;니콜 라이문도, 캐리 타운 최고 정보 책임자</p>
+
+
+  <h2>다른 도시에 대한 조언</h2>
+
+
+  <p>Cary 마을은 일련의 스마트 시티 이니셔티브를 구현했으며 홍수 예측 솔루션은 놀라운 약속을 보여줍니다. 라이문도와 예이츠는 비슷한 프로젝트를 시행하고자 하는 다른 도시에 어떤 조언을 제공하겠는가?</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;&rsquo;미래 지향적인 확장성 있는 아키텍처에서 솔루션을 빌드하기 위한 플랫폼 전략 비전을 이해하고 유연하고 개방적인 도구 집합을 제공하는 적합한 파트너를 선택하는 것이 좋습니다.&rdquo; </em>&mdash; 니콜 라이문도, 캐리 타운 최고 정보 책임자</p>
+
+
+  <p>예이츠는 동료들에게 모든 이해 관계자의 매입을 독려했다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;모든 부서, 디지털 변환 프로세스의 모든 주제 전문가, 특히 현장에서 운동하는 사람들을 포함합니다. 성공&rsquo;하려면 모든 사람이&rsquo; 구매하고 참여해야 합니다.&rdquo; </em>&mdash; 테리 예이츠, 스마트 시티 프로그램 전략가, 캐리의 마을</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/overview/iot/" target="_blank">Azure IoT</a>, <a href="https://www.sas.com/en_us/software/analytics-iot.html" target="_blank">IoT용 SAS 분석</a> 및 <a href="https://www.microsoft.com/en-us/industry/government/smart-cities" target="_blank">스마트 도시용 Microsoft에</a> 대해 자세히 알아봅니다.</p>

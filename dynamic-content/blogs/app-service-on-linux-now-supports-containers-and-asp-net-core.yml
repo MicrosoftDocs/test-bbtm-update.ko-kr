@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b243271e45c024269a1c5da342f427a9c67afc7e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901437"
+Slug: app-service-on-linux-now-supports-containers-and-asp-net-core
+Title: 이제 Linux의 App Service에서 컨테이너 및 ASP.NET Core 지원합니다.
+Summary: Linux에서 Azure App Service의 미리 보기를 발표하여 PHP 및 Node.js 개발자가 Linux에서 기본적으로 웹 애플리케이션을 쉽게 실행할 수 있도록 하여 .htaccess 파일로 직접 작업하거나 수정된 확장 또는 코드를 사용하지 않도록 합니다.
+Content: >-
+  <p>2016년 9월에는 PHP 및 Node.js 개발자가 Linux에서 웹 애플리케이션을 더 쉽게 실행할 수 있도록 Linux에서 <a href="https://azure.microsoft.com/services/app-service/web/">Azure App Service</a>의 미리 보기를 <a href="https://azure.microsoft.com/en-us/blog/azure-app-service-improves-node-js-and-php-developer-experience/">발표</a>하여 .htaccess 파일로 직접 작업하거나 수정된 확장 또는 코드를 사용하지 않도록 합니다.</p>
+
+
+  <p>App Service는 웹 및 모바일 개발자가 웹 서버 및 운영 체제의 일상적인 관리에 리소스를 집중하지 않고도 비즈니스용 애플리케이션 및 서비스를 빠르게 만들 수 있도록 완벽하게 관리되는 환경을 제공합니다. 여기에는 배포 슬롯, 사용자 지정 도메인, SSL 구성, 지속적인 배포 및 수평 및 수직 크기 조정을 사용하는 간소화된 배포 기능이 포함됩니다.</p>
+
+
+  <p>현재 개발자가 자체 Docker 형식 컨테이너 이미지를 가져오고 지원을 ASP.NET Core 확장하여 Linux에서 App Service의 관리 용이성과 민첩성을 구축하고 있습니다.</p>
+
+
+  <h3>사용자 고유의 Docker 형식 컨테이너 가져오기</h3>
+
+
+  <p>App Service는 서비스에서 쉽게 시작하고 실행할 수 있도록 Node.js, PHP 및 ASP.NET Core 버전에 대한 기본 Linux 컨테이너를 제공합니다.&nbsp; 새 컨테이너 지원을 통해 개발자는 이제 기본값에 따라 사용자 지정된 컨테이너를 만들 수 있습니다.&nbsp; 예를 들어 개발자는 서비스에서 제공하는 기본 버전과 다른 특정 빌드의 Node.js 및 pm2를 사용하여 컨테이너를 만들 수 있습니다.&nbsp; 이를 통해 개발자는 기본 컨테이너에서 사용할 수 없는 새 프레임워크 또는 실험적 프레임워크 버전을 사용할 수 있습니다.&nbsp; 개발자는 컨테이너를 Azure Container Registry, Docker Hub 또는 프라이빗 컨테이너 레지스트리에 업로드할 수 있습니다.</p>
+
+
+  <h3>ASP.NET Core 지원</h3>
+
+
+  <p>ASP.NET Core 웹 및 클라우드 애플리케이션을 빌드하기 위한 간결하고 구성 가능한 프레임워크입니다. ASP.NET Core 완전히 오픈 소스이며 <a href="https://github.com/aspnet/home">GitHub</a> 사용할 수 있습니다. ASP.NET Core Windows, Mac 및 Linux에서 사용할 수 있습니다. 현재 App Service는 ASP.NET 코어를 지원하는 새로운 기본 컨테이너 이미지를 도입했습니다. 이제 개발자는 Windows 및 Linux의 App Service에서 ASP.NET 핵심을 유연하게 실행할 수 있습니다. Linux 옵션에서 실행할 때의 주요 이점은 컨테이너를 사용하여 App Service에 배포할 수 있다는 것입니다.</p>
+
+
+  <p>컨테이너에 배포하여 Azure App Service에 배포합니다.</p>
+
+
+  <h3>시작</h3>
+
+
+  <p>시작하려면 무료 평가판에 로그인하거나 시작하고 App Service 인스턴스를 만듭니다. <a href="https://aka.ms/webapp-linux">App Service 설명서</a>에서 사용할 수 있는 자세한 정보입니다. 이 미리 보기에 대한 여러분의 의견을 듣고 싶기 때문에 팀의 손에 맡기려면 방문 <a href="https://feedback.azure.com/">https://feedback.azure.com/</a> 해 주세요.</p>

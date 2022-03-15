@@ -1,0 +1,103 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 50e12baa74ec09dbe00f206dd905e0186f79cfa6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907624"
+Slug: optimize-feature-engineering-time-series-data
+Title: 시계열 데이터에 대한 롤링 기능 엔지니어링 최적화
+Summary: 이 블로그에서는 R/Python/SQL 시계열 데이터를 사용하여 롤링 기능 엔지니어링을 최적화하는 방법에 대한 개요를 제공합니다.
+Content: >-
+  <p>이 블로그 게시물에서는 데이터 과학자가 특정 유형의 기능 엔지니어링을 대규모로 효율적으로 수행하는 방법에 대해 이야기하고 싶습니다. 샘플 코드를 살펴보기 전에 원격 분석 데이터가 생성되는 방법과 기업이 이러한 데이터를 사용하는 데 관심이 있는 이유에 대한 컨텍스트를 간략하게 설정합니다.</p>
+
+
+  <p>시작하기 위해, 요즘 기계는 작동 중인 동안 다양한 측정을 기록하기 위해 여러 내장 센서로 계측된다는 것을 알고 있습니다. 따라서 이러한 컴퓨터는 이 데이터가 이러한 컴퓨터에서 전송되고 중앙 집중식 리포지토리에 저장되면 사용할 수 있는 많은 원격 분석 데이터를 생성하게 됩니다. 요즘 기업은 축적된 데이터를 사용하여 컴퓨터가 실패&rdquo;할 가능성이 있는 시기 또는 &ldquo;&ldquo;컴퓨터의 예비 부품을 언제 다시 주문해야 하는 경우와 같은 질문에 답변하는 데 도움이 되기를 희망합니다.&rdquo; 결국 임시 유지 관리 활동에서 발생하는 시간과 비용을 줄이는 데 도움이 될 수 있습니다.</p>
+
+
+  <p>많은 모델을 빌드한 후 원시 형식의 다양한 센서에서 생성되는 일반적인 원격 분석 데이터가 거의 가치가 없다는 것을 알게되었습니다. 센서는 정기적인 시간 간격으로 데이터를 생성할 수 있으므로 데이터는 각 컴퓨터가 의미 있는 추가 기능을 빌드하기 위해 시간별로 정렬할 수 있는 여러 시계열로 구성됩니다. 따라서 저와 같은 데이터 과학자는 이 원시 센서 데이터에 대한 추가 기능 엔지니어링을 수행하여 데이터 세트를 향상합니다.</p>
+
+
+  <p>가장 일반적인 기능은 샘플 데이터 세트에서 기본 설정된 통계 프로그래밍 언어를 사용하여 롤링 집계를 빌드하는 것입니다. 다음은 날짜별로 전압, 회전, 압력 및 진동 측정을 기록하는 컴퓨터에 R/Python을 사용하여 특정 창 크기에 대한 롤링 집계를 생성하는 방법에 대한 몇 가지 코드 조각입니다. 이러한 코드 조각은 Jupyter Notebook 내 또는 Azure ML Studio 환경 내에서 다른 로컬 R/Python IDE에서 실행할 수 있습니다.</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0" width="2397">
+      <tbody>
+          <tr>
+              <td valign="top" width="1325">
+              <p align="center">R</p>
+              </td>
+              <td valign="top" width="1070">
+              <p align="center">Python</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="1325">
+              <p><code>telemetrymean &lt;- telemetry %&gt;%<br>
+              &nbsp;&nbsp;&nbsp; arrange(machineID, datetime) %&gt;%<br>
+              &nbsp;&nbsp;&nbsp; group_by(machineID) %&gt;%</code></p>
+
+              <p><code>&nbsp;&nbsp;&nbsp; mutate(voltmean = rollapply(volt, width = 3, FUN = mean, align = &ldquo;right&rdquo;, fill = NA, by = 3),<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rotatemean = rollapply(rotate, width = 3, FUN = mean, align = &ldquo;right&rdquo;, fill = NA, by = 3),<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pressuremean = rollapply(pressure, width = 3, FUN = mean, align = &ldquo;right&rdquo;, fill = NA, by = 3),<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vibrationmean = rollapply(vibration, width = 3, FUN = mean, align = &ldquo;right&rdquo;, fill = NA, by = 3)) %&gt;%<br>
+              &nbsp;&nbsp;&nbsp; select(datetime, machineID, voltmean, rotatemean, pressuremean, vibrationmean) %&gt;%<br>
+              &nbsp;&nbsp;&nbsp; filter(!is.na(voltmean)) %&gt;%<br>
+              &nbsp;&nbsp;&nbsp; ungroup()</code></p>
+              </td>
+              <td valign="top" width="1070">
+              <p><code>temp = []<br>
+              fields = [&#39;volt&#39;, &#39;rotate&#39;, &#39;pressure&#39;, &#39;vibration&#39;]<br>
+              for col in fields:<br>
+              &nbsp;&nbsp;&nbsp; temp.append(pd.pivot_table(telemetry,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; index=&#39;datetime&#39;,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; columns=&#39;machineID&#39;,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; values=col).resample(&#39;3H&#39;, closed=&#39;left&#39;, label=&#39;right&#39;, how=&#39;mean&#39;).unstack())<br>
+              telemetry_mean_3h = pd.concat(temp, axis=1)<br>
+              telemetry_mean_3h.columns = [i + &#39;mean_3h&#39; for i in fields]<br>
+              telemetry_mean_3h.reset_index(inplace=True)</code></p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>종단 간 사용 사례에 대한 자세한 내용은 <a href="https://gallery.cortanaintelligence.com/Notebook/Predictive-Maintenance-Modelling-Guide-R-Notebook-1">R 코드</a> 및 <a href="https://gallery.cortanaintelligence.com/Notebook/Predictive-Maintenance-Modelling-Guide-Python-Notebook-1">Python 코드를</a> 검토하세요.</p>
+
+
+  <p>작은 데이터 세트를 사용하여 로컬 환경에서 R/Python 코드를 테스트하고 적합하다고 판단되면 프로덕션 환경으로 이동해야 합니다. &nbsp;효율성을 보장하면서 훨씬 더 큰 데이터 세트에 대해 동일한 계산을 확장하는 방법에 대한 다양한 옵션도 고려해야 합니다. 일종의 SQL 쿼리를 사용하여 대규모 계산에 대해 인덱싱된 데이터를 사용하는 것이 더 효율적인 경우가 많습니다. 원래 R/Python으로 작성된 코드를 SQL 쿼리 언어로 번역한 방법은 다음과 같습니다.&nbsp;</p>
+
+
+  <p>샘플 SQL 코드</p>
+
+
+  <p><code>select rt.datetime, rt.machineID, rt.voltmean, rt.rotatemean, rt.pressuremean, rt.vibrationmean<br>
+
+  from<br>
+
+  (select avg(volt) over(partition by machineID order by machineID, datetime rows 2 preceding) as voltmean,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; avg(rotate) over(partition by machineID order by machineID, datetime rows 2 preceding) as rotatemean,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; avg(pressure) over(partition by machineID order by machineID, datetime rows 2 preceding) as pressuremean,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; avg(vibration) over(partition by machineID order by machineID, datetime rows 2 preceding) as vibrationmean,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; row_number() over (partition by machineID order by machineID, datetime) as rn,<br>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; machineID, datetime<br>
+
+  from telemetry) rt<br>
+
+  where rt.rn % 3 = 0 and rt.voltmean is not null<br>
+
+  order by rt.machineID, rt.datetime</code></p>
+
+
+  <p>자세한 내용은 <a href="https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintanenceModelingGuide/Code/pdm_feature_engineering.sql">SQL 코드를</a> 검토하세요.</p>
+
+
+  <p>예측 유지 관리 사용 사례에 대한 경험을 바탕으로 SQL 롤링 기능 엔지니어링이 시계열 정렬 데이터를 컴퓨터별로 분할하는 데 가장 적합하다는 것을 알게되었습니다. 온-프레미스 시나리오의 경우 <a href="https://msdn.microsoft.com/en-us/library/mt604885.aspx">이제 SQL Server R Services</a> 사용하여 R 애호가가 R 코드를 실행하여 SQL Server 내에서 다른 데이터 랭글링, 모델 빌드 및 점수 매기기 코드를 수행할 수 있습니다. 전반적으로 이는 데이터 이동이 없고 계산을 확장할 수 있기 때문에 더 효율적입니다.</p>
+
+
+  <p>그러나 이러한 유형의 기능 엔지니어링을 대규모로 조작하는 다른 많은 방법이 있습니다. 예를 들어 <a href="https://azure.microsoft.com/en-us/services/hdinsight/r-server/">HDInsight의 R Server</a>는 R의 기능을 Hadoop 및 Spark의 기능과 결합하고 <a href="https://azure.microsoft.com/en-us/services/data-lake-analytics/">Azure Data Lake Analytics</a> 이제 페타바이트 데이터에서 R 실행을 지원합니다. 클라우드 컴퓨팅의 힘은 원시 센서 데이터를 의미 있는 데이터로 변환하여 기계 학습 애플리케이션이 비즈니스에 가치를 다시 제공하는 데 활용할 수 있습니다.</p>

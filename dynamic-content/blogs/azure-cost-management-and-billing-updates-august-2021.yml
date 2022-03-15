@@ -1,0 +1,235 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9b5275cc67d7738caeaf56119a895eb6af74485c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907908"
+Slug: azure-cost-management-and-billing-updates-august-2021
+Title: Azure Cost Management 및 청구 업데이트 – 2021년 8월
+Summary: 8월이 가까워짐에 따라 비용 분석 미리 보기에서 사용할 수 있는 새로운 다운로드 옵션과 Configuration의 일반 구독 및 리소스 그룹 작업에 대한 빠른 액세스를 찾을 수 있습니다. 또한 Azure Government 일급 비밀의 일반 공급과 향상된 마이그레이션 및 현대화 도구 및 프로그램뿐만 아니라 14개의 새로운 비용 절감 옵션과 3개의 설명서 업데이트도 확인할 수 있습니다. 좋은 물건의 제비!
+Content: >-
+  <p>&rsquo;새로운 학생, 번창하는 신생 기업 또는 가장 큰 기업에 관계없이 재정적 제약이 있으며 지출, 위치 및 미래를 계획하는 방법을 알아야&rsquo;합니다. 이 법안에 관해서 아무도 놀라움을 원하지 않으며, <a href="https://azure.microsoft.com/en-us/services/cost-management/" target="_blank">이것은 Azure Cost Management 및 청구</a> 가 들어오는 곳입니다.</p>
+
+
+  <p>Microsoft&rsquo;는 항상 문제에 대해 자세히 알아보고 Azure Cost Management 및 청구를 통해 클라우드에서 발생하는 비용을 더 잘 이해하고&rsquo;, 잘못된 지출 패턴을 식별 및 방지하며, 비용을 최적화하여 더 적은 비용으로 더 많은 작업을 수행할 수 있는 방법을 찾고 있습니다. 피드백에 따른 몇 가지 최신 개선 사항 및 업데이트는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><a href="#analysis">비용 분석 미리 보기의 새 다운로드 옵션입니다</a>.</li>
+      <li><a href="#config">구성에서 사용할 수 있는 추가 관리 작업</a>.</li>
+      <li><a href="#research">Azure Cost Management 및 청구의 미래를 형성하는 데 도움이 됩니다</a>.</li>
+      <li><a href="#gov">이제 Azure Government 일급 비밀이 일반 공급됩니다</a>.</li>
+      <li><a href="#migrate">Azure 마이그레이션 및 현대화 과정을 가속화합니다</a>.</li>
+      <li><a href="#mca">Azure를 사용하여 클라우드 지출을 최적화합니다</a>.</li>
+      <li><a href="#labs">Cost Management Labs의 새로운&#39;.</a></li>
+      <li><a href="#optimize">Azure를 사용하여 비용을 절감하는 새로운 방법입니다</a>.</li>
+      <li><a href="#docs">설명서 업데이트.</a></li>
+  </ul>
+
+
+  <p>&rsquo;세부 정보를 자세히 살펴보겠습니다.</p>
+
+
+  <p><a name="analysis"></a>&nbsp;</p>
+
+
+  <h2>비용 분석 미리 보기의 새 다운로드 옵션</h2>
+
+
+  <p>최상의 계획에도 불구하고 클라우드 여정은 항상 계획대로 진행되지는&#39;않으며 비용이 우리에게서 벗어나는 것이&#39;쉽습니다. 새 요구 사항을 충족하기 위해 강화하거나, VM을 종료하는 것을 잊거나, 더 많은 리소스를 배포했을 수 있습니다. 이유가 무엇이든 간에 비용 분석은 비용을 세분화하여 지출할&#39;있는 항목과 위치를 파악해야 할 때 첫 번째 중지가 되어야 합니다. 물론 포털 외부에서 추가 보고 및 분석을 위해 요약된 데이터를 다운로드해야 하는 경우도 있습니다. 비용 분석을 통해 항상 데이터를 CSV 또는 Excel 다운로드할 수 있으며 원시 데이터의 자동화된 내보내기를 만드는 링크도 제공했습니다. 이제 비용 분석 미리 보기를 통해 한 단계 더 발전합니다.</p>
+
+
+  <p>비용 분석 미리 보기는 Azure Cost Management 및 청구에서 분석 및 인사이트의 미래에 대한 초기 보기입니다. 차트 및 필터와 같이 아직 많은&#39;있지만, 많은 사람들이 리소스, 리소스 그룹, 구독 및 예약 비용을 검토하는 것이 더 좋은 장소라고 생각하고 있습니다. 비용 분석 미리 보기에는 아직 모든 사용자 지정 옵션이&#39;없지만 언뜻 보기에 비용에 대한 자세한 분석이 제공됩니다. 청구 계정 내의 구독 및 리소스 그룹, 리소스 그룹 내의 리소스 및 미터 또는 더 간소화된 차지백을 위해&nbsp; 리소스별로 분할된 분할된 예약 비용일 수 있습니다. 필요한 것이 무엇이든, 비용 분석 미리 보기는 이제 몇 가지 향상된 기능으로 동일한 친숙한 다운로드 환경을 제공합니다.</p>
+
+
+  <p>먼저 다운로드 창에 파일을 다운로드하거나, Power BI 데이터를 보거나, 다운로드를 자동화할 수 있는 탭이&#39;. <strong></strong><b>파일을 Download할</b> 때 현재 환경과 유사한 Excel 또는 CSV를 선택할 수 있습니다. 그러나&#39;새로운 것은 중첩된 데이터를 포함하는 옵션입니다. 이 옵션을 사용하면 데이터를 더 많이 제어할 수 있으므로 중첩된 리소스 그룹, 리소스 또는 미터를 다운로드에 포함할지 여부를 결정할 수 있습니다. 예를 들어 리소스 보기에서 중첩된 세부 정보 없이 다운로드하면 각 리소스에 대해 하나의 행이 표시됩니다. 중첩된 세부 정보를 사용하여 다운로드하면 모든 개별 리소스 미터에 대한 행이 표시됩니다. 이는 훨씬 더 많은 데이터이지만 비용을 절감하는 데 필요할 수 있는 추가 세부 정보를 포함합니다.</p>
+
+
+  <p><img alt="Download a file option available from the cost analysis preview" border="0" height="751" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e4b668ad-e2a9-4bb0-ad5d-45c3f496eddd.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="3098"></p>
+
+
+  <p><b>Power BI 열기</b> 옵션이 표시되지 않을 수 있습니다. Power BI EA(기업계약 및 MCA(Microsoft 고객 계약) 청구 계정 및 청구 프로필에만 사용할 수 있기 때문입니다. 범위 선택기 내에서 청구 계정 또는 청구 프로필을 선택하는 경우 Power BI <a href="https://go.microsoft.com/fwlink/?linkid=2152941" target="_blank">Azure Cost Management 템플릿 앱</a> 또는 <a href="https://go.microsoft.com/fwlink/?linkid=2152943" target="_blank">Power BI Desktop 커넥터</a>를 사용하는 방법에 대한 빠른 지침을 찾을&#39;있습니다. 범위 ID는 Power BI 설정을 할 때 편의를 위해 여기에 제공됩니다.</p>
+
+
+  <p><img alt="Open in Power BI option available in the Download pane from the cost analysis preview" border="0" height="1176" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a1799b00-5fbd-48d2-bf78-ddf187a027e7.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1519"></p>
+
+
+  <p>마지막으로 <b>다운로드 자동화</b> 탭을 사용하면 스토리지 계정으로의 반복 내보내기를 예약하거나 <a href="https://aka.ms/costmgmt/usagedetails?WT.mc_id=acm-micflan" target="_blank">UsageDetails API</a> 와 통합하여 필터링되지 않은 원시 비용 데이터를 가져올 수 있습니다.</p>
+
+
+  <p><img alt="Download automation instructions for scheduled exports and API integration available in the Download pane from the cost analysis preview" border="0" height="1066" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b7cb6a3e-2042-430f-8856-f96ac127d7c0.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="3092"></p>
+
+
+  <p>다음은 비용 분석 미리 보기에서 사용할 수 있는 몇 가지 향상된 기능입니다. 더 많은&#39;있지만&#39;피드백을 받고 다음에 보고 싶은&#39;보고 싶습니다. 비용 분석을 더 잘 만들 수 있는 방법은 무엇인가요?</p>
+
+
+  <p><a name="config"></a>&nbsp;</p>
+
+
+  <h2>구성에서 사용할 수 있는 추가 관리 작업</h2>
+
+
+  <p>지난 달에는 구성 설정을 더 잘 구성하고 Cost Management, 예약 및 Marketplace에 대한 청구 정책 상태를 버블링하는 <a href="https://azure.microsoft.com/blog/azure-cost-management-and-billing-updates-july-2021/#config" target="_blank">업데이트된 구성 화면</a> 이 도입되었습니다. 이번 달에는 Cost Management 허브를 벗어나지 않고 구독 및 리소스 그룹을 신속하게 관리하는 데 도움이 되는 몇 가지 추가 명령을 찾을&#39;있습니다.</p>
+
+
+  <p><img alt="2021-08_Config" border="0" height="1707" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3889e90d-f2b2-437f-977d-0e3ac45de0f2.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="2021-08_Config" width="2115"></p>
+
+
+  <p>이렇게 하면 모든 관리 작업에 대한 워크플로를 간소화할 수 있습니다. 비용 분석에서 더 잘 나타내거나 더 이상 사용하지&#39;구독을 취소하기 위해 구독의 이름을 바꾸려고 할 수도 있습니다. 더 이상 사용되지&#39;고가의 리소스 그룹을 발견했습니다. 이러한 모든 작업 및 기타 작업은 구성에서 사용할 수 있습니다. 더 많은 것이 필요한 경우 <b>구독으로 이동</b> 명령을 클릭하여 전체 관리 환경을 시작합니다.</p>
+
+
+  <p>이러한 새로운 명령 및 중앙 비용 구성 화면 전체에 대해 어떻게 생각하는지 알려주세요. 우리는&#39;항상 당신에게 잘 작동하는 것과 개선 할 수있는 것에 대해 더 많은 것을 배우고 싶어합니다.</p>
+
+
+  <p><a name="research"></a>&nbsp;</p>
+
+
+  <h2>Azure Cost Management 및 청구의 미래를 형성하는 데 도움이 됩니다.</h2>
+
+
+  <p>Microsoft Azure 예약을 구매하거나 구독 및 반복 요금을 관리할 책임이 있나요? 그렇다면 고려 중인 몇 가지 변경 사항에 대한 피드백을&#39;.</p>
+
+
+  <ul>
+      <li>예약 구매 흐름에 대한 새로운 디자인이 향상되었습니다.</li>
+      <li>반복 요금에 대한 새로운 명명 및 용어입니다.</li>
+  </ul>
+
+
+  <p>각 세션에는 약 20분이 소요되어야 합니다. 참여에 관심이 있는 경우 <a href="mailto:CE_UXR@microsoft.com?subject=Join the CM+B research panel (Source: CM+B blog)">연구 팀에 문의</a> 하세요.&#39;원격 유용성 세션을 예약할 것입니다.</p>
+
+
+  <p><a name="gov"></a>&nbsp;</p>
+
+
+  <h2>이제 Azure Government 일급 비밀이 일반 공급됩니다.</h2>
+
+
+  <p>Tom 킨은 미국 국가 안보 조직을 위한 Azure Government 일급 비밀의 일반 공급에 대해 발표했습니다. 이는 분류된 네트워크에서도 최고의 생산성을 위해 동급 최고의 클라우드 솔루션을 제공하기 위한 여정에서 중요한 단계입니다. 그리고 이 모든 것은 네이티브 Azure Cost Management 및 청구 기능을 사용할 준비가 된 상태에서 제공됩니다. 자세한 내용은 <a href="https://azure.microsoft.com/blog/azure-government-top-secret-now-generally-available-for-us-national-security-missions?WT.mc_id=acm-micflan" target="_blank">전체 Azure Government 일급 비밀 공지</a> 사항을 참조하세요.</p>
+
+
+  <p><a name="migrate"></a>&nbsp;</p>
+
+
+  <h2>Azure 마이그레이션 및 현대화 경험 가속화</h2>
+
+
+  <p>타누즈 반살은 다음을 소개했습니다.</p>
+
+
+  <ul>
+      <li>Azure 마이그레이션 프로그램의 발전된 AMMP(Azure 마이그레이션 및 현대화 프로그램).</li>
+      <li>Azure에서 Windows Server 및 SQL Server 대한 확장 보안 업데이트를 무료로 제공합니다.</li>
+      <li>가상 머신 및 App Service 컨테이너에서 Azure SQL 및 Azure Lighthouse에 대한 Azure Arc 지원에 이르기까지 향상된 Azure 마이그레이션 및 현대화 도구</li>
+  </ul>
+
+
+  <p><a href="https://azure.microsoft.com/blog/accelerate-your-azure-migration-and-modernization-journey-with-expended-programs-and-offers?WT.mc_id=acm-micflan" target="_blank">확장된 프로그램 및 제품에</a>&rsquo; 대한 전체 세부 정보를 읽고 온라인으로 무료로 시청할 수 있는 Tanuj&#39;Microsoft Inspire 세션을 확인하세요.</p>
+
+
+  <p><a name="mca"></a>&nbsp;</p>
+
+
+  <h2>Azure를 사용하여 클라우드 지출 최적화</h2>
+
+
+  <p>조직은 그 어느 때보다 디지털 트랜스포메이션을 찾고 있으며 혁신의 속도는 성장 궤도에 큰 차이를 만들 수 있습니다. 새로운 기회를 제시하면서 디지털 트랜스포메이션으로 인해 발생하는 과제는 고유합니다. 비용을 관리하고, 제어를 유지 관리하고, 보안 및 규정 준수와 관련하여 점점 더 엄격한 표준을 충족하면서 민첩성의 필요성과 혁신 속도의 균형을 맞추는 더 나은 방법이 필요합니다.</p>
+
+
+  <p>대화에서 자주 나오는 한 가지 항목은 클라우드 채택 과정에서 클라우드 비용을 더 잘 예측, 모니터링, 관리 및 최적화해야 한다는 것입니다. <a href="https://azure.microsoft.com/blog/optimize-your-cloud-spend-with-azure?WT.mc_id=acm-micflan" target="_blank">Azure에서 클라우드 지출 최적화</a>를 읽고 Azure Cost Management 및 청구, Azure Advisor 및 Azure 가격 계산기가 이를 수행하는 데 어떻게 도움이 되는지 알아봅니다. 또한 Microsoft 고객 계약이 비용을 예측하고 모니터링하는 데 도움이 되도록 전 세계적으로 일관된 가격 책정을 제공하는 방법에 대해서도 알아볼&#39;있습니다.</p>
+
+
+  <p><a name="labs"></a>&nbsp;</p>
+
+
+  <h2>Cost Management Labs의 새로운&#39;</h2>
+
+
+  <p><a href="https://azure.microsoft.com/blog/azure-cost-management-updates-july-2019?WT.mc_id=acm-micflan#labs" target="_blank">Cost Management Labs</a>를 사용하면 Azure Cost Management에서 제공되는 내용을&rsquo; 미리 살펴보고 Microsoft와 직접 협력하여 피드백을 공유하고 서비스를 사용하는 방법을 더 잘 이해할 수 있으므로 더욱 튜닝되고 최적화된 환경을 제공할 수 있습니다. Cost Management Labs에서 볼 수 있는 몇 가지 기능은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><strong>새로운 기능: <a href="#analysis">비용 분석 미리 보기</a></strong> &ndash; 의 다운로드 옵션 <em>이제 공용 포털에서 사용할 수 있습니다</em>.<br>
+  이제 비용 분석 미리 보기에서 보다 완전한 데이터 세트를 다운로드하고 중첩된 세부 정보를 포함하거나 제외하도록 선택할 수 있습니다. 또한 동일한 환경을 통해 Power BI 설정하거나(사용 가능한 경우) 내보내기를 자동화하거나 Cost Management API를 사용하는 방법을 알아볼 수 있습니다.</li>
+      <li><strong>업데이트됨: <a href="#config">구성</a></strong> &ndash; 에서 사용할 수 있는 추가 관리 작업 <em>이제 공용 포털에서 사용할 수 있습니다</em>.<br>
+  이제 구성 화면에는 Cost Management 허브를 벗어나지 않고 구독 및 리소스 그룹을 신속하게 관리하는 데 도움이 되는 추가 명령이 포함되어 있습니다. 중앙 구성 화면에서 구독 이름을 바꾸거나 취소하고 리소스 그룹 등을 삭제할 수 있습니다. 이러한 채널을 통해 여러분의 의견과 생각을 공유해 주시기 바랍니다.</li>
+      <li><strong>새로운 기능: 비용 분석 미리 보기</strong> &ndash; 의 유용성 업데이트 <em>이제 공용 포털에서 사용할 수 있습니다</em>.<br>
+  많은 사람들이 월초에 비용을 확인하여 이전 달이 어떻게 끝났는지 확인합니다. 이 문제를 더 잘 지원하기 위해 비용 분석 미리 보기는 이제 월의 처음 이틀에 기본적으로 이전 달을 표시합니다. 물론 다른 달은 날짜 선택기 내의 정방향/뒤로 단추를 사용하여 한 번의 클릭으로 진행됩니다. 또한 Azure Portal의 나머지 부분에 맞게 향상된 페이징 컨트롤을 찾을&#39;있습니다.</li>
+      <li><strong>리소스 비용 보기</strong><br>
+  리소스 비용은 <a href="https://preview.portal.azure.com" target="_blank">미리 보기 포털</a>의 리소스 개요에서 한 번 클릭하는 것입니다. <strong>비용 보기를</strong> 클릭하면 해당 특정 리소스의 비용으로 빠르게 이동할 수 있습니다.</li>
+      <li><strong>메뉴에서 범위 변경</strong><br>
+  더 빠른 탐색을 위해 메뉴에서 범위를 변경합니다. 미리 보기 체험을 사용하여 옵트인할 수 있습니다. <a href="https://aka.ms/costmgmt/previews/changescope" target="_blank">이 미리 보기에 대한 피드백을 공유합니다</a>.</li>
+      <li><strong>주 메뉴에서 구성 항목 열기</strong><br>
+  선택한 구성 화면을 Cost Management 메뉴에서 중첩된 메뉴 항목으로 표시하는 실험적 옵션입니다. <a href="https://aka.ms/costmgmt/labs" target="_blank">Cost Management Labs</a>에서 미리 보기 체험을 사용하여 옵트인할 수 있습니다. <a href="https://aka.ms/costmgmt/previews/configinmenu" target="_blank">이 미리 보기에 대한 피드백을 공유합니다</a>.</li>
+      <li><strong>간소화된 Cost Management 메뉴</strong><br>
+  구성에만 설정을 표시합니다. Cost Management 메뉴에서 AWS용 Cloudyn, 내보내기 및 커넥터를 제거합니다. <a href="https://aka.ms/costmgmt/labs" target="_blank">Cost Management Labs</a>에서 미리 보기 체험을 사용하여 옵트인할 수 있습니다. <a href="https://aka.ms/costmgmt/previews/onlyinconfig" target="_blank">이 미리 보기에 대한 피드백을 공유합니다</a>.</li>
+
+  </ul>
+
+
+  <p>물론, 그게&rsquo; 전부는 아닙니다. Azure Cost Management의 모든 변경 내용은 전체 Azure Portal에서 일주일 전에&rsquo; Cost Management Labs에서 사용할 수 있습니다. 우리는&rsquo; 당신의 생각을 듣고 당신이&rsquo; 다음에보고 싶은 것을 이해하고 싶어. 무엇을 망설이고 계신가요? 지금 <a href="https://aka.ms/costmgmt/labs" target="_blank">Cost Management Labs를</a> 사용해 보세요.</p>
+
+
+  <p><a name="optimize"></a>&nbsp;</p>
+
+
+  <h2 id="new-ways-to-save-money-with-azure">Azure를 사용하여 비용을 절감하는 새로운 방법</h2>
+
+
+  <p>지난 한 달 동안 많은 비용 최적화 개선 사항!</p>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/updates/general-availability-lower-capacity-reservation-tier-for-azure-monitor-dedicated-clusters/?WT.mc_id=acm-micflan" target="_blank">일반 공급: Azure Monitor 전용 클러스터에 대한 낮은 용량 예약 계층.</a></li>
+      <li><a href="https://azure.microsoft.com/updates/azure-defender-for-sql-now-in-general-availability-on-the-azure-sql-virtual-machine-blade/?WT.mc_id=acm-micflan" target="_blank">일반 공급: 이제 Azure Portal의 SQL 가상 머신에서 SQL용 Azure Defender를 사용할 수 있습니다</a>.</li>
+      <li><a href="https://azure.microsoft.com/updates/general-availability-azure-backup-now-supports-archive-tier-for-backups-of-sql-server-in-azure-vms/?WT.mc_id=acm-micflan" target="_blank">일반 공급: 이제 Azure Backup은 Azure VM에서 SQL Server 백업을 위한 보관 계층을 지원합니다</a>.</li>
+      <li>일반 공급: <a href="https://azure.microsoft.com/updates/general-availability-new-australia-central-region-added-to-azure-hdinsight/?WT.mc_id=acm-micflan" target="_blank">HD Insights 오스트레일리아 중부</a> 및 <a href="https://azure.microsoft.com/updates/new-west-us-3-and-jio-india-west-regions-added-to-azure-hdinsight?WT.mc_id=acm-micflan" target="_blank">미국 서부 3</a>.</li>
+      <li>일반 공급: <a href="https://azure.microsoft.com/updates/azure-vmware-solution-now-generally-available-in-the-australia-southeast-region/?WT.mc_id=acm-micflan" target="_blank">오스트레일리아 남동부</a> 및 <a href="https://azure.microsoft.com/updates/azure-vmware-solution-now-generally-available-in-the-canada-east-region/?WT.mc_id=acm-micflan" target="_blank">캐나다 동부</a>의 Azure VMware Solution.</li>
+      <li><a href="https://azure.microsoft.com/updates/shared-disks-on-azure-disk-storage-is-now-generally-available-on-all-premium-ssds-and-standard-ssds?WT.mc_id=acm-micflan" target="_blank">일반 공급: Azure Disk의 공유 디스크 Storage</a>.</li>
+      <li><a href="https://azure.microsoft.com/updates/newerlocations?WT.mc_id=acm-micflan" target="_blank">일반 공급: 일반 공급: 3개의 새 피어링 위치에서 &ndash; Azure ExpressRoute 캄피나스, 더블린2, 상파울루2</a>.</li>
+      <li><a href="https://azure.microsoft.com/updates/free-extended-security-updates-only-on-azure-for-windows-server-2012-r2and-sql-server-2012?WT.mc_id=acm-micflan" target="_blank">무료 제품 확장: 2022년 7월 12일까지 Azure에서 Windows Server 및 SQL Server 대한 무료 확장 보안 업데이트</a>.</li>
+      <li><a href="https://azure.microsoft.com/updates/public-preview-azure-kubernetes-service-aks-smart-defaults?WT.mc_id=acm-micflan" target="_blank">미리 보기: AKS(Azure Kubernetes Service) 스마트 기본값.</a></li>
+      <li>미리 보기: Azure Database 유연한 서버에 대한 많은 업데이트: <ul>
+          <li><a href="https://azure.microsoft.com/updates/public-preview-of-azure-database-for-mysql-flexible-server-now-offers-reserved-instance-pricing?WT.mc_id=acm-micflan" target="_blank">Azure Database for MySQL 유연한 서버 예약</a>.</li>
+          <li><a href="https://azure.microsoft.com/updates/azure-database-for-mysql-flexible-server-autogrow-storage-in-public-preview?WT.mc_id=acm-micflan" target="_blank">Azure Database for MySQL 유연한 서버 자동 증가 스토리지</a>.</li>
+          <li><a href="https://azure.microsoft.com/updates/public-preview-of-azure-database-flexible-server-now-available-in-new-regions?WT.mc_id=acm-micflan" target="_blank">2개의 새 지역에 있는 Azure Database for MySQL 유연한 서버</a> &ndash; 독일 중서부 및 미국 서부.</li>
+          <li><a href="https://azure.microsoft.com/updates/public-preview-of-azure-database-for-postgresql-flexible-server-now-offers-reserved-instance-pricing?WT.mc_id=acm-micflan" target="_blank">Azure Database for PostgreSQL 유연한 서버 예약</a></li>
+          <li>8개의 &ndash; <a href="https://azure.microsoft.com/updates/the-public-preview-of-azure-database-for-postgresql-flexible-server-now-supported-in-new-regions-2?WT.mc_id=acm-micflan" target="_blank">새 지역의 Azure Database for PostgreSQL</a> 오스트레일리아 남동부, 브라질 남부, 한국 중부, 노르웨이 동부, 남아프리카 북부, 스위스 북부, 아랍에미리트 북부 및 미국 서부.</li>
+      </ul>
+      </li>
+  </ul>
+
+
+  <p><a name="docs"></a>&nbsp;</p>
+
+
+  <h2 id="documentation-updates">설명서 업데이트</h2>
+
+
+  <p>관심 있는 몇 가지 설명서 업데이트는 다음과 같습니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/azure/cost-management-billing/reservations/reservation-renew?WT.mc_id=acm-micflan#renewal-notification" target="_blank">만료 30일 전에 시작하는 예약 갱신 경고</a>에 대한 메모가 추가되었습니다.</li>
+      <li><a href="https://docs.microsoft.com/azure/cost-management-billing/manage/ea-transfers?WT.mc_id=acm-micflan" target="_blank">EA(기업계약) 등록 갱신 및 전송</a>에 대한 자세한 내용이 추가되었습니다(<b>필수 구성 요소</b> 섹션의 <b>기타 지점</b> 참조).</li>
+      <li>비용 보고에 영향을 미칠 수 있는 <a href="https://docs.microsoft.com/azure/governance/management-groups/overview?WT.mc_id=acm-micflan" target="_blank">최대 30분 동안 관리 그룹 계층 구조 캐싱</a>에 대한 메모가 추가되었습니다.</li>
+  </ul>
+
+
+  <p>모든 설명서 업데이트를 주시하고 싶으신가요? GitHub <strong>azure-docs</strong> 리포지토리에서 <a href="https://github.com/MicrosoftDocs/azure-docs/commits/master/articles/cost-management-billing" target="_blank">Cost Management 및 청구 문서 변경 기록을</a> 확인합니다. 누락된 항목이 표시되면 문서 맨 위에서 <strong>편집</strong> 을 선택하고 빠른 끌어오기 요청을 제출합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2 id="whats-next">다음 단계는 무엇인가&rsquo;요?</h2>
+
+
+  <p>이들은 지난 달에서 큰 업데이트의 단지 몇 가지. <a href="https://aka.ms/costmgmt/blog" target="_blank">이전 Azure Cost Management 및 청구 업데이트를 확인하는 것을</a> 잊지 마세요&rsquo;. 피드백&rsquo;에 따라 항상 의견을 경청하고 지속적으로 개선하므로 피드백을 계속 보내주세요.</p>
+
+
+  <p>Twitter를 팔로우 <a href="https://twitter.com/azurecostmgmt" target="_blank">@AzureCostMgmt</a> 하고 <a href="https://aka.ms/costmgmt/videos" target="_blank">YouTube 채널을</a> 구독하여 업데이트, 팁 및 요령을 확인하세요. 또한 <a href="https://aka.ms/costmgmt/feedback" target="_blank">Cost Management 피드백 포럼</a> 에서 아이디어를 공유하고 다른 사람에게 투표하거나 <a href="https://aka.ms/costmgmt/joinresearch" target="_blank">연구 패널에 참여</a> 하여 향후 연구에 참여하고 Azure Cost Management 및 청구의 미래를 형성하는 데 도움을 줄 수 있습니다.</p>
+
+
+  <p>우리는 이것이 모두를 위해 노력하는 시간인 것을 알고 있습니다. Azure Cost Management 및 청구 팀에서 최고의 소원을 기원합니다. 안전하게 유지하고 건강을 유지하십시오.</p>

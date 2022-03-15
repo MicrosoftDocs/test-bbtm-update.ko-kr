@@ -1,0 +1,29 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4bd14bf39c7cbc39468cb7142091b177f6dd920d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902282"
+Slug: azure-media-services-enables-live-stream-of-global-robotic-surgery-event
+Title: Azure Media Services 글로벌 로봇 수술 이벤트의 라이브 스트림을 가능하게
+Summary: 2015년 2월 16일, 3,000명이 넘는 의대생과 전문가들이 Microsoft Azure Media Services 구동하는 세계 최초의 24시간 라이브 세계 로봇 수술 이벤트(WRSE)에 참여했습니다.
+Content: >-
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/02/19/IMG_2.jpg"><img class="alignnone size-medium wp-image-255723" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/IMG_2-492x369.jpg" alt="IMG_2" width="492" height="369" /></a>
+
+
+  2015년 2월 16<sup>일</sup>, 3,000명이 넘는 의대생과 전문가들이 Microsoft Azure Media Services 구동하는 세계 최초의 24시간 라이브 세계 <a href="https://player.publisherapi.livearena.com/play/vod/8d02e67fc1d54665e85a517a51309ad8/2a96b0aa80a241818d2225a9dfb06371">로봇 수술 이벤트</a>(WRSE)에 참여했습니다. 로봇 수술 교육 및 인증에 초점을 맞춘 이 행사는 4개 대륙의 10개 주요 로봇 수술 센터에서 스트리밍되어 24시간 연속으로 생중계되었습니다. 이 날의 이벤트는 Microsoft의 파트너 기술인 LiveArena 및 <a href="https://azure.microsoft.com/en-us/marketplace/partners/mps/testmps/">LiveArena® Publisher</a> 통해 전달되었으며, 이를 통해 사용자는 Microsoft의 Azure Media Services ™ 사용하여 라이브 및 주문형 비디오를 관리하고 배포할 수 있습니다.
+
+
+  WRSE는 전문 외과 의사가 여행없이 전문 지식을 공유하고 의료 커뮤니티에 귀중한 학습 자산을 제공 할 수있는 최초의 이벤트였습니다. 역사적으로, 라이브 수술 이벤트를 수행하는 것은 비싸고, 위험하고, 익숙하지 않은 환경에서 복잡한 절차를 수행하는 외과 의사를 필요로했다. Azure Media Services LiveArena®를 사용하여 이벤트를 라이브로 스트리밍하는 것은 훨씬 더 비용 효율적이며, 더 중요한 것은 학생 시청자에게 더 큰 접근성을 제공했습니다. 비디오는 실시간으로 스트리밍되었으며 일시 중지 또는 되살릴 수도 있습니다. Microsoft Azure Media Services Cloud DVR 기능을 활용하여 나중에 볼 수 있도록 VOD로의 원활한 라이브 전환을 포함합니다.
+
+
+  브로드캐스터에서 케이블 공급자, 외과 의사에 이르기까지 모든 Microsoft Azure Media Services 모든 디바이스에서 소비자에게 스트리밍하기 위한 뛰어난 확장성 있는 엔드 투 엔드 미디어 솔루션을 신속하게 구축하는 데 필요한 모든 것을 갖추고 있습니다. 예를 들어 다음을 수행할 수 있습니다.
+
+  <ul>
+   <li>회사의 직원에게 교육 비디오의 라이브 이벤트를 스트리밍합니다.</li>
+   <li>웹 사이트에 대한 비디오 콘텐츠를 스트리밍합니다.</li>
+   <li>프리미엄 주문형 비디오 서비스 빌드</li>
+  </ul>
+
+  이 역사적인 이벤트에 대한 자세한 내용은 www.wrse24.org. Azure Media Services 글로벌 스트리밍 요구를 지원하는 방법에 대한 자세한 내용은 <a href="https://www.azure.com/media">www.azure.com/media</a>

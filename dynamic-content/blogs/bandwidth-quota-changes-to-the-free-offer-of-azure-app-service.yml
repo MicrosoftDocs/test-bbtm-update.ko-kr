@@ -1,0 +1,179 @@
+### YamlMime:Yaml
+ms.openlocfilehash: beb8412b148162acb9c198b812214d99e3ea0284
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908565"
+Slug: bandwidth-quota-changes-to-the-free-offer-of-azure-app-service
+Title: Azure App Service의 무료 제안에 대한 대역폭 할당량 변경
+Summary: Azure App Service의 무료 제품은 포함된 스토리지 및 대역폭이 포함된 최대 10개의 무료 Web Apps를 지원합니다.
+Content: >-
+  포함된 스토리지 및 대역폭을 사용하여 최대 10개의 무료 Web Apps를 제공하는 <b><a href="https://azure.microsoft.com/en-us/documentation/services/app-service/">Azure App</a> </b> Servicesupports의 무료 제품입니다. 포함된 대역폭은 지역당 모든 Web Apps(최대 10개)에서 하루 165MB의 일일 할당량을 기록했습니다. 이는 지역당 매월 최대 5GB의 대역폭으로 요약됩니다. 이 할당량은 매일 적용되었으며 Web Apps는 해당 날짜를 알리기 위해 일시 중단되었습니다. 웹앱 1개(최대 허용 10개 중)가 지정된 날에 최대 165MB를 사용할 수 있으며 이로 인해 10개 웹앱이 모두 일시 중단되어 해당 날짜의 미리 알림이 일시 중단됩니다.
+
+
+  무료 계층에서 호스트되는 웹앱에 특정 월의 트래픽이 더 많이 발생하거나 해당 날짜에 165MB 이상의 대역폭이 필요한 특정 테스트를 수행할 수 있는 시나리오가 있습니다. 대역폭에 대한 현재 무료 할당량은 이러한 시나리오에서 잘 작동하지 않을 수 있으므로 최근에 무료 제품의 대역폭 할당량을 변경하고 약간 완화했습니다. 이제 일별 사용하지 않는 대역폭을 다음 날 할당량으로 월말까지 롤오버합니다. 새 달의 첫 번째 날짜는 하루 165MB부터 시작됩니다.
+
+  <blockquote><strong>참고</strong>: 프로덕션 및 중요 업무용 Web Apps에 유료 제품을 사용하는 것이 좋습니다.</blockquote>
+
+  아래 표에서는 대역폭 할당량 롤오버를 관리하는 방법을 보여 줍니다.
+
+
+  초기 일별 제한 = 165MB
+
+
+  일 제한 = 초기 일별 한도 + 할당량 롤오버
+
+  <table border="0" cellspacing="0" cellpadding="0">
+
+  <tbody>
+
+  <tr>
+
+  <td valign="top" width="64"><b>월</b></td>
+
+  <td valign="top" width="64"><b>Day</b></td>
+
+  <td valign="top" width="161"><b>롤오버 할당량(MB)</b></td>
+
+  <td valign="top" width="155"><b>일 제한(MB)</b></td>
+
+  <td valign="top" width="122"><b>일일 사용량(MB)</b></td>
+
+  <td valign="top" width="68"><b>초과</b></td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="64">January</td>
+
+  <td valign="top" width="64">1</td>
+
+  <td valign="top" width="161">0</td>
+
+  <td style="text-align: left;" valign="top" width="155">165</td>
+
+  <td valign="top" width="122">65</td>
+
+  <td valign="top" width="68">No</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="64">January</td>
+
+  <td valign="top" width="64">2</td>
+
+  <td valign="top" width="161">100</td>
+
+  <td valign="top" width="155">265</td>
+
+  <td valign="top" width="122">200</td>
+
+  <td valign="top" width="68">No</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="64">January</td>
+
+  <td valign="top" width="64">3</td>
+
+  <td valign="top" width="161">65</td>
+
+  <td valign="top" width="155">230</td>
+
+  <td valign="top" width="122">240</td>
+
+  <td valign="top" width="68">Yes</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="64">January</td>
+
+  <td valign="top" width="64">4</td>
+
+  <td valign="top" width="161">0</td>
+
+  <td valign="top" width="155">165</td>
+
+  <td valign="top" width="122">.</td>
+
+  <td valign="top" width="68">.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="64">January</td>
+
+  <td valign="top" width="64">.</td>
+
+  <td valign="top" width="161">.</td>
+
+  <td valign="top" width="155">.</td>
+
+  <td valign="top" width="122">.</td>
+
+  <td valign="top" width="68">.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="64">January</td>
+
+  <td valign="top" width="64">.</td>
+
+  <td valign="top" width="161">.</td>
+
+  <td valign="top" width="155">.</td>
+
+  <td valign="top" width="122">.</td>
+
+  <td valign="top" width="68">.</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="64">January</td>
+
+  <td valign="top" width="64">30</td>
+
+  <td valign="top" width="161">300</td>
+
+  <td valign="top" width="155">465</td>
+
+  <td valign="top" width="122">245</td>
+
+  <td valign="top" width="68">No</td>
+
+  </tr>
+
+  <tr>
+
+  <td valign="top" width="64">February</td>
+
+  <td valign="top" width="64">1</td>
+
+  <td valign="top" width="161">0</td>
+
+  <td valign="top" width="155">165</td>
+
+  <td valign="top" width="122">.</td>
+
+  <td valign="top" width="68"></td>
+
+  </tr>
+
+  </tbody>
+
+  </table>
+
+  위의 예제에 따라 1월 1일부터 일일 할당량의 165MB로 시작하고 해당 날짜에만 65MB를 사용합니다. 사용되지 않는 데이터의 100MB는 1월 2일로 롤오버되며, 이제 일일 제한은 265MB(100MB + 165MB)입니다. 1월 3일에 일일 사용량은 240MB로, 230MB의 일 제한을 초과하므로 1월 4일부터 일일 한도가 165MB로 시작됩니다. 새 달의 첫 번째 날인 2월 1일은 롤오버를 다시 시작하고 165MB로 다시 시작합니다.

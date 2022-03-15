@@ -1,0 +1,51 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9edb8f3bb9cb616da01f5da78c6ac240bec8ef48
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907671"
+Slug: migrating-on-premises-hadoop-infrastructure-to-azure-hdinsight
+Title: 온-프레미스 Hadoop 인프라를 Azure HDInsight로 마이그레이션하기 위한 팁 및 요령
+Summary: 오늘, 우리는 HDInsight를 Microsoft Azure 온-프레미스 Hadoop 인프라를 마이그레이션하는 방법에 대한 팁과 트릭 시리즈를 공유하게 되어 기쁩니다.
+Content: >-
+  <p>오늘, 우리는 HDInsight를 Microsoft Azure 온-프레미스 Hadoop 인프라를 마이그레이션하는 방법에 대한 팁과 트릭 시리즈를 공유하게 되어 기쁩니다.</p>
+
+
+  <p>매일 수천 명의 고객이 Azure HDInsight에서 중요 업무용 빅 데이터 워크로드를 실행합니다. 많은 고객이 Hive, Spark, Hadoop, Kafka, HBase, Phoenix, Storm 및 R과 같은 오픈 소스 워크로드에 대한 지원과 엔터프라이즈급 기능으로 인해 온-프레미스에서 HDInsight로 워크로드를 마이그레이션합니다.</p>
+
+
+  <p><br>
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2a8815e0-a5f9-433a-8795-dc0ded2cc80b.png"><img alt="migration" border="0" height="340" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0e2bab10-d537-479a-a0ac-502094ed0b1b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="마이그레이션" width="482"></a></p>
+
+
+  <p>이 6부로 구성된 이 가이드에서는 마이그레이션 프로세스를 안내하고 Hadoop 워크로드를 Azure HDInsight로 이동하는 방법뿐만 아니라 아키텍처, 인프라, 스토리지 등을 최적화하는 방법에 대한 모범 사례를 공유합니다. 이 가이드는 Hadoop 마이그레이션을 통해 많은 고객을 돕는 풍부한 경험을 바탕으로 Azure 고객 자문 팀과 공동으로 작성되었습니다. </p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-on-premises-migration-motivation?toc=%2Fen-us%2Fazure%2Fhdinsight%2Fhadoop%2FTOC.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json" target="_blank">동기 부여 및 이점</a> 은 온-프레미스 Hadoop 에코시스템 구성 요소를 HDInsight로 마이그레이션하는 이점과 마이그레이션을 계획하는 방법을 다룹니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-on-premises-migration-motivation?toc=%2Fen-us%2Fazure%2Fhdinsight%2Fhadoop%2FTOC.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json" target="_blank">아키텍처 모범 사례는</a> HDInsight 시스템의 아키텍처에 대한 모범 사례를 제공하고 다양한 유형의 워크로드를 해결합니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-on-premises-migration-best-practices-infrastructure?toc=%2Fen-us%2Fazure%2Fhdinsight%2Fhadoop%2FTOC.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json" target="_blank">인프라 모범 사례는</a> HDInsight 클러스터의 인프라를 관리하기 위한 자세한 권장 사항으로 진행됩니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-on-premises-migration-best-practices-storage?toc=%2Fen-us%2Fazure%2Fhdinsight%2Fhadoop%2FTOC.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json" target="_blank">Storage 모범 사례는</a> HDInsight 시스템의 데이터 스토리지에 대한 권장 사항을 제공합니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-on-premises-migration-best-practices-data-migration?toc=%2Fen-us%2Fazure%2Fhdinsight%2Fhadoop%2FTOC.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json" target="_blank">데이터 마이그레이션 모범 사례는</a> HDInsight로의 데이터 마이그레이션에 대한 권장 사항을 제공합니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-on-premises-migration-best-practices-security-devops?toc=%2Fen-us%2Fazure%2Fhdinsight%2Fhadoop%2FTOC.json&amp;bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json" target="_blank">보안 및 DevOps 모범 사례는</a> HDInsight 시스템의 보안 및 DevOps 대한 권장 사항을 제공합니다.</li>
+  </ul>
+
+
+  <h2>HDInsight 정보</h2>
+
+
+  <p>Azure HDInsight는 고객이 Apache Hadoop, Spark, Kafka 등을 비롯한 인기 있는 오픈 소스 프레임워크를 쉽게 실행할 수 있도록 하는 오픈 소스 분석을 위한 쉽고 비용 효율적인 엔터프라이즈급 서비스입니다. 이 서비스는 미국과 독일의 27개 공용 지역 및 Azure Government 클라우드에서 사용할 수 있습니다. Azure HDInsight는 다양한 분야에서 중요 업무용 애플리케이션을 지원하며 ETL, 스트리밍 및 대화형 쿼리를 비롯한 광범위한 사용 사례를 지원합니다.</p>
+
+
+  <h2>추가 리소스</h2>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/" target="_blank">Azure HDInsight</a>에 대해 자세히 알아보세요.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-component-versioning#hadoop-components-available-with-different-hdinsight-versions" target="_blank">HDInsight의 오픈 소스 구성 요소 가이드</a>입니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-release-notes" target="_blank">HDInsight 릴리스 정보</a>입니다.</li>
+   <li><a href="https://social.msdn.microsoft.com/forums/azure/en-us/home?forum=hdinsight" target="_blank">MSDN 포럼</a>에서 HDInsight 질문을 합니다.</li>
+   <li><a href="https://stackoverflow.com/questions/tagged/hdinsight" target="_blank">StackOverflow</a>에 대한 HDInsight 질문을 합니다.</li>
+  </ul>

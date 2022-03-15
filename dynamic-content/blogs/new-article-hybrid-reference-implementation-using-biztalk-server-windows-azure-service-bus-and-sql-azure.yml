@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ec1f5d7caf7b927360dbde45e3544a19dca81d7b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902044"
+Slug: new-article-hybrid-reference-implementation-using-biztalk-server-windows-azure-service-bus-and-sql-azure
+Title: '새 문서: BizTalk Server, Windows Azure, Service Bus 및 SQL Azure 사용하여 하이브리드 참조 구현'
+Summary: 온-프레미스 프로세스를 Windows Azure에서 실행되는 프로세스와 통합하면 고객이 온-프레미스 솔루션을 클라우드로 확장할 수 있는 다양한 기회가 열립니다.  총...
+Content: <p>온-프레미스 프로세스를 <a target="_blank" href="https://www.microsoft.com/windowsazure/?WT.mc_cmp_msdn001_blg_post0002">Windows Azure</a>에서 실행되는 프로세스와 통합하면 고객이 온-프레미스 솔루션을 클라우드로 확장할 수 있는 다양한 기회가 열립니다.</p>  <p>실제 고객 프로젝트를 기반으로 고객이 기존 온-프레미스 BizTalk Server 인프라를 Windows Azure 환경으로 확장하는 방법을 보여 주는 프로덕션 품질 하이브리드 솔루션으로 구성된 참조 아키텍처를 설계하고 구현했습니다.</p>  <p>이 솔루션은 온-프레미스 시스템에서 시작된 대량의 트랜잭션을 처리하기 위한 일반적인 요구 사항에 중점을 두고 있으며, Windows Azure의 탄력성 및 주문형 컴퓨팅 기능을 활용하기 위해 오프로드됩니다. 참조 구현에서는 이러한 요구 사항을 해결하고 확장용으로 설계 및 구축된 종단 간 기술 솔루션을 제공합니다.</p>  <p>참조 구현에서 다루는 주요 기술 및 기능에는 Windows Azure 플랫폼 서비스(컴퓨팅, 스토리지), Windows Azure Service Bus, SQL Azure 및 <a target="_blank" href="https://www.microsoft.com/biztalk/en/us/default.aspx">BizTalk Server 2010</a>(BAM, BRE, XML 데이터 매핑)이 포함됩니다.</p>  <p>참조 구현은 재사용 가능한 구성 요소 및 Azure 솔루션 개발 Windows 모범 사례&rdquo;로 &ldquo;널리 인식되는 패턴을 기반으로 합니다.</p>  <p>전체 소스 코드 패키지를 포함한 자세한 내용은 여기에서 확인할 수 있습니다.&nbsp;</p>

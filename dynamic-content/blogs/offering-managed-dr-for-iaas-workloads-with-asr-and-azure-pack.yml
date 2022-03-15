@@ -1,0 +1,197 @@
+### YamlMime:Yaml
+ms.openlocfilehash: dee87f837b8d3077947dad2d910a05607296c9fa
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907629"
+Slug: offering-managed-dr-for-iaas-workloads-with-asr-and-azure-pack
+Title: ASR 및 Azure Pack을 사용하여 IaaS 워크로드에 대한 관리형 DR 제공
+Summary: 이제 Azure Pack과 Azure Site Recovery 통합을 통해 서비스 공급자는 IaaS 워크로드를 기반으로 고객에게 관리형 DR 서비스를 제공할 수 있습니다.
+Content: >-
+  몇 주 전에   <a href="https://aka.ms/asr_wap_blog_service_providers_announcement">Azure Site Recovery에서</a> ASR을 기반으로 <b>부가 가치 서비스를</b> 제공할 수 있는 서비스 공급자에 대한 다양한 시나리오의 잠금을 해제하는 새로운 기능을 발표했습니다. 특히 ASR 및 Azure Pack을 사용하면 서비스 공급자는 이제 IaaS 워크로드를 기반으로 고객에게 관리형 DR을 프리미엄 서비스로 제공할 수 있습니다.
+
+
+  이 블로그에서는 서비스 공급자가 Azure Pack과 ASR 통합을 활용하여 <b>최소한의 구성 변경</b> 및 사용자 교육이 필요한 동안 고객에게 관리형 DR 서비스를 제공하는 방법을 살펴봅니다. 또한 이 블로그에서는 DR 계획/추가 기능을 만들고, 테넌트를 온보딩하고, 장애 조치 후 가상 머신에 액세스하는 것이 얼마나 간단한지에 대한 개요를 제공합니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="1.2" alt="1.2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1.2.png" width="642" height="298" border="0" />
+
+
+  위의 아키텍처 다이어그램에서 볼 수 있듯이 AZURE Pack, System Center Virtual Machine Manager(SCVMM) 및 Windows Server는 Azure 일관된 서비스를 제공하기 위한 토대를 형성합니다.
+
+
+  서비스 공급자로서 DR 제공을 시작하려면 몇 가지 간단한 필수 구성 요소로 수행할 수 있는 인프라를 준비해야 합니다.
+
+  <ul>
+   <li>Azure Portal에 로그인하여   <a href="https://aka.ms/asr_wap_blog_vault_creation">Azure Site Recovery 자격 증명 모음 만들기</a></li>
+   <li><a href="https://aka.ms/asr_wap_blog_asr_provider_download">Microsoft Azure Site Recovery 공급자를 다운로드</a>하여 두 SCVMM 서버에 설치합니다.</li>
+   <li>ASR에 Microsoft Azure Site Recovery 공급자 등록</li>
+   <li>ASR 포털에서 보호를 위한 <a href="https://aka.ms/asr_wap_blog_cloud_configuration">SCVMM 클라우드 구성</a></li>
+   <li>Microsoft 스크립트 센터에서 <a href="https://aka.ms/asr_wap_blog_asr_runbooks">Azure Pack용 ASR Runbook을</a> 다운로드하고 서비스 관리 자동화로 가져옵니다.</li>
+  </ul>
+
+  초기 설정이 완료되면 DR 계획을 롤아웃하고 <strong>자동화된 보호</strong>, <strong>비동기 복제</strong> 및 가상 워크로드의 <strong>질서 정연한 복구 </strong>를 포함하는 ASR 기능을 활용할 준비가 된 것입니다.
+
+
+  다음 섹션에서는 DR 계획/추가 기능을 만들고, ASR Runbook을 예약하고, 테넌트 온보딩하고, 장애 조치(failover) 훈련을 관리하고, 장애 조치 후 VM에 액세스하는 단계를 안내합니다.
+
+  <h2></h2>
+
+  <h2>DR 계획/추가 기능 만들기</h2>
+
+  DR 계획을 제공하려면 계획을 만들고 게시하고, DR 추가 기능을 연결하고, 마지막으로 보조 Azure Pack 관리 포털에서 해당 프라이빗 복구 계획을 만들어야 합니다. 이러한 단계를 자세히 설명하기 위해 DR 추가 기능에 연결할 "<i>골드 플랜"</i> 이라는 계획을 사용하겠습니다.
+
+
+  <b>DR 추가 기능 확장 PLAN을 만들</b>려면 CREATE ADD-ON을 클릭하고 이름을 "<em>DRAddon</em>"으로 지정합니다. 이제 추가 기능이 만들어지지만 여전히 구성해야 합니다. 추가 기능을 구성하려면 Azure 팩에서 추가 기능을 클릭하고 새로 만든 추가 기능을 선택합니다. 추가 기능 서비스에서 "Virtual Machine 클라우드"가 활성화되지 않은 것을 볼 수 있습니다.
+
+  <p align="justify"> <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="3.3" alt="3.3" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3.3.png" width="1026" height="239" border="0" /></p>
+
+  "Virtual Machine 클라우드"를 클릭하고 기본 데이터 센터에서 Azure Pack과 함께 사용하도록 구성한 "VMM 관리 서버" 및 "가상 머신 클라우드"의 이름을 선택합니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="4.4." alt="4.4" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4.4.png" width="542" height="154" border="0" />
+
+
+  제품에 따라 코어, 메모리 등의 사용 제한과 같은 세부 정보의 나머지 부분을 완료하고 <a href="https://aka.ms/asr_wap_blog_ur4">Azure Pack UR4 릴리스</a>의 최신 추가 항목인 사용자 지정 설정에서 "<b>모든 가상 머신에 대한 보호 사용</b>"을 확인합니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="사용 보호 확인란" alt="Enableprotection checkbox" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Enableprotection-checkbox.png" width="1026" height="183" border="0" />
+
+
+  이제 DR 추가 기능을 성공적으로 만들었으며 다음으로 계획에 연결하는 것입니다. <b>추가 기능을 연결</b>하려면 "플랜 연결"을 클릭하고 "<em>골드 플랜"</em>을 선택합니다.
+
+
+  이 단계에서는 DR 플랜이 고객을 위한 준비가 되었지만 이 플랜에는 보조 Azure Pack에 해당하는 <b>프라이빗 플랜</b> 이 있어야 합니다. 이 프라이빗 플랜은 테넌트의 구독이 DR 사이트에서 정확히 동일한 서비스 및 제품을 갖도록 하는 것입니다. ASR은 기본 계획에서 테넌트의 구독을 보조 데이터 센터의 프라이빗 플랜에 자동으로 추가하여 두 데이터 센터에서 테넌트에 일관되고 원활한 환경을 제공하는 데 도움이 됩니다.
+
+
+  보조 Azure Pack 관리 포털에 프라이빗 플랜 로그인을 만들고 "<em>골드 플랜-복구</em>"라는 계획을 만들려면 <strong>프라이빗 플랜의 이름은 기본 계획 이름과 접미사로 시작해야 하지만 식별 편의를 위해 "-Recovery"를 사용하는 것이 좋습니다.</strong>
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="복구 계획" alt="Recoveryplan" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Recoveryplan.png" width="642" height="151" border="0" />
+
+
+  프라이빗 플랜이 만들어지면 보조 데이터 센터 SCVMM 서버 및 Virtual Machine Cloud의 이름을 선택하여 이전 단계에서 설명한 것과 비슷하게 구성해야 합니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="5.5" alt="5.5" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5.5.png" width="542" height="146" border="0" />
+
+  <h2>마스터 Runbook</h2>
+
+  ASR Runbook을 사용하면 보호를 자동으로 배포하여 각 테넌트에 대해 수동으로 보호를 사용하도록 설정하는 데 문제가 없습니다. 기본 Azure Pack 관리 포털로 가져와야 하는 총 5개의 Runbook이 있지만 "<em>Invoke-AzureSiteRecoveryProtectionJob.ps1</em>"라는 마스터 Runbook을 구성하고 예약하기만 하면 됩니다. 나머지 Runbook은 테넌트 구독을 쿼리하고, 보호를 사용하도록 설정하고, 기본 Azure Pack 관리 포털에서 보조 Azure Pack 관리 포털로 구독 복사본을 추가하기 위해 마스터 Runbook에서 내부적으로 호출됩니다.
+
+
+  기본 Azure Pack 관리 포털에서 마스터 Runbook 찾아보기 "AUTOMATION"을 예약하고 구성하려면 마스터 Runbook을 선택하고 일정을 클릭합니다. 일정에 사용자에게 친숙한 이름을 제공하고 Runbook의 빈도와 시간을 지정합니다. 일정을 완료하려면 자산의 이름을 Runbook 매개 변수로 제공해야 합니다.
+
+
+  <b> </b><img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="Runbookparameter" alt="Runbookparameter" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Runbookparameter.png" width="523" height="405" border="0" />
+
+
+  자산 만들기의 전체 세부 정보는 <a href="https://aka.ms/asr_wap_blog_asr_runbooks">Microsoft 스크립트 센터에서</a> 찾을 수 있지만 아이디어를 제공하기 위해 하나의 자산을 만드는 예는 다음과 같습니다.
+
+
+  "<b>PrimarySiteAdminConnection</b>" 매개 변수에 대한 자산을 만들려면 "AUTOMATION"으로 이동하고 위쪽에서 "ASSETS"를 클릭하고 아래쪽 가운데에서 "설정 추가"를 선택합니다.
+
+
+  1.) 연결 추가 선택
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="Asset1" alt="Asset1" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Asset1.png" width="345" height="147" border="0" />
+
+
+  2.) 연결 형식의 이름을 "<b>MgmntSvcAdmin"</b>으로 선택하고 기본 Azure 팩 로그인 이름을 지정<b></b>합니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="Asset2" alt="Asset2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Asset2.png" width="365" height="229" border="0" />
+
+
+  3.) 기본 Azure 팩의 컴퓨터 이름, 암호, 사용자 이름 제공
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="Asset3" alt="Asset3" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Asset3.png" width="474" height="282" border="0" />
+
+
+  마찬가지로 나머지 자산을 만들고 마스터 Runbook에서 이러한 자산의 이름을 제공할 수 있습니다.
+
+  <h2>테넌트 온보딩</h2>
+
+  테넌트는 포털에서 새 DR 계획/추가 기능을 볼 수 있으므로 테넌트 온보딩이 원활하게 진행됩니다. 테넌트는 자신의 테넌트 포털 계정으로 이동하여 새 계획에 등록하여 DR 계획을 구독합니다. 완료되면 구독에 DR 추가 기능을 추가해야 합니다. 테넌트 계정 포털은 다음과 같습니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="tenant1" alt="tenant1" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/tenant1.png" width="1026" height="208" border="0" />
+
+
+  테넌트는 포털에서 가상 머신을 만들 수 있으며 포털에 표시됩니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="tenant2" alt="tenant2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/tenant2.png" width="1026" height="275" border="0" />
+
+
+  <strong>테넌트가 수행할 추가 단계가 더 이상 없습니다. !!</strong>
+
+  <h2>자동 보호</h2>
+
+  <b> </b>테넌트가 계획을 구독하면 ASR Runbook은 다음 두 가지 작업을 수행합니다.
+
+  <ul>
+   <li>기본 Azure Pack 관리 포털에서 DR 사용 플랜을 사용하여 구독을 자동으로 검색하고 해당 구독의 복사본을 보조 Azure Pack 프라이빗 플랜에 추가합니다.</li>
+   <li>테넌트 가상 머신에 대한 보호를 사용하도록 설정하고 모든 가상 머신을 복구 Azure 팩에 복제</li>
+  </ul>
+
+  <b>참고:</b> 사용자 계정은 Runbook에서 보조 Azure 팩에 자동으로 추가되지 않으며 서비스 공급자는 ADFS(Active Directory Federation Services)와 같은 기술을 사용하여 대역 외 계정을 수행한다고 가정합니다.
+
+
+  아래 스크린샷에서는 Azure Pack 기본 관리 포털의 "<em>골드 플랜"</em> 아래의 테넌트 구독이 Azure Pack 보조 관리 포털의 "<em>골드 플랜-복구"</em> 에 추가된 것을 볼 수 있습니다.
+
+
+  <strong>기본 Azure 팩</strong>
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="subscription1" alt="subscription1" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/subscription1.png" width="1026" height="208" border="0" />
+
+
+  <strong>보조 Azure 팩</strong>
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="subscription2" alt="subscription2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/subscription2.png" width="1026" height="191" border="0" />
+
+
+  ASR Runbook은 테넌트의 가상 머신에 대한 보호를 사용하도록 설정했습니다. 즉, Runbook은 아래와 같이 Azure Site Recovery 포털에서 작업을 자동으로 트리거합니다. 그렇지 않으면 수동 단계였을 것입니다.
+
+
+  &nbsp;
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="보호 사용" alt="Enabling protection" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Enabling-protection.png" width="1026" height="306" border="0" />
+
+
+  기본 Azure Pack 관리 포털에서 Runbook 작업 보기를 확인하여 Runbook에서 수행하는 작업의 세부 정보를 가져올 수도 있습니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="RB3" alt="RB3" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/RB3.png" width="1026" height="562" border="0" />
+
+  <h2>ASR 포털에서 장애 조치(failover) 수행</h2>
+
+  서비스 공급자는 Azure Site Recovery 포털을 통해 고객 애플리케이션에 대한 DR 드릴 및 장애 조치(failover)를 모두 관리할 수 있습니다. 서비스 공급자는 ASR 포털에서 <a href="https://aka.ms/asr_wap_blog_recovery_plan">복구 계획</a>, <a href="https://aka.ms/asr_wap_blog_test_failover">테스트 장애 조치(failover</a> ) 및 기타 장애 조치(failover) 작업의 기능을 활용하고 고객에게 최적의 RPO\RTO를 제공할 수 있습니다.
+
+
+  이 블로그에서는 ASR 복구 계획을 사용하여 테넌트 가상 머신을 장애 조치(failover)할 수 있는 방법을 보여 줍니다. 계획된 장애 조치를 수행하려면 <a href="https://aka.ms/asr_wap_blog_asr_portal">Azure Site Recovery 포털</a> 에 로그인하고 <a href="https://aka.ms/asr_wap_blog_recovery_plan">복구 계획을 만듭니</a>다. 아래 스크린샷에서 볼 수 있듯이 이 복구 계획에서 테넌트 VM은 두 그룹으로 나뉩니다. 즉, 데이터베이스 서버 VM이 복구 사이트에서 먼저 부팅되고 나머지 3개 VM이 부팅됩니다. 이는 백 엔드 가상 머신이 백 엔드 가상 머신에 의존하는 VM 앞에 오도록 하기 위한 것입니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="RP1" alt="RP1" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/RP1.png" width="1026" height="259" border="0" />
+
+  <h2>장애 조치(failover) 후 VM 액세스</h2>
+
+  ASR 및 Azure Pack을 사용하면 테넌트는 보조 데이터 센터에서 일관된 환경을 얻을 수 있습니다. 서비스 공급자는 보조 사이트의 Azure Pack 테넌트 포털 링크를 고객과 공유해야 합니다. 로그인할 수 있으며 기본 Azure Pack 포털에서와 똑같은 방식으로 가상 머신에 원활하게 액세스할 수 있습니다. 아래 스크린샷은 테넌트가 보조 사이트의 Azure Pack 테넌트 포털에 로그인할 때의 보기를 보여 줍니다. 장애 조치(failover) 후 4개 가상 머신이 모두 실행 중 상태인 것을 보여 줍니다.
+
+
+  <img style="padding-top: 0px;padding-left: 0px;padding-right: 0px;border-width: 0px" title="tenant2" alt="tenant2" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/tenant2.png" width="1026" height="275" border="0" />
+
+
+  이 게시물에서는 서비스 공급자가 고객에게 DR 계획/추가 기능을 출시하고 ASR Runbook을 사용하여 자동 보호를 사용하도록 설정하는 방법을 알아봅니다. 또한 테넌트가 DR 계획을 구독하고 장애 조치 후 VM에 액세스하는 것이 얼마나 쉬운지 설명했습니다. Azure Pack과 ASR 통합을 통해 서비스 공급자는 DRaaS에 기존 Azure 팩 설정에 대한 최소한의 변경 내용을 제공할 수 있을 뿐만 아니라 DR을 사용하여 IaaS의 완전한 솔루션을 제공하여 수익을 높일 수 있는 고유한 기회도 제공합니다.
+
+
+  사용해 보려는 경우 <a href="https://aka.ms/asr_wap_blog_asr_wap_integration_getting_started">WAP와 Azure Site Recovery 통합</a>의<i> </i> 시작<i> </i>가이드를 확인하세요.
+
+
+  추가 질문이 있는 경우 <a href="https://aka.ms/asr_wap_blog_msdn_forum">MSDN의 Azure Site Recovery 포럼을</a> 방문하여 추가 정보를 확인하고 다른 고객과 소통하세요.

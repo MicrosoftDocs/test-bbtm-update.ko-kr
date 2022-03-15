@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e86a553ea96ad6e901cc1337824ac245303c4b61
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908401"
+Slug: great-new-article-on-windows-azure-diagnostics
+Title: Windows Azure Diagnostics에 대한 유용한 새 문서
+Summary: Windows Azure 진단에 대한 개요를 자세히 알아보려면 전 Microsoft 엔지니어인 Mike Kelly가 MSDN Magazine의 새 문서를 읽어보세요.
+Content: <p><a target="_blank" href="https://www.microsoft.com/windowsazure">Windows Azure</a> 진단에 대한 유용한 개요를 알아보려면 전 Microsoft 엔지니어 Mike <a target="_blank" href="https://blogs.msdn.com/b/mikekelly/">Kelly</a>가 <i>MSDN Magazine</i>의 <a target="_blank" href="https://msdn.microsoft.com/en-us/magazine/ff714589.aspx">새 문서를</a> 읽을 시간을 내야 합니다. 이 문서에서는 Azure 진단이 일반 System.Diagnostics 프레임워크에 Windows 방법을 설명하고 Azure 진단을 즉시 Windows 사용자 지정에 대한 팁을 제공합니다. Windows Azure Service Management API에 대한 Azure Portal 및 PowerShell cmdlet을 Windows. 또한 Mike는 코드를 작성할 때 좋은 로깅 및 추적을 통합하는 것에 대한 분야를 갖추는 것의 중요성과 문제가 발생할 경우 문제 해결에서 나중에 이를 얼마나 중요하게 증명할 수 있는지를 지적합니다. &nbsp;&nbsp;행복한 독서!</p>

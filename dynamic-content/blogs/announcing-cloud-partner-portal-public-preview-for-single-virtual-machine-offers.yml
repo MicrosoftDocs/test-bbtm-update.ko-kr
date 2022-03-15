@@ -1,0 +1,66 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4b5b4544638635398d84a2d015c1afcd22834ac2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901501"
+Slug: announcing-cloud-partner-portal-public-preview-for-single-virtual-machine-offers
+Title: '클라우드 파트너 포털 발표: 단일 가상 머신 제품에 대한 공개 미리 보기'
+Summary: 오늘 단일 가상 머신 제품을 게시하기 위한 Cloud 파트너 포털의 공개 미리 보기를 발표하게 되어 기쁩니다. 클라우드 파트너 포털을 사용하면 게시자 파트너가 Azure Marketplace에서 단일 가상 머신 제품에 대한 인사이트를 만들고, 정의하고, 게시하고, 얻을 수 있습니다.
+Content: >-
+  <p>오늘 단일 가상 머신 제품을 게시하기 위한 <a href="https://cloudpartner.azure.com/">Cloud 파트너 포털</a> 의 공개 미리 보기를 발표하게 되어 기쁩니다. 클라우드 파트너 포털을 사용하면 게시자 파트너가 Azure Marketplace에서 단일 가상 머신 제품에 대한 인사이트를 만들고, 정의하고, 게시하고, 얻을 수 있습니다.</p>
+
+
+  <p>이 공지 사항을 통해 가상 머신을 Azure에 게시하려는 신규 및 기존 게시자 파트너는 새 클라우드 파트너 포털을 사용하여 위의 작업을 수행할 수 있습니다. 이 새 포털은 곧 다른 모든 제품 유형을 지원하며 현재 게시 포털을 제 시간에 대체합니다.</p>
+
+
+  <h2>향상된 새로운 클라우드 파트너 포털</h2>
+
+
+  <p>오늘&rsquo; 릴리스에는 Azure Marketplace에 훨씬 더 빠르고 간단하며 쉽게 게시할 수 있는 몇 가지 새로운 기능이 있습니다.</p>
+
+
+  <h3>오늘&rsquo; 릴리스의 기능:</h3>
+
+
+  <p style="margin-left: 40px;"><strong>1. 조직 ID 로그인 지원</strong> &ndash; 이는 오랫동안 게시자 파트너의 요청이었으며 클라우드 파트너 포털에 조직 ID에 대한 지원을 추가하고 있습니다. 또한 새 게시 포털은 RBAC를 지원하므로 제품이 안전하게 유지되고 게시자는 모든 참가자가 필요한 액세스 수준만 제공하는 공동 관리자를 만들 필요가 없습니다&rsquo;.</p>
+
+
+  <p style="margin-left: 40px;"><strong>2. 처음</strong> &ndash; 제대로 가져오기 모두가 도오버를 싫어합니다. 제안을 정의하고 완료된 것으로 생각하는 데 시간을 할애하는 것보다 더 나쁜 것은 없으며, 제품 다운스트림에 문제가 발생했습니다. 이를 방지하기 위해 입력할 때 제품의 유효성이 검사됩니다. 이렇게 하면 제품을 게시한 후 원치 않는 놀라움이 줄어듭니다.</p>
+
+
+  <p style="margin-left: 40px;">또한 제품 정의부터 실제로 제품을 게시하는 것까지 전체적인 시간이 단축될 것으로 예상합니다.</p>
+
+
+  <p align="left" style="margin-left: 40px;">게시자가 게시를 클릭할 때 제품이 성공적으로 게시되도록 제품 내의 모든 필드에 대한 유효성 검사를 작성하는 데 상당한 시간을 보냈습니다. 출시되는 동안에도 모든 릴리스에 새로운 유효성 검사를 추가하여 프로세스를 훨씬 더 예측 가능하게 만듭니다.</p>
+
+
+  <p style="margin-left: 40px;"><strong>3. 간소화된 게시 워크플로</strong> &ndash; 새 게시 포털에는 게시를 제공하는 하나의 경로를 제공하는 간소화된 게시 워크플로가 있습니다. 퍼블리셔에 노출되는 별도의 프로덕션 및 스테이징 슬롯은 없습니다. 퍼블리셔는 제품을 게시&rsquo;하기&lsquo;만 하면 되며 나머지는 처리합니다.</p>
+
+
+  <p style="margin-left: 40px;">제품이 라이브 상태가 되기 전에 게시자는 제품을 검토하고 모든 것이 예상대로 작동하는지 확인할 수 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><strong>4. 자세한 정보 제공</strong> &ndash; 새 클라우드 파트너 포털을 통해 퍼블리셔는 제품이 예상 실행 시간과 함께 진행되는 단계에 대해 제품을 게시하기 전에도 알 수 있습니다. 워크플로에 대한 지침과 함께 Azure에 나열되는 제품 진행 상황을 게시자에게 알리는&rsquo; 알림이 포털에 기본 제공됩니다.</p>
+
+
+  <p style="margin-left: 40px;"><strong>5. 포털</strong> &ndash; 의 Insights Cloud 파트너 포털은 제품의 인사이트에 대한 직접 링크를 제공합니다. 이러한 인사이트는 Azure Marketplace의 제품&rsquo; 상태 및 성능에 대한 간략한 정보와 드릴다운을 제공합니다. Insights 포털에는 게시자가 해당 기능을 숙지하는 데 도움이 되는 온보딩 비디오 및 풍부한 설명서도 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><strong>6. 피드백은 클릭 한 번으로</strong> &ndash; 웃는 얼굴/찡그린 얼굴 보내기 단추는 새 포털에서 유비쿼터스입니다. 클릭의 문제에서 게시자는 엔지니어링 팀에 직접 피드백을 보낼 수 있습니다.</p>
+
+
+  <p>새 게시 포털의 새로운 기능 및 기능 호스트에 대해 계속 작성할 수 있지만 이러한 기능을 검색하는 가장 좋은 방법은 포털에서 스핀을 수행하는 것입니다.</p>
+
+
+  <p><strong>Virtual Machine 제품을 사용하는 기존 Azure Publisher</strong> 경우 새 게시 포털에 대한 계정이 이미 만들어집니다. <a href="https://cloudpartner.azure.com/">Cloud 파트너 포털</a>을 방문하여 현재 자격 증명을 사용하여 로그인하세요. 시작하는 데 도움이 필요한 경우 설명서를 참조하세요.</p>
+
+
+  <p>기존 게시자는 등록된 게시자가 사용할 수 있는 <a href="https://go.microsoft.com/fwlink/?linkid=847470">단계에</a> 따라 제품을 마이그레이션할 것인지 알려줄 수도 있습니다. 또한 Azure Marketplace를 더 잘 탐색하고 대부분의 가치를 얻을 수 있는 새로운 <a href="https://go.microsoft.com/fwlink/?linkid=847471">판매자 가이드</a> 가 있습니다.</p>
+
+
+  <p>Azure 플랫폼에 게시하려는 <strong>새로운 Publisher</strong> 여기에서 <a href="https://go.microsoft.com/fwlink/?linkid=847469">추천 양식을</a> 작성하세요.</p>
+
+
+  <p>새 클라우드 파트너 포털을 사용해 볼 때 피드백의 꾸준한 흐름이 계속 들어오고 있습니다. 포털을 만드는 것만큼이나 즐거운 시간을 보내시기를 바랍니다.</p>

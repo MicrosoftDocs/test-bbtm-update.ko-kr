@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8d82c388efa9a950ac583d3ca1eec6391742d745
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139907969"
+Slug: announcing-azure-service-fabric-reducing-complexity-in-a-hyper-scale-world
+Title: 'Azure Service Fabric 발표: 하이퍼스케일 세계에서 복잡성 감소'
+Summary: 개발자와 ISV가 높은 수준의 확장성 및 사용자 지정으로 클라우드 서비스를 빌드할 수 있는 높은 제어 플랫폼을 제공하는 Azure Service Fabric 추가 제품을 발표하게 되어 기쁩니다.
+Content: >-
+  클라우드 컴퓨팅은 기업이 고객에게 도달하는 방식을 계속 변경하고 있습니다. 오늘날의 경쟁이 치열한 환경에서 ISV와 스타트업은 이러한 변화의 선두에 있습니다. 빠르게 출시하기 위해 확장 가능한 클라우드 서비스를 빌드하는 더 나은 방법을 찾기 위해 끊임없이 도전하고 있습니다. 개발자의 경우 안정성과 규모에 맞게 설계하면서 비즈니스를 성장시키는 것은 똑같이 어려운 일입니다.
+
+
+  지난 달에는 엔터프라이즈급 웹 및 모바일 앱 환경을 만들어야 하는 개발자를 위한 <i>높은 생산성</i> 솔루션인 <a href="https://azure.microsoft.com/en-us/services/app-service/">Azure App Service</a>를 출시했습니다. App Service는 클라우드에서 애플리케이션을 배포 및 탄력적으로 확장하고 온-프레미스 리소스 및 SaaS 기반 애플리케이션과 원활하게 통합할 수 있는 완전한 플랫폼 as a Service 솔루션을 제공합니다. 현재 <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=17735">하이네켄</a>, <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=16778">Hogarth Worldwide</a>, <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=18608">Telenor</a> 및 <a href="https://customers.microsoft.com/Pages/CustomerStory.aspx?recid=16784">Smartvue</a>를 포함하여 <a name="_MailEndCompose"></a> Azure App Service를 사용하는 수만 명의 고객이 있습니다.
+
+
+  오늘 개발자와 ISV가 높은 수준의 확장성 및 사용자 지정으로 클라우드 서비스를 빌드할 수 있는 <i>높은 제어</i> 플랫폼을 제공하는 추가 제품인 Azure Service Fabric 발표하게 되어 기쁩니다. Service Fabric 중요 업무용 클라우드 서비스를 제공하는 수년간의 경험을 통해 탄생했으며 5년 이상 생산에 들어왔습니다. Azure 핵심 인프라를 실행하는 기본 기술을 제공하고 비즈니스용 Skype, InTune, Event Hubs, DocumentDB, Azure SQL Database(140만 개 이상의 고객 데이터베이스에서) 및 Bing Cortana 같은 서비스를 지원하여 초당 5억 개 이상의 평가를 처리하도록 확장할 수 있습니다.
+
+
+  이 환경을 통해 애플리케이션의 사용 가능한 인프라 리소스와 요구 사항을 본질적으로 이해하는 플랫폼을 설계할 수 있으므로 하이퍼 스케일에서 고가용성 및 내구성이 뛰어난 서비스를 제공하는 데 필수적인 자동 업데이트, 자체 복구 동작을 사용할 수 있습니다. 이제 우리는 이 전투 강화 기술을 모든 사용자가 사용할 수 있도록 하고 있습니다. 즉, 사용하는 버전이 아니라 우리가 직접 사용하는 정확한 기술입니다.
+
+
+  Service Fabric 다음과 같은 이점을 제공합니다.
+
+  <ul>
+      <li>복잡한 애플리케이션이 독립적으로 버전이 지정된 소규모 서비스로 구성된 아키텍처 접근 방식인 상태 비저장 <i>및</i> 상태 저장 마이크로 서비스 만들기를 지원하여 가장 복잡하고 대기 시간이 짧은 데이터 집약적 시나리오를 지원하고 클라우드로 확장할 수 있습니다.</li>
+      <li>새로운 수준의 앱 인식 및 인사이트를 사용하여 마이크로 서비스에 대한 오케스트레이션 및 자동화의 이점을 제공합니다.</li>
+      <li>상태 관리와 같은 하드 분산 시스템 문제를 해결하고 애플리케이션 수명 주기 관리 기능을 제공하므로 개발자는 사용량이 증가함에 따라 애플리케이션을 다시 설계할 필요가 없습니다.</li>
+      <li>개발자가 단일 상자 배포, 테스트 배포 및 프로덕션 배포에서 Service Fabric 애플리케이션을 빠르고 쉽게 빌드, 테스트, 디버그, 배포 및 업데이트할 수 있는 명령줄 지원뿐만 아니라 Visual Studio 도구도 포함됩니다.</li>
+  </ul>
+
+  Service Fabric 사용하는 초기 고객의 한 가지 예는 샌프란시스코 베이 에어리어 소프트웨어 회사인 <a href="https://www.osisoft.com/Default.aspx">OSIsoft</a>로, 사물 인터넷 규모의 솔루션의 잠금을 해제하기 위해 새로운 Azure 기반 제품으로 온-프레미스 PI 시스템을 향상시키기 위해 Service Fabric 선택했습니다. 현재 PI 시스템은 450개 이상의 원본 형식에서 스트리밍 센서 기반 데이터를 수집, 저장, 분석 및 공유합니다.Service Fabric 활용하는 OSIsoft 솔루션은 몇 초마다 수억 미터의 데이터를 지속적으로 처리하여 이전 온-프레미스 레코드를 깨뜨리며 새로운 고객 기반 인사이트를 가능하게 합니다.
+
+
+  초기 고객 피드백을 얻기 위해 빌드에서 Service Fabric 개발자 미리 보기가 릴리스됩니다. 퍼블릭, 호스티드 및 프라이빗 클라우드에서 일관된 클라우드를 제공하기 위한 고유한 노력으로 다음 버전의 Windows Server에서 온-프레미스 솔루션을 제공할 예정입니다. 초기 제품은 Windows 대상으로 하지만 향후 Linux도 지원할 예정입니다. 마지막으로, Azure Service Fabric 혜택을 원하는 Azure Cloud Services를 사용하는 고객이 마이그레이션 지침을 사용할 수 있습니다.
+
+
+  자세한 내용은 Azure Service Fabric 소개하고 Azure에서 초당 250,000개 이상의 작업을 실행하는 최대 50대의 머신을 확장하는 라이브 데모를 소개하는 <a href="https://channel9.msdn.com/Events/Build/2015/3-618">BUILD 세션의 기록을</a> 확인하세요. 이제 개발자 SDK를 <a href="https://aka.ms/servicefabric ">다운로드</a>할 수 있으며, Visual Studio 도구와 완벽하게 작동하는 Service Fabric 런타임을 사용하여 1 상자 환경에서 서비스를 개발하고 배포하는 경험을 할 수 있습니다.

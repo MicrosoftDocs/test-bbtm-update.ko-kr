@@ -1,0 +1,482 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f2330f29b5c37f182b85f06e4d977a5e43cef26d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139908297"
+Slug: microsoft-azure-portal-may-2019-update
+Title: Microsoft Azure 포털 2019년 5월 업데이트
+Summary: 이번 달에는 사용자 환경, 리소스 구성, 관리 도구 등에 대한 향상된 기능을 포함하여 Azure Portal의 업데이트가 가득합니다.
+Content: >-
+  <p>이번 달에는 사용자 환경, 리소스 구성, 관리 도구 등에 대한 향상된 기능을 포함하여 Azure Portal의 업데이트가 가득합니다.</p>
+
+
+  <p>이제 <a href="https://portal.azure.com/" target="_blank">Azure Portal</a> 에 로그인하고 새로운 모든 것을&rsquo; 직접 확인하세요. <a href="https://aka.ms/azuremobileapp" target="_blank">Azure 모바일 앱을</a> 다운로드하여 언제 어디서나 Azure 리소스에 연결 상태를 유지합니다.</p>
+
+
+  <h2>다음은&rsquo; Azure Portal에 대한 5월 업데이트 목록입니다.</h2>
+
+
+  <h3>사용자 환경</h3>
+
+
+  <ul>
+   <li><a href="#Improvements to the Azure portal user experience">Azure Portal 사용자 환경 개선</a></li>
+   <li><a href="#Tabbed browsing support for more portal links">더 많은 포털 링크에 대한 탭 검색 지원</a></li>
+  </ul>
+
+
+  <h3>IaaS</h3>
+
+
+  <ul>
+   <li><a href="#Improved VMSS diagnostics and troubleshooting with boot diagnostics, serial console access, and resource health">부팅 진단, 직렬 콘솔 액세스 및 Resource Health를 사용하여 VMSS 진단 및 문제 해결 개선</a></li>
+   <li><a href="#Updated VM computer name and hostname display">업데이트된 VM 컴퓨터 이름 및 호스트 이름 표시</a></li>
+   <li><a href="#New full-screen create experience for Azure Container Instances">Azure Container Instances에 대한 새로운 전체 화면 만들기 환경</a></li>
+   <li><a href="#New integrations for Azure Kubernetes Service">Azure Kubernetes Service에 대한 새로운 통합</a></li>
+   <li><a href="#Multiple node pools for Azure Kubernetes Service (preview)">Azure Kubernetes Service에 대한 여러 노드 풀(미리 보기)</a></li>
+  </ul>
+
+
+  <h3>Storage</h3>
+
+
+  <ul>
+   <li><a href="#Azure Storage Data Transfer">Azure Storage 데이터 전송</a></li>
+  </ul>
+
+
+  <h3>관리 도구</h3>
+
+
+  <ul>
+   <li><a href="#View change history in Activity Log">활동 로그에서 변경 기록 보기</a></li>
+  </ul>
+
+
+  <h3>확신을 가지고 첫 번째 클라우드 프로젝트 만들기</h3>
+
+
+  <ul>
+   <li><a href="#Azure Quickstart Center now generally available">이제 Azure 빠른 시작 센터 일반 공급</a></li>
+  </ul>
+
+
+  <h3>Security Center</h3>
+
+
+  <ul>
+   <li><a href="#Changing a VM group membership on adaptive application controls">적응형 애플리케이션 컨트롤에서 VM 그룹 멤버 자격 변경</a></li>
+   <li><a href="#Advanced Threat Protection for Azure Storage now generally available">이제 Azure Storage 대한 Advanced Threat Protection 일반 공급</a></li>
+   <li><a href="#Virtual machine scale set support now generally available">이제 가상 머신 확장 집합 지원 일반 공급</a></li>
+   <li><a href="#Adaptive network hardening now in public preview">현재 공개 미리 보기로 강화된 적응형 네트워크</a></li>
+   <li><a href="#Regulatory Compliance Dashboard in now generally available">현재 일반 공급된 규정 준수 대시보드</a></li>
+  </ul>
+
+
+  <h3>Site Recovery</h3>
+
+
+  <ul>
+   <li><a href="#Add a disk to an already replicated Azure VM">이미 복제된 Azure VM에 디스크 추가</a></li>
+   <li><a href="#Enhancements to Process Server monitoring">프로세스 서버 모니터링의 향상된 기능</a></li>
+  </ul>
+
+
+  <h3>Automation</h3>
+
+
+  <ul>
+   <li><a href="#Dynamic Non-Azure groups for Azure Update Management public preview">Azure 업데이트 관리용 동적 비 Azure 그룹 공개 미리 보기</a></li>
+  </ul>
+
+
+  <h3>Intune</h3>
+
+
+  <ul>
+   <li><a href="#Updates to Microsoft Intune">Microsoft Intune 업데이트</a></li>
+  </ul>
+
+
+  <p>&rsquo;이러한 각 업데이트를 자세히 살펴보겠습니다.</p>
+
+
+  <h2>사용자 환경</h2>
+
+
+  <h3><a id="Improvements to the Azure portal user experience" name="Improvements to the Azure portal user experience">Azure Portal 사용자 환경 개선</a></h3>
+
+
+  <p>이번 달의 몇 가지 새로운 개선 사항은 Azure Portal에서 환경을 보강하는 데 도움이 됩니다.</p>
+
+
+  <ul>
+   <li>전역 검색의 향상된 기능</li>
+   <li>더 빠르고 직관적인 리소스 검색</li>
+   <li>강력한 리소스 쿼리 기능</li>
+  </ul>
+
+
+  <p>이러한 모든 개선 사항에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/blog/key-improvements-to-the-azure-portal-user-experience/" target="_blank">Azure Portal 사용자 환경의 주요 개선 사항</a>인 &ldquo; 이 블로그를 참조하세요.&rdquo;</p>
+
+
+  <h3><a id="Tabbed browsing support for more portal links" name="Tabbed browsing support for more portal links">더 많은 포털 링크에 대한 탭 검색 지원</a></h3>
+
+
+  <p>단일 페이지 애플리케이션임에도 불구하고 포털은 가능한 한 많은 경우에 일반 웹 사이트처럼 동작해야 한다는 피드백을 들었습니다. 이번 달&#39;릴리스에서는 마우스 오른쪽 단추 클릭 또는 Ctrl\Shift + 왼쪽 클릭과 같은 표준 브라우저 메커니즘을 사용하여 새 탭에서 포털&#39;링크를 더 많이 열 수 있습니다. 향상된 기능은 리소스를 나열하는 페이지에서 가장 잘 보입니다. <strong>&#39;NAME</strong>, <strong>RESOURCE GROUP</strong> 및 <strong>SUBSCRIPTION </strong>열의 링크가 모두 이 동작을 지원한다는 것을 알 수 있습니다. 정상적인 클릭으로 인해 현재 위치 탐색이 계속 발생합니다.</p>
+
+
+  <h2>IaaS</h2>
+
+
+  <h3><a id="Improved VMSS diagnostics and troubleshooting with boot diagnostics, serial console access, and resource health" name="Improved VMSS diagnostics and troubleshooting with boot diagnostics, serial console access, and resource health">부팅 진단, 직렬 콘솔 액세스 및 리소스 상태를 사용하여 VMSS 진단 및 문제 해결 개선</a></h3>
+
+
+  <p>Azure VMSS(Virtual Machine Scale Sets)를 사용하면 부하 분산된 그룹 VM을 만들고 관리할 수 있습니다. VM 인스턴스의 수는 요구 또는 정의된 일정에 따라 자동으로 늘리거나 줄일 수 있습니다. 확장 집합은 애플리케이션에 고가용성을 제공하고 많은 수의 VM을 중앙에서 관리, 구성 및 업데이트할 수 있게 합니다.</p>
+
+
+  <p>이제 포털을 통해 VMSS 인스턴스에 대한 추가 진단 도구를 관리하고 액세스할 수 있습니다.</p>
+
+
+  <ul>
+   <li>부팅 진단: Azure Virtual Machines에 대한 액세스 콘솔 출력 및 스크린샷 지원.</li>
+   <li>직렬 콘솔: 이 직렬 연결은 가상 머신의 COM1 직렬 포트에 연결하여 가상 머신&#39;네트워크 또는 운영 체제 상태와 독립적으로 액세스를 제공합니다.</li>
+   <li>리소스 상태: 리소스 상태는 Azure 서비스 문제로 인해 과거에 리소스를 사용할 수 없었던 시간을 포함하여 리소스의 현재 및 과거 상태에 대해 알려줍니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e0f27a00-b4a7-4cd3-b4a1-350fc64c4c73.png"><img alt="Screenshot of a Serial console" border="0" height="900" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0fd08690-375b-4315-9280-90695b12f7f6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="직렬 콘솔의 스크린샷" width="1432"></a></p>
+
+
+  <p align="center"><em>직렬 콘솔</em></p>
+
+
+  <p>이러한 도구를 사용해 보려면 다음 단계를 수행합니다.</p>
+
+
+  <ol>
+   <li>기존 Virtual Machine Scale Set 인스턴스로 이동합니다.</li>
+   <li>왼쪽 탐색 메뉴에서 지원 + 문제 해결 섹션에서 부팅 진단 탭을 찾을&#39;있습니다. 확장 집합에 부팅 진단이 사용하도록 설정되어 있는지 확인합니다(진단 로그를 저장할 스토리지 계정을 만들거나 선택해야&#39;).</li>
+   <li>확장 집합이 자동 또는 롤링 업그레이드 모드로 설정된 경우 각 인스턴스가 최신 확장 집합 모델을 받도록 업데이트됩니다. 확장 집합이 수동 업그레이드 모드로 설정된 경우 VMSS &gt; 인스턴스 블레이드에서 인스턴스를 수동으로 업데이트해야 합니다.</li>
+  </ol>
+
+
+  <p>각 인스턴스가 최신 모델을 받으면 부팅 진단 및 직렬 콘솔을 사용할 수 있습니다.</p>
+
+
+  <h3><a id="Updated VM computer name and hostname display" name="Updated VM computer name and hostname display">업데이트된 VM 컴퓨터 이름 및 호스트 이름 표시</a></h3>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/architecture/best-practices/naming-conventions#naming-rules-and-restrictions" target="_blank">Azure 명명 규칙 설명서에서는</a> Azure 가상 머신에 다음 두 개의 이름이 있음을 알려 줍니다.</p>
+
+
+  <ul>
+   <li>가상 머신 리소스 이름: 가상 머신 리소스에 대한 Azure 식별자입니다. Azure 자동화에서 가상 머신을 참조하는 데 사용하는 이름입니다. 이는 변경할 수 없습니다.</li>
+   <li>컴퓨터 호스트 이름: 게스트 내 운영 체제의 런타임 컴퓨터 이름입니다. 컴퓨터 이름은 언제든지 변경할 수 있습니다.</li>
+  </ul>
+
+
+  <p>Azure Portal을 사용하여 VM을 만드는 경우 간단히 하기 위해 가상 머신 리소스 이름과 컴퓨터 호스트 이름 모두에 동일한 이름을 사용합니다. 항상 VM에 로그인하고 호스트 이름을 변경할 수 있습니다. 그러나 포털에는 가상 머신 리소스 이름만 표시되었습니다. 이 변경으로 포털은 이제 VM 개요 블레이드에서 가상 머신 이름과 컴퓨터 호스트 이름을 모두 노출합니다. 또한 더 자세한 운영 시스템 버전 정보도 추가했습니다. 이러한 속성은 정상 실행 중인 VMAgent가 설치된 가상 머신을 실행하는 데 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7edbcd9b-1243-4e71-b03f-90757269d54a.png"><img alt="Screenshot of a resource name and guest computer hostname" border="0" height="705" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/18a76c85-22ae-4987-abc2-56be8b73926d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="리소스 이름 및 게스트 컴퓨터 호스트 이름의 스크린샷" width="1478"></a></p>
+
+
+  <p align="center"><em>리소스 이름 및 게스트 컴퓨터 호스트 이름</em></p>
+
+
+  <h3><a id="New full-screen create experience for Azure Container Instances" name="New full-screen create experience for Azure Container Instances">Azure Container Instances에 대한 새로운 전체 화면 만들기 환경</a></h3>
+
+
+  <p>포털의 Azure Container Instances 만들기 환경이 완전히 다시 실행되어 편리한 탭과 간소화된 흐름을 사용하여 새 만들기 스타일로 전환되었습니다. 환경 변수 추가 및 컨테이너 크기 지정(GPU 코어 지원 포함)에 대한 구체적인 개선 사항도 포함되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4ab329fa-9e1e-4e06-abfb-3c6770948600.png"><img alt="Screenshot of ACI now using the same create pattern as other services" border="0" height="823" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/813e0243-2a46-4cad-b0ef-6a5673d733ae.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="다른 서비스와 동일한 만들기 패턴을 사용하는 ACI의 스크린샷" width="1023"></a></p>
+
+
+  <p align="center"><em>이제 ACI는 다른 서비스와 동일한 만들기 패턴을 사용합니다.</em></p>
+
+
+  <p>새 만들기 환경을 사용해 보려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li>포털의 &quot;왼쪽 위에 있는 + 리소스&quot; 만들기 단추로 이동합니다.</li>
+   <li>컨테이너 범주를 &quot;&quot; 선택한 다음 컨테이너 인스턴스를&quot; 선택합니다&quot;.</li>
+  </ol>
+
+
+  <h3><a id="New integrations for Azure Kubernetes Service" name="New integrations for Azure Kubernetes Service">Azure Kubernetes Service에 대한 새로운 통합</a></h3>
+
+
+  <p>포털의 Azure Kubernetes Service 클러스터에서 이제 Dev Spaces, Azure DevOps 배포 센터 및 정책을 비롯한 다른 Azure 서비스와의 통합을 추가할 수 있습니다. Dev Spaces에서 제공하는 향상된 디버깅 기능, 배포 센터를 통해 제공되는 강력한 배포 파이프라인 및 정책에서 제공하는 컨테이너에 대한 제어를 강화하여 Azure에서 Kubernetes 클러스터를 관리하고 유지 관리하는 강력한 도구를 설정하는 것이 더욱 쉬워집니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a016f903-9373-4706-b6c6-588439e646d0.png"><img alt="Screenshot of the new integrations now available in Kubernetes" border="0" height="778" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2d33617b-a43f-46d3-8a09-4402ecaad752.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Kubernetes에서 사용할 수 있는 새 통합의 스크린샷" width="1334"></a></p>
+
+
+  <p align="center"><em>이제 새 통합 사용 가능</em></p>
+
+
+  <p>새 통합을 사용해 보려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li>Azure Kubernetes Service 클러스터에 대한 개요로 이동합니다.</li>
+   <li>왼쪽에서 다음 새 메뉴 항목을 찾습니다. <ul>
+    <li>Dev Spaces</li>
+    <li>배포 센터(미리 보기)</li>
+    <li>정책(미리 보기)</li>
+   </ul>
+   </li>
+  </ol>
+
+
+  <h3><a id="Multiple node pools for Azure Kubernetes Service (preview)" name="Multiple node pools for Azure Kubernetes Service (preview)">Azure Kubernetes Service에 대한 여러 노드 풀(미리 보기)</a></h3>
+
+
+  <p>이제 Azure Kubernetes Service에 대한 여러 노드 풀이 미리 보기의 모든 클러스터에 대해 Azure Portal에 표시됩니다. 클러스터에 새 노드 풀을 추가할 수 있으며 기존 노드 풀을 제거할 수 있으므로 혼합된 VM 크기 및 혼합 운영 체제를 사용하는 클러스터를 사용할 수 있습니다. <a href="https://aka.ms/aksportal/nodepools" target="_blank">새로운 여러 노드 풀 기능에</a> 대한 자세한 내용을 찾습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c72c0ba-60f2-44d2-b95e-cdf58c710285.png"><img alt="Screenshot of Node pools blade preview" border="0" height="769" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e7229ce8-fc98-4ebf-8980-0ca583a61061.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="노드 풀 블레이드 미리 보기 스크린샷" width="1333"></a></p>
+
+
+  <p align="center"><em>노드 풀 블레이드</em></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/03e539a4-dca3-4cf9-ba3b-94d88fc49404.png"><img alt="Screenshot of how to add a node pool" border="0" height="808" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7b0bdd40-a490-465a-8f91-0cbbfa7ff81b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="노드 풀을 추가하는 방법의 스크린샷" width="1341"></a></p>
+
+
+  <p align="center"><em>노드 풀 추가</em></p>
+
+
+  <p>여러 노드 풀을 사용해 보려면 다음을 수행합니다.</p>
+
+
+  <ul>
+   <li>아직 참여하지 않은 경우 <a href="https://aka.ms/aksportal/nodepools" target="_blank">여러 노드 풀 미리 보기를 방문하여 여러 노드 풀</a> 에 대해 자세히 알아보세요.</li>
+   <li>이미 여러 노드 풀이 있는 클러스터가 있는 경우 포털의 클러스터 왼쪽 메뉴에서 새 &#39;노드 풀(미리 보기)&#39; 옵션을 찾습니다.</li>
+  </ul>
+
+
+  <h2>Storage</h2>
+
+
+  <h3><a id="Azure Storage Data Transfer" name="Azure Storage Data Transfer">Azure Storage 데이터 전송</a></h3>
+
+
+  <p>Azure에는 사용자가 스토리지 계정으로 데이터를 전송하는 데 도움이 되도록 다양한 기능을 제공하는 다양한 데이터 전송 제품이 있습니다. 새 데이터 전송 기능은 사용자 환경에서 사용 가능한 네트워크 대역폭, 전송하려는 데이터의 크기 및 전송 빈도에 따라 권장되는 솔루션을 제공합니다. 각 솔루션에 대해 설명, 전송 예상 시간 및 최상의 사용 사례가 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5ee577b0-9a53-445f-a07c-da3160e37799.png"><img alt="Screenshot of a data transfer in Azure portal" border="0" height="760" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7842749a-7c56-412f-8610-96c7663e5f70.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Portal의 데이터 전송 스크린샷" width="1431"></a></p>
+
+
+  <p align="center"><em>데이터 전송</em></p>
+
+
+  <p>Azure Storage 데이터 전송을 시도하려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li>저장소 계정 선택</li>
+   <li>왼쪽의 &quot;데이터 전송&quot; ToC 메뉴 항목을 클릭합니다.</li>
+   <li>드롭다운에서 3개의 다른 필드에 대한 항목을 선택합니다. <ul>
+    <li>전송에 대한 데이터 크기 예측</li>
+    <li>대략적인 사용 가능한 네트워크 대역폭</li>
+    <li>전송 빈도</li>
+   </ul>
+   </li>
+  </ol>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-choose-data-transfer-solution" target="_blank">설명서를 참조하세요</a>.</p>
+
+
+  <h2>관리 도구</h2>
+
+
+  <h3><a id="View change history in Activity Log" name="View change history in Activity Log">활동 로그에서 변경 기록 보기</a></h3>
+
+
+  <p>활동 로그는 이벤트 중에 리소스에 발생한 변경 내용을 보여줍니다. 이제 미리 보기에서 변경 기록을 사용하여 이 정보를 볼 수 있습니다.</p>
+
+
+  <p>자세한 내용은 블로그, &ldquo;<a href="https://azure.microsoft.com/en-us/blog/key-improvements-to-the-azure-portal-user-experience/" target="_blank">Azure Portal 사용자 환경</a>&rdquo;의 주요 개선 사항을 참조하고 활동 로그&rdquo; 섹션에서 변경 내용 추적 보기 섹션으로 &ldquo;스크롤합니다.</p>
+
+
+  <h2>확신을 가지고 첫 번째 클라우드 프로젝트 만들기</h2>
+
+
+  <h3><a id="Azure Quickstart Center now generally available" name="Azure Quickstart Center now generally available">이제 Azure 빠른 시작 센터 일반 공급</a></h3>
+
+
+  <p>Azure 빠른 시작 센터는 자신감을 가지고 첫 번째 클라우드 프로젝트를 만들고 배포하는 데 도움이 되는 새로운 환경입니다. Microsoft Build 2018에서 미리 보기로 시작했으며 이제 일반 공급된다는 것을 자랑스럽게 생각합니다.</p>
+
+
+  <p>업데이트된 디자인을 비롯한 자세한 내용은 블로그,&ldquo; <a href="https://azure.microsoft.com/en-us/blog/key-improvements-to-the-azure-portal-user-experience/" target="_blank">Azure Portal 사용자 환경</a>&rdquo;의 주요 개선 사항을 참조하고 Azure 빠른 시작 센터&rdquo; 섹션을 사용하여 첫 번째 단계 수행 섹션으로 &ldquo;스크롤하세요.</p>
+
+
+  <h2>Security Center</h2>
+
+
+  <h3><a id="Changing a VM group membership on adaptive application controls" name="Changing a VM group membership on adaptive application controls">적응형 애플리케이션 컨트롤에서 VM 그룹 멤버 자격 변경</a></h3>
+
+
+  <p>이제 사용자는 VM을 한 그룹에서 다른 그룹으로 이동할 수 있으며, 이렇게 하면 VM에 적용된 애플리케이션 제어 정책이 해당 그룹의 설정에 따라 변경됩니다. 지금까지 특정 그룹 내에서 VM을 구성한 후에는 다시 할당할 수 없습니다. 이제 VM을 구성된 그룹에서 구성되지 않은 그룹으로 이동할 수도 있습니다. 그러면 이전에 VM에 적용된 모든 애플리케이션 제어 정책이 제거됩니다. 자세한 내용은 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fsecurity-center%2Fsecurity-center-adaptive-application&amp;data=02%7C01%7Crkarlin%40microsoft.com%7C2c7e0125e50f40f8255a08d6c341c334%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636911084543232833&amp;sdata=wQHvY2zg1vdiB3rK9b4Zfi9fw9MQqiSXnv11gMXBy28%3D&amp;reserved=0" target="_blank">Azure Security Center의 적응형 애플리케이션 제어를</a> 참조하세요.</p>
+
+
+  <h3><a id="Advanced Threat Protection for Azure Storage now generally available" name="Advanced Threat Protection for Azure Storage now generally available">이제 Azure Storage 대한 Advanced Threat Protection을 일반 공급</a></h3>
+
+
+  <p>Azure Storage 대한 ATP(Advanced Threat Protection)는 스토리지 계정에 액세스하거나 악용하려는 비정상적이고 잠재적으로 유해한 시도를 감지하는 추가 보안 인텔리전스 계층을 제공합니다. 이 보호 계층을 사용하면 보안 전문가가 될 필요 없이 스토리지 계정에 발생할 수 있는 잠재적 위협에 대한 우려를 보호하고 해결할 수 있습니다. 자세한 내용은 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fstorage%2Fcommon%2Fstorage-advanced-threat-protection&amp;data=02%7C01%7Crkarlin%40microsoft.com%7C2c7e0125e50f40f8255a08d6c341c334%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636911084543242841&amp;sdata=YExlyp6sFs9VniC8YLEdm5v0SYZXT1e5kG3l4LPcykA%3D&amp;reserved=0" target="_blank">Azure Storage Advanced Threat Protection을</a> 참조하거나 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fpricing%2Fdetails%2Fsecurity-center%2F&amp;data=02%7C01%7Crkarlin%40microsoft.com%7C2c7e0125e50f40f8255a08d6c341c334%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636911084543252848&amp;sdata=cWkU6EET00ImdMvfuYIunC7nko83pMeTFddJmpm8NpY%3D&amp;reserved=0" target="_blank">Azure Security Center 가격 책정 페이지에서</a> STORAGE 가격에 대한 ATP에 대해 읽어보세요.</p>
+
+
+  <h3><a id="Virtual machine scale set support now generally available" name="Virtual machine scale set support now generally available">이제 가상 머신 확장 집합 지원 일반 공급</a></h3>
+
+
+  <p>이제 Azure Security Center는 가상 머신 확장 집합을 식별하고 확장 집합에 대한 권장 사항을 제공합니다. 자세한 내용은 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fsecurity-center%2Fsecurity-center-virtual-machine-protection%23virtual-machine-scale-sets&amp;data=02%7C01%7Crkarlin%40microsoft.com%7C2c7e0125e50f40f8255a08d6c341c334%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636911084543262856&amp;sdata=bksGJ8wsw1Ua9gq9NNAjaqNS1U9%2BnXGifHrWuI9JYVg%3D&amp;reserved=0" target="_blank">가상 머신 확장 집합</a>을 참조하세요.</p>
+
+
+  <h3><a id="Adaptive network hardening now in public preview" name="Adaptive network hardening now in public preview">현재 공개 미리 보기로 강화된 적응형 네트워크</a></h3>
+
+
+  <p>공용 클라우드에서 실행되는 워크로드에 대한 가장 큰 공격 노출 영역 중 하나는 공용 인터넷과의 연결입니다. 고객은 Azure 워크로드를 필요한 원본 범위에만 사용할 수 있도록 하기 위해 어떤 NSG(네트워크 보안 그룹) 규칙을 사용해야 하는지 파악하기 어렵습니다. 이 기능을 통해 Security Center는 Azure 워크로드의 네트워크 트래픽 및 연결 패턴을 알아보고 인터넷 연결 가상 머신에 대한 NSG 규칙 권장 사항을 제공합니다. 이를 통해 고객은 네트워크 액세스 정책을 더 잘 구성하고 공격에 대한 노출을 제한할 수 있습니다.</p>
+
+
+  <p>네트워크 강화에 대한 자세한 내용은 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fsecurity-center%2Fsecurity-center-adaptive-network-hardening&amp;data=02%7C01%7Crkarlin%40microsoft.com%7C2c7e0125e50f40f8255a08d6c341c334%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636911084543272864&amp;sdata=btjrLtoff%2B8213zkRUPoGJ8wZ%2Fk05ypPoEjyYlvZhxY%3D&amp;reserved=0" target="_blank">Azure Security Center의 적응형 네트워크 강화를</a> 참조하세요.</p>
+
+
+  <h3><a id="Regulatory Compliance Dashboard in now generally available" name="Regulatory Compliance Dashboard in now generally available">이제 일반 공급된 규정 준수 대시보드</a></h3>
+
+
+  <p>규정 준수 대시보드는 일련의 지원되는 표준 및 규정에 대한 규정 준수 상태에 대한 인사이트를 제공하여 Security Center에서 규정 준수 프로세스를 간소화하는 데 도움이 됩니다.</p>
+
+
+  <p>규정 준수 대시보드는 Azure 및 하이브리드 워크로드의 지속적인 평가에 따라 특정 규정 준수 요구 사항에 맞게 보안 평가 및 권장 사항을 표시합니다. 또한 대시보드는 권장 사항에 따라 작업하고 환경의 위험 요소를 줄여 전반적인 규정 준수 상태를 개선하는 방법에 대한 실행 가능한 정보를 제공합니다.&nbsp; 이제 Security Center 표준 계층 고객이 대시보드를 일반적으로 사용할 수 있습니다. 자세한 내용은 <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fsecurity-center%2Fsecurity-center-compliance-dashboard&amp;data=02%7C01%7Crkarlin%40microsoft.com%7C2c7e0125e50f40f8255a08d6c341c334%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636911084543282871&amp;sdata=2FXihrPkdeWqlvBg3mumRKhULEbol%2FGz0RLnrULJXLA%3D&amp;reserved=0" target="_blank">규정 준수 개선</a>을 참조하세요.</p>
+
+
+  <h2>Azure Site Recovery 기능 업데이트</h2>
+
+
+  <h3><a id="Add a disk to an already replicated Azure VM" name="Add a disk to an already replicated Azure VM">이미 복제된 Azure VM에 디스크 추가</a></h3>
+
+
+  <p>이제 IaaS VM용 Azure Site Recovery는 이미 복제된 Azure 가상 머신에 새 디스크 추가를 지원합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1765aced-05f9-4534-8141-f49879268129.png"><img alt="Screenshot of adding new disks in zure Site Recovery" border="0" height="468" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e39dd2bd-367e-4e1c-9821-973e8560afca.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="zure Site Recovery에서 새 디스크를 추가하는 스크린샷" width="1428"></a></p>
+
+
+  <p align="center"><em>새 디스크 추가</em></p>
+
+
+  <p>이 기능을 사용해 보려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li>ASR을 사용하여 보호되는 가상 머신을 선택합니다.</li>
+   <li>이 가상 머신에 새 디스크를 추가합니다.</li>
+   <li>이 가상 머신의 복제 상태에 대한 경고가 표시되는 Recovery Services 자격 증명 모음으로 이동합니다.</li>
+   <li>이 VM을 클릭하고 디스크 &gt; 로 이동하여 보호되지 않은 디스크 &gt;복제를 사용하도록 설정합니다.</li>
+   <li>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-enable-replication-added-disk" target="_blank">설명서를</a> 참조하세요.</li>
+  </ol>
+
+
+  <h3><a id="Enhancements to Process Server monitoring" name="Enhancements to Process Server monitoring">프로세스 서버 모니터링의 향상된 기능</a></h3>
+
+
+  <p>Azure Site Recovery는 복제 구성 요소인 프로세스 서버에 다양한 상태 신호를 도입하여 VMware 또는 물리적 서버에서 워크로드의 상태 모니터링을 향상시켰습니다. 프로세스 서버의 여러 매개 변수인 사용 가능한 공간 사용률, 메모리 사용량, CPU 사용률 및 달성된 처리량에 대한 알림이 발생합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e2c916c8-3d35-499b-a798-61c776b609dd.png"><img alt="Screenshot of replicated items monitoring" border="0" height="339" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c9342d2a-401a-42b0-a470-7291341e3782.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="복제된 항목 모니터링 스크린샷" width="1024"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d1b23cd6-ed61-496f-8db0-14197c709afe.png"><img alt="Screenshot of enhancements to Process Server monitoring" border="0" height="482" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3e89bedb-b760-4e5b-b7fc-b19733fc5426.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="프로세스 서버 모니터링의 향상된 기능 스크린샷" width="425"></a></p>
+
+
+  <p align="center"><em>프로세스 서버 모니터링의 향상된 기능</em></p>
+
+
+  <p>자세한 내용은 이 블로그, &ldquo;<a href="https://azure.microsoft.com/en-us/blog/monitoring-enhancements-vmware-physical-azure" target="_blank">Azure Site Recovery로 보호되는 VMware 및 물리적 워크로드에 대한 향상된 모니터링 기능을</a> 참조하세요.&rdquo;</p>
+
+
+  <p>VMware 및 물리적 워크로드에 대한 프로세스 서버 경고의 새로운 향상된 기능은 Azure Site Recovery를 통한 새로운 보호에도 도움이 됩니다. 이러한 경고는 프로세스 서버의 부하 분산에도 도움이 됩니다. 워크로드의 규모가 커지면 신호가 강력합니다. 이 지침은 적절한 수의 가상 머신이 프로세스 서버에 연결되고 관련 문제를 방지할 수 있도록 합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d5cc6e26-64f1-4672-a868-7c258e7ade5b.png"><img alt="Screenshot of selecting a source environment in Process Server" border="0" height="482" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/63aaf69e-5ebe-4079-8fba-783284f81534.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="프로세스 서버에서 원본 환경 선택 스크린샷" width="312"></a>&nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5e4a1b0a-f7b2-42a3-a5c8-8af9ab49e4af.png"><img alt="Screenshot of new alerts in Process Server" border="0" height="482" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2f8e5fd8-395e-4804-92be-ab70cd385a30.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="프로세스 서버의 새 경고 스크린샷" width="268"></a></p>
+
+
+  <p align="center"><em>새 경고</em></p>
+
+
+  <p>새 경고를 사용해 보려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li>물리적 또는 VMware 머신에 대한 복제 사용 워크플로를 시작합니다.</li>
+   <li>원본을 선택할 때 드롭다운 목록에서 프로세스 서버를 선택합니다.</li>
+   <li>프로세스 서버의 상태가 각 프로세스 서버에 대해 표시됩니다. 경고 상태는 경고를 발생시켜 사용자&rsquo; 선택을 억제하고, 위험 상태는 PS 선택을 완전히 차단합니다.</li>
+  </ol>
+
+
+  <h2>Automation</h2>
+
+
+  <h3><a id="Dynamic Non-Azure groups for Azure Update Management public preview" name="Dynamic Non-Azure groups for Azure Update Management public preview">Azure Update Management용 동적 비 Azure 그룹 공개 미리 보기</a></h3>
+
+
+  <p>Azure 업데이트 관리에 대한 비 Azure 그룹 대상 지정은 이제 공개 미리 보기에서 사용할 수 있습니다. 이 기능은 Log Analytics 저장된 검색을 기반으로 비 Azure 머신에 대한 패치 배포의 동적 대상 지정을 지원합니다.</p>
+
+
+  <p>이 기능을 사용하면 저장된 검색을 기반으로 업데이트 배포를 위해 대상 머신을 동적으로 확인할 수 있습니다. 배포가 만들어지면 사용자가 업데이트 배포 자체를 수정할 필요 없이 검색 조건을 충족하는 업데이트 관리에 추가된 모든 새 컴퓨터가 자동으로 선택되고 다음 배포 실행에서 패치됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e71b380a-b643-488f-a222-3b389b033bd4.png"><img alt="Screenshot of selecting dynamic non-Azure groups" border="0" height="788" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92a6739c-0253-4a0b-8452-b34ed5ef0283.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure가 아닌 동적 그룹 선택 스크린샷" width="1731"></a></p>
+
+
+  <p align="center"><em>Azure가 아닌 동적 그룹</em></p>
+
+
+  <p>이 기능을 사용해 보려면 다음을 수행합니다.</p>
+
+
+  <ol>
+   <li><a href="https://docs.microsoft.com/azure/automation/automation-update-management" target="_blank">Azure 업데이트 관리를 배포</a> 하고 서비스에서 관리할 1개 이상의 비 Azure 머신을 추가합니다.</li>
+   <li>비 Azure 머신을 대상으로 하는 <a href="https://docs.microsoft.com/azure/azure-monitor/platform/computer-groups" target="_blank">저장된 검색을 만듭니</a>다.</li>
+   <li>Azure 업데이트 관리에서 새 정기 업데이트 배포를 만듭니다.
+   <ul>
+    <li>대상 컴퓨터의 경우 업데이트할 그룹을 선택하고 비 Azure(미리 보기) 탭에서 저장된 검색을 선택합니다.</li>
+   </ul>
+   </li>
+   <li>업데이트 배포를 완료합니다.</li>
+   <li>저장된 검색과 일치하는 업데이트 관리에 새 머신이 추가되면 이 배포에서 해당 컴퓨터를 선택합니다.</li>
+  </ol>
+
+
+  <p>Azure 업데이트 관리 및 저장된 검색 만들기에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/automation/automation-update-management" target="_blank">설명서를 참조하세요</a>.</p>
+
+
+  <h2>Intune</h2>
+
+
+  <h3><a id="Updates to Microsoft Intune" name="Updates to Microsoft Intune">Microsoft Intune 업데이트</a></h3>
+
+
+  <p>Microsoft Intune 팀은 업데이트에 대해서도 열심히 노력해 왔습니다. Intune 사용 환경에 영향을 주는 변경 내용을 포함하여 <a href="https://aka.ms/intunewhatsnewtoday" target="_blank">Microsoft Intune 페이지의 새로운&#39;</a> Intune에 대한 업데이트의 전체 목록을 찾을 수 있습니다.</p>
+
+
+  <h2>Azure Portal &ldquo;비디오 시리즈 방법&rdquo;</h2>
+
+
+  <p><a href="https://www.youtube.com/playlist?list=PLLasX02E8BPBKgXP4oflOL29TtqTzwhxR" target="_blank">아직 비디오 시리즈를 사용하는&rdquo; 방법을 Azure Portal &ldquo;</a> 에서 체크 아웃했나요? 이 비디오는 포털에서 클라우드 워크로드를 배포하는 동안 보다 효율적이고 생산적일 수 있도록 포털의 특정 측면을 강조 표시합니다. 최근 비디오에는 스토리지 계정을 만들고 Blob을 업로드하는 방법과 포털에서 Azure Kubernetes Service 클러스터를 만드는 방법에 대한 데모가 포함되어 있습니다. 매주 <a href="https://www.youtube.com/playlist?list=PLLasX02E8BPBKgXP4oflOL29TtqTzwhxR" target="_blank">YouTube에서 재생 목록을</a> 계속 확인하여 새 동영상을 확인하세요.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Azure Portal&rsquo;의 대규모 엔지니어 팀은 항상 사용자의 의견을 듣고 싶어하므로 아래 또는 Twitter <a href="https://twitter.com/azureportal" target="_blank">@AzurePortal</a>의 의견 섹션에서 의견을 계속 제공해 주세요.</p>
+
+
+  <p><a href="https://portal.azure.com/" target="_blank">Azure Portal에 로그인</a>하고 지금 <a href="https://aka.ms/azuremobileapp" target="_blank">Azure 모바일 앱을</a> 다운로드하여 새로운 모든 것을 확인하는 것을&rsquo; 잊지 마세요&rsquo;. 다음 달에 만나보세요!</p>

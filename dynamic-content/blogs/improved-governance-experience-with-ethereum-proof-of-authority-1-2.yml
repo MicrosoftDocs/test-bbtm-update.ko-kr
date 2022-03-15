@@ -1,0 +1,81 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d1b2988df0c0a2fafcb41e6b4428e3caa16b3aa5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139901175"
+Slug: improved-governance-experience-with-ethereum-proof-of-authority-1-2
+Title: Ethereum 인증 증명 1.2를 사용한 향상된 거버넌스 환경
+Summary: Ethereum 인증 증명을 시작한 이래로 우리는 훌륭한 피드백을 받았으며 고객이 이 솔루션을 활용하여 블록체인 애플리케이션을 출시하는 방법에 대해 자세히 알아보았습니다. 사용자 환경, 구성 가능성 및 배포 안정성을 향상시키는 다양한 기능을 출시했습니다.
+Content: >-
+  <p><a href="https://azuremarketplace.microsoft.com/marketplace/apps/microsoft-azure-blockchain.azure-blockchain-ethereum">Ethereum 인증 증명</a>을 시작한 이래로 우리는&#39;훌륭한 피드백을 받았으며 고객이 이 솔루션을 활용하여 블록체인 애플리케이션을 출시하는 방법에 대해 자세히 알아보았습니다. Weve&rsquo;는 사용자 환경, 구성 및 배포 안정성을 향상시키는 다양한 기능을 출시했습니다.</p>
+
+
+  <h2>거버넌스 DApp</h2>
+
+
+  <p>이 업데이트는 컨소시엄 관리를 보다 직관적으로 만드는 새로운 거버넌스 환경과 함께 제공됩니다.</p>
+
+
+  <p>거버넌스 DApp은 관리 관리 및 유효성 검사기 위임에 사용됩니다. 각 관리자는 PoA 합의 내에서 블록을 제안할 유효성 검사기 집합을 선택할 수 있습니다. 관리자는 다른 관리자를 추가하거나 제거할 수 있는 투표 권한도 있습니다. 이러한 형태의 온체인 거버넌스는 네트워크 운영의 기능을 분산하는 데 도움이 되며 시간이 지남에 따라 정상 네트워크를 유지하기 위한 친숙한 메커니즘을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f858c307-b4d8-481a-9402-1115def7f9a6.png"><img alt="PoA0" border="0" height="1333" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8801a0d8-0834-425e-8b3a-062a13ca6c2b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="PoA0" width="2256"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d4569b8-b25b-4643-ab1d-e47f5e50220a.png"><img alt="PoA1" border="0" height="1328" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ae331c3a-fb4f-41db-ab9f-0640989c54e0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="PoA1" width="2256"></a></p>
+
+
+  <p>이 새 UI는 이전에 배포된 PoA(인증 증명) 네트워크와 호환되지 않습니다.</p>
+
+
+  <h2>WebSocket 지원</h2>
+
+
+  <p>Weve&rsquo;는 이벤트를 직접 구독하거나 오픈 소스 블록 탐색기인 BlockScout과 같은 외부 도구 및 애플리케이션에 쉽게 연결할 수 있도록 WebSocket 지원을 추가했습니다. 배포 출력 또는 배포 후 전자 메일의 일부로 WebSocket 엔드포인트를 찾을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2afa7329-d140-4d33-870b-99acfa843064.png"><img alt="websocket" border="0" height="29" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/80a4ecb6-bdd8-48e1-9577-c39eb35f2fe0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Websocket" width="635"></a></p>
+
+
+  <h2>BlockScout 블록 탐색기</h2>
+
+
+  <p>또한 새로운 인증 증명 배포를 사용하여 BlockScout을 설정하는 방법에 대한 지침과 함께 새 배포 <a href="https://github.com/Azure-Samples/blockchain/tree/master/ledger/template/ethereum-on-azure/technology-samples/blockscout">가이드</a> 를 구성했습니다. BlockScout을 사용하면 블록체인을 투명하게 볼 수 있습니다. 트랜잭션, 사용자 주소, 연락처 주소 및 블록 번호로 쉽게 검색할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b24a0e3c-b9a9-49f5-bf1f-bbe4d0b7f1e5.png"><img alt="blockscout_ui_blue" border="0" height="1002" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5d3b8844-983f-4883-a326-60d2678be798.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="blockscout_ui_blue" width="1590"></a></p>
+
+
+  <h2>JIT(Just-In-Time) VM 액세스 및 Azure Backup 지원</h2>
+
+
+  <p>프로덕션 준비를 염두에 두고&rsquo; <a href="https://azure.microsoft.com/en-us/blog/just-in-time-vm-access-is-generally-available/">JIT VM 액세스</a> 및 Azure Backup 지원에 대한 지원을 활성화했습니다. JIT VM 액세스를 사용하면 조직 내 구성원이 VM에 대한 액세스를 조달하는 방법을 엄격하게 제어하여 공격 가능성을 줄일 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/backup/backup-azure-vms-first-look-arm">Azure Backup</a> 은 VM 하드 드라이브의 예약된 백업을 만드는 기능을 제공합니다. 이렇게 하면 재해 복구를 처리하고 중요한 온체인 데이터의 손실을 방지하는 쉬운 방법이 제공됩니다.</p>
+
+
+  <h2>VM SKU 선택</h2>
+
+
+  <p>Weve&rsquo;는 네트워크에서 광범위한 성능 테스트를 수행하고 올바른 VM SKU를 선택할 때 보다 직관적인 옵션을 제공하기 위해 VM 선택을 조정했습니다. <a href="https://github.com/Azure-Samples/blockchain/tree/master/ledger/template/ethereum-on-azure/performance-benchmarking">성능 벤치마킹</a>에 사용된 도구를&rsquo; 살펴보세요.</p>
+
+
+  <h2>추가 구성 옵션</h2>
+
+
+  <p>배포하기 전에 시작 블록 가스 제한을 지정하고 다시 봉인 시간을 차단할 수 있습니다. 블록 가스 제한은 각 블록의 크기에 영향을 주지만 블록 다시 봉인 시간은 빈 트랜잭션의 경우 블록이 생성되는 빈도를 제어합니다. 블록 다시 봉인 시간이 높으면 디스크 사용률이 감소하지만 트랜잭션 처리량이 부족한 네트워크의 블록 최종성에 영향을 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2d96bc9-3008-4528-8251-b4733098c5af.png"><img alt="configuration-options" border="0" height="184" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d939421-e5b8-4e8e-a8ee-c1cd4762b90d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="configuration-options" width="263"></a></p>
+
+
+  <h2>향상된 안정성</h2>
+
+
+  <p>ARM 템플릿은 각 배포 후에 추가 유효성 검사를 수행하여 네트워크가 올바르게 시작되었는지 확인합니다. 또한 Azure Monitor 구성 요소를 계열로 배포하여 Azure Monitor 배포 안정성이 향상되었습니다.</p>
+
+
+  <h2>피드백 보내기</h2>
+
+
+  <p>거버넌스 DApp에서 웃는 얼굴 아이콘을 클릭하여 팀과 피드백을 빠르게 공유할 수 있습니다. 문제가 발생하면 <a href="https://social.msdn.microsoft.com/Forums/home?forum=azureblockchain">지원 포럼</a> 에 문의하여 차단을 해제하세요.</p>
