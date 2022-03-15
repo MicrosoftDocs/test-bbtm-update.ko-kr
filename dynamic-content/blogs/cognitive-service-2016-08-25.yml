@@ -1,0 +1,160 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4023c1fe32389362755c92f66c66825107bec805
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898074"
+Slug: cognitive-service-2016-08-25
+Title: Cognitive Services 8월 API 업데이트
+Summary: Microsoft Cognitive Services는 개발자가 애플리케이션을 보다 지능적이고 매력적이며 검색 가능하게 만들 수 있는 인텔리전스 및 지식 API 컬렉션입니다. Cognitive Services에는 시스템이 자연스러운 통신 방법을 사용하여 요구 사항을 보고, 듣고, 말하고, 이해하고 해석할 수 있는 지능형 API가 포함되어 있습니다. 웹의 기능을 개발자에게 제공하는 지식 API…
+Content: >-
+  <p>Microsoft Cognitive Services는 개발자가 애플리케이션을 보다 지능적이고 매력적이며 검색 가능하게 만들 수 있는 인텔리전스 및 지식 API 컬렉션입니다. Cognitive Services에는 시스템이 자연스러운 통신 방법을 사용하여 요구 사항을 보고, 듣고, 말하고, 이해하고 해석할 수 있는 지능형 API가 포함되어 있습니다. 웹의 기능을 개발자에게 제공하는 지식 API 다음은 Microsoft Cognitive Services API 대한 8월 업데이트입니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p><img width="58" height="58" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Icons_Vision_Vision-1.svg">&nbsp; &nbsp;<strong>Computer Vision API</strong></p>
+
+  <p>이제 이미지 및 캡션 내에서 최대 2,000개의 인식된 개체(애니메이션 효과 및 무생물)에 태그를 지정할 수 있습니다. 업데이트에는 향상된 유명 인사 인식이 포함됩니다.</p>
+
+  <p>향상된 태그 지정은 2,000개 이상의 개체, 동물 및 사람을 선택하여 이미지 내에서 개체 인식을 제공합니다. 식별되면 새 이미지 캡션 기능은 인식할 수 있는 2,000개의 이미지에 대한 명확한 서면 설명을 제공합니다. 우리의 새로운 유명 인사 인식 모델은 전 세계 비즈니스, 정치, 스포츠 및 엔터테인먼트에서 200,000 유명 인사를 인식합니다. <a href="https://www.microsoft.com/cognitive-services/en-us/computer-vision-api">Cognitive Services Computer Vision</a>의 Computer Vision API에 대해 자세히 알아봅니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p><strong><img width="58" height="58" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Icons_Vision_Face.svg">&nbsp;&nbsp;Face API</strong></p>
+
+  <p>이제 Face API는 얼굴을 일치시키고 식별하기 위한 추가 유연성을 제공합니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p>새로운 기능을 사용하면 대면 인증, 유사한 얼굴 찾기, 인식 신뢰도 임계값 설정 및 새 목록 사람 그룹을 사용할 수 있습니다.</p>
+
+  <ul>
+
+  <li>대면 인증은 두 얼굴이 같은 사람에 속하는지 또는 한 얼굴이 한 사람에 속하는지 여부를 확인합니다. <a href="https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039523a">자세한 내용은 Face-Verify에서 확인할 수 있습니다</a>. </li>
+
+  <li>비슷한 얼굴을 찾는 것은 다른 목록, 배열 또는 사진에서 같은 사람의 얼굴을 찾는 데 도움이됩니다. <a href="https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395237">자세한 내용은 Face-Find 유사에서 찾을 수 있습니다.</a>&nbsp;</li>
+
+  <li>사용자가 지정한 새로운 선택적 신뢰도 임계값을 통해 사용자는 얼굴이 사람에 속하는지 여부에 대한 신뢰 수준을 정의할 수 있습니다. <a href="https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395239">자세한 내용은 Face-Identify에서 확인할 수 있습니다.</a></li>
+
+  <li>목록 사용자 그룹의 새 "시작" 및 "상위" 매개 변수를 사용하면 사용자가 반환할 시작 지점 및 총 사용자 그룹 수를 지정할 수 있습니다. 자세한 내용은 <a href="https://dev.projectoxford.ai/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395248">개인 Group-List 사람 그룹에서</a> 찾을 수 있습니다.</li>
+
+  </ul>
+
+  <p>&nbsp;</p>
+
+  <p><a href="https://www.microsoft.com/cognitive-services/en-us/face-api">Cognitive Services Face</a>의 Face API에 대해 자세히 알아봅니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p><img width="58" height="58" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Icons_Vision_Video.svg"> &nbsp; <strong>Video API</strong></p>
+
+  <p>이제 동작을 보고할 비디오의 위치를 지정 및 제한하고, 세분성을 제어하도록 민감도 수준을 설정하고, 동작이 발생한 정확한 영역을 검색할 수 있습니다.</p>
+
+  <p>&nbsp;</p>
+
+  <ul>
+
+  <li>다각형 검색 영역: 이제 관심 있는 비디오 영역을 지정하여 동작이 보고되는 위치의 범위를 좁힐 수 있습니다.</li>
+
+  <li>민감도 수준 설정: 감지하려는 동작의 세분성을 제어하려면 세 가지 수준, 중간 및 높은&mdash; 수준&mdash; 중에서 선택합니다.</li>
+
+  <li>병합 임계값: 여러 동작 보고서가 하나의 이벤트로 병합되는 시간 범위를 지정하여 여러 동작 이벤트를 하나로 결합합니다.</li>
+
+  <li>동작 위치: 동작이 감지되면 API는 사각형 경계 상자를 사용하여 동작이 발생한 정확한 영역을 정의합니다.</li>
+
+  </ul>
+
+  <p>&nbsp;</p>
+
+  <p><a href="https://www.microsoft.com/cognitive-services/en-us/video-api">Cognitive Services 비디오</a>의 Video API에 대해 자세히 알아봅니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p><img width="58" height="58" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Icons_Speech_Speaker.svg"> &nbsp; <strong>Speaker Recognition API</strong></p>
+
+  <p>화자 인식은 화자를 식별하기 위해 30초의 음성만 필요합니다.&nbsp;</p>
+
+  <p>&nbsp;</p>
+
+  <p>이전에 Speaker Recognition은 등록 및 identifciation 작업 모두에 60초의 음성이 필요했습니다. 이제 Speaker Recognition API는 모든 음성을 허용하지만, 사용자가 최상의 API 환경을 얻기 위해 등록에 30초, 식별을 위해 10초를 입력하는 것이 좋습니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p><a href="https://www.microsoft.com/cognitive-services/en-us/speaker-recognition-api">Cognitive Services Speaker Recognition</a>의 Speaker Recognition API에 대해 자세히 알아봅니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p><img width="58" height="58" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Icons_Language_LUIS.svg">&nbsp;&nbsp;<strong>LUIS(Language Understanding Intelligence Service) API</strong></p>
+
+  <p>LUIS 사용 가능한 트랜잭션이 감소하고 있습니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p>2016년 9월 4일부터 무료 월간 LUIS 트랜잭션 수가 100,000개에서 10,000개 트랜잭션으로 변경되고 있습니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p><a href="https://www.microsoft.com/cognitive-services/en-us/language-understanding-intelligent-service-luis">Cognitive Services LUIS</a>의 Language Understanding Intelligence Service API에 대해 자세히 알아봅니다.</p>
+
+  <p>&nbsp;&nbsp;</p>
+
+  <p><img width="58" height="58" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Large_Language_TextAnalytics.svg">&nbsp;&nbsp;<strong>Text Analytics API</strong></p>
+
+  <p>이제 Text Analytics API를 여러 언어로 사용할 수 있습니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p>Text Analytics API 감정 분석은 이제 <strong>영어</strong>, <strong>스페인어</strong>, <strong>프랑스어</strong> 및 <strong>포르투갈어</strong>로 수행할 수 있습니다. 및 핵심 구는 <strong>영어</strong>, <strong>스페인어</strong>, <strong>독일어</strong> 및 <strong>일본</strong>어 텍스트에서 추출할 수 있습니다. 이러한 기능은 영어 문서에 대한 120 언어 플러스 항목 검색에서 텍스트의 언어를 인식하는 Text Analytics APIs&rsquo;&mdash; 기능 외에도 제공됩니다. Text Analytics API의 언어 기능에 대한 자세한 내용은 <a href="https://blogs.technet.microsoft.com/machinelearning/2016/06/21/text-analytics-api-now-available-in-multiple-languages/">Text Analytics API 언어 지원</a>에서 찾을 수 있습니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p><a href="https://www.microsoft.com/cognitive-services/en-us/text-analytics-api">Cognitive Services Text Analytics의 Text Analytics</a> API에 대해 자세히 알아봅니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p>&nbsp;</p>
+
+  <p><img width="58" height="58" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Icons_Knowledge_Academic.svg">&nbsp;&nbsp; <strong>Academic Knowledge API</strong></p>
+
+  <p>이제 유료 미리 보기의 일부로 매 1,000개 트랜잭션마다 25센트의 속도로 매월 무제한의 트랜잭션을 만들 수 있습니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p>Academic Knowledge API 사용자는 무료 계층만 사용하고 매월 최대 10,000개의 트랜잭션을 만들 수 있었습니다. 이제 유료 계층으로 Academic Knowledge 구독자는 1000개 트랜잭션당 $0.25의 속도로 무제한의 트랜잭션을 만들 수 있습니다.&nbsp;</p>
+
+  <p>&nbsp;</p>
+
+  <p><a href="https://www.microsoft.com/cognitive-services/en-us/academic-knowledge-api">Cognitive Services Academic</a> Knowledge의 Academic Knowledge API에 대해 자세히 알아봅니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p><img width="58" height="58" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Large_Knowledge_Recommendations.svg">&nbsp;&nbsp;<strong>권장 사항 API</strong></p>
+
+  <p>권장 사항 API에 새로운 기능이 추가되었습니다.</p>
+
+  <p>&nbsp;</p>
+
+  <p>권장 사항 API에는 다음 기능이 추가되었습니다.</p>
+
+  <ul>
+
+  <li>새 권장 사항 UI를 사용하면 한 줄의 코드를 작성하지 않고도 모델을 학습시키고 테스트할 수 있습니다.</li>
+
+  <li>새 일괄 처리 채점을 사용하면 한 번에 수천 개의 권장 사항을 얻을 수 있습니다.</li>
+
+  <li>비즈니스 규칙 지원</li>
+
+  <li>이제 사용량 및 카탈로그 파일을 열거하고 다운로드할 수 있습니다.</li>
+
+  <li>권장 사항 모델의 품질을 쿼리하기 위한 빌드 메트릭 지원</li>
+
+  <li>권장 사항 모델에서 항목 기능의 품질을 쿼리하기 위한 순위 작성 지원</li>
+
+  <li>카탈로그에서 제품을 검색하는 기능</li>
+
+  </ul>
+
+  <p>&nbsp;</p>
+
+  <p><a href="https://www.microsoft.com/cognitive-services/en-us/recommendations-api">Cognitive Services</a> 권장 사항 권장 사항 API에 대해 자세히 알아봅니다.</p>

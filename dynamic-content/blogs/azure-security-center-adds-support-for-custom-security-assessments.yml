@@ -1,0 +1,37 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 39ca17ed5c8aafbb29c29027023dd3a6ceedf36b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897772"
+Slug: azure-security-center-adds-support-for-custom-security-assessments
+Title: Azure Security Center는 사용자 지정 보안 평가에 대한 지원을 추가합니다.
+Summary: Azure Security Center는 방화벽, 감사, 암호 정책 및...
+Content: >-
+  <p>Azure Security Center는 방화벽, 감사, 암호 정책 등과 관련된 규칙을 포함하여 OS 강화를 위한 150개 이상의 <a href="https://gallery.technet.microsoft.com/Azure-Security-Center-a789e335" target="_blank">권장</a> 규칙 집합을 사용하여 OS(운영 체제) 구성을 모니터링합니다. 컴퓨터에 취약한 구성이 있는 것으로 확인되면 보안 권장 사항이 생성됩니다. 현재 이러한 규칙을 사용자 지정하고 원하는 Windows 구성과 정확히 일치하는 규칙을 추가할 수 있는 새로운 기능을 미리 볼 수 있게 되어 기쁩니다.</p>
+
+
+  <p>새 사용자 지정 보안 구성은 보안 정책의 일부로 정의되며 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+   <li>특정 규칙을 사용하거나 사용하지 않도록 설정합니다.</li>
+   <li>기존 규칙에 대해 원하는 설정을 변경합니다(예: 암호는 30일이 아닌 60일 후에 만료되어야 합니다).</li>
+   <li>레지스트리, 감사 정책 및 보안 정책을 포함하여 지원되는 규칙 유형에 따라 새 규칙을 추가합니다.</li>
+  </ul>
+
+
+  <p>참고: OS 보안 구성 사용자 지정은 구독 수준에서만 표준 계층의 Security Center 사용자에게 제공됩니다.</p>
+
+
+  <p>시작하려면 아래와 같이 Security Center를 열고 <strong>, 보안 정책을</strong> 선택하고, 구독을 선택하고, <strong>&ldquo;보안 구성 편집(미리 보기)&rdquo;</strong> 을 선택합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5415a223-723d-426f-81c9-d52576b6a54c.png"><img alt="Security policy" border="0" height="541" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cc04daa3-f98d-43fd-a2fc-844d4731a3fd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="보안 정책" width="1059"></a></p>
+
+
+  <p><strong>&ldquo;보안 구성 편집 규칙&rdquo;</strong> 블레이드에서 구성 파일(JSON 형식)을 다운로드하고, 규칙을 편집하고, 수정된 파일을 업로드하고, 저장하여 변경 내용을 적용할 수 있습니다. 그러면 사용자 지정된 규칙 집합이 다음 평가 중에 적용 가능한 모든 리소스 그룹 및 가상 머신에 적용됩니다(최대 24시간).</p>
+
+
+  <p>새로운 기능 및 파일 편집 지침에 대한 자세한 내용은 <a href="https://docs.microsoft.com/azure/security-center/security-center-customize-os-security-config" target="_blank">설명서 페이지를</a> 방문하세요.</p>

@@ -1,0 +1,244 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 53f08cee965aace930a786234762f2b42bf6dde4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902123"
+Slug: key-improvements-to-the-azure-portal-user-experience
+Title: Azure Portal 사용자 환경의 주요 개선 사항
+Summary: Azure Portal에서 사용자 환경 개선 작업을 지속적으로 진행하고 있습니다. 우리의 목표는 단일 창에서 서비스를 빌드, 관리 및 모니터링할 수 있도록 생산적이고 사용하기 쉬운 플랫폼을 제공하는 것입니다.
+Content: >-
+  <p>&rsquo;<a href="https://portal.azure.com/" target="_blank">Azure</a> Portal에서 사용자 환경 개선 작업을 지속적으로 진행합니다. 우리의 목표는 단일 창에서 서비스를 빌드, 관리 및 모니터링할 수 있도록 생산적이고 사용하기 쉬운 플랫폼을 제공하는 것입니다.</p>
+
+
+  <p>Wed&rsquo;는 사용자 환경을 개선하는 몇 가지 흥미로운 업데이트를 공유하려고 합니다.</p>
+
+
+  <ul>
+   <li>로드 시간이 빨라지고 결과가 더 스마트해<strong>지도록 전역 검색이 개선</strong>되었습니다.</li>
+   <li>다양한 디스플레이 및 필터링 기능이 향상된 <strong>더 빠르고 직관적인 리소스 검색</strong></li>
+   <li>Azure Research Graph 통해 리소스 전체에서 <strong>강력한 쿼리 기능</strong></li>
+   <li>GitHub 계정을 사용하여 <strong>Azure Portal에 로그인</strong>합니다.</li>
+   <li>Azure 빠른 시작 센터의 향상된 <strong>향상된 고객 환경</strong>.</li>
+   <li><strong>간소화된 서비스 만들기</strong> 및 보다 일관된 사용자 환경</li>
+   <li>Azure Application Gateway 내에서 <strong>전체 화면 만들기</strong></li>
+   <li>활동 로그<strong>를 통한 자세한 변경 내용 추적</strong></li>
+  </ul>
+
+
+  <p>&rsquo;이러한 개선 사항 중 일부를 자세히 살펴보겠습니다.</p>
+
+
+  <h2>전역 검색 개선 사항</h2>
+
+
+  <p>대부분의 사용자가 전역 검색(화면 맨 위에)을 사용하여 Azure 서비스, 리소스, 리소스 그룹, 설명서 또는 마켓플레이스 제품을 찾습니다. 검색자의 약 50%가 이 기능을 사용하여 Azure 서비스를 찾고, 35% 이상은 이 기능을 사용하여 리소스(서비스 인스턴스)를 찾습니다.</p>
+
+
+  <p>더 빠르고 풍부한 환경을 제공하기 위해 글로벌 검색이 개선되었습니다. Weve&rsquo;는 서비스 및 리소스 섹션의 성능을 최적화하여 더 빠른 결과를 제공했습니다. 이제 UI는 데이터를 사용할 수 있게 되면 표시되므로 결과의 가용성이 빨라집니다. 서비스를&rsquo; 검색할 때 관련성이 더 높고 서비스 이름(&ldquo;예: Virtual Machines&rdquo; 대신 Vrtual Machnes&rdquo;)의 &ldquo;철자를 잘못 입력하면 원하는 결과가 반환됩니다.</p>
+
+
+  <p>또한 더 나은 가독성을 위해 레이아웃이 개선되었으며 이제 섹션당 더 많은 검색 결과가 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/93e8d26e-c705-4bea-b260-d3d19488c7fa.png"><img alt="Improvements in global search results in the Azure portal" border="0" height="1587" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3cf3c7f2-0aa0-4139-8a36-6894ae3038cb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="전역 검색 결과의 향상된 기능" width="3239"></a></p>
+
+
+  <p align="center"><em>전역 검색 결과의 향상된 기능</em></p>
+
+
+  <p>포커스가 있을 때 검색 상자에는 최근 사용한 5개 리소스와 함께 최근 5개의 검색 용어가 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aac23b40-3f1c-4bb3-b83e-e27a48eaf54c.png"><img alt="Global search history in the Azure portal" border="0" height="1579" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bd263b4a-345f-407b-b074-ab4865dc3fb6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="전역 검색 기록" width="3238"></a></p>
+
+
+  <p align="center"><em>전역 검색 기록</em></p>
+
+
+  <p>새 전역 검색을 시도해 보세요. 바로 가기 키를 찾고 계신가요? 세션 중에 언제든지 <strong>G </strong>+ <strong>/</strong> 키를 눌러 전역 검색을 활성화합니다.</p>
+
+
+  <h2>향상된 리소스 검색을 탐색합니다.</h2>
+
+
+  <p>리소스 검색 및 탐색은 아마도 가장 일반적인 사용 경로 중 하나일 것입니다. Weve&rsquo;는 관심 있는 리소스 및 서비스에 더 빠르게 액세스할 수 있도록 이 환경을 개선했습니다. 먼저,&rsquo; 최근에 모든 서비스&rdquo; 목록에서 분류&ldquo;가 향상되어 원하는 서비스를 더 쉽게 찾을 수&rsquo; 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/946bcc92-71a1-41da-9b04-a3e753a04259.png"><img alt="All services view in the Azure portal" border="0" height="1883" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1a6fb082-bcc2-4bd3-9bf2-d368a6764f30.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="모든 서비스 보기" width="3237"></a></p>
+
+
+  <p align="center"><em>모든 서비스 보기</em></p>
+
+
+  <p>검색할 때 각 리소스 목록에는 모든 구독, 리소스 그룹 및 위치에 걸쳐 리소스가 표시됩니다. 리소스별 목록(하나의 리소스 유형으로 특수화됨)과 &ldquo;각 리소스를&rdquo; 단일 보기로 표시하는 모든 리소스 목록이 있습니다.</p>
+
+
+  <p>Weve&rsquo;는 &ldquo;성능 및 기능을 향상하기&rdquo; 위해 모든 리소스 보기를 최적화했습니다. 몇 가지 주요 개선 사항은 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>Azure Resource Graph, 특히 여러 구독에서 대규모 리소스 집합으로 작업할 때 성능이 크게 향상됩니다.</li>
+   <li>알 약 필터 더 클리너 환경 및 복잡 한 조건자를 만들 수 있는 기능, 태그로 필터링을 포함 하 여.</li>
+   <li>리소스 목록을 CSV 파일로 내보내는 기능입니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/96ef4cdf-3dea-4108-9fae-4da08881b010.png"><img alt="All resources view in the Azure portal" border="0" height="1927" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bb73d152-95b5-4d32-85d4-57fb2b860a8b.png" style="border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="모든 리소스 보기" width="3237"></a></p>
+
+
+  <p align="center"><em>모든 리소스 보기</em></p>
+
+
+  <p>이러한 기능은 리소스 그룹 보기에서도 사용할 수 있습니다.</p>
+
+
+  <p>&rsquo;이러한 성능 및 환경 개선 사항을 VM(가상 머신), 스토리지, 앱 서비스 등과 같은 특수한 리소스 목록으로 가져오기 위해 노력하고 있습니다. &rsquo;이러한 서비스 중 일부를 곧 미리 볼 수 있습니다.</p>
+
+
+  <h2>Azure Resource Graph 사용하여 풍부한 대시보드 빌드(미리 보기)</h2>
+
+
+  <p>미리 보기로 제공되는 Azure Resource Graph 모든 리소스에서 고성능 및 강력한 쿼리 기능을 제공하여 환경에 대한 전체 가시성을 제공합니다. 이제 Azure Portal 환경에서 Azure Resource Graph 기능을 활용하여 Azure 구독, 위치, 관리 그룹 등에서 모든 리소스를 쿼리할 수 있습니다. 전역 검색에 리소스 그래프&rdquo;를 입력하여 &ldquo;이를 경험할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1439eb31-7263-40e8-adbb-1c9c28176911.png"><img alt="Finding Resource Graph Explorer (preview)" border="0" height="807" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/738afef8-ba2a-4bf0-9998-97c48802dde9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="리소스 Graph 탐색기 찾기(미리 보기)" width="1784"></a></p>
+
+
+  <p align="center"><em>리소스 Graph 탐색기 찾기(미리 보기)</em></p>
+
+
+  <p>그러면 Azure Resource Graph Explorer가 시작됩니다. <a href="https://docs.microsoft.com/azure/governance/resource-graph/concepts/query-language" target="_blank">Azure Resource Graph 쿼리 언어</a>를 사용하여 쿼리를 작성할 수 있는 도구입니다(Azure Data Explorer에서 사용되는 동일한 언어인 KQL 기반).</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/08a0dce5-1aad-40d5-aca6-cf3ea5c30e3d.png"><img alt="Azure Resource Graph Explorer (preview) interface" border="0" height="1772" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0af4515e-247b-4253-8002-e87e8bac1186.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Resource Graph Explorer(미리 보기) 인터페이스" width="3233"></a></p>
+
+
+  <p align="center"><em>Azure Resource Graph Explorer(미리 보기) 인터페이스</em></p>
+
+
+  <p>쿼리 편집기 레이아웃은 Azure SQL Database 같은 기존 쿼리 편집기와 유사합니다. 왼쪽에는&rsquo; 스키마 탐색기, 맨 위에는 쿼리를 위한 탭 섹션, 아래쪽에는 결과 패널이 있습니다. 이 도구를 사용하면 데이터 모양에 따라 리소스에 대해 쿼리를 수행하고 결과를 테이블 또는 차트로 표시할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f0ef52b9-4c71-4fa4-ae0c-6584b1b529f8.png"><img alt="Writing queries in Azure Resource Graph Explorer (preview)" border="0" height="647" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95ccf7c6-7f8b-4002-a22c-9b92ead56b0e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="쿼리 작성" width="1310"></a></p>
+
+
+  <p align="center"><em>쿼리 작성</em></p>
+
+
+  <p>그런 다음 단일 값, 테이블 또는 차트(막대 또는 도넛형)의 세 가지 타일 유형 중 하나를 사용하여 쿼리 결과를 Azure Portal 대시보드에 고정할 수 있습니다. 이러한 대시보드는 다른 Azure 리소스와 마찬가지로 공유, 보호(RBAC를 통해) 관리될 수 있습니다.</p>
+
+
+  <p>샘플 인벤토리 대시보드 데모 - 대시보드에서 업로드&rdquo; 옵션을 사용하여 &ldquo;<a href="https://go.microsoft.com/fwlink/?linkid=2090467" target="_blank">샘플 JSON을</a> 가져옵니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7b1ce144-dab8-4a8d-b986-dc3026bfebfa.png"><img alt="Azure Resource Inventory dashboard example" border="0" height="1009" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c858e38a-362d-4a7f-92ce-95cd44b733cd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="대시보드 예제" width="1314"></a></p>
+
+
+  <p align="center"><em>대시보드 예제</em></p>
+
+
+  <h2>GitHub 계정을 사용하여 Azure Portal에 로그인</h2>
+
+
+  <p>GitHub&rsquo; 개발자가 Azure를 더 쉽게 탐색할 수 있습니다. 이제 개발자는 GitHub 계정을 사용하여 Azure에 로그인하고 Azure에서 배포할 리포지토리를 구성할 수 있습니다.</p>
+
+
+  <p>Azure 탐색을 시작하려면 Azure&rsquo; 구독이 여전히 필요합니다. 계정이 없는&rsquo; 경우 <a href="https://azure.microsoft.com/free/" target="_blank">Azure 체험 계정을</a> 만들어 시작합니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://go.microsoft.com/fwlink/p/?linkid=2090322" target="_blank">설명서</a> 및 <a href="https://aka.ms/GitHubIdentityBlog" target="_blank">DevOps 블로그</a>를 참조하세요.</p>
+
+
+  <h2>Azure 빠른 시작 센터를 사용하여 첫 번째 단계 수행</h2>
+
+
+  <p>Azure 빠른 시작 센터는 안심하고 Azure에서 첫 번째 단계를 수행하는 데 도움이 되는 새로운 고객 환경입니다. Microsoft Build 2018에서 미리 보기로 시작했으며 이제 일반 공급에 도달했다고 발표하게 된 것을 자랑스럽게 생각합니다. Weve&rsquo;는 또한 향상된 검색 기능과 더 나은 탐색을 위해 사용자 의견에 따라 디자인을 업데이트했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92a0629c-b6cc-47e3-995d-bcf415473db7.png"><img alt="Azure Quickstart Center" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c891afe9-a881-45d3-8da6-13a30c82a426.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 빠른 시작 센터" width="1366"></a></p>
+
+
+  <p align="center"><em>Azure 빠른 시작 센터</em></p>
+
+
+  <p>Azure 빠른 시작 센터는 Azure 환경을 올바른 방법으로 설정, 보호 및 관리하는 데 도움이 됩니다. 자주 사용하는 Azure 제품을 찾고 관심 있는 시나리오를 지원하는 서비스 인스턴스를 만들 수&rsquo; 있습니다. 또한 빠른 시작 센터에는 Microsoft Learn과의 통합(온라인 과정&rdquo; 수강 탭을 통해&ldquo;)이 포함되어 있으며, Azure를 시작하기 위해 가장 인기 있는 학습 경로 및 모듈의 큐레이팅된 하위 집합을 제공합니다.</p>
+
+
+  <p>6월에 Azure <a href="https://aka.ms/CAF/migrate/guide" target="_blank">마이그레이션 가이드는 Azure</a> 빠른 시작 센터 설정 섹션에서 사용할 수 있습니다.</p>
+
+
+  <p>Azure 빠른 시작 센터는 <strong>모든 서비스</strong> 또는 전역 검색을 사용하여 찾을 수 있습니다.</p>
+
+
+  <h2>일관된 환경을 사용하여 Azure 서비스 만들기</h2>
+
+
+  <p>이러한 기능의 목표는 간단한&mdash; 방법으로 몇 가지 패턴을 학습하고 모든 곳에서 적용할 수 있기를 바랍니다.</p>
+
+
+  <p>Microsoft Ignite 2018에서는 가상 머신 및 스토리지 인스턴스를 만들기 위한 개선되고 간소화된 프로세스를 도입했습니다. 이 새로운 환경으로 인해 작업 시간이 20% 감소하고 완료율이 15% 증가했습니다. 또한 Azure의 모든 리소스 생성 환경을 해당 환경과 일치하게 만드는 것이 목표라고 밝혔습니다. <a href="https://medium.com/microsoft-design/creation-at-cloud-scale-d3bc2a1e8487" target="_blank">Cloud Scale에서 만들기</a> 문서에서 &ldquo; 자세히 알아볼 수 있습니다.&rdquo;</p>
+
+
+  <p>지난 몇 달 동안 Weve&rsquo;는 해당 목표를 달성하기 위해 더 많은 서비스를 업그레이드하는 데 큰 진전을 이루었습니다. &rsquo;Were는 이제 Azure Portal을 통해 수십 개의 서비스에서 일관되게 간소화된 환경을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3cb54c0b-ea8b-4dfa-9fc3-498a0057ac0c.png"><img alt="More services offer a consistent creation experience" border="0" height="951" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/62036331-7ffd-4da8-b901-eca901dd2027.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="더 많은 서비스가 일관된 생성 환경을 제공합니다." width="1211"></a></p>
+
+
+  <p align="center"><em>더 많은 서비스가 일관된 생성 환경을 제공합니다.</em></p>
+
+
+  <p>&rsquo;앞으로 몇 달 동안&rsquo; 중지&mdash;하지 않으면 나머지 인스턴스 만들기 페이지가 이 새 패턴을 사용하기 시작하는 것을 볼 수 있습니다.</p>
+
+
+  <h2>새로 고친 환경을 사용하여 애플리케이션 게이트웨이 만들기</h2>
+
+
+  <p>이제 Azure Application Gateway에 대한 새로운 전체 화면 만들기 환경을 미리 볼 수 있습니다. 이 환경을 사용하면 만들기 전에 애플리케이션 게이트웨이 구성 요소의 요약을 볼 수 있으며, 애플리케이션 게이트웨이를 배포하기 전에 애플리케이션 게이트웨이의 엔드 투 엔드 구성 요소를 구성할 수 있습니다.</p>
+
+
+  <p>프런트 엔드, 백 엔드 풀 및 라우팅 규칙을 설정하고 수신기 및 HTTP 설정을 구성할 수 있습니다. 또한 탐색&rsquo;을 더 쉽게 수행할 수 있는 탭과 구성 옵션 중에서 선택할 수 있는 상황에 맞는 지침을 추가했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db1cd5af-d390-4d36-b2ed-ec75d2b43977.jpg"><img alt="Application Gateway creation experience" border="0" height="758" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/be44b764-1143-4f84-b5d2-950d45770fd3.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Application Gateway 만들기 환경" width="1161"></a></p>
+
+
+  <p align="center"><em>Application Gateway 만들기 환경</em></p>
+
+
+  <h2>활동 로그에서 변경 내용 추적 보기</h2>
+
+
+  <p>활동 로그는 이벤트 중에 리소스에 발생한 변경 내용을 보여줍니다. 이제 미리 보기에서 변경 기록을 사용하여 이 정보를 볼 수 있습니다. 이렇게 하려면 포털 왼쪽의 메뉴를 사용하여 <strong>활동 로그</strong> 로 이동하고, 자세히 살펴볼 이벤트를 선택하고, <strong>변경 기록(미리 보기)</strong> 탭을 선택하여 이벤트와 관련된 변경 내용을 확인합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e938ef14-2dae-465d-9b8f-ddad5bb49dd4.png"><img alt="Change history (preview) tab" border="0" height="530" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c8846530-412e-4d67-b5b8-745b40d9c7e9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="변경 기록(미리 보기) 탭" width="1629"></a></p>
+
+
+  <p align="center">변경 기록(미리 보기)</p>
+
+
+  <p>이벤트와 연결된 변경 내용이 있는 경우 선택 가능한 목록으로 볼&#39;있습니다. 하나를 클릭하면 변경 내용에 대한 세부 정보가 표시되는 <strong>변경 기록(미리 보기)</strong> 페이지가 열립니다. 다음 예제&rsquo;에서 볼 수 있듯이 VM의 크기가 변경되었을 뿐만 아니라 이전 VM 크기 및 변경된 내용도 확인할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/abdcd4b2-6f2f-4e61-8f5f-e9c7d4392987.png"><img alt="Changes to resources, before and after" border="0" height="1014" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/14af0013-32f0-49c3-89b8-292d649474ba.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="리소스 이전 및 이후의 변경 내용" width="1551"></a></p>
+
+
+  <p align="center"><em>리소스 이전 및 이후의 변경 내용</em></p>
+
+
+  <p>리소스 변경에 대한 자세한 내용은 설명서를 &ldquo; 확인하고 <a href="https://docs.microsoft.com/azure/governance/resource-graph/how-to/get-resource-changes?branch=pr-en-us-74410" target="_blank">리소스 변경 내용을 가져옵니다</a>.&rdquo;</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Microsoft는 사용자 의견을 바탕으로 이러한 연구 기반의 혁신적인 환경을 개발합니다. Azure Portal을 통해 리소스를 빌드, 관리 및 모니터링할 때 생산성을 높이는 것이 목표입니다. 피드백을 남기고 다음 리소스를 통해 자세히 알아볼 수 있습니다.</p>
+
+
+  <ul>
+   <li>아래의 의견 섹션 또는 <a href="https://www.twitter.com/azureportal" target="_blank">Twitter</a>에서 의견을 알려주세요.</li>
+   <li>새 기능을 보려면 오늘 <a href="https://portal.azure.com/" target="_blank">Azure Portal</a> 에 로그인합니다.</li>
+  </ul>

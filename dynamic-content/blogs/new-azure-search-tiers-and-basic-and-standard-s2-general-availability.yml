@@ -1,0 +1,223 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a22769ee9a10daaa972c4172195bd0670c6e70c8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912733"
+Slug: new-azure-search-tiers-and-basic-and-standard-s2-general-availability
+Title: 새 Azure Search 계층 및 기본 및 표준 S2 일반 공급
+Summary: Azure Search 서비스 계층 줄에 대한 여러 업데이트를 발표하게 되어 기쁩니다.
+Content: >-
+  <p><em>이 게시물은 데이터 그룹 부사장인 Joseph Sirosh가 작성했습니다.</em></p>
+
+
+  <p>&rsquo;Azure Search 서비스 계층에 대한 여러 업데이트를 발표하게 되어 기쁩니다. 현재 표준 S3이라는 고성능/고성능 계층과 표준 S3 고밀도라는 SAAS &amp; ISV 중심 계층을 미리 보기에 도입하고 있습니다. 또한 Azure Search 기본 및 표준 S2 검색 계층 GA(일반 공급)를 만들고 있습니다.</p>
+
+
+  <h2>새 계층</h2>
+
+
+  <h4>쿼리 속도가 높은 매우 큰 데이터 세트에 대한 표준 S3 미리 보기</h4>
+
+
+  <p>표준 S3은 문서 수가 많고 쿼리 워크로드가 매우 많은 고객에게 적합합니다. 표준 S3은 고성능 CPU와 프리미엄 SSD 스토리지를 통해 지원되므로 이 서비스는 10억 개 이상의 문서를 지원할 수 있으며 적절하게 크기를 조정할 때 짧은 대기 시간에 QPS(초당 수백 개 쿼리)를 처리할 수 있습니다.</p>
+
+
+  <h3>ISVand&nbsp; 다중 테넌트 SaaS 앱에 대한 표준 S3 고밀도 미리 보기</h3>
+
+
+  <p>표준 S3 HD(고밀도) 계층은 비교적 적은 수의 인덱스가 필요한 고객을 지원해야 하는 ISV&rsquo; 및 SaaS 지원 애플리케이션에 이상적으로 적합합니다. S3 HD 검색 서비스를 사용하면 단일 검색 서비스에서 최대 1,000개의 인덱스를 지원할 수 있으므로 고객 워크로드가 더 작거나 고객에게 저렴한 인덱스를 제공해야 하는 시나리오에서 이 계층을 매우 비용 효율적으로 만들 수 있습니다.</p>
+
+
+  <p><a href="https://www.cymax.com/">Cymax Group</a> 은 이 고밀도 제품을 테스트하기 위해 함께 작업한 한 고객입니다. Cymax는 가정용 가구에 대한 가장 빠르게 성장하는 PaaS 및 온라인 소매 업체 중 하나이며 연간 매출은 1억 5천만 달러를 초과합니다. Cymax Group은 최근 Cymaxs&rsquo; 기술, 물류 및 제품 카탈로그를 활용하여 비용을 낮게 유지하는 동시에 모든 가구 매장이 온라인 입지를 제공할 수 있는 <a href="https://www.constantretail.com/">상수 소매</a> 플랫폼을 출시했습니다.</p>
+
+
+  <p><i>&ldquo;성공적인 전자 상거래 사이트의 핵심 부분은 검색 기능입니다. 따라서 Microsoft Azure Search와의 파트너십을 통해 Constant Retail 고객은 대규모 소매점에서만 사용할 수 있는 선도적인 검색 기술에 액세스할 수 있습니다. 강력한 기능 집합과 지능적이고 의미 있는 결과를 확장, 수행 및 제공하는 기능으로 인해 Azure Search 플랫폼을 선택했습니다. 새로운 S3 고밀도 계층은 기술 스택, 비즈니스 모델 및 고객과 함께 완벽하게 적합하므로 각 사이트에서 고유하고 사용자 지정 가능한 검색 인덱&rdquo;스를 가질 수 있습니다. - </i>Rizwan Somji, 기술 부사장, Cymax Group</p>
+
+
+  <p>또한 <a href="https://www.microsoft.com/en-us/dynamics/crm.aspx">Microsoft Dynamics CRM Online</a> Azure Search HD 계층을 활용하여 온라인 검색 환경을 혁신하여 최종 사용자가 가장 복잡한 고객 애플리케이션에서도 쉽고 빠르게 원하는 것을 찾을 수 있도록 했습니다.</p>
+
+
+  <p><i>&ldquo;Azure Search를 활용하면 이 경로를 처음으로 크게 도약하고 중요한 미래 혁신을 위한 길을 열 수 있습니다. 특히 새로운 HD SKU를 사용하면 성능 및 기능 목표를&rdquo; 유지하면서 수천 명의 온라인 고객을 위해 서비스 가능하고 저렴한 방식으로 Azure Search를 배포할 수 있습니다. - </i>Mike Carter, 수석 프로그램 관리자, Dynamics CRM</p>
+
+
+  <p>훨씬 더 많은 수의 인덱스에 대한 지원은 인덱스당 문서 측면에서 절충과 함께 제공됩니다. S3에는 허용되는 모든 파티션에서 최대 14억 개의 문서가 있는 반면, S3 HD 인덱스는 인덱스당 100만 개 이하의 문서를 가질 수 있으며, 모든 인덱스의 결합된 스토리지는 서비스당 200GB로 제한됩니다. 또한 S3 HD는 현재 인덱서를 지원하지 않습니다.</p>
+
+
+  <h2>일반적으로 사용 가능한 새로운 계층</h2>
+
+
+  <h4>기본의 일반 공급</h4>
+
+
+  <p>3월에는 무료 계층과 표준 계층 간의 가격 격차를 메운 기본 계층을 미리 보기로 <a href="https://azure.microsoft.com/en-us/blog/azure-search-introduces-new-lower-cost-tier-in-preview/">도입</a> 했습니다. 기본 계층은 용량 요구 사항이 낮은 시나리오에 표준의 프로덕션 클래스 특성을 제공하여 이러한 격차를 해결합니다. 현재 이 계층을 일반 공급하고 있습니다. 이 기본 검색 서비스에 대한 자세한 내용은 <a href="https://azure.microsoft.com/documentation/articles/search-limits-quotas-capacity/">이 페이지를</a> 방문하세요.</p>
+
+
+  <h4>표준 S2의 일반 공급</h4>
+
+
+  <p>표준 S2는 현재 일반 공급되는 중간 범위 검색 서비스입니다. 미리 보기&rsquo; 중에는 대기 시간이 매우 짧게 유지하면서 초당 수백 개의 쿼리가 있는 워크로드를 지원하는 표준 S2 서비스를 관찰했습니다.</p>
+
+
+  <h2>Azure Search 계층 요약</h2>
+
+
+  <p>각 서비스 계층의 주요 측면을 요약하는 테이블은 다음과 같습니다&rsquo;.</p>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+          <tr>
+              <td valign="bottom" width="84">&nbsp;</td>
+              <td width="64">
+              <p><b>Free</b></p>
+              </td>
+              <td width="91">
+              <p><b>기본</b></p>
+              </td>
+              <td width="91">
+              <p><b>표준 S1</b></p>
+              </td>
+              <td width="99">
+              <p><b>표준 S2</b></p>
+              </td>
+              <td width="107">
+              <p><b>표준 S3 미리 보기</b></p>
+              </td>
+              <td width="72">
+              <p><b>표준 S3 HD 미리 보기</b></p>
+              </td>
+          </tr>
+          <tr>
+              <td width="84">
+              <p><b>SLA 사용 가능</b></p>
+              </td>
+              <td width="64">
+              <p>예</p>
+              </td>
+              <td width="91">
+              <p>예*</p>
+              </td>
+              <td width="91">
+              <p>예*</p>
+              </td>
+              <td width="99">
+              <p>예*</p>
+              </td>
+              <td width="107">
+              <p>아니요**</p>
+              </td>
+              <td width="72">
+              <p>아니요**</p>
+              </td>
+          </tr>
+          <tr>
+              <td width="84">
+              <p><b>스토리지</b></p>
+              </td>
+              <td width="64">
+              <p>50MB</p>
+              </td>
+              <td width="91">
+              <p>2GB/서비스</p>
+              </td>
+              <td width="91">
+              <p>25GB/파티션(최대 300GB)</p>
+              </td>
+              <td width="99">
+              <p>100GB/파티션(최대 1.2TB)</p>
+              </td>
+              <td width="107">
+              <p>200GB/파티션(최대 2.4TB)</p>
+              </td>
+              <td width="72">
+              <p>200GB</p>
+              </td>
+          </tr>
+          <tr>
+              <td width="84">
+              <p><b>최대 인덱스</b></p>
+              </td>
+              <td width="64">
+              <p>3</p>
+              </td>
+              <td width="91">
+              <p>5</p>
+              </td>
+              <td width="91">
+              <p>50</p>
+              </td>
+              <td width="99">
+              <p>200</p>
+              </td>
+              <td width="107">
+              <p>200</p>
+              </td>
+              <td width="72">
+              <p>1000</p>
+              </td>
+          </tr>
+          <tr>
+              <td width="84">
+              <p><b>호스팅되는 문서</b></p>
+              </td>
+              <td width="64">
+              <p>10000</p>
+              </td>
+              <td width="91">
+              <p>1M/서비스</p>
+              </td>
+              <td width="91">
+              <p>15M/파티션(최대 180M 문서)</p>
+              </td>
+              <td width="99">
+              <p>60M/파티션(최대 7억 2천만 개 문서)</p>
+              </td>
+              <td width="107">
+              <p>120M/파티션(최대 1.4B 문서)</p>
+              </td>
+              <td width="72">
+              <p>1M/인덱스(총 200M)</p>
+              </td>
+          </tr>
+          <tr>
+              <td width="84">
+              <p><b>규모 확장 제한</b></p>
+              </td>
+              <td width="64">
+              <p>해당 없음</p>
+              </td>
+              <td width="91">
+              <p>최대 3단원/서비스</p>
+              </td>
+              <td width="91">
+              <p>최대 36단원/서비스</p>
+              </td>
+              <td width="99">
+              <p>최대 36단원/서비스</p>
+              </td>
+              <td width="107">
+              <p>최대 36단원/서비스</p>
+              </td>
+              <td width="72">
+              <p>최대 12개의 복제본 및 1개의 파티션</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <p>표준 데이터 전송 속도가 적용됩니다.</p>
+
+
+  <p>*읽기-SLA의 복제본 최소 2개, 읽기-쓰기-SLA용 복제본 3개.</p>
+
+
+  <p>**미리 보기 Azure Search 서비스는 SLA를 제공하지 않습니다.</p>
+
+
+  <h2>기능 직접 사용해 보기</h2>
+
+
+  <p>이러한 새로운 Azure Search 계층 및 가격 책정에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/search/">가격 책정 페이지를</a> 방문하거나 여기를 <a href="https://ms.portal.azure.com/#create/Microsoft.Search">클릭하여</a> 사용자 고유의 Search 서비스를 만드세요.</p>

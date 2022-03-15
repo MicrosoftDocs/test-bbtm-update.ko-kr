@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 17fa3e08ec5a4701c0924b429ba1e120a818780c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912834"
+Slug: first-microsoft-azure-stack-systems-are-headed-to-your-datacenters
+Title: 첫 번째 Microsoft Azure Stack 시스템은 데이터 센터로 연결됩니다.
+Summary: Azure Stack 순서성에 대한 이전 공지 사항에 대해 환상적인 반응을 보입니다. 오늘은 우리에게 또 다른 큰 이정표를 나타냅니다.  이제 하드웨어 파트너와 함께 Azure Stack의 초기 릴리스에 대한 작업을 완료했습니다.
+Content: >-
+  <p>&rsquo;Azure Stack 순서성에 대한 이전 공지 사항에 대한 환상적인 응답을 보고 있습니다. 오늘은 우리에게 또 다른 큰 이정표를 나타냅니다. Weve&rsquo;는 이제 하드웨어 파트너와 함께 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/" target="_blank">Azure Stack</a> 의 초기 릴리스 작업을 완료했습니다. 현재 Microsoft Ignite의 Im&rsquo;은 수만 명의 최고의 엔터프라이즈 IT 고객과 대화를 나누고 있으며, 모두 이 릴리스에 대해 기쁘게 생각합니다. 따라서 Im&rsquo;은 다음을 발표하게 되어 기뻤습니다.</p>
+
+
+  <ul>
+   <li><b>첫 번째 Azure Stack 통합 시스템이</b><b> 배송되었습니다. </b> <a href="https://www.dellemc.com/en-us/solutions/cloud/microsoft-azure-stack.htm" target="_blank">Dell EMC</a>, <a href="https://news.hpe.com/availability-of-hpe-proliant-for-microsoft-azure-stack-accelerates-hybrid-cloud-deployments/" target="_blank">Hewlett Packard Enterprise</a> 및 <a href="https://www3.lenovo.com/us/en/data-center/Lenovo-ThinkAgile-SX-for-Microsoft-Azure-Stack/p/WMD00000272" target="_blank">Lenovo</a>는 현재 시스템을 배송하고 있습니다. 애플리케이션을 실행할 준비가 된 Azure Stack을 배포하고 설치할 파트너에게 문의하세요. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/integrated-systems/" target="_blank">하드웨어 파트너</a> 에게 문의할 수 있습니다.</li>
+   <li><b>확장된 구매 옵션. </b> Cisco의 Azure Stack 통합 시스템은 이제 주문할 준비가 되었습니다. 또한 Wortmann은 올해 말까지 <a href="https://itpeernetwork.intel.com/intel-microsoft-wortmann-azure-stack/" target="_blank">Azure Stack용 Terra 통합 시스템을 </a>도입할 계획입니다. 또한 단일 구매 지점을 사용할 수 있는 <a href="https://www.avanade.com/en/technologies/azure-stack" target="_blank">Avanade의 완전 관리형 솔루션을</a> 발표하게 되어 기쁩니다.</li>
+   <li><b>IT 전문가를 위한 새로운 Azure Stack 교육 및 인증 과정. </b> Were&rsquo;는 Azure 하이브리드 클라우드를 관리하고 운영하는 데 심층적인 기술을 구축하는 데 도움이 되는 새로운 &ldquo; Azure <a href="https://azure.microsoft.com/en-us/blog/why-your-team-needs-an-azure-stack-operator/" target="_blank">Stack 운영자</a>&rdquo; 중심 <a href="https://azure.microsoft.com/en-us/training/learning-paths/" target="_blank">학습 경로</a> 및 인증 시험에 투자합니다. 인증 시험은 1분기 CY18에서 사용할 수 있지만 <a href="https://www.microsoft.com/en-us/learning/course.aspx?cid=20537" target="_blank">Microsoft Learning 파트너</a> 중 하나 또는 <a href="https://aka.ms/AzureStackMOOC" target="_blank">온라인에서</a> Azure Stack 과정을 수강하여 지금 준비를 시작할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>진정한 하이브리드 애플리케이션 혁신</h2>
+
+
+  <p>제가 이야기하는 모든 고객은 차별화된 고객 환경을 제공하고 비즈니스 방식을 혁신하기 위한 클라우드 전략을 가지고 있습니다(또는 작업 중). 또한 대부분 클라우드 및 온-프레미스 환경에서 최신 애플리케이션을 빌드하려는 상당한 온-프레미스 투자&ndash;&rsquo;와 비즈니스 정책 및 규정 요구 사항을 충족하도록 배포할 수 있는 유연성을 제공합니다. 이는 Azure Stack을 Azure의 온-프레미스 확장으로 빌드하는 데 주된 동기부여였습니다.</p>
+
+
+  <p>Azure 및 Azure Stack은 업계&rsquo;에 진정으로 일관된 하이브리드 클라우드 플랫폼만 제공합니다. 이 플랫폼은 애플리케이션 개발에 대한 통합된 접근 방식을 가능하게 하고 완전히 새로운 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/use-cases/" target="_blank">사용 사례 시나리오</a>와 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/how-to-buy/" target="_blank">종량제</a>&nbsp; 사용을 가능하게 합니다. 고객은 AVID, ABSA Bank, ANZ Bank, <a href="https://customers.microsoft.com/en-us/story/mitsui-co" target="_blank">Mitsui Knowledge Industry</a>, Saxo Bank 및 Schlumberger를 포함하여 Azure 및 Azure Stack &ndash; 을 사용하여 하이브리드 클라우드 모델에 투자하고 있습니다.</p>
+
+
+  <p>간단히 말해서,&rsquo; 고객&rsquo; 비즈니스를 발전시킬 수 있도록 Azure 서비스를 거의 모든 곳에 제공하기 위해 최선을 다하고 있습니다. 초기 릴리스에서 Azure Stack에서 사용할 수 있는 기능과 향후 버전에 대해 계획된 기능에 대한 자세한 내용은 이 <a href="https://azure.microsoft.com/en-us/resources/azure-stack-an-extension-of-azure/" target="_blank">백서</a> 에서 확인하세요.</p>
+
+
+  <h2>IT 전문가를 위한 새로운 Azure Stack 교육 및 인증</h2>
+
+
+  <p>Azure Stack과 Azure는 동일한 애플리케이션 개발 모델을 공유하지만 여전히 온-프레미스에서 실행되는 Azure Stack 통합 시스템을 관리하고 운영해야 합니다. &rsquo;Microsoft에서 작동하므로 Azure에서 이 작업을 수행할 필요가 없습니다. 성공을 보장하기 위해 Azure를 실행하는 학습 및 모범 사례를 공유하므로 하이브리드 클라우드 환경에서 동일한 작업을 성공적으로 수행할 수 있습니다. 따라서 이 변화의 시기에 성공하기 위해 사람,&rsquo; 프로세스 및 기술 전문 지식을 갖추는 Azure Stack 운영자&rdquo; <a href="https://borntolearn.mslearn.net/b/weblog/posts/announcing-three-new-azure-exams" target="_blank">교육 및 인증</a> 프로그램에 깊이 &ldquo;투자해야 합니다. 이러한 새로운 귀중한 기술을 통해 Microsoft IT 전문가는 조직이 Azure 및 Azure Stack을 사용하여 클라우드로 전환함에 따라 귀중한 기술을 개발할 수 있습니다.</p>
+
+
+  <h2>하나의 Azure 에코시스템 제품</h2>
+
+
+  <p>파트너 에코시스템은 Azure Stack 이니셔티브를 가속화하는 데 도움이 되는 몇 가지 제품을 제공했습니다.</p>
+
+
+  <ul>
+   <li>ISV는 Azure 애플리케이션 및 서비스를 Azure Stack으로 확장하고 있으며, Bitnami, Chef, Docker, Kemp Technologies, Red Hat Enterprise Linux 및 SUSE Linux를 비롯한 <a href="https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-marketplace-azure-items" target="_blank">검증된 제품</a> 목록이 빠르게 증가하고 있습니다. 또한 Weve&rsquo;는 azure Stack에서 실행할 Windows Server 및 SQL Server 같은 인기 있는 Microsoft 워크로드의 유효성을 검사했습니다.</li>
+   <li>MSP(관리 서비스 공급자)는 Azure Stack을 기반으로 하는 관리형 서비스를 포함하도록 제품을 확장하고 있습니다. NTT, <a href="https://www.pulsant.com/amp/technology/" target="_blank">Pulsant</a>, <a href="https://www.revera.co.nz/resources/products/apollo" target="_blank">Revera</a>, <a href="https://www.youtube.com/watch?v=ophISf9Oe-w" target="_blank">Tieto</a> 및 Resello와 같은 MSP는 앞으로 몇 주 안에 시장에 출시될 예정입니다.</li>
+   <li>완전 관리형 완전 관리형 하이브리드 클라우드 솔루션의 예로, <a href="https://www.avanade.com/en/technologies/azure-stack" target="_blank">Avanade</a> 는 클라우드 변환 서비스, 소프트웨어, 인프라, 설정 &amp; 구성 및 지속적인 관리형 서비스를 포함하는 올인원 제품을 제공하므로 현재 Azure와 마찬가지로 Azure Stack을 사용할 수 있습니다.</li>
+   <li><a href="https://www.avanade.com/en/technologies/azure-stack" target="_blank">Avanade</a>, DXC, Dell EMC Services, InFront 컨설팅 그룹, HPE Pointnext 및 PwC(PricewaterhouseCoopers)를 포함하는 Azure Stack &ndash; 을 포함하도록 여러 시스템 통합업체(SIS)가 애플리케이션 현대화 사례를 확장했습니다.</li>
+  </ul>
+
+
+  <h2>맺음말</h2>
+
+
+  <p>오늘날의&rsquo; 이정표는 많은 사람들의 깊은 참여와 피드백의 절정입니다. Azure 및 Azure Stack을 사용하여 하이브리드 솔루션을 <a href="https://azure.microsoft.com/en-us/overview/azure-stack/development-kit/" target="_blank">계획하고 설계</a> 할 때 더 많은 것을 배우기를 기대합니다. Were&rsquo;는 Azure Stack에서 해결하려는 비즈니스 과제와 후속 Azure Stack 릴리스에서 <a href="https://feedback.azure.com/forums/344565-azure-stack" target="_blank">보고</a> 싶은 것을&rsquo; 이해하는 데 관심이 있습니다.</p>
+
+
+  <p>또한 Microsoft Ignite &ndash; 에서 많은 <a href="https://myignite.microsoft.com/sessions?q=azure%2520stack" target="_blank">세션</a> 과 다양한 대화형 포럼을 진행합니다. 우리의 제품 그룹에서 큰 우발적 인 참석, 그리고 잡초&rsquo;는 당신과 함께 얘기 사랑!</p>
+
+
+  <p>나탈리 아</p>

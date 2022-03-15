@@ -1,0 +1,143 @@
+### YamlMime:Yaml
+ms.openlocfilehash: de1c86ea263db1acb5a437646895342704620d37
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897488"
+Slug: announcing-the-general-availability-of-azure-spot-virtual-machines
+Title: Azure Spot Virtual Machines의 일반 공급 발표
+Summary: 오늘 Azure 스폿 VM(Virtual Machines)의 일반 공급이 발표되었습니다. Azure 스폿 VM은 사용하지 않는 Azure 컴퓨팅 용량에 대한 액세스를 대폭 할인된 수준에서 제공합니다.
+Content: >-
+  <p>오늘 Azure&rsquo; <a href="https://azure.microsoft.com/en-us/pricing/spot/#overview" target="_blank">스폿 VM(Virtual Machines</a> )의 일반 공급에 대해 발표했습니다. Azure 스폿 VM은 사용하지 않는 Azure 컴퓨팅 용량에 대한 액세스를 대폭 할인된 수준에서 제공합니다. 스폿 가격은 VMSS(VM 확장 집합) 외에도 단일 VM에서 사용할 수 있습니다. 이렇게 하면 종량제 요금에 비해 할인된 가격 책정에 액세스하면서 Azure에 광범위한 워크로드를 배포할 수 있습니다. 스폿 VM은 종량제 가상 머신과 동일한 특성을 제공하며, 가격 책정 및 제거의 차이입니다. Azure에 용량이 필요한 경우 언제든지 스폿 VM을 제거할 수 있습니다.</p>
+
+
+  <p>스폿 VM에서 실행하는 데 가장 적합한 워크로드는 다음을 포함하지만 반드시 제한되지는 않습니다.</p>
+
+
+  <ul>
+      <li>일괄 처리 작업입니다.</li>
+      <li>중단을 유지하거나 복구할 수 있는 워크로드.</li>
+      <li>개발 및 테스트.</li>
+      <li>스폿 VM을 사용하여 스케일 아웃할 수 있는 상태 비저장 애플리케이션으로, 기회적으로 비용을 절감할 수 있습니다.</li>
+      <li>VM이 제거되면 쉽게 다시 실행할 수 있는 수명이 짧은 작업입니다.</li>
+  </ul>
+
+
+  <p>스폿 VM은 확장 집합에서 Azure 우선 순위가 낮은 VM의 미리 보기를 대체했습니다. <a href="https://aka.ms/SpotVMsChannelAvailbility" target="_blank">적격 우선 순위가 낮은 VM</a> 은 스폿 VM으로 자동으로 전환됩니다.</p>
+
+
+  <h2>스폿 Virtual Machine 가격 책정</h2>
+
+
+  <p>우선 순위가 낮은 VM과 달리 스폿 VM의 가격은 Azure 지역의 크기 또는 SKU 용량에 따라 달라집니다. 스폿 가격 책정은 특정 Azure VM 시리즈 및 지역의 특정 크기에 대한 가용성 및 수요에 대한 인사이트를 제공할 수 있습니다. 가격은 안정화를 제공하기 위해 천천히 변경되므로 예산을 더 잘 관리할 수 있습니다. Azure Portal에서 현재 Azure VM 스폿 가격에 액세스하여 요구 사항에 가장 적합한 지역 또는 VM 크기를 쉽게 확인할 수 있습니다. 현물 가격은 종량제 요금으로 제한됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ba3b5a6c-cd1d-42bd-a587-f75ff69d6347.jpg"><img alt="VM size pane in portal showing VM sizes and spot prices in the region. " border="0" height="468" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/333076bc-4f9e-4461-9ba7-810752e19173.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="800"></a><br>
+
+  &nbsp;</p>
+
+
+  <h2>스폿 가상 머신 배포</h2>
+
+
+  <p>스폿 VM은 쉽게 배포하고 관리할 수 있습니다. 스폿 VM 배포는 일반 VM을 구성하고 배포하는 것과 비슷합니다. 예를 들어 Azure Portal에서 단순히 Azure Spot 인스턴스를 선택하여 스폿 VM을 배포할 수 있습니다. 스폿 VM의 최대 가격을 정의할 수도 있습니다. 다음과 같은 몇 가지 옵션을 사용할 수 있습니다.</p>
+
+
+  <ol>
+      <li>가격을 제한하지 않고 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal">스폿 VM을 배포</a> 하도록 선택할 수 있습니다. Azure는 특정 시간에 스폿 VM 가격을 청구하므로 가격상의 이유로 VM이 제거되지 않는다는 점을 염두에 줍니다.<br>
+  &nbsp; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/df5ffd46-1480-4599-bba2-404d310703d4.jpg"><img alt="Select capacity only eviction type." border="0" height="593" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/35912c8a-9852-469a-b05c-feedb05dd39f.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="800"></a></li>
+      <li>또는 예산 내에서 유지하기 위해 특정 가격을 제공하도록 결정할 수 있습니다. Azure는 설정한 최대 가격보다 높은 요금을 부과하지 않으며, 현물 가격이 정의된 최대 가격보다 높은 경우 VM을 제거합니다.<br>
+  &nbsp;&nbsp; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b314f5c3-8a88-46ae-9dd0-b3971d91931a.jpg"><img alt="Ability to provide maximum price to deploy Spot VM. " border="0" height="639" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8024d065-375c-447c-b8bc-1018fab5a7af.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="800"></a><br>
+
+  &nbsp;</li>
+
+  </ol>
+
+
+  <p>비용을 절감할 수 있는 몇 가지 다른 옵션이 있습니다.</p>
+
+
+  <ol>
+      <li>워크로드에 특정 VM 시리즈 및 크기가 필요하지 않은 경우 동일한 지역에서 더 저렴할 수 있는 다른 VM을 찾을 수 있습니다.</li>
+      <li>워크로드가 특정 지역에 종속되지 않고 데이터 상주 요구 사항이 없는 경우 비용을 줄이기 위해 다른 Azure 지역을 찾을 수 있습니다.</li>
+  </ol>
+
+
+  <h2>스폿 VM에 대한 할당량</h2>
+
+
+  <p>이 발표의 일환으로 Azure는 더 나은 유연성을 제공하기 위해 종량제 VM 할당량과는 별개인 스폿 VM에 대한 별도의 할당량을 롤아웃합니다. 스폿 VM 및 스폿 VMSS 인스턴스에 대한 할당량은 특정 Azure 지역의 모든 VM 크기에 대한 단일 할당량입니다. 이 방법을 사용하면 광범위한 VM 집합에 쉽게 액세스할 수 있습니다.<br>
+
+  &nbsp;&nbsp; <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3de4cea1-57fa-4e34-bed6-cd25088ada6c.jpg"><img alt="Request new quota for Spot VMs." border="0" height="437" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ed0924c6-b8aa-421b-9526-f1d92116cc9f.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="640"></a></p>
+
+
+  <h2>제거 처리</h2>
+
+
+  <p>Azure는 스폿 VM을 계속 실행하고 제거를 최소화하려고 하지만 워크로드는 Azure 스폿 VM 및 VMSS 인스턴스에 대한 런타임이 보장되지 않으므로 제거를 처리할 준비가 되어 있어야 합니다. 필요에 따라 예약된 이벤트를 구독하여 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/scheduled-events" target="_blank">30초 제거 알림을</a> 받을 수 있습니다. 다음과 같은 이유로 인해 VM을 제거할 수 있습니다.</p>
+
+
+  <ol>
+      <li>현물 가격은 VM에 대해 정의한 최대 가격을 초과했습니다. 선택한 VM의 스폿 가격이 배포 시 정의한 가격을 초과하면 Azure 스폿 VM이 제거됩니다. 가격을 변경하여 VM을 다시 배포할 수 있습니다.</li>
+      <li>Azure는 용량을 회수해야 합니다.</li>
+  </ol>
+
+
+  <p>두 시나리오 모두 동일한 지역 또는 가용성 영역에서 VM을 다시 배포할 수 있습니다.</p>
+
+
+  <h2>모범 사례</h2>
+
+
+  <p>다음은 Azure Spot VM을 가장 잘 활용하는 몇 가지 효과적인 방법입니다.</p>
+
+
+  <ul>
+      <li>장기 실행 작업의 경우 이전에 알려진 검사점에서 워크로드를 다시 시작하여 제거를 처리하고 시간을 절약할 수 있도록 검사점을 만들려고 합니다.</li>
+      <li>스케일 아웃 시나리오에서는 비용을 절감하기 위해 두 개의 VMSS를 가질 수 있습니다. VM에는 일반 VM이 있고 다른 VM에는 스폿 VM이 있습니다. 동일한 부하 분산 장치에 둘 다 배치하여 기회적으로 스케일 아웃할 수 있습니다.</li>
+      <li>VM이 제거될 때 알림을 받으려면 VM에서 제거 알림을 수신 대기합니다.</li>
+      <li>종량제 가격을 지불하려는 경우 제거 유형을 <strong>용량 제거에만</strong> 사용합니다. API에서는 Azure가 스폿 VM 가격보다 더 많은 요금을 부과하지 않을 때 최대 가격으로 <strong>-1</strong> 을 제공합니다.</li>
+      <li>제거를 처리하려면 VM을 다시 배포하는 재시도 논리를 빌드합니다. 특정 VM 시리즈 및 크기가 필요하지 않은 경우 워크로드 요구 사항과 일치하는 다른 크기를 배포해 봅니다.</li>
+      <li>VMSS를 배포하는 동안 포털 관리 탭에서 최대 스프레드를 선택하거나 API에서<strong> FD==1</strong> 을 선택하여 영역 또는 지역에서 용량을 찾습니다.</li>
+  </ul>
+
+
+  <h2>고객 성공 사례</h2>
+
+
+  <p>우리는 고객과 파트너가 제공하는 피드백에 만족하며 이해 관계자의 요구에 맞게이 제품의 기능을 확장 할 계획입니다.</p>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e3674a19-6faa-487b-98cc-2296bf9e83ba.png"><img alt="rescale_logo" border="0" height="55" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d781642d-0b76-499d-b3fa-4216767796a1.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="240"></a><em> &ldquo;rescale_logo HPC 환경에서 유연성을 원한다는 고객의 의견을 지속적으로 듣습니다. VM 형식의 유연성, 사용 가능한 용량, 심지어 선불 약정도 가능합니다. Azures&rsquo; Spot 제품은 리스케일과 결합된 유연성을 제공하여 비용 효율성과 선점 위험을 줄여주므로 매우 흥미롭습니다.&rdquo; </em> 게르하르트 에스테르후이젠, 리스케일 엔지니어링 부사장, 브라이언 테클렌부르크, 리스케일 HPC 마케팅 부사장</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;클라우드 공급자 간에 성능을 벤치마킹하며 Azure는 지속적으로 최고의 성과를 거두었습니다. 이제 Azure Spot VM을 통해 고객은 임시 방식으로 사용할 수 있는 최상의 인프라를 사용할 수 있습니다. Azure 스폿 VM은 크기 조정&rsquo; HPC 작업 오케스트레이션 및 자동화된 검사점 다시 시작과 결합되어 선점 위험을 완화하는 데 도움이 됩니다. 결과적으로 고객은 원할 때마다 마침내 최상의 클라우드 인프라를 사용할 수 있습니다.&rdquo; </em>Mulyanto Poort, Rescale의 HPC 엔지니어링 부사장</p>
+
+
+  <p style="margin-left: 40px;">&nbsp;</p>
+
+  </blockquote>
+
+
+  <blockquote>
+
+  <p style="margin-left: 40px;"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b3c036cc-eafe-49ba-8807-522364634d91.png"><img alt="InMobi_blue" border="0" height="36" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d378207c-7c5c-4357-a637-02f84214029c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="240"></a><em> &ldquo;InMobi_blue InMobi는 Azure에서 가장 큰 플랫폼 중 하나인 InMobi Exchange 실행합니다. InMobi Exchange 디지털 광고 산업의 계절적 특성을 감안할 때 변동하는 트래픽 곡선을 충족하는 경우가 많기 때문에 높은 수준의 동시성과 규모를 지원하는 비용 효율적이고 클라우드 네이티브 솔루션을 사용하는 것이 비즈니스에 매우 중요했습니다. Azure 스폿 VM 제품을&rsquo; 활용하여 애플리케이션 스택을 완전히 상태 비저장 상태로 다시 연결할 수 있었고 비용 효율적인 구현과&rsquo; 관련하여 실제 게임 체인저가 되었습니다. InMobi는 스폿 VM 제품의&rsquo; 얼리어답터 중 하나이기 때문에 Microsoft는 필수 수준의 규모와 기능을 충족하도록 제품이 발전하도록 보장하는 데 있어 훌륭한 파트너라는 것을 알게 됩니다. 현재 Weve&rsquo;는 서비스 및 데이터 처리 컴퓨팅 요구 사항의 대부분을 Azure Spot VM으로 이동했습니다. 이렇게 함으로써 컴퓨팅 요구 사항에 대해 거의 50-60%의 비용 효율성을 실현할 수 있었고, 이는&rsquo; 비즈니스를 보다 경제적으로 효율적으로 만드는 데 큰 도움이 되었습니다.&rdquo; </em> Prasanna Prasad, InMobi 엔지니어링 수석 부사장</p>
+
+  </blockquote>
+
+
+  <h2>Azure Spot Virtual Machines에 대해 자세히 알아보기</h2>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/pricing/spot" target="_blank">스폿 VM 웹 페이지</a>입니다.</li>
+      <li>스폿 VM 가격 책정: <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/" target="_blank">Windows</a> 및 <a href="https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/" target="_blank">Linux</a>.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal" target="_blank">Azure</a> Portal에서 스폿 VM을 만듭니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli" target="_blank">Azure CLI</a>에서 스폿 VM을 만듭니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/" target="_blank">Azure PowerShell</a> 스폿 VM을 만듭니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/" target="_blank">Azure Resource Manager 템플릿</a>에서 스폿 VM을 만듭니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-low-priority#use-azure-resource-manager-templates" target="_blank">Azure Resource Manager 템플릿</a>에서 스폿 VMSS를 만듭니다.</li>
+  </ul>

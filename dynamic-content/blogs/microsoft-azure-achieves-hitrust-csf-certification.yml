@@ -1,0 +1,115 @@
+### YamlMime:Yaml
+ms.openlocfilehash: db8e3c59bc54d15fcb518edba719d3dfaf1b872f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902086"
+Slug: microsoft-azure-achieves-hitrust-csf-certification
+Title: HITRUST CSF 인증을 달성한 Microsoft Azure
+Summary: 'Microsoft Azure HITRUST CSF Certified가 된 최초의 하이퍼 스케일링 클라우드 컴퓨팅 플랫폼 중 하나임을 발표하게 되어 매우 기쁘고 자랑스럽습니다.  '
+Content: >-
+  <p>were&rsquo;는 Microsoft Azure HITRUST CSF Certified가 된 최초의 하이퍼 스케일 클라우드 컴퓨팅 플랫폼 중 하나라고 발표하게 되어 매우 기쁩니다.&nbsp; HITRUST 인증은 의료 업계에서 가장 널리 인정받는 보안 인증입니다.&nbsp; HIPAA/HITECH, PCI, ISO 27001 및 MARS-E와 같은 기존 규정의 의료 관련 보안, 개인 정보 보호 및 규제 요구 사항과 업계 모범 사례를 통합합니다.&nbsp; 이 인증은 Azure 환경을 평가하기 위해 의료 기관에 맞게 조정된 단일 프레임워크를 제공합니다.&nbsp;&nbsp;</p>
+
+
+  <p><em>&ldquo;HITRUST는 중요한 건강 정보에 액세스하거나 클라우드 환경에 저장할 때 적절한 정보 보호 요구 사항을 충족할 수 있도록 업계와 협력하고 있습니다. HITRUST CSF 인증 상태를 얻는 데 필요한 조치를 취함으로써 Microsoft Azure 사람들이 정보를 안전하게&rdquo; 지키기 위해 의지할 수 있는 조직으로 구별됩니다</em>.</p>
+
+
+  <p><em>전 세계의 모든 사람과 모든 조직이 더 많은 성과를 거둘</em> 수 있도록 하려면 의료와 같은 대형 산업이 규제, 개인 정보 보호 및 보안 장애물로부터 차단되지 않도록 해야 하며, 이로 인해 IT 워크로드 및 운영을 클라우드로 이동할 수 없게 됩니다.&nbsp; HITRUST CSF 인증을 달성하는 것은 Azure가 또 다른 장애물을 제거하는 멋진 예이므로 글로벌 사회, 즉 의료 산업 및 전문가의 크고 중요한 측면이 Microsoft Azure 서비스, 효율성 및 힘을 자신있고 안전하게 활용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8e0b1f5c-b80b-4450-aa14-e7d8b870a4b3.png"><img alt="HITRUST Certification" border="0" height="437" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a31f0424-d106-49cf-abbe-a3cace7b89fe.png" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="HITRUST 인증" width="640"></a></p>
+
+
+  <p>다음은 이 HITRUST 인증에 포함된 Azure 서비스의 전체 목록입니다.</p>
+
+
+  <p><strong>ID 및 액세스 관리</strong></p>
+
+
+  <ul>
+   <li>Azure Active Directory</li>
+   <li>Rights Management</li>
+   <li>Multi-Factor Authentication</li>
+  </ul>
+
+
+  <p><strong>Compute</strong></p>
+
+
+  <ul>
+   <li>Virtual Machines</li>
+   <li>Cloud Services</li>
+   <li>Batch</li>
+  </ul>
+
+
+  <p><strong>네트워킹</strong></p>
+
+
+  <ul>
+   <li>Application Gateway</li>
+   <li>VPN Gateway</li>
+   <li>Express 경로</li>
+   <li>Virtual Network</li>
+   <li>Load Balancer</li>
+   <li>Traffic Manager</li>
+  </ul>
+
+
+  <p><strong>Web &amp; Mobile</strong></p>
+
+
+  <ul>
+   <li>Web Apps</li>
+   <li>Mobile Apps</li>
+   <li>Notification Hubs</li>
+  </ul>
+
+
+  <p><strong>분석</strong></p>
+
+
+  <ul>
+   <li>HDInsight</li>
+  </ul>
+
+
+  <p><strong>관리 &amp; 보안</strong></p>
+
+
+  <ul>
+   <li>Azure Key Vault</li>
+   <li>Scheduler</li>
+   <li>Azure 관리 포털</li>
+   <li>Azure 클래식 포털</li>
+  </ul>
+
+
+  <p><strong>미디어 &amp; CDN</strong></p>
+
+
+  <ul>
+   <li>Media Services</li>
+  </ul>
+
+
+  <p><strong>데이터 &amp; Storage</strong></p>
+
+
+  <ul>
+   <li>Redis Cache - Premium 포함</li>
+   <li>SQL Database</li>
+   <li>SQL Data Warehouse</li>
+   <li>SQL Virtual Machines</li>
+   <li>Storage- Blob, 테이블, 큐, 파일 및 디스크 - Premium 포함</li>
+  </ul>
+
+
+  <p><strong>하이브리드 통합</strong></p>
+
+
+  <ul>
+   <li>Service Bus</li>
+   <li>워크플로</li>
+  </ul>

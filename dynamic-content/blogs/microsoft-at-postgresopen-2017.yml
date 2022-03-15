@@ -1,0 +1,49 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9433e46953df1e652bad22dc9a290ba3eea72ad4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902094"
+Slug: microsoft-at-postgresopen-2017
+Title: Microsoft at PostgresOpen 2017
+Summary: 올해 초 Microsoft Build에서 Azure Database for PostgreSQL의 공개 미리 보기를 발표했습니다. 그 이후로, 우리는 PostgreSQL 커뮤니티와 깊은 참여를 하고 있으며, 자랑스럽게 생각합니다...
+Content: >-
+  <p>올해 초 <a href="https://build.microsoft.com/">Microsoft Build</a>에서 <a href="https://azure.microsoft.com/en-us/services/postgresql/">Azure Database for PostgreSQL</a>의 공개 미리 보기를 <a href="https://azure.microsoft.com/en-us/blog/microsoft-extends-azure-managed-database-services-with-introduction-of-mysql-and-postgresql/">발표</a>했습니다. 그 이후로 PostgreSQL 커뮤니티와 깊은 관계를 맺고 있으며, <a href="https://2017.postgresopen.org/">PostgresOpen 2017</a> 을 스폰서로 참여하게 되어 자랑스럽습니다.</p>
+
+
+  <p>PostgresOpen 2017에서 기조연설을 진행하는 동안 Ill&rsquo;은 Microsoft에서 고객이 있는 곳에서 고객을 만나기 위해 최선을 다하고 있으며, 고객이 선택한 기술과 도구를 통해 더 많은 성과를 거둘 수 있도록 하는 방법에 대해 자세히 설명합니다. PostgreSQL 데이터베이스의 커뮤니티 버전을 사용하여 빌드된 Azure Database for PostgreSQL은 가동 중지 시간을 최소화하면서 기본 제공 고가용성, 보안 및 즉시 크기 조정을 제공합니다. <strong> </strong>개발자는 변경 없이 기존 앱을 원활하게 마이그레이션하고 기존 도구를 계속 사용할 수 있습니다. 간단한 가격 책정 모델을 통해 개발자는 앱 개발에 집중할 수 있습니다.</p>
+
+
+  <p>몇 달 전에 미리 보기를 도입한 이후, Microsoft는 고객의 요구 사항을 이해하기 위해 고객과 긴밀히 협력해 왔으며, 일반 공급으로 전환하면서 기능 및 업데이트를 계속 추가하고 있습니다. 고객 요구 사항이 제품 개발에 반영되도록 하는 것 외에도 PostgreSQL 커뮤니티와 긴밀히 협력하고, pgsql-hackers 메일링 목록에 참여하고, 패치에 대해 커뮤니티와 협력하고 있습니다. PostgreSQL은 업계 최고의 확장성 혁신을 갖춘 훌륭한 제품이며, Microsoft는 커뮤니티와 협력하여 PostgreSQL을 고객에게 더 잘 제공할 수 있기를 바랍니다.</p>
+
+
+  <p><em>&ldquo;Azure Portal을 통해 PostgreSQL 데이터베이스를 회전하는 것은 매우 쉽습니다. 그런 다음 기존 시스템에서 데이터베이스를 내보내고 Azure Database for PostgreSQL로 가져왔습니다. 2~3시간밖에 걸리지 않았고, 문제가 발생하지&#39;.&rdquo;</em></p>
+
+
+  <p align="right">- 에릭 스피어, 최고 경영자, 높은 에드 프로필</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/postgresql/">Azure Database for PostgreSQL</a> 외에도 <a href="https://azure.microsoft.com/en-us/services/mysql/">Azure Database for MySQL</a>도 도입했습니다. PostgreSQL 및 MySQL을 사용하여 웹, 모바일, CMS(콘텐츠 관리 시스템), CRM(고객 관계 관리), 비즈니스 또는 분석 애플리케이션용 애플리케이션을 빌드 및 배포하는 개발자는 이제 Azure에서 관리되는 서비스로 제공되는 선호하는 데이터베이스 엔진을 선택할 수 있습니다. PHP, Python, Node.js 및 Wordpress, Magento, Drupal, Django 및 Ruby on Rails와 같은 애플리케이션 개발 프레임워크와 같은 가장 일반적인 오픈 소스 프로그래밍 언어와 원활하게 통합됩니다. MySQL 데이터베이스를 사용하여 웹 사이트를 빌드하거나 PostgreSQL을 사용하여 지리 공간적 웹 또는 모바일 앱을 신속하게 빌드하고 배포하려는 경우 이제 Azure에서 제공하는 관리 서비스 기능을 사용하여 신속하게 설치할 수 있습니다. 또한 앱 개발자는 친숙한 커뮤니티 도구를 계속 사용하여 MySQL 또는 PostgreSQL 데이터베이스를 관리할 수 있습니다. Azure Database for MySQL 및 PostgreSQL은 관계형 데이터베이스 플랫폼 서비스의 다음과 같은 일반적인 차별화된 이점을 모든 애플리케이션에 제공하여 애플리케이션 개발자 생산성을 향상시킵니다.</p>
+
+
+  <ul>
+      <li>구성, VM 또는 설정이 필요하지 않은 기본 제공 고가용성으로 몇 분 안에 데이터베이스 서버를 프로비전하는 기능입니다.</li>
+      <li>프로비전된 리소스 및 거버넌스를 사용하여 예측 가능한 성능</li>
+      <li>애플리케이션 가동 중지 시간 없이 실제 또는 예상되는 워크로드 변경에 대응하여 컴퓨팅 단위를 확장/축소하는 옵션입니다.</li>
+      <li>SSL 암호화를 사용하여 사용자 데이터 및 백업뿐만 아니라 이동 중인 데이터를 암호화하여 중요한 데이터를 보호하는 기본 제공 보안입니다.</li>
+      <li>최대 35일까지 복구할 수 있도록 스토리지가 있는 자동 백업.</li>
+      <li>Azure Portal, CLI(명령줄 인터페이스) 또는 REST API를 사용한 일관된 관리 환경</li>
+  </ul>
+
+
+  <h2>시작</h2>
+
+
+  <p>Azure <a href="https://docs.microsoft.com/en-us/azure/postgresql/">Database for PostgreSQL 및 Azure Database for MySQL</a>에 대한 5분 빠른 시작 및 단계별 자습서를 통해 자세히 <a href="https://docs.microsoft.com/en-us/azure/mysql/"></a>살펴봅니다. 사용할 준비가 되면 <a href="https://azure.microsoft.com/en-us/free/">Azure에서 무료 계정을</a> 만들 때 $200 무료 크레딧을 사용할 수 있습니다.</p>
+
+
+  <h2>피드백</h2>
+
+
+  <p>여러분의 피드백을 받고 싶습니다. 아래에 의견을 남겨 주시기 바랍니다. 또한 서비스를 더욱 개선할 수 있는 방법에 대한 제안이 있는 경우 User Voice(<a href="https://feedback.azure.com/forums/597976-azure-database-for-postgresql">PostgreSQL</a> 및 <a href="https://feedback.azure.com/forums/597982-azure-database-for-mysql">MySQL</a>)를 통해 직접 참여할 수 있습니다.</p>

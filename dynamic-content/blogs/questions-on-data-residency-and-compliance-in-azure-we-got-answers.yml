@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8d1d25960e2a0c459fccf68f11e9cfbfae2212a1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897242"
+Slug: questions-on-data-residency-and-compliance-in-azure-we-got-answers
+Title: Microsoft Azure 데이터 보존 및 규정 준수에 대한 질문 우리는 대답을 얻었다!
+Summary: 고객 데이터의 보안 및 제어와 고객 데이터의 상주 위치에 대한 질문은 현재 클라우드 고객의 마음에 있습니다. Microsoft는 고객의 의견을 듣고 이에 대한 응답으로 Microsoft Azure 보안, 데이터 상주, 데이터 흐름 및 규정 준수 측면에 대한 명확한 답변과 지침을 제공하는 백서를 게시했습니다.
+Content: >-
+  <p>고객 데이터의 보안 및 제어와 고객 데이터의 상주 위치에 대한 질문은 현재 클라우드 고객의 마음에 있습니다. &rsquo;이에 대한 응답으로 보안, 데이터 상주, 데이터 흐름 및 Microsoft Azure 규정 준수 측면에 대한 명확한 답변과 지침을 제공하는 백서를 게시했습니다. 이 논문은 고객이 Azure의 고객 데이터가 데이터 보호, 규정 및 주권 요구 사항을 충족하는 방식으로 처리되도록 하기 위해 설계되었습니다.</p>
+
+
+  <p>투명성과 제어는 클라우드 기술에 대한 신뢰를 확립하고 유지하는 데 필수적이며, 제한되고 규제되는 산업은 위험 관리를 위한 추가 요구 사항을 가지고 있으며 지속적인 규정 준수를 보장합니다. 이 문제를 해결하기 위해 Microsoft는 업계 최고의 보안 및 규정 준수 포트폴리오를 제공합니다.</p>
+
+
+  <p>보안은 SDL(보안 개발 수명 주기)에 따라 수행되는 개발 프로세스부터 Azure 플랫폼에 기본 제공됩니다. 또한 Azure에는 Active Directory ID 및 액세스 제어, 네트워크 및 인프라 보안 기술 및 도구, 위협 방지 및 암호화와 같은 데이터 관리 및 거버넌스를 처리하는 기술, 컨트롤 및 도구가 포함되어 전송 중 및 미사용 데이터를 보호합니다.</p>
+
+
+  <p>Microsoft는 고객 데이터가 Azure에 저장되는 데이터 및 위치의 유형을 제어할 수 있도록 고객에게 옵션을 제공합니다. 보안 및 규정 준수 프레임워크의 혁신을 통해 규제 산업의 고객은 클라우드에서 중요 업무용 워크로드를 자신 있게 실행하고 Microsofts&rsquo; 하이퍼스케일 클라우드의 모든 이점을 활용할 수 있습니다.</p>
+
+
+  <p>백서 다운로드, &ldquo;<a href="https://aka.ms/azuredataflow" target="_blank">Azure를 사용하여 규정 준수 데이터 보존 및 보안 달성</a>.&rdquo;</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/resources/achieving-compliant-data-residency-and-security-with-azure/" target="_blank"><img alt="Achieving compliant data residency and security with azure" border="0" height="590" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9ed7ed94-aed2-4ba9-8527-300d410288d7.png" style="margin: 0px auto; border-image: none; float: none; display: block; background-image: none;" title="Azure" width="453"></a>를 사용하여 규정 준수 데이터 보존 및 보안을 달성하고 Microsoft <a href="https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings" target="_blank">보안 센터</a> 사이트에서 Microsofts&lsquo; 규정 준수 제품 목록을 확인하세요.</p>

@@ -1,0 +1,101 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 53f95d3a18689310406a71b51da7a85a4dfabdf2
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898021"
+Slug: don-t-build-your-cloud-home-on-shaky-foundations
+Title: 흔들리는 기초 위에 클라우드 홈을 구축하지 마세요.
+Summary: 당신은 아마 먼저 문과 경보 시스템을 설치하지 않고 예술 엔터테인먼트 시스템의 상태로 구축하고있는 집을 가구하지 않을 것입니다. 마찬가지로, 귀중한 것을 두는 것은 바람직하지 않습니다...
+Content: >-
+  <p>당신은 아마 먼저 문과 경보 시스템을 설치하지 않고 예술 엔터테인먼트 시스템의 상태와 집 유&rsquo;어 건물을 가구하지 않을 것입니다&rsquo;. 마찬가지로 적절한&rsquo; 기본 보안 및 거버넌스 제어를 보장하지 않고 클라우드에서 비즈니스를 실행하는 데 사용되는 중요한 애플리케이션 및 데이터를 배치하는 것이 좋습니다.</p>
+
+
+  <h2>훌륭한 건물은 약한 기초 위에 지어지지 않습니다&rsquo;.</h2>
+
+
+  <p>많은 조직에서 클라우드 홈의 모양을 원하는 방식에 어려움을 겪는 경우가 많으며, 적절한 계획이 무시되는 경우가 많습니다. PaaS, IaaS 또는 SaaS를 채택하든 관계없이 적절하게 계획된 거버넌스 및 보안 기반은 보호되고 제어되는 환경을 보장하는 데 핵심적인 요소입니다.</p>
+
+
+  <h2>Azure에서 거버넌스 및 보안 기반 구축</h2>
+
+
+  <p>중요 업무용 워크로드 또는 데이터를 로드하기 전에 기본 거버넌스 모델이 채택 속도를 늦추지 않고 조직의&rsquo; 운영, 보안 및 규정 준수 요구 사항을 고려하도록 합니다. 클라우드 리소스에서 제공하는 민첩성을 활용하면서 안심하고 비즈니스 클라우드 공간을 확장합니다.</p>
+
+
+  <p>Azure에서 구조화된 거버넌스 모델의 기본 구성 요소를 배치할 때 고려해야 할 <em><strong>7가지 주요 디자인 고려 사항이</strong></em> 있습니다.</p>
+
+
+  <p><strong>1.</strong>&nbsp;<strong>계정/기업계약:</strong> 부서, 계정 및 구독으로 세분화할 수 있는 거버넌스의 초석입니다.</p>
+
+
+  <ul>
+   <li><strong>모범 사례:</strong> O365 사서함 또는 계정이 O365에 동기화된 온-프레미스 모니터링 사서함을 사용하여 ID 및 액세스 관리 정책의 일부로 할당 및 해지를 자동화합니다.</li>
+  </ul>
+
+
+  <p><strong>2.</strong><strong>구독:</strong> 이는 모든 리소스를 포함하고 코어 및 리소스 수를 포함하여 몇 가지 제한을 정의하는 Azure의 관리 보안 경계입니다.</p>
+
+
+  <ul>
+   <li><strong>모범 사례: </strong> 하나 이상의 구독을 한 번에 하나의 Azure AD에만 연결할 수 있다는 점을 염두에 두고 조직 계층 구조를 디자인합니다. 회사 운영 방식을 기반으로 계획하여 요구 사항에 따른 청구, 리소스 액세스 및 복잡성에 미치는 영향을 이해합니다.</li>
+   <li><em><strong>팁:</strong></em> 구독 모델을 단순하지만 필요에 따라 확장할 수 있을 만큼 유연하게 유지합니다.</li>
+  </ul>
+
+
+  <p><strong>3.</strong>&nbsp;<strong>명명 표준:</strong> 응집력은 복잡성을 최소화하면서 리소스를 찾고, 관리하고, 보호하는 데 핵심적인 요소입니다. 기존 표준을 활용하여 리소스에 유사한 명명 체계를 사용합니다.</p>
+
+
+  <ul>
+   <li><strong>모범 사례:</strong> <a href="https://docs.microsoft.com/en-us/azure/guidance/guidance-naming-conventions" target="_blank">패턴 및 사례 지침을</a> 검토하고 채택하여 의미 있는 명명 표준을 결정하고 Azure Resource Manager 정책을 사용하여 적용하는 것이 좋습니다.</li>
+  </ul>
+
+
+  <p><strong>4.</strong><strong> 리소스 정책 및 리소스 잠금:</strong> 조직 중단을 초래할 수 있는 비용 초과, 데이터 보존 또는 실수로 인한 중단을 완화합니다. 예를 들어 워크로드에 캐나다 기반 Azure 위치에서 데이터를 만들어야 하는 규정이 있는 경우 특정 유형의 데이터에 대해 요구되는 규정 준수 정책을 준수하도록 Azure 캐나다 지역 외부에서 컴퓨팅 리소스를 만들지 못하도록 하는 정책을 만듭니다. 개발 테스트 리소스 그룹에 대한 예산 준수를 보장하기 위해 특정 유형의 VM만 만들 수 있는지 확인합니다. 레이블 지정의 경우 생성 시 개발/테스트 리소스에서 프로덕션 환경 리소스에 태그가 지정되도록 태그 지정을 적용하는 정책을 만듭니다.</p>
+
+
+  <ul>
+   <li><strong><em>팁:</em></strong> 리소스 잠금을 사용하여 특정 키 리소스를 쉽게 삭제할 수&rsquo; 없도록 합니다.</li>
+  </ul>
+
+
+  <p><strong>5.</strong><strong>최소 권한 액세스 모델을 구현합니다</strong>. 사용 권한은 구독에서 리소스 그룹 및 스토리지, 네트워크 및 VM을 포함한 리소스에 상속됩니다.</p>
+
+
+  <ul>
+   <li><strong>모범 사례:</strong> 필요 및 작업 및 리소스 그룹 수준에 따라 액세스를 위임합니다. 예를 들어 클라우드 운영자는 구독 수준이 아닌 관리하는 리소스 그룹에 대한 Virtual Machine 기여자 역할에 추가할 수 있습니다. 추가 보안을 위해 권한 있는 계정으로 리소스에 액세스하기 위해 <a href="https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud" target="_blank">Multi-Factor Authentication</a> 을 적용합니다.</li>
+  </ul>
+
+
+  <p><strong>6.</strong><strong>Azure Security Center 및 Azure Advisor 구현:</strong> 다음을 수행할 수 있는 <a href="https://azure.microsoft.com/en-ca/services/advisor/" target="_blank">Azure Advisor</a> 및 <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">Azure Security Center</a>를 사용하도록 설정하여 현재 보안 상태를 이해합니다.</p>
+
+
+  <ul>
+   <li>보안 표준을 준수하도록 정책을 적용합니다.</li>
+   <li>VM, 네트워크 및 스토리지에서 취약성을 악용하기 전에 취약성을 찾아서 수정합니다.</li>
+   <li>고가용성, 보안, 성능 및 비용을 위해 Azure 리소스를 최적화합니다.</li>
+   <li>개인 설정된 권장 사항을 쉽게 구현합니다.</li>
+  </ul>
+
+
+  <p><strong>7. 구독 비용 제어:</strong>&nbsp; 다음을 수행할 수 있도록 구독 전체에서 <a href="https://azure.microsoft.com/en-us/services/cost-management/">Azure 비용 관리를</a> 수행하여 Azure 구독 비용을 이해하고 제어합니다.</p>
+
+
+  <ul style="font-weight: 400; font-style: normal; font-size: 13.008px; font-family: Tahoma, &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif;">
+   <li style="font-size: 13.008px;">예기치 않은 요금 방지</li>
+   <li style="font-size: 13.008px;">비용 할당 및 차지백 제어</li>
+   <li style="font-size: 13.008px;">Azure 소비 비용 최적화</li>
+  </ul>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>Azure 거버넌스에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-subscription-governance" target="_blank">Azure 엔터프라이즈 스캐폴드를 참조하세요</a>. 확장 가능하고 미래지능적인 Azure 거버넌스 프레임워크를 구현하는 데 도움이 되는 방법을 알아보려면 <a href="https://www.microsoft.com/en-ca/sites/microsoft-services/contact-us.aspx" target="_blank">Microsoft Services</a> 에 문의하세요.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7a79a934-62d7-421f-bd29-c8f7837ce90a.png"><img alt="Azure Goverance Foundations" border="0" height="961" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c5974213-bcba-4920-ae57-2049f626432b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Goverance Foundations" width="1519"></a></p>

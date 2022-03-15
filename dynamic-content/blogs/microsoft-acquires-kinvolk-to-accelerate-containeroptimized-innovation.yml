@@ -1,0 +1,36 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0aa4803704787aaad9c7a2d5bfbafc248fd98f64
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897942"
+Slug: microsoft-acquires-kinvolk-to-accelerate-containeroptimized-innovation
+Title: Microsoft는 컨테이너 최적화 혁신을 가속화하기 위해 Kinvolk를 인수합니다.
+Summary: 클라우드 또는 온-프레미스에서 Kubernetes를 실행하는 기능은 컨테이너 최적화 워크로드 및 운영 체제, 린 애플리케이션 현대화, 더 쉬운 작업 및 플랫폼 복원력의 이점에 대한 고객 집중을 증가시켜 빠르게 혁신하려는 Azure 고객에게 높은 우선 순위였습니다. 이러한 급속한 발전을 지원하기 위해 Microsoft는 Kinvolk를 인수하는 계약에 서명했습니다.
+Content: >-
+  <p>클라우드 또는 온-프레미스에서 Kubernetes를 실행하는 기능은 컨테이너 최적화 워크로드 및 운영 체제, 린 애플리케이션 현대화, 더 쉬운 작업 및 플랫폼 복원력의 이점에 대한 고객 집중을 증가시켜 빠르게 혁신하려는 Azure 고객에게 높은 우선 순위였습니다.</p>
+
+
+  <p>이러한 급속한 발전을&rsquo; 지원하기 위해 Microsoft가&nbsp; KinvolkGmbH&nbsp;를 해시했다고 발표했습니다.</p>
+
+
+  <p>Kinvolks&rsquo; 창립 사명 선언문은 엔터프라이즈급 개방형 클라우드 네이티브 스택&rdquo;&mdash;을 구축하고 홍보하는 것이며&ldquo;, 이는 증가하는 고객 요구 사항과 오픈 소스 및 Kubernetes에 대한 지속적인 투자에 완벽하게 부합한다고 생각합니다.</p>
+
+
+  <p>Kinvolk는 Kubernetes, eBPF, 커뮤니티 빌드 및 컨테이너 최적화 Linux를 비롯한 오픈 소스 클라우드 네이티브 분산 컴퓨팅의 풍부하고 혁신적인 역사를 가지고 있으며, rkt 컨테이너 런타임에서&nbsp;CoreOS(회사)&nbsp;와의&nbsp; 중요한 초기 작업을 포함합니다. Kinvolk는 궁극적으로 CoreOS Container Linux의 인기 있는 대안인 플랫카 컨테이너 Linux와 Lokomotive 및 Inspektor 가젯 프로젝트를 만들었습니다.</p>
+
+
+  <p>Microsoft는 Kinvolk 팀의 전문 지식을 Azure로 가져와 <a href="https://azure.microsoft.com/en-us/services/kubernetes-service/" target="_blank">AKS(Azure Kubernetes Service)</a>의 엔지니어링 개발, <a href="https://azure.microsoft.com/en-us/services/azure-arc/" target="_blank">Azure Arc</a> 및 Azure 하이브리드 컨테이너 플랫폼 기능을 확장하고&rsquo; Kubernetes 및 컨테이너 공간에서 Microsofts&rsquo; 업스트림 오픈 소스 기여도를 높이는 향후 프로젝트의 핵심 기여자가 될 것입니다. 자세한 기술 세부 정보는 곧 계속 지켜봐 주시기 바랍니다.</p>
+
+
+  <h2>오픈 소스 커뮤니티를 사용하여 빌드</h2>
+
+
+  <p>또한 Microsoft는 Kinvolk 팀에서&rsquo; 오픈 소스 커뮤니티 프로젝트를 시작, 빌드 및 육성하는 데 있어 뛰어난 실적을 존중하고 배우고자 하며, Microsoft는 Kinvolks&rsquo; 오픈 소스 문화를 유지 관리하고 구축하기 위해 최선을 다하고 있습니다. Kinvolk 팀은 기존 오픈 소스 프로젝트에서 활발하게 활동할 것이며 Azure 엔지니어링 팀과 더 큰 오픈 소스 컨테이너 커뮤니티 간의 추가 협업을 추진하는 데 필수적입니다.</p>
+
+
+  <p>Flatcar Container Linux에는 Azure의 사용자와 다른 클라우드 및 온-프레미스의 사용자로 구성된 상당한 커뮤니티가 있습니다. 우리는 CoreOS 커뮤니티가 지난 몇 년 동안&mdash; 구불구불한 여정을 해왔다는 것을 알고 있으며, 플랫카 커뮤니티에 Microsoft와 Kinvolk 팀이 플랫카 컨테이너 Linux의 진화에 대해 더 큰 플랫카 커뮤니티와 계속 협력할 것을 보장하고자 합니다. Microsoft는 Flatcar Container Linux 커뮤니티 개발에 전념하고 있으며 플랫카 커뮤니티와 협력하여 함께 성장 경로를 만드는 데 투자할 것입니다. Well&rsquo;은&nbsp; 앞으로 몇 주 내에 커뮤니티와 첫 만남을 가지며 대화에 참석하고 참여하려는 모든 사람을 초대합니다.</p>
+
+
+  <p>Kinvolk&rsquo; 팀과 해당 기술을 Microsoft에 도입하고 Azure, 고객 및 오픈 소스 커뮤니티에 제공하는 기여를 기대하게 되어 기쁩니다.</p>

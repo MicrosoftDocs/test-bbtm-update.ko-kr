@@ -1,0 +1,34 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 41740e77b0a7e8d6f0ae39fab95ee5ed18eb421f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897303"
+Slug: microsoft-receives-2020-sap-pinnacle-award-public-and-private-cloud-provider-partner-of-the-year
+Title: 'Microsoft, 2020 SAP® 피나클 어워드: 올해의 퍼블릭 및 프라이빗 클라우드 공급자 파트너 수상'
+Summary: SAP는 최근 퍼블릭 및 프라이빗 클라우드 공급자의 2020 SAP® 피나클 어워드 부문에서 올해의 파트너로 선정되었습니다.
+Content: >-
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/67a92774-dd20-4e73-9cc2-fe739dcbae4d.png"><img align="right" alt="SAP" border="0" height="197" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e39f1cec-f251-4211-9158-9fbaa3452be2.png" style="margin: 0px 0px 0px 10px; border: 0px currentcolor; border-image: none; float: right; display: inline; background-image: none;" title="SAPIm" width="191"></a>&rsquo;은 SAP가 최근 퍼블릭 및 프라이빗 클라우드 공급자의 <a href="https://www.sap.com/partner/find/award-winners.html" target="_blank">2020 SAP&reg; 피나클 어워드</a> 부문에서 올해의 파트너로 선정된 것을 공유하게 되어 기쁘게 생각합니다. SAP는 SAP와의 파트너십을 개발하고 성장시키고 고객이 더 잘 운영할 수 있도록 돕는 데 탁월한 최고 파트너에게 매년 이러한 상을 수여합니다. SAP 분야의 권장 사항, 고객 피드백 및 성과 지표에 따라 여러 범주의 수상자 및 최종 후보가 선택되었습니다.</p>
+
+
+  <p>Microsoft와 SAP는 기업급 제품, 서비스 및 가장 중요한 비즈니스 프로세스를 실행하는 데 의존하는 지원을 통해 <a href="https://azure.microsoft.com/en-us/solutions/sap/customers/" target="_blank">상호 고객에게</a> 서비스를 제공하기 위한 오랜 파트너십 역사를 가지고 있습니다. <a href="https://customers.microsoft.com/en-us/story/cona-services-partner-professional-services-azure" target="_blank">CONA Services</a>와 같은 고객은 Azure에서 28TB SAP HANA&reg; 시스템을 실행하여 하루에 160,000개 이상의 판매 주문을 처리할 수 있는 민첩성과 성능을 향상했습니다. <a href="https://customers.microsoft.com/en-us/story/daimler-manufacturing-azure" target="_blank">다임러 AG</a> 는 SAP S/4HANA&reg; 및 Azure를 통해 30분 만에 주문형 리소스를 가동하여 운영 비용을 50% 절감하고 민첩성을 향상시켜 400,000개의 글로벌 공급업체에 권한을 부여했습니다. <a href="https://customers.microsoft.com/en-us/story/carlsberg-group-adds-security-lowers-costs-with-azure-migration-including-sap" target="_blank">Carlsberg는</a> 인프라를 현대화하고 6개월 이내에 모든 데이터 1,600TB를 Azure로 마이그레이션하여 SAP 프로덕션 환경을 최적화했습니다.</p>
+
+
+  <p>2019년 10월, Microsoft와 SAP는 고유한 시장 진출 파트너십을 체결한 <a href="https://news.microsoft.com/2019/10/20/sap-partners-with-microsoft-for-first-in-market-cloud-migration-offerings/" target="_blank">포용 이니셔티브를</a> 발표함으로써 이러한 관계를 더욱 심화시켰습니다. 이 이니셔티브의 일환으로 SAP, Microsoft 및 공동 파트너 에코시스템은 고객에게 SAP ERP를 SAP S/4HANA&reg; 로 클라우드로 마이그레이션할 수 있는 잘 정의된 경로를 제공하기 위해 협력해 왔으며, 여기서 애플리케이션의 기능을 활용하여 혁신을 진정으로 추진할 수 있습니다. 특히, 우리 팀은 다음 작업을 진행하고 있습니다.</p>
+
+
+  <ul>
+      <li><strong>SAP ERP 온-프레미스 버전에서 SAP S/4HANA&reg;로 간소화된 마이그레이션</strong> 통합 제품 및 산업 솔루션을 사용하는 고객을 위한 것입니다. 업계 시장 번들은 단일 참조 아키텍처와 구현을 간소화하기 위한 경로를 통해 집중된 산업의 고객을 위한 클라우드에 대한 로드맵을 만듭니다.</li>
+      <li><strong>간소화된 해결을 위한 공동 작업 지원 모델</strong>입니다. 고객 피드백에 따라 Azure 및 SAP Cloud Platform에 대한 결합된 지원 모델은 마이그레이션을 용이하게 하고 통신을 개선하는 데 도움이 됩니다.</li>
+      <li><strong>고객의 요구를 지원하기 위해 공동으로 개발된 시장 경험</strong>. SAP와 공동으로 설계된 Microsoft 및 시스템 통합업체 파트너는 고객에게 권장되는 솔루션 및 참조 아키텍처를 사용하여 디지털 엔터프라이즈에 로드맵을 제공합니다. Microsoft, SAP 및 시스템 통합업체의 제품, 서비스 및 사례에 대한 업계별 조화된 접근 방식을 제공합니다.</li>
+  </ul>
+
+
+  <p>지난 몇 달 동안 저는 SAP 마케팅에서 동료들과 더 긴밀하게 협력하여 고객을 위한 포용 이니셔티브의 약속을 실현할 수 있는 특권을 가졌습니다. 이 약속은 인텔리전트 엔터프라이즈로의 고객&rsquo; 전환을 가속화하기 위한 가치를 제공하는 것입니다. 그러나 나는 혼자가 아니다! 두 조직의 영업, 마케팅, 엔지니어링 및 지원 팀은 고객이 Azure에서 중요 업무용 SAP 솔루션을 더 쉽고 명확하게 빌드하고 실행할 수 있도록 팀을 구성했습니다. 글로벌 혼란과 불확실성의 현재 시대에 두 회사는 고객이 복잡성을 줄이고, 직원에게 권한을 부여하고, 혁신을 주도하고, 비즈니스를 보다 효율적으로 운영할 수 있도록 돕는 더 큰 책임을 느낀다고 생각합니다.</p>
+
+
+  <p>SAP와 Microsoft는 25년 이상 파트너로 활동해 왔습니다. 실제로 Microsoft는 SAP S/4HANA를 포함하여 지난 20년 이상 자체 재무, HR 및 공급망을 위해 SAP를 실행한 유일한 클라우드 공급자&rsquo;입니다&reg;. Microsoft IT 팀은 2020년 4월 22일 <a href="https://info.microsoft.com/ww-landing-azure-webinar-series-it-lessons-from-migrating-sap-workloads-to-azure.html" target="_blank">예정된 가상 세션에서</a> 클라우드에서 SAP 비즈니스 애플리케이션을 마이그레이션하고 실행하는 경험을 공유합니다. 마찬가지로 SAP는 SAP S/4HANA&reg;를 기반으로 하는 환경을 포함하여 점점 더 많은 내부 시스템 환경을 실행하도록 Azure를 선택했습니다. 고객을 위한 세계적 수준의 경험을 제공하기 위해 함께 일하겠다는 우리의 약속은 수년에 걸쳐 더욱 강해졌습니다. 저는 이 파트너십이 고객이 클라우드에서 얻는 가치를 가속화하고 성장, 혁신 및 비즈니스 혁신을 위한 새로운 기회를 열기 위해 어떻게 보다 통합된 접근 방식을 취하고 있는지 매일 진정으로 믿고 봅니다.</p>
+
+
+  <p><a href="https://www.azure.com/sap" target="_blank">Azure의 SAP 솔루션에</a> 대해 자세히 알아봅니다.</p>

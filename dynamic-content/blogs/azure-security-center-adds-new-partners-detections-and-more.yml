@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 208ce2c04419e34ddbc7fc65551c564cbb02ef13
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897775"
+Slug: azure-security-center-adds-new-partners-detections-and-more
+Title: Azure Security Center는 새 파트너, 검색 등을 추가합니다.
+Summary: 더 많은 파트너, 검색 및 보안 관리 기능을 포함하여 Azure Security Center를 몇 가지 개선했습니다.
+Content: >-
+  <p>Azure Security Center의 공개 미리 보기를 시작한 이래로 새로운 기능을 구축하고 추가 파트너 솔루션을 통합하기 위해 열심히 노력해 왔습니다. 오늘, 브렛 Arsenaults&rsquo; 진행 <a href="https://blogs.microsoft.com/?p=66781">보고서에서</a>, 우리는 그 작업의 결과 중 일부를 발표했다. Im&rsquo;은 여기에 추가 세부 정보를 공유하게되어 기쁘게 생각합니다.</p>
+
+
+  <h2>새로운 통합 파트너 솔루션</h2>
+
+
+  <p>Azure Security Center를 사용하면 이미 신뢰할 수 있는 WAF(웹 애플리케이션 방화벽) 및 맬웨어 방지 솔루션을 클라우드로 쉽게 가져올 수 있습니다. 앞으로 몇 주 안에 새로운 솔루션 범주인 차세대 방화벽을 추가할 예정입니다. 이렇게 하면 Azure에 기본 제공되는 네트워크 보안 그룹을 넘어 네트워크 보호가 확장됩니다. Security Center는 차세대 방화벽이 권장되는 배포를 검색하고, 몇 번의 클릭만으로 Check Point 및 Cisco 및 Fortinet 직후를 포함한 주요 공급업체에서 가상 어플라이언스를 프로비전할 수 있습니다.</p>
+
+
+  <p>또한 여러 웹 애플리케이션을 단일 WAF 어플라이언스에 연결하고 클래식 Virtual Machines에서 실행되는 애플리케이션에 WAF를 프로비전하는 기능과 함께 Imperva SecureSphere 및 Imperva Incapsula 솔루션을 포함하여 Security Center에서 WAF를 배포할 때 더 많은 옵션이 곧 제공됩니다. 이는 Barracuda 웹 애플리케이션 방화벽 및 F5 BIG-IP 솔루션뿐만 아니라 추세 Micro의 엔드포인트 보호를 배포하는 데 도움이 되는 기존 기능을 기반으로 합니다. 이러한 모든 파트너 솔루션의 경고는 Security Center에 통합되므로 Azure 리소스에 영향을 미치는 보안 문제를 한 곳에서 보고 대응할 수 있습니다.</p>
+
+
+  <h2>고급 위협 감지 기능</h2>
+
+
+  <p>Azure Security Center에서는 Microsofts&rsquo; 고유의 기능을 활용하여 수조 개의 신호에서 보안 인텔리전스를 수집하여 위협을 더 빨리 감지할 수 있습니다. 예를 들어 Security Center에서 검색 알고리즘을 업데이트하고 확장하여 크래시 덤프 분석을 통해 손상된 컴퓨터를 검색했습니다. 고객이 전 세계 10억 대 이상의 PC에서 Microsoft로 전송한 크래시 덤프를 수년간 검사한 후 이러한 이벤트를 분석하여 충돌이 실패한 악용 시도 또는 부서지기 쉬운 맬웨어의 결과인지 감지할 수 있습니다. Azure Security Center는 Azure 가상 머신에서 크래시 이벤트를 자동으로 수집하고, 데이터를 분석하고, VM이 손상될 가능성이 있는 경우 경고합니다.</p>
+
+
+  <p>추가 네트워크 및 동작 분석도 사용할 수 있습니다. 이제 Linux 가상 머신에 대한 SSH 무차별 암호 대입 공격이 검색됩니다. Windows VM에 대한 기존 RDP 무차별 암호 대입 탐지와 마찬가지로 Azure Security Center는 <a href="https://azure.microsoft.com/en-us/blog/machine-learning-in-azure-security-center/">Machine Learning</a> 사용하여 일반적인 네트워크 트래픽 패턴을 이해하고 합법적인 원격 연결 시도와 공격자가 실행하는 작업을 보다 효과적으로 구분합니다. 비정상적인 액세스 시도가 식별되면 보안 경고가 생성됩니다. 또한 로컬 보안 이벤트 로그의 수집 및 분석에 따라 가상 머신에서 의심스러운 프로세스가 검색될 때 새 경고가 표시됩니다.</p>
+
+
+  <h2>중앙 집중식 보안 관리</h2>
+
+
+  <p>다양한 보안 요구 사항을 사용하여 Azure에서 다양한 워크로드를 실행할 수 있습니다. 예를 들어 중요한 데이터를 포함하고 암호화와 같은 추가 보안 제어가 필요한 애플리케이션이 있을 수 있습니다. 다음 주부터 구독 수준에서 보안 정책을 구성하는 것 외에도 리소스 그룹에 &ndash; 대한 보안 정책을 구성하여 특정 워크로드의 보안 요구 사항에 따라 정책을 조정할 수 있습니다. Azure Security Center는 설정한 정책에 따라 리소스를 지속적으로 모니터링하고 구성 드리프트 또는 적절한 컨트롤이 없는 경우 경고합니다.</p>
+
+
+  <p>Azure Security Center의 인사이트를 통해 더 많은 작업을 수행할 수 있도록 모바일 디바이스를 포함하여 어디서나 권장 사항 및 보안 경고를 시각화, 분석 및 필터링할 수 있는 <a href="https://aka.ms/azure-security-center-power-bi">Power BI 대시보드</a>를 출시했습니다. Power BI 대시보드를 사용하여 추세를 표시하고 패턴을 공격합니다. 리소스 또는 원본 IP 주소에서 보안 경고 및 리소스 또는 시대에서 알려지지 않은 보안 위험을 봅니다. Power BI 대시보드를 제공하는 <a href="https://powerbi.microsoft.com/en-us/blog/monitor-azure-audit-logs-with-power-bi/">Azure 감사 로그</a> 및 <a href="https://powerbi.microsoft.com/en-us/blog/monitor-your-azure-sql-database-auditing-activity-with-power-bi/">Azure SQL Database 감사</a>와 같은 흥미로운 방법으로 Security Center 권장 사항 및 보안 경고를 매시업하거나 클라우드 리소스의 보안 상태를 쉽게 보고할 수 있도록 이 데이터를 Excel 내보낼 수 있습니다.</p>
+
+
+  <p><img alt="PowerBI-ASC-Dashboard" border="0" height="371" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6c4f4d60-d30c-42d8-b415-4e958f489392.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-image: none" title="PowerBI-ASC-Dashboard" width="610"></p>
+
+
+  <p>Security Center에 새로운 보안 및 취약성 관리 기능을 추가하기 위해 혁신을 계속하는 동안 사용자의 입력은 매우 중요합니다. <a href="https://feedback.azure.com/forums/347535-azure-security-center">피드백 포럼</a> 또는 전자 메일<a href="mailto:asc-feedback@microsoft.com">asc-feedback@microsoft.com</a>에서 아이디어와 제안을 공유하세요.</p>
+
+
+  <p>Azure Security Center를 익숙하지 않고 빠르게 속도를 향상하려면 짧지만 유익한 소개를 위해 최신 <a href="https://youtu.be/O5ImRmQcfgI">Microsoft Mechanics 쇼를 </a>놓치지&#39;.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/O5ImRmQcfgI" width="560"></iframe></p>
+
+
+  <p>더 많은 시간이 있는 경우 <a href="https://azure.microsoft.com/en-us/documentation/services/security-center/" target="_blank">설명서</a> 문서 및 비디오를 확인하세요. 더 좋은 방법은 Azure <a href="https://portal.azure.com">Portal </a>에 로그인하고 Security Center로 이동하기만 하면 됩니다.</p>

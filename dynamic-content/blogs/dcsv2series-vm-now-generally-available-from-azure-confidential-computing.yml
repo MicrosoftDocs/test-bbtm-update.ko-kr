@@ -1,0 +1,94 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5a3785871889640854f3b752436980d7bb95f901
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902174"
+Slug: dcsv2series-vm-now-generally-available-from-azure-confidential-computing
+Title: 이제 Azure 기밀 컴퓨팅에서 DCsv2 시리즈 VM을 일반 공급
+Summary: DCsv2 시리즈 VM(가상 머신)의 일반 공급으로 Azure에서 새로운 수준의 데이터 보호가 시작됩니다.
+Content: >-
+  <p>보안 및 개인 정보 보호는 결제 거래부터 재무 기록, 개인 건강 데이터 등에 이르기까지 중요한 정보를 클라우드에 저장하고 처리할 때 매우 중요합니다. DCsv2 시리즈 VM(가상 머신)의 일반 공급으로 Azure에서 새로운 수준의 데이터 보호가 시작됩니다.</p>
+
+
+  <p>더 많은 워크로드가 클라우드로 이동하고 더 많은 고객이 Microsoft를 신뢰하게 되면서 Azure 기밀 컴퓨팅 팀은 계속해서 혁신을 통해 이러한 신뢰를 유지하고 구축하는 제품을 제공합니다. 세계적 수준의 보안 연구원을 시작으로 업계 파트너와 긴밀히 협력하여 <a href="https://aka.ms/AzureCC" target="_blank">Azure 기밀 컴퓨팅</a>과 함께 데이터를 사용하는 동안&rsquo; 데이터를 보호하는 새로운 방법을 개발하고 있습니다. DCsv2 시리즈 VM은 처리되는 동안&rsquo;에도 데이터의 기밀성과 무결성을 보호할 수 있습니다.</p>
+
+
+  <p style="text-align: center;"><iframe allow="autoplay; encryptedmedia" allowfullscreen="" frameborder="0" height="315" src="https://www.microsoft.com/en-us/videoplayer/embed/RE4u58G" width="560"></iframe></p>
+
+
+  <h2>기밀 컴퓨팅이란?</h2>
+
+
+  <p>미사용 데이터와 전송 중인 데이터를 암호화하는 방법이 있지만 기밀 컴퓨팅은 사용 중인 데이터의 기밀성과 무결성을 보호합니다. Azure는 하드웨어 기반의 신뢰할 수 있는 실행 환경(TEE)을 사용하는 기밀 컴퓨팅을 위한 가상화 인프라를 제공하는 최초의 퍼블릭 클라우드입니다. 서버에 물리적으로 액세스할 수 있는 클라우드 관리자 및 데이터 센터 운영자도 TEE로 보호된 데이터에 액세스할 수 없습니다.</p>
+
+
+  <p>클라우드의 확장성과 사용 중인 데이터를 암호화하는 기능을 결합하여, 서로 다른 조직이 서로&rsquo; 데이터에 액세스할 수 없도록 계산 집약적인 분석을 위해 데이터 세트를 결합하는 기밀 다자간 계산과 같은 새로운 시나리오가 Azure에서 가능합니다. 예를 들어 거래 데이터를 결합하여 사기 및 자금 세탁을 탐지하는 은행, 분석을 <a href="https://youtu.be/rJpFHADlvQA?t=2592" target="_blank">위해 환자 기록을 결합하여</a> 질병 진단 및 처방전 할당을 개선하는 병원이 있습니다.</p>
+
+
+  <h2>Intel 하드웨어에서 제공하는 데이터 보호</h2>
+
+
+  <p>DCsv2 기밀 컴퓨팅 가상 머신은 <a href="https://aka.ms/IntelBlog" target="_blank">Intel SGX(Intel Software Guard Extensions)</a>를 구현하는 서버에서 실행됩니다. Intel SGX 하드웨어는 데이터를 보호하고 CPU가 처리하는 동안 암호화된 채로 유지하므로 운영 체제와 하이퍼바이저에서도 데이터에 액세스할 수 없으며 서버에 물리적으로 액세스할 수 있는 사람은 없습니다.</p>
+
+
+  <p>Microsoft와 Intel은 지속적인 파트너 관계를 통해 동급 최고의 클라우드 데이터 보호를 제공하기 위해 최선을 다하고 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;고객은 사용 중인 데이터를 암호화하여 공격 표면을 줄이고 클라우드에서 중요한 데이터를 보호하는 기능을 요구하고 있습니다. Microsoft와의 협업을 통해 엔터프라이즈급 기밀 컴퓨팅 솔루션을 시장에 출시할 수 있으며, 고객은 Intel&reg; SGX 기술을 사용하여 클라우드 및 다자간 컴퓨팅 패러다임의 이점을 더 많이 활용할 수 있습니다.&rdquo; &mdash; Anil Rao, VP Data Center 보안 및 시스템 아키텍처, Intel</em></p>
+
+
+  <h2>Azure Marketplace의 파트너</h2>
+
+
+  <p>Microsoft는 플랫폼 파트너와 직접 협력하여 Azure 기밀 컴퓨팅 인프라를 기반으로 실행되는 원활한 솔루션, 개발 및 배포 환경을 제공합니다. 소프트웨어 제품은 다음을 포함하여 Azure Marketplace를 통해 검색할 수 있습니다.</p>
+
+
+  <ul>
+      <li><a href="https://aka.ms/fortanixmarketplace01" target="_blank">Fortanix</a>&mdash; Azure 기밀 컴퓨팅을 기반으로 하는 키 관리, HSM, 토큰화 및 비밀 관리를 비롯한 클라우드 네이티브 데이터 보안 솔루션을 제공합니다.</li>
+      <li><a href="https://aka.ms/anjunamarketplace01" target="_blank">안주나 주</a>&mdash; 애플리케이션 또는 작업을 변경하지 않고 엔드투엔드 CPU 하드웨어 수준 암호화를 사용하여 보안 Azure 인스턴스를 제공합니다.</li>
+      <li><a href="https://aka.ms/anqlavemarketplace01" target="_blank">Anqlave</a>&mdash; 싱가포르의 소중한 파트너는 엔터프라이즈 준비 기밀 컴퓨팅 솔루션을 제공합니다.</li>
+  </ul>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Anqlaves&rsquo; 독점 기관 수준의 최신 키 관리 및 데이터 암호화 솔루션은 오늘날 우리가 직면한 가장 중요한 보안 문제를 해결합니다. ADV(Anqlave Data Vault) 비밀 관리를 사용하면 사용자가 비밀을 안전하게 만들고, 저장하고, 전송하고, 사용할 수 있습니다. Azure 기밀 컴퓨팅을 활용하여 엔터프라이즈 고객이 이 기술에 더 쉽게 액세스할 수 있도록 하고 규모를 쉽게 지원할 수 있습니다. 클라우드에서 이식 가능한 보안 Enclave를 제공하는 것은 기업에서 다른 클라우드 인프라에 관계없이 Azure 기밀 컴퓨팅에서 ADV를 호스트하는 것을 선호하는 주요 이유 중 하나입니다.&rdquo; &mdash;아사프 코헨, 안클라베 CEO</em></p>
+
+
+  <h2>고객이 Azure 기밀 컴퓨팅에 성공하는 방법</h2>
+
+
+  <p>고객은 이미 프로덕션 워크로드에 Azure 기밀 컴퓨팅을 사용하고 있습니다. 한 고객은 <a href="https://www.signal.org/" target="_blank">Signal</a>입니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Signal은 메시징 및 통화와 같은 엔드 투 엔드 암호화 통신을 위한 오픈 소스 기술을 개발합니다. 매일 수백만 명의 보안 및 개인 정보 보호 기대치를 충족하기 위해 Azure 기밀 컴퓨팅을 활용하여 서비스에 확장 가능하고 안전한 환경을 제공합니다. 신호는 사용자를 최우선으로 하며, Azure는 기밀 컴퓨팅을 통해 데이터 보호의 최전선에 서도록 도와줍니다.&rdquo; &mdash;Jim O&#39;Leary, Engineering, Signal 부사장</em></p>
+
+
+  <p>많은 애플리케이션 및 서비스가 기밀 컴퓨팅을 통해 데이터 보호를 활용할 수 있지만 금융, 정부 및 의료와 같은 규제 산업의 특정 이점을 확인했습니다. 이제 기업은 클라우드를 활용하여 처리 시기를 포함하여 위험을 줄이고 데이터를 보호할 수 있다는 높은 신뢰도로 중요한 고객 데이터를 처리할 수 있습니다.</p>
+
+
+  <p>예를 들어 새로운 국제 암호 화폐인 <a href="https://www.mobilecoin.com/" target="_blank">MobileCoin</a>은 Azure 기밀 컴퓨팅을 신뢰하여 디지털 통화 전송을 지원합니다. 이제 해당 네트워크 코드를 <a href="https://github.com/mobilecoinofficial/mobilecoin" target="_blank">오픈 소스</a>에서 사용할 수 있으며 <a href="https://medium.com/@j_10523/mobilecoin-test-network-launch-37bcb0b86b08" target="_blank">TestNet</a> 을 사용해볼 수 있습니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;MobileCoin은 Microsoft가 신뢰할 수 있는 시스템에 투자하기로 결정했기 때문에 Azure와 파트너 관계를 맺고 있습니다. 기밀 컴퓨팅은 우리가 상상할 수 있는 것과 보호할 수 있는 것 사이의 우위를 점합니다. Azure에서 경험한&#39;praxis를 사용하면 필수, 높은 신뢰 및 성능이 뛰어난 시스템에 커밋할 수 있습니다.&rdquo; &mdash;조슈아 골드바드, 모바일코인 CEO</em></p>
+
+
+  <p>기밀 컴퓨팅은 엔터프라이즈급 블록체인에 유용한 것으로 입증되어 분산된 네트워크에서 빠르고 안전한 트랜잭션 확인을 가능하게 합니다. <a href="https://www.fireblocks.com/" target="_blank">Fireblocks</a> 는 Azure 기밀 컴퓨팅 인프라를 활용하는 또 다른 고객입니다.</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Fireblocks에서 우리의 임무는 금융 산업을 위한 블록체인 기반 자산 및 거래를 보호하는 것입니다. 기존 기술 스택이 이 과제에 적합하지 않다는 것을 알게 된 후에는 Azure 기밀 컴퓨팅 및 Intel SGX를 사용하여 특허 출원 중인 기술을 구현했습니다. 고객은 Fireblocks를 신뢰하여 매달&mdash; 65억 달러의 디지털 자산을&mdash; 안전하게 저장하고 이동하며 Azure는 이러한 약속을 이행할 수 있는 중추를 제공합니다.&rdquo; &mdash; 마이클 샤울로프, CEO 겸 공동 창업자, 파이어블록스</em></p>
+
+
+  <h2>기밀 컴퓨팅을 최전선에 두는 업계 리더십</h2>
+
+
+  <p>Microsoft는 기밀 컴퓨팅을 클라우드 컴퓨팅 산업의 최전선에 두는 것만이 아닙니다. 2019년 9월에는 <a href="https://confidentialcomputing.io/" target="_blank">CCC(기밀 컴퓨팅 컨소시엄)</a>의 창립 멤버였으며, 현재는 Its를 사용하는 동안&rsquo; 데이터를 보호하기 위한 오픈 소스 기술과 모범 사례를 개발하고 개발하기 위해 노력하는 수십 개의 회사로 구성되어 있습니다. 이러한 회사에는 하드웨어, 클라우드, 플랫폼 및 소프트웨어 공급자가 포함됩니다.</p>
+
+
+  <p>또한 Microsoft는 플랫폼 파트너와 애플리케이션 개발자가 기밀 컴퓨팅을 활용하는 솔루션을 빌드할 수 있도록 개발자 환경에 최선을 다하고 있습니다. 기밀 컴퓨팅 인프라를 기반으로 플랫폼 및 애플리케이션을 개발하기 위한 오픈 소스 SDK인 <a href="https://openenclave.io" target="_blank">Open Enclave SDK</a> 를 컨소시엄에 기부했습니다.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <p><a href="https://aka.ms/accmarketplacetutorial" target="_blank">Azure Marketplace에서 고유한 DCsv2 가상 머신 배포를</a> 시작하고 필요한 도구를 설치합니다. 그런 다음 Open Enclave SDK를 사용하여 <a href="https://github.com/openenclave/openenclave/blob/master/samples/helloworld/README.md" target="_blank">Hello World 샘플을</a> 실행하여 클라우드에서 기밀 워크로드 빌드를 시작합니다.</p>

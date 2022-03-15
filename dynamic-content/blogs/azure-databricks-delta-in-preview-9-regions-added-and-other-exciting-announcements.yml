@@ -1,0 +1,104 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 89500101d6fc887229729ec87bb731d28beff683
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897472"
+Slug: azure-databricks-delta-in-preview-9-regions-added-and-other-exciting-announcements
+Title: Azure Databricks – 미리 보기의 델타, 추가된 9개 지역 및 기타 흥미로운 공지 사항
+Summary: Azure Databricks는 빠르고 쉽고 협업적인 Apache Spark 기반 분석 플랫폼을 제공하여 업계 최고의 SLA를 통해 비즈니스를 발전시키는 빅 데이터 및 AI 솔루션을 빌드하는 프로세스를 가속화하고 간소화합니다.
+Content: >-
+  <p>Azure Databricks는 빠르고 쉽고 협업적인 Apache<sup>&reg; </sup>Spark&trade; 기반 분석 플랫폼을 제공하여 업계 최고의 SLA를 통해 비즈니스를 발전시키는 빅 데이터 및 AI 솔루션을 빌드하는 프로세스를 가속화하고 간소화합니다.</p>
+
+
+  <p>3월에 일반 공급 발표 이후, Microsoft는 지속적으로 고객의 의견을 수렴하고 Azure Databricks 서비스에 기능을 추가해 왔습니다. 오늘 Azure Databricks에 대한 몇 가지 새로운 업데이트를 발표하게 되어 기쁩니다.</p>
+
+
+  <h2>일반 공급</h2>
+
+
+  <h3>Azure Databricks는 이제 일본, 캐나다, 인도 및 오스트레일리아 중부에서 사용할 수 있습니다.</h3>
+
+
+  <p>일본, 캐나다, 인도, 오스트레일리아 중부 및 오스트레일리아 중부 2의 추가 지역에서 &ndash; Azure Databricks의 일반 공급에 대해 발표하게 되어 기쁩니다. 이러한 추가 위치는 전 세계 제품 가용성 수를 99.95% SLA로 지원되는 24개 지역으로 가져옵니다.</p>
+
+
+  <p>혁신을 주도하고 전 세계적으로 액세스할 수 있도록 하여 고객의 요구를 충족할 수 있는 클라우드 인프라를 구축하고자 합니다. Azure Databricks의 <a href="https://azure.microsoft.com/en-us/global-infrastructure/services/?products=databricks&amp;regions=non-regional,us-east,us-east-2,us-central,us-north-central,us-south-central,us-west-central,us-west,us-west-2,canada-east,canada-central,asia-pacific-east,asia-pacific-southeast,australia-central,australia-central-2,australia-east,australia-southeast,united-kingdom-south,united-kingdom-west,japan-east,japan-west,central-india,south-india,west-india" target="_blank">지역 가용성</a> 을 업데이트합니다.</p>
+
+
+  <p>또한 조직은 Azure <a href="https://azure.microsoft.com/en-us/services/storage/blobs/" target="_blank">Blob</a> Storage, Azure Data Factory, Azure SQL Data Warehouse 및 Azure Cosmos <a href="https://azure.microsoft.com/en-us/services/cosmos-db/?v=17.45a" target="_blank">DB</a>와 같은 다른 서비스와 Azure <a href="https://azure.microsoft.com/en-us/services/sql-data-warehouse/?v=17.44" target="_blank">Databricks&#39;</a> 네이티브 통합의 이점을 누릴 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/data-factory/" target="_blank"></a> 이를 통해 <a href="https://azure.microsoft.com/en-us/blog/implementation-patterns-for-big-data-and-data-warehouse-on-azure/" target="_blank">최신 데이터 웨어하우징, 고급 분석 및 실시간 분석 시나리오를</a> 지원하는 새로운 분석 솔루션을 사용할 수 있습니다.</p>
+
+
+  <h3>Azure Databricks의 Azure Active Directory 조건부 액세스</h3>
+
+
+  <p>이제 Azure Databricks는 <a href="https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview" target="_blank">AD(Azure Active Directory) 조건부 액세스를</a> 지원하므로 관리자는 사용자가 Azure Databricks에 로그인할 수 있는 위치와 시기를 제어할 수 있습니다.</p>
+
+
+  <p>보안은 클라우드를 사용하는 조직에서 가장 중요한 문제입니다. 클라우드 보안의 주요 측면은 클라우드 리소스 관리에 사용되는 ID 및 액세스입니다. 모바일 우선 클라우드 우선 환경에서 사용자는 어디서나 다양한 디바이스 및 앱을 사용하여 조직&#39;리소스에 액세스할 수 있습니다. 따라서 리소스에 액세스할 수 있는 사람에만 초점을 맞추는 것은 더 이상 충분하지 않습니다. 보안과 생산성 간의 균형을 이루기 위해서는 리소스가 액세스되는 방법도 액세스 제어 결정에 고려해야 합니다. Azure Active Directory 조건부 액세스를 사용하면 이 요구 사항을 해결할 수 있습니다. 조건부 액세스는 Azure Active Directory의 기능입니다. 조건부 액세스를 사용하면 조건에 따라 클라우드 앱에 액세스할 수 있는 사용자를 결정하는 자동 액세스 제어 결정 시스템을 구현할 수 있습니다.</p>
+
+
+  <p>고객은 포털을 통해 Azure AD에서 새로운 조건<a href="https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview" target="_blank">부 액세스</a> 정책을 만들어 현재 Azure Databricks에서 Azure Active Directory 조건부 액세스를 활용할 수 있습니다. <a href="https://docs.azuredatabricks.net/administration-guide/cloud-configurations/azure/conditional-access.html%23id1" target="_blank">Azure Databricks 설명서</a>에서 Azure AD 조건부 액세스에 대해 자세히 알아보세요.</p>
+
+
+  <h2>미리 보기</h2>
+
+
+  <h3>Azure Databricks 델타</h3>
+
+
+  <p>현재 미리 보기로 제공되는 Azure Databricks Delta는 더 나은 데이터 일관성과 빠른 읽기 액세스를 제공하기 위해 Apache Spark를 기반으로 하는 강력한 트랜잭션 스토리지 계층입니다.</p>
+
+
+  <p>고객이 일괄 처리 및 스트리밍 데이터 둘 다에 대해 복잡한 파이프라인을 계속 빌드하는 경우 ETL 파이프라인을 간소화해야 합니다. 일관된 보기를 구축하기 위해 고객은 종종 파이프라인에서 여러 단계를 만들어 진화하는 스키마를 수용하고 일괄 처리 및 스트림 처리를 위해 서로 다른 단계의 람다 패턴을 지원합니다.</p>
+
+
+  <p>Azure Databricks Delta를 Spark 테이블과 함께 사용하면 여러 사용자 또는 작업이 동시에 데이터 세트를 수정하고 일관된 보기를 볼 수 있습니다. 이 작업은 테이블에서 동일한 데이터 세트를 읽는 다른 작업을 방해하지 않고 수행할 수 있습니다. Azure Databricks Delta는 parquet 파일을 활용하지만 데이터를 훨씬 더 효율적으로 준비할 수 있는 큰 파일로 구성하여 파일 관리를 향상할 수 있는 트랜잭션 로그를 유지 관리합니다. 또한 관련 없는 정보를 읽지 않도록 데이터 건너뛰기를 활용하여 성능을 향상시키는 통계를 빌드했습니다.</p>
+
+
+  <p>Azure Databricks Delta는 현재 미리 보기로 제공되며 <a href="https://docs.azuredatabricks.net/delta/delta-intro.html" target="_blank">, 설명서에서 자세히 알아보</a> 고 <a href="https://docs.azuredatabricks.net/_static/notebooks/delta/quickstart.html" target="_blank">빠른 시작 Notebook을 가져올</a> 수 있습니다.</p>
+
+
+  <h3>Azure Databricks는 Azure SQL Data Warehouse를 스트리밍 싱크로 지원합니다.</h3>
+
+
+  <p>Azure Databricks 사용자가 구조적 스트림 사용하여 데이터를 Azure SQL Data Warehouse로 직접 스트리밍할 수 있음을 발표하게 되어 기쁩니다. 이를 통해 고객은 구조적 스트림 사용하여 빌드된 실시간 스트리밍 파이프라인을 통해 지원되는 SQL DW의 거의 실시간 데이터를 시각화하고 보고할 수 있으므로 기업 전체에서 의사 결정이 더 빨라집니다.</p>
+
+
+  <p>분석되는 데이터 볼륨의 폭발적인 증가, 다양한 데이터 형식의 확산 및 실시간 분석의 필요성으로 인해 단일 허브가 모든 데이터를 시각화해야 합니다. Azure SQL Data Warehouse(SQL DW)는 MPP(대규모 병렬 처리)를 활용하여 페타바이트 단위의 데이터에서 복잡한 쿼리를 신속하게 실행하는 클라우드 기반 엔터프라이즈 데이터 웨어하우스입니다. 데이터 웨어하우스는 비즈니스에서 시각화 및 인사이트의 기반으로 사용하는 SVOT(단일 버전 저장소) 역할을 할 수 있습니다.</p>
+
+
+  <h3>Azure Databricks를 사용하여 Azure Key Vault를 지원하는 비밀 범위</h3>
+
+
+  <p>Azure Databricks는 Azure Data Lake Storage, Cosmos DB, SQL DW, Event Hubs, IoT Hubs 및 기타 여러 서비스에 연결할 수 있는 기능을 기본적으로 제공합니다. 이제 고객이 Azure Key Vault에 연결 문자열 또는 비밀을 저장할 수 있습니다.</p>
+
+
+  <p>Azure Key Vault를 사용하면 비밀 스토리지를 중앙 집중화하여 실수로 보안 정보가 손실될 가능성을 줄이는 애플리케이션 비밀을 안전하게 저장하고 관리할 수 있습니다.</p>
+
+
+  <p>Azure Databricks와 함께 Key Vault를 사용하여 비밀 범위를 만드는 경우 데이터 과학자와 개발자는 더 이상 SAS 토큰 또는 연결 문자열과 같은 보안 정보를 Notebook에 저장할 필요가 없습니다. 키 자격 증명 모음에 액세스하려면 사용자가 액세스 권한을 얻기 전에 적절한 인증 및 권한 부여가 필요합니다. 인증은 사용자의 ID를 설정하고 권한 부여는 사용자가 수행할 수 있는 작업을 결정합니다.</p>
+
+
+  <p>이를 통해 Azure Databricks는 이제 Azure Key Vault 지원 및 Databricks 지원의 두 가지 유형의 비밀 범위를 &ndash; 지원합니다. <a href="https://docs.azuredatabricks.net/user-guide/secrets/secret-scopes.html#akv-ss" target="_blank">Azure Key Vault 지원 비밀 범위</a>에 대해 자세히 알아보세요.</p>
+
+
+  <h2>Spark + AI Summit, 유럽</h2>
+
+
+  <p>Microsoft는 Apache Spark 커뮤니티의 프리미어 이벤트인 2018년 Spark + AI Summit Europe에서 주요 입지를 다질 예정입니다. Azure Data의 회사 부사장인 Rohan Kumar는 Azure Databricks가 최고의 Apache&reg; Spark&trade; 분석 플랫폼과 Microsoft Azure Data Services를 결합하여 고객이 데이터의 힘을 발휘하고 AI를 가능하게 하고 세상을 개선할 수 있는 가능성을 재구상할 수 있도록 하는 방법에 대한 기조연설을 제공할 예정입니다. Spark + AI Summit에는 고객과 파트너가 수행하는 훌륭한 작업과 Azure Databricks가 대규모 생산성을 달성하는 데 어떻게 도움이 되는지 보여주는 여러 세션이 있습니다.</p>
+
+
+  <h2>오늘 시작하세요!</h2>
+
+
+  <p>Azure Databricks를 사용해 볼 수 있게 되어 기쁩니다! 오늘 시작하고 피드백을 알려주세요.</p>
+
+
+  <ul>
+      <li>무료 <a target="_blank">Databricks 단위를 사용하여 Azure Databricks</a> 프리미엄 14일 평가판을 사용해 보세요.</li>
+      <li>웹 세미나에 <a href="https://info.microsoft.com/ww-Registration-how-lennox-made-iot-a-reality.html" target="_blank">등록</a>하여 Lennox가 Azure Databricks를 사용하여 확장 가능한 IoT 솔루션을 빌드하는 방법을 알아봅니다.</li>
+      <li><a href="https://info.microsoft.com/innovate-with-microsoft-azure-databricks-ondemand.html" target="_blank">Azure Databricks에서 Apache Spark를 시작하는 방법에 대한</a> 비디오를 시청하세요.</li>
+      <li><a href="https://info.microsoft.com/ww-landing-databricks-use-case-ebook.html" target="_blank">Azure Databricks eBook을 사용하여 세 가지 실제 사용 사례를 다운로드합니다</a>.</li>
+  </ul>

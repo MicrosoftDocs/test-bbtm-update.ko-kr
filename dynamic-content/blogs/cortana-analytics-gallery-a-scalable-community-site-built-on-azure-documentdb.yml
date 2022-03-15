@@ -1,0 +1,178 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 892603fc18cf0d1827ff5f78def54c6de96d0903
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897707"
+Slug: cortana-analytics-gallery-a-scalable-community-site-built-on-azure-documentdb
+Title: Cortana Analytics 갤러리 - Azure DocumentDB에 빌드된 확장 가능한 커뮤니티 사이트
+Summary: 이 게시물에서는 확장 가능한 커뮤니티 포럼을 구축하는 데 관심이 있는 사람들을 위해 Cortana Analytics 갤러리의 개략적인 아키텍처 개요를 다룹니다.
+Content: >-
+  <p><em>수석 소프트웨어 엔지니어인 엘레나 아프레우테세이(Elena Apreutesei)와 공동 저술한 Azure Machine Learning.</em></p>
+
+
+  <p><img alt="CortanaAnalyticsGallery" border="0" height="337" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6ec9353d-92c9-4d35-a81c-2a8c72cb573a.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="CortanaAnalyticsGallery" width="703"></p>
+
+
+  <p><a href="https://gallery.cortanaanalytics.com" target="_blank">Cortana Analytics 갤러리</a>는 <a href="https://www.microsoft.com/en-us/server-cloud/cortana-analytics-suite/overview.aspx" target="_blank">Cortana Analytics Suite</a>에서 빌드된 솔루션을 검색, 공유 및 학습하는 데 사용되는 커뮤니티 기반 웹 사이트입니다. 갤러리는 다양한 솔루션을 호스팅합니다. <a href="https://gallery.cortanaanalytics.com/Experiment/Retail-Forecasting-Step-1-of-6-data-preprocessing-5" target="_blank">소매 예측 실험</a>에서부터 <em><a href="https://how-old.net/" target="_blank">몇 살</a></em>이 되었는지 앱에 사용된 인기 있는 <a href="https://gallery.cortanaanalytics.com/MachineLearningAPI/b0b2598aa46c4f44a08af8891e415cc7" target="_blank">Face API</a>에 이르기까지 모든 것이 있습니다. Machine Learning 매니아는 Machine Learning 실험 및 모델 생성에 초점을 맞춘 개인 공간인 Azure Machine Learning <a href="https://studio.azureml.net/" target="_blank">Studio</a>를 사용하여 자신의 실험을 공유할 수 있습니다.</p>
+
+
+  <p>Cortana Analytics 갤러리는 단일 용도 구성 요소가 함께 작동하여 안정적이고 내구성이 뛰어난 기능을 제공하는 마이크로 서비스 아키텍처를 따릅니다. 이 게시물은 갤러리 사용자 환경 내에서 데이터 마스터로 사용되는 갤러리 카탈로그 API에 중점을 둡니다.</p>
+
+
+  <p><img alt="AchitectureDiagram_v4" border="0" height="313" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cbfa1c90-4dd0-45f5-823d-911f2801fb0f.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="AchitectureDiagram_v4" width="708"></p>
+
+
+  <p><em>*갤러리 아키텍처는 변경될 수 있습니다.</em></p>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="716">
+   <tbody>
+    <tr>
+     <td valign="top" width="200"><strong>갤러리 UX</strong></td>
+     <td valign="top" width="514">MVC 기반 서버 쪽 렌더링과 클라이언트 쪽 단일 페이지 애플리케이션 스타일 렌더링을 모두 지원하는 웹 렌더링 계층입니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="200"><strong>갤러리 카탈로그 API</strong></td>
+     <td valign="top" width="514">갤러리 엔터티 메타데이터에 대한 정식 저장소입니다. 기본 데이터 저장소는 갤러리 엔터티에 대한 Azure DocumentDB이고 이미지와 같은 포함된 콘텐츠에 대한 Azure Blob Storage. CRUD(만들기, 읽기, 업데이트, 삭제) 작업은 OData와 같은 RESTful 엔드포인트를 통해 노출됩니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="200"><strong>갤러리 인덱스 API</strong></td>
+     <td valign="top" width="514">갤러리 엔터티에 대한 전체 텍스트 검색 엔드포인트입니다. 인덱스 API는 검색 기술에 대한 Azure Search를 사용합니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="200"><strong>스토리지 API</strong></td>
+     <td valign="top" width="514">갤러리에 게시하기 위해 Studio 실험의 실제 패키지 콘텐츠를 저장하는 데 사용되는 엔드포인트입니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="200"><strong>패키징 API</strong></td>
+     <td valign="top" width="514">패키지된 콘텐츠를 준비하는 데 사용되는 엔드포인트로, 사용자가 갤러리에 게시하려는 실험의 번들 복사본입니다. 출력은 카탈로그 엔터티 메타데이터와 함께 저장된 패키지 URL입니다.</td>
+    </tr>
+    <tr>
+     <td valign="top" width="200"><strong>활동 API</strong></td>
+     <td valign="top" width="514">추세, 동적 값(예: <em>다운로드 수 </em>및 <em>보기 수</em>)에 영향을 주는 사용자 활동을 기록하는 데 사용되는 엔드포인트입니다.</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h1>갤러리 카탈로그 API</h1>
+
+
+  <p>모든 갤러리 엔터티에는 Azure DocumentDB에 저장된 JSON 메타데이터 문서가 있으며 모든 CRUD(만들기, 읽기, 업데이트 및 삭제) 작업은 DocumentDB에 대해 수행됩니다. 마이크로 서비스인 갤러리 카탈로그 API는 REST API를 제공하고 <a href="https://www.odata.org/" target="_blank">OData</a>를 지원합니다. 둘 다 <a href="https://www.asp.net/web-api/overview/odata-support-in-aspnet-web-api" target="_blank">ASP.NET 라이브러리 WebApi</a>를 통해 빌드되었습니다. 일반적으로 카탈로그 API는 ODATA를 통해 제공된 쿼리 필터를 <a href="https://azure.microsoft.com/en-us/documentation/articles/documentdb-sql-query/" target="_blank">DocumentDB LINQ</a> 공급자에 ExpressionTree로 직접 푸시하여 데이터베이스에서 실행됩니다.</p>
+
+
+  <p>갤러리 카탈로그 서비스는 일반 경로 /<em>entities/{entityId} 및 특수 경로 /experiments/{entityId}, /collections/{entityId}, /tutorials/{entityId}</em>와 같은 표준 WebAPI 경로에 대한 GET<em>/POST/</em>PATCH/DELETE 작업을 노출<em>합니다</em>.<em></em></p>
+
+
+  <p>REST API 페이로드의 JSON 개체는 단순히 다른 엔터티를 저장할 수 있는 유연성을 제공하는 공통 클래스 EntityBase에서 파생된 카탈로그 엔터티 데이터 계약의 직렬화된 형식입니다.</p>
+
+
+  <pre class="prettyprint">
+      [DataContract]
+      public class Experiment : EntityBase
+      {
+          public Experiment()
+          {
+              this.EntityType = EntityType.Experiment;
+          }
+
+          [DataMember(Name = &quot;modules&quot;)]
+          public IList&lt;string&gt; Modules { get; set; }
+      }
+  </pre>
+
+
+  <p>카탈로그 엔터티에는 사용자 연결 컨텍스트에 대한 <em>이름 </em>및 <em>요약</em>과 같은 필수 메타데이터가 포함됩니다. 예를 들어 아래 JSON 개체는 다음과 같이 매핑됩니다.</p>
+
+
+  <pre class="prettyprint">
+
+  {
+    &quot;entity_type&quot;: &quot;Experiment&quot;,
+    &quot;name&quot;: &quot;Predict the remaining useful life of an aircraft engine&quot;,
+    &quot;summary&quot;: &quot;This experiment aims to build a regression model to predict the RUL (Remaining Useful Life) of a specific aircraft engine. &quot;,
+    &quot;description&quot;: &quot;This experiment aims to build a regression model to predict the RUL (Remaining Useful Life) of a specific aircraft engine, including data...&quot;,</pre>
+
+  <p>또한 엔터티에는 <em>image_url 및 package_link</em> 같은 참조 링크 <em>가 포함되어 있습니다</em>. 원시 이미지 및 패키지 데이터는 모두 Blob Storage 저장됩니다.</p>
+
+
+  <pre class="prettyprint">
+    &quot;image_url&quot;: &quot;https://contentmamluswest001.blob.core.windows.net/content/14b2744cf8d6418c87ffddc3f3127242/9502630827244d60a1214f250e3bbca7/42332590d22a44e5a6e0dac7293e61b3/image&quot;,
+    &quot;created_at&quot;: &quot;2015-02-10T22:25:45.0510842+00:00&quot;,
+    &quot;updated_at&quot;: &quot;2015-02-13T19:25:00+00:00&quot;,
+    &quot;content&quot;: {
+      &quot;service_type&quot;: &quot;Azure&quot;,
+      &quot;package_link&quot;: &quot;https://storage.azureml.net/directories/f2c4da7bcd4847259f6879a1d4c73889&quot;
+    },
+    &quot;hidden&quot;: false,</pre>
+
+  <p><em>태그 및</em> <em>알고리즘</em> 속성은 모두 문자열 배열로, DocumentDB 쿼리가 특정 태그 및 알고리즘과 관련된 모든 카탈로그 엔터티를 실시간으로 찾을 수 있도록 합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <pre class="prettyprint">
+    &quot;tags&quot;: [
+      &quot;regression&quot;,
+      &quot;predictive maintenance&quot;,
+      &quot;prognostics&quot;
+    ],
+    &quot;algorithms&quot;: [
+      &quot;Decision Forest Regression&quot;,
+      &quot;Boosted Decision Tree Regression&quot;
+    ],
+    &quot;author&quot;: {
+      &quot;name&quot;: &quot;Yan Zhang&quot;,
+      &quot;avatar_url&quot;: &quot;https://cid-335e4711451a0d9f.users.storage.live.com/users/0x335e4711451a0d9f/myprofile/expressionprofile/profilephoto:UserTileStatic,UserTileMedium,Win8Static&quot;,
+      &quot;id&quot;: &quot;FD02E574E0801687BA770AE1993A458FD3DB7090DBD739116F411328FEA31939&quot;
+    },</pre>
+
+  <p>&nbsp;</p>
+
+
+  <p>엔터티에는 <em>인기</em>도에 따라 반환 결과를 정렬하는 <em>download_count</em>, <em>view_count, share_count</em> 및 <em>추세 </em>속성도 포함됩니다. <em>etag</em> 속성은 DocumentDB에서 제공되며 충돌하는 편집을 관리하는 데 사용됩니다.</p>
+
+
+  <pre class="prettyprint">
+    &quot;download_count&quot;: 344,
+    &quot;view_count&quot;: 730,
+    &quot;share_count&quot;: 1,
+    &quot;trending&quot;: 12.34544664797978,
+    &quot;index_eid&quot;: &quot;e9e50264-b77f-4eb0-bc08-62e20f3ac6ed&quot;,
+    &quot;id&quot;: &quot;42332590d22a44e5a6e0dac7293e61b3&quot;,
+    &quot;_links&quot;: {
+      &quot;self&quot;: &quot;https://catalog.azureml.net/tenants/14b2744cf8d6418c87ffddc3f3127242/communities/9502630827244d60a1214f250e3bbca7/experiments/42332590d22a44e5a6e0dac7293e61b3&quot;
+    },
+    &quot;etag&quot;: &quot;\&quot;00003501-0000-0000-0000-563ae96c0000\&quot;&quot;
+  }</pre>
+
+
+  <p>특정 작성자로부터 모든 실험을 검색하는 데 사용되는 샘플 쿼리:</p>
+
+
+  <pre class="prettyprint">
+
+  GET /entities?$orderby=updated_at desc&amp;$filter=author/id eq &#39;151C1FC0FFA9AE788F7872766C4076EA49F8EDD487E674688F98D8F77E22FA4B&#39; and (entity_type eq Microsoft.MachineLearning.Community.Contracts.Catalog.EntityType&#39;Experiment&#39;)</pre>
+
+
+  <p>추세별로 정렬된 모든 컬렉션을 가져오는 데 사용되는 샘플 쿼리:</p>
+
+
+  <pre class="prettyprint">
+
+  GET /entities?$orderby=trending desc&amp;$filter=(entity_type eq Microsoft.MachineLearning.Community.Contracts.Catalog.EntityType&#39;Collection&#39;)</pre>
+
+
+  <p>갤러리 카탈로그 마이크로 서비스는 DocumentDBs&rsquo; 스키마 무료 특성 및 LINQ 지원을 활용하여 갤러리 엔터티 메타데이터에 대한 안정적이고 유연하며 확장 가능한 정식 저장소를 빌드합니다&rsquo; .</p>
+
+
+  <h1>다음 단계</h1>
+
+
+  <p>지금 <a href="https://azure.microsoft.com/pricing/free-trial/" target="_blank">무료 평가판</a> 에 등록하여 DocumentDB를 사용해 보시고 <a href="https://azure.microsoft.com/documentation/articles/documentdb-create-account" target="_blank">DocumentDB 계정을</a> 만드세요. 도움이 필요하거나 질문이 있는 경우 <a href="https://stackoverflow.com/questions/tagged/azure-documentdb" target="_blank">StackOverflow의 개발자 포럼을</a> 통해 문의하거나 DocumentDB 엔지니어링 팀과 1:1 채팅을 예약하세요.</p>
+
+
+  <p>Twitter <a href="https://twitter.com/DocumentDB" target="_blank">@DocumentDB</a>에서 팔로우하여 최신 DocumentDB 뉴스 및 기능을 최신 상태로 유지하세요.</p>

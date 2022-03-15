@@ -1,0 +1,111 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 064223c98e14aa1a9b7fe35a686c33abcf808784
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913002"
+Slug: delivering-increased-productivity-for-bot-development-and-deployment
+Title: 봇 개발 및 배포를 위한 향상된 생산성 제공
+Summary: 이번 주 Microsoft Ignite에서는 조직에서 강력한 대화형 솔루션을 쉽게 빌드하고 고객이 어디에 있든 배포할 수 있도록 제품에 대한 업데이트를 발표했습니다. 아래 주요 사항 중 일부를 공유하고 있습니다.
+Content: >-
+  <p>지난 몇 년 동안, 우리는 의미있는 방법으로 대화형 AI를 적용하는 조직의 많은 예를 보았다. <a href="https://customers.microsoft.com/story/744064-accenture-partner-professional-services-azure-bot-service" target="_blank">Accenture</a> 와 <a href="https://customers.microsoft.com/story/739892-caesars-media-and-entertainment-azure-office365" target="_blank">Caesars 엔터테인먼트</a> 는 엔터프라이즈 봇을 통해 직원들의 생산성을 향상시키고 있습니다. <a href="https://customers.microsoft.com/en-US/story/ups" target="_blank">UPS</a> 및 <a href="https://customers.microsoft.com/en-us/story/asiana-airlines" target="_blank">아시아나항공</a> 은 더 나은 고객 서비스를 제공하기 위해 봇을 사용하고 있습니다. 그리고 마지막으로, <a href="https://azure.microsoft.com/resources/videos/build-2019-bmw-and-bot-framework-virtual-assistant-solution-accelerator/" target="_blank">BMW</a> 와 <a href="https://customers.microsoft.com/story/laliga-media-entertainment-azure" target="_blank">라리가</a> 는 고객이 자신의 브랜드를 경험하는 방법을 제어, 자신의 브랜드 음성 도우미를 구축했다. Azure AI를 사용하여 대화형 AI 솔루션을 구축한 조직 중 몇 가지에 불과합니다.</p>
+
+
+  <p>이번 주 Microsoft Ignite에서는 조직에서 강력한 대화형 솔루션을 쉽게 빌드하고 고객이 어디에 있든 배포할 수 있도록 제품에 대한 업데이트를 발표했습니다. 아래 주요 사항 중 일부를 공유하고 있습니다.</p>
+
+
+  <h2>가속화된 봇 개발을 위한 가장 인기 있는 오픈 소스 SDK</h2>
+
+
+  <p>개발자가 엔터프라이즈급 대화형 AI 환경을 쉽게 빌드할 수 있도록 Bot Framework SDK 4.6 릴리스를 발표했습니다. Bot Framework에는 봇 개발을 위한 <a href="https://github.com/microsoft/botframework-sdk/#readme" target="_blank">오픈 소스 SDK</a> 및 도구 집합이 포함되어 있으며, 개발자가 사용자에게 말하고, 듣고, 이해할 수 있는 봇을 빌드할 수 있도록 Azure Cognitive Services와 쉽게 통합할 수 있습니다.&nbsp;</p>
+
+
+  <ul>
+      <li><strong>Microsoft Teams 위한 Bot Framework SDK.</strong> 개발자는 Teams 메시징 확장, 자동 관리 메시징 및 알림 등에 대한 기본 제공 지원을 사용하여 Teams 봇을 빌드할 수 있습니다.</li>
+      <li><strong>Bot Framework SDK Skills(미리 보기).</strong> 개발자는 재사용 가능한 대화형 기술을 만들고 언어 모델, 대화 상자, QnA 및 통합 코드와 함께 제공되는 미리 빌드된 기술을 활용할 수도 있습니다. 미리 작성된 기술에는 달력, 전자 메일, 작업, 관심 지점, 날씨, 뉴스 등이 포함됩니다.</li>
+      <li><strong>적응형 대화 상자(미리 보기).</strong> 개발자가 중단 및 컨텍스트 전환을 동적으로 처리할 수 있는 대화를 빌드할 수 있도록 합니다.</li>
+      <li><strong>언어 생성(미리 보기).</strong> 개발자가 구에 여러 변형을 정의할 수 있도록 하여 컨텍스트에 따라 간단한 식을 실행합니다.</li>
+      <li><strong>Python 및 Java 업데이트(미리 보기).</strong> 개발자가 원하는 언어로 빌드할 수 있도록 합니다.</li>
+  </ul>
+
+
+  <blockquote>
+
+  <p><em>&ldquo;우리는 몇 가지 옵션을 비교했고, 유연성, 시장 출시 시간 및 기존 인프라와의 상호 운용 측면에서 Microsoft Bot Framework 지금까지 가장 좋은 방법이라고 느꼈습니다.&rdquo; - Cole Dutcher, 엔지니어링 부이사, <a href="https://customers.microsoft.com/story/jet-dot-com-retailers-azure" target="_blank">Jet.com/Walmart Labs</a></em></p>
+
+  </blockquote>
+
+
+  <h2>코드가 낮은 시각적 환경을 사용하여 봇 빌드 간소화</h2>
+
+
+  <p>개발자가 봇 개발을 빠르게 시작할 수 있도록 봇 코드 샘플 및 템플릿을 제공했습니다. 더 쉽게 시작할 수 있도록 Bot Framework SDK를 기반으로 빌드된 통합 개발 도구인 Bot Framework Composer(미리 보기)를 시작했습니다. 개발자는 처음부터 완전히 코딩을 시작하지 않고도 개발자가 사용자 지정 코드로 봇을 확장할 수 있는 유연성으로 대화형 앱(봇)을 만들고, 편집하고, 테스트하고, 구체화할 수 있는 하위 코드 시각적 환경인 Composer 시작할 수 있습니다. 또한 개발자는 Azure Cognitive Services를 통합하기 위한 중앙 집중식 장소를 가질 수 있으며, 처음에는 언어 이해부터 시작하여 앞으로 더 많은 Cognitive Services를 사용할 수 있습니다.</p>
+
+
+  <p>Bot Framework와 마찬가지로 Composer 오픈 소스 프로젝트입니다. 지금 <a href="https://aka.ms/BF-Composer-Getting-Started" target="_blank">시작하고</a> 봇을 빌드하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a405005e-bfa8-46b7-8607-932c26b8ff70.png"><img alt="BF Composer image" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/219625ba-be4a-4228-a322-865add571fe0.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="BF Composer 이미지" width="979"></a></p>
+
+
+  <h2>사용자에게 봇 연결</h2>
+
+
+  <p>Azure Bot Service를 사용하면 Bot Framework를 사용하여 빌드한 봇&rsquo;을 가져와서 Azure에서 쉽게 호스트할 수 있으므로 고객이 어디에 있든 Facebook, Slack, Teams 또는 고유한 웹 사이트&mdash;와 같은 인기 있는 채널에서 사용자에게 봇을 연결할 수 있습니다. Weve&rsquo;는 몇 가지 새로운 통합을 발표했습니다.</p>
+
+
+  <ul>
+      <li><strong>직접 회선 음성.</strong> 음성 우선 대화형 환경은 계속해서 인기와 중요성이 증가하고 있으며, 현재는 Direct Line Speech의 일반 공급이 발표되고 있습니다. Direct Line Speech는 Azure Bot Service의 WebSockets를 사용하여 클라이언트에서 봇 애플리케이션으로 양방향으로 스트리밍된 음성 및 텍스트를 위한 엔드투엔드 대화형 솔루션의 생성을 간소화하는 새로운 채널입니다. 이 <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/tutorial-voice-enable-your-bot-speech-sdk" target="_blank">단계별 자습서</a>를 시작합니다.</li>
+      <li><strong>새 통합 및 어댑터.</strong> Bot Framework 채택이 증가함에 따라 새 채널에 대한 통합에 대한 수요도 증가합니다. 개발자가 대화를 인간 에이전트로 에스컬레이션할 수 있는 고객 관리 시나리오를 빌드할 수 있도록 대화형 플랫폼 LiveEngage 공급자인 <a href="https://developers.liveperson.com/third-party-bots-microsoft-bot-framework.html" target="_blank">LivePerson과의 새로운 통합</a>을 발표하게 되어 기쁘게 생각합니다. <a href="https://aka.ms/bf-wechat" target="_blank">새 WeChat 어댑터</a>도 추가했습니다. 다른 플랫폼에 대한 커넥터에 관심이 있는 경우 <a href="https://docs.microsoft.com/azure/bot-service/bot-service-channel-additional-channels?view=azure-bot-service-4.0" target="_blank">추가 채널 및 어댑터</a>에 대해 자세히 알아보세요. WebEx&rsquo; Teams, Google 행아웃, Google Assistant, Twitter 및 Amazon Alexa와 같은 플랫폼용 커뮤니티 어댑터를 포함하여 Bot Framework 어댑터 목록이 증가하고 있습니다.</li>
+      <li><strong>직접 회선 App Service 확장(미리 보기).</strong> 이제 전용 Azure App Service에서 직접 회선을 실행하여 웹 채팅 및 직접 회선을 사용하는 봇을 Bot Service의 다른 트래픽으로부터 격리할 수 있습니다. 이렇게 하면 봇이 Azure VNET 구성에 참여할 수도 있습니다. VNET을 사용하면 개발자가 Azure에서 자체 프라이빗 공간을 만들 수 있으며 격리, 세분화 및 기타 주요 이점을 제공하므로 클라우드 네트워크에 매우 중요합니다. <a href="https://aka.ms/vnetbots" target="_blank">이 기능에 대해 자세히 알아보세요</a>.</li>
+  </ul>
+
+
+  <blockquote>
+
+  <p><em>&ldquo;우리는 Microsoft Azure Bot Service 및 Cognitive Services를 사용하여 4개의 별도 채널&mdash;에서 6개국에서 Aura를 출시하는 복잡성에 대처하고 모든 것을 원활하게 수행했습니다.&rdquo; - Chema Alonso, <a href="https://customers.microsoft.com/story/726906-telefonica-media-telco-cognitive-services-azure" target="_blank">Telefonica</a> 최고 데이터 책임자</em></p>
+
+  </blockquote>
+
+
+  <h2>Azure Cognitive Services와의 통합(Language Understanding, QnA Maker)</h2>
+
+
+  <p>Bot Framework 및 Azure Bot Service를 사용할 때의 주요 이점 중 하나는 Azure Cognitive Services를 사용하여 강력한 도메인별 AI 모델을 통합하는 기능입니다. 사용자가 개인 설정된 음성을 만들 수 있는 사용자 지정 신경망 음성과 같은 새로운 음성 기능과 같은 Azure Cognitive Services에 대한 몇 가지 새로운 발표를 했습니다.</p>
+
+
+  <p>Azure Cognitive Service인 <a href="https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/" target="_blank">Language Understanding</a>은 개발자가 더욱 정교한 언어 구조를 처리할 수 있는 <a href="https://docs.microsoft.com/azure/cognitive-services/luis/whats-new" target="_blank">새로운 기능을</a> 도입했습니다. 이러한 기능은 복잡한 문장 구조를 계층 구조로 더 잘 구문 분석하고 자연어를 더 잘 이해할 수 있습니다. 또한 사용자 인터페이스 내에서 하위 구성 요소 및 겹치는 엔터티에 레이블을 지정하여 이러한 새 모델의 이점을 보다 쉽게 활용할 수 있는 새로운 UI 환경을 제공합니다. 마지막으로, Language Understanding 서비스는 이제 힌디어 및 아랍어를 지원하여 언어 범위를 확장합니다.</p>
+
+
+  <p><a href="https://aka.ms/qnamakerpage" target="_blank">QnA Maker</a>는 데이터 위에 대화형 질문 및 답변 레이어를 만드는 클라우드 기반 API 서비스입니다. QnA Maker를 사용하면 FAQ URL, 구조화된 문서, 제품 설명서 또는 편집 콘텐츠를 기반으로 간단한 질문 및 답변 봇을 몇 분 만에 빌드, 학습 및 게시할 수 있습니다. QnA Makers&rsquo; 다중 턴 기능이 이제 일반 공급되므로 코드를 작성하지 않고 <a href="https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/multiturn-conversation" target="_blank">도 다중 턴 QnA 봇</a> 을 만들 수 있습니다. 또한 QnA Maker는 10개 언어에 대한 지역 가용성 및 순위 기능 지원 증가로 글로벌 요구 사항에 크게 영향을 받고 있으며, 잡담 지원을 통해 8개 언어에 대한 작은 대화를 처리할 수 있습니다. 마지막으로 Qna Maker는 표준 테스트 사례 집합으로 기술 자료를 신속하게 테스트하고 답변의 품질에 대한 유효성을 검사하는 <a href="https://aka.ms/qna_batchtest" target="_blank">일괄</a> 테스트도 지원합니다.</p>
+
+
+  <blockquote>
+
+  <p><em>&ldquo;Microsoft Azure Bot Service 및 Cognitive Services&rsquo;를 사용하여 디지털 혁신의 진보적인 여정을 계속하고 민첩하고 빠르며 비용 효율적인 방식으로 수행할 수 있었습니다.&rdquo; - Matt White, Marketing Manager, Personal Lines Acquisition Experience, <a href="https://customers.microsoft.com/story/progressive-insurance-cognitive-services" target="_blank">Progressive Insurance</a></em></p>
+
+  </blockquote>
+
+
+  <h2>Power Virtual Agents</h2>
+
+
+  <p>Microsoft Ignite에서는 Bot Framework를 기반으로 하며 Power Platform에서 사용할 수 있는 UI 기반 봇 빌드 환경인 Power Virtual Agents 발표했습니다. 코드 없는 봇 빌드 환경을 찾는 비즈니스 사용자를 위해 설계되었습니다. Power Virtual Agents 사용하여 빌드된 봇은 Bot Framework SDK 및 도구를 사용하여 개발자가 확장할 수 있습니다. 실제로 이를 통해 주제별 전문 지식이 있는 비즈니스 사용자와 기술 전문 지식을 갖춘 개발자 간의 협업을 통해 사용자 지정 대화형 환경을 구축할 수 있습니다.</p>
+
+
+  <h2>시작</h2>
+
+
+  <p>이러한 향상된 기능을 통해 개발자가 다양한 대화형 환경을 구축하는 데 생산성을 높일 수 있도록 전체 Microsoft Bot Framework SDK 및 도구, Language Understanding 및 QnA Maker에 가치를 제공하고 있습니다.</p>
+
+
+  <p>고객을 위해 어떤 대화형 환경을 구축할지 기대합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/services/bot-service/" target="_blank">오늘 시작하세요</a>.</p>
+
+
+  <hr>
+
+  <p><em>Azure. 목적에 따라 발명. </em></p>

@@ -1,0 +1,602 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f701380a51eb0e9582eec64fb13bcba456a6c0f9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897452"
+Slug: azure-marketplace-consulting-offers-april
+Title: Azure Marketplace 새 제품 - 볼륨 15
+Summary: Azure Marketplace 에코시스템을 계속 확장합니다. 4월에는 73개의 컨설팅 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 진행되었습니다.
+Content: >-
+  <p>Azure Marketplace 에코시스템을 계속 확장합니다. 4월에는 73개의 컨설팅 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 진행되었습니다. 아래의 새로운 제품에 대한 세부 정보를 참조하세요.</p>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bright-wolf.industrial-azure-iot-getting-started-workshop"><img alt="clip_image002" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bd5aac09-993c-4b02-90ee-5951db6cce2c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image002" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bright-wolf.industrial-azure-iot-getting-started-workshop" target="_blank">1일: 산업용 Azure IoT 시작</a>: 30일 이내에 Azure IoT 파일럿을 제공하여 산업 장비를 클라우드에 연결하기 위한 로드맵을 만듭니다. 엔터프라이즈 시스템과 통합할 준비가 된 대시보드 및 경고를 사용하여 선택한 제품 라인을 클라우드에 커넥트.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/vnb.vnb_az_aa_ws"><img alt="clip_image004" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dbb2cd38-5de1-4924-a62a-a35fb77e2c52.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image004" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/vnb.vnb_az_aa_ws" target="_blank">Advanced Analytics 플랫폼 현대화: 1-Wk POC</a>: 이 제한된 구현은 Azure Advanced Analytics 플랫폼이 조직&rsquo; 고급 분석 이니셔티브에 적합한지 증명하도록 설계되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/ilinksystems.appmodernizationpoc_ilinksystems"><img alt="clip_image006" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/23df840d-1c23-4d18-a596-144e0642e29a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image006" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/ilinksystems.appmodernizationpoc_ilinksystems" target="_blank">앱 현대화: 2-Wk 평가</a>: 클라우드에서 수행할 수 있는 작업을 볼 수 없는 이유는 무엇인가요? iLink 시스템은 애플리케이션 마이그레이션 및 현대화 프로세스를 위한 증분 개발 로드맵을 개발하고 회사&#39;디지털 변환을 주도할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_kubernetesassessment"><img alt="clip_image008" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95c7fab4-d237-4c74-a6c1-5b20f8d338b3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image008" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_kubernetesassessment" target="_blank">애플리케이션 포트폴리오 평가: 2-Wk 평가</a>: Altoros는 Kubernetes 클러스터로 마이그레이션할 주요 워크로드를 식별하고, 애플리케이션 이식성을 평가하고, 전반적인 마이그레이션 전략을 개발하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.20535-architecting-azure-solutions"><img alt="clip_image010" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/158f85db-5226-43d3-a222-2f268d2d7111.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image010" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.20535-architecting-azure-solutions" target="_blank">Azure 솔루션 설계: 5일 워크샵:</a> 강사 주도 워크샵에서 Azure Resource Manager 템플릿, 배포, 리소스 그룹, 태그 및 Role-Based Access Control과 같은 기본 제공 DevOps 도구를 사용하여 Azure 솔루션을 배포합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/monza-cloud.azbrief"><img alt="clip_image012" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7f1b8ea9-05dd-4d5b-b4d5-172fecc65fd4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image012" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/monza-cloud.azbrief" target="_blank">AzStudio PaaS Platform: 1시간 브리핑:</a> 이 세션에서는 CaaS(Configuration-as-a-Service) 및 애플리케이션 구성 블록이 조직 전체에서 신속한 Platform-as-a-Service 개발 또는 레거시 .NET 앱 현대화를 가능하게 하는 방법을 안내합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.552242"><img alt="clip_image010[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/339c65e7-1be1-44bf-9b32-485d33ac2fb9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image010[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.552242" target="_blank">Azure Analytics 솔루션: 2일 가상 워크샵: 2일</a> 간의 강사 주도 강좌에서는 Azure Portal 및 Azure PowerShell 사용하여 엔드 투 엔드 클라우드 분석 솔루션을 운영하는 방법을 자세히 설명합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/merit-solutions.remote-cloud-readiness-assessment"><img alt="clip_image014" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b04161b-440a-457f-9973-0054e6a4330c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image014" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/merit-solutions.remote-cloud-readiness-assessment" target="_blank">Azure 클라우드 준비 평가(원격)</a>: Microsoft Azure 앱 또는 인프라를 이동하는 것을 고려하고 있나요? 이 이틀 간의 평가는 클라우드로 이동하는 데 필요한 시간, 노력 및 비용을 정량화합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/merit-solutions.cloud-readiness-assessment"><img alt="clip_image014[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a309bac5-96a6-4668-8176-d90e0c9072e3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image014[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/merit-solutions.cloud-readiness-assessment" target="_blank">Azure 클라우드 준비: 2일 평가</a>: Microsoft Azure 앱 또는 인프라를 이동하는 것을 고려하고 있나요? 이 이틀 간의 평가는 클라우드로 이동하는 데 필요한 시간, 노력 및 비용을 정량화합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_kubernetesimplementation"><img alt="clip_image008[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0765f525-efa6-44b8-a3c7-4a81b4b93088.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image008[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_kubernetesimplementation" target="_blank">Azure Container Service: 10-Wk 구현</a>: 컨테이너에서 레거시 애플리케이션을 캡슐화합니다. Altoros의 엔지니어는 Azure Container Service로 원활하게 마이그레이션할 수 있도록 하고 컨테이너화된 런타임 환경 및 프로덕션 등급 기능을 활용하는 데 도움을 줍니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/decisivedata.decisive_data_azure_data_maturity_assessment"><img alt="clip_image016" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b8ac4b8d-c26a-4b7f-888d-66831e37bf15.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image016" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/decisivedata.decisive_data_azure_data_maturity_assessment" target="_blank">Azure 데이터 완성도: 3주 평가: 3</a>주 이내에 결정적 데이터는 완전한 BI 로드맵과 함께 Azure 데이터 기능 및 완성도 평가를 제공하며, 성숙한 데이터 문화를 향해 단계별로 수행할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluegranite.bluegraniteadpworkshop"><img alt="clip_image018" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b72a351d-d2db-462f-b1e7-2b05dd567888.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image018" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluegranite.bluegraniteadpworkshop" target="_blank">Azure Data Platform: 3일 워크샵: 이 워크샵</a>에서는 전략적 개요, 평가 및 시작 개념 증명이 포함된 Azure Data Platform을 소개합니다. 선임 BlueGranite 컨설턴트로부터 전문가의 지침을 받습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluegranite.azuredatabricksworkshop"><img alt="clip_image018[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/21df9efb-4cdd-4486-a1f4-4e7c496d2517.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image018[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluegranite.azuredatabricksworkshop" target="_blank">Azure Databricks: 1일 워크샵</a>: 이 현장 워크샵에서는 조직에서 최대 10명의 참석자가 Azure Databricks에 대한 자세한 개요를 받게 되므로 Azure Data Platform에 적합한 위치와 방법을 이해할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluegranite.azuredatabrickspoc"><img alt="clip_image019" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5aaf65d5-493c-40e9-8f5f-33df736ea5c8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image019" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluegranite.azuredatabrickspoc" target="_blank">Azure Databricks: 1-Wk 개념 증명</a>: 이 1주일에서 2주 간의 개념 증명에서 BlueGranite 전문가는 조직과 협력하여 데이터 엔지니어링, 데이터 과학 등에 대한 Azure Databricks&rsquo; 기능을 시연합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40457-azure-developer-hackathon"><img alt="clip_image020" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/df1193f7-3366-4d7b-8e0a-7621e5814acf.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image020" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40457-azure-developer-hackathon" target="_blank">Azure 개발자 Hackathon: 2일 가상 워크샵:</a> 이 강사 주도 워크샵은 이전 Microsoft 공식 교육 과정 또는 ASP.NET 및 C# 애플리케이션을 빌드하는 것과 동등한 환경을 기반으로 합니다. 실제 상황에서 학습을 향상시킵니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de10979-azure-fundamentals"><img alt="clip_image021" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3b2aa673-033f-426f-b00a-3c9b99470a6b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image021" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de10979-azure-fundamentals" target="_blank">Azure 기본 사항: 2일 가상 워크샵</a>: 강사가 주도하는 이 워크샵에서 학생들은 클라우드 컴퓨팅의 원칙을 소개하고 이러한 원칙이 Microsoft Azure 구현된 방식에 익숙해질 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/sierrasystems.sierrasystems_sierraconnectazureintegrationframe"><img alt="clip_image023" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8c158162-5ee6-46bb-95ea-78252157e678.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image023" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/sierrasystems.sierrasystems_sierraconnectazureintegrationframe" target="_blank">Azure Integration Framework: 5일 구현:</a> Sierra Systems는 IT 팀이 애플리케이션&rsquo; 원본 데이터를 연결하고, Microsoft Azure 플랫폼을 통해 엔터프라이즈를 동기화하고, 이를 통해 연결된 애플리케이션에 연결하도록 교육할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/mcaconnectllc.upgradetopowerbi"><img alt="clip_image025" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/587b347f-2304-424b-bb9d-1da659fefc1b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image025" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/mcaconnectllc.upgradetopowerbi" target="_blank">Azure IoT: 2일 POC:</a> MCA 커넥트 IoT 디바이스를 Azure IoT Hub에 연결하고, Stream Analytics를 통해 데이터를 전달하고, Azure SQL Server/Azure Data Lake에 데이터를 저장하고, 분석 및 경고를 위해 Microsoft Power BI 사용하여 데이터를 표시하는 방법을 보여 줍니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dmc.dmc-iot-workshop"><img alt="clip_image027" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e6e3a55e-1aec-4471-999e-206643355461.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image027" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dmc.dmc-iot-workshop" target="_blank">Azure IoT: 3일 워크샵</a>: 이 3일간의 워크샵에서 팀은 Azure IoT 플랫폼에 대해 알아보고 DMC&#39;엔지니어 및 개발자 팀과 직접 협력하여 IoT 솔루션에 대한 기술 전략을 만듭니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_aimlproofofconcept"><img alt="clip_image028" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/da885858-5df7-4998-a6f5-04032c14d03b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image028" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_aimlproofofconcept" target="_blank">Azure Machine Learning 서비스: 3-Wk PoC</a>: 개념 증명을 개발하는 것은 인공 지능이 작업에 가져올 수 있는 가치를 이해하고 아이디어의 타당성을 검증하는 바로 가기입니다. Altoros는 이와 관련하여 비즈니스 목표를 파악하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/sierrasystems.sierrasystems_azuremanagedservices"><img alt="clip_image023[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2771880e-af12-4063-8574-7515f09fd8e6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image023[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/sierrasystems.sierrasystems_azuremanagedservices" target="_blank">Azure Managed Services: 5일 구현:</a> Sierra Systems&rsquo; 지원을 선택하면 환경이 Azure에서 Azure 지원, 패치, 모니터링, 백업, 보안 및 SQL Server 및 Storage 받습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/inviso.inviso_azurereadinessassessment"><img alt="clip_image030" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b7de7065-2ade-4259-9f0a-7aaa0bdf0b21.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image030" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/inviso.inviso_azurereadinessassessment" target="_blank">Azure 마이그레이션 준비: 6-Wk 평가</a>: 성공적인 클라우드 마이그레이션은 서버 인프라에 대한 데이터 기반 이해로 시작됩니다. 이 인프라 평가는 워크로드 사용률을 분석하고 Azure 마이그레이션 권장 사항 및 비용 예측을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluegranite.bluegraniteasqltraining"><img alt="clip_image031" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9029bc0-a609-4c6f-b7ac-4de6d63d2a2d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image031" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluegranite.bluegraniteasqltraining" target="_blank">Azure SQL Data Warehouse: 4일 워크샵:</a> 이 실습 강사 주도 교육은 데이터 웨어하우스 개발자와 관리자가 클라우드에서 확장 가능한 고성능 분석을 위해 Azure SQL Data Warehouse에 있는 MPP 아키텍처를 채택하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/inviso.inviso_azuremigrationpoc"><img alt="clip_image030[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0773f2a-6ab4-4170-a06c-4934c1d3e6f0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image030[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/inviso.inviso_azuremigrationpoc" target="_blank">Azure 워크로드 마이그레이션: 8-Wk 개념 증명</a>: 이 서버 평가는 워크로드 사용률을 분석하고, 마이그레이션 권장 사항 및 비용 예측을 제공하며, 개념 증명으로 서비스로서의 인프라 워크로드 또는 컨테이너화된 앱을 Azure로 마이그레이션합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_btstologicapps_assessment"><img alt="clip_image033" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9db953a7-a6b7-466a-9cf5-10960be935ab.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image033" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_btstologicapps_assessment" target="_blank">BizTalk에서 Logic Apps로 마이그레이션: 3일 평가:</a> 평가를 통해 현재 BizTalk Server 통합 솔루션의 일부 또는 전부를 Logic Apps로 마이그레이션하는 타당성 및 프로세스를 이해하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_blockchainassessment"><img alt="clip_image028[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3bd2fecb-f39f-4942-a44d-dd6e74e936e2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image028[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_blockchainassessment" target="_blank">Enterprise 블록체인: 10일 평가:</a> 평가 단계에서 Altoros의 전문가들은 기업이 비즈니스 목표 및 기능 요구 사항을 설정하여 블록체인 여정을 시작하고 추가 채택에 필요한 비용과 시간을 예측하는 데 도움을 줄 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/agitare-technologies-inc.at-ciaa-std"><img alt="clip_image035" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/14fc86fa-5e6d-45c4-b659-d2ca4437e7a9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image035" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/agitare-technologies-inc.at-ciaa-std" target="_blank">클라우드 아키텍처: 4주 평가</a>: 이 4주 간의 Azure 아키텍처 평가는 관리, 기간 업무 및 IT 팀이 클라우드 배포 설계의 유효성을 검사하고 잠재적인 개선 영역을 식별하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cloudfoundryimplementation"><img alt="clip_image028[2]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/38364836-13ad-4a1b-b647-0c172cb4ce1c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image028[2]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cloudfoundryimplementation" target="_blank">Cloud Foundry 사용: 10Wk 구현</a>: 필요한 모든 통합을 설정하고 구성하여 원하는 클라우드 인프라에 배포된 본격적인 프로덕션 준비 Microsoft Azure 설치를 가져옵니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cloudfoundryworkshop"><img alt="clip_image028[3]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c3137fa-5e2e-4c3a-80b3-3c5eaa3f22eb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image028[3]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cloudfoundryworkshop" target="_blank">Cloud Foundry 교육 과정: 3일 워크샵:</a> Altoros 엔지니어의 이 교육은 BOSH를 사용하여 Cloud Foundry 클러스터를 빌드하고 운영하는 과정을 다룹니다. 또한 마이크로 서비스 아키텍처를 다루며 배포, 구성 및 관리에 대한 심층 분석을 포함합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/wipro-ltd.cmp-wipro"><img alt="clip_image037" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/40fc5a9f-2eb2-4c4b-a2f2-aefaf00ec776.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image037" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/wipro-ltd.cmp-wipro" target="_blank">클라우드 마이그레이션 플랫폼: 1시간 브리핑</a>: Wipro&#39;Cloud Migration Platform이 고객이 클라우드로의 여정을 가속화하는 데 어떻게 도움이 되는지 이해합니다. 여기에는 Wipro&#39;플랫폼의 개요 및 솔루션 데모가 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/netsmartz.cloud_migration_service"><img alt="clip_image039" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a804fdef-4364-4958-98f5-f312afb9d748.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image039" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/netsmartz.cloud_migration_service" target="_blank">Cloud Migration Service: 2-Wk Implmentation</a>: 이 참여는 워크로드가 퍼블릭, 프라이빗 또는 하이브리드인지 여부에 관계없이 워크로드를 Microsoft Azure 마이그레이션하는 것을 고려하는 조직에 적합합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synergy-technical.cloud_strategy_engagement"><img alt="clip_image041" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f592a418-19dd-4d68-ab70-137dae5ce3e1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image041" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synergy-technical.cloud_strategy_engagement" target="_blank">클라우드 전략 참여: 3일 평가</a>: 조직에서 IT 작업을 클라우드로 이동하는 작업을 탐색하려는 경우 Synergy Technical은 범위를 정의하고 향상된 민첩성을 위해 변경 속도를 평가하는 데 도움이 될 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cloudneeti.avyan-consulting"><img alt="clip_image043" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ea7a0125-e3df-4b3c-84fb-f692342d1c85.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image043" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cloudneeti.avyan-consulting" target="_blank">클라우드 워크로드 사이버 보안: 3-Wk 평가</a>: Cloudneetis&rsquo; 클라우드 보안 평가는 조직이 Microsoft Azure 및 Office 365 대한 보안 및 규정 준수 정책을 검색, 제어 및 적용하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de20532-developing-microsoft-azure-solutions"><img alt="clip_image021[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ae8b60ce-5f55-48ff-8f9b-4ba8630e0508.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image021[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de20532-developing-microsoft-azure-solutions" target="_blank">Azure 솔루션 개발: 4일 가상 워크샵</a>: 이 강사 주도 워크샵은 웹앱을 Azure로 이동하는 과정의 일환으로 웹앱을 사용하고 기능을 확장하는 방법을 보여 줍니다. 이 과정에서는 ASP.NET 플랫폼에 대한 이전 경험이 필요하지 않습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/microexcel-inc.3daydigitaltransformationworkshop"><img alt="clip_image045" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/caeba574-e994-46bf-aeb8-9ade29ed3f4e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image045" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/microexcel-inc.3daydigitaltransformationworkshop" target="_blank">디지털 트랜스포메이션 여정 3일 워크샵</a>: Microsoft 앱을 클라우드로 이동하는 방법을 평가하거나 로드맵을 빌드하려는 경우 Microexcel은 클라우드 환경의 상태를 평가하고 명확한 경로를 제공하기 위해 이 워크샵을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/stratus-innovations-group.dr-as-a-service-solution-offering"><img alt="clip_image047" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0fe7d9b2-0372-4792-833a-92be01c42ecc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image047" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/stratus-innovations-group.dr-as-a-service-solution-offering" target="_blank">DR as a Service: 1주 구현</a>: DRaaS(재해 복구-서비스)를 사용하면 조직이 저렴한 가격으로 IT 서버 인프라에 대한 원격 사이트 복구 솔루션을 제공할 수 있습니다. Stratus Innovations 그룹은 저렴하고 확장 가능한 재해 복구를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implementation_on_azure"><img alt="clip_image049" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/46b3071d-7acb-435a-b113-fd96b99d68ce.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image049" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implementation_on_azure" target="_blank">Azure의 Dynamics Nav: 4일 구현(미국)</a>: Compusoft Advisors는 현장 평가를 통해 고객&#39;위치에서 Microsoft Dynamics NAV 구현을 수행합니다. 여기에는 Azure Virtual Machines 인스턴스에 Dynamics NAV 애플리케이션 서버를 배포하는 작업이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implementation_on_azure_as"><img alt="clip_image050" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/99dc07a5-ab1a-402f-a7d8-3edf25cd356e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image050" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implementation_on_azure_as" target="_blank">Azure의 Dynamics Nav: 4일 구현(오스트레일리아)</a>: Compusoft Advisor는 현장 평가를 통해 고객&#39;위치에서 Microsoft Dynamics NAV 구현을 수행합니다. 여기에는 Azure Virtual Machines 인스턴스에 Dynamics NAV 애플리케이션 서버를 배포하는 작업이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implementation_on_azure_in"><img alt="clip_image050[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a8830f23-addc-41d1-b1ab-8195792a9872.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image050[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implementation_on_azure_in" target="_blank">Azure의 Dynamics Nav: 4일 구현(인도)</a>: Compusoft Advisors는 현장 평가를 통해 고객&#39;위치에서 Microsoft Dynamics NAV 구현을 수행합니다. 여기에는 Azure Virtual Machines 인스턴스에 Dynamics NAV 애플리케이션 서버를 배포하는 작업이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implementation_on_azure_uk"><img alt="clip_image049[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bed8da60-b4d9-48a1-9d6a-df2696327a8a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image049[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implementation_on_azure_uk" target="_blank">Azure의 Dynamics Nav: 4일 구현(영국)</a>: Compusoft Advisor는 현장 평가를 통해 고객&#39;위치에서 Microsoft Dynamics NAV 구현을 수행합니다. 여기에는 Azure Virtual Machines 인스턴스에 Dynamics NAV 애플리케이션 서버를 배포하는 작업이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implemetation_on_azure_ca"><img alt="clip_image051" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e24ff1d6-a3ca-4b0f-b67a-af416b79b1c3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image051" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/compusoft.dynamics_nav_implemetation_on_azure_ca" target="_blank">Azure의 Dynamics Nav: 4일 구현(캐나다)</a>: Compusoft Advisors는 현장 평가를 통해 고객&#39;위치에서 Microsoft Dynamics NAV 구현을 수행합니다. 여기에는 Azure Virtual Machines 인스턴스에 Dynamics NAV 애플리케이션 서버를 배포하는 작업이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40517-migrate-edw-azure-sql-data-warehouse"><img alt="clip_image052" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5cbb2c40-52f7-4a8c-8855-68e949e1bcdb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image052" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40517-migrate-edw-azure-sql-data-warehouse" target="_blank">EDW에서 Azure로 SQL 데이터 마이그레이션: 1일 워크샵</a>: 이 강사 주도 워크샵은 데이터 전문가를 위한 것입니다. 이 워크샵에서는 소매 체인을 온-프레미스 SQL Server 데이터 웨어하우스에서 Azure SQL Data Warehouse로 마이그레이션합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40503-enterprise-ready-cloud"><img alt="clip_image021[2]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/137699c4-bbae-43b6-a346-93ca4b07b8cf.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image021[2]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40503-enterprise-ready-cloud" target="_blank">Enterprise Ready Cloud: 1일 가상 워크샵:</a> 이 강사 주도 워크샵은 개인에게 Azure 배포 및 분산 관리를 관리하는 방법과 역외 개발자를 위한 원격 연결 및 개발 작업을 보호하는 방법을 설명합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/marquam.faststart-app-innovation"><img alt="clip_image054" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e2fde737-b339-422f-9755-f8dc6a205535.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image054" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/marquam.faststart-app-innovation" target="_blank">빠른 시작 | 앱 혁신: 6 - Wk Workshop</a>: Marquam은 Azure Bot Service 및 Azure Cognitive Services를 비롯한 최신 Microsoft 기술을 활용하여 생산성을 최대화하려는 조직을 지원하기 위해 이 FastStart 프로그램을 개발했습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de20533-implementing-azure-infrastructure"><img alt="clip_image055" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/af5753e8-e435-4360-b026-a10d53d15c42.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image055" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de20533-implementing-azure-infrastructure" target="_blank">Azure 인프라 구현: 5일 워크샵: 이 워크샵</a>에서는 학생들에게 Microsoft Azure 소개하고 온-프레미스가 아닌 Azure에서 인프라를 관리하는 방법을 설명합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bright-wolf.azure_iot_hub_industrial_product_springboard"><img alt="clip_image056" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f072578f-6522-4180-96db-eed2a23ee3ac.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image056" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bright-wolf.azure_iot_hub_industrial_product_springboard" target="_blank">산업 Azure IoT: 30일 개념 증명</a>: 산업용 연결된 제품 파일럿을 만들어 현장의 장비를 대시보드, 보고서 및 알림이 있는 Azure IoT Hub 솔루션에 안전하게 연결합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cloudfoundryassessment"><img alt="clip_image028[4]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8905133a-102f-4835-a448-aa01e25efa3d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image028[4]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cloudfoundryassessment" target="_blank">인프라 용량: 4일 평가</a>: Altoros 클라우드 설계자는 IT 인프라의 현재 상태를 평가하고, 요구 사항을 유도하고, 제한을 감지하고, 권장 사항을 제공하는 데 필요한 전략적 조언과 기술 전문 지식을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/unify-cloud-llc.infrastructure-lift-and-shift-datacenter-migration"><img alt="clip_image058" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90957448-373e-4b5a-8d62-6da208b7b979.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image058" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/unify-cloud-llc.infrastructure-lift-and-shift-datacenter-migration" target="_blank">인프라 리프트 앤 시프트: 4주 평가: 이 4</a>주 평가는 리프트 앤 시프트 전략을 통해 데이터 센터를 Azure 가상 머신 및 컨테이너로 마이그레이션하기 위한 자세한 계획 및 비용 분석을 만듭니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/vnb.vnb_az_int_ws"><img alt="clip_image059" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0341c3e-a1c4-48b4-a341-f91c476b1d59.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image059" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/vnb.vnb_az_int_ws" target="_blank">통합 플랫폼 현대화: 1주 POC</a>: 이 제한된 1주일 개념 증명 구현은 Azure Integration Platform-as-a-Service(iPaaS)가 조직&rsquo; 하이브리드 통합 플랫폼 이니셔티브에 적합한지 증명하도록 설계되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40516-intelligent_analytics"><img alt="clip_image055[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/425dcfd9-1bcb-4ef6-8315-fcdf81236e6f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image055[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40516-intelligent_analytics" target="_blank">지능형 분석: 1일 가상 워크샵</a>: IoT 없이 실시간 분석을 알아봅니다. 기계 학습 지원 채팅 파이프라인에서 지능형 대화를 사용하도록 설정하고 분석을 적용하여 실시간으로 고객 감정을 시각화합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/stratus-innovations-group.intelligent-factory-solution-offering"><img alt="clip_image060" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3062979e-60df-4900-8739-7bcdd08dde6e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image060" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/stratus-innovations-group.intelligent-factory-solution-offering" target="_blank">인텔리전트 팩터리: 2주 구현</a>: 디바이스, 컨트롤러, HPI(휴먼 머신 인터페이스) 및 에지 형식 소프트웨어를 중앙 IoT Hub에 빠르고 쉽게 연결합니다. 아키텍처의 핵심은 Stratus Innovations 그룹 IoT 프로토콜 게이트웨이 어댑터입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40504-intelligent-vending-machines"><img alt="clip_image052[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0829e3b4-572e-497f-af23-757e304c3bf4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image052[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40504-intelligent-vending-machines" target="_blank">지능형 자동 판매기: 1일 워크샵</a>: 이 강사 주도 워크샵은 지능형 자동 판매기용 IoT 솔루션을 구현하는 방법을 자세히 설명합니다. Azure Machine Learning 사용하여 주문형 가격 책정, 실시간 분석 및 메시징 흐름을 구동합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40505-internet-of-things"><img alt="clip_image052[2]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/81eb53ca-681e-470a-9d0a-2dc67ecfa4c2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image052[2]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40505-internet-of-things" target="_blank">사물 인터넷: 1일 가상 워크샵</a>: 이 강사 주도 워크샵은 Azure에서 고속 데이터를 분석하는 엔드 투 엔드 솔루션을 구현하는 방법을 자세히 설명합니다. 핫 및 콜드 경로에서 사용할 데이터를 필터링하는 람다 아키텍처를 만드는 방법을 알아봅니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de-40501-iot-for-business"><img alt="clip_image021[3]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e5246b83-d8c4-4c98-bf44-b2686a86b3da.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image021[3]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de-40501-iot-for-business" target="_blank">비즈니스용 IoT: 1일 가상 워크샵</a>: 강사 주도 워크샵에서는 IoT(사물 인터넷) 기술의 고유한 이점을 사용하여 뉴욕시의 교통 및 대중 교통을 개선하는 데 도움이 되는 스마트 시티 솔루션을 구축할 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/agitare-technologies-inc.at-iotws-1d"><img alt="clip_image035[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/381befef-11bb-4536-b711-a702bad34669.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image035[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/agitare-technologies-inc.at-iotws-1d" target="_blank">Azure 및 Raspberry Pi를 사용한 IoT: 1일 워크샵:</a> 온도 및 습도에 대한 간단한 모니터링 솔루션을 만들어 Azure IoT 서비스 및 Raspberry Pi를 통해 실습 경험을 얻을 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_logicapps_impl"><img alt="clip_image033[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15d8a028-95a0-4830-a4f1-7174c57491de.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image033[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_logicapps_impl" target="_blank">Logic Apps: 10일 구현</a>: Synegrate는 사용자와 협력하여 요구 사항을 이해하고, 고급 아키텍처를 만들고, Azure Logic Apps 사용하여 프로덕션 준비 사용 사례를 구현합니다. 결국 엔터프라이즈 통합 사용 사례는 Azure에 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_logicapps_assessment"><img alt="clip_image061" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dccd4557-0a14-47d3-b095-9b57015059c5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image061" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_logicapps_assessment" target="_blank">Logic Apps: 3일 평가</a>: 이 평가에서 Synegrate는 현재 통합 솔루션과 관련하여 Azure Logic Apps 기능과 이점을 이해하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_logicapps_poc"><img alt="clip_image062" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/181cbaa0-216d-4612-8087-c6a6182b57a3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image062" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_logicapps_poc" target="_blank">Logic Apps: 3일 개념 증명</a>: 이 개념 증명은 조직의 엔터프라이즈 통합 솔루션으로 Azure Logic Apps 타당성을 보여 주는 단일 사용 사례를 구현합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_aimlworkshop"><img alt="clip_image063" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/14db11c4-b4a8-4d35-b627-8b167383245d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image063" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_aimlworkshop" target="_blank">Machine Learning 프레임워크: 3일 워크샵:</a> Altoros의 엔지니어는 TensorFlow, Caffe2, Deeplearning4j, PyTorch 및 Keras를 비롯한 인기 있는 기계 학습 프레임워크의 내부 메커니즘에 대한 인사이트를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/convergence-consulting-group.machine_learning_poc"><img alt="clip_image065" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a3bbfa3-c8fa-4086-81ae-585e33f4957b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image065" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/convergence-consulting-group.machine_learning_poc" target="_blank">Machine Learning: 5일간의 개념 증명</a>: 이 워크샵은 기술 및 비즈니스 리더를 위한 것이며 고객&rsquo; 시설에서 현장에서 개최됩니다. 1일차는 비즈니스 문제 및 사용 사례 옵션에 중점을 둡니다. 2일차는 데이터를 검토하고 입력을 제공합니다. 3-5일은 기계 학습을 다룹니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cloudfoundrymigration"><img alt="clip_image063[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e23ce85e-3be0-491d-a23f-b8ba25fb47bd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image063[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cloudfoundrymigration" target="_blank">워크로드를 클라우드로 마이그레이션: 10Wk 구현</a>: 오픈 소스 Cloud Foundry 기술 및 상용 배포에 능숙한 Altoros는 프로덕션 워크로드를 클라우드 환경으로 마이그레이션하는 회사를 지원합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cosmosdbassessment?search=altoros&amp;page=1"><img alt="clip_image063[2]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d45549dc-50c8-43dc-b9f0-7044ff1a9ed1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image063[2]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_cosmosdbassessment?search=altoros&amp;page=1" target="_blank">Azure Cosmos DB로 마이그레이션: 10일 평가:</a> 이 평가 중에 Altoros는 데이터 원본, 레거시 애플리케이션, 보안 요구 사항, 인프라 및 데이터베이스 적합성을 Cosmos DB로 마이그레이션하고 최적화 및 마이그레이션 계획을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40532-mobile-app-innovation"><img alt="clip_image066" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6d5127b1-ed07-406d-9234-c3ace83ed494.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image066" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40532-mobile-app-innovation" target="_blank">모바일 앱 혁신: 1일 가상 워크샵</a>: 참석자는 항공 업계의 고객을 위한 엔드투엔드 모바일 수하물 추적 시스템의 구현을 통해 안내되며, 모든 디바이스에서 자산을 추적하는 IoT 솔루션을 설계합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de10993-on-prem-identity-infrastructure"><img alt="clip_image066[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d7425e78-e3e9-41fb-9281-8d61f2c4d5bb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image066[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de10993-on-prem-identity-infrastructure" target="_blank">온-프레미스 ID 인프라: 2일 워크샵: 이 워크샵</a>에서는 IT 전문가에게 온-프레미스 Active Directory Domain Services 환경을 Azure Active Directory 통합하는 방법과 디렉터리 서비스로 Azure Active Directory 사용하는 방법을 설명합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de10992-on-prem-core-infrastructure-azure"><img alt="clip_image067" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3480ad25-120d-4322-a308-63ff0ef602c4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image067" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de10992-on-prem-core-infrastructure-azure" target="_blank">온-프레미스 핵심 인프라: 3일 워크샵: 강사 주도 워크샵</a>은 하이브리드 솔루션을 배포할 때 고객이 활용할 수 있는 Azure Compute, Azure Storage 및 네트워크 서비스를 비롯한 다양한 구성 요소를 다룹니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_blockchainproofofconcept"><img alt="clip_image068" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6342d5d1-170a-45c6-832c-c1702493f904.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image068" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/altoros.altoros_blockchainproofofconcept" target="_blank">권한 있는 블록체인: 10-Wk 개념 증명</a>: Altoros는 기업이 조직의 특정 요구 사항을 해결하기 위해 블록체인의 잠재력을 평가하는 데 도움을 줍니다. Altoros는 최적의 솔루션을 구현하기 위해 시장에서 사용할 수 있는 다양한 블록체인 프레임워크를 조사할 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/sierrasystems.sierrasystems_powerappscloudchallengeforazure"><img alt="clip_image069" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/207c01d4-9d51-4652-bbd5-91f7e0531c54.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image069" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/sierrasystems.sierrasystems_powerappscloudchallengeforazure" target="_blank">Azure용 PowerApps Cloud Challenge: 5일 PoC:</a> 새 Azure 데이터 원본의 볼륨이 빠르게 증가하고 있으며 최종 사용자 도구로 이 데이터를 조작해야 하는 요구도 증가하고 있습니다. Sierra Systems는 PowerApps 비즈니스 혜택을 빠르고 비용 효율적으로 달성할 수 있도록 지원합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40535-serverless-architecture"><img alt="clip_image070" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5cb7247e-7501-41d1-b120-450696c2c292.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image070" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40535-serverless-architecture" target="_blank">서버리스 아키텍처: 1일 가상 워크샵:</a> 이 강사 주도 워크샵은 Azure Functions, Azure Logic Apps, Azure Event Grid, Azure Cosmos DB 및 Azure Storage 사용하여 Azure 내에서 서버리스 아키텍처를 설정하고 구성하는 데 중점을 둡니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/netsmartz.azure_smart_cloud_operations"><img alt="clip_image071" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c772d69f-4666-45ea-8cc6-0b6426f7f9f5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image071" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/netsmartz.azure_smart_cloud_operations" target="_blank">스마트 클라우드 운영: 4-Wk 구현</a>: 이 스마트 클라우드 운영 패키지는 클라우드 인프라 24-7을 유지하는 데 필요한 필수 지원 및 빠른 응답을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40510-sql-server-hybrid-cloud"><img alt="clip_image070[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6fac2abd-b90e-43cb-8ea2-b090152cbc3f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image070[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dynamicsedge.de40510-sql-server-hybrid-cloud" target="_blank">SQL Server 하이브리드 클라우드: 1일 가상 워크샵</a>: 강사 주도 워크샵에서는 대규모 부하 급증을 처리하고, 보안을 강화하여 PCI 데이터를 암호화하고, 보관 전략을 구현하는 하이브리드 클라우드 재해 복구 솔루션을 설계합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_sqlmig_accelerator"><img alt="clip_image072" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/568e8802-0fbf-4002-b543-c089c0cd41a4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image072" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_sqlmig_accelerator" target="_blank">SQL Server 마이그레이션: 10일 구현</a>: 데이터베이스 개발 및 관리 팀과 협력하여 Synegrate는 SQL Server 마이그레이션 평가의 일환으로 개발된 SQL 마이그레이션 계획을 실행합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_sqlmig_assess"><img alt="clip_image072[1]" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe8b0c26-10c9-4700-8878-7a61973b584c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image072[1]" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/synegrate.syn_sqlmig_assess" target="_blank">SQL Server 마이그레이션: 3일 평가:</a> 이 평가는 클라우드 데이터베이스 마이그레이션과 관련된 문제 및 문제를 이해하는 데 도움이 되며 온-프레미스 데이터베이스 워크로드를 Azure SQL Server 마이그레이션하기 위한 명확한 계획을 생성합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/stratus-innovations-group.virtual-datacenter"><img alt="clip_image073" border="0" height="120" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b13a32ab-2788-425d-a0fe-1155146d8edd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="clip_image073" width="120"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/stratus-innovations-group.virtual-datacenter">가상 데이터 센터: 2일 구현:</a> Virtual Datacenter 제품은 퍼블릭 및 하이브리드 클라우드 IT 인프라를 빠르게 확장할 수 있는 기능을 제공하여 혁신적인 기능과 대규모 클라우드 IT 경제 규모의 비즈니스 모델을 활용할 수 있도록 합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

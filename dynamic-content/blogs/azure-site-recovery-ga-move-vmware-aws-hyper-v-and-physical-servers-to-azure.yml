@@ -1,0 +1,93 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 957376e5a1937826c81c615c832aad1911eb335c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913131"
+Slug: azure-site-recovery-ga-move-vmware-aws-hyper-v-and-physical-servers-to-azure
+Title: 'Azure Site Recovery GA: VMware, AWS, Hyper-V 및 물리적 서버를 Azure로 이동'
+Summary: Azure Site Recovery를 사용하여 애플리케이션 인식 원클릭 마이그레이션의 일반 공급에 대해 발표하게 되어 기쁩니다. 이 새로운 GA를 사용하면 Microsoft Migration Accelerator의 모든 기능이 이제 Azure Site Recovery에 통합됩니다.
+Content: >-
+  <p>고객이 여러 환경 &ndash; VMware, Hyper-V, AWS(Amazon Web Services) 또는 물리적 서버 &ndash; 에서 Azure로 다른 유형의 워크로드를 이동할 수 있도록 Azure <a href="https://aka.ms/asr_migration_ga_product">Site Recovery</a>를 사용하여 애플리케이션 인식 원클릭 마이그레이션의 GA(일반 공급)를 발표합니다. 이 새로운 GA를 사용하면 이제 모든 Microsoft Migration Accelerators&rsquo; 기능이 Azure Site Recovery에 통합됩니다. ASR을 사용하면 Azure 지역 간에 고객 워크로드를 마이그레이션할 수도 있습니다.&nbsp; 고객은 무료로 Azure&nbsp;로 마이그레이션할 수 있도록 <a href="https://aka.ms/asr_migration_ga_pricing">31일 동안 Azure Site Recovery</a>를 사용하여 온-프레미스 워크로드를 Azure에 복제할 수 있습니다. <a href="https://aka.ms/asr_migration_ga_aod">Microsoft&rsquo;의 포괄적인 AoD(가용성)</a> 솔루션은 고객이 클라우드 통합 재해 복구, 클라우드 마이그레이션 및 DevTest와 같은 엔터프라이즈 시나리오를 사용하도록 설정하여 하이브리드 클라우드를 <a href="https://aka.ms/asr_migration_ga_hybrid_cloud">활용할</a> 수 있도록 지원합니다. Microsoft Azure 및 가용성 제품인 ASR(Azure Site Recovery)을 통해 조직은 인프라 투자를 원활하게 활용하고 확장하면서 신속하게 혁신해야 하는 민첩성을 결합하여 거의 무제한의 컴퓨팅 및 스토리지를 활용할 수 있습니다. AoD를 사용하면 고객은 ASR을 사용하여 다른 유형의 워크로드를 Azure로 마이그레이션하고 Microsoft Azure 기능으로 IT 문제를 해결할 수 있습니다.&nbsp;</p>
+
+
+  <div align="alignright" id="attachment_317504" width="359"><a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/07/16/ASR_Migration.png"><img alt="Migration to Azure" class="wp-image-317504 " height="335" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ASR_Migration-396x369.png" width="359"></a>AWS Windows 인스턴스를 Azure로 마이그레이션할 수 있습니다.</div>
+
+
+  <ul>
+   <li>내부 리소스 및 인프라에 대한 수요를 줄여 IT 부담을 줄이고 온-프레미스 인프라에 대한 비용을 낮춥니다.</li>
+   <li>진정한 하이브리드 환경을 위해 앱을 실행하고 데이터를 저장하는 위치 제어</li>
+   <li>계층 1 및 계층 2 워크로드 모두에 대해 확장 가능하고 안정적인 플랫폼인 Microsoft Azure 활용</li>
+   <li>요청 시 거의 무제한인 클라우드 확장성을 사용하여 데이터 센터 민첩성 향상</li>
+  </ul>
+
+
+  <p>&nbsp;테스트된 ASR&rsquo; 및 검증된 마이그레이션 기능은 Exchange, SharePoint 및 SQL Server 포함한 광범위한 워크로드에 사용할 수 있습니다.</p>
+
+
+  <ul>
+   <li><strong>가동 중지 시간이 거의 없는 애플리케이션 이동: </strong> 프로덕션 사용자에게 미치는 영향을 최소화하여 단일 애플리케이션 또는 전체 데이터 센터를 클라우드로 이동</li>
+   <li><strong>영향을 주지 않는 마이그레이션 테스트: </strong> 프로덕션 워크로드를 Azure에 복제하고, 테스트를 실행하여 준비 상태를 보장한 다음, 영향을 주지 않는 마이그레이션을 위해 사용자를 클라우드에 온보딩합니다.</li>
+   <li><strong>마이그레이션 또는 복구를 위해 데이터를 한 번 복제합니다 </strong>. ASR 및 AoD를 사용하면 애플리케이션 데이터를 한 번만 복제한 다음, 해당 데이터를 사용하여 재해 복구를 수행하거나 워크로드를 마이그레이션하거나 Azure에서 DevTest 환경을 만들 수 있습니다.</li>
+  </ul>
+
+
+  <p>시작하는 데 사용할 수 있는 몇 가지 리소스는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li><a href="https://aka.ms/asr_migration_ga_vmware_documentation">온-프레미스 VMware 가상 머신 또는 물리적 서버와 Azure 간 보호 설정</a></li>
+   <li><a href="https://aka.ms/asr_migration_ga_hyperv_documentation">온-프레미스 Hyper-V 사이트와 Azure 간에 보호 설정</a></li>
+  </ul>
+
+
+  <p>다음 표에는 ASR을 사용하여 Azure로 마이그레이션할 수 있는 다양한 온-프레미스 원본 환경이 나와 있습니다.</p>
+
+
+  <table width="100%">
+   <tbody>
+    <tr>
+     <td width="32%"><strong>원본</strong></td>
+     <td width="14%"><strong>대상</strong></td>
+     <td width="17%"><strong>가용성 </strong></td>
+     <td width="35%"><strong>지원되는 게스트 OS 유형</strong></td>
+    </tr>
+    <tr>
+     <td width="32%">Hyper-V 2012 R2</td>
+     <td width="14%">Azure</td>
+     <td width="17%">사용 가능</td>
+     <td width="35%">Azure에서 지원하는 모든 게스트 OS 유형</td>
+    </tr>
+    <tr>
+     <td width="32%">Hyper-V 2008 R2 SP1 및 2012</td>
+     <td width="14%">Azure</td>
+     <td width="17%">사용 가능</td>
+     <td width="35%">Windows* 및 Linux*</td>
+    </tr>
+    <tr>
+     <td width="32%">VMware vCenter Server 5.1, 5.5, ESXi 5.1, 5.5 및 물리적 서버</td>
+     <td width="14%">Azure</td>
+     <td width="17%">사용 가능</td>
+     <td width="35%">Windows* 및 Linux*</td>
+    </tr>
+    <tr>
+     <td width="32%">Amazon Web Services(Windows API만 해당)</td>
+     <td width="14%">Azure</td>
+     <td width="17%">사용 가능</td>
+     <td width="35%">Windows Server 2008 R2 SP1+</td>
+    </tr>
+    <tr>
+     <td width="32%">Hyper-V 2012</td>
+     <td width="14%">Hyper-V 2012R2</td>
+     <td width="17%">사용 가능</td>
+     <td width="35%">Hyper-V에서 지원하는 모든 게스트 OS 유형</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <blockquote><em>*Windows Server 2008 R2 SP1+, CentOS 6.4, 6.5, 6.6, Oracle Enterprise Linux 6.4, 6.5, SUSE Linux Enterprise Server 11 SP3으로 제한</em></blockquote>
+
+
+  <p>시작할 준비가 되면 <a href="https://aka.ms/asr_migration_ga_product">추가 제품 정보를 확인</a>하여 Azure Site Recovery를 사용하여 워크로드를 Microsoft Azure 마이그레이션을 시작합니다. 또한 Weve&rsquo;를 사용하면 Azure Site Recovery를 더 쉽게 시도하여 <a href="https://aka.ms/asr_migration_ga_aod">주문형 가용성</a>을 사용하도록 설정하고 데이터 센터를 확장하고 보호할 수 있습니다. 복제하는 모든 새 물리적 서버 또는 가상 머신 <a href="https://aka.ms/asr_migration_ga_pricing">에 대해 31일 동안 Site Recovery</a> 의 강력한 복제 기능을 무료로 사용할 수 있습니다. Azure Site Recovery는 <a href="https://aka.ms/asr_migration_ga_oms">Microsoft OMS(Operations Management Suite)</a> 고객이 다른 클라우드 공급업체와 일치하지 않는 하이브리드 클라우드 관리 기능을 제공할 수도 있습니다. OMS는 System Center 가치를 확장하며 Azure 또는 AWS, Windows Server 또는 Linux, Hyper-V 또는 VMware를 실행하는 &ndash; 위치에 관계없이 회사 워크로드를 관리하고 보호할 수 있습니다.</p>

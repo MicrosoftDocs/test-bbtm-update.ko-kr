@@ -1,0 +1,164 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9297aa146b7aa9eb03891baecb4f82eb9e4f04e3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897664"
+Slug: general-availability-of-azure-maps-support-for-azure-active-directory-power-apps-integration-and-more
+Title: Azure Active Directory, Power Apps 통합 등에 대한 Azure 지도 지원의 일반 공급
+Summary: Microsoft Azure 지도 대한 신규 및 최근 업데이트에는 Azure Active Directory Azure 지도 통합 지원, Microsoft Power Apps 플랫폼과의 통합, 검색 및 라우팅 서비스 개선 사항, 새로운 날씨 서비스 REST API(미리 보기) 및 모바일에 대한 확장된 적용 범위가 포함됩니다. 서비스.
+Content: >-
+  <p><em>이 블로그 게시물은 Azure 지도 수석 프로그램 관리자인 Chad Raynor가 공동 저술했습니다.</em></p>
+
+
+  <p>Microsoft Azure 지도 대한 새로운 업데이트와 최신 업데이트에는 Azure Active Directory(일반 공급) 통합과 Azure 지도 통합에 대한 지원이 포함됩니다Power Apps  플랫폼, 검색 및 라우팅 서비스 향상, 새로운 Weather Services REST API(미리 보기) 및 모바일 서비스에 대한 확장된 적용 범위.</p>
+
+
+  <p>Azure 지도 대한 최신 기능 및 통합에 대해 자세히 알아보려면 다음을 참조하세요.</p>
+
+
+  <h2>Azure AD 지원과 Azure 지도 통합 이제 일반 공급</h2>
+
+
+  <p>이제 고객이 엔터프라이즈 수준 보안을 위해 Azure 지도 및 Azure AD에 의존할 수 있도록 Azure AD(Azure Active Directory)와 Azure 지도 통합이 일반 공급됩니다. 이 업데이트에는 세분화된 액세스 <a href="https://docs.microsoft.com/en-us/azure/azure-maps/azure-maps-authentication#picking-a-role-definition" target="_blank">제어를 위한 추가 RBAC(역할 기반 제어) 역할에</a> 대한 지원이 포함됩니다. Azure 지도 개별 Azure AD 사용자, 그룹, 애플리케이션, Azure 리소스 및 Azure 관리 ID를 포함하여 Azure RBAC에 대한 모든 보안 주체 유형에 대한 액세스를 지원합니다. 또한 이제 Azure 지도 설명서에는 시나리오 유형에 따라 올바른 구현 방법을 선택하는 데 도움이 되도록 <a href="https://docs.microsoft.com/en-us/azure/azure-maps/how-to-manage-authentication#determine-authentication-and-authorization" target="_blank">구현 노력에 대한 확장된 구현 예제 및 추정치</a>가 포함되어 있습니다.&nbsp;&nbsp;&nbsp;</p>
+
+
+  <h2>Azure 지도 구동되는 Power Apps 지리 공간적 기능은 현재 미리 보기로 제공됩니다.</h2>
+
+
+  <p>Microsoft Power Apps Azure 지도 제공하는 지리 공간적 기능 <a href="https://powerapps.microsoft.com/en-us/blog/new-geospatial-features-in-power-apps/" target="_blank"> 의 미리 보기를 발표</a>했습니다. 여기에는 대화형 맵 구성 요소와 주소 제안 구성 요소가 모두 포함됩니다. Power Apps 비즈니스 요구에 맞게 사용자 지정 앱을 빌드하는 빠른 앱 개발 환경을 제공하는 데이터 플랫폼과 함께 앱, 서비스 및 커넥터 제품군입니다.</p>
+
+
+  <p>새 지리 공간적 구성 요소를&rsquo; 시작하려면 이러한 기능을 활용하기 위해 전문 개발자가 될 필요가 없습니다. 끌어서 놓기 및 로우 코드 개발의 용이성으로 이러한 구성 요소를 추가할 수 있습니다. 예를 들어 현장 서비스 작업자가 작업 위치 및 자세한 그림을 포함한 수리 요구 사항을 보고할 수 있는 앱을 빌드할 수 있습니다.</p>
+
+
+  <p>미리 보기에는 다음이 포함됩니다.</p>
+
+
+  <ul>
+      <li>위성 이미지를 비롯한 여러 기본 지도 스타일을 <strong>지원하는 대화형 벡터 타일 맵</strong>입니다.</li>
+      <li>입력하고 지오코딩할 때 동적 주소 제안으로 <b>검색</b>을 처리합니다. 구성 요소는 사용자가 주소를 선택하고 구조화된 데이터로 반환할 수 있는 여러 잠재적 주소 일치를 제안합니다. 이를 통해 앱은 도시, 거리, 지방 자치 단체&mdash;, 심지어 위도 및 경도&mdash;와 같은 정보를 많은 로캘 및 국제 주소 형식에 친숙한 형식으로 추출 할 수 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4931558b-bbdb-4855-ab36-2192ed95f20e.png"><img alt="Azure Maps interactive vector tiles in Power Apps." border="0" height="683" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/06888534-da24-4586-a6f6-2afdce699a61.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Power Apps Azure 지도 대화형 벡터 타일" width="1024"></a></p>
+
+
+  <p><i>그림 </i><i>1.</i> <i> Power Apps Azure 지도 대화형 벡터 타일</i></p>
+
+
+  <h2>검색 및 경로 서비스 향상</h2>
+
+
+  <h3>브랜드 이름으로 비즈니스 위치 검색</h3>
+
+
+  <p>Azure 지도 통해 <a href="https://docs.microsoft.com/rest/api/maps/search" target="_blank">Search 서비스</a> 고객은 전 세계적으로 약 1억 POI(관심 지점) 위치에 액세스할 수 있습니다. 고객이 POI 검색 결과를 특정 브랜드로 제한할 수 있도록 POI 검색 기능을 포함하는 모든 Search API에서 지원하는 <em>brandSet</em> 매개 변수를 도입했습니다.</p>
+
+
+  <p>예를 들어 애플리케이션 사용자는 레스토랑을 입력&lsquo;하거나 범주 &lsquo;레스토랑을 선택하여 레스토랑을&rsquo; 검색하려고 하며 브랜드&rsquo; 우산 아래에 있는 모든 레스토랑을 표시하려고 합니다. API 요청에서 여러 브랜드 또는 하나의 브랜드 이름만 전달할 수 있으며 결과에 따라 결과가 필터링됩니다.</p>
+
+
+  <h3>미리 보기의 POI 범주 트리 API</h3>
+
+
+  <p>Azure 지도 POI Search API는 거의 600개 범주 및 하위 범주를 지원합니다. 고객이 이 정보를 더 쉽게 이해하고 활용하여 쿼리를 최적화할 수 있도록 <a href="https://docs.microsoft.com/rest/api/maps/search" target="_blank">검색 서비스</a> 포트폴리오에 <a href="https://docs.microsoft.com/en-us/rest/api/maps/search/getsearchpoicategorytreepreview" target="_blank">POI 범주 트리 API를 추가하고 POI</a> 검색 기능을 다루는 모든 Search API에서 지원하는 <em>categorySet</em> 매개 변수를 도입했습니다.&nbsp; Azure 지도 POI 범주 API는 각 범주에 대한 ID와 함께 지원되는 POI 범주 및 하위 범주의 전체 목록을 제공합니다.</p>
+
+
+  <p>고객은 Search API와 함께 POI 범주 API를 사용하여 특정 범주 ID에 매핑된 POI를 쿼리할 수 있습니다. 이러한 기능을 사용하면 고객이 설명 문자열 대신 범주 ID를 사용할 때 POI 검색 결과의 정확도를 높일 수 있습니다.</p>
+
+
+  <h3>이동 거리별 요청 도달 가능 범위</h3>
+
+
+  <p>Azure 지도 차량 및 물류 관련 시나리오를 지원하기 위해 차량 라우팅 기능의 전체 제품군을 제공합니다. Azure 지도 Isochrone API라고도 하는 <a href="https://docs.microsoft.com/en-us/rest/api/maps/route/getrouterange" target="_blank">경로 범위 가져오기 API</a>를 통해 고객은 시간, 연료 또는 에너지에 따라 사용자가 도달할 수 있는 단일 지점에서의 거리를 결정할 수 있습니다. 또한 API를 통해 고객은 다각형 경계(등시선)를 반환하는 이동 거리에 따라 도달 가능한 범위를 요청할 수 있습니다. 시각화에 적합한 반환된 등시선을 사용하여 공간 쿼리를 필터링할 수도 있습니다. 그러면 공간 필터링을 위한 다양한 애플리케이션이 열립니다.&nbsp;</p>
+
+
+  <p>예를 들어 지정된 지점에서 트래픽 인시던트가 있는 경우 인시던트에 대한 경고 드라이버로 업데이트해야 하는 전자 트래픽 기호를 알아야 합니다. 업데이트할 징후를 파악하기 위해 사고까지 운전한 지 5킬로미터 이내에 어떤 징후가 있는지 알고 싶습니다. 경로 범위 API를 사용하여 도달 가능한 범위를 계산할 수 있으며, 그 후에는 반환된 다각형을 사용하여 해당 다각형에 상주하는 징후를 확인할 수 있습니다. 작동 중인 경로 범위 기능을 <a href="https://azuremapscodesamples.azurewebsites.net/index.html?sample=Route%20range%20control" target="_blank">테스트하려면 코드 샘플을</a> 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0271e0dd-fc35-4cc0-84d9-89ac5bf2bf00.png"><img alt="Map visualizing reachable range based on travel distance." border="0" height="761" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7a1a1522-c16a-4315-811b-61b7e87429c4.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="이동 거리에 따라 도달 가능한 범위를 시각화하는 지도입니다." width="1024"></a></p>
+
+
+  <p><em>그림 2. 이동 거리에 따라 도달 가능한 범위를 시각화하는 지도입니다.</em></p>
+
+
+  <h3>커넥터 유형별로 전기 자동차(EV) 충전소 검색</h3>
+
+
+  <p>Azure 지도 <a href="https://docs.microsoft.com/rest/api/maps/route/" target="_blank">Route 서비스는</a> 오늘날&rsquo; 트럭과 같은 개인, 전기 및 상용차에 대한 라우팅 지원을 다루는 여러 라우팅 관련 고객 시나리오를 지원합니다. 고객이 EV(전기 자동차) 애플리케이션에 대한 고급 기능을 빌드할 수 있도록 하기 위해 고객은 이제 특정 커넥터 유형을 지원하는 전기 자동차 스테이션으로 결과를 제한하여 가장 적합한 EV 충전소를 찾을 수 있습니다. 사용자가 계획된 경로를 따라 적절한 충전소가 있는지 여부를 확인할 수 있는 애플리케이션이 있거나, 직원이 고객을 위해 상품을 배달하는 동안 차량을 충전할 수 있는 특정 유형의 충전소가 충분한지 알고 싶은 비즈니스 차량 소유자로 간주합니다. 이제 유사 항목 검색 및 <a href="https://docs.microsoft.com/rest/api/maps/search/getsearchnearby" target="_blank">주변</a> <a href="https://docs.microsoft.com/rest/api/maps/search" target="_blank">API 검색</a>과 같은 POI 검색 기능을 사용하여 모든 Azure 지도 <a href="https://docs.microsoft.com/rest/api/maps/search/getsearchfuzzy" target="_blank">Search</a> 서비스 API를 통해 이 작업을 수행할 수 있습니다.</p>
+
+
+  <h2>모바일 서비스 업데이트</h2>
+
+
+  <h3>확장된 적용 범위</h3>
+
+
+  <p>현재 거의 3,200개 도시를 포괄하는 모바일 서비스 범위를 전 세계적으로 확장하여 동급 최고의 대중 교통 데이터를 제공한다고 발표했습니다. 몇 가지 개선 사항을 강조하기 위해 이제 리히텐슈타인과 하이데라바드(인도), Cte&ocirc; dAzur&rsquo;(프랑스), 다카르(세네갈), 리오 베르데(브라질) 및 산 Francisco-San 호세(CA, 미국)와 같은 대도시 지역과 국가를 지원합니다. 전체 모바일 서비스 <a href="https://docs.microsoft.com/azure/azure-maps/mobility-coverage" target="_blank">적용 범위 페이지에서</a> 지원되는 모든 지하철 지역을 찾을 수 있습니다. 하나의 메트로 지역은 국가/지역, 도시 또는 여러 도시의 그룹일 수 있습니다.</p>
+
+
+  <p>MetroID는 더 이상 여러 모바일 API&mdash;에 필요한 매개 변수가 아니므로 고객이 전송 데이터를 더 쉽게 요청할 수 있습니다. 다음 <a href="https://docs.microsoft.com/en-us/rest/api/maps/mobility" target="_blank">모바일 서비스</a> API에 대한 요청 매개 변수 metroID(선택 사항)를 변경했습니다.</p>
+
+
+  <ul>
+      <li>인근 대중교통 이용</li>
+      <li>전송 중지 정보 가져오기</li>
+      <li>대중교통 경로 가져오기</li>
+      <li>실시간 도착 가져오기</li>
+      <li>대중교통 회선 정보 가져오기</li>
+  </ul>
+
+
+  <p>따라서 Azure 지도 고객은 대중 교통 경로 방향 API를 호출할 수 있도록 지하철 ID 가져오기 API를 호출하여 먼저 <em>metroID</em> 매개 변수를 요청할 필요가 없습니다&rsquo;.</p>
+
+
+  <h2>날씨 서비스 업데이트</h2>
+
+
+  <h3>심각한 날씨 경고</h3>
+
+
+  <p>악천후 현상은 우리의 일상 생활과 비즈니스 운영에 큰 영향을 미칠 수 있습니다. 예를 들어 열대 성 폭풍, 강풍 또는 홍수와 같은 악천후로 인해 도로가 폐쇄되고 물류 회사가 목적지에&mdash; 도달하고 냉장 식품의 차가운 체인을 깨는 데 지연이 발생할 수 있습니다. Azure 지도 악천후 경보 API는 공식 정부 기상 기관 및 전 세계 지역 기상 경보 공급자로부터 전 세계적으로 사용할 수 있는 악천후 경보를 반환합니다.</p>
+
+
+  <p>이 서비스는 경보 유형, 범주, 수준 및 허리케인, 뇌우, 번개, 폭염 또는 산불과 같이 요청된 위치에 대한 활성 심각 경보에 대한 세부 정보를 반환할 수 있습니다. 예를 들어 물류 관리자는 비즈니스 위치 및 계획된 경로와 함께 지도의 악천후 조건을 시각화하고 운전자 및 현지 근로자와 추가로 조율할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e47990e5-2112-410b-83e6-91e3f4028eaf.png"><img alt="Active Severe Weather Alerts on a map." border="0" height="512" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e2667cb5-ce47-4f61-9322-92563799a117.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="지도의 활성 악천후 경보입니다." width="1024"></a></p>
+
+
+  <p><i>그림 </i><i>3.</i> <i> 지도의 활성 악천후 경보입니다.</i></p>
+
+
+  <h3>Azure 지도 인덱스 API</h3>
+
+
+  <p>날씨 조건이 토양 수분 정보를 포함하여 야외 건설, 실내 활동, 실행 또는 농업과 같은 특정 활동에 최적인지 알고 싶은 경우가 있을 수 있습니다.Azure 지도 Indices API는 사용자가 향후 활동을 계획하도록 안내하는 인덱스 값을 반환합니다. 예를 들어 Health Mobile 애플리케이션은 오늘이 달리기나 골프와 같은 다른 야외 활동에 좋은 날씨임을 사용자에게 알릴 수 있으며, 소매점은 예측된 인덱스 값에 따라 디지털 마케팅 캠페인을 최적화할 수 있습니다. 서비스는 현재 및 다음 5일, 10일 및 15일의 일일 인덱스 값으로 반환됩니다.</p>
+
+
+  <h3>과거 및 미래의 레이더 및 위성 타일 요청</h3>
+
+
+  <p>실시간 레이더 및 위성 타일 외에도 Azure 지도 고객은 이제 직접 <a href="https://docs.microsoft.com/en-us/rest/api/maps/renderv2/getmaptilepreview" target="_blank">맵 타일 가져오기 v2 API</a>를 호출하거나 Azure 지도 웹 및 모바일 SDK를 통해 타일을 요청하여 맵 오버레이로 데이터 시각화를 향상시키기 위해 과거 및 미래의 타일을 요청할 수 있습니다. 방사형 타일은 과거 최대 1.5시간, 향후 최대 2시간 동안 제공되며 5분 간격으로 사용할 수 있습니다. 적외선 타일은 10분 간격으로 과거 최대 3시간 동안 제공됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/96506c42-c2b0-47c0-afb6-08f26e91a2ad.png"><img alt="Historical radar tiles visualized on a map." border="0" height="683" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/458782c9-a93a-4bcf-87a2-85deb44f6eed.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="지도에서 시각화된 기록 레이더 타일입니다." width="1024"></a></p>
+
+
+  <p><i>그림 </i><i>4.</i> <i> 지도에서 시각화된 기록 레이더 타일입니다.</i></p>
+
+
+  <h2>많은 의견 부탁드립니다.</h2>
+
+
+  <p>우리는 항상 Azure 지도 플랫폼을 성장시키고 개선하기 위해 노력하고 있으며, 여러분으로부터 듣고 싶습니다. &rsquo;Azure 지도 플랫폼을 최대한 활용하려면 여기를 참조하세요.</p>
+
+
+  <ul>
+      <li>기능 요청이 있나요? <a href="https://feedback.azure.com/forums/909172-azure-maps" target="_blank">피드백 사이트에서</a> 요청을 추가하거나 투표합니다.</li>
+      <li>코드를 작동하는 데 문제가 있나요? Azure 블로그에서 다루고 싶은 주제가 있나요? <a href="https://stackoverflow.com/questions/tagged/azure-maps" target="_blank">Azure 지도 포럼</a>에서 문의하세요.</li>
+      <li>코드 샘플을 찾고 계신가요? &rsquo;<a href="https://azuremapscodesamples.azurewebsites.net/" target="_blank">Azure 지도 코드 샘플 사이트에</a>는 여러 가지가 있습니다. 공유하려는 훌륭한 항목을 작성하시겠습니까? <a href="https://github.com/Azure-Samples/AzureMapsCodeSamples" target="_blank">GitHub</a> 참여하세요.</li>
+      <li>자세한 내용은 <a href="https://docs.microsoft.com/azure/azure-maps/index" target="_blank">Azure 지도 설명서를 참조하세요</a>.</li>
+  </ul>

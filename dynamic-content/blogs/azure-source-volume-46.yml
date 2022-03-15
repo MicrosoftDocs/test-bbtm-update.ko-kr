@@ -1,0 +1,274 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3f1ce945cb010c29ff27c85b025455adb03974a4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913122"
+Slug: azure-source-volume-46
+Title: Azure.Source - 볼륨 46
+Summary: 현재 미리 보기 상태, 일반 공급, 뉴스 & 업데이트 등을 포함하여 Azure에서 발생하는 작업을 최신 상태로 유지합니다.
+Content: >-
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/reduce-your-exposure-to-brute-force-attacks-from-the-virtual-machine-blade/">가상 머신 블레이드에서 무차별 암호 대입 공격에 대한 노출 감소</a> - 공격에 대한 노출을 줄이는 한 가지 방법은 가상 머신의 포트가 열려 있는 시간을 제한하는 것입니다. 포트는 관리 또는 유지 관리 작업을 수행하기 위해 제한된 시간 동안만 열려 있어야 합니다. Just-In-Time VM 액세스는 가상 머신의 포트가 열려 있는 시간을 제어하는 데 도움이 됩니다. NSG(네트워크 보안 그룹) 규칙을 활용하여 보안 구성 및 액세스 패턴을 적용합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/respond-to-threats-faster-with-security-center-s-confidence-score/">Security Centers&rsquo; 신뢰도 점수를</a> - 사용하여 위협에 더 빠르게 대응 Azure Security Center는 Azure에서 실행되는 모든 리소스에 대한 가시성을 제공하고 잠재적 또는 검색된 문제를 경고합니다. Security Center는 팀이 신뢰도 점수라는 새로운 기능을 사용하여 경고를 심사하고 우선 순위를 지정하는 데 도움이 될 수 있습니다. 신뢰도 점수는 분석가가 사용하는 업계 모범 사례, 지능형 알고리즘 및 프로세스를 적용하여 경고를 자동으로 조사하여 위협이 합법적인지 여부를 확인하고 의미 있는 인사이트를 제공합니다.</p>
+
+
+  <p align="center"><img alt="Screenshot of Azure Security Center with Confidence Scores" border="0" height="321" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f597199b-563f-461a-8e61-8febbeb5d425.jpg" style="border: 0px currentcolor; border-image: none; background-image: none;" title="신뢰도 점수가 있는 Azure Security Center" width="500"></p>
+
+
+  <h2>코리와 화요일</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Awesome-Demo-of-Azure-Migrate-tool"><img alt="Thumbnail of Tuesdays With Corey | Awesome Demo of Azure Migrate tool " border="0" height="139" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b3328356-ce5b-451e-87ab-5fe77541ace6.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="코리 | 화요일 Azure Migrate 도구의 멋진 데모 " width="244"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Awesome-Demo-of-Azure-Migrate-tool">코리 | 화요일 Azure Migrate 도구</a> </strong> - Corey Sanders의 멋진 데모, 회사 VP - Microsoft Azure Compute 팀은 Azure Compute 팀의 수석 PM 관리자인 Abhishek Hemrajani와 함께 Azure Migrate 유틸리티에 대해 이야기했습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>&nbsp;</h2>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/dpdk-data-plane-development-kit-for-linux-vms-now-generally-available/">이제 Linux VM용 DPDK(데이터 평면 개발 키트)를 일반 공급</a> - Azure Linux VM(Virtual Machines)용 DPDK(데이터 평면 개발 키트)는 VM&rsquo; 커널 네트워크 스택을 우회하는 성능 집약적 애플리케이션을 위한 빠른 사용자 공간 패킷 처리 프레임워크를 제공합니다. DPDK는 네트워크 기능 가상화 구현을 구동하는 데 있어 핵심적인 성능 차별화를 제공합니다. Azure의 고객은 이제 여러 Linux OS 배포판(Ubuntu, RHEL, CentOS 및 SLES)이 있는 Linux VM에서 실행되는 DPDK 기능을 사용하여 PPS(초당 패킷 수)를 높일 수 있습니다.</p>
+
+
+  <p align="center"><img alt="Block diagram showing Azure Linux VMs with and without Data Plane Development Kit (DPDK)" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/79388c08-6a14-44e3-9034-0ef7eab117ec.png" title="DPDK(Data Plane Development Kit)가 있고 없는 Azure Linux VM"></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-sql-data-warehouse-gen2-now-generally-available-in-france-and-australia/">Azure SQL Data Warehouse Gen2는 이제 프랑스와 호주에서</a> - 일반 공급됩니다. Azure SQL Data Warehouse(Azure SQL DW)는 빠르고 유연하며 안전한 분석 플랫폼으로 데이터 전반에서 SQL 기반 보기를 제공합니다. 탄력적이므로 클라우드 데이터 웨어하우스를 프로비전하고 몇 분 안에 테라바이트 단위로 확장할 수 있습니다. Azure SQL DW Gen2는 최상의 Microsoft 소프트웨어 및 하드웨어 혁신을 통해 쿼리 성능과 동시성을 크게 향상시킵니다. 컴퓨팅 최적화 Gen2 계층은 이제 22개 지역에서 사용할 수 있습니다.</p>
+
+
+  <h2>Azure Friday</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Stack-An-extension-of-Azure/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Stack-An-extension-of-Azure">Azure Friday | Azure Stack - Azure</a> </strong> - Ultan Kinahan의 확장은 Scott Hanselman과 조인하여 Azure Stack이 연결에 관계없이 필요한 위치에 배치할 수 있는 Azure 일관된 클라우드 플랫폼인 방법을 설명합니다. 클라우드 전략, 에지/연결 끊김 기능, 거버넌스 및 주권 문제 해결 및 온-프레미스에서 PaaS 서비스를 실행하는 기능에 몇 가지 주요 이점을 제공합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>&nbsp;</h2>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/multi-member-consortium-support-with-azure-blockchain-workbench-1-3-0/">Azure Blockchain Workbench 1.3.0을 사용한 다중 멤버 컨소시엄 지원</a> - 매월 릴리스 주기를 계속하면 Azure Blockchain Workbench 1.3.0을 사용할 수 있습니다. 이 릴리스는 더 빠르고 안정적인 배포, 더 나은 트랜잭션 안정성, 다중 멤버 Ethereum PoA 컨소시엄에서 Workbench를 배포하는 기능, AAD 대한 간단한 배포 전 스크립트, Workbench API 작업을 위한 샘플 코드 및 도구를 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/hardening-the-security-of-azure-iot-edge-2/">Azure IoT Edge</a> - 의 보안 강화 Azure IoT Edge 보안 관리자는 보안 실리콘 하드웨어를 추상화하여 IoT Edge 디바이스 및 모든 구성 요소를 보호하기 위한 잘 바인딩된 보안 코어입니다. 보안 강화를 위한 중심 지점이며 원래 디바이스 제조업체(OEM)에 기술 통합 지점을 제공합니다. IoT Edge 보안 관리자는 본질적으로 가능한 경우 보안 실리콘 하드웨어와 함께 작동하는 소프트웨어로 구성되어 있으며 최대한의 보안을 보장할 수 있도록 지원합니다.</p>
+
+
+  <p align="center"><img alt="Block diagram showing Azure IoT Edge security manager" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9c8ec96d-1b98-49e4-80fe-04650a70ed69.png" title="Azure IoT Edge 보안 관리자" width="448"></p>
+
+
+  <p>랩 - <a href="https://blogs.msdn.microsoft.com/devtestlab/2018/08/21/public-environment-repository-in-labs/">의 공용 환경 리포지토리</a> 각 랩에 대한 Azure Resource Manager 템플릿의 공용 리포지토리를 다시 릴리스할&#39;있습니다. 리포지토리를 사용하여 외부 GitHub 원본에 직접 연결하지 않고도 환경을 만들 수 있습니다. 리포지토리에는 Azure Web Apps, Service Fabric 클러스터 및 개발자 SharePoint 팜 환경과 같은 자주 사용되는 템플릿이 포함되어 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/speech-services-august-2018-update/">Speech Services 2018년 8월 업데이트</a> - Cognitive Services Speech SDK(버전 0.6.0)에 대한 다른 업데이트의 릴리스를 발표합니다. 이 릴리스에서는 Windows 10(x64) 및 Linux(x64)에서 Java에 대한 지원을 추가했습니다. 또한 .NET Standard 2.0에 대한 지원을 Linux 플랫폼으로 확장하고 있습니다. SDK의 샘플 섹션은 새로 지원되는 언어의 사용을 보여주는 샘플로 업데이트되었습니다. Speech Devices SDK에 영향을 주는 변경 내용도 있습니다.</p>
+
+
+  <p>Azure 가상 머신 - <a href="https://azure.microsoft.com/en-us/blog/cross-subscription-dr/">에 대한 구독 간 재해 복구</a> ASR(Azure Site Recovery)을 사용하여 Azure 가상 머신에 대한 DR(교차 구독 재해 복구) 지원을 발표합니다. 이제 Azure IaaS 애플리케이션용 DR을 동일한 Azure Active Directory 테넌트에 있는 다른 구독으로 구성할 수 있습니다. 이제 Azure 환경의 구독 토폴로지 변경 없이 IaaS 애플리케이션에 대한 비즈니스 연속성 및 재해 복구 요구 사항을 충족하는 데 도움이 되는 구독의 지리적 클러스터 내에서 원하는 다른 Azure 지역에 가상 머신을 복제할 수 있습니다. Azure 지역 간 재해 복구는 ASR을 사용할 수 있는 모든 Azure 지역에서 사용할 수 있습니다.</p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/managed-instance-general-purpose-name-changes/">관리되는 인스턴스 범용 이름 변경</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/ease-customization-by-migrating-projects-to-the-inheritance-process-model-vsts-sprint-139-update/">프로젝트를 상속 프로세스 모델로 마이그레이션: VSTS 스프린트 139 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/iot-edge1-0-1/">Azure IoT Edge 1.0.1 릴리스</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/data-factory-supports-service-principal-and-msi-authentications-for-azure-blob-connector/">Data Factory는 Azure Blob 커넥터에 대한 서비스 주체 및 MSI 인증을 지원합니다.</a></li>
+  </ul>
+
+
+  <p>몇 가지 업데이트는 다음을 포함하여 Azure HDInsight에서 향상된 환경을 지원합니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-hdinsight-is-now-available-in-south-india/">Azure HDInsight는 이제 인도 남부에서 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/av2-and-g-series-vms-are-available-in-azure-hdinsight/">A_V2 시리즈 VM은 Azure HDInsight에서 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/kafka1-1/">Azure HDInsight에서 Kafka 1.1 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/g-series-vms-are-available-in-azure-hdinsight/">G 시리즈 VM은 Azure HDInsight에서 사용할 수 있습니다.</a></li>
+  </ul>
+
+
+  <h2>Azure 팟캐스트</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" valign="middle" width="300">
+     <p>
+     <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode243.mp3">HTML5 오디오가 지원되지 않음</audio>
+     </p>
+     </td>
+     <td>
+     <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-243-Azure-File-Sync">Azure 팟캐스트: 에피소드 243 - Azure 파일 동기화</a> </strong> - Azure Files 팀의 PM인 Sibonay Koo는 방금 GA를 진행한 새로운 서비스인 Azure 파일 동기화에 대해 설명합니다. 그녀는 새로운 서비스를 사용하기 위한 사용 사례뿐만 아니라 이를 최대한 활용하기 위한 팁과 요령을 제공합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>&nbsp;</h2>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center">
+     <p align="left"><a href="https://www.youtube.com/watch?v=JSWji3bPDJc"><img alt="How to access Cloud Shell from within Microsoft docs - Azure Tips and Tricks" border="0" height="139" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1f85c018-fa10-4c26-b633-e7ccfe327456.png" style="display: inline; background-image: none;" title="Microsoft 문서 내에서 Cloud Shell에 액세스하는 방법 - Azure 팁 및 트릭" width="244"></a></p>
+
+     <p><strong><a href="https://www.youtube.com/watch?v=JSWji3bPDJc">Microsoft 문서 | 내에서 Cloud Shell에 액세스하는 방법 Azure 팁 및 트릭</a></strong></p>
+     </td>
+     <td valign="top">
+     <p><a href="https://www.youtube.com/watch?v=cePvuKDdNv8"><img alt="How to start, restart, stop or delete multiple VMs - Azure Tips and Tricks" border="0" height="139" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6805709e-63c5-4413-887b-ac5776028c78.png" style="display: inline; background-image: none;" title="여러 VM을 시작, 다시 시작, 중지 또는 삭제하는 방법 - Azure 팁 및 Tricks" width="244"></a></p>
+
+     <p><strong><a href="https://www.youtube.com/watch?v=cePvuKDdNv8">여러 VM을 시작, 다시 시작, 중지 또는 삭제하는 방법 | Azure 팁 및 트릭</a></strong></p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>&nbsp;</h2>
+
+
+  <h2>기술 콘텐츠 및 교육</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/migrate-windows-server-2008-with-azure-site-recovery/">Azure Site Recovery를 사용하여 Windows Server 2008을 Azure로 마이그레이션</a> - Azure Site Recovery를 사용하면 운영 체제, 데이터 및 애플리케이션을 포함하여 Windows Server 2008 머신을 Azure로 쉽게 마이그레이션할 수 있습니다. 몇 가지 기본 설정 단계를 수행하고, Azure 구독에서 스토리지 계정을 만든 다음, 스토리지 계정에 서버를 복제하여 Azure Site Recovery를 시작하기만 하면 됩니다. Azure Site Recovery는 데이터 복제를 오케스트레이션하고 준비가 되면 복제 서버를 Azure로 마이그레이션할 수 있습니다. Azure Site Recovery를 사용하여 VMware 가상 머신, Hyper-V 또는 물리적 서버에서 실행되는 서버를 마이그레이션할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-block-blob-storage-backup/">Azure 블록 Blob Storage Backup</a> - Azure Blob Storage Microsoft&#39;확장성이 뛰어난 클라우드 개체 저장소입니다. Blob Storage 이미지, 문서 및 기타 파일 형식과 같은 구조화되지 않은 데이터를 저장하는 데 적합합니다. Blob Storage는 기본 제공 복제를 지원하지만 데이터 복제가 애플리케이션 오류로부터 보호되지 않는다는 것을 이해하는 것이&#39;. 이 블로그 게시물에서 Hemant Kathuria는 모든 만들기, 바꾸기 및 삭제 작업에 대한 블록 Blob이 포함된 스토리지 계정의 매주 전체 및 매일 증분 백업을 수행하는 데 사용할 수 있는 백업 솔루션을 간략하게 설명합니다. 또한 솔루션은 필요한 경우 스토리지 계정 복구를 안내합니다.</p>
+
+
+  <p align="center"><img alt="Architectural diagram of a backup solution for Azure Blob Storage Backup" border="0" height="310" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7785016-fb25-4221-940c-6e4ad6c37f59.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Azure Blob Storage Backup 솔루션 아키텍처 다이어그램" width="500"></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/logic-apps-flow-connectors-will-make-automating-video-indexer-simpler-than-ever/">Logic Apps, Flow 커넥터는 Video Indexer 자동화를 그 어느 때보다</a> - 간단하게 만듭니다. Video Indexer는 최근에 새롭고 향상된 Video Indexer V2 API를 출시했습니다. 이 RESTful API는 서버 간 통신과 클라이언트 간 통신을 모두 지원하며 Video Indexer 사용자가 비디오 및 오디오 인사이트를 애플리케이션 논리에 쉽게 통합하여 새로운 환경과 수익 창출 기회를 제공합니다. 통합을 더욱 쉽게 하기 위해 새 API와 호환되는 새 Logic Apps 및 Flow 커넥터도 추가했습니다. 새 커넥터를 사용하여 비디오에서 인사이트 추출을 자동화하는 Microsoft Flow 템플릿을 사용하여 새 커넥터를 빠르게 시작하는 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/azuredev/2018/08/22/webjobs-in-azure-with-net-core-2-1/">.NET Core 2.1</a> - 을 사용한 Azure의 WebJobs WebJob은 App Service의 백그라운드에서 실행되는 프로그램입니다. 추가 비용 없이 웹앱과 동일한 컨텍스트에서 실행됩니다. .NET Core에서 WebJob을 만드는 것은&#39;어렵지 않지만, 특히 로깅 및 DI와 같은 몇 가지 .NET Core 구이를 사용하려는 경우 몇 가지 요령을 알아야 합니다. 이 게시물에서 Sander Rossel은 .NET Core 2.1을 사용하여 WebJob을 빌드하고 Visual Studio, Azure Portal 및 VSTS를 사용하여 Azure에 릴리스하는 방법을 보여 줍니다.</p>
+
+
+  <p><a href="https://medium.com/microsoftazure/azure-machine-learning-in-plain-english-e85c50cf8a9c">일반 영어로</a> - Azure Machine Learning 데이터 과학자이자 저자인 Siraj Raval은 최근 Azure Machine Learning 대한 12분 분량의 비디오 개요를 공개했습니다. 이 게시물에 포함된 비디오는 기계 학습을 위한 몇 가지 특정 Azure 서비스의 세부 정보를 가져오기 전에 클라우드 컴퓨팅 및 Microsoft Azure 일반적으로 개요로 시작합니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/appserviceteam/2018/08/23/devtalk-app-service-ssl-settings-revamp/">//DevTalk: App Service &ndash; SSL 설정 App</a> Service SSL 설정 환경 개선 - 은 App Service에서 가장 많이 사용되는 기능 중 하나입니다. 고객 피드백에 따라 Azure App Service에서 인증서를 관리하는 전반적인 환경을 해결하고 개선하기 위해 사용자 환경을 몇 가지 변경했습니다. SSL 바인딩 편집, 프라이빗 인증서 세부 정보, 인증서 업로드 및 공용 인증서 추가의 향상된 기능에 대해 알아보려면 이 게시물을 확인하세요.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/azuredev/2018/08/23/azure-content-spotlight-api-management-suite-vsts-extension-v2-0/">Azure 콘텐츠 추천 &ndash; API Management Suite &ndash; VSTS 확장 v2.0</a> - 이 스포트라이트는 VSTS 확장인 API Management Suite에 대한 것입니다. VSTS 확장의 목적은 API Management를 릴리스 수명 주기로 가져와서 Azure Portal에서 지원되는 많은 작업을 수행할 수 있도록 하는 것입니다. 또한 릴리스된 모든 엔드포인트가 안전한지 확인하기 위한 보안 검사도 포함되어 있습니다. 원본은 GitHub 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://medium.com/microsoftazure/operationalize-your-deep-learning-models-with-azure-cli-2-0-131e125a36a3">Azure CLI 2.0</a> - 을 사용하여 심층 Learning 모델 운영 Microsoft의 AI &amp; Machine Learning 과학자인 프란체스카 라제리(Francesca Lazzeri)는 Azure CLI(Azure Command-Line Interface) 2.0을 사용하여 Kubernetes 클러스터에 딥 러닝 모델을 웹 서비스로 배포하는 방법을 보여줍니다. 이 방법은 Azure ML CLI 명령 집합을 사용하여 모델 배포 프로세스를 간소화합니다.</p>
+
+
+  <h2>AI Show</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/AI-Show/Sketch2Code"><img alt="Thumbnail of AI Show | Sketch2Code - Learn" border="0" height="124" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5de2a862-d953-4161-a278-c2035bc78250.jpg" style="display: inline; background-image: none;" title="AI Show | Sketch2Code - 알아보기" width="244"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/AI-Show/Sketch2Code">AI Show | Sketch2Code</a> </strong> - 디자인 패턴을 감지하고, 필기 텍스트를 이해하고, 구조를 이해하고, 마지막으로 HTML을 빌드하여 이 애플리케이션이 직접 그린 디자인을 AI가 있는 HTML 코드로 변환하는 방법을 알아봅니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>&nbsp;</h2>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-consulting-offers-may/">Azure Marketplace 컨설팅 제품: 5월</a> - Azure Marketplace는 모든 Azure 소프트웨어 및 컨설팅 요구 사항에 가장 적합한 대상입니다. 5월에는 26개의 컨설팅 제품이 온보딩 기준을 성공적으로 충족했으며, Imaginet 및 클라우드 거버넌스에서 Azure 10일 워크샵으로 앱 마이그레이션: Cloudneeti의 3-Wk 평가 등 라이브로 진행되었습니다.</p>
+
+
+  <h2>The IoT Show</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-for-Smart-Spaces"><img alt="Thumbnail of Internet of Things Show | Azure IoT for Smart Spaces " border="0" height="139" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0eaa7ec6-0244-4a53-8a96-44d34c5da1c5.jpg" style="display: inline; background-image: none;" title="사물 인터넷 표시 | 스마트 공간용 Azure IoT" width="244"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-for-Smart-Spaces">사물 인터넷 표시 | 스마트 공간용 Azure IoT</a> </strong> - Azure IoT 팀의 개발자인 리라나 휴즈(Lyrana Hughes)를 만나보세요. Lyrana와 그녀의 팀은 스마트 빌딩 및 스마트 공간 분야의 파트너와 협력하여 Azure IoT 내에서 이 새로운 기능 세트를 개발하고 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Microsoft-Smart-IoT-Campus"><img alt="Thumbnail of Internet of Things Show | Microsoft Smart IoT Campus " border="0" height="139" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/78cbcb69-b7cc-4ad6-9d11-9d227d81879c.jpg" style="display: inline; background-image: none;" title="사물 인터넷 표시 | Microsoft Smart IoT Campus " width="244"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Microsoft-Smart-IoT-Campus">사물 인터넷 표시 | Microsoft Smart IoT Campus</a> </strong> - 워싱턴주 레드먼드의 Microsoft Campus는 다양한 방법으로 IoT를 활용하는 스마트 캠퍼스입니다. IoT Show는 Microsoft Digital Group의 Applied Innovation 팀이 스마트 빌딩을 위한 새로운 IoT 기술을 테스트하고 개발하는 랩 중 하나를 방문하는 데 성공했습니다. 이 에피소드에서는 맥도날드-밀러의 제레미 리치몬드(Jeremy Richmond)가 응용 혁신 팀과 함께 개발되어 Microsoft&#39;캠퍼스에서 HVAC 시스템의 유지 관리에 사용되는 솔루션을 데모하여 IoT 센서 정보 및 디바이스를 Azure IoT 및 Dynamics 365 연결된 필드 서비스와 통합합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>&nbsp;</h2>
+
+
+  <h2>산업</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/driving-rapid-industry-digital-transformation-with-azure-resources-to-get-you-started/">Azure &ndash; 를 사용하여 업계 혁신 추진 Microsoft 및 프리미어 파트너의 전용 산업 리소스를 통해 버전 1을 시작하기 &ndash;</a> 위해 새로운 솔루션, 콘텐츠 및 지침이 거의 매일 릴리스됩니다.- 월간 시리즈가 될 것을 약속하는 이 첫 번째 게시물은 Azure가 일반적인 과제를 해결하고 다양한 산업에서 새로운 기회를 유도하는 방법에 초점을 맞춘 일련의 최신 리소스를 집계합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/expanded-azure-blueprint-for-ffiec-compliant-workloads/">확장된 Azure Blueprint for FFIEC 규격 워크로드</a> - FFIEC(Federal Financial Institution Examination Council) 규제 워크로드에 대한 확장된 청사진의 일반 공급에 대해 발표합니다. 더 많은 금융 서비스 고객이 Azure 클라우드 플랫폼으로 이동함에 따라 이 확장된 청사진은 안전하고 규정을 준수하는 방식으로 네 가지 참조 아키텍처를 배포하는 방법을 설명합니다. 또한 Azure에서 빌드할 때 Microsoft가 사용자 대신 구현하는 보안 제어와 고객 책임 보안 제어를 구현하는 방법을 파악하는 것에서 추측을 수행합니다.</p>
+
+  <!-- MEDIA ITEMS -->
+
+
+  <h2>클라우드 전문가&#39;이번 주 Azure</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://www.youtube.com/watch?v=9pxFJPJS8p4"><img alt="Thumbnail of A Cloud Guru's Azure This Week - 24 August 2018 with Lars Klint" border="0" height="139" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ae659d75-1d02-4e57-aca0-62a86b3b0816.png" style="display: inline; background-image: none;" title="2018년 8월 24일 - Lars Klint를 사용하는 클라우드 전문가의 Azure" width="244"></a></p>
+     </td>
+     <td valign="top">
+     <p><a href="https://www.youtube.com/watch?v=9pxFJPJS8p4">클라우드 전문가&rsquo; Azure 이번 주 - 8월 24일</a> - 이번 주 Azure에서 Lars는 Azure의 세 가지 새로운 기능인 MySQL 및 PostgreSQL용 VNet 서비스 엔드포인트, 이제 VSTS용 Zeppelin 및 Azure API Management 확장을 지원하는 Azure HDInsight Apache Phoenix에 대해 설명합니다. 또한 Microsoft의 AI 챌린지에 참여하여 훌륭한 상을 획득하세요.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

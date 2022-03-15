@@ -1,0 +1,51 @@
+### YamlMime:Yaml
+ms.openlocfilehash: bd9a0a51a0c968576e264a33e7ccbdfcd7ec7628
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897963"
+Slug: know-exactly-how-much-it-will-cost-for-enabling-dr-to-your-azure-vm
+Title: Azure VM에 DR을 사용하도록 설정하는 데 드는 비용을 정확히 파악
+Summary: Azure는 Azure Site Recovery를 통해 Azure Virtual Machines에 대한 기본 제공 DR(재해 복구) 솔루션을 제공합니다. Azure는 가장 광범위한 글로벌 범위 외에도 가용성 집합 및 가용성 영역의 데이터 센터 오류로 랙 수준 오류를 완화하는 것부터 장애 조치(failover)를 통해 대규모 이벤트로부터 Azure Site Recovery를 사용하여 별도의 지역으로 보호하는 것까지 업계에서 가장 포괄적인 복원력 전략을 가지고 있습니다.
+Content: >-
+  <p>Azure는 ASR(Azure <a href="https://azure.microsoft.com/en-in/services/site-recovery/" target="_blank">Site Recovery</a> )을 통해 Azure Virtual Machines에 대한 기본 제공 DR(재해 복구) 솔루션을 제공합니다. <a href="https://blogs.microsoft.com/blog/2018/03/14/microsoft-expands-cloud-services-in-europe-and-into-middle-east-to-meet-growing-customer-demand/" target="_blank">Azure는 가장 광범위한 글로벌 범위</a> 외에도 가용성 집합 및 가용성 영역의 데이터 센터 오류로 랙 수준 오류를 완화하는 것부터 ASR을 사용하여 별도의 지역으로 장애 조치(failover)를 통해 대규모 이벤트로부터 보호하는 것까지 업계에서 가장 포괄적인 복원력 전략을 가지고 있습니다. 일반적인 질문은 Azure 가상 머신에 대한 DR 구성과 관련된 비용에 관한 것입니다. 우리는 경청하고 우선순위를 정했습니다.</p>
+
+
+  <p>ASR을 사용하여 Azure VM에 대한 재해 복구를 구성하면 다음과 같은 요금이 발생합니다.</p>
+
+
+  <ul>
+   <li>VM당 ASR 라이선스 비용입니다.</li>
+   <li>원본 VM 디스크에서 다른 Azure 지역으로 데이터 변경 내용을 복제하기 위한 네트워크 송신 비용. ASR은 기본 제공 압축을 사용하여 데이터 전송 요구 사항을 약 60% 줄입니다.</li>
+   <li>복구 사이트의 스토리지 비용. 일반적으로 원본 지역 스토리지와 복구용 스냅샷으로 복구 지점을 유지하는 데 필요한 추가 스토리지를 합친 양과 동일합니다.</li>
+  </ul>
+
+
+  <p>6개의 가상 머신을 사용하는 3계층 애플리케이션에 대한 DR 비용을 예측하기 위한 이 <a href="https://aka.ms/a2a-cost-estimator" target="_blank">샘플 비용 계산기를</a> 확인할 수 있습니다. 모든 서비스는 비용 계산기에 미리 구성되어 있습니다. 6개의 가상 머신에는 12개의 표준 HDD 디스크와 6개의 Premium SSD 디스크가 있습니다. 따라서 DR 지역에는 18개의 디스크가 생성됩니다. 각 표준 디스크는 하루에 10GB의 속도로 데이터가 변경될 것으로 예상되며 각 프리미엄 디스크는 하루에 20GB의 속도로 데이터가 변경될 것으로 예상됩니다. 일일 데이터 변경 속도는 복구 지점 보존을 기본값인 24시간으로 간주하는 스토리지 스냅샷 요금이 됩니다.</p>
+
+
+  <p>ASR은 압축을 사용하여 원본 지역에서 대상 지역으로 전송할 데이터를 줄이며 압축 비율은 일반적으로 약 50%입니다. 따라서 전체 데이터 변경 내용의 40%가 지역 간에 전송되며, 이는 모든 6개의 VM에서 매월 약 3TB가 됩니다. 샘플 비용 계산기에는 이러한 모든 요금이 나열됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/802b3f77-827c-495b-8ecf-223b03ca4cce.png"><img alt="Pricing calculator" border="0" height="509" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bd70bbf8-df17-4bef-93f7-10beb9d51f8b.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="가격 계산기" width="964"></a></p>
+
+
+  <p align="left">특정 사용 사례의 가격 책정이 어떻게 변동되는지 확인하려면 예상 사용량에 맞게 변수를 적절하게 변경하세요. ASR 라이선스 비용에 대한 VM 수를 키로 지정할 수 있습니다. DR 지역에서 예상 스토리지 비용을 얻기 위해 모든 VM에서 예상되는 총 데이터 변경률 및 유형과 함께 관리 디스크 수를 사용할 수 있습니다. 또한 0.4의 압축 인수를 적용한 후 한 달 동안 총 데이터 변경률을 사용하여 지역 간에 데이터를 전송하는 데 발생하는 대역폭 비용을 가져올 수 있습니다.</p>
+
+
+  <p>위의 비용 외에도 테스트 장애 조치(failover) 작업 또는 장애 조치(failover) 작업을 사용하는 실제 재해 복구를 사용하여 재해 복구 훈련의 일부로 만든 VM에 대한 추가 컴퓨팅 비용이 발생합니다. 또한 장애 조치(failover) 시 VM과 함께 애플리케이션이 제대로 작동하는 데 필요한 부하 분산 장치 및 공용 IP와 같은 리소스에 대한 비용을 미리 지불합니다.</p>
+
+
+  <p>AZURE 지역 간의 재해 복구는 ASR을 사용할 수 있는 <a href="https://aka.ms/a2a-supported-regions" target="_blank">모든 Azure 지역에서</a> 사용할 수 있습니다. 오늘 ASR<a href="https://aka.ms/a2a-getting-started" target="_blank">을 시작하세요</a>. <a href="https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftwitter.com%2FAzSiteRecovery&amp;data=02%7C01%7Cv-cabas%40microsoft.com%7C5412de55c6764309cceb08d65fe27188%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636801823512696530&amp;sdata=TTA0J9lq9Ko%2B1opmYx4Xtg%2BFNScfZmL7K1wQPFIpPYM%3D&amp;reserved=0" target="_blank">Twitter에서 최신</a> 업데이트를 받고 피드백을 공유하세요.</p>
+
+
+  <h2>관련 링크 및 추가 콘텐츠</h2>
+
+
+  <ul>
+   <li>Azure VM에 대한 재해 복구를 구성하여 <a href="https://aka.ms/a2a-getting-started" target="_blank">시작</a>합니다.</li>
+   <li>Azure VM을 복제하기 위해 <a href="https://aka.ms/a2a-support-matrix" target="_blank">지원되는 구성</a> 에 대해 자세히 알아봅니다.</li>
+   <li>도움이 필요하신가요? <a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=hypervrecovmgr" target="_blank">지원을 위해 ASR 포럼</a>에 문의하세요.</li>
+   <li>새로운 아이디어를 기여하고 기존 아이디어를 투표하여 <a href="https://feedback.azure.com/forums/256299-site-recovery" target="_blank">ASR을 개선할</a> 수 있는 방법을 알려주세요.</li>
+  </ul>

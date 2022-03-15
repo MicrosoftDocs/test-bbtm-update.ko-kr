@@ -1,0 +1,259 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6b56422cf8a02cf304d0cb3bae13d69c0659c456
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898038"
+Slug: custom-login-scopes-single-sign-on-new-asp-net-web-api-updates-to-the-azure-mobile-services-net-backend
+Title: 사용자 지정 로그인 범위, Single Sign-On, 새 ASP.NET Web API – Azure Mobile Services .NET 백 엔드에 대한 업데이트
+Summary: 소셜 로그인 공급자에 대한 사용자 지정 인증 범위, 스토어 애플리케이션에 대한 Single Sign-On, 최신 ASP.NET Web API 대한 종속성 업데이트, Azure Mobile Services .NET 백 엔드의 최신 릴리스의 다른 업데이트 중.
+Content: >-
+  다음을 포함하여 Azure Mobile Services .NET 백 엔드에 대한 많은 업데이트를 릴리스했습니다.
+
+  <ul>
+   <li>인증 공급자의 사용자 지정 범위</li>
+   <li>Windows Store 애플리케이션에 대한 Single Sign-On 지원</li>
+   <li>Web API 5.2에 대한 종속성이 업데이트됨</li>
+  </ul>
+
+  Azure Mobile Services .NET을 접하는 경우 <a href="https://azure.microsoft.com/blog/2014/07/11/azure-mobile-services-why-should-asp-net-developers-care/">이 훌륭한 개요를 확인</a>하세요. <a href="https://azure.microsoft.com/mobile/">다음은</a> 일반적으로 Azure Mobile Services 대한 자세한 정보입니다.
+
+  <h2>업데이트 가져오기</h2>
+
+  마찬가지로 NuGet 패키지 탐색기를 통해 프로젝트에 대한 최신 업데이트를 가져올 수 있습니다. 솔루션 탐색기에서 프로젝트의 프로젝트 노드 또는 참조 노드를 마우스 오른쪽 단추로 클릭하고 "NuGet 패키지 관리" 옵션을 선택합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/10/02/001-ManageNuGetPackages.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="001-ManageNuGetPackages" alt="001-ManageNuGetPackages" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/001-ManageNuGetPackages_thumb.png" width="344" height="327" border="0" /></a>
+
+
+  NuGet 대화 상자의 왼쪽에서 "업데이트" 옵션을 선택하고 검색 상자에 "mobileservices"를 입력합니다. 최신 버전(1.0.402)과 함께 최신 버전의 모바일 서비스 관련 패키지가 표시됩니다. 패키지를 선택하고 "업데이트" 단추를 클릭합니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/10/02/002-UpdateNuGetPackages.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="002-UpdateNuGetPackages" alt="002-UpdateNuGetPackages" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/002-UpdateNuGetPackages_thumb.png" width="610" height="189" border="0" /></a>
+
+
+  참고: 현재 업데이트할 수 없는 일부 종속성이 있으므로 "모두 업데이트" 단추를 사용하지 마세요. 모바일 서비스 관련 패키지만 업데이트하면 잘 작동하는 모든 종속성이 자동으로 업데이트됩니다.
+
+  <h2>소셜 인증 공급자에 대한 사용자 지정 범위</h2>
+
+  이는 <a href="https://blogs.msdn.com/b/carlosfigueira/archive/2013/12/12/expanded-login-scopes-in-azure-mobile-services.aspx">node.js 백 엔드에 있는</a> 오랜 기능 요청이었습니다. .NET 백 엔드에 로그인하면 서버에서 인증 공급자와 통신할 토큰을 요청할 수 있습니다. 기본적으로 토큰은 사용자에 대한 몇 가지 기본 정보만 부여합니다. 이제 .NET 백 엔드에서 서버에서 수신하는 액세스 토큰을 사용하여 인증 공급자로부터 추가 정보를 검색할 수 있도록 추가 로그인 범위를 요청할 수도 있습니다. node.js 백 엔드와 마찬가지로 이 기능은 Facebook, Google 및 Microsoft 계정에서 사용할 수 있습니다. node.js 백 엔드와 마찬가지로 앱 설정을 사용하여 로그인 범위를 정의할 수 있습니다. 이 설정은 포털의 "구성" 탭에서 설정할 수 있습니다( <strong>MS_FacebookScope</strong>, <strong>MS_GoogleScope</strong> 및 <strong>MS_MicrosoftScope</strong> (각각 Facebook, Google 및 Microsoft 계정의 경우).
+
+
+  사용 중인 범위의 예를 살펴보겠습니다. 위에서 언급한 두 공급자(Facebook 및 Microsoft)를 <a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-services-dotnet-backend-windows-store-dotnet-get-started-users/">사용하여 인증을 사용하여 .NET 모바일 서비스를 설정</a> 했습니다. 또한 공급자와 대화하는 컨트롤러를 추가하여 로그인한 사용자에 대한 정보를 검색합니다.
+
+  <pre class="prettyprint">    public class UserInfoController : ApiController
+      {
+          public ApiServices Services { get; set; }
+
+          [AuthorizeLevel(AuthorizationLevel.User)]
+          public async Task&lt;JObject&gt; GetUserInfo()
+          {
+              ServiceUser user = this.User as ServiceUser;
+              if (user == null)
+              {
+                  throw new InvalidOperationException("This can only be called by authenticated clients");
+              }
+
+              var identities = await user.GetIdentitiesAsync();
+              var result = new JObject();
+              var fb = identities.OfType&lt;FacebookCredentials&gt;().FirstOrDefault();
+              if (fb != null)
+              {
+                  var accessToken = fb.AccessToken;
+                  result.Add("facebook", await GetProviderInfo("https://graph.facebook.com/me?access_token=" + accessToken));
+              }
+
+              var ms = identities.OfType&lt;MicrosoftAccountCredentials&gt;().FirstOrDefault();
+              if (ms != null)
+              {
+                  var accessToken = ms.AccessToken;
+                  result.Add("microsoft", await GetProviderInfo("https://apis.live.net/v5.0/me/?method=GET&amp;access_token=" + accessToken));
+              }
+
+              return result;
+          }
+
+          private async Task&lt;JToken&gt; GetProviderInfo(string url)
+          {
+              var c = new HttpClient();
+              var resp = await c.GetAsync(url);
+              resp.EnsureSuccessStatusCode();
+              return JToken.Parse(await resp.Content.ReadAsStringAsync());
+          }
+      }</pre>
+  그런 다음 사용자에 대한 정보를 인증하고 가져오는 애플리케이션을 사용할 수 있습니다. 이 예제에서는 위에서 언급한 각 인증 공급자에 대한 단추가 있는 간단한 앱을 사용합니다.
+
+  <pre class="prettyprint">    public sealed partial class MainPage : Page
+      {
+           public static MobileServiceClient MobileService = new MobileServiceClient(
+                "https://blog20141002.azure-mobile.net/",
+                "yourapplicationkeyshouldbehere00"
+          );
+
+          public MainPage()
+          {
+              this.InitializeComponent();
+          }
+
+          private async void btnFacebook_Click(object sender, RoutedEventArgs e)
+          {
+              await LoginAndGetUserInfo(MobileServiceAuthenticationProvider.Facebook);
+          }
+
+          private async void btnMicrosoft_Click(object sender, RoutedEventArgs e)
+          {
+              await LoginAndGetUserInfo(MobileServiceAuthenticationProvider.MicrosoftAccount);
+          }
+
+          private async Task LoginAndGetUserInfo(MobileServiceAuthenticationProvider provider)
+          {
+              try
+              {
+                  var user = await MobileService.LoginAsync(provider);
+                  Debug("Logged in as {0}", user.UserId);
+                  var userInfo = await MobileService.InvokeApiAsync("userInfo", HttpMethod.Get, null);
+                  Debug("User info: {0}", userInfo);
+                  MobileService.Logout();
+                  Debug("Logged out");
+                  Debug("");
+              }
+              catch (Exception ex)
+              {
+                  Debug("Error: {0}", ex);
+              }
+          }
+
+          private void Debug(string text, params object[] args)
+          {
+              if (args != null &amp;&amp; args.Length &gt; 0) text = string.Format(text, args);
+              this.txtDebug.Text = this.txtDebug.Text + text + Environment.NewLine;
+          }
+      }</pre>
+  앱을 실행하고 세 공급자 각각에 로그인하면 사용자에 대한 몇 가지 기본 정보를 얻을 수 있습니다. 예를 들어 자격 증명을 사용하여 얻을 수 있는 것은 다음과 같습니다.
+
+  <pre class="prettyprint">Logged in as Facebook:xxxxxxxxxxxxx9805
+
+  User info: {
+    "facebook": {
+      "id": "xxxxxxxxxxxxx9805",
+      "first_name": "Carlos",
+      "gender": "male",
+      "last_name": "Figueira",
+      "link": "https://www.facebook.com/app_scoped_user_id/xxxxxxxxxxxxx9805/",
+      "locale": "en_US",
+      "name": "Carlos Figueira",
+      "timezone": -7,
+      "updated_time": "2013-12-12T04:09:57Z",
+      "verified": true
+    }
+  }
+
+  Logged out
+
+
+  Logged in as MicrosoftAccount:xxxxxxxxxxxxd789
+
+  User info: {
+    "microsoft": {
+      "id": "xxxxxxxxxxxxd789",
+      "name": "Carlos Figueira",
+      "first_name": "Carlos",
+      "last_name": "Figueira",
+      "link": "https://profile.live.com/",
+      "gender": null,
+      "locale": "en_US",
+      "updated_time": "2014-09-30T09:38:42Z"
+    }
+  }
+
+  Logged out</pre>
+
+  이는 몇 가지 기본 정보이지만 애플리케이션에 사용자의 전자 메일 또는 기타 정보도 필요한 경우 서비스 로그인에서 부여한 액세스 토큰에 액세스할 수 없습니다. 그러나 로그인하는 동안 MS_FacebookScope <strong>설정하여</strong> 추가 범위를 요청하는 경우 <strong>MS_MicrosoftScope</strong> 앱 설정을 통해 필요한 추가 정보를 얻을 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/10/02/003-AppSettingsWithScopes.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border-width: 0px;" title="003-AppSettingsWithScopes" alt="003-AppSettingsWithScopes" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/003-AppSettingsWithScopes_thumb.png" width="610" height="107" border="0" /></a>
+
+
+  그리고 클라이언트 앱을 다시 실행하면 새로 요청된 정보가 표시됩니다(사용자가 애플리케이션에 추가 정보에 대한 액세스 권한을 부여한 후).
+
+  <pre class="prettyprint">Logged in as Facebook:xxxxxxxxxxxxx9805
+
+  User info: {
+    "facebook": {
+      "id": "xxxxxxxxxxxxx9805",
+      "birthday": "xx/yy/zzzz",
+      "email": "xxxxxxxxxxxxxxxxxxx@hotmail.com",
+      "first_name": "Carlos",
+      "gender": "male",
+      "last_name": "Figueira",
+      "link": "https://www.facebook.com/app_scoped_user_id/xxxxxxxxxxxxx9805/",
+      "locale": "en_US",
+      "name": "Carlos Figueira",
+      "timezone": -7,
+      "updated_time": "2013-12-12T04:09:57Z",
+      "verified": true
+    }
+  }
+
+  Logged out
+
+
+  Logged in as MicrosoftAccount:xxxxxxxxxxxxd789
+
+  User info: {
+    "microsoft": {
+      "id": "xxxxxxxxxxxxd789",
+      "name": "Carlos Figueira",
+      "first_name": "Carlos",
+      "last_name": "Figueira",
+      "link": "https://profile.live.com/",
+      "gender": null,
+      "emails": {
+        "preferred": "xxxxxxxxxxxxxxxxxxx@hotmail.com",
+        "account": "xxxxxxxxxxxxxxxxxxx@hotmail.com",
+        "personal": null,
+        "business": null
+      },
+      "locale": "en_US",
+      "updated_time": "2014-09-30T09:38:42Z"
+    }
+  }
+
+  Logged out</pre>
+
+  추가 범위 요청에 대한 마지막 참고 사항: 좋은 일반적인 규칙으로 사용자에게 필요한 최소 정보만 요청합니다. 많은 사용자가 사용하는 앱에 많은 정보를 제공하는 것을 좋아하지 않으므로 로그인할 때 너무 많은 요청을 받고 있다는 이유로 앱 사용을 포기할 수 있습니다.
+
+  <h2>Windows 스토어 애플리케이션에 대한 단일 Sign-On 지원</h2>
+
+  Windows 스토어 애플리케이션에서 모바일 서비스 SDK를 사용하는 경우 앱이 인증 공급자 전달 시 <code>MobileServiceClient</code> 메서드 <code>LoginAsync</code> 를 호출할 때마다 인증 창이 표시되고 사용자가 인증 페이지에서 자격 증명을 입력하고 "로그인" 단추를 클릭해야 합니다. 사용자가 공급자의 로그인 페이지에서 "기억하세요" 단추를 선택한 경우에도(Windows  를 입력할 필요가 없도록 자격 증명을 캐시했을 수 있지만 사용자는 여전히 단추를 클릭하여 로그인해야 합니다. 기본적으로 인증 세션의 쿠키는 유지되지 않으므로 공급자 페이지가 다시 표시될 때 사용자를 식별하기 위한 이전 인증의 쿠키가 없기 때문입니다. <a href="https://msdn.microsoft.com/en-us/library/dn268373.aspx">LoginAsync에 대한 오버로드는</a> 클라이언트가 인증 세션에서 쿠키를 캐시해야 한다는 추가 플래그를 사용하므로 다음에 호출될 때 <code>LoginAsync</code> 인증 대화 상자가 짧게 표시되고 자동으로 해제되어 사용자 환경을 개선합니다.
+
+
+  이전 섹션에 표시된 클라이언트에서 추가 오버로드를 사용하고 <strong>두 </strong>번째 매개 변수 <code>LoginAsync</code>에 true를 전달하기만 하면됩니다.
+
+  <pre class="prettyprint">    private async Task LoginAndGetUserInfo(MobileServiceAuthenticationProvider provider)
+      {
+          try
+          {
+              var user = await MobileService.LoginAsync(provider, true);
+              Debug("Logged in as {0}", user.UserId);
+              var userInfo = await MobileService.InvokeApiAsync("userInfo", HttpMethod.Get, null);
+              Debug("User info: {0}", userInfo);
+              MobileService.Logout();
+              Debug("Logged out");
+              Debug("");
+          }
+          catch (Exception ex)
+          {
+              Debug("Error: {0}", ex);
+          }
+      }</pre>
+  아직 변경하지 않은 경우 서버 쪽에서도 수행해야 하는 한 가지 변경 사항이 있습니다. 이 시나리오를 사용하려면 해당 애플리케이션에 대한 패키지 SID(앱 식별자 중 하나)를 서비스에 저장해야 하므로 애플리케이션을 Windows Store의 앱과 연결해야 합니다. <a href="https://dev.windows.com/dashboard">Windows 스토어 대시보드</a>에서 앱을 만들어 패키지 SID를 얻게 되며, 자습서에서 해당 값을 찾아 <a href="https://azure.microsoft.com/en-us/documentation/articles/mobile-services-how-to-register-store-app-package-microsoft-authentication/">Microsoft 인증용 앱 패키지를 등록</a>하는 방법을 확인할 수 있습니다. 앱에서 Microsoft 인증(예: Facebook 또는 Twitter 사용)을 사용하지 않는 경우 클라이언트 ID/비밀을 복사할 필요는 없지만 포털의   <strong>identity</strong> 탭 아래<strong>의 Microsoft 계정 설정</strong>에서 패키지 SID를 복사해야 합니다.
+
+  <h2>ASP.NET Web API 2.2 지원</h2>
+
+  이 업데이트를 통해 .NET 백 엔드는 이제 ASP.NET Web API 2.2(또는 <a href="https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Owin/">Microsoft.AspNet.WebApi.Owin NuGet 패키지의 버전 5.2.x</a>)를 지원합니다. 이제 특성 라우팅 개선 사항 및 OData v4와 같은 해당 릴리스의 모든 새로운 기능 및 버그 수정을 활용할 수 있습니다. 변경 내용의 전체 목록은 "<a href="https://www.asp.net/web-api/overview/releases/whats-new-in-aspnet-web-api-22">ASP.NET Web API 2.2의 새로운 기능"에서</a> 찾을 수 있습니다.
+
+  <h2>요약</h2>
+
+  지금까지 이러한 기능이 도움이 되기를 바랍니다. 평소와 같이, 트위터 <a href="https://twitter.com/azuremobile">@AzureMobile</a> 또는 <a href="https://social.msdn.microsoft.com/Forums/windowsazure/en-US/home?forum=azuremobile">MSDN 포럼</a>을 통해이 게시물의 의견으로 피드백을 보내주세요.

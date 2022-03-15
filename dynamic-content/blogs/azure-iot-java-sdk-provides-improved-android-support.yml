@@ -1,0 +1,29 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2eadd7b7a2e093f94029e890dccba6040d257317
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913164"
+Slug: azure-iot-java-sdk-provides-improved-android-support
+Title: Azure IoT Java SDK는 향상된 Android 지원을 제공합니다.
+Summary: 모바일 디바이스를 IoT(사물 인터넷) 디바이스로 변환하는 것은 IoT 공간에서 주목을 받고 있습니다. 모바일 디바이스는 다양한 센서와 큰 화면을 가지고 있지만, 가장 중요한 것은 유비쿼터스이며 저렴해지고 있다는 것입니다.
+Content: >-
+  <p>모바일 디바이스를 IoT(사물 인터넷) 디바이스로 변환하는 것은 IoT 공간에서 주목을 받고 있습니다. 모바일 디바이스는 다양한 센서와 큰 화면을 가지고 있지만, 가장 중요한 것은 유비쿼터스이며 저렴해지고 있다는 것입니다. 2018년 4월에 <a href="https://azure.microsoft.com/blog/azure-iot-sdk-ios-support/" target="_blank">네이티브 iOS 지원을</a> 릴리스한 후 Android에 대한 지원이 개선되었습니다. <a href="https://github.com/Azure/azure-iot-sdk-java" target="_blank">Java SDK Azure IoT</a> 다음과 같은 업데이트가 있다는 것을 공유하게 되어 기쁩니다.</p>
+
+
+  <ul>
+      <li>단위 테스트, 통합 테스트 및 엔드 투 엔드 테스트를 포함하여 모든 릴리스에서 Android 플랫폼에서의 테스트가 향상되었습니다.&nbsp; 플랫폼 지원과 관련된 업데이트된 정보는 "<a href="https://docs.microsoft.com/azure/iot-hub/iot-hub-device-sdk-platform-support" target="_blank">Azure IoT SDK 플랫폼 지원</a>" 설명서를 확인하세요.</li>
+      <li><a href="https://gradle.org/" target="_blank">Gradle</a> 및 <a href="https://developer.android.com/studio/" target="_blank">Android Studio</a>를 사용하는 디바이스 SDK 및 서비스 SDK에 대한 새로운 샘플입니다.</li>
+      <li>개발을 시작하기 위한 새로운 빠른 시작입니다.</li>
+  </ul>
+
+
+  <p>모바일 디바이스는 IoT 스토리에 어떻게 적합합니까? 고객은 모바일 디바이스를 다른 Bluetooth 센서와 Azure IoT <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fservices%2Fiot-hub%2F&amp;data=02%7C01%7Cv-cabas%40microsoft.com%7C729a206c1686469eac4208d654a7ca27%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636789476958954082&amp;sdata=8TojT8pHyhFOkxaE4Flmf%2B2zVJtiYKKTUDRiFyz7osE%3D&amp;reserved=0" target="_blank">Hub</a> 간의 게이트웨이로 사용하고, 모바일 디바이스를 최종 IoT 디바이스로 사용하여 원격 분석을 보내는 등 다양한 시나리오를 공유했습니다. 일부 고객은 모바일 디바이스를 IoT 작업의 컨트롤러로 사용하고 있지만 분실하거나 도난당한 디바이스의 경우 보안 위험을 주의하세요. 위험을 줄이기 위해 고객은 백 엔드 애플리케이션을 빌드하여 클라우드-디바이스 작업을 처리하고 모바일 디바이스만 디스플레이로 사용할 수 있습니다. 아래 리소스를 방문하여 Android 디바이스를 IoT 디바이스로 전환하는 방법에 대해 자세히 알아봅니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/azure/iot-hub/quickstart-send-telemetry-android" target="_blank">디바이스에서 IoT Hub로 원격 분석 보내기(Android)</a></li>
+      <li><a href="https://docs.microsoft.com/azure/iot-hub/quickstart-control-device-android" target="_blank">애플리케이션에서 클라우드-디바이스 메시지 보내기(Android)</a></li>
+      <li><a href="https://github.com/Azure-Samples/azure-iot-samples-java" target="_blank">GitHub Java용 Azure IoT 샘플</a></li>
+  </ul>

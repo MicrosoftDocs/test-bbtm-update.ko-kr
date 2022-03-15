@@ -1,0 +1,59 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d51c842faff8be006ff6278cba4b3a6ea5bd834b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897784"
+Slug: azure-notification-hubs-and-google-s-firebase-cloud-messaging-migration
+Title: Azure Notification Hubs 및 Google의 Firebase Cloud Messaging Migration
+Summary: Google이 GCM(Google Cloud Messaging)에서 FCM(Firebase Cloud Messaging)으로의 마이그레이션을 발표했을 때 Azure Notification Hubs와 같은 푸시 서비스는 변경 내용을 수용하기 위해 Android 디바이스에 알림을 보내는 방법을 조정해야 했습니다.
+Content: >-
+  <p>Google이 GCM(Google Cloud Messaging)에서 FCM(Firebase Cloud Messaging)으로의 마이그레이션을 발표했을 때 Azure Notification Hubs와 같은 푸시 서비스는 변경 내용을 수용하기 위해 Android 디바이스에 알림을 보내는 방법을 조정해야 했습니다.</p>
+
+
+  <p>서비스 백 엔드를 업데이트한 다음 필요에 따라 API 및 SDK에 대한 업데이트를 게시했습니다. 이 구현에서는 고객 영향을 최소화하기 위해 기존 GCM 알림 스키마와의 호환성을 유지하기로 했습니다. 이는 현재 FCM 레거시 모드에서 FCM를 사용하여 Android 디바이스로 알림을 보내는 것을 의미합니다. 궁극적으로 새로운 기능 및 페이로드 형식을 포함하여 FCM에 대한 진정한 지원을 추가하려고 합니다. 이는 장기적인 변화이며 현재 마이그레이션은 기존 애플리케이션 및 SDK와의 호환성을 유지하는 데 중점을 두었습니다. 앱에서 GCM 또는 FCM 라이브러리(SDK와 함께)를 사용할 수 있으며 알림이 올바르게 전송되었는지 확인합니다.</p>
+
+
+  <p>일부 고객은 최근에 알림에 대한 GCM 엔드포인트를 사용한 앱에 대한 Google 경고에서 메일을 받았습니다. 이것은 단지 경고였고, 안드로이드 알림은 여전히 처리를 위해 Google로 전송되고 Google은 &ndash;&rsquo;여전히 이를 처리합니다. 서비스 구성에서 GCM 엔드포인트를 명시적으로 지정한 일부 고객은 여전히 사용되지 않는 엔드포인트를 사용하고 있습니다. 해당 격차를 이미 식별했고 Google에서 메일을 보낼 때 문제를 해결하기 위해 노력했습니다.</p>
+
+
+  <p>사용되지 않는 엔드포인트를 바꾸고 픽스를 배포했습니다.</p>
+
+
+  <p>앱에서 GCM 라이브러리를 사용하는 경우 Googles 지침에 따라&rsquo; 앱의 FCM 라이브러리로 업그레이드합니다. SDK는 둘 중 하나와 호환되므로&rsquo; SDK 버전으로 최신 상태인 경우 앱의&rsquo; 모든 항목을 업데이트할 필요가 없습니다.</p>
+
+
+  <p>지금, 이것은 우리가 일을 유지하는 방법이 아니다&rsquo;; 그래서 내년에 당신은&rsquo; FCM에 대한 전체 지원을 구현에서 API 및 SDK 업데이트를 볼 수 있습니다 (가능성이 GCM 지원을 더 이상 사용되지 않음). 그 동안 고객&rsquo;으로부터 들은 일반적인 질문에 대한&rsquo; 몇 가지 답변은 다음과 같습니다.</p>
+
+
+  <p>Q: 컷오프 날짜(Googles&rsquo; 현재 컷오프 날짜는 5월 29일이며 변경될 수 있음)까지 호환하려면 어떻게 해야 하나요?</p>
+
+
+  <p>A: 아무것도 하지 않아도 됩니다. 기존 GCM 알림 스키마와의 호환성이 유지됩니다. GCM 키는 애플리케이션에서 사용하는 GCM SDK 및 라이브러리와 마찬가지로 정상적으로 계속 작동합니다.<br>
+
+  새 기능을 활용하기 위해 FCM SDK 및 라이브러리로 업그레이드하기로 한 경우 GCM 키는 계속 작동합니다. 원하는 경우 FCM 키를 사용하도록 전환할 수 있지만 새 Firebase 프로젝트를 만들 때 기존 GCM 프로젝트에 Firebase를 추가해야 합니다. 이렇게 하면 아직 GCM SDK 및 라이브러리를 사용하는 이전 버전의 앱을 실행 중인 고객과의 호환성이 보장됩니다.</p>
+
+
+  <p>새 FCM 프로젝트를 만드는 중이고 기존 GCM 프로젝트에 연결되지 않은 경우 새 FCM 비밀을 사용하여 Notification Hubs를 업데이트하면 새 FCM 키에 이전 GCM 프로젝트에 대한 연결이 없으므로 현재 앱 설치에 알림을 푸시할 수 있는 기능이 사라집니다.</p>
+
+
+  <p>Q: 이전 GCM 엔드포인트가 사용되고 있다는 메일을 받는 이유는 무엇인가요? 무엇을 해야 하나요?</p>
+
+
+  <p>A: 아무것도 하지 않아도 됩니다. 새 엔드포인트로 마이그레이션했으며 곧 완료될 예정이므로 변경할 필요가 없습니다. 아무것도 중단되지 않으며, 한 번의 누락된 엔드포인트로 인해 단지 Google에서 경고 메시지를 보냈습니다.</p>
+
+
+  <p>Q: 기존 사용자를 중단하지 않고 새로운 FCM SDK 및 라이브러리로 전환하려면 어떻게 해야 하나요?</p>
+
+
+  <p>A: 언제든지 업그레이드합니다. Google은 아직 기존 GCM SDK 및 라이브러리의 사용 중단을 발표하지 않았습니다. 기존 사용자에게 푸시 알림을 중단하지&#39;않도록 하려면 기존 GCM 프로젝트와 연결하려는 새 Firebase 프로젝트를 만들 때 확인해야 합니다. 이렇게 하면 새 Firebase 비밀이 GCM SDK 및 라이브러리를 사용하여 앱의 이전 버전을 실행하는 사용자와 FCM SDK 및 라이브러리를 사용하는 앱의 새로운 사용자에게 적용됩니다.</p>
+
+
+  <p>Q: 언제 내 알림에 대한 새로운 FCM 기능 및 스키마를 사용할 수 있나요?</p>
+
+
+  <p>A: API 및 SDK에 업데이트를 게시한 후에는 앞으로 몇 달 안에 어떤 것이 있을 것으로 예상되는지 계속 지켜봐 주시기 바랍니다 &ndash; .</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-overview" target="_blank">Azure Notification Hubs</a>에 대해 자세히 알아보고 <a href="https://azure.microsoft.com/en-us/services/notification-hubs/" target="_blank">오늘 시작</a>하세요.</p>

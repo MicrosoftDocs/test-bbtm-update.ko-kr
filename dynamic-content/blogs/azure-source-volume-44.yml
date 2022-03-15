@@ -1,0 +1,248 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f0fc2ad851ff97210972f9ac4d0495e40f31a76e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913125"
+Slug: azure-source-volume-44
+Title: Azure.Source - 볼륨 44
+Summary: 현재 미리 보기 상태, 일반 공급, 뉴스 & 업데이트 등을 포함하여 Azure에서 발생하는 작업을 최신 상태로 유지합니다.
+Content: >-
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <p>이제 웹앱<a href="https://azure.microsoft.com/en-us/blog/announcing-the-public-preview-of-windows-container-support-in-azure-app-service/">의 Azure App Service</a> - Windows 서버 컨테이너에서 Windows 컨테이너 지원의 공개 미리 보기를 공개 미리 보기로 사용할 수 있습니다. Azure App Service는 IIS에서 실행하는 ASP.NET 또는 Node.js와 같은 Windows에서 미리 정의된 애플리케이션 스택을 제공합니다. 미리 구성된 Windows 환경에서는 관리 액세스, 소프트웨어 설치, 글로벌 어셈블리 캐시 변경 등으로부터 운영 체제를 잠급니다. 애플리케이션에 미리 구성된 환경에서 허용하는 것보다 많은 액세스 권한이 필요한 경우 대신 사용자 지정 Windows 컨테이너를 배포할 수 있습니다. Azure App Service는 시작 시간을 줄이기 위해 여러 부모 이미지를 캐시합니다.</p>
+
+
+  <p><img alt="Screenshot showing Windows Containers in Azure App Service pricing tiers" height="244" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0e2eeed-ff42-4796-bcb2-6e78ba87a7b1.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="Azure App Service 가격 책정 계층의 컨테이너 Windows" width="640"></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/new-azure-cosmosdb-javascript-sdk-2-0-now-in-public-preview/">새 Azure #CosmosDB JavaScript SDK 2.0이 공개 미리 보기</a> - 로 제공됩니다. SQL API용 JavaScript SDK 버전 2.0 RC는 이제 공개 미리 보기에서 사용할 수 있으며, 오픈 소스이며 NPM을 통해 사용할 수도 있습니다. SQL API의 경우 JavaScript 및 Node.js 프로젝트에서 Azure Cosmos DB에 대한 개발을 가능하게 하는 JavaScript SDK를 지원합니다. SDK 버전 2.0은 TypeScript로 완전히 작성되었으며 개체 모델을 다시 디자인하고&rsquo; 약속에 대한 지원을 추가했습니다.</p>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-azure-sql-database-reserved-capacity/">예약된 용량 Azure SQL Database Azure SQL Database 예약된 용량</a> - 의 일반 공급은 일반적으로 사용할 수 있으며 이제 단일 및 탄력적 풀 데이터베이스에 사용할 수 있습니다. 활성 Software Assurance를 사용하는 고객은 SQL Database 새 vCore 기반 구매 모델을 사용하여 SQL Server Azure 하이브리드 혜택을 사용하여 최대 55%를 절약할 수 있습니다. 단일 데이터베이스 및 탄력적 풀에서 예약된 용량을 지원하면 Azure 하이브리드 혜택과 예약된 용량 가격을 결합하여 더 많은 비용을 절약할 수 있습니다. SQL Database 예약된 용량 가격 책정은 단일 구독 또는 공유로 범위가 지정됩니다. SQL Database 예약된 용량은 처음에는 단일 데이터베이스 및 탄력적 풀에서 사용할 수 있으며 나중에 관리되는 인스턴스 지원이 제공됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/linux-on-azure-app-service-environment-now-generally-available/">이제 Azure App Service Environment의 Linux를 일반 공급</a> - ASE(Azure App Service Environment)의 Linux는 Linux 및 App Service Environment의 App Service 기능을 결합합니다. 보안 네트워크 액세스 또는 대규모로 실행되는 앱을 위해 VNet에 애플리케이션을 배포하는 데 적합한 App Service Environment에서 Linux 및 컨테이너화된 앱을 배포하는 것을 활용합니다. ASE의 Linux를 사용하면 사용자 고유의 사용자 지정 컨테이너를 가져와서 Linux 웹 애플리케이션을 Azure VNet(가상 네트워크)에 배포하거나 기본 제공 이미지 중 하나를 사용하여 코드를 가져올 수 있습니다. 2018년 7월 30일부터 App Service Environment에 배포된 Linux 및 컨테이너화된 앱이 Linux 및 App Service Environment 가격 책정의 일반 App Service로 반환되었습니다. ASE의 Linux는 이제 Linuxs&rsquo; 20개 이상의 지역/국가의 모든 App Service에서 사용할 수 있습니다.</p>
+
+
+  <h3>일반 공급</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-automation-available-in-korea-central-and-west-us-2-regions/">일반 공급: 한국 중부 및 미국 서부 2 지역의 Azure Automation</a></li>
+  </ul>
+
+
+  <h2>Azure 팟캐스트</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" valign="middle" width="300">
+     <p>
+     <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode241.mp3">HTML5 오디오가 지원되지 않음</audio>
+     </p>
+     </td>
+     <td>
+     <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-241-Service-Fabric-Service-Fabric-Mesh">Azure 팟캐스트: 에피소드 241 - Service Fabric Service Fabric &amp; Mesh</a> </strong> - Deep Kapur, Azure 팀의 Microsoft PM은 Service Fabric 대한 훌륭한 리프레셔를 제공하고 새로운 Service Fabric Mesh 제품을 분석합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <p>Azure - <a href="https://azure.microsoft.com/en-us/blog/ethereum-proof-of-authority-on-azure/">의 Ethereum 인증 증명</a> 권한 증명은 모든 합의 참가자가 알려지고 평판이 좋은 권한 있는 네트워크에 더 적합합니다. 마이닝이 필요하지 않은 경우 인증 증명은 비잔틴 내결함성을 유지하면서 더 효율적입니다. Azure Portal에서 전 세계의 Microsoft Azure 컴퓨팅, 네트워킹 및 스토리지 서비스를 사용하여 완전히 구성된 블록체인 네트워크 토폴로지(분)를 프로비전할 수 있습니다. 인프라를 빌드하고 구성하는 데 시간을 소비하는 대신, 시나리오 및 애플리케이션을 빌드하는 데 집중할 수 있도록 이러한 시간이 많이 걸리는 부분을 자동화했습니다. 컴퓨팅, 스토리지 및 네트워킹과 같이 사용되는 기본 인프라 리소스에 대해서만 요금이 청구됩니다. 솔루션 자체에 대한 증분 요금은 없습니다. 이 솔루션은 노드 및 네트워크 통계를 추적하기 위해 Azure Monitor도 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/security-bulletin-for-august-2018/">2018년 8</a> - 월 보안 게시판 Microsoft는 Linux 커널에 영향을 주는 임시 DoS(서비스 거부) 취약성(CVE-2018-5390)을 알고 있습니다. Linux를 실행하는 Virtual Machines는 취약할 수 있습니다. Azure 호스트 플랫폼은 이 취약성으로부터 안전하게 유지됩니다. 다양한 Linux 배포를 사용하여 이 보안 문제를 해결할 수 있도록 하고 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/speech-devices-sdk-and-dev-kits-news-august-2018/">Speech Devices SDK 및 Dev Kits 뉴스(2018년 8월)</a> - 이제 Speech Devices SDK v0.5.0을 다운로드할 수 있습니다. 액세스 방법에 대한 자세한 내용은 이 게시물을 참조하세요. Speech Devices SDK는 Speech SDK를 사용하므로 최신 버전의 Speech Devices SDK 및 일치하는 샘플 앱을 사용해야 합니다. 이 SDK는 현재 Java만 지원합니다. 우리의 하드웨어 공급자 Roobo에서 마이크 배열 개발 키트는 최근 판매에 갔다. 이 게시물은 주문 방법에 대한 세부 정보도 있지만 배달은 현재 미국과 중국에서만 사용할 수 있습니다.</p>
+
+
+  <p><img alt="Photo of the Roobo Smart Audio Dev Kit" height="238" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0302dbf-a3b9-42c9-964c-285e1359fc5d.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="Roobo Smart Audio Dev Kit" width="400"></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/new-locations-for-azure-cdn-now-available/">이제 사용할 수 있는</a> - Azure CDN Azure CDN 새 위치는 다양한 비즈니스 워크플로에서 로드 시간을 줄이고 대역폭을 절약하며 응답 속도를 단축할 수 있는 세계적 수준의 플랫폼을 제공합니다. Microsoft의 Azure CDN 통해 Azure 고객은 Office 365, Skype, Bing, OneDrive, Windows 및 Xbox와 같은 Microsoft 속성에서 활용하는 동일한 글로벌 CDN 네트워크의 콘텐츠를 사용하고 제공할 수 있습니다. 8개의 추가 POP(Point-of Presence) 위치에는 글로벌 범위에 3개의 새로운 국가가 포함됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-data-factory-visual-tools-now-supports-github-integration/">이제 Azure Data Factory Visual Tools에서 GitHub 통합</a> - 을 지원합니다. 이제 ADF(Azure Data Factory)를 GitHub 통합할 수 있습니다. GitHub ADF 시각적 작성 통합을 사용하면 다른 개발자와 공동 작업하고, 소스 제어, 데이터 팩터리 자산의 버전 관리(파이프라인, 데이터 세트, 연결된 서비스, 트리거 등)를 수행할 수 있습니다. ADF-GitHub 통합을 사용하면 요구 사항에 따라 공용 Github 또는 GitHub Enterprise 사용할 수 있습니다. OAuth 인증을 사용하여 GitHub 계정에 로그인할 수 있습니다.</p>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Data-Factory-visual-tools-now-integrated-with-GitHub/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Data-Factory-visual-tools-now-integrated-with-GitHub">Azure Friday | 이제 GitHub</a> </strong> - Gaurav Malhotra와 통합된 Azure Data Factory 시각적 도구가 Lara Rubbelke에 합류하여 협업, 버전 관리, 소스 제어를 위해 GitHub 리포지토리(공용 &amp; 엔터프라이즈)를 Azure Data Factory에 연결하는 방법을 설명합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/extension-host-coming-to-azure-stack/">보안을 강화하고 Azure Stack의 확장 호스트와 네트워크 통합 간소화</a> - &rsquo;하나의 포트(443)만 열어야 하므로 Azure Stack에 확장 호스트 솔루션을 도입했습니다. 이 솔루션은 이미 Azure에서 사용할 수 있으므로 모든 요청이 하나의 포트를 통해 유입되도록 허용하고, 방화벽에서 열어야 하는 포트를 줄이고, 고객이 프록시 서버를 통해 이러한 엔드포인트와 통신할 수 있습니다. 첫 번째 릴리스에서 사용자 및 관리 포털 기본 확장은 이 모델로 이동되어 포트 수를 27개에서 1개로 줄입니다. 시간이 지남에 따라 확장 호스트 모델을 사용하도록 SQL 및 MySQL 공급자와 같은 추가 서비스도 변경됩니다. 확장 호스트에는 두 개의 와일드카드 SSL 인증서가 필요합니다. 하나는 관리 포털용이고 다른 하나는 테넌트 포털용입니다. Azure Stack 준비 검사 도구는 이러한 인증서의 유효성을 검사합니다.</p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/review-summarized-test-results-vsts-sprint-138-update/">VSTS 스프린트 138 업데이트에서 요약된 테스트 결과 검토</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/net-framework-4-7-2-update-coming-to-azure-app-service-apps/">Azure App Service 앱에 제공되는 .NET Framework 4.7.2 업데이트</a></li>
+  </ul>
+
+
+  <h2>Azure Friday</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Provisioning-Kubernetes-clusters-on-AKS-using-HashiCorp-Terraform/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Provisioning-Kubernetes-clusters-on-AKS-using-HashiCorp-Terraform">Azure Friday | HashiCorp Terraform</a> </strong> - Anubhav Mishra(개발자 옹호자, HashiCorp)를 사용하여 AKS에서 Kubernetes 클러스터를 프로비저닝하고, Scott Hanselman과 함께 HashiCorp Terraform &amp; 을 사용하여 AKS(Azure Kubernetes Service)를 사용하여 Azure에서 Kubernetes 클러스터를 관리하는 방법을 설명합니다. Mishra는 Terraform을 사용하여 Azure 인프라를 프로비전하는 이점에 대해 설명하고 AKS에서 Kubernetes 클러스터를 구성하는 방법을 보여 줍니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Siphon-on-HDInsight-Kafka/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Siphon-on-HDInsight-Kafka">Azure Friday | HDInsight Kafka Thomas Alex의 Siphon</a> </strong> 은 Lara Rubbelke에 합류하여 Microsoft가 HDInsight용 Apache Kafka를 사용하여 내부 사용을 위한 데이터 수집 서비스인 Siphon을 구동하는 방법을 설명합니다.- HDInsight용 Apache Kafka는 엔터프라이즈급 오픈 소스 스트리밍 수집 서비스입니다. Microsoft는 거의 실시간으로 처리하기 위해 대량의 데이터를 수집하기 위해 고가용성 및 신뢰할 수 있는 서비스로 Siphon을 만들었습니다. Siphon은 Microsoft의 여러 중요 비즈니스용 시나리오에서 하루에 1조 개 이상의 이벤트 수집을 처리합니다. 이 에피소드에서는 Siphon이 HDInsight용 Apache Kafka를 확장 가능한 펍/하위 메시지 큐로 사용하는 방법을 알아봅니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>기술 콘텐츠 및 교육</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/the-developer-s-guide-to-microsoft-azure-ebook-august-update-is-now-available/">Microsoft Azure eBook에 대한 개발자&rsquo; 가이드 - 8월 업데이트가 제공</a> - 되었습니다.&#39;Michael Crump() 및 Barry Luijbregts(<a href="https://twitter.com/mbcrump">@mbcrump</a><a href="https://twitter.com/azurebarry">@azurebarry</a>)의 팀에서 eBook을 Microsoft Azure 위한 새롭고 업데이트된 개발자&rsquo; 가이드가 있습니다. 마지막 업데이트 이후의 광범위한 업데이트를 특징으로 하는 새 eBook은 가능한 가장 짧은 시간에 Azure를 빠르게 사용할 수 있도록 설계되었으며 실제 실제 시나리오를 포함합니다. PDF 외에도 이 버전은 EPUB 및 Mobi 버전에서도 사용할 수 있으므로 3가지 형식 모두에 대한 표지 이미지 아래의 텍스트 링크를 클릭해야 합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/66d1a098-e112-45fa-bd22-5f009d9ae019.png"><img alt="Cover image from The Developer's Guide to Azure (August 2018)" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1f5670cf-dc41-466f-acda-b5e890816462.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure에 대한 개발자 가이드(2018년 8월)" width="186"></a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-hdinsight-interactive-query-ten-tools-to-analyze-big-data-faster/">Azure HDInsight 대화형 쿼리: 빅 데이터를 더 빠르게 분석하는 10가지 도구</a> - 고객은 HDInsight 대화형 쿼리(Hive LLAP 또는 낮은 대기 시간 분석 처리라고도 함)를 사용하여 Azure Storage &amp; Azure Data Lake Storage 저장된 데이터를 초고속 방식으로 쿼리합니다. 개발자 및 데이터 과학자는 대화형 쿼리를 사용하여 가장 선호하는 BI 도구를 사용하여 쉽게 빅 데이터 작업을 수행할 수 있습니다. HDInsight 대화형 쿼리는 이 블로그 게시물에 분류된 빅 데이터에 액세스하는 여러 도구를 지원합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/getting-started-with-iot-driving-business-action-through-analytics-and-automation/">IoT 시작: 분석 및 자동화</a> - 를 통한 비즈니스 작업 추진 실시간 또는 기록 데이터를 다시 처리할&#39;있거나 함수를 자동화해야 하든 Azure IoT 요구 사항을 충족하는 도구가 있습니다. 거의 실시간 또는 기록 데이터 분석을 수행해야 하는지 여부에 관계없이 사용 사례를 가장 잘 지원할 수 있는 Azure IoT 제품에 대해 알아봅니다. 어느 쪽이든 이 게시물에서 연결된 <em>Azure: 개발자&#39;가이드를 사용하여 IoT 솔루션 빌드</em>를 살펴보세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/now-available-azure-sphere-technical-documentation/">지금 사용 가능: Azure Sphere 기술 설명서</a> - Azure Sphere 설명서에서는 아키텍처, 주요 개념, 애플리케이션 개발 및 해당 애플리케이션을 현장의 디바이스에 무선으로 배포하는 것 등 다양한 항목을 다룹니다. 또한 빠른 시작 가이드, 자습서 및 모든 모범 사례를 &ndash; 선택하면 개발 키트를 빠르게 시작하고 실행하는 데 도움이 됩니다. 이 게시물에서 문서에 대한 링크를 확인하고 오늘 개발 키트를 주문하세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/how-microsoft-drives-exabyte-analytics-on-the-world-s-largest-yarn-cluster/">Microsoft가 세계&rsquo; 최대 YARN 클러스터에서 엑사바이트 분석을 구동하는 방법</a> - YARN은 수천 개의 노드로 스케일링하는 것으로 알려져 있지만 수만 개의 노드가 필요할 때 어떻게 되나요? Microsoft의 클라우드 &amp; 정보 서비스는 데이터 처리 및 분산 시스템에 초점을 맞춘 응용 연구 및 과학 이니셔티브를 연구하는 고도로 전문화된 전문가 팀입니다. 이 블로그 게시물에서는 CISL과 Microsoft 빅 데이터 팀이 복잡한 규모 및 리소스 관리 &ndash; 의 과제를 충족하고 세계&#39;최대 YARN 클러스터를 구현하여 엑사바이트 크기의 분석을 구동하는 방법을 설명합니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/appserviceteam/2018/08/06/learn-how-to-orchestrate-serverless-functions-by-scraping-apis-in-8-minutes/">8분 안에 API를 스크래핑하여 서버리스 함수를 오케스트레이션하는 방법 알아보</a>기 - 이 게시물에서 Maxime Rouiller는 마지막 커밋 날짜의 유효성을 검사하기 위해 Azure 샘플 GitHub 리포지토리의 900개가 넘는 샘플에서 메타데이터를 검색하는 방법을 설명합니다. 그는 Octokit 라이브러리를 사용하여 빌드된 로컬 콘솔 애플리케이션을 샘플 목록을 가져온 다음 Azure Functions를 사용하여 각 샘플에서 메타데이터를 병렬로 수집하는 팬아웃/팬인 지속성 함수로 리팩터링합니다.</p>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://www.youtube.com/watch?v=A0uXwdLDzf4"><img alt="How to use keyboard shortcuts in the Azure portal thumbnail" border="0" height="134" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7126cf5-988e-48c6-a427-4c7839535956.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Portal에서 바로 가기 키를 사용하는 방법" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://www.youtube.com/watch?v=A0uXwdLDzf4">Azure Portal에서 바로 가기 키를 사용하는 방법</a> </strong> - 이 버전의 Azure 팁 및 트릭에서는 Azure Portal에서 사용할 수 있는 바로 가기 키를 사용하는 방법을 알아볼&#39;있습니다. 바로 가기 키를 사용하면 키보드에서 손을 떼지 않고도 작업을 완료하고 탐색할 수 있으므로 포털에서 더 쉽게 작업할 수 있습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>이벤트</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/microsoft-ignite-now-with-more-code/">이제 더 많은 코드가 포함된 Microsoft Ignite &ndash;</a> - Ignite 2018은 그 어느 때보다 더 많은 개발자 중심 콘텐츠를 갖게 될 것입니다. 개발자가&#39;경우 9월에 올랜도로 가야 하는 이유를 확인하세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-at-siggraph-2018/">SIGGRAPH 2018</a> - 의 Microsoft Azure Microsoft는 이번 주 캐나다 BC 주 밴쿠버에서 열리는 SIGGRAPH 2018에 있습니다. &#39;경우 실행 가능한 인사이트를 생성하고, 미디어 배달을 가속화하고, 팀이 새로운 경험을 제공하도록 영감을 주는 Azures&rsquo; 지능형 클라우드 솔루션에 대해 자세히 알아보세요. 620 부스에서 Microsoft에 가입하여 Microsoft Azure 및 파트너가&mdash; Avid, Nimble Collective 및 Teradicican&mdash;을 통해 미디어 워크플로 및 대상 환경을 변환하는 데 어떻게 도움이 되는지 알아보세요.</p>
+
+
+  <p><a href="https://bit.ly/2v7gq06">IoT In Action 웨비나 시리즈: 농업</a> - Microsofts&rsquo; IoT In Action Agriculture Webinar에 참여하여 FarmBeats를 통해 정밀 농업을 활성화하고 솔루션 통합자와의 파트너십을 통해 어떻게 정밀&rsquo; 농업을 사용하도록 설정했는지 알아봅니다. 우리는 농장에 대한 농부&rsquo;의 지식과 함께 수집 및 예측 데이터가 농장 생산성을 높이고 비용을 줄이는 데 도움이 될 수 있다고 믿습니다. Microsofts&rsquo; FarmBeats 프로젝트가 몇 가지 고유한 솔루션을 빌드하고 기계 학습을 사용하여 저비용 센서, 드론 및 비전의 다양한 데이터를 조합하여 문제를 해결하는 방법을 놓치고 싶지 않을&rsquo; 것입니다.</p>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-In-Action-The-Next-Agricultural-Revolution"><img alt="The IoT Show | IoT In Action - The Next Agricultural Revolution thumbnail" border="0" height="135" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4e4009d8-b3ee-4e8b-9a3d-38c55e3cfdb0.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="IoT Show | IoT 작동 - 다음 농업 혁명" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-In-Action-The-Next-Agricultural-Revolution">IoT Show | IoT 실행 - 다음 농업 혁명</a> </strong> - 수집 및 예측 데이터, 농장에 대한 농부&#39;지식과 함께, 농장 생산성을 높이고 비용을 절감하는 데 도움이 될 수 있습니다. Microsoft는 이미 FarmBeats를 통해 정밀 농업을 사용하도록 설정하고 Azure IoT 플랫폼 및 솔루션을 활용하는 솔루션 통합업체와의 파트너십을 지원했습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/azureservicefabric/2018/08/09/service-fabric-community-qa-27th-edition/">Service Fabric Community QA&amp; 27 에디션</a> - Service Fabric 팀은 8월 16일 목요일 오후 4시 태평양 표준시에 27<sup>번째</sup> 월간 커뮤니티 QA&amp; 콜을 개최합니다. 덴마크와 인도의 팀원들은 다른 표준 시간대를 수용하기 위해 그날 오전 1130 UTC에서 QA&amp;를 개최합니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/appserviceteam/2018/08/09/twitter-ama-with-the-app-service-team-appserviceama/">App Service Team #AppServiceAMA Twitter AMA!!</a> - Azure App Service 팀은 2018년 8월 22일 수요일 오전 9시부터 태평양 표준시 오전 11시까지 트위터에서 특별 AMA(Ask Me Anything) 세션을 개최합니다. 서비스에 대한 질문과 함께 #AppServiceAMA 트윗 @AzureSupport 할 수 있습니다.</p>
+
+
+  <h2>The IoT Show</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-Developers-and-the-MVP-Program"><img alt="The IoT Show | IoT Developers and the MVP Program thumbnail" border="0" height="135" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cec032e0-83a0-4a72-832a-aae7459429ed.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="IoT Show | IoT 개발자 및 MVP 프로그램" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-Developers-and-the-MVP-Program">IoT Show | IoT 개발자 및 MVP 프로그램</a> </strong> - MVP(가장 가치 있는 Professional) 프로그램은 무엇이며, IoT 개발자로서 MVP가 되기 위해 멋진 사람을 지명하거나 지명하려면 어떻게 해야 할까요? Ranga Vadlamudi는 IoT Show의 IoT MVP 프로그램에 대해 모두 알려줍니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/enhance-your-devsecops-practices-with-azure-security-center-s-newest-playbooks/">Azure Security Centers&rsquo; 최신 플레이북</a> - 을 사용하여 DevSecOps 사례 개선 클라우드 호스팅 워크로드는 워크로드에 뛰어난 확장성, 배포 용이성 및 사전 보안 인프라를 제공합니다. 그러나 워크로드 자체는 여전히 사이버 범죄자의 공격에 취약할 수 있습니다. Avyan Consulting은 Azure Security Center 팀과 협력하여 데모 및 학습을 위해 공격 시뮬레이션 플레이북을 빌드했습니다. Azure 관리자는 이러한 플레이북을 사용하여 완전히 작동하는 웹 및 컴퓨팅 워크로드, AZURE Security Center &amp; WAF(Web App Firewall)와 같은 보안 관리 도구 및 SQL 위협 방지를 배포할 수 있습니다. 이러한 도구는 Avyan Consulting의 Cloudneeti와 함께 작동하여 Azure 리소스에서 다양한 규정 준수 보기를 제공합니다.</p>
+
+
+  <h2>산업</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/accelerate-healthcare-initiatives-with-azure-uk-nhs-blueprints/">Azure UK NHS 청사진</a> - 을 사용하여 의료 이니셔티브 가속화 새로운 기능을 신속하게 획득하고 새로운 솔루션을 구현하기 위해 의료 IT 및 개발자는 이제 업계별 Azure Blueprints를 활용할 수 있습니다. 참조 아키텍처, 지침, 방법 가이드 및 기타 설명서를 포함하는 패키지이며 의료 조직에 관심 있는 주요 사용 사례를 중심으로 빌드된 실행 코드 및 샘플 테스트 데이터도 포함될 수 있습니다. 청사진에는 위협 모델, 보안 제어, 책임 매트릭스 및 규정 준수 감사 보고서를 비롯한 개인 정보 보호, 보안 및 규정 준수 이니셔티브를 지원하는 구성 요소도 포함되어 있습니다. 이 게시물은 영국 NHS(National 상태 관리 서비스) 클라우드 이니셔티브를 지원하기 위해 만든 4개의 새로운 청사진과 적절한 사용자 지정으로 전 세계적으로 사용할 수 있는 HIPAA 및 HITRUST 규정 준수 지원을 포함하는 의료 분야의 AI에 대한 기존 청사진에 중점을 둡니다.</p>
+
+
+  <h2>Azure에서 클라우드 전문가&#39;이번 주</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://www.youtube.com/watch?v=ViuQMCJtX5I"><img alt="A Cloud Guru's Azure This Week - 10 August 2018 thumbnail" border="0" height="128" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/494ffe65-9321-47ff-bde7-580306cb6e88.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="클라우드 전문가의 Azure 이번 주 - 2018년 8월 10일" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://www.youtube.com/watch?v=ViuQMCJtX5I">Azure 이번 주 - 2018년 8</a> </strong> - 월 10일 이번 주 Azure에서 Lars는 IoT Hub 클라우드 서비스에 대한 수동 장애 조치(failover), Azure Reserved Virtual Machine Instances의 인스턴스 크기 유연성, Azure 관리 그룹의 일반 공급 및 App Service Environment에 있는 Linux의 일반 공급이라는 네 가지 새로운 서비스를 살펴봅니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

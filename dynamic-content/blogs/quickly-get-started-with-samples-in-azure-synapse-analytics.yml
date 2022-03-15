@@ -1,0 +1,102 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1ca8aedecb6ce69d22a578d26efa31da59aeb676
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897237"
+Slug: quickly-get-started-with-samples-in-azure-synapse-analytics
+Title: Azure Synapse Analytics에서 샘플 빠르게 시작
+Summary: Azure Synapse Analytics의 인사이트 시간을 더욱 가속화하기 위해 미리 로드된 샘플 데이터에 대한 액세스를 간소화하고 데이터 전문가를 위한 시작 프로세스를 간소화하는 기술 센터를 도입했습니다.
+Content: >-
+  <p><strong>Azure Synapse Studio의 새 지식 센터를 사용하여 첫 번째 프로젝트를 즉시 시작합니다.</strong></p>
+
+
+  <p>Microsoft Azure Synapse Analytics의 인사이트 시간을 더욱 가속화하기 위해 미리 로드된 샘플 데이터에 대한 액세스를 간소화하고 데이터 전문가를 위한 시작 프로세스를 간소화하는 기술 센터를 도입했습니다. 이제 기존 Spark 및 SQL 풀을 만들거나 사용하고, Azure Open Datasets에 연결 및 쿼리하고, 샘플 스크립트 및 Notebook을 로드하고, 파이프라인 템플릿에 액세스하고, Azure Synapse Studioall&mdash;을 한 곳에서 둘러 볼 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e63d003c-3696-48e0-b483-bebe6cd6edce.png"><img alt="Azure Synapse Studio displaying the Knowledge center." border="0" height="1181" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cae05d0a-59d2-4e01-b1f2-1c173af75026.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="지식 센터를 표시하는 Azure Synapse Studio." width="2000"></a></p>
+
+
+  <p>유용한 <strong>링크</strong> 아래의 Azure Synapse Studio 홈페이지에서 또는 탐색 모음에서 <strong>물음표</strong> 아이콘을 클릭하여 기술 센터에 액세스할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d090b12c-8f7e-4bef-944a-9d212d590f35.png"><img alt="Azure Synapse workspace homepage displaying where to access the Knowledge center, from both useful links and the help bar in the main navigation." border="0" height="601" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7e362f5-da10-4112-bc11-db7176ca7077.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="기본 탐색의 유용한 링크와 도움말 표시줄에서 지식 센터에 액세스할 수 있는 위치를 표시하는 Azure Synapse 작업 영역 홈페이지입니다." width="1032"></a></p>
+
+
+  <h2>즉시 샘플 사용</h2>
+
+
+  <p>지식 센터는 데이터를 즉시 탐색하고 분석하는 데 필요한 모든 것을 만드는 몇 가지 원클릭 자습서를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53593ace-925a-4f02-acf3-008c29bafe5d.png"><img alt="“Use samples immediately” card inside the Knowledge center to showcase the 3 tutorials available – “Explore sample data with Spark,” “Query data with SQL,” “Create external table with SQL”" border="0" height="1286" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1aa7d193-608b-401d-ad8e-9119a7653e1c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="지식 센터 내의 "샘플 즉시 사용" 카드는 "Spark를 사용하여 샘플 데이터 탐색", "SQL 사용하여 데이터 쿼리", "SQL 사용하여 외부 테이블 만들기"와 같은 3가지 자습서를 보여 줍니다." width="1991"></a></p>
+
+
+  <p>Spark를 사용하여 <strong>샘플 데이터 탐색</strong> 자습서에서는 Apache Spark 풀을 쉽게 만들고 Azure Synapse 내에서 고유하게 Notebook을 사용하여 뉴욕시(NYC) 노란색 택시 데이터를 분석하고 시각화를 사용자 지정할 수 있습니다. Azure Synapse는 동일한 분석 서비스 내에서 SQL 및 Spark 개발을 모두 통합할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dc8478d2-990e-4913-803e-e5767386f9e5.png"><img alt="“Explore sample data with Spark” tutorial showcasing how to customize data visualizations with Spark and Notebooks." border="0" height="1060" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e9815d51-cf87-4fc7-8163-f243b6fdf78c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Spark 및 Notebook을 사용하여 데이터 시각화를 사용자 지정하는 방법을 보여주는 "Spark를 사용하여 샘플 데이터 탐색" 자습서." width="1680"></a></p>
+
+
+  <p>SQL 자습서<strong>를 사용하여 쿼리 데이터</strong>에서 서버리스 SQL 풀을 사용하여 동일한 NYC Yellow Taxi 데이터 세트를 쿼리하고 분석할 수 있습니다. 이를 통해 전용 리소스를 프로비전하거나 관리하지 않고도 빠른 데이터 레이크 탐색에 T-SQL 사용할 수 있습니다. 또한 이 자습서를 사용하면 한 번의 클릭으로 결과를 빠르게 시각화할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a322d98-845f-47f8-af81-3c505bbcdd82.png"><img alt="“Query data with SQL” tutorial showcasing how to visualize results using a serverless SQL pool." border="0" height="1290" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/79ce67ec-9260-4471-bb5b-a441877fe8c6.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="서버리스 SQL 풀을 사용하여 결과를 시각화하는 방법을 보여주는 "SQL 사용하여 데이터 쿼리" 자습서입니다." width="2007"></a></p>
+
+
+  <p><strong>SQL 사용하여 외부 테이블 만들기</strong> 자습서를 사용하면 서버리스 또는 전용 SQL 풀을 사용하여 외부 테이블을 만들 수 있으므로 사용자 고유의 용어로 데이터를 유연하게 활용하고 각 사용 사례에 대해 가장 비용 효율적인 옵션을 선택할 수 있습니다. 전용 SQL 풀은 워크로드 격리 및 워크로드 우선 순위를 비롯한 광범위한 워크로드 관리 기능을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9eae98e0-9cfd-40dc-9064-1481d6b49d09.png"><img alt=": “Create external table with SQL” tutorial showcasing how to visualize results in table format." border="0" height="1291" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b23968fd-9f75-44d9-a08b-df699a968e89.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title=": 테이블 형식으로 결과를 시각화하는 방법을 보여주는 "SQL 사용하여 외부 테이블 만들기" 자습서입니다." width="1996"></a></p>
+
+
+  <h2>사용 가능한 샘플 찾아보기</h2>
+
+
+  <p>또한 새 지식 센터에는 빠르게 시작할 수 있도록 다양한 샘플 데이터 세트, Notebook, 스크립트 및 파이프라인 템플릿이 포함되어 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/47a5e99f-ae6c-4c37-8b00-59ad904e5fb9.png"><img alt="Sample Center showing tabs to access samples for datasets, notebooks, SQL scripts, and pipelines." border="0" height="1208" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b7d6a72f-6dcc-4f8b-ba78-20f9d2a555a5.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="데이터 세트, Notebook, SQL 스크립트 및 파이프라인에 대한 샘플에 액세스하는 탭을 보여 주는 샘플 센터입니다." width="1982"></a></p>
+
+
+  <p>Azure Open Datasets를 추가하여 COVID-19, 공공 안전, 교통, 경제 지표 등의 샘플 데이터에 액세스합니다. 데이터 세트는<strong> 연결된 탭</strong> 아래의 기본 탐색에 있는 <strong>데이터 허브</strong>에 자동으로 로드된 다음 <strong>Azure Blog Storage</strong>. 단추를 클릭하면 샘플 스크립트를 실행하여 상위 100개 행을 선택하고 외부 테이블을 만들거나 새 Notebook을 만들 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2187a023-1fa8-4e94-ba1d-9f332ffad13e.png"><img alt="Sample datasets are loaded into the Data hub of the Azure Synapse Studio under the linked tab and then Azure Blob Storage." border="0" height="1160" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8f1c5c02-1ace-46a1-8005-2b306931afa5.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="샘플 데이터 세트는 연결된 탭에서 Azure Synapse Studio의 데이터 허브에 로드된 다음 Azure Blob Storage." width="2012"></a></p>
+
+
+  <p>PySpark, Scala 또는 Spark.NET C#을 사용하든 관계없이 다양한 샘플 Notebook을 사용해 볼 수 있습니다. Notebooks 아래의 Azure Synapse Studio <strong>개발 허브</strong> 에서 열립니 <strong>다</strong>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92fd0edb-48da-46b1-8175-11b0fcb95692.png"><img alt="Sample notebooks appear in the Develop hub of the Azure Synapse Studio under Notebooks." border="0" height="1253" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/136beffe-c170-4957-a406-a0f06ffa2998.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="샘플 Notebook은 Notebooks 아래의 Azure Synapse Studio 개발 허브에 표시됩니다." width="2004"></a></p>
+
+
+  <p>샘플 Notebook 외에도 SQL <strong>주문형을 사용하여 Azure Open Datasets 분석</strong>, 동적 SQL 사용하여 <strong>COPY 문 생성</strong>, <strong>CSV, JSON 또는 Parquet 파일 쿼리</strong>와 같은 SQL 스크립트에 대한 샘플이 있습니다. 이러한 스크립트가 작업 영역에 게시되면 주 탐색의 <strong>개발</strong> 허브에서 <strong>SQL 스크립트</strong> 아래에 열립니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a0031ff6-c9a8-462e-91df-cc151325321f.png"><img alt="Sample SQL scripts open in the Develop hub of the Azure Synapse Studio under SQL scripts." border="0" height="1212" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/393849fc-961c-4435-ba80-cf360c0197e1.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="샘플 SQL 스크립트는 SQL 스크립트 아래 Azure Synapse Studio의 개발 허브에서 열립니다." width="1982"></a></p>
+
+
+  <p>또한 다양한 원본에서 데이터를 복사하기 위한 템플릿을 포함하여 파이프라인에 대한 약 30가지 템플릿이 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/baf129b8-96d4-44a7-9239-4248336ff286.png"><img alt="Sample Center showing the options available under the Pipelines tab." border="0" height="1212" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/42c02c34-7415-4cda-89ca-4b1c4f9d30e1.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Pipelines 탭에서 사용할 수 있는 옵션을 보여 주는 샘플 센터입니다." width="2002"></a></p>
+
+
+  <h2>Azure Synapse Studio 둘러보기</h2>
+
+
+  <p>지식 센터는 Azure Synapse Studio의 포괄적인 둘러보기를 제공하여 주요 기능을 숙지하여 첫 번째 프로젝트를 바로 시작할 수 있도록 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/74215b48-4228-4405-bd6c-5a7979422bee.png"><img alt="Digital self-guided tour of the Azure Synapse Studio. " border="0" height="1020" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b505d36a-bfaa-4a51-a59e-5a0456a7e298.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Synapse Studio의 디지털 셀프 가이드 둘러보기 " width="1985"></a></p>
+
+
+  <h2>지금 지식 센터 사용해 보기</h2>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/free/synapse-analytics/" target="_blank">Azure 체험 계정에 등록</a> 하고 200달러의 크레딧을 받아 Azure Synapse를 사용해 보세요.</li>
+      <li>몇 <a href="https://docs.microsoft.com/en-us/azure/synapse-analytics/quickstart-create-workspace" target="_blank">분 안에 Azure Synapse 작업 영역을 만들어</a> 이러한 새로운 기능에 액세스합니다.</li>
+  </ul>

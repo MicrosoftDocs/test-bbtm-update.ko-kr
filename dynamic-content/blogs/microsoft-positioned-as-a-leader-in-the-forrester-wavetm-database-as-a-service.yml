@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 88707051d6a14d86e29546e8828d065841d50051
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897598"
+Slug: microsoft-positioned-as-a-leader-in-the-forrester-wavetm-database-as-a-service
+Title: 'Microsoft는 Forrester WaveTM: Database-as-a-Service에서 리더로 위치했습니다.'
+Summary: 'Forrester가 2019년 2분기 포레스터 웨이브™: Database-as-a-Service의 리더로 Microsoft를 선정한 것을 공유하게 되어 기쁩니다. 이 결정은 Azure 관계형 및 비관계형 데이터베이스의 평가에 따라 결정됩니다. '
+Content: >-
+  <p>Forrester&rsquo;가 Forrester Wave&trade;: Database-as-a-Service, Q2 2019의 리더로 Microsoft를 선정했다는 사실을 공유하게 되어 매우 기쁩니다. 이 결정은 Azure 관계형 및 비관계형 데이터베이스의 평가에 따라 결정됩니다. &rsquo;Microsofts는 최근 1분기 2019 NoSQL Forrester <sup>WaveTM</sup>의 입지를 더욱 강조합니다.</p>
+
+
+  <p><img alt="Forrester Wave DBaaS tracking chart" border="0" height="687" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/07ea66fd-785f-467d-abe8-7d39fcc8e681.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Forrester Wave DBaaS 추적 차트" width="550"></p>
+
+
+  <h2>서비스로서의 데이터베이스는 먼 길을 왔습니다.</h2>
+
+
+  <p>Microsoft는 온-프레미스 현대화, 클라우드로 마이그레이션 또는 하이브리드 솔루션 사용 등 디지털 트랜스포메이션에 있는 모든 위치에서 자유롭게 운영할 수 있습니다. DBaaS(Database-as-a-Service)는 클라우드의 성능 및 규모 이점을 활용하면서 운영 및 자본 비용을 줄이려는 조직에게 매우 인기 있는 옵션으로 발전했습니다. Azure 데이터베이스 서비스는 업데이트, 패치 및 백업과 같은 많은 일일 데이터베이스 집안일을 자동화할 뿐만 아니라 기본 제공 지능형 기능을 사용합니다. 기본적으로 데이터베이스 성능을 최적화하고 데이터를 보호하므로 잠재적인 위협보다 한 발 앞서 있습니다.</p>
+
+
+  <p>Forrester에 따르면 <em>글로벌&ldquo; 인프라 비즈니스 의사 결정권자의 33%가 이미 프로덕션에서 DBaaS 배포를 지원하고 있으며, 향후 3~4년 동안 두 배가 될 것으로 보입니다. 또한 글로벌 데이터 및 분석 기술 의사 결정자의 61%는 내년에 DBaaS에 대한 투자를 최소 5% 증가시킬 계획이며, 그 중 22%는 전년 대비 10% 이상 증가할 계획입니다.&rdquo;</em></p>
+
+
+  <h2>선택 및 유연성을 기반으로 구축된 Azure 데이터베이스</h2>
+
+
+  <p>Forrester 보고서에 따르면 <em>Microsofts&rsquo; 자동화, 프로비전 용이성, 고가용성, 보안 및 기술 지원과 같은 고객이&ldquo; 있습니다.&rdquo;</em> Microsoft는 선택과 유연성에 기반을 둔 Azure의 포괄적인 데이터베이스 서비스 포트폴리오를 보유하고 있으며, 고객이 접하는 모든 사용 사례에 대한 생산성, 효율성 및 투자 수익을 극대화하는 데 적합한 도구를 제공합니다.</p>
+
+
+  <p>대규모 온-프레미스 데이터베이스 마이그레이션, 다중 테넌트 SaaS(Software-as-a-Service) 빌드 또는 새로운 클라우드 네이티브 앱 개발 등 Azure 데이터베이스는 다양한 배포 옵션을 제공하고 애플리케이션 유형의 배열을 지원하는 관계형 및 비관계형, 커뮤니티 기반 및 독점 엔진의 범위로 구성됩니다. 모든 Azure 데이터베이스는 Microsoft에서 관리하므로 훌륭한 앱을 빌드하고 비즈니스를 성장시키는 데 더 집중할 수 있습니다.</p>
+
+
+  <h3>관계형 데이터베이스</h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/sql-database/" target="_blank">Azure SQL Database</a> 광범위한 SQL Server 호환성을 제공하며 SQL Server 마이그레이션, OLTP 및 다중 테넌트 SaaS 애플리케이션에 최적화되어 있습니다. <a href="https://azure.microsoft.com/en-us/blog/get-high-performance-scaling-for-your-azure-database-workloads-with-hyperscale/" target="_blank">하이퍼스케일</a>을 사용하는 스토리지 크기로 제한되지 않고 애플리케이션 증가 가능성을 크게 확장합니다.</p>
+
+
+  <p>Community 기반 <a href="https://azure.microsoft.com/en-us/services/postgresql/" target="_blank">Azure Database for PostgreSQL</a>, <a href="https://azure.microsoft.com/en-us/services/mysql/" target="_blank">Azure Database for MySQL</a> 및 <a href="https://azure.microsoft.com/en-us/services/mariadb/" target="_blank">Azure Database for MariaDB</a>는 엔터프라이즈 준비 상태이며 안전하며 온라인 게임 및 디지털 마케팅과 같은 짧은 대기 시간 시나리오에 이상적입니다. Citus Data 기술로 구동되는 하이퍼스케일을 사용하여 낮은 대기 시간, 높은 처리량의 PostgreSQL 워크로드에 고성능 스케일링을 제공합니다.</p>
+
+
+  <h3>NoSQL 데이터베이스</h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/cosmos-db/" target="_blank">Azure Cosmos DB</a>는 턴키 글로벌 배포 및 투명한 다중 마스터 복제를 제공하며 확장 가능한 IoT 애플리케이션 및 실시간 개인 설정 및 분석에 적합합니다.</p>
+
+
+  <p>Forrester는 보고서에서 Microsoft가 &ldquo;<em>성숙하고 확장 가능하며 안전한 하이브리드 DBaaS 제품을 제공한다고 명시하고 있습니다</em>.&rdquo; Azure 데이터베이스는 수년에 걸쳐 시도되고 테스트되어 프로세스에서 확장성, 성능, 보안 및 지능성이 향상되었습니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Were&rsquo;는 Azure를 데이터 마이그레이션을 위한 이상적인 대상이자 강력하고 지능적인 최신 앱을 빌드할 수 있는 최상의 플랫폼으로 만들기 위해 최선을 다하고 있습니다. Azure 데이터베이스 서비스를 사용해 보지 않은&rsquo; 경우 지금 등록하거나 신용 카드를 제공하지 않고 <a href="https://azure.microsoft.com/en-us/free/" target="_blank">무료로 사용해 볼</a> 수 있습니다.</p>
+
+
+  <p>자세한 내용은 전체 <a href="https://reprints.forrester.com/#/assets/2/108/RES144407/reports" target="_blank">Forrester WaveTM Database-as-a-Service Q2 2019 보고서를</a> 다운로드하세요.</p>

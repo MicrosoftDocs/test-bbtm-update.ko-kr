@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 46235c959836d64cd434edb0090586839538ce81
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912767"
+Slug: microsoft-zend-and-others-announce-simple-api-for-cloud-application-services
+Title: Microsoft, Zend 및 다른 사용자가 Cloud Application Services용 Simple API를 발표합니다.
+Summary: 어제 Microsoft, Zend 등은 개발자가 다음에서 일반적인 애플리케이션 서비스를 사용할 수 있도록 하는 새로운 오픈 소스 이니셔티브인 Cloud Application Services용 Simple API 프로젝트를 시작했습니다.
+Content: <p>어제 Microsoft, Zend 등은 개발자가 클라우드에서 공통 애플리케이션 서비스를 사용할 수 있도록 하는 새로운 오픈 소스 이니셔티브인 클라우드 애플리케이션 서비스용 Simple API 프로젝트를 시작했으며, 이를 통해 개별 공급자에서 사용할 수 있는 부가 가치 기능의 잠금을 해제할 수 있게 되었습니다. </p>  <p>기본적으로 이 프로젝트를 통해 개발자는 모든 주요 클라우드 플랫폼에서 작동하는 기본 클라우드 애플리케이션을 작성할 수 있습니다. 특히 PHP 스크립팅 언어를 사용하는 개발자에게 "스피드 다이얼"을 제공하여 Windows Azure를 비롯한 모든 주요 클라우드 플랫폼에 배포할 수 있는 기본 클라우드 애플리케이션을 개발하는 동시에 소프트웨어 공급업체의 완전한 기능을 갖춘 기술 인터페이스를 조화로운 방식으로 보다 쉽게 보완할 수 있습니다. </p>  <p>이는 고객이 혼합 환경에서 작업한다는 것을 알고 있기 때문에 고객에게 적합하며, 이를 통해 클라우드 공급업체의 새로운 기술에 더 쉽게 액세스할 수 있습니다. 클라우드 상호 운용성 문제에 대한 공동 작업의 초기 단계에 있지만, Zend, IBM, Rackspace 등과 함께 오늘 발표한 이 프로젝트와 같은 업계 협업을 통해 자체 제품 및 표준 지원을 통해 큰 진전을 이루었기 때문에 업계에 좋습니다. </p>  <p>"Simple API" 프로젝트에 대해 자세히 알아보려면 다음에서 수석 설계자인 Vijay Rajagopalan의 오늘 블로그 게시물을 읽어보세요. <a href="https://blogs.msdn.com/interoperability/archive/2009/09/22/microsoft-zend-and-others-announce-simple-api-for-cloud-application-services.aspx">https://blogs.msdn.com/interoperability/archive/2009/09/22/microsoft-zend-and-others-announce-simple-api-for-cloud-application-services.aspx</a> </p>  <p>전체 릴리스를 읽으려면 여기로 이동하세요 https://www.businesswire.com/portal/site/home/permalink/?ndmViewId=news_view&amp. ;newsId=20090922006086&amp; newsLang=en </p>  <p>그리고 당신의 생각이나 질문과 함께 여기에 의견을 게시 주시기 바랍니다; 여러분의 의견을 듣고 싶습니다.</p>

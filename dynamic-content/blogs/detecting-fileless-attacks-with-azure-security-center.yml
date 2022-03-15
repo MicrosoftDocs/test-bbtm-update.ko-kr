@@ -1,0 +1,78 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f3067700c7b73dd8ae7ffc24cf39e422a9ebf4ce
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912996"
+Slug: detecting-fileless-attacks-with-azure-security-center
+Title: Azure Security Center를 사용하여 파일리스 공격 검색
+Summary: 보안 솔루션이 공격을 더 잘 감지함에 따라 공격자는 탐지를 피하기 위해 점점 더 은밀한 방법을 채택하고 있습니다. Azure에서는 다음을 대상으로 하는 파일리스 공격이 정기적으로 표시됩니다.
+Content: >-
+  <p>보안 솔루션이 공격을 더 잘 감지함에 따라 공격자는 탐지를 피하기 위해 점점 더 은밀한 방법을 채택하고 있습니다. Azure에서는 고객&rsquo; 엔드포인트를 대상으로 하는 파일리스 공격이 정기적으로 표시됩니다. 기존 바이러스 백신 소프트웨어 및 기타 파일 시스템 기반 검색 메커니즘에 의한 검색을 방지하기 위해 공격자는 악의적인 페이로드를 메모리에 삽입합니다. 공격자 페이로드는 손상된 프로세스의 메모리 내에서 은밀하게 유지되고 광범위한 악의적인 활동을 수행합니다.&nbsp;</p>
+
+
+  <p>Security Centers&rsquo; 파일리스 공격 탐지의 <a href="https://azure.microsoft.com/en-us/blog/strengthen-your-security-posture-and-protect-against-threats-with-azure-security-center/" target="_blank">일반 공급</a>에 대해 발표하게 되어 기쁩니다. 파일리스 공격 탐지를 통해 자동화된 메모리 포렌식 기술은 파일리스 공격 도구 키트, 기술 및 동작을 식별합니다. 파일리스 공격 탐지는 런타임에 컴퓨터를 주기적으로 검사하고 보안에 중요한 프로세스의 메모리에서 직접 인사이트를 추출합니다. 악용, 코드 삽입 및 악의적인 페이로드 실행의 증거를 찾습니다. 파일리스 공격 탐지는 자세한 보안 경고를 생성하여 경고 심사, 상관 관계 및 다운스트림 응답 시간을 가속화합니다. 이 방법은 더 큰 검색 범위를 제공하는 <a href="https://www.microsoft.com/en-us/windowsforbusiness/windows-atp" target="_blank">Windows Defender ATP</a>와 같은 이벤트 기반 EDR 솔루션을 보완합니다.&nbsp;&nbsp;</p>
+
+
+  <p>이 게시물에서는 Security Centers&rsquo; 파일리스 공격 검색이 대상 악용 페이로드 또는 셸코드부터 시작하여 다단계 공격의 다양한 단계를 검색하는 방법을 자세히 알아봅니다. 또한 실제 검색을 기반으로 하는 경고 예제 연습도 제공합니다.&nbsp;</p>
+
+
+  <h2>셸코드 검색</h2>
+
+
+  <p>취약성을 악용한 후 공격자는 일반적으로 셸코드라는 작은 어셈블리 명령 집합을 사용하여 더 많은 지원 페이로드를 검색하고 로드합니다.&nbsp; ASLR(Address Space Layout Randomization)으로 인해 셸코드는 먼저 추가 페이로드를 검색/로드하고 실행 제어를 전송하는 데 필요한 운영 체제 함수의 주소를 찾아야 합니다. 일반적인 셸코드 워크플로에는 PEB(프로세스 실행 블록)에 액세스하고, 메모리 내 모듈 목록을 트래버스하여 필요한 기능이 있는 OS 모듈을 식별하고, PE 이미지 헤더 및 이미지 내보내기 디렉터리를 구문 분석하여 특정 OS 함수의 주소를 찾는 작업이 포함될 수 있습니다.</p>
+
+
+  <p>또한 shellcode는 페이로드 압축 풀기/암호 해독, 권한 및 권한 조작, 디버깅 방지 기술 수행, 코드 실행 제어 하이재킹 등의 다른 작업도 종종 수행합니다.&nbsp;</p>
+
+
+  <p>위의 패턴은 메모리 포렌식 기술을 사용하여 식별할 수 있습니다. 파일리스 공격 검색은 일반적으로 대상 프로세스의 동적으로 할당된 코드 세그먼트에 있는 컴퓨터 코드를 읽습니다. 파일리스 공격 감지는 컴퓨터 코드를 디스어셈블하고 정적 분석 및 대상 에뮬레이션 기술을 모두 사용하여 악의적인 동작을 식별합니다.&nbsp;</p>
+
+
+  <h2>더 복잡한 페이로드 검색</h2>
+
+
+  <p>또한 파일리스 공격 검색은 더 복잡한 페이로드를 검색하여 여러 악의적인 활동을 수행할 수 있습니다. 일반적인 예로는 사용자 가장, 추가 소프트웨어 취약성을 통한 권한 상승, 계정 자격 증명 도용, 인증서 및 프라이빗 키 액세스, 새 컴퓨터로 횡적 이동 및 중요한 데이터 액세스 등이 있습니다. 이러한 기능은 공격자&rsquo; 용도로 재사용 및 수정할 수 있는 기성 도구 키트에서 사용할 수 있습니다. 레드 팀과 공격자가 사용하는 이러한 유형의 도구 키트를 보았습니다.&nbsp;</p>
+
+
+  <p>파일리스 공격 검색은 삽입된 모듈, 난독 처리된 모듈, 보안에 중요한 운영 체제 함수에 대한 참조, 알려진 파일리스 공격 도구 키트의 표시기 등 다양한 신호에 대해 동적으로 할당된 코드 세그먼트를 검색하여 이러한 페이로드를 식별합니다. 분류자는 이러한 신호를 분석하고 적절한 심각도에 대한 경고를 내보낸다. 또한 분류자는 파일리스 맬웨어와 유사한 기술을 사용하여 중요한 시스템 기능을 모니터링하는 합법적인 보안 및 관리 소프트웨어의 신호를 필터링합니다.</p>
+
+
+  <h2>파일리스 공격 검색 예제 경고</h2>
+
+
+  <p>다음은 실제 검색을 기반으로 하는 경고 예제의 섹션별 연습입니다.&nbsp;</p>
+
+
+  <p>아래의 작은 빨간색 상자에서 볼 수 있듯이 파일리스 공격 감지는 도구 키트인 &ldquo;<a href="https://github.com/rapid7/metasploit-framework/wiki/Meterpreter" target="_blank">Meterpreter</a>를 식별했습니다.&rdquo; 도구 키트 이름 아래에는 감염된 프로세스의 메모리에 있는 특정 기술 및 동작 목록이 있습니다. 공격자가 새 맬웨어 또는 알 수 없는 맬웨어를 사용하더라도 파일리스 공격 검색은 페이로드에서 검색된 기술과 동작을 강조 표시하는 경고를 계속 생성합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0097d944-cf53-4c95-901e-4c120320bd4f.png"><img alt="FilelessAttackTechnique" border="0" height="820" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3beeba64-31be-4b71-8f83-00941513d025.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="FilelessAttackTechnique" width="845"></a></p>
+
+
+  <p>또한 경고는 손상된 프로세스와 연결된 메타데이터를 표시합니다. 이 경우 계정 자격 증명을 처리하는 장기 실행 시스템 프로세스인 winlogon.exe 감염이 발생했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/867db291-6f3a-4a5f-b694-6e446799157d.png"><img alt="winlogon" border="0" height="305" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/77b78e07-f33b-4fda-a47e-0021bb3e7d0b.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="Winlogon" width="873"></a></p>
+
+
+  <p>위의 메타데이터에만 따라 프로세스는 매우 정상인 것처럼 보입니다. 프로세스 경로, 명령줄 매개 변수 또는 부모/자식 프로세스 관계만 검사하는 도구에는 손상 여부를 식별하기에 충분한 단서가 없습니다.</p>
+
+
+  <p>그러나 메모리 포렌식 기술을 사용하여 의심스러운 코드 세그먼트의 개수, 코드 세그먼트에 있는 기능을 확인하고, 동적으로 할당된 세그먼트에서 코드를 실행하는 스레드를 찾고, 경고에서 해당 정보를 내보낼 수 있습니다. 프로세스에 활성 네트워크 연결이 있는 경우 원격 IP 주소 및 시작 시간을 포함하여 해당 정보가 표시됩니다.</p>
+
+
+  <p>또한 분석가는 Log Analytics를 사용하여 여러 프로세스 및 컴퓨터에서 경고 데이터의 보기를 만들어 악의적인 활동이 처음 검색된 시기와 위치를 설명할 수 있습니다. 또한 분석가는 Log Analytics를 사용하여 이러한 경고를 사용자 로그온 데이터와 같은 다른 데이터 원본과 상호 연결하여 위험에 처할 수 있는 계정 자격 증명을 결정할 수 있습니다. 이 기능은 손상의 특성과 범위를 결정할 때 매우 유용합니다.</p>
+
+
+  <h2>Security Centers&rsquo; 파일리스 공격 검색 시작</h2>
+
+
+  <p>파일리스 공격 검색은 다른 클라우드 또는 온-프레미스에서 실행되는 Azure IaaS VM 및 가상 머신을 모두 지원합니다. 지원되는 운영 체제에는 Windows Server 2008 R2 이상 및 Windows 7 클라이언트 이상이 포함됩니다.&nbsp;&nbsp;</p>
+
+
+  <p>다양한 유형의 파일리스 공격에 대해 자세히 알아보려면 <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/fileless-threats" target="_blank">설명서를 참조하세요</a>.</p>
+
+
+  <p>파일리스 공격 검색 사용을 시작하려면 구독에 <a href="https://azure.microsoft.com/en-us/services/security-center/" target="_blank">대해 Security Center의 표준 계층</a> 을 사용하도록 설정합니다.</p>

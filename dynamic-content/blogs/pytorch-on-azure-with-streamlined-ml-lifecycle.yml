@@ -1,0 +1,63 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 4def7cbd4dced8cd1ee6b44dc8ab4d0120bfda22
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897271"
+Slug: pytorch-on-azure-with-streamlined-ml-lifecycle
+Title: 간소화된 ML 수명 주기를 갖춘 Azure의 PyTorch
+Summary: PyTorch Community 계속 성장하고 정기적으로 업데이트된 PyTorch 버전을 릴리스하는 것을 보는 것은 흥미롭습니다! 최근 릴리스는 성능, ONNX 내보내기, TorchScript, C++ 프런트 엔드, JIT 및 분산 학습을 개선합니다. 양자화와 같은 몇 가지 새로운 실험적 기능도 도입되었습니다.
+Content: >-
+  <p>Pytorch Community 계속 성장하고 정기적으로 업데이트된 버전의 PyTorch를 출시하는 것을 보는 것은 흥미로울&#39;있습니다! 최근 릴리스&nbsp;<a href="https://github.com/pytorch/pytorch/releases/tag/v1.3.0" target="_blank">improveperformance</a>&nbsp;, ONNX 내보내기, TorchScript, C++ 프런트 엔드, JIT 및 분산 학습. 양자화와 같은 몇 가지 새로운 실험적 기능도 도입되었습니다.</p>
+
+
+  <p>올 가을 PyTorch 개발자 컨퍼런스에서 우리는 PyTorch에 대한 오픈 소스&nbsp; <a href="https://youtu.be/ivTGO6BAQG0?t=3332" target="_blank">컨스트루션</a>이 커뮤니티의 모든 사람들에게 어떻게 더 나은지 제시했습니다. 또한 <a href="https://youtu.be/ivTGO6BAQG0?t=14207" target="_blank">Microsoft가 PyTorch를 사용하여</a> Bing 같은 서비스에 대한 기계 학습 모델을 개발하는 방법에 대해서도 설명했습니다. 개인이든 소규모 팀이든 대기업이든 기계 학습 수명 주기를 관리하는 것은 어려울 수 있습니다. Azure Machine Learning PyTorch를 사용하여 사용자와 조직의 생산성을 <a href="https://azure.microsoft.com/services/machine-learning/" target="_blank">높일 수 있는</a> 방법을 보여&#39;.</p>
+
+
+  <h2>Azure Machine Learning 사용하여 프로덕션 수명 주기로 연구 간소화</h2>
+
+
+  <p>Azure Machine Learning PyTorch 1.3을 사용할 경우의 이점 중 하나는 MLOps(Machine Learning Operations)입니다. MLOps는 모델을 자주 업데이트하고, 새 모델을 테스트하고, 다른 애플리케이션 및 서비스와 함께 새 ML 모델을 지속적으로 롤아웃할 수 있도록 ML(End-to-End Machine Learning) 수명 주기를 간소화합니다. MLOps는 다음을 제공합니다.</p>
+
+
+  <ul>
+      <li>데이터 준비에서 기능 추출, 하이퍼 매개 변수 튜닝, 모델 평가에 이르기까지 PyTorch 모델 학습과 관련된 모든 단계를 연결하는 <strong>강력한 ML 파이프라인</strong>을 사용한 재현 가능한 학습입니다.</li>
+      <li>PyTorch 모델을 게시하는 사용자, 변경되는 이유 및 PyTorch 모델이 프로덕션에서 배포되거나 사용된 시기를 알 수 있도록 데이터 세트 및 모델 레지스트리를 사용하여 <strong>자산 추적</strong></li>
+      <li>클라우드에서 에지까지 어디서나 PyTorch 모델의 <strong>패키징, 프로파일링, 유효성 검사 및 배포</strong></li>
+      <li>데이터 드리프트와 같은 문제에 영향을 주는 비즈니스에 대한 이벤트 및 알림을 통해 엔터프라이즈 지원 방식으로 대규모로 PyTorch 모델을 <strong>모니터링하고 관리</strong>합니다.</li>
+  </ul>
+
+
+  <p>&nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ca11087-0c06-496b-a7e0-37a4303ed830.png"><img alt="A diagram showing the cycle of training PyTorch models." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7dff17f7-767f-4e62-91c7-c5cf9c5daa3e.png" title="PyTorch 모델 학습 주기를 보여 주는 다이어그램입니다."></a></p>
+
+
+  <h2>PyTorch 모델 학습</h2>
+
+
+  <p>데이터 과학자는 MLOps를 사용하여 평소처럼 코드를 작성하고 업데이트하고 정기적으로 GitHub 리포지토리에 푸시합니다. 이렇게 하면 코드 품질 검사, 데이터 온전성 테스트, 단위 테스트를 수행하고<a href="https://azure.microsoft.com/services/devops/" target="_blank">, Azure Machine Learning</a> 파이프라인을 빌드하고, <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#workspace" target="_blank">Azure Machine Learning 작업 영역에</a> 게시하는 Azure DevOps 빌드 <a href="https://docs.microsoft.com/azure/machine-learning/service/concept-ml-pipelines" target="_blank">파이프라인</a>이 트리거됩니다.</p>
+
+
+  <p>Azure Machine Learning 파이프라인은 다음 작업을 수행합니다.</p>
+
+
+  <ul>
+      <li><strong>모델 학습</strong> 태스크는 Azure Machine Learning 컴퓨팅에서 PyTorch 학습 스크립트를 실행합니다. <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#run" target="_blank">실행 기록에</a> 저장된 모델 파일을 출력합니다.</li>
+      <li><strong>모델 평가</strong> 작업은 프로덕션 환경에서 모델을 사용하여 새로 학습된 PyTorch 모델의 성능을 평가합니다. 새 모델이 프로덕션 모델보다 성능이 더 좋은 경우 다음 단계가 실행됩니다. 그렇지 않으면 건너뜁게 됩니다.</li>
+      <li><strong>모델 등록</strong> 작업은 향상된 PyTorch 모델을 가져와<a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#model-registry" target="_blank">서 Azure Machine Learning 모델 레지스트리</a>에 등록합니다. 이를 통해 버전을 제어할 수 있습니다.</li>
+  </ul>
+
+
+  <p>PyTorch 모델을 학습시키고, 하이퍼 매개 변수 스윕을 수행하고, 이 <a href="https://aka.ms/mlops-pytorch" target="_blank">PyTorch MLOps 예제</a>에서 모델을 등록하는 예제 코드를 찾을 수 있습니다.</p>
+
+
+  <h2>PyTorch 모델 배포</h2>
+
+
+  <p><a href="https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml" target="_blank">DevOps Machine Learning 확장을 사용하면 Azure DevOps</a> 프로젝트에서 Azure Machine Learning 작업을 통합하여 모델 배포를 간소화하고 자동화할 수 있습니다. 새 모델이 Azure Machine Learning 작업 영역에 등록되면 <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/release/?view=azure-devops" target="_blank">릴리스 파이프라인</a>을 트리거하여 배포 프로세스를 자동화할 수 있습니다. 그런 다음<a href="https://azure.microsoft.com/en-us/services/container-instances/" target="_blank">, Azure Container Instances</a> 및 <a href="https://azure.microsoft.com/en-us/services/kubernetes-service/" target="_blank">AKS(Azure Kubernetes Service)</a>와 같은 테스트 및 프로덕션 환경에서 모델을 자동으로 패키지하고 <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-azure-machine-learning-architecture#web-service" target="_blank">웹 서비스</a>로 배포할 수 있습니다. 제어된 릴리스를 사용하도록 설정하여 모델이 스테이징 또는 QA(품질 보증) 환경에 성공적으로 배포되면 승인자에게 릴리스를 검토하고 프로덕션으로 승인하라는 알림이 전송되도록 할 수도 있습니다. <a href="https://aka.ms/mlops-pytorch" target="_blank">PyTorch ML Ops 예제</a>에서 이에 대한 샘플 코드를 볼 수 있습니다.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Were&rsquo;는 Azure에서 최신 버전의 PyTorch를 지원하게 되어 매우 기쁩니다. Azure Machine Learning 및 해당 MLOps 기능을 사용하면 재현 가능한 모델 수명 주기와 함께 기업에서 PyTorch를 사용할 수 있습니다. PyTorch 모델에 CI/CD 워크플로를 사용하도록 설정하는 방법의 종단 간 예제에 대한 <a href="https://github.com/microsoft/MLOps/tree/master/examples" target="_blank">MLOps 예제 리포</a>&nbsp;지토리를 확인하세요.</p>

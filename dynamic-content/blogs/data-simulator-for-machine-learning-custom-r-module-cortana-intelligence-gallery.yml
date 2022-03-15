@@ -1,0 +1,183 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cdd53af05c3b0d00538c1e2698c1b568e3030819
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902186"
+Slug: data-simulator-for-machine-learning-custom-r-module-cortana-intelligence-gallery
+Title: 데이터 시뮬레이터 for Machine Learning
+Summary: Cortana Intelligence 갤러리에서 사용할 수 있는 Azure Machine Learning Studio에서 이진 분류를 위한 데이터 시뮬레이션용 사용자 지정 R 모듈
+Content: >-
+  <p>사실상 새로운 기계 학습 알고리즘을 사용하는 모든 데이터 과학 실험에는 다양한 시나리오에서 테스트가 필요합니다. 시뮬레이트된 데이터를 사용하면 일반적으로 실제 데이터에서는 불가능한 제어되고 체계적인 방식으로 이 작업을 수행할 수 있습니다.</p>
+
+
+  <p><a href="https://studio.azureml.net/">Azure Machine Learning(AML) Studio</a>에서 데이터 시뮬레이션을 구현하고 다시 사용하는 편리한 방법은 <a href="https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-custom-r-modules">사용자 지정 R 모듈</a>을 사용하는 것입니다. 사용자 지정 R 모듈은 사용자가 필요에 따라 AML Studio GUI에서 모듈 입력으로 볼 수 있는 기능 매개 변수를 자유롭게 추가하고 제거할 수 있는 사용자 지정 코드의 유연성과 끌어서 놓기 모듈 내에 R 스크립트를 패키지하는 편의성을 결합합니다. 사용자 지정 R 모듈의 동작은 네이티브 AML Studio 모듈과 동일합니다. 입력 및 출력은 다른 모듈에 연결되거나 수동으로 설정할 수 있으며, 기본 R 코드에서 허용하는 경우 AML 실험 내에서 임의의 스키마의 데이터를 처리할 수 있습니다. 추가적인 이점은 원본을 공개하지 않고도 코드를 배포하는 편리한 방법을 제공한다는 것입니다. 이 방법은 IP에 민감한 시나리오에 편리할 수 있습니다. <a href="https://gallery.cortanaintelligence.com/">Cortana Intelligence Gallery</a>에 게시하면 클래식 소프트웨어 배포 프로세스에 대한 걱정 없이 알고리즘 기능을 전 세계에 쉽게 노출할 수 있습니다.</p>
+
+
+  <h2>데이터 시뮬레이터</h2>
+
+
+  <p>여기서는<em> 이진 분류</em>를 위한 데이터 시뮬레이터의 <a href="https://gallery.cortanaintelligence.com/Experiment/Data-Simulator-For-Machine-Learning-1">AML Studio 사용자 지정 R 모듈 </a><a href="https://gallery.cortanaintelligence.com/Experiment/Data-Simulator-For-Machine-Learning-1">구현</a>을 제공합니다. 현재 버전은 Cortana Intelligence 갤러리 항목 페이지 내에 전체 코드를 사용할 수 있을 만큼 간단합니다. 레이블 관련 열과 관련이 없는 열을 모두 사용하여 사용자 지정 <em>기능 차원</em> 데이터 세트를 생성할 수 있습니다. 관련 기능은 레이블 열과 일변량적으로 상관 관계가 있습니다. 상관 관계 방향성(예: 양수 또는 음수 상관 계수)은 <strong>correlationDirectionality</strong> 매개 변수에 의해 제어됩니다. 모든 기능은 별도의 <a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Uniform.html">runif 호출을</a> 사용하여 생성됩니다. 나중에 사용자가 R에서 줄임표/세 개의 점 인수 기능을 추가하고 노출하여 다른 배포를 선택할 수 있도록 모듈 기능을 더 확장할 수 있습니다. 마지막 모듈 매개 변수(seedValue)를 사용하여 결과 재현성을 제어할 수 있습니다. 그림 1은 AML Studio에 노출된 모든 모듈 매개 변수를 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3aea8c2b-6c57-4832-a3bb-d36df0f23303.png"><img alt="image" border="0" height="618" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f6d808b9-1451-48f6-be8b-499f35f338ea.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="이미지" width="757"></a>&nbsp;</p>
+
+
+  <p>그림 1. AML 실험의 데이터 시뮬레이터 사용자 지정 R 모듈입니다. 1000000개의 샘플이 시뮬레이션되며 1000개의 관련 없는 열과 10개의 레이블 관련 열이 있습니다. 20개의 샘플만 FALSE&rdquo; 클래스이므로 데이터는 매우 불균형합니다&ldquo;. noiseAmplitude&rdquo; 속성의 2개 값(.03 및 5) 긴 배열 값&ldquo;은 모든 관련 열에 다시 사용됩니다. 마찬가지로, 4개 값(1, -1, 0, 3.5) &ldquo;의 부호는 레이블 열과의 상관 관계&rdquo; 방향성(예: 양수 또는 음수)을 제어하기 위해 모든 10개의 관련 열에 대해 다시 사용됩니다.</p>
+
+
+  <p>아래 그림 2와 같이 모듈 출력(마우스 오른쪽 단추를 클릭한 다음 &ldquo;시각화&rdquo;)을 시각화하여 데이터의 기본 속성을 확인할 수 있습니다. 여기에는 데이터 행렬 크기 및 범위 및 누락 값과 같은 일변량 통계가 포함됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7e290b74-5680-452a-9917-1ad0237475f9.png"><img alt="image" border="0" height="518" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0272bf75-abe5-42ba-8864-9477baa92b1c.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="이미지" width="768"></a>&nbsp;</p>
+
+
+  <p>그림 2. 시뮬레이션된 데이터의 시각화입니다. 데이터에는 1,000,000개의 행과 1011개의 열이 있습니다(관련된 열 10개와 관련이 없는 기능 열 1,000개, 레이블 포함). 레이블 열의 히스토그램(오른쪽 그래프)은 이 시뮬레이션에 대해 선택한 큰 클래스 불균형을 나타냅니다.</p>
+
+
+  <h2>시뮬레이션된 데이터의 단변량 기능 중요도 분석</h2>
+
+
+  <p><strong>참고: 시뮬레이션된 데이터에 대해 선택한 크기에 따라 이를 생성하는 데 다소 시간이 걸릴 수 있습니다. 예를 들어 1e6개 행 x 2000개 기능 열(총 열 2001개) 데이터 세트의 경우 1시간입니다. 그러나 데이터가 생성된 후에도 새 모듈을 실험에 추가할 수 있으며, 캐시된 데이터는 다시 시뮬레이션하지 않고도 아래 설명된 대로 처리할 수 있습니다.</strong></p>
+
+
+  <p>FIA(단변량 기능 중요도 분석)는 Pearsonian 상관 관계 및 MI(상호 정보)와 같은 메트릭을 사용하여 각 기능 열과 레이블 값 간의 유사성을 측정합니다. MI는 데이터 종속성의 방향성에 종속되지 않는 좋은 속성을 가지기 때문에 Pearsonian 상관 관계보다 더 일반적입니다. 모든 중간 값에 대해 하나의 클래스(예 &ldquo;: TRUE&rdquo;)의 레이블이 있는 기능과 모든 크고 큰 값에 대한 다른 클래스(&ldquo;FALSE&rdquo;)는 Pearsonian 상관 관계가 0에 가까울 수 있지만 여전히 큰 MI 값을 갖습니다.</p>
+
+
+  <p>기능별 단변량 FIA는 다변량 종속성을 캡처하지는 않지만 기능과 분류 대상(레이블) 간의 관계를 간단하게 이해할 수 있습니다. AML Studio에서 단변량 FIA를 수행하는 쉬운 방법은 유사성 계산을 위해 <a href="https://msdn.microsoft.com/library/azure/818b356b-045c-412b-aa12-94a1d2dad90f">필터 기반 기능 선택에</a> 기존 AML 모듈을 사용하고 결과 연결에 <a href="https://msdn.microsoft.com/library/azure/30806023-392b-42e0-94d6-6b775a6e0fd5">R 스크립트 모듈을 실행하는</a> 것입니다. 이를 위해 아래 설명된 대로 여러 AML Studio 모듈을 추가하여 <a href="https://gallery.cortanaintelligence.com/Experiment/Data-Simulator-For-Machine-Learning-1">CIS 갤러리 </a>페이지를 통해 배포된 기본 실험을 확장합니다.</p>
+
+
+  <p>먼저 두 번째 <a name="_Hlk477354361"></a><a name="_Hlk477355766">필터 기반 기능 선택 모듈</a>을 추가하고 기능 &ldquo;점수 매기기 메서드&rdquo; 속성에 대해 상호 정보 값을 선택합니다. 기능 점수 매기기 메서드&rdquo; 속성이 Pearson 상관 관계로 &ldquo;설정된 원래 필터 기반 기능 선택 모듈은 변경되지 않아야 합니다. 필터 기반 기능 선택 모듈의 경우 원하는 기능&rdquo; 수 속성에 대한 &ldquo;설정은 관련이 없습니다. 모든 데이터 열에 대해 계산된 유사성 메트릭을 사용하므로 각 필터 기반 기능 선택 모듈의 두 번째(오른쪽) 출력에 연결하여 사용할 수 있습니다. 두 모듈의 대상 열&rdquo; 속성은 &ldquo;데이터의 레이블 열 이름을 가리킬 필요가 있습니다. 그림 3에서는 두 번째 필터 기반 기능 선택 모듈에 대해 선택한 설정을 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/28f6ca81-a75b-429a-a713-87891dcb7b31.png"><img alt="clip_image006[4]" border="0" height="459" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/104f8d71-913c-4496-9332-0bf5b33ecfb9.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="clip_image006[4]" width="754"></a></p>
+
+
+  <p>그림 3. 상호 정보 계산을 위해 추가된 필터 기반 기능 선택 AML Studio 모듈의 속성 설정입니다. 모듈의 오른쪽 출력에 연결하여 모든 데이터 열(기능 및 레이블)에 대한 MI 값을 가져옵니다.</p>
+
+
+  <p>실험에 추가된 다음 두 R <a href="https://msdn.microsoft.com/library/azure/30806023-392b-42e0-94d6-6b775a6e0fd5">스크립트 실행</a> 모듈은 결과 연결에 사용됩니다. 해당 스크립트는 아래에 나열되어 있습니다.</p>
+
+
+  <p>첫 번째 모듈(열 순서가 다른 rbind):</p>
+
+
+  <pre>
+    dataset1 &lt;- maml.mapInputPort(1) # class: data.frame
+    dataset2 &lt;- maml.mapInputPort(2) # class: data.frame
+
+    dataset2 &lt;- dataset2[,colnames(dataset1)]
+    data.set = rbind(dataset1, dataset2)
+
+    maml.mapOutputPort(&quot;data.set&quot;)
+  </pre>
+
+
+  <p>두 번째 모듈(행 이름 추가):</p>
+
+
+  <pre>
+    dataset &lt;- maml.mapInputPort(1) # class: data.frame
+
+    myRowNames &lt;- c(&quot;PearsCorrel&quot;, &quot;MI&quot;)
+    data.set &lt;- cbind(myRowNames, dataset)
+    names(data.set)[1] &lt;- c(&quot;Algorithms&quot;)
+
+    maml.mapOutputPort(&quot;data.set&quot;)
+  </pre>
+
+
+  <p>실험에 추가된 마지막 모듈인 <a href="https://msdn.microsoft.com/library/azure/faa6ba63-383c-4086-ba58-7abf26b85814">CSV로 변환</a>하면 필요한 경우 csv(편리한 형식)로 결과를 다운로드할 수 있습니다. 결과 파일은 일반 텍스트로 되어 있으며 모든 텍스트 편집기 또는 Excel 열 수 있습니다(그림 4).</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dfbe48d2-4bf2-4207-a0ce-3b6a7e6525d5.jpg"><img alt="clip_image008" border="0" height="254" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cfad3e14-e5c8-47b7-8523-3406ada8a7b0.jpg" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="clip_image008" width="744"></a></p>
+
+
+  <p>그림 4. 다운로드한 결과 파일은 Excel 시각화됩니다.</p>
+
+
+  <h2>시뮬레이션된 데이터 속성</h2>
+
+
+  <p>관련 열에 대한 FIA 결과는 그림 5에 나와 있습니다. MI와 Pearsonian 상관 관계는 서로 다른 눈금에 있지만 두 유사성 메트릭은 서로 잘 상관 관계가 있습니다. 또한 그림 1에 설명된 사용자 지정 R 모듈의 noiseAmplitude&rdquo; 속성과 &ldquo;동기화됩니다. 2개의 noiseAmplitude 값(.03 및 5)은 관련 기능 1, 3, 5, 7 및 9가 낮은 노이즈 진폭으로 인해 레이블과 훨씬 더 잘 연관되도록 모든 10개의 관련 열에 재사용됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f42b3a6b-4973-4c70-9644-36fe2ed9e6df.png"><img alt="clip_image010" border="0" height="459" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cea2b502-be2a-426b-af11-afc5e05f1db5.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="clip_image010" width="759"></a></p>
+
+
+  <p>그림 5. 이전에 시뮬레이션된 10개의 관련 기능에 대한 FIA 결과입니다. MI(왼쪽 축)와 Pearsonian 상관 관계(오른쪽 축)는 서로 다른 눈금에 있지만 두 유사성 메트릭은 서로 잘 상관 관계가 있습니다.</p>
+
+
+  <p>예상대로 1,000개의 관련 없는 각 기능 열에 대해 MI 및 Pearsonian 상관 관계 모두에 대한 최소, 최대 및 평균 통계는 1e-2 미만입니다(표 1 참조).</p>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td valign="bottom" width="64">&nbsp;</td>
+     <td valign="bottom" width="127">
+     <p>PearsCorrel</p>
+     </td>
+     <td valign="bottom" width="127">
+     <p>MI</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="bottom" width="64">
+     <p>분</p>
+     </td>
+     <td valign="bottom" width="127">
+     <p>9.48E-07</p>
+     </td>
+     <td valign="bottom" width="127">
+     <p>3.23E-07</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="bottom" width="64">
+     <p>max</p>
+     </td>
+     <td valign="bottom" width="127">
+     <p>3.93E-03</p>
+     </td>
+     <td valign="bottom" width="127">
+     <p>8.31E-06</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="bottom" width="64">
+     <p>average</p>
+     </td>
+     <td valign="bottom" width="127">
+     <p>7.67E-04</p>
+     </td>
+     <td valign="bottom" width="127">
+     <p>3.02E-06</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="bottom" width="64">
+     <p>stdev</p>
+     </td>
+     <td valign="bottom" width="127">
+     <p>5.84E-04</p>
+     </td>
+     <td valign="bottom" width="127">
+     <p>1.27E-06</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>표 1. 위에서 시뮬레이션된 1,000개의 관련 없는 열에 대한 유사성 메트릭 통계입니다.</p>
+
+
+  <p>이 결과는 샘플 크기(예: 시뮬레이트된 행 수)에 크게 좌우됩니다. 여기서 사용되는 1e3보다 훨씬 작은 행 크기의 경우 시뮬레이트된 데이터의 확률적 특성으로 인해 관련 없는 열에 대한 최대 및 평균 MI 및 Pearsonian 상관 관계 값이 더 클 수 있습니다.</p>
+
+
+  <h2>결론</h2>
+
+
+  <p>데이터 시뮬레이션은 ML 알고리즘을 이해하는 데 중요한 도구입니다. 여기에 제시된 사용자 지정 R 모듈은 <a href="https://gallery.cortanaintelligence.com/">Cortana Intelligence 갤러리</a>에서 <a href="https://gallery.cortanaintelligence.com/Experiment/Data-Simulator-For-Machine-Learning-1">사용할</a> 수 있으며 필터 <a href="https://msdn.microsoft.com/library/azure/818b356b-045c-412b-aa12-94a1d2dad90f">기반 기능 선택에</a> AML 모듈을 사용하여 결과를 분석할 수 있습니다<i>.</i> 알고리즘의 향후 확장에는 회귀 데이터 및 다변량 종속성이 포함되어야 합니다.</p>

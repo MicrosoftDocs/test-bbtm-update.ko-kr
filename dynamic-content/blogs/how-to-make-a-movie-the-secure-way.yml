@@ -1,0 +1,38 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1510e7ec7d60db4561ca1926157088415f77e711
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912819"
+Slug: how-to-make-a-movie-the-secure-way
+Title: 영화를 안전한 방법으로 만드는 방법
+Summary: 이번 주 RSA 2017 컨퍼런스에서는 "다음 할리우드 블록버스터의 제작 확보"(샌프란시스코 | 2017년 2월 15일 | 오후 1:30 - 오후 2:15) 아카데미 상을 수상® ...
+Content: >-
+  <p>이번 주 RSA 2017 컨퍼런스에서 well&rsquo;은 &ldquo;<a href="https://www.rsaconference.com/events/us17/agenda/sessions/5800-securing-the-making-of-the-next-Hollywood">다음 할리우드 블록버스터</a>&rdquo; (<em>샌프란시스코 | 2017년 2월 15일 | 오후 1시 30분 - 오후 2시 15분) </em>아카데미 상을 수상한&reg; 스튜디오 뉴 리젠시와 함께. Microsoft Azure&rsquo; 솔루션을 플랫폼으로 포팅한 ISV 파트너&rsquo; 간부와 함께 클라우드에서 영화 제작을 보호하기 위한 전환에 대한 매혹적인 모험을 제공합니다.</p>
+
+
+  <p><em>리벤트</em>와 <em>버드맨</em> 과 같은 비평가들의 극찬을 받은 장편 영화와 최근 암살자 크리드(Assassins&rsquo; Creed)를 포함한 블록버스터 타이틀을 담당하는 뉴 리젠시(New Regency)는 기술의 출혈에 어떤 영향을 미치는지&rsquo; 알고 있으며, 동시에 영화의 영광을 만끽하는 생생한 이야기를 들려줍니다. 기술을 사용하여 스크립트의 요소를 전달하여 생산자&rsquo;의 비전을 전달하고 효율성과 비용 절감을 위해 워크플로를 최적화합니다. 이 모든 것의 중간에: 비즈니스의 생명선인 콘텐츠를 보호합니다.</p>
+
+
+  <p>이 콘텐츠는 메타데이터의 연결이 계속 증가함에 따라 다양한 Formsmemos&mdash;, 스크립트, 사진, 오디오, 이메일, 계약, 비디오 등&mdash;으로 제공됩니다. &rsquo;또한 많은 장소&mdash; 서버, 워크스테이션, 모바일 스토리지, 보관 등에 저장됩니다.&mdash; 대규모 보안 문제를 제시합니다. 데이터는 멀리 날아와서 데이터를 잠그려는 모든 노력에 도전합니다. 그 위에, 건강 기록, 계약 세부 정보 및 paystubs와 같은 개인 정보가 혼합에 들어갔고 이미 격렬한 데이터 거버넌스 상황이 추가되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2c9d0ee4-133e-4cce-9efa-513a074d128d.png"><img alt="" border="0" height="387" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cb17a93a-93fa-409c-a743-f1e78d06a4fb.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; border-left: 0px; display: block; padding-right: 0px; margin-right: auto" title="" width="580"></a></p>
+
+
+  <p>이 세션에서는 Azure 및 Avid, 5 kind, <a href="https://www.contractlogix.com/">Contract Logix</a>,&rsquo; Docusign, MarkLogic 및 SyncOnSet의 결합된 마법사를 활용하는 New Regency에서 디자인한 엔드투엔드 워크플로를 살펴봅니다. New Regency의 물리적 프로덕션 임원이자 프로젝트의 원동력인 Lulu Zezza는 클라우드로 이동하는 것이 다양한 물리적 및 논리적 환경, 위치 및 데이터 형식에서 보안 제어를 구현하는 가장 좋은 방법이라고 지적 &ldquo;했습니다. 우리는 전 세계에서, 다른 회사를 위해, 다른 시스템을 사용하여, 모두 동일한 생산에 기여하는 사람들이 있습니다. 과거에는 계약자가 해야&rsquo; 할 일에 액세스하고,&rsquo; 정보가 복제되어 잘못된 장소에 저장되고, 민감한 콘텐츠가 공개되어 있는 것처럼 보였습니다.&rdquo;</p>
+
+
+  <p>새로운 디지털 워크플로를 사용하면 프로덕션 데이터와 승무원&rsquo; 개인 HR 정보(새로운 글로벌 개인 정보 보호 표준이 적용되는)를 모두 관리할 수 있는 보안 &ldquo;스크립트-화면&rdquo; 환경을 사용할 수 있습니다. 계약, 스크립트 및 카메라에서 캡처된 메타데이터는 촬영 일, 장면과 관련이 있으며, 영화의 최종 편집에 기록되고 나중에 기록되어 문서 공유 및 영화 상영의 필요성을 줄입니다. 또한 통신은 보호되고 기밀로 유지됩니다. 그것은&rsquo; 영화를 만드는 완전히 새로운 방법입니다.</p>
+
+
+  <p>다음에 대해 들을 수 있는&rsquo; 세션에 참여하세요.</p>
+
+
+  <ul>
+   <li>다중 도메인 클라우드 환경에 대한 아키텍처 고려 사항</li>
+   <li>BYOD 사용자에 대한 보안 액세스 및 디바이스 관리</li>
+   <li>연결되고 연결이 끊긴 네트워크의 콘텐츠 보호 및 개인 정보 보호</li>
+   <li>그리고 <em>복수, 암살자 신조, 웰빙</em> 과 <em>미완성 비즈니스</em>를위한 치료제의 제작의 비하인드 스토리를 엿볼 수 있습니다!</li>
+  </ul>

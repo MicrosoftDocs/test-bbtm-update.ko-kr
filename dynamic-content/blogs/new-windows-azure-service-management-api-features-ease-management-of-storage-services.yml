@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d9c659a042115575908e0ebe2026c77f46a6dbc3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897887"
+Slug: new-windows-azure-service-management-api-features-ease-management-of-storage-services
+Title: 새로운 Windows Azure 서비스 관리 API 기능은 Storage Services의 간편한 관리 기능
+Summary: 업데이트:&nbsp; 이제 새 Windows Azure Service Management API 콘텐츠를 사용할 수 있습니다.&nbsp; 자세한 내용은 이 게시물을 참조하세요.  Windows Azure Service Management API를 사용하면 Windows...
+Content: '<p><em>업데이트:&nbsp; 이제 새 Windows Azure Service Management API 콘텐츠를 사용할 수 있습니다.&nbsp; 자세한 내용은 이 게시물을 참조하세요.</em></p>  <p>Windows Azure 서비스 관리 API를 사용하면 <a target="_blank" href="https://azure.microsoft.com/">Windows Azure</a> 고객이 배포, 호스팅 서비스 및 스토리지 계정을 프로그래밍 방식으로 관리할 수 있습니다. 고객이 프로그래밍 방식으로 스토리지 서비스의 &ndash; 수명 주기를 관리할 수 있도록 하는 새로운 Windows Azure Service Management API 기능의 릴리스를 발표하게 되어 기쁘게 생각합니다. 즉, 다음과 같은 새로운 방법을 사용하여 스토리지 서비스를 프로그래밍 방식으로 생성, 업데이트 또는 삭제할 수 있습니다. Storage 계정 만들기; Storage 계정을 업데이트하고 Storage 계정을 삭제합니다. </p>  <p>또한 두 가지 기존 Windows Azure Service Management API 메서드의 새 버전을 통해 고객은 배포 및 구독에 대한 추가 정보를 얻을 수 있습니다.</p>  <ul>  <li>배포 가져오기 메서드의 새 버전은 다음과 같은 추가 정보를 반환합니다.   <ul>  <li>인스턴스 크기, SDK 버전, 입력 엔드포인트 목록, 역할 이름, VIP, 포트</li>  <li>역할 인스턴스의 도메인 및 장애 도메인 업데이트</li>  </ul>  </li>  <li>새 버전의 List Subscriptions 메서드는 OperationStartedTime 및 OperationCompletedTime과 같은 추가 정보를 반환합니다.</li>  <li>이러한 메서드의 새 버전을 사용하는 요청 헤더는 &ldquo;x-ms-version: 2011-06-01입니다.&rdquo;</li>  </ul>  <p>업데이트된 Windows Azure Service Management API 콘텐츠는 며칠 내에 릴리스되고 발표될 예정입니다.</p>  <p><iframe src="https://www.facebook.com/plugins/like.php?href= https://blogs.msdn.com/b/windowsazure/archive/2011/06/06/new-windows-azure-service-management-api-features-ease-management-of-storage-services.aspx;layout=box_count&amp;show_faces=false&amp;width=300&amp;action=like&amp;font=segoe+ui&amp;colorscheme=light&amp;height=50" style="overflow: hidden; width: 300px; height: 50px;" frameborder="0" scrolling="no"></iframe><br>트윗  <script type="text/javascript"></script>  </p>'

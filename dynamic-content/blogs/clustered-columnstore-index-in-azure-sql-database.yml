@@ -1,0 +1,182 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6ded5c5f56c9f88a7aa3d0a3faf3129c87be1490
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913055"
+Slug: clustered-columnstore-index-in-azure-sql-database
+Title: Azure SQL Database 클러스터형 Columnstore 인덱스
+Summary: Columnstore 인덱스는 Azure SQL Databases에서 분석 쿼리를 실행하는 데 선호되는 기술입니다. 최근에 모든 Premium 데이터베이스에 대한 기술을 In-Memory 경우 일반 공급&nbsp;이 발표되었습니다....
+Content: >-
+  <p>Columnstore 인덱스는 Azure SQL Databases에서 분석 쿼리를 실행하는 데 선호되는 기술입니다. 최근에 모든 Premium 데이터베이스에 대한 기술을 In-Memory 경우 <a href="https://azure.microsoft.com/en-us/blog/azure-sql-database-in-memory-performance/">일반 공급이 발표</a>되었습니다. <a href="https://azure.microsoft.com/en-us/blog/in-memory-oltp-in-azure-sql-database/">메모리 내 OLTP</a>와 마찬가지로 columnstore 인덱스 기술은 프리미엄 데이터베이스에서 사용할 수 있습니다.</p>
+
+
+  <p>columnstore 기술은 두 가지 버전으로 제공됩니다. DataMart 분석 워크로드용 CCI(클러스터형 columnstore 인덱스) 및 NCCI(비클러스터형 columnstore 인덱스)를 사용하여 운영(즉, OLTP) 워크로드에서 분석 쿼리를 실행합니다. 이러한 두 columnstore 인덱스의 차이점에 대해서는 <a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/07/18/columnstore-index-differences-between-clusterednonclustered-columnstore-index/">NCCI와 CCI</a> 를 참조하세요. columnstore 인덱스는 스토리지 공간을 크게 줄이면서 분석 쿼리의 성능을 최대 100배까지 단축할 수 있습니다. 달성된 데이터 압축은 스키마와 데이터에 따라 달라지지만 압축이 없는 rowstore와 비교할 때 평균 약 10배의 데이터 압축이 표시됩니다. 이 블로그는 CCI를 사용하는 분석 워크로드에 중점을 두고 향후 블로그에서 NCCI를 다룹니다.</p>
+
+
+  <p>클러스터형 Columnstore 인덱스는 모든 프리미엄 버전의 Azure SQL Databases에서 사용할 수 있습니다. 그러나 표준 및 기본 가격 책정 계층에서는 아직 사용할 수 없습니다. Azure SQL Databases에서 이 기술을 사용하면 스토리지 비용을 절감하고 낮은 프리미엄 계층에서 유사하거나 더 나은 쿼리 성능을 얻을 수 있습니다.</p>
+
+
+  <p>아래 표에서는 클러스터형 columnstore 인덱스 및 스토리지 절감을 달성/사용하지 않고 P1 및 P15에서 실행되는 다중 테이블 조인을 사용하는 일반적인 분석 쿼리를 보여 줍니다.</p>
+
+
+  <p><strong>쿼리 성능:</strong> 아래에 유의해야 할 핵심은 클러스터형 columnstore 인덱스를 사용하면 예제 쿼리가 튜닝 없이 rowstore를 사용하여 P15에서 실행되는 동일한 쿼리에 비해 P1에서 5배 더 빠르게 실행된다는 것입니다.&nbsp; 이렇게 하면 워크로드 요구 사항을 충족하기 위해 지불해야 하는 비용이 크게 낮아질 수 있습니다.</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0" width="999">
+   <tbody>
+    <tr>
+     <td valign="top" width="210"><b>가격 책정 계층</b></td>
+     <td valign="top" width="265"><b>Rowstore를 사용하여 </b></td>
+     <td valign="top" width="260"><b>Columnstore를 사용하여</b></td>
+     <td valign="top" width="262"><b>성능 향상</b></td>
+    </tr>
+    <tr>
+     <td valign="top" width="209">P1</td>
+     <td valign="top" width="264">30.6초</td>
+     <td valign="top" width="261">4.2초</td>
+     <td valign="top" width="263">14x</td>
+    </tr>
+    <tr>
+     <td valign="top" width="208">P15</td>
+     <td valign="top" width="264">19.5초</td>
+     <td valign="top" width="262">0.319초</td>
+     <td valign="top" width="264">60x</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><strong>Storage 크기:</strong> 아래 표시된 PAGE 또는 NONE 압축 테이블에 비해 columnstore를 사용하여 스토리지를 절약합니다. 스토리지 비용은 이미 AzureDB에 포함되어 있지만 스토리지를 낮추면 더 낮은 계층을 선택할 수 있습니다. 이는 테스트 데이터를 생성하므로 압축이 고객 워크로드에 대해 얻을 수 있는 것보다 낮습니다.</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0" width="1685">
+   <tbody>
+    <tr>
+     <td valign="top" width="377"><strong>행 수</strong></td>
+     <td valign="top" width="432"><strong>Rowstore 크기(MB)</strong></td>
+     <td valign="top" width="438"><strong>columnstore 크기(MB)</strong></td>
+     <td valign="top" width="436"><strong>저축 예금</strong></td>
+    </tr>
+    <tr>
+     <td valign="top" width="377">3626191</td>
+     <td valign="top" width="432">212(PAGE 압축)</td>
+     <td valign="top" width="438">120</td>
+     <td valign="top" width="436">1.8x</td>
+    </tr>
+    <tr>
+     <td valign="top" width="377">3626191</td>
+     <td valign="top" width="432">756(NONE 압축)</td>
+     <td valign="top" width="438">120MB</td>
+     <td valign="top" width="436">6.2x</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>columnstore 인덱스 기술의 가장 중요한 부분은 애플리케이션을 변경할 필요가 없다는 것입니다. 기존 인덱스 만들기 또는 테이블의 columnstore 인덱스로 바꾸기만 하면 됩니다.</p>
+
+
+  <h2>Columnstore 인덱스 작동 방식</h2>
+
+
+  <p>앞에서 설명한 대로 columnstore는 아래와 같이 테이블에 데이터를 열로 저장하는 인덱스일 뿐입니다. 쿼리는 변경할 필요가 없는 테이블에 계속 액세스할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15e271b1-9944-4894-be37-0d4b1bbbfe90.png"><img alt="chart 1" border="0" height="268" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/73d0f49d-2cf4-424e-9570-050824cc2dda.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="차트 1" width="793"></a></p>
+
+
+  <p>Columnstore 인덱스는 다음 세 가지 주요 요소로 인해 상당한 데이터 압축 및 쿼리 성능을 제공합니다.</p>
+
+
+  <ul>
+   <li><strong>감소된 IO 및 Storage:</strong> 데이터는 개별 열로 저장되므로 모든 값이 동일한 도메인(즉, 데이터 형식)에서 그려지고 대부분의 경우 값이 반복되거나 유사할 뿐만 아니라 압축됩니다. 압축은 데이터 분포에 따라 달라지지만 일반적인 압축은 약 10배입니다. 이는 데이터베이스의 IO 공간으로 스토리지를 크게 줄일 수 있기 때문에 중요합니다.</li>
+   <li><strong>참조된 열만 가져와야 합니다</strong> . 대부분의 분석 쿼리는 작은 열 집합만 가져오거나 처리합니다. 일반적인 <a href="https://en.wikipedia.org/wiki/Star_schema">별표 스키마</a>&nbsp;를 고려하면 FACT 테이블은 행이 가장 많고 열 수가 많은 테이블입니다. columnstore 스토리지를 사용하면 SQL Server 쿼리에서 참조되는 열 수에 관계없이 전체 행을 가져와야 하는 rowstore와 달리 참조된 열만 가져와야 합니다. 예를 들어 100개의 열이 있는 FACT 테이블과 이 테이블에 액세스하는 분석 쿼리가 5개의 열만 참조하는 것을 고려합니다. 이제 참조된 열만 페치하면 모든 열이 동일한 스토리지를 사용한다는 가정이 간소화되어 잠재적으로 IO를 95% 줄일 수 있습니다. 이는 columnstore에서 제공하는 이미 10배의 데이터 압축을 기반으로 합니다.</li>
+   <li><strong>효율적인 데이터 처리:</strong> SQL Server 쿼리 성능에서 최대 100배의 속도를 제공하는 columnstore 데이터에 대한 업계 최고의 쿼리 엔진을 보유하고 있습니다. 자세한 내용은 <a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/03/14/columnstore-index-how-does-sql-server-delivers-industry-leading-performance-for-analytic-queries/">분석 쿼리 속도 향상을 참조하세요</a>.</li>
+  </ul>
+
+
+  <h2>클러스터형 columnstore 인덱스 만들기는 어떻게 하나요?</h2>
+
+
+  <p>클러스터형 columnstore 인덱스 만들기는 다른 인덱스 만들기와 같습니다. 예를 들어 다음과 같이 일반 rowstore 테이블을 만들 수 있습니다.</p>
+
+
+  <pre>
+
+  CREATE TABLE ACCOUNT (
+      ACCOUNTKEY                INT NOT NULL,
+      ACCOUNTDESCRIPTION        NVARCHAR (50),
+      ACCOUNTTYPE               NVARCHAR (50),
+      ACCOUNTCODEALTERNATEKEY   INT)</pre>
+
+  <p>위의 표에 삽입된 모든 행은 rowstore 형식으로 저장됩니다. 이제 이 테이블을 변환하여 &#39;columnstore&#39; 데이터를 저장하려는 경우 다음 SQL 문을 실행하기만 하면 됩니다.</p>
+
+
+  <pre>
+
+  CREATE CLUSTERED COLUMNSTORE index ACCOUNT_CI on ACCOUNT</pre>
+
+
+  <p>rowstore 테이블에 클러스터형 BTREE 인덱스가 있는 경우 다음 SQL 문을 실행할 수 있습니다.</p>
+
+
+  <pre>
+
+  CREATE CLUSTERED COLUMNSTORE index ACCOUNT_CI on ACCOUNT WITH (DROP_EXISTING = ON)</pre>
+
+
+  <h2>클러스터형 columnstore 인덱스 사용 시기 및 위치</h2>
+
+
+  <p>클러스터형 Columnstore 인덱스는 주로 분석 워크로드를 대상으로 합니다. 아래 표에서는 이 기술을 사용하여 성공적으로 배포된 일반적인 시나리오를 보여 줍니다.</p>
+
+
+  <table border="1" cellpadding="2" cellspacing="0" width="996">
+   <tbody>
+    <tr>
+     <td valign="top" width="321"><strong>Columnstore 옵션</strong></td>
+     <td valign="top" width="356"><strong>작업</strong></td>
+     <td valign="top" width="317"><strong>압축</strong></td>
+    </tr>
+    <tr>
+     <td valign="top" width="319">CCI(클러스터형 columnstore 인덱스)</td>
+     <td valign="top" width="361">
+     <ul>
+      <li><strong>Star 또는 Snowflake 스키마를 사용하여 기존 DW 워크로드:</strong> 일반적으로 FACT 테이블에서 CCI를 사용하도록 설정하지만 PAGE 압축을 사용하여 rowstore를 사용하여 DIMENSION 테이블을 유지합니다.<br>
+  추가 고려 사항: 행이 100만 개인 &gt; 대형 차원 테이블에 대해 CCI를 고려합니다.</li>
+      <li><strong>주로 워크로드를 삽입합니다.</strong> IOT(사물 인터넷)와 같은 많은 워크로드는 최소한의 업데이트/삭제로 대량의 데이터를 삽입합니다. 이러한 워크로드는 방대한 데이터 압축을 활용할 뿐만 아니라 분석 쿼리의 속도를 높일 수 있습니다.</li>
+     </ul>
+     </td>
+     <td valign="top" width="315">
+     <p>평균 10배</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="317">CCI/NCI(하나 이상의 비클러스터형 인덱스 포함)</td>
+     <td valign="top" width="366">
+     <ul>
+      <li>CCI에서 언급한 쿼리와 비슷하지만 (a) PK/FK 적용(b) 같음 조건자 또는 짧은 범위 쿼리를 사용하는 쿼리의 상당수가 필요합니다. NCI는 NCI를 사용하여 효율적으로 배치할 수 있는 행의 전체 테이블 검색(c) 업데이트/삭제 삭제를 방지하여 쿼리 성능을 향상합니다.</li>
+     </ul>
+     </td>
+     <td valign="top" width="319">
+     <p>평균 10배 + NCI용 추가 스토리지</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>시작할 리소스</h2>
+
+
+  <p>자세한 내용은 다음을 참조하세요.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-in-memory">columnstore 인덱스 샘플 워크로드</a></li>
+   <li><a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/2016/10/04/columnstore-index-in-memory-analytics-i-e-columnstore-index-videos-from-ignite-2016/">columnstore 인덱스의 프로덕션 배포 예제</a></li>
+   <li><a href="https://blogs.msdn.microsoft.com/sqlserverstorageengine/tag/columnstore-index/">columnstore 인덱스에 대한 팀&#39;블로그 SQL Server</a></li>
+   <li><a href="https://msdn.microsoft.com/library/gg492088.aspx">columnstore 인덱스 관련 MSDN 설명서</a></li>
+  </ul>

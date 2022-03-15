@@ -1,0 +1,79 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0fe8033fe0934a523c146817b25de359d1acb77c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897636"
+Slug: introducing-dev-spaces-for-aks
+Title: AKS용 Dev Spaces 소개
+Summary: 오늘은 Azure에서만 사용할 수 있는 Kubernetes용 애플리케이션을 빌드하고 디버그하는 쉬운 방법인 AKS(Azure Kubernetes Services)용 Dev Spaces의 공개 미리 보기를 발표하게 되어 기쁩니다. Microsoft에서...
+Content: >-
+  <p>오늘 Im&rsquo;은 Azure에서만 사용할 수 있는 Kubernetes용 애플리케이션을 빌드하고 디버그하는 쉬운 방법인 AKS(Azure Kubernetes &ndash; Services)용 Dev Spaces의 공개 미리 보기를 발표하게 되어 기쁩니다. Microsoft Build에서 Scott Hanselman은 Dev Spaces를 사용하여 복잡한 마이크로 서비스 환경 내에서 단일 애플리케이션을 신속하게 디버그하고 수정하는 방법을 보여 줍니다. 당신이 이벤트를 놓친 또는 <a href="https://twitter.com/ch9/status/993559448982470656?lang=en" target="_blank">무대 연극에</a> 의해 산만 한 경우, Dev&rsquo; Spaces가 그렇게 독특한 제품인 이유를 검토 할 가치가 있습니다.</p>
+
+
+  <p>Imagine 각각 자체 구성 및 지원 서비스를 사용하여 수십 개의 구성 요소로 구성된 복잡한 마이크로 서비스 애플리케이션에서 버그를 수정하려고 하는 신입 직원입니다. 시작하려면 IDE 설정, 도구 체인 빌드, 컨테이너화된 서비스 종속성, 로컬 Kubernetes 환경, 지원 서비스 모의 등 프로덕션을 모방할 수 있도록 로컬 개발 환경을 구성해야 합니다. 개발 환경을 설정하는 데는 항상 관련되어 있으므로 첫 번째 버그를 수정하는 데 며칠이 걸릴 수 있습니다.</p>
+
+
+  <p>또는 Dev Spaces 및 AKS를 사용할 수 있습니다.</p>
+
+
+  <h2>몇 초 만에 개발 환경 설정</h2>
+
+
+  <p>Dev Spaces를 사용하면 모든 새 개발자 요구 사항이 IDE 및 Azure CLI입니다. AKS 내에 새 Dev Space를 만들고 다른 트래픽 흐름을 방해하지 않고 마이크로 서비스 환경의 모든 구성 요소에서 안전하게 작업을 시작합니다.</p>
+
+
+  <pre>
+
+  azds space select --name gabe</pre>
+
+
+  <p>내부적으로 Dev Spaces는 Kubernetes 네임스페이스를 만들고 IDE 내에서 활성 개발 중인 마이크로 서비스로만 채웁니다. Dev Spaces를 설정하면 이제 환경이 며칠이 아닌 몇 초가 걸립니다.</p>
+
+
+  <h2>빠르게 코드 변경 반복</h2>
+
+
+  <p>이제 환경이 설정&rsquo;되었으므로 코드를 작성해야 합니다. Microsoft에서는 코드를 작성하는 동안&rsquo; 이 프로세스를 내부 루프라고 하지만 버전 제어로 푸시하기 전에&rsquo; 이 프로세스를 &ndash; &ldquo;&rdquo; 호출합니다. 컨테이너 및 Kubernetes를 사용하면 컨테이너 이미지가 빌드되고, 레지스트리에 푸시되고, 클러스터에 배포될 때까지 기다리는 동안 코드 작성 프로세스가 매우 느려질 수 있습니다. Dev Spaces에는 AKS 내에서 실행되는 라이브 컨테이너와 IDE를 동기화하는 코드 동기화 기술이 포함되어 있습니다. 빠른 내부 루프 환경을 원하십니까? Dev Spaces를 사용하면 IDE의 변경 내용이 몇 초 만에 AKS 클러스터로 푸시됩니다.</p>
+
+
+  <h2>원격으로 컨테이너 디버그</h2>
+
+
+  <p>소프트웨어 디버거를 사용한 적이 있다면&rsquo; 중단점을 설정하고, 호출 스택을 검사하고,&rsquo; 코딩할 때 메모리 라이브&rsquo;를 수정하는 것이 얼마나 큰 도움이 되는지 알 수 있습니다. 안타깝게도 컨테이너를 사용한 원격 디버깅은 부서지기 쉽고 구성하기 어렵습니다. 실제로 컨테이너 기반 마이크로 서비스에서 작업하는 대부분의 개발자는 특히 변경 내용이 복잡한 주변 서비스 집합에 따라 달라지는 경우 느리고 시간이 많이 걸리는 인쇄줄 디버깅을 사용해야 합니다. 개발자는 Dev Spaces에서 서비스 메시 기술을 혁신적인 방식으로 사용하여 간단한 호스트 이름 접두사로 격리된 모든 서비스에서 작업할 수 있습니다.</p>
+
+
+  <p>예를 들어 결과를 반환하기 전에 10개의 마이크로 서비스를 트래버스해야 하는 서비스가 contoso.com 실행되고 있다고 가정해 보겠습니다&rsquo;. 이름이 `gabe`Dev Space인 경우 다음을 수행할 수 있습니다.</p>
+
+
+  <p>gabe.s.contoso.com</p>
+
+
+  <p>이 특수 URL 접두사로 트래픽은 활성 개발 중인 모든 서비스를 통해 라우팅됩니다. 즉, 일반적인 트래픽 흐름을 중단하지 않고도 다른 서비스의 수정되지 않은 인스턴스를 사용하는 동안 서비스 3 및 서비스 7의 IDE에서 중단점을 설정할 수 있습니다. 얼마나 멋진!? 현재는 .NET Core 및 Node.js 사용하는 원격 디버깅을 지원하며, 더 많은 언어가 제공됩니다.</p>
+
+
+  <p>이제 Dev Spaces를 사용하여 무엇을 할 수 있는지 알고 있으므로 <a href="https://aka.ms/get-azds" target="_blank">시작하려면 설명서</a> 로 넘어가세요. 또한 Visual Studio 및 Visual Studio Code 사용하여 개발 흐름의 일부로 Azure Dev Spaces를 사용하는 방법을 보려면 이 <a href="https://aka.ms/vs-devspaces-blog" target="_blank">블로그</a>를 참조하세요.</p>
+
+
+  <h2>새 애플리케이션을 쉽게 부트스트랩</h2>
+
+
+  <p>개발자는 Kubernetes에서 제공하는 민첩성, 안정성 및 확장성 이점을 좋아합니다. 그들은 Kubernetes 주변의 커뮤니티와 오픈 소스 에코시스템을 좋아합니다. YAML 매니페스트이며 Kubernetes를 사용하는 데 Dockerfiles가 필요한가요? 그다지 많지 않습니다. 다행히 Dev Spaces는 새 애플리케이션을 쉽게 부트스트랩할 수 있는 애플리케이션 스캐폴딩 기능을 제공합니다.</p>
+
+
+  <pre>
+
+  azds prep</pre>
+
+
+  <p>이 명령은 애플리케이션 유형을 검색하고 Dockerfile, Helm 차트 및 기타 메타데이터를 원본 트리에 배치합니다. 이렇게 하면 비전 세부 정보를 학습하지 않고도 Kubernetes용 애플리케이션을 쉽게 컨테이너화하고 패키지할 수 있습니다. 스캐폴딩은 소스 코드의 일부가 되므로 필요에 따라 구성을 조정할 수 있습니다. 스캐폴드된 자산을 수정하여 앱을 개발에서 프로덕션으로 전환할 수도 있습니다.</p>
+
+
+  <h2>오픈 소스 기술 사용</h2>
+
+
+  <p>Dev Spaces는 Azure에서만 사용할 수 있지만 스캐폴딩은 모든 Kubernetes 클러스터에서 내부 루프 환경을 제공하는 오픈 소스 <a href="https://github.com/Azure/draft" target="_blank">Draft 프로젝트를</a> 기반으로 합니다. 시간이 지남에 따라 Draft를 사용하는 모든 프로젝트가 Dev Spaces로 전환될 수 있으며 그 반대의 경우도 마찬가지입니다. Azure에서 Dev Spaces를 지속적으로 개선함에 따라 전체 Kubernetes 커뮤니티에 도움이 되는 오픈 소스 Draft 프로젝트에서 더 많은 혁신을 기대할 수 있습니다.</p>
+
+
+  <p>&rsquo;Azure 팀에게는 흥미로운 달이었습니다. <a href="https://azure.microsoft.com/en-us/blog/azure-kubernetes-service-aks-ga-new-regions-new-features-new-productivity/" target="_blank">AKS는 이제 일반 공급</a> 되며 지난 30일 동안 80% 이상 성장했습니다. AKS는 이제 미국 동부 2와 일본 동부를 포함한 12개 지역에서 사용할 수 있으며, 둘 다 2주 전에 일반 공급 이후 추가되었습니다. 지난 몇 주 동안 전 세계 관객들에게 Dev Spaces를 선보이며 그 반응은 압도적으로 긍정적이었습니다. Dev Spaces를 사용하면 복잡한 마이크로 서비스 환경에 대해 간단하게 개발할 수 있습니다. 시도해 보세요. 여러분의 의견을 들어주시기 위해 기다릴 수&rsquo; 없겠습니다.</p>

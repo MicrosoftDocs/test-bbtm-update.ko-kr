@@ -1,0 +1,84 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 2243f707d85aae3f886b18cd094cf22e53a5e759
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913049"
+Slug: code-collaborate-and-ship-your-apps-from-anywhere
+Title: 어디서나 앱을 코딩, 공동 작업 및 배송
+Summary: 'Microsoft Build 2020 시작! 이 새로운 48시간 디지털 환경은 전 세계 개발자와 함께 모여 과제를 해결하고 지식을 공유하며 연결 상태를 유지할 수 있도록 설계되었습니다. '
+Content: >-
+  <p>Microsoft Build 2020 시작! 이 새로운 48시간 디지털 환경은 전 세계 개발자와 함께 모여 과제를 해결하고 지식을 공유하며 연결 상태를 유지할 수 있도록 설계되었습니다. 여기서는&rsquo; 개발자 도구 및 클라우드 플랫폼 기술의&mdash; 최신 혁신 중 일부를 다루어 어디서나 앱을 코딩, 공동 작업 및 배송할 수 있으므로 비즈니스의 변화하는 요구를 지원하고 고객이 기대하는 품질 환경을 계속 제공할 수 있습니다.</p>
+
+
+  <p>그렇다면 오늘날의 과제를 극복하고 개발자로서 생산성을 유지하려면 어떻게 해야 할까요? 고맙게도 오늘날&rsquo; 디지털 세계에서는 원격으로 작업하고 그 어느 때보다 생산성을 높이는 데 도움이 되는 도구가 있습니다. Azure를 신뢰할 수 있는 클라우드 플랫폼으로 사용하고 Visual Studio 및 GitHub 있는 클라우드 기반 개발자 도구를 사용합니다.</p>
+
+
+  <h2>코드</h2>
+
+
+  <p>개발자는 소스 코드 복제, 런타임 설치, linter 및 디버거 설정, 다음 프로젝트, 다음 버그 또는 다음 코드 검토를 위해 모든 작업을 다시 수행하도록 확장&mdash; 구성 등 새 프로젝트에 대한 개발 머신을 구성하는 데 무한 시간을 보내는 경우가 많습니다. 이 문제는 선호하는 개발 머신에 액세스할 수 없는 원격 작업 시간에 더욱 널리 퍼져 있습니다. 미리 보기로 제공되는 <a href="https://visualstudio.microsoft.com/services/visual-studio-codespaces/" target="_blank">Visual Studio Codespaces</a>를 사용하면 몇 초 만에 코딩할 준비가 된 클라우드 호스팅 개발 환경을&rsquo; 만들 수 있습니다. Visual Studio Code 또는 Visual Studio 액세스할 수 있으며 모든 디바이스에서 애플리케이션을 편집, 실행 및 디버그하는 데 사용할 수 있는 전체 웹 기반 편집기도 포함되어 있습니다. 최근에 <a href="https://github.com/features/codespaces" target="_blank">Codespaces가 미리 보기에서 GitHub 출시될 예정이므로</a> 모든 리포지토리에서 쉽게 코딩할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1170633f-545a-4e5c-802c-4f83e080df37.png" target="_blank"><img alt="visual-studio-online-hero" border="0" height="577" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bb3e3ea0-66f7-4f8f-9453-7a15ac5f7719.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="visual-studio-online-hero" width="1024"></a></p>
+
+
+  <p>.NET 개발자가 플랫폼 간에 코드를 공유할 수 있도록 돕기 위해 오늘 <a href="https://dot.net/get-dotnet5" target="_blank">.NET 5 Preview 4</a>를 출시했습니다. .NET 5를 사용하여 모바일, 데스크톱 및 웹과 같은 모든 워크로드에서 .NET 플랫폼을 통합하는 과정을 계속 진행합니다. .NET 5 미리 보기 4에는 컨테이너를 사용하고 특히 다단계 빌드 시나리오의 경우 이미지 크기를 줄이기 위한 많은 개선 사항이 있습니다.</p>
+
+
+  <p>웹앱을 만들려는 C# 및 HTML 기술 세트를 사용하는 개발자를 위해 Blazor는 JavaScript를 작성할 수 있는&mdash; 무료 오픈 소스 웹 프레임워크입니다. 오늘 ASP.NET <a href="https://aka.ms/blazor" target="_blank">Blazor WebAssembly</a>를 발표하여 C#을 사용하여 브라우저에서 완전히 실행되는 웹앱을 빌드할 수 있으며, 이는 더 나은 성능을 발휘하고 JavaScript보다 메모리를 적게 차지하며 완전히 오프라인으로 실행할 수 있습니다.</p>
+
+
+  <p>JavaScript를 사용하여 최신 단일 페이지 애플리케이션을 빌드하고 몇 분 안에 전역적으로 최소한의 구성 및 배포를 찾는 경우 Azure App Service, <a href="https://techcommunity.microsoft.com/t5/azure-app-service/introducing-app-service-static-web-apps/ba-p/1394451">Static Web Apps</a>에서 새 호스팅 옵션을 확인합니다. 이제 미리 보기로 제공됩니다. Static Web Apps는 Angular, React 및 Vue와 같은 프레임워크 또는 Gatsby 및 Hugo와 같은 정적 사이트 생성기를 지원합니다. Git 리포지토리를 사용하여 정적 웹앱을 초기화하면 GitHub 작업을 연결한 다음 스마트 기본값을 CI/CD 파이프라인에 연결합니다. 즉, 개발자가 변경될 때마다 품질 및 보안 검사를 거닐게 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4d92d3a1-de99-46ab-b115-5b85b250f45e.png" target="_blank"><img alt="staticwebapp4" border="0" height="748" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fc31dd10-19dc-475b-8896-cff8cdbdc30c.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="staticwebapp4" width="1869"></a></p>
+
+
+  <p>클라우드 규모 및 성능에 최적화된 애플리케이션의 경우 최근 <a href="https://aka.ms/k8sonaz/blog" target="_blank">Windows Server 컨테이너에 대한 AKS(Azure Kubernetes Service) 지원의 일반 공급</a>이 발표되었습니다. 컨테이너에서 Windows 애플리케이션을 리프트 앤 시프트하려는 경우&rsquo; 이제 Azure의 관리되는 Kubernetes 서비스에서 애플리케이션을 실행하고 프로덕션 워크로드에 대한 이식성, 확장성 및 자체 복구의 모든 이점을 얻을 수 있습니다. 무한하고 보장된 속도와 성능으로 주문형 앱을 즉시 확장할 수 있도록, 오늘 <a href="https://aka.ms/AzureCosmosDBBuildBlogPostPlaceholder" target="_blank">Azure Cosmos DB</a>에 대한 새로운 혁신과 Azure Cosmos DB 무료 계층과 자동 크기 조정을 연결하여 얻은 상당한 비용 절감을 발표했습니다.</p>
+
+
+  <p>또한 Azure를 사용하면 개발자가 <a href="https://azure.microsoft.com/services/cognitive-services/" target="_blank">Azure Cognitive Services</a>를 사용하여 애플리케이션에 AI를 쉽게 추가할 수 있습니다. 오늘 향상된 음성 스타일과 같은 새로운 기능을 발표하여 브랜드 또는 고유한 시나리오에 맞게 앱의 음성을 조정할 수 있습니다. 어디서나 AI를 실행하려는 경우&rsquo; Language Understanding 및 텍스트 분석에 대한 컨테이너 지원의 일반 공급도 발표했습니다.</p>
+
+
+  <p>또한 앱을 신속하게 제공해야 하는 경우 Microsoft Power Apps, 낮은 코드 플랫폼 및 Azure의 조합을 활용하여 데이터를 분석하고, 프로세스를 자동화하고, 가상 에이전트를 만듭니다. <a data-bi-area="undefined" data-bi-id="page-clicked-link" data-bi-view="undefined" data-event="page-clicked-link" href="https://aka.ms/PowerAppsBuild2020" target="_blank">Charles Lamannas&rsquo; 블로그</a>에서 Bot Services, Logic Apps 및 Functions와 같은 Azure 서비스를 사용하여 Power Apps 확장하는 방법을 알아봅니다.&nbsp;</p>
+
+
+  <h2>공동 작업</h2>
+
+
+  <p>로컬 또는 분산 개발 팀으로 효과적으로 공동 작업을 수행하려면 유연한 작업 일정을 수용하고, 필요할 때 비동기 및 실시간으로 공동 작업하고, 작업을 추적하고 우선 순위를 지정할 수 있는 기능이 필요합니다. <a href="https://visualstudio.microsoft.com/services/live-share/" target="_blank">Visual Studio Live Share</a> 사용하면 공유 코딩 세션을 만들고 어디에 있든 상관없이 안전하게 피어&mdash;와 공동 편집, 공동 디버그 애플리케이션을 만들 수 있습니다. 오늘, 우리는 텍스트 및 음성 채팅 지원을 포함하는 Visual Studio Live Share 대한 확장 된 기능을 발표했다. 이러한 추가 기능을 통해 팀은 추가 앱 없이도 고유한 개발 도구의 안락함에서 보다 효과적으로 공동 작업할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90d9ed1a-5c15-44fa-9bbb-242d7b940e42.gif" target="_blank"><img alt="liveshare1" border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fe8d174d-8d84-4d08-b54a-7c0b342d46c2.gif" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="liveshare1" width="1024"></a></p>
+
+
+  <p>5천만 명이 넘는 개발자와 함께 GitHub 개발자가 <i>함께</i> 코딩하는 곳입니다. Microsoft는 소프트웨어 개발 수명 주기의 모든 단계에서 협업이 원활하게 이루어지도록 지속적으로 혁신하고 있습니다. 예를 들어 기능 아이디어를 브레인스토밍하고, 새 사용자가 베어링을 얻도록 돕고, 소프트웨어를 사용하는 가장 좋은 방법에 대해 공동 작업해야 할 수 있습니다.&nbsp; 최근 GitHub 위성에서 발표 된 GitHub 토론은 당신이 그렇게하는 데 도움이 공개 베타에 있습니다. 팀 구성원과 공동 작업하는 데 도움이 되는 <a href="https://github.blog/2020-05-06-new-from-satellite-2020-github-codespaces-github-discussions-securing-code-in-private-repositories-and-more/" target="_blank">최신 GitHub 혁신</a>에 대해 자세히 알아보세요.</p>
+
+
+  <h2>Ship</h2>
+
+
+  <p>지난 6개월 동안 웹&rsquo; 애플리케이션에서 서버리스 함수, Kubernetes에 이르기까지 여러 Azure 서비스에 빌드, 테스트, 패키지, 릴리스 및 배포하는 워크플로를 만드는 데 도움이 되는 Azure용 30개 이상의 <a href="https://aka.ms/GitHubActionsforAzureDocs" target="_blank">GitHub Actions</a>를 게시했습니다. 많은 YAML을 편집하여 CI/CD 파이프라인을 만드는 것이 어려울 수 있으며, 여러 개별 도구를 설정하고 전환하는 데 상당한 시간을 할애한다는 소식을 들었습니다. 이제 <a href="https://aka.ms/GitHubActionsforAzureDocs" target="_blank">Azure용 GitHub 작업이 Visual Studio Code, Azure</a> CLI 및 Azure Portal에 통합되어 기본 진입점에서 Azure에 배포하는 환경을 간소화한다는 사실을 발표하게 되어 기쁘게 생각합니다. 새 <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy" target="_blank">Visual Studio Code 확장을</a> 다운로드하거나 <a href="https://aka.ms/install-aks-cli-extension" target="_blank">Azure용 GitHub Actions용 Azure Command-Line 인터페이스(CLI) 확장을</a> 설치합니다.</p>
+
+
+  <p>프로덕션 환경에 코드를 릴리스할 때 보안도 가장 중요합니다. GitHub Satellite에서는 개발자가 코드를 안전하게 사용하고 배송할 수 있도록 코드 검색 및 비밀 검사의 클라우드 베타를 발표했습니다. GitHub 코드 검사를 사용하도록 설정하면 전 세계에서&rsquo; 가장 진보된 의미 체계 분석 엔진인 <a href="https://securitylab.github.com/tools/codeql" target="_blank">CodeQL</a>을 사용하여 모든 &ldquo;Git 푸시&rdquo;에서 새로운 보안 문제를 검사합니다. 이제 프라이빗 리포지토리에 비밀 검사를 사용할 수 있습니다. 이 기능은 알려진 비밀 형식에 대한 프라이빗 리포지토리를 감시하고 개발자가 발견되면 즉시 알 수 있습니다. 이제 개발자는 프로덕션 환경에 배포되기 전에 소스 코드의 취약성을 식별, 수정 및 방지할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/546045d4-e9fa-4b90-a292-6c9307e818d1.png" target="_blank"><img alt="VulnerabilityInARepo" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3cfe51db-2a9f-48a1-b00b-ea5870400461.png" style="border: 0px currentcolor; margin-right: auto; margin-left: auto; display: block; background-image: none;" title="VulnerabilityInARepo" width="988"></a></p>
+
+
+  <h2>모든 개발자에게 더 흥미로운 소식</h2>
+
+
+  <p>모든 새로운 코딩 개선 사항과 발전이 Windows 10&mdash;그것은 정말 개발자가 될 수있는 좋은 시간입니다. 오늘, 명령 프롬프트, PowerShell, WSL 및 Azure Cloud Shell과 같은 명령줄 도구 및 셸 사용자에게 최신의 빠른 터미널 애플리케이션을 제공하는 <a href="https://github.com/microsoft/terminal" target="_blank">Windows 터미널 1.0</a>의 일반 공급이 발표되었습니다. 또한 더 빠른 계산을 위해 <a href="https://docs.microsoft.com/windows/wsl/about" target="_blank">WSL(Linux용 Windows 하위 시스템)</a>에서 GPU 컴퓨팅에 대한 향후 지원을 발표했습니다. 그리고 곧 WSL 인스턴스를 열고 타사 X Server 없이 Linux GUI 앱을 직접 실행할 수 있는 GUI 앱 지원이 제공될 예정입니다. 이 기능을 사용하여 Linux 환경 또는 Linux에서만 찾을 수 있는 일부 애플리케이션에서 즐겨 찾는 IDE를 실행할 수 있습니다.&nbsp; 자세한 내용은 <a data-bi-area="undefined" data-bi-id="page-clicked-link" data-bi-view="undefined" data-event="page-clicked-link" href="https://aka.ms/KevinGalloBlogPostBuild2020" target="_blank">Kevin Gallos&rsquo; 블로그 게시물을</a> 참조하세요.</p>
+
+
+  <h2>참가</h2>
+
+
+  <p>팀이 온사이트 또는 원격인지에 관계없이 개발자가 환경을 설정하고, 시스템을 구성하고, 기본 인프라를 처리하는 데 더 많은 시간을 할애하여 솔루션을 코딩하고 빌드하는 데 더 많은 시간을 할애할 수 있도록 돕고자 합니다. 우리는 개발 팀이 사용자가 어디에 있든 프로젝트에서 쉽게 공동 작업할 수 있도록 하고자 합니다. 보안 취약성이 없는 자동화된 워크플로를 사용하여 코드를 제공하고 유지 관리하는 데 도움을 주고자 합니다. Microsoft는 엔지니어링 요구 사항을 충족하고 어디서나 생산성을 최대한 유지할 수 있도록 설계된 엔드 투 엔드 클라우드 플랫폼 및 개발자 도구를 제공합니다.</p>
+
+
+  <p>Scott Guthries&rsquo;, <a href="https://aka.ms/scottgu-build2020-keynote" target="_blank">Azure: 용도 세션을 사용하여 발명</a> 하고 Scott Hanselmans&rsquo; 세션을 시청하세요. <a href="https://mybuild.microsoft.com/sessions/871ef73f-f04a-405b-a0fa-01d7433067d1?source=sessions" target="_blank">모든 개발자는 모든 개발자</a>를 위해 설계된 이러한 새로운 혁신을 많이 볼 수 있습니다. 나는 당신이 구축 무엇을보고 기다릴 수 없어&rsquo;!</p>

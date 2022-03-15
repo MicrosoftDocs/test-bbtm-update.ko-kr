@@ -1,0 +1,57 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 327749675257e482dddb19983783b4d6bdd63848
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897201"
+Slug: real-time-data-analytics-and-azure-data-lake-storage-gen2
+Title: 실시간 데이터 분석 및 Azure Data Lake Storage Gen2
+Summary: Azure Data Lake Storage Gen2를 출시한 지 2개월이 조금 지났으며, 고객과 파트너 모두에게서 받은 반응에 감격하고 압도됩니다.
+Content: >-
+  <p>&rsquo;<a href="https://azure.microsoft.com/en-us/services/storage/data-lake-storage/" target="_blank">Azure Data Lake Storage Gen2</a>를 출시한 지 2개월이 조금 지났으며,&rsquo; 고객과 파트너 모두에게서 받은 응답&rsquo;에 감격하고 압도되었습니다. 손상 없는 데이터 레이크를 제공하기 위해 Azure Data Lake Storage 구축했으며 Gen 2s&rsquo; 공개 미리 보기에서 높은 수준의 고객 참여가 접근 방식을 확인합니다. 우리는 세계적 수준의 데이터 레이크 경험을 통해 개체 스토리지 규모와 비용 효율성을 제공하는 Gen2s&rsquo; 기능이 기대를 초과하고 있으며, 우리는 그것을 듣고 행복 할 수 없다는&rsquo; 것을 크고 작은 고객으로부터 들었습니다!</p>
+
+
+  <h2>Gen2의 파트너 사용</h2>
+
+
+  <p>실제로 우리는 Gen2와 솔루션 간의 원활한 통합을 보장하기 위해 플랫폼 공급자, 데이터 이동 및 ETL, 거버넌스 및 DLM(데이터 수명 주기 관리), 분석, 프레젠테이션 및 그 너머의 빅 데이터 스펙트럼에서 선도적인 ISV&rsquo;와 적극적으로 협력하고 있습니다.</p>
+
+
+  <p>앞으로 몇 개월 동안 이러한 파트너가 ADLS Gen2로 수행하는 흥미로운 작업에 대해 자세히 알아봅니다. Well&rsquo;은 이러한 업계 최고의 솔루션을 강조하는 블로그 게시물, 이벤트 및 웨비나를 수행합니다.</p>
+
+
+  <p>실제로 9월 18일 Attunity와의 첫 번째 Gen2 엔지니어링-ISV 웨비나, <a href="https://discover.attunity.com/real-time-big-data-analytics-in-the-cloud-101-expert-advice-from-the-attunity-and-azure-data-lake-storage-gen2-teams-en-webinar-lp15134.html?utm_source=microsoft&amp;utm_medium=email&amp;utm_campaign=azure-data-lake-webinar-2018" target="_blank">클라우드 101의 실시간 빅 데이터 분석: Attunity 및 Azure Data Lake Storage Gen2 Teams 전문가 자문</a>을 발표하게 되어 기쁩니다.</p>
+
+
+  <h2>실시간 분석 및 ADLS Gen2</h2>
+
+
+  <p>Azure Data Lake Storage Gen2는 Azure Analytics 워크플로의 핵심입니다. 상당한 관심을 생성한 워크플로 중 하나는 실시간 분석을 위한 것입니다. 센서, 소셜 미디어, 비즈니스 앱에서 생성된 데이터의 폭발적인 증가로 많은 조직에서는 클라우드 분석 서비스를 사용하여 실시간 인사이트를 구동하고 즉각적인 작업을 오케스트레이션하는 방법을 찾고 있습니다. 아래 다이어그램에서 알 수 있듯이 실시간 분석 워크플로를 구동하기 위한 종단 간 솔루션을 제공하기 위해 여러 Azure 서비스가 존재합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f47dd3c5-be0b-4379-b441-b4bcb036e469.png"><img alt="image" border="0" height="316" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7ea3dd19-8a4b-4a35-b315-055ae0e6ffd8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="626"></a></p>
+
+
+  <p>많은 고객이 실시간 분석 클라우드 아키텍처를 빌드하기 시작했습니다. 고객이&rsquo; 실시간 분석, 데이터 레이크 및 평가에서 실행으로 빠르게 이동할 수 있는 방법에 대해 자세히 알아볼 수 있도록 Attunity와 협력하게 되어 매우 기쁩니다.</p>
+
+
+  <p>Attunity는 실시간 데이터 관리에서 심층 기술을 갖춘 데이터 통합 및 실시간 데이터 캡처에서 인정받는 리더입니다. 또한 Microsoft Gold 파트너이기도 합니다. 웹 세미나에서 well&rsquo;은 다음 질문을 탐색합니다.</p>
+
+
+  <ul>
+   <li>비즈니스 인사이트를 창출하는 데 실시간 데이터가 중요한 이유는 무엇인가요?</li>
+   <li>데이터 레이크는 무엇이&rsquo;며, 실시간 데이터를 저장하는 데 데이터 레이크를 사용하는 이유는 무엇인가요?</li>
+   <li>CDC(변경 데이터 캡처) 기술을 사용하여 클라우드로 데이터를 효율적으로 전송하려면 어떻게 해야 할까요?</li>
+   <li>정교한 분석 워크플로를 신속하게 빌드하려면 어떻게 해야 할까요?</li>
+   <li>Azure Data Lake Storage Gen2가 실시간 분석에 가장 적합한 이유는 무엇인가요?</li>
+  </ul>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>우리는 놀라운 파트너의 숫자와 함께 작동합니다. Were&rsquo;는 Attunity 솔루션을 소개하고 고객이 Azure 및 파트너 솔루션을 사용하여 빅 데이터 분석 워크플로에서 더 빠르게 인사이트를 얻을 수 있도록 도와줄 수 있을 것이라는 기대감에 흥분했습니다.</p>
+
+
+  <p>우리는 당신이 우리의 웨비나 9 월 18 일에 우리와 함께 바랍니다. 이 웨비나에 등록하려면 <a href="https://discover.attunity.com/real-time-big-data-analytics-in-the-cloud-101-expert-advice-from-the-attunity-and-azure-data-lake-storage-gen2-teams-en-webinar-lp15134.html?utm_source=microsoft&amp;utm_medium=email&amp;utm_campaign=azure-data-lake-webinar-2018" target="_blank">이벤트 등록 페이지를</a> 방문하세요. Azure Data Lake Storage Gen2 미리 보기에 등록하려면 <a href="https://azure.microsoft.com/en-us/services/storage/data-lake-storage/" target="_blank">제품 페이지를</a> 방문하세요.</p>

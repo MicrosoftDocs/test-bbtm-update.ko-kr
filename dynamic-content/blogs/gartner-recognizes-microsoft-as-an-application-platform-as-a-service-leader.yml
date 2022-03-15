@@ -1,0 +1,60 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 74679d776337fdd35fad799364ef05e482300281
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897678"
+Slug: gartner-recognizes-microsoft-as-an-application-platform-as-a-service-leader
+Title: Gartner, Microsoft를 애플리케이션 플랫폼으로 서비스 리더로 인식
+Summary: 2013년은 Windows Azure에 놀라운 해였습니다.매월 고객 사용량에 대한 새로운 레코드가 표시되었고, 4월에는 Windows Azure Infrastructure Service의 GA를 통해 중요한 이정표를 세웠습니다.
+Content: >-
+  2013년은 Windows Azure에 놀라운 해였습니다.매달 고객 사용량에 대한 새로운 기록을 확인했으며, 4월에는 전례 없는 채택을 받은 Windows Azure Infrastructure Service의 GA로 주요 이정표를 세웠습니다. 2014년 1월 7일에 발표된 2014년 Enterprise <a href="https://www.gartner.com/technology/reprints.do?id=1-1P502BX&amp;ct=140108&amp;st=sb">aPaaS 매직 사분면</a>당 Enterprise 애플리케이션 플랫폼(aPaaS) 시장에서 Microsoft를 선도하는 Gartner가 또 다른 획기적인 순간에 도달하면서 2014년은 더욱 개선될 것으로 기대하고 있습니다.
+
+
+  엔터프라이즈 고객은 기존 애플리케이션의 개발, 테스트 및 호스팅을 위한 인프라 서비스를 제공하는 것 만큼 새로운 애플리케이션을 개발하기 위한 클라우드 서비스 플랫폼이 필요하다고 말합니다. 2013년 8월 19일 aPaaS Magic Quadrant를 리더로 배치하고 <a href="/b/windowsazure/archive/2013/08/28/gartner-recognizes-microsoft-as-a-cloud-infrastructure-as-a-service-visionary.aspx">Cloud IaaS Magic Quadrant</a>를 Visionary로 배치한 Windows, 우리는 이러한 시나리오에서 비전의 완전성과 엔터프라이즈 고객의 단기 및 장기적 요구를 충족하는 데 성공적으로 실행할 수 있는 능력을 말합니다. 이러한 관심은 신규 고객 등록에서 플랫폼 내에 저장된 데이터 양에 이르기까지 지난 6개월 동안 Azure에 엄청난 성장을 의미했습니다.
+
+  <ul>
+   <li>주 평균 8,000명의 신규 고객</li>
+   <li>Windows Azure는 2000년에 사용된 전체 행성보다 더 많은 서버 컴퓨팅을 사용합니다.</li>
+   <li>컴퓨팅 수요는 6~9개월마다 계속 두 배로 증가합니다.</li>
+   <li>자세한 내용은 기록에서 인쇄된 것보다 Windows Azure에 저장됩니다.</li>
+  </ul>
+
+  <strong>Windows Azure를 위한 야심찬 목표</strong>
+
+
+  클라우드 우선 접근 방식은 상용 클라우드 비즈니스를 위해 <a href="https://www.microsoft.com/en-us/news/press/2013/oct13/10-24fy14q1earningspr.aspx">FY14 1분기에 매출이 103%</a> 증가했습니다. Microsoft는 개발자 및 IT의 요구를 충족하기 위해 도구, 관리 제품 및 서버 플랫폼을 Azure와 통합하여 <a href="https://www.microsoft.com/en-us/server-cloud/cloud-os/default.aspx#fbid=C0ru7F9sYu8">클라우드 OS</a> 비전을 계속 제공합니다.
+
+
+  개발자는 원활한 클라우드 개발 환경을 요구해 왔으며, 지난 달 출시된 VS(Visual Studio 2013)는 개발자가 Azure 관리 포털로 이동하지 않고도 코드를 작성하고, Azure에 직접 배포하고, 환경을 관리할 수 있는 기능을 제공합니다.
+
+
+  또한 클라우드 네이티브 애플리케이션을 통해 새로운 비즈니스 가치를 창출하는 고객을 위해 Mobile Services, Media Services 및 웹 사이트와 같은 Azure를 Windows 위해 지난 1년 동안 200개가 넘는 새로운 서비스를 추가했습니다. 그리고 작년에는 중국과 일본에 출시하고 호주와 <a href="/b/windowsazure/archive/2013/12/04/expanding-windows-azure-capacity-brazil.aspx">브라질</a>에서   <a href="https://blogs.technet.com/b/microsoft_blog/archive/2013/05/22/microsoft-announces-major-expansion-of-windows-azure-services-in-asia.aspx">출시할 목적으로</a> 전 세계에 데이터 센터 공간을 계속 확장하고 있습니다.
+
+
+  <strong>개방형 및 유연한 Windows Azure</strong>
+
+
+  Windows Azure는 Microsoft에서 독점되지 않는 기술을 채택하고 지원하기 시작하면서 Microsoft에서 변화의 원동력이 되었습니다. 여기에는 node.js, Java, PHP 및 Python과 같은 새로운 프레임워크 및 언어뿐만 아니라 SUSE, CentOS 및 Ubuntu와 같은 비 Windows 운영 체제도 포함됩니다. 고객은 iOS 및 Android와 같은 비 Microsoft 디바이스 및 운영 체제의 모바일 개발에 Azure를 사용할 수 있습니다.Oracle과의 최근 파트너십을 통해 Windows Azure는 <a href="https://azure.microsoft.com/en-us/campaigns/oracle/">Oracle Database 및 WebLogic Server</a>에 대해 가장 포괄적이고 완벽하게 지원되는 클라우드 플랫폼입니다. 이 모든 것은 Windows Azure가 누구와 모든 사람을 위한 클라우드 플랫폼이 되고 있음을 의미합니다.
+
+
+  <strong>고객이 스토리를 전달합니다.</strong>
+
+
+  많은 동료가 Azure를 채택하고 성공을 거두고 있습니다. 아래 사례 연구에서 일부 고객이 클라우드를 사용하여 수행하는 작업을 알아봅니다.
+
+  <ul>
+   <li><a href="https://www.microsoft.com/en-us/news/press/2013/apr13/04-09nab13pr.aspx">Microsoft Teams NBC 스포츠 그룹과 협력하여 Windows Azure를 사용하여 디지털 플랫폼에서 매력적인 스포츠 프로그래밍을 제공합니다.</a></li>
+   <li><a href="https://www.microsoft.com/casestudies/Microsoft-Visual-Studio-Team-Foundation-Server-2010/easyJet/Airline-Aims-to-Save-Millions-Shorten-Airport-Waits-with-Cloud-Based-Mobile-Services/4000010767">easyJet 유럽 항공, 하이브리드 클라우드 솔루션으로 서비스 및 확장성 향상</a></li>
+   <li><a href="https://www.microsoft.com/casestudies/Windows-Azure/NBC-News-Digital/NBC-News-Picks-Windows-Azure-over-Amazon-to-Host-Push-Notifications-to-Mobile-Apps/710000003210">NBC 뉴스는 모바일 앱에 푸시 알림을 호스팅하기 위해 아마존을 통해 Azure를 Windows 선택합니다.</a></li>
+   <li><a href="https://channel9.msdn.com/Blogs/Windows-Azure/Windows-Azure-Case-Study-Talk-Talk/">Mando Group, Windows Azure에서 제공하는 TalkTalk Business용 플랫폼 간 모바일 솔루션 제공</a></li>
+   <li><a href="https://www.microsoft.com/casestudies/Windows-Server-2012-R2/Lufthansa-Systems-AG/Lufthansa-Systems-Uses-Hybrid-Cloud-to-Trim-IT-Delivery-to-Hours-and-Reduce-Costs/710000003533">루프트한자 시스템은 하이브리드 클라우드를 사용하여 IT 제공 시간을 단축하고 비용을 절감합니다.</a></li>
+   <li><a href="https://www.microsoft.com/casestudies/Windows-Azure/3M-Informatics/3M-Unit-Boosts-Revenue-by-50-Percent-with-Choice-of-Cloud-Service/710000002636">클라우드 서비스 선택으로 3M 단위로 수익 50% 향상</a></li>
+   <li><a href="https://www.microsoft.com/casestudies/Windows-Azure/Radio-Shack/Electronics-Retailer-Enhances-Partnerships-Drives-Traffic-with-Cloud-Technology/710000002677">전자 소매업체는 파트너십을 강화하고 클라우드 기술로 트래픽을 유도합니다.</a></li>
+  </ul>
+
+  Gartner가 aPaaS 시장에서 실행 능력과 비전의 완성도를 모두 인식하고 새로운 Azure 서비스를 도입하고 고객이 2014년에 클라우드 민첩해질 수 있기를 기대합니다. 전체 보고서인 "Gartner: Application Platform as a Service용 매직 쿼드런트"를 읽으려면 <a href="https://www.gartner.com/technology/reprints.do?id=1-1P502BX&amp;ct=140108&amp;st=sb">여기에서</a> 찾을 수 있습니다.
+
+
+  <em>*Gartner는 연구 간행물에 표시된 공급업체, 제품 또는 서비스를 보증하지 않으며 기술 사용자에게 최고 등급의 공급업체만 선택하도록 권고하지 않습니다. 가트너 연구 간행물은 가트너의 연구 기관의 의견으로 구성되며 사실의 진술로 해석되어서는 안됩니다. Gartner는 특정 목적에 대한 상품성 또는 적합성에 대한 보증을 포함하여 이 연구와 관련하여 표현되거나 묵시적인 모든 보증을 부인합니다.</em>

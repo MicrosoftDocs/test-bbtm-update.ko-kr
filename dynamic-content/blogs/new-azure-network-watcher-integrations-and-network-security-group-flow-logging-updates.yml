@@ -1,0 +1,56 @@
+### YamlMime:Yaml
+ms.openlocfilehash: af19121eff66782a1bc03b3ea9b2016071f10334
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897903"
+Slug: new-azure-network-watcher-integrations-and-network-security-group-flow-logging-updates
+Title: 새 Azure Network Watcher 통합 및 네트워크 보안 그룹 Flow 로깅 업데이트
+Summary: Azure Network Watcher는 Azure에서 네트워크를 모니터링, 진단 및 인사이트를 얻을 수 있는 기능을 제공합니다.
+Content: >-
+  <p>Azure Network Watcher는 Azure에서 네트워크를 모니터링, 진단 및 인사이트를 얻을 수 있는 기능을 제공합니다.</p>
+
+
+  <p>Network Watcher는 기능 모음 중에서 <a href="https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-nsg-flow-logging-overview" target="_blank">NSG(네트워크 보안 그룹) Flow 로깅</a>을 통해 네트워크 트래픽을 기록하는 기능을 제공합니다. NSG Flow 로깅을 사용하도록 설정하면 보안, 규정 준수 및 트래픽 모니터링 사용 사례에서 끝없는 애플리케이션이 있는 네트워크 흐름 수준 데이터에 액세스할 수 있습니다. 이 NSG 흐름 데이터에 대한 심층 분석은 현재 미리 보기로 제공되는 <a href="https://azure.microsoft.com/en-us/blog/traffic-analytics-in-preview/" target="_blank">Traffic Analytics</a>를 사용하여 Network Watcher에서 사용할 수 있습니다.</p>
+
+
+  <p>Azure Network Watchers&rsquo;가 시작된 이래, 우리는 SIEM 및 로그 관리 업계의 리더들과 지속적으로 협력하여 Azure에서 네트워크를 원활하게 통합하고 이해하는 다양한 도구 에코시스템을 제공하고 있습니다. Azure와의 통합을 통해 고객에게 추가적인 선택과 가치를 제공하는 가장 최근의 두 파트너를 강조하고 싶습니다. 성장하는 에코시스템 외에도 더 큰 환경에서 로그 관리를 크게 향상시키는 구독 간에 NSG Flow 로그 데이터를 보내는 옵션을 사용하도록 설정했습니다.</p>
+
+
+  <h2>McAfee Cloud Workload Security 통합</h2>
+
+
+  <p>최근&nbsp; McAfee는 Network Watcher와의 통합을 포함하여 Azure의 CWS( <a href="https://www.mcafee.com/us/about/newsroom/press-releases/press-release.aspx?news_id=20180306006837" target="_blank">클라우드 워크로드 보안</a> ) 플랫폼의 일반 공급에 대해 발표했습니다. CWS는 탄력적 워크로드 및 컨테이너의 검색 및 방어를 자동화하여 사각지대를 제거하고, 고급 위협 방어 기능을 제공하고, 클라우드 관리를 간소화합니다. McAfee CWS는 이제 Network Watcher NSG Flow 로깅 데이터를 활용하여 Azure 구독에서 네트워크 트래픽 및 보안 그룹 구성 관리에 대한 포괄적인 인사이트를 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a4846897-0d32-4254-b2ca-9a446537efd6.png"><img alt="image" border="0" height="335" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/31dba23e-4ce8-4502-bbeb-f1b177857f72.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="591"></a></p>
+
+
+  <p><a href="https://aka.ms/mcafeeCWSAzure" target="_blank">이 통합 및 McAfee CWS에 대한 자세한 내용은 여기에서 확인할 수 있습니다</a>.</p>
+
+
+  <h2>RedLock과 통합</h2>
+
+
+  <p>4월 17일 RedLock은 <a href="https://redlock.io/platform/microsoft-azure-security-compliance" target="_blank">클라우드 360 플랫폼을</a> 통해 Network Watcher에 대한 지원을 발표했습니다. Cloud 360 Platform은 고객&rsquo; 전체 환경에서 가시성을 제공하고 Azure API&rsquo;를 활용하여 엔터프라이즈가 규정을 준수하고 안전한지 확인합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3479b4a6-63e5-485a-8473-bacb3ece50df.png"><img alt="image" border="0" height="278" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7c846f03-167d-447a-8c8f-8bb356852758.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="이미지" width="597"></a></p>
+
+
+  <p><a href="https://blog.redlock.io/increasing-cloud-network-visibility-with-azure-network-watcher" target="_blank">RedLock 및 통합에 대한 자세한 내용은 여기에서 확인할 수 있습니다</a>.</p>
+
+
+  <h2>NSG Flow 구독 간에 데이터 로깅</h2>
+
+
+  <p>이전에는 NSG Flow 로그를 NSG와 동일한 지역 및 구독에 있는 스토리지 계정으로만 보낼 수 있습니다. 여러 구독을 관리하는 중앙 집중식 모니터링 팀을 실행하는 고객으로부터 가능한 한 적은 수의 스토리지 계정으로 로그를 통합하는 것이 Network Watcher의 향후 로드맵에 요청된 가장 원하는 기능 중 하나였기 때문에 이를 실현했습니다. 이제 적절한 권한이 있고 스토리지 계정이 NSG와 동일한 지역에 있는 경우 다른 구독에 있는 스토리지 계정으로 전송되도록 NSG Flow 로그를 구성할 수 있습니다. 또한 NSG와 대상 스토리지 계정은 동일한 Azure Active Directory 테넌트를 공유해야 합니다.</p>
+
+
+  <hr>
+
+  <p><a href="https://azure.microsoft.com/en-us/services/network-watcher/" target="_blank">Network Watcher에 대한 자세한 내용은 여기에서 확인할 수 있습니다</a>.</p>
+
+
+  <p>Network Watcher 서비스에 대한 피드백이 있거나 당사와 파트너 관계를 맺고 싶은 경우 다음으로 문의하세요. AzureNetworkWatcher@microsoft.com</p>

@@ -1,0 +1,77 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a6bf2a1e8754075cad00c6fdefaa85e0b9bea449
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898081"
+Slug: building-an-ecosystem-for-responsible-drone-use-and-development-on-microsoft-azure
+Title: 책임 있는 드론 사용을 위한 에코시스템 구축 및 Microsoft Azure 개발
+Summary: IoT를 통해 비즈니스가 실시간으로 비즈니스의 모든 측면을 감지하고 정보에 입각한 조치를 취하여 해당 IoT 디바이스에서 클라우드 워크로드를 실행하여 해당 디바이스가 실시간 컨텍스트 인식 결정을 내리기 위해 클라우드에 "항상" 연결하지 않아도 되므로 컴퓨팅의 다음 물결이 이미 구체화되고 있습니다. 이것은 지능형 에지이며 비즈니스뿐만 아니라 세계에서 가장 시급한 문제 중 일부를 해결하는 방법뿐만 아니라 혁신의 다음 물결을 정의할 것입니다.
+Content: >-
+  <p>IoT를 통해 비즈니스가 비즈니스의 모든 측면을 실시간으로 감지하고 해당 IoT 디바이스에서 클라우드 워크로드를 실행하는 정보에 입각한 조치를 취하여 실시간 컨텍스트 인식 결정을 내리기 위해 클라우드에 항상&rdquo; 연결하지 않아도&rsquo;&ldquo; 되므로 컴퓨팅의 다음 물결이 이미 구체화되고 있습니다. 이것은 지능형 에지이며 비즈니스뿐만 아니라 세계에서&rsquo; 가장 시급한 문제를 해결하는 방법뿐만 아니라 혁신의 다음 물결을 정의할 것입니다.</p>
+
+
+  <p>드론 또는 무인 항공기 시스템(UAS)은 수색 및 구조 임무와 자연 재해 복구에서 정밀 농업으로 세계&rsquo; 식량 공급을 늘리는 데 이르기까지 이러한 많은 과제를 해결하기 위해 오늘날 사용되는 지능형 에지 장치의 좋은 예입니다. AI의 우위를 점하고 있는 드론은 비즈니스를 변화시키고 사회를 개선하는 데 큰 영향을 미칠 뿐만 아니라 인간이 고위험 지역을 안전하고 효율적으로 탐색할 수 있도록 지원할 수 있습니다.&nbsp;&nbsp;&nbsp;</p>
+
+
+  <p>이러한 고급 기능으로 우리의 영공에서 책임있는 무인 항공기 사용을 제어하는 법률뿐만 아니라 환경을 스캔하는 드론의 응용 프로그램을 존중하는 것을 포함하여 큰 책임이 온다. 클라우드에서 지능형 에지에 이르기까지 어디에 있든 데이터를 보호하는 것이 중요하다고 생각합니다.</p>
+
+
+  <p>Microsoft는 혁신을 위한 플랫폼을 구축하는 것 외에도 드론 및 관련 데이터를 책임감 있게 사용할 수 있는 기업과 파트너십에 투자하는 것이 중요하다고 생각합니다. 오늘 우리는 Microsoft Azure 실행되는 상용 IoT 에지 장치로 드론의 책임있는 사용에 대한 우리의 노력을 더 두 가지 중요한 발표를하고있다.</p>
+
+
+  <h2>Microsoft Azure 의해 구동되는 AirMap</h2>
+
+
+  <p>오늘 우리는 AirMap이 무인 항공기 교통 관리 플랫폼 및 개발자 에코<a href="https://www.airmap.com/microsoft-azure-cloud-ethical-drone-skyguide/" target="_blank">시스템을위한 독점적 인 클라우드 컴퓨팅 플랫폼을&#39;Microsoft Azure 선택했다고</a> 발표했습니다.</p>
+
+
+  <p>드론 사용량은 기존 비즈니스 프로세스의 효율성과 성능을 개선하기 위해 운송, 유틸리티, 농업, 공공 안전, 비상 대응 등과 같은 산업 전반에서 빠르게 증가하고 있습니다. 드론에 의해 생성된 데이터에는 기업과 정부가 고객과 지역 사회에 제공하는 가치를 강화하기 위한 인텔리전스가 주입됩니다. 그러나 규정 준수, 개인 정보 보호 및 데이터 보호에 대한 우려로 인해 조직은 드론 기술을 대규모로 채택할 수 없습니다.</p>
+
+
+  <p>AirMap은 민간 항공 당국, 항공 항법 서비스 제공 업체 및 지방 당국과 협력하여 드론의 저고도 영공에 대한 안전하고 책임있는 액세스를 지원하고 시행하는 영공 관리 시스템을 구현합니다.</p>
+
+
+  <p>airMaps&rsquo; 영공 관리 플랫폼이 Microsoft Azure 실행되면서 두 회사는 주 및 지방 당국이 드론 비행에 권한을 부여하고 운영 방법과 시기에 대한 현지 규칙과 제한을 시행할 수 있는 플랫폼을 제공하고 있습니다. 또한 이 솔루션을 통해 기업은 규정 준수 및 보안이 드론을 통합하는 엔터프라이즈 워크플로의 핵심 부분이 되도록 할 수 있습니다.</p>
+
+
+  <p>AirMap은 이러한 중요 업무용 영공 서비스를 실행하고 전 세계 드론 작업을 오케스트레이션하는 데 필요한 중요한 클라우드 컴퓨팅 인프라, 보안 및 안정성을 제공하기 때문에 Microsoft Azure 선택했습니다.</p>
+
+
+  <p>올해 초, 스위스 국가의 우편 서비스 제공업체인 Swiss Post는 드론 제조업체인 Matternet 및 Insel Group과 함께 스위스&rsquo; 최대의 의료 시스템인 Insel Group과 함께 Tiefanau 병원과 베른의 대학 병원 인셀 사이의 시간에 민감한 실험실 샘플을 비행했습니다. 이것은 상당한 트래픽이 생명을 위협하는 지연을 일으킬 수있는 지상 교통의 대안이었다. 이 운영은 안전과 효율성을 위해 AirMap 및 Microsoft Azure 구동되는 드론에 대한 스위스&rsquo; 영공 관리 시스템에서 지원됩니다.</p>
+
+
+  <h2>앱 개발을 위한 DJI Windows SDK가 공개 미리 보기로 입력됨</h2>
+
+
+  <p>지난 5월, 빌드 개발자 컨퍼런스에서 민간 드론 및 항공 이미징 기술의 세계&rsquo; 선두 주체인 <a href="https://news.microsoft.com/2018/05/07/dji-and-microsoft-partner-to-bring-advanced-drone-technology-to-the-enterprise/" target="_blank">DJI와의 파트너십을 발표</a>하여 DJI 드론에 고급 AI 및 기계 학습 기능을 도입하여 기업이 상업용 드론 기술과 에지 클라우드 컴퓨팅의 기능을 활용할 수 있도록 지원했습니다.</p>
+
+
+  <p>오늘 DJIs AirWorks 컨퍼런스에서는 DJI&rsquo; 드론을 제어하는 Windows 10 PC용으로 애플리케이션을 작성할 수 있는 Windows SDK의 공개 미리 보기를 발표합니다. 또한 SDK를 통해 Windows 개발자 커뮤니티는 다중 스펙트럼 센서, 사용자 지정 액추에이터와 같은 로봇 구성 요소 등과 같은 타사 페이로드를 통합하고 제어할 수 있으며, 기업에서 드론을 사용할 수 있는 방법을 기하급수적으로 늘릴 수 있습니다.</p>
+
+
+  <p>이 SDK를 사용하면 이제 Azure AI 서비스가 드론 이미지 및 비디오와 실시간으로 상호 작용할 수 있도록 하는 세 가지 방법이 있습니다.</p>
+
+
+  <ol>
+      <li>AI 워크로드에서 처리하기 위해 드론 이미지를 Azure로 직접 보낼 수 있습니다.</li>
+      <li>드론 이미지는 AI 워크로드를 사용하여 Azure IoT Edge를 실행하는 Windows 처리할 수 있습니다.</li>
+      <li>드론 이미지는 AI 워크로드를 사용하여 Azure IoT Edge를 실행하는 드론을 직접 온보딩할 수 있습니다.</li>
+  </ol>
+
+
+  <p>클라우드에서 드론과 같은 에지 디바이스에 이르기까지 데이터의 보안을 중요하게 생각합니다. Azure IoT Edge에는 보안 실리콘 하드웨어를 추상화하여 IoT Edge 디바이스 및 모든 구성 요소를 보호하기 위한 핵심 역할을 하는 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fblog%2Fhardening-the-security-of-azure-iot-edge-2%2F&amp;data=02%7C01%7Csamgeo%40microsoft.com%7C64c7ce21618c4d48450f08d63a929405%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636760798554178678&amp;sdata=WIWLPyYeMmPyq2oLjTem2BPTjrYKaIlso20ev7Q7jl4%3D&amp;reserved=0" target="_blank">보안 관리자</a>라는 중요한 하위 시스템이 포함되어 있습니다. 보안 강화의 초점이며 IoT 디바이스 제조업체가 선택한 HSM(하드웨어 보안 모듈)에 따라 디바이스를 강화할 수 있는 기회를 제공합니다. 마지막으로, <a href="https://azure.microsoft.com/en-us/blog/expanding-azure-certified-for-iot-program-for-the-intelligent-edge/" target="_blank">IoT용 Azure 인증 프로그램은</a> 엄격한 보안 요구 사항을 충족하는 타사 Azure IoT Edge 하드웨어만 인증합니다.</p>
+
+
+  <p>현재 업계 부문 전반에서 Azure에서 볼 수 있는 드론의 모든 창의적인 애플리케이션에 권장되며, 다음은 몇 가지 예입니다.</p>
+
+
+  <ul>
+      <li><strong>SlantRange</strong>: 지구 과학, 국방 및 인텔리전스 애플리케이션 분야에서 수십 년 이상의 경험을 쌓은 농업 산업의 정보 요구를 처리하는 공중 원격 감지 및 데이터 분석 회사입니다. 이 회사는 공중 작물 검사에 대한 기본 기술을 특허했으며 저전력 에지 컴퓨팅 장치를 사용하여 전 세계 어디서나 몇 분 이내에 귀중한 농업 데이터를 제공하는 혁신적인 분석 방법을 도입했습니다. 이러한 기술은 몇 시즌 전 몇 네브래스카 옥수수와 대두 농장에서 40 개 이상의 국가와 오늘날 작물의 다양한 SlantRange&#39;성장을 추진했다, 세계&#39;주요 농업 공급 업체 및 생산자와의 계약을 포함하여.</li>
+      <li><strong>Clobotics</strong>: 풍력 터빈 블레이드 결함을 자동으로 검사, 처리 및 보고하여 풍력 에너지 회사가 생산성을 향상시킬 수 있도록 돕는 글로벌 AI 회사입니다. 이 회사는 지난 몇 달 동안 전 세계 1,000개 이상의 풍력 터빈을 검사했습니다. Clobotics&rsquo; 엔드투엔드 솔루션은 컴퓨터 비전, 기계 학습 및 데이터 분석 소프트웨어를 상업용 드론 및 센서와 결합하여 풍력 에너지 산업이 검사 서비스를 자동화하는 데 도움이 됩니다. Clobotics&rsquo; Wind Turbine Data Platform은 컴퓨터 비전 기반 에지 컴퓨팅 서비스와 함께 최초의 풍력 터빈 블레이드 수명 주기 관리 서비스를 제공합니다. Microsoft WW Azure 파트너인 Clobotics는 Microsoft Azure 및 IoT 플랫폼과 긴밀히 협력하여 엔터프라이즈 고객에게 가장 혁신적이고 신뢰할 수 있는 서비스를 제공합니다.</li>
+      <li><strong>eSmart 시스템</strong>: 에너지 산업, 서비스 공급자 및 스마트 도시에 소프트웨어 솔루션을 제공하기 위해 20년 이상의 글로벌 인텔리전스를 제공합니다. eSmart Systems는 Azure IoT Edge에서 AI를 에지로 가져와 그리드 검사에 혁명을 일으키고 있습니다. 연결된 드론 솔루션은 1시간 이내에 200,000개의 이미지를 분석할 수 있는 기능을 갖추고 있으며, 이는 1년 안에 사람이 할 수 있는 것보다 많은 수치입니다. 그 결과 운영 비용이 절감되고, 그리드의 현재 상태에 대한 인사이트가 향상되고, 가동 중단이 줄어듭니다.</li>
+  </ul>
+
+
+  <p>올해 초 우리는 혁신, 전략적 파트너십 및 프로그램을 지속하기 위해 <a href="https://blogs.microsoft.com/iot/2018/04/04/microsoft-will-invest-5-billion-in-iot-heres-why/" target="_blank">IoT에 50억 달러의 투자와 지능형 우위</a> 를 발표했습니다. AirMap 및 DJI와 같은 전략적 파트너와의 최신 발표는 가능한 것의 경계를 계속 밀어붙이고 있으며, 우리는 공동 고객이 어떻게 구축될지 기대하고 있습니다.</p>

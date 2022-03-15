@@ -1,0 +1,83 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ccf213023433f10858e23fd24b7be90d67299fae
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897485"
+Slug: announcing-the-preview-of-openapi-specification-v3-support-in-azure-api-management
+Title: Azure API Management에서 OpenAPI 사양 v3 지원 미리 보기 발표
+Summary: Azure API Management는 API를 설명하는 광범위하게 사용되는 오픈 소스 표준의 최신 버전인 OpenAPI 사양 v3의 미리 보기 지원을 방금 도입했습니다. 기능 구현은 OpenAPI.NET SDK를 기반으로 합니다.
+Content: >-
+  <p>Azure API Management는 API를 설명하는 광범위하게 사용되는 <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/examples/v3.0/petstore-expanded.yaml" target="_blank">오픈 소스</a> 표준의 최신 버전인 <a href="https://www.openapis.org/" target="_blank">OpenAPI 사양</a> v3 &ndash; 의 미리 보기 지원을 방금 도입했습니다. 기능 구현은 <a href="https://github.com/Microsoft/OpenAPI.NET" target="_blank">OpenAPI.NET SDK</a>를 기반으로 합니다.</p>
+
+
+  <p>이 블로그 게시물에서는 다음을 살펴보겠습니다.</p>
+
+
+  <ul>
+   <li>API에 OpenAPI 사양을 사용할 경우의 이점입니다.</li>
+   <li>Azure API Management의 OpenAPI 사양 문서에서 API를 만드는 방법</li>
+   <li>API를 OpenAPI 사양 문서로 내보내는 방법입니다.</li>
+   <li>일반 공급 릴리스의 나머지 작업입니다.</li>
+  </ul>
+
+
+  <h2>API에 OpenAPI 사양을 사용해야 하는 이유</h2>
+
+
+  <p>OpenAPI 사양은 <strong>널리 채택된 업계 표준</strong>입니다. OpenAPI 이니셔티브는 Microsoft와 같은 대기업 <a href="https://www.openapis.org/membership/members" target="_blank">을 포함하여 30개 이상의 회사에서 지원</a>되었습니다.</p>
+
+
+  <p>OpenAPI 사양을 사용하면 <strong>구현에서 API를 추상화할 수 있습니다</strong>. API 정의는 <strong>언어에 구애받지 않습니다</strong>.</p>
+
+
+  <p>또한 <strong>이해하기 쉽고 정확</strong>합니다. API는 YAML 또는 JSON 파일을 통해 표시되며, 컴퓨터뿐만 아니라 인간도 읽을 수 있습니다.</p>
+
+
+  <p>OpenAPI 사양의 광범위한 채택으로 인해 <strong>광범위한 도구 에코시스템</strong>이 생성되었습니다. 도구의 기능은 API 디자인의 공동 작업 프로세스 촉진에서부터 인기 있는 프로그래밍 언어로 클라이언트 SDK 및 서버 구현을 자동으로 생성하는 것까지 다양합니다.</p>
+
+
+  <h2>Azure API Management에서 OpenAPI 사양 v3 정의를 가져오는 방법</h2>
+
+
+  <p>API가 OpenAPI 사양 파일에 정의된 경우 Azure API Management에서 쉽게 가져올 수 있습니다. Azure Portal은 OpenAPI 사양 파일의 올바른 버전을 자동으로 인식합니다. <a href="https://docs.microsoft.com/en-us/azure/api-management/import-and-publish" target="_blank">첫 번째 API 가져오기 및 게시</a> 자습서 &ldquo; 에 따라 시각적 인터페이스를 통해 API를 가져오는 방법을 알아볼 수 있습니다.&rdquo;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ed5eadf7-e18e-4476-8642-51944e829f8d.png"><img alt="Importing APIs in Microsoft Azure" border="0" height="783" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4ac0d56c-14f8-4c9f-a43a-5e1c209f7d2e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Microsoft Azure API 가져오기" width="1463"></a></p>
+
+
+  <p>또는 <a href="https://docs.microsoft.com/en-us/rest/api/apimanagement/apis/createorupdate#contentformat" target="_blank"><em>contentFormat</em> 페이로드 매개 변수</a>가 <em>openapi</em>, <em>openapi+json 또는 openapi-link</em>로 설정된 <a href="https://docs.microsoft.com/en-us/rest/api/apimanagement/apis/createorupdate#apimanagementcreateapiusingoai3import" target="_blank">REST API 호출</a>을 사용하여 API를 가져올 <em></em>수 있습니다.</p>
+
+
+  <p>가져오는 동안 사양의 <em>서버</em> 필드에 여러 항목이 포함된 경우 API Management는 첫 번째 HTTPS URL을 선택합니다. HTTPS URL이&#39;없는 경우 첫 번째 HTTP URL이 선택됩니다. HTTP URL이&#39;없는 경우 백 엔드 서비스 URL은 비어 있습니다.</p>
+
+
+  <p>가져오기 기능에는 <a href="https://docs.microsoft.com/en-us/azure/api-management/api-management-api-import-restrictions#a-nameopen-api-aopenapiswagger" target="_blank">몇 가지 제한 사항이 있습니다</a>. 예를 들어 <em>예제</em> 및<em> 다중 파트/양식 데이터</em> 필드를 지원하지 않습니다.</p>
+
+
+  <h2>Azure API Management에서 OpenAPI 사양 v3 정의를 내보내는 방법</h2>
+
+
+  <p>Azure API Management를 사용하면 OpenAPI 사양 v3 형식으로 API를 쉽게 내보낼 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a0d56a25-ab09-40ba-b88d-5dbc284ec826.png"><img alt="API Management portal" border="0" height="533" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a2a30e1b-e085-4b55-9bf7-3ff5e69ea154.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="API Management 포털" width="1095"></a></p>
+
+
+  <p>API 사양은 개발자 포털에서 JSON 또는 YAML 파일로 다운로드할 수 있습니다. 개발자 포털은 자동으로 생성되고 완전히 사용자 지정 가능한 웹 사이트로, 방문자가 API를 검색하고, API를 사용하는 방법을 알아보고, 대화형으로 사용해 본 다음, 마지막으로 등록하여 API 키를 획득할 수 있습니다.</p>
+
+
+  <p>형식 쿼리 매개 변수가 <em>openapi-link</em>로 설정된 상태에서 Azure Portal 또는 <a href="https://docs.microsoft.com/en-us/rest/api/apimanagement/apiexport/get#exportformat" target="_blank">REST API 호출</a>의 시각적 인터페이스를 통해 사양을 내보낼 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/346be481-f3de-4639-97c1-e2175e16aec3.png"><img alt="Exporting APIs" border="0" height="376" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bf7d1f4a-c807-4979-bf27-3de6f70af790.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="API 내보내기" width="705"></a></p>
+
+
+  <h2>시작하는 방법 및 다음에 제공될 내용&rsquo;</h2>
+
+
+  <p>OpenAPI 사양 파일에서 API <a href="https://docs.microsoft.com/en-us/azure/api-management/import-and-publish" target="_blank">를 가져와</a> 서 몇 분 만에 현재 기능을 사용해 볼 수 있습니다. 기능을 일반 공급하기 전에 REST API 호출을 통해 JSON 형식으로 내보내기를 구현합니다. 앞으로 몇 달 동안 PowerShell SDK에서 OpenAPI 사양 v3 가져오기 및 내보내기 지원도 추가할 예정입니다.</p>
+
+
+  <p><a href="https://aka.ms/apimso">당신이 어떻게 생각하는지 알려주세요</a>!&nbsp;</p>

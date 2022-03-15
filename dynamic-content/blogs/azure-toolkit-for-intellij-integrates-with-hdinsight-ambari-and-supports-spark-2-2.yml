@@ -1,0 +1,82 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b2f0bf3b9c08264537c39cef8f87525ca5697d92
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898098"
+Slug: azure-toolkit-for-intellij-integrates-with-hdinsight-ambari-and-supports-spark-2-2
+Title: IntelliJ용 Azure Toolkit HDInsight Ambari와 통합되고 Spark 2.2를 지원합니다.
+Summary: 더 많은 인증 옵션을 제공하기 위해 IntelliJ용 Azure Toolkit 이제 Ambari를 통해 HDInsight 클러스터에 작업 제출을 지원합니다. Azure 로그인 자격 증명과 무관한 Ambari 관리 사용자 이름 및 암호를 사용하여 클러스터를 쉽게 연결하거나 연결을 해제할 수 있습니다.
+Content: >-
+  <p align="justify">더 많은 인증 옵션을 제공하기 위해 IntelliJ용 Azure Toolkit 이제 작업 제출, 클러스터 리소스 찾아보기 및 스토리지 파일 탐색을 위해 Ambari를 통해 HDInsight 클러스터와의 통합을 지원합니다. Azure 로그인 자격 증명과 무관한 Ambari 관리 사용자 이름 및 암호를 사용하여 클러스터를 쉽게 연결하거나 연결을 해제할 수 있습니다.&nbsp; Ambari 연결은 Azure의 HDInsight 내에서 호스트되는 일반 Spark 및 Hive에 적용됩니다. 이러한 추가 기능을 통해 Azure 구독 외에도 HDInsight 클러스터에 연결하는 방법에 더 많은 유연성을 제공하는 동시에 Spark 작업 제출 환경을 간소화할 수 있습니다.</p>
+
+
+  <p align="justify">이 릴리스에서는 새 기능을 활용하고 IntelliJ용 Azure Toolkit Spark 2.2의 새 라이브러리 &amp; API를 사용할 수 있습니다. Spark 2.2 프로젝트를 만들고 작성하며 Spark 2.2 클러스터에 제출할 수 있습니다.&nbsp; Spark 2.2의 이전 버전과의 호환성을 통해 기존 Spark 2.0 및 Spark 2.1 프로젝트를 Spark 2.2 클러스터에 제출할 수도 있습니다.</p>
+
+
+  <h3 align="justify">클러스터를 연결하는 방법</h3>
+
+
+  <ul>
+   <li><strong>Azure Explorer</strong>에서 <strong>Link a cluster</strong>(클러스터 연결)를 클릭합니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/80a0262f-d47f-4924-93d0-aa95d361e581.png"><img alt="image" border="0" height="204" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/86e13df7-db80-43a0-b0cb-3025e98760d9.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="350"></a></p>
+
+
+  <ul>
+   <li><strong>클러스터 이름</strong>, <strong>스토리지 계정</strong>, <strong>스토리지 키</strong>를 입력한 다음, <strong>스토리지 컨테이너</strong>에서 컨테이너를 선택하고 마지막으로 사용자 이름과 암호를 입력합니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a2fc2d6-20c9-49cb-b3b3-ab7fd7f2cb46.png"><img alt="image" border="0" height="327" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a2fe0df-bc36-4605-8866-d0f719970e04.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="350"></a></p>
+
+
+  <p>Ambari 사용자 이름, pwd 또는 Secure Hadoop 도메인 사용자 이름 또는 pwd를 사용하여 연결할 수 있습니다. 스토리지 계정 및 키 정보는 클러스터 연결에 대한 다음 릴리스에서 선택 사항이 됩니다.</p>
+
+
+  <ul>
+   <li>연결된 클러스터는 Azure Explorer의 <strong>HDInsight</strong> 노드 아래에 표시됩니다. Spark 작업을 이 연결된 클러스터에 제출할 수 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/00e46fe9-f0dc-4ba1-b5ef-db9974662b6e.png"><img alt="image" border="0" height="324" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c7fe880f-f51c-4b3c-9f30-c95c7ce8db86.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="350"></a></p>
+
+
+  <ul>
+   <li><strong>Azure Explorer</strong>에서 클러스터 연결을 해제할 수도 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5db67071-014b-45f9-acd7-02ee5a2a0dfe.png"><img alt="image" border="0" height="220" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61828ff5-02cf-499e-81ce-a8c88c607f73.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="350"></a></p>
+
+
+  <h3>설치 또는 업데이트 방법</h3>
+
+
+  <p>먼저 IntelliJ를<strong> 2018.1</strong> 버전으로 업그레이드하세요. 이전에 IntelliJ용 Azure Toolkit 설치되어 있거나 IntelliJ 리포지토리로 이동하여 IntelliJ용 Azure Toolkit 검색하여 최신 비트를 가져올 수 있는 경우 <strong>IntelliJ</strong>에서 최신 업데이트를 요청합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dfc8e217-01d8-446a-a56f-4e6f4bb7ecd5.png"><img alt="image" border="0" height="311" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7b01f7f8-c675-4beb-9c58-921ecef917c9.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; border-top-width: 0px; margin-right: auto" title="이미지" width="450"></a></p>
+
+
+  <p>자세한 내용은 다음을 확인하세요:</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-spark-intellij-tool-plugin" target="_blank">HDInsight IntelliJ 플러그 인</a></li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-intellij-tool-debug-remotely-through-ssh" target="_blank">IntelliJ용 Azure Toolkit 사용하여 Spark 애플리케이션 디버그</a></li>
+   <li><a href="https://www.youtube.com/watch?v=YTZzYVgut6c" target="_blank">데모 Spark Scala Project 만들기</a>&nbsp;</li>
+   <li><a href="https://channel9.msdn.com/Series/AzureDataLake/Debug-HDInsight-Spark-Applications-with-Azure-Toolkit-for-IntelliJ" target="_blank">IntelliJ용 Azure Toolkit 사용하여 HDInsight 클러스터에서 원격으로 Spark 애플리케이션 디버그</a></li>
+  </ul>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/" target="_blank">Azure 블로그</a> 및 <a href="https://blogs.msdn.microsoft.com/azuredatalake" target="_blank">빅 데이터 블로그</a>에서 오늘&rsquo; 공지 사항에 대해 자세히 알아보고 Azure <a href="https://azure.microsoft.com/en-us/updates/" target="_blank">서비스 업데이트를</a> 자세히 알아보세요.</p>
+
+
+  <h3>피드백</h3>
+
+
+  <p>여러분의 의견과 피드백을 기대합니다. 기능 요청, 고객 요청 또는 제안이 있는 경우 메모를 <a href="mailto:hdivstool@microsoft.com">hdivstool@microsoft.com</a>보내주세요. 버그 제출의 경우 템플릿을 사용하여 새 티켓을 여세요.</p>

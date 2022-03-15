@@ -1,0 +1,117 @@
+### YamlMime:Yaml
+ms.openlocfilehash: e85ebc0a36ba30c9979b38791a80fc888be15d36
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902081"
+Slug: modsecurity-for-azure-websites
+Title: Azure 웹 사이트의 ModSecurity 웹 애플리케이션 방화벽
+Summary: 이 블로그에서는 Azure Websites 애플리케이션에 대한 ModSecurity 방화벽 규칙을 설정하는 방법을 설명합니다.
+Content: >-
+  Microsoft Azure Websites는 이제 웹 사이트에 대한 ModSecurity 웹 애플리케이션 방화벽을 지원합니다. 사용자 지정 애플리케이션 방화벽 규칙을 작성하거나 상용 규칙을 사용하여 웹 취약성 및 악용으로부터 웹 애플리케이션을 보호합니다.
+
+  <h2>ModSecurity란?</h2>
+
+  "ModSecurity는 오픈 소스, 플랫폼 간 WAF(웹 애플리케이션 방화벽) 모듈입니다. WAF의 "스위스 육군 나이프"로 알려진 이 도구는 웹 애플리케이션 수비수가 HTTP(S) 트래픽에 대한 가시성을 확보하고 고급 보호를 구현하는 강력한 규칙 언어 및 API를 제공합니다." IIS 또는 ASP.NET 요청 필터링 또는 UrlScan에 익숙한 사용자를 위해 ModSecurity는 인바운드 HTTP 요청 또는 아웃바운드 HTTP 응답을 필터링하는 규칙을 작성하기 위한 훨씬 더 풍부한 구문을 지원하는 유사한 도구입니다. ModSecurity는 사용자가 다양한 연산자(예: 정규식)를 사용하여 인바운드 및 아웃바운드 HTTP(S) 데이터를 검사하는 "SecRules"를 정의할 수 있도록 하는 이벤트 기반 프로그래밍 언어 구문을 사용합니다. 자세한 내용은 에서 해당 웹 사이트를 <a href="https://www.modsecurity.org/">https://www.modsecurity.org/</a>방문 할 수 있습니다.
+
+  <h2>ModSecurity가 필요한 이유는 무엇인가요?</h2>
+
+  ModSecurity는 많은 이점을 제공하지만 주요 용도 중 하나는 알려진 취약성의 악용을 방지하는 보안 정책 적용 계층인 "가상 패치"를 수행하는 것입니다. 기본적으로 이를 통해 웹 애플리케이션의 논리와 독립적으로 취약성 악용 시도를 필터링할 수 있습니다. 예: 자동화된 SQL 삽입 공격이 발생하는 경우 웹 애플리케이션 코드에 SQL 삽입 버그가 없는 경우에도 애플리케이션 논리에 도달하여 이러한 요청을 필터링하도록 ModSecurity 규칙을 쉽게 구성할 수 있습니다.
+
+  <h2>Azure Websites에서 ModSecurity를 사용하려면 어떻게 하나요?</h2>
+
+  Azure Websites에서 ModSecurity를 사용하는 것은 애플리케이션의 <b>web.config</b> 파일에 다음 구성 줄을 추가하는 것만큼 쉽습니다.
+
+  <blockquote>
+
+  <div class="code"><span style="color: #0000ff">&lt;</span><span style="color: #800000">구성</span><span style="color: #0000ff">&gt;</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;</span> <span style="color: #800000">system.webServer</span><span style="color: #0000ff">&gt;</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;</span> <span style="color: #800000">ModSecurity</span><span style="color: #ff0000"> enabled</span><span style="color: #0000ff">="true"</span><span style="color: #ff0000"> configFile</span><span style="color: #0000ff">="D:\home\site\wwwroot\secrules.conf"</span><span style="color: #ff0000"> </span><span style="color: #0000ff">/&gt; &lt;/</span><span style="color: #800000">system.webServerconfiguration</span><span style="color: #0000ff">&gt;</span><span style="color: #800000"></span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;/</span><span style="color: #0000ff">&gt;</span><span style="color: #000000"> </span></div></blockquote>
+
+  Azure 웹 사이트에서 <b>d:\home\site\wwwroot</b> 디렉터리가 웹 사이트의 루트 디렉터리를 가리킵니다. <b>configFile</b> 특성은 이 특정 사이트에 사용할 ModSecurity 구성 파일을 가리키며 ModSecurity 설정과 적용되는 규칙을 포함합니다.
+
+
+  또한 ModSecurity는 일반적으로 처리하지 않을 수 있는 디렉터리에서 다양한 파일을 읽고 쓰도록 구성됩니다. 이러한 파일이 제공되지 않도록 차단하려면 <b>web.config</b> 파일에 다음 구성을 추가해야 합니다.
+
+  <blockquote>
+
+  <div class="code"><span style="color: #0000ff">&lt;</span><span style="color: #800000">구성</span><span style="color: #0000ff">&gt;</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;</span> <span style="color: #800000">system.webServer</span><span style="color: #0000ff">&gt;</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;</span> <span style="color: #800000">보안</span><span style="color: #0000ff">&gt;</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;</span> <span style="color: #800000">requestFiltering</span><span style="color: #0000ff">&gt;</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;</span> <span style="color: #800000">hiddenSegments</span><span style="color: #0000ff">&gt;</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;</span> <span style="color: #800000">add</span><span style="color: #ff0000"> segment</span><span style="color: #0000ff">="modsecurity"</span><span style="color: #ff0000"> </span><span style="color: #0000ff">/&lt;&gt;/</span> <span style="color: #800000">hiddenSegmentsfileExtensionsadd</span><span style="color: #0000ff">&gt;</span><span style="color: #800000"></span><span style="color: #0000ff">&gt;</span><span style="color: #800000"></span><span style="color: #000000">
+
+  </span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;</span><span style="color: #0000ff">&lt;</span><span style="color: #ff0000"> fileExtension</span><span style="color: #0000ff">=".conf"</span><span style="color: #ff0000"> allowed</span><span style="color: #0000ff">="false"</span><span style="color: #ff0000"> </span><span style="color: #0000ff">/&gt;/&lt;</span> <span style="color: #800000">fileExtensionsrequestFilteringsecurity</span><span style="color: #0000ff">&gt;</span><span style="color: #800000"></span><span style="color: #0000ff">&gt;</span><span style="color: #800000"></span><span style="color: #0000ff">&gt;</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;/</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;/</span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;/</span><span style="color: #800000"> system.webServerconfiguration</span><span style="color: #0000ff">&gt;</span><span style="color: #800000"></span><span style="color: #000000">
+
+  </span><span style="color: #0000ff">&lt;/</span><span style="color: #0000ff">&gt;</span></div></blockquote>
+
+  이렇게 하면 콘텐츠 디렉터리의 ModSecurity 디렉터리에 대한 요청이 클라이언트에 제공되지 않습니다.
+
+  <h3>ModSecurity .conf 파일은 어떻게 됩니까?</h3>
+
+  ModSecurity에는 .에서 사용할 수 있는 규칙 집합이 있습니다 <a href="https://www.modsecurity.org/rules.html">https://www.modsecurity.org/rules.html</a>. 핵심 규칙 집합은 무료이며 상업적 규칙은 지불됩니다. 핵심 규칙 집합을 다운로드하여 .conf 파일에 무엇이 들어가는지 파악할 수 있습니다. 다음은 매우 기본적인 구성 파일<b> secrules.conf</b>의 예입니다.
+
+  <blockquote><span style="color: #0000ff">SecRuleEngine</span> DetectionOnly <span style="color: #0000ff">SecRequestBodyAccess</span> Off <span style="color: #0000ff">SecTmpDir</span> <span style="color: #ff0000">d:\home\site\wwwroot\modsecurity\temp\</span>
+
+  <span style="color: #0000ff">SecDataDir</span> <span style="color: #c0504d"><span style="color: #ff0000">d:\home\site\wwwroot\modsecurity\temp\</span>
+
+  </span><span style="color: #0000ff">SecRule</span> REQUEST_URI| ARGS <span style="color: #ff0000">"bad_arg" "log,deny,id:12345,msg:'Access Denied'"</span></blockquote>
+
+  <strong>SecRuleEngine</strong> 설정은 규칙이 트리거될 때 ModSecurity가 수행해야 하는 작업을 알려줍니다. <strong>DetectionOnly</strong>로 설정하면 요청 또는 응답이 차단되지 않지만 규칙을 트리거하는 모든 항목이 이벤트 로그에 기록되므로 트리거되는 규칙과 요청의 일부가 아닌 규칙을 알 수 있습니다. 차단 동작을 사용하도록 설정하거나 규칙을 완전히 무시하도록 끄기로 설정하려면 이 값을 On으로 설정할 수 있습니다.
+
+
+  <strong>SecRequestBodyAccess</strong> 옵션은 ModSecurity 규칙이 규칙의 일부로 요청 본문에 액세스할 수 있는지 여부를 알려줍니다. 짐작할 수 있듯이 이 기능을 해제하면 HTTP 요청의 요청 본문에 따라 규칙을 평가할 수 없으므로 메모리 및 CPU 성능이 모두 향상될 수 있습니다. 요청 엔터티 본문의 검사를 허용하는 것은 IIS의 요청 필터링과 ModSecurity 간의 구별되는 기능이므로 엔터티 본문을 분석하려는 규칙이 있는 경우 이 설정을 켜야 합니다.
+
+
+  <strong>SecTmpDir</strong> 및 <strong>SecDataDir</strong>을 사용하면 ModSecurity가 임시 및 지속성 데이터를 저장할 디렉터리를 설정할 수 있습니다.
+
+
+  <strong>SecRule</strong> 줄은 실제 필터링 규칙이며 REQUEST_URI 및 ARGS(쿼리 문자열 매개 변수)에 대해 들어오는 HTTP 요청에서 작동합니다. 이 위치에서 문자열 "bad_arg"을 찾으면 기본적으로 요청을 거부하고 로그에 액세스 거부 메시지로 기록하는 "log,deny,msg:'Access Denied"라는 작업을 수행합니다.
+
+
+  항상 <a href="https://www.modsecurity.org/documentation.html">ModSecurity 설명서를</a> 살펴보고 모든 옵션 목록과 자세한 설명을 확인할 수 있습니다.
+
+  <h3>OWASP CRS 규칙은 무엇이며 어떻게 사용하나요?</h3>
+
+  OWASP CRS(ModSecurity Core 규칙 집합)는 웹 애플리케이션에 있는 알 수 없는 취약성으로부터 일반적인 보호를 제공합니다. 이러한 보호 중 일부는 이미 http.sys 또는 IIS의 요청 필터링 또는 웹 애플리케이션 논리와 같은 다른 계층에서 제공될 수 있습니다. 이러한 규칙은 본질적으로 제네릭이므로 시작 지점으로만 사용되며 사이트 관리자/개발자는 보호되어야 하는 애플리케이션에 해당하는 규칙을 추가/제거/수정해야 합니다.
+
+
+  여기서 ModSecurity 웹 사이트에서 핵심 규칙 집합에 대한 구성 파일을 다운로드할 수 <a href="https://spiderlabs.github.io/owasp-modsecurity-crs/">있습니다</a>. zip 파일을 다운로드하면 .conf 및 .data 파일이 있는 많은 폴더가 표시됩니다. 각 .conf 파일에는 하나 이상의 규칙이 포함되어 있으며 규칙 범주별로 구성됩니다. 콘텐츠 폴더에<b> modsecurity\rules</b> 디렉터리를 만든 다음, 아래의 zip 파일에서 모든 파일과 폴더를 복사할 수 있습니다. FTP 또는 Microsoft 웹 배포와 같은 다른 메커니즘을 사용하여 이를 달성할 수 있습니다. 여기에 복사된 파일이 있으면 위의 <b>web.config</b> 구성한 .conf 파일의 include 지시문을 사용하여 규칙을 활성화할 수 있습니다. 예를 들어 base_rules 디렉터리에 모든 규칙과 slr_rules 디렉터리의 wordpress 규칙만 포함하려는 경우 <b>secrules.conf</b> 파일의 시작 부분에 다음 줄을 추가합니다.
+
+  <blockquote><span style="color: #ff0000">d:\home\site\wwwroot\modsecurity\rules\base_rules.confInclude\*</span>
+
+  <span style="color: #0000ff"></span> <span style="color: #ff0000">d:\home\site\wwwroot\modsecurity\rules\slr_rules\modsecurity_crs_46_slr_et_wordpress_attacks.conf</span> <span style="color: #0000ff">포함</span></blockquote>
+
+  일부 .conf 파일에는 업데이트할 수 있는 주석이 추가된 섹션 또는 참조 .data 파일이 있습니다. 예를 들어 base_rules 디렉터리의 <b>modsecurity_crs_35_bad_robots.conf</b> 는 차단하려는 User-Agents 목록이 포함된 <b>modsecurity_35_bad_robots.data</b> 파일을 참조합니다. 또한 사이트에 대한 모든 CRS 규칙을 설정하는 데 사용할 수 있는 핵심 규칙 집합에 <strong>modsecurity_iis.conf</strong> 파일이 있습니다.
+
+  <h2>ModSecurity의 사용에 제한이 있나요?</h2>
+
+  현재 ModSecurity 모듈은 무료 계층을 포함한 모든 Azure Websites 범주에 사용할 수 있습니다. 그러나 중요한 점은 모듈이 Azure 웹 사이트의 IIS 작업자 프로세스 내에서 실행된다는 것입니다. 따라서 작업자 프로세스에 적용되는 모든 제한 사항과 제한이 ModSecurity에도 적용됩니다. 따라서 무료 계층의 경우 사이트에 대한 하루 CPU 시간(분)에 대한 한도가 있으며 이는 작업자 프로세스에서 실행되는 ModSecurity에도 적용됩니다.
+
+
+  ModSecurity 자체는 규칙으로 구성하지 않는 한 별로 사용되지 않습니다. 이러한 측면에서는 기본 규칙으로 구성되지 않는다는 점을 제외하고 IIS의 RequestFiltering과 똑같습니다. 이러한 규칙을 직접 추가해야 하며, 기본 구성을 설정하거나 OWASP 핵심 규칙 집합을 사용하는 방법에 대한 아래 섹션을 확인할 수 있습니다. 규칙이 얼마나 복잡한지, HTTP 요청 또는 응답의 어떤 부분에 따라 웹 사이트의 성능에 영향을 줄 수 있습니다. 따라서 규칙에 대해 일치하는 HTTP 요청 및 응답의 추가 오버헤드를 줄이기 위해 매우 타겟팅된 규칙을 사용하는 것이 좋습니다.
+
+
+  &nbsp;
+
+
+  <em><strong>ModSecurity 규칙에 문제가 있나요? <a href="https://azure.microsoft.com/blog/2014/10/01/diagnosing-modsecurity-for-azure-websites">ModSecurity 진단 블로그를</a> 확인하세요.</strong></em>

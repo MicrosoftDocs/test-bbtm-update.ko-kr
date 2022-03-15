@@ -1,0 +1,306 @@
+### YamlMime:Yaml
+ms.openlocfilehash: ac716b87c61b43b3ec56a6336697d4d0a87ed9ba
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912837"
+Slug: fine-tune-natural-language-processing-models-using-azure-machine-learning-service
+Title: Azure Machine Learning 서비스를 사용하여 자연어 처리 모델 미세 조정
+Summary: NLP(자연어 처리) 도메인에서 미리 학습된 언어 표현은 전통적으로 명명된 엔터티 인식(Sang 및 Meulder, 2003), 질문 답변(Rajpurkar et al., 2016) 및 구문 분석(McClosky et al., 2010)과 같은 몇 가지 중요한 사용 사례에 대한 주요 주제였습니다.
+Content: >-
+  <p><em>이 블로그 게시물은 소프트웨어 엔지니어 II인 Li Li와 Microsoft AI Platform의 수석 소프트웨어 엔지니어인 Todd Hendry가 공동 저술했습니다.</em></p>
+
+
+  <div style="background:#eee;border:1px solid #ccc;padding:5px 10px;"><strong>2019년 7월 17일에 업데이트됨:</strong> <a href="https://azure.microsoft.com/en-us/blog/microsoft-makes-it-easier-to-build-popular-language-representation-model-bert-at-large-scale/" target="_blank">Microsoft에서 널리 사용되는 언어 표현 모델 BERT를 대규모로 쉽게 빌드</a>할 수 있도록 하는 블로그 게시물을 &ldquo; 참조하여 고객이 Azure Machine Learning Service를 사용하여 BERT 모델을 미리 학습하는 방법을 알아봅니다.&rdquo;</div>
+
+
+  <p>NLP(자연어 처리) 도메인에서 미리 학습된 언어 표현은 전통적으로 <a href="https://arxiv.org/pdf/cs/0306050.pdf" target="_blank">명명된 엔터티 인식</a> (Sang 및 Meulder, 2003), <a href="https://arxiv.org/pdf/1606.05250.pdf" target="_blank">질문 답변</a> (Rajpurkar et al., 2016) 및 <a href="https://nlp.stanford.edu/~mcclosky/papers/dmcc-naacl-2010.pdf" target="_blank">구문 분석</a> (McClosky et al., 2010)과 같은 몇 가지 중요한 사용 사례에 대한 주요 주제였습니다.</p>
+
+
+  <p>미리 학습된 모델을 활용하기 위한 직관은 간단합니다. 대규모 코퍼스에서 학습된 심층 신경망(모든 Wikipedia 데이터)은 서로 다른 단어와 문장 간의 기본 관계에 대한 충분한 지식을 갖추어야 합니다. 또한 처음부터 학습하는 것보다 더 나은 성능으로 의료 또는 금융 도메인과 같은 다른 도메인에 쉽게 적응해야 합니다.</p>
+
+
+  <p>최근, BERT라는 &ldquo; 논문<a href="https://arxiv.org/abs/1810.04805" target="_blank">: 변압기</a>&rdquo;에서 양방향 인코더 표현은 Devlin에 의해 출판되었다, 등, 이는 11 NLP 작업에 새로운 최첨단 결과를 달성, 위에서 언급 한 미리 훈련 된 접근 방식을 사용하여. 이 기술 블로그 게시물에서는 고객이 Azure Machine Learning Services를 사용하여 사용자 지정 애플리케이션에 대해 BERT를 효율적이고 쉽게 미세 조정할 수 있는 방법을 보여주고자 합니다. <a href="https://github.com/Microsoft/AzureML-BERT" target="_blank">GitHub</a> 코드를 엽니다.</p>
+
+
+  <h2>BERT 뒤에 직관</h2>
+
+
+  <p>새로운 언어 모델인 BERT의 직관은 간단하지만 강력합니다. 연구원은 충분히 큰 충분히 깊은 신경망 모델, 충분히 큰 훈련 모음, 코퍼스 뒤에 관계를 캡처 할 수 있다고 생각합니다. NLP 도메인에서는 주석이 달린 큰 코퍼스를 얻기가 어렵기 때문에 연구자들은 새로운 기술을 사용하여 많은 학습 데이터를 수집했습니다. 연구원들은 인간이 코퍼스에 라벨을 지정하고 신경망에 공급하는 대신, 인터넷에서 사용할 수 있는 대형 코퍼스 &ndash; <a href="https://arxiv.org/abs/1506.06724" target="_blank">BookCorpus</a> (주, 키로스 등) 및 영어 위키백과(각각 800M 및 2,500M 단어)를 사용합니다. 서로 다른 언어 작업에 대해 각각 두 가지 방법을 사용하여 언어 모델에 대한 레이블을 생성합니다.</p>
+
+
+  <ul>
+   <li><strong>마스킹된 언어 모델: </strong> 단어 간의 관계를 이해합니다. 핵심 아이디어는 문장의 단어 중 일부(약 15%)를 마스킹하고 마스킹된 단어를 레이블로 사용하여 모델이 단어 간의 관계를 학습하도록 하는 것입니다. 예를 들어 원래 문장은 다음과 같습니다.</li>
+  </ul>
+
+
+  <pre>
+
+  The man went to the store. He bought a gallon of milk.</pre>
+
+
+  <p>언어 모델에 대한 입력/레이블 쌍은 다음과 같습니다.</p>
+
+
+  <pre>
+
+  Input: The man went to the [MASK1]. He bought a [MASK2] of milk.
+
+  Labels: [MASK1] = store; [MASK2] = gallon</pre>
+
+
+  <ul>
+   <li><strong>문장 예측 태스크:</strong> 문장 간의 관계를 이해합니다. 이 작업은 모델에게 B 문장이 지정된 문장 A 다음에 다음 문장이 될 수 있는지 여부를 예측하도록 요청합니다. 위의 동일한 예제를 사용하여 다음과 같은 학습 데이터를 생성할 수 있습니다.</li>
+  </ul>
+
+
+  <pre>
+
+  Sentence A: The man went to the store.
+
+  Sentence B: He bought a gallon of milk.
+
+  Label: IsNextSentence</pre>
+
+
+  <h2>사용자 지정된 데이터 세트에 BERT 적용</h2>
+
+
+  <p>위의 단계를 사용하여 BERT가 대형 코퍼스(사용 가능한 모든 영어 위키백과)에서 학습된 후에는 데이터 세트가 거대하기 때문에 모델이 영어에 대한 많은 지식을 상속할 수 있다고 가정합니다. 다음 단계는 모델이 새 도메인에 더 빠르게 적응할 수 있기를 바라며 다양한 작업에서 모델을 미세 조정하는 것입니다. 핵심 개념은 위에서 학습한 대형 BERT 모델을 사용하고 다양한 유형의 작업에 대해 다른 입력/출력 계층을 추가하는 것입니다. 예를 들어 고객 지원 부서에 대한 감정 분석을 수행할 수 있습니다. 분류 문제이므로 아래 그림의 왼쪽에 표시된 것처럼 출력 분류 계층을 추가하고 입력을 구조화해야 할 수 있습니다. 질문 답변과 같은 다른 작업의 경우 입력이 질문이고 해당 단락인 다른 입력/출력 계층을 사용해야 할 수 있으며 출력은 질문에 대한 시작/끝 답변 범위입니다(오른쪽 그림 참조). 각각의 경우 BERT가 디자인된 방식을 통해 데이터 과학자가 다른 계층에 쉽게 연결할 수 있으므로 BERT가 다른 작업에 맞게 조정될 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/39717ecf-8274-46c4-862d-21ca377b1957.png"><img alt="Adapting BERT for different tasks displayed in a diagram" border="0" height="297" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dedc7d55-ee14-40eb-ac37-7eec5fa5a932.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="BERT 다이어그램" width="701"></a></p>
+
+
+  <p align="center"><em>그림 1. 다양한 작업에 대해 BERT 조정(</em><a href="https://arxiv.org/pdf/1810.04805.pdf" target="_blank"><em>원본</em></a><em>)</em></p>
+
+
+  <p>아래 이미지는 NLP 필드에서 가장 인기 있는 데이터 세트 중 하나인 <a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank">스탠포드 질문 답변 데이터 세트(SQuAD)</a>에 대한 결과를 보여 줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c37ee936-a5d2-4878-b8e2-ffc02a2797f2.png"><img alt="Reported BERT performance on SQuAD 1.1 dataset" border="0" height="413" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cded75a5-7a9a-46c5-a8b7-912c336999a6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQuAD 1.1 데이터 세트에서 보고된 BERT 성능" width="419"></a></p>
+
+
+  <p align="center"><em>그림 2. SQuAD 1.1 데이터 세트에서 BERT 성능을 보고했습니다(</em><a href="https://arxiv.org/pdf/1810.04805.pdf" target="_blank"><em>원본</em></a><em>).</em></p>
+
+
+  <p>특정 작업 유형에 따라 매우 다른 입력/출력 계층 조합을 추가해야 할 수 있습니다. GitHub 리포지토리에서는 <a href="https://gluebenchmark.com/" target="_blank">GLUE(General Language Understanding Evaluation)(GLUE)(</a>Wang et al., 2018) 및 <a href="https://rajpurkar.github.io/SQuAD-explorer/" target="_blank">스탠포드 질문 답변 데이터 세트(SQuAD)(</a>Rajpurkar 및 Jia et al., 2018)의 두 가지 작업을 설명했습니다.</p>
+
+
+  <h2>Azure Machine Learning 서비스 사용</h2>
+
+
+  <p>다양한 데이터 세트에 대한 다양한 실험을 시연할 예정입니다. 다양한 사용 사례에 대해 서로 다른 하이퍼 매개 변수를 튜닝하는 것 외에도 Azure Machine Learning 서비스를 사용하여 실험의 전체 수명 주기를 관리할 수 있습니다. Azure Machine Learning 서비스는 엔드투엔드 클라우드 기반 기계 학습 환경을 제공하므로 고객은 아래와 같이 기계 학습 모델을 개발, 학습, 테스트, 배포, 관리 및 추적할 수 있습니다. 또한 나중에 사용할 PyTorch 및 TensorFlow와 같은 오픈 소스 기술을 완전히 지원합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/63c559d5-e0af-4af2-9fa1-2bdd9487c960.png"><img alt="Azure Machine Learning Service overview diagram" border="0" height="544" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/07ebbbb6-0fd4-40a6-b4e6-c9d0b11cf159.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Machine Learning 서비스 개요 다이어그램" width="1430"></a></p>
+
+
+  <p align="center"><em>그림 3. Azure Machine Learning 서비스 개요</em></p>
+
+
+  <h2>Notebook에 있는 내용</h2>
+
+
+  <h3>특정 작업에 적합한 모델 정의</h3>
+
+
+  <p>BERT 모델을 미세 조정하기 위해 첫 번째 단계는 올바른 입력 및 출력 계층을 정의하는 것입니다. GLUE 예제에서는 분류 작업으로 정의되며 코드 조각은 미리 학습된 BERT 모델을 사용하여 언어 분류 모델을 만드는 방법을 보여 줍니다.</p>
+
+
+  <pre>
+
+  model = modeling.BertModel(
+       config=bert_config,
+       is_training=is_training,
+       input_ids=input_ids,
+       input_mask=input_mask,
+       token_type_ids=segment_ids,
+       use_one_hot_embeddings=use_one_hot_embeddings)
+
+  logits = tf.matmul(output_layer, output_weights, transpose_b=True)
+
+  logits = tf.nn.bias_add(logits, output_bias)
+
+  probabilities = tf.nn.softmax(logits, axis=-1)
+
+  log_probs = tf.nn.log_softmax(logits, axis=-1)
+
+  one_hot_labels = tf.one_hot(labels, depth=num_labels, dtype=tf.float32)
+
+  per_example_loss = -tf.reduce_sum(one_hot_labels * log_probs, axis=-1)
+
+  loss = tf.reduce_mean(per_example_loss)</pre>
+
+
+  <h3>Azure Machine Learning 서비스를 사용하여 학습 환경 설정</h3>
+
+
+  <p>데이터 세트의 크기에 따라 실제 데이터 세트에서 모델을 학습하는 데 시간이 오래 걸릴 수 있습니다. Azure Machine Learning Compute는 학습 프로세스를 가속화하기 위해 단일 노드 또는 여러 노드에 대한 GPU에 대한 액세스를 제공합니다. Azure Machine Learning Compute에서 하나 이상의 노드가 있는 클러스터를 만드는 것은 아래와 같이 매우 직관적입니다.</p>
+
+
+  <pre>
+
+  compute_config = AmlCompute.provisioning_configuration(vm_size=&#39;STANDARD_NC24s_v3&#39;,
+                                                           min_nodes=0,
+                                                           max_nodes=8)
+  # create the cluster
+
+  gpu_compute_target = ComputeTarget.create(ws, gpu_cluster_name, compute_config)
+
+  gpu_compute_target.wait_for_completion(show_output=True)
+
+  estimator = PyTorch(source_directory=project_folder,
+                   compute_target=gpu_compute_target,
+                   script_params = {...},
+                   entry_script=&#39;run_squad.azureml.py&#39;,
+                   node_count=node_count,
+                   process_count_per_node=process_count_per_node,
+                   distributed_backend=&#39;mpi&#39;,
+                   use_gpu=True)</pre>
+
+  <p>Azure Machine Learning 분산 학습 작업 설정 및 실행에 관련된 작업을 크게 간소화합니다. 보듯이 여러 작업자로 작업 크기를 조정하는 작업은 구성의 노드 수를 변경하고 분산 백 엔드를 제공하여 수행됩니다. 분산 백 엔드의 경우 Azure Machine Learning TensorFlow 매개 변수 서버와 Horovod의 MPI와 같은 인기 있는 프레임워크를 지원하며, 최적의 성능을 얻기 위해 다른 작업자 노드를 연결하기 위해 InfiniBand와 같은 Azure 하드웨어와 연결합니다. Azure Machine Learning 서비스에서 분산 학습 기능을 사용하여 NLP 모델을 미세 조정하는 방법에 대한 후속 블로그 포스트가 있습니다.</p>
+
+
+  <p>모델 학습을 위한 컴퓨팅 대상을 만들고 설정하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-set-up-training-targets" target="_blank">설명서를</a> 참조하세요.</p>
+
+
+  <h3>하이퍼 매개 변수 튜닝</h3>
+
+
+  <p>지정된 고객&rsquo; 특정 사용 사례의 경우 모델 성능은 선택한 하이퍼 매개 변수 값에 따라 크게 달라집니다. 하이퍼 매개 변수는 큰 검색 공간을 가질 수 있으며 각 옵션을 탐색하는 것은 매우 비쌀 수 있습니다. Azure Machine Learning Services는 하이퍼 매개 변수 튜닝 기능을 제공하고 다양한 하이퍼 매개 변수 구성을 검색하여 최상의 성능을 제공하는 구성을 찾을 수 있는 자동화된 기계 학습 서비스를 제공합니다.</p>
+
+
+  <p>제공된 예제에서는 임의 샘플링이 사용되며, 이 경우 정의된 검색 공간에서 하이퍼 매개 변수 값이 임의로 선택됩니다. 아래 예제에서는 1e-4에서 1e-6까지의 학습 속도 공간을 로그 균일한 방식으로 살펴보기 때문에 학습 속도는 1e-4 주위의 2개 값, 1e-5 주위의 2개 값, 1e-6 주위의 2개 값일 수 있습니다.</p>
+
+
+  <p>고객은 최적화할 메트릭을 선택할 수도 있습니다. 유효성 검사 손실, 정확도 점수 및 F1 점수는 최적화를 위해 선택할 수 있는 몇 가지 인기 있는 메트릭입니다.</p>
+
+
+  <pre>
+
+  from azureml.train.hyperdrive import *
+
+  import math
+
+
+  param_sampling = RandomParameterSampling( {
+           &#39;learning_rate&#39;: loguniform(math.log(1e-4), math.log(1e-6)),
+  })
+
+
+  hyperdrive_run_config = HyperDriveRunConfig(
+       estimator=estimator,
+       hyperparameter_sampling=param_sampling,
+       primary_metric_name=&#39;f1&#39;,
+       primary_metric_goal=PrimaryMetricGoal.MAXIMIZE,
+       max_total_runs=16,
+       max_concurrent_runs=4)</pre>
+
+  <p>각 실험에 대해 고객은 다양한 하이퍼 매개 변수 조합에 대한 진행 상황을 볼 수 있습니다. 예를 들어 아래 그림은 다양한 하이퍼 매개 변수 조합을 사용하여 시간 경과에 따른 평균 손실을 보여 줍니다. 학습 손실이 기대치(예: 위쪽 빨간색 곡선)를 충족하지 않는&rsquo; 경우 일부 실험을 일찍 종료할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c7ba77d9-afa5-4d07-8a22-778cd793c1b6.png"><img alt="HyperDrive Run Primary Metric line graph" border="0" height="465" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bdbe13c8-0011-49de-a019-4731cd3951cb.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="HyperDrive 기본 메트릭 꺾은선형 그래프 실행" width="994"></a></p>
+
+
+  <p align="center"><em>그림 4. 다른 실행에 대한 학습 데이터의 평균 손실 및 조기 종료</em></p>
+
+
+  <p>Azure ML&rsquo; 자동 하이퍼 매개 변수 튜닝 기능을 사용하는 방법에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-tune-hyperparameters" target="_blank">하이퍼 매개 변수 튜닝</a>에 대한 설명서를 참조하세요. 모든 실험을 추적하는 방법은 실험 <a href="https://docs.microsoft.com/en-us/azure/machine-learning/service/how-to-track-experiments" target="_blank">및 메트릭을 추적하는 방법에</a> 대한 설명서를 참조하세요.</p>
+
+
+  <h2>결과 시각화</h2>
+
+
+  <p>고객은 Azure Machine Learning 서비스를 사용하여 GLUE 데이터 세트에서 MRPC를 미세 조정할 때 85%의 평가 정확도를 얻을 수 있습니다(BERT 기본 모델에는 3개의 Epoch가 필요함). 이는 최첨단 결과에 가깝습니다. 여러 GPU를 사용하면 학습 시간이 단축되고 더 강력한 GPU(예: V100)를 사용하면 학습 시간이 향상될 수 있습니다. 특정 실험 중 하나의 세부 정보는 다음과 같습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <table border="1" cellpadding="2">
+   <tbody>
+    <tr>
+     <td valign="top"><strong>GPU #</strong></td>
+     <td valign="top"><strong>1</strong></td>
+     <td valign="top"><strong>2</strong></td>
+     <td valign="top"><strong>4</strong></td>
+    </tr>
+    <tr>
+     <td valign="top"><strong>K80(NC 제품군)</strong></td>
+     <td valign="top">191 s/epoch</td>
+     <td valign="top">105초/에포치</td>
+     <td valign="top">60초/epoch</td>
+    </tr>
+    <tr>
+     <td valign="top"><strong>V100(NCv3 제품군)</strong></td>
+     <td valign="top">36초/epoch</td>
+     <td valign="top">22초/에포치</td>
+     <td valign="top">13초/epoch</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p style="text-align: center;"><em>표 1. GLUE 데이터 세트의 MRPC에 대한 Epoch당 학습 시간</em></p>
+
+
+  <p>SQuAD 1.1의 경우 고객은 약 88.3 F1 점수와 81.2 EM(정확한 일치) 점수를 얻을 수 있습니다. BERT 기본 모델을 사용하려면 2개의 Epoch가 필요하며 각 Epoch에 대한 시간은 다음과 같습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <table border="1" cellpadding="2">
+   <tbody>
+    <tr>
+     <td valign="top"><strong>GPU #</strong></td>
+     <td valign="top"><strong>1</strong></td>
+     <td valign="top"><strong>2</strong></td>
+     <td valign="top"><strong>4</strong></td>
+    </tr>
+    <tr>
+     <td valign="top"><strong>K80(NC 제품군)</strong></td>
+     <td valign="top">16,020초/epoch</td>
+     <td valign="top">8,820 s/epoch</td>
+     <td valign="top">4,020초/epoch</td>
+    </tr>
+    <tr>
+     <td valign="top"><strong>V100(NCv3 제품군)</strong></td>
+     <td valign="top">2,940초/epoch</td>
+     <td valign="top">1,393 s/epoch</td>
+     <td valign="top">735 s/epoch</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p style="text-align: center;"><em>표 2. SQuAD 데이터 세트에 대한 Epoch당 학습 시간</em></p>
+
+
+  <p>모든 실험이 완료되면 Azure Machine Learning 서비스 SDK는 선택한 메트릭 및 해당 하이퍼 매개 변수에 대한 요약 시각화도 제공합니다. 다음은 학습 속도가 유효성 검사 손실에 미치는 영향에 대한 예입니다. 실험 전체에서 학습률은 약 7e-6(맨 왼쪽)에서 약 1e-3(맨 오른쪽)으로 변경되었으며 유효성 검사 손실이 가장 낮은 가장 좋은 학습 속도는 약 3.1e-4입니다. 이 차트를 활용하여 고객이 최적화하려는 다른 메트릭을 평가할 수도 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a73a079a-14f6-421a-8d6e-c4dda311c710.png"><img alt="Learning rate versus validation loss scatter chart" border="0" height="483" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/189651c7-05e1-4381-81b7-32d871b360b7.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Learning 비율 및 유효성 검사 손실 분산형 차트" width="1030"></a></p>
+
+
+  <p align="center"><em>그림 5. Learning 비율 및 유효성 검사 손실</em></p>
+
+
+  <h2>요약</h2>
+
+
+  <p>이 블로그 게시물에서는 고객이 Azure Machine Learning 서비스를 사용하여 BERT를 쉽게 미세 조정할 수 있는 방법과 해당 데이터 세트에 대한 분산 설정 사용 및 하이퍼 매개 변수 조정과 같은 항목을 보여 줍니다. 또한 AZURE MACHINE LEARNING 서비스를 사용하여 NLP 모델을 미세 조정하는 방법을 보여 주는 몇 가지 예비 결과를 보여 줍니다. 모든 코드는 <a href="https://github.com/Microsoft/AzureML-BERT" target="_blank">GitHub 리포지토리에서 사용할 수 있습니다</a>. GitHub 리포지토리에서 문제를 제기하여 질문이나 의견이 있는지 알려주세요.</p>
+
+
+  <h3>참조</h3>
+
+
+  <p>BERT: Language Understanding 및 <a href="https://github.com/google-research/bert" target="_blank">GitHub 사이트에</a> <a href="https://arxiv.org/pdf/1810.04805.pdf" target="_blank">대한 심층 양방향 변압기의 사전 교육</a>.</p>
+
+
+  <ul>
+   <li>무료 평가판을 시작하려면 오늘 <a href="https://azure.microsoft.com/en-us/free/services/machine-learning/" target="_blank">Azure Machine Learning 서비스</a> 홈페이지를 방문하세요.</li>
+   <li><a href="https://azure.microsoft.com/en-us/services/machine-learning-service/" target="_blank">Azure Machine Learning 서비스에</a> 대해 자세히 알아보세요.</li>
+  </ul>

@@ -1,0 +1,61 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f4781a52eca5e7f34c9cf60920618baa582a591d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902101"
+Slug: manage-your-cross-cloud-spend-using-azure-cost-management
+Title: Azure Cost Management를 사용하여 클라우드 간 지출 관리
+Summary: 기업에서는 둘 이상의 클라우드 공급자에서 워크로드를 실행하는 것이 일반적입니다. 그러나 다중 클라우드 전략을 채택하면 다양한 비용 모델 처리, 다양한 청구 주기 및 여러 대시보드 및 보기를 탐색하기 어려울 수 있는 다양한 클라우드 디자인과 같은 복잡성이 있습니다.
+Content: >-
+  <p>기업에서는 둘 이상의 클라우드 공급자에서 워크로드를 실행하는 것이&rsquo; 일반적이지만, 다중 클라우드 전략을 채택하면 다양한 비용 모델 처리, 다양한 청구 주기 및 여러 대시보드 및 보기를 탐색하기 어려울 수 있는 다양한 클라우드 디자인과 같은 복잡성이 있습니다.</p>
+
+
+  <p>Weve&rsquo;는 여러 클라우드 공급자에서 지출을 관리하고, 예산 초과를 방지하고, 제어를 유지하고, 소비자와의 책임을 만드는 데 도움이 되는 중앙 비용 관리 솔루션이 필요하다는 소식을 많이 들었습니다.</p>
+
+
+  <p>Azure Cost Management는 이제 클라우드 간 지원을 제공합니다. 미리 보기에서 사용할 수 있으며 조직의&rsquo; 다중 클라우드 요구 사항을 효율적이고 효과적으로 관리하는 데 중요한 역할을 할 수 있습니다. 사용하기 쉬운 클라우드 커넥터를 통해 AWS 비용을 온보딩하여 지출에 대한 단일 보기를 얻을 수 있으므로 한 곳에서 미래를 분석하고 예산을 책정할 수 있습니다.</p>
+
+
+  <p>지금 시작하고 무료 미리 보기를 사용하여 <a href="https://aka.ms/costmgmt/connectors" target="_blank">첫 번째 AWS 커넥터를 만들어</a> 이러한 기능 등을 탐색합니다.</p>
+
+
+  <p>AWS 비용 관리에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/cost-management/aws-integration-manage" target="_blank">Azure 설명서에서 AWS 비용 및 사용량 관리를 참조하세요.</a></p>
+
+
+  <h2>이 미리 보기에서 사용할 수 있는 기능&rsquo;:</h2>
+
+
+  <h3>비용 분석을 사용하여 Azure 및 AWS 지출 분석</h3>
+
+
+  <p>비용 분석에서 풍부한 그래픽 기능을 사용하여 클라우드 지출에 대한 심층적인 인사이트를 얻습니다. 공급자, 서비스 이름, 사용 위치, 가용성 영역, 미터 및 태그와 같은 사용 가능한 18가지 차원의 비용을 분석합니다. 비용 분석은 비용 및 변칙을 유발하는 요인&rsquo;을 이해하기 위해 세분화된 요금을 볼 수 있는 유연성을 제공하며, 하나 또는 둘 다에 대한 월별 총 및 월별 비용을 분석하는 개략적인 뷰를 제공합니다. <a href="https://docs.microsoft.com/en-us/azure/cost-management/quick-acm-cost-analysis" target="_blank">Azure Cost Management 비용 분석에 대해 자세히 알아봅니다.</a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/411ef0b8-56bf-42e4-ae12-c0982d146d07.png"><img alt="An image of the Azure Cost Management cost analysis page." border="0" height="507" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fdc2bf57-1fcf-4521-8645-8fa828024eeb.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Cost Management 비용 분석 페이지의 이미지입니다." width="1115"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h3>Azure &amp; AWS 지출에 대한 예산 및 경고</h3>
+
+
+  <p>Cost Management의 예산 및 경고는 지출 금액 한도 및 경고 임계값을 설정할 수 있도록 하여 조직의 책임을 계획하고 추진하는 데 도움이 됩니다. 이제 예산을 설정하고 AWS 범위에 대한 경고를 받을 수도 있습니다. 기업 고객인 경우 구독, 리소스 그룹 또는 기업계약 계층 구조와 같은 다양한 범위에 대한 예산을 설정할 수 있습니다. 예산 알림은 이메일, SMS를 사용하거나 사용 가능한 Webhook 및 Functions 통합을 사용하여 자동화 스크립트에 연결할 수 있는 Azure 작업 그룹과 통합됩니다. <a href="https://docs.microsoft.com/en-us/azure/cost-management/tutorial-acm-create-budgets" target="_blank">Azure Cost Management 예산에 대해 자세히 알아봅니다.</a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7408559b-60ed-443e-b9f2-6dbea0cc4c75.png"><img alt="An image of the Cost Management: Contoso Software Ltd. budgets page." border="0" height="587" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d3543d2-041f-4421-b862-2f2491e57113.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Cost Management: Contoso Software Ltd. 예산 페이지의 이미지입니다." width="1115"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>앞으로의 일은 무엇일까&rsquo;요?</h2>
+
+
+  <ul>
+   <li>Azure Cost Management를 통해 Microsoft는 다중 클라우드 환경 관리를 지원하기 위해 최선을 다하고 있습니다. Azure 및 AWS에서 통합된 사용자 환경을 활용할 수 있도록 추가 Cost Management 기능을 계속 개발할 것입니다.</li>
+   <li>앞으로 몇 달 동안&rsquo; 보고서를 저장하고 예약하는 기능, 비용 분석의 추가 기능, 예산, 예측, 경고, 내보내기 및 쇼백과 같은 기능을 빌드하는 데 집중할 것입니다. 그리고 미래를 더 자세히 살펴보면 추가 클라우드 제품에 대한 다중 클라우드 지원을 계속 강화할 계획입니다.</li>
+   <li>더 많은 업데이트 및 정보를 보려면 Twitter에서 <a href="https://twitter.com/AzureCostMgmt" target="_blank">@AzureCostMgmt</a> 우리를 따르세요.</li>
+  </ul>

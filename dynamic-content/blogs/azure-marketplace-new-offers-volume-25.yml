@@ -1,0 +1,422 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0953bd0d16c9795b22f1c7efd98b7e7d7eb128db
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913162"
+Slug: azure-marketplace-new-offers-volume-25
+Title: Azure Marketplace 새 제품 – 볼륨 25
+Summary: Azure Marketplace 에코시스템을 계속 확장합니다. 2018년 10월 16일부터 2018년 10월 31일까지 49개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다.
+Content: >-
+  <p>Azure Marketplace 에코시스템을 계속 확장합니다. 2018년 10월 16일부터 10월 31일까지 49개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다. 아래의 새 제품에 대한 세부 정보를 참조하세요.</p>
+
+
+  <h2>가상 머신</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/astadia-1148316.astadia-ui-automation-tee" target="_blank"><img alt="Astadia UI Automation Test Engineering Environment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/94b5f932-0f3a-4852-879e-c873c46ab923.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Astadia UI 자동화 테스트 엔지니어링 환경" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/astadia-1148316.astadia-ui-automation-tee" target="_blank">Astadia UI 자동화 테스트 엔지니어링 환경</a>: Astadia&#39;UI Automation TEE는 브라우저 기반 애플리케이션에 대해 검증된 자동화된 테스트 플랫폼을 제공하는 데 필요한 모든 도구를 통합합니다. 팀을 1개에서 100개까지 늘리고 테스트 병목 상태를 제거합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nec-technologies.necexpresscluster_byol_mssql2014ent_byol" target="_blank"><img alt="NEC EXPRESSCLUSTER X HA-DR Software" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/93287f44-44b7-411a-b17b-33fdd9836dce.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="NEC EXPRESSCLUSTER X HA-DR Software" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nec-technologies.necexpresscluster_byol_mssql2014ent_byol" target="_blank">NEC EXPRESSCLUSTER X HA/DR Software</a>: 고가용성을 사용하는 비즈니스 연속성 및 재해 복구를 위한 통합 솔루션은 IT 시스템을 보호합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/neo4j.neo4j-enterprise" target="_blank"><img alt="Neo4j Enterprise VM" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cfaecf99-98e9-48f6-af28-a78399ea9eed.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Neo4j Enterprise VM" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/neo4j.neo4j-enterprise" target="_blank">Neo4j Enterprise VM</a>: Neo4j 그래프 플랫폼은 조직에서 사람, 프로세스 및 디지털 시스템이 상호 관련되는 방식을 공개하여 데이터를 이해하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/niolabs-5229713.nio" target="_blank"><img alt="nio IoT Platform" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0be0c447-beed-425e-82c5-d477c650602c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="nio IoT Platform" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/niolabs-5229713.nio" target="_blank">nio IoT Platform</a>: 포함된 Pubkeeper 서버가 있는 nio 분산 IoT 개발 플랫폼의 실행 중인 인스턴스입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudally.office365backup" target="_blank"><img alt="Office 365 Backup" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/383ca76e-cd1c-40cf-ad78-cc143d2bd839.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="백업 Office 365" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudally.office365backup" target="_blank">Office 365 Backup</a>: 전체 Microsoft 클라우드 제품군에 대한 CloudAllys&rsquo; 클라우드-클라우드 백업 솔루션은 중요한 Microsoft 비즈니스 데이터의 간단하고 자동화되고 안전한 백업을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/panzura-file-system.panzura-freedom-filer-716-13549" target="_blank"><img alt="Panzura Freedom CloudFS 7.1.6.13549" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/343dcf5a-cf26-4bfb-a839-95aad0f17e30.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Panzura Freedom CloudFS 7.1.6.13549" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/panzura-file-system.panzura-freedom-filer-716-13549" target="_blank">Panzura Freedom CloudFS 7.1.6.13549</a>: Panzura Freedom Filer는 글로벌 엔터프라이즈 고객이 구조화되지 않은 데이터를 Microsoft Azure 통합할 수 있는 하이브리드 클라우드 데이터 관리 솔루션입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.active-directory-forest-recovery" target="_blank"><img alt="Semperis Active Directory Forest Recovery" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/866b362c-cb10-4481-a256-127514511361.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Semperis Active Directory 포리스트 복구" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.active-directory-forest-recovery" target="_blank">Semperis Active Directory 포리스트 복구</a>: Semperis를 사용하면 가장 치명적인 Active Directory 재해로부터 빠르고 자신 있게 복구할 수 있습니다. Semperis는 복원 중에 맬웨어 재도입을 방지하고 포리스트 복구 프로세스를 자동화합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/quest.spotlight-enterprise-12-3" target="_blank"><img alt="Spotlight Enterprise 12.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7adae2e9-a19d-44ea-a957-3f47244ffa97.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="스포트라이트 Enterprise 12.3" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/quest.spotlight-enterprise-12-3" target="_blank">스포트라이트 Enterprise 12.3</a>: Quest&#39;스포트라이트 Enterprise 12.3은 SQL Server 성능을 최적화하는 24/7 모니터링 및 진단을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp2-web-winser2016-debug-utilities" target="_blank"><img alt="SQL Server 2016 SP2 Web w VulnerabilityAssessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/040f941d-098d-465d-b062-6e9ae9090dfb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 2016 SP2 Web w VulnerabilityAssessment" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.sql-server-2016-sp2-web-winser2016-debug-utilities" target="_blank">SQL Server 2016 SP2 Web w/ VulnerabilityAssessment</a>: 이 이미지에는 많은 데이터베이스 엔진 기능과 성능 향상이 포함되어 있습니다. SQL Server Management Studio, VS Code 및 FTP 클라이언트를 통한 SQL 취약성 평가와 같은 유틸리티가 제공되었습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/unifi-software.unifi-data-catalog" target="_blank"><img alt="Unifi Data Catalog" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7a520115-e0ea-491a-ba9c-fd5575305121.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="통합 데이터 카탈로그" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/unifi-software.unifi-data-catalog" target="_blank">통합 데이터 카탈로그</a>: 통합 데이터 카탈로그는 AI로 구동되는 직관적인 자연어 검색과 크라우드 소딩 데이터 품질을 위한 공동 작업 기능을 갖춘 독립 실행형 엔터프라이즈급 데이터 카탈로그입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/open-connect-systems.workiq-trial" target="_blank"><img alt="WorkiQ Real-Time Workforce Test Drive" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f14ab750-21c9-45e6-a18d-86ee489aee97.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="WorkiQ Real-Time Workforce 시험 사용" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/open-connect-systems.workiq-trial" target="_blank">WorkiQ&reg; Real-Time Workforce 시험 사용</a>: WorkiQ by OpenConnect는 직원의 작업 활동을 캡처하는 실시간 인력 분석 소프트웨어입니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>웹 애플리케이션</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.abantecart-on-centos-arm" target="_blank"><img alt="Abantecart on CentOS 7.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a6237973-5489-4750-9129-8e963b45d542.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CentOS 7.3의 아반테카트" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.abantecart-on-centos-arm" target="_blank">CentOS 7.3의 Abantecart</a>: AbanteCart는 판매자가 온라인 비즈니스를 신속하게 만들고 온라인으로 제품을 판매할 수 있는 무료 PHP 기반 전자 상거래 솔루션입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.abantecart-on-ubuntu-14-04-lts-arm" target="_blank"><img alt="Abantecart on Ubuntu 14.04 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/369d82dd-562a-490d-b206-6c27a8200265.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 14.04 LTS의 Abantecart" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.abantecart-on-ubuntu-14-04-lts-arm" target="_blank">Ubuntu 14.04 LTS의 Abantecart</a>: AbanteCart는 판매자가 온라인 비즈니스를 신속하게 만들고 온라인으로 제품을 판매할 수 있는 무료 PHP 기반 전자 상거래 솔루션입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/te-systems.anynode-template" target="_blank"><img alt="anynode - The Software SBC" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b8a81c2-2b46-4c68-8268-62c817c484ec.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="anynode - 소프트웨어 SBC" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/te-systems.anynode-template" target="_blank">anynode - 소프트웨어 SBC</a>: anynode&#39;소프트웨어 SBC는 비즈니스용 Skype 및 Microsoft Teams 작동합니다. 두 개의 별도 VoIP 네트워크 간에 신호 및 미디어 흐름을 설정, 전송 및 종료해야 하는 경우 세션 테두리 컨트롤러가 사용됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.arartifactory-on-centos-arm" target="_blank"><img alt="Artifactory on centos 7.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9910f367-fe3c-4cc5-966c-269c0b15be28.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Centos 7.3의 아티팩토리" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.arartifactory-on-centos-arm" target="_blank">centos 7.3의 아티팩토리</a>: Artifactory는 이진 아티팩트(JAR/WAR 파일)에 대한 이진 리포지토리 관리자 및 버전 제어입니다. 아티팩토리는 엔터프라이즈에서 쉽게 액세스할 수&#39;있도록 공유 라이브러리를 배치할 수 있는 장소이기도 합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.artifactory-on-ubuntu-14-04-lts-arm" target="_blank"><img alt="Artifactory on Ubuntu 14.04 LTS - Auto Updates" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f4036685-081f-4f4c-b30f-7436ea1b19f2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 14.04 LTS의 아티팩토리 - 자동 업데이트" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.artifactory-on-ubuntu-14-04-lts-arm" target="_blank">Ubuntu 14.04 LTS의 아티팩토리 - 자동 업데이트</a>: Artifactory는 이진 아티팩트(JAR/WAR 파일)에 대한 이진 리포지토리 관리자 및 버전 제어입니다. 아티팩토리는 엔터프라이즈에서 쉽게 액세스할 수&#39;있도록 공유 라이브러리를 배치할 수 있는 장소이기도 합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bluecat.bluecat-bam-for-azure-st" target="_blank"><img alt="BlueCat Address Manager for Azure" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6d84a077-878f-4f41-93d3-f50eaea88e9a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure용 BlueCat 주소 관리자" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bluecat.bluecat-bam-for-azure-st" target="_blank">Azure용 BlueCat 주소 관리자</a>: Azure용 BlueCat 주소 관리자는 Azure에서 IP 주소 관리 기능을 사용하도록 설정하여 네트워크에 대한 신뢰할 수 있는 정보 원본을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.cakephp-on-centos-arm" target="_blank"><img alt="CakePHP on CentOS 7.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/993ac4d9-6df0-434d-a491-f913bb1dc3d5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CentOS 7.3의 CakePHP" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.cakephp-on-centos-arm" target="_blank">CentOS 7.3의 CakePHP</a>: CakePHP를 사용하면 웹 애플리케이션을 더 간단하고, 더 빠르고, 코드 집약적으로 빌드할 수 있습니다. CakePHP는 Active Record, Front Controller 및 MVC와 같은 일반적으로 알려진 디자인 패턴을 사용하는 PHP용 빠른 개발 프레임워크입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.cakephp-on-ubuntu-14-04-lts-arm" target="_blank"><img alt="CakePHP on Ubuntu 14.04 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6b32f2da-993f-433d-8a97-96ffbda00165.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 14.04 LTS의 CakePHP" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.cakephp-on-ubuntu-14-04-lts-arm" target="_blank">Ubuntu 14.04 LTS의 CakePHP</a>: CakePHP를 사용하면 웹 애플리케이션을 더 간단하고, 더 빠르고, 코드 집약적으로 빌드할 수 있습니다. CakePHP는 Active Record, Front Controller 및 MVC와 같은 일반적으로 알려진 디자인 패턴을 사용하는 PHP용 빠른 개발 프레임워크입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/citrix.citrix-sd-wanopt" target="_blank"><img alt="Citrix SD-WAN WAN Optimisation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fff077f6-8db0-4dd6-b1ee-ad011bdf98c2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Citrix SD-WAN 최적화" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/citrix.citrix-sd-wanopt" target="_blank">Citrix SD-WAN 최적화</a>: Citrix SD-WAN 최적화는 엔터프라이즈 데이터 센터 및 퍼블릭 클라우드에서 하이브리드 클라우드를 빌드하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.cms-made-simple-on-centos-arm" target="_blank"><img alt="CMS Made Simple on centos" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0765e8e9-8e7e-4bb8-b45c-ff165e2046f7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CMS는 Centos에서 간단하게 제작되었습니다." width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.cms-made-simple-on-centos-arm" target="_blank">CMS Made Simple on centos</a>: CMS Made Simple은 웹 사이트 개발자에게 반정적 웹 사이트를 빌드하는 간단하고 사용하기 쉬운 유틸리티를 제공하는 PHP를 사용하여 빌드된 오픈 소스 패키지입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.codiad-on-centos-arm" target="_blank"><img alt="Codiad on Centos" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/970cde45-23df-472a-965c-f58c1203552e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="코디아드 온 센토스" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.codiad-on-centos-arm" target="_blank">Centos의 공동 진단</a>: Codiad는 Javascript로 작성된 오픈 소스 웹 기반 IDE 프레임워크입니다. 언어 구문이 강조 표시되고 파일 트리 탐색기가 있는 강력한 다중 태브 ASCII 텍스트 편집기가 포함되어 있습니다. Codiad를 사용하면 빠르고 대화형으로 개발할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.codiad-on-ubuntu-14-04-lts-arm" target="_blank"><img alt="Codiad on Ubuntu 14.04 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d4fd2b46-55a5-4eec-a1df-7da81aa5bcc4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 14.04 LTS의 코디아드" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.codiad-on-ubuntu-14-04-lts-arm" target="_blank">Ubuntu 14.04 LTS의 공동</a> 진단: Codiad는 Javascript로 작성된 오픈 소스 웹 기반 IDE 프레임워크입니다. 언어 구문이 강조 표시되고 파일 트리 탐색기가 있는 강력한 다중 태브 ASCII 텍스트 편집기가 포함되어 있습니다. Codiad를 사용하면 빠르고 대화형으로 개발할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.concrete5-on-centos-arm" target="_blank"><img alt="Concrete5 on centos 7.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4f6e8ea1-a0a3-4e8f-863b-fa9502a2a753.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Centos 7.3의 콘크리트 5" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.concrete5-on-centos-arm" target="_blank">centos 7.3의 Concrete5</a>: Concrete5는 게시를 위한 오픈 소스 콘텐츠 관리 시스템입니다. Concrete5는 최소한의 기술 기술을 가진 사용자를 위해 설계되었으며 위키 소프트웨어와 유사한 모든 페이지에 대한 버전 관리를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.concrete5-on-ubuntu-14-04-lts-arm" target="_blank"><img alt="Concrete5 on Ubuntu 14.04 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9139d7ef-5a22-4d49-a4fd-798071ff713f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 14.04 LTS의 Concrete5" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.concrete5-on-ubuntu-14-04-lts-arm" target="_blank">Ubuntu 14.04 LTS의 Concrete5</a>: Concrete5는 게시를 위한 오픈 소스 콘텐츠 관리 시스템입니다. Concrete5는 최소한의 기술 기술을 가진 사용자를 위해 설계되었으며 위키 소프트웨어와 유사한 모든 페이지에 대한 버전 관리를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.coppermine-on-centos-arm" target="_blank"><img alt="Coppermine on centos" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/59985d8c-5280-46c7-9926-fd20a661a304.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="코퍼마인 온 센토스" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.coppermine-on-centos-arm" target="_blank">Centos의 Coppermine</a>: Coppermine은 온라인 갤러리 및 이미지 공유를 위해 만들어진 무료 소프트웨어입니다. Coppermine은 템플릿 변경, 사용자 관리, 자동 축소판 그림 만들기, 필름스트립 및 전자 카드 기능을 지원합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.coppermine-on-ubuntu-14-04-lts" target="_blank"><img alt="Coppermine on Ubuntu 14.04 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/874c78fb-45e2-40a5-9bc9-767178bfcb96.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 14.04 LTS의 구리광" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.coppermine-on-ubuntu-14-04-lts" target="_blank">Ubuntu 14.04 LTS의 Coppermine</a>: Coppermine은 온라인 갤러리 및 이미지 공유를 위해 만들어진 무료 소프트웨어입니다. Coppermine은 템플릿 변경, 사용자 관리, 자동 축소판 그림 만들기, 필름스트립 및 전자 카드 기능을 지원합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bcs-technology.bcs-corda-netmap" target="_blank"><img alt="Corda Custom Network Map" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/def973ec-4329-4217-9d48-cac1baf0288d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Corda 사용자 지정 네트워크 맵" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bcs-technology.bcs-corda-netmap" target="_blank">Corda 사용자 지정 네트워크 맵</a>: Corda 네트워크 맵 프로토콜의 사용자 지정 구현을 배포하는 원클릭 솔루션 템플릿입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.crushftp-on-centos-arm" target="_blank"><img alt="CrushFTP on CentOS 7.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8f015099-5db1-4d2e-9432-426bc01def12.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CentOS 7.3의 CrushFTP" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.crushftp-on-centos-arm" target="_blank">CentOS 7.3의 CrushFTP</a>: CrushFTP는 표준 보안 파일 전송 프로토콜을 지원하는 강력하고 구성하기 쉬운 파일 서버입니다. 웹 인터페이스를 사용하면 웹 브라우저를 통해 파일을 전송할 수 있으며 사용자 지정된 메시지 및 양식을 표시할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.crushftp-on-ubuntu-14-04-lts-arm" target="_blank"><img alt="CrushFTP on Ubuntu 14.04 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6f7a90ba-9faf-4b7c-a951-63829d1410c0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 14.04 LTS의 CrushFTP" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.crushftp-on-ubuntu-14-04-lts-arm" target="_blank">Ubuntu 14.04 LTS의 CrushFTP</a>: CrushFTP는 표준 보안 파일 전송 프로토콜을 지원하는 강력하고 구성하기 쉬운 파일 서버입니다. 웹 인터페이스를 사용하면 웹 브라우저를 통해 파일을 전송할 수 있으며 사용자 지정된 메시지 및 양식을 표시할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.django-on-centos-arm" target="_blank"><img alt="Django on CentOS 7.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7838e932-88b2-4dc7-8e68-e1813a4897d9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CentOS 7.3의 Django" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.django-on-centos-arm" target="_blank">CentOS 7.3의 Django</a>: Django는 MVC(model-view-controller) 아키텍처 패턴을 따르는 Python으로 작성된 무료 오픈 소스 웹 프레임워크입니다. Django&#39;주요 목표는 복잡한 데이터베이스 기반 웹 사이트를 쉽게 만드는 것입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/exact.exactsynergy" target="_blank"><img alt="Exact Synergy" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f2736f4e-4ffe-420d-a5c8-5e6cb291f5de.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="정확한 시너지 효과" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/exact.exactsynergy" target="_blank">정확한 시너지:</a> 정확한 시너지는 정확한 HRM, CRM 및 BPM을 기반으로 하는 프로세스 기술 플랫폼입니다. 새로운 고객은 전체 솔루션 중 하나를 통해 기술을 구입합니다. 기존 고객은 추가 사용자 및 추가 기능 솔루션으로 Synergy 라이선스를 확장할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.haproxy-on-ubuntu-14-04-arm" target="_blank"><img alt="Haproxy on Ubuntu 14.04 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/488b9a3d-d6a7-4f66-a7a7-5c6757871ea8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 14.04 LTS의 Haproxy" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.haproxy-on-ubuntu-14-04-arm" target="_blank">Ubuntu 14.04 LTS의 Haproxy</a>: Haproxy는 네이티브 SSL 프로토콜, HTTP 연결 유지 연결, 압축, 사용자 지정 로그 형식 및 헤더 다시 쓰기를 지원하는 오픈 소스 TCP/HTTP 부하 분산 프록시 서버입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/drizti.hpcbox-docker-flavor" target="_blank"><img alt="HPCBOX- HPC Cluster for Docker" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2a3b19a8-6f9e-4af6-bcde-a5de8d2d1309.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="HPCBOX- Docker용 HPC 클러스터" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/drizti.hpcbox-docker-flavor" target="_blank">HPCBOX: Docker용 HPC 클러스터</a>: HPC 클라우드 플랫폼에서 Docker 컨테이너를 실행합니다. MPI, OpenGL 및 CUDA 애플리케이션은 Docker 허브 및 NVIDIA GPU Cloud 레지스트리를 비롯한 퍼블릭 및 프라이빗 Docker 레지스트리에서 Docker 컨테이너로 끌어올 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ibm.ibm-guardium-multi-cloud-data-protection-app" target="_blank"><img alt="IBM Guardium Multi-Cloud Data Protection (BYOL)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a98b5fb9-78c7-4760-b154-15b00284ec0f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IBM Guardium BYOL(다중 클라우드 데이터 보호)" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ibm.ibm-guardium-multi-cloud-data-protection-app" target="_blank">IBM Guardium BYOL(다중 클라우드 데이터 보호)</a> : IBM Guardium 다중 클라우드 데이터 보호는 중요한 데이터를 보호하고 규정 준수 작업을 지원하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.joomla-on-centos-7-3-arm" target="_blank"><img alt="Joomla on CentOS 7.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ea4d3316-4d59-48a1-9e9f-5d6ffe1db765.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CentOS 7.3의 Joomla" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.joomla-on-centos-7-3-arm" target="_blank">CentOS 7.3의 Joomla</a>: Joomla는 웹 콘텐츠를 게시하기 위한 무료 오픈 소스 콘텐츠 관리 시스템입니다. CMS와 독립적으로 사용할 수 있는 model-view-controller 웹 애플리케이션 프레임워크를 기반으로 합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.jruby-on-centos-arm" target="_blank"><img alt="Jruby on centos" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2a778611-cece-4704-b8e4-a83b50ee3fb6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Jruby on centos" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.jruby-on-centos-arm" target="_blank">Jruby on centos</a>: JRuby는 Java 클래스를 스크립트하고 인터프리터를 모든 Java 애플리케이션에 포함할 수 있도록 Java와 통합됩니다. JRuby는 Ruby 언어에 대한 전체 코어 기본 제공 클래스 및 구문 집합과 대부분의 표준 Ruby 라이브러리를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/information-asset.files2ala" target="_blank"><img alt="Linux-Windows File System to Alation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4b88ddb8-acd0-44ab-8085-216bd01ceabc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="파일 시스템을 알레이션으로 Linux-Windows" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/information-asset.files2ala" target="_blank">Linux/Windows 파일 시스템에서 Alation으로</a>: Information Asset은 Linux/Windows 파일 시스템에서 Alation으로 파일을 가져오는 솔루션을 개발했습니다. 솔루션은 JSON, CSV, XML, Avro 및 Parquet 파일 형식을 Alation 데이터 카탈로그로 가져올 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netscout.netscout_app_performance_management_for_azure" target="_blank"><img alt="NETSCOUT Application Performance Management, Azure" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/882efafe-b7ec-4881-8897-17a5343771d0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="NETSCOUT 애플리케이션 성능 관리, Azure" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netscout.netscout_app_performance_management_for_azure" target="_blank">NETSCOUT 애플리케이션 성능 관리, Azure</a>: Azure용 NETSCOUT 애플리케이션 성능 관리는 하이브리드 클라우드 환경에서 컴퓨팅, 네트워크 및 스토리지가 필요한 애플리케이션 워크로드를 실행하는 기업에 적합합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/consensys.pantheon-public" target="_blank"><img alt="Pantheon Core" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f8b4951d-7407-4016-b0fb-fe0216b30fd8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Pantheon Core" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/consensys.pantheon-public" target="_blank">Pantheon Core</a>: Pantheon은 Apache 2.0 라이선스에 따라 Java로 작성된 오픈 소스 Ethereum 클라이언트입니다. Pantheon에는 Ethereum 네트워크에서 노드 작업을 실행, 유지 관리, 디버깅 및 모니터링하기 위한 명령줄 인터페이스 및 JSON-RPC API가 포함되어 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.reportserver-on-ubuntu-14-04-lts-arm" target="_blank"><img alt="Report Server on Ubuntu 14.04 LTS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fbaf4687-9ed6-4ed4-956d-89e0c62b9d7d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Ubuntu 14.04 LTS의 보고서 서버" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.reportserver-on-ubuntu-14-04-lts-arm" target="_blank">Ubuntu 14.04 LTS의 보고서</a> 서버: 보고서 서버는 SQL Server 데이터베이스 엔진 사용하여 메타데이터 및 개체 정의를 저장하는 상태 비저장 서버입니다. 보고서 서버에는 보고서 서버&#39;인프라를 통해 확장할 수 있는 유연한 인증 메커니즘이 제공됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bcs-technology.rewardsapi" target="_blank"><img alt="Rewards API" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/653ce80a-f56b-46a1-ad60-5e486b3932f9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Rewards API" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bcs-technology.rewardsapi" target="_blank">Rewards API</a>: BCS Technology의 이 보상 프레임워크는 고객 충성도 프로그램을 구현하는 데 사용할 수 있습니다. 사용자는 보상 API를 통해 시작된 트랜잭션을 수행하여 평판 토큰을 얻습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.seopanel-on-centos-7-3-arm" target="_blank"><img alt="SEOPanel on CentOS 7.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9d43d004-4988-48b5-a7eb-677cf5c3db4f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CentOS 7.3의 SEOPanel" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.seopanel-on-centos-7-3-arm" target="_blank">CentOS 7.3의 SEOPanel</a>: SEO 패널은 웹 사이트의 검색 엔진 최적화를 관리하기 위한 완전한 오픈 소스 제어판입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/stratuscore-5183655.virtualworkstationsaas" target="_blank"><img alt="StratusCore Virtual Studio" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/524cd273-5577-495e-8628-e9bc440ff705.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="StratusCore Virtual Studio" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/stratuscore-5183655.virtualworkstationsaas" target="_blank">StratusCore&trade; Virtual Studio&trade;</a>: StratusCore Virtual Studio를 사용하면 시각 효과 아티스트, 애니메이터 및 편집기가 중요한 업계 표준 애플리케이션을 가상으로 실행할 수 있습니다. 이 무료 3시간 평가판부터 보안 협업 작업 영역에서 상위 애니메이션/VFX 앱을 사용합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/unifi-software.unifi-data-platform" target="_blank"><img alt="Unifi Data Platform" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/218c3e31-1b3d-49ef-8dfe-dcae2a639337.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="통합 데이터 플랫폼" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/unifi-software.unifi-data-platform" target="_blank">통합 데이터 플랫폼</a>: 통합 데이터 플랫폼은 운영 데이터 사일로의 장벽을 무너뜨리고 기업 전체의 정보를 민주화합니다. 플랫폼의 핵심은 비즈니스 사용자에게 권한을 부여하는 셀프 서비스 데이터 검색 및 준비 도구 모음입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/votiro.votiro_microsoft_partnership" target="_blank"><img alt="Votiro Disarmer" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/175505ad-2033-40f9-a412-f511d5d5f955.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Votiro 무장 해제자" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/votiro.votiro_microsoft_partnership" target="_blank">Votiro 군축:</a> Votiro 군축기는 조직에 들어오는 모든 파일을 안전하게 사용할 수 있도록 합니다. Votiro는 디지털 트랜스포메이션 과정에서 조직을 보호하는 임무를 맡은 수상 경력에 빛나는 사이버 보안 회사입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.wildfly-on-centos-arm" target="_blank"><img alt="wildfly on centos" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/62bb6d53-f94e-452a-a94a-3de680d6897b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="centos에 와일드플라이" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.wildfly-on-centos-arm" target="_blank">centos에 wildfly</a>: WildFly, 이전 JBoss AS로 알려진, JBoss에 의해 작성 된 애플리케이션 서버, 지금 레드 햇에 의해 개발. WildFly는 Java로 작성된 무료 및 오픈 소스 소프트웨어입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/workspot.deploy-cloud-pcs-in-azure-workstations" target="_blank"><img alt="Workspot Workstation Cloud- GPU - VDI on Azure" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dcfbdf11-122d-4679-b73e-28ccc7bbbed9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Workspot Workstation Cloud- GPU - Azure의 VDI" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/workspot.deploy-cloud-pcs-in-azure-workstations" target="_blank">Workspot Workstation Cloud: Azure의 GPU/VDI</a>: Workspot의 이 턴키 클라우드 서비스는 모든 디바이스에 고성능 GPU 클라우드 워크스테이션을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/enveil.zeroreveal_search" target="_blank"><img alt="ZeroReveal Compute Fabric" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8cd728df-d128-45ae-b48a-2352a347c59c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ZeroReveal Compute Fabric" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/enveil.zeroreveal_search" target="_blank">ZeroReveal&trade; Compute Fabric</a>: ZeroReveal 솔루션 제품군의 토대를 제공하는 Enveils&rsquo; ZeroReveal Compute Fabric은 엔터프라이즈 내에 있는 클라이언트 애플리케이션과 데이터가 있는 위치에 배포된 서버 애플리케이션으로 구성된 양방향 플랫폼입니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

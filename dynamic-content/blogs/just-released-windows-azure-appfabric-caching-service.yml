@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c6002a1172e32854a1a403afebaa96c32c346f0c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912794"
+Slug: just-released-windows-azure-appfabric-caching-service
+Title: '방금 릴리스됨: Azure AppFabric 캐싱 서비스 Windows'
+Summary: '[이 문서는 SQL Azure 팀에서 제공했습니다.] 뉴스를 놓친 경우 Windows Azure AppFabric 블로그는 금요일에 Windows Azure AppFabric 캐싱 서비스 발표했습니다...'
+Content: <p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>뉴스를 놓친 경우 Windows Azure AppFabric 블로그는 금요일에 Windows Azure AppFabric 캐싱 서비스 프로덕션 서비스로 사용할 수 있다고 <a href="https://blogs.msdn.com/b/windowsazureappfabric/archive/2011/04/28/windows-azure-appfabric-caching-service-released.aspx">발표</a>했습니다. 이 서비스는 스토리지 또는 데이터베이스에서 해당 데이터를 검색할 필요가 없도록 메모리 내 데이터를 유지하는 기능을 제공하여 <a href="https://azure.microsoft.com/">Windows Azure</a> 및 SQL Azure 애플리케이션의 성능을 가속화하는 분산 메모리 내 애플리케이션 캐시 서비스입니다.&nbsp; 128MB에서 4GB에 이르는 6가지 캐시 크기 옵션을 사용할 수 있습니다.</p>  <p>이 새 서비스를 더 쉽게 사용하기 위해 사용자는 2011년 8월 1일 이전의 청구 기간에 대한 요금이 청구되지 않습니다.&nbsp; 일부 Windows Azure Platform 제품에는 현재 고객을 위해 특정 기간 동안 무료로 128MB 캐시 옵션이 포함됩니다. 자세한 내용은 Windows Azure Platform 제품 페이지에서 확인할 수 있습니다. </p>  <p>Azure AppFabric 캐싱 서비스 Windows 대한 자세한 내용은 <a href="https://blogs.msdn.com/b/windowsazureappfabric/">Windows Azure AppFabric 블로그의 블로그</a> <a href="https://blogs.msdn.com/b/windowsazureappfabric/archive/2011/04/28/windows-azure-appfabric-caching-service-released.aspx">게시물을</a> 참조하세요.&nbsp;</p>  <p>캐싱 서비스에 대한 질문은 <a href="https://social.technet.microsoft.com/Forums/en-us/windowsazuredata/">Windows Azure Storage, CDN 및 캐싱 포럼을</a> 방문하세요.</p>  <p>-- Steve</p>

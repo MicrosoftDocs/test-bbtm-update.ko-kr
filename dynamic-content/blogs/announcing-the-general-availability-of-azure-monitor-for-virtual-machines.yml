@@ -1,0 +1,72 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 68e21791e3db251c0d378d33af9f80548db23e21
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897496"
+Slug: announcing-the-general-availability-of-azure-monitor-for-virtual-machines
+Title: 가상 머신용 Azure Monitor의 일반 공급 발표
+Summary: 오늘 VM 성능 추세 및 종속성에 대한 심층적인 보기를 제공하는 VM(가상 머신)용 Azure Monitor의 일반 공급이 발표됩니다.
+Content: >-
+  <p>현재 VM 성능 추세 및 종속성에 대한 심층적인 보기를 제공하는 VM(가상 머신)용 Azure Monitor의 일반 공급에 대해 다시 발표할&#39;있습니다. Azure VM 리소스 블레이드에서 VM용 Azure Monitor에 액세스하여 단일 VM에 대한 세부 정보를 보고, Azure VMSS(Virtual Machine Scale Sets) 리소스 블레이드에서 단일 VM 확장 집합에 대한 세부 정보를 보고, Azure Monitor에서 대규모 컴퓨팅 문제를 이해할 수 있습니다.</p>
+
+
+  <p>VM용 Azure Monitor는 Windows 및 Linux VM에 대한 주요 모니터링 데이터를 함께 제공하므로 다음을 수행할 수 있습니다.</p>
+
+
+  <ul>
+      <li>게스트 수준 성능 문제를 해결하고 VM 리소스 사용률 추세를 이해합니다.</li>
+      <li>백 엔드 VM 종속성이 제대로 연결되어 있는지 여부와 VM의 어떤 클라이언트가 VM에 있는 문제의 영향을 받을 수 있는지 확인합니다.</li>
+      <li>리소스 사용률, 연결 메트릭, 성능 추세 및 경고를 기반으로 대규모로 VM 핫스팟을 검색합니다.</li>
+  </ul>
+
+
+  <h2>성능</h2>
+
+
+  <p><a href="https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-performance" target="_blank">성능 보기</a>는 Log Analytics를 통해 제공되며, 상위 N&rdquo;개 VM 정렬 및 구독 및 지역 간 검색, 지역 간 리소스 그룹의 모든 VM에 대한 VM 메트릭 집계(예: 평균 메모리) 집계, 시간별 성능 값 백분위수, VM Scale Set 인스턴스의 분석 및 선택을 비롯한 &ldquo;강력한 집계 및 필터링 기능을 제공합니다.</p>
+
+
+  <p>수천 개의 VM을 모니터링하는 것은 어려울 수 있습니다. 이 문제를 해결하기 위해 성능 보기가 만들어졌습니다. 이를 사용하여 리소스가 제한된 VM, 논리 디스크 또는 메모리 사용 문제가 있는 VM을 파악하거나 성능 진단을 받을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8350184d-09ac-4cd4-8359-2bc2d3358873.png"><img alt="1.   At scale performance list view of all the VMs in a subscription" border="0" height="953" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8aaf8f84-054c-4681-82e8-58dd8d160940.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1430"></a><br>
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5b2c5276-5786-4d89-a6e5-6c85be619581.png"><img alt="Performance view for a single VM" border="0" height="953" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/597d0188-0d70-41f5-b315-3e01731a5549.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1431"></a></p>
+
+
+  <h2>Maps</h2>
+
+
+  <p>VM용 Azure Monitor에는 서비스 맵 종속성 에이전트 확장에서 제공하는 종속성 맵이 포함됩니다. 지도 리소스 그룹 및 구독에 대한 VM 리소스 블레이드 통합, Azure 메타데이터 및 종속성 맵을 사용하여 Azure 중심 사용자 환경을 제공합니다. 지도 VM 및 프로세스가 상호 작용하는 방식을 보여 줍니다. 타사 서비스에 대한 종속성을 식별할 수 있습니다. VM용 Azure Monitor는 연결 오류, 라이브 연결 수, 프로세스에서 보내고 받은 네트워크 바이트 및 서비스 수준 대기 시간도 모니터링합니다.</p>
+
+
+  <p><img alt="Dependency map for the VMs in a subscription" border="0" height="954" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ba7e93a-ba86-428c-be43-2920e0c5f8bf.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1429"></p>
+
+
+  <p>사용자 환경의 시각적 환경 및 그룹 수준 매핑 외에도 Log Analytics의 데이터 세트를 쿼리하여 선택한 워크로드의 네트워크 트래픽 급증을 경고하고, 실패한 종속성을 대규모로 쿼리하고, 몇 주 또는 몇 달 동안 연결을 분석하여 온-프레미스 VM에서 Azure 마이그레이션을 계획할 수 있습니다. 이 분석을 지원하기 위해 이 풍부한 네트워크 데이터 집합에 대한 테이블 형식 보기를 제공하는 여러 <a href="https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-workbooks" style="font-size: 13px;" target="_blank">통합 문서를</a> 제공합니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d8dbe26a-bc7c-4c41-9eb7-4a147888bb17.png"><img alt="Connections workbook showing outbound connections for all VMs in a subscription" border="0" height="953" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/155adb8b-b96b-46cd-a348-11a1250d4e14.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1429"></a></p>
+
+
+  <h2>시작</h2>
+
+
+  <p>Azure 리소스를 시작하려면 VM 또는 VM 확장 집합에 대한 리소스 블레이드로 이동하고 모니터링 섹션에서 <strong>Insights </strong>클릭합니다. <strong>사용을</strong>&rsquo; 클릭하면 기존 Log Analytics 작업 영역을 선택하거나 만들라는 메시지가 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/07709898-d06a-4bf6-b6b7-38f8cc236508.png"><img alt="Enable detailed monitoring for a VM" border="0" height="952" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f320d6ae-7bca-4f41-b5c4-ceece0a41731.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1430"></a></p>
+
+
+  <p>&rsquo;몇 가지 VM의 기능에 익숙해지면 <strong style="font-size: 13px;">Virtual Machines</strong>의 Azure Monitor에서 대규모로 VM을 볼 수 있으며, 시작 페이지, <a href="https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-at-scale-policy" style="font-size: 13px;" target="_blank">Azure Policy</a> 또는 <a href="https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-at-scale-powershell" style="font-size: 13px;" target="_blank">Powershell</a>을 사용하여 전체 리소스 그룹 및 구독에 온보드할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2ca8873d-efc7-4d22-805a-4fe4c06ea174.png"><img alt="Get started with onboarding several VMs to detailed monitoring" border="0" height="953" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b5c2ccfc-d26a-41cc-9663-d1c3247b1c9e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="" width="1430"></a></p>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-overview" target="_blank">전체 설명서를</a> 확인하세요. <a href="https://azure.microsoft.com/pricing/details/monitor/" target="_blank">가격 책정</a> 은 Log Analytics 작업 영역에 대한 데이터 수집 및 보존을 기반으로 합니다. Wed&rsquo;는 VM용 Azure Monitor에 대해 좋아하고 마음에 들지 않는&rsquo; 것을 듣고 싶어하며, Microsoft에서 원하는 위치를&rsquo; 살펴보는 것을 좋아합니다. 사용자 환경에서 <strong>피드백 제공</strong> 을 클릭하여 의견을 공유하세요.</p>

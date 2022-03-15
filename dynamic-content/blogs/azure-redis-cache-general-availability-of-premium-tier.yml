@@ -1,0 +1,127 @@
+### YamlMime:Yaml
+ms.openlocfilehash: cc09230b312720c686497908aca485d2c005a4a9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897449"
+Slug: azure-redis-cache-general-availability-of-premium-tier
+Title: 'Azure Redis Cache: Premium 계층의 일반 공급'
+Summary: Azure Redis Cache Premium 계층은 이제 SLA에서 일반 공급됩니다. Premium 계층은 최대 규모 및 엔터프라이즈 통합을 위해 설계된 엔터프라이즈 지원 계층입니다.
+Content: >-
+  <p>Azure Redis Cache 팀은 Azure Redis Cache Premium 계층의 일반 공급에 대해 발표하게 되어 매우 기쁩니다. 이 제품은 최대 규모 및 통합을 위해 설계된 Enterprise 준비 계층입니다.</p>
+
+
+  <p>Premium 계층은 지난 10월에 <a href="https://azure.microsoft.com/en-us/blog/azure-redis-cache-public-preview-of-premium-tier/">발표되었습니다</a>. 그 이후로 팀은 애플리케이션 빌드 및 배포를 시작할 수 있도록 이 제품을 프로덕션에 사용할 수 있도록 안정성을 개선하기 위해 열심히 노력해 왔습니다.</p>
+
+
+  <p>다음은 프리미엄 계층의 주요 사항입니다. 오늘부터 이러한 모든 기능이 함께 작동하는 Premium 계층 캐시를 만들 수 있습니다. 이는 클러스터링 및 지속성을 사용하도록 설정된 Redis Cache를 만들 수 없는 공개 미리 보기의 제한 사항이었습니다.</p>
+
+
+  <h2>기본/표준 계층보다 성능 향상</h2>
+
+
+  <p>Premium 계층의 캐시는 기본/표준 계층에 비해 더 빠른 프로세서와 더 나은 성능을 갖춘 하드웨어에 배포됩니다.</p>
+
+
+  <p><b>동일한 크기의 캐시에 대한 처리량은 표준 계층에 비해 Premium 계층에서 더 높습니다.</b> 예를 들어 53GB 캐시, P4(Premium)의 처리량은 표준 C6의 경우 150K와 비교하여 250K RPS입니다.</p>
+
+
+  <p>Premium 계층의 성능 특성에 대한 자세한 내용은 다음 <a href="https://azure.microsoft.com/en-us/documentation/articles/cache-faq/#what-redis-cache-offering-and-size-should-i-use">FAQ</a>를 참조하세요.</p>
+
+
+  <h2>Redis 데이터 지속성</h2>
+
+
+  <p>Premium 계층을 사용하면 Redis에 저장된 데이터를 Azure Storage 계정에 유지할 수 있습니다. 기본/표준 계층에서 모든 데이터는 메모리에만 저장됩니다. 기본 인프라 문제의 경우 잠재적인 데이터 손실이 있을 수 있습니다. 데이터 손실에 대한 복원력을 높이려면 Premium 계층에서 Redis 데이터 지속성 기능을 사용하는 것이 좋습니다.</p>
+
+
+  <p>Azure Redis Cache는 Redis <a href="https://redis.io/topics/persistence">에서 구현된</a> Redis 지속성을 제공합니다. 현재 RDB 지속성을 제공하고 있으며 AOF는 나중에 사용하도록 설정됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/cache-how-to-premium-persistence/">Redis Cache를 만들고 Redis 지속성을 사용하도록 설정하는</a> 방법에 대한 이 문서를 참조하세요.</p>
+
+
+  <h2>Redis 클러스터</h2>
+
+
+  <p>Azure Redis Cache는 <a href="https://redis.io/topics/cluster-tutorial">Redis에서 구현된 형태의</a>Redis 클러스터를 제공합니다. Redis 클러스터를 사용하면 다음과 같은 이점이 있습니다.</p>
+
+
+  <ul>
+   <li>여러 Redis 노드 간에 데이터 세트를 자동으로 분할하는 기능입니다.</li>
+   <li>더 많은 처리량: 분할된 데이터베이스 수를 늘리면 선형으로 증가합니다.</li>
+   <li>메모리 크기 증대: 분할된 데이터베이스(노드) 수를 늘림에 따라 선형으로 늘어납니다. 53GB 이상의 데이터를 저장할 수 있는 Redis 클러스터를 만들 수 있습니다.</li>
+  </ul>
+
+
+  <p>Azure Redis <a href="https://redis.io/topics/cluster-tutorial">는 클러스터</a> 의 각 분할된 데이터베이스(Redis 노드)가 마스터-슬레이브 쌍이고 Azure Redis Cache 서비스가 클러스터의 노드 간 복제 및 장애 조치(failover)를 관리하는 마스터-슬레이브 모델에서 Redis 클러스터를 제공합니다.</p>
+
+
+  <p><b>Redis 클러스터링을 사용하면 최대 규모와 전체 크기를 제공합니다.</b> 클러스터에서 분할된 데이터베이스(노드) 수를 늘림에 따라 처리량이 선형으로 늘어납니다. 예를 들어 10개의 분할된 데이터베이스로 구성된 P4 클러스터를 만드는 경우 사용 가능한 처리량은 최대 250K *10 = 250만 RPS일 수 있습니다. Premium 계층의 성능 특성에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/cache-faq/#what-redis-cache-offering-and-size-should-i-use">FAQ</a>를 참조하세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/cache-how-to-premium-clustering/">Redis Cache를 만들고 Redis 클러스터를 사용하도록 설정하는</a> 방법에 대한 이 문서를 참조하세요.</p>
+
+
+  <h1>강화된 보안 및 격리</h1>
+
+
+  <p>표준 계층에서 만든 캐시는 공용 인터넷에서 액세스할 수 있습니다. 캐시에 대한 액세스는 선택키에 따라 제한됩니다. Premium 계층에서는 지정된 네트워크 내의 클라이언트만 Redis Cache 인스턴스에 액세스할 수 있는지 추가로 확인할 수 있습니다. <a href="https://azure.microsoft.com/en-us/services/virtual-network/">Azure VNet(Virtual Network)</a>에서 Redis Cache를 배포할 수 있습니다. 서브넷, 액세스 제어 정책 및 기타 기능과 같은 VNET의 모든 기능을 사용하여 Redis에 대한 네트워크 액세스를 추가로 제한할 수도 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/documentation/articles/cache-how-to-premium-vnet/">Azure Virtual Network에서 Redis Cache를 만드는</a> 방법에 대한 이 문서를 참조하세요.</p>
+
+
+  <h1>가격 책정</h1>
+
+
+  <p>특별 프로모션&rsquo;의 일환으로 2015년 12월에 표준 계층 미터를 사용하여 표준 계층 가격 책정을 계속 받을 수 있습니다. <strong>GA 가격은 2016년 1월 1일에 적용됩니다.</strong> 자세한 내용은 Azure Redis Cache <a href="https://azure.microsoft.com/en-us/pricing/details/cache/">가격 책정 페이지를</a> 참조하세요.</p>
+
+
+  <h1>SLA</h1>
+
+
+  <p>Azure Redis Cache는 표준/Premium 캐시를 99.9% 이상 사용할 수 있도록 보장합니다. SLA에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/support/legal/sla/cache/">SLA</a> 페이지를 방문하세요. SLA는 캐시 엔드포인트에 대한 연결만 다룹니다. SLA는 데이터 손실로부터의 보호는 다루지 않습니다. 데이터 손실에 대한 복원력을 높이려면 Premium 계층에서 Redis 데이터 지속성 기능을 사용하는 것이 좋습니다.</p>
+
+
+  <h1>Premium 계층에서 Redis Cache 만들기</h1>
+
+
+  <p>Azure Preview 포털을 사용하여 Premium 계층에서 Redis Caches를 만들거나 ARM 템플릿 및 명령&ndash;줄 도구를 사용하여 자동화할 수 있습니다.</p>
+
+
+  <p><img alt="GA_Premiumtier" border="0" height="370" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/03e54f48-7f61-4cc5-a75f-1f8219060dd5.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" title="GA_Premiumtier" width="606"></p>
+
+
+  <h1>설명서</h1>
+
+
+  <p>자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/services/redis-cache/">Redis Cache 설명서를</a> 참조하세요.</p>
+
+
+  <p>다양한 기능을 사용하여 Premium 계층에서 Redis Cache를 만들기 위한 관련 링크:</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/cache-how-to-premium-clustering/">Redis Cache 만들기 및 Redis 클러스터 사용</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/cache-how-to-premium-persistence/">Redis Cache 만들기 및 Redis 지속성 사용</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/cache-how-to-premium-vnet/">Azure Virtual Network에서 Redis Cache 만들기</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/documentation/articles/cache-redis-cache-arm-provision/">Premium 계층에서 Redis Cache 만들기 자동화</a></li>
+   <li><a href="https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/910">비디오: Azure Redis Cache의 새로운&#39;</a></li>
+  </ul>
+
+
+  <h1>피드백 보내기</h1>
+
+
+  <p>이 제품을 사용해 볼 때 새로운 기능에 대한 질문이나 제안이 있는 경우 <a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=azurecache">Azure Redis Cache 포럼 또는 Azure Redis Cache</a> <a href="https://feedback.azure.com/forums/169382-cache">사용자 음성</a>에 문의하세요.</p>
+
+
+  <p>또한 Premium 계층에 대한 제한 사항 또는 피드백에 대해 <a href="mailto:AzureCache@microsoft.com?subject=Premium%20tier%20feedback">문의할</a> 수도 있습니다.</p>
+
+
+  <p>감사합니다!</p>
+
+
+  <p>Azure Redis Cache 팀</p>

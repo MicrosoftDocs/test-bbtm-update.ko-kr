@@ -1,0 +1,84 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0895ca3f25c67164e2d3a9397aaaabb587ea7151
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912802"
+Slug: identity-now-available-with-azure-sql-data-warehouse
+Title: 이제 SQL Data Warehouse에서 ID 사용 가능
+Summary: Azure SQL Data Warehouse는 이제 IDENTITY 열 속성을 지원합니다.
+Content: >-
+  <p>Azure SQL Data Warehouse(SQL DW)는 데이터 웨어하우징을 위한 SQL 기반의 완전 관리형 페타바이트 규모의 클라우드 솔루션입니다. DW가 매우 탄력적이기 SQL 몇 분 안에 프로비전하고 용량을 초 단위로 확장할 수 있습니다. 컴퓨팅 및 스토리지를 독립적으로 확장하여 복잡한 분석 워크로드에 대한 컴퓨팅을 버스트하거나 보관 시나리오를 위해 웨어하우스를 축소할 수 있으며, 미리 정의된 클러스터 구성에 고정되지 않고 사용 중인&#39;비용을 지불할 수 있습니다.</p>
+
+
+  <p>IDENTITY는 오랫동안 고객이 SQL Data Warehouse를 요청해 왔습니다. &rsquo;Azure SQL Data Warehouse가 이제 IDENTITY 열 속성뿐만 아니라 SET IDENTITY_INSERT 구문을 지원하고 로드 시 IDENTITY를 생성한다고 발표하게 되어 매우 기쁩니다. 데이터 웨어하우징에서 IDENTITY 기능은 서로게이트 키를 더 쉽게 만들 수 있으므로 특히 중요합니다.</p>
+
+
+  <p>서로게이트 키는 행을 고유하게 식별하는 경우가 많기 때문에 차원 모델링의 기본 요소입니다. 일반적으로 정수 값이므로 더 나은 성능으로 압축하고 비교하는 경향이 있습니다. UUID는 종종 비슷한 용도로 사용할 수 있지만 관리하기가 더 어렵고, 본질적으로 임시 정보를 포함하지 않으며&rsquo;, 성능이 없습니다. 대규모 데이터 웨어하우스의 경우 기존 4 바이트 IDENTITY 값과 비교하여 UUID의 4배 크기가 실제로 추가됩니다. 스테이징 테이블에서 왼쪽 외부 조인을 사용하는 것과 관련된 단조롭게 증가하는 서로게이트 키를 할당하는 이전 메서드는 ROW_NUMBER 함수를 사용하여 서로게이트 키 열의 최대 ID를 가져오는 애플리케이션과 결합되었습니다. 이 솔루션은 어설프고 비용이 많이 드는 브로드캐스트 데이터 이동을 호출했습니다.</p>
+
+
+  <p>이 기능을&rsquo; 추가하여 SQL DW에서 데이터를 더 쉽고 효율적으로 관리할 수 있기를 바랍니다.</p>
+
+
+  <p>이 IDENTITY 속성은 IDENTITY 열에 자주 적용되는 고유성 제약 조건과 동의어가 아닙니다.</p>
+
+
+  <h3>다음 단계</h3>
+
+
+  <p>오늘 테이블에 IDENTITY 열을 만들어 시작하세요. 다음과&rsquo; 같이 간단합니다.</p>
+
+
+  <blockquote>
+
+  <pre>
+
+  CREATE TABLE dbo.T1
+
+  (   C1 INT IDENTITY(1,1) NOT NULL
+
+  ,   C2 INT NULL
+
+  )
+
+  WITH
+
+  (   DISTRIBUTION = HASH(C2)
+
+  ,   CLUSTERED COLUMNSTORE INDEX
+
+  )
+
+  ;</pre>
+
+  </blockquote>
+
+
+  <div align="left">다음 시나리오에서는 IDENTITY 속성을 사용할 수 없습니다.</div>
+
+
+  <div align="left">
+
+  <ul>
+      <li>열 데이터 형식이 INT 또는 BIGINT가 아닌 경우</li>
+      <li>열이 배포 키인 경우</li>
+      <li>테이블이 외부 테이블인 경우</li>
+  </ul>
+
+  </div>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-tables-identity">설명서</a> 또는 <a href="https://docs.microsoft.com/en-us/sql/t-sql/statements/create-table-transact-sql-identity-property">T-SQL</a> 구문 페이지를 방문하여 현재 테이블에 IDENTITY 기능을 추가하는 방법에 대해 자세히 알아보세요.</p>
+
+
+  <h3 align="left">자세한 정보</h3>
+
+
+  <ul>
+      <li align="left"><a href="https://azure.microsoft.com/documentation/articles/sql-data-warehouse-overview-what-is/">Azure SQL Data Warehouse란?</a></li>
+      <li align="left"><a href="https://azure.microsoft.com/documentation/articles/sql-data-warehouse-best-practices/">데이터 웨어하우스 모범 사례 SQL</a></li>
+      <li align="left"><a href="https://azure.microsoft.com/documentation/videos/index/?services=sql-data-warehouse">비디오 라이브러리</a></li>
+      <li align="left"><a href="https://social.msdn.microsoft.com/Forums/en-US/home?forum=AzureSQLDataWarehouse">MSDN 포럼</a></li>
+      <li align="left"><a href="https://stackoverflow.com/questions/tagged/azure-sqldw">Stack Overflow 포럼</a></li>
+  </ul>

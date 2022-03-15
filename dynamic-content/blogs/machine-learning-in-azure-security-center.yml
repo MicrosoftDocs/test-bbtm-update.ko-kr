@@ -1,0 +1,81 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b8ebbc10003dfbf10f1fd46c9ea8fbbe17de37a3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912782"
+Slug: machine-learning-in-azure-security-center
+Title: Azure Security Center의 Machine Learning
+Summary: Azure Security Center를 통해 다양한 Microsoft 및 파트너 솔루션에서 다양한 데이터를 심층 분석하여 보안을 강화합니다.
+Content: >-
+  <p><font color="#000000">Microsoft에서는 3,000억 개의 사용자 인증을 분석하고 매월 스팸 및 맬웨어에 대한 2,000억 개의 이메일을 확인합니다. 또한 클라우드 인프라 선택, 플랫폼 및 해당 활동에 대한 전례 없는 가시성을 가지고 있습니다. 이러한 가시성은 온-프레미스 세계에서 전례가 없습니다.</font></p>
+
+
+  <p><font color="#000000">좋은 소리, 오른쪽? 하지만, 어떻게 그렇게 많은 데이터를 이해하고 사이버 보안으로 전환할 수 있을까요?</font> <font color="#000000"> </font></p>
+
+
+  <p><font color="#000000"><a href="https://azure.microsoft.com/services/security-center">Azure Security Center</a>를 통해</font> <font color="#000000">다양한 Microsoft 및 파트너 솔루션에서 다양한 데이터를 심층 분석하여 보안을 강화합니다. 이 모든 데이터를 활용하기 위해 위협 방지, 탐지 및 최종 조사를 위해 데이터 과학, 특히 Machine Learning 광범위하게 활용합니다. </font></p>
+
+
+  <p><font color="#000000">대체로 Machine Learning 사용하여 두 가지 결과를 달성합니다.</font></p>
+
+
+  <ol>
+      <li><font color="#000000">차세대 검색 기능 활용</font></li>
+      <li><font color="#000000">간소화된 보안 관리</font></li>
+  </ol>
+
+
+  <h1>차세대 검색 기능 활용</h1>
+
+
+  <p><font color="#000000">공격자는 점점 더 자동화되고 정교해지고 있습니다. 데이터 과학도 사용합니다. 그들은 보호를 리버스 엔지니어링하고 동작의 돌연변이를 지원하는 시스템을 구축합니다. 그들은 자신의 활동을 소음으로 가장하고 실수에서 신속하게 배웁니다. 기계 학습은 이러한 개발에 대응하는 데 도움이 됩니다.</font></p>
+
+
+  <h3><a><font color="#000000">Machine Learning 규칙 기반 검색 강화</font></a></h3>
+
+
+  <p><font color="#000000">예를 들어 X 로그인에 실패한 후 계정을 잠그는 보안 규칙을 예로 들어보십시오. 개발자 컴퓨터의 경우 X는 낮아야 하지만 사용량이 많은 서버의 경우 높아야 합니다. Machine Learning 각 개별 리소스에 대한 사용자 지정 분석을 개발하지 않고 지정된 리소스가 허용할 올바른 X를 자동으로 결정하는 데 도움이 됩니다.</font></p>
+
+
+  <h3>감독되는 Machine Learning 모델</h3>
+
+
+  <p><font color="#000000">악의적이고 양성적인 예제를 제시하여 감독된 Machine Learning 모델을 학습시킵니다. 그런 다음 모델은 예제를 알고리즘으로 일반화합니다. 이러한 예제는 찾기 및 분석하기가 매우 어렵습니다. 그러나 Microsoft는 방대한 글로벌 위협 인텔리전스 및 보안 전문 지식을 활용하여 풍부한 분석된 예제를 사용하여 고도로 조정된 모델을 개발할 수 있습니다.</font></p>
+
+
+  <h3>Machine Learning 이동 대상에 빠르게 적응</h3>
+
+
+  <p><font color="#000000">차단되면 공격자는 레이더 밑으로 가기 위해 동작을 약간 변경합니다. 기계 학습 모델은 이러한 변경 내용에 자동으로 대응합니다.</font></p>
+
+
+  <h3>감독되지 않은 Machine Learning 모델은 예제가 없는 상태에서 작동할 수 있습니다.</h3>
+
+
+  <p><font color="#000000">예를 들어 데이터베이스가 일반적으로 특정 네트워크 각인을 표시하지만 언젠가 다른 항목이 표시되는 경우 Azure Security Center는 활동에 의심스러운 플래그를 지정할 수 있습니다.</font></p>
+
+
+  <h1>보안 간소화</h1>
+
+
+  <p><font color="#000000">효과적인 보안 결정을 내리는 것은 쉽지 않습니다. 보안 경험과 전문 지식이 필요합니다. 일부 대규모 조직에는 직원에 대한 전문가가 있지만 많은 회사는 그렇지 않습니다&rsquo;. Machine Learning 사용하여 고객이 보안 결정을 내릴 때 다른 조직의 지혜를 활용할 수 있습니다.</font></p>
+
+
+  <h3>실행 가능한 권장 사항</h3>
+
+
+  <p><font color="#000000">고객에게 유사한 요구 사항, 배포, 보안 이벤트 등을 포함하는 참조 그룹과 비교하는 Machine Learning 모델을 기반으로 실행 가능한 권장 사항을 제공할 수 있습니다.&mdash; 개인 정보 보호를 손상시키지 않습니다. 우리의 목표는 고객이 자신의 보안 성능이 무엇인지, 그리고 자신의 고통을 해결하기 위해 무엇을 해야 하는지 알 수 있도록 돕는 것입니다.</font></p>
+
+
+  <h3>노이즈 감소</h3>
+
+
+  <p><font color="#000000">보안 어플라이언스는 시끄러운 것으로 악명이 높습니다. 전문가가 중요한 경고를 노이즈와 구분할 수 있습니다. 여러 메커니즘을 사용하여 노이즈 감소를 최대한 자동화하여 비전문가에게 더 나은 보안 인사이트를 제공합니다.</font></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>점점 <font color="#000000">더 진보된 모델을 개발함에 따라 현재와 미래의 Azureboth&mdash;에서 리소스의 보안을 개선하는 데 도움이 Machine Learning 잠재력에 대해 매우 기쁘게 생각합니다. 여기서 설명한 기술이 관심을 끄는 경우 </font><font color="#000000">찾아보기를 클릭하고 Azure Portal에서 보안을&rdquo; 입력하여 오늘 <font color="#000000">Azure <a href="https://portal.azure.com"></a></font>Security Center를 &ldquo;</font> 사용해 보세요.</p>

@@ -1,0 +1,688 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fdd545e5c9d96d1ffeba62676c3e453e2e1acd57
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913160"
+Slug: azure-marketplace-new-offers-volume-28
+Title: Azure Marketplace 새 제품 – 볼륨 28
+Summary: Azure Marketplace 에코시스템을 계속 확장합니다. 2018년 11월 17일부터 11월 30일까지 80개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다.
+Content: >-
+  <p>Azure Marketplace 에코시스템을 계속 확장합니다. 2018년 11월 17일부터 11월 30일까지 80개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다. 아래의 새 제품에 대한 세부 정보를 참조하세요.</p>
+
+
+  <h2>가상 머신</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudflare.cloudflare_azure" target="_blank"><img alt="CloudflareAzure" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/066b03be-c00e-4f49-9bc1-b4dcdec90e2c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="CloudflareAzure" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudflare.cloudflare_azure" target="_blank">CloudflareAzure</a>: Cloudflare는 수백만 개의 웹 사이트, API, Software-as-a-Service 솔루션 등을 가속화하고 보호합니다. 이 제품을 통해 Azure 설정의 구성 요소를 다시 구성할 필요 없이 Cloudflare 서비스에서 제공하는 이점을 활용할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/machinesense.crystal01" target="_blank"><img alt="CrystalBall" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f94d3639-7eb4-4eaa-b194-1ad1199ba3d7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="크리스탈볼" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/machinesense.crystal01" target="_blank">CrystalBall</a>: 데이터 모니터링 및 분석을 위한 Machinesense&#39;산업용 IoT 앱은 기계 상태 데이터 시각화, 에너지 관리 및 유지 관리, 운영 및 수리 로그와 함께 센서 및 머신의 온보딩 및 차량 관리를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/hpe.hpestoreoncevsa" target="_blank"><img alt="HPE StoreOnce VSA 3.18.7" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f3ef2c02-f5b2-4be8-8589-3eb12e316bf4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="HPE StoreOnce VSA 3.18.7" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/hpe.hpestoreoncevsa" target="_blank">HPE StoreOnce VSA 3.18.7</a>: HPE StoreOnce 가상 어플라이언스를 사용하면 고성능 데이터 중복 제거를 통해 백업 데이터 스토리지 비용을 줄일 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intersystems.intersystems-iris-byol" target="_blank"><img alt="InterSystems IRIS Data Platform" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/75a92214-56ea-4606-8363-a7fcc85a1e09.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="시스템 간 IRIS 데이터 플랫폼" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/intersystems.intersystems-iris-byol" target="_blank">시스템 간 IRIS 데이터 플랫폼</a>: IRIS by InterSystems는 개발자가 애플리케이션을 빠르게 개발하는 데 가장 적합한 언어 및 데이터 모델을 자유롭게 선택할 수 있는 완전한 데이터 플랫폼입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mvp-systems.jamsbyol-7-0-1852-server2016" target="_blank"><img alt="JAMS V7 (BYOL) - Server 2016" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/77db1611-2727-4899-aff4-891cf73b4903.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="JAMS V7(BYOL) - Server 2016" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mvp-systems.jamsbyol-7-0-1852-server2016" target="_blank">JAMS V7(BYOL) - Server 2016</a>: JAMS는 엔터프라이즈 일괄 예약 및 워크로드 자동화 솔루션입니다. 데이터베이스, ERP 또는 CRM 솔루션, BI 도구 등에서 실행되는 작업을 지원하여 Windows, Linux, UNIX, z/OS, System I 및 OpenVMS에서 작업을 자동화합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/neowaybusinesssolutions-4956350.neoway-base-image" target="_blank"><img alt="Neoway Ubuntu Image" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0f3d0dc4-bf5b-48e7-bf63-fdc6f4df6fa9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Neoway Ubuntu 이미지" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/neowaybusinesssolutions-4956350.neoway-base-image" target="_blank">Neoway Ubuntu 이미지</a>: Neoway 환경에 대한 이 Ubuntu 이미지는 CIS 컨트롤, 스크립션된 프로세스 및/또는 사용자 지정 앱에서 제공하는 보안 규정 준수를 보장합니다. 그래픽 사용자 인터페이스, REST 또는 .NET API 또는 PowerShell cmdlet을 통해 작업을 정의, 관리 및 모니터링합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloud-infrastructure-services.nfs-server-2016" target="_blank"><img alt="NFS 2016 Windows Storage File Server" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/42bf0d8c-6426-4b83-b4f4-534078121cab.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="NFS 2016 Windows Storage 파일 서버" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloud-infrastructure-services.nfs-server-2016" target="_blank">NFS 2016 Windows Storage 파일 서버</a>: NFS(네트워크 파일 시스템) 2016 Server는 Windows 및 비 Windows 컴퓨터를 포함하는 다른 유형의 환경이 있는 엔터프라이즈를 위한 파일 공유 솔루션을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/postgres-pro.postgres-pro-standard-11" target="_blank"><img alt="Postgres Pro Standard Database 11" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f0f76bfa-af01-469b-a77c-136024d9ca7f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Postgres Pro Standard Database 11" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/postgres-pro.postgres-pro-standard-11" target="_blank">Postgres Pro Standard Database 11</a>: Postgres Pro SQL 및 NoSQL 기능을 갖춘 최신 PostgreSQL 기반 데이터베이스입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/processgold.processgold" target="_blank"><img alt="ProcessGold" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2637f12e-28ea-4eba-a112-daa236cb6973.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ProcessGold" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/processgold.processgold" target="_blank">ProcessGold</a>: ProcessGold는 대규모 조직을 위한 프로세스 분석 플랫폼입니다. ProcessGold는 애플리케이션 및 팀 간에 엔드 투 엔드 프로세스 맵을 만들어 기존 감사를 변환하여 상업적 및 운영 위험을 강조합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/quest.qorestor_5_0_1" target="_blank"><img alt="QoreStor 5.0.1" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c2f1424b-1c91-4bc4-a189-cffee6c751f5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="QoreStor 5.0.1" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/quest.qorestor_5_0_1" target="_blank">QoreStor&trade; 5.0.1</a>: 백업 어플라이언스에서 분리하고, 백업 성능을 가속화하고, 백업을 위한 소프트웨어 정의 보조 스토리지 플랫폼인 Quest&#39;QoreStor를 사용하여 스토리지 요구 사항 및 비용을 줄입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloud-infrastructure-services.radius-2016" target="_blank"><img alt="RADIUS 2016 Server - Wireless Authentication NPS" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7f621d16-42ad-4111-b8d2-e96a7c5c89c1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="RADIUS 2016 서버 - 무선 인증 NPS" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloud-infrastructure-services.radius-2016" target="_blank">RADIUS 2016 서버 - 무선 인증 NPS</a>: 이 RADIUS 서버는 NPS를 사용하여 중앙 집중식 인증, 권한 부여 및 무선 인증 스위치, 원격 액세스 전화 접속 또는 VPN(가상 사설망) 연결을 고려합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/s2ix.s2ix-vm" target="_blank"><img alt="S2IX - Virtual Machine" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/475c648e-b0cf-4285-bf0c-784766ac586a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="S2IX - Virtual Machine" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/s2ix.s2ix-vm" target="_blank">S2IX - Virtual Machine</a>: Azure Marketplace에서 지금 가져옵니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tiger-technology.tbdg-5tb-saas" target="_blank"><img alt="Tiger Bridge" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4e17931a-2a0d-493d-9b37-4bfd964ae666.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="타이거 브리지" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tiger-technology.tbdg-5tb-saas" target="_blank">Tiger Bridge</a>: Tiger Bridge를 사용하면 NTFS 또는 Tiger Store 파일 시스템을 원활하게 확장하고 한 스토리지 계층과 다른 스토리지 계층 간에 투명한 데이터 마이그레이션을 수행하여 데이터 값을 스토리지 비용에 쉽게 맞출 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/curiosity-software.vip" target="_blank"><img alt="VIP" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/007b025a-59ee-4eb4-a441-4cedff6a8217.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="VIP" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/curiosity-software.vip" target="_blank">VIP</a>: 수동 프로세스를 자동화하여 봇이 반복적인 작업을 수행할 수 있도록 합니다. VIP는 고성능 로봇 프로세스 자동화 및 엔드 투 엔드 테스트 자동화를 제공합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>웹 애플리케이션</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/atlassian.bbsdc" target="_blank"><img alt="Bitbucket Data Center" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/59f2bc30-5bd8-4574-8fcd-8ed13a883cd8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Bitbucket 데이터 센터" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/atlassian.bbsdc" target="_blank">Bitbucket 데이터 센터</a>: Bitbucket Data Center by Atlassian은 최신 소스 코드 협업을 위한 자체 관리형 솔루션입니다. 사용자가 예기치 않은 노드 오류 발생 시 Bitbucket 데이터 센터에 중단 없이 액세스할 수 있도록 여러 활성 서버를 클러스터합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/citrix.citrix-sd-wan-center" target="_blank"><img alt="Citrix SD-WAN Center 10.2" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8f0db84d-aa25-4223-96a3-7e32b1db2874.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Citrix SD-WAN 센터 10.2" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/citrix.citrix-sd-wan-center" target="_blank">Citrix SD-WAN 센터 10.2</a>: Citrix SD-WAN 센터는 Citrix SD-WAN 어플라이언스를 위한 중앙 집중식 관리 솔루션입니다. Citrix SD-WAN 네트워크를 통해 풍부한 보고서 및 통계 집합을 노출하여 애플리케이션 성능에 대한 가시성을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bcs-technology.bcs-corda-node-joiner" target="_blank"><img alt="Corda Single Node" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e55227f3-059b-4889-90d6-9f223012be54.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Corda 단일 노드" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bcs-technology.bcs-corda-node-joiner" target="_blank">Corda 단일 노드</a>: 네트워크에 조인할 수 있는 Corda 노드를 만들고 배포합니다. &#39;노드에 포함하려는 고유한 CorDapps를 제공할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-azure-blockchain.azure-blockchain-ipfs" target="_blank"><img alt="IPFS (beta)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2e34c3df-b62d-4770-9edb-3c679e87d4cb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="IPFS(베타)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-azure-blockchain.azure-blockchain-ipfs" target="_blank">IPFS(베타)</a>: 이 제품을 사용하면 IPFS 노드의 사용 권한 있는 네트워크를 만들어 분산 스토리지 네트워크를 구성할 수 있습니다. 사용자는 프로비전하려는 네트워크 크기를 선택하고 다른 사용자와 공유할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-hcb.microsofthealthcarebot" target="_blank"><img alt="Microsoft Healthcare Bot (Preview)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a32147d-82e1-47ba-8c2b-29d5c52a4b5e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Microsoft Healthcare Bot(미리 보기)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-hcb.microsofthealthcarebot" target="_blank">Microsoft Healthcare Bot(미리 보기)</a>: Microsoft Healthcare Bot 서비스는 의료 조직이 AI 기반 가상 도우미 및 챗봇을 빌드하고 배포하여 프로세스, 셀프 서비스 제공 및 비용 절감 노력을 개선할 수 있도록 지원합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/provance-itsm.provance-cloudconn" target="_blank"><img alt="Provance ITSM Azure Connector" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c7f54d71-777d-4175-8b19-092d9c125d4f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Provance ITSM Azure Connector" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/provance-itsm.provance-cloudconn" target="_blank">Provance ITSM Azure Connector</a>: Provance ITSM Azure Connector는 Azure 인프라와 Provance ITSM 간의 격차를 해소하여 Provance ITSM 내의 다른 인프라와 같은 Azure 리소스를 관리할 수 있도록 합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/information-asset.sapbobj2ala" target="_blank"><img alt="SAP BusinessObjects to Alation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ab11a88e-bb91-4bdb-8ba3-b29cee0e5347.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SAP BusinessObjects에서 Alation으로" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/information-asset.sapbobj2ala" target="_blank">SAP BusinessObjects to Alation</a>: Information Asset은 SAP BusinessObjects Web Intelligence 및 SAP Crystal Reports의 보고서를 Alation 데이터 카탈로그로 수집하기 위한 솔루션을 개발했습니다. 이 솔루션에는 Java 8이 필요하며 실행 파일 JAR 파일로 패키지됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/information-asset.tibcospotfire2ala" target="_blank"><img alt="TIBCO Spotfire to Alation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84d15a7f-3cd8-4359-a9a6-e824d9605e17.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="TIBCO Spotfire to Alation" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/information-asset.tibcospotfire2ala" target="_blank">TIBCO Spotfire에서 Alation으로</a>: 이 정보 자산 솔루션은 TIBCO Spotfire의 대시보드를 Alation의 BI 서버로 가져옵니다. TIBCO Spotfire의 라이브러리 구조는 라이브러리 내 대시보드의 이름과 썸네일뿐만 아니라 Alation으로 가져옵니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>컨테이너 솔루션</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.container-apache-2-4-alpine-secure" target="_blank"><img alt="Apache 2.4 Secured Alpine Container with Antivirus" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/30bbfecf-6af3-4da3-b08f-7d1f4b646931.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="바이러스 백신을 사용한 Apache 2.4 보안 Alpine 컨테이너" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cognosys.container-apache-2-4-alpine-secure" target="_blank">바이러스 백신을 사용하는 Apache 2.4 보안 Alpine 컨테이너</a>: Alpine에서 Apache 2.4용 엔터프라이즈 지원 컨테이너를 배포합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.kubectl-container" target="_blank"><img alt="Kubectl Container Image" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/06818014-baea-4e67-aeba-21f67fa8076e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Kubectl 컨테이너 이미지" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.kubectl-container" target="_blank">Kubectl 컨테이너 이미지</a>: Kubectl은 Kubernetes 명령줄 인터페이스입니다. Kubernetes API와 통신하는 광범위한 명령 집합을 제공하여 Kubernetes 클러스터를 관리할 수 있습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>컨설팅 서비스</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.azure-architechture-briefing" target="_blank"><img alt="Azure Architecture- 1-Hr Briefing" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ea2e0c89-184f-4016-bf53-f99a06226944.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 아키텍처- 1시간 브리핑" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.azure-architechture-briefing" target="_blank">Azure 아키텍처: 1시간 브리핑</a>: igroup&rsquo;의 이 브리핑이 끝나면 Azure가 비즈니스를 위해 수행할 수 있는 작업에 대한 개략적인 개요와 타임라인 및 비용에 대한 이해가 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.azure-cloud-assess" target="_blank"><img alt="Azure Cloud Assessment- 3-Day" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/258837b6-3466-4099-873c-c0bb644e423c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 클라우드 평가 - 3일" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.azure-cloud-assess" target="_blank">Azure 클라우드 평가: 3일</a>: 이 평가에서 igroup은 클라우드 배포를 성공적으로 달성할 수 있도록 단계별 가이드를 제공하여 향후 관련 비용을 명확하게 나열하고 필요한 리소스를 잘 이해할 수 있도록 합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/meritum-cloud.meritumcloudazurevdipoc" target="_blank"><img alt="Azure Cloud VDI 6-Day Proof of Concept" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/32afa250-12d4-4dd9-823d-86e97383b092.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Cloud VDI 6일 개념 증명" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/meritum-cloud.meritumcloudazurevdipoc" target="_blank">Azure Cloud VDI 6일 개념 증명</a>: 이 개념 증명의 일환으로, Meritum Cloud는 고객을 위한 Azure 테넌트, 기본 VDI 이미지를 빌드하고 모범 사례에 따라 XenDesktop 필수 항목을 구성합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/communication_square_llc.azure_data_center_migration_poc" target="_blank"><img alt="Azure Data Center Migration- 2-Week POC" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e03c16a8-5034-4b97-acb4-af86c795ad77.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Data Center 마이그레이션 - 2주 POC" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/communication_square_llc.azure_data_center_migration_poc" target="_blank">Azure Data Center 마이그레이션: 2주 POC:</a> Communication Square는 마이그레이션 계획을 고안하고, Azure에서 환경을 설정하고, 워크로드를 클라우드로 리프트 앤 시프트한 다음, 마이그레이션을 테스트, 분석 및 최적화하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bui.buiazuredcmigrations" target="_blank"><img alt="Azure Data Center Migrations- 10 Weeks Workshop" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7bf850c3-db94-4d4b-a3c9-f8a7e7e7e8a0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Data Center 마이그레이션 - 10주 워크샵" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bui.buiazuredcmigrations" target="_blank">Azure Data Center 마이그레이션: 10주 워크샵</a>: BUI&#39;제품에는 클라우드 준비 평가, 클라우드 구현 전략을 요약한 로드맵, 하이브리드 아키텍처 구현 및 마이그레이션 프로세스 중 IT 팀에 대한 전임 지원이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.azure-health-assessment" target="_blank"><img alt="Azure Health Assessment- 3-Day" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aac7f223-ab33-4398-83cc-6886ef7c95ad.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 상태 평가 - 3일" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.azure-health-assessment" target="_blank">Azure 상태 평가: 3일</a>: 이 계약에서 igroup은 현재 인프라를 평가하기 위해 하루 동안 현장에서 보냅니다. 그런 다음, igroup 팀은 결과를 분석하고 작업 및 권장 사항을 사용하여 수정 프로세스를 만듭니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/meritum-cloud.meritumcloudazure" target="_blank"><img alt="Azure Hybrid Cloud 5-Day Proof of Concept" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9421c09d-9af8-46ed-9458-edcb3f9b223b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 하이브리드 클라우드 5일 개념 증명" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/meritum-cloud.meritumcloudazure" target="_blank">Azure 하이브리드 클라우드 5일 개념 증명</a>: Meritum Cloud는 고객에게 Azure 하이브리드 클라우드 서비스에 대해 브리핑하고, 검색 워크샵을 수행하고, Azure 테넌트를 빌드하여 보안 모범 사례를 사용하여 환경을 구성합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.proof-of-concept" target="_blank"><img alt="Azure IaaS Proof of Concept- 5-Day" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/545016ae-1d6e-4e5d-be0b-f11d7db9f12c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure IaaS 개념 증명 - 5일" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.proof-of-concept" target="_blank">Azure IaaS 개념 증명: 5일:</a> igroup의 이 개념 증명을 통해 환경을 과도하게 호환하는지 아니면 Azure 서비스를 최대한 활용하지 않는지 평가할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/spektra.azuremarketplace-onboarding" target="_blank"><img alt="Azure Marketplace On-boarding for ISVs" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0bb4992-0373-42c1-b446-aaf131b504a8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="ISV용 Azure Marketplace 온보딩" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/spektra.azuremarketplace-onboarding" target="_blank">ISV용 Azure Marketplace 온보딩</a>: 이 컨설팅 제품에서 Spektra Systems는 Azure Marketplace 온보딩에 대한 애플리케이션/솔루션을 평가하고 수행할 다음 단계를 정의하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_migration_assessment" target="_blank"><img alt="Azure Migration Assessment- 2-Day Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7a32320-8124-4546-8fd1-126410524195.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 마이그레이션 평가 - 2일 평가" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_migration_assessment" target="_blank">Azure 마이그레이션 평가: 2일 평가:</a> CDW는 사용자 환경의 평가 도구를 배포하고, 도구가 제대로 구성되었는지 확인하고, 도구를 실행한 다음, 결과를 검토하고 해석하는 데 도움을 주기 위해 함께 작동합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/atech-support.atech_support-azure_migration_consultancy" target="_blank"><img alt="Azure Migration Planning- 5 Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bfca0bfa-2a08-4805-acdb-19bd5d7006ee.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 마이그레이션 계획 - 5일 구현" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/atech-support.atech_support-azure_migration_consultancy" target="_blank">Azure 마이그레이션 계획: 5일 구현:</a> Atech 지원은 인증된 Microsoft Azure 솔루션 설계자와 인증된 Microsoft Azure 엔지니어를 제공하여 온-프레미스 인프라를 설계, 계획 및 Azure로 마이그레이션할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bearingpoint.bearingpoint_factory_navigator_17_08_2018" target="_blank"><img alt="BearingPoint - Digital Process Twin- 4 Weeks PoC" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a5e9acbd-1cc4-439d-813d-1b6cd4edfe03.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="BearingPoint - 디지털 프로세스 쌍 - 4주 PoC" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bearingpoint.bearingpoint_factory_navigator_17_08_2018" target="_blank">BearingPoint - 디지털 프로세스 쌍: 4주 PoC</a>: 디지털 프로세스 쌍은 물류 프로세스의 안정성을 향상시키기 위해 실시간 수평 데이터 통합을 통해 비즈니스 프로세스, 디바이스 및 시스템을 연결합니다. 이 개념 증명은 IoT 사용 사례를 실현합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cloudlive.azure-consulting" target="_blank"><img alt="Cloud Architecture Tech Consulting- 4-Wk Briefing" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c74c13d3-7ece-4726-a9a2-bcdf6e1f6de6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="클라우드 아키텍처 기술 컨설팅- 4-Wk 브리핑" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cloudlive.azure-consulting" target="_blank">클라우드 아키텍처 기술 컨설팅: 4-Wk 브리핑</a>: Azure MVP는 아키텍처 디자인 및 기술 문제를 해결하는 문제에 대해 상담합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pcsolutions.datacentermigration" target="_blank"><img alt="Data Center Migration Assessment Service- 4 Weeks" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/69e21a73-d8ad-401e-b983-9e47939362be.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Data Center 마이그레이션 평가 서비스 - 4주" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pcsolutions.datacentermigration" target="_blank">데이터 센터 마이그레이션 평가 서비스: 4주:</a> PC 솔루션은 Azure 기술 세션, 데이터 센터의 비즈니스 평가, 데이터 센터의 기술 평가, 도구 평가, 권장 사항 보고서 및 프레젠테이션을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/communication_square_llc.hipaa_compliant_cloud_solutions_briefing" target="_blank"><img alt="HIPAA Compliant Cloud Solutions- 1-Hour Briefing" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cae08ddf-5042-4e93-9d18-65b3ff1d79c9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="HIPAA 규격 클라우드 솔루션 - 1시간 브리핑" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/communication_square_llc.hipaa_compliant_cloud_solutions_briefing" target="_blank">HIPAA 규격 클라우드 솔루션: 1시간 브리핑</a>: 모든 의료 기관의 경우 HIPAA 규정 준수를 달성하는 것이 매우 중요합니다. Communication Square의 이 브리핑에서 HIPAA 규격 Microsoft 클라우드 솔루션에 대해 알아봅니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/communication_square_llc.hipaa_compliant_cloud_solutions_implementation" target="_blank"><img alt="HIPAA Compliant Cloud Solutions- 4-Week Imp." border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/508d39a1-2252-487e-bbe9-43c71c6068b7.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="HIPAA 규격 클라우드 솔루션 - 4주 임프." width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/communication_square_llc.hipaa_compliant_cloud_solutions_implementation" target="_blank">HIPAA 규격 클라우드 솔루션: 4주 임프:</a> HIPAA 요구 사항을 처음부터 일치하도록 IT 솔루션을 얻으려고 노력하는 것은 손실이 될 수 있습니다. 이 계약에서 Communication Square는 HIPAA 규격 Microsoft 클라우드 솔루션을 구현합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.cloud-migration-briefing" target="_blank"><img alt="How to move to Azure- 1-Hr Briefing" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d40c2120-ef2d-4cec-8c3b-d187d70835e4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure- 1시간 브리핑으로 이동하는 방법" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/igroup.cloud-migration-briefing" target="_blank">Azure로 이동하는 방법: 1시간 브리핑</a>: igroup&rsquo;의 이 브리핑이 끝나면 Azure로 이동하는 방법에 대한 개략적인 개요와 타임라인 및 비용에 대한 이해가 있습니다. 당사의 전문가는 질문에 답변하고 비즈니스에 가장 적합한 경로를 설명합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/emm_mme_informatica.mmazr003" target="_blank"><img alt="Implementing Managing Azure Infrastructure 4 days" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2209d742-1c2d-4d1e-bf98-ce6c6d6cc1b1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 인프라 4일 관리 구현" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/emm_mme_informatica.mmazr003" target="_blank">Azure 인프라 관리 4일 구현</a>: 이 워크샵에서 EmmmmE&amp; Informatica는 가상 머신, 스토리지 및 컨테이너를 비롯한 Azure 서비스를 소개합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pcsolutions.azuremanagedservices" target="_blank"><img alt="Infrastructure manage service-4week Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/72ecb8a9-0ffc-4a23-8694-4c3fdfcbd23e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="인프라 관리 서비스-4주 구현" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/pcsolutions.azuremanagedservices" target="_blank">인프라 관리 서비스:4주 구현</a>: PC 솔루션의 이 제품에서 최대 10개의 가상 머신에서 엔드투엔드 관리형 서비스를 가져옵니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/ascenttechnology-1141524.rehost-mysql2azure" target="_blank"><img alt="Migrate MySQL to Azure 2-weeks Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/219e3a85-a157-4a54-bf20-7ba8a9f070ab.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="MySQL을 Azure 2주 구현으로 마이그레이션" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/ascenttechnology-1141524.rehost-mysql2azure" target="_blank">MySQL을 Azure로 마이그레이션 2주 구현</a>: Azure에 배포할 때 인프라, 유지 관리 및 지원 비용을 줄이면서 오픈 소스 데이터베이스 워크로드에 확장성, 유연성, 보안 및 성능을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/ascenttechnology-1141524.rehhost-postgresql2azure" target="_blank"><img alt="Migrate PostgreSQL to Azure 2-weeks Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0d14fd8-ad7f-48c6-a31f-aee88be5bee6.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="PostgreSQL을 Azure 2주 구현으로 마이그레이션" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/ascenttechnology-1141524.rehhost-postgresql2azure" target="_blank">PostgreSQL을 Azure 2주 구현으로 마이그레이션</a>: Ascent Technology는 PostgreSQL 데이터베이스를 Azure로 리프트 앤 시프트하여 온-프레미스 비용의 일부로 가용성, 보안 및 성능을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/karabinaptyltd-1075151.azureerp" target="_blank"><img alt="Move Your Current ERP into Azure- 1-Day Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6f55f33e-e4be-43bd-9c27-47cefdc7bcb4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="현재 ERP를 Azure- 1일 평가로 이동" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/karabinaptyltd-1075151.azureerp" target="_blank">현재 ERP를 Azure로 이동: 1일 평가:</a> Altron Karabina의 이 평가에는 ERP 인프라 이해, 기존 환경의 문제 정의, 마이그레이션 단계 식별, ERP 로드맵 논의 등이 포함됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bui.buipopiacheck" target="_blank"><img alt="POPIA Compliance &amp; Readiness- 10 Week Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a6a129fe-c4f0-45d1-a63d-ccdf862596ec.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="POPIA 규정 준수 &amp; 준비 - 10주 평가" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bui.buipopiacheck" target="_blank">POPIA 규정 준수 &amp; 준비: 10주 평가</a>: POPIACheck를 사용하면 조직이 신속하게 POPIA 평가를 수행하고 남아프리카 공화국의 개인 정보 보호법 준수를 유지하기 위한 정정 조치를 생성할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/karabinaptyltd-1075151.powerbiadoption" target="_blank"><img alt="Power BI Adoption Tracker - 1 Day Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0d8cf6d7-c640-42d1-8512-b5d334a9b873.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Power BI 채택 추적기 - 1일 평가" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/karabinaptyltd-1075151.powerbiadoption" target="_blank">Power BI 채택 추적기 - 1일 평가</a>: Altron Karabina를 사용하면 Microsoft Power BI 채택에 대한 인사이트를 얻을 수 있습니다. 채택 추적기는 사용자에게 보다 정보에 입각한 비즈니스 의사 결정을 내리는 데 필요한 도구를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/clientek.execution_sprint_clientek" target="_blank"><img alt="Project Execution Sprint- 2-Wk Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d770bb83-b873-4826-9e21-7a791e0b2dea.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Project 실행 스프린트- 2-Wk 구현" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/clientek.execution_sprint_clientek" target="_blank">Project 실행 스프린트: 2-Wk 구현</a>: Clientek&#39;구현은 미리 결정된 기능 및 프로젝트 목표를 개발, 테스트 및 제공하는 데 중점을 줍니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bui.buirescan" target="_blank"><img alt="RESCAN AD Audit Reporting- 4 Week Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a6f1260-2d47-4c61-91ae-707ee99974a1.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="RESCAN AD 감사 보고 - 4주 평가" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bui.buirescan" target="_blank">RESCAN AD 감사 보고: 4주 평가:</a> BUI&#39;RESCAN 서비스는 Microsoft Azure 사용하여 Active Directory와 같은 원본에 대한 읽기 쉬운 감사 보고를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_be" target="_blank"><img alt="SQL Consulting Services- 1 Week Implementation (1)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f3d4a3d1-c046-4fbe-a246-9d719fc43326.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL 컨설팅 서비스 - 1주 구현(1)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_be" target="_blank">SQL 컨설팅 서비스: 1주 구현</a>: 이 제품은 벨기에 고객을 위한 것입니다. Denny Cherry &amp; Associates 전문가는 IT 팀과 협력하여 최대 1주일 동안 SQL Server 실행하는 Azure 가상 머신을 설치, 구성 및 조정합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_de" target="_blank"><img alt="SQL Consulting Services- 1 Week Implementation (2)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1ae2fc54-b468-4adc-bdba-c1f02993aacf.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL 컨설팅 서비스 - 1주 구현(2)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_de" target="_blank">SQL 컨설팅 서비스: 1주 구현</a>: 이 제품은 독일 고객을 위한 것입니다. Denny Cherry &amp; Associates 전문가는 IT 팀과 협력하여 최대 1주일 동안 SQL Server 실행하는 Azure 가상 머신을 설치, 구성 및 조정합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_fr" target="_blank"><img alt="SQL Consulting Services- 1 Week Implementation (3)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3d7bdf78-71e7-46a7-94b1-fa49047cdb60.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL 컨설팅 서비스 - 1주 구현(3)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_fr" target="_blank">SQL 컨설팅 서비스: 1주 구현</a>: 이 제품은 프랑스 고객을 위한 것입니다. Denny Cherry &amp; Associates 전문가는 IT 팀과 협력하여 최대 1주일 동안 SQL Server 실행하는 Azure 가상 머신을 설치, 구성 및 조정합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_fn" target="_blank"><img alt="SQL Consulting Services- 1 Week Implementation (4)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/aee18315-bfd0-497d-a03d-fa52a185e6ca.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL 컨설팅 서비스 - 1주 구현(4)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_fn" target="_blank">SQL 컨설팅 서비스: 1주 구현</a>: 이 제품은 유럽 고객을 위한 것입니다. Denny Cherry &amp; Associates 전문가는 IT 팀과 협력하여 최대 1주일 동안 SQL Server 실행하는 Azure 가상 머신을 설치, 구성 및 조정합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week" target="_blank"><img alt="SQL Consulting Services- 1 Week Implementation (5)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8d13a2e7-efbc-4481-954f-465f31e1bc75.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL 컨설팅 서비스 - 1주 구현(5)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week" target="_blank">SQL 컨설팅 서비스: 1주 구현</a>: 이 제품은 미국 고객을 위한 것입니다. Denny Cherry &amp; Associates 전문가는 IT 팀과 협력하여 최대 1주일 동안 SQL Server 실행하는 Azure 가상 머신을 설치, 구성 및 조정합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_ca" target="_blank"><img alt="SQL Consulting Services- 1 Week Implementation (6)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4aa420da-2b14-4f7d-bc4e-44f4db8e71f9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL 컨설팅 서비스 - 1주 구현(6)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_ca" target="_blank">SQL 컨설팅 서비스: 1주 구현</a>: 이 제품은 캐나다 고객을 위한 것입니다. Denny Cherry &amp; Associates 전문가는 IT 팀과 협력하여 최대 1주일 동안 SQL Server 실행하는 Azure 가상 머신을 설치, 구성 및 조정합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_uk" target="_blank"><img alt="SQL Consulting Services- 1 Week Implementation (7)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2244da56-aac2-4d9c-9e20-b497b650dac8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL 컨설팅 서비스 - 1주 구현(7)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_uk" target="_blank">SQL 컨설팅 서비스: 1주 구현</a>: 이 제품은 영국용입니다. 고객. Denny Cherry &amp; Associates 전문가는 IT 팀과 협력하여 최대 1주일 동안 SQL Server 실행하는 Azure 가상 머신을 설치, 구성 및 조정합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_au" target="_blank"><img alt="SQL Consulting Services- 1 Week Implementation (8)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9666538d-2a51-4b61-b2ec-7055f2b7b71f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL 컨설팅 서비스 - 1주 구현(8)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_consulting_services_1_week_au" target="_blank">SQL 컨설팅 서비스: 1주 구현</a>: 이 제품은 호주 고객을 위한 것입니다. Denny Cherry &amp; Associates 전문가는 IT 팀과 협력하여 최대 1주일 동안 SQL Server 실행하는 Azure 가상 머신을 설치, 구성 및 조정합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.multi_mode_sql_server_always_on_five_days_au" target="_blank"><img alt="SQL Server Always On- 5 Day Implementation (1)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6bdb55c2-a7ed-4868-b6db-adad0aa0d9c0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server Always On- 5일 구현(1)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.multi_mode_sql_server_always_on_five_days_au" target="_blank">SQL Server Always On: 5일 구현</a>: 이 제품은 호주 고객을 위한 것입니다. 이 계약에서 Denny Cherry &amp; Associates 컨설팅은 Azure 환경 내에서 새로운 SQL Server Always On 가용성 그룹 솔루션을 빌드합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.multi_mode_sql_server_always_on_five_days_ca" target="_blank"><img alt="SQL Server Always On- 5 Day Implementation (2)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ee219312-96d6-435e-9f9a-b464baf662ef.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server Always On- 5일 구현(2)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.multi_mode_sql_server_always_on_five_days_ca" target="_blank">SQL Server Always On: 5일 구현</a>: 이 제품은 캐나다 고객을 위한 것입니다. 이 계약에서 Denny Cherry &amp; Associates 컨설팅은 Azure 환경 내에서 새로운 SQL Server Always On 가용성 그룹 솔루션을 빌드합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.multi_mode_sql_server_always_on_five_days_uk" target="_blank"><img alt="SQL Server Always On- 5 Day Implementation (3)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/652eb370-9e42-4ef2-8c3a-c3de72ddd102.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server Always On- 5일 구현(3)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.multi_mode_sql_server_always_on_five_days_uk" target="_blank">SQL Server Always On: 5일 구현</a>: 이 제품은 영국용입니다. 고객. 이 계약에서 Denny Cherry &amp; Associates 컨설팅은 Azure 환경 내에서 새로운 SQL Server Always On 가용성 그룹 솔루션을 빌드합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.multi_mode_sql_server_always_on_five_days" target="_blank"><img alt="SQL Server Always On- 5 Day Implementation (4)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fc9478e1-55c3-42a9-b3f2-0c7ead060f4d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server Always On- 5일 구현(4)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.multi_mode_sql_server_always_on_five_days" target="_blank">SQL Server Always On: 5일 구현</a>: 이 제품은 미국 고객을 위한 것입니다. 이 계약에서 Denny Cherry &amp; Associates 컨설팅은 Azure 환경 내에서 새로운 SQL Server Always On 가용성 그룹 솔루션을 빌드합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_au" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (1)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c34e350a-daf4-48b9-b56e-a5824a85dff5.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(1)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_au" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 호주 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_be" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (2)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/95a86a31-a3d8-4127-9d03-dc679f09b3bd.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(2)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_be" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 벨기에 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_nq" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (3)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/16929afa-b8ca-4e1e-b57e-6a60a3cb347b.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(3)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_nq" target="_blank">SQL Server 건강 검사: 3일 평가</a>: 이 제품은 뉴질랜드 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_ca" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (4)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c25da83e-4132-4f32-a0b7-c6520ea01611.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(4)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_ca" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 캐나다 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_fn" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (5)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9937ddc1-b4ab-4ed2-b636-27236929f2e2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가 (5)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_fn" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 유럽 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_nl" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (6)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a7144d3-5828-4956-b59e-25be4f58b9cc.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(6)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_nl" target="_blank">SQL Server 건강 검사: 3일 평가</a>: 이 제품은 네덜란드 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_fr" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (7)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7281be90-640e-4fd7-b0eb-f40d99be6319.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(7)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_fr" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 프랑스 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_uk" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (8)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/14d80a21-dd40-42a0-a155-cfadabf661df.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(8)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_uk" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 영국용입니다. 고객. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_dk" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (9)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db176120-d778-4347-b4c4-2d23e2f4819a.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(9)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_dk" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 덴마크 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_it" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (10)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0309ad5a-9124-4c7b-82aa-e37fc5080b71.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(10)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_it" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 이탈리아 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_de" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (11)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d6558068-f4ce-41f7-b80b-9c80239f8438.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(11)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_de" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 독일 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능을 향상시킬 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_jp" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (12)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/83c65adf-f5c6-438c-a25a-0c00e7d70447.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(12)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check_jp" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 일본 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능이 향상됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check" target="_blank"><img alt="SQL Server Health Check- 3-Day Assessment (13)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/61bd601b-836b-4996-ac24-25834119a4ca.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Server 상태 검사 - 3일 평가(13)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_health_check" target="_blank">SQL Server 상태 검사: 3일 평가</a>: 이 제품은 미국 고객을 위한 것입니다. 데니 체리 &amp; 어소시에이츠 컨설팅은 SQL Server 환경을 검토하고 변경 목록을 제공하므로 SQL Server 성능이 향상됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_two_node_cluster_build" target="_blank"><img alt="Two Node SQL Server Cluster- 2 Day Implementation (1)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/13bdaedb-9178-4ef7-892b-7c023ac53c50.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="두 노드 SQL Server 클러스터 - 2일 구현(1)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_two_node_cluster_build" target="_blank">두 노드 SQL Server 클러스터: 2일 구현</a>: 이 제품은 미국 고객을 위한 것입니다. 이 2일 프로세스 동안 Denny Cherry &amp; Associates Consulting의 전문가 팀은 Microsoft Azure 환경 내에서 새로운 SQL Server 장애 조치(failover) 클러스터를 만들고 빌드합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_two_node_cluster_build_au" target="_blank"><img alt="Two Node SQL Server Cluster- 2 Day Implementation (2)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cfcd2cd2-a214-4d19-9797-67f651560b16.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="두 노드 SQL Server 클러스터 - 2일 구현(2)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_two_node_cluster_build_au" target="_blank">두 노드 SQL Server 클러스터: 2일 구현</a>: 이 제품은 오스트레일리아 고객을 위한 것입니다. 이 2일 프로세스 동안 Denny Cherry &amp; Associates Consulting의 전문가 팀은 Microsoft Azure 환경 내에서 새로운 SQL Server 장애 조치(failover) 클러스터를 만들고 빌드합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_two_node_cluster_build_uk" target="_blank"><img alt="Two Node SQL Server Cluster- 2 Day Implementation (3)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a76822d-e7a4-4be7-b98d-a1f8e442566e.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="두 노드 SQL Server 클러스터 - 2일 구현(3)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_two_node_cluster_build_uk" target="_blank">두 노드 SQL Server 클러스터: 2일 구현</a>: 이 제품은 영국용입니다. 고객. 이 2일 프로세스 동안 Denny Cherry &amp; Associates Consulting의 전문가 팀은 Microsoft Azure 환경 내에서 새로운 SQL Server 장애 조치(failover) 클러스터를 만들고 빌드합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_two_node_cluster_build_ca" target="_blank"><img alt="Two Node SQL Server Cluster- 2 Day Implementation (4)" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a6d0a1a4-563a-4090-b365-b43bd94271eb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="두 노드 SQL Server 클러스터 - 2일 구현(4)" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/dennycherry_associates_consulting.sql_server_two_node_cluster_build_ca" target="_blank">두 노드 SQL Server 클러스터: 2일 구현</a>: 이 제품은 캐나다 고객을 위한 것입니다. 이 2일 프로세스 동안 Denny Cherry &amp; Associates Consulting의 전문가 팀은 Microsoft Azure 환경 내에서 새로운 SQL Server 장애 조치(failover) 클러스터를 만들고 빌드합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/beacon42.azquickmodernize_vm_xs" target="_blank"><img alt="XS VM Lift &amp; Shift- 1-Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a10b2ac-7a67-4e2b-b178-393b92537e16.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="XS VM 리프트 &amp; 시프트- 1일 구현" width="90"></a></p>
+     </td>
+     <td width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/beacon42.azquickmodernize_vm_xs" target="_blank">XS VM 리프트 &amp; Shift: 1일 구현</a>: 이 제품을 사용하면 마이그레이션할 서버를 선택하고 Beacon42 전문가가 Azure로 이동합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

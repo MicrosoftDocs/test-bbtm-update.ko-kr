@@ -1,0 +1,232 @@
+### YamlMime:Yaml
+ms.openlocfilehash: fffa5a126bb82d10b6a9055fe097c5671e496471
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897658"
+Slug: gs-series-vm-4
+Title: 새 GS-Series VM
+Summary: 최근 Microsoft Azure Virtual Machine용 Azure Premium Storage 지원하는 G 시리즈 변형인 GS 시리즈 릴리스를 발표했습니다.
+Content: >-
+  <p>어제 Microsoft Azure Virtual Machine에 대한 Azure Premium Storage 지원하는 G 시리즈의 변형인 GS 시리즈 릴리스를 발표했습니다. GS 시리즈는 G 시리즈의 기능을 Azure Premium Storage 성능과 결합하여 두 세계의 최고를 제공하고 가장 까다로운 워크로드에 이상적인 솔루션을 제공합니다. GS 시리즈는 최대 64TB의 디스크를 단일 VM에 연결하고 디스크 대역폭의 초당 최대 2,000MB를 허용합니다.</p>
+
+
+  <h2>GS-Series 크기 세부 정보</h2>
+
+
+  <table border="0" cellpadding="2" cellspacing="0" width="522">
+   <tbody>
+    <tr>
+     <td valign="top" width="94">크기</td>
+     <td valign="top" width="47">코어</td>
+     <td valign="top" width="62">메모리</td>
+     <td valign="top" width="61">로컬 SSD Storage(GB)</td>
+     <td valign="top" width="58">캐시 크기</td>
+     <td valign="top" width="55">최대 디스크 IOPS</td>
+     <td valign="top" width="91">Cache=None을 사용하는 최대 디스크 대역폭(초당 MB)</td>
+     <td valign="top" width="52">Cache=ReadOnly를 사용하는 최대 디스크 대역폭(초당 MB)</td>
+    </tr>
+    <tr>
+     <td valign="top" width="94">Standard_GS1</td>
+     <td valign="top" width="47">
+     <p align="center">2</p>
+     </td>
+     <td valign="top" width="62">
+     <p align="center">28</p>
+     </td>
+     <td valign="top" width="61">
+     <p align="center">56</p>
+     </td>
+     <td valign="top" width="58">
+     <p align="center">264</p>
+     </td>
+     <td valign="top" width="55">
+     <p align="center">5,000</p>
+     </td>
+     <td valign="top" width="91">
+     <p align="center">125</p>
+     </td>
+     <td valign="top" width="52">
+     <p align="center">100</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="94">
+     <p align="center">Standard_GS2</p>
+     </td>
+     <td valign="top" width="47">
+     <p align="center">4</p>
+     </td>
+     <td valign="top" width="62">
+     <p align="center">56</p>
+     </td>
+     <td valign="top" width="61">
+     <p align="center">112</p>
+     </td>
+     <td valign="top" width="58">
+     <p align="center">528</p>
+     </td>
+     <td valign="top" width="55">
+     <p align="center">10000</p>
+     </td>
+     <td valign="top" width="91">
+     <p align="center">250</p>
+     </td>
+     <td valign="top" width="52">
+     <p align="center">200</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="94">
+     <p align="center">Standard_GS3</p>
+     </td>
+     <td valign="top" width="47">
+     <p align="center">8</p>
+     </td>
+     <td valign="top" width="62">
+     <p align="center">112</p>
+     </td>
+     <td valign="top" width="61">
+     <p align="center">224</p>
+     </td>
+     <td valign="top" width="58">
+     <p align="center">1056</p>
+     </td>
+     <td valign="top" width="55">
+     <p align="center">20,000</p>
+     </td>
+     <td valign="top" width="91">
+     <p align="center">500</p>
+     </td>
+     <td valign="top" width="52">
+     <p align="center">400</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="94">
+     <p align="center">Standard_GS4</p>
+     </td>
+     <td valign="top" width="47">
+     <p align="center">16</p>
+     </td>
+     <td valign="top" width="62">
+     <p align="center">224</p>
+     </td>
+     <td valign="top" width="61">
+     <p align="center">448</p>
+     </td>
+     <td valign="top" width="58">
+     <p align="center">2112</p>
+     </td>
+     <td valign="top" width="55">
+     <p align="center">40,000</p>
+     </td>
+     <td valign="top" width="91">
+     <p align="center">1,000</p>
+     </td>
+     <td valign="top" width="52">
+     <p align="center">800</p>
+     </td>
+    </tr>
+    <tr>
+     <td valign="top" width="94">
+     <p align="center">Standard_GS5</p>
+     </td>
+     <td valign="top" width="47">
+     <p align="center">32</p>
+     </td>
+     <td valign="top" width="62">
+     <p align="center">448</p>
+     </td>
+     <td valign="top" width="61">
+     <p align="center">896</p>
+     </td>
+     <td valign="top" width="59">
+     <p align="center">4224</p>
+     </td>
+     <td valign="top" width="56">
+     <p align="center">80,000</p>
+     </td>
+     <td valign="top" width="94">
+     <p align="center">2,000</p>
+     </td>
+     <td valign="top" width="63">
+     <p align="center">1,600</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><br>
+
+  이러한 크기는 프로세서, 메모리 및 가격 책정의 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-size-specs/#standard-tier-g-series">G 시리즈 Virtual Machine 크기와</a> 동일합니다. DS 시리즈와 마찬가지로 각 GS 시리즈 VM은 Blobcache라는 구성 요소에 의해 관리되는 고정된 양의 SSD를 할당하여 Premium Storage 사용하여 영구 디스크에 낮은 대기 시간, 높은 처리량 캐시를 제공합니다. 따라서 각 GS-Series VM은 G 시리즈와 비교하여 더 적은 양의 로컬 SSD 스토리지를 할당합니다.</p>
+
+
+  <p>캐싱 아키텍처에 대한 자세한 내용은 <a href="https://azure.microsoft.com/en-us/blog/azure-premium-storage-now-generally-available-2/">Azure Premium Storage(이제 일반 공급)</a>를 참조&nbsp;하세요. 현재 이러한 Virtual Machine 크기는 미국 서부, 미국 동부 2 및 서유럽에서만 사용할 수 있습니다.</p>
+
+
+  <blockquote>
+
+  <p>참고: GS-Series VM은 A 시리즈, D 시리즈 또는 DS-Series VM과 동일한 클라우드 서비스에 있을 수 없습니다. 지역 가상 네트워크인 경우 이러한 서로 다른 VM을 동일한 <a href="https://azure.microsoft.com/blog/2014/05/14/regional-virtual-networks">Virtual Network </a>에 배치할 수 있습니다. 또한 최적의 성능을 발휘하려면 뛰어난 IO를 최적화해야 할 수 있으며, 애플리케이션 성능은 다를 수 있습니다.</p>
+
+  </blockquote>
+
+
+  <h2>GS-Series Virtual Machine 만들기</h2>
+
+
+  <p><a href="https://portal.azure.com/">Azure Preview 포털</a>로 이동하여 새로 만들기(+)를 선택하고 즐겨찾는 OS 또는 VM 이미지를 선택합니다. 가격 책정 계층을 클릭하고 Standard_GS5 Virtual Machine 크기를 선택합니다. 필요한 구성 정보를 지정하고 만들기를 누릅니 <strong>다</strong>.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/74cc0bce-0a22-4cba-95a1-7703f701fe92.jpg"><img alt="Select-Pricing-Tier_thumb1" border="0" height="405" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5fe65acb-9b9d-43d0-ae9f-25fae1e148db.jpg" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; float: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="Select-Pricing-Tier_thumb1" width="614"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>기존 Virtual Machine을 GS-Series Virtual Machine으로 변환</h2>
+
+
+  <p>기존 DS-Series Virtual Machine을 GS-Series Virtual Machine으로 변환하려면 아래 단계를 참조하세요.</p>
+
+
+  <ol>
+   <li>디스크를 삭제하지 않고 기존 DS-Series Virtual Machine을 삭제합니다.</li>
+   <li>새 GS-Series Virtual Machine을 만듭니다.</li>
+   <li>데이터 디스크를 GS-Series Virtual Machine에 다시 연결합니다.</li>
+  </ol>
+
+
+  <p>GS-Series Virtual Machine으로 크기 조정은 기존 G 시리즈 Virtual Machine에 대해서만 지원됩니다. 다음 단계를 수행하세요.</p>
+
+
+  <ol>
+   <li>기존 G 시리즈 가상 머신을 중지합니다.</li>
+   <li>데이터 디스크를 분리합니다.</li>
+   <li>기존 데이터 디스크를 Premium Storage 계정에 복사합니다.</li>
+   <li>G 시리즈 Virtual Machine의 크기를 GS-Series Virtual Machine으로 조정합니다.</li>
+   <li>Premium Storage 계정에서 디스크를 연결합니다.</li>
+  </ol>
+
+
+  <h2>linux on GS-Series</h2>
+
+
+  <p>DS 시리즈와 마찬가지로 GS-Series Linux 가상 머신도 지원합니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage-preview-portal/#using-linux-vms-with-premium-storage">Premium Storage Linux VM 사용을</a> 참조하세요.</p>
+
+
+  <p>CentOS 7.x에서 VM에 알려진 문제가 <a href="https://bugzilla.redhat.com/show_bug.cgi?id=1235523">https://bugzilla.redhat.com/show_bug.cgi?id=1235523</a>발생할 수 있습니다. 콘솔 출력을 사용하지 않도록 설정하면 문제가 해결됩니다.</p>
+
+
+  <p>Oracle 7.0에서 Premium Storage Disks를 사용하여 VM을 업데이트하고 구성하는 지침을 받으려면 지원에 문의하세요.</p>
+
+
+  <h2>자세한 정보</h2>
+
+
+  <p>GS-Series VM 크기 및 기타 Azure VM 크기에 대한 자세한 내용은 다음 페이지를 참조하세요. <a href="https://msdn.microsoft.com/en-us/library/azure/dn197896.aspx">자세한 내용은 Virtual Machine 및 Azure용 클라우드 서비스 크기</a>입니다.</p>
+
+
+  <p>Premium Storage 대한 자세한 내용은 <a href="https://go.microsoft.com/fwlink/?LinkId=521898">Premium Storage 개요</a>를 참조하세요.</p>

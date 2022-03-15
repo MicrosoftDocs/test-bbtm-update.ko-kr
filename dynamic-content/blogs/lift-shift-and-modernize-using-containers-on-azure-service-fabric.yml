@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: dcae77952e03b5ee8dbb6794e341b600966aec97
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897957"
+Slug: lift-shift-and-modernize-using-containers-on-azure-service-fabric
+Title: Azure Service Fabric 컨테이너를 사용하여 리프트, 시프트 및 현대화
+Summary: Azure Service Fabric 핵심 Azure 인프라뿐만 아니라 비즈니스용 Skype, Azure와 같은 다른 Microsoft 서비스 구동하는 기본 기술인 분산 시스템 플랫폼입니다.
+Content: >-
+  <p>Azure Service Fabric 핵심 Azure 인프라뿐만 아니라 비즈니스용 Skype, Azure Cosmos DB, Azure SQL Database, Dynamics 365, Cortana 같은 다른 Microsoft 서비스 구동하는 기본 기술인 분산 시스템 플랫폼입니다. , 그리고 더 많은. 이를 통해 Windows 및 Linux용 확장 가능한 마이크로 서비스 및 컨테이너 애플리케이션을 쉽게 빌드하고 관리할 수 있습니다. Service Fabric 이제 Ignite 컨퍼런스에서 Microsoft Build 및 <a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-service-fabric-on-linux/" target="_blank">Ubuntu Linux 16.04</a>에서 <a href="https://azure.microsoft.com/en-us/blog/announcing-windows-server-container-orchestration-with-azure-service-fabric/" target="_blank">Windows Server 2016</a> 대한 일반 공급 발표와 함께 몇 달 동안 프로덕션 시나리오에 대한 컨테이너 오케스트레이션을 지원했습니다. Ignite에서는 2<a href="https://youtu.be/Lv8fDiTNHjk?t=2587" target="_blank">분 안에 3,500개의 노드에 걸쳐 있는 클러스터에 백만 개의 컨테이너</a>를 예약하고 배치하는 방법을 보여 주었는데, 이는 Service Fabric 성능과 규모에 대해 걱정할 필요가 없다는 것을 의미합니다. Well&rsquo;은 곧이에 대한 자세한 게시물을 가지고있다.</p>
+
+
+  <p>이 게시물에서 well&rsquo;은 Service Fabric 컨테이너 오케스트레이션 기능 중 일부를 호출하고 곧 제공될 내용을&rsquo; 살펴봅니다. 많은 고객이 리프트 앤 시프트에 이어 <a href="https://channel9.msdn.com/Events/Connect/2017/G100" target="_blank">애플리케이션 현대화를</a> 살펴보고 있으며, Service Fabric 두 시나리오 모두에 대해 일류 지원을 제공합니다.</p>
+
+
+  <h2>리프트, 시프트 및 현대화</h2>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/azureservicefabric/2017/10/18/service-fabric-customer-profile-alaska-airlines/" target="_blank">알래스카 항공</a> 및 <a href="https://blogs.msdn.microsoft.com/azureservicefabric/2017/09/22/service-fabric-customer-profile-abbyy/" target="_blank">ABBYY</a>와 같은 많은 고객은 Windows Server 컨테이너를 사용하여 Service Fabric 사용하여 워크로드를 클라우드로 리프트 앤 시프트하고 있습니다. 리프트 앤 시프트를 사용하면 코드를 최소한으로 변경할 수 있습니다. Service Fabric 코드를 변경할 필요가 없는 DNS 이름을 사용하여 컨테이너 간의 통신을 지원하는 기본 제공 DNS <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-dnsservice" target="_blank">서비스를</a> 제공합니다. 이렇게 하면 다중 컨테이너 애플리케이션을 쉽게 배포하고 애플리케이션 간에 통신할 수 있습니다.</p>
+
+
+  <p>Service Fabric 고유의 애플리케이션 및 서비스 매니페스트 외에도 컨테이너 서비스를 설명하는 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-docker-compose" target="_blank">Docker Compose</a> 매니페스트를 기본적으로 지원합니다. 리프트 앤 시프트는 일반적으로 기존 서비스를 VM에서 컨테이너로 이동하는 것을 수반합니다. <strong> </strong>모든 서비스(예: 웹 사이트)가 충돌을 일으킬 수 있는 동일한 포트를 수신 대기하고 있는 것일 수 있습니다. Service Fabric 열려 있는 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-networking-modes" target="_blank">네트워킹 모드를</a> 포함하여 &ldquo;&rdquo; 여러 네트워킹 모드를 제공하여 이러한 시나리오를 지원합니다. 여기서 각 컨테이너는 자체 IP 주소를 가져오므로 포트 충돌을 방지할 수 있습니다.</p>
+
+
+  <p>리프트 앤 시프트 연습은 운영 효율성뿐만 아니라 비용 절감을 위해 수행됩니다. Service Fabric 클러스터 리소스를 효율적으로 사용하기 위해 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-resource-manager-balancing" target="_blank">동적 리소스 분산</a>을 중심으로 구축된 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-resource-manager-introduction" target="_blank">오케스트레이터</a>입니다. 따라서 Service Fabric 항상 사용 가능한 노드 수에 걸쳐 컨테이너 서비스의 균형을 맞추고 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-programmatic-scaling" target="_blank">프로그래밍 방식으로</a> 클러스터를 확장할 수 있습니다. Service Fabric 제공하는 컨테이너의 고밀도는 클라우드로 마이그레이션할 때 상당한 비용을 절감합니다.</p>
+
+
+  <p>리프트 앤 시프트 시 주요 고려 사항은 클라우드에서 보안을 적용하는 것입니다. 컨테이너 보안을 위해 Service Fabric <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started-containers#configure-isolation-mode" target="_blank">Windows Hyper-V 컨테이너를 지원합니다</a>.<a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started-containers#configure-isolation-mode" target="_blank"> </a> 고객은 프로세스 격리 모드보다 더 나은 격리를 얻기 위해 컨테이너 내에서 타사 코드를 실행할 때 Hyper-V 격리 모드를 사용하는 것이 좋습니다. 리프트 앤 시프트를 추가로 지원하기 위해 Service Fabric Windows 컨테이너에 대한 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-securing-containers#set-up-gmsa-for-windows-containers" target="_blank">gMSA</a>(그룹 관리 서비스 계정)도 지원합니다. 또한 Service Fabric 컨테이너에 대한 액세스를 특정 인증서로 제공/제한하는 기본 제공 인증서 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-securing-containers" target="_blank">관리</a>가 있습니다.&nbsp;</p>
+
+
+  <p>클라우드로 원활하게 마이그레이션하기 위한 핵심은 좋은 진단 환경입니다. 모든 로그 드라이버를 사용할 수 있지만 Service Fabric Windows 및 Linux의 컨테이너 로그에 대한 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-oms-containers" target="_blank">OMS Log Analytics</a>와도 통합됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/45e17b98-7523-45de-bfcb-d2a3fc0827ab.gif"><img alt="Get started" height="720" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6204e5ca-f943-4de3-9d5d-d3b280f8c749.gif" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="시작" width="1352"></a></p>
+
+
+  <p>Service Fabric 컨테이너 서비스의 신속한 배포, 리소스 거버넌스, 가동 중지 시간 0 업그레이드, 볼륨 및 로그 드라이버와 같은 모든 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers" target="_blank">핵심 오케스트레이션 기능을</a> 지원하지만, <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started-containers#configure-the-runtime-to-remove-unused-container-images" target="_blank">컨테이너 이미지를 정리</a>하여 디스크 공간을 복구하고 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-get-started-containers#configure-time-interval-before-container-is-force-terminated" target="_blank">컨테이너에 대한 정상적인 종료</a>를 구성하는 기능과 같은 몇 가지 유틸리티 기능도 포함합니다.</p>
+
+
+  <p>새 클라우드 네이티브 서비스를 추가하여 애플리케이션을 현대화하는 경우 키트에 추가 도구가 필요합니다. Service Fabric 이러한 시나리오에 대해 잘 설명했습니다. Service Fabric 기본 제공 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-connect-and-communicate-with-services" target="_blank">명명 서비스와</a> 같이 컨테이너 통신에 최적화된 기능으로 컨테이너를 개발하고 디버그하는 데 도움이 되는 플랫폼(Windows, Linux 및 OSX)에서 IDE 지원과 같은 광범위한 기능을 제공합니다.</p>
+
+
+  <h2>Were&rsquo; 지속적으로 혁신</h2>
+
+
+  <p>지금, 곧 릴리스에 오는 것에&rsquo; 대해. &rsquo;컨테이너 로그 및 컨테이너별 보기를 표시하도록 <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-visualizing-your-cluster" target="_blank">Service Fabric Explorer</a> UI를 확장합니다. 컨테이너 주소의 고정성에 따라 시나리오의 경우 Service Fabric 컨테이너가 한 VM에서 다른 VM으로 이동하는 경우에도 컨테이너당 안정적인 IP를 곧 지원합니다. 곧 네트워크 격리 기능을 사용하여 애플리케이션당 전용 vNET을 만들 수 있습니다. Azure 및 Service Fabric 리프트 앤 시프트에 적합한 선택으로 만들기 위해 컨테이너 그룹 지원 및 Azure Files에 대한 기본 제공 볼륨 드라이버와 같은 더 많은 기능이 곧 제공될 예정입니다.</p>
+
+
+  <p><a href="https://youtu.be/OjhOZkql4uE?t=2385" target="_blank">데이터 인식 컨테이너 오케스트레이터</a>로서 필요에 따라 상태 저장소를 리프트 앤 시프트하고 스케일 아웃하도록 돕기 위해 well&rsquo;은 곧 Service Fabric 상태 저장소를 사용하여 기본 제공 HA 볼륨 드라이버를 제공하고 지능형 라우팅과 페어링합니다. 최대 성능을 추출할 수 있도록 컨테이너 내의 상태 저장소에 액세스하는 간단한 프로그래밍 모델도 계획되어 있습니다.&nbsp;</p>
+
+
+  <p>우리는 Service Fabric 사용하는 사람들의 의견을 듣고 싶어요. 잘 작동하는 것과&rsquo; <a href="https://github.com/Azure/service-fabric-issues/issues" target="_blank">그렇지 않은 것을&rsquo; </a> 알려주세요. <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-quickstart-containers" target="_blank">문서를</a> 읽고, Service Fabric 사용하는 <a href="https://blogs.msdn.microsoft.com/azureservicefabric/tag/customer-profile/" target="_blank">고객으로부터 배우고</a>, <a href="https://aka.ms/tryservicefabric" target="_blank">무료 Azure 클러스터에서 사용해 보세요. </a> 자세한 내용은 <a href="https://blogs.msdn.microsoft.com/azureservicefabric/2017/11/09/service-fabric-community-qa-18th-edition/" target="_blank">월별 커뮤니티 통화를</a> 확인하세요.&nbsp;</p>

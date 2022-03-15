@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a5b972557bda2512202874cf9625a74d9cbed601
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897679"
+Slug: exceedra-outlines-its-proof-of-concept-project-with-windows-azure
+Title: Exceedra는 Windows Azure를 사용하여 개념 증명 Project 간략하게 설명합니다.
+Summary: 한 회사의 Windows Azure 경험에 대해 알아보려면 새 Channel 9 비디오인 "Windows Azure Learnings - Exceedra의 3주 개념 증명"을 확인해야 합니다. ...
+Content: <p><a target="_blank" href="https://microsoft.com/windowsazure">한 회사의 Windows Azure</a> 경험에 대해 알아보려면 새 Channel 9 비디오인 "<a target="_blank" href="https://channel9.msdn.com/posts/David+Gristwood/Windows-Azure-learnings-Exceedras-3-week-Proof-of-Concept/">Windows Azure Learnings - Exceedra의 3주 개념 증명</a>"&nbsp;을 확인해야 합니다. 이 문서에서 Microsoft의 <a target="_blank" href="https://blogs.msdn.com/b/david_gristwood/">David Gristwood</a>는 영국의 MTC(Microsoft 기술 센터)에서 Windows Azure와 함께 3주간의 "개념 증명" 프로젝트에서 자신의 경험과 학습에 대해 <a target="_blank" href="https://www.exceedra.com/">Exceedra</a>와 이야기합니다.&nbsp; 이 강연에서 Exceedra의 줄스 배드먼과 댄 지위키(Dan Zywicki)는 Windows Azure로 이전하는 동기, 그들이 내놓은 아키텍처 및 몇 가지 디자인 결정에 대해 설명합니다.&nbsp; 행복한 보기!</p>

@@ -1,0 +1,195 @@
+### YamlMime:Yaml
+ms.openlocfilehash: abc78e9550ee2d001111c2196d713981d706ba1b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913182"
+Slug: azure-app-preview
+Title: Azure 앱 공개 미리 보기 소개
+Summary: 언제 어떤 일이 일어날지 항상 예측할 수는 없지만 준비할 수 있습니다. Azure 모바일 앱을 사용하면 언제 어디서나 Azure 리소스에 &ndash; 계속 연결할 수 있습니다. Azure 리소스의 상태 및 중요 메트릭을 확인하고, 중요한 상태 문제에 대한 알림 및 경고를 받고, 간단한 작업을 수행하여 일반적인 문제를 해결하고, Azure Cloud Shell에서 강력한 스크립트를 실행합니다(곧 제공 예정).
+Content: >-
+  <p>그것은 금요일 오후와 모든&#39;잘 될&#39;. 일정에 모임이 없으며 한 주 동안 할 일 목록을 이미 완료한&#39;. &#39;할 일이 아무것도 남아 있지만, 오른쪽, 하루의 나머지를 가지고? 물론, 당신은 중간 집과 전화 링에 다시&#39;... 업무에 중요한 서비스가 배꼽 위로 가기로 결정했고, 이제 사무실로 돌아가야 합니다.</p>
+
+
+  <p>언제 어떤 일이 일어날지 항상 예측할 수는&#39;있지만 준비할 수 있습니다. 이&#39;새로운 Azure 모바일 앱 미리 보기가 제공되는 위치입니다. <strong>언제 어디서나 Azure 리소스에 연결 상태를 유지합니다 &ndash; .</strong></p>
+
+
+  <ul>
+   <li>Azure 리소스의 상태 및 중요 메트릭 확인</li>
+   <li>중요한 상태 문제에 대한 알림 및 경고 가져오기</li>
+   <li>간단한 작업을 수행하여 일반적인 문제 해결</li>
+   <li>앱에서 강력한 Azure Cloud Shell 스크립트 실행(출시 예정)</li>
+  </ul>
+
+
+  <p>Azure 앱은 필요할 때 사용자와 함께 하며 예측할 수 없는 순간을 겪을 준비가 되어 있어 원치 않는 사무실로 돌아갈 수 있습니다. 그러나, 그것은 단지&#39;오늘 사용할 수있는 무엇의 표면을 긁어 특히 로드맵에&#39;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-07-favs.png"><img alt="Favorites tab gives you quick access to your most important resources" border="0" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-07-favs.png" width="216"></a> <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-08-notifications.png"><img alt="View Azure health and resource metric alerts on the Notifications tab" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-08-notifications.png" width="216"></a> <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-11-shell.png"><img alt="Azure Cloud Shell in the mobile app" border="0" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-11-shell.png" width="216"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>즐겨찾는 리소스는 탭합니다.</h2>
+
+
+  <p>Azure 앱은 모든 <em></em> 서비스의 <em>모든</em> 구독 리소스를 주머니에 넣습니다. 모든 리소스 및 리소스 그룹을 스크롤하거나, 이름으로 검색하거나, 리소스 종류별로 필터링하여 필요한 리소스를 찾습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-01-subs.png"><img alt="Selcting your subscription" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-01-subs.png" width="216"></a> <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-02-search.png"><img alt="Search for resources and resource groups by name" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-02-search.png" width="216"></a> <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-03-typefilter.png"><img alt="Filter resources by type" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-03-typefilter.png" width="216"></a></p>
+
+
+  <p>각 리소스에는 해당하는 경우 다음 정보가 포함됩니다.</p>
+
+
+  <ul>
+   <li>상태</li>
+   <li>전체 활동 로그에 대한 링크가 있는 지난 주의 오류 수</li>
+   <li>중요 속성(Essentials)</li>
+   <li>주요 사용 메트릭</li>
+   <li>관련 참고 자료</li>
+   <li>모든 리소스 속성</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-04-vm.png"><img alt="Virtual machine details" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-04-vm.png" width="216"></a> <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-05-web.png"><img alt="Web app details" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-05-web.png" width="216"></a> <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-06-sql.png"><img alt="SQL database details" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-06-sql.png" width="216"></a></p>
+
+
+  <p>구독 및 리소스가 많은 사용자의 경우 올바른 리소스로 스크롤하고 필터링하면 약간 지루할 수 있습니다. 즐겨찾기 목록에 주의할 리소스를 추가하여 살짝 밀기 및 탭을 저장합니다. 리소스를 열고 별을 탭한 다음 이동합니다. 다음에 앱을 열면 즐겨 <strong>찾기 </strong>탭에서 시작할&#39;있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-07-favs.png"><img alt="Favorites tab gives you quick access to your most important resources" border="0" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-07-favs.png" width="216"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>개인 설정된 알림 및 경고</h2>
+
+
+  <p>클라우드에서 비즈니스를 구축하는 가장 중요한 측면은 모든 것이 작동 및 실행될&#39;있고 고객이 예기치 않은 이벤트의 영향을 받지&#39;있다는 자신감과 지식일 것입니다. Azure 앱을 사용하면 추측할 필요가&#39;. 리소스에 대해 다시 모니터링할&#39;있는 Azure 상태 경고 및 중요한 메트릭의 개인 설정된 목록에 대한 알림 탭을 열기만 하면 됩니다.</p>
+
+
+  <p>선택한 구독의 리소스가 지난 주 동안 Azure 상태 이벤트의 영향을 받은 경우 <strong>알림 </strong>탭에 나열된 세부 정보가&#39;. 모든 상태 경고에는 다음이 포함됩니다.</p>
+
+
+  <ul>
+   <li>상태</li>
+   <li>영향을 받은 구독에 연결</li>
+   <li>최신 통신 세부 정보</li>
+   <li>이벤트에 고유한 추적 ID</li>
+   <li>영향을 받은 위치 목록</li>
+   <li>영향을 받은 서비스 목록</li>
+   <li>지난 주 동안의 상태에 대한 간략한 기록</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-08-notifications.png"><img alt="View Azure health and resource metric alerts on the Notifications tab" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-08-notifications.png" width="216"></a> <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-09-health.png"><img alt="Azure health event details" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-09-health.png" width="216"></a></p>
+
+
+  <p>목록에서 사용자 지정 리소스 메트릭 경고 규칙도 찾을&#39;있습니다. 각 메트릭 경고에는 다음이 포함됩니다.</p>
+
+
+  <ul>
+   <li>상태(활성화 또는 해결됨)</li>
+   <li>관련 리소스에 연결</li>
+   <li>지정된 경우 경고 규칙에 대한 설명</li>
+   <li>지난 주 동안의 상태에 대한 간략한 기록</li>
+  </ul>
+
+
+  <p><strong>알림 </strong>탭에서 메트릭 경고를 받는 것 외에도 리소스 세부 정보를 방문할 때 이러한 경고에 대한 알림을 받을&#39;있습니다. 알림을 탭하여 세부 정보를 엽니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-10-alert.png"><img alt="Resource metric alert details" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-10-alert.png" width="216"></a> <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-04-vm.png"><img alt="Virtual machine details with a metric alert" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-04-vm.png" width="216"></a></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>일반적인 문제 신속하게 해결</h2>
+
+
+  <p>많은 서비스는 Azure 앱에서 리소스에 대한 일반적인 문제를 해결하는 데 도움이 되는 간단한 명령을 제공합니다.</p>
+
+
+  <ul>
+   <li><strong>Analysis Services</strong> 서버 일시 중단 및 다시 시작</li>
+   <li>브라우저에서 <strong>API Management</strong> 포털 열기</li>
+   <li><strong>App Service</strong> 웹앱 및 배포 슬롯 시작, 중지 및 다시 시작</li>
+   <li><strong>App Service</strong> 환경 시작 및 중지</li>
+   <li>계획 또는 환경에서 모든 <strong>App Service</strong> 웹앱 다시 시작</li>
+   <li>브라우저에서 <strong>App Service</strong> 웹앱 및 배포 슬롯 열기</li>
+   <li><strong>Content Delivery Network</strong> 엔드포인트 시작 및 중지</li>
+   <li><strong>클라우드 서비스</strong> 슬롯 시작, 중지 및 교환</li>
+   <li>브라우저에서 <strong>HDInsight</strong> 포털 열기</li>
+   <li>Operations Management Suite 앱에서 <strong>Log Analytics</strong> 작업 영역 열기</li>
+   <li><strong>논리 앱</strong> 워크플로 사용 및 사용 안 함</li>
+   <li><strong>Scheduler</strong> 작업 컬렉션 사용 및 사용 안 함</li>
+   <li><strong>Stream Analytics</strong> 작업 시작 및 중지</li>
+   <li><strong>가상 머신</strong> 시작, 중지 및 다시 시작</li>
+   <li>RDP 앱을 사용하여 <strong>가상 머신</strong>을 Windows 커넥트</li>
+   <li><strong>가상 머신 확장 집합</strong> 인스턴스 시작, 중지 및 다시 시작</li>
+   <li>브라우저에서 <strong>Visual Studio Team Services</strong> 계정 열기</li>
+  </ul>
+
+
+  <p>물론, 더 많은 길에 있습니다. 모바일 작업자를 위한 도우미 앱인 Azure 앱은 Azure Portal의 모든 기능을 포함하지&#39;. 하지만 이동 중일 때 가장 필요한 기능을 제공하기를&#39;있습니다. <a href="https://aka.ms/azureapp/feedback">피드백 포럼</a>에서 가장 유용한 것이 무엇인지 알려주시고 앞으로 몇 주 및 몇 달 동안 업데이트를 다시 확인하는 것을 잊지&#39;.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>주머니에 Azure Cloud Shell(출시 예정)</h2>
+
+
+  <p>나처럼 스크립팅 및 자동화에 대한 열정이&#39;경우 Azure Portal에서 Azure Cloud Shell을 좋아할&#39;있습니다. Azure CLI 또는 Azure PowerShell(출시 예정)를 선호하든 Cloud Shell은 개인 설정된 작업 영역입니다. cURL, Git 및 Vim과 같은 관련 유틸리티뿐만 아니라 <em>모든</em> Azure 명령줄 도구를 제공합니다. 그리고&#39;충분하지 않은 경우 어디를 가든 Cloud Shell을 함께 사용할 수&#39;있습니다.</p>
+
+
+  <p>포털에서 세션을 시작하고 사무실에서&#39;때 중단한 위치를 선택합니다. Cloud Shell은 세션 및 여러 디바이스에서 $Home 디렉터리에서 코드, 구성 및 활동을 유지합니다. 물론 디바이스 간에 진행 중인 작업을 저장하는 것이 흥미로울 수 있습니다. Azure 모바일 앱의 기능을 사용하면 거의 모든 위치에서 $Home 디렉터리의 모든 스크립트에 액세스할 수&#39;있습니다. 복잡한 롤백 및 재배포 스크립트? 문제가 되지 않습니다. 필요한 경우 Azure 모바일 앱이 있습니다. 컴퓨터로 돌아갈 필요가 없으며, 더 나쁜 것은 사무실로 돌아갈 필요가 없습니다. <strong>Cloud Shell </strong>탭을 열고 이동합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-11-shell.png"><img alt="Azure Cloud Shell in the mobile app" border="0" height="384" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/AzureApp-Preview-11-shell.png" width="216"></a></p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/cloud-shell/overview">Azure Cloud Shell 개요</a>에서 자세히 알아봅니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <h2>이것은 시작에 불과합니다...</h2>
+
+
+  <p>4개의 퍼블릭 및 <a href="https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud">국가 클라우드</a> 환경(<a href="https://azure.microsoft.com/overview/azure-stack">Azure Stack</a>은 말할 것도 없음)에 걸쳐 <a href="https://azure.microsoft.com/services">거의 75개의 서비스를</a> 통해 Azure 모바일 앱은 앞으로 몇 주 및 몇 달 동안 풍부한 Azure 플랫폼에서 계속 발전하고 지원을 확장할 것입니다. 앱은 다음과 같은 간단한 임무로 모바일 시나리오에 계속 초점을 맞췄습니다.</p>
+
+
+  <ul>
+   <li>언제 어디서나 클라우드에 <strong>연결 유지</strong></li>
+   <li>중요한 알림 및 경고에 대한 <strong>정보 유지</strong></li>
+   <li>문제 해결 및 해결을 위한 빠른 작업으로 <strong>제어 유지</strong></li>
+  </ul>
+
+
+  <p>오늘 미리 보기 앱을 다운로드하고 <a href="https://aka.ms/azureapp/feedback">피드백 포럼</a>에서 다음으로 보고 싶은&#39;알려주세요! 업데이트에 대 한 눈을 밖으로 유지 하 고 최신 뉴스에 대 한 트위터에 따라<a href="https://twitter.com/azureapp">@AzureApp</a>. Azure 모바일 앱을 &ndash; 사용하여 Azure 리소스에 대한 상태, 중요한 메트릭 및 경고를 <em>가장 빠르게</em> 확인할 수 있기를 바랍니다.</p>
+
+
+  <div style="margin-top: 20px">
+
+  <div style="text-align: center; display: inline-block; padding-right: 20px"><a href="https://itunes.apple.com/us/app/microsoft-azure/id1219013620?ls=1&amp;mt=8"><img alt="Download it on the App Store" height="40" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/applestore.png" style="border-left-width: 0px; margin-bottom: 0px; border-right-width: 0px; border-bottom-width: 0px; border-top-width: 0px"></a><br>
+
+  &nbsp;</div>
+
+
+  <div style="text-align: center; display: inline-block; padding-right: 20px"><a href="https://play.google.com/store/apps/details?id=com.microsoft.azure&amp;utm_source=azure-blog&amp;utm_campaign=preview-announcement"><img alt="Get it on Google Play" height="40" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/googlestore.png" style="border-left-width: 0px; margin-bottom: 0px; border-right-width: 0px; border-bottom-width: 0px; border-top-width: 0px"></a><br>
+
+  &nbsp;</div>
+
+
+  <div style="text-align: center; display: inline-block; padding-right: 20px"><img alt="Get it from Microsoft (coming soon)" height="40" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/microsoftstore.png" style="border-left-width: 0px; margin-bottom: 0px; border-right-width: 0px; border-bottom-width: 0px; border-top-width: 0px; opacity:0.5"><br>
+
+  <small style="font-size: 0.9em; color: #999">(출시 예정!)</small></div>
+
+  </div>

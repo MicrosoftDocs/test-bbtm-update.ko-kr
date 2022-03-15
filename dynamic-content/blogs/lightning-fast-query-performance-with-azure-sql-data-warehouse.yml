@@ -1,0 +1,54 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 98801c10991500a34e27fcc3c8b77f7cb83e484c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902112"
+Slug: lightning-fast-query-performance-with-azure-sql-data-warehouse
+Title: 'Azure SQL Data Warehouse를 사용하여 빠른 쿼리 성능 향상 '
+Summary: Azure SQL Data Warehouse는 모든 규모의 엔터프라이즈를 위한 빠르고 유연하며 안전한 분석 플랫폼입니다. 오늘 분산 쿼리 실행 계층의 향상된 기능을 통해 사용하도록 설정된 Azure SQL DW(SQL Data Warehouse) 고객의 쿼리 성능이 크게 향상되었다고 발표했습니다.
+Content: >-
+  <p>Azure SQL Data Warehouse는 모든 규모의 엔터프라이즈를 위한 빠르고 유연하며 안전한 분석 플랫폼입니다. 오늘 분산 쿼리 실행 계층의 향상된 기능을 통해 사용하도록 설정된 Azure SQL DW(SQL Data Warehouse) 고객의 쿼리 성능이 크게 <a href="https://azure.microsoft.com/en-us/blog/azure-sets-new-performance-benchmarks-with-sql-data-warehouse/" target="_blank">향상</a>되었다고 발표했습니다.</p>
+
+
+  <p>분석 워크로드 성능은 스토리지에 대한 I/O 대역폭과 분할 속도(순서 섞기 속도라고도 함)의 두 가지 주요 요인에 의해 결정됩니다. 이 이전 <a href="https://azure.microsoft.com/en-us/blog/adaptive-caching-powers-azure-sql-data-warehouse-performance-gains/" target="_blank">블로그 게시물</a>에서는 SQL DW가 NVMe 기반 로컬 스토리지를 활용하기 위해 관련 데이터를 캐시하는 방법을 설명했습니다. 이 블로그 게시물에서는 순서 섞기 속도가 어떻게 향상되었는지 확인하기 위해 SQL DW의 내부를 살펴보겠습니다.</p>
+
+
+  <p>데이터 이동은 쿼리를 실행하는 동안 분산 테이블의 일부가 다른 노드로 이동하는 작업입니다. 이 작업은 대상 노드에서 데이터를 사용할 수 없는 경우, 가장 일반적으로 테이블이 배포 키를 공유하지 않는 경우에 필요합니다. 가장 일반적인 데이터 이동 작업은 순서 섞기입니다. 순서를 섞는 동안 각 입력 행에 대해 SQL DW는 조인 열을 사용하여 해시 값을 계산한 다음 해당 해시 값을 소유하는 노드로 해당 행을 보냅니다. 조인의 한쪽이나 양쪽 모두 순서 섞기에 참여할 수 있습니다. 아래 다이어그램에는 테이블 T1과 T2 간 조인을 구현하는 순서 섞기가 나와 있으며, 조인 열 col2에는 두 테이블 모두 배포되어 있지 않습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b746cc2d-47c4-42fc-af9c-0c7184246ef1.png"><img alt="image" height="363" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f5828a06-ec14-4e85-8652-2e3ad8304823.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="이미지" width="623"></a></p>
+
+
+  <p>또 다른 기존의 데이터 이동 작업은 테이블 파트가 원본 노드에서 다른 모든 SQL DW 노드로 복사되는 브로드캐스트입니다(예: 차원 및 팩트 테이블을 조인할 때 일반적으로 차원 테이블이 브로드캐스트됨). SQL DW 쿼리 최적화 프로그램은 전송되는 행 수를 최소화하기 위해 적절한 데이터 이동 형식을 선택합니다.</p>
+
+
+  <p>지금까지 데이터 이동 작업은 아래 다이어그램에 표시된 SQL DMS(DW Data Movement Service) 구성 요소에 의해 수행되었습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/abd2a5eb-bc90-46f8-9859-ba45bdb916a8.png"><img alt="image" height="335" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/abc30cb9-1fd0-48d2-b7ea-39324dc7067b.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="이미지" width="595"></a></p>
+
+
+  <p>순서 섞기를 구현하기 위해 Data Movement Service는 SQL Server 엔진에서 행을 복사하고 해시한 다음 다른 노드의 적절한 DMS 인스턴스로 보냅니다. 여기서 DMS는 SQL Server BulkCopy API를 사용하여 행을 로컬 임시 테이블에 복사합니다. SQL Server 행을 읽는 것은 단일 스레드 작업이며 병목 상태가 될 수 있습니다.</p>
+
+
+  <p>이제 SQL DW는 데이터 이동을 SQL Server 엔진에 직접 통합합니다. 이 통합을 통해 SQL DW 데이터 이동은 사용 가능한 전체 다중 코어 병렬 처리의 이점을 활용하고 데이터 이동 작업에도 일괄 처리 모드 실행을 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/linux-and-windows-networking-performance-enhancements-accelerated-networking/" target="_blank">Azure Accelerated Networking</a>의 사용과 결합된 SQL DW는 노드당 초당 1GB까지 데이터를 이동할 수 있으므로 배포 키에 정렬되지 않은 테이블의 데이터를 조인하는 쿼리가 크게 향상됩니다. 아래 다이어그램은 SQL DW 인스턴트 데이터 이동 모드를 사용하는 SQL DW 작동 순서 섞기를 보여줍니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/22ef9724-d41b-411d-87ae-6bdfc4e2461d.png"><img alt="image" height="254" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1930f069-9565-4e9b-ad2a-3f64aa9ce79f.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="이미지" width="581"></a></p>
+
+
+  <p>SQL DW가 인스턴트 모드로 데이터를 이동하면 중간 결과가 생성되어 사용 가능한 모든 CPU 코어를 사용하여 필요한 모든 노드로 전송되므로 다중 코어 추세를 활용합니다. 데이터는 데이터 유효성 검사를 수행하는 엔진 프런트 도어와 SQL Server 교차하지 않으므로 행당 오버헤드를 최소화하면서 원격 노드&rsquo; 임시 데이터베이스에 직접 압축 일괄 처리 지향 행 형식으로 작성됩니다.</p>
+
+
+  <p>이 기능은 이제 SQL DW의 컴퓨팅 최적화 Gen2 계층의 모든 기존 및 신규 고객에게 제공됩니다. SQL DW 인스턴트 데이터 이동은 외부 데이터를 사용하지 않는 쿼리에 사용됩니다. PolyBase 쿼리는 데이터 이동 서비스를 계속 사용합니다. 데이터 볼륨과 더 빠른 인사이트에 대한 필요성이 증가함에 따라 모든 고객에게 최상의 쿼리 성능을 제공하기 위해 혁신을 위해 최선을 다하고 있습니다.</p>
+
+
+  <ul>
+   <li>Azure SQL Data Warehouse가 이 <a href="https://gigaom.com/report/data-warehouse-in-the-cloud-benchmark/" target="_blank">GigaOm 보고서에서</a> 업계 최고의 쿼리 성능을 제공하는 방법에 대해 자세히 알아보세요.</li>
+   <li>Azure SQL Data Warehouse를 <a href="https://azure.microsoft.com/en-us/services/sql-data-warehouse/" target="_blank">지금 무료로</a> 시작하세요.</li>
+  </ul>

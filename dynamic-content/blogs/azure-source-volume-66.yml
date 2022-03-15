@@ -1,0 +1,306 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f6d034d8cf3fe2e4576d2d2dc2b9083441b793e6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897746"
+Slug: azure-source-volume-66
+Title: Azure.Source - 볼륨 66
+Summary: Microsoft Azure Portal 2019년 1월 업데이트 Azure Firewall 뒤에 있는 VM용 Azure Backup; Azure 지도 및 훨씬 더 많은 드론에 대한 동적 임무 계획.
+Content: >-
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-monitor-logs-in-grafana-now-in-public-preview/?ocid=AID765057&amp;wt.mc_id=CFID0401">Grafana의 Azure Monitor 로그 - 현재 공개 미리 보기로 제공됩니다.</a></h3>
+
+
+  <p>Grafana는 40개가 넘는 데이터 원본과 훌륭한 대시보드 기능, 풍부한 시각화 및 통합을 제공합니다. 이제 Microsoft Azure Monitor 로그에 대한 Grafana 통합을 미리 보기로 사용할 수 있습니다. 이 통합은 이제 Azure Monitor 데이터 원본의 일부로 사용할 수 있는 새 Log Analytics 플러그 인을 통해 수행됩니다. 대시보드에 Grafana를 이미 사용하고 있는 경우&rsquo; 이 새로운 플러그 인을 사용하면 다양한 모니터링 요구 사항에 맞게 단일 창이 만들어질 수 있습니다. 새 플러그 인을 사용하면 Log Analytics에서 사용할 수 있는 모든 데이터(예: 가상 머신 성능, 보안, 최근 Log Analytics와 통합된 Azure Active Directory 및 사용자 지정 로그를 포함한 다른 많은 로그 유형과 관련된 로그)를 표시할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/hdinsight-now-supported-in-azure-cli/?ocid=AID765057&amp;wt.mc_id=CFID0401">HDInsight는 이제 Azure CLI에서 공개 미리 보기로 지원됨</a></h3>
+
+
+  <p>Microsoft Azure CLI의 HDInsight에 대한 지원은 이제 공개 미리 보기에서 사용할 수 있습니다. 새로운 HDInsight 명령 그룹을 추가하면 이제 익숙한 플랫폼 간 Azure CLI와 함께 제공되는 모든 기능과 이점을 활용하여 HDInsight 클러스터를 관리할 수 있습니다. 새로운 HDInsight 명령 그룹을 추가하면 이제 익숙한 플랫폼 간 Azure CLI와 함께 제공되는 모든 기능과 이점을 활용하여 HDInsight 클러스터를 관리할 수 있습니다. Azure HDInsight는 고객이 Apache Hadoop, Spark, Kafka 등을 비롯한 인기 있는 오픈 소스 프레임워크를 쉽게 실행할 수 있도록 하는 오픈 소스 분석을 위한 쉽고 비용 효율적인 엔터프라이즈급 서비스입니다.</p>
+
+
+  <h3>미리 보기로도 제공됩니다.</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/power-bi-embedded-analytics-aad-azure-sql-preview/?ocid=AID765057&amp;wt.mc_id=CFID0401">공개 미리 보기: SQL Database Azure AD 사용자를 위한 토큰 기반 ID</a></li>
+  </ul>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-sql-database-is-upgrading-the-infrastructure-for-monitoring-and-alerts-on-january-22-2019/?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure SQL Database: 모니터링 및 경고를 위한 업그레이드된 인프라</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-cognitive-services-custom-speech-model-hosting-resource-guid-change/?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure Cognitive Services 사용자 지정 음성 모델 호스팅 리소스 GUID 변경</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-azure-availability-zones-in-east-us-2/?ocid=AID765057&amp;wt.mc_id=CFID0401">일반 공급: 미국 동부 2의 Azure 가용성 영역</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/net-core-2-2-is-now-available-for-app-service-on-windows/?ocid=AID765057&amp;wt.mc_id=CFID0401">Windows App Service에 사용할 수 있는 .NET Core 2.2</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-migrate-is-now-available-in-asia-and-europe/?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure Migrate는 이제 아시아 및 유럽에서 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/power-bi-embedded-analytics-qanda-row-level-security/?ocid=AID765057&amp;wt.mc_id=CFID0401">Power BI Embedded Q&amp;를 지원합니다. 행 수준 보안이 있는 A</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/power-bi-embedded-analytics-capacity-workload-configuration-api/?ocid=AID765057&amp;wt.mc_id=CFID0401">용량 워크로드 구성을 위한 Power BI Embedded API</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/power-bi-embedded-analytics-status-api/?ocid=AID765057&amp;wt.mc_id=CFID0401">Power BI Embedded 상태 API는 용량에 대한 작업 영역 할당을 추적합니다.</a></li>
+  </ul>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-portal-january-2019-update/?ocid=AID765057&amp;wt.mc_id=CFID0401">Microsoft Azure Portal 2019년 1월 업데이트</a></h3>
+
+
+  <p>이번 달에&rsquo;는 방문 페이지의 탐색 편의성을 향상시키고, 대시보드 타일 기능에 추가하고, Azure Container Instances의 기능을 향상시키는 업데이트를 제공합니다. 새 Azure Portal 홈페이지는 Azure에 빠르고 쉽게 진입할 수 있는 지점이며 Azure.Source에 대한 링크를 포함하여 Azure의 새로운 항목을&rsquo; 최신 상태로 유지하는 데 도움이 됩니다. Azure Portal을 사용하면 <a href="https://preview.portal.azure.com?ocid=AID765057&amp;wt.mc_id=CFID0401">preview.portal.azure.com</a> 방문하여 미리 보기에서 기능을 테스트할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7bd50f4-8604-4288-a837-44639908248a.png"><img alt="Screenshot of the new Azure portal home page" border="0" height="383" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a7bd50f4-8604-4288-a837-44639908248a.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="새 Azure Portal 홈페이지" width="640"></a></p>
+
+
+  <h3>&nbsp;</h3>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/ai-is-the-new-normal-recap-of-2018/?ocid=AID765057&amp;wt.mc_id=CFID0401">AI는 새로운 정상입니다. 2018년 요약</a></h3>
+
+
+  <p>AI 서비스, 도구 및 프레임워크 및 인프라 전반에 걸쳐 2018년부터 주요 10가지 Azure AI 하이라이트를 한눈에 살펴보세요. AI는 디지털 트랜스포메이션을 촉매합니다. Microsoft는 개발자, 데이터 과학자 및 기업이 의미 있는 과제를 해결하기 위해 인간의 독창성을 강화하는 시스템을 빌드할 수 있도록 AI에 액세스할 수 있도록 합니다. AI는 새로운 정상입니다. Microsoft는 제품 및 서비스에 20년 이상의 AI 연구를 적용했습니다. 이제 모든 사용자가 Excel 및 Power BI 같은 단순하면서도 강력한 생산성 도구를 통해 이 AI에 액세스할 수 있습니다. 모든 사용자에게 AI를 제공하는 것을 지속적으로 지원하기 위해 Microsoft는 Power BI 위한 새로운 AI 기능을 도입했습니다. 이러한 기능을 사용하면 모든 Power BI 사용자가 데이터에 숨겨진 실행 가능한 인사이트를 검색하고 사용하기 쉬운 AI를 통해 더 나은 비즈니스 결과를 얻을 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/our-2019-resolution-help-you-transform-your-2008-server-applications-with-azure/?ocid=AID765057&amp;wt.mc_id=CFID0401">2019 해결 방법: Azure를 사용하여 2008 서버 애플리케이션을 변환하는 데 도움이 됩니다!</a></h3>
+
+
+  <p>Microsoft에서는 2008년 서버에&rsquo; 대한 지원이 종료되어 서버 새로 고침 과정을 어떻게 지원할 수 있는지 고민해 왔습니다. Azure가 2008년 서버 애플리케이션을 변환하기에 가장 적합한 3가지 이유는 보안, 혁신 및 비용 절감입니다. SQL Server 2008/R2에 대한 지원 종료는 2019년 7월 9일에 6개월도 채 남지 않았으며 2020년 1월 14일에 Windows Server 2008/R2에 대한 지원이 종료됩니다. Windows 7, Office 2010 및 Exchange Server 곧 확장 지원을 종료합니다. Microsoft와 파트너는 모든 단계에서 도움을 주기 위해 여기에 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-obtains-korea-information-security-management-system-k-isms-certification/?ocid=AID765057&amp;wt.mc_id=CFID0401">Microsoft Azure K-ISMS(Korea-Information 보안 관리 시스템) 인증을 획득합니다.</a></h3>
+
+
+  <p>Microsoft는 전 세계 조직이 국가, 지역 및 산업별 규정 요구 사항을 준수하도록 지원합니다. K-ISMS 인증은 한국인터넷보안국(KISA)에 의해 도입되었으며 엄격한 제어 요구 사항을 통해 지역 내 데이터의 보안 및 개인 정보를 보장하도록 설계되었습니다. 이 인증을 달성하면 한국의 Azure 고객은 주요 디지털 정보 자산의 보호를 위한 현지 법적 요구 사항을 보다 쉽게 준수하고 KISA 규정 준수 표준을 보다 쉽게 충족할 수 있습니다. KISA는 한국 내 정보 기술 인프라를 보호하기 위해 K-ISMS를 설립했습니다. 이를 통해 조직은 효과적인 위험 관리를 용이하게 하고 모범 사례 보안 조치를 적용할 수 있는 정보 보안 관리 시스템을 구현하고 운영할 수 있습니다.</p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/github-enterprise-support-and-automatic-github-service-connections-in-build-pipelines-sprint-146-update/?ocid=AID765057&amp;wt.mc_id=CFID0401">파이프라인의 GitHub Enterprise 지원 및 자동 GitHub 서비스 연결 - 스프린트 146 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-container-instances-memory-duration-and-vcpu-duration-guid-migration/?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure Container Instances 메모리 기간 및 vCPU 기간 GUID 마이그레이션</a></li>
+  </ul>
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-backup-for-virtual-machines-behind-an-azure-firewall?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure Firewall 뒤에 있는 가상 머신에 대한 Azure Backup</a></h3>
+
+
+  <p>2018년 6월에 공개 미리 보기로 제공된 Azure 백업 기능의 SQL Server Azure Backup에 대해 자세히 알아봅니다. 이 워크로드 백업 기능은 Azure IaaS VM에서 실행되는 SQL 서버를 백업하는 포괄적인 솔루션을 제공하기 위해 네이티브 SQL 백업 및 복원 API를 활용하는 인프라 없는 PAYG(종량제) 서비스로 빌드됩니다. Azure Backup은 Recovery Services 자격 증명 모음에 안전하게 저장하여 VM의 데이터를 보호합니다. Azure VM 내에서 실행되는 SQL 서버의 백업에는 백업을 업로드하고 모니터링 정보를 내보내기 위해 백업 확장이 Azure Backup 서비스와 통신해야 합니다. Azure Backup과 Azure Firewall은 서로 잘 보완하여 Azure의 리소스 및 데이터를 완벽하게 보호합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8da912f7-bb5c-448f-9120-87ba3c2aa8fe.png"><img alt="Screenshot of editing an application rule collection in Azure Backup" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8da912f7-bb5c-448f-9120-87ba3c2aa8fe.png" title="Azure Backup이 Azure VM에서 SQL 서버를 보호할 수 있도록 하는 샘플 규칙"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/create-alerts-to-proactively-monitor-your-data-factory-pipelines/?ocid=AID765057&amp;wt.mc_id=CFID0401">데이터 팩터리 파이프라인을 사전에 모니터링하는 경고 만들기</a></h3>
+
+
+  <p>조직은 데이터 통합 작업 실패의 위험과 다른 다운스트림 프로세스에 미치는 영향을 줄이려고 합니다. 데이터 통합 프로젝트를 모니터링하는 수동 접근 방식은 비효율적이며 시간이 많이 걸립니다. 따라서 조직은 전체 시스템에 영향을 미치기 전에 비효율성을 제거하고 문제를 파악하기 위해 데이터 통합 프로젝트를 모니터링하고 관리하는 자동화된 프로세스를 원합니다. 이제 조직은 데이터 통합 이벤트(성공/실패)에 대한 경고를 만들고 Azure Data Factory를 사용하여 사전에 모니터링하여 운영 생산성을 향상시킬 수 있습니다. 경고를 만들면 데이터 통합 프로젝트의 24/7 모니터링이 보장되며, 데이터가 손상되거나 다운스트림 프로세스에 영향을 미치기 전에 문제를 알릴 수 있습니다. 이렇게 하면 조직에서 더 민첩하고 전반적인 데이터 통합 프로세스에 대한 신뢰를 높일 수 있습니다. Azure Friday의 이 에피소드에 대해 자세히 알아보세요. <a href="https://channel9.msdn.com/Shows/Azure-Friday/Monitor-your-Azure-Data-Factory-pipelines-proactively-with-alerts?ocid=AID765057&amp;wt.mc_id=CFID0401">경고를 사용하여 Azure Data Factory 파이프라인을 사전에 모니터링합니다.</a></p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Monitor-your-Azure-Data-Factory-pipelines-proactively-with-alerts/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-iot-automatic-device-management-helps-deploying-firmware-updates-at-scale/?ocid=AID765057&amp;wt.mc_id=CFID0401">자동 디바이스 관리를 Azure IoT 대규모 펌웨어 업데이트를 배포하는 데 도움이 됩니다.</a></h3>
+
+
+  <p>Azure IoT Hub에서 자동 디바이스 관리는 전체 수명 주기를 통해 대규모 디바이스를 관리하는 반복적이고 복잡한 작업을 자동화합니다. Azure IoT DevKit OTA(무선) 펌웨어 업데이트 프로젝트는 자동 디바이스 관리의 훌륭한 구현입니다. 자동 디바이스 관리를 사용하여 해당 속성을 기반으로 디바이스 집합을 대상으로 지정하고, 원하는 구성을 정의하고, 범위에 나올 때마다 IoT Hub에서 디바이스를 업데이트하도록 할 수 있습니다. 이 게시물은 펌웨어 업데이트 사용 사례의 고유한 구현을 시작할 수 있는 몇 가지 방법을 강조 표시합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/pix2story-neural-storyteller-which-creates-machine-generated-story-in-several-literature-genre/?ocid=AID765057&amp;wt.mc_id=CFID0401">Pix2Story: 여러 문학 장르에서 기계로 생성된 스토리를 만드는 신경망 스토리텔러</a></h3>
+
+
+  <p>Microsofts&rsquo; AI Lab 프로젝트 중 하나인 Pix2Story는 Azure의 신경망 스토리텔러 웹 애플리케이션으로, 그림을 업로드하고 여러 문학 장르를 기반으로 기계에서 생성된 스토리를 가져올 수 있습니다. 아이디어는 업로드 된 그림에서 캡션을 얻고 장르와 그림을 기반으로 내러티브를 생성하기 위해 되풀이 신경망 모델에 공급하는 것입니다. 소스 코드는 사용자 고유의 모델을 학습할 수 있도록 GitHub 사용할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-data-explorer-plugin-for-grafana-dashboards/?ocid=AID765057&amp;wt.mc_id=CFID0401">Grafana 대시보드용 Azure Data Explorer 플러그 인</a></h3>
+
+
+  <p>Grafana는 시계열 분석을 시각화하도록 설계된 선도적인 오픈 소스 소프트웨어입니다. 데이터를 쿼리 및 시각화하고 이러한 시각화를 기반으로 대시보드를 만들고 공유할 수 있는 분석 및 메트릭 플랫폼입니다. Grafanas&rsquo;의 아름다운 시각화를 Azure Data Explorers&rsquo; 스냅 임시 쿼리와 결합하면 엄청난 양의 데이터에 대한 유용한 사용 가능성이 생성됩니다. 이 게시물에서는 Azure Data Explorer 데이터 세트 위에 대시보드를 빌드하기 위해 Grafana를 사용할 경우의 이점을 보여 줍니다. Grafana 및 Azure Data Explorer 팀은 직관적이고 강력한 Kusto 쿼리 언어를 사용하여 Azure Data Explorer에서 데이터에 연결하고 시각화할 수 있는 전용 플러그 인을 만들었습니다. 분석 도구 및 서비스에 대한 추가 커넥터 및 플러그 인은 앞으로 몇 주 안에 추가될 예정입니다.</p>
+
+
+  <h3>추가 기술 콘텐츠</h3>
+
+
+  <ul>
+   <li><a href="https://dev.to/burkeholland/who-is-horsejs-1d3m">Who@horse_js</a></li>
+   <li><a href="https://towardsdatascience.com/text-annotation-on-a-budget-with-azure-web-apps-doccano-b29f479c0c54">Azure Web Apps &amp; Doccano를 사용하여 예산에 대한 텍스트 주석</a></li>
+   <li><a href="https://itnext.io/cognitive-services-api-i-need-your-clothes-boots-and-your-motorcycle-1216c36cfe8b">Cognitive Services API &mdash; 나는 당신의 옷, 부츠와 오토바이가 필요합니다</a></li>
+   <li><a href="https://medium.com/microsoftazure/azure-cosmos-db-functions-cookbook-shared-throughput-and-new-health-logs-818bc0591dd6">Azure Cosmos DB + Functions Cookbook &mdash; 공유 처리량 및 새 상태 로그</a></li>
+   <li><a href="https://rob.conery.io/2019/01/09/creating-a-massively-scalable-wordpress-site-on-azures-hosted-bits/">Azure&rsquo;에서 대규모 확장성 있는 WordPress 사이트 호스팅 비트 만들기</a></li>
+   <li><a href="https://www.javascriptjanuary.com/blog/running-node-apps-locally-and-in-the-cloud-with-docker-and-azure">Docker 및 Azure를 사용하여 로컬 및 클라우드에서 Node Apps 실행</a></li>
+   <li><a href="https://www.youtube.com/watch?v=H9wFFaytKLM">Cosmos DB Azure Database for MongoDB 만들기</a></li>
+   <li><a href="https://blog.revolutionanalytics.com/2019/01/azurer-packages-now-on-cran.html">CRAN에서 AzureR 패키지</a></li>
+  </ul>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3><a href="https://azpodcast.azurewebsites.net/post/Episode-262-Operationalizing-Cosmos-DB1?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure 팟캐스트 | 에피소드 262 - Cosmos DB 운영</a></h3>
+
+
+  <p>Microsoft의 수석 컨설턴트이자 Azure Cosmos DB의 전문가인 John Kozell은 특히 Enterprise 세계와 관련하여 그렇습니다. Azure Cosmos DB를 효과적으로 활용하고 규정 준수 및 운영 목표를 충족하기 위해 엔터프라이즈에서 수행해야 하는 사항에 대한 몇 가지 고유한 관점을 제공합니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode262.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Blocktalk/Azure-Blockchain-Workbench-1-6-Highlights?ocid=AID765057&amp;wt.mc_id=CFID0401">통화 | 차단 Azure Blockchain Workbench 1.6 하이라이트</a></h3>
+
+
+  <p>이 에피소드에서는 애플리케이션 버전 관리 및 문제 해결과 같은 Workbench 1.6에서 사용할 수 있는 몇 가지 새로운 기능에 대해 자세히 설명합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Blocktalk/Azure-Blockchain-Workbench-1-6-Highlights/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Build-workflows-with-Azure-IoT-Central-connector-for-Microsoft-Flow?ocid=AID765057&amp;wt.mc_id=CFID0401">사물 인터넷 표시 | Microsoft Flow Azure IoT Central 커넥터를 사용하여 워크플로 빌드</a></h3>
+
+
+  <p>Microsoft Flow 사용하여 IoT Central 앱에서 규칙이 발생할 때 Microsoft Teams 채널에 메시지를 보내는 방법에 대해 알아봅니다. Microsoft Flow 내용을 다루고 사용 가능한 수백 개의 커넥터를 사용하여 워크플로를 쉽게 빌드하는 방법을 살펴볼&#39;있습니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Build-workflows-with-Azure-IoT-Central-connector-for-Microsoft-Flow/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/AI-Show/Using-Cognitive-Services-in-Containers?ocid=AID765057&amp;wt.mc_id=CFID0401">AI Show | 컨테이너에서 Cognitive Services 사용</a></h3>
+
+
+  <p>이 비디오에서는 개발자가 일부 Cognitive Services를 컨테이너로 배포할 수 있는 새로운 기능에 대해 설명합니다. 지능형 에지를 준비합니다. 클라우드 또는 에지의 디바이스에서 데이터를 처리할 수 있습니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/AI-Show/Using-Cognitive-Services-in-Containers/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/The-Open-Source-Show/Intro-to-Service-Meshes-Data-Planes-Control-Planes-and-More?ocid=AID765057&amp;wt.mc_id=CFID0401">오픈 소스 쇼 | 서비스 메시 소개: 데이터 평면, 컨트롤 플레인 등</a></h3>
+
+
+  <p>Armon Dadgar (@armon), HashiCorp CTO 및 공동 설립자는 아론 슐레싱거 (@arschles)와 함께 모든 것 서비스 메시에 그를 학교에 합류합니다. 서비스 메시가 실제로 수행하는 작업, 서비스 메시를 사용하는 것이 적절한 시기와 이유, 관찰 가능성의 역할, 데이터 평면과 컨트롤 플레인 간의 차이점(그리고 앱 개발자와 관련된&#39;)을 이해할&#39;있습니다. Armon은 특정 예제 및 비유를 사용하여 개념을 실제로 만들고, Aaron은 자신이 좋아하는 프로젝트(Kubernetes)에 쉽게 적용하는 방법을 보고 좋아하는 리소스로 로그오프하므로 앱에 적용할 수 있습니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/The-Open-Source-Show/Intro-to-Service-Meshes-Data-Planes-Control-Planes-and-More/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Azure-Friday/Using-HashiCorp-Consul-to-connect-Kubernetes-clusters-on-Azure?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure Friday | HashiCorp Consul을 사용하여 Azure에서 Kubernetes 클러스터 연결</a></h3>
+
+
+  <p>HashiCorp Consul은 모든 런타임 플랫폼과 퍼블릭 또는 프라이빗 클라우드에서 서비스를 연결, 보안 및 구성하는 분산 서비스 메시입니다. 이 에피소드에서 Scott Hanselman은 HashiCorp&#39;제프리 그로센바흐와 함께 Helm을 사용하여 AKS(Azure Kubernetes Service) 클러스터에 Consul 서버를 설치합니다. 다음으로 Consul을 사용하여 마이크로 서비스 쌍을 배포하고 보호합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Using-HashiCorp-Consul-to-connect-Kubernetes-clusters-on-Azure/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Azure-Friday/Run-Azure-Functions-from-Azure-Data-Factory-pipelines?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure Friday | Azure Data Factory 파이프라인에서 Azure Functions 실행</a></h3>
+
+
+  <p>Azure Functions는 인프라를 명시적으로 프로비전 또는 관리하지 않고도 필요 시 코드를 실행할 수 있는 서버리스 컴퓨팅 서비스입니다. Azure Functions를 사용하면 다양한 이벤트에 대한 응답으로 스크립트 또는 코드 조각을 실행할 수 있습니다. ADF(Azure Data Factory)는 ETL(추출 변환 로드) 워크플로를 반복적으로 빌드, 오케스트레이션 및 모니터링할 수 있는 Azure의 관리되는 데이터 통합 서비스입니다. 이제 Azure Functions가 ADF와 통합되어 데이터 팩터리 파이프라인에서 한 단계로 Azure 함수를 실행할 수 있습니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Run-Azure-Functions-from-Azure-Data-Factory-pipelines/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/This+Week+On+Channel+9/TWC9-Alexa-Azure-DevOps-Skills-Hacking-Your-Career-ML-NET-09-6502-Assembly-in-VS-Code-and-more?ocid=AID765057&amp;wt.mc_id=CFID0401">이번 주 채널 9 | TWC9: Alexa Azure DevOps 기술, 경력 해킹, ML.NET 0.9, VS Code 6502 어셈블리 등</a></h3>
+
+
+  <p>채널 9에서 이번 주, 크리스티나 워렌은 마이 스페이스에서 톰의 일을 재현, 또한 최신 개발자 뉴스를 분해하는 동안.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/This+Week+On+Channel+9/TWC9-Alexa-Azure-DevOps-Skills-Hacking-Your-Career-ML-NET-09-6502-Assembly-in-VS-Code-and-more/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/XamarinShow/Azure-Blockchain-Development-Kit-for-Mobile-Apps?ocid=AID765057&amp;wt.mc_id=CFID0401">Xamarin Show | Mobile Apps용 Azure Blockchain Development Kit</a></h3>
+
+
+  <p>이번 주, 제임스는 블록체인의 세계를 소개하는 Azure Blockchain Development Kit 팀의 프로그램 관리자인 마크 머큐리(Marc Mercuri)의 친구와 함께 합니다. 애플리케이션에서 블록체인을 사용하는 이유와 방법에 대한 종단 간 시나리오를 보여 줍니다. 그런 다음, 환상적인 Xamarin 모바일 앱과 함께 웹 및 모바일용 블록체인을 사용하여 개발을 간소화하는 새로운 Azure Blockchain Development Kit를 안내합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/XamarinShow/Azure-Blockchain-Development-Kit-for-Mobile-Apps/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=sK26e6JIBao">Azure 팁 및 트릭 | Visual Studio 2017을 통해 Azure Logic Apps 배포하는 방법</a></h3>
+
+
+  <p>몇 번의 클릭만으로 Visual Studio 2017에서 Azure Logic Apps 배포하는 방법을 알아봅니다. Visual Studio 확장을 다운로드한&#39;논리 앱을 클라우드에 쉽게 배포할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=sK26e6JIBao"><img alt="Thumbnail from Azure Tips and Tricks video on How to deploy Azure Logic Appsthrough Visual Studio 2017 from YouTube" border="0" height="242" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/69aea2cc-6337-45fa-9aaa-f05a742637a6.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure 팁 및 트릭 | 보기 YouTube에서 Azure Logic Appsthrough Visual Studio 2017을 배포하는 방법" width="430"></a></p>
+
+
+  <h3><a href="https://azuredevopspodcast.clear-measure.com/greg-leonardo-on-architecting-developing-and-deploying-the-azure-way-episode-019">Azure DevOps 팟캐스트 | Azure Way 설계, 개발 및 배포에 관한 Greg Leonardo - 에피소드 019</a></h3>
+
+
+  <p>오늘&rsquo; 에피소드에서는 Campus Management Corp. 및 Webonology의 클라우드 설계자인 Greg Leonardo와 Jeffrey Palermo가 Gregs&rsquo; 새 책의 구성 요소에 대해 설명하고 아키텍처, 앱 서비스 환경, 웹앱, 웹 작업, Windows 컨테이너 등과 같은 주제에 대해 자세히 알아봅니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://traffic.libsyn.com/preview/azuredevops/ADP_019.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h2>이벤트</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/cloud-commercial-communities-webinar-and-podcast-newsletter-january-2019/?ocid=AID765057&amp;wt.mc_id=CFID0401">클라우드 상업용 커뮤니티 웨비나 및 팟캐스트 뉴스레터 - 2019년 1월</a></h3>
+
+
+  <p>매달 Cloud Commercial Communit는 Microsoft 파트너와 고객이 알아야 하는 핵심 프로그램, 업데이트, 추세 및 기술을 다루는 웨비나 및 팟캐스트를 호스트하여 Microsoft Azure 및 Dynamics를 사용하여 성공을 높일 수 있도록 합니다. 이 게시물에서 3개의 라이브 웨비나 및 이번 달에 사용할 수 있는 여러 팟캐스트에 대한 정보와 링크뿐만 아니라 지난 달의 웨비나 및 팟캐스트에 대한 요약을 확인하세요.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-site-recovery-twitter-ama/?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure Site Recovery 팀이 Ask Me Anything 세션을 호스트하고 있습니다.</a></h3>
+
+
+  <p>ASR(Azure Site Recovery) 팀은 2019년 1월 22일 화요일 오전 8시 30분부터 태평양 표준시 오전 10:00까지 트위터에서 AMA(Ask Me Anything) 세션을 개최합니다. #ASR_AMA 트윗할 <a href="https://twitter.com/AzSiteRecovery">@AzSiteRecovery</a> <a href="https://twitter.com/AzureSupport">@AzureSupport</a> 수 있습니다. AMA&rsquo;를 사용하면 팀에서 직접 답변을 얻고 이러한 제품 및 서비스를 빌드하는 사람들과 대화를 나눌 수 있습니다.</p>
+
+
+  <h3><a href="https://www.microsoft.com/ignite-the-tour?ocid=AID765057&amp;wt.mc_id=CFID0401">Microsoft Ignite | 투어</a></h3>
+
+
+  <p>심층 기술 교육을 통해 코딩하고, 클라우드 인프라를 최적화하고, 조직을 현대화하는 새로운 방법을 알아봅니다. 개발자와 기술 전문가가 전문가와 함께 계속 학습하는 장소에 참여하세요. 최신 개발자 도구 및 클라우드 기술을 살펴보고 기술을 새로운 영역에서 작업하는 방법을 알아봅니다. 커넥트 커뮤니티와 함께 클라우드 개발, 데이터, IT 및 비즈니스 인텔리전스의 미래에 대한 실질적인 통찰력과 모범 사례를 얻을 수 있습니다. 가까운 도시를 찾아 오늘 등록하십시오. 2월에는 런던, 시드니, 홍콩, 워싱턴 DC를 방문합니다.</p>
+
+
+  <p align="center"><a href="https://www.microsoft.com/ignite-the-tour?ocid=AID765057&amp;wt.mc_id=CFID0401"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53b183e4-9cd5-43cc-abe4-0834ac8dc2c0.jpg"></a></p>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/dynamic-mission-planning-for-drones-with-azure-maps/?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure 지도 사용하여 드론에 대한 동적 임무 계획</a></h3>
+
+
+  <p>이 게시물은 소프트웨어 솔루션이 드론에 대한 동적 임무 계획이라는 새로운 기술 경계선에서 실시간 위치 인텔리전스를 위해 Azure 지도 사용하는 고객 AirMap을 강조합니다. AirMap은 드론을 위한 선도적인 글로벌 영공 관리 플랫폼입니다. AirMaps&rsquo; UTM(무인 교통 관리) 플랫폼을 사용하면 엔터프라이즈 및 드론 솔루션 공급자를 위한 안전하고 효율적이며 고급 드론 운영을 배포하고 운영할 수 있습니다.</p>
+
+
+  <p align="center"><img alt="Example map of the Los Angeles area overlayed with polygons representing different geographic areas subject to airspace regulations." height="380" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/db2d94ad-f660-4f66-b076-433fdf7753b3.png" title="AirMap은 영공 규정의 적용을 받는 여러 지리적 영역을 나타내는 다각형을 동적으로 렌더링합니다." width="500"></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-new-offers-volume-29/?ocid=AID765057&amp;wt.mc_id=CFID0401">Azure Marketplace 새 제품 &ndash; 볼륨 29</a></h3>
+
+
+  <p>Azure Marketplace는 Azure에서 실행하도록 인증되고 최적화된 모든 소프트웨어 요구 사항에 &ndash; 대한 최고의 대상입니다. 수백 개의 주요 소프트웨어 공급자로부터 애플리케이션 &amp; 서비스를 찾고, 시도하고, 구매하고, 프로비전합니다. Gold 및 Silver Microsoft Cloud Competency 파트너와 연결하여 Azure 채택을 도울 수도 있습니다. 12월 상반기에 온보딩 기준을 성공적으로 충족하는 60개 새로운 제품을 발표했습니다.</p>
+
+
+  <hr>
+
+  <h3><a href="https://www.youtube.com/watch?v=_7cnhu84oi4">A Cloud Guru&#39;Azure 이번 주 - 2019년 1월 18일</a></h3>
+
+
+  <p>이번 주 Azure에서 Lars는 일반 공급되는 Azure Data Box Disk, 클라우드 마이그레이션을 위한 새로운 Azure Migrate 및 Azure Site Recovery 개선 사항 및 Azure Video Indexer를 사용한 다중 모달 토픽 추론에 대해 설명합니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=_7cnhu84oi4"><img alt="Thumbnail from A Cloud Guru's Azure This Week - 18 January 2019 on YouTube" border="0" height="267" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5d055289-8945-4b97-a6cf-0cafc99d41fe.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="2019년 1월 18일 YouTube에서 클라우드 전문가의 Azure 이번 주 시청" width="480"></a></p>

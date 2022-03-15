@@ -1,0 +1,65 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9bf3ebaa51e05d2b907573f59b7807aa8f01bcda
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897367"
+Slug: get-video-insights-in-even-more-languages
+Title: 더 많은 언어로 비디오 인사이트를 얻으세요!
+Summary: 아직 시도하지 않은 사용자를 위해 Video Indexer는 비디오 및 오디오 파일에서 인사이트를 쉽게 추출할 수 있도록 미디어 AI 기술을 기반으로 하는 클라우드 애플리케이션 및 플랫폼입니다. 인사이트의 텍스트 부분을 추출하기 위한 시작점으로...
+Content: >-
+  <p>아직 시도하지 않은 사용자를 위해 <a href="https://vi.microsoft.com/en-us/">Video Indexer</a> 는 비디오 및 오디오 파일에서 인사이트를 쉽게 추출할 수 있도록 미디어 AI 기술을 기반으로 하는 클라우드 애플리케이션 및 플랫폼입니다. 인사이트의 텍스트 부분을 추출하기 위한 시작점으로, 솔루션은 파일에 표시되는 음성을 기반으로 대본을 만듭니다. 이 프로세스를 <a href="https://en.wikipedia.org/wiki/Speech_to_text">음성 텍스트</a> 변환이라고 합니다. 현재 Video Indexers&rsquo; 음성 텍스트 변환은 10가지 언어를 지원합니다. 지원되는 언어로는 영어, 스페인어, 프랑스어, 독일어, 이탈리아어, 중국어(간체), 포르투갈어(브라질), 일본어, 아랍어 및 러시아어가 포함됩니다.</p>
+
+
+  <p>그러나 필요한 콘텐츠가 위의 언어 중 하나가 아닌 경우 두려워하지 마십시오! <strong>Video Indexer는 다른 전사 서비스 공급자와 협력하여 음성 텍스트 변환 기능을 더 많은 언어로 확장합니다.</strong> 이러한 파트너십 중 하나는 <a href="https://www.zoommedia.ai/">Zoom Media</a>와 협력하여 음성 텍스트 변환을 네덜란드어, 덴마크어, 노르웨이어 및 스웨덴어로 확장했습니다.</p>
+
+
+  <p>Video Indexer 및 Zoom Media를 사용하는 좋은 예는 네덜란드 공영 방송사 <a href="https://www.avrotros.nl/">AVROTROS</a>입니다. Video Indexer를 사용하여 비디오를 분석하고 편집기에서 비디오를 검색할 수 있도록 하는 사용자입니다. AVROTROS의 대화형 미디어 책임자인 Finus Tromp는<em> Microsoft Video Indexer를 매일 사용하여 관련 메타데이터와 함께 비디오를 제공합니다. &ldquo; 수집된 메타데이터를 통해 새 애플리케이션을 빌드하고 제품에 대한 사용자 환경을 개선할 수 있습니다.&rdquo;</em></p>
+
+
+  <p>다음은 Video Indexer Service에서 네덜란드 비디오 대본이 어떻게 표시되는지에 대한 예입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fd6938ed-b461-4306-82a0-2ec9ebd15815.png"><img alt="zoom 1" border="0" height="313" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f7711ee8-fc97-478e-ad43-bc24709c94ef.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="확대/축소 1" width="791"></a></p>
+
+
+  <h2>Video Indexer의 음성 텍스트 변환 확장</h2>
+
+
+  <p>확장 언어 중 하나로 파일을 인덱싱하려면 먼저 공급자&rsquo; 솔루션을 사용하여 필요한 언어로 VTT 파일(즉, 결과 전사 파일)을 생성한 다음, 원래 비디오 또는 오디오 파일과 함께 VTT 파일을 Video Indexer로 보내 인덱싱 흐름을 완료해야 합니다.</p>
+
+
+  <p>파일이 인덱싱되면 Video Indexer API 및 Video Indexer 서비스를 통해 전체 대본을 포함한 전체 인사이트 집합을 사용할 수 있습니다. Video Indexer에는 해당 대본을 수십 개의 다른 언어로 번역하는 기능도 포함됩니다.</p>
+
+
+  <p><strong>이제 <a href="https://github.com/victorp13/videoindexer-zoommedia">GitHub</a> Video Indexer와 Zoom Media 간의 통합에 대한 오픈 소스 릴리스를 도입하게 되어 기쁩니다.</strong></p>
+
+
+  <p>(이 통합을 설계하고 빌드하기 위해 Microsoft의 클라우드 솔루션 설계자인 <a>Victor Pikula</a>에게 특별한 감사드립니다).</p>
+
+
+  <p>솔루션은 Azure Blob Storage, Azure Logic Apps 및 새 v2 Video Indexer REST API를 사용하여 빌드됩니다. &rsquo;통합이 빌드되는 방식을 자세히 살펴보겠습니다.</p>
+
+
+  <p>다음은 흐름의 개략적인 다이어그램입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a16658fb-c7ac-41bb-951d-4a622b5cd81c.png"><img alt="zoom 2" border="0" height="306" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ff7ca92d-feac-4eee-bcf0-9ca9ed62d3de.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="확대/축소 2" width="538"></a>&nbsp;<br>
+
+  비디오 또는 오디오 파일이 있으면 파일이 먼저 Blob Storage 삭제됩니다. 논리 앱 &ldquo;은 Blob에 추가된 내용을 감시&rdquo; 하며, 그 결과 Video Indexer 및 Zoom Media로 파일을 보냅니다. 그런 다음 Zoom Media는 필요한 언어에 따라 VTT 파일을 생성하고 Video Indexer에 다시 전달하여 인덱싱 흐름을 완료합니다. 통합, Video Indexer 키 및 Zoom Media 키를 가져오는 방법 및 사용 가능한 VTT 언어를 제어하는 방법에 대한 <a href="https://github.com/victorp13/videoindexer-zoommedia/blob/master/README.md">자세한 정보가</a> 있습니다.</p>
+
+
+  <p>Logic Apps를 사용하여 통합을 빌드하면 코딩 기술 없이도 신속하게 디버그하고 구성할 수 있으므로 쉽게 사용자 지정하고 유지 관리할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ffb970b-4795-40c9-814c-556b4dc5b0fa.png"><img alt="logic_app_flow_3" border="0" height="203" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1f51d1a5-598e-4dc0-9917-d84bf4a72cef.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="logic_app_flow_3" width="620"></a></p>
+
+
+  <p>따라서 Video Indexers&rsquo;의 강력한 미디어 AI 기술을 통해 모든 언어로 음성 텍스트 변환 기능을 통합하는 기능과 Logic Apps와 같은 Azure 서비스의 사용 편의성을 통해 모든 사용자가 전 세계의 비디오에서 더 많은 것을 얻을 수 있습니다.</p>
+
+
+  <p><strong>질문이나 피드백이 있으신가요? 여러분의 의견을 듣고 싶습니다!</strong></p>
+
+
+  <p><a href="https://cognitive.uservoice.com/forums/598144-video-indexer">UserVoice</a>를 사용하여 기능의 우선 순위를 지정하거나 질문이 있는 전자 메일 <a>VISupport@Microsoft.com</a> 을 보내주세요.</p>

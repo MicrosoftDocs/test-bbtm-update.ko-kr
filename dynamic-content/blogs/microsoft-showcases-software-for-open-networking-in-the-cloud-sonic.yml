@@ -1,0 +1,120 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 626a609fa7f878c17d53ccffdb1df58964333e0d
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897595"
+Slug: microsoft-showcases-software-for-open-networking-in-the-cloud-sonic
+Title: Microsoft는 "SONiC(Open Networking in the Cloud)"를 소개합니다.
+Summary: 오늘 산호세에서 오픈 컴퓨팅 Project (OCP) 정상 회담에서, 마이크로 소프트는 스위치와 같은 네트워크 장치를 실행하기위한 완전히 오픈 소스 '클라우드에서 오픈 네트워킹 소프트웨어(SONiC)'를 발표, 선도적 인 네트워킹 산업 공급 업체 아리스타와 공동으로 내장, 브로드 컴, 델과 멜라녹스.
+Content: >-
+  <p>오늘 산호세에서 열린 컴퓨팅 Project (OCP) 정상 회담에서, 마이크로 소프트는 스위치와 같은 네트워크 장치를 실행하기위한 완전히 오픈 소스 &quot;소프트웨어 (SONiC)&rsquo;를 발표, 선도적 인 네트워킹 산업 공급 업체 아리스타와 공동으로 내장, 브로드 컴, 델과 멜라녹스.</p>
+
+
+  <p>SONiC(Open Networking in the Cloud)용 소프트웨어는 하드웨어가 아니라 풍부한 기능을 갖춘 스위치와 같은 네트워크 디바이스를 빌드하는 데 필요한 소프트웨어 네트워킹 구성 요소 모음입니다. 그것은 스위치 추상화 인터페이스 (SAI) 사양을 통해 다양 한 스위칭 플랫폼에서 실행할 수 있습니다., 우리가 지난해&rsquo; OCP 정상 회담 동안 발표 하 고 7 월에 OCP에 의해 공식적으로 허용 되었다. 데이터 센터 네트워킹 요구 사항을 위해 빌드된 린 스택이 있는 모듈식 아키텍처를 기반으로 합니다. SONiC를 사용하면 클라우드 운영자가 하드웨어 혁신을 활용하는 동시에 네트워크 스위치의 앱에 대한 오픈 소스 코드와 여러 플랫폼과 통합할 수 있는 프레임워크를 제공할 수 있습니다. SONiC는 프로토타입 소프트웨어가 아니라 현재 배포되었으며 향후 대규모로 실행될 계획입니다.</p>
+
+
+  <p>가장 중요한 것은 SONiC(Software for Open Networking in the Cloud)의 모든 구성 요소를 오픈 소스로 사용할 수 있으므로 오픈 네트워킹에서 커뮤니티 중심의 혁신을 가능하게 합니다.</p>
+
+
+  <p><img alt="OCP" border="0" height="244" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3b62a124-ad94-4dbf-b790-7b99caf26872.jpg" style="border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="OCP" width="360"></p>
+
+
+  <h2>SONiC인 이유</h2>
+
+
+  <p>SDN(소프트웨어 정의 네트워킹)의 원칙은 전 세계적으로 막대한 공간을 통해 글로벌 Azure 클라우드 인프라를 관리하는 데 오랫동안 사용되어 왔습니다. 확장성, 안정성 및 속도를 위해 가상화, 스케일 아웃 및 중앙 집중식 컨트롤러와 같은 SDN 원칙은 컴퓨팅, 스토리지 및 네트워킹에서 서버, NIC(네트워크 인터페이스 카드)에서 Edge 및 WAN(광역 네트워크)에 이르는 세분화된 수준에서 Azure의 레거시 디자인을 대체해 왔습니다. 클라우드의 오픈 네트워킹 소프트웨어는 이러한 핵심 지침 원칙에 따라 고안되었습니다.</p>
+
+
+  <p>모든 클라우드 운영자는 고속의 고가용성 네트워크를 사용하여 서비스에 전력을 공급하므로 SDN이 매우 중요합니다. &rsquo;네트워크 운영자는 위험과 복잡성을 증가시키는 기능 변경을 관리하면서 필요한 네트워킹 기능을 신속하게 추가할 수 있어야 합니다.</p>
+
+
+  <p>Microsoft에서는 혁신, 속도 증가 및 비용 절감을 주도하는 많은 공급업체 간의 건전한 경쟁으로 시장에서 사용할 수 있는 훌륭한 스위치 하드웨어 플랫폼이 많이 있다고 믿습니다. 그러나 서로 다른 유형의 스위치에서 실행되는 다양한 소프트웨어를 클라우드 차원의 네트워크 관리 플랫폼에 통합하는 것은 어려운 일입니다. 이상적으로는 최신 스위치 하드웨어 혁신의 흐름을 타더라도 구현한 기능과 수정한 버그의 모든 이점을 그대로 유지하려고 합니다.</p>
+
+
+  <p>SONiC를 사용하면 ASIC를 프로그래밍하기 위한 표준화된 C API인 SAI와 함께 여러 스위치 공급업체의 하드웨어 간에 동일한 소프트웨어 스택을 공유할 수 있습니다. 모듈식 아키텍처와 린 스택을 통해 SONiC를 사용하면 소프트웨어 버그를 훨씬 더 빠르게 디버그, 수정 및 테스트할 수 있습니다. 또한 소프트웨어를 유연하게 축소하고 데이터 센터 및 네트워킹 요구 사항에 필요한 기능을 개발할 수 있습니다. 마지막으로, 다른 오픈 소스, 타사 또는 독점 소프트웨어 구성 요소로 쉽게 확장하여 혁신에 시간을 단축할 수 있습니다.</p>
+
+
+  <p>오픈 소싱 SONiC를 통해 광범위한 네트워킹 커뮤니티에 대한 기여와 채택은 SONiCs&rsquo; 품질을 지속적으로 개선할 것입니다. 공동 작업자와 함께 이러한 초기 기여를 통해 시간이 지남에 따라 이를 개선, 사용자 지정, 확장 및 발전하기 위해 리소스를 바칠 수 있는 강력한 커뮤니티를 형성하는 것을 목표로 합니다. 그 정신에 따라, 우리는 오늘 OCP에 초기 기여를 제안하고 있습니다.</p>
+
+
+  <p><img alt="SONiC in OCP" border="0" height="274" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dea3f9d8-d232-4489-a898-23868cbfbebd.jpg" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="OCP의 SONiC" width="610"></p>
+
+
+  <h2>SONiC는 OCP 커뮤니티에 무엇을 의미하나요?</h2>
+
+
+  <p>우리는 OCP가 처음부터 전체적으로 완전히 오픈 소스 스택을 성장시키는 가장 좋은 플랫폼이라고 생각합니다. 우리는 OCP 우산 아래 오픈 소싱 SONiC는 OCP에서 전체적으로 스택을 성장시키는 다음 논리적 단계라고 생각합니다. SONiC는 모든 구성 요소를 결합하여 오픈 소스, 완전 기능, 보안 및 신뢰할 수 있는 클라우드 스위치를 형성합니다. 네트워킹 요구 사항에 가장 적합한 하드웨어 및 소프트웨어를 자유롭게 선택할 수 있습니다.</p>
+
+
+  <p>현재 SONiC는 표준화된 SAI 인터페이스와 통합되어 새로운 하드웨어를 더 빠르게 활용할 수 있으며 ASIC 혁신의 흐름을 타면서 동시에 여러 플랫폼에서 작동할 수 있습니다. SONiC의 초기 기여는 특정 스위치에 대해 지원되는 오픈 소스 플랫폼 드라이버와 함께 제공되므로 SONiC를 완벽하게 작동하는 Layer2/Layer3 스위치로 실행할 수 있습니다.</p>
+
+
+  <p>내일은 Linux 배포판이 커널 모듈을 통해 SONiC 및 SAI에 대한 지원을 제공할 수 있는 새로운 환경으로 확장될 수 있습니다. 더 많은 공급업체가 플랫폼 드라이버를 오픈 소스로 만들 수 있습니다. 기존 OCP 인증 스위치는 ONL(Open Network Linux)을 통해 SAI와 통합할 수 있습니다. 또한 더 많은 소프트웨어 구성 요소를 오픈 소스로 사용할 수 있습니다.</p>
+
+
+  <h2>SONiC에 대한 SAI의 중요성</h2>
+
+
+  <p>우리는 SAI가 오픈 네트워킹을 향한 핵심 단계이자 SONiC에 대한 디딤돌이라고 봅니다. SAI는 창립 이래 커뮤니티 내에서 계속 성장하여 점점 더 많은 기여자, 소비자 및 기능을 유치하고 있습니다. 현재 SAI 기여자는 Barefoot Networks, Broadcom, Cavium, Centec, Dell, Mellanox 및 Metaswitch입니다.</p>
+
+
+  <p>지난 7월 OCP에서 승인된 후 SAI는 현재 v0.9.4 버전에 있으며, 여기에는 터널 및 L3 수신 및 송신 인터페이스를 해결하기 위한 일반적인 API를 포함하는 접근 방식의 통합 터널링 &ndash; , 데이터 평면에 영향을 주지 않고 SAI의 서비스 다시 시작 및 업그레이드에서 웜 재부팅 &ndash; 과 같은 주요 기능이 포함되어 있습니다. 이는 전체 L3 라우팅 기능뿐만 아니라 QoS(서비스 품질)와 같은 기타 복잡한 기능을 보장하는 기존 기능 외에도 제공됩니다. 또한 이 버전에서는 OCP에서 SAI 규격으로 전환하기 위한 노력의 일환으로 PTF(Python Test Framework)를 도입했습니다.</p>
+
+
+  <p>SONiC 및 SAI 모두에 사용자 또는 기여자로 참여하도록 초대합니다. SAI와 SONiC는 모두 공급업체 지원 플랫폼에 대한 이진 및 소스 코드로 사용할 수 있습니다. 소비자는 SAI 및 SONiC에 대해 지원되는 플랫폼 및 버전에 따라 이진 파일을 얻거나 빌드하여 사용자 고유의 데이터 센터 스위치를 프로토타입화할 수 있습니다. 개발자는 기여자로서 GitHub 리포지토리를 통해 SAI 및 SONiC 모두에 기여할 수 있습니다.</p>
+
+
+  <p>SONiC 및 SAI에 대한 자세한 내용, 메일 그룹 가입, 이러한 프로젝트를 사용하거나 참가할 위치에 대한 정보는 <a href="https://azure.github.io/SONiC/">GitHub</a>.</p>
+
+
+  <p>우리는이 시점에 도착하기 위해 공동 기여자들과 함께 멋진 여행을했습니다. 우리는 미래에 우리와 함께 더 많은 기여자가 있습니다. SONiC 및 SAI를 지원하기 위해 그들이 말해야 할 것은 다음과 같습니다.</p>
+
+
+  <h4>Arista</h4>
+
+
+  <p>&quot;Arista와 Microsoft는 Azure용 클라우드 규모의 프로그래밍 가능 네트워크를 구축하는 데 5년 간의 강력한 관계를 맺고 있습니다. Arista는 Arista EOS(확장 가능한 운영 체제) 드라이버를 SONiC 및 Microsoft&#39;통합 SDN 스택&quot; 에 기여하게 되어 기쁘게 생각합니다.</p>
+
+
+  <h4>빅 스위치 네트워크</h4>
+
+
+  <p>&quot;Microsoft 및 팀과 협력하여 SONiC(Software for Open Networking in the Cloud)&nbsp; 소프트웨어를 <a href="https://opennetlinux.org/">Open Network Linux</a> 운영 체제 및 추상화 계층으로 포팅하여 OCP 에코시스템의 다양한 네트워킹 하드웨어에서 실제 전통적인 네트워킹 기능을 사용할 수 있기를 기대합니다.&quot; - Rob Sherwood, CTO, Big Switch Networks.</p>
+
+
+  <h4>Broadcom</h4>
+
+
+  <p>&ldquo;Broadcom은 스위치 추상화 인터페이스 및 SONiC 프로젝트에 참여하게되어 기쁘게 생각하며 SAI 구현&rdquo; 에 기여하게되어 기쁘게 생각합니다. &ldquo;Broadcom&#39;SAI 및 SONiC 프로젝트는 OpenNSL(Open Network Switch Layer)에서 사용하도록 설정되며, 새로운 데이터 센터 및 캐리어 네트워크 혁신을 통해 Broadcom 칩셋에 직접 액세스하는 또 다른 예를 제공합니다&nbsp; .&rdquo;</p>
+
+
+  <h4>카비움 (주)</h4>
+
+
+  <p>&quot;잘 정의된 API는 좋은 펜스가 좋은 이웃을 만들기 때문에 기능 포팅을 용이하게 합니다.&rdquo; 에릭 헤이즈, 부사장 및 일반 관리자, Cavium에서 스위치 플랫폼 그룹 말했다. &rdquo;Microsoft Azure 네트워킹과의 공동 데모에서와 같이 SAI API에 대한 XPliant 지원은 플랫폼 소프트웨어 통합 노력을 크게 줄여 줍니다.&quot;</p>
+
+
+  <h4>Centec Networks</h4>
+
+
+  <p>&quot;SAI는 진정한 개방형 네트워킹 시스템의 핵심 인에이블러입니다, 우리는 많은 주요 네트워크 OS에 의해 SAI의 급속한 채택을보고 기쁘게 생각하고 실리콘 공급 업체&quot; 를 전환했다 타오 구, 비즈니스 개발의 부사장, Centec 네트워크. &quot;Microsoft 및 기타 커뮤니티 구성원과 협력하여 SAI를 사용하고 SAI를 사용하도록 설정된 개방형 네트워킹 시스템의 프로덕션 배포를 추진할 수 있기를 기대합니다.&quot;</p>
+
+
+  <h4>Dell</h4>
+
+
+  <p>&quot;SAI의 오랜 초기 기여자로서 SONiC&rsquo;에 대해 매우 기쁘게 생각하고 있으며, 특히 최근에 도입된 OS10 소프트웨어 환경&rdquo;과 관련이 있기 때문에 Dell 네트워킹 및 Enterprise 인프라의 부사장 겸 총괄 매니저인 Tom Burns는 말했습니다. &ldquo;오픈 소스는 OS10의 핵심이며 클라우드 운영자를 위한 미래 대비 비전과 기술의 잠재력을 최대한 발휘하는 열쇠입니다. 특히 Dells&rsquo;의 기여를 통해 SONiC는 이 비전을 실현하는 데 큰 도움을 줄 것입니다.&rdquo;</p>
+
+
+  <h4>Facebook</h4>
+
+
+  <p>&ldquo;네트워킹 산업을 더욱 세분화하려는 Microsofts&rsquo;의 노력에 기대가 됩니다. SONiC 추가는 SAI(Switch Abstraction Interface) 프로젝트를 구동하는 OCP 작업을 보완합니다. 우리는 SONiC의 기여가 운영자와 개발자에게 OCP 스위치에 대한 더 많은 오픈 소스 옵션을 제공 할 수 있기를 바랍니다,&rdquo; Omar Baldonado, 페이스 북&rsquo; 네트워크 팀의 엔지니어링 디렉터는 말한다.</p>
+
+
+  <h4>Mellanox</h4>
+
+
+  <p>&ldquo;Mellanoxs&rsquo;는 OCP 조직 내에서 Microsoft와 협력하여 SAI(스위치 추상화 인터페이스)를 개발하여 개발 속도를 가속화하고 최신 세대의 스펙트럼 25, 50 및 100Gb/s 이더넷 스위치&rdquo; 에서 여러 네트워크 운영 체제를 지원할 수 있다고 Mellanox Technologies 마케팅 부사장 케빈 디어링(Kevin Deierling)은 말했습니다. &quot;고급 이더넷 스위치를 사용하는 SONiC와 같은 제품의 가용성은 세계적 수준의 스위치 플랫폼 출시 시간을 가속화하고 적당한 규모의 기업조차도 클라우드의 속도로 혁신할 수 있도록 합니다.&rdquo;</p>

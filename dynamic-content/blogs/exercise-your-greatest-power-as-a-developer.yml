@@ -1,0 +1,285 @@
+### YamlMime:Yaml
+ms.openlocfilehash: de8c10d6e459491195988206348a1eb4e18da2b3
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897995"
+Slug: exercise-your-greatest-power-as-a-developer
+Title: 개발자로서 최고의 힘을 발휘하세요.
+Summary: 좋은 개발자가 되는 것은 영구적인 학습자가 되는 것입니다. 그것은 생존에 필수적입니다. 당신이 해결하는 문제는 항상 변화하고 있지만, 이를 해결하는 데 사용하는 프로그래밍 언어, 플랫폼, 하드웨어, 도구 및 기술은 진행 중이거나 진화 중이거나 나가고 있습니다.
+Content: >-
+  <p>다니엘 웹스터 (미국 정치인, 1782-1852) &ldquo;를 의역하기 위해, 내 모든 개발자 기술이 한 가지 예외로 나에게서 가져온 경우, 나는 개발자처럼 학습의 힘을 유지하기로 선택할 것입니다, 그것에 의해 나는 곧 모든 나머지를 회복 할 것이다.&rdquo;</p>
+
+
+  <p>좋은 개발자가 되는 것은 영구적인 학습자가 되는 것입니다. 그것은 생존에 필수적입니다. 해결하는 문제는 항상 변화하고 있지만, 이를 해결하는 데 사용하는 프로그래밍 언어, 플랫폼, 하드웨어, 도구 및 기술은 모두 움직이는 목표입니다. 대부분의 개발자가 따르는 민첩한 개발 프로세스의 기초조차도 더 효과적인 방법을 계속 배워야 한다는 개념이 있습니다. 결국, 새로운&rsquo; 것을 배우지 못하면 뒤처지거나 뒤처질 수&rsquo; 있습니다.</p>
+
+
+  <p>다시 한번,&rsquo; 많은 사무실 건물이 조금 더 조용해지고, 주차 및 교통이 조금 더 쉬워지고, 많은 생산 시스템이 휴일을 망치는&rdquo; 획기적인 변화에 대한 두려움 때문에 실습 잠금으로 전환&ldquo;됩니다. 이 느린 기간은 당신이 매일 일하는 물건에서 물러나서 아직 시도 할 기회가 없었던&rsquo; 새로운 것을 배울 수있는 기회를 제공합니다.</p>
+
+
+  <p>다행히 Azure에서 새로운 기술을 배울 수 있는 훌륭한 리소스가 많이 있습니다. 다음은 익숙한 클라우드 주력(예: 가상 머신 및 스토리지)을 넘어 IoT, 컨테이너, 마이크로 서비스, 서버리스 컴퓨팅, 봇, 인공 지능 등과 관련된 기능에 초점을 맞추는 10가지 영역입니다. 각 리소스에는 빠른 소개를 제공하는 리소스 목록과 심층 분석에 도움이 되는 추가 콘텐츠가 있습니다.</p>
+
+
+  <p>&rsquo;Microsoft Azure 새로운 경우 <a href="https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/guides/azure-developer-guide.pdf" target="_blank">Azure 개발자를 위한 시작 가이드</a>로 시작하는 것이 좋습니다.</p>
+
+
+  <h4><strong>1. IoT(사물 인터넷)</strong></h4>
+
+
+  <p>요즘 모든 것이 연결된 디바이스가 될 수 있습니다. Azure IoT Suite 및 Azure IoT 서비스를 사용하면 디바이스가 생성하는 원격 분석 데이터를 수집할 뿐만 아니라 해당 데이터를 기반으로 앱에서 작업을&nbsp; 수행할 수 있을 뿐만 아니라 디바이스를 클라우드에 쉽게 연결할 수 있습니다. 또한 자신의 디바이스를 빌드하는 일부 DIY 시간 동안 Azure IoT 인증된 스타터 키트를 얻을 수 있습니다.</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://azure.microsoft.com/en-us/resources/videos/connect-2015-introduction-to-azure-iot-suite-and-iot-hub-for-developers/" target="_blank">개발자를 위한 Azure IoT Suite 및 IoT Hub 소개</a></li>
+      <li>읽기:&nbsp;<a href="https://azure.microsoft.com/en-us/blog/developer-s-introduction-to-azure-iot/" target="_blank">개발자&#39;Azure IoT 소개</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/Events/Build/2016/B844" target="_blank">디바이스를 Azure IoT 연결하는 개발자&rsquo; 가이드</a></li>
+      <li>읽기:&nbsp;<a href="https://azure.microsoft.com/en-us/develop/iot/" target="_blank">Azure IoT 개발자 센터</a></li>
+      <li>Do:&nbsp;<a href="https://azure.microsoft.com/en-us/develop/iot/starter-kits/" target="_blank">Azure IoT Starter Kits</a></li>
+      <li>Learn:&nbsp;<a href="https://mva.microsoft.com/en-US/training-courses/getting-started-with-the-internet-of-things-iot-16170" target="_blank">Getting Started with the Things (Internet of Things) (IoT)</a></li>
+  </ul>
+
+
+  <h4><strong>2. 함수</strong></h4>
+
+
+  <p>데이터 처리, 시스템 통합 또는 간단한 API 제공과 같이 마이크로 서비스를 빌드하거나 앱에서 작업을 쉽게 수행할 수 있는 방법을 찾고 계신가요? Azure Functions는 이벤트 기반 솔루션을 작성하기 위한 서버리스 컴퓨팅을 제공합니다. 특정 요구 사항을 해결하는 코드를 작성한 다음 전체 애플리케이션 또는 애플리케이션을 실행하는 데 필요한 인프라를 빌드하는 것에 대해 걱정하지 않아도 됩니다.</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://azure.microsoft.com/en-us/resources/videos/azure-functions-and-the-evolution-of-web-jobs/" target="_blank">Azure Functions 및 웹 작업의 진화</a></li>
+      <li>읽기:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview" target="_blank">Azure Functions 개요</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/Blogs/Windows-Azure/Developing-Azure-Functions" target="_blank">Azure Functions 개발</a></li>
+      <li>읽기:&nbsp;<a href="https://www.hanselman.com/blog/WhatIsServerlessComputingExploringAzureFunctions.aspx" target="_blank">서버리스 컴퓨팅이란? Azure Functions 탐색</a></li>
+      <li>Do:&nbsp;<a href="https://functionschallenge.azure.com/" target="_blank">Azure Functions Challenge</a></li>
+      <li>Learn:&nbsp;<a href="https://mva.microsoft.com/en-US/training-courses/using-azure-functions-to-build-nanoservices-16765" target="_blank">Using Azure Functions to Build Nanoservices</a></li>
+  </ul>
+
+
+  <h4><strong>3. Cognitive Services</strong></h4>
+
+
+  <p>인공 지능은 더 이상 공상 과학 소설이 아니며 현재 애플리케이션에서 사용할 수 있습니다. Cognitive Servicesis&nbsp;는 애플리케이션을 보다 지능적이고 매력적이며 검색 가능하게 만드는 데 사용할 수 있는 기계 학습 API, SDK 및 서비스의 모음입니다. 감정 및 비디오 감지와 같은 스마트 기능을 애플리케이션 및 봇에 추가합니다. 얼굴, 음성 및 시력 인식; 음성 및 언어 이해</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/Events/Connect/2016/102" target="_blank">Microsoft Cognitive Services 시작</a></li>
+      <li>읽기:&nbsp;<a href="https://blogs.microsoft.com/transform/feature/how-uber-is-using-driver-selfies-to-enhance-security-powered-by-microsoft-cognitive-services/" target="_blank">Uber가 Microsoft Cognitive Services에서 제공하는 보안 강화를 위해 드라이버 셀카를 사용하는 방법</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/Events/Build/2016/B855" target="_blank">Microsoft Cognitive Services: 앱에 인간적인 측면 제공</a></li>
+      <li>읽기:&nbsp;<a href="https://msdn.microsoft.com/en-us/magazine/mt742868.aspx" target="_blank">Microsoft Cognitive Services를 사용하는 Xamarin.Forms의 얼굴 및 감정 인식</a></li>
+      <li>Do:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-text-analytics-quick-start" target="_blank">Text Analytics API를 시작하여 감정, 핵심 구, 토픽 및 언어 감지</a></li>
+  </ul>
+
+
+  <h4><strong>4. Bot Service</strong></h4>
+
+
+  <p>신규 또는 기존 애플리케이션에서 고객 참여를 개선하고 싶나요? Azure Bot Service를 사용하면 Microsoft Bot Framework 및 Azure Functions의 기능을 한데 모아 빠르고 지능적인 봇을 개발할 수 있습니다. 사용자가 대화하는 모든 위치에서 자연스럽게 상호 작용하는 봇을 빌드, 연결, 배포 및 관리합니다. 봇이 수요에 따라 확장되도록 허용하고 사용하는 리소스에 대해서만 비용을 지불합니다.</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/Events/Connect/2016/195" target="_blank">Azure Bot Service 소개</a></li>
+      <li>읽기:&nbsp;<a href="https://docs.botframework.com/en-us/azure-bot-service/" target="_blank">Azure Bot Service 개요</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/Blogs/Windows-Azure/Introducing-the-Azure-Bot-Service" target="_blank">Azure Bot Service 소개</a></li>
+      <li>읽기:&nbsp;<a href="https://msdn.microsoft.com/en-us/magazine/mt788623.aspx" target="_blank">Bot Framework &ndash; 에서 Microsoft Bot Framework 비즈니스 문제 해결</a></li>
+      <li>Do:&nbsp;<a href="https://docs.botframework.com/en-us/azure-bots/build/first-bot/" target="_blank">Create Your First Bot</a></li>
+      <li>Learn:&nbsp;<a href="https://mva.microsoft.com/en-US/training-courses/getting-started-with-bots-16759" target="_blank">Getting Started with Bots</a></li>
+  </ul>
+
+
+  <h4><strong>5. Container Service</strong></h4>
+
+
+  <p>컨테이너 기반 애플리케이션을 빌드하고 프로덕션으로 전환해야 하는 경우 Azure Container Service를 확인하세요. 이 오픈 소스 서비스는 Kubernetes, Docker Swarm 및 DC/OS와 같은 인기 있는 컨테이너 오케스트레이션 엔진을 지원합니다. Azure Container Service는 컨테이너화된 애플리케이션을 실행하기 위해 가상 머신의 클러스터를 관리하는 데 도움이 되도록 많은 복잡성을 제거합니다.</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/Blogs/Windows-Azure/Azure-Container-Service" target="_blank">Azure Container Service</a></li>
+      <li>읽기:&nbsp;<a href="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Container-Service-101" target="_blank">Azure Container Service 101</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://azure.microsoft.com/en-us/resources/videos/build-2016-building-applications-using-the-azure-container-service/" target="_blank">Azure Container Service를 사용하여 애플리케이션 빌드</a></li>
+      <li>읽기:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/container-service/container-service-intro" target="_blank">Azure Container Service 소개</a></li>
+      <li>Do:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/container-service/container-service-deployment" target="_blank">Deploy an Azure Container Service cluster</a></li>
+      <li>알아보기:&nbsp;<a href="https://mva.microsoft.com/en-US/training-courses/deploying-dockerized-apps-to-the-azure-container-service-16637" target="_blank">Azure Container Service에 Dockerized 앱 배포</a></li>
+  </ul>
+
+
+  <h4><strong>6. Logic Apps</strong></h4>
+
+
+  <p>Azure Logic Apps 워크플로를 자동화하고 애플리케이션 및 서비스를 통합하는 데 도움이 됩니다. 자주 사용하는 모든 서비스에 대한 거의 100개의 기본 커넥터를&nbsp; 사용하면 워크플로를 쉽게 설정하고 연결된 서비스 간에 작업을 수행할 수 있습니다. Azure Portal 또는 Visual Studio 비주얼 디자이너를 사용하면 이벤트에 따라 작동하는 논리를 작성할 수 있습니다(그리고 Azure Functions에서 잘 작동함).</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://azure.microsoft.com/en-us/resources/videos/enterprise-integration-with-azure-logic-apps/" target="_blank">Enterprise Azure Logic Apps 통합</a></li>
+      <li>읽기:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/app-service-logic/app-service-logic-what-are-logic-apps" target="_blank">Logic Apps란?</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>보기:&nbsp;<a href="https://channel9.msdn.com/Blogs/Windows-Azure/Azure-Logic-Apps-Getting-Started" target="_blank">Azure Logic Apps 시작</a></li>
+      <li>읽기:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/app-service-logic/app-service-logic-enterprise-integration-overview" target="_blank">Enterprise 통합 팩 개요</a></li>
+      <li>Do:&nbsp;<a href="https://tryappservice.azure.com/" target="_blank">Build a Logic App in a Free Sandbox Experience</a></li>
+      <li>Learn:&nbsp;<a href="https://mva.microsoft.com/en-US/training-courses/mastering-azure-app-service-part-1-building-azure-logic-apps-16829" target="_blank">Mastering Azure App Service, 1부: Logic Apps 빌드</a></li>
+  </ul>
+
+
+  <h4><strong>7. API Apps</strong></h4>
+
+
+  <p>Azure API Apps를 사용하면 클라우드 호스팅 REST API를 쉽게 빌드하고 사용할 수 있습니다. Azure는 API를 게시하거나 애플리케이션에서 사용할 기존 API를 찾을 수 있는 API 마켓플레이스를 제공합니다. Swagger를 사용하여 호스팅된 API에 대한 플랫폼 간 클라이언트 SDK를 생성할 수도 있습니다.</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://azure.microsoft.com/en-us/resources/videos/azure-api-apps-101-with-guang-yang/" target="_blank">광양을 사용하는 Azure API Apps 101</a></li>
+      <li>읽기:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/app-service-api/app-service-api-apps-why-best-platform" target="_blank">API Apps 개요</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/events/DEVintersection/DEVintersection-2016/DEV08" target="_blank">RESTful 웹 서비스: ASP.NET 및 Azure API Apps</a></li>
+      <li>Do:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/app-service-api/app-service-api-dotnet-get-started" target="_blank">Get started with API Apps, ASP.NET 및 Swagger in Azure App Service 자습서</a></li>
+      <li>학습:&nbsp;<a href="https://mva.microsoft.com/en-US/training-courses/mastering-azure-app-service-part-2-building-azure-api-apps-16830" target="_blank">Azure App Service 마스터링, 2부: Azure API Apps 빌드</a></li>
+  </ul>
+
+
+  <h4><strong>8. DocumentDB</strong></h4>
+
+
+  <p>경우에 따라 기존 관계형 데이터베이스가 데이터에 가장 적합한 선택이 아닙니다. DocumentDB는 개체 데이터에 대한 SQL 쿼리를 제공하는 완전히 관리되고 확장 가능한 NoSQL 데이터베이스 서비스입니다. 기존 MongoDB 드라이버를 사용하여 DocumentDB에 액세스할 수도 있습니다. 이 드라이버를 사용하면 MongoDB와 함께 사용하기 위해 작성된 앱에서 DocumentDB를 사용할 수 있습니다.</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/Events/Connect/2016/192" target="_blank">DocumentDB: 개요 및 오프라인 개발 환경</a></li>
+      <li>읽기:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/documentdb/documentdb-introduction" target="_blank">DocumentDB란?</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/events/Build/2016/B840" target="_blank">DocumentDB, Azure&#39;NoSQL Document Database를 사용하여 대규모로 애플리케이션 제공</a></li>
+      <li>읽기:&nbsp;<a href="https://msdn.microsoft.com/en-us/magazine/mt147238.aspx" target="_blank">Microsoft Azure DocumentDB 개요</a></li>
+      <li>Do:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/documentdb/documentdb-get-started" target="_blank">NoSQL 자습서: DocumentDB C# 콘솔 애플리케이션 빌드</a></li>
+      <li>Learn:&nbsp;<a href="https://mva.microsoft.com/en-US/training-courses/azure-documentdb-planetscale-nosql-16847?l=rWTz0bT6C_8906218965" target="_blank">Azure DocumentDB: Planet-Scale NoSQL</a></li>
+  </ul>
+
+
+  <h4><strong>9. Mobile Center</strong></h4>
+
+
+  <p>모바일 앱에서 이미 작업 중인 경우&rsquo; HockeyApp 및 Xamarin Test Cloud를 비롯한 모바일 개발자 서비스를 통합하는 Visual Studio Mobile Center를 통해 모바일 DevOps 대해 자세히 알아보세요. 현재 미리 보기로 제공되는 Visual Studio Mobile Center는 연속 통합, 테스트 자동화, 배포, 크래시 보고 및 애플리케이션 분석을 포함하여 모바일 앱에 대한 클라우드 기반 수명 주기 서비스를 제공합니다. Mobile Center SDK는 현재 향후 몇 개월 동안 더 많은 지원을 위한 로드맵이 있는 Android, iOS, Xamarin 및 React Native 앱을 지원합니다.</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>읽기:&nbsp;<a href="https://blogs.msdn.microsoft.com/visualstudio/2016/11/16/visual-studio-mobile-center/" target="_blank">Visual Studio Mobile Center 소개(미리 보기)</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>시계:&nbsp;<a href="https://channel9.msdn.com/Shows/Cloud+Cover/Episode-219-Visual-Studio-Mobile-Center-with-Thomas-Dohmke" target="_blank">Visual Studio 모바일 센터와 토마스 돔케</a></li>
+      <li>읽기:&nbsp;<a href="https://msdn.microsoft.com/magazine/mt790198" target="_blank">모바일 DevOps &ndash; Visual Studio Mobile Center 탐색</a></li>
+  </ul>
+
+
+  <h4><strong>10. 애플리케이션 Insights</strong></h4>
+
+
+  <p>다양한 애플리케이션 메트릭은 고객을 위해 애플리케이션을 제공하고 지속적으로 개선하는 데 도움이 됩니다. 애플리케이션 Insights 웹앱 및 서비스에서 문제를 검색, 심사 및 진단하는&rsquo; 데 도움이 되는 확장 가능한 애플리케이션 성능 관리 서비스입니다. DevOps 파이프라인에 통합하고 이를 사용하여 앱의 사용량과 환경을 모니터링할 수 있습니다.</p>
+
+
+  <p><strong>빠른:</strong></p>
+
+
+  <ul>
+      <li>조사식:&nbsp;<a href="https://channel9.msdn.com/events/Connect/2016/100" target="_blank">Azure Application Insights 사용하여 Web Apps 모니터링</a></li>
+      <li>읽기:&nbsp;<a href="https://azure.microsoft.com/en-us/blog/general-availability-of-azure-application-insights/" target="_blank">Azure Application Insights 일반 공급</a></li>
+  </ul>
+
+
+  <p><strong>더 많은 시간:</strong></p>
+
+
+  <ul>
+      <li>Watch:&nbsp;<a href="https://channel9.msdn.com/events/Build/2016/P591" target="_blank">Advanced Analytics with Application Insights</a></li>
+      <li>읽기:&nbsp;<a href="https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview" target="_blank">Application Insights란?</a></li>
+      <li>Do:&nbsp;<a href="https://analytics.applicationinsights.io/demo" target="_blank">Interactive 데이터 분석 데모</a></li>
+      <li>Learn:&nbsp;<a href="https://mva.microsoft.com/en-US/training-courses/web-and-data-application-development-with-visual-studio-2017-and-azure-16931" target="_blank">web and Data Application Development with Visual Studio 2017 and Azure(모듈 1)</a></li>
+  </ul>
+
+
+  <p>나는 당신이 당신의 관심을 사로 잡은 영역을 발견하고 제공 된 콘텐츠에서 새로운 무언가를 배울 수 있기를 바랍니다.</p>
+
+
+  <p>즐거운 휴일 보내세요!</p>

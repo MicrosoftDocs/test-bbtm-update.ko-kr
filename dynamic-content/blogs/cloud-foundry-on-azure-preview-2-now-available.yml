@@ -1,0 +1,21 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 272227eb1b44823e8fc0dedaf4cde557725b6a40
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898076"
+Slug: cloud-foundry-on-azure-preview-2-now-available
+Title: Azure Preview 2의 Cloud Foundry 사용 가능
+Summary: Azure Preview 2의 Cloud Foundry는 커뮤니티에서 지난 몇 개월 동안 받은 피드백을 통합합니다. 이 업데이트는 최신 오픈 소스 Cloud Foundry 기술을 활용하고 Bosh-Init 프레임워크를 기반으로 합니다.
+Content: >-
+  <p><span style="color: rgb(0, 128, 0);"><strong>2015년 11월 3일 업데이트:<u> </u>Azure의 Cloud Foundry에서 일반 공급이 선언되었습니다. 업데이트된 프로젝트 </strong></span> 정보는 <a href="https://azure.microsoft.com/en-us/blog/general-availability-of-cloud-foundry-and-preview-access-of-pivotal-cloud-foundry/" target="_blank"><span style="color: rgb(102, 153, 255);"><u><strong>Azure GA 블로그의 Cloud Foundry </strong></u></span></a> 를 참조하세요<span style="color: rgb(0, 128, 0);"><strong>.&nbsp; 이&nbsp; 블로그의 링크도 GA 위치를 가리키도록 업데이트되었습니다. </strong></span></p>
+
+
+  <p><a href="https://azure.microsoft.com/blog/2015/05/29/try-cloud-foundry-on-azure-today/" target="_blank">Azure Preview의 Cloud Foundry</a>의 발자취를 따라 커뮤니티에서 지난 몇 개월 동안 받은 피드백을 통합하는 업데이트 릴리스를 발표하게 되어 기쁩니다. 현재 Azure Preview 2의 Cloud Foundry를 사용할 수 있습니다. Azure Preview 2의 Cloud Foundry는 최신 오픈 소스 Cloud Foundry 기술을 활용하고 Bosh-Init 프레임워크를 기반으로 합니다. 또한 최신 Azure 리소스 관리 프레임워크와 통합하여 여러 Cloud Foundry VM을 지원합니다. 이러한 새로운 업데이트를 통해 고객은 Bosh-Init를 사용하여 Azure에 표준 Cloud Foundry 인프라를 배포할 수 있습니다. &nbsp;<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://channel9.msdn.com/Blogs/Windows-Azure/Cloud-Foundry-on-Azure/player" width="560"></iframe> &nbsp;</p>
+
+
+  <p>&nbsp;Azure에 Cloud Foundry를 배포하려면 <a href="https://github.com/cloudfoundry-incubator/bosh-azure-cpi-release/blob/master/docs/guidance.md" km.title="" ms.cmpgrp="body" ms.cmpnm="GA guidance" ms.cmptyp="link" ms.interactiontype="1" ms.pgarea="content" ms.title="" target="_blank"><u><font color="#0066cc">GA 지침을</font></u></a> 따릅니다.</p>
+
+
+  <p>앞으로 몇 주 안에 Azure 코드를 Cloud Foundry 커뮤니티 분기에 업스트림할 예정입니다. 언제나처럼, 우리는 개선을 찾고 있습니다, 그래서 그것을 시도하고 <a href="https://github.com/cloudfoundry-incubator/bosh-azure-cpi-release/issues" target="_blank">피드백을</a> 보내 주시기 바랍니다. &nbsp;Azure Cloud Foundry 환경 및 제안을 듣기&nbsp; 위해 앞으로 나아가세요!</p>

@@ -1,0 +1,434 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6be868d0d16822c2f3a900601c936961375769f4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897739"
+Slug: azure-source-volume-69
+Title: Azure.Source - 볼륨 69
+Summary: Azure의 분석은 최대 14배 더 빠르며 다른 클라우드 공급자보다 94% 더 적은 비용이 듭니다. 3개의 훌륭한 Azure Data Services에 대한 업데이트 발표; 이제 EA 고객을 위한 Azure Cost Management GA; 을 참조하세요.
+Content: >-
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/account-failover-now-in-public-preview-for-azure-storage/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Storage 대한 공개 미리 보기에서 계정 장애 조치(failover)</a></h3>
+
+
+  <p>스토리지 계정 쓰기 액세스가 필요한 시점과 보조 복제 상태를 파악할 수 있도록 스토리지 계정 장애 조치(failover)를 제어하려는 경우 GRS(지역 중복 스토리지) 사용 스토리지 계정에 대한 계정 장애 조치(failover)를 미리 보기로 사용할 수 있습니다. 지역 중복 스토리지 계정의 주 지역을 장기간 사용할 수 없게 되면 계정 장애 조치(failover)를 강제 적용할 수 있습니다. 대부분의 미리 보기와 마찬가지로 계정 장애 조치(failover)는 프로덕션 워크로드와 함께 사용하면 안 됩니다. 기능이 일반 공급될 때까지 프로덕션 SLA가 없습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-stream-analytics-now-supports-azure-sql-database-as-reference-data-input/?ocid=AID765057&amp;wt.mc_id=CFID0418">이제 Azure Stream Analytics는 참조 데이터 입력으로 Azure SQL Database 지원합니다.</a></h3>
+
+
+  <p>참조 데이터는 실시간 데이터 스트림과 상호 연결하여 데이터를 보강할 수 있는 정적 또는 느린 변경의 데이터 세트입니다. Stream Analytics는 참조 데이터의 버전 관리 기능을 활용하여 이벤트가 생성될 때 유효한 참조 데이터로 스트리밍 데이터를 보강합니다. 현재 Stream Analytics 작업에 대한 참조 데이터 입력 원본으로 Azure SQL Database 사용해 볼 수 있습니다. 이 기능은 모든 Azure 지역에서 공개 미리 보기로 사용할 수 있습니다. 이 기능은 Visual Studio 대한 Stream Analytics 도구의 최신 릴리스에서도 사용할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f7312582-8449-48cb-bfc6-72342d559aaf.png"><img alt="Diagram showing Stream Analytics with Streaming Sources and Hot path analytics" height="285" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/32eeb2cd-0edf-45a3-a523-4b5e16c1e475.png" title="스트리밍 원본 및 핫 경로 분석을 사용한 Stream Analytics" width="500"></a></p>
+
+
+  <h3>미리 보기로도 제공됩니다.</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/public-preview-azure-service-bus-for-go/?ocid=AID765057&amp;wt.mc_id=CFID0418">공개 미리 보기: Go용 Azure Service Bus</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/public-preview-azure-service-bus-for-python/?ocid=AID765057&amp;wt.mc_id=CFID0418">공개 미리 보기: Python용 Azure Service Bus</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-database-for-postgresql-read-replica-preview/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Database for PostgreSQL 읽기 복제본 미리 보기</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/mongodb-to-azure-cosmos-db-online-migration-is-in-preview/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure로 MongoDB Cosmos DB 온라인 마이그레이션이 미리 보기로 제공됩니다.</a></li>
+  </ul>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/individually-great-collectively-unmatched-announcing-updates-to-3-great-azure-data-services/?ocid=AID765057&amp;wt.mc_id=CFID0418">개별적으로 훌륭하고 전체적으로 타의 추종을 불허합니다. 3가지 훌륭한 Azure Data Services에 대한 업데이트 발표</a></h3>
+
+
+  <p>Azure Data Lake Storage Gen2 및 Azure Data Explorer는 이제 일반 공급되며, Azure Data Factory 매핑 데이터 Flow 미리 보기로 제공됩니다. Azure ADLS(Data Lake Storage)는 Azure Blob Storage 확장성, 비용 효율성, 보안 모델 및 풍부한 기능을 분석을 위해 빌드되고 Hadoop 분산 파일 시스템과 호환되는 고성능 파일 시스템과 결합합니다. ADX(Azure Data Explorer)는 대량의 스트리밍 데이터에 대한 실시간 분석을 위한 빠르고 완전히 관리되는 데이터 분석 서비스입니다. ADX는 필요한 데이터 또는 메타데이터를 수정하지 않고 10억 개의 레코드를 1초 안에 쿼리할 수 있습니다. 또한 ADX에는 Azure Data Lake Storage, Azure SQL Data Warehouse 및 Power BI 대한 네이티브 커넥터가 포함되어 있으며 고객이 몇 분 안에 인사이트를 얻을 수 있도록 직관적인 쿼리 언어가 제공됩니다. Azure Data Factory의 매핑 데이터 Flow 통해 고객은 Spark를 학습하거나 분산 인프라를 깊이 이해하지 않고도 데이터 변환 프로세스를 시각적으로 디자인, 빌드 및 관리할 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-data-lake-storage-gen2-is-now-generally-available/?ocid=AID765057&amp;wt.mc_id=CFID0418">이제 Azure Data Lake Storage Gen2를 일반 공급</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-azure-data-explorer/?ocid=AID765057&amp;wt.mc_id=CFID0418">일반 공급: Azure Data Explorer</a></li>
+  </ul>
+
+
+  <h4><a href="https://channel9.msdn.com/Shows/Azure-Friday/An-overview-of-Azure-Data-Explorer-ADX?ocid=AID765057&amp;wt.mc_id=CFID0418">ADX(Azure Data Explorer)</a> | 의 개요 <a href="https://channel9.msdn.com/Shows/Azure-Friday?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Friday</a></h4>
+
+
+  <p>Manoj Raheja는 Lara Rubbelke에 합류하여 ADX(Azure Data Explorer)를 시연하고 프로비저닝에서 쿼리에 이르는 서비스에 대한 개요를 제공합니다. ADX는 대량의 스트리밍 데이터에 대한 실시간 분석을 위한 빠르고 완전히 관리되는 데이터 분석 서비스입니다. 뛰어난 성능과 확장성 있는 클라우드 분석 서비스를 직관적인 쿼리 언어와 결합하여 거의 즉각적인 인사이트를 제공합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/An-overview-of-Azure-Data-Explorer-ADX/player?format=ny" width="576"></iframe></p>
+
+
+  <h4><a href="https://channel9.msdn.com/Shows/Azure-Friday/Code-free-data-transformation-at-scale-using-Azure-Data-Factory?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Data Factory를 사용하여 대규모로 코드 없는 데이터 변환</a> |  <a href="https://channel9.msdn.com/Shows/Azure-Friday?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Friday</a></h4>
+
+
+  <p>Gaurav Malhotra가 Lara Rubbelke에 조인함에 따라 Azure Data Factory의 새로운 코드 없는 시각적 데이터 변환 기능에 대해 알아보고 Spark를 학습하거나 분산 인프라를 깊이 이해하지 않고 데이터 변환 프로세스를 시각적으로 디자인, 빌드 및 관리하는 방법을 보여 줍니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Code-free-data-transformation-at-scale-using-Azure-Data-Factory/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-cost-management-now-general-availability-for-enterprise-agreements-and-more/?ocid=AID765057&amp;wt.mc_id=CFID0418">이제 기업계약 등에 Azure Cost Management를 일반 공급합니다.</a></h3>
+
+
+  <p>Azure Cost Management는 이제 Azure Portal 내에서 모든 EA(기업계약) 고객에게 일반 공급됩니다. Azure Cost Management를 사용하면 사용하기 쉬운 대시보드를 통해 지출하는 모든 것을 모니터링하고, 예산을 만들고, 클라우드 지출을 최적화할 수 있습니다. 또한 이 게시물은 웹 직접 종량제 고객 및 Azure Government 클라우드에 대한 공개 미리 보기를 발표합니다. Azure Cost Management는 모든 고객 및 파트너가 무료로 Azure 비용을 관리할 수 있습니다. Cloudyn 포털은 모든 관련 기능을 네이티브 Azure Cost Management에 통합하는 동안 고객이 계속 사용할 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-cost-management-preview-for-azure-government/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Government용 Azure Cost Management 미리 보기</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-cost-management-preview-for-pay-as-you-go/?ocid=AID765057&amp;wt.mc_id=CFID0418">종량제에 대한 Azure Cost Management 미리 보기</a></li>
+  </ul>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/microsoft-healthcare-bot-brings-conversational-ai-to-healthcare/?ocid=AID765057&amp;wt.mc_id=CFID0418">Microsoft Healthcare Bot은 의료 서비스에 대화형 AI를 제공합니다.</a></h3>
+
+
+  <p>Microsoft Healthcare Bot은 의료를 위한 대화형 AI를 지원하는 화이트 레이블 클라우드 서비스입니다. &rsquo;의료 조직이 사용자에게 더 많은 정보를 제공하고, 셀프 서비스를 사용하도록 설정하고, 더 나은 결과를 창출하고, 비용을 절감하는 데 도움이 되는 규격 AI 기반 가상 상태 도우미 및 챗봇을 빌드하고 배포할 수 있도록 설계되었습니다. 이제 Azure Marketplace에서 Microsoft Healthcare Bot을 사용할 수 있습니다.</p>
+
+
+  <h3>일반 공급</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/qna-maker-simplifies-knowledge-base-management-for-your-q-a-bot/?ocid=AID765057&amp;wt.mc_id=CFID0418">QnA Maker는 QA&amp; 봇에 대한 기술 자료 관리를 간소화합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/update-azure-modules-runbook-is-open-source/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Automation: Azure Modules Runbook 업데이트가 오픈 소스입니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/language-improvements-in-azure-stream-analytics-are-now-generally-available/?ocid=AID765057&amp;wt.mc_id=CFID0418">이제 Azure Stream Analytics의 언어 개선 사항이 일반 공급됩니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/blob-output-partitioning-in-azure-stream-analytics/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Stream Analytics의 Blob 출력 분할</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/tomtom-is-expanding-its-partnership-with-microsoft/?ocid=AID765057&amp;wt.mc_id=CFID0418">TomTom은 Microsoft와의 파트너십을 확장하고 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/new-lsv2-azure-virtual-machines-vms-for-big-data-databases-and-data-warehousing-are-now-generally-available/?ocid=AID765057&amp;wt.mc_id=CFID0418">이제 빅 데이터, 데이터베이스 및 데이터 웨어하우징을 위한 새 Lsv2 Azure VM(가상 머신)을 일반 공급합니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/logic-apps-is-now-available-in-us-gov-arizona-region/?ocid=AID765057&amp;wt.mc_id=CFID0418">Logic Apps는 이제 US Gov 애리조나 지역에서 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/sql-server-migration-assistant-support-for-azure-sql-database-managed-instance/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure SQL Database Managed Instance에 대한 SQL Server Migration Assistant 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/support-for-amazon-rds-sql-server-to-azure-sql-database-managed-instance-online-migrations/?ocid=AID765057&amp;wt.mc_id=CFID0418">Managed Instance 온라인 마이그레이션을 Azure SQL Database Amazon RDS SQL Server 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/m-series-virtual-machines-vms-are-now-available-in-australia-central-2-region/?ocid=AID765057&amp;wt.mc_id=CFID0418">이제 오스트레일리아 중부 2 지역에서 M 시리즈 VM(가상 머신)을 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-devtest-labs-configure-enforcing-auto-shutdown-schedule-for-your-lab-2/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure DevTest Labs: 랩에 대한 리소스 그룹 제어 구성</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-hdinsight-is-now-available-in-us-dod-east-us-dod-central-and-us-gov-texas/?ocid=AID765057&amp;wt.mc_id=CFID0418">미국 DoD 동부, US DoD Central, US Gov 텍사스에서 사용할 수 있는 Azure HDInsight</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-log-analytics-is-now-available-in-westus2/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Log Analytics는 미국 서부 2에서 사용할 수 있습니다.</a></li>
+  </ul>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/analytics-in-azure-is-up-to-14x-faster-and-costs-94-less-than-other-cloud-providers-why-go-anywhere-else/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure의 분석은 최대 14배 더 빠르며 다른 클라우드 공급자보다 94% 더 적은 비용이 듭니다. 왜 다른 곳으로 이동합니까?</a></h3>
+
+
+  <p>Julia White Microsoft Azure 회사 부사장은 Azure가 데이터 수집에서 스토리지, 데이터 웨어하우징, 기계 학습 및 BI에 이르는 가장 포괄적인 분석 서비스 세트를 제공하는 방법을 다룹니다. 이러한 각 서비스는 업계 최고의 성능, 보안 및 사용 편의성을 타의 추종을 불허하는 가치로 제공하도록 세밀하게 조정되었습니다. GigaOm의 최근 연구에서 Azure SQL Data Warehouse는 경쟁 업체와 비교할 때 최대 14배, 최대 94% 저렴하게 경쟁 경쟁에서 우위를 차지한다는 것을 발견했습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a495f75-32ea-429e-b849-dcf799d476ea.png"><img alt="Chart showing price performance comparison between Azure SQL DW, Amazon Redshift, and Google BigQuery" height="369" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9a495f75-32ea-429e-b849-dcf799d476ea.png" title="가격 성능 비교" width="324"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/configure-resource-group-control-for-your-azure-devtest-lab/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure DevTest Lab에 대한 리소스 그룹 제어 구성</a></h3>
+
+
+  <p>이제 모든 랩 VM(가상 머신)을 단일 리소스 그룹에 만들도록 구성하는 옵션이 있습니다. 리소스 그룹 수준에서 적용할 수 있는 Azure 정책을 사용하여 개발 및 테스트 환경의 거버넌스를 개선하는 방법을 알아봅니다. 이렇게 하면 스크립트를 사용하여 모든 랩 VM을 만들 Azure 구독 내에서 새 리소스 그룹 또는 기존 리소스 그룹을 지정할 수 있습니다. 랩에서 만든 ARM 환경은 자체 리소스 그룹에 계속 유지되며 이 API로 작업하는 동안 선택한 옵션의 영향을 받지 않습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/reserved-instances-now-applicable-to-classic-vms-cloud-services-and-dev-test-subscriptions/?ocid=AID765057&amp;wt.mc_id=CFID0418">이제 클래식 VM, 클라우드 서비스 및 개발/테스트 구독에 적용할 수 있는 예약 인스턴스</a></h3>
+
+
+  <p>이제 추가 절감 및 구매 제어를 제공할 수 있는 두 가지 새로운 AZURE RI(예약 VM 인스턴스&rsquo; ) 기능을 사용할 수 있습니다. 클래식 VM 및 Cloud Services 사용자는 이제 RI 할인 혜택을 누릴 수 있습니다. 또한 Enterprise 개발/테스트 및 종량제 개발/테스트 구독은 이제 RI 할인 혜택을 누릴 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/new-connectors-added-to-data-factory-empowering-richer-insights/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Data Factory에 추가된 새로운 커넥터를 통해 풍부한 인사이트를 얻을 수 있습니다.</a></h3>
+
+
+  <p>ADF(Azure Data Factory)는 Azure의 분석 워크로드를 위한 완전 관리형 데이터 통합 서비스로, 간단한 끌어서 놓기 환경을 통해 80개 이상의 데이터 원본에서 데이터를 복사할 수 있습니다. 또한 유연한 제어 흐름, 풍부한 모니터링 및 CI/CD 기능을 사용하여 ETL/ELT 흐름을 운영 및 관리하여 SLA를 충족할 수 있습니다. 이제 Google Cloud Storage 및 Amazon S3에서 데이터를 수집하는 기능을 포함하여 분석 워크로드에 대한 더 많은 시나리오와 가능성을 가능하게 하는 8개의 새로운 Azure Data Factory 커넥터 집합을 사용할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/intelligent-edge-support-grows-azure-iot-edge-now-available-on-virtual-machines/?ocid=AID765057&amp;wt.mc_id=CFID0418">이제 가상 머신에서 사용할 수 Azure IoT Intelligent Edge 지원이 증가합니다 &ndash; .</a></h3>
+
+
+  <p>Azure IoT Edge를 사용하면 클라우드 인텔리전스를 에지로 가져오고 실시간 데이터에 즉시 작동할 수 있습니다. Azure IoT Edge는 이미 다양한 Linux 및 Windows 운영 체제뿐만 아니라 Raspberry Pi보다 작은 디바이스에서 서버까지 다양한 하드웨어를 지원합니다. VMware vSphere에서 IoT Edge를 지원하면 이미 소유한 인프라에서 AI를 실행하려는 경우 더 많은 옵션을 선택할 수 있습니다. VMware는 VMware vSphere를 사용하여 VM에 Azure IoT Edge의 배포 프로세스를 간소화했습니다. 또한 vSphere 6.7 이상에서는 TPM(신뢰할 수 있는 플랫폼 모듈)에 대한 통과 지원을 제공하여 Azure IoT Edge가 하드웨어 신뢰 루트를 활용하여 업계 최고의 보안 프레임워크를 유지할 수 있도록 합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/completers-in-azure-powershell/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure PowerShell 완료자</a></h3>
+
+
+  <p>버전 3.0부터 PowerShell은 cmdlet 매개 변수에 인수 완성자 적용을 지원했습니다. azure에 대한 추가 호출을 수행할 필요 없이 유효한 매개 변수 값을 선택할 수 있는 인수 완성자를 Azure PowerShell 모듈에 추가했습니다. 이러한 완료자는 유효한 매개 변수 값을 얻기 위해 Azure에 필요한 호출을 수행합니다. 추가된 인수 완료자에는 위치, 리소스 그룹 이름, 리소스 이름 및 리소스 ID가 포함됩니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/03c9ddcf-d256-4dba-b092-3cd4b6a78edf.png"><img alt="Screenshot showing Location Completer in Azure PowerShell" height="125" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/03c9ddcf-d256-4dba-b092-3cd4b6a78edf.png" title="Azure PowerShell 위치 완성기" width="400"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/simplify-always-on-availability-group-deployments-on-azure-vm-with-sql-vm-cli/?ocid=AID765057&amp;wt.mc_id=CFID0418">SQL VM CLI를 사용하여 Azure VM에서 Always On 가용성 그룹 배포 간소화</a></h3>
+
+
+  <p>Always On AG(가용성 그룹)는 온-프레미스, 클라우드 또는 둘 다의 조합에 관계없이 SQL Server 데이터베이스에 고가용성 및 재해 복구 기능을 제공합니다. 이제 SQL VM 리소스 공급자 및 Azure SQL VM CLI에서 사용하도록 설정된 확장된 기능을 사용하여 Azure VM에 SQL Server 대한 Always On 가용성 그룹 구성을 배포할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/help-us-shape-new-azure-migration-capabilities-sign-up-for-early-access/?ocid=AID765057&amp;wt.mc_id=CFID0418">새 Azure 마이그레이션 기능을 구체화하는 데 도움을 주세요. 조기 액세스에 등록하세요!</a></h3>
+
+
+  <p>고객과 파트너가 Azure Migrate를 사용하여 종단 간 마이그레이션 여정을 계획, 실행 및 추적할 수 있도록 하는 것을 목표로 통합되고 확장 가능한 마이그레이션 환경을 제공하도록 Azure Migrate를 향상시키고 있습니다. 서버를 검색, 평가 및 Azure로 마이그레이션할 수 있는 통합 엔드 투 엔드 마이그레이션 환경을 제공하는 것이 목표입니다. 프라이빗 미리 보기에 등록하여 향상된 평가 및 마이그레이션 기능을 사용해 보세요.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-portal-february-2019-update/?ocid=AID765057&amp;wt.mc_id=CFID0418">Microsoft Azure 포털 2019년 2월 업데이트</a></h3>
+
+
+  <p>2월에 Azure Portal은 여러 컴퓨팅(IaaS) 리소스에 대한 업데이트, 리소스 및 리소스 그룹 목록의 콘텐츠를 CSV 파일로 내보내는 기능, 개요 페이지의 필수 속성 레이아웃 개선, 복구 서비스 페이지의 환경 개선, Microsoft Intune 설정 옵션 확장 등을 제공합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6cff5889-e88f-4248-b45d-49b8b52b8886.png"><img alt="Screenshot of disaster recovery experience in the Azure portal" height="371" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6cff5889-e88f-4248-b45d-49b8b52b8886.png" title="Azure Portal의 재해 복구 환경 스크린샷" width="600"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-monitor-january-2019-updates/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Monitor 2019년 1월 업데이트</a></h3>
+
+
+  <p>이제 Azure Monitor는 애플리케이션의 강력한 엔드 투 엔드 모니터링을 위해 Log Analytics 및 애플리케이션 Insights 기능을 통합합니다. Application Insights, Log Analytics, Azure Monitor 통합 문서 및 Azure 메트릭에 1월 한 달 동안 추가된 내용을 알아봅니다. 또한 이제 VM용 Azure Monitor에서 통합 문서를 사용할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/lighting-up-healthcare-data-with-fhir-announcing-the-azure-api-for-fhir/?ocid=AID765057&amp;wt.mc_id=CFID0418">FHIR을 사용하여 의료 데이터 조명: Azure API for FHIR 발표</a></h3>
+
+
+  <p>의료 산업은 새로운 표준 HL7 FHIR&reg; 또는 빠른 의료 상호 운용성 리소스를 빠르게 채택하고 있습니다. 이 강력하고 확장 가능한 데이터 모델은 의미 체계와 데이터 교환을 표준화하여 FHIR을 사용하는 모든 시스템이 함께 작동할 수 있도록 합니다. Azure API for FHIR&reg; 을 사용하면 FHIR 형식으로 데이터를 신속하게 교환할 수 있으며 클라우드에서 관리되는 PaaS(Platform-as-a Service) 제품을 통해 지원됩니다. 보호된 상태 정보에 대한 일관된 단일 솔루션으로 데이터 관리를 간소화합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-devops-projects-supporting-azure-cosmos-db-and-azure-functions/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Cosmos DB 및 Azure Functions를 지원하는 Azure DevOps 프로젝트</a></h3>
+
+
+  <p>이제 모든 고객이 사용할 수 있는 Azure DevOps Projects의 최신 배포에서 애플리케이션의 대상 대상으로 Azure Cosmos DB 및 Azure Functions에 대한 지원을 추가했습니다. 이는 기존 Azure App Service, Azure SQL Database 및 AKS(Azure Kubernetes Service) 지원을 기반으로 합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1adab9dc-198d-4372-be6b-f7db61c0a108.png"><img alt="Screenshot of choosing an application framework in DevOps Project" height="391" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1adab9dc-198d-4372-be6b-f7db61c0a108.png" title="DevOps Project 애플리케이션 프레임워크를 선택하는 스크린샷" width="600"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/find-out-when-your-virtual-machine-hardware-is-degraded-with-scheduled-events/?ocid=AID765057&amp;wt.mc_id=CFID0418">예약된 이벤트로 가상 머신 하드웨어의 성능이 저하되는 경우 확인</a></h3>
+
+
+  <p>이제 예약된 이벤트는 Azure가 하드웨어 문제로 인해 가까운 장래에 정상 하드웨어에 다시 배포해야 한다고 예측하고, 실시간 마이그레이션이 불가능한 경우 Azure에서 정상 하드웨어에 VM을 다시 배포할 기간을 제공할 때 트리거됩니다. Azure에서 자동으로 VM을 다시 배포하기 전에 다시 배포를 시작할 수 있습니다.</p>
+
+
+  <h3>추가 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/data-migration-assistant-support-for-target-readiness-assessment-for-azure-sql-db-managed-instance/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure SQL DB Managed Instance에 대한 대상 준비 평가에 대한 데이터 Migration Assistant 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/nuget-npm-and-other-artifacts-tasks-support-proxies-sprint-147-update/?ocid=AID765057&amp;wt.mc_id=CFID0418">NuGet, npm 및 기타 Artifacts 작업 지원 프록시 - 스프린트 147 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/ev3-and-esv3-series-vms-are-available-in-azure-hdinsight/?ocid=AID765057&amp;wt.mc_id=CFID0418">Ev3 및 ESv3 시리즈 VM은 Azure HDInsight에서 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-storsimple-5000-7000-series-will-no-longer-be-supported-starting-july-9-2019/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure StorSimple 5000/7000 시리즈는 2019년 7월 9일부터 더 이상 지원되지 않습니다.</a></li>
+  </ul>
+
+  <!-- TECHNICAL CONTENT-->
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/processing-trillions-of-events-per-day-with-apache-kafka-on-azure/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure에서 Apache Kafka를 사용하여 매일 엄청난 수의 이벤트 처리</a></h3>
+
+
+  <p>Siphon 팀은 세계에서&rsquo; 가장 큰 Kafka 배포 중 하나를 실행하여 경험 및 학습을 공유합니다. 기본 인프라 고려 사항 외에도 메시지 처리량, 대기 시간 및 내구성에 영향을 주는 몇 가지 조정 가능한 Kafka broker 및 클라이언트 구성에 대해 설명합니다. 수백 개의 실험을 실행한 후 다양한 프로덕션 사용 사례에 대한 최대 사용률을 달성하는 데 필요한 Kafka 구성을 표준화했습니다. 또한 Kafka 클러스터를 조정하여 최상의 성능을 위해 생산자, 브로커 및 소비자를 구성하는 방법을 설명합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/best-practices-to-consider-before-deploying-a-network-virtual-appliance/?ocid=AID765057&amp;wt.mc_id=CFID0418">네트워크 가상 어플라이언스를 배포하기 전에 고려해야 할 모범 사례</a></h3>
+
+
+  <p>NVA(네트워크 가상 어플라이언스)는 주로 네트워크 기능 가상화에 초점을 맞춘 가상 어플라이언스입니다. 일반적인 네트워크 가상 어플라이언스에는 방화벽, WAN 최적화 프로그램, 애플리케이션 배달 컨트롤러, 라우터, 부하 분산 장치, IDS/IPS, 프록시, SD-WAN 에지 등과 같은 다양한 계층 4~7개가 포함됩니다. 일반적인 모범 사례로는 Azure 가속 네트워킹 지원, 다중 NIC 지원, HA(고가용성) 포트 부하 분산 규칙에 대한 Azure Load Balancer 사용, VMSS(Virtual Machine Scale Sets) 지원 등이 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/fastai-on-azure-dsvm/">Azure Data Science Virtual Machines에서 고유한 딥 러닝 모델 빌드</a></h3>
+
+
+  <p>fast.ai 코더 2019 강좌를 위한 실용 심층 Learning 소프트웨어 개발자가 자체적인 최신 딥 러닝 모델을 빌드하는 데 도움이 됩니다. 이 과정을 완료한 개발자는 컴퓨터 비전, 자연어 처리, 추천 알고리즘 및 테이블 형식 데이터를 비롯한 여러 도메인의 딥 러닝 기술에 능숙해집니다. Azure DSVM(Data Science Virtual Machines)을 사용하여 이 과정을 실행하는 방법을 알아봅니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d8ece942-20c6-40b1-8bd0-44d4853014a2.png"><img alt="Screenshot from fast.ai notebook" height="421" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d8ece942-20c6-40b1-8bd0-44d4853014a2.png" title="fast.ai Notebook의 스크린샷" width="600"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/performance-best-practices-for-using-azure-database-for-postgresql-connection-pooling/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Database for PostgreSQL &ndash; 연결 풀링을 사용하기 위한 성능 모범 사례</a></h3>
+
+
+  <p>이 블로그는 Azure Database for PostgreSQL 서비스를 사용할 때 성능 및 규모 향상을 위한 모범 사례를 공유하기 위한 일련의 블로그 게시물의 연속입니다. 이 게시물은 연결 풀링 사용의 이점에 중점을 두고 Azure Database for PostgreSQL에서 실행되는 애플리케이션의 연결 복원력, 성능 및 확장성을 개선하기 위한 권장 사항을 제공합니다.</p>
+
+
+  <h3><a href="https://medium.com/microsoftazure/azure-event-grid-the-whole-story-4b7b4ec4ad23">Azure Event Grid: 전체 스토리</a></h3>
+
+
+  <p>약속된 대로 Microsoft Cloud Advocate인 Jeremy Likness는 모든 이벤트 기반 컴퓨팅 요구 사항인 Azure Event Grid( 모든 원본에서 대상으로 모든 이벤트의 라우팅을 관리하기 위한 단일 서비스)에 대해 서버리스 백본을 철저히 조사합니다.</p>
+
+
+  <h3><a href="https://medium.com/microsoftazure/pentesting-azure-thoughts-before-reading-matts-book-4609d14fb61d">클라우드 컴퓨팅에서 보안에 대한 Azure &mdash; 생각 테스트</a></h3>
+
+
+  <p>Microsoft Cloud Advocate인 Tanya Janca는 Azure 애플리케이션 침투 테스트(pentesting)에 대한 자신의 생각 목록을 공유하여 Matt Burrough에서 <em>Pentesting Azure 애플리케이션</em> 을 읽기 시작합니다. 그녀는 책 읽기를 마치면 미래의 게시물을 약속합니다.</p>
+
+  <!-- AZURE SHOWS -->
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3><a href="https://azpodcast.azurewebsites.net/post/Episode-265-Azure-DevOps-Server">에피소드 265 - Azure DevOps Server</a> |  <a href="https://azpodcast.azurewebsites.net/">Azure 팟캐스트</a></h3>
+
+
+  <p>신시아와 에반은 Microsoft의 프로그램 관리 이사인 Jamie Cool과 이야기를 나누며, 조직의 Azure DevOps Server 대한 모든 세부 사항과 잠재적 사용 사례를 제공합니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode265.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Azure-Friday/An-overview-of-Azure-Blueprints?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Blueprints</a> |  개요 <a href="https://channel9.msdn.com/Shows/Azure-Friday">Azure Friday</a></h3>
+
+
+  <p>Alex Frankel이 Scott Hanselman에 합류하여 Azure Blueprints에 대해 논의합니다. 환경 만들기는 길고 오류가 발생하기 쉬운 프로세스일 수 있습니다. Azure Blueprints를 사용하면 정책, 역할 기반 액세스 제어 및 Azure Resource Manager 템플릿과 같은 구성 가능한 아티팩트를 사용하여 반복 가능한 방식으로 클라우드 환경을 배포하고 업데이트할 수 있습니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/An-overview-of-Azure-Blueprints/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Azure-Friday/Enhanced-monitoring-capabilities-and-tagsannotations-in-Azure-Data-Factory?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Data Factory의 향상된 모니터링 기능 및 태그/주석</a> |  <a href="https://channel9.msdn.com/Shows/Azure-Friday">Azure Friday</a></h3>
+
+
+  <p>Gaurav Malhotra 및 Scott Hanselman은 Azure Data Factory에서 대시보드 및 향상된 디버깅 지원을 포함하여 태그 지정 지원 및 향상된 모니터링 기능을 살펴봅니다. 데이터 통합은 복잡하며 데이터 팩터리 파이프라인을 모니터링하는 기능은 엔터프라이즈 내 개발 운영 담당자의 주요 요구 사항입니다. 이제 데이터 팩터리 파이프라인에 태그를 지정/주석을 달고 특정 태그를 사용하여 모든 파이프라인 실행을 모니터링할 수 있습니다. 또한 Data Factory 시각적 도구는 파이프라인을 모니터링하는 대시보드와 활동이 실행되는 IR(Integration Runtime)을 통해 파이프라인 실행을 모니터링하는 기능을 제공합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Enhanced-monitoring-capabilities-and-tagsannotations-in-Azure-Data-Factory/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Blocktalk/Logic-Apps-Connector-to-Ethereum-Blockchain-Networks?ocid=AID765057&amp;wt.mc_id=CFID0418">Ethereum Blockchain Network</a> | 에 대한 Logic Apps 커넥터 <a href="https://channel9.msdn.com/Shows/Blocktalk?ocid=AID765057&amp;wt.mc_id=CFID0418">통화 차단</a></h3>
+
+
+  <p>이 에피소드에서는 서버리스 Ethereum Connector를 사용하여 풍부한 Azure Logic Apps 커넥터 에코시스템을 사용하여 스마트 계약을 자동화된 시각적 워크플로로 변환하는 방법에 대한 개요를 제공합니다. Logic Apps의 핵심 개념을 소개하고 스마트 계약 속성을 읽고 Azure Blob Storage에 쓰는 방법을 포함하여 Solidity 이벤트에 의해 트리거되는 샘플 워크플로를 보여 줍니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Blocktalk/Logic-Apps-Connector-to-Ethereum-Blockchain-Networks/player?format=ny" width="576"></iframe></p>
+
+
+  <h3>Windows <a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show?ocid=AID765057&amp;wt.mc_id=CFID0418">Internet of Things Show</a><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Device-Agent-for-Windows?ocid=AID765057&amp;wt.mc_id=CFID0418">에 대한 Azure IoT</a> |  디바이스 에이전트</h3>
+
+
+  <p>산업 환경이든 소매 환경이든 산업 전반의 고객은 IoT 디바이스를 원격으로 프로비전하고 관리하는 방법을 찾고 있습니다. IoT 디바이스가 현장 또는 공장 바닥에 있을 때 직접 디바이스 액세스가 항상 가능하지는 않을 수 있습니다. Microsoft Azure IoT 디바이스 에이전트를 사용하면 운영자가 Azure 대시보드에서 원격으로 디바이스를 구성, 모니터링 및 관리할 수 있습니다. #IoTShow 이 에피소드에서는 데모를 사용하여 Microsoft Azure IoT 디바이스 에이전트에 대한 개요를 확인할 수 있습니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Device-Agent-for-Windows/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure?ocid=AID765057&amp;wt.mc_id=CFID0418">Mac용 Visual Studio: Azure</a> | <a href="https://channel9.msdn.com/Shows/Visual-Studio-Toolbox?ocid=AID765057&amp;wt.mc_id=CFID0418">에 게시Visual Studio 도구 상자</a></h3>
+
+
+  <p>이 비디오에서 Cody Beyer는 로그인하여 웹 프로젝트를 Azure에 게시하는 방법을 보여 줍니다. 그와 함께 Azure의 강력한 기능과 결합하여 Mac용 Visual Studio 최대한 활용하는 방법을 알아봅니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Publish-to-Azure/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=966TJ6mlOYY">Kubernetes 클러스터 | 관리하는 방법 Kubernetes 모범 사례 시리즈</a></h3>
+
+
+  <p>Kubernetes 모범 사례 시리즈의 이 에피소드에서 현장 전문가로부터 Kubernetes 클러스터를 관리하는 방법에 대한 모범 사례를 알아봅니다. 이 중간 수준 심층 분석에서는 Kubernetes의 클러스터 관리 및 다중 테넌시에 대해 알아봅니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=966TJ6mlOYY"><img alt="Thumbnail from How to manage your Kubernetes clusters | Kubernetes BestPractices Series on YouTube" border="0" height="270" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3093b2a6-640e-45d2-9d6f-d9a4bda40336.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Kubernetes 클러스터 | 관리하는 방법 보기 유튜브의 Kubernetes BestPractices 시리즈" width="480"></a></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=pB_xjSg7fcQ">Azure Cloud Shell을 Visual Studio Code | 추가하는 방법 Azure 팁 및 트릭</a></h3>
+
+
+  <p>이 버전의 Azure 팁 및 Tricks에서는 Azure Cloud Shell을 Visual Studio Code 추가하는 방법을 알아봅니다. Azure Cloud Shell을 추가하려면 Visual Studio Code Azure 계정&rdquo; 확장이 설치되어 있는지 확인&ldquo;합니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=pB_xjSg7fcQ"><img alt="Thumbnail from How to add the Azure Cloud Shell to Visual Studio Code | Azure Tips and Tricks on YouTube" border="0" height="269" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1fce4d0e-7ca3-4802-a794-7bc061cb1dfe.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Cloud Shell을 Visual Studio Code | 추가하는 방법 보기 YouTube의 Azure 팁 및 트릭" width="480"></a></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=JoRCAtUpSF8">Azure Government용 VS Code 확장 개요</a></h3>
+
+
+  <p>Azure Government 비디오 시리즈의 이 에피소드에서 Steve Michelotti는 Azure Government 엔지니어링 팀의 프로그램 관리자인 Yujin Hong과 함께 Azure용 놀라운 VS Code 확장에 대해 논의합니다. VS Code 빠르게 세계에서 가장 인기있는 편집기가되었고 이에 대한 많은 이유가 있지만, 주요 이유 중 하나는 VS Code&rsquo; 확장성입니다. Azure에 사용할 수 있는 수많은 VS Code 확장이 있으며, 이제 Azure Government에 동일한 확장을 사용할 수 있습니다. 데모가 많은 이 비디오에서 Yujin은 이러한 모든 멋진 확장이 Azure Government에 원활하게 인증될 수 있도록 하는 통합 인증 환경을 보여 줍니다. 그런 다음, 개발자가 Azure Government에서 Storage, App Service, Cosmos DB 및 Azure Functions로 작업할 수 있도록 이러한 확장을 얼마나 쉽게 수행할 수 있는지 보여주는 몇 가지 데모를 안내합니다. Azure Government와 함께 작업하는 개발자가 있다면&rsquo; 이 비디오는 사용자를 위한 것입니다!</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=JoRCAtUpSF8"><img alt="Thumbnail from Overview of VS Code Extensions for Azure Government on YouTube" border="0" height="269" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9f2325dc-2967-4ee7-9f24-977d9386bf60.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="YouTube에서 Azure Government용 VS Code 확장 개요 보기" width="480"></a></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=G8e55N-ityg">최신 데이터 웨어하우스 개요 | Azure SQL Data Warehouse</a></h3>
+
+
+  <p>Azure에서 데이터 파이프라인을 빌드하는 방법에 대해 어떻게 생각하십니까? 최신 데이터 웨어하우스 솔루션 패턴이 클라우드에서 데이터 인프라를 현대화하고 새로운 비즈니스 시나리오를 사용하도록 설정하는 방법을 알아보세요. Azure SQL Data Warehouse에서 8부로 구성된 시리즈의 첫 번째 에피소드입니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=G8e55N-ityg"><img alt="Thumbnail from Modern Data Warehouse overview | Azure SQL Data Warehouse  on YouTube" border="0" height="268" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/237c99f8-fdfc-4eb0-bce3-37f54d8fae02.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="최신 데이터 웨어하우스 개요 | 보기 YouTube의 Azure SQL Data Warehouse" width="480"></a></p>
+
+
+  <h3>문어 배포에 폴 스토벨 - 에피소드 22 | Azure DevOps 팟캐스트</h3>
+
+
+  <p>폴 스토벨, 문어 배포의 설립자이자 CEO, 오늘 팟 캐스트에 합류. Paul은 자동화된 배포 및 클라우드 운영에 대한 전문가입니다. 그는 2011년에 문어 배포를 시작했지만, 그 전에는 약 5년 동안 컨설턴트로 일했습니다. 문어 배포는 시장에서 꽤 주요 플레이어입니다. 그들의 사명? 자동화된 배포를 실제로 수행하려면 정말 잘 수행합니다. 현재 20,000명 이상의 고객이 배포를 자동화하고 40명의 뛰어난 직원을 고용하고 있습니다. Azure DevOps 서비스 및 기타 여러 빌드 서비스와 통합할 수 있습니다. 이번 주&rsquo; 에피소드에서 Paul은 자신의 경력 여정과 문어 배포를 만들게 된 방법, 문어 배포에 대한 그의 업적, 목표 및 비전, 서버를 문어 배포와 가장 잘 통합하는 방법, 이를 가장 잘 활용하는 방법에 대한 팁과 트릭, DevOps 미래에 대한 비전에 대해 이야기합니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://traffic.libsyn.com/preview/azuredevops/ADP_022.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h2>이벤트</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/cloud-commercial-communities-webinar-and-podcast-newsletter-february-2019/?ocid=AID765057&amp;wt.mc_id=CFID0418">클라우드 상업 커뮤니티 웨비나 및 팟캐스트 뉴스레터&ndash;February 2019</a></h3>
+
+
+  <p>이 클라우드 상업 커뮤니티 월간 웨비나 및 팟캐스트 업데이트에서 예정된 2월 링크와 1월부터 웹 세미나 및 팟캐스트에 대한 링크를 모두 가져옵니다. 팀은 매달 Azure 및 Dynamics를 사용하여 성공을 높이기 위해 Microsoft 파트너 및 고객이 알아야 하는 핵심 프로그램, 업데이트, 추세 및 기술에 중점을 둡니다. 많은 콘텐츠를 주문형 소비에 사용할 수 있지만 라이브 웨비나에 참석하면 웨비나 호스트와 함께 QA&amp;에 참여할 수 있습니다.</p>
+
+
+  <h2>고객, 파트너 및 산업</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/modernizing-payment-management-for-online-merchants/?ocid=AID765057&amp;wt.mc_id=CFID0418">온라인 가맹점에 대한 결제 관리 현대화</a></h3>
+
+
+  <p>Newgen&#39;완전히 통합된 포털인 Guru에 대해 알아봅니다. 이 포털에서는 판매자가 결제를 완전히 보고, 보고서를 생성하고, 거래를 캡처/무효화하고, 환불을 수행할 수 있습니다. Guru는 Microsoft Azure 완전히 호스트되는 완전한 클라우드 기반 솔루션입니다. 그것은 상인을위한 Newgen&#39;결제 게이트웨이&mdash; 최첨단 지불 기술과 가치 추가로 제공되는 완전히 관리되는 SaaS 솔루션입니다.</p>
+
+
+  <p align="center"><img alt="Illustration of the benefits of Newgen's Payment Gateway" height="267" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f9c04c38-0109-42c1-a5ed-37ab26d87f87.png" title="Newgen 결제 게이트웨이의 이점" width="300"></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-iot-drives-next-wave-innovation-in-infrastructure-and-energy/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure IoT 인프라 및 에너지의 차세대 혁신을 촉진합니다.</a></h3>
+
+
+  <p>지난 주 뉴올리언스에서 열린 DistribuTECH 컨퍼런스에서 Azure IoT 파트너는 그리드에 다음 수준의 &ldquo;스마트&rdquo;를 제공하는 새로운 솔루션을 선보였습니다. Microsoft 부스에 8개의 파트너를 초대하여 인프라 현대화에 대한 접근 방식과 Azure IoT 결과에 대한 시간을 획기적으로 가속화하는 방법을 시연했습니다. 각 파트너가 클라우드, AI 및 IoT를 활용하는 유틸리티, 인프라 및 도시에 대한 새로운 사용 사례를 보여 준 방법을 알아봅니다. 인텔리전트 클라우드와 인텔리전트 에지를 최대한 활용하는 솔루션을 통해 클라우드, IoT 및 AI가 모든 산업을 크게 변화시킬 수 있는 능력을 지속적으로 보여 줍니다. 스마트 그리드는 전력 및 유틸리티 회사, 그리드 운영자 및 에너지 프로세머의 효율성을 촉진합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/advancing-tactical-edge-scenarios-with-dell-emc-tactical-microsoft-azure-stack-and-azure-data-box-family/?ocid=AID765057&amp;wt.mc_id=CFID0418">Dell EMC 전술 Microsoft Azure Stack 및 Azure Data Box 제품군을 사용하여 전술 에지 시나리오 발전</a></h3>
+
+
+  <p>Microsoft는 Dell EMC와 같은 파트너와 협력하여 인텔리전트 클라우드와 인텔리전트 에지의 기능을 정부 고객 및 파트너에게 지속적으로 제공하는 새로운 기능을 공유했습니다. 작년에 Azure Government 고객을 위한 Azure Stack 가용성을 발표했습니다. Azure Government용 Azure Stack을 사용하여 기관은 사이버 방어 문제, 규정 또는 기타 요구 사항으로 인해 준비되지 않았거나 퍼블릭 클라우드에 적합하지 않은 온-프레미스 레거시 애플리케이션을 효율적으로 현대화할 수 있습니다. Data Box 제품을 사용하면 기관이 시간, 네트워크 가용성 또는 비용으로 제한되는 경우 백업, 보관 또는 빅 데이터 분석과 같은 대량의 데이터를 Azure로 마이그레이션할 수 있습니다.</p>
+
+
+  <p align="center"><img alt="Photo of Dell EMC Tactical Microsoft Azure Stack in partnership with Tracewell Systems" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f1634358-4fa7-45c8-b25c-cfbbbac80710.jpg" title="Tracewell Systems와 협력하여 Dell EMC 전술 Microsoft Azure 스택"></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/investing-in-our-partners-success/">파트너&rsquo; 성공에 투자</a></h3>
+
+
+  <p>Microsoft는 오랫동안 파트너 지향 조직이지만 클라우드와 다른 몇 가지 사항이 있습니다. 특히 파트너는 Microsoft가 단순히 훌륭한 기술 공급자가 되어야 하며, 신뢰할 수 있는 비즈니스 파트너가 되어야 합니다. 이를 위해서는 장기적인 노력과 시장의 변화에 따라 지속적으로 적응하고 혁신할 수 있는 능력이 필요합니다. 이것은 우리의 헌신이었으며, 계속 되고 있습니다. 우리의 파트너십 철학은 우리 주변에 강력하고 성공적인 생태계가 있는 경우에만 우리의 사명을 이행할 수 있는 기초에 기반을 두고 있습니다. 줄리아 화이트(Julia White) Microsoft Azure&nbsp; 기업 부사장은 파트너가 성공적으로 비즈니스를 성장시키는 데 도움이 되는 주요 파트너 지향 투자와 일부 리소스를 강조합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-new-offers-volume-31/?ocid=AID765057&amp;wt.mc_id=CFID0418">Azure Marketplace 새 제품 &ndash; 볼륨 31</a></h3>
+
+
+  <p>Azure Marketplace는 Azure에서 실행되도록 인증되고 최적화된 모든 소프트웨어 요구 사항에 &ndash; 대한 최고의 대상입니다. 수백 개의 주요 소프트웨어 공급자에서 애플리케이션 &amp; 서비스를 찾고, 시도하고, 구매하고, 프로비전합니다. Gold 및 Silver Microsoft Cloud Competency 파트너와 연결하여 Azure 채택을 도울 수도 있습니다. 1월 상반기에는 67개 새로운 제품을 발표했습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/colfax-amplifies-the-power-of-its-esab-product-portfolio-with-iot/?ocid=AID765057&amp;wt.mc_id=CFID0418">Colfax는 IoT를 사용하여 ESAB 제품 포트폴리오의 힘을 증폭합니다.</a></h3>
+
+
+  <p>IoT(사물 인터넷)의 진화로 Colfax는 비즈니스를 혁신할 수 있는 기회를 보았습니다. DDA(Data Driven Advantage) &ndash;&nbsp; 라는 Colfaxs&rsquo; IoT 이니셔티브 &ndash; 의 독특한 점은 고객이 광범위한 ESAB 포트폴리오를 활용할 수 있도록 하는 비전이었습니다. Azure용 PTC Thingworx 및 Microsoft Azure IoT 플랫폼을 선택했습니다. ESAB 디지털 솔루션을 통해 고객은 이제 프로세스, 노동 및 재료가 각 부품의 비용에 어떻게 기여하는지 이해할 수 있는 데이터를 갖게 되었습니다.</p>
+
+
+  <hr>
+
+  <h3><a href="https://www.youtube.com/watch?v=6QGUALwKyDg">Azure의 이번 주 - 2019</a> | 년 2월 8일 <a href="https://www.youtube.com/playlist?list=PLI1_CQcV71RmnrRBgJNlI1yY_WiOWIXov">클라우드 전문가 - 이번 주 Azure에서</a></h3>
+
+
+  <p>이번 주 Azure에서 Lars가 Lsv2 시리즈 VM에 대해 이야기하고, 새로운 버전의 Microsoft Threat Modeling Tool out이 있으며,&rsquo; Azure 퀴즈가 매주 월요일에 돌아왔으며, 다음 주 시드니의 Ignite Tour에서 A Cloud Guru의 팀을 만나게 됩니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=6QGUALwKyDg"><img alt="Thumbnail from This Week in Azure - 8 February 2019 | ACloud Guru - This Week in Azure on YouTube" border="0" height="268" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/96164b3d-7c51-4f91-b51c-5b24a0086079.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure에서 이번 주 시청 - 2019년 2월 8일 | ACloud 전문가 - 이번 주 Azure on YouTube" width="480"></a></p>

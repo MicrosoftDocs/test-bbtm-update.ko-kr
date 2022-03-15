@@ -1,0 +1,69 @@
+### YamlMime:Yaml
+ms.openlocfilehash: add8d6238c4bd0248ab57676152f63f39e814051
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897873"
+Slug: new-windows-server-containers-and-azure-support-for-docker
+Title: 새 Windows Server 컨테이너 및 Docker에 대한 Azure 지원
+Summary: 현재 Microsoft와 Docker Inc.는 Windows Server 에코시스템을 Docker 커뮤니티에 도입한다고 공동 발표하고 있습니다.
+Content: >-
+  6월에 Microsoft Azure Linux VM의 Docker 컨테이너에 대한 지원을 추가하여 Dockerized Linux 애플리케이션의 광범위한 에코시스템이 Azure의 업계 최고의 클라우드 내에서 실행되도록 했습니다. 현재 Microsoft와 Docker Inc.는 1) Windows Server의 다음 물결에 대한 투자, 2) Windows Server용 Docker 엔진의 오픈 소스 개발, 3) Docker 오픈 오케스트레이션 API에 대한 Azure 지원 및 4) Azure 갤러리 및 포털에 Docker Hub 이미지 페더레이션을 통해 Windows Server 에코시스템을 Docker 커뮤니티에 도입한다고 공동 발표하고 있습니다.
+
+
+  많은 고객이 Windows Server 및 Linux 워크로드를 혼합하여 실행하고 Microsoft Azure 고객에게 클라우드 공급자를 가장 많이 선택할 수 있도록 합니다. Windows Server의 다음 단계에서 Docker 컨테이너를 지원함으로써 Windows Server 및 Linux 모두에서 사용 가능한 Docker 개방형 솔루션을 만들게 되어 기쁩니다. 애플리케이션 자체는 혼합될 수 있습니다. Linux 에코시스템과 Windows Server 에코시스템에서 최고의 기술을 결합합니다. Windows 서버 컨테이너는 데이터 센터, 호스트된 데이터 센터 또는 퍼블릭 클라우드 공급자에서 실행되며 물론 Microsoft Azure.
+
+
+  &nbsp;
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/10/15/DockerAndAzureEcosystem.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="DockerAndAzureEcosystem" alt="DockerAndAzureEcosystem" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DockerAndAzureEcosystem_thumb.png" width="1254" height="613" border="0" /></a>
+
+
+  &nbsp;
+
+  <h4>Windows Server 컨테이너</h4>
+
+  Windows 서버 컨테이너는 애플리케이션에 격리된 이식 가능 및 리소스 제어 운영 환경을 제공합니다. 이러한 격리를 통해 컨테이너화된 애플리케이션은 애플리케이션에 영향을 주는 종속성 및 환경 구성의 위험 없이 실행할 수 있습니다. 동일한 커널 및 기타 주요 시스템 구성 요소를 공유함으로써 컨테이너는 빠른 시작 시간과 리소스 오버헤드를 줄입니다. 빠른 시작은 개발 및 테스트 시나리오 및 지속적인 통합 환경에 도움이 되지만 리소스 오버헤드를 줄이면 서비스 지향 아키텍처에 적합합니다.
+
+
+  Windows Server 컨테이너 인프라를 사용하면 Windows Server의 다음 물결이 실행되는 모든 위치에 컨테이너를 공유, 게시 및 배송할 수 있습니다. 이 새로운 기술을 통해 .NET, ASP.NET, PowerShell 등의 기술에 익숙한 수백만 명의 Windows 개발자가 컨테이너 기술을 활용할 수 있습니다. 개발자는 더 이상 컨테이너의 이점과 Windows Server 기술 중에서 선택할 필요가 없습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/10/15/WindowsServerContainer.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="WindowsServerContainer" alt="WindowsServerContainer" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/WindowsServerContainer_thumb.png" width="1254" height="490" border="0" /></a>
+
+
+  &nbsp;
+
+  <h4>Docker 에코시스템에서 서버 컨테이너 Windows</h4>
+
+  Docker는 Linux 컨테이너 기술을 기반으로 활기찬 오픈 소스 에코시스템을 구축하는 환상적인 작업을 수행했으며, Docker Hub의 방대한 오픈 및 큐레이팅된 애플리케이션 컬렉션에서 가져온 컨테이너의 수명 주기를 쉽게 관리할 수 있는 사용자 환경을 제공합니다. Windows Server 컨테이너를 Docker 에코시스템으로 가져와 두 개발자 커뮤니티의 범위를 확장합니다.
+
+
+  이 과정의 일환으로 Windows Server 컨테이너용 Docker 엔진은 Microsoft가 활성 커뮤니티 구성원으로 참여하는 Docker 오픈 소스 프로젝트의 이지로 개발됩니다. Windows 서버 컨테이너 이미지는 이미 사용 가능한 Linux용 45,000개 및 증가하는 Docker 이미지와 함께 Docker 허브에서도 사용할 수 있습니다.
+
+
+  마지막으로, 기본적으로 Windows Server에서 Docker 클라이언트를 지원하기 위해 노력하고 있습니다. 따라서 Windows 고객은 여러 개발 환경에서 동일한 표준 Docker 클라이언트 및 인터페이스를 사용할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/10/15/DockerWithWindowsSrvAndLinux.png"><img style="padding-top: 0px; padding-left: 0px; padding-right: 0px; border: 0px;" title="DockerWithWindowsSrvAndLinux" alt="DockerWithWindowsSrvAndLinux" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/DockerWithWindowsSrvAndLinux_thumb.png" width="1254" height="621" border="0" /></a>
+
+
+  Microsoft의 Docker 오픈 소스 프로젝트 작업에 대한 자세한 내용은 MS Open Tech 블로그에서 확인할 수 있습니다.
+
+  <h4>docker on Microsoft Azure</h4>
+
+  올해 초, Microsoft는 Azure에서 <a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-docker-vm-extension/">Linux용 Docker 컨테이너</a>를 출시했으며, 요청된 각 VM에 최신 Docker 엔진을 배포하기 위해 Azure 확장 모델 및 Azure 플랫폼 간 CLI를 활용하여 Microsoft Azure Linux Virtual Machines에서 첫 번째 엔터프라이즈 지원 버전의 Docker 오픈 플랫폼을 제공했습니다. Linux 지원의 일환으로 Azure에 Docker 컨테이너를 배포하는 고객으로부터 많은 기대를 받았습니다.
+
+
+  오늘 발표의 일환으로 Docker Open Orchestration API를 통해 Azure의 다중 컨테이너 Docker 애플리케이션에 대한 지원을 지원할 예정입니다. 이렇게 하면 사용자가 Docker 클라이언트에서 직접 Docker 애플리케이션을 Azure에 배포할 수 있습니다. 이로 인해 Azure 고객에게는 사용자 환경이 획기적으로 더 간단해지게 됩니다. 우리는 Docker의 <a href="https://blog.docker.com/2014/10/announcing-docker-global-hack-day-2/">글로벌 해킹의 날</a> 뿐만 아니라 바르셀로나에서 곧 마이크로 소프트 테크 유럽 컨퍼런스에서이 새로운 공동 기능을 보여주기를 기대하고있다.
+
+
+  또한 Docker Hub를 <a href="https://azure.microsoft.com/en-us/gallery/">Azure 갤러리</a> 및 관리 포털 환경에 통합하여 Windows Server 및 Linux 고객에게 활력을 불어넣을 수 있기를 바랍니다. 즉, Azure 고객은 Docker Hub의 리포지토리 및 이미지와 직접 상호 작용하여 Azure 갤러리 및 Docker Hub에서 풍부한 콘텐츠 구성을 사용할 수 있습니다.
+
+
+  요약하자면, 오늘은 Docker 에코시스템에 Windows Server를 도입하고 Docker 엔진 및 오케스트레이션 API에 대한 Azure의 지원을 개선하고 Docker Hub를 Azure 갤러리 및 관리 포털과 통합하기 위한 Docker Inc.와의 파트너십을 발표했습니다.
+
+
+  Azure는 Linux 및 Windows Server에 대한 최고 수준의 지원을 포함하여 개발자 선택 및 유연성에 높은 우선 순위를 두고 있습니다. 이 확장된 파트너십은 Linux의 Docker에 대한 Azure의 현재 지원을 기반으로 하며, Docker 커뮤니티에 Windows Server 및 .NET 에코시스템의 풍요로움을 가져올 것입니다. Azure 클라우드에 있는 것은 흥미로운 시간입니다!

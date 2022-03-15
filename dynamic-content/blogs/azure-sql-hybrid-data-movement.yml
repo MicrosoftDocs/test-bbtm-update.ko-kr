@@ -1,0 +1,297 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 475573e4371403db9dfe3c9d8c26509d9c76d2bb
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913089"
+Slug: azure-sql-hybrid-data-movement
+Title: Azure SQL 하이브리드 데이터 이동
+Summary: '하이브리드 클라우드 환경에서 데이터를 효율적으로 이동하는 것은 매우 중요하고 어려운 일입니다. 이 블로그에서는 온-프레미스 SQL Server, Azure SQL VM 및 Azure SQL Database를 기반으로 구축된 다양한 데이터 이동 시나리오의 옵션을 소개합니다. '
+Content: >-
+  <p>오늘날 클라우드 컴퓨팅이 점점 더 인기를 끌고 있는 가운데, 많은 회사에서 온-프레미스 데이터 센터와 퍼블릭 클라우드를 혼합하여 하이브리드 환경을 배포하기로 결정했습니다. 이는 비즈니스에 더 큰 유연성과 더 많은 데이터 배포 옵션을 제공합니다. 예를 들어 회사는 온-프레미스 데이터 센터에서 중요하거나 중요한 비즈니스 데이터를 호스트하고 덜 중요한 데이터를 배포하거나 퍼블릭 클라우드에서 테스트 및 개발 환경을 배포할 수 있습니다. 하이브리드 클라우드 환경은 대기업이 비즈니스를 방해하지 않고 여러 단계에서 온-프레미스 데이터 센터를 클라우드로 마이그레이션하는 데에도 도움이 됩니다.</p>
+
+
+  <p>하이브리드 클라우드 환경에서 데이터를 효율적으로 이동하는 것은 매우 중요하고 어려운 일입니다. 이 블로그에서는 온-프레미스 SQL Server, Azure SQL VM 및 Azure SQL Database를 기반으로 구축된 다양한 데이터 이동 시나리오의 옵션을 소개합니다.</p>
+
+
+  <ul>
+      <li>온-프레미스 SQL Server Azure로 데이터 마이그레이션</li>
+      <li>비즈니스 연속성을 위한 데이터 복제</li>
+      <li>읽기 전용 워크로드를 확장하기 위해 데이터 복제</li>
+      <li>개발 테스트 환경을 새로 고치도록 데이터 복제</li>
+      <li>참조 데이터 또는 다중 마스터 배포</li>
+      <li>데이터 백업 및 복원</li>
+      <li>온-프레미스 SQL Server Azure로 콜드 데이터 마이그레이션</li>
+      <li>데이터 웨어하우스로 데이터 이동</li>
+      <li>빅 데이터 플랫폼으로 데이터 이동</li>
+      <li>다른 데이터 플랫폼에서 데이터 이동</li>
+  </ul>
+
+
+  <p>이 블로그에서 다음 기술 및 도구를 언급하겠습니다.</p>
+
+
+  <ul>
+      <li>.bacpac 파일 내보내기 및 가져오기</li>
+      <li>bcp</li>
+      <li>피어 투 피어 트랜잭션 복제를 포함한 트랜잭션 복제</li>
+      <li>병합 복제</li>
+      <li>관리되는 백업 및 파일 스냅샷 백업을 포함하여 백업 및 복원 SQL Server</li>
+      <li>Always On 가용성 그룹</li>
+      <li>Data Migration Assistant(DMA)</li>
+      <li>Azure SQL 데이터 동기화</li>
+      <li>SSIS(SQL Server Integration Services)</li>
+      <li>Azure SQL Database 복사</li>
+      <li>ADF(Azure Data Factory)</li>
+      <li>SSMA(SQL Server Migration Assistant)</li>
+      <li>SSIS에 대한 Attunity CDC</li>
+      <li>SQL Server Stretch Database</li>
+  </ul>
+
+
+  <p>이 블로그의 목표는 다양한 시나리오를 구현하는 데 적합한 기술과 도구를 선택하는 데 도움이 되는 것입니다. 구현 세부 정보 및 단계별 지침은 이 블로그에서 다루지 않습니다. 그러나 관련 리소스에 대한 링크를 제공합니다.</p>
+
+
+  <h3>온-프레미스 SQL Server Azure로 데이터 마이그레이션</h3>
+
+
+  <p>온-프레미스 SQL Server 데이터베이스에서 Azure로 기존 데이터를 마이그레이션하는 경우 측정하고 고려해야 할 몇 가지 주요 사실이 있습니다.</p>
+
+
+  <ol>
+      <li>Azure SQL Databases(PaaS) 또는 Azure SQL VM(IaaS)이 더 나은 옵션인가요? 이것은 오늘 우리의 주제의 범위를 벗어. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-paas-vs-sql-server-iaas">&ldquo;클라우드 SQL Server 옵션 선택: Azure SQL(PaaS) 데이터베이스 또는 Azure VM(IaaS)&rdquo;의 SQL Server</a>을 참조하세요.</li>
+      <li>마이그레이션할 데이터베이스는 몇 개입니까? 얼마나 큰가요?</li>
+      <li>서비스 또는 애플리케이션에서 상당한 비즈니스 영향 없이 얼마나 많은 가동 중지 시간을 감당할 수 있나요?</li>
+  </ol>
+
+
+  <h4>Azure SQL Databases</h4>
+
+
+  <p>가동 중지 시간을 감당할 수 있거나 테스트 마이그레이션을 수행하는 경우 bacpac을 사용하여 데이터베이스를 Azure SQL 데이터베이스로 마이그레이션할 수 있습니다. 자세한 지침은 <a href="https://blogs.msdn.microsoft.com/sqlcat/2016/10/20/migrating-from-sql-server-to-azure-sql-database-using-bacpac-files/">Bacpac 파일을</a>&rdquo; 사용하여 SQL Server Azure SQL Database 마이그레이션 블로그 &ldquo; 를 참조하세요.</p>
+
+
+  <p>데이터베이스, 특히 bacpac을 사용하여 대규모 데이터베이스를 마이그레이션하는 경우 충분한 애플리케이션 가동 중지 시간을 계획합니다. 데이터베이스 크기에 따라 가동 중지 시간은 몇 시간이 될 수 있습니다.</p>
+
+
+  <p>마이그레이션하는 동안 프로덕션에서 데이터베이스를 제거할 여유가 없는 경우 트랜잭션 복제를 마이그레이션 솔루션으로 사용하는 것을 고려할 수 있습니다(SQL Azure 데이터베이스를 푸시 구독자로 사용). 트랜잭션 복제의 &ldquo; 제한 사항을 포함하여 자세한 내용은 SQL Server Azure SQL Database 트랜잭션 <a href="https://blogs.msdn.microsoft.com/sqlcat/2017/02/03/migration-from-sql-server-to-azure-sql-database-using-transactional-replication/">복제</a>&rdquo; 및 &ldquo;<a href="https://msdn.microsoft.com/en-us/library/mt589530.aspx">복제를 사용하여 SQL Database</a>&rdquo; 마이그레이션을 참조하세요.</p>
+
+
+  <p>Azure <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-cloud-migrate">SQL Database로의 마이그레이션</a>에 대한 자세한 내용은 클라우드 &rdquo; 에서 SQL Database SQL Server 데이터베이스 마이그레이션을 참조 &ldquo; 하세요.</p>
+
+
+  <h4>Azure SQL VM</h4>
+
+
+  <p>Azure SQL VM에서 데이터를 마이그레이션하고 호스트하기로 결정한 경우 Always On 복제본 만들기, 백업/복원 등을 비롯한 몇 가지 추가 옵션이 있습니다. 자세한 내용은 &ldquo; Azure VM&rdquo;<a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql">에서 SQL Server SQL Server 데이터베이스 마이그레이션</a>을 참조하세요.</p>
+
+
+  <p>DMA(데이터 Migration Assistant)를 사용하여 온-프레미스 SQL Server 데이터베이스를 Azure SQL VM으로 마이그레이션할 수도 있습니다. DMA는 데이터뿐만 아니라 로그인, 사용자 및 역할과 같은 다른 서버 개체도 마이그레이션할 수 있습니다. DMA를 사용하여 마이그레이션 전에 호환성 문제를 검색할 수도 있습니다. 자세한 내용은 <a href="https://blogs.msdn.microsoft.com/datamigration/dma/">DMA(데이터 Migration Assistant)&rdquo; 문서를&ldquo;</a> 참조하세요.</p>
+
+
+  <h3>비즈니스 연속성을 위한 데이터 복제</h3>
+
+
+  <p>중단 이벤트는 모든 데이터 플랫폼에서 발생할 수 있으며 데이터 손실 또는 데이터베이스 및 애플리케이션을 사용할 수 없게 될 수 있습니다. 데이터 손실 또는 데이터베이스 가동 중지 시간으로부터 빠르게 복구하는 기능은 비즈니스 연속성, 특히 중요 비즈니스용 데이터베이스 및 애플리케이션에 중요합니다.</p>
+
+
+  <h4>Azure SQL Databases</h4>
+
+
+  <p>Azure SQL 데이터베이스에는 고가용성(99.99% 가용성 SLA)을 보장하기 위해 복사본이 두 개 이상 자동으로 생성됩니다. 데이터 센터 중단 시 비즈니스 중단을 방지하거나 완화하려면 활성 지역 복제를 만들거나 지역 중복 백업에서 데이터베이스를 복원할 수 있습니다.</p>
+
+
+  <p>활성 지역 복제는 데이터 센터 가동 중단 동안 최소 가동 중지 시간 및 데이터 손실을 제공합니다. 읽기 전용 워크로드를 스케일 아웃하는 데도 사용할 수 있습니다(다음 시나리오에서 설명). 그러나 활성 지역 복제 복제본을 사용하는 데 추가 비용이 발생합니다. 중요 비즈니스용 데이터베이스에 대해 이 옵션을 고려합니다. 활성 지역 복제에 대한 자세한 내용은 &ldquo;<a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-geo-replication-overview">개요: 활성 지역 복제</a>&rdquo; SQL Database 참조하세요.</p>
+
+
+  <p>필요한 경우에만 지역 중복 백업에서 데이터베이스를 복구할 수 있습니다. 복구 시간이 길어지고 데이터 손실이 더 많이 발생합니다. 데이터 센터 가동 중단 시 더 낮은 비용으로 비즈니스 연속성을 제공합니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-recovery-using-backups#point-in-time-restore">자동화된 데이터베이스 백업</a>&rdquo;을 사용하여 Azure SQL 데이터베이스 복구를 참조 &ldquo; 하세요.</p>
+
+
+  <p>SQL Azure 데이터베이스 비즈니스 연속성에 대한 자세한 내용은 Azure SQL Database <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-business-continuity">비즈니스 연속성</a>&rdquo; 개요에서 &ldquo; 확인할 수 있습니다.</p>
+
+
+  <h4>Azure SQL VM</h4>
+
+
+  <p>SQL VM의 경우 VM 재부팅 또는 중단 중에 가동 중지 시간을 관리하도록 Always On 가용성 그룹 또는 장애 조치(failover) 클러스터 인스턴스를 설정할 수 있습니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-high-availability-dr">Azure Virtual Machines의 SQL Server 대한 고가용성 및 재해 복구</a>를 참조 &ldquo; 하세요&rdquo;.</p>
+
+
+  <h4>온-프레미스 SQL Server 대한 DR 솔루션으로 VM SQL</h4>
+
+
+  <p>다른 지역에 데이터 센터를 빌드하지 않고 DR 사이트를 만들려면 하나 이상의 Azure SQL VM을 프로비전한 다음 온-프레미스 가용성 그룹에 복제본으로 추가하여 온-프레미스 가용성 그룹을 Azure로 확장할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-high-availability-dr">Azure Virtual Machines의 SQL Server 대한 고가용성 및 재해 복구의</a> 하이브리드 IT: 재해 복구 솔루션&rdquo; 섹션&ldquo;을 참조하세요&rdquo;.&ldquo;</p>
+
+
+  <h3>읽기 전용 워크로드를 위해 스케일 아웃할 데이터 복제</h3>
+
+
+  <p>대부분의 시스템에서 특정 애플리케이션은 데이터베이스에서 정보를 읽기만 하면 됩니다. 예를 들어 정보 게시 서비스에서는 게시자만 데이터를 업데이트해야 하며 모든 구독자는 데이터를 읽기만 하면 됩니다. 주 데이터베이스를 오프로드하려면 데이터를 복제하고 읽기 전용 워크로드를 다른 복제본으로 리디렉션할 수 있습니다.</p>
+
+
+  <h4>Azure SQL Databases</h4>
+
+
+  <p>재해 발생 시 비즈니스 연속성을 제공하는 것 외에도 활성 지역 복제를 사용하여 보조 데이터베이스에 작업 보고와 같은 읽기 전용 워크로드를 오프로드할 수도 있습니다. 부하 분산에 보조 데이터베이스만 사용하려는 경우 동일한 지역에 보조 데이터베이스를 만들 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-geo-replication-overview">활성</a> 지역 복제에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-geo-replication-overview">Overview: SQL Database Active Geo-Replication</a>&rdquo;을 참조하세요&ldquo;.</p>
+
+
+  <h4>VM 및 온-프레미스 SQL Server SQL</h4>
+
+
+  <p>VM 또는 온-프레미스 SQL Server SQL 확장하려면 읽기 가능한 Always On 복제본을 빌드할 수 있습니다. 읽기 트래픽이 다른 지역에서 발생하지 않는 한 동일한 지역에 복제본을 빌드하는 것이 좋습니다.</p>
+
+
+  <h3>개발 테스트 환경을 새로 고치도록 데이터 복제</h3>
+
+
+  <p>새 시스템을 시스템 업그레이드 또는 배포하기 전에 프로덕션 데이터의 복사본을 사용하여 테스트할 수 있습니다. 별도의 개발 테스트 환경을 구축하면 프로덕션 환경에 영향을 주지 않고 테스트를 실행하는 데 도움이 됩니다.</p>
+
+
+  <h4>Azure SQL Databases</h4>
+
+
+  <p>개발 테스트 환경을 위해 Azure DB에서 라이브 프로덕션 환경의 복제를 만들려면 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-copy">데이터베이스 복사본</a>을 사용할 수 있습니다.</p>
+
+
+  <p>보존 기간(표준의 경우 35일 Premium, 기본 7일) 내에 이전 데이터를 사용하여 프로덕션 환경의 스냅샷을 복제하려는 경우 데이터베이스를 원하는 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-restore-database-portal">시점으로 복원할</a> 수 있습니다.</p>
+
+
+  <h4>Azure SQL VM 및 온-프레미스 SQL Server</h4>
+
+
+  <p>Azure Databases에서 온-프레미스 또는 Azure SQL VM으로 데이터를 복제하려면 데이터베이스를 bacpac으로 내보내고 Azure VM 또는 온-프레미스에서 실행되는 SQL Server 가져올 수 있습니다. 전체 데이터베이스 대신 특정 테이블만 복제하려는 경우 Azure VM에서 SqlPackage를 실행할 수 있습니다. 자세한 내용은 &ldquo;<a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-export">Azure SQL 데이터베이스 또는 SQL Server 데이터베이스를 BACPAC 파일</a>&rdquo;로 내보내기를 참조하세요.</p>
+
+
+  <h3>참조 데이터/다중 마스터 배포</h3>
+
+
+  <p>국제 ISV 및 기업에는 일반적으로 다른 국가 또는 지역에 클라이언트 또는 지점이 있습니다. 네트워크 대기 시간의 성능 영향을 줄이기 위해 SKU, 사용자 정보 등과 같은 일부 비즈니스 참조 데이터를 Azure SQL 또는 SQL Server 데이터베이스에 배포하려고 합니다. 일반적인 시나리오에서 중앙 데이터베이스는 모든 참조 데이터를 호스트하고 다른 클라이언트 또는 분기에 배포합니다. 클라이언트 또는 분기는 참조 데이터를 로컬로 업데이트하고 변경 사항을 중앙 데이터베이스로 다시 푸시할 수도 있습니다.</p>
+
+
+  <p>Azure SQL 데이터 동기화 사용하여 온-프레미스 SQL Server, Azure SQL VM 및 Azure SQL 데이터베이스 간에 단일 방향 또는 양방향으로 데이터 배포를 구현할 수 있습니다. Azure 데이터 동기화 대한 자세한 내용은 &ldquo;<a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-sql-data-sync">Azure SQL 데이터 동기화 시작(미리 보기)</a>&rdquo;을 참조하세요.</p>
+
+
+  <p>이제 Azure 데이터 동기화 이전 Azure Portal에서만 사용할 수 있습니다. 곧 새 Azure Portal에서 사용할 수 있습니다. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/blog/azure-data-sync-update/">Azure 데이터 동기화 업데이트</a>&rdquo; 블로그 &ldquo; 를 참조하세요.</p>
+
+
+  <h4>온-프레미스 또는 Azure SQL VM에서 Azure SQL Database로</h4>
+
+
+  <p>이러한 분산 다중 마스터 시스템, 특히 인터넷 간 시스템을 설계하고 구현하는 경우 데이터베이스를 분할하고 대기 시간을 줄이기 위해 필요한 경우에만 데이터를 동기화하는 것이 좋습니다.</p>
+
+
+  <p>중앙 데이터베이스가 온-프레미스 또는 Azure SQL VM에 호스트되는 경우 트랜잭션 복제를 사용하여 데이터를 배포할 수 있습니다. Azure SQL 데이터베이스는 푸시 구독자로 구성하고 게시자, 중앙 데이터베이스에서 데이터를 복제할 수 있습니다. 트랜잭션 복제는 단방향으로만 데이터를 복제할 수 있습니다.</p>
+
+
+  <h4>온-프레미스 또는 Azure SQL VM 간</h4>
+
+
+  <p>온-프레미스 SQL Server 또는 Azure SQL VM에 호스트된 모든 데이터가 Azure SQL 데이터 동기화 사용하는 것을 제외하고 양방향으로 데이터를 동기화해야 하는 경우 피어 투 피어 복제 또는 병합 복제를 설정할 수 있습니다.</p>
+
+
+  <p>특정 행이 한 노드에서만 수정되도록 애플리케이션 또는 서비스를 디자인할 수 있는 경우 피어 투 피어 복제를 사용하는 것이 좋습니다. 애플리케이션에 정교한 충돌 감지 및 해결 용량이 필요한 경우 병합 복제를 사용합니다. 병합 복제는 다른 동기화 및 복제 기술에 비해 더 복잡한 토폴로지와 높은 유지 관리 비용을 도입합니다. 다른 기술이 문제를 해결할 수&rsquo; 없는 경우에만 병합 복제를 사용합니다.</p>
+
+
+  <p>피어 투 피어 복제 및 병합 복제는 게시자나 구독자 모두 Azure SQL Database 작동하지 않습니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://msdn.microsoft.com/en-us/library/ms151196.aspx">피어 투 피어 트랜잭션 복제</a> 및 <a href="https://msdn.microsoft.com/en-us/library/ms152746.aspx">병합 복제</a> 를 참조하세요.</p>
+
+
+  <h3>데이터 백업 및 복원</h3>
+
+
+  <p>데이터베이스를 백업하는 것은 데이터를 보호하는 데 필수적입니다. 실수로 손상되거나 삭제된 데이터를 복구할 수 있습니다. 항상 데이터베이스와 별도로 백업 파일을 저장하는 것이 좋습니다. 하이브리드 환경을 사용하면 이를 쉽게 구현할 수 있습니다.</p>
+
+
+  <h4>Azure SQL Databases</h4>
+
+
+  <p>Azure SQL 데이터베이스는 추가 비용 없이 데이터베이스를 자동으로 백업합니다. 보존하는 동안 언제든지 데이터베이스를 복원할 수 있습니다(기본의 경우 7일, 표준 및 Premium 경우 35일). 모든 백업 파일은 다른 지역에도 여러 복사본으로 복제됩니다. 자세한 내용은 SQL Database 백업 &rdquo; 에 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups">대한 자세한 내용을 참조</a>&ldquo;하세요.</p>
+
+
+  <p>비즈니스에서 백업을 위해 더 긴 보존이 필요한 경우 백업을 최대 10년까지 유지하도록 장기 보존 백업을 구성할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-long-term-retention">최대 10년 동안</a>&rdquo; Azure SQL Database 백업 저장을 참조 &ldquo; 하세요.</p>
+
+
+  <p>데이터베이스를 온-프레미스 SQL Server 복원하거나 사용자 고유의 로컬 파일 시스템 또는 다른 클라우드 플랫폼에 백업을 저장하려는 경우 데이터베이스를 bacpac 파일로 내보낼 수 있습니다. Azure 자동화를 사용하여 정기적으로 백업을 예약할 수 있습니다. 샘플 스크립트는 다음 문서에서 제공됩니다. &ldquo;<a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-export">Azure SQL 데이터베이스 또는 SQL Server 데이터베이스를 BACPAC 파일</a>&rdquo;로 내보냅니다.</p>
+
+
+  <h4>Azure SQL VM</h4>
+
+
+  <p>Azure VM에서 SQL Server 실행하는 경우 데이터베이스를 Azure Storage에 백업하는 것이 좋습니다(URL에 백업). 이 기능은 SQL Server 2012 SP1 CU2 이상 버전에서 지원됩니다.</p>
+
+
+  <p>자동화된 백업 관리를 사용하도록 관리되는 백업을 구성할 수도 있습니다. 이 기능은 SQL Server 2014 이상 버전에서 사용할 수 있습니다. 2016년 SQL Server 사용자 지정 일정을 지원합니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-backup-recovery">Azure Virtual Machines의 SQL Server 백업 및 복원</a>을 참조 &ldquo; 하세요&rdquo;.</p>
+
+
+  <p>재해 또는 데이터 센터 중단 시 백업 파일의 가용성을 보장하려면 GRS 또는 RA-GRS 스토리지를 사용하여 백업 파일을 저장하는 것이 좋습니다. 백업 파일을 다른 지역에 자동으로 복제합니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/storage/storage-redundancy">Azure Storage 복제</a>&rdquo;를 참조하세요&ldquo;.</p>
+
+
+  <p>2016 SQL Server 실행하고 Azure Storage에서 데이터 파일을 호스트하는 경우 또 다른 옵션은 파일 스냅샷 백업을 사용하는 것입니다. Azure Storage에 저장된 데이터베이스 파일에 대한 거의 즉각적인 백업 및 신속한 복원을 제공합니다. 자세한 내용은 <a href="https://msdn.microsoft.com/library/mt169363%28v=sql.130%29.aspx">Azure의 데이터베이스 파일에 대한 File-Snapshot Backup을</a> 참조 &ldquo; 하세요.<a href="https://msdn.microsoft.com/library/mt169363%28v=sql.130%29.aspx"></a>&rdquo;</p>
+
+
+  <h4>온-프레미스 SQL Server</h4>
+
+
+  <p>사용자는 항상 데이터베이스 파일과 다른 위치에 백업 파일을 저장하는 것이 좋습니다. SQL Server 2014 이상 버전을 온-프레미스에서 실행하는 경우 URL에 백업 기능을 사용하여 데이터베이스 또는 트랜잭션 로그를 Azure Storage에 직접 백업할 수 있습니다. 그러나 네트워크 대기 시간으로 인해 Azure Storage에 백업하고 복원하면 로컬 디스크에 대해 동일한 작업보다 낮은 처리량이 발생할 수 있습니다. <a href="https://msdn.microsoft.com/library/jj919148%28v=sql.120%29.aspx">자세한 내용은 Windows Azure Blob Storage Service</a>&rdquo;를 사용하여 SQL Server 백업 및 복원을 참조 &ldquo; 하세요.</p>
+
+
+  <h3>온-프레미스 SQL Server Azure로 콜드 데이터 마이그레이션</h3>
+
+
+  <p>데이터베이스 크기가 빠르게 증가함에 따라 기록 또는 콜드 데이터를 효율적으로 관리하고 저장하는 것이 큰 문제가 됩니다. Stretch Database를 사용하여 온-프레미스 SQL Server Azure로 콜드 데이터를 마이그레이션하고 데이터를 온라인으로 유지할 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/sql-server-stretch-database/sql-server-stretch-database-overview">Stretch Database</a>&rdquo;에 대한 자세한 내용은 Stretch Database 소개를 참조하세요&ldquo;.</p>
+
+
+  <h3>데이터 웨어하우스로 데이터 이동</h3>
+
+
+  <p>회사는 데이터 분석 및 보고를 위해 OLTP 시스템에서 OLAP 시스템/데이터 웨어하우스로 데이터를 주기적으로 이동합니다. 이 프로세스에는 일반적으로 데이터 원본의 데이터 노출, 변환 및 ETL(대상 데이터 웨어하우스)으로 데이터 로드가 포함&nbsp;됩니다.</p>
+
+
+  <p>데이터 웨어하우스 및 OLAP 시스템은 Azure SQL Database, Azure SQL VM 또는 Azure SQL Data Warehouse를 기반으로 빌드할 수 있습니다.</p>
+
+
+  <p>대부분의 온-프레미스 SQL Server 고객은 SSIS(SQL Server Integration Services)를 사용하여 데이터를 데이터 웨어하우스로 로드합니다. OLTP 시스템에서 데이터를 추출하고, 변환하고, 데이터 웨어하우스에 로드합니다. SSIS는 하이브리드 환경에서도 사용할 수 있습니다. SSIS 고객을 종료하는 경우 새 ETL 프로세스를 빌드하는 데 드는 비용을 절감할 수 있습니다. SQL VM 또는 SQL 데이터베이스에 데이터를 로드하는 경우 Azure VM에서 SSIS를 실행하는 것이 좋습니다. 자세한 내용은 <a href="https://blogs.msdn.microsoft.com/ssis/2017/01/05/running-ssis-on-azure-vm-iaas-do-more-with-less-money/">Azure VM(IaaS) &ndash;</a>&rdquo; 에서 SSIS 실행 블로그 &ldquo; 를 참조하세요.</p>
+
+
+  <p>Azure Data Warehouse로 데이터를 이동하는 경우 ADF(Azure Data Factory) 또는 bcp를 로드 도구로 사용할 수도 있습니다. 자세한 내용은 &ldquo;<a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-migrate-data">SQL Data Warehouse 마이그레이션</a> 및 &ldquo;<a href="https://docs.microsoft.com/en-us/azure/sql-data-warehouse/sql-data-warehouse-integrate-azure-data-factory">SQL Data Warehouse와 함께 Azure Data</a>&rdquo; Factory 사용을 참조하세요&rdquo;.</p>
+
+
+  <h3>고급 분석을 위한 Azure 빅 데이터 저장소로 데이터 이동</h3>
+
+
+  <p>Azure에서 빅 데이터 고급 분석 솔루션을 빌드하려면 사용자는 다양한 데이터 원본의 온라인 트랜잭션 데이터 및 기타 참조 데이터를 현대화된 다중 플랫폼 데이터 웨어하우스로 로드해야 합니다. 이 웨어하우스는 일반적으로 Azure Blob/Azure Data Lake를 준비 영역으로 구성하고, HIVE/PIG/Spark와 같은 변환 작업을 수행하고, 마지막으로 BI 및 보고용 Azure Data Warehouse에 조리된&rdquo; 데이터를 로드&ldquo;합니다.</p>
+
+
+  <p>데이터를 Azure로 이동하고 그 위에 고급 분석 솔루션을 빌드하려는 경우 데이터의 이동 및 변환을 오케스트레이션하는 완전 관리형 데이터 통합 서비스인 ADF(Azure Data Factory)를 사용할 수 있습니다.&nbsp; ADF에 대한 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/data-factory/data-factory-introduction">클라우드의 데이터 통합 서비스인 Azure Data Factory 서비스 소개</a>를 참조 &ldquo; 하세요.&rdquo;</p>
+
+
+  <p>기존 SSIS 사용자인 경우 SSIS는 Azure Storage Blob 및 Azure Data Lake Store와 같은 빅 데이터 저장소에 데이터를 로드하는 데 사용할 수 있는 또 다른 옵션입니다.&nbsp; Azure에 데이터를 로드하려면 <a href="https://msdn.microsoft.com/en-us/library/mt146770.aspx">Azure 기능 팩</a>이 필요합니다.</p>
+
+
+  <h3>다른 데이터 플랫폼에서 데이터 이동</h3>
+
+
+  <p>다른 DBMS(Oracle, MySQL 등&hellip;)에서 Azure SQL Databases 또는 Azure SQL VM으로 데이터베이스를 마이그레이션하려는 경우 SSMA(SQL Server Migration Assistant)를 유용한 마이그레이션 도구로 사용할 수 있습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/sql/ssma/sql-server-migration-assistant">SQL Server Migration Assistant</a>&rdquo; 참조하세요&ldquo;.</p>
+
+
+  <p>다른 DBMS 또는 플랫 파일과 같은 다른 데이터 형식의 데이터를 Azure SQL Databases 또는 Azure SQL VM으로 지속적으로 이동하거나 Azure에 데이터를 로드하기 전에 일부 변환을 수행해야 하는 경우 SSIS를 사용할 수 있습니다. SSIS용 Attunity CDC 또는 Oracle by Attunity의 SQL Server CDC는 종단 간 운영 데이터 복제 솔루션을 제공합니다. 자세한 내용은 SSIS&rdquo;<a href="https://www.attunity.com/attunity-cdc-for-ssis">용 Attunity CDC</a> 및 &ldquo;<a href="https://blogs.msdn.microsoft.com/dfurman/2013/04/15/sql-server-2012-cdc-for-oracle-a-review-of-one-implementation/">Oracle &ndash; 용 SQL Server 2012 CDC a Review of One Implementation</a>&rdquo;을 참조 &ldquo; 하세요.</p>
+
+
+  <h3>요약</h3>
+
+
+  <p>이 블로그에서는 다양한 하이브리드 데이터 이동 시나리오에 적합한 기술과 도구를 선택하는 방법에 대해 설명했습니다. 이는 이러한 사용 사례에 대한 시작점이자 일반적인 지침일 뿐입니다. 비즈니스 요구 사항에 따라 다른 솔루션을 평가해야 합니다.</p>
+
+
+  <p>추가 질문이 있는 경우 <a href="https://social.msdn.microsoft.com/Forums/en-US/home">MSDN 포럼</a>에 게시하세요.</p>
+
+
+  <p>Azure SQL Databases 또는 Azure SQL VM에 대한 피드백이 있는 경우 제출<a href="https://feedback.azure.com/">https://feedback.azure.com</a>하세요.</p>

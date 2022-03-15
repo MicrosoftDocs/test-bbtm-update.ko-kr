@@ -1,0 +1,51 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 03376d913368285adc81c4e66196b4e3ca174134
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897433"
+Slug: azure-troubleshoot-diagonse-resolve-issues
+Title: Azure 문제 해결 관련 문제 진단 및 해결
+Summary: 소프트웨어가 실패하고 하드웨어가 중단되고 새로운 것을 시도할 때 문제가 발생할 수 있습니다. 이러한 시나리오에서는 문제를 신속하게 진단하고 해결할 수 있어야 합니다.
+Content: >-
+  <p>Azure 지원의 목표는 초기 실험에서부터 Azure에서 프로덕션 워크로드를 실행하는 것까지 클라우드 여정에 도움이 되는 것입니다. 소프트웨어가 실패하고 하드웨어가 중단되고 새로운 것을 시도할 때 문제가 발생할 수 있습니다. 따라서&rsquo;&rsquo;&rsquo; 문제를 신속하게 진단하고 해결할 수 있어야 합니다. 이러한 노력을 지원하기 위해 Azure 지원 팀은 관리 포털에서 새로운 기능을 공유하여 문제를 진단하고 해결하고, 신뢰할 수 있는 문제 해결 리소스(도구, 단계별 단계 및 문서)를 찾고, 필요에 따라 추가 도움말을 쉽게 얻을 수 있게 되어 기쁘게 생각합니다.</p>
+
+
+  <h2>&ldquo;지원 + 문제 해결&rdquo; 설정 섹션</h2>
+
+
+  <p>각 리소스&rsquo; 설정 블레이드 내에서 이제 지원 + 문제 해결 섹션을 &ldquo;&rdquo; 찾을 수 있습니다. 이 섹션에서는 문제를 진단하고 해결하고 추가 지원을 받을 수 있도록 도구 및 리소스에 빠르게 액세스할 수 있도록 합니다. 이 섹션에서는 문제 해결 블레이드와 같은 일반적인 진단 도구를 검색하거나 리소스 컨텍스트에서 지원 요청을 열 수 있습니다.</p>
+
+
+  <p><img alt="image" border="0" height="221" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bee9cd07-7775-4c09-9771-cbd3180e1761.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+
+  <h2>문제 해결 블레이드</h2>
+
+
+  <p>일반적인 문제에 대한 신뢰할 수 있는 솔루션을 검색하고 적용하는 데 도움이 되는 문제 해결 블레이드가 추가되었습니다. 리소스 내의 지원 + 문제 해결 섹션에서 문제 해결&rdquo; 블레이드&ldquo;에 액세스할 수 있습니다.</p>
+
+
+  <p><img alt="Troubleshoot blade" border="0" height="221" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e82b4af9-8ba6-4dd2-bf23-0776a91902a7.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="610"></p>
+
+
+  <p>문제 해결 블레이드에서 나열된 문제 중 하나를 선택하여 해당 솔루션을 볼 수 있습니다. 솔루션은 사용자가 직면한 문제를 진단하고 해결하는 방법을 설명하는 신뢰할 수 있는 Azure 문서에 대한 단계 또는 링크로 구성됩니다. 솔루션은 리소스에 따라 컨텍스트화됩니다. 예를 들어 가상 머신의 경우 솔루션은 가상 머신에서 실행되는 운영 체제&rsquo; 및 리소스 배포 모델(Resource Manager 또는 클래식)을 기반으로 표시됩니다.</p>
+
+
+  <p><img alt="Azure issue error" border="0" height="379" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c07ed6eb-1e0d-456f-98c1-f5f09149da6a.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="480"></p>
+
+
+  <p>문제가 나열되지 않았거나 솔루션이 문제를 해결하는 데 도움이 되지 않는&rsquo; 경우 <a href="https://azure.microsoft.com/support/forums/">MSDN Azure 및 Stack Overflow 포럼의 Azure</a> 전문가에게 문의하거나 Twitter <a href="https://twitter.com/AzureSupport">@AzureSupport</a>에서 Microsoft와 연결할 수 있습니다. 또는 Azure 지원 <a href="https://azure.microsoft.com/support/options/">사이트를</a> 통해 Azure 지원 인시던트를 제출할 수 있습니다( <strong>지원 받기</strong> 선택). 문제 해결 블레이드는 현재 Virtual Machines, Storage, Express Route, Web&nbsp; Apps, SQL Database, Automation 및 Redis Cache에 사용할 수 있습니다. 계속해서 제품 전체에서 문제 해결 범위를 확장하고 더 자동화된 솔루션으로 기존 제품을 업데이트합니다.</p>
+
+
+  <h2>도움말 보기</h2>
+
+
+  <p>&ldquo;지원 + 문제 해결&rdquo; 섹션에서 새 지원 요청&rdquo; 옵션을 추가&ldquo;했습니다. 이렇게 하면 지원 요청을 제출할 수 있습니다. 그러면 리소스 컨텍스트 및 세부 정보가 자동으로 캡처되고 빠른 해결을 위해 올바른 지원 엔지니어에게 전달됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8bc494b6-3555-4640-bef1-35eff58afdd1.png"><img alt="Contact Azure Support" border="0" height="321" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e2862a2b-0361-49f1-9027-4074b92e86c4.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; display: inline; background-image: none;" title="이미지" width="610"></a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/support/plans/">지원 계획이</a> 없는 경우 <a href="https://azure.microsoft.com/support/forums/">MSDN Azure 및 Stack Overflow 포럼의 Azure 전문가에게</a> 문의하거나 Twitter<a href="https://twitter.com/AzureSupport">@AzureSupport</a>에서 Microsoft와 연결할 수 있습니다.</p>

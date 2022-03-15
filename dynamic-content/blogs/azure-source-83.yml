@@ -1,0 +1,114 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5788b5aeed10d63dc709970a06adad9e7e9340d6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913129"
+Slug: azure-source-83
+Title: Azure.Source – 볼륨 83
+Summary: 'Azure SQL Database Edge, Azure Portal 업데이트 및 Azure Cosmos DB의 뉴스 및 업데이트입니다. '
+Content: >-
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-sql-database-edge-enabling-intelligent-data-at-the-edge/">Azure SQL Database Edge: 에지에서 지능형 데이터 사용</a></h3>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/intelligent-edge-innovation-across-data-iot-and-mixed-reality/">Microsoft Build 2019</a>에서는 성능이 뛰어나고 가용성이 높고 안전한 SQL 엔진을 사용하여 에지에서 데이터 및 분석의 요구 사항을 해결하는 데 도움이 되는 미리 보기로 제공되는 Azure SQL Database <a href="https://azure.microsoft.com/en-us/services/sql-database-edge/">Edge</a>를 발표했습니다. 이제 개발자는 일관된 프로그래밍 노출 영역을 채택하여 SQL 데이터베이스에서 개발하고 온-프레미스, 클라우드 또는 에지에서 동일한 코드를 실행할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-portal-may-2019-update/">Microsoft Azure 포털 2019년 5월 업데이트</a></h3>
+
+
+  <p>이번 달에는 사용자 환경, 리소스 구성, 관리 도구 등에 대한 향상된 기능을 포함하여 Azure Portal의 업데이트가 가득합니다. 이제 <a href="https://portal.azure.com/">Azure Portal</a> 에 로그인하고 새로운 모든 항목을&rsquo; 직접 확인합니다. <a href="https://aka.ms/azuremobileapp">Azure 모바일 앱을</a> 다운로드하여 언제 어디서나 Azure 리소스에 연결 상태를 유지합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/a-cosmonaut-s-guide-to-the-latest-azure-cosmos-db-announcements/">최신 Azure Cosmos DB 공지 사항에 대한 Cosmonauts&rsquo; 가이드</a></h3>
+
+
+  <p>Microsoft Build 2019에서는 Apache Spark에 대한 새로운 기본 제공 지원을 사용하는 실시간 운영 분석의 도입과 모든 <a href="https://azure.microsoft.com/en-ca/services/cosmos-db/">Azure Cosmos DB</a> <a href="https://azure.microsoft.com/en-us/blog/planet-scale-operational-analytics-and-ai-with-azure-cosmos-db/">API에 대한 새로운 Jupyter Notebook 환경을</a> 포함하여 흥미로운 새로운 기능을 발표했습니다. 이러한 기능은 고객이 Cosmos 규모로 전 세계적으로 분산된 앱을 쉽게 빌드하는 데 도움이 될 것이라고 믿습니다. 그러나 더 많은 것이 있습니다! 이 블로그에는 Microsoft Build에서 발표된 개발자 환경의 추가 개선 사항이 나와 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/updates/">Azure 업데이트</a></h3>
+
+
+  <p>중요한 Azure 제품 업데이트, 로드맵 및 공지 사항에 대해 알아봅니다. 알림을 구독하여 정보를 유지합니다.</p>
+
+
+  <h2>일반 공급</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/premium-files-redefines-limits-for-azure-files/">Premium 파일은 Azure Files에 대한 제한을 다시 정의합니다.</a></h3>
+
+
+  <p>이제 모든 사용자가 Azure Premium Files 미리 보기를 사용할 수 있습니다. Premium 파일은 클라우드에서 완전히 관리되는 파일 서비스에 대한 다음 수준의 성능을 잠금 해제하는 새로운 성능 계층입니다. Premium 계층은 처리량이 높고 대기 시간이 짧은 IO 집약적 워크로드에 일관된 성능을 제공하도록 최적화되어 있습니다. Premium 공유는 최신 SSD(반도체 드라이브)에 데이터를 저장하므로 파일 서비스, 데이터베이스, 공유 캐시 스토리지, 홈 디렉터리, 콘텐츠 및 공동 작업 리포지토리, 컨테이너용 영구 스토리지, 미디어 및 분석, 높은 변수 및 일괄 처리 워크로드 등과 같은 다양한 워크로드에 적합합니다.</p>
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-firewall-and-network-virtual-appliances/">Azure Firewall 및 네트워크 가상 어플라이언스</a></h3>
+
+
+  <p>네트워크 보안 솔루션은 클라우드에서 실행되는 NVA(네트워크 가상 어플라이언스) 또는 클라우드 네이티브 제품(서비스로서의 방화벽이라고 함)으로 온-프레미스의 어플라이언스로 제공할 수 있습니다. 고객은 종종 Azure Firewall이 네트워크 가상 어플라이언스와 어떻게 다른지, 이러한 솔루션과 공존할 수 있는지, 뛰어난 위치, 누락된 항목&rsquo; 및 예상되는 총 소유 비용(TCO) 혜택에 대해 물어봅니다. 이 블로그 게시물에서 이러한 질문에 답변합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/operationalizing-your-database-health-checks-using-sql-notebooks/">SQL Notebook을 사용하여 PostgreSQL 데이터베이스 상태 검사 운영</a></h3>
+
+
+  <p>대부분의 Postgres 데이터베이스 관리자 및 커뮤니티 구성원은 일반적으로 이러한 문서를 책갈피로 지정하거나 저장하므로 문서를 다시 방문하고 문서에 공유된 쿼리를 다시 사용하여 데이터베이스에 대한 검사를 실행할 수 있습니다. 이 접근 방식의 일반적인 과제는 저장된 보관 파일을 많이 사용하고 필요할 때 검색하는 것이 시간이 오래 걸리고 생산성이 떨어집니다. 상태 검사 Runbook 및 데이터베이스 스크립트를 운영하는 더 좋은 방법은 <a href="https://docs.microsoft.com/en-us/sql/azure-data-studio/sql-notebooks">Azure Data Studio SQL Notebook을</a> 만드는 것입니다. 이 블로그에서는 이 작업을 수행하는 방법을 설명합니다.</p>
+
+
+  <h3><a href="https://medium.com/@burkeholland/the-urlist-an-application-study-in-serverless-and-azure-13c2e3b07dd2">서버리스 및 Azure의 Urlist &mdash; 애플리케이션 연구</a></h3>
+
+
+  <p>Urlist는 다른 사용자와 공유할 수 있는 URL&#39;목록을 만들 수 있는 애플리케이션입니다. 이해가 되세요? URL&rsquo; 목록인가요? The Urlist? 들어봐, 이름 지정은 어렵고 모든 좋은 도메인은 이미 촬영. 이 프로젝트는 내가 추가 자원에 대한 링크의 전체 슬라이드와 함께 내 프리젠 테이션을 종료하고 있음을 깨달은 저자&rsquo;에서 태어났다. 그건&rsquo; 미친! 관객이 정확히 무엇을 해야 할까요? 휴대폰으로 사진을 찍은 다음 돌아가서 나중에 수동으로 모두 입력하시겠습니까? 이게 무슨 10년인가요!?</p>
+
+
+  <h3><a href="https://techcommunity.microsoft.com/t5/ITOps-Talk-Blog/How-to-Migrate-Windows-Server-2008-R2-FSMO-roles-to-Windows/ba-p/538377">Windows Server 2008 R2 FSMO 역할을 Windows Server 2019로 마이그레이션하는 방법</a></h3>
+
+
+  <p>&quot;2020년 1월 Windows Server 2008 R2에 대한 지원이&quot; 종료되면서 사람들은 할 일&quot; 목록에서 높은 티켓 항목을 &quot;확인하는 데 도움이 되는 리소스를 찾고 있습니다. 내 마지막 마이크로 소프트 Ignite 투어 정지에서 돌아오는 동안, 저자는 연결을 기다리는 죽일 시간이 있었다. 따라서 Active Directory 관리 기술 중 일부를 제거하고 Active Directory를 2008 R2에서 최신 버전의 Windows Server 2019로 업그레이드하는 빠르고 더러운 프로세스를 문서화했습니다.</p>
+
+
+  <h3><a href="https://towardsdatascience.com/ai-search-algorithms-every-data-scientist-should-know-ed0968a43a7a">AI 검색 알고리즘은 모든 데이터 과학자가 알아야 합니다.</a></h3>
+
+
+  <p>최근 몇 년 동안 <a href="https://en.wikipedia.org/wiki/Automated_planning_and_scheduling">검색 및 계획 알고리즘</a> 은 기계 및 딥 러닝 방법으로 뒷좌석을 차지해 왔지만 이러한 알고리즘을 더 잘 이해하면 모델의 성능이 향상됩니다. 또한 양자 컴퓨팅과 같은 보다 강력한 계산 기술이 등장함에 따라 검색 기반 AI가 다시 등장할 가능성이 높습니다. 이 TL;DR 게시물은 AI의 몇 가지 주요 검색 알고리즘, 중요한 이유, 용도 및 용도를 간략하게 설명합니다.</p>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/XamarinShow/Next-Level-Maps-With-ArcGIS-For-NET">ArcGIS for .NET을 사용하는 다음 수준 맵</a></h3>
+
+
+  <p>이번 주, 제임스는 .NET 및 Xamarin에 대한 ArcGIS와 고급 매핑의 세계에 우리를 소개 쇼 &amp; 마이크로 소프트 MVP <a href="https://twitter.com/dotMorten">모튼 닐슨</a> 의 친구와 함께합니다. Morten은 ArcGIS의 정의, 개발자가 모바일 앱에서 사용자 지정 지도 및 데이터를 빌드하고 사용하는 방법, 지도에서 멋진 3D 시각화를 안내합니다.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="540" src="https://channel9.msdn.com/Shows/XamarinShow/Next-Level-Maps-With-ArcGIS-For-NET/player" width="960"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Deploying-IoT-Edge-workloads-on-Kubernetes">심층 분석: Kubernetes에 IoT Edge 워크로드 배포</a></h3>
+
+
+  <p>Azure IoT Edge는 이제 Kubernetes 오케스트레이터에서 기본적으로 실행하기 위한 지원을 제공합니다. 이 비디오에서는 통합이 작동하는 방식에 대해 알아보고 온-프레미스 Kubernetes 클러스터에 워크로드를 배포하는 환경이 어떤지 보여주는 데모를 통해 중단합니다.</p>
+
+
+  <p><iframe allowfullscreen="" frameborder="0" height="540" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Deploying-IoT-Edge-workloads-on-Kubernetes/player" width="960"></iframe></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/howden-how-they-built-a-knowledge-mining-solution-with-azure-search/">Howden: Azure Search를 사용하여 지식 마이닝 솔루션을 빌드하는 방법</a></h3>
+
+
+  <p>의료, 법률, 미디어 및 제조를 포함한 산업 전반의 고객은 Azure Search를 사용한 지식 마이닝 등 AI로 비즈니스 문제를 해결하기 위한 새로운 솔루션을 찾고 있습니다. 글로벌 엔지니어링 회사인 Howden은 공기 및 가스 처리를 위한 고품질 솔루션을 제공하는 데 중점을 둡니다. 100년이 넘는 엔지니어링 경험을 통해 Howden은 여러 부문이 일상적인 프로세스를 개선하는 데 도움이 되는 산업용 제품을 만듭니다. 광산 환기 및 폐수 처리에서 난방 및 냉각에 이르기까지. 비디오를 시청하여 Azure Search를 사용하여 지식 마이닝 솔루션을 구현하는 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://aka.ms/KnowledgeMiningMechanics" target="_blank"><img alt="Thumbnail image linking to a video about Howden." border="0" height="576" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b50fcfd6-9172-4c6b-ad7a-f977f7effbc6.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Howden에 대한 비디오에 연결하는 썸네일 이미지입니다." width="1024"></a></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=sHyvplezaMU&amp;list=PLLasX02E8BPBKgXP4oflOL29TtqTzwhxR&amp;index=2&amp;t=0s">스토리지 계정 | 일시 삭제를 사용하도록 설정하고 사용하는 방법 Azure Portal 시리즈</a></h3>
+
+
+  <p>Azure Portal&ldquo;의 계열 방법에&rdquo; 대한 이 비디오에서는 Azure Storage 계정에서 일시 삭제&rdquo;를 사용하도록 설정하고 사용하는 &ldquo;방법을 알아봅니다.</p>

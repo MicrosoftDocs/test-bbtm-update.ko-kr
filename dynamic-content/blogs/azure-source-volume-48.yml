@@ -1,0 +1,242 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 59bcf050c623cff5e1df3678d7082f1b6e616ccc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913114"
+Slug: azure-source-volume-48
+Title: Azure.Source - 볼륨 48
+Summary: 현재 미리 보기 상태, 일반 공급, 뉴스 & 업데이트 등을 포함하여 Azure에서 발생하는 작업을 최신 상태로 유지합니다.
+Content: >-
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/avere-vfxt-for-microsoft-azure-now-in-public-preview/">Avere vFXT for Microsoft Azure 공개 미리 보기</a> - Avere vFXT for Azure는 Azure Blob 및 파일 기반 스토리지 위치에서 Azure 컴퓨팅에 대한 짧은 대기 시간 액세스를 제공하는 클라우드의 HPC 워크로드에 대한 고성능 캐시입니다. Avere vFXT for Azure는 라이선스와 관련된 요금이 부과되지 않습니다. 그러나 소비와 관련된 비용은 정상 요금으로 적용됩니다. Avere Systems는 올해 초 Microsoft에 합류했습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/powerful-debugging-tools-for-spark-for-azure-hdinsight/">Azure HDInsight용 Spark용 강력한 디버깅 도구</a> - Microsoft는 Cosmos라는 &ldquo;&rdquo;세계에서 &ndash; 가장 큰 빅 데이터 클러스터 중 하나를 실행하며, 이 클러스터는 여러 엑사바이트의 데이터를 통해 수십만 대의 서버에서 수백만 개의 작업을 실행합니다. 개발자가 이 규모의 작업을 실행하고 관리할 수 있다는 것은 큰 과제였습니다. 전체 작업 그래프를 그래픽으로 보여 주는 강력한 도구를 빌드하여 개발자에게 큰 도움이 되었으며 모든 HDInsight Spark 개발자에게 해당 기능을 제공하려고 합니다. 이제 HDInsight에서 작업 그래프 데이터 흐름의 강력한 대화형 시각화를 통해 Spark 작업에 대한 풍부한 정보를 사용하여 기본 Spark 기록 서버 사용자 환경이 &amp; 향상되었습니다. 새로운 기능은 Spark 개발자가 작업 데이터 관리, 데이터 샘플링, 작업 모니터링 및 작업 진단을 크게 지원합니다.</p>
+
+
+  <p align="center"><img alt="Screenshot of an example Spark job graph displaying Spark job execution details with data input and output across stages" height="294" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53ac455a-50d8-4faa-a5df-26844f4e8ff8.png" title="Spark 애플리케이션 &amp; 작업 Graph 예제" width="500"></p>
+
+
+  <h3>미리 보기로도 제공됩니다.</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/data-box-disk-now-available-for-australia-and-canada/">공개 미리 보기: 이제 오스트레일리아 및 캐나다에서 Data Box Disk를 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-data-box-now-available-for-france-regions-with-nfs-and-rbac-support/">Azure Data Box: 확장된 가용성 및 NFS 및 RBAC 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-data-box-now-available-for-france-regions-with-nfs-and-rbac-support/">PostgreSQL을 Azure DB for PostgreSQL로 마이그레이션 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-database-migration-service-postgresql-to-azure-db-for-postgresql-migrations-support/">Azure Database Migration Service: PostgreSQL에서 Azure DB로 PostgreSQL 마이그레이션 지원</a></li>
+  </ul>
+
+
+  <h2>Azure Friday</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/enhanced-productivity-using-azure-data-factory-visual-tools/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/enhanced-productivity-using-azure-data-factory-visual-tools">Azure Friday | Azure Data Factory 시각적 도구</a> </strong> - Gaurav Malhotra를 사용하여 생산성 향상은 Scott Hanselman과 조인하여 데이터 통합 파이프라인을 반복적으로 생성, 구성, 테스트, 배포 및 모니터링할 수 있는 Azure Data Factory 시각적 도구에 대해 설명합니다. 시각적 도구의 기능, 성능 및 보안을 개선할 수 있도록 피드백을 고려했습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/serviceendpoints-azurekeyvault/">일반 공급: Azure Key Vault에 대한 가상 네트워크 서비스 엔드포인트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/general-availability-event-hubs-for-python/">일반 공급: Python용 Event Hubs</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/announcing-general-availability-of-azure-iot-hub-integration-with-azure-event-grid/">Azure Event Grid와 Azure IoT Hub 통합의 일반 공급 발표</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/bulkexecutor-for-azure-cosmos-db-gremlin-api-now-available/">Azure Cosmos DB Gremlin API용 BulkExecutor 사용 가능</a></li>
+  </ul>
+
+
+  <h2>Azure 팟캐스트</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" valign="middle" width="300">
+     <p>
+     <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode245.mp3">HTML5 오디오가 지원되지 않음</audio>
+     </p>
+     </td>
+     <td>
+     <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-245-Azure-Certifications">Azure 팟캐스트 | 에피소드 245 - Azure 인증</a> </strong> - Microsoft 컨설턴트 인 Doug Strother와 John Miller는 인증의 베테랑으로 Azure 인증을 받는 방법에 대한 몇 가지 팁을 공유합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/exciting-new-capabilities-on-azure-hdinsight/">Azure HDInsight</a> - 의 흥미로운 새로운 기능 Ashish Thapliyal 보안 주체, 프로그램 관리자, Azure HDInsight는 Apache Phoenix 및 Zeppelin 통합, HDInsight 엔터프라이즈 보안 패키지의 Oozie 지원, Azure Data Lake Storage Gen2 통합, Virtual Network 서비스 엔드포인트 지원, Spark 2.3 지원 등을 포함하여 지난 몇 개월 동안 Azure HDInsight에 대한 다양한 업데이트를 롤업합니다.</p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-security-center-update-august-29/">Azure Security Center 업데이트 8월 29일</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/filter-vm-sizes-by-current-or-previous-generation/">현재 또는 이전 세대별로 VM 크기 필터링</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/sql-data-warehouse-now-available-in-government-cloud/">SQL Data Warehouse는 이제 Government Cloud에서 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-sql-data-warehouse-enables-streaming-solutions-with-azure-databricks/">Azure SQL Data Warehouse는 Azure Databricks를 사용하여 스트리밍 솔루션을 사용하도록 설정합니다.</a></li>
+  </ul>
+
+
+  <h2>The IoT Show</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Monitoring-And-Diagnostics-of-an-IoT-Solution-with-Azure-IoT-Hub"><img alt="Screenshot from Monitoring And Diagnostics of an IoT Solution with Azure IoT&nbsp;Hub video" border="0" height="135" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d9914cfc-78d8-427e-a733-13ea330f2d85.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure IoT&nbsp; Hub를 사용하여 IoT 솔루션의 모니터링 및 진단" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Monitoring-And-Diagnostics-of-an-IoT-Solution-with-Azure-IoT-Hub">IoT 쇼 | Azure IoT Hub를 사용하여 IoT 솔루션의 모니터링 및 진단</a> </strong> IoT 솔루션이 잘못 동작하는 경우 어떻게 해야 합니까?- Azure IoT 팀의 PM인 John Lian은 적절한 경고를 구성하고 일반적인 문제를 해결하기 위한 올바른 로그를 가져오는 몇 가지 방법을 보여 줍니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-In-Action-Introducing-Azure-Sphere"><img alt="Screenshot from IoT In Action - Introducing Azure&nbsp;Sphere video" border="0" height="135" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d59f77c1-a610-4cd4-9510-d218a495c910.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="IoT 작동 중 - AzureSphere&nbsp; 소개" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-In-Action-Introducing-Azure-Sphere">IoT 쇼 | IoT In Action - Azure Sphere</a> </strong> - 소개는 곧 출시될 IoT in Action Webinar 시리즈 &ndash; 소개 Microsoft Azure Sphere의 스페셜 에디션을 살펴보세요! Azure Sphere는 MCU(고도로 보호된 연결된 마이크로 컨트롤러 장치) 구동 디바이스를 만드는 솔루션으로, 비즈니스를 재구상하고 미래를 만들 수 있는 자신감과 힘을 제공합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>기술 콘텐츠 및 교육</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/transparent-data-encryption-or-always-encrypted/">투명한 데이터 암호화 또는 항상 암호화되나요?</a> -TDE(투명한 데이터 암호화)와 Always Encrypted는 SQL Server 및 Azure SQL Database 제공하는 두 가지 암호화 기술입니다. 일반적으로 암호화는 다양한 시나리오에서 무단 액세스로부터 데이터를 보호합니다. 이러한 기능은 보완적인 기능이며, 이 블로그 게시물은 선택할 기술과 이를 결합하여 계층화된 보안 접근 방식을 제공하는 방법을 결정하는 데 도움이 되는 나란히 비교를 보여 줍니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/connected-arms-a-closer-look-at-the-winning-idea-from-imagine-cup-2018/">커넥티드 암: 2018 Imagine 컵 우승 아이디어를 자세히 살펴보세요</a>.- 인공 지능 &amp; 리서치의 부사장인 조셉 시로쉬(Joseph Sirosh)가 smartARM의 Imagine Cup 2018 챔피언 프로젝트를 자세히 살펴봅습니다. smartARM은 저비용 재료와 AI를 사용하여 저비용, 저기능 및 고가의 고가의 팔꿈치 아래 보철물입니다. 사민 칸(Samin Khan)과 하마야알 추드리(Hamayal Choudhry)는 저비용 재료를 클라우드와 AI와 결합하여 스마트ARM을 최첨단 고급 보철 무기에 대한 저렴하면서도 맞춤형 대안으로 제시합니다.</p>
+
+
+  <h3>추가 기술 콘텐츠</h3>
+
+
+  <ul>
+   <li><a href="https://medium.com/microsoftazure/how-to-use-batch-ai-to-process-multiple-forecasts-ce4888f3556a">Batch AI를 사용하여 여러 예측을 처리하는 방법</a></li>
+   <li><a href="https://medium.com/microsoftazure/accelerate-state-of-devops-report-2018-highlights-b4b800e3893f">DevOps 보고서 2018 하이라이트의 상태 가속화</a></li>
+   <li><a href="https://medium.com/microsoftazure/use-azure-managed-identities-with-azure-kubernetes-services-aks-4558b866104b">AKS(Azure Kubernetes Services)에서 Azure 관리 ID 사용</a></li>
+   <li><a href="https://medium.com/microsoftazure/a-beginners-guide-to-cloud-gaming-c3e8a5915440">클라우드 게임 초보자&rsquo; 가이드</a></li>
+   <li><a href="https://medium.com/microsoftazure/when-is-a-vulnerability-not-a-vulnerability-41ff9c880adf">취약성이 취약점이 아닌 경우는 언제인가요?</a></li>
+  </ul>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center">
+     <p align="left"><a href="https://www.youtube.com/watch?v=qFLvB5cxREg"><img alt="Screenshot from Learn about the underlying Software in Azure Cloud Shell video" border="0" height="134" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4d71a339-c33f-4cb3-9719-ca476708fc37.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Cloud Shell의 기본 소프트웨어에 대해 알아보기" width="240"></a></p>
+
+     <p align="left"><strong><a href="https://www.youtube.com/watch?v=qFLvB5cxREg">Azure Cloud Shell의 기본 소프트웨어에 대해 알아보기</a></strong> - Azure Cloud Shell 인스턴스 내에 있는 소프트웨어에 대해 알아봅니다. Azure Cloud Shell을 실행할 때 발생하는 작업과 기본 운영 체제에서 발생하는 일을 자세히 살펴봅니다.</p>
+     </td>
+     <td valign="top">
+     <p><a href="https://www.youtube.com/watch?v=wODji8h6YYI"><img alt="Screenshot from How to use tags to quickly organize Azure Resources video" border="0" height="134" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0e8c9ec-676d-40ad-810d-579d017c9f42.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="태그를 사용하여 Azure 리소스를 신속하게 구성하는 방법" width="240"></a></p>
+
+     <p><strong><a href="https://www.youtube.com/watch?v=wODji8h6YYI">태그를 사용하여 Azure 리소스</a></strong> - 를 신속하게 구성하는 방법 태그를 활용하여 Azure 리소스를 구성하는 방법을 알아봅니다. 태그를 사용하여 추가 메타데이터를 추가하여 Azure Portal에서 리소스를 분류하고 검색하는 방법을 알아봅니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>이벤트</h2>
+
+
+  <p>개발자를 위한 Azure DevOps 서비스 세트, CI/CD 플랫폼 Azure Pipelines Microsoft의 새로운 GitHub 확장에 대해 발표된 모든 세부 정보를 알아보는 데 도움이 되는 2일간의 라이브 스트리밍 활동에 참여하세요.</p>
+
+
+  <p><a href="https://aka.ms/azuredevopslaunch">Azure DevOps 키노트</a> - 기조연설: 2018년 9월 11일 태평양 표준시(GMT -7)에서 2018년 9월 11일 오전 8:00~9:30에 라이브 Azure DevOps 기조연설을 시청하세요.</p>
+
+
+  <p><a href="https://aka.ms/azuredevopslaunch">Azure DevOps 워크샵</a> - 2018년 9월 17일 오전 8시 30분~오후 2시 30분 태평양 표준시(GMT -7)부터 대화형 QA&amp;로 라이브 Mixer 워크샵에 참여하세요.</p>
+
+
+  <h2>코리와 화요일</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Azure-Event-Hubs-with-Kafka-coolness"><img alt="Screenshot from Azure Event Hubs with Kafka&nbsp;coolness video" border="0" height="135" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/324923fa-c409-4e8a-81e4-69ab4bfe18e8.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Kafkacoolness&nbsp;를 사용하는 Azure Event Hubs" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Azure-Event-Hubs-with-Kafka-coolness">코리 | 화요일 Kafka 쿨니스</a> </strong> - 코리 샌더스와 Azure Event Hubs, 회사 부사장 - Microsoft Azure 컴퓨팅 팀은 Azure 메시징 서비스를 담당하는 수석 PM인 Dan Rosanova와 함께 앉았습니다. Dan은 Kafka 호환성과 함께 Event Hubs에 대한 몇 가지 새로운 기능을 공유합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>산업</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/delivering-innovation-in-retail-with-the-flexible-and-productive-microsoft-ai-platform/">유연하고 생산적인 Microsoft AI 플랫폼을 사용하여 소매 분야의 혁신 제공</a> - AI의 적용이 소매 및 소비재 산업을 어떻게 변화시켜 생산 유형 문제에 대한 다양한 서비스를 해결하기 위한 긍정적인 비즈니스 개선의 결과인지 알아봅니다. 미리 빌드된 AI API를 사용하든 데이터를 사용하여 사용자 지정 모델을 개발하든 관계없이 Microsoft&#39;AI 플랫폼은 플랫폼에서 사용할 수 있는 인프라와 도구를 사용하여 유연성을 제공합니다. 각 접근 방식을 이해하여 최상의 경로를 결정합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/save-money-on-actuarial-compute-by-retiring-your-on-premises-hpc-grids/">온-프레미스 HPC 그리드를 사용 중지하여 보험 통계 컴퓨팅 비용 절감</a> - 모든 보험 회사는 처리되는 정책 수의 증가로 인한 수요 증가와 보험 및 회계 시스템을 변경해야 하는 새로운 규정을 보고 있습니다. FRS-17에서는 보험 통계 및 회계 프로세스 전반에 걸쳐 워크플로, 보고 및 제어를 변경해야 합니다. 지금이 Azure에서 클라우드 기반 솔루션으로 이동하는 이유를 알아보려면 이 게시물을 읽고 Actuarial 위험 컴퓨팅 및 모델링 개요를 다운로드하여 컴퓨팅 워크로드를 Azure로 이동하기 위한 옵션을 이해합니다.</p>
+
+
+  <p align="center"><img alt="Diagrm showing 27 logos representing various industry compliance programs" height="281" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/278f2cc1-c769-4c1e-bb14-f7829efb3f2e.png" title="Azure 규정 준수 포트폴리오 - 업계 최대 규모" width="500"></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/finish-your-insurance-actuarial-modeling-in-hours-not-days/">보험 모델링을 며칠이 아닌 몇 시간 안에 완료합니다</a>. - 전 세계의 보험 통계 부서는 재무 및 기타 모델이 규제 및 내부 요구 사항에 대한 비즈니스를 평가하는 데 사용할 수 있는 결과를 생성하도록 하기 위해 노력합니다. 오늘날에는 분기별 보고에 수천 시간의 컴퓨팅 시간이 필요한 것이 일반적입니다. 시장의 대부분의 보험 통계 패키지는 그리드를 Azure로 확장하거나 Azure를 기본 환경으로 사용할 수 있는 기능을 갖춘 사내 그리드를 지원합니다. 보험 통계 팀이 모델 및 프로세스를 검토하여 클라우드의 규모 이점을 극대화하는 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/anti-money-laundering-microsoft-azure-helping-banks-reduce-false-positives/">자금 세탁 &ndash; 방지 Microsoft Azure 은행이 가양성</a> - 자금 세탁 방지(AML) TMS(거래 모니터링 시스템)를 줄이는 데 도움을 줍니다. 이러한 규제 무뚝뚝한 힘 접근법으로 인해 은행 업계 전반에 걸쳐 AML 비용은 은행에 막대한 비효율성과 높은 운영 비용을 초래했습니다. 주요 TMS 기술은 90년대 후반 &lsquo;부터 근본적으로 변경되지 않았으며 규제 기대치 증가와 지속적으로 진화하는 자금 세탁 기술에 보조를 맞추지 못한 구식 일괄 처리 규칙 기반 시스템입니다. ML 및 AI의 적용이 새로운 제품 제공 또는 자금 세탁으로 인한 활동 패턴의 변화에 신속하게 플래그를 지정하는 방법을 알아봅니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/answering-whats-happening-whys-happening-and-what-will-happen-with-iot-analytics/">IoT Analytics를 사용하여 설명, 진단 및 예측</a> - IoT 데이터 수집의 핵심은 실행 가능한 인사이트를 추출하는 것입니다. 최적화된 공장 운영, 향상된 제품 품질, 고객 수요에 대한 더 나은 이해, 새로운 수익원 및 향상된 고객 환경과 같은 일부 비즈니스 가치를 초래하는 일종의 작업을 트리거하는 Insights. 이 게시물에서는 스토리의 분석 부분, 4가지 유형의 분석 및 IoT에 매핑하는 방법, IoT 분석에서 기계 학습의 역할 및 분석을 사용하여 IoT 솔루션의 구성 요소를 강조하는 솔루션 아키텍처 개요에 초점을 맞추어 IoT 데이터에서 가치를 추출하는 방법을 설명합니다.</p>
+
+
+  <p align="center"><img alt="Solution diagram showing components of an IoT Analytics Solution" height="266" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/08f5e346-289b-4cf9-9cea-4e3534f4d521.jpg" title="IoT Analytics 솔루션의 구성 요소" width="500"></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/current-use-cases-for-machine-learning-in-retail-and-consumer-goods/">소매 및 소비재의 기계 학습에 대한 현재 사용 사례</a> - 소매 및 소비재 회사는 고객 서비스 및 운영 효율성을 개선하기 위해 기계 학습(ML)의 적용 가능성을 보고 있습니다. 예를 들어 Azure 클라우드는 소매 및 소비자 브랜드가 선반을 비축하고 소비자가 쇼핑하려는 시기, 위치 및 방법을 항상 사용할 수 있도록 하여 쇼핑 환경을 개선하는 데 도움을 주고 있습니다. 8개의 ML 사용 사례를 확인하여 서비스를 개선하고 최적화, 자동화 및 확장의 이점을 제공합니다. 또한 이 게시물에는 ML 알고리즘 치트 시트와 같이 체크 아웃해야 하는 많은 다른 리소스에 대한 링크가 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/where-is-the-market-opportunity-for-developers-of-iot-solutions/">IoT 솔루션 개발자를 위한 시장 기회는 어디에 있나요?</a> - IoT 및 데이터 분석에 대한 사례를 통해 SIS가 고객에게 사용자 지정된 IoT 솔루션을 개발할 수 있는 분명한 기회가 있습니다. IoT 공간은 복잡하고, 조각화되고, 붐비는 에코시스템입니다. 따라서 소프트웨어 개발자는 기회가 정확히 어디에 있는지 식별하기가 어렵습니다. 이 게시물에서는 IoT 솔루션 개발자에게 가장 큰 시장 기회를 설명합니다. ISV가 IoT 플랫폼 및 미리 빌드된 IoT 앱을 개발하여 IoT 솔루션 개발을 가속화할 수 있는 기회도 있습니다.</p>
+
+
+  <p>Azure - 에서 <a href="https://azure.microsoft.com/en-us/blog/reduce-costs-by-optimizing-actuarial-risk-compute-on-azure/">보험상 위험 컴퓨팅을 최적화하여 비용 절감</a> 보험 위험 모델링은 계산 집약적인 작업입니다. 규제 요구 사항을 충족하기 위해 매월 및 분기별 평가 및 프로덕션 실행과 같은 많은 고르지 않은 워크로드가 있는 수천 개의 서버 코어를 사용하는 경우 이러한 계산 집약적 워크로드는 클라우드의 거의 바닥이 없는 리소스를 활용하는 데 적합합니다. Azure를 사용하여 필요할 때 관리하지 않고도 더 많은 컴퓨팅 성능에 액세스할 수 있는 방법을 알아봅니다. 또한 보험 위험 컴퓨팅 및 모델링 개요를 읽고 컴퓨팅 워크로드를 Azure로 이동하기 위한 옵션을 이해합니다.</p>
+
+
+  <h2>클라우드 전문가&#39;Azure 이번 주</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://www.youtube.com/watch?v=vyn6nUj3gck"><img alt="Screenshot from A Cloud Guru's Azure This Week - 7 September 2018 video" border="0" height="133" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5d6a8145-7c68-4e68-9168-555e9a063905.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="클라우드 전문가의 Azure 이번 주 - 2018년 9월 7일" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://www.youtube.com/watch?v=vyn6nUj3gck">클라우드 전문가&#39;Azure 이번 주 - 2018</a> </strong> - 년 9월 7일 이번 주: 이번 주 Azure 에피소드에서 Dean은 OMS와 Azure Portal의 새로운 홈, Visual Studio Live Share 새로운 기능뿐만 아니라 A Cloud Guru의 새로운 Azure 강좌를 업데이트합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

@@ -1,0 +1,58 @@
+### YamlMime:Yaml
+ms.openlocfilehash: dd33bbcd09bd1174de993793aa9ee8eda3df8f14
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897464"
+Slug: azure-documentdb-profile-of-msn-health-and-fitness-2
+Title: 'Azure DocumentDB: MSN 상태 및 피트니스 프로필'
+Summary: 올해 초 MSN 내의 다양한 팀은 MSN 내의 모든 수직에서 통합 분산 스토리지 시스템의 필요성을 깨달았습니다. 통합은 여러 디바이스에서 다양한 새로운 수직 및 소셜 컴퓨팅 기능을 가능하게 하는 데 매우 중요했습니다.
+Content: >-
+  <p>MSN.com 가장 신뢰할 수 있는 웹 브랜드 중 하나입니다. 전 세계 26개 시장에서 1위 포털로, 현재 전 세계 월간 사용자를 절반 이상 지원하고 있습니다. microsoft의 ICE(정보 및 콘텐츠 경험) 그룹의 일부인 MSN.com 건강 및 피트니스, 금융, 자동차, 엔터테인먼트, 날씨, 음식 및 음료, 비디오, 여행, 뉴스 및 스포츠 등 다양한 소비자 대면 수직 환경으로 구성됩니다. 이러한 각 수직 환경은 확장성이 뛰어나고 느슨하게 결합되며 전 세계 수백만 명의 사용자를 지원하도록 설계되었습니다. 이러한 수직은 브라우저뿐만 아니라 여러 플랫폼(예: Windows Phone, iOS 및 Android)에서 별도의 애플리케이션으로도 릴리스됩니다.</p>
+
+
+  <h3><strong>확장성이 뛰어난 스키마가 없고 쿼리 가능한 분산 데이터 저장소를 찾고 있습니다.</strong></h3>
+
+
+  <p>수년에 걸쳐 MSN.com 다양한 용도로 빌드된 데이터 저장소 및 캐싱 솔루션을 사용하도록 발전했습니다. 올해 초 MSN 내의 다양한 팀은 MSN 내의 모든 수직에서 통합 분산 스토리지 시스템의 필요성을 깨달았습니다. 통합은 여러 디바이스에서 다양한 새로운 수직 및 소셜 컴퓨팅 기능을 가능하게 하는 데 매우 중요했습니다. ICE 팀은 기존 스토리지 솔루션을 UDS(사용자 데이터 저장소)라는 단일 Azure 기반 분산 스토리지 시스템으로 개편하고 교체하기로 결정했습니다. UDS는 다음을 지원하는 데 필요합니다.</p>
+
+
+  <ol>
+   <li>+100M 직접 인증된 사용자를 사용하여 +425M 고유 MSN 사용자를 지원하도록 요구 사항을 확장합니다. 20TB의 문서 스토리지에 대한 초기 용량 요구 사항입니다.</li>
+   <li>15ms 미만의 경우 99% 요청에 대한 대기 시간 및 한 자리 읽기 대기 시간을 씁니다.</li>
+   <li>동일한 기본 데이터에 대한 권한 부여 범위입니다.</li>
+   <li>풍부한 쿼리 및 트랜잭션 지원을 지원하는 스키마 없는 스토리지.</li>
+   <li>다양한 세로 스키마 집합을 지원하는 데이터 모델 확장입니다.</li>
+   <li>데이터를 기반으로 하는 Hadoop 기반 분석입니다.</li>
+   <li>모든 MSN 시장 및 사용자에게 서비스를 제공하기 위해 전 세계적으로 사용할 수 있습니다.</li>
+  </ol>
+
+
+  <p>&nbsp; MSN은 Azure에서 다양한 솔루션을 평가한 후 Azure DocumentDB를 UDS의 핵심 구성 요소로 사용하기로 결정했습니다. 상태 및 피트니스는 새 MSN 출시와 함께 Azure DocumentDB에서 실행되는 첫 번째 <a href="https://blogs.microsoft.com/blog/2014/09/29/new-msn-arrives/">MSN</a> 수직 중 하나입니다. 다른 MSN 수직은 곧 Azure DocumentDB 위에 계층화된 업데이트된 UDS 아키텍처를 사용하기 시작합니다.</p>
+
+
+  <h3><strong>상태 및 피트니스 시나리오</strong></h3>
+
+
+  <p>상태 및 피트니스 수직은 다음을 포함한 다양한 기능으로 구성됩니다.</p>
+
+
+  <ul>
+   <li><b>다이어트 추적기</b>: 사용자가 그들의 매일 다이어트 섭취 저널을 유지할 수 있습니다. 각 다이어트 항목 식사와 연결 하 고 칼로리, 지방, 탄수화물 및 단백질 등.</li>
+   <li><b>운동 추적기</b>: 사용자는 거리, 시간 및 칼로리로 심장 운동을 저널합니다.</li>
+   <li><b>GPS 추적기</b> : 사용자가 그녀의 GPS 사용 전화와 함께 실행할 수 있습니다. 실행은 GPS 요동과 함께 기록됩니다. 메타 데이터 실행은 DocumentDB에 저장됩니다.</li>
+   <li><b>Pedometer</b>: 사용자 단계는 보수계 지원 휴대폰(모든 새로운 노키아 휴대폰)에서 추적되고 UDS에 저장됩니다.</li>
+   <li><b>가중치 추적기</b>. 사용자는 자신의 체중을 추적할 수 있습니다.</li>
+   <li><b>분석</b>: 다이어트, 운동, GPS 및 단계 데이터에 대한 기록 데이터에 대한 분석.</li>
+   <li><b>즐겨찾기 및 사용자 지정</b>: 사용자가 즐겨찾는 음식과 운동을 저장할 수 있습니다. 사용자는 관련 메타데이터를 사용하여 사용자 지정 음식 및 연습을 만들 수도 있습니다. 문서, 상태 상태, 요가 등과 같은 다른 데이터 형식으로 즐겨찾기 기능을 확장할 계획입니다.</li>
+  </ul>
+
+
+  <p>&nbsp; 새 MSN 포털이 출시되면 상태 및 피트니스 수직과 상호 작용하는 사용자가 백 엔드에서 Azure DocumentDB를 사용하여 데이터를 저장하고 쿼리합니다. 출시 당시 상태 및 피트니스 수직은 SSD 지원 문서 스토리지의 150개 CPU(용량 단위)를 프로비전하고 세 지리적 지역에 걸쳐 처리량을 프로비전했습니다. 상태 및 피트니스 애플리케이션은 단일 DocumentDB 데이터베이스를 사용하여 각 지역에 단일 DocumentDB 데이터베이스 계정을 만듭니다. 상태 및 피트니스 애플리케이션은 단조 읽기, 쓰기 및 사용자 고유의 쓰기 보장을 보장하는 세션 일관성을 사용하여 DocumentDB 데이터베이스 계정을 구성했습니다. 이렇게 하면 읽기 확장성이 매우 높고 쓰기에 대한 대기 시간 목표를 충족합니다. 각 DocumentDB 데이터베이스에는 MSN 사용자 집합에 속한 문서가 각각 포함된 컬렉션 집합이 포함됩니다. 문서는 크기가 1KB &ndash; 10KB마다 다릅니다. 컬렉션 내의 문서에는 공통된 스키마가 없을 것으로 예상됩니다. 대부분의 컬렉션은 최적의 쓰기 처리량, 특정 문서 경로에 대한 자동 인덱싱 및 최소한의 인덱스 오버헤드를 얻도록 구성됩니다. 여러 플랫폼에서 다양한 수직을 지원하는 사용자 데이터 저장소의 전체 아키텍처는 아래에 설명되어 있습니다. 아키텍처는 다양한 스키마 집합을 저장하는 기능을 포함하여 DocumentDB의 모든 기능을 활용하면서 모든 수직에서 풍부한 쿼리 기능을 제공합니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/10/08/Azure-DocumentDB-v2.png"><img alt="Azure DocumentDB v2" border="0" height="644" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Azure-DocumentDB-v2_thumb.png" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px;" title="Azure DocumentDB v2" width="1083"></a> <b><i>새 MSN 사용자 데이터 저장소는 Azure DocumentDB를 기반으로</i></b> 하며, UDS 프레임워크는 사용 가능한 용량에 따라 여러 컬렉션에 사용자 정보를 분산합니다. 각 사용자&rsquo; 데이터는 문서에 저장됩니다. UDS는 사용자 ID를 기반으로 문서를 컬렉션 집합에 배포하여 확장성, 높은 처리량 및 효율적인 쿼리를 달성하여 수평적 확장 솔루션을 유지 관리합니다. MSNs&rsquo; 사용자 데이터 저장소의 수석 설계자이자 그의 팀인 Saud Alshibani는 Azure DocumentDB 팀과 긴밀히 협력하고 있습니다. Saud는 DocumentDB에 대한 자신의 경험을 다음 단어로 요약합니다.</p>
+
+
+  <blockquote><i>&ldquo;통합 데이터 스토리지 계층 설계의 일환으로 Azure에서 호스트되는 OSS 제품과 다른 Azure Storage 서비스 모두에 대해 다양한 스토리지 솔루션을 &ndash; 평가했습니다. 궁극적으로는 스키마 없는 문서, 다중 문서 트랜잭션 및 확장성 및 성능 목표에 대한 쿼리와 관련된 주요 요구 사항을 충족했기 때문에 DocumentDB를 사용하기로 결정했습니다. DocumentDB는 시끄러운 인접 문제가 발생하지 않고 예측 가능한 성능을 보장합니다. DocumentDB 크기 조정은 CPU를 추가 및 제거하기만 하면 됩니다 &ndash; . 애플리케이션에 대해 DocumentDB의 .NET 및 JavaScript 클라이언트 SDK를 광범위하게 사용합니다. DocumentDB에 대한 전반적인 경험은 정말 생산적이었습니다. 우리 팀은 몇 달 만에 DocumentDB에서 애플리케이션을 다시 대상으로 지정할 수 있었습니다!&rdquo;</i></blockquote>
+
+
+  <p>새 포털을 출시한 MSN 팀을 축하합니다. DocumentDB 팀은 이 여정에 참여하게 되어 기쁩니다!</p>

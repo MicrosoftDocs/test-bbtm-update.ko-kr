@@ -1,0 +1,212 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 1f054c509d5a0a312cd2777d4a823625c98c1a30
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913116"
+Slug: azure-source-volume-47
+Title: Azure.Source - 볼륨 47
+Summary: 현재 미리 보기 상태, 일반 공급, 뉴스 & 업데이트 등을 포함하여 Azure에서 발생하는 작업을 최신 상태로 유지합니다.
+Content: >-
+  <h2>이제 일반 공급</h2>
+
+
+  <p>이제 <a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-azure-iot-hub-s-integration-with-azure-event-grid/">Azure Event Grid와 Azure Event Grid IoT Hub 통합을 통해 Azure IoT Hubs&rsquo; 통합의 일반</a> 공급이 일반 공급되므로 IoT 솔루션의 아키텍처를 간소화하여 데이터를 클라우드로 보내는 수십억 개의 디바이스에서 작업으로 비즈니스 인사이트를 더욱 쉽게 변환할 수 있습니다.- 이제 Azure Functions 및 Azure Logic Apps 같은 최신 서버리스 아키텍처와 쉽게 통합하여 워크플로 및 다운스트림 프로세스를 자동화하고, 디바이스 생성, 삭제, 연결 및 연결 끊김에 대한 빠른 반응으로 경고를 사용하도록 설정하고, 폴링 서비스의 복잡성과 비용을 제거하고, 티켓팅, 청구 시스템 등의 웹후크를 사용하여 타사 애플리케이션과 이벤트를 통합할 수 있습니다.  및 데이터베이스 업데이트</p>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-and-Event-Grid"><img alt="The IoT Show | Azure IoT Hub and Azure Event Grid" border="0" height="139" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fbb99654-6de5-4b4b-9fb5-b2ea7b0fce2e.jpg" style="display: inline; background-image: none;" title="IoT Show | Azure IoT Hub 및 Azure Event Grid" width="244"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-and-Event-Grid">IoT Show | Azure IoT Hub 및 Azure Event Grid</a> </strong> - 이제 Azure IoT Hub 및 Event Grid 통합이 일반 공급되며 IoT Hub에서 나오는 새로운 유형의 이벤트에 대한 지원이 제공됩니다. 이제 Azure IoT 팀의 PM Ashita Rastogi에서 설명한 대로 Azure pub-sub 플랫폼을 사용하여 IoT 워크플로를 다른 Azure 서비스와 쉽게 통합할 수 있습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>고성능 컴퓨팅 - <a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-the-cloud-for-high-performance-computing/">을 위한 클라우드인 Microsoft Azure</a> Azure에서 모든 규모의 HPC 클러스터를 생성, 관리, 운영 및 최적화하는 도구인 Azure CycleCloud가 이제 일반 공급됩니다. 이제 모든 사용자가 HPC 버스트, 하이브리드 또는 클라우드 전용 클러스터를 배포, 사용 및 최적화하는 것이 더&#39;. Microsoft Azure NVIDIA GPU를 사용하도록 설정된 다양한 가상 머신을 제공하여 AI 및 HPC에 뛰어난 성능을 제공합니다. 이제 Azure 사용자와 클라우드 개발자는 Azure에서 지원되는 NVIDIA GPU를 최대한 활용하는 강력한 GPU 최적화 소프트웨어를 사용하여 AI 및 HPC 워크플로를 가속화할 수 있습니다. Azure CycleCloud 및 NVIDIA GPU는 통합 및 관리 및 크기 조정 기능을 용이하게 합니다.</p>
+
+
+  <h2>Azure Friday</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Automation/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Automation">Azure Friday | Azure Automation</a> </strong> - 제니 헌터는 Scott Hanselman과 함께 Python 2 지원, 로컬 Linux 머신에 대해 실행할 수 있는 기능, 설정 없이 모든 Azure VM에 대해 실행할 수 있는 기능(명령 실행) 및 네이티브 Azure 경고 통합을 포함하여 몇 가지 새로운 개선 사항을 설명합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/helping-go-developers-build-better-cloud-apps-faster/">Go 개발자가 더 나은 클라우드 앱을 더 빠르게</a> - 빌드할 수 있도록 지원 지난 주, 고퍼콘은 덴버에서 일어났다. 올해 초 Azure SDK for Go를 일반 공급하기 시작한 이래, 우리 팀은 Azure, Visual Studio Code 및 Visual Studio Team Services Go 도구 및 서비스를 빌드하는 작업을 열심히 해왔습니다. Go 개발자가 클라우드 네이티브 워크플로를 다루는 서비스 범위를 확장하여 더 나은 클라우드 앱을 더 빠르게 빌드할 수 있도록 계속 노력하고 있습니다. Azure, Visual Studio Code 및 Visual Studio Team Services Go 앱을 빌드하고 실행하는 방법을 보여 주는 일련의 Azure Friday 에피소드를 기록했습니다. <a href="https://aka.ms/go-videos">Go on Azure</a>에서 시리즈를 확인하세요.</p>
+
+
+  <p align="center"><a href="https://aka.ms/go-videos"><img alt="Animated GIF rotating through thumbnails of the 7 parts of the Go on Azure video series" border="0" height="225" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/223f56f2-d4eb-4cd7-a1bb-b8e769682cc0.gif" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure로 이동: 고퍼를 위한 고퍼의 7부로 구성된 Azure Friday 에피소드 시리즈" width="400"></a></p>
+
+
+  <p>Go 커뮤니티 - <a href="https://open.microsoft.com/2018/08/28/announcing-project-athens-gophersource-go-community/">를 위한 Project 아테네 및 GopherSource 발표</a> 지난 2월, Microsoft와 다른 협력자의 엔지니어들은 MIT 라이선스로 출시되고 GitHub 호스팅되는 오픈 소스 프로젝트인 Project Athens에서 작업하여 Go 모듈용 첫 번째 프록시 서버를 만들기 시작했습니다. 아테네 커뮤니티와 함께 현재는 모듈 환경을 개선하고, Go 모듈이 모든 프록시 서버와 원활하게 작동하도록 하고, 조직적으로 다양한 페더레이션된 프록시 네트워크를 설정하는 데 주력하고 있습니다. GopherSource는 업스트림 Go 및 지역 사회 내에서 Project 아테네와 같은 주요 Go 프로젝트에 더 많은 기여자를 구축하여 Go 생태계를 강화하고 다각화하기 위한 이니셔티브입니다. Go 커뮤니티&rsquo;가 재능있는 개발자가 업스트림 Go에 기여하도록 장려함으로써 Go 에코시스템이 전체 커뮤니티의 요구를 충족할 수 있도록 합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/a-quick-take-on-the-state-of-hybrid-cloud-survey/">하이브리드 클라우드 상태 조사에 대한 빠른 정보</a> - Microsoft는 2018년 1월에 리서치 회사인 Kantar TNS를 대상으로 설문조사를 실시하여 1,700명 이상의 응답자에게 차임벨을 요청했습니다. 설문 조사는 IT 전문가, 개발자 및 비즈니스 의사 결정권자로부터 수집되어 하이브리드 클라우드를 인식하는 방법, 채택의 동기, 가장 중요한 기능 등을 파악했습니다. 이 게시물에서 설문 조사 결과에 대한 요약 인포그래픽을 확인하고 주문형 웨비나에서 보다 완전한 검토를 확인하세요.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/monitor-all-azure-backup-protected-workloads-using-log-analytics/">Log Analytics를 사용하여 모든 Azure Backup 보호 워크로드 모니터링</a> - 이제 Azure Backup을 사용하면 Log Analytics의 기능을 활용하여 보호되는 모든 워크로드를 모니터링할 수 있습니다. 이를 통해 사용 중인 Azure 백업 솔루션에 관계없이 Recovery Services 자격 증명 모음 및 구독에서 주요 백업 매개 변수를 모니터링할 수 있습니다. 이제 이 솔루션은 Azure VM, Azure VM 백업의 SQL, Azure(DPM-A)에 연결된 System Center Data Protection Manager, MABS(Microsoft Azure Backup Server) 및 Azure 백업 에이전트의 파일 폴더 백업을 포함하여 Azure Backup으로 보호되는 모든 워크로드를 다룹니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd90fdd4-a8cb-4e3e-889b-c4bfbae0e455.png"><img alt="Screenshot of the Azure portal showing how to generate a custom alert for a select monitoring scenario" border="0" height="259" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dd90fdd4-a8cb-4e3e-889b-c4bfbae0e455.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="선택 모니터링 시나리오에 대한 사용자 지정 경고 생성" width="500"></a></p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/protecting-privacy-in-microsoft-azure-gdpr-azure-policy-updates/">Microsoft Azure 개인 정보 보호: GDPR, Azure Policy 업데이트</a> - Microsoft는 GDPR로 식별된 개인 데이터의 범주를 포함하여 클라우드에서 데이터를 보호하기 위해 업계 최고의 보안 제어, 규정 준수 도구 및 개인 정보 보호 정책을 사용하여 Azure를 설계했습니다. 또한 ISO/IEC 27018, EU-미국 프라이버시 쉴드, EU 모델 조항, HIPAA/HITECH 및 HITRUST와 같은 다른 중요한 글로벌 및 지역 개인 정보 보호 표준을 준수하는 데 도움이 됩니다. 이 게시물의 비디오를 확인하여 규정 준수를 보다 쉽게 달성하여 재무 및 의료 서비스와 같은 개인 정보 보호에 민감한 클라우드 시나리오를 자신 있게 사용하도록 설정하여 클라우드로의 이동을 가속화하는 방법을 알아봅니다.</p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/cross-subscription-disaster-recovery-for-azure-virtual-machines/">Azure 가상 머신에 대한 구독 간 재해 복구</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/oms-portal-moving-to-azure-portal/">Azure Portal로 이동하는 OMS 포털</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-api-management-update-aug-28/">Azure API Management 업데이트 8월 28일</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/file-service-update-change-tracking-inventory/">변경 내용 추적 및 인벤토리에서 파일 지원 및 Windows 서비스 추적에 대한 업데이트</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/logs-in-azure-portal/">Azure Portal의 새 로그 환경</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/troubleshoot-virtual-network-connectivity/">가상 네트워크의 연결 문제 해결</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-security-center-update-august-29/">Azure Security Center 업데이트 8월 29일</a></li>
+  </ul>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="50%">
+     <p align="left"><a href="https://www.youtube.com/watch?v=16bUZ43CGxs"><img alt="Thumbnail of Azure Tips and Tricks: How to generate an SSH public key to log into a Linux VM video" border="0" height="184" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c20a3f58-1829-47ac-a91e-bf2bea2d8267.jpg" style="display: inline; background-image: none;" title="Azure 팁 및 트릭: Linux VM에 로그인하는 SSH 공개 키를 생성하는 방법" width="244"></a></p>
+
+     <p align="left"><strong><a href="https://www.youtube.com/watch?v=16bUZ43CGxs">Linux VM | 로그인하는 SSH 공개 키를 생성하는 방법 Azure 팁 및 요령</a></strong> - 은 Windows 10 Cloud Shell 및 BASH를 사용하여 Linux VM에 로그인하는 SSH 공개 키를 생성하는 방법을 알아봅니다. 서버에 SSH하는 경우 암호를 입력하지 않고도 VM에 자동으로 로그인하는 방법을 알아봅니다.</p>
+     </td>
+     <td align="center" width="50%">
+     <p align="left"><a href="https://www.youtube.com/watch?v=JRvKnMqdBcY"><img alt="Thumbnail for Azure Tips and Tricks: How the Azure Cloud Shell uses storage video" border="0" height="184" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9521c798-f3e0-403f-b021-7ba559209357.jpg" style="display: inline; background-image: none;" title="Azure 팁 및 트릭: Azure Cloud Shell에서 스토리지를 사용하는 방법" width="244"></a></p>
+
+     <p align="left"><strong><a href="https://www.youtube.com/watch?v=JRvKnMqdBcY">Azure Cloud Shell에서 스토리지 | 사용하는 방법 Azure 팁 및 트릭</a></strong> -&#39;Azure Cloud Shell의 스토리지를 신비화합니다. Azure Storage 계정을 만들 때 스토리지 계정을 사용하여 리소스와 상호 작용할&#39;때마다 필요할 수 있는 정보를 유지합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>기술 콘텐츠 및 교육</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/turn-your-whiteboard-sketches-to-working-code-in-seconds-with-sketch2code/">Sketch2Code를 사용하여 화이트보드 스케치를 작업 코드로 설정(초)</a> - AI Show의 이전 에피소드에서 설명한 것처럼 Sketch2Code는 AI를 사용하여 필기 사용자 인터페이스 디자인을 그림에서 유효한 HTML 태그 코드로 변환하는 웹 기반 솔루션입니다. 이 게시물을 확인하여 Sketch2Code를 사용하여 필기 이미지를 HTML로 변환하는 과정을 자세히 알아보세요. 코드, 솔루션 개발 프로세스 및 <a href="https://github.com/Microsoft/ailab/tree/master/Sketch2Code">GitHub</a> 대한 다른 모든 세부 정보를 찾을 수 있습니다. Sketch2Code는 Kabel 및 Spike Techniques와 공동으로 개발되었습니다.</p>
+
+
+  <p>Deep Learning - Project Natick을 <a href="https://azure.microsoft.com/en-us/blog/monitoring-environmental-conditions-near-underwater-datacenters-using-deep-learning/">사용하여 수중 데이터 센터 근처의 환경 조건을 모니터링</a>하는 것은 전 세계 해저 데이터 센터 배포의 이점과 어려움을 이해하려고 합니다. 이는 세계&#39;최초로 배치된 수중 데이터 센터이며 지속 가능성에 중점을 두고 설계되었습니다. 2단계는 재생 가능 에너지로 구동되는 북해에 본격적인 데이터 센터 모듈을 배포하여 1단계에서 수행된 연구를 확장합니다. Project Natick은 AI를 사용하여 서버 및 기타 장비에서 오류 징후를 모니터링하고 환경과 서버 수장 간의 상관 관계를 식별합니다.</p>
+
+
+  <p align="center"><img alt="Photo of a subsea datacenter on the surface" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8a953e59-b9a0-427b-b71b-df4ec0470f8c.png" title="표면의 해저 데이터 센터"></p>
+
+
+  <p>여러 데이터 팩터 - <a href="https://azure.microsoft.com/en-us/blog/sharing-a-self-hosted-integration-runtime-infrastructure-with-multiple-data-factories/">리에서 자체 호스팅 Integration Runtime 인프라 공유</a> Integration Runtime은 다양한 네트워크 환경에서 데이터 통합 기능을 제공하기 위해 Azure Data Factory에서 사용하는 컴퓨팅 인프라입니다. 퍼블릭 클라우드 환경에서 직접적인 시야가 없는 프라이빗 네트워크 환경에서 데이터 통합 및 오케스트레이션을 안전하게 수행해야 하는 경우 회사 방화벽 뒤의 프레미스 또는 가상 프라이빗 네트워크 내부에 자체 호스팅 Integration Runtime을 설치할 수 있습니다. 자체 호스팅 Integration Runtime 공유 덕분에 데이터 팩터리 간에 동일한 자체 호스팅 Integration Runtime 인프라를 공유할 수 있으므로 동일한 Azure Active Directory 테넌트 내의 다른 데이터 팩터리에서 동일한 고가용성 및 확장 가능한 자체 호스팅 Integration Runtime 인프라를 다시 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/azuredev/2018/08/30/azure-content-spotlight-migrate-apps-to-azure/">Azure 콘텐츠 추천 &ndash; </a> 이번 주 Azure로 - 앱 마이그레이션&#39;스포트라이트는 소프트웨어 설계자와 개발자가 패턴 및 모범 사례를 포함하여 애플리케이션을 클라우드로 마이그레이션하기 위해 Azure에서 제공하는 다양한 서비스 및 리소스에 대한 인사이트를 얻는 데 도움이 되는 리소스 집합에 빛을 비춥니다.</p>
+
+
+  <h2>Azure 팟캐스트</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" valign="middle" width="300">
+     <p>
+     <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode244.mp3">HTML5 오디오가 지원되지 않음</audio>
+     </p>
+     </td>
+     <td>
+     <p><strong><a href="https://azpodcast.com/post/Episode-244-Azure-Container-Instances">Azure 팟캐스트: 에피소드 244 - Azure Container Instances</a> </strong> - Azure Compute 팀의 PM인 Justin Luk는 ACI를 분석하여 컨테이너 워크로드에 대해 이 새로운 서비스를 고려해야 하는 이유와 시기에 대한 조언을 제공합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>이벤트</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/accelerating-artificial-intelligence-ai-in-healthcare-using-microsoft-azure-blueprints/">Microsoft Azure 청사진을 사용하여 의료 분야의 AI(인공 지능) 가속화</a> - AI와 같은 새로운 기능을 빠르게 획득하고 새로운 솔루션을 구현하기 위해 의료 IT 및 개발자는 이제 업계별 Azure Blueprints를 활용할 수 있습니다. 청사진에는 예제 코드, 테스트 데이터, 보안 및 규정 준수 지원과 같은 리소스가 포함됩니다. 이러한 청사진을 사용하여 의료 IT 팀은 보안 Azure 클라우드에서 새로운 유형의 솔루션을 신속하게 구현할 수 있습니다. 그러나 청사진을 사용하면 최종 솔루션의 50%에서 90%를 얻을 수 있습니다. 그런 다음, 청사진 솔루션을 사용자 지정하기 위해 노력과 리소스를 바칠 수 있습니다. Azure의 수석 시스템 설계자인 David Starr와 함께 <a href="https://infopedia.eventbuilder.com/event?WT.mc_id=accel-acomblog-dastarr&amp;eventid=u1w1q8">Microsoft Azure Blueprints 웹캐스트를 사용하여 의료 분야의 AI(가속화 인공 지능)</a>를 확인하여 자세히 알아볼 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/microsoft-azure-data-welcomes-attendees-to-vldb-2018/">Microsoft Azure Data는 VLDB 2018 </a> - 참석자를 환영합니다. Gophers가 GopherCon을 위해 덴버에 있는 동안 데이터 군중은 제44회 VLDB(초대형 데이터 베이스) 2018 국제 컨퍼런스를 위해 리우데자네이루로 모험을 했습니다. VLDB는 데이터 관리 및 데이터베이스 연구원, 공급업체, 실무자, 애플리케이션 개발자 및 사용자를 위한 최고의 연례 국제 포럼입니다. Rohan Kumar 회사 부사장인 Azure Data는 이 기회를 통해 Microsoft의 Azure Data 그룹에서 많은 서비스와 진행 중인 작업을 카탈로그화했습니다. Kumar가 말했듯이, &quot;클라우드와 에지가 컴퓨팅의 새로운 개척지로서, 따라서 데이터 관리의 새로운&mdash; 경계선으로 등장한 것은 이제 엔터프라이즈, 온-프레미스, 온-클라우드 및 에지 디바이스 안팎으로 분산되어 있으며, 삭제되는 순간부터 모든 데이터에 대한 지능형 분석, 트랜잭션 및 책임 있는 거버넌스를 사용하도록 설정해야 합니다.  수집, 업데이트, 탐색, 데이터 준비, 분석, 서비스 및 보관의 전체 수명 주기를 통해&quot;</p>
+
+
+  <h2>코리와 화요일</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Azure-Site-Recovery-between-Regions"><img alt="Thumbnail of Tuesdays with Corey: Azure Site Recovery between Regions video" border="0" height="139" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e4438072-3615-47ed-b386-e534fd74c6f1.jpg" style="display: inline; background-image: none;" title="Corey와 함께하는 화요일: 지역 간 Azure Site Recovery" width="244"></a></p>
+     </td>
+     <td valign="top">
+     <p>지역 - <strong><a href="https://channel9.msdn.com/Shows/Tuesdays-With-Corey/Azure-Site-Recovery-between-Regions">간 Azure Site Recovery</a> </strong> Corey Sanders, 회사 부사장 - Microsoft Azure 컴퓨팅 팀은 Azure Compute 팀의 수석 PM 관리자인 Sujay Talasila와 함께 Azure Site Recovery의 새로운 변경 사항에 대해 이야기했습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-new-offers-july-16-31/">Azure Marketplace 새 제품: 7월 16-31</a> - 일 Azure Marketplace는 Azure에서 실행되도록 인증되고 최적화된 모든 소프트웨어 요구 사항에 &ndash; 대한 최고의 대상입니다. 수백 개의 주요 소프트웨어 공급자에서 애플리케이션 &amp; 서비스를 찾고, 시도하고, 구매하고, 프로비전합니다. 7월 하반기에는 Akamai Enterprise Application Access, Fedora Linux, Carbonite&#39;s Migrate to Azure Stack - Windows 1Tb(4-Wks) 등 50개의 새로운 제품을 발표했습니다.</p>
+
+
+  <p>Aporeto - <a href="https://open.microsoft.com/2018/08/31/securing-kubernetes-workloads-hybrid-cloud-aporeto/">를 사용하여 하이브리드 설정에서 Kubernetes 워크로드 보호</a> 마이크로 서비스, 컨테이너 및 클라우드를 위한 제로 트러스트 보안 솔루션인 Aporeto는 AKS(Azure Kubernetes Service) 및 프라이빗 클라우드에 분산된 애플리케이션에 대한 중앙 집중식 가시성 및 보안을 제공합니다. Aporetos&rsquo; 접근 방식의 기본은 애플리케이션의 모든 항목에 액세스할 수 있고 언제든지 손상될 수 있다는 원칙입니다. Aporeto는 네트워크 및 인프라에서 애플리케이션 보안을 해제하므로 컨테이너, 마이크로 서비스 및 클라우드 애플리케이션을 보호하기 위한 Aporetos&rsquo; 접근 방식의 한 가지 주요 이점은 하이브리드 또는 다중 클라우드 설정에서도 일관된 보안 접근 방식을 가질 수 있다는 것입니다.</p>
+
+
+  <h2>산업</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/keeping-shelves-stocked-and-consumers-happy-and-shopping/">선반을 비축하고 소비자를 행복하게 유지 (그리고 쇼핑!)</a> - Mariya Zorotovich Worldwide Retail 및 CG Industry Leader는 고급 분석을 통해 소매업체가 재고 부족 문제를 해결하고 약 5~10%의 매출 증가를 얻는 데 어떻게 도움이 되는지 설명합니다. SKU 구색 최적화 솔루션으로 재고 부족 문제를 해결하는 방법을 확인하려면 <a href="https://download.microsoft.com/download/0/1/5/0150425C-14C7-41F4-97EA-3DE57B678C51/IndUC_InvOpt.pdf">SKU 구색 + 기계 학습 사용 사례를 통해 인벤토리 최적화</a>를 읽어보십시오. 이 문서에서는 비즈니스 분석을 위한 Microsoft 2017 올해의 글로벌 파트너인 Neal Analytics의 접근 방식을 포함하여 Azure 서비스를 활용하는 솔루션 개요 및 재고 부족 문제를 해결하기 위한 옵션을 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/extracting-actionable-insights-from-iot-data-to-drive-more-efficient-manufacturing/">보다 효율적인 제조를 위해 IoT 데이터에서 실행 가능한 인사이트 추출</a> - IoT가 폭발적이면서 이제 수백만 개의 디바이스, 컴퓨터, 제품 및 자산이 연결되고 테라바이트 단위의 데이터를 스트리밍합니다. 그러나 디바이스에 연결하고 센서 데이터를 수집하고 저장하는 것은 첫 번째 단계일 뿐입니다. 이 데이터를 수집하는 요점은 비즈니스 가치를 유발하는 일종의 작업을 트리거하는 실행 가능한 인사이트를 &mdash; 추출하는 것입니다. IoT 솔루션을 사용하는 첫 번째 실행 가능한 단계를 수행하려면 <a href="https://azure.microsoft.com/en-us/industries/discrete-manufacturing/usecases/?WT.mc_id=iotinsightsblog1-acomblog-azuresource">IoT 데이터 개요에서 인사이트 추출을</a> 방금 릴리스했습니다. 여기서는 IoT 데이터의 가치, IoT 솔루션의 분석, IoT 데이터 분석에 사용할 수 있는 옵션, 추출한 인사이트에 대해 작업하는 방법 및 구매 고려 사항을 빌드하는 방법에 대해 자세히 알아볼 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/four-trends-powering-healthcare-ai-and-what-you-can-do-about-it/">의료 AI를 구동하는 네 가지 추세와 이를</a> - 통해 수행할 수 있는 사항 의료 데이터의 쓰나미, 의료 전문가 소진, 의료 비용은 다시 조정되고 랜섬웨어는 의료 서비스를 방해하고 위반은 환자의 신뢰를 침식. <a href="https://azure.microsoft.com/en-us/industries/healthcare/usecases/?WT.mc_id=aiihcuco-acomblog-azuresource">새로운 무료 AI in Healthcare 가이드</a>를 다운로드하여 이러한 추세가 AI에서 구동되고 Microsoft Azure 클라우드에서 제공되는 새로운 변환 사용 사례 및 워크로드 집합을 구동하는 방법에 대해 자세히 알아보세요. 처음부터 시작하지&#39;. 설명서 및 보안 및 규정 준수 지원뿐만 아니라 예제 코드, 테스트 데이터 및 자동화된 배포를 포함하는 무료 청사진을 사용하여 의료 AI 이니셔티브를 가속화할 수 있는 방법을 확인하여 AI 솔루션 참조 시작 지점을 신속하게 설정한 다음, 대상 AI 솔루션을 더 빠르게 달성할 수 있습니다. AI 이니셔티브를 더욱 가속화하는 데 도움이 되는 주요 파트너도 사용할 수 있습니다.</p>
+
+
+  <p>인공 지능 - <a href="https://azure.microsoft.com/en-us/blog/two-seconds-to-take-a-bite-out-of-mobile-bank-fraud-with-artificial-intelligence/">으로 모바일 은행 사기에서 물린 2 초</a> 모바일 뱅킹이 성장함에 따라 고객과 은행, 모바일 장치 사기에 대한 렌치 될 수있는 한 가지 측면도 마찬가지입니다. AI(인공 지능) 모델은 사기 감지 속도 및 감지 시간을 크게 향상시킬 수 있습니다. 한 가지 방법은 <a href="https://aka.ms/bankingsolutionguide">모바일 은행 사기 솔루션 가이드</a>에 설명되어 있습니다. &rsquo;동작 기반 AI 접근 방식을 사용하며 규칙 기반 또는 기타 접근 방식보다 변화하는 사기 패턴에 훨씬 더 응답할 수 있습니다. 이 가이드에서는 논리와 개념을 설명하고 모바일 은행 사기 탐지 솔루션을 구현하는 다음 단계로 안내합니다.</p>
+
+
+  <h2>클라우드 전문가&#39;이번 주 Azure</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://www.youtube.com/watch?v=pIbsSuq31RI"><img alt="Thumbnail of A Cloud Guru's Azure This Week - 31 August 2018 video" border="0" height="184" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/28acdcec-24ac-4c77-ba2c-cf241ebbca7d.jpg" style="display: inline; background-image: none;" title="클라우드 전문가의 Azure 이번 주 - 2018년 8월 31일" width="244"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://www.youtube.com/watch?v=pIbsSuq31RI">Azure 이번 주 - 2018년 8</a> </strong> - 월 31일 이번 주: Dean Bryen은 Azure AD B2B에서 Google ID의 도입, sketch2code 도구를 사용하여 화이트보드 와이어프레임을 HTML로 전환하는 방법 및 Azure Security Center의 경고에 대한 신뢰도 점수의 공개 미리 보기를 살펴봅니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

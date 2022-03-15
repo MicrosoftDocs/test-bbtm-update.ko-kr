@@ -1,0 +1,61 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7bf5a8083b5aacfd831956ec0cb993ac48c73a38
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913167"
+Slug: azure-health-bot-adds-eight-new-regions-with-additional-language-support-including-india-to-support-pandemic-response
+Title: Azure Health Bot은 전염병 대응을 지원하기 위해 인도를 포함하여 추가 언어 지원을 통해 8개의 새로운 지역을 추가합니다.
+Summary: Azure Health Bot을 사용하면 의료 조직의 개발자가 AI(인공 지능) 기반의 규격 대화형 의료 환경을 대규모로 빌드하고 배포할 수 있습니다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/services/bot-services/health-bot/" target="_blank">Azure Health Bot</a> 은 의료 조직의 개발자가 AI(인공 지능) 기반의 규정을 준수하는 대화형 의료 환경을 대규모로 빌드하고 배포할 수 있도록 지원합니다. 기본 제공 의료 인텔리전스와 자연어 기능을 결합하여 임상 용어를 이해하고 임상 및 운영 사용 사례를 지원하도록 쉽게 사용자 지정할 수 있습니다. 이 서비스를 통해 의료 조직은 HIPAA 및 HITRUST를 비롯한 업계 요구 사항을 준수할 수 있습니다. 예를 들어, 미국에서 가장 큰 의료 시스템 중 하나인 <a href="https://cloudblogs.microsoft.com/industry-blog/health/2021/01/27/improving-the-pace-of-vaccine-distribution-through-technology/" target="_blank">트리니티 헬스(Trinity Health</a>)는 22개 주에서 3천만 명 이상의 사람들을 돌보고 있으며, Azure Health Bot을 효과적으로 활용하여 환자가 필요한 치료에 더 쉽게 연결할 수 있도록 했습니다.</p>
+
+
+  <p>현재 Azure Health Bot을 8개의 새로운 지역에 도입하고 있습니다.</p>
+
+
+  <ul>
+      <li>미국 서부 2</li>
+      <li>미국 동부 2</li>
+      <li>미국 중남부</li>
+      <li>영국 남부</li>
+      <li>북유럽</li>
+      <li>동남아시아</li>
+      <li>오스트레일리아 동부</li>
+      <li>인도 중부</li>
+  </ul>
+
+
+  <p>인도에서 COVID-19 사례의 급증에 대응하여 이 지역의 전염병 대응 노력을 지원하기 위해 인도 중부를 추가하고 있습니다. 이러한 새로운 지역은 미국 동부 및 서유럽 외에도 3개 대륙에 걸쳐 총 10개 지역에 Azure Health Bot의 일반 공급이 제공됩니다.</p>
+
+
+  <p>고객은 다양한 사용 사례에서 참여를 유도하기 위해 Azure Health Bot을 사용하고 있습니다. 예를 들어&nbsp; <a href="https://www.sharecare.com/" target="_blank">Sharecare</a>는 의료 봇&rsquo;의 글로벌 가용성을 활용하여 호텔, 경기장 및 학교와 같은 시설을 강화하여 COVID-19와 같은 급성 공중 보건 이벤트로&nbsp; 인한 운영 및 건강 안전 문제를 완화할 수 있는 건강 보안 플랫폼인 Sharecare VERIFIED&trade;를 포함하여 중요 업무용 서비스를 수행합니다. 포브스 트래블 가이드와의 전략적 파트너십을 통해 2020년 11월에 데뷔한 Sharecare VERIFIED&trade; 는 현재 70여 개국에 있는 약 700개의 호텔과 리조트에서 사용되고 있습니다.&nbsp;</p>
+
+
+  <p style="margin-left: 40px;"><em>&ldquo;Sharecare VERIFIED는&trade; 호텔과 학교와 같은 장소에서 직원과 손님, 교사, 학부모 및 학생 모두에게&rdquo; 신뢰를 회복할 수 있는 기회로 전염병에서 나타났습니다. Sharecare&#39;상태 보안 플랫폼의 Azure Health Cloud 및 Health Bot을 활용하여 훨씬 더 빠르고 효율적으로 확장할 수 있을 뿐만 아니라, 가장 필요한 시간에 조직에 더 저렴한 비용으로 새로운 솔루션을 제공할 수 있습니다.&rdquo;&mdash;</em> 에릭 페링골드, 셰어케어 최고 혁신 책임자</p>
+
+
+  <h2>새로운 증상 검사 언어</h2>
+
+
+  <p>Azure Health Bot을 전 세계 더 많은 조직에 널리 제공하고 유용하게 사용할 수 있도록 하기 위해 새 배포 지역을 추가할 뿐만 아니라 <a href="https://docs.microsoft.com/en-us/azure/health-bot/bot_docs/triage_symptom_checking" target="_blank">기본 제공 증상 검사</a>에 16개의 추가 언어를 추가하고 있습니다. Azure Health Bot의 고유한 기능인 증상 검사기는 조건, 의사 및 약물에 대한 의료 정보를 포함합니다. 사용자 지정 시나리오에 대한 환경을 확장하여 요구 사항에 맞게 조정할 수 있습니다. 영어가 아닌 사용자 또는 환자가 의료 불만을 입력하면 Health Bot은 Azure Cognitive Services의 <a href="https://azure.microsoft.com/en-us/services/cognitive-services/translator/#features" target="_blank">신경 기계 번역</a> 을 활용하여 시작 증상을 추출합니다. 그런 다음 사용자 또는 환자&rsquo; 모국어로 심사 콘텐츠를 제공합니다.</p>
+
+
+  <p>증상 검사기에서 지원하는 언어의 전체 목록은 <a href="https://docs.microsoft.com/en-us/azure/health-bot/bot_docs/triage_symptom_checking#multi-lingual-triage-infermedica" target="_blank">설명서</a>에서 액세스할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8d1f35bc-be65-4611-870b-ea9159d7bd8b.png"><img alt="Azure Health Bot symptom checker offers multilingual support" border="0" height="356" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e957c12d-6b52-438b-9a6a-22556830d427.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Health Bot 증상 검사기는 다국어 지원을 제공합니다." width="1024"></a></p>
+
+
+  <p>AI는 지불인과 공급자 모두에게 변화를 주도하고 있으며, 우리는 우리의 기술이 이를 실현하는 데 있어 우리가 하는 역할에 겸손해지고 있습니다. <a href="https://blogs.microsoft.com/blog/2020/03/20/delivering-information-and-eliminating-bottlenecks-with-cdcs-covid-19-assessment-bot/" target="_blank">질병 통제 센터</a> 및 <a href="https://news.microsoft.com/transform/how-international-health-care-organizations-are-using-bots-to-help-fight-covid-19/" target="_blank">헬싱키 대학 병원</a>과 같은 고객은 Health Bot을 사용하여 사용자의 손에 자세한 정보를 제공하고 셀프 서비스를 사용하도록 설정하고 비용을 절감합니다. 조직에서 이러한 새로운 기술을 사용하여 영향력을 제공하는 방법을 계속 기대하고 있습니다.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <ul>
+      <li><a href="https://aka.ms/azurehealthbot" target="_blank">Azure Health Bot 웹 페이지를</a> 살펴보세요.</li>
+      <li>첫 번째 Health Bot을 만드는 <a href="https://docs.microsoft.com/en-us/healthbot/quickstart-createyourhealthcarebot" target="_blank">단계별 가이드</a> 입니다.</li>
+      <li><a href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" target="_blank">의료 조직을 위한 Microsoft Cloud</a> 대해 알아봅니다.</li>
+  </ul>

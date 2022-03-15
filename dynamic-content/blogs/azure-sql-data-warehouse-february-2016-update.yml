@@ -1,0 +1,87 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 22ed7087ad1d23deb65dda660bf6cca55e82b648
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913095"
+Slug: azure-sql-data-warehouse-february-2016-update
+Title: 'Azure SQL Data Warehouse: 2016년 2월 업데이트'
+Summary: 2월은 SQL Data Warehouse에서 짧지만 흥미로운 달이었으며, 팀은 고객과 직접 협력하여 서비스를 가장 잘 개선하는 방법을 이해하고 있습니다.
+Content: >-
+  <p>2월은 SQL Data Warehouse에서 짧지만 흥미로운 달이었습니다. 안정성, 안정성 및 확장성에 대한 개선 사항과 아래에 나열된 고객 기반 기능 중 일부를 확인할 수 있습니다.</p>
+
+
+  <h2>SSMS 구현하기 위한 TSQL</h2>
+
+
+  <p>가장 많이 수신된 요청&rsquo; 중 하나는 SQL Server Management Studio(SSMS)을 사용하여 SQL Data Warehouse를 쿼리하고 관리하려는 것입니다. 우리는 SSMS 대한 지원을 추가하기 위해 열심히 노력하고 있으며, 2 월에 우리는 이것을 향한 몇 가지 중요한 조치를 취했습니다. SSMS 지원의 일부로 다음 TSQL 함수를 사용하도록 설정했습니다.</p>
+
+
+  <ul>
+   <li><a href="https://msdn.microsoft.com/en-us/library/ms189837.aspx">NOCOUNT ON을 설정합니다| OFF</a>: TSQL 작업의 영향을 받는 행 수를 사용하여 메시지가 반환되는지 여부를 설정합니다.</li>
+   <li><a href="https://msdn.microsoft.com/en-us/library/ms178629.aspx">PARSEONLY ON을 설정합니다| OFF</a>: 코드를 실행하거나 컴파일하지 않고 코드에서 오류를 검사합니다.</li>
+   <li><a href="https://msdn.microsoft.com/en-us/library/ms186271.aspx">IS_MEMBER()</a> 및 <a href="https://msdn.microsoft.com/en-us/library/ee677633.aspx">IS_ROLEMEMBER()</a>: 데이터베이스 사용자가 멤버인지 또는 특정 역할/그룹인지를 확인하는 쿼리</li>
+   <li><a href="https://msdn.microsoft.com/en-us/library/ms190305.aspx">COLLATIONPROPERTY</a>: SQL Server 2016에서 지정된 데이터 정렬의 속성을 반환합니다.</li>
+   <li>@@MICROSOFTVERSION: SQL Database 또는 SQL Data Warehouse의 Microsoft 버전을 반환합니다.</li>
+  </ul>
+
+
+  <h2>PolyBase 공용 데이터 집합</h2>
+
+
+  <p>이제 PolyBase는 개인 스토리지 계정에서 데이터를 로드하는 것 외에도 데이터에 액세스하기 위한 키 또는 자격 증명을 지정할 필요 없이 공용 Azure Blob Storage 컨테이너에 연결하고 쿼리할 수 있습니다. 이렇게 하면 대규모 공용 데이터 세트를 SQL Data Warehouse로 빠르게 읽을 수 있습니다. 예를 들어 평가판에 대해 많은 양의 데이터를 로드할 수 있습니다. 공용 데이터에 액세스하려면 자격 증명을 지정하지 않고 스토리지를 가리키는 외부 데이터 원본을 만들기만 하면 됩니다. 외부 데이터 원본에 대한 업데이트 구문은 <a href="https://msdn.microsoft.com/en-us/library/dn935022.aspx">여기에서</a> 찾을 수 있습니다.</p>
+
+
+  <h2>셀프 서비스 Geo-Restore</h2>
+
+
+  <p>이제 서비스에서 자동으로 수행한 지역 중복 백업에서 SQL Data Warehouse를 복원할 수 있습니다. 데이터 웨어하우스는 모든 Azure 지역 및 모든 서버에서 복원할 수 있습니다. SQL 데이터 웨어하우스는 지역 중복 백업을 사용하므로 중단으로 인해 데이터베이스에 액세스할 수 없는 경우에도 데이터베이스를 복구할 수 있습니다. 이렇게 하면 가용성 및 안정성의 추가 계층이 추가됩니다.</p>
+
+
+  <p>이 작업은 이전에 사용할 수 있었지만 최근 업데이트를 통해 <a href="https://azure.microsoft.com/en-us/documentation/articles/sql-data-warehouse-business-continuity-recover-from-outage/">Azure Portal, PowerShell 또는 REST API</a>를 통해 프로세스를 쉽고 널리 사용할 수 있습니다.</p>
+
+
+  <p><img alt="geo_restore" border="0" height="526" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/09e6d375-4c53-4bb6-bcb5-3db74da5519d.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="geo_restore" width="610"></p>
+
+
+  <h2>DWU 제한 및 DWU 사용 측정값</h2>
+
+
+  <p>&#39;DWU를 워크로드와 비교하려면 어떻게 해야 하나요? 적절한 양의 DWU를 사용하려면 어떻게&rsquo; 해야 할까요?</p>
+
+
+  <p>이제 Azure Portal에서 워크로드에 대한 DWU를 모니터링하는 데 사용할 수 있는 두 가지 새로운 메트릭(DWU 제한 및 DWU 사용)이 있습니다. DWU 제한 및 DWU 사용은 데이터 웨어하우스의 크기를 조정하고 향후 성장을 계획할 수 있도록 사용량을 이해하는 데 도움이 되도록 설계되었습니다. 두 메트릭은 다음과 같이 설정됩니다.</p>
+
+
+  <ul>
+   <li><strong>DWU 제한: </strong> 이 메트릭은 현재 데이터 웨어하우스에 할당된 DWU 수를 보여줍니다. 워크로드에서 언제든지 사용할 수 있는 최대 DWU 양입니다. 확장 또는 축소하여 제한을 늘리거나 줄일 수 있습니다.</li>
+   <li><strong>DWU 사용/DWU 백분율:</strong> 이러한 메트릭은 현재 실행 중인 워크로드가 사용하는 DWU의 양을 보여 줍니다. DWU를<b> </b>구동하는 두 메트릭은 IO 및 CPU 사용량이므로 서비스의 모든 노드를 고려하여 이러한 두 측정값의 특별한 조합을 사용합니다.</li>
+  </ul>
+
+
+  <p>이러한 측정값은 모두 아래와 같이 메트릭 섹션과 SQL Data Warehouse의 기본 페이지에 표시됩니다. 아래 워크로드에서는 1,000 DWU가 프로비전되었지만 데이터 웨어하우스는 평균 300 DWU를 약간만 사용하고 있음을 알 수 있습니다. 그러나 지난 주 내에 워크로드에 인스턴스의 전체 성능이 필요한 지점이 있습니다. 사용자 고유의 워크로드를 고려하여 비용을 최소화하고 데이터 웨어하우스를 더 잘 조정하기 위해 확장 또는 축소할 수 있는 시간을 고려할 수 있습니다.</p>
+
+
+  <p><img alt="DWU_Limit" border="0" height="529" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/83dbec75-6ef0-4aa2-a4eb-bfde9cc66f34.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="DWU_Limit" width="610"></p>
+
+
+  <h2>설명서 업데이트</h2>
+
+
+  <p>이제 SQL Data Warehouse 설명서가 그 어느 때보다 명확하고 완전해졌습니다. 서비스 팀은 600개 이상의 참조 항목을 MSDN으로 마이그레이션하고 <a href="https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/">온라인 설명서를</a> 수많은 업데이트했습니다. 새로운 &ldquo;적용&rdquo; 대상 표식을 사용하면 데이터 웨어하우스를 SQL Database, SQL Server 및 SQL 구문을 쉽게 비교하고 대조할 수 있습니다. 아래에서 볼 수 있듯이 <a href="https://msdn.microsoft.com/en-us/library/gg492153.aspx">CREATE COLUMNSTORE INDEX</a>는 여러 제품에 적용되는 반면 SQL Data Warehouse에는 별도의 <a href="https://msdn.microsoft.com/en-us/library/mt204021.aspx">CREATE DATABASE</a> 항목이 있습니다.</p>
+
+
+  <p><img alt="docspic1" border="0" height="112" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8e9b456a-a6fa-4a56-8edb-f2888d675b15.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="docspic1" width="480"></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p><img alt="docspic2" border="0" height="66" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/55adce9f-c5da-4b66-88ce-39258b58d22b.png" style="border-width: 0px; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="docspic2" width="480"></p>
+
+
+  <p>&nbsp;</p>
+
+
+  <p>향후 SQL Data Warehouse를 개선하는 방법에 기여하려면 <a href="https://feedback.azure.com/forums/307516-sql-data-warehouse">기능에 대한 제안을</a> 제출하거나 피드백 설문 조사를 완료하세요.</p>

@@ -1,0 +1,93 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3bf97f51e5f50f4e7f61e871e1b44e6c220cac81
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897613"
+Slug: microsoft-educator-community-harnesses-recommendations-api-to-engage-educators-around-the-world
+Title: Microsoft 교육자 Community 전 세계 교육자를 참여시키기 위해 권장 사항 API를 활용합니다.
+Summary: >-
+  Microsoft 교육자 Community 웹 사이트(education.microsoft.com)는 전 세계 교육자가 연결하고 협업하고, 교육과 교훈을 찾고, 0ffice 365와 같은 Microsoft 제품으로 전문 경력을 쌓을 수 있는 전 세계 교육자를 위한 중앙 허브입니다.
+
+
+  이 사이트는 강좌, 자원, 웨비나, 수업 계획, Skype 등 교육자를 위한 다양한 콘텐츠와 활동을 제공합니다.
+Content: >-
+  <p>Microsoft 교육자 Community 웹 사이트(education.microsoft.com)는 전 세계 교육자가 연결하고 협업하고, 교육과 교훈을 찾고, 0ffice 365와 같은 Microsoft 제품으로 전문 경력을 쌓을 수 있는 전 세계 교육자를 위한 중앙 허브입니다.</p>
+
+  <p><img width="100%" height="100%" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Educator1.png"></p>
+
+  <p>이 사이트는 강좌, 자원, 웨비나, 수업 계획, Skype 활동 등 교육자를 위한 다양한 콘텐츠와 활동을 제공합니다. 현재 14,000개 이상의 콘텐츠 페이지가 있습니다. 웹 사이트의 비즈니스 개발 관리자인 Iris Yuster &ndash; 박사는 해당 콘텐츠와 이전 사용자 동작을 사용하여 반품 방문, 새 등록을 늘리고, 고객 환경을 개인화하고, 고객 참여를 늘리고자 했습니다.</p>
+
+  <p>교육자 Community 팀은 권장 사항 API, Micorsoft Cognitive Services의 일부 및 이 목표를 완성하기 위해 몇 가지 영리한 사용자 환경 개선을 사용하기로 결정했습니다. 서비스&rsquo; 기능을 사용하여 항목-항목 권장 사항 및 사용자-항목 권장 사항을 제공합니다.</p>
+
+
+  <p>교육자 Community 콘텐츠 페이지에서 항목 대 항목 권장 사항 사용했습니다. 권장 사항 API는 기계 학습 기술을 사용하여 주요 단원/문서와 관련된 추가 콘텐츠를 제공합니다. 교육자들은 이 모듈&nbsp;&ldquo;을 2016년 7월에 보고 시작했습니다&rdquo;.</p>
+
+  <p>모듈은 다음과 같은 두 가지 방법으로 표시됩니다.</p>
+
+  <p>페이지 앞에 표시되고 아래로 스크롤하는 동안 부동 콘텐츠 페이지의 &ndash; 오른쪽 모서리에 있는 부동 창&nbsp;&nbsp;</p>
+
+  <p><img width="100%" height="100%" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Educator2.PNG"></p>
+
+  <p>항목을 표시하기 위해 부동 창이 클릭하여 확장됩니다.&nbsp;</p>
+
+  <p><img width="100%" height="100%" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Educator3.PNG"></p>
+
+  <p>모듈 전체 보기도 콘텐츠 페이지의 아래쪽에 표시됩니다.</p>
+
+  <p><img width="100%" height="100%" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Educator4.PNG"></p>
+
+
+  <p>교육 Community 팀은 또한 사이트를 방문할 때 고객의 첫 인상을 개인화하고자 했습니다.</p>
+
+  <p>팀은 이전 방문 중에 개별 교육자 동작을 사용하여 해당 교육자를 위해 고유하게 조정된 항목을 제공하는 권장 사항 모델을 학습시켰습니다. 이 모듈 &ldquo;을 권장이라고 했으며 홈 &rdquo; 페이지와 기본 방문 페이지에 표시됩니다.</p>
+
+  <p>홈페이지 권장 사항에는 교육자 관련 모든 사이트 범주의 콘텐츠가 혼합되어 있지만 범주 방문 페이지에서는 동일한 범주의 권장 사항만 표시합니다. 예를 들어 <em>강좌</em> 방문 페이지에는 강좌 및 관련 하위 범주의 권장 항목만 있습니다.</p>
+
+  <p><img width="100%" height="100%" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/CoursesRecommended1.png"></p>
+
+
+  <p>교육 커뮤니티 팀은 A/B 테스트를 수행했습니다. 참가자는 두 그룹 중 하나에 무작위로 할당되었습니다. 그룹 A(권장 사항 그룹)는 콘텐츠 페이지에서 권장 사항 모듈을 보았지만 그룹 B는 권장 사항을 보지 못했습니다.</p>
+
+  <p>이 샘플에는 각 그룹에 대해 37,000명의 교육자를 포함했습니다. 교육자는 그룹에 배치되면 모든 테스트 기간 동안 해당 그룹에 머물렀습니다.</p>
+
+  <p>그 영향은 매우 컸습니다! 수집한 인사이트 중 일부는 다음과 같습니다.</p>
+
+  <ol>
+
+  <li>고객의 약 6%가 권장 콘텐츠를 클릭했습니다.&nbsp; 이러한 교육자는 더 많은 콘텐츠를 사용하고, 더 오래 방문했으며, 권장 사항이 없는 교육자에 비해 더 많은 방문을 위해 돌아왔습니다.</li>
+
+  <li>
+
+  <p>권장 사항 그룹의 사람들은 교육 커뮤니티의 구성원으로 등록 할 가능성이 약 3 배 더 높았습니다.</p>
+
+  </li>
+
+  <li>
+
+  <p>그리고 권장 사항 그룹의 교육자들은 반송률이 현저히 낮았습니다!</p>
+
+  </li>
+
+  </ol>
+
+  <p>
+
+  <p>&nbsp; <img width="100%" height="100%" alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Comparison1.png"> &nbsp;</p>
+
+  <p>
+
+  <p>
+
+  <p>&nbsp;</p>
+
+  <h2>요점&hellip;</h2>
+
+  <p>개인 설정된 권장 사항은 기능을 사용하는 것이 좋지 않습니다. its&rsquo; a must have on any site. Microsoft Cognitive Services의 일부인 권장 사항 API는 교육자 Community 참여 API를 달성하고 개선하고 보다 개인화된 환경을 제공하는 데 도움이 됩니다.</p>
+
+  <p>교육자 Community Microsoft Cognitive Services를 사용하여 교육자를 중앙에 배치하고, 자신의 개인적인 관심사에 대해 생각하고, 방과 전, 도중 및 방과 후에 머물고 &nbsp;&ndash; 싶은 집과 같은 장소를 만듭니다.</p>
+
+  <h2>링크</h2>
+
+  <p><a href="https://education.microsoft.com/">Microsoft Education Community</a><br> <a href="https://www.microsoft.com/cognitive-services/en-us/recommendations-api">Recommendations API</a><br><a href="https://www.microsoft.com/cognitive-services">Microsoft Cognitive Services</a></p>

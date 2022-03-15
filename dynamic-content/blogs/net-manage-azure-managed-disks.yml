@@ -1,0 +1,302 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 61b4a1ef90c36e306efdfadf053b16b04550c3b9
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912748"
+Slug: net-manage-azure-managed-disks
+Title: '.NET: Azure Managed Disks 관리'
+Summary: .NET용 Azure 관리 라이브러리를 사용하여 Managed Disks를 관리할 수 있습니다.
+Content: >-
+  <p>.NET용 Azure 관리 라이브러리의 베타 5를 발표합니다. 베타 5는 Azure Managed Disks에 대한 지원을 추가합니다.</p>
+
+
+  <p>오늘 Microsoft <a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/">는</a> Virtual Machines의 관리 및 크기를 간소화하는 Azure Managed Disks &ndash; 의 일반 공급에 대해 발표했습니다. Virtual Machines에 사용할 크기와 디스크를 지정합니다. 이 경우 스토리지 계정을 만들고 관리하는 것에 대해 걱정할 필요가 없습니다.</p>
+
+
+  <p><a href="https://github.com/Azure/azure-sdk-for-net/tree/Fluent">.NET용 Azure 관리 라이브러리</a>를 사용하여 관리 디스크를 관리할 수 있습니다.</p>
+
+
+  <h2><a href="https://github.com/Azure/azure-sdk-for-net/tree/Fluent">https://github.com/Azure/azure-sdk-for-net/tree/Fluent</a></h2>
+
+
+  <p>다음에서 베타 5를 다운로드할 수 있습니다.</p>
+
+
+  <p><a href="https://www.nuget.org/packages/Microsoft.Azure.Management.Fluent/"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Microsoft.Azure.Management.Fluent.svg?style=flat-square&amp;label=nuget"></a></p>
+
+
+  <h2>Managed Disks를 사용하여 가상 머신 만들기</h2>
+
+
+  <p>define() create() &hellip; 메서드 체인을 사용하여 운영 체제에 대한 암시적 Managed Disk와 데이터에 대한 명시적 Managed Disks를 사용하여 Virtual Machine을 만들 수 있습니다. 간단히 만들려면 모든 디스크 세부 정보를 지정하지 않고 관리 디스크를 암시적으로 만들면 됩니다. 이 경우 스토리지 계정을 만들고 관리하는 것에 대해 걱정할 필요가 없습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  var linuxVM1 = azure.VirtualMachines
+    .Define(linuxVM1Name)
+    .WithRegion(Region.USEast)
+    .WithNewResourceGroup(rgName)
+    .WithNewPrimaryNetwork(&quot;10.0.0.0/28&quot;)
+    .WithPrimaryPrivateIpAddressDynamic()
+    .WithNewPrimaryPublicIpAddress(linuxVM1Pip)
+    .WithPopularLinuxImage(KnownLinuxVirtualMachineImage.UbuntuServer16_04_Lts)
+    .WithRootUsername(&ldquo;tirekicker&rdquo;)
+    .WithSsh(sshkey)
+    .WithNewDataDisk(100)
+    .WithSize(VirtualMachineSizeTypes.StandardD3V2)
+    .Create();</pre>
+
+  <p>즉시 실행 가능한 전체 샘플 코드를 <a href="https://github.com/Azure-Samples/compute-dotnet-manage-vm">다운로드</a> 할 수 있습니다.</p>
+
+
+  <h2>Managed Disks를 사용하여 Virtual Machine Scale Set 만들기</h2>
+
+
+  <p>define() create() &hellip; 메서드 체인을 사용하여 운영 체제용 암시적 Managed Disks 및 데이터에 대한 명시적 Managed Disks를 사용하여 Virtual Machine Scale Set을 만들 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  var vmScaleSet = azure.VirtualMachineScaleSets
+    .Define(vmScaleSetName)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithSku(VirtualMachineScaleSetSkuTypes.StandardD5v2)
+    .WithExistingPrimaryNetworkSubnet(network, &quot;subnet1&quot;)
+    .WithExistingPrimaryInternetFacingLoadBalancer(publicLoadBalancer)
+    .WithoutPrimaryInternalLoadBalancer()
+    .WithPopularLinuxImage(KnownLinuxVirtualMachineImage.UbuntuServer16_04_Lts)
+    .WithRootUsername(&quot;tirekicker&quot;)
+    .WithSsh(sshkey)
+    .WithNewDataDisk(100)
+    .WithNewDataDisk(100, 1, CachingTypes.ReadWrite)
+    .WithNewDataDisk(100, 2, CachingTypes.ReadOnly)
+    .WithCapacity(3)
+    .Create();</pre>
+
+  <p>즉시 실행 가능한 전체 샘플 코드를 <a href="https://github.com/Azure-Samples/compute-dotnet-manage-virtual-machine-scale-sets">다운로드</a> 할 수 있습니다.</p>
+
+
+  <h2>빈 관리 디스크 만들기 및 가상 머신에 연결</h2>
+
+
+  <p>define() create() &hellip; 메서드 체인을 사용하여 빈 Managed Disk를 만들 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  var dataDisk = azure.Disks.Define(diskName)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithData()
+    .WithSizeInGB(50)
+    .Create();</pre>
+
+  <p>다른 define()를 사용하여 빈 Managed Disk를 Virtual Machine에 연결할 수 있습니다. create() 메서드 체인.</p>
+
+
+  <pre class="prettyprint">
+
+  var linuxVM2 = azure.VirtualMachines.Define(linuxVM2Name)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithNewPrimaryNetwork(&quot;10.0.0.0/28&quot;)
+    .WithPrimaryPrivateIpAddressDynamic()
+    .WithNewPrimaryPublicIpAddress(linuxVM2Pip)
+    .WithPopularLinuxImage(KnownLinuxVirtualMachineImage.UbuntuServer16_04_Lts)
+    .WithRootUsername(&quot;tirekicker&quot;)
+    .WithSsh(sshkey)
+    .WithNewDataDisk(100)
+    .WithNewDataDisk(100, 1, CachingTypes.ReadWrite)
+    .WithExistingDataDisk(dataDisk)
+    .WithSize(VirtualMachineSizeTypes.StandardD3V2)
+    .Create();</pre>
+
+  <p>즉시 실행 가능한 전체 샘플 코드를 <a href="https://github.com/Azure-Samples/compute-dotnet-manage-vm">다운로드</a> 할 수 있습니다.</p>
+
+
+  <h2>Virtual Machine 업데이트</h2>
+
+
+  <p>update() apply() &hellip; 메서드 체인을 사용하여 Managed Disks를 분리하고 새 Managed Disks를 연결할 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  linuxVM2.Update()
+    .WithoutDataDisk(2)
+    .WithNewDataDisk(200)
+    .Apply();</pre>
+
+  <p>즉시 실행 가능한 전체 샘플 코드를 <a href="https://github.com/Azure-Samples/compute-dotnet-manage-virtual-machine-with-disks">다운로드</a> 할 수 있습니다.</p>
+
+
+  <h2>특수 VHD에서 가상 머신 만들기</h2>
+
+
+  <p>define() create() &hellip; 메서드 체인을 사용하여 특수화된 VHD에서 Virtual Machine을 만들 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  var linuxVM4 = azure.VirtualMachines.Define(linuxVmName3)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithNewPrimaryNetwork(&quot;10.0.0.0/28&quot;)
+    .WithPrimaryPrivateIpAddressDynamic()
+    .WithoutPrimaryPublicIpAddress()
+    .WithSpecializedOsUnmanagedDisk(specializedVhd, OperatingSystemTypes.Linux)
+    .WithSize(VirtualMachineSizeTypes.StandardD3V2)
+    .Create();</pre>
+
+  <p>즉시 실행 가능한 전체 샘플 코드를 <a href="https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-VHD">다운로드</a> 할 수 있습니다.</p>
+
+
+  <h2>사용자 지정 이미지를 사용하여 가상 머신 만들기</h2>
+
+
+  <p>define() create() &hellip; 메서드 체인을 사용하여 할당이 해제되고 일반화된 Virtual Machine에서 사용자 지정 이미지를 만들 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  var virtualMachineCustomImage = azure.VirtualMachineCustomImages
+    .Define(customImageName)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .FromVirtualMachine(linuxVM) // from a de-allocated and generalized Virtual Machine
+    .Create();</pre>
+
+  <p>다른 define() create() &hellip; 메서드 체인을 사용하여 사용자 지정 이미지에서 Virtual Machine을 만들 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  var linuxVM4 = azure.VirtualMachines.Define(linuxVM4Name)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithNewPrimaryNetwork(&quot;10.0.0.0/28&quot;)
+    .WithPrimaryPrivateIpAddressDynamic()
+    .WithoutPrimaryPublicIpAddress()
+    .WithLinuxCustomImage(virtualMachineCustomImage.Id)
+    .WithRootUsername(userName)
+    .WithSsh(sshkey)
+    .WithSize(VirtualMachineSizeTypes.StandardD3V2)
+    .Create();</pre>
+
+  <p>즉시 실행 가능한 전체 샘플 코드를 <a href="https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-custom-image">다운로드</a> 할 수 있습니다.</p>
+
+
+  <h2>스냅샷에서 특수 디스크를 사용하여 가상 머신 만들기</h2>
+
+
+  <p>운영 체제 디스크에 대한 Managed Disk 스냅샷을 만들 수 있습니다.</p>
+
+
+  <p>&nbsp;</p>
+
+
+  <pre class="prettyprint">
+
+  // Create a Snapshot for an operating system disk
+
+  var osDisk = azure.Disks.GetById(linuxVM.OsDiskId);
+
+  var osSnapshot = azure.Snapshots.Define(managedOSSnapshotName)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithLinuxFromDisk(osDisk)
+    .Create();</pre>
+
+  <pre class="prettyprint">
+
+  // Create a Managed Disk from the Snapshot for the operating system disk
+
+  var newOSDisk = azure.Disks.Define(managedNewOSDiskName)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithLinuxFromSnapshot(osSnapshot)
+    .WithSizeInGB(100)
+    .Create();</pre>
+
+  <p>데이터 디스크에 대한 Managed Disk 스냅샷을 만들 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  // Create a Snapshot for a data disk
+
+  var dataSnapshot = azure.Snapshots.Define(managedDataDiskSnapshotName)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithDataFromDisk(dataDisk)
+    .WithSku(DiskSkuTypes.StandardLRS)
+    .Create();</pre>
+
+  <pre class="prettyprint">
+
+  // Create a Managed Disk from the Snapshot for the data disk
+
+  var newDataDisk = azure.Disks.Define(managedNewDataDiskName)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithData()
+    .FromSnapshot(dataSnapshot)
+    .Create();</pre>
+
+  <p>define() create() &hellip; 메서드 체인을 사용하여 이러한 특수 디스크에서 Virtual Machine을 만들 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  var linuxVM5 = azure.VirtualMachines.Define(linuxVm5Name)
+    .WithRegion(Region.USEast)
+    .WithExistingResourceGroup(rgName)
+    .WithNewPrimaryNetwork(&quot;10.0.0.0/28&quot;)
+    .WithPrimaryPrivateIpAddressDynamic()
+    .WithoutPrimaryPublicIpAddress()
+    .WithSpecializedOsDisk(newOSDisk, OperatingSystemTypes.Linux)
+    .WithExistingDataDisk(newDataDisk)
+    .WithSize(VirtualMachineSizeTypes.StandardD3V2)
+    .Create();</pre>
+
+  <p>즉시 실행 가능한 전체 샘플 코드를 <a href="https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot">다운로드</a> 할 수 있습니다.</p>
+
+
+  <h2>단일 다시 부팅으로 Managed Disks를 사용하도록 가상 머신 변환</h2>
+
+
+  <p>관리되지 않는 디스크(Storage 계정 기반)가 있는 Virtual Machine을 단일 재부팅으로 Managed Disks로 변환할 수 있습니다.</p>
+
+
+  <pre class="prettyprint">
+
+  var linuxVM6 = azure.VirtualMachines.Define(linuxVM6Name)
+    .WithRegion(Region.USEast)
+    .WithNewResourceGroup(rgName)
+    .WithNewPrimaryNetwork(&quot;10.0.0.0/28&quot;)
+    .WithPrimaryPrivateIpAddressDynamic()
+    .WithNewPrimaryPublicIpAddress(linuxVM6Pip)
+    .WithPopularLinuxImage(KnownLinuxVirtualMachineImage.UbuntuServer16_04_Lts)
+    .WithRootUsername(&quot;tirekicker&quot;)
+    .WithSsh(sshkey)
+    .WithUnmanagedDisks() // uses Storage Account
+    .WithNewUnmanagedDataDisk(100) // uses Storage Account
+    .WithSize(VirtualMachineSizeTypes.StandardD3V2)
+    .Create();
+
+  linuxVM7.Deallocate();
+
+  linuxVM7.ConvertToManaged();</pre>
+
+
+  <p>즉시 실행 가능한 전체 샘플 코드를 <a href="https://github.com/Azure-Samples/managed-disk-dotnet-convert-existing-virtual-machines-to-use-managed-disks">다운로드</a> 할 수 있습니다.</p>
+
+
+  <h2>사용해 보세요.</h2>
+
+
+  <p>위의 샘플을 실행하거나 <a href="https://github.com/Azure/azure-sdk-for-net/tree/Fluent">GitHub 리포지토리</a>로 바로 이동합니다. 시도해 보시고 의견을 보내주세요(아래 <a>전자 메일</a> 또는 댓글을 통해). 앞으로 몇 주 동안 더 많은 Azure 서비스에 대한 지원을 추가하고 API에 마무리 작업을 적용할 예정입니다.</p>

@@ -1,0 +1,97 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8dbdd9799947941a2f8829848a7e87b227b8634e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912838"
+Slug: fall-roundup-of-recent-azure-government-announcements
+Title: 최근 Azure Government 공지 사항의 대체 검거
+Summary: 우리는 정부 고객과 파트너가 요청한 혁신을 제공하는 데 계속 집중하고 있습니다. 이 블로그에서는 늦여름과 이른 가을의 최근 공지 사항에 대한 간략한 요약을 참조할 수 있습니다.
+Content: >-
+  <p><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7337225f-b82b-4a1a-9d5c-9ae7e6457473.png" style="margin-right: auto; margin-left: auto; float: none; display: block;"></p>
+
+
+  <p>Were&rsquo;는 정부 고객과 파트너가 요청한 혁신을 제공하는 데 계속 집중하고 있습니다. 이 블로그&rsquo;에서 참조를 위해 늦은 여름과 초가을의 최근 공지 사항에 대한 간략한 요약을 찾을 수 있습니다.</p>
+
+
+  <p>또한 <a href="https://www.microsoft.com/en-us/ignite-the-tour/washington-dc">Microsoft Ignite | 초대합니다. 투어 | 정부</a>, 2월 4-5일, 워싱턴 DC. 개발자, 기술 전문가 및 미션 리더를 위한 무료 기술 교육 이벤트입니다. 우리의 최고 엔지니어는 심층 분석 세션의 이틀을 가져올 것이다, 실습 기술 구축, 네트워킹 기회. <a href="https://www.microsoft.com/en-us/ignite-the-tour/washington-dc">참가하려면 등록해야 합니다</a>.</p>
+
+
+  <h2>임무를 종료할 수 있도록 하는 새로운 기능</h2>
+
+
+  <h3>정부에 지능형 클라우드 및 지능형 에지 솔루션 사용</h3>
+
+
+  <p>Were&rsquo;는 이전에는 불가능했던 정부 기관의 새로운 임무 시나리오를 잠금 해제하는 기술 혁신을 거치고 있습니다. 스마트 센서와 연결된 디바이스는 기관이 문제에 접근하는 방식을 변화시키고 있으며, 하이브리드 클라우드는 퍼블릭 클라우드와 함께 작동하는 대부분의 원격 대상에서도&rsquo; 사용할 수 있는 컴퓨팅 단위로 진화하고 있습니다. 정부에서 <a href="https://azure.microsoft.com/en-us/blog/enabling-intelligent-cloud-and-intelligent-edge-solutions-for-government/">지능형 클라우드 및 지능형 에지 솔루션을 사용하도록 설정하는</a> 전체 문서를 읽어보세요.</p>
+
+
+  <h3>Azure Government용 Azure Security Center의 일반 공급 발표</h3>
+
+
+  <p>정부 기관이 증가하는 사이버 위협에 직면함에 따라 데이터, 네트워크 및 IT 인프라에 대한 강력한 방어를 구축해야 한다는 압박이 커지고 있습니다. <a href="https://blogs.msdn.microsoft.com/azuregov/2018/10/02/announcing-azure-security-center-availability-for-azure-government-customers/">이제 Azure Security Center가 Azure Government에서 일반 공급</a>되면 고객은 하이브리드 클라우드 워크로드에서 통합 보안 관리 및 고급 위협 방지 기능을 사용할 수 있습니다.</p>
+
+
+  <h3>Azure Government 고객을 위한 Azure Stack 발표</h3>
+
+
+  <p>불과 몇 달 전에 Microsoft Azure Stack을 정부 전용 클라우드 제품과 통합하여 기관이 ID, 구독, 등록, 청구, 백업 및 재해 복구 솔루션 및 Azure Marketplace에서 진정으로 일관된 하이브리드 클라우드 접근 방식을 활용할 수 있도록 <a href="https://blogs.msdn.microsoft.com/azuregov/2018/03/05/announcing-azure-stack-integration-with-azure-government/">하는 계획을 공유</a>했으며, <a href="https://blogs.msdn.microsoft.com/azuregov/2018/08/13/announcing-azure-stack-for-azure-government-customers-to-enable-it-modernization-and-tactical-edge-scenarios/">이제&rsquo; Azure Government 고객이 주문할 수 있게</a> 되었습니다.</p>
+
+
+  <h3>추가 Azure Government 제품 공지 사항</h3>
+
+
+  <p>Azure Reservations를 사용하여 유연성을 확보하고 예산을 개선하면 일관된 사용량으로 워크로드 비용을 절감하고, 가격 예측 가능성을 제공하고, 예산 및 예측 요구를 지원할 수 있습니다. <a href="https://azure.microsoft.com/en-us/blog/reservations-now-available-for-us-government-cloud-regions/">예약은 US Gov 애리조나, US Gov 텍사스, US Gov 버지니아, US DoD Central 및 US DoD 동부에 대한 가상 머신, SQL Server 및 Cosmos DB에 사용할 수</a> 있습니다.</p>
+
+
+  <p>최근 미국 애리조나 주 정부 및 US Gov 텍사스 지역의 <a href="https://azure.microsoft.com/en-us/blog/redefine-analytics-with-azure-sql-data-warehouse-gen2-tier-now-generally-available/">정부 고객을 위한 업계 최고의 성능 Azure SQL Data Warehouse Compute Optimized Gen2 계층</a>의 일반 공급이 발표되었습니다.</p>
+
+
+  <p>또한 Azure Government 고객을 <a href="https://azure.microsoft.com/en-us/blog/announcing-azure-database-services-for-mysql-and-postgresql-for-azure-government-customers/">위한 Azure Database for MySQL 및 Azure Database for PostgreSQL의 일반 공급</a> 도 발표했습니다. 이러한 완전 관리형 정부 지원 데이터베이스-서비스 제공은 MySQL 및 PostgreSQL의 커뮤니티 버전을 기본 제공 고가용성, 99.99% 가용성 SLA, 성능에 대한 탄력적 확장 및 업계 최고의 보안 및 규정 준수를 갖춘 중요 업무용 정부 워크로드로 가져옵니다.</p>
+
+
+  <h2>새 Azure Government 파트너 및 파트너 솔루션</h2>
+
+
+  <h3>Azure Government용 Marketplace 솔루션 검색</h3>
+
+
+  <p><a href="https://azure.microsoft.com/mediahandler/files/resourcefiles/marketplace-solutions-for-azure-government/Marketplace_Solutions_Azure_Government.pdf">Azure Government용 Marketplace 솔루션</a> 백서에서 사용 가능한 Azure Government Marketplace 솔루션에 대해 알아보고 채택 및 구현에 대한 지침을 찾습니다. 정부용으로 설계된 솔루션을 사용하여 개발을 가속화하고 IT 이니셔티브를 발전시키세요.</p>
+
+
+  <h3>Azure Government CSP(클라우드 솔루션 공급자) 찾기</h3>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/azure-government/documentation-government-csp-list">Azure Government 클라우드 솔루션 공급자</a> 목록을 참조하여 계획부터 구현까지 클라우드 이니셔티브를 지원할 수 있는 파트너를 찾습니다.</p>
+
+
+  <h3>최근 Azure Government 파트너 솔루션 공지 사항을 읽어보세요.</h3>
+
+
+  <ul>
+   <li><b>CIS 강화 이미지&trade;</b> 는 전 세계 사이버 보안 전문가 커뮤니티가 합의 기반 프로세스를 통해 개발한 권장 사항 집합인 <a href="https://www.cisecurity.org/cis-benchmarks/">CIS 벤치마크&trade;</a>를 기반으로 안전하게 구성된 가상 머신 이미지입니다. <a href="https://blogs.msdn.microsoft.com/azuregov/2018/08/06/cis-hardened-images-now-available-in-azure-government/">Linux 및 Windows 모두에 대한 CIS 강화 이미지는 이제</a> <a href="https://cloudblogs.microsoft.com/industry-blog/industry/government/dod-level5-p-ato-granted-microsoft-azure-office-365/">IL5를 지원하는 DoD 지역을</a> 포함하여 모든 Azure Government 지역에서 사용할 수 있습니다.</li>
+   <li><a href="https://cybraics.com/"><b>Cybraics</b></a><b>:</b> 사이버 공격으로부터 정보 시스템과 중요한 인프라를 보호하고 국가&rsquo; 전체 사이버 보안 위험을 줄이는 것은 모든 수준의 지역, 주 및 연방 정부를 가로지르는 주요 의무입니다. 이러한 노력을&rsquo; 지원하기 위해 보안 분석 및 AI(인공 지능) 회사인 <a href="https://blogs.msdn.microsoft.com/azuregov/2018/10/18/bringing-more-cybersecurity-capabilities-to-azure-government/">Cybraics와의 새로운 파트너십을</a> 발표하여 새로운 AI(인공 지능) 및 분석 기반 서비스를 Microsoft Azure 정부 고객에게 제공합니다.</li>
+   <li><a href="https://www.servicenow.com/"><b>ServiceNow </b></a>와 Microsoft는 최근 Azure Government 고객에게 <a href="https://www.servicenow.com/company/media/press-room/servicenow-and-microsoft-form-alliance-to-help-us-federal-agencies-move-faster-and-securely-to-cloud-based-solutions.html">ServiceNow 디지털 워크플로를 제공하는 데 도움이 되는 제휴</a> 를 발표했습니다. 현대화를 보호하고 디지털 트랜스포메이션을 가속화하는 데 도움이 되는 길을 열어줍니다. ServiceNow는 직장에서 일상적인 활동, 작업 및 프로세스를 자동화하여 기관이 효율성을 높이고 인력의 생산성을 높일 수 있도록 지원합니다.</li>
+   <li>Accelera Solutions: 16년 동안 가상 애플리케이션 및 VDI(Virtual Desktop Infrastructure)를 배포한 후 파트너 Accelera Solutions는 <a href="https://blogs.msdn.microsoft.com/azuregov/2018/09/04/solving-one-of-the-most-common-vdi-challenges-complexity/">고객에게 패러다임 전환 VDI가 얼마나 중요한지</a> 알아보았습니다. 직원 업무 방식, 데스크톱 관리 방식 및 데스크톱 배포 방식을 변환합니다.</li>
+   <li><a href="https://www.net-inspect.com/"><b>Net-Inspect</b></a><b>:</b> 세계에서 가장 복잡하고 분산된 공급망 중 하나인 항공 우주 및 방위 제조업체는 AS9100, ITAR, EAR 및 FedRAMP를 비롯한 다양한 규정 준수를 입증해야 합니다. <a href="https://blogs.msdn.microsoft.com/azuregov/2018/10/23/reducing-risk-and-driving-quality-in-the-aerospace-supply-chain/">Net-Inspect 솔루션은 최대 7개 계층 깊이의 공급망에 대한 가시성을 가장 큰 항공우주 제조업체에 제공하여</a> 모든 부품을 &lsquo;통합된 보기로 연결하는 디지털 스레드&rsquo; 를 설정합니다.</li>
+  </ul>
+
+
+  <h3>GSA IT 일정 70용 Azure 및 Azure Government 스타터 팩</h3>
+
+
+  <p>일반적인 클라우드 워크로드를 사용하여 빠르게 시작하고 실행할 수 있도록 설계된 다음 Azure 및 Azure Government 스타터 팩 시나리오는 현재 사용할 수 있습니다.</p>
+
+
+  <ul>
+   <li><a href="https://download.microsoft.com/download/A/A/7/AA75B59B-3406-4C2A-8454-5391C2FC2834/Microsoft%20Azure%20GSA%20Starter%20Pack%20-%20Datacenter%20Migration.pdf">데이터 센터 마이그레이션</a></li>
+   <li><a href="https://download.microsoft.com/download/F/A/9/FA932FF7-D9AB-40ED-92EC-E006704A2232/Microsoft%20Azure%20GSA%20Starter%20Pack%20-%20Dev%20Test.pdf">개발 테스트</a></li>
+   <li><a href="https://download.microsoft.com/download/B/A/2/BA21F32E-3921-4D2E-889C-C311D85FC4ED/Microsoft%20Azure%20GSA%20Starter%20Pack%20-%20Websites%20Apps.pdf">웹 사이트/앱</a></li>
+   <li><a href="https://download.microsoft.com/download/2/2/D/22DBEE64-E45E-4769-9D18-65B27369AE93/Microsoft%20Azure%20GSA%20Starter%20Pack%20-%20SQL%20Server%20Cloud%20Resiliency.pdf">SQL Server 클라우드 복원력</a></li>
+   <li><a href="https://download.microsoft.com/download/7/9/5/795C030D-7FC6-41D7-99E0-A9A2516CA4B7/Microsoft%20Azure%20GSA%20Starter%20Pack%20-%20IoT%20POC.pdf">IoT 개념 증명</a></li>
+   <li><a href="https://download.microsoft.com/download/6/F/C/6FCD6236-B1D8-4A09-AFD4-A9841B91FB77/Microsoft%20Azure%20GSA%20Starter%20Pack%20-%20Bot%20Service%20with%20Translation.pdf">번역을 사용하여 Bot Service</a></li>
+  </ul>
+
+
+  <p>Azure Starter Packs는 데이터 센터 마이그레이션과 같은 일반적인 워크로드에 대해 단일 SKU를 구매하고, 계약 수정 없이 SKU 내에서 필요한 서비스를 선택하여 아키텍처를 유연하게 정의할 수 있으므로 <b>유연성을</b> 제공합니다. 또한 <b>간소화된 조달</b>을 얻을 수 있으므로 단일 SKU를 구매하고 필요한 서비스를 사용하여 신속하게 가동하고 실행할 수 있습니다. 또한 수백 명의 클라우드 고객을 지원하는 Azure 엔지니어를 위한 Microsoft 기술 설계자 및 Microsoft FastTrack <b>맞춤형 지침을</b> 얻을 수 있습니다. <a href="https://aka.ms/azurestarterpacks">aka.ms/azurestarterpacks</a> 자세히 알아보세요.</p>

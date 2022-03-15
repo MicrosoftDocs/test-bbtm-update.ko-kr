@@ -1,0 +1,202 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 6d37aab080f56c1dab1670c810ad454e5f383f85
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897605"
+Slug: microsoft-empowers-developers-with-new-and-updated-cognitive-services
+Title: Microsoft는 신규 및 업데이트된 Cognitive Services를 통해 개발자에게 권한을 부여합니다.
+Summary: 오늘 빌드 2018 컨퍼런스에서는 Azure의 Microsoft Cognitive Services에 대한 몇 가지 흥미로운 새로운 혁신을 공개합니다. Microsoft에서는 모든 개발자가 다음을 통합할 수 있어야 한다고 생각합니다.
+Content: >-
+  <p><em>블로그 게시물은 Microsoft Cognitive Services의 수석 그룹 프로그램 관리자인 Andy Hickl이 작성했습니다.</em></p>
+
+
+  <p>오늘 빌드 2018 컨퍼런스에서는 Azure의 Microsoft Cognitive Services에 대한 몇 가지 흥미로운 새로운 혁신을 공개합니다.</p>
+
+
+  <p>Microsoft는 모든 개발자가 앱과 서비스에 제공하는 최고의 AI를 통합할 수 있어야 한다고 믿습니다. &rsquo;3년 전에 &ndash; Microsoft Cognitive Services를 시작한 이유와 현재 Azure의 AI 서비스에 계속 투자하는 이유입니다.</p>
+
+
+  <p>Microsoft Cognitive Services를 사용하면 개발자가 몇 줄의 코드만 사용하여 앱에 고품질 비전, 음성, 언어, 지식 및 검색 기술을 쉽게 추가할 수 있습니다. Cognitive Services를 사용하면 누구나 자연스럽게 사용자와 대화하고, 이미지에서 관련 콘텐츠를 식별하고, 음성 또는 모양을 사용하여 누군가&rsquo; ID를 확인할 수 있는 지능형 앱을 만들 수 있습니다.</p>
+
+
+  <p>Cognitive Services를 사용하여 올해 빌드에서 통합 <a href="https://aka.ms/acomspeech" target="_blank">음성</a> 서비스 및 Bing <a href="https://aka.ms/acombvs" target="_blank">Visual Search</a>와 같은 공지 사항과 새로운 기술의 Cognitive Services Labs 확장을 통해 <strong>더 많은 서비스와 더 많은 혁신</strong>을 제공할&#39;있습니다. &rsquo;또한 개발자는 사용자 지정 개체 검색, Bing Custom Search(사용자 지정 이미지 검색, 사용자 지정 자동 제안,..) 및 사용자 지정 번역기, 사용자 지정 음성, 사용자 지정 음성 등을 사용하는 새로운 음성 기능을 추가하여 <strong>Cognitive Services에서 제공하는 미리 빌드된 AI를 사용자 지정할</strong> 수 있습니다. <strong>&rsquo;또한</strong> 현재 개발자가 빌드하는 모든 컴퓨팅 플랫폼에서 Cognitive Services를 사용할 수 있도록 하여 모든 개발자에게 AI를 제공하고, Edge 및 모바일 디바이스에서 배포를 지원하기 위해 <a href="https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/" target="_blank">Custom Vision</a> 모델을 내보낼 수 있습니다. 마지막으로, 더 자연스러운 인간 및 컴퓨터 상호 작용을 만들기 위한 <strong>시장에서 가장 강력한 봇 도구도 </strong>있습니다.</p>
+
+
+  <p>현재까지 100만 명 이상의 개발자가 <strong>이미 British Telecom, Box, KPMG, Big Fish Games</strong> 와 같은 상위 회사를 포함하여 Microsoft Cognitive Services를 발견하고 시도했으며 <strong>PubNub</strong>와의 API 통합을 통해 시도했습니다.</p>
+
+
+  <h2>Cognitive Services 업데이트</h2>
+
+
+  <p>&rsquo;빌드 시 Cognitive Services에 제공되는 몇 가지 흥미로운 새로운 업데이트에 대해 자세히 살펴보겠습니다.</p>
+
+
+  <h3>시각</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/" target="_blank"><strong>Computer Vision</strong></a> 은 이미지에 저장된 지식의 잠금을 해제합니다. 이제 영어(미리 보기)의 향상된 OCR 모델과 새로운 언어로 확장된 캡션(중국어, 일본어, 스페인어 및 브라질 포르투갈어 간체)을 통합합니다.</li>
+   <li><a href="https://aka.ms/cvisionservice" target="_blank"><strong>Custom Vision</strong></a> (미리 보기)을 사용하면 이미지의 특정 콘텐츠를 식별할 수 있는 사용자 지정된 이미지 분류자를 쉽게 빌드하고 구체화할 수 있습니다. 오늘 Custom&rsquo; Vision이 이제 개체 인식도 수행한다고 발표했습니다.&nbsp; 이제 개발자는 Custom Vision을 사용하여 이미지에서 특정 개체의 정확한 위치를 인식할 수 있는 모델을 학습시킬 수 있습니다. 또한 개발자는 이제 TensorFlow, CoreML 및 ONNX의 세 가지 형식으로 Custom Vision 모델을 다운로드할 수 있습니다.</li>
+   <li><strong><a href="https://azure.microsoft.com/services/cognitive-services/content-moderator/">Content Moderator </a></strong>는 기계 지원 콘텐츠 조정 및 사용자 검토 도구를 제공합니다. 이제 텍스트 분류를 제공하여 잠재적으로 성인, 외설 및 불쾌한 콘텐츠에 플래그를 지정하고 텍스트 및 비디오 조정 인사이트에 대한 사용자 검토 기능을 제공합니다.</li>
+   <li>비디오에서 인사이트를 추출하는 Cognitive Service인 <a href="https://azure.microsoft.com/en-us/services/cognitive-services/video-indexer/" target="_blank"><strong>Video Indexer</strong></a>를 이제 Azure 계정에 연결할 수 있습니다.</li>
+  </ul>
+
+
+  <h3>Speech &amp; Machine Translation</h3>
+
+
+  <ul>
+   <li>&rsquo;미리 보기에서 새로운 <a href="https://aka.ms/acomspeech" target="_blank"><strong>통합 Speech Service</strong></a>를 발표했습니다. 이제 개발자는 다음을 수행할 단일 진입점에 액세스할 수 있습니다.
+
+   <ul>
+    <li><a href="https://aka.ms/acomstt" target="_blank"><strong>음성 텍스트 변환</strong></a> (음성 전사) 특정 어휘 또는 사용자의 말하기 스타일(언어 모델 사용자 지정) &ndash;&nbsp; 에 맞게 조정된 <strong>표준</strong> 또는 <strong>사용자 지정 모델을</strong> 사용하여 음성 오디오를 텍스트로 변환하거나 배경 노이즈(음향 모델 사용자 지정)와 같은 예상 환경과 더 잘 일치하도록 합니다. 음성 텍스트 변환 기술을 사용하면 음성 명령, 실시간 전사 및 콜 센터 로그 분석과 같은 다양한 사용 사례를 사용할 수 있습니다.</li>
+    <li><a href="https://aka.ms/acomtts" target="_blank"><strong>텍스트</strong></a> 음성 변환(음성 합성) &ndash; 은 75개가 넘는 기본 음성을 선택하거나 새로운 <strong>사용자 지정 음성 모델을</strong> 사용하여 텍스트를 오디오로 거의 실시간으로 변환하여 모든 앱에 음성을 가져와서 고유한 녹음에 맞게 조정된 독특하고 인식 가능한 브랜드 음성을 만듭니다.</li>
+    <li><a href="https://aka.ms/acomstra" target="_blank"><strong>음성 번역</strong></a> &ndash; NMT(신경망 기계 번역) 기술을 기반으로 하는 모델로 실시간 음성 번역 기능을 제공합니다. 이제 음성 번역 파이프라인의 세 가지 요소인 음성 인식, 텍스트 음성 변환 및 기계 번역이라는 전용 도구를 통해 사용자 지정할 수 있습니다.</li>
+   </ul>
+   </li>
+   <li><strong>Were&rsquo;는 또한 </strong> 초대(특정 하드웨어에 미세 조정된 미리 패키지된 소프트웨어)뿐만 아니라 <strong> 미리 보기</strong>의 새로운 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-sdk-reference" target="_blank"><strong>Speech 클라이언트 SDK</strong></a>(다양한 음성 기능, 여러 플랫폼에 대한 지원 및 다양한 언어 바인딩을 결합)를 통해 <strong> 미리 보기</strong>로 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-devices-sdk" target="_blank"><strong>Speech 디바이스 SDK</strong></a>의 가용성을 발표합니다.</li>
+   <li>우리는 우리의 놀라운 <strong>기계 번역</strong> Cognitive Services에 구축을 계속합니다. &rsquo;<a href="https://aka.ms/TranslatorCustomNMTBlog" target="_blank">신경망 기계 번역의 사용자 지정</a>에 대한 지원을 발표했습니다. 또한&rsquo; <a href="https://aka.ms/TranslatorV3Blog" target="_blank">Microsoft 번역기 텍스트 API</a>(버전 3)를 크게 업데이트하여 신경망 기계 번역을 사용하여 새 버전의 서비스를 공개합니다. 또한 인터넷 연결 없이도 모든 앱 &ndash; 에 번역 기능을 통합할 수 있는 <a href="https://aka.ms/TranslatorLocalFeatureBlog" target="_blank">Android용 새로운 Microsoft 번역기 기능을</a> 발표했습니다.</li>
+  </ul>
+
+
+  <h3>언어</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/" target="_blank"><strong>Text Analytics</strong></a>는 원시 텍스트에 대한 고급 자연어 처리를 제공하고 감정 분석, 핵심 구 추출 및 언어 감지를 수행하는 클라우드 기반 서비스입니다. 현재 Text Analytics는 원시 텍스트에서 <a href="https://aka.ms/taentitylinking" target="_blank">엔터티 식별</a> 및 연결을 수행하는 기능을 소개합니다. 엔터티 연결은 사용자, 장소, 조직 등과 같은 텍스트에 있는 잘 알려진 엔터티를 인식하고 명확하게 구분하면서 웹에 대한 자세한 정보에 연결합니다.</li>
+   <li><a href="https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/" target="_blank"><strong>LUIS(Language Understanding)</strong></a> 서비스는 새로운 통합 제품을 사용하여 음성을 의도 프로세스로 간소화합니다.</li>
+  </ul>
+
+
+  <h3>지식</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/" target="_blank"><strong>QnA Maker</strong></a> 는 사용자&#39;질문에 보다 자연스러운 대화형 방식으로 응답할 수 있도록 하는 서비스입니다. 오늘,&rsquo; QnA Maker는 Azure에서 일반 공급된다는 것을 발표했습니다.</li>
+  </ul>
+
+
+  <h3>검색</h3>
+
+
+  <p><strong>검색</strong> 은 AI 투자의 또 다른 핵심 영역이었습니다.&rsquo; 개발자가 여러 검색 API를 통해 이를 활용할 수 있도록 합니다. 오늘 Bing&rsquo; <a href="https://blogs.bing.com/Developers-Blog/2018-05/six-new-and-improved-bing-ai-offerings-on-microsoft-cognitive-services" target="_blank"><strong>Search API에 대한 몇 가지 주요 업데이트를</strong></a> 발표했습니다.</p>
+
+
+  <ul>
+   <li><a href="https://aka.ms/acombvs" target="_blank"><strong>Bing Visual Search</strong></a>는 Bing Search의 기능을 활용하여 지정된 제품에 대한 유사한 제품 검색(예: 소매 시나리오에서 사용자가 고려 중인 제품과 유사한 제품을 보고 싶은 경우), 바코드, 텍스트, 유명인 등을 식별하는 등 이미지 기능별로 지능형 검색을 수행할 수 있는 새로운 일반 공급 서비스입니다. 또한 지능&rsquo;형 Visual Search에 대한 초대 포털을 통해 미리 보기를 발표합니다.</li>
+   <li>여러 Bing API에 다양한 메트릭과 풍부한 조각화 및 받아쓰기 기능을 제공하는 추가 기능인 Bing <a href="https://bingapistatistics.com/" target="_blank"><strong>Statistics-add-in</strong></a></li>
+   <li><a href="https://azure.microsoft.com/en-us/services/cognitive-services/bing-custom-search/" target="_blank"><strong>사용자</strong></a> 지정 이미지 검색, 사용자 지정 자동 제안, 특정 통계 정보, 인스턴스 준비 및 공유 기능을 포함한 사용자 지정 검색 업데이트를 Bing.</li>
+   <li>이제 Bing API SDK가 일반 공급됩니다.</li>
+  </ul>
+
+
+  <h3>랩</h3>
+
+
+  <ul>
+   <li><strong>Were&rsquo;는 또한 새로운 </strong><a href="https://labs.cognitive.microsoft.com/" target="_blank"><strong>Cognitive Services 랩</strong></a>을 발표하여 개발자에게 다음과 같은 새로운 Cognitive Services 기술을 조기에 살펴볼 수 있도록 합니다.</li>
+   <li><a href="https://go.microsoft.com/fwlink/?linkid=872332" target="_blank">Project Answer Search</a> &ndash; 를 사용하면 인터넷을 통해 일반적으로 알려진 사실과 정보를 자동으로 검색하고 표시하여 사용자&rsquo; 검색 환경을 향상시킬 수 있습니다.</li>
+   <li><a href="https://go.microsoft.com/fwlink/?linkid=872330" target="_blank">Project URL 미리 보기</a> - 는 지정된 URL에서 웹 페이지 미리 보기를 만들거나 성인 콘텐츠를 표시하지 않도록 플래그를 지정하여 사용자에게&rsquo; 소셜 상호 작용을 알릴 수 있습니다.</li>
+   <li><a href="https://go.microsoft.com/fwlink/?linkid=872335" target="_blank">Project Anomaly Finder</a>를 사용하면 개발자가 시간이 지남에 따라 데이터를 모니터링하고 통계 모델을 자동으로 적용하여 변칙을 검색할 수 있습니다.</li>
+   <li>초대를 통해 <a href="https://go.microsoft.com/fwlink/?linkid=872337" target="_blank">Conversation Learner를 Project</a> 예제 상호 작용에서 직접 학습하는 대화형 인터페이스를 빌드하고 학습할 수 있습니다. 광범위한 작업 지향 사용 사례 집합에 걸쳐 Project Conversation Learner는 백그라운드에서 기계 학습을 적용하여 대화 제어 논리의 수동 코딩을 줄입니다.</li>
+   <li>초대&ndash;에 의해 곧 제공되는 <a href="https://go.microsoft.com/fwlink/?linkid=872338" target="_blank">Project 성격 채팅</a> &ndash; 은 일관된 톤과 대체 응답으로 일반적인 작은 대화를 처리하여 지능형 에이전트를 보다 완전하고 대화형으로 만듭니다. 여러 기본 페르소나 중에서 선택하여 에이전트에게 개성을 부여하고 브랜드 음성에 맞는 캐릭터를 만들도록 향상시킵니다.</li>
+   <li>초대를 통해 곧 사용할 수 있는 <a href="https://go.microsoft.com/fwlink/?linkid=872339" target="_blank">Project 잉크 분석은</a> &ndash; REST API를 통해 디지털 잉크 인식 및 레이아웃 분석을 제공합니다. 이 서비스는 다양한 기계 학습 기술을 사용하여 잉크 스트로크 입력을 분석하고 잉크 스트로크의 레이아웃 및 내용에 대한 정보를 제공합니다. Project 잉크 분석은 잉크를 텍스트로 변환하고 잉크를 셰이프 변환하는 다양한 시나리오에 사용할 수 있습니다.</li>
+  </ul>
+
+
+  <p>&rsquo;이러한 새로운 발표된 서비스 중 일부가 어떤 작업을 수행할 수 있는지 좀 더 자세히 살펴보겠습니다.</p>
+
+
+  <h2>Custom Vision 서비스를 사용하여 개체 검색</h2>
+
+
+  <p>Custom Vision 서비스 미리 보기는 학습을 통해 더욱 정확해지는 최첨단 기계 학습 신경망을 통해 이미지의 특정 콘텐츠를 인식하는 방법을 배우는 사용하기 쉽고 사용자 지정 가능한 웹 서비스입니다. 동물, 개체 또는 추상 기호 중 어떤 것을 선택하든 인식하도록 학습할 수 있습니다. 이 기술은 기계 지원 제품 식별을 위한 소매 환경이나 디지털 공간에 쉽게 적용되어 사진 범주를 자동으로 정렬하는 데 도움이 될 수 있습니다.</p>
+
+
+  <p>오늘&rsquo; 업데이트를&rsquo; 통해 사용자 지정 이미지 분류 및 개체 인식 모델을 쉽게 만들 수 있습니다.</p>
+
+
+  <p><a href="https://www.customvision.ai/" target="_blank">Custom Vision 서비스 포털</a>을 사용하여 이미지를 업로드하고 주석을 달고, 이미지 분류 모델을 학습시키고, 분류자를 웹 서비스로 실행할 수 있습니다. Custom Vision은 이제 사용자 지정 개체 인식도 지원합니다. Custom Vision 포털을 사용하여 이미지 내에서 특정 개체를 찾고 &ndash; 레이블을 지정할 &ndash; 수 있습니다. &rsquo;경계 상자를 만들어 각 이미지에 가장 관심이 있는 개체의 정확한 위치를 지정할 수 있습니다&rsquo;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/85f34d85-18f0-4063-a6e1-23290d8583c6.png"><img alt="Custom Vision service portal" border="0" height="1528" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e913be14-a522-4d14-a8b1-4c45d0a18fd9.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Custom Vision 서비스 포털" width="2461"></a></p>
+
+
+  <p align="center"><em>경계 상자를 사용하여 이미지 내의 개체에 레이블을 지정하는 쉬운 방법</em></p>
+
+
+  <p>마지막으로 Custom Visions&rsquo; 최신 업데이트 덕분에 온-프레미스,&rsquo; 모바일 디바이스 및 IoT까지 배포할 수 있는 컨테이너에서 사용하도록 학습된 모델을 내보낼 수도 있습니다.<br>
+
+  Custom Vision을 쉽게 시작하기 위한 새로운 자습서를 만들었습니다.</p>
+
+
+  <ul>
+   <li><a href="https://docs.microsoft.com/en-us/azure/cognitive-services/Custom-Vision-Service/home" target="_blank">설명서</a>에서 자유롭게 탐색하고, 기본 Windows 애플리케이션의 C# 자습서 및 Python 자습서를 자유롭게 탐색하여 개체 검색 프로젝트를 만듭니다. 여기에는 콘솔 애플리케이션과 Custom Vision Service 프로젝트를 모두 만들고 태그를 추가하고, 프로젝트에 다양한 이미지를 업로드하고, 좌표와 태그를 사용하여 개체의 영역을 식별하는 것이 포함됩니다. 모델을 컨테이너로 내보내는 자세한 가이드를 찾을 수도 있습니다.</li>
+   <li>Custom Vision 서비스 <a href="https://www.customvision.ai/" target="_blank">포털</a> 및 <a href="https://aka.ms/cvisionservice" target="_blank">웹 페이지에서</a> 자유롭게 시작할 수 있습니다.</li>
+  </ul>
+
+
+  <h2>새 Speech Service를 사용하여 고유한 고유한 사용자 지정 음성 빌드</h2>
+
+
+  <p>오늘 빌드에서 발표된 통합 Speech Service 미리 보기의 일부인 텍스트 음성 변환 서비스를 사용하면 고유한 음향 데이터(현재 영어 및 중국어)에서 인식할 수 있는 고유한 음성을 만들 수 있습니다. 데이터 과학에 대한 심층적인 전문 지식 없이도 이동 중에도 상징적인 브랜드 음성을 사용할 수 있는 스마트 IVR, 봇 또는 애플리케이션의 가능성은 무궁무진합니다.</p>
+
+
+  <p>계속&rsquo;하기 위해 필요한 오디오 데이터 세트 및 대본을 개발하고 <a href="https://customvoice.ai/" target="_blank">사용자 지정 음성 포털</a> (초대로 액세스할 수 있음)에 업로드하는 과정을 안내합니다.</p>
+
+
+  <p>&rsquo;작업이 완료되면 서비스를 학습시키고 텍스트 음성 변환 엔드포인트에 배포되는 새 음성 모델을 만듭니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/41dccac1-9dab-43e0-9137-6cacc0ccd1fb.png"><img alt="NewImageUpdated_Short" border="0" height="1079" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/42e5af9a-ce59-4ae0-8086-0e097bad2cc2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="NewImageUpdated_Short" width="2629"></a></p>
+
+
+  <p align="center"><em>사용자 지정 음성 사용자 지정 도구</em></p>
+
+
+  <p>새 Speech Service의 새로운 Custom Voice 기능에 대한 자세한 내용은 다음 리소스를 살펴보세요.</p>
+
+
+  <ul>
+   <li>Text-to-Speech <a href="https://aka.ms/acomtts" target="_blank">웹 페이지</a> 및 <a href="https://customvoice.ai/" target="_blank">사용자 지정 음성 포털</a></li>
+   <li>사용자 지정 음성을 빌드하기 위한 자세한 <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service" target="_blank">기술 가이드</a> 입니다.</li>
+  </ul>
+
+
+  <h2>Bing Visual Search를 사용하여 스마트 제품 검색 수행</h2>
+
+
+  <p>Bing Visual Search는 Bing.com/images에 표시된 이미지 세부 정보와 유사한 환경을 제공하는 인사이트를 제공합니다. 예를 들어 그림을 업로드하고 시각적으로 유사한 이미지, 쇼핑 원본, 이미지를 포함하는 웹 페이지 등과 같은 이미지에 대한 검색 인사이트를 다시 가져올 수 있습니다.<br>
+
+  이미지를 업로드하는 대신 선택적 자르기 상자와 함께 이미지의 URL을 제공하여 시각적 검색을 안내할 수도 있습니다.</p>
+
+
+  <p>예를 들어 시각적으로 유사한 이미지(내의 입력 이미지 또는 지역과 시각적으로 의미상 유사한 이미지 목록) 또는 시각적으로 유사한 제품(입력 이미지의 제품과 시각적으로 의미상 유사한 제품이 포함된 이미지 목록)을 수신할 수 있습니다. 이를 도메인으로 제한할 수 있습니다.  등.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b2236743-0362-4c99-a509-ac85b9e4b225.jpg"><img alt="Bing Visual Search" border="0" height="979" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/19fc85a8-8c8c-418f-8d66-f5360edf59b1.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Visual Search Bing" width="1430"></a></p>
+
+
+  <p align="center"><em>Bing 제공하는 Bing Visual Search와 유사한 이미지 결과</em></p>
+
+
+  <p>Bing Visual Search 결과는 이미지에 관심 있는 지역에 대한 경계 상자도 제공합니다. 예를 들어 이미지에 유명 인사가 포함된 경우 결과에는 이미지에 인식된 각 유명 인사에 대한 경계 상자가 포함될 수 있습니다. 마찬가지로 Bing 이미지에서 패션 개체를 인식하는 경우 결과는 인식된 제품에 대한 경계 상자를 제공할 수 있습니다.</p>
+
+
+  <p>Bing Visual Search API 요청을 만들 때 이미지에 사용할 수 있는 인사이트가 있는 경우 응답에는 이미지, 시각적으로 유사한 이미지 및 이미지에 있는 항목에 대한 쇼핑 원본을 포함하는 웹 페이지와 같은 인사이트를 포함하는 하나 이상의 태그가 포함됩니다.<br>
+
+  Bing Visual Search에 대한 자세한 내용은 다음을 참조하세요.</p>
+
+
+  <ul>
+   <li>Bing Visual Search <a href="https://aka.ms/acombvs" target="_blank">웹 페이지</a></li>
+   <li><a href="https://aka.ms/bingvisualsearchdoclp" target="_blank">설명서</a>의 자세한 기술 연습</li>
+  </ul>
+
+
+  <p>다시 감사하고 행복한 코딩!</p>
+
+
+  <p>앤디</p>

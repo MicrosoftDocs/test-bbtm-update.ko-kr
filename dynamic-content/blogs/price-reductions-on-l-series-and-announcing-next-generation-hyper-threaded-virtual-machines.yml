@@ -1,0 +1,30 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 7b9f70ad308d3c0fa7fd0950873a4f3f7e470c52
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897843"
+Slug: price-reductions-on-l-series-and-announcing-next-generation-hyper-threaded-virtual-machines
+Title: L 시리즈 가격 인하 및 차세대 하이퍼 스레드 가상 머신 발표
+Summary: Microsoft Azure 컴퓨팅, 스토리지 및 대역폭과 같은 상용 서비스에서 AWS와 비교할 수 있는 가격을 만들겠다는 오랜 약속을 가지고 있습니다. 이 약속에 따라, 우리는 ...
+Content: >-
+  <p>Microsoft Azure 컴퓨팅, 스토리지 및 대역폭과 같은 상용 서비스에서 AWS와 비교할 수 있는 가격을 <a href="https://azure.microsoft.com/en-us/blog/the-power-of-and/">만들겠다는 오랜 약속을</a> 가지고 있습니다. 이러한 약속에 따라 <a href="https://azure.microsoft.com/en-us/blog/announcing-storage-optimized-virtual-machines-l-series/">스토리지 최적화 가상 머신인 L Series</a>에서 최대 69%의 가격 인하를 발표하게 되어 기쁩니다. 또한 현재 세대보다 가격이 최대 28% 낮은 범용 및 메모리 최적화 워크로드를 위한 차세대 Hyper-Threaded 가상 머신에 대해 더 많이 공유하게 되어 기쁩니다.</p>
+
+
+  <h2>L 시리즈 가격 인하</h2>
+
+
+  <p>AWS의 최근 가격 변화에 맞게 4월 1일부터 새로 출시된 L 시리즈 가상 머신의 가격을 60%에서 69%로 인하하고 있습니다. 이러한 VM은 스토리지 최적화 크기이며 Cassandra 및 MongoDB를 포함한 NoSQL 데이터베이스와 같은 짧은 대기 시간 워크로드에 가장 적합합니다. L 시리즈는 32~256GiB 메모리가 있는 Intel&reg; Xeon&reg; 프로세서 E5 v3 제품군 및 678GB에서 5.6TB의 SSD 디스크를 기반으로 4~32개 vCPU의 가상 머신을 제공합니다.&nbsp;</p>
+
+
+  <h2>새로운 Hyper-Threaded VM 및 Dv2 제한 시간 승격</h2>
+
+
+  <p>향후 몇 개월 안에 Microsoft는 범용 워크로드, Dv3 및 메모리 최적화 워크로드를 위한 새로운 제품군인 Ev3를 위한 새로운 세대의 Hyper-Threading Technology 가상 머신을 도입할 예정입니다. 물리적 코어에서 가상 코어로의 이러한 전환은 최신 프로세서의 잠재력을 최대한 발휘할 수 있도록 하는 VM의 주요 아키텍처 변화입니다. 이 새로운 세대는 Intel&reg; Broadwell E5-2673 v4 2.3 프로세서의 64개 vCPU와 가장 큰 Ev3 크기의 432GiB 메모리를 갖춘 크기를 도입할 예정입니다. 기본 하드웨어에서 더 많은 성능을 발휘함으로써 더 나은 성능과 효율성을 활용하여 고객에게 전달되는 비용 절감을 실현할 수 있습니다.</p>
+
+
+  <p>향후 몇 달 내에 새로운 Hyper-Threaded VM을 일반 공급하게 됨에 따라 고객에게 이러한 절감액을 조기에 활용할 수 있는 기회를 제공하고자 합니다. 이러한 새로운 Hyper-Threaded VM의 가격은 Dv2 시리즈 VM보다 최대 28% 낮으며, 비슷한 AWS 인스턴스 가격과 일치합니다. 오늘부터 더 낮은 Dv3 및 Ev3 VM 가격으로 현재 세대 하드웨어에 Dv2 프로모션 VM을 프로비전하여 이러한 비용 절감을 활용할 수 있습니다.</p>
+
+
+  <p>이 프로모션은 올해 말 Dv3 및 Ev3 VM이 출시될 때까지 사용할 수 있습니다. 나중에 새 VM으로의 마이그레이션을 간소화하기 위해 Azure Resource Manager를 사용하여 Dv2 프로모션 VM을 배포하는 것이 좋습니다.</p>

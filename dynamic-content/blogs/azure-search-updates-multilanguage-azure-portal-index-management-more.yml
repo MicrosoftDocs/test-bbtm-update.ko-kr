@@ -1,0 +1,70 @@
+### YamlMime:Yaml
+ms.openlocfilehash: dde47acb9c3ffdbdb2527511269766a0c975d196
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897778"
+Slug: azure-search-updates-multilanguage-azure-portal-index-management-more
+Title: 'Azure Search 업데이트: 다국어, Azure Portal 인덱스 관리 & 추가!'
+Summary: 새로운 프로토타입을 출시했습니다. 미리 보기 버전의 목적은 테스트하고 피드백을 제공할 수 있는 잠재적인 새로운 기능에 조기에 액세스할 수 있도록 하는 것입니다.
+Content: >-
+  최근에 Azure Search에 추가한 몇 가지 새로운 기능에 대해 이야기하고 싶었습니다.
+
+  <h3><strong>새 API 미리 보기 "프로토타입" 버전</strong></h3>
+
+  새로운 프로토타입 API 버전 <a href="https://msdn.microsoft.com/en-us/library/azure/dn798941.aspx">인 2014-10-20-Preview</a>를 제공했습니다.미리 보기 버전의 목적은 테스트하고 피드백을 제공할 수 있는 잠재적인 새로운 기능에 조기에 액세스할 수 있도록 하는 것입니다.이 프로토타입 버전에 포함된 기능은 -Preview 접미사를 삭제하여 릴리스된 버전을 선언할 때와 지금 사이에 변경될 수 있으므로 종속성을 사용하지 않는 것이 중요합니다. 이 버전에는 영어(아래 설명)에 대한 텍스트 분석을 포함하여 새로운 다국어 지원이 포함되어 있습니다.
+
+
+  공개 미리 보기의 현재 버전은 api-version, <a href="https://msdn.microsoft.com/library/azure/dn798935.aspx">2014-07-31-Preview</a>로 지정됩니다. 유일한 잠긴 버전이므로 변경되지 않습니다.프로토타입 API 버전을 사용하면 새로운 실험적 기능을 롤아웃할 수 있으므로 자주 변경됩니다.
+
+  <h3><strong>다국어 지원</strong></h3>
+
+  현재 프로토타입 Azure Search API 버전 <a href="https://msdn.microsoft.com/en-us/library/azure/dn798941.aspx">2014-10-20-Preview</a>에 <a href="https://msdn.microsoft.com/en-us/library/azure/dn879793.aspx">27개 언어</a>에 대한 지원이 추가되었습니다.이를 통해 Azure Search는 지정된 언어의 고유한 특성을 지원하여 단어 분리, 텍스트 정규화(é 또는 â와 같은 문자를 처리할 수 있도록 텍스트 표준화)가 지원되는 각 언어에 대해 예상대로 작동할 수 있도록 합니다.
+
+
+  또한 Search 서비스에서 <a href="https://en.wikipedia.org/wiki/Stemming">단어 줄기</a>를 줄일 수 있는 관련 언어에 대한 형태소 분석 지원도 추가했습니다.예를 들어 "running" 및 "runner"라는 단어는 루트 단어인 "run"으로 줄일 수 있습니다.또한 관련 언어에 대한 분석된 텍스트에서 중지 단어(예: "I", "to" 또는 "the")를 제거할 수 있습니다.자세한 내용은 <a href="https://msdn.microsoft.com/en-us/library/azure/dn879793.aspx">언어 지원 페이지를</a> 참조하세요.
+
+
+  인덱스를 만들 때 필드별로 사용할 언어를 선택하여 동일한 인덱스에도 여러 언어를 사용하고 검색할 수 있습니다.이 작업은 문자열 및 컬렉션 필드에 언어를 할당하여 수행됩니다.
+
+
+  앞으로도 추가 언어 지원을 포함하여 이 다국어 지원을 지속적으로 개선할 계획입니다.
+
+  <h3><strong>새 지역 – 미국 &amp; 중남부</strong></h3>
+
+  기존 4개의 데이터 센터(미국 동부, 미국 서부, 북유럽 &amp; SE 아시아)에서 Azure Search에 대한 지원을 확장하여 미국 &amp; 중남부에 대한 지원도 포함했습니다.우리는 가까운 장래에 더 많은 데이터 센터에서 추가 지원을 통해 이를 더욱 확장하는 데 계속 진전을 보이고 있습니다.
+
+  <h3><strong>Azure Portal 인덱스 만들기 &amp; 관리</strong></h3>
+
+  <a href="https://blogs.technet.com/b/dataplatforminsider/archive/2014/08/21/azure-previews-fully-managed-nosql-database-and-search-services.aspx">8월 21일 공개 미리 보기</a>에서 받은 피드백의 핵심 요소는 Azure Search 서비스를 만든 후 인덱스 생성 방법을 명확하지 않다는 것입니다. 코딩에 직접 뛰어들지 않고 Azure Portal 내에서 더 큰 관리 기능을 갖고 싶다고 들었습니다.따라서 Azure Search 포털 내에서 검색 인덱스를 만들고 관리할 수 있도록 몇 가지 향상된 기능이 있습니다.
+
+
+  다음은 새 검색 인덱스를 만들 수 있는 Azure Search에 대한 새 포털 블레이드의 스크린샷입니다.이 블레이드에서 검색 인덱스의 이름을 지정하고, 모든 필드를 만들고, 각 필드에 대한 속성을 할당할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/05/azure_search_field_management.png"><img class="alignnone size-medium wp-image-214371" alt="azure_search_field_management" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/azure_search_field_management-636x325.png" width="636" height="325" /></a>
+
+
+  인덱스를 만든 후에는 만든 모든 검색 인덱스의 목록을 보고 세부 정보를 확인하기 위해 인덱스를 드릴다운할 수 있습니다.
+
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/create_index2.png"><img class="alignnone size-full wp-image-213701" alt="View Indexes" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/create_index2.png" width="448" height="257" /></a>
+
+
+  검색 인덱스 중 하나를 자세히 살펴보면 이 인덱스와 연결된 필드뿐만 아니라 사용량도 확인할 수 있습니다.필요한 경우 필드를 클릭하여 새 필드를 추가할 수 있습니다.
+
+
+  <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2014/11/03/create_index3.png"><img class="alignnone size-medium wp-image-213711" alt="Index Metrics" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/create_index3-357x369.png" width="357" height="369" /></a>
+
+
+  &nbsp;
+
+
+  Azure Portal에 대한 이러한 향상된 기능 외에도 지정된 키가 있는 문서가 인덱스에 이미 있는 경우 병합처럼 동작하는 <a href="https://msdn.microsoft.com/en-us/library/azure/dn798930.aspx">mergeOrUpload</a> 및 새 <a href="https://msdn.microsoft.com/en-us/library/azure/dn832684.aspx">Azure Search 관리 REST API를 포함하여 API</a> 에 몇 가지 추가 기능을 추가하여 추가 스토리지를 허용하고 더 높은 QPS 속도를 지원하기 위해 새 서비스 만들기 및 검색 서비스 크기 조정과 같은 일반적인 관리 작업을 수행할 수 있습니다.<a href="https://azuresearchmgmtapi.codeplex.com/">CodePlex에서 이 관리 API</a>를 사용하는 방법의 샘플을 볼 수도 있습니다.
+
+
+  미리 보기 Azure Portal을 방문하여 Azure Search 및 이러한 새로운 기능 중 일부를 살펴보기를 바랍니다 <a href="https://portal.azure.com/#gallery/Microsoft.Search">.</a>
+
+
+  Liam Cavanagh는 Azure Search의 프로그램 관리자이며 자신의 블로그에서 <a href="https://twitter.com/liamca">twitteror</a> 로 연락할 수 있습니다.

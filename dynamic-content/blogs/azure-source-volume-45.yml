@@ -1,0 +1,194 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 789f01cfb923ed2807ec3d0d01b36fda2f2ca97e
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913123"
+Slug: azure-source-volume-45
+Title: Azure.Source - 볼륨 45
+Summary: 현재 미리 보기 상태, 일반 공급, 뉴스 & 업데이트 등을 포함하여 Azure에서 발생하는 작업을 최신 상태로 유지합니다.
+Content: >-
+  <h2>이제 일반 공급</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/vnet-service-endpoints-for-azure-database-services-for-mysql-and-postgresql-ga/">MySQL 및 PostgreSQL에 대한 VNet 서비스 엔드포인트 일반 공급 발표</a> - 서비스가 범용 및 메모리 최적화 서버에 사용할 수 있는 모든 지역에서 Azure Database for MySQL 및 PostgreSQL에 대한 가상 네트워크 서비스 엔드포인트입니다. 가상 네트워크 서비스 엔드포인트를 사용하여 가상 네트워크 내의 서브넷 또는 서브넷 집합에서 논리 서버에 대한 연결을 격리할 수 있습니다. 가상 네트워크에서 Azure Database for MySQL로의 트래픽은 항상 Azure 백본 네트워크 내에 유지됩니다. 이 직접 경로에 대한 기본 설정은 가상 어플라이언스 또는 온-프레미스를 통해 인터넷 트래픽을 사용하는 특정 경로를 통해 이루어집니다.</p>
+
+
+  <p><img alt="Diagram showing connectivity isolation with VNet service endpoints" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b40c558-9f91-44ff-9794-dfafebb26fae.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="VNet 서비스 엔드포인트를 사용하여 연결 격리" width="563"></p>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/new-customizations-in-azure-migrate-to-support-your-cloud-migration/">클라우드 마이그레이션을 지원하기 위한 Azure Migrate의 새로운 사용자 지정</a> - Azure Migrate는 Azure로의 마이그레이션을 계획하는 데 도움이 되는 추가 비용 없이 제공되는 일반 공급 서비스입니다. Azure Migrate는 온-프레미스 환경에서 서버를 검색하고 Azure에서 IaaS VM으로 실행할 각 검색된 서버&rsquo; 준비 상태를 평가합니다. Azure Migrate의 몇 가지 새로운 기능을 사용하면 RI(Reserved Instances) 지원 및 VM 시리즈 및 스토리지 유형 지정을 포함하여 마이그레이션 요구 사항에 맞게 평가를 사용자 지정할 수 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-hdinsight-apache-phoenix-now-supports-apache-zeppelin/">이제 Azure HDInsight Apache Phoenix에서 Zeppelin</a> - 을 지원합니다. Apache Phoenix는 HBase를 기반으로 구축된 오픈 소스 대규모 병렬 관계형 데이터베이스 계층이며, HDInsight는 Apache Phoenix 및 기타 오픈 소스 빅 데이터 애플리케이션을 실행하는 데 가장 적합한 장소입니다. Apache Zeppelin은 데이터 기반의 대화형 데이터 분석 및 hdInsight 고객이 Phoenix 테이블을 쿼리하는 데 사용할 수 있는 SQL, Scala 및 기타 여러 언어로 공동 작업 문서를 사용할 수 있는 오픈 소스 웹 기반 Notebook입니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/appserviceteam/2018/08/15/azure-app-service-on-azure-stack-update-3-released/">Azure Stack 업데이트 3의 Azure App Service 릴리스됨</a> - Microsoft Azure Stack은 온-프레미스 환경에 클라우드 컴퓨팅의 민첩성과 혁신을 촉진하고 어디서나 하이브리드 애플리케이션을 빌드하고 배포할 수 있는 유일한 하이브리드 클라우드를 지원하는 Azure&mdash;의 확장입니다. Azure Stack의 App Service에 대한 최신 업데이트는 Azure App Service 리소스 공급자 데이터베이스에 대한 SQL Server Always On에 대한 지원과 Functions 포털, Kudu 도구, ASP.Net Core 등에 대한 업데이트를 추가합니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/azuredev/2018/08/14/azure-api-management-vsts-extension-v2-0-release/">Azure API Management &ndash; VSTS 확장 v2.0 릴리스</a> - 이 무료 확장은 Azure API Management에 대한 배포를 자동화하여 릴리스 수명 주기의 일부로 Azure API Management를 VSTS로 제공합니다. API Management를 사용하여 API를 수익 창출하든 내부 용도로든 백 엔드 API의 릴리스를 API 게이트웨이에 대해 게시된 해당 페이&ccedil;드 API와 연결하는 것이 좋습니다. 이 업데이트에는 버전이 지정된 API, API 접두사, 버전 관리 체계 등이 포함됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/contest-microsoft-ai-idea-challenge-ai-s-next-breakthrough-is-you/">콘테스트: Microsoft AI 아이디어 챌린지 - AIs&rsquo;의 다음 돌파구는 바로 여러분입니다!</a> - Microsoft AI Idea Challenge는 개발자, 데이터 과학자, 전문가 및 학생으로부터 혁신적인 AI 솔루션을 찾고 있으며, Microsoft AI 플랫폼 및 서비스에서 개발되는 것이 좋습니다. &rsquo;AI(인공 지능) 분야의 전문가나 AI 개발자 또는 AI 및 기계 학습에 열정을 가진 사람만 있다면 Microsoft는 가장 창의적인 아이디어를 현실로 변환할 수 있는 기회를 제공하게 되어 기쁩니다.</p>
+
+
+  <p align="center"><a href="https://www.ailab.microsoft.com/challenge"><img alt="Microsoft AI Idea Challenge banner" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/bcfb245a-05cf-4cb4-9328-4d6692840a6f.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Microsoft AI 아이디어 챌린지"></a></p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/update-management-reboot/">업데이트 관리: 다시 부팅 제어</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/improvements-to-meter-names-and-impacts-to-power-bi-content-pack-reporting/">Power BI 콘텐츠 팩 보고에 대한 측정기 이름 및 영향 개선</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/comma-delimited-csv-reports-for-new-azure-consumption-and-charges-apis-now-available/">새 Azure 사용량 및 요금 API에 대한 쉼표로 구분된(.csv) 보고서 사용 가능</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-functions-runtime-2-0-breaking-change-notice/">Azure Functions 런타임 2.0 호환성이 손상되는 변경</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/add-https-probe-to-standard-load-balancers-from-azure-portal/">Azure Portal에서 표준 부하 분산 장치에 HTTPS 프로브 추가</a></li>
+  </ul>
+
+
+  <h2>Azure 팟캐스트</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" valign="middle" width="300">
+     <p>
+     <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode242.mp3">HTML5 오디오가 지원되지 않음</audio>
+     </p>
+     </td>
+     <td>
+     <p><strong><a href="https://azpodcast.azurewebsites.net/post/Episode-242-Azure-FastTrack">Azure 팟캐스트 | 에피소드 242 - Azure FastTrack</a> </strong> - 수석 PM Alex Uy는 회사가 엔지니어링 팀의 지원을 받아 워크로드를 Azure로 이동하는 데 도움이 되는 Azure FastTrack 프로그램에 대한 내부 특종을 제공합니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>기술 콘텐츠 및 교육</h2>
+
+
+  <p>서비스 엔드포인트 - <a href="https://azure.microsoft.com/en-us/blog/enhance-hdinsight-security-with-service-endpoints/">를 사용하여 HDInsight 보안을 강화하는 방법</a> 서비스 엔드포인트에서 제공하는 네트워킹 계층의 향상된 보안 수준을 통해 고객은 이제 빅 데이터 스토리지 계정을 지정된 VNET(Virtual Network)에 잠그고 HDInsight 클러스터를 원활하게 사용하여 해당 데이터에 액세스하고 처리할 수 있습니다. 이 게시물에서는 서비스 엔드포인트를 사용하도록 설정하고 Azure Blob Storage, Azure SQL DB 및 Azure Cosmos DB에 대한 중요한 HDInsight 구성을 지적하는 방법을 살펴봅니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-cosmos-db-reference-solution-visualizing-real-time-data-analysis-with-change-feed/">Azure Cosmos DB 참조 솔루션: 변경 피드를 사용하여 실시간 데이터 분석 시각화</a> - Azure Cosmos DB 변경 피드는 Azure Cosmos DB에서 수정되거나 삽입된 레코드의 연속 및 증분 피드를 가져오는 자동 메커니즘을 제공합니다. 이 참조 솔루션은 특히 전자 상거래 회사의 요구에 맞게 실시간 데이터 처리에 중점을 둡니다. 그러나 다양한 도메인에 적용할 수 있습니다.</p>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/azuredev/2018/08/16/azure-content-spotlight-secure-devops-kit-for-azure-azsk/">Azure 콘텐츠 추천 &ndash; AzSK(Azure용 보안 DevOps 키트)</a> - AzSK(Azure용 Secure DevOps Kit)는 자동화를 사용하고 네이티브 DevOps 워크플로에 보안을 통합하는 DevOps 팀을 위한 스크립트, 도구, 확장, 자동화 등을 제공합니다.</p>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><iframe allowfullscreen="" frameborder="0" height="135" src="https://channel9.msdn.com/Shows/Azure-Friday/Getting-started-with-the-Secure-DevOps-Kit-for-Azure-AzSK/player" width="240"></iframe></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Azure-Friday/Getting-started-with-the-Secure-DevOps-Kit-for-Azure-AzSK">Azure Friday | AzSK(Secure DevOps Kit for Azure)</a> </strong> - 시작 Mark Jacobs는 Scott Hanselman과 함께 Microsoft&#39;내부 엔터프라이즈가 규정 준수를 높이고 AzSK(Secure DevOps Kit for Azure)를 사용하여 보다 신뢰할 수 있는 클라우드 환경을 만드는 방법을 논의합니다. Microsoft&#39;DevOps 팀이 이 도구를 활용하여 클라우드 애플리케이션을 지속적으로 안전하게 유지하는 방법과 동일한 도구를 사용하여 환경의 위험을 줄이는 방법을 알아봅니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p><a href="https://blogs.msdn.microsoft.com/azuredev/2018/08/15/service-fabric-and-kubernetes-comparison-part-1-distributed-systems-architecture/">Service Fabric 및 Kubernetes 비교, 1 &ndash; 부 분산 시스템 아키텍처</a> - 다중 파트 시리즈의 첫 번째 부분에서 Marcin Kosieradzki는 각각 따르는 디자인 원칙을 포함하여 Service Fabric Kubernetes에 대한 심층 비교를 제공합니다. 이 문서에는 많은 Service Fabric 기록도 포함되어 있습니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/installing-certificates-into-iot-devices/">IoT 디바이스</a> - 에 인증서 설치 X.509 인증서 기반 인증으로 이동하는 많은 사람들이 Azure IoT Hub Device Provisioning Service를 사용하기 시작하면서 이 게시물은 프로덕션 수준의 규모에서 IoT 디바이스에 대한 인증서 생성 및 설치 프로세스에 대한 명확성을 제공하기 위해 노력합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-hdinsight-interactive-query-simplifying-big-data-analytics-architecture-and-operations/">Azure HDInsight 대화형 쿼리: 빅 데이터 분석 아키텍처</a> - 간소화 올바른 아키텍처와 도구가 없으면 많은 빅 데이터 및 분석 프로젝트가 일반적인 BI 사용자 및 엔터프라이즈 보안 설계자를 따라잡지 못합니다. 이 게시물에서는 빠른 대화형 쿼리, 간소화된 보안 모델 및 BI 사용자와의 향상된 사용자 채택을 위한 빅 데이터 솔루션을 설계하는 데 도움이 되는 아키텍처 접근 방식을 다룹니다.</p>
+
+
+  <p align="center"><img alt="Architectural diagram showing simplified and scalable architecture with HDInsight Interactive Query" height="302" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a51281e-a316-4eea-8986-1fb53d169139.png" title="HDInsight 대화형 쿼리 아키텍처를 사용하여 간소화되고 확장 가능한 아키텍처" width="640"></p>
+
+
+  <p><a href="https://medium.com/microsoftazure/serverless-devops-and-ci-cd-part-3-1e89cc44e8fc">서버리스, DevOps 및 CI/CD: 3</a> - 부 다중 파트 시리즈(<a href="https://medium.com/@jeffhollan/serverless-devops-and-ci-cd-part-1-f76f0357cba4">서버리스, DevOps 및 CI/CD: 1부 및</a> <a href="https://medium.com/@jeffhollan/serverless-devops-and-ci-cd-part-2-b6e0a6d05530">서버리스, DevOps 및 CI/CD: 2부)</a>의 세 번째 할부에서 Jeff Hollan은 서버리스 아키텍처 환경 및 버전을 자동으로 원활하게 관리하는 한 가지 방법을 다룹니다.</p>
+
+
+  <p><a href="https://medium.com/microsoftazure/https-medium-com-lenisha-azure-sql-with-pcf-spring-boot-applications-part-1-georeplication-f365bb135a4c">Azure SQL PCF Spring Boot 애플리케이션 사용(1부 GeoReplication) Azure의 PCF(Pivotal CloudFoundry)에서 실행되는 Java Spring Boot 애플리케이션의 고급 Azure SQL(PaaS) 기능을 활용하는 방법을 보여주는 2부 시리즈의 1 &mdash; 부</a>입니다.- 첫 번째 문서에서는 Azure SQL Database 자동 장애 조치(failover) 그룹과 함께 Spring Boot 애플리케이션을 사용하여 지역 가동 중단에 대한 복원력을 제공하는 방법을 보여 줍니다. 이후 문서에서는 Spring Boot 애플리케이션에서 Azure SQL AlwaysEncrypted 기능을 사용하여 클라우드에서 PI 데이터에 대한 암호화를 제공하는 방법을 설명합니다.</p>
+
+
+  <p><a href="https://medium.com/microsoftazure/make-r-speak-with-the-bing-speech-api-8e71019b5cab">R이 Bing Speech API와 대화하게</a> - 만들기 R이 당신에게 이야기하고 싶었던 적이 있습니까? 이제 John Muschelli의 mscstts 패키지를 사용할 수 있습니다. Azure에서 Microsoft Cognitive Services Text-to-Speech API(따라서 이름)에 대한 인터페이스를 제공하며, 짧은 텍스트를 재생 가능한 오디오 파일로 변환하여 다양한 음성을 사용하여 음성으로 렌더링하는 데 사용할 수 있습니다.</p>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center">
+     <p align="left"><a href="https://www.youtube.com/watch?v=RXS9F7yy4A8"><img alt="How to quickly connect to Windows VMs using RDP" border="0" height="135" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5d6fe0d3-0d5f-41d2-8be1-5d1716fe6b80.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="RDP를 사용하여 Windows VM에 빠르게 연결하는 방법" width="240"></a></p>
+
+     <p align="left"><strong><a href="https://www.youtube.com/watch?v=RXS9F7yy4A8">RDP를 사용하여 Windows VM에 빠르게 연결하는 방법</a></strong></p>
+
+     <p align="left">RDP(원격 데스크톱 프로토콜)를 사용하여 Windows VM(Virtual Machines)에 빠르게 연결하는 방법을 알아봅니다. Azure에서 가상 머신에 연결하는 것이 얼마나 쉽고 빠른지 알아봅니다.</p>
+     </td>
+     <td valign="top">
+     <p><a href="https://www.youtube.com/watch?v=7pmn6luCwQ4"><img alt="How to quickly connect to a Linux VM with SSH" border="0" height="135" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/dc28072d-6c25-4efd-9dfc-a8bb1cc72aa7.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="SSH를 사용하여 Linux VM에 빠르게 연결하는 방법" width="240"></a></p>
+
+     <p><strong><a href="https://www.youtube.com/watch?v=7pmn6luCwQ4">SSH를 사용하여 Linux VM에 빠르게 연결하는 방법</a></strong></p>
+
+     <p>SSH(보안 셸)를 사용하여 Linux VM(Virtual Machine)에 빠르게 연결하는 방법을 알아봅니다. Microsoft Azure 내에서 실행되는 Linux VM이 있는 경우 SSH 연결을 쉽게 설정할 수 있습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>이벤트</h2>
+
+
+  <p><a href="https://infopedia.eventbuilder.com/event?eventid=u1w1q8">웨비나: Microsoft Azure 청사진을 사용하여 의료 분야의 AI(인공 지능) 가속화 -- 1부: 시작</a> - 인공 지능은 환자 체류 기간 예측부터 진단 이미징, 사기 방지 및 더 많은 사용 사례에 이르기까지 의료 서비스에 대한 주요 잠재력을 보유하고 있습니다. AI를 성공적으로 사용하려면 의료 서비스에는 프로젝트가 아닌 솔루션이 필요합니다. Microsoft Azure 청사진을 사용하여 이니셔티브를 가속화하여 의료 솔루션에서 AI에 대한 격차를 해소하는 방법을 알아봅니다. 청사진에는 예제 코드, 테스트 데이터, 보안 및 규정 준수 지원과 같은 리소스가 포함됩니다. 이 세션은 의료 제공자, 지불자, 제약 및 생명 과학 조직을 위한 것입니다. 주요 역할에는 선임 기술 의사 결정자, IT 관리자 클라우드 설계자 및 개발자가 포함됩니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/iot-in-action-building-secure-sophisticated-solutions/">IoT 실행: 안전하고 정교한 솔루션 빌드</a> - IoT in Action은 IoT 보안, 혁신 및 솔루션과 관련된 최신 항목을 해결하는 데 초점을 맞춘 직접 이벤트입니다. &rsquo;Microsoft&rsquo; 고객 및 파트너 에코시스템을 충족하고 공동 작업할 수 있는 좋은 기회입니다. 올해&rsquo; 행사에서&rsquo;는 IoT 보안 및 Azure Sphere에 대한 실습 기술 세션 및 심층 학습의 수가 늘어나고 있습니다. 참석하면&rsquo; 실행 가능한 인사이트를 얻고, 파트너십을 심화하고, 지능형 에지 및 인텔리전트 클라우드의 혁신적인 잠재력을 실현할 수 있습니다. 이벤트는 바르셀로나, 산타 클라라, 타이베이, 심천에서 개최되며, 더 많은 장소가 발표 될 예정입니다.</p>
+
+
+  <h2>The IoT Show</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Chirp-your-device-into-Azure-IoT-Central"><img alt="Chirp your device into Azure IoT Central" border="0" height="134" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fc5d7637-bbfd-459a-8acd-0c654a89514c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="디바이스를 Azure IoT Central로 처프" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Chirp-your-device-into-Azure-IoT-Central">사물 인터넷 표시 | 디바이스를 Azure IoT Central</a> </strong> - 로 이동하세요. 무선 구성, 클라우드 연결 자격 증명 등을 사용하여 소리를 사용하여 IoT 디바이스를 프로비전하는 스마트한 방법입니다. <a href="https://chirp.io">Chirp</a>는 소리를 통해 데이터를 전송하기 위한 엔터프라이즈 지원 플랫폼 간 SDK를 만들었으며, Azure IoT 팀은 Chirp와 협력하여 MXChip devkit를 설치하고 사운드만으로 Azure IoT Central에 연결하는 멋지고 쉬운 방법을 구현했습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-site-recovery-powers-veritas-backup-exec-instant-cloud-recovery-for-disaster-recovery/">Azure Site Recovery는 DR용 Veritas Backup Exec 인스턴트 클라우드 복구를 지원합니다</a>.- ASR(Microsoft Azure Site Recovery)은 Azure 및 온-프레미스에서 실행되는 애플리케이션에 대해 DRaaS(재해 복구 서비스)를 제공합니다. ASR을 사용하면 규정 준수를 손상시키지 않고 IT 중단 중에 애플리케이션 가동 중지 시간을 줄일 수 있습니다. ASR은 Linux, Windows, VMware 및 Hyper-V 가상 머신 및 물리적 서버에서 온-프레미스 애플리케이션에 대한 포괄적인 적용 범위를 제공합니다. 이제 Azure Site Recovery는 Backup Exec 20.2 릴리스를 사용하여 Veritas Backup Exec ICR(Instant Cloud Recovery)을 지원합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-new-offers-july-1-15/">Azure Marketplace 새 제품: 7월 115&ndash;일</a> - Azure Marketplace는 Azure에서 실행하도록 인증되고 최적화된 모든 소프트웨어 요구 사항에 &ndash; 대한 최고의 대상입니다. 수백 개의 주요 소프트웨어 공급자로부터 애플리케이션 &amp; 서비스를 찾고, 시도하고, 구매하고, 프로비전합니다. 7월 상반기에는 새로운 가상 머신 이미지(예: Bloombase StoreSafe), 웹 애플리케이션(예: BYOL(Kaspersky Hybrid Cloud Security) 및 컨설팅 서비스(예: Carbonite Endpoint Protection - Azure 500 번들)를 포함한 97개의 새로운 제품을 게시했습니다.</p>
+
+
+  <h2>클라우드 전문가&#39;이번 주 Azure</h2>
+
+
+  <table>
+   <tbody>
+    <tr>
+     <td align="center" width="300">
+     <p><a href="https://www.youtube.com/watch?v=oCVCl3HDqEU"><img alt="A Cloud Guru's Azure This Week - 17 August 2018" border="0" height="127" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d3d59a6c-470b-45fa-9711-ada23f57b104.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="클라우드 전문가의 Azure 이번 주 - 2018년 8월 17일" width="240"></a></p>
+     </td>
+     <td valign="top">
+     <p><strong><a href="https://www.youtube.com/watch?v=oCVCl3HDqEU">A Cloud Guru&#39;Azure 이번 주 - 2018년 8</a> </strong> - 월 17일 이번 주 Azure에서 Lars는 Azure의 세 가지 새로운 기능인 Azure App Service의 Windows 컨테이너 지원, 현재 버전 2.0의 Azure Cosmos DB JavaScript SDK 및 Azure SQL Database 예약된 용량의 일반 공급에 대해 설명합니다. 또한 더 많은 Azure 지식 및 실습 예제를 볼 수 있는 유용한 쇼에 대한 팁입니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

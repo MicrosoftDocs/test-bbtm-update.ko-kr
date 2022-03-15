@@ -1,0 +1,42 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 0cac1aa2eb1e62650aae8a1742da18309dd559dc
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897417"
+Slug: container-apps-now-available-in-the-azure-marketplace
+Title: 이제 Azure Marketplace에서 Container Apps를 사용할 수 있습니다.
+Summary: Azure Marketplace를 사용하면 Microsoft Azure 위해 빌드된 앱과 서비스를 쉽게 검색, 구매 및 배포할 수 있습니다.
+Content: >-
+  <p>오늘 DockerCon에서 생성된 모멘텀을 구축하고 <a href="https://azure.microsoft.com/en-us/marketplace/">Azure Marketplace</a>에서 Container Apps를 발표하게 되어 기쁩니다. 새 <em>Container Apps</em> 범주를 사용하면 Docker Hub에서 큐레이팅된 공식 리포지토리를 검색하고 배포할 수 있습니다.&nbsp; Azure Resource Manager 템플릿 및 새 Docker <a href="https://github.com/Azure/azure-docker-extension">확장을&nbsp;</a> 활용하여 단일 및 다중 컨테이너 Dockerized 애플리케이션을 배포하기 위한 매우 간단한 &ldquo;시작&rdquo; 환경입니다. 오늘&rsquo; 발표 전에 Ubuntu Server에서 Docker를 시작하여 Docker 호스트를 배포한 다음 Azure Virtual Machine에서 컨테이너를 실행해야 했습니다.</p>
+
+
+  <h2>Azure Marketplace에서 컨테이너 앱 배포</h2>
+
+
+  <p>시작하려면 Microsoft Azure 포털(<a href="https://portal.azure.com/">https://portal.azure.com</a>)에 로그인합니다. + 새로 만들기를 &ldquo;클릭하고 만들기 블레이드에서 Container Apps&rdquo;를 선택합니다&ldquo;.&rdquo; Container Apps는 Docker Hub의 몇 가지 공식 리포지토리를 보여 줍니다. 한 번의 클릭으로 배포 흐름으로 바로 이동할 수 있습니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/06/23/ImagesforBlog-1.png"><img alt="ImagesforBlog-1" border="0" height="591" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ImagesforBlog-1_thumb.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="ImagesforBlog-1" width="610"></a> &nbsp;</p>
+
+
+  <h2>Azure Marketplace</h2>
+
+
+  <p>Container Apps의 전체 목록을 검색하려면 만들기 블레이드에서 Marketplace&quot;를 선택하면 &quot;Azure Marketplace의 Container Apps 범주로 이동합니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/06/23/Container-Apps.jpg"><img alt="Container Apps" border="0" height="465" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/Container-Apps_thumb.jpg" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="컨테이너 앱" width="610"></a> &nbsp; 에서 자세한 내용을 보려면 컨테이너 앱을 선택합니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/06/23/ImagesforBlog-3.png"><img alt="ImagesforBlog-3" border="0" height="1017" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ImagesforBlog-3_thumb.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="ImagesforBlog-3" width="610"></a> &nbsp;</p>
+
+
+  <h2>만들기 Flow</h2>
+
+
+  <p>만들기&quot;를 클릭하여 &quot;새 배포 프로세스를 시작합니다. Docker 호스트 및 컨테이너를 배포하는 데 필요한 사용자 입력을 입력합니다. <a href="https://acom.azurecomcdn.net/80C57D/blogmedia/blogmedia/2015/06/23/ImagesforBlog-4.png"><img alt="ImagesforBlog-4" border="0" height="832" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ImagesforBlog-4_thumb.png" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="ImagesforBlog-4" width="610"></a> &nbsp;</p>
+
+
+  <h2>만든 VM에 로그인</h2>
+
+
+  <p>확인을 클릭합니다 &ldquo;.&rdquo;&nbsp; 몇 분 만에 생성된 Docker 호스트 Virtual Machine에 로그인하여 컨테이너 애플리케이션을 찾아보고 관리할 수 있습니다.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <p>간단한 컨테이너 앱을 시작하거나&nbsp; Microsoft Azure 통해 Docker 컨테이너에 애플리케이션을 빌드하세요! Azure와 Docker 통합과 관련된 모든 공식 공지 사항 목록은 <a href="https://azure.microsoft.com/blog/2015/06/23/docker-and-microsoft-announce-more-innovation-to-cross-platforms-and-win-hearts">블로그 게시물을</a> 확인하세요. 자세한 내용은 <a href="https://azure.microsoft.com/en-us/marketplace/">Azure Marketplace</a>를 방문하거나 <a href="https://azure.microsoft.com/en-us/marketplace/faq/">FAQ 페이지를</a> 확인하세요.</p>

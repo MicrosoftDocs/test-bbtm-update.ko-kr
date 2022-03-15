@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: a28ac155fd3282b58d25c68be9172fcaaae6eb9b
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902194"
+Slug: cross-post-announcing-the-release-of-windows-azure-platform-powershell-cmdlets-2-0
+Title: '교차 게시: Windows Azure Platform PowerShell Cmdlet 2.0 릴리스 발표'
+Summary: Windows Azure Platform PowerShell Cmdlet 2.0은 이제 CodePlex에서 다운로드할 수 있습니다. Windows Azure 애플리케이션을 더 간단하게 배포하고 관리할 수 있도록 설계된 새로운 Windows Azure...
+Content: '<p>Windows Azure Platform PowerShell Cmdlet 2.0은 이제 <a target="_blank" href="https://wappowershell.codeplex.com/releases">CodePlex</a>에서 다운로드할 수 있습니다. <a target="_blank" href="https://azure.microsoft.com/">Windows Azure</a> 애플리케이션을 더 간단하게 배포하고 관리하도록 설계된 새로운 Windows Azure Platform PowerShell Cmdlet은 일관성을 개선하고 배포를 용이하게 하기 위해 업데이트되었습니다.&nbsp; 변경 내용은 다음과 같습니다.</p>  <ul>  <li>호스티드 서비스 관리, 선호도 그룹, Storage 계정, Storage 및 인스턴스 관리에 대한 지원이 향상되었습니다.</li>  <li>향상된 진단 지원: PowerShell에서 Windows Azure Diagnostics의 모든 측면을 관리합니다.</li>  <li>SQL Azure 지원: SQL Azure 서버 추가/제거/업데이트</li>  <li>Storage Analytics 지원: Storage 계정에 Storage Analytics를 사용하거나 사용하지 않도록 설정합니다.</li>  <li>Access Control Service PowerShell Cmdlet은 기존 Windows Azure PowerShell Cmdlet과 병합되어 단일 설치에서 둘 다 배포할 수 있습니다.</li>  <li>일부 cmdlet은 이름이 바뀌었고 다른 cmdlet은 PowerShell cmdlet 디자인 지침을 보다 면밀히 따르기 위해 개선되었습니다.</li>  <li>cmdlet 솔루션의 네임스페이스는 상당한 변화를 겪었습니다.</li>  </ul>  <p>또한 몇 가지 새롭고 강력한 cmdlet이 추가되었습니다.&nbsp; 새 cmdlet의 전체 목록 및 이 릴리스에 대한 자세한 내용은 Microsoft 기술 전도자 Michael Washams&rsquo; 게시물, &ldquo;Windows Azure Platform PowerShell Cmdlets2.0&nbsp;&rdquo; 릴리스 발표 및 <a target="_blank" href="https://wappowershell.codeplex.com/documentation">Windows Azure PowerShell Cmdlet 추가</a> 정보를 참조하세요.</p>  <p>Windows Azure Platform PowerShell Cmdlet 2.0을 <a target="_blank" href="https://wappowershell.codeplex.com/releases">다운로드</a>합니다.</p>'

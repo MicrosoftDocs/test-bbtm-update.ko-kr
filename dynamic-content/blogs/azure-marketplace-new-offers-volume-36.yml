@@ -1,0 +1,206 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b4b0545b07156318a8ca96874914e9710bf588af
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913156"
+Slug: azure-marketplace-new-offers-volume-36
+Title: Azure Marketplace 새 제품 - 볼륨 36
+Summary: Azure Marketplace 에코시스템을 계속 확장합니다. 이 볼륨의 경우 22개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다.
+Content: >-
+  <p>Azure Marketplace 에코시스템을 계속 확장합니다. 이 볼륨의 경우 22개의 새로운 제품이 온보딩 기준을 성공적으로 충족하고 라이브로 전환되었습니다. 아래의 새 제품에 대한 세부 정보를 참조하세요.</p>
+
+
+  <h2>애플리케이션</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.bluefish-editor-windows-server-2016" target="_blank"><img alt="Bluefish Editor on Windows Server 2016" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2060310d-329b-4d3e-a7ca-5369a606a982.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Windows Server 2016 블루피쉬 편집기" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/apps-4-rent.bluefish-editor-windows-server-2016" target="_blank">Windows Server 2016 Bluefish Editor</a>: Apps4Rent를 사용하면 Azure에서 Bluefish Editor를 배포할 수 있습니다. 동적 웹 사이트를 빌드하기 위한 고급 도구가 있는 무료 소프트웨어 편집기인 Bluefish는 간단한 편집기와 완전히 통합된 개발 환경 간의 중간 경로로 타겟팅됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pivotal.bosh-windows-server-2019" target="_blank"><img alt="BOSH Stemcell for Windows Server 2019" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7919d2f8-7e29-4f82-8be4-6ba9e1e3f70f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Windows Server 2019용 BOSH Stemcell" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pivotal.bosh-windows-server-2019" target="_blank">Windows Server 2019용 BOSH Stemcell</a>: Pivotal Software의 이 제품은 Pivotal Cloud Foundry 플랫폼에 Windows Server 2019 기반 Stemcell을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/corda.corda-opensource-vm" target="_blank"><img alt="Corda Opensource VM" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d3c2e16b-b844-4616-b02d-cb503bd822d5.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Corda Opensource VM" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/corda.corda-opensource-vm" target="_blank">Corda Opensource VM</a>: R3s&rsquo; Corda는 기관이 스마트 계약을 사용하여 직접 거래하고 개인 정보 보호 및 보안을 보장함으로써 비즈니스 트랜잭션에서 비용이 많이 드는 마찰을 제거하는 오픈 소스 블록체인 플랫폼입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/datastax.datastax-ddac-public?tab=Overview" target="_blank"><img alt="Datastax Distribution of Apache Cassandra" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7a25181d-c9b2-4488-b130-6b8e982142d0.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Apache Cassandra의 Datastax 분포" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/datastax.datastax-ddac-public?tab=Overview" target="_blank">Apache Cassandra의 DataStax 배포</a>: DataStax는 클라우드에서 Apache Cassandra 데이터베이스를 실행하는 간단하고 비용 효율적인 방법을 제공합니다. DDAC는 운영을 간소화하고 비용을 제어하여 채택, 유지 관리 및 지원과 관련된 일반적인 문제를 해결합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/datastax.datastax-enterprise-st?tab=Overview" target="_blank"><img alt="DataStax Enterprise" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/44899c2e-930c-4265-846b-dd87add2927a.png" style="border-image: none; display: inline; background-image: none;" title="DataStax Enterprise" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/datastax.datastax-enterprise-st?tab=Overview" target="_blank">DataStax Enterprise</a>: DataStax는 Apache Cassandra를 기반으로 하는 항상 사용 가능한 분산 하이브리드 클라우드 NoSQL 데이터베이스를 제공합니다. DSE(DataStax Enterprise)를 사용하면 기업에서 원활한 데이터 계층을 통해 하이브리드 및 다중 클라우드 환경을 쉽게 활용할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fatpipe-inc.fatpipe-wanopt" target="_blank"><img alt="FatPipe WAN Optimization for Azure" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ad6d60c-986e-4f6b-b307-e9237b4e69de.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure용 FatPipe WAN 최적화" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/fatpipe-inc.fatpipe-wanopt" target="_blank">Azure에 대한 FatPipe WAN 최적화</a>: FatPipe WAN 최적화를 사용하여 광역 네트워크 성능을 크게 향상시켜 사용률을 크게 높여 중복 데이터를 크게 줄이는 캐싱/압축을 통해 대역폭을 효과적으로 사용할 수 있습니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/flexbby-5255860.flexbbyoneru" target="_blank"><img alt="Flexbby One RU Edition" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3ccc5729-e8d2-45b4-8a9e-813f46064356.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Flexbby One RU Edition" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/flexbby-5255860.flexbbyoneru" target="_blank">Flexbby One RU Edition</a>: 영업, 마케팅, 서비스, HR 및 법률에서 복잡한 워크플로 자동화를 위한 포괄적인 솔루션을 가져옵니다. Flexbby One은 계약 수명 주기, 문서 보관, 조달, 고객 서비스 등을 관리하는 데 도움이 되는 강력한 소프트웨어입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/flowmon.flowmon_collector" target="_blank"><img alt="Flowmon Collector for Azure" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/19063ec0-1677-43a7-b936-d7d3b0f445c4.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure용 Flowmon Collector" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/flowmon.flowmon_collector" target="_blank">Azure용 Flowmon Collector</a>: Flowmon Collector는 흐름 데이터의 수집, 스토리지 및 분석을 위해 사용됩니다(NetFlow, IPFIX). Flowmon은 네트워크 가시성을 통해 네트워크를 절대적으로 제어하는 데 필요한 모든 것을 포함하는 포괄적인 플랫폼입니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/innofactorplc.qualityfirstservice" target="_blank"><img alt="Innofactor QualityFirst" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1e94a2b4-1667-48e9-a87a-915e3dcd060f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Innofactor QualityFirst" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/innofactorplc.qualityfirstservice" target="_blank">Innofactor QualityFirst</a>: 의료, 환자 및 치료 지침에 대한 Innofactor의 QualityFirst를 가져옵니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.keycloak-gatekeeper-container" target="_blank"><img alt="Keycloak Gatekeeper Container Image" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/44346691-2ed8-484e-9077-c5081398da9c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Keycloak Gatekeeper 컨테이너 이미지" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.keycloak-gatekeeper-container" target="_blank">Keycloak Gatekeeper 컨테이너 이미지</a>: Keycloak Gatekeeper는 브라우저 쿠키 또는 전달자 토큰에서 액세스 토큰을 지원하는 Keycloak 인증과 통합되는 어댑터입니다. 이 Bitnami 컨테이너 이미지는 안전하고 최신이며 업계 모범 사례를 사용하여 패키지됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dhi.mike-zero" target="_blank"><img alt="MIKE Zero" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e70ea3c9-c5ba-4d77-a2a8-babf5dbc51be.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="MIKE Zero" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dhi.mike-zero" target="_blank">MIKE Zero</a>: DHI A/S의 이 MIKE 모델링 제품군은 물 환경을 모델링하려는 엔지니어와 과학자들에게 도움을 주며, DHI&#39;내륙 및 해양 소프트웨어로 구동되는 대부분의 MIKE를 포함합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/onyx-point-inc.op_simp_6_3" target="_blank"><img alt="System Integrity Management Platform (SIMP) 6.3" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/15b6821a-2ef7-4878-b236-3a416f603573.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="SIMP(시스템 무결성 관리 플랫폼) 6.3" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/onyx-point-inc.op_simp_6_3" target="_blank">SIMP(시스템 무결성 관리 플랫폼) 6.3</a>: SIMP는 기존 인프라를 향상시키거나 처음부터 신속하게 빌드할 수 있는 오픈 소스 프레임워크입니다. Puppet 제품 제품군을 기반으로 하는 SIMP는 확장성, 유연성 및 규정 준수를 중심으로 설계되었습니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <h2>컨설팅 서비스</h2>
+
+
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tbody>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/steeves.win-as-a-service_lifecycle_management_workshop" target="_blank"><img alt="2 Hr Workshop - Windows in the Cloud" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/84fc5b46-4e81-48bc-a22b-83ea33576e71.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="2시간 워크샵 - 클라우드에서 Windows" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/steeves.win-as-a-service_lifecycle_management_workshop" target="_blank">2시간 워크샵: 클라우드의 Windows</a>: Steeves의 계획 및 지식 이전 워크샵은 Windows 10 서비스 모델 및 수명 주기에 대한 개요를 제공하며 IT 관리, IT 직원 및 IT 의사 결정권자와 같은 주요 이해 관계자에게 제시되어야 합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluechip.azureaccelerate" target="_blank"><img alt="Azure Accelerate" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/49b28e1e-0a3e-4a6e-b562-e75b76150de6.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure 가속" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/bluechip.azureaccelerate" target="_blank">Azure 가속</a>: 워크로드를 Azure로 이동하는 ROI를 결정합니다. Azure Accelerate from Blue Chip Consulting은 서버 인벤토리, 재무 모델, 대상 상태 아키텍처 드로잉 및 자세한 클라우드 로드맵에 대한 인사이트를 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_storage_for_archive_2_day_implementation" target="_blank"><img alt="Azure Storage for Archive- 2-Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6da9063d-3372-40df-b8c3-228a7838968c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="보관- 2일 구현에 대한 Azure Storage" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_storage_for_archive_2_day_implementation" target="_blank">보관용 Azure Storage: 2일 구현</a>: CDW는 Azure에서 보관 솔루션을 사용하도록 설정하고 업계 최고의 사례를 공유하고 요구 사항을 식별하는 데 도움이 됩니다. CDW는 프로덕션 환경에서 솔루션을 구현하고 파일럿합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_using_tiered_storage_appliances" target="_blank"><img alt="Azure Tiered Storage- 1-Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/06a9af14-3d48-4a2e-83e8-6b95e8895a4c.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure 계층화된 Storage- 1일 구현" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.azure_using_tiered_storage_appliances" target="_blank">Azure 계층화된 Storage: 1일 구현:</a> 고도로 숙련된 CDW 엔지니어가 온-프레미스 클라우드 지원 스토리지 어플라이언스와 함께 사용할 수 있도록 Azure에서 스토리지 계정을 만드는 데 도움을 줍니다. 그러면 하이브리드 클라우드 스토리지 솔루션이 생성됩니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/shi-351789.migration_assessment" target="_blank"><img alt="CSP Migration- 3-Week Assessment" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6851542d-b6fd-4ffa-bd49-683ebc02a030.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="CSP 마이그레이션 - 3주 평가" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/shi-351789.migration_assessment" target="_blank">CSP 마이그레이션: 3주 평가</a>: SHI는 기존 Azure 고객을 위한 신속한 평가 및 마이그레이션 경로를 해당 SHI CSP(클라우드 서비스 공급자) 제품으로 제공합니다. SHI는 보안 및 관리 효율성에 대한 모범 사례를 보장하면서 계속 실행합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/shi-351789.migration_assessment6" target="_blank"><img alt="CSP Migration- 6-Week Assessment and Migration" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/6a4c5c47-6aa1-4cb1-841d-e711c5d62236.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="CSP 마이그레이션 - 6주 평가 및 마이그레이션" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/shi-351789.migration_assessment6" target="_blank">CSP 마이그레이션: 6주 평가 및 마이그레이션</a>: 이동하는 데 더 많은 시간이 필요하세요? 기존 Azure 고객을 위한 이 6주 평가 및 마이그레이션을 SHI CSP(클라우드 서비스 공급자) 제품으로 가져옵니다. SHI는 모범 사례를 보장하면서 계속 실행합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.domain_controller_in_azure_1_day_implementation" target="_blank"><img alt="Domain Controller in Azure- 1-Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec5d4dec-056a-420a-8581-9ac96b9abe93.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure- 1일 구현의 도메인 컨트롤러" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.domain_controller_in_azure_1_day_implementation" target="_blank">Azure의 도메인 컨트롤러: 1일 구현:</a> CDW는 기존 단일 포리스트/단일 도메인 AD DS 온-프레미스 인프라에 연결하도록 Microsoft AD DS 도메인 컨트롤러 역할을 사용하여 최대 2개의 Azure IaaS 가상 머신을 구성합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cynoteck.anil_micro_azure_chatbot" target="_blank"><img alt="Microsoft Azure AI Chatbot Development" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/adcf0bed-4bcc-47cd-893f-a3ad99e92903.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Microsoft Azure AI 챗봇 개발" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cynoteck.anil_micro_azure_chatbot" target="_blank">Microsoft Azure AI 챗봇 개발</a>: Cynoteck 기술 솔루션과의 이 협의는 회사가 사업 라인에 따라 챗봇을 가장 잘 사용하는 방법을 식별하는 데 도움이 되는 제안과 솔루션을 제공합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.sso_using_ad_fs_2_day_implementation" target="_blank"><img alt="SSO Using ADFS- 2-Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e962dd9c-7b2a-4f49-8347-777dc772faa3.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="ADFS- 2일 구현을 사용하는 SSO" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.sso_using_ad_fs_2_day_implementation" target="_blank">ADFS를 사용하는 SSO: 2일 구현:</a> CDW&rsquo; 엔지니어는 단일 위치에 최대 2개의 Active Directory Federation Services 서버와 두 개의 ADFS 웹 애플리케이션 프록시 서버를 설치하고 구성하여 최종 사용자를 위한 작업을 간소화합니다.</p>
+     </td>
+    </tr>
+    <tr>
+     <td style="vertical-align: middle;" width="157">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.windows-server-migration_5_day_implementation" target="_blank"><img alt="Windows Server Migration- 5-Day Implementation" border="0" height="90" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1bab1446-2a38-4491-a2b6-c9d3ca8544b2.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Windows 서버 마이그레이션 - 5일 구현" width="90"></a></p>
+     </td>
+     <td style="vertical-align: middle;" width="629">
+     <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/cdw.windows-server-migration_5_day_implementation" target="_blank">Windows 서버 마이그레이션: 5일 구현:</a> CDW의 이 제품은 조직에서 최대 5개의 온-프레미스 지원, 중요하지 않은 가상화된 가상화된 Windows 서버에서 Azure로의 파일럿 마이그레이션을 계획하는 데 도움이 됩니다.</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>

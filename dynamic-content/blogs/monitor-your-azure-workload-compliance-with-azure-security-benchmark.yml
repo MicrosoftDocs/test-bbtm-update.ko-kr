@@ -1,0 +1,79 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 42c4e6f0bd7e6fda7fd6b005914c882e519282c4
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912758"
+Slug: monitor-your-azure-workload-compliance-with-azure-security-benchmark
+Title: Azure Security Benchmark를 사용하여 Azure 워크로드 규정 준수 모니터링
+Summary: 'Azure Security Benchmark v1은 2020년 1월에 릴리스되었으며 조직에서 Azure 워크로드에 대한 보안 및 규정 준수 정책을 관리하는 데 사용되고 있습니다. '
+Content: >-
+  <p>Azure Security Benchmark v1은 <a href="https://www.microsoft.com/security/blog/2020/01/23/azure-security-benchmark-90-security-compliance-best-practices-azure-workloads/" target="_blank">2020</a>&nbsp;년 1월에 릴리스되었으며 조직에서 Azure 워크로드에 대한 보안 및 규정 준수 정책을 관리하는 데 사용되고 있습니다. 이제 Azure Security Center의 Azure 환경에서 벤치마크 준수를 추적하고 모니터링할 수 있다는 것을 공유하게 되어 기쁘게 생각합니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/security/benchmarks/" target="_blank">Azure Security Benchmarkis</a>&nbsp;는 Azure에서 모든 워크로드의 전반적인 보안 및 규정 준수를 높이기 위해 사용할 수 있는 90개 이상의 보안 모범 사례 권장 사항 모음입니다. Azure Security Benchmark는 일반적인 규정 준수 프레임워크 및 표준을 기반으로 하지만 클라우드 배포 및 특히 Azure 워크로드에 맞게 조정됩니다. 벤치마크는 이러한 공통 컨트롤이 Azure에 적용되는 방식과 이러한 요구 사항을 충족하기 위해 Azure에서 구현해야 하는 사항에 대한 구체적인 지침을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ec2a03a3-5cd0-4c98-9db5-52493391d883.png"><img alt="ASB1" border="0" height="585" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/30bc3551-6fce-45c3-b483-544e13e28921.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a></p>
+
+
+  <p>이제 Azure 용어의 기본 규정 준수 프레임워크 요구 사항을 이해할 수 있으며, 배포된 Azure 워크로드가 언제든지 이러한 요구 사항을 충족하는 방법을 측정하고 추적할 수 있습니다.</p>
+
+
+  <p>Azure Security Center는 다양한 Azure 리소스 유형 및 워크로드에서 벤치마크 컨트롤 준수를 모니터링하기 위한 기본 제공 자동화를 제공합니다. Azure Security Center&nbsp;는 컨트롤 준수를 측정할 뿐만 아니라 비준수 리소스를 수정하고 요구 사항을 충족하는 방법에 대한 실행 가능한 권장 사항도 제공합니다. 벤치마크 지침 및 권장 사항은 각 Azure 서비스에 대해 컨텍스트화되므로 적극적으로 사용하는 Azure 서비스에 대한 컨트롤을 보다 쉽게 구현할 수 있습니다.</p>
+
+
+  <p>벤치마크는 Azure Security CenterRegulatory&nbsp; 준수 대시보드를 사용하여 모니터링할 수 있습니다. <a href="https://docs.microsoft.com/azure/security-center/security-center-compliance-dashboard" target="_blank">Azure Security Centercompliance&nbsp; 대시보드</a>를 사용하면 NIST 800-53, Azure CIS, PCI-DSS 및 ISO 27001과 같은 업계 기반의 일반적인 규정 준수 프레임워크를 추적하고 모니터링할 수 있습니다. 이 대시보드에서 벤치마크를 모니터링하려면 Azure Security Benchmark를 추적된 표준으로 온보딩해야 합니다. 온보딩하면 현재 배포된 Azure 환경이 벤치마크 컨트롤을 충족하는 방법을 명확하게 확인할 수 있습니다. 대시보드를 사용하여 벤치마크 요구 사항과 관련하여 Azure 리소스의 상태를 추적하고, 요약 보고서를 다운로드하고, Azure Security Centerremediation&nbsp; 지침 및 자동화를 사용하여 규정 준수 상태를 개선할 수 있습니다.</p>
+
+
+  <p>벤치마크를 Azure Security Center 규정 준수 대시보드에 온보딩하려면 <a href="https://docs.microsoft.com/azure/security-center/update-regulatory-compliance-packages" target="_blank">준수 보기에 Azure Security Benchmark 이니셔티브 패키지를 추가</a> 해야 합니다. 그런 다음 대시보드를 보고 벤치마크 컨트롤을 사용하여 준수 상태 추적을 시작할 수 있습니다.</p>
+
+
+  <p>&nbsp;<a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/98ba578d-bb47-41f0-a3b4-15b0c2452d06.png"><img alt="The Azure Security Benchmark in the Azure Security Center compliance dashboard" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ca7dd684-6a60-4a09-88f6-6b6e2aa0bed8.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="921"></a></p>
+
+
+  <h2>Azure Security Benchmark의 적용 범위 늘리기</h2>
+
+
+  <p>Azure Security Benchmark 핵심 요구 사항은 모든 주요 Azure 서비스에서 이미 충족되고 있으며, 이러한 컨트롤은 현재 이 대시보드에서 모니터링하고 추적할 수 있습니다. 시간이 지남에 따라 Azure 서비스가 Azure Security Benchmark의 전체 보안 및 규정 준수 요구 사항 및 모니터링을 지원하는 추가 기능을 만들기 위해 노력함에 따라 적용 범위가 더욱 늘어나게 됩니다.<br>
+
+  다음은 보안 벤치마크를 구현하는 데 도움이 되는 추가 기능을 제공하는 Azure 서비스의 최근 몇 가지 예입니다.</p>
+
+
+  <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/security/benchmarks/security-control-data-protection#48-encrypt-sensitive-information-at-rest" target="_blank">미사용 정보 암호화</a>: 경우에 따라 사용자 고유의 암호화 키를 사용하여 데이터를 보호할 수 있습니다. Azure Cosmos DB 및 Azure Data Lake를 포함한 50개의 새로운 서비스는 이제 미사용 암호화를 위해 고객 관리형 키를 지원합니다.</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/security/benchmarks/security-control-network-security#11-protect-azure-resources-within-virtual-networks" target="_blank">가상 네트워크 내에서 Azure 리소스 보호</a>: Private Link를 사용하면 가상 네트워크의 프라이빗 엔드포인트를 통해 Azure 서비스에 안전하게 액세스할 수 있습니다. 이제 Azure Kubernetes Service 및 Azure Data Explorer를 포함한 13개의 새 서비스가 Private Link를 지원합니다.</li>
+  </ul>
+
+
+  <p>시간이 지남에 따라 컨트롤의 많은 부분이 지원되며 대시보드를 사용하여 모니터링할 수 있습니다.&nbsp;</p>
+
+
+  <h2>Azure 보안 벤치마크 및 보안 점수</h2>
+
+
+  <p>Azure Security Center의 <a href="https://docs.microsoft.com/azure/security-center/secure-score-security-controls" target="_blank">보안 점수</a>는 보안 상태를 추적하고 조직에 위험을 초래할 가능성이 가장 높은 작업의 우선 순위를 지정하여 보안을 효과적이고 효율적으로 개선하는 데 도움이 되는 측정값입니다. 보안 점수는 각 컨트롤이 특정 공격 표면을 반영하는 컨트롤 집합으로 구성됩니다. 각 컨트롤에는 취약성을 줄이고 보안을 개선하기 위한 일련의 보안 권장 사항과 함께 해당 공격 표면의 취약성을 나타내는 관련 점수(포인트 수)가 있습니다. 모든 컨트롤에 대한 누적 점수는 보안 상태를 나타내는 단일 KPI 측정값인 전체 보안 점수를 계산하는 데 사용됩니다.</p>
+
+
+  <p>보안 점수에 규정된 기본 보안 권장 사항은 Azure Security Benchmark 컨트롤과 연결된 권장 사항과 동일합니다. 이러한 작업은 궁극적으로 Azure 보안 태세를 극대화하는 공통의 목적을 제공하는 동일한 작업 집합으로 구성됩니다. 보안 점수는 이러한 각 권장 사항에 위협 분석, 위험 및 취약성의 추가 차원을 추가하므로 환경의 위험을 줄이는 가장 중요한 요인에 따라 작업의 우선 순위를 지정하는 데 도움이 됩니다. 그런 다음, 벤치마크는 이러한 보안 설정 및 요소가 규정 준수 프레임워크 요구 사항에 어떻게 적용되는지 보여 줍니다. 또한 규정 준수에 중점을 두지만 보안 위험에 직접적인 영향을 미치지 않는&rsquo; 몇 가지 추가 요구 사항을 추가합니다.<br>
+
+  <a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/686fff21-677b-47e1-bf19-d468656c7f9e.png"><img alt="Synergy between Secure Score and the Azure Security Benchmark." border="0" height="615" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5e108251-d409-4b6d-97ed-955d7db0458f.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="" width="1024"></a>&nbsp;</p>
+
+
+  <p>Azure Secure Score 뷰를 사용하여 우선 순위가 가장 높은 권장 사항으로 시작하는 잘못된 구성을 해결하는 것이 좋습니다.&nbsp; Azure Security Benchmark 보기는 규정 준수를 이해하는 데 유용하며 점수 영향보다는 컨트롤별로 정렬됩니다.</p>
+
+
+  <h2>요약 및 다음 단계</h2>
+
+
+  <p><a href="https://microsoft.sharepoint.com/teams/SecurityControlBaseline/Shared Documents/General/Customer_Communications/aka.ms/azuresecuritycenter" target="_blank">Azure Security Center의 Azure Security</a> Benchmark 규정 준수 대시보드를 사용하면 Azure에서 규정 준수 상태를 지속적으로 추적하고 규정 준수 요구 사항에 대한 Azure 워크로드&rsquo; 준수를 개선할 수 있습니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/azure/security/benchmarks/" target="_blank">Azure Security Benchmark</a>에 대해 알아보고 <a href="https://docs.microsoft.com/azure/security-center/security-center-compliance-dashboard" target="_blank">벤치마크를 Security Center 규정 준수 대시보드</a><a href="https://docs.microsoft.com/azure/security-center/update-regulatory-compliance-packages" target="_blank">에 온보딩하여</a> 지금 시작하세요.</p>
+
+
+  <p>벤치 마크 컨트롤에 대한 추가 자동화 및 향상된 적용 범위뿐만 아니라 규정 준수 컨트롤 및 추가 보고서 유형을 관리하는 확장 된 기능으로 향후 대시보드 릴리스를 기대할 수 있습니다.</p>
+
+
+  <p>귀하의 의견을 듣고 싶습니다. 이 링크를 사용하여 <a href="mailto:benchmarkfeedback@microsoft.com?subject=Feedback%252520on%252520the%252520Azure%252520Cloud%252520Security%252520Benchmark">전자 메일을 보낼</a> 수 있습니다.</p>

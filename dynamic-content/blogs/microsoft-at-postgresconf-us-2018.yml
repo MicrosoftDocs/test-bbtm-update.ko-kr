@@ -1,0 +1,52 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d4f1e3b935bca8e33845f5cd83917bcdd47c1013
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912774"
+Slug: microsoft-at-postgresconf-us-2018
+Title: Microsoft at PostgresConf US 2018
+Summary: Microsoft의 접근 방식은 고객의 의견을 경청하고 문제를 해결하는 데 도움이 되는 솔루션과 도구를 제공하는 것입니다. 그것은 우리가 하는 모든 일의 핵심입니다. 그것은 같은 수신 대기 프로세스입니다 ...
+Content: >-
+  <p>Microsoft의 접근 방식은 고객의 의견을 경청하고 문제를 해결하는 데 도움이 되는 솔루션과 도구를 제공하는 것입니다. 그것은 우리가 하는 모든 일의 핵심입니다. PostgreSQL로 전환한 것과 동일한 수신 대기 프로세스이며, 몇 년 전 Azure에서 완전히 관리되는 데이터베이스 서비스로 PostgreSQL을 도입하기 위한 여정을 시작했습니다. 최근에 <a href="https://azure.microsoft.com/en-us/services/postgresql/" target="_blank">Azure Database for PostgreSQL</a>의 일반 공급이 <a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-azure-database-services-for-mysql-and-postgresql/" target="_blank">발표되었을</a> 때 이 여정에 대한 중요한 이정표에 도달했습니다.</p>
+
+
+  <p>커뮤니티 및 고객 이벤트에 참석하는 것은 항상 저에게 &ndash;&rsquo;특별하며 업계의 주요 마인드 중 일부와 소통하고 배울 수있는 기회입니다. <a href="https://postgresconf.org/" target="_blank">PostgresConf US 2018</a> 은 Postgres 커뮤니티로부터 얼마나 많은 지원을 받았는지를 감안할 때 더욱 특별하며, 이 행사에서 커뮤니티 리더, 고객 및 파트너를 만날 수 있기를 기대합니다. Ill&rsquo;은 또한 내 동료의 몇 가지에 의해 가입, 당신은 마이크로 소프트 부스에서 우리를 찾을 수 있지만, 당신은 또한 Sunil Kamath에 의해 제품 심층 다이빙 세션과 마크 볼츠에 의해 GDPR 세션에 참석 할 수 있습니다.</p>
+
+
+  <p>컨퍼런스의 기조 연설에서 Ill&rsquo;은 Azure Database for PostgreSQL의 일반 공급으로 이어지는 몇 가지 학습을 공유합니다. 우리가 시작했을 때를 되돌아보면 PostgreSQL은 우리에게 매우 새로운 것이었기 때문에 무엇보다도 우리는 Postgres와 주변 생태계를 이해하기 위해 커뮤니티와 깊이 협력했습니다. 또한 미리 보기를 통해 고객과 긴밀하게 협력하여 문제를 차단 해제하고 중요한 사항의 우선 순위를 지정했습니다. 미리 보기 기간 동안 배운 내용을 증류하는 경우 강조할 네 가지 주요 영역이 있습니다.</p>
+
+
+  <p>첫째, 고객은 기본 사항, 온-프레미스 및 클라우드에 관심을 가지며 데이터베이스 엔진의 고객은 비슷한 요구 사항을 가지고 있습니다. 복원력, 내결함성, 가용성, 탄력적 성능 및 규모 문제는 매우 중요합니다. 따라서 고객은 완전 관리형 데이터베이스 서비스를 사용할 때 자동 업데이트 및 패치 및 기타 이점을 얻을 수 있지만 기본 사항도 플랫폼에 기본 제공되도록 했습니다. 예를 들어 고객이 Azure Database for PostgreSQL을 선택하면 추가 비용 없이 기본 제공 고가용성이 제공됩니다. 이는 업계 최고의 SLA인 99.99%의 지원도 받고 있습니다.</p>
+
+
+  <p>둘째, 고객 및 CIO와의 많은 대화에서 가장 중요하지는 않더라도 지속적으로 제공되는 주제는 보안 및 규정 준수입니다. 여기서도 기본 사항과 마찬가지로 고객이 보장되도록 기본 제공 보안을 보장합니다. 예를 들어 미사용 데이터와 이동 중인 데이터는 기본적으로 Azure Database for PostgreSQL의 TLS1.2 표준을 사용하여 암호화됩니다. 또한 일반 공급으로 전환하여 ISO, SOC, PCI, HIPAA 및 GDPR과 같은 글로벌 및 로컬 인증도 보장했습니다.</p>
+
+
+  <p>셋째, 개발자는 앱 요구 사항에 따라 기술을 선택하고 앱 스택에 따라 다른 데이터베이스 엔진을 선택할 수 있음을 이해합니다. 동시에 의미 있는 방식으로 모든 데이터를 사용하려고 합니다. 따라서&rsquo; 고객이 엔드투엔드 솔루션을 만들 수 있도록 Azure Database for PostgreSQL이 컨테이너, App Service 및 Power BI 같은 다른 Azure 제품과 통합되도록 보장합니다. Well&rsquo;은 고객이 다른 Microsoft 제품 및 도구와 함께 PostgreSQL을 더 쉽게 사용할 수 있도록 계속합니다.</p>
+
+
+  <p>마지막으로, 고객이 데이터베이스뿐만 아니라 호스팅되는 클라우드 플랫폼에 대해서도 주요 선택을 하고 있다는 것을&rsquo; 알게 되었습니다. 고객은 디지털 변환 과정에서 파트너로 작업할 수 있는 클라우드 공급업체를 찾고 있습니다. Microsoft Azure 고객이 선택한 스택, 하이브리드 솔루션 및 Azure Databricks, Azure SQL Data Warehouse 및 Cognitive API와 같은 다양한 지능형 솔루션 집합을 지원하는 클라우드 플랫폼을 구축하는 데 투자했습니다. 다른 클라우드 공급업체 및 업계 최고의 보안 및 규정 준수 제품보다 더 많은 퍼블릭 클라우드 지역을 사용하는 경우 전 세계 고객은 Azure를 신뢰할 수 있는 파트너로 선택할 수 있습니다.</p>
+
+
+  <p>Im&rsquo;은 이번 주 컨퍼런스에서 여러분 중 일부를 만날 때 기조 연설 기간 동안 그리고 직접 더 많은 것을 공유하기를 기대합니다.</p>
+
+
+  <h2>PostgresConf US 2018에서 확인하세요!</h2>
+
+
+  <ul>
+      <li>Microsoft 기조연설: <a href="https://postgresconf.org/conferences/2018/program/proposals/microsoft-keynote" target="_blank">2018년 4월 19일 오후 3:40 동부 표준시(로한 쿠마르)</a></li>
+      <li>Azure Database for PostgreSQL 심층 분석 세션: <a href="https://postgresconf.org/conferences/2018/program/proposals/combine-the-power-of-community-postgresql-and-microsoft-azure-to-migrate-existing-or-build-new-apps" target="_blank">2018년 4월 20일 오후 12:50 동부 시간(Sunil Kamath)</a></li>
+      <li>GDPR(일반 데이터 보호 규정) 세션: <a href="https://postgresconf.org/conferences/2018/program/proposals/general-data-protection-regulation-gdpr-with-azure-postgresql" target="_blank">2018년 4월 18일 오후 4:30 동부 표준시(Mark Bolz)</a></li>
+  </ul>
+
+
+  <h3>리소스</h3>
+
+
+  <p>Azure Database for PostgreSQL을 사용해 보려는 경우&rsquo; <a href="https://azure.microsoft.com/en-us/free/" target="_blank">무료 Azure 계정을</a> <a href="https://azure.microsoft.com/en-us/services/postgresql/" target="_blank">시작</a>하거나 등록할 수 있습니다.</p>
+
+
+  <p>사용자 의견 <a href="https://feedback.azure.com/forums/597976-azure-database-for-postgresql" target="_blank">PostgreSQL</a>을 통해 어떻게 생각하는지 알려주세요!</p>

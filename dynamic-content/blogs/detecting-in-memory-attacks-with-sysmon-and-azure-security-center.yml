@@ -1,0 +1,212 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 09304747996afaa019aa471c591ce3fa0fa4ac2f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912995"
+Slug: detecting-in-memory-attacks-with-sysmon-and-azure-security-center
+Title: Sysmon 및 Azure Security Center를 사용하여 메모리 내 공격 감지
+Summary: 메모리 내 공격이 증가하고 있으며 점점 더 많은 관심을 끌고 있습니다. 이 게시물에서는 두 가지 메모리 내 공격 기술을 설명하고 Sysmon 및 Azure Security Center를 사용하여 이를 검색하는 방법을 보여 줍니다.
+Content: >-
+  <p>메모리 내 공격은 증가하고 있으며, 예를 들어 이러한 게시물에서 <a href="https://www.scmagazineuk.com/sentinelone-in-memory-attacks-loom-large-leave-little-trace/article/652960/" target="_blank">SentinelOne: 메모리 공격이 크게 발생하고, 추적을 거의 남기지 않고, 메모리</a><a href="https://www.endgame.com/blog/technical-blog/hunting-memory" target="_blank">에서 헌팅</a>하고, <a href="https://www.endgame.com/blog/technical-blog/hunting-memory-net-attacks" target="_blank">메모리 내 .NET 공격에 대한 헌팅</a>을 보고함에 따라 점점 더 많은 관심을 끌고 있습니다.</p>
+
+
+  <p>이러한 공격에는 공격자가 많은 맬웨어 감염에서 발견되는 기존의 트로이 목마 또는 임플란트와 같이 디스크 &ndash; 에 파일을 쓰는 대신 완전히 메모리 내 악성 활동을 수행하는 작업이 포함됩니다. 해커가 소프트웨어를 &quot;<a href="https://www.csoonline.com/article/3227046/malware/what-is-a-fileless-attack-how-hackers-invade-systems-without-installing-software.html" target="_blank">설치하지 않고 시스템을 침범하는 방법</a>이라는 CSO &quot; 문서는 좋은 개요를 제공합니다.</p>
+
+
+  <p>메모리 내 공격은 대부분의 표준 운영 체제 이벤트 로그에서 공간을 거의 또는 전혀 남기지 않으므로 검색이 어려울 수 있습니다. 많은 바이러스 백신 솔루션이 일정 수준의 메모리 내 보호를 지원하지만 디스크 &ndash; 의 악성 파일에서 위협을 감지하는 데 가장 효과적인 경우가 많으며 메모리 내 시나리오에는 없는 경우가 많습니다.</p>
+
+
+  <p>이 게시물에서는 두 가지 메모리 내 공격 기술을 설명하고 Sysmon 및 Azure Security Center를 사용하여 이를 검색하는 방법을 보여 줍니다.</p>
+
+
+  <h2>공격</h2>
+
+
+  <p>이 예제의 공격자 전략은 다음과 같습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7c8dbbe6-55a1-4620-8537-3d6a39302a75.png"><img alt="the-attack" border="0" height="186" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c942b6b6-3c40-4e82-9315-3f97824e201d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="the-attack" width="640"></a> 이 공격 체인의 처음 두 단계는 메모리 내 기술을 포함합니다.</p>
+
+
+  <h3>초기 손상 &ndash; 프로세스 주입</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/88821d14-7270-4316-b67c-bdf1013fe955.png"><img alt="office" border="0" height="433" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/40cd871f-93ad-4bca-bf3f-de76613cb080.png" style="margin: 0px auto; border: 0px currentcolor; border-image: none; float: none; display: block; background-image: none;" title="사무실" width="539"></a></p>
+
+
+  <p>피해자는 전자 메일을 통해 전달된 Microsoft Office Word 문서에서 매크로를 사용하도록 속입니다.</p>
+
+
+  <p>#Hancitor는 매크로를 사용하여 verclsid.exe 삽입하는 위협 &ndash; 의 예입니다. 악성 코드는 verclsid.exe 프로세스 공간에 직접 복사되므로 디스크에 닿지 않습니다. verclsid.exe 신뢰할 수 있는 Windows 프로세스이므로 침입 감지 제품에 의해 활동이 차단되지 않을 수 있습니다.</p>
+
+
+  <h3>향후 검색 &ndash; 프로세스 간섭 회피</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/efac326f-06b2-4073-9bba-e1b7a7a16caa.png"><img alt="Phantom" border="0" height="407" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/65a3cbbb-4127-4416-9b35-908648860282.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="팬텀" width="568"></a></p>
+
+
+  <p>공격자는 피해자 컴퓨터에서 발판을 마련한 후 신속하게 조치를 취하여 향후 탐지 가능성을 제한합니다.</p>
+
+
+  <p><code><a href="https://artofpwn.com/phant0m-killing-windows-event-log.html" target="_blank">Invoke-Phant0m</a></code>는 프로세스 간 Windows API 호출을 사용하여 Windows 이벤트 로그 서비스와 연결된 스레드를 찾고 종료합니다. 서비스는 여전히 실행 중인 &ndash; 것처럼 보이지만 더 이상 이벤트 로그에 이벤트를 기록하지 않습니다.</p>
+
+
+  <p>이제 공격자는 다른 작업을 자유롭게 수행할 수 있으며, 대부분의 활동이 기록되지 않는다는&rsquo; 사실을 알면 안전합니다.</p>
+
+
+  <h2>Sysmon 및 Azure Security Center를 사용하여 메모리 내 공격 감지</h2>
+
+
+  <p>Security Center에서 Sysmon 이벤트를 수집하고 분석하면 위와 같은 공격을 감지할 수 있습니다. 이러한 검색을 사용하도록 설정하려면 다음을 수행해야 합니다.</p>
+
+
+  <ol>
+   <li>클라우드 및 온-프레미스 머신에 Sysmon 설치</li>
+   <li>Log Analytics 작업 영역에서 Sysmon 이벤트 데이터 수집</li>
+   <li>
+   <div align="left">Security Center에서 사용자 지정 경고를 정의하여 의심스러운 Sysmon 이벤트 검색</div>
+   </li>
+  </ol>
+
+
+  <h3>Sysmon 설치 및 구성</h3>
+
+
+  <p>설명된 두 공격 기술에는 한 프로세스가 다른 프로세스&rsquo; 메모리에 액세스하는 작업이 포함됩니다. 이 기본 작업은 항상 일반 OS 작업의 일부로 발생하지만 여기에 관련된 액세스의 종류는 메모리가 수정되는 대상 프로세스(verclsid.exe 및 svchost.exe)와 마찬가지로 비정상적입니다(일반적인 읽기 권한이 아닌 쓰기 권한).</p>
+
+
+  <p>Sysmon은 이러한 프로세스 액세스를 매우 구성 가능한 방식으로 기록할 수 있습니다. <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon" target="_blank">설명서</a>에서 다운로드하여 설치할 수 있습니다. Sysmon 구성은 로깅의 수준 및 볼륨을 결정할 때 핵심입니다.</p>
+
+
+  <p>원하는 &ndash; 정확한 구성은 고객에게 OS 기본값을 초과하는 매우 세분화된 로깅 수준을 선택할 수 있는 유연성을 고객에게 제공하는 것입니다. 권장되는 기본 Sysmon 구성 &ndash; <a href="https://twitter.com/SwiftOnSecurity" target="_blank">@SwiftOnSecurity</a> 이 있는 온라인 리소스가 <a href="https://github.com/SwiftOnSecurity/sysmon-config" target="_blank">GitHub</a> 좋은 예제를 게시했습니다.</p>
+
+
+  <p>다음 구성은 특정 프로세스에 대한 권한 있는 수준의 메모리 액세스만 기록합니다. 이는 일반적으로 매우 낮은 볼륨이며, Sysmon 이벤트는 공격자 활동의 경우에만 기록됩니다.</p>
+
+
+  <pre style="margin-left: 0.5in;">
+
+  exampleSysmonConfig.xml:
+
+  &lt;Sysmon schemaversion=&quot;3.30&quot;&gt;
+
+  &lt;EventFiltering&gt;
+    &lt;!-- Restrict logging to access targeting svchost.exe and verclsid.exe --&gt;
+    &lt;ProcessAccess onmatch=&quot;exclude&quot;&gt;
+      &lt;TargetImage condition=&quot;excludes&quot;&gt;verclsid.exe&lt;/TargetImage&gt;
+      &lt;TargetImage condition=&quot;excludes&quot;&gt;svchost.exe&lt;/TargetImage&gt;
+    &lt;/ProcessAccess&gt;
+    &lt;!-- Process access requests with suspect privileged access,
+         or call trace indicative of unknown modules --&gt;
+       &lt;ProcessAccess onmatch=&quot;include&quot;&gt;
+           &lt;GrantedAccess condition=&quot;is&quot;&gt;0x1F0FFF&lt;/GrantedAccess&gt;
+           &lt;GrantedAccess condition=&quot;is&quot;&gt;0x1F1FFF&lt;/GrantedAccess&gt;
+           &lt;GrantedAccess condition=&quot;is&quot;&gt;0x1F2FFF&lt;/GrantedAccess&gt;
+           &lt;GrantedAccess condition=&quot;is&quot;&gt;0x1F3FFF&lt;/GrantedAccess&gt;
+               ...
+           &lt;GrantedAccess condition=&quot;is&quot;&gt;0x1FFFFF&lt;/GrantedAccess&gt;
+           &lt;CallTrace condition=&quot;contains&quot;&gt;unknown&lt;/CallTrace&gt;
+       &lt;/ProcessAccess&gt;
+  &lt;/EventFiltering&gt;
+
+  &lt;/Sysmon&gt;</pre>
+
+
+  <p>설치는 다음을 통해 수행됩니다.</p>
+
+
+  <p><code>sysmon.exe -i exampleSysmonConfig.xml</code></p>
+
+
+  <p>또는: <code>sysmon64.exe -i exampleSysmonConfig.xml</code> (64비트 버전의 경우)</p>
+
+
+  <p>위의 공격이 실행되면 Sysmon은 다음과 같은 형식 10 &lsquo;ProcessAccess&rsquo; 이벤트를 기록합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/795bfbb1-559a-4c2d-8178-e42c33f3a04a.png"><img alt="information" border="0" height="32" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/85584508-356a-4505-9506-2be56e1e8d3c.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="정보" width="640"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7cacd7c8-cb54-4ad5-8cf0-77c2f1ba3257.png"><img alt="sysmon" border="0" height="269" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a5b0a193-08b8-42cd-9681-d4758b41cb26.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Sysmon" width="640"></a></p>
+
+
+  <h3>Sysmon 이벤트 데이터 수집 사용</h3>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/37c27580-6025-4598-9458-b6b1220d9a51.jpg"><img alt="Log Analytics" border="0" height="480" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5551b135-60a8-484d-887d-9f75a18e27c0.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Log Analytics" width="604"></a></p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-enable-data-collection" target="_blank">Azure Security Center는 위협을 모니터링할 특정 이벤트 집합을 수집</a>합니다. Sysmon &ndash; 이벤트 &ndash; 와 같은 추가 데이터 원본 컬렉션은 Azure Portal에서 구성할 수 있습니다. Log Analytics 작업 영역을 열고 고급 설정 선택합니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-data-sources" target="_blank">로그 분석의 데이터 원본은 분석을</a> 위해 다양한 유형의 데이터를 가져오는 방법에 대한 세부 정보를 제공합니다. 이벤트 데이터를 Windows 경우 아래와 같이 이벤트 로그의 경로를 지정하기만 하면됩니다. Sysmon 이벤트 컬렉션의 경우 다음을 추가하기만 하면 됩니다.</p>
+
+
+  <p><code>Microsoft-Windows-Sysmon/Operational:</code></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e743f254-0ae7-4203-89fb-e33425b908f9.png"><img alt="advanced-settings" border="0" height="131" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cc977dc5-dd55-473d-8c29-203aa6ed58c3.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="고급 설정" width="640"></a></p>
+
+
+  <p>이제 Microsoft Monitoring Agent 이 작업 영역에 연결된 모든 컴퓨터에 대한 Sysmon 이벤트를 수집합니다. 이 데이터를 기반으로 몇 가지 경고를 적용하기만 하면 됩니다.</p>
+
+
+  <h3>Azure Security Center에서 사용자 지정 경고 정의</h3>
+
+
+  <h3><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/519c177b-54cc-4728-a4e3-e0c79f68035d.jpg"><img alt="Create custom alert rule" border="0" height="463" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/296c893e-a35a-449a-9a04-e52ae566b87a.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="사용자 지정 경고 규칙 만들기" width="532"></a></h3>
+
+
+  <p>위의 예제 Sysmon 구성에서 기록된 이벤트만 악의적일 가능성이 큽니다. 따라서 수집된 모든 ProcessAccess 이벤트에 대해 경고할 수 있습니다.</p>
+
+
+  <p>Azure Portal에서 Security Center를 열고, 고객 경고 및 새 사용자 지정 경고 규칙을 선택하고, 경고 세부 정보를 지정하고, 유형 10 Sysmon 이벤트에 대해 다음 쿼리를 사용합니다.</p>
+
+
+  <p><code>search &quot;Microsoft-Windows-Sysmon/Operational&quot; | where EventID==10</code></p>
+
+
+  <h3>Security Center에서 경고 보기</h3>
+
+
+  <p>이제 첫 번째 섹션의 공격이 검색되고 Azure Security Center에서 발생하는 결과 경고와 다른 기본 제공 경고가 함께 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/efd8ef7e-bfaa-402d-81b2-4b019c89419d.png"><img alt="alerts-security-center" border="0" height="82" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/45cf5cb0-0e63-469c-b8ff-bddec9d181d0.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="alerts-security-center" width="640"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/54602099-c93e-45e0-b8f3-dc16890dc477.png"><img alt="suspect-process" border="0" height="248" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e0c0aaf6-cb95-4ffe-8612-4305b9e8a14f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="suspect-process" width="640"></a></p>
+
+
+  <h3>보다 세부적인 경고 쿼리 구체화 &ndash;</h3>
+
+
+  <p>수집된 모든 이벤트에 대해 경고하는 대신 Sysmon 이벤트의 특정 기준에 따라 경고를 만들 수 있습니다. <a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-custom-fields" target="_blank">사용자 지정 필드를</a> 만든 다음 이러한 필드의 쿼리를 기반으로 경고 규칙을 정의하여 이 작업을 수행할 수 있습니다.</p>
+
+
+  <h2>요약</h2>
+
+
+  <p>이 게시물에서는 Sysmon을 사용하여 여러 메모리 내 공격을 감지하는 방법을 설명하고, Azure 가상 머신 또는 온-프레미스 머신에 대해 이 데이터에 기반한 경고를 배치하고 Azure Security Center &ndash; 에 표시하는 방법을 보여 줍니다.</p>
+
+
+  <p>행복한 사냥!</p>
+
+
+  <h2>추가 정보</h2>
+
+
+  <ul>
+   <li><a href="https://artofpwn.com/phant0m-killing-windows-event-log.html" target="_blank">Phant0m: Windows 이벤트 로그를 종료합니다.</a> &ndash; 2017년 5월 6일</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-enable-data-collection" target="_blank">Azure Security Center</a> -&nbsp;의 데이터 수집 Microsoft Azure 설명서, 2017년 9월 11일</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-data-sources" target="_blank">로그 분석</a> &ndash; 의 데이터 원본 Microsoft Azure 설명서, 2017년 5월 23일</li>
+   <li><a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-custom-alert" target="_blank">Azure Security Center의 사용자 지정 경고 규칙(미리 보기)</a> &ndash; Microsoft Azure 설명서, 2017년 9월 18일</li>
+   <li>Microsoft Azure Security Center &ndash; <a href="https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3201" target="_blank">를 사용하여 하이브리드 클라우드 보호 간소화</a> 사라 펜더, 마이탈 Taran-Gutman &ndash; Ignite 2017</li>
+   <li><a href="https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon" target="_blank">시스템 모니터(Sysmon)</a> &ndash; 마크 루시노비치와 토마스 가르니에</li>
+   <li>Sysmon(및 Splunk) &ndash; Tom Ueltschi를 사용한 고급 인시던트 감지 및 위협 헌팅, 스위스 포스트 CERT, FIRST2017에서 발표</li>
+   <li>다음 단계로 &ndash; <a href="https://www.crypsisgroup.com/wp-content/uploads/2017/07/CG_WhitePaper_Splunkmon_1216-1.pdf" target="_blank">시몬스를 복용 스플렁크몬 &ndash;</a> 알렉 란다조, 토마스 네이로, 제임스 에스피노사, 크립시스</li>
+   <li><a href="https://www.eideon.com/2017-09-09-THL01-Mimikatz/" target="_blank">위협 사냥꾼의 이야기 1</a> &ndash; 아이데온, 2017년 9월 9일</li>
+  </ul>

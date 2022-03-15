@@ -1,0 +1,39 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 36eabe3109c484472f696755be7cdf35f1fef2aa
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897501"
+Slug: announcing-the-general-availability-of-azure-files-share-snapshot
+Title: Azure Files 공유 스냅샷의 일반 공급 발표
+Summary: '고객이 Azure 파일 공유에 대한 기본 스냅샷 기능을 경험하는 것을 보면서 Azure Files 공유 스냅샷의 공개 미리 보기를 발표한 이후 지난 몇 달 동안 흥미로웠습니다. 오늘, 모든 Azure 클라우드에서 Azure Files 공유 스냅샷의 일반 공급에 대해 발표하게 되어 기쁩니다. '
+Content: >-
+  <p>고객이 Azure 파일 공유에 대한 기본 스냅샷 기능을 경험하는 것을 보면서 <a href="https://azure.microsoft.com/en-us/blog/announcing-azure-files-share-snapshots-public-preview/" target="_blank">Azure Files 공유 스냅샷의 공개 미리 보기를</a> 발표한 이후 지난 몇 달 동안 흥미로웠습니다. 오늘, 모든 Azure 클라우드에서 <a href="https://docs.microsoft.com/en-us/azure/storage/files/storage-snapshots-files" target="_blank">Azure Files 공유 스냅샷</a> 의 일반 공급에 대해 발표하게 되어 기쁩니다. 공유 스냅샷은 <a href="https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction" target="_blank">Azure Files</a>에서 SMB(서버 메시지 블록) 공유를 증분 백업하는 방법을 제공합니다. Storage 관리자는 스냅샷을 직접 사용할 수 있으며 백업 공급자는 이제 이 기능을 활용하여 Azure Files 백업 및 복원 기능을 제품에 통합할 수 있습니다.</p>
+
+
+  <h2>주요 가치 제안</h2>
+
+
+  <p><strong>증분 및 빠른 <strong>&ndash;</strong> </strong> 기본 데이터에 대한 변경 내용만 스냅샷에 저장됩니다. 기본 공유에서 데이터를 사용할 수 있는 경우 스냅샷에는 중복되지 않습니다. 스냅샷을 만든 후에 아무 것도 변경되지 않으면 스냅샷의 크기는 0으로 유지됩니다. 첫 번째 스냅샷의 경우에도 마찬가지입니다. 즉, 데이터를 복제하지 않습니다. 이렇게 하면 스냅샷 시간, 공간 및 비용 효율적입니다. 또한 스냅샷을 만드는 데 필요한 시간을 최소화합니다. 공유의 스냅샷을 즉시 만들 수 있습니다. 공유 수준에서 스냅샷을 만들 수 있지만 개별 파일을 복원할 수 있습니다. 항목 수준에서 복원할 수 있으면 복구가 빠르고 비용 효율적입니다.</p>
+
+
+  <p><strong>친숙한 환경 &ndash;</strong> Windows, Azure Portal, 스토리지 탐색기, Storage SDK 및 REST API의 이전 버전을&rdquo; 포함하여 &ldquo;스냅샷에서 데이터를 찾아보고 복원하는 방법에는 여러 가지가 있습니다. 스냅샷이 만들어지면 Windows 탐색기에서 이전 버전을 모두 볼 수 있습니다. 즐겨 찾는 diff 유틸리티를 사용하여 Windows 파일 버전 간의 변경 내용을 볼 수도 있습니다. Azure는 즉각적인 파일 공유 스냅샷 만들기, 네이티브 VSS(볼륨 섀도 복사본 서비스)를 사용한 스냅샷 검색, Windows 탐색기 환경과 같은 스냅샷 검색, Windows 탐색기에서 복원 등의 기능을 사용하도록 설정하는 최초의 퍼블릭 클라우드 공급자입니다. 또한 Azure Portal 및 스토리지 탐색기에서 공유 스냅샷에 대한 지원을 추가하여 Windows, Linux 및 macOS에서 UI 환경을 사용할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/edc21a7d-e3db-4e43-9575-5e3310811c3c.jpg"><img alt="blogimg" border="0" height="385" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fdea3163-8d14-4b2d-955d-d23c67840c1b.jpg" style="border: 0px currentColor; border-image: none; padding-top: 0px; padding-right: 0px; padding-left: 0px; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="blogimg" width="1024"></a></p>
+
+
+  <p><strong>백업 통합 &ndash;</strong> Azure Files는 클라우드 파일 공유에서 태어난 진정한 파일이며 기본적으로 REST API를 지원하여 도구 및 스크립팅의 유연성을 높일 수 있습니다. 이제 백업 공급자는 REST API를 활용하여 진정한 네이티브 백업 스토리를 제공할 수 있습니다. 예를 들어 며칠 전 Azure Backup <a href="https://azure.microsoft.com/en-us/blog/introducing-backup-for-azure-file-shares/" target="_blank">은 Azure Files에 대한 미리 보기 지원을 발표했습니다</a>. <a href="https://aka.ms/afs" target="_blank">Azure 파일 동기화</a> 고객은 이제 Azure Backup을 사용하여 클라우드에서 파일 공유를 보호할 수도 있습니다. 네이티브 Windows 통합 외에도 Azure Powershell, .Net, Python, Node 및 Java SDK에 스냅샷에 대한 지원이 추가되었습니다. 스냅샷에서 데이터를 스크립팅하거나 프로그래밍 방식으로 액세스하는 데 사용할 수 있습니다.</p>
+
+
+  <h2>결론 및 다음 단계</h2>
+
+
+  <p>공유 스냅샷에서 사용하는 용량은 <a href="https://azure.microsoft.com/en-us/pricing/details/storage/files/" target="_blank">데이터 스토리지 가격</a>과 동일한 요금으로 청구됩니다. 공개 미리 보기 동안 스냅샷으로 청구되는 용량은 청구되지 않았습니다. 앞으로 몇 주 안에 청구서에 이 항목이 표시될 예정입니다. 스냅샷은 본질적으로 증분이므로 이 변경은 최소화되어야 합니다.</p>
+
+
+  <p>Azure Files 공유 스냅샷이 클라우드 스토리지 관리 도구 키트에 추가되기를 바랍니다. 스냅샷에 대한 자세한 내용은 <a href="https://docs.microsoft.com/azure/storage/files/storage-snapshots-files" target="_blank">Azure 파일 공유 스냅샷 설명서를</a> 참조하세요.</p>
+
+
+  <p>Azure Files에 대한 질문이 있는 경우 아래에 의견을 남겨 주세요. 또한 기능 요청이 있는 경우 <a href="https://feedback.azure.com/forums/217298-storage/category/180670-files" target="_blank">항상 사용자 음성</a>에 대한 피드백을 수신 대기합니다.</p>

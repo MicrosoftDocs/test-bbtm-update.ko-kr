@@ -1,0 +1,46 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 8b8af631b618581612f0b1c9a025caba88308fda
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139902158"
+Slug: enabling-real-time-data-warehousing-with-azure-sql-data-warehouse
+Title: Azure SQL Data Warehouse를 사용하여 실시간 데이터 웨어하우징 사용
+Summary: SQL Data Warehouse는 이제 Striim이 Azure용 Striim의 대상으로 SQL Data Warehouse를 완전히 지원한다고 발표하게 되어 기쁩니다. Striim은 다양한 원본에서 모든 엔터프라이즈 데이터를 실시간으로 지속적으로 비침입성으로 수집할 수 있도록 합니다.
+Content: >-
+  <p>데이터에서 신속하게 인사이트를 얻는 것은 오늘날의&rsquo; 비즈니스 세계에서 경쟁력에 매우 중요합니다. <a href="https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is" target="_blank">Azure SQL Data Warehouse</a>(SQL DW) Microsoft&rsquo; 완전 관리형 분석 플랫폼은 MPP(대규모 병렬 처리)를 활용하여 모든 수준의 규모에서 복잡한 대화형 SQL 쿼리를 실행합니다.</p>
+
+
+  <p>오늘날 사용자는 하루 이상의 데이터 대기 시간에 작동하던 기존 분석 시스템에서 벗어나 몇 분 안에 데이터를 기대합니다. 더 빠른 데이터에 대한 요구 사항으로 사용자는 간단하고 빠르고 투명한 방식으로 원본 시스템에서 분석 저장소로 데이터를 이동하는 방법이 필요합니다. 최신 분석 전략을 제공하려면 사용자가 현재 정보에 대해 작업해야 합니다. 즉, 사용자는 엔터프라이즈 데이터에서 온-프레미스에서 클라우드로, 그리고 그 사이에 있는 모든 것을 지속적으로 이동할 수 있어야 합니다.</p>
+
+
+  <p>SQL Data Warehouse는 이제 Striim이 Azure용 Striim의 대상으로 SQL Data Warehouse를 완전히 지원한다고 발표하게 되어 기쁩니다. Striim은 다양한 원본에서 모든 엔터프라이즈 데이터를 실시간으로 지속적으로 비침입성으로 수집할 수 있도록 합니다. 즉, 사용자는 Oracle Exadata와 같은 원본에서 데이터 캡처를 SQL 데이터 웨어하우스로 바로 변경하기 위해 지능형 파이프라인을 사용할 수 있습니다. 또한 Striim을 사용하여 Azure Databricks를 사용한 실시간 변환 및 모델 기반 채점과 같은 고급 기능을 사용하여 데이터 레이크의 빠르게 움직이는 데이터 랜딩을 SQL Data Warehouse로 이동할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/edf862bd-309a-4834-ad52-e1b24333157b.png"><img alt="striim_Final_Logo_rgb_lightbg_header" height="92" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/799cad3b-5e8a-47fb-a8cf-f98deac94af3.png" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="striim_Final_Logo_rgb_lightbg_header" width="240"></a></p>
+
+
+  <blockquote>
+
+  <p><em>&quot;클라우드 기반 분석을 채택하는 기업은 일괄 처리 기반 분석에 내재된 의사 결정 대기 시간을 줄이기 위해 온-프레미스 및 클라우드 기반 데이터 원본에서 안정적이고 실시간이며 지속적인 데이터 배달을 보장해야 합니다. SQL Data Warehouse에 대한 Striim&#39;솔루션은 Azure Marketplace에서 제공되며 고객이 트랜잭션 시스템 또는 Kafka에서 SQL Data Warehouse로 실시간 데이터를 빠르게 수집, 변환 및 마스크하여 운영 및 분석 워크로드를 모두 지원할 수 있도록 지원할 수 있습니다&quot;.</em>&nbsp;</p>
+
+
+  <p align="right">&ndash; 알록 파렉, 스트리임 제품의 설립자이자 EVP.</p>
+
+  </blockquote>
+
+
+  <p>Striim은 Azure SQL Data Warehouse에 전달하기 전에 비정규화를 비롯한 인라인 변환을 통해 온-프레미스 ETL 워크로드와 데이터 대기 시간을 줄입니다. Striim은 스트리밍(JDBC) 또는 일괄 처리(PolyBase)와 같은 최적화된 인터페이스를 통해 <a href="https://www.striim.com/azure-sql-data-warehouse/" target="_blank">Azure SQL DW로 빠른 데이터 로드를 지원</a>합니다. Azure 고객은 데이터를 올바른 형식으로 저장하고 보고 및 분석 애플리케이션과 같은 모든 다운스트림 작업에 대한 전체 컨텍스트를 제공할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/25cb461c-1ad8-46cf-847e-37b260742322.jpg"><img alt="Arch" height="291" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2d3d9b6b-8788-4f53-ab8b-0ef3a30aa986.jpg" style="margin-right: auto; margin-left: auto; float: none; display: block;" title="아치" width="660"></a></p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Azure SQL Data Warehouse 및 Striim을 사용하여 최신 데이터 웨어하우스를 빌드하는 방법에 대해 자세히 알아보려면 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DbyEJO_cesFA&amp;data=02%7C01%7CEllis.Butterfield%40microsoft.com%7C434151f2168a4dedf73c08d61d98f72d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636728940174764180&amp;sdata=ZvpLVrZy3kMuYYmVY91axrTkRttR2ImNUViIQFOBOMc%3D&amp;reserved=0">이 비디오를 시청</a>하거나 Striim 기술자와 <a href="https://go2.striim.com/striim-30-minute-technical-demo" target="_blank">함께 데모를 예약</a>하거나 <a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fazuremarketplace.microsoft.com%2Fen-us%2Fmarketplace%2Fapps%2Fstriim.azuredatawarehouseintegration%3Ftab%3DOverview&amp;data=02%7C01%7CEllis.Butterfield%40microsoft.com%7C434151f2168a4dedf73c08d61d98f72d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636728940174764180&amp;sdata=a2hvX7Vbz73ixHePYEU2dYsyM5ekWlimJGNLTL7evCU%3D&amp;reserved=0" target="_blank">Azure Marketplace에서 지금 시작</a>하세요.</p>
+
+
+  <p>SQL DW에 대해 자세히 알아보고 Twitter<a href="https://twitter.com/AzureSQLDW" target="_blank">@AzureSQLDW</a>에서 팔로우하여 최신 뉴스를 최신 상태로 유지하세요.</p>

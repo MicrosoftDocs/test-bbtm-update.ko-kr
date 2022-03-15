@@ -1,0 +1,335 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 08641bfc8a1a69fd7023714ff45131aba3a5bde7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913096"
+Slug: azure-source-volume-57
+Title: Azure.Source - 볼륨 57
+Summary: Apache Kafka용 Azure Event Hubs의 GA, Azure SQL DW의 새로운 생산성 및 보안 기능, Azure 지도 및 Azure Digital Twins에 대한 새로운 파트너십 등
+Content: >-
+  <h2>PASS Summit v.20</h2>
+
+
+  <p>PASS Summit은 Microsoft Data Platform을 활용하는 기술 전문가를 위한 가장 큰 컨퍼런스입니다. 지난 주 시애틀에서 열린 제20차 정상회담은 여러 Azure 관련 발표를 주최했습니다.</p>
+
+
+  <h3><a href="https://cloudblogs.microsoft.com/sqlserver/2018/11/07/harness-the-future-with-the-ultimate-hybrid-platform-for-data-and-ai/">데이터 및 AI를 위한 궁극의 하이브리드 플랫폼으로 미래 활용</a></h3>
+
+
+  <p>Azure Data의 로한 쿠마르(Rohan Kumar) 기업 부사장은 PASS Summit v.20에서 1일차 기조 연설을 했습니다. 이 게시물에서 그는 하이브리드가 모든 데이터를 연결하고 포괄적인 AI 및 분석을 가능하게 하는 방법을 포함하여 그의 기조연설에 대한 개요를 제공합니다. 온-프레미스 및 클라우드에서 Microsofts&rsquo;의 일관된 데이터 플랫폼은 모든 데이터를 연결하고 모든 데이터에 대한 인텔리전스를 가능하게 합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-sql-data-warehouse-taking-scalability-security-and-manageability-to-new-heights/">Azure SQL Data Warehouse는 새로운 생산성 및 보안 기능을 도입합니다.</a></h3>
+
+
+  <p>John Macintyre는 향상된 워크로드 관리, 행 수준 보안, 동급 최고의 개발 도구 및 인사이트, Azure를 모든 분석을 위한 훌륭한 플랫폼으로 만드는 발전 등&#39;새로운 SQL Data Warehouse 기능에 대한 개요를 공유합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/83da47d4-ecb7-403b-8109-f06c3e20bca1.png"><img alt="Illustration stating Azure SQL Data Warehouse is a fast, flexible, and secure hub for analytics." border="0" height="302" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/83da47d4-ecb7-403b-8109-f06c3e20bca1.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Azure SQL Data Warehouse - 분석을 위한 빠르고 유연하며 안전한 허브입니다." width="500"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/row-level-security-is-now-supported-for-azure-sql-data-warehouse/">이제 Microsoft Azure SQL Data Warehouse에 대해 행 수준 보안이 지원됩니다.</a></h3>
+
+
+  <p>중요한 데이터에 대한 보안을 관리하기 위한 추가 기능인 Microsoft Azure SQL Data Warehouse에 대한 Row-Level 보안(RLS)의 일반 공급에 대해 발표합니다. Azure SQL Data Warehouse는 페타바이트 단위의 데이터를 빠르고 빠르게 실행하기 위해 조정된 빠르고 유연하며 안전한 클라우드 데이터 웨어하우스입니다. 이제 모든 Azure 지역에서 추가 비용 없이 사용할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-sql-data-warehouse-provides-a-frictionless-development-using-sql-server-data-tools/">Azure SQL Data Warehouse는 SQL Server Data Tools 사용하여 마찰 없는 개발을 제공합니다.</a></h3>
+
+
+  <p>SQL Server Data Tools(SSDT)는 현재 미리 보기로 제공됩니다(등록 필요). SSDT를 사용하면 데이터베이스 프로젝트 지원을 통해 최신 데이터 웨어하우스에 대한 일류 엔터프라이즈급 개발 환경을 사용할 수 있습니다. 데이터 웨어하우스 스크립트를 소스 제어로 확인하고 Visual Studio 내에서 Microsoft Azure DevOps 활용합니다. 스키마 비교 및 게시와 같은 기능을 사용하여 변경 내용을 적용하고 배포합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/static-data-masking-preview/">Azure SQL Database 및 SQL Server 대한 정적 데이터 마스킹</a></h3>
+
+
+  <p>조직에서 모든 중요한 정보가 비프로덕션 사용자와 공유 가능한 방식으로 변경된 데이터베이스의 삭제된 복사본을 만드는 데 도움이 되는 데이터 보호 기능인 정적 데이터 마스킹의 공개 미리 보기 릴리스를 발표합니다. SQL Server Management Studio 18.0과 함께 제공되는 정적 데이터 마스킹은 개발 및 테스트를 비롯한 다양한 사용 사례에 사용할 수 있습니다.</p>
+
+
+  <h3><a href="https://cloudblogs.microsoft.com/sqlserver/2018/11/07/announcing-preview-of-machine-learning-services-with-r-support-in-azure-sql-database">발표: Azure SQL Database R을 지원하는 Machine Learning 서비스의 미리 보기</a></h3>
+
+
+  <p>R을 지원하는 Machine Learning 서비스는 이제 Azure SQL Database 공개 미리 보기(등록 필요)에 사용할 수 있습니다. 이 미리 보기 기능은 미국, 아시아 유럽 및 오스트레일리아의 제한된 수의 지역에서 처음 사용할 수 있으며 나중에 추가 지역이 추가됩니다. 미리 보기 중에는 R이 있는 Machine Learning 서비스가 프로덕션 사용에 지원되지 않습니다. Python 언어 지원은 향후 업데이트에서 추가될 예정입니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/automatically-discover-workload-insights-for-advanced-performance-tuning-directly-in-the-azure-portal/">Azure Portal에서 직접 고급 성능 튜닝을 위한 워크로드 인사이트 자동 검색</a></h3>
+
+
+  <p>Azure SQL Data Warehouse는 Azure Advisor 및 Azure Monitor와 긴밀하게 통합하여 기본 제공 전체적인 관리 환경을 제공합니다. 이러한 두 서비스는 SQL Data Warehouse에 대해 기본적으로 즉시 구성되어 추가 비용 없이 워크로드 인사이트를 자동으로 제공합니다. 사용량을 모니터링하거나 데이터 웨어하우스 권장 사항의 유효성을 검사하고 이 권장 사항을 적용할 때 Azure Monitor 메트릭에 액세스하기 위해 더 이상 데이터 웨어하우스 개요 블레이드에서 나갈 필요가 없습니다. Azure Advisor를 통해 적응 캐시, 테이블 배포 및 Tempdb를 비롯한 추가 고급 성능 권장 사항이 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b72e9720-6e34-4cd1-b041-265567a34c04.png"><img alt="Screen clipping showing Azure Monitor integration in the Azure SQL Data Warehouse overview blade" border="0" height="161" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b72e9720-6e34-4cd1-b041-265567a34c04.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Azure SQL Data Warehouse 개요 블레이드의 Azure Monitor 통합" width="500"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/workload-insights-with-sql-data-warehouse-delivered-through-azure-monitor-diagnostic-logs-pass/">Microsoft Azure Monitor 진단 로그를 통해 제공되는 SQL Data Warehouse에 대한 워크로드 인사이트</a></h3>
+
+
+  <p>이제 Azure SQL Data Warehouse를 사용하면 Microsoft Azure Monitor 진단 로그와 직접 통합하여 분석 워크로드에 대한 향상된 인사이트를 얻을 수 있습니다. 이 새 기능을 통해 개발자는 오랫동안 워크로드 동작을 분석하고 쿼리 최적화 또는 용량 관리에 대한 합리적 결정을 내릴 수 있습니다. Azure Monitor 진단 로그는 데이터 웨어하우스 워크로드에 대한 추가 인사이트를 제공하는 외부 로깅 프로세스입니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-sql-database-and-azure-database-for-mysql-at-pass-summit/">Azure SQL Database 및 Azure Database for MySQL at PASS SUMMIT!</a></h3>
+
+
+  <p>이 게시물은 앱을 변경하지 않고 SQL Server 데이터베이스를 Azure SQL Database 마이그레이션하는 방법과 완전 관리형 서비스로 제공되는 OSS 데이터베이스 선택에 대해 자세히 알아보기 위한 세 가지 PASS Summit 세션을 강조 표시합니다.</p>
+
+
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/cognitive-services-bing-local-business-search-now-available-in-public-preview/">Cognitive Services &ndash; Bing 로컬 비즈니스 검색을 공개 미리 보기에서 사용할 수 있습니다.</a></h3>
+
+
+  <p>이제 Cognitive Services의 Bing Local Business Search API를 공개 미리 보기로 사용할 수 있습니다. Bing Local Business Search API를 사용하면 관심 영역을 고려하여 애플리케이션 내에서 로컬 비즈니스 정보를 쉽게 찾을 수 있습니다. Bing Local Business Search API의 공개 미리 보기를 사용하면 연락처 세부 정보, 위도/경도 및 기타 엔터티 메타데이터를 사용하여 호출, 탐색 및 매핑과 같은 시나리오를 사용할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/856f6dd8-deae-4639-8cfb-7dd23e6df94c.png"><img alt="An example from Bing.com for the &quot;City Center Plaza Microsoft&quot; query with JSON on the left, map on the right." border="0" height="227" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/856f6dd8-deae-4639-8cfb-7dd23e6df94c.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="예제 - City Center Plaza Microsoft" width="500"></a></p>
+
+
+  <h3>미리 보기로도 제공됩니다.</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/aci-canada-central/">예정된 Azure Sphere 18.11 릴리스</a></li>
+  </ul>
+
+
+  <ul>
+   <li>
+   <p><a href="https://azure.microsoft.com/en-us/updates/azure-policy-now-audits-applications-installed-inside-virtual-machines/">이제 Azure Policy는 가상 머신 내에 설치된 애플리케이션을 감사합니다.</a></p>
+   </li>
+  </ul>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/secure-incoming-traffic-to-hdinsight-clusters-in-a-vnet-with-private-endpoint/">프라이빗 엔드포인트를 사용하여 가상 네트워크에서 HDInsight 클러스터에 들어오는 트래픽 보안</a></h3>
+
+
+  <p>이제 가상 네트워크에 배포된 HDInsight 클러스터에 대한 프라이빗 엔드포인트를 일반 공급할 수 있습니다. 이 기능을 통해 기업은 공용 인터넷에서 HDInsight 클러스터에 대한 액세스를 더 잘 격리하고 네트워킹 계층에서 보안을 강화할 수 있습니다. HDInsight는 미국과 독일의 27개 공용 지역 및 Azure Government 클라우드에서 사용할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-event-hubs-for-apache-kafka/">Apache Kafka용 Azure Event Hubs의 일반 공급 발표</a></h3>
+
+
+  <p>이제 Apache Kafka용 Azure Event Hubs를 일반 공급합니다. Apache Kafka용 Azure Event Hubs를 사용하면 Azure&rsquo; 보안 및 글로벌 규모와 함께 Kafka의 에코시스템과 도구 모두를 최대한&mdash; 활용할 수 있습니다. Kafka용 Event Hubs를 사용하면 Kafka 에코시스템의 기능을 보다 쉽게 잠금 해제할 수 있습니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Azure-Event-Hubs-for-Apache-Kafka/player?format=ny" width="576"></iframe></p>
+
+
+  <h3>또한 일반 공급</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/iot-edge1-0-4/">Azure IoT Edge 1.0.4 릴리스</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/aci-canada-central/">이제 캐나다 중부에서 Azure Container Instances를 사용할 수 있습니다.</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-api-management-update-2018-11-08/">Azure API Management 업데이트 11월 8일</a></li>
+  </ul>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/run-your-lob-applications-with-postgresql-powered-by-the-plv8-extension/">plv8 확장으로 구동되는 PostgreSQL을 사용하여 LOB 애플리케이션 실행</a></h3>
+
+
+  <p>PostgreSQL에 대한 plv8 확장은 이제 Microsoft Azure Database for PostgreSQL의 모든 일반 공급 지역에서 사용하도록 설정되었습니다. plv8은 새로운 시나리오와 가능성을 잠금 해제하는 인기 있는 커뮤니티 확장이며, 개발자가 SQL 호출할 수 있는 JavaScript로 함수를 작성할 수도 있습니다. xTuple에는 xTuple PostBooks 데스크톱 클라이언트를 실행하기 위해 PostgreSQL을 설치하고 구성하기 위한 광범위한 단계별 가이드가 있습니다. 관리형 Azure Database for PostgreSQL 서비스를 사용하면 몇 분 안에 xTuple ERP + CRM 플랫폼을 시작하고 실행할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-portal-november-2018-update/">Microsoft Azure Portal 2018년 11월 업데이트</a></h3>
+
+
+  <p>10월에 Azure Portal 팀은 포털에서 새로운 모든 것을 검색하는 데 도움이 되는 월별 업데이트를 게시하기 시작했습니다. 이번 달에는 로그오프 및 다시 로그인하거나 여러 브라우저 탭으로 작업하지 않고도 다른 Azure 계정 간에 전환할 수 있는 새로운 방법을 도입했습니다. 또한 Weve&rsquo;는 Azure Marketplace에서 필요한 항목을 찾는 방법, Site Recovery, 액세스 제어 및 데이터베이스 서비스에 대한 관리 환경을 개선했습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/automating-sap-deployments-in-microsoft-azure-using-terraform-and-ansible/">Terraform 및 Ansible을 사용하여 Microsoft Azure에서 SAP 배포 자동화</a></h3>
+
+
+  <p>빠른 시작 템플릿은 플레이그라운드&rdquo; 시스템이나 개념 증명을 넘어서&ldquo;는 경우가 거의 없습니다. 너무 엄격하여 실제 비즈니스 및 기술 요구 사항을 매핑할 수 있는 유연성이 너무 적습니다. SAP on Microsoft Azure Engineering 팀은 Azure의 SAP 배포를 가장 세분화된 수준으로 분석하여 진정으로 사용자 지정 가능하면서도 사용하기 쉬운 환경을 위한 구성 요소를&rdquo; 제공합니다&ldquo;.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/SAP-HANA-infrastructure-automation-with-Terraform-and-Ansible/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/mission-critical-performance-with-ultra-ssd-for-sql-server-on-azure-vm/">Azure VM에서 SQL Server Ultra SSD를 사용하는 중요 업무용 성능</a></h3>
+
+
+  <p>최근에 Premium Storage 구성 옵션에서 TPC-E 프로필 테스트 워크로드를 실행하여 테스트 결과를 발표했습니다. 높은 처리량에서 밀리초 미만의 대기 시간으로 중요 업무용 워크로드에 Microsoft Azure 사용할 수 있는 새로운 스토리지 제품인 Ultra SSD를 포함하여 이 테스트를 계속했습니다. 이 게시물은 세부 정보와 결과를 요약합니다. 스포일러 경고 - 일반적인 SQL Server 대기 시간 차이에 의해 구동되는 Premium Storage 비해 Ultra SSD에서 상당한 처리량을 얻습니다.</p>
+
+
+  <h3><a href="https://cloudblogs.microsoft.com/sqlserver/2018/11/06/the-november-release-of-azure-data-studio-is-now-available">이제 Azure Data Studio 11월 릴리스를 사용할 수 있습니다.</a></h3>
+
+
+  <p>Azure Data Studio 11월 릴리스(이전의 SQL Operations Studio)를 사용할 수 있습니다. Azure Data Studio Windows, MacOS 및 Linux에서 온-프레미스 및 클라우드 데이터 플랫폼 제품군을 사용하는 데이터 전문가를 위한 새로운 플랫폼 간 데스크톱 환경입니다. 이 릴리스에서는 고객 문제를 해결하고 기존 확장을 추가하고 개선하는 데 중점을 두었습니다.</p>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3><a href="https://azpodcast.azurewebsites.net/post/Episode-254-DevCon-4">에피소드 254 - DevCon 4 | Azure 팟캐스트</a></h3>
+
+
+  <p>DevCon 4용 프라하에 있었던 Cale Teeter는 Microsoft가 Azure의 블록체인 공간에 제공하는 최신 업데이트를 직접 제공합니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode254.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Azure-Friday/Build-real-time-LiveOps-into-games-with-PlayFab">PlayFab | 사용하여 실시간 LiveOps를 게임에 빌드 Azure Friday</a></h3>
+
+
+  <p>최신 게임에는 보다 강력한 개발 도구, 글로벌 및 유연한 멀티 플레이어 지원 및 새로운 수익 모델이 필요합니다. PlayFab은 라이브 게임을 위한 완벽한 백 엔드 플랫폼이며 독립 스튜디오를 시작할 수 있는 강력한 방법입니다. 게임 서비스, 실시간 분석 및 LiveOps를 통해 수익, 참여 및 보존&mdash; 비용을&mdash; 절감합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/Build-real-time-LiveOps-into-games-with-PlayFab/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Getting-started-with-Azure-Digital-Twins">Azure Digital Twins | 시작 IoT 표시</a></h3>
+
+
+  <p>최근 모든 물리적 환경에 적용할 수 있는 포괄적인 디지털 모델 및 공간 인식 솔루션을 위한 새로운 플랫폼인 Azure Digital Twins의 공개 미리 보기를 발표했습니다. Lyrana Hughes는 IoT Show의 올리비에 블로흐와 함께 Azure Digital Twins를 사용하여 사람, 장소 및 사물을 연결하고 공간 인텔리전스를 사용하여 IoT 솔루션을 빌드하는 방법을 보여 줍니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Getting-started-with-Azure-Digital-Twins/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-Show-Episode-100">IoT 쇼 에피소드 100!! | IoT 표시</a></h3>
+
+
+  <p>우리는&#39;이미 100 에피소드가&#39;믿을 수 없습니다. 우리는 IoT 쇼를 함께 넣어 너무 재미있다, 우리는 당신이 그것을 많이 즐기고 있기를 바랍니다. 시청해 주셔서 감사합니다!</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-Show-Episode-100/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/AI-Show/Build-a-Bot-in-Minutes-with-QnA-Maker">QnA Maker | 사용하여 분 단위로 봇 빌드 AI Show</a></h3>
+
+
+  <p>이 에피소드에서는 직원 또는 고객을 위한 최고의 질문에 답할 수 있는 챗봇을 만드는 것이 얼마나 빠르고 쉬운지 알아보고 있습니다. QnA Maker를 활용하여 FAQ 웹 사이트에서 몇 분 안에 봇을 빌드하고 봇에 개성을 더합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/AI-Show/Build-a-Bot-in-Minutes-with-QnA-Maker/player?format=ny" width="576"></iframe></p>
+
+
+  <h3>Azure Cosmos DB 및 Azure Functions | 사용하여 영화 검토 앱을 빌드하는 방법 Azure Makers 시리즈</h3>
+
+
+  <p>Azure Cosmos DB, Azure Functions 및 Azure AD B2C &ndash; 와 함께 &ndash; 3개의 무료 Azure 서비스를 매시하고 Xamarin.Forms를 사용하여 영화 검토 앱을 만드는 방법을 알아봅니다. 로그인한 사용자에게 프리미엄 리뷰, 독점 콘텐츠에 대한 액세스 권한 등을 제공합니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=W4IN3ugXP7c"><img alt="Thumbnail from Build a movie review app with Azure Cosmos DB and Azure Functions | Azure Makers Series from YouTube" border="0" height="266" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b7141f8e-a015-40f2-a73a-31aa8f58f243.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Cosmos DB 및 Azure Functions | 사용하여 영화 검토 앱 빌드 YouTube의 Azure Makers 시리즈" width="480"></a></p>
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/best-practices-for-alerting-on-metrics-with-azure-database-for-mysql-monitoring/">Azure Database for MySQL 모니터링을 사용하여 메트릭에 대한 경고 모범 사례</a></h3>
+
+
+  <p>Microsoft Azure Database for MySQL에서 서버 동작에 대한 인사이트를 얻기 위해 사용할 수 있는 다양한 메트릭이 있습니다. Azure Portal 또는 Azure CLI를 사용하여 이러한 메트릭에 대한 경고를 설정할 수도 있습니다. 이 게시물은 MySQL 서버에서 모니터링 데이터를 사용하는 방법에 대한 몇 가지 모범 사례와 이러한 다양한 메트릭에 따라 개선할 수 있는 영역을 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/best-practices-for-alerting-on-metrics-with-azure-database-for-postgresql-monitoring/">Azure Database for MySQL 모니터링</a>에도 동일한 정보를 사용할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/leverage-azure-security-center-to-detect-when-compromised-linux-machines-attack/">Azure Security Center를 활용하여 손상된 Linux 머신 공격 시기 감지</a></h3>
+
+
+  <p>이 게시물에서는 정교한 하이브리드 Linux 허니팟 서비스(사이버 공격자를 유인하는 디코이 시스템)에 대한 공격이 고객 머신 내의 IP에서 시작된 몇 가지 최근 사례를 설명합니다. 각 경우에 손상된 고객 VM에 대한 악의적인 동작으로 인해 이미 Azure Security Center를 통해 경고가 발생했습니다. 이러한 공격을 분석하면 공격자&rsquo; 동작에 대한 더 큰 인사이트를 얻을 수 있습니다. 이렇게 하면 추가 탐지 개발이 제공되어 고객에게 더 많은 공격 동작을 더 일찍 노출하고 공격 종단 간을 보다 완벽하게 볼 수 있습니다. Microsoft는 Azure 플랫폼을 보호하는 데 도움이 되는 여러 물리적 인프라 및 운영 제어를 갖추고 있으며, Microsoft에는 인프라 및 서비스에 대한 보안 위협에 대한 언제든지 보호, 감지 및 대응하는 데 도움이 되는 3,500명 이상의 사이버 보안 전문가가 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/the-importance-of-azure-stack-for-devops/">DevOps Azure Stack의 중요성</a></h3>
+
+
+  <p>하이브리드 클라우드 전략을 구현하는 조직은 온-프레미스 및 퍼블릭 클라우드 모두에서 일관된 DevOps 모델이 필요합니다. Microsoft Azure Stack은 Azure 클라우드 서비스 및 기능을 온-프레미스 환경으로 확장하므로 DevOps 매우 유용합니다. Azure Stack 및 Azure는 하이브리드 CI/CD(연속 통합/지속적인 개발) 파이프라인을 설치하여 온-프레미스 또는 퍼블릭 클라우드에서 워크로드를 배치하고 이동할 수 있는 기능을 제공합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/the-smart-way-to-a-smarter-city-three-critical-considerations/">스마트 도시로 가는 현명한 방법: 세 가지 중요한 고려 사항</a></h3>
+
+
+  <p>스마트 빌딩의 개념은 많은 흥분을 불러일으키고 있지만, 지능형 도시로의 전환은 지상에서 일어나는 일을 담당하는 사람들에게 어떤 모습일까요? 이 게시물은 사물 인터넷 기술이 어떻게 도시 지역을 운영하는 사람들과 그 안에 사는 사람들에게 더 나은&mdash; 변화를 줄 수 있는지를 보여주는 세 가지 시리즈의 첫 번째 게시물입니다. 먼저, 더 스마트한 도시로의 여정에 착수하는 관리자를 위한 채택에 대한 가장 일반적인 세 가지 장벽에 대한 개요입니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/migrating-on-premises-hadoop-infrastructure-to-azure-hdinsight/">온-프레미스 Hadoop 인프라를 Azure HDInsight로 마이그레이션하기 위한 팁 및 요령</a></h3>
+
+
+  <p>많은 고객이 Hive, Spark, Hadoop, Kafka, HBase, Phoenix, Storm 및 R과 같은 오픈 소스 워크로드에 대한 지원 및 엔터프라이즈급 기능으로 인해 온-프레미스에서 HDInsight로 워크로드를 마이그레이션합니다. 이 6부 가이드에서는 마이그레이션 프로세스를 안내하고 Hadoop 워크로드를 Azure HDInsight로 이동하는 방법뿐만 아니라 아키텍처, 인프라, 스토리지 등을 최적화하는 방법에 대한 모범 사례를 공유합니다. 이 가이드는 Hadoop 마이그레이션을 통해 많은 고객을 돕는 풍부한 경험을 바탕으로 Azure 고객 자문 팀과 공동으로 작성되었습니다.</p>
+
+
+  <h3>추가 기술 콘텐츠</h3>
+
+
+  <ul>
+   <li><a href="https://hackernoon.com/azure-functions-choosing-between-queues-and-event-hubs-dac4157eee1c">Azure Functions: 큐와 이벤트 허브 중에서 선택</a></li>
+   <li><a href="https://medium.com/@puichan/trying-out-jenkins-x-on-azure-kubernetes-service-aks-20fe94bd72d2">AKS(Azure Kubernetes Service)에서 Jenkins X 사용해 보기</a></li>
+  </ul>
+
+
+  <h2>Azure 팁 &amp; 요령</h2>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=v67yVTLEu3U">Azure Functions 키를 갱신하거나 해지하는 방법 | Azure 팁 &amp; 트릭</a></h3>
+
+
+  <p>Azure Portal을 사용하여 Azure Functions 키를 빠르게 갱신하거나 해지하는 방법을 알아봅니다. Azure Functions에서 HTTP 트리거를 사용할 때 함수에 액세스할 수 있는 사용자와 액세스할 수&#39;권한을 부여하는 데 사용할 수 있는 키 집합이 제공됩니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=v67yVTLEu3U"><img alt="Thumbnail from How to renew or revoke Azure Functions keys | Azure Tips &amp; Tricks on YouTube" border="0" height="266" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f04e4eb6-6bb0-4e1f-b26a-ad45bfaf9678.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Functions 키를 갱신하거나 해지하는 방법 | YouTube의 Azure 팁 &amp; 트릭" width="480"></a></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=mhCxxCXIkrU">Azure Logic Apps | 사용하여 JSON을 쉽게 작업하는 방법 Azure 팁 &amp; 트릭</a></h3>
+
+
+  <p>Azure Logic Apps 사용할 수 있는 JSON 스키마를 만드는 방법을 알아봅니다. 또한 샘플 JSON 데이터를 생성하여 JSON 페이로드의 유효성을 검사하는 데 도움이 되는 몇 가지 도구도 알아봅니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=mhCxxCXIkrU"><img alt="Thumbnail from How to easily work with JSON with Azure Logic Apps | Azure Tips &amp; Tricks on YouTube" border="0" height="267" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0477c04e-45b9-4ffd-be2d-40a69f821e97.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure Logic Apps | 사용하여 JSON을 쉽게 작업하는 방법 YouTube의 Azure 팁 &amp; 트릭" width="480"></a></p>
+
+
+  <h2>Azure DevOps</h2>
+
+
+  <h3>Microsoft Ignite 이벤트 2018 - 에피소드 010 | Azure DevOps 이야기 Azure DevOps 팟캐스트</h3>
+
+
+  <p>이 에피소드 제프리는 Microsoft Ignite 이벤트에서 라이브 녹음을 제공합니다. 오늘날 그는&rsquo; 그렉 레오나르도, 조쉬 가브릭, 롭 리처드슨, 콜린 뎀보프스키 등 여러 사람들과 이야기를 나누고 있다. 각 게스트&rsquo; 패널의 하이라이트, 컨퍼런스에서 배운 내용, Azure 공간의 다양한 주제에 대한 통찰력, 회의 외부의 일상적인 작업 및 프로젝트, Azure의 미래에 대한 예측을 들으세요!</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://traffic.libsyn.com/preview/azuredevops/ADP_010.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h2>고객 및 파트너</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/iot-for-smart-cities-new-partnerships-for-azure-maps-and-azure-digital-twins/">스마트 도시용 IoT: Azure 지도 및 Azure Digital Twins를 위한 새로운 파트너십</a></h3>
+
+
+  <p>올해 초 Microsoft는 향후 4년 동안 IoT에 50억 달러를 투자할 것이라고 발표했습니다. 올해에만 Azure 지도 및 Azure Digital Twins를 포함하여 IoT 포트폴리오에 많은 흥미로운 추가 사항을 발표했습니다. 이 게시물은 도시가 스마트 도시가 되겠다는 야망을 충족시키는 데 도움이 되도록 Azure IoT 파트너가 구축한 플랫폼과 솔루션 모두에서 전략적 파트너십을 발표합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-marketplace-new-offers-volume-24/">Azure Marketplace 새 제품 &ndash; 볼륨 24</a></h3>
+
+
+  <p>Azure Marketplace는 Azure에서 실행되도록 인증되고 최적화된 모든 소프트웨어 요구 사항에 &ndash; 대한 최고의 대상입니다. 수백 개의 주요 소프트웨어 공급자에서 애플리케이션 &amp; 서비스를 찾고, 시도하고, 구매하고, 프로비전합니다. Gold 및 Silver Microsoft Cloud Competency 파트너와 연결하여 Azure 채택을 도울 수도 있습니다. 10월 상반기에는 31개 새로운 제품을 발표했습니다.</p>
+
+
+  <hr>
+
+  <h3><a href="https://www.youtube.com/watch?v=T2vCWMrdTWk">Azure 이번 주 - 2018년 11월 9일 | 클라우드 전문가</a></h3>
+
+
+  <p>이번 주 Azure에서 Lars는 Azure Stream Analytics에서 라이브 데이터 로컬 테스트의 공개 미리 보기, Azure SignalR Service의 가용성 및 Microsoft Ignite - The Tour에 대해 설명합니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=CODE"><img alt="Thumbnail from Azure This Week - 9 November 2018 | A Cloud Guru on YouTube" border="0" height="268" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d407c4d6-f8f4-4f88-a7c9-d26a0a0db142.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure 이번 주 - 2018년 11월 9일 | YouTube의 클라우드 전문가" width="480"></a></p>

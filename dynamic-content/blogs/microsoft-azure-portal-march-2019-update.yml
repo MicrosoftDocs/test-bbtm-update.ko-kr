@@ -1,0 +1,225 @@
+### YamlMime:Yaml
+ms.openlocfilehash: f892d1e784b434ab0843c7f5557ca681ce18a32c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897621"
+Slug: microsoft-azure-portal-march-2019-update
+Title: Microsoft Azure 포털 2019년 3월 업데이트
+Summary: 이번 달 업데이트에는 Virtual Network 게이트웨이 개요 페이지 변경, 새로운 전체 화면 DNS 영역 및 Load Balancer 만들기 블레이드, 활동 로그와 관리 그룹 통합, Azure Database 내의 특정 서비스에 대한 다시 디자인된 개요 블레이드, Security Center에 대한 여러 변경 내용 및 Intune에 대한 추가 업데이트가 포함됩니다.
+Content: >-
+  <p>이번 달&rsquo; 업데이트에는 향상된 &ldquo;모든 서비스&rdquo; 보기, Virtual Network 게이트웨이 개요 업데이트, 향상된 DNS 영역 및 Load Balancer 만들기 환경, 활동 로그에 대한 관리 그룹 통합, Azure DB 내의 특정 서비스에 대한 다시 디자인된 개요 화면, Azure SQL Database 대한 향상된 만들기 환경, Security Center에 대한 여러 변경 내용 및 Intune에 대한 추가 업데이트가 포함됩니다.</p>
+
+
+  <p>이제 <a href="https://portal.azure.com/" target="_blank">Azure Portal</a> 에 로그인하고 새로운 모든 것을&rsquo; 직접 확인하세요. <a href="https://aka.ms/azuremobileapp" target="_blank">Azure 모바일 앱을</a> 다운로드하여 언제 어디서나 Azure 리소스에 연결 상태를 유지합니다.</p>
+
+
+  <h2>Azure Portal에 대한 3월 업데이트 목록은 다음과 같습니다&rsquo;.</h2>
+
+
+  <h3>셸</h3>
+
+
+  <ul>
+   <li><a href="#Improved “All services” view">&ldquo;향상된 모든 서비스&rdquo; 보기</a></li>
+  </ul>
+
+
+  <h3>IaaS</h3>
+
+
+  <ul>
+   <li><a href="#Virtual Network Gateway Overview Updates">가상 네트워크 게이트웨이 개요 업데이트</a></li>
+   <li><a href="#New Full-Screen DNS Zone and Load Balancer Create Blades">새 전체 화면 DNS 영역 및 Load Balancer 만들기 블레이드</a></li>
+  </ul>
+
+
+  <h3>관리 환경</h3>
+
+
+  <ul>
+   <li><a href="#Management Group integration into Activity Log">활동 로그에 관리 그룹 통합</a></li>
+  </ul>
+
+
+  <h3>SQL</h3>
+
+
+  <ul>
+   <li><a href="#Redesigned overview blade for Azure Database for MySQL, PostgreSQL, and MariaDB services">Azure Database for MySQL, PostgreSQL 및 MariaDB 서비스에 대한 다시 디자인된 개요 블레이드</a></li>
+   <li><a href="#Improved creation experience for Azure SQL Database">Azure SQL Database 만들기 환경 개선</a></li>
+  </ul>
+
+
+  <h3>Azure Security Center</h3>
+
+
+  <ul>
+   <li><a href="#Secure Score as a dashboard KPI">대시보드 KPI로 추가된 보안 점수</a></li>
+   <li><a href="#New regulatory compliance dashboard">새 규정 준수 대시보드</a></li>
+   <li><a href="#Updated security policies">업데이트된 보안 정책</a></li>
+   <li><a href="#Updated security recommendations">업데이트된 보안 권장 사항</a></li>
+  </ul>
+
+
+  <h3>기타</h3>
+
+
+  <ul>
+   <li><a href="#Updates to Microsoft Intune">Microsoft Intune 업데이트</a></li>
+  </ul>
+
+
+  <h2>셸</h2>
+
+
+  <p><a id="Improved “All services” view" name="Improved “All services” view">&ldquo;향상된 모든 서비스&rdquo; 보기</a></p>
+
+
+  <p>Azure에서 &ldquo;사용 가능한 모든 서비스 및 리소스를&rdquo; 보여 주는 보기인 모든 서비스 보기가 개선되었습니다.</p>
+
+
+  <ul>
+   <li>이제 전체 화면&rsquo; 부동산이 더 많은 서비스를 표시하는 데 활용됩니다.</li>
+   <li>Azure 제품을 탐색하는 데 도움이 되는 범주 인덱스가 왼쪽에 추가되었습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/af7e7880-5a79-4888-b17f-1d698f3c9119.jpg"><img alt="Screenshot of the All services view" border="0" height="724" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eb342a93-abda-439f-8319-0a5c66e17a99.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="모든 서비스 보기의 스크린샷" width="1244"></a></p>
+
+
+  <h2>IaaS</h2>
+
+
+  <h3><a id="Virtual Network Gateway Overview Updates" name="Virtual Network Gateway Overview Updates">가상 네트워크 게이트웨이 개요 업데이트</a></h3>
+
+
+  <p>가상 네트워크 게이트웨이에 대한 개요 페이지를 크게 업데이트한&#39;. 문제 해결 도구를 더 쉽게 찾을 수 있도록 페이지 중앙에 바로 가기 타일을 추가한&#39;, 리소스에 대해 빠르게 알아볼 수 있도록 설명서를 제공하는 타일을 추가한&#39;. 게이트웨이에 대한 터널 수신 및 송신을 한눈에 볼 수 있도록 메트릭 차트도 추가한&#39;.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b817e47f-ffbe-42fc-8fdf-03b027c3d7a3.png"><img alt="Screenshot of a Virtual Network Gateway overview" border="0" height="725" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/90a2670e-a530-4fc0-aac2-a797c465a067.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Virtual Network 게이트웨이 개요 스크린샷" width="1112"></a></p>
+
+
+  <p>모든 가상 네트워크 게이트웨이 리소스로 이동하여 변경 내용을 시도합니다.</p>
+
+
+  <h3><a id="New Full-Screen DNS Zone and Load Balancer Create Blades" name="New Full-Screen DNS Zone and Load Balancer Create Blades">DNS 영역 및 Load Balancer에 대한 향상된 만들기 환경 </a></h3>
+
+
+  <p>최상위 리소스에 대해 개선되고 일관된 인스턴스 생성 환경을 제공하기 위한 노력을 계속하고 있습니다. 이러한 노력&rsquo;의 일환으로 DNS 영역 및 Load Balancer를 업데이트했습니다. 이 업데이트된 흐름은 만들기 워크플로 중에 가로 스크롤을 제거하고 Virtual Machine, Storage, Cosmos DB 및 Azure Kubernetes Service와 같은 다른 인기 서비스에서 사용하는 것과 동일한 UI 패턴을 따르므로 더 쉽게 배우고 더 나은 고객 환경을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d7ca5c73-bdc3-46f2-979c-9bca8efa20d2.png"><img alt="Screenshot of DNS Zones FSC in the Azure portal" border="0" height="724" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2e4ba2ed-6710-4d62-b6d3-156d0acf21f4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Portal의 DNS 영역 FSC 스크린샷" width="1272"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/631c629b-cb68-4e0d-828c-58d8e921ef67.png"><img alt="Screenshot of Load Balancer FSC in the Azure portal " border="0" height="724" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/518046bf-11e5-4f5e-807f-cad6ef32b7c2.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Portal의 Load Balancer FSC 스크린샷 " width="1278"></a></p>
+
+
+  <ol>
+   <li>Azure Portal에서 DNS 영역 또는 Load Balancer 리소스 가져오기</li>
+   <li><strong>추가</strong>를 선택하여 새 만들기 환경 시작</li>
+  </ol>
+
+
+  <h2>관리 환경</h2>
+
+
+  <h3><a id="Management Group integration into Activity Log" name="Management Group integration into Activity Log">활동 로그에 관리 그룹 통합</a></h3>
+
+
+  <p>Azure 관리 그룹은 구독을 초과하는 범위 수준을 제공하며 Azure Portal에서 채택되고 있습니다.&nbsp; 사용자는 활동 로그에서 관리 그룹 이벤트를 보도록 요청했고, 이제 관리 그룹 이벤트를 통합하고 활동 로그로 필터링하면 사용자가 관리 그룹을 감사할 수 있습니다.&nbsp; 관리 그룹의 권한 있는 사용자는 활동 로그로 이동하여 관리 그룹에서 발생한 모든 작업(예: 만들기, 편집, 삭제 및 부모 변경)을 볼 수 있습니다. 또한 이제 관리 그룹에 대한 정책 할당을 감사할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5b562ee5-cb49-4666-b595-4b70a7544cc9.png"><img alt="Screenshot of access to Management Groups and the Activity Log" border="0" height="637" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9744a73b-b203-461d-83a3-a3feef961248.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="관리 그룹 및 활동 로그에 대한 액세스 스크린샷" width="1088"></a></p>
+
+
+  <ol>
+   <li>현재 테넌트에서 관리 그룹에 액세스할 수 있는 경우 활동 로그로 이동하면 됩니다.</li>
+   <li>왼쪽의 첫 번째 알약을 사용하여 필터링할 관리 그룹을 선택합니다.</li>
+  </ol>
+
+
+  <h2>SQL</h2>
+
+
+  <h3><a id="Redesigned overview blade for Azure Database for MySQL, PostgreSQL, and MariaDB services" name="Redesigned overview blade for Azure Database for MySQL, PostgreSQL, and MariaDB services">Azure Database for MySQL, PostgreSQL 및 MariaDB 서비스에 대해 다시 디자인된 개요 블레이드</a></h3>
+
+
+  <p>서버 상태를 한눈에 이해할 수 있도록 MySQL, PostgreSQL 및 MariaDB에 대한 개요 블레이드를 다시 디자인했습니다. 또한 Azure SQL Database, 탄력적 풀, Managed Instance 및 데이터 웨어하우스의 개요 디자인과 일치합니다. 이제 개요에서 지난 1시간 동안의 리소스 사용량, 일반적인 작업, 사용 가능한 기능 및 기능이 구성되었는지 여부를 확인할 수 있습니다. 개요에서 이러한 타일을 클릭하면 전체 세부 정보 및 설정으로 이동합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/66f35682-3cfa-4f90-b2ec-b7bfdfec7295.png"><img alt="Screenshot of a redesigned overview blade for Azure Database for PostgreSQL server" border="0" height="726" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b22ab7a3-bbfd-42af-b6ea-990fda5603b4.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure Database for PostgreSQL 서버에 대해 다시 디자인된 개요 블레이드의 스크린샷" width="854"></a></p>
+
+
+  <ol>
+   <li><strong>모든 서비스</strong> 선택</li>
+   <li><strong>Azure Database for MySQL</strong>, <strong>Azure Database for PostgreSQL</strong> 또는 <strong>Azure Database for MariaDB</strong> 검색 및 선택</li>
+   <li>목록에서 서버를 선택합니다.</li>
+   <li>개요 블레이드 관찰</li>
+  </ol>
+
+
+  <h3><a name="Improved creation experience for Azure SQL Database">Azure SQL Database 만들기 환경 개선</a></h3>
+
+
+  <p>우리는 최상위 리소스에 대해 개선되고 일관된 생성 환경을 제공하기 위한 노력을 계속하고 있습니다. 이러한 노력&rsquo;의 일환으로 SQL 데이터베이스 만들기 워크플로를 업데이트했습니다. 이 업데이트된 흐름은 생성 워크플로 중에 가로 스크롤을 제거하고 VM, Storage, Cosmos DB 및 AKS와 같은 다른 인기 서비스에서 사용하는 것과 동일한 UI 패턴을 따르므로 더 쉽게 배우고 더 나은 고객 환경을 제공합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/f3a08e3b-581c-4cb6-887e-d2cf0b91cd83.jpg"><img alt="Screenshot displaying the creation of a SQL Database" border="0" height="726" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e09a9bc4-708f-4cde-8f81-37ce93bb880f.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="SQL Database 만들기를 표시하는 스크린샷" width="960"></a></p>
+
+
+  <ol>
+
+  </ol>
+
+
+  <h2>Azure Security Center</h2>
+
+
+  <h3><a id="Secure Score as a dashboard KPI" name="Secure Score as a dashboard KPI">대시보드 KPI로 점수 보호</a></h3>
+
+
+  <p><a href="https://docs.microsoft.com/azure/security-center/security-center-secure-score" target="_blank">보안 점수</a> 는 이제 Azure Security Center 대시보드의 주요 규정 준수 KPI로, 이전 백분율 기반 규정 준수 메트릭을 대체합니다.</p>
+
+
+  <h3><a id="New regulatory compliance dashboard" name="New regulatory compliance dashboard">새 규정 준수 대시보드</a></h3>
+
+
+  <p>새로운 Azure Security Center <a href="https://docs.microsoft.com/azure/security-center/security-center-compliance-dashboard" target="_blank">규정 준수 대시보드</a> 는 규정 준수 상태에 대한 인사이트를 제공하여 규정 준수 요구 사항을 충족하는 프로세스를 간소화하는 데 도움이 됩니다. 제공된 정보는 Azure 환경에 대한 지속적인 평가를 기반으로 합니다.</p>
+
+
+  <h3><a id="Updated security policies" name="Updated security policies">업데이트된 보안 정책</a></h3>
+
+
+  <p>Azure Policy를 사용하도록 Azure Security Center 정책을 업데이트하고 있습니다. 자동으로 마이그레이션되며 작업이 필요하지 않습니다. 자세한 내용은 <a href="https://docs.microsoft.com/azure/security-center/tutorial-security-policy" target="_blank">보안 정책 작업</a> 설명서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <h3><a id="Updated security recommendations" name="Updated security recommendations">업데이트된 보안 권장 사항</a></h3>
+
+
+  <p>더 높은 정확도와 환경 호환성을 제공하도록 Azure App Service 보안 권장 사항이 개선되었습니다. 자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/security-center/security-center-virtual-machine-protection#app-services-preview" target="_blank">Azure Security Center에서 머신 및 애플리케이션 보호</a> 설명서를 &ldquo; 참조하세요.&rdquo;</p>
+
+
+  <h2>기타</h2>
+
+
+  <h3><a id="Updates to Microsoft Intune" name="Updates to Microsoft Intune">Microsoft Intune 업데이트</a></h3>
+
+
+  <p>Microsoft Intune 팀은 Microsoft Intune 업데이트했습니다. Microsoft Intune <a href="https://aka.ms/intunewhatsnewtoday" target="_blank">페이지에서 새로운&#39;</a> 찾을 수 있습니다.</p>
+
+
+  <h2>유용한 정보</h2>
+
+
+  <p>최근에 출시된 <a href="https://www.youtube.com/playlist?list=PLLasX02E8BPBKgXP4oflOL29TtqTzwhxR" target="_blank">Azure Portal&ldquo;에서 비디오 시리즈 방법을&rdquo;</a> 보여주는 몇 가지 새로운 동영상이 출시되었습니다.&nbsp; 이 주간 시리즈에서는 포털에서 클라우드 워크로드를 배포하는 동안 더 효율적이고 생산성을 높일 수 있도록 포털의 특정 측면을 중점적으로 설명합니다. 최근 동영상에는 대시보드를 만들고, 공유하고, 사용하는 방법, 이동 중에도 Azure 모바일 앱을 사용하여 가상 머신을 관리하는 방법 및 Azure Portal에서 가상 머신을 구성하는 방법에 대한 데모가 포함되어 있습니다. 매주 새로운 동영상을 보려면 <a href="https://www.youtube.com/playlist?list=PLLasX02E8BPBKgXP4oflOL29TtqTzwhxR" target="_blank">YouTube의 재생 목록에</a> 계속 체크 인하세요.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>Azure Portal&rsquo;의 대규모 엔지니어 팀은 항상 사용자의 의견을 듣고 싶어하므로 아래의 의견 섹션 또는 Twitter <a href="https://twitter.com/azureportal" target="_blank">@AzurePortal</a>에서 의견을 계속 제공해 주세요.</p>
+
+
+  <p><a href="https://portal.azure.com/" target="_blank">Azure Portal에 로그인</a>하고 오늘 <a href="https://aka.ms/azuremobileapp" target="_blank">Azure 모바일 앱을</a> 다운로드하여 새로운 모든 것을 확인하는 것을&rsquo; 잊지 마세요&rsquo;. 다음 달에 만나요!</p>

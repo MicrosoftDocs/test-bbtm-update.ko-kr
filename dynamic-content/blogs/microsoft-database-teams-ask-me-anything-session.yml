@@ -1,0 +1,68 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 65df020881bbf8290b48053406a057e61d23b86a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897618"
+Slug: microsoft-database-teams-ask-me-anything-session
+Title: Microsoft 데이터베이스 팀 호스트 Ask Me Anything 세션
+Summary: Microsoft 데이터베이스 팀은 4월 8일에 Reddit에서 AMA 세션을 개최합니다.
+Content: >-
+  <p>&nbsp;TheMicrosoft 데이터베이스 팀은 <strong>2016년 4월 8일 금요일</strong> 오전 <strong>10:00부터 오후 1:00 </strong><strong> PDT</strong>까지 <a href="https://reddit.com/r/Azure">/r/Azure</a>에서 특별 Ask Me Anything 세션을 개최합니다.</p>
+
+
+  <h3>AMA 세션은 어떤&#39;?</h3>
+
+
+  <p>모든 데이터베이스 엔지니어링 팀 &ndash; Azure SQL Database, Azure SQL VM, SQL Server, Azure SQL Data Warehouse 및 Azure DocumentDB &ndash; 의 모든 담당자가 질문에 답변할 수 있도록 할&#39;있습니다. 제품, 서비스 또는 팀에 대해 무엇이든 물어볼 수 있습니다!</p>
+
+
+  <h3>AMA를 수행하는 이유는 무엇인가요?</h3>
+
+
+  <p>우리는 작년 11 월에 Azure SQL Database 대한 AMA를했고, 당신에게서 좋은 피드백을 얻었다! 이제 더 많은 데이터베이스 제품 및 서비스로 범위를 확장하고 있습니다. 데이터베이스 제품 및 서비스를 사용하는 방법과 사용자 환경이 어떻게 사용되었는지 알고 싶습니다. 귀하의 질문은 우리가 당신의 경험을 더 나은 만들기 위해 계속 할 수있는 방법에 대한 통찰력을 제공합니다.</p>
+
+
+  <h3>Who 있을 것인가?</h3>
+
+
+  <p>당신, 물론! 또한 하루 종일 참여하는 엔지니어링 팀의 PM 및 개발자도&#39;.</p>
+
+
+  <p>다음 항목에 대한 질문이 있으십니까? AMA로 가져옵니다.</p>
+
+
+  <ul>
+      <li>SQL Server 2016</li>
+      <li>Azure SQL Database</li>
+      <li>Azure Virtual Machine의 SQL Server</li>
+      <li>Azure SQL Data Warehouse</li>
+      <li>Azure DocumentDB</li>
+  </ul>
+
+
+  <h3>StackOverflow, MSDN 또는 Twitter 대신 질문해야 하는 이유는 무엇인가요? 난 정말 아무것도 물어 수 있습니까?</h3>
+
+
+  <p>AMA는 우리에게 무엇이든 물어볼 수있는 좋은 장소입니다. StackOverflow 및 MSDN에는 질문을 할 수 있는 제한이 있지만 Twitter는 140자만 허용합니다. AMA&rsquo;를 사용하면 팀에서 직접 답변을 얻고 이러한 제품 및 서비스를 빌드하는 사람들과 대화를 나눌 수 있습니다.</p>
+
+
+  <p>다음은 몇 가지 질문 아이디어입니다.</p>
+
+
+  <ul>
+      <li>2016을 SQL Server 어떤 시나리오를 사용할 수 있나요?</li>
+      <li>내 애플리케이션에 대한 관계형 데이터베이스와 비관계형 데이터베이스 중에서 선택하려면 어떻게 해야 하나요?</li>
+      <li>VM에서 어떤 Azure SQL Database 및 SQL Server 애플리케이션 아키텍처에 더 적합한지 어떻게 알 수 있나요?</li>
+      <li>내 SQL Server 호스팅할 때 Azure SQL Database 사용할 경우의 이점은 무엇인가요?</li>
+      <li>Azure SQL Data Warehouse는 얼마나 많은 데이터를 처리할 수 있나요?</li>
+      <li>Azure DocumentDB가 적합한 몇 가지 IoT 시나리오는 무엇인가요?</li>
+      <li>온-프레미스 SQL Server Azure SQL Database 마이그레이션하려면 어떻게 해야 하나요?</li>
+  </ul>
+
+
+  <p>계속, 우리의 공공 제품 또는 팀에 대해 우리에게 아무것도 물어. 릴리스되지 않은 기능 및 향후 계획에 대해서는 언급할 수 없습니다.</p>
+
+
+  <h3>참여하세요. 우리는 당신과 대화를 기대하고&#39;!</h3>

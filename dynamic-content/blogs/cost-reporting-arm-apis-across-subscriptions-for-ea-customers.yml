@@ -1,0 +1,125 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5d37816a077bab47eae0e3f4cce234fe53a918e8
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913016"
+Slug: cost-reporting-arm-apis-across-subscriptions-for-ea-customers
+Title: EA 고객을 위한 구독 간 COST Reporting ARM API
+Summary: '현재 Azure 엔터프라이즈 고객은 EA 포털에서 구독을 관리하고 EA 계층 구조를 사용하여 구독별 사용량 및 비용을 그룹화하고 보고합니다. '
+Content: >-
+  <p>현재 Azure 엔터프라이즈 고객은 EA 포털에서 구독을 관리하고 EA 계층 구조를 사용하여 구독별 사용량 및 비용을 그룹화하고 보고합니다. 지금까지 엔터프라이즈 계층 구조에 사용할 수 있는 유일한 API는 <a href="https://docs.microsoft.com/en-us/azure/billing/billing-enterprise-api">키 기반 API</a>였으며, 이번 달에는 등록 계층 구조에 대해 ARM 지원 API를 릴리스합니다. 이렇게 하면 필요한 권한이 있는 사용자가 관리 계층 구조의 개별 노드에 대한 API 호출을 수행하고 최신 비용 및 사용량 정보를 가져올 수 있습니다.</p>
+
+
+  <p>이 API의 이점은 향상된 보안 상태이며 비용 API에 원활하게 온보딩되고 예산과 같은 APM API에 대한 계획된 작업에 대한 지속적인 투자의 혜택을 누릴 수 있다는 것입니다. 부서는 오늘 기본적인 지출 한도를 지원하지만, 앞으로 몇 주 안에 EA 계층 구조 노드의 구독 및 리소스 그룹에 대해 <a href="https://docs.microsoft.com/en-us/rest/api/consumption/budgets">최근에 발표 된</a> 예산을 지원할 것입니다. 또한 ARM API는 패턴을 표준화하고 AD 기반 인증을 사용하도록 설정합니다.</p>
+
+
+  <h3>계층 업데이트</h3>
+
+
+  <p>이 릴리스의 일부로 ARM API에는 몇 가지 새로운 용어가 도입되었습니다.</p>
+
+
+  <ul>
+      <li>ARM API의 <em>등록</em>은 <em>청구 계정입니다.</em></li>
+      <li>부서가 부서로 계속</li>
+      <li>ARM <em>API의 계정을</em> <em>등록 계정이라고 합니다.</em></li>
+  </ul>
+
+
+  <p>구독 범위 위의 이 ARM API 릴리스는 사용량 세부 정보, 통화 잔액, 마켓플레이스 요금 및 가격표의 현재 지원되는 모든 기능을 지원합니다. 또한 가격표 API는 제품 유형에 따라 해당 구독에 대한 특정 가격을 가져오기 위해 구독 곡물에서 호출을 지원합니다. 이러한 각 호출은 기본적으로 현재(공개 기간)에 적용되며, 과거의 특정 청구 기간 동안 API를 호출하는 옵션이 있습니다. 설명서에 대한 링크가 있는 자세한 작업 및 범위 목록은 다음과 같습니다&rsquo;.</p>
+
+
+  <table border="1" cellpadding="5" cellspacing="0" width="856">
+      <tbody>
+          <tr>
+              <td valign="top" width="226">&nbsp;</td>
+              <td valign="top" width="262">
+              <p dir="ltr" style="margin-right: 0px;"><strong>청구 계정(등록)</strong></p>
+              </td>
+              <td valign="top" width="117">
+              <p dir="ltr" style="margin-right: 0px;"><strong>부서</strong></p>
+              </td>
+              <td valign="top" width="249">
+              <p dir="ltr" style="margin-right: 0px;"><strong>등록 계정(계정)</strong></p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="226">
+              <p dir="ltr" style="margin-right: 0px;">사용량 세부 정보</p>
+              </td>
+              <td valign="top" width="262">
+              <p dir="ltr" style="margin-right: 0px;"><a href="https://docs.microsoft.com/en-us/rest/api/consumption/usagedetailsbybillingaccount">지원됨</a></p>
+              </td>
+              <td valign="top" width="117">
+              <p dir="ltr" style="margin-right: 0px;"><a href="https://docs.microsoft.com/en-us/rest/api/consumption/usagedetailsbydepartment">지원됨</a></p>
+              </td>
+              <td valign="top" width="249">
+              <p dir="ltr" style="margin-right: 0px;"><a href="https://docs.microsoft.com/en-us/rest/api/consumption/usagedetailsbyenrollmentaccount">지원됨</a></p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="226">
+              <p dir="ltr" style="margin-right: 0px;">통화 잔액</p>
+              </td>
+              <td valign="top" width="262">
+              <p dir="ltr" style="margin-right: 0px;"><a href="https://docs.microsoft.com/en-us/rest/api/consumption/getbalancesbybillingaccount/getbalancesbybillingaccount">지원됨</a></p>
+              </td>
+              <td valign="top" width="117">
+              <p dir="ltr" style="margin-right: 0px;">해당 없음</p>
+              </td>
+              <td valign="top" width="249">
+              <p dir="ltr" style="margin-right: 0px;">해당 없음</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="226">
+              <p dir="ltr" style="margin-right: 0px;">시장 장소 요금</p>
+              </td>
+              <td valign="top" width="262">
+              <p dir="ltr" style="margin-right: 0px;"><a href="https://docs.microsoft.com/en-us/rest/api/consumption/marketplacesbybillingaccount">지원됨</a></p>
+              </td>
+              <td valign="top" width="117">
+              <p dir="ltr" style="margin-right: 0px;"><a href="https://docs.microsoft.com/en-us/rest/api/consumption/marketplacesbydepartment">지원됨</a></p>
+              </td>
+              <td valign="top" width="249">
+              <p dir="ltr" style="margin-right: 0px;"><a href="https://docs.microsoft.com/en-us/rest/api/consumption/marketplacesbyenrollmentaccounts">지원됨</a></p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="226">
+              <p dir="ltr" style="margin-right: 0px;">가격표</p>
+              </td>
+              <td valign="top" width="262">
+              <p dir="ltr" style="margin-right: 0px;"><a href="https://docs.microsoft.com/en-us/rest/api/consumption/pricesheet">지원됨</a></p>
+              </td>
+              <td valign="top" width="117">
+              <p>&nbsp;</p>
+              </td>
+              <td valign="top" width="249">
+              <p>&nbsp;</p>
+              </td>
+          </tr>
+          <tr>
+              <td valign="top" width="226">
+              <p dir="ltr" style="margin-right: 0px;">예산</p>
+              </td>
+              <td valign="top" width="262">
+              <p dir="ltr" style="margin-right: 0px;">계획</p>
+              </td>
+              <td valign="top" width="117">
+              <p dir="ltr" style="margin-right: 0px;">계획</p>
+              </td>
+              <td valign="top" width="249">
+              <p dir="ltr" style="margin-right: 0px;">계획</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+
+  <h2>링크</h2>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/rest/api/consumption">설명서 페이지</a></p>

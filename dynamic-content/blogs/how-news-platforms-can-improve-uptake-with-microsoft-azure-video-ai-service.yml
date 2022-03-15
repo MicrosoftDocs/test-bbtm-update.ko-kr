@@ -1,0 +1,171 @@
+### YamlMime:Yaml
+ms.openlocfilehash: b37f8babe05fd04d53f8eeb56bf24e742f501108
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897655"
+Slug: how-news-platforms-can-improve-uptake-with-microsoft-azure-video-ai-service
+Title: 뉴스 플랫폼이 Microsoft Azure Video AI 서비스를 사용하여 흡수를 개선할 수 있는 방법
+Summary: 알고 보니 Microsoft 뉴스 문서를 분석하고 개인 설정을 늘리는 방법을 결정하는 몇 가지 고급 알고리즘에 대해 수년 동안 노력해 왔으며 궁극적으로 소비가 증가합니다. 그러나 간격이 있는지 물었을 때, 그들은 비디오에 대한 더 많은 통찰력을 좋아할 것이라고 빠르게 대답했습니다.
+Content: >-
+  <p>Im&rsquo; Anna Thomas, Microsoft Engineering 내의 적용된 데이터 과학자입니다. 내 목표는 필드와 파트너가 다양한 AI 도구를 애플리케이션에 더 잘 통합할 수 있도록 하는 것입니다. 최근에 우리 팀은 Microsoft 뉴스 연락하여 데이터를 분석하는 방법과&rsquo; 서비스가 어떻게 도움이 될 수 있는지 알아보았습니다.</p>
+
+
+  <p>Microsoft 뉴스 다양한 뉴스 제공 업체로부터 매일 100,000 개 이상의 기사와 비디오를 수집합니다. 뉴스 주제 분류, 콘텐츠 태그 지정 및 번역과 같은 다양한 측면을 통해 모든 정보를 처리하는 방법을 즉시 이해하는 데 관심이 있었습니다.</p>
+
+
+  <p>알고 보니, Microsoft 뉴스 문서를 분석하고 궁극적으로 소비를 증가시키는 개인 설정을 늘리는 방법을 결정하는 몇 가지 고급 알고리즘을 개발해 왔습니다. 그러나 공백이 있는지 물었을 때, 그들은 비디오에 대한 더 많은 통찰력을 좋아할 것이라고 빠르게 대답했습니다.</p>
+
+
+  <p>대규모로 비디오를 분석하여 인사이트를 얻는 것은 사소한 작업입니다. 비디오, 특히 뉴스 플랫폼에 대한 인사이트를 보유하면 검색 품질 향상, 개인 설정을 통한 사용자 참여, 캡션, 번역 등을 통해 비디오의 접근성을 높이는 데 도움이 될 수 있습니다. 다양한 뉴스 토픽 분류(잠재적으로 의견 검색/공급자 기관/감정)를 분류하고, 다양한 콘텐츠에 태그를 지정하고, 콘텐츠를 번역하고, 콘텐츠를 요약하고, 유사한 콘텐츠를 함께 그룹화하는 등 다양한 측면이 있습니다.</p>
+
+
+  <h2>Video Indexer 탐색</h2>
+
+
+  <p>Video Indexer, Cognitive Services(Text Analytics, Language Understanding, Computer Vision, Face, Content Moderator 등) 및 일부 사용자 지정 솔루션의 조합을 사용하여 Microsoft 뉴스 요청된 요구 사항을 충족할 수 있는 방법을 결정했습니다.</p>
+
+
+  <p>내 연구 결과는 다음과 같습니다.&nbsp;</p>
+
+
+  <table align="center" border="0.5" cellpadding="1" cellspacing="1" style="width:500px;">
+   <tbody>
+    <tr>
+     <td>
+     <p style="text-align: center;"><strong>요청된 기능</strong></p>
+     </td>
+     <td>
+     <p style="text-align: center;"><strong>도움이 될 수 있는 서비스</strong></p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p style="text-align: center;">음성 텍스트 변환 추출</p>
+     </td>
+     <td>
+     <p style="text-align: center;">Video Indexer API</p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p style="text-align: center;">비디오 검색을 위한 자막 및 캡션</p>
+     </td>
+     <td>
+     <p style="text-align: center;">Video Indexer API</p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p style="text-align: center;">Forprofane&nbsp; 언어 검색</p>
+     </td>
+     <td>
+     <p style="text-align: center;">Video Indexer API</p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p style="text-align: center;">Visualprofanity&nbsp; 검색&nbsp;&ndash; 조정 사용 사례</p>
+     </td>
+     <td>
+     <p style="text-align: center;">Video Indexer API</p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p style="text-align: center;">OCR 및 전사 &ndash; 분류 사용 사례를 기반으로 하는 Topicidentification&nbsp;&ndash;&nbsp;</p>
+     </td>
+     <td>
+     <p style="text-align: center;">Video Indexer API</p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p style="text-align: center;">비전 서비스를 사용하여 모든 프레임을 추출하고 키프레임에서 눈에 띄는 프레임을 감지하는 기능(재처리가 필요하지 않음)</p>
+     </td>
+     <td>
+     <p style="text-align: center;">Video Indexer API</p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p style="text-align: center;">프로모션 카드 이미지에 가장 적합한 프레임을 선택하려면</p>
+     </td>
+     <td>
+     <p style="text-align: center;">Video Indexer API</p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p style="text-align: center;">비디오를 탐색하는 사용자에 대한 필름 스트립으로 사이트를 개선하는 데 사용할 수 있습니다.</p>
+     </td>
+     <td>
+     <p style="text-align: center;">Video Indexer API</p>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <p style="text-align: center;">비전 및 텍스트를 기반으로 키워드/레이블/엔터티 추출(Bing/Satori ID) &ndash;</p>
+     </td>
+     <td>
+     <p style="text-align: center;">Video Indexer API</p>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+
+  <p>Video Indexer API가 Content Moderator API의 불경한 언어 감지 또는 Speech API의 음성 텍스트 변환과 같이 다른 Cognitive Service API가 제공할 수 있는 다양한 인사이트를 결합하는 인상적인 작업을 수행한다는 사실에 놀랐습니다 &ndash; . <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/video-indexer/video-indexer-overview" target="_blank">설명서</a>에서 전체 기능 목록을 볼 수 있습니다.</p>
+
+
+  <p>Video Indexer API가 얼마나 많은 기능을 할 수 있다고 주장했는지에 흥미를 느낀 저는 직접 확인하기로 결정했습니다. C#에서 만든 샘플(<a href="https://github.com/amthomas46/LearnAI-VideoIndexerSample" target="_blank">GitHub</a> 샘플을 체크 아웃할 수 있음)을 쉽게 가져와서 Microsoft 뉴스 비디오를 대량 업로드하고 처리하는 간단한 콘솔 애플리케이션을 만들 수 있었습니다.</p>
+
+
+  <p>이 블로그의 목적을 위해 봇 및 Cognitive Services에서 AI <a href="https://channel9.msdn.com/Shows/AI-Show/LearnAI-Bootcamp-for-Emerging-AI-Developers-Computer-Vision-API-Custom-Vision-Service-LUIS-Part-12?wt.mc_id=AID723408_QSG_SCL_259049" target="_blank">Show와 함께 한 에피소드인</a> 한 비디오&nbsp;의 결과를 공유하고 싶었습니다. &rsquo;비디오는 하나뿐이므로 비디오 업로드 및 처리를 위한 간단한 UI가 있는 <a href="https://video.ai/" target="_blank">Video Indexer 포털</a>을 사용하기로 결정했습니다. 비디오는 약 12분 길이이며 처리하는 데 약 4분이 걸렸습니다(팀과 함께 확인했으며, 처리할 비디오의 시간 제한 길이의 30-50%가 걸릴 것으로 예상할 수 있다고 보고했기 때문에 이 숫자는 올바른 것으로 보입니다).</p>
+
+
+  <p>비디오가 처리되면 웹 사이트에 향상된 필름 스트립과 비디오를 포함하는 데 사용할 수있는 위젯에 대한 링크가 제공되었습니다. Im&rsquo;은 모든 인사이트를 JSON 파일로 다운로드할 수도 있습니다. Im&rsquo;은 인사이트 및 대본의 언어를 변경하고 대본을 다운로드할 수도 있습니다.</p>
+
+
+  <p>아래, 당신은&rsquo; 비디오에 누가 볼 수 있습니다. 로드리고 소우자와 제가 유명해진다면(분명히 우리는&rsquo; 그렇지 않고 지금은&rsquo; 입증되었습니다!), Bing 우리의 이름과 위키백과 전기의 시작을 반환할 것입니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c4d95e4e-f3a7-40dd-8e28-0758eef5c5f2.png"><img alt="1. After processing the video, you’re able to download an enhanced filmstrip that allows you to view the transcript." border="0" height="270" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cc3793dd-fb1d-49cb-833f-cd178bd5bbdb.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="향상된 필름 스트립 " width="756"></a></p>
+
+
+  <p>당신은 위젯으로 볼 수 있습니다, 나는 실제로 로드리고가 초점과 이야기 때 클립을 통해 건너 뛸 수 있습니다. 또한 키워드가 있으며, 사람들의 클립과 마찬가지로 비디오를 건너뛰어 다른 토픽이 포함된 클립을 들을 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/782b8fcb-f4dd-4d0f-9528-f94d5119ee86.png"><img alt="2. With the widget, you can also view keywords from the video." border="0" height="184" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/528a0480-dbaa-4de7-87da-11f9e72b5e40.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="비디오 키워드" width="775"></a></p>
+
+
+  <p>Video Indexer는 시각적 레이블, 현재 브랜드, 감정 및 키프레임 등 비디오를 검색하는 데 사용할 수 있는 여러 가지 향상된 필름스트립을 만듭니다. Video Indexer는 대본을 계층화할 수 있는 옵션도 제공합니다. 여기서 Ive&rsquo;는 사람과 대본을 포함하기로 결정했습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ffd6b881-2522-4f84-82a2-684bf9a98016.png"><img alt="Video Indexer allows you to layer the transcript." border="0" height="190" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b5816c44-e65a-4c21-9b0e-8fe0f8379500.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Video Indexer 대본 계층 " width="931"></a></p>
+
+
+  <p>다른 언어로 모든 인사이트 또는 계층화된 대본을 원한다고 결정할 수도 있습니다. 아래 스페인어로 동일한 계층화된 대본의 코드 조각을 참조하세요.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/64e3a7f0-ac09-48f0-b9f8-3ba79a98522b.png"><img alt="Transcripts are also offered in other languages, such as Spanish." border="0" height="186" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5be55943-6b71-4d7e-81f9-7ca34c7d484f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="스페인어로 표시된 대본" width="938"></a></p>
+
+
+  <p>Video Indexer를 사용하면 비디오에서 인사이트를 쉽게 잠금 해제할 수 있습니다. 이 특정 시나리오는 뉴스에 Video Indexer를 사용하는 것이 얼마나 유용한지 보여 주지만 Video Indexer를 사용하는 것도 다른 시나리오에서도 관련이 있다고 생각합니다. 방법 및 위치에 대한 몇 가지 다른 아이디어는 다음과 같습니다.</p>
+
+
+  <ul>
+   <li>
+   <p>대기업에는 인트라넷을 순환하는 수많은 문서(및 비디오)가 있습니다. 비디오는 영업, 마케팅, 엔지니어링, 학습 등과 관련이 있을 수 있습니다. 직원으로서 필요한 비디오를 찾기가 어려울 수 있습니다. IP를 재사용하고 기존 자료의 접근성을 높이기 위해 Video Indexer(<a href="https://api-portal.videoindexer.ai/docs/services/operations/operations/Search-videos?" target="_blank">Azure Search가 기본 제공</a>됨)를 사용하여 비디오 검색을 위한 향상된 파이프라인을 만들 수 있습니다.</p>
+   </li>
+   <li>
+   <p>이전 예제를 한 단계 더 나아가 <a href="https://docs.microsoft.com/en-us/azure/search/cognitive-search-concept-intro" target="_blank">Azure Cognitive Search에서 사용자 지정 기술을 만들어</a> 일정에 따라 인덱스를 통해 비디오에서 인사이트를 얻을 수 있습니다. 미리 정의된 기술을 사용하여 다른 유형의 문서(예: 이미지, PDF, PowerPoint 등)에 대한 인사이트를 얻도록 선택할 수도 있습니다. Azure Search를 사용하여 향상된 인덱싱 파이프라인을 구성하면 모든 문서에 대한 지능형 검색 서비스에 대한 액세스 권한을 사용자에게 제공할 수 있습니다. <a href="https://aka.ms/kmb" target="_blank">이 LearnAI 워크샵에서 Cognitive Search에</a> 대해 자세히 알아보세요.</p>
+   </li>
+   <li>
+   <p>교육 공간에서 학생이나 연구원이 강의나 프레젠테이션에서 특정 질문에 대한 답을 찾는 데 오랜 시간을 할애할 수 있습니다. Video Indexer의 도움으로 특정 키워드 또는 토픽이 포함된 비디오를 더 쉽게 찾을 수 있습니다. 한 단계 더 나아가기 위해 Video Indexer API에서 얻은 인사이트를 사용하여 기계 읽기 이해(기본적으로 학생/연구원이 가질 수 있는 질문에 대한 답을 검색하는 모델 학습)를 <a href="https://blogs.technet.microsoft.com/machinelearning/2018/10/17/machine-reading-at-scale-transfer-learning-for-large-text-corpuses/" target="_blank">수행할 수 있는 전송 학습 모델을</a> 만들 수 있습니다.</p>
+   </li>
+  </ul>
+
+
+  <p>Video Indexer 또는 Azure Cognitive Services를 사용하기 위한 다른 사용 사례 또는 팁이 있나요? 손을 내밀고 함께 AI를 계속 민주화할 수 있습니다. <a href="https://twitter.com/AnalyticAnna" target="_blank">트위터</a>와 <a href="https://www.linkedin.com/in/amthomas46/" target="_blank">링크드 인</a>에 나를 따르라.</p>

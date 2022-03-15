@@ -1,0 +1,43 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 099ed72b6051d9853f60ae3fb5328db158373b3f
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913196"
+Slug: application-map-filter-and-pin-to-a-dashboard
+Title: '애플리케이션 맵: 대시보드 필터링 및 고정'
+Summary: 애플리케이션 맵은 애플리케이션 구성 요소의 종속성 관계의 시각적 레이아웃입니다.
+Content: >-
+  <p>애플리케이션 맵은 애플리케이션 구성 요소의 종속성 관계의 시각적 레이아웃입니다. 부하, 성능 및 실패, 가용성 테스트 실패 및 활성 경고의 존재와 같은 KPI를 오버레이하여 성능 또는 실패 문제를 일으키는 구성 요소에 도착하는 데 도움이 됩니다. 주의가 필요한 구성 요소를 식별하면 맵은 Application Insights 추가 진단, 경고 규칙 또는 SQL Azure Database Advisor 권장 사항과 같은 다른 Azure 리소스에서 제공하는 진단에 대한 편리한 컨텍스트 내 링크를 도와줍니다. 여기에서 애플리케이션 지도 대해 자세히 알아볼 수 <a href="https://azure.microsoft.com/documentation/articles/app-insights-app-map/">있습니다</a>.</p>
+
+
+  <p>지도를 필터링하는 기능이 추가되었습니다. 이제 작업 이름으로 애플리케이션 맵을 필터링하여 서버 쪽 또는 클라이언트 쪽 요청만 표시하고 해당 컨텍스트에서 호출된 페이지 보기 및 종속성을 표시할 수 있습니다. 그런 다음 이 필터링된 보기를 대시보드에 고정할 수 있습니다. 대시보드에서 진단(옵션 또는 아이콘에 대한 노드 클릭)을 클릭하거나 전체 맵 환경을 열 수 있습니다. 아래 스크린샷은 환경을 보여줍니다.</p>
+
+
+  <p>1.&quot;옵션을&quot; 클릭하고 작업 이름 목록을 확장하고 포함할 작업을 하나 이상 선택한 다음 업데이트를&quot; 누릅니&quot;다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8d43f833-d5fb-4f6c-b77c-25ef8217a391.png"><img alt="" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b83db5d3-0d55-4241-8b26-4812b24986a4.png" style="border: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; width: 774px; height: 594px; background-image: none;" title=""></a></p>
+
+
+  <p>2. 맵을 필터링하면 맨 위에 있는 태그에 적용된 필터가 표시됩니다. x&rdquo;를 클릭하기만 하면 필터를 &ldquo;제거할 수 있습니다. 필터가 세 개 이상 적용된 경우 옵션 창에서 관리합니다. 이 보기를 고정하려면 고정 아이콘을 클릭하기만 하면 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fc801961-d8ea-42e5-831c-ee51705ad58b.png"><img alt="-12" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ef042980-5bb0-4603-9459-887f42b1670f.png" style="border: 0px; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; width: 774px; height: 148px; background-image: none;" title=""></a></p>
+
+
+  <p>종속성 이름별로 필터링하여 해당 특정 종속성의 KPI를 필터링한 보기로 필터링할 수도 있습니다.</p>
+
+
+  <p>맵에 대한 몇 가지 팁은 다음과 같습니다.</p>
+
+
+  <ol>
+   <li>맵 캔버스를 끌어 이동한 다음 특정 노드 집합에 집중할 수 있습니다. 대시보드의 고정된 부분과 전체 맵 환경에서 모두 작동합니다.</li>
+   <li>대시보드에서 맵의 크기를 조정할 수 있습니다. 노드는 선택한 크기에 반응합니다.</li>
+   <li>전체 맵을 열지 않고 대시보드의 고정된 부분에 있는 노드를 클릭하여 목록의 특정 진단 옵션에 직접 들어갈 수 있습니다.</li>
+  </ol>
+
+
+  <p>언제나처럼 포털 내 기능(오른쪽 상단 영역에서 웃는 얼굴 찾기) 또는 <a href="https://visualstudio.uservoice.com/forums/357324">사용자</a> 서비스에 대한 기능 요청/투표를 통해 피드백을 진심으로 감사드립니다.</p>

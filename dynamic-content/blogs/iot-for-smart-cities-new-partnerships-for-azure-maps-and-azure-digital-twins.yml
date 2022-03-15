@@ -1,0 +1,90 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 71313946aec197f50b78f5bf373ba7b9de847117
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897965"
+Slug: iot-for-smart-cities-new-partnerships-for-azure-maps-and-azure-digital-twins
+Title: '스마트 도시용 IoT: Azure 지도 및 Azure Digital Twins를 위한 새로운 파트너십'
+Summary: '최근 몇 년 동안 디지털 트랜스포메이션을 겪고 있는 가장 역동적인 풍경 중 하나는 현대 도시입니다. 도시화가 증가하는 가운데, 도시는 지역 경제를 강화하고, 환경 자원을 관리하고, 오염을 완화하고, 더 안전하고 접근성이 좋은 사회를 만드는 방법에 대한 의문을 제기해야 합니다. '
+Content: >-
+  <p><em>이 블로그 게시물은 줄리 세토, 수석 프로그램 관리자, Azure IoT 의해 공동 저술되었다.</em></p>
+
+
+  <p>최근 몇 년 동안 디지털 트랜스포메이션을 겪고 있는 가장 역동적인 풍경 중 하나는 현대 도시입니다. 도시화가 증가하는 가운데, 도시는 지역 경제를 강화하고, 환경 자원을 관리하고, 오염을 완화하고, 더 안전하고 접근성이 좋은 사회를 만드는 방법에 대한 의문을 제기해야 합니다. 현대 대도시는 지속 가능성, 번영 및 포용성을 향한 십자군 전쟁을 겪고 있으며, 이를 달성하는 데 중요한 것은 클라우드, AI 및 IoT 기술로 구동되는 디지털 변환입니다. 이를 통해 도시는 교통 혼잡과 홍수에서 유틸리티 최적화 및 건설에 이르기까지 도시 이벤트를 모니터링, 예측 및 관리하기 위한 실시간 인텔리전스의 기능을 활용할 수 있습니다.</p>
+
+
+  <p>올해 초, Microsoft는 향후 4년 동안 <a href="https://blogs.microsoft.com/iot/2018/04/04/microsoft-will-invest-5-billion-in-iot-heres-why/" target="_blank">IoT에 50억 달러를</a> 투자할 것이라고 발표했습니다. 올해에만 IoT 포트폴리오에 많은 흥미로운 추가 사항을 발표했습니다. 그 중에는 도시 이동성 및 스마트 인프라 솔루션 개발의 복잡성을 탐색하는 데 도움이 되는 플랫폼인 <a href="https://azure.microsoft.com/en-us/services/azure-maps/" target="_blank">Azure 지도</a> 및 <a href="https://azure.microsoft.com/en-us/services/digital-twins/" target="_blank">Azure Digital Twins</a>가 있습니다. <a href="https://azure.microsoft.com/en-us/blog/announcing-azure-location-based-services-public-preview/" target="_blank">1년 전에 발표된</a> Azure 지도 매핑, 탐색, 트래픽 및 지리 공간적 서비스의 Azure&rsquo; 위치 인텔리전스 포트폴리오입니다. <a href="https://blogs.microsoft.com/iot/2018/09/24/announcing-azure-digital-twins-create-digital-replicas-of-spaces-and-infrastructure-using-cloud-ai-and-iot/" target="_blank">최근 Ignite에서 발표된</a> Azure Digital Twins는 기업이 사람, 디바이스 및 존재하는 환경 간의 관계를 모델링하여 공간 인텔리전스의 잠금을 해제하는 서비스입니다. 이러한 서비스를 통해 조직은 공간 인텔리전스, 지리적 보강 및 위치 기반 서비스에서 심층적인 인사이트를 얻을 수 있습니다.&nbsp;</p>
+
+
+  <p>오늘날,&rsquo; Azure IoT 파트너가 구축한 플랫폼과 솔루션 모두에서 전략적 파트너십을 발표하여 도시가 더 스마트한 도시가 되겠다는 야망을 충족시킬 수 있게 되어 기쁩니다.</p>
+
+
+  <p>작년에 Azure 지도(이전의 Azure Location Based Services)의 공개 미리 보기를 발표했을 때, Azure IoT 디렉터인 Sam George는 로스앤젤레스의 Automobility에서 무대에 올라 <a href="https://blogs.microsoft.com/blog/2017/11/28/microsoft-builds-and-integrates-azure-location-based-services-directly-into-cloud/" target="_blank">스마트 시티에 대한 중요도 맵을 강조</a>했습니다. Azure 지도 &ldquo;스마트 시티, 인프라 및 IoT 솔루션을 더 잘 연결하고 산업 혁신을 강화할 수 있는 지리적 데이터가 포함되어 있습니다.  자동차 &ndash; 와 그 사이의 모든 소매에 제조.&rdquo; 이제 <a href="https://moovit.com/" target="_blank">Moovit,</a>&rsquo; Inc.와의 새로운 파트너십을 통해 그 메시지를 더 두드러지게 울려 퍼집니다.</p>
+
+
+  <p>Moovit은 기본적으로 Microsoft Azure 내에서 Azure 지도 통해 대중 교통 라우팅 서비스(즉, 대중 교통 라우팅)의 공급업체가 될 것입니다. 통합되면 Azure 고객은 스마트 시티, 교통, 자동차, 현장 서비스, 소매 등 다양한 애플리케이션에 대중교통 라우팅을 사용할 수 있습니다. IoT의 맥락에서 고객은 대중 교통 라이더십, 대중 교통/라이드 쉐어링/드라이빙/자전거의 비용 혜택, 추가 대중 교통에 대한 근거 또는 도로 및 주차에 대한 추가 과세와 같은 통찰력을 얻을 수 있습니다. 이러한 서비스는 Azure 지도 기본이므로 고객은 Moovit 기반 서비스를 추가 교통 모드로 사용하여 운전(교통 영향, HOV, 유료 도로 회피 등), 도보, 택시 및 오토바이와 같은 현재 라우팅 기능을 보완할 수 있습니다.</p>
+
+
+  <p>자동차 의 맥락에서, 그리고 많은 사람들이 도심 밖에서 더 멀리 이동, 많은 통근자는 도심에서 더 멀리 이동하지만, 여전히 대중 교통을 사용하고 싶어. 따라서 대중 교통 정보는 라이드 쉐어 또는 환승 센터로 통근하는 여러 가지 교통 수단을 &ndash; 제공하고 기차 나 버스를 타고 도시로 들어오기 위해 차량에 더 통합되고 있습니다. 이는 도시 혼잡을 최소화하고 추가 연료 및 주차 비용을 줄이는 데 도움이 됩니다. 개별 차량이 도시 외부에 주차되어 있기 때문에 탄소 발자국과 소음 공해를 줄입니다. <a href="https://www.uitp.org/" target="_blank">전 세계 대중 교통 협회</a>에 따르면 2017년 178개의 지하철 시스템이 연간 총 530억 명의 승객을 차지했습니다. 지난 6년 동안 연간 지하철 라이더십은 전 세계적으로 87억 명의 승객(+19.5%)이 증가했습니다.&nbsp; Moovit와의 파트너십은 Azure 고객이&rsquo; 자신의 내부 애플리케이션과 인사이트뿐만 아니라 대중 교통이 필요한 고객을 모두 서비스하는 데 도움이 될 것입니다.</p>
+
+
+  <p>오늘은 특징적인 날이며&rsquo; Moovit을 위치 &ndash; 공간에서 매우 혁신적이고 평판이 좋은 회사 중 한 명으로 두어 Azure와 해당 고객에게 풍부한 위치 데이터와 서비스를 통해 영향력을 행사하게 된 것을 자랑스럽게 생각합니다.</p>
+
+
+  <p>클라우드, AI 및 IoT와 같은 기술을 사용하여 시설과 인프라를 더 잘 관리하고, 에너지 효율성을 높이고, 공간 사용률과 탑승자 만족도를 높일 수 있습니다. 이 기회를 활용하기 위해 Microsoft는 9월에 조직이 포괄적인 디지털 모델을 사용하여 물리적 환경에 적용할 수 있는 공간 인식 솔루션을 빌드할 수 있는 플랫폼인 <a href="https://blogs.microsoft.com/iot/2018/09/24/announcing-azure-digital-twins-create-digital-replicas-of-spaces-and-infrastructure-using-cloud-ai-and-iot/" target="_blank">Azure Digital Twins의 공개 미리 보기를 발표</a>했습니다. Azure IoT 파트너 그룹 프로그램 관리자인 Bert van Hoof가 말했듯이, &ldquo;도메인 간 솔루션이 함께 연결되고 데이터가 공유될 때까지 도시는 진정으로 스마트해지지 않습니다&rsquo;. Azure IoT 공간 인텔리전스를 통해 더 넓은 규모&mdash;로 그 가치를 실현하고 공간을 개선하여 보다 지속 가능하고 즐겁고 포용적이 될 수 있습니다.&rdquo;</p>
+
+
+  <p>Azure 지도 및 Azure Digital Twins는 모두 IoT 포트폴리오의 최신 추가 기능 중 하나이지만, 이미 이러한 플랫폼을 활용하여 Azure 지도 활용하여 중앙 집중식 고급 운영 센터에서 도시 차원의 이벤트를 관리하는 <a href="https://www.lntinfotech.com/" target="_blank">LTI</a>부터 연결된 전체 캠퍼스에서 시설을 더 잘 관리하기 위해 Azure Digital Twins를 사용하는 <a href="https://www.lnttechservices.com/" target="_blank">LTTS</a>에 이르기까지 더 안전하고 스마트한 도시를 만드는 데 어려움을 해결하는 파트너를 확인했습니다.</p>
+
+
+  <p>도시 인프라는 관리하는 데 비용이 많이 들며, 도시는 시청에서 도서관, 커뮤니티 센터에 이르기까지 수많은 건물을 효율적으로 운영하는 과제를 해결해야 합니다. 한 파트너는 건물을 보다 효율적이고 사람 중심적인 방식으로 만드는 방법을 재고하고 있습니다. <a href="https://viewglass.com/">뷰 </a>는 자연 채광과 전망을 제공하는 새로운 세대의 동적 유리 창인 뷰 다이내믹 글래스(View Dynamic Glass)를 제조하고 두통, 눈의 피로, 졸음을 크게 줄임으로써 정신적, 육체적 웰빙을 향상시킵니다. 또한 보기&rsquo; 창은 눈부심과 열을 줄여 건물의 에너지 효율을 최대 20%까지 향상시킵니다. View는 Azure Digital Twins 및 Azure IoT 플랫폼의 다른 구성 요소를 사용하여 도메인 전문 지식을 활용하여 점유자 만족도를 높이고 에너지 효율을 높이는 스마트 빌딩을 만들 수 있습니다.&nbsp;</p>
+
+
+  <p>Azure 지도 Azure Digital Twins를 통합하는 스마트 시티 솔루션을 구축하는 흥미로운 파트너는 LTI입니다. 지역 및 도시 관리 및 관리 팀의 과제는 도시에서 무슨 일이 일어나고 있는지 이해하고 올바른 순서로 올바른 자원으로 대응하여 교통 및 대중 교통에서 범죄 및 안전 사고, 환경 경보에 이르기까지 도시 운영을 책임감 있게 관리하는 것입니다. LTI는 도시 운영 및 대응 관리를 추적하고 관리하기 위한 포괄적이고 고급이며 지능적인 운영 센터 솔루션으로 이 문제를 해결하고 있습니다. 고급 운영 센터는 도시 관리자에게 쉽게 인터페이스를 사용하여 도시 전체의 모든 유형의 실시간 이벤트를 처리하고 관리할 수 있도록 합니다.</p>
+
+
+  <p>고급 운영 센터는 Azure 지도 비롯한 여러 Azure 서비스를 활용하여 도시 설정 전반의 다양한 센서에서 실시간 원격 분석을 스트리밍합니다. 한 인터페이스 내에서 도시 관리자는 다양한 이벤트에 대한 실시간 상황 인식을 얻고, GIS 도구를 활용하여 심층 분석을 수행하고, 대응 관리를 최적화하고, 기록 추세를 추적하고, 다른 도시 운영자와 협업할 수 있습니다. 도시 운영자는 대시보드를 통해 위성 이미지, 회색 배율 맵 또는 표준 Azure 지도 기본 맵 중에서 선택하는 기본 맵(이미지 1)을 원활하게 사용자 지정할 수 있습니다.&nbsp;</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/562b5369-0478-4349-b9b2-4e3ff2fa7d0f.png"><img alt="City Operators can configure the base map, choosing from a range of different imagery styles" border="0" height="496" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4882c133-31fc-428f-82f9-2e0d0f5bf73d.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="도시 운영자는 다양한 이미지 스타일 중에서 선택하여 기본 맵을 구성할 수 있습니다." width="935"></a></p>
+
+
+  <p align="center"><em>이미지 1: 도시 운영자는 다양한 이미지 스타일 중에서 선택하여 기본 맵을 구성할 수 있습니다.</em></p>
+
+
+  <p>또한 Azure 지도 트래픽 서비스를 활용하여 실시간 트래픽 흐름 및 인시던트 데이터를 &ndash; 동적으로 렌더링하여 확대/축소 수준(이미지 2 &amp; 3)에 따라 증가하는 세부 수준을 렌더링할 수 있습니다. 고급 운영 센터를 사용하면 운영자가 다양한 이벤트에 대한 표준 운영 절차를 실행하고 다양한 상황에 효과적으로 대응할 수 있습니다. 고급 운영 센터의 이벤트 알림을 사용하면 이벤트 및 공동 작업을 빠르게 추적할 수 있습니다(이미지 4).</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4a06fc41-31fa-4d54-a793-0c8d2b0c6fef.png"><img alt="Single pane in Azure Maps" border="0" height="838" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/96f93209-11a0-4831-895c-7e85fcf88c61.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="Azure 지도 단일 창" width="1690"></a></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ebe8da0c-9dfb-4b01-ac76-d49e633d1802.png"><img alt="Multiple categories of city events in Azure Maps" border="0" height="768" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8b9dfc98-0dea-47c1-beeb-a32854f02ea8.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 지도 여러 범주의 도시 이벤트" width="1366"></a></p>
+
+
+  <p align="center"><em>이미지 2 및 3: 단일 창에서 운영자는 여러 범주의 도시 이벤트를 시각화하고 관리할 수 있습니다.</em></p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b43a7200-5114-4db6-a5de-59e6c682653e.png"><img alt="Measurements and alerts relating to different city events in Azure Maps" border="0" height="439" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/48bda656-ced2-47df-a4c6-fd9e8768215f.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="Azure 지도 다양한 도시 이벤트와 관련된 측정값 및 경고" width="926"></a></p>
+
+
+  <p align="center"><em>이미지 4: 도시 운영자는 다양한 도시 이벤트와 관련된 가장 최근의 측정 및 경고를 추적할 수 있습니다. </em></p>
+
+
+  <p align="center"><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5e317f20-c6a3-449e-8949-1d328077d04a.png"><img alt="SCE Streetlight" border="0" height="834" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d0901039-c251-4887-abe4-bb3fe66e61d0.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="SCE Streetlight" width="1684"></a></em></p>
+
+
+  <p align="center"><em>이미지 5: 운영자는 위에 표시된 가로등과 같은 맵의 센서를 마우스로 가리키고 디바이스와 관련된 상태 업데이트를 신속하게 복구할 수 있습니다.</em></p>
+
+
+  <h2>스마트 시티 엑스포 월드 콩그레스</h2>
+
+
+  <p>디지털 트랜스포메이션을 위한 여정에서 도시와 연결하기 위해 도시화를 위한 업계 최고의 행사인 스마트 시티 엑스포 월드 콩그레스에서 스마트 시티의 디지털 트랜스포메이션을 가능하게 하는 기술과 파트너를 선보일 예정입니다. 그란 비아, 홀 P2, 스탠드 213에서 우리의 부스를 방문하고 <a href="https://enterprise.microsoft.com/en-us/ms-events/industries/citynext/microsoft-citynext-at-smart-city-expo-world-congress-2018/" target="_blank">SCEWC 2018</a>에서 우리의 컨퍼런스 존재에 대해 자세히 알아보세요. 또한 부스에서 열리는 다음 극장 세션에서 저희와 만날 것을 권장합니다.</p>
+
+
+  <ul>
+   <li>줄리 세토, 수석 프로그램 관리자 &ndash; 화요일, 11월 13일 오후 2:30</li>
+   <li>크리스 펜들턴, 11월 14일 수요일 오후 &ndash; 3:00</li>
+  </ul>

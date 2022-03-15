@@ -1,0 +1,64 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5635069a34b73b6d43ac7f6e248d630307a227c6
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897503"
+Slug: announcing-the-general-availability-of-azure-event-hubs-for-apache-kafka
+Title: Apache Kafka®용 Azure Event Hubs의 일반 공급 발표
+Summary: >
+  데이터의 양이 빠르게 증가하고 실시간으로 이벤트에 대응해야 한다는 압박이 커지는 오늘날의 비즈니스 환경에서 조직은 중요한 인사이트를 더 빨리 얻고 경쟁 우위를 높이기 위해 데이터 기반 전략이 필요합니다.
+Content: >-
+  <p>오늘날의&rsquo; 비즈니스 환경에서는 데이터의 양이 빠르게 증가하고 실시간으로 이벤트에 대응해야 한다는 압박이 커짐에 따라 조직은 더 빠르게 중요한 인사이트를 얻고 경쟁 우위를 높이기 위해 데이터 기반 전략이 필요합니다. 이러한 빅 데이터 문제를 해결하려면 여러 생산자와 소비자를 지원하고 조직 전체에서 데이터 스트림을 연결하는 확장성이 뛰어난 분산 스트리밍 플랫폼이 필요합니다. <a href="https://kafka.apache.org/" target="_blank">Apache Kafka</a> 및 <a href="https://aka.ms/EventHubs" target="_blank">Azure Event Hubs는</a> 이러한 분산 플랫폼을 제공합니다.</p>
+
+
+  <h2>Azure Event Hubs는 Apache Kafka와 어떻게 다른가요?</h2>
+
+
+  <p>Apache Kafka 및 Azure Event Hubs는 모두 대규모 실시간 스트림 수집을 처리하도록 설계되었습니다. 개념적으로 둘 다 분산, 분할 및 복제된 커밋 로그 서비스입니다. 둘 다 까다로운 워크로드에 수평적 확장성을 제공하는 클라이언트 쪽 커서 개념으로 분할된 소비자 모델을 사용합니다.</p>
+
+
+  <p>Apache Kafka는 소프트웨어로 설치되고 실행되는 오픈 소스 스트리밍 플랫폼입니다. Event Hubs는 클라우드에서 완전히 관리되는 서비스입니다. Kafka는 빠르게 성장하고 광범위한 에코시스템을 보유하고 있으며 온-프레미스와 클라우드 모두에서 강력한 입지를 보유하고 있지만, Event Hubs는 서버 또는 네트워크를 관리할 필요가 없거나 브로커 구성에 대해 걱정할 필요가 없는 클라우드 네이티브 서버리스 솔루션입니다.</p>
+
+
+  <h2>Apache Kafka용 Azure Event Hubs 발표</h2>
+
+
+  <p>Apache Kafka용 Azure Event Hubs의 일반 공급에 대해 발표하게 되어 기쁩니다. Apache Kafka용 Azure Event Hubs를 사용하면 Azure&rsquo; 보안 및 글로벌 규모와 함께 Kafka의 에코시스템과 도구 모두를 최대한&mdash; 활용할 수 있습니다.</p>
+
+
+  <p>이 강력한 새로운 기능을 사용하면 연결 문자열을 변경하여 Kafka 프로토콜을 사용하여 애플리케이션에서 Event Hubs로 직접 스트리밍 이벤트를 시작할 수 있습니다. 기존 Kafka 애플리케이션, 프레임워크 및 도구를 사용하도록 설정하여 Event Hubs와 통신하고 플랫폼-서비스 솔루션의 용이성을 활용할 수 있습니다. &rsquo;Zookeeper를 실행하거나, 클러스터를 관리하거나, 구성할 필요가 없습니다.</p>
+
+
+  <p>Kafka용 Event Hubs를 사용하면 Kafka 에코시스템의 기능을 쉽게 잠금 해제할 수 있습니다. Kafka 커넥트 또는 MirrorMaker를 사용하여 코드 줄을 변경하지 않고 Event Hubs와 통신합니다. <a href="https://github.com/Azure/azure-event-hubs" target="_blank">GitHub 대한 샘플 자습서를 찾습니다</a>.</p>
+
+
+  <p>이 통합을 통해 Kafka 애플리케이션을 변경하지 않고도 Azure Event Hubs와 통신할 수 있으며 Event Hubs의 강력하고 고유한 기능을 활용할 수도 있습니다. 예를 들어 <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-capture-overview" target="_blank">Event Hubs 캡처</a>를 사용하여 장기 보존 또는 마이크로 일괄 처리를 위해 <a href="https://azure.microsoft.com/en-us/services/storage/blobs/" target="_blank">Blob Storage</a> 또는 <a href="https://azure.microsoft.com/en-us/services/storage/data-lake-storage/" target="_blank">Data Lake Storage</a> 데이터를 원활하게 보냅니다. <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-auto-inflate" target="_blank">자동 팽창</a>을 사용하여 크기 조정 시기와 크기를 제어하면서 스트리밍 메가바이트에서 테라바이트 단위로 쉽게 확장할 수 있습니다. Event Hubs는 <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-geo-dr" target="_blank">지역 재해 복구</a>도 지원합니다. Event Hubs는 <a href="https://azure.microsoft.com/en-us/services/databricks/" target="_blank">Azure Databricks, Azure</a> <a href="https://azure.microsoft.com/en-us/services/stream-analytics/" target="_blank">Stream Analytics</a> 및 Azure Functions와 같은 다른 Azure 서비스와 긴밀하게 통합되므로 추가 분석 및 처리의 잠금을 해제할 수 있습니다.</p>
+
+
+  <p>Kafka용 Event Hubs는 네이티브 AMQP <a href="https://kafka.apache.org/10/documentation.html" target="_blank">1.0</a> 프로토콜에 매핑된 <a href="https://kafka.apache.org/protocol" target="_blank">Apache Kafka 프로토콜을 통해 Apache Kafka</a> 1.0 이상을 지원합니다. Apache Kafka와의 호환성을 제공하는 것 외에도 이 프로토콜 번역을 사용하면 다른 AMQP 1.0 기반 애플리케이션이 Kafka 애플리케이션과 통신할 수 있습니다. JMS 기반 애플리케이션은 <a href="https://qpid.apache.org/" target="_blank">Apache Qpid&trade;</a> 를 사용하여 Kafka 기반 소비자에게 데이터를 보낼 수 있습니다.</p>
+
+
+  <p>열기, 상호 운용 가능 및 완전 관리: Apache Kafka용 Azure Event Hubs.</p>
+
+
+  <h2>다음 단계</h2>
+
+
+  <p>몇 번의 클릭만으로 실행되고 Event Hubs를 다른 Azure 서비스와 통합하여 추가 분석의 잠금을 해제합니다.</p>
+
+
+  <p style="text-align: center;"><iframe allowfullscreen="" frameborder="0" height="270" scrolling="no" src="https://channel9.msdn.com/shows/azure-Friday/Azure-Event-Hubs-for-Apache-Kafka/player?format=ny" width="480"></iframe></p>
+
+
+  <ul>
+      <li>자세히 알아보시겠어요? <a href="https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview" target="_blank">Azure Event Hubs for Apache Kafka 설명서를 확인하세요</a>.</li>
+      <li>대신 호스트된 Kafka 클러스터를 찾고 계신가요? <a href="https://docs.microsoft.com/en-us/azure/hdinsight/kafka/apache-kafka-get-started" target="_blank">Azure HDInsight 설명서를 확인하세요</a>.</li>
+  </ul>
+
+
+  <p>이 블로그를 즐겼습니까? 기능 목록을 업데이트할 때 팔로우하세요. 아래에 피드백, 질문 또는 의견을 남겨 주세요.</p>
+
+
+  <p>행복한 스트리밍!</p>

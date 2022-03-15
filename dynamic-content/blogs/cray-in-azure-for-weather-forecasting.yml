@@ -1,0 +1,27 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d4477be9f5efb4f414551f1d26f46cdcc7746d53
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913010"
+Slug: cray-in-azure-for-weather-forecasting
+Title: 일기 예보를 위한 Azure의 Cray
+Summary: 크레이와의 파트너십을 발표했을 때, 그것은 매우 흥미로운 소식이었습니다. 나는 기상학 학사 학위를 받았기 때문에 내 마음은 즉시 이것이 일기 예보에 도움이 될 수있는 방법에 갔다.
+Content: >-
+  <p><a href="https://azure.microsoft.com/en-us/blog/cray-supercomputers-are-coming-to-azure/" target="_blank">크레이와의 파트너십을 발표했을</a> 때, 그것은 매우 흥미로운 소식이었습니다. 나는 기상학 학사 학위를 받았기 때문에 내 마음은 즉시 이것이 일기 예보에 도움이 될 수있는 방법에 갔다.</p>
+
+
+  <p>날씨 모델링은 흥미로운 사용 사례입니다. 대기 시간이 짧은 상호 연결이 있는 많은 수의 코어가 필요하며 시간이 매우 중요합니다. 결국, 실행하는 데 90 분이 걸리면 1 시간 일기 예보가 얼마나 좋을까요? 그리고 날씨는 매우 지역 현상입니다. 도메인을 축소하거나 런타임을 늘리지 않고 더 작은 규모의 기능을 해결하려면 모델러가 더 많은 코어를 추가해야 합니다. 그리드 간격이 0.5도인 전역 날씨 모델에는 최대 50,000개의 코어가 필요할 수 있습니다.</p>
+
+
+  <p>규모가 크고 운영상 유용해야 하는 성능으로 Cray 슈퍼컴퓨터는 매우 적합합니다. 그러나 모델 자체가&rsquo; 큰 의미가 없습니다. 제품을 생성하려면 모델 데이터를 처리해야 합니다. Azure 서비스가 들어오는 위치입니다.</p>
+
+
+  <p>웹 사이트 이미지는 날씨 모델의 한 가지 명백한 제품입니다. 이미지 생성 프로그램에는 작은 규모가 필요하며 병렬로 수행할 수 있으므로&rsquo; Azure 가상 머신의 탄력성을 사용하는 데 매우 적합합니다. 모델 출력 통계 예측을 생성하는 경우와 마찬가지로, 원시 모델 출력에 통계 회귀를 적용하여 바이어스를 제거하고 모델에서 직접 예측되지 않은 필드를 추가하는 예측 형식이라고 할 수 있습니다. <a href="https://blogs.microsoft.com/ai/hows-the-weather-using-artificial-intelligence-for-better-answers/" target="_blank">인공 지능도 예측 도구로 사용되기 시작했습니다</a> .</p>
+
+
+  <p>이 엔드투엔드 워크플로를 함께 사용하려면 Cray 슈퍼컴퓨터 이상이 필요합니다. 가상 <a href="https://azure.microsoft.com/en-us/services/virtual-machines/" target="_blank">머신</a>을 Batch와 함께 사용하여 <a href="https://azure.microsoft.com/en-us/services/batch/" target="_blank">작업을 관리할 수 있습니다</a>. <a href="https://azure.microsoft.com/en-us/services/storage/unmanaged-disks/" target="_blank">스토리지를 사용합니다. 가상 머신에 연결된 디스크</a>, <a href="https://azure.microsoft.com/en-us/services/storage/blobs/" target="_blank">확장성을 위한 Blob Storage</a>, 나중에 다시 분석<a href="https://azure.microsoft.com/en-us/services/storage/archive/" target="_blank">할 수 있도록 원시 데이터를 보관하는 보관 스토리지</a>. AI에서 생성된 예측은 <a href="https://azure.microsoft.com/en-us/services/?filter=ai-machine-learning" target="_blank">Azures&rsquo; 광범위한 AI 제품 제품군을</a> 사용할 수 있습니다. 웹 이미지를 제공하는 경우&rsquo; <a href="https://azure.microsoft.com/en-us/services/cdn/" target="_blank">Azure CDN</a> 신뢰할 수 있는 제품 배달을 제공합니다.</p>
+
+
+  <p>보듯이 Azure의 Cray는 더 큰 컴퓨팅 에코시스템의 중요한 요소입니다. <a href="https://www.cray.com/solutions/supercomputing-as-a-service/cray-in-azure" target="_blank">Azure의 Cray가 HPC 워크로드에 어떻게 도움이</a> 되는지 알려주세요.</p>

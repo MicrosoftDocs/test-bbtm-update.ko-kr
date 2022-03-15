@@ -1,0 +1,62 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 787a080513118d5c437681cd9bb9076624d5e6d5
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898002"
+Slug: enable-your-missioncritical-workloads-with-suse-on-azure-sign-up-for-susecon
+Title: Azure에서 SUSE를 사용하여 중요 업무용 워크로드 사용 - SUSECON에 등록
+Summary: Microsoft는 SUSECON에 참여하고 SUSE Linux 사용자에게 최신 기술 통합 및 지원을 제공하고 있습니다. 중요 업무용 SUSE 워크로드가 이벤트 중에 Azure에서 마이그레이션 및 작동할 수 있도록 하는 최신 혁신을 공유합니다. SUSE Linux Enterprise Server를 통해 Azure에서 SAP의 최신 발전, 특수 워크로드에 대한 고성능 컴퓨팅 사용, SUSE Linux Enterprise Server의 SQL 최신 기능 업데이트 등을 다룹니다.
+Content: >-
+  <p>Microsoft는 <a href="https://www.susecon.com/" target="_blank">SUSECON Digital 2021</a> 에 참여하여 SUSE Linux 사용자에게 최신 기술 통합 및 지원을 제공합니다. 3일간의 이벤트에서 Microsoft는 기조 연설 및 데모 세션에서 부스까지 여러 활동에 참여합니다.</p>
+
+
+  <p>중요 <a href="https://azure.microsoft.com/en-us/overview/linux-on-azure/suse/" target="_blank">업무용 SUSE 워크로드</a> 가 이벤트 중에 Azure에서 마이그레이션 및 작동할 수 있도록 하는 최신 혁신을 공유합니다. SUSE Linux Enterprise Server를 사용하여 Azure에서 SAP의 최신 발전, 특수 워크로드에 대한 고성능 컴퓨팅 사용, SUSE Linux Enterprise Server의 SQL 최신 기능 업데이트, Azure Arc와 하이브리드에서 SUSE 워크로드 실행, Azure Automanage를 사용한 관리 서비스 자동화 등을 다룹니다.</p>
+
+
+  <p>주요 단계에서는 Azure 인프라 및 에지의 총괄 매니저인 Arpan Shah가 SUSE의 최고 기술 및 제품 책임자인 Thomas Di Giacomo 박사와 함께 <strong>Azure의 SUSE를 사용하는 하이브리드 클라우드의 브리징&nbsp; 서비스 중요 워크로드</strong>에 대한 기조 세션을 &ldquo; 통해 SUSE와 함께 최신 혁신에 대해 논의할 예정입니다.&nbsp;&rdquo; 또한 소프트웨어 엔지니어이자 <a href="https://github.com/deislabs/akri" target="_blank">Project Akri</a>의 기여자인 케이트 골든링(Kate Goldenring)이 에지 월드 기조 연설에 참여하여 Kubernetes와 연결된 에지의 최신 개발에 대해 이야기할 예정입니다.&nbsp;</p>
+
+
+  <h2>하이브리드 클라우드 간 워크로드 브리지</h2>
+
+
+  <p>다음은&rsquo; Microsoft에서 들을 내용의 미리 보기입니다.</p>
+
+
+  <ul>
+      <li>SLES(SUSE Linux Enterprise Server) 구독을 Azure Pay As You Go 이미지로 마이그레이션하는 것 외에도 이제 Linux용 <a href="https://azure.microsoft.com/en-us/pricing/hybrid-benefit/" target="_blank">Azure 하이브리드 혜택</a>도 Azure Reserved Instances를 지원합니다. 이를 통해 고객은 Azure에서 SLES를 실행할 때 소프트웨어 및 컴퓨팅 비용을 모두 절감할 수 있습니다. 이는 SAP와 같은 중요 업무용 영구 워크로드를 실행할 때 특히 유용합니다.</li>
+      <li><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/suse.sles-sap?tab=overview" target="_blank">Azure의 SAP용 SUSE 중력 스택</a> 은 고객이 원스톱 쇼핑 SAP 구현 및 배포를 사용하도록 설정할 수 있으며, 최신 업데이트에는 백업 및 재해 복구를 위해 SAP HANA에 대한 확장 스토리지 한도를 2TB에서 8TB로, SAP 자동화용 Terraform을 통한 자동화된 배포 및 성능 및 관리 추적을 위해 현재 미리 보기로 제공되는 Azure Monitor와의 통합이 포함됩니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/solutions/high-performance-computing/" target="_blank">Azure HPC(High-Performance Computing)</a> 는 계속해서 제품 향상을 출시하고 있습니다. 지난 한 해 동안 Microsoft는 긴밀하게 결합된 하나의 작업에서 80,000개의 핵심 작업을 발표했으며, 향상된 처리량을 위해 45% 더 많은 메모리 대역폭을 발표했으며, 최근에는 86,400개의 코어로 확장된 NAMD 시뮬레이션을 발표했으며, 규모와 성능은 상위 10개 슈퍼컴퓨터와 경쟁하고 있습니다.</li>
+      <li>Virtual Machines<a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-release-notes-2019?view=sql-server-linux-ver15" target="_blank">용 SQL Server 2019의 최신 CU10(누적 업데이트 10)</a>은 성능 및 보안을 향상시키며, 이제 SUSE Linux Enterprise Server에서 사용자 지정 가능한 SQL 컨테이너를 사용할 수 있습니다. 고객은 AD(Azure Active Directory) 인증 및 모니터링 기능과 같은 기능을 사용하여 SLES 이미지를 배포할 수 있습니다. SQL Server 복제 및 기계 학습은 SLES에서도 사용할 수 있습니다.</li>
+      <li><a href="https://azure.microsoft.com/en-us/services/azure-arc/" target="_blank">Azure Arc</a> 는 SLES 가상 머신을 사용하여 하이브리드 클라우드 관리 평면을 빌드하는 고객을 지원하며, 현재 미리 보기 상태인 Azure Automanage는 Azure 관리 서비스를 SLES 가상 머신에 자동으로 온보딩하고 하이브리드 클라우드에 배포된 SUSE 워크로드에 대한 관리, 운영 및 수정을 자동화합니다.</li>
+      <li>마지막으로, 다음 릴리스의 SUSE Rancher는 Azure Kubernetes Service 클러스터&mdash;를 위한 완전한 전체 수명 주기 관리를 제공합니다. 고객은 중앙 집중식 RBAC(역할 기반 액세스 제어), CNCF 인증 도구 및 SLES, Windows 및 Azure 환경 내에서 일류 플래티넘 지원과 같은 서비스를 사용하여 온보딩 프로세스를 간소화합니다.</li>
+  </ul>
+
+
+  <h2>Azure를 사용하여 중요 업무용 워크로드 간소화</h2>
+
+
+  <p>Microsoft와 SUSE 간의 파트너십을 통해 고객은&rsquo; 하이브리드 클라우드에서 업무상 중요한 워크로드 마이그레이션, 배포 및 운영을 원활하게 수행할 수 있습니다. 고객이 최적화된 성능, 향상된 보안 및 간소화된 관리를 통해 Azure에서 SAP, HPC(고성능 컴퓨팅) 및 기타 SLES 기반 중요 업무용 워크로드를 실행할 수 있도록 지원합니다. 고유한 통합 기술 지원, SAP 온보딩 및 운영에 대한 기술 전문 지식 및 HPC 기능은 고객에게 간소화된 마이그레이션 환경을 제공합니다. 더 많은 고객이 더 많은 중요 업무용 워크로드를 Azure로 가져올 수 있도록 SUSE와의 파트너십을 지속하기 위해 최선을 다하고 있습니다.&nbsp;</p>
+
+
+  <h2>최신 업데이트에 대해 자세히 알아보기</h2>
+
+
+  <ul>
+      <li><a href="https://www.susecon.com/" target="_blank">SUSECON Digital 2021</a>에 참여하여 자세한 내용을 알아보고 전문가에게 문의하세요. <a href="https://azure.com/SUSE" target="_blank">Azure에서 SUSE 솔루션을</a> 사용하여 안전하고 신뢰할 수 있는 유연한 하이브리드 클라우드 환경을 배포하는 방법에 대해 자세히 알아봅니다.</li>
+      <li>Microsoft는 최근 블로그 &quot; 를 읽고, Azure가 날씨 및 기후 연구를 위해 HPE Cray EX 슈퍼컴퓨터와 통합되는 방법을 알아보&nbsp;기 위해 <a href="https://azure.microsoft.com/en-us/blog/microsoft-brings-azure-supercomputing-to-uk-met-office/" target="_blank">영국 Met Office</a>&quot; Azure 슈퍼컴퓨팅을 제공합니다.</li>
+  </ul>
+
+
+  <h2>리소스</h2>
+
+
+  <ul>
+      <li><a href="https://azure.microsoft.com/en-us/updates/azure-backup-for-sap-hana-soft-limit-increased-from-2-tb-to-8-tb/" target="_blank">SAP HANA에 대한 확장 스토리지 한도</a>를 2TB에서 8TB로 포함하는 최신 업데이트에 대해 알아봅니다.&nbsp;</li>
+      <li>SAP 자동화용 Terraform을 통한 자동화된 배포에 대해 알아보려면 Microsoft Azure&rdquo; <a href="https://cloudblogs.microsoft.com/opensource/2021/01/21/deploying-suse-sap-ha-automation-in-microsoft-azure/" target="_blank">SUSE SAP HA Automation</a> 배포에 대한 최근 블로그 &ldquo; 를 참조하세요.&nbsp;</li>
+      <li><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/sap/azure-monitor-overview" target="_blank">SAP 솔루션을 위한 Azure Monitor</a> 고객을 위해 제품을 모니터링하는 방법을 알아봅니다.&nbsp;</li>
+      <li><a href="https://www.youtube.com/watch?v=HQZm14eeaqk" target="_blank">Azure 및 AMD</a>가 클라우드 슈퍼컴퓨팅을 통해 진행 상황을 설명하는 방법을 알아봅니다.&nbsp;</li>
+      <li><a href="https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/" target="_blank">Virtual Machines의 SQL Server</a> 클라우드로 마이그레이션하는 방법에 대해 자세히 알아봅니다.&nbsp;</li>
+      <li><a href="https://azure.microsoft.com/en-us/services/azure-automanage/" target="_blank">Azure Automanage</a>를 사용하여 자동화된 작업을 사용하여 IT 관리를 간소화하고 최적화하는 방법을 알아보세요.&nbsp;</li>
+  </ul>

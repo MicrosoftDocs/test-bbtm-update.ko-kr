@@ -1,0 +1,78 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 5c5196a0013de8c856b8935b704adb73f6963a42
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897431"
+Slug: azure-ultra-disk-storage-microsoft-s-service-for-your-most-i-o-demanding-workloads
+Title: 'Azure Ultra Disk Storage: 가장 까다로운 I/O 워크로드에 대한 Microsoft의 서비스'
+Summary: 오늘 Microsoft Azure 회사 부사장인 Tad Brockway는 가장 많은 I/O 요구 워크로드에 대해 밀리초 미만의 대기 시간으로 엄청난 처리량을 제공하는 Azure Managed Disks 제품인 Azure Ultra Disk Storage 일반 공급한다고 발표했습니다.
+Content: >-
+  <p>오늘 Microsoft Azure 회사 부사장인 Tad Brockway는 가장 까다로운 I/O 워크로드에 대해 밀리초 미만의 대기 시간으로 엄청난 처리량을 제공하는 Azure Managed Disks 제품인 Azure <a href="https://azure.microsoft.com/en-us/blog/announcing-the-general-availability-of-azure-ultra-disk-storage/">Ultra Disk Storage 일반 공급</a>한다고 발표했습니다. Ultra Disk Storage 도입된 Azure에는 4가지 유형의 영구 diskUltra&mdash; Disk Storage, Premium SSD, 표준 SSD 및 표준 HDD가 포함되어 있습니다. 이 포트폴리오는 모든 워크로드의 요구 사항에 맞게 조정된 가격 및 성능 옵션을 제공합니다. Ultra Disk Storage SAP Hana, OLTP 데이터베이스, NoSQL 및 기타 트랜잭션이 많은 워크로드와 같은 I/O 집약적 워크로드에 일관된 성능과 짧은 대기 시간을 제공합니다. 또한 여러 디스크를 스트라이프하지 않고도 단일 Ultra Disk로 최대 VM(가상 머신) I/O 제한에 도달할 수 있습니다.</p>
+
+
+  <p>데이터의 내구성은 중요 비즈니스용 엔터프라이즈 워크로드에 필수적입니다. 내구성 약속을 지키기 위해 동일한 가용성 영역 내에 3개의 데이터 복사본을 저장하는 기존 LRS(<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-redundancy/" target="_blank">로컬 중복 스토리지</a>) 기술에 Ultra Disk Storage 구축했습니다. 스토리지에 쓰는 모든 애플리케이션은 LRS 시스템에 지속적으로 복제된 후에만 승인을 받습니다.</p>
+
+
+  <p>다음은 Microsoft Ignite에서 전달한 프레젠테이션의 클립으로, Ultra Disk Storage 최고의 성능을 보여 줍니다.</p>
+
+
+  <p><a href="https://youtu.be/D8hMu4jJAwo?t=3558" target="_blank"><img alt="for mark's blog[6]" border="0" height="364" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0cf46527-dbb4-4a63-acfd-8bfdffa8cfb8.jpg" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="for mark's blog[6]" width="640"></a></p>
+
+
+  <p align="center"><em><a href="https://youtu.be/D8hMu4jJAwo?t=3558" target="_blank">Microsoft Ignite 2018: Azure Ultra Disk Storage 데모</a></em></p>
+
+
+  <p>다음은 미리 보기 프로그램의 고객에 대한 몇 가지 따옴표입니다.</p>
+
+
+  <p><em>&ldquo;Ultra Disk Storage 사용하여 광범위한 디스크 크기에서 높은 IOPS 및 처리량 수준에서 일관된 하위 밀리초 대기 시간을 달성했습니다. Ultra Disk Storage 워크로드에 따라 성능 특성을 미세 조정할 수도 있습니다.&rdquo;</em></p>
+
+
+  <p align="right">-아미트 파톨리아, Storage 엔지니어, 데본 에너지</p>
+
+
+  <p><em>&ldquo;Ultra Disk Storage VM SKU의 전체 처리량을 활용할 수 있는 강력한 구성 옵션을 제공합니다. IOPS 및 MBps를 제어하는 기능은 놀랍습니다.&rdquo;</em></p>
+
+
+  <p align="right"><em>- </em>Edward Pantaleone, IT 관리자, Tricore HCM</p>
+
+
+  <h2>Ultra Disk Storage 내부</h2>
+
+
+  <p>Ultra Disk Storage Azure IaaS VM 및 컨테이너에 대한 디스크 의미 체계를 제공하는 차세대 분산 블록 스토리지 서비스입니다. 내구성 약속을 손상시키지 않고 높은 IOPS에서 일관된 성능을 제공하는 것을 목표로 Ultra Disk Storage 설계했습니다. 따라서 모든 쓰기 작업은 클라이언트에 승인되기 전에 세 개의 서로 다른 랙(장애 도메인)의 스토리지에 복제됩니다. Azure Premium Storage 비해 Ultra Disk Storage <a href="https://azure.microsoft.com/en-us/blog/azure-premium-storage-now-generally-available-2/" target="_blank">Azure Blob Storage 캐시</a>, 서버 SSD 기반 캐시에 의존하지 않고 극단적인 성능을 제공하므로 캐시되지 않은 읽기 및 쓰기만 지원합니다. 또한 VDC(가상 디스크 클라이언트)를 호출하는 컴퓨팅 호스트에 새로운 간소화된 클라이언트를 도입했습니다. VDC는 Ultra Disk Storage 클러스터에서 디스크를 지원하는 디스크에 대한 가상 디스크 메타데이터 매핑에 대해 완전히 알지 않습니다. 이를 통해 클라이언트는 초기 디스크 연결에 사용되는 부하 분산 장치 및 프런트 엔드 서버를 우회하여 스토리지 서버와 직접 통신할 수 있습니다. 이 간소화된 접근 방식은 읽기 또는 쓰기 작업이 트래버스하는 계층을 최소화하여 대기 시간을 줄이고 엔터프라이즈 플래시 디스크 배열에 필적하는 성능을 제공합니다.</p>
+
+
+  <p>다음은 울트라 디스크에서 실행될 때 작업이 트래버스하는 여러 계층을 Premium SSD 디스크와 비교한 그림입니다. 작업은 클라이언트에서 Hyper-V로 해당 드라이버로 흐릅니다. Premium SSD 디스크에서 수행되는 작업의 경우 작업은 Azure Blob Storage 캐시 드라이버에서 부하 분산 장치, 프런트 엔드 서버, 파티션 서버로 이동한 다음, 이 <a href="https://www.sigops.org/s/conferences/sosp/2011/current/2011-Cascais/11-calder-online.pdf" target="_blank">문서에</a> 설명된 대로 스트림 계층 서버로 전달됩니다. Ultra 디스크에서 수행되는 작업의 경우 작업은 가상 디스크 클라이언트에서 해당 스토리지 서버로 직접 흐릅니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5833c177-963e-4520-94c1-6cffbd34defc.png"><img alt="Client virual machine diagram" border="0" height="835" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/17a479c8-6b7e-4899-a292-9ce7a3445aaa.png" style="border: 0px currentcolor; border-image: none; margin-right: auto; margin-left: auto; float: none; display: block; background-image: none;" title="클라이언트 가상 머신 다이어그램" width="1002"></a></p>
+
+
+  <p align="center"><em>Ultra Disk Storage IO 흐름과 Premium SSD Storage 비교</em></p>
+
+
+  <p>Ultra Disk Storage 한 가지 주요 이점은 디스크를 분리하거나 가상 머신을 다시 시작하지 않고도 디스크 성능을 동적으로 조정할 수 있다는 것입니다. 따라서 워크로드와 함께 성능을 확장할 수 있습니다. IOPS 또는 처리량을 조정하면 새 성능 설정이 1시간 이내에 적용됩니다.</p>
+
+
+  <p>Azure는 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes" target="_blank">설명서</a>에 설명된 각 VM 크기와 관련된 새는 버킷&rdquo; VM 수준 제한인 디스크 성능을 &ldquo;제한할 수 있는 두 가지 수준의 제한을 구현합니다. Ultra Disk Storage 주요 이점은 디스크 수준에서 적용되는 새로운 시간 기반 디스크 수준 제한입니다. 이 새로운 스로틀 시스템은 지정된 IOPS 및 처리량에 대해 디스크의 보다 현실적인 동작을 제공합니다. 새 버킷 스로틀을 누르면 불규칙한 성능이 발생할 수 있으며, 새로운 시간 기반 스로틀은 스로틀 제한에서도 일관된 성능을 제공합니다. 이러한 원활한 성능을 활용하려면 디스크 제한을 VM 제한보다 약간 적게 설정합니다. 향후 새로운 스로틀 시스템에 대한 자세한 내용을 설명하는 또 다른 블로그 게시물을 게시할 예정입니다.</p>
+
+
+  <h2>사용 가능한 지역</h2>
+
+
+  <p>Ultra Disk 서비스를 더 많은 지역으로 확장하고 있습니다. 지원되는 지역에 대한 최신 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disks-enable-ultra-ssd#ga-scope-and-limitations" target="_blank">내용은 설명서를 </a>참조하세요.</p>
+
+
+  <h2>가상 머신 크기</h2>
+
+
+  <p>Ultra Disk 서비스를 추가 가상 머신 유형으로 확장하고 있습니다. 지원되는 가상 머신에 대한 최신 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disks-enable-ultra-ssd#ga-scope-and-limitations" target="_blank">내용은 설명서를 </a>참조하세요.</p>
+
+
+  <h2>오늘 시작</h2>
+
+
+  <p>포털, ARM 또는 SDK를 사용하여 Ultra를 시작하려면 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/disks-enable-ultra-ssd" target="_blank">지침을 </a>참조하세요.</p>

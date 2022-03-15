@@ -1,0 +1,132 @@
+### YamlMime:Yaml
+ms.openlocfilehash: de53d4b27b94d34970110738056944eeb74008a1
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913017"
+Slug: cost-optimization-strategies-for-cloudnative-application-development
+Title: 클라우드 네이티브 애플리케이션 개발을 위한 비용 최적화 전략
+Summary: '현재는 Azure에서 활용할 수 있는 몇 가지 전략을 살펴보고 AKS(Azure Kubernetes Service) 및 관리되는 데이터베이스(예: Azure Cosmos DB 및 Azure Database for PostgreSQL)를 사용하여 클라우드 네이티브 애플리케이션 개발 프로세스를 최적화합니다.'
+Content: >-
+  <p>현재는&rsquo; Azure에서 활용할 수 있는 몇 가지 전략을 살펴보고 AKS(Azure Kubernetes Service) 및 관리되는 데이터베이스(예: Azure Cosmos DB 및 Azure Database for PostgreSQL)를 사용하여 클라우드 네이티브 애플리케이션 개발 프로세스를 최적화합니다.</p>
+
+
+  <h2>Azure Kubernetes Service를 사용하여 컴퓨팅 리소스 최적화</h2>
+
+
+  <p>AKS를 사용하면 Azure에서 관리되는 Kubernetes 클러스터를 간단하게 배포할 수 있습니다. AKS는 대부분의 부담을 Azure에 오프로딩하여 Kubernetes를 관리하는 복잡성 및 운영 과부하를 감소시킵니다. 관리되는 Kubernetes 서비스인 Azure는 상태 모니터링 및 유지 관리와 같은 중요한 작업을 처리합니다.</p>
+
+
+  <p>AKS를 사용하여 컨테이너 워크로드를 배포하는 경우&rsquo; 비용을 절감하고 개발 및 테스트 환경을 실행하는 방법을 최적화하는 몇 가지 전략이 있습니다.</p>
+
+
+  <h3>여러 사용자 노드 풀 만들기 및 0으로 확장 사용</h3>
+
+
+  <p>AKS에서 동일한 구성의 노드는 노드 풀로 그룹화됩니다. 컴퓨팅 또는 스토리지 수요가 다른 애플리케이션을 지원하기 위해 추가 사용자 노드 풀을 만들 수 있습니다. 사용자 노드 풀은 애플리케이션 Pod를 호스트하는 기본 목적을 제공합니다. 예를 들어 이러한 추가 사용자 노드 풀을 사용하여 컴퓨팅 집약적 애플리케이션에 대한 GPU를 제공하거나 고성능 SSD 스토리지에 액세스할 수 있습니다.</p>
+
+
+  <p>가상 머신 확장 집합에서 실행되는 여러 노드 풀이 있는 경우 최소 노드 수를 설정하도록 클러스터 자동 크기 조정기를 구성할 수 있으며, 필요하지 않은 경우(예: 작업 시간 외) 노드 풀 크기를 수동으로 0으로 축소할 수도 있습니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://aka.ms/aks/nodepool/mode" target="_blank">AKS에서 노드 풀을 관리하는 방법을 알아봅니다</a>.</p>
+
+
+  <h3>클러스터 자동 크기 조정기를 사용하여 노드 풀 스폿</h3>
+
+
+  <p>AKS의 스폿 노드 풀은 <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/linux/spot-vms" target="_blank">스폿 가상 머신</a>을 실행하는 가상 머신 확장 집합에서 지원되는 노드 풀입니다. 스폿 VM을 사용하면 Azure에서 사용되지 않는 용량을 활용하여 상당한 비용을 절감할 수 있습니다. 스폿 인스턴스는 일괄 처리 작업, 개발자 및 테스트 환경과 같은 중단을 처리할 수 있는 워크로드에 적합합니다.</p>
+
+
+  <p>스폿 노드 풀을 만들 때 시간당 지불하려는 최대 가격을 정의하고 스폿 노드 풀에 사용하는 것이 좋습니다. 클러스터 자동 크기 조정기를 사용하도록 설정할 수 있습니다. 클러스터에서 실행되는 워크로드에 따라 클러스터 자동 크기 조정기는 노드 풀의 노드 수를 확장하고 축소합니다. 스폿 노드 풀의 경우 추가 노드가 여전히 필요한 경우 클러스터 자동 크기 조정기가 제거 후 노드 수를 확장합니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/aks/spot-node-pool" target="_blank">AKS 클러스터에 스폿 노드 풀을 추가하는</a> 방법에 대한 자세한 내용 및 지침은 설명서를 따르세요.</p>
+
+
+  <h3>Azure Policy를 사용하여 Kubernetes 리소스 할당량 적용</h3>
+
+
+  <p><a href="https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/" target="_blank">네임스페이스 수준에서 Kubernetes 리소스 할당량을 적용</a> 하고 리소스 사용량을 모니터링하여 필요에 따라 할당량을 조정합니다. 이를 통해 개발 팀 또는 프로젝트에서 리소스를 예약하고 제한하는 방법을 제공합니다. 이러한 할당량은 네임스페이스에 정의되며 CPU 및 메모리, GPU 또는 스토리지 리소스와 같은 컴퓨팅 리소스에 대한 할당량을 설정하는 데 사용할 수 있습니다. 스토리지 리소스에 대한 할당량에는 지정된 스토리지 클래스에 대한 총 볼륨 수 또는 디스크 공간의 양과 만들 수 있는 최대 비밀 수, 서비스 또는 작업 수와 같은 개체 수가 포함됩니다.</p>
+
+
+  <p>Azure Policy는 기본 제공 정책을 통해 AKS와 통합되어 중앙 집중식으로 일관된 방식으로 클러스터에 대규모 적용 및 보호 장치를 적용합니다. Azure Policy 추가 기능을 사용하도록 설정하면 Azure Policy에서 AKS 클러스터에 대한 할당을 확인하고, 정책 세부 정보를 다운로드 및 캐시하고, 전체 검사를 실행하고, 정책을 적용합니다.</p>
+
+
+  <p>설명서 <a href="https://docs.microsoft.com/en-us/azure/governance/policy/concepts/rego-for-aks" target="_blank">에 따라 클러스터에서 Azure Policy 추가</a> 기능을 사용하도록 설정하고 <a href="https://docs.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies#kubernetes-service" target="_blank">CPU 및 메모리 리소스 제한 보장</a> 정책을 적용하여 Azure Kubernetes Service 클러스터의 컨테이너에 CPU 및 메모리 리소스 제한이 정의되도록 합니다.</p>
+
+
+  <h2>Azure Cosmos DB를 사용하여 데이터 계층 최적화</h2>
+
+
+  <p><a href="https://www.azurecosmosdb.com/" target="_blank">Azure Cosmos DB</a>는 규모에 관계없이 개방형 API가 있는 Microsoft&#39;빠른 NoSQL 데이터베이스입니다. 완전 관리형 서비스인 Azure Cosmos DB는 단일 디지털 밀리초 대기 시간 및 99.999%의 가용성을 위한 SLA(서비스 수준 계약)를 통해 전 세계적으로 즉각적이고 탄력적인 확장성과 함께 보장된 속도와 성능을 제공합니다. 단추를 클릭하면 Azure Cosmos DB를 사용하면 전 세계 모든 Azure 지역에서 데이터를 복제하고 MongoDB, Cassandra 및 Gremlin을 비롯한 다양한 오픈 소스 API를 사용할 수 있습니다.</p>
+
+
+  <p>개발 및 테스트 환경의 일부로 Azure Cosmos DB를 사용하는 경우&rsquo; 몇 가지 방법으로 비용을 절감할 수 있습니다. Azure Cosmos DB를 사용하면 프로비전된 처리량(<a href="https://docs.microsoft.com/en-us/azure/cosmos-db/request-units" target="_blank">요청 단위</a>, RU) 및 사용하는 스토리지(GB)에 대한 비용을 지불합니다.</p>
+
+
+  <h3>Azure Cosmos DB 무료 계층 사용</h3>
+
+
+  <p>Azure Cosmos DB 무료 계층을 사용하면 애플리케이션을 쉽게 시작, 개발 및 테스트하거나 소규모 프로덕션 워크로드를 무료로 실행할 수 있습니다. 계정에서 무료 계층을 사용하도록 설정하면 처음 400RU(RU/s) 처리량과 5GB의 스토리지를 가져올&#39;있습니다. 또한 데이터베이스 수준에서 400RU/s를 공유하고 모두 무료 계층이 포함된 25개의 컨테이너를 포함하는 공유 처리량 데이터베이스를 만들 수 있습니다(체험 계층 계정에서는 5개의 공유 처리량 데이터베이스 제한). 무료 계층은 계정 수명 동안 무기한으로 지속되며 무제한 스토리지 및 처리량(RU/s), SLA, 고가용성, 모든 Azure 지역의 턴키 글로벌 배포 등을 포함하여 일반 Azure Cosmos DB 계정의 모든 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/introduction#key-benefits" target="_blank">이점과 기능</a>을 제공합니다.</p>
+
+
+  <p><a href="https://azure.microsoft.com/try/cosmosdb/" target="_blank">Azure Cosmos DB를 무료로 사용해 보세요</a>.</p>
+
+
+  <h3>Azure Cosmos DB를 사용하여 프로비전된 처리량 자동 크기 조정</h3>
+
+
+  <p>프로비전된 처리량은 애플리케이션 패턴에 따라 자동으로 확장 또는 축소될 수 있습니다.&nbsp; 처리량 최대값이 설정되면 Azure Cosmos DB 컨테이너 및 데이터베이스는 애플리케이션 요구 사항에 따라 프로비전된 처리량을 자동으로 즉시 확장합니다.</p>
+
+
+  <p>자동 크기 조정은 SLA를 유지하면서 용량 계획 및 관리에 대한 요구 사항을 제거합니다. 이러한 이유로 활동이 최고조에 달하는 매우 가변적이고 예측할 수 없는 워크로드의 시나리오에 이상적으로 적합합니다. 또한 새 애플리케이션&rsquo;을 배포하고 필요한 프로비전된 처리량에 대해 잘 모를 때&rsquo;에도 적합합니다. 개발 및 테스트 데이터베이스의 경우 Azure Cosmos DB 컨테이너는 사용하지 않을 때 미리 설정된 최소값(400RU/s 또는 최대 10%에서 시작)으로 축소됩니다. 자동 크기 조정은 무료 계층과 페어링할 수도 있습니다.</p>
+
+
+  <p>시나리오 및 <a href="https://docs.microsoft.com/en-ca/azure/cosmos-db/provision-throughput-autopilot" target="_blank">Azure Cosmos DB 자동 크기 조정</a>을 사용하는 방법에 대한 자세한 내용은 설명서를 따르세요.</p>
+
+
+  <h3>데이터베이스 수준에서 처리량 공유</h3>
+
+
+  <p>공유 처리량 데이터베이스에서 데이터베이스 내의 모든 컨테이너는 데이터베이스의 프로비전된 처리량(RU/s)을 공유합니다. 예를 들어 400RU/s로 데이터베이스를 프로비전하고 4개의 컨테이너를 포함하는 경우 4개의 컨테이너 모두 400RU/s를 공유합니다. 각 컨테이너에 덜 자주 액세스하여 최소 400RU/s보다 낮게 필요할 수 있는 개발 또는 테스트 환경에서 컨테이너를 공유 처리량 데이터베이스에 배치하면 비용을 최적화하는 데 도움이 될 수 있습니다.</p>
+
+
+  <p>예를 들어 개발 또는 테스트 계정에 4개의 컨테이너가 있다고 가정합니다. 전용 처리량(최소 400RU/초)을 사용하여 4개의 컨테이너를 만드는 경우 총 RU/s는 1,600RU/s가 됩니다. 반면 공유 처리량 데이터베이스(최소 400RU/s)를 만들고 컨테이너를 배치하면 총 RU/s는 단 400RU/s입니다. 일반적으로 공유 처리량 데이터베이스는 개별 컨테이너에서 보장된 처리량이 필요하지&#39;시나리오에 적합합니다.</p>
+
+
+  <p>설명서에 따라 개발 및 테스트 환경에 사용할 수 있는 <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/set-throughput#set-throughput-on-a-database" target="_blank">공유 처리량 데이터베이스를 만듭니</a> 다.</p>
+
+
+  <h2>Azure Database for PostgreSQL을 사용하여 데이터 계층 최적화</h2>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/services/postgresql/" target="_blank">Azure Database for PostgreSQL은 커뮤니티 버전 PostgreSQL</a> 에 엔터프라이즈급 기능을 제공하는 완전 관리형 서비스입니다. 특히 위기 상황에서 오픈 소스 기술이 지속적으로 증가함에 따라 PostgreSQL은 PostgreSQL을 사용하여 오픈 소스 상태를 유지하면서 애플리케이션의 일관성, 성능, 보안 및 내구성을 보장하기 위해 사용자의 채택이 증가하고 있습니다. 개발자 중심 환경과 비용에 최적화된 새로운 기능을 통해 Azure Database for PostgreSQL을 사용하면 Azure Database for PostgreSQL에서 데이터베이스 관리를 처리하는 동안 개발자가 애플리케이션에 집중할 수 있습니다.</p>
+
+
+  <h3>Azure Database for PostgreSQL의 예약된 용량 pricingNow&mdash;</h3>
+
+
+  <p>이제 Azure Database for PostgreSQL에서 사용할 수 있는 예약된 용량을 통해 Azure에서 완전히 관리되는 PostgreSQL 데이터베이스를 실행하는 비용을 관리합니다. 현재 사용 가능한 일반 종량제 결제 옵션에 비해 최대 60% 절감할 수 있습니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://azure.microsoft.com/en-us/pricing/details/postgresql/server/" target="_blank">Azure Database for PostgreSQL에서 가격 책정</a> 을 확인하세요.</p>
+
+
+  <h3>PostgreSQL의 고성능 스케일 아웃</h3>
+
+
+  <p>하이퍼스케일을 통해 단일 노드 PostgreSQL 데이터베이스의 고성능 수평 확장 기능을 활용합니다. 수동 분할의 높은 비용과 노력을 피하면서 한 데이터베이스에서 트랜잭션 및 분석을 수행하여 시간을 절약합니다.</p>
+
+
+  <p>오늘 <a href="https://docs.microsoft.com/en-us/azure/postgresql/quickstart-create-hyperscale-portal" target="_blank">Azure Database for PostgreSQL에서 하이퍼스케일</a> 을 시작합니다.</p>
+
+
+  <h3>오픈 소스 PostgreSQL과 호환 유지</h3>
+
+
+  <p>Azure Database for PostgreSQL을 활용하여 애플리케이션의 주요 재 아키텍처 없이 커뮤니티 버전 PostgreSQL의 많은 혁신, 버전 및 도구를 계속 즐길 수 있습니다. Azure Database for PostgreSQL은 확장 친화적이므로 지능형 성능, 쿼리 성능 Insights 및 Advanced Threat Protection과 같은 최고 품질의 엔터프라이즈급 기능을 지속적으로 손쉽게 유지하면서 PostgreSQL에서 최상의 시나리오를 계속 달성할 수 있습니다.</p>
+
+
+  <p>자세한 내용은 <a href="https://docs.microsoft.com/en-us/azure/postgresql/quickstart-create-hyperscale-portal" target="_blank">Azure Database for PostgreSQL의 제품 설명서를</a> 확인하세요.</p>

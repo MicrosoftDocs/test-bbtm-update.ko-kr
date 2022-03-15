@@ -1,0 +1,308 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3ceaa4f13d49a89e87925b854b49ca6555349d23
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897744"
+Slug: azure-source-volume-67
+Title: Azure.Source - 볼륨 67
+Summary: Microsoft는 PostgreSQL 성능 및 규모를 가속화하기 위해 Citus 데이터를 획득합니다. 이제 IoT Hub 디바이스 스트림이 공개 미리 보기로 제공됩니다. 미리 보기에서 OpenAPI 사양 v3에 대한 Azure API Management 지원; 그리고 훨씬 더.
+Content: >-
+  <h2>이제 미리 보기로 제공됩니다.</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/introducing-iot-hub-device-streams-in-public-preview/?ocid=AID765057&amp;wt.mc_id=CFID0409">공개 미리 보기에서 IoT Hub 디바이스 스트림 소개</a></h3>
+
+
+  <p>Azure IoT Hub 디바이스 스트림은 IoT 디바이스에 대한 보안 엔드투엔드 연결을 위한 기반을 제공하여 보안 및 조직 정책 준수의 필요성을 해결하는 새로운 PaaS 서비스입니다. IoT Hub 디바이스 스트림의 핵심은 두 개의 TCP/IP 지원 엔드포인트 간에 연결을 제공하는 데이터 전송 터널입니다. 터널의 한쪽은 IoT 디바이스이고 다른 쪽은 디바이스와 통신하려는 고객 엔드포인트입니다. IoT Hub 디바이스 스트림은 디바이스와 서비스 간에 교환되는 애플리케이션 트래픽의 프록시 역할을 하는 IoT Hub 클라우드 엔드포인트를 활용하여 엔드투엔드 연결 요구 사항을 해결합니다. IoT Hub 디바이스 스트림은 디바이스가 방화벽 뒤 또는 프라이빗 네트워크 내에 배치되는 경우에 특히 유용합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-Device-Streams/player?format=ny" width="576"></iframe></p>
+
+
+  <p align="center"><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Hub-Device-Streams?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure IoT Hub 디바이스 스트림</a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/announcing-the-preview-of-openapi-specification-v3-support-in-azure-api-management/?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure API Management에서 OpenAPI 사양 v3 지원 미리 보기 발표 </a></h3>
+
+
+  <p>Azure API Management는 API를 설명하는 광범위하게 사용되는 오픈 소스 표준의 최신 버전인 OpenAPI 사양 v3 &ndash; 의 미리 보기 지원을 방금 도입했습니다. 이 기능의 구현은 OpenAPI.NET SDK를 기반으로 합니다. OpenAPI 사양은 널리 채택된 산업 표준으로, 언어에 구애받지 않으며 이해하기 쉬운 형식으로 구현에서 API를 추상화할 수 있습니다. OpenAPI 사양(이전의 Swagger)의 광범위한 채택으로 인해 광범위한 도구 에코시스템이 생성되었습니다.&nbsp; API가 OpenAPI 사양 파일에 정의된 경우 APIM(Azure API Management)에서 쉽게 가져올 수 있습니다. APIM은 조직이 API를 외부, 파트너 및 내부 개발자에게 게시하여 해당 데이터 및 서비스의 잠재력을 발휘하도록 도와줍니다. 백 엔드 API를 APIM으로 가져오면 APIM API는 백 엔드 API의 페이&ccedil;드가 됩니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/regulatory-compliance-dashboard-in-azure-security-center-now-available/?ocid=AID765057&amp;wt.mc_id=CFID0409">이제 Azure Security Center의 규정 준수 대시보드를 사용할 수 있습니다.</a></h3>
+
+
+  <p>ASC(Azure Security Center)의 규정 준수 대시보드는 Azure 환경의 지속적인 평가를 기반으로 지원되는 일련의 표준 및 규정에 대한 규정 준수 상태에 대한 인사이트를 제공합니다. ASC 규정 준수 대시보드는 대시보드 내에서 직접 권장 사항을 확인하여 규정 준수 상태를 개선하는 데 도움이 되도록 설계되었습니다. 각 권장 사항을 클릭하여 권장 사항을 구현해야 하는 리소스를 포함하여 세부 정보를 검색합니다. 규정 준수 대시보드 미리 보기는 Azure Security Center의 표준 가격 책정 계층 내에서 사용할 수 있으며 처음 30일 동안 무료로 사용해 볼 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ae98968-0336-4f97-8cdf-321cb5150f59.png"><img alt="Screenshot of the regulatory compliance dashboard in the Azure Security Center" border="0" height="344" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/0ae98968-0336-4f97-8cdf-321cb5150f59.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Azure Security Center의 규정 준수 대시보드" width="640"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/updates/public-preview-postgresql-read-replicas/?ocid=AID765057&amp;wt.mc_id=CFID0409">공개 미리 보기: Azure Database for PostgreSQL에서 복제본 읽기</a></h3>
+
+
+  <p>이제 단일 Azure Database for PostgreSQL 서버(마스터)에서 동일한 Azure 지역 내에서 최대 5개의 읽기 전용 서버(읽기 복제본)로 데이터를 복제할 수 있습니다. 이 기능은 PostgreSQL&#39;네이티브 비동기 복제를 사용합니다. 읽기 복제본을 사용하면 읽기 집약적 워크로드를 확장할 수 있습니다. 읽기 복제본은 BI 및 보고 시나리오에도 사용할 수 있습니다. 복제본에 대한 복제를 중지하도록 선택할 수 있습니다. 이 경우 일반 읽기/쓰기 서버가 됩니다. 복제본은 일반적인 독립형 Azure Database for PostgreSQL 서버와 비슷한 방식으로 관리할 수 있는 새 서버입니다. 각 읽기 복제본의 경우 vCore에서 프로비전된 컴퓨팅 및 프로비전된 스토리지에 대한 요금이 GB/월 단위로 청구됩니다.</p>
+
+
+  <h2>이제 일반 공급</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/hdinsight-tools-for-visual-studio-code-now-generally-available/?ocid=AID765057&amp;wt.mc_id=CFID0409">이제 HDInsight Tools for Visual Studio Code 일반 공급</a></h3>
+
+
+  <p>이제 Azure HDInsight Tools for Visual Studio Code Windows, Linux 및 Mac에서 일반 공급됩니다. 이러한 도구는 Apache Hive 일괄 처리 작업, 대화형 Hive 쿼리 및 PySpark 작업에 대한 동급 최고의 제작 환경을 제공합니다. 이 도구는 플랫폼에 대한 제약 조건 및 종속성을 제거하는 플랫폼 간 경량 키보드 중심 코드 편집기를 제공합니다. Azure HDInsight Tools for Visual Studio Code Visual Studio Marketplace에서 다운로드할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/HDInsightVSCodeReadme.gif"><img alt="Animated GIF showing Azure HDInsight Tools for Visual Studio Code" border="0" height="360" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/HDInsightVSCodeReadme.gif" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Azure HDInsight Tools for Visual Studio Code" width="640"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-service-bus-and-azure-event-hubs-expand-availability/?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure Service Bus 및 Azure Event Hubs 가용성 확장</a></h3>
+
+
+  <p>가용성 영역은 데이터 센터 오류로부터 애플리케이션 및 데이터를 보호하는 고가용성 제품입니다. 가용성 영역 지원은 이제 영역 중복 데이터 센터가 있는 모든 Azure 지역에서 Azure Service Bus 프리미엄 및 Azure Event Hubs 표준에 대해 일반 공급됩니다. 이 기능은 기존 네임스페이스에서&mdash; 작동하지 않습니다&rsquo;. 이 기능을 사용하려면 새 네임스페이스를 프로비전해야 합니다.&nbsp; Azure Service Bus Premium 및 Azure Event Hubs 표준에 대한 가용성 영역 지원은 미국 동부 2, 미국 서부 2, 서유럽, 북유럽, 프랑스 중부 및 동남 아시아 지역에서 사용할 수 있습니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/cognitive-services-certifications-and-availability/?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure Cognitive Services는 중요한 인증, 더 큰 가용성 및 새로운 통합 키를 추가합니다.</a></h3>
+
+
+  <p>지난 6개월 동안 Cognitive Services의 서비스에 31개의 인증을 추가했으며 2019년에는 더 많은 인증을 추가할 예정입니다. 이러한 인증을 통해 수백 개의 의료, 제조 및 재무 사용 사례가 지원됩니다. 또한 Cognitive Services는 이제 고객 데이터가 미사용 상태로 저장되는 위치에 대해 더 많은 보증을 제공합니다. 이러한 보증은 Core Services를 Microsoft Azure 여러 Cognitive Services를 졸업하여 사용하도록 설정되었습니다. 또한 Cognitive Services의 글로벌 공간은 지난 몇 개월 동안 &mdash; 15개에서 25개 Azure 데이터 센터 지역으로 확장되었습니다. 최근에 여러 서비스의 새 번들을 출시하여 Computer Vision, Content Moderator, Face, Text Analytics, Language Understanding 및 번역기 Text와 같은 일반 공급 서비스의 대부분에 단일 API 키를 사용할 수 있게 했습니다.</p>
+
+
+  <h3>또한 일반 공급</h3>
+
+
+  <p>마이그레이션하는 동안 원본 데이터베이스가 온라인 상태로 유지되는 동안 Azure Database Migration Service에서 일반적으로 사용할 수 있는 기능에 액세스하여 SQL Server, PostgreSQL 및 MySQL용 Amazon RDS를 Azure로 마이그레이션합니다.</p>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/support-for-amazon-rds-for-sql-server-to-azure-sql-database-online-migrations/?ocid=AID765057&amp;wt.mc_id=CFID0409">온라인 마이그레이션을 Azure SQL Database SQL Server Amazon RDS 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/support-for-amazon-rds-for-postgresql-to-azure-database-for-postgresql-online-migrations/?ocid=AID765057&amp;wt.mc_id=CFID0409">PostgreSQL용 Amazon RDS에서 Azure Database for PostgreSQL로 온라인 마이그레이션 지원</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/support-for-amazon-rds-for-mysql-to-azure-database-for-mysql-online-migrations/?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure Database for MySQL 온라인 마이그레이션에 대한 Amazon RDS for MySQL 지원</a></li>
+  </ul>
+
+
+  <h2>새로운 기능 및 업데이트 사항</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/microsoft-and-citus-data-providing-the-best-postgresql-service-in-the-cloud/?ocid=AID765057&amp;wt.mc_id=CFID0409">Microsoft 및 Citus 데이터: 클라우드에서 최상의 PostgreSQL 서비스 제공</a></h3>
+
+
+  <p>목요일, Microsoft&nbsp; 는 기존 애플리케이션을 다시 설계할 필요 없이 PostgreSQL 데이터베이스를 확장하는 혁신적인 오픈 소스 확장인 Citus Data를 인수한다고 발표했습니다. Citus Data는 데이터와 쿼리를 여러 노드에 지능적으로 분산하여 탁월한 성능과 확장성을 제공하므로 분할이 간단해집니다. Citus 데이터는 PostgreSQL에 대한 확장(포크 아님)로 패키지되므로 고객은 PostgreSQL의 독점 구현에 비해 훨씬 더 빠른 쿼리를 통해 커뮤니티 PostgreSQL의 모든 혁신을 활용할 수 있습니다. 자세한 내용은 Azure Data의 회사 부사장인 Rohan Kumar가 이 게시물에서 확인할 수 있습니다. <a href="https://blogs.microsoft.com/blog/2019/01/24/microsoft-acquires-citus-data-re-affirming-its-commitment-to-open-source-and-accelerating-azure-postgresql-performance-and-scale/?ocid=AID765057&amp;wt.mc_id=CFID0409">Microsoft는 Citus Data를 획득하여 오픈 소스에 대한 약속을 다시 확인하고 Azure PostgreSQL 성능 및 규모를 가속화</a>합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/export-data-in-near-real-time-from-azure-iot-central/?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure IoT Central에서 거의 실시간으로 데이터 내보내기</a></h3>
+
+
+  <p>이제 Azure IoT Central 앱에서 거의 실시간으로 Azure Event Hubs 및 Azure Service Bus 데이터를 내보낼 수 있습니다. 연속 데이터 내보내기에서 새 기능을 사용하여 사용자 지정 웜 경로 및 콜드 경로 처리 및 IoT 데이터에 대한 분석을 위해 사용자 고유의 Azure Event Hubs, Azure Service Bus 및 Azure Blob Storage 인스턴스로 데이터를 내보냅니다. IoT Central에서 연속 데이터 내보내기를 사용하여 디바이스 데이터를 Azure Blob Storage, Azure Event Hub 및 Azure Service Bus 내보내는 방법을 알아보려면 사물 인터넷 쇼의 이 에피소드를 시청하세요. &rsquo;측정값, 디바이스 및 디바이스 템플릿 데이터를 대상으로 내보내도록 연속 내보내기를 설정하는 방법과 이 데이터를 사용하는 방법도 알아봅니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Export-data-from-your-IoT-Central-app-to-Azure-Event-Hubs-and-Azure-Service-Bus/player?format=ny" width="576"></iframe></p>
+
+
+  <p align="center"><a href="https://channel9.msdn.com/Shows/Internet-of-Things-Show/Export-data-from-your-IoT-Central-app-to-Azure-Event-Hubs-and-Azure-Service-Bus?ocid=AID765057&amp;wt.mc_id=CFID0409">IoT Central 앱에서 Azure Event Hubs 및 Azure Service Bus 데이터 내보내기</a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/hdinsight-metastore-migration-tool-open-source-release-now-available/?ocid=AID765057&amp;wt.mc_id=CFID0409">HDInsight Metastore 마이그레이션 도구 오픈 소스 릴리스 사용 가능</a></h3>
+
+
+  <p>Microsoft Azure HMMT(HDInsight Metastore 마이그레이션 도구)는 Hive 메타스토어에 대량 편집을 적용하는 데 사용할 수 있는 오픈 소스 셸 스크립트입니다. HMMT는 Azure HDInsight의 데이터 마이그레이션과 관련된 문제에 대한 대기 시간이 짧고 설치되지 않는 솔루션입니다. 이 블로그 게시물에서는 HMMT가 Hive 메타스토어 및 Hive 스토리지 패턴, HMMT의 디자인과 관련하여 어떻게 설명되는지에 대해 설명하고 초기 설정 단계를 설명하고 마지막으로, 일부 샘플 마이그레이션은 HMMT를 사용하여 사용 및 가치를 시연하여 설명하고 해결합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/azure-backup-now-supports-powershell-and-acls-for-azure-files/?ocid=AID765057&amp;wt.mc_id=CFID0409">이제 Azure Backup에서 Azure Files용 PowerShell 및 ACL을 지원합니다.</a></h3>
+
+
+  <p>이제 Azure Backup은 미리 보기에서 Azure 파일에 대한 새로운 기술 파일 시스템(NTFS) ACL(액세스 제어 목록)을 보존하고 복원할 수 있도록 지원합니다. 이제 PowerShell을 사용하여 Azure 파일 공유에 대한 백업을 스크립깅할 수 있습니다. PowerShell 명령을 사용하여 백업을 구성하거나, 주문형 백업을 수행하거나, Azure Backup으로 보호되는 파일 공유에서 파일을 복원합니다. Azure Files 포털에서 &ldquo;백업&rdquo; 관리 기능을 사용하여 주문형 백업을 수행하고, 파일 공유 또는 개별 파일 및 폴더를 복원하고, 백업 예약에 사용되는 정책을 변경할 수도 있습니다. 파일 공유를 백업하는 Recovery Services 자격 증명 모음으로 이동하고 Azure 파일 공유를 백업하는 데 사용되는 정책을 편집할 수도 있습니다. Azure 파일 공유의 백업 및 복원된 작업에 대한 백업 경고가 활성화되어 선택한 이메일 주소에 대한 작업 실패 알림을 구성할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/284947b2-61b7-44b1-9d20-1bae6f2b303c.png"><img alt="Screenshot from the Azure portal showing the Azure Files portal and highlighting the Manage backups button" height="131" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/284947b2-61b7-44b1-9d20-1bae6f2b303c.png" title="Azure Files 포털에서 백업 관리" width="640"></a></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/analyze-data-in-azure-data-explorer-using-kql-magic-for-jupyter-notebook/?ocid=AID765057&amp;wt.mc_id=CFID0409">Jupyter Notebook용 KQL 매직을 사용하여 Azure Data Explorer에서 데이터 분석</a></h3>
+
+
+  <p>Jupyter Notebook을 사용하면 라이브 코드, 수식, 시각화 및 설명 텍스트가 포함된 문서를 만들고 공유할 수 있습니다. 여기에는 데이터 정리 및 변환, 숫자 시뮬레이션, 통계 모델링 및 기계 학습이 포함됩니다. KQL 매직 명령은 Jupyter Notebook에서 Python 커널의 기능을 확장합니다. KQL 매직을 사용하면 KQL 쿼리를 기본적으로 작성하고 Microsoft Azure 데이터 탐색기에서 데이터를 쿼리할 수 있습니다. Python과 KQL 간에 쉽게 교환하고 KQL 렌더링 명령과 통합된 풍부한 Plot.ly 라이브러리를 사용하여 데이터를 시각화할 수 있습니다. KQL 매직은 쿼리를 실행할 데이터 원본으로 Azure Data Explorer, 애플리케이션 Insights 및 Log Analytics를 지원합니다. KQL 매직은 Azure Notebooks, Jupyter Lab 및 Visual Studio Code Jupyter 확장에서도 작동합니다.</p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/hyperledger-fabric-updates-now-available/?ocid=AID765057&amp;wt.mc_id=CFID0409">Hyperledger 패브릭 업데이트 사용 가능</a></h3>
+
+
+  <p>Hyperledger Fabric은 모듈식 구성 요소를 제공하는 엔터프라이즈급 분산 원장이므로 다양한 시나리오에 맞게 구성 요소를 사용자 지정할 수 있습니다. 이제 Azure Marketplace에서 Hyperledger Fabric 버전 1.3을 지원하는 Hyperledger Fabric용 업데이트된 템플릿을 다운로드할 수 있습니다. 이 솔루션에서 제공하는 자동화는 Hyperledger Fabric 소프트웨어 스택을 사용하여 다중 멤버 컨소시엄을 보다 쉽게 배포, 구성 및 제어할 수 있도록 설계되었습니다. 블록 토크의 이 에피소드는 Hyperledger Fabric 원장을 안내하고 사용자 환경에서 Hyperledger Fabric의 배포를 사용자 지정하는 데 사용할 수 있는 핵심 기능에 대해 설명합니다.&nbsp;</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Blocktalk/Hyperledger-Fabric-on-Azure/player?format=ny" width="576"></iframe></p>
+
+
+  <p align="center"><a href="https://channel9.msdn.com/Shows/Blocktalk/Hyperledger-Fabric-on-Azure?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure의 Hyperledger Fabric</a></p>
+
+
+  <h3>추가 뉴스 및 업데이트</h3>
+
+
+  <ul>
+   <li><a href="https://azure.microsoft.com/en-us/updates/azure-fxt-edge-filer-avere-update/?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure FXT Edge Filer(Avere 업데이트)</a></li>
+   <li><a href="https://azure.microsoft.com/en-us/updates/m-series-virtual-machines-vms-are-now-available-in-australia-central-region/?ocid=AID765057&amp;wt.mc_id=CFID0409">이제 오스트레일리아 중부 지역에서 M 시리즈 VM(가상 머신)을 사용할 수 있습니다.</a></li>
+  </ul>
+
+
+  <h2>기술 관련 내용</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/connecting-node-red-to-azure-iot-central/?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure IoT Central에 Node-RED 연결</a></h3>
+
+
+  <p>이 게시물에서 Azure IoT 수석 PM 관리자인 Peter Provost는 Raspberry Pi 및 Node-RED를 사용하여 온도/습도 센서를 Azure IoT Central에 연결하는 것이 얼마나 간단한지 보여줍니다. Node-RED는 IoT용으로 설계된 흐름 기반 끌어서 놓기 프로그래밍 도구입니다. 이를 통해 웹 브라우저에서 강력한 자동화 흐름을 만들어 IoT 프로젝트 개발을 간소화할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a484c5a-08a6-416f-8705-cdf552be2e41.png"><img alt="Screenshot of the Node-RED flow for this example" border="0" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/3a484c5a-08a6-416f-8705-cdf552be2e41.png" style="border: 0px currentcolor; border-image: none; background-image: none;" title="Node-RED 흐름"></a></p>
+
+
+  <h3><a href="https://techcommunity.microsoft.com/t5/ITOps-Talk-Blog/Getting-started-with-Azure-Blueprints/ba-p/323449?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure Blueprints 시작</a></h3>
+
+
+  <p>Azure Blueprints(현재 미리 보기 상태)를 사용하면 정책 이니셔티브( RBAC 설정 및 ARM 템플릿을 포함하여 구독 기준으로 적용할)를 정의할 수 있으므로 해당 구독에서 만든 리소스가 해당 설정을 준수하거나 감사 정책의 경우 비준수로 표시됨을 알고 대규모로 구성을 쉽게 설정할 수 있습니다. Sonia는 Azure Policy 및 RBAC와 같은 구성 컨트롤을 그룹화하는 방법을 보여 주는 서비스에 대한 소개를 제공하고, 예제 시나리오를 사용하여 Blueprints를 사용하여 규정 준수 및 거버넌스를 간소화하는 방법과 이유를 보여 줍니다.</p>
+
+
+  <h3><a href="https://blog.revolutionanalytics.com/2019/01/rstudio-server-on-azure.html">Azure의 RStudio Server</a></h3>
+
+
+  <p>RStudio Server Pro 이제 Azure Marketplace에서 R 프로그래밍 언어에 대한 최고의 IDE를 사용할 수 있으므로 원하는 가상 머신에서 시작할 수 있습니다. David는 이 새로운 제품의 이점에 대해 자세히 설명하고 RStudio Server의 자체 관리형 인스턴스를 실행하는 데 관심이 있는 개발자를 위한 대체 솔루션도 나열합니다.</p>
+
+
+  <h3><a href="https://medium.com/microsoftazure/sneak-peek-making-petabyte-scale-data-actionable-with-adx-part-2-b76d69a12ef6">미리 보기: ADX 2부를 사용하여 Petabyte 크기 조정 데이터를 실행 가능하게 만들기</a></h3>
+
+
+  <p>GitHub 무료 프라이빗 리포지토리의 최근 발표를 축하하기 위해 Ari는 Azure Data Explorer&quot; 시리즈로 Petabyte Scale Data Actionable 만들기의 &quot;2부에서 작업할&#39;있는 작업의 절정을 발표했습니다.</p>
+
+
+  <h2>Azure 쇼</h2>
+
+
+  <h3><a href="https://azpodcast.azurewebsites.net/post/Episode-263-Partner-Spotlight-Aqua-Security">Azure 팟캐스트 | 에피소드 263 - 파트너 스포트라이트 - 아쿠아 보안</a></h3>
+
+
+  <p>Aqua Security의 기술 전도사이자 Kubernetes의 모든 보안 마스터인 Liz Rice는 보안에 대한 그녀의 철학에 대해 이야기하고 Azure, 온-프레미스 또는 클라우드에서 컨테이너 워크로드를 보호하는 방법에 대한 몇 가지 유용한 팁-n-트릭을 제공합니다.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://azpodcast.blob.core.windows.net/episodes/Episode263.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/Azure-Friday/An-intro-to-Azure-Cosmos-DB-JavaScript-SDK-20?ocid=AID765057&amp;wt.mc_id=CFID0409">Azure Friday | Azure Cosmos DB JavaScript SDK 2.0 소개</a></h3>
+
+
+  <p>Chris Anderson은 Donovan Brown과 함께 Azure Cosmos DB JavaScript SDK 2.0에 대해 논의합니다. 이 기능은 다중 지역 쓰기에 대한 지원을 추가하며, 새로운 흐름 스타일 개체 모델&mdash; 메이킹을 통해 약속 및 기타 최신 JavaScript 기능에 대한 명시적 URL&mdash; 및 지원 없이 Azure Cosmos DB 리소스를 더 쉽게 참조할 수 있습니다. 또한 TypeScript로 작성되었으며 최신 TypeScript 3.0을 지원합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/Azure-Friday/An-intro-to-Azure-Cosmos-DB-JavaScript-SDK-20/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/AI-Show/Learn-by-Doing-A-Look-at-Samples?ocid=AID765057&amp;wt.mc_id=CFID0409">AI Show | 다음을 수행하여 알아보기: 샘플 살펴보기</a></h3>
+
+
+  <p>Cognitive Services에 사용할 수 있는 샘플 프로젝트의 환경을 이해합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/AI-Show/Learn-by-Doing-A-Look-at-Samples/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/5-Things/Five-Reasons-Why-You-Should-Check-Out-Cosmos-DB?ocid=AID765057&amp;wt.mc_id=CFID0409">5가지 | Cosmos DB를 체크 아웃해야 하는 5가지 이유</a></h3>
+
+
+  <p>거대한 Jenga 타워는 NoSQL 데이터베이스와 어떤 공통점이 있나요? 아무것도. 그러나 우리는 어쨌든 당신에게 둘 다 줄&#39;있습니다. 이 에피소드에서 버크와 재스민 그린어웨이는 오늘 Cosmos DB를 체크 아웃해야하는 다섯 가지 이유를 제공합니다. 그들은 또한 2x4&#39;만든 대형 타워와 젠가의 위험한 게임을하고, 누군가가 거의 분쇄됩니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/5-Things/Five-Reasons-Why-You-Should-Check-Out-Cosmos-DB/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://channel9.msdn.com/Shows/DevOps-Lab/Verifying-your-Database-Deployment-with-Azure-DevOps?ocid=AID765057&amp;wt.mc_id=CFID0409">DevOps 랩 | Azure DevOps 사용하여 데이터베이스 배포 확인</a></h3>
+
+
+  <p>Microsoft Ignite에 있는 동안 | 베를린 둘러보기에서 다미안은 Microsoft MVP Houssem Dellai에게 애플리케이션과 함께 데이터베이스를 배포하기 위한 몇 가지 옵션에 대해 설명합니다. Houssem은 프로덕션 배포가 성공하도록 하기 위한 영리한 사전 프로덕션 확인 프로세스를 포함하여 데이터베이스 변경 내용을 배포하는 몇 가지 다른 방법을 보여 줍니다. 데이터베이스 업그레이드는 종종 배포 프로세스에서 가장 무서운 부분이기 때문에 프로덕션 환경에 들어가기 전에 강력한 검사를 하는 것이 매우 중요합니다.</p>
+
+
+  <p align="center"><iframe allowfullscreen="" frameborder="0" height="324" src="https://channel9.msdn.com/Shows/DevOps-Lab/Verifying-your-Database-Deployment-with-Azure-DevOps/player?format=ny" width="576"></iframe></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=Ydgz4QINGNI">Azure Government의 관리 ID 개요</a></h3>
+
+
+  <p>Azure Government 비디오 시리즈의 이 에피소드에서 Steve Michelotti는 Azure Government 엔지니어링 팀의 Mohit Dewan과 Azure Government의 관리 ID에 대해 설명합니다. &rsquo;인증서, 연결 문자열, 키 또는 기타 비밀을 저장하든 관계없이 관리 ID는 도구 상자에 유용한 도구입니다. 이 비디오를 시청하여 Azure Government에서 관리 ID를 시작하고 실행하는 것이 얼마나 빠르고 쉬운지 확인합니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=Ydgz4QINGNI"><img alt="Thumbnail from the video, Overview of Managed Identities on Azure Government" border="0" height="270" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2b45a932-366c-4516-888f-abd9b2b0682b.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="YouTube에서 Azure Government의 관리 ID 개요 보기" width="480"></a></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=R--rdLMN-Wk">Azure 팁 및 요령 | Docker를 사용하여 컨테이너 이미지를 만드는 방법</a></h3>
+
+
+  <p>이 버전의 Azure 팁 및 Tricks에서는 Docker를 사용하여 애플리케이션을 실행하는 컨테이너 이미지를 만드는 방법을 알아봅니다. &rsquo;컨테이너 내에 폴더를 만들고 실행할 스크립트를 만드는 방법을 알아봅니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=R--rdLMN-Wk"><img alt="R--rdLMN-Wk" border="0" height="270" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b0c77a47-844f-43dc-8af3-9030e801e998.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="R--rdLMN-Wk" width="480"></a></p>
+
+
+  <h3><a href="https://www.youtube.com/watch?v=0Jx_oftPCLY">Azure 팁 및 요령 | Azure에서 여러 계정, 디렉터리 및 구독을 관리하는 방법</a></h3>
+
+
+  <p>Microsoft Azure 포털에서 여러 계정, 디렉터리 및 구독을 쉽게 관리하는 방법을 알아보세요. 이 비디오에서는 포털에 로그인하고 여러 계정을 관리하고, 계정과 디렉터리 간의 컨텍스트를 설정하고, 몇 가지 다른 수준에서 해당 청구 가능 구독으로 포털을 필터링하고 범위를 지정하는 방법을 알아볼&#39;있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cfa63b34-7655-4546-b9d5-2a4bb1c1c336.jpg"><img alt="Thumbnail from a video, How to manage multiple accounts, directories, and subscriptions in Azure" border="0" height="268" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/8168c65b-5c06-4bf6-8dcb-ffbc84f6488a.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="YouTube에서 Azure에서 여러 계정, 디렉터리 및 구독을 관리하는 방법 보기" width="480"></a></p>
+
+
+  <h3>Azure DevOps 팟캐스트 | 폴 해커의 DevOps 프로세스 및 마이그레이션 - 에피소드 020</h3>
+
+
+  <p>이 에피소드에서 폴 해커는 Azure DevOps 팟캐스트에 합류하여 DevOps 프로세스와 마이그레이션에 대해 논의합니다. 바울은 오늘날&rsquo; 주제에 대해 매우 흥미로운 관점을 가지고 있으며, 공간에서 떠오르는 패턴, Azure DevOps 마이그레이션하는 단계, 일반적인 과제(그리고 이를 극복하는 방법)에 대한 귀중한 통찰력을 제공합니다. 마이그레이션, DevOps 프로세스 등에 대한 그의 인사이트를 들어보세요.</p>
+
+
+  <p align="center">
+
+  <audio controls="" src="https://traffic.libsyn.com/preview/azuredevops/ADP_020.mp3">HTML5 오디오가 지원되지 않음</audio>
+
+  </p>
+
+
+  <h2>이벤트</h2>
+
+
+  <h3><a href="https://www.microsoft.com/ignite-the-tour?ocid=AID765057&amp;wt.mc_id=CFID0409">Microsoft Ignite | 더 투어</a></h3>
+
+
+  <p>심층 기술 교육을 통해 코딩하고, 클라우드 인프라를 최적화하고, 조직을 현대화하는 새로운 방법을 알아봅니다. 개발자와 기술 전문가가 전문가와 함께 계속 학습하는 장소에 참여하세요. 최신 개발자 도구 및 클라우드 기술을 살펴보고 기술을 새로운 영역에서 작업하는 방법을 알아봅니다. 클라우드 개발, 데이터, IT 및 비즈니스 인텔리전스의 미래에 대한 실질적인 통찰력과 모범 사례를 얻기 위해 커뮤니티와 커넥트. 가까운 도시를 찾아 오늘 등록하십시오. 2월에는 런던, 시드니, 홍콩, 워싱턴 DC를 방문합니다.</p>
+
+
+  <p align="center"><a href="https://www.microsoft.com/ignite-the-tour?ocid=AID765057&amp;wt.mc_id=CFID0409"><img alt="Graphic for Microsoft Ignite | The Tour" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/53b183e4-9cd5-43cc-abe4-0834ac8dc2c0.jpg" title="Microsoft Ignite | 더 투어"></a></p>
+
+
+  <h2>고객, 파트너 및 산업</h2>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/security-for-healthcare-through-vigilant-agents-and-virtual-patching/?ocid=AID765057&amp;wt.mc_id=CFID0409">클라우드 에이전트 및 가상 패치를 통한 의료 보안</a></h3>
+
+
+  <p>의료 조직의 경우 데이터의 보안 및 보호가 주요 가치이지만 맬웨어, 랜섬웨어 및 기타 악용과 같은 다양한 벡터에서 솔루션을 공격할 수 있습니다. 조직의 공격 표면은 복잡할 수 있으며, 이메일 및 웹 브라우저는 정교한 해커의 즉각적인 대상입니다. 한 Microsoft Azure 파트너인 XentiT(ex-ent-it)는 공격 표면의 복잡성에도 불구하고 의료 조직을 보호하는 데 전념하고 있습니다. XentIT는 심층적인 기능을 갖춘 다른 두 보안 서비스를 활용하고 자체 전문 지식을 추가하여 의료 조직이 모든 자산을 더 잘 모니터링하고 보호할 수 있는 대시보드 기반 보안 솔루션을 만듭니다.</p>
+
+
+  <p align="center"><img alt="Solution diagram showing the XentIT Cloud Security Stack for Azure - Standard" height="400" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/41b18c82-5eec-4d8b-8a1a-258fb6ec4072.png" title="Azure용 XentIT Cloud Security Stack - 표준" width="640"></p>
+
+
+  <h3><a href="https://azure.microsoft.com/en-us/blog/ai-iot-insider-labs-helping-transform-smallholder-farming/?ocid=AID765057&amp;wt.mc_id=CFID0409">AI &amp; IoT Insider Labs: 소규모 농업 혁신 지원</a></h3>
+
+
+  <p>Microsofts&rsquo; AI &amp; IoT Insider Labs는 모든 유형의 조직이 디지털 변환을 가속화하는 데 도움이 되도록 만들어졌습니다. AI &amp; IoT Insider Labs가 한 파트너인 SunCulture가 새로운 기술을 활용하여 케냐의 소규모 농부들을 위한 태양열 물 펌핑 및 관개 시스템을 제공하는 방법을 알아봅니다. 2017년 에어밴드 그랜트 펀드 우승자인 SunCulture는 지속 가능한 기술로 인해 가장 가난한 농부들조차도 물 부족을 더 악화하지 않고도 관개를 사용할 수 있을 만큼 저렴하게 만들 수 있다고 믿었습니다. 이 회사는 케냐 전역의 소액주들이 태양열로 구동되는 정밀 관개에 재정적으로 액세스할 수 있도록 하는 종량제 결제 모델을 지원하기 위해 IoT 플랫폼을 구축하기 시작했습니다.</p>
+
+
+  <hr>
+
+  <h3><a href="https://www.youtube.com/watch?v=2iNKyBFmSRM">클라우드 전문가 | Azure 이번 주 - 2019년 1월 25일</a></h3>
+
+
+  <p>이번 주 Azure에서 Lars는 공개 미리 보기, 새 Azure Portal 방문 페이지에서 Grafana에 대한 Azure Monitor 로그에 대해 이야기하고 Windows Server 2008에서 전환해야 할 때입니다.</p>
+
+
+  <p align="center"><a href="https://www.youtube.com/watch?v=2iNKyBFmSRM"><img alt="Thumbnail image from A Cloud Guru's Azure This Week for 25 January 2019" border="0" height="269" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/272ce3d0-cd4a-404c-893b-10c2153974fd.jpg" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="YouTube에서 2019년 1월 25일 클라우드 전문가의 Azure 이번 주 시청" width="480"></a></p>

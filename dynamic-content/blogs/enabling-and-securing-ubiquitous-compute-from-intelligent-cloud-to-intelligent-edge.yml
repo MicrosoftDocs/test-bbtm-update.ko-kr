@@ -1,0 +1,217 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 3feff799cd81ba2ea1d07990797bee8af5a0002c
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898001"
+Slug: enabling-and-securing-ubiquitous-compute-from-intelligent-cloud-to-intelligent-edge
+Title: 지능형 클라우드에서 지능형 에지로 유비쿼터스 컴퓨팅 사용 및 보호
+Summary: 기업은 중요 업무용 워크로드를 실행하기 위해 클라우드를 수용하고 있습니다. 온-프레미스 및 오프-프레미스에 연결된 디바이스의 수와 생성되는 데이터는 계속해서 증가하여 새로운 엔터프라이즈 네트워크 에지 아키텍처가 요구됩니다. 이를 지능형 에지라고 하며, 대기 시간을 줄이기 위해 데이터 원본 및 사용자에 더 가깝게 컴퓨팅합니다.
+Content: >-
+  <p>기업은 중요 업무용 워크로드를 실행하기 위해 클라우드를 수용하고 있습니다. 온-프레미스 및 오프-프레미스에 연결된 디바이스의 수와 생성되는 데이터는 계속해서 증가하여 새로운 엔터프라이즈 네트워크 에지 아키텍처가 요구됩니다. 이를 데이터 원본 및 사용자에 더 가깝게 지능형 에지 &ndash; 컴퓨팅이라고 하여 대기 시간을 줄입니다. 방대한 컴퓨팅 능력, 스토리지 및 다양한 서비스를 갖춘 인텔리전트 클라우드는 유사한 프로그래밍 모델을 사용하여 인텔리전트 에지와 협력하여 혁신적인 시나리오와 유비쿼터스 컴퓨팅을 가능하게 합니다. 네트워킹은 지능형 클라우드를 인텔리전트 에지와 통합하는 중요한 지원자입니다.</p>
+
+
+  <p>Azure 네트워킹 임무는 인텔리전트 클라우드에서 지능형 에지로 전달되고 관리되는 워크로드에 가장 안전하고 안정적이며 성능이 좋은 네트워크를 제공하는 것입니다. Microsoft는 서비스가 클라우드와 에지로 연결 및 확장되고, 보호되고, 최적의 성능으로 제공되고, 통찰력 있는 모니터링을 제공할 수 있도록 지속적으로 혁신하고 있습니다.</p>
+
+
+  <h2>Microsoft 글로벌 네트워크</h2>
+
+
+  <p>Microsoft는 Azure, Dynamics 365, Microsoft 365, LinkedIn, Xbox 및 Bing 포함한 모든 Microsoft 클라우드 서비스를 제공하는 세계&rsquo; 최대의 WAN(Wide Area Network) 중 하나를 실행합니다. WAN은 클라우드 서비스를 실행하는 모든 Microsoft 데이터 센터와 에지 사이트를 통해 고객 및 파트너에게 연결합니다. 이러한 에지 사이트는 전 세계에 전략적으로 위치하고 있습니다. 여기서는 인터넷 트래픽을 위해 인터넷 서비스 공급자와 트래픽을 교환하고 프라이빗 연결 트래픽을 위해 ExpressRoute 파트너와 트래픽을 교환합니다. 또한 에지 사이트에서 Azure Front Door 및 Azure Content Delivery Network 서비스를 사용하여 Microsoft 365 같은 자체 서비스의 환경을 향상시키고 가속화합니다. 글로벌 커버리지를 제공하기 위해 WAN은 130,000 마일 이상의 해저, 지상파 및 메트로 광섬유를 보유하고 있으며 최상의 네트워킹 환경을 제공하기 위해 내부 SDN (소프트웨어 정의 네트워킹) 기술을 사용하여 Microsoft에서 완벽하게 관리합니다. <a href="https://www.thousandeyes.com/resources/2018-public-cloud-performance-benchmark-report" target="_blank">Thousand Eyes</a>와 같은 업계 리더들은 글로벌 네트워크의 성과에 대해 보고했으며, 2018년 연구에서 <a href="https://www.lightreading.com/microsoft-beats-amazon-and-google-for-network-reliability---research/d/d-id/747402" target="_blank">가장 강력하고 일관된</a> 것으로 나타났습니다. 훌륭한 환경을 제공하는 한 가지 기본 원칙은 가능한 한 고객과 가까운 Microsoft 네트워크에 트래픽을 가져와서 가능한 한 오랫동안 Microsofts&rsquo; 네트워크에 유지하는 것입니다. Microsoft 서비스 데이터 센터 간의 모든 트래픽은 Microsofts&rsquo; 네트워크에서 완전히 유지되며 인터넷을 통과하지 않습니다.</p>
+
+
+  <p align="center"><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/188c4670-99d1-4ab6-929d-f71ee61e3393.png"><img alt="An image showing the core pillars of Azure Networking." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e1b20a6e-6ee7-49ad-a51b-4052efa37e38.png" title="Azure 네트워킹의 핵심 핵심 요소를 보여 주는 이미지입니다."></a></em></p>
+
+
+  <p align="center"><em>그림 1. Azure 네트워킹의 핵심 핵심 요소</em></p>
+
+
+  <h2>커넥트 및 확장</h2>
+
+
+  <p>최상의 인터넷 환경을 얻으려면 데이터가 사용자 또는 사용자에게 최대한 가깝게 Microsoft 네트워크를 입력하고 종료해야 합니다. 현재 160개 이상의 에지 사이트를 통해 사이트 수를 늘리려는 적극적인 계획이 있습니다. 이 계획은 <a href="https://azure.microsoft.com/blog/latency-is-the-new-currency-of-the-cloud-announcing-31-new-azure-edge-sites/" target="_blank">에지 사이트 확장 블로그</a>에서 자세히 확인할 수 있습니다. 또한 ExpressRoute meet-me 사이트의 수를 늘려 Azure 워크로드에 개인적으로 연결할 수 있는 유연성을 높이고 있습니다.</p>
+
+
+  <p>현재&#39;고도로 분산된 애플리케이션 환경에 대한 액세스 및 수집 데이터에 대한 연결 상태를 유지하는 것이 모든 기업에서 가장 중요합니다. 많은 기업이 예측할 수 없고 어려운 조건에서 운영해야 합니다. 예를 들어 에너지, 농업, 광업 및 운송은 네트워크 연결이 좋지 않은 원격, 농촌 또는 기타 격리된 위치에서 작동하는 경우가 많습니다. 위성<a href="https://azure.microsoft.com/blog/satellite-connectivity-expands-reach-of-azure-expressroute-across-the-globe/" target="_blank">용 ExpressRoute</a>는 이제 일반 공급되므로 위성 연결을 사용하여 Microsoft 클라우드 서비스에 액세스할 수 있습니다. 상업용 위성 별자리가 널리 사용 가능해짐에 따라 새로운 솔루션 아키텍처는 Microsoft에 액세스할 수 있는 향상된 저렴한 성능을 제공합니다.</p>
+
+
+  <p>지점 및 지점 연결에 대한 업계 암호화 표준인 MACsec은 이제 ExpressRoute Direct에서 미리 보기 기능으로 지원됩니다. ExpressRoute Direct 고객은 보안 및 규정 준수 요구 사항을 충족하기 위해 ExpressRoute 라우터에 대한 물리적 연결 간의 데이터 기밀성 및 무결성을 보장할 수 있습니다. 고객은 Azure Key Vault를 사용하여 MACsec 키의 수명 주기를 완전히 소유하고 관리합니다.</p>
+
+
+  <p>우리는 지하철 네트워크의 비용을 크게 줄이기 위해 광학 기술에 투자했습니다. ExpressRoute 파트너를 통해 사용할 수 있는 ExpressRoute 로컬이라는 새로운 ExpressRoute 회로 유형으로 이러한 절감액을 전달합니다. 데이터 센터 근처의 ExpressRoute 사이트를 선택하고 해당 데이터 센터의 데이터에만 액세스하는 경우 송신 가격은 ExpressRoute 로컬 회로 가격에 포함됩니다. 동일한 지역의 지역에 연결하려면 ExpressRoute 표준을 사용하고 전 세계 어디서나 ExpressRoute Premium 사용할 수 있습니다.</p>
+
+
+  <p>Microsoft 클라우드에 대한 새로운 <a href="https://docs.microsoft.com/azure/peering-service/" target="_blank">피어링 서비스는</a> 현재 미리 보기로 제공되며 엔터프라이즈급 인터넷 연결을 통해 인터넷 공급자 및 인터넷 교환 공급자와의 파트너십을 통해 Azure, Dynamics 365 및 Microsoft 365 액세스할 수 있습니다. 피어링 서비스는 또한 인터넷 대기 시간 원격 분석, 경로 모니터링 및 하이재킹, 누출 및 기타 국경 게이트웨이 프로토콜 잘못된 구성에 대한 경고를 제공합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/668d7b10-816b-4e94-9c10-279eb95b4ead.png"><em><img alt="Peering logos - update 2 - MR" border="0" height="183" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1b4e2f30-1504-4842-bc83-76c228b35bfe.png" style="border: 0px currentcolor; border-image: none; display: inline; background-image: none;" title="피어링 로고 - 업데이트 2 - MR" width="1024"></em></a></p>
+
+
+  <p align="center"><em>그림 2. 새 피어링 서비스를 지원하는 파트너 시작</em></p>
+
+
+  <p>구성 문제를 디버그하는 데 도움이 되도록 모든 VPN 게이트웨이 SKU에서 최대 10Gbps의 집계 암호화된 대역폭, IKE v1 및 패킷 캡처를 지원하도록 VPN 서비스를 개선했습니다. 또한 지점 및 사이트 간 VPN 서비스를 개선하여 Azure Active Directory 및 다단계 인증을 지원합니다. 또한 어디서나 Vnet에 액세스하기 위해 다운로드하고 실행할 수 있는 OpenVPN 클라이언트를 사용할 수 있도록 하고 있습니다.</p>
+
+
+  <p>Azure <a href="https://docs.microsoft.com/azure/virtual-wan/" target="_blank">Virtual WAN</a> 은 Azure 연결 서비스를 주요 SD-WAN 파트너와 단일 운영 인터페이스로 결합합니다. Azure Virtual WAN은 VNet, 사이트, 애플리케이션 및 사용자와 같이 전역적으로 분산된 스포크 집합 간에 유비쿼터스 연결을 제공하여 글로벌 전송 네트워크 아키텍처를 지원합니다. 허브 간 연결 및 모든 연결의 미리 보기가 크게 향상되었습니다. Virtual WAN 사용자는 전체 메시 연결을 위해 여러 허브를 연결하여 네트워크 아키텍처를 더욱 간소화할 수 있습니다. 또한 ExpressRoute 및 지점 및 사이트 간의 일반 공급은 이제 Virtual WAN에서 사용할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a924019f-7adb-48f3-9755-b8d7e4302b86.png"><em><img alt="An image showing Azure Virtual WAN full topology overview across customers sites and clients connecting to Azure." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c6b91680-8308-41be-b5bc-14c6a8c94dc3.png" title=" Azure에 연결하는 고객 사이트 및 클라이언트에서 Azure Virtual WAN 전체 토폴로지 개요"></em></a></p>
+
+
+  <p align="center"><em>그림 3. Azure에 연결하는 고객 사이트 및 클라이언트에서 Azure Virtual WAN 전체 토폴로지 개요</em></p>
+
+
+  <p>Virtual WAN에 대한 에코시스템 지원을 확장하기 위해 업계 리더들과 긴밀히 협력해 왔습니다. 오늘 Cisco와 Microsoft는 클라우드용 네트워크를 현대화하기 위해 협력하고 있다고 발표했습니다. 가장 큰 글로벌 및 전략적 파트너 중 하나인 Cisco는 Microsoft와 협력하여 Azure Virtual WAN 및 Office 365 Cisco SD-WAN 기술을 통합하여 Azure 및 Office 365 대한 원활하고 분산되고 최적의 지점 연결을 가능하게 합니다.</p>
+
+
+  <p>또한 <a href="https://www.cloudgenix.com/microsoft-azure/" target="_blank">Cloudgenix</a>, <a href="https://www.fortinet.com/azure-vwan" target="_blank">Fortinet</a>, <a href="https://www.nuagenetworks.net/our-partners/nuage-networks-virtualized-cloud-interconnect-for-azure/" target="_blank">Nokia-Nuage</a> 및 <a href="https://www.silver-peak.com/company/tech-partners/cloud/microsoft-azure" target="_blank">Silver Peak</a>를 포함한 다른 파트너는 Virtual WAN과의 통합을 완료했으며 즉시 사용할 수 있습니다.</p>
+
+
+  <h2>IPv6</h2>
+
+
+  <p>이중 스택(IPv4 + IPv6) VNet은 이달 말 일반 공급될 예정입니다. 클라우드의 첫 번째 기능인 Azure를 통해 고객은 자체 IPv6 프라이빗 공간을 VNet으로 가져올 수 있으므로 라우팅 변경이 필요하지 않습니다. IPv6을 사용하면 고객이 IPv4 고갈 문제를 해결하고, 규정 요구 사항을 충족하며, Azure 기반 애플리케이션을 사용하여 성장하는 모바일 및 IoT 시장으로 확장할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/cc6d0976-5a7c-4899-b11b-24d2567d3f1c.png"><em><img alt="An image showing an architectural diagram of an Azure VNet routing with IPv6 between VMs, subnet and Load Balancer." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d6d9b01c-36a9-45d0-9709-296df5ec6985.png" title="VM, 서브넷 및 Load Balancer 간에 IPv6을 사용하여 Azure VNet 라우팅의 아키텍처 다이어그램"></em></a></p>
+
+
+  <p align="center"><em>그림 4. VM, 서브넷 및 Load Balancer 간에 IPv6을 사용하여 Azure VNet 라우팅의 아키텍처 다이어그램</em></p>
+
+
+  <h2>보호</h2>
+
+
+  <h3>제로 트러스트 네트워킹 달성</h3>
+
+
+  <p>클라우드 애플리케이션과 모바일 인력은 보안 경계를 다시 정의했습니다. 새 경계는 조직의 물리적 위치에 의해 정의되지 않으며&rsquo;, 이제 회사 리소스 및 서비스를 호스트, 저장 또는 액세스하는 모든 액세스 지점으로 확장됩니다.</p>
+
+
+  <p><a href="https://www.microsoft.com/security/zero-trust" target="_blank">제로 트러스트 모델은</a> 회사 방화벽 뒤에 있는 모든 것이 안전하다고 믿는 대신 위반을 가정하고 통제되지 않은 네트워크에서 시작된 것처럼 각 요청을 확인합니다. 요청이 시작된 위치 또는 액세스하는 리소스에 관계없이 제로 트러스트는 신뢰하지 말고 항상 확인하도록 &ldquo;가르칩니다.&rdquo;</p>
+
+
+  <p>Azure 네트워킹 서비스는 가시성을 향상시키고 악의적인 행위자가 네트워크를 통해 횡적으로 이동하는 것을 방지하는 중요한 컨트롤을 제공합니다. 더 심층적인 소프트웨어 정의 마이크로 세분화 및 실시간 위협 방지, 엔드 투 엔드 암호화, 모니터링 및 분석을 포함하여 네트워크를 분할해야 합니다.</p>
+
+
+  <h3>모든 Azure 지역으로 확장된 Azure Private Link &ndash;</h3>
+
+
+  <p>Azure <a href="https://azure.microsoft.com/services/private-link/" target="_blank">Private Link</a> 는 프라이빗 가상 네트워크에 Azure 서비스를 제공합니다. Storage, SQL Database 및 Azure Synapse Analytics와 같은 지원되는 Azure 서비스는 개인 IP 주소를 통해 사용할 수 있으므로 공용 인터넷에 대한 ACL(액세스 제어 목록)을 열 수 없습니다. Private Link를 통과하는 트래픽은 항상 Microsoft 백본 네트워크에 있고 공용 인터넷에 들어가지 않습니다. PaaS(Platform as a Service) 리소스는 VPN 또는 ExpressRoute 프라이빗 피어링을 통해 온-프레미스에서 개인적으로 액세스할 수 있으므로 ACL을 단순하게 유지할 수 있습니다. 오늘부터 Private Link는 모든 Azure 공용 지역에서 사용할 수 있습니다.</p>
+
+
+  <p align="center"><em><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/40bb7550-fee1-4904-8831-69036dcda262.png"><img alt="An image showing an architectural diagram of Private Link deployed cross-premises." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/eaad747a-d5b9-467c-9282-d2ed52686ef2.png" title=" 프라이빗 링크 배포 크로스-프레미스의 아키텍처 다이어그램"></a></em></p>
+
+
+  <p align="center"><em>그림 5. 프라이빗 링크 배포 크로스-프레미스의 아키텍처 다이어그램</em></p>
+
+
+  <p>Azure Private Link를 사용하여 Azure는 기본 제공 데이터 반출 보호를 구현하여 데이터 거버넌스 및 규정 준수를 제공하는 최초의 클라우드입니다. 이렇게 하면 서비스 프런트 엔드 대신 개별 PaaS 인스턴스가 프라이빗 엔드포인트로 매핑되므로 신뢰할 수 있는 네트워크 내의 악의적인 행위자가 비보안 계정에 데이터를 반출할 수 없는 제로 트러스트 네트워킹에 대한 목표에 한 걸음 더 가까이 다가갈 수&rsquo; 있습니다. 또한 Private Link는 Azure의 SaaS(Software as a Service) 공급자가 고객에게 동일한 기능을 확장할 수 있도록 지원합니다. Snowflake는 프로그램의 얼리 어답터이며 더 많은 파트너 서비스를 따라야 합니다.</p>
+
+
+  <p>Azure Firewall Manager는 클라우드 기반 보안 경계에 대한 중앙 보안 정책 및 경로 관리를 제공하는 새로운 보안 관리 서비스입니다. Azure는 현재 Azure Firewall 및 Firewall Manager를 통해 트래픽 거버넌스, 라우팅 제어 및 타사 통합 보안을 제공하는 유일한 클라우드 공급자입니다. 전역 관리자는 중앙에서 허브 및 스포크 아키텍처를 만들고 보안 또는 라우팅 정책을 보안 가상 허브라고 하는 허브와 연결할 수 있습니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/34104637-41c5-4850-926f-fd7cd5eaa73d.png"><em><img alt="A diagram of Azure Firewall Manager deployed inside Secured Virtual WAN Hubs." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1a08b8b4-edb5-4c79-b391-c83fe3c007e3.png" title="보안 Virtual WAN Hubs 내에 배포된 Azure Firewall Manager 다이어그램"></em></a></p>
+
+
+  <p align="center"><em>그림 6. 보안 Virtual WAN Hubs 내에 배포된 Azure Firewall Manager 다이어그램</em></p>
+
+
+  <p>신뢰할 수 있는 보안 파트너와 함께 친숙한 업계 최고의 타사 SECaaS(Security as a Service) 제품을 사용하여 사용자의 인터넷 액세스를 보호할 수 있습니다. 신뢰할 수 있는 보안 파트너로서 <a href="https://www.zscaler.com/products/zscaler-internet-access" target="_blank">ZScaler</a>, <a href="https://www.iboss.com/" target="_blank">iboss</a> 및 <a href="https://www.checkpoint.com/" target="_blank">Checkpoint</a> (출시 예정)와의 파트너십을 발표하게 되어 매우 기쁩니다.</p>
+
+
+  <h3>이제 Azure Firewall 위협 인텔리전스 기반 필터링이 일반 공급됩니다.</h3>
+
+
+  <p><a href="https://docs.microsoft.com/azure/firewall/threat-intel" target="_blank">이제 위협 인텔리전스 기반 필터링을</a> 사용하여 알려진 악성 IP 주소와 도메인 간의 트래픽을 거의 실시간으로 경고하고 거부하도록 Azure 방화벽을 구성할 수 있습니다. IP 주소 및 도메인은 Microsoft 위협 인텔리전스 피드에서 제공됩니다.</p>
+
+
+  <p>또한 WAF( <a href="https://azure.microsoft.com/en-us/services/web-application-firewall/" target="_blank">웹 애플리케이션 방화벽</a> )를 WAF 봇 보호, 사이트별 WAF 정책 및 지역 필터링의 세 가지 새로운 기능으로 확장했습니다. Azure Front Door에서 설정된 Azure 관리형 봇 보호 규칙은 다양한 범주의 봇을 검색하고 고객이 그에 따라 작업을 설정할 수 있도록 합니다. 고객은 네트워크 에지에서 악성 봇을 차단하여 좋은 봇이 애플리케이션 백 엔드에 도달하고 알 수 없는 봇을 다른 사이트로 로그하거나 리디렉션할 수 있습니다. Azure 관리형 봇 보호 규칙 집합은 Azure Application Gateway v2 SKU에서 미리 보기로도 제공됩니다. Application Gateway를 사용하여 사이트당 WAF 정책을 사용하면 고객이 단일 Application Gateway에서 호스트되는 다양한 웹 애플리케이션에 대해 WAF 정책을 지정할 수 있습니다. 이렇게 하면 세분화된 보안 정책을 사용할 수 있으며 사이트당 추가 배포를 만들 필요가 없습니다. Azure Application Gateway는 v2 SKU에서 미리 보기로 기존 사용자 지정 규칙을 사용하여 지역 필터를 도입합니다. 이 기능을 사용하면 기존 IP/IP 범위 기반 사용자 지정 규칙을 확장하여 국가를 일치 기준으로 포함하고 그에 따라 조치를 취할 수 있습니다. 이렇게 하면 지정된 국가의 트래픽을 제한하거나 일련의 국가의 트래픽만 허용할 수 있습니다.</p>
+
+
+  <p>최근에 <a href="https://azure.microsoft.com/services/azure-bastion/" target="_blank">Azure Bastion</a>의 일반 공급이 발표되었습니다. Azure Bastion 서비스는 Virtual Network에서 직접 프로비전되어 공용 IP 주소 없이도 VNet의 모든 가상 머신에 대한 원활한 RDP(원격 데스크톱) 및 SSH(보안 셸) 액세스를 지원합니다. 서브넷에서 ACL을 원활하게 통합하고 일회성으로 설정하면 후속 관리와 지속적인 관리가 제거됩니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4beec5b0-99bd-4f87-91f8-9d5dcd34a4c5.png"><em><img alt="A diagram showing the Azure Bastion architecture showing SSL access to VNet resources through the Azure portal." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/9377165f-b53f-4dff-b852-a81f2de86aeb.png" title="Azure Portal을 통해 VNet 리소스에 대한 SSL 액세스를 보여 주는 Azure Bastion 아키텍처"></em></a></p>
+
+
+  <p align="center"><em>그림 7. Azure Portal을 통해 VNet 리소스에 대한 SSL 액세스를 보여 주는 Azure Bastion 아키텍처</em></p>
+
+
+  <h2>제공</h2>
+
+
+  <p>현재 Azure Content Delivery Network 고객이 http 요청 처리 방법을 사용자 지정할 수 있도록 하는 새로운 기능인 <a href="https://azure.microsoft.com/services/cdn/" target="_blank">Content Delivery Network</a> 규칙 엔진도 발표하고 있습니다. 규칙 엔진은 디바이스 검색, HTTP 프로토콜 및 헤더 값과 같은 매우 강력한 일치 조건을 사용하도록 설정하고 적절한 작업을 트리거합니다. 모든 http 규칙은 최종 사용자 근처의 에지 사이트에서 실행되며, 이는 고객 원본에서 규칙을 실행하는 것과 비교하여 상당한 성능 이점을 제공합니다.</p>
+
+
+  <p><a href="https://aka.ms/appgwaks" target="_blank">Application Gateway 수신 컨트롤러를</a> 사용하면 Azure Application Gateway를 AKS(Azure Kubernetes Service)의 수신으로 사용할 수 있습니다. 수신 컨트롤러는 AKS 클러스터 내에서 Pod로 실행됩니다. Kubernetes 수신 리소스를 사용하고 이를 Azure Application Gateway 구성으로 변환하여 게이트웨이가 Kubernetes Pod로 트래픽 부하를 분산할 수 있도록 합니다. Application Gateway 수신 컨트롤러를 사용하면 고객이 단일 인터넷 액세스 가능 엔드포인트를 노출하여 AKS 클러스터와 통신할 수 있습니다. Application Gateway는 개인 주소를 사용하여 Pod와 직접 상호 작용하여 Kube-proxy에서 발생하는 추가 DNAT의 필요성을 없애므로 Pod에 대한 보다 효율적이고 성능이 좋은 트래픽 라우팅을 제공합니다. Application Gateway 수신 컨트롤러는 AKS 클러스터에 대한 액세스를 보호하는 WAF 기능을 포함하여 Application Gateway의 모든 기능을 지원합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c8fdf3aa-59b4-4f7e-a342-a1555066306c.png"><em><img alt="A diagram showing the App Gateway Ingress controller explained relative to AKS." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/910b68a2-0560-4f6a-88d7-a29c2b19c207.png" title="AKS를 기준으로 설명된 App Gateway 수신 컨트롤러"></em></a></p>
+
+
+  <p align="center"><em>그림 8. AKS를 기준으로 설명된 App Gateway 수신 컨트롤러</em></p>
+
+
+  <p>Azure Key Vault는 클라우드 앱 및 서비스에서 사용하는 암호화 키 및 기타 비밀을 보호하는 플랫폼 관리 서비스입니다. Azure Application Gateway v2는 이제 HTTPS 사용 수신기에 대한 Key Vault 저장된 TLS 인증서 <a href="https://docs.microsoft.com/azure/application-gateway/key-vault-certs" target="_blank">의 직접 통합</a> 을 지원합니다. 이렇게 하면 Application Gateway 및 백 엔드 웹 애플리케이션 관리에서 인증서 관리 프로세스를 명확하게 분리하여 TLS 인증서 보안을 향상할 수 있습니다. Application Gateway는 최신 버전의 TLS(전송 계층 보안) 인증서를 위해 몇 시간마다 Key Vault를 폴링하므로 인증서를 자동으로 갱신할 수 있습니다.</p>
+
+
+  <h2>Monitor</h2>
+
+
+  <p>Azure <a href="https://aka.ms/internet-analyzer" target="_blank">Internet Analyzer</a> 는 이제 미리 보기에서 사용할 수 있는 새로운 클라이언트 쪽 측정 서비스입니다. Internet Analyzer를 사용하면 네트워킹 인프라를 A/B 테스트하고 고객&rsquo; 성능 환경에 미치는 영향을 테스트할 수 있습니다. &rsquo;온-프레미스에서 Azure로 앱 및 콘텐츠를 마이그레이션하든, 새 Azure 서비스를 평가하든, Internet Analyzer를 사용하면 마이그레이션하기 전에 사용자&rsquo; 데이터 및 Microsofts&rsquo; 풍부한 분석을 통해 Azure를 사용하여 네트워크 아키텍처를 더 잘 이해하고 최적화할 수 있습니다. Internet Analyzer는 클라우드 마이그레이션, 신규 또는 추가 Azure 지역에 배포 또는 Azure Front Door 및 Content Delivery Network 같은 Azure의 새 애플리케이션 및 콘텐츠 배달 플랫폼 테스트에 대한 성능 관련 질문을 해결하도록 설계되었습니다.</p>
+
+
+  <p>네트워크 &nbsp; <a href="https://aka.ms/AzMonNWInsight" target="_blank">용 Azure Monitor</a> 이제 서비스를 미리 보기로 사용할 수 있습니다. Azure Monitor for Networks를 사용하면 고객이 네트워크 리소스의 주요 메트릭 및 상태를 모니터링하고, 문제를 검색하고, 문제 해결 도움말을 얻을 수 있습니다. 네트워크용 Azure Monitor는 기본적으로 설정되며 사용자 지정 설정이 필요하지 않습니다&rsquo;. &rsquo;Azure Monitor for Networks는 클라우드 또는 하이브리드 네트워크를 모니터링하고 문제를 해결하는 방법에 관계없이 경고를 설치하고, 리소스별 진단을 받고, 리소스 간의 구조 및 기능 종속성을 시각화하는 데 도움이 됩니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/fdf5f382-cf22-4cfa-94cd-8788fdd701c0.png"><em><img alt="A screenshot showing Azure Monitor and the App Gateway metrics and diagnostics." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/37fa5d1e-4195-42aa-94c6-ebaac7491cf3.gif" style="border: 0px currentcolor; border-image: none; width: 900px; height: 417px; display: inline; background-image: none;" title="App Gateway 메트릭 및 진단을 보여 주는 Azure Monitor for Network의 스크린샷"></em></a></p>
+
+
+  <p align="center"><em>그림 9. App Gateway 메트릭 및 진단을 보여 주는 Azure Monitor for Networks 스크린샷</em></p>
+
+
+  <h3>미리 보기의 MEC(다중 액세스 Edge 컴퓨팅)</h3>
+
+
+  <p>다중 액세스 Edge 컴퓨팅은 고객 프레미스에서 애플리케이션 개발자에게 클라우드 컴퓨팅 기능을 제공합니다. 이 환경은 매우 짧은 대기 시간과 높은 대역폭뿐만 아니라 개인 LTE 및 5G와 같은 라디오 네트워크에 대한 실시간 액세스가 특징입니다. MEC 기능을 Azure와 통합함으로써 지능형 클라우드에서 에지까지 컴퓨팅 및 네트워크 기능의 연속체를 제공할 것입니다. 스마트 팩터리 및 혼합 현실과 같은 새로운 중요하고 몰입형 시나리오에서는 로컬 컴퓨팅과 결합된 안정적인 짧은 대기 시간 및 높은 대역폭 연결이 필요합니다.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/92adb998-4f40-4a4c-8f2e-e5926f422297.png"><em><img alt="An image of a concept draft of Multi-access and network edge compute with Azure." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/116dcfb1-0364-461a-a34a-e218c5e3a4bf.png" style="border: 0px currentcolor; border-image: none; width: 1000px; height: 425px; display: inline; background-image: none;" title="Azure를 사용한 다중 액세스 및 네트워크 에지 컴퓨팅의 개념 초안"></em></a></p>
+
+
+  <p align="center"><em>그림 10. Azure를 사용한 다중 액세스 및 네트워크 에지 컴퓨팅의 개념 초안</em></p>
+
+
+  <p>이러한 요구 사항을 해결하기 위해 최상의 대기 시간을 위해 고객&rsquo; 프레미스에 배포된 Azure Stack Edge를 기반으로 하는 다중 액세스 Edge 컴퓨팅의 기술 미리 보기를 소개합니다. MEC의 주요 특징은 다음과 같습니다.</p>
+
+
+  <ul>
+      <li>개발자는 GitHub 및 Azure dev ops CI/CD 도구 집합을 사용하여 고객&rsquo; 프레미스에서 컨테이너 기반 애플리케이션을 작성하고 실행할 수 있습니다. 일관된 프로그래밍 모델을 사용하면 Azure에서 애플리케이션을 개발한 다음 Azure Stack Edge로 이동하는 것이 간단합니다.</li>
+      <li>LTE(Private Long-Term Evolution), LTE 기반 CBRS(Citizens Broadband Radio Service) 및 향후 5G 기술을 포함한 무선 기술 통합. MEC 플랫폼의 일부로, Microsoft는 기술 혁신업체와 협력하여 모바일 가상 네트워크 기능(Evolveed Packet Core), 디바이스 통합, SIM 관리 및 무선 액세스 네트워크를 제공합니다.</li>
+      <li>MEC는 Azure에서 관리됩니다. 프라이빗 모바일 네트워크 배포 및 실행을 간소화하기 위해 Azure에서 큐레이팅된 VNF(가상 네트워크 함수) 이미지를 다운로드합니다. 또한 이 플랫폼은 패치, 구성 및 모니터링과 같은 VNF의 수명 주기 관리를 지원합니다.</li>
+      <li>네트워크에서 종단 간 솔루션을 배포하는 관리 서비스 공급자를 포함한 파트너 에코시스템.</li>
+  </ul>
+
+
+  <p>MEC 통합을 통해 초기 기술 미리 보기 및 옵션에 관심이 있는 사용자를 위해 문의 <a href="mailto:MEC-Networking@microsoft.com">MEC-Networking@microsoft.com</a>하세요.</p>
+
+
+  <p align="center"><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/490f9e49-2761-43e7-917b-33ef9a5efa59.png"><em><img alt="An image showing an overview of Azure Multi-edge Compute (MEC) partner ecosystem." src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e8769be0-c620-4918-9f12-f398bb04539c.png" style="border: 0px currentcolor; border-image: none; width: 1000px; height: 512px; display: inline; background-image: none;" title="Azure MEC(다중 에지 컴퓨팅) 파트너 에코시스템 개요"></em></a></p>
+
+
+  <p align="center"><em>그림 11. Azure MEC(다중 에지 컴퓨팅) 파트너 에코시스템 개요</em></p>
+
+
+  <h2>기대</h2>
+
+
+  <p>Microsoft는 워크로드를 보호하고, 훌륭한 네트워킹 환경을 제공하고, 배포 및 운영 비용을 간소화하는 동시에 고객을 더 잘 지원할 수 있도록 광범위한 모니터링을 제공하여 Azure에 연결할 수 있도록 최선을 다하고 있습니다. Microsoft Ignite에서 공지 사항에 대한 자세한 내용을 추가할 예정이며 기술 세션을 확인하여 자세히 알아볼 수 <a href="https://myignite.techcommunity.microsoft.com/sessions?t=%257B%2522from%2522%253A%25222019-11-03T08%253A00%253A00-05%253A00%2522%252C%2522to%2522%253A%25222019-11-08T19%253A00%253A00-05%253A00%2522%257D&amp;q=networking&amp;s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D" target="_blank">있습니다</a>. Well&rsquo;은 클라우드를 최대한 활용할 수 있도록 혁신적인 네트워킹 서비스 및 지침을 계속 제공합니다. &rsquo;네트워킹 서비스에서 사용하도록 설정된 새로운 시나리오에 대해 알아보게 되어 매우 기쁩니다. 언제나처럼, 우리는 당신의 피드백을 환영합니다.</p>
+
+
+  <hr>
+
+  <p><em>Azure. 목적에 따라 발명.</em></p>

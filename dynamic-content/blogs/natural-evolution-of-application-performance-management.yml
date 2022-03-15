@@ -1,0 +1,37 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 9825efdc441b1a0a3de35b97f8676ee9455c965a
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139912755"
+Slug: natural-evolution-of-application-performance-management
+Title: 애플리케이션 성능 관리의 자연스러운 진화
+Summary: 이 게시물에서는 APM 시장에서 발생한 변경 내용을 요약하고 Systems Center Operations Manager, 이전 VSO 버전의 Application Insights 및 Azure의 새 제품 간의 차이점을 지적합니다.
+Content: >-
+  Microsoft에서 제공하는 APM 제품에 대한 많은 질문이 자주 들립니다. SCOM APM은 어떻게 되었나요? Visual Studio Online 버전의 Application Insights 일부 킬러 기능이 있습니다. <a href="https://azure.microsoft.com/services/application-insights/">Azure의 애플리케이션 Insights</a> 사용할 수 없는 이유는 무엇인가요? 비슷한 문제를 해결하는 것처럼 보이는 모든 제품 간의 차이점은 무엇인가요? 이 게시물에서는 APM 시장에서 발생한 변경 내용을 요약하고 <a href="https://technet.microsoft.com/library/hh205987.aspx">SCOM(Systems Center Operations Manager</a>), 이전 VSO 버전의 애플리케이션 Insights 및 Azure의 새로운 제품 간의 차이점을 지적하고 싶습니다.
+
+
+  <a href="https://en.wikipedia.org/wiki/Application_performance_management">애플리케이션 성능 관리는</a> 새 필드가 아닙니다. Microsoft가 시장에 진입하기 훨씬 전에 많은 회사가 있었습니다. 특히 Wily Technology는 현재 APM으로 알려진 대부분의 것을 정의했습니다. 2000년대 중반을 통해 주로 애플리케이션 상태 및 가용성에 초점을 맞춥니다. 많은 기업이 큰 Java 환경을 실행하고 Wily는 Ops 팀이 사용자 지정 기간 업무 애플리케이션에 대한 가시성을 얻을 수 있도록 도와주기에 적합했습니다. 그러나 2000년대 후반에 민첩한 개발 기술의 채택이 증가함에 따라 IT는 프로덕션 환경에서 문제가 발생할 때 개발과 운영 간의 낭비적인 상호 작용을 제거하기 위해 보다 개발 중심적인 접근 방식이 필요합니다.
+
+
+  그 무렵에 시작된 기업의 수, 특히 <a href="https://newrelic.com/">NewRelic</a>, <a href="https://www.appdynamics.com/product/application-performance-management/">AppDynamics</a>, dynatrace 및 <a href="https://technet.microsoft.com/en-us/video/about-the-avicode-acquisition.aspx">AVIcode</a>. 서로 다른 "비밀 소스"를 갖는 동안 그들 모두는 한 가지 핵심적인 공통점이 있었다 : 그들은 모두 운영 문제를 감지하고 해결하는 데 도움이 되는 트랜잭션 정보, 실패, 성능 메트릭 및 기타 애플리케이션 원격 분석을 얻기 위해 Ops가 프로덕션 서버에 설치할 수 있는 "마법의 에이전트"를 가지고 있었습니다. 마법 에이전트는 코드를 변경하지 않고 당시 이상적인 접근 방식이었고, 운영 담당자는 개발자에게 런타임 데이터와 함께 심층적인 오류 또는 성능 대기 시간 정보를 제공하여 문제를 해결할 수 있었습니다. 이 방법은 APM 포커스가 애플리케이션 오류 감지 및 응답성 저하로 비교적 쉽게 정의될 수 있는 상태에 여전히 초점을 맞추고 있을 때 기적적으로 작동했습니다.
+
+
+  또 다른 5 년 빨리 앞으로 우리는 업계에서 큰 변화를 참조하십시오. 클라우드, 모바일 및 IoT 디바이스의 확산으로 인해 현재 DevOps 호출되는 지속적인 업데이트, A/B 테스트 등과 관련된 전체 새로운 프로세스 집합이 트리거되었습니다. 필요한 원격 분석의 양과 복잡성으로 인해 기존 APM에서 Application Analytics 공간으로 전환되었습니다. 마지막으로 " <strong>내 앱이 수행되는 방식"</strong> 에서 <strong>"고객이 수행하는 방식"</strong>으로 포커스가 전환됩니다. 그리고 이 변화는 사소한 조정이 아닙니다. 기존 APM에서는 성능 측정이 상대적으로 표준화되어 있습니다. 그러나 사용자 참여 영역에서 일반적인 아마존 고객과 그녀의 경험에 대해 알고 싶은 것은 Angry Bird 고객과 완전히 다릅니다. 버전 A가 버전 B보다 더 나은 방법을 알고 싶다면 버전 A가 느리거나 실패하는 경우와는 다릅니다. 사용자가 어떤 경험을 하고 있는지에 관한 것입니다.
+
+
+  이렇게 하면 APM에 흥미로운 중요한 지점이 있습니다. 기업이 기본 제공 "매직"에서 얻는 초기 가치는 애플리케이션 성공을 측정하기 위해 데이터를 운영 및 조정하는 데 필요한 사용자 지정 코딩의 양에 의해 빠르게 침식되고 있습니다.
+
+
+  <a href="https://azure.microsoft.com/services/application-insights/">Application Insights </a>이러한 새로운 추세를 수용하고 다양한 결정을 내렸습니다.
+
+  <ul>
+   <li><strong>애플리케이션 Insights 클라우드, 디바이스 및 온-프레미스 앱을 제공합니다</strong>. 애플리케이션 Insights<a href="https://azure.microsoft.com/documentation/articles/app-insights-platforms/"> 디바이스 앱 및 클라우드 앱뿐만 아니라 온-프레미스에서 호스트되는 서비스에서</a>도 원격 분석을 동등하게 수집할 수 있습니다. 반면, SCOM은 주로 ASP.NET 온-프레미스 앱에 중점을 둡니다.</li>
+   <li><strong>애플리케이션 Insights SaaS:</strong> SDK는 모든 앱 원격 분석을 <a href="https://azure.microsoft.com/documentation/articles/app-insights-get-started/">Azure의 서비스</a>로 보냅니다. 이는 모든 원격 분석 데이터가 온-프레미스에 저장되는 SCOM과 다릅니다.</li>
+   <li><strong>개발자</strong>: API를 사용하여 각 기능 또는 사용자 스토리의 성공을 측정하기 위해 디자인한 원격 분석을 보내 애플리케이션 Insights 최대한의 성능을 얻을 수 있습니다. 물론 코딩할 필요가 없는 기본 원격 분석도 있습니다. 필요한 경우 <a href="https://azure.microsoft.com/documentation/articles/app-insights-monitor-performance-live-website-now/">런타임에 모니터링을 추가할</a> 수도 있습니다. 그러나 이러한 기능은 서비스의 핵심이 아닌 추가적인 좋은 기능입니다. 이는 서비스 애플리케이션의 대부분의 데이터가 "마법의" 바이트 코드 계측을 제공한 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40316">Microsoft 관리 에이전트</a> 에서 나온 SCOM 및 VSO AI와는 다릅니다.</li>
+   <li><strong>애플리케이션 사용</strong>: 실행되는 앱과 직접 관련된 많은 경우 비즈니스 성공입니다. 이는 단지 가용성 번호 이상입니다. 아무도 관심있는 100 % 신뢰할 수있는 서비스에 오지 않았다면? 애플리케이션 Insights 상태 및 고객 사용량 현황 데이터에 대한 다양한 원격 분석을 결합하여 앱이 <a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/14/learn-about-your-app-s-usage-with-application-insights.aspx">비즈니스의 성공</a>에 어떻게 도움이 되는지 종합적으로 파악합니다. Azure의 Application Insights VSO 버전 및 SCOM에서 확실히 두드러지는 영역입니다. <a href="https://blogs.msdn.com/b/somasegar/archive/2014/12/11/microsoft-acquires-hockeyapp-leading-mobile-crash-analytics-and-beta-distribution-service-for-ios-android-and-windows-phone.aspx">HockeyAppthat</a> 의 최근 인수로 고급 iOS 및 Android 원격 분석 수집 기능, <a href="https://azure.microsoft.com/documentation/articles/app-insights-metrics-explorer/">다차원 메트릭 분석</a> 및 상관 관계 검색 기능에 대한 지원이 제공되어 실제로 애플리케이션 원격 분석 데이터의 홈 360도 보기를 구동합니다.</li>
+   <li><strong>오픈 소스</strong>: 오픈 소스 세계를 받아들였습니다. <a href="https://github.com/Microsoft/ApplicationInsights-Home">SDK를 오픈 소스</a>  프로젝트로 게시하고 기여를 환영합니다. 그들을 더 좋게 만드는 것은 우리 모두에게 달려 있습니다!</li>
+  </ul>
+
+  다음 게시물에서는 기존 런타임/바이트 코드 계측과 SDK 기반 접근 방식 간의 차이점을 다룹니다.

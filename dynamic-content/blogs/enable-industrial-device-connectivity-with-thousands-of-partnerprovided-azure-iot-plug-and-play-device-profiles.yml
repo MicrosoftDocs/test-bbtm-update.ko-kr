@@ -1,0 +1,47 @@
+### YamlMime:Yaml
+ms.openlocfilehash: d251857b456a80377b725a1227d31dbe71faebb7
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139898012"
+Slug: enable-industrial-device-connectivity-with-thousands-of-partnerprovided-azure-iot-plug-and-play-device-profiles
+Title: 수천 개의 파트너 제공 Azure IoT 플러그 앤 플레이 디바이스 프로필로 산업용 디바이스 연결 사용
+Summary: 최근 파트너 에코시스템의 주요 업체와의 협업의 일환으로 모든 산업 장비의 최대 80%에 대해 더 빠른 OT(운영 기술)를 클라우드 연결로 지원할 수 있는 역량을 대폭 확장했습니다. 간단히 말해서 기존 산업 자산을 클라우드에 연결하는 것이 훨씬 쉬워졌으며 IoT 프로젝트를 극적으로 가속화하면서 수천 달러의 인건비를 절감할 수 있습니다.
+Content: >-
+  <p>Microsoft에서 산업용 IoT 디바이스 연결을 간소화하는 것이 가장 좋습니다. 최근 파트너 에코시스템의 주요 업체와의 협업의 일환으로 모든 산업 장비의 최대 80%에 대해 더 빠른 OT(운영 기술)를 클라우드 연결로 지원할 수 있는 역량을 대폭 확장했습니다. 이는 많은 기업이 연결 구현에 어려움을 겪고 있기 때문에 IoT 솔루션을 사용하거나 판매하는 모든 사람들이 알아야 할 큰 뉴스&mdash;입니다. 즉, 기존 산업 자산을 클라우드에 연결하는 것이 훨씬 쉬워졌으며&rsquo; IoT 프로젝트를 극적으로 가속화하면서 수천 달러의 인건비를 절감할 수 있습니다.</p>
+
+
+  <p>파트너 협업 및 <a href="https://docs.microsoft.com/en-us/azure/iot-develop/overview-iot-plug-and-play" target="_blank">최신 Azure IoT 기술의</a> 결과로 산업 공간에서 사용하기 위해 수만 개의 인기 있는 산업용 IoT 디바이스 프로필에 빠르게 연결할 수 있습니다. 모든 유형의 센서, 디바이스 및 머신&mdash;에 대한 연결을 제공하고 모든 사용자를&mdash; 위한 IoT 구현 기회를 확대합니다. 산업용 기계는 현대 세계의 여러 분야와 산업에 걸쳐 있습니다.</p>
+
+
+  <h2>연결된 자산의 이점</h2>
+
+
+  <p>IoT를 살펴보는 모든 사용자가 알고 있듯이 디바이스 및 센서 연결은 IoT의 가치를 제공하는 시작에 불과합니다. 그것은&rsquo; 시간이 많이 걸리고 종종 복잡한 첫 번째 단계이지만 엄청난 보수를 전달하는 단계입니다. 연결된 자산에 대한 디지털 트랜스포메이션 혜택은 모든 부문에서 찾을 수 있지만, 특히 산업 제조가 앞장서고 있습니다.&nbsp; 이러한 회사의 경우 IoT 솔루션은 예측 유지 관리 및 위치 모니터링&mdash;으로 인해 매년 수백만 달러를 절감하여 가동 중지 시간을 2025&ndash;%까지 줄일 수 있습니다. &rsquo;운영 효율성, 비즈니스 인사이트 및 IoT 빅 데이터 및 AI의 새로운 수익원이 적용되기 전의 작업입니다.</p>
+
+
+  <h2>IoT 플러그 앤 플레이로 쉽게 연결</h2>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/iot-develop/overview-iot-plug-and-play" target="_blank">IoT 플러그 앤 플레이가 도입</a>되면서 고객,&rsquo; 파트너 및 디바이스 빌더를 위해 IoT를 간소화하고 민주화하므로 디바이스를 훨씬 쉽게 <a href="https://docs.microsoft.com/en-us/azure/iot-fundamentals/" target="_blank">Azure IoT</a> 연결할 수 있습니다. 이 기술은 IT 실무자가 최소한의 구성으로 스마트 디바이스를 솔루션에 통합하는 데 도움이 됩니다. IoT 플러그 앤 플레이는 디바이스&nbsp; 모델을 사용하여 DTDL(디지털 트윈 정의 언어)을 사용하여 디바이스&rsquo; 기능을 설명합니다. IoT 플러그 앤 플레이 사용 디바이스가 켜지면 클라우드에서 IoT 애플리케이션의 일부로 빠르게 설정됩니다. 고객과 파트너는 IoT Central에서 사용자 지정 가능한 대시보드 및 애플리케이션 템플릿을 사용하여 프로젝트를 더욱 가속화할 수 있습니다.</p>
+
+
+  <h2>수천 대의 디바이스가 IoT 플러그 앤 플레이 사용</h2>
+
+
+  <p>새로운 IoT 솔루션 및 애플리케이션의 경우 <a href="https://devicecatalog.azure.com/devices" target="_blank">Azure Device Catalog</a> 는 현재 수백 개의 IoT 플러그 앤 플레이 지원 인증 디바이스를 제공합니다. 이러한 디바이스는 Azure IoT, Azure IoT Hub 및 Azure IoT Central과 같은 Azure IoT 서비스에 쉽게 연결할 수 있습니다.<br>
+
+  전 세계&rsquo; 대부분의 산업용 IoT 프로젝트는 이미 사용 중인 수많은 IoT 지원 센서 및 디바이스가 있는 기존 자산 및 환경을 대상으로 합니다. 이러한 이유로 IoT 플러그 앤 플레이 기술 사용을 이러한 시나리오로 더욱 확장하고 있습니다. 또한 IoT 플러그 앤 플레이 기술을 수만 개 이상의 산업 디바이스에 도입하는 데 도움을 주는 파트너에 대해 더 많은 것을 공유하게 되어 기쁩니다.</p>
+
+
+  <p>강조 표시하려는 두 가지 주요 파트너&nbsp;는 다음과 같습니다.</p>
+
+
+  <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudrailgmbh1620225907690.cloudrail_dmc?tab=Overview" target="_blank">CloudRail</a>&nbsp; 산업 환경의 완전 관리형 솔루션&nbsp; 액세스 데이터를 로컬로 사전 처리하여 Azure IoT 보냅니다. CloudRail은 OPC-UA와 같은 업계 표준을 사용하여 최신 디바이스를 연결하고 오래된 컴퓨터는 보조 센서로 개조됩니다. 자동화된 데이터 정규화 및 디바이스 프로비저닝과 함께 12,000개가 넘는 센서 Azure 플러그 앤 플레이 사용 정의의 데이터베이스는 컴퓨터를 클라우드에 연결하는 설치 시간을 몇 주에서 몇 시간으로 단축합니다. 클라우드 기반 디바이스 관리 솔루션인 CloudRail DMC&rdquo;를 사용하여 &ldquo;고객은 연결된 단일 머신 또는 수천 대를 안전하게 실행하고 관리할 수 있습니다.</p>
+
+
+  <p><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/omnio1581945524587.omnio_v01?tab=Overview" target="_blank">Omnio</a> 는 60,000개 이상의 디바이스 구성을 사용하도록 IoT 플러그 앤 플레이 패턴을 따르는 산업 자산 Omnio Edge용 소프트웨어 구성 커넥터를 제공하는 Omnio Edge라는 솔루션을 제공합니다. 이 솔루션은 의미상 일관된 데이터 레이블, 동일한 단위, 동일한 크기 조정 및 동기화된 타임스탬프를 제공하는 클라우드 기반 애플리케이션에 산업 레거시 자산이 연결될 수 있는 원활한 환경을 제공합니다.</p>
+
+
+  <p><a href="https://docs.microsoft.com/en-us/azure/iot-develop/overview-iot-plug-and-play" target="_blank">Azure IoT 플러그 앤 플레이</a>와 파트너의 결합된 기능으로, 에지의 Azure IoT 제품은 이제 더 포괄적이며&mdash; 디바이스 스펙트럼의 전체 기능을 활용하면서 거의 모든 유형의 산업 장비를 연결할 수 있습니다. 이러한 협업을 통해 Microsoft는 고객과 파트너가 전력과 단순성을 최적으로 균형 있게 조정하는 방식으로 지능형 클라우드 워크로드를 에지에 배포할 수 있습니다.</p>

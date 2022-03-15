@@ -1,0 +1,132 @@
+### YamlMime:Yaml
+ms.openlocfilehash: c9db12f019b902dd19ad8896961ed41353b87183
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897979"
+Slug: hdinsight-tools-for-intellij-may-updates
+Title: IntelliJ용 HDInsight 도구 5월 업데이트
+Summary: 5월 업데이트의 주요 초점은 IntelliJ에서 Spark 개발 작업을 더 쉽게 수행할 수 있도록 하는 것입니다. 이 릴리스에서는 Spark 원격 디버깅 환경이 크게 향상되었습니다. Scala SDK...
+Content: >-
+  <p>5월 업데이트의 주요 초점은 IntelliJ에서 Spark 개발 작업을 더 쉽게 수행할 수 있도록 하는 것입니다. 이 릴리스에서는 Spark 원격 디버깅 환경이 크게 향상되었습니다. Scala SDK 설치, Scala 프로젝트 만들기 및 Spark 작업 제출도 간소화됩니다. 이제 Spark 작업 제출 및 디버깅에 대해 &rdquo; IntelliJ &ldquo;<strong>실행을</strong>&rdquo; 사용하거나 &ldquo;<strong>디버그</strong>할 수 있습니다. 이제 로컬 속성 파일에서 Spark 작업 구성을 로드할 수도 있습니다. 키 업데이트는 다음과 같습니다.</p>
+
+
+  <h2>간소화된 Scala 프로젝트 만들기</h2>
+
+
+  <p>Scala 프로젝트를 만드는 동안 주문형 Scala 플러그 인 설치 및 Scala SDK 자동 다운로드를 통해 설치 및 Scala 프로젝트 만들기 프로세스가 크게 간소화됩니다. 자세한 내용은 <a href="https://www.youtube.com/watch?v=YTZzYVgut6c">데모 Spark Scala 애플리케이션 만들기를</a> 시청하세요.</p>
+
+
+  <p>1. Scala 프로젝트 만들기 마법사는 이제 Scala 플러그 인이 설치되어 있는지 확인한 다음 Scala 플러그 인을 처음으로 검색하고 설치하는 데 도움이 됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/03b4787f-7dfa-457e-9f74-9e4771618810.png"><img alt="Screenshot_1" border="0" height="88" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/da616de7-60ea-4d95-a575-261b3bd946b9.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px 0px 0px 40px; display: inline; padding-right: 0px" title="Screenshot_1" width="500"></a></p>
+
+
+  <p>2. 이전에는 Spark 버전을 지정하고, 해당 Scala SDK 버전을 찾고, Scala SDK를 수동으로 다운로드해야 했습니다. 이제 프로젝트를 만드는 동안 Spark 버전만 지정하면 해당 Scala SDK 및 라이브러리가 자동으로 다운로드됩니다. 여기서 선택하는 Spark 버전은 Spark 클러스터 버전과 일치해야 합니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/b01a31b4-e446-4426-8058-4a5096cdff2e.png"><img alt="Screenshot_2" border="0" height="381" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/24d44d97-729d-42c0-83aa-b07dfe6b5c7d.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px 0px 0px 40px; display: inline; padding-right: 0px" title="Screenshot_2" width="500"></a></p>
+
+
+  <h2>향상된 Spark 원격 디버깅</h2>
+
+
+  <p>언제든지 HDInsight 클러스터에서 Spark 애플리케이션을 원격으로 실행하고 디버그할 수 있는 멋진 원격 디버깅 기능을 개발했습니다. 자세한 내용은 데모 <a href="https://www.youtube.com/watch?v=wQtj_wjn1Ac">HDInsight Spark 원격 디버깅을</a> 시청하세요.</p>
+
+
+  <p>원격 디버깅을 위해 HDInsight Spark 클러스터에 연결하는 초기 구성은 다음에 설명된 몇 번의 클릭만큼 간단합니다.</p>
+
+
+  <ul>
+   <li>Spark 원격 디버깅을 구성하려면 IntelliJ &ldquo;<strong>실행</strong>&rdquo; 메뉴 -&gt; &ldquo;<strong>구성 편집 새</strong>&rdquo;&ldquo; -&gt; <strong>Spark 작업</strong>&rdquo; 구성 제출로 이동합니다. 아래와 같이 Spark 클러스터, 아티팩트 및 주 클래스 이름을 포함한 정보를 입력하라는 메시지가 표시됩니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/a9b9362e-6894-4b0e-a7a9-6b59e8a5d09f.png"><img alt="Run-Debug Config2" border="0" height="404" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/34d97678-5fdb-416e-84ad-2474e0836678.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px 0px 0px 40px; display: inline; padding-right: 0px" title="Run-Debug Config2" width="500"></a></p>
+
+
+  <ul>
+   <li><strong>고급 구성</strong>&rdquo;을 클릭하여 <strong>Spark 원격 디버그</strong>&rdquo;를 &ldquo; 사용하도록 설정하고 아래와 같이 SSH 사용자 이름, 암호 또는 프라이빗 키 파일을 지정할 수 &ldquo; 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/4231e522-1fc5-4e87-9273-6c28100e4a66.png"><img alt="Screenshot_4" border="0" height="225" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/62d68e5e-18d8-42e0-b71e-2aaaa9fdc708.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px 0px 0px 40px; display: inline; padding-right: 0px" title="Screenshot_4" width="500"></a></p>
+
+
+  <h2>IntelliJ&ldquo;는 asdebug를&ldquo;&rdquo; /  통합으로&rdquo; 실행합니다.</h2>
+
+
+  <ul>
+   <li>IntelliJ &ldquo;<strong>실행</strong>&rdquo; 메뉴로 이동하거나 <strong>구성</strong>&rdquo;&gt; &ndash;편집에서&gt; &ldquo; 새 &ldquo;<strong>Spark 작업</strong>&rdquo; 제출을 클릭하거나 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 <strong>Spark 작업</strong>&rdquo; 제출을 선택하여 &ldquo; Spark 작업을 제출할 수 있습니다.</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/7331740d-30f1-4fb6-931e-d4efb2baaf02.png"><img alt="Run-Debug Config" border="0" height="431" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c33bb9d5-6a9c-4634-8388-abd134e21ed7.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px 0px 0px 40px; display: inline; padding-right: 0px" title="Run-Debug 구성" width="500"></a></p>
+
+
+  <ul>
+   <li>클러스터, 주 클래스, 아티팩트 등과 같은 구성을 사용자 지정할 수 있습니다.&nbsp;</li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/892432a3-34a0-4089-8a98-cbc2e52d1247.png"><img alt="Run-Debug Config2" border="0" height="404" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5a6ace01-c0e5-4cbe-926b-1cb9866a4d0a.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px 0px 0px 40px; display: inline; padding-right: 0px" title="Run-Debug Config2" width="500"></a></p>
+
+
+  <ul>
+   <li>
+   <p>메뉴에서 IntelliJ &ldquo;<strong>실행</strong>&rdquo; 또는 <strong>디버그</strong>&rdquo;를 사용하거나&ldquo;, 실행 아이콘을 클릭하거나, 도구 모음에서 디버그 아이콘(아래와 같이)을 클릭하여 Spark 원격 디버깅 세션을 시작할 수 있습니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+   </li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/32cf92bc-09b0-4c55-8318-1910157cac73.png"><img alt="Screenshot_7" border="0" height="240" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/928dfbae-aa8d-4ea3-84b6-30f7f2e92d27.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px 0px 0px 40px; display: inline; padding-right: 0px" title="Screenshot_7" width="500"></a></p>
+
+
+  <ul>
+   <li>
+   <p>원격 디버깅을 수행하는 동안 중단점을 설정하고, 애플리케이션을 편집하고, 코드를 단계별로 실행하고, 실행을 다시 시작할 수도 있습니다.</p>
+   </li>
+  </ul>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/c0c9bc67-0f3b-44ea-b5c3-c0405edac80b.png"><img alt="Screenshot_8" border="0" height="371" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/1bcbf2ce-9724-4006-be7b-8c9d9ae9826f.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px 0px 0px 40px; display: inline; padding-right: 0px" title="Screenshot_8" width="500"></a></p>
+
+
+  <h2>작업 구성 로드</h2>
+
+
+  <p>이제 Spark 제출 창에서 아래와 같이 작업 구성 외&ldquo;에 찾아보기&rdquo; 단추를 클릭하여 &ldquo;로컬 속성 파일에서 작업 구성&rdquo;을 로드할 수 있습니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/e1c10d09-d584-4c5c-afce-cec0e4dc707a.png"><img alt="LocalProfile" border="0" height="117" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/5abc97ec-7d66-4234-9957-d5a70ce143ed.png" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; margin: 0px 0px 0px 40px; display: inline; padding-right: 0px" title="LocalProfile" width="500"></a></p>
+
+
+  <h2>설치/업데이트 방법</h2>
+
+
+  <p>IntelliJ 리포지토리로 이동하고 Azure Toolkit 검색&ldquo;하여 최신 비트를 가져올 수 있습니다.&rdquo; 플러그 인을 이미 설치한 경우 IntelliJ에서 최신 업데이트를 요청하는 메시지도 표시됩니다.</p>
+
+
+  <p><a href="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/d508dcaa-2692-4632-aeb5-e90fa2aa8d31.png"><img alt="IntelliJ-Installation_thumb4" border="0" height="423" src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/ac069db4-91df-4a74-910c-93a15a9f7a34.png" style="border-left-width: 0px; border-right-width: 0px; background-image: none; border-bottom-width: 0px; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border-top-width: 0px" title="IntelliJ-Installation_thumb4" width="726"></a>&nbsp;</p>
+
+
+  <p>자세한 내용은 다음을 확인하세요:</p>
+
+
+  <ul>
+   <li>IntelliJ 사용자 가이드: <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-apache-spark-intellij-tool-plugin" target="_blank">IntelliJ용 Azure Toolkit HDInsight 도구를 사용하여 HDInsight Spark Linux 클러스터용 Spark 애플리케이션 만들기</a></li>
+   <li>IntelliJ HDInsight Spark 로컬 실행: <a href="https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-tools-for-intellij-with-hortonworks-sandbox" target="_blank">Hortonworks 샌드박스와 함께 IntelliJ용 HDInsight 도구 사용</a>&nbsp;&nbsp;&nbsp;</li>
+   <li>Scala Project 만들기(비디오): <a href="https://www.youtube.com/watch?v=YTZzYVgut6c">Spark Scala 애플리케이션 만들기</a>&nbsp;</li>
+   <li>원격 디버그(비디오): <a href="https://www.youtube.com/watch?v=wQtj_wjn1Ac">IntelliJ용 Azure Toolkit 사용하여 HDInsight 클러스터에서 원격으로 Spark 애플리케이션 디버그</a></li>
+  </ul>
+
+
+  <p><a href="https://azure.microsoft.com/en-us/blog/">Azure 블로그</a> 및 <a href="https://blogs.msdn.microsoft.com/azuredatalake">빅 데이터 블로그</a>에서 오늘&rsquo; 공지 사항에 대해 자세히 알아보세요.</p>
+
+
+  <p>더 많은 <a href="https://azure.microsoft.com/en-us/updates/">Azure 서비스 업데이트를 검색합니다</a>.</p>
+
+
+  <p>질문, 피드백, 의견 또는 버그 보고서가 있는 경우 아래의 의견을 사용하거나 메모를 <a>hdivstool@microsoft.com</a>보내주세요.</p>

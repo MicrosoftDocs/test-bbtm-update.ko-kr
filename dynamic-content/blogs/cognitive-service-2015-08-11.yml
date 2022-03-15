@@ -1,0 +1,16 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 107dd1ed3276cedbede4e17f96b7d0bc65c5a381
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139913037"
+Slug: cognitive-service-2015-08-11
+Title: Face API & Windows 10 IoT Core 사용하여 문 잠금 해제
+Summary: 'Microsoft 개발자는 또한 Windows 10 IoT Core 사용하여 사용자를 인식하는 경우에만 열리는 얼굴 인식 도어 잠금 장치, 로봇 프로그래밍 키트 및 핸드헬드 팬을 제어하는 앱과 같은 항목을 빌드했습니다. 얼굴 인식 기술은 Project 옥스포드에 의해 구동된다.더 읽기: 안녕하세요, Windows 10 IoT Core 왜 마이크로 소프트는 Windows 구동 로봇 에어 하키 테이블을 만든 당신의 문을 잠금 해제 ...'
+Content: >-
+  <p style="margin: 0px 0px 10px; color: #333333; text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: segoe-ui-normal, 'Microsoft YaHei', 微软雅黑, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; word-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color: #ffffff; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;">Microsoft 개발자는 또한 Windows 10 IoT Core 사용하여 사용자를 인식하는 경우에만 열리는 얼굴 인식 도어 잠금 장치, 로봇 프로그래밍 키트 및 핸드헬드 팬을 제어하는 앱과 같은 항목을 빌드했습니다. 얼굴 인식 기술은 Project 옥스포드에 의해 구동된다.자세히 보기:&nbsp;<a style="outline: 0px !important; transition: text-shadow 10ms; color: #337ab7; text-decoration: none; box-sizing: border-box; background-color: transparent;" href="https://blogs.windows.com/buildingapps/2015/08/10/hello-windows-10-iot-core/">안녕하세요, Windows 10 IoT Core</a></p>
+
+  <p style="margin: 0px 0px 10px; color: #333333; text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: segoe-ui-normal, 'Microsoft YaHei', 微软雅黑, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; word-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color: #ffffff; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><a style="outline: 0px !important; transition: text-shadow 10ms; color: #337ab7; text-decoration: none; box-sizing: border-box; background-color: transparent;" href="https://www.businessinsider.com/microsoft-iot-core-for-raspberry-pi-2-2015-8#ixzz3iZGnIZnh" target="_blank">Microsoft가 Windows 구동 로봇 에어 하키 테이블을 만든 이유</a></p>
+
+  <p style="margin: 0px 0px 10px; color: #333333; text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: segoe-ui-normal, 'Microsoft YaHei', 微软雅黑, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; word-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color: #ffffff; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;"><a style="outline: 0px !important; transition: text-shadow 10ms; color: #337ab7; text-decoration: none; box-sizing: border-box; background-color: transparent;" href="https://www.valuewalk.com/2015/08/unlock-your-door-with-your-face-with-windows-10-for-iot-core/" target="_blank">IoT Core용 Windows 10 사용하여 얼굴로 문 잠금 해제</a></p>

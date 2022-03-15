@@ -1,0 +1,11 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 57a7004f2b170138564a48d7cf5cf3d0f96745b0
+ms.sourcegitcommit: d03bdc7fe5447adb6530886aab848b75fe8fa8ee
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "139897549"
+Slug: new-windows-azure-marketplace-data-delivers-the-latest-weather-and-stock-information
+Title: 최신 날씨 및 재고 정보를 제공하는 새로운 Windows Azure Marketplace 데이터
+Summary: '오늘 우리는 최근에 Windows Azure Marketplace에 추가 된 두 가지 새로운 데이터 제품의 릴리스를 발표 : 전 세계 기록 날씨 데이터 :&nbsp; 포함 날씨 정보를 제공합니다 ...'
+Content: '<p>오늘 <a href="https://datamarket.azure.com/" target="_blank">Windows Azure Marketplace</a>에 최근에 추가된 두 가지 새로운 데이터 제품의 릴리스를 발표합니다.<a target="_blank" href="https://datamarket.azure.com/"><img src="https://azurecomcdn.azureedge.net/mediahandler/acomblog/media/Default/blog/2072.WindowsAzureMarketplaceLogo.png" style="float: right; margin: 5px;" height="102" width="215"></a></p>  <ul>  <li><a href="https://datamarket.azure.com/dataset/4accc8da-b804-4409-a34b-edcab92eb915" target="_blank">전 세계 기록 날씨 데이터</a>:&nbsp; 전 세계 수천 개의 지역에서 기록적인 일일 최고 기온, 최저 온도, 강수량, 이슬점, 해수면 압력, 윈드스피드 및 돌풍을 포함한 날씨 정보를 제공합니다. 데이터는 2000년부터 현재 주까지 온라인 상태로 제공되며, 모든 글로벌 위치에 대해 지난 주에 대한 기록 데이터가 매주 추가됩니다.</li>  <li><a href="https://datamarket.azure.com/dataset/f496fc3b-ec85-418e-adc6-fe1eddbf5362" target="_blank">주식 수중 음파 탐지기</a> :&nbsp; 주식 수중 음파 탐지기 감정 서비스는 미국 주식 시장에서 상장 기업 거래에 대한 감정 점수를 제공합니다. Stock Sonar는 텍스트의 의미에 대한 심층적인 이해를 바탕으로 기사, 블로그, 보도 자료 및 기타 공개적으로 사용할 수 있는 정보를 포함하여 다양한 온라인 원본에서 정보를 검색, 읽기 및 분석합니다.</li>  </ul>  <p>&nbsp;Windows Azure Marketplace는 완성된 SaaS(Software-as-a-Service) 애플리케이션 및 프리미엄 데이터 세트를 구매하고 판매하는 온라인 시장입니다. Azure Marketplace를 Windows 기업은 Health에서 소매 및 제조 애플리케이션, 인구 통계, 탐색, 범죄 및 데이터 정리를 위한 웹 서비스 및 알고리즘에 이르기까지 모든 파트너 &ndash; 의 프리미엄 애플리케이션, 퍼블릭 도메인 및 신뢰할 수 있는 상용 데이터를 즉시 검색할 수 있습니다.&nbsp;</p>  <p>Azure Marketplace Windows 대해 자세히 알아보세요.</p>  <ul>  <li>백서: Windows Azure Marketplace</li>  <li>비디오: <a href="https://go.microsoft.com/fwlink/?LinkID=204515" target="_blank">첫 번째 보기: Windows Azure Marketplace</a></li>  <li>비디오: <a href="https://go.microsoft.com/fwlink/?LinkId=204516" target="_blank">DataMarket에서 데이터 피드 검색 및 구독</a></li>  <li>사례 연구: <a href="https://go.microsoft.com/fwlink/?LinkId=204560" target="_blank">다른 사용자가 Marketplace를 사용하는 방법 알아보기</a></li>  </ul>'
