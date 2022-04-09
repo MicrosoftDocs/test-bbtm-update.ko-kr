@@ -1,0 +1,6 @@
+{
+    "Slug": "announcing-general-availability-of-mobile-services-net-support",
+    "Title": "Mobile Services .NET 지원의 일반 공급 발표",
+    "Summary": "We are proud this week to announce general availability of the Mobile Services .NET backend, which enables you to write your services using the power of ASP.NET Web API and your favorite .NET language. ",
+    "Content": "이번 주에 <strong>Mobile Services .NET 백 엔드의 일반 공급</strong>에 대해 발표하게 되어 자랑스럽습니다. 이 백 엔드를 사용하면 ASP.NET Web API 기능과 즐겨 찾는 .NET 언어를 사용하여 서비스를 작성할 수 있습니다. Mobile Services 통해 모바일 앱에 클라우드 호스팅 백 엔드를 추가하고 데이터 스토리지, 인증 및 확장 가능한 푸시 알림과 같은 기능을 빠르게 표시할 수 있습니다.자세한 내용은 <a href=\"https://weblogs.asp.net/scottgu/azure-virtual-machine-machine-learning-iot-event-ingestion-mobile-sql-redis-sdk-improvements\">Scott Guthrie의 공지 블로그 게시물</a>과 다음 리소스를 확인하세요.\n<ul>\n    <li>블로그 게시물: <a href=\"https://azure.microsoft.com/blog/2014/07/11/azure-mobile-services-why-should-asp-net-developers-care/\">Azure Mobile Services: ASP.NET 개발자가 관심을 가져야 하는 이유는 무엇인가요?</a></li>\n    <li>블로그 게시물: <a href=\"https://azure.microsoft.com/blog/2014/07/30/offline-sync-for-mobile-services/\">Mobile Services 대한 오프라인 동기화</a></li>\n    <li><a href=\"https://azure.microsoft.com/en-us/documentation/services/mobile-services/\">새 Mobile Services 설명서 페이지</a></li>\n</ul>"
+}

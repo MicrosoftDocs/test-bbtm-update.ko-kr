@@ -1,0 +1,6 @@
+{
+    "Slug": "accessing-sds-from-c-and-java",
+    "Title": "C# 및 Java에서 SDS 액세스",
+    "Summary": "[This article was contributed by the SQL Azure team.]Hey Everyone,  Jeff Currier, one of our superstar, non-slacker, dev leads has put together some examples for accessing SDS from both C# and Java.…",
+    "Content": "<p>[이 문서는 SQL Azure 팀에서 제공했습니다.]</p><p>이봐 모두,</p>  <p>슈퍼 스타 중 한 명인 Jeff Currier는 개발 리더가 C# 및 Java 모두에서 SDS에 액세스하는 몇 가지 예를 정리했습니다. C# 예제는 <a href=\"https://blogs.msdn.com/jcurrier/archive/2009/03/29/sds-coding-examples-part-1-c-ado-net.aspx\" target=\"_blank\">여기에서</a> 찾을 수 있으며 Java 예제는 여기에서 찾을 수 <a href=\"https://blogs.msdn.com/jcurrier/archive/2009/03/29/sds-java-jdbc-examples.aspx\" target=\"_blank\">있습니다</a>. C# 예제에서 Jeff는 논리 서버 및 사용자 데이터베이스 모델에 대해서도 잘 설명합니다. 확인해 주세요!!!</p>  <p>모든 질문, 그냥 :) 질문</p>  <p>-Dave</p>"
+}

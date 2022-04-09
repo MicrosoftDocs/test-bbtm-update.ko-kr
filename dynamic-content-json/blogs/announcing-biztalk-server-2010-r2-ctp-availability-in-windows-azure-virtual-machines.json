@@ -1,0 +1,6 @@
+{
+    "Slug": "announcing-biztalk-server-2010-r2-ctp-availability-in-windows-azure-virtual-machines",
+    "Title": "Windows Azure Virtual Machines BizTalk Server 2010 R2 CTP 가용성 발표",
+    "Summary": "We are excited to announce the availability of BizTalk Server 2010 R2 CTP Release in Windows Azure Virtual Machines gallery!  Setting up a new BizTalk Server environment typically involves procuring…",
+    "Content": "<p>Windows Azure Virtual Machines 갤러리에서 BizTalk Server 2010 R2 CTP 릴리스의 가용성을 발표하게 되어 기쁩니다!</p>  <p>새 BizTalk Server 환경을 설정하려면 일반적으로 하드웨어 조달, 종속성 가져오기, 서버 설정 등이 포함됩니다. 이는 새 BizTalk Server 프로젝트를 시작하기 전에 리드 타임이 고통스럽다는 것을 의미할 수 있습니다. 이제 BizTalk Server 환경을 빠르고 쉽게 시작하고 실행할 수 있도록 Windows Azure Virtual Machines 기능을 활용하고 있습니다.&nbsp; BizTalk Server 2010 R2 CTP에서 새로운 기능을 미리 볼 수 있는 쉬운 방법으로 사용해 보는 것이 좋습니다.</p>  <p>시작하려면 블로그 게시물 \"<a href=\"https://blogs.msdn.com/b/biztalk_server_team_blog/archive/2012/08/29/getting-started-with-biztalk-server-2010-r2-ctp-in-windows-azure-virtual-machines.aspx\" target=\"_blank\">Windows Azure Virtual Machines BizTalk Server 2010 R2 CTP로 시작</a>\"를 확인하세요.</p>"
+}

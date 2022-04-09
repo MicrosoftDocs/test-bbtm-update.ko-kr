@@ -1,0 +1,6 @@
+{
+    "Slug": "an-early-look-containers-windows-server-2016-hyper-v-and-azure-with-mark-russinovich",
+    "Title": "컨테이너의 초기 보기: Windows Server 2016, Hyper-V 및 Azure와 Mark Russinovich",
+    "Summary": "On the season premiere of Microsoft Mechanics, we demo the new container technology within Windows Server 2016, including a hands-on look at Hyper-V Containers and upcoming milestones for Azure, with Azure CTO Mark Russinovich.",
+    "Content": "<p><a href=\"https://www.youtube.com/watch?v=m9pG1auv0e0&amp;feature=youtu.be\">Microsoft Mechanics</a>의 시즌 초연에서는 Azure CTO Mark Russinovich를 사용하여 Hyper-V 컨테이너에 대한 실습 및 Azure의 향후 마일스톤을 포함하여 Windows Server 2016 내의 새로운 컨테이너 기술을 시연합니다.</p>\n\n<p>Mark<a href=\"https://www.youtube.com/watch?v=wel57j214js\">는</a> Nano Server의 Hyper-V 컨테이너를 포함하여 Windows Server 2016 새로운 네이티브 컨테이너 기술을 보여 주고, linux를 사용하여 Windows Server, 온-프레미스 또는 Azure 및 다른 유형의 환경 내에서 컨테이너를 관리하고 실행하는 방법에 대해 설명합니다.</p>\n\n<p><iframe allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/YoA_MMlGPRc\" width=\"560\"></iframe></p>\n\n<p>컨테이너를 Professional IT Professional 경우 이 쇼는 컨테이너의 디자인 및 아키텍처, 옵션 및 주요 이점에 대한 더 많은 관점을 제공합니다. 당신은 또한 오늘 자신을 위해 <a href=\"https://msdn.microsoft.com/virtualization/windowscontainers/containers_welcome\">그것을 시도</a> 할 수 있습니다.</p>\n"
+}
