@@ -1,0 +1,119 @@
+en:
+  achievements:
+    achievable:
+      arctic_code_vault_contributor:
+        tier_0:
+          description: '%{achieving_user_login}이(가) %{link}에서 코드 %{acv_count_with_repository}을(를) 기여했습니다.'
+        unlocking_event:
+          explanation: '%{repository_with_pronoun}이(가) 보관됨'
+      dust_bunny:
+        tier_0:
+          description: 너는 린터를 통과하지 아니하리라!
+        unlocking_event:
+          explanation: 커밋 메시지에 "linter"가 포함됩니다.
+      galaxy_brain:
+        tier_0:
+          description: '%{achieving_user_login}이(가) 토론에 응답했습니다.'
+        tier_1:
+          description: '%{achieving_user_login}이(가) 토론에 응답했습니다.'
+        tier_2:
+          description: '%{achieving_user_login}이(가) 토론에 응답했습니다.'
+        tier_3:
+          description: '%{achieving_user_login}이(가) 토론에 응답했습니다.'
+        unlocking_event:
+          explanation: '%{threshold_ordinal}이(가) 답변을 수락했습니다.'
+      heart_on_your_sleeve:
+        tier_0:
+          description: '%{achieving_user_login}이(가) 와 ❤️ 반응했습니다.'
+        tier_1:
+          description: '%{achieving_user_login}이(가) 와 ❤️ 반응했습니다.'
+        tier_2:
+          description: '%{achieving_user_login}이(가) 와 ❤️ 반응했습니다.'
+        tier_3:
+          description: '%{achieving_user_login}이(가) 와 ❤️ 반응했습니다.'
+        unlocking_event:
+          explanation: '%{threshold_ordinal} ❤️ 반응'
+      heartbreaker:
+        tier_0:
+          description: '%{achieving_user_name}!'
+        unlocking_event:
+          explanation: '%{reaction_count_phrase}으로 닫힘'
+      mars2020_contributor:
+        tier_0:
+          description: '%{achieving_user_login}이(가) %{link}에 사용된 코드 %{nasa_2020_count_with_repository}을(를) 기여했습니다.'
+        unlocking_event:
+          explanation: '%{repository_with_pronoun}이(가) 포함되어 있습니다.'
+      open_sourcerer:
+        tier_0:
+          description: '%{achieving_user_login}은(는) 여러 오픈 소스 리포지토리에 코드를 기여했습니다.'
+        tier_1:
+          description: '%{achieving_user_login}은(는) 여러 오픈 소스 리포지토리에 코드를 기여했습니다.'
+        tier_2:
+          description: '%{achieving_user_login}은(는) 여러 오픈 소스 리포지토리에 코드를 기여했습니다.'
+        tier_3:
+          description: '%{achieving_user_login}은(는) 여러 오픈 소스 리포지토리에 코드를 기여했습니다.'
+        unlocking_event:
+          explanation: '%{threshold_ordinal}오픈 소스 끌어오기 요청 병합됨'
+      pair_extraordinaire:
+        tier_0:
+          description: '%{achieving_user_login}이(가) 병합된 끌어오기 요청에 대한 공동 작성 커밋입니다.'
+        tier_1:
+          description: '%{achieving_user_login}이(가) 병합된 끌어오기 요청에 대한 공동 작성 커밋입니다.'
+        tier_2:
+          description: '%{achieving_user_login}이(가) 병합된 끌어오기 요청에 대한 공동 작성 커밋입니다.'
+        tier_3:
+          description: '%{achieving_user_login}이(가) 병합된 끌어오기 요청에 대한 공동 작성 커밋입니다.'
+        unlocking_event:
+          explanation: '%{coauthor_login_mention}을(를) 사용하여 공동 작성'
+      polyglot:
+        tier_0:
+          description: '%{achieving_user_login}이(가) 고유한 파일 형식을 커밋했습니다.'
+        tier_1:
+          description: '%{achieving_user_login}이(가) 고유한 파일 형식을 커밋했습니다.'
+        tier_2:
+          description: '%{achieving_user_login}이(가) 고유한 파일 형식을 커밋했습니다.'
+        unlocking_event:
+          explanation: '%{threshold_ordinal} 파일 형식 커밋됨'
+      public_sponsor:
+        tier_0:
+          description: '%{achieving_user_login}이(가) %{public_sponsors_sum_and_types}을(를) 후원하고 있습니다.'
+        unlocking_event:
+          explanation: 첫 번째 스폰서쉽
+      pull_shark:
+        tier_0:
+          description: '%{achieving_user_login}이(가) 병합된 끌어오기 요청을 열었습니다.'
+        tier_1:
+          description: '%{achieving_user_login}이(가) 병합된 끌어오기 요청을 열었습니다.'
+        tier_2:
+          description: '%{achieving_user_login}이(가) 병합된 끌어오기 요청을 열었습니다.'
+        tier_3:
+          description: '%{achieving_user_login}이(가) 병합된 끌어오기 요청을 열었습니다.'
+        unlocking_event:
+          explanation: '%{threshold_ordinal} 끌어오기 요청 병합됨'
+      quickdraw:
+        tier_0:
+          description: 기티 업!
+        unlocking_event:
+          explanation: '열기 중 %{threshold_duration} 내에 닫힘'
+      starstruck:
+        tier_0:
+          description: '%{achieving_user_login}은(는) 별들이 많은 리포지토리를 만들었습니다.'
+        tier_1:
+          description: '%{achieving_user_login}은(는) 별들이 많은 리포지토리를 만들었습니다.'
+        tier_2:
+          description: '%{achieving_user_login}은(는) 별들이 많은 리포지토리를 만들었습니다.'
+        tier_3:
+          description: '%{achieving_user_login}은(는) 별들이 많은 리포지토리를 만들었습니다.'
+        unlocking_event:
+          explanation: '⭐️ %{threshold} 별'
+      yolo:
+        tier_0:
+          description: 당신은 그것을 원하십니까? 병합합니다.
+        unlocking_event:
+          explanation: 검토 없이 병합됨
+    disabled_cta:
+      ach_enabled_private_contributions_hidden: |
+        You unlocked new Achievements with private contributions! Show them off by including private contributions in your Profile in
+      ach_disabled_private_contributions_hidden: |
+        You unlocked new Achievements! Show them off by including achievements and private contributions in your Profile in
+      ach_disabled: You unlocked new Achievements on GitHub! Show them off by updating your Profile
