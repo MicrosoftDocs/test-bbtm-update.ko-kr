@@ -1,0 +1,50 @@
+id: enterprise-administrators-cloud
+group: enterprise-and-teams
+product: Enterprise Administrators (Cloud)
+canned_pattern: enterprise|saml
+search: enterprise
+docs_path: /enterprise-cloud/admin
+contact_path: /contact
+articles:
+  - path: /enterprise-cloud/admin/configuration/configuring-your-enterprise/verifying-or-approving-a-domain-for-your-enterprise
+    title: 엔터프라이즈의 도메인 확인 또는 승인
+    subtitle: GitHub를 사용하여 도메인 소유권을 확인하여 엔터프라이즈 계정이 소유한 조직의 ID를 확인할 수 있습니다. 조직 구성원이 이메일 알림을 받을 수 있는 도메인을 승인할 수도 있습니다.
+  - path: enterprise-cloud/admin/user-management/managing-organizations-in-your-enterprise/viewing-the-audit-logs-for-organizations-in-your-enterprise
+    title: 엔터프라이즈의 조직에 대한 감사 로그 보기
+    subtitle: 엔터프라이즈 소유자는 감사 로그에서 엔터프라이즈 계정이 소유한 모든 조직의 집계된 작업을 볼 수 있습니다.
+  - path: /enterprise-cloud/admin/user-management/monitoring-activity-in-your-enterprise/managing-global-webhooks
+    title: 전역 웹후크 관리
+    subtitle: 전역 웹후크를 구성하여 엔터프라이즈 내에서 이벤트가 발생할 때 외부 웹 서버에 알릴 수 있습니다.
+  - path: /enterprise-cloud/admin/authentication/managing-identity-and-access-for-your-enterprise/about-identity-and-access-management-for-your-enterprise
+    title: 엔터프라이즈의 ID 및 액세스 관리 정보
+    subtitle: SAML SSO(Single Sign-On) 및 SCIM(System for Cross-domain Identity Management)을 사용하여 GitHub.com 엔터프라이즈가 소유한 조직에 대한 액세스를 중앙에서 관리할 수 있습니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: GitHub Enterprise 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /enterprise-cloud@latest/admin
+  - category: documentation
+    title: 가이드
+    subtitle: GitHub Enterprise Cloud를 사용하여 개발자 생산성 및 코드 품질을 높이는 방법을 알아봅니다.
+    img: microsites/enterprise-server.svg
+    cta: Discover pathways
+    url:
+      docs_url: /enterprise-cloud@latest/admin/guides
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 GitHub Enterprise 업데이트 살펴보기
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=enterprise'
+video:
+  title: 엔터프라이즈의 GitHub - GitHub Universe 2021
+  subtitle: '마야 로스, 엔터프라이즈 수석 이사 발표'
+  url: 'https://www.youtube.com/embed/1-i39RqaxRs?rel=0&amp;vq=hd720'
+community:
+  id: 36
+  status: public
+  after: nil
+  path: 'https://github.com/orgs/community/discussions/categories/announcements'

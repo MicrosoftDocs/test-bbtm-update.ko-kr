@@ -1,0 +1,49 @@
+id: graph-ql-api
+group: developers
+product: GraphQL API
+canned_pattern: graphql|api
+search: graphql
+docs_path: /graphql
+contact_path: /request/developers
+articles:
+  - path: /graphql/overview/about-the-graphql-api
+    title: GraphQL API 정보
+    subtitle: GitHub GraphQL API는 가져오려는 데이터를 정확하게 정의하는 유연성과 기능을 제공합니다.
+  - path: /graphql/guides/introduction-to-graphql
+    title: GraphQL 소개
+    subtitle: GitHub GraphQL API를 사용하기 위한 유용한 용어 및 개념을 알아봅니다.
+  - path: /graphql/guides/migrating-from-rest-to-graphql
+    title: REST에서 GraphQL로 마이그레이션
+    subtitle: GitHub의 REST API에서 GitHub의 GraphQL API로 마이그레이션하기 위한 모범 사례 및 고려 사항을 알아봅니다.
+  - path: /graphql/overview/breaking-changes
+    title: 주요 변경 내용
+    subtitle: GitHub GraphQL API의 최근 및 향후 호환성이 손상되는 변경에 대해 알아봅니다.
+options:
+  - category: documentation
+    title: 가이드
+    subtitle: GraphQL API를 시작합니다.
+    img: microsites/documentation.svg
+    cta: Discover pathways
+    url:
+      docs_url: /graphql/guides
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '질문하고, 이야기를 교환하고, 커뮤니티 토론에서 아이디어를 공유합니다.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/apis-and-integrations'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 GraphQL API 업데이트 검색
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=GraphQL'
+video:
+  title: GitHub의 GraphQL API에 대한 고급 패턴
+  subtitle: 'GitHub API는 대규모 워크플로 가속화의 핵심 부분입니다. 이 세션에서는 효과적으로 페이지를 매기고, 쿼리를 만들고 계획하고, 기술 미리 보기 기능을 사용하고, 알림 및 그 이후의 수년간의 연습 및 반복에서 배운 비용을 관리하는 방법에 대한 전술적 팁을 제공합니다.'
+  url: 'https://www.youtube.com/embed/i5pIszu9MeM?rel=0&amp;vq=hd720'
+community:
+  id: 63
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/apis-and-integrations'

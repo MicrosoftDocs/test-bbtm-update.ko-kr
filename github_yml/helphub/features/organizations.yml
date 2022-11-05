@@ -1,0 +1,49 @@
+id: organizations
+group: enterprise-and-teams
+product: Organizations
+canned_pattern: organization|membership|team
+search: org
+docs_path: /organizations
+contact_path: /contact
+articles:
+  - path: /organizations/collaborating-with-groups-in-organizations
+    title: 조직에서 그룹과 협업
+    subtitle: 사용자 그룹은 조직 계정에서 동시에 여러 프로젝트 간에 공동 작업할 수 있습니다.
+  - path: /organizations/managing-membership-in-your-organization
+    title: 조직의 멤버 자격 관리
+    subtitle: 조직을 만든 후에는 사용자를 조직의 구성원으로 초대할 수 있습니다. 조직의 구성원을 제거하고 이전 구성원을 복원할 수도 있습니다.
+  - path: /organizations/managing-peoples-access-to-your-organization-with-roles
+    title: 역할을 사용하여 조직에 대한 사용자 액세스 관리
+    subtitle: '사용자 조직, 리포지토리 및 팀 역할을 제공하여 조직의 설정 및 리포지토리에 대한 액세스를 제어할 수 있습니다.'
+  - path: /organizations/organizing-members-into-teams
+    title: 구성원을 팀으로 구성
+    subtitle: 조직 구성원을 연계 액세스 권한 및 멘션을 사용해 회사 또는 그룹의 구조를 반영하는 팀으로 그룹화할 수 있습니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: 조직 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /organizations
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유하세요.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/new-to-github'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 조직 업데이트 검색
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=organization'
+video:
+  title: '조직에 대한 추가 정보 프로필: 조직 프로필 추가 정보 소개'
+  subtitle: '조직 추가 정보 기능은 조직의 홈페이지에 있습니다. 정보 섹션을 만들거나, 멋진 프로젝트를 소개하거나, 전체 gif 스택을 추가하기만 하면 됩니다.'
+  url: 'https://www.youtube.com/embed/oQnJ6XYp_YM?rel=0&amp;vq=hd720'
+community:
+  id: 21
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/new-to-github'

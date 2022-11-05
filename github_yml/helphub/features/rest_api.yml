@@ -1,0 +1,49 @@
+id: rest-api
+group: developers
+product: REST API
+canned_pattern: rest|api
+search: rest
+docs_path: /rest
+contact_path: /request/developers
+articles:
+  - path: /rest/overview/resources-in-the-rest-api
+    title: REST API의 리소스
+    subtitle: GitHub API에서 제공하는 리소스를 탐색하는 방법을 알아봅니다.
+  - path: /rest/overview/troubleshooting
+    title: 문제 해결
+    subtitle: REST API에서 발생하는 가장 일반적인 문제를 해결하는 방법을 알아봅니다.
+  - path: /rest/guides/basics-of-authentication
+    title: 인증의 기본 사항
+    subtitle: 몇 가지 예제를 사용하여 인증하는 다양한 방법에 대해 알아봅니다.
+  - path: /rest/guides/best-practices-for-integrators
+    title: 통합자에 대한 모범 사례
+    subtitle: GitHub API와 안정적으로 상호 작용하고 사용자에게 최상의 환경을 제공하는 앱을 빌드합니다.
+options:
+  - category: documentation
+    title: 가이드
+    subtitle: REST API 및 인증을 시작합니다.
+    img: microsites/documentation.svg
+    cta: Discover pathways
+    url:
+      docs_url: /rest/guides
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '질문하고, 이야기를 교환하고, 커뮤니티 토론에서 아이디어를 공유합니다.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/apis-and-integrations'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 REST API 업데이트 검색
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=REST%20API'
+video:
+  title: 웹후크 및 REST와 GitHub 통합 빌드 - GitHub Satellite 2020
+  subtitle: 웹후크는 프로젝트의 기존 도구에서 실시간 통합 및 워크플로를 구동하는 데 유용한 도구입니다. 이 세션에서는 GitHub에서 발생하는 이벤트에 대해 작동하는 웹후크 기반 애플리케이션을 빌드하는 방법을 안내합니다. 또한 Octokit SDK를 통해 GitHub REST API를 사용하여 이벤트를 받은 후 추가 리소스를 호출하는 방법을 알아봅니다.
+  url: 'https://www.youtube.com/embed/wcxOJq9YemE?rel=0&amp;vq=hd720'
+community:
+  id: 60
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/apis-and-integrations'

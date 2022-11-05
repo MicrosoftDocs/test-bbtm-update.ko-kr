@@ -1,0 +1,48 @@
+id: pages
+group: ci-cd-devops
+product: GitHub Pages
+canned_pattern: pages
+search: pages
+docs_path: /pages
+contact_path: /request/pages
+articles:
+  - path: /pages/configuring-a-custom-domain-for-your-github-pages-site
+    title: GitHub Pages 사이트에 대한 사용자 지정 도메인 구성
+    subtitle: GitHub Pages 사이트의 도메인 이름을 사용자 지정할 수 있습니다.
+  - path: /pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages
+    title: 사용자 지정 도메인 및 GitHub Pages 문제 해결
+    subtitle: 일반적인 오류를 확인하여 GitHub Pages 사이트의 사용자 지정 도메인 또는 HTTPS 문제를 해결할 수 있습니다.
+  - path: /pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+    title: GitHub Pages 사이트에 대한 게시 원본 구성
+    subtitle: GitHub Pages 사이트에 대한 기본 게시 원본을 사용하는 경우 사이트가 자동으로 게시됩니다. 다른 분기 또는 폴더에서 사이트를 게시하도록 선택할 수도 있습니다.
+  - path: /pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https
+    title: HTTPS를 사용하여 GitHub Pages 사이트 보호
+    subtitle: HTTPS는 다른 사용자가 사이트에 대한 트래픽을 스누핑 또는 변조하지 못하도록 하는 암호화 계층을 추가합니다. GitHub Pages 사이트에 HTTPS를 적용하여 모든 HTTP 요청을 HTTPS로 투명하게 리디렉션할 수 있습니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: GitHub Pages 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /pages
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유하세요.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/general'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 GitHub Pages 업데이트 살펴보기
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=GitHub%20Pages'
+video:
+  title: GitHub Pages에 대한 액세스 제어 - GitHub 체크 아웃
+  subtitle: 이제 GitHub Pages는 액세스를 제한하는 옵션을 제공하여 페이지를 게시한 리포지토리에 대한 액세스 권한이 있는 사용자만 사이트를 볼 수 있도록 합니다.
+  url: 'https://www.youtube.com/embed/8lCtcFkGh0U?rel=0&amp;vq=hd720'
+community:
+  id: 31
+  path: 'https://github.com/orgs/community/discussions/categories/general'

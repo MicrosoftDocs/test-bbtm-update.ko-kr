@@ -1,0 +1,49 @@
+id: pull-requests
+group: collaborative-coding
+product: Pull Requests
+canned_pattern: pull|pr|review|branch|fork|conflict|branch
+search: pull request
+docs_path: /pull-requests
+contact_path: /request/pull-requests
+articles:
+  - path: /pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models
+    title: 협업 개발 모델 정보
+    subtitle: 끌어오기 요청을 사용하는 방법은 프로젝트에서 사용하는 개발 모델의 유형에 따라 달라집니다. 포크 및 끌어오기 모델 또는 공유 리포지토리 모델을 사용할 수 있습니다.
+  - path: /pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
+    title: 끌어오기 요청 만들기
+    subtitle: 리포지토리의 변경 내용을 제안하고 공동 작업하는 끌어오기 요청을 만듭니다. 이러한 변경 내용은 분기에서 제안되어 기본 분기에 완료 및 승인된 작업만 포함되도록 합니다.
+  - path: /pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/committing-changes-to-a-pull-request-branch-created-from-a-fork
+    title: 포크에서 만든 끌어오기 요청 분기에 변경 내용 커밋
+    subtitle: 끌어오기 요청 작성자의 권한으로 리포지토리의 포크에서 만든 끌어오기 요청 분기에서 변경 내용을 커밋할 수 있습니다.
+  - path: /pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts
+    title: 병합 충돌 정보
+    subtitle: 병합 충돌은 경합 커밋이 있는 분기를 병합할 때 발생하며 Git가 최종 병합에 통합할 변경 내용을 결정하는 데 사용자의 도움이 필요합니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: 끌어오기 요청 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /pull-requests
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유하세요.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/pull-requests'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 끌어오기 요청 업데이트 검색
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=Pull%20Request'
+video:
+  title: WIP(초안 끌어오기 요청)
+  subtitle: '''공식적으로'' 제출하기 전에 끌어오기 요청에 대해 이야기하고 공동 작업하려는 경우 PR 초안을 작성할 수 있습니다.'
+  url: 'https://www.youtube.com/embed/l0Lw_zPX4TA?rel=0&amp;vq=hd720'
+community:
+  id: 69
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/pull-requests'

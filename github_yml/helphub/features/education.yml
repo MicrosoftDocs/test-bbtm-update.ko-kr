@@ -1,0 +1,48 @@
+id: education
+group: community
+product: Education
+canned_pattern: education|campus|classroom
+docs_path: /education
+contact_path: /request/education
+articles:
+  - path: /education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/apply-for-a-student-developer-pack
+    title: 학생 개발자 팩 신청
+    subtitle: 학생으로서 GitHub 파트너의 제품 및 혜택을 포함하는 GitHub 학생 개발자 팩을 신청할 수 있습니다.
+  - path: /education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/why-wasnt-my-application-for-a-student-developer-pack-approved
+    title: 학생 개발자 팩에 대한 신청이 승인되지 않은 이유는 무엇인가요?
+    subtitle: GitHub 학생 개발자 팩에 대한 애플리케이션이 승인되지 않은 일반적인 이유를 검토하고 성공적으로 다시 적용하기 위한 팁을 알아봅니다.
+  - path: /education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/about-github-education-for-students
+    title: 학생용 GitHub Education 정보
+    subtitle: GitHub Education은 학생들에게 GitHub 파트너의 다양한 개발자 도구에 무료로 액세스할 수 있는 실제 환경을 제공합니다.
+  - path: /education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-in-your-classroom-and-research/apply-for-an-educator-or-researcher-discount
+    title: 교육자 또는 연구원 할인 신청
+    subtitle: 교육자 또는 연구원인 경우 지원하여 조직 계정에 대한 GitHub Team을 무료로 받을 수 있습니다.
+options:
+  - category: education
+    title: GitHub Education & GitHub Global Campus
+    subtitle: '학생, 교사 및 학교를 위한 GitHub 글로벌 캠퍼스를 살펴보세요.'
+    img: microsites/education.svg
+    cta: Start exploring
+    url: 'https://education.github.com'
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유하세요.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/github-education'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 GitHub Education 업데이트 살펴보기
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=Education'
+video:
+  title: GitHub 글로벌 캠퍼스 - GitHub 체크 아웃
+  subtitle: '글로벌 캠퍼스는 150만 명 이상의 학생들을 위한 홈입니다. 학생들이 GitHub 교실에서 한 곳에서 GitHub Education을 최대한 활용하고 제품, 캠퍼스 전문가, 캠퍼스 TV 등에 대한 과제를 얻을 수 있습니다!'
+  url: 'https://www.youtube.com/embed/5GocCQAwnrk?rel=0&amp;vq=hd720'
+community:
+  id: 53
+  path: 'https://github.com/orgs/community/discussions/categories/github-education'
+  status: open
+  after: 100

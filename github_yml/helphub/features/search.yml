@@ -1,0 +1,49 @@
+id: search
+group: project-management
+product: Search on GitHub
+canned_pattern: search
+search: search
+docs_path: /search-github
+contact_path: /contact
+articles:
+  - path: /search-github/getting-started-with-searching-on-github/understanding-the-search-syntax
+    title: 검색 구문 이해
+    subtitle: GitHub를 검색할 때 특정 숫자 및 단어와 일치하는 쿼리를 생성할 수 있습니다.
+  - path: /search-github/getting-started-with-searching-on-github/troubleshooting-search-queries
+    title: 검색 쿼리 문제 해결
+    subtitle: GitHub에서 검색하는 동안 예기치 않은 결과가 발생하는 경우 일반적인 문제 및 제한 사항을 검토하여 문제를 해결할 수 있습니다.
+  - path: /search-github/getting-started-with-searching-on-github/sorting-search-results
+    title: 검색 결과 정렬
+    subtitle: 정렬 메뉴를 사용하거나 쿼리에 정렬 한정자를 추가하여 GitHub 검색 결과를 정렬할 수 있습니다.
+  - path: /rest/reference/search
+    title: API 검색
+    subtitle: GitHub Search API를 사용하면 특정 항목을 효율적으로 검색할 수 있습니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: 검색 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /search-github
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유하세요.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/new-to-github'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 검색 업데이트 검색
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=Search'
+video:
+  title: Git 파일 찾기에 능숙 • GitHub에서 파일을 빠르게 찾는 방법
+  subtitle: "거대한 리포지토리에서 파일을 분실한 적이 있나요? 저장한 위치를 기억할 수 없나요? 파일 찾기를 사용하면 리포지토리에서 파일을 쉽게 검색할 수 있습니다. \U0001F50D"
+  url: 'https://www.youtube.com/embed/aMD7XmtomOI?rel=0&amp;vq=hd720'
+community:
+  id: 21
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/new-to-github'

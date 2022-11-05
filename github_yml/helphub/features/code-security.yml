@@ -1,0 +1,48 @@
+id: code-security
+group: security
+product: Code Security
+canned_pattern: code|security
+docs_path: /code-security
+contact_path: /request/code-security
+articles:
+  - path: /code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/about-alerts-for-vulnerable-dependencies
+    title: 취약한 종속성에 대한 경고 정보
+    subtitle: 리포지토리에 영향을 주는 취약성을 감지하면 GitHub에서 Dependabot 경고를 보냅니다.
+  - path: /code-security/security-advisories/about-coordinated-disclosure-of-security-vulnerabilities
+    title: 보안 취약성의 조정된 공개 정보
+    subtitle: 취약성 공개는 보안 보고자 및 리포지토리 유지 관리자 간의 조정된 노력입니다.
+  - path: /code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/keeping-your-actions-up-to-date-with-dependabot
+    title: Dependabot을 사용하여 작업을 최신 상태로 유지
+    subtitle: Dependabot을 사용하여 사용하는 작업을 최신 버전으로 업데이트된 상태로 유지할 수 있습니다.
+  - path: /code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates
+    title: 종속성 업데이트에 대한 구성 옵션
+    subtitle: Dependabot이 리포지토리를 유지하는 방법을 사용자 지정하는 데 사용할 수 있는 모든 옵션에 대한 자세한 정보입니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: 계정 및 프로필 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /code-security
+  - category: documentation
+    title: 가이드
+    subtitle: GitHub가 코드의 보안을 개선하는 데 도움이 되는 다양한 방법에 대해 알아봅니다.
+    img: microsites/documentation.svg
+    cta: Learn more
+    url:
+      docs_url: /code-security/guides
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 코드 보안 업데이트를 알아보세요.
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=Security'
+video:
+  title: 자동화된 보안 검토 - GitHub 코드 검사
+  subtitle: GitHub 코드 검사를 사용하도록 설정하는 것은 보안 연구원 팀을 초대하여 모든 끌어오기 요청을 검토하도록 초대하는 것과 같습니다. CodeQL 또는 정적 코드 분석 파트너 중 하나를 사용하여 코드 검사를 구성하면 프로덕션으로 가기 전에 모든 코드가 보안 취약성에 대해 원활하게 검토되도록 할 수 있습니다.
+  url: 'https://www.youtube.com/embed/z0wvGf3O69E?rel=0&amp;vq=hd720'
+community:
+  id: 21
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/new-to-github'

@@ -1,0 +1,47 @@
+id: discussions
+group: collaborative-coding
+product: GitHub Discussions
+canned_pattern: discussions
+docs_path: /discussions
+contact_path: /request/discussions
+articles:
+  - path: /discussions/guides/granting-higher-permissions-to-top-contributors
+    title: 상위 contributor에게 더 높은 사용 권한 부여
+    subtitle: 리포지토리 관리자는 모든 커뮤니티 구성원을 중재자 및 유지 관리자로 승격시킬 수 있습니다.
+  - path: /discussions/guides/best-practices-for-community-conversations-on-github
+    title: GitHub의 커뮤니티 대화에 대한 모범 사례
+    subtitle: '토론을 사용하여 팀과 브레인스토밍하고, 작업 범위를 지정할 준비가 되면 최종적으로 대화를 이슈로 전환할 수 있습니다.'
+  - path: /discussions/guides/finding-discussions-across-multiple-repositories
+    title: 여러 리포지토리에서 토론 찾기
+    subtitle: 여러 리포지토리에서 만들거나 참여한 모든 토론에 쉽게 액세스할 수 있습니다.
+  - path: /discussions/collaborating-with-your-community-using-discussions/collaborating-with-maintainers-using-discussions
+    title: 토론을 사용하여 유지 관리자와 공동 작업
+    subtitle: '논의에서 프로젝트의 유지 관리자와 통신하여 GitHub의 프로젝트에 대한 목표, 계획, 상태 및 커뮤니티에 기여할 수 있습니다.'
+options:
+  - category: documentation
+    title: 가이드
+    subtitle: 커뮤니티 토론 참여 및 모니터링을 시작합니다.
+    img: microsites/documentation.svg
+    cta: Discover pathways
+    url:
+      docs_url: /discussions/guides
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '질문하고, 이야기를 교환하고, 커뮤니티 토론에서 아이디어를 공유합니다.'
+    img: microsites/community.svg
+    cta: Get involved
+    url: 'https://github.com/orgs/community/discussions/categories/discussions'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 GitHub 토론 업데이트 살펴보기
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=Discussions'
+video:
+  title: 60초 만에 GitHub 토론
+  subtitle: GitHub 토론을 시작하는 빠른 방법입니다.
+  url: 'https://www.youtube.com/embed/IpBw2SJkFyk?rel=0&amp;vq=hd720'
+community:
+  id: 48
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/new-to-github'

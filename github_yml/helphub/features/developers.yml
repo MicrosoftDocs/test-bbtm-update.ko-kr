@@ -1,0 +1,49 @@
+id: developers
+group: developers
+product: Developers
+canned_pattern: developer|app|marketplace|integration
+search: developer
+docs_path: /developers
+contact_path: /request/developers
+articles:
+  - path: /developers/overview/about-githubs-apis
+    title: GitHub API 정보
+    subtitle: GitHub 환경을 확장하고 사용자 지정하는 GitHub의 API에 대해 알아봅니다.
+  - path: /developers/webhooks-and-events/webhooks
+    title: Webhook
+    subtitle: 'GitHub와 통합할 웹후크를 설정, 테스트 및 보호하는 방법을 알아봅니다.'
+  - path: /developers/apps
+    title: 앱
+    subtitle: 자체 앱을 빌드하여 워크플로를 자동화하고 간소화할 수 있습니다.
+  - path: /developers/github-marketplace
+    title: GitHub Marketplace
+    subtitle: 개발자가 사용하거나 구매할 수 있도록 GitHub Marketplace에 도구를 나열합니다.
+options:
+  - category: documentation
+    title: 가이드
+    subtitle: GitHub용 앱 개발 시작
+    img: microsites/documentation.svg
+    cta: Discover pathways
+    url:
+      docs_url: /developers/apps/guides
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '질문하고, 이야기를 교환하고, 커뮤니티 토론에서 아이디어를 공유합니다.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/apis-and-integrations'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 에코시스템 업데이트 살펴보기
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=Ecosystem'
+video:
+  title: 데모 일 - GitHub 앱 만들기
+  subtitle: 파트너 엔지니어인 Steve Winton은 누군가가 GitHub 앱을 빌드한 다음 처음부터 빌드하려는 이유를 설명합니다. API를 통해 GitHub에 타사 통합을 만들고 보호된 리소스에 대해 자율적으로 작동할 수 있도록 합니다.
+  url: 'https://www.youtube.com/embed/iaBEWB1As0k?rel=0&amp;vq=hd720'
+community:
+  id: 37
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/apis-and-integrations'

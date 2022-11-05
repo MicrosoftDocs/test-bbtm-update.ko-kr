@@ -1,0 +1,50 @@
+id: building-communities
+group: community
+product: Building Communities
+canned_pattern: community|communities|opensource
+search: community
+docs_path: /communities
+contact_path: /contact
+articles:
+  - path: /communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository
+    title: 리포지토리에 대한 끌어오기 요청 템플릿 만들기
+    subtitle: 리포지토리에 끌어오기 요청 템플릿을 추가하면 프로젝트 참가자는 끌어오기 요청 본문에 템플릿의 콘텐츠를 자동으로 볼 수 있습니다.
+  - path: /communities/maintaining-your-safety-on-github/reporting-abuse-or-spam
+    title: 남용 또는 스팸 보고
+    subtitle: 커뮤니티 지침 및 약관을 위반하는 동작 및 콘텐츠를 보고할 수 있습니다.
+  - path: /communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository
+    title: 리포지토리에 라이선스 추가
+    subtitle: 다른 사용자가 더 쉽게 기여할 수 있도록 리포지토리에 오픈 소스 라이선스를 포함할 수 있습니다.
+  - path: /communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+    title: 리포지토리에 대한 문제 템플릿 구성
+    subtitle: 기여자가 리포지토리에서 새 문제를 공개할 때 사용할 수 있는 템플릿을 사용자 지정할 수 있습니다.
+options:
+  - category: documentation
+    title: 가이드
+    subtitle: 커뮤니티 관리에 대한 가이드입니다.
+    img: microsites/documentation.svg
+    cta: Discover pathways
+    url:
+      docs_url: /communities#guides-2
+  - category: community_forum
+    title: 커뮤니티에 문의
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유합니다.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/new-to-github'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 커뮤니티 업데이트를 알아보세요.
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=community'
+video:
+  title: GitHub 토론으로 커뮤니티와 연결
+  subtitle: |
+    커뮤니티에 연결 ✔️ ✔️ 범주 레이블 추가 등과 같이 ✔️ 토론으로 수행할 수 있는 몇 가지 훌륭한 방법이 있습니다.
+  url: 'https://www.youtube.com/embed/8ty3aTxfqRg?rel=0&amp;vq=hd720'
+community:
+  id: 48
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/new-to-github'

@@ -1,0 +1,49 @@
+id: authentication
+group: get-started
+product: Authentication
+canned_pattern: auth|2fa|two|factor|password
+search: auth
+docs_path: /authentication
+contact_path: /request/account
+articles:
+  - path: /authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication
+    title: 2단계 인증
+    subtitle: 2FA(2단계 인증)를 사용하면 사용자 이름 및 암호를 사용하여 로그인하고 사용자만 알고 있거나 액세스할 수 있는 다른 형태의 인증을 제공해야 합니다.
+  - path: /authentication/keeping-your-account-and-data-secure
+    title: 계정 및 데이터 보안 유지
+    subtitle: 개인 정보를 보호하려면 GitHub.com 계정과 연결된 데이터를 모두 안전하게 유지해야 합니다.
+  - path: /authentication/troubleshooting-ssh
+    title: SSH 문제 해결
+    subtitle: SSH를 사용하여 GitHub에 연결하고 인증하는 경우 발생할 수 있는 예기치 않은 문제를 해결해야 할 수 있습니다.
+  - path: /authentication/troubleshooting-commit-signature-verification
+    title: 커밋 서명 확인 문제 해결
+    subtitle: GitHub에서 확인을 위해 커밋에 로컬로 서명할 때 발생하는 예기치 않은 문제를 해결해야 할 수 있습니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: 인증 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /authentication
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유합니다.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/new-to-github'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 인증 업데이트 검색
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=Authentication'
+video:
+  title: Git 코드 보안에 적합 • GitHub에서 2FA를 사용하도록 설정하는 방법
+  subtitle: "2FA를 사용하는 것이 코드를 \U0001F512보호하는 가장 좋은 방법 중 하나라는 것을 알고 계셨나요? 2단계 인증 설정이 아직 없는 경우 지금 이 기능을 사용하도록 설정하는 방법을 확인하세요."
+  url: 'https://www.youtube.com/embed/j6beTHnsumI?rel=0&amp;vq=hd720'
+community:
+  id: 42
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/new-to-github'

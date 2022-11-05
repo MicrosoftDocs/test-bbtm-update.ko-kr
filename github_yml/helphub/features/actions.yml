@@ -1,0 +1,48 @@
+id: actions
+group: ci-cd-devops
+product: GitHub Actions
+search: actions
+canned_pattern: actions
+docs_path: /actions
+contact_path: /request/actions
+articles:
+  - path: /actions/reference/workflow-syntax-for-github-actions
+    title: 워크플로 구문
+    subtitle: 워크플로는 하나 이상의 작업으로 구성된 구성 가능한 자동화된 프로세스입니다. 워크플로 구성을 정의하려면 YAML 파일을 만들어야 합니다.
+  - path: /actions/reference/events-that-trigger-workflows
+    title: 워크플로를 트리거하는 이벤트
+    subtitle: 'GitHub에서 특정 활동이 발생할 때, 예약된 시간에 또는 GitHub 외부의 이벤트가 발생할 때 실행되도록 워크플로를 구성할 수 있습니다.'
+  - path: /actions/reference/context-and-expression-syntax-for-github-actions
+    title: 컨텍스트 및 식 구문
+    subtitle: 컨텍스트 정보에 액세스하고 워크플로 및 작업에서 식을 평가할 수 있습니다.
+  - path: /actions/reference/encrypted-secrets
+    title: 암호화된 비밀
+    subtitle: 암호화된 비밀을 사용하면 리포지토리 또는 조직에 중요한 정보를 저장할 수 있습니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: GitHub Actions 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /actions
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유하세요.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/actions-and-packages'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 GitHub Actions 업데이트 살펴보기
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=GitHub%20Actions'
+video:
+  title: GitHub 위성에서 GitHub Actions 대화 보기
+  subtitle: GitHub Actions 핵심 개념 및 다양한 구성 요소에 대해 알아봅니다.
+  url: 'https://www.youtube.com/embed/-2UgL63_yB4?rel=0&amp;vq=hd720'
+community:
+  id: 41
+  path: 'https://github.com/orgs/community/discussions/categories/actions-and-packages'

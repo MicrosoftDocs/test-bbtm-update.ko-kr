@@ -1,0 +1,49 @@
+id: packages
+group: ci-cd-devops
+product: GitHub Packages
+canned_pattern: packages
+search: packages
+docs_path: /packages
+contact_path: /request/packages
+articles:
+  - path: /packages/learn-github-packages/introduction-to-github-packages
+    title: GitHub 패키지 소개
+    subtitle: GitHub Packages는 소프트웨어 패키지를 비공개 또는 공개적으로 호스트하고 프로젝트에서 패키지를 종속성으로 사용할 수 있도록 해 주는 소프트웨어 패키지 호스팅 서비스입니다.
+  - path: /packages/learn-github-packages/about-permissions-for-github-packages
+    title: GitHub 패키지에 대한 사용 권한 정보
+    subtitle: 패키지에 대한 사용 권한을 관리하는 방법에 대해 알아봅니다.
+  - path: /packages/learn-github-packages/deleting-and-restoring-a-package
+    title: 패키지 삭제 또는 복원
+    subtitle: 패키지를 삭제하거나 복원하는 방법을 알아봅니다.
+  - path: /packages/working-with-a-github-packages-registry/migrating-to-the-container-registry-from-the-docker-registry
+    title: Docker 레지스트리에서 컨테이너 레지스트리로 마이그레이션
+    subtitle: 이전에 Docker 레지스트리에 저장된 Docker 이미지는 컨테이너 레지스트리로 자동으로 마이그레이션됩니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: GitHub 패키지 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /packages
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유합니다.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/actions-and-packages'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 GitHub 패키지 업데이트 살펴보기
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=GitHub%20Packages'
+video:
+  title: GitHub Actions 및 GitHub 패키지와 함께 배송
+  subtitle: 핵심 개념과 GitHub Actions 및 패키지의 다양한 구성 요소에 대해 알아봅니다.
+  url: 'https://www.youtube.com/embed/-2UgL63_yB4?rel=0&amp;vq=hd720'
+community:
+  id: 43
+  path: 'https://github.com/orgs/community/discussions/categories/actions-and-packages'
+  status: open

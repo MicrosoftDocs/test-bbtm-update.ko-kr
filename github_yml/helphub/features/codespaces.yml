@@ -1,0 +1,48 @@
+id: codespaces
+group: collaborative-coding
+product: GitHub Codespaces
+canned_pattern: codespaces
+search: codespace
+docs_path: /codespaces
+contact_path: /request/codespaces
+articles:
+  - path: /billing/managing-billing-for-github-codespaces/about-billing-for-codespaces
+    title: GitHub Codespaces 청구 관련 정보
+    subtitle: 가격 책정을 보고 조직에 대한 Codespaces 청구를 관리하는 방법을 알아보세요.
+  - path: /codespaces/managing-codespaces-for-your-organization/enabling-codespaces-for-your-organization
+    title: 조직에 Codespaces를 사용하도록 설정
+    subtitle: 조직에서 Codespaces를 사용할 수 있는 사용자를 제어할 수 있습니다.
+  - path: /codespaces/setting-up-your-codespace/configuring-codespaces-for-your-project
+    title: 프로젝트에 대한 Codespace 구성
+    subtitle: devcontainer.json 파일을 사용하여 리포지토리에 대한 Codespaces 환경을 정의할 수 있습니다.
+  - path: /codespaces/managing-codespaces-for-your-organization/managing-repository-access-for-your-organizations-codespaces
+    title: 조직의 Codespaces에 대한 리포지토리 액세스 관리
+    subtitle: Codespaces에서 액세스할 수 있는 조직의 리포지토리를 관리할 수 있습니다.
+options:
+  - category: examples
+    title: 코드 예제
+    subtitle: codespaces 예제 살펴보기
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /codespaces#code-examples
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '질문하고, 이야기를 교환하고, 커뮤니티 토론에서 아이디어를 공유합니다.'
+    img: microsites/community.svg
+    cta: Get involved
+    url: 'https://github.com/orgs/community/discussions/categories/codespaces'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 GitHub Codespaces 업데이트 살펴보기
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=Codespaces'
+video:
+  title: Codespaces Work for You - GitHub Universe 2021
+  subtitle: '발표자: 앨리슨 웨인스, 수석 프로젝트 관리자, 베일리 브룩스, 프로젝트 관리자 II'
+  url: 'https://www.youtube.com/embed/X9Z-rUixnzk?rel=0&amp;vq=hd720'
+community:
+  id: 52
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/codespaces'

@@ -1,0 +1,49 @@
+id: account
+group: get-started
+product: Account and profile
+canned_pattern: account|2fa|two|factor|auth|notification|flagged|email
+search: account
+docs_path: /account-and-profile
+contact_path: /request/account
+articles:
+  - path: /authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication
+    title: 2단계 인증
+    subtitle: 2FA(2단계 인증)를 사용하면 사용자 이름 및 암호를 사용하여 로그인하고 사용자만 알고 있거나 액세스할 수 있는 다른 형태의 인증을 제공해야 합니다.
+  - path: /account-and-profile/managing-subscriptions-and-notifications-on-github
+    title: GitHub의 구독 및 알림 관리
+    subtitle: '알림을 받는 방법, 관심 있는 리포지토리 및 듣고 싶은 활동 유형을 지정할 수 있습니다.'
+  - path: /account-and-profile/setting-up-and-managing-your-github-user-account/managing-user-account-settings/deleting-your-user-account
+    title: 계정 삭제
+    subtitle: 언제든지 GitHub 사용자 계정을 삭제할 수 있습니다.
+  - path: /account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/changing-your-primary-email-address
+    title: 기본 메일 주소 변경
+    subtitle: 언제든지 사용자 계정과 연결된 이메일 주소를 변경할 수 있습니다.
+options:
+  - category: documentation
+    title: 도움말 문서
+    subtitle: 계정 및 프로필 설명서를 살펴보세요.
+    img: microsites/documentation.svg
+    cta: Start exploring
+    url:
+      docs_url: /account-and-profile
+  - category: community_forum
+    title: 커뮤니티에 질문하기
+    subtitle: '커뮤니티 포럼에서 질문하고, 이야기를 교환하고, 아이디어를 공유합니다.'
+    img: microsites/community.svg
+    cta: Get involved
+    url:
+      community_url: 'https://github.com/orgs/community/discussions/categories/new-to-github'
+  - category: github_blog
+    title: 새로운 기능
+    subtitle: 블로그에서 최신 계정 및 프로필 업데이트 검색
+    img: microsites/blog.svg
+    cta: Learn more
+    url: 'https://github.blog/?s=Account'
+video:
+  title: GitHub란?
+  subtitle: GitHub가 어떻게 작동하는지 궁금한 적이 있나요?
+  url: 'https://www.youtube.com/embed/w3jLJU7DT5E?rel=0&amp;vq=hd720'
+community:
+  id: 42
+  status: open
+  path: 'https://github.com/orgs/community/discussions/categories/new-to-github'
